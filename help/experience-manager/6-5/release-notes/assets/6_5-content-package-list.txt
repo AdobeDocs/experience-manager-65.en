@@ -1,0 +1,25 @@
+SUBPACKAGE                                          VERSION                 
+----------                                          -------                 
+com.adobe.granite.security.permissions.ui.content   0.0.24                  
+com.adobe.granite.ui.content                        0.8.870-CQ651-B0005     
+com.adobe.granite.ui.coralui3-rte                   0.3.21-CQ650-B0001      
+com.adobe.reef.contexthub.content                   0.4.20                  
+cq-dam-cfm-content                                  0.11.94                 
+cq-dam-content                                      2.5.442                 
+cq-experience-fragments-content                     1.2.88-NPR-29257-B0004  
+cq-inbox-content                                    1.2.32                  
+cq-mcm-content                                      1.4.52                  
+cq-platform-content                                 1.5.146                 
+cq-remotedam-client-ui-components                   1.0.12                  
+cq-remotedam-client-ui-content                      1.0.16                  
+cq-remotedam-server-content                         1.0.6                   
+cq-social-members-pkg                               1.3.16                  
+cq-ui-classic-content                               1.5.40                  
+cq-ui-touch-optimized-content                       2.6.72                  
+cq-ui-wcm-admin-content                             1.1.72                  
+cq-ui-wcm-commons-content                           1.1.130-NPR-29537-B0004 
+cq-ui-wcm-editor-content                            1.1.294                 
+cq-wcm-content                                      6.5.86                  
+cq-workflow-console-content                         1.4.64                  
+dtm-reactor.content                                 1.1.8                   
+\

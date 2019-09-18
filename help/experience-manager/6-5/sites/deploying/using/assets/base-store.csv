@@ -1,0 +1,542 @@
+#
+# Macro definitions
+#
+$categories=categories(code,catalogVersion(catalog(id[default='outdoors']),version[default='Staged']))
+
+#
+# Update delivery costs
+#
+INSERT_UPDATE ZoneDeliveryMode;code[unique=true];net;active;
+
+;fedex;true;true;
+;post;true;true;
+;ups;true;true;
+
+#
+# Create zones
+#
+INSERT_UPDATE Zone;code[unique=true];countries(isocode);
+;de;;
+;world;;
+
+#
+# Create countries with zones
+#
+INSERT_UPDATE Country;isocode[unique=true];zones(code);
+
+;DE;de,world;
+;US;world;
+
+#
+# Add countries to zones
+#
+INSERT_UPDATE Zone;code[unique=true];countries(isocode);
+;de;DE;
+;world;US;
+
+#
+# Create delivery costs
+#
+INSERT_UPDATE ZoneDeliveryModeValue;zone(code)[unique=true];currency(isocode)[unique=true];minimum;value;deliveryMode(code)[unique=true]
+
+;world;USD;0;2;fedex;
+;world;USD;0;2;ups;
+;world;USD;0;2;post;
+;de;USD;0;10;fedex;
+;de;USD;0;10;ups;
+;de;USD;0;10;post;
+;world;USD;0;0;free;
+
+
+#
+# Create delivery costs
+#
+INSERT_UPDATE ZoneDeliveryMode;code[unique=true];name[lang=en];active;stores(uid);net;
+
+;free;"Free Shipping";true;outdoors;true;
+
+#
+# Creating base store and website
+#
+INSERT_UPDATE BaseStore;uid[unique=true];name[lang=en];name[lang=de];defaultCurrency(isocode);defaultLanguage(isocode);catalogs(id);currencies(isocode);deliveryCountries(isocode);paymentProvider;deliveryModes(code);languages(isocode);net;warehouses(code);
+
+;outdoors;Outdoors;Outdoors;USD;en;outdoors;USD;DE,US;Mockup;fedex,post,ups;en;true;geometrixx01;
+
+
+INSERT_UPDATE CMSSite;uid[unique=true];name[lang=en];name[lang=de];active;stores(uid);defaultCatalog(id);defaultLanguage(isocode);urlPatterns;defaultPromotionGroup(identifier);
+
+;outdoors;"Geometrixx Outdoors";"Geometrixx Outdoors";true;outdoors;outdoors;en;"https?://[^/]/*outdoors.*";default;
+
+
+#
+# Create sample promotions
+#
+INSERT_UPDATE ProductPercentageDiscountPromotion;code[unique=true];enabled;title;PromotionGroup(identifier);description;priority;$categories;percentageDiscount;messageFired;
+
+;"Discount on seasonal products";true;"Discount on all seasonal products";default;"10% off of all seasonal products";1000;seasonal:outdoors:Staged,seasonal:outdoors:Online;10;"{0}% discount - You have saved {2}";
+
+
+INSERT_UPDATE PromotionPriceRow;currency(isocode)[unique=true];price;owner(OrderThresholdChangeDeliveryModePromotion.code)[unique=true];
+
+;USD;100;"Order threashold free shipping";
+
+INSERT_UPDATE OrderThresholdChangeDeliveryModePromotion;code[unique=true];enabled;title;PromotionGroup(identifier);description;priority;deliveryMode(code);thresholdTotals(owner(OrderThresholdChangeDeliveryModePromotion.code));
+
+;"Order threashold free shipping";true;"Free shipping for 100$+ orders";default;"Get free shipping for orders over 100$";1000;free;"Order threashold free shipping";
+
+
+INSERT_UPDATE ProductOneToOnePerfectPartnerPromotion;PromotionGroup(Identifier);baseProduct(catalogVersion(catalog(id),version),code);bundlePrices(&Item);code[allownull=true][unique=true];creationtime[forceWrite=true,dateformat=dd.MM.yyyy hh:mm:ss];description;enabled[allownull=true];endDate[dateformat=dd.MM.yyyy hh:mm:ss];messageCouldHaveFired[lang=en];messageFired[lang=en];partnerProduct(catalogVersion(catalog(id),version),code);priority;startDate[dateformat=dd.MM.yyyy hh:mm:ss];title
+
+;default;outdoors:Staged:320984;Item3;"One to One Perfect Partner Promotion Geometrixx Outdoors";07.02.2014 01:12:37;"Buy an Ashanti Nomad shirt and Jola Summer shorts for 50$";true;01.01.2099 12:00:00;"Buy Ashanti Nomad shirt together with Jola Summer short for {1}";"Buy Ashanti Nomad shirt together with Jola Summer short for {1} - You have saved {3}";outdoors:Staged:48576;1000;01.01.2000 12:00:00;"One to One Perfect Partner Promotion Geometrixx Outdoors"
+
+INSERT_UPDATE PromotionPriceRow;&Item;currency(isocode)[unique=true];price;owner(ProductOneToOnePerfectPartnerPromotion.code)[unique=true];
+
+;Item3;USD;50;"One to One Perfect Partner Promotion Geometrixx Outdoors";
+
+INSERT_UPDATE OrderThresholdFreeGiftPromotion;&Item;PromotionGroup(Identifier);code[allownull=true][unique=true];creationtime[forceWrite=true,dateformat=dd.MM.yyyy hh:mm:ss];description;enabled[allownull=true];endDate[dateformat=dd.MM.yyyy hh:mm:ss];giftProduct(catalogVersion(catalog(id),version),code);messageCouldHaveFired[lang=en];messageFired[lang=en];modifiedtime[dateformat=dd.MM.yyyy hh:mm:ss];priority;restrictions(&Item);startDate[dateformat=dd.MM.yyyy hh:mm:ss];thresholdTotals(&Item);title
+
+;Item5;default;"DavosTrekGift";01.08.2014 02:59:48;"Davos Trek gift over $200 order";true;01.01.2099 12:00:00;outdoors:Staged:4376;"Spend {1} to get a free Davos Trek water bottle - Spend another {3} to qualify";"You got a free Davos Trek water bottle for spending over {1}";01.08.2014 03:01:17;1,000;Item6;01.01.2000 12:00:00;Item7;"Davos Trek gift over $200 order"
+
+INSERT_UPDATE PromotionOrderRestriction;&Item;creationtime[forceWrite=true,dateformat=dd.MM.yyyy hh:mm:ss];modifiedtime[dateformat=dd.MM.yyyy hh:mm:ss];promotion(&Item)[unique=true]
+
+;Item6;01.08.2014 03:00:33;01.08.2014 03:00:33;Item5
+
+INSERT_UPDATE PromotionPriceRow;&Item;creationtime[forceWrite=true,dateformat=dd.MM.yyyy hh:mm:ss];currency(isocode)[allownull=true][unique=true];modifiedtime[dateformat=dd.MM.yyyy hh:mm:ss];price[allownull=true];owner(&Item)[unique=true]
+
+;Item7;01.08.2014 03:01:17;USD;01.08.2014 03:01:17;200;Item5
+
+
+#
+# Create vouchers
+#
+
+INSERT_UPDATE PromotionVoucher;code[unique=true];name[lang=de];name[lang=en];description[lang=en];freeShipping;value;currency(isoCode);voucherCode;redemptionQuantityLimit;redemptionQuantityLimitPerUser
+;A01;Loyalty rebate;Loyalty rebate;This is your loyalty rebate;false;5;USD;vo1;100;100
+;A02;Loyalty rebate;Loyalty rebate;This is your loyalty rebate;false;10;;vo2;5;5
+;A03;greeting voucher;greeting voucher;Welcome voucher for new customers;true;10;USD;HY2009;10;1
+;A04;50 dollar gift coupon;50 dollar gift coupon;Only for US customers;false;50;USD;A50;5;2
+;HYB;5% rebate;5% rebate;5% rebate;false;5;;HY2008;10;10
+
+
+#
+# Create titles
+#
+INSERT_UPDATE Title;code[unique=true];name;
+
+;dr;"Dr.";
+;prof;"Prof.";
+;mr;"Mr.";
+;mrs;"Mrs.";
+;ms;"Miss";
+;miss;"Miss";
+
+#
+# Create other countries and US regions
+#
+
+#
+# Full country list conforming to ISO 3166-1 alpha-2
+#
+INSERT_UPDATE Country;isocode[unique=true];name[lang=en];active[default=true]
+;AD;"Andorra"
+;AE;"United Arab Emirates"
+;AF;"Afghanistan"
+;AG;"Antigua and Barbuda"
+;AI;"Anguilla"
+;AL;"Albania"
+;AM;"Armenia"
+;AO;"Angola"
+;AQ;"Antarctica"
+;AR;"Argentina"
+;AS;"American Samoa"
+;AT;"Austria"
+;AU;"Australia"
+;AW;"Aruba"
+;AX;"Aland Islands"
+;AZ;"Azerbaijan"
+;BA;"Bosnia and Herzegovina"
+;BB;"Barbados"
+;BD;"Bangladesh"
+;BE;"Belgium"
+;BF;"Burkina Faso"
+;BG;"Bulgaria"
+;BH;"Bahrain"
+;BI;"Burundi"
+;BJ;"Benin"
+;BL;"Saint Barthélemy"
+;BM;"Bermuda"
+;BN;"Brunei Darussalam"
+;BO;"Bolivia"
+;BQ;"Bonaire, Saint Eustatius and Saba"
+;BR;"Brazil"
+;BS;"Bahamas"
+;BT;"Bhutan"
+;BV;"Bouvet Island"
+;BW;"Botswana"
+;BY;"Belarus"
+;BZ;"Belize"
+;CA;"Canada"
+;CC;"Cocos (Keeling) Islands"
+;CD;"Congo, the Democratic Republic of the"
+;CF;"Central African Republic"
+;CG;"Congo"
+;CH;"Switzerland"
+;CI;"Cote d'Ivoire"
+;CK;"Cook Islands"
+;CL;"Chile"
+;CM;"Cameroon"
+;CN;"China"
+;CO;"Colombia"
+;CR;"Costa Rica"
+;CU;"Cuba"
+;CV;"Cape Verde"
+;CW;"Curaçao"
+;CX;"Christmas Island"
+;CY;"Cyprus"
+;CZ;"Czech Republic"
+;DE;"Germany"
+;DJ;"Djibouti"
+;DK;"Denmark"
+;DM;"Dominica"
+;DO;"Dominican Republic"
+;DZ;"Algeria"
+;EC;"Ecuador"
+;EE;"Estonia"
+;EG;"Egypt"
+;EH;"Western Sahara"
+;ER;"Eritrea"
+;ES;"Spain"
+;ET;"Ethiopia"
+;FI;"Finland"
+;FJ;"Fiji"
+;FK;"Falkland Islands"
+;FM;"Micronesia, Federated States of"
+;FO;"Faroe Islands"
+;FR;"France"
+;GA;"Gabon"
+;GB;"United Kingdom"
+;GD;"Grenada"
+;GE;"Georgia"
+;GF;"French Guiana"
+;GG;"Guernsey"
+;GH;"Ghana"
+;GI;"Gibraltar"
+;GL;"Greenland"
+;GM;"Gambia"
+;GN;"Guinea"
+;GP;"Guadeloupe"
+;GQ;"Equatorial Guinea"
+;GR;"Greece"
+;GS;"South Georgia and the South Sandwich Islands"
+;GT;"Guatemala"
+;GU;"Guam"
+;GW;"Guinea-Bissau"
+;GY;"Guyana"
+;HK;"Hong Kong"
+;HM;"Heard Island and McDonald Islands"
+;HN;"Honduras"
+;HR;"Croatia"
+;HT;"Haiti"
+;HU;"Hungary"
+;ID;"Indonesia"
+;IE;"Ireland"
+;IL;"Israel"
+;IM;"Isle of Man"
+;IN;"India"
+;IO;"British Indian Ocean Territory"
+;IQ;"Iraq"
+;IR;"Iran"
+;IS;"Iceland"
+;IT;"Italy"
+;JE;"Jersey"
+;JM;"Jamaica"
+;JO;"Jordan"
+;JP;"Japan"
+;KE;"Kenya"
+;KG;"Kyrgyzstan"
+;KH;"Cambodia"
+;KI;"Kiribati"
+;KM;"Comoros"
+;KN;"Saint Kitts and Nevis"
+;KP;"Korea, Democratic People's Republic of"
+;KR;"Korea, Republic of"
+;KW;"Kuwait"
+;KY;"Cayman Islands"
+;KZ;"Kazakhstan"
+;LA;"Lao People's Democratic Republic"
+;LB;"Lebanon"
+;LC;"Saint Lucia"
+;LI;"Liechtenstein"
+;LK;"Sri Lanka"
+;LR;"Liberia"
+;LS;"Lesotho"
+;LT;"Lithuania"
+;LU;"Luxembourg"
+;LV;"Latvia"
+;LY;"Libyan Arab Jamahiriya"
+;MA;"Morocco"
+;MC;"Monaco"
+;MD;"Moldova"
+;ME;"Montenegro"
+;MF;"Saint Martin (French part)"
+;MG;"Madagascar"
+;MH;"Marshall Islands"
+;MK;"Macedonia"
+;ML;"Mali"
+;MM;"Myanmar"
+;MN;"Mongolia"
+;MO;"Macao"
+;MP;"Northern Mariana Islands"
+;MQ;"Martinique"
+;MR;"Mauritania"
+;MS;"Montserrat"
+;MT;"Malta"
+;MU;"Mauritius"
+;MV;"Maldives"
+;MW;"Malawi"
+;MX;"Mexico"
+;MY;"Malaysia"
+;MZ;"Mozambique"
+;NA;"Namibia"
+;NC;"New Caledonia"
+;NE;"Niger"
+;NF;"Norfolk Island"
+;NG;"Nigeria"
+;NI;"Nicaragua"
+;NL;"Netherlands"
+;NO;"Norway"
+;NP;"Nepal"
+;NR;"Nauru"
+;NU;"Niue"
+;NZ;"New Zealand"
+;OM;"Oman"
+;PA;"Panama"
+;PE;"Peru"
+;PF;"French Polynesia"
+;PG;"Papua New Guinea"
+;PH;"Philippines"
+;PK;"Pakistan"
+;PL;"Poland"
+;PM;"Saint Pierre and Miquelon"
+;PN;"Pitcairn"
+;PR;"Puerto Rico"
+;PS;"Palestinian Territory"
+;PT;"Portugal"
+;PW;"Palau"
+;PY;"Paraguay"
+;QA;"Qatar"
+;RE;"Reunion"
+;RO;"Romania"
+;RS;"Serbia"
+;RU;"Russian Federation"
+;RW;"Rwanda"
+;SA;"Saudi Arabia"
+;SB;"Solomon Islands"
+;SC;"Seychelles"
+;SD;"Sudan"
+;SE;"Sweden"
+;SG;"Singapore"
+;SH;"Saint Helena, Ascension and Tristan da Cunha"
+;SI;"Slovenia"
+;SJ;"Svalbard and Jan Mayen"
+;SK;"Slovakia"
+;SL;"Sierra Leone"
+;SM;"San Marino"
+;SN;"Senegal"
+;SO;"Somalia"
+;SR;"Suriname"
+;ST;"Sao Tome and Principe"
+;SV;"El Salvador"
+;SX;"Sint Maarten (Dutch part)"
+;SY;"Syrian Arab Republic"
+;SZ;"Swaziland"
+;TC;"Turks and Caicos Islands"
+;TD;"Chad"
+;TF;"French Southern Territories"
+;TG;"Togo"
+;TH;"Thailand"
+;TJ;"Tajikistan"
+;TK;"Tokelau"
+;TL;"Timor-Leste"
+;TM;"Turkmenistan"
+;TN;"Tunisia"
+;TO;"Tonga"
+;TR;"Turkey"
+;TT;"Trinidad and Tobago"
+;TV;"Tuvalu"
+;TW;"Taiwan"
+;TZ;"Tanzania"
+;UA;"Ukraine"
+;UG;"Uganda"
+;UM;"United States Minor Outlying Islands"
+;US;"United States"
+;UY;"Uruguay"
+;UZ;"Uzbekistan"
+;VA;"Holy See (Vatican City State)"
+;VC;"Saint Vincent and the Grenadines"
+;VE;"Venezuela"
+;VG;"Virgin Islands, British"
+;VI;"Virgin Islands, U.S."
+;VN;"Viet Nam"
+;VU;"Vanuatu"
+;WF;"Wallis and Futuna"
+;WS;"Samoa"
+;YE;"Yemen"
+;YT;"Mayotte"
+;ZA;"South Africa"
+;ZM;"Zambia"
+;ZW;"Zimbabwe"
+
+#
+# ISO 3166-2:US
+#
+INSERT_UPDATE Region;country(isocode);isocode[unique=true];isocodeShort;name[lang=en];active[default=true]
+;US;US-AL;AL;"Alabama"
+;US;US-AK;AK;"Alaska"
+;US;US-AZ;AZ;"Arizona"
+;US;US-AR;AR;"Arkansas"
+;US;US-CA;CA;"California"
+;US;US-CO;CO;"Colorado"
+;US;US-CT;CT;"Connecticut"
+;US;US-DE;DE;"Delaware"
+;US;US-FL;FL;"Florida"
+;US;US-GA;GA;"Georgia"
+;US;US-HI;HI;"Hawaii"
+;US;US-ID;ID;"Idaho"
+;US;US-IL;IL;"Illinois"
+;US;US-IN;IN;"Indiana"
+;US;US-IA;IA;"Iowa"
+;US;US-KS;KS;"Kansas"
+;US;US-KY;KY;"Kentucky"
+;US;US-LA;LA;"Louisiana"
+;US;US-ME;ME;"Maine"
+;US;US-MD;MD;"Maryland"
+;US;US-MA;MA;"Massachusetts"
+;US;US-MI;MI;"Michigan"
+;US;US-MN;MN;"Minnesota"
+;US;US-MS;MS;"Mississippi"
+;US;US-MO;MO;"Missouri"
+;US;US-MT;MT;"Montana"
+;US;US-NE;NE;"Nebraska"
+;US;US-NV;NV;"Nevada"
+;US;US-NH;NH;"New Hampshire"
+;US;US-NJ;NJ;"New Jersey"
+;US;US-NM;NM;"New Mexico"
+;US;US-NY;NY;"New York"
+;US;US-NC;NC;"North Carolina"
+;US;US-ND;ND;"North Dakota"
+;US;US-OH;OH;"Ohio"
+;US;US-OK;OK;"Oklahoma"
+;US;US-OR;OR;"Oregon"
+;US;US-PA;PA;"Pennsylvania"
+;US;US-RI;RI;"Rhode Island"
+;US;US-SC;SC;"South Carolina"
+;US;US-SD;SD;"South Dakota"
+;US;US-TN;TN;"Tennessee"
+;US;US-TX;TX;"Texas"
+;US;US-UT;UT;"Utah"
+;US;US-VT;VT;"Vermont"
+;US;US-VA;VA;"Virginia"
+;US;US-WA;WA;"Washington"
+;US;US-WV;WV;"West Virginia"
+;US;US-WI;WI;"Wisconsin"
+;US;US-WY;WY;"Wyoming"
+;US;US-DC;DC;"District of Columbia"
+;US;US-AS;AS;"American Samoa"
+;US;US-GU;GU;"Guam"
+;US;US-MP;MP;"Northern Mariana Islands"
+;US;US-PR;PR;"Puerto Rico"
+;US;US-UM;UM;"United States Minor Outlying Islands"
+;US;US-VI;VI;"United States Virgin Islands"
+
+
+
+
+#
+# Faceted search configuration
+#
+
+$solrValueRanges=solrValueRanges(name);
+$defaultSortOrder=defaultSortOrder;
+$document=document(code);
+$solrSearchConfig=solrSearchConfig(pageSize);
+$catalogVersions=catalogVersions(catalog(id[default='clothescatalog']),version[default='Online'])[unique=true,default='clothescatalog:Online']
+$solrValueRangeSets = solrValueRangeSets(name)
+$solrValueRangeSet = solrValueRangeSet(name)
+
+$solrSearchConfig=solrSearchConfig(&Item);
+$solrIndexerQueries = solrIndexerQueries(identifier);
+$solrIndexedProperties = solrIndexedProperties(name);
+$solrIndexedTypes = solrIndexedTypes(identifier);
+$solrServerConfig = solrServerConfig(name);
+$solrIndexConfig = solrIndexConfig(name);
+
+;;
+INSERT_UPDATE  SolrValueRangeSet;name[unique=true];type;$solrValueRanges;;
+;priceRanges2;double;0-49.99a,50-199.99a,200-100000a;
+;;
+INSERT_UPDATE  SolrValueRange;name[unique=true];from;to;$solrValueRangeSet;
+;0-49.99a;0;49.99;priceRanges2;
+;50-199.99a;50;199.99;priceRanges2;
+;200-100000a;200;100000;priceRanges2;
+;;
+INSERT_UPDATE SolrIndexerQuery;identifier[unique=true];type(code);query;injectLastIndexTime[default=false];injectCurrentTime[default=false];injectCurrentDate[default=false];user(uid);solrIndexerQueryParameters(name);
+;clothesVariantProductFull;full;SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {pk} FROM {variantproduct}}});;;;anonymous;;
+;clothesVariantProductUpdate;update;SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {pk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime;true;;;anonymous;;
+;;
+INSERT_UPDATE SolrSearchConfig;&Item;pageSize[unique=true];description[unique=true];$defaultSortOrder;
+;SFC1;20;SolrSearchConfig for clothesCatalog;score;
+;;
+INSERT_UPDATE SolrIndexedType;identifier[unique=true];type(code);$solrIndexerQueries;variant;identityProvider;modelLoader;
+;ClothesVariantProduct;Product;clothesVariantProductFull,clothesVariantProductUpdate;true;;;
+;;
+INSERT_UPDATE SolrIndexedProperty;name[unique=true];solrIndexedType(identifier)[unique=true];type(code);
+;code;ClothesVariantProduct;string;
+;;
+INSERT_UPDATE SolrIndexedProperty;name[unique=true];solrIndexedType(identifier)[unique=true];type(code);sortableType(code);facet[default=true];localized[default=false];currency[default=false];multiValue[default=false];
+;name;ClothesVariantProduct;text;sortabletext;false;true;;
+;description;ClothesVariantProduct;text;;false;true;;
+;manufacturerName;ClothesVariantProduct;string;sortabletext;true;;;
+;;
+INSERT_UPDATE SolrIndexedProperty;name[unique=true];solrIndexedType(identifier)[unique=true];type(code);facet[default=true];localized[default=false];currency[default=false];multiValue[default=false];rangeSet(name);facetDisplayNameProvider;fieldValueProvider;rangeSets(name)
+;priceValue;ClothesVariantProduct;double;false;;true;;;;productPriceValueProvider;
+;color;ClothesVariantProduct;string;true;true;;;;;classificationPropertyValueProvider;
+;size;ClothesVariantProduct;string;true;;;;;;classificationPropertyValueProvider;
+;;
+INSERT_UPDATE SolrIndexedProperty;&Item;name[unique=true];solrIndexedType(identifier)[unique=true];type(code);facet[default=true];localized[default=false];currency[default=false];multiValue[default=false];rangeSet(name);facetDisplayNameProvider;fieldValueProvider;rangeSets(name);categoryField[default=false];priority;displayName;facetType(code,itemtype(code));customFacetSortProvider
+;Item_cat;category;ClothesVariantProduct;string;true;;;true;;categoryFacetDisplayNameProvider;categoryCodeValueProvider;;true;6000;Category;Refine:SolrIndexedPropertyFacetType;facetNameSortProviderAscending
+;Item_pri;price;ClothesVariantProduct;double;true;;true;;priceRanges2;;productPriceValueProvider;;false;4000;Price;MultiSelectOr:SolrIndexedPropertyFacetType;
+;;
+INSERT_UPDATE SolrIndexedProperty2SolrValueRangeSetRelation;qualifier;reverseSequenceNumber;sequenceNumber;source(&Item);target(name)[unique=true,allownull=true]
+;SolrIndexedProperty2SolrValueRangeSetRelation;0;0;Item_pri;priceRanges2
+;;
+INSERT_UPDATE SolrServerConfig;name[unique=true];mode(code);embeddedMaster;
+;embedded-ClothesCatalogs;embedded;true;
+;;
+INSERT_UPDATE SolrIndexConfig;name[unique=true];batchSize;exportPath;
+;indexConfig-ClothesCatalogs;100;;
+;;
+INSERT_UPDATE  SolrFacetSearchConfig;name[unique=true];description;$document;$solrSearchConfig;currencies(isocode);languages(isocode);$catalogVersions;$solrValueRangeSets;$solrIndexedTypes;$solrServerConfig;$solrIndexConfig;
+;Sample Solr Config for Clothes;Sample Solr Configuration for clothescatalog;;SFC1;EUR,USD;de,en;outdoors:Online,outdoors:Staged;priceRanges2;ClothesVariantProduct;embedded-ClothesCatalogs;indexConfig-ClothesCatalogs
+;;
+INSERT_UPDATE SolrSort;code[unique=true,allownull=true];indexedType(identifier)[unique=true,allownull=true];indexedTypePOS;name[lang=en];useBoost[allownull=true];visible[allownull=true]
+;name-asc;ClothesVariantProduct;1;Name (ascending);false;true
+;name-desc;ClothesVariantProduct;2;Name (descending);false;true
+;price-asc;ClothesVariantProduct;3;Price (ascending);false;true
+;price-desc;ClothesVariantProduct;4;Price (descending);false;true
+;relevance;ClothesVariantProduct;0;Relevance;false;true
+;;
+INSERT_UPDATE SolrSortField;ascending[unique=true,allownull=true];fieldName[unique=true,allownull=true];sort(code,indexedType(identifier))[unique=true,allownull=true];sortPOS
+;false;score;relevance:ClothesVariantProduct;0
+;true;name;name-asc:ClothesVariantProduct;0
+;false;name;name-desc:ClothesVariantProduct;0
+;true;priceValue;price-asc:ClothesVariantProduct;0
+;false;priceValue;price-desc:ClothesVariantProduct;0
+
+#
+# Run Solr indexer
+#
+$impex.legacy.scripting=true;
+#%import de.hybris.platform.addonsupport.setup.AddOnSystemSetupSupport;
+#%AddOnSystemSetupSupport addonSystem = Registry.getApplicationContext().getBean("defaultAddonSystemSetupSupport");
+#%addonSystem.executeSolrIndexerCronJob("Sample Solr Config for Clothes",true);
