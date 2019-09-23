@@ -1,0 +1,47 @@
+SYMBOLIC NAME                                      BUNDLE NAME                                                  VERSION
+com.adobe.cq.dam.cq-dam-ui-models                  AEM - DAM Sling Model Bundle                                 1.0.8
+com.adobe.cq.cq-ref-update-processor-util          AEM - Reference Update Processor Utility bundle              1.0.0
+com.day.cq.remote.content.renderer                 Remote Content Renderer                                      2.0.4
+com.adobe.cq.cq-experience-fragments               AEM - Experience Fragments                                   1.2.50
+com.adobe.cq.cq-ref-update-processor-api           AEM - Reference Update Processor API bundle                  1.0.4
+com.adobe.cq.cq-ref-update-processor-impl          AEM - Reference Update Processor Impl bundle                 1.0.10
+com.adobe.cq.cq-socialmedia-integration            AEM - Social Media Integration                               1.2.4
+com.adobe.cq.social.cq-social-activitystreams      AEM Communities ActivityStreams - Bundle                     1.6.16
+com.adobe.cq.social.cq-social-commons              AEM Communities Commons - Bundle                             1.10.74
+com.adobe.cq.social.cq-social-console              AEM Communities Console - Bundle                             1.6.40
+com.adobe.cq.social.cq-social-handlebars           AEM Communities Handlebars Scripting Engine - Bundle         1.10.17
+com.adobe.cq.social.cq-social-scf-impl             AEM Communities SCF - Impl Bundle                            2.2.11
+com.adobe.cq.dam.cq-dynamicmedia-core              AEM Dynamic Media Integration                                1.0.78
+com.adobe.cq.com.adobe.cq.msm.ui                   AEM MSM - UI Utilities                                       0.2.10
+com.adobe.xmp.worker.files.native.fragment.linux   Adobe - XMPFiles Worker platform fragment linux              1.0.8
+com.adobe.xmp.worker.files.native.fragment.macosx  Adobe - XMPFiles Worker platform fragment macosx             1.0.8
+com.adobe.xmp.worker.files.native.fragment.win     Adobe - XMPFiles Worker platform fragment win                1.0.8
+com.adobe.cq.cq-content-insight                    Adobe CQ Content Insight and Recommendations                 1.5.8
+com.adobe.cq.cq-dam-mac-sync                       Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Bundle  1.5.16.B002
+com.day.cq.dam.cq-dam-entitlement                  Adobe CQ DAM Entitlement Implementation                      1.3.14
+com.adobe.cq.dam.cq-scene7-imaging                 Adobe CQ DAM Scene7 Dynamic Imaging                          1.6.50.CQ650-B0002
+com.adobe.cq.remotedam.cq-remotedam-server-core    Adobe CQ Remote DAM Server Core                              1.0.10
+com.adobe.cq.remotedam.cq-remotedam-client-core    Adobe CQ Remote Dam Client Core Bundle                       1.0.14
+com.adobe.granite.acp.platform                     Adobe Granite ACP Platform                                   0.3.4
+com.adobe.granite.jobs.async                       Adobe Granite Async Jobs                                     1.0.28
+com.adobe.granite.csrf                             Adobe Granite CSRF Framework                                 1.0.20.CQ650-B0002
+com.day.cq.cq-replication                          Adobe Granite Replication                                    6.2.86.CQ650-B0002
+com.adobe.granite.jetty.ssl                        Adobe Granite SSL ContextFactory for Jetty                   1.0.4.CQ650-B0002
+com.adobe.granite.timeline                         Adobe Granite Timeline Support                               1.0.24
+com.adobe.granite.ui.clientlibs                    Adobe Granite UI Clientlibs                                  1.0.92
+com.adobe.granite.workflow.core                    Adobe Granite Workflow Core                                  2.0.240.CQ650-B0002
+com.day.commons.osgi.wrapper.fop                   Apache FOP bundle                                            1.16.0
+org.apache.felix.webconsole.plugins.memoryusage    Apache Felix Web Console Memory Usage Plugin                 1.0.10
+com.adobe.cq.cq-product-info-provider              CQ ProductInfo Provider                                      6.5.4
+com.adobe.dam.cq-dam-cfm-impl                      ContentFragmentManagement - Implementation                   0.11.54
+day-commons-jstl                                   Day Commons Library - JavaServer Pages Standard Tag Library  1.2.2
+com.day.cq.cq-compat-codeupgrade                   Day Communique 5 Code Upgrade service                        1.7.102
+com.day.cq.dam.adobe-xmp                           Day Communique 5 DAM Adobe extension                         5.12.6
+com.day.cq.dam.cq-dam-commons                      Day Communique 5 DAM Commons                                 5.12.62
+com.day.cq.dam.cq-dam-core                         Day Communique 5 DAM Core Implementation                     5.12.170
+com.day.cq.wcm.cq-wcm-core                         Day Communique 5 WCM Core Implementation                     5.12.96
+com.day.cq.wcm.cq-msm-core                         Day Communique 5 WCM Multi Site Management Core              5.12.36
+com.day.cq.wcm.cq-msm-move-api                     Day Communique 5 WCM Multi Site Management Move Handle API   0.0.4
+com.fasterxml.jackson.core.jackson-annotations     Jackson-annotations                                          2.9.6
+com.fasterxml.jackson.core.jackson-core            Jackson-core                                                 2.9.6
+com.fasterxml.jackson.core.jackson-databind        jackson-databind                                             2.9.6
