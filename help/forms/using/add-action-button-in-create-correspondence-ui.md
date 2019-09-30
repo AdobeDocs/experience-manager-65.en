@@ -290,7 +290,7 @@ Handling the action/button on clicking action/button includes logic for:
            '<div class="modal-dialog modal-sm">'+
                '<div class="modal-content">' +
                    '<div class="modal-header">'+
-                       '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+                       '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</code></button>'+
                        '<h4 class="modal-title"> Send Review </h4>'+
                    '</div>'+
                    '<div class="modal-body">'+
@@ -317,7 +317,7 @@ Handling the action/button on clicking action/button includes logic for:
        '</div>';
        ```
 
-### Add the LiveCycle process to enable action <span class="acrolinxCursorMarker"></span>handling {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Add the LiveCycle process to enable action <span class="acrolinxCursorMarker"></code>handling {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 In this scenario, enable the following components, which are a part of the attached components.zip file:
 

@@ -581,27 +581,27 @@ Some of these will be dependent on your operating system.
   <tr> 
    <td>truss/strace</td> 
    <td>Page Loads</td> 
-   <td><p>Unix/Linux commands to trace system calls and signals. Increase the log level to <span class="code">INFO</span>.</p> <p>Analyze the number of page loads per request, which pages, etc.</p> </td> 
+   <td><p>Unix/Linux commands to trace system calls and signals. Increase the log level to <code>INFO</code>.</p> <p>Analyze the number of page loads per request, which pages, etc.</p> </td> 
   </tr> 
   <tr> 
    <td>Thread dumps</td> 
    <td>Observe JVM threads. Identify contentions, locks and long-runners.</td> 
-   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <span class="code">kill -QUIT &lt;<em>pid</em>&gt;</span><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analysis tools are also available, such as <a href="http://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
+   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analysis tools are also available, such as <a href="http://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Heap Dumps</td> 
    <td>Out of Memory issues that cause slow performance.</td> 
-   <td><p>Add the:<br /> <span class="code">-XX:+HeapDumpOnOutOfMemoryError</span><br /> option to the java call to AEM.</p> <p>See the <a href="http://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Troubleshooting Guide for Java SE 6 with HotSpot VM</a>.</p> </td> 
+   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>See the <a href="http://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Troubleshooting Guide for Java SE 6 with HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>System calls</td> 
    <td>Identify timing issues.</td> 
-   <td><p>Calls to <span class="code">System.currentTimeMillis()</span> or <span class="code">com.day.util</span>.Timing are used to generate timestamps from your code, or via <a href="#html-comments">HTML-comments</a>.</p> <p><strong>Note:</strong> These should be implemented so that they can be activated / deactivated as required; when a system is running smoothly the overhead of collecting statistics will not be needed.</p> </td> 
+   <td><p>Calls to <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing are used to generate timestamps from your code, or via <a href="#html-comments">HTML-comments</a>.</p> <p><strong>Note:</strong> These should be implemented so that they can be activated / deactivated as required; when a system is running smoothly the overhead of collecting statistics will not be needed.</p> </td> 
   </tr> 
   <tr> 
    <td>Apache Bench</td> 
    <td>Identify memory leaks, selectively analyze response time.</td> 
-   <td><p>basic usage is:</p> <p><span class="code">ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</span></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="http://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> for full details.</p> </td> 
+   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="http://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> for full details.</p> </td> 
   </tr> 
   <tr> 
    <td>Search Analysis</td> 
@@ -636,7 +636,7 @@ Some of these will be dependent on your operating system.
   <tr> 
    <td>Timing Statistics</td> 
    <td>See timing statistics for page rendering.</td> 
-   <td><p>To see timing statistics for page rendering you can use <strong>Ctrl-Shift-U</strong> together with <span class="code">?debugClientLibs=true</span> set in the URL.</p> </td> 
+   <td><p>To see timing statistics for page rendering you can use <strong>Ctrl-Shift-U</strong> together with <code>?debugClientLibs=true</code> set in the URL.</p> </td> 
   </tr> 
   <tr> 
    <td>CPU and memory profiling tool<br /> </td> 

@@ -879,12 +879,12 @@ To configure Dynamic Media Image Server settings:
   </tr> 
   <tr> 
    <td>TcpPort.name</td> 
-   <td><span class="code"><em>empty</em></span></td> 
+   <td><code><em>empty</em></code></td> 
    <td>Port number to use for communication with the ImageServer process. By default free port is automatically detected.</td> 
   </tr> 
   <tr> 
    <td>AllowRemoteAccess.name</td> 
-   <td><span class="code"><em>empty</em></span></td> 
+   <td><code><em>empty</em></code></td> 
    <td><p>Allow or disallow remote access to ImageServer process. If false, the image server listens only on localhost.</p> <p>Default externalizer settings that point to the localhost need to specify the actual domain or IP address of the specific VM instance. The reason for this is because the localhost may be pointing to the parent system of the VM.</p> <p>Domains or IP addresses for the VM may need to have a host file entry so that it can resolve itself.</p> </td> 
   </tr> 
   <tr> 
@@ -1321,11 +1321,11 @@ See [Delivering Dynamic Media Assets](../../assets/using/delivering-dynamic-medi
   </tr> 
   <tr> 
    <td>Copy an image URL</td> 
-   <td><p>The Copy URL dialog box displays a URL similar to following (URL is for demonstration purposes only):</p> <p><span class="code">http://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</span></p> <p>Where <span class="code">IMAGESERVICEPUBLISHNODE</span> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
+   <td><p>The Copy URL dialog box displays a URL similar to following (URL is for demonstration purposes only):</p> <p><code>http://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</code></p> <p>Where <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Copy a viewer URL</td> 
-   <td><p>The Copy URL dialog box displays a URL similar to the following (URL is for demonstration purposes only):</p> <p><span class="code">http://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=http://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</span></p> <p>Where <span class="code">PUBLISHNODE</span> refers to the regular AEM publish node and <span class="code">IMAGESERVICEPUBLISHNODE</span> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
+   <td><p>The Copy URL dialog box displays a URL similar to the following (URL is for demonstration purposes only):</p> <p><code>http://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=http://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Where <code>PUBLISHNODE</code> refers to the regular AEM publish node and <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Copy a viewer's embed code</td> 
@@ -1347,7 +1347,7 @@ See [Delivering Dynamic Media Assets](../../assets/using/delivering-dynamic-medi
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
        "asset" : "/content/dam/path/to/Image.jpg" }
        }).init();
-       &lt;/script&gt;</code></p> <p>Where <span class="code">PUBLISHNODE</span> refers to the regular AEM publish node and <span class="code">IMAGESERVICEPUBLISHNODE</span> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
+       &lt;/script&gt;</code></p> <p>Where <code>PUBLISHNODE</code> refers to the regular AEM publish node and <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

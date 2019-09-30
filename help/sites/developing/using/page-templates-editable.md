@@ -251,10 +251,10 @@ The following table details the necessary permissions for template editing.
    <th scope="col" width="150">Description</th> 
   </tr> 
   <tr> 
-   <td rowspan="3"><span class="code">/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</span></td> 
+   <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td> 
    <td>Template Authors<br /> </td> 
    <td>read, write, replicate</td> 
-   <td>Template authors that create, read, update, delete, and replicate templates in site specific <span class="code">/conf</span> space</td> 
+   <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td> 
   </tr> 
   <tr> 
    <td>Anonymous Web User</td> 
@@ -267,10 +267,10 @@ The following table details the necessary permissions for template editing.
    <td>replicateContent authors need to activate the templates of a page when activating a page</td> 
   </tr> 
   <tr> 
-   <td rowspan="3"><span class="code">/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</span></td> 
-   <td><span class="code">Template Author</span></td> 
+   <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td> 
+   <td><code>Template Author</code></td> 
    <td>read, write, replicate</td> 
-   <td>Template authors that create, read, update, delete, and replicate templates in site specific <span class="code">/conf</span> space</td> 
+   <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td> 
   </tr> 
   <tr> 
    <td>Annonymous Web User</td> 
@@ -283,7 +283,7 @@ The following table details the necessary permissions for template editing.
    <td>Content authors need to activate the policies of a template of a page when activating a page</td> 
   </tr> 
   <tr> 
-   <td rowspan="2"><span class="code">/conf/&lt;site&gt;/settings/template-types</span></td> 
+   <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td> 
    <td>Template Author</td> 
    <td>read</td> 
    <td>Template author creates a new template based on one of the predefined template types.</td> 
@@ -311,10 +311,10 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
    <th scope="col" width="150">Description</th> 
   </tr> 
   <tr> 
-   <td rowspan="3"><span class="code">/conf/global/settings/wcm/templates</span></td> 
+   <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td> 
    <td>Template Authors</td> 
    <td>read, write, replicate</td> 
-   <td>Template authors that create, read, update, delete, and replicate templates in <span class="code">/conf/global</span></td> 
+   <td>Template authors that create, read, update, delete, and replicate templates in <code>/conf/global</code></td> 
   </tr> 
   <tr> 
    <td>Anonymous Web User</td> 
@@ -327,10 +327,10 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
    <td>Content authors need to activate the templates of a page when activating a page</td> 
   </tr> 
   <tr> 
-   <td rowspan="3"><span class="code">/conf/global/settings/wcm/policies</span></td> 
-   <td><span class="code">Template Author</span></td> 
+   <td rowspan="3"><code>/conf/global/settings/wcm/policies</code></td> 
+   <td><code>Template Author</code></td> 
    <td>read, write, replicate</td> 
-   <td>Template authors that create, read, update, delete, and replicate templates in <span class="code">/conf/global</span></td> 
+   <td>Template authors that create, read, update, delete, and replicate templates in <code>/conf/global</code></td> 
   </tr> 
   <tr> 
    <td>Anonymous Web User</td> 
@@ -343,7 +343,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
    <td>Content authors need to activate the policies of a template of a page when activating a page</td> 
   </tr> 
   <tr> 
-   <td rowspan="2"><span class="code">/conf/global/settings/wcm/template-types</span></td> 
+   <td rowspan="2"><code>/conf/global/settings/wcm/template-types</code></td> 
    <td>Template Author</td> 
    <td>read</td> 
    <td>Template author creates a new template based on one of the predefined template types</td> 

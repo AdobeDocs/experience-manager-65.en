@@ -223,23 +223,23 @@ An administrator (a member of fd-administrators group) can configure a network f
    <td>Description</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Name</span></td> 
+   <td><span class="uicontrol">Name</code></td> 
    <td>Specify the name of the Watched Folder. This field support only alphanumeric.</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Path</span></td> 
+   <td><span class="uicontrol">Path</code></td> 
    <td>Specify the physical location of the Watched Folder. In a clustered environment, use a shared network folder that is accessible from AEM cluster node.</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Process Files Using</span></td> 
-   <td>Select the <span class="uicontrol">Workflow </span>option. </td> 
+   <td><span class="uicontrol">Process Files Using</code></td> 
+   <td>Select the <span class="uicontrol">Workflow </code>option. </td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Workflow Model</span></td> 
+   <td><span class="uicontrol">Workflow Model</code></td> 
    <td>Select a workflow model.<br /> </td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Output File Pattern</span></td> 
+   <td><span class="uicontrol">Output File Pattern</code></td> 
    <td>Specify the directory structure for output files and directories. You can also specify a <a href="/forms/using/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td> 
   </tr> 
  </tbody> 

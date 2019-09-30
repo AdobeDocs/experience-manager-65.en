@@ -70,23 +70,23 @@ The OSGi configuration is:
   </tr> 
   <tr> 
    <td><strong>Resource type</strong></td> 
-   <td><span class="code">dam.cfm.component.resourceType</span></td> 
-   <td>The resource type to register; e.g. <br /> <p><span class="cmp-examples-demo__property-value"><span class="code">core/wcm/components/contentfragment/v1/contentfragment</span></span></p> </td> 
+   <td><code>dam.cfm.component.resourceType</code></td> 
+   <td>The resource type to register; e.g. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td> 
   </tr> 
   <tr> 
    <td><strong>Reference property</strong></td> 
-   <td><span class="code">dam.cfm.component.fileReferenceProp</span></td> 
-   <td>The name of the property that contains the reference to the fragment; e.g. <span class="code">fragmentPath</span> or <span class="code">fileReference</span></td> 
+   <td><code>dam.cfm.component.fileReferenceProp</code></td> 
+   <td>The name of the property that contains the reference to the fragment; e.g. <code>fragmentPath</code> or <code>fileReference</code></td> 
   </tr> 
   <tr> 
    <td><strong>Element(s) property</strong></td> 
-   <td><span class="code">dam.cfm.component.elementsProp</span></td> 
-   <td>The name of the property that contains the name(s) of the element(s) to render; e.g.<span class="code">elementName</span></td> 
+   <td><code>dam.cfm.component.elementsProp</code></td> 
+   <td>The name of the property that contains the name(s) of the element(s) to render; e.g.<code>elementName</code></td> 
   </tr> 
   <tr> 
    <td><strong>Variation property</strong><br /> </td> 
-   <td><span class="code">dam.cfm.component.variationProp</span></td> 
-   <td>The name of the property that contains the name of the variation to render; e.g.<span class="code">variationName</span></td> 
+   <td><code>dam.cfm.component.variationProp</code></td> 
+   <td>The name of the property that contains the name of the variation to render; e.g.<code>variationName</code></td> 
   </tr> 
  </tbody> 
 </table>
@@ -100,24 +100,24 @@ For some functionality (e.g. to render only a paragraph range) you will have to 
    <td>Description</td> 
   </tr> 
   <tr> 
-   <td><span class="code">paragraphRange</span></td> 
+   <td><code>paragraphRange</code></td> 
    <td><p>A string property that defines the range of paragraphs to be output if in <em>single element render mode</em>.</p> <p>Format:</p> 
     <ul> 
-     <li><span class="code">1</span> or <span class="code">1-3</span> or <span class="code">1-3;6;7-8</span> or <span class="code">*-3;5-*</span></li> 
-     <li>only evaluated if <span class="code">paragraphScope</span> is set to <span class="code">range</span></li> 
+     <li><code>1</code> or <code>1-3</code> or <code>1-3;6;7-8</code> or <code>*-3;5-*</code></li> 
+     <li>only evaluated if <code>paragraphScope</code> is set to <code>range</code></li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">paragraphScope</span></td> 
+   <td><code>paragraphScope</code></td> 
    <td><p>A string property that defines how paragraphs are to be output if in <em>single element render mode</em>.</p> <p>Values:</p> 
     <ul> 
-     <li><span class="code">all</span> : to render all paragraphs</li> 
-     <li><span class="code">range</span> : to render the range of paragraphs provided by <span class="code">paragraphRange</span></li> 
+     <li><code>all</code> : to render all paragraphs</li> 
+     <li><code>range</code> : to render the range of paragraphs provided by <code>paragraphRange</code></li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">paragraphHeadings</span></td> 
-   <td>A boolean property that defines if headings (for example, <span class="code">h1</span>, <span class="code">h2</span>, <span class="code">h3</span>) are counted as paragraphs (<span class="code">true</span>) or not (<span class="code">false</span>)</td> 
+   <td><code>paragraphHeadings</code></td> 
+   <td>A boolean property that defines if headings (for example, <code>h1</code>, <code>h2</code>, <code>h3</code>) are counted as paragraphs (<code>true</code>) or not (<code>false</code>)</td> 
   </tr> 
  </tbody> 
 </table>

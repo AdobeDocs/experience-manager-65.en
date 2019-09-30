@@ -41,7 +41,7 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
       ```    
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-       text <span data-sly-test="${isUnwrapped}>is unwrapped</span>
+       text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
        </div>
       ```
 

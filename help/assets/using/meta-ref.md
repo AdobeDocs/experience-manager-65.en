@@ -53,7 +53,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
   </tr>
   <tr>
    <td>format</td> 
-   <td>The file format, physical medium, or dimensions of the asset. AEM uses <span class="code">dc:format</span> to denote the mime-type of the asset.<br /> </td> 
+   <td>The file format, physical medium, or dimensions of the asset. AEM uses <code>dc:format</code> to denote the mime-type of the asset.<br /> </td> 
   </tr>
   <tr>
    <td>identifier</td> 

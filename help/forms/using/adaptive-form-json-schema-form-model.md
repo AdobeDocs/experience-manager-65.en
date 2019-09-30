@@ -60,7 +60,7 @@ This mapping of JSON elements with adaptive form components is as follows:
    <th><strong>Adaptive form component</strong></th> 
   </tr> 
   <tr> 
-   <td><p>String properties with enum and enumNames constraint.</p> <p>Syntax,</p> <p> <span class="code">{</span></p> <p><span class="code">"type" : "string",</span></p> <p><span class="code">"enum" : ["M", "F"]</span></p> <p><span class="code">"enumNames" : ["Male", "Female"]</span></p> <p><span class="code">}</span></p> <p> </p> </td> 
+   <td><p>String properties with enum and enumNames constraint.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
    <td><p>Drop down component:</p> 
     <ul> 
      <li>Values listed in enumNames are displayed in the drop box.</li> 
@@ -68,7 +68,7 @@ This mapping of JSON elements with adaptive form components is as follows:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>String property with format constraint. For example, email, and date.</p> <p>Syntax,</p> <p><span class="code">{</span></p> <p><span class="code">"type" : "string",</span></p> <p><span class="code">"format" : "email"</span></p> <p><span class="code">}</span></p> <p> </p> </td> 
+   <td><p>String property with format constraint. For example, email, and date.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td> 
    <td> 
     <ul> 
      <li>Email component is mapped when the type is string and format is email.</li> 
@@ -638,7 +638,7 @@ You can add the following restrictions to JSON Schema elements to limit the valu
    <td width="22%"><p><strong>Component</strong></p> </td> 
   </tr> 
   <tr> 
-   <td width="21%"><p><span class="code">maximum</span></p> </td> 
+   <td width="21%"><p><code>maximum</code></p> </td> 
    <td valign="top" width="14%"><p>String</p> </td> 
    <td width="41%"><p>Specifies the upper bound for numeric values and dates. By default, the maximum value is included.</p> </td> 
    <td width="22%"> 
@@ -649,7 +649,7 @@ You can add the following restrictions to JSON Schema elements to limit the valu
     </ul> </td> 
   </tr> 
   <tr> 
-   <td width="21%"><p><span class="code">minimum</span></p> </td> 
+   <td width="21%"><p><code>minimum</code></p> </td> 
    <td valign="top" width="14%"><p>String</p> </td> 
    <td width="41%"><p>Specifies the lower bound for numeric values and dates. By default, the minimum value is included.</p> </td> 
    <td width="22%"> 
@@ -660,7 +660,7 @@ You can add the following restrictions to JSON Schema elements to limit the valu
     </ul> </td> 
   </tr> 
   <tr> 
-   <td width="21%"><p><span class="code">exclusiveMaximum</span></p> </td> 
+   <td width="21%"><p><code>exclusiveMaximum</code></p> </td> 
    <td valign="top" width="14%"><p>Boolean</p> </td> 
    <td width="41%"><p>If true, the numeric value or date specified in the component of the form must be less than the numeric value or date specified for the maximum property.</p> <p>If false, the numeric value or date specified in the component of the form must be less than or equal to the numeric value or date specified for the maximum property.</p> </td> 
    <td width="22%"> 
@@ -671,7 +671,7 @@ You can add the following restrictions to JSON Schema elements to limit the valu
     </ul> </td> 
   </tr> 
   <tr> 
-   <td width="21%"><p><span class="code">exclusiveMinimum</span></p> </td> 
+   <td width="21%"><p><code>exclusiveMinimum</code></p> </td> 
    <td valign="top" width="14%"><p>Boolean</p> </td> 
    <td width="41%"><p>If true, the numeric value or date specified in the component of the form must be greater than the numeric value or date specified for the minimum property.</p> <p>If false, the numeric value or date specified in the component of the form must be greater than or equal to the numeric value or date specified for the minimum property.</p> </td> 
    <td width="22%"> 
@@ -682,7 +682,7 @@ You can add the following restrictions to JSON Schema elements to limit the valu
     </ul> </td> 
   </tr> 
   <tr> 
-   <td width="21%"><p><span class="code">minLength</span></p> </td> 
+   <td width="21%"><p><code>minLength</code></p> </td> 
    <td valign="top" width="14%"><p>String</p> </td> 
    <td width="41%"><p>Specifies the minimum number of characters allowed in a component. The minimum length must be equal to or greater than zero.</p> </td> 
    <td width="22%"> 
@@ -691,7 +691,7 @@ You can add the following restrictions to JSON Schema elements to limit the valu
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">maxLength</span></td> 
+   <td><code>maxLength</code></td> 
    <td>String</td> 
    <td>Specifies the maximum number of characters allowed in a component. The maximum length must be equal to or greater than zero.</td> 
    <td> 
@@ -700,7 +700,7 @@ You can add the following restrictions to JSON Schema elements to limit the valu
     </ul> </td> 
   </tr> 
   <tr> 
-   <td width="21%"><p><span class="code">pattern</span></p> </td> 
+   <td width="21%"><p><code>pattern</code></p> </td> 
    <td valign="top" width="14%"><p>String</p> </td> 
    <td width="41%"><p>Specifies the sequence of the characters. A component accepts the characters if the characters conform to specified pattern.</p> <p>The pattern property maps to the validation pattern of the corresponding adaptive form component.</p> </td> 
    <td width="22%"> 

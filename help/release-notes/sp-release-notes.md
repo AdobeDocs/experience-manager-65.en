@@ -235,12 +235,12 @@ The key highlights for AEM 6.5.2.0 forms are:
  <ul> 
   <li>Enabled the inclusion of dynamic-UI-state in tracking events as custom attributes.<br /> </li> 
   <li>Included support for the delivery of 360-degree video assets in Dynamic Media Scene 7.</li> 
-  <li>Enabled <strong><span class="kbd">Japanese Word Wrap</span></strong> feature via the styles plugin of Rich Text Editor. For more information, see <a href="../sites/administering/using/configure-rich-text-editor-plug-ins.md#jpwordwrap">Configure Japanese word wrap</a>.</li> 
+  <li>Enabled <strong><span class="kbd">Japanese Word Wrap</code></strong> feature via the styles plugin of Rich Text Editor. For more information, see <a href="../sites/administering/using/configure-rich-text-editor-plug-ins.md#jpwordwrap">Configure Japanese word wrap</a>.</li> 
  </ul> 
  <h3>Assets</h3> 
  <ul> 
   <li>Updated DAM DMGateway interface for S3 multipart support. NPR-29740: Hotfix for CQ-4226303</li> 
-  <li>Renditions preview generates <span class="code">Only empty tenantId is currently supported</span> error after upgrading to AEM 6.5. NPR-29986: Hotfix for CQ-4272353</li> 
+  <li>Renditions preview generates <code>Only empty tenantId is currently supported</code> error after upgrading to AEM 6.5. NPR-29986: Hotfix for CQ-4272353</li> 
   <li>Delete dialog is not visible to allow deletion of jobs. NPR-29720: Hotfix for CQ-4271074<br /> </li> 
   <li>After adding asset title in the properties page, when a user attempts to close the page, AEM opens the properties page again. NPR-29627: Hotfix for CQ-4264929</li> 
   <li>VersioningTimelineEventProvider should provide root version along with node of the type nt: version. Hotfix for GRANITE-26063</li> 
@@ -286,7 +286,7 @@ The key highlights for AEM 6.5.2.0 forms are:
  </ul> 
  <h3>Replication</h3> 
  <ul> 
-  <li>User-provided data is not escaped on output in the <span class="code">cq/replication/components/agent</span> component, resulting in a stored Cross-site scripting (XSS) vulnerability. Hotfix for CQ-4266263</li> 
+  <li>User-provided data is not escaped on output in the <code>cq/replication/components/agent</code> component, resulting in a stored Cross-site scripting (XSS) vulnerability. Hotfix for CQ-4266263</li> 
  </ul> 
  <h3>Workflow</h3> 
  <ul> 

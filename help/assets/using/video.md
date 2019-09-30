@@ -1318,7 +1318,7 @@ See [WebVTT: The Web Video Text Tracks format](http://dev.w3.org/html5/webvtt/)
          <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li> 
          <li>In the left rail, at the bottom, click <strong>URL</strong>.</li> 
          <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li> 
-         <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <span class="code">&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</span><br /> </li> 
+         <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li> 
         </ol> </td> 
       </tr> 
       <tr> 
@@ -1330,7 +1330,7 @@ See [WebVTT: The Web Video Text Tracks format](http://dev.w3.org/html5/webvtt/)
          <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li> 
          <li>In the left rail, at the bottom, click <strong>Embed</strong>.</li> 
          <li>In the Embed Code dialog box, select and copy the entire code to the Clipboard, then paste it into a simple text editor.</li> 
-         <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <span class="code">videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</span></li> 
+         <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li> 
         </ol> </td> 
       </tr> 
      </tbody> 

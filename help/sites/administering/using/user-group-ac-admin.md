@@ -477,15 +477,15 @@ The following privileges are available for selection when adding an access contr
    <th><strong>Which controls the privilege to...</strong></th> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:read</span></td> 
+   <td><code>jcr:read</code></td> 
    <td>Retrieve a node and read its properties and their values.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">rep:write</span></td> 
+   <td><code>rep:write</code></td> 
    <td>This is a jackrabbit specific aggregate privilege of jcr:write and jcr:nodeTypeManagement.<br /> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:all</span></td> 
+   <td><code>jcr:all</code></td> 
    <td>This is an aggregate privilege that contains all other predefined privileges.</td> 
   </tr> 
   <tr> 
@@ -493,71 +493,71 @@ The following privileges are available for selection when adding an access contr
    <td> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">crx:replicate</span></td> 
+   <td><code>crx:replicate</code></td> 
    <td>Perform replication of a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:addChildNodes</span></td> 
+   <td><code>jcr:addChildNodes</code></td> 
    <td>Create child nodes of a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:lifecycleManagement</span></td> 
+   <td><code>jcr:lifecycleManagement</code></td> 
    <td>Perform lifecycle operations on a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:lockManagement</span></td> 
+   <td><code>jcr:lockManagement</code></td> 
    <td>Lock and unlock a node; refresh a lock.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:modifyAccessControl</span></td> 
+   <td><code>jcr:modifyAccessControl</code></td> 
    <td>Modify the access control policies of a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:modifyProperties</span></td> 
+   <td><code>jcr:modifyProperties</code></td> 
    <td>Create, modify and remove the properties of a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:namespaceManagement</span></td> 
+   <td><code>jcr:namespaceManagement</code></td> 
    <td>Register, unregister and modify namespace definitions.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:nodeTypeDefinitionManagement</span></td> 
+   <td><code>jcr:nodeTypeDefinitionManagement</code></td> 
    <td>Import node type definitions to the repository.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:nodeTypeManagement</span></td> 
+   <td><code>jcr:nodeTypeManagement</code></td> 
    <td>Add and remove mixin node types and change the primary node type of a node. This also includes any calls to Node.addNode and XML importing methods where the mixin or primary type of new node is explicitly specified.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:readAccessControl</span></td> 
+   <td><code>jcr:readAccessControl</code></td> 
    <td>Read the access control policy of a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:removeChildNodes</span></td> 
+   <td><code>jcr:removeChildNodes</code></td> 
    <td>Remove child nodes of a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:removeNode</span></td> 
+   <td><code>jcr:removeNode</code></td> 
    <td>Remove a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:retentionManagement</span></td> 
+   <td><code>jcr:retentionManagement</code></td> 
    <td>Perform retention management operations on a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:versionManagement</span></td> 
+   <td><code>jcr:versionManagement</code></td> 
    <td>Perform versioning operations on a node.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:workspaceManagement</span></td> 
+   <td><code>jcr:workspaceManagement</code></td> 
    <td>The creation and deletion of workspaces through the JCR API.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">jcr:write</span></td> 
+   <td><code>jcr:write</code></td> 
    <td>This is an aggregate privilege that contains:<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td> 
   </tr> 
   <tr> 
-   <td><span class="code">rep:privilegeManagement</span></td> 
+   <td><code>rep:privilegeManagement</code></td> 
    <td>Register new privilege.</td> 
   </tr> 
  </tbody> 

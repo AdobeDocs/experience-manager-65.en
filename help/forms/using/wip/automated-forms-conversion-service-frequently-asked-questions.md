@@ -54,7 +54,7 @@ docset: aem65
 <details> 
  <summary>Does using custom fonts impact conversion?</summary> 
  <p>When a non-interactive PDF form is converted to an adaptive form, to improve the quality of conversion, the fonts are embedded in the PDF form. The support for embedding fonts is restricted to non-interactive PDF forms. To optimize the conversion of AcroForm and XFA-based PDF forms, fallback fonts are used.</p> 
- <p>Only forms available in the custom fonts directory listed in the <strong><span class="uicontrol">Customer fonts directory</span></strong> field of the <strong><span class="uicontrol">CQ-DAM-Handler-Gibson Font Manager Service</span></strong> configuration are embedded in non-interactive PDF form.</p> 
+ <p>Only forms available in the custom fonts directory listed in the <strong><span class="uicontrol">Customer fonts directory</code></strong> field of the <strong><span class="uicontrol">CQ-DAM-Handler-Gibson Font Manager Service</code></strong> configuration are embedded in non-interactive PDF form.</p> 
  <p> </p> 
 </details>
 

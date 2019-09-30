@@ -208,8 +208,8 @@ This section lists features and capabilities that have been removed from AEM 6.5
   </tr>
   <tr>
    <td>Cache</td> 
-   <td><span class="code">system/console/slingjsp</span> is removed is no longer available in AEM 6.5.</td> 
-   <td>Classes and Slightly cache is stored under the <strong>Apache Sling Commons FileSystem ClassLoader</strong> bundle. You can check the bundle number in the <strong>AEM Web Console</strong> and remove the cache folder directly from the file system (<span class="code">crx-quickstart/launchpad/felix/bundle&lt;ID&gt;</span>).</td> 
+   <td><code>system/console/slingjsp</code> is removed is no longer available in AEM 6.5.</td> 
+   <td>Classes and Slightly cache is stored under the <strong>Apache Sling Commons FileSystem ClassLoader</strong> bundle. You can check the bundle number in the <strong>AEM Web Console</strong> and remove the cache folder directly from the file system (<code>crx-quickstart/launchpad/felix/bundle&lt;ID&gt;</code>).</td> 
   </tr>
  </tbody>
 </table>

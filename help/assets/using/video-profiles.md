@@ -209,34 +209,34 @@ You can edit an existing video encoding profile to take advantage of advanced vi
    <td><strong>Value</strong></td> 
   </tr> 
   <tr> 
-   <td><span class="code">h264Level</span></td> 
+   <td><code>h264Level</code></td> 
    <td>H.264 level to use for encoding. Normally this is automatically determined based on the encoding settings you are using.</td> 
-   <td><span class="code">String</span></td> 
+   <td><code>String</code></td> 
    <td><p>10 * h264 level</p> <p>For example, 3.0 = 30, 1.3 = 13)</p> <p>No default value.</p> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">keyframe</span></td> 
+   <td><code>keyframe</code></td> 
    <td>The target number of frames between keyframes. Calculate this value to generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval should be 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and may also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td> 
-   <td><span class="code">String</span></td> 
+   <td><code>String</code></td> 
    <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS (HTTP Live Streaming) is 60-90.</p> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">minBitrate</span></td> 
+   <td><code>minBitrate</code></td> 
    <td><p>Minimum bitrate to allow for variable bitrate encodings, in Kbps (kilobits per second).</p> <p>This parameter only applies when<strong> Use Constant Bitrate</strong> is deselected in the Advanced tab when you create or edit a video encoding profile.</p> <p>See also <a href="../../assets/using/video.md#bitrate">Bitrate</a>.</p> </td> 
-   <td><span class="code">String</span></td> 
+   <td><code>String</code></td> 
    <td><p>Positive number, in Kbps.</p> <p>No default value.</p> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">maxBitrate</span></td> 
+   <td><code>maxBitrate</code></td> 
    <td><p>Maximum bitrate to allow for variable bitrate encodings, in Kbps.</p> <p>This parameter only applies when<strong> Use Constant Bitrate</strong> is deselected in the Advanced tab when you create or edit a video encoding profile.</p> <p>See also <a href="../../assets/using/video.md#bitrate">Bitrate</a>.</p> </td> 
-   <td><span class="code">String</span></td> 
+   <td><code>String</code></td> 
    <td><p>Positive number, in Kbps.</p> <p>No default value. However, the recommended value is up to two times of the encoding bitrate.</p> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">audioBitrateCustom</span></td> 
-   <td>Set value to <span class="code">true</span> to force a constant bitrate for the audio stream, if supported by audio codec.</td> 
-   <td><span class="code">String</span></td> 
-   <td><p><span class="code">true</span>/<span class="code">false</span></p> <p>Default is <span class="code">false</span>.</p> <p>Recommended value for HLS (HTTP Live Streaming) is <span class="code">false</span>.</p> <p> </p> </td> 
+   <td><code>audioBitrateCustom</code></td> 
+   <td>Set value to <code>true</code> to force a constant bitrate for the audio stream, if supported by audio codec.</td> 
+   <td><code>String</code></td> 
+   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS (HTTP Live Streaming) is <code>false</code>.</p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>

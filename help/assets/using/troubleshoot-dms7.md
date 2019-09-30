@@ -84,8 +84,8 @@ If you are having issues with images and sets, see the following troubleshooting
     <ol> 
      <li><p>Go to CRX/DE:</p> 
       <ul> 
-       <li>Check whether the preset in the JCR <span class="code">/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</span> defined. Note that this location applies if you upgraded from AEM 6.x to 6.4 and opted out of migration. Otherise, the location is <span class="code">/conf/global/settings/dam/dm/presets/viewer</span>.</li> 
-       <li>Check to make sure that the asset in the JCR has <span class="code">dam:scene7FileStatus</span><strong> </strong>under Metadata shows as <span class="code">PublishComplete</span>.</li> 
+       <li>Check whether the preset in the JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> defined. Note that this location applies if you upgraded from AEM 6.x to 6.4 and opted out of migration. Otherise, the location is <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li> 
+       <li>Check to make sure that the asset in the JCR has <code>dam:scene7FileStatus</code><strong> </strong>under Metadata shows as <code>PublishComplete</code>.</li> 
       </ul> </li> 
     </ol> </td> 
    <td><p>Refresh page/navigate to another page and come back (side rail JSP needs to be recompiled)</p> <p>If that does not work:</p> 
@@ -111,17 +111,17 @@ If you are having issues with images and sets, see the following troubleshooting
   </tr> 
   <tr> 
    <td>Image does not preview with the Dynamic Media viewer</td> 
-   <td><p>Check that the asset contains <span class="code">dam:scene7File</span> in the Metadata properties (CRXDE Lite)</p> </td> 
+   <td><p>Check that the asset contains <code>dam:scene7File</code> in the Metadata properties (CRXDE Lite)</p> </td> 
    <td><p>Check that all assets have finished processing.</p> </td> 
   </tr> 
   <tr> 
    <td>Uploaded asset does not show in asset selector</td> 
-   <td><p>Check asset has property <span class="code">jcr:content</span> &gt; <strong><span class="code">dam:assetState</span></strong> = <span class="code">processed</span> (CRXDE Lite)</p> </td> 
+   <td><p>Check asset has property <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td> 
    <td><p>Check that all assets have finished processing.</p> </td> 
   </tr> 
   <tr> 
    <td>Banner on card view shows <strong>New</strong> when asset has not started processing</td> 
-   <td>Check asset <span class="code">jcr:content</span> &gt; <span class="code">dam:assetState</span> = if <span class="code">unprocessed</span> it was not picked up by the workflow.</td> 
+   <td>Check asset <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> it was not picked up by the workflow.</td> 
    <td>Wait until asset is picked up by workflow.</td> 
   </tr> 
   <tr> 
@@ -149,7 +149,7 @@ If you are having issues with video, see the following troubleshooting guidance.
     <ul> 
      <li>Check that the folder has a video profile assigned to it (if non-supported file format). If non-supported, only an image displays.</li> 
      <li>Video profile must contain more than one encoding preset to generate an AVS set (single encodings are treated as video content for MP4 files; for non-supported files, treated the same as non-processed).</li> 
-     <li>Check that the video has finished processing by confirming <span class="code">dam:scene7FileAvs</span> of <span class="code">dam:scene7File</span> in metadata.</li> 
+     <li>Check that the video has finished processing by confirming <code>dam:scene7FileAvs</code> of <code>dam:scene7File</code> in metadata.</li> 
     </ul> </td> 
    <td> 
     <ol> 
@@ -164,13 +164,13 @@ If you are having issues with video, see the following troubleshooting guidance.
    <td>Video is not encoded</td> 
    <td> 
     <ul> 
-     <li>Check that the runmode is <span class="kbd">dynamicmedia_scene7</span>.</li> 
+     <li>Check that the runmode is <span class="kbd">dynamicmedia_scene7</code>.</li> 
      <li>Check whether Dynamic Media cloud service is configured.</li> 
      <li>Check whether a video profile is associated with the upload folder.</li> 
     </ul> </td> 
    <td> 
     <ol> 
-     <li>Check your AEM instance with <span class="kbd">-r dynamicmedia_scene7</span></li> 
+     <li>Check your AEM instance with <span class="kbd">-r dynamicmedia_scene7</code></li> 
      <li>Check that the Dynamic Media Configuration under Cloud Services is properly setup.</li> 
      <li>Check that the folder has a video profile. Also, check the video profile.</li> 
     </ol> </td> 
@@ -179,8 +179,8 @@ If you are having issues with video, see the following troubleshooting guidance.
    <td>Video processing takes too long</td> 
    <td><p>To determine if video encoding is still in progress or if it has entered a failure state:</p> 
     <ul> 
-     <li>Check the video status <span class="code">https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</span> &gt; <span class="kbd">dam:assetState</span></li> 
-     <li>Monitor the video from the workflow console <span class="code">http://localhost:4502/libs/cq/workflow/content/console.html</span> &gt; Instances, Archive, Failures tabs.</li> 
+     <li>Check the video status <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</code></li> 
+     <li>Monitor the video from the workflow console <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instances, Archive, Failures tabs.</li> 
     </ul> </td> 
    <td> </td> 
   </tr> 
@@ -189,7 +189,7 @@ If you are having issues with video, see the following troubleshooting guidance.
    <td><p>When video is uploaded, but there are no encoded renditions:</p> 
     <ul> 
      <li>Check that the folder has a video profile assigned to it.</li> 
-     <li>Check that the video has finished processing by confirming <span class="code">dam:scene7FileAvs</span> in metadata.</li> 
+     <li>Check that the video has finished processing by confirming <code>dam:scene7FileAvs</code> in metadata.</li> 
     </ul> </td> 
    <td> 
     <ol> 
@@ -213,11 +213,11 @@ If you are having issues with viewers, see the following troubleshooting guidanc
   </tr> 
   <tr> 
    <td>Viewer Presets are not published</td> 
-   <td><p>Proceed to sample manager diagnostic page: <span class="code">http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</span></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Proceed to sample manager diagnostic page: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Note</strong>: It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.</p> <p>If unactivated assets remain, click either of the <strong>List all Unactivated Assets</strong> buttons to see details.</p> </td> 
    <td> 
     <ol> 
-     <li>Navigate to viewer preset list in admin tools: <span class="code">http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</span></li> 
+     <li>Navigate to viewer preset list in admin tools: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
      <li>Select all viewer presets, then click <strong>Publish</strong>.</li> 
      <li>Navigate back to sample manager and observe that unactivated asset count is now zero.</li> 
     </ol> </td> 
@@ -226,27 +226,27 @@ If you are having issues with viewers, see the following troubleshooting guidanc
    <td>Viewer Preset artwork returns 404 from preview in asset details or copy URL/embed code</td> 
    <td><p>In CRXDE Lite do the following:</p> 
     <ol> 
-     <li>Navigate to <span class="code">&lt;sync-folder&gt;/_CSS/_OOTB</span> folder within your Dynamic Media sync folder (for example, <span class="code">/content/dam/_CSS/_OOTB</span>),</li> 
-     <li>Find the metadata node of the problematic asset (for example, <span class="code">&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</span>).</li> 
-     <li>Check for the presence of <span class="code">dam:scene7*</span> properties. If the asset was successfully synced and published you see the <span class="code">dam:scene7FileStatus</span> set is to <strong>PublishComplete</strong>.</li> 
+     <li>Navigate to <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> folder within your Dynamic Media sync folder (for example, <code>/content/dam/_CSS/_OOTB</code>),</li> 
+     <li>Find the metadata node of the problematic asset (for example, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li> 
+     <li>Check for the presence of <code>dam:scene7*</code> properties. If the asset was successfully synced and published you see the <code>dam:scene7FileStatus</code> set is to <strong>PublishComplete</strong>.</li> 
      <li>Attempt to request the artwork directly from Dynamic Media by concatenating the values of the following properties and string literals 
       <ul> 
-       <li><span class="code">dam:scene7Domain</span></li> 
-       <li><span class="code">"is/content"</span></li> 
-       <li><span class="code">dam:scene7Folder</span></li> 
-       <li><span class="code">&lt;asset-name&gt;</span></li> 
-       <li>Example: <span class="code">http://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</span></li> 
+       <li><code>dam:scene7Domain</code></li> 
+       <li><code>"is/content"</code></li> 
+       <li><code>dam:scene7Folder</code></li> 
+       <li><code>&lt;asset-name&gt;</code></li> 
+       <li>Example: <code>http://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li> 
       </ul> </li> 
     </ol> </td> 
    <td><p>If the sample assets or viewer preset artwork have not synced or published then restart the entire copy/sync process:</p> 
     <ol> 
      <li>Navigate to CRXDE Lite. 
       <ul> 
-       <li>Delete <span class="code">&lt;sync-folder&gt;/_CSS/_OOTB</span>.</li> 
+       <li>Delete <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li> 
       </ul> </li> 
-     <li>Navigate to the CRX package manager: <span class="code">http://localhost:4502/crx/packmgr/</span><a href="http://localhost:4502/crx/packmgr/"></a> 
+     <li>Navigate to the CRX package manager: <code>http://localhost:4502/crx/packmgr/</code><a href="http://localhost:4502/crx/packmgr/"></a> 
       <ol> 
-       <li>Search for viewer package in list (it starts with <span class="kbd">cq-dam-scene7-viewers-content</span>)</li> 
+       <li>Search for viewer package in list (it starts with <span class="kbd">cq-dam-scene7-viewers-content</code>)</li> 
        <li>Click <strong>Reinstall</strong>.</li> 
       </ol> </li> 
      <li>Under Cloud Services, navigate to the Dynamic Media Configuration page, then open the configuration dialog box for your Dynamic Media - S7 configuration. 

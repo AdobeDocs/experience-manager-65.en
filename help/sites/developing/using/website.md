@@ -740,7 +740,7 @@ Develop the script for the listchildren component.
                 String date = child.getProperties().get("date","");
                 %><div class="item">
                 <a href="<%= child.getPath() %>.html"><b><%= title %></b></a>
-                <span><%= date %></span><br>
+                <span><%= date %></code><br>
                 <%= child.getProperties().get("jcr:description","") %><br>
                 </div><%
             }
@@ -1361,7 +1361,7 @@ This section describes how to create the search script:
                  <p><fmt:message key="searchTrendsText"/></p>
                  <div class="searchTrends">
                      <c:forEach var="query" items="${trends.queries}">
-                         <a href="<c:url value="${currentPage.path}.html"><c:param name="q" value="${query.query}"/></c:url>"><span style="font-size:${query.size}px"><c:out value="${query.query}"/></span></a>
+                         <a href="<c:url value="${currentPage.path}.html"><c:param name="q" value="${query.query}"/></c:url>"><span style="font-size:${query.size}px"><c:out value="${query.query}"/></code></a>
                      </c:forEach>
                  </div>
              </c:if> 

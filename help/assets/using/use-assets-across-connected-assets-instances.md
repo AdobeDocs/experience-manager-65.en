@@ -66,43 +66,43 @@ The various roles that are involved to configure and use the capability and thei
    <td>AEM Sites administrator<br /> </td> 
    <td>Local</td> 
    <td>AEM Administrator</td> 
-   <td><span class="code">admin</span></td> 
+   <td><code>admin</code></td> 
    <td>Set up AEM, configure integration with the remote Assets deployment.</td> 
   </tr> 
   <tr> 
    <td>DAM user</td> 
    <td>Local</td> 
    <td>Author</td> 
-   <td><span class="code">ksaner</span></td> 
-   <td>Used to view and duplicate the fetched assets at <span class="code">/content/DAM/connectedassets/</span>.</td> 
+   <td><code>ksaner</code></td> 
+   <td>Used to view and duplicate the fetched assets at <code>/content/DAM/connectedassets/</code>.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites author</td> 
    <td>Local</td> 
    <td>Author (with read access on the remote DAM and author access on local Sites)</td> 
-   <td><span class="code">ksaner</span></td> 
+   <td><code>ksaner</code></td> 
    <td>End user are Sites authors who use this integration to improve their content velocity. The authors search and brows assets in remote DAM using Content Finder and using the required images in local web pages. The credentials of ksaner DAM user are used.</td> 
   </tr> 
   <tr> 
    <td>AEM Assets administrator</td> 
    <td>Remote</td> 
    <td>AEM Administrator</td> 
-   <td><span class="code">admin</span> on remote AEM<br /> </td> 
+   <td><code>admin</code> on remote AEM<br /> </td> 
    <td>Configure Cross-Origin Resource Sharing (CORS).</td> 
   </tr> 
   <tr> 
    <td>DAM user<br /> </td> 
    <td>Remote</td> 
    <td>Author</td> 
-   <td><span class="code">ksaner</span> on remote AEM<br /> </td> 
+   <td><code>ksaner</code> on remote AEM<br /> </td> 
    <td>Author role on the remote AEM deployment. Search and browse assets in Connected Assets using the Content Finder.</td> 
   </tr> 
   <tr> 
    <td>DAM distributor (technical user)</td> 
    <td>Remote</td> 
    <td>package-builders and site authors</td> 
-   <td><span class="code">ksaner</span> on remote AEM<br /> </td> 
-   <td>This user present on the remote deployment is used by AEM local server (not the Site author role) to fetch the remote assets, on behalf of Sites author. This role is not same as above two <span class="code">ksaner</span> roles and belongs to a different user group.<br /> </td> 
+   <td><code>ksaner</code> on remote AEM<br /> </td> 
+   <td>This user present on the remote deployment is used by AEM local server (not the Site author role) to fetch the remote assets, on behalf of Sites author. This role is not same as above two <code>ksaner</code> roles and belongs to a different user group.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

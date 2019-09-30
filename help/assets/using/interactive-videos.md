@@ -146,33 +146,33 @@ Consider the following examples of Quickview URLs and their resulting thumbnail 
        <td valign="top" width="22.271714922048996%"><p>Single SKU, found in the query string.</p> </td> 
        <td valign="top" width="77.728285077951%"><p>The recorded Quickview URLs include the following:</p> 
         <ul> 
-         <li><p><span class="code">http://server/json?productId=866558&amp;source=100</span></p> </li> 
-         <li><p><span class="code">http://server/json?productId=1196184&amp;source=100</span></p> </li> 
-         <li><p><span class="code">http://server/json?productId=1081492&amp;source=100</span></p> </li> 
-         <li><p><span class="code">http://server/json?productId=1898294&amp;source=100</span></p> </li> 
-        </ul> <p>The only variable part in the URL is the value of the <span class="code">productId=</span> query string parameter, and it is clearly a SKU value. Therefore, our thumbnails only need SKU fields populated with values like <strong><span class="code">866558</span></strong>, <strong><span class="code">1196184</span></strong>, <strong><span class="code">1081492</span></strong>, <strong><span class="code">1898294</span></strong>.</p> </td> 
+         <li><p><code>http://server/json?productId=866558&amp;source=100</code></p> </li> 
+         <li><p><code>http://server/json?productId=1196184&amp;source=100</code></p> </li> 
+         <li><p><code>http://server/json?productId=1081492&amp;source=100</code></p> </li> 
+         <li><p><code>http://server/json?productId=1898294&amp;source=100</code></p> </li> 
+        </ul> <p>The only variable part in the URL is the value of the <code>productId=</code> query string parameter, and it is clearly a SKU value. Therefore, our thumbnails only need SKU fields populated with values like <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td> 
       </tr> 
       <tr> 
        <td valign="top" width="22.271714922048996%"><p>Single SKU, found in the URL path.</p> </td> 
        <td valign="top" width="77.728285077951%"><p>The recorded Quickview URLs include the following:</p> 
         <ul> 
-         <li><p><span class="code">http://server/product/6422350843</span></p> </li> 
-         <li><p><span class="code">http://server/product/1607745002</span></p> </li> 
-         <li><p><span class="code">http://server/product/0086724882</span></p> </li> 
-        </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of AEM thumbnails: <strong><span class="code">6422350843</span></strong>, <strong><span class="code">1607745002</span></strong>, <strong><span class="code">0086724882</span></strong>.</p> </td> 
+         <li><p><code>http://server/product/6422350843</code></p> </li> 
+         <li><p><code>http://server/product/1607745002</code></p> </li> 
+         <li><p><code>http://server/product/0086724882</code></p> </li> 
+        </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of AEM thumbnails: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td> 
       </tr> 
       <tr> 
        <td valign="top" width="22.271714922048996%"><p>SKU and category ID in the query string.</p> </td> 
        <td valign="top" width="77.728285077951%"><p>The recorded Quickview URLs include the following:</p> 
         <ul> 
-         <li><p><span class="code">http://server/quickView/product/?category=1100004&amp;prodId=305466</span></p> </li> 
-         <li><p><span class="code">http://server/quickView/product/?category=1100004&amp;prodId=310181</span></p> </li> 
-         <li><p><span class="code">http://server/quickView/product/?category=1740148&amp;prodId=308706</span></p> </li> 
-        </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <span class="code">prodId</span> parameter and the category ID is stored in the <span class="code">category=</span> parameter.</p> <p>As such, the thumbnail definitions are pairs. That is, a SKU value and an additional variable called <span class="code">categoryId</span>. The resulting pairs are the following:</p> 
+         <li><p><code>http://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
+         <li><p><code>http://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li> 
+         <li><p><code>http://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li> 
+        </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID is stored in the <code>category=</code> parameter.</p> <p>As such, the thumbnail definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p> 
         <ul> 
-         <li>SKU is <span class="code">305466</span> and <span class="code">categoryId</span> is <span class="code">1100004</span></li> 
-         <li>SKU is <span class="code">310181</span> and <span class="code">categoryId</span> is <span class="code">1100004</span></li> 
-         <li>SKU is <span class="code">308706</span> and <span class="code">categoryId</span> is <span class="code">1740148</span></li> 
+         <li>SKU is <code>305466</code> and <code>categoryId</code> is <code>1100004</code></li> 
+         <li>SKU is <code>310181</code> and <code>categoryId</code> is <code>1100004</code></li> 
+         <li>SKU is <code>308706</code> and <code>categoryId</code> is <code>1740148</code></li> 
         </ul> <p> </p> </td> 
       </tr> 
      </tbody> 
@@ -418,7 +418,7 @@ To add interactivty to your video:
      <li>See <a href="../../assets/using/carousel-banners.md#identifyinghotspotvariables">Identifying hotspot variables</a>. You will need to define these variables. </li> 
      <li>By default, this SKU field uses the image asset's filename without the extension. If you follow a standard naming convention for your files based on SKU, then this typically does not require any additional edits. </li> 
      <li>Otherwise, edit the default value and enter the correct SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quickview template so that the system knows to associate the tapped image with a particular SKU's Quickview.</li> 
-    </ul> <p>(Optional) If there are other variables within the Quickview that you need to use to further identify a product, tap <strong>Add Generic Variable</strong>. In the text field, specify an additional variable. For example, <span class="code">category=Womens</span> is an added variable.</p> <p> </p> </td> 
+    </ul> <p>(Optional) If there are other variables within the Quickview that you need to use to further identify a product, tap <strong>Add Generic Variable</strong>. In the text field, specify an additional variable. For example, <code>category=Womens</code> is an added variable.</p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td>To associate the selected thumbnail image with a hyperlink</td> 
@@ -448,7 +448,7 @@ To add interactivty to your video:
   </tr> 
   <tr> 
    <td>To change the text label of a thumbnail image</td> 
-   <td><p>By default, the text label uses the thumbnail image’s <span class="code">Title</span> metadata field. If <span class="code">Title</span> is not present, the thumbnail image's filename is used instead, but without the extension.</p> <p>To change the text label of a thumbnail image, under the <strong>Actions </strong>tab, directly below the image asset that is displayed, enter the desired text. See the illustration below.</p> <p>Note that the new text label is used only by the video player itself and the thumbnail text that is displayed in the timeline segment. The label change does not affect the thumbnail image's Title metadata field nor its filename.</p> </td> 
+   <td><p>By default, the text label uses the thumbnail image’s <code>Title</code> metadata field. If <code>Title</code> is not present, the thumbnail image's filename is used instead, but without the extension.</p> <p>To change the text label of a thumbnail image, under the <strong>Actions </strong>tab, directly below the image asset that is displayed, enter the desired text. See the illustration below.</p> <p>Note that the new text label is used only by the video player itself and the thumbnail text that is displayed in the timeline segment. The label change does not affect the thumbnail image's Title metadata field nor its filename.</p> </td> 
   </tr> 
   <tr> 
    <td>To revert a change you have made</td> 

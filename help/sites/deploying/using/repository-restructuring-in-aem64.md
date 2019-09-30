@@ -116,87 +116,87 @@ The table below includes an additional column named "Configuration Type" to expl
   </tr> 
   <tr> 
    <td>AEM Sites / AEM Forms</td> 
-   <td><p><span class="code">/etc/cloudservices/typekit</span></p> <p><span class="code">/etc/cloudservices/recaptcha</span></p> <p><span class="code">/etc/cloudservices/echosign</span></p> </td> 
-   <td><p><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/typekit</span></p> <p><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/recaptcha</span></p> <p><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/echosign</span></p> </td> 
+   <td><p><code>/etc/cloudservices/typekit</code></p> <p><code>/etc/cloudservices/recaptcha</code></p> <p><code>/etc/cloudservices/echosign</code></p> </td> 
+   <td><p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/typekit</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/recaptcha</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/echosign</code></p> </td> 
    <td>tenant-aware</td> 
    <td><p>Legacy cloudservices.</p> <p>Persisted on an in-place upgrade. Code to list and read them still present in AEM as a fallback.</p> </td> 
    <td>Lazy content migration utility can be triggered by Forms Migration UI, in order to automatically convert to the new path.<br /> </td> 
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/cloudservices/fdm</span></td> 
-   <td><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/fdm</span></td> 
+   <td><code>/etc/cloudservices/fdm</code></td> 
+   <td><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/fdm</code></td> 
    <td>tenant-aware</td> 
    <td><p>Legacy cloudservices.</p> <p>Persisted on an in-place upgraded setup. Code to list and read them still present in AEM as a fallback.</p> </td> 
    <td>Lazy content migration utility can be triggered by Forms Migration UI, in order to automatically convert to the new path.</td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/adhocassetshare</span></td> 
-   <td><span class="code">/libs/settings/dam/adhocassetshare</span></td> 
+   <td><code>/etc/dam/adhocassetshare</code></td> 
+   <td><code>/libs/settings/dam/adhocassetshare</code></td> 
    <td>tenant-aware</td> 
    <td>Legacy content structures are honored with a higher priority than new, OOTB ones.</td> 
-   <td>Project level customizations need to be cut and pasted into the equivalent <span class="code">/apps</span> or <span class="code">/conf</span> paths as applicable.</td> 
+   <td>Project level customizations need to be cut and pasted into the equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/workflow/notification/email/downloadasset</span></td> 
-   <td><span class="code">/libs/settings/dam/workflow</span></td> 
+   <td><code>/etc/dam/workflow/notification/email/downloadasset</code></td> 
+   <td><code>/libs/settings/dam/workflow</code></td> 
    <td>tenant-aware</td> 
    <td>Legacy content structures are honored with a higher priority than new, OOTB ones.</td> 
-   <td>Project level customizations need to be cut and pasted into the equivalent <span class="code">/apps</span> or <span class="code">/conf</span> paths as applicable.</td> 
+   <td>Project level customizations need to be cut and pasted into the equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/drm/licenses/</span></td> 
-   <td><span class="code">/libs/settings/dam/drm</span></td> 
+   <td><code>/etc/dam/drm/licenses/</code></td> 
+   <td><code>/libs/settings/dam/drm</code></td> 
    <td>not context-aware</td> 
    <td>Legacy content structures are honored with a higher priority than new, OOTB ones.</td> 
-   <td>Project level customizations need to be cut and pasted into the equivalent <span class="code">/apps</span> or <span class="code">/conf</span> paths as applicable.</td> 
+   <td>Project level customizations need to be cut and pasted into the equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/indesign/scripts</span></td> 
-   <td><span class="code">/libs/settings/dam/indesign</span></td> 
+   <td><code>/etc/dam/indesign/scripts</code></td> 
+   <td><code>/libs/settings/dam/indesign</code></td> 
    <td>tenant-aware</td> 
    <td>Legacy content structures are honored with a higher priority than new, OOTB ones.</td> 
-   <td><p>Project level customizations need to be cut and pasted under the equivalent <span class="code">/apps</span> or <span class="code">/conf</span> paths as applicable.</p> <p>When running customized Asset Ingestion workflow, references to the old location in /etc would still exist in the Media Extraction Process Configuration. Along with moving the scripts out of /etc to the equivalent /apps and /conf paths, customized Media Extraction process arguments need to be changed from absolute to relative paths, to accommodate for the changes.</p> <p>For more info, see <a href="https://helpx.adobe.com/experience-manager/6-2/assets/using/indesign.html">this page</a>.</p> <p> </p> </td> 
+   <td><p>Project level customizations need to be cut and pasted under the equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</p> <p>When running customized Asset Ingestion workflow, references to the old location in /etc would still exist in the Media Extraction Process Configuration. Along with moving the scripts out of /etc to the equivalent /apps and /conf paths, customized Media Extraction process arguments need to be changed from absolute to relative paths, to accommodate for the changes.</p> <p>For more info, see <a href="https://helpx.adobe.com/experience-manager/6-2/assets/using/indesign.html">this page</a>.</p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/video</span></td> 
-   <td><span class="code">/libs/settings/dam/video</span></td> 
+   <td><code>/etc/dam/video</code></td> 
+   <td><code>/libs/settings/dam/video</code></td> 
    <td>tenant-aware</td> 
    <td>Legacy content structures are honored with a higher priority than new, out of the box ones.</td> 
-   <td>Project level customizations need to be cut and pasted into the equivalent <span class="code">/apps</span> or <span class="code">/conf</span> paths as applicable.</td> 
+   <td>Project level customizations need to be cut and pasted into the equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/notification/email/default</span></td> 
-   <td><span class="code">/libs/settings/dam/notification</span></td> 
+   <td><code>/etc/notification/email/default</code></td> 
+   <td><code>/libs/settings/dam/notification</code></td> 
    <td>tenant-aware</td> 
    <td>Legacy content structures are honored with a higher priority than new, out of the box ones.</td> 
-   <td>Project level customizations need to be cut and pasted into the equivalent <span class="code">/apps</span> or <span class="code">/conf</span> paths as applicable.</td> 
+   <td>Project level customizations need to be cut and pasted into the equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites / AEM Assets</td> 
-   <td><span class="code">/etc/designs</span><br /> </td> 
-   <td><span class="code">/libs/settings/wcm/designs</span></td> 
+   <td><code>/etc/designs</code><br /> </td> 
+   <td><code>/libs/settings/wcm/designs</code></td> 
    <td>not context-aware</td> 
    <td><p>Consuming Services are aware of old location.</p> <p>Configurations from the legacy location are considered</p> </td> 
-   <td><br /> Move custom content from <span class="code">/etc/design</span> to <span class="code">/apps/settings/wcm/design</span> for alignment with the new repository structure. In the future, consider upgrading your sites to use editable templates functionality, which replaces the need for design mode and thus this content.</td> 
+   <td><br /> Move custom content from <code>/etc/design</code> to <code>/apps/settings/wcm/design</code> for alignment with the new repository structure. In the future, consider upgrading your sites to use editable templates functionality, which replaces the need for design mode and thus this content.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/scaffolding</span></td> 
-   <td><p><span class="code">/libs/settings/wcm/template-types/scaffolding/scaffolding</span></p> <p><span class="code">/apps/settings/wcm/template-types/scaffolding/scaffolding</span></p> </td> 
+   <td><code>/etc/scaffolding</code></td> 
+   <td><p><code>/libs/settings/wcm/template-types/scaffolding/scaffolding</code></p> <p><code>/apps/settings/wcm/template-types/scaffolding/scaffolding</code></p> </td> 
    <td>not contex-aware</td> 
-   <td>The components in the old location under <span class="code">/etc/scaffolding</span> will continue to function, but have been deprecated.</td> 
+   <td>The components in the old location under <code>/etc/scaffolding</code> will continue to function, but have been deprecated.</td> 
    <td>Adobe recommends you use the new scaffold components under the new location.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/blueprints</span></td> 
+   <td><code>/etc/blueprints</code></td> 
    <td><p>/libs/msm for out of the box Screens and Commerce blueprint configurations</p> <p> </p> </td> 
    <td>not context-aware</td> 
    <td><p>Consuming Services are aware of the old location.</p> <p>Configurations from the legacy location are considered.</p> </td> 
@@ -204,28 +204,28 @@ The table below includes an additional column named "Configuration Type" to expl
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/mobile</span></td> 
-   <td><span class="code">/libs/settings/mobile</span></td> 
+   <td><code>/etc/mobile</code></td> 
+   <td><code>/libs/settings/mobile</code></td> 
    <td>tenant-aware</td> 
    <td>The feature leverages the Configuration Manager and still supports the old location as fallback.</td> 
    <td> 
     <ol> 
-     <li>Relocate the configurations from <span class="code">/etc</span> to <span class="code">/conf/&lt;tenant&gt;/settings/mobile</span></li> 
+     <li>Relocate the configurations from <code>/etc</code> to <code>/conf/&lt;tenant&gt;/settings/mobile</code></li> 
      <li>Then, update the reference in the content as follows:</li> 
-    </ol> <p><span class="code">/content/&lt;tenant&gt;/jcr:content/cq:deviceGroups{String[]}=mobile/groups/responsive</span></p> </td> 
+    </ol> <p><code>/content/&lt;tenant&gt;/jcr:content/cq:deviceGroups{String[]}=mobile/groups/responsive</code></p> </td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/msm/rolloutConfigs</span></td> 
-   <td><span class="code">/libs/msm/wcm/rolloutconfigs</span></td> 
+   <td><code>/etc/msm/rolloutConfigs</code></td> 
+   <td><code>/libs/msm/wcm/rolloutconfigs</code></td> 
    <td>N/A</td> 
    <td><p>Consuming services are aware of the old location.</p> <p>If configurations are detected in the legacy location, they will be used.</p> </td> 
-   <td>To align with the new model, configurations need to be created in the new locations, and the old ones under <span class="code">/etc</span> must be deleted.</td> 
+   <td>To align with the new model, configurations need to be created in the new locations, and the old ones under <code>/etc</code> must be deleted.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/segmentation/contexthub</span></td> 
-   <td><span class="code">/conf/we-retail/settings/wcm/segments</span></td> 
+   <td><code>/etc/segmentation/contexthub</code></td> 
+   <td><code>/conf/we-retail/settings/wcm/segments</code></td> 
    <td>tenant-aware</td> 
    <td><p>Segments from the old location:</p> 
     <ul> 
@@ -237,164 +237,164 @@ The table below includes an additional column named "Configuration Type" to expl
   </tr> 
   <tr> 
    <td>AEM Communities</td> 
-   <td><span class="code">/etc/social/config/languageOpts</span></td> 
-   <td><span class="code">/libs/social/translation/languageOpts</span></td> 
+   <td><code>/etc/social/config/languageOpts</code></td> 
+   <td><code>/libs/social/translation/languageOpts</code></td> 
    <td>N/A</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>AEM Communities</td> 
-   <td><span class="code">/etc/community/templates</span></td> 
-   <td><span class="code">/libs/settings/community/templates</span></td> 
+   <td><code>/etc/community/templates</code></td> 
+   <td><code>/libs/settings/community/templates</code></td> 
    <td> </td> 
-   <td><p>The code is aware of the location of the old template. Existing templates will continue to be referred and read/write from <span class="code">/etc</span>.</p> <p><br /> For e-mail templates, if the customer was already having his custom templates at another path by configuring <strong>Templates root</strong> path in <strong>AEM Communities Email Reply Configuration</strong> then it would stay as it is.</p> </td> 
+   <td><p>The code is aware of the location of the old template. Existing templates will continue to be referred and read/write from <code>/etc</code>.</p> <p><br /> For e-mail templates, if the customer was already having his custom templates at another path by configuring <strong>Templates root</strong> path in <strong>AEM Communities Email Reply Configuration</strong> then it would stay as it is.</p> </td> 
    <td><p>A <a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration" target="_blank">migration utility</a> can align to the latest AEM Communities templates model.</p> </td> 
   </tr> 
   <tr> 
    <td>AEM Communities</td> 
-   <td><span class="code">/etc/community/badging</span></td> 
-   <td><p><strong>Badge Rules:</strong></p> <p><span class="code">/libs/settings/community/badging</span></p> <p><strong>Badge Images:</strong></p> <p>The out of the box images in the old location at <span class="code">/etc/community/badging/images</span> are moved to <span class="code">/libs/community/badging/images </span> </p> <p> </p> <p>Custom images are moved to <span class="code">/content/community/badging/images</span>.</p> <p> </p> </td> 
+   <td><code>/etc/community/badging</code></td> 
+   <td><p><strong>Badge Rules:</strong></p> <p><code>/libs/settings/community/badging</code></p> <p><strong>Badge Images:</strong></p> <p>The out of the box images in the old location at <code>/etc/community/badging/images</code> are moved to <code>/libs/community/badging/images </code> </p> <p> </p> <p>Custom images are moved to <code>/content/community/badging/images</code>.</p> <p> </p> </td> 
    <td>tenant-aware</td> 
    <td><p>The code is aware of the old badging paths.</p> <p><br /> It will check the existence of older paths<br /> first. If they are not present, it will use the new paths.</p> </td> 
    <td><p>Manual Migration is required in order to align to the latest model. Follow the steps below in order to achieve this:</p> 
     <ol> 
      <li>Create a site context bucket using the configuration browser under <strong>Tools</strong></li> 
      <li>Go to the site root</li> 
-     <li>Set the <span class="code">cq:conf</span> property to the bucket path where you want to store all the configurations. The same can be set via the <strong>Site Edit Wizard - Set Cloud Config Input</strong>, and then saving the changes</li> 
-     <li>Move the relevant badging rules and scoring rules from <span class="code">etc/community/*</span> to the site context bucket created in the previous step</li> 
-     <li>Adjust the <span class="code">badgingRules</span> and <span class="code">scoringRules</span> properties on the site root to have relative references to the new rule locations. As an example, if <span class="code">cq:conf</span> is set to <span class="code">/conf/we-retail</span>, the value for <span class="code">badgingRules</span> will be <span class="code">community/badging/rules</span> if rules are now moved to this new bucket</li> 
+     <li>Set the <code>cq:conf</code> property to the bucket path where you want to store all the configurations. The same can be set via the <strong>Site Edit Wizard - Set Cloud Config Input</strong>, and then saving the changes</li> 
+     <li>Move the relevant badging rules and scoring rules from <code>etc/community/*</code> to the site context bucket created in the previous step</li> 
+     <li>Adjust the <code>badgingRules</code> and <code>scoringRules</code> properties on the site root to have relative references to the new rule locations. As an example, if <code>cq:conf</code> is set to <code>/conf/we-retail</code>, the value for <code>badgingRules</code> will be <code>community/badging/rules</code> if rules are now moved to this new bucket</li> 
      <li>Similarly, adjust the references to scoring rules in a badging rule node to have a relative path.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><p><span class="code">/etc/cloudservices/facebookconnect</span></p> <p><span class="code">/etc/cloudservices/twitterconnect</span></p> <p><span class="code">/etc/cloudservices/pinterestconnect</span></p> </td> 
-   <td><p><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/facebookconnect</span></p> <p><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/twitterconnect</span></p> <p><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/pinterestconnect</span></p> </td> 
+   <td><p><code>/etc/cloudservices/facebookconnect</code></p> <p><code>/etc/cloudservices/twitterconnect</code></p> <p><code>/etc/cloudservices/pinterestconnect</code></p> </td> 
+   <td><p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/facebookconnect</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/twitterconnect</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/pinterestconnect</code></p> </td> 
    <td>tenant-aware</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>AEM Communities</td> 
-   <td><span class="code">/etc/community/scoring</span></td> 
-   <td><span class="code">/libs/settings/community/scoring</span></td> 
+   <td><code>/etc/community/scoring</code></td> 
+   <td><code>/libs/settings/community/scoring</code></td> 
    <td> </td> 
    <td><p>The code is aware of the old badging paths.</p> <p><br /> It will check the existence of older paths<br /> first. If they are not present, it will use the new paths.</p> </td> 
    <td><p>Manual migration steps are required to align with the latest model.</p> <p>The steps are the same in the badging rules above.</p> </td> 
   </tr> 
   <tr> 
    <td>AEM Communities</td> 
-   <td><span class="code">/etc/community/notifications</span></td> 
-   <td><span class="code">/libs/settings/community/notifications</span></td> 
+   <td><code>/etc/community/notifications</code></td> 
+   <td><code>/libs/settings/community/notifications</code></td> 
    <td>not context-aware</td> 
    <td><p>These configurations are not backward compatible. See the "Requirements to align to the latest model" column for steps on how to migrate to the new locations.<br /> </p> <br /> </td> 
-   <td><p>A manual migration is required to align to the latest model. You can use the Granite Configuration Manager to move the configurations to the new path under <span class="code">/apps/settings</span>.</p> <p>Therefore, you need to set the <span class="code">mergeList</span> property to true on the <span class="code">/libs/settings/community/subscriptions</span> node and then add an <span class="code">nt:unstructured</span> child node.<br /> </p> </td> 
+   <td><p>A manual migration is required to align to the latest model. You can use the Granite Configuration Manager to move the configurations to the new path under <code>/apps/settings</code>.</p> <p>Therefore, you need to set the <code>mergeList</code> property to true on the <code>/libs/settings/community/subscriptions</code> node and then add an <code>nt:unstructured</code> child node.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>AEM Communities</td> 
-   <td><span class="code">/etc/community/subscriptions</span></td> 
-   <td><span class="code">/libs/settings/community/subscriptions</span></td> 
+   <td><code>/etc/community/subscriptions</code></td> 
+   <td><code>/libs/settings/community/subscriptions</code></td> 
    <td>not context-aware</td> 
    <td>These configurations are not backward compatible. See the "Requirements to align to the latest model" column for steps on how to migrate to the new locations.</td> 
-   <td><p>A manual migration is required to align to the latest model. You can use the Granite Configuration Manager to move the configurations to the new path under <span class="code">/apps/settings</span>.</p> <p>Therefore, you need to set the <span class="code">mergeList</span> property to true on the <span class="code">/libs/settings/community/subscriptions</span> node and then add an <span class="code">nt:unstructured</span> child node.</p> </td> 
+   <td><p>A manual migration is required to align to the latest model. You can use the Granite Configuration Manager to move the configurations to the new path under <code>/apps/settings</code>.</p> <p>Therefore, you need to set the <code>mergeList</code> property to true on the <code>/libs/settings/community/subscriptions</code> node and then add an <code>nt:unstructured</code> child node.</p> </td> 
   </tr> 
   <tr> 
    <td>AEM Communities</td> 
-   <td><span class="code">/etc/socialconfig/srpc/defaultconfiguration</span></td> 
-   <td><span class="code">/conf/global/settings/community/srpc/defaultconfiguration</span></td> 
+   <td><code>/etc/socialconfig/srpc/defaultconfiguration</code></td> 
+   <td><code>/conf/global/settings/community/srpc/defaultconfiguration</code></td> 
    <td>global</td> 
    <td>These configurations are backwards compatible. If the old paths are detected they will be used. Otherwise, the new paths will take precedence.</td> 
-   <td><p>Lazy Content Migration Task is available in the form of <span class="code">CQ64CommunitiesConfigsCleanupTask</span>.</p> <p>For more info, see the <a href="../../../sites/deploying/using/lazy-content-migration.md" target="_blank">Lazy Migration documentation</a>.</p> </td> 
+   <td><p>Lazy Content Migration Task is available in the form of <code>CQ64CommunitiesConfigsCleanupTask</code>.</p> <p>For more info, see the <a href="../../../sites/deploying/using/lazy-content-migration.md" target="_blank">Lazy Migration documentation</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>AEM Communities</td> 
-   <td><span class="code">/etc/watchwords</span></td> 
-   <td><span class="code">/libs/community/watchwords</span></td> 
+   <td><code>/etc/watchwords</code></td> 
+   <td><code>/libs/community/watchwords</code></td> 
    <td>N/A</td> 
    <td>These configurations are backwards compatible. If the old paths are detected they will be used. Otherwise, the new paths will take precedence.</td> 
-   <td><p>Lazy Content Migration Task is available in the form of <span class="code">CQ64CommunitiesConfigsCleanupTask</span>.</p> <p>Watchwords will have to be manually moved from <span class="code">/etc/watchwords</span> to <span class="code">/conf/global/settings/community/watchwords</span>.</p> </td> 
+   <td><p>Lazy Content Migration Task is available in the form of <code>CQ64CommunitiesConfigsCleanupTask</code>.</p> <p>Watchwords will have to be manually moved from <code>/etc/watchwords</code> to <code>/conf/global/settings/community/watchwords</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/models</span></td> 
-   <td><p><span class="code">/libs/settings/workflow/models</span></p> <p><span class="code">/conf/global/settings/workflow/models</span><br /> </p> <p><span class="code">/var/workflow/models</span></p> </td> 
+   <td><code>/etc/workflow/models</code></td> 
+   <td><p><code>/libs/settings/workflow/models</code></p> <p><code>/conf/global/settings/workflow/models</code><br /> </p> <p><code>/var/workflow/models</code></p> </td> 
    <td>global</td> 
-   <td><p>Legacy location is used if present and no configuration exists in <span class="code">/libs</span> or <span class="code">/conf</span>.</p> <p>When editing OOTB workflow models, context-aware overlays must be created under <span class="code">/conf</span> to allow them to be modifiable.</p> <p>Package export needs to include the model in <span class="code">/libs</span> or <span class="code">/conf</span> and the runtime model in <span class="code">/var/workflow/models.</span></p> </td> 
-   <td><p>Newly created models will be created in the <span class="code">/conf/global/settings</span> location.</p> <p>Any edits in <span class="code">/etc</span> or <span class="code">/libs</span> require you to explicitly create an override in <span class="code">/conf/global/settings</span> before editing can be done. The Edit button has to be selected, and it will cause the override in <span class="code">/conf</span> to be created and editing allowed.</p> </td> 
+   <td><p>Legacy location is used if present and no configuration exists in <code>/libs</code> or <code>/conf</code>.</p> <p>When editing OOTB workflow models, context-aware overlays must be created under <code>/conf</code> to allow them to be modifiable.</p> <p>Package export needs to include the model in <code>/libs</code> or <code>/conf</code> and the runtime model in <code>/var/workflow/models.</code></p> </td> 
+   <td><p>Newly created models will be created in the <code>/conf/global/settings</code> location.</p> <p>Any edits in <code>/etc</code> or <code>/libs</code> require you to explicitly create an override in <code>/conf/global/settings</code> before editing can be done. The Edit button has to be selected, and it will cause the override in <code>/conf</code> to be created and editing allowed.</p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/launcher</span></td> 
-   <td><p><span class="code">/libs/settings/workflow/launcher</span></p> <p><span class="code">/conf/global/settings/workflow/launcher</span></p> </td> 
+   <td><code>/etc/workflow/launcher</code></td> 
+   <td><p><code>/libs/settings/workflow/launcher</code></p> <p><code>/conf/global/settings/workflow/launcher</code></p> </td> 
    <td>global</td> 
-   <td>Legacy location is used if present and no configuration<br /> exists in <span class="code">/libs</span> or <span class="code">/conf</span> locations. This way, custom launchers are preserved.</td> 
-   <td><p>Newly created or edited launcher configurations are located in the <span class="code">/conf</span> location.</p> <p>All launchers should be moved from the legacy <span class="code">/etc</span> location to<span class="code"> /conf/global/settings/workflow/launcher.</span></p> </td> 
+   <td>Legacy location is used if present and no configuration<br /> exists in <code>/libs</code> or <code>/conf</code> locations. This way, custom launchers are preserved.</td> 
+   <td><p>Newly created or edited launcher configurations are located in the <code>/conf</code> location.</p> <p>All launchers should be moved from the legacy <code>/etc</code> location to<code> /conf/global/settings/workflow/launcher.</code></p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/models</span></td> 
-   <td><p><span class="code">/libs/settings/workflow/models</span></p> <p><span class="code">/conf/global/settings/workflow/models</span></p> </td> 
+   <td><code>/etc/workflow/models</code></td> 
+   <td><p><code>/libs/settings/workflow/models</code></p> <p><code>/conf/global/settings/workflow/models</code></p> </td> 
    <td>global</td> 
-   <td>Legacy location is used if present and no configuration<br /> exists in <span class="code">/libs</span> or <span class="code">/conf</span> locations. This way, custom workflow models are preserved.</td> 
-   <td><p>All workflow models should be moved from the legacy <span class="code">/etc</span> location to <span class="code">/conf/global/settings/workflow/models</span>.</p> <p> </p> </td> 
+   <td>Legacy location is used if present and no configuration<br /> exists in <code>/libs</code> or <code>/conf</code> locations. This way, custom workflow models are preserved.</td> 
+   <td><p>All workflow models should be moved from the legacy <code>/etc</code> location to <code>/conf/global/settings/workflow/models</code>.</p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/notification</span></td> 
-   <td><p><span class="code">/libs/settings/workflow/notification</span></p> <p><span class="code">/conf/global/settings/workflow/notification</span></p> </td> 
+   <td><code>/etc/workflow/notification</code></td> 
+   <td><p><code>/libs/settings/workflow/notification</code></p> <p><code>/conf/global/settings/workflow/notification</code></p> </td> 
    <td>not context-aware</td> 
-   <td><p>For backwards compatibility, the legacy location is used if present.</p> <p>Previously, out of the box templates had to be overridden by editing them in <span class="code">/etc</span>. Now, override should be stored in <span class="code">/conf/global</span>.</p> </td> 
+   <td><p>For backwards compatibility, the legacy location is used if present.</p> <p>Previously, out of the box templates had to be overridden by editing them in <code>/etc</code>. Now, override should be stored in <code>/conf/global</code>.</p> </td> 
    <td>For more info, please consult the Workflow documentation.<br /> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/cloudservices/translation</span></td> 
-   <td><p><span class="code">/libs/settings/cloudconfigs/translation/translationcfg</span></p> <p><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/translation/translationcfg</span></p> <p> </p> </td> 
+   <td><code>/etc/cloudservices/translation</code></td> 
+   <td><p><code>/libs/settings/cloudconfigs/translation/translationcfg</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translation/translationcfg</code></p> <p> </p> </td> 
    <td>tenant-aware</td> 
    <td>Legacy cloudservices. Will be persisted on an in-place upgraded set up. Code to list them and read them is still present in the product as a fallback.</td> 
-   <td><p>In order to move cloud configurations to <span class="code">/conf</span>, you can either:</p> 
+   <td><p>In order to move cloud configurations to <code>/conf</code>, you can either:</p> 
     <ul> 
      <li>Create configurations using the new Touch UI<br /> or<br /> </li> 
-     <li>Copy the configurations from <span class="code">/etc/cloudservices/translation</span> to their respective new location(s)</li> 
+     <li>Copy the configurations from <code>/etc/cloudservices/translation</code> to their respective new location(s)</li> 
     </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites → Properties</strong> in the user interface.</p> <p><em>Note: Translation connectors must be compatible with AEM 6.5 for this to work.</em></p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/cloudservices/msft-translation</span></td> 
-   <td><p><span class="code">/libs/settings/cloudconfigs/translation/msft-translation</span></p> <p><span class="code">/conf/&lt;tenant&gt;/settings/cloudconfigs/translation/msft-translation</span></p> </td> 
+   <td><code>/etc/cloudservices/msft-translation</code></td> 
+   <td><p><code>/libs/settings/cloudconfigs/translation/msft-translation</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translation/msft-translation</code></p> </td> 
    <td>tenant-aware</td> 
    <td>Legacy cloudservices. Will be persisted on an in-place upgraded set up. Code to list them and read them is still present in the product as a fallback.</td> 
-   <td><p>In order to move cloud configurations to <span class="code">/conf</span>, you can either:</p> 
+   <td><p>In order to move cloud configurations to <code>/conf</code>, you can either:</p> 
     <ul> 
      <li>Create configurations using the new Touch UI or<br /> </li> 
-     <li>Copy older configurations from <span class="code">/etc/cloudservices/translation</span> to their respective new location(s)</li> 
+     <li>Copy older configurations from <code>/etc/cloudservices/translation</code> to their respective new location(s)</li> 
     </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites → Properties</strong> in the user interface.</p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/cloudsettings</span></td> 
-   <td><p><span class="code">/libs/settings/cloudsettings</span></p> <p><span class="code">/conf/&lt;tenant&gt;/settings/cloudsettings</span></p> </td> 
+   <td><code>/etc/cloudsettings</code></td> 
+   <td><p><code>/libs/settings/cloudsettings</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudsettings</code></p> </td> 
    <td>tenant-aware</td> 
-   <td><p>Existing entries under <span class="code">/etc</span> remain in place on upgrading the instance.</p> <p>Accessing the cloud settings UI after the upgrade will copy over the existing cloud settings to the new repository structure while preserving the existing content for backward compatibility.</p> </td> 
+   <td><p>Existing entries under <code>/etc</code> remain in place on upgrading the instance.</p> <p>Accessing the cloud settings UI after the upgrade will copy over the existing cloud settings to the new repository structure while preserving the existing content for backward compatibility.</p> </td> 
    <td><p>Content models are the same, only the location has been changed to align with context-aware configurations.</p> <p>The <a href="../../../sites/deploying/using/lazy-content-migration.md">Lazy Migration task</a> covering these cloud settings will perform the following actions:</p> 
     <ul> 
-     <li>Copy existing cloud settings in <span class="code">/etc/cloudsettings</span> to <span class="code">/conf/global/settings/cloudsettings</span></li> 
-     <li>Remove all children of <span class="code">/etc/cloudsettings</span></li> 
+     <li>Copy existing cloud settings in <code>/etc/cloudsettings</code> to <code>/conf/global/settings/cloudsettings</code></li> 
+     <li>Remove all children of <code>/etc/cloudsettings</code></li> 
     </ul> <p>There are, however, manual steps that are required after the upgrade and before running the lazy migration tasks:</p> 
     <ul> 
-     <li>All references pointing to <span class="code">/etc/cloudsettings/*</span> need to be updated to point to <span class="code">/conf/global</span></li> 
+     <li>All references pointing to <code>/etc/cloudsettings/*</code> need to be updated to point to <code>/conf/global</code></li> 
     </ul> <p>Caveat:</p> 
     <ul> 
-     <li>The <span class="code">/etc/cloudsettings</span> container needs to be preserved</li> 
+     <li>The <code>/etc/cloudsettings</code> container needs to be preserved</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/cloudservices/dmscene7</span></td> 
-   <td><span class="code">/conf/global/settings/cloudservices/dmscene7</span></td> 
+   <td><code>/etc/cloudservices/dmscene7</code></td> 
+   <td><code>/conf/global/settings/cloudservices/dmscene7</code></td> 
    <td>only global</td> 
-   <td><p>Cloud configuration for Dynamic Media - Scene7 (<span class="code">dynamicmedia_scene7</span> runmode) setup will stay at the same location. The process is working as is. If you need to adjust the cloud configuration value, then there are two options for doing that:</p> 
+   <td><p>Cloud configuration for Dynamic Media - Scene7 (<code>dynamicmedia_scene7</code> runmode) setup will stay at the same location. The process is working as is. If you need to adjust the cloud configuration value, then there are two options for doing that:</p> 
     <ol> 
      <li>Update an existing configuration via the old cloud configuration UI.</li> 
      <li>Create a new cloud configuration via new Touch UI. This will have higher precedence than the old one.</li> 
@@ -406,21 +406,21 @@ The table below includes an additional column named "Configuration Type" to expl
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/presets/viewer</span></td> 
-   <td><p><span class="code">/libs/settings/dam/dm/presets/viewer</span></p> <p><span class="code">/conf/global/settings/dam/dm/presets/viewer</span></p> </td> 
+   <td><code>/etc/dam/presets/viewer</code></td> 
+   <td><p><code>/libs/settings/dam/dm/presets/viewer</code></p> <p><code>/conf/global/settings/dam/dm/presets/viewer</code></p> </td> 
    <td>only global</td> 
-   <td><p>The OOTB viewer presets will only be available in the new location, while the custom viewer preset will still be under <span class="code">/etc</span> until a modification is incurred.</p> <p>After it has been modified, it will be saved in the new location via Lazy Migration. The embed image server will look at both the legacy path and the new path upon receiving a request. Therefore, there is no need to change their embed code or URL.</p> </td> 
+   <td><p>The OOTB viewer presets will only be available in the new location, while the custom viewer preset will still be under <code>/etc</code> until a modification is incurred.</p> <p>After it has been modified, it will be saved in the new location via Lazy Migration. The embed image server will look at both the legacy path and the new path upon receiving a request. Therefore, there is no need to change their embed code or URL.</p> </td> 
    <td><p>The out of the box viewer preset will only available in the new location. For the custom viewer preset, you need to run the migration script at this location:</p> 
     <ul> 
      <li><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
-    </ul> <p>Similar to the backward compatibility case, you don't have to adjust the copyURL/embed code to point to <span class="code">/conf</span>. The existing request to <span class="code">/etc</span> will be re-routed under the hood to the correct content from <span class="code">/conf</span>.</p> </td> 
+    </ul> <p>Similar to the backward compatibility case, you don't have to adjust the copyURL/embed code to point to <code>/conf</code>. The existing request to <code>/etc</code> will be re-routed under the hood to the correct content from <code>/conf</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/imageserver/macros</span></td> 
-   <td><span class="code">/conf/global/settings/dam/dm/presets/macro</span></td> 
+   <td><code>/etc/dam/imageserver/macros</code></td> 
+   <td><code>/conf/global/settings/dam/dm/presets/macro</code></td> 
    <td>only global</td> 
-   <td>The macro under <span class="code">/etc</span> is still valid. If modify it, the modified node will be moved to the new location under <span class="code">/conf</span> via a Lazy Migration task.</td> 
+   <td>The macro under <code>/etc</code> is still valid. If modify it, the modified node will be moved to the new location under <code>/conf</code> via a Lazy Migration task.</td> 
    <td><p>You need to run the migration script at this location:</p> 
     <ul> 
      <li><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
@@ -428,16 +428,16 @@ The table below includes an additional column named "Configuration Type" to expl
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/video/dynamicmedia/Adaptive Video Encoding</span></td> 
-   <td><span class="code">/libs/settings/dam/dm/presets/video/jcr:content/Adaptive Video Encoding</span></td> 
+   <td><code>/etc/dam/video/dynamicmedia/Adaptive Video Encoding</code></td> 
+   <td><code>/libs/settings/dam/dm/presets/video/jcr:content/Adaptive Video Encoding</code></td> 
    <td>N/A</td> 
    <td><p>The out of the box video profile will be removed without updating the asset folders property to link to the profile.</p> <p>The encoding process has built-in translation between the old and new location. It will convert the old path to look into the new profile path.</p> </td> 
    <td>No changes required.</td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/video/dynamicmedia</span></td> 
-   <td><span class="code">/conf/global/settings/dam/dm/presets/video/jcr:content</span></td> 
+   <td><code>/etc/dam/video/dynamicmedia</code></td> 
+   <td><code>/conf/global/settings/dam/dm/presets/video/jcr:content</code></td> 
    <td>only global</td> 
    <td><p>The custom video profile will be kept as is until you modify it.</p> <p>Then, it will be moved to the new location via a Lazy Migration task. This is similar to the out of the box video preset on encoding look-up. The encoding process has a built-in path translator to look into old location first and then the new location for video profile.</p> </td> 
    <td><p>In order to align to the latest model, you can run the migration script under:</p> 
@@ -447,10 +447,10 @@ The table below includes an additional column named "Configuration Type" to expl
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/cloudservices/dynamicmediaservices</span></td> 
-   <td><span class="code">/conf/global/settings/dam/dm/cloudservices/dynamicmediaservices</span></td> 
+   <td><code>/etc/cloudservices/dynamicmediaservices</code></td> 
+   <td><code>/conf/global/settings/dam/dm/cloudservices/dynamicmediaservices</code></td> 
    <td>only global</td> 
-   <td><p>This cloud configuration for Dynamic Media hybrid setup (<span class="code">dynamicmedia</span> runmode) will stay at the same location. The process is working as-is. If you need to adjust the config value, you can do it in two ways.</p> 
+   <td><p>This cloud configuration for Dynamic Media hybrid setup (<code>dynamicmedia</code> runmode) will stay at the same location. The process is working as-is. If you need to adjust the config value, you can do it in two ways.</p> 
     <ol> 
      <li>Update an existing config via the old cloud configuration UI.</li> 
      <li>Create a new cloud configuration via the new touch UI. This will have higher precedence than the old one.</li> 
@@ -462,8 +462,8 @@ The table below includes an additional column named "Configuration Type" to expl
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/cloudservices/youtube</span></td> 
-   <td><span class="code">/libs/settings/dam/dm/youtube</span></td> 
+   <td><code>/etc/cloudservices/youtube</code></td> 
+   <td><code>/libs/settings/dam/dm/youtube</code></td> 
    <td>only global</td> 
    <td><p>The cloud config for the DM-Youtube setup will stay at the same location. The process is working as-is. If you need to adjust the cloud config value, you can do it in two ways:</p> 
     <ol> 
@@ -474,43 +474,43 @@ The table below includes an additional column named "Configuration Type" to expl
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/presets/analytics</span></td> 
-   <td><span class="code">/libs/settings/dam/dm/analytics</span></td> 
+   <td><code>/etc/dam/presets/analytics</code></td> 
+   <td><code>/libs/settings/dam/dm/analytics</code></td> 
    <td>only global</td> 
    <td>No action required.</td> 
    <td><p>You can run a migration script to align to the latest mode. The script can be found at this location:<br /> </p> <p><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><p><span class="code">/etc/notification/email/default/com.day.cq.replication</span></p> <p><span class="code">/etc/notification/email/default/com.day.cq.wcm.core.page</span></p> </td> 
-   <td><span class="code">/libs/settings/notification-templates</span></td> 
+   <td><p><code>/etc/notification/email/default/com.day.cq.replication</code></p> <p><code>/etc/notification/email/default/com.day.cq.wcm.core.page</code></p> </td> 
+   <td><code>/libs/settings/notification-templates</code></td> 
    <td>only global</td> 
-   <td>The templates in <span class="code">/etc/notification/email/default/</span> are given precedence over the ones in <span class="code">/libs/settings/notification-templates</span>.</td> 
-   <td>In order to align to the latest model, you can create new templates under <span class="code">/apps/settings/notification-templates</span> and perform new modifications there.</td> 
+   <td>The templates in <code>/etc/notification/email/default/</code> are given precedence over the ones in <code>/libs/settings/notification-templates</code>.</td> 
+   <td>In order to align to the latest model, you can create new templates under <code>/apps/settings/notification-templates</code> and perform new modifications there.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><p><span class="code">/etc/msm/rolloutconfigs/launch</span></p> <p><span class="code">/etc/msm/rolloutconfigs/pushonmodifyshallow</span></p> </td> 
-   <td><p><span class="code">/libs/msm/launches/rolloutconfigs/launch</span></p> <p><span class="code">/libs/msm/launches/rolloutconfigs/pushonmodifyshallow</span></p> </td> 
+   <td><p><code>/etc/msm/rolloutconfigs/launch</code></p> <p><code>/etc/msm/rolloutconfigs/pushonmodifyshallow</code></p> </td> 
+   <td><p><code>/libs/msm/launches/rolloutconfigs/launch</code></p> <p><code>/libs/msm/launches/rolloutconfigs/pushonmodifyshallow</code></p> </td> 
    <td>N/A</td> 
    <td><p>Consuming Services are aware of the old location.</p> <p>If configurations are detected in the legacy location, they will be used.</p> </td> 
-   <td>To align with the new model, configurations need to be created in the new locations, and the old ones under <span class="code">/etc</span> must be deleted.</td> 
+   <td>To align with the new model, configurations need to be created in the new locations, and the old ones under <code>/etc</code> must be deleted.</td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/translation/supportedLanguages</span></td> 
-   <td><p><span class="code">/libs/settings/translation/supportedLanguages</span></p> <p><span class="code">/apps/settings/translation/supportedLanguages</span></p> </td> 
+   <td><code>/etc/translation/supportedLanguages</code></td> 
+   <td><p><code>/libs/settings/translation/supportedLanguages</code></p> <p><code>/apps/settings/translation/supportedLanguages</code></p> </td> 
    <td>not context-aware</td> 
    <td>A caveat is that customized languages need to be added to the list.<br /> </td> 
-   <td>Overlay and update the new list with additional languages (if any). Alternatively, copying the old list to <span class="code">/apps</span> location would also work.</td> 
+   <td>Overlay and update the new list with additional languages (if any). Alternatively, copying the old list to <code>/apps</code> location would also work.</td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/models/translation/translation_rules.xml</span></td> 
-   <td><p><span class="code">/libs/settings/translation/rules/translation_rules.xml</span></p> <p><span class="code">/apps/settings/translation/rules/translation_rules.xml</span></p> <p><span class="code">/conf/global/settings/translation/rules/translation_rules.xml</span></p> </td> 
+   <td><code>/etc/workflow/models/translation/translation_rules.xml</code></td> 
+   <td><p><code>/libs/settings/translation/rules/translation_rules.xml</code></p> <p><code>/apps/settings/translation/rules/translation_rules.xml</code></p> <p><code>/conf/global/settings/translation/rules/translation_rules.xml</code></p> </td> 
    <td>only global</td> 
    <td>Will be persisted on an inplace upgraded set up. Code to list them and read them still present in the product.</td> 
-   <td>To persist the changes, copy the XML file from <span class="code">/etc</span> to <span class="code">/libs</span> or <span class="code">/conf</span>. Alternatively,<strong> </strong>remove file from <span class="code">/etc</span>.</td> 
+   <td>To persist the changes, copy the XML file from <code>/etc</code> to <code>/libs</code> or <code>/conf</code>. Alternatively,<strong> </strong>remove file from <code>/etc</code>.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -534,106 +534,106 @@ AEM provides an extensibility framework to append multiple JavaScript files. Any
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/clientlibs/fd/fp</span></td> 
-   <td><span class="code">/libs/fd/fp/components</span></td> 
-   <td><p>Legacy clientlib that will be persisted on an instance that has been upgraded via an in-place upgrade.</p> <p>New clientlibs have the same category names along with the "<strong><span class="code">replaces</span></strong>" property to avoid merging of old and new clientlibs.</p> </td> 
+   <td><code>/etc/clientlibs/fd/fp</code></td> 
+   <td><code>/libs/fd/fp/components</code></td> 
+   <td><p>Legacy clientlib that will be persisted on an instance that has been upgraded via an in-place upgrade.</p> <p>New clientlibs have the same category names along with the "<strong><code>replaces</code></strong>" property to avoid merging of old and new clientlibs.</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/clientlibs/fd/rte</span></td> 
-   <td><span class="code">/libs/fd/rte</span></td> 
-   <td><p>Legacy clientlibs that will be persisted on an instance that has been upgraded via an inplace upgrade.</p> <p>New clientlibs have the same category names along with the "<strong><span class="code">replaces</span></strong>" property to avoid merging of old and new clientlibs.</p> </td> 
+   <td><code>/etc/clientlibs/fd/rte</code></td> 
+   <td><code>/libs/fd/rte</code></td> 
+   <td><p>Legacy clientlibs that will be persisted on an instance that has been upgraded via an inplace upgrade.</p> <p>New clientlibs have the same category names along with the "<strong><code>replaces</code></strong>" property to avoid merging of old and new clientlibs.</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/clientlibs/fd/af</span></td> 
-   <td><span class="code">/libs/fd/af/authoring/clientlibs</span></td> 
-   <td>Legacy clientlibs. Will be persisted on an instance that has been upgraded via an inplace upgrade. New clientlibs have the same category names along with the "<strong><span class="code">replaces</span></strong>" property to avoid merging of old and new clientlibs.</td> 
+   <td><code>/etc/clientlibs/fd/af</code></td> 
+   <td><code>/libs/fd/af/authoring/clientlibs</code></td> 
+   <td>Legacy clientlibs. Will be persisted on an instance that has been upgraded via an inplace upgrade. New clientlibs have the same category names along with the "<strong><code>replaces</code></strong>" property to avoid merging of old and new clientlibs.</td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/clientlibs/fd/themes/themeLibrary</span></td> 
+   <td><code>/etc/clientlibs/fd/themes/themeLibrary</code></td> 
    <td>This no longer features as part of the AEM 6.5 out of the box package.</td> 
    <td><p>Out of the box themes in Adaptive Forms.</p> <p>Will be persisted on an inplace upgraded set up.</p> </td> 
-   <td>This is partly user-generated content. This will be delivered as a reference content package with the <span class="code">aem-forms-reference-themes</span> name.</td> 
+   <td>This is partly user-generated content. This will be delivered as a reference content package with the <code>aem-forms-reference-themes</code> name.</td> 
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/clientlibs/fd/expeditor</span></td> 
-   <td><span class="code">/libs/fd/expeditor/clientlibs</span></td> 
-   <td>Legacy clientlibs. Will be persisted on an instance that has been upgraded via an inplace upgrade. New clientlibs have the same category names along with the "<strong><span class="code">replaces</span></strong>" property to avoid merging of old and new clientlibs.</td> 
+   <td><code>/etc/clientlibs/fd/expeditor</code></td> 
+   <td><code>/libs/fd/expeditor/clientlibs</code></td> 
+   <td>Legacy clientlibs. Will be persisted on an instance that has been upgraded via an inplace upgrade. New clientlibs have the same category names along with the "<strong><code>replaces</code></strong>" property to avoid merging of old and new clientlibs.</td> 
    <td>No action required.<p> </p> </td> 
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/clientlibs/fd/fmaddon</span></td> 
-   <td><span class="code">/libs/fd/fmaddon</span></td> 
+   <td><code>/etc/clientlibs/fd/fmaddon</code></td> 
+   <td><code>/libs/fd/fmaddon</code></td> 
    <td>Legacy Analytics and Target clientlibs which are not meant to be directly consumed. </td> 
    <td>Cleaned up post-upgrade using a cleanup filter.</td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><p><span class="code">/etc/clientlibs/foundation/asseteditor</span></p> <p><span class="code">/etc/clientlibs/foundation/assetshare</span></p> <p><span class="code">/etc/clientlibs/foundation/assetinsights</span></p> </td> 
-   <td><span class="code">/libs/dam/clientlibs</span></td> 
+   <td><p><code>/etc/clientlibs/foundation/asseteditor</code></p> <p><code>/etc/clientlibs/foundation/assetshare</code></p> <p><code>/etc/clientlibs/foundation/assetinsights</code></p> </td> 
+   <td><code>/libs/dam/clientlibs</code></td> 
    <td>Legacy clientlibs have different client category names.</td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><span class="code">/etc/clientlibs/ckeditor</span></td> 
-   <td><span class="code">/libs/clientlibs/ckeditor</span></td> 
-   <td>These are legacy clientlibs. They will be persisted on an inplace upgraded set up. New clientlibs have the same category names along with the "<span class="code">replaces</span>" property to avoid the merging of old and new clientlibs.</td> 
+   <td><code>/etc/clientlibs/ckeditor</code></td> 
+   <td><code>/libs/clientlibs/ckeditor</code></td> 
+   <td>These are legacy clientlibs. They will be persisted on an inplace upgraded set up. New clientlibs have the same category names along with the "<code>replaces</code>" property to avoid the merging of old and new clientlibs.</td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/clientlibs/foundation/sitecatalyst</span></td> 
-   <td><span class="code">/libs/cq/analytics/clientlibs/analytics</span></td> 
+   <td><code>/etc/clientlibs/foundation/sitecatalyst</code></td> 
+   <td><code>/libs/cq/analytics/clientlibs/analytics</code></td> 
    <td><p>These are legacy clientlibs. Will be persisted on an inplace upgraded set up.</p> <p>New clientlibs have the same category names.</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/clientlibs/foundation/personalization</span></td> 
-   <td><span class="code">/libs/cq/personalization/clientlibs/personalization</span></td> 
+   <td><code>/etc/clientlibs/foundation/personalization</code></td> 
+   <td><code>/libs/cq/personalization/clientlibs/personalization</code></td> 
    <td><p>These are legacy clientlibs. Will be persisted on an inplace upgraded set up.</p> <p>New clientlibs have the same category names.</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/clientlibs/foundation/searchpromote</span></td> 
-   <td><span class="code">/libs/cq/searchpromote/clientlibs/searchpromote</span></td> 
+   <td><code>/etc/clientlibs/foundation/searchpromote</code></td> 
+   <td><code>/libs/cq/searchpromote/clientlibs/searchpromote</code></td> 
    <td><p>These are legacy clientlibs. Will be persisted on an inplace upgraded set up.</p> <p>New clientlibs have the same category names</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/clientlibs/foundation/target</span></td> 
-   <td><span class="code">/libs/cq/target/clientlibs/target</span></td> 
+   <td><code>/etc/clientlibs/foundation/target</code></td> 
+   <td><code>/libs/cq/target/clientlibs/target</code></td> 
    <td><p>These are legacy clientlibs. Will be persisted on an inplace upgraded set up.</p> <p>New clientlibs have the same category names.</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/clientlibs/address</span></td> 
-   <td><span class="code">/libs/cq/address/clientlibs</span></td> 
+   <td><code>/etc/clientlibs/address</code></td> 
+   <td><code>/libs/cq/address/clientlibs</code></td> 
    <td>New clientlibs have the same category names.</td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/clientlibs/wcm/foundation</span></td> 
-   <td><span class="code">/libs/wcm/foundation/clientlibs</span></td> 
+   <td><code>/etc/clientlibs/wcm/foundation</code></td> 
+   <td><code>/libs/wcm/foundation/clientlibs</code></td> 
    <td>Legacy clientlibs. Will be persisted on an inplace upgraded set up. New clientlibs have the same category names along with the "<strong>replaces</strong>" property to avoid merging of old and new clientlibs.</td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Sites</td> 
-   <td><span class="code">/etc/clientlibs/wcm/foundation/grid/grid_base.less</span></td> 
-   <td><p><span class="code">/libs/wcm/foundation/clientlibs/grid/grid_base.less</span></p> </td> 
+   <td><code>/etc/clientlibs/wcm/foundation/grid/grid_base.less</code></td> 
+   <td><p><code>/libs/wcm/foundation/clientlibs/grid/grid_base.less</code></p> </td> 
    <td><p>On an inplace upgrade the legacy file (/etc/clientlibs/wcm/…_) will remain and not be automatically removed, so references to the legacy /etc/clientlibs/wcm/foundation/grid/grid_base.less will continue to be stasified.</p> <p><em>Note that the is is an outlier case where this LESS file is referenced by absolute path via LESS @import statements, and NOT by clientlib category.</em></p> <p>If customer LESS referencing the `grid_base.less` is pointing to a non-existing file, the Editable Template Layout mode will break, and any adjustments made with it will not be present (ie. all components will be the full width of the page).</p> </td> 
    <td>Update any references in custom code (i.e. in any LESS files that reference the moved grid_base.less file) to point to the new location, and remove the legacy location.</td> 
   </tr> 
@@ -659,85 +659,85 @@ See each table row for any supported extensibility model. Content in this sectio
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/designs/fd/fp</span></td> 
-   <td><span class="code">/libs/fd/fp</span></td> 
+   <td><code>/etc/designs/fd/fp</code></td> 
+   <td><code>/libs/fd/fp</code></td> 
    <td><p>Legacy AEM Forms Portal OOTB templates. These templates will remain in /etc after an in-place upgraded setup.</p> <p>In the template listing, the word<em> "deprecated</em>" will be added to the template title to differentiate them with the newer templates.</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Forms</td> 
-   <td><span class="code">/etc/ 
+   <td><code>/etc/ 
      <g class="gr_ gr_205 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="205" id="205">
        aep 
-     </g></span></td> 
-   <td><span class="code">/var/ 
+     </g></code></td> 
+   <td><code>/var/ 
      <g class="gr_ gr_206 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="206" id="206">
        fd 
-     </g>/content/annotations</span></td> 
+     </g>/content/annotations</code></td> 
    <td>Legacy Correspondence Management annotation files. Not meant to be directly consumed. Will be cleaned up after upgrade using a cleanup filter.</td> 
    <td>Legacy location cleaned-up post-upgrade using a cleanup filter.</td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/tags</span></td> 
-   <td><span class="code">/content/ 
+   <td><code>/etc/tags</code></td> 
+   <td><code>/content/ 
      <g class="gr_ gr_202 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="202" id="202">
        cq 
      </g> 
      <g class="gr_ gr_209 gr-alert gr_gramm gr_inline_cards gr_run_anim Style replaceWithoutSep" data-gr-id="209" id="209">
        :tags 
-     </g></span></td> 
+     </g></code></td> 
    <td>The Tag Manager API supports both the legacy and the new location. When the JCR Tag Manager Factory OSGi Component starts, it detects if it is running on an upgraded instance or a legacy one, and uses the appropriate location.<br /> </td> 
    <td><p>In order to properly align with the new model:</p> 
     <ol> 
-     <li>Replace the references to the old model (<span class="code">/etc/tags</span>) with the new one (<span class="code">/content/ 
+     <li>Replace the references to the old model (<code>/etc/tags</code>) with the new one (<code>/content/ 
        <g class="gr_ gr_201 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="201" id="201">
          cq 
-       </g>:tags</span>) by using the <span class="code">tagID.</span></li> 
+       </g>:tags</code>) by using the <code>tagID.</code></li> 
      <li>Log in to CRXDE Lite</li> 
-     <li>Move the tags from <span class="code">/etc/tags</span> to <span class="code">/content/cq:tags</span></li> 
+     <li>Move the tags from <code>/etc/tags</code> to <code>/content/cq:tags</code></li> 
      <li>Restart the OSGi Component <code class="code">com.day.cq.tagging.impl.JcrTagManagerFactoryImpl.
         </code></li> 
     </ol> <p> </p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/instances</span></td> 
-   <td><span class="code">/var/workflow/instances</span></td> 
-   <td>Legacy location used in processing of<br /> in-flight workflows. New workflows use the new location in <span class="code">/var.</span></td> 
+   <td><code>/etc/workflow/instances</code></td> 
+   <td><code>/var/workflow/instances</code></td> 
+   <td>Legacy location used in processing of<br /> in-flight workflows. New workflows use the new location in <code>/var.</code></td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/scripts</span></td> 
-   <td><p><span class="code">/libs/workflow/scripts</span></p> <p><span class="code">/apps/workflow/scripts</span></p> </td> 
-   <td><p>Existing Workflow Model Steps that reference workflow scripts in the legacy location at <span class="code">/etc/workflow/scripts</span> will continue to point to these scripts after the upgrade, and execute properly.</p> <p>Note the AEM UI for authoring the workflow steps’ (Process, Splits, etc.) no longer lists scripts under <span class="code">/etc/workflow/scripts</span> in the drop-down used select to workflow scripts.</p> </td> 
+   <td><code>/etc/workflow/scripts</code></td> 
+   <td><p><code>/libs/workflow/scripts</code></p> <p><code>/apps/workflow/scripts</code></p> </td> 
+   <td><p>Existing Workflow Model Steps that reference workflow scripts in the legacy location at <code>/etc/workflow/scripts</code> will continue to point to these scripts after the upgrade, and execute properly.</p> <p>Note the AEM UI for authoring the workflow steps’ (Process, Splits, etc.) no longer lists scripts under <code>/etc/workflow/scripts</code> in the drop-down used select to workflow scripts.</p> </td> 
    <td><p>Workflows leveraging these scripts will continue to work as expected if the associated workflow process step isn't edited in AEM.</p> <p>However, for full backward compatibility, including when steps are edited, requires manual action by the customer post-upgrade:</p> 
     <ul> 
-     <li>The scripts must be moved from <span class="code">/etc/workflow/scripts</span> to <span class="code">/apps/workflow/scripts.</span></li> 
-     <li>Any<strong> </strong>references to <span class="code">/etc/workflow/scripts</span> in workflow model steps must be updated to reference the new <span class="code">/apps/workflow/scripts</span> location.</li> 
+     <li>The scripts must be moved from <code>/etc/workflow/scripts</code> to <code>/apps/workflow/scripts.</code></li> 
+     <li>Any<strong> </strong>references to <code>/etc/workflow/scripts</code> in workflow model steps must be updated to reference the new <code>/apps/workflow/scripts</code> location.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/replication/treeactivation</span></td> 
-   <td><span class="code">/libs/replication/treeactivation</span></td> 
+   <td><code>/etc/replication/treeactivation</code></td> 
+   <td><code>/libs/replication/treeactivation</code></td> 
    <td>ClassicUI utility page remains in place on upgrade.</td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
-   <td><span class="code">/etc/dam/jobs</span></td> 
-   <td><span class="code">/var/dam/jobs</span></td> 
+   <td><code>/etc/dam/jobs</code></td> 
+   <td><code>/var/dam/jobs</code></td> 
    <td><p>Temporary location to hold zip files generated for AEM Assets download action invocation.</p> <p>There is no need to update since when the client requests to download the asset, It will generate the file in the new location.</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Commerce</td> 
-   <td><span class="code">/etc/commerce/products</span></td> 
-   <td><span class="code">/var/commerce/products</span></td> 
+   <td><code>/etc/commerce/products</code></td> 
+   <td><code>/var/commerce/products</code></td> 
    <td><p>The old content remains in place and usable after the upgrade.</p> <p>A Lazy Migration task is provided for migration to the new location.</p> </td> 
-   <td><p>The migration is performed via a Lazy Migration task: <span class="code">CQ64CommerceMigrationTask.</span></p> <p>It performs the following steps:</p> 
+   <td><p>The migration is performed via a Lazy Migration task: <code>CQ64CommerceMigrationTask.</code></p> <p>It performs the following steps:</p> 
     <ul> 
      <li>Adjusts references from the old location to point to the new location</li> 
      <li>Moves content from the old location to new location</li> 
@@ -751,77 +751,77 @@ See each table row for any supported extensibility model. Content in this sectio
      <li>/etc/commerce/shipping-methods<br /> </li> 
     </ul> <p>For larger catalogs it's recommended to run the commerce migration task individually by passing the following Java system property to AEM:</p> 
     <ul> 
-     <li>property name: <span class="code">com.adobe.upgrade.forcemigration</span></li> 
-     <li>property value: <span class="code">com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</span></li> 
+     <li>property name: <code>com.adobe.upgrade.forcemigration</code></li> 
+     <li>property value: <code>com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></li> 
     </ul> <p>After migration AEM requires a restart.</p> </td> 
   </tr> 
   <tr> 
    <td>AEM Commerce</td> 
-   <td><span class="code">/etc/commerce/orders</span></td> 
-   <td><span class="code">/var/commerce/orders</span></td> 
+   <td><code>/etc/commerce/orders</code></td> 
+   <td><code>/var/commerce/orders</code></td> 
    <td><p>The old content remains in place and usable after the upgrade.</p> <p>A Lazy Migration task is provided for migration to the new location.</p> </td> 
-   <td>See the description above for <span class="code">/etc/commerce/products</span>.</td> 
+   <td>See the description above for <code>/etc/commerce/products</code>.</td> 
   </tr> 
   <tr> 
    <td>AEM Commerce</td> 
-   <td><span class="code">/etc/commerce/collections</span></td> 
-   <td><span class="code">/var/commerce/collections</span></td> 
+   <td><code>/etc/commerce/collections</code></td> 
+   <td><code>/var/commerce/collections</code></td> 
    <td><p>The old content remains in place and usable after the upgrade.</p> <p>A Lazy Migration task is provided for migration to the new location.</p> </td> 
-   <td>See the description above for <span class="code">/etc/commerce/products</span>.</td> 
+   <td>See the description above for <code>/etc/commerce/products</code>.</td> 
   </tr> 
   <tr> 
    <td>AEM Commerce</td> 
-   <td><span class="code">/etc/commerce/classifications</span></td> 
-   <td><span class="code">/var/commerce/classifications</span></td> 
+   <td><code>/etc/commerce/classifications</code></td> 
+   <td><code>/var/commerce/classifications</code></td> 
    <td>No action required.</td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>AEM Commerce</td> 
-   <td><span class="code">/etc/commerce/shipping-methods</span></td> 
-   <td><span class="code">/var/commerce/shipping-methods</span></td> 
+   <td><code>/etc/commerce/shipping-methods</code></td> 
+   <td><code>/var/commerce/shipping-methods</code></td> 
    <td><p>The old content remains in place and usable after the upgrade.</p> <p>A Lazy Migration task is provided for migration to the new location.</p> </td> 
-   <td>See the description above for <span class="code">/etc/commerce/products</span>.</td> 
+   <td>See the description above for <code>/etc/commerce/products</code>.</td> 
   </tr> 
   <tr> 
    <td>AEM Commerce</td> 
-   <td><span class="code">/etc/commerce/payment-methods</span></td> 
-   <td><span class="code">/var/commerce/payment-methods</span></td> 
+   <td><code>/etc/commerce/payment-methods</code></td> 
+   <td><code>/var/commerce/payment-methods</code></td> 
    <td><p>The old content remains in place and usable after the upgrade.</p> <p>A Lazy Migration task is provided for migration to the new location.</p> </td> 
-   <td>See the description above for <span class="code">/etc/commerce/products</span>.</td> 
+   <td>See the description above for <code>/etc/commerce/products</code>.</td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/taskmanagement</span></td> 
-   <td><span class="code">/var/taskmanagement</span></td> 
-   <td><p>New tasks are created under <span class="code">/var/taskmanagement</span></p> <p>Existing tasks in the legacy location will still visible in the AEM inbox.</p> </td> 
+   <td><code>/etc/taskmanagement</code></td> 
+   <td><code>/var/taskmanagement</code></td> 
+   <td><p>New tasks are created under <code>/var/taskmanagement</code></p> <p>Existing tasks in the legacy location will still visible in the AEM inbox.</p> </td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/packages</span></td> 
-   <td><span class="code">/var/workflow/packages</span></td> 
-   <td><p>AEM Packages created through AEM Package Manager are still stored in <span class="code">/etc/workflow/packages.</span></p> <p>Other Packages created via AEM Sites and Workflows continue to be stored in<span class="code">/var/workflow/packages.</span></p> <p>Packages found in both <span class="code">/etc/workflow/packages</span> and <span class="code">/var/workflow/packages</span> can still be edited via AEM's Package Manager. </p> </td> 
+   <td><code>/etc/workflow/packages</code></td> 
+   <td><code>/var/workflow/packages</code></td> 
+   <td><p>AEM Packages created through AEM Package Manager are still stored in <code>/etc/workflow/packages.</code></p> <p>Other Packages created via AEM Sites and Workflows continue to be stored in<code>/var/workflow/packages.</code></p> <p>Packages found in both <code>/etc/workflow/packages</code> and <code>/var/workflow/packages</code> can still be edited via AEM's Package Manager. </p> </td> 
    <td><p>No action required.</p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/workflow/instances</span></td> 
-   <td><span class="code">/var/workflow/instances</span></td> 
-   <td>New workflow instances will be created under <span class="code">/var</span> automatically.</td> 
+   <td><code>/etc/workflow/instances</code></td> 
+   <td><code>/var/workflow/instances</code></td> 
+   <td>New workflow instances will be created under <code>/var</code> automatically.</td> 
    <td>No action required.</td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/commerce/searchpromote</span></td> 
-   <td><span class="code">/var/cq/searchpromote</span></td> 
+   <td><code>/etc/commerce/searchpromote</code></td> 
+   <td><code>/var/cq/searchpromote</code></td> 
    <td><p>New location for Search and Promote feed content.</p> <p>The old URL continues to work and the request is forwarded by a ServletFilter to the new location.</p> </td> 
    <td>No action required.<br /> <br /> </td> 
   </tr> 
   <tr> 
    <td>All</td> 
-   <td><span class="code">/etc/dtm-hook</span></td> 
-   <td><span class="code">/var/cq/dtm/web-hook</span></td> 
+   <td><code>/etc/dtm-hook</code></td> 
+   <td><code>/var/cq/dtm/web-hook</code></td> 
    <td><p>New location for DTM Web-Hooks.</p> <p>The old URL continues to work and the request is forwarded by a ServletFilter to the new location.</p> </td> 
    <td>No action required.<br /> <br /> </td> 
   </tr> 

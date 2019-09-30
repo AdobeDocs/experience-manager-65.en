@@ -90,9 +90,9 @@ This means that subsequent ( `write`) requests cannot be combined into a single 
   </tr> 
   <tr> 
    <td>Access</td> 
-   <td><p>Can be accessed directly.</p> <p>Uses the <span class="code">/api/assets </span>endpoint, mapped to <span class="code">/content/dam</span> (in the repository).</p> <p>For example, to access:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> request:<br /> <span class="code">/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</span></p> </td> 
-   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <span class="code">.model</span> selector to create the JSON representation.</p> <p>An example URL would look like:<br /> <span class="code">http://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</span></p> </td> 
+   <td><p>Can be accessed directly.</p> <p>Uses the <code>/api/assets </code>endpoint, mapped to <code>/content/dam</code> (in the repository).</p> <p>For example, to access:<code class="code">
+       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> request:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td> 
+   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br /> <code>http://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td> 
   </tr> 
   <tr> 
    <td>Security</td> 
