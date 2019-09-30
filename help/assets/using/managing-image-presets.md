@@ -28,7 +28,7 @@ This section describes how to create, modify, and generally manage image presets
 >
 >Smart imaging works with your existing image presets and uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](/assets/using/imaging-faq.md) for more information.
 
-### Understanding Image Presets {#understanding-image-presets}
+## Understanding Image Presets {#understanding-image-presets}
 
 Like a macro, an Image Preset is a predefined collection of sizing and formatting commands saved under a name. To understand how Image Presets work, suppose your web site requires each product image to appear in different sizes, different formats, and compression rates for desktop and mobile delivery.
 
@@ -38,7 +38,7 @@ Images that are reduced in size when they are delivered dynamically can lose sha
 
 Administrators can create Image Presets. To create an image preset, you can start from scratch or you can start from an existing one and save it under a new name.
 
-### Managing Image Presets {#managing-image-presets}
+## Managing Image Presets {#managing-image-presets}
 
 You manage your image presets in AEM by tapping or clicking the AEM logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **Assets **&gt;** Image Presets**.
 

@@ -30,7 +30,7 @@ Here are certain key focus areas around which you discover and fix performance i
 
 While AEM is supported on a number of platforms, Adobe has found the greatest support for native tools on Linux and Windows, which contributes to optimum performance and ease of implementation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an AEM Assets deployment. As with any AEM deployment, you should implement TarMK wherever possible. While TarMK cannot scale beyond a single author instance, it is found to perform better than MongoMK. You can add TarMK offload instances to increase the workflow processing power of your AEM Assets deployment.
 
-#### Temp Folder {#temp-folder}
+### Temp Folder {#temp-folder}
 
 To improve asset upload times, use high performance storage for the Java temp directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example in Amazon EC2, an ["ephemeral drive"](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temp folder.
 
@@ -238,7 +238,7 @@ Importing a large amount of metadata can result in resource-intensive XMP writeb
 
 When replicating assets to a large number of publish instances, for example in a Sites implementation, Adobe recommends you use chain replication. In this case, the author instance replicates to a single publish instance which in turn replicates to the other publish instances, freeing up the author instance.
 
-#### Configure chain replication {#configure-chain-replication}
+### Configure chain replication {#configure-chain-replication}
 
 1. Choose which publish instance you want to use for chaining the replications to
 1. On that publish instance add replication agents that point to the other publish instances

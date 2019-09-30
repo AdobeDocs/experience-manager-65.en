@@ -15,7 +15,7 @@ docset: aem65
 
 # Using Comments{#using-comments}
 
-### Introduction {#introduction}
+## Introduction {#introduction}
 
 The comments feature is used to allow signed-in site visitors (members) to share their opinions and knowledge regarding content on the site. This feature is often already present in other features, but may be added to any website.
 
@@ -54,36 +54,46 @@ Select the placed `Comments` component to access and select the `Configure` icon
 
 #### Comments tab {#comments-tab}
 
-Under the **Comments **tab, specify how comments are entered by visitors.
+Under the **Comments** tab, specify how comments are entered by visitors.
 
 * **Allow replies** 
+
   If checked, allows members to reply to existing comments. Default is deselected.
 
 * **Comments Per Page** 
+
   Limits the number of comments shown per page and the number of replies shown. Default is 10.
 
 * **Allow File Uploads** 
+
   If checked, the option to upload a file is presented with the text entry box. Default is deselected.
 
 * **Max File Size** 
+
   Relevant only if Allow File Uploads is checked. This value limits the uploaded file size. Default limit is 10 MB.
 
 * **Max Message Length** 
+
   Maximum number of characters that may be entered into the text box. Default is 4096 characters.
 
 * **Allowed File Types** 
+
   Relevant only if Allow File Uploads is checked. A comma-separated list of file name extensions with the "dot" separator. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified are not allowed. Default is none specified such that** **all file types are allowed.
 
 * **Rich Text Editor** 
+
   If checked, comments are entered with markup. Default is deselected.
 
 * **Allow Voting** 
+
   If checked, the option to vote up or down is presented with the text entry box. Default is deselected.
 
 * **Allow Following** 
+
   If checked, allow members to follow comments. Default is deselected.
 
 * **Display Badges** 
+
   If checked, allow earned and awarded badges to be displayed. Default is deselected.
 
 #### User Moderation tab {#user-moderation-tab}
@@ -94,27 +104,35 @@ Under the **User Moderation **tab, specify how the posted comments are managed. 
   If checked, comments must be approved before they appear on a publish site. Default is deselected.
 
 * **Delete Comments** 
+
   If checked, the member who posted the comment is provided the ability to delete it. Default is deselected.
 
 * **Deny Comments** 
+
   If checked, allow moderators to deny comments. Default is deselected.
 
 * **Close / Reopen Comments** 
+
   If checked, allow moderators to close and reopen comments. Default is deselected.
 
 * **Flag Comments** 
+
   If checked, allow members to flag comments as inappropriate. Default is deselected.
 
 * **Flag Reason List** 
+
   If checked, allow members to choose, from a drop-down list, their reason for flagging a comment as inappropriate. Default is deselected.
 
 * **Custom Flag Reason** 
+
   If checked, allow members to enter their own reason for flagging a comment as inappropriate. Default is deselected.
 
 * **Moderation Threshold** 
+
   Enter the number of times a comment has to be flagged by the members before moderators are notified. Default is one time (1).
 
 * **Flagging Limit** 
+
   Enter the number of times a comment has to be flagged before it is hidden from public view. This number must be greater than or equal to the **Moderation Threshold**. Default is 5.
 
 #### Sort Settings tab {#sort-settings-tab}
@@ -122,9 +140,11 @@ Under the **User Moderation **tab, specify how the posted comments are managed. 
 Under the **Sort Settings **tab, specify how the posted comments are sorted when displayed.
 
 * **Sort Field** 
+
   Pull down to select one of `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, or `Most Liked`.
 
 * **Sort Order** 
+
   Pull down to select one of `Ascending` or `Descending`.
 
 ### Changing to a Custom Comment Type {#changing-to-a-custom-comment-type}
@@ -138,14 +158,19 @@ Under the **Resource Types **tab, specify the custom resourceType for new instan
 ![](assets/chlimage_1-144.png)
 
 * **Comment Resource Type** 
-  Navigate to the resourceType of an extended `comment`component (single comment) in /apps. For example, `/apps/social/commons/components/hbs/comments/comment`  
+
+  Navigate to the resourceType of an extended `comment`component (single comment) in /apps. For example, `/apps/social/commons/components/hbs/comments/comment` 
+
   This resource identifies the resourceType of the UGC created when a visitor posts a comment.
 
 * **Voting Resource Type** 
+
   Navigate to the resourceType of an extended `voting`component in /apps. For example, `/apps/social/components/hbs/voting`  
+
   This resource identifies the resource type of the UGC created when a visitor posts a vote.
 
 * **Comment System Resource Type** 
+
   Navigate to the resourceType of an extended `comments`component (Comment System) in /apps. Leave blank unless the page template [dynamically includes](/communities/using/scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](/communities/using/handlebars-helpers.md#include).
 
 ### Site Visitor Experience {#site-visitor-experience}

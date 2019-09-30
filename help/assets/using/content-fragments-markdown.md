@@ -31,7 +31,7 @@ You can define:
 * [Code Blocks](#code-blocks)
 * [Backslash Escapes](#backslash-escapes)
 
-### Heading Notation {#heading-notation}
+## Heading Notation {#heading-notation}
 
 To create a header by placing a hash tag (#) in front of the heading. One hash tag (#) is used for an H1, two hash tags (##) for a H2 etc. You can use up to 6 hash tags. For example:
 

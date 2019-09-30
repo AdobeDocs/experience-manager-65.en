@@ -963,7 +963,7 @@ To unpublish videos to remove them from YouTube:
 
 When you upload a new video to a folder that has video encoding applied or you publish your video to Youtube, you can monitor how your video encoding/Youtube publishing is progressing (or failing) in a number of ways. Actual YouTube publishing progress is only available by way of the logs but whether it fails or succeeds is listed in additional ways described in the following procedure. In addition, you may receive email notifications when a YouTube publish workflow or video encoding completes or is interrupted.
 
-#### Monitoring progress {#monitoring-progress}
+### Monitoring progress {#monitoring-progress}
 
 To monitor progress (including failed encoding/YouTube publish):
 
@@ -991,12 +991,9 @@ To monitor progress (including failed encoding/YouTube publish):
    >
    >It may take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **retries**, **retry delay**, and **timeout** from [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), for example:
    >
-   >    
-   >    
    >    * Apache Sling Job Queue Configuration
    >    * Adobe Granite Workflow External Process Job Handler
    >    * Granite Workflow Timeout Queue
-   >    
    >    
    >You may adjust the **retries**, **retry delay**, and **timeout** properties in these configurations.
 
@@ -1267,7 +1264,7 @@ You create a chapter list for your video in much the same way that you create ca
   
 You can use the following sample as an example of the format you use to create a WebVTT file with chapter navigation:
 
-#### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
+### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT 

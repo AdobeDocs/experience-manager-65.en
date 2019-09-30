@@ -153,7 +153,7 @@ When a calendar event is selected, the calendar event details, description and c
 
 Other abilities depend on whether the site visitor is a moderator, administrator, community member, privileged member or anonymous.
 
-#### Moderators and Administrators {#moderators-and-administrators}
+### Moderators and Administrators {#moderators-and-administrators}
 
 When the signed in user has moderator or administrator privileges, they are able to perform [moderation tasks](../../communities/using/moderate-ugc.md) (as permitted by the configuration of the component) on all calendar events and comments posted to an event.
 

@@ -15,10 +15,10 @@ docset: aem65
 
 # Add Clientlibs{#add-clientlibs}
 
-| ** [⇐ Develop Sandbox Application](/communities/using/develop-app.md)** |** [Develop Sandbox Content ⇒](/communities/using/develop-content.md)** |
+| **[⇐ Develop Sandbox Application](/communities/using/develop-app.md)** |**[Develop Sandbox Content ⇒](/communities/using/develop-content.md)** |
 |---|---|
 
-### Add a ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## Add a ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
 Create a ClientLibraryFolder named `clientlibs`which will contain the JS and CSS used to render the pages of your site.
 

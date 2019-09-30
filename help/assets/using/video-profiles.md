@@ -19,10 +19,12 @@ Dynamic Media already comes with a predefined Adaptive Video Encoding profile. T
 
 The following are other factors that determine the quality of your videos:
 
-* **Resolution of the uploaded master video  
-  **If the MP4 video was recorded at a lower resolution, such as 240p or 360p, it cannot be streamed in high definition.
-* **Video player size  
-  **By default, the "Width" in the Adaptive Video Encoding profile is set to “Auto.” Again, during playback, the best quaility is used based on the size of the player.
+* **Resolution of the uploaded master video**  
+  
+  If the MP4 video was recorded at a lower resolution, such as 240p or 360p, it cannot be streamed in high definition.
+* **Video player size**
+
+  By default, the "Width" in the Adaptive Video Encoding profile is set to “Auto.” Again, during playback, the best quaility is used based on the size of the player.
 
 See also [Best Practices for Video Encoding](../../assets/using/video.md#best-practices-for-encoding-videos).
 
@@ -345,7 +347,7 @@ When you remove a video profile from a folder, any subfolders automatically inhe
 
 You can remove a video profile from a folder from within the **Tools** menu or if you are in the folder, from the **Folder Settings**. This section describes how to remove video profiles from folders both ways.
 
-#### Removing video profiles from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
+### Removing video profiles from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **Tools **&gt; **Assets **&gt; **Video Profiles.**
 1. Select the video profile that you want to remove from a folder or multiple folders.
@@ -353,7 +355,7 @@ You can remove a video profile from a folder from within the **Tools** menu or i
 
    You can confirm that the video profile is no longer applied to a folder because the name no longer appears below the folder name.
 
-#### Removing video profiles from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
+### Removing video profiles from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tap or click the AEM logo and navigate to **Assets **and then to the folder that you want to remove a video profile from.
 1. On the folder, tap or click the check mark to select it and then tap or click **Properties**.

@@ -98,8 +98,6 @@ Using the When rule type, you can evaluate a condition on a form object and perf
 
 In plain words, a typical When rule is structured as follows:
 
-____________________________________________
-
 `When on Object A:`
 
 `(Condition 1 AND Condition 2 OR Condition 3) is TRUE;`
@@ -110,7 +108,7 @@ Action 2 on Object B;
 AND  
 Action 3 on Object C;
 
-_____________________________________________
+_
 
 When you have a multi-value component, such as radio buttons or list, while creating a rule for that component the options are automatically retrieved and made available to the rule creator. You need not type the option values again.
 
@@ -180,7 +178,7 @@ The **[!UICONTROL Set Value of]** rule type allows you to set the value of a for
 
 Note that the Set Value Of rule type is not available for all form objects, such as panels and toolbar buttons. A standard Set Value Of rule has the following structure:
 
-____________________________________________
+
 
 Set value of Object A to:
 
@@ -194,7 +192,7 @@ When (optional):
 
 (Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-____________________________________________
+
 
 The following example takes the value in `dependentid` field as input and sets the value of the `Relation` field to the output of the `Relation` argument of the `getDependent` form data model service.
 
@@ -212,7 +210,7 @@ Using the **Show** rule type, you can write a rule to show or hide a form object
 
 A typical Show rule is structured as follows:
 
-____________________________________________
+
 
 `Show Object A;`
 
@@ -224,7 +222,7 @@ ____________________________________________
 
 `Hide Object A;`
 
-____________________________________________
+
 
 ### Hide {#hide}
 
@@ -232,7 +230,7 @@ Similar to the Show rule type, you can use the **Hide** rule type to show or hid
 
 A typical Hide rule is structured as follows:
 
-____________________________________________
+
 
 `Hide Object A;`
 
@@ -244,7 +242,7 @@ ____________________________________________
 
 `Show Object A;`
 
-____________________________________________
+
 
 ### Enable {#enable}
 
@@ -252,7 +250,7 @@ The **Enable** rule type lets you enable or disable a form object based on wheth
 
 A typical Enable rule is structured as follows:
 
-____________________________________________
+
 
 `Enable Object A;`
 
@@ -264,7 +262,7 @@ ____________________________________________
 
 `Disable Object A;`
 
-____________________________________________
+
 
 ### Disable {#disable}
 
@@ -272,7 +270,7 @@ Similar to the Enable rule type, the **Disable** rule type allows you to enable 
 
 A typical Disable rule is structured as follows:
 
-____________________________________________
+
 
 `Disable Object A;`
 
@@ -284,23 +282,17 @@ ____________________________________________
 
 `Enable Object A;`
 
-____________________________________________
-
 ### Validate {#validate}
 
 The **Validate** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name doesn't contain special characters or numbers.
 
 A typical Validate rule is structured as follows:
 
-____________________________________________
-
 `Validate Object A;`
 
 `Using:`
 
 `(Expression 1 AND Expression 2 AND Expression 3) is TRUE;`
-
-____________________________________________
 
 >[!NOTE]
 >

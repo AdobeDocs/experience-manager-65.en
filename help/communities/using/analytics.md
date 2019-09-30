@@ -290,8 +290,8 @@ The Analytic cloud service and framework are now complete. The Mappings will be 
 To add the Analytics cloud service while [creating a new community site](../../communities/using/sites-console.md):
 
 * In step 3, under the [ANALYTICS tab](../../communities/using/sites-console.md#analytics):  
-  - select the **Enable Analytics** check box.  
-  - select the framework from the drop-down box.
+  * select the **Enable Analytics** check box.  
+  * select the framework from the drop-down box.
 
 * Optionally, return to the Analytics framework configuration to adjust the variable mappings.
 
@@ -303,8 +303,8 @@ To add the Analytics cloud service to an [existing community site](../../communi
 * Select the community site's Edit Site icon.
 * Select the SETTINGS.
 * In the Analytics section:  
-  - Select the **Enable Analytics** check box.  
-  - Choose the framework from the drop-down box.
+  * Select the **Enable Analytics** check box.  
+  * Choose the framework from the drop-down box.
 
 * Optionally, return to the Analytics framework configuration to adjust the variable mappings.
 
