@@ -12,7 +12,7 @@ discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 ---
 
-# 360/VR Video{#vr-video}
+# 360/VR Video {#vr-video}
 
 360-degree videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.
 
@@ -24,7 +24,7 @@ Spatial audio is not currently supported; if audio is mixed in stereo, the balan
 
 See also [Managing Viewer Presets](../../assets/using/managing-viewer-presets.md).
 
-### 360 Video in action {#video-in-action}
+## 360 Video in action {#video-in-action}
 
 Click the following screenshot to watch the 360 video in full.
 
@@ -34,7 +34,7 @@ During playback, drag the mouse pointer to a new location to change the viewing 
 
 360 Video frame
 
-### 360/VR Video and Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
+## 360/VR Video and Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
 You can use Adobe Premier Pro to view and edit 360/VR footage. For example, you can place logos and text properly in a scene and apply effects and transitions that are designed specifically for equirectangular media.
 
@@ -82,8 +82,8 @@ By default, AEM detects video as "360" if its aspect ratio (width/height) is 2.0
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-    * **Property type**: Double
-    * **Value**: floating-point aspect ratio, default 2.0.
+  * **Property type**: Double
+  * **Value**: floating-point aspect ratio, default 2.0.
 
 After you set this property, it takes effect immediately on both existing videos and newly uploaded videos.
 
@@ -124,9 +124,9 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
 
    A 360 video screenshot
 
-   `From the Viewers list, tap **Video360VR**.`
+   From the Viewers list, tap **Video360VR**.
 
-   `Virtual Reality (VR) video is immersive video content that is accessed through the use of virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360 degree video cameras.`
+   Virtual Reality (VR) video is immersive video content that is accessed through the use of virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360 degree video cameras.
 
    ![](assets/6_5_360video-preview-video360vr.png)
 
@@ -139,7 +139,6 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
 You need to publish the 360 Video in order to use it. Publishing a 360 Video activates the URL and Embed Code. It also publishes the 360 Video to the Dynamic Media cloud which is integrated with a CDN for scalable and performant delivery.
 
 See [Publishing Dynamic Media Assets](/assets/using/publishing-dynamicmedia-assets.md) for details on how to publish 360 Video.
-
 See also [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/assets/using/embed-code.html).  
 See also [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/assets/using/linking-urls-to-yourwebapplication.html). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.  
 See also [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/assets/using/adding-dynamic-media-assets-to-pages.html)

@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# AEM to Creative Cloud folder sharing best practices{#aem-to-creative-cloud-folder-sharing-best-practices}
+# AEM to Creative Cloud folder sharing best practices {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
@@ -51,8 +51,8 @@ The integration includes the following elements:
 * **One-way propagation of changes:** File changes are propagated in one direction only - from the system (AEM or Creative Cloud Assets), where the asset was originally created (uploaded). The integration does not provide a fully automated, two-way synchronization between the two systems.
 * **Versioning:**
 
-    * AEM only creates versions of an asset on updates if the file originated in AEM and is updated there.
-    * Creative Cloud Assets provides its own [versioning feature](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) that is targeted at Work in Progress updates (basically, stores updates for up to 10 days)
+  * AEM only creates versions of an asset on updates if the file originated in AEM and is updated there.
+  * Creative Cloud Assets provides its own [versioning feature](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) that is targeted at Work in Progress updates (basically, stores updates for up to 10 days)
 
 * **Space limitations:** Sizes and volumes of files exchanged is limited by the specific [Creative Cloud Assets quota](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) for creative users (depends on subscription level) and a limitation of 5 GB maximum file size. Space is additionally limited by the asset quota that the organization has in Adobe Marketing Cloud Assets core service.
 

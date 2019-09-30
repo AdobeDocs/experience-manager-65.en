@@ -27,12 +27,12 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 
 ## Collaboration need of creatives, marketers, and DAM users {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
-   <td style="text-align: center;">Requirements<br /> </td> 
-   <td style="text-align: center;">Use case<br /> </td> 
-   <td style="text-align: center;">Involved surfaces<br /> </td> 
+   <th>Requirements</th> 
+   <th>Use case</th> 
+   <th>Involved surfaces</th> 
   </tr> 
   <tr> 
    <td>Simplify experience for creatives on desktop</td> 
@@ -54,12 +54,12 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 
 ## Adobe offerings to support the collaboration need {#adobe-offerings-to-support-the-collaboration-need}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
-   <td style="text-align: center;">Value proposition for the involved personas</td> 
-   <td style="text-align: center;">Adobe offering</td> 
-   <td style="text-align: center;">Involved surfaces</td> 
+   <th>Value proposition for the involved personas</th> 
+   <th>Adobe offering</th> 
+   <th>Involved surfaces</th> 
   </tr> 
   <tr> 
    <td>Creative users discover assets from AEM, open and use them, edit and upload changes to AEM, as well as upload new files into AEM, without leaving Creative Cloud apps.</td> 
@@ -87,91 +87,91 @@ Deciding on which capability to use
 
 ### Mapping of use cases and Adobe solutions {#mapping-of-use-cases-and-adobe-solutions}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
-   <th style="text-align: center;"><strong>Use Case</strong></th> 
-   <th style="text-align: center;" width="127"><strong>Adobe Asset Link</strong></th> 
-   <th style="text-align: center;" width="167"><strong>AEM desktop app</strong></th> 
-   <th style="text-align: center;" width="201"><strong>Remarks / Other Solutions</strong></th> 
+   <th><strong>Use Case</strong></th> 
+   <th><strong>Adobe Asset Link</strong></th> 
+   <th><strong>AEM desktop app</strong></th> 
+   <th><strong>Remarks / Other Solutions</strong></th> 
   </tr> 
   <tr> 
-   <td style="text-align: left;">Discover - browse AEM folders</td> 
-   <td style="text-align: left;">Yes</td> 
-   <td style="text-align: left;">AEM Web UI + desktop actions</td> 
-   <td style="text-align: left;">When browsing the network share, turn off the thumbnails to avoid downloading binary files of assets.<br /> </td> 
+   <td>Discover - browse AEM folders</td> 
+   <td>Yes</td> 
+   <td>AEM Web UI + desktop actions</td> 
+   <td>When browsing the network share, turn off the thumbnails to avoid downloading binary files of assets.<br /> </td> 
   </tr> 
   <tr> 
-   <td style="text-align: left;">Discover - access AEM collections</td> 
-   <td style="text-align: left;">Yes</td> 
-   <td style="text-align: left;">AEM Web UI + desktop actions</td> 
-   <td style="text-align: left;"> </td> 
+   <td>Discover - access AEM collections</td> 
+   <td>Yes</td> 
+   <td>AEM Web UI + desktop actions</td> 
+   <td> </td> 
   </tr> 
   <tr> 
-   <td style="text-align: left;">Discover - search for assets from AEM</td> 
-   <td style="text-align: left;">Yes</td> 
-   <td style="text-align: left;">AEM Web UI + desktop actions</td> 
-   <td style="text-align: left;"> </td> 
+   <td>Discover - search for assets from AEM</td> 
+   <td>Yes</td> 
+   <td>AEM Web UI + desktop actions</td> 
+   <td> </td> 
   </tr> 
   <tr> 
-   <td style="text-align: left;">Use - open asset</td> 
-   <td style="text-align: left;">Yes</td> 
-   <td style="text-align: left;">Yes - for any app</td> 
-   <td style="text-align: left;"><a href="../../assets/using/managing-assets-touch-ui.md#previewing-assets">Open from Web UI</a> or from Finder</td> 
+   <td>Use - open asset</td> 
+   <td>Yes</td> 
+   <td>Yes - for any app</td> 
+   <td><a href="../../assets/using/managing-assets-touch-ui.md#previewing-assets">Open from Web UI</a> or from Finder</td> 
   </tr> 
   <tr> 
-   <td height="21" style="text-align: left;">Use - place asset from AEM into a document</td> 
-   <td style="text-align: left;">Yes - embedding</td> 
-   <td style="text-align: left;">Yes - linking or embedding</td> 
-   <td style="text-align: left;">AEM desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths.</td> 
+   <td>Use - place asset from AEM into a document</td> 
+   <td>Yes - embedding</td> 
+   <td>Yes - linking or embedding</td> 
+   <td>AEM desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths.</td> 
   </tr> 
   <tr> 
-   <td height="43" style="text-align: left;">Edit - open for editing</td> 
-   <td style="text-align: left;">Yes - Check-out action</td> 
-   <td style="text-align: center;"><p style="text-align: left;">Yes - Open action (in the network share)</p> </td> 
-   <td style="text-align: left;" width="201"><a href="https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html">Check-out in AAL</a> saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. </td> 
+   <td>Edit - open for editing</td> 
+   <td>Yes - Check-out action</td> 
+   <td ><p>Yes - Open action (in the network share)</p> </td> 
+   <td><a href="https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html">Check-out in AAL</a> saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. </td> 
   </tr> 
   <tr> 
-   <td height="21" style="text-align: left;">Edit - work in progress outside AEM</td> 
-   <td style="text-align: left;">Yes - Asset available in user's Creative Cloud storage account synced to desktop.</td> 
-   <td style="text-align: left;">Possible - in version 1.10 there is an option to turn off automated upload of local changes to AEM.</td> 
-   <td style="text-align: left;"> </td> 
+   <td>Edit - work in progress outside AEM</td> 
+   <td>Yes - Asset available in user's Creative Cloud storage account synced to desktop.</td> 
+   <td>Possible - in version 1.10 there is an option to turn off automated upload of local changes to AEM.</td> 
+   <td> </td> 
   </tr> 
   <tr> 
-   <td height="43" style="text-align: left;">Edit - upload changes</td> 
-   <td style="text-align: left;">Yes - <a href="https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html">Check-in action</a> with optional comment</td> 
-   <td style="text-align: left;">Yes</td> 
-   <td width="201"><p style="text-align: left;"> </p> </td> 
+   <td>Edit - upload changes</td> 
+   <td>Yes - <a href="https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html">Check-in action</a> with optional comment</td> 
+   <td>Yes</td> 
+   <td><p style="text-align: left;"> </p> </td> 
   </tr> 
   <tr> 
-   <td height="21" style="text-align: left;">Upload - single file</td> 
-   <td style="text-align: left;">Yes - uploads current active document</td> 
-   <td style="text-align: left;">Yes</td> 
-   <td style="text-align: left;" width="201"><a href="../../assets/using/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></td> 
+   <td>Upload - single file</td> 
+   <td>Yes - uploads current active document</td> 
+   <td>Yes</td> 
+   <td><a href="../../assets/using/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></td> 
   </tr> 
   <tr> 
-   <td height="64" style="text-align: left;">Upload - multiple files / hierarchical folder structures</td> 
-   <td style="text-align: left;">No</td> 
-   <td style="text-align: left;">Yes</td> 
-   <td width="201"><p style="text-align: left;"><a href="../../assets/using/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></p> <p style="text-align: left;">Custom script / tool </p> </td> 
+   <td>Upload - multiple files / hierarchical folder structures</td> 
+   <td>No</td> 
+   <td>Yes</td> 
+   <td><a href="../../assets/using/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></p> <p style="text-align: left;">Custom script / tool </p> </td> 
   </tr> 
   <tr> 
-   <td height="21" style="text-align: left;">Misc - user and login</td> 
-   <td style="text-align: left;">Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO)</td> 
-   <td style="text-align: left;">AEM user / login</td> 
-   <td style="text-align: left;">Users of both solutions count against the AEM user quota.</td> 
+   <td>Misc - user and login</td> 
+   <td >Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO)</td> 
+   <td>AEM user / login</td> 
+   <td >Users of both solutions count against the AEM user quota.</td> 
   </tr> 
   <tr> 
-   <td height="21" style="text-align: left;">Misc - network and access</td> 
-   <td style="text-align: left;">Requires access from user's desktop to AEM deployment over network</td> 
-   <td style="text-align: left;">Requires access from user's desktop to AEM deployment over network<br /> <br /> </td> 
-   <td style="text-align: left;">Adobe Asset Link does not share network proxy environment.<br /> </td> 
+   <td>Misc - network and access</td> 
+   <td>Requires access from user's desktop to AEM deployment over network</td> 
+   <td>Requires access from user's desktop to AEM deployment over network<br /> <br /> </td> 
+   <td>Adobe Asset Link does not share network proxy environment.<br /> </td> 
   </tr> 
   <tr> 
-   <td height="21" style="text-align: left;">Misc - Migrate large number of assets</td> 
-   <td style="text-align: left;">No<br /> <br /> </td> 
-   <td style="text-align: left;">No<br /> <br /> </td> 
-   <td style="text-align: left;"><a href="/assets/using/assets-migration-guide.md">Migration Guide</a></td> 
+   <td>Misc - Migrate large number of assets</td> 
+   <td>No<br /> <br /> </td> 
+   <td>No<br /> <br /> </td> 
+   <td><a href="/assets/using/assets-migration-guide.md">Migration Guide</a></td> 
   </tr> 
  </tbody> 
 </table>
@@ -233,7 +233,7 @@ Assets from Adobe Stock licensed and saved into AEM become available to the broa
 
 To design an efficient workflow between creative and marketing/line-of-business (LOB) teams and choose the best support capabilities, it is important to understand when and why assets are stored in DAM.
 
-#### Why assets are stored in DAM {#why-assets-are-stored-in-dam}
+### Why assets are stored in DAM {#why-assets-are-stored-in-dam}
 
 Storing assets in DAM makes them easily accessible and findable. It ensures that the assets can be leveraged by numerous users across the organization or ecosystem, which includes partners, customers, and so on.
 

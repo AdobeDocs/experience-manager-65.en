@@ -110,20 +110,19 @@ View and access metadata and license references of saved assets
 
 ## Known limitations {#known-limitations}
 
-<details> 
- <summary>Editorial image warning is not displayed</summary> 
- <p>When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.<br /> </p> 
-</details>
+<!--These next 3 sections used to be accordions until converted to straight Markdown. When accordions are enabled, revert-->
 
-<details> 
- <summary>Wrong license type is displayed</summary> 
- <p>It is possible that an incorrect license type is displayed in AEM for an asset. Users can log into the Adobe Stock website to see the license type.</p> 
-</details>
+### Editorial image warning is not displayed 
 
-<details> 
- <summary>Reference fields and metadata are not synced</summary> 
- <p>When a user updates a license reference field, the license reference information is updated in AEM but not on the Adobe Stock website. Similarly, if the user updates the reference fields on the Adobe Stock website, the updates are not synchronized in AEM.</p> 
-</details>
+When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.
+
+### Wrong license type is displayed
+
+It is possible that an incorrect license type is displayed in AEM for an asset. Users can log into the Adobe Stock website to see the license type.
+
+ ### Reference fields and metadata are not synced
+
+When a user updates a license reference field, the license reference information is updated in AEM but not on the Adobe Stock website. Similarly, if the user updates the reference fields on the Adobe Stock website, the updates are not synchronized in AEM.
 
 ## Related resources {#related-resources}
 
