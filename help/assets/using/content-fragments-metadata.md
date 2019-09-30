@@ -15,7 +15,7 @@ docset: aem65
 
 # Metadata - Fragment Properties{#metadata-fragment-properties}
 
-### Editing Properties / Meta data {#editing-properties-meta-data}
+## Editing Properties / Meta data {#editing-properties-meta-data}
 
 You can view and edit the metadata (properties) for content fragments:
 

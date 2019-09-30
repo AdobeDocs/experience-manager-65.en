@@ -25,7 +25,7 @@ You can also add additional tabs to the AEM Assets admin panel.
 >
 >As of AEM 6.4, Classic UI is deprecated. For announcement, see [Deprecated and Removed Features](../../release-notes/deprecated-removed-features.md). You are encouraged to use Touch-enabled UI. For customizations, see [Search Facets](/assets/using/search-facets.md).
 
-### Overlaying {#overlaying}
+## Overlaying {#overlaying}
 
 To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the searchpanel configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`). 
 

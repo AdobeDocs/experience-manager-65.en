@@ -29,8 +29,6 @@ Currently, badges a community member earns or is assigned will appear along with
 * [leaderboards](../../communities/using/enabling-leaderboard.md)
 * [ideation](../../communities/using/ideation-feature.md)
 
-##
-
 In the author environment, to reach the Badges console
 
 * from global navigation : **Tools, Communities, Badges**

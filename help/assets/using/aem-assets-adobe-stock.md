@@ -120,7 +120,7 @@ When licensing an image, users cannot check if an image is Editorial Use Only. T
 
 It is possible that an incorrect license type is displayed in AEM for an asset. Users can log into the Adobe Stock website to see the license type.
 
- ### Reference fields and metadata are not synced
+### Reference fields and metadata are not synced
 
 When a user updates a license reference field, the license reference information is updated in AEM but not on the Adobe Stock website. Similarly, if the user updates the reference fields on the Adobe Stock website, the updates are not synchronized in AEM.
 

@@ -23,8 +23,6 @@ The article list all the formats that are supported by AEM Assets and the specif
 
 The following legend describes the level of support AEM Assets offers for a feature: 
 
-| 
-|
 | Support Level |Description |
 | x |Supported |
 | &#42; |Supported with add-on features |

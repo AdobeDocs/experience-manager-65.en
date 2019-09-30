@@ -31,7 +31,7 @@ This section describes how to create, edit, and manage viewer presets. You can a
 >
 >Be aware that editing any *predefined, out-of-the-box viewer presets* is not a supported scenario. If you attempt to edit an out-of-the-box viewer preset, you are prompted to save the viewer preset using a new name.
 
-### Keyboard accessibility for viewers {#keyboard-accessibility-for-viewers}
+## Keyboard accessibility for viewers {#keyboard-accessibility-for-viewers}
 
 All out-of-the-box viewers support keyboard accessibility.
 

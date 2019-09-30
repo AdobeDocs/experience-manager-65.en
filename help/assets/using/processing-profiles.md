@@ -35,7 +35,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 >
 >The same is true even when you move assets between two folders that have the same profile assigned to it.
 
-### Reprocessing assets in a folder after you have edited its processing profile {#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile}
+## Reprocessing assets in a folder after you have edited its processing profile {#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile}
 
 >[!NOTE]
 >

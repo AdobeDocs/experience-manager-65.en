@@ -25,7 +25,7 @@ See interactive images in action on the web page above by going to the following
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
-### Watch how interactive image banners are created {#watch-how-interactive-image-banners-are-created}
+## Watch how interactive image banners are created {#watch-how-interactive-image-banners-are-created}
 
 Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](http://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=http://s7d5.scene7.com/is/content/&emailurl=http://s7d5.scene7.com/s7/emailFriend&serverUrl=http://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=http://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner). You will also learn how to preview, edit, and deliver interactive image banners.
 

@@ -15,7 +15,7 @@ docset: aem65
 
 # Activity Streams Feature{#activity-streams-feature}
 
-### Introduction {#introduction}
+## Introduction {#introduction}
 
 The activities of a signed in community member, such as posting to a forum or blog, are collected into a stream which may be filtered and displayed in various ways through configuration of the `Activity Streams` component.
 

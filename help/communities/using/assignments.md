@@ -21,7 +21,7 @@ The Enablement Assignments component allows the currently signed-in community me
 
 From the [Getting Started with AEM Communities for Enablement](/communities/using/getting-started-enablement.md) tutorial, see a member's view of assignments and catalogs in the [Experience the Published Site](/communities/using/enablement-published-site.md) section.
 
-### Additional Information {#additional-information}
+## Additional Information {#additional-information}
 
 For more information, see the [Assignments Essentials](../../communities/using/essentials-assignments.md) page for developers.
 

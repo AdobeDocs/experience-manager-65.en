@@ -236,7 +236,7 @@ When a blog article is selected, the blog article and comments are displayed (if
 
 Other abilities depend on whether the site visitor is a moderator, administrator, community member, privileged member or anonymous.
 
-#### Working with Articles {#working-with-articles}
+### Working with Articles {#working-with-articles}
 
 When creating a new blog article, there is the choice to
 

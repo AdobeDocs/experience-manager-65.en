@@ -33,7 +33,7 @@ In this example, a user has tapped or clicked an image map and accessed the quic
 
 ![](assets/chlimage_1-193.png) 
 
-### Watch how carousel banners are created {#watch-how-carousel-banners-are-created}
+## Watch how carousel banners are created {#watch-how-carousel-banners-are-created}
 
 Watch a 10 minute and 33 second walkthrough on [how carousel banners are created](http://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=http://s7d5.scene7.com/is/content/&emailurl=http://s7d5.scene7.com/s7/emailFriend&serverUrl=http://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=http://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner). You will also learn how to preview, edit, and deliver carousel banners.
 

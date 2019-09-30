@@ -93,7 +93,7 @@ You can add new tabs or form items to the metadata schema form. The tabs and for
 
 1. To configure a component, select it and modify its properties in the** Settings **tab.
 
-#### Components within the Build Form tab {#components-within-the-build-form-tab}
+### Components within the Build Form tab {#components-within-the-build-form-tab}
 
 The **Build Form **tab lists form items that you use in your schema form. The **Settings **tab provides the attributes of each item that you select in the **Build Form **tab. The following table lists the form items available in the **Build Form **tab: 
 
@@ -214,9 +214,7 @@ To include any tab in the properties page in addition to the tab where the Conte
 
 ![](assets/chlimage_1-44.png) 
 
-##
-
-#### Specifying properties in JSON file {#specifying-properties-in-json-file}
+### Specifying properties in JSON file {#specifying-properties-in-json-file}
 
 Instead of specifying properties for the options in the **Settings** tab, you can define the options in a JSON file by specifying corresponding key-value pairs. Specify the path of the JSON file in the **JSON Path** field.
 
@@ -252,7 +250,7 @@ To delete a form, select a form and click the **Delete** icon.
 
 AEM Assets provides default forms for various MIME types out of the box. However, you can add custom forms for assets of various MIME types.
 
-#### Adding new forms for MIME types {#adding-new-forms-for-mime-types}
+### Adding new forms for MIME types {#adding-new-forms-for-mime-types}
 
 Create a new form under the appropriate form type. For example, to add a new template for the **image/png** subtype, create the form under the "image" forms. The title for the schema form is the subtype name. In this case, the title is "png.**"**
 

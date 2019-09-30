@@ -107,8 +107,6 @@ The following two methods work for assets and folders:
 
 **Tip**: To check the status of a few separate live copies, use the first method that is see the Properties page. To check statuses of many live copies, use the second method, that is, see the **[!UICONTROL Relationship Status]** page.
 
-##
-
 ### Information and status of a live copy {#statuslcasset}
 
 To check the information and statuses of a live copy asset or a folder, follow these steps.
