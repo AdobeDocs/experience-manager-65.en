@@ -1,8 +1,8 @@
 ---
 cloud: experience-cloud
-product: adobe
-archtype: end-user
-user-guide: null
+product: experience-manager
+audience: end-user
+user-guide: Adobe Experience Manager 6.5
 ---
 
 # Table of Contents {#table-of-contents}
