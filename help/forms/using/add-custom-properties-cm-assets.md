@@ -113,7 +113,7 @@ This scenario shows how you can add a custom property to all the asset types and
    Create a node for each of the properties (fields) for which you need to create a drop-down (here `geographicallocation`) of the type nt:unstructured. 
 1. Add the following properties to the node (here geographicallocation) and click **Save All**:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -149,7 +149,7 @@ This scenario shows how you can add a custom property to all the asset types and
     1. Enter name of the field as `item1,` retain type as nt:unstructured, and click **OK**.
     1. Add the following properties to the newly created node (here item1) and then click **Save All**:
 
-    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+    <table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -221,7 +221,7 @@ Using the following procedure, you can add a tab with a field to all your assets
     1. Click the new node you have created (here commontab). CRX displays the node's properties. 
     1. Add the following properties to the node (here commontab):
 
-    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+    <table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -265,7 +265,7 @@ Using the following procedure, you can add a tab with a field to all your assets
 
     1. Add the following property to the node (Here Column1) and then click **Save All**:
 
-    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+    <table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -343,7 +343,7 @@ Using the following procedure, you can add a tab with a field to all your assets
     1. Click the new node you have created (here mytab). CRX displays the node's properties. 
     1. Add the following two properties to the node (here customtab):
 
-    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+    <table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -460,7 +460,7 @@ To add a property to an asset type, complete the following steps:
 
     1. Add the following property to the node (Here Column1) and then click **Save All**.
 
-    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+    <table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -548,7 +548,7 @@ By default, the custom properties added to new tabs are visible only on the prop
 
 1. Add the following properties to the newly created node (here col4) and click **Save All**:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -616,7 +616,7 @@ Complete the following steps to display the custom property in the Correspondenc
     
     1. Add the following properties to the node and then click **Save All**.
 
-    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+    <table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -731,7 +731,7 @@ Complete the following steps to display the custom property in the Correspondenc
 
 1. (Optional) By default the new column appears as the last column in the UI. To make the column appear at a specific position, add the following property to the column node:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -790,7 +790,7 @@ To allow indexing of custom properties, complete the following steps:
     1. Click the new node you have created (here include0). CRX displays the node's properties. 
     1. Add the following property to the node (here include0):
 
-    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+    <table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -861,7 +861,7 @@ To allow indexing of custom properties, complete the following steps:
 
 1. In the newly created node, list, add the following property and click **Save All**:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -907,7 +907,7 @@ To allow indexing of custom properties, complete the following steps:
 
 1. In the newly created node, list, add the following property and click **Save All**:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -931,7 +931,7 @@ To show or hide the custom properties, complete the following steps:
 1. Under the custom property node, such as geographicallocation, create a new node with name "granite:rendercondition" of type "nt:unstructured."
 1. Add the following property to the node and click **Save All**:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -948,7 +948,7 @@ To show or hide the custom properties, complete the following steps:
 
 1. To hide this property on the asset creation page, add the following property to it and click **Save All**: 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 
@@ -965,7 +965,7 @@ To show or hide the custom properties, complete the following steps:
 
 1. To hide the custom property on the properties page of the assets, add the following property to it and click **Save All**:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 

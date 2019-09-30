@@ -31,7 +31,7 @@ The blog feature is comprised of two main components that are available by addin
 
 ### Blog {#blog}
 
-<table border="1" cellpadding="4" cellspacing="4" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td> 

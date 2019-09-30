@@ -21,7 +21,7 @@ The following section lists the Adobe Experience Manager (AEM) Screens Players w
 
 ## iOS Player {#ios-player}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>AEM Server Version</strong></td> 
@@ -52,7 +52,7 @@ aem-screens-player-ios-3.3.0.ipa.zip
 
 ## Windows10 Player {#windows-player}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>AEM Server Version</strong></td> 
@@ -97,7 +97,7 @@ aem-screens-player-android-3.3.0.apk.zip
 
 [Get File](assets/aem-screens-player-android-330apk.zip)
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>AEM Server Version</strong></td> 

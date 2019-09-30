@@ -48,7 +48,7 @@ Use these best practices when creating your own newsletter.
 
 ***/libs/mcm/campaign/components/campaign_newsletterpage***
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Best practice</strong></td> 
@@ -104,7 +104,7 @@ Use these best practices when creating your own newsletter.
 
 /libs/mcm/campaign/components/heading, /libs/mcm/campaign/components/textimage
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Best Practice</strong></td> 

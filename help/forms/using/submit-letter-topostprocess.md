@@ -76,7 +76,7 @@ To associate post processes with letters or interactive communications, you firs
 
 Saved letter instances can be manipulated further, such as retrieval of letter instances and deletion of letter instances, by using the following APIs defined in LetterInstanceService. 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Server-side API</strong></td> 

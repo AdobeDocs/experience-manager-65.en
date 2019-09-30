@@ -102,7 +102,7 @@ Porlet preferences can be configured at deployment time in the portal server or 
 
 The portlet can be configured with the following preferences:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>startPath</td> 
@@ -554,7 +554,7 @@ If your site has no strict rule for handling the locale information within the p
 
 Optional OSGi services can be implemented to customize various parts of the portlet. Each service corresponds to a Java interface. This interface can be implemented and deployed through a bundle into the portlet.
 
-<table border="1" cellpadding="1" cellspacing="0" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td>RequestTracker</td> 

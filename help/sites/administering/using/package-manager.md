@@ -160,7 +160,7 @@ You can define one or more filter definitions for a package. Use more than one f
 
 The following table describes these rules and provides examples:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none"> 
+<table>
  <tbody> 
   <tr> 
    <th> Rule type</th> 

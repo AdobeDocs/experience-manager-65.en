@@ -173,7 +173,7 @@ The upgrade procedure as outlined here should be tested on Dev and QA environmen
 
 Below are critical areas of any AEM implementation that should be covered by your test plan once the environment has been upgraded and the upgraded code base has been deployed.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Functional Test Area</strong></td> 

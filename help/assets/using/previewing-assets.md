@@ -4,7 +4,7 @@ seo-title: Previewing Assets
 description: Learn how to preview assets in dynamic media
 seo-description: Learn how to preview assets in dynamic media
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
-contentOwner: Alva Ware-Bevacqui
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
@@ -38,7 +38,7 @@ To preview assets:
 1. Under the **Title** column, click the title name (not the thumbnail image) of the asset you want to preview.
 1. Depending on the asset type you clicked, do any one of the following:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Asset type you clicked</strong><br /> </td> 

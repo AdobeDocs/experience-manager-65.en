@@ -353,7 +353,7 @@ For more information on AEM Forms app, see [AEM Forms app overview](/forms/using
 
 The following data patterns are not fully supported in Form set:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Pattern not fully supported in Form set</strong></td> 

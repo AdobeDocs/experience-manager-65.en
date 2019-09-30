@@ -44,7 +44,7 @@ Each rollout configuration uses a rollout trigger that causes the rollout to occ
 
 The following table lists the rollout configurations that are installed with AEM. The table includes the trigger and synchronization actions of each rollout configuration. If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Name</th> 
@@ -119,7 +119,7 @@ The following table lists the rollout configurations that are installed with AEM
 
 The following table lists the synchronization actions that are installed with AEM. If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](../../../sites/developing/using/extending-msm.md#creating-a-new-synchronization-action).
 
-<table border="1" cellpadding="1" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th scope="col" width="100">Action Name</th> 
@@ -273,7 +273,7 @@ The following table lists the synchronization actions for which you can specify 
 
 The following table describes the properties that you can configure:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Web Console property / OSGi property</th> 
@@ -334,7 +334,7 @@ When working with AEM there are several methods of managing the configuration se
 
 The following table lists the synchronization actions for which you can specify the reference update. The table provides the names of the services to configure using the Web Console and the PID for configuring using a repository node.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Web Console property / OSGi property</th> 

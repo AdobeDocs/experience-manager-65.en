@@ -225,7 +225,7 @@ You can use the configuration file with the following options:
 
 #### Bucket region options {#bucket-region-options}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>US Standard</td> 

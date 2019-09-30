@@ -105,7 +105,7 @@ For more information on the Interactive Communication authoring interface, see [
 
 1. Drag-and-drop the document fragments into the Interactive Communication. Following are the types of document fragments that you can use in the print channel of the Interactive Communication. 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Document Fragment Type</strong></td> 

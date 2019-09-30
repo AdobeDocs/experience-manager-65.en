@@ -13,11 +13,11 @@ docset: aem65
 
 ---
 
-# Metadata Schemata Reference{#metadata-schemata-reference}
+# Metadata Schemata Reference {#metadata-schemata-reference}
 
 The following reference includes information about a particular metadata schemata (in alphabetical order) as well as a list of properties and their definitions.
 
-### Dublin Core {#dublin-core}
+## Dublin Core {#dublin-core}
 
 Dublin Core metadata provides a standardized set of conventions for describing assets to make them easier to find. In AEM Assets, the Dublin Core describes digital assets including video, sound, images, and documents.
 
@@ -25,7 +25,7 @@ The simple Dublin Core Metadata Element Set (DCMES) contains 15 metadata element
 
 In addition to the DCMES, there are other metadata elements created by the Dublin Core Initiative. See the [Dublin Core Initiative](http://dublincore.org/) for more information.
 
-<table border="1" cellpadding="1" cellspacing="0" width="400"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Property</strong></td> 
@@ -94,7 +94,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
  </tbody>
 </table>
 
-### IPTC {#iptc}
+## IPTC {#iptc}
 
 The International Press Telecommunications Council (IPTC) is a consortium of news agencies around the world - one of its goals is to develop and maintain technical standards. The IPTC defined a set of photo metadata standards for images that is almost universally accepted among photographers. These metadata standards were part of the broader standard known as the IPTC Information Interchange Model (IIM) created in the 1990s.
 

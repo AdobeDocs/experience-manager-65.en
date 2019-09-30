@@ -263,7 +263,7 @@ In both the **Text** and **Table** components table functionality is available v
 
 The table specific functions are:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td><a href="#table-properties">Table Properties</a><br /> </td> 

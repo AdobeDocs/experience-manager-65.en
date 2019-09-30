@@ -97,7 +97,7 @@ You can add new tabs or form items to the metadata schema form. The tabs and for
 
 The **Build Form **tab lists form items that you use in your schema form. The **Settings **tab provides the attributes of each item that you select in the **Build Form **tab. The following table lists the form items available in the **Build Form **tab: 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td style="text-align: center;"><strong>Component Name</strong></td> 

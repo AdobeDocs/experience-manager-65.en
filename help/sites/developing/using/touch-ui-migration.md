@@ -27,7 +27,7 @@ If you have been using AEM with classic UI you will need to take action to migra
 
 When migrating you should be aware of the following (major) differences between the classic and touch UI:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Classic UI</td> 

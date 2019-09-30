@@ -53,7 +53,7 @@ This mapping of JSON elements with adaptive form components is as follows:
               }
 ```
 
-<table border="1" cellpadding="3" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th><strong>JSON element, properties, or attributes</strong></th> 
@@ -379,7 +379,7 @@ Use the aem:afproperties property to preconfigure adaptive form expressions or s
 
 You should be a member of the [forms-power-user group](/help/forms/using/forms-groups-privileges-tasks.md) to configure scripts or expressions for form object. The below table lists all the script events supported for an adaptive form component.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th scope="col" style="text-align: center;" valign="middle"><strong></strong>Component \ Event</th> 
@@ -629,7 +629,7 @@ Here is the sample JSON code for aforementioned examples.
 
 You can add the following restrictions to JSON Schema elements to limit the values acceptable to an adaptive form component: 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td width="21%"><p><strong> Schema property</strong></p> </td> 

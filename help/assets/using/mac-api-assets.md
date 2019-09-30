@@ -111,7 +111,7 @@ The Assets HTTP API includes the following features:
 
 **Prerequisites**
 
-* Go to *http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr*.
+* Go to `http://<Server>:<Port>/system/console/configMgr`.
 * Navigate to **Adobe Granite CSRF Filter**.
 * Make sure the property **Filter Methods** incudes: POST, PUT, DELETE.
 

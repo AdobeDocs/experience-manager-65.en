@@ -86,7 +86,7 @@ Before you begin to install and configure AEM Forms document services, ensure th
 
 If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system:
 
-<table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td width="25%"> 
@@ -202,7 +202,7 @@ After installing Acrobat, open Microsoft Word. On the **Acrobat **tab, click** C
 
 Set environment variables for 64-bit Java Development Kit, third-party applications, and Adobe Acrobat. The environment variables should contain the absolute path of the executable used to start the corresponding application, for example, the table below lists environment variables for a few applications:
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top"><p><strong>Application</strong></p> </td> 
@@ -422,7 +422,7 @@ A local user account is required to run the PDF Generator service. For steps to 
 
    Open the **General Configuration** tab and modify the value of the following fields for your environment:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Field</td> 
@@ -521,7 +521,7 @@ The Assembler service depends on the Reader Extensions service, Signature servic
 1. Log in to URL http://[server]:[port]&gt;/system/console/bundles as an administrator.
 1. Search the following service and ensure that the services are up and running:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Service Name</th> 

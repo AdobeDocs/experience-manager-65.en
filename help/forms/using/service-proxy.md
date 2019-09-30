@@ -42,7 +42,7 @@ HTML5 forms connect to the AEM servers to run server-sided scripts, web-services
 
 The scripts marked to run on the server are known as server-sided scripts. The following table lists all the parameters used in Server-sided scripts and Web Services.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="126"><p><strong>Parameter</strong></p> </td> 
@@ -87,7 +87,7 @@ The scripts marked to run on the server are known as server-sided scripts. The f
 
 On clicking the submit button, HTML5 forms send data to the server. The following table lists all the parameters that HTML5 forms send to server.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="319"><p><strong>Parameter</strong></p> </td> 

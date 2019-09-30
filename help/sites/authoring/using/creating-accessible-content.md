@@ -539,7 +539,7 @@ Wherever color is used to convey information, make sure that the information is 
 
 For example, make sure that information provided by color is also provided explicitly in text. The illustration below shows how color and text both indicate seating availability for a performance:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="254"><p><strong>Performance</strong></p> </td> 

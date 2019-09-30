@@ -128,7 +128,7 @@ You can now:
 
 AEM Forms can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers. The following are the major changes in [supported platforms](../../forms/using/AEM-forms-JEE-supported-platforms.md): 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td>Component</td> 

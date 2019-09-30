@@ -84,7 +84,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
     1. Add the following properties to the node (here downloadFlatPDF) and click **Save All**:
 
-    <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+    <table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 

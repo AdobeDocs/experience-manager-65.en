@@ -4,7 +4,7 @@ seo-title: Image Sets
 description: Learn how to work with image sets in dynamic media
 seo-description: Learn how to work with image sets in dynamic media
 uuid: ca2fd5b0-656e-4960-b10c-f0ec3d418760
-contentOwner: Alva Ware-Bevacqui
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Image Sets{#image-sets}
+# Image Sets {#image-sets}
 
 Image Sets give users an integrated viewing experience, where users can see different views of an item by clicking a thumbnail image. Image Sets let you present alternative views of an item and the viewer offers zooming tools for examining images closely.
 
@@ -84,7 +84,7 @@ Start by uploading the images for your Image Sets. Because users can zoom on ima
 
 You can upload images for Image Sets as you would [upload any other asset in Assets](../../assets/using/managing-assets-touch-ui.md#uploading-assets).
 
-#### Preparing Image Set assets for upload {#preparing-image-set-assets-for-upload}
+### Preparing Image Set assets for upload {#preparing-image-set-assets-for-upload}
 
 Before creating Image Sets, make sure that the images are the right size and format.
 
@@ -202,7 +202,6 @@ To edit Image Sets:
 
     * Hover over an Image Set asset, then tap **Edit** (pencil icon).
     * Hover over an Image Set asset, tap **Select** (checkmark icon), then tap **Edit** on the toolbar.
-    
     * Tap on an Image Set asset, then tap **Edit** (pencil icon) on the toolbar.
 
 1. To edit the images in the Image Set, do any of the following:
@@ -210,10 +209,8 @@ To edit Image Sets:
     * To reorder assets, drag an image to a new location (select the reorder icon to move items).
     * To sort items in ascending or descending order, click the column heading.
     * To add an asset or update an existing asset, click the **Add Asset**. Navigate to an asset, select it, then tap **Select** near the upper-right corner of the page. **Note**: If you delete the image that AEM uses for the thumbnail by replacing it with another image, the original asset still displays.  
-    
     * To delete an asset, select it and tap or click **Delete Asset**.
     * To apply a preset, near the upper-right corner of the page, tap **Preset**, then select a viewer preset.  
-    
     * To add or change a thumbnail, select the thumbnail icon next to the right of the asset. Navigate to the new thumbnail or swatch asset, select it, then tap **Select**.
     * To delete an entire Image Set, navigate to the Image Set, select it, and tap **Delete**.
 

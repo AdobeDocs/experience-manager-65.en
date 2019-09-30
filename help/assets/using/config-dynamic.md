@@ -4,7 +4,7 @@ seo-title: Configuring Dynamic Media - Hybrid mode
 description: Learn how to configure Dynamic Media - Hybrid mode.
 seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
-contentOwner: Alva Ware-Bevacqui
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
@@ -65,7 +65,7 @@ The configuration tasks that follow reference the following terms:
 
 You may choose to implement Dynamic Media only for imaging, only for video, or for both imaging and video. To determine the steps for configuring Dynamic Media for your specific scenario, please reference the following table. 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td width="20%"><strong>Scenario</strong></td> 
@@ -694,7 +694,7 @@ The filters provide a way for you to *exclude* assets from being replicated to t
 
 If you are using Dynamic Media for (1) imaging in production **or** (2) imaging and video, then you can use the default filters that we provide as-is. The following filters are active by default:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td> </td> 
@@ -812,7 +812,7 @@ To optionally customize asset filters for replication:
 
    Characters that you can use to filter for replication include the following:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Character to use</strong></td> 
@@ -870,7 +870,7 @@ To configure Dynamic Media Image Server settings:
    >
    >In most cases, there is no need to change the default values. However, if you do change the default values, you must restart the bundle for the changes to take affect.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -925,7 +925,7 @@ To configure Dynamic Media Image Server settings:
    | Cache Max Size |200000000 |Maximum size of response cache in bytes. |
    | Cache Max Entries |100000 |Maximum number of entries allowed in the cache. |
 
-#### Default Manifest settings {#default-manifest-settings}
+### Default Manifest settings {#default-manifest-settings}
 
 The default manifest lets you configure the defaults that are used to generate the Dynamic Media Delivery responses. You can fine tune quality (JPEG quality, resolution, resampling mode), caching (expiration), and prevent the rendering of images that are too large (defaultpix, defaultthumbpix, maxpix).
 
@@ -945,7 +945,7 @@ Be sure you click the **Access Control** tab (to the right of the Properties tab
 
 Table of Manifest settings and their default values:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -1012,7 +1012,7 @@ You can configure dynamic media color management and configure image presets usi
 
 Advanced use cases could use a manual configure** icc=** modifier to explicitly select an output color profile:
 
-* **icc **- [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html)
+* **icc** - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html)
 
 * **iccEmbed** - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
 
@@ -1052,7 +1052,7 @@ To configure the default color profiles:
 
    **Color Correction Properties Table**
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -1125,7 +1125,7 @@ To configure the default color profiles:
 
    The following color profiles are installed:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th><p>Name</p> </th> 
@@ -1313,7 +1313,7 @@ After you complete all the tasks above, activated Dynamic Media assets are serve
 
 See [Delivering Dynamic Media Assets](../../assets/using/delivering-dynamic-media-assets.md).
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>When you...</strong></td> 

@@ -134,7 +134,7 @@ The application is the adaptive form associated with the workflow. When an appli
 1. On your AEM author instance, go to ![](assets/tools-1.png) **> **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]**** and taps ****[!UICONTROL Create]****.
 1. In the Create Workflow Application window, provide inputs for the following fields, and taps **Create**. A new application is created and is listed in the Workflow Applications screen.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Field</td> 
@@ -216,7 +216,7 @@ An administrator (a member of fd-administrators group) can configure a network f
 1. On your AEM author instance, go to ![](assets/tools-1.png) **> **[!UICONTROL Forms]**&gt; Configure Watched Folder.** A list of already configured watched folders is displayed.
 1. Tap **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Field</td> 

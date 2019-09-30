@@ -44,7 +44,7 @@ Each segment has a **Boost** parameter that is used as a weighting factor; a hig
 
 The following logic containers are available out-of-the-box and allow you to construct the logic of your segment selection. They can be dragged from the sidekick to the editor:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td width="125"> AND Container<br /> </td> 
@@ -61,7 +61,7 @@ The following logic containers are available out-of-the-box and allow you to con
 
 The following segment traits are available out-of-the-box; they can be dragged from the sidekick to the editor:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td width="125"> IP Range<br /> </td> 

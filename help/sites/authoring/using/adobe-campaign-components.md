@@ -292,7 +292,7 @@ This section describes each component in detail.
 
 The following table describes the components that are available to display and modify Adobe Campaign profile data. Each component can be mapped to an Adobe Campaign profile field to display its value and update the field when the form is submitted. The different components can only be matched to fields of an appropriate data type.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="middle"><p><strong>Component</strong></p> </td> 

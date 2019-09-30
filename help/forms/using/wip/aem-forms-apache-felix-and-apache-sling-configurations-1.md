@@ -51,7 +51,7 @@ Assembler service depends on the Reader Extensions service, Signature service, F
 1. Open AEM Bundles Web Console as an administrator. The default URL is http://[server]:[port]&gt;/system/console/bundles. 
 1. Search the services/bundles listed below and ensure that these services are up and running:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Service<br /> </th> 

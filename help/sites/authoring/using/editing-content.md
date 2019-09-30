@@ -166,7 +166,7 @@ You can also add a new component to the page by dragging an asset from the [asse
 
 This is valid for the following asset types (some will be dependent on page/paragraph system):
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <th><strong>Asset Type</strong></th> 

@@ -32,7 +32,7 @@ This document lists the supported client and server platforms for AEM Forms on J
 
 Adobe recommends these configurations and provides full or restricted support as part of the standard software maintenance agreement:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Support Level</th> 
@@ -77,7 +77,7 @@ Adobe recommends these configurations and provides full or restricted support as
 
 Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is provided by the Java Development Kit (JDK) distribution. Adobe Experience Manager operates with the following versions of the Java Virtual Machines:
 
-<table border="0" cellpadding="0"> 
+<table>
  <tbody> 
   <tr> 
    <th><p><strong>Platform</strong></p> </th> 
@@ -117,7 +117,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 #### AEM persistence support {#aem-persistence-support}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><p><strong>Platform</strong></p> </td> 
@@ -170,7 +170,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 #### DATABASE support {#database-support}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><p><strong>Platform</strong></p> </td> 
@@ -209,7 +209,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 ### Database drivers {#database-drivers}
 
-<table border="0" cellpadding="0"> 
+<table>
  <tbody> 
   <tr> 
    <th>Database </th> 
@@ -236,7 +236,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 ### Application servers {#application-servers}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="25%"><p><strong> Platform</strong></p> </td> 
@@ -264,7 +264,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 #### Production environments {#production-environments}
 
-<table border="0" cellpadding="0" height="668" width="559"> 
+<table>
  <tbody> 
   <tr> 
    <th><p><strong> Platform</strong></p> </th> 
@@ -305,7 +305,7 @@ You can run AEM Forms on JEE on a physical machine or a virtual environment. How
 
 #### Development environments {#development-environments}
 
-<table border="1" cellpadding="0" cellspacing="0" width="99%"> 
+<table>
  <tbody> 
   <tr> 
    <th width="40%"><p><strong>Platform (Base Version)</strong></p> </th> 
@@ -345,7 +345,7 @@ In addition, consider the following points while choosing software for Adobe AEM
 
 ### LDAP servers (optional) {#ldap-servers-optional}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th valign="middle" width="52%"><p><strong>Product (Base Version)</strong></p> </th> 
@@ -376,7 +376,7 @@ In addition, consider the following points while choosing software for Adobe AEM
 
 ### Content managers and corresponding connectors {#content-managers-and-corresponding-connectors}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Product<br /> </strong></td> 
@@ -416,7 +416,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 
 ### Software support for PDF Generator {#software-support-for-pdf-generator}
 
-<table border="1" cellpadding="0" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th valign="middle" width="35%"><p><strong>Product</strong></p> </th> 
@@ -482,7 +482,7 @@ The following subsystems of AEM Forms are not [508](https://www.section508.gov/)
 
 ### Minimum hardware requirements {#minimum-hardware-requirements}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Platform</td> 
@@ -521,7 +521,7 @@ For additional reuirements see:
 
 ### Workbench {#workbench}
 
-<table border="1" cellpadding="0" cellspacing="0" width="89%"> 
+<table>
  <tbody> 
   <tr> 
    <th valign="middle" width="40%"><p><strong>Platform</strong></p> </th> 
@@ -566,7 +566,7 @@ For additional reuirements see:
 
 ### Adobe Acrobat and Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th valign="middle" width="40%"><p><strong>Acrobat and Adobe Reader (Base)</strong></p> </th> 
@@ -587,7 +587,7 @@ For additional reuirements see:
 
 #### Desktops {#desktops}
 
-<table border="0" cellpadding="0"> 
+<table>
  <tbody> 
   <tr> 
    <th><p><strong>Browser (Base)</strong></p> </th> 
@@ -646,7 +646,7 @@ For additional reuirements see:
 
 #### Mobile clients {#mobile-clients}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th valign="middle" width="40%"><p><strong>Browser (Base)</strong></p> </th> 
@@ -690,7 +690,7 @@ AEM Forms app is available on the following platforms:
 
 ### Adobe Flash Player {#adobe-flash-player}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th valign="middle" width="40%"><p><strong>Flash Player (Base)</strong></p> </th> 

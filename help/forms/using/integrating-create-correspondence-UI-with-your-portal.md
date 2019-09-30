@@ -52,7 +52,7 @@ The order of parameters in the table specifies the preference of parameters used
 
 ### Parameters for specifying the XML data source {#parameters-for-specifying-the-xml-data-source}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Name</strong></td> 
@@ -81,7 +81,7 @@ The order of parameters in the table specifies the preference of parameters used
 
 ### Other Parameters {#other-parameters}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Name</strong></td> 

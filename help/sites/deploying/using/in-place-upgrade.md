@@ -62,7 +62,7 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profile and flags listed in the following table:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Source Repository</strong></td> 

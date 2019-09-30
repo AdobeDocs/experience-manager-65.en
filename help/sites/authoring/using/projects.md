@@ -193,7 +193,7 @@ The different user roles are set in a Project template and are used for two prim
 
 All projects support the following default roles to let you administer security and control permissions:
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="160"><p><strong>Role</strong></p> </td> 

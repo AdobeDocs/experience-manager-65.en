@@ -117,7 +117,7 @@ The command line arguments for Imaging Transcoding Library can include the follo
 
 1. Download the Imaging Transcoding Library package and install it using the Package Manager.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="126"><p><strong>Package Version</strong></p> </td> 
@@ -132,7 +132,7 @@ The command line arguments for Imaging Transcoding Library can include the follo
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0" style="font-family: tahoma, arial, helvetica, sans-serif;"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="168"><p>TBD</p> </td> 

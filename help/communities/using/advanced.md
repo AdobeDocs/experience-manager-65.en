@@ -113,7 +113,7 @@ Instead of associating points with a badge image, it is only necessary to identi
 
 ![](assets/chlimage_1-141.png)
 
-<table border="2" cellpadding="4" cellspacing="2" width="90%"> 
+<table>
  <tbody>
   <tr>
    <th style="text-align: center;">Property</th> 

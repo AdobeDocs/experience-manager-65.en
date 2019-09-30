@@ -66,7 +66,7 @@ If TarMK is being used as both the node store and data store, then Revision Clea
 
 The below table shows the data store garbage collection type that needs to be used for all the supported data store deployments in AEM 6:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Node Store</strong><br /> </td> 

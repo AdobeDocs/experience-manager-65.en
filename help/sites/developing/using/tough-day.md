@@ -60,7 +60,7 @@ java -jar toughday2.jar --help_full
 
 In the table below, you can find the relevant help parameters.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Parameter</strong></td> 

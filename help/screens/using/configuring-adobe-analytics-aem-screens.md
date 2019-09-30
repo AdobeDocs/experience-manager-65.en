@@ -41,7 +41,7 @@ The following sequencing diagram explains the Adobe Analytics Integration with A
 
 The following table summarizes the standard data model for events. It lists all the fields sent to Adobe Analytics:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Section</strong></td> 

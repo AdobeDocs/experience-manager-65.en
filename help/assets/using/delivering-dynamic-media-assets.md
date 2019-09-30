@@ -22,9 +22,9 @@ With Dynamic Media you have several options:
 * If your website is hosted on AEM, then you want to add the dynamic media assets directly to your page. 
 * If your website is not on AEM, then you have the choice of either:
 
-    * Embedding your video or image on your website.
-    * Link URLs to your web application. Use linking when you want to deliver a video player as a pop-up or modal window.
-    * If your site is responsive, you can [deliver optimized images.](/assets/using/responsive-site.md)
+  * Embedding your video or image on your website.
+  * Link URLs to your web application. Use linking when you want to deliver a video player as a pop-up or modal window.
+  * If your site is responsive, you can [deliver optimized images.](/assets/using/responsive-site.md)
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ For more information, see the following topics:
 * I [nvalidating your CDN cached content](/assets/using/invalidate-cdn-cached-content.md)
 * [Using Rulesets to Transform URLs](/assets/using/using-rulesets-to-transform-urls.md)
 
-### HTTP/2 delivery of Dynamic Media assets {#http-delivery-of-dynamic-media-assets}
+## HTTP/2 delivery of Dynamic Media assets {#http-delivery-of-dynamic-media-assets}
 
 AEM now supports the delivery of all Dynamic Media content (images and video) over HTTP/2. That is, a published URL or embed code for the image or video is available to be integrated with any application that accepts a hosted asset. That published asset is then delivered by way of HTTP/2 protocol. This method of delivery improves the way browsers and servers communicate, allowing for better response and load times of all your Dynamic Media assets.
 

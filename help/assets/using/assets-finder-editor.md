@@ -95,7 +95,7 @@ The following actions are available:
 
 ![](assets/assetshare2.bmp)
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400">
+<table>
  <tbody> 
   <tr> 
    <td><strong>Action</strong></td> 

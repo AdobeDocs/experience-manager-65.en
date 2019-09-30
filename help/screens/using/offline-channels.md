@@ -39,7 +39,7 @@ The ***ContentSync*** uses update handlers to parse and collect all necessary pa
 * *path*: path to the resource
 * *[targetRootDirectory]*: target folder in the zip file
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Type</strong></td> 

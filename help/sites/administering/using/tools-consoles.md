@@ -30,7 +30,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
 >
 >As the cards in the UI provide details about the purpose of each option, this table simply provides quick reference as to the location of features in the tree.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Section</td> 
@@ -361,7 +361,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
 
 ## Tools - Classic UI {#tools-classic-ui}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th width="200">Page or Folder</th> 

@@ -392,7 +392,7 @@ Options for customizing state styles vary for different components.
 
 #### Property sheet {#property-sheet}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td style="text-align: center;"><strong>Property</strong></td> 

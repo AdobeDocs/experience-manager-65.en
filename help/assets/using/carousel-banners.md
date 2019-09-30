@@ -136,7 +136,7 @@ However, in complex cases, the quick view URL has different varying elements in 
 
 Consider the following examples of quick view URLs and their resulting hotspot or image map variables:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Single SKU, found in the query string.</td> 

@@ -55,7 +55,7 @@ List pane in edit mode
 
 The **Edit **dialog includes several tabs that provide configuration options described in the table below. Tap **OK **to save the configuration, when done.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Tab</th> 

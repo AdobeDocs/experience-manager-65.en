@@ -31,7 +31,7 @@ Available options when downloading assets from AEM Assets
 
 The following are the Export/Download options. Dynamic renditions are unique to Dynamic Media and let you generate renditions on-the-fly in addition to the asset you selected - that option is only available if you have Dynamic Media enabled.
 
-<table border="1" cellpadding="1" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td>Assets</td> 

@@ -30,7 +30,7 @@ Each Template will present you with a selection of components available for use.
 
 A template is a node of type cq:Template and has the following properties and child nodes:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name <br /> </strong></td> 
@@ -202,7 +202,7 @@ Consider a simple content structure as follows, where a design could apply to an
 
 The following table describes how AEM will choose a design.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Finding Design For<br /> </strong></td> 

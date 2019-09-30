@@ -23,7 +23,7 @@ docset: aem65
 
 Adobe provides two versions of the Commerce Integration Framework:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th><p> </p> </th> 

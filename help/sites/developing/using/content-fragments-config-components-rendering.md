@@ -61,7 +61,7 @@ For example:
 
 The OSGi configuration is:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Label</td> 
@@ -93,7 +93,7 @@ The OSGi configuration is:
 
 For some functionality (e.g. to render only a paragraph range) you will have to adhere to some conventions:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Property Name</td> 

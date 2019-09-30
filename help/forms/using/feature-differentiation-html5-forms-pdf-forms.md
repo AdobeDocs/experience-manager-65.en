@@ -17,7 +17,7 @@ docset: aem65
 
 The following table specifies the feature support provided for HTML5 forms and PDF forms:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <th>Feature</th> 

@@ -21,7 +21,7 @@ The assignments feature is the ability to assign enablement resources and learni
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table border="1" cellpadding="4" cellspacing="4" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td> 

@@ -365,7 +365,7 @@ Following is an example of default mappings after following the [getting started
 
 #### Map of eVars sent with each event {#map-of-evars-sent-with-each-event}
 
-<table border="1" cellpadding="2" cellspacing="2" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td style="text-align: center;"><strong> </strong></td> 

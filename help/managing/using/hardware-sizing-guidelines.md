@@ -229,7 +229,7 @@ Based on the complexity, you can determine the number of servers (or CPU cores) 
 
 The variables in the equation are as follows:
 
-<table border="1" cellpadding="3" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>traffic</td> 

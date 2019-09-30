@@ -61,7 +61,7 @@ If the following segments have already been created and assigned their respectiv
 
 And we use the following teaser definitions:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td>Campaign</td> 
@@ -123,7 +123,7 @@ We can see the resulting:
 
 that are calculated before applying the appropriate strategy:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td>Campaign</td> 
@@ -193,7 +193,7 @@ that are calculated before applying the appropriate strategy:
 
 These values are used to determined the teaser(s) that the visitor will see, depending on the **Strategy** applied to the teaser paragraph:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td>Strategy</td> 

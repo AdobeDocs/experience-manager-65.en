@@ -53,7 +53,7 @@ Perform the following steps to add and configure a chart in an Interactive Commu
 
 Configure the following properties while creating charts for print and web channels:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Field</td> 

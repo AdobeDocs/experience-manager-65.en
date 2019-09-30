@@ -55,7 +55,7 @@ The actions which can be performed on posted content (UGC) varies depending on t
 * `Visitor`  
   an anonymous user
 
-<table border="2" cellpadding="4" cellspacing="1" width="80%"> 
+<table>
  <tbody>
   <tr>
    <td style="text-align: center;"> </td> 

@@ -25,7 +25,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 
 ## Repository Features {#repository-features}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html">Content repository</a></td> 
@@ -62,7 +62,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 
 ## Access, API, and Delivery Features {#access-api-and-delivery-features}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html">HTTP API</a></td> 
@@ -93,7 +93,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 
 ## Admin and Integration Features {#admin-and-integration-features}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html">User management</a></td> 
@@ -133,7 +133,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 
 ## Analytics and Personalization {#analytics-and-personalization}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/asset-reports.html">Asset reporting</a><br /> </td> 

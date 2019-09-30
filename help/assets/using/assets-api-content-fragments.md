@@ -71,7 +71,7 @@ This means that subsequent ( `write`) requests cannot be combined into a single 
 
 ### AEM (Assets) REST API versus AEM Components {#aem-assets-rest-api-versus-aem-components}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Aspect</td> 

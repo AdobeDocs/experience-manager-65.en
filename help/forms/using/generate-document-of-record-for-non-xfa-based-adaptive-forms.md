@@ -82,7 +82,7 @@ The following sections describe how adaptive form elements appear in document of
 
 ### Fields {#fields}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Adaptive form component</th> 
@@ -173,7 +173,7 @@ The following sections describe how adaptive form elements appear in document of
 
 ### Containers {#containers}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Adaptive form component</th> 

@@ -42,15 +42,15 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the Smart Tags configuration. Tap/click **[!UICONTROL Create]**.
 1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the following values:
 
-   **[!UICONTROL Service URL]**: *https://mc.adobe.io/marketingcloud/smartcontent*
+   **[!UICONTROL Service URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
 
-   **[!UICONTROL Authorization Server]**: *https://ims-na1.adobelogin.com*
+   **[!UICONTROL Authorization Server]**: `https://ims-na1.adobelogin.com`
 
    Leave the other fields blank for now (to be provided later). Tap/click **[!UICONTROL OK]**.
 
    ![AEM Smart Content Service dialog to provide content service URL](assets/aem_scs.png)
 
-1. Tap/click** ** **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
+1. Tap/click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
 
    ![A representation of the settings created for the smart tagging service](assets/download_link.png)
 
@@ -76,7 +76,7 @@ When the certificate expires it is no longer trusted. To add a new certificate, 
 
 To use Smart Content Service APIs, create an integration in Adobe I/O to generate API Key, Technical Account Id, Organization Id, and Client Secret.
 
-1. Access** ** [https://console.adobe.io](https://console.adobe.io/).
+1. Access [https://console.adobe.io](https://console.adobe.io/).
 1. From the **[!UICONTROL Integrations]** page, select your organization.
 1. Tap/click **[!UICONTROL New Integration]**.
 1. On the **[!UICONTROL Create a new integration]** page, select **[!UICONTROL Access an API]**. Tap/click **[!UICONTROL Continue]**.

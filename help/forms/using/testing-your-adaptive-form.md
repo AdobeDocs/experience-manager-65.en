@@ -34,7 +34,7 @@ Test suites have a collection of test cases. You can have multiple test suites. 
 1. Navigate to /etc/clientlibs in CRXDE Lite. Right-click the /etc/clientlibs subfolder and click **Create** &gt; **Create Node. **In the Name field type **WeRetailFormTestCases**. Select the type as **cq:ClientLibraryFolder** and click **OK**. It creates a node. You can use any name in place of WeRetailFormTestCases.
 1. Add the following properties to the WeRetailFormTestCases node and tap **Save ALL**.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -132,7 +132,7 @@ An action is a specific activity on an adaptive form such as clicking a button. 
 
 1. Add the following properties to the **[!UICONTROL WeRetailFormTests]** node. 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 

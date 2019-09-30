@@ -44,7 +44,7 @@ These templates have the `sling:resourceType` property set to the corresponding 
 
 The following table enumerates the association between templates and page component:
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="75"><p><strong>Template</strong></p> </td> 

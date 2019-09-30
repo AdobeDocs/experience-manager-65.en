@@ -26,7 +26,7 @@ Note that you can use Search&Promote capabilities only if your AEM administrator
 
 Facets are configured on the Search&Promote server, as is the information that each component provides. The following table provides a brief description of each component. Subsequent sections provide detailed information about their use.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Search&amp;Promote component</th> 

@@ -92,7 +92,7 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 ## Supported document formats {#supported-document-formats}
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody>
   <tr>
    <th colspan="8" style="text-align: center;">Asset Management Features</th> 
@@ -424,7 +424,7 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 ## Supported input video formats for Dynamic Media transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Video filename extension</strong></td> 
@@ -533,7 +533,7 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 ## Supported archive formats {#supported-archive-formats}
 
-<table border="1" cellpadding="1" cellspacing="0" columns="5" header="none" height="186" width="533"> 
+<table>
  <tbody>
   <tr></tr>
   <tr>
@@ -608,7 +608,7 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 ## Other supported formats {#other-supported-formats}
 
-<table border="1" cellpadding="1" cellspacing="0" columns="4" header="none" height="130" width="527"> 
+<table>
  <tbody>
   <tr>
    <th colspan="6" style="text-align: center;">Features</th> 
@@ -700,7 +700,7 @@ See [Configure MIME type-based for upload job parameters support](../../assets/u
 
 See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/sites/administering/using/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Filename extension</strong></td> 

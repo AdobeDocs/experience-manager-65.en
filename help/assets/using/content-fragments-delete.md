@@ -24,7 +24,6 @@ With regards to delete permissions, Content Fragments must be considered at two 
 1. **The Content Fragment as a single entity.**
 
     * **Use case**: A user who needs to edit/update a content fragment - **and delete an entire fragment**.  
-    
     * **Permissions**: The [Delete](../../sites/administering/using/security.md#actions) permission can be [assigned through User and/or Group Management](../../sites/administering/using/security.md#managing-permissions).
 
 1. **The multiple sub-entities that make up a content fragment; for example, variations, sub-nodes.**
@@ -32,7 +31,6 @@ With regards to delete permissions, Content Fragments must be considered at two 
    Basic operation of the content fragment editor requires that such transient sub-elements can be deleted. For example, when manipulating variations; also when editing metadata or managing associated content.
 
     * **Use case**: A user who needs to edit/update a content fragment - **without being allowed to delete an entire fragment**.  
-    
     * **Permissions**: See [Permissions Required for Editor Functionality Only](../../assets/using/content-fragments-delete.md#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
@@ -73,15 +71,15 @@ The permissions prerequisite to allowing a specific user and/or group to edit/up
 
 * For the Content Fragment nodes or folders:
 
-    * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
 * For the `jcr:content`node of all Content Fragments: ``
 
-    * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
 
 * For all nodes below `jcr:content` of all Content Fragments:
 
-    * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`, `jcr:removeNode`
 
 These `remove` privileges must be [administered using Access Control Lists, within CRXDE Lite](../../sites/administering/using/user-group-ac-admin.md#access-right-management).
 

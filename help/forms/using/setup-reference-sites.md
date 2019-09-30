@@ -54,7 +54,7 @@ Before you set up the reference site, ensure that you have the following:
 
 Perform the following steps in the recommended sequence to set up and configure the reference sites.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th><strong>Step</strong></th> 

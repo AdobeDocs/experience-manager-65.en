@@ -30,7 +30,7 @@ This section lists features and capabilities that have been marked as deprecated
 
 Customers are advised to review if they make use of the feature/capability in their current deployment, and make plans to change their implementation to use the alternative provided.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td>Area</td> 
@@ -159,7 +159,7 @@ Customers are advised to review if they make use of the feature/capability in th
 
 This section lists features and capabilities that have been removed from AEM 6.5. Prior releases had these capabilites marked as depreacted.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Area </strong></td> 
@@ -218,7 +218,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 
 This section is used to pre-announce changes in future release, that are not deprecated, but will impact customers. These are provided for planning purpose.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td>Area<br /> </td> 

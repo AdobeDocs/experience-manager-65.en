@@ -41,7 +41,7 @@ The following asset types are supported in AEM Forms:
 
 The following is an extensive list of metadata properties supported in AEM Forms:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property name</strong></td> 

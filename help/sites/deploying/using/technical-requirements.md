@@ -53,7 +53,7 @@ This document lists the supported client and server platforms for Adobe Experien
 
 Adobe recommends these configurations and provides full support as part of the standard software maintenance agreement.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Support Level</td> 
@@ -88,7 +88,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 >
 >It is recommended to track the Security Bulletins from the Java vendor to ensure the safety and security of production environments and install the latest Java Updates.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Platform</td> 
@@ -265,7 +265,7 @@ The AEM user interface is optimized for larger screens (typically notebooks and 
 >
 >Mozilla Firefox, Google Chrome and Microsoft Edge release updates every few months. Adobe is committed to provide updates for Adobe Experience Manager to maintain the support level as stated below with upcoming versions of these browsers.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Browser</strong></td> 
@@ -443,7 +443,7 @@ For Windows x86:
 
 ### Requirements for AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-<table border="1" cellpadding="0" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th valign="middle" width="35%"><p><strong>Product</strong></p> </th> 
