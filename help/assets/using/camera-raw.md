@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: e5f3dfb7-5a9f-4ee0-8ec1-fcb50bcb76e3
+docset: aem65
 
 ---
 

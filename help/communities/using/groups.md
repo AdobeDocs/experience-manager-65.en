@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
+docset: aem65
 pagetitle: Community Groups Console
 
 ---

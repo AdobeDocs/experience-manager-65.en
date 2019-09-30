@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
+docset: aem65
 
 ---
 

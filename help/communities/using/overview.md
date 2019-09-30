@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
+docset: aem65
 
 ---
 

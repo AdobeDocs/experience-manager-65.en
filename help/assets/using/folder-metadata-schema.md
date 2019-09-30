@@ -5,6 +5,7 @@ description: This article describes how to create metadata schema for asset fold
 seo-description: How to create metadata schema for asset folders in AEM Assets.
 uuid: bf8d066c-0f23-4d18-9ce9-860fa505dea2
 discoiquuid: 23009e50-a026-4823-8e4c-7a313a11b38c
+docset: aem65
 
 ---
 

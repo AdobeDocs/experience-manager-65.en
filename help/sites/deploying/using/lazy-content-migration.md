@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: d72b8844-d782-4b5b-8999-338217dbefb9
+docset: aem65
 
 ---
 

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
+docset: aem65
 
 ---
 

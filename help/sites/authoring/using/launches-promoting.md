@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
+docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 
 ---

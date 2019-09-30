@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
+docset: aem65
 legacypath: /deploy/platform/data-store-config
 
 ---

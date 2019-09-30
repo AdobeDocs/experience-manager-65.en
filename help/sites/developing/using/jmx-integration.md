@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
+docset: aem65
 
 ---
 

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
 discoiquuid: 0aabfb0a-ef9c-4b06-b698-61cad101c3c1
+docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 
 ---

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 274a7f5a-d509-4ca9-9ae5-30e48f34f171
+docset: aem65
 noindex: true
 redirecttarget: /content/help/en/experience-manager/6-5/sites/deploying/using/repository-restructuring.html
 

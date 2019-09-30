@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
 discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
+docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 
 ---

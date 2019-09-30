@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
+docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 
 ---

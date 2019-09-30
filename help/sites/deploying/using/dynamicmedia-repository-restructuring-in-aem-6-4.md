@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repository-restructuring
 discoiquuid: a5a229e7-c08e-4101-859f-829748aceffc
+docset: aem65
 
 ---
 

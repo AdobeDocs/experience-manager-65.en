@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
+docset: aem65
 
 ---
 

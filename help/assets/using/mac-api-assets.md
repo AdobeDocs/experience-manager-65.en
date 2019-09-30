@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: extending-assets
 content-type: reference
 discoiquuid: 2bb815f0-c1da-491e-81e5-286e596c5197
+docset: aem65
 
 ---
 

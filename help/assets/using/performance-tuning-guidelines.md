@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 30f241ef-2dfb-471e-98fd-d21b9e752c4c
+docset: aem65
 tagskeywords: performance tuning, AEM Assets, software optimization, hardware optimization
 
 ---

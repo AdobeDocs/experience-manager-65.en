@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
+docset: aem65
 pagetitle: Components for Content Fragments
 
 ---

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 52cc3162-b638-410d-854a-383399e2effb
+docset: aem65
 pagetitle: Deploying eCommerce with Demandware
 redirecttarget: https //github.com/adobe/commerce-salesforce
 

@@ -9,6 +9,7 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
+docset: aem65
 
 ---
 

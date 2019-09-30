@@ -8,6 +8,7 @@ content-type: example
 topic-tags: use-case-examples
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: 55408b4d-2727-48fa-8bd5-9c1a0f03f03f
+docset: aem65
 
 ---
 

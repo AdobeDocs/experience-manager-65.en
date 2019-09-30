@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d91e9b89-ebca-4296-acd2-7e6d657c9919
+docset: aem65
 
 ---
 

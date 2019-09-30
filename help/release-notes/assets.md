@@ -9,6 +9,7 @@ topic-tags: release-notes
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 1ab34a42-2f0e-4b05-a7b6-2fc8dca07ef5
+docset: aem65
 
 ---
 

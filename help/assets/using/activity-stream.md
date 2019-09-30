@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: authoring
 discoiquuid: 16f9b8a6-5e4f-46d7-8d4f-dabd11eacbab
+docset: aem65
 
 ---
 

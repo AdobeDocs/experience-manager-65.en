@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
+docset: aem65
 
 ---
 

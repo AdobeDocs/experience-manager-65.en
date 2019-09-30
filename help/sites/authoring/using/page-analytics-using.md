@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
+docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/sites/authoring/using/pa-using.html
 
 ---

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
+docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 
 ---

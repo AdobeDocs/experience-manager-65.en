@@ -9,6 +9,7 @@ topic-tags: release-notes
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
+docset: aem65
 legacypath: /content/docs/en/aem/6-1/release-notes-sp1
 
 ---

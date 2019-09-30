@@ -9,6 +9,7 @@ content-type: reference
 topic-tags: digital-signage-networks-basics
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: 860beb87-3686-488e-9bca-a590e78a751c
+docset: aem65
 
 ---
 

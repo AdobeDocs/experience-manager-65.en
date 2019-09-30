@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: bee7144e-4276-4e81-a3a0-5b7273af34fe
+docset: aem65
 
 ---
 
