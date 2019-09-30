@@ -1181,7 +1181,6 @@ To view Video Reports based on a video viewer that you created using the Scene7 
 
       ```    
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
-      
       ```
 
     * Add the tracking function by adding the following:

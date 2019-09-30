@@ -136,7 +136,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
 1. In the apps folder, create a folder named js with path/structure similar to the items folder located in admin folder using the following steps:
 
-    1. Right-click the **js** folder at the following path and select **Overlay Node**: ``
+    1. Right-click the **js** folder at the following path and select **Overlay Node**:
 
        `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 

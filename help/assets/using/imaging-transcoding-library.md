@@ -76,11 +76,8 @@ The command line arguments for Imaging Transcoding Library can include the follo
 : `You can configure the following options for the` `-resize` `parameter:`
 
 * `X`: `Works similar to AEM. For example -resize 319.`
-
 * `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
-
 * `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
-
 * `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
 
 ```
@@ -120,14 +117,14 @@ The command line arguments for Imaging Transcoding Library can include the follo
 <table>
  <tbody> 
   <tr> 
-   <td valign="top" width="126"><p><strong>Package Version</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Package Share Link</strong></p> </td> 
-   <td valign="top" width="330"><p><strong>Supported Platforms</strong></p> </td> 
+   <td><p><strong>Package Version</strong></p> </td> 
+   <td><p><strong>Package Share Link</strong></p> </td> 
+   <td><p><strong>Supported Platforms</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="126"><p>1.4<br /> </p> </td> 
-   <td valign="top" width="168"><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg">Imaging transcoding library package</a></td> 
-   <td valign="top" width="330"><p>RHEL 7, CentOS7</p> </td> 
+   <td><p>1.4<br /> </p> </td> 
+   <td><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg">Imaging transcoding library package</a></td> 
+   <td><p>RHEL 7, CentOS7</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -135,14 +132,14 @@ The command line arguments for Imaging Transcoding Library can include the follo
 <table>
  <tbody> 
   <tr> 
-   <td valign="top" width="168"><p>TBD</p> </td> 
+   <td><p>TBD</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 1. Tap/click the AEM logo, and go to **Tools** &gt; **Workflow** &gt; **Models**.
-1. From the **Workflow Models** page, open the** DAM Update Asset** workflow model in edit mode.
-1. Open the **Process Thumbnails** workflow process step. In the **Thumbnails** tab, add the MIME types for which you want to skip the default thumbnail generation process in the **Skip Mime Types **list. For example, if you want to create thumbnails for a JPEG image using Imaging Transcoding Library, specify `skip:image/jpeg` in the Skip Mime Types field.
+1. From the **Workflow Models** page, open the **DAM Update Asset** workflow model in edit mode.
+1. Open the **Process Thumbnails** workflow process step. In the **Thumbnails** tab, add the MIME types for which you want to skip the default thumbnail generation process in the **Skip Mime Types** list. For example, if you want to create thumbnails for a JPEG image using Imaging Transcoding Library, specify `skip:image/jpeg` in the **Skip Mime Types** field.
 
    ![](assets/skip_mime_types-1.png)
 

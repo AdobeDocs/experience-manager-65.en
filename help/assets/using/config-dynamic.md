@@ -512,15 +512,12 @@ As part of the configuration, you need to enter a registration ID, video service
 
 To configure dynamic media cloud services:
 
-##
-
 1. In AEM, tap or click the AEM logo to access the global navigation console and tap **Tools **&gt; **Cloud Services** &gt; **Dynamic Media Configuration (Pre-6.3)**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, select **global**, then click **Create**.
 1. In the **Create Dynamic Media Configuration** dialog box, in the Title field, type a title.
 1. If you are configuring Dynamic Media for video,
 
     * In the **Registration** **ID** field, type your registration ID.
-    
     * In the **Video Service URL** field, enter the video service URL for the Dynamic Media Gateway.
 
 1. If you are configuring Dynamic Media for imaging, in the **Image Service URL** field, enter the image service URL for the Dynamic Media Gateway.
@@ -535,10 +532,9 @@ You can configure video reporting across multiple installations of AEM using Dyn
 
 **Get started:** Configure video reporting by completing the following three tasks.
 
-1. Create a Video Analytics preset package after you configure Dynamic Media Configuration (Pre 6.3) on the first Author node. This initial task is important because it allows a new configuration to continue using the same report suite. ` ```
-1. Install the Video Analytics preset package to any ***new*** Author node ***before*** you configure Dynamic Media Configuration (Pre 6.3). ``
-
-1. ` ```Verify and debug the package installation.
+1. Create a Video Analytics preset package after you configure Dynamic Media Configuration (Pre 6.3) on the first Author node. This initial task is important because it allows a new configuration to continue using the same report suite.
+1. Install the Video Analytics preset package to any ***new*** Author node ***before*** you configure Dynamic Media Configuration (Pre 6.3). 
+1. Verify and debug the package installation.
 
 ### Creating a Video Analytics Preset package after configuring the first Author node {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
@@ -568,18 +564,19 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
 1. Do any one of the following to verify and, if necessary, debug the package installation:
 
-    * **Check the Video Analytics preset by way of the JCR  
-      **To check the Video Analytics preset by way of the JCR, you must have access to CRXDE Lite.  
+    * **Check the Video Analytics preset by way of the JCR**  
+      To check the Video Analytics preset by way of the JCR, you must have access to CRXDE Lite.  
   
-      AEM - In CRXDE Lite, navigate to /conf/global/settings/  
-      dam/dm/presets/analytics/jcr:content/userdata  
+      AEM - In CRXDE Lite, navigate to `/conf/global/settings/  
+      dam/dm/presets/analytics/jcr:content/userdata`  
   
-      That is http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata  
+      That is `http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`  
   
       If you do not have access to CRXDE Lite on the Author node, you can check the preset through the Publish server.
 
-    * **Check the Video Analytics preset through the Image Server  
-      **You can validate the Video Analytics preset directly by making an Image Server req=userdata request.  
+    * **Check the Video Analytics preset through the Image Server**
+
+      You can validate the Video Analytics preset directly by making an Image Server req=userdata request.  
       For example, to see the Analytics preset on the Author node, you can make the following request:  
   
       `http://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`  
@@ -595,10 +592,10 @@ Make sure that the Video Analytics preset package from the first Author node is 
        trackingServer=aemvideodal.d2.sc.omtrdc.net
       ```
 
-    * **Check the Video Analytics preset through the Video Reporting tool in AEM  
-      **Click **Tools** &gt; **Assets** &gt; **Video Reporting  
+    * **Check the Video Analytics preset through the Video Reporting tool in AEM**  
+      Click **Tools** &gt; **Assets** &gt; **Video Reporting**  
   
-      ** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`  
+      `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`  
   
       If you see the following error message, the report suite is available, but unpopulated. This error is correct--and desired--in a new installation before the system collects any data.
 

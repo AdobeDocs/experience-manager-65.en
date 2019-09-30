@@ -282,13 +282,13 @@ You can add custom MIME types for unsupported formats in AEM Assets. To ensure t
 
 1. In the left rail, navigate to the following:
 
-   ` `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes``
+   `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-1. Drag the mime type ` `image_vnd.dwg`` and drop it directly above ` `image_`` in the tree as seen in the following screenshot.
+1. Drag the mime type `image_vnd.dwg` and drop it directly above image_ in the tree as seen in the following screenshot.
 
    ![](assets/crxdelite_cqdoc-14627.png)
 
-1. With the mime type ` `image_vnd.dwg`` still selected, from the **Properties** tab, in the **enabled** row, under the **Value** column header, double-click the value to open the **[!UICONTROL Value]** drop-down list.
+1. With the mime type `image_vnd.dwg` still selected, from the **Properties** tab, in the **enabled** row, under the **Value** column header, double-click the value to open the **[!UICONTROL Value]** drop-down list.
 1. Type `false` in the field (or select **[!UICONTROL false]** from the drop-down list).
 
    ![](assets/2019-08-02_16-60-30.png)
