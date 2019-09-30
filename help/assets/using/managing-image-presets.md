@@ -162,12 +162,12 @@ The following scripts, are used by Dynamic Media integration:
   <tr> 
    <td>ThumbnailExport.jsx</td> 
    <td>Yes</td> 
-   <td>Generates a 300 ppi <span class="code">thumbnail.jpg</span> rendition that is optimized and turned into a PTIFF rendition by <span class="code">Dynamic Media Process Image Assets</span> process component.<br /> </td> 
+   <td>Generates a 300 ppi <code>thumbnail.jpg</code> rendition that is optimized and turned into a PTIFF rendition by <code>Dynamic Media Process Image Assets</code> process component.<br /> </td> 
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>Yes</td> 
-   <td>Generates a 300 ppi JPEG sub-asset for each page. The JPEG sub-asset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the <span class="code">DAM Update Asset</span> workflow.<br /> </td> 
+   <td>Generates a 300 ppi JPEG sub-asset for each page. The JPEG sub-asset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the <code>DAM Update Asset</code> workflow.<br /> </td> 
   </tr> 
   <tr> 
    <td>PDFPagesExport.jsx</td> 
@@ -407,13 +407,13 @@ When you create or edit image presets, you have the options described in this se
    <td><strong>Image Modifier</strong></td> 
    <td><p>Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the <strong>Image Modifiers</strong> field. These parameters are defined in the <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">Image Server Protocol command reference</a>.</p> <p>Important: The following functionality listed in the API is not supported:</p> 
     <ul> 
-     <li>Basic templating and text rendering commands: <span class="code">text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</span> and <span class="code">textPs=</span></li> 
-     <li>Localization commands: <span class="code">locale=</span> and <span class="code">req=xlate</span></li> 
-     <li><span class="code">req=set</span> is not available for general usage.</li> 
-     <li><span class="code">req=mbrset</span></li> 
-     <li><span class="code">req=saveToFile</span></li> 
-     <li><span class="code">req=targets</span></li> 
-     <li><span class="code">template=</span></li> 
+     <li>Basic templating and text rendering commands: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li> 
+     <li>Localization commands: <code>locale=</code> and <code>req=xlate</code></li> 
+     <li><code>req=set</code> is not available for general usage.</li> 
+     <li><code>req=mbrset</code></li> 
+     <li><code>req=saveToFile</code></li> 
+     <li><code>req=targets</code></li> 
+     <li><code>template=</code></li> 
      <li>Non-core Dynamic Media services: SVG, Image Rendering, and Web-to-Print</li> 
     </ul> </td> 
   </tr> 

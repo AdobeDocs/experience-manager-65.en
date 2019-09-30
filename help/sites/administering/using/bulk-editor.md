@@ -72,15 +72,15 @@ To use the bulk editor to edit multiple items simultaneously:
   </tr> 
   <tr> 
    <td>Root Path</td> 
-   <td>Indicates the root path the bulk editor searches.<br /> For example, <span class="code">/content/geometrixx/en</span>. The bulk editor searches over all child nodes.</td> 
+   <td>Indicates the root path the bulk editor searches.<br /> For example, <code>/content/geometrixx/en</code>. The bulk editor searches over all child nodes.</td> 
   </tr> 
   <tr> 
    <td>Query Parameters</td> 
-   <td>Using GQL parameters, enter the search string you want the bulk editor to look for in the repository; for example, <span class="code">type:Page</span> looks for all pages in the root path, <span class="code">text:professional</span> looks for all pages that have the word "professional" in them, and <span class="code">"jcr:title":English</span> looks for all pages that have "English" as the title. You can only search for strings.</td> 
+   <td>Using GQL parameters, enter the search string you want the bulk editor to look for in the repository; for example, <code>type:Page</code> looks for all pages in the root path, <code>text:professional</code> looks for all pages that have the word "professional" in them, and <code>"jcr:title":English</code> looks for all pages that have "English" as the title. You can only search for strings.</td> 
   </tr> 
   <tr> 
    <td>Content Mode check box</td> 
-   <td>Select this check box to read properties within the <span class="code">jcr:content</span> sub node of the search results if exists. Use for pages only. Property names are prefixed with <span class="code">"jcr:content/"</span></td> 
+   <td>Select this check box to read properties within the <code>jcr:content</code> sub node of the search results if exists. Use for pages only. Property names are prefixed with <code>"jcr:content/"</code></td> 
   </tr> 
   <tr> 
    <td>Properties/Columns</td> 

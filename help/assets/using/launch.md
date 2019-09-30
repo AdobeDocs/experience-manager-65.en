@@ -274,124 +274,124 @@ The following table lists Dynamic Media Viewer events and their supported argume
    <td>Argument reference</td> 
   </tr> 
   <tr> 
-   <td><span class="code">COMMON</span></td> 
-   <td><span class="code">%event.detail.dm.objID%</span></td> 
+   <td><code>COMMON</code></td> 
+   <td><code>%event.detail.dm.objID%</code></td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><span class="code">%event.detail.dm.compClass%</span></td> 
+   <td><code>%event.detail.dm.compClass%</code></td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><span class="code">%event.detail.dm.instName%</span></td> 
+   <td><code>%event.detail.dm.instName%</code></td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><span class="code">%event.detail.dm.timeStamp%</span></td> 
+   <td><code>%event.detail.dm.timeStamp%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">BANNER</span><br /> </td> 
-   <td><span class="code">%event.detail.dm.BANNER.asset%</span></td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td><span class="code">%event.detail.dm.BANNER.frame%</span></td> 
+   <td><code>BANNER</code><br /> </td> 
+   <td><code>%event.detail.dm.BANNER.asset%</code></td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><span class="code">%event.detail.dm.BANNER.label%</span></td> 
+   <td><code>%event.detail.dm.BANNER.frame%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">HREF</span></td> 
-   <td><span class="code">%event.detail.dm.HREF.rollover%</span></td> 
+   <td> </td> 
+   <td><code>%event.detail.dm.BANNER.label%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">ITEM</span></td> 
-   <td><span class="code">%event.detail.dm.ITEM.rollover%</span></td> 
+   <td><code>HREF</code></td> 
+   <td><code>%event.detail.dm.HREF.rollover%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">LOAD</span></td> 
-   <td><span class="code">%event.detail.dm.LOAD.applicationname%</span></td> 
+   <td><code>ITEM</code></td> 
+   <td><code>%event.detail.dm.ITEM.rollover%</code></td> 
+  </tr> 
+  <tr> 
+   <td><code>LOAD</code></td> 
+   <td><code>%event.detail.dm.LOAD.applicationname%</code></td> 
   </tr> 
   <tr> 
    <td><strong> </strong></td> 
-   <td><span class="code">%event.detail.dm.LOAD.asset%</span></td> 
+   <td><code>%event.detail.dm.LOAD.asset%</code></td> 
   </tr> 
   <tr> 
    <td><strong> </strong></td> 
-   <td><span class="code">%event.detail.dm.LOAD.company%</span></td> 
+   <td><code>%event.detail.dm.LOAD.company%</code></td> 
   </tr> 
   <tr> 
    <td><strong> </strong></td> 
-   <td><span class="code">%event.detail.dm.LOAD.sdkversion%</span></td> 
+   <td><code>%event.detail.dm.LOAD.sdkversion%</code></td> 
   </tr> 
   <tr> 
    <td><strong> </strong></td> 
-   <td><span class="code">%event.detail.dm.LOAD.viewertype%</span></td> 
+   <td><code>%event.detail.dm.LOAD.viewertype%</code></td> 
   </tr> 
   <tr> 
    <td><strong> </strong></td> 
-   <td><span class="code">%event.detail.dm.LOAD.viewerversion%</span></td> 
+   <td><code>%event.detail.dm.LOAD.viewerversion%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">METADATA</span></td> 
-   <td><span class="code">%event.detail.dm.METADATA.length%</span></td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td><span class="code">%event.detail.dm.METADATA.type%</span></td> 
-  </tr> 
-  <tr> 
-   <td><span class="code">MILESTONE</span></td> 
-   <td><span class="code">%event.detail.dm.MILESTONE.milestone%</span></td> 
-  </tr> 
-  <tr> 
-   <td><span class="code">PAGE</span></td> 
-   <td><span class="code">%event.detail.dm.PAGE.frame%</span></td> 
+   <td><code>METADATA</code></td> 
+   <td><code>%event.detail.dm.METADATA.length%</code></td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><span class="code">%event.detail.dm.PAGE.label%</span></td> 
+   <td><code>%event.detail.dm.METADATA.type%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">PAUSE</span></td> 
-   <td><span class="code">%event.detail.dm.PAUSE.timestamp%</span></td> 
+   <td><code>MILESTONE</code></td> 
+   <td><code>%event.detail.dm.MILESTONE.milestone%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">PLAY</span></td> 
-   <td><span class="code">%event.detail.dm.PLAY.timestamp%</span></td> 
-  </tr> 
-  <tr> 
-   <td><span class="code">SPIN</span></td> 
-   <td><span class="code">%event.detail.dm.SPIN.framenumber%</span></td> 
-  </tr> 
-  <tr> 
-   <td><span class="code">STOP</span></td> 
-   <td><span class="code">%event.detail.dm.STOP.timestamp%</span></td> 
-  </tr> 
-  <tr> 
-   <td><span class="code">SWAP</span></td> 
-   <td><span class="code">%event.detail.dm.SWAP.asset%</span></td> 
-  </tr> 
-  <tr> 
-   <td><span class="code">SWATCH</span></td> 
-   <td><span class="code">%event.detail.dm.SWATCH.frame%</span></td> 
+   <td><code>PAGE</code></td> 
+   <td><code>%event.detail.dm.PAGE.frame%</code></td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><span class="code">%event.detail.dm.SWATCH.label%</span></td> 
+   <td><code>%event.detail.dm.PAGE.label%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">TARG</span></td> 
-   <td><span class="code">%event.detail.dm.TARG.frame%</span></td> 
+   <td><code>PAUSE</code></td> 
+   <td><code>%event.detail.dm.PAUSE.timestamp%</code></td> 
+  </tr> 
+  <tr> 
+   <td><code>PLAY</code></td> 
+   <td><code>%event.detail.dm.PLAY.timestamp%</code></td> 
+  </tr> 
+  <tr> 
+   <td><code>SPIN</code></td> 
+   <td><code>%event.detail.dm.SPIN.framenumber%</code></td> 
+  </tr> 
+  <tr> 
+   <td><code>STOP</code></td> 
+   <td><code>%event.detail.dm.STOP.timestamp%</code></td> 
+  </tr> 
+  <tr> 
+   <td><code>SWAP</code></td> 
+   <td><code>%event.detail.dm.SWAP.asset%</code></td> 
+  </tr> 
+  <tr> 
+   <td><code>SWATCH</code></td> 
+   <td><code>%event.detail.dm.SWATCH.frame%</code></td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><span class="code">%event.detail.dm.TARG.label%</span></td> 
+   <td><code>%event.detail.dm.SWATCH.label%</code></td> 
   </tr> 
   <tr> 
-   <td><span class="code">ZOOM</span></td> 
-   <td><span class="code">%event.detail.dm.ZOOM.scale%</span></td> 
+   <td><code>TARG</code></td> 
+   <td><code>%event.detail.dm.TARG.frame%</code></td> 
+  </tr> 
+  <tr> 
+   <td> </td> 
+   <td><code>%event.detail.dm.TARG.label%</code></td> 
+  </tr> 
+  <tr> 
+   <td><code>ZOOM</code></td> 
+   <td><code>%event.detail.dm.ZOOM.scale%</code></td> 
   </tr> 
  </tbody> 
 </table>

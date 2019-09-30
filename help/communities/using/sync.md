@@ -297,7 +297,7 @@ Make sure all the publishers in a publish farm have a unique Sling ID. If the Sl
  <p>If the Sling ID of a publish instance matches the Sling ID of any other publish instance, then:</p> 
  <ol> 
   <li>Stop one of the publish instances that has a matching Sling ID.</li> 
-  <li>In the <span class="code">crx-quickstart/launchpad/felix</span> directory, search for and delete the file named <em>sling.id.file.<br /> </em>for example, on a Linux system:<em><br /> rm -i $(find . -type f -name sling.id.file)<br /> </em>for example, on a Windows system:<br /> use windows explorer and search for <em>sling.id.file</em></li> 
+  <li>In the <code>crx-quickstart/launchpad/felix</code> directory, search for and delete the file named <em>sling.id.file.<br /> </em>for example, on a Linux system:<em><br /> rm -i $(find . -type f -name sling.id.file)<br /> </em>for example, on a Windows system:<br /> use windows explorer and search for <em>sling.id.file</em></li> 
   <li>Start the publish instance. On startup it will be assigned a new Sling ID. </li> 
   <li>Validate that the <strong>Sling ID</strong> is now unique.</li> 
  </ol> 

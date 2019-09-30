@@ -190,7 +190,7 @@ This table provides some guidelines that you can use to classify your letters:
   </tr> 
   <tr> 
    <td valign="top" width="75"><p>Low complexity</p> </td> 
-   <td valign="top" width="125"><p>Low. Layout has few form fields (&lt;15).</p> <p>Typically one page<span class="acrolinxCursorMarker"></span>.</p> </td> 
+   <td valign="top" width="125"><p>Low. Layout has few form fields (&lt;15).</p> <p>Typically one page<span class="acrolinxCursorMarker"></code>.</p> </td> 
    <td valign="top" width="67"><p>8</p> </td> 
    <td valign="top" width="90"><p>1</p> </td> 
    <td valign="top" width="161"><p>Medium Designer skills.</p> </td> 

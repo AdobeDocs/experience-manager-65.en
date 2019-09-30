@@ -143,10 +143,10 @@ The following table lists the synchronization actions that are installed with AE
   </tr> 
   <tr> 
    <td>editProperties</td> 
-   <td><p>Edits properties of the live copy. The editMap property determines which properties are edited and their value. The value of the editMap property must use the following format:</p> <p><span class="code">[property_name_1]#[current_value]#</span>[new_value],<br /> <span class="code">[property_name_2]#[current_value]#</span>[new_value],<br /> ... ,<br /> <span class="code">[property_name_n]#[current_value]#</span>[new_value]</p> <p>The <span class="code">current_value</span> and <span class="code">new_value</span> items are regular expressions. <br /> </p> <p>For example, consider the following value for editMap:</p> <p><span class="code">sling:resourceType#/</span>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>This value edits the properties of the live copy nodes as follows:</p> 
+   <td><p>Edits properties of the live copy. The editMap property determines which properties are edited and their value. The value of the editMap property must use the following format:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>The <code>current_value</code> and <code>new_value</code> items are regular expressions. <br /> </p> <p>For example, consider the following value for editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>This value edits the properties of the live copy nodes as follows:</p> 
     <ul> 
-     <li>The <span class="code">sling:resourceType</span> properties that are either set to <span class="code">contentpage</span> or to <span class="code">homepage</span> are set to <span class="code">mobilecontentpage.</span></li> 
-     <li>The <span class="code">cq:template</span> properties that are set to <span class="code">contentpage</span> are set to <span class="code">mobilecontentpage.</span></li> 
+     <li>The <code>sling:resourceType</code> properties that are either set to <code>contentpage</code> or to <code>homepage</code> are set to <code>mobilecontentpage.</code></li> 
+     <li>The <code>cq:template</code> properties that are set to <code>contentpage</code> are set to <code>mobilecontentpage.</code></li> 
     </ul> </td> 
    <td><p> </p> <p>editMap: (String) Identifies the property, the current value, and the new value. See the Description for information.<br /> </p> </td> 
   </tr> 
@@ -346,7 +346,7 @@ The following table lists the synchronization actions for which you can specify 
   </tr> 
   <tr> 
    <td><p>Update Referencing Pages</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td> 
-   <td>Only available for CQ MSM Page Move Action. Select this option (Web Console) or set this boolean property to <span class="code">true</span> (repository configuration) to update any references to use the original page to instead reference the LiveCopy page.</td> 
+   <td>Only available for CQ MSM Page Move Action. Select this option (Web Console) or set this boolean property to <code>true</code> (repository configuration) to update any references to use the original page to instead reference the LiveCopy page.</td> 
   </tr> 
  </tbody> 
 </table>

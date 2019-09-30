@@ -524,18 +524,18 @@ The following two OSGi components have been introduced to define authentication 
    <td>Confguration Properties</td> 
    <td> 
     <ul> 
-     <li><span class="code">cugSupportedPaths</span></li> 
-     <li><span class="code">cugEnabled</span></li> 
-     <li><span class="code">confgurationRanking</span></li> 
+     <li><code>cugSupportedPaths</code></li> 
+     <li><code>cugEnabled</code></li> 
+     <li><code>confgurationRanking</code></li> 
     </ul> <p>Also, see <a href="../../../sites/administering/using/closed-user-groups.md#configuration-options" target="_blank">Configuration Options</a> below.</p> </td> 
   </tr> 
   <tr> 
    <td>Confguration Policy</td> 
-   <td><span class="code">ConfgurationPolicy.REQUIRE</span></td> 
+   <td><code>ConfgurationPolicy.REQUIRE</code></td> 
   </tr> 
   <tr> 
    <td>References</td> 
-   <td><span class="code">CugExclude (ReferenceCardinality.OPTIONAL_UNARY)</span></td> 
+   <td><code>CugExclude (ReferenceCardinality.OPTIONAL_UNARY)</code></td> 
   </tr> 
  </tbody> 
 </table>
@@ -556,12 +556,12 @@ The following two OSGi components have been introduced to define authentication 
    <td>Confguration Properties</td> 
    <td> 
     <ul> 
-     <li><span class="code">principalNames</span></li> 
+     <li><code>principalNames</code></li> 
     </ul> <p>Also see section Confguration Options below.</p> </td> 
   </tr> 
   <tr> 
    <td>Confguration Policy</td> 
-   <td><span class="code">ConfgurationPolicy.REQUIRE</span></td> 
+   <td><code>ConfgurationPolicy.REQUIRE</code></td> 
   </tr> 
   <tr> 
    <td>References</td> 
@@ -622,7 +622,7 @@ The following 2 OSGi components have been introduced to defne authentication req
   </tr> 
   <tr> 
    <td>Description</td> 
-   <td>Dedicated OSGi service for authentication requirements that registers an observer for content changes afecting auth-requirement (through the <span class="code">granite:AuthenticationRequirement</span> mixin type) and login paths with are exposed to the <span class="code">LoginSelectorHandler</span>. </td> 
+   <td>Dedicated OSGi service for authentication requirements that registers an observer for content changes afecting auth-requirement (through the <code>granite:AuthenticationRequirement</code> mixin type) and login paths with are exposed to the <code>LoginSelectorHandler</code>. </td> 
   </tr> 
   <tr> 
    <td>Confguration Properties</td> 
@@ -630,14 +630,14 @@ The following 2 OSGi components have been introduced to defne authentication req
   </tr> 
   <tr> 
    <td>Confguration Policy</td> 
-   <td><span class="code">ConfgurationPolicy.OPTIONAL</span></td> 
+   <td><code>ConfgurationPolicy.OPTIONAL</code></td> 
   </tr> 
   <tr> 
    <td>References</td> 
    <td> 
     <ul> 
-     <li><span class="code">RequirementHandler (ReferenceCardinality.MANDATORY_UNARY)</span></li> 
-     <li><span class="code">Executor (ReferenceCardinality.MANDATORY_UNARY)</span></li> 
+     <li><code>RequirementHandler (ReferenceCardinality.MANDATORY_UNARY)</code></li> 
+     <li><code>Executor (ReferenceCardinality.MANDATORY_UNARY)</code></li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -670,7 +670,7 @@ The authentication related parts of the CUG rewrite only come with a single conf
    <td><p>Label = Supported Paths</p> <p>Name = 'supportedPaths'</p> </td> 
    <td>Set&lt;String&gt;</td> 
    <td>-</td> 
-   <td>Paths under which authentication requirements will be respected by this handler. Leave this confguration unset if you want to add the <span class="code">granite:AuthenticationRequirement</span> mixin type to nodes without having them enforced (for example, on author instances). If missing, the feature is disabled. </td> 
+   <td>Paths under which authentication requirements will be respected by this handler. Leave this confguration unset if you want to add the <code>granite:AuthenticationRequirement</code> mixin type to nodes without having them enforced (for example, on author instances). If missing, the feature is disabled. </td> 
   </tr> 
  </tbody> 
 </table>

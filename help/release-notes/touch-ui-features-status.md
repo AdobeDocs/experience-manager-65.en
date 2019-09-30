@@ -609,7 +609,7 @@ This is a list of various tools the classic UI have and the status in the touch-
    <td> </td> 
   </tr>
   <tr>
-   <td>Workflow to Page Template Configuration (<span class="code">/etc/workflow/wcm/templates.html</span>)</td> 
+   <td>Workflow to Page Template Configuration (<code>/etc/workflow/wcm/templates.html</code>)</td> 
    <td>Missing<br /> </td> 
    <td>Use Classic UI.</td> 
   </tr>
@@ -639,17 +639,17 @@ This is a list of various tools the classic UI have and the status in the touch-
    <td>For advanced permission editing use Classic UI.<br /> </td> 
   </tr>
   <tr>
-   <td>Purge Versions (<span class="code">/etc/versioning/purge.html</span>)</td> 
+   <td>Purge Versions (<code>/etc/versioning/purge.html</code>)</td> 
    <td>Missing</td> 
    <td>Use Classic UI.</td> 
   </tr>
   <tr>
-   <td>External Link Checker (<span class="code">/etc/linkchecker.html</span>)</td> 
+   <td>External Link Checker (<code>/etc/linkchecker.html</code>)</td> 
    <td>Missing</td> 
    <td>Use Classic UI.<br /> </td> 
   </tr>
   <tr>
-   <td>Bulk Editor (<span class="code">/etc/importers/bulkeditor.html</span>)</td> 
+   <td>Bulk Editor (<code>/etc/importers/bulkeditor.html</code>)</td> 
    <td>Missing<br /> </td> 
    <td>Use Classic UI.</td> 
   </tr>

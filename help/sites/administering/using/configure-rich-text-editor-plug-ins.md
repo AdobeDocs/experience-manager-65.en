@@ -226,19 +226,19 @@ To configure which formats are allowed when pasting text into AEM from another p
   <tr> 
    <td>table</td> 
    <td>nt:unstructured</td> 
-   <td><p>Defines the behavior when pasting tables.<br /> </p> <p>This node must have the property <span class="code">allow</span> (type <span class="code">Boolean</span>) to define whether pasting tables is allowed.</p> <p>If <span class="code">allow</span> is set to <span class="code">false</span>, you must specify the property <span class="code">ignoreMode</span> (type<span class="code"> String</span>) to define how pasted table content is handled. Valid values for <span class="code">ignoreMode</span> are:</p> 
+   <td><p>Defines the behavior when pasting tables.<br /> </p> <p>This node must have the property <code>allow</code> (type <code>Boolean</code>) to define whether pasting tables is allowed.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type<code> String</code>) to define how pasted table content is handled. Valid values for <code>ignoreMode</code> are:</p> 
     <ul> 
-     <li><span class="code">remove</span>: Removes table content.</li> 
-     <li><span class="code">paragraph</span>: Turns table cells into paragraphs.</li> 
+     <li><code>remove</code>: Removes table content.</li> 
+     <li><code>paragraph</code>: Turns table cells into paragraphs.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>list</td> 
    <td>nt:unstructured</td> 
-   <td><p>Defines the behavior when pasting lists.<br /> </p> <p>Must have the property <span class="code">allow</span> (type <span class="code">Boolean</span>) to define whether the pasting of lists is allowed.</p> <p>If <span class="code">allow</span> is set to <span class="code">false</span>, you must specify the property <span class="code">ignoreMode</span> (type <span class="code">String</span>) to define how to handle any list content pasted. Valid values for <span class="code">ignoreMode</span> are:</p> 
+   <td><p>Defines the behavior when pasting lists.<br /> </p> <p>Must have the property <code>allow</code> (type <code>Boolean</code>) to define whether the pasting of lists is allowed.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type <code>String</code>) to define how to handle any list content pasted. Valid values for <code>ignoreMode</code> are:</p> 
     <ul> 
-     <li><span class="code">remove</span>: Removes list content.</li> 
-     <li><span class="code">paragraph</span>: Turns list items into paragraphs.</li> 
+     <li><code>remove</code>: Removes list content.</li> 
+     <li><code>paragraph</code>: Turns list items into paragraphs.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -272,7 +272,7 @@ To configure which formats are allowed when pasting text into AEM from another p
 
 Authors can apply Styles to change the appearance of a portion of text. The styles are based on CSS classes that you pre-define in your CSS style sheet. Stylized content is enclosed in `span` tags using the `class` attribute to refer to the CSS class. For example:
 
-`<span class=monospaced>Monospaced Text Here</span>`
+`<span class=monospaced>Monospaced Text Here</code>`
 
 When the Styles plug-in is enabled for the first time, no default Styles are available. The pop-up list is empty. To provide the authors with Styles, do the following:
 
@@ -633,7 +633,7 @@ Styles are typically applied on text, but a separate set of Styles can also be a
    >    * **Type** `String[]`
    >    
    >    * **Value**(s) one, or both, of the following, as required:
-   >    * `<li><span class="code">table</span> to allow the editing of table properties; including the styles</li>` `<li><span class="code">cellprops</span> to allow the editing of cell properties; including the styles</li>` 
+   >    * `<li><code>table</code> to allow the editing of table properties; including the styles</li>` `<li><code>cellprops</code> to allow the editing of cell properties; including the styles</li>` 
    >    
    >    
    >

@@ -71,7 +71,7 @@ Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profil
    <td><strong>Additional Flags</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td>crx2 or TarMK with <span class="code">FileDataStore</span></td> 
+   <td>crx2 or TarMK with <code>FileDataStore</code></td> 
    <td>TarMK</td> 
    <td>segment-fds</td> 
    <td>See Troubleshooting section below</td> 
@@ -80,10 +80,10 @@ Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profil
    <td>crx2</td> 
    <td>MongoMK</td> 
    <td>mongo-from-crx2 </td> 
-   <td><span class="code">-T mongo-uri=mongo://mongo-host:mongo-port -T mongo-db=mongo-database-name</span></td> 
+   <td><code>-T mongo-uri=mongo://mongo-host:mongo-port -T mongo-db=mongo-database-name</code></td> 
   </tr> 
   <tr> 
-   <td><span class="inline-comment-marker" data-ref="f44022c9-bcfa-4d04-86a1-7dffe87d094d">TarMK or crx2 with <span class="code">S3DataStore</span></span></td> 
+   <td><span class="inline-comment-marker" data-ref="f44022c9-bcfa-4d04-86a1-7dffe87d094d">TarMK or crx2 with <code>S3DataStore</code></code></td> 
    <td>TarMK</td> 
    <td>segment-custom-ds</td> 
    <td>See Troubleshooting section below</td> 

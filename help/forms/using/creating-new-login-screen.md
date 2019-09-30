@@ -202,18 +202,18 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ```
    div class="loginContent">
-                       <span class="loginFlow"></span>
-                       <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></span>
-                       <span class="loginTitle"><%= i18n.get("Login") %></span>
+                       <span class="loginFlow"></code>
+                       <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
+                       <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
    
    To
    
    div class="loginContent">
-                       <span class="loginFlow"></span>
-                       <span class="loginVersion"><%= i18n.get("My Welcome Message") %></span>
-                       <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></span>
-                       <span class="loginTitle"><%= i18n.get("Login") %></span>
+                       <span class="loginFlow"></code>
+                       <span class="loginVersion"><%= i18n.get("My Welcome Message") %></code>
+                       <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
+                       <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
    ```
 

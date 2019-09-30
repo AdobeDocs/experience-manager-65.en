@@ -122,8 +122,8 @@ Demo custom toolbar layout
       <c:choose>
        <c:when test="${loop.index eq 3}">
                      <div class="btn-group dropdown">   
-                       <button type="button" class="btn btn-primary dropdown-toggle label" data-toggle="dropdown">Actions <span class="caret"></span></button>
-                       <button type="button" class="btn btn-primary dropdown-toggle icon" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span></button>
+                       <button type="button" class="btn btn-primary dropdown-toggle label" data-toggle="dropdown">Actions <span class="caret"></code></button>
+                       <button type="button" class="btn btn-primary dropdown-toggle icon" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></code></button>
              <ul class="dropdown-menu" role="menu">
                            <li>
                                <div id="${toolbarItem.id}_guide-item">

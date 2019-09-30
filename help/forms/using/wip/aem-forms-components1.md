@@ -31,11 +31,11 @@ Drops a page footer in the adaptive form layout. Includes a rich text out-of-the
   </tr>
   <tr>
    <td>Element Name</td> 
-   <td>The name of the field. You can use Element Name for identifying the field and use value in it. For example, you have field with the name age. You can use <span class="code">age.value</span> to fetch value stored in the field.<br /> </td> 
+   <td>The name of the field. You can use Element Name for identifying the field and use value in it. For example, you have field with the name age. You can use <code>age.value</code> to fetch value stored in the field.<br /> </td> 
   </tr>
   <tr>
    <td>Bind Reference</td> 
-   <td>For XSD based adaptive forms, bind reference property lets you bind values entered in a field to a node in a data model. For example, a value "21" is stored in the field agebox of a form called <span class="code">application</span>. You want to bind the field <span class="code">agebox</span> to the node <span class="code">age</span> in the data model. To bind agebox field to age node, specify the bind reference: <span class="code">/application/age</span></td> 
+   <td>For XSD based adaptive forms, bind reference property lets you bind values entered in a field to a node in a data model. For example, a value "21" is stored in the field agebox of a form called <code>application</code>. You want to bind the field <code>agebox</code> to the node <code>age</code> in the data model. To bind agebox field to age node, specify the bind reference: <code>/application/age</code></td> 
   </tr>
   <tr>
    <td>Default Value</td> 
@@ -66,7 +66,7 @@ When you select the logo image component and tap ![](assets/cmppr.png), you can 
   </tr>
   <tr>
    <td>Element Name</td> 
-   <td>The name of the field. You can use Element Name for identifying the field and use value in it. For example, you have field with the name <span class="code">age</span>. You can use <span class="code">age.value</span> to fetch value stored in the field.</td> 
+   <td>The name of the field. You can use Element Name for identifying the field and use value in it. For example, you have field with the name <code>age</code>. You can use <code>age.value</code> to fetch value stored in the field.</td> 
   </tr>
   <tr>
    <td>Title</td> 
@@ -105,11 +105,11 @@ When you select the text sub-component and tap ![](assets/cmppr.png), you can se
   </tr>
   <tr>
    <td>Element Name</td> 
-   <td>The name of the field. You can use Element Name for identifying the field and use value in it. For example, you have field with the name age. You can use <span class="code">age.value</span> to fetch value stored in the field.<br /> </td> 
+   <td>The name of the field. You can use Element Name for identifying the field and use value in it. For example, you have field with the name age. You can use <code>age.value</code> to fetch value stored in the field.<br /> </td> 
   </tr>
   <tr>
    <td>Bind Reference</td> 
-   <td>For XSD based adaptive forms, bind reference property lets you bind values entered in a field to a node in a data model. For example, a value "21" is stored in the field agebox of a form called <span class="code">application</span>. You want to bind the field <span class="code">agebox</span> to the node <span class="code">age</span> in the data model. To bind agebox field to age node, specify the bind reference: <span class="code">/application/age</span></td> 
+   <td>For XSD based adaptive forms, bind reference property lets you bind values entered in a field to a node in a data model. For example, a value "21" is stored in the field agebox of a form called <code>application</code>. You want to bind the field <code>agebox</code> to the node <code>age</code> in the data model. To bind agebox field to age node, specify the bind reference: <code>/application/age</code></td> 
   </tr>
   <tr>
    <td>Default Value</td> 
@@ -138,11 +138,11 @@ Lets you provide a title for your adaptive form, that your customers use to iden
   </tr>
   <tr>
    <td>Element Name</td> 
-   <td>The name of the field. You can use Element Name for identifying the field and use value in it. For example, you have field with the name age. You can use <span class="code">age.value</span> to fetch value stored in the field.<br /> </td> 
+   <td>The name of the field. You can use Element Name for identifying the field and use value in it. For example, you have field with the name age. You can use <code>age.value</code> to fetch value stored in the field.<br /> </td> 
   </tr>
   <tr>
    <td>Bind Reference</td> 
-   <td>For XSD based adaptive forms, bind reference property lets you bind values entered in a field to a node in a data model. For example, a value "21" is stored in the field agebox of a form called <span class="code">application</span>. You want to bind the field <span class="code">agebox</span> to the node <span class="code">age</span> in the data model. To bind agebox field to age node, specify the bind reference: <span class="code">/application/age</span></td> 
+   <td>For XSD based adaptive forms, bind reference property lets you bind values entered in a field to a node in a data model. For example, a value "21" is stored in the field agebox of a form called <code>application</code>. You want to bind the field <code>agebox</code> to the node <code>age</code> in the data model. To bind agebox field to age node, specify the bind reference: <code>/application/age</code></td> 
   </tr>
   <tr>
    <td>Default Value</td> 

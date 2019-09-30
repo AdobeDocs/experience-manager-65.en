@@ -108,7 +108,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360° viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p> 
     <ul> 
      <li>An aspect ratio of 2:1.</li> 
-     <li>Tagged with the keywords <span class="kbd">equirectangular</span>, or <span class="kbd">spherical</span> and <span class="kbd">panorama</span>, or <span class="kbd">spherical </span>and <span class="kbd">panoramic</span>. See <a href="../../sites/authoring/using/tags.md">Using Tags</a>.</li> 
+     <li>Tagged with the keywords <span class="kbd">equirectangular</code>, or <span class="kbd">spherical</code> and <span class="kbd">panorama</code>, or <span class="kbd">spherical </code>and <span class="kbd">panoramic</code>. See <a href="../../sites/authoring/using/tags.md">Using Tags</a>.</li> 
     </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td> 
   </tr> 
   <tr> 
@@ -166,137 +166,137 @@ See "Viewers release notes" in the table of contents of the [Viewers Reference G
   <tr> 
    <td>Carousel_Dotted_dark</td> 
    <td>Carousel_Set</td> 
-   <td><span class="code">html5_carouselviewer_dotted_dark.css</span></td> 
+   <td><code>html5_carouselviewer_dotted_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>Carousel_Dotted_light</td> 
    <td>Carousel_Set</td> 
-   <td><span class="code">html5_carouselviewer_dotted_light.css</span></td> 
+   <td><code>html5_carouselviewer_dotted_light.css</code></td> 
   </tr> 
   <tr> 
    <td>Carousel_Numeric_dark</td> 
    <td>Carousel_Set</td> 
-   <td><span class="code">html5_carouselviewer_numeric_dark.css</span></td> 
+   <td><code>html5_carouselviewer_numeric_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>Carousel_Numeric_light</td> 
    <td>Carousel_Set</td> 
-   <td><span class="code">html5_carouselviewer_numeric_light.css</span></td> 
+   <td><code>html5_carouselviewer_numeric_light.css</code></td> 
   </tr> 
   <tr> 
    <td>Flyout</td> 
    <td>Flyout_Zoom</td> 
-   <td><span class="code">html5_flyoutviewer.css</span></td> 
+   <td><code>html5_flyoutviewer.css</code></td> 
   </tr> 
   <tr> 
    <td>ImageSet_dark</td> 
    <td>Image Set</td> 
-   <td><span class="code">html5_zoomviewer_dark.css</span></td> 
+   <td><code>html5_zoomviewer_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>ImageSet_light</td> 
    <td>Image Set</td> 
-   <td><span class="code">html5_zoomviewer_light.css</span></td> 
+   <td><code>html5_zoomviewer_light.css</code></td> 
   </tr> 
   <tr> 
    <td>InlineMixedMedia_dark</td> 
    <td>Mixed_Media</td> 
-   <td><span class="code">html5_inlinemixedmediaviewer_dark.css</span></td> 
+   <td><code>html5_inlinemixedmediaviewer_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>InlineMixedMedia_light</td> 
    <td>Mixed_Media</td> 
-   <td><span class="code">html5_inlinemixedmediaviewer_light.css</span></td> 
+   <td><code>html5_inlinemixedmediaviewer_light.css</code></td> 
   </tr> 
   <tr> 
    <td>InlineZoom</td> 
    <td>Flyout_Zoom</td> 
-   <td><span class="code">html5_inlinezoomviewer.css</span></td> 
+   <td><code>html5_inlinezoomviewer.css</code></td> 
   </tr> 
   <tr> 
    <td>MixedMedia_dark</td> 
    <td>Mixed_Media</td> 
-   <td><span class="code">html5_mixedmediaviewer_dark.css</span></td> 
+   <td><code>html5_mixedmediaviewer_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>MixedMedia_light</td> 
    <td>Mixed_Media</td> 
-   <td><span class="code">html5_mixedmediaviewer_light.css</span></td> 
+   <td><code>html5_mixedmediaviewer_light.css</code></td> 
   </tr> 
   <tr> 
    <td>PanoramicImage</td> 
    <td>Panoramic_Image</td> 
-   <td><span class="code">html5_panoramicimage.css</span></td> 
+   <td><code>html5_panoramicimage.css</code></td> 
   </tr> 
   <tr> 
    <td>PanoramicImageVR</td> 
    <td>Panoramic_Image</td> 
-   <td><span class="code">html5_panoramicimage.css</span></td> 
+   <td><code>html5_panoramicimage.css</code></td> 
   </tr> 
   <tr> 
    <td>Shoppable_Banner</td> 
    <td>Interactive_Image</td> 
-   <td><span class="code">html5_interactiveimage.css</span></td> 
+   <td><code>html5_interactiveimage.css</code></td> 
   </tr> 
   <tr> 
    <td>Shoppable_Video_dark</td> 
    <td>Interactive_Video</td> 
-   <td><span class="code">html5_interactivevideoviewer_dark.css</span></td> 
+   <td><code>html5_interactivevideoviewer_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>Shoppable_Video_light</td> 
    <td>Interactive_Video</td> 
-   <td><span class="code">html5_interactivevideovewer_light.css</span></td> 
+   <td><code>html5_interactivevideovewer_light.css</code></td> 
   </tr> 
   <tr> 
    <td>SpinSet_dark</td> 
    <td>Spin_Set</td> 
-   <td><span class="code">html5_spinviewer_dark.css</span></td> 
+   <td><code>html5_spinviewer_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>SpinSet_light</td> 
    <td>Spin_Set</td> 
-   <td><span class="code">html5_spinviewer_light.css</span></td> 
+   <td><code>html5_spinviewer_light.css</code></td> 
   </tr> 
   <tr> 
    <td><p>Video</p> <p>(Includes support for closed captioning)</p> </td> 
    <td>Video</td> 
-   <td><span class="code">html5_videoviewer.css</span></td> 
+   <td><code>html5_videoviewer.css</code></td> 
   </tr> 
   <tr> 
    <td><p>Video360_social</p> <p>(Includes basic video playback controls, video rendering is done in stereo mode, manual point-of-view control is off but gyroscopic control is on, and no social media features)</p> </td> 
    <td>Video_360</td> 
-   <td><span class="code">html5_video360viewersocial.css</span></td> 
+   <td><code>html5_video360viewersocial.css</code></td> 
   </tr> 
   <tr> 
    <td><p>Video360VR</p> <p>(Designed for end users who use virtual reality glasses. Includes basic video playback controls and social media features)</p> </td> 
    <td>Video_360</td> 
-   <td><span class="code">html5_video360viewer.css</span></td> 
+   <td><code>html5_video360viewer.css</code></td> 
   </tr> 
   <tr> 
    <td><p>Video_social</p> <p>(Includes support for closed captioning and social media)</p> </td> 
    <td>Video</td> 
-   <td><span class="code">html5_videoviewersocial.css</span></td> 
+   <td><code>html5_videoviewersocial.css</code></td> 
   </tr> 
   <tr> 
    <td>Zoom_dark<br /> </td> 
    <td>Zoom<br /> </td> 
-   <td><span class="code">html5_basiczoomviewer_dark.css</span></td> 
+   <td><code>html5_basiczoomviewer_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>Zoom_light<br /> </td> 
    <td>Zoom</td> 
-   <td><span class="code">html5_basiczoomviewer_light.css</span></td> 
+   <td><code>html5_basiczoomviewer_light.css</code></td> 
   </tr> 
   <tr> 
    <td>ZoomVertical_dark<br /> </td> 
    <td>Vertical_Zoom</td> 
-   <td><span class="code">html5_zoomverticalviewer_dark.css</span></td> 
+   <td><code>html5_zoomverticalviewer_dark.css</code></td> 
   </tr> 
   <tr> 
    <td>ZoomVertical_light</td> 
    <td>Vertical_Zoom</td> 
-   <td><span class="code">html5_zoomverticalviewer_light.css</span></td> 
+   <td><code>html5_zoomverticalviewer_light.css</code></td> 
   </tr> 
  </tbody> 
 </table>
@@ -464,11 +464,11 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
   </tr> 
   <tr> 
    <td>Segment</td> 
-   <td><p><span class="code">Segment </span>is the default display mode for the out-of-box Interactive Video Viewer presets <span class="code">Shoppable_Video_light</span> and <span class="code">Shoppable_Video_dark</span> and any Interactive Video Viewer presets that you create yourself.</p> <p>In this mode, when there are fewer thumbnails assigned to a video segment than the number of visible spots in the display panel, thumbnails from the next or previous sub-segments are <i>not </i>pulled in to fill any empty spots in the panel. That is, it preserves the display of swatches that were assigned to the particular video segment.</p> </td> 
+   <td><p><code>Segment </code>is the default display mode for the out-of-box Interactive Video Viewer presets <code>Shoppable_Video_light</code> and <code>Shoppable_Video_dark</code> and any Interactive Video Viewer presets that you create yourself.</p> <p>In this mode, when there are fewer thumbnails assigned to a video segment than the number of visible spots in the display panel, thumbnails from the next or previous sub-segments are <i>not </i>pulled in to fill any empty spots in the panel. That is, it preserves the display of swatches that were assigned to the particular video segment.</p> </td> 
   </tr> 
   <tr> 
    <td>Continuous</td> 
-   <td><p>In <span class="code">continuous </span>display mode, if the number of thumbnails in a segment is less than the number that are visible in the panel, the viewer automatically includes the display of thumbnails from the next segment, or the previous segment, in cases where the last thumbnail is displayed.</p> <p>The <a href="../../assets/using/interactive-videos.md">video in this topic</a> is an example of the <span class="code">continuous </span>display mode.</p> </td> 
+   <td><p>In <code>continuous </code>display mode, if the number of thumbnails in a segment is less than the number that are visible in the panel, the viewer automatically includes the display of thumbnails from the next segment, or the previous segment, in cases where the last thumbnail is displayed.</p> <p>The <a href="../../assets/using/interactive-videos.md">video in this topic</a> is an example of the <code>continuous </code>display mode.</p> </td> 
   </tr> 
  </tbody> 
 </table>

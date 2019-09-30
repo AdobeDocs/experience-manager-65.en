@@ -63,7 +63,7 @@ Below you will find a list of areas that are impacted in a typical AEM Upgrade p
   <tr>
    <td>AEM Components/Content</td> 
    <td>Moderate Impact</td> 
-   <td><span class="code">/libs</span> and <span class="code">/apps</span> are easily handled through the upgrade, but <span class="code">/etc</span> usually requires some manual re-application of customizations.</td> 
+   <td><code>/libs</code> and <code>/apps</code> are easily handled through the upgrade, but <code>/etc</code> usually requires some manual re-application of customizations.</td> 
   </tr>
   <tr>
    <td>AEM Services</td> 

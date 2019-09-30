@@ -63,12 +63,12 @@ The **Edit **dialog includes several tabs that provide configuration options des
    <th>Description</th> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol"><strong>Asset Folders</strong></span></td> 
+   <td><span class="uicontrol"><strong>Asset Folders</strong></code></td> 
    <td>Add Item</td> 
    <td>Configures the folders where assets are uploaded using AEM Forms UI. By default, it lists all uploaded assets. For more information about AEM Forms UI, see <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introduction to managing forms</a>.</td> 
   </tr> 
   <tr> 
-   <td style="text-align: center;"><p style="text-align: left;"><span class="uicontrol"><strong>Display</strong></span></p> </td> 
+   <td style="text-align: center;"><p style="text-align: left;"><span class="uicontrol"><strong>Display</strong></code></p> </td> 
    <td>Title Text</td> 
    <td>Title for the Search &amp; Lister component. The default title is <strong>Forms Portal.</strong></td> 
   </tr> 
@@ -88,7 +88,7 @@ The **Edit **dialog includes several tabs that provide configuration options des
    <td>When enabled, hides the full-text search bar.</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol"><strong>Result</strong></span></td> 
+   <td><span class="uicontrol"><strong>Result</strong></code></td> 
    <td>Number Of Results Per Page</td> 
    <td>Configures the maximum number of forms you want to display on a page.</td> 
   </tr> 
@@ -108,7 +108,7 @@ The **Edit **dialog includes several tabs that provide configuration options des
    <td><p>Replaces the word <strong>of</strong> with the specified text (Page 1 <strong>of </strong>51). The default value is <strong>of</strong>.</p> <p>For example, if you specify <strong>out of </strong>in this field, the text changes to Page 1 <strong>out of </strong>51.</p> </td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol"><strong>Form Link</strong></span></td> 
+   <td><span class="uicontrol"><strong>Form Link</strong></code></td> 
    <td>Render Type</td> 
    <td>Controls the listing of forms based on the specified render type. The available options are PDF and HTML. For example, if you select only HTML as the render type, the PDF forms are filtered out.</td> 
   </tr> 
@@ -138,7 +138,7 @@ The **Edit **dialog includes several tabs that provide configuration options des
    <td>Configures the text for the tool tip, which is displayed on hovering the pointer over <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (the PDF icon).</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol"><strong>Style</strong></span></td> 
+   <td><span class="uicontrol"><strong>Style</strong></code></td> 
    <td>Style Type</td> 
    <td>Allows you to specify <strong>No Style, Default Style</strong>, or <strong>Custom Style </strong>for listing the forms.</td> 
   </tr> 

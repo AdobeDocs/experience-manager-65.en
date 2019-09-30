@@ -860,7 +860,7 @@ Tthe `lang` attribute can be used to identify changes in the language of content
 Similarly, the browser can render an uncommon loan word or phrase correctly if the `span` element is used as follows:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</span>.</p>
+<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</code>.</p>
 ```
 
 >[!NOTE]

@@ -121,30 +121,30 @@ Once the project template is created, do the following changes, as required:
    <td><strong>Description</strong></td> 
   </tr> 
   <tr> 
-   <td><span class="code">render</span></td> 
-   <td>The render function returns the jQuery object for the default HTML element of the widget. The default HTML element should be of focusable type. For example, <span class="code">&lt;a&gt;</span>, <span class="code">&lt;input&gt;</span>, and <span class="code">&lt;li&gt;</span>. The returned element is used as <span class="code">$userControl</span>. If the <span class="code">$userControl</span> specifies the above constraint, the functions of the <span class="code">AbstractWidget</span> class work as expected, else some of the common APIs (focus, click) require changes. </td> 
+   <td><code>render</code></td> 
+   <td>The render function returns the jQuery object for the default HTML element of the widget. The default HTML element should be of focusable type. For example, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;li&gt;</code>. The returned element is used as <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td> 
   </tr> 
   <tr> 
-   <td><span class="code">getEventMap</span></td> 
+   <td><code>getEventMap</code></td> 
    <td>Returns a map to convert HTML events to XFA events. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> This example shows that <span class="code">blur</span> is an HTML event and <span class="code">XFA_EXIT_EVENT</span> is the corresponding XFA event. </td> 
+      }</code><br /> This example shows that <code>blur</code> is an HTML event and <code>XFA_EXIT_EVENT</code> is the corresponding XFA event. </td> 
   </tr> 
   <tr> 
-   <td><span class="code">getOptionsMap</span></td> 
-   <td>Returns a map that provides detail about the action to perform on the change of an option. The keys are the options that are provided to the widget and the values are functions that are called whenever a change in the option is detected. The widget provides handlers for all the common options (except <span class="code">value</span> and <span class="code">displayValue</span>).</td> 
+   <td><code>getOptionsMap</code></td> 
+   <td>Returns a map that provides detail about the action to perform on the change of an option. The keys are the options that are provided to the widget and the values are functions that are called whenever a change in the option is detected. The widget provides handlers for all the common options (except <code>value</code> and <code>displayValue</code>).</td> 
   </tr> 
   <tr> 
-   <td><span class="code">getCommitValue</span></td> 
+   <td><code>getCommitValue</code></td> 
    <td>The jQuery widget framework loads the function whenever the value of the jQuery widget is saved in the XFA model (for example on exit event of a text field). The implementation should return the value saved in the widget. The handler is provided with the new value for the option.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">showValue</span></td> 
-   <td>By default, in XFA on enter event, the <span class="code">rawValue</span> of the field is displayed. This function is called to show the <span class="code">rawValue</span> to the user. </td> 
+   <td><code>showValue</code></td> 
+   <td>By default, in XFA on enter event, the <code>rawValue</code> of the field is displayed. This function is called to show the <code>rawValue</code> to the user. </td> 
   </tr> 
   <tr> 
-   <td><span class="code">showDisplayValue</span></td> 
-   <td>By default, in XFA on exit event, the <span class="code">formattedValue</span> of the field is displayed. This function is called to show the <span class="code">formattedValue</span> to the user. </td> 
+   <td><code>showDisplayValue</code></td> 
+   <td>By default, in XFA on exit event, the <code>formattedValue</code> of the field is displayed. This function is called to show the <code>formattedValue</code> to the user. </td> 
   </tr> 
  </tbody> 
 </table>

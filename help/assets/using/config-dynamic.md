@@ -45,11 +45,11 @@ Other content, such as Dynamic Media viewers, Site pages, and static content wil
 
 If you are a customer of Dynamic Media, you are required to use hybrid delivery as the delivery mechanism for all Dynamic Media content.
 
-#### Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
+## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
 ![](assets/chlimage_1-142.png) 
 
-#### Hybrid publishing architecture for images {#hybrid-publishing-architecture-for-images}
+## Hybrid publishing architecture for images {#hybrid-publishing-architecture-for-images}
 
 ![](assets/chlimage_1-143.png) 
 
@@ -68,9 +68,9 @@ You may choose to implement Dynamic Media only for imaging, only for video, or f
 <table>
  <tbody> 
   <tr> 
-   <td width="20%"><strong>Scenario</strong></td> 
-   <td width="25%"><strong>How it Works</strong></td> 
-   <td width="55%"><strong>Configuration Steps</strong></td> 
+   <td><strong>Scenario</strong></td> 
+   <td ><strong>How it Works</strong></td> 
+   <td><strong>Configuration Steps</strong></td> 
   </tr> 
   <tr> 
    <td>Deliver ONLY images in production</td> 
@@ -171,20 +171,12 @@ To enable dynamic media:
    >
    >To troubleshoot issues with Dynamic Media, see the following logs in the** crx-quickstart/logs/** directory:
    >
-   >    
-   >    
-   >    * ImageServer-&lt;PortId&gt;-&lt;yyyy&gt;&lt;mm&gt;&lt;dd&gt;.log - The ImageServer log provides statistics and analytical information used for analyzing the behavior of the internal ImageServer process.  
-   >      Example of an Image Server log file name: `ImageServer-57346-2019-07-25.log`
-   >    
-   >    
-   >    
+   >* ImageServer-&lt;PortId&gt;-&lt;yyyy&gt;&lt;mm&gt;&lt;dd&gt;.log - The ImageServer log provides statistics and analytical information used for analyzing the behavior of the internal ImageServer process.  
    >
-   >    
-   >    
-   >    * s7access-&lt;yyyy&gt;&lt;mm&gt;&lt;dd&gt;.log - The s7access log records each request made to Dynamic Media through **/is/image** and **/is/content**.
-   >    
-   >    
-   >    
+   >Example of an Image Server log file name: `ImageServer-57346-2019-07-25.log`
+   >
+   >* s7access-&lt;yyyy&gt;&lt;mm&gt;&lt;dd&gt;.log - The s7access log records each request made to Dynamic Media through **/is/image** and **/is/content**.
+   >
    >These logs are only used when Dynamic Media is enabled. They are not included in the **Download Full** package that is generated from the **system/console/status-Bundlelis**t page; when calling Customer Support if you have a Dynamic Media issue, please append both these logs to the issue.
 
 ### If you installed AEM to a different port or context path ... {#if-you-installed-aem-to-a-different-port-or-context-path}
@@ -198,7 +190,6 @@ When Dynamic Media is enabled, the static thumbnail renditions for image assets 
 In AEM:
 
 * The **self** domain in the [externalizer](../../sites/developing/using/externalizer.md) is used to retrieve both the port number and context path.
-
 * If no **self** domain is configured, the port number and context path are retrieved from the Jetty HTTP service.
 
 In an AEM QuickStart WAR deployment, the port number and context path cannot be derived, therefore you must configure a **self** domain. See [externalizer documentation](../../sites/developing/using/externalizer.md) on how to configure the **self** domain.
@@ -230,7 +221,6 @@ To disable Dynamic Media after it has been enabled:
    >
    >After the Dynamic Media run mode is disabled, the workflow step that generates the *cqdam.pyramid.tiff* rendition is skipped automatically. This also disables dynamic rendition support and other Dynamic Media features.
    >
-   >
    >Also note that when Dynamic Media run mode is disabled after configuring the AEM server, all assets that were uploaded under that run mode are now invalid.
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
@@ -246,10 +236,6 @@ For all upgrades, either with or without the compatibility package, you can copy
 To migrate any custom viewer presets and configurations that you have created from `/etc` to `/conf`, run the following Linux curl command:
 
 `curl -u admin:admin -X POST http://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
-
-```
-
-```
 
 ## Configuring Image Replication {#configuring-image-replication}
 
@@ -301,13 +287,9 @@ To set up authentication:
 1. On the **Edit User Settings For dynamic-media-replication** page, expand the **Add Private Key from KeyStore file **area and add the following (see the images that follow):
 
     * In the** New Alias** field, enter** **the name of an alias that you will later use in the replication configuration; for example, **replication**.
-    
     * Tap **KeyStore File**. Navigate to the KeyStore file provided to you by Adobe, select it, then tap **Open**.  
-    
-    * In the** KeyStore File Password** field, enter the KeyStore File password. This is **not** the KeyStore password that you created in Step 5 but is the KeyStore File password Adobe provides in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a KeyStore File password.
-    
+    * In the **KeyStore File Password** field, enter the KeyStore File password. This is **not** the KeyStore password that you created in Step 5 but is the KeyStore File password Adobe provides in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a KeyStore File password.
     * In the **Private Key Password** field, enter the private key password (may be the same private key password provided in the previous step). Adobe provides the private key password in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a private key password.  
-    
     * In the** Private Key Alias** field, enter the private key alias. For example, `*companyname*-alias`. Adobe provides the private key alias in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a private key alias.
 
    ![](assets/edit_settings_fordynamic-media-replication2.png)
@@ -325,12 +307,10 @@ To configure the replication agent:
 1. Tap **Edit**.
 1. Tap the **Settings** tab, then enter the following:
 
-    * **Enabled **- Select this check box to enable the replication agent.
-    * **Region **- Set to the appropriate region: North America, Europe, or Asia
+    * **Enabled** - Select this check box to enable the replication agent.
+    * **Region** - Set to the appropriate region: North America, Europe, or Asia
     * **Tenant ID** - This value is the name of your company/tenant that is publishing to the Replication Service. This value is the Tenant ID that Adobe provides in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive this.
-
     * **Key Store Alias** - This value is the same as the** New Alias** value set when generating the key in [Setting Up Authentication](#setting-up-authentication); for example, `replication`. (See step 7 in [Setting Up Authentication](#setting-up-authentication).)
-
     * **Key Store Password** - This is the KeyStore password that was created when you clicked/tapped **Create KeyStore**. Adobe does not provide this password. See** **step 5 of [Setting up Authentication](#setting-up-authentication).
 
    The following image shows the replication agent with sample data:
@@ -532,15 +512,12 @@ As part of the configuration, you need to enter a registration ID, video service
 
 To configure dynamic media cloud services:
 
-##
-
 1. In AEM, tap or click the AEM logo to access the global navigation console and tap **Tools **&gt; **Cloud Services** &gt; **Dynamic Media Configuration (Pre-6.3)**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, select **global**, then click **Create**.
 1. In the **Create Dynamic Media Configuration** dialog box, in the Title field, type a title.
 1. If you are configuring Dynamic Media for video,
 
     * In the **Registration** **ID** field, type your registration ID.
-    
     * In the **Video Service URL** field, enter the video service URL for the Dynamic Media Gateway.
 
 1. If you are configuring Dynamic Media for imaging, in the **Image Service URL** field, enter the image service URL for the Dynamic Media Gateway.
@@ -555,10 +532,9 @@ You can configure video reporting across multiple installations of AEM using Dyn
 
 **Get started:** Configure video reporting by completing the following three tasks.
 
-1. Create a Video Analytics preset package after you configure Dynamic Media Configuration (Pre 6.3) on the first Author node. This initial task is important because it allows a new configuration to continue using the same report suite. ` ```
-1. Install the Video Analytics preset package to any ***new*** Author node ***before*** you configure Dynamic Media Configuration (Pre 6.3). ``
-
-1. ` ```Verify and debug the package installation.
+1. Create a Video Analytics preset package after you configure Dynamic Media Configuration (Pre 6.3) on the first Author node. This initial task is important because it allows a new configuration to continue using the same report suite.
+1. Install the Video Analytics preset package to any ***new*** Author node ***before*** you configure Dynamic Media Configuration (Pre 6.3). 
+1. Verify and debug the package installation.
 
 ### Creating a Video Analytics Preset package after configuring the first Author node {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
@@ -588,18 +564,19 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
 1. Do any one of the following to verify and, if necessary, debug the package installation:
 
-    * **Check the Video Analytics preset by way of the JCR  
-      **To check the Video Analytics preset by way of the JCR, you must have access to CRXDE Lite.  
+    * **Check the Video Analytics preset by way of the JCR**  
+      To check the Video Analytics preset by way of the JCR, you must have access to CRXDE Lite.  
   
-      AEM - In CRXDE Lite, navigate to /conf/global/settings/  
-      dam/dm/presets/analytics/jcr:content/userdata  
+      AEM - In CRXDE Lite, navigate to `/conf/global/settings/  
+      dam/dm/presets/analytics/jcr:content/userdata`  
   
-      That is http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata  
+      That is `http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`  
   
       If you do not have access to CRXDE Lite on the Author node, you can check the preset through the Publish server.
 
-    * **Check the Video Analytics preset through the Image Server  
-      **You can validate the Video Analytics preset directly by making an Image Server req=userdata request.  
+    * **Check the Video Analytics preset through the Image Server**
+
+      You can validate the Video Analytics preset directly by making an Image Server req=userdata request.  
       For example, to see the Analytics preset on the Author node, you can make the following request:  
   
       `http://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`  
@@ -615,10 +592,10 @@ Make sure that the Video Analytics preset package from the first Author node is 
        trackingServer=aemvideodal.d2.sc.omtrdc.net
       ```
 
-    * **Check the Video Analytics preset through the Video Reporting tool in AEM  
-      **Click **Tools** &gt; **Assets** &gt; **Video Reporting  
+    * **Check the Video Analytics preset through the Video Reporting tool in AEM**  
+      Click **Tools** &gt; **Assets** &gt; **Video Reporting**  
   
-      ** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`  
+      `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`  
   
       If you see the following error message, the report suite is available, but unpopulated. This error is correct--and desired--in a new installation before the system collects any data.
 
@@ -879,12 +856,12 @@ To configure Dynamic Media Image Server settings:
   </tr> 
   <tr> 
    <td>TcpPort.name</td> 
-   <td><span class="code"><em>empty</em></span></td> 
+   <td><code><em>empty</em></code></td> 
    <td>Port number to use for communication with the ImageServer process. By default free port is automatically detected.</td> 
   </tr> 
   <tr> 
    <td>AllowRemoteAccess.name</td> 
-   <td><span class="code"><em>empty</em></span></td> 
+   <td><code><em>empty</em></code></td> 
    <td><p>Allow or disallow remote access to ImageServer process. If false, the image server listens only on localhost.</p> <p>Default externalizer settings that point to the localhost need to specify the actual domain or IP address of the specific VM instance. The reason for this is because the localhost may be pointing to the parent system of the VM.</p> <p>Domains or IP addresses for the VM may need to have a host file entry so that it can resolve itself.</p> </td> 
   </tr> 
   <tr> 
@@ -1321,11 +1298,11 @@ See [Delivering Dynamic Media Assets](../../assets/using/delivering-dynamic-medi
   </tr> 
   <tr> 
    <td>Copy an image URL</td> 
-   <td><p>The Copy URL dialog box displays a URL similar to following (URL is for demonstration purposes only):</p> <p><span class="code">http://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</span></p> <p>Where <span class="code">IMAGESERVICEPUBLISHNODE</span> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
+   <td><p>The Copy URL dialog box displays a URL similar to following (URL is for demonstration purposes only):</p> <p><code>http://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</code></p> <p>Where <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Copy a viewer URL</td> 
-   <td><p>The Copy URL dialog box displays a URL similar to the following (URL is for demonstration purposes only):</p> <p><span class="code">http://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=http://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</span></p> <p>Where <span class="code">PUBLISHNODE</span> refers to the regular AEM publish node and <span class="code">IMAGESERVICEPUBLISHNODE</span> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
+   <td><p>The Copy URL dialog box displays a URL similar to the following (URL is for demonstration purposes only):</p> <p><code>http://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=http://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Where <code>PUBLISHNODE</code> refers to the regular AEM publish node and <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Copy a viewer's embed code</td> 
@@ -1347,7 +1324,7 @@ See [Delivering Dynamic Media Assets](../../assets/using/delivering-dynamic-medi
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
        "asset" : "/content/dam/path/to/Image.jpg" }
        }).init();
-       &lt;/script&gt;</code></p> <p>Where <span class="code">PUBLISHNODE</span> refers to the regular AEM publish node and <span class="code">IMAGESERVICEPUBLISHNODE</span> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
+       &lt;/script&gt;</code></p> <p>Where <code>PUBLISHNODE</code> refers to the regular AEM publish node and <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="../../assets/using/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

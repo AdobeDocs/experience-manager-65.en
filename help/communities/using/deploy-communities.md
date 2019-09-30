@@ -146,8 +146,8 @@ The AEM Communities SCORM engine is required for the [enablement](/help/communit
  <summary>To install a SCORM package</summary> 
  <ol> 
   <li><p>Install the <a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg" target="_blank">cq-social-scorm-package, version 2.3.7</a><strong> </strong>from the Package Share<strong>.</strong></p> </li> 
-  <li><p>Download <strong><span class="code">/libs/social/config/scorm/database_scormengine_data.sql</span></strong> from cq instance and execute it in mysql server to create an upgraded scormEngineDB schema.</p> </li> 
-  <li><p>Add <span class="code">/content/communities/scorm/RecordResults</span> in Excluded Paths property in CSRF filter from <strong>http://&amp;lt;hostname&amp;gt;:&amp;lt;port&amp;gt;/system/console/configMgr</strong> on publishers.</p> </li> 
+  <li><p>Download <strong><code>/libs/social/config/scorm/database_scormengine_data.sql</code></strong> from cq instance and execute it in mysql server to create an upgraded scormEngineDB schema.</p> </li> 
+  <li><p>Add <code>/content/communities/scorm/RecordResults</code> in Excluded Paths property in CSRF filter from <strong>http://&amp;lt;hostname&amp;gt;:&amp;lt;port&amp;gt;/system/console/configMgr</strong> on publishers.</p> </li> 
  </ol> 
 </details>
 

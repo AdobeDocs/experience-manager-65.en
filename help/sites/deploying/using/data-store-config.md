@@ -229,35 +229,35 @@ You can use the configuration file with the following options:
  <tbody> 
   <tr> 
    <td>US Standard</td> 
-   <td><span class="code">us-standard</span></td> 
+   <td><code>us-standard</code></td> 
   </tr> 
   <tr> 
    <td>US West</td> 
-   <td><span class="code">us-west-2</span></td> 
+   <td><code>us-west-2</code></td> 
   </tr> 
   <tr> 
    <td>US West (Northern California)</td> 
-   <td><span class="code">us-west-1</span></td> 
+   <td><code>us-west-1</code></td> 
   </tr> 
   <tr> 
    <td>EU (Ireland)<br /> </td> 
-   <td><span class="code">EU</span></td> 
+   <td><code>EU</code></td> 
   </tr> 
   <tr> 
    <td>Asia Pacific (Singapore)<br /> </td> 
-   <td><span class="code">ap-southeast-1</span></td> 
+   <td><code>ap-southeast-1</code></td> 
   </tr> 
   <tr> 
    <td>Asia Pacific (Sydney)<br /> </td> 
-   <td><span class="code">ap-southeast-2</span></td> 
+   <td><code>ap-southeast-2</code></td> 
   </tr> 
   <tr> 
    <td>Asia Pacific (Tokyo)</td> 
-   <td><span class="code">ap-northeast-1</span></td> 
+   <td><code>ap-northeast-1</code></td> 
   </tr> 
   <tr> 
    <td>South America (Sao Paolo)<br /> </td> 
-   <td><span class="code">sa-east-1</span></td> 
+   <td><code>sa-east-1</code></td> 
   </tr> 
  </tbody> 
 </table>

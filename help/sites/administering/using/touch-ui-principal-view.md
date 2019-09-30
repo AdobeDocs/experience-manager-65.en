@@ -132,31 +132,31 @@ It caused confusion as to what exactly is being configured. The following table 
   </tr>
   <tr>
    <td>Read</td> 
-   <td><span class="code">jcr:read</span></td> 
+   <td><code>jcr:read</code></td> 
   </tr>
   <tr>
    <td>Modify</td> 
-   <td><p><span class="code">jcr:modifyProperties</span></p> <p><span class="code">jcr:lockManagement</span></p> <p><span class="code">jcr:versionManagement</span></p> </td> 
+   <td><p><code>jcr:modifyProperties</code></p> <p><code>jcr:lockManagement</code></p> <p><code>jcr:versionManagement</code></p> </td> 
   </tr>
   <tr>
    <td>Create</td> 
-   <td><p><span class="code">jcr:addChildNodes</span></p> <p><span class="code">jcr:nodeTypeManagement</span></p> </td> 
+   <td><p><code>jcr:addChildNodes</code></p> <p><code>jcr:nodeTypeManagement</code></p> </td> 
   </tr>
   <tr>
    <td>Delete</td> 
-   <td><p><span class="code">jcr:removeNode</span></p> <p><span class="code">jcr:removeChildNodes</span></p> </td> 
+   <td><p><code>jcr:removeNode</code></p> <p><code>jcr:removeChildNodes</code></p> </td> 
   </tr>
   <tr>
    <td>Read ACL</td> 
-   <td><span class="code">jcr:readAccessControl</span></td> 
+   <td><code>jcr:readAccessControl</code></td> 
   </tr>
   <tr>
    <td>Edit ACL</td> 
-   <td><span class="code">jcr:modifyAccessControl</span></td> 
+   <td><code>jcr:modifyAccessControl</code></td> 
   </tr>
   <tr>
    <td>Replicate</td> 
-   <td><span class="code">crx:replicate</span></td> 
+   <td><code>crx:replicate</code></td> 
   </tr>
  </tbody>
 </table>

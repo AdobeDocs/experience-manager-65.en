@@ -170,7 +170,7 @@ List of meta-properties of a theme (found in properties page of a theme).
      <li>The user-defined repository path within '/etc' where the clientlibs corresponding to this theme are stored.</li> 
      <li>Default value - '/etc/clientlibs/fd/themes' + relative path of theme asset.</li> 
      <li>If the location does not exist, the folder hierarchy is auto-generated.</li> 
-     <li>When this value is changed, the clientlib node structure is moved to the new location entered.<br /> <em><strong>Note:</strong> If you change default clientlib location, in the CRXDE repository assign <span class="code">crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </span>to <span class="code">forms-users</span> and <span class="code">crx:replicate</span>, <span class="code">jcr:read </span>to <span class="code">fd-service</span> in the new location. Also attach another ACL by adding <span class="kbd">deny jcr:addChildNodes</span> for <span class="code">forms-user</span></em></li> 
+     <li>When this value is changed, the clientlib node structure is moved to the new location entered.<br /> <em><strong>Note:</strong> If you change default clientlib location, in the CRXDE repository assign <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>to <code>forms-users</code> and <code>crx:replicate</code>, <code>jcr:read </code>to <code>fd-service</code> in the new location. Also attach another ACL by adding <span class="kbd">deny jcr:addChildNodes</code> for <code>forms-user</code></em></li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -422,7 +422,7 @@ Options for customizing state styles vary for different components.
    <td><p>Advanced</p> </td> 
    <td><p>Lets you add:</p> 
     <ul> 
-     <li>Properties for <span class="code">::before</span> and <span class="code">::after</span> pseudo elements to add content after or before default content in the selector, and style it.<br /> See <a href="http://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS Pseudo-elements</a>.</li> 
+     <li>Properties for <code>::before</code> and <code>::after</code> pseudo elements to add content after or before default content in the selector, and style it.<br /> See <a href="http://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS Pseudo-elements</a>.</li> 
      <li>Custom CSS code inline to a component and write custom selectors. </li> 
     </ul> <p>When you add a custom CSS code, it overrides the customization you added using the options in the sidebar. </p> </td> 
   </tr> 

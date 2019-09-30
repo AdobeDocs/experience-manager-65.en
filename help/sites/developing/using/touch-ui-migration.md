@@ -34,30 +34,30 @@ When migrating you should be aware of the following (major) differences between 
    <td>Touch-Enabled UI</td> 
   </tr> 
   <tr> 
-   <td>Is described in the JCR repository as a structure of nodes. Every node that represents an element of the UI is called an <em>ExtJS widget</em> and rendered on the client-side by <span class="code">ExtJS</span>.</td> 
+   <td>Is described in the JCR repository as a structure of nodes. Every node that represents an element of the UI is called an <em>ExtJS widget</em> and rendered on the client-side by <code>ExtJS</code>.</td> 
    <td>Also described in the JCR repository as a structure of nodes. However, in this case every node refers to a Sling resource type (Sling component), that is in charge of its rendering. So the UI is (basically) rendered server-side.</td> 
   </tr> 
   <tr> 
-   <td><p><span class="code">sling:resourceType</span></p> 
+   <td><p><code>sling:resourceType</code></p> 
     <ul> 
      <li>not used</li> 
     </ul> </td> 
-   <td><span class="code">sling:resourceType</span> 
+   <td><code>sling:resourceType</code> 
     <ul> 
      <li>used</li> 
-     <li>for example<br /> <span class="code">cq/gui/components/authoring/dialog</span><br /> </li> 
+     <li>for example<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>Dialog nodes:</p> 
     <ul> 
-     <li>Name: <span class="code">dialog</span></li> 
-     <li>jcr:primaryType: <span class="code">cq:Dialog</span></li> 
+     <li>Name: <code>dialog</code></li> 
+     <li>jcr:primaryType: <code>cq:Dialog</code></li> 
     </ul> </td> 
    <td><p>Dialog nodes:</p> 
     <ul> 
-     <li>Name: <span class="code">cq:dialog</span></li> 
-     <li>jcr:primaryType: <span class="code">nt:unstructured</span></li> 
+     <li>Name: <code>cq:dialog</code></li> 
+     <li>jcr:primaryType: <code>nt:unstructured</code></li> 
     </ul> </td> 
   </tr> 
   <tr> 

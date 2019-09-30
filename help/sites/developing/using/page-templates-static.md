@@ -213,47 +213,47 @@ The following table describes how AEM will choose a design.
   <tr> 
    <td><code class="code">leaf
       </code></td> 
-   <td><p><span class="code">root</span></p> <p><span class="code">branch</span></p> <p><span class="code">leaf</span></p> </td> 
-   <td><span class="code">leaf</span></td> 
+   <td><p><code>root</code></p> <p><code>branch</code></p> <p><code>leaf</code></p> </td> 
+   <td><code>leaf</code></td> 
    <td>The most exact match is always taken.<br /> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">leaf</span></td> 
-   <td><p><span class="code">root</span></p> <p><span class="code">branch</span></p> </td> 
-   <td><span class="code">branch</span></td> 
+   <td><code>leaf</code></td> 
+   <td><p><code>root</code></p> <p><code>branch</code></p> </td> 
+   <td><code>branch</code></td> 
    <td>Fall back to the closest match lower in the tree.</td> 
   </tr> 
   <tr> 
-   <td><span class="code">leaf</span></td> 
-   <td><span class="code">root</span></td> 
-   <td><span class="code">root</span></td> 
+   <td><code>leaf</code></td> 
+   <td><code>root</code></td> 
+   <td><code>root</code></td> 
    <td>If all else fails, take what's remaining.<br /> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">branch</span></td> 
-   <td><span class="code">branch</span></td> 
-   <td><span class="code">branch</span></td> 
+   <td><code>branch</code></td> 
+   <td><code>branch</code></td> 
+   <td><code>branch</code></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">branch</span></td> 
-   <td><p><span class="code">branch</span></p> <p><code class="code">leaf
+   <td><code>branch</code></td> 
+   <td><p><code>branch</code></p> <p><code class="code">leaf
        </code></p> </td> 
-   <td><span class="code">branch</span></td> 
+   <td><code>branch</code></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">branch</span></td> 
-   <td><p><span class="code">root</span></p> <p><code class="code">branch
+   <td><code>branch</code></td> 
+   <td><p><code>root</code></p> <p><code class="code">branch
        </code></p> </td> 
-   <td><span class="code">branch</span></td> 
+   <td><code>branch</code></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><span class="code">branch</span></td> 
-   <td><p><span class="code">root</span></p> <p><code class="code">leaf
+   <td><code>branch</code></td> 
+   <td><p><code>root</code></p> <p><code class="code">leaf
        </code></p> </td> 
-   <td><span class="code">root</span></td> 
+   <td><code>root</code></td> 
    <td><p>If there is not an exact match, take the one lower in the tree.</p> <p>The assumption is that this will always be applicable, but further up the tree can be too specific.<br /> </p> </td> 
   </tr> 
  </tbody> 

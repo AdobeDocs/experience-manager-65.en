@@ -484,13 +484,13 @@ $(".tagManager").tagsManager({
 The plugin emits HTML markup (this markup uses basic elements, which may use other plugins internally):
 
 ```
-<span>Pisa</span>
+<span>Pisa</code>
 <a title="Removing tag" tagidtoremove="0"
-   id="myRemover_0" class="myTagRemover" href="#">x</a></span>
+   id="myRemover_0" class="myTagRemover" href="#">x</a></code>
 
-<span id="myTag_1" class="myTag"><span>Rome</span>
+<span id="myTag_1" class="myTag"><span>Rome</code>
 <a title="Removing tag" tagidtoremove="1"
-   id="myRemover_1" class="myTagRemover" href="#">x</a></span>
+   id="myRemover_1" class="myTagRemover" href="#">x</a></code>
 
 <input type="text" data-original-title="" class="input-medium tagManager"
        placeholder="Tags" name="tags" data-provide="typeahead" data-items="6"

@@ -33,7 +33,7 @@ Adding a button with an action (here send letter for review) to the Create Corre
 
 1. Adding the button to the Create Correspondence User Interface
 1. Adding action handling to the button
-1. Adding the LiveCycle process to enable action ``handling
+1. Adding the LiveCycle process to enable action handling
 
 ### Add the button to the Create Correspondence user interface {#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -290,7 +290,7 @@ Handling the action/button on clicking action/button includes logic for:
            '<div class="modal-dialog modal-sm">'+
                '<div class="modal-content">' +
                    '<div class="modal-header">'+
-                       '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+                       '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</code></button>'+
                        '<h4 class="modal-title"> Send Review </h4>'+
                    '</div>'+
                    '<div class="modal-body">'+
@@ -317,7 +317,7 @@ Handling the action/button on clicking action/button includes logic for:
        '</div>';
        ```
 
-### Add the LiveCycle process to enable action <span class="acrolinxCursorMarker"></span>handling {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Add the LiveCycle process to enable action <span class="acrolinxCursorMarker"></code>handling {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 In this scenario, enable the following components, which are a part of the attached components.zip file:
 
@@ -331,7 +331,7 @@ components.zip
 
 >[!NOTE]
 >
->This step is required only if you are on an `` OSGI setup and LC integration is required for the type of customization you are implementing.
+>This step is required only if you are on an OSGI setup and LC integration is required for the type of customization you are implementing.
 
 The LCA process runs on the LiveCycle server and requires the server address and the login credentials.
 
