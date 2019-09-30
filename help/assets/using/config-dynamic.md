@@ -153,7 +153,7 @@ To enable dynamic media:
     * Add **-r dynamicmedia** to the end of the command line when starting the jar file.
 
    ```shell
-   java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -r dynamicmedia
+   java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -r dynamicmedia
 
    ```
 
@@ -220,7 +220,7 @@ To disable Dynamic Media after it has been enabled:
     * Do not add **-r dynamicmedia** to the command line when starting the jar file.
 
    ```shell
-   java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar
+   java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar
 
    ```
 
