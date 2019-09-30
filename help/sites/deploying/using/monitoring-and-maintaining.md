@@ -566,7 +566,7 @@ The following gives a short overview of some of the tools available for monitori
 
 Some of these will be dependent on your operating system.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Tool</td> 

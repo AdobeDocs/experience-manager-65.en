@@ -35,7 +35,7 @@ To fully upload files to AEM Assets that you have created with Adobe InDesign a 
 >  The scripts are written in extendscript, which is similar to javascript. For information about Indesign scripts see [http://www.adobe.com/devnet/indesign/documentation.html#idscripting](http://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 >
 
-### How the Extraction Works {#how-the-extraction-works}
+## How the Extraction Works {#how-the-extraction-works}
 
 The InDesign Server can be integrated with AEM Assets so that files created with InDesign ( `.indd`) can be uploaded, renditions generated, *all* media extracted (for example, video) and stored as assets:
 
@@ -160,8 +160,8 @@ To customize, you can edit the **Arguments** tab of the** Page Extraction** step
   From the drop down list, select the handler that you want to use. An extraction handler operates on a specific rendition, chosen by a related `RenditionPicker` (see the `ExtractionHandler` API).  
   In a standard AEM installation the following is available:
 
-    * IDML Export Extraction Handler  
-      Operates on the `IDML` rendition generated in the MediaExtract step.
+  * IDML Export Extraction Handler
+    Operates on the `IDML` rendition generated in the MediaExtract step.
 
 * **Page Name** 
   Specify the name you want to have assigned to the resulting page. If left blank then the name is "page" (or a derivative if "page" already exists).
@@ -202,7 +202,7 @@ To customize, you can edit the **Arguments** tab of the** Page Extraction** step
 
 If the InDesign server and AEM run on different hosts or either or both these applications do not run on default ports, configure **Day CQ Link Externalizer** to set the host name, port, and content path for the InDesign server.
 
-1. Access Configuration Manager at the URL *http://&lt;AEM server name&gt;:&lt;Port&gt;/system/console/configMgr*. 
+1. Access Configuration Manager at the URL `http://&lt;AEM server name&gt;:&lt;Port&gt;/system/console/configMgr`. 
 1. Locate the configuration **Day CQ Link Externalizer**, and click the **Edit** icon to open it.
 1. Specify the host name and context path for the Indesign server and click **Save**.
 
@@ -227,12 +227,9 @@ To configure the number of parallel IDS jobs:
 
    `Apache Sling Job Queue Configuration`
 
-1. Set:** 
-   **
+1. Set:
 
-    * **Type** - `Parallel`** 
-      **
-    
+    * **Type** - `Parallel`
     * **Maximum Parallel Jobs** - `<*x*>` (as calculated above)
 
 1. Save these changes.

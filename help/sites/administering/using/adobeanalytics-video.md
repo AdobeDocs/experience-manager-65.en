@@ -68,7 +68,7 @@ The XX suffix is the track offset that defines the milestone. For example, speci
 
 The following table describes the default CQ variables that are provided for the Milestones method:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>CQ variables</th> 
@@ -142,7 +142,7 @@ The following table describes the default CQ variables that are provided for the
 
 The Adobe Analytics tracking data examples that follow apply to Milestone tracking using track offsets of 4,8,16,20, and 24, and the following mappings for the CQ variables:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>CQ variable</th> 
@@ -292,7 +292,7 @@ This method is similar to the Milestones method with the difference that the mil
 
    Also, the information sent to Adobe Analytics is less customizable; there are only 3 variables available for mapping:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>eventdata.videoName <br /> </td> 
@@ -349,7 +349,7 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
    The information sent to Adobe Analytics is less customizable. There are only 3 variables available for mapping:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>eventdata.videoName <br /> </td> 

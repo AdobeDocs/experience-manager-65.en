@@ -71,7 +71,7 @@ When replacing an existing Dynamic Media asset (same name and location), you hav
 
 If you are having issues with images and sets, see the following troubleshooting guidance.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Issue</strong></td> 
@@ -136,7 +136,7 @@ If you are having issues with images and sets, see the following troubleshooting
 
 If you are having issues with video, see the following troubleshooting guidance.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Issue</strong></td> 
@@ -204,7 +204,7 @@ If you are having issues with video, see the following troubleshooting guidance.
 
 If you are having issues with viewers, see the following troubleshooting guidance.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Issue</strong></td> 

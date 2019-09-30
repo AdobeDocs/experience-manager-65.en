@@ -95,7 +95,7 @@ message=<html><body>\n\
 
 An AEM Forms application provides several metadata variables (key-value pairs) out of the box. You can use these variables in an email template. The value of the variable is based on the associated forms application. The following table lists all the metadata variables available out of the box:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Key</td> 

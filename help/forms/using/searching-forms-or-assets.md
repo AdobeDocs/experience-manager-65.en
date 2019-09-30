@@ -76,7 +76,7 @@ You can search for assets using one of the following statuses:
 
 You can select any number of asset types. The search returns the union of all the selected asset types.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <th>Option</th> 

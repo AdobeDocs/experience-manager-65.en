@@ -176,7 +176,7 @@ This is delivered as part of the content package:
 
 The differences between Granite UI and ExtJS (used for the classic UI) are also of interest:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>ExtJS</strong></td> 

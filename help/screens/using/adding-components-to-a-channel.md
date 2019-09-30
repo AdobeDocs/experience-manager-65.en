@@ -87,7 +87,7 @@ The **Channel** component allows you to add an entire channel to your project.
 
 The Channel component has the following properties:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -110,7 +110,7 @@ An **Embedded Page** allows you to add an embedded page to your project. For exa
 
 The Embedded page has the following properties:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -137,7 +137,7 @@ An Embedded Sequence allows you to add an embedded sequence channel inside your 
 
 The Embedded Sequence has the following page properties:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -166,7 +166,7 @@ Refer to [**Embedded Sequences**](../../screens/using/embedded-sequences.md) und
 
 The dynamic embedded sequence has the following properties:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -249,7 +249,7 @@ Select the transition icon and click the **Configure** (wrench icon) to open the
 
 The transition component has the following properties:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 
@@ -301,7 +301,7 @@ The Video component allows you to add a video to your Screens project.
 
 The video component has the following properties:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 

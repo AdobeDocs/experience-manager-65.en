@@ -544,7 +544,7 @@ The filters provide a way for you to *exclude* assets from being replicated to t
 
 If you are using Dynamic Media for imaging and/or video, then you can use the default filters that we provide as-is. The following filters are active by default:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td> </td> 
@@ -602,7 +602,7 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
 
    Characters that you can use to filter for replication include the following:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Character to use</strong></td> 

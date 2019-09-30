@@ -455,7 +455,7 @@ If using Adobe Target as the targeting engine and you have A4T Analytics configu
 
 The following success metrics are available (used for publish only):
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Conversion</strong></td> 
@@ -491,7 +491,7 @@ In addition, there are advanced settings that let you determine how to count suc
 
 Use the advanced settings to determine what happens **after** a user encounters the goal metric. The following table shows the available options.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>After a user encounters this goal metric...</strong></td> 
@@ -654,7 +654,7 @@ You can customize the Target component by accessing the component's options in o
 
 1. Configure the Target component settings as described in the following tables.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Option</strong></td> 
@@ -675,7 +675,7 @@ You can customize the Target component by accessing the component's options in o
 
    ![](assets/chlimage_1-39.png) 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Option</strong></td> 
@@ -712,7 +712,7 @@ You can customize the Target component by accessing the component's options in o
 
    ![](assets/chlimage_1-40.png) 
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Option</strong></td> 

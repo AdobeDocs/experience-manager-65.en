@@ -174,7 +174,7 @@ Follow the steps below to make the channel online:
 
 The following table summarizes the events associated with the automatic and manual updates from the device dashboard.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Event</strong></td> 

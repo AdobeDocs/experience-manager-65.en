@@ -90,7 +90,7 @@ The following table shows some sample TagIDs, their elements, and how the TagID 
 The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository :  
 The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository : 
 
-<table border="1" cellpadding="2" cellspacing="2" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>TagID<br /> </strong></td> 

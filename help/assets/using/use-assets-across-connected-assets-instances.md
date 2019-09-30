@@ -53,7 +53,7 @@ usersgroups
 
 The various roles that are involved to configure and use the capability and their corresponding user groups are described below. Local scope is used for the use case where a web page is created by an author. Remote scope is used for the DAM deployment hosting the required assets. The Sites author fetches these remote assets.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th scope="row" style="text-align: center;" valign="middle">Role<br /> </th> 

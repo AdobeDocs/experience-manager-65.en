@@ -124,7 +124,7 @@ It caused confusion as to what exactly is being configured. The following table 
 | 
 |
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <th>Classic UI Privilege Combinations</th> 

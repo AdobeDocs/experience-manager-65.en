@@ -100,7 +100,7 @@ Tap on Adobe Experience Manager in the upper left, navigate to **Tools **> **Wor
 
 Arguments to rasterize PDF or AI workflow
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Process Argument</strong></td> 
@@ -152,7 +152,7 @@ The ExtendScript paths in the arguments of Media Extraction process component in
 
 The following scripts, are used by Dynamic Media integration:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Extend Script name</strong></td> 
@@ -285,7 +285,7 @@ When you create or edit image presets, you have the options described in this se
 
 #### Basic tab options {#basic-tab-options}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Field</strong></td> 
@@ -337,7 +337,7 @@ When you create or edit image presets, you have the options described in this se
 
 #### Advanced tab options {#advanced-tab-options}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Field</strong></td> 

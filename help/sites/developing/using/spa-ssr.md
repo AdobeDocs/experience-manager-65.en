@@ -78,7 +78,7 @@ Alternatively, SSR can be implemented so that Adobe I/O Runtime is responsible f
 
 Both models are valid and supported by AEM. However, one should consider the advantages and disadvantages of each before implementing a particular model.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <th><strong>Bootstrapping</strong></th> 

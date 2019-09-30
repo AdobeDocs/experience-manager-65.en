@@ -208,7 +208,7 @@ Roll out the modifications of source to the selected live copy
 
 A synchronize action pulls the modifications from a source only to the selected live copy. Sync action respects and maintains the local modifications done after canceling inheritance. The local modifications are not overwritten and the canceled inheritance is not re-established. You can initiate a sync action in three ways.
 
-<table border="1" cellpadding="1" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th scope="col" style="text-align: center;"><strong>Where in AEM interface</strong><br /> </th> 

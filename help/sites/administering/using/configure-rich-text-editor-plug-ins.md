@@ -67,7 +67,7 @@ By default, `format`, `link`, `list`, `justify`, and `control` plugins and all t
 
 After activating a plug-in, follow these guidelines to configure `features` property.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td style="text-align: center;"><strong> </strong></td> 
@@ -200,7 +200,7 @@ To configure which formats are allowed when pasting text into AEM from another p
 
 1. Other formats can also be defined using a range of other properties or nodes, also applied to the `htmlPasteRules` node:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 

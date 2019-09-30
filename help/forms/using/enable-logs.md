@@ -54,7 +54,7 @@ The log configuration is made up of the log level and the logger category.
 
 #### Log Destination {#log-destination}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th><strong>Log Destination</strong></th> 
@@ -77,7 +77,7 @@ The log configuration is made up of the log level and the logger category.
 
 #### Log Levels {#log-levels}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Log Level</th> 
@@ -120,7 +120,7 @@ The log configuration is made up of the log level and the logger category.
 
 #### Logger Categories {#logger-categories}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Log Category</th> 
@@ -149,7 +149,7 @@ In the log URL, the log configuration query string parameter is defined as follo
 
 For example:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Log Configuration</th> 

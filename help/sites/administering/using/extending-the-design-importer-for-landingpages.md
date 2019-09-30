@@ -479,7 +479,7 @@ The components that expose properties configurable via OSGI console are as follo
 
 The below table briefly describes the properties:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Component</strong></td> 

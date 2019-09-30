@@ -95,7 +95,7 @@ docset: aem65
  <summary>How to request a new feature or report an issue?</summary> 
  <p>Contact Adobe Support to request a feature or to report a bug.</p> 
  <p>During the beta phase, Adobe support can log a JIRA issue on with the following details to report an issue:</p> 
- <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+ <table>
   <tbody> 
    <tr> 
     <td>JIRA field</td> 

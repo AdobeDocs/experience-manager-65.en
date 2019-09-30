@@ -262,7 +262,7 @@ The following predicates are available as preconfigured ExtJS widgets.
 
 #### FulltextPredicate {#fulltextpredicate}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property<br /> </strong></td> 
@@ -284,7 +284,7 @@ The following predicates are available as preconfigured ExtJS widgets.
 
 #### PropertyPredicate {#propertypredicate}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property<br /> </strong></td> 
@@ -311,7 +311,7 @@ The following predicates are available as preconfigured ExtJS widgets.
 
 #### PathPredicate {#pathpredicate}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property<br /> </strong></td> 
@@ -343,7 +343,7 @@ The following predicates are available as preconfigured ExtJS widgets.
 
 #### DatePredicate {#datepredicate}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property<br /> </strong></td> 
@@ -370,7 +370,7 @@ The following predicates are available as preconfigured ExtJS widgets.
 
 #### OptionsPredicate {#optionspredicate}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property<br /> </strong></td> 

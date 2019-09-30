@@ -30,8 +30,7 @@ When organizing a collection of assets, for example, all *Nature* images, you ca
 >Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select Ordered when creating a folder.
 
 1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
-1. 
-   In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
+1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
 1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.
 
 The following (space-separated list of) characters are not supported:
@@ -57,7 +56,6 @@ Before uploading an asset, ensure that it is in a [format](../../assets/using/as
 1. To upload the assets, do one of the following:
 
     * On the toolbar, tap the **Create** **[!UICONTROL]** icon. Then, on the menu, then tap **Files**. You can rename the file in the presented dialog if needed.  
-    
     * In a browser that supports HTML5, drag the assets directly on the Assets UI. The dialog to rename file is not displayed.
 
    ![](assets/create_menu.png)
@@ -96,9 +94,7 @@ Before uploading an asset, ensure that it is in a [format](../../assets/using/as
    >
    >When you select **Replace** in the Name Conflict dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset.
    >
-   >
    >If Asset Insights is enabled to track impressions/clicks with Adobe Analytics, this regenerated asset ID invalidates the data-captured for the asset on Analytics.
-   >
    >
    >A similar situation may occur if content packages of Assets created with AEM 6.1 (or earlier versions) are installed on an AEM 6.2 instance.
 
@@ -174,7 +170,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 #### Upload Job Options {#upload-job-options}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Upload option</strong></td> 
@@ -293,7 +289,7 @@ When uploading image files, including AI, EPS, and PSD files, you can take the f
 * Sharpen images with unsharp masking options
 * Knockout Background
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Option</strong></td> 
@@ -361,7 +357,7 @@ When uploading image files, including AI, EPS, and PSD files, you can take the f
 
 When you upload PostScript (EPS) or Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available in the Upload Job Options dialog box under PostScript Options and Illustrator Options.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Option</strong></td> 
@@ -423,7 +419,7 @@ Use the Crop Options and Color Profile Options, described above, with Photoshop 
 >
 >Templates are not supported in AEM.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Option</strong></td> 
@@ -488,7 +484,7 @@ When you upload a PDF file, you can format it in various ways. You crop its page
 
 Choose from the following options:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Option</strong></td> 
@@ -552,7 +548,7 @@ Choose from the following options:
 
 You can transcode a video file by choosing from a variety of video presets.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Option</strong></td> 

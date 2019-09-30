@@ -62,7 +62,7 @@ The components discussed in this article have their predefined CSS classes. You 
 
 A container is the top- `` level component. Other panels and fields lie under the container component.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -71,7 +71,7 @@ A container is the top- `` level component. Other panels and fields lie under th
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="195"><p><strong>Variables Description</strong></p> </td> 
@@ -102,7 +102,7 @@ Adaptive forms include various types of fields. Each field has a unique class na
 
 Fields include labels, widgets, Help description (both Long and Short description), and Field Help icons (question mark).
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -111,7 +111,7 @@ Fields include labels, widgets, Help description (both Long and Short descriptio
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -136,7 +136,7 @@ Fields include labels, widgets, Help description (both Long and Short descriptio
 
 The HTML element **label** used for the field includes the classes **left** or **top **depending on whether the label is at the top or left.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -145,7 +145,7 @@ The HTML element **label** used for the field includes the classes **left** or *
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -180,7 +180,7 @@ The CSS rules for the label are applied using the **guideFieldLabel **label. If 
 
 Depending on their type, widgets also include classes. Commonly, widgets include the `guideFieldWidget` class. The widgets that ship with HTML normally use the standard HTML element input and select. The styling is done accordingly. You cannot style a custom widget by changing the variables.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -189,7 +189,7 @@ Depending on their type, widgets also include classes. Commonly, widgets include
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables <span class="code"></span></strong></p> </td> 
@@ -286,7 +286,7 @@ The styling for focused, mandatory, and disabled fields is restricted using vari
 
 An author can specify the Help content in the fields using Short and Long description components. Both components have a common class `.guideHelpDescription` and another class `.long`/ `.short`, depending on the type of description. The Help content is enclosed in a paragraph element to override the styling of the description. The Help description (both long and short) is modified using variables starting with widgetshelp, as mentioned in following table:
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -327,7 +327,7 @@ An author can specify the Help content in the fields using Short and Long descri
 
 The Terms and Conditions (TnC `` ``) widget lets you specify terms and conditions. You can customize the widget using the variables described in the following table.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -366,7 +366,7 @@ HTML code for button:
 
 `</button>`
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>CSS Class</strong></p> </td> 
@@ -383,7 +383,7 @@ HTML code for button:
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables <span class="code"></span></strong></p> </td> 
@@ -476,7 +476,7 @@ HTML code for button:
 
 For the widgets, a questionMark is displayed when an author adds a long description in the Help content. The default icon provided in bootstrap is used. To use a custom icon, you can customize the bootstrap icons.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -485,7 +485,7 @@ For the widgets, a questionMark is displayed when an author adds a long descript
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -506,7 +506,7 @@ For the widgets, a questionMark is displayed when an author adds a long descript
 
 You can change the color theme for header and body rows in a table by using the following variables.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -531,7 +531,7 @@ You can change the color theme for header and body rows in a table by using the 
 
 The File Attachment widget of adaptive forms lets you upload files. You can also customize the widget using the variables.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -568,7 +568,7 @@ The File Attachment widget of adaptive forms lets you upload files. You can also
 
 There are four types of navigator tabs. These include tabs on the left, top, in the wizard and accordion. Each navigator has a different class.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Naviagator</strong></p> </td> 
@@ -685,7 +685,7 @@ Tab navigator on top:
 
 Additionally, there are classes to style tab navigators (both left and top) based on whether they have nested/child/sub navigators.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>CSS Class</strong></p> </td> 
@@ -704,7 +704,7 @@ Additionally, there are classes to style tab navigators (both left and top) base
 
 The guideNavIcon class provides a default icon to tab navigators (both left and top) and wizard navigators.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -717,7 +717,7 @@ The guideNavIcon class provides a default icon to tab navigators (both left and 
 >
 >You can change the icon for a particular navigator by providing a CSS class on the panel in authoring, form example &lt;CLASS_NAME&gt;. You add a **&lt;CLASS_NAME&gt;_nav **for the icon of the navigator.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -886,7 +886,7 @@ The guideNavIcon class provides a default icon to tab navigators (both left and 
 
 A Panel includes an optional toolbar and its content.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -895,7 +895,7 @@ A Panel includes an optional toolbar and its content.
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -946,7 +946,7 @@ The panel node is divided into navigators and content. There `` `` is no separat
 
 These variables influence the header bar that is visible on a mobile device or small screen devices that contain panel title and next and back navigators.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -955,7 +955,7 @@ These variables influence the header bar that is visible on a mobile device or s
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -980,7 +980,7 @@ These variables influence the header bar that is visible on a mobile device or s
 
 These variables influence the Scroll indicator, which is an orange arrow that appears on a mobile device or small screen devices. A Scroll indicator indicates that there is content beyond the visible part of the screen. You can scroll down to see it. When you hit the end of content, the arrow disappears.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -989,7 +989,7 @@ These variables influence the Scroll indicator, which is an orange arrow that ap
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -1018,7 +1018,7 @@ These variables influence the Scroll indicator, which is an orange arrow that ap
 
 These variables in the following table influence the mobile fixed toolbar layout.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="121"><p><strong>CSS class </strong></p> </td> 
@@ -1027,7 +1027,7 @@ These variables in the following table influence the mobile fixed toolbar layout
  </tbody> 
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 
@@ -1072,7 +1072,7 @@ These variables in the following table influence the mobile fixed toolbar layout
 
 The **Simple enrollment** theme at /etc/clientlibs/fd/af/guidetheme/simpleEnrollment and the category `guide.theme.simpleEnrollment` also introduce a few variables. If you want to create a theme enhancing simple enrollment, you can use the following ``extra variables:
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="308"><p><strong>Variables </strong></p> </td> 

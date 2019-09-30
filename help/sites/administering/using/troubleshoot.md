@@ -29,7 +29,7 @@ The following section covers some issues that you may encounter when using AEM, 
 
 The following table provides an overview of problems administrators may need to troubleshoot:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Role(s)</strong></td> 

@@ -53,7 +53,7 @@ The Classic UI was deprecated with AEM 6.4 and Adobe does not plan to make furth
 
 The following is a list of recommendations from Product Management for Adobe Experience Manager 6.5:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>My project...</th> 

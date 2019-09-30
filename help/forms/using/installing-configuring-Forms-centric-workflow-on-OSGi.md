@@ -63,7 +63,7 @@ Before you begin to install and configure Forms-centric workflow on OSGi, ensure
 
 * Extra requirements for UNIX-based systems: If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td>expat</td> 

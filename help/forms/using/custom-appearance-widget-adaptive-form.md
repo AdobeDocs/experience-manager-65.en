@@ -114,7 +114,7 @@ Once the project template is created, do the following changes, as required:
 
 1. Integrate the third-party plugin with the framework to enable interaction between the custom appearance framework and the jQuery plugin. The new widget will be functional only after you extend or override the following functions.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Function</strong></td> 

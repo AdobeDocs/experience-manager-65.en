@@ -77,7 +77,7 @@ This component is also responsible for generating data XML from submitted form s
 
 HTML5 forms uses caching to optimize throughput and response time. You can configure the level of the cache service to fine-tune the trade-off between performance and space utilization.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th>Cache Strategy</th> 

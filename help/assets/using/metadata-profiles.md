@@ -4,7 +4,7 @@ seo-title: Metadata Profiles
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 seo-description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 uuid: 05732f17-863a-4aa6-bb1a-9549565be076
-contentOwner: Alva Ware-Bevacqui
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
@@ -48,7 +48,7 @@ A Metadata Profile lets you apply default metadata to assets within a folder. Cr
 
 1. (Optional) Add more components to the Edit Form from the **Build Form** tab, and configure their properties in the **Settings** tab. The following properties are available from the **Build Form **tab:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Component</strong></td> 

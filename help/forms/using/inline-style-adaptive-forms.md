@@ -50,7 +50,7 @@ Text box component before applying inline style properties
 
 Notice the change in text box style as shown in the following image after applying the following CSS properties.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td width="161"><p>Selector</p> </td> 

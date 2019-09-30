@@ -209,23 +209,21 @@ The exact value returned by the Data Element depends on the context. If the Data
 * A web page that has two Dynamic Media zoom viewers; we will refer to them as *viewer1* and *viewer2*.
 
 * **[!UICONTROL ZoomScale]** Data Element points to the **[!UICONTROL ZOOM]** event and its "scale" argument.
-
 * **[!UICONTROL TrackPan]** Rule with the following:
 
-    * Uses the Dynamic Media Viewer **[!UICONTROL PAN]** event as a trigger.
-    * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
+  * Uses the Dynamic Media Viewer **[!UICONTROL PAN]** event as a trigger.
+  * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
 
-* * **[!UICONTROL TrackKey]*** Rule with the following:
+* * **[!UICONTROL TrackKey]** Rule with the following:
 
-    * Uses the key press event from the Core Adobe Launch extension as a trigger.
-    * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
+  * Uses the key press event from the Core Adobe Launch extension as a trigger.
+  * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
 
 Now, assume the end user loads the web page with the two viewers. In *viewer1*, they zoom in to 50% scale; then, in *viewer2*, they zoom in to 25% scale. In *viewer1*, they pan image around, and finally press a key on the keyboard.
 
 The end user's activity results in the following two tracking calls being made to Adobe Analytics:
 
 * The first call occurs because **[!UICONTROL TrackPan]** Rule is triggered when the user pans in *viewer1*. That call sends 50% as a value of **[!UICONTROL ZoomScale]** Data Element because the Data Element will know that the Rule is triggered by *viewer1* and fetch the corresponding scale value;
-
 * The second call occurs because **[!UICONTROL TrackKey]** Rule is triggered when the user pressed a key on the keyboard. That call sends 25% as a value of **[!UICONTROL ZoomScale]** Data Element because the Rule was not triggered by the viewer. As such, the Data Element returns the most up-to-date value.
 
 The sample set up above also affects the life span of the Data Element value. The value of the Data Element managed by the Dynamic Media Viewer is stored in Adobe Launch library code even after the viewer itself is disposed on the web page. This means that if there is a Rule that is triggered by a non-Dynamic Media Viewer extension and references such Data Element, the Data Element returns the last known value, even if the viewer is no longer present on the web page.
@@ -269,7 +267,7 @@ For example, referencing `%event.detail.dm.LOAD.asset%` returns the correct asse
 
 The following table lists Dynamic Media Viewer events and their supported arguments:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td>Viewer event name</td> 

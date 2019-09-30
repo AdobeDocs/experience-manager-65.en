@@ -18,7 +18,7 @@ docset: aem65
 
 ## Release Information {#release-information}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td>Products</td> 

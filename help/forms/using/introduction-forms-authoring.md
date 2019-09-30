@@ -91,7 +91,7 @@ The sidebar comprises the following browsers:
 * **Components browser** 
   Includes components that you can use to build an adaptive form. You can drag components from onto the adaptive form to add form elements, and configure added element as per the requirements. The following table describes the components listed in components browser**.**
 
-<table border="1" cellpadding="1" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th width="150"><strong>Component</strong></th> 

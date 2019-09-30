@@ -19,7 +19,7 @@ This page documents the details of working with using the Messaging component to
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table border="1" cellpadding="4" cellspacing="4" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th colspan="2" style="text-align: center;">Compose Message</th> 
@@ -51,7 +51,7 @@ This page documents the details of working with using the Messaging component to
  </tbody> 
 </table>
 
-<table border="1" cellpadding="4" cellspacing="4" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <th colspan="2" style="text-align: center;">Message List</th> 

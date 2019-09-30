@@ -28,7 +28,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
 
 ### Custom Adaptive Video Encoding Configurations  {#custom-adaptive-video-encoding-configurations}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td> 
@@ -51,7 +51,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
 
 ### Dynamic Media (DMS7) Cloud Configuration {#dynamic-media-dms-cloud-configuration}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td> 
@@ -78,7 +78,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
 
 ### Dynamic Media (DM Hybrid) Cloud Service Configuration {#cloudserviceconfiguration}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td> 
@@ -101,7 +101,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
 
 ### Dynamic Media - YouTube Cloud Service Configuration  {#youtubecloudserviceconfiguration}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td> 
@@ -124,7 +124,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
 
 ### Misc {#misc}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td> 
@@ -145,7 +145,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
  </tbody>
 </table>
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td> 

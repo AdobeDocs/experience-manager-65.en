@@ -167,7 +167,7 @@ You can perform several operations on adaptive form fragments using the AEM Form
 
 1. Click **Select** in the AEM Forms UI toolbar and select an adaptive form fragment. The toolbar displays the following operations you can perform on the selected adaptive form fragment.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="132"><p><strong>Operation</strong></p> </td> 

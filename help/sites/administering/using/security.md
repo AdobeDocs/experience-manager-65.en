@@ -51,7 +51,7 @@ The following tables list each item together with:
 
 *Please change all default passwords* (if you do not delete the account itself in certain circumstances).
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>User ID</td> 
@@ -150,7 +150,7 @@ Where the checkmark is located in the grid also indicates what permissions users
 
 Actions can be performed on a page (resource). For each page in the hierarchy, you can specify which action the user is allowed to take on that page. [Permissions](security.md#permissions%20and%20acls) enable you to allow or deny an action.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Action </strong></td> 
@@ -244,7 +244,7 @@ If a permission is not inherited from the parent node but has at least one local
 
 For an action at a given path:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>* (asterisk)</td> 
@@ -259,7 +259,7 @@ For an action at a given path:
 
 When you hover over the asterisk or exclamation mark, a tooltip provides more details about the declared entries. The tooltip is split into two parts:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Upper part</td> 
@@ -316,7 +316,7 @@ To access the Detail view, in the **Permissions** tab, click **Details** for any
 
 Details are split into two parts:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Upper part</td> 
@@ -366,7 +366,7 @@ This allows the impersonator accounts to complete tasks as if they were using th
 
 The following describes best practices when working with permissions and privileges:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Rule</td> 
@@ -425,7 +425,7 @@ The left tree lists all the users and groups currently in the system. You can se
 
 The tabs provide access to various configurations:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Tab<a href="#setting-permissions"></a></strong></td> 
@@ -723,7 +723,7 @@ There are two different types of path search:
 
 In the search box, you can do the following:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Right arrow key<br /> </td> 

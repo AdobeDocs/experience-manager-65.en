@@ -82,7 +82,7 @@ The Java packages containing the mobile classes are:
 
 The **We.Retail Mobile Demo Site** uses the following mobile components which are located below `/libs/foundation/components`:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Name</td> 

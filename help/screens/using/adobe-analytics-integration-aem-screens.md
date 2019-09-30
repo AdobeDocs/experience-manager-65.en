@@ -80,7 +80,7 @@ Navigate to **Adobe Experience Manager Web Console Configuration** to configure 
 
 The following table highlights the properties with their description for configure Adobe Analytics for AEM Screens:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Property</strong></td> 

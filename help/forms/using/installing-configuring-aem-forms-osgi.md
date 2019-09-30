@@ -53,7 +53,7 @@ Before you begin to install and configure data capture capability of AEM Forms, 
 
     * Install the following 32-bit packages from the installation media:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>expat</td> 

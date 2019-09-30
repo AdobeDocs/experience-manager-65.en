@@ -33,7 +33,7 @@ Perform the following steps to add and configure a Drafts & Submissions componen
 
 1. In the Edit dialog, specify the following details and tap **Done** to save the settings.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <th>Tab</th> 

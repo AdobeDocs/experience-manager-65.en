@@ -4,7 +4,7 @@ seo-title: Mixed Media Sets
 description: Learn how to work with mixed media sets in dynamic media
 seo-description: Learn how to work with mixed media sets in dynamic media
 uuid: cecad772-ed05-46f6-ba44-107195866b0d
-contentOwner: Alva Ware-Bevacqui
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference

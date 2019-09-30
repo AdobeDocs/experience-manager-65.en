@@ -422,7 +422,7 @@ The form data model validates input data based on a list of data type constraint
 
 The following table lists the constraints for input data based on the data source:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Constraints</td> 

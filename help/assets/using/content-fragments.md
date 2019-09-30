@@ -25,15 +25,10 @@ Content fragments can also be delivered in JSON format, using the Sling Model (J
 This and the following pages cover the tasks for creating, configuring and maintaining your content fragments:
 
 * [Managing Content Fragments](../../assets/using/content-fragments-managing.md) - create your content fragments; then edit, publish and reference  
-
 * [Content Fragment Models](../../assets/using/content-fragments-models.md) - enabling, creating and defining your models  
-
 * [Variations - Authoring Fragment Content](../../assets/using/content-fragments-variations.md) - author the fragment content and create variations of the Master  
-
 * [Markdown](../../assets/using/content-fragments-markdown.md) - using markdown syntax for your fragment  
-
 * [Using Associated Content](../../assets/using/content-fragments-assoc-content.md) - adding associated content  
-
 * [Metadata - Fragment Properties](../../assets/using/content-fragments-metadata.md) - viewing and editing the fragment properties
 
 >[!NOTE]
@@ -57,7 +52,7 @@ Content fragments allow you to:
 
 These content fragments can then be assembled to provide experiences over a variety of channels.
 
-### Content Fragments and Content Services {#content-fragments-and-content-services}
+## Content Fragments and Content Services {#content-fragments-and-content-services}
 
 AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages.
 
@@ -76,7 +71,6 @@ Together with the JSON export capabilities of AEM core components, this structur
 >[!NOTE]
 >
 >**Content Fragments** and ** [Experience Fragments](../../sites/authoring/using/experience-fragments.md)** are different features within AEM:
->
 >* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.  
 >
@@ -98,7 +92,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 Content fragments can be either:
 
-* Simple fragments  
+* Simple fragments
   These have no predefined structure. They contain only text, and images.  
   These are based on the Simple Fragment template.
 
@@ -112,12 +106,12 @@ Content fragments are:
 
 * Stored as **Assets**:
 
-    * Content fragments (and their variations) can be created and maintained from the **Assets** console.
-    * Authored and edited in the Content Fragment Editor.
+  * Content fragments (and their variations) can be created and maintained from the **Assets** console.
+  * Authored and edited in the Content Fragment Editor.
 
 * Used in the [page editor by means of the **Content Fragment** component](../../sites/authoring/using/content-fragments.md) (referencing component):
 
-    * The **Content Fragment** component is available to page authors. It allows them to reference, and deliver, the required content fragment in either HTML or JSON format.
+  * The **Content Fragment** component is available to page authors. It allows them to reference, and deliver, the required content fragment in either HTML or JSON format.
 
 Content Fragments are a content structure that:
 
@@ -136,9 +130,9 @@ Assets can be used with a content fragment in several ways; each with its own ad
 
 * **Insert Asset** into a fragment (mixed-media fragments)
 
-    * Are an integral part of the fragment (see [Constituent Parts of a Content Fragment](#constituent-parts-of-a-content-fragment)).
-    * Define the position of the asset.
-    * See [Inserting Assets into your Fragment](../../assets/using/content-fragments-variations.md#inserting-assets-into-your-fragment) in the Fragment Editor for more information.
+  * Are an integral part of the fragment (see [Constituent Parts of a Content Fragment](#constituent-parts-of-a-content-fragment)).
+  * Define the position of the asset.
+  * See [Inserting Assets into your Fragment](../../assets/using/content-fragments-variations.md#inserting-assets-into-your-fragment) in the Fragment Editor for more information.
 
   >[!NOTE]
   >
@@ -146,17 +140,17 @@ Assets can be used with a content fragment in several ways; each with its own ad
 
 * **Associated Content**
 
-    * Are connected to a fragment; but not a fixed part of the fragment (see [Constituent Parts of a Content Fragment](#constituent-parts-of-a-content-fragment)).
-    * Allows some flexibility for positioning.
-    * Are easily available for use (as in-between content) when using the fragment on a page.
-    * See [Associated Content](../../assets/using/content-fragments-assoc-content.md) for more information.
+  * Are connected to a fragment; but not a fixed part of the fragment (see [Constituent Parts of a Content Fragment](#constituent-parts-of-a-content-fragment)).
+  * Allows some flexibility for positioning.
+  * Are easily available for use (as in-between content) when using the fragment on a page.
+  * See [Associated Content](../../assets/using/content-fragments-assoc-content.md) for more information.
 
 * Assets available from the **Assets browser** of the page editor
 
-    * Allow full flexibility for selection of an asset.
-    * Allows some flexibility for positioning.
-    * Does not provide the concept of being approved for a specific fragment.
-    * See [Assets Browser](../../sites/authoring/using/author-environment-tools.md#assets-browser) for more information.
+  * Allow full flexibility for selection of an asset.
+  * Allows some flexibility for positioning.
+  * Does not provide the concept of being approved for a specific fragment.
+  * See [Assets Browser](../../sites/authoring/using/author-environment-tools.md#assets-browser) for more information.
 
 ### Constituent Parts of a Content Fragment {#constituent-parts-of-a-content-fragment}
 
@@ -164,33 +158,33 @@ The content fragment assets are made up of the following parts (either directly 
 
 * **Fragment Elements**
 
-    * Elements correlate to the data fields holding content.
-    * For fragments with structured content, you use a content model to create the content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
-    * For simple fragments:
+  * Elements correlate to the data fields holding content.
+  * For fragments with structured content, you use a content model to create the content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
+  * For simple fragments:
 
-        * The content is held in one (or more) multi-line text field(s), or element(s).  
-        * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](../../sites/developing/using/content-fragment-templates.md)).
+    * The content is held in one (or more) multi-line text field(s), or element(s).  
+    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](../../sites/developing/using/content-fragment-templates.md)).
 
 * **Fragment Paragraphs**
 
-    * Blocks of text, that are:
+  * Blocks of text, that are:
 
-        * separated by vertical spaces (carriage return)   
-        * in multi-line text elements; in either simple or structured fragments
+    * separated by vertical spaces (carriage return)   
+    * in multi-line text elements; in either simple or structured fragments
 
-    * In the [Rich Text](../../assets/using/content-fragments-variations.md#rich-text) and [Markdown](../../assets/using/content-fragments-variations.md#markdown) modes, a paragraph can be formatted as a header, in which case it and the following paragraph belong together as one unit.
-    
+  * In the [Rich Text](../../assets/using/content-fragments-variations.md#rich-text) and [Markdown](../../assets/using/content-fragments-variations.md#markdown) modes, a paragraph can be formatted as a header, in which case it and the following paragraph belong together as one unit.
+
     * Enable content control during page authoring.
 
 * **Assets Inserted into a Fragment (Mixed-Media Fragments)**
 
-    * Assets (images) inserted into the actual fragment and used as the internal content of a fragment.   
-    * Are embedded in the paragraph system of the fragment.
-    * Can be formatted when the [fragment is used/referenced on a page](../../sites/authoring/using/content-fragments.md).
-    * Can only be added to, deleted from, or moved within, a fragment using the fragment editor. These actions cannot be made in the page editor.
-    * Can only be added to, deleted from, or moved within, a fragment using [Rich Text format in the fragment editor](../../assets/using/content-fragments-variations.md#inserting-assets-into-your-fragment).
-    * Can only be added to multi-line text elements (any fragment type).  
-    * Are attached to the preceding text (paragraph).
+  * Assets (images) inserted into the actual fragment and used as the internal content of a fragment.   
+  * Are embedded in the paragraph system of the fragment.
+  * Can be formatted when the [fragment is used/referenced on a page](../../sites/authoring/using/content-fragments.md).
+  * Can only be added to, deleted from, or moved within, a fragment using the fragment editor. These actions cannot be made in the page editor.
+  * Can only be added to, deleted from, or moved within, a fragment using [Rich Text format in the fragment editor](../../assets/using/content-fragments-variations.md#inserting-assets-into-your-fragment).
+  * Can only be added to multi-line text elements (any fragment type).  
+  * Are attached to the preceding text (paragraph).
 
   >[!CAUTION]
   >
@@ -202,25 +196,25 @@ The content fragment assets are made up of the following parts (either directly 
 
 * **Associated Content**
 
-    * This is content external to, but with editorial relevance for, a fragment. Typically images, videos or other fragments.
-    * The individual assets within the collection are available to be used with the fragment in the page editor, when it is added to a page. This means that they are optional, depending on the requirements of the specific channel.
-    * The assets are [associated to fragments via collections](../../assets/using/content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
+  * This is content external to, but with editorial relevance for, a fragment. Typically images, videos or other fragments.
+  * The individual assets within the collection are available to be used with the fragment in the page editor, when it is added to a page. This means that they are optional, depending on the requirements of the specific channel.
+  * The assets are [associated to fragments via collections](../../assets/using/content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
 
-        * Collections can be associated to fragments via templates, as default content, or by authors during fragment authoring.
-        * [Assets (DAM) Collections](../../assets/using/managing-collections-touch-ui.md) are the basis for the associated content of fragments.
+    * Collections can be associated to fragments via templates, as default content, or by authors during fragment authoring.
+    * [Assets (DAM) Collections](../../assets/using/managing-collections-touch-ui.md) are the basis for the associated content of fragments.
 
-    * Optionally you can also add the fragment itself to a collection to aid tracking.
+  * Optionally you can also add the fragment itself to a collection to aid tracking.
 
 * **Fragment Metadata**
 
-    * Use the [Assets metadata schemas](/assets/using/metadata.md).
-    * Tags can be created when you:
+  * Use the [Assets metadata schemas](/assets/using/metadata.md).
+  * Tags can be created when you:
 
-        * Create and author the fragment
-        * Or later:
+    * Create and author the fragment
+    * Or later:
 
-            * By viewing/editing the fragment **Properties** from the console
-            * By editing the **Metadata** when in the fragment editor
+      * By viewing/editing the fragment **Properties** from the console
+      * By editing the **Metadata** when in the fragment editor
 
   >[!CAUTION]
   >
@@ -228,23 +222,23 @@ The content fragment assets are made up of the following parts (either directly 
 
 * **Master**
 
-    * An integral part of the fragment
+  * An integral part of the fragment
 
-        * Every content fragment has one instance of Master.
-        * Master cannot be deleted.
+    * Every content fragment has one instance of Master.
+    * Master cannot be deleted.
 
-    * Master is accessible in the fragment editor under ** [Variations](../../assets/using/content-fragments-variations.md)**.
-    * Master is not a variation as such, but is the basis of all variations.
+  * Master is accessible in the fragment editor under ** [Variations](../../assets/using/content-fragments-variations.md)**.
+  * Master is not a variation as such, but is the basis of all variations.
 
 * **Variations**
 
-    * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
-    * Are created as copies of **Master**, but can then be edited a required; there is usually content overlap between the variations themselves.
-    * Can be defined during fragment authoring or pre-defined in fragment templates.
-    * Stored in the fragment, to help avoid scattering of content copies.
-    * Variations can be [synchronized](../../assets/using/content-fragments-variations.md#synchronizing-with-master) with Master if the Master content has been updated.
-    * Can be [Summarized](../../assets/using/content-fragments-variations.md#summarizing-text) to quickly truncate the text to a predefined length.
-    * Available under the [Variations](../../assets/using/content-fragments-variations.md) tab of the fragment editor.
+  * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
+  * Are created as copies of **Master**, but can then be edited a required; there is usually content overlap between the variations themselves.
+  * Can be defined during fragment authoring or pre-defined in fragment templates.
+  * Stored in the fragment, to help avoid scattering of content copies.
+  * Variations can be [synchronized](../../assets/using/content-fragments-variations.md#synchronizing-with-master) with Master if the Master content has been updated.
+  * Can be [Summarized](../../assets/using/content-fragments-variations.md#summarizing-text) to quickly truncate the text to a predefined length.
+  * Available under the [Variations](../../assets/using/content-fragments-variations.md) tab of the fragment editor.
 
 ### In-Between Content when Page Authoring with Content Fragments {#in-between-content-when-page-authoring-with-content-fragments}
 
@@ -265,26 +259,25 @@ To create, edit and use content fragments you also need:
 
 * **Content Model**
 
-    * Are [enabled and then created using Tools](../../assets/using/content-fragments-models.md).
-    * Required to [create a structured fragment](../../assets/using/content-fragments-managing.md#creating-content-fragments).
-    * Defines the structure of a fragment (title, content elements, tag definitions).
-    * Content models definitions require a title and one data element; everything else is optional. The model defines a minimal scope of the fragment and default content if applicable. Authors cannot change the defined structure when authoring fragment content.
+  * Are [enabled and then created using Tools](../../assets/using/content-fragments-models.md).
+  * Required to [create a structured fragment](../../assets/using/content-fragments-managing.md#creating-content-fragments).
+  * Defines the structure of a fragment (title, content elements, tag definitions).
+  * Content models definitions require a title and one data element; everything else is optional. The model defines a minimal scope of the fragment and default content if applicable. Authors cannot change the defined structure when authoring fragment content.
 
 * **Fragment Template**
 
-    * Required to [create a simple fragment](../../assets/using/content-fragments-managing.md#creating-content-fragments).
-    * Usually [developed during project implementation](../../sites/developing/using/content-fragment-templates.md); cannot be created when authoring.  
-    
-    * Defines the basics properties of a simple fragment (title, number of text elements, tag definitions).
-    * Template definitions require a title and one text element; everything else is optional. The template defines a minimal scope of the fragment and default content if applicable. Authors can later extend a fragment beyond what is defined in the template.
+  * Required to [create a simple fragment](../../assets/using/content-fragments-managing.md#creating-content-fragments).
+  * Usually [developed during project implementation](../../sites/developing/using/content-fragment-templates.md); cannot be created when authoring.  
+  * Defines the basics properties of a simple fragment (title, number of text elements, tag definitions).
+  * Template definitions require a title and one text element; everything else is optional. The template defines a minimal scope of the fragment and default content if applicable. Authors can later extend a fragment beyond what is defined in the template.
 
 * **Content Fragment Component**
 
-    * Instrumental to delivering the fragment in HTML and/or JSON format.
-    * Required to [reference the fragment on a page](../../sites/authoring/using/content-fragments.md).
-    * Responsible for layout and delivery of a fragment; i.e. channels. 
-    * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.  
-    * Dragging a fragment onto a page in authoring will automatically associate the required component.
+  * Instrumental to delivering the fragment in HTML and/or JSON format.
+  * Required to [reference the fragment on a page](../../sites/authoring/using/content-fragments.md).
+  * Responsible for layout and delivery of a fragment; i.e. channels. 
+  * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.  
+  * Dragging a fragment onto a page in authoring will automatically associate the required component.
 
 ## Example Usage {#example-usage}
 

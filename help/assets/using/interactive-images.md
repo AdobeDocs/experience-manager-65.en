@@ -4,7 +4,7 @@ seo-title: Interactive Images
 description: Learn how to work with interactive images in dynamic media
 seo-description: Learn how to work with interactive images in dynamic media
 uuid: 0bdb73f7-6ce9-4cdf-b6b5-a4d3d4e19a23
-contentOwner: Alva Ware-Bevacqui
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
@@ -111,11 +111,11 @@ However, in complex cases, the Quickview URL has different varying elements in a
 
 Consider the following examples of Quickview URLs and their resulting hotspot variables:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td colspan="2" rowspan="3"> 
-    <table border="1" cellpadding="4" cellspacing="0"> 
+    <table> 
      <tbody> 
       <tr> 
        <td valign="top" width="22.271714922048996%"><p>Single SKU, found in the query string.</p> </td> 
@@ -269,12 +269,11 @@ To add hotspots to an image banner:
 
 1. Near the upper-left corner of the page, tap **Add Hotspot** (finger tap icon) to open the Hotspot management page.
 1. Near the upper-left corner of the page, tap **Hotspot**.
-1.
 
-    1. Near the upper-left corner of the Hotspot Management page, tap **Hotspot**.
-    1. On the image, tap a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location.
-    1. Add additional hotspots as necessary by repeating steps a and b.
-    1. (Optional) To delete a hotspot, select it on the image, then tap **Delete **(garbage can icon) under the **Hotspots** heading.
+  1. Near the upper-left corner of the Hotspot Management page, tap **Hotspot**.
+  1. On the image, tap a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location.
+  1. Add additional hotspots as necessary by repeating steps a and b.
+  1. (Optional) To delete a hotspot, select it on the image, then tap **Delete **(garbage can icon) under the **Hotspots** heading.
 
 1. In the Name text field, type the name of the hotspot. This name also appears in the Selected Hotspot drop-down list.
 1. Do one of the following:
@@ -441,7 +440,7 @@ See [Identifying hotspot variables](#optional-identifying-hotspot-variables).
 
 Using our previous Quickview URL examples, you can see, in the following examples, how the Quickview URL is constructed in each case:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top" width="17.035775127768314%"><p>Single SKU, found in the query string</p> </td> 

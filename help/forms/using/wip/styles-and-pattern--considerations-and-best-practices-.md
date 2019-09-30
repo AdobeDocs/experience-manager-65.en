@@ -21,7 +21,7 @@ The service would start identifying and assigning correct fields or panels to th
 
 ## General {#general}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td width="30%">Known patterns and resolution</td> 
@@ -56,7 +56,7 @@ The service would start identifying and assigning correct fields or panels to th
 
 ## Choice Group  {#choice-group}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td width="30%">Pattern</td> 
@@ -71,7 +71,7 @@ The service would start identifying and assigning correct fields or panels to th
 
 ## Form fields {#form-fields}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td width="30%">Pattern</td> 
@@ -98,7 +98,7 @@ The service would start identifying and assigning correct fields or panels to th
 
 ## Lists {#lists}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td width="30%">Pattern</td> 

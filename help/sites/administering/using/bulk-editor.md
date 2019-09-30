@@ -64,7 +64,7 @@ To use the bulk editor to edit multiple items simultaneously:
 1. Double-click the **Bulk Editor** to open it.
 1. Enter your selection requirements:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Field</td> 

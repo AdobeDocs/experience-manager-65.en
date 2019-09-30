@@ -83,7 +83,7 @@ Use the following steps to add support for custom special characters:
 1. Click **Save All**.
 1. Make the changes in the special characters as required:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>To...</strong></td> 

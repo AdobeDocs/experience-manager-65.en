@@ -40,7 +40,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 The following table identifies best practice encoding profiles for adaptive video streaming to mobile and tablet devices, and desktop computers. You can use these presets for any aspect ratio video.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Video Format Codec</strong></td> 
@@ -200,7 +200,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
 
    The following advanced parameters are available to use:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Name</strong></td> 

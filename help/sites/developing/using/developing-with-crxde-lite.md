@@ -52,7 +52,7 @@ You can now use CRXDE Lite to develop your application.
 
 CRXDE Lite offers the following functionality:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Top switcher bar</td> 
@@ -364,7 +364,7 @@ The wizard creates the following elements:
 
 The following table lists all the properties of the .bnd file, their values and descriptions:
 
-<table border="1" cellpadding="1" cellspacing="0" columns="3" header="none" width="400"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Property</strong></td> 

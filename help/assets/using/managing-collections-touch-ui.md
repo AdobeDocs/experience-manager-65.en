@@ -164,8 +164,8 @@ Smart collections are built by saving a search so you can alter their content by
 
 Collection metadata comprises data about the collection, including any tags that are added.
 
-1. From the Collections console, select a collection and tap/click the **Properties **icon from the toolbar.
-1. In the **Collection Metadata **page, view the collection metadata from the **Basic** and **Advanced** tabs.
+1. From the Collections console, select a collection and tap/click the **Properties** icon from the toolbar.
+1. In the **Collection Metadata** page, view the collection metadata from the **Basic** and **Advanced** tabs.
 1. Modify the metadata, as necessary, and then tap/click **Save & Close** from the toolbar to save the changes.
 
 ### Editing collection metadata in bulk {#editing-collection-metadata-in-bulk}
@@ -175,7 +175,7 @@ You can edit the metadata of multiple collections simultaneously. This functiona
 1. In the Collections console, select two or more collections for which you want to edit metadata.
 1. From the toolbar, tap/click the **Properties** icon.
 1. In the **Collection Metadata** page, edit the metadata under the **Basic** and **Advanced** tabs, as necessary.
-1. Tap/click **Save & Close ** from the toolbar, and then close the confirmation dialog to complete the process.
+1. Tap/click **Save &amp; Close** from the toolbar, and then close the confirmation dialog to complete the process.
 1. To append the new metadata with the existing metadata, select **Apend mode**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Tap/click **Submit**.
 
    >[!NOTE]
@@ -186,13 +186,13 @@ You can edit the metadata of multiple collections simultaneously. This functiona
 
 The Search feature within Collections supports both [Searching for Collections](#searching-collections) and [Searching for assets within a Collection](#searching-within-collections).
 
-#### Searching Collections {#searching-collections}
+### Searching Collections {#searching-collections}
 
 You can search collections from the Collections console. When you search with keywords in the Omnisearch box, AEM Assets searches for collection names, metadata, and the tags added to the collections.
 
 If you search for collections from the top level, only individual collections are returned in search results. Assets or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
 
-#### Searching within Collections {#searching-within-collections}
+### Searching within Collections {#searching-within-collections}
 
 In the Collections console, tap/click a collection to open it.
 

@@ -31,7 +31,7 @@ This article lists supported XFA events, properties, and validations honored in 
 
 When an adaptive form is created using an XDP file, you can drag-drop an XFA field onto the adaptive form. The following table lists how XFA fields are mapped to adaptive form fields.
 
-<table border="1" cellpadding="0" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td valign="top" width="200"><p><strong>XFA field or container</strong></p> </td> 
@@ -100,7 +100,7 @@ When an adaptive form is created using an XDP file, you can drag-drop an XFA fie
 
 The following table captures how various XFA scripts defined in the XDP files behave in adaptive forms.
 
-<table border="1" cellpadding="0" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td valign="top" width="234"><p><strong>XFA component properties</strong></p> </td> 
@@ -177,7 +177,7 @@ The following table captures how various XFA scripts defined in the XDP files be
 
 The following table captures how various XFA scripts defined in the XDP file behave in adaptive forms.
 
-<table border="1" cellpadding="0" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td valign="top" width="234"><p><strong>XFA script events</strong></p> </td> 
@@ -226,7 +226,7 @@ The following table captures how various XFA scripts defined in the XDP file beh
 
 The following table captures how XFA validations map to validations in adaptive forms.
 
-<table border="1" cellpadding="0" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td valign="top" width="360"><p><strong>XFA validation</strong></p> </td> 

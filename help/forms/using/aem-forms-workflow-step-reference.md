@@ -170,7 +170,7 @@ To explain inputs for fields of the step, the following database table and JSON 
 
 **Sample CustomerDetails table**
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Property</td> 

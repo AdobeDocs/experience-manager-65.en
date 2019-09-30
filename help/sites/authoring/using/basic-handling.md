@@ -80,7 +80,7 @@ The Navigation panel:
 
 From Navigation the consoles available are:
 
-<table border="0" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td><strong>Console</strong></td> 
@@ -306,7 +306,7 @@ You can view, navigate through, and select (for further action) your resources w
 
 Selecting a specific resource is dependent on a combination of the view and the device:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td> </td> 

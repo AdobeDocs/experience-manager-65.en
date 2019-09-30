@@ -18,7 +18,7 @@ You can achieve higher content velocity using AEM's user-friendly asset discover
 
 AEM supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.
 
-<table border="0" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th scope="col" style="text-align: center;"><strong>Search assets</strong></th> 
@@ -200,7 +200,7 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 You can for assets based on exact values of specific metadata fields, such as, title, description, and author. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (for example author, title, and so on) and the values are case-sensitive.
 
-<table border="1" cellpadding="1" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th scope="col" style="text-align: center;"><strong>Metadata field</strong></th> 
@@ -347,7 +347,7 @@ The asset selector uses the HTML5 Window.postMessage message to send data for th
 
 You can pass the following request parameters in a URL to launch the asset selector in a particular context:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td valign="top"><p><strong>Name</strong></p> </td> 
@@ -526,7 +526,7 @@ Predicates are used to create facets. Administrators can customize the search fa
 
 You can search for digital assets based on one or more of the following properties. Filters that apply on some of these properties are available by default and some other filters can be custom-created to apply on the other properties.
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table>
  <tbody> 
   <tr> 
    <th scope="col" style="text-align: center;"><strong>Search field</strong><br /> </th> 

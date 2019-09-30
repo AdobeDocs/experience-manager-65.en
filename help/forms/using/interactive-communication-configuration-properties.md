@@ -32,7 +32,7 @@ The configuration properties include:
 
 Tap **Document Fragments** **Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for document fragments.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Property</td> 
@@ -78,7 +78,7 @@ Tap **Document Fragments** **Configuration** on the **Adobe Experience Manager W
 
 Tap **Create Correspondence** **Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Agent UI.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Property</td> 
@@ -121,7 +121,7 @@ Tap **Adaptive Form and Interactive Communication Web Channel Configuration** on
 
 Tap **Adaptive Form and Interactive Communication Web Channel Theme Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel themes.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Property</td> 

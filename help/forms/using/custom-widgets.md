@@ -31,7 +31,7 @@ You can create a profile or choose an existing profile to add a custom widget. F
 
 HTML5 forms provide an implementation of the widget framework that can be extended to create new widgets. The implementation is a jQuery widget *abstractWidget* that can be extended to write a new widget. The new widget can be made functional only by extending/overriding the below mentioned functions.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody> 
   <tr> 
    <td>Function/Class</td> 

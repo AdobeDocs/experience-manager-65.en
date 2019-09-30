@@ -33,7 +33,7 @@ Note that it is possible to upgrade directly from AEM versions 6.0 and up to 6.5
 
 Below you will find a list of areas that are impacted in a typical AEM Upgrade project:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table>
  <tbody>
   <tr>
    <td><strong>Component</strong></td> 
