@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Badges Console{#badges-console}

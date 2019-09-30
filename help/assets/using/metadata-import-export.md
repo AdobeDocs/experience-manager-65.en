@@ -8,9 +8,7 @@ contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 discoiquuid: f14f5487-bac1-4192-84cb-970636d57200
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Import and export asset metadata in bulk{#import-and-export-asset-metadata-in-bulk}

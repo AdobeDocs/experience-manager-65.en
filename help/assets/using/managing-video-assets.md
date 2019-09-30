@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: b9cbf283-ebbb-4e33-af19-7b17b4a1e323
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Manage video assets{#manage-video-assets}

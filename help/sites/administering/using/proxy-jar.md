@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Proxy Server Tool (proxy.jar){#proxy-server-tool-proxy-jar}

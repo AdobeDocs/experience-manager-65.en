@@ -10,9 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
 noindex: true
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Configure the Rich Text Editor plug-ins{#configure-the-rich-text-editor-plug-ins}

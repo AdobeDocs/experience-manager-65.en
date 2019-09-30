@@ -10,9 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Managing Image Presets{#managing-image-presets}

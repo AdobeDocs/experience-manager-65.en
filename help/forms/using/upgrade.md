@@ -8,9 +8,7 @@ content-type: reference
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Upgrade to AEM 6.5 Forms{#upgrade-to-aem-forms}

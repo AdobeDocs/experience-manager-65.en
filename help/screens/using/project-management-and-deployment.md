@@ -9,9 +9,7 @@ content-type: reference
 topic-tags: digital-signage-networks-basics
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: cd1483af-8118-46ac-a2ad-42d89c05bdca
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Part 4: Project Management and Deployment{#part-project-management-and-deployment}

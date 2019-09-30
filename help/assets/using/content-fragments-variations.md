@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}

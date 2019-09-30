@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Associated Content{#associated-content}

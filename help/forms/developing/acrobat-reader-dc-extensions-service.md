@@ -8,9 +8,7 @@ contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 977204cd-2cab-453c-805c-d637c7004cf8
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP){#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}

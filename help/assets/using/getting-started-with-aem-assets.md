@@ -8,9 +8,7 @@ uuid: 2f73810f-7e2c-4a01-b59f-73fcdf00bf5c
 contentOwner: alvawb
 discoiquuid: 9a36f7ea-7e2a-4196-9a4d-dbb30b058ae9
 draft: true
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Getting Started with AEM Assets{#getting-started-with-aem-assets}

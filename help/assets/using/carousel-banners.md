@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Carousel Banners{#carousel-banners}

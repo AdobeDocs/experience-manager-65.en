@@ -7,9 +7,7 @@ uuid: 179d372d-b7f6-4771-8349-fc6b7854efac
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
-index: y
-internal: n
-snippet: y
+
 ---
 
 # New features summary | AEM 6.5 Forms{#new-features-summary-aem-forms}

@@ -9,9 +9,7 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Use Layout mode to resize components{#use-layout-mode-to-resize-components}

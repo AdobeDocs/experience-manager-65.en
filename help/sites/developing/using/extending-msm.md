@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Extending the Multi Site Manager{#extending-the-multi-site-manager}

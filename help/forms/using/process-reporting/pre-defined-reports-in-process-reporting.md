@@ -8,9 +8,7 @@ content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Pre-defined reports in Process Reporting{#pre-defined-reports-in-process-reporting}

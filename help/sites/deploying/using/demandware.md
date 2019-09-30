@@ -11,9 +11,7 @@ content-type: reference
 discoiquuid: 52cc3162-b638-410d-854a-383399e2effb
 pagetitle: Deploying eCommerce with Demandware
 redirecttarget: https //github.com/adobe/commerce-salesforce
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Salesforce Commerce Cloud{#salesforce-commerce-cloud}

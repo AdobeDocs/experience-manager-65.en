@@ -10,9 +10,7 @@ topic-tags: managing-checklist
 content-type: reference
 topic-tags: introduction
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Managing Projects - Best Practices Checklist{#managing-projects-best-practices-checklist}

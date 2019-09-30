@@ -7,9 +7,7 @@ uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Create an Interactive Communication{#create-an-interactive-communication}

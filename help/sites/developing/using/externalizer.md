@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Externalizing URLs{#externalizing-urls}

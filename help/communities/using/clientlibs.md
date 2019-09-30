@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Clientlibs for Communities Components{#clientlibs-for-communities-components}

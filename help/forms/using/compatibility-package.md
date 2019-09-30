@@ -10,9 +10,7 @@ topic-tags: installing
 topic-tags: correspondence-management
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Compatibility Package{#compatibility-package}

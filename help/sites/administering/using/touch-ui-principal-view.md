@@ -9,9 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Principal View for Permissions Management{#principal-view-for-permissions-management}

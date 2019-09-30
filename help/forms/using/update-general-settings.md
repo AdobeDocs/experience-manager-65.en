@@ -8,9 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Updating general settings{#updating-general-settings}

@@ -7,9 +7,7 @@ uuid: 2c3dc1f3-5bbf-4aab-aa84-7aef5aabadf6
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b2c09e6b-a1d8-4b30-af2c-988442a3a986
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Transaction Reports Overview{#transaction-reports-overview}

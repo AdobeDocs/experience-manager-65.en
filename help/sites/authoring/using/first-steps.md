@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
-index: y
-internal: n
-snippet: y
+
 ---
 
 # First Steps for Authors{#first-steps-for-authors}

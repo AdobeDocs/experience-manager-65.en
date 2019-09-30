@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: administering
 discoiquuid: f1df8d05-bb61-4bc9-aea1-c6af9e3519b4
-index: y
-internal: n
-snippet: y
+
 ---
 
 # New Project Importer from File{#new-project-importer-from-file}

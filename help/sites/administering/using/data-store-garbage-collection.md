@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Data Store Garbage Collection{#data-store-garbage-collection}

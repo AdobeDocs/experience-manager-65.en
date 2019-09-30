@@ -9,9 +9,7 @@ topic-tags: authoring
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: ef329e45-e651-4bee-8427-694b05519b96
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Download assets from AEM{#download-assets-from-aem}

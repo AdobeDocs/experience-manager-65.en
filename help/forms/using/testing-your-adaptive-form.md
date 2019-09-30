@@ -6,9 +6,7 @@ seo-description: Use automated testing to test multiple adaptive forms at once.
 uuid: 6d182bbc-b47a-4c97-af70-c960b52fdfac
 contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Tutorial: Testing your adaptive form{#tutorial-testing-your-adaptive-form}

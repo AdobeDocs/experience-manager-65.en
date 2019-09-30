@@ -10,9 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 legacypath: /content/docs/en/aem/6-1/release-notes-sp1
-index: y
-internal: n
-snippet: y
+
 ---
 
 # AEM 6.5 Service Pack Release Notes{#aem-service-pack-release-notes}

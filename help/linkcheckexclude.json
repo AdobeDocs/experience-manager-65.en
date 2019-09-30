@@ -1,0 +1,88 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^http"
+        },
+        {
+            "pattern": "^.*corp.adobe.com"
+        },
+        {
+            "pattern": "^.*digitalu.adobe.com"
+        },
+        {
+            "pattern": "^.*apache.org"
+        },
+        {
+            "pattern": "^.*ehow.com"
+        },
+        {
+            "pattern": "^.*api.demdex.com/v1/partner-sites/"
+        },
+        {
+            "pattern": "^.*omniture.com"
+        },
+        {
+            "pattern": "^.*mycompany.com"
+        },
+        {
+            "pattern": "^.*mysite.com"
+        },
+        {
+            "pattern": "^.*foo.com"
+        },
+        {
+            "pattern": "^.*abc.com"
+        },
+        {
+            "pattern": "^.*example.com"
+        },
+        {
+            "pattern": "^.*mysite.co.jp"
+        },
+        {
+            "pattern": "^.*mysite1.com"
+        },
+        {
+            "pattern": "^.*client.com"
+        },
+        {
+            "pattern": "^.*google.com"
+        },
+        {
+            "pattern": "^.*your_clientcode"
+        },
+        {
+            "pattern": "^.*INSERT-DOMAIN-AND-PATH-TO-CODE-HERE"
+        },
+        {
+            "pattern": "^.*flywithus.com"
+        },
+        {
+            "pattern": "^.*flytohawaiiforfree.com"
+        },
+        {
+            "pattern": "^.*training.adobe.com"
+        },
+        {
+            "pattern": "^.*homedepot.com"
+        },
+        {
+            "pattern": "^.*europa.eu"
+        },
+        {
+            "pattern": "^.*github.com"
+        },
+        {
+            "pattern": "^.*html2canvas.hertzen.com"
+        },
+        {
+            "pattern": "^.*adobe.io"
+        },
+        {
+            "pattern": "^.*sling.apache.org"
+        },
+        {
+            "pattern": "^.*localhost.*"
+        }
+    ]
+}

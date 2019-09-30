@@ -8,9 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
-index: y
-internal: n
-snippet: y
+
 ---
 
 # HTML5 forms service proxy{#html-forms-service-proxy}

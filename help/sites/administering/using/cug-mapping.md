@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Custom User Group Mapping in AEM 6.5{#custom-user-group-mapping-in-aem}

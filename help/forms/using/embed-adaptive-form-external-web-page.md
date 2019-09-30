@@ -7,9 +7,7 @@ uuid: d81032dd-af80-4f4b-a717-ee1b89fd3d3d
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Embed adaptive form in external web page{#embed-adaptive-form-in-external-web-page}

@@ -9,9 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 923fc031-1a06-4a9d-94da-a2a4e82c54ee
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Mobile with Content Sync{#mobile-with-content-sync}

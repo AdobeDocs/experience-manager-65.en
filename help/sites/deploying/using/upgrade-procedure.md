@@ -10,9 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 targetaudience: target-audience upgrader
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Upgrade Procedure{#upgrade-procedure}

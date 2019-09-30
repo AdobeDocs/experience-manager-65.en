@@ -7,9 +7,7 @@ page-status-flag: never-activated
 uuid: ea68ca72-bbe7-42d5-9043-97aea7edcd6e
 contentOwner: jsyal
 discoiquuid: 046ec5ae-600d-422f-aa59-c39f16cf71de
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Dispatcher Configurations for AEM Screens{#dispatcher-configurations-for-aem-screens}

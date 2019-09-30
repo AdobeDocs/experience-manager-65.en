@@ -6,9 +6,7 @@ seo-description: Install, configure, and customize an AEM Forms demo package.
 uuid: 0a6ad8f9-0d38-40c3-ad8d-e705edef55f8
 contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Set up and configure We.Gov reference site{#set-up-and-configure-we-gov-reference-site}

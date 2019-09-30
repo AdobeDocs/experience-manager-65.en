@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Migration to the Touch UI{#migration-to-the-touch-ui}

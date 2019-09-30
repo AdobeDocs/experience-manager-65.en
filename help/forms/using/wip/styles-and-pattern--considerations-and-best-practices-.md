@@ -7,9 +7,7 @@ page-status-flag: de-activated
 uuid: 11e4db20-b316-40d9-a88c-1a07cf4d6610
 contentOwner: khsingh
 discoiquuid: 3364a848-91a6-497f-a3c2-ff86f147944f
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Best practices and considerations {#best-practices-and-considerations}

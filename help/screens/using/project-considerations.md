@@ -9,9 +9,7 @@ content-type: reference
 topic-tags: digital-signage-networks-basics
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: 10b81628-46db-4122-bf9e-96f41f080055
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Part 2: Considerations as Projects are Scoped{#part-considerations-as-projects-are-scoped}

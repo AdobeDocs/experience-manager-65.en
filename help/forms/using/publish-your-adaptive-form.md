@@ -7,9 +7,7 @@ uuid: 1b164376-e61a-40aa-9f16-c79d24a72e20
 contentOwner: khsingh
 topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Tutorial: Publish your adaptive form{#tutorial-publish-your-adaptive-form}

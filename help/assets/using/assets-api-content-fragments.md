@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Content Fragments Support in AEM Assets HTTP API{#content-fragments-support-in-aem-assets-http-api}

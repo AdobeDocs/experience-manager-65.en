@@ -9,9 +9,7 @@ topic-tags: document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 noindex: true
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Forms-centric workflow on OSGi{#forms-centric-workflow-on-osgi}

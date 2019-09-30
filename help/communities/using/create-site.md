@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Author a New Community Site{#author-a-new-community-site}

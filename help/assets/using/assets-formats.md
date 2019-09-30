@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: b2a99809-33fc-468c-8dfc-dd0982a3c901
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Assets supported formats{#assets-supported-formats}

@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
-index: y
-internal: n
-snippet: y
+
 ---
 
 # SharePoint Connector{#sharepoint-connector}

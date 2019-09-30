@@ -6,9 +6,7 @@ seo-description: null
 page-status-flag: never-activated
 uuid: f34e64fa-6712-439f-9522-9e6db47d7efc
 discoiquuid: b339261a-e208-4e2e-8ffb-f97a5cbcee8e
-index: y
-internal: n
-snippet: y
+
 ---
 
 # [DO NOT PUBLISH] Add custom plugin to AEM Forms App{#do-not-publish-add-custom-plugin-to-aem-forms-app}

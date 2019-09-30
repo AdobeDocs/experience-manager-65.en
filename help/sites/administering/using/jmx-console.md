@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Monitoring Server Resources Using the JMX Console{#monitoring-server-resources-using-the-jmx-console}

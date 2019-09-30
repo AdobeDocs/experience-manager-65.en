@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Authoring - the Environment and Tools{#authoring-the-environment-and-tools}

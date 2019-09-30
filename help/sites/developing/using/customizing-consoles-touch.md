@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Customizing the Consoles{#customizing-the-consoles}

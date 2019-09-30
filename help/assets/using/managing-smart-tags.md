@@ -8,9 +8,7 @@ contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 discoiquuid: d6814136-118d-4608-a57d-bc913a283a87
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Manage smart tags and searches{#manage-smart-tags-and-searches}

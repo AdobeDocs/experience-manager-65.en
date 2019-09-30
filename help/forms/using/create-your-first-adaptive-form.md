@@ -6,9 +6,7 @@ seo-description: Learn to create business class, interactive, and responsive for
 uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
 topic-tags: introduction
 discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Tutorial: Create your first adaptive form{#tutorial-create-your-first-adaptive-form}

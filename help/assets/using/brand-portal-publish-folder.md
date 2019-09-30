@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
 discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Publish folders to Brand Portal{#publish-folders-to-brand-portal}

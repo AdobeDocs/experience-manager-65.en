@@ -7,9 +7,7 @@ page-status-flag: de-activated
 uuid: 54fcc40f-2e8f-40b5-a5c7-2a6264342dc3
 contentOwner: jsyal
 discoiquuid: a3f0cd27-dcc4-49c5-b80b-5025344278e2
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Compatibility Matrix for AEM Screens Player{#compatibility-matrix-for-aem-screens-player}

@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: use-case-examples
 discoiquuid: ef3e5dce-e36a-45d3-ad5e-db01430477c6
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Hospitality Reservation Activation{#hospitality-reservation-activation}

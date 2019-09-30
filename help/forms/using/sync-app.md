@@ -9,9 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Synchronizing the app{#synchronizing-the-app}

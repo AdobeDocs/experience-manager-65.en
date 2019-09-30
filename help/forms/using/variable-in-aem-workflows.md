@@ -8,9 +8,7 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Variables in AEM Forms workflows{#variables-in-aem-forms-workflows}

@@ -6,9 +6,7 @@ seo-description: Learn how to set up a Visual Studio project to build the AEM Fo
 uuid: 9559e584-2a40-4740-a29a-d7ad66220224
 topic-tags: forms-app
 discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Set up the Visual Studio project and build the Windows app{#set-up-the-visual-studio-project-and-build-the-windows-app}

@@ -10,9 +10,7 @@ topic-tags: mobile-web
 content-type: reference
 discoiquuid: 0aabfb0a-ef9c-4b06-b698-61cad101c3c1
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Creating Sites for Mobile Devices{#creating-sites-for-mobile-devices}

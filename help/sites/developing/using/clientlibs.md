@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Using Client-Side Libraries{#using-client-side-libraries}

@@ -8,9 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Dynamically populating drop-down lists {#dynamically-populating-drop-down-lists}

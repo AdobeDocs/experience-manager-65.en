@@ -8,9 +8,7 @@ contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
-index: y
-internal: n
-snippet: y
+
 ---
 
 # We.Finance Auto Insurance Renewal reference site walkthrough{#we-finance-auto-insurance-renewal-reference-site-walkthrough}

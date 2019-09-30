@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Create a Fully-Featured Website (JSP){#create-a-fully-featured-website-jsp}

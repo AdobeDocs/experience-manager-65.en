@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Messaging Feature{#messaging-feature}

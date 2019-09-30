@@ -10,9 +10,7 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: c5dcc90a-05d2-4701-a625-2b655ad0b458
 pagetitle: Deploying eCommerce with hybris
-index: y
-internal: n
-snippet: y
+
 ---
 
 # SAP Commerce Cloud{#sap-commerce-cloud}

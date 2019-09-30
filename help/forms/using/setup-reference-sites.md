@@ -8,9 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Set up and configure We.Finance and Employee self-service reference sites{#set-up-and-configure-we-finance-and-employee-self-service-reference-sites}

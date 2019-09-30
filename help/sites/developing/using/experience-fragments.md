@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Experience Fragments{#experience-fragments}

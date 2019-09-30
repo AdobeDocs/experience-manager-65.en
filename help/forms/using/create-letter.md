@@ -7,9 +7,7 @@ uuid: 59d0e567-e50b-4507-b33a-5104676c3f0e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2a5c9450-f438-4e3f-8d1d-1b63f256a6b1
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Create Letter{#create-letter}

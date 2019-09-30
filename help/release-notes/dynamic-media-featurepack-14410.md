@@ -10,9 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 5fe1ecc1-821d-430f-823c-c40884cfcbe5
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Dynamic Media feature pack 18912 release notes{#dynamic-media-feature-pack-release-notes}

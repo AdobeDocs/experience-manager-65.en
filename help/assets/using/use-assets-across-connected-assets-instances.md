@@ -8,9 +8,7 @@ contentOwner: asgupta
 topic-tags: authoring
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1c3f02c7-d1a0-4d2e-831b-cf4e6d261a36
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Use Connected Assets to share DAM assets in AEM Sites{#use-connected-assets-to-share-dam-assets-in-aem-sites}

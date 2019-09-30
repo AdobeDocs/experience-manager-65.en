@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 7c8f2cec-870b-41a8-8d98-70e29b495587
-index: y
-internal: n
-snippet: y
+
 ---
 
 # SEO and URL Management Best Practices{#seo-and-url-management-best-practices}

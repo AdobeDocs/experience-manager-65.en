@@ -8,9 +8,7 @@ contentOwner: asgupta
 topic-tags: troubleshoot
 products: SG_EXPERIENCEMANAGER
 discoiquuid: fc882c2f-4e52-4396-9373-03e5b2ab76dc
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Troubleshoot issues with AEM Rich Text Editor{#troubleshoot-issues-with-aem-rich-text-editor}

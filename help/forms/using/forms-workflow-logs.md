@@ -8,9 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Logging in AEM Forms workflows{#logging-in-aem-forms-workflows}

@@ -9,9 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: developing
 discoiquuid: 3cec9266-4032-46b9-9c75-16da64bfea7d
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Configuring Adobe Analytics with AEM Screens{#configuring-adobe-analytics-with-aem-screens}

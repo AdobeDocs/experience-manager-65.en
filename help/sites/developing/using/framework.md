@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
-index: y
-internal: n
-snippet: y
+
 ---
 
 # AEM Tagging Framework{#aem-tagging-framework}

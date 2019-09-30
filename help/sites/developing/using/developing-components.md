@@ -10,9 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Developing AEM Components{#developing-aem-components}

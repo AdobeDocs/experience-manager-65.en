@@ -8,9 +8,7 @@ content-type: reference
 topic-tags: developing
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: e4ecc179-e421-4687-854c-14d31bed031d
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Embedding a REACT application using the AEM SPA Editor and Integrating with AEM Screens Analytics{#embedding-a-react-application-using-the-aem-spa-editor-and-integrating-with-aem-screens-analytics}

@@ -8,9 +8,7 @@ uuid: f64d2f4b-edcd-47d0-a42d-5c9997728a92
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f6e3f1f8-991c-4494-9afb-5116b96da7dc
-index: y
-internal: n
-snippet: y
+
 ---
 
 # DO NOT PUBLISH - Synchronize AEM Forms on JEE assets {#do-not-publish-synchronize-aem-forms-on-jee-assets}

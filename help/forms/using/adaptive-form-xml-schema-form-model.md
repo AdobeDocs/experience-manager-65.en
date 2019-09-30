@@ -7,9 +7,7 @@ uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Creating adaptive forms using XML Schema{#creating-adaptive-forms-using-xml-schema}

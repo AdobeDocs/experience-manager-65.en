@@ -9,9 +9,7 @@ topic-tags: release-notes
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Known Issues{#known-issues}

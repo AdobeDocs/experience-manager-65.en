@@ -7,9 +7,7 @@ uuid: 63a2f000-c4c5-40e8-ab3f-c7c44c79ec09
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Introduction to HTML5 forms{#introduction-to-html-forms}

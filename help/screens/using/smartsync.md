@@ -8,9 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: administering
 content-type: reference
 discoiquuid: 822dfbc1-3584-4509-a35c-1d68e5f84509
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Transitioning from ContentSync to SmartSync{#transitioning-from-contentsync-to-smartsync}

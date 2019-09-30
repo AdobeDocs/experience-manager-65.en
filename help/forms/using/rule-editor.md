@@ -7,9 +7,7 @@ uuid: c1b3d6e4-6f36-4352-ab57-9850d718e47c
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Adaptive forms rule editor{#adaptive-forms-rule-editor}

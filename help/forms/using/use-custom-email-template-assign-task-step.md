@@ -6,9 +6,7 @@ seo-description: Custom email templates for forms workflow email notifications
 uuid: ba453d54-813f-4a4f-a82e-1a6a28b6939c
 topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Use custom email templates in an Assign Task step{#use-custom-email-templates-in-an-assign-task-step}

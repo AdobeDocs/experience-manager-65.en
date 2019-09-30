@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Adobe Campaign Components{#adobe-campaign-components}

@@ -8,9 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Using Assembler Service{#using-assembler-service}

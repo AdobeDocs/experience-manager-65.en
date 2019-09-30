@@ -9,9 +9,7 @@ topic-tags: extending-assets
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: cfe3b6e7-c546-41b9-afc9-6c20d38204b3
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Install and configure ImageMagick to work with AEM Assets{#install-and-configure-imagemagick-to-work-with-aem-assets}

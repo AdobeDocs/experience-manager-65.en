@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Messaging Essentials{#messaging-essentials}

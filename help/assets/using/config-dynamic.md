@@ -10,9 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Configuring Dynamic Media - Hybrid mode{#configuring-dynamic-media-hybrid-mode}

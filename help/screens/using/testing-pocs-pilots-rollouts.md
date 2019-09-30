@@ -9,9 +9,7 @@ content-type: reference
 topic-tags: digital-signage-networks-basics
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: 157185f9-c5e3-4a5b-badc-9becb26f1b27
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Part 3: Testing, POCs, Pilots & Rollouts{#part-testing-pocs-pilots-rollouts}

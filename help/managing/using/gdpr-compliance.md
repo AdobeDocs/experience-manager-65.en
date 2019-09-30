@@ -10,9 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: grdp
 discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
-index: y
-internal: n
-snippet: y
+
 ---
 
 # GDPR Readiness{#gdpr-readiness}

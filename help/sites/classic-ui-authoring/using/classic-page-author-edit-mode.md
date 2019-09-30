@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Components for Page Authoring{#components-for-page-authoring}

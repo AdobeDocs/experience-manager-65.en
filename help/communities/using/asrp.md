@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
-index: y
-internal: n
-snippet: y
+
 ---
 
 # ASRP - Adobe Storage Resource Provider{#asrp-adobe-storage-resource-provider}

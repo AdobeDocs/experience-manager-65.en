@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: administering
 discoiquuid: 1b1a36a4-4f95-41e3-b0a8-74249efb0119
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Dispatcher Configurations for AEM Screens{#dispatcher-configurations-for-aem-screens}

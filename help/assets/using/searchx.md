@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: extending-assets
 content-type: reference
 discoiquuid: 7eee90c0-4cb9-437d-a202-5b7bddfa6772
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Extending Assets Search{#extending-assets-search}

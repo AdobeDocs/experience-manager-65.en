@@ -10,9 +10,7 @@ topic-tags: mobile-web
 content-type: reference
 discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Creating Device Group Filters{#creating-device-group-filters}

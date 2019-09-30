@@ -10,9 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 legacypath: /content/help/en/experience-manager/6-4/sites/authoring/using/pa-using.html
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Seeing Page Analytics Data{#seeing-page-analytics-data}

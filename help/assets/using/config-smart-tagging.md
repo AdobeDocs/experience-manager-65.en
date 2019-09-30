@@ -10,9 +10,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 84210f44-aa54-47a9-8109-243316ca33ed
 legacypath: /content/docs/en/aem/6-2/author/assets/managing-assets-touch-ui/configuring-smart-content-services-integration
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Configure Asset tagging using the Smart Content Service{#configure-asset-tagging-using-the-smart-content-service}
