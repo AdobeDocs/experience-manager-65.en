@@ -13,9 +13,9 @@ docset: aem65
 
 ---
 
-# Experience the Published Site{#experience-the-published-site}
+# Experience the Published Site {#experience-the-published-site}
 
-| ** [⇐ Author a New Community Site](../../communities/using/create-site.md)** |** [Authoring Nested Groups ⇒](../../communities/using/nested-groups.md)** |
+| **[⇐ Author a New Community Site](../../communities/using/create-site.md)** |** [Authoring Nested Groups ⇒](../../communities/using/nested-groups.md)** |
 |---|---|
 
 ## Browse to New Site on Publish {#browse-to-new-site-on-publish}
@@ -29,7 +29,7 @@ To minimize confusion as to which member is signed in on author and publish, it 
 
 When first arriving at the published site, the site visitor would typically not already be signed in and would be anonymous.
 
-#### http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
+`http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
 ![](assets/chlimage_1-31.png) 
 
@@ -69,7 +69,7 @@ To protect your community site's content from access by anonymous users through 
    ![](assets/page-properties.png)
 
 1. Enable **Authentication Requirement**.
-1. Add the path of the login page. For example,** /content/......./GetStarted**.
+1. Add the path of the login page. For example,**/content/......./GetStarted**.
 1. Publish the page.
 
 ## Trusted Community Member {#trusted-community-member}
@@ -82,10 +82,11 @@ In the upper right corner, select `Log in`, and sign with username "aaron.mcdona
 
 Once signed in as the registered community member, notice the following menu items to click and explore your community site:
 
-* **Profile **option lets you view and edit your profile.
-* [Messages](../../communities/using/configure-messaging.md) option directs you to direct messaging section, where you can:  
-1. View the direct messages you have recieved (Inbox), sent (Sent Items), and deleted (Trash).  
-  2. Compose new direct messages to send to individuals and groups.
+* **Profile** option lets you view and edit your profile.
+* [Messages](../../communities/using/configure-messaging.md) option directs you to direct messaging section, where you can:
+
+1. View the direct messages you have received (Inbox), sent (Sent Items), and deleted (Trash).  
+1. Compose new direct messages to send to individuals and groups.
 
 * [Notifications](../../communities/using/notifications.md) option directs you to notifications section, where you can view your events of interest and edit notification settings.
 * [Administration](../../communities/using/published-site.md#moderationlink) directs you to AEM Communities Moderation Page, if you have moderation privileges.

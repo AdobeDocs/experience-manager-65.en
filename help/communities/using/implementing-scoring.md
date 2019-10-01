@@ -413,7 +413,7 @@ for example : http://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/prof
 >* may be an obscure, random name - see [Security Checklist](../../sites/administering/using/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) regarding authorizable ID
 >
 
-#### Examples : {#examples}
+### Examples: {#examples}
 
 #### Assign a moderator badge {#assign-a-moderator-badge}
 
@@ -447,7 +447,7 @@ For the communities components delivered, the following tables describe the `ver
 >
 >A new boolean property, `allowBadges`, enables/disables the display of badges for a component instance. It will be configurable in updated [component edit dialogs](../../communities/using/author-communities.md) through a checkbox labeled **Display Badges**.
 
-** [Calendar Component](../../communities/using/calendar.md)** 
+**[Calendar Component](../../communities/using/calendar.md)** 
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verb** |**Description** |
@@ -457,7 +457,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 | UPDATE |member's calendar event or comment is edited |
 | DELETE |member's calendar event or comment is deleted |
 
-** [Comments Component](../../communities/using/comments.md)** 
+**[Comments Component](../../communities/using/comments.md)** 
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** |**Description** |
@@ -467,7 +467,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | UPDATE |member's comment is edited |
 | DELETE |member's comment is deleted |
 
-** [File Library Component](../../communities/using/file-library.md)** 
+**[File Library Component](../../communities/using/file-library.md)** 
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** |**Description** |
@@ -487,7 +487,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | UPDATE |member's forum topic or reply is edited |
 | DELETE |member's forum topic or reply is deleted |
 
-** [Journal Component](../../communities/using/blog-feature.md)** 
+**[Journal Component](../../communities/using/blog-feature.md)** 
 SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verb** |**Description** |
@@ -497,7 +497,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | UPDATE |member's blog article or comment is edited |
 | DELETE |member's blog article or comment is deleted |
 
-** [QnA Component](../../communities/using/working-with-qna.md)** 
+**[QnA Component](../../communities/using/working-with-qna.md)** 
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verb** |**Description** |
@@ -509,7 +509,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | UNSELECT |member's answer is de-selected |
 | DELETE |member's QnA question or answer is deleted |
 
-** [Reviews Component](/communities/using/reviews.md)** 
+**[Reviews Component](/communities/using/reviews.md)** 
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** |**Description** |
@@ -518,7 +518,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 | UPDATE |member's review is edited |
 | DELETE |member's review is deleted |
 
-** [Rating Component](/communities/using/rating.md)** 
+**[Rating Component](/communities/using/rating.md)** 
 SocialEvent `topic`= com/adobe/cq/social/tally/rating
 
 | **Verb** |**Description** |
@@ -526,7 +526,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally/rating
 | ADD RATING |member's content has been up rated |
 | REMOVE RATING |member's content has been down rated |
 
-** [Voting Component](/communities/using/voting.md)** 
+**[Voting Component](/communities/using/voting.md)** 
 SocialEvent `topic`= com/adobe/cq/social/tally/voting
 
 | **Verb** |**Description** |
@@ -577,16 +577,14 @@ If the feature is not working as expected, ensure the data has been correctly en
 It is possible to quickly try scoring and badging using the [Getting Started Tutorial](../../communities/using/getting-started.md) (engage) site :
 
 * access CRXDE Lite on author
-* browse to the base page :
+* browse to the base page:
 
     * /content/sites/engage/en/jcr:content
 
-* add the badgingRules property :
+* add the badgingRules property:
 
-    * **Name** : `badgingRules`
-    
-    * **Type** : `String`
-    
+    * **Name**: `badgingRules`
+    * **Type**: `String`
     * select **Multi**
     * select **Add**
     * enter `/etc/community/badging/rules/forums-badging`
@@ -594,12 +592,10 @@ It is possible to quickly try scoring and badging using the [Getting Started Tut
     * enter `/etc/community/badging/rules/comments-badging`
     * select **OK**
 
-* add the scoringRules property :
+* add the scoringRules property:
 
-    * **Name** : `scoringRules`
-    
-    * **Type** : `String`
-    
+    * **Name**: `scoringRules`
+    * **Type**: `String`
     * select **Multi**
     * select **Add**
     * enter `/etc/community/scoring/rules/forums-scoring`
@@ -616,15 +612,13 @@ Next ensure the forum and comments components allow badges to be displayed :
 * again using CRXDE Lite
 * browse to the forum component
 
-    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+  * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * add allowBadges boolean property, if necessary, and ensure it is true
 
-    * **Name** : `allowBadges`
-    
-    * **Type** : `Boolean`
-    
-    * **Value** : `true`
+  * **Name**: `allowBadges`
+  * **Type**: `Boolean`
+  * **Value**: `true`
 
 ![](assets/chlimage_1-103.png)
 
@@ -637,7 +631,7 @@ Finally,
 * post a new forum topic
 * the page must be refreshed for the badge to show
 
-    * logout and login as a different community member (for example : aaron.mcdonald@mailinator.com / password)
+  * logout and login as a different community member (for example: aaron.mcdonald@mailinator.com/password)
 
 * select the Forum
 

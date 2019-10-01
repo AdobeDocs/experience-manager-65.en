@@ -141,7 +141,7 @@ The latest Javadocs for the installed [feature pack](/communities/using/version-
 
 The screen shots of repository data come from setting up scoring and badging for a forum on two different AEM sites :
 
-1) An AEM site *with *an unique id (community site created using wizard) :
+1. An AEM site *with* a unique id (community site created using wizard) :
 
 * using the Getting Started Tutorial (engage) site created during the [getting started tutorial](../../communities/using/getting-started.md)
 * locate the forum page node
@@ -150,15 +150,11 @@ The screen shots of repository data come from setting up scoring and badging for
 
 * add scoring and badging properties
 
-    * 
-    
       ```    
       scoringRules = [/etc/community/scoring/rules/comments-scoring,
        /etc/community/scoring/rules/forums-scoring]
       ```    
-    
-    * 
-    
+
       ```    
       badgingRules =[/etc/community/badging/rules/comments-scoring,
        /etc/community/badging/rules/forums-scoring]
@@ -175,24 +171,20 @@ The screen shots of repository data come from setting up scoring and badging for
 
 * a user signs in, creates a forum topic, and is awarded a bronze badge
 
-2) An AEM site *without *an unique id :
+1. An AEM site *without* a unique id :
 
 * using the [Community Components guide](/communities/using/components-guide.md)
 * locate the forum page node
 
-    * `/content/community-components/en/forum/jcr:content`
+  * `/content/community-components/en/forum/jcr:content`
 
 * add scoring and badging properties
 
-    * 
-    
-      ```    
+  ```    
       scoringRules = [/etc/community/scoring/rules/comments-scoring,
        /etc/community/scoring/rules/forums-scoring]
       ```    
-    
-    * 
-    
+
       ```    
       badgingRules =[/etc/community/badging/rules/comments-scoring,
        /etc/community/badging/rules/forums-scoring]
@@ -200,16 +192,16 @@ The screen shots of repository data come from setting up scoring and badging for
 
 * locate the forum component node
 
-    * `/content/community-components/en/forum/jcr:content/content/forum`  
-      ( `sling:resourceType = social/forum/components/hbs/forum`)
+  * `/content/community-components/en/forum/jcr:content/content/forum`  
+  ( `sling:resourceType = social/forum/components/hbs/forum`)
 
 * add property to display badges
 
-    * `allowBadges = true`
+  * `allowBadges = true`
 
 * a user signs in, creates a forum topic, and is awarded a bronze badge
 
-3) a user is assigned a moderator badge using cURL :
+1. a user is assigned a moderator badge using cURL :
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" http://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
