@@ -15,7 +15,7 @@ docset: aem65
 
 # Alter the Appearance (HBS){#alter-the-appearance-hbs}
 
-| ** [⇐ Add Comment to Sample Page](../../communities/using/extend-sample-page.md)** |  |
+| **[⇐ Add Comment to Sample Page](../../communities/using/extend-sample-page.md)** |  |
 |---|---|
 
 Now that the components for the custom comment system in the application directory (/apps) are in place, with a resourceSuperType referencing the default comment system and the custom Model/View registered, it is possible to modify the implementation.
@@ -26,7 +26,7 @@ For a simple demonstration, a visual feature, the avatar shown of the signed-in 
 >
 >To use the extension, the instance of the comment system in a website to be affected (/content) must set its resourceType to be the custom comment system.
 
-### Modify the HBS Scripts {#modify-the-hbs-scripts}
+## Modify the HBS Scripts {#modify-the-hbs-scripts}
 
 Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md):
 
@@ -63,7 +63,6 @@ One way to do so is
     * select **Tools &gt; Operations &gt; Replication**
     * select `Activate Tree`
     * set `Start Path`: to `/apps/custom`
-    
     * deselect `Only Modified`
     * select `Activate`button
 
@@ -79,6 +78,6 @@ Attached is a package of the custom comments application created in this tutoria
 
 [Get File](assets/sample-comment-extension-6-1-fp3.zip)
 
-| ** [⇐ Add Comment to Sample Page](../../communities/using/extend-sample-page.md)** |  |
+| **[⇐ Add Comment to Sample Page](../../communities/using/extend-sample-page.md)** |  |
 |---|---|
 

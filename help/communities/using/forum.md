@@ -15,7 +15,7 @@ docset: aem65
 
 # Forum Feature{#forum-feature}
 
-### Introduction {#introduction}
+## Introduction {#introduction}
 
 The forum feature provides an area for signed-in site visitors (community members) in the publish environment to :
 

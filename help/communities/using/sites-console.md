@@ -517,7 +517,7 @@ To correctly redirect, once a site has been configured and pushed to publish, co
 
 ![](assets/chlimage_1-173.png) 
 
-#### Test Authentication Redirection {#test-authentication-redirection}
+### Test Authentication Redirection {#test-authentication-redirection}
 
 On the same AEM publish instance configured with a login page mapping for the community site :
 

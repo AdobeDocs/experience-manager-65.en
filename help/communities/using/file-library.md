@@ -15,7 +15,7 @@ docset: aem65
 
 # File Library Feature{#file-library-feature}
 
-### Introduction {#introduction}
+## Introduction {#introduction}
 
 The file library feature provides a place for signed-in site visitors (community members) to upload, manage and download files within the community site.
 

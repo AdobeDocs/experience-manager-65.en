@@ -15,7 +15,7 @@ docset: aem65
 
 # Activity Trends{#activity-trends}
 
-### Introduction {#introduction}
+## Introduction {#introduction}
 
 The `Community Activity List` component provides the ability to add trending information regarding posts and views by members as well as posts and views of content.
 
@@ -56,7 +56,9 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
 ![](assets/chlimage_1-56.png)
 
 * **Type** 
+
   Specify whether to to display data regarding community members or user generated content (UGC).  
+
   Select from
 
     * `Members`
@@ -65,14 +67,17 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
   Default is `Members`.
 
 * **Display title** 
+
   A descriptive title to display above the data, such as `Trending Content`.  
   Default is no title.
 
 * **Display count** 
+
   The number of items to list.  
   Default is 10.
 
 * **Activity type** 
+
   Select one of
 
     * `Views`(page visits)
@@ -83,6 +88,7 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
   Default is Views.
 
 * **Time period** 
+
   Select one of
 
     * `Last 24 hours`
@@ -95,22 +101,24 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
   Default is `Total`.
 
 * **Context path** 
+
   Provides the ability to scope the activity to a subset of the site, such as a specific Blog.  
   Default is the entire community site.
 
 * **Member count aggregation** 
+
   When deselected (turned off), only top-level posts are counted. For example, if the context is the root page (the default), then an `Activity Type`of `Posts`will never show any activity as there is no ability to post content to the root page. When checked, the counts on all descendant pages are included.  
   Default is checked.
 
 ### Example Page with 4 Components {#example-page-with-components}
 
-**Top Visitors** config : Type = Members, Activity type = Views
+**Top Visitors** config: Type = Members, Activity type = Views
 
-**Top Contributors** config : Type = Members, Activity type = Posts
+**Top Contributors** config: Type = Members, Activity type = Posts
 
-**Top Content** config : Type = Content, Activity type = Views,
+**Top Content** config: Type = Content, Activity type = Views,
 
-**Trending Content** config : Type = Content, Activity type = Posts
+**Trending Content** config: Type = Content, Activity type = Posts
 
 ![](assets/chlimage_1-57.png)
 

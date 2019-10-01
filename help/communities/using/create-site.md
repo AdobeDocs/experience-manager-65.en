@@ -221,7 +221,7 @@ From left to right they are:
 >1. (optional) Select "Clear" or "Force Retry" to reset the replication queue.
 >
 
-#### Select Publish {#select-publish}
+### Select Publish {#select-publish}
 
 After ensuring the publish server is running, select the world icon to publish the community site.
 

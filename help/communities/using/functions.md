@@ -305,7 +305,7 @@ The ability to create a community function is reached by selecting the `Create C
 
 ![](assets/chlimage_1-117.png)
 
-#### Community Function Name {#community-function-name}
+### Community Function Name {#community-function-name}
 
 ![](assets/chlimage_1-118.png)
 
@@ -320,7 +320,7 @@ On the Community Function Name panel, a name, description and whether the functi
 * **Disabled/Enabled ** 
   a toggle switch controlling whether the function is referenceable
 
-#### AEM Blueprint {#aem-blueprint}
+### AEM Blueprint {#aem-blueprint}
 
 ![](assets/chlimage_1-119.png)
 
@@ -332,7 +332,7 @@ Since the community function is implemented as a [live copy](/sites/administerin
 
 See also [Multi Site Manager](/sites/administering/using/msm.md).
 
-#### Thumbnail {#thumbnail}
+### Thumbnail {#thumbnail}
 
 ![](assets/chlimage_1-120.png)
 

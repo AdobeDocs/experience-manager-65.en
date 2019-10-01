@@ -15,7 +15,7 @@ docset: aem65
 
 # Author a New Community Site for Enablement{#author-a-new-community-site-for-enablement}
 
-| ** [⇐ Initial Setup](/communities/using/enablement-setup.md)** |** [Create and Assign Enablement Resources ⇒](/communities/using/resource.md)** |
+| **[⇐ Initial Setup](/communities/using/enablement-setup.md)** |**[Create and Assign Enablement Resources ⇒](/communities/using/resource.md)** |
 |---|---|
 
 ## Create Community Site {#create-community-site}
@@ -233,7 +233,7 @@ Using the Community Groups console, members can be added individually or added t
 In this example, the group `Community Ski Class` is added as a member of the group `Community Enable Members` as well as member `Quinn Harper`.
 
 * navigate to **Communities, Groups** console
-* select *Community Enable Members * group
+* select *Community Enable Members* group
 * enter 'ski' into the **Add Members To Group** search box
 * select *Community Ski Class* (group of learners)
 * enter 'quinn' into the search box
@@ -245,7 +245,7 @@ In this example, the group `Community Ski Class` is added as a member of the gro
 
 ## Configurations on Publish {#configurations-on-publish}
 
-#### http://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}
+`http://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
 ![](assets/chlimage_1-14.png)
 
@@ -255,7 +255,7 @@ Once a site has been configured and pushed to publish, [configure login mapping]
 
 Add a `Login Page Mapping` as
 
-* /content/sites/enable/en/signin:/content/sites/enable/en
+* `/content/sites/enable/en/signin:/content/sites/enable/en`
 
 ### (Optional) Change the Default Home Page {#optional-change-the-default-home-page}
 
@@ -267,52 +267,54 @@ To get started
 
 1. on publish, access CRXDE and sign in with administrator privileges
 
-    * for example, browse to [http://localhost:4503/crx/de](http://localhost:4503/crx/de) and login with `admin/admin`
+    * for example, browse to [http://localhost:4503/crx/de](http://localhost:4503/crx/de) and log in with `admin/admin`
 
 1. in the project browser, expand `/etc/map`
 1. select the `http` node
 
     * select **Create Node**
 
-        * **Name **localhost.4503  
-          (do *not *use ':')
+        * **Name** localhost.4503
+
+          (do *not* use ':')
         
-        * **Type ** [sling:Mapping](http://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+        * **Type** [sling:Mapping](http://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. with newly created `localhost.4503` node selected
 
-    * add property
+  * add property
 
-        * **Name** sling:match
-        * **Type** String
-        * **Value** localhost.4503/$  
-          (must end with '$' char)
+    * **Name** sling:match
+    * **Type** String
+    * **Value** localhost.4503/$  
 
-    * add property
+    (must end with '$' char)
 
-        * **Name** sling:internalRedirect
-        * **Type** String
-        * **Value** /content/sites/enable/en.html
+  * add property
+
+    * **Name** sling:internalRedirect
+    * **Type** String
+    * **Value** /content/sites/enable/en.html
 
 1. select **Save All**
 1. (optional) delete the browsing history
 1. browse to http://localhost:4503/
 
-    * arrive at http://localhost:4503/content/sites/enable/en.html
+  * arrive at http://localhost:4503/content/sites/enable/en.html
 
 >[!NOTE]
 >
->To disable, simply prepend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
+>To disable, simply pre-pend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
 
 ![](assets/chlimage_1-15.png)
 
-#### Troubleshooting : Error Saving Map {#troubleshooting-error-saving-map}
+#### Troubleshooting: Error Saving Map {#troubleshooting-error-saving-map}
 
 If unable to save changes, be sure the node name is `localhost.4503`, with a 'dot' separator, and not `localhost:4503` with a 'colon' separator, as `localhost`is not a valid namespace prefix.
 
 ![](assets/chlimage_1-16.png)
 
-#### Troubleshooting : Fail to Redirect {#troubleshooting-fail-to-redirect}
+#### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 
 The '**$**' at the end of the regular expression `sling:match`string is crucial, so that only exactly `http://localhost:4503/` is mapped, else the redirect value is prepended to any path that might exist after the server:port in the URL. Thus, when AEM tries to redirect to the login page, it fails.
 
@@ -340,11 +342,11 @@ To modify the site's structure, navigate to the **Communities, Sites** console, 
 
 Select the STRUCTURE panel to add a Catalog or modify an existing Catalog :
 
-* **Title** : `Ski Catalog`
+* **Title**: `Ski Catalog`
 
-* **URL** : `catalog`
+* **URL**: `catalog`
 
-* **Select All Namespaces** : leave as default.
+* **Select All Namespaces**: leave as default.
 * select **Save**
 
 ![](assets/chlimage_1-17.png)
@@ -357,6 +359,6 @@ Select **Save** in the upper right corner to save the changes to the community s
 
 Then re-**Publish** the site.
 
-| ** [⇐ Initial Setup](/communities/using/enablement-setup.md)** |** [Create and Assign Enablement Resources ⇒](/communities/using/resource.md)** |
+| **[⇐ Initial Setup](/communities/using/enablement-setup.md)** |**[Create and Assign Enablement Resources ⇒](/communities/using/resource.md)** |
 |---|---|
 

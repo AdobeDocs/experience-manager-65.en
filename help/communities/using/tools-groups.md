@@ -31,7 +31,7 @@ The moment an action is taken to create a new community group, the group's templ
 
 To reach the groups templates console in the AEM Author environment:
 
-* Select **Tools | Communities | Group Templates, **from global navigation.
+* Select **Tools | Communities | Group Templates,** from global navigation.
 
 This console displays the templates from which a [community site](../../communities/using/sites-console.md) can be created and allows new group templates to be created.
 
@@ -43,7 +43,7 @@ To get started creating a new group template, select `Create`
 
 This will bring up the Site Editor panel which contains 3 sub-panels:
 
-#### Basic Info {#basic-info}
+### Basic Info {#basic-info}
 
 ![](assets/chlimage_1-137.png)
 
@@ -53,9 +53,11 @@ On the Basic Info panel, a name, description and whether the template is enabled
   the template name id
 
 * **Description** 
+
   the template description
 
 * **Disabled/Enabled** 
+
   a toggle switch controlling whether the template is referenceable
 
 #### Thumbnail {#thumbnail}
