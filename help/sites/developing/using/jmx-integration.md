@@ -546,8 +546,6 @@ For your convenience, you can copy and paste the following XML code into your pr
 
 Add the following profile to your maven settings file to use the public Adobe repository.
 
-****
-
 #### Maven Profile {#maven-profile}
 
 ```xml

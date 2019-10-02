@@ -57,18 +57,14 @@ Use the following procedure to map CQ component variables with Adobe Analytics r
    >[!CAUTION]
    >
    >It is highly recommended that:
-   >
-   >    
    >    
    >    * `eVars` and `props` are mapped to CQ variables beginning with either** ** `pagedata.X`** **or `eventdata.X`   
    >    
    >    * whereas events should be mapped to variables starting with `eventdata.events.X`
-   >    
-   >
 
 1. To make the framework available on the publish instance of your site, open the **Page **tab of sidekick, and click **Activate Framework.**
 
-### Mapping Product-Related Variables {#mapping-product-related-variables}
+## Mapping Product-Related Variables {#mapping-product-related-variables}
 
 AEM uses a convention for naming product-related variables and events that are meant to be mapped to Adobe Analytics product-related properties:
 
@@ -99,11 +95,9 @@ Several AEM Commerce components use these variable names.
 
 Initially, when you open an Adobe Analytics framework the content finder contains predefined Analytics variables under:
 
-* Traffic ``  
-
-* Conversion ``  
-
-* Events ``
+* Traffic
+* Conversion
+* Events
 
 When an RSID is selected all the variables belonging to that RSID get added to the list.  
 The `cf#` is needed in order to map Analytics variables to the CQ variables present on the different tracking components. See Setting Up a Framework for Basic Tracking.
@@ -114,11 +108,9 @@ The list can be manipulated in the following ways:
 
 1. When in **AEM view**, the list can be filtered depending on what variable type is selected using the 3 filter buttons:
 
-    * If* no button* is selected, the list shows the full list.
-    * If the **Traffic*** **button*** is selected, the list will only show the variables belonging to the Traffic section
-    
-    * If the **Conversion*** **button*** is selected, the list will only show the variables belonging to the Conversion section. 
-    
+    * If *no button* is selected, the list shows the full list.
+    * If the **Traffic*** **button*** is selected, the list will only show the variables belonging to the Traffic section.
+    * If the **Conversion*** **button*** is selected, the list will only show the variables belonging to the Conversion section.
     * If the **Events** button is selected, the list will only show the variables belonging to the Events section.
 
    >[!NOTE]

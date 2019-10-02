@@ -218,7 +218,7 @@ The key highlights for AEM 6.5.2.0 forms are:
 >
 >For AEM Forms customers, it is essential to install AEM Forms add-on package after installing any AEM Service Pack, Cumulative Fix Pack, or Feature Pack.
 
-#### Sites {#sites-1}
+### Sites {#sites-1}
 
 * Added a configuration property to allow exporting Experience Fragments directly to user-defined workspaces for Adobe Target. NPR-29189: Hotfix for CQ-4249782
 

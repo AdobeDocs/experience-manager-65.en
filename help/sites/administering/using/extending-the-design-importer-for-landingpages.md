@@ -26,14 +26,14 @@ Here are the logical steps to make design importer recognize your custom compone
 * A tag handler is a POJO that handles HTML tags of a specific kind. The “kind” of HTML tags your TagHandler can handle is defined via the TagHandlerFactory’s OSGi property “tagpattern.name”. This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it’s up to you how you wish to take care of it.
 * The tag handler interface is similar to a SAX content handler interface. It receives SAX events for each html tag. As a tag handler provider, you need to implement certain lifecycle methods which are automatically called by the design importer framework.
 
-2. Create its corresponding TagHandlerFactory.
+1. Create its corresponding TagHandlerFactory.
 
 * The tag handler factory is an OSGi component(singleton) that’s responsible for spawning instances of your tag handler.
 * your tag handler factory must expose an OSGi property called “tagpattern.name” the value of which is matched against the input html tag.
 * If there are multiple tag handlers matching the input html tag, the one with a higher ranking is picked. The ranking itself is exposed as an OSGi property **service.ranking**.
 * The TagHandlerFactory is an OSGi component. Any references that you wish to provide to your TagHandler must be via this factory.
 
-3. Make sure that your TagHandlerFactory has a better ranking if you wish to override the default.
+1. Make sure that your TagHandlerFactory has a better ranking if you wish to override the default.
 
 >[!CAUTION]
 >

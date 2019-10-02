@@ -118,7 +118,7 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 1. From the AEM user interface, tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
 1. On **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Update Asset]** workflow model.
 1. Tap/click **[!UICONTROL Edit]** from the toolbar.
-1. Expand the Side Panel to display the steps. Drag **[!UICONTROL Smart Tag Asset]**** **step that is available in the DAM Workflow section and place it after the **[!UICONTROL Process Thumbnails]** step.
+1. Expand the Side Panel to display the steps. Drag **[!UICONTROL Smart Tag Asset]** step that is available in the DAM Workflow section and place it after the **[!UICONTROL Process Thumbnails]** step.
 
    ![Add smart tag asset step after the process thumbnail  step in the DAM Update Asset workflow](assets/chlimage_1-2.png)
 

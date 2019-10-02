@@ -40,7 +40,7 @@ Using the [account settings](#account-settings) and [user preferences](#user-pre
     * Single Window  
       Pages will be opened in the current window.
 
-### Account Settings {#account-settings}
+## Account Settings {#account-settings}
 
 The user icon gives you access to various to the following options:
 

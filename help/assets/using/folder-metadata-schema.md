@@ -31,11 +31,11 @@ You can edit a newly added or existing metadata schema form, which includes the 
 You can map/configure these form items to a field within a metadata node in the CRX repository. You can add new tabs or form items to the metadata schema form.
 
 1. In the Schema Forms page, select the form you created, and then tap/click the **[!UICONTROL Edit]**icon from the toolbar.
-1. In the Folder Metadata Schema Editor page, tap/click the ****[!UICONTROL +]**** icon to add a tab to the form. To rename the tab, tap/click the default name and specify the new name under **[!UICONTROL Settings]**.
+1. In the Folder Metadata Schema Editor page, tap/click the **[!UICONTROL +]** icon to add a tab to the form. To rename the tab, tap/click the default name and specify the new name under **[!UICONTROL Settings]**.
 
    ![](assets/custom_tab.png)
 
-   To add more tabs, tap/click the ****[!UICONTROL +]**** icon. Tap/click **[!UICONTROL X]** to delete a tab.
+   To add more tabs, tap/click the **[!UICONTROL +]** icon. Tap/click **[!UICONTROL X]** to delete a tab.
 
 1. In the active tab, add one or more components from the **[!UICONTROL Build Form]** tab.
 
@@ -43,7 +43,7 @@ You can map/configure these form items to a field within a metadata node in the 
 
    If you create multiple tabs, tap/click a particular tab to add components.
 
-1. To configure a component, select it and modify its properties in the** ** **[!UICONTROL Settings]**** **tab.
+1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
 
    If required, delete a component from the **[!UICONTROL Settings]** tab.
 
@@ -53,7 +53,7 @@ You can map/configure these form items to a field within a metadata node in the 
 
 ### Components to build forms {#components-to-build-forms}
 
-The **[!UICONTROL Build Form]**** **tab lists form items that you use in your folder metadata schema form. The **[!UICONTROL Settings]**** **tab displays the attributes for each item that you select in the **[!UICONTROL Build Form]**** **tab. Here is a list the form items available in the **[!UICONTROL Build Form]**** **tab:
+The **[!UICONTROL Build Form]** tab lists form items that you use in your folder metadata schema form. The **[!UICONTROL Settings]** tab displays the attributes for each item that you select in the **[!UICONTROL Build Form]** tab. Here is a list the form items available in the **[!UICONTROL Build Form]**tab:
 
 <table>
  <tbody> 

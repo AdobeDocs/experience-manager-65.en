@@ -16,7 +16,7 @@ Know the answers to some AEM troubleshooting and configuration issues.
 
 ## Sites {#sites}
 
-#### How do I configure binary-less distribution? {#how-do-i-configure-binary-less-distribution}
+### How do I configure binary-less distribution? {#how-do-i-configure-binary-less-distribution}
 
 Binary-less distribution is supported for deployments over a shared data store and involves agents that leverage the Vault-based Distribution package exporter (factory PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) package builder.
 
@@ -84,7 +84,7 @@ Please refer to [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/e
 
 ## Assets {#assets}
 
-#### Why the Assets workflow repeats itself while uploading MP4 files (for example, using drag-and-drop method)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
+### Why the Assets workflow repeats itself while uploading MP4 files (for example, using drag-and-drop method)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
 If the user, uploading the movie files does not have delete permissions under asset node, the delete chunk nodes fail and the upload restarts.
 

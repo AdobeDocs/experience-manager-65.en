@@ -1018,32 +1018,23 @@ This component is needed to define the start of a new form on a page. You can co
       A form needs an action. The action defines the operation that is triggered for execution with the data submitted by the user (similar to action= in HTML). Some need a corresponding **Action Configuration**.  
       A selection of action types are included in a standard AEM installation:
 
-        * **Account Request** 
-        
+        * **Account Request**
         * **Create Content**
         * **Create Lead** 
-        
         * **Create and Update Account**
         * **E-Mail Service: Create Subscriber and add to list**
         * **E-Mail Service: Send auto-responder email**
         * **E-Mail Service: Unsubscribe user from list**
-        * **Edit Community  
-          **
+        * **Edit Community**
         * **Edit Resource(s)** 
-          ** **
-        
-        * **Edit Workflow Controlled Resource(s)** 
-        
+        * **Edit Workflow Controlled Resource(s)**
         * **Mail**
-        * **Placed Order Details  
-          **
+        * **Placed Order Details**
         * **Profile Update** 
-        
         * **Reset Password** 
-        
-        * **Set Password** 
-        
+        * **Set Password**
         * **Store Content** 
+
           This is the default action type.  
         
         * **Store Content with Uploads**
@@ -1052,17 +1043,23 @@ This component is needed to define the start of a new form on a page. You can co
         * **Update Order**
 
     * **Form Identifier** 
+
       The form identifier uniquely identifies the form. Use the form identifier if you have several forms on a single page; make sure they have different identifiers.
     
     * **Load Path** 
+
       The path to node properties used to load predefined values into the form fields.  
+
       This is an optional field that specifies the path to a node in the repository. When this node has properties that match the field names, then the appropriate fields on the form are preloaded with the value of those properties. If no match exists, then the field contains the default value.  
+
       Using **Load Path** you can preload the form with values in the required fields. See [Preloading Form Values](../../../sites/developing/using/developing-forms.md#preloading-form-values).
     
     * **Client Validation** 
+
       Indicates whether client validation is required for this form (server validation *always* occurs.). This can be achieved in conjunction with the **Forms Captcha** component.
     
     * **Validation Resource Type** 
+
       Defines the form validation resource type if you want to validate the entire form (instead of individual fields). If you are validating the complete form, also include one of the following:
 
         * A script for client validation:  
@@ -1072,6 +1069,7 @@ This component is needed to define the start of a new form on a page. You can co
           `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
 
     * **Action Configuration** 
+
       The options available in **Action Configuration** are dependent on the **Action Type** selected:
 
         * **Account Request**
@@ -1082,19 +1080,24 @@ This component is needed to define the start of a new form on a page. You can co
         * **Create Content**
 
             * Content Path  
+
               The content path for any content that the form dumps. Enter a path that ends with a slash `/`. The slash means that for each form port, a new node is created at the given location; for example:  
               `/forms/feedback/`
             
             * **Type** 
-              Select the required type.**** 
+
+              Select the required type. 
             
             * **Form** 
+
               Specify the form.  
             
             * **Render with** 
+
               Select the required option from the list.  
             
             * **Resource Type** 
+
               If set, this is added to each comment as `sling:resourceType`  
             
             * **View Selector**
@@ -1102,28 +1105,35 @@ This component is needed to define the start of a new form on a page. You can co
         * **Create Lead**
 
             * **Lead will be added to this list** 
+
               Specify the required lead list.
 
         * **Create and Update Account**
 
             * **Initial Group** 
+
               Group to assign new user to.
             
             * **Home** 
+
               Page to display after successful login.
             
             * **Path** 
+
               The path (relative) to where the new account is created and stored.
             
             * **View Data...** 
+
               Click this button to access the information about form results in the bulk editor. From here, you can export the information to a `.tsv` (tab-separated) file (for use, for example, in an Excel spreadsheet).
 
         * **Mail**
 
             * **From** 
+
               Enter the email address that the email should come from.
             
             * **Mailto** 
+            
               Enter the email address(es) that the form is to sent to.
             
             * **CC** 

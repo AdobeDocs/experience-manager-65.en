@@ -21,7 +21,7 @@ This chapter describes how to configure and maintain user authorization and also
 
 This section deals with the various entities and related concepts in more detail to help you configure an easy to maintain user management concept.
 
-#### Users {#users}
+### Users {#users}
 
 Users will log in to AEM with their account. Each user account is unique and holds the basic account details, together with the privileges assigned.
 
@@ -673,7 +673,7 @@ To learn about user sync and how to enable it, see [User Sychronization](../../.
 
 This section describes how to set permissions, including replication privileges.
 
-#### Setting Permissions {#setting-permissions}
+### Setting Permissions {#setting-permissions}
 
 Permissions allow users to perform certain actions on resources at certain paths. It also includes the ability to create or delete pages.
 

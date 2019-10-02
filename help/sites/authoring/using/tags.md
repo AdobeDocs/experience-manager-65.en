@@ -20,7 +20,7 @@ Tags are a quick and easy method of classifying content within a website. Tags m
 * See [Administering Tags](/sites/administering/using/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
 * See [Tagging for Developers](/sites/developing/using/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
 
-### Ten Reasons to Use Tagging {#ten-reasons-to-use-tagging}
+## Ten Reasons to Use Tagging {#ten-reasons-to-use-tagging}
 
 1. Organizing Content : tagging makes life easier for authors as they can quickly organize content with little effort.
 1. 

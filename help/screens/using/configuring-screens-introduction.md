@@ -20,7 +20,6 @@ This page shows how to install and configure the Screens players on your devices
 * [Installing AEM Screens Player](../../screens/using/configuring-screens-introduction.md#installing-aem-screens-player)
 * [Server Configuration](../../screens/using/configuring-screens-introduction.md#server-configuration)
 * [Hardware Selection Guidelines for Player Device](#hardware-selection-guidelines-for-player-device)  
-
 * [The Next Steps](../../screens/using/configuring-screens-introduction.md#the-next-steps)
 
 ## Installing AEM Screens Player {#installing-aem-screens-player}
@@ -35,11 +34,10 @@ To download **AEM Screens Player**, visit the [**AEM 6.5 Player Downloads**](htt
 >
 >1. Long-press on the top left corner to open the admin panel.
 >1. Navigate to **Configuration** from the left action menu and enter the location address of the AEM instance in **Server** and click **Save**.
->
 >1. Click on the **Registration** link from the left action menu and the steps below to complete the device registration process.
 >
 
-#### Additional Resources {#additional-resources}
+### Additional Resources {#additional-resources}
 
 Refer to the following topics for an in-depth information:
 
@@ -66,7 +64,7 @@ The following key points below helps to configure and AEM server to be ready to 
 
    ![](assets/screen_shot_2019-07-31at91253am.png)
 
-1. **Adobe Experience Manager Web Console Configuration **opens. Search for sling referrer.
+1. **Adobe Experience Manager Web Console Configuration** opens. Search for sling referrer.
 
    For searching the sling referrer property, press **Command+F** for **Mac** and **Control+F** for **Windows**.
 

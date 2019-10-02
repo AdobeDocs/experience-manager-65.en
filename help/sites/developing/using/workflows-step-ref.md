@@ -31,7 +31,7 @@ Workflow models consist of a series of steps of various types. According to the 
 
 Each step component has a **Step Properties** dialog that allows you to define and edit the required properties.
 
-#### Step Properties - Common tab {#step-properties-common-tab}
+### Step Properties - Common tab {#step-properties-common-tab}
 
 A combination of the following properties are available for most workflow step components, on the **Common** tab of the properties dialog:
 
@@ -55,7 +55,7 @@ A combination of the following properties are available for most workflow step c
 * **Handler Advance** 
   Select this option to automatically advance the workflow to the next step after execution. If not selected, the implementation script must handle workflow advancement.
 
-#### Step Properties - User/Group tab {#step-properties-user-group-tab}
+### Step Properties - User/Group tab {#step-properties-user-group-tab}
 
 The following properties are available for many workflow step components, on the **User/Group** tab of the properties dialog:
 
@@ -78,7 +78,7 @@ The **AND Split **creates a split in the workflow, after which both branches wil
 
 ![](assets/wf-26.png) 
 
-#### AND Split - Configuration {#and-split-configuration}
+### AND Split - Configuration {#and-split-configuration}
 
 To configure the split:
 
@@ -100,7 +100,7 @@ This container can allow you to reuse workflow models to implement common sequen
 
 ![](assets/wf-28.png) 
 
-#### Container Step - Configuration {#container-step-configuration}
+### Container Step - Configuration {#container-step-configuration}
 
 To configure the step, edit and use the following tabs:
 
@@ -118,7 +118,7 @@ The **Goto Step** allows you to specify the next step to execute in the workflow
 
 The **Goto Step** enables you to implement advanced routing structures in your workflow models. For example, to implement a loop, the **Goto Step** can be defined to execute a prior step in the workflow, with the routing expression evaluating a loop condition.
 
-#### Goto Step - Configuration {#goto-step-configuration}
+### Goto Step - Configuration {#goto-step-configuration}
 
 To configure the step, edit and use the following tabs:
 
@@ -188,7 +188,7 @@ The **OR Split **creates a split in the workflow, after which only one branch wi
 
 ![Branching using OR Split](assets/variables_orsplit_new.png) 
 
-#### OR Split - Configuration {#or-split-configuration}
+### OR Split - Configuration {#or-split-configuration}
 
 To configure the split:
 
@@ -576,7 +576,7 @@ A **Process Step** executes an ECMAScript or calls an OSGi service to perform au
 
 ![](assets/wf-32.png) 
 
-#### Process Step - Configuration {#process-step-configuration}
+### Process Step - Configuration {#process-step-configuration}
 
 To configure the step, edit and use the following tabs:
 
@@ -598,7 +598,7 @@ The Set Variable step allows you to set value of a variable and define the order
 
 ![Add mapping to set a variable](assets/set_variable_addmappingnew.png) 
 
-#### Set Variable - Configuration {#setvariable}
+### Set Variable - Configuration {#setvariable}
 
 To configure the step, edit and use the following tabs:
 

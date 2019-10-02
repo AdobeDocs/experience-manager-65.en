@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Part 1: Project Roles and Responsibilities{#part-project-roles-and-responsibilities}
+# Part 1: Project Roles and Responsibilities {#part-project-roles-and-responsibilities}
 
 This page highlights part 1 of a 5-part series designed to help team members better understand roles, responsibilities and time lines required during the sales and project life cycles for a digital signage project.
 
@@ -35,7 +35,7 @@ There are 3 primary groups that are engaged through the delivery process within:
 
 Defining application use-case parameters in partnership with Adobe, AEM Implementor and AV Integrator will drive software development scope. This ensures a phased approach that establishes with performance benchmarks and success metrics identified throughout the project.
 
-#### Adobe {#adobe}
+### Adobe {#adobe}
 
 Adobe includes Adobe Managed Services resources like the CSE (Customer Success Engineer) and Adobe Support.
 

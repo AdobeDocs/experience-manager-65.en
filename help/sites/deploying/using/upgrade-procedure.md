@@ -73,42 +73,35 @@ The assumed topology for this section consists of an Author server running on Ta
 
 ## MongoMK Author Cluster {#mongomk-author-cluster}
 
-### Starting Topology {#Starting Topology-1}
+### Starting Topology {#starting-topology-1}
 
 The assumed topology for this section consists of a MongoMK Author cluster with at least two AEM Author instances, backed by at least two MongoMK databases. All Author instances share a datastore. These steps should apply to both S3 and File datastores. Replication occurs from the Author servers to the TarMK Publish farm.
 
 ![](assets/mongo-topology.jpg)
 
-### Upgrade Preparation {#Upgrade Preparation-1}
+### Upgrade Preparation {#upgrade-preparation-1}
 
 ![](assets/mongo-upgrade_prep.jpg)
 
 1. Stop content authoring  
-
 1. Clone the data store for backup  
-
 1. Stop all but one AEM Author instance, your primary Author
 1. Remove all but one MongoDB node from the replica set, your primary Mongo instance 
 1. Update the `DocumentNodeStoreService.cfg` file on the primary Author to reflect your single member replica set 
 1. Restart the primary Author to ensure that it restarts properly  
-
 1. Disable replication agents on the primary Author  
-
 1. Run [pre-upgrade maintenance tasks](../../../sites/deploying/using/pre-upgrade-maintenance-tasks.md) on the primary Author instance  
-
 1. If necessary, upgrade MongoDB on the primary Mongo instance to version 3.2 with WiredTiger
 
-### Upgrade Execution {#Upgrade Execution-1}
+### Upgrade Execution {#Upgrade-execution-1}
 
 ![](assets/mongo-execution.jpg)
 
 1. Run an [in-place upgrade](../../../sites/deploying/using/in-place-upgrade.md) on the primary Author  
-
 1. Update the Dispatcher or Web Module *if needed* 
-
 1. QA validates the upgrade
 
-### If Successful {#If Successful-1}
+### If Successful {#if-successful-1}
 
 ![](assets/mongo-secondaries.jpg)
 
@@ -122,7 +115,7 @@ The assumed topology for this section consists of a MongoMK Author cluster with 
 
 1. Remove the cloned data store.
 
-### If Unsuccessful (Rollback)  {#if-unsuccessful-(rollback)-}
+### If Unsuccessful (Rollback)  {#if-unsuccessful-rollback}
 
 ![](assets/mongo-rollback.jpg)
 
@@ -142,80 +135,56 @@ The assumed topology for this section consists of a MongoMK Author cluster with 
 
 ## TarMK Publish Farm {#tarmk-publish-farm}
 
-### TarMK Publish Farm {#TarMK Publish Farm-1}
+### TarMK Publish Farm {#tarmk-publish-farm-1}
 
 The assumed topology for this section consists of two TarMK publish instances, fronted by Dispatchers that are in turn fronted by a load balancer. Replication occurs from the Author server to the TarMK Publish farm.
 
 ![](assets/tarmk-pub-farmv5.png)
 
-### Upgrade Execution {#Upgrade Execution-2}
+### Upgrade Execution {#upgrade-execution-2}
 
 ![](assets/upgrade-publish2.png)
 
 1. Stop traffic to the Publish 2 instance at the load balancer  
-
 1. Run [pre-upgrade maintenance](../../../sites/deploying/using/pre-upgrade-maintenance-tasks.md) on Publish 2  
-
 1. Run an [in-place upgrade](../../../sites/deploying/using/in-place-upgrade.md) on Publish 2  
-
 1. Update the Dispatcher or Web Module *if needed* 
-
 1. Flush the Dispatcher cache  
-
 1. QA validates Publish 2 through the Dispatcher, behind the firewall  
-
 1. Shutdown Publish 2  
-
 1. Copy the Publish 2 instance  
-
 1. Start Publish 2
 
-### If Successful {#If Successful-2}
+### If Successful {#if-successful-2}
 
 ![](assets/upgrade-publish1.png)
 
 1. Enable traffic to Publish 2  
-
 1. Stop traffic to Publish 1  
-
 1. Stop the Publish 1 instance  
-
 1. Replace the Publish 1 instance with a copy of Publish 2  
-
 1. Update the Dispatcher or Web Module *if needed* 
-
 1. Flush the Dispatcher cache for Publish 1  
-
 1. Start Publish 1  
-
 1. QA validates Publish 1 through the Dispatcher, behind the firewall
 
-### If Unsuccessful (Rollback) {#If Unsuccessful (Rollback)-1}
+### If Unsuccessful (Rollback) {#if-unsuccessful-rollback-1}
 
 ![](assets/pub_rollback.jpg)
 
 1. Create a copy of Publish 1  
-
 1. Replace the Publish 2 instance with a copy of Publish 1  
-
 1. Flush the Dispatcher cache for Publish 2  
-
 1. Start Publish 2  
-
 1. QA validates Publish 2 through the Dispatcher, behind the firewall  
-
 1. Enable traffic to Publish 2
 
 ## Final Upgrade Steps {#final-upgrade-steps}
 
 1. Enable traffic to Publish 1  
-
 1. QA performs final validation from a public URL  
-
 1. Enable replication agents from the Author environment  
-
 1. Resume content authoring  
-
 1. Perform [post-upgrade checks](../../../sites/deploying/using/post-upgrade-checks-and-troubleshooting.md).
 
 ![](assets/final.jpg)

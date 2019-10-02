@@ -31,7 +31,6 @@ Once you download the application, follow the steps on the player to complete th
 
 1. Long-press on the top left corner to open the admin panel.
 1. Navigate to **Configuration** from the left action menu and enter the location (address) of the AEM instance you wish to connect to and click **Save**.
-
 1. Navigate to the **Device** **Registration** link from the left action menu to check the status of the the device registration process.
 
 >[!NOTE]
@@ -111,7 +110,7 @@ Follow the steps below to enable Kiosk mode:
 1. Run the PowerShell script as an administrator.
 1. Reboot and login as the Kiosk user and the player application should start right up.
 
-#### Troubleshooting {#troubleshooting}
+### Troubleshooting {#troubleshooting}
 
 If you get a black screen when you login as the Kiosk user it means that you may have incorrectly specified the path to the windows player executable. Log back in as the administrator and verify and re-run the script.
 

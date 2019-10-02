@@ -25,7 +25,6 @@ They:
 For full details about authoring with AEM see:
 
 * [First Steps for Authors](../../../sites/authoring/using/first-steps.md)  
-
 * [Authoring Pages](../../../sites/authoring/using/page-authoring.md)
 
 ### A Few Quick Hints {#a-few-quick-hints}
@@ -213,7 +212,7 @@ There are two (main) methods of [editing page properties](../../../sites/authori
 
   ![](assets/screen_shot_2018-03-21at160850.png)
 
-  3. The page properties will be shown. You can make updates as required, then use Save to persist these
+    1. The page properties will be shown. You can make updates as required, then use Save to persist these
 
 * When [editing your page](#editing-your-page-content):
 

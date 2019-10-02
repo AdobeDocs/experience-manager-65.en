@@ -60,7 +60,7 @@ The content fragments enable:
     * Can rely on associated media content being curated for relevancy.
     * Can create ad-hoc content variations on the fly while still ensuring those variations remain centrally managed in the fragment.
 
-### Adding a Content Fragment to Your Page {#adding-a-content-fragment-to-your-page}
+## Adding a Content Fragment to Your Page {#adding-a-content-fragment-to-your-page}
 
 1. Open your page for editing.  
 

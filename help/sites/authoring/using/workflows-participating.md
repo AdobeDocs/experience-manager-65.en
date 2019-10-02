@@ -24,7 +24,7 @@ Workflows typically include steps that require a person to perform an activity o
 * [Open a Workflow Item to View Details (and Take Actions)](#opening-a-workflow-item-to-view-details-and-take-actions)
 * [View the Workflow Payload (Multiple Resources)](#viewing-the-workflow-payload-multiple-resources)
 
-### Notifications of Available Workflow Actions {#notifications-of-available-workflow-actions}
+## Notifications of Available Workflow Actions {#notifications-of-available-workflow-actions}
 
 When you are assigned a work item (for example, **Approve Content**) various alerts and/or notifications appear:
 

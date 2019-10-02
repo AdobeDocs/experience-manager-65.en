@@ -121,9 +121,6 @@ Note that the new permissions UI explicitly uses the basic set of privileges ins
 
 It caused confusion as to what exactly is being configured. The following table lists the mapping between the privilege combinations from the Classic UI to the actual privileges that constitute them:
 
-| 
-|
-
 <table>
  <tbody>
   <tr>

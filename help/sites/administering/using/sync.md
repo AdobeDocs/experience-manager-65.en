@@ -65,11 +65,11 @@ Following are the steps necessary to enable user synchronization, followed by a 
 
 ### Prerequisites {#prerequisites}
 
-1) If users and user groups have already been created on one publisher, it is recommended to [manually sync](#manually-syncing-users-and-user-groups) the user data to all publishers prior to configuring and enabling user sync.
+1. If users and user groups have already been created on one publisher, it is recommended to [manually sync](#manually-syncing-users-and-user-groups) the user data to all publishers prior to configuring and enabling user sync.
 
 Once user sync is enabled, only newly created users and groups are syncrhonized.
 
-2) Ensure the latest code has been installed :
+1. Ensure the latest code has been installed :
 
 * [AEM platform updates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
 * [AEM Communities updates](../../../communities/using/deploy-communities.md#latestfeaturepack)
@@ -92,8 +92,6 @@ Once user sync is enabled, only newly created users and groups are syncrhonized.
         
         * select the `Enabled` checkbox
         * select `Save`
-
-** **
 
 ![](assets/chlimage_1-20.png)
 

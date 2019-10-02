@@ -25,7 +25,7 @@ It can be accessed from **Tools -&gt;** **General -&gt;** **Components**. In the
 >
 >The Component Console shows all components in the system. The [Component Browser](../../../sites/authoring/using/author-environment-tools.md#components-browser) shows components that are available to authors and hides any component groups that begin with a period ( `.`).
 
-### Search {#search}
+## Search {#search}
 
 With the **Content Only** icon (top left) you can open the **Search** panel to search and/or filter the components:
 

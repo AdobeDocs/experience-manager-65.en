@@ -17,21 +17,21 @@ docset: aem65
 
 The following section provides answers to few of the commonly asked FAQs related to an AEM Screens project.
 
-### Channel Management {#channel-management}
+## Channel Management {#channel-management}
 
-#### 1. What is the difference between an online and an offline channel? {#what-is-the-difference-between-an-online-and-an-offline-channel}
+### 1. What is the difference between an online and an offline channel? {#what-is-the-difference-between-an-online-and-an-offline-channel}
 
 An ***Online Channel***, will show the updated content in the real time environment whereas an ***Offline Channel***, shows the cached content.
 
-#### 2. How do I make a channel online? {#how-do-i-make-a-channel-online}
+### 2. How do I make a channel online? {#how-do-i-make-a-channel-online}
 
 Select the channel and navigate to channel properties from the action bar. Check **Developer mode (force channel to be online)** under **Channel** tab to make the channel online.
 
-#### 3. What is the use of the Channel Role field? {#what-is-the-use-of-the-channel-role-field}
+### 3. What is the use of the Channel Role field? {#what-is-the-use-of-the-channel-role-field}
 
 The Channel Role, is the abstraction of the actual channel that is run so that the author can focus on the generic experience directly. You can think of it as a kind of tag that uniquely identifies the channel in its context (display or schedule).
 
-#### 4. How does actual channel resolution happen? {#how-does-actual-channel-resolution-happen}
+### 4. How does actual channel resolution happen? {#how-does-actual-channel-resolution-happen}
 
 For *static references*, the resolution just follows the path that is specified.
 
@@ -103,16 +103,12 @@ For more information on where you can monitor device activity, please refer to [
 ChromeOS player can be installed as Chrome Browser plugin in developer mode without requiring actual chrome player device. For installation, follow the steps below:
 
 1. Click [here](https://download.macromedia.com/screens/)**** to download the latest Chrome Player.
-
 1. Unzip and save it on disk.
 1. Open Chrome browser and click the 3-dots menu and select **More Tools** --&gt; **Extensions** from the top right corner or directly navigate to ***chrome://extensions***.
-
 1. Switch on the **Developer mode** from top right corner.
 1. Click on **Load Unpacked **from top left corner and load unzipped Chrome Player.  
-
 1. Check **AEM Screens Chrome Player** plugin if is available in the list of extensions.
 1. Open a new tab and click the **Apps** icon from the top left corner, or directly navigate to ***chrome://apps***.
-
 1. Click on **AEM Screens** Plugin to launch Chrome Player. By default, the player is launched in full screen mode. Press **esc** to exit full screen mode.
 
 #### 2. How to troubleshoot if Screens player is unable to authenticate through publish instance with custom error handler? {#how-to-troubleshoot-if-screens-player-is-unable-to-authenticate-through-publish-instance-with-custom-error-handler}
@@ -124,10 +120,8 @@ When AEM Screens player starts, it makes a request to ***/content/screens/svc.pi
 Follow the steps below to turn on Stay Awake in on any Android player:
 
 1. Navigate to Android player settings --&gt; **About** 
-
 1. Tap 7 times on the build number to enable **Developer Options** in **Settings**
-
-1. Navigate to** Developer Options**
+1. Navigate to **Developer Options**
 1. Enable **Stay Awake**
 
 ### General Troubleshooting Tips {#general-troubleshooting-tips}
@@ -146,6 +140,5 @@ In order to disable Livefyre to avoid log errors :
 
     * In CRXDE Lite, navigate to **/etc/importers/polling/livefyre-poller/jcr:content** 
     * Add a new property *enabled* type *Boolean* 
-    
-    * Set **enabled property** to **false***.*
+    * Set **enabled property** to **false**.
 

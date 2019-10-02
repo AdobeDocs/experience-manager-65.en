@@ -17,7 +17,7 @@ docset: aem65
 
 The AEM Screens released AEM 6.3.3.3 Feature Pack 6 and AEM 6.4.4.0 Feature Pack 4 with the following details.
 
-### Release Date {#release-date}
+## Release Date {#release-date}
 
 The Release Date for AEM Screens Feature Pack 201905 is May 16, 2019.
 
@@ -33,7 +33,7 @@ Refer to ** [New Project Importer from File](../../screens/using/project-importe
 
 SmartSync minimizes server load/storage and network traffic to reduce cost.
 
-Refer to ** [Transitioning from ContentSync to SmartSync](../../screens/using/smartsync.md)** for more details.
+Refer to **[Transitioning from ContentSync to SmartSync](../../screens/using/smartsync.md)** for more details.
 
 * **Emergency Channel**
 
