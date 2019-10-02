@@ -23,7 +23,7 @@ With scaffolding you can create a form (a scaffold) with fields that reflect the
 >
 >Scaffolding (in the classic UI) [respects MSM inheritance](#scaffolding-with-msm-inheritance).
 
-### How Scaffolding Works {#how-scaffolding-works}
+## How Scaffolding Works {#how-scaffolding-works}
 
 Scaffolds are stored in the **Tools** console of the site admin.
 

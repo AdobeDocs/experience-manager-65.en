@@ -39,7 +39,7 @@ On the author environment the functionality of AEM is made available through two
 >
 >Together with the Dispatcher it is also used for publishing.
 
-#### Author Environment {#author-environment}
+### Author Environment {#author-environment}
 
 The author works in what is known as the **author environment**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company's firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
 

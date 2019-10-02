@@ -22,8 +22,8 @@ docset: aem65
 >6.5.2.0:
 >
 >* Experience Fragments can be exported to either: >
->    * the default workspace.
->    * a named workspace, specified in the Cloud Configuration.
+>  * the default workspace.
+>  * a named workspace, specified in the Cloud Configuration.
 >
 >* AEM must be [integrated with Adobe Target using Adobe I/O](../../../sites/administering/using/integration-ims-adobe-io.md).
 >
@@ -101,12 +101,7 @@ The required options can be selected in **Page Properties** of the required fold
    >
    >See the core component:
    >
-   >    
-   >    
-   >    * [Core Components - Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)  
-   >    
-   >    
-   >
+   >[Core Components - Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 
    Under **Adobe Target** select:
 

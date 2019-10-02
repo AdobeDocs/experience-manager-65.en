@@ -116,8 +116,8 @@ The minimum allowed characters are:
 * 'a' through to 'z'
 * 'A' through to 'Z'
 * '0' through to '9'
-* _ (underscore)
-* - (hyphen/minus)
+* `_` (underscore)
+* `-` (hyphen/minus)
 
 Full details of all characters allowed can be found in [the naming conventions](/sites/developing/using/naming-conventions.md).
 

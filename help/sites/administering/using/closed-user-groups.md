@@ -683,27 +683,9 @@ New installations of AEM will by default use the new implementations both for th
 
 | **“Apache Jackrabbit Oak CUG Configuration”** |**Explanation** |
 |---|---|
-|  
-
-| Supported Paths | `/content` |
-|---|---|
-
-|Access control management for CUGpolicies is enabled. |
-| Supported Paths | |
-|  
-
-| CUG Evaluation Enabled |FALSE |
-|---|---|
-
-|Permission evaluation is disabled. CUG policies take no effect.  |
-| CUG Evaluation Enabled |FALSE |
-|  
-
-| Ranking |200 |
-|---|---|
-
-|See Oak documentation. |
-| Ranking |200 |
+| Supported Paths `/content` | Access control management for CUGpolicies is enabled. |
+| CUG Evaluation Enabled FALSE | Permission evaluation is disabled. CUG policies take no effect. |
+| Ranking |200 | See Oak documentation. |
 
 >[!NOTE]
 >
@@ -713,47 +695,17 @@ New installations of AEM will by default use the new implementations both for th
 
 | **“Apache Jackrabbit Oak CUG Confguration”** |**Explanation** |
 |---|---|
-|  
-
-| Supported Paths | `/content` |
-|---|---|
-
-|Access control management for CUG policies is enabled below the configured paths.  |
-| Supported Paths | |
-|  
-
-| CUG Evaluation Enabled |TRUE |
-|---|---|
-
-|Permission evaluation is enabled below the configured paths. CUG policies take efectupon `Session.save()`.  |
-| CUG Evaluation Enabled |TRUE |
-|  
-
-| Ranking |200 |
-|---|---|
-
-|See Oak documentation. |
-| Ranking |200 |
+| Supported Paths `/content` | Access control management for CUG policies is enabled below the configured paths.  |
+| CUG Evaluation Enabled TRUE | Permission evaluation is enabled below the configured paths. CUG policies take efectupon `Session.save()`. |
+| Ranking |200 | See Oak documentation. |
 
 | **“Apache Jackrabbit Oak CUG Exclude List”** |**Explanation** |
 |---|---|
-|  
-
-| Principal Names |administrators |
-|---|---|
-
-|Excludes administrators principal from CUG evaluation. |
-| Principal Names |administrators |
+| Principal Names administrators | Excludes administrators principal from CUG evaluation. |
 
 | **“Adobe Granite Authentication Requirement and Login Path Handler”** |**Explanation** |
 |---|---|
-|  
-
-| Supported Paths | `/content` |
-|---|---|
-
-|Authentication requirements as defined in the repository by means of the `granite:AuthenticationRequired` mixin type take efect below `/content` upon `Session.save()`. Sling Authenticator gets updated. Adding the mixin type outside of the supported paths is ignored. |
-| Supported Paths | |
+| Supported Paths  `/content` | Authentication requirements as defined in the repository by means of the `granite:AuthenticationRequired` mixin type take efect below `/content` upon `Session.save()`. Sling Authenticator gets updated. Adding the mixin type outside of the supported paths is ignored. |
 
 ## Disabling CUG Authorization and Authentication Requirement {#disabling-cug-authorization-and-authentication-requirement}
 

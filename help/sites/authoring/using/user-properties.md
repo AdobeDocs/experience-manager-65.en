@@ -21,7 +21,7 @@ Using the [User](../../../sites/authoring/using/user-properties.md#user-settings
 
 Begin by acessing the [User](../../../sites/authoring/using/user-properties.md#user-settings) option in the header.
 
-### User Settings {#user-settings}
+## User Settings {#user-settings}
 
 The **User** settings dialog gives you access to:
 

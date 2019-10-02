@@ -238,21 +238,8 @@ The [mode of RTE editing (and the UI)](#editingmodes) that you provide for your 
 
 | Editing mode |Location for Touch UI |Location for Classic UI |
 |---|---|---|
-| Inline |
-
-```
-cq:editConfig/cq:inplaceEditing
-
-```
-
-|
-| Full screen | `cq:editConfig/cq:inplaceEditing` |Not applicable
-
-```
-
-```
-
-|
+| Inline | `cq:editConfig/cq:inplaceEditing`| `cq:editConfig/cq:inplaceEditing` |
+| Full screen | `cq:editConfig/cq:inplaceEditing` |Not applicable |
 | Dialog | `cq:dialog` | `dialog` |
 | Full screen dialog | `cq:dialog` |Not applicable |
 
@@ -261,9 +248,7 @@ cq:editConfig/cq:inplaceEditing
 >Do not name the node under `cq:inplaceEditing` as `config`. On `cq:inplaceEditing` node, define the following properties:
 >
 >* **Name**: `configPath`
->
 >* **Type**: `String`  
->
 >* **Value**: path of the node containing the actual configuration
 >
 >Do not name the RTE configuration node as `config`. Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.

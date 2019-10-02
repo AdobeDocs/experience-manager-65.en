@@ -17,7 +17,7 @@ docset: aem65
 
 Open the [Content Insight](/sites/authoring/using/content-insights.md) page to analyze the performance of the page that you are authoring. Configure the reporting period to focus your analysis.
 
-### Opening Analytics and Recommendations for a Page {#opening-analytics-and-recommendations-for-a-page}
+## Opening Analytics and Recommendations for a Page {#opening-analytics-and-recommendations-for-a-page}
 
 Use the following procedure to see the Analytics and Recommendations for a page:
 

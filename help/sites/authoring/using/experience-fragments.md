@@ -176,7 +176,7 @@ You can now use your Experience Fragment when authoring your pages:
 
 You can select one or more components to create a building block for recycling within your fragment:
 
-#### Creating a Building Block {#creating-a-building-block}
+### Creating a Building Block {#creating-a-building-block}
 
 To create a new Building Block:
 

@@ -41,7 +41,7 @@ The package includes examples of:
 >
 >This page describes the usage of widgets within the classic UI. Adobe recommends that you leverage the modern, [touch-enabled UI](../../../sites/developing/using/touch-ui-concepts.md) based on [Coral UI](../../../sites/developing/using/touch-ui-concepts.md#coral-ui) and [Granite UI](../../../sites/developing/using/touch-ui-concepts.md#granite-ui-foundation-components).
 
-### Including the Client-Sided Code in a Page {#including-the-client-sided-code-in-a-page}
+## Including the Client-Sided Code in a Page {#including-the-client-sided-code-in-a-page}
 
 Client sided javascript and stylesheet code should be placed in a client library.
 

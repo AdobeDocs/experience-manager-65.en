@@ -428,7 +428,7 @@ CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) 
 
 ## Configuring the Device Slider {#configuring-the-device-slider}
 
-#### Conditions {#conditions}
+### Conditions {#conditions}
 
 The current page must have a corresponding mobile page; this is determined only if page has a LiveCopy configured with a mobile rollout configuration ( `rolloutconfig.path.toLowerCase` contains `mobile`).
 

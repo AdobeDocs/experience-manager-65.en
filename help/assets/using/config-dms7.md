@@ -195,11 +195,11 @@ To configure the default color properties to enable color correction when reques
     * CMYK Default Color Space - Name of the default CMYK color profile
     * Gray-Scale Default Color Space - Name of the default Gray color profile
     * RGB Default Color Space - Name of the default RGB color profile
-    * Color Conversion Rendering Intent - Specifies the render intent. Acceptable values are: **perceptual, relative colometric, saturation, absolute colometric. ****Adobe recommends **relative ****as the default.
+    * Color Conversion Rendering Intent - Specifies the render intent. Acceptable values are: **perceptual, relative colometric, saturation, absolute colometric**. Adobe recommends **relative** as the default.
 
 1. Tap or click **Save**.
 
-For example, you could set the **RGB Default Color Space** to *sRGB*, and **CMYK Default Color Space*** *to *WebCoated. *
+For example, you could set the **RGB Default Color Space** to *sRGB*, and **CMYK Default Color Space*** *to *WebCoated.*
 
 Doing so would do the following:
 
@@ -211,7 +211,7 @@ Doing so would do the following:
 
 #### Configuring asset processing {#configuring-asset-processing}
 
-You can define which asset types should be processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specifiy asset processing parameters to do the following:
+You can define which asset types should be processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specify asset processing parameters to do the following:
 
 * Convert an Adobe PDF to an eCatalog asset.
 * Convert an Adobe Photoshop Document (.PSD) to a banner template asset for personalization.

@@ -37,7 +37,7 @@ This section descibes how to create, edit and promote (and if necessary [delete]
 * [Editing Launches](../../../sites/authoring/using/launches-editing.md)
 * [Promoting Launches](../../../sites/authoring/using/launches-promoting.md)
 
-### Launches - the Order of Events {#launches-the-order-of-events}
+## Launches - the Order of Events {#launches-the-order-of-events}
 
 Launches enable you to efficiently develop content for a future release of one or more activated web pages.
 
@@ -105,7 +105,7 @@ The Launches console provides an overview of your launches and allows you to tak
 
 * Or directly with [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
 
-### Launches in References (Sites Console) {#launches-in-references-sites-console}
+## Launches in References (Sites Console) {#launches-in-references-sites-console}
 
 1. In the **Sites** console, navigate to the source of the launch(es).
 1. Open the **References** rail and select the source page.
