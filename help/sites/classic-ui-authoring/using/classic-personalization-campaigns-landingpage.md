@@ -86,7 +86,7 @@ To make parts of the HTML that gets imported editable within AEM, you can map co
 
 In addition, it is possible to extend this and support custom components. This section describes the components in detail.
 
-#### Text {#text}
+### Text {#text}
 
 The Text component lets you enter a text block using a WYSIWYG editor. See [Text component](/sites/authoring/using/default-components.md#text) for more information.
 

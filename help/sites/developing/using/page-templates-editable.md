@@ -175,7 +175,7 @@ To create a new folder, you can either do this:
 * Programmatically or with CRXDE Lite
 * Using the Configuration Browser
 
-#### Using CRXDE Lite {#using-crxde-lite}
+## Using CRXDE Lite {#using-crxde-lite}
 
 1. A new folder (under /conf) can be created for your instance either programmatically or with CRXDE Lite.
 
@@ -206,7 +206,7 @@ To create a new folder, you can either do this:
 
    See [Access Right Management](../../../sites/administering/using/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.
 
-#### Using the Configuration Browser {#using-the-configuration-browser}
+### Using the Configuration Browser {#using-the-configuration-browser}
 
 1. Go to **Global Navigation** -&gt; **Tools** &gt; **Configuration Browser**.
 

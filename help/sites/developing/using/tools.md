@@ -15,7 +15,7 @@ docset: aem65
 
 # Testing and Tracking Tools{#testing-and-tracking-tools}
 
-#### Testing {#testing}
+## Testing {#testing}
 
 AEM provides:
 
@@ -38,7 +38,7 @@ For more information see [http://jakarta.apache.org/jmeter/](http://jakarta.apac
 
 There are also many proprietary tools for automating tests and managing test plans.
 
-#### Tracking {#tracking}
+### Tracking {#tracking}
 
 The following tools are easily available. However a key issue in all cases is the availability of the data to all members of the project team - partner and customer.
 

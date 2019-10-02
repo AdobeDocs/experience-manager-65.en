@@ -35,7 +35,7 @@ The tests should clearly define:
 
 The prospect of automating test cases is obviously attractive as it can eliminate repetitive tasks.
 
-#### Manual versus Automated Tests {#manual-versus-automated-tests}
+## Manual versus Automated Tests {#manual-versus-automated-tests}
 
 However, automating test cases is a significant investment, so certain aspects should be considered:
 
@@ -100,7 +100,7 @@ Testing is difficult (caching occurs at various levels and in various locations)
       Load balancing with full failover increases the performance of a cluster.  
       When used for a customer project the cluster must be tested to confirm correct operation of the configuration.
 
-#### Testing third-party software {#testing-third-party-software}
+## Testing third-party software {#testing-third-party-software}
 
 Any third-party software interfaced to AEM will be referenced in the Detailed Requirement Specifications.
 
