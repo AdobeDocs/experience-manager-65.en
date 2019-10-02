@@ -44,7 +44,7 @@ Use these best practices when creating your own newsletter.
 >
 >When creating a mail template for Adobe Campaign, you must include the property **acMapping** with the value **mapRecipient** in the **jcr:content** node of the template, or you will not be able to select the Adobe Campaign template in **Page Properties** of AEM (field is disabled).
 
-### Template/page component {#template-page-component}
+## Template/page component {#template-page-component}
 
 ***/libs/mcm/campaign/components/campaign_newsletterpage***
 

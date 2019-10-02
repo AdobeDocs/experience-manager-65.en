@@ -30,7 +30,6 @@ The device registration process is done on 2 separate machines:
 >
 >1. Long-press on the top left corner to open the admin panel.
 >1. Navigate to **Configuration** from the left action menu and enter the location address of the AEM instance in **Server** and click **Save**.
->
 >1. Click on the **Registration** link from the left action menu and the steps below to complete the device registation process.
 >
 
@@ -78,7 +77,6 @@ The device registration process is done on 2 separate machines:
    >[!NOTE]
    >
    >The **Register New** allows you to register a new device.
-   >
    >
    >The **Assign Display** lets you directly add the device to a display.
 
@@ -132,6 +130,6 @@ javax.jcr.nodetype.ConstraintViolationException: Password violates password cons
         at org.apache.jackrabbit.oak.security.user.UserManagerImpl.onPasswordChange(UserManagerImpl.java:308)
 ```
 
-#### Additional Resources {#additional-resources}
+### Additional Resources {#additional-resources}
 
 To learn about AEM Screens Player, see [AEM Screens Player](/screens/using/working-with-screens-player.md).

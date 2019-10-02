@@ -33,14 +33,14 @@ The **Segment Editor** allows you to easily define a segment:
 
 You can **Edit** each segment to specify a **Title**, **Description** and **Boost** factor. Using the sidekick you can add **AND** and **OR** containers to define the **Segment Logic**, then add the required **Segment Traits** to define the selection criteria.
 
-#### Boost Factor {#boost-factor}
+## Boost Factor {#boost-factor}
 
 Each segment has a **Boost** parameter that is used as a weighting factor; a higher number indicates that the segment will be selected in preference to a segment with a lower number.
 
 * Minimum value: `0`
 * Maximum value: `1000000`
 
-#### Segment Logic {#segment-logic}
+## Segment Logic {#segment-logic}
 
 The following logic containers are available out-of-the-box and allow you to construct the logic of your segment selection. They can be dragged from the sidekick to the editor:
 
@@ -57,7 +57,7 @@ The following logic containers are available out-of-the-box and allow you to con
  </tbody> 
 </table>
 
-#### Segment Traits {#segment-traits}
+## Segment Traits {#segment-traits}
 
 The following segment traits are available out-of-the-box; they can be dragged from the sidekick to the editor:
 
@@ -185,6 +185,6 @@ Mouseover on a teaser paragraph will show the segments applied, whether they cur
 
 ![](assets/chlimage_1-47.png) 
 
-#### Using Your Segment {#using-your-segment}
+### Using Your Segment {#using-your-segment}
 
 Segments are currently used within [Campaigns](/sites/classic-ui-authoring/using/classic-personalization-campaigns.md). They are used to steer the actual content seen by specific target audiences. See [Understanding Segments](/sites/authoring/using/segmentation-overview.md) for more information.

@@ -17,12 +17,11 @@ docset: aem65
 
 This page highlights the following topics:
 
-* **Configuring Author and Publish Instances  
-  **
+* **Configuring Author and Publish Instances**
 * **Setting Up Publish Topology**
 * **Managing Publication: Delivering Content Updates from Author to Publish to Device**
 
-### Prerequisites {#prerequisites}
+## Prerequisites {#prerequisites}
 
 Before getting started with author and publish servers, you should have prior knowledge of:
 
@@ -53,7 +52,6 @@ To create replication agents, you must learn how to create a standard replicatio
 There are 3 replication agents that are needed for Screens:
 
 1. **Default Replication Agent ***(specified as*** Standard Replication Agent**)
-
 1. **Screens Replication Agent**
 1. **Reverse Replication Agent**
 
@@ -114,7 +112,6 @@ Follow the steps below to create a Screens Replication Agent:
 #### Creating Standard Replication Agents  {#creating-standard-replication-agents}
 
 1. Create standard replication agent for pub1 (out-of-the-box default agent should already be configured) (for example, *http://&lt;hostname&gt;:4503/bin/receive?sling:authRequestLogin=1*)  
-
 1. Create standard replication agent for pub2. You can copy rep agent for pub1 and update the transport to be used for pub2 by changing the port in the transport configuration. (for example, *http://&lt;hostname&gt;:4504/bin/receive?sling:authRequestLogin=1*)
 
 #### Creating Screens Replication Agents {#creating-screens-replication-agents}
@@ -129,23 +126,23 @@ Follow the steps below to create a Screens Replication Agent:
 
 ## Setting up Publish Topology {#setting-up-publish-topology}
 
-#### Step 1: Configure Apache Sling Oak-Based Discovery {#step-configure-apache-sling-oak-based-discovery}
+### Step 1: Configure Apache Sling Oak-Based Discovery {#step-configure-apache-sling-oak-based-discovery}
 
-Set up Apache Sling Oak-Based Discovery for all Publish instances in the topology   
+Set up Apache Sling Oak-Based Discovery for all Publish instances in the topology
   
 For each publish instance:
 
-1. Navigate to http://&lt;host&gt;:&lt;port&gt;/system/console/configMgr
+1. Navigate to `http://<host>:<port>/system/console/configMgr`
 1. Select **Apache Sling Oak-Based Discovery Service** Configuration.
 1. Update Topology connector URLs: add URLs of all partaking publish instances that is, [http://localhost:4502/libs/sling/topology/connector](http://localhost:4502/libs/sling/topology/connector)
 1. Topology connector Whitelist: adapt to IPs or subnets covering partaking publish instances
-1. Enable **Auto-Stop Local-Loops** 
+1. Enable **Auto-Stop Local-Loops**
 
 The configuration should be identical for each publish instance and the auto-stop Local-loop prevents an infinite loop.
 
 #### Step 2: Verify Publish Topology {#step-verify-publish-topology}
 
-For any of the Publish instances navigate to http://&lt;host&gt;:&lt;port&gt;/system/console/topology. You should see each publish instance represented in the topology.
+For any of the Publish instances navigate to `http://<host>:<port>/system/console/topology`. You should see each publish instance represented in the topology.
 
 #### Step 3: Setup ActiveMQ Artemis Cluster {#step-setup-activemq-artemis-cluster}
 
@@ -155,7 +152,6 @@ The cluster user and password of all publish instances in the topology needs to 
 On each Publish Instance:
 
 1. In the OSGi Console navigate to **MAIN** --&gt; **Crypto Support** (*http://&lt;host&gt;:&lt;port&gt;/system/console/crypto*).
-
 1. Type in the desired plain text password (same for all instances) in **Plain Text**
 1. Click **Protect**.
 1. Copy the value **Protected Text **to notepad or text editor. This value will be used in the OSGi config for ActiveMQ.
@@ -206,7 +202,6 @@ If you do not see the following configuration from */system/console/mq*, then na
 Follow the steps on each Publish instance:
 
 1. Navigate to the **OSGi Console **&gt; **Configuration Manager**
-
 1. Select **Apache Sling Referrer Filter**
 1. Update config and **check Allow Empty**
 
@@ -284,7 +279,6 @@ The following points summarizes the Publishing Check list:
 * *Screens Device User* - This is stored as an AEM user and be activated from **Tools** &gt; **Security** &gt; **Users**. The user will be prefixed with "screens" with a long serialized string.
 
 * *Project* - The AEM Screens project.  
-
 * *Location* - Location that device is connected to.
 * *Channel(s)* - one or more channels that are being displayed at the location
 * *Schedule* - if using a schedule ensure this is published
@@ -299,7 +293,7 @@ Once you verify the checklist, you need to verify the following changes/behavior
 #### Step 5: Pointing the Device to Publish Instance in the Admin Panel {#step-pointing-the-device-to-publish-instance-in-the-admin-panel}
 
 1. View the admin UI from the Screens player, long press on the top left corner to open the Admin menu, on your touch enabled AEM Screens player, or by using a mouse. 
-1. Click the **Configuration **option from the side panel.
+1. Click the **Configuration** option from the side panel.
 1. Change author instance to publish instance in **Server**.
 
 View the changes in your AEM Screens player.

@@ -18,11 +18,9 @@ This page highlights the following topics:
 
 * **Introduction to Publish Servers**
 * **Architectural Overview**
-* **Registration Process  
-  
-  **
+* **Registration Process**
 
-### Prerequisites {#prerequisites}
+## Prerequisites {#prerequisites}
 
 Before getting started with author and publish servers, you should have prior knowledge of:
 
@@ -104,6 +102,6 @@ Once a device has been registered on the author environment the device configura
 
 ![](assets/screen_shot_2019-02-25at15218pm.png) 
 
-#### The Next Steps {#the-next-steps}
+### The Next Steps {#the-next-steps}
 
 Once you understand the architectural design of author and publish setup in AEM Screens, refer to [**Configuring Author and Publish for AEM Screens**](../../screens/using/author-and-publish.md) for more details.

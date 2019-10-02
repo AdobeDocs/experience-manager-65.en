@@ -46,7 +46,7 @@ Basic factors to consider are (in this order):
     * Size of website (number of content-object, pages, and users)
     * Number of users/sessions that are active at the same time
 
-### Architecture {#architecture}
+## Architecture {#architecture}
 
 A typical AEM setup consists of an author and a publish environment. These environments have different requirements regarding the underlying hardware size and system configuration. Detailed considerations for both environments are described in the [author environment](../../managing/using/hardware-sizing-guidelines.md#author-environment-specific-calculations) and [publish environment](../../managing/using/hardware-sizing-guidelines.md#publish-environment-specific-calculations) sections.
 
@@ -81,7 +81,7 @@ Hardware sizing requirements for advanced use cases need to be based on a detail
 * extensive use of customized code, custom workflows or 3rd party software libraries
 * integration with unsupported external systems
 
-#### Disk Space/ Hard Drive {#disk-space-hard-drive}
+### Disk Space/ Hard Drive {#disk-space-hard-drive}
 
 The disk space required depends heavily on both the volume and type of your web application. The calculations should take into account:
 

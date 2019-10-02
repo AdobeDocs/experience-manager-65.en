@@ -21,7 +21,7 @@ docset: aem65
 
 AEM Screens released AEM 6.4.5 Feature Pack 5 and AEM 6.5.1 Feature Pack 1 with the following details.
 
-### Release Date {#release-date}
+## Release Date {#release-date}
 
 The Release Date for AEM Screens Feature Pack 201907 is July 31, 2019.
 

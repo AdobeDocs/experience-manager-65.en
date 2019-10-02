@@ -50,7 +50,7 @@ The AEM content portlet enables you to display AEM content in a portal. The port
 
 Some of the configurations can be changed through portlet preferences and others through OSGi service configurations. You change these configurations using **config** files or the OSGi web console.
 
-#### Portlet Preferences {#portlet-preferences}
+### Portlet Preferences {#portlet-preferences}
 
 Porlet preferences can be configured at deployment time in the portal server or by editing the **WEB-INF/portlet.xml** file before deploying the portlet web application. The portlet.xml file appears as follows by default:
 
@@ -729,7 +729,7 @@ To access content provided by AEM WCM, the portal server needs to be fitted with
 
 By default, the portlet connects to the publish instance at localhost:4503 and to the author instance at localhost:4502. These values can be changed during deployment of the portlet. The portal director is available as content in the repository under /libs/portal/directory. You will need to download the application war file before using it.
 
-#### Downloading the war file {#downloading-the-war-file}
+### Downloading the war file {#downloading-the-war-file}
 
 1. Using either Webdav or CRXDE Lite, navigate to /libs/portal/director.  
 
@@ -797,7 +797,6 @@ To add the portlet to the portal page:
 
 1. Be sure you are in the administration window of your app server and navigate to the location where you manage pages. (for example, in WebSphere 6.1, click **Manage Pages**).
 1. Select the name of the portlet and then select an existing page or create a new page.  
-
 1. Edit the page layout.
 1. Select the portlet and add it to a container. 
 1. Save your changes.

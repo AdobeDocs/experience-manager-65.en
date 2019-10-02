@@ -67,7 +67,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ## Adaptive Forms {#adaptive-forms}
 
-#### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
+### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
 [Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures. 
 
@@ -91,7 +91,7 @@ You can now define rules to [add checkboxes to the Adaptive Form dynamically](..
 
 ## AEM Workflows {#aem-workflows}
 
-#### Use variables in AEM Workflows {#use-variables-in-aem-workflows}
+### Use variables in AEM Workflows {#use-variables-in-aem-workflows}
 
 Variables enable workflow steps to hold and pass metadata across workflow steps at runtime. You can create different types of variables for storing different types of data. For example, integers, strings, documents, or form data model instances. Typically, you use a variable or a collection of variables when you need to make a decision based on the value that it holds or to store information that you need later in a process.
 
@@ -124,7 +124,7 @@ You can now:
 
 ## Platform and Security updates {#platform-and-security-updates}
 
-#### Major platform updates {#major-platform-updates}
+### Major platform updates {#major-platform-updates}
 
 AEM Forms can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers. The following are the major changes in [supported platforms](../../forms/using/AEM-forms-JEE-supported-platforms.md): 
 

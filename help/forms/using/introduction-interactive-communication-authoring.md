@@ -75,7 +75,7 @@ The Channel browser helps you switch between the print and web channels of the I
 * **Data Sources Browser** 
   Data Sources Browser displays the available data sources in the form data model you selected while creating the Interactive Communication.
 
-#### Key points for working with components {#key-points-for-working-with-components}
+### Key points for working with components {#key-points-for-working-with-components}
 
 Key points when working with interactive communication components are as follows:
 
@@ -94,13 +94,13 @@ Key points when working with interactive communication components are as follows
 
 When you select a component, you see a toolbar that lets you work with it. You get options to cut, paste, move, and specify properties of the components. Your options are:
 
-A.** Configure**: When you tap **Configure**, component properties are visible in the sidebar.
+A.**Configure**: When you tap **Configure**, component properties are visible in the sidebar.
 
-B.** Edit Rules**: When you tap Edit Rules, Rule Editor appears in which you can edit and create rules for the selected component. In Rule Editor, you can also select other form objects (components) and edit/create rules for those form objects.
+B.**Edit Rules**: When you tap Edit Rules, Rule Editor appears in which you can edit and create rules for the selected component. In Rule Editor, you can also select other form objects (components) and edit/create rules for those form objects.
 
-C.** Copy**: You can use the copy option to copy a component and paste it in other places in the Interactive Communication.
+C.**Copy**: You can use the copy option to copy a component and paste it in other places in the Interactive Communication.
 
-D.** Cut**: You can use the cut option to move a component from one place to another in the Interactive Communication.
+D.**Cut**: You can use the cut option to move a component from one place to another in the Interactive Communication.
 
 E. **Delete**: Lets you delete the component from the Interactive Communication.
 
@@ -112,9 +112,9 @@ H. **Group**: Lets you select multiple components if you want to cut, copy, or p
 
 I. **Parent**: Lets you select the parent of a component.
 
-J. **View SOM Expression: **Lets you view the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
+J. **View SOM Expression:** Lets you view the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
 
-K: **Group objects in Panel: **Lets you group the components in a panel to be able to perform operations on those components simultaneously. For details, see [Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576).
+K: **Group objects in Panel:** Lets you group the components in a panel to be able to perform operations on those components simultaneously. For details, see [Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576).
 
 L. **Add Child Panel **(for panels only)**: **Lets you add a child panel to the panel.
 

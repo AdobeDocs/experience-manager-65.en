@@ -194,7 +194,7 @@ Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/login.htm
 
 Sarah is planning a family vacation next month and wants to apply for a week's leave from work.
 
-#### Sarah submits the leave application {#sarah-submits-the-leave-application}
+### Sarah submits the leave application {#sarah-submits-the-leave-application}
 
 Sarah goes to her organization's portal, logs in, and clicks **[!UICONTROL Employee]** to access the employee dashboard. She finds leave application on the employee dashboard and clicks **[!UICONTROL Apply]**.
 
