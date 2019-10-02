@@ -50,7 +50,7 @@ Select the placed `QnA` component to access and select the `Configure` icon whic
 
 #### Settings tab {#settings-tab}
 
-Under the **Settings **tab, specify settings for topics (questions) and replies (answers):
+Under the **Settings** tab, specify settings for topics (questions) and replies (answers):
 
 * **Allow Attachment Thumbnail** 
 

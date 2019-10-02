@@ -24,7 +24,7 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
 >
 >While developing custom components, on the server used for development, keep the adaptive forms cache disabled.
 
-### Configure the cache {#configure-the-cache}
+## Configure the cache {#configure-the-cache}
 
 Perform the following steps to configure the adaptive forms cache:
 

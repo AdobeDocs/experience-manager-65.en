@@ -172,8 +172,6 @@ Create and manage template for the Web channel of Interactive Communication usin
 
 ### Create folder for templates {#create-folder-for-templates}
 
-##
-
 To create a Web channel template, define a folder where you can save the created templates. Once you create a template inside that folder, enable the template to allow the forms users to create Web channel of an Interactive Communication based on the template.
 
 Execute the following steps to create a folder for the editable templates:

@@ -42,24 +42,18 @@ In the General tab, change the download attachments, offline mode, landing scree
 You can make the following changes to the settings of your app.
 
 * **Fetch task attachments**: To specify whether or not to download the associated attachments when each task is downloaded to your app.
-
-** **
-
 * **Offline mode**: To enable or disable the offline service for AEM Forms app. See [Working in the offline mode](/forms/using/work-offline-mode.md) for details.
-
 * **Landing screen**: To set the start location ([Home screen](../../forms/using/home-screen.md)) for the app.  
   Available options:
 
-    * Forms
-    * Tasks
-    * Favorites
+  * Forms
+  * Tasks
+  * Favorites
 
 * **Default category**: Lets you select the category of forms to show in the home screen. When you select All, you can see the all the forms in the home screen. Categories are populated based on the forms loaded in the app. Forms are available in the app based on the form settings specified in the AEM Forms server.
 
 * **Autosave Frequency**: To set the frequency at which your [mobile app saves form data](../../forms/using/autosave-data-app.md) locally.
-
-* **Synchronisation Frequency**: To set the frequency at which your [mobile app is synchronized](../../forms/using/sync-app.md) with the AEM Forms server in the online mode.
-
+* **Synchronization Frequency**: To set the frequency at which your [mobile app is synchronized](../../forms/using/sync-app.md) with the AEM Forms server in the online mode.
 **Clear Local Data**: Clear the database, including settings and local data for all users and file storage from the device.
 
 >[!NOTE]

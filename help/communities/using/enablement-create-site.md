@@ -282,25 +282,25 @@ To get started
 
 1. with newly created `localhost.4503` node selected
 
-  * add property
+* add property
 
-    * **Name** sling:match
-    * **Type** String
-    * **Value** localhost.4503/$  
+  * **Name** sling:match
+  * **Type** String
+  * **Value** localhost.4503/$  
 
     (must end with '$' char)
 
-  * add property
+* add property
 
-    * **Name** sling:internalRedirect
-    * **Type** String
-    * **Value** /content/sites/enable/en.html
+  * **Name** sling:internalRedirect
+  * **Type** String
+  * **Value** /content/sites/enable/en.html
 
 1. select **Save All**
 1. (optional) delete the browsing history
 1. browse to http://localhost:4503/
 
-  * arrive at http://localhost:4503/content/sites/enable/en.html
+* arrive at http://localhost:4503/content/sites/enable/en.html
 
 >[!NOTE]
 >

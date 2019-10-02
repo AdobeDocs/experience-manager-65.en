@@ -16,7 +16,7 @@ docset: aem65
 
 Adobe Experience Manager Forms integrates with Adobe Analytics that allows you to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
 
-### Setting up analytics {#setting-up-analytics}
+## Setting up analytics {#setting-up-analytics}
 
 The analytics feature in AEM Forms is available as part of the AEM Forms add-on package. For information about installing the add-on package, see [Installing and configuring AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
@@ -86,7 +86,6 @@ The form-level summary section gives you an insight into how the form is perform
 
 * **Average fill time**: Average time spent in filling the form. When users spend time on the form but do not submit, that time is not included in this calculation. 
 * **Renditions**: Number of times the form has been rendered or opened  
-
 * **Drafts**: Number of times the form has been saved as draft
 * **Submissions**: Number of times the form has been submitted
 * **Abort**: Number of times users started filling the form and then left without completing the form
@@ -99,9 +98,7 @@ The form-level summary section gives you an insight into how the form is perform
 The panel-level summary section provides the following information about each panel in the form:
 
 * **Average Fill Time**: Average time spent on the panel, whether the form is submitted or not  
-
 * **Errors Encountered**: Average number of errors encountered by the users on the fields in a panel. Errors Encountered is arrived at by dividing total errors in a field by number of renditions of the form.   
-
 * **Help Accessed**: Average number of times users accessed the in-context help for the fields in the panel. Help Accessed is arrived at by dividing total number of times Help is accessed for a field by number of renditions of form.
 
 #### Detailed panel report {#detailed-panel-report}
@@ -114,7 +111,7 @@ The detailed report shows values for all fields in the panel.
 
 Panel Report has three tabs:
 
-* **Time Report **(Default): Displays the time, in number of seconds, spent on filling up each of the fields in the panel
+* **Time Report**(Default): Displays the time, in number of seconds, spent on filling up each of the fields in the panel
 * **Error Report**: Displays the number of errors encountered by users while filling up the fields 
 * **Help Report**: Number of times help for a particular field was accessed
 

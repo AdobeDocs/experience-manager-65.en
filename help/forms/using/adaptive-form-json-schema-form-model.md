@@ -586,7 +586,7 @@ Some examples of using events in a JSON are hiding a field on initialize event a
 
 Here is the sample JSON code for aforementioned examples.
 
-#### Hiding a field on initialize event {#hiding-a-field-on-initialize-event}
+### Hiding a field on initialize event {#hiding-a-field-on-initialize-event}
 
 ```
 

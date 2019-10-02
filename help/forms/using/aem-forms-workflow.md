@@ -53,7 +53,7 @@ AEM provides an intuitive user interface to create a workflow model using the pr
 >
 >You must be a member of the workflow-editor group to create or edit a workflow model.
 
-#### Create a model for an approval and review workflow {#create-a-model-for-an-approval-and-review-workflow}
+### Create a model for an approval and review workflow {#create-a-model-for-an-approval-and-review-workflow}
 
 Approval and review workflow are for the tasks which require human intervention to make decisions. The following example creates a workflow model for a mortgage loan application to be filled by a front-office banking agent. Once the application is filled, it is sent for approval. Later on, the approved application is sent to the applicant for electronic signatures using Adobe Sign.
 

@@ -16,7 +16,7 @@ docset: aem65
 
 HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter *submissionServiceProxy*.
 
-### Benefits of Service Proxy <br> {#benefits-of-service-proxy-br}
+## Benefits of Service Proxy <br> {#benefits-of-service-proxy-br}
 
 The service proxy eliminates following:
 

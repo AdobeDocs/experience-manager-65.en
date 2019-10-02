@@ -29,7 +29,7 @@ You can prefill both bound and unbound fields of an adaptive form. The prefill d
 * For adaptive forms using FDM schema, use the prefill JSON compliant with FDM schema.
 * For adaptive forms with [no form model](../../forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p), there is no bound data. Every field is an unbound field and is prefilled using the unbound XML.
 
-#### Sample Prefill XML structure {#sample-prefill-xml-structure}
+### Sample Prefill XML structure {#sample-prefill-xml-structure}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -53,7 +53,7 @@ You can prefill both bound and unbound fields of an adaptive form. The prefill d
 </afData>
 ```
 
-#### Sample Prefill JSON structure {#sample-prefill-json-structure}
+### Sample Prefill JSON structure {#sample-prefill-json-structure}
 
 ```
 {

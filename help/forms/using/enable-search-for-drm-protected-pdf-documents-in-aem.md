@@ -20,7 +20,7 @@ AEM search is capable of searching and locating AEM assets and performing text s
 1. Establish a secure connection
 1. Index a sample policy-protected PDF document
 
-### Prerequisites {#prerequisites}
+## Prerequisites {#prerequisites}
 
 * If you are using AEM Forms on OSGi:
 
