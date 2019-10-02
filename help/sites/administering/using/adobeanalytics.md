@@ -41,7 +41,7 @@ You can also use the [Opt-in wizard](/sites/administering/using/opt-in.md) to ea
 >
 >See also the how-to article: [Integrating AEM with Adobe Target and Adobe Analytics using DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
-### Further Information {#further-information}
+## Further Information {#further-information}
 
 See:
 

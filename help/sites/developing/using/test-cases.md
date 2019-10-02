@@ -35,7 +35,7 @@ The tests should clearly define:
 
 The prospect of automating test cases is obviously attractive as it can eliminate repetitive tasks.
 
-#### Manual versus Automated Tests {#manual-versus-automated-tests}
+### Manual versus Automated Tests {#manual-versus-automated-tests}
 
 However, automating test cases is a significant investment, so certain aspects should be considered:
 

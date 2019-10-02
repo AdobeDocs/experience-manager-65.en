@@ -163,7 +163,7 @@ In the next example:
 
 Auditing records and log files relating to Adobe Experience Manager (AEM) can be found at various locations. The following is provided to give you an overview of what you can find where.
 
-#### Working with Logs {#working-with-logs}
+### Working with Logs {#working-with-logs}
 
 AEM WCM records detailed logs. After you unpack and start Quickstart, you can find logs in:
 

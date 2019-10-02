@@ -19,7 +19,7 @@ This article aims to improve knowledge on tasks and considerations needed to suc
 
 For more deployment related information, consult the [Deploying and Maintaining](../../../sites/deploying/using/deploy.md) section of the documentation.
 
-### When to use MongoDB with AEM {#when-to-use-mongodb-with-aem}
+## When to use MongoDB with AEM {#when-to-use-mongodb-with-aem}
 
 MongoDB will typically be used for supporting AEM author deployments where one of the following criteria is met:
 
@@ -228,8 +228,6 @@ If the query hint is not disabled, any performance tuning of indexes will have n
 #### Enable Persistent Cache for MongoMK {#enable-persistent-cache-for-mongomk}
 
 It is recommended that a persistent cache configuration is enabled for MongoDB deployments, in order to maximize speed for environments with high I/O read performance. For more details, see the [Jackrabbit Oak documentation](http://jackrabbit.apache.org/oak/docs/nodestore/persistent-cache.html).
-
-##
 
 ## MongoDB Operating System Optimizations {#mongodb-operating-system-optimizations}
 

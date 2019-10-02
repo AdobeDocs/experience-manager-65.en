@@ -17,11 +17,11 @@ docset: aem65
 
 This page provides information on how to troubleshoot replication issues.
 
-#### Problem {#problem}
+## Problem {#problem}
 
 Replication (non-reverse replication) is failing for some reason.
 
-#### Resolution {#resolution}
+## Resolution {#resolution}
 
 There are various reasons for replication to fail. This article explains the approach one might take when analyzing these issues.
 
@@ -79,20 +79,20 @@ Sometimes it can be very helpful to set all replication logging to be added in a
 
 1. If you suspect the problem to be related to sling eventing/jobs in any way then you can also add this java package under categories:org.apache.sling.event
 
-#### Pausing Replication Agent Queue  {#pausing-replication-agent-queue}
+## Pausing Replication Agent Queue  {#pausing-replication-agent-queue}
 
 Sometime it might be suitable to pause the replication queue to reduce load on the author system, without disabling it. Currently this is only possible by a hack of temporarily configuring an invalid port. From 5.4 onwards you could see pause button in replication agent queue it has some limitation
 
 1. The state is not persisted that means if you restart a server or replication bundle is recycled it gets back to running state.
 1. The pause is idle for a shorter period (OOB 1 hour after no activities with replication by other threads) and not for a longer time. Because There is feature in sling which avoid idle threads. Basically check if a job queue thread has been unused for a longer time, if so it kicks up clean up cycles. Due to cleanup cycle it stops the thread and hence the paused setting is lost. Since jobs are persisted it initiates a new thread to process the queue which does not have details of the paused configuration. Due to this queue turns into running state.
 
-#### Page Permissions are not Replicated on User Activation {#page-permissions-are-not-replicated-on-user-activation}
+## Page Permissions are not Replicated on User Activation {#page-permissions-are-not-replicated-on-user-activation}
 
 Page permissions are not replicated because they are stored under the nodes to which access is granted, not with the user.
 
 In general page permissions should not be replicated from the author to publish and are not by default. This is because access rights should be different in those two environments. Therefore it is recommended to configure ACLs on publish separately from author.
 
-#### Replication queue blocked when replicating namespace information from Author to Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## Replication queue blocked when replicating namespace information from Author to Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
 In some cases the replication queue is blocked when trying to replicate namespace information from the author instance to the publish instance. This happens because the replication user does not have `jcr:namespaceManagement` privilege. To avoid this issue, make sure that:
 
