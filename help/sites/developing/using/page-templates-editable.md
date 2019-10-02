@@ -175,7 +175,7 @@ To create a new folder, you can either do this:
 * Programmatically or with CRXDE Lite
 * Using the Configuration Browser
 
-#### Using CRXDE Lite {#using-crxde-lite}
+## Using CRXDE Lite {#using-crxde-lite}
 
 1. A new folder (under /conf) can be created for your instance either programmatically or with CRXDE Lite.
 

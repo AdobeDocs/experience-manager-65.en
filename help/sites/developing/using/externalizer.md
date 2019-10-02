@@ -21,7 +21,7 @@ Because an instance cannot know its externally visible URL if it is running behi
 
 This page explains how to configure the **Externalizer** service and how to use it. For more details, please refer to the [Javadocs](/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.md).
 
-### Configuring the Externalizer service {#configuring-the-externalizer-service}
+## Configuring the Externalizer service {#configuring-the-externalizer-service}
 
 The **Externalizer** service allows you to centrally define multiple domains that can be used to programmatically prefix resource paths. Each domain is identified by a unique name that is used to programmatically reference the domain.
 
@@ -51,9 +51,7 @@ To define a domain mapping for the **Externalizer** service:
         * it will be used if the client code does not override the scheme when asking for externalization of a URL.
 
     * **server** is the host name (can be a domain name or ip address).  
-    
     * **port** (optional) is the port number.  
-    
     * **contextpath** (optional) is only set if AEM is installed as a webapp under a different context path.
 
    For example: `production http://my.production.instance`
@@ -62,7 +60,6 @@ To define a domain mapping for the **Externalizer** service:
 
     * `local` - the local instance
     * `author` - the authoring system DNS  
-    
     * `publish` - the public facing website DNS
 
    >[!NOTE]

@@ -40,7 +40,7 @@ as the mapping will automatically add the prefix `/content` to `/we-retail/en/pr
 >
 >See the Sling documentation, and [Mappings for Resource Resolution](http://sling.apache.org/site/resources.html) and [Resources](http://sling.apache.org/site/mappings-for-resource-resolution.html) for further information.
 
-### Viewing Mapping Definitions {#viewing-mapping-definitions}
+## Viewing Mapping Definitions {#viewing-mapping-definitions}
 
 The mappings form two lists that the JCR Resource Resolver evaluates (top-down) to find a match.
 

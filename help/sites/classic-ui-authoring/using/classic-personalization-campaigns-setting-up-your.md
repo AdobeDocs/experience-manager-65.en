@@ -47,7 +47,7 @@ Then depending on the type of experience(s) you are creating, you will need to [
 >
 >See [Segmentation](../../../sites/administering/using/campaign-segmentation.md) for detailed instructions on defining your segments.
 
-### Creating a New Brand {#creating-a-new-brand}
+## Creating a New Brand {#creating-a-new-brand}
 
 To create a new brand:
 

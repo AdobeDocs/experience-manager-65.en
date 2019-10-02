@@ -67,7 +67,7 @@ Facets are configured on the Search&Promote server, as is the information that e
  </tbody> 
 </table>
 
-### Creating the search results page {#creating-the-search-results-page}
+## Creating the search results page {#creating-the-search-results-page}
 
 Use the WCM Websites console to create a page for showing search results. The results of a search from any Search component can appear on this page if it uses the same Search&Promote service.
 

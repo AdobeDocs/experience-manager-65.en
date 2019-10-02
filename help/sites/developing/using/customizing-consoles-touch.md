@@ -62,7 +62,7 @@ For example, the following location within the `/libs` structure can be overlaid
 >
 >See the Knowledge Base article, [Troubleshooting AEM TouchUI issues](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), for further tips and tools.
 
-### Customizing the Default View for a Console {#customizing-the-default-view-for-a-console}
+## Customizing the Default View for a Console {#customizing-the-default-view-for-a-console}
 
 You can customize the default view (column, card, list) for a console:
 

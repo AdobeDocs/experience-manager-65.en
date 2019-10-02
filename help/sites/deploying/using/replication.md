@@ -29,7 +29,7 @@ Requests are [queued](../../../sites/deploying/using/osgi-configuration-settings
 >
 >For multiple publish instances, user data is Sling distributed when [User Synchronization](../../../sites/administering/using/sync.md) is enabled.
 
-### Replicating from Author to Publish {#replicating-from-author-to-publish}
+## Replicating from Author to Publish {#replicating-from-author-to-publish}
 
 Replication, to a publish instance or dispatcher, takes place in several steps:
 
@@ -118,7 +118,7 @@ The following agents are available in a standard AEM installation:
 
 When configuring a replication agent from the Tools console, four tabs are available within the dialog:
 
-#### Settings {#settings}
+### Settings {#settings}
 
 * **Name**
 
@@ -566,7 +566,7 @@ For additional information, Adobe has a series of Knowledge Base articles relate
 [http://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)  
 [http://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)  
 [http://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)  
-[http://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)  
+[http://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
 [http://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)  
 [http://helpx.adobe.com/experience-manager/kb/ReplicationListener.html](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)  
 [http://helpx.adobe.com/experience-manager/kb/replication-stuck.html](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)  
@@ -575,7 +575,6 @@ For additional information, Adobe has a series of Knowledge Base articles relate
 [http://helpx.adobe.com/experience-manager/kb/ACLReplication.html](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)  
 [http://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)  
 [http://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
-
 http://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html   
 http://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html   
 http://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html   

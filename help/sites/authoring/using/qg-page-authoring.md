@@ -27,11 +27,11 @@ For full details about authoring with AEM see:
 * [First Steps for Authors](../../../sites/authoring/using/first-steps.md)  
 * [Authoring Pages](../../../sites/authoring/using/page-authoring.md)
 
-### A Few Quick Hints {#a-few-quick-hints}
+## A Few Quick Hints {#a-few-quick-hints}
 
 Before giving the overview of specifics, here is a small collection of general tips and hints that are worth bearing in mind.
 
-#### Sites Console {#sites-console}
+### Sites Console {#sites-console}
 
 * **Create**
 

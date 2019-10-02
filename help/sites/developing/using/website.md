@@ -53,7 +53,7 @@ Website content package
 
 [Get File](assets/website-1_0.zip)
 
-### Installing Adobe Experience Manager {#installing-adobe-experience-manager}
+## Installing Adobe Experience Manager {#installing-adobe-experience-manager}
 
 To install an AEM instance for developing your website, follow the instructions for setting up a [deployment environment with author and publish instances](../../../sites/deploying/using/deploy.md#author-and-publish-installs), or perform a [generic installation](../../../sites/deploying/using/deploy.md#default-local-install). The generic installation involves downloading the AEM Quickstart JAR file, placing the license.properties file in the same directory as the JAR file, and double-clicking the JAR file.
 
