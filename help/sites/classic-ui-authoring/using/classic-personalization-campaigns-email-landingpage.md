@@ -29,7 +29,7 @@ To create an effective newsletter landing page, you need to do the following:
 >Adobe is not planning to further enhance this capability (Managing Leads and Lists).  
 >Recommendation is to leverage [Adobe Campaign and the integration to AEM](/sites/administering/using/campaign.md).
 
-### Creating a List for the Newsletter {#creating-a-list-for-the-newsletter}
+## Creating a List for the Newsletter {#creating-a-list-for-the-newsletter}
 
 Create a list, for example, **Geometrixx Newsletter**, in MCM for the newsletter that people should subscribe to. Creating lists is described in [Creating lists](/sites/classic-ui-authoring/using/classic-personalization-campaigns.md#creatingnewlists).
 

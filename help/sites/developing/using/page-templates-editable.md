@@ -206,7 +206,7 @@ To create a new folder, you can either do this:
 
    See [Access Right Management](../../../sites/administering/using/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.
 
-#### Using the Configuration Browser {#using-the-configuration-browser}
+### Using the Configuration Browser {#using-the-configuration-browser}
 
 1. Go to **Global Navigation** -&gt; **Tools** &gt; **Configuration Browser**.
 

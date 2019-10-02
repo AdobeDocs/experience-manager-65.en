@@ -67,7 +67,7 @@ See the following examples below:
 |---|---|
 | `cq:commerceProvider = hybris` |hybris implementation |
 
-#### Example {#example}
+### Example {#example}
 
 ```shell
 /content/store 

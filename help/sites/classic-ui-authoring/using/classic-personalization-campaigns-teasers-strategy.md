@@ -31,7 +31,7 @@ Teasers within AEM are comprised of several parts:
 * **Teaser paragraphs** are actual instances of your teaser within a content page. These entice a segment of visitors through to content focused on their interests.
 * Pages that hold the campaign content focused on a specific visitor segment. Usually the teaser paragraphs will lead the visitor to such pages.
 
-### Strategies {#strategies}
+## Strategies {#strategies}
 
 When adding a teaser paragraph to a page you need to define the **Strategy**.
 
