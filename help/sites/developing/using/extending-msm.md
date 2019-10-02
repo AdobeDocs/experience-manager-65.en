@@ -30,7 +30,7 @@ This page helps you extend the functionalities of the Multi Site Manager:
 >
 >The Multi Site Manager and its API are used when authoring a website, so are only intended for use on an author environment.
 
-### Overview of the Java API {#overview-of-the-java-api}
+## Overview of the Java API {#overview-of-the-java-api}
 
 Multi Site Management consists of the following packages:
 
@@ -108,7 +108,7 @@ The `LiveActionFactory` creates instances of the `LiveAction` class for a given 
     
     * `createsAction`: Returns the name of the associated `LiveAction`.
 
-#### Accessing the LiveAction Configuration Node {#accessing-the-liveaction-configuration-node}
+### Accessing the LiveAction Configuration Node {#accessing-the-liveaction-configuration-node}
 
 Use the `LiveAction` configuration node in the repository to store information that affects the runtime behaviour of the `LiveAction` instance. The node in the repository that stores the `LiveAction` configuration is available to the `LiveActionFactory` object at runtime. Therefore, you can add properties to the configuration node to and use them in your `LiveActionFactory` implementation as needed.
 
@@ -128,7 +128,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-#### Accessing Target Nodes, Source Nodes, and the LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Accessing Target Nodes, Source Nodes, and the LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 The following objects are provided as parameters of the `execute` method of the `LiveAction` object:
 

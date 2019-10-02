@@ -26,7 +26,7 @@ Design your filters so that you can use combinations of them to define the group
 
 After you create a filter, you can use it in the [group configuration.](../../../sites/developing/using/mobile.md#creating-a-device-group)
 
-### The Filter Java Class {#the-filter-java-class}
+## The Filter Java Class {#the-filter-java-class}
 
 A device group filter is an OSGi component that implements the [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.md) interface. When deployed, the implementation class provides a filter service that is available to device group configurations.
 

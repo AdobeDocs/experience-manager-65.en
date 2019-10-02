@@ -400,7 +400,7 @@ See the following:
 
 An editing session is started when the user opens a content fragment in one of the editor pages. The editing session is finished when the user leaves the editor by selecting either **Save** or **Cancel**.
 
-#### Requirements {#requirements}
+### Requirements {#requirements}
 
 Requirements for controlling an editing session are:
 

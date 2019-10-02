@@ -58,7 +58,7 @@ From the MCM you can access:
 * ** [Campaigns](#campaigns)** 
   Here you can manage your Brands, Campaigns and Experiences.
 
-### Dashboard {#dashboard}
+## Dashboard {#dashboard}
 
 The dashboard shows four panes that provide you with an overview of your lists (of leads), segments, reports and campaigns. Access to basic functionality for these is also available here.
 

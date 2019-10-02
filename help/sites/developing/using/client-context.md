@@ -31,7 +31,7 @@ To create a standalone session store and add it to Client Context, or create a s
 
 For information about opening Client Context, configuring the information that it displays, and simulating the user experience, see [Client Context](../../../sites/administering/using/client-context.md).
 
-### Session Stores {#session-stores}
+## Session Stores {#session-stores}
 
 The Client Context includes various session stores that contain user data. Store data comes from the following sources:
 

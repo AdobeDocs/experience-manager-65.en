@@ -38,7 +38,7 @@ In addition to [developing new components](/sites/developing/using/developing-co
 >
 >This document focuses on developing forms using the [Foundation Components](../../../sites/authoring/using/default-components-foundation.md) in the classic UI. Adobe recommends leveraging the new [Core Components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html) and [Hide Conditions](/sites/developing/using/hide-conditions.md) for form development in the touch-enabled UI.
 
-### Preloading Form Values {#preloading-form-values}
+## Preloading Form Values {#preloading-form-values}
 
 The form start component provides a field for the **Load Path**, an optional path that points to a node in the repository.
 
