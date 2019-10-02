@@ -26,7 +26,7 @@ Each Template will present you with a selection of components available for use.
 >
 >[Editable templates](../../../sites/developing/using/page-templates-editable.md) are also available and are the recommended type of templates for most flexibility and the newest features.
 
-### Properties and Child Nodes of a Template {#properties-and-child-nodes-of-a-template}
+## Properties and Child Nodes of a Template {#properties-and-child-nodes-of-a-template}
 
 A template is a node of type cq:Template and has the following properties and child nodes:
 

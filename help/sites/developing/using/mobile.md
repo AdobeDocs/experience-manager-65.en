@@ -60,11 +60,11 @@ The mobile page component ( `/libs/wcm/mobile/components/page`):
 >
 >The root page of the mobile site needs to be at the level 1 of the node hierarchy, and is recommended to be below the /content node.
 
-#### Creating a Mobile Site with the Multi Site Manager {#creating-a-mobile-site-with-the-multi-site-manager}
+## Creating a Mobile Site with the Multi Site Manager {#creating-a-mobile-site-with-the-multi-site-manager}
 
 Use Multi Site Manager (MSM) to create a mobile live copy from a standard site. The standard site is automatically transformed into a mobile site: the mobile site has all the features of the mobile sites (e.g. edition within an emulator) and can be managed in sync with the standard site. Refer to the section [Creating a Live Copy for different Channels](/sites/administering/using/msm.md) in the Multi Site Manager page.
 
-#### Server-Side Mobile API {#server-side-mobile-api}
+## Server-Side Mobile API {#server-side-mobile-api}
 
 The Java packages containing the mobile classes are:
 
@@ -258,13 +258,10 @@ Create a device group when the groups that AEM installs do not meet your require
    On the **General** tab:
 
     * **Title**: the name of the mobile device group.  
-    
     * **Description**: description of the group.
     * **User-Agent**: user-agent string which the devices are matched against. It is optional and can be a regex. Example: `BlackBerryZ10`  
-    
     * **Capabilities**: defines if the group can handle images, CSS, JavaScript or device rotation.
     * **Minimum Screen Width **and** Height**
-    
     * **Disable Emulator**: to able/disable the emulator during content editing.
 
    On the **Emulators** tab:

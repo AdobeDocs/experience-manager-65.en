@@ -35,7 +35,7 @@ For more information, see:
 >
 >For information about concepts and administering eCommerce implementations, see [Administering eCommerce](../../../sites/administering/using/ecommerce.md).
 
-### API Documentation {#api-documentation}
+## API Documentation {#api-documentation}
 
 The eCommerce API is provided by the packages:
 

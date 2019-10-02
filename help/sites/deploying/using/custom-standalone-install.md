@@ -318,7 +318,7 @@ Once AEM WCM has been started, you can also access:
 * [CRXDE Lite](#accessing-crxde-lite) - used to access and manage the repository
 * [Web Console](#accessing-the-web-console) - used to manage or configure the OSGi bundles (also known as the OSGi Console)
 
-#### Accessing CRXDE Lite {#accessing-crxde-lite}
+### Accessing CRXDE Lite {#accessing-crxde-lite}
 
 To open CRXDE Lite you can select **CRXDE Lite** from the welcome screen or use your browser to navigate to
 

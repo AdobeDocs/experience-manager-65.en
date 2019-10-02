@@ -890,31 +890,22 @@ This component is needed to define the start of a new form on a page. You can co
       A selection of action types are included in a standard AEM installation:
 
         * **Account Request** 
-        
         * **Create Content**
         * **Create Lead** 
-        
         * **Create and Update Account**
         * **E-Mail Service: Create Subscriber and add to list**
         * **E-Mail Service: Send auto-responder email**
         * **E-Mail Service: Unsubscribe user from list**
-        * **Edit Community  
-          **
+        * **Edit Community**
         * **Edit Resource(s)** 
-          ** **
-        
         * **Edit Workflow Controlled Resource(s)** 
-        
         * **Mail**
-        * **Placed Order Details  
-          **
+        * **Placed Order Details**
         * **Profile Update** 
-        
         * **Reset Password** 
-        
         * **Set Password** 
-        
         * **Store Content** 
+        
           This is the default action type.  
         
         * **Store Content with Uploads**

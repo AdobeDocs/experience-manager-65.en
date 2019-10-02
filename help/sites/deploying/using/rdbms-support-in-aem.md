@@ -90,16 +90,14 @@ The following configuration options are available:
 
 * `password:` The database password.
 
-#### URL String Formats {#url-string-formats}
+### URL String Formats {#url-string-formats}
 
 A different URL string format is used in the data source configuration depending on the database type that needs to be used. Below is a list of formats for the databases that AEM currently supports:
 
 * `jdbc:postgresql:databasename` for PostgreSQL;  
-
 * `jdbc:db2://localhost:port/databasename` for DB2;
 * `jdbc:oracle:thin:localhost:port:SID` for Oracle;
 * `jdbc:mysql://localhost:3306/databasename` for MySQL and MariaDB (experimental);  
-
 * `jdbc:sqlserver://localhost:1453;databaseName=name` for Microsoft SQL Server (experimental).
 
 ## Known Limitations {#known-limitations}

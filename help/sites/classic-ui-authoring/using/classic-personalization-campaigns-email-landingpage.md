@@ -37,7 +37,7 @@ The following shows an example of a list:
 
 ![](assets/mcm_listcreate.png) 
 
-### Create a Sign Up Form {#create-a-sign-up-form}
+## Create a Sign Up Form {#create-a-sign-up-form}
 
 Create a newsletter registration form that allows users to subscribe to tags. The sample Geometrixx web site provides a newsletter page in the Geometrixx toolbar where you can create your form.
 

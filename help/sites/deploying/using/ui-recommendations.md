@@ -39,7 +39,7 @@ Terms of interest:
 * **ContextHub** 
   Capabilities to aggregate information about the visitor and use it for various purposes. Provides an user interface to simulate persons visiting the site. Starting AEM 6.2, ContextHub replaced the previous technology, Client Context.
 
-### General {#general}
+## General {#general}
 
 Over the last few years Adobe has updated all the Adobe Experience Cloud solutions with an unified user interface. Users across the Experience Cloud solutions enjoy a consistant experience with common patterns on how to use and operate the applications. With every release, Adobe has refined it's user interface based on feedback from customers working across the various solutions.
 

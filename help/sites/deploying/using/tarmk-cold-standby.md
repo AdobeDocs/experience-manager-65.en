@@ -48,7 +48,7 @@ A typical TarMK Cold Standby deployment:
 
 ## Other characteristics {#other-characteristics}
 
-#### Robustness {#robustness}
+### Robustness {#robustness}
 
 The data flow is designed to detect and handle connection and network related problems automatically. All packets are bundled with checksums and as soon as problems with the connection or damaged packets occur retry mechanisms are triggered.
 
@@ -368,8 +368,6 @@ Furthermore information for up to 10 clients (standby instances) that are connec
 * `TransferredSegments:` the total number of segments transferred to this client.
 * `TransferredSegmentBytes:`the total number of bytes transferred to this client.
 
-#####
-
 ## Cold Standby Repository Maintenance {#cold-standby-repository-maintenance}
 
 >[!NOTE]
@@ -395,7 +393,7 @@ It may take longer than usual for the standby instance to complete synchronizati
 
 As an alternative, the primary repository can be copied over to the standby manually after running compaction on the primary, essentially rebuilding the standby each time compaction runs.
 
-#### Data Store Garbage Collection {#data-store-garbage-collection}
+### Data Store Garbage Collection {#data-store-garbage-collection}
 
 It is important to run garbage collection on file datastore instances from time to time as otherwise, deleted binaries will remain on the filesystem, eventually filling up the drive. To run garbage collection, follow the below procedure:
 

@@ -324,7 +324,7 @@ The target.jsp script accesses the page properties to determine the targeting en
 * [Adobe Campaign](/sites/authoring/using/target-adobe-campaign.md): /libs/cq/personalization/components/target/engine_cq_campaign.jsp
 * Client-side Rules/ContextHub: /libs/cq/personalization/components/target/engine_cq.jsp
 
-#### The Creation of Mboxes {#the-creation-of-mboxes}
+### The Creation of Mboxes {#the-creation-of-mboxes}
 
 >[!NOTE]
 >
