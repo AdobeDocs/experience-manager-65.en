@@ -20,7 +20,7 @@ Although HTML5 forms match the behavior of the PDF forms to a great extent, ther
 
 For common XFA features, see the following best practices and guidelines to design a form that works in both formats.
 
-### Best practices {#best-practices}
+## Best practices {#best-practices}
 
 Most steps around designing a form template, such as schema bindings or writing form logic are same. However, due to inherent differences between rendering and scripting engine of a thick client like Adobe Reader and browser-based forms, there are some recommendations described in the [best practices](/forms/using/best-practices-design-html5-forms.md) article. These best practices help you design form templates to work as expected in both formats.
 

@@ -19,7 +19,7 @@ HTML5 forms generates documents based on standard HTML5 constructs. You can view
 
 ![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
-### Key capabilities of HTML5 forms <br> {#key-capabilities-of-html-forms-br}
+## Key capabilities of HTML5 forms <br> {#key-capabilities-of-html-forms-br}
 
 * Renders existing XFA forms in HTML5 supported on all compatible browsers.
 * Leverages standard XFA form design capabilities to target forms for mobile devices.
@@ -31,7 +31,7 @@ HTML5 forms generates documents based on standard HTML5 constructs. You can view
 * Enables custom widgets to offer a rich data capture experience.
 * Provides support for integration with web apps.
 
-#### Multichannel publishing {#multichannel-publishing}
+### Multichannel publishing {#multichannel-publishing}
 
 Form developers can use an XFA template to render forms in PDF and HTML5 formats. This capability is beneficial in scenarios where you have a large set of XFA forms that require minimal changes to adapt to HTML5 forms design practices. You can render the existing XFA forms to HTML5 to target various devices where XFA-based PDF is not yet supported.
 
@@ -39,7 +39,7 @@ Form developers can use an XFA template to render forms in PDF and HTML5 formats
 
 AEM also provides a unified view for listing and managing all form templates using AEM Forms UI. You can activate, deactivate, publish, and preview forms. For more information, see [Introduction to managing forms](../../forms/using/introduction-managing-forms.md).
 
-#### Forms customization {#forms-customization}
+### Forms customization {#forms-customization}
 
 HTML5 forms renders form templates using standard HTML5 constructs. This makes it simple to customize and extend forms in HTML5 format using web technologies, primarily CSS, and JavaScript. You can easily customize the appearance of existing widgets, create your own custom widgets, or use custom styles in forms. For more information about creating custom widgets and customizing existing widgets, see [Plug in custom widgets with HTML5 forms](../../forms/using/custom-widgets.md).
 

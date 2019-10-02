@@ -16,7 +16,7 @@ docset: aem65
 
 You can modify the login screen of all AEM Forms modules that use the AEM Forms login screen. For example, the modifications affect the login screen of, both, Forms Manager and AEM Forms workspace.
 
-### Prerequisite {#prerequisite}
+## Prerequisite {#prerequisite}
 
 1. Log in at `/lc/crx/de` with Administrator permissions.
 1. Perform the following actions:

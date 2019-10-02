@@ -22,11 +22,11 @@ AEM Forms, by default, provides a defined set of metadata for each asset type. B
 
 If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for AEM Forms to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](../../forms/using/introduction-publishing-forms.md).
 
-## Metadata in AEM Forms&nbsp; {#metadata-in-aem-forms-nbsp}
+## Metadata in AEM Forms {#metadata-in-aem-forms}
 
 In AEM Forms, the list of metadata properties associated with an asset depends on its type. Also, if you add any custom metadata property, it is added across all the assets of the type on which the custom metadata was added.
 
-#### Asset types&nbsp; {#asset-types-nbsp}
+### Asset types {#asset-types}
 
 The following asset types are supported in AEM Forms:
 
@@ -37,7 +37,7 @@ The following asset types are supported in AEM Forms:
 * Resources
 * XFS
 
-#### Extensive list of metadata&nbsp; {#extensive-list-of-metadata-nbsp}
+#### Extensive list of metadata {#extensive-list-of-metadata}
 
 The following is an extensive list of metadata properties supported in AEM Forms:
 
@@ -168,7 +168,7 @@ The following is an extensive list of metadata properties supported in AEM Forms
  </tbody> 
 </table>
 
-## View form metadata&nbsp; {#view-form-metadata-nbsp}
+## View form metadata {#view-form-metadata}
 
 Assets have existing property values, which can be viewed in read-only mode. This metadata is originated at the time of form upload or form creation.
 
@@ -197,7 +197,7 @@ Assets have existing property values, which can be viewed in read-only mode. Thi
     * Left panel contains thumbnail of the form
     * Right panel contains metadata properties in the read-only mode, distributed across various tabs.
 
-## Add/update form metadata values&nbsp; {#add-update-form-metadata-values-nbsp}
+## Add/update form metadata values {#add-update-form-metadata-values}
 
 You can edit the value of existing metadata properties or add new values to an existing metadata property field (for example, when a metadata field is blank).
 
@@ -220,7 +220,7 @@ You can edit the value of existing metadata properties or add new values to an e
 
    Both these actions direct the user back to read-only mode of the properties page containing the updated values.
 
-### Update the form thumbnail&nbsp; {#update-the-form-thumbnail-nbsp}
+### Update the form thumbnail {#update-the-form-thumbnail}
 
 The left panel in the properties page displays the thumbnail of the form. By default, the thumbnail displayed is the one generated at the time of form creation (adaptive form) or at the time of form upload.
 
@@ -234,7 +234,7 @@ For adaptive forms, additional functionality is provided, which allows the user 
 >* Once a new image is uploaded or generated, the thumbnail is replaced by this image and cannot be reset to the previous image. 
 >
 
-## Add custom metadata&nbsp; {#add-custom-metadata-nbsp}
+## Add custom metadata {#add-custom-metadata}
 
 Apart from the metadata provided out of the box, AEM Forms supports new custom metadata.
 
@@ -242,11 +242,11 @@ A tool (Metadata Schema Editor) is provided to define the schema for the metadat
 
 AEM Forms exposes the metadata schemas of the supported forms types in this tool. This way, you can access these schemas and use the functionality provided in metadata schema editor to add custom properties.
 
-### Navigate the metadata schema editor&nbsp; {#navigate-the-metadata-schema-editor-nbsp}
+### Navigate the metadata schema editor {#navigate-the-metadata-schema-editor}
 
-1. Navigate to **[!UICONTROL Tools > Assets > Metadata Schemas]****.** 
+1. Navigate to **[!UICONTROL Tools > Assets > Metadata Schemas]**. 
 
-1. Click **[!UICONTROL forms]**** **from the listed schema forms.  
+1. Click **[!UICONTROL forms]** from the listed schema forms.  
 
 1. From the list that opens, click the asset type for which you want to add custom metadata.
 
@@ -254,9 +254,9 @@ AEM Forms exposes the metadata schemas of the supported forms types in this tool
    >
    >These schemas contain metadata properties that are provided out of box and must not be altered/edited (selecting check box and clicking edit from toolbar) to avoid functional issues.
 
-1. Any asset type clicked opens a list containing the `extendedmetadata`** **option. Edit this schema.  
+1. Any asset type clicked opens a list containing the `extendedmetadata` option. Edit this schema.  
 
-1. Select the checkbox beside `extendedmetadata`** **and then click the edit ![](assets/aem6forms_edit.png) icon that appears in the toolbar.  
+1. Select the checkbox beside `extendedmetadata` and then click the edit ![](assets/aem6forms_edit.png) icon that appears in the toolbar.  
 
 1. AEM Forms opens the metadata schema editor/form builder of the selected asset type (in this case adaptive form).
 
@@ -273,7 +273,7 @@ AEM Forms exposes the metadata schemas of the supported forms types in this tool
     1. You can add a custom field of desired type by dragging the field component from the **[!UICONTROL Build Form]** section on to the schema page.
     1. The specifications for this field can be provided under the **[!UICONTROL Settings]** section after clicking the field.
 
-### Add custom metadata property in schema editor&nbsp; {#add-custom-metadata-property-in-schema-editor-nbsp}
+### Add custom metadata property in schema editor {#add-custom-metadata-property-in-schema-editor}
 
 1. Navigate to the tab (existing or new) where you want to add the custom property.  
 
@@ -292,11 +292,9 @@ AEM Forms exposes the metadata schemas of the supported forms types in this tool
        >
        >Do not change the prefix ‘./jcr:content/metadata/’ as it defines the path where the property is stored.
        >
-       >
        >Also, the property name must be unique to avoid writing values for two or more properties at the same location in repository. So, it is recommended that you change the value 'default'.
 
-    1. Fill other settings based on requirement. For example: select the Required option if you want to make the field mandatory.  
-
+    1. Fill other settings based on requirement. For example: select the Required option if you want to make the field mandatory.
     1. To delete a field you added, select the field and then click the delete ![](assets/delete-1.png) icon.
 
 1. If necessary, follow steps 1-3 to add another property.

@@ -17,7 +17,7 @@ docset: aem65
 
 There are some frequently asked questions (FAQ) about layout, scripting support, and scope of HTML5 forms.
 
-### Layout {#layout}
+## Layout {#layout}
 
 1. Why do barcodes and signature field in not appear in my form?
 

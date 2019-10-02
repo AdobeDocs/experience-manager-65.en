@@ -378,7 +378,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 ## Post-installation configurations {#post-installation-configurations}
 
-#### Configure Boot Delegation for RSA/BouncyCastle libraries  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
+### Configure Boot Delegation for RSA/BouncyCastle libraries  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
 1. Stop the AEM instance. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing.
 

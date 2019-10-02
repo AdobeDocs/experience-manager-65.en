@@ -16,7 +16,7 @@ docset: aem65
 
 When you start your AEM Forms app, you first need to provide your login credentials and a AEM Forms server URL.
 
-### To start the app {#to-start-the-app}
+## To start the app {#to-start-the-app}
 
 1. Tap the AEM Forms app icon on your mobile device.
 1. To log in to the app, enter a user name, password, and AEM Forms server URL.
@@ -25,12 +25,8 @@ When you start your AEM Forms app, you first need to provide your login credenti
    >
    >The Mobile app, caches all AEM Forms server URLs that you enter.
    >
-   >    
-   >    
    >    * To display the list of server URLs, click the list arrow at the right corner of the Server URL text box.
    >    * You can the select a AEM Forms server URL to log in to via the app.
-   >    
-   >
 
 When you log in to the app, you are directed to the [**Home** screen](../../forms/using/home-screen.md).
 
