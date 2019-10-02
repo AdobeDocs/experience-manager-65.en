@@ -44,7 +44,7 @@ However, automating test cases is a significant investment, so certain aspects s
 * Only really feasible for big projects.
 * Good when multiple releases are being generated either for testing or in the long term release plan.
 
-#### Testing specific aspects {#testing-specific-aspects}
+## Testing specific aspects {#testing-specific-aspects}
 
 When testing AEM a few specific details are of particular interest:
 
