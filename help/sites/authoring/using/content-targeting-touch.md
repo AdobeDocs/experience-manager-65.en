@@ -290,7 +290,7 @@ If editing targeted content, you must click or tap **Start Targeting **before yo
    >If set by your administrator, you may need to set the the location explicitly.
    >
    >
-   >Administrators can decide whether setting this configuration is required at **http://&lt;host&gt;:&lt;port&gt;/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >Administrators can decide whether setting this configuration is required at **https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
    >To require users to input a location, select the **Force location **check box.

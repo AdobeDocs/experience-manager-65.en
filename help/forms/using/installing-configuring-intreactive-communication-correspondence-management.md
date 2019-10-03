@@ -84,8 +84,8 @@ Before you begin to install and configure interactive communication and correspo
 
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms interactive communication, correspondence management, and other capabilities. Perform the following steps to install the add-on package:
 
-1. Log in to the [AEM server](http://localhost:4502) as an administrator and open [package share](http://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
-1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
+1. Log in to the [AEM server](https://localhost:4502) as an administrator and open [package share](https://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
+1. In [AEM package share](https://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
 
    You can also use the version number to search an add-on package. For version number of the latest package, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
 
@@ -125,7 +125,7 @@ Perform the following steps on all the Author and Publish instances to boot dele
 
 Perform the following steps on all the Author and Publish instances to whitelist the package:
 
-1. Open AEM Configuration Manager in a browser window. The default URL is http://[server]:[port]/system/console/configMgr.
+1. Open AEM Configuration Manager in a browser window. The default URL is https://[server]:[port]/system/console/configMgr.
 1. Search and open **Deserialization Firewall Configuration**.
 1. Add the **sun.util.calendar **package to the **whitelist **field. Click Save.
 1. Repeat steps 1-3 on all the Author and Publish instances.
@@ -157,7 +157,7 @@ Dispatcher is caching and load balancing tool for AEM. AEM Dispatcher also helps
 
 1. Configure the referrer filter service:
 
-   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is http://[server]:[port_number]/system/console/configMgr. In the **Configurations **menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is http://[server]:[port].
+   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. In the **Configurations **menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is https://[server]:[port].
 
 #### Integrate Adobe Target {#integrate-adobe-target}
 

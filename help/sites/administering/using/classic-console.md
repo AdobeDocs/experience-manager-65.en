@@ -24,7 +24,7 @@ To access the Classic UI Tagging console :
 * on author
 * sign in with administrative privileges
 * browse to the console  
-  for example, [http://localhost:4502/tagging](http://localhost:4502/tagging)
+  for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![](assets/managing_tags_usingthetagasministrationconsole.png) 
 

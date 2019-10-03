@@ -207,7 +207,7 @@ The following predicates are available:
 | **Path Predicate** |Lets users define the path and subfolders, if desired. |
 | **Property Predicate** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values.  |
 
-For more information, see the [predicate javadocs](/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.md).
+For more information, see the [predicate javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 
@@ -423,7 +423,7 @@ With AEM Assets you can make changes to several assets at once. After having sel
 To multi-edit assets with the Asset Editor page:
 
 1. Open the Geometrixx **Press Center** page:  
-   `http://localhost:4502/content/geometrixx/en/company/press.html`
+   `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Select the assets:
 

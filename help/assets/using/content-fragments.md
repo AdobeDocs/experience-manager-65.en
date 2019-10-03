@@ -287,4 +287,4 @@ A fragment, with its elements and variations, can be used to create coherent con
 
 A sample fragment can be seen at:
 
-` [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)`
+` [https://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](https://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)`

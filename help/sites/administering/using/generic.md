@@ -216,7 +216,7 @@ You can modify an existing facet or add new ones, using CRXDE Lite:
 
 1. Navigate to:
 
-   `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
+   `https://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
 1. You can modify for example the sizes that will appear on the product search page. Click the `sizegroup` node.
 1. Click `items` node, then click `propertypredicate` node.
@@ -365,7 +365,7 @@ You can look at them in the Web Console in OSGI events ( `/system/console/events
 
 >[!NOTE]
 >
->Read also [Event handling in AEM](http://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](http://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Read also [Event handling in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
 ### Image with Add to Cart Links {#image-with-add-to-cart-links}
 
@@ -447,7 +447,7 @@ You can configure how the dialog looks like when you click the hotspot:
 
 To generate a Catalog:
 
-1. Open the Sites console (for example, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigate to the location where you want to create the new page.
 1. To open the option list, use the **Create** icon:
 
@@ -470,7 +470,7 @@ To generate a Catalog:
 
 1. Tapping/clicking **Done** button brings you back to the Sites console where you'll be able to see you catalog.
 
-   Tapping/clicking **Open Catalog** button opens your catalog (for example `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Tapping/clicking **Open Catalog** button opens your catalog (for example `https://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Generating a Catalog - Classic UI {#generating-a-catalog-classic-ui}
 
@@ -482,7 +482,7 @@ To generate a Catalog:
 
    For example:
 
-   `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
+   `https://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
 1. Create a new page using the **Section Blueprint** template.
 
@@ -496,7 +496,7 @@ To generate a Catalog:
 1. Click on **Rollout Changes...**, select **Rollout page and all sub pages**, then click **Next** then **Rollout**. Once the rollout is completed successfully the **Status** indicator will be shown as green. 
 1. You can now click **Close** and check the new catalog section; for example, on and under:
 
-   `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
+   `https://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
 1. Again from the blueprints page click **Edit Blueprint** and in the **Properties** dialog open the **Generated Page** tab. In the Banner list field select the image you want to show; for example, `summer.jpg`
 1. Click **OK** to save your properties; banner information will be shown under the **Product Selection Criteria** on the blueprint page.
@@ -528,7 +528,7 @@ To rollout a catalog:
 
 1. Navigate to the Catalog you want to rollout. For example:
 
-   `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
+   `https://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
 1. Click **Rollout Changes...**
 1. Set the rollout as needed.
@@ -556,7 +556,7 @@ To rollout a catalog:
   
    For example:
 
-   `http://localhost:4502/miscadmin#/etc/commerce`
+   `https://localhost:4502/miscadmin#/etc/commerce`
 
 1. Open the **Catalog Bluprint Importer**.
 1. Set the import as needed.

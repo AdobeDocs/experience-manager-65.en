@@ -146,7 +146,7 @@ The client-server communication in the Granite UI consists of hypertext, not obj
 
 #### Client-Side {#client-side}
 
-This uses an extension of HTML vocabulary, provided so that the author can express their intention to build an interactive webapp. This is a similar approach to [WAI-ARIA](http://www.w3.org/TR/wai-aria/) and [microformats](http://microformats.org/).
+This uses an extension of HTML vocabulary, provided so that the author can express their intention to build an interactive webapp. This is a similar approach to [WAI-ARIA](https://www.w3.org/TR/wai-aria/) and [microformats](https://microformats.org/).
 
 It primarily consists of a collection of interaction patterns (for example, asyncronously submitting a form) that are interpreted by JS and CSS codes, run on the client-side. The role of the client-side is to enhance the markup (given as the hypermedia affordance by the server) for interactivity.
 
@@ -321,7 +321,7 @@ The HTML elements provide a common look and feel for all base UI elements (inclu
 
 At the most basic level, a HTML element is a HTML tag with a dedicated class name. More complex elements can be composed of multiple tags, nested inside each other (in a specific manner).
 
-The CSS is used to provide the actual look and feel. To make it possible to easily customize the look-and-feel (e.g. for the case of branding) actual style values are declared as variables that are expanded by the [LESS](http://lesscss.org/) pre-processor during runtime.
+The CSS is used to provide the actual look and feel. To make it possible to easily customize the look-and-feel (e.g. for the case of branding) actual style values are declared as variables that are expanded by the [LESS](https://lesscss.org/) pre-processor during runtime.
 
 Purpose:
 
@@ -330,7 +330,7 @@ Purpose:
 
 Implementation:
 
-* HTML tags with styles inspired by [bootstrap](http://twitter.github.com/bootstrap/)
+* HTML tags with styles inspired by [bootstrap](https://twitter.github.com/bootstrap/)
 * Classes are defined in LESS files
 * Icons are defined as font sprites
 

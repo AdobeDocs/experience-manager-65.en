@@ -37,7 +37,7 @@ To create a new workflow with the editor:
 
 1. Open the **Workflow Models** console; via **Tools**, **Workflow**, **Models** or, for example:
 
-   [http://localhost:4502/aem/workflow](http://localhost:4502/aem/workflow)
+   [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 
 1. Select **Create**, then **Create Model**.
 1. The **Add Workflow Model** dialog appears. Enter the **Title** and **Name** (optional) before selecting **Done**.

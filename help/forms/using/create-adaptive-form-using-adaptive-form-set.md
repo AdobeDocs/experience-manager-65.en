@@ -41,7 +41,7 @@ For example, your customers fill an application form. First two fields of the fo
         <data />
     </afUnboundData>
     <afBoundData>
-        <data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+        <data xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
             <applicantName>Sarah Rose</applicantName>
             <applicantId>1234</applicantId>
         </data>
@@ -58,7 +58,7 @@ You add another form in the application that lets your customers fill their offi
         <data />
     </afUnboundData>
     <afBoundData>
-        <data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+        <data xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
             <applicantName>Sarah Rose</applicantName>
             <applicantId>1234</applicantId>
             <officeAddress>
@@ -79,7 +79,7 @@ If you insert another form that lets your customers provide house address, apply
         <data />
     </afUnboundData>
     <afBoundData>
-        <data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+        <data xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
             <applicantName>Sarah Rose</applicantName>
             <applicantId>1234</applicantId>
             <officeAddress>
@@ -106,7 +106,7 @@ For example, apply bindrefs `/application/address[1]` or `/address[1]` and `/app
         <data />
     </afUnboundData>
     <afBoundData>
-        <data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+        <data xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
             <applicantName>Sarah Rose</applicantName>
             <applicantId>1234</applicantId>
             <address>

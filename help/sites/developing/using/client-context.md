@@ -243,7 +243,7 @@ Display session store data in Client Context using a consistent format.
 The personalization taglib provides the `personalization:storePropertyTag` tag that displays the value of a property from a session store. To use the tag, include the following line of code in your JSP file:
 
 ```xml
-<%@taglib prefix="personalization" uri="http://www.day.com/taglibs/cq/personalization/1.0" %>
+<%@taglib prefix="personalization" uri="https://www.day.com/taglibs/cq/personalization/1.0" %>
 ```
 
 The tag has the following format:
@@ -306,7 +306,7 @@ To render store data using a genericstore component, you need to:
 The personalization taglib provides the `personalization:storePropertyTag` tag that displays the value of a property from a session store. To use the tag, include the following line of code in your JSP file:
 
 ```xml
-<%@taglib prefix="personalization" uri="http://www.day.com/taglibs/cq/personalization/1.0" %>
+<%@taglib prefix="personalization" uri="https://www.day.com/taglibs/cq/personalization/1.0" %>
 ```
 
 The tag has the following format:
@@ -486,7 +486,7 @@ In this example, you create a context store component that retrieves data from a
 
 Create a CQ application and add the geoloc component.
 
-1. Open CRXDE Lite in your web browser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite in your web browser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Right-click the `/apps` folder and click Create > Create Folder. Specify a name of `myapp` and then click OK.
 1. Similarly, below `myapp`, create a folder named `contextstores`. ``
 1. Right-click the `/apps/myapp/contextstores` folder and click Create &gt; Create Component. Specify the following property values and click Next:
@@ -542,7 +542,7 @@ The init.js.jsp file is executed when the Client Context is loaded by the page. 
    %><%@include file="/libs/foundation/global.jsp"%><%
    log.info("***** initializing geolocstore ****");
    String store = "locstore";
-   String jsonpurl = "http://api.wipmania.com/jsonp?callback=${callback}";
+   String jsonpurl = "https://api.wipmania.com/jsonp?callback=${callback}";
    
    %>
    var locstore = CQ_Analytics.StoreRegistry.getStore("<%= store %>");
@@ -562,7 +562,7 @@ Add the code to the JSP file of the geoloc component to render the store data in
 1. Add the following HTML code below the stub code:
 
    ```xml
-   <%@taglib prefix="personalization" uri="http://www.day.com/taglibs/cq/personalization/1.0" %>
+   <%@taglib prefix="personalization" uri="https://www.day.com/taglibs/cq/personalization/1.0" %>
    <div class="cq-cc-store">
       <div class="cq-cc-content">
           <div class="cq-cc-store-property cq-cc-store-property-level0">
@@ -591,7 +591,7 @@ Add the code to the JSP file of the geoloc component to render the store data in
 
 Add the Location Store component to Client Context so that it is initialized when the page loads.
 
-1. Open the Geometrixx Outdoors home page on the author instance ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Open the Geometrixx Outdoors home page on the author instance ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Click Ctrl-Alt-c (windows) or control-option-c (Mac) to open Client Context.
 1. Click the edit icon at the top of Client Context to open Client Context Designer.
 
@@ -603,7 +603,7 @@ Add the Location Store component to Client Context so that it is initialized whe
 
 Open the Geometrixx Outdoors home page in edit mode and then open Client Context to see the data from the Location Store component.
 
-1. Open the English page of the Geometrixx Outdoors site. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html))
+1. Open the English page of the Geometrixx Outdoors site. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
 1. To open Client Context, press Ctrl-Alt-c (windows) or control-option-c (Mac).
 
 ## Creating a Customized Client Context {#creating-a-customized-client-context}

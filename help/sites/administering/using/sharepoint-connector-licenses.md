@@ -220,7 +220,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 ```xml
                                 Apache License
                           Version 2.0, January 2004
-                       <a href="http://www.apache.org/licenses/" TARGET="_blank" >http://www.apache.org/licenses/</a>
+                       <a href="https://www.apache.org/licenses/" TARGET="_blank" >https://www.apache.org/licenses/</a>
 
      TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -412,7 +412,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
 
-        <a href="http://www.apache.org/licenses/LICENSE-2.0" TARGET="_blank" >http://www.apache.org/licenses/LICENSE-2.0</a>
+        <a href="https://www.apache.org/licenses/LICENSE-2.0" TARGET="_blank" >https://www.apache.org/licenses/LICENSE-2.0</a>
 
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
@@ -431,7 +431,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      adapted from Sun JDK source code. These are copyright of Sun
      Microsystems, Inc, and are used with their kind permission, as
      described in this license: 
-     <a href="http://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >http://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
+     <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 
 ```
 
@@ -670,9 +670,9 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      end-user documentation provided with the redistribution and/or in the
      software itself an acknowledgement equivalent to the following:
          "This product includes software developed by the
-          JDOM Project (<a href="http://www.jdom.org/" TARGET="_blank" >http://www.jdom.org/</a>)."
+          JDOM Project (<a href="https://www.jdom.org/" TARGET="_blank" >https://www.jdom.org/</a>)."
      Alternatively, the acknowledgment may be graphical using the logos
-     available at <a href="http://www.jdom.org/images/logos" TARGET="_blank" >http://www.jdom.org/images/logos</a>.
+     available at <a href="https://www.jdom.org/images/logos" TARGET="_blank" >https://www.jdom.org/images/logos</a>.
 
      THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
      WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
@@ -691,14 +691,14 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      individuals on behalf of the JDOM Project and was originally
      created by Jason Hunter <jhunter_AT_jdom_DOT_org> and
      Brett McLaughlin <brett_AT_jdom_DOT_org>.  For more information
-     on the JDOM Project, please see <http://www.jdom.org/>.
+     on the JDOM Project, please see <https://www.jdom.org/>.
 
 ```
 
 ## PDFBox {#pdfbox}
 
 ```xml
-     Copyright (c) 2003-2005, <a href="http://www.pdfbox.org/" TARGET="_blank" >www.pdfbox.org</a>
+     Copyright (c) 2003-2005, <a href="https://www.pdfbox.org/" TARGET="_blank" >www.pdfbox.org</a>
      All rights reserved.
 
      Redistribution and use in source and binary forms, with or without
@@ -724,14 +724,14 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
      SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-     <a href="http://www.pdfbox.org" TARGET="_blank" >http://www.pdfbox.org</a>
+     <a href="https://www.pdfbox.org" TARGET="_blank" >https://www.pdfbox.org</a>
 
 ```
 
 ## SAX {#sax}
 
 ```xml
-     This license came from: <a href="http://www.saxproject.org/copying.html" TARGET="_blank" >http://www.saxproject.org/copying.html</a>
+     This license came from: <a href="https://www.saxproject.org/copying.html" TARGET="_blank" >https://www.saxproject.org/copying.html</a>
 
      SAX2 is Free!
 
@@ -1102,7 +1102,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 ## W3C Document {#w-c-document}
 
 ```xml
-     This license came from: http://www.w3.org/Consortium/Legal/
+     This license came from: https://www.w3.org/Consortium/Legal/
      copyright-documents-19990405
 
      W3C® DOCUMENT NOTICE AND LICENSE
@@ -1111,7 +1111,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      Wide Web Consortium, (Massachusetts Institute of
      Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.
-     <a href="http://www.w3.org/Consortium/Legal/" TARGET="_blank" >http://www.w3.org/Consortium/Legal/</a>
+     <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
 
      Public documents on the W3C site are provided by the copyright
      holders under the following license. The software or Document Type 
@@ -1135,7 +1135,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      Institute of Technology, Institut National de Recherche en Informatique 
      et en Automatique, Keio
      University). All Rights Reserved.
-     <a href="http://www.w3.org/Consortium/Legal/" TARGET="_blank" >http://www.w3.org/Consortium/Legal/</a>" (Hypertext is preferred, but a
+     <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>" (Hypertext is preferred, but a
      textual representation is permitted.)
 
      If it exists, the STATUS of the W3C document.
@@ -1189,7 +1189,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 ## W3C Software {#w-c-software}
 
 ```xml
-     This license came from: <a href="http://www.w3.org/Consortium/Legal/" TARGET="_blank" >http://www.w3.org/Consortium/Legal/</a>
+     This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
      copyright-software-19980720
 
      W3C® SOFTWARE NOTICE AND LICENSE
@@ -1198,7 +1198,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      Wide Web Consortium, (Massachusetts Institute of
      Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.
-     <a href="http://www.w3.org/Consortium/Legal/" TARGET="_blank" >http://www.w3.org/Consortium/Legal/</a>
+     <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
 
      This W3C work (including software, documents, or other related
      items) is being provided by the copyright holders under the
@@ -1223,7 +1223,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      (Massachusetts Institute of Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University). 
      All Rights Reserved.
-     <a href="http://www.w3.org/Consortium/Legal/" TARGET="_blank" >http://www.w3.org/Consortium/Legal/</a>"
+     <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>"
 
      Notice of any changes or modifications to the W3C files,
      including the date changes were made. (We recommend you provide 

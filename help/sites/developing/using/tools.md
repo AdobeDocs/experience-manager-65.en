@@ -28,13 +28,13 @@ The following are two Open Source Testing tools:
 
 Selenium is used for function testing in a browser with one user per activity. It records testing steps (clicks) as either HTML tables or Java classes.
 
-For more information see [http://www.seleniumhq.org/](http://www.seleniumhq.org/).
+For more information see [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
 JMeter is used to track requests and can be used for functional, performance and stress tests.
 
-For more information see [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter).
+For more information see [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
 
 There are also many proprietary tools for automating tests and managing test plans.
 

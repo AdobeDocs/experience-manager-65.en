@@ -36,10 +36,10 @@ You have the following methods to publish an adaptive form:
 When the adaptive form is published as an AEM Page, then the entire web page contains only published form. You can use the URL of the adaptive form to link it from another web page. To publish the **shipping-address-add-update-form **adaptive form as an AEM Page:
 
 1. Log in to AEM Forms author instance and locate the shipping-address-add-update-form adaptive form in the AEM Forms UI.  
-   [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+   [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 1. Select the shipping-address-add-update-form adaptive form and tap **Publish**. A dialog containing assets related to the adaptive form is displayed. Tap **Publish**. The adaptive form is published and a success dialog appears. 
 1. Open the form on the publish instance. The form is available for end user to fill and submit.   
-   [http://localhost:4503/content/forms/af/shipping-address-add-update-form.html](http://localhost:4503/content/forms/af/shipping-address-add-update-form.html)
+   [https://localhost:4503/content/forms/af/shipping-address-add-update-form.html](https://localhost:4503/content/forms/af/shipping-address-add-update-form.html)
 
 ## Embed the adaptive form in an AEM Sites Page {#embed-the-adaptive-form-in-an-aem-sites-page}
 
@@ -47,9 +47,9 @@ AEM Forms allows form developers to seamlessly embed adaptive forms in an AEM Si
 
 AEM Forms provide a component, AEM Forms Container, to embed an adaptive form to an AEM Sites page. By default, the component is not visible in AEM Sites container. Perform the following steps to enable the AEM Forms Container component and to embed the adaptive form in an AEM Sites Page:
 
-1. Create and open a page in the We.Retail site for editing. For example, [http://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html.](/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.md) The adaptive form is embedded to the sites page.
+1. Create and open a page in the We.Retail site for editing. For example, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html.](/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.md) The adaptive form is embedded to the sites page.
 
-   You can also embed the adaptive form in an existing We.Retail site's page. For example, the ABOUT US page [http://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](/editor.html/content/we-retail/us/en/about-us.md). It saves you the time to create a page. The steps below use the newly created page.
+   You can also embed the adaptive form in an existing We.Retail site's page. For example, the ABOUT US page [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](/editor.html/content/we-retail/us/en/about-us.md). It saves you the time to create a page. The steps below use the newly created page.
 
    The We.Retail site is shipped with AEM. If you do not have the We.Retail site installed, see to [We.Retail Reference Implementation](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/we-retail.html) install the site. 
 

@@ -500,7 +500,7 @@ This example shows how you can create a dynamic and a static table, bind the dyn
    Or, use the static and dynamic XDPs attached with this step.  
 
    For more information on working with Layout Fragments, see [Layout Fragments](#layoutfragments).  
-   For more information on designing layouts, see [Designer Help](http://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/ ).
+   For more information on designing layouts, see [Designer Help](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/ ).
 
    [Get File](assets/static.xdp.zip)
 

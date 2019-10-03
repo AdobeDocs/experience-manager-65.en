@@ -109,7 +109,7 @@ Demo custom toolbar layout
    Sample `toolBarCommon.jsp`:
 
    ```php
-   <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+   <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
    <%--------------------  
    This code iterates over all the tool bar items using the guideToolbar bean.
    If the number of toolbar items are more than 3, then we create a dropdown menu using bootstrap for other actions present in the toolbar.

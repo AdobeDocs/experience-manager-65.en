@@ -94,7 +94,7 @@ When an SPA is built to leverage the AEM SPA Editor, the content author notices 
 
 1. Edit the We.Retail Journal app in AEM.
 
-   `http://localhost:4502/editor.html/content/we-retail-journal/react.html`
+   `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
    ![](assets/screen_shot_2018-06-07at142533.png)
 
@@ -237,7 +237,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
 1. Load the We.Retail Journal application in the editor and switch to **Preview** mode.
 
-   `http://localhost:4502/editor.html/content/we-retail-journal/react.html`
+   `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
 1. Using your browser's built-in developer tools, inspect the content of the page. Using the selection tool, select an editable component on the page and view the element detail.
 

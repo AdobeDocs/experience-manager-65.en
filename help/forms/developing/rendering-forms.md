@@ -52,5 +52,5 @@ Depending upon the type of client application, you can write the form to a clien
 * Calculate form data. (See [Calculating Form Data](/programming-with-aem-forms/rendering-forms-rendering-forms calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculating_form_data).)
 * Optimize an application. (See [Optimizing the Performance of the Forms Service](/programming-with-aem-forms/rendering-forms-rendering-forms optimizing-performance-forms-service-optimizing.md#optimizing_the_performance_of_the_forms_service).)
 
-  ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](http://www.adobe.com/devnet/livecycle/articles/asp_net.html)*.**
+  ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)*.**
 

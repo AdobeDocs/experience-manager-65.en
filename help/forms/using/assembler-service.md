@@ -55,7 +55,7 @@ The Assembler service can create PDF Portfolios that contain a collection of doc
 When the Assembler service interprets the following DDX document, it assembles a PDF Portfolio that includes a PDF Portfolio navigator and a package of two files. The service obtains the navigator from the location specified by the myNavigator source. It changes the navigator’s default color scheme to the pinkScheme color scheme.
 
 ```xml
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <PDF result="Untitled 1">
 <Portfolio>
 <Navigator source="myNavigator"/>
@@ -114,7 +114,7 @@ Assembling a simple XDP document from multiple XDP documents
 Here is a DDX document that produces the result illustrated above.
 
 ```xml
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <XDP result="MyXDPResult">
 <XDP source="sourceXDP1"/>
 <XDP source="sourceXDP2"/>
@@ -162,7 +162,7 @@ To resolve all references in the source XDP documents, specify the resolveAssets
 resultant document to all, as in the example below:
 
 ```xml
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <XDP result="result.xdp" resolveAssets="all">
 <XDP source="input1.xdp" />
 <XDP source="input2.xdp" />
@@ -175,7 +175,7 @@ You can also specify the attribute for all the source XDP documents independentl
 result.
 
 ```xml
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <XDP result="result.xdp">
 <XDP source="input1.xdp" resolveAssets="all"/>
 <XDP source="input2.xdp" resolveAssets="all"/>
@@ -189,7 +189,7 @@ result.
 You can selectively specify the source references that you want to resolve by specifying the resolveAssets attribute for them. The attributes for individual source documents override the resultant XDP document’s setting. In this example, the fragments included are also resolved.
 
 ```xml
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <XDP result="result.xdp" resolveAssets="all">
 <XDP source="input1.xdp" >
 <XDPContent source="fragment.xdp" insertionPoint="MyInsertionPoint"
@@ -205,7 +205,7 @@ fragment="myFragment"/>
 You can selectively resolve absolute or relative references in all or some of the source documents, as shown in the example below:
 
 ```xml
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <XDP result="result.xdp" resolveAssets="absolute">
 <XDP source="input1.xdp" />
 <XDP source="input2.xdp" />
@@ -230,7 +230,7 @@ Inserting form fragments into an XFA form
 When the Assembler service interprets the following DDX document, it creates an XML form that contains another XML form. The myFragment subform from the myFragmentSource document is inserted at the myInsertionPoint in the myFormSource document.
 
 ```xml
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <XDP result="myFormResult">
 <XDP source="myFormSource">
 <XDPContent fragment="myFragment" insertionPoint="myInsertionPoint"
@@ -245,7 +245,7 @@ source="myFragmentSource"/>
 You can use the Assembler service to package an XDP document as a PDF document, as shown in this DDX document.
 
 ```xml
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <PDF result="Untitled 1" encryption="passEncProfile1">
 <XDP>
 <XDP source="sourceXDP3"/>
@@ -330,7 +330,7 @@ You can use DDX documents that cause the Assembler service to call the following
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+<DDX xmlns="https://ns.adobe.com/DDX/1.0/">
 <PDF result="outDoc">
 <PDF source="doc1"/>
 <PDF source="doc2"/>

@@ -63,7 +63,7 @@ After you have installed AEM, access the CRXDE Lite development environment by c
 
 >[!NOTE]
 >
->The URL of CRXDE Lite for an AEM authoring instance that is installed locally using the default port is [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/).
+>The URL of CRXDE Lite for an AEM authoring instance that is installed locally using the default port is [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
 
 ### Setting up the project structure in CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
 
@@ -91,7 +91,7 @@ Sample static.css file and images
 
 [Get File](assets/mywebsite.zip)
 
-1. On the AEM Welcome page, click **Tools**. ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
+1. On the AEM Welcome page, click **Tools**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![](assets/chlimage_1-27.png)
 
@@ -99,7 +99,7 @@ Sample static.css file and images
 
 1. If the mywebsite item does not appear in the table, refresh the tree or the table.  
 
-1. [Using WebDAV](/sites/administering/using/webdav-access.md) access to the URL at http://localhost:4502, copy the sample `static.css` file and `images` folder from the downloaded mywebsite.zip file into the `/etc/designs/mywebsite` folder. 
+1. [Using WebDAV](/sites/administering/using/webdav-access.md) access to the URL at https://localhost:4502, copy the sample `static.css` file and `images` folder from the downloaded mywebsite.zip file into the `/etc/designs/mywebsite` folder. 
 
    ![](assets/chlimage_1-28.png)
 
@@ -194,7 +194,7 @@ Add code to the contentpage.jsp script to define the page content.
    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
        pageEncoding="ISO-8859-1"%>
    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
-   "http://www.w3.org/TR/html4/loose.dtd">
+   "https://www.w3.org/TR/html4/loose.dtd">
    <html>
    <head>
    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -212,7 +212,7 @@ Add code to the contentpage.jsp script to define the page content.
 
 In this section, you create the following pages which all use the contentpage template: My Website, English, Products, Services, and Customers.
 
-1. On the AEM Welcome page ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), click Websites.
+1. On the AEM Welcome page ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)), click Websites.
 
    ![](assets/chlimage_1-34.png)
 
@@ -262,7 +262,7 @@ In this section, you create the following pages which all use the contentpage te
 
    ![](assets/chlimage_1-37.png)
 
-1. In a new wb browser tab or window, open [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) to see the Products page:
+1. In a new wb browser tab or window, open [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) to see the Products page:
 
    ![](assets/chlimage_1-38.png)
 
@@ -296,7 +296,7 @@ For example, in your component JSP code, you can reference the scripts that the 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
    %><%@page session="false" contentType="text/html; charset=utf-8" %><%
-   %><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+   %><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
    <html>
    <cq:include script="head.jsp"/>
    <cq:include script="body.jsp"/>
@@ -489,7 +489,7 @@ Enhance the rendering script of the topnav component to use image links instead 
 
 This exercise demonstrates [Sling request processing](/sites/developing/using/the-basics.md#sling-request-processing). The topnav.jsp script is modified to call a script that dynamically generates images to use for the page navigation links. In this exercise, Sling parses the URL of image source files to determine the script to use to render the images.
 
-For example, the source for the image link to the Products page could be http://localhost:4502/content/mywebsite/en/products.navimage.png. Sling parses this URL to determine the resource type and the script to use to render the resource:
+For example, the source for the image link to the Products page could be https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling parses this URL to determine the resource type and the script to use to render the resource:
 
 1. Sling determines the path of the resource to be `/content/mwebysite/en/products.png.`
 1. Sling matches this path with the `/content/mywebsite/en/products` node.

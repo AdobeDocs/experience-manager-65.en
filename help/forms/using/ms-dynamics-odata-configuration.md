@@ -52,7 +52,7 @@ Do the following to set the Reply URL for registered Microsoft Dynamics applicat
 
 1. Go to Microsoft Azure Active Directory account and add the following cloud service configuration URL in **Reply URLs** settings for your registered application:
 
-   `http://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+   `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
    ![Azure directory](assets/azure_directory_new.png)
 
@@ -94,7 +94,7 @@ Do the following to register an OAuth client on Active Directory Federation Serv
 
     * `Client-ID` is a client ID you can generate using any GUID generator.
     * `redirect-uri` is the URL to the Microsoft Dynamics OData cloud service on AEM Forms. The default cloud service installed with the AEM Forms package is deployed at the following URL:  
-      `http://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+      `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Run the following command to grant access on AD FS machine:
 
@@ -117,7 +117,7 @@ The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with
 
     1. Enter the value for the **Service Root** field. Go to the Dynamics instance and navigate to** **Developer Resources** **to view the value for the Service Root field.** **For example, https://&lt;tenant-name&gt;/api/data/v9.1/
     
-    1. Replace the default values in the **Client Id **(also referred to as **Application ID**), **Client Secret**, **OAuth URL**, **Refresh Token URL**, **Access Token URL**, and **Resource **fields with values from your Microsoft Dynamics service configuration. It is mandatory to specify the dynamics instance URL in the **Resource **field to configure Microsoft Dynamics with a form data model. Use the Service Root URL to derive the dynamics instance URL. For example, [http://org.crm.dynamics.com](http://org.crm.dynamics.com/). 
+    1. Replace the default values in the **Client Id **(also referred to as **Application ID**), **Client Secret**, **OAuth URL**, **Refresh Token URL**, **Access Token URL**, and **Resource **fields with values from your Microsoft Dynamics service configuration. It is mandatory to specify the dynamics instance URL in the **Resource **field to configure Microsoft Dynamics with a form data model. Use the Service Root URL to derive the dynamics instance URL. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/). 
     
     1. Specify **openid** in the **Authorization Scope** field for authorization process on Microsoft Dynamics.
 
@@ -138,7 +138,7 @@ On opening the form data model for the first time, it connects to the configured
 
 To review the form data model, go to **[!UICONTROL Forms > Data Integrations]**. Select **Microsoft Dynamics FDM** and click **Edit** to open the form data model in edit mode. Alternatively, you can open the form data model directly from the following URL:
 
-`http://[*server*]:[*port*]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+`https://[*server*]:[*port*]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 ![](assets/default-fdm-1.png)
 

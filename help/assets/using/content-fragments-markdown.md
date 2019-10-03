@@ -63,19 +63,19 @@ In both styles, the link text is delimited by square brackets [].
 
 These are examples of inline links:
 
-*This is [an example](http://example.com/ "Title") inline link.*
+*This is [an example](https://example.com/ "Title") inline link.*
 
 *This is [an example of an email link](emailto:myaddress@mydomain.info)*
 
-* [This link](http://example.net/) has no title attribute.*
+* [This link](https://example.net/) has no title attribute.*
 
 A reference link has the following syntax:
 
 * Hey you should [checkout][0] this [cool thing][wiki] that I [made][].   
   
-[0]: http://www.google.ca  
-[wiki]: http://www.wikipedia.org  
-[made]: http://www.stackoverflow.com  
+[0]: https://www.google.ca  
+[wiki]: https://www.wikipedia.org  
+[made]: https://www.stackoverflow.com  
 *
 
 ### Images {#images}

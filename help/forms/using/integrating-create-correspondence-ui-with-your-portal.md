@@ -27,7 +27,7 @@ One way to call the Create Correspondence application from a custom portal is to
 * the URL to the XML data fetched from the desired data source (using the cmDataUrl parameter).
 
 For example, the custom portal would prepare the URL as  
-`http://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, which could be the href from a link on the portal.
+`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, which could be the href from a link on the portal.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ For example, the custom portal would prepare the URL as
 
 ## Inline data-based invocation {#inline-data-based-invocation}
 
-Another (and a more secure) way to call the Create Correspondence application could be to simply hit the URL at http://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html, while sending the parameters and data to call the Create Correspondence application as a POST request (hiding them from the end user). This also means that you can now pass along the XML data for the Create Correspondence application inline (as part of the same request, using the cmData parameter), which was not possible/ideal in the previous approach.
+Another (and a more secure) way to call the Create Correspondence application could be to simply hit the URL at https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html, while sending the parameters and data to call the Create Correspondence application as a POST request (hiding them from the end user). This also means that you can now pass along the XML data for the Create Correspondence application inline (as part of the same request, using the cmData parameter), which was not possible/ideal in the previous approach.
 
 ### Parameters for specifying letter {#parameters-for-specifying-letter}
 

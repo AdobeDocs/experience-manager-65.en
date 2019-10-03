@@ -66,9 +66,9 @@ A * [social graph](/communities/using/essentials-socialgraph.md)* captures the f
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Activity Streams API](/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.md)
+* [Activity Streams API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [Activity Streams Listener API](/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.md)
+* [Activity Streams Listener API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.htmld)
 
 * [Server-side Customizations](/communities/using/server-customize.md)
 

@@ -140,7 +140,7 @@ For managing single video and Adaptive Video Sets, the following is supported:
 
 Adaptive video streaming is supported on a variety of iOS platforms. See [Scene7 Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html).
 
-Dynamic Media supports mobile video playback for MP4 H.264 video. You can find Blackberry devices that support this video format at the following: [Supported video formats on Blackberry](http://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media supports mobile video playback for MP4 H.264 video. You can find Blackberry devices that support this video format at the following: [Supported video formats on Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 You can find Windows devices that support this video format at the following: [Supported video formats on Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
@@ -152,7 +152,7 @@ You can find Windows devices that support this video format at the following: [S
 * Configure video players to meet your branding needs.
 * Integrate video to your website, mobile site, or mobile application with a simple URL or embed code.
 
-See [Dynamic video playback](http://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample.
+See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample.
 
 See also [Viewers for AEM and Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) and [Viewers for AEM assets only](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) in the Adobe Scene7 Viewers Reference Guide.
 
@@ -273,8 +273,8 @@ The following are best-practice tips for encoding source video files.
 
 For advice about video encoding, see the following:
 
-* Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution: * [www.adobe.com/go/learn_s7_streaming101_en](http://www.adobe.com/go/learn_s7_streaming101_en).
-* Video: *Video Encoding Basics: * [www.adobe.com/go/learn_s7_encoding_en](http://www.adobe.com/go/learn_s7_encoding_en).
+* Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution: * [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* Video: *Video Encoding Basics: * [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
 
 ### Source video files {#source-video-files}
 
@@ -313,7 +313,7 @@ The following table describes the recommended size, aspect ratio, and minimum bi
 
 You can obtain a file’s metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file’s metadata:
 
-1. Go to this web page: [http://mediainfo.sourceforge.net/en/Download](http://mediainfo.sourceforge.net/en/Download).
+1. Go to this web page: [https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download).
 1. Select and download the installer for the GUI version, and follow the installation instructions.
 1. After installation, either right-click the video file (Windows only) and select MediaInfo, or open MediaInfo and drag your video file into the application. You see all metadata associated with your video file, including its width, height, and fps.
 
@@ -631,9 +631,9 @@ To configure Google Cloud settings:
 1. On the **Add credentials to your project** page, step 2, under the **Create an OAuth 2.0 client ID** heading, in the Name field, enter a unique name if desired. Or, you can use the default name specified by Google.
 1. Under the **Authorized Javascript origins** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **Enter** to add the path to the list:  
   
-   `http://<servername.domain>:<port_number>`  
+   `https://<servername.domain>:<port_number>`  
   
-   For example, `http://1a2b3c.mycompany.com:4321`
+   For example, `https://1a2b3c.mycompany.com:4321`
 
    **Note**: The path examples above is intended for illustration purposes only.
 
@@ -641,9 +641,9 @@ To configure Google Cloud settings:
 
 1. Under the **Authorized redirect URIs** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **Enter** to add the path to the list:  
   
-   `http://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`  
+   `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`  
   
-   For example, `http://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   For example, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    **Note**: The path example above is intended for illustration purposes only.
 
@@ -989,7 +989,7 @@ To monitor progress (including failed encoding/YouTube publish):
 
    >[!NOTE]
    >
-   >It may take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **retries**, **retry delay**, and **timeout** from [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), for example:
+   >It may take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **retries**, **retry delay**, and **timeout** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
    >
    >    * Apache Sling Job Queue Configuration
    >    * Adobe Granite Workflow External Process Job Handler
@@ -1021,7 +1021,7 @@ To monitor progress (including failed encoding/YouTube publish):
 
    >[!NOTE]
    >
-   >It may take a long time for the error message to finally be recorded due to multiple workflow configurations on **retries**, **retry delay**, and **timeout** from [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), for example:
+   >It may take a long time for the error message to finally be recorded due to multiple workflow configurations on **retries**, **retry delay**, and **timeout** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
    >
    >    
    >    
@@ -1139,7 +1139,7 @@ See [Scene7 Viewers Reference Guide](https://marketing.adobe.com/resources/help/
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
-See [Adobe Developer Connection](http://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
 To view Video Reports based on a video viewer that you created using the Scene7 HTML5 Viewer SDK:
 
@@ -1161,7 +1161,7 @@ To view Video Reports based on a video viewer that you created using the Scene7 
       If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
     
     * Then, add the AppMeasurementBridge.jsp script:  
-      `<script language="javascript" type="text/javascript" src="http://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
+      `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
 1. Create the TrackingManager component by doing the following:
 
@@ -1189,7 +1189,7 @@ To view Video Reports based on a video viewer that you created using the Scene7 
 
    The appMeasurementBridge object has a built-in track function. However, you can provide your own to support multiple tracking systems or other functionality.
 
-   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](http://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
 ## Adding captions to video {#adding-captions-to-video}
 
@@ -1211,7 +1211,7 @@ To add captions or subtitles to video:
 
    Ensure that the file you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
 
-   See [WebVTT: The Web Video Text Tracks format](http://dev.w3.org/html5/webvtt/).
+   See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/).
 
    There are both free and premium tools and services that you can use to author caption/subtitle files outside Dynamic Media. For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool:
 
@@ -1258,7 +1258,7 @@ You can make your long form videos easier to watch and navigate by adding chapte
 >
 >The video player that is used must support the use of chapter markers. Dynamic Media video players do support chapter markers but using third party video players may not.
 
-If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](http://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).  
+If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).  
   
 You create a chapter list for your video in much the same way that you create captions. That is, you create a WebVTT file. Note, however, that this file must be separate from any WebVTT caption file that you may also be using; you cannot combine captions and chapters into one WebVTT file.  
   
@@ -1286,7 +1286,7 @@ In the example above, `Chapter 1` is the cue identifier and is optional. The cue
   
 Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is .vtt. You can learn more information about the WebVTT captioning standard.  
   
-See [WebVTT: The Web Video Text Tracks format](http://dev.w3.org/html5/webvtt/)
+See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
 
 **To add chapter markers to video:**
 

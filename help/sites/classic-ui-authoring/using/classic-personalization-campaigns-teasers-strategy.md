@@ -262,7 +262,7 @@ As well as the campaign view in the MCM, the campaign page also gives informatio
 
 1. From the **Websites** console, open the campaign page; for example:
 
-   `` `http://localhost:4502/content/campaigns/geometrixx-outdoors/storefront/summer.html`
+   `` `https://localhost:4502/content/campaigns/geometrixx-outdoors/storefront/summer.html`
 
    This shows an overview of the teaser definitions and viewing statistics:
 

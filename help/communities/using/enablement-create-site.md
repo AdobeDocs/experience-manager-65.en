@@ -24,7 +24,7 @@ docset: aem65
 
 To get started creating a new community site :
 
-Using the [author instance](http://localhost:4502/)
+Using the [author instance](https://localhost:4502/)
 
 * sign in with administrator privileges
 * navigate to **Communities,** **Sites**
@@ -50,7 +50,7 @@ On the **Site Template** step, enter a title, description, the name for the URL,
 
     * the initial URL will be displayed underneath the Community Site Name
     * for a valid URL, append a base language code + ".html"  
-      *for example*, http://localhost:4502/content/sites/ `enable/en.html`
+      *for example*, https://localhost:4502/content/sites/ `enable/en.html`
 
 * **Reference Site Template**: pull down to choose `Reference Structured Learning Site Template`
 
@@ -245,7 +245,7 @@ In this example, the group `Community Ski Class` is added as a member of the gro
 
 ## Configurations on Publish {#configurations-on-publish}
 
-`http://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
+`https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
 ![](assets/chlimage_1-14.png)
 
@@ -261,13 +261,13 @@ Add a `Login Page Mapping` as
 
 When working with the publish site for demonstration purposes, it might be useful to change the default home page to the new site.
 
-To do so requires using [CRX|DE](http://localhost:4503/crx/de) Lite to edit the [resource mapping](../../sites/deploying/using/resource-mapping.md) table on publish.
+To do so requires using [CRX|DE](https://localhost:4503/crx/de) Lite to edit the [resource mapping](../../sites/deploying/using/resource-mapping.md) table on publish.
 
 To get started
 
 1. on publish, access CRXDE and sign in with administrator privileges
 
-    * for example, browse to [http://localhost:4503/crx/de](http://localhost:4503/crx/de) and log in with `admin/admin`
+    * for example, browse to [https://localhost:4503/crx/de](https://localhost:4503/crx/de) and log in with `admin/admin`
 
 1. in the project browser, expand `/etc/map`
 1. select the `http` node
@@ -278,7 +278,7 @@ To get started
 
           (do *not* use ':')
         
-        * **Type** [sling:Mapping](http://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+        * **Type** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. with newly created `localhost.4503` node selected
 
@@ -298,9 +298,9 @@ To get started
 
 1. select **Save All**
 1. (optional) delete the browsing history
-1. browse to http://localhost:4503/
+1. browse to https://localhost:4503/
 
-* arrive at http://localhost:4503/content/sites/enable/en.html
+* arrive at https://localhost:4503/content/sites/enable/en.html
 
 >[!NOTE]
 >
@@ -316,7 +316,7 @@ If unable to save changes, be sure the node name is `localhost.4503`, with a 'do
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 
-The '**$**' at the end of the regular expression `sling:match`string is crucial, so that only exactly `http://localhost:4503/` is mapped, else the redirect value is prepended to any path that might exist after the server:port in the URL. Thus, when AEM tries to redirect to the login page, it fails.
+The '**$**' at the end of the regular expression `sling:match`string is crucial, so that only exactly `https://localhost:4503/` is mapped, else the redirect value is prepended to any path that might exist after the server:port in the URL. Thus, when AEM tries to redirect to the login page, it fails.
 
 ## Modifying the Community Site {#modifying-the-community-site}
 

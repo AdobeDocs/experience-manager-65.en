@@ -17,12 +17,12 @@ AEM Forms provides the complete source code of the AEM Forms app. The source con
 To get the AEM Forms app source, perform the following steps:
 
 1. Navigate to package share  
-   URL: `http://<server>:<port>/crx/packageshare`.
+   URL: `https://<server>:<port>/crx/packageshare`.
 
 1. Download the source package. When you download the package, it is added in your AEM Forms package manager.
-1. After it is downloaded, navigate to: `http://<server>:<port>/crx/packmgr/index.jsp`, and install `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+1. After it is downloaded, navigate to: `https://<server>:<port>/crx/packmgr/index.jsp`, and install `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-1. To download the source code archive, open `http://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.   
+1. To download the source code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.   
    The source package is downloaded on your device.
 
 The following image displays the extracted contents of the `adobe-lc-mobileworkspace-src-<version>.zip`.
@@ -141,7 +141,7 @@ For devices that are not domain-joined, side-loading product activation key is r
 
 For Windows 8.1 Home edition, there is no group policy, the enterprise side-loading is not allowed, and you cannot join it with the enterprise domain. Deploy the app on a Windows 8.1 Home Edition device using developer license.
 
-For more information, click [here](http://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
+For more information, click [here](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
 
 ## Deploying an app using Visual Studio {#deploying-an-app-using-visual-studio}
 

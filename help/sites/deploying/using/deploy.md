@@ -129,7 +129,7 @@ To learn more about Cloud Manger and its resources, please refer to [**Cloud Man
 
 ### Prerequisites {#prerequisites}
 
-While production instances are usually run on dedicated machines running an officially supported OS (see [Technical Requirements](../../../sites/deploying/using/technical-requirements.md)), the Experience Manager server will actually run on any system that supports [**Java Standard Edition 8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+While production instances are usually run on dedicated machines running an officially supported OS (see [Technical Requirements](../../../sites/deploying/using/technical-requirements.md)), the Experience Manager server will actually run on any system that supports [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 For purposes of familiarization and for developing on AEM it is quite common to use an instance installed on your local machine running Apple OS X or desktop versions of Microsoft Windows or Linux.
 
@@ -193,7 +193,7 @@ AEM will take a few minutes to unpack the jar file, install itself, and start up
 
 To access the instance point your browser to:
 
-**`http://localhost:4502`**
+**`https://localhost:4502`**
 
 The result in author instance will be automatically configured to connect to a **publish instance** on **`localhost:4503`**.
 
@@ -283,7 +283,7 @@ There are also equivalent **`bat`** files for Windows. For more detailed informa
 
 AEM starts and automatically redirects your web browser to the appropriate page, usually the login page; for example:
 
-`http://localhost:4502/`
+`https://localhost:4502/`
 
 ![sign in screen](assets/screen_shot_2019-04-08at83533am.png)
 

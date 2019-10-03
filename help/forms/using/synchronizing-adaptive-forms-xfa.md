@@ -41,7 +41,7 @@ The article uses an example to demonstrate how to synchronize the adaptive form 
 
 After uploading the package, you can view these assets in the AEM Forms UI.
 
-Install the package using the package manager: `http://<server>:<port>/crx/packmgr/index.jsp`
+Install the package using the package manager: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 The package contains the following assets:
 
@@ -51,7 +51,7 @@ The package contains the following assets:
 
 ### Add content to adaptive form <br> {#add-content-to-adaptive-form-br}
 
-1. Navigate to http://&lt;server&gt;:&lt;port&gt;/aem/forms.html. Enter your credentials if asked.
+1. Navigate to https://&lt;server&gt;:&lt;port&gt;/aem/forms.html. Enter your credentials if asked.
 1. Open the sample-af-xfa for editing in author mode.
 1. From the Content browser in the sidebar, choose Data Model Objects tab. Drag NumericField1 and TextField1 onto the Adaptive Form.
 1. Change the Title of the NumericField1 from **Numeric Field** to **AF Numeric Field.**
@@ -68,7 +68,7 @@ After updating an XDP file, you need to upload it again in the AEM Forms UI for 
 
 As an example, let us update the `sample-form.xdp` file using the following steps:
 
-1. Navigate to `http://<server>:<port>/projects.html.` Enter your credentials if prompted.
+1. Navigate to `https://<server>:<port>/projects.html.` Enter your credentials if prompted.
 1. Click the Forms tab on the left.
 1. Download the `sample-form.xdp` file on your local machine. The XDP file is downloaded as a `.zip` file, which can be extracted using any file decompression utility.
 

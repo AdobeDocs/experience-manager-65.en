@@ -25,7 +25,7 @@ An existing HTML application can leverage the FormBridge API to interact with a 
 1. **Choose a Profile or create a Profile  
    **
 
-    1. In the CRX DE interface, navigate to: `http://[server]:[port]/crx/de`.
+    1. In the CRX DE interface, navigate to: `https://[server]:[port]/crx/de`.
     1. Log in with administrator credentials.
     1. Create a profile or choose an existing profile.
 
@@ -40,7 +40,7 @@ An existing HTML application can leverage the FormBridge API to interact with a 
    ```xml
    <%@ page session="false"
                   contentType="text/html; charset=utf-8"%><%
-   %><%@ taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0" %><%
+   %><%@ taglib prefix="cq" uri="https://www.day.com/taglibs/cq/1.0" %><%
    %><!DOCTYPE html>
    <html manifest="${param.offlineSpec}">
        <head>

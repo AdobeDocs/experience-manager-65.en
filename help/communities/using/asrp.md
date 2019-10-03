@@ -79,7 +79,7 @@ Be sure to set the domains to be URLs that are routable from the Data Center URL
 
 ### Time Synchronization {#time-synchronization}
 
-In order for authentication with the ASRP endpoint to succeed, the machines running your hosted AEM Communities must be time synchronized, such as with the [Network Time Protocol (NTP)](http://www.ntp.org/).
+In order for authentication with the ASRP endpoint to succeed, the machines running your hosted AEM Communities must be time synchronized, such as with the [Network Time Protocol (NTP)](https://www.ntp.org/).
 
 ### Publishing the Configuration {#publishing-the-configuration}
 
@@ -123,7 +123,7 @@ If upgrading from an existing AEM 6.0 social community site, be sure to follow t
 
 If receiving authentication errors against the Data Center URL, and the AEM error.log contains messages about stale timestamps, then verify that time synchronization is happening.
 
-Use a tool such as the [Network Time Protocol (NTP)](http://www.ntp.org/) to time synchronize all AEM author and publish servers.
+Use a tool such as the [Network Time Protocol (NTP)](https://www.ntp.org/) to time synchronize all AEM author and publish servers.
 
 ### New Content Does Not Appear in Searches {#new-content-does-not-appear-in-searches}
 
@@ -137,8 +137,8 @@ Make sure that the ASRP has been configured to be the default provider by checki
 
 On all author and publish AEM instances, revisit the Storage Configuration console, or check the AEM repository.
 
-In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
+In JCR, if [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means that the storage provider is JSRP.
-* If the srpc node exists and contains node [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), the defaultconfiguration's properties define ASRP to be the default provider.
+* does not contain an [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means that the storage provider is JSRP.
+* If the srpc node exists and contains node [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), the defaultconfiguration's properties define ASRP to be the default provider.
 

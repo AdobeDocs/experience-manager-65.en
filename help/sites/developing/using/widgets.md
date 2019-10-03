@@ -17,11 +17,11 @@ docset: aem65
 
 Adobe Experience Manager's web-based interface uses AJAX and other modern browser technologies to enable WYSIWYG editing and formatting of content by authors right on the web page.
 
-Adobe Experience Manager (AEM) uses the [ExtJS](http://www.sencha.com/) widgets library, which provides the highly polished user interface elements that work across all the most important browsers and allow the creation of desktop-grade UI experiences.
+Adobe Experience Manager (AEM) uses the [ExtJS](https://www.sencha.com/) widgets library, which provides the highly polished user interface elements that work across all the most important browsers and allow the creation of desktop-grade UI experiences.
 
 These widgets are included within AEM and, in addition to being used by AEM itself, can be used by any website built using AEM.
 
-For a complete reference of all the available widgets in AEM you can refer to the [widget API documentation](/sites/developing/using/reference-materials/widgets-api/index.md) or to the [list of existing xtypes](/sites/developing/using/xtypes.md). In addition, many examples showing how to use the ExtJS framework are available on the [Sencha](http://www.sencha.com/products/extjs/examples/) site, the owner of the framework.
+For a complete reference of all the available widgets in AEM you can refer to the [widget API documentation](/sites/developing/using/reference-materials/widgets-api/index.md) or to the [list of existing xtypes](/sites/developing/using/xtypes.md). In addition, many examples showing how to use the ExtJS framework are available on the [Sencha](https://www.sencha.com/products/extjs/examples/) site, the owner of the framework.
 
 This page gives some insights about how to use and extend widgets. It first describes how to [include client-sided code in a page](#including-the-client-sided-code-in-a-page). It then describes some sample components that have been created to illustrate some basic use and extension. Those components are available in the **Using ExtJS Widgets** package on **Package Share**.
 
@@ -35,7 +35,7 @@ The package includes examples of:
 
 >[!NOTE]
 >
->The classic UI of Adobe Experience Manager is built upon [ExtJS 3.4.0](http://extjs.cachefly.net/ext-3.4.0/docs/).
+>The classic UI of Adobe Experience Manager is built upon [ExtJS 3.4.0](https://extjs.cachefly.net/ext-3.4.0/docs/).
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ To follow the tutorials on this page, install the package called **Using ExtJS W
 
 Dialogs are typically used to edit content, but can also just display information. An easy way to view a complete dialog is to access its representation in json format. To do so, point your browser to:
 
-`http://localhost:4502/<path-to-dialog>.-1.json`
+`https://localhost:4502/<path-to-dialog>.-1.json`
 
 The first component of the **Using ExtJS Widgets** group in the Sidekick is called **1. Dialog Basics** and includes four basic dialogs that are built with out-of-the-box widgets and without customized javascript logic. The dialogs are stored below `/apps/extjstraining/components/dialogbasics`. The basic dialogs are:
 
@@ -163,7 +163,7 @@ The **Full** dialog displays a window with three tabs, each tab having two text 
   `/apps/extjstraining/components/dialogbasics/full`
 
 * Is rendered in JSON format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/dialogbasics/full.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/dialogbasics/full.-1.json`
 
 The dialog displays as follows:
 
@@ -181,7 +181,7 @@ The **Single Panel** dialog displays a window with one tab that has two text fie
   `/apps/extjstraining/components/dialogbasics/singlepanel`
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/dialogbasics/singlepanel.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/dialogbasics/singlepanel.-1.json`
 
 * One advantage over the **Full Dialog** is that less configuration is needed.
 * Recommended use: for simple dialogs that display information or only have just a few fields.
@@ -214,7 +214,7 @@ The **Multi Panel** dialog has the same display as the **Full** dialog but it is
   `/apps/extjstraining/components/dialogbasics/multipanel`
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/dialogbasics/multipanel.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/dialogbasics/multipanel.-1.json`
 
 * One advantage over the **Full Dialog** is that it has a simplified structure.  
 
@@ -244,7 +244,7 @@ The **Rich** dialog displays a window with two tabs. The first tab has a text fi
   `/apps/extjstraining/components/dialogbasics/rich`
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/dialogbasics/rich.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/dialogbasics/rich.-1.json`
 
 To use the **Rich** dialog:
 
@@ -288,7 +288,7 @@ Its main characteristics are:
   `/apps/extjstraining/components/dynamicdialogs/switchtabs`
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/switchtabs.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/dynamicdialogs/switchtabs.-1.json`
 
 The logic is implemented through event listeners and javascript code as follows:
 
@@ -340,7 +340,7 @@ Its main characteristics are:
   `/apps/extjstraining/components/dynamicdialogs/arbitrary`
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/arbitrary.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/dynamicdialogs/arbitrary.-1.json`
 
 The logic is implemented through event listeners and javascript code as follows:
 
@@ -384,7 +384,7 @@ Its main characteristics are:
   `/apps/extjstraining/components/dynamicdialogs/togglefields`
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/togglefields.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/dynamicdialogs/togglefields.-1.json`
 
 The logic is implemented through event listeners and javascript code as follows:
 
@@ -453,7 +453,7 @@ The **Custom Multifield** widget based dialog:
   `/apps/extjstraining/components/customwidgets/multifield`
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/customwidgets/multifield.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/customwidgets/multifield.-1.json`
 
 The custom multifield widget (xtype = `ejstcustom`):
 
@@ -498,7 +498,7 @@ The custom treebrowse dialog:
   `/apps/extjstraining/components/customwidgets/treebrowse`
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/customwidgets/treebrowse.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/customwidgets/treebrowse.-1.json`
 
 The custom treebrowse widget (xtype = `ejstbrowse`):
 
@@ -545,7 +545,7 @@ The **RTE plugin** based dialog:
   `/apps/extjstraining/components/customwidgets/rteplugin`  
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/customwidgets/rteplugin.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/customwidgets/rteplugin.-1.json`
 
 * The `rtePlugins` node has a child node `inserttext` (node type = `nt:unstructured`) that is named after the plugin. It has a property called `features`, that defines which of the plugin features are available to the RTE.
 
@@ -655,7 +655,7 @@ The component dialog:
   `/apps/extjstraining/components/treeoverview/dialog`  
 
 * Is rendered in json format by requesting:  
-  `http://localhost:4502/apps/extjstraining/components/treeoverview/dialog.-1.json`
+  `https://localhost:4502/apps/extjstraining/components/treeoverview/dialog.-1.json`
 
 * ``Displays as follows:
 

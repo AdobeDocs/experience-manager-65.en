@@ -44,7 +44,7 @@ You can use several methods to check the Pattern Detector output:
 
 * **Via the Felix Inventory console:**
 
-1. Go to the AEM Web Console by browsing to *http://serveraddress:serverport/system/console/configMgr*
+1. Go to the AEM Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
 1. Select **Status - Pattern Detector** as shown in the image below:
 
    ![](assets/screenshot-2018-2-5pattern-detector.png)
@@ -71,7 +71,7 @@ The information in the output is formatted as a series of event entries. There a
 They can be obtained by using the following commands:
 
 ```shell
-curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
+curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
 ```
 
 The output will look like this:
@@ -83,7 +83,7 @@ The output will look like this:
 The progress can be filtered using the `grep` command:
 
 ```shell
-curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
+curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
 ```
 
 Which results in the following output:
@@ -99,7 +99,7 @@ Which results in the following output:
 Similarly, JSON can be processed using the [jq tool](https://stedolan.github.io/jq/) as soon as it is published.
 
 ```shell
-curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
+curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
 ```
 
 With the output:
@@ -124,7 +124,7 @@ With the output:
 The progress is reported every 5 seconds and can fetched by excluding other messages than those marked as suspicions:
 
 ```shell
-curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
+curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
 ```
 
 With the output:

@@ -79,7 +79,7 @@ When you run the Migration Utility for the first time, a log is created with the
 
 1. Open the following URL in the browser:
 
-   http://[*hostname*]:[*port*]/[*context_path*]/libs/fd/foundation/gui/content/migration.html
+   https://[*hostname*]:[*port*]/[*context_path*]/libs/fd/foundation/gui/content/migration.html
 
    The browser displays four options:
 

@@ -193,7 +193,7 @@ You can enable authentication for forms you want selected users to access. When 
 To enable authentication for your forms:
 
 1. In your browser, open configMgr in the publish instance.  
-   URL: `http://<hostname>:<PublishPort>/system/console/configMgr`
+   URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
 1. In the Adobe Experience Manager Web Console Configuration, click **Apache Sling Authentication Service **to configure it.
 1. In the Apache Sling Authentication Service dialog that appears, use the **+** button to add paths.  

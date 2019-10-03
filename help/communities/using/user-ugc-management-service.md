@@ -25,7 +25,7 @@ For further information see the [GDPR page at the Adobe Privacy Center](https://
 
 To put these APIs to use, you need to enable the **/services/social/ugcmanagement** endpoint by activating the UserUgcManagement service. To activate this service, install the [sample servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) available on [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). Then, hit the endpoint on publish instance of your communities site with appropriate parameters using an http request, similar to
 
-**http://localhost:port/services/social/ugcmanagement?user=&lt;authorizable ID&gt;&operation=&lt;getUgc&gt;**. However, you can also build a UI (user interface) to manage user profiles and user generated content in system.
+**https://localhost:port/services/social/ugcmanagement?user=&lt;authorizable ID&gt;&operation=&lt;getUgc&gt;**. However, you can also build a UI (user interface) to manage user profiles and user generated content in system.
 
 These APIs enable perform the following functions.
 
@@ -38,7 +38,7 @@ These APIs enable perform the following functions.
 
 For example, to export the UGC of a user named Weston McCall, who uses weston.mccall@dodgit.com as authorizable ID to log in to communities site, you can send an http GET request similar to the following:
 
-`http://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
+`https://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
 ## Delete the UGC of a user {#delete-the-ugc-of-a-user}
 
@@ -76,5 +76,5 @@ For example, to delete the profile of a user having authorizable ID weston.mccal
 
 >[!NOTE]
 >
->deleteUserAccount() API only disables a user profile in the system and removes the UGC. However, to delete a user profile from the system, navigate to **CRXDE Lite**: [http://&lt;server&gt;/crx/de](http://localhost:4502/crx/de), locate the user node and delete it.
+>deleteUserAccount() API only disables a user profile in the system and removes the UGC. However, to delete a user profile from the system, navigate to **CRXDE Lite**: [https://&lt;server&gt;/crx/de](https://localhost:4502/crx/de), locate the user node and delete it.
 

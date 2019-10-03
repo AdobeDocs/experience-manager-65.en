@@ -19,7 +19,7 @@ Interactive Communications includes properties that are configured automatically
 
 Open the **Adobe Experience Manager Web Console Configuration** page using the following URL:
 
-http://&lt;server&gt;:&lt;port&gt;/&lt;contextPath&gt;/system/console/configMgr
+https://&lt;server&gt;:&lt;port&gt;/&lt;contextPath&gt;/system/console/configMgr
 
 The configuration properties include:
 

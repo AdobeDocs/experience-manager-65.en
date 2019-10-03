@@ -153,7 +153,7 @@ While tables and rows support only visibility expressions to control their visib
 
 The visibility expression for a table or a row can be defined in the Panel properties tab of their corresponding Edit component dialog. The expressions for a cell can be defined in the Script tab of its Edit component dialog.
 
-For the complete list of adaptive forms classes, events, objects, and public APIs, see [JavaScript Library API reference for adaptive forms](http://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
+For the complete list of adaptive forms classes, events, objects, and public APIs, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
 
 ## Mobile layouts {#mobile-layouts}
 
@@ -266,9 +266,9 @@ The XML file that contains data in the following format:
 
 In the sample XML, the data for a row is defined by the <Row1> tags, which is the element name for the row in the table. Within the `<Row1>` tag, the data for each cell is defined within the tag for its element name, such as `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, and `<type>`.
 
-To merge this data with the table at runtime, we need to point the adaptive form containing the table to the absolute XML location with wcmmode disabled. For example, if the adaptive form is at *http://localhost:4502/myForms/bankTransaction.html* and the data XML file is saved at *C:/myTransactions/bankSummary.xml*, you can view the table with data at the following URL:
+To merge this data with the table at runtime, we need to point the adaptive form containing the table to the absolute XML location with wcmmode disabled. For example, if the adaptive form is at *https://localhost:4502/myForms/bankTransaction.html* and the data XML file is saved at *C:/myTransactions/bankSummary.xml*, you can view the table with data at the following URL:
 
-*http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&wcmmode=disabled* 
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&wcmmode=disabled* 
 
 ![](assets/data-merged-table.png) 
 

@@ -68,7 +68,7 @@ The following groups are also included:
 1. **Click**: To execute an action in the user story.
 1. **Links**: Located at the top of the main menu in We.Gov site.
 1. **User Instructions**: A set of numerical steps to follow when navigating through the user's story.
-1. **Forms Portal**: *http://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/formsportal.html*
+1. **Forms Portal**: *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/formsportal.html*
 
 1. **Mobile View**:* *We.Gov user to replicate a mobile view with a re-sized browser*.*
 
@@ -77,12 +77,12 @@ The following groups are also included:
 1. **Pre-screener Form**:* Form on the Home page of the We.Gov site.*
 
 1. **Adaptive Form**: Enrollment application form for We.gov demo.  
-   *http://&lt;aemserver&gt;:&lt;port&gt;/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
+   *https://&lt;aemserver&gt;:&lt;port&gt;/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **Adobe We.Gov Site**:* http://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
+1. **Adobe We.Gov Site**:* https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
 
 1. **Adobe Inbox**: Located top menu bar [Bell icon] in AEM backend.* 
-   http://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
+   https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
 
 1. ***E*****mail Client**: Preferred way to view your emails (Gmail, Outlook)
 
@@ -95,7 +95,7 @@ The following groups are also included:
 
 **User Instructions:**
 
-1. Navigate to: *http://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
+1. Navigate to: *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
 1. Login with:
 
     1. **User**: aya.tan
@@ -179,7 +179,7 @@ Aya needs to review some documents at home before she can complete the service r
 
 **User Instructions:**
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
 1. From the navigation bar, select click on “**Online Services**”.
 1. From the “Draft Forms” panel, select the existing “Enrollment Application For Health Benefits".
 
@@ -226,7 +226,7 @@ Aya needs to review some documents at home before she can complete the service r
 
 **User Instructions:**
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
 1. Click on the user icon (top right-hand corner) and use the “**Sign Out**”, or the “**Impersonate as**” menu option if you are currently logged in with an administrative user.
 
     1. Login with:
@@ -285,7 +285,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 **User Instructions:**
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
 1. Click on the user icon (top right-hand corner) and use the “**Sign Out**”, or the “**Impersonate as**” menu option if you are currently logged in with an administrative user.
 
     1. Login with:
@@ -340,11 +340,11 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 1. &#42;For a quick reference to PDF directly:
 
-   *http://&lt;aemserver&gt;:&lt;port&gt;/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
+   *https://&lt;aemserver&gt;:&lt;port&gt;/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
 
 1. &#42;For a quick reference to IC directly:
 
-   *http://&lt;aemserver&gt;:&lt;port&gt;/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&mode=preview&wcmmode=disabled*
+   *https://&lt;aemserver&gt;:&lt;port&gt;/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&mode=preview&wcmmode=disabled*
 
    ![Welcome Benefits Handbook](assets/welcome_benefits_handbook.png) ![Interactive Communication Link](assets/interactive_communication.png)
 
@@ -370,7 +370,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 ### Camila reviews Sites reporting (We.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content*
 1. Select the “**AEM Forms We.Gov Site**” to view the site pages.
 1. Select one of the site page (e.g. Home), and choose “**Analytics & Recommendations**”.
 
@@ -397,7 +397,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 1. Navigate to
 
-   *http://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
+   *https://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
 1. Select the “**Enrollment Application For Health Benefits**” adaptive form and select the “**Analytics Report**” option.
 

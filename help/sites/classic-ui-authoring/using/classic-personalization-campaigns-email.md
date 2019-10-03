@@ -135,7 +135,7 @@ To personalize a newsletter and simulate how it will look:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
 >
 >By default, the value of the parameter is `localhost:4502` and operation cannot be complete if port for running instance is changed.
 
@@ -224,7 +224,7 @@ You can send out a newsletter from either the newsletter or from the list. Both 
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
 >
 >By default, the value of the parameter is `localhost:4502` and operation cannot be complete if port for running instance is changed.
 

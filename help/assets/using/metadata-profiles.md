@@ -186,7 +186,7 @@ In addition to applying a profile to a folder, you can also apply one globally s
 
 To apply a profile globally, do one of the following:
 
-* Navigate to **http://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** and apply the appropriate profile and tap or click **Save**.
+* Navigate to **https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** and apply the appropriate profile and tap or click **Save**.
 
   ![](assets/chlimage_1-209.png)
 

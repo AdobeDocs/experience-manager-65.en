@@ -186,20 +186,20 @@ The followng POM code is useful if you use Maven to build your applications. The
 
 The DeviceGroup and DeviceGroupFilter interfaces are included in the Day Communique 5 WCM Mobile API bundle. The Felix annotations are included in the Apache Felix Declarative Services bundle. You can obtain this JAR file from the public Adobe repository.
 
-At the time of authoring, 5.5.2 is the version of the WCM Mobile API bundle that is in the latest release of AEM. Use Adobe Web Console ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) to ensure this is the bundle version that is deployed in your environment.
+At the time of authoring, 5.5.2 is the version of the WCM Mobile API bundle that is in the latest release of AEM. Use Adobe Web Console ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) to ensure this is the bundle version that is deployed in your environment.
 
 **POM: **(Your POM will use a different groupId and version.)
 
 ```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
       <modelVersion>4.0.0</modelVersion>
       <groupId>com.adobe.example.myapp</groupId>
       <artifactId>devicefilter</artifactId>
       <version>0.0.1-SNAPSHOT</version>
       <name>my app device filter</name>
-      <url>http://dev.day.com/docs/en/cq/current.html</url>
+      <url>https://dev.day.com/docs/en/cq/current.html</url>
   <packaging>bundle</packaging>
 <build>
     <plugins>

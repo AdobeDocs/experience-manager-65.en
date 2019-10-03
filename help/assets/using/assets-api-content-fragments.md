@@ -92,7 +92,7 @@ This means that subsequent ( `write`) requests cannot be combined into a single 
    <td>Access</td> 
    <td><p>Can be accessed directly.</p> <p>Uses the <code>/api/assets </code>endpoint, mapped to <code>/content/dam</code> (in the repository).</p> <p>For example, to access:<code class="code">
        /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> request:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td> 
-   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br /> <code>http://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td> 
+   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td> 
   </tr> 
   <tr> 
    <td>Security</td> 
@@ -228,7 +228,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the [API Reference](../../assets/using/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](/sites/developing/using/reference-materials/assets-api-content-fragments/index.md).
+>For further details, see the [API Reference](../../assets/using/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -238,7 +238,7 @@ Usage is via:
 
 For example:
 
-[http://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json](http://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json)
+[https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json](https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json)
 
 The response is serialized JSON with the content structured as in the content fragment. References are delivered as reference URLs.
 
@@ -362,7 +362,7 @@ The following status codes can be seen in the relevant circumstances:
 
 See here for detailed API references:
 
-* [Adobe Experience Manager Assets API - Content Fragments](/sites/developing/using/reference-materials/assets-api-content-fragments/index.md)
+* [Adobe Experience Manager Assets API - Content Fragments](/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [Assets HTTP API](../../assets/using/mac-api-assets.md)
 
     * [Available Features](../../assets/using/mac-api-assets.md#available-features)

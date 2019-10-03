@@ -176,7 +176,7 @@ You can:
 
 >[!NOTE]
 >
->The URI can be prepended with any of the protocols configured for your installation. In a standard installation these are `http://`, `ftp://`, and `mailto:`. Protocols not configured for your installation will be rejected and marked as invalid.
+>The URI can be prepended with any of the protocols configured for your installation. In a standard installation these are `https://`, `ftp://`, and `mailto:`. Protocols not configured for your installation will be rejected and marked as invalid.
 >
 
 To break the link position the cursor anywhere within the link text and click the **Unlink** icon:

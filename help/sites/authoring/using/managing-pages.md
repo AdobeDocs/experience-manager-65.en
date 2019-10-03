@@ -41,10 +41,10 @@ The structure of a website can be thought of as a tree structure that holds your
 The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
 
 * Author environment  
-  `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Publish environment  
-  `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
 
@@ -189,7 +189,7 @@ Once you have created and opened a page you can [add content using the component
 
 Unless all pages have been created for you in advance, before you can start creating content, you must create a page:
 
-1. Open the Sites console (for example, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigate to the location where you want to create the new page. 
 1. Open the drop down selector using **Create** in the toolbar, then select **Page** from the list:
 

@@ -48,7 +48,7 @@ AEM Delivery and Content Management APIs:
 The following external resources are for reference only:
 
 * [Apache Sling 11 API](https://sling.apache.org/apidocs/sling11/)
-* [Jackrabbit Oak API](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
+* [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
 * [Java Content Repository API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)
-* [Apache Jackrabbit API](http://jackrabbit.apache.org/api)
+* [Apache Jackrabbit API](https://jackrabbit.apache.org/api)
 

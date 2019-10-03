@@ -121,8 +121,8 @@ AEM has the ability to serve the content in various formats and from various lev
 New HTTP API capabilites:
 
 * Added [Content Fragment support to HTTP API for Assets](assets/using/assets-api-content-fragments.md) to create, update, read and delete fragments.
-* Expose lists of Content Fragments via Content Services with the [Content Fragment List Core Component](http://opensource.adobe.com/aem-core-wcm-components/library/content-fragment-list.html).
-* [Core Component Library](http://opensource.adobe.com/aem-core-wcm-components/library.html) that shows the default Content Services JSON output for each component
+* Expose lists of Content Fragments via Content Services with the [Content Fragment List Core Component](https://opensource.adobe.com/aem-core-wcm-components/library/content-fragment-list.html).
+* [Core Component Library](https://opensource.adobe.com/aem-core-wcm-components/library.html) that shows the default Content Services JSON output for each component
 
 #### Screens Add-on {#screens-add-on}
 
@@ -225,7 +225,7 @@ You can integrate Livefyre with your AEM 6.5 instance. Information on how to int
 
 Adobe is using a customer focused development model that allows customers to contribute to all stages of the development process, during specification, development and testing. Our thanks goes to all contributing customers and partners in this process.
 
-Adobe has the procedures and processes in place to enable collection, prioritization, and tracking of customer focused bug resolution and enhancement request development. The [Adobe Marketing Cloud Support Portal](http://helpx.adobe.com/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement & Defect Tracking System. Customer questions are identified and resolved with Customer Care where possible. When escalated to R&D, all customer information is captured, and used for prioritization and reporting purposes. Priority is given in development to paid support and warrantee issues and paid customer enhancements.
+Adobe has the procedures and processes in place to enable collection, prioritization, and tracking of customer focused bug resolution and enhancement request development. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement & Defect Tracking System. Customer questions are identified and resolved with Customer Care where possible. When escalated to R&D, all customer information is captured, and used for prioritization and reporting purposes. Priority is given in development to paid support and warrantee issues and paid customer enhancements.
 
 This process of prioritization has yielded more than 750 customer focused changes fixed in AEM 6.5.
 
@@ -250,7 +250,7 @@ This process of prioritization has yielded more than 750 customer focused change
     * for full-stack sites: [GitHub project](https://github.com/adobe/aem-project-archetype)
     * for single-page apps with React/Angular: [GitHub project](https://github.com/adobe/aem-spa-project-archetype)
 
-* AEM Screens Players for various target platforms ([download](http://download.macromedia.com/screens/))
+* AEM Screens Players for various target platforms ([download](https://download.macromedia.com/screens/))
 
 * Smart Content Language Models. English is pre-installed - more languages can be downloaded
 
@@ -303,7 +303,7 @@ Oak MicroKernel for
 
 >[!NOTE]
 >
->Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9 and 10 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](http://www.oracle.com/technetwork/java/eol-135779.html)). Adobe will only provide support for LTS releases of Java to run AEM in production. Therefore Java 11 is the recommended version to use with AEM 6.5.
+>Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9 and 10 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe will only provide support for LTS releases of Java to run AEM in production. Therefore Java 11 is the recommended version to use with AEM 6.5.
 
 ## Deprecated and Removed Features {#deprecated-and-removed-features}
 
@@ -319,7 +319,7 @@ For Adobe Experience Manager 6.5, [read the list of deprecated and removed capab
 
 These sites are only available to customers. If you are a customer and need access, please contact your Adobe account manager.
 
-* [](http://daycare.day.com) [Product Download at licensing.adobe.com](http://licensing.adobe.com/)
+* [](https://daycare.day.com) [Product Download at licensing.adobe.com](https://licensing.adobe.com/)
 
-* [Customer Support at daycare.day.com](http://daycare.day.com)
+* [Customer Support at daycare.day.com](https://daycare.day.com)
 

@@ -147,7 +147,7 @@ SSL configuration is required to communicate with Adobe Sign servers. For detail
 
 ## Configure Day CQ Link Externalizer configuration {#externalizer}
 
-In AEM, the **Externalizer** is an OSGI service that allows you to programmatically transform a resource path (e.g. /path/to/my/page) into an external and absolute URL (for example, http://www.mycompany.com/path/to/my/page) by prefixing the path with a pre-configured DNS. See [Externalizing URLs](../../sites/developing/using/externalizer.md).
+In AEM, the **Externalizer** is an OSGI service that allows you to programmatically transform a resource path (e.g. /path/to/my/page) into an external and absolute URL (for example, https://www.mycompany.com/path/to/my/page) by prefixing the path with a pre-configured DNS. See [Externalizing URLs](../../sites/developing/using/externalizer.md).
 
 >[!CAUTION]
 >
@@ -157,7 +157,7 @@ In AEM, the **Externalizer** is an OSGI service that allows you to programmatica
 
 Perform the following steps on both author and publish instances:
 
-1. Go to OSGi Configuration at http://&lt;*hostname&gt;*:&lt;*port&gt;*/system/console/configMgr.
+1. Go to OSGi Configuration at https://&lt;*hostname&gt;*:&lt;*port&gt;*/system/console/configMgr.
 1. Find and tap **Day CQ Link Externalizer** configuration.  
    The Day CQ Link Externalizer dialog opens for editing the configuration.
 1. In the Day CQ Link Externalizer dialog, in the Domains field:
@@ -174,7 +174,7 @@ Reference site implementation requires emails to be sent to sample users when th
 
 Perform the following steps to configure mail service on the publish instance:
 
-1. Go to OSGi Configuration at http://&lt;*hostname&gt;*:&lt;*port&gt;*/system/console/configMgr.
+1. Go to OSGi Configuration at https://&lt;*hostname&gt;*:&lt;*port&gt;*/system/console/configMgr.
 1. Find and tap **Day CQ Mail Service** to open it for configuration.
 1. Provide SMTP server hostname and port values.
 1. Tap **Save.**
@@ -220,8 +220,8 @@ To learn more about how to use packages and package share, see [How to Work With
 
 After you have installed the packages and started the author and publish instances, visit the following URLs in your browser:
 
-* http://[server]:[port]/wegov
-* http://[server]:[port]/wefinance
+* https://[server]:[port]/wegov
+* https://[server]:[port]/wefinance
 
 If your installation is successful, you can access the and We.Finance reference sites landing pages.
 
@@ -231,12 +231,12 @@ The home mortgage application and auto insurance application reference sites are
 
 To import the custom entity for auto insurance application:
 
-1. Download the **WeFinanceAutoInsurance_1_0.zip** solution package from http://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip on your AEM author instance.
+1. Download the **WeFinanceAutoInsurance_1_0.zip** solution package from https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip on your AEM author instance.
 1. In your Microsoft Dynamics instance, go to **Settings &gt; Solutions** and click **Import**. Select and import the package.
 
 To import the custom entity for auto insurance application:
 
-1. Download the** AEMFormsFSIRefsite_1_0.zip** package from http://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Select and import the package.  
+1. Download the** AEMFormsFSIRefsite_1_0.zip** package from https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Select and import the package.  
 
 1. In your Microsoft Dynamics instance, go to **Settings &gt; Solutions** and click **Import**. Select and import the package.
 
@@ -244,9 +244,9 @@ To import the customer and insurance policy records:
 
 1. Download the **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv**, and **home mortgage** data files from the following locations on your AEM author instance:
 
-    * http://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv
-    * http://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv
-    * http://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv
+    * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv
+    * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv
+    * https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv
 
 1. In your Microsoft Dynamics instance, do the following:
 
@@ -273,7 +273,7 @@ Configure the OAuth cloud service in AEM Forms to enable communication between A
 
 Do the following on both author and publish instances:
 
-1. Go to AEM Web Configuration console at http://[server]:[host]/system/console/configMgr.
+1. Go to AEM Web Configuration console at https://[server]:[host]/system/console/configMgr.
 1. Find and tap **[!UICONTROL Adobe Sign Configuration Service]** to open it for configuration.
 1. Configure **[!UICONTROL Status Update Scheduler Expression]** as **0 0/2 &#42; &#42; &#42; ?**.
 
@@ -301,7 +301,7 @@ Do the following on both author and publish instances:
 
 Do the following on the publish instance to allow access to anonymous users:
 
-1. Go to AEM Web Configuration console at http://[server]:[port]/system/console/configMgr.
+1. Go to AEM Web Configuration console at https://[server]:[port]/system/console/configMgr.
 1. Find and tap **[!UICONTROL Forms Common Configuration Service]** to open it for configuration.
 1. Configure the **[!UICONTROL Allow]** field for **[!UICONTROL All Users]**.
 1. Tap **[!UICONTROL Save]**.
@@ -310,7 +310,7 @@ Do the following on the publish instance to allow access to anonymous users:
 
 Do the following on both author and publish instances:
 
-1. Go to CRXDE at http://[server]:[port]/crx/de/index.jsp.
+1. Go to CRXDE at https://[server]:[port]/crx/de/index.jsp.
 1. Navigate to** **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** **and open the swagger file.
 1. Update the host and port settings as per your environment.
 1. Save the settings.
@@ -332,17 +332,17 @@ To generate a report, seed data is bundled with the reference sites. Before you 
 
 1. Ensure that We.Finance analytics configurations are available in the AEM Cloud Services. You can find cloud services in one of the following ways:
 
-    * Navigate to **[!UICONTROL Tools>Cloud Services>Legacy Cloud Services]** or browse to http://&lt;host&gt;:&lt;port&gt;/libs/cq/core/content/tools/cloudservices.html.
+    * Navigate to **[!UICONTROL Tools>Cloud Services>Legacy Cloud Services]** or browse to https://&lt;host&gt;:&lt;port&gt;/libs/cq/core/content/tools/cloudservices.html.
     * In the **[!UICONTROL Cloud Services]** page, under **[!UICONTROL Adobe Analytics]** section, click `Show Configurations`. You can see We.Finance configurations available. Click to open the configuration. In the configuration page, click **[!UICONTROL Edit]**. Provide valid Company, Username, Shared Secret (Password) and Data Center and click **[!UICONTROL Connect to Analytics]**. Once you get Connection successful dialog, click **[!UICONTROL OK]** on the configuration dialog. Configure the framework under the Analytics configuration as described in the [Configuring Analytics and Reports](../../forms/using/configure-analytics-forms-documents.md).
 
-1. Navigate to http://&lt;*host*&gt;:&lt;*port*&gt;/system/console/configMgr and do the following:
+1. Navigate to https://&lt;*host*&gt;:&lt;*port*&gt;/system/console/configMgr and do the following:
 
     * In the **[!UICONTROL Web Console Configuration]** page, find and click **[!UICONTROL AEM Forms Analytics Configuration]**.
     
     * In the **[!UICONTROL SiteCatalyst Framework]** field of the AEM Forms Analytics Configuration dialog, select we-finance(we-finance) or we-gov(we-gov).
     * Click **[!UICONTROL Save]** and let the page refresh.
 
-1. Navigate to forms manager at http://&lt;host&gt;:&lt;port&gt;/aem/forms and do the following:
+1. Navigate to forms manager at https://&lt;host&gt;:&lt;port&gt;/aem/forms and do the following:
 
     * Open the We.Finance folder, and select the form for which you want to see the report.
     * Click Enable Analytics in the Actions Toolbar. After you have enabled analytics for the form, click Analytics Report. You can see a blank report generated. After a blank report is generated, you have to provide seed data shipped with refsite package to generate analytics report for demo purpose.
@@ -359,18 +359,18 @@ To experience the integration in the reference site, do the following to configu
    Note**: If the AEM instance is running on JBoss, which is started as a service from Turnkey installation, add the `-Dabtesting.enabled=true` parameter in the following entry in the `jboss\bin\standalone.conf.bat` file, :  
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`   
 
-1. Access http://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html.
+1. Access https://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html.
 
 1. In the **[!UICONTROL Adobe Target]** section, click **[!UICONTROL Show Configurations]**. You can see the We.Finance Target Configuration available. Click to open the configuration. In the configuration page, click **[!UICONTROL Edit]**. The **[!UICONTROL Edit Component]** dialog for the configuration opens.
 
 1. Specify your Client Code, Email and Password associated with your Target account. Select API type as **[!UICONTROL REST]**.
 1. Click **[!UICONTROL Connect to Adobe target]**. Once the Target account is configured successfully, click **[!UICONTROL OK]**. You can see the packaged configuration has a Target Framework.
 
-1. Go to http://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
+1. Go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
 
 1. Click **[!UICONTROL AEM Forms Target Configuration]**.
 1. Select a Target framework.
-1. In the **[!UICONTROL Target URLs]** field, specify the URL to AEM Forms. For example: http://&lt;*hostname*&gt;:&lt;*port*&gt;.
+1. In the **[!UICONTROL Target URLs]** field, specify the URL to AEM Forms. For example: https://&lt;*hostname*&gt;:&lt;*port*&gt;.
 
 1. Click **[!UICONTROL Save]**.
 

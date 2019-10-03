@@ -139,7 +139,7 @@ String myParam = req.getParameter("myParam");
 
 The resulting URL used would look something like this:
 
-`http://www.mydomain.com/bin/myApp/myServlet.json?myParam=myValue`
+`https://www.mydomain.com/bin/myApp/myServlet.json?myParam=myValue`
 
 There are a few points to be considered with this approach:
 
@@ -167,7 +167,7 @@ Resource myPage = req.getResource();
 
 The resulting URL used would look something like this:
 
-`http://www.mydomain.com/content/my-brand/my-page.myRenderer.json`
+`https://www.mydomain.com/content/my-brand/my-page.myRenderer.json`
 
 The benefits to this approach are:
 
@@ -239,7 +239,7 @@ While this is the approach that is documented in the official AEM and Sling docu
 
 Here is an example of how this issue occurs:
 
-1. A user visits your website and requests `http://www.mydomain.com/my-page.html`
+1. A user visits your website and requests `https://www.mydomain.com/my-page.html`
 1. The dispatcher forwards this request to the publish server.
 1. Using `/etc/map`, the publish server resolves this request to `/content/my-brand/my-page` and renders the page.
 
@@ -315,8 +315,8 @@ For example, if a site were to offer a printer-friendly version of a page, a sea
 
 Examples:
 
-* http://www.mydomain.com/my-brand/my-page.html
-* http://www.mydomain.com/my-brand/my-page.print.html
+* https://www.mydomain.com/my-brand/my-page.html
+* https://www.mydomain.com/my-brand/my-page.print.html
 
 Both would apply the following tag to the head of the page:
 
@@ -393,13 +393,13 @@ For more information, please see the following additional resources:
 * [Resource Mapping](../../sites/deploying/using/resource-mapping.md)
 * [https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url](https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url)
 * [https://moz.com/blog/15-seo-best-practices-for-structuring-urls](https://moz.com/blog/15-seo-best-practices-for-structuring-urls)
-* [http://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/](http://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/)
+* [https://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/](https://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/)
 * [https://sling.apache.org/documentation/the-sling-engine/servlets.html](https://sling.apache.org/documentation/the-sling-engine/servlets.html)
-* [http://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html](http://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
-* [http://httpd.apache.org/docs/current/mod/mod_rewrite.html](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
+* [https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+* [https://httpd.apache.org/docs/current/mod/mod_rewrite.html](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
 * [https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps](https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps)
-* [http://www.robotstxt.org/robotstxt.html](http://www.robotstxt.org/robotstxt.html)
-* [http://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](http://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
+* [https://www.robotstxt.org/robotstxt.html](https://www.robotstxt.org/robotstxt.html)
+* [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
 

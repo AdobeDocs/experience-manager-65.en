@@ -17,7 +17,7 @@ docset: aem65
 
 ## Overview {#overview}
 
-This document describes how to set up an AEM project based on [Apache Maven](http://maven.apache.org/).
+This document describes how to set up an AEM project based on [Apache Maven](https://maven.apache.org/).
 
 Apache Maven is an open source tool for managing software projects by automating builds and providing quality project information. It is the recommended build management tool for AEM projects.
 
@@ -168,7 +168,7 @@ public class ComponentWhichHasAEMInterfaceInjected implements TitleTrimmer {
 }
 ```
 
-To unit test either of these methods, a developer would use a mocking framework such as [JMockit](http://jmockit.org/), [Mockito](http://mockito.org/), [JMock](http://www.jmock.org/), or [Easymock](http://easymock.org/) to create a mock object for the AEM API referenced. These samples use JMockit, but for this particular use case, the difference between these frameworks is largely syntatical.
+To unit test either of these methods, a developer would use a mocking framework such as [JMockit](https://jmockit.org/), [Mockito](https://mockito.org/), [JMock](https://www.jmock.org/), or [Easymock](https://easymock.org/) to create a mock object for the AEM API referenced. These samples use JMockit, but for this particular use case, the difference between these frameworks is largely syntatical.
 
 ```java
 @RunWith(JMockit.class)
@@ -480,7 +480,7 @@ Below dependencies need to be added to the `content` modules's POM.
 
 #### Compiling JSPs as part of the Maven Compile Phase {#compiling-jsps-as-part-of-the-maven-compile-phase}
 
-To compile JSPs in Maven's `compile` phase, we use Apache Sling's [Maven JspC Plugin](http://sling.apache.org/documentation/development/jspc.html) as shown below:
+To compile JSPs in Maven's `compile` phase, we use Apache Sling's [Maven JspC Plugin](https://sling.apache.org/documentation/development/jspc.html) as shown below:
 
 * we set up an execution for the `jspc` goal (which by default binds to the `compile` phase, so we don't need to specify the phase explicitly)
 
@@ -584,7 +584,7 @@ When working with Source Configuration Management (SCM), you want to make sure t
 
 >[!NOTE]
 >
->This description does not cover how to configure Maven to work with your SCM, which is described exhaustively in the [Maven POM reference](http://maven.apache.org/pom.html#SCM) and the [Maven SCM Plugin's documentation](http://maven.apache.org/scm/).
+>This description does not cover how to configure Maven to work with your SCM, which is described exhaustively in the [Maven POM reference](https://maven.apache.org/pom.html#SCM) and the [Maven SCM Plugin's documentation](https://maven.apache.org/scm/).
 
 #### Patterns to Exclude from SCM {#patterns-to-exclude-from-scm}
 
@@ -653,7 +653,7 @@ As the . `gitignore` file should not go into the repository either, the . `vltig
 
 If your build process is part of a larger development lifecycle management setup, such as a continous integration process, you often need to deploy to other machines than just the developer's local instance.
 
-For such scenarios, you can easily add new [Maven Build Profiles](http://maven.apache.org/guides/introduction/introduction-to-profiles.html) to the project's POM.
+For such scenarios, you can easily add new [Maven Build Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) to the project's POM.
 
 The example below adds a profile `integrationServer`, which redefines the host names and ports for the author and publish instances. You can deploy to these servers by running maven from the project root as shown below.
 

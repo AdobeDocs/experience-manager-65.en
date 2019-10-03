@@ -422,7 +422,7 @@ Options for customizing state styles vary for different components.
    <td><p>Advanced</p> </td> 
    <td><p>Lets you add:</p> 
     <ul> 
-     <li>Properties for <code>::before</code> and <code>::after</code> pseudo elements to add content after or before default content in the selector, and style it.<br /> See <a href="http://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS Pseudo-elements</a>.</li> 
+     <li>Properties for <code>::before</code> and <code>::after</code> pseudo elements to add content after or before default content in the selector, and style it.<br /> See <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS Pseudo-elements</a>.</li> 
      <li>Custom CSS code inline to a component and write custom selectors. </li> 
     </ul> <p>When you add a custom CSS code, it overrides the customization you added using the options in the sidebar. </p> </td> 
   </tr> 
@@ -517,7 +517,7 @@ Perform the following steps to configure a theme to use the TypeKit configuratio
 
 You can use the theme configuration service to add more fonts to the theme editor. Perform the following steps to add fonts:
 
-1. Log in to AEM Web Console with administrative privileges. URL for the AEM Web Console is http://[server]:[port]/system/console/configMgr.
+1. Log in to AEM Web Console with administrative privileges. URL for the AEM Web Console is https://[server]:[port]/system/console/configMgr.
 1. Open **Adaptive Form Theme Configuration Service**. 
 
    ![](assets/theme-config.png)
@@ -575,11 +575,11 @@ To apply a theme to an interactive communication:
 
 A theme styles different components of a form. You can use the `themeOverride` property to dynamically change theme of a form. A typical URL of a form is:
 
-`http://<server>:<port>/content/forms/af/test.html`
+`https://<server>:<port>/content/forms/af/test.html`
 
 You can use the themeOverride parameter to apply a theme on the runtime.
 
-`http://<server>:<port>/content/forms/af/test.html?themeOverride=/content/dam/formsanddocuments-themes/simpleEnrollmentTheme`
+`https://<server>:<port>/content/forms/af/test.html?themeOverride=/content/dam/formsanddocuments-themes/simpleEnrollmentTheme`
 
 The `themeOverride` option lets you provide a path to a theme. It changes the theme of the form and refreshes the form with updated styles.
 

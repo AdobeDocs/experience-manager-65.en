@@ -99,8 +99,8 @@ For details around configuring a datastore, see [Configuring node stores and dat
 
 Adobe recommends that you turn off automatic agent management because it does not support binary-less replication and can cause confusion when setting up a new offloading topology. Moreover, it does not automatically support the forward replication flow required by binary-less replication.
 
-1. Open Configuration Manager from the URL *http://localhost:4502/system/console/configMgr*. 
-1. Open the configuration for OffloadingAgentManager (*http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager*).
+1. Open Configuration Manager from the URL *https://localhost:4502/system/console/configMgr*. 
+1. Open the configuration for OffloadingAgentManager (*https://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager*).
 1. Disable automatic agent management.
 
 ### Using forward replication {#using-forward-replication}
@@ -109,7 +109,7 @@ By default, offloading transport uses reverse replication to pull back the offlo
 
 1. If you are migrating from the default configuration using reverse replication, disable or delete all agents named " `offloading_outbox`" and " `offloading_reverse_*`" on master and worker, where &#42; represents the Sling id of the target instance.
 1. On each worker, create new forward replication agent pointing to the master. The procedure is the same as creating forward agents from master to worker. See [Creating Replication Agents For Offloading](/sites/deploying/using/offloading.md#creating-replication-agents-for-offloading) for instructions around setting up offloading replication agents.
-1. Open configuration for OffloadingDefaultTransporter (*http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter*).
+1. Open configuration for OffloadingDefaultTransporter (*https://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter*).
 1. Change value of the property `default.transport.agent-to-master.prefix` from *offloading_reverse* to *offloading*.
 
 ### Using shared datastore and binary-less replication between author and workers  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
@@ -120,7 +120,7 @@ The use of binary-less replication is recommendend to reduce the transport overh
 
 By default, offloading creates a content package that contains the offloading job and job payload (the original asset), and transports this single offloading package using a single replication request. Creating these offloading packages is counter productive when using binary-less replication, because binaries are serialized into the package again when creating the package. The use of these transport packages can be turned off, which causes the offloading job and payload be transported in multiple replication requests, one for each payload entry. This way, the benefit of binary-less replication can be utilized.
 
-1. Open the component configuration of *OffloadingDefaultTransporter* component at [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
+1. Open the component configuration of *OffloadingDefaultTransporter* component at [https://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](https://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
 1. Disable the property *Replication Package (default.transport.contentpackage)*.
 
 ### Disabling the transport of workflow model {#disabling-the-transport-of-workflow-model}
@@ -131,7 +131,7 @@ If the workflow model is disabled from the job payload, ensure that you distribu
 
 To disable the transport of the workflow model, modify the DAM Update Asset Offloading workflow.
 
-1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
+1. Open the workflow console from [https://localhost:4502/libs/cq/workflow/content/console.html](https://localhost:4502/libs/cq/workflow/content/console.html).
 1. Open the Models tab.
 1. Open the DAM Update Asset Offloading workflow model.
 1. Open step properties for the DAM Workflow Offloading step.
@@ -142,7 +142,7 @@ To disable the transport of the workflow model, modify the DAM Update Asset Offl
 
 Workflow offloading is implemented using an external workflow on the master, that polls for the completion of the offloaded workflow on the worker. The default polling interval for the external workflow processes is five seconds. Adobe recommends that you increase the polling interval of the Assets offloading step to at least 15 seconds to reduce the offloading overhead on the master.
 
-1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).  
+1. Open the workflow console from [https://localhost:4502/libs/cq/workflow/content/console.html](https://localhost:4502/libs/cq/workflow/content/console.html).  
 
 1. Open the Models tab.
 1. Open the DAM Update Asset Offloading workflow model.

@@ -606,7 +606,7 @@ Presently, to customize the metrics to track, nodes are created in the repositor
 The forum topic is presently the only example of this customization:
 
 * On the primary publisher, sign in with administrative privileges.
-* Navigate to [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md). For example, [http://localhost:4503/crx/de](http://localhost:4503/crx/de).
+* Navigate to [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md). For example, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * Under the jcr:content node of the language root (for example `/content/sites/engage/en/jcr:content),`navigate to the component configured for Analytics reporting.  
   For example, **`analytics/reportConfigs/social_forum_components_hbs_topic`**

@@ -401,7 +401,7 @@ The table below includes an additional column named "Configuration Type" to expl
     </ol> </td> 
    <td><p>In order to align to the latest model, you need to run the script located at:</p> 
     <ul> 
-     <li><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -412,7 +412,7 @@ The table below includes an additional column named "Configuration Type" to expl
    <td><p>The OOTB viewer presets will only be available in the new location, while the custom viewer preset will still be under <code>/etc</code> until a modification is incurred.</p> <p>After it has been modified, it will be saved in the new location via Lazy Migration. The embed image server will look at both the legacy path and the new path upon receiving a request. Therefore, there is no need to change their embed code or URL.</p> </td> 
    <td><p>The out of the box viewer preset will only available in the new location. For the custom viewer preset, you need to run the migration script at this location:</p> 
     <ul> 
-     <li><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
     </ul> <p>Similar to the backward compatibility case, you don't have to adjust the copyURL/embed code to point to <code>/conf</code>. The existing request to <code>/etc</code> will be re-routed under the hood to the correct content from <code>/conf</code>.</p> </td> 
   </tr> 
   <tr> 
@@ -423,7 +423,7 @@ The table below includes an additional column named "Configuration Type" to expl
    <td>The macro under <code>/etc</code> is still valid. If modify it, the modified node will be moved to the new location under <code>/conf</code> via a Lazy Migration task.</td> 
    <td><p>You need to run the migration script at this location:</p> 
     <ul> 
-     <li><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 
@@ -442,7 +442,7 @@ The table below includes an additional column named "Configuration Type" to expl
    <td><p>The custom video profile will be kept as is until you modify it.</p> <p>Then, it will be moved to the new location via a Lazy Migration task. This is similar to the out of the box video preset on encoding look-up. The encoding process has a built-in path translator to look into old location first and then the new location for video profile.</p> </td> 
    <td><p>In order to align to the latest model, you can run the migration script under:</p> 
     <ul> 
-     <li><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 
@@ -457,7 +457,7 @@ The table below includes an additional column named "Configuration Type" to expl
     </ol> </td> 
    <td><p>You need to run the migration script in order to align to the latest model. You can find the script at this location:<br /> </p> 
     <ul> 
-     <li><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -470,7 +470,7 @@ The table below includes an additional column named "Configuration Type" to expl
      <li>Update an existing config via the old cloud config UI.</li> 
      <li>Create a new cloud config via the new touch UI. This will have higher precedence than the old one.</li> 
     </ol> </td> 
-   <td><p>You can run a migration script to align with the latest model. The script can be found at this location:<br /> </p> <p><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p> </p> <p> </p> </td> 
+   <td><p>You can run a migration script to align with the latest model. The script can be found at this location:<br /> </p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p> </p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td>AEM Assets</td> 
@@ -478,7 +478,7 @@ The table below includes an additional column named "Configuration Type" to expl
    <td><code>/libs/settings/dam/dm/analytics</code></td> 
    <td>only global</td> 
    <td>No action required.</td> 
-   <td><p>You can run a migration script to align to the latest mode. The script can be found at this location:<br /> </p> <p><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
+   <td><p>You can run a migration script to align to the latest mode. The script can be found at this location:<br /> </p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
   </tr> 
   <tr> 
    <td>All</td> 

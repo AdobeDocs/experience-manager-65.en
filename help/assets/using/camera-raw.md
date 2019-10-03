@@ -15,7 +15,7 @@ docset: aem65
 
 # Camera Raw Support{#camera-raw-support}
 
-The Camera Raw package enables support for various raw file formats, such as .cr2, .nef, .raf, and so on. The Camera Raw functionality is supported in AEM to render your assets in JPEG format. The supported pacakge is available at [http://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html](http://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html).
+The Camera Raw package enables support for various raw file formats, such as .cr2, .nef, .raf, and so on. The Camera Raw functionality is supported in AEM to render your assets in JPEG format. The supported pacakge is available at [https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html](https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html).
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ The Camera Raw package enables support for various raw file formats, such as .cr
 To enable Camera Raw support in Adobe Experience Manager (AEM) Assets:
 
 1. Download the Camera Raw package version [1.3.16](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
-1. Access `http://[AEM server]:[Port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
+1. Access `https://[AEM server]:[Port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
 1. Open the **[!UICONTROL Process Thumbnails]** step.  
 
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:

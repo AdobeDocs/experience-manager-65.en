@@ -107,7 +107,7 @@ The following Java example deploys a component that is based on a JAR file named
           
              //Set connection properties required to invoke AEM Forms                                 
              Properties connectionProps = new Properties(); 
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://[server]:[port]"); 
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
@@ -206,7 +206,7 @@ The following Java code example sets the Run-As Invoker execution context to an 
      try{ 
          //Set connection properties required to invoke AEM Forms 
          Properties connectionProps = new Properties(); 
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://[server]:[port]"); 
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue"); 
@@ -304,7 +304,7 @@ The following Java code example disables security from the example EncryptDocume
      try{ 
          //Set connection properties required to invoke AEM Forms                                 
          Properties connectionProps = new Properties(); 
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://[server]:[port]"); 
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
@@ -376,7 +376,7 @@ The following Java code example starts a service named *SendEmailService*.
          try{ 
              //Set connection properties required to invoke AEM Forms      
              Properties ConnectionProps = new Properties(); 
-             ConnectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "http://[server]:[port]"); 
+             ConnectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]"); 
              ConnectionProps.setProperty("DSC_TRANSPORT_PROTOCOL","SOAP");           
              ConnectionProps.setProperty("DSC_SERVER_TYPE", "JBoss"); 
              ConnectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator"); 
@@ -471,7 +471,7 @@ The following Java example modifies configuration values that belong to SendEmai
          try{ 
              //Set connection properties required to invoke AEM Forms     
              Properties ConnectionProps = new Properties(); 
-             ConnectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "http://[server]:[port]"); 
+             ConnectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]"); 
              ConnectionProps.setProperty("DSC_TRANSPORT_PROTOCOL","SOAP");           
              ConnectionProps.setProperty("DSC_SERVER_TYPE", "JBoss"); 
              ConnectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator"); 
@@ -574,7 +574,7 @@ The following Java code example removes a component by using the Java API.
          try{ 
                //Set connection properties required to invoke AEM Forms                                                                                                                        
                Properties connectionProps = new Properties(); 
-               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://[server]:[port]"); 
+               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 

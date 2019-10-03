@@ -79,7 +79,7 @@ To quickly setup a slinglog file :
 
 1. access the **Adobe Experience Manager Web Console Log Support**, for example
 
-    * http://localhost:4502/system/console/slinglog
+    * https://localhost:4502/system/console/slinglog
 
 1. select **Add new logger**
 
@@ -205,7 +205,7 @@ The screen shots of repository data come from setting up scoring and badging for
 
 ```shell
 
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" http://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
 
 ```
 

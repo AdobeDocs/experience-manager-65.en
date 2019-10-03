@@ -205,7 +205,7 @@ The following code samples show implementation details for the Data Dictionary.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
-<xs:schema xmlns="DCT" targetNamespace="DCT" xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+<xs:schema xmlns="DCT" targetNamespace="DCT" xmlns:xs="https://www.w3.org/2001/XMLSchema" 
   elementFormDefault="qualified" attributeFormDefault="unqualified"> 
   <xs:element name="Company"> 
     <xs:complexType> 
@@ -514,7 +514,7 @@ The following example shows a simple schema.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema"> 
   <xs:element name='age' type='integer'/> 
   <xs:element name='price' type='decimal'/> 
 </xs:schema>

@@ -74,7 +74,7 @@ This section contains information on installing the demo package.
 
 ### From package share {#from-package-share}
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/crx/packageshare/*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/crx/packageshare/*
 
    Or in AEM, click on Deployment and navigate to Package Share Icon.
 
@@ -89,12 +89,12 @@ This section contains information on installing the demo package.
    ![we gov forms package](assets/wegov_forms_package.jpg)
 
 1. Allow the installation process to complete.
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html?wcmmode=disabled* to ensure the installation was successful.
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html?wcmmode=disabled* to ensure the installation was successful.
 
 ### From a local ZIP file {#from-a-local-zip-file}
 
 1. Download and locate the **we-gov-forms.pkg.all-&lt;version&gt;.zip** file.
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/crx/packmgr/index.jsp*.
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/crx/packmgr/index.jsp*.
 1. Select the “Upload Package” option.
 
    ![Upload Package Option](assets/upload_package.jpg)
@@ -106,13 +106,13 @@ This section contains information on installing the demo package.
    ![Install WeGov Forms package](assets/wegov_forms_package-1.jpg)
 
 1. Allow the installation process to complete.
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html?wcmmode=disabled* to ensure the installation was successful.
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html?wcmmode=disabled* to ensure the installation was successful.
 
 ### Installing new package versions {#installing-new-package-versions}
 
 To install new package version, follow the steps defined in 4.1 and 4.2. Installing a newer package version while another older package is already installed is possible, but it is recommended to uninstall the older package version first. To do so, follow the steps below.
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/crx/packmgr/index.jsp*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/crx/packmgr/index.jsp*
 1. Locate the older **we-gov-forms.pkg.all-&lt;version&gt;.zip** file.
 1. Select the “More” option.
 1. From the dropdown, select the “Uninstall” option.
@@ -127,7 +127,7 @@ This section contains details and instructions on the post-deployment configurat
 
 ### Fictional user configuration {#fictional-user-configuration}
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/libs/granite/security/content/groupadmin.html*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/libs/granite/security/content/groupadmin.html*
 1. Search for “**workflow**”.
 1. Select the “**workflow-users**” group and click on “Properties”.
 1. Navigate to the “Members” tab.
@@ -147,7 +147,7 @@ This section contains details and instructions on the post-deployment configurat
 
    [https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/notification.html](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/notification.html)
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
 1. Locate and click on the **Day CQ Mail Service **service to configure.
 
    ![Configure Day CQ Mail Service](assets/day_cq_mail_service.jpg)
@@ -173,7 +173,7 @@ This section contains details on configuring SSL on the AEM instance in order to
 
 **Notes:**
 
-1. Navigate to http://&lt;aemserver&gt;:&lt;port&gt;/aem/inbox where you will be able to complete the process explained in the reference documentation link above.
+1. Navigate to https://&lt;aemserver&gt;:&lt;port&gt;/aem/inbox where you will be able to complete the process explained in the reference documentation link above.
 1. The **we-gov-forms.pkg.all-&lt;version&gt;.zip** package includes a sample SSL key and certificate that can be accessed by extracting the **we-gov-forms.pkg.all-&lt;version&gt;.zip/ssl** folder that is part of the package.
 
 1. SSL certificate and key details:
@@ -222,7 +222,7 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
 
 1. Navigate to:
 
-   http://&lt;aemserver&gt;:&lt;port&gt;/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://&lt;aemserver&gt;:&lt;port&gt;/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
     1. Ensure that you are accessing the server using the same redirect URL as configured in the MS Dynamics application registration.
 
@@ -285,7 +285,7 @@ Once the cloud configuration is complete, you may want to test the form data mod
 
 1. Navigate to
 
-   *http://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
+   *https://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
 1. Select the “We.gov Microsoft Dynamics CRM FDM” and select “Properties”.
 
@@ -324,7 +324,7 @@ This section contains details and instructions on the Adobe Analytics Cloud Conf
 
 This package comes pre-configured to connect to Adobe Analytics. The steps below are provided to allow this configuration to be updated.
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/libs/cq/core/content/tools/cloudservices.html*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/libs/cq/core/content/tools/cloudservices.html*
 1. Locate the Adobe Analytics section, and select “Show Configurations” link.
 1. Select the “We.Gov Adobe Analytics (Analytics Configuration)” configuration.
 
@@ -340,7 +340,7 @@ This package comes pre-configured to connect to Adobe Analytics. The steps below
 
 #### View Adobe Analytics sites reporting {#view-adobe-analytics-sites-reporting}
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content*
 1. Select the “AEM Forms We.Gov Site” to view the site pages.
 1. Select one of the site page (e.g. Home), and choose “Analytics & Recommendations”.
 
@@ -367,7 +367,7 @@ This package comes pre-configured to connect to Adobe Analytics. The steps below
 
 1. Navigate to
 
-   *http://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
+   *https://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
 1. Select the “Enrollment Application For Health Benefits” adaptive form and select the “Analytics Report” option.
 
@@ -404,7 +404,7 @@ This section includes instructions on customization of the demo.
 
 This demo package includes an OSGI service configuration file which controls the behavior of the WCM Filter service on the target Author server. This configuration makes the server operate in a disabled author mode (equivalent to ?wcmmode=disabled) in order to allow demonstration. To update this configuration and to enable authoring, perform the following steps:
 
-1. Navigate to *http://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
 1. Locate and click on the **Day CQ WCM Filter **Service service to configure.
 
    ![Day CQ WCM Filter](assets/day_cq_wcm_filter.jpg)
@@ -416,17 +416,17 @@ This demo package includes an OSGI service configuration file which controls the
 
 Editable Templates can be found at the following location:
 
-*http://&lt;aemserver&gt;:&lt;port&gt;/libs/wcm/core/content/sites/templates.html/conf/we-gov*
+*https://&lt;aemserver&gt;:&lt;port&gt;/libs/wcm/core/content/sites/templates.html/conf/we-gov*
 
 These templates include the AEM Site, Adaptive Form, and Interactive Communications templates, created and assembled with components that can be found at:
 
-*http://&lt;aemserver&gt;:&lt;port&gt;/crx/de/index.jsp#/apps/we-gov/components*
+*https://&lt;aemserver&gt;:&lt;port&gt;/crx/de/index.jsp#/apps/we-gov/components*
 
 #### Style system {#customizetemplates}
 
 This site also features client-libraries, one of which imports Bootstrap 4 ( [https://getbootstrap.com/](https://getbootstrap.com/) ). This client library is available at
 
-*http://&lt;aemserver&gt;:&lt;port&gt;/crx/de/index.jsp#/apps/we-gov/clientlibs/clientlib-base/css/bootstrap*
+*https://&lt;aemserver&gt;:&lt;port&gt;/crx/de/index.jsp#/apps/we-gov/clientlibs/clientlib-base/css/bootstrap*
 
 The editable templates included in this package also come preconfigured with template/page policies that use the Bootstrap 4 CSS classes for pagination, styling, etc. Not all classes have been added to the template policies, but any class that is supported by Bootstrap 4 can be added to the policies. See the getting started page for a list of available classes:
 
@@ -440,7 +440,7 @@ Templates included in this package also support the Style System:
 
 Project DAM Assets also include We.Gov logos and images. These assets are available at:
 
-*http://&lt;aemserver&gt;:&lt;port&gt;/assets.html/content/dam/we-gov*
+*https://&lt;aemserver&gt;:&lt;port&gt;/assets.html/content/dam/we-gov*
 
 When editing the Page and Form Templates, one may choose to update brand logos by editing the Navigation and Footer components. These components offer a configurable brand and logo dialog that can be used to update logos:
 
@@ -452,7 +452,7 @@ See Editing Page Content for more information:
 
 ### Sites pages customization {#sites-pages-customization}
 
-All site pages are available from: *http://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content/we-gov*
+All site pages are available from: *https://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content/we-gov*
 
 These site pages also make use of the AEM Grid package to control the layout of a few components.
 
@@ -468,7 +468,7 @@ You can also refer to [Templates customization style system](../../forms/using/f
 
 All adaptive forms are available from:
 
-*http://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
+*https://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
 These forms can be customized to fit certain use cases. Note that certain fields, and submission logic should not be modified to ensure that the form continues to function correctly. This includes:
 
@@ -487,7 +487,7 @@ Adaptive forms can also be styled using the Style Editor or Theme editor:
 
 ### Workflow customization {#workflow-customization}
 
-The Enrollment Adaptive Form submit to an OSGI workflow for processing. This workflow can be found at* http://&lt;aemserver&gt;:&lt;port&gt;/conf/we-gov/settings/models/we-gov-process.html*.
+The Enrollment Adaptive Form submit to an OSGI workflow for processing. This workflow can be found at* https://&lt;aemserver&gt;:&lt;port&gt;/conf/we-gov/settings/models/we-gov-process.html*.
 
 Due to certain limitations, this workflow contains several scripts and custom OSGI workflow process steps. These workflow steps were created as generic steps and have not been created with configuration dialogues. At this time, configuration of the workflow steps relies on process arguments.
 

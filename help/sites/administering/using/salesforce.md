@@ -52,15 +52,15 @@ To configure AEM to integrate with Salesforce:
 
    >[!NOTE]
    >
-   >The new configuration redirects to a new page: **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. This is the exact same value that you need to specify in the Callback URL while createing the remote access application in Salesforce. These values must match.
+   >The new configuration redirects to a new page: **https://localhost:4502/etc/cloudservices/salesforce/developer.html**. This is the exact same value that you need to specify in the Callback URL while createing the remote access application in Salesforce. These values must match.
 
-1. Log in to your salesforce account (or if you do not have one, create one at [http://developer.force.com](http://developer.force.com).)
+1. Log in to your salesforce account (or if you do not have one, create one at [https://developer.force.com](https://developer.force.com).)
 1. In Salesforce, navigate to **Create** &gt; **Apps **to get to **Connected Apps** (in former versions of salesforce, the workflow was **Deploy** &gt; **Remote Access**). 
 1. Click **New** to connect AEM with Salesforce. 
 
    ![](assets/chlimage_1-71.png)
 
-1. Enter the **Connected App Name**, **API Name**, and **Contact Email**. Select the **Enable OAuth Settings** check box and enter the **Callback URL** and add an OAuth scope (for example, full access). The callback URL looks similar to this: `http://localhost:4502/etc/cloudservices/salesforce/developer.html`
+1. Enter the **Connected App Name**, **API Name**, and **Contact Email**. Select the **Enable OAuth Settings** check box and enter the **Callback URL** and add an OAuth scope (for example, full access). The callback URL looks similar to this: `https://localhost:4502/etc/cloudservices/salesforce/developer.html`
 
    Change the server name/port number and page name to match your configuration.
 
@@ -101,7 +101,7 @@ If you want to export an AEM user as a salesforce lead, you need to configure th
 
 To export AEM users as Salesforce leads:
 
-1. Navigate to the Salesforce workflow at `http://localhost:4502/workflow` by right-clicking the workflow** Salesforce.com Export** and clicking **Start**.
+1. Navigate to the Salesforce workflow at `https://localhost:4502/workflow` by right-clicking the workflow** Salesforce.com Export** and clicking **Start**.
 
    ![](assets/chlimage_1-76.png)
 
@@ -125,7 +125,7 @@ You may need to configure the Salesforce.com Export workflow to match it to the 
 
 To configure the Salesforce.com export workflow:
 
-1. Navigate to `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
+1. Navigate to `https://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
 
    ![](assets/chlimage_1-16.jpeg)
 
@@ -139,9 +139,9 @@ To configure the Salesforce.com export workflow:
 
 ### Mapping configuration between AEM user and Salesforce Lead {#mapping-configuration-between-aem-user-and-salesforce-lead}
 
-To view or edit the current mapping configuration between an AEM user and a Salesforce lead, open the Configuration Manager: `http://<hostname>:<port>/system/console/configMgr` and search for **Salesforce Lead Mapping Configuration**.
+To view or edit the current mapping configuration between an AEM user and a Salesforce lead, open the Configuration Manager: `https://<hostname>:<port>/system/console/configMgr` and search for **Salesforce Lead Mapping Configuration**.
 
-1. Open the Configuration Manager by clicking **Web Console** or going directly to `http://<hostname>:<port>/system/console/configMgr.`
+1. Open the Configuration Manager by clicking **Web Console** or going directly to `https://<hostname>:<port>/system/console/configMgr.`
 1. Search for **Salesforce Lead Mapping Configuration**.
 
    ![](assets/chlimage_1-80.png)
@@ -190,7 +190,7 @@ You need to map an AEM user with a Salesforce ID in order to load it in the clie
 
 You can load user data from Salesforce in the Client Context to use for personalization:
 
-1. Open the client context you want to extend by navigating there, for example, `http://localhost:4502/etc/clientcontext/default/content.html.`
+1. Open the client context you want to extend by navigating there, for example, `https://localhost:4502/etc/clientcontext/default/content.html.`
 
    ![](assets/chlimage_1-18.jpeg)
 
@@ -210,7 +210,7 @@ You can load user data from Salesforce in the Client Context to use for personal
 
 You can build a segment that uses data from the Salesforce Client Context Store. To do this:
 
-1. Navigate to segmentation in AEM either by going to **Tools** &gt; **Segmentation** or going to [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
+1. Navigate to segmentation in AEM either by going to **Tools** &gt; **Segmentation** or going to [https://localhost:4502/miscadmin#/etc/segmentation](https://localhost:4502/miscadmin#/etc/segmentation).
 1. Create or update a segment to include data from Salesforce. For more information, see [Segmentation](../../../sites/administering/using/campaign-segmentation.md).
 
 ## Searching Leads {#searching-leads}

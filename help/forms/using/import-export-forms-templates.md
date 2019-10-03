@@ -172,7 +172,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 You can use AEM package manger to export workflow applications. The procedure is as listed below:
 
-1. Open AEM Forms package manager. URL of package manager is http://&lt;server&gt;:&lt;port&gt;/crx/packmgr.
+1. Open AEM Forms package manager. URL of package manager is https://&lt;server&gt;:&lt;port&gt;/crx/packmgr.
 1. Click **[!UICONTROL Create Package]**. The **[!UICONTROL New Package]** dialog box appears.
 1. Specify name, version, and group for the package. Click **[!UICONTROL OK]**. 
 1. Click **[!UICONTROL Edit]**and open the **[!UICONTROL Filters]**tab. Click **[!UICONTROL Add Filter]**. Specify the path of the workflow application. For example, /etc/fd/dashboard/startpoints/homemortgage.
@@ -196,7 +196,7 @@ To create a folder, complete the following steps:
 
 ### Create a folder {#create-a-folder}
 
-1. Log in to the AEM Forms user interface at `http://<server>:<port>/aem/forms.html`.
+1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`.
 1. Navigate to the location under which you want to create a folder.
 1. Tap Create &gt; Folder.
 1. Enter the following details:

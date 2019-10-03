@@ -123,7 +123,7 @@ The advantages:
 
 >[!NOTE]
 >
->For additional information on the MongoDB architectural concepts described in this section, see [MongoDB Replication](http://docs.mongodb.org/manual/replication/).
+>For additional information on the MongoDB architectural concepts described in this section, see [MongoDB Replication](https://docs.mongodb.org/manual/replication/).
 
 ## Microkernels: which one to use {#microkernels-which-one-to-use}
 
@@ -181,7 +181,7 @@ A set of prerequisites and recommendations is available if you are considering a
 **Strong recommendations for MongoDB deployments:**
 
 * Consult the MongoDB for Adobe Experience Manager [article](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* Review the MongoDB production [checklist](http://docs.mongodb.org/manual/administration/production-checklist/);
+* Review the MongoDB production [checklist](https://docs.mongodb.org/manual/administration/production-checklist/);
 * Attend a certification class on MongoDB available online [here](https://university.mongodb.com/).
 
 >[!NOTE]
@@ -206,7 +206,7 @@ Below are a set of decisional matrices that can assist you in choosing the best 
 
 >[!NOTE]
 >
->MongoDB is third-party software and is not included in the AEM licensing package. For more information see the [MongoDB licensing policy](http://www.mongodb.org/about/licensing/) page.
+>MongoDB is third-party software and is not included in the AEM licensing package. For more information see the [MongoDB licensing policy](https://www.mongodb.org/about/licensing/) page.
 >
 >In order to get the most of your AEM deployment, Adobe recommends licensing the MongoDB Enterprise version in order to benefit from professional support.
 >

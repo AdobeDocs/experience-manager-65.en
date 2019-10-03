@@ -198,7 +198,7 @@ Below is the procedure that needs to be followed in order to create a setup with
 
 The service can also be configured via the Web Console, by:
 
-1. Going to the Web Console at: *http://serveraddress:serverport/system/console/configMgr*
+1. Going to the Web Console at: *https://serveraddress:serverport/system/console/configMgr*
 1. Looking for a service called **Apache Jackrabbit Oak Segment Tar Cold Standby Service** and double click it to edit the settings.
 1. Saving the settings, and restarting the instances so the new settings can take effect.
 
@@ -207,7 +207,7 @@ The service can also be configured via the Web Console, by:
 >You can check the role of an instance at any time by checking the presence of the **primary** or **standby** runmodes in the Sling Settings Web Console.  
 
 >
->This can be done by going to *http://localhost:4502/system/console/status-slingsettings* and checking the **"Run Modes"** line.
+>This can be done by going to *https://localhost:4502/system/console/status-slingsettings* and checking the **"Run Modes"** line.
 >
 
 ## First time synchronization {#first-time-synchronization}

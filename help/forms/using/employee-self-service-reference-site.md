@@ -55,11 +55,11 @@ The organization portal and questionnaire are responsive and mobile-friendly. Th
 
 The organization portal and the employee dashboard are AEM Sites pages. The dashboard lists several self-service options such as the Conflict of Interest questionnaire. The Apply button is linked to an adaptive form.
 
-The adaptive form uses rules to show-hide information based on the answer provided in the Questions tab. Also, the form uses the Scribble component for signing in the Declaration tab. Review the adaptive form at `http://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
+The adaptive form uses rules to show-hide information based on the answer provided in the Questions tab. Also, the form uses the Scribble component for signing in the Declaration tab. Review the adaptive form at `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
 
 **See it yourself**
 
-Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Click **[!UICONTROL Employee]** to access the dashboard and then click **[!UICONTROL Apply]** on Conflict of Interest questionnaire. Review and submit the questionnaire.
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Click **[!UICONTROL Employee]** to access the dashboard and then click **[!UICONTROL Apply]** on Conflict of Interest questionnaire. Review and submit the questionnaire.
 
 #### Gloria reviews and approves the Conflict of Interest questionnaire submission {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
 
@@ -75,13 +75,13 @@ Open task
 
 **How it works**
 
-The submit action in the Conflict of Interest questionnaire triggers a workflow that creates a task in Gloria's inbox for approval. Review the Forms Workflow at `http://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
+The submit action in the Conflict of Interest questionnaire triggers a workflow that creates a task in Gloria's inbox for approval. Review the Forms Workflow at `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
 
 ![Employee Self Service Reference Site](assets/employee_self_service_reference_site_new.png)
 
 **See it yourself**
 
-Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for Conflict of Interest questionnaire and approve it.
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for Conflict of Interest questionnaire and approve it.
 
 ## Corporate card application walkthrough {#corporate-card-application-walkthrough}
 
@@ -108,11 +108,11 @@ She clicks **[!UICONTROL Apply]** on the Corporate Card application. A single-pa
 The organization portal and the employee dashboard are AEM Sites pages. The dashboard lists several self-service options such as the corporate card application. The Apply button on the application is linked to an adaptive form.
 
 The adaptive form for corporate card application is a simple, one-page, responsive adaptive form. It uses basic adaptive form components such as text, telephone, numeric box, and numeric stepper. Review the adaptive form at:   
-`http://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`.
+`https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`.
 
 **See it yourself**
 
-Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Click **[!UICONTROL Employee]** to access the dashboard and then click **[!UICONTROL Apply]** on Corporate Card application. Fill in the details, and submit the application.
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Click **[!UICONTROL Employee]** to access the dashboard and then click **[!UICONTROL Apply]** on Corporate Card application. Fill in the details, and submit the application.
 
 ### Gloria reviews and approves the corporate card application {#gloria-reviews-and-approves-the-corporate-card-application}
 
@@ -128,13 +128,13 @@ Open task
 
 **How it works**
 
-The submission workflow in the Corporate Card application triggers a Forms workflow that creates a task in Gloria's inbox for approval. Review the Forms Workflow at `http://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
+The submission workflow in the Corporate Card application triggers a Forms workflow that creates a task in Gloria's inbox for approval. Review the Forms Workflow at `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
 
 ![](assets/corporate-card-workflow-model.png)
 
 **See it yourself**
 
-Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for Corporate Card application and approve it.
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for Corporate Card application and approve it.
 
 ## Expense report submission walkthrough {#expense-report-submission-walkthrough}
 
@@ -162,11 +162,11 @@ The organization portal and applications are responsive and mobile-friendly. The
 
 The organization portal and the employee dashboard are AEM Sites pages. The dashboard lists several self-service options such as the Expense Report application. The Apply button is linked to an adaptive form.
 
-The Report Name and Report Details tabs in the adaptive form are Panel components. The Report Details panel contains the Expense panel. It is a repeatable panel that allows adding multiple expenditures in the report. Review the adaptive form and its configurations at `http://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
+The Report Name and Report Details tabs in the adaptive form are Panel components. The Report Details panel contains the Expense panel. It is a repeatable panel that allows adding multiple expenditures in the report. Review the adaptive form and its configurations at `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
 
 **See it yourself**
 
-Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Click **[!UICONTROL Employee]** to access the dashboard and then click **[!UICONTROL Apply]** on Expense Report application. Fill in the details and submit the application.
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Click **[!UICONTROL Employee]** to access the dashboard and then click **[!UICONTROL Apply]** on Expense Report application. Fill in the details and submit the application.
 
 ### Gloria reviews and approves the expense report {#gloria-reviews-and-approves-the-expense-report}
 
@@ -182,13 +182,13 @@ Open task
 
 **How it works**
 
-The submission workflow in the Expense Report application triggers a Forms workflow that creates a task in Gloria's inbox for approval. Review the Forms Workflow at `http://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
+The submission workflow in the Expense Report application triggers a Forms workflow that creates a task in Gloria's inbox for approval. Review the Forms Workflow at `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
 
 ![](assets/corporate-card-expense-report-workflow-model.png)
 
 **See it yourself**
 
-Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for Expense Report application and approve it.
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for Expense Report application and approve it.
 
 ## Leave application walkthrough {#leave-application-walkthrough}
 
@@ -220,13 +220,13 @@ The adaptive form for leave application is based on the Employee Leaves Form Dat
 
 You can review the adaptive form and the Form Data Model at the following locations:
 
-`http://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/leave-application.html`
+`https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/leave-application.html`
 
-`http://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/db`
+`https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/db`
 
 **See it yourself**
 
-Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Click **[!UICONTROL Employee]** to access the dashboard and then click **[!UICONTROL Apply]** on Leave Application. Fill in the details and submit the application.
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` and log in using `srose/srose` as username/password for Sarah. Click **[!UICONTROL Employee]** to access the dashboard and then click **[!UICONTROL Apply]** on Leave Application. Fill in the details and submit the application.
 
 #### Gloria reviews and approves the leave application {#gloria-reviews-and-approves-the-leave-application}
 
@@ -242,10 +242,10 @@ Open task
 
 **How it works**
 
-The submission workflow in the leave application triggers a Forms workflow that creates a task in Gloria's inbox for approval. Review the Forms Workflow at `http://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
+The submission workflow in the leave application triggers a Forms workflow that creates a task in Gloria's inbox for approval. Review the Forms Workflow at `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
 
 ![](assets/corporate-card-leave-application-workflow-model.png)
 
 **See it yourself**
 
-Go to `http://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for leave application and approve it. 
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for leave application and approve it. 

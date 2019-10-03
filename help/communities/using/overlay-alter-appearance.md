@@ -69,7 +69,7 @@ For the Start Path enter `/apps/social/commons`** **and select **Activate**.
 
 ### View Results {#view-results}
 
-If you login to the publish instance as an administrator, e.g., http://localhost:4503/crx/de as admin/admin, you can verify the overlaid components are there.
+If you login to the publish instance as an administrator, e.g., https://localhost:4503/crx/de as admin/admin, you can verify the overlaid components are there.
 
 If you logout and re-login as `aaron.mcdonald@mailinator.com/password` and refresh the page, you will observe that the posted comment no longer displays with an avatar, instead a simple 'xxx' is displayed.
 

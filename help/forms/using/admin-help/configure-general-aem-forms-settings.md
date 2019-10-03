@@ -52,7 +52,7 @@ If you do not specify a GDS root directory, the directory defaults to an applica
 
 ***Note**: Do not specify the same directory for the temp directory and the GDS directory.*
 
-For additional information about the GDS directory, see [Preparing to Install AEM forms (Single Server)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+For additional information about the GDS directory, see [Preparing to Install AEM forms (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 **Location of the Adobe Server Fonts directory** Type the path to the directory that contains the Adobe server fonts. These fonts are installed with AEM forms. The default location for these fonts is the [aem-forms root]/fonts directory. If this directory is not accessible, you can copy the fonts elsewhere and use this setting to specify the new location.
 

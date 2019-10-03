@@ -174,7 +174,7 @@ To add additional resources on which to filter :
 
 * on an author instance
 * sign in as administrator
-* open [Web Console](http://localhost:4502/system/console/configMgr)
+* open [Web Console](https://localhost:4502/system/console/configMgr)
 * locate `AEM Communities Moderation Dashboard Filters`
 * select the configuration to open in edit mode
 * enter the ResourceType of a component on which to filter
@@ -237,11 +237,11 @@ The [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-ex
 
 To install the sample for the Tags filter:
 
-1. Open the package manager on AEM Author ([http://[aem-author]:4502/crx/packmgr/index.jsp](http://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) instance and AEM Publish ([http://[aem-publish]:4503/crx/packmgr/index.jsp](http://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) instance.
+1. Open the package manager on AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) instance and AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) instance.
 1. Build the package `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` from Github code, and install and enable the same.
-1. Open the bundles console on AEM Author ( `http://[aem-author]:4502/system/console/bundles`) instance and AEM Publish ( `http://[aem-publish]:4503/system/console/bundles`) instance.
-1. Build the package ` [com](http://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` from Github, and install and enable the same.
-1. Go to **/apps/social/moderation/facets** node on AEM Author ([http://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](http://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) and AEM Publish ([http://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](http://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) instance.
+1. Open the bundles console on AEM Author ( `https://[aem-author]:4502/system/console/bundles`) instance and AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`) instance.
+1. Build the package ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` from Github, and install and enable the same.
+1. Go to **/apps/social/moderation/facets** node on AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) and AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) instance.
 1. Add a technical user **communities-utility-reader** with `jcr:read` permissions.
 
 To expose the custom filters on existing Community sites:

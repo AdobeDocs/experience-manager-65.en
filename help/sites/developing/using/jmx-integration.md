@@ -44,7 +44,7 @@ The [com.adobe.granite.jmx.annotation](/sites/developing/using/reference-materia
 Add annotations to the management interface to specify MBean metadata. The information appears in the JMX console for each implementation class that is deployed. The following annotations are available (for complete information, see the [com.adobe.granite.jmx.annotation JavaDocs](/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.md)):
 
 * **Description:** Provides a description of the MBean class or method. When used on the class declaration, the desctiption appears on the JMX Console page for the MBean. When used on a method, the desctiption appears as hover text for the corresponding attribute or operation.
-* **Impact:** The impact of a method. Valid parameter values are the fields defined by [javax.management.MBeanOperationInfo](http://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html). 
+* **Impact:** The impact of a method. Valid parameter values are the fields defined by [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html). 
 
 * **Name:** Specifies the name to display for an operation parameter. Use this annotation to override the actual name of the method parameter that is used in the interface.
 * **OpenTypeInfo:** Specifies the class to use for representing composite data or tabular data in the JMX Console. For use with Open MBeans
@@ -436,9 +436,9 @@ For your convenience, you can copy and paste the following XML code into your pr
 #### Example POM file {#example-pom-file}
 
 ```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" 
+  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.adobe.example.myapp</groupId>
   <artifactId>workflow-mbean</artifactId>

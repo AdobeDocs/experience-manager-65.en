@@ -62,7 +62,7 @@ A sample layout of the zip is as follows:
 * /img -&gt; all images and assets
 * /js -&gt; to add into the JS clientlib
 
-The layout is based on the HTML5 Boilerplate best practices layout. Read more at [http://html5boilerplate.com/](http://html5boilerplate.com/)
+The layout is based on the HTML5 Boilerplate best practices layout. Read more at [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ If an `<img>` tag with an absolute url src is attempted for component conversion
 
 `<div data-cq-component="image">`
 
-`<img src="http://cdn.printfriendly.com/pf-button.gif" alt="Print Friendly and PDF"/>`
+`<img src="https://cdn.printfriendly.com/pf-button.gif" alt="Print Friendly and PDF"/>`
 
 `</div>`
 
@@ -285,7 +285,7 @@ HTML tag to include graphical link component in the imported zip. Here href will
 
 ```xml
 <div id="cqcanvas">
-  <div data-cq-component="clickThroughGraphicalLink"><a href="http://www.adobe.com/go/wem"><img src="img/call-to-action-button.png" title="Click Here to Learn More" /></a></div>
+  <div data-cq-component="clickThroughGraphicalLink"><a href="https://www.adobe.com/go/wem"><img src="img/call-to-action-button.png" title="Click Here to Learn More" /></a></div>
 </div>
 ```
 
@@ -299,13 +299,13 @@ HTML tag to include graphical link component in the imported zip. Here href will
 >
 >To create a clickthroughgraphical link, you need to wrap an anchor tag and the image tag inside a div with `data-cq-component="clickthroughgraphicallink"` attribute.
 >
->eg. `<div data-cq-component="clickthroughlink"> <a href="http://myURLhere/"><img src="image source here"></a> </div>`
+>eg. `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
 >Other ways to associate an image with an anchor tag using CSS are not supported for example the following markup will not work:
 >
 >`<div data-cq-component="clickthroughgraphicallink">`
 >
->`<a class="hasBackground" href="http://myURLhere/"></a>`
+>`<a class="hasBackground" href="https://myURLhere/"></a>`
 >
 >`</div>`
 >
@@ -452,21 +452,21 @@ The path in the data-cq-component should be the resourceType of the component.
 
 Use of CSS selectors similar to following ones is not recommended for use with elements which are marked for component conversion on import.
 
-| E > F |an F element child of an E element | [Child combinator](http://www.w3.org/TR/css3-selectors/#child-combinators) |
+| E > F |an F element child of an E element | [Child combinator](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
-| E + F |an F element immediately preceded by an E element | [Adjacent sibling combinator](http://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
-| E ~ F |an F element preceded by an E element | [General sibling combinator](http://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:root |an E element, root of the document | [Structural pseudo-classes](http://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-child(n) |an E element, the n-th child of its parent | [Structural pseudo-classes](http://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-child(n) |an E element, the n-th child of its parent, counting from the last one | [Structural pseudo-classes](http://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-of-type(n) |an E element, the n-th sibling of its type | [Structural pseudo-classes](http://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-of-type(n) |an E element, the n-th sibling of its type, counting from the last one | [Structural pseudo-classes](http://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E + F |an F element immediately preceded by an E element | [Adjacent sibling combinator](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
+| E ~ F |an F element preceded by an E element | [General sibling combinator](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
+| E:root |an E element, root of the document | [Structural pseudo-classes](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child(n) |an E element, the n-th child of its parent | [Structural pseudo-classes](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child(n) |an E element, the n-th child of its parent, counting from the last one | [Structural pseudo-classes](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-of-type(n) |an E element, the n-th sibling of its type | [Structural pseudo-classes](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-of-type(n) |an E element, the n-th sibling of its type, counting from the last one | [Structural pseudo-classes](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
 This is due to the fact that additional html elements like &lt;div&gt; tag are added to the generated Html after the import.
 
 * Scripts relying on the structure similar to above also are not recommended for use with elements marked for conversion to AEM components.
 * Use of styles on the markup tags for component conversion like &lt;div data-cq-component=”&#42;”&gt; is not recommended.
-* The design layout should follow best practices from HTML5 Boilerplate. Read more on: [http://html5boilerplate.com/](http://html5boilerplate.com/).
+* The design layout should follow best practices from HTML5 Boilerplate. Read more on: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuring OSGI modules {#configuring-osgi-modules}
 

@@ -49,7 +49,7 @@ To install AEM with a Demandware Commerce integration configuration (using the d
 
 The server connection between AEM and the Demandware Sandbox needs to be configured. Most of the configuration is already preconfigured to work with the provided SiteGenisis demo content package using default paths, libraries, and so on. If the connector is used with other sites and libraries, you will need to update this configuration.
 
-1. Navigate to [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Click **Demandware Client**.
 1. Enter the **Instance endpoint ip or hostname** as required.
 
@@ -65,7 +65,7 @@ The server connection between AEM and the Demandware Sandbox needs to be configu
 
 #### Replication {#replication}
 
-The replication should be enabled after the package installation, you can verify that here: [http://localhost:4502/etc/replication/agents.author/demandware.html](http://localhost:4502/etc/replication/agents.author/demandware.html)
+The replication should be enabled after the package installation, you can verify that here: [https://localhost:4502/etc/replication/agents.author/demandware.html](https://localhost:4502/etc/replication/agents.author/demandware.html)
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ The OAuth client is configured to work with a Demandware sandbox instance. For t
 
 For staging and productions systems, the OAuth clients need to be configured with appropriate client ID and password.
 
-1. Navigate to [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Click **Demandware Access Token provider**.
 
    ![](assets/chlimage_1-7.png)
@@ -92,7 +92,7 @@ The Demandware Sandbox must be configured to run the new Velocity template engin
 >
 >The following wizard is not part of the AEM Demandware connector. It is provided as is as part of the demo content package to help with quickly setting up the SiteGenesis demo pages.
 
-1. Navigate to [http://localhost:4502/etc/demandware/init.html](http://localhost:4502/etc/demandware/init.html).
+1. Navigate to [https://localhost:4502/etc/demandware/init.html](https://localhost:4502/etc/demandware/init.html).
 1. Click **Edit.**
 1. Verify the values and click **OK**.
 1. Click **Initialize**.

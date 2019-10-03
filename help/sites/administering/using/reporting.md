@@ -482,7 +482,7 @@ The appropriate report will then be accessible under
 
 For example, the User Generated Content report can be found under:
 
-`http://localhost:4503/etc/reports/ugcreport.html`
+`https://localhost:4503/etc/reports/ugcreport.html`
 
 This will now report on data collected from the publish environment.
 

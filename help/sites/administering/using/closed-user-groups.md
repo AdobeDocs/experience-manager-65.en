@@ -64,7 +64,7 @@ The implementation of PrincipalSetPolicy used to represent CUGs in addition defi
 * CUG policies can be nested, a nested CUG starts a new CUG without inheriting the principal set of the 'parent' CUG;
 * The effect of the policy, if evaluation is enabled, is inherited to the whole subtree down to the next nested CUG.
 
-These CUG policies are deployed to an AEM instance through a separate authorization module called oak-authorization-cug. This module comes with its own access control management and permission evaluation. In other words, the default AEM setup ships an Oak content repository configuration that combines multiple authorization mechanisms. For more info, see [this page on the Apache Oak Documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
+These CUG policies are deployed to an AEM instance through a separate authorization module called oak-authorization-cug. This module comes with its own access control management and permission evaluation. In other words, the default AEM setup ships an Oak content repository configuration that combines multiple authorization mechanisms. For more info, see [this page on the Apache Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
 In this composite setup a new CUG does not replace the existing access control content attached to the target node, but is designed to be a supplement which can also be removed later on without afecting the original access control, that by default in AEM would be an access control list.
 
@@ -74,7 +74,7 @@ In contrast to the former implementation the new CUG policies are always recogni
 
 Apart from a dedicated access control management for CUGs, the new authorization model allows to conditionally enable permission evaluation for its policies. This allows to setup CUG policies in a staging environment , and only enable evaluation of the effective permissions once replicated to the production environment.
 
-Permission evaluation for CUG policies and the interaction with the default or any additional authorization model follows the pattern designed for multiple authorization mechanisms in Apache Jackrabbit Oak: a given set of permissions is granted if and only if all models grant access. See [this page](http://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) for more details.
+Permission evaluation for CUG policies and the interaction with the default or any additional authorization model follows the pattern designed for multiple authorization mechanisms in Apache Jackrabbit Oak: a given set of permissions is granted if and only if all models grant access. See [this page](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) for more details.
 
 The following characteristics apply for the permission evaluation associated with the authorization model designed to handle and evaluate CUG policies:
 
@@ -184,7 +184,7 @@ The following best practices should be taken into account when defining authenti
 
 ### CUG Policy Representation in the Repository {#cug-policy-representation-in-the-repository}
 
-The Oak documentation covers the how the new CUG policies are refected in the repository content. For more information consult [this page](http://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
+The Oak documentation covers the how the new CUG policies are refected in the repository content. For more information consult [this page](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
 
 ### Authentication Requirement in the Repository {#authentication-requirement-in-the-repository}
 
@@ -419,7 +419,7 @@ session.save();
 
 #### Retrieve Effective Auth Requirements {#retrieve-effective-auth-requirements}
 
-There is no dedicated public API to read all efective authentication requirements as registered with the Apache Sling Authenticator. However, the list is exposed in the system console at *http://serveraddress:serverport/system/console/slingauth* under the "**Authentication Requirement Confguration**" section.
+There is no dedicated public API to read all efective authentication requirements as registered with the Apache Sling Authenticator. However, the list is exposed in the system console at *https://serveraddress:serverport/system/console/slingauth* under the "**Authentication Requirement Confguration**" section.
 
 The following image shows the authentication requirements of an AEM publish instance with demo content. The highlighted path of the community page illustrates how a requirement added by the implementation described in this document is reflected in the Apache Sling Authenticator.
 
@@ -489,7 +489,7 @@ The new, authorization related parts are contained in the **Oak CUG Authorizatio
 
 #### Setting Up CUG Authorization {#setting-up-cug-authorization}
 
-Setting up CUG authorization is described in detail in the [relevant Apache Documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability). By default, AEM has CUG authorization deployed in all run modes. The step by step instructions may also be used to disable CUG authorization in those installations that require a diferent authorization setup.
+Setting up CUG authorization is described in detail in the [relevant Apache Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability). By default, AEM has CUG authorization deployed in all run modes. The step by step instructions may also be used to disable CUG authorization in those installations that require a diferent authorization setup.
 
 #### Configuring the Referrer Filter {#configuring-the-referrer-filter}
 
@@ -498,7 +498,7 @@ You also need to configure the [Sling Referrer Filter](../../../sites/administer
 If the referrer filter is not configured, then errors, similar to the following, are seen when a user tries to log in to a CUG site:
 
 ```shell
-31.01.2017 13:49:42.321 *INFO* [qtp1263731568-346] org.apache.sling.security.impl.ReferrerFilter Rejected referrer header for POST request to /libs/granite/core/content/login.html/j_security_check : http://hostname/libs/granite/core/content/login.html?resource=%2Fcontent%2Fgeometrixx%2Fen%2Ftest-site%2Ftest-page.html&$$login$$=%24%24login%24%24&j_reason=unknown&j_reason_code=unknown
+31.01.2017 13:49:42.321 *INFO* [qtp1263731568-346] org.apache.sling.security.impl.ReferrerFilter Rejected referrer header for POST request to /libs/granite/core/content/login.html/j_security_check : https://hostname/libs/granite/core/content/login.html?resource=%2Fcontent%2Fgeometrixx%2Fen%2Ftest-site%2Ftest-page.html&$$login$$=%24%24login%24%24&j_reason=unknown&j_reason_code=unknown
 ```
 
 #### Characteristics of OSGi Components {#characteristics-of-osgi-components}
@@ -577,7 +577,7 @@ The key confguration options are:
 * `cugSupportedPaths`: specify the subtrees that may contain CUGs. No default value is set
 * `cugEnabled`: configuration option to enable permission evaluation for the present CUG policies.
 
-The available configuration options associated with the CUG-authorization module are listed and described in more detail at the [Apache Oak Documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#configuration).
+The available configuration options associated with the CUG-authorization module are listed and described in more detail at the [Apache Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#configuration).
 
 #### Excluding Principals From CUG Evaluation {#excluding-principals-from-cug-evaluation}
 
@@ -593,7 +593,7 @@ For more info, see the table in the [Default Configuration since AEM 6.3](#defau
 
 The exclusion of the 'administrators' group can be altered or expanded in the system console in the confguration section of **Apache Jackrabbit Oak CUG Exclude List**.
 
-Alternatively, it is possible to provide and deploy a custom implementation of the CugExclude interface to adjust the set of excluded principals in case of special needs. See the documentation on [CUG pluggability](http://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) for details and an example implementation.
+Alternatively, it is possible to provide and deploy a custom implementation of the CugExclude interface to adjust the set of excluded principals in case of special needs. See the documentation on [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) for details and an example implementation.
 
 ### Authentication: Setup and Configuration {#authentication-setup-and-configuration}
 
@@ -713,7 +713,7 @@ The new implementation may be disabled altogether in case a given installation d
 
 ### Disable CUG Authorization {#disable-cug-authorization}
 
-Consult the [CUG pluggability](http://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) documentation for details on how to remove the CUG authorization model from the composite authorization setup.
+Consult the [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) documentation for details on how to remove the CUG authorization model from the composite authorization setup.
 
 ### Disable the Authentication Requirement {#disable-the-authentication-requirement}
 
@@ -803,7 +803,7 @@ Note that placing the CUG policy only at the jcr:content node located below a gi
 
 **Permission Evaluation With CUG Policies**
 
-Moving from the old CUG support to an additional authorization model, changes the way effective read permissions are evaluated. As described in the [Jackrabbit documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/composite.html), a given principal allowed to view the `CUGcontent` will only be granted read access if the permission evaluation of all models confgured in the Oak repository grant read access.
+Moving from the old CUG support to an additional authorization model, changes the way effective read permissions are evaluated. As described in the [Jackrabbit documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html), a given principal allowed to view the `CUGcontent` will only be granted read access if the permission evaluation of all models confgured in the Oak repository grant read access.
 
 In other words, for the evaluation of the effective permissions, both the `CUGPolicy` and the default access control entries will be taken into account and read access on the CUG content will only be granted if it is granted by both types of policies. In a default AEM publish installation where read access to the complete `/content` tree is granted for everyone, the effect of the CUG policies will be the same as with the old implementation.
 
@@ -871,7 +871,7 @@ For upgraded AEM installation, it is important to ensure that only one CUG imple
 
 Adobe provides a tool for migrating to the new CUG implementation. In order to use it, perform the following steps:
 
-1. Go to *http://serveraddress:serverport/system/console/cug-migration* to access the tool.
+1. Go to *https://serveraddress:serverport/system/console/cug-migration* to access the tool.
 1. Enter the root path you want to check CUGs for, and press the **Perform dry run** button. This will scan for CUGs elligible for conversion in the selected location.
 1. After you have reviewed the results, press the **Perform migration** button to migrate to the new implementation.
 

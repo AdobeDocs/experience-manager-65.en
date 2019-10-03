@@ -37,7 +37,7 @@ These can be used in many ways to extend your AEM consoles. A small selection ar
 >* Using and creating [overlays](/sites/developing/using/overlays.md).
 >* [Granite](/sites/developing/using/reference-materials/granite-ui/api/index.md) 
 >
->This topic is also covered in the [AEM Gems](http://docs.adobe.com/content/ddc/en/gems.html) session - [User interface customization for AEM 6.0](http://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+>This topic is also covered in the [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) session - [User interface customization for AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >

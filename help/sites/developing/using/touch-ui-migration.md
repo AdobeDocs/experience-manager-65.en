@@ -149,7 +149,7 @@ For full information on developing AEM see the collection of resources under:
 * [AEM 6.5 Sites Tutorials and Videos](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 * [Getting Started Developing AEM Sites - WKND Tutorial](../../../sites/developing/using/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
-* [AEM Modernization Tools](http://opensource.adobe.com/aem-modernize-tools/)
+* [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >

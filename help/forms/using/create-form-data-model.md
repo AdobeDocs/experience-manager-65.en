@@ -53,7 +53,7 @@ Do the following to configure your MySQL database:
 
 1. Install JDBC driver for MySQL database as an OSGi bundle:
 
-    1. Log in to AEM Forms Author Instance as an administrator and go to AEM web console bundles. The default URL is [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).  
+    1. Log in to AEM Forms Author Instance as an administrator and go to AEM web console bundles. The default URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).  
 
     1. Tap **Install/Update**. An **Upload / Install Bundles** dialog appears.  
 
@@ -61,7 +61,7 @@ Do the following to configure your MySQL database:
 
 1. Configure MySQL database as a data source:
 
-    1. Go to AEM web console at [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+    1. Go to AEM web console at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
     1. Locate **Apache Sling Connection Pooled DataSource **configuration. Tap to open the configuration in edit mode.
     1. In the configuration dialog, specify the following details:
 
@@ -82,7 +82,7 @@ Do the following to configure your MySQL database:
         
         * **Transaction Isolation**: Set the value to **READ_COMMITTED**.
 
-       Leave other properties with default [values](http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
+       Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
 
    A configuration similar to the following is created.
 
@@ -112,7 +112,7 @@ Configuring form data model involves:
 
 Do the following to configure the form data model:
 
-1. On AEM author instance, navigate to **Forms &gt; Data Integrations**. The default URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. On AEM author instance, navigate to **Forms &gt; Data Integrations**. The default URL is [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. The **customer-shipping-billing-details** form data model you created earlier is listed here. Open it in edit mode.
 
    The selected data source **WeRetailMySQL** is configured in the form data model.

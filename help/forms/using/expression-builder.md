@@ -34,7 +34,7 @@ Here are a few commonly used JSP EL examples that you can use in your Correspond
 * To concatenate two strings: ${str1} ${str2}
 * To compare two numbers: ${age &lt; 18}
 
-You can find more information in the [JSP EL specification](http://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). The client-side expression manager does not support certain variables and functions in the JSP EL specification, specifically:
+You can find more information in the [JSP EL specification](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). The client-side expression manager does not support certain variables and functions in the JSP EL specification, specifically:
 
 * Collection indexes and map keys (using the [] notation) are not supported in variable names for expressions evaluated on the client-side.
 * The following are the parameter types or return types of functions used in expressions:

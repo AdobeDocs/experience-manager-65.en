@@ -58,7 +58,7 @@ For example, using the site created from following the [Getting Started](../../c
 * Title = Web Page
 * URL = page
 
-then the URL to the page is http://localhost:4503/content/sites/engage/en/**page**.html
+then the URL to the page is https://localhost:4503/content/sites/engage/en/**page**.html
 
 and the menu link for the page appears as:
 

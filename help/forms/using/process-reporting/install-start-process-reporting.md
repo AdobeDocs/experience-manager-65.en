@@ -26,11 +26,11 @@ If you are currently using Forms Workflow, the AEM Forms database can potentiall
 
 The Process Reporting publishing services will publish all AEM Forms data currently available in the database. This implies, that if the database contains legacy data on which you do not want to run reports and queries, all of that data would also be published to the repository even though it is not required for reporting. You are recommended to purge this data before you run the services to publish the data to the Process Reporting repository. This will improve the performance of both the publisher service and the service that queries the data for reporting.
 
-For details on purging AEM Forms process data, see [Purging Process Data](http://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html).
+For details on purging AEM Forms process data, see [Purging Process Data](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html).
 
 >[!NOTE]
 >
->For the tips and tricks of Purge Utility, see Adobe Developer Connection article on [Purging processes and jobs](http://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>For the tips and tricks of Purge Utility, see Adobe Developer Connection article on [Purging processes and jobs](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
 
 ## Configuring Process Reporting services {#configuring-process-reporting-services}
 
@@ -82,7 +82,7 @@ Perform the following steps to change the publishing schedule:
 1. Restart the AEM Forms server instance.
 
 1. Stop the AEM Forms server instance.
-1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `http://[hostname]:[port]/console`.  
+1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `https://[hostname]:[port]/console`.  
 
 1. Under Change Center, click **Lock & Edit**.  
 
@@ -112,7 +112,7 @@ You can use the Administration console to configure the root (**default**: `/con
 
 #### To configure the Process Reporting repository locations {#to-configure-the-process-reporting-repository-locations}
 
-1. Log in to** Administration Console** with administrator credentials. The default URL of Administration Console is `http://[server]:[port]/adminui`
+1. Log in to** Administration Console** with administrator credentials. The default URL of Administration Console is `https://[server]:[port]/adminui`
 1. Navigate to **Home **&gt; **Services **&gt; **Applications and Services** &gt;** Service Management** and open the **ProcessDataStorageProvider** service.
 
    ![](assets/process-data-storage-service.png)
@@ -137,7 +137,7 @@ The ReportConfiguration service is used by Process Reporting for configuring the
 
 #### To configure the ReportingConfiguration service {#to-configure-the-reportingconfiguration-service}
 
-1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `http://[*server*]:[*port*]/lc/system/console/configMgr`
+1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `https://[*server*]:[*port*]/lc/system/console/configMgr`
 1. Open the **ReportingConfiguration **service. 
 1. **Number of Records**
 
@@ -170,7 +170,7 @@ The ProcessDataPublisher service imports process data from the AEM Forms databas
 
 1. Log in to** Administration Console** with administrator credentials.
 
-   The default URL is `http://[server]:port]/adminui/`.
+   The default URL is `https://[server]:port]/adminui/`.
 
 1. Navigate to **Home **&gt; **Services **&gt; **Applications and Services** &gt;** Service Management** and open the **ProcessDataPublisher** service.
 
@@ -226,11 +226,11 @@ The user interface for Process Reporting is browser-based.
 
 After you have set up Process Reporting, you can start working with Process Reporting at the following location in your AEM Forms installation:
 
-`http://<server>:<port>/lc/pr`
+`https://<server>:<port>/lc/pr`
 
 ### Log in to Process Reporting {#log-in-to-process-reporting}
 
-When you navigate to the Process Reporting URL (http://&lt;server&gt;:&lt;port&gt;/lc/pr), the login screen is displayed.
+When you navigate to the Process Reporting URL (https://&lt;server&gt;:&lt;port&gt;/lc/pr), the login screen is displayed.
 
 Specify your credentials to log in to the Process Reporting module.
 

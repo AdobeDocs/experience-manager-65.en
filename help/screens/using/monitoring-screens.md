@@ -130,7 +130,7 @@ Currently some of these features are only available if the *Apache Sling Referre
 
 Follow the steps below to enable the Apache Sling Referrer Filter Allow Empty
 
-1. Navigate to [Adobe Experience Manager Web Console Configuration](http://localhost:4502/system/console/configMgr/org.apache.sling.security.impl.ReferrerFilter).
+1. Navigate to [Adobe Experience Manager Web Console Configuration](https://localhost:4502/system/console/configMgr/org.apache.sling.security.impl.ReferrerFilter).
 1. Check the **allow.empty **option.
 1. Click **Save**.
 

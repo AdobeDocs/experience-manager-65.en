@@ -514,7 +514,7 @@ INSERT_UPDATE SolrServerConfig;name[unique=true];mode(code);embeddedMaster;
 ;standalone-ClothesCatalogs;standalone;false;
 ;;
 INSERT_UPDATE SolrEndpointUrl;solrServerConfig(name)[unique=true];url[unique=true];master[unique=true,default=false]
-;standalone-ClothesCatalogs;http://localhost:8983/solr;true
+;standalone-ClothesCatalogs;https://localhost:8983/solr;true
 ;;
 INSERT_UPDATE SolrIndexConfig;name[unique=true];batchSize;exportPath;
 ;indexConfig-ClothesCatalogs;100;;

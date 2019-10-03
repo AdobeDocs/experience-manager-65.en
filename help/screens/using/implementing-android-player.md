@@ -58,7 +58,7 @@ To access some of the privileged APIs of Android such as *PowerManager* or *HDMI
 
 Follow the steps below to sign the android apk using the manufacturer's keys:
 
-1. Download the apk from Google Play or from [AEM Screens Player Downloads](http://download.macromedia.com/screens/) page
+1. Download the apk from Google Play or from [AEM Screens Player Downloads](https://download.macromedia.com/screens/) page
 1. Obtain the platform keys from the manufacturer to get a *pk8* and a *pem* file
 
 1. Locate the apksigner tool in android sdk using find ~/Library/Android/sdk/build-tools -name "apksigner"

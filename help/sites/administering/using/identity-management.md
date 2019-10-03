@@ -51,7 +51,7 @@ Additional functionality can be configured or developed:
 A [form](/sites/authoring/using/default-components.md#formcomponent) can be used to collect the registration information, then generate the new account and profile.
 
 For example, users can request a new profile, using the Geometrixx page  
-`http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
+`https://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![](assets/registerform.png)
 
@@ -69,7 +69,7 @@ This provides the visitor with the standard fields of **Username** and **Passwor
 
 For example, users can either log in, or create a new account, using the **Sign In** option on the Geometrixx toolbar, which uses the page:
 
-`http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
+`https://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
 ![](assets/login.png) 
 
@@ -82,17 +82,17 @@ As there is a login mechanism, a logout mechanism is also required. This is avai
 Depending on your registration form the visitor may have registered information in their profile. They should be able to view and/or update this at a later stage. This can be done with a similar form; for example, in Geometrixx:
 
 ```
-http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
+https://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 ```
 
 To see the details of your profile click on **My Profile** in the top right corner of any page; for example with the `admin` account:  
-`http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
+`https://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 You can view another profile using the [client context](../../../sites/administering/using/client-context.md) (on the author environment and with sufficient privileges):
 
 1. Open a page; for example the Geometrixx page:  
-   `http://localhost:4502/cf#/content/geometrixx/en.html`
+   `https://localhost:4502/cf#/content/geometrixx/en.html`
 1. Click **My Profile** in the top right corner. You will see the profile of your current account; for example the administrator.
 1. Press **control-alt-C** to open the client context.
 1. In top left corner of the client context, click the **Load a Profile** button.

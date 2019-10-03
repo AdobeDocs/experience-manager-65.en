@@ -178,11 +178,11 @@ To confirm that the configuration is operating as expected:
 
 1. Open:
 
-    * http://localhost:&lt;port&gt;/libs/cq/adobeims-configuration/content/configurations.html
+    * https://localhost:&lt;port&gt;/libs/cq/adobeims-configuration/content/configurations.html
 
    For example:
 
-    * [http://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html](http://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html)
+    * [https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html](https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html)
 
 1. Select your configuration.
 1. Select **Check Health** from the toolbar, followed by **Check**.

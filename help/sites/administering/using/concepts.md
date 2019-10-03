@@ -40,7 +40,7 @@ This means that:
 
 >[!CAUTION]
 >
->The [eCommerce integration framework](http://www.adobe.com/solutions/web-experience-management/commerce.html) is an AEM Add-On.
+>The [eCommerce integration framework](https://www.adobe.com/solutions/web-experience-management/commerce.html) is an AEM Add-On.
 >
 >Your Sales representative will be able to give full details, according to the appropriate engine.
 
@@ -126,7 +126,7 @@ AEM eCommerce is implemented with an eCommerce engine:
 >
 >AEM eCommerce implemented within AEM using generic development based on JCR is:
 >
->* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout in conjunction with the existing data display and marketing campaigns. In this case the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](http://www.day.com/day/en/products/jcr.html)).  
+>* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout in conjunction with the existing data display and marketing campaigns. In this case the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](https://www.day.com/day/en/products/jcr.html)).  
 >  The standard AEM installation contains the basics of the [generic eCommerce implemention](../../../sites/administering/using/generic.md).   
 >
 
@@ -544,7 +544,7 @@ A promotion can be held either in an experience or directly in the campaign:
 
 >[!NOTE]
 >
->[hybris promotions](http://www.hybris.com/modules/promotion) and [hybris vouchers](http://www.hybris.com/en/modules/voucher) cover everything that influences the shopping cart and is related to pricing. Promotion specific marketing content (such as banners, etc) is not part of the hybris promotion.
+>[hybris promotions](https://www.hybris.com/modules/promotion) and [hybris vouchers](https://www.hybris.com/en/modules/voucher) cover everything that influences the shopping cart and is related to pricing. Promotion specific marketing content (such as banners, etc) is not part of the hybris promotion.
 
 ## Personalization {#personalization}
 

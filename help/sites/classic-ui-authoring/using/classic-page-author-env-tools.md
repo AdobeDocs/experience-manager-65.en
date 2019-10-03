@@ -27,7 +27,7 @@ The **Websites** console allows you to manage and navigate your website. Using t
 
 There is a separate page editor with the classic UI, using the content finder and the sidekick:
 
-`http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+`https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
 ![](assets/chlimage_1-109.png) 
 

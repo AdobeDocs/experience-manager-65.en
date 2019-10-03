@@ -95,7 +95,7 @@ Alternatively, you can also perform the same setting using*&lt;yourAuthorInstanc
 
 Running AEM in production uses the **NOSAMPLECONTENT** runmode. Remove the the *X-Frame-Options=SAMEORIGIN* header (in the additional response header section) from
 
-[http://localhost:4502/system/console/configMgr/org.apache.sling.engine.impl.SlingMainServlet](http://localhost:4502/system/console/configMgr/org.apache.sling.engine.impl.SlingMainServlet).
+[https://localhost:4502/system/console/configMgr/org.apache.sling.engine.impl.SlingMainServlet](https://localhost:4502/system/console/configMgr/org.apache.sling.engine.impl.SlingMainServlet).
 
 This is required for the AEM Screens Player to play online channels.
 
@@ -105,7 +105,7 @@ With latest changes to ***DeviceServiceImpl***, you do not have to remove the pa
 
 You can configure ***DeviceServiceImpl*** from the link below to enable password restriction while creating the password for the screens device users:
 
-[http://localhost:4502/system/console/configMgr/com.adobe.cq.screens.device.impl.DeviceService](http://localhost:4502/system/console/configMgr/com.adobe.cq.screens.device.impl.DeviceService)
+[https://localhost:4502/system/console/configMgr/com.adobe.cq.screens.device.impl.DeviceService](https://localhost:4502/system/console/configMgr/com.adobe.cq.screens.device.impl.DeviceService)
 
 Follow the steps below to configure ***DeviceServiceImpl***:
 

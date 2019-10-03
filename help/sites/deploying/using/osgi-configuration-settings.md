@@ -15,11 +15,11 @@ docset: aem65
 
 # OSGi Configuration Settings{#osgi-configuration-settings}
 
-[OSGi](http://www.osgi.org/) is a fundamental element in the technology stack of AEM. It is used to control the composite bundles of AEM and their configuration.
+[OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of AEM. It is used to control the composite bundles of AEM and their configuration.
 
 OSGi "*provides the standardized primitives that allow applications to be constructed from small, reusable and collaborative components. These components can be composed into an application and deployed*".
 
-This allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](http://www.osgi.org/Specifications/HomePage)) is contained in one of the various bundles. When working with AEM there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/sites/deploying/using/configuring-osgi.md) for more details and the recommended practices.
+This allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://www.osgi.org/Specifications/HomePage)) is contained in one of the various bundles. When working with AEM there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/sites/deploying/using/configuring-osgi.md) for more details and the recommended practices.
 
 The following OSGi configuration settings (listed according to bundle) are relevant to project implementation. Not all the listed settings need adjusting, some are mentioned to help you understand how AEM operates.
 
@@ -33,7 +33,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 
 >[!NOTE]
 >
->The [AEM OSGi Config Details](http://www.aemstuff.com/osgi.html) tool can be used to list the default OSGi configurations.
+>The [AEM OSGi Config Details](https://www.aemstuff.com/osgi.html) tool can be used to list the default OSGi configurations.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 * **Logger Name** and **Log Format** to configure the location and format of request and access logging (default: `request.log`). This log file is essential when analyzing performance or debugging functionality related to the web chain.  
   This is paired with the [Apache Sling Request Logger](#apacheslingrequestlogger).
 
-For further information see [AEM Logging](/sites/deploying/using/configure-logging.md) and [Sling Logging](http://sling.apache.org/site/logging.html).
+For further information see [AEM Logging](/sites/deploying/using/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Eventing Thread Pool** Configure:
 
@@ -145,7 +145,7 @@ In particular for production instances:
 
 * **Message Pattern** defines the format of the log messages.
 
-For further information see [AEM Logging](/sites/deploying/using/configure-logging.md#global-logging) and [Sling Logging](http://sling.apache.org/site/logging.html).
+For further information see [AEM Logging](/sites/deploying/using/configure-logging.md#global-logging) and [Sling Logging](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Logging Logger Configuration (Factory Configuration)** Configure:
 
@@ -157,7 +157,7 @@ For further information see [AEM Logging](/sites/deploying/using/configure-loggi
 * Such configurations are helpful during development; for example, to log TRACE messages for a specific service in a specific log file.
 * Such configurations are helpful in a production environment; for example, to have messages about a specific service logged to an individual log file for easier monitoring.
 
-For further information see [AEM Logging](/sites/deploying/using/configure-logging.md) and [Sling Logging](http://sling.apache.org/site/logging.html).
+For further information see [AEM Logging](/sites/deploying/using/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Logging Writer Configuration (Factory Configuration)** Configure:
 
@@ -169,7 +169,7 @@ For further information see [AEM Logging](/sites/deploying/using/configure-loggi
 * Such configurations are helpful during development; for example, to log TRACE messages for a specific service in a specific log file.
 * Such configurations are helpful in a production environment; for example, to have messages about a specific service logged to an individual log file for easier monitoring.
 
-For further information see [AEM Logging](/sites/deploying/using/configure-logging.md) and [Sling Logging](http://sling.apache.org/site/logging.html).
+For further information see [AEM Logging](/sites/deploying/using/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Main Servlet** Configure:
 
@@ -202,7 +202,7 @@ See the [Security Checklist - Issues with Cross-Site Request Forgery](../../../s
 
 This is paired with the [Apache Sling Customizable Request Data Logger](#apacheslingcustomizablerequestdatalogger).
 
-For further information see [AEM Logging](/sites/deploying/using/configure-logging.md) and [Sling Logging](http://sling.apache.org/site/logging.html).
+For further information see [AEM Logging](/sites/deploying/using/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Resource Resolver Factory** Configure central aspects of Sling resource resolution:
 
@@ -214,7 +214,7 @@ For further information see [AEM Logging](/sites/deploying/using/configure-loggi
 
 * **Mapping Location**, the mapper configuration externalized in `/etc/map`.
 
-* Use your local installation (for example, use `http://localhost:4502/system/console/jcrresolver`) to determine which Resource Resolver is active.
+* Use your local installation (for example, use `https://localhost:4502/system/console/jcrresolver`) to determine which Resource Resolver is active.
 
 For further information see: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
 
@@ -248,7 +248,7 @@ Various parameters can be set, including:
 
 **Apache HTTP Components Proxy Configuration** Proxy configuration for all code using the Apache HTTP client, used when a HTTP is made; for example upon replication.
 
-When creating a new configuration, do not make changes to the factory configuration but instead create a new factory configuration for this component using the configuration manager available here: **http://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
+When creating a new configuration, do not make changes to the factory configuration but instead create a new factory configuration for this component using the configuration manager available here: **https://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >
@@ -365,7 +365,7 @@ Various configuration properties are available:
     * `Basic` if the user ID is encoded in the HTTP Basic Authentication format
     * `AsIs` if the user ID is provided in plain text or any regular expression applied value should be used as is or any regular expression
 
-**Day CQ WCM Debug Filter** This is useful when developing as it allows the use of suffixes such as ?debug=layout when accessing a page. For example, http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout will provide layout information that may be of interest to the developer.
+**Day CQ WCM Debug Filter** This is useful when developing as it allows the use of suffixes such as ?debug=layout when accessing a page. For example, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout will provide layout information that may be of interest to the developer.
 
 * Disable this on production instances to ensure performance and security.
 
@@ -403,7 +403,7 @@ Various configuration properties are available:
 
 **Day CQ WCM Page Statistics** For a publish instance configure:
 
-* **URL to send data** to configure the URL used to track page statistics (is vital if a tracker request goes through the dispatcher); for example, the default is `http://localhost:4502/libs/wcm/stats/tracker`.
+* **URL to send data** to configure the URL used to track page statistics (is vital if a tracker request goes through the dispatcher); for example, the default is `https://localhost:4502/libs/wcm/stats/tracker`.
 
 * **Tracking script enabled** to enable ( `true`) or disable ( `false`) the inclusion of the tracking script on the pages. The default value is `false`.
 

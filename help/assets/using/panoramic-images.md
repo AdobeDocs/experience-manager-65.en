@@ -39,7 +39,7 @@ To upload assets for use with the Panoramic Image viewer, see [Uploading Assets]
 
 For the Panoramic Image viewer to work properly within AEM, you must synchronize the Panoramic Image viewer presets with Dynamic Media Classic (Scene7) and Dynamic Media Classic (Scene7)-specific metadata so the viewer presets get updated in the JCR. To accomplish this, configure Dynamic Media Classic (Scene7) in the following manner:
 
-1. [Log into your instance of Dynamic Media Classic (Scene7)](http://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.  
+1. [Log into your instance of Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.  
 
 1. Near the upper-right corner of the page, click **Setup** &gt; **Application Setup** &gt; **Publish Setup** &gt; **Image Server**.
 1. On the Image Server Publish page, from the **Publish Context** drop-down menu near the top, select **Image Serving**.  

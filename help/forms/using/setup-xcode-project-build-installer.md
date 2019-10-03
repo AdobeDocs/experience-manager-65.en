@@ -19,12 +19,12 @@ AEM Forms provides the complete source code of the AEM Forms app. The source con
 To get the AEM Forms app source, perform the following steps:
 
 1. Navigate to package share  
-   URL: `http://<server>:<port>/crx/packageshare`.
+   URL: `https://<server>:<port>/crx/packageshare`.
 
 1. Download the source package. When you download the package, it is added in your AEM Forms package manager.
-1. After it is downloaded, navigate to: `http://<server>:<port>/crx/packmgr/index.jsp`, and install `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+1. After it is downloaded, navigate to: `https://<server>:<port>/crx/packmgr/index.jsp`, and install `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-1. To download the source code archive, open `http://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.   
+1. To download the source code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.   
    The source package is downloaded on your device.
 
 The following image displays the extracted contents of the `adobe-lc-mobileworkspace-src-<version>.zip`.
@@ -132,7 +132,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 
 ## Build the installer for the AEM Forms app <br> {#build-the-installer-for-the-mobile-workspace-app}
 
-You need to archive the Xcode project to build the installer (an .ipa file) and a property list (a .plist file) file. The property list file contains configuration information of the hosted in-house app, such as the name and the hosting location of the app. For more information about property list file, see [About Information Property List Files](http://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
+You need to archive the Xcode project to build the installer (an .ipa file) and a property list (a .plist file) file. The property list file contains configuration information of the hosted in-house app, such as the name and the hosting location of the app. For more information about property list file, see [About Information Property List Files](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
 1. Connect a provisioned iPad to a Mac machine. For detailed information about provisioning an iPad, see [Creating and Downloading Development Provisioning Profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
 1. Select the provisioned device for the **AEM Forms **project.
@@ -148,7 +148,7 @@ You need to archive the Xcode project to build the installer (an .ipa file) and 
 1. Select **Save for Enterprise or Ad-Hoc Deployment** as the method of distribution and click **Next**.
 1. Select the appropriate **Code Signing Identity** and click **Next**. Click **Allow** to apply the signature.
 1. Provide name of the app and select **Save for Enterprise Distribution**.
-1. Provide the **Application URL** for the app. For example, to host the app on a CRX server, provide URL `http://[*LC_host*]:[*port*]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. Provide the **Application URL** for the app. For example, to host the app on a CRX server, provide URL `https://[*LC_host*]:[*port*]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. In the **Title** field, specify AEM Forms.
 1. Click **Save** and close Xcode.
 

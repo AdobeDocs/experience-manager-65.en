@@ -262,7 +262,7 @@ The external application integration component (**External**) enables you to emb
       Specify the URL of the web application to be integrated; for example:
 
       ```    
-      http://en.wikipedia.org/wiki/Main_Page
+      https://en.wikipedia.org/wiki/Main_Page
       
       ```
 
@@ -272,7 +272,7 @@ The external application integration component (**External**) enables you to emb
     * **Width and Height  
       **Define the size of the iframe
 
-The external application is integrated into the paragraph system of the AEM page; for example, when using a Target application of `http://en.wikipedia.org/wiki/Main_Page`:
+The external application is integrated into the paragraph system of the AEM page; for example, when using a Target application of `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![](assets/chlimage_1-7.png)
 

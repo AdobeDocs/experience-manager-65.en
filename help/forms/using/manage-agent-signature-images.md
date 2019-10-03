@@ -30,7 +30,7 @@ You can also override the default custom function to define your own logic for f
 1. Ensure that the agent signature image has the same name as the user's AEM user name. (Extension is not needed for image filename.)
 1. In CRX, create a folder named `cmUserRoot` in the content folder.
 
-    1. Go to `http://[server]:[port]/crx/de`. If necessary, log in as Administrator.  
+    1. Go to `https://[server]:[port]/crx/de`. If necessary, log in as Administrator.  
 
     1. Right-click the **content** folder and select **Create** &gt; **Create Folder**.
     
@@ -44,7 +44,7 @@ You can also override the default custom function to define your own logic for f
 
 1. In Content Explorer, navigate to the cmUserRoot folder and add the agent signature image in it.
 
-    1. Go to `http://[server]:[port]/crx/explorer/index.jsp`. Log in as Administrator, if necessary.
+    1. Go to `https://[server]:[port]/crx/explorer/index.jsp`. Log in as Administrator, if necessary.
     1. Click **Content Explorer**. The Content Explorer opens in a new window.
     1. In Content Explorer, navigate to the cmUserRoot folder and select it. Right-click the **cmUserRoot** folder and select **New Node**.
     

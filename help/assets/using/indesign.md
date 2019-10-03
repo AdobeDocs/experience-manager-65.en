@@ -21,18 +21,18 @@ Adobe Experience Manager (AEM) Assets uses:
 * A proxy worker to define and manage a specific task.  
   These can cover a wide variety of tasks; for example, using an InDesign Server to process files.
 
-To fully upload files to AEM Assets that you have created with Adobe InDesign a proxy is used. This uses a proxy worker to communicate with the Adobe InDesign Server, where [scripts](http://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for AEM Assets. The proxy worker enables the two-way communication between the InDesign Server and the AEM instance(s) in a cloud configuration.
+To fully upload files to AEM Assets that you have created with Adobe InDesign a proxy is used. This uses a proxy worker to communicate with the Adobe InDesign Server, where [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for AEM Assets. The proxy worker enables the two-way communication between the InDesign Server and the AEM instance(s) in a cloud configuration.
 
 >[!NOTE]
 >
 >Adobe InDesign comes as two products:
 >
->* [InDesign](http://www.adobe.com/products/indesign.html)  
+>* [InDesign](https://www.adobe.com/products/indesign.html)  
 >  This allows you design page layouts for print and/or digital distribution.
 >
->* [InDesign Server](http://www.adobe.com/products/indesignserver.html)  
->  This engine enables you to programmatically create automated documents based on what you have created with InDesign. It operates as a service offering an interface to its [ExtendScript](http://www.adobe.com/devnet/scripting.html) engine.  
->  The scripts are written in extendscript, which is similar to javascript. For information about Indesign scripts see [http://www.adobe.com/devnet/indesign/documentation.html#idscripting](http://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>* [InDesign Server](https://www.adobe.com/products/indesignserver.html)  
+>  This engine enables you to programmatically create automated documents based on what you have created with InDesign. It operates as a service offering an interface to its [ExtendScript](https://www.adobe.com/devnet/scripting.html) engine.  
+>  The scripts are written in extendscript, which is similar to javascript. For information about Indesign scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 >
 
 ## How the Extraction Works {#how-the-extraction-works}
@@ -58,10 +58,10 @@ The InDesign Server can be integrated with AEM Assets so that files created with
 
    >[!NOTE]
    >
-   >IDML is an XML-based format that renders *everything* in the InDesign file. It is stored as an compressed package using [Zip](http://www.techterms.com/definition/zip) compression.
+   >IDML is an XML-based format that renders *everything* in the InDesign file. It is stored as an compressed package using [Zip](https://www.techterms.com/definition/zip) compression.
    >
    >
-   >See [Adobe Press - InDesign Interchange Formats INX and IDML](http://www.adobepress.com/articles/article.asp?p=1381880&seqNum=8) for further information.
+   >See [Adobe Press - InDesign Interchange Formats INX and IDML](https://www.adobepress.com/articles/article.asp?p=1381880&seqNum=8) for further information.
 
    >[!CAUTION]
    >
@@ -135,7 +135,7 @@ Media extraction arguments and script paths
 * **Extend Scripts** 
   You can specify different script combinations here. If you want your own scripts to be executed on the InDesign Server, save the scripts at `/apps/settings/dam/indesign/scripts`.  
   For information about Indesign scripts see:  
-  [http://www.adobe.com/devnet/indesign/documentation.html#idscripting](http://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+  [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -202,7 +202,7 @@ To customize, you can edit the **Arguments** tab of the** Page Extraction** step
 
 If the InDesign server and AEM run on different hosts or either or both these applications do not run on default ports, configure **Day CQ Link Externalizer** to set the host name, port, and content path for the InDesign server.
 
-1. Access Configuration Manager at the URL `http://&lt;AEM server name&gt;:&lt;Port&gt;/system/console/configMgr`. 
+1. Access Configuration Manager at the URL `https://&lt;AEM server name&gt;:&lt;Port&gt;/system/console/configMgr`. 
 1. Locate the configuration **Day CQ Link Externalizer**, and click the **Edit** icon to open it.
 1. Specify the host name and context path for the Indesign server and click **Save**.
 
@@ -221,7 +221,7 @@ To configure the number of parallel IDS jobs:
 
 1. Open the **Configurations** tab of the Felix Console; for example:
 
-   `http://localhost:4502/system/console/configMgr`
+   `https://localhost:4502/system/console/configMgr`
 
 1. Select the IDS processing queue under:
 
@@ -262,7 +262,7 @@ To configure the number of parallel IDS jobs:
 
 For InDesign server 10.0 or higher, perform the following steps to enable multi-session support.
 
-1. Open Configuration Manager from your AEM Assets instance [http://&lt;Host Name&gt;:&lt;Port&gt;/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Open Configuration Manager from your AEM Assets instance [https://&lt;Host Name&gt;:&lt;Port&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Edit the configuration ***com.day.cq.dam.ids.impl.IDSJobProcessor.name***.
 1. Select the **ids.cc.enable** option, and click **Save**.
 

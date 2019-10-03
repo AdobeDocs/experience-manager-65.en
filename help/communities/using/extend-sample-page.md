@@ -26,7 +26,7 @@ The client libraries necessary for the style and functioning of the default Comm
 
 The [Community Components Guide](/communities/using/components-guide.md) identifies the required client libraries. Browse to the Component Guide and view the Comments component, for example:
 
-[http://localhost:4502/content/community-components/en/comments.html](http://localhost:4502/content/community-components/en/comments.html)
+[https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
 Note the three client libraries required for Comments to render and function properly. These will need to be included where the extended Comments are referenced, and the [extended Comments' client library](/communities/using/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 

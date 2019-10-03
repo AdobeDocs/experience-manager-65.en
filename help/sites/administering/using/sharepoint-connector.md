@@ -31,7 +31,7 @@ All functionalities are implemented using the native SharePoint web services as 
 >
 >SharePoint Connector is also supported with AEM 6.1 service pack 2. The connector no longer supports virtual repository mount and, therefore, it cannot be mounted. If you want to access the Sharepoint repository using Java APIs, use the Sharepoint connector's JCR repository implementation in your project.
 >
->Installation, configuration, management, and IT operations of the SharePoint server and related IT infrastructure are outside the scope of this document. See vendor documentation on [SharePoint](http://www.microsoft.com/sharepoint) for information about these topics. The connector requires these parts of the infrastructure to be properly installed, configured, and operated.
+>Installation, configuration, management, and IT operations of the SharePoint server and related IT infrastructure are outside the scope of this document. See vendor documentation on [SharePoint](https://www.microsoft.com/sharepoint) for information about these topics. The connector requires these parts of the infrastructure to be properly installed, configured, and operated.
 >
 
 ## Getting started {#getting-started}
@@ -80,7 +80,7 @@ The connector supports the following:
 
 >[!NOTE]
 >
->The connector only supports configurations officially supported by Microsoft. See [MOSS 2010](http://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) and [MOSS 2013](http://technet.microsoft.com/en-us/library/cc262485.aspx) system requirements.
+>The connector only supports configurations officially supported by Microsoft. See [MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) and [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx) system requirements.
 
 ### Standard installation {#standard-installation}
 
@@ -110,7 +110,7 @@ Set the SharePoint server URL to make your SharePoint repository JCR compliant. 
 
 To set the URL of the SharePoint server and advanced options, perform these steps:
 
-1. Navigate to the OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Navigate to the OSGi Management Console: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Search for the **Day JCR Connector for Microsoft Sharepoint** bundle.
 1. Edit the configuration values.
 1. Set the SharePoint Server URL as the value of **Workspaces**.
@@ -131,7 +131,7 @@ In AEM, perform one more step apart from above configuration steps. Whitelist th
 
 To whitelist bundles in AEM, perform the following steps:
 
-1. Navigate to the OSGi Management Console: http://localhost:4502/system/console/configMgr.
+1. Navigate to the OSGi Management Console: https://localhost:4502/system/console/configMgr.
 
 2. Search for " Apache Sling Login Admin Whitelist" service.
 
@@ -161,7 +161,7 @@ After you configure the connector, verify the following:
 
 To synchronize the SharePoint Assets with AEM, perform the following steps:
 
-1. Navigate to the OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Navigate to the OSGi Management Console: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Search for "Default DAMAssetSynchronization" service.
 1. Edit the configuration values.
 1. Set the user name and the corresponding Password of the user having access on the SharePoint site.
@@ -169,13 +169,13 @@ To synchronize the SharePoint Assets with AEM, perform the following steps:
 
 Enable the DAM Sync Service, which is disabled by default:
 
-1. Navigate to the OSGi Web Console Components: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
+1. Navigate to the OSGi Web Console Components: [https://localhost:4502/system/console/components](https://localhost:4502/system/console/components)
 1. Search for "com.day.cq.dam.jcrconnectors.impl.AssetSynchronizationService."
 1. Click Enable.
 
 Optionally, you can configure the Synchronization delay between different synchronization cycles:
 
-1. Navigate to the OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+1. Navigate to the OSGi Management Console: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. Search for "DAY CQ DAM JCR Connector Asset Synchronization Service."
 1. Edit the configuration values.
 1. Set the value of the Synchronization Period (in seconds).
@@ -202,7 +202,7 @@ The AEM JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 201
 
 **Configuring Forms Based Authentication**
 
-Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+Go to: [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)
 
 1. Click OSGI -&gt; Configuration
 1. Search “Day JCR Connector for Microsoft Sharepoint”
@@ -213,7 +213,7 @@ Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 **Configuring Basic Authentication (Windows)**
 
 1. [Disable Token Authentication](#disable-token-authentication).
-1. Go to [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+1. Go to [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 1. Click OSGI &gt; Configuration.
 1. Search for **Day JCR Connector for Microsoft Sharepoint**.
 1. Click `Edit the configuration values`.
@@ -226,7 +226,7 @@ You can also use the connector extension for authentication to create a custom a
 
 To create a user in AEM:
 
-1. Login to http://localhost:9502/with the admin user.  
+1. Login to https://localhost:9502/with the admin user.  
 1. Click Tools.
 1. Click Security.
 1. Click Users.
@@ -256,7 +256,7 @@ To add the user in the admin group:
 
 #### Supporting different authentication methods of the SharePoint server {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-In its standard version, the connector supports the standard IIS **Windows** authentication (Basic) and Forms-based authentication (token based). The [other authentication methods](http://technet.microsoft.com/en-us/library/cc262350.aspx#section2) can be supported through the extensibility mechanism.
+In its standard version, the connector supports the standard IIS **Windows** authentication (Basic) and Forms-based authentication (token based). The [other authentication methods](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) can be supported through the extensibility mechanism.
 
 The following steps provide guidelines around extending the standard authentication to support various authentication methods of the SharePoint server:
 

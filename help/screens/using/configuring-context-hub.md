@@ -123,7 +123,7 @@ Follow the steps below to set up a data store that allows you to use ContextHub 
    >To add an area, remove the master from the URL, such as
    >
    >
-   >[http://localhost:4502/libs/cq/personalization/touch-ui/content/v2/activities.html/content/campaigns/contexthubdemo/master](http://localhost:4502/libs/cq/personalization/touch-ui/content/v2/activities.html/content/campaigns/contexthubdemo/master)
+   >[https://localhost:4502/libs/cq/personalization/touch-ui/content/v2/activities.html/content/campaigns/contexthubdemo/master](https://localhost:4502/libs/cq/personalization/touch-ui/content/v2/activities.html/content/campaigns/contexthubdemo/master)
 
    **Creating an Area in your Brand**
 

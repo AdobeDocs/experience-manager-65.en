@@ -329,7 +329,7 @@ You can enable a non-administrator user to use the PDF Generator service. Normal
 
 While converting a document to PDF using the PDF Generator service on Windows Server, occasionally, Windows Server reports that the executable has encountered a problem and needs to close. However, it does not impact the PDF conversion as it continues in the background.
 
-To avoid receiving the error, you can disable the Windows error reporting. For more information on disabling error reporting, see [http://technet.microsoft.com/en-us/library/cc754364.aspx](http://technet.microsoft.com/en-us/library/cc754364.aspx).
+To avoid receiving the error, you can disable the Windows error reporting. For more information on disabling error reporting, see [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx).
 
 ### Configure HTML to PDF conversion {#configure-html-to-pdf-conversion}
 
@@ -364,9 +364,9 @@ Copy the Unicode font to any of the following directories as appropriate for you
 
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms Document Services and other AEM Forms capabilities. Perform the following steps to install the package:
 
-1. Log in to the [AEM server](http://localhost:4502) as an administrator and open [package share](http://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.  
+1. Log in to the [AEM server](https://localhost:4502) as an administrator and open [package share](https://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.  
 
-1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
+1. In [AEM package share](https://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
 
    You can also use the version number to search an add-on package. For version number of the latest package, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
 
@@ -395,7 +395,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 #### Configuring the font manager service  {#configuring-the-font-manager-service}
 
-1. Log in to [AEM Configuration Manager](http://localhost:4502/system/console/configMgr) as an administrator. 
+1. Log in to [AEM Configuration Manager](https://localhost:4502/system/console/configMgr) as an administrator. 
 1. Locate and open the **CQ-DAM-Handler-Gibson Font Managers** service. Specify the path of the System Fonts, Adobe Server Fonts, and Customer Fonts directories. Click **Save**.
 
    >[!NOTE]
@@ -406,19 +406,19 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 A local user account is required to run the PDF Generator service. For steps to create a local user, see [Create a user account in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) or [create a user account in UNIX-based platforms](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
 
-1. Open the [AEM Forms PDF Generator Configuration](http://localhost:4502/libs/fd/pdfg/config/ui.html) page.
+1. Open the [AEM Forms PDF Generator Configuration](https://localhost:4502/libs/fd/pdfg/config/ui.html) page.
 
 1. In the **User Accounts** tab, provide credentials of a local user account, and click **Submit**. If Microsoft Windows prompts, allow access to the user. When added successfully, the configured user is displayed under the **Your user accounts** section in the **User Accounts** tab.
 
 #### Configure the time-out settings {#configure-the-time-out-settings}
 
-1. In [AEM configuration manager](http://localhost:4502/system/console/configMgr), locate and open the **Jacorb ORB Provider** service.
+1. In [AEM configuration manager](https://localhost:4502/system/console/configMgr), locate and open the **Jacorb ORB Provider** service.
 
    Add the following to the **[!UICONTROL Custom Properties.name]**field and click **Save**. It sets the pending reply timeout (also known as, CORBA client timeout) to 600 seconds.
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Tools**&gt;** Forms &gt; Configure PDF Generator**. The default URL is http://localhost:4502/libs/fd/pdfg/config/ui.html.
+1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Tools**&gt;** Forms &gt; Configure PDF Generator**. The default URL is https://localhost:4502/libs/fd/pdfg/config/ui.html.
 
    Open the **General Configuration** tab and modify the value of the following fields for your environment:
 
@@ -455,7 +455,7 @@ On Microsoft Windows, the PDF Generator service uses Adobe Acrobat to convert su
 1. Double-click a PDF document on your system. When Acrobat starts for the first time, the dialog boxes for Sign-in, Welcome screen, and EULA appear. Dismiss these dialog boxes for all the users configured to use PDF Generator. 
 1. Run the PDF Generator utility batch file to configure Acrobat for the PDF Generator service:
 
-    1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and download the adobe-aemfd-pdfg-common-pkg-[version].zip file from the package manager. 
+    1. Open [AEM Package Manager](https://localhost:4502/crx/packmgr/index.jsp) and download the adobe-aemfd-pdfg-common-pkg-[version].zip file from the package manager. 
     1. Unzip the downloaded .zip file. Open the command prompt with administrative privileges.
     1. Navigate to the [extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts directory. Run the following batch file:
 
@@ -518,7 +518,7 @@ To use AES 256 encryption for PDF files, obtain and install the Java Cryptograph
 
 The Assembler service depends on the Reader Extensions service, Signature service, Forms service, and Output service. Perform the following steps to verify that the required services are up and running:
 
-1. Log in to URL http://[server]:[port]&gt;/system/console/bundles as an administrator.
+1. Log in to URL https://[server]:[port]&gt;/system/console/bundles as an administrator.
 1. Search the following service and ensure that the services are up and running:
 
 <table>

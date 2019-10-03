@@ -51,7 +51,7 @@ SmartSync feature provides a number of benefits to your AEM Screens project. It 
 >
 >SmartSync is available to Screens Player with supported servers AEM 6.4.3 FP3.
 >
->Refer to the [AEM Screens Player Downloads](http://download.macromedia.com/screens/) to download the latest player. The following table describes the minimum player version required for each platform:
+>Refer to the [AEM Screens Player Downloads](https://download.macromedia.com/screens/) to download the latest player. The following table describes the minimum player version required for each platform:
 
 | **Platform** |**Minimum Supported Player Version** |
 |---|---|
@@ -63,7 +63,7 @@ Follow the steps below to transition from ContentSync to SmartSync:
 
 1. Migrating from ContentSync to SmartSync requires clearing of ContentSync cache before activating SmartSync.
 
-   Navigate to the ContentSync console from your instance using the link ***http://localhost:4502/libs/cq/contentsync/content/console.html*** and click **Clear Cache**, as shown in the figure below:
+   Navigate to the ContentSync console from your instance using the link ***https://localhost:4502/libs/cq/contentsync/content/console.html*** and click **Clear Cache**, as shown in the figure below:
 
    ![](assets/clear_contesync_cache.png)
 

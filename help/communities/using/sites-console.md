@@ -91,10 +91,10 @@ On the Site Template panel, the Title, Description, Site Root, Base Language, Na
 * **Community Site Name **: the name of the site's root page which appears in the URL
 
     * double-check the name as it is not easily changed after the site is created
-    * the base URL ( `http://*server:port/site root/site name*)` will be displayed underneath the `Community Site Name`
+    * the base URL ( `https://*server:port/site root/site name*)` will be displayed underneath the `Community Site Name`
     
     * for a valid URL, append a base language code + ".html"  
-      *for example*, `http://localhost:4502/content/sites/mysight/en.html`
+      *for example*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * **Community Site Template** menu: use the pull down menu to choose an available [community site template](/communities/using/tools.md).
 
@@ -108,7 +108,7 @@ The Design panel contains 2 sub-panels for selecing the theme and branding banne
 
 ![](assets/sitetheme.png)
 
-The framework uses [Twitter Bootstrap](http://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes may be selected to style the selected community site template, or a Bootstrap theme may be uploaded.
+The framework uses [Twitter Bootstrap](https://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes may be selected to style the selected community site template, or a Bootstrap theme may be uploaded.
 
 When selected, the theme will be overlayed with an opaque blue checkmark.
 
@@ -504,7 +504,7 @@ To correctly redirect, once a site has been configured and pushed to publish, co
 * first sign in with administrator privileges
 * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-    * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+    * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * locate `Adobe Granite Login Selector Authentication Handler`
 * select the `pencil`icon to open the configuration for edit
@@ -523,7 +523,7 @@ On the same AEM publish instance configured with a login page mapping for the co
 
 * browse to the community site home page
 
-    * for example, [http://localhost:4503/content/sites/engage/en.html](http://localhost:4503/content/sites/engage/en.html)
+    * for example, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
 
 * select Log Out
 * select Log In

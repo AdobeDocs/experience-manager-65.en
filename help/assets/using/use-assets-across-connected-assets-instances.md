@@ -118,11 +118,11 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
     1. In the folder of the JAR file, execute the following command on a terminal to create each AEM server.  
        `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
     
-    1. After a few minutes, the AEM server starts successfully. Consider this AEM Sites deployment as the local machine for web page authoring, say at `http://[local_sites]:4502`.
+    1. After a few minutes, the AEM server starts successfully. Consider this AEM Sites deployment as the local machine for web page authoring, say at `https://[local_sites]:4502`.
 
 1. Ensure that the users and roles with local scope exist on the AEM Sites deployment and on the AEM Assets deployment on AMS. Create a technical user on Assets deployment and add to the user group mentioned in [users and groups involved](../../assets/using/use-assets-across-connected-assets-instances.md#usersgroups).  
 
-1. Access the local AEM Sites deployment at `http://[local_sites]:4502`. Click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]** and provide the following values:
+1. Access the local AEM Sites deployment at `https://[local_sites]:4502`. Click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]** and provide the following values:
 
     1. AEM Assets location is `https://[assets_servername_ams]:[port]`.
     1. Credentials of a DAM distributor (technical user).
@@ -161,7 +161,7 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
     
     1. To create a CORS configuration for AEM Sites instance, click ![](assets/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
     
-    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local Sites, that is, `http://[local_sites]:[port]`. Save the configuration.
+    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local Sites, that is, `https://[local_sites]:[port]`. Save the configuration.
 
 ## Use remote assets {#use-remote-assets}
 
@@ -175,9 +175,9 @@ The tags applied on the remote assets are also fetched from Connected Assets and
 
 Use the above setup to try the authoring experience to understand how the functionality works. Use documents or images of your choice on the remote DAM deployment.
 
-1. Navigate to the Assets UI on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from AEM workspace. Alternatively, access `http://[*assets_servername_ams*]:[*port*]/assets.html/content/dam` in a browser. Upload the assets of your choice.
+1. Navigate to the Assets UI on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from AEM workspace. Alternatively, access `https://[*assets_servername_ams*]:[*port*]/assets.html/content/dam` in a browser. Upload the assets of your choice.
 1. On the Sites instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Provide `ksaner` as user name, select the option provided, and click **[!UICONTROL OK]**.
-1. Open a We.Retail website page at **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edit the page. Alternatively, access `http://[*server*]:[port]/editor.html/content/we-retail/us/en/men.html` in a browser to edit a page.
+1. Open a We.Retail website page at **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edit the page. Alternatively, access `https://[*server*]:[port]/editor.html/content/we-retail/us/en/men.html` in a browser to edit a page.
 
    Click **[!UICONTROL Toggle Side Panel]** on upper left.
 

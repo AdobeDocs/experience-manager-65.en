@@ -14,7 +14,7 @@ docset: aem65
 
 # Backbone interaction{#backbone-interaction}
 
-Backbone is a library that helps in creating and following MVC architecture in web applications. The basic idea of Backbone is to organize your interface into logical views, backed by models, each of which can be updated independently when the model changes, without having to redraw the page. For more information about Backbone, see [http://backbonejs.org](http://backbonejs.org/).
+Backbone is a library that helps in creating and following MVC architecture in web applications. The basic idea of Backbone is to organize your interface into logical views, backed by models, each of which can be updated independently when the model changes, without having to redraw the page. For more information about Backbone, see [https://backbonejs.org](https://backbonejs.org/).
 
 Some key concepts are as follows:
 

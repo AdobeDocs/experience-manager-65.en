@@ -36,7 +36,7 @@ The Client Code identifies the Adobe Target customer account and is used as a su
 
 Perform the following steps to integrate a running Target server with AEM Forms:
 
-1. On AEM server, go to http://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html.
+1. On AEM server, go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html.
 
 1. In the **Adobe Target **section, click **Show Configurations** and then the **+** icon to add a new configuration.  
    If you are configuring target for the first time, click **Configure Now. ** 
@@ -51,11 +51,11 @@ Perform the following steps to integrate a running Target server with AEM Forms:
 
 1. Create a Target framework as described in [Add a framework](/sites/administering/using/target.md).  
 
-1. Go to http://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
+1. Go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
 
 1. Click **AEM Forms Target Configuration**.
 1. Select a **Target Framework**.
-1. In the **Target URLs** field, specify all the URLs where A/B tests will run. For example, http://&lt;*hostname*&gt;:&lt;*port*&gt;/ for AEM Forms server on OSGi or http://&lt;*hostname*&gt;:&lt;*port*&gt;/lc/ for AEM Forms server on JEE.  
+1. In the **Target URLs** field, specify all the URLs where A/B tests will run. For example, https://&lt;*hostname*&gt;:&lt;*port*&gt;/ for AEM Forms server on OSGi or https://&lt;*hostname*&gt;:&lt;*port*&gt;/lc/ for AEM Forms server on JEE.  
    Consider that you want to configure a Target URL for a publish instance and your customers can access it using the hostname or the IP address, you will need to configure both as Target URLs - using the hostname as well as the IP address. If you confgure only one of the URLs, your A/B test will not run for customers coming from the other URL. Click **+** to specify multiple URLs.  
 
 1. Click **Save**.
@@ -99,7 +99,7 @@ You can select the audience when you configure A/B testing for a form, as shown 
 
 Perform the following steps to create an A/B test for an adaptive form.
 
-1. Go to **Forms & Documents** at http://&lt;*hostname*&gt;:&lt;*port*&gt;/aem/forms.html/content/dam/formsanddocuments.
+1. Go to **Forms & Documents** at https://&lt;*hostname*&gt;:&lt;*port*&gt;/aem/forms.html/content/dam/formsanddocuments.
 
 1. Navigate to the folder containing the adaptive form.
 1. Click the **Select** tool in the toolbar and select the adaptive form.

@@ -32,7 +32,7 @@ ExactTarget configurations can be added via Cloudservices or Tools. Both methods
 
 To create an ExactTarget configuration in Cloud Services:
 
-1. On the welcome page, click **Cloud Services**. (Or directly access at `http://<hostname>:<port>/etc/cloudservices.html`.)
+1. On the welcome page, click **Cloud Services**. (Or directly access at `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Click **ExactTarget** and then **Configure**. The ExactTarget configuration window opens.
 
    ![](assets/chlimage_1-19.png)
@@ -50,7 +50,7 @@ To create an ExactTarget configuration in Cloud Services:
 
    ExactTarget has been configured. You can edit the configuration by clicking **Edit**. You can go to ExactTarget by clicking **Go to ExactTarget**. 
 
-1. AEM now provides a Data Extension feature. You can import ExactTarget data extension columns. This can be configured by clicking "+" sign appearing besides successfully created ExactTarget configuration. Any of the existing data extension can be selected from the drop-down list. For more information on how to configure data extensions, refer [ExactTarget documentation](http://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
+1. AEM now provides a Data Extension feature. You can import ExactTarget data extension columns. This can be configured by clicking "+" sign appearing besides successfully created ExactTarget configuration. Any of the existing data extension can be selected from the drop-down list. For more information on how to configure data extensions, refer [ExactTarget documentation](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
 
    Imported data extension columns can later be used through the **Text and Personalization** component.
 
@@ -60,7 +60,7 @@ To create an ExactTarget configuration in Cloud Services:
 
 To create an ExactTarget configuration in Tools:
 
-1. On the welcome page, click **Tools**. Or navigate there directly by going to `http://<hostname>:<port>/misadmin#/etc`.
+1. On the welcome page, click **Tools**. Or navigate there directly by going to `https://<hostname>:<port>/misadmin#/etc`.
 1. Select **Tools**, then **Cloud Services Configurations,** then **ExactTarget**.
 1. Click **New** to open the **Create Page **window.
 

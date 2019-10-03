@@ -63,7 +63,7 @@ Use the [Web Console to configure the OSGi bundle](/sites/deploying/using/config
 
 ![](assets/aa-07.png)
 
-1. Open the Web console in your web browser. ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
+1. Open the Web console in your web browser. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Enter your credentials to access the console.
 
    >[!NOTE]

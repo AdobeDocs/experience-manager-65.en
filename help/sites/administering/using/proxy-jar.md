@@ -225,7 +225,7 @@ Now, the output starts for connection 1, which downloads the image contained in 
 ```xml
 C-1-#000000 -> [GET /author/logo.gif HTTP/1.1 ]
 C-1-#000031 -> [Accept: */* ]
-C-1-#000044 -> [Referer: http://localhost:4444/author/prox.html?CFC_cK=1102936796533 ]
+C-1-#000044 -> [Referer: https://localhost:4444/author/prox.html?CFC_cK=1102936796533 ]
 C-1-#000114 -> [Accept-Language: de-ch ]
 C-1-#000138 -> [Accept-Encoding: gzip, deflate ]
 C-1-#000170 -> [User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) ]
