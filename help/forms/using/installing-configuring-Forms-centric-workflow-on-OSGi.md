@@ -42,7 +42,7 @@ AEM Forms Forms-centric workflow on OSGi runs AEM Inbox and AEM Workflow Model c
 
 >[!NOTE]
 >
->Skip to the [Next steps](../../forms/using/installing-configuring-Forms-centric-workflow-on-OSGi.md#next-steps) section of the document, if you have already installed AEM Forms on OSGi as explained in the [install and configure data capture capabilities](../../forms/using/installing-configuring-aem-forms-osgi.md) article.
+>Skip to the [Next steps](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) section of the document, if you have already installed AEM Forms on OSGi as explained in the [install and configure data capture capabilities](../../forms/using/installing-configuring-aem-forms-osgi.md) article.
 
 Before you begin to install and configure Forms-centric workflow on OSGi, ensure that:
 

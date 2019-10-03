@@ -22,11 +22,11 @@ Process Reporting uses the embedded Process Reporting repository to publish Form
 
 Process Reporting consists of the following modules:
 
-* [ProcessDataPublisher service](../../../forms/using/process-reporting/process_reporting_architecture.md#p-processdatapublisher-service-br-p)
-* [ProcessDataStorage service](../../../forms/using/process-reporting/process_reporting_architecture.md#p-processdatastorageprovider-service-br-p)
-* [OSGi service](../../../forms/using/process-reporting/process_reporting_architecture.md#p-osgi-service-br-p)
-* [Query Data servlet](../../../forms/using/process-reporting/process_reporting_architecture.md#p-querydataservlet-service-br-p)
-* [Process Reporting user interface](../../../forms/using/process-reporting/process_reporting_architecture.md#p-process-reporting-user-interface-br-p)
+* [ProcessDataPublisher service](../../../forms/using/process-reporting/process-reporting-architecture.md#p-processdatapublisher-service-br-p)
+* [ProcessDataStorage service](../../../forms/using/process-reporting/process-reporting-architecture.md#p-processdatastorageprovider-service-br-p)
+* [OSGi service](../../../forms/using/process-reporting/process-reporting-architecture.md#p-osgi-service-br-p)
+* [Query Data servlet](../../../forms/using/process-reporting/process-reporting-architecture.md#p-querydataservlet-service-br-p)
+* [Process Reporting user interface](../../../forms/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
 
 ## Process Reporting architecture <br> {#process-reporting-architecture-br}
 

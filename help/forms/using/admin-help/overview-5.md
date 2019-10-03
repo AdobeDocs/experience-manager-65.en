@@ -15,7 +15,7 @@ docset: aem65
 
 # Introduction to working with PDF Generator{#introduction-to-working-with-pdf-generator}
 
-PDF Generator converts various file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents. For a list of supported file formats, see [Software support for PDF Generator](https://chl-author-preview.corp.adobe.com/content/help/en/experience-manager/6-5/forms/using/AEM-forms-JEE-supported-platforms.html#SoftwaresupportforPDFGenerator)
+PDF Generator converts various file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents. For a list of supported file formats, see [Software support for PDF Generator](https://chl-author-preview.corp.adobe.com/content/help/en/experience-manager/6-5/forms/using/aem-forms-jee-supported-platforms.html#SoftwaresupportforPDFGenerator)
 
 **Sending files to PDF Generator for processing**
 
