@@ -23,7 +23,7 @@ You can create an adaptive form fragment from scratch or save a panel in an exis
 
 ### Create fragment from scratch {#create-fragment-from-scratch}
 
-1. Log into AEM Forms author instance at http://[*hostname*]:[*port*]/aem/forms.html.
+1. Log into AEM Forms author instance at https://[*hostname*]:[*port*]/aem/forms.html.
 1. Click **Create &gt; Adaptive Form Fragment**.
 1. Specify title, name, description, and tags for the fragment.
 
@@ -109,7 +109,7 @@ Any fragment you insert in adaptive forms appears as a placeholder image. The pl
 
 Perform the following steps to show complete fragments in forms:
 
-1. Go to AEM web console configuration page at http:[*host*]:[*port*]/system/console/configMgr.
+1. Go to AEM web console configuration page at https:[*host*]:[*port*]/system/console/configMgr.
 
 1. Search and click **[!UICONTROL Adaptive Form Configuration Service]** to open it in edit mode.
 1. Disable **[!UICONTROL Enable Placeholder in place of Fragment]** checkbox to show complete fragments rather than the placeholder image.
@@ -163,7 +163,7 @@ You can change the fragment asset and its bindings from the Edit component dialo
 
 You can perform several operations on adaptive form fragments using the AEM Forms UI.
 
-1. Go to http://[hostname]:[port]/aem/forms.html.  
+1. Go to https://[hostname]:[port]/aem/forms.html.  
 
 1. Click **Select** in the AEM Forms UI toolbar and select an adaptive form fragment. The toolbar displays the following operations you can perform on the selected adaptive form fragment.
 

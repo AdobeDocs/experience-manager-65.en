@@ -56,9 +56,9 @@ Porlet preferences can be configured at deployment time in the portal server or 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd /opt/SUNWps/dtd/portlet.xsd"
+<portlet-app xmlns="https://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd /opt/SUNWps/dtd/portlet.xsd"
              version="1.0">
    <portlet>
       <portlet-name>RSSWeatherPortlet</portlet-name>
@@ -73,7 +73,7 @@ Porlet preferences can be configured at deployment time in the portal server or 
       </init-param>
       <init-param>
          <name>base_url</name>
-         <value>http://xml.weather.yahoo.com/forecastrss?p=</value>
+         <value>https://xml.weather.yahoo.com/forecastrss?p=</value>
       </init-param>
       <expiration-cache>180</expiration-cache>
       <supports>
@@ -91,7 +91,7 @@ Porlet preferences can be configured at deployment time in the portal server or 
          </preference>
          <preference>
             <name>RssXml</name>
-            <value>http://xml.weather.yahoo.com/forecastrss?p=33145</value>
+            <value>https://xml.weather.yahoo.com/forecastrss?p=33145</value>
             <read-only>false</read-only>
          </preference>
       </portlet-preferences>
@@ -137,7 +137,7 @@ The portlet can be configured with the following preferences:
 
 #### OSGi Web Console {#osgi-web-console}
 
-Assuming the portal server runs on host localhost, port 8080 and the AEM portlet web application is mounted in the web application context *cqportlet*, the url to for the web console is `http://localhost:8080/cqportlet/cqbridge/system/console`. The default user and password is **admin**.
+Assuming the portal server runs on host localhost, port 8080 and the AEM portlet web application is mounted in the web application context *cqportlet*, the url to for the web console is `https://localhost:8080/cqportlet/cqbridge/system/console`. The default user and password is **admin**.
 
 Open the **Configurations** tab and select **Portal Directory CQ Server Configuration**. Here you specify the base URL to the author and the publish instance. This procedure is described in [Configuring the Portlet](#configuring-the-portlet).
 
@@ -168,7 +168,7 @@ You can either deploy this bundle at runtime or add it to the portlet web applic
 After the cache is deployed, the portlet caches contents from the publish instance. The portlet cache can be invalidated with a dispatcher flush from AEM. To configure the portlet to use its own cache:
 
 1. Configure a replication agent in author that targets the portal server. 
-1. Assuming that the portal server runs on host **localhost**, **port 8080 **and the AEM portlet web application is mounted in the context **cqportlet**, the url to flush the cache is `http://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET as the method.  
+1. Assuming that the portal server runs on host **localhost**, **port 8080 **and the AEM portlet web application is mounted in the context **cqportlet**, the url to flush the cache is `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET as the method.  
    **Note:** Instead of using a request parameter, you can send an http header named **Path**.
 
 #### Flushing the Cache via Replication Agent {#flushing-the-cache-via-replication-agent}
@@ -202,7 +202,7 @@ To configure a replication agent for the portal:
 1. In the **URI **field, enter the flush URI (URL) of the portlet. The URI is in the following form:
 
    ```xml
-   http://<wps-host>:<port>/<wps-context>/<cq5-portlet-context>/cqbridge/cqpcache
+   https://<wps-host>:<port>/<wps-context>/<cq5-portlet-context>/cqbridge/cqpcache
    ```
 
    ![](assets/screen_shot_2012-02-15at42322pm.png)
@@ -225,7 +225,7 @@ You can manually flush the portlet cache by accessing the same URL configured fo
 
 For example:
 
-`http://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=*` flushes the complete cache. `http://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=/content/mypage/xyz` flushes `/content/mypage/xyz` from the cache.
+`https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=*` flushes the complete cache. `https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=/content/mypage/xyz` flushes `/content/mypage/xyz` from the cache.
 
 ### Portal Security {#portal-security}
 
@@ -251,11 +251,11 @@ To access the portlet's authentication configuration:
 
 1. Access the Web console at the following URL:
 
-   `http://localhost:8080/cqportlet/cqbridge/system/console`
+   `https://localhost:8080/cqportlet/cqbridge/system/console`
 
    For example, in its default configuration:
 
-   `http://wps-host:10040/wps/PA_CQ5_Portlet/cqbridge/system/console`
+   `https://wps-host:10040/wps/PA_CQ5_Portlet/cqbridge/system/console`
 
 1. Log in to the Web console. The default credentials are `admin/admin`. 
 1. In the console, select **Configuration**.
@@ -326,7 +326,7 @@ Before SSO can be enabled for AEM WCM, the underlying repository needs to be con
 
 To enable SSO in AEM WCM, access the relevant configuration entry in the AEM WCM's Apache Felix Web Management Console (OSGi):
 
-1. Access the console through its URI at http://&lt;AEM-host&gt;:&lt;port&gt;/system/console.
+1. Access the console through its URI at https://&lt;AEM-host&gt;:&lt;port&gt;/system/console.
 1. In the Configuration menu, select SSO Authentication Handler. In this example, the SSO handler accepts SSO requests for all paths based on the cookie provided by the AEM portlet. Your configuration may vary.
 
    | Path  |/  |Enables SSO handler for all requests  |
@@ -343,7 +343,7 @@ In order for the underlying AEM WCM instance to accept SSO requests, the portlet
 
 To enable SSO authentication in a AEM portlet:
 
-1. Access the console through its URI at http://&lt;aem-host&gt;:&lt;port&gt;/system/console.
+1. Access the console through its URI at https://&lt;aem-host&gt;:&lt;port&gt;/system/console.
 1. In the Configuration menu, select Day Portal Director Authenticator from the list of available configurations.
 1. In Mode, select SSO. Leave the other parameters with their default values.
 
@@ -386,7 +386,7 @@ To open the website administration page or to edit a page from the portlet, the 
    </LoginModule>
    ```
 
-1. In the OSGi configuration console, by default located at http://localhost:4502/system/console/configMgr, select **CQ PIN Authentication Handler** from the drop-down menu.
+1. In the OSGi configuration console, by default located at https://localhost:4502/system/console/configMgr, select **CQ PIN Authentication Handler** from the drop-down menu.
 1. Edit the **URL Root Path** parameter to just contain the single value **/**.
 
 ### Privileges {#privileges}
@@ -651,7 +651,7 @@ The AEM Quickstart JAR file contains the portlet component files. To obtain the 
     * Execute Quickstart: crx-quickstart/opt/portal
     * Extract Quickstart contents: static/opt/portal
 
-1. Open Package Manager of the CQ5 author instance that is deployed to the application server. (http://*appserverhost*:*port*/cq5author/crx/packmgr)
+1. Open Package Manager of the CQ5 author instance that is deployed to the application server. (https://*appserverhost*:*port*/cq5author/crx/packmgr)
 
 1. Use Package Manager to [Upload and install](../../../sites/administering/using/package-manager.md#uploading-packages-from-your-file-system) the cq-portlets-components.zip package.
 
@@ -747,7 +747,7 @@ To install the portlet:
 1. Navigate to the Portlet Management part of your web portal.
 1. Click Install and browse to the AEM portlet application (cq-portlet-webapp.war) you downloaded and enter other important information about the portlet.
 
-   For other essential portlet information, you can either accept the defaults or change the values. If you accept the default values, the portlet is available at http://&lt;wps-host&gt;:&lt;port&gt;/wps/PA_CQ5_Portlet. The OSGi administration console provided by the portlet is available at http://&lt;wps-host&gt;:&lt;port&gt;/wps/ PA_CQ5_Portlet/cqbridge/system/console (default username/password is admin/admin).
+   For other essential portlet information, you can either accept the defaults or change the values. If you accept the default values, the portlet is available at https://&lt;wps-host&gt;:&lt;port&gt;/wps/PA_CQ5_Portlet. The OSGi administration console provided by the portlet is available at https://&lt;wps-host&gt;:&lt;port&gt;/wps/ PA_CQ5_Portlet/cqbridge/system/console (default username/password is admin/admin).
 
 1. Ensure that the portlet application automatically starts by selecting that option or check box and save your changes. You see a message that your installation was successful.
 
@@ -766,7 +766,7 @@ To configure the portlet:
 
 1. Save the configuration changes in the app server.  
 
-1. Navigate to the OSGI admin console for the portlet. The default location is `http://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. The default username/password is **admin/admin**.  
+1. Navigate to the OSGI admin console for the portlet. The default location is `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. The default username/password is **admin/admin**.  
 
 1. Select the **Day Portal Director CQ Server Configuration** configuration and edit the following values:
 
@@ -781,9 +781,9 @@ To configure the portlet:
 
 ### Content URLs {#content-urls}
 
-When content is requested from AEM, the portlet uses the current display mode (publish or author) and the current path to assemble a complete URL. With the default values, the first url is `http://localhost:4503/content/geometrixx/en.portlet.html`. The value of the `htmlSelector` is automatically added to the URL before the extension.
+When content is requested from AEM, the portlet uses the current display mode (publish or author) and the current path to assemble a complete URL. With the default values, the first url is `https://localhost:4503/content/geometrixx/en.portlet.html`. The value of the `htmlSelector` is automatically added to the URL before the extension.
 
-If the portlet switches to the help mode and the `appendHelpViewModeAsSelector` is selected, then the `help` selector is appended as well, for example, `http://localhost:4503/content/geometrixx/en.portlet.html.help`. If the portlet window is maximized and the `appendMaxWindowStateAsSelector` is selected, then the selector is appended as well, for example, `http://localhost:4503/content/geometrixx/en.portlet.max.help`.
+If the portlet switches to the help mode and the `appendHelpViewModeAsSelector` is selected, then the `help` selector is appended as well, for example, `https://localhost:4503/content/geometrixx/en.portlet.html.help`. If the portlet window is maximized and the `appendMaxWindowStateAsSelector` is selected, then the selector is appended as well, for example, `https://localhost:4503/content/geometrixx/en.portlet.max.help`.
 
 The selectors can be evaluated in AEM and a different template can be used for different selectors.
 

@@ -50,8 +50,8 @@ The hybris extension of the eCommerce Integration Framework has been updated to 
 >[!NOTE]
 >
 >* Supports up to hybris 6.4 with OCC version 2.
->* You will need Java 7 to run the [hybris 5 server.](http://www.hybris.com/en/architecture-technology)
->* The hybris add-on, the [Telco Accelerator](http://www.hybris.com/en/products/telecommunication), is not supported by the AEM extension.
+>* You will need Java 7 to run the [hybris 5 server.](https://www.hybris.com/en/architecture-technology)
+>* The hybris add-on, the [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), is not supported by the AEM extension.
 >
 
 ### Packages Needed for eCommerce with hybris {#packages-needed-for-ecommerce-with-hybris}
@@ -119,7 +119,7 @@ The steps in this procedure will download and build the hybris server. It will a
 
 >[!NOTE]
 >
->To complete this, you will need [Groovy](http://groovy-lang.org/) installed on your system.
+>To complete this, you will need [Groovy](https://groovy-lang.org/) installed on your system.
 
 1. Download the **hybris Commerce Suite **distribution from the hybris download site.
 
@@ -184,7 +184,7 @@ The steps in this procedure will download and build the hybris server. It will a
 
 1. In your browser, navigate to the **hybris administration console** at:
 
-   [http://localhost:9002](http://localhost:9002)
+   [https://localhost:9002](https://localhost:9002)
 
 1. Click **Initialize** and then confirm the initialization action (as it will delete existing data).
 
@@ -207,7 +207,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
 1. In your browser, navigate to the **hybris management console** at:
 
-   [http://localhost:9002/hmc/hybris](http://localhost:9002/hmc/hybris)
+   [https://localhost:9002/hmc/hybris](https://localhost:9002/hmc/hybris)
 
 1. From the sidebar navigation, expland **System** and **Tools**. Then select **Import** to open the **Wizard: CSV Import** window.
 1. In the **Configuration** tab, **Upload** the following **Import file**:
@@ -246,5 +246,5 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
 1. You can now use the product cockpit to view the imported catalogs and products:
 
-   [http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)
+   [https://localhost:9002/productcockpit](https://localhost:9002/productcockpit)
 

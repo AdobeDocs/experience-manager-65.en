@@ -156,42 +156,42 @@ The following table lists the current plug-ins, showing:
    <td valign="top" width="200"><p><a href="../../../sites/administering/using/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Cut, copy and, the three paste modes</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="100"><p><a href="/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td> 
+   <td valign="top" width="100"><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td> 
    <td valign="top" width="100"><p>find<br /> replace</p> </td> 
    <td valign="top" width="200"><p>Find and replace.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="100"><p><a href="/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td> 
+   <td valign="top" width="100"><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td> 
    <td valign="top" width="100"><p>bold<br /> italic<br /> underline</p> </td> 
    <td valign="top" width="200"><p><a href="../../../sites/administering/using/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Basic text formatting</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="100"><p><a href="/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">image</a></p> </td> 
+   <td valign="top" width="100"><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">image</a></p> </td> 
    <td valign="top" width="100"><p>image</p> </td> 
    <td valign="top" width="200">Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors.</td> 
   </tr> 
   <tr> 
-   <td valign="top"><p><a href="/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">keys</a></p> </td> 
+   <td valign="top"><p><a href="/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">keys</a></p> </td> 
    <td valign="top"><p> </p> </td> 
    <td valign="top"><p>To define this value, see <a href="../../../sites/administering/using/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">tab size</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="100"><p><a href="/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">justify</a></p> </td> 
+   <td valign="top" width="100"><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">justify</a></p> </td> 
    <td valign="top" width="100"><p>justifyleft<br /> justifycenter<br /> justifyright<br /> justifyjustify</p> </td> 
    <td valign="top" width="200"><p>Paragraph alignment.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="100"><p><a href="/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">links</a></p> </td> 
+   <td valign="top" width="100"><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">links</a></p> </td> 
    <td valign="top" width="100"><p>modifylink<br /> unlink<br /> anchor</p> </td> 
    <td valign="top" width="200"><p><a href="../../../sites/administering/using/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">Hyperlinks and anchors</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top"><p><a href="/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">lists</a></p> </td> 
+   <td valign="top"><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">lists</a></p> </td> 
    <td valign="top"><p>ordered<br /> unordered<br /> indent<br /> outdent</p> </td> 
    <td valign="top"><p>This plug-in controls both <a href="../../../sites/administering/using/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">indentation and lists</a>; including nested lists.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="100"><p><a href="/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misctools</a></p> </td> 
+   <td valign="top" width="100"><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misctools</a></p> </td> 
    <td valign="top" width="100"><p>specialchars<br /> sourceedit</p> </td> 
    <td valign="top" width="200">Miscellaneous tools allow authors to enter <a href="../../../sites/administering/using/configure-rich-text-editor-plug-ins.md#spchar" target="_blank">special characters</a> or edit the HTML source. Also, you can add a whole <a href="../../../sites/administering/using/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">range of special characters</a> if you want to define your own list.</td> 
   </tr> 
@@ -427,12 +427,12 @@ On a page, you can either include CoralUI 2 RTE clientlib or the CoralUI 3 RTE c
 
 ## Further Information {#further-information}
 
-For more information about configuring the RTE, see the [AEM Widget API](/sites/developing/using/reference-materials/widgets-api/index.md) reference.
+For more information about configuring the RTE, see the [AEM Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) reference.
 
 In particular, to see the plug-ins and related options available:
 
-* The [CQ.form.RichText](/sites/developing/using/reference-materials/widgets-api/output/CQ.form.RichText) component provides a form field for editing styled text information (rich text). To know all the parameters available for the rich text form, see the Config Options.
-* The RichText component provides a wide range of functionality using plug-ins listed under [CQ.form.rte.plugins.Plugin](/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). For each plug-in:
+* The [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) component provides a form field for editing styled text information (rich text). To know all the parameters available for the rich text form, see the Config Options.
+* The RichText component provides a wide range of functionality using plug-ins listed under [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). For each plug-in:
 
     * see the Features for details of functionality that can be enabled (or disabled)  
     * See the Config Options for all parameters available for detailed configuration of the appropriate plug-in

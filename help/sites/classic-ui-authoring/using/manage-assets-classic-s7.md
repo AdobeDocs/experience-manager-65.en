@@ -15,7 +15,7 @@ docset: aem65
 
 # Adding Scene7 Features to your Page{#adding-scene-features-to-your-page}
 
-[Adobe Scene7](http://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
+[Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 
 You can view AEM assets published in Scene7 in various viewers:
 
@@ -247,7 +247,7 @@ The Scene7 Image component lets you add Scene7 functionality to your images, suc
 
 ### Image Template {#image-template}
 
-[Scene7 Image Templates](http://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Scene7, where content and properties were parameterized for variability. The** Image template** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **Image template** component to use values from client context, so that each user experiences the image in a personalized way.
+[Scene7 Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Scene7, where content and properties were parameterized for variability. The** Image template** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **Image template** component to use values from client context, so that each user experiences the image in a personalized way.
 
 Click **Edit** to configure the component. You can configure [settings common to all Scene7 components](/sites/administering/using/scene7.md#settingscommontoallscene7components) as well as other settings described in this section.
 

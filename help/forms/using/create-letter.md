@@ -226,7 +226,7 @@ You need the following in place first to create a correspondence:
 * [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
 
 * The letter XDP ([layout](/forms/using/document-fragments.md)).
-* Other XDPs ([layout fragments](/forms/using/document-fragments.md#main-pars_header_13)) that form parts of the letter. The XDPs\Layouts are created in [Designer](http://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/). 
+* Other XDPs ([layout fragments](/forms/using/document-fragments.md#main-pars_header_13)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/). 
 
 * The relevant [data dictionary](../../forms/using/data-dictionary.md) (Optional). 
 * The [data modules](/forms/using/document-fragments.md) you want to use in the correspondence.

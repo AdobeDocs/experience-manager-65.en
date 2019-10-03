@@ -84,7 +84,7 @@ You can find the packages at these locations:
 
 The `PreUpgradeTasksMBean` OSGI component comes preconfigured with a list of pre-upgrade maintenance tasks that can be run all at once. You can configure the tasks by following the below procedure:
 
-1. Go to the Web Console by browsing to *http://serveraddress:serverport/system/console/configMgr* 
+1. Go to the Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr* 
 
 1. Search for "**preupgradetasks**", then click on the first matching component. The full name of the component is `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`  
 
@@ -159,7 +159,7 @@ The managed bean functionality can be accessed using the [JMX Console](../../../
 
 You can access the MBeans by:
 
-1. Going to the JMX Console at *http://serveraddress:serverport/system/console/jmx*
+1. Going to the JMX Console at *https://serveraddress:serverport/system/console/jmx*
 1. Search for **PreUpgradeTasks** and click the result  
 
 1. Select any method from the **Operations** section and select **Invoke** in the following window.

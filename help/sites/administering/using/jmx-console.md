@@ -17,7 +17,7 @@ docset: aem65
 
 The JMX Console enables you to monitor and manage services on the CRX server. The sections that follow summarize the attributes and operations that are exposed through the JMX framework.
 
-For information about how to use the console controls, see [Using the JMX Console](#using-the-jmx-console). For background information about JMX, see the [Java Management Extensions (JMX) Technology](http://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) page on the Oracle website.
+For information about how to use the console controls, see [Using the JMX Console](#using-the-jmx-console). For background information about JMX, see the [Java Management Extensions (JMX) Technology](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) page on the Oracle website.
 
 For information about creating MBeans to manage your services using the JMX Console, see [Integrating Services with the JMX Console](../../../sites/developing/using/jmx-integration.md).
 
@@ -860,7 +860,7 @@ Several third-party server resources install MBeans that expose attributes and o
   <tr> 
    <td>java.util.logging</td> 
    <td> </td> 
-   <td><a data-disable-query="false" href="http://java.util.logging.LoggingMXBean">java.util.logging.LoggingMXBean</a></td> 
+   <td><a data-disable-query="false" href="https://java.util.logging.LoggingMXBean">java.util.logging.LoggingMXBean</a></td> 
   </tr> 
   <tr> 
    <td>osgi.core</td> 
@@ -887,14 +887,14 @@ MBeans that are deployed with an OSGi service expose service attributes and oper
 
 The main page of the JMX console includes a table of services. Each row in the table represents a service that is exposed by an MBean.
 
-1. Open the Web Console and click the JMX tab. ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. Open the Web Console and click the JMX tab. ([https://localhost:4502/system/console/jmx](https://localhost:4502/system/console/jmx))
 1. Click a cell value for a service to see the attributes and operations for the service.
 1. To change an attribute value, click the value, specify the value in the dialog box that appears, and click Save.
 1. To invoke a service operation, click the operation name, specify argument values in the dialog box that appears, and click Invoke.
 
 ## Using External JMX Applications for Monitoring {#using-external-jmx-applications-for-monitoring}
 
-CRX allows external applications to interact with Managed Beans (MBeans) via [Java Management Extensions (JMX)](http://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Using generic consoles such as [JConsole](http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) or domain-specific monitoring applications, allows getting and setting CRX configurations and properties, as well as the monitoring of performance and resource usage.
+CRX allows external applications to interact with Managed Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Using generic consoles such as [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) or domain-specific monitoring applications, allows getting and setting CRX configurations and properties, as well as the monitoring of performance and resource usage.
 
 ### Using JConsole to connect to CRX {#using-jconsole-to-connect-to-crx}
 
@@ -927,7 +927,7 @@ By default, when you enable the JMX agent for remote monitoring, it uses passwor
 
 `com.sun.management.jmxremote.password.file=pwFilePath`
 
-See the [relevant JMX documentation](http://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) for detailed instructions on setting up a password file.
+See the [relevant JMX documentation](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) for detailed instructions on setting up a password file.
 
 Example:
 

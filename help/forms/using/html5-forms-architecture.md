@@ -17,7 +17,7 @@ docset: aem65
 
 ## Architecture {#architecture}
 
-HTML5 forms functionality is deployed as a package within the embedded AEM instance and is exposesd as a REST end point over HTTP/S using RESTful [Apache Sling Architecture](http://sling.apache.org/).
+HTML5 forms functionality is deployed as a package within the embedded AEM instance and is exposesd as a REST end point over HTTP/S using RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
 `<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` [ ![](assets/01-aem-forms-architecture.jpg)  
 *View Full Size*](javascript:void(0).md)
@@ -26,13 +26,13 @@ HTML5 forms functionality is deployed as a package within the embedded AEM insta
 
 ### Using Sling Framework {#using-sling-framework}
 
-[Apache Sling](http://sling.apache.org/) is resource-centric. It uses a request URL to first resolve the resource. Each resource has a **sling:resourceType** (or **sling:resourceSuperType**) property. Based on this property, the request method, and properties of the request URL, a sling script is then selected to handle the request. This sling script can be a JSP or a servlet. For HTML5 forms, **Profile **nodes act as sling resources and **Profile Renderer** acts as the sling script that handles the request to render the mobile form with a particular profile. A **Profile Renderer** is a JSP that reads parameters from a request and calls the Forms OSGi Service.
+[Apache Sling](https://sling.apache.org/) is resource-centric. It uses a request URL to first resolve the resource. Each resource has a **sling:resourceType** (or **sling:resourceSuperType**) property. Based on this property, the request method, and properties of the request URL, a sling script is then selected to handle the request. This sling script can be a JSP or a servlet. For HTML5 forms, **Profile **nodes act as sling resources and **Profile Renderer** acts as the sling script that handles the request to render the mobile form with a particular profile. A **Profile Renderer** is a JSP that reads parameters from a request and calls the Forms OSGi Service.
 
 For details on REST endpoint and supported request parameters, see [Rendering Form Template](/forms/using/rendering-form-template.md).
 
 When a user makes a request from a client device such as an iOS or Android browser, Sling first resolves the Profile Node based on the request URL. From this Profile Node, it reads **sling:resourceSuperType** and **sling:resourceType** to determine all available scripts that can handle this Form Render request. It then uses Sling request selectors along with request method to identify the script best suited for handling this request. Once the request reaches a Profile Renderer JSP, the JSP calls the Forms OSGi service.
 
-For more details on sling script resolution, see [AEM Sling Cheat Sheet](http://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) or [Apache Sling Url decomposition](http://sling.apache.org/site/url-decomposition.html).
+For more details on sling script resolution, see [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) or [Apache Sling Url decomposition](https://sling.apache.org/site/url-decomposition.html).
 
 #### Typical form processing call flow {#typical-form-processing-call-flow}
 
@@ -51,7 +51,7 @@ Forms OSGi service processes a request in two steps:
 * **Layout and Initial Form State generation**: Forms OSGi render service calls the Forms Cache component to determine if the form has already been cached and has not been invalidated. If the form is cached and valid, it serves the generated HTML from the cache. If the form is invalidated, the Forms OSGi render service generates Initial Form Layout and Form State in XML format. This XML is transformed into HTML layout and Initial JSON Form State by the Forms OSGi service and then cached for subsequent requests.
 * **Prepopulated Forms**: While rendering, If a user requests forms with prepopulated data, the Forms OSGi render service calls the Forms service container and generates a new Form state with merged data. However, since the layout is already generated in the above step, this call is faster than the first call. This call only performs the data merge and runs the scripts on the data.
 
-If there is any update in form or any of assets used inside form, the form cache component detects it and the cache for that particular form is invalidated. Once the Forms OSGi service completes processing, the Profile Renderer jsp adds JavaScript library references and styling to this form and returns the response to client. A typical web server like [Apache](http://httpd.apache.org/) can be used here with HTML compression on. A web server would reduce the response size, network traffic, and time required to stream the data between server and client machine significantly.
+If there is any update in form or any of assets used inside form, the form cache component detects it and the cache for that particular form is invalidated. Once the Forms OSGi service completes processing, the Profile Renderer jsp adds JavaScript library references and styling to this form and returns the response to client. A typical web server like [Apache](https://httpd.apache.org/) can be used here with HTML compression on. A web server would reduce the response size, network traffic, and time required to stream the data between server and client machine significantly.
 
 When a user submits the form, the browser sends state of form in JSON format to the [submit service proxy](../../forms/using/service-proxy.md); then the submit service proxy generates a data XML using JSON data and submits that data XML to submit endpoint.
 
@@ -61,7 +61,7 @@ You require AEM Forms add-on package to enable HTML5 forms. For information abou
 
 ### OSGi Components (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** is the display name of the HTML5 forms OSGi bundle when viewed from Bundle View of Felix admin console (http://[host]:[port]/system/console/bundles).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** is the display name of the HTML5 forms OSGi bundle when viewed from Bundle View of Felix admin console (https://[host]:[port]/system/console/bundles).
 
 This component contains OSGi components for render, cache management, and configuration settings.
 
@@ -108,7 +108,7 @@ HTML5 forms perform in-memory caching using LRU strategy. If cache strategy is s
 
 Configuration Service enables tuning the configuration parameters and cache settings for HTML5 forms.
 
-To update these settings, go to the CQ Felix Admin Console (available at http://&lt;[server]:[port]/system/console/configMgr), search for and select Mobile Forms Configuration.
+To update these settings, go to the CQ Felix Admin Console (available at https://&lt;[server]:[port]/system/console/configMgr), search for and select Mobile Forms Configuration.
 
 You can configure the cache size or disable the cache using configuration service. You can also enable debugging using Debug Options parameter. More information about debugging forms can be found at [Debugging HTML5 forms](/forms/using/debug.md).
 
@@ -134,7 +134,7 @@ For more details, see the [Form Bridge](/forms/using/form-bridge-apis.md) articl
 
 The layout and visual aspect of the HTML5 forms is based on SVG 1.1, jQuery, BackBone, and CSS3 features. The initial appearance of a form is generated and cached at server. The tweaking of that initial layout and any further incremental changes to the form layout are managed on the client. To achieve this, the Runtime package contains a layout engine written in JavaScript and based on jQuery/Backbone. This engine handles all dynamic behavior, like Add/Remove repeatable instances, Growable object layout. This layout engine renders a form one page at a time. Initially a user views only one page and the horizontal scroll bar accounts for only first page. However, when a user scrolls down, the next page starts rendering. This page-by-page rendition reduces the amount of time required to render the first page in a browser and enhances the perceived performance of the form. This engine/library is part of CQ Client Lib with the category name **xfaforms.profile**.
 
-Layout Engine also contains a set of widgets used to capture the value of form fields from a user. These widgets are modeled as [jQuery UI Widgets](http://api.jqueryui.com/jQuery.widget/) that implement certain additional contract to work seamlessly with Layout engine.
+Layout Engine also contains a set of widgets used to capture the value of form fields from a user. These widgets are modeled as [jQuery UI Widgets](https://api.jqueryui.com/jQuery.widget/) that implement certain additional contract to work seamlessly with Layout engine.
 
 For more details on widgets and the corresponding contracts, see [Custom Widgets for HTML5 forms](/forms/using/introduction-widgets.md).
 
@@ -177,7 +177,7 @@ The Profile node has a property **sling:resourceSuperType** with value **xfaform
 * **xfaforms.profile**: This library contains implementation for XFA Scripting and Layout engine.
 
 These libraries are modeled as CQ Client Libraries which takes advantages of automatic concatenation, minification, and compression capabilities of the CQ framework JavaScript libraries.  
-For more information on CQ Client Libs, see [CQ Clientlib Documentation](http://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).  
+For more information on CQ Client Libs, see [CQ Clientlib Documentation](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).  
 
 As described above, the profile renderer JSP calls Forms Service via a sling include. This JSP also sets various debug options based on admin configuration or request parameters.  
 

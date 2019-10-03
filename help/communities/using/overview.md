@@ -58,7 +58,7 @@ The [site creation wizard](../../communities/using/sites-console.md):
 * provides essential features:
 
     * responsive design:  
-      uses [Twitter Bootstrap themes](http://getbootstrap.com)
+      uses [Twitter Bootstrap themes](https://getbootstrap.com)
     
     * login :  
       self-registration, [social login](/communities/using/social-login.md), user profiles
@@ -148,7 +148,7 @@ The global tools console provides access to the following Communities tools :
 
 * [Component Guide](/communities/using/components-guide.md)
 
-    * a sample site, [Community Components](http://localhost:4502/editor.html/content/community-components/en.html), that provides a sample of all Communities components with their default configuration and the ability to experiment with them
+    * a sample site, [Community Components](https://localhost:4502/editor.html/content/community-components/en.html), that provides a sample of all Communities components with their default configuration and the ability to experiment with them
 
 ## Community Site Templates {#community-site-templates}
 

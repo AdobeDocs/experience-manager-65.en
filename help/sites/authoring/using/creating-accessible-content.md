@@ -33,7 +33,7 @@ These are graded according to three conformance levels: Level A (lowest), Level 
 
 When creating your site, you should determine the overall level to which you would like your site to conform.
 
-The following section presents the [WCAG 2.0 Guidelines](http://www.w3.org/TR/WCAG20/#guidelines) with related success criteria for Level A and Level AA [conformance levels](http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
+The following section presents the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
 >[!NOTE]
 >
@@ -43,17 +43,17 @@ The following section presents the [WCAG 2.0 Guidelines](http://www.w3.org/TR/WC
 >
 >In this document we are using:
 >
->* the short names for the [WCAG 2.0 Guidelines](http://www.w3.org/TR/WCAG20/#guidelines).
->* the numbering used in the [WCAG 2.0 Guidelines](http://www.w3.org/TR/WCAG20/#guidelines) to aid cross-referencing with the WCAG website.
+>* the short names for the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines).
+>* the numbering used in the [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines) to aid cross-referencing with the WCAG website.
 >
 
 ## Principle 1: Perceivable {#principle-perceivable}
 
-[Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.](http://www.w3.org/TR/WCAG20/#perceivable)
+[Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.](https://www.w3.org/TR/WCAG20/#perceivable)
 
 ### Text Alternatives (1.1) {#text-alternatives}
 
-[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.](http://www.w3.org/TR/WCAG20/#text-equiv)
+[Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
 ### Non-text Content (1.1.1) {#non-text-content}
 
@@ -96,7 +96,7 @@ There are various forms of non-text content, so the value of the text alternativ
 * If the non-text content is contained in a button element and there is no text forming part of the same button, then the alternative text of the image must indicate the functionality of the button, not describe the image.
 * It is perfectly acceptable for an image to be given an empty (null) alternative text, but only if the image has no alternative text (for example, it is a purely decorative graphic) or if the equivalent text already exists in the page text.
 
-The [W3C draft: HTML5 Techniques for providing useful text alternatives](http://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
+The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
 
 Specific types of non-text content that require text alternatives might include:
 
@@ -143,14 +143,14 @@ Specific types of non-text content that require text alternatives might include:
 
 #### More Information - Non-text Content (1.1.1) {#more-information-non-text-content}
 
-* [Understanding Success Criteria 1.1.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
-* [How to Meet Success Criteria 1.1.1](http://www.w3.org/WAI/WCAG20/quickref/#text-equiv)
-* [W3C: HTML5 Techniques for providing useful text alternatives (draft)](http://dev.w3.org/html5/alt-techniques/)
-* [W3C explanation of and alternatives to CAPTCHAs](http://www.w3.org/TR/turingtest/)
+* [Understanding Success Criteria 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
+* [How to Meet Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG20/quickref/#text-equiv)
+* [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
+* [W3C explanation of and alternatives to CAPTCHAs](https://www.w3.org/TR/turingtest/)
 
 ### Time-based Media (1.2) {#time-based-media}
 
-[Guideline 1.2 Time-based Media: Provide alternatives for time-based media.](http://www.w3.org/TR/WCAG20/#text-equiv)
+[Guideline 1.2 Time-based Media: Provide alternatives for time-based media.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
 This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be pre-recorded or a live stream.
 
@@ -199,8 +199,8 @@ Inserting multimedia, specifically Flash content, into your AEM web pages is sim
 
 #### More Information - Audio-only and Video-only (Pre-recorded) (1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
 
-* [Understanding Success Criteria 1.2.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
-* [How to Meet Success Criteria 1.2.1](http://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
+* [Understanding Success Criteria 1.2.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
+* [How to Meet Success Criteria 1.2.1](https://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
 
 ### Captions (Pre-Recorded) (1.2.2) {#captions-pre-recorded}
 
@@ -225,16 +225,16 @@ Captions can be either:
 
 Use closed captioning wherever possible, as this gives users the choice over whether or not to view captions.
 
-For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](http://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Pre-Recorded) (1.2.2)](#more-information-captions-pre-recorded)). Make sure you provide a note to let users know that captions are available for the video.
+For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Pre-Recorded) (1.2.2)](#more-information-captions-pre-recorded)). Make sure you provide a note to let users know that captions are available for the video.
 
 If you must use open captions, embed the text into the video track. This can be achieved using video editing applications that allow the overlaying of titles onto the video.
 
 #### More Information - Captions (Pre-Recorded) (1.2.2) {#more-information-captions-pre-recorded}
 
-* [Understanding Success Criteria 1.2.2](http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html):
-* [How to Meet Success Criteria 1.2.2](http://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
-* [W3C: Synchronized Multimedia](http://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](http://webaim.org/techniques/captions/)
+* [Understanding Success Criteria 1.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html):
+* [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
 
 ### Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#audio-description-or-media-alternative-pre-recorded}
 
@@ -267,9 +267,9 @@ Exact details of how to create audio-described video are beyond the scope of thi
 
 #### More Information - Audio Description or Media Alternative (Pre-Recorded) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
-* [Understanding Success Criteria 1.2.3](http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
-* [How to Meet Success Criteria 1.2.3](http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](http://www.adobe.com/products/premiere/encore/)
+* [Understanding Success Criteria 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
+* [How to Meet Success Criteria 1.2.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
+* [Adobe Encore CS5](https://www.adobe.com/products/premiere/encore/)
 
 ### Captions (Live) (1.2.4)  {#captions-live}
 
@@ -287,13 +287,13 @@ Follow the guidance provided for [Captions (Pre-Recorded)](#captionsprerecorded)
 
 Detailed instructions are beyond the scope of this document, but the following resources provide helpful information:
 
-* [WebAIM: Real Time Captioning](http://www.webaim.org/techniques/captions/realtime.php)
-* [AccessIT (University of Washington): Can captions be generated automatically using speech recognition?](http://www.washington.edu/accessit/articles?1209)
+* [WebAIM: Real Time Captioning](https://www.webaim.org/techniques/captions/realtime.php)
+* [AccessIT (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accessit/articles?1209)
 
 #### More Information - Captions (Live) (1.2.4) {#more-information-captions-live}
 
-* [Understanding Success Criteria 1.2.4](http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
-* [How to Meet Success Criteria 1.2.4](http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions)
+* [Understanding Success Criteria 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
+* [How to Meet Success Criteria 1.2.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions)
 
 ### Audio Description (Pre-Recorded) (1.2.5)  {#audio-description-pre-recorded}
 
@@ -311,12 +311,12 @@ Follow the guidance provided for [Audio Description or Media Alternative (Pre-Re
 
 #### More Information - Audio Description (Pre-Recorded) (1.2.5) {#more-information-audio-description-pre-recorded}
 
-* [Understanding Success Criteria 1.2.5](http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
-* [How to Meet Success Criteria 1.2.5](http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only)
+* [Understanding Success Criteria 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
+* [How to Meet Success Criteria 1.2.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only)
 
 ### Adaptable (1.3) {#adaptable}
 
-[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.](http://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 This guideline covers the requirements necessary to support people who:
 
@@ -476,8 +476,8 @@ You can make sure your web pages are given the appropriate structure by:
 
 #### More information - Info and Relationships (1.3.1) {#more-information-info-and-relationships}
 
-* [Understanding Success Criteria 1.3.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
-* [How to Meet Success Criteria 1.3.1](http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic)
+* [Understanding Success Criteria 1.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
+* [How to Meet Success Criteria 1.3.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic)
 
 ### Sensory Characteristics (1.3.3)  {#sensory-characteristics}
 
@@ -508,12 +508,12 @@ Make sure that any information that relies on visual characteristics of page con
 
 #### More information - Sensory Characteristics (1.3.3) {#more-information-sensory-characteristics}
 
-* [Understanding Success Criteria 1.3.3](http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
-* [How to Meet Success Criteria 1.3.3](http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
+* [Understanding Success Criteria 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
+* [How to Meet Success Criteria 1.3.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
 
 ### Distinguishable (1.4) {#distinguishable}
 
-[Guideline 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.](http://www.w3.org/TR/WCAG20/#visual-audio-contrast)
+[Guideline 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
 ### Use of Color (1.4.1)  {#use-of-color}
 
@@ -564,9 +564,9 @@ If color is used as a cue to provide information, you should provide an addition
 
 #### More Information - Use of Color (1.4.1) {#more-information-use-of-color}
 
-* [Understanding Success Criteria 1.4.1](http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [How to Meet Success Criteria 1.4.1](http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Understanding Success Criteria 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [How to Meet Success Criteria 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Contrast (Minimum) (1.4.3) {#contrast-minimum}
 
@@ -597,7 +597,7 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 * For text that is at least 18-point (or 14-point bold) in size, the contrast ratio should be at least 3:1.
 * If a background is patterned, then the background around any text should be shaded so that the 4.5:1 or 3:1 ratio is maintained.
 
-To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](http://www.paciellogroup.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](http://www.webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
+To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://www.webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
 Alternatively, if you are less concerned about specifying the appearance of your page, you can choose not to specify background and foreground text colors. No contrast checking is required, as the user’s browser will determine the colors of the text and background.
 
@@ -605,8 +605,8 @@ If it is not possible to meet the recommended contrast levels, you will need to 
 
 #### More Information - Contrast (Minimum) (1.4.3) {#more-information-contrast-minimum}
 
-* [Understanding Success Criteria 1.4.3](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-* [How to Meet Success Criteria 1.4.3](http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast)
+* [Understanding Success Criteria 1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+* [How to Meet Success Criteria 1.4.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast)
 
 ### Images of Text (1.4.5) {#images-of-text}
 
@@ -627,16 +627,16 @@ Images of text are often used when a particular style of text is preferred; for 
 
 #### How to Meet - Images of Text (1.4.5) {#how-to-meet-images-of-text}
 
-If images of text must be used, use CSS to replace the images of text with equivalent text in HTML so that the text is available in a customisable way. For an example on how this can be achieved, refer to [C30: Using CSS to replace text with images of text and providing user interface controls to switch](http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
+If images of text must be used, use CSS to replace the images of text with equivalent text in HTML so that the text is available in a customisable way. For an example on how this can be achieved, refer to [C30: Using CSS to replace text with images of text and providing user interface controls to switch](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
 #### More Information - Images of Text (1.4.5) {#more-information-images-of-text}
 
-* [Understanding Success Criteria 1.4.5](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
-* [How to Meet Success Criteria 1.4.5](http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation)
+* [Understanding Success Criteria 1.4.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
+* [How to Meet Success Criteria 1.4.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation)
 
 ## Principle 2: Operable {#principle-operable}
 
-[Principle 2: Operable - User interface components and navigation must be operable.](http://www.w3.org/TR/WCAG20/#operable)
+[Principle 2: Operable - User interface components and navigation must be operable.](https://www.w3.org/TR/WCAG20/#operable)
 
 ### Pause, Stop, Hide (2.2.2)  {#pause-stop-hide}
 
@@ -650,7 +650,7 @@ If images of text must be used, use CSS to replace the images of text with equiv
 Points to note are:
 
 1. For requirements related to flickering or flashing content, refer to [Do not Design Content in a Way that is Known to Cause Seizures (2.3)](#donotdesigncontentinawaythatisknowntocauseseizures23).
-1. Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the web page (whether it is used to meet other success criteria or not) must meet this success criterion. See [Conformance Requirement 5: Non-Interference](http://www.w3.org/TR/WCAG20/#cc5).
+1. Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the web page (whether it is used to meet other success criteria or not) must meet this success criterion. See [Conformance Requirement 5: Non-Interference](https://www.w3.org/TR/WCAG20/#cc5).
 1. Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so.
 1. An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.
 
@@ -670,12 +670,12 @@ Depending on the nature of the content, you can apply one or more of the followi
 
 #### More information - Pause, Stop, Hide (2.2.2) {#more-information-pause-stop-hide}
 
-* [Understanding Success Criterion 2.2.2](http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
-* [How to meet Success Criterion 2.2.2](http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause)
+* [Understanding Success Criterion 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
+* [How to meet Success Criterion 2.2.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause)
 
 ### Seizures (2.3) {#seizures}
 
-[Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.](http://www.w3.org/TR/WCAG20/#seizure)
+[Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.](https://www.w3.org/TR/WCAG20/#seizure)
 
 ### Three Flashes or Below Threshold (2.3.1) {#three-flashes-or-below-threshold}
 
@@ -685,7 +685,7 @@ Depending on the nature of the content, you can apply one or more of the followi
 
 >[!NOTE]
 >
->Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the web page (whether it is used to meet other success criteria or not) must meet this success criterion. See [Conformance Requirement 5: Non-Interference](http://www.w3.org/TR/WCAG20/#cc5).
+>Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the web page (whether it is used to meet other success criteria or not) must meet this success criterion. See [Conformance Requirement 5: Non-Interference](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Purpose - Three Flashes or Below Threshold (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -696,12 +696,12 @@ In certain cases, flashing content can cause photosensitive seizures. This succe
 You should take steps to make sure the following techniques are applied:
 
 * Make sure that components do not flash for more than three times during any one-second period;
-* If the above condition cannot be met, then display flashing content within a *small safe area* in pixels on the screen. This area is calculated using a complex formula, covered in [G176: Keeping the flashing area small enough](http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), so this technique should only be followed if flashing content is *absolutely* necessary.
+* If the above condition cannot be met, then display flashing content within a *small safe area* in pixels on the screen. This area is calculated using a complex formula, covered in [G176: Keeping the flashing area small enough](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), so this technique should only be followed if flashing content is *absolutely* necessary.
 
 #### More Information - Three Flashes or Below Threshold (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
-* [Understanding Success Criterion 2.3.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
-* [How to meet Success Criterion 2.3.1](http://www.w3.org/WAI/WCAG20/quickref/#seizure)
+* [Understanding Success Criterion 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
+* [How to meet Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG20/quickref/#seizure)
 
 ### Page Titled (2.4.2)  {#page-titled}
 
@@ -721,8 +721,8 @@ You can also edit the page title when editing a page, which is accessible by **P
 
 #### More Information - Page Titled (2.4.2) {#more-information-page-titled}
 
-* [Understanding Success Criterion 2.4.2](http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
-* [How to meet Success Criterion 2.4.2](http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title)
+* [Understanding Success Criterion 2.4.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
+* [How to meet Success Criterion 2.4.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title)
 
 ### Link Purpose (In Context) (2.4.4)  {#link-purpose-in-context}
 
@@ -773,7 +773,7 @@ John Smith’s publications
 >
 >The above snippet is an illustration, it is recommended to use the **Image** component.
 
-While it’s advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can** **be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
+While it’s advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can** **be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
 
 * Where the link text is part of a list of closely related links and when the list item enclosing the link provides enough context.
 * Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.
@@ -787,17 +787,17 @@ Alternatively, scripts can be used so that a minimal amount of text is provided 
 
 #### More Information - Link Purpose (In Context) (2.4.4) {#more-information-link-purpose-in-context}
 
-* [Understanding Success Criterion 2.4.4](http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
-* [How to meet Success Criterion 2.4.4](http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs)
-* [C7: Using CSS to hide a portion of the link text](http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
+* [Understanding Success Criterion 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
+* [How to meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs)
+* [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 
 ## Principle 3: Understandable {#principle-understandable}
 
-[Principle 3: Understandable - Information and the operation of user interface must be understandable.](http://www.w3.org/TR/WCAG20/#understandable)
+[Principle 3: Understandable - Information and the operation of user interface must be understandable.](https://www.w3.org/TR/WCAG20/#understandable)
 
 ### Make Text Content Readable and Understandable (3.1) {#make-text-content-readable-and-understandable}
 
-[Guideline 3.1 Readable: Make text content readable and understandable.](http://www.w3.org/TR/WCAG20/#meaning)
+[Guideline 3.1 Readable: Make text content readable and understandable.](https://www.w3.org/TR/WCAG20/#meaning)
 
 ### Language of Page (3.1.1) {#language-of-page}
 
@@ -823,9 +823,9 @@ In AEM, the default language of your page is set when creating the page, but may
 
 #### More Information - Language of Page (3.1.1) {#more-information-language-of-page}
 
-* [Understanding Success Criterion 3.1.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
-* [How to meet Success Criterion 3.1.1](http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id)
-* The codes are based on ISO 639-1. A more extensive list of codes for each language can be found at the [W3 Schools site](http://www.w3schools.com/tags/ref_language_codes.asp).
+* [Understanding Success Criterion 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
+* [How to meet Success Criterion 3.1.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id)
+* The codes are based on ISO 639-1. A more extensive list of codes for each language can be found at the [W3 Schools site](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Language of Parts (3.1.2)  {#language-of-parts}
 
@@ -871,12 +871,12 @@ To add the span element, with an appropriate language, you can manually edit you
 
 #### More Information - Language of Parts (3.1.2) {#more-information-language-of-parts}
 
-* [Understanding Success Criterion 3.1.2](http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.htm)
-* [How to meet Success Criterion 3.1.2](http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-other-lang-id)
+* [Understanding Success Criterion 3.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.htm)
+* [How to meet Success Criterion 3.1.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-other-lang-id)
 
 ### Help Users Avoid and Correct Mistakes (3.3) {#help-users-avoid-and-correct-mistakes}
 
-[Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.](http://www.w3.org/TR/WCAG20/#minimize-error)
+[Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.](https://www.w3.org/TR/WCAG20/#minimize-error)
 
 ### Labels or Instructions (3.3.2) {#labels-or-instructions}
 
@@ -929,6 +929,6 @@ In simple forms with very limited functionality, appropriately labelling a `Subm
 
 #### More Information - Labels or Instructions (3.3.2) {#more-information-labels-or-instructions}
 
-* [Understanding Success Criterion 3.3.2](http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) 
-* [How to meet Success Criterion 3.3.2](http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
+* [Understanding Success Criterion 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) 
+* [How to meet Success Criterion 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
 

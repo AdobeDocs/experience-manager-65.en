@@ -230,7 +230,7 @@ The listing below shows an example configuration for Content Sync.
 
 In the example, the event listing page is supposed to be the inital page. This information is provided in the **indexPage** property and can thus be easily changed at any time. A second property defines the path of the *events.plist* file. As we will see later, the client application can now read the manifest and act according to it.
 
-As soon as the configuration is setup, the content can be downloaded with a browser or any other HTTP client, or if you are developing for iOS, you can use the dedicated WAppKitSync client library. The download location is made up of the configuration's path and the *.zip* extension, e.g. when working with a local AEM instance: *http://localhost:4502/content/weretail_go.zip*
+As soon as the configuration is setup, the content can be downloaded with a browser or any other HTTP client, or if you are developing for iOS, you can use the dedicated WAppKitSync client library. The download location is made up of the configuration's path and the *.zip* extension, e.g. when working with a local AEM instance: *https://localhost:4502/content/weretail_go.zip*
 
 ### The Content Sync Console {#the-content-sync-console}
 
@@ -245,7 +245,7 @@ It can be usefull for development and troubleshooting.
 
 The console can be accessed at:
 
-`http://localhost:4502/libs/cq/contentsync/content/console.html`
+`https://localhost:4502/libs/cq/contentsync/content/console.html`
 
 It looks as follows: 
 
@@ -260,7 +260,7 @@ For each configuration type, there is a *Content Update Handler*, which is an OS
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface that all update handlers need to implement
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - An abstract class that simplifies the rendering of resources using Sling
 
-Register your class as OSGi component factory and deploy it in the OSGi container in a bundle. This can be done using the [Maven SCR plugin](http://felix.apache.org/site/apache-felix-maven-scr-plugin.html) either using JavaDoc tags or annotations. The following example shows the JavaDoc version:
+Register your class as OSGi component factory and deploy it in the OSGi container in a bundle. This can be done using the [Maven SCR plugin](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) either using JavaDoc tags or annotations. The following example shows the JavaDoc version:
 
 ```java
 /*

@@ -132,7 +132,7 @@ This section is about manually running data store garbage collection via the JMX
 To run garbage collection:
 
 1. In the Apache Felix OSGi Management Console, highlight the **Main** tab and select **JMX** from the following menu.
-1. Next, search for and click the **Repository Manager** MBean (or go to http://host:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement).
+1. Next, search for and click the **Repository Manager** MBean (or go to https://host:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement).
 1. Click** startDataStoreGC(boolean markOnly)**.
 1. enter " `true`" for the `markOnly` parameter if required:
 
@@ -169,7 +169,7 @@ If you don't wish to run data store garbage collection with the Weekly Maintenan
 Here is an example curl command to invoke data store garbage colleciton via the command line:
 
 ```shell
-curl -u admin:admin -X POST --data markOnly=true  http://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
+curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
 
 ```
 

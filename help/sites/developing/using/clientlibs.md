@@ -35,7 +35,7 @@ The standard way to include a client-side library (that is, a JS or CSS file) in
 
 While this approach works in AEM, it can lead to problems when pages and their constituent components become complex. In such cases there is the danger that multiple copies of the same JS library may be included in the final HTML output. To avoid this and to allow logical organization of client-side libraries AEM uses **client-side library folders**.
 
-A client-side library folder is a repository node of type `cq:ClientLibraryFolder`. It's definition in [CND notation](http://jackrabbit.apache.org/node-type-notation.html) is
+A client-side library folder is a repository node of type `cq:ClientLibraryFolder`. It's definition in [CND notation](https://jackrabbit.apache.org/node-type-notation.html) is
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder
@@ -45,7 +45,7 @@ A client-side library folder is a repository node of type `cq:ClientLibraryFolde
   - channels (string) multiple
 ```
 
-By default, `cq:ClientLibraryFolder` nodes can be placed anywhere within the `/apps`, `/libs` and `/etc` subtrees of the repository (these defaults, and other settings can be controlled through the **Adobe Granite HTML Library Manager** panel of the [System Console](http://localhost:4502/system/console/configMgr)).
+By default, `cq:ClientLibraryFolder` nodes can be placed anywhere within the `/apps`, `/libs` and `/etc` subtrees of the repository (these defaults, and other settings can be controlled through the **Adobe Granite HTML Library Manager** panel of the [System Console](https://localhost:4502/system/console/configMgr)).
 
 Each `cq:ClientLibraryFolder` is populated with a set of JS and/or CSS files, along with a few supporting files (see below). The properties of the `cq:ClientLibraryFolder` are configured as follows:
 
@@ -77,7 +77,7 @@ For further details and exmple of usage, see the document [Getting Started with 
 Add a `ui:includeClientLib` tag to your JSP code to add a link to client libraries in the generated HTML page. To reference the libraries, you use the value of the `categories` property of the `ui:includeClientLib` node.
 
 ```
-<%@taglib prefix="ui" uri="http://www.adobe.com/taglibs/granite/ui/1.0" %>
+<%@taglib prefix="ui" uri="https://www.adobe.com/taglibs/granite/ui/1.0" %>
 <ui:includeClientLib categories="<%= categories %>" />
 ```
 
@@ -129,7 +129,7 @@ In previous versions, client library folders were located below `/etc/clientlibs
 
 >[!NOTE]
 >
->Static resources below the client library folder must be in a folder called *resources*. If you do not have the static resources, such as images, under the folder *resources*, it cannot be referenced on a publish instance. Here is an example: http://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>Static resources below the client library folder must be in a folder called *resources*. If you do not have the static resources, such as images, under the folder *resources*, it cannot be referenced on a publish instance. Here is an example: https://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 ### Create a Client Library Folder {#create-a-client-library-folder}
 
-1. Open CRXDE Lite in a web browser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite in a web browser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Select the folder where you want to locate the client library folder and click **Create &gt; Create Node**.
 1. Enter a name for the library file, and in the Type list select `cq:ClientLibraryFolder`. Click **OK** and then click **Save All**.
 1. To specify the category or categories that the library belongs to, select the `cq:ClientLibraryFolder` node, add the following property, and then click **Save All**:
@@ -390,7 +390,7 @@ For further details on GCC options, see the [GCC documentation](https://develope
 
 YUI is set as the default minifier in AEM. To change this to GCC, follow these steps.
 
-1. Go to Apache Felix Config Manager at [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+1. Go to Apache Felix Config Manager at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. Find and edit the **Adobe Granite HTML Library Manager**.
 1. Enable the **Minify** option (if not already enabled).
 1. Set the value **JS Processor Default Configs** to `min:gcc`.
@@ -429,7 +429,7 @@ Opening the `publicmain.css` file reveals the following code:
 
 The `/libs/cq/ui/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/cq/ui/content/dumplibs` node has the component as a resource type. To open the page, use the following URL (use a different host and port as required):
 
-[http://localhost:4502/libs/cq/ui/content/dumplibs.test.html](http://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
+[https://localhost:4502/libs/cq/ui/content/dumplibs.test.html](https://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
 
 The information includes the library path and type (CSS or JS), and the values of the library attributes, such as categories and dependencies. Subsequent tables on the page show the libraries in each category and channel.
 
@@ -443,7 +443,7 @@ The `dumplibs` component includes a test selector that displays the source code 
     
     * Open the following URL in your web browser (use a different host and port as required):
 
-      [http://localhost:4502/libs/cq/ui/content/dumplibs.html](http://localhost:4502/libs/cq/ui/content/dumplibs.html)
+      [https://localhost:4502/libs/cq/ui/content/dumplibs.html](https://localhost:4502/libs/cq/ui/content/dumplibs.html)
 
    The default page shows output for tags with no value for the categories attribute.
 

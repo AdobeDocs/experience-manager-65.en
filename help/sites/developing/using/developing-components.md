@@ -72,7 +72,7 @@ See the [Sling Resource Merger](/sites/developing/using/sling-resource-merger.md
 
 ## Defining the Markup {#defining-the-markup}
 
-Your component will be rendered with [HTML](http://www.w3schools.com/htmL/html_intro.asp). Your component needs to define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
+Your component will be rendered with [HTML](https://www.w3schools.com/htmL/html_intro.asp). Your component needs to define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
 
 ### Using the HTML Template Language {#using-the-html-template-language}
 
@@ -195,7 +195,7 @@ For examples, see:
 >
 >See:
 >
->* the AEM Gems session on [Customizing Dialog Fields](http://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>* the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 >* the related sample code covered under [Code Sample - How to Customize Dialog Fields](/sites/developing/using/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).  
 >
 
@@ -423,7 +423,7 @@ You can find the code of this page on GitHub
 
 ## Using the AEM Brackets Extension {#using-the-aem-brackets-extension}
 
-The [AEM Brackets Extension](/sites/developing/using/aem-brackets.md) provides a smooth workflow to edit AEM components and client libraries. It is based on the [Brackets](http://brackets.io/) code editor.
+The [AEM Brackets Extension](/sites/developing/using/aem-brackets.md) provides a smooth workflow to edit AEM components and client libraries. It is based on the [Brackets](https://brackets.io/) code editor.
 
 The extension:
 
@@ -453,9 +453,9 @@ When migrating a component that was designed for use with the classic UI to a co
     * You will need to create a new dialog for use in the touch-enabled UI. However, for compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI.  
     * The [Dialog Conversion Tool](/sites/developing/using/dialog-conversion.md) is provided to help you extend existing components.
     * [Mapping ExtJS to Granite UI Components](../../../sites/developing/using/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) provides a convenient overview of ExtJS xtypes and node types with their equivalent Granite UI resource types.
-    * Customizing fields, for more information see the AEM Gems session on [Customizing Dialog Fields](http://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+    * Customizing fields, for more information see the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
     * Migrate from vtypes to [Granite UI validation](/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.md)
-    * Using JS listeners, for more information see [Handling Field Events](#handling-field-events) and the AEM Gems session on [Customizing Dialog Fields](http://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+    * Using JS listeners, for more information see [Handling Field Events](#handling-field-events) and the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrating cq:listener Code {#migrating-cq-listener-code}
 

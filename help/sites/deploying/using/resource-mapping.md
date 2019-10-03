@@ -20,7 +20,7 @@ Resource mapping is used to define redirects, vanity URLs and virtual hosts for 
 For example, you can use these mappings to:
 
 * Prefix all requests with `/content` so that the internal structure is hidden from the visitors to your website.
-* Define a redirect so that all requests to the `/content/en/gateway` page of your website are redirected to `http://gbiv.com/`.
+* Define a redirect so that all requests to the `/content/en/gateway` page of your website are redirected to `https://gbiv.com/`.
 
 One possible HTTP mapping prefixes all requests to `localhost:4503` with `/content`. A mapping like this could be used to hide the internal structure from the visitors to the website as it allows:
 
@@ -38,13 +38,13 @@ as the mapping will automatically add the prefix `/content` to `/we-retail/en/pr
 
 >[!NOTE]
 >
->See the Sling documentation, and [Mappings for Resource Resolution](http://sling.apache.org/site/resources.html) and [Resources](http://sling.apache.org/site/mappings-for-resource-resolution.html) for further information.
+>See the Sling documentation, and [Mappings for Resource Resolution](https://sling.apache.org/site/resources.html) and [Resources](https://sling.apache.org/site/mappings-for-resource-resolution.html) for further information.
 
 ## Viewing Mapping Definitions {#viewing-mapping-definitions}
 
 The mappings form two lists that the JCR Resource Resolver evaluates (top-down) to find a match.
 
-These lists can be viewed (together with configuration information) under the **JCR ResourceResolver** option of the Felix console; for example, `http://<*host*>:<*port*>/system/console/jcrresolver`:
+These lists can be viewed (together with configuration information) under the **JCR ResourceResolver** option of the Felix console; for example, `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
 * Configuration  
   Shows the current configuration (as defined for the [Apache Sling Resource Resolver](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslingresourceresolver)).
@@ -72,17 +72,17 @@ will trigger the:
 
 to redirect a request:
 
-`http://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` ``
 
 to:
 
-`http://localhost:4503/libs/cq/core/content/welcome.html`
+`https://localhost:4503/libs/cq/core/content/welcome.html`
 
 New mapping definitions are created within the repository.
 
 >[!NOTE]
 >
->There are many resources available that help explain how to define regular expressions; for example [http://www.regular-expressions.info/](http://www.regular-expressions.info/).
+>There are many resources available that help explain how to define regular expressions; for example [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Creating Mapping Definitions in AEM {#creating-mapping-definitions-in-aem}
 
@@ -94,7 +94,7 @@ This is the structure used when defining mappings for the HTTP protocol. Other f
 
 #### Configuring an Internal Redirect to /content {#configuring-an-internal-redirect-to-content}
 
-To create the mapping that prefixes any request to http://localhost:4503/ with `/content`:
+To create the mapping that prefixes any request to https://localhost:4503/ with `/content`:
 
 1. Using CRXDE navigate to `/etc/map/http`.  
 
@@ -130,7 +130,7 @@ had been requested.
 
 >[!NOTE]
 >
->See [Resources](http://sling.apache.org/site/mappings-for-resource-resolution.html) in the Sling Documentation for further information about the sling properties available and how they can be configured.
+>See [Resources](https://sling.apache.org/site/mappings-for-resource-resolution.html) in the Sling Documentation for further information about the sling properties available and how they can be configured.
 
 >[!NOTE]
 >

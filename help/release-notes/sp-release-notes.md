@@ -583,8 +583,8 @@ List of Content Packages included in AEM 6.5.2.0
 ## Helpful resources {#helpful-resources}
 
 * [AEM 6.5 release notes](../release-notes.md)
-* [AEM product page](http://www.adobe.com/solutions/web-experience-management.html)
-* [AEM developer support](http://docs.adobe.com/content/ddc/en.html)
+* [AEM product page](https://www.adobe.com/solutions/web-experience-management.html)
+* [AEM developer support](https://docs.adobe.com/content/ddc/en.html)
 * [AEM 6.5 documentation](https://helpx.adobe.com/support/experience-manager/6-5.html)
 * Subscribe to [Adobe Priority Product Updates](https://marketing.adobe.com/resources/help/en_US/whatsnew/)
 
@@ -592,6 +592,6 @@ List of Content Packages included in AEM 6.5.2.0
 
 These sites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
-* [Product download at licensing.adobe.com](http://licensing.adobe.com/)
-* [Contact customer support](http://daycare.day.com/)
+* [Product download at licensing.adobe.com](https://licensing.adobe.com/)
+* [Contact customer support](https://daycare.day.com/)
 

@@ -270,7 +270,7 @@ First, set your AEM Forms workspace preferences to receive email notifications. 
 
 The email messages may contain a link that opens the task in AEM Forms workspace, an attachment of the form that is used for the task, or actions for completing the task through email. If a form is included in the email message, you can open the form and complete the task if the buttons for completing the task are built in the form. If actions for completing the task are included in the email message, you can complete the task by clicking the actions in the email or by replying to the email with the action typed as the first line in the body of the email.
 
-**Note**: To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](http://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+**Note**: To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
 When you complete a task through email, the task is removed from your To-do list in AEM Forms workspace.
 

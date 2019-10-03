@@ -45,7 +45,7 @@ The Barcoded Forms service returns the following XML document after decoding the
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>  
-<xb:scanned_image xmlns:xb="http://decoder.barcodedforms.adobe.com/xmlbeans"     path="tiff" version="1.0"> 
+<xb:scanned_image xmlns:xb="https://decoder.barcodedforms.adobe.com/xmlbeans"     path="tiff" version="1.0"> 
     <xb:decode> 
         <xb:date>2007-05-11T15:07:49.965-04:00</xb:date>  
         <xb:host_name>myhost.adobe.com</xb:host_name>  
@@ -91,7 +91,7 @@ The Barcoded Forms service returns the following XML document after decoding the
 
 ### Workflows that use barcoded forms {#workflows-that-use-barcoded-forms}
 
-Form authors create interactive barcoded forms by using Designer. (See [Designer Help](http://www.adobe.com/go/learn_aemforms_designer_63).) When a user fills a barcoded form by using Adobe Reader or Acrobat, the barcode is updated automatically to encode the form data.
+Form authors create interactive barcoded forms by using Designer. (See [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_63).) When a user fills a barcoded form by using Adobe Reader or Acrobat, the barcode is updated automatically to encode the form data.
 
 The Barcoded Forms service is useful for converting data that exists on paper to electronic format. For example, when a barcoded form is filled and printed, the printed copy can be scanned and used as input to the Barcoded Forms service.
 
@@ -124,11 +124,11 @@ Also, conside ``r the following limitations when using the Barcoded Forms servic
 * The service fully supports AcroForms and static forms containing 2D barcodes that are saved using Adobe Reader or Acrobat. However, for 1D barcodes, either flatten the form or supply it as scanned PDF or TIFF document.
 * Dynamic XFA forms are not fully supported. To properly decode 1D and 2D barcodes in a dynamic form, either flatten the form or supply it as scanned PDF or TIFF document.
 
-In addition, the service can decode any barcode that uses supported symbology if the above limitations are observed. For more information on how to create interactive barcoded forms, see [Designer Help](http://www.adobe.com/go/learn_aemforms_designer_63).
+In addition, the service can decode any barcode that uses supported symbology if the above limitations are observed. For more information on how to create interactive barcoded forms, see [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Configure properties of the service &nbsp; {#configureproperties}
 
-You can use the **AEMFD Barcoded Forms Service** in AEM Console to configure properties for this service. The default URL of AEM console is `http://[host]:[port]/system/console/configMgr`.
+You can use the **AEMFD Barcoded Forms Service** in AEM Console to configure properties for this service. The default URL of AEM console is `https://[host]:[port]/system/console/configMgr`.
 
 ## Using the service {#using}
 
@@ -156,7 +156,7 @@ The following sample code decodes a barcode in a document and saves the output X
                 javax.xml.transform.dom.DOMSource,
                 javax.servlet.jsp.JspWriter,
                 org.apache.commons.lang.StringEscapeUtils" %><%
-%><%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0" %><%
+%><%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0" %><%
 %><sling:defineObjects/><%
 
  // Get reference to BarcodedForms OSGi service.

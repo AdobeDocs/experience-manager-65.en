@@ -26,7 +26,7 @@ This article describes how to configure **AEM DS Settings Service**. This settin
 Following are the steps to configure the **[!UICONTROL AEM DS Settings]**:
 
 1. Open the Configuration Manager on the publish instance using the URL:   
-   *http://localhost:port/system/console/configMgr*.
+   *https://localhost:port/system/console/configMgr*.
 
    ![AEM Web Console Configuration](assets/web_configuration_console_new.png)
 
@@ -40,7 +40,7 @@ Following are the steps to configure the **[!UICONTROL AEM DS Settings]**:
 
 1. Add the following information in the respective fields:
 
-   **[!UICONTROL **Processing Server UR**L]**: The Processing Server is the server where the Forms or AEM workflow needs to be triggered. This can be same as the URL of the AEM author instance or the other Server URL (that is, http://localhost:port/).
+   **[!UICONTROL **Processing Server UR**L]**: The Processing Server is the server where the Forms or AEM workflow needs to be triggered. This can be same as the URL of the AEM author instance or the other Server URL (that is, https://localhost:port/).
 
    ****[!UICONTROL Processing Server User Name]****: Workflow user's User Name [based on the server URL being used]
 

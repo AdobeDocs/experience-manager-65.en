@@ -20,16 +20,16 @@ You can use REST interface of QueryBuilder or create an OSGi service using Query
 
 Before adding any custom report, perform the following template procedure:
 
-1. Data used in custom reports must be available in Process Reporting. To ensure the availability of data, schedule a cron job or use ** [Sync](http://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** option on the Process Reporting UI.
-1. The URL request (encapsulating the desired query) must return an appropriate query result object. To create a query, you can use REST interface of [QueryBuilder](http://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) to create an OSGi service using QueryBuilder API. You can create dynamic or static queries.  
+1. Data used in custom reports must be available in Process Reporting. To ensure the availability of data, schedule a cron job or use ** [Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** option on the Process Reporting UI.
+1. The URL request (encapsulating the desired query) must return an appropriate query result object. To create a query, you can use REST interface of [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) to create an OSGi service using QueryBuilder API. You can create dynamic or static queries.  
 
 1. Create a custom user interface to display the results. You can create a stand-alone user interface or integrate result with existing Process Reporting UI.
 
 ## Using the REST interface of the QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST interface exposes the functionality of the Asset Share Query Builder through a Java API and a REST API. Learn how to use [CRX QueryBuilder REST interface](http://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html), before performing the following steps:
+CRX QueryBuilder REST interface exposes the functionality of the Asset Share Query Builder through a Java API and a REST API. Learn how to use [CRX QueryBuilder REST interface](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html), before performing the following steps:
 
-1. Browse to the URL http://[server]:[port]/lc/bin/querybuilder.json  
+1. Browse to the URL https://[server]:[port]/lc/bin/querybuilder.json  
 
 1. Create a query based on the Process Reporting storage node structure and node properties.
 
@@ -37,7 +37,7 @@ CRX QueryBuilder REST interface exposes the functionality of the Asset Share Que
 
    To fetch all the process names, the query is:
 
-   `http://[Server]:[Port]/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
+   `https://[Server]:[Port]/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ CRX QueryBuilder REST interface exposes the functionality of the Asset Share Que
 
 ## Creating a Service using Query Builder API&nbsp; {#creating-a-service-using-query-builder-api-nbsp}
 
-The prerequisite to creating a service using Query builder API are [creating and deploying CQ OSGI bundle](http://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) and [using Query Builder API](http://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+The prerequisite to creating a service using Query builder API are [creating and deploying CQ OSGI bundle](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) and [using Query Builder API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Create an OSGi service with appropriate annotations. To access the QueryBuilder use:
 
@@ -61,7 +61,7 @@ The prerequisite to creating a service using Query builder API are [creating and
     predicateGroup.setAllRequired(true);
    ```
 
-1. Add predicates to the newly created predicateGroup. A few useful predicate constructs are [JcrBoolPropertyPredicateEvaluator](http://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](http://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](http://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](http://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html), and [TypePredicateEvaluator](http://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
+1. Add predicates to the newly created predicateGroup. A few useful predicate constructs are [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html), and [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
 
    For static reports hardcode the predicates, whereas for dynamic reports, fetch the predicates from the request.
 
@@ -340,7 +340,7 @@ public class PeriodicProcessVolume {
 The sample `pom.xml`file to build above the service is:
 
 ```java
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
  
     <!-- ====================================================================== -->
@@ -421,7 +421,7 @@ The sample `pom.xml`file to build above the service is:
 
 ## Creating a separate UI&nbsp; {#creating-a-separate-ui-nbsp}
 
-The prerequisites to creating a separate UI for displaying results are [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creating a CRX Node](http://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) and providing appropriate [access privileges](http://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
+The prerequisites to creating a separate UI for displaying results are [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) and providing appropriate [access privileges](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
 1. Create a CRX Node at the `/apps` node and grant appropriate access permissions. (PERM_PROCESS_REPORTING_USER)
 1. Define the renderer at the `/content` node.
@@ -440,7 +440,7 @@ The prerequisites to creating a separate UI for displaying results are [Sling Ba
 A sample JSP code which uses both OSGi Service and QueryBuilder API is:
 
 ```
-<%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0"%>
+<%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
 <%request.setAttribute("silentAuthor", new Boolean(true));%>
 <%@include file="/libs/foundation/global.jsp"%>
 <%@ page import="java.util.Map,
@@ -629,7 +629,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Integrating report UI in existing Process Reporting UI&nbsp; {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-The prerequisites to creating a separate UI for displaying results are [Sling Basics](http://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](http://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) and providing appropriate [access privileges](http://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
+The prerequisites to creating a separate UI for displaying results are [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) and providing appropriate [access privileges](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
 1. Create a separate UI as described in [Creating a separate UI](/forms/using/process-reporting/process-reporting-custom-reports.html?cq_ck=1416827713473) section.
 1. Create a child `nt:unstructured` node at the `/content/process-reporting-runtime/custom-reports` node for every pluggable report.

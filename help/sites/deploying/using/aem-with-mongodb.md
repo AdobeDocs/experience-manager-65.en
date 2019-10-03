@@ -172,7 +172,7 @@ blobCacheSize=1024
 Where:
 
 * `mongodburi`  
-  This is the MongoDB server AEM needs to connect to. Connections are made to all known members of the default replica set. If MongoDB Cloud Manager is used, server security is enabled. Consequently, the connection string must contain a suitable username and password. Non-enterprise versions of MongoDB only support username and password authentication. For more information on the connection string syntax, consult the [documentation](http://docs.mongodb.org/manual/reference/connection-string/).
+  This is the MongoDB server AEM needs to connect to. Connections are made to all known members of the default replica set. If MongoDB Cloud Manager is used, server security is enabled. Consequently, the connection string must contain a suitable username and password. Non-enterprise versions of MongoDB only support username and password authentication. For more information on the connection string syntax, consult the [documentation](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`  
   The name of the database. The default for AEM is `aem-author`.
@@ -227,7 +227,7 @@ If the query hint is not disabled, any performance tuning of indexes will have n
 
 #### Enable Persistent Cache for MongoMK {#enable-persistent-cache-for-mongomk}
 
-It is recommended that a persistent cache configuration is enabled for MongoDB deployments, in order to maximize speed for environments with high I/O read performance. For more details, see the [Jackrabbit Oak documentation](http://jackrabbit.apache.org/oak/docs/nodestore/persistent-cache.html).
+It is recommended that a persistent cache configuration is enabled for MongoDB deployments, in order to maximize speed for environments with high I/O read performance. For more details, see the [Jackrabbit Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/persistent-cache.html).
 
 ## MongoDB Operating System Optimizations {#mongodb-operating-system-optimizations}
 
@@ -376,7 +376,7 @@ If the `mongod` process is started from a location other than the `/etc/init.d` 
 
 >[!NOTE]
 >
->For more information on the NUMA policies available, consult the [numactl documentation](http://linux.die.net/man/8/numactl).
+>For more information on the NUMA policies available, consult the [numactl documentation](https://linux.die.net/man/8/numactl).
 
 The MongoDB process will behave differently under different allocation policies:
 
@@ -514,13 +514,13 @@ echo 0 > /proc/sys/vm/zone_reclaim_mode
 
 Linux allows for configurable control over the allocation of resources via the `ulimit` command. This can be done on a user or on a per process basis.
 
-It is recommended that you configure ulimit for the mongod process according to the [MongoDB Recommended ulimit Settings](http://docs.mongodb.org/manual/reference/ulimit/#recommended-ulimit-settings).
+It is recommended that you configure ulimit for the mongod process according to the [MongoDB Recommended ulimit Settings](https://docs.mongodb.org/manual/reference/ulimit/#recommended-ulimit-settings).
 
 #### Test MongoDB I/O Performance {#test-mongodb-i-o-performance}
 
 MongoDB provides a tool called `mongoperf` that is designed to test I/O performance. It is recommended you use it to test the performance of all your MongoDB instances that make up your infrastructure.
 
-For information on how to use `mongoperf`, view the [MongoDB documentation](http://docs.mongodb.org/manual/reference/program/mongoperf/).
+For information on how to use `mongoperf`, view the [MongoDB documentation](https://docs.mongodb.org/manual/reference/program/mongoperf/).
 
 >[!NOTE]
 >
@@ -571,7 +571,7 @@ If you are using WMWare ESX to manage and deploy your virtualized environments, 
 1. Use Storage I/O Control to allocate sufficient I/O to the `mongod` process.
 1. Guarantee CPU resources of the machines hosting MongoDB by setting [CPU Reservation](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html)  
 
-1. Consider using ParaVirtual I/O drivers. For more information on how to do this, check this [knowledgebase article](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).
+1. Consider using ParaVirtual I/O drivers. For more information on how to do this, check this [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).
 
 ### Amazon Web Services {#amazon-web-services}
 
@@ -667,7 +667,7 @@ For more information on sizing, see the [Hardware Sizing Guidelines](../../../ma
 
 ### MongoDB Performance Optimization {#mongodb-performance-optimization}
 
-For generic information on MongoDB performance, see [Analyzing MongoDB Performance](http://docs.mongodb.org/manual/administration/analyzing-mongodb-performance/).
+For generic information on MongoDB performance, see [Analyzing MongoDB Performance](https://docs.mongodb.org/manual/administration/analyzing-mongodb-performance/).
 
 ## Known Limitations {#known-limitations}
 

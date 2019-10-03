@@ -47,7 +47,7 @@ Sarah receives an email with the subject “Your Auto Insurance Renewal”.
 
 Go to **Adobe Experience Manager &gt; Forms &gt; Forms & Documents &gt; We.Finance &gt; Auto Insurance. **Select the** Auto Insurance Renewal **interactive communication** **and** **click** Open Agent UI**. The interactive communication opens up in the Agent UI. Enter a valid email address to receive the email with attached policy document and click Submit.
 
-You can access and review the Auto Insurance Renewal interactive communication directly from `http://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+You can access and review the Auto Insurance Renewal interactive communication directly from `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah receives an insurance policy renewal communication from We.Finance and decides to renew {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
@@ -69,7 +69,7 @@ You must have received an email with an attached PDF. The PDF is a print version
 
 The **Renew Now** button in the email directs Sarah to the web version of the policy. You can visit the following URL:
 
-`http://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
+`https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
 You can check the detailed summary of your Auto Insurance Renewal and click **Renew Now** at the bottom of the page.
 
@@ -87,7 +87,7 @@ Click **Renew Now **to reach to the Payment page. Fill in your Credit Card infor
 
 You can reach the payment page in the authoring instance at
 
-`http://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=1`
+`https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=1`
 
 ### Sarah makes the payment and completes the process {#sarah-makes-the-payment-and-completes-the-process}
 
@@ -101,4 +101,4 @@ When Sarah fills the credit card details and clicks Submit, her credit card paym
 
 You can view the confirmation message after clicking Make Payment at
 
-`http://[authorServer]:[authorPort]/content/forms/af/we-finance/credit-card/ccbillpayment/jcr:content/guideContainer.guideThankYouPage.html?owner=admin&status=Submitted`
+`https://[authorServer]:[authorPort]/content/forms/af/we-finance/credit-card/ccbillpayment/jcr:content/guideContainer.guideThankYouPage.html?owner=admin&status=Submitted`

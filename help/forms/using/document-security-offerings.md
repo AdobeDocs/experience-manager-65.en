@@ -33,7 +33,7 @@ The Document Security Server is the central component through which Document Sec
 
 The Document Security server provides a web-based interface (web page) to create policies, manage policy-protected documents, and monitor events that are associated with policy-protected documents. Administrators can also configure global options such as user authentication, auditing, and messaging for invited users, and manage invited user accounts.
 
-The server is included in AEM Forms Document Security add-on offering. You can contact AEM Forms [sales team](http://www.adobe.com/products/request-consultation/marketing-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) to purchase the Document Security add-on.
+The server is included in AEM Forms Document Security add-on offering. You can contact AEM Forms [sales team](https://www.adobe.com/products/request-consultation/marketing-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) to purchase the Document Security add-on.
 
 ### Protect documents {#protect-documents}
 
@@ -45,7 +45,7 @@ You can use Document Security SDK, Adobe Acrobat, Document Security Extension fo
 
 * **Document Security SDK:** The SDK is a feature-rich client. You can use Document Security SDK to access document server functionality, open policy-protected documents, and develop custom extensions, plug-ins or applications. For example, you can develop extensions to protect custom file formats or integrate SDK with Data Loss Prevention (DLP) solutions. Extensions, applications, and plug-ins developed usingDocument Security SDK send documents to designated AEM Forms server and the policies areapplied on the server. Also note, AEM Forms document security client SDK (CSDK) cannot unprotect the documents protected using portable protection library (PPL) and vice-versa.  
   
-  The Document Security SDK is available for both Java and C++. Java SDK is included in AEM Forms Document Security offering and it is installed on deploying AEM forms on JEE. You can contact [AEM support team](https://helpx.adobe.com/marketing-cloud/contact-support.html) to procure C++ SDK. The C++ SDK can be compiled with Microsoft Visual Studio 2013. You can visit [Document Security API documentation](http://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) site to learn and use features the SDK.
+  The Document Security SDK is available for both Java and C++. Java SDK is included in AEM Forms Document Security offering and it is installed on deploying AEM forms on JEE. You can contact [AEM support team](https://helpx.adobe.com/marketing-cloud/contact-support.html) to procure C++ SDK. The C++ SDK can be compiled with Microsoft Visual Studio 2013. You can visit [Document Security API documentation](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) site to learn and use features the SDK.
 
 * **Adobe Acrobat:** You can use Adobe Acrobat to apply security policy to PDF documents createdusing popular desktop applications, such as Microsoft Office, web browsers, or any application that supports printing in PDF format.  
   

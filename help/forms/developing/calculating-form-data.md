@@ -82,11 +82,11 @@ In this form design, the Calculate button is a command button, and the script is
 
 >[!NOTE]
 >
->For information about creating a form design script, see [Forms Designer](http://www.adobe.com/go/learn_aemforms_designer_63).
+>For information about creating a form design script, see [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 >[!NOTE]
 >
->For more information about the Forms service, see [Services Reference for AEM Forms](http://www.adobe.com/go/learn_aemforms_services_63).
+>For more information about the Forms service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Summary of steps {#summary-of-steps}
 

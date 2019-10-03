@@ -53,7 +53,7 @@ On the [Site Template step](../../communities/using/sites-console.md#step2013asi
     * double-check the name as it is not easily changed after the site is created
     * the initial URL will be displayed underneath the Community Site Name
     * for a valid URL, append a base language code + ".html"
-    * *for example*, http://localhost:4502/content/sites/ `engage/en.html`
+    * *for example*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Template**: pull down to choose `Reference Site`
 
@@ -215,7 +215,7 @@ From left to right they are:
 >1. In pop-up dialog for Agent Settings, select Transport tab.
 >1. In URI, change the port number, 4503, to the desired port number >
 >    * for example, to use port 6103:   
->      http://localhost:6103/bin/receive?sling:authRequestLogin=1
+>      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
 >1. Select "OK".
 >1. (optional) Select "Clear" or "Force Retry" to reset the replication queue.
@@ -252,7 +252,7 @@ Note that [Aaron McDonald](/communities/using/tutorials.md#demo-users) is a memb
 
 ![](assets/chlimage_1-67.png) 
 
-#### http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
+#### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
 ![](assets/chlimage_1-68.png) 
 
@@ -270,12 +270,12 @@ Add a `Login Page Mapping` as
 
 When working with the publish site for demonstration purposes, it might be useful to change the default home page to the new site.
 
-To do so requires using [CRXDE](http://localhost:4503/crx/de) Lite to edit the [resource-mapping](../../sites/deploying/using/resource-mapping.md) table on publish.
+To do so requires using [CRXDE](https://localhost:4503/crx/de) Lite to edit the [resource-mapping](../../sites/deploying/using/resource-mapping.md) table on publish.
 
 To get started:
 
 1. On publish instance, sign in with administrator privileges.
-1. Browse to [http://localhost:4503/crx/de](http://localhost:4503/crx/de).
+1. Browse to [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 1. In the project browser, expand `/etc/map.`
 1. Select the `http` node:
 
@@ -284,7 +284,7 @@ To get started:
         * **Name **localhost.4503  
           (do *not *use ':')
         
-        * **Type ** [sling:Mapping](http://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+        * **Type ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. With newly created `localhost.4503` node selected:
 
@@ -303,9 +303,9 @@ To get started:
 
 1. Select **Save All.**
 1. (optional) Delete the browsing history.
-1. Browse to http://localhost:4503/.
+1. Browse to https://localhost:4503/.
 
-    * arrive at http://localhost:4503/content/sites/engage/en.html
+    * arrive at https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
 >
@@ -321,7 +321,7 @@ If unable to save changes, be sure that the node name is `localhost.4503`, with 
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 
-The '**$**' at the end of the regular expression `sling:match`string is crucial, so that only exactly `http://localhost:4503/` is mapped, else the redirect value is prefixed to any path that might exist after the server:port in the URL. Thus, when AEM tries to redirect to the login page, it fails.
+The '**$**' at the end of the regular expression `sling:match`string is crucial, so that only exactly `https://localhost:4503/` is mapped, else the redirect value is prefixed to any path that might exist after the server:port in the URL. Thus, when AEM tries to redirect to the login page, it fails.
 
 ### Modify the Site {#modify-the-site}
 

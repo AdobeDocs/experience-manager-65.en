@@ -109,7 +109,7 @@ Instances that have customized Assets deployments need to be prepared for the up
 
 You can prepare customizations to the Assets UI by doing the following:
 
-1. On the instance that needs to be upgraded, open CRXDE Lite by going to *http://server:port/crx/de/index.jsp* 
+1. On the instance that needs to be upgraded, open CRXDE Lite by going to *https://server:port/crx/de/index.jsp* 
 
 1. Go to the following node:
 

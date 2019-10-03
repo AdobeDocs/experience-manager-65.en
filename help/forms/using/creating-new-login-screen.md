@@ -270,7 +270,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 1. Add new images in `/apps/livecycle/core/content/login`. To add image:
 
     1. Install WebDAV client.
-    1. Navigate to `/apps/livecycle/core/content/login` folder, using webDAV client. For more information, see: [http://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](http://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+    1. Navigate to `/apps/livecycle/core/content/login` folder, using webDAV client. For more information, see: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
     
     1. Add new images.
 

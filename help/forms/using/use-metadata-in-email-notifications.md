@@ -135,11 +135,11 @@ An AEM Forms application provides several metadata variables (key-value pairs) o
   </tr> 
   <tr> 
    <td>host_prefix</td> 
-   <td>URL of the author server. For example, http://10.41.42.66:4502<br /> </td> 
+   <td>URL of the author server. For example, https://10.41.42.66:4502<br /> </td> 
   </tr> 
   <tr> 
    <td>publish_prefix</td> 
-   <td>URL of the publish server. For example, http://10.41.42.66:4503</td> 
+   <td>URL of the publish server. For example, https://10.41.42.66:4503</td> 
   </tr> 
  </tbody> 
 </table>
@@ -152,7 +152,7 @@ You can also use custom metadata in an email notification. Custom metadata conta
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is a scripting language. It is used for client-side scripting and server applications. Perform the following steps to use ECMAScript to add custom metadata for an email template:
 
-1. Log in to CRX DE with an administrative account. The URL is http://[server]:[port]/crx/de/index.jsp  
+1. Log in to CRX DE with an administrative account. The URL is https://[server]:[port]/crx/de/index.jsp  
 
 1. Navigate to /apps/fd/dashboard/scripts/metadataScripts. Create a file with extension .ecma. For example, usermetadata.ecma
 

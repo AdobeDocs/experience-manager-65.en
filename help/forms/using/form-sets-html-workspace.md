@@ -21,7 +21,7 @@ AEM Forms workspace supports formsets. With formsets, multiple forms related to 
 
 ## Attaching a formset to startpoint in an AEM Forms workspace app <br> {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
-1. Create the business process workflow in Workbench. For more information, see [Workbench help](http://www.adobe.com/go/learn_aemforms_workbench_63).
+1. Create the business process workflow in Workbench. For more information, see [Workbench help](https://www.adobe.com/go/learn_aemforms_workbench_63).
 1. From the process properties of the startpoint, select **Use A CRX Asset** in Presentation & Data.
 
    ![](assets/1-3.png)

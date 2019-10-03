@@ -41,7 +41,7 @@ The following steps allow you to create a sample project for Screens and publish
    >
    >    
    >    
-   >    1. Navigate to [Adobe Experience Manager Web Console Configuration](http://localhost:4502/system/console/configMgr/org.apache.sling.security.impl.ReferrerFilter).
+   >    1. Navigate to [Adobe Experience Manager Web Console Configuration](https://localhost:4502/system/console/configMgr/org.apache.sling.security.impl.ReferrerFilter).
    >    1. Check the **allow.empty** option.
    >    1. Click **Save**.
    >    
@@ -49,7 +49,7 @@ The following steps allow you to create a sample project for Screens and publish
 
 1. **Creating a new project**
 
-    1. Select the Adobe Experience Manager link (top left) and then **Screens**. Alternatively, you can ﻿go directly to: [http://localhost:4502/screens.html/content/screens](http://localhost:4502/screens.html/content/screens).
+    1. Select the Adobe Experience Manager link (top left) and then **Screens**. Alternatively, you can ﻿go directly to: [https://localhost:4502/screens.html/content/screens](https://localhost:4502/screens.html/content/screens).
     
     1. Click **Create** to create a new Screens project (see the figure below).
     1. Select **Screens** from the **Create Screens Project** wizard and click **Next**.
@@ -231,7 +231,7 @@ The following steps allow you to create a sample project for Screens and publish
    To view the pending device:
 
     1. Launch a separate browser window.
-    1. Go to Screens player using the [web browser](http://localhost:4502/content/mobileapps/cq-screens-player/firmware.html) or launch the AEM Screens app. When you open the device you will notice the device's state as unregistered. 
+    1. Go to Screens player using the [web browser](https://localhost:4502/content/mobileapps/cq-screens-player/firmware.html) or launch the AEM Screens app. When you open the device you will notice the device's state as unregistered. 
     1. From the AEM dashboard, navigate to *Test_Project* --&gt; **Devices**
     
     1. Click **Device Manager** from the action bar.

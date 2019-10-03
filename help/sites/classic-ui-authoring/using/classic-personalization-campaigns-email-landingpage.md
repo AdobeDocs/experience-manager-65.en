@@ -45,7 +45,7 @@ To create your own newsletter form, see information about creating forms in the 
 
 The hidden fields in the following example provide the bare minimum amount of information (e-mail); in addition, you can add more fields later but this will impact the conversion rate.
 
-The following example is a form created at http://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
+The following example is a form created at https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 
 1. Create the form.
 

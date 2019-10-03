@@ -31,7 +31,7 @@ By default, the entries will be written to the `error.log` file. To make monitor
 
 In order to redirect the logging output to a separate log file, you'll need to create a new **Apache Sling Logging Logger** configuration. We'll use `useraudit.log` as the name of the separate file in the example below.
 
-1. Go to the Web Console by browsing to *http://serveraddress:serverport/system/console/configMgr*
+1. Go to the Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
 1. Search for **Apache Sling Logging Logger Configuration**. Then, press the "+" in the right hand side of the entry to create a new factory configuration.
 1. Create the following configuration:
 

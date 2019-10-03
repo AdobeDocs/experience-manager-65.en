@@ -36,7 +36,7 @@ The following DDX document assembles multiple XDP fragments into an XDP document
 
 ```as3
  <?xml version="1.0" encoding="UTF-8"?> 
- <DDX xmlns="http://ns.adobe.com/DDX/1.0/"> 
+ <DDX xmlns="https://ns.adobe.com/DDX/1.0/"> 
          <XDP result="tuc018result.xdp"> 
             <XDP source="tuc018_template_flowed.xdp"> 
              <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/> 
@@ -76,11 +76,11 @@ For each sub form, you can add an `XDPContent` element (this element is optional
 
 >[!NOTE]
 >
->For more information about the Assembler service, see [Services Reference for AEM Forms](http://www.adobe.com/go/learn_aemforms_services_63).
+>For more information about the Assembler service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->For more information about a DDX document, see [Assembler Service and DDX Reference](http://www.adobe.com/go/learn_aemforms_ddx_63).
+>For more information about a DDX document, see [Assembler Service and DDX Reference](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Summary of steps {#summary-of-steps}
 
@@ -219,7 +219,7 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
    Create a Microsoft .NET project that uses MTOM. Ensure that you use the following WSDL definition when setting a service reference:
 
    ```as3
-    http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
+    https://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
    >[!NOTE]
@@ -229,7 +229,7 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
 1. Create a PDF Assembler client.
 
     * Create an `AssemblerServiceClient` object by using its default constructor. 
-    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service, such as `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
+    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service, such as `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
     * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
     * Enable basic HTTP authentication by performing the following tasks:

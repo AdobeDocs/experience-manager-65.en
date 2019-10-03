@@ -103,7 +103,7 @@ The Launches console provides an overview of your launches and allows you to tak
 
 * The **Tools** Console: **Tools**, **Sites**, **Launches**.
 
-* Or directly with [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
+* Or directly with [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Launches in References (Sites Console) {#launches-in-references-sites-console}
 

@@ -18,11 +18,11 @@ docset: aem65
 Authoring an adaptive form using an JSON Schema as its form model requires basic understanding of JSON Schema. It is recommended to read through the following content before this article.
 
 * [Creating an adaptive form](../../forms/using/creating-adaptive-form.md)
-* [JSON Schema](http://json-schema.org/)
+* [JSON Schema](https://json-schema.org/)
 
 ## Using a JSON Schema as form model  {#using-a-json-schema-as-form-model}
 
-AEM Forms supports creation of an adaptive form by using an existing JSON Schema as the form model. This JSON Schema represents the structure in which data is produced or consumed by the back-end system in your organization. The JSON Schema you use should be compliant with [v4 specifications](http://json-schema.org/draft-04/schema).
+AEM Forms supports creation of an adaptive form by using an existing JSON Schema as the form model. This JSON Schema represents the structure in which data is produced or consumed by the back-end system in your organization. The JSON Schema you use should be compliant with [v4 specifications](https://json-schema.org/draft-04/schema).
 
 The key features of using an JSON Schema are:
 
@@ -124,7 +124,7 @@ Here's an example of an JSON Schema.
 
 ```
 {
- "$schema": "http://json-schema.org/draft-04/schema#",
+ "$schema": "https://json-schema.org/draft-04/schema#",
  "definitions": {
   "employee": {
    "type": "object",
@@ -306,7 +306,7 @@ Definition keys are used to identify reusable schemas. The reusable schema defin
 
 ```
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft-04/schema#",
  
   "definitions": {
     "address": {

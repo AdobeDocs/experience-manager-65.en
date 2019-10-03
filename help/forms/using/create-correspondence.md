@@ -280,7 +280,7 @@ There are two types of letter instances that can be saved: Draft instance and Su
 
 Such instances can only be saved when the letter is being viewed on publish instance. By default saving on instances is turned off. To enable saving of letter instances, perform the following steps.
 
-1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: http://&lt;server&gt;:&lt;port&gt;/&lt;contextpath&gt;/system/console/configMgr
+1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: https://&lt;server&gt;:&lt;port&gt;/&lt;contextpath&gt;/system/console/configMgr
 1. Locate **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Check **[!UICONTROL Manage Letter Instances on Publish]** configuration and then click **[!UICONTROL Save]**.
 
@@ -296,13 +296,13 @@ This option exists for people who have concerns over saving user data on publish
 
 #### Enable remote save {#enable-remote-save}
 
-1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `http://<server>:<port>/<contextpath>/system/console/configMgr`
+1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. Search for **[!UICONTROL Correspondence Management Configurations]**and click it. 
 1. Locate the ****[!UICONTROL Remote Save]**** configuration, check it, and the click ****[!UICONTROL Save]****.
 
 #### Specify processing author settings {#specify-processing-author-settings}
 
-1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `http://<server>:<port>/<contextpath>/system/console/configMgr`
+1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Adobe Experience Manager Web Console Configuration](assets/2configmanager.png)
 
@@ -340,7 +340,7 @@ Following are the benefits and functionality available in HTML and PDF preview.
 * **Page break**: In the PDF preview, you can view exactly how the page breaks in the letter affect its output. 
 * **Final preview**: In the PDF preview, you can view the exact formatting and appearance of the letter as the letter will appear in its output.
 
-For information on scripting support in PDF forms, see [Scripting Support](http://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
+For information on scripting support in PDF forms, see [Scripting Support](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
 
 For more information on scripting support in HTML5 forms, see [Scripting support for HTML5 forms](/forms/using/scripting-support.md).
 
@@ -352,7 +352,7 @@ For more information on browser compatibility with letter preview, see [Disconti
 
 To change the preview mode of the letter, complete the following steps:
 
-1. Go to `http://[system]:[port]/system/console/configMgr` and, if necessary, log in as Admin.
+1. Go to `https://[system]:[port]/system/console/configMgr` and, if necessary, log in as Admin.
 1. Go to **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** and select **HTML Rendition** (Default) or **PDF Rendition**. 
 1. Click ****[!UICONTROL Save]****.
 

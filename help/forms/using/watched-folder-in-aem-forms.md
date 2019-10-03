@@ -288,7 +288,7 @@ By default, a container folder (/etc/fd/watchfolder/scripts) is provided where c
 
 If you plan to place your scripts at a custom location, it is likely that the default service-user might not have read permissions over the custom location. For such scenario, perform the following steps to provide necessary permissions to the custom location:
 
-1. Create a system user programmatically or via the console http://[server]:[port]/crx/explorer. You can also use an existing system user. It is important to work with system users here instead of normal users. 
+1. Create a system user programmatically or via the console https://[server]:[port]/crx/explorer. You can also use an existing system user. It is important to work with system users here instead of normal users. 
 1. Provide read permissions to the newly created or existing system user on the custom location where the scripts are stored. You can have multiple custom locations. Provide atleast read permissions to all the custom locations.  
 1. In the Felix configuration console (/system/console/configMgr), locate the service user mapping for the watch-folders. This mapping looks like 'Mapping: adobe-aemds-core-watch-folder=...'. 
 1. Click the mapping. For the entry 'adobe-aemds-core-watch-folder:scripts=fd-service', change fd-service to the ID of the custom system user. Click Save.
@@ -401,7 +401,7 @@ If structure of a payload is different from the structure of the watched folder,
 1. Setup the client SDK in the build path of the maven-based project. To get started, you can download and open the following maven-based project in the IDE of your choice.
 1. Edit the payload mapper filter code available in sample bundle to suit your requirement.
 1. Use maven to create a bundle of the custom Payload Mapper Filter.
-1. Use [AEM bundles console](http://localhost:4502/system/console/bundles) to install the bundle.
+1. Use [AEM bundles console](https://localhost:4502/system/console/bundles) to install the bundle.
 
    Now, custom Payload Mapper Filter is listed in AEM Watched Folder UI. You can use it with your workflow.
 
@@ -602,7 +602,7 @@ Perform the following steps to configure a Watched Folder with PDF Generator:
 
 The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Word (.docx) documents to PDF documents. Perform the following steps to create the script:
 
-1. Open CRXDE lite in a browser window. The URL is http://[server]:[port]/crx/de.  
+1. Open CRXDE lite in a browser window. The URL is https://[server]:[port]/crx/de.  
 
 1. Navigate to /etc/workflow/scripts and create a folder named PDFG.  
 
@@ -637,7 +637,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 ### Create a Workflow {#create-a-workflow}
 
 1. Open AEM Workflow UI in a browser window.   
-   http://[servername]:[port]/worklow  
+   https://[servername]:[port]/worklow  
 
 1. In the Models view, click **New**. In the New Workflow dialog, specify **Title**, and click **OK**.
 
@@ -657,7 +657,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 
 ### Configure the Watched Folder {#configure-the-watched-folder}
 
-1. Open CRXDE lite in a browser window. http://[server]:[port]/crx/de/
+1. Open CRXDE lite in a browser window. https://[server]:[port]/crx/de/
 
 1. Navigate to the /etc/fd/watchfolder/config/ folder and create a node of type nt:unstructured.
 

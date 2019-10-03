@@ -26,7 +26,7 @@ The following two images show the difference between the default and customized 
 
 1. **Choose a profile to add custom styles**
 
-   Access the CRX DE interface at the URL: **http://&lt;server&gt;:&lt;port&gt;/crx/de** and create a profile or choose an existing profile. To know how to create a profile, see [Creating a new Profile](/forms/using/custom-profile.md)
+   Access the CRX DE interface at the URL: **https://&lt;server&gt;:&lt;port&gt;/crx/de** and create a profile or choose an existing profile. To know how to create a profile, see [Creating a new Profile](/forms/using/custom-profile.md)
 
 1. **Create a CSS style sheet for styling the HTML5 forms**
 

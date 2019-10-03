@@ -145,13 +145,13 @@ The status can be seen from the [Websites console](/sites/classic-ui-authoring/u
 
 From the **Websites** tab you can activate the individual pages. When you have entered or updated a considerable number of content pages - all of which are resident under the same root page - it can be easier to activate the entire tree in one action. You can also perform a Dry Run to emulate an activation and highlight which pages would be activated.
 
-1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `http://localhost:4502/etc/replication.html`).
+1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `https://localhost:4502/etc/replication.html`).
 
    ![](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. On the **Replication** console, click on **Activate Tree**.
 
-   The following window ( `http://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
+   The following window ( `https://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
 
    ![](assets/screen_shot_2012-02-08at125033pm-1.png)
 

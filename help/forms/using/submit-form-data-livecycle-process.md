@@ -20,7 +20,7 @@ Adaptive forms supports submitting data to an AEM Forms on JEE process for furth
 
 Perform the following steps to enable your AEM forms server to submit data to an AEM Forms on JEE server:
 
-1. Go to AEM web configuration console at http://[*host*]:[*port*]/system/console/configMgr.
+1. Go to AEM web configuration console at https://[*host*]:[*port*]/system/console/configMgr.
 
 1. Locate and click the **Adobe LiveCycle Client SDK Configuration** component.
 1. Click to edit the configuration server URL, username, and password for the AEM Forms on JEE server.

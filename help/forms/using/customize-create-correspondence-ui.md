@@ -48,7 +48,7 @@ The /apps branch (folder structure):
 
 Use the following steps to create the required folder structure in the /apps branch:
 
-1. Go to `http://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named `css` with path/structure similar to the css folder (located in ccrui folder).   
   
    Steps for creating the css folder:
@@ -110,7 +110,7 @@ Upload your custom logo file to CRX. Standard HTML rules govern the rendering of
 
 Use the following steps to upload the custom logo file to CRX:
 
-1. Go to `http://[server]:[port]/[contextpath]/crx/de`. If necessary, log in as Administrator.
+1. Go to `https://[server]:[port]/[contextpath]/crx/de`. If necessary, log in as Administrator.
 1. In CRXDE, right-click the **imgs** folder at the following path and select **Create &gt; Create File**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -153,7 +153,7 @@ The custom logo image requires an additional style sheet to be loaded in the con
 
 Use the following steps to set up the style sheet for rendering the logo:
 
-1. Go to `http://[server]:[port]/[contextpath]/crx/de`. If necessary, log in as Administrator.
+1. Go to `https://[server]:[port]/[contextpath]/crx/de`. If necessary, log in as Administrator.
 1. Create a file named customcss.css (you cannot use a different filename) in the following location:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`

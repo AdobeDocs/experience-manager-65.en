@@ -403,7 +403,7 @@ for example : admin:admin
 for example : /etc/community/badging/images/moderator/jcr:content/moderator.png
 
 *member-profile-url* = the endpoint for the member's profile on publish  
-for example : http://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/profile.social.json
+for example : https://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >

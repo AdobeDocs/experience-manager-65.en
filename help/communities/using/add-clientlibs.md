@@ -146,7 +146,7 @@ The include statement belongs in the <head> section of the <html> script. The de
 
 Load your website in the browser and see if the background is not a shade of blue.
 
-[http://localhost:4502/content/an-scf-sandbox/en/play.html](http://localhost:4502/content/an-scf-sandbox/en/play.html)
+[https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
 ![](assets/chlimage_1-53.png) 
 
@@ -158,7 +158,7 @@ This package exists on the [Create a Sample Page](/communities/using/create-samp
 
 To create a package:
 
-* from CRXDE Lite click the [Package icon](http://localhost:4502/crx/packmgr/) 
+* from CRXDE Lite click the [Package icon](https://localhost:4502/crx/packmgr/) 
 * click **Create Package**
 
     * Package Name: an-scf-sandbox-minimal-pkg

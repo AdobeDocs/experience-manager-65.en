@@ -47,14 +47,14 @@ The steps, at a high level, to create a custom appearance are as follows:
 
 A maven archetype is a starting point for creating a custom appearance. The details of the archetype to be used are as follows:
 
-* **Repository**: http://repo.adobe.com/nexus/content/groups/public/
+* **Repository**: https://repo.adobe.com/nexus/content/groups/public/
 * **Artifact Id**: custom-appearance-archetype
 * **Group Id**: com.adobe.aemforms
 * **Version**: 1.0.4
 
 Execute the following command to create a local project based on the archetype:
 
-`mvn archetype:generate -DarchetypeRepository=http://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+`mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
 The command downloads the Maven plugins and archetype information from the repository, and generates a project based on the following information:
 
@@ -191,7 +191,7 @@ Let's now look at an example to create a custom appearance for a numeric field t
 
 1. Execute the following command to create a local project based on Maven archetype:
 
-   `mvn archetype:generate -DarchetypeRepository=http://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+   `mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
    It prompts you to specify values for the following parameters.   
    *The values used in this sample are highlighted in bold*.
@@ -226,7 +226,7 @@ Let's now look at an example to create a custom appearance for a numeric field t
 
 1. Select the widget to be used for the custom appearance. This sample uses the following numeric stepper widget:
 
-   [http://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](http://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
+   [https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
 
    In the Eclipse project, review the plug-in code in the `plugin.js` file to ensure that it matches the requirements for the appearance. In this sample, the appearance fulfills the following requirements:
 

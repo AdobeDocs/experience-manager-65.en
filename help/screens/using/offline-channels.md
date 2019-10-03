@@ -73,7 +73,7 @@ The ***ContentSync*** uses update handlers to parse and collect all necessary pa
 
 Follow the steps below to test the ContentSync configuration:
 
-1. Open [http://localhost:4502/libs/cq/contentsync/content/console.html](http://localhost:4502/libs/cq/contentsync/content/console.html)
+1. Open [https://localhost:4502/libs/cq/contentsync/content/console.html](https://localhost:4502/libs/cq/contentsync/content/console.html)
 1. Select your config in the list
 1. Click Clear Cache
 1. Click Update Cache

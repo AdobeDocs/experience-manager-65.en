@@ -33,7 +33,7 @@ Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in ada
 
 To implement the reCAPTCHA service in AEM Forms:
 
-1. Obtain [reCAPTCHA API key pair](http://www.google.com/recaptcha/admin) from Google. It includes a site key and secret.
+1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a site key and secret.
 1. Create configuration container for cloud services.
 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.

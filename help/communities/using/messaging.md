@@ -27,7 +27,7 @@ For additional information for developers, see [Messaging Essentials](../../comm
 
 ## Messaging Operations Service {#messaging-operations-service}
 
-The configuration [AEM Communities Messaging Operations Service](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifies the endpoint which handles messaging related requests, the folders the service should use for storing messages, and if messages may include file attachments, what file types are allowed.
+The configuration [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifies the endpoint which handles messaging related requests, the folders the service should use for storing messages, and if messages may include file attachments, what file types are allowed.
 
 For community sites created using the `Communities Sites console`, an instance of the service already exists, with the inbox set to `/mail/inbox`.
 
@@ -96,7 +96,7 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
   **(*Action Required*)** A whitelist of filename extensions, the opposite of the blacklist. To allow all filename extensions, except for those blacklisted, use the '**-**' icon to remove the single empty entry.
 
 * **Service selector** 
-  (*Required*) An absolute path (endpoint) through which the service is called (a virtual resource). The root of the path chosen must be one included in the *Execution Paths* configuration setting of OSGi config [ `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), such as `/bin/`, `/apps/`, and `/services/`. To select this configuration for a site's messaging feature, this endpoint is provided as the **`Service selector`** value for the `Message List and Compose Message components` (see [Message Feature](../../communities/using/configure-messaging.md)).  
+  (*Required*) An absolute path (endpoint) through which the service is called (a virtual resource). The root of the path chosen must be one included in the *Execution Paths* configuration setting of OSGi config [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), such as `/bin/`, `/apps/`, and `/services/`. To select this configuration for a site's messaging feature, this endpoint is provided as the **`Service selector`** value for the `Message List and Compose Message components` (see [Message Feature](../../communities/using/configure-messaging.md)).  
   The default is */bin/messaging* .
 
 * **Field whitelist** 

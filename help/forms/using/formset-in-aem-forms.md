@@ -223,8 +223,8 @@ In a form set, the XML defined an XML schema with the following syntax:
 ```xml
 <formset>
  <fs_data>
-  <xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
-  <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+  <xdp:xdp xmlns:xdp="https://ns.adobe.com/xdp/">
+  <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
    <xfa:data>
    <rootElement>
     ... data ....

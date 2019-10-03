@@ -50,7 +50,7 @@ Follow the steps below to use the AEM SPA Editor:
 
 To edit the contents in the REACT app:
 
-1. Navigate to ***http://localhost:4502/editor.html/content/mysamplespa/en/home.html*** (replace the hostname, port and project name as applicable).
+1. Navigate to ***https://localhost:4502/editor.html/content/mysamplespa/en/home.html*** (replace the hostname, port and project name as applicable).
 1. You should be able to edit the text being displayed in the Hello world application.
 
 ### Adding the interactive REACT app to AEM Screens {#adding-the-interactive-react-app-to-aem-screens}

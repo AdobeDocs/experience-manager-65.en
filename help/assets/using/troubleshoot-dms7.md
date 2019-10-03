@@ -49,14 +49,14 @@ The following asset properties can be reviewed in CRXDE Lite to confirm the succ
 
 ### Synchronization Logging {#synchronization-logging}
 
-Synchronization errors and issues are logged in **error.log** (AEM server directory** /crx-quickstart/logs/**). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the ***com.adobe.cq.dam.ips ***package through the Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) to gather more information.
+Synchronization errors and issues are logged in **error.log** (AEM server directory** /crx-quickstart/logs/**). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the ***com.adobe.cq.dam.ips ***package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
 
 ### Move, Copy, Delete {#move-copy-delete}
 
 Before performing a Move, Copy, or Delete operation, do the following:
 
 * For images and videos, confirm that a **&lt;object_node&gt;/jcr:content/metadata/dam:scene7ID** value exists before performing move, copy, or delete operations. 
-* For image and viewer presets, confirm that an `http://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` value exists before performing move, copy, or delete operations.
+* For image and viewer presets, confirm that an `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` value exists before performing move, copy, or delete operations.
 * If above metadata value is missing, you need to re-upload assets before move, copy, or delete operations.
 
 ### Version Control {#version-control}
@@ -180,7 +180,7 @@ If you are having issues with video, see the following troubleshooting guidance.
    <td><p>To determine if video encoding is still in progress or if it has entered a failure state:</p> 
     <ul> 
      <li>Check the video status <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</code></li> 
-     <li>Monitor the video from the workflow console <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instances, Archive, Failures tabs.</li> 
+     <li>Monitor the video from the workflow console <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instances, Archive, Failures tabs.</li> 
     </ul> </td> 
    <td> </td> 
   </tr> 
@@ -213,11 +213,11 @@ If you are having issues with viewers, see the following troubleshooting guidanc
   </tr> 
   <tr> 
    <td>Viewer Presets are not published</td> 
-   <td><p>Proceed to sample manager diagnostic page: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Proceed to sample manager diagnostic page: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Note</strong>: It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.</p> <p>If unactivated assets remain, click either of the <strong>List all Unactivated Assets</strong> buttons to see details.</p> </td> 
    <td> 
     <ol> 
-     <li>Navigate to viewer preset list in admin tools: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
+     <li>Navigate to viewer preset list in admin tools: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
      <li>Select all viewer presets, then click <strong>Publish</strong>.</li> 
      <li>Navigate back to sample manager and observe that unactivated asset count is now zero.</li> 
     </ol> </td> 
@@ -235,7 +235,7 @@ If you are having issues with viewers, see the following troubleshooting guidanc
        <li><code>"is/content"</code></li> 
        <li><code>dam:scene7Folder</code></li> 
        <li><code>&lt;asset-name&gt;</code></li> 
-       <li>Example: <code>http://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li> 
+       <li>Example: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li> 
       </ul> </li> 
     </ol> </td> 
    <td><p>If the sample assets or viewer preset artwork have not synced or published then restart the entire copy/sync process:</p> 
@@ -244,7 +244,7 @@ If you are having issues with viewers, see the following troubleshooting guidanc
       <ul> 
        <li>Delete <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li> 
       </ul> </li> 
-     <li>Navigate to the CRX package manager: <code>http://localhost:4502/crx/packmgr/</code><a href="http://localhost:4502/crx/packmgr/"></a> 
+     <li>Navigate to the CRX package manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a> 
       <ol> 
        <li>Search for viewer package in list (it starts with <span class="kbd">cq-dam-scene7-viewers-content</code>)</li> 
        <li>Click <strong>Reinstall</strong>.</li> 

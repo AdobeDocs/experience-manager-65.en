@@ -21,7 +21,7 @@ Support for relational database persistence in AEM is implemented using the Docu
 
 It consists of a Java API that is based on the Mongo Java API. An implementation of a BlobStore API is also provided. By default, blobs are stored in the database.
 
-For more information on the implementation details, please see the [RDBDocumentStore](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) and [RDBBlobStore](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) documentation.
+For more information on the implementation details, please see the [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) and [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) documentation.
 
 >[!NOTE]
 >

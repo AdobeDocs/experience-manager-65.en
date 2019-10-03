@@ -114,14 +114,14 @@ The necessary steps are :
 1. extract mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive
 1. use the web console to install and start the bundle :
 
-    * for example, http://localhost:4502/system/console/bundles
+    * for example, https://localhost:4502/system/console/bundles
     * select **`Install/Update`**
     * Browse... to select the bundle extracted from the downloaded ZIP archive
     * check that* Oracle Corporation's JDBC Driver for MySQLcom.mysql.jdbc* is active, and start it if not (or check the logs)
 
 1. if installing on an existing deployment after JDBC has been configured, then rebind JDBC to the new connector by resaving the JDBC configuration from the web console :
 
-    * for example, http://localhost:4502/system/console/configMgr
+    * for example, https://localhost:4502/system/console/configMgr
     * locate `Day Commons JDBC Connections Pool` configuration
     * select to open
     * select `Save`
@@ -147,7 +147,7 @@ The AEM Communities SCORM engine is required for the [enablement](/help/communit
  <ol> 
   <li><p>Install the <a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg" target="_blank">cq-social-scorm-package, version 2.3.7</a><strong> </strong>from the Package Share<strong>.</strong></p> </li> 
   <li><p>Download <strong><code>/libs/social/config/scorm/database_scormengine_data.sql</code></strong> from cq instance and execute it in mysql server to create an upgraded scormEngineDB schema.</p> </li> 
-  <li><p>Add <code>/content/communities/scorm/RecordResults</code> in Excluded Paths property in CSRF filter from <strong>http://&amp;lt;hostname&amp;gt;:&amp;lt;port&amp;gt;/system/console/configMgr</strong> on publishers.</p> </li> 
+  <li><p>Add <code>/content/communities/scorm/RecordResults</code> in Excluded Paths property in CSRF filter from <strong>https://&amp;lt;hostname&amp;gt;:&amp;lt;port&amp;gt;/system/console/configMgr</strong> on publishers.</p> </li> 
  </ol> 
 </details>
 
@@ -185,9 +185,9 @@ To install the packages visible in `adobeaemcloud.com` on a local AEM instance, 
 * select the **Assets** tab
 * select **download to disk**
 
-On the local AEM instance, use package manager (for example [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)), to upload to the local AEM's package repository.
+On the local AEM instance, use package manager (for example [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), to upload to the local AEM's package repository.
 
-Alternatively, accessing the package using package share from the local AEM instance (for example, [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), the `Download`button will download to the local AEM instance's package repository.
+Alternatively, accessing the package using package share from the local AEM instance (for example, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), the `Download`button will download to the local AEM instance's package repository.
 
 Once in the local AEM instance's package repository, use package manager to install the package.
 
@@ -226,7 +226,7 @@ For all other (secondary) publish instances in a publish farm :
 * sign in with administrator privileges
 * access the [web console](/sites/deploying/using/configuring-osgi.md)
 
-    * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+    * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * locate the `AEM Communities Publisher Configuration`
 * select the edit icon
@@ -284,7 +284,7 @@ To enable the tunnel service :
 
 * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-    * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+    * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
 * locate the `AEM Communities Publish Tunnel Service`
 * select the edit icon
@@ -344,7 +344,7 @@ With the key material stored in the repository, the manner for replicating the c
 
 Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md) :
 
-* browse to [http://&lt;server&gt;:&lt;port&gt;/crx/de](http://localhost:4502/crx/de)
+* browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de)
 * select `/etc/key`
 * open `Replication` tab
 * select `Replicate`
@@ -357,7 +357,7 @@ Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md) :
 
 * on each publish instance, access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-    * for example, [http://&lt;server&gt;:&lt;port&gt;/system/console/bundles](http://localhost:4503/system/console/bundles)
+    * for example, [https://&lt;server&gt;:&lt;port&gt;/system/console/bundles](https://localhost:4503/system/console/bundles)
 
 * locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * select **Refresh**
@@ -385,7 +385,7 @@ In particular, be careful to use the correct server name, not `localhost`, in th
 
     # Return from "Sign Out" generates response header directing you to "/", generating a 404 error
     # The RedirectMatch resolves it correctly when modified for the target Community Site :
-    RedirectMatch ^/$ http://[server name]/content/sites/engage/en.html
+    RedirectMatch ^/$ https://[server name]/content/sites/engage/en.html
  ...
  </IfModule>
 ```

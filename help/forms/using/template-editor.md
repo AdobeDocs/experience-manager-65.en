@@ -159,7 +159,7 @@ When you create a template, it is added as a draft. Enable the template to use i
 
 ## Importing or exporting a template {#importing-or-exporting-a-template}
 
-A form works with its template. When you download an adaptive form created using a customized template, the template is not downloaded. When you import the form on a different AEM Forms instance, it is imported without its template. If a form is imported but its template is not available, the form is not rendered. You can package the custom template from `/conf` node in `http://<server>:<port>/crx/packmgr`, and port it in the AEM Forms instance where you want to upload the form.
+A form works with its template. When you download an adaptive form created using a customized template, the template is not downloaded. When you import the form on a different AEM Forms instance, it is imported without its template. If a form is imported but its template is not available, the form is not rendered. You can package the custom template from `/conf` node in `https://<server>:<port>/crx/packmgr`, and port it in the AEM Forms instance where you want to upload the form.
 
 ## Creating an adaptive form using the template {#creating-an-adaptive-form-using-the-template}
 
@@ -175,7 +175,7 @@ Perform the following steps to show and hide templates:
 
    >[!NOTE]
    >
-   >The URL of AEM web console is http://[server]:[port]/system/console/configMgr
+   >The URL of AEM web console is https://[server]:[port]/system/console/configMgr
 
 1. Locate and open the **FormsManager Configuration** settings:
 

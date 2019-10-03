@@ -81,14 +81,14 @@ When using the touch-enabled UI desktop users might want to revert to the classi
 
   The classic UI can be accessed using the URL for the welcome screen at `welcome.html`. For example:
 
-  `http://localhost:4502/welcome.html`
+  `https://localhost:4502/welcome.html`
 
   >[!NOTE]
   >
   >The touch-enabled UI can be accessed via `sites.html`. For example:
   >
   >
-  >`http://localhost:4502/sites.html`
+  >`https://localhost:4502/sites.html`
 
 ### Switching to Classic UI when Editing a Page {#switching-to-classic-ui-when-editing-a-page}
 
@@ -109,10 +109,10 @@ The settings defined by a user or system administrator can be overriden by the s
 * When authoring pages:
 
     * Use of the classic editor is forced when accessing the page using `cf#` in the URL. For example:  
-      `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
     
     * Use of the touch-enabled editor is forced when using `/editor.html` in the URL or when using a touch device. For example:  
-      `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
+      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Any forcing is temporary and only valid for the browser session
 

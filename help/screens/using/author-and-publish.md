@@ -111,8 +111,8 @@ Follow the steps below to create a Screens Replication Agent:
 
 #### Creating Standard Replication Agents  {#creating-standard-replication-agents}
 
-1. Create standard replication agent for pub1 (out-of-the-box default agent should already be configured) (for example, *http://&lt;hostname&gt;:4503/bin/receive?sling:authRequestLogin=1*)  
-1. Create standard replication agent for pub2. You can copy rep agent for pub1 and update the transport to be used for pub2 by changing the port in the transport configuration. (for example, *http://&lt;hostname&gt;:4504/bin/receive?sling:authRequestLogin=1*)
+1. Create standard replication agent for pub1 (out-of-the-box default agent should already be configured) (for example, *https://&lt;hostname&gt;:4503/bin/receive?sling:authRequestLogin=1*)  
+1. Create standard replication agent for pub2. You can copy rep agent for pub1 and update the transport to be used for pub2 by changing the port in the transport configuration. (for example, *https://&lt;hostname&gt;:4504/bin/receive?sling:authRequestLogin=1*)
 
 #### Creating Screens Replication Agents {#creating-screens-replication-agents}
 
@@ -132,9 +132,9 @@ Set up Apache Sling Oak-Based Discovery for all Publish instances in the topolog
   
 For each publish instance:
 
-1. Navigate to `http://<host>:<port>/system/console/configMgr`
+1. Navigate to `https://<host>:<port>/system/console/configMgr`
 1. Select **Apache Sling Oak-Based Discovery Service** Configuration.
-1. Update Topology connector URLs: add URLs of all partaking publish instances that is, [http://localhost:4502/libs/sling/topology/connector](http://localhost:4502/libs/sling/topology/connector)
+1. Update Topology connector URLs: add URLs of all partaking publish instances that is, [https://localhost:4502/libs/sling/topology/connector](https://localhost:4502/libs/sling/topology/connector)
 1. Topology connector Whitelist: adapt to IPs or subnets covering partaking publish instances
 1. Enable **Auto-Stop Local-Loops**
 
@@ -142,7 +142,7 @@ The configuration should be identical for each publish instance and the auto-sto
 
 #### Step 2: Verify Publish Topology {#step-verify-publish-topology}
 
-For any of the Publish instances navigate to `http://<host>:<port>/system/console/topology`. You should see each publish instance represented in the topology.
+For any of the Publish instances navigate to `https://<host>:<port>/system/console/topology`. You should see each publish instance represented in the topology.
 
 #### Step 3: Setup ActiveMQ Artemis Cluster {#step-setup-activemq-artemis-cluster}
 
@@ -151,7 +151,7 @@ The cluster user and password of all publish instances in the topology needs to 
 
 On each Publish Instance:
 
-1. In the OSGi Console navigate to **MAIN** --&gt; **Crypto Support** (*http://&lt;host&gt;:&lt;port&gt;/system/console/crypto*).
+1. In the OSGi Console navigate to **MAIN** --&gt; **Crypto Support** (*https://&lt;host&gt;:&lt;port&gt;/system/console/crypto*).
 1. Type in the desired plain text password (same for all instances) in **Plain Text**
 1. Click **Protect**.
 1. Copy the value **Protected Text **to notepad or text editor. This value will be used in the OSGi config for ActiveMQ.
@@ -167,7 +167,7 @@ Pub2 - {8d3d113c834cc4f52c2daee0da3cb0a21122a31f0138bfe4b70c9ead79415f41}
 
 On each publish instance:
 
-1. Navigate to the OSGi Config manager *http://&lt;host&gt;:&lt;port&gt;/system/console/configMgr*
+1. Navigate to the OSGi Config manager *https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr*
 1. Select **Apache ActiveMQ Artemis JMS Provider** Configuration
 1. Update the following:
 
@@ -178,7 +178,7 @@ On each publish instance:
 
 Follow the steps below on each Publish instance:
 
-1. Navigate to the OSGi Console -&gt; Main &gt; ActiveMQ Artemis ([http://localhost:4505/system/console/mq](http://localhost:4505/system/console/mq)).
+1. Navigate to the OSGi Console -&gt; Main &gt; ActiveMQ Artemis ([https://localhost:4505/system/console/mq](https://localhost:4505/system/console/mq)).
 1. Verify and check to view the ports of other instances under Cluster Information &gt; Topology &gt; nodes=2, members=2. 
 1. Send a Test Message (top of the screen under Broker Information)
 1. Enter the following changes in fields:
@@ -218,7 +218,7 @@ Once you have set up the publish toplogy, you need to configure the author and p
 #### Step 1: Starting an AEM Screens Player (device) {#step-starting-an-aem-screens-player-device}
 
 1. Launch a separate browser window.
-1. Go to Screens player using the [web browser](http://localhost:4502/content/mobileapps/cq-screens-player/firmware.html) or launch the AEM Screens app. When you open the device you will notice the device's state as unregistered.
+1. Go to Screens player using the [web browser](https://localhost:4502/content/mobileapps/cq-screens-player/firmware.html) or launch the AEM Screens app. When you open the device you will notice the device's state as unregistered.
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Once you have set up the publish toplogy, you need to configure the author and p
 
 #### Step 2: Registering a Device on Author {#step-registering-a-device-on-author}
 
-1. Go to [http://localhost:4502/screens.html/content/screens/we-retail](http://localhost:4502/screens.html/content/screens/we-retail) or select your project and navigate to Devices &gt; Device Manager. 
+1. Go to [https://localhost:4502/screens.html/content/screens/we-retail](https://localhost:4502/screens.html/content/screens/we-retail) or select your project and navigate to Devices &gt; Device Manager. 
 1. Select **Register Device**.
 1. Click **Device Registration** to view the device.
 1. Select the device you want to register and click **Register Device**.
@@ -250,7 +250,7 @@ Before, you perform the steps below, make sure to verify the Device ID. To verif
 
 Follow the steps below to replicate the device user:
 
-1. Navigate to the user admin page (e.g: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)).
+1. Navigate to the user admin page (e.g: [https://localhost:4502/useradmin](https://localhost:4502/useradmin)).
 1. Search for the **screens-devices-master** group
 1. Right click on the group, and click **Activate**
 

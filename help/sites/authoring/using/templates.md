@@ -119,7 +119,7 @@ When creating a new editable template you:
 
 * Use the **Template** console. This is available in the **General** section of the **Tools** console.
 
-    * Or directly at: [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+    * Or directly at: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
 * [Create a new template](#creatinganewtemplateauthor), which will initially be empty [](#templatedefinitions)

@@ -38,7 +38,7 @@ Replication, to a publish instance or dispatcher, takes place in several steps:
 * the replication agent "packages" the content and places it in the replication queue.
 * in the Websites tab the [colored status indicator](../../../sites/authoring/using/publishing-pages.md#determiningpagepublicationstatus) is set for the individual pages.
 * the content is lifted from the queue and transported to the publish environment using the configured protocol; usually this is HTTP.
-* a servlet in the publish environment receives the request and publishes the received content; the default servlet is `http://localhost:4503/bin/receive`.  
+* a servlet in the publish environment receives the request and publishes the received content; the default servlet is `https://localhost:4503/bin/receive`.  
 
 * multiple author and publish environments can be configured.
 
@@ -82,11 +82,11 @@ To follow this example and use the default replication agents you need to [Insta
 #### Replication (Author to Publish) {#replication-author-to-publish}
 
 1. Navigate to the support page on the author environment.  
-   **http://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
 1. Edit the page to add some new text.
 1. **Activate Page** to publish the changes.
 1. Open the support page on the publish environment:  
-   **http://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/we-retail/us/en/experience.html**
 1. You can now see the changes that you entered on author.
 
 This replication is actioned from the author environment by the:
@@ -94,7 +94,7 @@ This replication is actioned from the author environment by the:
 * **Default Agent (publish)** 
   This agent replicates content to the default publish instance.  
   Details of this (configuration and logs) can be accessed from the Tools console of the author environment; or:  
-  `http://localhost:4502/etc/replication/agents.author/publish.html`.
+  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Replication Agents - Out of the Box {#replication-agents-out-of-the-box}
 
@@ -198,8 +198,8 @@ When configuring a replication agent from the Tools console, four tabs are avail
 
   For example:
 
-    * A Default Agent may replicate to `http://localhost:4503/bin/receive`
-    * A Dispatcher Flush agent may replicate to `http://localhost:8000/dispatcher/invalidate.cache`
+    * A Default Agent may replicate to `https://localhost:4503/bin/receive`
+    * A Dispatcher Flush agent may replicate to `https://localhost:8000/dispatcher/invalidate.cache`
 
   The protocol specified here (HTTP or HTTPS) will determine the transport method.
 
@@ -429,7 +429,7 @@ To configure replication of content for an additional publish instance you need 
     * In the **Transport** tab:
 
         * Enter the required URI for the new publish instance; for example,  
-          `http://localhost:4504/bin/receive`.
+          `https://localhost:4504/bin/receive`.
         
         * Enter the site-specific user account used for replication.
         * You can configure other parameters as required.
@@ -473,7 +473,7 @@ Default agents are included with the installation. However, certain configuratio
     * In the **Transport** tab:
 
         * Enter the required URI for the new publish instance; for example,  
-          `http://localhost:80/dispatcher/invalidate.cache`.
+          `https://localhost:80/dispatcher/invalidate.cache`.
         
         * Enter the site-specific user account used for replication.
         * You can configure other parameters as required.
@@ -487,7 +487,7 @@ Default agents are included with the installation. However, certain configuratio
 1. Click **OK** to save the changes.
 1. Return to the **Tools** tab, from here you can **Activate** the **Dispatcher Flush** agent (**Agents on publish**).
 
-The **Dispatcher Flush** replication agent is not active on author. You can access the same page in the publish environment by using the equivalent URI; for example, `http://localhost:4503/etc/replication/agents.publish/flush.html`.
+The **Dispatcher Flush** replication agent is not active on author. You can access the same page in the publish environment by using the equivalent URI; for example, `https://localhost:4503/etc/replication/agents.publish/flush.html`.
 
 ### Controlling Access to Replication Agents {#controlling-access-to-replication-agents}
 
@@ -562,29 +562,29 @@ For details about troubleshooting, you can read the [Troubleshooting Replication
 
 For additional information, Adobe has a series of Knowledge Base articles related to replication:
 
-[http://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)  
-[http://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)  
-[http://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)  
-[http://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)  
-[http://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
-[http://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)  
-[http://helpx.adobe.com/experience-manager/kb/ReplicationListener.html](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)  
-[http://helpx.adobe.com/experience-manager/kb/replication-stuck.html](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)  
-[http://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)  
-[http://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)  
-[http://helpx.adobe.com/experience-manager/kb/ACLReplication.html](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)  
-[http://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)  
-[http://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
-http://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html   
-http://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html   
-http://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html   
-http://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html   
-http://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html   
-http://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html   
-http://helpx.adobe.com/experience-manager/kb/ReplicationListener.html   
-http://helpx.adobe.com/experience-manager/kb/replication-stuck.html   
-http://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html   
-http://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html   
-http://helpx.adobe.com/experience-manager/kb/ACLReplication.html   
-http://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html   
-http://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html  
+[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)  
+[https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)  
+[https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)  
+[https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)  
+[https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
+[https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)  
+[https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)  
+[https://helpx.adobe.com/experience-manager/kb/replication-stuck.html](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)  
+[https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)  
+[https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)  
+[https://helpx.adobe.com/experience-manager/kb/ACLReplication.html](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)  
+[https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)  
+[https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
+https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html   
+https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html   
+https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html   
+https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html   
+https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html   
+https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html   
+https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html   
+https://helpx.adobe.com/experience-manager/kb/replication-stuck.html   
+https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html   
+https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html   
+https://helpx.adobe.com/experience-manager/kb/ACLReplication.html   
+https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html   
+https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html  

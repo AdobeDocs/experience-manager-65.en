@@ -28,7 +28,7 @@ This page shows creating and managing channels for Screens.
 
 Once you create your project for Screens, follow the steps below to create a new Channel for a Screens project:
 
-1. Select the Adobe Experience Manager link (top left) and then Screens. Alternatively, you can ﻿go directly to: [http://localhost:4502/screens.html/content/screens](http://localhost:4502/screens.html/content/screens).
+1. Select the Adobe Experience Manager link (top left) and then Screens. Alternatively, you can ﻿go directly to: [https://localhost:4502/screens.html/content/screens](https://localhost:4502/screens.html/content/screens).
 1. Navigate to Screens project and click **Channels**. 
 1. Click **Create** next to the plus icon in the action bar. A wizard will open (*See Channel Types for more information*).
 

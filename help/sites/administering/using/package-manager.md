@@ -98,12 +98,12 @@ The **Package Settings** dialog is available via the **Edit** button when [creat
   <tr> 
    <td>URL</td> 
    <td>URL of the provider.</td> 
-   <td><em>http://www.aem-geometrixx.com</em></td> 
+   <td><em>https://www.aem-geometrixx.com</em></td> 
   </tr> 
   <tr> 
    <td>Link</td> 
    <td>Package-specific link to a provider page.</td> 
-   <td><em>http://www.aem-geometrixx.com/mypackage.html</em></td> 
+   <td><em>https://www.aem-geometrixx.com/mypackage.html</em></td> 
   </tr> 
   <tr> 
    <td>Requires<br /> </td> 
@@ -521,7 +521,7 @@ Validation of packages can be done in two different ways:
 
 **Package Validation Via the Package Manager**
 
-1. Open the Package Manager at `http://<server>:<port>/crx/packmgr`
+1. Open the Package Manager at `https://<server>:<port>/crx/packmgr`
 1. Select the package in the list and then select **More** dropdown from the heading and then **Validate** from the drop-down menu.
 
    >[!NOTE]
@@ -538,7 +538,7 @@ Validation of packages can be done in two different ways:
 The POST request takes the following form.
 
 ```
-http://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
+https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
 ```
 
 >[!NOTE]
@@ -556,7 +556,7 @@ The following is an example of using cURL to execute a package validation.
 1. If using cURL execute a statement similar to the following:
 
    ```shell
-   curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.components.all-1.1.0.zip 'http://localhost:4502/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls'
+   curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.components.all-1.1.0.zip 'https://localhost:4502/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls'
    ```
 
 1. The requested validation is run and the response is sent back as a JSON object.
@@ -714,7 +714,7 @@ To gain access to Package Share:
 
    >[!NOTE]
    >
-   >If you have forgotten your password, please use the [Help pages](http://enterprise-dev.adobe.com/content/edev/en/registration/account.html) link (also on the sign in dialog).
+   >If you have forgotten your password, please use the [Help pages](https://enterprise-dev.adobe.com/content/edev/en/registration/account.html) link (also on the sign in dialog).
 
 #### Validating your Adobe ID {#validating-your-adobe-id}
 

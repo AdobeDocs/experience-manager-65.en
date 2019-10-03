@@ -54,7 +54,7 @@ For all AEM 6.3 author and publish instances
 
     * browse to the web console
 
-        * for example, [http://&lt;host&gt;:&lt;port&gt;/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
     * locate **AEM Communities Utilities** configuration
     * select to expand config panel
@@ -82,7 +82,7 @@ See also [Using Maven for Communities](/communities/using/maven.md).
 
 ### No JSP Component Templates {#no-jsp-component-templates}
 
-The [social component framework](/communities/using/scf.md) (SCF) uses the [HandlebarsJS](http://www.handlebarsjs.com/) (HBS) templating language in place of Java Server Pages (JSP) used prior to AEM 6.0.
+The [social component framework](/communities/using/scf.md) (SCF) uses the [HandlebarsJS](https://www.handlebarsjs.com/) (HBS) templating language in place of Java Server Pages (JSP) used prior to AEM 6.0.
 
 In AEM 6.0, the JSP components remained alongside the new HBS framework components in the same location, with the HBS components typically located in subfolders named "hbs".
 

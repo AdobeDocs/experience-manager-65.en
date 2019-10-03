@@ -110,7 +110,7 @@ Author instance pings the exporter endpoint of publishers. Whenever a user is cr
  <p>On AEM author instance:</p> 
  <ol> 
   <li>Sign in with administrator privileges.</li> 
-  <li>Access the <a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html">Web Console</a>.<br /> For example, <a href="http://localhost:4502/system/console/configMgr">http://localhost:4502/system/console/configMgr</a>.</li> 
+  <li>Access the <a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html">Web Console</a>.<br /> For example, <a href="https://localhost:4502/system/console/configMgr">https://localhost:4502/system/console/configMgr</a>.</li> 
   <li>Locate <strong>Apache Sling Distribution Agent - Sync Agents Factory.</strong> 
    <ul> 
     <li>Select the existing configuration to open for edit (pencil icon).<br /> Verify name: <strong> 
@@ -138,7 +138,7 @@ Whenever data is to be installed on or fetched from publishers, then the author 
  <p>On AEM author instance:</p> 
  <ol> 
   <li>Sign in with administrator privileges.</li> 
-  <li>Access the <a href="/help/sites/deploying/using/configuring-osgi.md">Web Console</a>.<br /> For example, <a href="http://localhost:4502/system/console/configMgr">http://localhost:4502/system/console/configMgr</a>.</li> 
+  <li>Access the <a href="/help/sites/deploying/using/configuring-osgi.md">Web Console</a>.<br /> For example, <a href="https://localhost:4502/system/console/configMgr">https://localhost:4502/system/console/configMgr</a>.</li> 
   <li>Locate <strong>Adobe Granite Distribution - Encrypted Password Transport Secret Provider.</strong></li> 
   <li>Select the existing configuration to open for edit (pencil icon).<br /> Verify property 
    <g class="gr_ gr_122 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" data-gr-id="122" id="122">
@@ -167,7 +167,7 @@ This configuration is used to configure the data you want to sync across publish
  <p>On AEM publish instance:</p> 
  <ol> 
   <li>Sign in with administrator privileges.</li> 
-  <li>Access the <a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html">Web Console</a>.<br /> For example, <a href="http://localhost:4503/system/console/configMgr">http://localhost:4503/system/console/configMgr</a>.</li> 
+  <li>Access the <a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html">Web Console</a>.<br /> For example, <a href="https://localhost:4503/system/console/configMgr">https://localhost:4503/system/console/configMgr</a>.</li> 
   <li>Locate <strong>Apache Sling Distribution Agent - Queue Agents Factory.</strong></li> 
   <li>Select the existing configuration to open for edit (pencil icon).<br /> Verify Name: 
    <g class="gr_ gr_20 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="20" id="20">
@@ -193,7 +193,7 @@ If changing the membership of a group in one publisher does not update its membe
  <p>On each AEM publish instance:</p> 
  <ol> 
   <li>Sign in with administrator privileges.</li> 
-  <li>Access the <a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html">Web Console</a>.<br /> For example, <a href="http://localhost:4503/system/console/configMgr">http://localhost:4503/system/console/configMgr</a>.</li> 
+  <li>Access the <a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html">Web Console</a>.<br /> For example, <a href="https://localhost:4503/system/console/configMgr">https://localhost:4503/system/console/configMgr</a>.</li> 
   <li>Locate <strong>Adobe Granite Distribution - Diff Observer Factory.</strong></li> 
   <li>Select the existing configuration to open for edit (pencil icon).<br /> Verify <strong>agent name: 
     <g class="gr_ gr_19 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="19" id="19">
@@ -222,7 +222,7 @@ The author polls publishers every 30 seconds (default). If any packages are pres
  <p>On AEM author instance:</p> 
  <ol> 
   <li>sign in with administrator privileges.</li> 
-  <li>access the <a href="/help/sites/deploying/using/configuring-osgi.md">Web Console</a>,<br /> for example, <a href="http://localhost:4502/system/console/configMgr">http://localhost:4502/system/console/configMgr</a></li> 
+  <li>access the <a href="/help/sites/deploying/using/configuring-osgi.md">Web Console</a>,<br /> for example, <a href="https://localhost:4502/system/console/configMgr">https://localhost:4502/system/console/configMgr</a></li> 
   <li>Locate <strong>Apache Sling Distribution Trigger - Scheduled Triggers Factory</strong></li> 
  </ol> 
  <ul> 
@@ -252,7 +252,7 @@ For issues in Sling distribution where there is a discrepancy in subscriptions a
  <p>On each AEM publish instance:</p> 
  <ol> 
   <li>Sign in with administrator privileges.</li> 
-  <li>Access the <a href="/help/sites/deploying/using/configuring-osgi.md">Web Console.<br /> </a>For example, <a href="http://localhost:4503/system/console/configMgr">http://localhost:4503/system/console/configMgr</a>.</li> 
+  <li>Access the <a href="/help/sites/deploying/using/configuring-osgi.md">Web Console.<br /> </a>For example, <a href="https://localhost:4503/system/console/configMgr">https://localhost:4503/system/console/configMgr</a>.</li> 
   <li>Locate <strong>AEM Communities User Sync Listener.</strong></li> 
   <li>Select the existing configuration to open for edit (pencil icon)<br /> Verify Name: <strong> 
     <g class="gr_ gr_37 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="37" id="37">
@@ -290,7 +290,7 @@ Make sure all the publishers in a publish farm have a unique Sling ID. If the Sl
  <summary>To ensure unique Sling ID of publishers in the publish farm</summary> 
  <p>On each publish instance:</p> 
  <ol> 
-  <li>Browse to <a href="http://localhost:4503/system/console/status-slingsettings">http://<em>host:port</em>/system/console/status-slingsettings</a>.</li> 
+  <li>Browse to <a href="https://localhost:4503/system/console/status-slingsettings">https://<em>host:port</em>/system/console/status-slingsettings</a>.</li> 
   <li>Check the value of <strong>Sling ID.</strong></li> 
  </ol> 
  <img imagerotate="0" src="assets/slingid.png" /> 
@@ -315,7 +315,7 @@ User synchronization can stop if `rep  :cache `nodes are synced across publisher
  <summary>To ensure that updates are synced properly across publishers</summary> 
  <p>On each AEM publish instance:</p> 
  <ol> 
-  <li>Access the <a href="/help/sites/deploying/using/configuring-osgi.md">Web Console</a><br /> for example, <a href="http://localhost:4503/system/console/configMgr">http://localhost:4503/system/console/configMgr</a>.</li> 
+  <li>Access the <a href="/help/sites/deploying/using/configuring-osgi.md">Web Console</a><br /> for example, <a href="https://localhost:4503/system/console/configMgr">https://localhost:4503/system/console/configMgr</a>.</li> 
   <li>Locate the <strong>Apache Sling Distribution Packaging - Vault Package Builder Factory<br /> </strong>Builder name: socialpubsync-vlt.</li> 
   <li>Select the edit icon.</li> 
   <li>Add two Package Node Filters: 
@@ -374,7 +374,7 @@ If Sling distribution fails, try the following debugging steps:
 
     1. Disable the user synchronization:  
     1. On AEM author instance, sign in with administrator privileges.  
-       2. Access the [Web Console](/help/sites/deploying/using/configuring-osgi.md). For example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).  
+       2. Access the [Web Console](/help/sites/deploying/using/configuring-osgi.md). For example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).  
        3. Locate the configuration **Apache Sling Distribution Agent - Sync Agents Factory**.  
        4. Deselect the **Enabled** checkbox.  
        On disabling the user synchronization on author instance, (exporter and importer) endpoints are disabled and the author instance is static. The ** vlt ** packages are not pinged or fetched by the author.  

@@ -83,7 +83,7 @@ Once user sync is enabled, only newly created users and groups are syncrhonized.
     * sign in with administrator privileges
     * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-        * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
     * locate `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -105,7 +105,7 @@ This authorized user will be used in step 3 to configure Sling distribution on a
     * sign in with administrator privileges
     * access the [Security Console](../../../sites/administering/using/security.md)
 
-        * for example, [http://localhost:4503/useradmin](http://localhost:4503/useradmin)
+        * for example, [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
 
     * create a new user
 
@@ -128,7 +128,7 @@ This authorized user will be used in step 3 to configure Sling distribution on a
 
 * access CRXDE Lite
 
-    * for example, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
+    * for example, [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
 * select `/home` node
 * in right pane, select the `Access Control` tab
@@ -165,7 +165,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
     * sign in with administrator privileges
     * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-        * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
     * locate `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
     * select the existing configuration to open for edit (pencil icon)  
@@ -186,7 +186,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
     * sign in with administrator privileges
     * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-        * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+        * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
     * locate `Apache Sling Distribution Agent - Queue Agents Factory`
 
@@ -209,7 +209,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
     * sign in with administrator privileges
     * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-        * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+        * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
     * locate **`Adobe Social Sync - Diff Observer Factory`**
 
@@ -232,7 +232,7 @@ By default, author will poll for changes every 30 seconds. To alter this interva
     * sign in with administrator privileges
     * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-        * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
     * locate `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
@@ -258,7 +258,7 @@ The default configuration is for a single publish instance. As the reason for en
     * sign in with administrator privileges
     * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-        * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
     * locate `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -270,14 +270,14 @@ The default configuration is for a single publish instance. As the reason for en
 * **Exporter Endpoints** 
   There should be an exporter endpoint for each publisher. For example, if there are 2 publishers, localhost:4503 and 4504, there should be 2 entries:
 
-    * http://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse
-    * http://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse
+    * https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse
+    * https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse
 
 * **Importer Endpoints** 
   There should be an importer endpoint for each publisher. For example, if there are 2 publishers, localhost:4503 and 4504, there should be 2 entries:
 
-    * http://localhost:4503/libs/sling/distribution/services/importers/socialpubsync
-    * http://localhost:4504/libs/sling/distribution/services/importers/socialpubsync
+    * https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync
+    * https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync
 
 * select `Save`
 
@@ -292,7 +292,7 @@ If there is custom data that is desired to be synchronized across multiple publi
     * sign in with administrator privileges
     * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-        * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+        * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
     * locate `AEM Communities User Sync Listener`
     * select the existing configuration to open for edit (pencil icon)  
@@ -339,7 +339,7 @@ If the Sling ID is the same for multiple publish instances in a publish farm, th
 
 To validate that all Sling ID values differ, on each publish instance :
 
-1. browse to [http://*host:port*/system/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)
+1. browse to [https://*host:port*/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
 1. check the value of **Sling ID**
 
 ![](assets/chlimage_1-27.png)
@@ -372,7 +372,7 @@ In order for updates to sync properly, it is necessary to modify the vault packa
 * on each AEM publish instance
 * access the [Web Console](/sites/deploying/using/configuring-osgi.md)
 
-    * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+    * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * locate the `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 

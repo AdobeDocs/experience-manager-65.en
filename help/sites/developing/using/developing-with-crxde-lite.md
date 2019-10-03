@@ -37,7 +37,7 @@ CRXDE Lite is recommended when you do not have direct access to the AEM server, 
 To get started with CRXDE Lite, proceed as follows:
 
 1. Install AEM.
-1. In your browser, enter http://<host>:<port>/crx/de. By default it is `http://localhost:4502/crx/de`.
+1. In your browser, enter https://<host>:<port>/crx/de. By default it is `https://localhost:4502/crx/de`.
 1. Enter your **username** and **password**. By default it is `admin` and `admin`.
 
 1. Click **OK**.
@@ -162,7 +162,7 @@ To create a project with CRXDE Lite:
 
 To access the sample page displaying **Hello World**, point your browser to:
 
-`http://localhost:4502/content/<project-name>.html`
+`https://localhost:4502/content/<project-name>.html`
 
 The **Hello World** page is based on a content node, that calls a jsp script through the `sling:resourceType` property. The script reads the `jcr:title` property from the repository and gets the body content by calling a method of the SampleUtil class, that is available in the project bundle.
 
@@ -414,7 +414,7 @@ The following table lists all the properties of the .bnd file, their values and 
  </tbody> 
 </table>
 
-For more information on the bnd format, refer to the [bnd utility](http://bndtools.org/) used by CRXDE to create OSGI bundles.
+For more information on the bnd format, refer to the [bnd utility](https://bndtools.org/) used by CRXDE to create OSGI bundles.
 
 ### Creating a Java Class {#creating-a-java-class}
 
@@ -471,13 +471,13 @@ To see the effect of the Test Bundle, create a component that uses the Java meth
 
 1. Click **Save All** to save the changes on the server.  
 
-1. In your browser, request `test_node`: `http://<hostname>:<port>/content/test_node.html`.
+1. In your browser, request `test_node`: `https://<hostname>:<port>/content/test_node.html`.
 
 1. A page is displayed with the **Hello World!** message.
 
 ## Exporting and Importing Node Types {#exporting-and-importing-node-types}
 
-With CRXDE Lite you can import and/or export node type definitions in [CND (Compact Namespace and Node Type Definition) notation](http://jackrabbit.apache.org/jcr/node-type-notation.html).
+With CRXDE Lite you can import and/or export node type definitions in [CND (Compact Namespace and Node Type Definition) notation](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 To export a node type definition:
 

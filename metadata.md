@@ -8,7 +8,7 @@ getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-65.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-65.en
 index: n
 ---
 

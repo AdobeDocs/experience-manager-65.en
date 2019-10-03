@@ -28,15 +28,15 @@ To call the Adobe Search&Promote service from your website, perform the followin
 >
 >If you are using Search&Promote with a custom proxy configuration, you need to configure both HTTP Client proxy configurations as some functionalities of AEM are using the 3.x APIs and some others the 4.x APIs:
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x is configured with [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x is configured with [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x is configured with [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 ## Changing the Search&Promote service URL {#changing-the-search-promote-service-url}
 
-The default URL that is configured for the Search&Promote service is `http://searchandpromote.omniture.com/px/`. To use a different service, use the OSGi console to specify a different URL.
+The default URL that is configured for the Search&Promote service is `https://searchandpromote.omniture.com/px/`. To use a different service, use the OSGi console to specify a different URL.
 
-1. Open the OSGi console and click the Configuration tab. ([http://localhost:4502/system/console/configMgr.](http://localhost:4502/system/console/configMgr))  
+1. Open the OSGi console and click the Configuration tab. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))  
 
 1. Click the Day CQ Search&Promote Configuration item.
 1. Enter the URL in the Remote Server URI box, and click Save.
@@ -49,7 +49,7 @@ Configure one or more connections to Search&Promote so that your web pages can i
 
    This takes you to the Cloud Services Dashboard. If on a local machine, the url of the dashboard will look something like this:
 
-   [http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)
+   [https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html)
 
 1. In the Cloud Services page, click on the Adobe Search&Promote link or the Search&Promote icon.  
 
@@ -77,15 +77,15 @@ Configure one or more connections to Search&Promote so that your web pages can i
    >In order to get this information **yourself,** first** **you need to log into 
    >
    >
-   >[http://searchandpromote.omniture.com/center/](http://searchandpromote.omniture.com/center/)
+   >[https://searchandpromote.omniture.com/center/](https://searchandpromote.omniture.com/center/)
    >
    >
    >using your valid Seach&Promote credentials (email/password).  
    >Then, you need to look at your url in your brouser's address bar which should look something like this:  
-   >[](http://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
+   >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >
-   >[http://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](http://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
+   >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >
    >**Where:**
@@ -113,7 +113,7 @@ If your Search&Promote account is in Asia or Europe, you need to change the defa
 
 To configure the data center:
 
-1. Navigate to the Web console at `http://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
+1. Navigate to the Web console at `https://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
 
    ![](assets/chlimage_1-61.png)
 

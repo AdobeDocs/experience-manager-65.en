@@ -41,7 +41,7 @@ docset: aem65
     <table>
      <tbody> 
       <tr> 
-       <td><p>In order to restrict read access a dedicated CUG policy is applied to the target node.</p> <p>NOTE: Policies can only be applied at the configured supported paths.</p> <p>Nodes with name rep:cugPolicy and type rep:CugPolicy are protected and cannot be written using regular JCR API calls; use JCR access control management instead.</p> <p>See <a href="http://jackrabbit.apache.org/oak/docs/security/authorization/cug.html" target="_blank">this page</a> for more info.</p> </td> 
+       <td><p>In order to restrict read access a dedicated CUG policy is applied to the target node.</p> <p>NOTE: Policies can only be applied at the configured supported paths.</p> <p>Nodes with name rep:cugPolicy and type rep:CugPolicy are protected and cannot be written using regular JCR API calls; use JCR access control management instead.</p> <p>See <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html" target="_blank">this page</a> for more info.</p> </td> 
       </tr> 
       <tr> 
        <td><p>In order to enforce authentication requirement on a node it is sufcient to add the mixin type granite:AuthenticationRequired.</p> <p>NOTE: Only respected below the configured supported paths.</p> </td> 
@@ -52,7 +52,7 @@ docset: aem65
   <tr> 
    <td><p>Property: cq:cugPrincipals</p> <p>Declaring node type: NA, residual property</p> </td> 
    <td><p>Property: rep:principalNames</p> <p>Declaring node type: rep:CugPolicy</p> </td> 
-   <td><p>The property containing the names of those principals that are allowed to read the content below the restricted CUG is protected and cannot be written using regular JCR API calls; use JCR access control management instead.</p> <p>See <a href="http://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java" target="_blank">this page</a> for more details on the implementation.</p> </td> 
+   <td><p>The property containing the names of those principals that are allowed to read the content below the restricted CUG is protected and cannot be written using regular JCR API calls; use JCR access control management instead.</p> <p>See <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java" target="_blank">this page</a> for more details on the implementation.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Property: cq:cugLoginPage</p> <p>Declaring node type: NA, residual property</p> </td> 

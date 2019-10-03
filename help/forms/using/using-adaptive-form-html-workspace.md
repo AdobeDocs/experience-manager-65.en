@@ -81,5 +81,5 @@ HTML Workspace provides some adaptive form-specific controls in addition to cont
    >For details around creating an adaptive form, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >For details around creating a process, see [Creating and managing processes](http://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >For details around creating a process, see [Creating and managing processes](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
 

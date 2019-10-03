@@ -480,7 +480,7 @@ To add button and define rules on it:
 
     1. Select an action from the drop-down list. For example, select **Navigate** **to** as the action type.
     
-    1. Specify the URL of the Interactive Communication, adaptive form, an asset, or a web page. For example, specify the URL in the following format to navigate to another Interactive Communication: http://&lt;server-name&gt;:&lt;port&gt;/editor.html/content/forms/af/&lt;Interactive Communication name&gt;/channels/&lt;channel name - print or web&gt;.html
+    1. Specify the URL of the Interactive Communication, adaptive form, an asset, or a web page. For example, specify the URL in the following format to navigate to another Interactive Communication: https://&lt;server-name&gt;:&lt;port&gt;/editor.html/content/forms/af/&lt;Interactive Communication name&gt;/channels/&lt;channel name - print or web&gt;.html
     1. Specify the option to open the asset in same tab, new tab, or new window.
     1. Tap **Done** and then tap **Close** to save the rule.
 

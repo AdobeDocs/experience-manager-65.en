@@ -125,7 +125,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
  </tbody> 
 </table>
 
-1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9, Java 10, and Java 12 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](http://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in production environment, Adobe provides support only for the LTS releases of Java.  
+1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9, Java 10, and Java 12 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in production environment, Adobe provides support only for the LTS releases of Java.  
 
 1. The IBM JRE is only supported along with WebSphere Application Server.
 1. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology. See the [Oracle Java support for Adobe Experience Manager Q&A](assets/adobe-oracle-java-license-agreement.pdf) for more information.
@@ -161,7 +161,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 
 >[!NOTE]
 >
->MongoDB is third-party software and is not included in the AEM licensing package. For more information see the [MongoDB licensing policy](http://www.mongodb.org/about/licensing/) page.
+>MongoDB is third-party software and is not included in the AEM licensing package. For more information see the [MongoDB licensing policy](https://www.mongodb.org/about/licensing/) page.
 >
 >To get the most of your AEM deployment with MongoDB, Adobe recommends licensing the MongoDB Enterprise version to benefit from professional support. See [Recommended Deployments](../../../sites/deploying/using/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) for more information.
 >
@@ -226,7 +226,7 @@ Adobe Experience Manager works with the following server platforms for productio
 
 Adobe Experience Manager is supported running in a virtual machine on cloud computing environments, such as Microsoft Azure and Amazon Web Services (AWS), in compliance with the technical requirements listed on this page, and according to Adobe’s standard support terms.
 
-Adobe recommends using Adobe Managed Services to deploy AEM on Azure or AWS. Adobe Managed Services provides experts with experience and skills of deploying and operating AEM in these cloud computing environments. See [additional documentation on Adobe Managed Services](http://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+Adobe recommends using Adobe Managed Services to deploy AEM on Azure or AWS. Adobe Managed Services provides experts with experience and skills of deploying and operating AEM in these cloud computing environments. See [additional documentation on Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 In all other cases of deploying AEM on Azure or AWS, or any other cloud computing environment, support from Adobe will be contained to the virtual compute environment in compliance with the technical specifications listed on this page. Any reported issue relative to AEM running in any of these cloud environments will need to be reproducible independently from any cloud service specific to the cloud computing environment, unless the cloud service is specifically supported as part of the technical requirements listed on this page, for example Azure Blob storage or AWS S3.
 
@@ -339,7 +339,7 @@ To successfully connect with Microsoft Windows 7+ to an AEM instance that is not
 
 1. Add the BasicAuthLevel registry entry to this subkey using a value of 2 or more.
 
-To improve responsivness of the WebDav Client under Windows - see [Microsoft Support KB 2445570](http://support.microsoft.com/kb/2445570)
+To improve responsivness of the WebDav Client under Windows - see [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570)
 
 ## Additional Platform Notes {#additional-platform-notes}
 
@@ -354,16 +354,16 @@ Operation is seamless as no special configuration is required. You can simply sp
 This means that when an IP address needs to be specified you can select (as required) from:
 
 * an IPv6 address  
-  for example `http://[ab12::34c5:6d7:8e90:1234]:4502`  
+  for example `https://[ab12::34c5:6d7:8e90:1234]:4502`  
 
 * an IPv4 address  
-  for example `http://123.1.1.4:4502`  
+  for example `https://123.1.1.4:4502`  
 
 * a server name  
-  for example, `http://www.yourserver.com:4502`
+  for example, `https://www.yourserver.com:4502`
 
 * the default case of `localhost` will be interpreted for both IPv4 and IPv6 network installations  
-  for example, `http://localhost:4502`
+  for example, `https://localhost:4502`
 
 ### Requirements for AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on}
 
@@ -426,7 +426,7 @@ To use Dynamic Media on Windows, install Microsoft Visual Studio 2010, 2013, and
 
 For Windows x64:
 
-* Get Microsoft Visual Studio 2010 redistributable at [http://www.microsoft.com/en-us/download/details.aspx?id=13523](http://www.microsoft.com/en-us/download/details.aspx?id=13523)
+* Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
 * Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 * Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 

@@ -24,7 +24,7 @@ You can use the Service Management page to configure settings for each of the se
 
    >[!NOTE]
    >
-   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the * [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_63) .) *
+   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the * [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) *
 
 1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying_security_settings_for_a_service).
 1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/forms/using/admin-help/topics/managing-endpoints.md).
@@ -34,7 +34,7 @@ You can use the Service Management page to configure settings for each of the se
 
 ## Audit Workflow service settings {#audit-workflow-service-settings}
 
-Workbench provides the ability to record process instances as they execute at runtime and then play them back to observe the behavior of the process. (See [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_63).) To conserve space on the forms server's file system, you can limit the amount of process recording data that is stored. You can configure the following properties of the Audit Workflow Service service ( `AuditWorkflowService`):
+Workbench provides the ability to record process instances as they execute at runtime and then play them back to observe the behavior of the process. (See [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).) To conserve space on the forms server's file system, you can limit the amount of process recording data that is stored. You can configure the following properties of the Audit Workflow Service service ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** The maximum number of recordings that are stored. When the maximum number is stored, the oldest recording is removed from the file system when a new recording is created. This property is useful if you tend to create many recordings and you want to remove old recordings automatically. The default value is 50.
 
@@ -138,7 +138,7 @@ New settings can be created through the PDF Generator user interface.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](http://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). To know about configuring Content Services (Deprecated), see [Administering Content Services](http://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). To know about configuring Content Services (Deprecated), see [Administering Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 The Document Management service ( `DocumentManagementService`) enables processes to use the content management functionality provided by Content Services (Deprecated). Document Management operations provide basic tasks that are required to maintain spaces and content in the content management system. Examples of such tasks are copy, delete, move, retrieve, and store content, create spaces and associations, and get and set content attributes.
 
@@ -387,7 +387,7 @@ Depending on the LDAP server, the user name could be a simple user name such as 
 
 ## Microsoft SharePoint configuration service settings {#microsoft-sharepoint-configuration-service-settings}
 
-The Microsoft SharePoint configuration service `(MSSharePointConfigService)`lets you specify credentials for the AEM forms user that has impersonation permissions. For information about impersonation permissions, see [Configuring the Connector for Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
+The Microsoft SharePoint configuration service `(MSSharePointConfigService)`lets you specify credentials for the AEM forms user that has impersonation permissions. For information about impersonation permissions, see [Configuring the Connector for Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 The following settings are available for the Microsoft SharePoint configuration service:
 
@@ -491,7 +491,7 @@ The following services extend Data Services and expose assemblers that Workspace
 
 ## Remoting service settings {#remoting-service-settings}
 
-Most services are configured so that you can access them through (Deprecated for AEM forms) AEM forms Remoting. For information on (Deprecated for AEM forms) AEM forms Remoting, see [Programming with AEM forms](http://adobe.com/go/learn_aemforms_programming_63).
+Most services are configured so that you can access them through (Deprecated for AEM forms) AEM forms Remoting. For information on (Deprecated for AEM forms) AEM forms Remoting, see [Programming with AEM forms](https://adobe.com/go/learn_aemforms_programming_63).
 
 The following settings are available for the Remoting service.
 

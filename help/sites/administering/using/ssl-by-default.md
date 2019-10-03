@@ -27,7 +27,7 @@ In the list, select and open the **Configure HTTPS** alert:
 
 >[!NOTE]
 >
->If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8*
+>If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *https://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8*
 
 A service user called **ssl-service **has been created for this feature. Once you open the alert, you will be guided through the follwing configuration wizard:
 
@@ -196,7 +196,7 @@ Finally, upload the **localhostprivate.der** as the Private Key and **localhost.
 
 You can also automate the SSL configuration by using the cURL tool. You can do this by posting the configuration parameters to this URL:
 
-*http://serveraddress:serverport/libs/granite/security/post/sslSetup.html*
+*https://serveraddress:serverport/libs/granite/security/post/sslSetup.html*
 
 Below are the parameters you can use in order to change the various settings in the configuration wizard:
 
@@ -224,7 +224,7 @@ Below are the parameters you can use in order to change the various settings in 
 >A correct cURL post command should look like this:
 
 ```shell
-curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm=password" -F "truststorePassword=password" -F "truststorePasswordConfirm=password" -F "privatekeyFile=@localhostprivate.der" -F "certificateFile=@localhost.crt" -F "httpsHostname=host.example.com" -F "httpsPort=8443" http://host:port/libs/granite/security/post/sslSetup.html
+curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm=password" -F "truststorePassword=password" -F "truststorePasswordConfirm=password" -F "privatekeyFile=@localhostprivate.der" -F "certificateFile=@localhost.crt" -F "httpsHostname=host.example.com" -F "httpsPort=8443" https://host:port/libs/granite/security/post/sslSetup.html
 ```
 
 #### Multiple certificates using cURL {#multiple-certificates-using-curl}
@@ -234,4 +234,4 @@ You can send the servlet a chain of certificates by repeating the certificateFil
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
 Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:  
-[http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+[https://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](https://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)

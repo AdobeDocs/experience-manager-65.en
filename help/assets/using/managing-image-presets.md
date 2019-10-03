@@ -213,7 +213,7 @@ Image presets you create are available as dynamic renditions when you preview as
 
 To increase or decrease the number of image presets displayed:
 
-1. Navigate to CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigate to the image preset listing node at **/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist**
 
    ![](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -385,7 +385,7 @@ When you create or edit image presets, you have the options described in this se
     </ul> 
     <div>
       Sharpening is described in 
-     <a href="http://microsite.omniture.com/t2/help/en_US/s7/sharpening/s7_sharpening_images.pdf">Sharpening Images</a>. 
+     <a href="https://microsite.omniture.com/t2/help/en_US/s7/sharpening/s7_sharpening_images.pdf">Sharpening Images</a>. 
     </div> </td> 
   </tr> 
   <tr> 
@@ -422,7 +422,7 @@ When you create or edit image presets, you have the options described in this se
 
 ### Defining Image Preset Options with Image Modifiers {#defining-image-preset-options-with-image-modifiers}
 
-In addition to the options available in the Basic and Advanced tabs, you can define image modifiers to give you more options when defining image presets. Image Rendering relies on the Scene7 image rendering API and are defined in detail in the [HTTP Protocol Reference](http://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html).
+In addition to the options available in the Basic and Advanced tabs, you can define image modifiers to give you more options when defining image presets. Image Rendering relies on the Scene7 image rendering API and are defined in detail in the [HTTP Protocol Reference](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html).
 
 The following are some basic examples of what you can do with image modifiers.
 
@@ -430,7 +430,7 @@ The following are some basic examples of what you can do with image modifiers.
 >
 >Some image modifiers [cannot be used in AEM](#advanced-tab-options).
 
-* [op_invert](http://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html) - Inverts each color component for a negative image effect.
+* [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html) - Inverts each color component for a negative image effect.
 
   ```xml
   &op_invert=1
@@ -438,7 +438,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](http://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html) - Applies a blur filter to the image.
+* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html) - Applies a blur filter to the image.
 
   ```xml
   &op_blur=7
@@ -454,7 +454,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![](assets/chlimage_1-80.png)
 
-* [op_brightness](http://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - Decreases or increases the brightness.
+* [op_brightness](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - Decreases or increases the brightness.
 
   ```xml
   &op_brightness=58
@@ -462,7 +462,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](http://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html) - Adjusts image opacity. Lets you decrease the foreground opacity.
+* [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html) - Adjusts image opacity. Lets you decrease the foreground opacity.
 
   ```xml
   opac=29

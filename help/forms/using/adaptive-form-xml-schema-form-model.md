@@ -18,7 +18,7 @@ docset: aem65
 Authoring an adaptive form using an XML schema as its form model requires basic understanding of XML schemas. Also, it is recommended to read through the following content before this article.
 
 * [Creating an adaptive form](../../forms/using/creating-adaptive-form.md)
-* [XML schema](http://www.w3.org/TR/xmlschema-2/)
+* [XML schema](https://www.w3.org/TR/xmlschema-2/)
 
 ## Using an XML schema as form model {#using-an-xml-schema-as-form-model}
 
@@ -81,9 +81,9 @@ Here's an example of an XML schema.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
-    <xs:schema targetNamespace="http://adobe.com/sample.xsd"
-                    xmlns="http://adobe.com/sample.xsd"
-                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    <xs:schema targetNamespace="https://adobe.com/sample.xsd"
+                    xmlns="https://adobe.com/sample.xsd"
+                    xmlns:xs="https://www.w3.org/2001/XMLSchema"
                 >
 
         <xs:element name="sample" type="SampleType"/>

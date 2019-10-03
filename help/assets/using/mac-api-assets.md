@@ -21,8 +21,8 @@ The Assets HTTP API is exposed at */api/assets*, and allows for create-read-upda
 
 To access the API:
 
-1. Open the API service document at `http://[hostname]:[port]/api.json`. ``
-1. Follow the Assets service link leading to `http://[hostname]:[server]/api/assets.json`.
+1. Open the API service document at `https://[hostname]:[port]/api.json`. ``
+1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
 
 The API's response is a JSON for some mime types and a response code for all mime types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
@@ -111,7 +111,7 @@ The Assets HTTP API includes the following features:
 
 **Prerequisites**
 
-* Go to `http://<Server>:<Port>/system/console/configMgr`.
+* Go to `https://<Server>:<Port>/system/console/configMgr`.
 * Navigate to **Adobe Granite CSRF Filter**.
 * Make sure the property **Filter Methods** incudes: POST, PUT, DELETE.
 

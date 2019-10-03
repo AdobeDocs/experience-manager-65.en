@@ -155,7 +155,7 @@ You can now use your Experience Fragment when authoring your pages:
 
 1. Open any page for editing.
 
-   For example: [http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   For example: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Create an instance of the Experience Fragment component, by dragging the component from the Components browser to the page paragraph system:
 

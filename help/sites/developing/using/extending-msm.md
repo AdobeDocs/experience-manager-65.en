@@ -168,7 +168,7 @@ The new rollout configuration is then available to you when setting rollout conf
 
 #### Create the Rollout Configuration {#create-the-rollout-configuration}
 
-1. Open the **Tools** console in the classic UI; for example, [http://localhost:4502/miscadmin#/etc](http://localhost:4502/miscadmin#/etc)
+1. Open the **Tools** console in the classic UI; for example, [https://localhost:4502/miscadmin#/etc](https://localhost:4502/miscadmin#/etc)
 
    >[!NOTE]
    >
@@ -191,7 +191,7 @@ The new rollout configuration is then available to you when setting rollout conf
 
 Rollout configurations are stored below the `/etc/msm/rolloutconfigs` node. Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to the rollout configuration. The order of the synchronization action nodes determines the order in which the actions occur.
 
-1. Open CRXDE Lite; for example [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. Open CRXDE Lite; for example [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. Select the `jcr:content` node below your rollout configuration node.
 
    For example, for the rollout configuration with the **Name** property of `myrolloutconfig`, select the node:
@@ -239,7 +239,7 @@ You can find the code of this page on GitHub
 The following procedure requires that you have added the adobe-public profile to your Maven settings file.
 
 * For information about the adobe-public profile, see [Obtaining the Content Package Maven Plugin](/sites/developing/using/vlt-mavenplugin.md#obtaining-the-content-package-maven-plugin)
-* For information about the Maven settings file, see the Maven [Settings Reference](http://maven.apache.org/settings.html).
+* For information about the Maven settings file, see the Maven [Settings Reference](https://maven.apache.org/settings.html).
 
 1. Open a terminal or command-line session and change the directory to point to the location of where to create the project.
 1. Enter the following command:
@@ -513,7 +513,7 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
 
    The AEM `error.log` file should indicate that the bundle is started.
 
-   For example, [http://localhost:4502/system/console/status-slinglogs](http://localhost:4502/system/console/status-slinglogs).
+   For example, [https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs).
 
    ```xml
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED
@@ -544,7 +544,7 @@ Create the MSM rollout configuration that uses the `LiveActionFactory` that you 
 
 Configure the rollout configuration that you created in the previous procedure so that it uses the `ExampleLiveActionFactory` class.
 
-1. Open CRXDE Lite; for example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. Open CRXDE Lite; for example, [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Create the following node under `/etc/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
     * **Name**: `exampleLiveAction`  
@@ -625,7 +625,7 @@ The language list is stored below the `/libs/wcm/core/resources/languages` node.
 
 To modify the languages:
 
-1. Open CRXDE Lite in your web browser; for example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. Open CRXDE Lite in your web browser; for example, [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. Select the `/apps` folder and click **Create**, then **Create Folder.**
 
    Name the new folder `wcm`.

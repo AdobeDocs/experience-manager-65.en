@@ -80,7 +80,7 @@ From this Groups console, it is possible to author new groups.
     * double-check the name as it is not easily changed after the group is created
     * the base URL will be displayed underneath the `Community Group Name`
     * for a valid URL, append ".html"  
-      *for example*, `http://localhost:4502/content/sites/mysight/en/mygroup.html`
+      *for example*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`
 
 * **Community Group Template** menu: use the drop-down to choose an available [community group template](/communities/using/tools.md).
 
@@ -88,7 +88,7 @@ From this Groups console, it is possible to author new groups.
 
 #### COMMUNITY GROUP THEME {#community-group-theme}
 
-The framework uses [Twitter Bootstrap](http://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes can be selected to style the selected community group template, or a Bootstrap theme can be uploaded.
+The framework uses [Twitter Bootstrap](https://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes can be selected to style the selected community group template, or a Bootstrap theme can be uploaded.
 
 When selected, the theme will be overlayed with an opaque blue check mark.
 

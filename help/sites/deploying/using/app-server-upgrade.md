@@ -28,7 +28,7 @@ All the examples in this procedure use JBoss as the Application Server and imply
 1. If AEM 5.6 is already deployed, check that the bundles are functioning correctly by running:
 
    ```shell
-   wget http://<serveraddress:port>/cq/system/console/bundles
+   wget https://<serveraddress:port>/cq/system/console/bundles
    ```
 
 1. Next, undeploy AEM 5.6:

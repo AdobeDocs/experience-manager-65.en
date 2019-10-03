@@ -98,9 +98,9 @@ A Submit action is a sling:Folder that includes the following:
 
 ## Creating a custom Submit action {#creating-a-custom-submit-action}
 
-Perform the following steps to create a custom Submit action that saves the data in the CRX repository and then sends you an email. The adaptive form contains the OOTB Submit action [Store Content](/forms/using/submit-store-data-crx-repository.md) (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](http://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, [configure](http://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring the Mail Service) the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
+Perform the following steps to create a custom Submit action that saves the data in the CRX repository and then sends you an email. The adaptive form contains the OOTB Submit action [Store Content](/forms/using/submit-store-data-crx-repository.md) (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, [configure](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring the Mail Service) the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
 
-1. Log in to CRXDE Lite at the URL http://&lt;server&gt;:&lt;port&gt;/crx/de/index.jsp. Create a node with the property sling:Folder and name store_and_mail in the /apps/custom_submit_action folder. Create the custom_submit_action folder if it doesn't exist already.
+1. Log in to CRXDE Lite at the URL https://&lt;server&gt;:&lt;port&gt;/crx/de/index.jsp. Create a node with the property sling:Folder and name store_and_mail in the /apps/custom_submit_action folder. Create the custom_submit_action folder if it doesn't exist already.
 
    ![Screenshot depicting the creation of a node with the property sling:Folder](assets/step1.png)
 
@@ -160,9 +160,9 @@ Perform the following steps to create a custom Submit action that saves the data
      org.apache.commons.mail.Email,
                    org.apache.commons.mail.SimpleEmail" %>
    <%@taglib prefix="sling" 
-                   uri="http://sling.apache.org/taglibs/sling/1.0" %>
+                   uri="https://sling.apache.org/taglibs/sling/1.0" %>
    <%@taglib prefix="cq" 
-                   uri="http://www.day.com/taglibs/cq/1.0" 
+                   uri="https://www.day.com/taglibs/cq/1.0" 
    %>
    <cq:defineObjects/>
    <sling:defineObjects/>

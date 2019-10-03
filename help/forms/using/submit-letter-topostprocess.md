@@ -28,7 +28,7 @@ To associate post processes with letters or interactive communications, you firs
 
 ## Forms Workflow {##formsworkflow}
 
-1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `http://<server>:<port>/<contextpath>/system/console/configMgr`
+1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Config Manager](assets/2configmanager-1.png)
 
@@ -64,7 +64,7 @@ To associate post processes with letters or interactive communications, you firs
 
 ## Settings on the Publish instance {#settings-on-the-publish-instance}
 
-1. login to `http://localhost:publishport/aem/forms`.
+1. login to `https://localhost:publishport/aem/forms`.
 1. Navigate to **[!UICONTROL Letters]** to view the published letter that is available on the publish instance.
 1. Configure the AEM DS Settings. See [Configuring AEM DS settings](../../forms/using/configuring-the-processing-server-url-.md).
 
@@ -120,7 +120,7 @@ In the CCR user interface, complete the following steps to associate a post proc
 
 A draft letter instance can be reloaded in user interface by using the following url:
 
-`http://<server>:<port>/aem/forms/`
+`https://<server>:<port>/aem/forms/`
 
 `createcorrespondence.html?/random=$&cmLetterInstanceId=$<LetterInstanceId>`
 

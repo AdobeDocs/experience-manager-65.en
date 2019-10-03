@@ -103,7 +103,7 @@ The following procedure steps you through the creation and execution of a Test S
 
 For full details about creating your own Test Suites, see the [Hobbes.js API documentation](/sites/developing/using/reference-materials/test-api/index.md).
 
-1. Open CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Right-click the `/etc/clientlibs` folder and click **Create > Create Folder**. Type `myTests` for the name and click **OK**.
 1. Right-click the `/etc/clientlibs/myTests` folder and click **Create &gt; Create Node**. Use the following property values and then click **OK**:
 

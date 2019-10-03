@@ -151,7 +151,7 @@ To import content:
 
 1. Open the Bulk Editor.
 1. Add `?hib=false` to the URL, e.g.:  
-   `http://localhost:4502/etc/importers/bulkeditor.html?hib=false`
+   `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Click **Import**.
 1. Select the `.tsv` file. The data are imported into the repository.
 

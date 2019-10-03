@@ -25,8 +25,8 @@ To enable Designer to generate HTML preview of XDP forms, perform the following 
 
 ### Configure Apache Sling Authentication Service {#configure-apache-sling-authentication-service}
 
-1. Go to http://[*server*]:[*port*]/system/console/configMgr on AEM Forms running on OSGi or   
-   http://[*server*]:[*port*]/lc/system/console/configMgr on AEM Forms running on JEE.
+1. Go to https://[*server*]:[*port*]/system/console/configMgr on AEM Forms running on OSGi or   
+   https://[*server*]:[*port*]/lc/system/console/configMgr on AEM Forms running on JEE.
 1. Locate and click **Apache Sling Authentication Service** configuration to open it in edit mode.  
 
 1. Depending on whether you are running AEM Forms on OSGi or JEE, add the following in the **Authentication Requirements** field:
@@ -54,8 +54,8 @@ The [protected mode](../../forms/using/get-xdp-pdf-documents-aem.md) is on, by d
 
 1. Log in to AEM Web Console as an administrator.
 
-    * URL for AEM Forms on OSGi is http://[server]:[port]/system/console/configMgr  
-    * URL for AEM Forms on JEE is http://[*server*]:[*port*]/lc/system/console/configMgr
+    * URL for AEM Forms on OSGi is https://[server]:[port]/system/console/configMgr  
+    * URL for AEM Forms on JEE is https://[*server*]:[*port*]/lc/system/console/configMgr
 
 1. Open **[!UICONTROL Mobile Forms Configurations]** for editing.
 1. Deselect the **[!UICONTROL Protected Mode]** option and click **[!UICONTROL Save]**.
@@ -105,7 +105,7 @@ The [protected mode](../../forms/using/get-xdp-pdf-documents-aem.md) is on, by d
 
 Designer lets you preview and test your form by using sample XML data. It is recommended that you frequently test your form with sample data to ensure that the form renders correctly.
 
-If you do not have sample data, Designer can create it, or you can create it yourself. (See [To automatically generate sample data to preview your form](http://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) and [To create sample data to preview your form](http://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+If you do not have sample data, Designer can create it, or you can create it yourself. (See [To automatically generate sample data to preview your form](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) and [To create sample data to preview your form](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 Testing your form by using a sample data source ensures that the data and fields are mapped and that repeating subforms repeat as you expected. You can create a balanced form layout that provides the appropriate space for each object to display the merged data.
 

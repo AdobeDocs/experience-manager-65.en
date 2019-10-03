@@ -17,7 +17,7 @@ docset: aem65
 
 >[!NOTE]
 >
->The eCommerce framework can be used with any eCommerce solution. Certain specifics and examples dealt with here will refer to the [SAP Commerce Cloud](http://www.hybris.com/) solution.
+>The eCommerce framework can be used with any eCommerce solution. Certain specifics and examples dealt with here will refer to the [SAP Commerce Cloud](https://www.hybris.com/) solution.
 
 The integration framework includes an integration layer with an API. This allows you to:
 
@@ -166,7 +166,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
     * 
     
       ```    
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+      https://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
        * "enabled": true,

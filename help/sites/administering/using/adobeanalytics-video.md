@@ -37,7 +37,7 @@ Use the following procedure to set up a framework for video tracking using each 
 
     * The examples in the sections that follow use the name **my-sc-configuration** for the configuration and** videofw** for the framework**.**
 
-1. On the framework page, select an RSID and set the usage to all. ([http://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](http://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
+1. On the framework page, select an RSID and set the usage to all. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. From the General component category in Sidekick, drag the Video component onto the framework.  
 1. Select a tracking method:
 

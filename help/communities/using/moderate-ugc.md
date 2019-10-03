@@ -202,7 +202,7 @@ Moderator can see such a post and mark the same to allow or deny from appearing 
 
 To enable spam detection engine, follow these steps:
 
-1. Open [Web Console](http://localhost:4502/system/console/configMgr), by going to /system/console/configMgr.
+1. Open [Web Console](https://localhost:4502/system/console/configMgr), by going to /system/console/configMgr.
 
 1. Locate **AEM Communities Auto Moderation** configuration, and edit it.
 1. Add the "SpamProcess" entry.
@@ -250,7 +250,7 @@ To configure sentiment and watchwords :
 
 * on an author instance
 * sign in as administrator
-* open [Web Console](http://localhost:4502/system/console/configMgr)
+* open [Web Console](https://localhost:4502/system/console/configMgr)
 * locate `sentimentprocess.name`
 * select the configuration to open in edit mode
 

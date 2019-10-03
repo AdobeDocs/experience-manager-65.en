@@ -34,7 +34,7 @@ You need the following hardware, software, and licenses to build and deploy the 
 
 ## For Android devices {#for-android-devices}
 
-* Android Development Toolkit (ADT bundle) that can be downloaded from [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
+* Android Development Toolkit (ADT bundle) that can be downloaded from [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * If the environment is set up on a MAC system, the ADT should be installed in the Applications folder.
 * If the ADT is installed in any other location on MAC, or if the environment is set up on a Windows system, the ADT SDK path needs to be updated in `local.properties` file that is available in `src\android` folder in the extracted the source archive `mobileworkspace-src.zip`. In this file, point the `sdk.dir` variable to ADT SDK location on your desktop.
 

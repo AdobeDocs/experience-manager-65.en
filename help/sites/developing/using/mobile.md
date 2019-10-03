@@ -302,7 +302,7 @@ For information, go to [Creating Device Group Filters](../../../sites/developing
 
 ### Using the WURFL™ Database {#using-the-wurfl-database}
 
-AEM uses a truncated version of the [WURFL](http://wurfl.sourceforge.net/)™ database to query device capabilities, such as screen resolution or javascript support, based on the device's User-Agent.
+AEM uses a truncated version of the [WURFL](https://wurfl.sourceforge.net/)™ database to query device capabilities, such as screen resolution or javascript support, based on the device's User-Agent.
 
 The XML code of the WURFL™ database is represented as nodes below `/var/mobile/devicespecs` by parsing the `wurfl.xml`file at `/libs/wcm/mobile/devicespecs/wurfl.xml.` The expansion to nodes occurs the first time that the `cq-mobile-core` bundle is started.
 
@@ -317,7 +317,7 @@ As the WURFL™ database is evolving, you may need to customize or replace it. T
 
 When a device accesses your mobile site, AEM detects the device, maps it to a device group according to its capabilities and sends a view of the page that corresponds to the device group. The matching device group provides the necessary styling information. The mappings can be tested on the Mobile User-Agent Test Page:
 
-`http://localhost:4502/etc/mobile/useragent-test.html`
+`https://localhost:4502/etc/mobile/useragent-test.html`
 
 #### Installing a Different WURFL™ Database {#installing-a-different-wurfl-database}
 
@@ -428,7 +428,7 @@ Once you've created your customised `BrowserMap` client library, we suggest the 
 
    ```xml
    <%@include file="/libs/foundation/global.jsp" %>
-   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+   <%@ taglib prefix="c" uri="https://java.sun.com/jsp/jstl/core" %>
    <%@ page import="
        com.day.cq.wcm.api.variants.PageVariant,
        com.day.cq.wcm.api.variants.PageVariantsProvider,
@@ -527,7 +527,7 @@ Normally, the BrowserMap script always redirects visitors to the best suited ver
 
 You can force the device of any request in order to test a specific version of a web site by adding the `device` parameter to your URL. The folllowing URL will render the mobile version of the Geometrixx Outdoors web site.
 
-`http://localhost:4502/content/geometrixx-outdoors/en.html?wcmmode=disabled&device=smartphone`
+`https://localhost:4502/content/geometrixx-outdoors/en.html?wcmmode=disabled&device=smartphone`
 
 >[!NOTE]
 >
@@ -545,12 +545,12 @@ As a consequence you need to call the same `URL` with the `device` set to `brows
 
 AEM processes a request issued by a mobile device that belongs to the touch device group as follows:
 
-1. An iPad sends a request to the AEM publish instance, e.g. `http://localhost:4503/content/geometrixx_mobile/en/products.html`
+1. An iPad sends a request to the AEM publish instance, e.g. `https://localhost:4503/content/geometrixx_mobile/en/products.html`
 1. AEM determines whether the site of the requested page is a mobile site (by checking whether the first level page `/content/geometrixx_mobile` extends the mobile page component). If yes:
 1. AEM looks up the device capabilities based on the User-Agent in the request header.
 1. AEM maps the device capabilities to the device group and sets `touch` as the device group selector.  
 
-1. AEM redirects the request to `http://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
+1. AEM redirects the request to `https://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
 1. AEM sends the response to the iPad:
 
     * `products.touch.html` is rendered in the usual way and is cachable.
@@ -581,9 +581,9 @@ The **Statistics** page looks as follows:
 
 If you need to generate an entry in the statistics, you can proceed as follows:
 
-1. Use a mobile device or an emulator (as for example http://chrispederick.com/work/user-agent-switcher/ on Firefox).  
+1. Use a mobile device or an emulator (as for example https://chrispederick.com/work/user-agent-switcher/ on Firefox).  
 1. Request a mobile page on the author instance by disabling the authoring mode, e.g.:  
-   `http://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
+   `https://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
 
 The **Statistics** page is now available.
 

@@ -91,13 +91,9 @@ See also [Client-side Customizations](/communities/using/client-customize.md)
 ## Essentials for Server-Side {#essentials-for-server-side}
 
 * [Configuring Messaging](../../communities/using/configure-messaging.md)
-
-* [Messaging client APIs](/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.md) for SCF components
-
-* [Messaging APIs](/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.md) for the service
-
-* [Messaging Endpoints](/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.md)
-
+* [Messaging client APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
+* [Messaging APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
+* [Messaging Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Server-side Customizations](/communities/using/server-customize.md)
 
 >[!CAUTION]
@@ -126,7 +122,7 @@ The following example is of an event handler which listens for the `message sent
 
 To try the server-side sample script, you need a development environment and the ability to build an OSGi bundle:
 
-1. Log in as an administrator to ` [CRXDE|Lite](http://localhost:4502/crx/de).`
+1. Log in as an administrator to ` [CRXDE|Lite](https://localhost:4502/crx/de).`
 1. Create a `bundle node`in `/apps/engage/install` with arbitrary names, such as:
 
     * Symbolic Name: com.engage.media.social.messaging.MessagingNotification

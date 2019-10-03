@@ -23,7 +23,7 @@ pagetitle: Foundation Components
 >
 >Adobe recommends leveraging the more modern and extensible [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in AEM projects. These are part of the [We.Retail sample content](/sites/developing/using/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
->You can use the [AEM Modernize Tools Suite](http://opensource.adobe.com/aem-modernize-tools/) to refactor your Foundation Components-based site to use Core Components.
+>You can use the [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) to refactor your Foundation Components-based site to use Core Components.
 
 The foundation components were designed for use when authoring content for a standard web page. They form a subset of the components available out-of-the-box for a standard installation of AEM.
 
@@ -305,7 +305,7 @@ The external application integration component (**External**) enables you to emb
       Specify the URL of the web application to be integrated; for example:
 
       ```    
-      http://en.wikipedia.org/wiki/Main_Page
+      https://en.wikipedia.org/wiki/Main_Page
       
       ```
 
@@ -315,7 +315,7 @@ The external application integration component (**External**) enables you to emb
     * **Width and Height  
       **Define the size of the iframe
 
-The external application is integrated into the paragraph system of the AEM page; for example, when using a Target application of `http://en.wikipedia.org/wiki/Main_Page`:
+The external application is integrated into the paragraph system of the AEM page; for example, when using a Target application of `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![](assets/chlimage_1-90.png)
 

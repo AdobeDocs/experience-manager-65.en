@@ -74,7 +74,7 @@ To configure the AEM externalizer:
 >
 >For more details see [Externalizing URLs](../../../sites/developing/using/externalizer.md).
 
-1. Navigate to the OSGi web console at** http://&lt;server&gt;:&lt;port&gt;/system/console/configMgr.**
+1. Navigate to the OSGi web console at** https://&lt;server&gt;:&lt;port&gt;/system/console/configMgr.**
 1. Find **Day CQ Link Externalizer** and enter the domain for the author node.
 
    ![](assets/aem-externalizer-01.png)

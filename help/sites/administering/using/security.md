@@ -413,7 +413,7 @@ To access AEM WCM security, do one of the following:
 
 ![](do-not-localize/wcmtoolbar.png)
 
-* Navigate directly to `http://<server>:<port>/useradmin`. Be sure you log into AEM as an administrator.
+* Navigate directly to `https://<server>:<port>/useradmin`. Be sure you log into AEM as an administrator.
 
 The following window displays:
 
@@ -449,7 +449,7 @@ The tabs provide access to various configurations:
   </tr> 
   <tr> 
    <td>Properties</td> 
-   <td>Lists information about the user or group that can include email information, a description, and name information. Also allows you to change a user's password. See <a href="http://security.html#Creating%20Users%20and%20Groups">Creating Users and Groups</a>, <a href="http://security.html#Modifying%20User%20and%20Group%20Properties">Modifying User and Group Properties</a> and <a href="#changing-a-user-password">Changing a User Password</a>.</td> 
+   <td>Lists information about the user or group that can include email information, a description, and name information. Also allows you to change a user's password. See <a href="https://security.html#Creating%20Users%20and%20Groups">Creating Users and Groups</a>, <a href="https://security.html#Modifying%20User%20and%20Group%20Properties">Modifying User and Group Properties</a> and <a href="#changing-a-user-password">Changing a User Password</a>.</td> 
   </tr> 
   <tr> 
    <td>Groups</td> 
@@ -802,7 +802,7 @@ If you plan to implement application-specific privileges, the following informat
 
 The hierarchy-modification privilege is covered by a combination of jcr-privileges. The replication privilege is named **crx:replicate** that is stored/evaluated along with other privileges on the jcr repository. It is, however, not enforced on the jcr level.
 
-The definition and registration of custom privileges is officially part of the [Jackrabbit API](http://svn.apache.org/viewvc/jackrabbit/trunk/jackrabbit-api/src/main/java/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.java) as of version 2.4 (see also [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Further usage is covered by JCR Access Control Management such as definedby [JSR 283](http://jcp.org/en/jsr/detail?id=283) (section 16). In addition, the Jackrabbit API defines a couple of extensions.
+The definition and registration of custom privileges is officially part of the [Jackrabbit API](https://svn.apache.org/viewvc/jackrabbit/trunk/jackrabbit-api/src/main/java/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.java) as of version 2.4 (see also [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Further usage is covered by JCR Access Control Management such as definedby [JSR 283](https://jcp.org/en/jsr/detail?id=283) (section 16). In addition, the Jackrabbit API defines a couple of extensions.
 
 The privilege registration mechanism is reflected in the UI under **Repository Configuration**.
 

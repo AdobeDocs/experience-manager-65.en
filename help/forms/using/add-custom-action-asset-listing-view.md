@@ -39,7 +39,7 @@ The below steps add a command "Download Flat PDF" to the Asset Listing view for 
 
 To customize Correspondence Management to allow your users to download a flat PDF of letters, complete the following steps:
 
-1. Go to `http://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.  
+1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.  
 
 1. In the apps folder, create a folder named items with path/structure similar to the items folder located in selection folder using the following steps:
 
@@ -273,14 +273,14 @@ To customize Correspondence Management to allow your users to download a flat PD
     1. Double-click the **POST.jsp** file to open it in CRX. 
     1. Add the following code to POST.jsp file and click **Save All**:
 
-       This code is specific to the letter render service. For any other asset, add that asset's java libraries to this code. For more information on AEM Forms APIs, see [AEM Forms API](http://adobe.com/go/learn_aemforms_javadocs_63_en).
+       This code is specific to the letter render service. For any other asset, add that asset's java libraries to this code. For more information on AEM Forms APIs, see [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en).
 
        For more information on AEM libraries, see AEM [Components](/sites/developing/using/components.md).
 
        ```xml    
        /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
        <%@include file="/libs/foundation/global.jsp"%>
-       <!DOCTYPE html lang="en" PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+       <!DOCTYPE html lang="en" PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
        <%@page import="com.adobe.icc.ddg.api.*"%>
        <%@page import="com.adobe.icc.dbforms.obj.*"%>
        <%@page import="com.adobe.icc.render.obj.*" %>
@@ -294,8 +294,8 @@ To customize Correspondence Management to allow your users to download a flat PD
        <%@page import="java.io.FileInputStream" %>
        <%@page import="org.apache.commons.io.IOUtils" %>
        <%@page session="false" contentType="text/html; charset=utf-8"%>
-       <%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0"%>
-       <%@taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0" %>
+       <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
+       <%@taglib prefix="cq" uri="https://www.day.com/taglibs/cq/1.0" %>
         <%@page session="false" contentType="text/html; charset=utf-8"%>
        <%
           AppContextManager.setCurrentAppContext("/content/apps/cm");
@@ -346,7 +346,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
 After you have added custom functionality to download flat PDF of your letters, you can use the following steps to download flat PDF version of the letter you select:
 
-1. Go to `http://[server]:[port]/[ContextPath]/projects.html` and log in.  
+1. Go to `https://[server]:[port]/[ContextPath]/projects.html` and log in.  
 
 1. Select **Forms &gt; Letters**. Correspondence Management lists the letters available in the system.
 1. Click **Select** and then click a letter to select it.

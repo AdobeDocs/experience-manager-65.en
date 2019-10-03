@@ -30,7 +30,7 @@ For a simple demonstration, a visual feature, the avatar shown of the signed-in 
 
 Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md):
 
-* open [/apps/custom/components/comments/comment/**comment.hbs**](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* open [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
     * comment out the tag which includes the avatar for a comment post (~ line 21):
 
@@ -40,7 +40,7 @@ Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md):
        -->
       ```
 
-* open [/apps/custom/components/comments/**comments.hbs**](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* open [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
     * comment out the tag which includes the avatar for the next comment entry (~ line 44):
 

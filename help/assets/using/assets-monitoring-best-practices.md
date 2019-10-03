@@ -35,14 +35,14 @@ Typically, AEM Assets can be monitored in two ways, live monitoring and long ter
 You should perform live monitoring during the performance testing phase of your development or during high-load situations to understand the performance characteristics of your environment. Typically, live monitoring should be performed using a suite of tools. Here are some recommendations:
 
 * [Visual VM](https://visualvm.java.net/): Visual VM enables you to view detailed Java VM information, including CPU usage, Java memory usage. In addition, it lets you sample and evaluate code that runs on an instance.
-* [Top](http://man7.org/linux/man-pages/man1/top.1.html): Top is a Linux command that opens up a dashboard, which displays usage statistics, including CPU, memory, and IO usage. It provides a high-level overview of what is happening on an instance.
-* [Htop](http://hisham.hm/htop/): Htop is an interactive process viewer. It provides detailed CPU and memory usage in addition to what Top can provide. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
+* [Top](https://man7.org/linux/man-pages/man1/top.1.html): Top is a Linux command that opens up a dashboard, which displays usage statistics, including CPU, memory, and IO usage. It provides a high-level overview of what is happening on an instance.
+* [Htop](https://hisham.hm/htop/): Htop is an interactive process viewer. It provides detailed CPU and memory usage in addition to what Top can provide. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
 
-* [Iotop](http://guichaz.free.fr/iotop/): Iotop is a detailed dashboard for disk IO usage. It displays bars and meters that depict the processes that use disk IO and the amount they use. Iotop can be installed on most Linux systems using `yum install iotop` or `apt-get install iotop`.
+* [Iotop](https://guichaz.free.fr/iotop/): Iotop is a detailed dashboard for disk IO usage. It displays bars and meters that depict the processes that use disk IO and the amount they use. Iotop can be installed on most Linux systems using `yum install iotop` or `apt-get install iotop`.
 
-* [Iftop](http://www.ex-parrot.com/pdw/iftop/): Iftop displays detailed information about ethernet/network usage. Iftop displays per communication channel statistics on the entities using ethernet and the amount of bandwidth they use. Iftop can be installed on most Linux systems using `yum install iftop` or `apt-get install iftop`.
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop displays detailed information about ethernet/network usage. Iftop displays per communication channel statistics on the entities using ethernet and the amount of bandwidth they use. Iftop can be installed on most Linux systems using `yum install iftop` or `apt-get install iftop`.
 
-* Java Flight Recorder (JFR): A commercial tool from Oracle that you can use freely in non-production environments. For more details, see [How to Use Java Flight Recorder to Diagnose CQ Runtime Problems](http://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* Java Flight Recorder (JFR): A commercial tool from Oracle that you can use freely in non-production environments. For more details, see [How to Use Java Flight Recorder to Diagnose CQ Runtime Problems](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
 * AEM error.log file: You can investigate the AEM error.log file for details of errors logged in the system. Use the command `tail -F quickstart/logs/error.log` to identify errors that you should investigate.
 * [Workflow console](/sites/administering/using/workflows.md): Leverage the workflow console to monitor workflows that lag behind or get stuck.
 
@@ -79,13 +79,13 @@ You require external tools, such as NewRelic(TM) and AppDynamics(TM) to monitor 
 
 Internal application monitoring includes monitoring the application components that make up the AEM stack, including JVM, the content repository, and monitoring through custom application code built on the platform. In general, it is performed through JMX Mbeans that can be monitored directly by many popular monitoring solutions, such as SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM), and others. For systems that do not support a direct connection to JMX, you can write shell scripts to extract the JMX data and expose it to these systems in a format that they natively understand.
 
-Remote access to the JMX Mbeans is not enabled by default. For more information on monitoring through JMX, see [Monitoring and Management Using JMX Technology](http://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
+Remote access to the JMX Mbeans is not enabled by default. For more information on monitoring through JMX, see [Monitoring and Management Using JMX Technology](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
 In many cases, a baseline is required to effectively monitor a statistic. To create a baseline, observe the system under normal working conditions for a predetermined period and then identify the normal metric.
 
 **JVM monitoring**
 
-As with any Java-based application stack, AEM depends on the resources that are provided to it through the underlying Java Virtual Machine. You can monitor the status of many of these resources through Platform MXBeans that are exposed by JVM. For more information on MXBeans, see [Using the Platform MBean Server and Platform MXBeans](http://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+As with any Java-based application stack, AEM depends on the resources that are provided to it through the underlying Java Virtual Machine. You can monitor the status of many of these resources through Platform MXBeans that are exposed by JVM. For more information on MXBeans, see [Using the Platform MBean Server and Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 Here are some baseline parameters that you can monitor for JVM:
 

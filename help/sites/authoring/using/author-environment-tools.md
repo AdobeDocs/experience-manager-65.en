@@ -29,7 +29,7 @@ For example, column view:
 
 You can edit a page with the page editor. For example:
 
-`http://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
+`https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
 ![](assets/ateat-02.png)
 
@@ -193,7 +193,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
 * For example, a basic page:
 
-  `http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
   ![](assets/ateat-12.png)
 
@@ -203,7 +203,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
 * Or a page that is part of a [livecopy](/sites/administering/using/msm.md), where components are inherited from another page; for example:
 
-  `http://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
   ![](assets/ateat-13.png)
 

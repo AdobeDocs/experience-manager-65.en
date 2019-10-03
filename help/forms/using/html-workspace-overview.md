@@ -24,7 +24,7 @@ For more information, see [Introduction to AEM Forms workspace](../../forms/usin
 
 ## Getting Familiar {#getting-familiar}
 
-To be familiar with the end-to-end process of creating a forms application to automate a business process, follow the walkthrough. You can create, manage, and test an application using Workbench, Designer, and AEM Forms workspace after following the walkthrough. For implementation details, see [Creating Your First AEM Forms Application](http://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+To be familiar with the end-to-end process of creating a forms application to automate a business process, follow the walkthrough. You can create, manage, and test an application using Workbench, Designer, and AEM Forms workspace after following the walkthrough. For implementation details, see [Creating Your First AEM Forms Application](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Functional Overview {#functional-overview}
 

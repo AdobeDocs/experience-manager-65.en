@@ -585,11 +585,11 @@ You can configure the RTE to make your own selection of characters available; ei
 
     * **Name** `rangeStart`  
       **Type** `Long`  
-      **Value** the [Unicode](http://unicode.org/) representation (decimal) of the first character in the range  
+      **Value** the [Unicode](https://unicode.org/) representation (decimal) of the first character in the range  
     
     * **Name** `rangeEnd`  
       **Type** `Long`  
-      **Value** the [Unicode](http://unicode.org/) representation (decimal) of the last character in the range
+      **Value** the [Unicode](https://unicode.org/) representation (decimal) of the last character in the range
 
 1. Save the changes.
 
@@ -874,7 +874,7 @@ To configure how links are added in AEM from another program, define the HTML ru
         
         * **Value** the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
-    * Array of valid **protocols** (including http://, https:// file://, mailto:, amongst others)
+    * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
 
         * **Name** `protocols`  
         

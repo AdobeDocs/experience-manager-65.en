@@ -36,7 +36,7 @@ Silverpop configurations can be added via **Cloudservices**, **Tools**, or** API
 
 To create a Silverpop configuration in Cloud Services:
 
-1. In AEM, tap or click **Tools** > **Deployment** > **Cloud Services**. (Or directly access at `http://<hostname>:<port>/etc/cloudservices.html`.)
+1. In AEM, tap or click **Tools** > **Deployment** > **Cloud Services**. (Or directly access at `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Under third-party services, click **Silverop Engage **and then **Configure**. The Silverpop configuration window opens.
 
    >[!NOTE]
@@ -55,7 +55,7 @@ To create a Silverpop configuration in Cloud Services:
 
 To create a Silverpop configuration in Tools:
 
-1. In AEM, tap or click **Tools **> **Deployment** > **Cloud Services**. Or navigate there directly by going to `http://<hostname>:<port>/misadmin#/etc`.
+1. In AEM, tap or click **Tools **> **Deployment** > **Cloud Services**. Or navigate there directly by going to `https://<hostname>:<port>/misadmin#/etc`.
 1. Select **Tools**, then **Cloud Services Configurations,** then **Silverpop Engage**.
 1. Click **New** to open the **Create Page **window.
 
@@ -77,7 +77,7 @@ Currently, AEM has six unsecured end points (Engage 1 to 6). Silverpop now provi
 
 To configure the API end points :
 
-1. Go to `/libs/mcm/silverpop/components/silverpoppage/dialog/items/general/items/apiendpoint/options node` on `http://<hostname>:<port>/crxde.`
+1. Go to `/libs/mcm/silverpop/components/silverpoppage/dialog/items/general/items/apiendpoint/options node` on `https://<hostname>:<port>/crxde.`
 1. Right-click and select **Create**, then **Create Node**.
 1. Enter the **Name** as `sp-e0` and choose **Type** as `cq:Widget`.
 1. Add two properties to the newly added node:
@@ -102,12 +102,12 @@ To configure the API end points :
 
    | ** Node Name** |** Exisiting End Point Value** |** New End Point Value** |
    |---|---|---|
-   | sp-e1 |http://api.engage1.silverpop.com/XMLAPI |https://api1.silverpop.com |
-   | sp-e2 |http://api.engage2.silverpop.com/XMLAPI |https://api2.silverpop.com |
-   | sp-e3 |http://api.engage3.silverpop.com/XMLAPI |https://api3.silverpop.com |
-   | sp-e4 |http://api.engage4.silverpop.com/XMLAPI |https://api4.silverpop.com |
-   | sp-e5 |http://api.engage5.silverpop.com/XMLAPI |https://api5.silverpop.com |
-   | sp-e6 |http://api.pilot.silverpop.com/XMLAPI |https://api6.silverpop.com |
+   | sp-e1 |https://api.engage1.silverpop.com/XMLAPI |https://api1.silverpop.com |
+   | sp-e2 |https://api.engage2.silverpop.com/XMLAPI |https://api2.silverpop.com |
+   | sp-e3 |https://api.engage3.silverpop.com/XMLAPI |https://api3.silverpop.com |
+   | sp-e4 |https://api.engage4.silverpop.com/XMLAPI |https://api4.silverpop.com |
+   | sp-e5 |https://api.engage5.silverpop.com/XMLAPI |https://api5.silverpop.com |
+   | sp-e6 |https://api.pilot.silverpop.com/XMLAPI |https://api6.silverpop.com |
 
 1. Click **Save All**. AEM is now ready to connect to Silverpop over secured end points.
 

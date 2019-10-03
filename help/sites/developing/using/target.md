@@ -201,7 +201,7 @@ For example, if you want to use the [Marketing Cloud ID service](https://marketi
 >
 >If a custom mbox is defined in a Target configuration, everyone must have read access to **/etc/cloudservices** on publish servers. Without this access, loading mbox.js files on publish website results in a 404 error.
 
-1. Go to the CQ **Tools** page and select **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Go to the CQ **Tools** page and select **Cloud Services**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. In the tree, select Adobe Target, and in the list of configurations, double-click your Target configuration.
 1. On the configuration page, click Edit.
 1. For the Custom mbox.js property, click Browse and select the file.

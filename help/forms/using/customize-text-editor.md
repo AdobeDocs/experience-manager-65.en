@@ -34,7 +34,7 @@ To do this, you need to:
 
 To customize fonts by editing the tbxeditor-config.xml file, do the following:
 
-1. Go to `http://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named config with path/structure similar to the config folder, which is at libs/fd/cm/config, using the following steps:
 
     1. Right-click the items folder at the following path and select **Overlay Node**:
@@ -174,7 +174,7 @@ When you access a font in the Correspondence Management text editor, it needs to
 
 For more information on installing fonts, see the following:
 
-* [Install or uninstall fonts on Windows](http://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
+* [Install or uninstall fonts on Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
 * [Mac Basics: Font Book](https://support.apple.com/en-us/HT201749)
 
 ## Access font customizations {#access-font-customizations}

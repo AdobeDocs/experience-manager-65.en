@@ -49,7 +49,7 @@ To embed the adaptive form:
     //alert(options.path);
        if(options.path) {
            // options.path refers to the publish URL of the adaptive form
-           // For Example: http:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+           // For Example: https:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
            // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path 
            var path = options.path;
            path += "/jcr:content/guideContainer.html";
@@ -123,8 +123,8 @@ Let's look at an example how you can set up an Apache 2.4 reverse proxy server w
 1. Set up proxy rules by adding the following lines of code in the `httpd-proxy.conf` configuration file.
 
    ```
-   ProxyPass /forms http://[AEM_Instance]/forms 
-    ProxyPassReverse /forms http://[AEM_Instance]/forms
+   ProxyPass /forms https://[AEM_Instance]/forms 
+    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
    Replace `[AEM_Instance`] with the AEM server publish URL in the rules.
@@ -132,16 +132,16 @@ Let's look at an example how you can set up an Apache 2.4 reverse proxy server w
 If you do not mount the AEM server on a context path, the proxy rules at Apache layer will be as follows:
 
 ```java
-ProxyPass /content http://<AEM_Instance>/content
-ProxyPass /etc http://<AEM_Instance>/etc
-ProxyPass /etc.clientlibs http://<AEM_Instance>/etc.clientlibs
+ProxyPass /content https://<AEM_Instance>/content
+ProxyPass /etc https://<AEM_Instance>/etc
+ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
 # CSRF Filter
-ProxyPass /libs/granite/csrf/token.json http://<AEM_Instance>/libs/granite/csrf/token.json
+ProxyPass /libs/granite/csrf/token.json https://<AEM_Instance>/libs/granite/csrf/token.json
   
-ProxyPassReverse /etc http://<AEM_Instance>/etc
-ProxyPassReverse /etc.clientlibs http://<AEM_Instance>/etc.clientlibs
+ProxyPassReverse /etc https://<AEM_Instance>/etc
+ProxyPassReverse /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
 # written for thank you page and other URL present in AF during redirect
-ProxyPassReverse /content http://<AEM_Instance>/content
+ProxyPassReverse /content https://<AEM_Instance>/content
 ```
 
 >[!NOTE]
@@ -160,7 +160,7 @@ When embedding an adaptive form in a web page, consider the following best pract
 
 ## Enable AEM Forms to serve adaptive forms to a cross domain site {#cross-site}
 
-1. On AEM author instance, go to AEM Web Console Configuration Manager at http://[server]:[port]/system/console/configMgr.
+1. On AEM author instance, go to AEM Web Console Configuration Manager at https://[server]:[port]/system/console/configMgr.
 1. Locate and open the** Apache Sling Referrer Filter** configuration.
 1. In the Allowed Hosts field, specify the domain where the web page resides. It enables the host to make POST requests to the AEM server. You can also use regular expression to specify a series of external application domains.
 

@@ -109,7 +109,7 @@ You can disable the OSGi Component Disabler. To use this service, see [OSGi Comp
 
 As a workaround, you can also manually disable the component either via the UI or via a `curl` command (example below), after every AEM restart.
 
-`curl -u admin:$(pass CQ_Admin) 'http://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
+`curl -u admin:$(pass CQ_Admin) 'https://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
 
 #### How to configure Asset Insights with AEM 6.4 instance? {#how-to-configure-asset-insights-with-aem-instance}
 

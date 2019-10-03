@@ -23,7 +23,7 @@ For basic information, visit :
 
 * [Using Client-Side Libraries](../../sites/developing/using/clientlibs.md) which provides usage details as well as debugging tools
 * [Clientlibs for SCF](/communities/using/client-customize.md#clientlibs) which provides useful information when customizing SCF components
-* [Blog : AEM Client Libraries explained by example](http://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [Blog : AEM Client Libraries explained by example](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Why Clientlibs are Required {#why-clientlibs-are-required}
 
@@ -47,7 +47,7 @@ The essential feature information for developers identifies the required clientl
 
 In addition, from an AEM instance, browsing to the [Community Components Guide](/communities/using/components-guide.md) provides access to a listing of clientlib categories required for a component.
 
-For example, at the very top of the [Reviews page](http://localhost:4502/content/community-components/en/reviews.html) the required clientlibs listed are
+For example, at the very top of the [Reviews page](https://localhost:4502/content/community-components/en/reviews.html) the required clientlibs listed are
 
 * cq.ckeditor
 * cq.social.hbs.reviews
@@ -62,7 +62,7 @@ Use [CRXDE|Lite](#using-crxde-lite) to modify an existing clientlibslist for a c
 
 To add a clientlib for a community site using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md) :
 
-* browse to [http://&lt;server&gt;:&lt;port&gt;/crx/de](http://localhost:4502/crx/de)
+* browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de)
 * locate the `clientlibslist` node for the page on which you wish to add the component
 
     * `/content/sites/sample/en/page/jcr:content/clientlibslist`

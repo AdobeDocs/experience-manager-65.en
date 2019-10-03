@@ -74,7 +74,7 @@ The following table summarizes the policy attributes with an example policy JSON
 
 ```
 {
-    "server": "http://localhost:4502",
+    "server": "https://localhost:4502",
     "resolution": "auto",
     "rebootSchedule": "at 4:00 am",
     "enableAdminUI": false,

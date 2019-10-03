@@ -289,7 +289,7 @@ Watched Folder depends on the Scheduler service for scheduling, unscheduling, an
 
 ## Watched folders in a cluster {#watched-folders-in-a-cluster}
 
-In a cluster, Watched Folder depends on the Quartz scheduler and the Job Manager service for load balancing and failover. For more information about Quartz cluster behavior, see [Quartz Documentation](http://www.quartz-scheduler.org/documentation).
+In a cluster, Watched Folder depends on the Quartz scheduler and the Job Manager service for load balancing and failover. For more information about Quartz cluster behavior, see [Quartz Documentation](https://www.quartz-scheduler.org/documentation).
 
 Watched Folder performs these three main tasks at each poll:
 

@@ -17,7 +17,7 @@ docset: aem65
 
 The following procedure uses the classic UI to create a language root of a site. For more information, see [Creating a Language Root](/sites/administering/using/tc-prep.md#creating-a-language-root).
 
-1. In the Websites console, in the Websites tree, select the root page of the site. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
+1. In the Websites console, in the Websites tree, select the root page of the site. ([https://localhost:4502/siteadmin#](https://localhost:4502/siteadmin#))
 1. Add a new child page that represents the language version of the site:
 
     1. Click New &gt; New Page.

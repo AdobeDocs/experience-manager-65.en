@@ -20,7 +20,7 @@ AEM Forms integrates with Adobe Analytics that allows you to capture and track p
 >
 >The analytics feature in AEM Forms is available as part of the AEM Forms add-on package. For information about installing the add-on package, see [Installing and configuring AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 >
->In addition to the add-on package, you need an Adobe Analytics account and administrator privileges on the AEM instance. For information about the solution, see [Adobe Analytics](http://www.adobe.com/solutions/digital-analytics.html).
+>In addition to the add-on package, you need an Adobe Analytics account and administrator privileges on the AEM instance. For information about the solution, see [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
 ## Overview {#overview}
 
@@ -162,7 +162,7 @@ An Adobe Analytics framework is a set of mappings between Adobe Analytics variab
 
 ## Configuring AEM Forms Analytics Configuration service {#configuring-aem-forms-analytics-configuration-service}
 
-1. On author instance, open AEM Web Console Configuration manager at http://&lt;*server*&gt;:&lt;*port*&gt;/system/console/configMgr.
+1. On author instance, open AEM Web Console Configuration manager at https://&lt;*server*&gt;:&lt;*port*&gt;/system/console/configMgr.
 1. Locate and open AEM Forms Analytics Configuration 
 
    ![AEM Forms Analytics Configuration service](assets/analytics_configuration.png)
@@ -188,7 +188,7 @@ Now, you can enable analytics for forms and generate an analytics report.
 
 ## Enabling analytics for a form or document {#enabling-analytics-for-a-form-or-document}
 
-1. Log in to AEM portal at http://[hostname]:[port]. 
+1. Log in to AEM portal at https://[hostname]:[port]. 
 1. Click **Forms &gt; Forms & Documents**, select a form or document, and click **Enable Analytics**. The analytics is enabled.
 
    ![Enabling analytics for a form or document](assets/enable-analytics-1.png)

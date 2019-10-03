@@ -53,7 +53,7 @@ AEM Assets comes with a set of predefined predicates that can be used to customi
 
 In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/sites/developing/using/querybuilder-api.md).
 
-Creating custom predicates requires basic knowledge about the [Widgets framework](/sites/developing/using/reference-materials/widgets-api/index.md).
+Creating custom predicates requires basic knowledge about the [Widgets framework](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
 The best practice is to copy an existing predicate and adjust it. Sample predicates are located in **/libs/cq/search/components/predicates**.
 
@@ -66,7 +66,7 @@ To build a property predicate:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
-   <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
        jcr:primaryType="cq:Component"
        jcr:title="Title Predicate"
        sling:resourceSuperType="foundation/components/parbase"
@@ -163,7 +163,7 @@ To build a group predicate:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
-   <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
        jcr:primaryType="cq:Component"
        jcr:title="Image Formats"
        sling:resourceSuperType="foundation/components/parbase"

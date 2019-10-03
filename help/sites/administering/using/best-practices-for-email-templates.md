@@ -56,7 +56,7 @@ Use these best practices when creating your own newsletter.
   </tr> 
   <tr> 
    <td><p>Specify document type to ensure consistent rendering.</p> <p>Add DOCTYPE at the beginning (HTML or XHTML)</p> </td> 
-   <td><p>Is configurable by design changing the <i>cq:doctype</i> property in<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>The default is "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Can be changed to "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td> 
+   <td><p>Is configurable by design changing the <i>cq:doctype</i> property in<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>The default is "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Can be changed to "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td> 
   </tr> 
   <tr> 
    <td><p>Specify character definition to ensure correct rendering of special characters.</p> <p>Add CHARSET declaration (e.g. iso-8859-15, UTF-8) to &lt;head&gt;</p> </td> 

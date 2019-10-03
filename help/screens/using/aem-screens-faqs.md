@@ -60,7 +60,7 @@ It is recommended to obtain the device ID from the session rather than passed as
 
 #### 3. Is there a way to decline a device registration request? {#is-there-a-way-to-decline-a-device-registration-request}
 
-You cannot decline the registration requests. Instead the registration requests should expire after a timeout that is configured in [Adobe Experience Manager Web Console](http://localhost:4502/system/console/configMgr/com.adobe.cq.screens.device.registration.impl.RegistrationServiceImpl). By default, this value is set to one day and is stored in a memory cache.
+You cannot decline the registration requests. Instead the registration requests should expire after a timeout that is configured in [Adobe Experience Manager Web Console](https://localhost:4502/system/console/configMgr/com.adobe.cq.screens.device.registration.impl.RegistrationServiceImpl). By default, this value is set to one day and is stored in a memory cache.
 
 ### Device Monitoring and Health Reports {#device-monitoring-and-health-reports}
 
@@ -132,7 +132,7 @@ In order to disable Livefyre to avoid log errors :
 
 1. ***Disable Livefyre bundle:***
 
-    * Navigate to *http://&lt;host&gt;:&lt;port&gt;/system/console/bundles,*
+    * Navigate to *https://&lt;host&gt;:&lt;port&gt;/system/console/bundles,*
     * Search for the AEM Livefyre bundle: **com.adobe.cq.social.cq-social-livefyre** 
     * Click **Stop**.
 

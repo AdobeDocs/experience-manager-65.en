@@ -16,7 +16,7 @@ docset: aem65
 
 ## Forms Workflow Steps {#forms-workflow-steps}
 
-Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps allow you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](http://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
+Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps allow you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
 
 ## Assign task step {#assign-task-step}
 

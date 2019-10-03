@@ -66,6 +66,6 @@ See I [nstalling feature pack 18912 for bulk asset migration](../assets/using/bu
 
 ## Helpful resources {#helpful-resources}
 
-* [Adobe Experience Manager Product Page](http://www.adobe.com/solutions/web-experience-management.html)
+* [Adobe Experience Manager Product Page](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM Documentation](https://docs.adobe.com/content/docs/en/aem/6-3.html)
 

@@ -20,7 +20,7 @@ Adobe Experience Manager Forms integrates with Adobe Analytics that allows you t
 
 The analytics feature in AEM Forms is available as part of the AEM Forms add-on package. For information about installing the add-on package, see [Installing and configuring AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
-In addition to the add-on package, you need an Adobe Analytics account. For information about the solution, see [Adobe Analytics](http://www.adobe.com/solutions/digital-analytics.html).
+In addition to the add-on package, you need an Adobe Analytics account. For information about the solution, see [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
 Once you have the AEM Forms add-on package and an Adobe Analytics account, integrate Adobe Analytics account with AEM Forms and enable tracking on your forms or documents as described in [Configure analytics and reports](../../forms/using/configure-analytics-forms-documents.md).
 
@@ -46,7 +46,7 @@ When a user interacts with the form, the interactions are recorded and sent to A
 
 Perform the following steps to view analytics reports:
 
-1. Log in to the AEM portal at http://[hostname]:[port]
+1. Log in to the AEM portal at https://[hostname]:[port]
 1. Click **Forms &gt; Forms & Documents**.  
 
 1. Select the form for which you want to view the analytics reports.

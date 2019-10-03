@@ -23,7 +23,7 @@ A key factor here is that to recognize potential issues you need to know how you
 |---|---|---|
 | Backup plan. |  |See how to [Backup your Instance](../../../sites/deploying/using/monitoring-and-maintaining.md#backups). |
 | Disaster recovery plan. |Your company's disaster recovery guidelines. |  |
-| An error tracking system is available for reporting problems. |For example, [bugzilla](http://www.bugzilla.org/), [jira](http://www.atlassian.com/software/jira/), or one of many others. |  |
+| An error tracking system is available for reporting problems. |For example, [bugzilla](https://www.bugzilla.org/), [jira](https://www.atlassian.com/software/jira/), or one of many others. |  |
 | File systems are being monitored. |The CRX repository will "freeze" if there is insufficient free disk space. It will resume once space becomes available. |" `*ERROR* LowDiskSpaceBlocker`" messages can be seen in the log file when free space becomes low. |
 | [Log files](../../../sites/deploying/using/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) are being monitored. |  |  |
 | System monitoring is (constantly) running in the background. |Including CPU, memory, disk and network usage. Using for example, iostat / vmstat / perfmon. |Logged data is visualized and can be used for tracking performance problems. Raw data is also accessible. |
@@ -97,7 +97,7 @@ This section deals with maintenance operations related to the versioning feature
 
 The **Purge Versions **tool is available in the ** [Tools](../../../sites/administering/using/tools-consoles.md) console** under **Versioning** or directly at: ``
 
-`http://<server>:<port>/etc/versioning/purge.html`
+`https://<server>:<port>/etc/versioning/purge.html`
 
 ![](assets/screen_shot_2012-03-15at14418pm.png)
 
@@ -431,7 +431,7 @@ In certain circumstances you may want to create a custom log file with a differe
 
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`.
 
-The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `http://localhost:4502/system/console/slinglog`.
+The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.
 
 ### Finding the Audit Records {#finding-the-audit-records}
 
@@ -586,12 +586,12 @@ Some of these will be dependent on your operating system.
   <tr> 
    <td>Thread dumps</td> 
    <td>Observe JVM threads. Identify contentions, locks and long-runners.</td> 
-   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analysis tools are also available, such as <a href="http://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
+   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analysis tools are also available, such as <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Heap Dumps</td> 
    <td>Out of Memory issues that cause slow performance.</td> 
-   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>See the <a href="http://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Troubleshooting Guide for Java SE 6 with HotSpot VM</a>.</p> </td> 
+   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>See the <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Troubleshooting Guide for Java SE 6 with HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>System calls</td> 
@@ -601,7 +601,7 @@ Some of these will be dependent on your operating system.
   <tr> 
    <td>Apache Bench</td> 
    <td>Identify memory leaks, selectively analyze response time.</td> 
-   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="http://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> for full details.</p> </td> 
+   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> for full details.</p> </td> 
   </tr> 
   <tr> 
    <td>Search Analysis</td> 
@@ -611,22 +611,22 @@ Some of these will be dependent on your operating system.
   <tr> 
    <td>JMeter</td> 
    <td>Load and functional tests.</td> 
-   <td><a href="http://jakarta.apache.org/jmeter/">http://jakarta.apache.org/jmeter/</a></td> 
+   <td><a href="https://jakarta.apache.org/jmeter/">https://jakarta.apache.org/jmeter/</a></td> 
   </tr> 
   <tr> 
    <td>JProfiler</td> 
    <td>In-depth CPU and memory profiling.</td> 
-   <td><a href="http://www.ej-technologies.com/">http://www.ej-technologies.com/</a></td> 
+   <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td> 
   </tr> 
   <tr> 
    <td>JConsole</td> 
    <td>Observe JVM metrics and threads.</td> 
-   <td><p>Usage: jconsole</p> <p>See <a href="http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> and <a href="#monitoring-performance-using-jconsole">Monitoring Performance using JConsole</a>.</p> <p><strong>Note:</strong> With JDK 1.6, JConsole is extensible with plug-ins; for example, Top or TDA (Thread Dump Analyzer).</p> </td> 
+   <td><p>Usage: jconsole</p> <p>See <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> and <a href="#monitoring-performance-using-jconsole">Monitoring Performance using JConsole</a>.</p> <p><strong>Note:</strong> With JDK 1.6, JConsole is extensible with plug-ins; for example, Top or TDA (Thread Dump Analyzer).</p> </td> 
   </tr> 
   <tr> 
    <td>Java VisualVM</td> 
    <td>Observe JVM metrics, threads, memory and profiling.</td> 
-   <td><p>Usage: jvisualvm or visualvm<br /> </p> <p>See <a href="http://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> and <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance using (J)VisualVM</a>.</p> <p><strong>Note:</strong> With JDK 1.6, VisualVM is extensible with plug-ins.</p> </td> 
+   <td><p>Usage: jvisualvm or visualvm<br /> </p> <p>See <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> and <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance using (J)VisualVM</a>.</p> <p><strong>Note:</strong> With JDK 1.6, VisualVM is extensible with plug-ins.</p> </td> 
   </tr> 
   <tr> 
    <td>truss/strace, lsof</td> 
@@ -641,7 +641,7 @@ Some of these will be dependent on your operating system.
   <tr> 
    <td>CPU and memory profiling tool<br /> </td> 
    <td><a href="#interpreting-the-request-log">Used when analyzing slow requests during development</a>.</td> 
-   <td>For example, <a href="http://www.yourkit.com/">YourKit</a>.</td> 
+   <td>For example, <a href="https://www.yourkit.com/">YourKit</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="#information-collection">Information Collection</a></td> 
@@ -657,7 +657,7 @@ This file registers basic information about every request made to AEM. From this
 
 The `request.log` offers a built-in way to get a look at how long requests take. For development purposes it is useful to `tail -f` the `request.log` and watch for slow response times. To analyze a bigger `request.log` we recommend the [use of `rlog.jar` which allows you to sort and filter for response times](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
-We recommend isolating the "slow" pages from the `request.log`, then individually tuning them for a better performance. This is usually done by including performance metrics per component or using a performance profiling tool such as ` [yourkit](http://www.yourkit.com/)`.
+We recommend isolating the "slow" pages from the `request.log`, then individually tuning them for a better performance. This is usually done by including performance metrics per component or using a performance profiling tool such as ` [yourkit](https://www.yourkit.com/)`.
 
 #### Monitoring traffic on your website {#monitoring-traffic-on-your-website}
 
@@ -787,15 +787,15 @@ You may need to concatenate the individual `request.log` files if you need to do
 
 ### Apache Bench {#apache-bench}
 
-To minimize the impact of special cases (such as garbage collection, etc), it is recommended to use a tool such as `apachebench` (see for example, [ab](http://httpd.apache.org/docs/2.2/programs/ab.html) for further documentation) to help identify memory leaks and selectively analyze response time.
+To minimize the impact of special cases (such as garbage collection, etc), it is recommended to use a tool such as `apachebench` (see for example, [ab](https://httpd.apache.org/docs/2.2/programs/ab.html) for further documentation) to help identify memory leaks and selectively analyze response time.
 
 Apache Bench can be used in the following way:
 
 ```shell
-$ ab -c 5 -k -n 1000 "http://localhost:4503/content/geometrixx/en/company.html"
+$ ab -c 5 -k -n 1000 "https://localhost:4503/content/geometrixx/en/company.html"
 This is ApacheBench, Version 2.3 <$Revision: 655654 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, https://www.zeustech.net/
+Licensed to The Apache Software Foundation, https://www.apache.org/
 
 Benchmarking localhost (be patient)
 Completed 100 requests
@@ -1154,7 +1154,7 @@ Some common choices are:
 
 The resulting log can be ingested by a GC visualizer such as:
 
-` [http://www.ibm.com/developerworks/library/j-ibmtools2/](http://www.ibm.com/developerworks/library/j-ibmtools2/)`
+` [https://www.ibm.com/developerworks/library/j-ibmtools2/](https://www.ibm.com/developerworks/library/j-ibmtools2/)`
 
 Or JConsole:
 
@@ -1168,7 +1168,7 @@ Or JConsole:
   ```
 
 * Then connect to the JVM with the JConsole; see:  
-  ` [http://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](http://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
 
 This will help you see how much memory is being used, what GC algorithms are being used, how long they take to run, and what effect this has on your application performance. Without this, tuning is just "randomly twiddling knobs".
 
@@ -1176,5 +1176,5 @@ This will help you see how much memory is being used, what GC algorithms are bei
 >
 >For Oracle's VM there is also information at:
 >
->[http://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](http://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
 

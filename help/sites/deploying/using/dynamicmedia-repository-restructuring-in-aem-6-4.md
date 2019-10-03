@@ -40,7 +40,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
   </tr>
   <tr>
    <td><strong>Restructuring guidance</strong></td> 
-   <td><p>You can run the following migration script to migrate to the new location:</p> <p><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternatively, you can edit the configuration in AEM UI, and the changes will be saved to the new location.</p> </td> 
+   <td><p>You can run the following migration script to migrate to the new location:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternatively, you can edit the configuration in AEM UI, and the changes will be saved to the new location.</p> </td> 
   </tr>
   <tr>
    <td><strong>Notes</strong></td> 
@@ -65,7 +65,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
    <td><strong>Restructuring guidance</strong></td> 
    <td><p>The customer can run a migration script at this location:<br /> </p> 
     <ul> 
-     <li><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>Restart Dynamic Media OSGi bundle.</li> 
     </ul> </td> 
   </tr>
@@ -90,7 +90,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
   </tr>
   <tr>
    <td><strong>Restructuring guidance</strong></td> 
-   <td><p>You can run the migration script below in order to align to the latest model:</p> <p><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
+   <td><p>You can run the migration script below in order to align to the latest model:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
   </tr>
   <tr>
    <td><strong>Notes</strong></td> 
@@ -136,7 +136,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
   </tr>
   <tr>
    <td><strong>Restructuring guidance</strong></td> 
-   <td><p>The customer can run the below migration script.</p> <p><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternatively, you can edit the configuration in AEM UI, and the changes will be saved to the new location.</p> </td> 
+   <td><p>The customer can run the below migration script.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternatively, you can edit the configuration in AEM UI, and the changes will be saved to the new location.</p> </td> 
   </tr>
   <tr>
    <td><strong>Notes</strong></td> 
@@ -157,7 +157,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/sites/deployin
   </tr>
   <tr>
    <td><strong>Restructuring guidance</strong></td> 
-   <td><p>The customer can run the below migration script.</p> <p><em>http://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
+   <td><p>The customer can run the below migration script.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
   </tr>
   <tr>
    <td><strong>Notes</strong></td> 

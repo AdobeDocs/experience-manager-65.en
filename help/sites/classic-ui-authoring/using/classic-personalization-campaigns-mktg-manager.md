@@ -19,11 +19,11 @@ In AEM, the Marketing Campaign Manager (MCM) is a console that helps you manage 
 
 MCM can be accessed from various locations in AEM; for example, the Welcome screen, using the Campaigns icon or with the URL:
 
-`http://<*hostname*>:<*port-nr*>/libs/mcm/content/admin.html`
+`https://<*hostname*>:<*port-nr*>/libs/mcm/content/admin.html`
 
 For example:
 
-`http://localhost:4502/libs/mcm/content/admin.html`
+`https://localhost:4502/libs/mcm/content/admin.html`
 
 ![](assets/screen_shot_2012-02-21at114636am.png)
 

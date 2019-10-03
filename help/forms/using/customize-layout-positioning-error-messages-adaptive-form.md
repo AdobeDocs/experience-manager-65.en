@@ -47,7 +47,7 @@ Create a theme using Theme Editor to customize layout of all fields in your form
 
 ## Create a custom field layout {#create-a-custom-field-layout}
 
-1. Open CRXDE lite. The default URL is http://[Server]:[Port]/crx/de.
+1. Open CRXDE lite. The default URL is https://[Server]:[Port]/crx/de.
 1. Copy a field layout from the /libs/fd/af/layouts/field node (For example, defaultFieldLayout) to the /apps node (For example, /apps/af-field-layout).
 1. Rename the copied node and the defaultFieldLayout.jsp file. For example, errorOnRight.jsp.  
 

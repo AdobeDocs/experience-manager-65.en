@@ -104,19 +104,19 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >
 >* Your implementation should decide, based on the provided request and/or resource, whether it should add the information to the JSON object or not. 
 >* If your `ListInfoProvider` implementation defines a property that already exists in the response object, its value will be overwritten by the one you provide.  
->  You can use [service ranking](http://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) to manage the execution order of multiple `ListInfoProvider` implementations.
+>  You can use [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) to manage the execution order of multiple `ListInfoProvider` implementations.
 >
 
 ### Testing the New Service {#testing-the-new-service}
 
 When you open the Websites Administration console and browse through your site, the browser is issuing an ajax call to get the JSON object that is used to build the console. For example, when you browse to the `/content/geometrixx` folder, the following request is sent to the AEM server to build the console:
 
-[http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 To make sure that the new service is running after having deployed the bundle containing it:
 
 1. Point your browser to the following URL:  
-   [http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. The response should display the new properties as follows:
 
@@ -161,7 +161,7 @@ The last step consists in adapting the nodes structure of the Websites Administr
    To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadmin` define the property `sling:vanityOrder` to have a value higher than that defined on `/libs/wcm/core/content/siteadmin`. The default value is 300, so anything higher is suitable.  
 
 1. Go to the Websites Administration console and navigate to the Geometrixx site:  
-   [http://localhost:4502/siteadmin#/content/geometrixx](http://localhost:4502/siteadmin#/content/geometrixx).
+   [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
 
 1. The new column called **Starred** is available, displaying custom information as follows:
 
@@ -173,4 +173,4 @@ The last step consists in adapting the nodes structure of the Websites Administr
 
 ### Sample package {#sample-package}
 
-The outcome of this tutorial is available in the [Customizing the Websites Administration Console](http://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) package on Package Share.
+The outcome of this tutorial is available in the [Customizing the Websites Administration Console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) package on Package Share.

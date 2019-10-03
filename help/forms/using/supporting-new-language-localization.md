@@ -18,7 +18,7 @@ docset: aem65
 
 The localization of adaptive forms relies on two types of locale dictionaries:
 
-**Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions, and so on. It is managed as a set of XLIFF files for each locale and you can access it at http://<host>:<port>/libs/cq/i18n/translator.html.
+**Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions, and so on. It is managed as a set of XLIFF files for each locale and you can access it at https://<host>:<port>/libs/cq/i18n/translator.html.
 
 **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on. You can find these dictionaries in CRXDe Lite at /libs/fd/xfaforms/clientlibs/I18N. These locations contains separate folders for each locale. Because global dictionaries are usually not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
 
@@ -28,7 +28,7 @@ When an adaptive form is rendered, it identifies the requested locale by looking
 
 * Request parameter `afAcceptLang`  
   To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL will force to render the form in Japanese locale:  
-  `http://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`  
+  `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`  
 
 * The browser locale set for the user, which is specified in the request using the `Accept-Language` header.   
 
@@ -54,7 +54,7 @@ To add support for a new locale at adaptive forms runtime:
 
 ### Add a locale to the Guide Localization service <br> {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Go to `http://[server]:[port]/system/console/configMgr`.
+1. Go to `https://[server]:[port]/system/console/configMgr`.
 1. Click to edit the **Guide Localization Service** component.
 1. Add the locale you want to add to the list of supported locales.
 
@@ -102,7 +102,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 
-The `<locale>` will appear at `http://[server]:[port]/libs/cq/i18n/translator.html`.
+The `<locale>` will appear at `https://[server]:[port]/libs/cq/i18n/translator.html`.
 
 ### Restart the server {#restart-the-server}
 

@@ -224,7 +224,7 @@ This example uses the Geometrixx Outdoors sample website to access Client Contex
 
 Add the JSONP Store component to Client Context and use it to retrieve and store geolocation information about the web client.
 
-1. Open the English home page of the Geometrixx Outdoors site on the AEM author instance. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Open the English home page of the Geometrixx Outdoors site on the AEM author instance. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. To open Client Context, press Ctrl-Alt-c (windows) or control-option-c (Mac).
 1. Click the edit icon at the top of Client Context to open Client Context Designer.
 
@@ -237,7 +237,7 @@ Add the JSONP Store component to Client Context and use it to retrieve and store
 1. Double-click the component to open the edit dialog. 
 1. In the JSONP Service URL box, enter the following URL, and then click Fetch Store:
 
-   `http://api.wipmania.com/jsonp?callback=${callback}`
+   `https://api.wipmania.com/jsonp?callback=${callback}`
 
    The component calls the JSONP service and lists all of the properties that the returned data contains. The properties that are in the list are those that will be available in Client Context.
 
@@ -252,7 +252,7 @@ Add the JSONP Store component to Client Context and use it to retrieve and store
 
 Use the data from the session store that you created using the JSONP store component. The segment uses the latitude from the session store and the current date to determine whether it is winter time at the client's location.
 
-1. Open the Tools console in your web browser ([http://localhost:4502/miscadmin#/etc](http://localhost:4502/miscadmin#/etc)).
+1. Open the Tools console in your web browser ([https://localhost:4502/miscadmin#/etc](https://localhost:4502/miscadmin#/etc)).
 1. In the folder tree, click the Tools/Segmentation folder, and then click New &gt; New Folder. Specify the following property values and then click Create:
 
     * Name: mysegments
