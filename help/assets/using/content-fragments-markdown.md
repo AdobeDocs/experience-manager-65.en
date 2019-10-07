@@ -84,9 +84,11 @@ The syntax for images is similar to the links. You can create inline and referen
 
 For example, an inline image has the following syntax:
 
-*![Alt text](/path/to/img.jpg)  
+```
+![Alt text](/path/to/img.jpg)
   
-![Alt text](/path/to/img.jpg "Optional title")*
+![Alt text](/path/to/img.jpg "Optional title")
+```
 
 The syntax includes:
 
