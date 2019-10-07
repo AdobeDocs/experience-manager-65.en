@@ -220,7 +220,7 @@ The selected tags appear in the Search pane along with the check boxes for selec
 
 ## List forms on a page <br> {#list-forms-on-a-page-br}
 
-To list forms on a page, add the ****[!UICONTROL Search & Lister]****Component to the page and configure the ****[!UICONTROL List Pane]****. To enable the end users to search forms with date, text, and tags, add a ****[!UICONTROL Search Pane]**** component.
+To list forms on a page, add the **[!UICONTROL Search & Lister]** Component to the page and configure the **[!UICONTROL List Pane]**. To enable the end users to search forms with date, text, and tags, add a **[!UICONTROL Search Pane]** component.
 
 To link a form from anywhere on the page, use the Link component. For more information about link component, see [Embedding link component in a page](../../forms/using/embedding-link-component-page.md).
 

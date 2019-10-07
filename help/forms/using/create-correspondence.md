@@ -297,8 +297,8 @@ This option exists for people who have concerns over saving user data on publish
 #### Enable remote save {#enable-remote-save}
 
 1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
-1. Search for **[!UICONTROL Correspondence Management Configurations]**and click it. 
-1. Locate the ****[!UICONTROL Remote Save]**** configuration, check it, and the click ****[!UICONTROL Save]****.
+1. Search for **[!UICONTROL Correspondence Management Configurations]** and click it. 
+1. Locate the **[!UICONTROL Remote Save]** configuration, check it, and the click **[!UICONTROL Save]**.
 
 #### Specify processing author settings {#specify-processing-author-settings}
 
@@ -354,5 +354,5 @@ To change the preview mode of the letter, complete the following steps:
 
 1. Go to `https://[system]:[port]/system/console/configMgr` and, if necessary, log in as Admin.
 1. Go to **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** and select **HTML Rendition** (Default) or **PDF Rendition**. 
-1. Click ****[!UICONTROL Save]****.
+1. Click **[!UICONTROL Save]**.
 

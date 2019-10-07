@@ -108,7 +108,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360° viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p> 
     <ul> 
      <li>An aspect ratio of 2:1.</li> 
-     <li>Tagged with the keywords <span class="kbd">equirectangular</code>, or <span class="kbd">spherical</code> and <span class="kbd">panorama</code>, or <span class="kbd">spherical </code>and <span class="kbd">panoramic</code>. See <a href="../../sites/authoring/using/tags.md">Using Tags</a>.</li> 
+     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code">panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="../../sites/authoring/using/tags.md">Using Tags</a>.</li> 
     </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td> 
   </tr> 
   <tr> 
@@ -127,7 +127,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><strong>Vertical Zoom</strong></td> 
    <td><p>The Vertical Zoom viewer lets you maximize a product imagery viewing experience to give your users the best representation of a product. The vertical location of swatches does the following:</p> 
     <ul> 
-     <li>Ensures swatches are “above the fold”.<br /> With horizontal swatches, depending on the user’s desktop screen size, swatches were not be visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li> 
+     <li>Ensures swatches are “above the fold”.<br/> With horizontal swatches, depending on the user’s desktop screen size, swatches were not be visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li> 
      <li>Maximizes main image size.<br /> With horizontal swatches, it is necessary to reserve space on the page to ensure that they are visible. This positioning decreased the size of the main image. With a vertical swatch layout, however, you do not need to allocate this space. As such, you can maximize the main image size.</li> 
     </ul> </td> 
   </tr> 
