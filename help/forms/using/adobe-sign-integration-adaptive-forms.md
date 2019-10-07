@@ -64,7 +64,7 @@ After prerequisites are in place, perform the following steps to configure Adobe
    For step-by-step information to configure OAuth settings for an Adobe Sign application and obtain the keys, see [Configure oAuth settings for the application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) developer documentation.
    [ ![OAuth Config](assets/oauthconfig_new.png)](OAuth Config.md)
 
-1. Go back to the **Create Adobe Sign Configuration** page. In the ****[!UICONTROL Settings]**** tab, the ****[!UICONTROL OAuth URL]**** field mentions the following default URL:
+1. Go back to the **Create Adobe Sign Configuration** page. In the **[!UICONTROL Settings]** tab, the **[!UICONTROL OAuth URL]** field mentions the following default URL:
 
    https://secure.na1.echosign.com/public/oauth
 
