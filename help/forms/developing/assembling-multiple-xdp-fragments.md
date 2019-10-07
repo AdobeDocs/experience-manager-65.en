@@ -16,7 +16,7 @@ docset: aem65
 
 # Assembling Multiple XDP Fragments{#assembling-multiple-xdp-fragments}
 
-You can assemble multiple XDP fragments into a single XDP document. For example, consider XDP fragments where each XDP file contains one or more subforms used to create a health form. The following illustration shows the outline view (represents the tuc018_template_flowed.xdp file used in the *Assembling multiple XDP fragments* quick start): 
+You can assemble multiple XDP fragments into a single XDP document. For example, consider XDP fragments where each XDP file contains one or more subforms used to create a health form. The following illustration shows the outline view (represents the tuc018_template_flowed.xdp file used in the *Assembling multiple XDP fragments* quick start):
 
 ![](assets/am_am_forma.png)
 
@@ -142,13 +142,15 @@ An assembled XDP document is returned within a collection object. Iterate throug
 
 [Assemble multiple XDP fragments using the web service API](assembling-multiple-xdp-fragments.md#assemble_multiple_xdp_fragments_using_the_web_service_api)
 
+<!-- Unresolved links and the next 2 are bad links 
 [Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
 
 [Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
+-->
 
-[Programmatically Assembling PDF Documents](/programming-with-aem-forms/programmatically-assembling-pdf-documents-programmatically programmatically-assembling-pdf-documents-programmatically.md#programmatically_assembling_pdf_documents)
+[Programmatically Assembling PDF Documents](/programming-with-aem-forms/programmatically-assembling-pdf-documents-programmatically-assembling-pdf-documents-programmatically.md#programmatically_assembling_pdf_documents)
 
-[Creating PDF Documents Using Fragments](/programming-with-aem-forms/creating-document-output-streams-creating creating-document-output-streams-creating.md#creating_pdf_documents_using_fragments)
+[Creating PDF Documents Using Fragments](/programming-with-aem-forms/creating-document-output-streams-creating-document-output-streams-creating.md#creating_pdf_documents_using_fragments)
 
 ## Assemble multiple XDP fragments using the Java API {#assemble-multiple-xdp-fragments-using-the-java-api}
 
@@ -204,11 +206,14 @@ Assemble multiple XDP fragments by using the Assembler Service API (Java):
 
 [Assembling Multiple XDP Fragments](assembling-multiple-xdp-fragments.md#assembling_multiple_xdp_fragments)
 
+<!-- unresolved links
 [Quick Start (SOAP mode): Assembling multiple XDP fragments using the Java API](#unresolvedlink-lc-qs-assembler-as.xml#ws624e3cba99b79e12e69a9941333732bac8-7f57.2)
 
 [Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
 
 [Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
+-->
+
 
 ## Assemble multiple XDP fragments using the web service API {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
@@ -287,6 +292,8 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
 
 [Assembling Multiple XDP Fragments](assembling-multiple-xdp-fragments.md#assembling_multiple_xdp_fragments)
 
+<!-- unresolved links
 [Quick Start (MTOM): Assembling multiple XDP fragments using the web service API](#unresolvedlink-lc-qs-assembler-as.xml#ws624e3cba99b79e12e69a9941333732bac8-7f56.2)
 
 [Invoking AEM Forms using MTOM](#unresolvedlink-lc-in-invoke-using-web-services-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fe7.2)
+-->

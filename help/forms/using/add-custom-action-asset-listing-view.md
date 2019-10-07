@@ -80,59 +80,59 @@ To customize Correspondence Management to allow your users to download a flat PD
 
        **Type:** nt:unstructured
 
-    1. Click the new node you have created (here downloadFlatPDF). CRX displays the node's properties.   
+    1. Click the new node you have created (here downloadFlatPDF). CRX displays the node's properties.
 
     1. Add the following properties to the node (here downloadFlatPDF) and click **Save All**:
 
-    <table>
- <tbody> 
-  <tr> 
-   <td><strong>Name</strong></td> 
-   <td><strong>Type</strong></td> 
-   <td><strong>Value and Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>class</td> 
-   <td>String</td> 
-   <td>foundation-collection-action</td> 
-  </tr> 
-  <tr> 
-   <td>foundation-collection-action</td> 
-   <td>String</td> 
-   <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> can be one or more (comma separate multiple entries) of the following: LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td> 
-  </tr> 
-  <tr> 
-   <td>icon</td> 
-   <td>String</td> 
-   <td>icon-download<br /> <br /> The icon that Correspondence Management displays to the left side of your command/menu. For different icons and settings available, see <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI Icons documentation</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>jcr:primaryType</td> 
-   <td>Name</td> 
-   <td>nt:unstructured</td> 
-  </tr> 
-  <tr> 
-   <td>rel</td> 
-   <td>String</td> 
-   <td>download-flat-pdf-button</td> 
-  </tr> 
-  <tr> 
-   <td>sling:resourceType</td> 
-   <td>String</td> 
-   <td>granite/ui/components/endor/actionbar/button</td> 
-  </tr> 
-  <tr> 
-   <td>text</td> 
-   <td>String</td> 
-   <td>Download Flat PDF (Or any other label)<br /> <br /> The command that appears in the Asset Listing interface</td> 
-  </tr> 
-  <tr> 
-   <td>title</td> 
-   <td>String</td> 
-   <td>Download a flat PDF of the selected letter (Or any other label/Alt text)<br /> <br /> The title is the alt text that Correspondence Management displays when the user hovers over the custom command.</td> 
-  </tr> 
- </tbody> 
-</table>
+       <table>
+        <tbody> 
+        <tr> 
+        <td><strong>Name</strong></td> 
+        <td><strong>Type</strong></td> 
+        <td><strong>Value and Description</strong></td> 
+        </tr> 
+        <tr> 
+        <td>class</td> 
+        <td>String</td> 
+        <td>foundation-collection-action</td> 
+        </tr> 
+        <tr> 
+        <td>foundation-collection-action</td> 
+        <td>String</td> 
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> can be one or more (comma separate multiple entries) of the following: LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td> 
+        </tr> 
+        <tr> 
+        <td>icon</td> 
+        <td>String</td> 
+        <td>icon-download<br /> <br /> The icon that Correspondence Management displays to the left side of your command/menu. For different icons and settings available, see <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI Icons documentation</a>.<br /> </td> 
+        </tr> 
+        <tr> 
+        <td>jcr:primaryType</td> 
+        <td>Name</td> 
+        <td>nt:unstructured</td> 
+        </tr> 
+        <tr> 
+        <td>rel</td> 
+        <td>String</td> 
+        <td>download-flat-pdf-button</td> 
+        </tr> 
+        <tr> 
+        <td>sling:resourceType</td> 
+        <td>String</td> 
+        <td>granite/ui/components/endor/actionbar/button</td> 
+        </tr> 
+        <tr> 
+        <td>text</td> 
+        <td>String</td> 
+        <td>Download Flat PDF (Or any other label)<br /> <br /> The command that appears in the Asset Listing interface</td> 
+        </tr> 
+        <tr> 
+        <td>title</td> 
+        <td>String</td> 
+        <td>Download a flat PDF of the selected letter (Or any other label/Alt text)<br /> <br /> The title is the alt text that Correspondence Management displays when the user hovers over the custom command.</td> 
+        </tr> 
+        </tbody> 
+       </table>
 
 1. In the apps folder, create a folder named js with path/structure similar to the items folder located in admin folder using the following steps:
 
@@ -350,7 +350,7 @@ After you have added custom functionality to download flat PDF of your letters, 
 
 1. Select **Forms &gt; Letters**. Correspondence Management lists the letters available in the system.
 1. Click **Select** and then click a letter to select it.
-1. Select **More &gt; &lt;Download Flat PDF&gt; **(The custom functionality created using the instructions this article). Download Letter as PDF dialog appears.
+1. Select **More &gt; &lt;Download Flat PDF&gt;** (The custom functionality created using the instructions this article). Download Letter as PDF dialog appears.
 
    The menu item name, functionality, and alt-text is according to the customization created in [Scenario: Add a command to the Letters list user interface to download flat PDF version of a letter.](#addcommandtoletters)
 
