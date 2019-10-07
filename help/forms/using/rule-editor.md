@@ -609,7 +609,7 @@ After you have added your client library in the CRX repository, use it in your a
 
 1. Open your form in edit mode.   
    To open a form in edit mode, select a form and tap **Open**.
-1. In the edit mode, select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png-).
+1. In the edit mode, select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
 1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
    ![Adding the custom function client library](assets/clientlib.png)

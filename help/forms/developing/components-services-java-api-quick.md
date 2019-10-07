@@ -407,7 +407,7 @@ The following Java code example starts a service named *SendEmailService*.
 
 ## Quick Start (SOAP mode): Modifying a services configuration values using the Java API {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
 
-The following Java example modifies configuration values that belong to SendEmail Service. For information about creating the sample email component, see [Creating Your First Component](#unresolvedlink-lc-co-create-first-component-cf.xml#ws624e3cba99b79e12e69a9941333732bac8-7f36.2).
+The following Java example modifies configuration values that belong to SendEmail Service. For information about creating the sample email component, see <!--[Creating Your First Component](#unresolvedlink-lc-co-create-first-component-cf.xml#ws624e3cba99b79e12e69a9941333732bac8-7f36.2).-->
 
 ```as3
  /* 

@@ -557,7 +557,7 @@ The example below shows masked and unmasked styles in a theme.
 To apply a theme to an adaptive form:
 
 1. Open your form in edit mode. To open a form in edit mode, select a form and click **Open**.
-1. In the edit mode, select a component, then click ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then click ![](assets/cmppr.png-).  
+1. In the edit mode, select a component, then click ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then click ![](assets/cmppr.png).  
    You can edit properties of your form in the sidebar.
 
 1. In the sidebar, click **Styling**.

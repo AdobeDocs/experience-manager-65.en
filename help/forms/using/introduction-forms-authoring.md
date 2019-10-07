@@ -83,7 +83,7 @@ The sidebar comprises the following browsers:
 
 * **Properties browser  
   **Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:  
-  Select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png-).
+  Select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
 
 * **Assets** **browser** 
   Segregates different types content such as images, documents, pages, movies, and so on.

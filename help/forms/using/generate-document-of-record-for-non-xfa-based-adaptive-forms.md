@@ -361,7 +361,7 @@ Fields in a panel rendered in a column layout in the document of record
 
 Document of record settings let you choose options you want to include in the document of record. For example, a bank accepts name, age, social security number, and phone number in a form. The form generates a bank account number, and branch details. You can choose to display only the name, social security number, bank account, and branch details in document of record.
 
-The document of record settings of a component are available under its properties. To access the properties a component, select the component and click ![](assets/cmppr.png-) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
+The document of record settings of a component are available under its properties. To access the properties a component, select the component and click ![](assets/cmppr.png) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
 
 **Field level settings**
 
