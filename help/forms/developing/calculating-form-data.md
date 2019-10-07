@@ -121,11 +121,13 @@ After you verify the processing state associated with a submitted form is `1`, y
 
 [Calculate form data using the web service API](/programming-with-aem-forms/rendering-forms-rendering-forms calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculate_form_data_using_the_web_service_api)
 
+<!-- unresolved
 [Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
 
 [Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
 
 [Forms Service API Quick Starts](#unresolvedlink-lc-qs-forms-fo.xml#ws624e3cba99b79e12e69a9941333732bac8-7af6.2)
+-->
 
 [Rendering Interactive PDF Forms](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-interactive-pdf-forms-rendering.md#rendering_interactive_pdf_forms)
 
@@ -172,11 +174,13 @@ Calculate form data by using the Forms API (Java):
 
 [Calculating Form Data](/programming-with-aem-forms/rendering-forms-rendering-forms calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculating_form_data)
 
+<!-- unresolved
 [Quick Start (EJB mode): Handling a form containing a calculation script using the Java API](#unresolvedlink-lc-qs-forms-fo.xml#ws624e3cba99b79e12e69a9941333732bac8-7e21.2)
 
 [Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
 
 [Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
+-->
 
 ## Calculate form data using the web service API {#calculate-form-data-using-the-web-service-api}
 
@@ -227,8 +231,10 @@ Calculate form data by using the Forms API (web service):
 
 **See also**
 
-[Calculating Form Data](/programming-with-aem-forms/rendering-forms-rendering-forms calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculating_form_data)
+<!-- broken and unresolved
+[Calculating Form Data](/programming-with-aem-forms/rendering-forms-rendering-forms-calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculating_form_data)
 
 [Quick Start (Base64): Handling a form containing a calculation script using web service API](#unresolvedlink-lc-qs-forms-fo.xml#ws624e3cba99b79e12e69a9941333732bac8-7e20.2)
 
 [Invoking AEM Forms using Base64 encoding](#unresolvedlink-lc-in-invoke-using-web-services-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fca.2)
+-->

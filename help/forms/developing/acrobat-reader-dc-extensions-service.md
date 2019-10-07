@@ -16,7 +16,9 @@ docset: aem65
 
 The following Quick Starts are available for the Acrobat Reader DC Extensions service.
 
+<!-- unresolved
 [Quick Start (SOAP mode):Applying usage rights using the Java API](#unresolvedlink-lc-qs-reader-extensions-re.xml#ws624e3cba99b79e12e69a9941333732bac8-7d11.2)
+-->
 
 [Removing Usage Rights from PDF Documents](/programming-with-aem-forms/assigning-usage-rights.md#removing_usage_rights_from_pdf_documents)
 
