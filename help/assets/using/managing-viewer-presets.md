@@ -411,7 +411,7 @@ To create a new viewer preset:
   
       The visual editor lets you see what effect a certain property has on a style. Just set or adjust any property to instantly see what effect it has on the viewer using the sample to the left of the editor.   
   
-      The CSS styling properties for each type of viewer preset are described in the any "Customizing *<viewer name>* Viewer" Help topic in the [Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/). For example, if you are creating a viewer preset of the type `Mixed_Media`, see [Customizing Mixed Media Viewer](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_mixedmedia_viewer_customizingviewer.html) for a list and description of each property.  
+      The CSS styling properties for each type of viewer preset are described in the any "Customizing *`<viewer name>`* Viewer" Help topic in the [Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/). For example, if you are creating a viewer preset of the type `Mixed_Media`, see [Customizing Mixed Media Viewer](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_mixedmedia_viewer_customizingviewer.html) for a list and description of each property.  
     
     * If you have defined style settings in a separate CSS file, you can upload the CSS file to AEM Assets. Tap **Import CSS** below the Selected Type pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.  
   
@@ -454,7 +454,7 @@ To create a new viewer preset:
 
 **About Display Modes for image thumbnails in the panel**
 
-When you create or edit an Interactive Video viewer preset, you have the choice of which Display Mode setting to use when you select `InteractiveSwatches` from the Selected Component pull-down menu under the **Behavior **tab. The display mode you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`display mode (default) or a `continuous`display mode.
+When you create or edit an Interactive Video viewer preset, you have the choice of which Display Mode setting to use when you select `InteractiveSwatches` from the Selected Component pull-down menu under the **Behavior** tab. The display mode you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`display mode (default) or a `continuous` display mode.
 
 <table>
  <tbody> 
@@ -508,9 +508,9 @@ The logic that the viewer uses for how many thumbnails are displayed in the pane
 
 When creating Carousel Banner viewer presets, changing the style of hotspots can be accessed as follows:
 
-| ** ** |**Description** |**Actions** |
+| |**Description** |**Actions** |
 |---|---|---|
-| **Hotspot Icon ** |Change the icon used for hotspot  |To change the hotspot icon image, in the **Appearance** tab, in **Selected Component**, click or tap **ImageMapEffect**.** **Under **Icon**, select **Background** and in the **Image** field navigate to the background image you want. |
+| **Hotspot Icon** |Change the icon used for hotspot |To change the hotspot icon image, in the **Appearance** tab, in **Selected Component**, click or tap **ImageMapEffect**. Under **Icon**, select **Background** and in the **Image** field navigate to the background image you want. |
 
 ## Activating or Deactivating Viewer Presets {#activating-or-deactivating-viewer-presets}
 
@@ -544,7 +544,7 @@ To publish viewer presets:
 To sort viewer presets:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **Tools **(hammer icon) &gt; **Assets** &gt; **Viewer Presets**.
-1. Click **Preset Title**, **Type**, **Published**, or **State** to sort by that column heading. For example, click **Type **to sort the viewer preset types in alphabetical or reverse-alphabetical order.
+1. Click **Preset Title**, **Type**, **Published**, or **State** to sort by that column heading. For example, click **Type**  to sort the viewer preset types in alphabetical or reverse-alphabetical order.
 
 ## Editing Viewer Presets {#editing-viewer-presets}
 
@@ -586,7 +586,7 @@ If you have already published both the asset and the selected viewer, the **URL*
    >
    >If you have already published both the asset and the selected viewer, the **URL** and **Embed** buttons appear after you select a viewer preset.
 
-1. Select a viewer preset** **from the left pane to apply it to the asset.
+1. Select a viewer preset from the left pane to apply it to the asset.
 
    You can [copy the URL to share](/assets/using/linking-urls-to-yourwebapplication.md) with other users.
 
