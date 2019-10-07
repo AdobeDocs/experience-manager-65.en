@@ -42,10 +42,10 @@ The following asset properties can be reviewed in CRXDE Lite to confirm the succ
 
 | **Property** |**Example** |**Description** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` |**a|364266** |General indicator that node is linked to Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` |**`a|364266`** |General indicator that node is linked to Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` |**PublishComplete** or error text |Status of upload of asset to Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File`  |**myCompany/myAssetID** |Must be populated in order to generate URLs to remote asset of Dynamic Media. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` |**success **or **failed: <error text>** |Synchronization status of sets (spin sets, image sets, and so on), image presets, viewer presets, image map updates for an asset, or images that were edited. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` |**success** or **failed: `<error text>`** |Synchronization status of sets (spin sets, image sets, and so on), image presets, viewer presets, image map updates for an asset, or images that were edited. |
 
 ### Synchronization Logging {#synchronization-logging}
 
@@ -213,7 +213,7 @@ If you are having issues with viewers, see the following troubleshooting guidanc
   </tr> 
   <tr> 
    <td>Viewer Presets are not published</td> 
-   <td><p>Proceed to sample manager diagnostic page: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Proceed to sample manager diagnostic page: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Note</strong>: It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.</p> <p>If unactivated assets remain, click either of the <strong>List all Unactivated Assets</strong> buttons to see details.</p> </td> 
    <td> 
     <ol> 
