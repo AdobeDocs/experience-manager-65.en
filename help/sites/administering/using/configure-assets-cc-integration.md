@@ -52,13 +52,13 @@ Flow of data when AEM Assets and Creative Cloud are integrated
    >You require administrator privileges to create an application ID.
 
 1. From the left pane, navigate to **[!UICONTROL Developer Tools]** > **[!UICONTROL Applications]** to view a list of applications.
-1. Click **[!UICONTROL Add]**** ** ![](assets/aem_assets_addcircle_icon.png) to create an application.
+1. Click **[!UICONTROL Add]** ![](assets/aem_assets_addcircle_icon.png) to create an application.
 1. From the **[!UICONTROL Client Credentials]** list, select **[!UICONTROL Service Account (JWT Assertion)]**, which is a server-to-server communication service for server authentication.
 
    ![](assets/chlimage_1-49.png)
 
 1. Specify a name for the application and an optional description.
-1. From the **[!UICONTROL Organization]**** **list, select the organization for which you want to synchronize assets.
+1. From the **[!UICONTROL Organization]** list, select the organization for which you want to synchronize assets.
 1. From the **[!UICONTROL Scope]** list, select **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]**, and **[!UICONTROL cc-share]**.
 1. Click **[!UICONTROL Create]**. A message notifies that the application is created.
 

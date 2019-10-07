@@ -831,69 +831,49 @@ To configure how links are added in AEM from another program, define the HTML ru
    >
    >The `../items/text` node has the property:
    >
-   >    
-   >    
    >    * **Name** `xtype`
-   >    
    >    * **Type** `String`
-   >    
    >    * **Value** `richtext`
-   >    
-   >    
    >    
    >The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples include:
    >
-   >    
-   >    
    >    * `/apps/<*myProject*>/components/text/dialog/items/text`
    >    * `/apps/<*myProject*>/components/text/dialog/items/panel/items/text`
-   >    
-   >
 
 1. Under `htmlRules`, create a new node.
 
     * **Name** `links`
-    
     * **Type** `nt:unstructured`
 
 1. Under the `links` node define the properties as required:
 
-    * ****CSS style for internal links:
+    * CSS style for internal links:
 
         * **Name** `cssInternal`  
-        
         * **Type** `String`
-        
-        * **Value **the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
+        * **Value** the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
-    * **** CSS style for external links
+    * CSS style for external links
 
         * **Name** `cssExternal`  
-        
         * **Type** `String`
-        
         * **Value** the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
     * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
 
         * **Name** `protocols`  
-        
         * **Type** `String[]`
-        
         * **Value**(s) one, or more, protocols
 
     * **defaultProtocol** (property of type **String**): Protocol to be used if the user did not specify one explicitly.
 
         * **Name** `defaultProtocol`  
-        
         * **Type** `String`
-        
         * **Value**(s) one, or more, default protocols
 
     * Definition of how to handle the target attribute of a link. Create a new node:
 
         * **Name** `targetConfig`  
-        
         * **Type** `nt:unstructured`
 
       On the node `targetConfig`: define the required properties:
@@ -901,31 +881,26 @@ To configure how links are added in AEM from another program, define the HTML ru
         * Specify the target mode:
 
             * **Name** `mode`  
-            
             * **Type** `String`)
-            
             * **Value**(s) :
 
                 * `auto`: means that an automatic target is chosen  
+
                   (specified by the `targetExternal` property for external links or `targetInternal` for internal links). 
                 
                 * `manual`: not applicable in this context
                 * `blank`: not applicable in this context
 
-        * ****The target for internal links:
+        * The target for internal links:
 
             * **Name** `targetInternal`  
-            
             * **Type** `String`  
-            
-            * **Value **the target for internal links (only use when the `` mode is `auto`)
+            * **Value** the target for internal links (only use when the `` mode is `auto`)
 
-        * ****The target for external links:
+        * The target for external links:
 
             * **Name** `targetExternal`
-            
             * **Type** `String`  
-            
             * **Value** the target for external links (only used when the mode is `auto`).
 
 1. Save all changes.

@@ -476,9 +476,9 @@ To include topnav in your contentpage component:
 The Page component defines properties that enable you to provide subtitles for pages. Add subtitles that provide information about the page content.
 
 1. In your browser, open the **Products** page.
-1. On the Sidekick **Page** tab, click ****Page Properties****.
-1. On the Basic tab of the dialog, expand **More Titles and Description,** and for the **Subtitle **property, type **what we do**. Click ****OK****.
-1. Repeat the previous steps to add the subtitle ******about our services** to the **Services** page.
+1. On the Sidekick **Page** tab, click **Page Properties**.
+1. On the Basic tab of the dialog, expand **More Titles and Description,** and for the **Subtitle **property, type **what we do**. Click **OK**.
+1. Repeat the previous steps to add the subtitle **about our services** to the **Services** page.
 1. Repeat the previous steps to add the subtitle **the trust we earn** to the **Customers** page.
 
    **Tip:** In CRXDE Lite, select the /content/mywebsite/en/products/jcr:content node to see that the subtitle property is added.

@@ -131,7 +131,7 @@ hybris uses a user session to store information such as the customer's shopping 
 
 #### CommerceSession {#commercesession}
 
-* This session "owns" the **s****hopping ****c****art**
+* This session "owns" the **shopping cart**
 
     * performs add/remove/etc
     * performs the various calculations on the cart;  

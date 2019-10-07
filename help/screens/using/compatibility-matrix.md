@@ -86,8 +86,8 @@ aem-screens-player-windows-1.0.48-signed.exe.zip
 | **AEM Server Version** |**Android Player** |
 |---|---|
 | **AEM 6.3+SP1+Screens FP1(1.0.64_B002)** |**3.2.68 -** (Available on Macromedia Site) & Google Play Store |
-| ****AEM 6.3+SP1+Screens FP2(1.0.298)**** |**3.3.0 ** |
-| **AEM 6.4** |**3.3.0 ** |
+| **AEM 6.3+SP1+Screens FP2(1.0.298)** |**3.3.0** |
+| **AEM 6.4** |**3.3.0** |
 
 ### Download Link {#download-link-2}
 

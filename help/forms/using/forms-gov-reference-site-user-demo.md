@@ -84,7 +84,7 @@ The following groups are also included:
 1. **Adobe Inbox**: Located top menu bar [Bell icon] in AEM backend.* 
    https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
 
-1. ***E*****mail Client**: Preferred way to view your emails (Gmail, Outlook)
+1. **Email Client**: Preferred way to view your emails (Gmail, Outlook)
 
 1. **CTA**: Call to action
 1. **Navigate**: To locate a specific reference point on the browser page.

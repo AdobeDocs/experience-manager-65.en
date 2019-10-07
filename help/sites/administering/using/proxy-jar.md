@@ -49,7 +49,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ## Uses of the Proxy Server Tool {#uses-of-the-proxy-server-tool}
 
-The following scenarios illustrate a few of the purposes for which the Proxy Server Tool can be used: ****
+The following scenarios illustrate a few of the purposes for which the Proxy Server Tool can be used:
 
 **Check for Cookies and their Values**
 
@@ -67,7 +67,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 S-7-#000107 -> [Content-Length: 124 ]
 ```
 
-**Checking if Keep-Alive works******
+**Checking if Keep-Alive works**
 
 **Keep-Alive** means that a client re-uses the connection to the server to transports multiple files (the page code, pictures, style sheets and so on). Without keep-alive, the client has to establish a new connection for each request.
 

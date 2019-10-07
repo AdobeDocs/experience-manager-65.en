@@ -31,7 +31,7 @@ Follow the steps below to configure dispatcher for an AEM Screens project.
 
 ### Step 1: Configuring Client Headers {#step-configuring-client-headers}
 
-Add the following to ***/******clientheaders ***section:
+Add the following to `/clientheaders`section:
 
 **X-Requested-With**
 

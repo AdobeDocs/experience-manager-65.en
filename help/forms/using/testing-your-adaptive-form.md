@@ -106,7 +106,7 @@ A test case is a set of actions to test a specific functionality. For example, p
 
 An action is a specific activity on an adaptive form such as clicking a button. To create a test case and actions to validate user input for each adaptive form field:
 
-1. In CRXDE lite, navigate to the `/content/forms/af/create-first-adaptive-form` folder. Right click the **[!UICONTROL create-first-adaptive-form]** folder node and click **[!UICONTROL Create]**> **[!UICONTROL  **Create File**]****. **In the Name field, type `prefill.xml` and click **[!UICONTROL OK]**. Add the following code to the file:
+1. In CRXDE lite, navigate to the `/content/forms/af/create-first-adaptive-form` folder. Right click the **[!UICONTROL create-first-adaptive-form]** folder node and click **[!UICONTROL Create]**> **[!UICONTROL Create File]**. In the Name field, type `prefill.xml` and click **[!UICONTROL OK]**. Add the following code to the file:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
