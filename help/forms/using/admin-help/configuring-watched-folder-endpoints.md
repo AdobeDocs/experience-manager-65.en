@@ -39,8 +39,8 @@ In a clustered environment, the folder that will be used as a watched folder mus
 
 In Windows, if the application server is running as a service, it must be started with appropriate access to the shared folder in one of the following ways:
 
-* Configure the application server service Log On As****parameter**** to start as****a specific user with appropriate access to the shared watched folder.
-* Configure the application server service Start as Local System**** option to Allow Service to Interact with the desktop. This option requires that the shared watched folder is accessible and writable to everyone.
+* Configure the application server service Log On As**parameter** to start as a specific user with appropriate access to the shared watched folder.
+* Configure the application server service Start as Local System option to Allow Service to Interact with the desktop. This option requires that the shared watched folder is accessible and writable to everyone.
 
 ## Chaining together watched folders {#chaining-together-watched-folders}
 

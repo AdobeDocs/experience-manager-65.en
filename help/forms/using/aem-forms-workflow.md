@@ -65,7 +65,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
 1. Open the Workflow Models console. The default URL is https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
 1. Select **Create**, then **Create Model**. The Add Workflow Model dialog appears.
-1. Enter the **Title **and **Name **(optional). For example, a mortgage application. Tap **Done**.
+1. Enter the **Title** and **Name** (optional). For example, a mortgage application. Tap **Done**.
 1. Select the newly created workflow model and tap **Edit. **Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
 
     * The steps: Flow Start and Flow End. These steps represent the beginning and end of the workflow. These steps are required and cannot be edited or removed.
@@ -74,12 +74,12 @@ The example creates a workflow model a mortgage application to be filled by a fr
 1. Enable email notifications. You can configure Forms-centric workflow on OSGi to send email notifications to the users or assignees. Perform the following configurations to enable email notifications:
 
     1. Go to AEM configuration manager at https://[server]:[port]/system/console/configMgr.
-    1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the ****[!UICONTROL SMTP server host name]****, ****[!UICONTROL SMTP server port,]**** and ****[!UICONTROL "From" address]** **fields. Click **[!UICONTROL Save]**.
-    1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]**field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
+    1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** **fields. Click **[!UICONTROL Save]**.
+    1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
 1. Create workflow stages. A workflow can have multiple stages. These stages are displayed in the AEM Inbox and report progress of the workflow.
 
-   To define a stage, tap the ![](assets/info-circle.png) icon to open workflow model properties, open the **Stages **tab, add stages for the workflow model, and tap **Save & Close**. For the example mortgage application, create stages: loan request, loan request status, to be signed documents, and signed loan document.
+   To define a stage, tap the ![](assets/info-circle.png) icon to open workflow model properties, open the **Stages** tab, add stages for the workflow model, and tap **Save & Close**. For the example mortgage application, create stages: loan request, loan request status, to be signed documents, and signed loan document.
 
 1. Drag-and-drop the **Assign Task** steps browser to the workflow model. Make it the first step of the model.
 
@@ -131,7 +131,7 @@ The application is the adaptive form associated with the workflow. When an appli
 >
 >You must be a member of the fd-administrator group to be able to create and manage workflow applications.
 
-1. On your AEM author instance, go to ![](assets/tools-1.png) **> **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]**** and taps ****[!UICONTROL Create]****.
+1. On your AEM author instance, go to ![](assets/tools-1.png) **> **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
 1. In the Create Workflow Application window, provide inputs for the following fields, and taps **Create**. A new application is created and is listed in the Workflow Applications screen.
 
 <table>
@@ -264,7 +264,7 @@ You can associate and execute a Forms-centric workflow on OSGi on submission of 
 You can use the Assign Task and Send Email steps of AEM Workflows to send an email. Perform the following steps to specify email servers and other configurations required to send email:
 
 1. Go to AEM configuration manager at https://[server]:[port]/system/console/configMgr.
-1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the ****[!UICONTROL SMTP server host name]****, ****[!UICONTROL SMTP server port,]**** and ****[!UICONTROL "From" address]** **fields. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]**field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
 ### Purge workflow instances {#purge-workflow-instances}
