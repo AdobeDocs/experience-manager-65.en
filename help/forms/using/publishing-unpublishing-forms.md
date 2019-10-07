@@ -67,8 +67,7 @@ An asset can have the following states:
     1. Move the pointer over an asset and tap **[!UICONTROL Publish]** ![](assets/aem6forms_globe.pngasset.png).
     1. Do one of following and then tap Publish:
 
-        * If you are in the card view, tap ****[!UICONTROL Enter Selection]** ** ![](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
-        
+        * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
         * If you are in the list view, select the checkbox of an asset. The asset is selected.  
         * Tap an asset to display its details.
         * Display an asset's properties by tapping View Properties ![](assets/viewproperties.png).
@@ -139,7 +138,7 @@ Follow these steps to schedule the date and time of publishing and unpublishing 
     1. Move the pointer over an asset and tap **[!UICONTROL Unpublish]** ![](assets/unpublish.png).
     1. Do one of following and then tap unpublish:
 
-        * If you are in the card view, tap ****[!UICONTROL Enter Selection]** ** ![](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
+        * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
         
         * If you are in the list view, hover over an asset and tap ![](assets/selectassetcheckmark.png) . The asset is selected.  
         

@@ -28,7 +28,6 @@ With scaffolding you can create a form (a scaffold) with fields that reflect the
 Scaffolds are stored in the **Tools** console of the site admin.
 
 * Open the **Tools** console and click on **Default Page Scaffolding**.
-
 * Under this click on **geometrixx**.
 * Under **geometrixx** you will find a *scaffold page* called **News**. Double click to open this page.
 
@@ -43,7 +42,6 @@ The scaffolding page properties are:
 * **Title Text**: This is the name of this scaffolding page itself. In this example it is called "News".
 * **Description**: This appears below the title on the scaffolding page.
 * **Target Template**: This is the template that this scaffold will use when it creates a new page. In this example it is a *Geometrrixx Content Page* template.
-
 * **Target Path**: This is the path of the parent page below which this scaffold will create new pages. In this example the path is */content/geometrixx/en/news*.
 
 The body of the scaffold is the form. When a user wishes to create a page using the scaffold he fills out the form and clicks *Create*, at the bottom. In the **News** example above the form has the following fields:
@@ -52,13 +50,9 @@ The body of the scaffold is the form. When a user wishes to create a page using 
 * **Text**: This field corresponds to a Text Component on the resulting page.
 * Image: This field corresponds to an Image Component on the resulting page.
 * **Image/Advanced**: **Title**: The title of the image.
-
 * **Image/Advanced**: **Alt Text**: The alt text for the image.
-
-* **I****mage/Advanced**: **Description**: The description of the image.
-
+* **Image/Advanced**: **Description**: The description of the image.
 * **Image/Advanced**: **Size**: The size of the image.
-
 * **Tags/Keywords**: Metadata to be assigned to this page. This field is always present on every scaffold.
 
 ### Creating a Scaffold {#creating-a-scaffold}
@@ -81,7 +75,7 @@ The dialog definition for a scaffold works similarly to that of a component (see
 
 A look at the example **News** scaffold dialog in the dialog editor helps to explain how this works. Go into design mode on the scaffold page and click the dialog editor link.
 
-Now, click on the dialog field **Dialog &gt; Tab Panel &gt; Text &gt; Tex****t**, like this:
+Now, click on the dialog field **Dialog &gt; Tab Panel &gt; Text &gt; Text**, like this:
 
 ![](assets/textedit.png)
 
@@ -169,4 +163,3 @@ After unlocking you can restore inheritance by clicking on the unlocked padlock 
 >[!NOTE]
 >
 >If the inheritance is cancelled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
-

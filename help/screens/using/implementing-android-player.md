@@ -17,7 +17,7 @@ docset: aem65
 
 This section describes configuring Android player. It provides information of the configuration file and the options available and recommendations as to which settings to use for development and testing.
 
-Additionally,*** ******Watchdog*** is a solution to recover the player from crashes. An application needs to register itself with the watchdog service and then periodically send messages to the service that it is alive. In case the watchdog service does not receive a keep-alive message within a stipulated time, the service attempts to reboot the device for a clean recovery (if it has the sufficient privileges) or restart the application.
+Additionally,**Watchdog** is a solution to recover the player from crashes. An application needs to register itself with the watchdog service and then periodically send messages to the service that it is alive. In case the watchdog service does not receive a keep-alive message within a stipulated time, the service attempts to reboot the device for a clean recovery (if it has the sufficient privileges) or restart the application.
 
 ## Installing Android Player {#installing-android-player}
 

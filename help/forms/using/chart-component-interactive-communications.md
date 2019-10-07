@@ -47,7 +47,7 @@ Perform the following steps to add and configure a chart in an Interactive Commu
 
 1. Tap ![](assets/done_icon.png) to save the chart properties.
 
-   Tap ****[!UICONTROL Preview]**** to view the appearance and data associated with the chart. Tap **[!UICONTROL Edit]** to reconfigure the properties of the chart.
+   Tap **[!UICONTROL Preview]** to view the appearance and data associated with the chart. Tap **[!UICONTROL Edit]** to reconfigure the properties of the chart.
 
 ## Configure chart properties {#configure-chart-properties}
 
@@ -249,7 +249,6 @@ To accomplish this, specify the following properties:
 
 * **[!UICONTROL Name]** - Specify the name for the chart. 
 * **[!UICONTROL Chart Type]** - Select **Column** from the drop-down list.
-
 * **[!UICONTROL Title]** - Specify Expense Type for X-axis and Transaction Amount for the Y-axis.
 * **[!UICONTROL Data Model Objects]** - Select the data model object properties to create data bindings for X-axis (Expense Type) and Y-axis (Transaction Amount).
 
@@ -262,8 +261,7 @@ Column chart in the print channel of an Interactive Communication
 To accomplish this, specify the following properties:
 
 * **[!UICONTROL Name]** - Specify the name for the chart. 
-* **[!UICONTROL Chart Type]** - Select ****[!UICONTROL Donut]**** from the drop-down list.
-
+* **[!UICONTROL Chart Type]** - Select **[!UICONTROL Donut]** from the drop-down list.
 * **[!UICONTROL Data Model Objects]** - Select the data model object properties to create data bindings for X-axis (Expense Type) and Y-axis (Transaction Amount).
 * **[!UICONTROL Inner Radius]** - Specify the Inner Radius value as 150 to specify the radius (in pixels) of the inner circle in the chart.
 * **[!UICONTROL Tooltip]** - Use the ${x}(${y}) default format to display the tooltip. The tooltip is displayed as: Expense Type(Transaction Amount). Example: Debit for Bitcoin(10000).

@@ -75,7 +75,7 @@ Use the following steps to add support for custom special characters:
    | cmConfigurationType |String |cmTextEditorConfiguration |
    | cssPath |String |/libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Right-click the ****[!UICONTROL specialcharacters]**** folder at the following path and select **Create &gt; Child Node **and then click **Save All**:
+1. Right-click the **[!UICONTROL specialcharacters]** folder at the following path and select **Create &gt; Child Node** and then click **Save All**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode&gt;
 

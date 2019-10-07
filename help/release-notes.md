@@ -196,9 +196,9 @@ AEM 6.5 Forms brings in several new features and enhancements. The highlights in
 * Sorting adaptive forms and interactive communication tables
 * Automated validation of input data in form data models
 
-See the [Summary of new features and enhancements in AEM 6.5 Forms](forms/using/whats-new.md) for information about new and improved features and documentation resources.******`<sub>``<sup>``<strike>`
+See the [Summary of new features and enhancements in AEM 6.5 Forms](forms/using/whats-new.md) for information about new and improved features and documentation resources. `<sub>``<sup>``<strike>`
 
-*** *`<sub>``<sup>``<strike>`****`<sub>``<sup>``<strike>`
+* `<sub>``<sup>``<strike>``<sub>``<sup>``<strike>`
 
 ### Experience Manager Communities {#communitiesreleasenotes}
 

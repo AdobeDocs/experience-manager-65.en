@@ -142,8 +142,7 @@ The calendar version is used if you have a specific day to be viewed:
 
 1. When you have finished viewing the page, click:
 
-    * ******Exit Timewarp** to exit and return to the current author page.
-    
+    * **Exit Timewarp** to exit and return to the current author page.
     * [Show Timeline](#using-the-timewarp-timeline) to view the timeline.
 
    ![](assets/chlimage_1-77.png)

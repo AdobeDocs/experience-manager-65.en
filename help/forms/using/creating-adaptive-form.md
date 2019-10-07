@@ -131,7 +131,7 @@ See the following documents to understand how to design XML or JSON schema for a
 Do the following to use XML or JSON schema as form model for an adaptive form:
 
 1. On the **Add Properties** step of adaptive form creation page, tap on the **Form Model** tab.
-1. In the Form Model tab, select ****[!UICONTROL Schema]**** from the **[!UICONTROL Select From]** drop-down field.
+1. In the Form Model tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down field.
 
 1. Tap **Select Schema** and do one of the following:
 

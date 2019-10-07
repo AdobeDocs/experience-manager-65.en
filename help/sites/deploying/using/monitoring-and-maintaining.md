@@ -258,10 +258,13 @@ The log levels are as follows:
 In certain circumstances you may want to create a custom log file with a different log level. You can do this in the repository by:
 
 1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<*project-name*>/config`.
-1. Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Logger Configuration](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):****
+1. Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Logger Configuration](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
     * Name: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (as this is a Logger)  
-      Where `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.config-MINE`  
+
+      Where `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). 
+      
+      For example, `org.apache.sling.commons.log.LogManager.factory.config-MINE`  
     
     * Type: `sling:OsgiConfig`
 
@@ -272,31 +275,35 @@ In certain circumstances you may want to create a custom log file with a differe
 1. Set the following properties on this node:
 
     * Name: `org.apache.sling.commons.log.file`  
+      
       Type: String  
+
       Value: specify the Log File; for example, `logs/myLogFile.log`
 
     * Name: `org.apache.sling.commons.log.names`  
+
       Type: String[] (String + Multi)  
+
       Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
 
         * `org.apache.sling`
         * `org.apache.felix`
-        * 
-        
-          ```        
-          com.day
-          
-          ```
+        * `com.day`
 
     * Name: `org.apache.sling.commons.log.level`  
+
       Type: String  
+
       Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug`  
     
     * Configure the other parameters as required:
 
         * Name: `org.apache.sling.commons.log.pattern`  
+
           Type: `String`  
+
           Value: specify the pattern of the log message as required; for example,  
+
           `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
@@ -361,9 +368,10 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
 
-   Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Writer Configuration](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):****
+   Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Writer Configuration](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
 
     * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)  
+
       As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
     
     * Type: `sling:OsgiConfig`
@@ -375,41 +383,42 @@ In certain circumstances you may want to create a custom log file with a differe
    Set the following properties on this node:
 
     * Name: `org.apache.sling.commons.log.file`   
+
       Type: `String`  
-      Value: specify the Log File so that it matches the file specified in the Logger;   
+
+      Value: specify the Log File so that it matches the file specified in the Logger;
+
       for this example, `../logs/myLogFile.log`.  
     
     * Configure the other parameters as required:
 
-        * Name: `org.apache.sling.commons.log.file.number`  
-          Type: `Long`  
+        * Name: `org.apache.sling.commons.log.file.number` 
+
+          Type: `Long` 
+
           Value: specify the number of log files you want kept; for example, `5`  
         
         * Name: `org.apache.sling.commons.log.file.size`  
+
           Type: `String`  
+
           Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
 
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` controls the rotation of the log file by setting either:
    >
-   >    
-   >    
-   >    * a maximum file size
-   >    * a time/date schedule   
-   >    
+   >* a maximum file size
+   >* a time/date schedule
    >    
    >to indicate when a new file will be created (and the existing file renamed according to the name pattern).  
-
    >
-   >    
-   >    
-   >    * A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   >    
-   >    * A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).  
-   >      The default is '.'yyyy-MM-dd (for daily log rotation).   
-   >      So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.  
-   >    
+   >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
+   >
+   >The default is '.'yyyy-MM-dd (for daily log rotation).   
+   >
+   >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day. 
    >    
    >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
    >      |---|---|
@@ -418,14 +427,11 @@ In certain circumstances you may want to create a custom log file with a differe
    >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
    >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
    >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
-
-   >      Note: When specifying a time/date:  
-   >    1. You should "escape" literal text within a pair of single quotes (' ');   
-   >      this is to avoid certain characters being interpreted as pattern letters.  
-   >      2. Only use characters allowed for a valid file name anywhere in the option.
-   >    
-   >    
    >
+   >      Note: When specifying a time/date:  
+   >      1. You should "escape" literal text within a pair of single quotes (' ');   
+   >      this is to avoid certain characters being interpreted as pattern letters.  
+   >      1. Only use characters allowed for a valid file name anywhere in the option.
 
 1. Read your new log file with your chosen tool.
 
@@ -497,14 +503,9 @@ To monitor a replication agent:
    >
    >Do not use the "Test Connection" link for the Reverse Replication Outbox on a publish instance.
    >
-   >
    >If a replication test is performed for an Outbox queue, any items that are older than the test replication will be re-processed with every reverse replication.  
-
-   >
    >
    >If such items already exist in a queue, they can be found with the following XPath JCR query and should be removed.  
-
-   >
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
@@ -1006,9 +1007,7 @@ Again use the number of months that have elapsed since installation to calculate
 To see how many DAM assets you currently maintain, use a repository query; via CRXDE - Tools - Query:
 
 * **Type** `XPath`
-
 * **Path** `/`  
-
 * **Query** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### What is the average size of the assets? {#what-is-the-average-size-of-the-assets}
@@ -1031,9 +1030,7 @@ To determine the total size of the `/var/dam` folder:
 To see the number of templates currently on the server use a repository query; via CRXDE - Tools - Query:
 
 * **Type** `XPath`
-
 * **Path** `/`  
-
 * **Query** `//element(*, cq:Template)`
 
 #### How many components are currently used? {#how-many-components-are-currently-used}
@@ -1041,9 +1038,7 @@ To see the number of templates currently on the server use a repository query; v
 To see the number of components currently on the server use a repository query; via CRXDE - Tools - Query:
 
 * **Type** `XPath`
-
 * **Path** `/`  
-
 * **Query** `//element(*, cq:Component)`
 
 #### How many requests per hour do you have on the author system at peak time? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
@@ -1177,4 +1172,3 @@ This will help you see how much memory is being used, what GC algorithms are bei
 >For Oracle's VM there is also information at:
 >
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
-

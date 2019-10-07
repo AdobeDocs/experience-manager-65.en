@@ -214,13 +214,13 @@ The Theme Editor is divided in two panels:
       When you customize all the field components with a specific background color, all the fields such as age, name, and address inherit the background color. When you select a numeric box, such as age, and reduce its width, width of all the numeric boxes such as age, number of people in a family is reduced. Width of text boxes is not changed.
 
     * **State:** Lets you customize styles of an object in a specific state. For example, you can specify how an object looks when it is in default, focus, disabled, hover, or error state.
-    * **Property Categories:***** ***Styling properties are divided in various categories. For example Dimension & Position, Text, Background, Border, and Effects*.* Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient. 
+    * **Property Categories:** Styling properties are divided in various categories. For example Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient. 
     
-    * **Advanced:***** ***Lets you add custom CSS to an object, which overrides the properties visual controls define if there is an overlap. 
+    * **Advanced:** Lets you add custom CSS to an object, which overrides the properties visual controls define if there is an overlap. 
     
     * **View CSS**: Lets you view CSS of the selected component
 
-  Also, in the Sidebar, at the bottom an arrow is present. When you click the arrow, you get two more options: **Simulate Success** and **Simulate Error. **These options, along with the options described above are discussed in detail [below](../../forms/using/themes.md#using-rail).
+  Also, in the Sidebar, at the bottom an arrow is present. When you click the arrow, you get two more options: **Simulate Success** and **Simulate Error.** These options, along with the options described above are discussed in detail [below](../../forms/using/themes.md#using-rail).
 
 [ ![Theme editor with Rail and Canvas highlighted.](assets/themes.png)](assets/themes-1.png) **A.** Sidebar **B.** Canvas
 

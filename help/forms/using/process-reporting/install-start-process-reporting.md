@@ -77,19 +77,13 @@ Perform the following steps to change the publishing schedule:
 
     * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Click **Apply**, click OK, and**** then click **Save directly to the master configuration**.  
-
+1. Click **Apply**, click OK, and then click **Save directly to the master configuration**.  
 1. Restart the AEM Forms server instance.
-
 1. Stop the AEM Forms server instance.
 1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `https://[hostname]:[port]/console`.  
-
 1. Under Change Center, click **Lock & Edit**.  
-
 1. Under Domain Structure, click **Environment **&gt; **Servers **and, in the right pane, click the managed server name.  
-
 1. On the next screen, click the **Configuration **tab &gt; **Server Start** tab.  
-
 1. In the Arguments box, add the JVM argument `-Dreporting.publisher.cron = <expression>`.
 
    **Example**: The following cron expression causes Process Reporting to publish AEM Forms data to the Process Reporting repository every 5 hours:
@@ -97,7 +91,6 @@ Perform the following steps to change the publishing schedule:
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Click **Save **and then click **Activate Changes**.  
-
 1. Restart the AEM Forms server instance.
 
 ![](assets/processdatapublisherservice.png) 

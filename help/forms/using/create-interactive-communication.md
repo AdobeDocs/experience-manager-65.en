@@ -28,9 +28,8 @@ The following are the prerequisites for creating an Interactive Communication:
 
 ## Create Interactive Communication {#createic}
 
-1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**. **[!UICONTROL   
-   ]**
-1. Tap ****[!UICONTROL Create]** **and select ****[!UICONTROL Interactive Communication]****. Create Interactive Communication page appears. 
+1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Tap **[!UICONTROL Create]** **and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears. 
 
    ![](assets/create-interactive-communication.png)
 
@@ -140,7 +139,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![Unbound variable](assets/df_unbound_variable_new.png)
 
-   Tap the document fragment, tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure), and then tap ****[!UICONTROL Properties]**** from the sidekick of the Interactive Communication. The ****[!UICONTROL Variables and Data Model Objects]**** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties.
+   Tap the document fragment, tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties.
 
 1. To set up binding of variables, tap a variable and select ![](assets/configure_icon.png) (Configure) and then set up the binding properties in the Properties panel in the sidebar.
 
@@ -182,7 +181,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![](assets/webchannelassets.png)
 
-   Tap the document fragment, tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure), and then tap ****[!UICONTROL Properties]**** from the sidekick of the Interactive Communication. The ****[!UICONTROL Variables and Data Model Objects]**** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/create-ad/CancelInheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them. 
+   Tap the document fragment, tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/create-ad/CancelInheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them. 
 
 1. To add additional components in the Web channel, with the Web channel selected, tap **[!UICONTROL Components]**. Drag-and-drop components in the web channel of your Interactive Communication as required and proceed to configure them.
 
@@ -279,7 +278,7 @@ In the Print channel, you can configure the attachments and library access to al
 
 The authoring interface enables you to define data display patterns for fields, variables, and form data model elements available while creating an Interactive Communication for print and web channels.
 
-To configure the data display pattern, tap the element, select ![](assets/configure_icon.png) (Configure) and set up the display pattern in the ****[!UICONTROL Properties]**** panel in the sidebar. Select any pre-defined option from the **[!UICONTROL Type]** drop-down list to view the pattern associated with the selected type. Select ****[!UICONTROL Custom]**** from the ****[!UICONTROL Type]** **drop-down list to define a pattern that is not available in the list. Editing values in the **[!UICONTROL Pattern]** field automatically modifies the type to **[!UICONTROL Custom]**.
+To configure the data display pattern, tap the element, select ![](assets/configure_icon.png) (Configure) and set up the display pattern in the **[!UICONTROL Properties]** panel in the sidebar. Select any pre-defined option from the **[!UICONTROL Type]** drop-down list to view the pattern associated with the selected type. Select **[!UICONTROL Custom]** from the **[!UICONTROL Type]** drop-down list to define a pattern that is not available in the list. Editing values in the **[!UICONTROL Pattern]** field automatically modifies the type to **[!UICONTROL Custom]**.
 
 To apply the display pattern, the number of characters or digits defined in the Pattern field must match or exceed the characters or digits defined in the value for fields, variables, and form data model elements. For more information, see [example](../../forms/using/create-interactive-communication.md#greaternumberofdigits).
 

@@ -125,7 +125,7 @@ When you are done creating the video profile, you apply it to a folder or multip
 1. Tap **Add Video Encoding Preset**.
 1. On the **Basic** tab, set the video and audio options.  
    Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
-1. Under the Video Size heading, ensure that **Keep aspect ratio** is checked****.
+1. Under the Video Size heading, ensure that **Keep aspect ratio** is checked.
 1. Set the video frame size resolution in pixels. Use the **Auto** value to automatically scale to match the source aspect ratio (width to height ratio). For example, Auto x 480 or 640 x Auto.
 
    Do one of the following:

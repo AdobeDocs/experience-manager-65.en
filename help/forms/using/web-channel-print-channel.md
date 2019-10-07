@@ -47,7 +47,7 @@ To author a web channel template Complete the following steps:
 
     1. Tap **[!UICONTROL Tools]** ![](assets/tools.png) > **[!UICONTROL Configuration Browser]**. **[!UICONTROL]**
     1. In the Configuration Browser page, tap **[!UICONTROL Create]**. 
-    1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and tap ****[!UICONTROL Create]****.
+    1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and tap **[!UICONTROL Create]**.
 
        The Folder is created and listed in the Configuration Browser page.
 

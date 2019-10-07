@@ -40,9 +40,8 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
 
    The toolbar that displays after tapping components consists of the following options:
 
-    * **Parent: **Select the parent of a component.****
-    
-    * **Float to new line: **Shift the component to the next line if there are multiple components within the same line.
+    * **Parent:** Select the parent of a component.
+    * **Float to new line:** Shift the component to the next line if there are multiple components within the same line.
 
    You can undo all resizing changes and apply default layout to the panel containing resized components using the **[!UICONTROL Revert breakpoint layout]** ( ![screen_shot_2018-03-23at091013](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/sites/authoring/using/responsive-layout/_jcr_content/main-pars/procedure_1/proc_par/step_3/step_par/image_d278/screen_shot_2018-03-23at091013.png)) option. Tap the parent of the resized component to view the option.
 

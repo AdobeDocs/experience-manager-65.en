@@ -206,7 +206,7 @@ To configure the split:
         
         * **Script Path**: The path to a file that contains the script to evaluate the active branch if you select **External Script** as the routing expression.** **
         
-        * **Script**: Add the script in the box to evaluate the active branch if you select **ECMA Script** as the routing expression.****
+        * **Script**: Add the script in the box to evaluate the active branch if you select **ECMA Script** as the routing expression.
         
         * **Default Route**: The default branch is followed in case of multiple branches. You can specify only one branch as the default.
 

@@ -102,7 +102,7 @@ For more information on where you can monitor device activity, please refer to [
 
 ChromeOS player can be installed as Chrome Browser plugin in developer mode without requiring actual chrome player device. For installation, follow the steps below:
 
-1. Click [here](https://download.macromedia.com/screens/)**** to download the latest Chrome Player.
+1. Click [here](https://download.macromedia.com/screens/) to download the latest Chrome Player.
 1. Unzip and save it on disk.
 1. Open Chrome browser and click the 3-dots menu and select **More Tools** --&gt; **Extensions** from the top right corner or directly navigate to ***chrome://extensions***.
 1. Switch on the **Developer mode** from top right corner.
