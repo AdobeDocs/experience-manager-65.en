@@ -50,7 +50,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 ## Use tags to organize assets {#use-tags-to-organize-assets}
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. See [Tagging](../../sites/authoring/using/tags.md) for more information on tagging.
+You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. See [Tagging](/help/sites-authoring/tags.md) for more information on tagging.
 
 To add tags to an asset:
 

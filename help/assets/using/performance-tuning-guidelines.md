@@ -114,7 +114,7 @@ Adobe recommends enabling HTTPS because many companies have firewalls that sniff
 
 Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your AEM instance. Common configuration options, including firewalls or proxies can help improve network performance. Here are some key points to bear in mind:
 
-* Depending upon your instance type (small, moderate, large), ensure that you have sufficient network bandwidth for your AEM instance. Adequate bandwidth allocation is especially important if AEM is hosted on AWS. 
+* Depending upon your instance type (small, moderate, large), ensure that you have sufficient network bandwidth for your AEM instance. Adequate bandwidth allocation is especially important if AEM is hosted on AWS.
 * If your AEM instance is hosted on AWS, you can benefit by having a versatile scaling policy. Upsize the instance if users expect high load. Downsize it for moderate/low load.
 * HTTPS: Most users have firewalls that sniff HTTP traffic, which can adversely impact uploading of files or even corrupt files during the upload operation.
 * Large file uploads: Ensure that users have wired connections to the network (WiFi connections saturate quickly).
@@ -173,9 +173,9 @@ The DAM Update Asset workflow contains a full suite of steps that are configured
 >
 >Running the DAM Update Asset workflow intensively can sharply increase the size of your file datatastore. Results of an experiment performed by Adobe have shown that the datastore size can increase by approximately 400 GB if around 5500 workflows are performed within 8 hours.
 >
->It is a temporary increase, and the datastore is restored to its original size after you run the datastore garbage collection task. 
+>It is a temporary increase, and the datastore is restored to its original size after you run the datastore garbage collection task.
 >
->Typically, the datastore garbage collection task runs weekly along with other scheduled maintenance tasks. 
+>Typically, the datastore garbage collection task runs weekly along with other scheduled maintenance tasks.
 >
 >If you have a limited disk space and run DAM Update Asset workflows intensively, consider scheduling the garbage collection task more frequently.
 
@@ -252,7 +252,7 @@ When replicating assets to a large number of publish instances, for example in a
 
 Make sure you implement the latest service packs and performance-related hotfixes as they often include updates to system indexes. See [Performance tuning tips | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations that can be applied, depending on your version of AEM.
 
-Create custom indexes for queries that you run often. For details, see [methodology for analyzing slow queries](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) and [crafting custom indexes](/sites/deploying/using/queries-and-indexing.md). For additional insights around query and index best practices, see [Best Practices for Queries and Indexing](/sites/deploying/using/best-practices-for-queries-and-indexing.md).
+Create custom indexes for queries that you run often. For details, see [methodology for analyzing slow queries](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) and [crafting custom indexes](/help/sites-deploying/queries-and-indexing.md). For additional insights around query and index best practices, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Lucene index configurations {#lucene-index-configurations}
 
@@ -276,21 +276,21 @@ Update index configurations to improve reindexing time:
 
 1. Browse to */oak:index/ntBaseLucene/indexRules/nt:base/properties*
 1. Add two nt:unstructured nodes "slingResource" and "damResolvedPath" under */oak:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Set the properties below on the nodes (where ordered and propertyIndex properties are of type *Boolean*:  
-   slingResource  
-   name="sling:resource"  
-   ordered=false  
-   propertyIndex= true  
-   type="String"  
-   damResolvedPath  
-   name="dam:resolvedPath"  
-   ordered=false  
-   propertyIndex=true  
+1. Set the properties below on the nodes (where ordered and propertyIndex properties are of type *Boolean*:
+   slingResource
+   name="sling:resource"
+   ordered=false
+   propertyIndex= true
+   type="String"
+   damResolvedPath
+   name="dam:resolvedPath"
+   ordered=false
+   propertyIndex=true
    type="String"
 
 1. On the /oak:index/ntBaseLucene node, set the property *reindex=true*
 1. Click "Save All"
-1. Monitor the error.log to see when indexing is completed:  
+1. Monitor the error.log to see when indexing is completed:
    Reindexing completed for indexes: [/oak:index/ntBaseLucene]
 1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
 1. Once indexing is completed then go back to CRXDe and set the "type" property to disabled on these two indexes

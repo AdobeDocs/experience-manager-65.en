@@ -23,7 +23,7 @@ it on a portal server for end users. You can use the AEM Forms user interface to
 
 >[!NOTE]
 >
->For detailed information about other AEM tools and options, see [Authoring](../../sites/authoring/using/author.md).
+>For detailed information about other AEM tools and options, see [Authoring](/help/sites-authoring/author.md).
 
 ## Access AEM Forms components {#access-aem-forms-components}
 
@@ -115,9 +115,9 @@ AEM tools panel contains tools for various components. To navigate to AEM Forms-
     * **References:** An AEM Forms asset can be used in multiple AEM Forms assets. For example, a document fragment can be used in multiple letters. References is a list of assets (other forms or resources) that the selected asset is used in and also the list of other assets that the selected asset is using.
 
 * **Breadcrumbs:** A Breadcrumb represents the title of the current console or folder. You can click the Breadcrumb option to navigate between the level of folders that are higher in hierarchy.
-* **View Switcher:** You can click the View Switcher icon ![](assets/viewlist.png) or ![](assets/viewcard.png) to quickly switch between list and card view. For more information about common user interface components, see [Authoring](../../sites/authoring/using/author.md).  
+* **View Switcher:** You can click the View Switcher icon ![](assets/viewlist.png) or ![](assets/viewcard.png) to quickly switch between list and card view. For more information about common user interface components, see [Authoring](/help/sites-authoring/author.md).  
 
-* **Search: **The search option ![](assets/search.png) provides capability to quickly find and jump to the content and tools you need. Type the name of content or product capability and select from the suggestions, for example, type "Documents" to quickly find and navigate to Forms & Documents or Document Fragments console. For more information about search, see AEM 6.2 [search](../../sites/authoring/using/search.md) article  
+* **Search: **The search option ![](assets/search.png) provides capability to quickly find and jump to the content and tools you need. Type the name of content or product capability and select from the suggestions, for example, type "Documents" to quickly find and navigate to Forms & Documents or Document Fragments console. For more information about search, see AEM 6.2 [search](/help/sites-authoring/search.md) article  
 
 * **Actions toolbar**: On selecting an asset, the actions toolbar appears above the list of assets. It contains all the management tools for the selected asset. You can hover over a tool icon to view the tool tip describing its functionality
 

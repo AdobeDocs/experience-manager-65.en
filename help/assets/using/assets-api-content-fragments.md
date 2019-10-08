@@ -38,7 +38,7 @@ This is when the Assets REST API can be used. It allows developers to access ass
 
 The Assets REST API:
 
-* follows the [HATEOAS principle](https://en.wikipedia.org/wiki/HATEOAS)   
+* follows the [HATEOAS principle](https://en.wikipedia.org/wiki/HATEOAS)
 
 * implements the [SIREN format](https://github.com/kevinswiber/siren)
 
@@ -72,44 +72,44 @@ This means that subsequent ( `write`) requests cannot be combined into a single 
 ### AEM (Assets) REST API versus AEM Components {#aem-assets-rest-api-versus-aem-components}
 
 <table>
- <tbody> 
-  <tr> 
-   <td>Aspect</td> 
-   <td>Assets REST API<br /> </td> 
-   <td>AEM Component<br /> (components using Sling Models)</td> 
-  </tr> 
-  <tr> 
-   <td>Supported use-case(s)</td> 
-   <td>General purpose.</td> 
-   <td><p>Optimized for consumption in a Single Page Application (SPA), or any other (content consuming) context.</p> <p>Can also contain layout information.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Supported operations</td> 
-   <td><p>Create, Read, Update, Delete.</p> <p>With additional operations depending on the entity type.</p> </td> 
-   <td>Read-only.</td> 
-  </tr> 
-  <tr> 
-   <td>Access</td> 
+ <tbody>
+  <tr>
+   <td>Aspect</td>
+   <td>Assets REST API<br /> </td>
+   <td>AEM Component<br /> (components using Sling Models)</td>
+  </tr>
+  <tr>
+   <td>Supported use-case(s)</td>
+   <td>General purpose.</td>
+   <td><p>Optimized for consumption in a Single Page Application (SPA), or any other (content consuming) context.</p> <p>Can also contain layout information.</p> </td>
+  </tr>
+  <tr>
+   <td>Supported operations</td>
+   <td><p>Create, Read, Update, Delete.</p> <p>With additional operations depending on the entity type.</p> </td>
+   <td>Read-only.</td>
+  </tr>
+  <tr>
+   <td>Access</td>
    <td><p>Can be accessed directly.</p> <p>Uses the <code>/api/assets </code>endpoint, mapped to <code>/content/dam</code> (in the repository).</p> <p>For example, to access:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> request:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td> 
-   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td>Security</td> 
-   <td><p>Multiple options are possible.</p> <p>OAuth is proposed; can be configured separately from standard setup.</p> </td> 
-   <td>Uses AEM's standard setup.</td> 
-  </tr> 
-  <tr> 
-   <td>Architectural remarks</td> 
-   <td><p>Write access will typically address an author instance.</p> <p>Read may also be directed to a publish instance.</p> </td> 
-   <td>As this approach is read-only, it will typically be used for publish instances.</td> 
-  </tr> 
-  <tr> 
-   <td>Output</td> 
-   <td>JSON-based SIREN output: verbose, but powerful. Allows for navigating within the content.</td> 
-   <td>JSON-based proprietary output; configurable through Sling Models. Navigating the content structure is hard to implement (but not necessarily impossible).</td> 
-  </tr> 
- </tbody> 
+       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> request:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>Needs to be referenced through an AEM component on an AEM page.</p> <p>Uses the <code>.model</code> selector to create the JSON representation.</p> <p>An example URL would look like:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
+  </tr>
+  <tr>
+   <td>Security</td>
+   <td><p>Multiple options are possible.</p> <p>OAuth is proposed; can be configured separately from standard setup.</p> </td>
+   <td>Uses AEM's standard setup.</td>
+  </tr>
+  <tr>
+   <td>Architectural remarks</td>
+   <td><p>Write access will typically address an author instance.</p> <p>Read may also be directed to a publish instance.</p> </td>
+   <td>As this approach is read-only, it will typically be used for publish instances.</td>
+  </tr>
+  <tr>
+   <td>Output</td>
+   <td>JSON-based SIREN output: verbose, but powerful. Allows for navigating within the content.</td>
+   <td>JSON-based proprietary output; configurable through Sling Models. Navigating the content structure is hard to implement (but not necessarily impossible).</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Security {#security}
@@ -196,8 +196,8 @@ As there are several differences to *standard* assets (such as images or audio),
 
 Content fragments:
 
-* Do not expose any binary data.   
-* Are completely contained in the JSON output (within the `properties` property).   
+* Do not expose any binary data.
+* Are completely contained in the JSON output (within the `properties` property).
 
 * Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
@@ -215,7 +215,7 @@ Associated content is currently not exposed.
 
 Usage can differ depending on whether you are using an AEM author or publish environment, together with your specific use case.
 
-* Creation is strictly bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](../../assets/using/assets-api-content-fragments.md#limitations)).  
+* Creation is strictly bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](../../assets/using/assets-api-content-fragments.md#limitations)).
 
 * Delivery is possible from both, as AEM serves requested content in JSON format only.
 
@@ -228,7 +228,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the [API Reference](../../assets/using/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>For further details, see the [API Reference](../../assets/using/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -244,7 +244,7 @@ The response is serialized JSON with the content structured as in the content fr
 
 Two types of read operations are possible:
 
-* Reading a specific content fragment by path, this returns the JSON representation of the content fragment.  
+* Reading a specific content fragment by path, this returns the JSON representation of the content fragment.
 * Reading a folder of content fragments by path: this returns the JSON representations of all content fragments within the folder.
 
 ### Create {#create}
@@ -275,7 +275,7 @@ Usage is via:
 
 There are a few limitations:
 
-* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).  
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
 
 * **Content fragment models are currently not supported**: they cannot be read or created. To be able to create a new, or update an existing, content fragment, developers have to know the correct path to the content fragment model. Currently the only method to get an overview of these is through the administration UI.
 * **References are ignored**. Currently there are no checks on whether an existing content fragment is referenced. Therefore, for example, deleting a content fragment might result in issues on a page that contains a reference.
@@ -288,8 +288,8 @@ The following status codes can be seen in the relevant circumstances:
 
    Returned when:
 
-    * requesting a content fragment via `GET`  
-    
+    * requesting a content fragment via `GET`
+
     * successfully updating a content fragment via `PUT`
 
 1. 201 (Created)
@@ -310,11 +310,11 @@ The following status codes can be seen in the relevant circumstances:
    >
    >This error is returned:
    >
-   >    
-   >    
-   >    * when an error that cannot be identified with a specific code has happened  
+   >
+   >
+   >    * when an error that cannot be identified with a specific code has happened
    >    * when the given payload was not valid
-   >    
+   >
    >
 
    The following lists common scenarios when this error status is returned, together with the error message (monospace) generated:
@@ -362,7 +362,7 @@ The following status codes can be seen in the relevant circumstances:
 
 See here for detailed API references:
 
-* [Adobe Experience Manager Assets API - Content Fragments](/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Content Fragments](/https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/assets-api-content-fragments/index.html)
 * [Assets HTTP API](../../assets/using/mac-api-assets.md)
 
     * [Available Features](../../assets/using/mac-api-assets.md#available-features)

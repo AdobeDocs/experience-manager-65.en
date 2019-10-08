@@ -49,7 +49,7 @@ Perform the following steps to integrate a running Target server with AEM Forms:
 
 1. Click **Connect to Adobe Target** to initialize the connection with Target. If the connection is successful, the message Connection successful is displayed. Click **OK **on the message and then **OK **on the dialog. The Target account is configured.
 
-1. Create a Target framework as described in [Add a framework](/sites/administering/using/target.md).  
+1. Create a Target framework as described in [Add a framework](/help/sites-administering/target.md).  
 
 1. Go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
 

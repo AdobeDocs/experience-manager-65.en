@@ -15,11 +15,11 @@ docset: aem65
 
 # Applying Workflows to Assets{#applying-workflows-to-assets}
 
-Applying workflows to digital assets is the same as for website pages. For a complete guide on how to create and use workflows in AEM, see [Starting Workflows](../../sites/authoring/using/workflows-participating.md).
+Applying workflows to digital assets is the same as for website pages. For a complete guide on how to create and use workflows in AEM, see [Starting Workflows](/help/sites-authoring/workflows-participating.md).
 
 Use workflows in digital assets to activate the asset or create watermarks. Many of the workflows for assets are automatically turned on. For example, the workflow that automatically creates a rendition after an image is edited is automatically turned on.
 
-If a workflow available in Classic UI is not available in Touch-enabled UI, like Request to Activate and Request to Deactivate, see [Make workflow models available in Touch UI](../../sites/developing/using/workflows-models.md#classic2touchui).
+If a workflow available in Classic UI is not available in Touch-enabled UI, like Request to Activate and Request to Deactivate, see [Make workflow models available in Touch UI](/help/sites-developing/workflows-models.md#classic2touchui).
 
 ## Applying a workflow to an AEM asset {#applying-a-workflow-to-an-aem-asset}
 

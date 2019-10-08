@@ -19,11 +19,11 @@ The rule editor feature in Adobe Experience Manager Forms empowers forms busines
 
 The rule editor provides an intuitive and simplified user interface to write rules. Rule editor offers a visual editor for all the users. In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. Some of the key actions that you can perform on adaptive form objects using rules are:
 
-* Show or hide an object  
-* Enable or disable an object  
-* Set a value for an object  
-* Validate the value of an object  
-* Execute functions to compute the value of an object  
+* Show or hide an object
+* Enable or disable an object
+* Set a value for an object
+* Validate the value of an object
+* Execute functions to compute the value of an object
 * Invoke a form data model service and perform an operation
 * Set property of an object
 
@@ -67,7 +67,7 @@ While you can achieve most of the use cases by using any rule construct, here ar
 
 * To trigger an action based on multiple conditions, it is recommended to use action-condition construct. For example to show and hide field A by evaluating conditions on fields B, C, and D, use Show or Hide rule type on field A.
 * Use condition-action or action condition construct if the rule contains one action for one condition.
-* If a rule checks for a condition and performs an action immediately on providing a value in a field or exiting a field, it is recommended to write a rule with condition-action construct or the When rule type on the field on which the condition is evaluated. 
+* If a rule checks for a condition and performs an action immediately on providing a value in a field or exiting a field, it is recommended to write a rule with condition-action construct or the When rule type on the field on which the condition is evaluated.
 * The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like in case of prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
 * When writing rules for drop-downs, radio buttons, or check boxes objects, the options or values of these form objects in the form are pre-populated in the rule editor.
 
@@ -78,12 +78,12 @@ The rule editor provides the following logical operators and events using which 
 * **Is Equal To**
 * **Is Not Equal To**
 * **Starts With **
-* **Ends With** 
+* **Ends With**
 * **Contains **
 * **Is Empty **
 * **Is Not Empty**
 * **Has Selected: ** Returns true when the user selects a particular option for a checkbox, drop-down, radio button.
-* **Is Initialized (event): **Returns true when a form object renders in the browser. 
+* **Is Initialized (event): **Returns true when a form object renders in the browser.
 * **Is Changed (event): **Returns true when the user changes the entered value or selected option for a form object.
 
 ## Available rule types in rule editor {#available-rule-types-in-rule-editor}
@@ -104,8 +104,8 @@ In plain words, a typical When rule is structured as follows:
 
 `Then, do the following:`
 
-Action 2 on Object B;  
-AND  
+Action 2 on Object B;
+AND
 Action 3 on Object C;
 
 _
@@ -182,10 +182,10 @@ Note that the Set Value Of rule type is not available for all form objects, such
 
 Set value of Object A to:
 
-(string ABC) OR   
-(object property X of Object C) OR   
-(value from a function) OR   
-(value from a mathematical expression) OR  
+(string ABC) OR
+(object property X of Object C) OR
+(value from a function) OR
+(value from a mathematical expression) OR
 (output value of a data model service or web service);
 
 When (optional):
@@ -298,7 +298,7 @@ A typical Validate rule is structured as follows:
 >
 >If the specified value doesn't comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
 
-![](assets/script-validation.png) 
+![](assets/script-validation.png)
 
 ### Set Options Of {#setoptionsof}
 
@@ -317,7 +317,7 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **Display Value** drop-down list. The number of checkboxes in the adaptive form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **Save Value** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) 
+![FDM set options](assets/fdm_set_options_new.png)
 
 ## Understanding the rule editor user interface {#understanding-the-rule-editor-user-interface}
 
@@ -471,9 +471,9 @@ Perform the following steps to write rules:
 1. In the expression field:
 
     * Select or drag-drop from the Forms Object tab the **Salary** field in the first **Drop object or select here** field.
-    
+
     * Select **Plus** from the **Select Operator** field.
-    
+
     * Select or drag-drop from the Forms Object tab the **Spouse Salary** field in the other **Drop object or select here** field.
 
    ![](assets/write-rules-visual-editor-12.png)
@@ -499,9 +499,9 @@ Perform the following steps to write rules:
    In the When statement:
 
     * Select or drag-drop from the Forms Object tab the **Marital Status** field in the first **Drop object or select here** field.
-    
+
     * Select i**s equal to** from the **Select Operator** field.
-    
+
     * Select String in the other **Drop object or select here** field and specify **Married** in the **Enter a String** field.
 
    The rule finally appears as follows in the rule editor.  ![](assets/write-rules-visual-editor-16.png)
@@ -518,7 +518,7 @@ Perform the following steps to write rules:
 >
 >Similarly, you can write a combined rule to control visibility of the Spouse Salary field and compute loan eligibility when the Marital Status is Married.
 
-![](assets/write-rules-visual-editor-18.png) 
+![](assets/write-rules-visual-editor-18.png)
 
 ### Using code editor {#using-code-editor}
 
@@ -535,7 +535,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 * Hints and suggestions for Form objects, functions, and their properties
 * Auto completion of form component names and common JavaScript functions
 
-![](assets/javascriptruleeditor.png) 
+![](assets/javascriptruleeditor.png)
 
 #### Custom functions in rule editor {#custom-functions}
 
@@ -550,40 +550,40 @@ For more information, see [usejsdoc.org](https://usejsdoc.org/).
 
 Supported `jsdoc` tags:
 
-* **Private** 
-  Syntax: `@private`  
-  A private function is not included as a custom function.  
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
 
-* **Name** 
-  Syntax: `@name funcName <Function Name>`  
-  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.  
-  `funcName` is the name of the function (no spaces allowed).   
-  `<Function Name>` is the display name of the function.   
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
 
-* **Member** 
-  Syntax: `@memberof namespace`  
-  Attaches a namespace to the function.   
+* **Member**
+  Syntax: `@memberof namespace`
+  Attaches a namespace to the function.
 
-* **Parameter** 
-  Syntax: `@param {type} name <Parameter Description>`  
-  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.  
-  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.   
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
   `{type}` represents parameter type. Allowed parameter types are:
 
-    1. string  
-    1. number  
+    1. string
+    1. number
     1. boolean
 
   All other parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case sensitive. Spaces are not allowed in the parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Return Type** 
-  Syntax: `@return {type}`  
-  Alternatively, you can use `@returns {type}`.   
-  Adds information about the function, such as its objective.   
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
   {type} represents the return type of the function. Allowed return types are:
 
-    1. string  
-    1. number  
+    1. string
+    1. number
     1. boolean
 
   All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case sensitive.
@@ -598,7 +598,7 @@ For example, you want to add a custom function which calculates area of a square
 
 Perform the following steps to create a client library and add it in the CRX repository.
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](/help/sites/developing/using/clientlibs.md). 
+1. Create a client library. For more information, see [Using Client-Side Libraries](/help/help/sites-developing/clientlibs.md).
 1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -607,15 +607,15 @@ Perform the following steps to create a client library and add it in the CRX rep
 
 After you have added your client library in the CRX repository, use it in your adaptive form. It lets you use your custom function as a rule in your form. Perform the following steps to add the client library in your adaptive form.
 
-1. Open your form in edit mode.   
+1. Open your form in edit mode.
    To open a form in edit mode, select a form and tap **Open**.
 1. In the edit mode, select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
 1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
    ![Adding the custom function client library](assets/clientlib.png)
 
-1. Select the input numeric box, and tap ![](assets/edit-rules.png) to open the rule editor. 
-1. Tap **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form. 
+1. Select the input numeric box, and tap ![](assets/edit-rules.png) to open the rule editor.
+1. Tap **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
    [ ![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Tap **Done**. Your custom function is added.
 
 #### Function declaration supported types {#function-declaration-supported-types}
@@ -691,16 +691,16 @@ You can perform the following actions on rules:
 
 * **Expand/Collapse**: The Content column in the rule list displays the rule content. If the entire rule content is not visible in the default view, tap ![](assets/expand-rule-content.png) to expand it.
 
-* **Reorder**: Any new rule you create is stacked at the bottom of the rule list. The rules are executed from top to bottom. The rule at the top executes first followed by other rules of the same type. For example, if you have When, Show, Enable, and When rules at first, second, third, and fourth positions from top, respectively, the When rule at the top gets executed first followed by the When rule at the fourth position. Then, the Show and Enable rules will be executed.  
+* **Reorder**: Any new rule you create is stacked at the bottom of the rule list. The rules are executed from top to bottom. The rule at the top executes first followed by other rules of the same type. For example, if you have When, Show, Enable, and When rules at first, second, third, and fourth positions from top, respectively, the When rule at the top gets executed first followed by the When rule at the fourth position. Then, the Show and Enable rules will be executed.
   You can change the order of a rule by tapping ![](assets/sort-rules.png) against it or drag-drop it to the desired order in the list.
 
-* **Edit**: To edit a rule, select the check box next to the rule title. Additional options to edit and delete the rule appear. Tap **Edit** to open the selected rule in the rule editor in visual or code editor mode depending the mode used to create the rule. 
+* **Edit**: To edit a rule, select the check box next to the rule title. Additional options to edit and delete the rule appear. Tap **Edit** to open the selected rule in the rule editor in visual or code editor mode depending the mode used to create the rule.
 
 * **Delete**: To delete a rule, select the rule and tap **Delete**.
 
 * **Enable/Disable**: You may need to suspend usage of a rule temporarily. You can select one or more rules and tap Disable in the Actions toolbar to disable them. If a rule is disabled, it does not execute at the runtime. To enable a rule that is disabled, you can select it and tap Enable in the actions toolbar. The status column of the rule displays whether the rule is enabled or disabled.
 
-![](assets/disablerule.png) 
+![](assets/disablerule.png)
 
 ## Copy-paste rules {#copy-paste-rules}
 
@@ -736,7 +736,7 @@ Following is an example of a nested rule that displays a message to the user abo
 
 You can also drag-and-drop conditions within a rule to edit it. Tap and hover over the handle ( ![](assets/handle.png)) before a condition. Once the pointer turns into the hand symbol as shown below, drag and drop the condition anywhere within the rule. The rule structure changes.
 
-![](assets/drag-and-drop.png) 
+![](assets/drag-and-drop.png)
 
 ## Date expression conditions {#dateexpression}
 
@@ -750,19 +750,19 @@ When the date of mortgage of the property as filled in by the user is in the pas
 
 When filled date is earlier than the current date, the form displays the text message (Income) as following:
 
-![](assets/dateexpressionconditionmet.png) 
+![](assets/dateexpressionconditionmet.png)
 
 ## Number comparison conditions {#number-comparison-conditions}
 
 Rule editor allows you to create conditions that compare two numbers.
 
-Following is an example condition that displays a static text object if the number of months an applicant is staying at his current address is less than 36. 
+Following is an example condition that displays a static text object if the number of months an applicant is staying at his current address is less than 36.
 
 ![](assets/numbercomparisoncondition.png)
 
-When the user signifies that he has been living at his present residential address for less than 36 months, the form displays a notification that additional proof of residence may be requested. 
+When the user signifies that he has been living at his present residential address for less than 36 months, the form displays a notification that additional proof of residence may be requested.
 
-![](assets/additionalproofrequested.png) 
+![](assets/additionalproofrequested.png)
 
 ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
@@ -828,7 +828,7 @@ Rule in the code editor
 
 ### Validating a field value using expression {#validating-a-field-value-using-expression}
 
-In the purchase order form explained in the previous example, you want to restrict user from ordering more than one quantity of any product that is priced more that 10000. To do this, you can write a Validate rule as shown below. 
+In the purchase order form explained in the previous example, you want to restrict user from ordering more than one quantity of any product that is priced more that 10000. To do this, you can write a Validate rule as shown below.
 
 ![](assets/example-validate.png)
 

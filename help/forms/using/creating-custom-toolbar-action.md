@@ -16,7 +16,7 @@ docset: aem65
 
 ## Prerequisites {#prerequisite}
 
-Before you create a custom toolbar action, make yourself familiar with [Using Client Side Libraries](../../sites/developing/using/clientlibs.md) and [Developing with CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md).
+Before you create a custom toolbar action, make yourself familiar with [Using Client Side Libraries](/help/sites-developing/clientlibs.md) and [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## What is an action <br> {#what-is-an-action-br}
 
@@ -30,7 +30,7 @@ Besides the set of actions provided by default, you can create custom actions in
 
 To illustrate the creation of a custom toolbar action, the following steps guide you to create a button for end users to review all the adaptive form fields before submitting a filled form.
 
-1. All the default actions supported by adaptive forms are present in `/libs/fd/af/components/actions` folder. In CRXDE, copy the `fileattachmentlisting` node from `/libs/fd/af/components/actions/fileattachmentlisting` to `/apps/customaction`.  
+1. All the default actions supported by adaptive forms are present in `/libs/fd/af/components/actions` folder. In CRXDE, copy the `fileattachmentlisting` node from `/libs/fd/af/components/actions/fileattachmentlisting` to `/apps/customaction`.
 
 1. After copying the node to `apps/customaction` folder, rename the node name to `reviewbeforesubmit`. Also, change the `jcr:title` and `jcr:description` properties of the node.
 
@@ -54,11 +54,11 @@ To illustrate the creation of a custom toolbar action, the following steps guide
    ```
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <guide:initializeBean name="guideField" className="com.adobe.aemds.guide.common.GuideButton"/>
-   
+
    <c:if test="${not isEditMode}">
            <cq:includeClientLib categories="reviewsubmitclientlibruntime" />
    </c:if>
-   
+
    <%--- BootStrap Modal Dialog  --------------%>
    <div class="modal fade" id="reviewSubmit" tabindex="-1">
        <div class="modal-dialog">
@@ -110,7 +110,7 @@ To illustrate the creation of a custom toolbar action, the following steps guide
    Add the following code in the `ReviewBeforeSubmit.js` file.
 
    ```
-   
+
    /*anonymous function to handle show of review before submit view */
    $(function () {
        if($("div.reviewbeforesubmit button[id*=reviewbeforesubmit]").length > 0) {
@@ -126,7 +126,7 @@ To illustrate the creation of a custom toolbar action, the following steps guide
                    }
                }, this);
                result = guideBridge.getElementProperty(options);
-   
+
                $('#reviewSubmit .reviewlabel').each(function(index, item){
                    var data = ((result.data[index] == null) ? "No Data Filled" : result.data[index]);
                    if($(this).next().hasClass("reviewlabelvalue")){
@@ -151,12 +151,12 @@ To illustrate the creation of a custom toolbar action, the following steps guide
        text-align: right;
        padding:2px;
    }
-   
+
    .modal-list .reviewlabelvalue {
        border: #cde0ec 1px solid;
        padding:2px;
    }
-   
+
    /* Adding icon for this action in mobile devices */
    /* This is the glyphicon provided by bootstrap eye-open */
    /* .<type> .iconButton-icon */
@@ -166,7 +166,7 @@ To illustrate the creation of a custom toolbar action, the following steps guide
        font-family: 'Glyphicons Halflings';
        font-style: normal;
    }
-   
+
    .reviewbeforesubmit .iconButton-icon:before {
        content: "\e105"
    }

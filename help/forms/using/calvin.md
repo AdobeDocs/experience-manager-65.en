@@ -19,7 +19,7 @@ docset: aem65
 
 Adaptive forms are integral to your customer interactions. It is important to test your adaptive forms with every change you make in them, such as while rolling out a new fix pack or changing a rule in the form. However, functional testing adaptive forms and every field in them may be tedious.
 
-Calvin allows you to automate testing of your adaptive forms in the web browser. Calvin utilizes [Hobbes](../../sites/developing/using/hobbes.md)'s user interface for running the tests and provides the following tools:
+Calvin allows you to automate testing of your adaptive forms in the web browser. Calvin utilizes [Hobbes](/help/sites-developing/hobbes.md)'s user interface for running the tests and provides the following tools:
 
 * A JavaScript API for creating tests.
 * A user interface for running tests.
@@ -27,57 +27,57 @@ Calvin allows you to automate testing of your adaptive forms in the web browser.
 Using Calvin, you can create test cases in CRXDE and run UI tests directly in the web browser to thoroughly test your adaptive forms' following aspects:
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Adaptive form aspect to test</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Prefill experience of an Adaptive Form</td> 
-   <td> 
-    <ul> 
-     <li>Is the form being prepopulated as expected based on the type of data model?</li> 
-     <li>Are the default values of form objects being prefilled as expected?</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Submit experience of an adaptive form</td> 
-   <td> 
-    <ul> 
-     <li>Is correct data being generated on submit?</li> 
-     <li>Is the form being re-validated on the server during submit?</li> 
-     <li>Is the submit action configured for the form being executed?</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="221"><p>Expression Rules</p> <p> </p> </td> 
-   <td valign="top" width="221"> 
-    <ul> 
-     <li>Are the expressions associated with form objects, such as calculate, visible, execute scripts after exiting a field, being executed after performing the relevant UI operations?<br /> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="221">Validations</td> 
-   <td valign="top" width="221"> 
-    <ul> 
-     <li>Are field validations executing as expected after performing the operations?</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="221"><p>Lazy Loading</p> <p> </p> </td> 
-   <td valign="top" width="221"> 
-    <ul> 
-     <li>On click of tabs (or any navigation item of a panel), is the HTML being fetched from server as per lazy loading configuration?</li> 
-    </ul> <h1> </h1> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="221"><p>UI Interaction</p> </td> 
-   <td valign="top" width="221"> 
-    <ul> 
-     <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Testing UI interaction with Adaptive Form objects</a></li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Adaptive form aspect to test</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Prefill experience of an Adaptive Form</td>
+   <td>
+    <ul>
+     <li>Is the form being prepopulated as expected based on the type of data model?</li>
+     <li>Are the default values of form objects being prefilled as expected?</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Submit experience of an adaptive form</td>
+   <td>
+    <ul>
+     <li>Is correct data being generated on submit?</li>
+     <li>Is the form being re-validated on the server during submit?</li>
+     <li>Is the submit action configured for the form being executed?</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="221"><p>Expression Rules</p> <p> </p> </td>
+   <td valign="top" width="221">
+    <ul>
+     <li>Are the expressions associated with form objects, such as calculate, visible, execute scripts after exiting a field, being executed after performing the relevant UI operations?<br /> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="221">Validations</td>
+   <td valign="top" width="221">
+    <ul>
+     <li>Are field validations executing as expected after performing the operations?</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="221"><p>Lazy Loading</p> <p> </p> </td>
+   <td valign="top" width="221">
+    <ul>
+     <li>On click of tabs (or any navigation item of a panel), is the HTML being fetched from server as per lazy loading configuration?</li>
+    </ul> <h1> </h1> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="221"><p>UI Interaction</p> </td>
+   <td valign="top" width="221">
+    <ul>
+     <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Testing UI interaction with Adaptive Form objects</a></li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Prerequisites {#prerequisites}
@@ -97,26 +97,26 @@ The following example walks you through creation of a test suite for testing mul
 
    The clientlibs folder contains the registration aspect of your application (JS and Init). It is recommended that you register all Hobbes test suites objects specific to a form in the clientlibs folder.
 
-1. Specify the following property values in the newly created node (here afTestRegistration) and then click** Save All**. These properties help Hobbes recognize the folder as a test. To reuse this client library as a dependency in other client libraries, name it as granite.testing.calvin.tests. 
+1. Specify the following property values in the newly created node (here afTestRegistration) and then click** Save All**. These properties help Hobbes recognize the folder as a test. To reuse this client library as a dependency in other client libraries, name it as granite.testing.calvin.tests.
 
 <table>
- <tbody> 
-  <tr> 
-   <td>Property</td> 
-   <td>Type</td> 
-   <td>Value</td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>categories</p> </td> 
-   <td valign="top"><p>String[]</p> </td> 
-   <td valign="top"><p>granite.testing.hobbes.tests, granite.testing.calvin.tests</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>dependencies</p> </td> 
-   <td valign="top"><p>String[]</p> </td> 
-   <td valign="top"><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>Property</td>
+   <td>Type</td>
+   <td>Value</td>
+  </tr>
+  <tr>
+   <td valign="top"><p>categories</p> </td>
+   <td valign="top"><p>String[]</p> </td>
+   <td valign="top"><p>granite.testing.hobbes.tests, granite.testing.calvin.tests</p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p>dependencies</p> </td>
+   <td valign="top"><p>String[]</p> </td>
+   <td valign="top"><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td>
+  </tr>
+ </tbody>
 </table>
 
    >[!NOTE]
@@ -131,7 +131,7 @@ The following example walks you through creation of a test suite for testing mul
    ```
    #base=.
    js.txt
-   
+
    ```
 
 1. Click **Save All** and then close the js.txt file.
@@ -179,12 +179,12 @@ The following example walks you through creation of a test suite for testing mul
    ```
    (function(window, hobs) {
        'use strict';
-   
+
     var ts = new hobs.TestSuite("Script Test", {
            path: '/etc/clientlibs/testForm/scriptingTest.js',
      register: false
-    }) 
-   
+    })
+
        .addTestCase(new hobs.TestCase("Checking execution of calculate script")
            // navigate to the testForm which is to be tested
            .navigateTo("/content/forms/af/testForm.html?wcmmode=disabled")
@@ -209,7 +209,7 @@ The following example walks you through creation of a test suite for testing mul
                return calvin.model("panel1.textbox1").value == "5"
            })
        )
-   
+
        .addTestCase(new hobs.TestCase("Calculate script Test")
            // navigate to the testForm which is to be tested
            .navigateTo("/content/forms/af/cal/demoform.html?wcmmode=disabled&dataRef=crx:///content/forms/af/cal/prefill.xml")
@@ -217,7 +217,7 @@ The following example walks you through creation of a test suite for testing mul
            .asserts.isTrue(function () {
                return calvin.isFormLoaded()
            })
-   
+
            .execSyncFct(function () {
                // create a spy before checking for the expression
                calvin.spyOnExpression("panel2.panel1488218690733.downPayment");
@@ -235,7 +235,7 @@ The following example walks you through creation of a test suite for testing mul
       return calvin.model("panel2.panel1488218690733.downPayment").value == 10000
            })
        )
-   
+
        .addTestCase(new hobs.TestCase("Checking execution of Value commit script")
            // navigate to the testForm which is to be tested
            .navigateTo("/content/forms/af/cal/demoform.html?wcmmode=disabled&dataRef=crx:///content/forms/af/cal/prefill.xml")
@@ -243,7 +243,7 @@ The following example walks you through creation of a test suite for testing mul
            .asserts.isTrue(function () {
                return calvin.isFormLoaded()
            })
-   
+
            .execSyncFct(function () {
                // create a spy before checking for the expression
                calvin.spyOnExpression("panel2.panel1488218690733.priceProperty");
@@ -261,15 +261,15 @@ The following example walks you through creation of a test suite for testing mul
                return calvin.model("panel2.panel1488218690733.textbox1488215618594").value == 0
            })
        );
-   
+
     // register the test suite with testForm
      window.testsuites.testForm.add(ts);
 
     }(window, window.hobs));
-   
+
    ```
 
-   The test case is created. Proceed to run the test case to test adaptive forms through Hobbes. For steps for running the test cases, see [Executing Tests in Testing Your UI Using Automated Tests](../../sites/developing/using/hobbes.md).
+   The test case is created. Proceed to run the test case to test adaptive forms through Hobbes. For steps for running the test cases, see [Executing Tests in Testing Your UI Using Automated Tests](/help/sites-developing/hobbes.md).
 
 You can also install the package in the attached file SampleTestPackage.zip to achieve the same results as by the steps explained in Example: Create a test suite for an adaptive form using Hobbes as testing framework.
 
@@ -303,7 +303,7 @@ To run a Test Suite:
 
    ![](assets/4_reviewresults.png)
 
-The steps for testing your AEM adaptive forms are similar to steps for testing your AEM UI. For more information on testing your adaptive forms, see the following topics in [Testing Your UI](https://helpx.adobe.com//experience-manager/6-3/sites/developing/using/hobbes.html):
+The steps for testing your AEM adaptive forms are similar to steps for testing your AEM UI. For more information on testing your adaptive forms, see the following topics in [Testing Your UI](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 
 * Viewing Test Suites
 * Running Multiple Tests
@@ -311,27 +311,27 @@ The steps for testing your AEM adaptive forms are similar to steps for testing y
 ## Glossary {#glossary}
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Term</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="100"><p>Test suite</p> </td> 
-   <td valign="top" width="315"><p>A test suite is a collection of related test cases.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="100"><p>Test case</p> </td> 
-   <td valign="top" width="315"><p>A test case represents a task that a user performs using your UI. Add test cases to your test suite to test the activities that users perform.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="100"><p>Actions</p> </td> 
-   <td valign="top" width="315"><p>Actions are methods that perform a gesture in the UI, such as clicking a button or filling an input box with a value.</p> <p>The methods of the hobs.actions.Asserts, hobs.actions.Core and hobs.utils.af classes are actions that you can use in your tests. All actions execute synchronously.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="100"><p>Author or publish environment</p> </td> 
-   <td valign="top" width="315"><p>In general, forms can either be tested in author or publish environment. In case of publish environment, by default, the access to execute the test is restricted. This is because all the client libraries related to test runner lies inside the /libs in the JCR structure.</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Term</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td valign="top" width="100"><p>Test suite</p> </td>
+   <td valign="top" width="315"><p>A test suite is a collection of related test cases.</p> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="100"><p>Test case</p> </td>
+   <td valign="top" width="315"><p>A test case represents a task that a user performs using your UI. Add test cases to your test suite to test the activities that users perform.</p> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="100"><p>Actions</p> </td>
+   <td valign="top" width="315"><p>Actions are methods that perform a gesture in the UI, such as clicking a button or filling an input box with a value.</p> <p>The methods of the hobs.actions.Asserts, hobs.actions.Core and hobs.utils.af classes are actions that you can use in your tests. All actions execute synchronously.</p> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="100"><p>Author or publish environment</p> </td>
+   <td valign="top" width="315"><p>In general, forms can either be tested in author or publish environment. In case of publish environment, by default, the access to execute the test is restricted. This is because all the client libraries related to test runner lies inside the /libs in the JCR structure.</p> </td>
+  </tr>
+ </tbody>
 </table>
 

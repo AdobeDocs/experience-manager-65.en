@@ -15,7 +15,7 @@ docset: aem65
 
 # Managing Assets with the Touch-Optimized UI{#managing-assets-with-the-touch-optimized-ui}
 
-This article describes how to manage and edit assets using the Adobe Experience Manager (AEM) Assets Touch-optimized user interface (UI). For elementary knowledge about the UI, see [Basic handling of Touch UI](../../sites/authoring/using/basic-handling.md).
+This article describes how to manage and edit assets using the Adobe Experience Manager (AEM) Assets Touch-optimized user interface (UI). For elementary knowledge about the UI, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md).
 
 >[!CAUTION]
 >
@@ -806,7 +806,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Deleting a rendition**
 
-   Select a rendition from the **Renditions** panel, and then tap/click the **Delete Rendition **icon from the [toolbar](../../sites/authoring/using/basic-handling.md#p-actions-toolbar-p).
+   Select a rendition from the **Renditions** panel, and then tap/click the **Delete Rendition **icon from the [toolbar](/help/sites-authoring/basic-handling.md#p-actions-toolbar-p).
 
    ![](assets/delete_renditionicon.png)
 
@@ -989,7 +989,7 @@ Similar to List view, the **Select** icon appears when you hover the mouse icon 
 
 ![](assets/select_quick_in_columnview.png)
 
-For more information, see [Viewing and Selecting your Resources](../../sites/authoring/using/basic-handling.md#viewing-and-selecting-resources).
+For more information, see [Viewing and Selecting your Resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Editing Images {#editing-images}
 
@@ -1280,7 +1280,7 @@ The versioning functionality lets you do the following:
 
    >[!NOTE]
    >
-   >You can also select the asset from the [List view](../../sites/authoring/using/basic-handling.md#viewing-and-selecting-resources) or the [Column view](../../sites/authoring/using/basic-handling.md#viewing-and-selecting-resources).
+   >You can also select the asset from the [List view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) or the [Column view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 1. Add a label and comment for the version to revert to the particular version in the Assets UI.
 

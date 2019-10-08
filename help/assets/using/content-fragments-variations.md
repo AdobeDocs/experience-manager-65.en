@@ -249,13 +249,13 @@ Annotations:
 
 To ease the process of authoring content fragments you can add [Assets](../../assets/using/managing-assets-touch-ui.md) (images) directly to the fragment.
 
-They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](../../sites/authoring/using/content-fragments.md).
+They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 >
 >These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
 >
->However, formatting of the asset (e.g. size) must be done in the [page editor](../../sites/authoring/using/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+>However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-authoring/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
 
 >[!NOTE]
 >

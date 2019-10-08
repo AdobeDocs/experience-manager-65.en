@@ -63,9 +63,9 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
 ## Site Administration {#site-administration}
 
-* The [Reference](../sites/authoring/using/author-environment-tools.md#references) rail has a new section to list internal links that are pointing to the page selected. This is useful when planning to take a page offline or delete - to see what pages need to be adjusted before taking them offline.
-* The [list view](../sites/authoring/using/basic-handling.md#list-view) has a new workflow column that shows the status when the page is currently in a workflow.
-* In the [page properties](../sites/authoring/using/editing-page-properties.md), it's now possible to browse for existing assets when assigning a Thumbnail to the page (Thumbnail tab).
+* The [Reference](/help/sites-authoring/author-environment-tools.md#references) rail has a new section to list internal links that are pointing to the page selected. This is useful when planning to take a page offline or delete - to see what pages need to be adjusted before taking them offline.
+* The [list view](/help/sites-authoring/basic-handling.md#list-view) has a new workflow column that shows the status when the page is currently in a workflow.
+* In the [page properties](/help/sites-authoring/editing-page-properties.md), it's now possible to browse for existing assets when assigning a Thumbnail to the page (Thumbnail tab).
 
 ## Page Editor {#page-editor}
 
@@ -83,8 +83,8 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
 ## Experience Fragments {#experience-fragments}
 
-* Improved the indexing of [Experience Fragments](../sites/authoring/using/experience-fragments.md), so their content is found in search for pages where they are being used
-* The [Export to Target](../sites/administering/using/experience-fragments-target.md) option now allows to send the Experience Fragment as JSON (default is HTML), or both
+* Improved the indexing of [Experience Fragments](/help/sites-authoring/experience-fragments.md), so their content is found in search for pages where they are being used
+* The [Export to Target](/help/sites-administering/experience-fragments-target.md) option now allows to send the Experience Fragment as JSON (default is HTML), or both
 
 ## Translation {#translation}
 
@@ -103,7 +103,7 @@ See the following for AEM Sites 6.5 enhancements in detail:
 ## Launches {#launches}
 
 * New review and approval workflow for launches, and ability to only promote approved launch pages
-* Added [option in UI to choose to delete the Launch right after the promotion step](../sites/authoring/using/launches-promoting.md#promoting-launch-pages)
+* Added [option in UI to choose to delete the Launch right after the promotion step](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
 ## Content Targeting & Simulation {#content-targeting-simulation}
 

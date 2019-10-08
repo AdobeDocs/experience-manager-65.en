@@ -19,70 +19,70 @@ You can achieve higher content velocity using AEM's user-friendly asset discover
 AEM supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.
 
 <table>
- <tbody> 
-  <tr> 
-   <th scope="col" style="text-align: center;"><strong>Search assets</strong></th> 
-   <th scope="col" style="text-align: center;"><strong>Configuration and administration</strong></th> 
-   <th scope="col" style="text-align: center;"><strong>Work with search results</strong></th> 
-  </tr> 
-  <tr> 
-   <td><a disablelinktracking="false" href="#searchbasics">Basic searches</a></td> 
-   <td><a href="#searchindex">Search index</a></td> 
-   <td><a href="#sort">Sort results</a></td> 
-  </tr> 
-  <tr> 
-   <td><a disablelinktracking="false" href="#searchui">Understand search UI</a></td> 
-   <td><a href="#configvisualsearch">Visual or similarity search</a></td> 
-   <td><a href="#checkinfo">Check properties and metadata of an asset</a></td> 
-  </tr> 
-  <tr> 
-   <td><a disablelinktracking="false" href="#searchsuggestions">Search suggestions</a><br /> </td> 
-   <td><a href="#mandatorymetadata">Mandatory metadata</a></td> 
-   <td><a href="#download">Download</a></td> 
-  </tr> 
-  <tr> 
-   <td><a disablelinktracking="false" href="#searchbehavior">Understand search results and behavior<br /> </a></td> 
-   <td><a href="#searchfacets">Modify search facets</a></td> 
-   <td><a disablelinktracking="false" href="#metadataupdates">Bulk metadata updates</a></td> 
-  </tr> 
-  <tr> 
-   <td><a disablelinktracking="false" href="#searchrank">Search rank and boosting</a><br /> </td> 
-   <td><a href="#extracttextupload">Text extraction</a></td> 
-   <td><a href="#collections">Smart collections</a></td> 
-  </tr> 
-  <tr> 
-   <td><a disablelinktracking="false" href="#scope">Advanced search: filtering and scope of search</a></td> 
-   <td><a href="#custompredicates">Custom predicates</a></td> 
-   <td><a href="#unexpectedresults">Understand unexpected results</a> and <a href="#troubleshoot">Troubleshoot</a></td> 
-  </tr> 
-  <tr> 
-   <td><p><a disablelinktracking="false" href="#beyondomnisearch">Search from other solutions and apps</a>:<br /> </p> 
-    <ul> 
-     <li><a disablelinktracking="false" href="#aal">Asset Link</a></li> 
-     <li><a disablelinktracking="false" href="#brandportal">Brand Portal</a></li> 
-     <li><a disablelinktracking="false" href="#desktopapp">Desktop app</a></li> 
-     <li><a disablelinktracking="false" href="#adobestock">Adobe Stock images</a></li> 
-     <li><a disablelinktracking="false" href="#dynamicmedia">Dynamic Media assets</a></li> 
-    </ul> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><a disablelinktracking="false" href="#assetselector">Asset selector/picker</a></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><a disablelinktracking="false" href="#limitations">Limitations</a> and <a href="#tips">Tips</a><br /> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><a href="#samples">Illustrated examples</a></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th scope="col" style="text-align: center;"><strong>Search assets</strong></th>
+   <th scope="col" style="text-align: center;"><strong>Configuration and administration</strong></th>
+   <th scope="col" style="text-align: center;"><strong>Work with search results</strong></th>
+  </tr>
+  <tr>
+   <td><a disablelinktracking="false" href="#searchbasics">Basic searches</a></td>
+   <td><a href="#searchindex">Search index</a></td>
+   <td><a href="#sort">Sort results</a></td>
+  </tr>
+  <tr>
+   <td><a disablelinktracking="false" href="#searchui">Understand search UI</a></td>
+   <td><a href="#configvisualsearch">Visual or similarity search</a></td>
+   <td><a href="#checkinfo">Check properties and metadata of an asset</a></td>
+  </tr>
+  <tr>
+   <td><a disablelinktracking="false" href="#searchsuggestions">Search suggestions</a><br /> </td>
+   <td><a href="#mandatorymetadata">Mandatory metadata</a></td>
+   <td><a href="#download">Download</a></td>
+  </tr>
+  <tr>
+   <td><a disablelinktracking="false" href="#searchbehavior">Understand search results and behavior<br /> </a></td>
+   <td><a href="#searchfacets">Modify search facets</a></td>
+   <td><a disablelinktracking="false" href="#metadataupdates">Bulk metadata updates</a></td>
+  </tr>
+  <tr>
+   <td><a disablelinktracking="false" href="#searchrank">Search rank and boosting</a><br /> </td>
+   <td><a href="#extracttextupload">Text extraction</a></td>
+   <td><a href="#collections">Smart collections</a></td>
+  </tr>
+  <tr>
+   <td><a disablelinktracking="false" href="#scope">Advanced search: filtering and scope of search</a></td>
+   <td><a href="#custompredicates">Custom predicates</a></td>
+   <td><a href="#unexpectedresults">Understand unexpected results</a> and <a href="#troubleshoot">Troubleshoot</a></td>
+  </tr>
+  <tr>
+   <td><p><a disablelinktracking="false" href="#beyondomnisearch">Search from other solutions and apps</a>:<br /> </p>
+    <ul>
+     <li><a disablelinktracking="false" href="#aal">Asset Link</a></li>
+     <li><a disablelinktracking="false" href="#brandportal">Brand Portal</a></li>
+     <li><a disablelinktracking="false" href="#desktopapp">Desktop app</a></li>
+     <li><a disablelinktracking="false" href="#adobestock">Adobe Stock images</a></li>
+     <li><a disablelinktracking="false" href="#dynamicmedia">Dynamic Media assets</a></li>
+    </ul> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a disablelinktracking="false" href="#assetselector">Asset selector/picker</a></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a disablelinktracking="false" href="#limitations">Limitations</a> and <a href="#tips">Tips</a><br /> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a href="#samples">Illustrated examples</a></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 Search assets using the Omnisearch field at the top of the AEM web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, click ![](assets/search_icon.png) in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. You can do advanced searches to increase or limit the [scope of search](#scope).
@@ -141,10 +141,10 @@ By default, AEM search combines the search terms with an AND clause. For example
 * `woman.running`
 * `woman-running`
 
-However, the query `woman -running` returns assets without `running` in their metadata.   
+However, the query `woman -running` returns assets without `running` in their metadata.
 Using smart tags adds an extra `OR` clause to find any of the search terms as the applied smart tags. An asset tagged with either `woman` or `running` using Smart Tags also appear in such a search query. So the search results are a combination of,
 
-* Assets with `woman` and `running` keywords in the metadata (default behavior).  
+* Assets with `woman` and `running` keywords in the metadata (default behavior).
 
 * Assets smart tagged with either of the keywords (Smart Tags behavior).
 
@@ -201,96 +201,96 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 You can for assets based on exact values of specific metadata fields, such as, title, description, and author. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (for example author, title, and so on) and the values are case-sensitive.
 
 <table>
- <tbody> 
-  <tr> 
-   <th scope="col" style="text-align: center;"><strong>Metadata field</strong></th> 
-   <th scope="col" style="text-align: center;"><strong>Facet value and usage</strong><br /> </th> 
-  </tr> 
-  <tr> 
-   <td>Title</td> 
-   <td>title:John</td> 
-  </tr> 
-  <tr> 
-   <td>Creator</td> 
-   <td>creator:John</td> 
-  </tr> 
-  <tr> 
-   <td>Location</td> 
-   <td>location:NA</td> 
-  </tr> 
-  <tr> 
-   <td>Description</td> 
-   <td>description:"Sample Image"</td> 
-  </tr> 
-  <tr> 
-   <td>Creator tool</td> 
-   <td>creatortool:"Adobe Photoshop CC 2015"</td> 
-  </tr> 
-  <tr> 
-   <td>Copyright Owner</td> 
-   <td>copyrightowner:"Adobe Systems"</td> 
-  </tr> 
-  <tr> 
-   <td>Contributor</td> 
-   <td>contributor:John</td> 
-  </tr> 
-  <tr> 
-   <td>Usage Terms</td> 
-   <td>usageterms:"CopyRights Reserved"</td> 
-  </tr> 
-  <tr> 
-   <td>Created</td> 
-   <td>created:YYYY-MM-DDTHH</td> 
-  </tr> 
-  <tr> 
-   <td>Expires Date</td> 
-   <td>expires:YYYY-MM-DDTHH</td> 
-  </tr> 
-  <tr> 
-   <td>On time<br /> </td> 
-   <td>ontime:YYYY-MM-DDTHH</td> 
-  </tr> 
-  <tr> 
-   <td>Off time<br /> </td> 
-   <td>offtime:YYYY-MM-DDTHH</td> 
-  </tr> 
-  <tr> 
-   <td>Range of time(expires dateontime,offtime)</td> 
-   <td>facet field : lowerbound..upperbound</td> 
-  </tr> 
-  <tr> 
-   <td>Path</td> 
-   <td>/content/dam/&lt;folder name&gt;</td> 
-  </tr> 
-  <tr> 
-   <td>PDF Title</td> 
-   <td>pdftitle:"Adobe Document"</td> 
-  </tr> 
-  <tr> 
-   <td>Subject</td> 
-   <td>subject:"Training"</td> 
-  </tr> 
-  <tr> 
-   <td>Tags</td> 
-   <td>tags:"Location And Travel"</td> 
-  </tr> 
-  <tr> 
-   <td>Type</td> 
-   <td>type:"image\png"</td> 
-  </tr> 
-  <tr> 
-   <td>Width of image</td> 
-   <td>width:lowerbound..upperbound</td> 
-  </tr> 
-  <tr> 
-   <td>Height of image</td> 
-   <td>height:lowerbound..upperbound</td> 
-  </tr> 
-  <tr> 
-   <td>Person</td> 
-   <td>person:John</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th scope="col" style="text-align: center;"><strong>Metadata field</strong></th>
+   <th scope="col" style="text-align: center;"><strong>Facet value and usage</strong><br /> </th>
+  </tr>
+  <tr>
+   <td>Title</td>
+   <td>title:John</td>
+  </tr>
+  <tr>
+   <td>Creator</td>
+   <td>creator:John</td>
+  </tr>
+  <tr>
+   <td>Location</td>
+   <td>location:NA</td>
+  </tr>
+  <tr>
+   <td>Description</td>
+   <td>description:"Sample Image"</td>
+  </tr>
+  <tr>
+   <td>Creator tool</td>
+   <td>creatortool:"Adobe Photoshop CC 2015"</td>
+  </tr>
+  <tr>
+   <td>Copyright Owner</td>
+   <td>copyrightowner:"Adobe Systems"</td>
+  </tr>
+  <tr>
+   <td>Contributor</td>
+   <td>contributor:John</td>
+  </tr>
+  <tr>
+   <td>Usage Terms</td>
+   <td>usageterms:"CopyRights Reserved"</td>
+  </tr>
+  <tr>
+   <td>Created</td>
+   <td>created:YYYY-MM-DDTHH</td>
+  </tr>
+  <tr>
+   <td>Expires Date</td>
+   <td>expires:YYYY-MM-DDTHH</td>
+  </tr>
+  <tr>
+   <td>On time<br /> </td>
+   <td>ontime:YYYY-MM-DDTHH</td>
+  </tr>
+  <tr>
+   <td>Off time<br /> </td>
+   <td>offtime:YYYY-MM-DDTHH</td>
+  </tr>
+  <tr>
+   <td>Range of time(expires dateontime,offtime)</td>
+   <td>facet field : lowerbound..upperbound</td>
+  </tr>
+  <tr>
+   <td>Path</td>
+   <td>/content/dam/&lt;folder name&gt;</td>
+  </tr>
+  <tr>
+   <td>PDF Title</td>
+   <td>pdftitle:"Adobe Document"</td>
+  </tr>
+  <tr>
+   <td>Subject</td>
+   <td>subject:"Training"</td>
+  </tr>
+  <tr>
+   <td>Tags</td>
+   <td>tags:"Location And Travel"</td>
+  </tr>
+  <tr>
+   <td>Type</td>
+   <td>type:"image\png"</td>
+  </tr>
+  <tr>
+   <td>Width of image</td>
+   <td>width:lowerbound..upperbound</td>
+  </tr>
+  <tr>
+   <td>Height of image</td>
+   <td>height:lowerbound..upperbound</td>
+  </tr>
+  <tr>
+   <td>Person</td>
+   <td>person:John</td>
+  </tr>
+ </tbody>
 </table>
 
 The properties path, limit, size, and orderby cannot be ORed with any other property.
@@ -348,50 +348,50 @@ The asset selector uses the HTML5 Window.postMessage message to send data for th
 You can pass the following request parameters in a URL to launch the asset selector in a particular context:
 
 <table>
- <tbody> 
-  <tr> 
-   <td valign="top"><p><strong>Name</strong></p> </td> 
-   <td valign="top"><p><strong>Values</strong></p> </td> 
-   <td valign="top"><p><strong>Example</strong></p> </td> 
-   <td valign="top"><p><strong>Purpose</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>resource suffix (B)</p> </td> 
-   <td valign="top"><p>Folder path as the resource suffix in the URL:</p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html</a>/&amp;lt;folder_path&amp;gt;</p> </td> 
-   <td valign="top"><p>To launch the asset selector with a particular folder selected, for example with the folder <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">/content/dam/we-retail/en/activities</a>, selected, the URL should be of the form: <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images</a></p> </td> 
-   <td valign="top"><p>If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>mode</p> </td> 
-   <td valign="top"><p>single, multiple</p> </td> 
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?mode=multiple">https://localhost:4502/aem/assetpicker.html?mode=multiple</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mode=single">https://localhost:4502/aem/assetpicker.html?mode=single</a></p> </td> 
-   <td valign="top"><p>In multiple mode, you can select several assets simultaneously using the asset selector.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>mimetype</p> </td> 
-   <td valign="top"><p>mimetype(s) (/jcr:content/metadata/dc:format) of an asset (wildcard also supported)</p> </td> 
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=image/png">https://localhost:4502/aem/assetpicker.html?mimetype=image/png</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*png">https://localhost:4502/aem/assetpicker.html?mimetype=*png</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation">https://localhost:4502/aem/assetpicker.html?mimetype=*presentation</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png</a></p> </td> 
-   <td valign="top"><p>Use it to filter assets based on MIME type(s)</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>dialog</p> </td> 
-   <td valign="top"><p>true, false</p> </td> 
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?dialog=true">https://localhost:4502/aem/assetpicker.html?dialog=true</a></p> </td> 
-   <td valign="top"><p>Use these parameters to open the asset selector as <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/layouts/dialog/index.html" target="_blank">Granite Dialog</a>. This option is only applicable when you launch the asset selector through <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/pathfield/index.html?highlight=pathfield" target="_blank">Granite Path Field</a>, and configure it as pickerSrc URL.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>assettype (S)</p> </td> 
-   <td valign="top"><p>images, documents, multimedia, archives</p> </td> 
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images">https://localhost:4502/aem/assetpicker.html?assettype=images</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=documents">https://localhost:4502/aem/assetpicker.html?assettype=documents</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=multimedia">https://localhost:4502/aem/assetpicker.html?assettype=multimedia</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=archives">https://localhost:4502/aem/assetpicker.html?assettype=archives</a></p> </td> 
-   <td valign="top"><p>Use this option to filter asset types based on the value passed.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>root</p> </td> 
-   <td valign="top"><p>&amp;lt;folder_path&amp;gt;</p> </td> 
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities">https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities</a></p> </td> 
-   <td valign="top"><p>Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder.</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td valign="top"><p><strong>Name</strong></p> </td>
+   <td valign="top"><p><strong>Values</strong></p> </td>
+   <td valign="top"><p><strong>Example</strong></p> </td>
+   <td valign="top"><p><strong>Purpose</strong></p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p>resource suffix (B)</p> </td>
+   <td valign="top"><p>Folder path as the resource suffix in the URL:</p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html</a>/&amp;lt;folder_path&amp;gt;</p> </td>
+   <td valign="top"><p>To launch the asset selector with a particular folder selected, for example with the folder <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">/content/dam/we-retail/en/activities</a>, selected, the URL should be of the form: <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images</a></p> </td>
+   <td valign="top"><p>If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix.</p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p>mode</p> </td>
+   <td valign="top"><p>single, multiple</p> </td>
+   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?mode=multiple">https://localhost:4502/aem/assetpicker.html?mode=multiple</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mode=single">https://localhost:4502/aem/assetpicker.html?mode=single</a></p> </td>
+   <td valign="top"><p>In multiple mode, you can select several assets simultaneously using the asset selector.</p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p>mimetype</p> </td>
+   <td valign="top"><p>mimetype(s) (/jcr:content/metadata/dc:format) of an asset (wildcard also supported)</p> </td>
+   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=image/png">https://localhost:4502/aem/assetpicker.html?mimetype=image/png</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*png">https://localhost:4502/aem/assetpicker.html?mimetype=*png</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation">https://localhost:4502/aem/assetpicker.html?mimetype=*presentation</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png</a></p> </td>
+   <td valign="top"><p>Use it to filter assets based on MIME type(s)</p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p>dialog</p> </td>
+   <td valign="top"><p>true, false</p> </td>
+   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?dialog=true">https://localhost:4502/aem/assetpicker.html?dialog=true</a></p> </td>
+   <td valign="top"><p>Use these parameters to open the asset selector as <a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/layouts/dialog/index.html" target="_blank">Granite Dialog</a>. This option is only applicable when you launch the asset selector through <a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/pathfield/index.html?highlight=pathfield" target="_blank">Granite Path Field</a>, and configure it as pickerSrc URL.</p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p>assettype (S)</p> </td>
+   <td valign="top"><p>images, documents, multimedia, archives</p> </td>
+   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images">https://localhost:4502/aem/assetpicker.html?assettype=images</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=documents">https://localhost:4502/aem/assetpicker.html?assettype=documents</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=multimedia">https://localhost:4502/aem/assetpicker.html?assettype=multimedia</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=archives">https://localhost:4502/aem/assetpicker.html?assettype=archives</a></p> </td>
+   <td valign="top"><p>Use this option to filter asset types based on the value passed.</p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p>root</p> </td>
+   <td valign="top"><p>&amp;lt;folder_path&amp;gt;</p> </td>
+   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities">https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities</a></p> </td>
+   <td valign="top"><p>Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 To access the asset selector interface, go to `https://[aem-server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
@@ -422,7 +422,7 @@ Visual search or similarity search has the following limitations:
 * To search for assets that do not contain the mandatory metadata, see [mandatory metadata](#mandatorymetadata).
 * Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example *shoe12*).
 * Full text search supports operators such as -, ^, and so on. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.
-* If the search results are too many, limit the [scope of search](#scope) to zero-in on the desired assets. It works best when you have some idea of how to better look for the desired assets, for example, specific file type, specific location, specific metadata, and so on.  
+* If the search results are too many, limit the [scope of search](#scope) to zero-in on the desired assets. It works best when you have some idea of how to better look for the desired assets, for example, specific file type, specific location, specific metadata, and so on.
 
 * **Tagging**: Tags helps you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. AEM offers methods to automatically tag assets using Adobe Sensei's artificially intelligent services that keep getting better at tagging your assets with usage and training. When you search for assets, the smart tags are factored in if the feature is enabled on your account. It works alongside AEM's in-built search functionality. See [search behavior](#searchbehavior). To optimize the order in which the search results are displayed, you can [boost the search ranking](#searchrank) of a few select assets.
 
@@ -449,7 +449,7 @@ Illustrating use of asterisk wildcard in Asset search using an example
 
 **Search with question mark wildcard**: To broaden the search, use one or more '?' characters to match exact number of characters. For example, in the following illustration,
 
-* `run???` query does not match any asset.  
+* `run???` query does not match any asset.
 
 * `run????` query matches the word `running` with four characters after `run`.
 
@@ -469,7 +469,7 @@ Use of dash to search for assets not containing an excluded keyword
 
 ### Search index configurations {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [search index](../../assets/using/performance-tuning-guidelines.md#search-indexes), [oak queries and indexing](/sites/deploying/using/queries-and-indexing.md), and [best practices](/sites/deploying/using/best-practices-for-queries-and-indexing.md).
+Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [search index](../../assets/using/performance-tuning-guidelines.md#search-indexes), [oak queries and indexing](/help/sites-deploying/queries-and-indexing.md), and [best practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Sort on Name column {#sortbyname}
 
@@ -482,9 +482,9 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. In AEM CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
 
     * `costPerEntry` property of type `Double` with the value `10`.
-    
+
     * `costPerExecution` property of type `Double` with the value `2`.
-    
+
     * `refresh` property of type `Boolean` with the value `true`.
 
    This configuration allows searches from the appropriate index.
@@ -492,11 +492,11 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
 
     * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
-    
+
     * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
-    
+
     * Add `propertyIndex` property of type `Boolean` with the value of `true`.
-    
+
     * Add `useInSimilarity` property of type `Boolean` with the value `true`.
 
    Save the changes.
@@ -527,68 +527,68 @@ Predicates are used to create facets. Administrators can customize the search fa
 You can search for digital assets based on one or more of the following properties. Filters that apply on some of these properties are available by default and some other filters can be custom-created to apply on the other properties.
 
 <table>
- <tbody> 
-  <tr> 
-   <th scope="col" style="text-align: center;"><strong>Search field</strong><br /> </th> 
-   <th scope="col" style="text-align: center;"><strong>Search property values</strong><br /> </th> 
-  </tr> 
-  <tr> 
-   <td>MIME Types</td> 
-   <td>Images, Documents, Multimedia, Archives, or Other.</td> 
-  </tr> 
-  <tr> 
-   <td>Last Modified</td> 
-   <td>Hour, Day, Week, Month, or Year.</td> 
-  </tr> 
-  <tr> 
-   <td>File Size</td> 
-   <td>Small, Medium, or Large.</td> 
-  </tr> 
-  <tr> 
-   <td>Publish Status</td> 
-   <td>Published or Unpublished.</td> 
-  </tr> 
-  <tr> 
-   <td>Approved Status</td> 
-   <td>Approved or Rejected.</td> 
-  </tr> 
-  <tr> 
-   <td>Orientation</td> 
-   <td>Horizontal, Vertical, or Square.</td> 
-  </tr> 
-  <tr> 
-   <td>Style</td> 
-   <td>Color, or Black &amp; White.</td> 
-  </tr> 
-  <tr> 
-   <td>Video Height</td> 
-   <td>Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.</td> 
-  </tr> 
-  <tr> 
-   <td>Video Width</td> 
-   <td>Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.</td> 
-  </tr> 
-  <tr> 
-   <td>Video Format</td> 
-   <td>DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions.</td> 
-  </tr> 
-  <tr> 
-   <td>Video Codec</td> 
-   <td>x264. Value is stored in the metadata of video renditions only.</td> 
-  </tr> 
-  <tr> 
-   <td>Video Bitrate</td> 
-   <td>Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.</td> 
-  </tr> 
-  <tr> 
-   <td>Audio Codec</td> 
-   <td>Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only.</td> 
-  </tr> 
-  <tr> 
-   <td>Audio Bitrate</td> 
-   <td>Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th scope="col" style="text-align: center;"><strong>Search field</strong><br /> </th>
+   <th scope="col" style="text-align: center;"><strong>Search property values</strong><br /> </th>
+  </tr>
+  <tr>
+   <td>MIME Types</td>
+   <td>Images, Documents, Multimedia, Archives, or Other.</td>
+  </tr>
+  <tr>
+   <td>Last Modified</td>
+   <td>Hour, Day, Week, Month, or Year.</td>
+  </tr>
+  <tr>
+   <td>File Size</td>
+   <td>Small, Medium, or Large.</td>
+  </tr>
+  <tr>
+   <td>Publish Status</td>
+   <td>Published or Unpublished.</td>
+  </tr>
+  <tr>
+   <td>Approved Status</td>
+   <td>Approved or Rejected.</td>
+  </tr>
+  <tr>
+   <td>Orientation</td>
+   <td>Horizontal, Vertical, or Square.</td>
+  </tr>
+  <tr>
+   <td>Style</td>
+   <td>Color, or Black &amp; White.</td>
+  </tr>
+  <tr>
+   <td>Video Height</td>
+   <td>Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.</td>
+  </tr>
+  <tr>
+   <td>Video Width</td>
+   <td>Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.</td>
+  </tr>
+  <tr>
+   <td>Video Format</td>
+   <td>DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions.</td>
+  </tr>
+  <tr>
+   <td>Video Codec</td>
+   <td>x264. Value is stored in the metadata of video renditions only.</td>
+  </tr>
+  <tr>
+   <td>Video Bitrate</td>
+   <td>Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.</td>
+  </tr>
+  <tr>
+   <td>Audio Codec</td>
+   <td>Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only.</td>
+  </tr>
+  <tr>
+   <td>Audio Bitrate</td>
+   <td>Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Work with asset search results {#aftersearch}
@@ -597,7 +597,7 @@ Once you see some searched assets that match your criteria, you can do the follo
 
 * View metadata properties and other information.
 * Download one or more assets.
-* Use Desktop Actions to open these assets in the desktop app.  
+* Use Desktop Actions to open these assets in the desktop app.
 * Create smart collections.
 
 ### Sort searched results {#sort}
@@ -634,7 +634,7 @@ For the assets that are available in a single folder or a collection, it is easi
 
 A collection is an ordered set of assets that can include assets from different locations because collections contain only references to these assets. Collections are of the following two types:
 
-* A static reference list of assets, folders, and other collections.  
+* A static reference list of assets, folders, and other collections.
 * A dynamic list (smart collection) that populates assets in the collection based on a search criteria.
 
 You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](../../assets/using/managing-collections-touch-ui.md).
@@ -654,7 +654,7 @@ Another reason to get more than expected search results can be use of smarts tag
 **No search results**: If AEM and displays an empty page for a search query, the following may be reasons:
 
 * No assets exist that match your query.
-* You add a whitespace before the search query. It is a [known limitation](#limitations).  
+* You add a whitespace before the search query. It is a [known limitation](#limitations).
 
 * An unsupported metadata field contains the keyword that you search for. Not all metadata fields are considered for searches. See [scope](#scope).
 * On time and off time is configured for asset and the search was made during an asset's off time.

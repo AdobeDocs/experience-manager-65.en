@@ -67,7 +67,7 @@ Interactive video steps:
 1. **(Optional) Identifying Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identifying Quickview variables](#optional-identifying-quickview-variables).  
    *Note that this step is only required if all the following are true*:  
    • You want to add interactivity to your video by triggering to quickviews.  
-   • Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in AEM Assets](../../sites/administering/using/concepts.md).  
+   • Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).  
 
 1. **(Optional) Creating an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.  
    Creating your own Interactive Video viewer preset is not required if you intend to use the out-of-the-box Interactive Video viewer presets `Shoppable_Video_Light` or `Shoppable_Video_Dark` instead.** 
@@ -95,7 +95,7 @@ Interactive video steps:
 >This task is only required if the following are true:
 >
 >* You want to add interactivity to your video by triggering to Quickviews.
->* Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in AEM Assets](../../sites/administering/using/concepts.md).
+>* Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).
 >
 >If your implementation of AEM uses eCommerce, you can skip this task and proceed to the next task.
 
@@ -261,7 +261,7 @@ You add timeline segments to a video using the in-place visual editor on the Cre
 
 After you add timeline segments, you add thumbnail images within each segment. For each thumbnail that you add, you apply an action to it. For example, you can apply a Quickview to the thumbnail, or you can assign a hyperlink to it, or an Experience Fragment.
 
-See [Experience Fragments](../../sites/authoring/using/experience-fragments.md).
+See [Experience Fragments](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
@@ -432,7 +432,7 @@ To add interactivty to your video:
    <td>To associate the selected thumbnail image with an Experience Fragment</td> 
    <td><p>Under Action Type, tap <strong>Experience Fragment</strong>, then do the following:</p> 
     <ul> 
-     <li>If you are an AEM Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap <strong>Select </strong>in the upper-right corner of the page to return to the Actions panel on the previous page.<br /> See <a href="../../sites/authoring/using/experience-fragments.md">Experience Fragments</a>.</li> 
+     <li>If you are an AEM Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap <strong>Select </strong>in the upper-right corner of the page to return to the Actions panel on the previous page.<br /> See <a href="/help/sites-authoring/experience-fragments.md">Experience Fragments</a>.</li> 
     </ul> 
     <ul> 
      <li>Specify the width and height of the Experience Fragment as it will appear on the video.</li> 

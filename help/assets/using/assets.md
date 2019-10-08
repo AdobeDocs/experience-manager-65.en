@@ -53,9 +53,9 @@ Completely integrated into AEM, AEM Assets lets you do the following:
 
 * Add and share images, documents, audio files, and video files in a variety of file formats.
 * Manage assets by grouping them by tags, lightboxes, or stars (your favorites). Add annotations to assets.
-* Find assets by searching file names, the full text of documents, and by searching dates, document type, and tags. 
-* Add or edit metadata information for assets. Metadata is automatically versioned together with the corresponding asset. You can import or export asset metadata. 
-* Perform image editing functions such as scaling and adding image filters. Import and export multiple digital assets simultaneously using a WebDAV or CIFS folder. 
+* Find assets by searching file names, the full text of documents, and by searching dates, document type, and tags.
+* Add or edit metadata information for assets. Metadata is automatically versioned together with the corresponding asset. You can import or export asset metadata.
+* Perform image editing functions such as scaling and adding image filters. Import and export multiple digital assets simultaneously using a WebDAV or CIFS folder.
 * Use workflows and notifications to allow joint processing and downloading of any set of assets and manage access rights to assets.
 
 ### AEM Assets fully integrated in CQ WCM {#aem-assets-fully-integrated-in-cq-wcm}
@@ -70,7 +70,7 @@ Assets managed within CQ DAM can then be accessed via the content finder of WCM:
 
 >[!NOTE]
 >
->The basic GUI handling is the same as the rest of WCM - see [Overview of the GUI Console](../../sites/authoring/using/page-authoring.md) for full details.
+>The basic GUI handling is the same as the rest of WCM - see [Overview of the GUI Console](/help/sites-authoring/page-authoring.md) for full details.
 
 ### Digital Asset Management versus Image Component {#digital-asset-management-versus-image-component}
 
@@ -83,7 +83,7 @@ When determining whether to put an image into AEM Assets or use CQ's image compo
 
 An asset is a digital document, image, video, or audio (or part thereof) that can have multiple renditions and can have sub-assets (for example, layers in a photoshop file, slides in a powerpoint file, pages in a pdf, files in a ZIP).
 
-An asset is essentially a binary plus metadata plus renditions plus sub-assets. See the [DAM Performance Guide](/sites/deploying/using/assets-performance-sizing.md) for detailed information.
+An asset is essentially a binary plus metadata plus renditions plus sub-assets. See the [DAM Performance Guide](/help/sites-deploying/assets-performance-sizing.md) for detailed information.
 
 >[!CAUTION]
 >

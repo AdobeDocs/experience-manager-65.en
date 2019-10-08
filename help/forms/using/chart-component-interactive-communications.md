@@ -1,7 +1,7 @@
 ---
 title: Using charts in Interactive Communications
 seo-title: Chart component in Interactive Communications
-description: Using charts in an Interactive Communication, you can condense large amounts of information into an easy to analyze visual format  
+description: Using charts in an Interactive Communication, you can condense large amounts of information into an easy to analyze visual format
 seo-description: AEM Forms provides a chart component that you can use to create charts in your Interactive Communication. This document explains basic and agent configurations of the chart component.
 uuid: 978aa431-9a5b-4964-b37c-7bfa8c3f49b9
 content-type: reference
@@ -41,7 +41,7 @@ Perform the following steps to add and configure a chart in an Interactive Commu
    Basic properties of a line type chart in web channel
 
 1. Configure the [chart properties](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) based on the channel type.
-1. (Print channel only) In the **[!UICONTROL Agent Settings]**, specify if it is mandatory for the agent to use this chart. If i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** option is not selected, the agent can tap the eye icon for the chart in the **[!UICONTROL Content]** tab of Agent UI to show or hide the chart. 
+1. (Print channel only) In the **[!UICONTROL Agent Settings]**, specify if it is mandatory for the agent to use this chart. If i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** option is not selected, the agent can tap the eye icon for the chart in the **[!UICONTROL Content]** tab of Agent UI to show or hide the chart.
 
    ![](assets/chart_agentproperties.png)
 
@@ -54,126 +54,126 @@ Perform the following steps to add and configure a chart in an Interactive Commu
 Configure the following properties while creating charts for print and web channels:
 
 <table>
- <tbody> 
-  <tr> 
-   <td>Field</td> 
-   <td>Description</td> 
-   <td>Channel Type</td> 
-  </tr> 
-  <tr> 
-   <td>Name</td> 
-   <td>Identifier for the chart element. The name of the chart specified in this field is not visible on the chart. It is used when referring to the element from other components, scripts, and SOM expressions.</td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Chart type</td> 
-   <td>Type of chart you want to generate. The available options are Pie, Column, Donut, Bar, Line, Line and Point, Point, and Area.</td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Series &gt; Multiple Series</td> 
-   <td>Select to add multiple series for the form data model collection items plotted on X-axis and Y-axis.</td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Series &gt; Data Model Object</td> 
-   <td>Name of the form data model collection item to add multiple series to the chart.<br /> Choose a parent form data model object property for the properties plotted on X-axis and Y-axis to form a meaningful series. The data model object that you bind must be of Number, String, or Date type.</td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Show Stacked</td> 
-   <td>Select to stack the values of each series on top of each other.</td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>X-axis &gt; Title</td> 
-   <td>Title for the X-axis.</td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>X-axis &gt; Data Model Object</td> 
-   <td><p>Name of the form data model collection item to be plotted on X-axis.</p> <p>Choose two collection/array type properties of the same parent data model object that are meaningful in relation to each other to plot on the X and Y-axis of a chart. The data model object that you bind must be of Number, String, or Date type.</p> </td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Y-axis &gt; Title</td> 
-   <td>Title for the Y-axis. </td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Y-axis &gt; Data Model Object</td> 
-   <td><p>Form data model collection item to be plotted on Y-axis. In the Print channel, the data model object for the Y-axis should be of Number type.</p> <p>Choose two collection/array type properties of the same parent data model object that are meaningful in relation to each other to plot on the X and Y-axis of a chart. </p> </td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Y-axis &gt; Function</td> 
-   <td>Statistical/custom function to use for computing the values on y-axis.</td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Hide Object</td> 
-   <td>Select to hide the chart in the final output.</td> 
-   <td>Print and Web</td> 
-  </tr> 
-  <tr> 
-   <td>Title</td> 
-   <td>Title of the chart. </td> 
-   <td>Print</td> 
-  </tr> 
-  <tr> 
-   <td>Height</td> 
-   <td>Height of the chart in pixels.</td> 
-   <td>Print</td> 
-  </tr> 
-  <tr> 
-   <td>Width</td> 
-   <td>Width of the chart in pixels. You can control width of chart in web channel using the style layer or by applying a theme.</td> 
-   <td>Print</td> 
-  </tr> 
-  <tr> 
-   <td>Mandatory Page Break Before</td> 
-   <td>Select to add a mandatory page break before the chart and put the chart on the top of a new page. </td> 
-   <td>Print</td> 
-  </tr> 
-  <tr> 
-   <td>Mandatory Page Break After</td> 
-   <td>Select to add a mandatory page break after the chart and put the contents following the chart on the top of a new page. </td> 
-   <td>Print</td> 
-  </tr> 
-  <tr> 
-   <td>Indentation</td> 
-   <td>Indentation of the chart from the left of the page. </td> 
-   <td>Print</td> 
-  </tr> 
-  <tr> 
-   <td>Tooltip</td> 
-   <td><p>Format in which the tooltip appears on mouseover on a data point in the chart in the web channel. The default value is ${x}(${y}). Depending on the chart type, when you point the mouse on a point, bar, or slice in the chart, the variables ${x}and ${y} are dynamically replaced with the corresponding values on X-axis and Y-axis and displayed in the tooltip.</p> <p>To disable tool tip, leave the <span class="uicontrol">Tooltip</code> field blank. This option is not applicable for Line and Area charts. For example, see <a href="../../forms/using/chart-component-interactive-communications.md#main-pars-header-e1f6">Example 1: Chart output in print and web</a>.</p> </td> 
-   <td>Web</td> 
-  </tr> 
-  <tr> 
-   <td>Chart-specific configurations</td> 
-   <td><p>In addition to common configurations, the following chart-specific configuration are available:</p> 
-    <ul> 
-     <li><strong>Show legend: </strong>Shows a legend for the pie or donut chart when enabled.</li> 
-     <li><strong>Legend position: </strong>Specifies the position of the legend with respect to the chart. The available options are Right, Left, Top, and Bottom. It is recommended to use the right-side legend in the print channel.</li> 
-     <li><strong>Inner radius</strong>: Available for Donut charts to specify the radius (in pixels) of the inner circle in the chart.</li> 
-     <li><strong>Line color</strong>: Available for Line, Line and Point, and Area charts to specify the color for the line in the chart.</li> 
-     <li><strong>Point color</strong>: Available for Point and Line and Point charts to specify the color for the points in the chart.<br /> </li> 
-     <li><strong>Area color</strong>: Available for Area charts to specify the color for the area under the line in the chart.</li> 
-     <li><strong>Reference Point &gt; Binding Type: </strong>Available for Quadrant charts to<strong> </strong>specify the binding type for the reference point. Use static text or data model object property to define the value for the reference point.</li> 
-     <li><strong>Reference Point &gt; X-axis: </strong>Available for Quadrant charts if you select <span class="uicontrol">Static</code> from the Binding Type drop-down list to specify the X-axis value for the reference point.</li> 
-     <li><strong>Reference Point &gt; Y-axis: </strong>Available for Quadrant charts if you select <span class="uicontrol">Static</code> from the Binding Type drop-down list to specify the Y-axis value for the reference point.</li> 
-     <li><strong>Reference Point &gt; Data Model Object for Series: </strong>Available for multiple series Quadrant charts if you select <span class="uicontrol">Data Model Object</code> from the Binding Type drop-down list. Define the form data model object property to identify the series for the reference point. </li> 
-     <li><strong>Reference Point &gt; Data Model Object Value for Series: </strong>Available for multiple series Quadrant charts if you select <span class="uicontrol">Data Model Object</code> from the Binding Type drop-down list. Use the form data model object property for series and the value defined in this field to identify the series for the reference point.</li> 
-     <li><strong>Reference Point &gt; Data Model Object for Reference Point: </strong>Available for Quadrant charts if you select <span class="uicontrol">Data Model Object</code> from the Binding Type drop-down list. Define a form data model object property that is a sibling to the properties plotted on X-axis and Y-axis. In addition, for multiple series, define a data model object property that is a child entity of the data model object property defined for the series.</li> 
-     <li><strong>Reference Point &gt; Data Model Object Value for Reference Point: </strong>Available for Quadrant charts if you select <span class="uicontrol">Data Model Object</code> from the Binding Type drop-down list. Use the form data model object property for reference point and the value defined in this field to identify the reference point for the chart.<br /> <strong>Quadrant Labels &gt; Top Left:</strong> Available for Quadrant charts to specify the name for the Top Left quadrant.</li> 
-     <li><strong>Quadrant Labels &gt; Top Right:</strong> Available for Quadrant charts to specify the name for the Top Right quadrant.</li> 
-     <li><strong>Quadrant Labels &gt; Bottom Right: </strong>Available for Quadrant charts to specify the name for the Bottom Right quadrant.</li> 
-     <li><strong>Quadrant Labels &gt; Bottom Left: </strong>Available for Quadrant charts to specify the name for the Bottom Left quadrant.</li> 
-    </ul> </td> 
-   <td>Print and Web</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>Field</td>
+   <td>Description</td>
+   <td>Channel Type</td>
+  </tr>
+  <tr>
+   <td>Name</td>
+   <td>Identifier for the chart element. The name of the chart specified in this field is not visible on the chart. It is used when referring to the element from other components, scripts, and SOM expressions.</td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Chart type</td>
+   <td>Type of chart you want to generate. The available options are Pie, Column, Donut, Bar, Line, Line and Point, Point, and Area.</td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Series &gt; Multiple Series</td>
+   <td>Select to add multiple series for the form data model collection items plotted on X-axis and Y-axis.</td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Series &gt; Data Model Object</td>
+   <td>Name of the form data model collection item to add multiple series to the chart.<br /> Choose a parent form data model object property for the properties plotted on X-axis and Y-axis to form a meaningful series. The data model object that you bind must be of Number, String, or Date type.</td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Show Stacked</td>
+   <td>Select to stack the values of each series on top of each other.</td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>X-axis &gt; Title</td>
+   <td>Title for the X-axis.</td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>X-axis &gt; Data Model Object</td>
+   <td><p>Name of the form data model collection item to be plotted on X-axis.</p> <p>Choose two collection/array type properties of the same parent data model object that are meaningful in relation to each other to plot on the X and Y-axis of a chart. The data model object that you bind must be of Number, String, or Date type.</p> </td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Y-axis &gt; Title</td>
+   <td>Title for the Y-axis. </td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Y-axis &gt; Data Model Object</td>
+   <td><p>Form data model collection item to be plotted on Y-axis. In the Print channel, the data model object for the Y-axis should be of Number type.</p> <p>Choose two collection/array type properties of the same parent data model object that are meaningful in relation to each other to plot on the X and Y-axis of a chart. </p> </td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Y-axis &gt; Function</td>
+   <td>Statistical/custom function to use for computing the values on y-axis.</td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Hide Object</td>
+   <td>Select to hide the chart in the final output.</td>
+   <td>Print and Web</td>
+  </tr>
+  <tr>
+   <td>Title</td>
+   <td>Title of the chart. </td>
+   <td>Print</td>
+  </tr>
+  <tr>
+   <td>Height</td>
+   <td>Height of the chart in pixels.</td>
+   <td>Print</td>
+  </tr>
+  <tr>
+   <td>Width</td>
+   <td>Width of the chart in pixels. You can control width of chart in web channel using the style layer or by applying a theme.</td>
+   <td>Print</td>
+  </tr>
+  <tr>
+   <td>Mandatory Page Break Before</td>
+   <td>Select to add a mandatory page break before the chart and put the chart on the top of a new page. </td>
+   <td>Print</td>
+  </tr>
+  <tr>
+   <td>Mandatory Page Break After</td>
+   <td>Select to add a mandatory page break after the chart and put the contents following the chart on the top of a new page. </td>
+   <td>Print</td>
+  </tr>
+  <tr>
+   <td>Indentation</td>
+   <td>Indentation of the chart from the left of the page. </td>
+   <td>Print</td>
+  </tr>
+  <tr>
+   <td>Tooltip</td>
+   <td><p>Format in which the tooltip appears on mouseover on a data point in the chart in the web channel. The default value is ${x}(${y}). Depending on the chart type, when you point the mouse on a point, bar, or slice in the chart, the variables ${x}and ${y} are dynamically replaced with the corresponding values on X-axis and Y-axis and displayed in the tooltip.</p> <p>To disable tool tip, leave the <span class="uicontrol">Tooltip</code> field blank. This option is not applicable for Line and Area charts. For example, see <a href="../../forms/using/chart-component-interactive-communications.md#main-pars-header-e1f6">Example 1: Chart output in print and web</a>.</p> </td>
+   <td>Web</td>
+  </tr>
+  <tr>
+   <td>Chart-specific configurations</td>
+   <td><p>In addition to common configurations, the following chart-specific configuration are available:</p>
+    <ul>
+     <li><strong>Show legend: </strong>Shows a legend for the pie or donut chart when enabled.</li>
+     <li><strong>Legend position: </strong>Specifies the position of the legend with respect to the chart. The available options are Right, Left, Top, and Bottom. It is recommended to use the right-side legend in the print channel.</li>
+     <li><strong>Inner radius</strong>: Available for Donut charts to specify the radius (in pixels) of the inner circle in the chart.</li>
+     <li><strong>Line color</strong>: Available for Line, Line and Point, and Area charts to specify the color for the line in the chart.</li>
+     <li><strong>Point color</strong>: Available for Point and Line and Point charts to specify the color for the points in the chart.<br /> </li>
+     <li><strong>Area color</strong>: Available for Area charts to specify the color for the area under the line in the chart.</li>
+     <li><strong>Reference Point &gt; Binding Type: </strong>Available for Quadrant charts to<strong> </strong>specify the binding type for the reference point. Use static text or data model object property to define the value for the reference point.</li>
+     <li><strong>Reference Point &gt; X-axis: </strong>Available for Quadrant charts if you select <span class="uicontrol">Static</code> from the Binding Type drop-down list to specify the X-axis value for the reference point.</li>
+     <li><strong>Reference Point &gt; Y-axis: </strong>Available for Quadrant charts if you select <span class="uicontrol">Static</code> from the Binding Type drop-down list to specify the Y-axis value for the reference point.</li>
+     <li><strong>Reference Point &gt; Data Model Object for Series: </strong>Available for multiple series Quadrant charts if you select <span class="uicontrol">Data Model Object</code> from the Binding Type drop-down list. Define the form data model object property to identify the series for the reference point. </li>
+     <li><strong>Reference Point &gt; Data Model Object Value for Series: </strong>Available for multiple series Quadrant charts if you select <span class="uicontrol">Data Model Object</code> from the Binding Type drop-down list. Use the form data model object property for series and the value defined in this field to identify the series for the reference point.</li>
+     <li><strong>Reference Point &gt; Data Model Object for Reference Point: </strong>Available for Quadrant charts if you select <span class="uicontrol">Data Model Object</code> from the Binding Type drop-down list. Define a form data model object property that is a sibling to the properties plotted on X-axis and Y-axis. In addition, for multiple series, define a data model object property that is a child entity of the data model object property defined for the series.</li>
+     <li><strong>Reference Point &gt; Data Model Object Value for Reference Point: </strong>Available for Quadrant charts if you select <span class="uicontrol">Data Model Object</code> from the Binding Type drop-down list. Use the form data model object property for reference point and the value defined in this field to identify the reference point for the chart.<br /> <strong>Quadrant Labels &gt; Top Left:</strong> Available for Quadrant charts to specify the name for the Top Left quadrant.</li>
+     <li><strong>Quadrant Labels &gt; Top Right:</strong> Available for Quadrant charts to specify the name for the Top Right quadrant.</li>
+     <li><strong>Quadrant Labels &gt; Bottom Right: </strong>Available for Quadrant charts to specify the name for the Bottom Right quadrant.</li>
+     <li><strong>Quadrant Labels &gt; Bottom Left: </strong>Available for Quadrant charts to specify the name for the Bottom Left quadrant.</li>
+    </ul> </td>
+   <td>Print and Web</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Use functions in chart {#use-functions-in-chart}
@@ -222,20 +222,20 @@ Multiply(valueArray, category) {
 
 Once you have written a custom function, do the following to make it available for use in the chart configuration:
 
-1. Add the custom function in the client library associated with the relevant Interactive Communication. For more information, see [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md) and [Using Client-Side Libraries](/help/sites/developing/using/clientlibs.md).
+1. Add the custom function in the client library associated with the relevant Interactive Communication. For more information, see [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md) and [Using Client-Side Libraries](/help/help/sites-developing/clientlibs.md).
 
 1. To display the custom function in Function drop-down, in CRXDe Lite, create an `nt:unstructured` node in the apps folder with the following properties:
 
     * Add property `guideComponentType` with value as `fd/af/reducer`. (mandatory)
-    
-    * Add property `value` to a fully qualified name of the custom JavaScript™ function. (mandatory) and set its value to name of the custom function, such as Multiply. 
-    * Add property `jcr:description` with the value you want to display as the name of the custom function that appears in the Function drop-down. For example, **Multiply**.  
-    
+
+    * Add property `value` to a fully qualified name of the custom JavaScript™ function. (mandatory) and set its value to name of the custom function, such as Multiply.
+    * Add property `jcr:description` with the value you want to display as the name of the custom function that appears in the Function drop-down. For example, **Multiply**.
+
     * Add property `qtip` with value that will be short description of the custom function. It appears as a tooltip when hovering pointer over the function name in the **Function** drop-down list.
 
 1. Click **Save All** to save the configuration.
 
-The function is now available for use in the Chart.  
+The function is now available for use in the Chart.
 
 ## Example 1: Chart output in print and web {#chartoutputprintweb}
 
@@ -247,7 +247,7 @@ Let's understand in detail about the minimum required information in basic prope
 
 To accomplish this, specify the following properties:
 
-* **[!UICONTROL Name]** - Specify the name for the chart. 
+* **[!UICONTROL Name]** - Specify the name for the chart.
 * **[!UICONTROL Chart Type]** - Select **Column** from the drop-down list.
 * **[!UICONTROL Title]** - Specify Expense Type for X-axis and Transaction Amount for the Y-axis.
 * **[!UICONTROL Data Model Objects]** - Select the data model object properties to create data bindings for X-axis (Expense Type) and Y-axis (Transaction Amount).
@@ -260,7 +260,7 @@ Column chart in the print channel of an Interactive Communication
 
 To accomplish this, specify the following properties:
 
-* **[!UICONTROL Name]** - Specify the name for the chart. 
+* **[!UICONTROL Name]** - Specify the name for the chart.
 * **[!UICONTROL Chart Type]** - Select **[!UICONTROL Donut]** from the drop-down list.
 * **[!UICONTROL Data Model Objects]** - Select the data model object properties to create data bindings for X-axis (Expense Type) and Y-axis (Transaction Amount).
 * **[!UICONTROL Inner Radius]** - Specify the Inner Radius value as 150 to specify the radius (in pixels) of the inner circle in the chart.
@@ -282,15 +282,15 @@ Line chart without a function with two "Debit for AirBnB" transactions
 
 You can apply the sum function to add up values of multiple instances of same data property and show it only once. For example, in the following graph, the Sum function is applied on the Y-axis to add up the amount of the two Debit for AirBnB transactions (2050 and 1050) and show only one transaction (3100).
 
-Sum function can make graph more useful when you want to collate and display sum for many instances of the same data property. 
+Sum function can make graph more useful when you want to collate and display sum for many instances of the same data property.
 
-![Line chart sum](assets/line_chart_web_sum_new.png) 
+![Line chart sum](assets/line_chart_web_sum_new.png)
 
 ### Frequency function {#frequency-function}
 
-The Frequency function returns the number of values Y-axis for a given value on the other axis. With application of the Frequency function on the Y-axis (Transaction Amount), the graph displays that there have been two occurrences of Debit for AirBnB transactions and one occurrence of rest of the types of transactions. 
+The Frequency function returns the number of values Y-axis for a given value on the other axis. With application of the Frequency function on the Y-axis (Transaction Amount), the graph displays that there have been two occurrences of Debit for AirBnB transactions and one occurrence of rest of the types of transactions.
 
-![Line chart frequency](assets/line_chart_web_functions_frequency_new.png) 
+![Line chart frequency](assets/line_chart_web_functions_frequency_new.png)
 
 ## Example 3: Multi-series Quadrant chart in Web {#example-multi-series-quadrant-chart-in-web}
 

@@ -145,7 +145,7 @@ This section contains details and instructions on the post-deployment configurat
 
 1. Review setup documentation:
 
-   [https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/notification.html](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/notification.html)
+   [https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/notification.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/notification.html)
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
 1. Locate and click on the **Day CQ Mail Service **service to configure.
@@ -169,7 +169,7 @@ This section contains details on configuring SSL on the AEM instance in order to
 
 **References:**
 
-1. [https://helpx.adobe.com/ca/experience-manager/6-4/sites/administering/using/ssl-by-default.html](https://helpx.adobe.com/ca/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
+1. [https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-administering/ssl-by-default.html](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-administering/ssl-by-default.html)
 
 **Notes:**
 
@@ -314,9 +314,9 @@ This section contains details and instructions on the Adobe Analytics Cloud Conf
 
 **References:**
 
-1. [https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/adobeanalytics.html](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/adobeanalytics.html)
-1. [https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/adobeanalytics-connect.html](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/adobeanalytics-connect.html)
-1. [https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/pa-using.html](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/pa-using.html)
+1. [https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/adobeanalytics.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/adobeanalytics.html)
+1. [https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/adobeanalytics-connect.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/adobeanalytics-connect.html)
+1. [https://helpx.adobe.com/experience-manager/6-4/help/sites-authoring/pa-using.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-authoring/pa-using.html)
 1. [https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-analytics-forms-documents.html](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-analytics-forms-documents.html)
 1. [https://helpx.adobe.com/experience-manager/6-4/forms/using/view-understand-aem-forms-analytics-reports.html](https://helpx.adobe.com/experience-manager/6-4/forms/using/view-understand-aem-forms-analytics-reports.html)
 
@@ -434,7 +434,7 @@ The editable templates included in this package also come preconfigured with tem
 
 Templates included in this package also support the Style System:
 
-[https://helpx.adobe.com/ca/experience-manager/6-4/sites/authoring/using/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-4/sites/authoring/using/style-system.html)
+[https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/style-system.html)
 
 #### Template logos {#template-logos}
 
@@ -448,7 +448,7 @@ When editing the Page and Form Templates, one may choose to update brand logos b
 
 See Editing Page Content for more information:
 
-[https://helpx.adobe.com/ca/experience-manager/6-4/sites/authoring/using/editing-content.html#main-pars_title_32](https://helpx.adobe.com/ca/experience-manager/6-4/sites/authoring/using/editing-content.html#main-pars_title_32)
+[https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/editing-content.html#main-pars_title_32](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/editing-content.html#main-pars_title_32)
 
 ### Sites pages customization {#sites-pages-customization}
 
@@ -460,7 +460,7 @@ These site pages also make use of the AEM Grid package to control the layout of 
 
 Pages included in this package also support the Style System:
 
-[https://helpx.adobe.com/ca/experience-manager/6-4/sites/authoring/using/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-4/sites/authoring/using/style-system.html)
+[https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/style-system.html)
 
 You can also refer to [Templates customization style system](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) for documentation on supported styles.
 

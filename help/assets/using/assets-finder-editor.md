@@ -42,8 +42,8 @@ You customize the DAM Finder functionality and create pages that have all the fu
 Here are some use cases for creating a customized Asset Share page:
 
 * Press Center for Journalists
-* Image Search Engine for internal business users 
-* Image Database for website users 
+* Image Search Engine for internal business users
+* Image Database for website users
 * Media Tagging Interface for metadata editors
 
 ### Creating an Asset Share Page {#creating-an-asset-share-page}
@@ -72,7 +72,7 @@ To customize your Asset Share page, you use elements from the sidekick and you a
 
 To create a new asset share page via the digital asset manager:
 
-1. In the digital asset manager, in **New**, select **New Asset Share**. 
+1. In the digital asset manager, in **New**, select **New Asset Share**.
 1. In the **Title**, enter the name of the asset share page. If desired, enter a name for the URL.
 
    ![](assets/screen_shot_2012-04-19at23626pm.png)
@@ -91,44 +91,44 @@ To add actions to the Asset Share page:
 
 1. In the Asset Share page that you want to customize, click **Actions** in the sidekick.
 
-The following actions are available: 
+The following actions are available:
 
 ![](assets/assetshare2.bmp)
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Action</strong></td> 
-   <td><strong>Description </strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Delete Action</strong></td> 
-   <td>Users can delete the selected assets.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Download Action</strong></td> 
-   <td>Lets users download selected assets to their computers.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Lightbox Action</strong></td> 
-   <td>Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. The lightbox can also be used as a shopping cart for assets.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Move Action</strong></td> 
-   <td>Users can move the asset to another location</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Tags Action</strong></td> 
-   <td>Lets users add tags to selected assets</td> 
-  </tr> 
-  <tr> 
-   <td><strong>View Asset Action </strong></td> 
-   <td>Opens the asset in the Asset editor for user manipulation.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Action</strong></td>
+   <td><strong>Description </strong></td>
+  </tr>
+  <tr>
+   <td><strong>Delete Action</strong></td>
+   <td>Users can delete the selected assets.</td>
+  </tr>
+  <tr>
+   <td><strong>Download Action</strong></td>
+   <td>Lets users download selected assets to their computers.</td>
+  </tr>
+  <tr>
+   <td><strong>Lightbox Action</strong></td>
+   <td>Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. The lightbox can also be used as a shopping cart for assets.<br /> </td>
+  </tr>
+  <tr>
+   <td><strong>Move Action</strong></td>
+   <td>Users can move the asset to another location</td>
+  </tr>
+  <tr>
+   <td><strong>Tags Action</strong></td>
+   <td>Lets users add tags to selected assets</td>
+  </tr>
+  <tr>
+   <td><strong>View Asset Action </strong></td>
+   <td>Opens the asset in the Asset editor for user manipulation.</td>
+  </tr>
+ </tbody>
 </table>
 
-1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action. 
+1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
 ![](assets/chlimage_1-159.png)
 
@@ -144,7 +144,7 @@ To change how search results are viewed:
 
 1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
-The following lenses are available: 
+The following lenses are available:
 
 | **Lens** |**Description** |
 |---|---|
@@ -198,7 +198,7 @@ To add predicates:
 
 ![](assets/assetshare4.bmp)
 
-The following predicates are available: 
+The following predicates are available:
 
 | **Predicate** |**Description ** |
 |---|---|
@@ -207,7 +207,7 @@ The following predicates are available:
 | **Path Predicate** |Lets users define the path and subfolders, if desired. |
 | **Property Predicate** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values.  |
 
-For more information, see the [predicate javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+For more information, see the [predicate javadocs](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 
@@ -286,7 +286,7 @@ To add asset editor components:
 
 #### Metadata Form and Text Field - Configuring the View Metadata Component {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/sites/authoring/using/default-components.md#form) for more information on working with forms.
+The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components.md#form) for more information on working with forms.
 
 1. Create a start action by clicking **Edit** in the Start area of the form. You can enter a Box title, if desired. By default, the Box title is **Metadata**. Select the Client Validation check box if you want the java-script client code for validation generated.
 
@@ -338,7 +338,7 @@ For example, if you select a sub asset, note how the component displays the appr
 
 #### Tags {#tags}
 
-The Tags component is a component where users can assign existing tags to an asset, which helps later in organization and retrieval. You can make this component read-only, so users cannot add tags, but only view them. 
+The Tags component is a component where users can assign existing tags to an asset, which helps later in organization and retrieval. You can make this component read-only, so users cannot add tags, but only view them.
 
 ![](assets/screen_shot_2012-04-23at25031pm.png)
 
@@ -356,11 +356,11 @@ The following is a populated Tags component:
 
 #### Thumbnail {#thumbnail}
 
-The Thumbnail component is where the asset displays the selected thumbnail (for many of the formats the thumbnail is extracted automatically). In addition, the component displays the filename, and [actions that you can modify](../../assets/using/assets-finder-editor.md#adding-asset-editor-actions). 
+The Thumbnail component is where the asset displays the selected thumbnail (for many of the formats the thumbnail is extracted automatically). In addition, the component displays the filename, and [actions that you can modify](../../assets/using/assets-finder-editor.md#adding-asset-editor-actions).
 
 ![](assets/screen_shot_2012-04-23at25452pm.png)
 
-Double-click the thumbnail component to open the thumbnail dialog where you can change the alt text. By default, the thumbnail alt text defaults to **Click to download** asset. 
+Double-click the thumbnail component to open the thumbnail dialog where you can change the alt text. By default, the thumbnail alt text defaults to **Click to download** asset.
 
 ![](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -370,7 +370,7 @@ The following is an example of a populated Thumbnail component:
 
 #### Title {#title}
 
-The Title component displays the title of the asset and a description. 
+The Title component displays the title of the asset and a description.
 
 ![](assets/chlimage_1-163.png)
 
@@ -398,7 +398,7 @@ To add actions to the Asset Editor page:
 
 ![](assets/screen_shot_2012-04-23at35515pm.png)
 
-The following actions are available: 
+The following actions are available:
 
 | **Action** |**Description** |
 |---|---|
@@ -409,7 +409,7 @@ The following actions are available:
 | **References** |Click this to show on what pages the asset is being used.  |
 | **Versioning** |Lets you create and restore versions of an asset.  |
 
-1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action. 
+1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
 ![](assets/chlimage_1-165.png)
 
@@ -422,17 +422,17 @@ With AEM Assets you can make changes to several assets at once. After having sel
 
 To multi-edit assets with the Asset Editor page:
 
-1. Open the Geometrixx **Press Center** page:  
+1. Open the Geometrixx **Press Center** page:
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Select the assets:
 
-    * on Windows: `Ctrl + click` each asset.  
+    * on Windows: `Ctrl + click` each asset.
     * on Mac: `Cmd + click` each asset.
 
-   To select a range of assets: click the first asset then `Shift + click` the last asset.  
+   To select a range of assets: click the first asset then `Shift + click` the last asset.
 
-1. Click **Edit Metadata** in the **Actions** field (left part of the page).  
+1. Click **Edit Metadata** in the **Actions** field (left part of the page).
 1. The Geometrixx **Press Center Asset Editor** page opens in a new tab. The metadata of the assets are displayed as follows:
 
     * A tag, that does not apply to all the assets but only to a few ones, is displayed in italics.
@@ -447,21 +447,21 @@ To multi-edit assets with the Asset Editor page:
 
    You can:
 
-    * Click the **x** icon to remove the tag for all the assets.  
+    * Click the **x** icon to remove the tag for all the assets.
     * Click the **+** icon to add the tag to all the assets.
     * Click the **arrow** and select a tag to add a new tag to all the assets.
 
-   Click **OK** to write the changes to the form. The box beside the **Tags** field is automatically checked.  
+   Click **OK** to write the changes to the form. The box beside the **Tags** field is automatically checked.
 
-1. Edit the Description field. For example set it to:  
+1. Edit the Description field. For example set it to:
 
-   `This is a common description`  
+   `This is a common description`
 
-   When a field is edited, its value overwrites the existing values of the selected assets when the form is submitted.  
+   When a field is edited, its value overwrites the existing values of the selected assets when the form is submitted.
 
-   Note: the box beside the field is automatically checked when the field is edited.  
+   Note: the box beside the field is automatically checked when the field is edited.
 
-1. Click **Update Metadata** to submit the form and save the changes for all the assets.  
+1. Click **Update Metadata** to submit the form and save the changes for all the assets.
 
    Note: only the checked metadata are modified.
 

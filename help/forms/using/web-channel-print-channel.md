@@ -27,7 +27,7 @@ Print channel of an Interactive Communication uses XFA form template, XDP. An XD
 
 To upload the template, you need to be a member of the forms-user group. Use the following steps to upload the print channel template (XDP) to AEM Forms:
 
-1. Select **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.  
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 
 1. Tap **[!UICONTROL Create]** > **[!UICONTROL File Upload]**.
 
@@ -35,7 +35,7 @@ To upload the template, you need to be a member of the forms-user group. Use the
 
 ## Web channel {#web-channel}
 
-Template Authors and Administrators can create, edit, and enable web templates. To allow other users to author web templates, you need to give them rights. For more information, see [User, Group and Access Rights Administration](../../sites/administering/using/user-group-ac-admin.md).
+Template Authors and Administrators can create, edit, and enable web templates. To allow other users to author web templates, you need to give them rights. For more information, see [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md).
 
 ### Authoring Web Channel Template {#authoring-web-channel-template}
 
@@ -43,10 +43,10 @@ To create a web channel template, you need to first create a Template folder. On
 
 To author a web channel template Complete the following steps:
 
-1. Create a Template folder to keep your Interactive Communication web templates, if you do not already have one. For more information, see Template Folders in [Page Templates - Editable](../../sites/developing/using/page-templates-editable.md).
+1. Create a Template folder to keep your Interactive Communication web templates, if you do not already have one. For more information, see Template Folders in [Page Templates - Editable](/help/sites-developing/page-templates-editable.md).
 
     1. Tap **[!UICONTROL Tools]** ![](assets/tools.png) > **[!UICONTROL Configuration Browser]**. **[!UICONTROL]**
-    1. In the Configuration Browser page, tap **[!UICONTROL Create]**. 
+    1. In the Configuration Browser page, tap **[!UICONTROL Create]**.
     1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and tap **[!UICONTROL Create]**.
 
        The Folder is created and listed in the Configuration Browser page.
@@ -55,18 +55,18 @@ To author a web channel template Complete the following steps:
 
     1. Navigate to the appropriate template folder by selecting **[!UICONTROL Tools]** > **[!UICONTROL Templates]** &gt; [Folder].
     1. Tap **[!UICONTROL Create]**.
-    1. Select **[!UICONTROL Interactive Communication - Web Channel]**and tap **[!UICONTROL Next]**. 
+    1. Select **[!UICONTROL Interactive Communication - Web Channel]**and tap **[!UICONTROL Next]**.
     1. Enter a Template title and description and then tap **[!UICONTROL Create]**.
 
-       The template is created and a dialog appears. 
-    
+       The template is created and a dialog appears.
+
     1. Tap **[!UICONTROL Open]** to open the template you have created in the Template editor.
 
-       The Template Editor appears. 
-    
-       ![](assets/webchanneltemplate.png)    
-    
-       When creating or editing a template, there are various aspects that a Template Author can define. Creating or editing a template is similar to page authoring. For more information, see Editing Templates - Template Authors in [Creating Page Templates](../../sites/authoring/using/templates.md).
+       The Template Editor appears.
+
+       ![](assets/webchanneltemplate.png)
+
+       When creating or editing a template, there are various aspects that a Template Author can define. Creating or editing a template is similar to page authoring. For more information, see Editing Templates - Template Authors in [Creating Page Templates](/help/sites-authoring/templates.md).
 
 1. To allow usage of this template for Interactive Communication creation, enable the template.
 

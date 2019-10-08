@@ -38,7 +38,7 @@ To enable the metadata changes to be propagated to the renditions of the asset w
 
 1. Open Configuration Manager from *https://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr*.
 1. Open the **Adobe CQ DAM Rendition Maker** configuration.
-1. Select the **Propagate XMP** option, and then save the changes. 
+1. Select the **Propagate XMP** option, and then save the changes.
 
    ![](assets/chlimage_1-135.png)
 
@@ -69,7 +69,7 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 >
 >For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
->For more information about supported platforms, see [XMP metadata write-back prerequisites](../../sites/deploying/using/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
 ## Filtering XMP metadata {#filtering-xmp-metadata}
 

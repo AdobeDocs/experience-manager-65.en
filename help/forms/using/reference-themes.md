@@ -30,7 +30,7 @@ Each theme contains a unique and elegant style that you can use to create deligh
 
 Themes included in this package are responsive, and styling in these themes are defined for mobile and desktop displays. Most modern browsers on a variety of devices can render forms applied with one of these themes without any hassle.
 
-For more information on installing the package, see [How to Work With Packages](../../sites/administering/using/package-manager.md).
+For more information on installing the package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 

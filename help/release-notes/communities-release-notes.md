@@ -17,13 +17,13 @@ docset: aem65
 
 Read on for the improvements to AEM Communities since the 6.4 release. To learn about the new features in greater detail, see [AEM 6.5 Communities User Guide](https://helpx.adobe.com/experience-manager/6-4/communities/user-guide.html).
 
-To obtain the latest release, see the [Deploying Communities](https://helpx.adobe.com/in/experience-manager/6-4/communities/using/deploy-communities.html#LatestReleases) section of the documentation.
+To obtain the latest release, see the [Deploying Communities](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) section of the documentation.
 
 ## Major enhancements {#major-enhancements}
 
 ### Enhancements to community engagement {#enhancements-to-community-engagement}
 
-**@Mentions support** 
+**@Mentions support**
 AEM Communities now allows registered users to tag (mention) other registered members to elicit their attention, in User Generated Content. The tagged (mentioned) members are then notified, with deep link to the corresponding User Generated Content. Users can, however, opt to disable/enable the web and email notifications.
 
 ![At mentions support](assets/at-mentions.png)
@@ -34,14 +34,14 @@ The community administrators need to **Enable Mention **on community components 
 
 **Group messaging**
 
-Registered community members can now send direct messages in bulk to groups through a single email composition, instead of sending the same message individually to group members. To allow [group messaging](../communities/using/configure-messaging.md), enable both the instances of [Messaging Operations Service](../communities/using/messaging.md#group-messaging). 
+Registered community members can now send direct messages in bulk to groups through a single email composition, instead of sending the same message individually to group members. To allow [group messaging](/help/communities/configure-messaging.md), enable both the instances of [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
 
 ![Group message](assets/group-messaging.png)
 
 ### Enhancements to Bulk Moderation {#enhancements-to-bulk-moderation}
 
-**Custom filters in Bulk Moderation  
-** [Custom filters](../communities/using/moderation.md#custom-filters) can now be developed and added to Bulk Moderation UI.
+**Custom filters in Bulk Moderation
+** [Custom filters](/help/communities/moderation.md#custom-filters) can now be developed and added to Bulk Moderation UI.
 
 A [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) demonstrating filtering through tags is available in [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). This project can be used as a base to develop analogous custom filters.
 
@@ -69,11 +69,11 @@ Site Administrators can create a group at any level of hierarchy and become the 
 
 The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 
-**Keyboard navigation support on enablement components  
+**Keyboard navigation support on enablement components
 **Enablement components (for example Catalog and Course Playing, Assignments, File Library) in AEM Communities support keyboard navigation for improved accessibility.
 
 ### Other enhancements {#other-enhancements}
 
-* **Solr 7 support  
+* **Solr 7 support
   **AEM 6.5 Communities supports Apache Solr 7.0 version of the search platform while setting up MSRP and DSRP.
 

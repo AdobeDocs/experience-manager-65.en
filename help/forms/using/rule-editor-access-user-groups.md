@@ -19,7 +19,7 @@ docset: aem65
 
 You may have different types of users with varied skills that work with Adaptive Forms. While expert users may have the right knowledge to work with scripts and complex rules, there may be basic-level users who need to work only with the layout and basic properties of adaptive forms.
 
-AEM Forms allows you to limit rule editor access to users based on their role or function. In the Adaptive Forms Configuration Service settings, you can specify the [user groups](../../sites/administering/using/security.md) that can view and access rule editor.
+AEM Forms allows you to limit rule editor access to users based on their role or function. In the Adaptive Forms Configuration Service settings, you can specify the [user groups](/help/sites-administering/security.md) that can view and access rule editor.
 
 ## Specify user groups that can access rule editor {#specify-user-groups-that-can-access-rule-editor}
 
@@ -53,5 +53,5 @@ AEM Forms allows you to limit rule editor access to users based on their role or
 
    Components toolbar as visible to a user without rule editor access
 
-   For instructions on adding users to groups, see [User Administration and Security](../../sites/administering/using/security.md).
+   For instructions on adding users to groups, see [User Administration and Security](/help/sites-administering/security.md).
 

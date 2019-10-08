@@ -1,8 +1,8 @@
 ---
 title: Best practices for HTML5 forms
 seo-title: Best practices for HTML5 forms
-description: Tune your XFA-based HTML5 Forms for best performance. 
-seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance. 
+description: Tune your XFA-based HTML5 Forms for best performance.
+seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
 uuid: 3804effd-f1f2-4d7a-8e52-717b5c1c62cf
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -29,7 +29,7 @@ Generally, an XFA form has multiple elements. For example, table, text field, an
 
 It is easier for the browsers to render a leaner DOM. So, you can perform the following optimizations on an XFA form to reduce the number of nodes. Therefore, generate a lean DOM structure:
 
-* Use the caption property to add a label to a field. Do not use a separate Text element to add a label. It helps in shedding extra weight, leading to performance gains. It also helps in avoiding layout issues.  
+* Use the caption property to add a label to a field. Do not use a separate Text element to add a label. It helps in shedding extra weight, leading to performance gains. It also helps in avoiding layout issues.
 * Keep the number of Draw text elements on a form to a bare minimum. Draw elements are helpful in improving readability and appearance but do not have any information storing capabilities. It is advised to merge multiple Draw text elements into a single Draw text element. Leave no stone unturned to make a form leaner.
 
 ## Lite forms perform better, keep the resources compressed {#lite-forms-perform-better-keep-the-resources-compressed}
@@ -39,7 +39,7 @@ An HTML5 form can contain multiple external resources, such as image, JavaScript
 Hence, reducing the size of the external resources and using only absolutely required resources is the preferred method of improving the performance of the forms. You can perform the following optimizations on an XFA form to reduce the size of external resources of a form:
 
 * Use [compressed images](/assets/using/best-practices-for-optimizing-the-quality-of-your-images.md). It reduces the network activity and amount of memory required to render a form. Therefore, the form load time decreases substantially.
-* Use the minify option in AEM Configuration Manager (Day CQ HTML Library Manager) to compress JavaScript and CSS files. For details, see [OSGi Configuration Settings](../../sites/deploying/using/osgi-configuration-settings.md).
+* Use the minify option in AEM Configuration Manager (Day CQ HTML Library Manager) to compress JavaScript and CSS files. For details, see [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md).
 * Enable web compression. It reduces the size of the requests and responses originated from a form. For details, see [Performance tuning of AEM forms server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Keep the interest alive, show only required fields  {#keep-the-interest-alive-show-only-required-fields}
@@ -67,13 +67,13 @@ An XFA form can have a large number of sections dedicated only for Document of R
 
 Adobe Experience Manager (AEM) forms can help you transform complex transactions into simple, delightful digital experiences. However, it requires concerted effort to develop efficient and productive forms. In addition to HTML5 Forms, here are some recommended reads for general AEM best practices:
 
-* [Best practices for Deploying and maintaining AEM](/sites/deploying/using/best-practices.md)
-* [Best practices for Authoring content](/sites/authoring/using/best-practices.md)
-* [Best practices for Administering AEM](/sites/administering/using/administer-best-practices.md)
-* [Best practices for Developing solutions](/sites/developing/using/best-practices.md)
+* [Best practices for Deploying and maintaining AEM](/help/sites-deploying/best-practices.md)
+* [Best practices for Authoring content](/help/sites-authoring/best-practices.md)
+* [Best practices for Administering AEM](/help/sites-administering/administer-best-practices.md)
+* [Best practices for Developing solutions](/help/sites-developing/best-practices.md)
 * [Best practices for working with adaptive forms](/forms/using/adaptive-forms-best-practices.md)
 
 ## Quick reference card {#quick-reference-card}
 
 You can print following card (Click card to download a high-resolution version) and keep it on your desk for a quick reference:
-[ ![HTML5 Forms best practices quick reference card](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)  
+[ ![HTML5 Forms best practices quick reference card](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

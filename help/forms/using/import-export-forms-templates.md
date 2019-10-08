@@ -18,7 +18,7 @@ You can move forms and related assets, themes, data dictionaries, document fragm
 
 >[!NOTE]
 >
->* In AEM 6.4 Forms, the structure and paths of crx-repository has changed. If you import assets from a previous version to AEM 6.4 Forms and the form has some dependencies on the older structure, you have to manually export the dependencies. For details of changes in the structure and paths of the repository, see [Repository Restructuring in AEM 6.4](../../sites/deploying/using/repository-restructuring-in-aem64.md).
+>* In AEM 6.4 Forms, the structure and paths of crx-repository has changed. If you import assets from a previous version to AEM 6.4 Forms and the form has some dependencies on the older structure, you have to manually export the dependencies. For details of changes in the structure and paths of the repository, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem64.md).
 >
 
 ## Download or upload Forms &amp; Documents assets {#download-or-upload-forms-amp-documents-assets}
@@ -27,21 +27,21 @@ AEM Forms user interface allows you to export assets from an AEM instance by dow
 
 Export and import via AEM Forms user interface is supported for all assets except for Adaptive Form templates and Adaptive Form content policies. Therefore, on exporting an adaptive form from AEM Forms UI, the related adaptive form template and content policies are not automatically exported like other related assets.
 
-For these asset types, you must use AEM Package Manager to create a CRX package on the source AEM server and install the package on the destination server. For information about creating and installing packages, see [Working with packages](../../sites/administering/using/package-manager.md).
+For these asset types, you must use AEM Package Manager to create a CRX package on the source AEM server and install the package on the destination server. For information about creating and installing packages, see [Working with packages](/help/sites-administering/package-manager.md).
 
 ### Download Forms &amp; Documents assets {#download-forms-amp-documents-assets}
 
 To download Forms & Documents assets:
 
 1. Log in to the AEM Forms instance.
-1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms &gt; Forms & Documents. 
+1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms &gt; Forms & Documents.
 1. Select the forms assets and tap the **Download** icon.
 1. In the Download Asset(s), choose one of the following options, and tap **Download**.
 
-    * **Download as CRX Package:** Use the option to download and move all selected asset(s) and related dependencies from an AEM Forms instance to another. It downloads all assets and folders as crx package. Any form asset(s) including the forms authored in AEM (adaptive forms, Interactive Communications, and adaptive form fragments), form sets, form templates, PDF documents, and resources (XSDs, XFS, images) can be downloaded as package from AEM Forms UI.  
-      The advantage of downloading assets as package is that it also downloads assets that have been used by the asset selected to download. For example, If you have an adaptive form which uses a form template, XSD, and an image. When you select this adaptive form and download it as package, the downloaded package also contains the form template, XSD, and the image. All the metadata properties (including custom properties) associated with the asset are also downloaded.  
-    
-    * **Download asset(s) as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). You can edit these assets with external applications. It downloads the forms assets that have binaries, such as XSDs, XDPs, images, PDFs, and XDPs as a .zip file.  
+    * **Download as CRX Package:** Use the option to download and move all selected asset(s) and related dependencies from an AEM Forms instance to another. It downloads all assets and folders as crx package. Any form asset(s) including the forms authored in AEM (adaptive forms, Interactive Communications, and adaptive form fragments), form sets, form templates, PDF documents, and resources (XSDs, XFS, images) can be downloaded as package from AEM Forms UI.
+      The advantage of downloading assets as package is that it also downloads assets that have been used by the asset selected to download. For example, If you have an adaptive form which uses a form template, XSD, and an image. When you select this adaptive form and download it as package, the downloaded package also contains the form template, XSD, and the image. All the metadata properties (including custom properties) associated with the asset are also downloaded.
+
+    * **Download asset(s) as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). You can edit these assets with external applications. It downloads the forms assets that have binaries, such as XSDs, XDPs, images, PDFs, and XDPs as a .zip file.
       You cannot download adaptive forms, Interactive Communications, adaptive form fragments, themes, and form sets with **Download asset(s) as binary files** option. To download these assets, you should use **Download as CRX Package** option.
 
    The selected assets are downloaded as an archive (.zip file).
@@ -57,7 +57,7 @@ To upload Forms & Documents assets:
 >[!VIDEO](https://vimeo.com/)
 
 1. Log in to the AEM Forms instance.
-1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Forms & Documents. 
+1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Forms & Documents.
 1. Tap **Create **&gt;** File Upload**. An upload forms or package dialog appears.
 1. In the dialog box, browse and select the package or the archive to import. You can also select PDF document, XSDs, images, stylesheets, and XDP forms. Tap **Open**. The folder or the file name that you select must not include any special characters.
 
@@ -80,7 +80,7 @@ You can export themes in AEM Forms that you can use in other projects or instanc
 To download a theme:
 
 1. Log in to the AEM Forms instance.
-1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Themes. 
+1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Themes.
 1. Select the theme and tap **Download**. The theme is downloaded as an archive (.zip file).
 
 ### Uploading a theme {#uploading-a-theme}
@@ -91,11 +91,11 @@ To upload a theme:
 
 1. In Experience Manager, navigate to **Forms &gt; Themes**.
 1. In the Themes page, click **Create &gt; File Upload**.
-1. In the File Upload prompt, browse and select a theme package on your computer and click **Upload**.  
+1. In the File Upload prompt, browse and select a theme package on your computer and click **Upload**.
    The uploaded theme is available in the themes page.
 
 1. Log in to the AEM Forms instance.
-1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Themes. 
+1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Themes.
 1. click **Create **&gt; **File Upload**. In the File Upload prompt, browse and select a theme package on your computer and click **Upload**. The theme is uploaded.
 
 ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
@@ -105,7 +105,7 @@ To share assets, such as data dictionaries, letters, and document fragments, bet
 ### Export Document Fragments, Letters, and/or Data Dictionaries {#export-document-fragments-letters-and-or-data-dictionaries}
 
 1. In the letters, document fragments, or data dictionary pages, tap and select the assets you want to export to a single package, and then tap Queue For Download. The assets are lined-up for export.
-1. As required, repeat the above step to add letters, document fragments, and data dictionaries. 
+1. As required, repeat the above step to add letters, document fragments, and data dictionaries.
 1. Tap **Download**.
 1. Correspondence Management displays Download Asset(s) dialog with a list of assets in the export list.
 
@@ -132,7 +132,7 @@ To download all the Correspondence Management assets and related dependencies as
 
    ![](assets/publish-cmp-assets-1.png)
 
-   ( ``The Export All Correspondence Management Assets page appears and displays the information about the last time the Export process was attempted and a link to download the last successfully exported package. 
+   ( ``The Export All Correspondence Management Assets page appears and displays the information about the last time the Export process was attempted and a link to download the last successfully exported package.
 
    ![](assets/export-last-run-details.png)
 
@@ -174,7 +174,7 @@ You can use AEM package manger to export workflow applications. The procedure is
 
 1. Open AEM Forms package manager. URL of package manager is https://&lt;server&gt;:&lt;port&gt;/crx/packmgr.
 1. Click **[!UICONTROL Create Package]**. The **[!UICONTROL New Package]** dialog box appears.
-1. Specify name, version, and group for the package. Click **[!UICONTROL OK]**. 
+1. Specify name, version, and group for the package. Click **[!UICONTROL OK]**.
 1. Click **[!UICONTROL Edit]**and open the **[!UICONTROL Filters]**tab. Click **[!UICONTROL Add Filter]**. Specify the path of the workflow application. For example, /etc/fd/dashboard/startpoints/homemortgage.
 
    Click **[!UICONTROL Add rule]**.
@@ -201,7 +201,7 @@ To create a folder, complete the following steps:
 1. Tap Create &gt; Folder.
 1. Enter the following details:
 
-    * **Title:** Display name for the folder 
+    * **Title:** Display name for the folder
     * **Name:** *(Mandatory)* The node name under which you want to store the folder in the repository
 
    >[!NOTE]
@@ -212,7 +212,7 @@ To create a folder, complete the following steps:
 
    If a folder exists with the name specified, the submission fails with an error. You can view the error message by hovering over the error ![](assets/aem6forms_error_alert.png) icon that appears beside the name field.
 
-   You can tap the newly created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name. 
+   You can tap the newly created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
 
    ![](assets/editdeletedownloadafolder.png)
 
@@ -222,8 +222,8 @@ You can use an existing assets and letters to quickly create a assets and letter
 
 Complete the following steps to create copies of assets and letters:
 
-1. In the relevant Assets or Letters page, select one or more assets/letters. The UI displays the Copy icon. 
-1. Tap Copy. The UI displays the Paste icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets). 
+1. In the relevant Assets or Letters page, select one or more assets/letters. The UI displays the Copy icon.
+1. Tap Copy. The UI displays the Paste icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
 1. Tap Paste. The Paste dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
@@ -253,4 +253,4 @@ On the side panel, you can use the following to narrow down your search results:
 
 The side panel also allows you to save your search settings with names of your choice.
 
-For more information and instructions on using search, filters, saved search, and side panel, see [Search](../../sites/authoring/using/search.md).
+For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).

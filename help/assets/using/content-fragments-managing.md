@@ -19,7 +19,7 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 
 >[!NOTE]
 >
->Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](../../sites/authoring/using/content-fragments.md).
+>Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md).
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -29,7 +29,7 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 
 >[!NOTE]
 >
->See [Developing Content Fragments](../../sites/developing/using/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
+>See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
 
 ### Creating a Content Fragment {#creating-a-content-fragment}
 
@@ -41,8 +41,8 @@ The method of creating a content fragment is (basically) the same for both simpl
 
     * This can be a:
 
-        * [Template](../../sites/developing/using/content-fragment-templates.md) - for example **Simple Fragment**
-        
+        * [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment**
+
         * [Model](../../assets/using/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Airport** model
 
     * All available templates and models are displayed.
@@ -55,17 +55,17 @@ The method of creating a content fragment is (basically) the same for both simpl
 
     * **Basic**
 
-        * **Title** 
-          The fragment title.  
-          Mandatory.  
-        
+        * **Title**
+          The fragment title.
+          Mandatory.
+
         * **Description**
         * **Tags**
 
     * **Advanced**
 
-        * **Name** 
-          The name; will be used to form the URL.  
+        * **Name**
+          The name; will be used to form the URL.
           Mandatory; will be automatically derived from the title, but can be updated.
 
 1. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
@@ -75,7 +75,7 @@ The method of creating a content fragment is (basically) the same for both simpl
 In the **Assets** console a range of actions are available for your content fragments, either:
 
 * From the toolbar; after selection of your fragment all appropriate actions are available.
-* As [quick actions](../../sites/authoring/using/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
+* As [quick actions](/help/sites-authoring/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
 
 ![](assets/cfm-6420-17.png)
 
@@ -83,7 +83,7 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 * **Download**
 
-    * Save the fragment as a ZIP file; you can define whether to include Elements, Variations, Metadata. ** 
+    * Save the fragment as a ZIP file; you can define whether to include Elements, Variations, Metadata. **
       **
 
 * **Create**
@@ -99,7 +99,7 @@ Select the fragment to reveal the toolbar with applicable actions:
 * **Manage Tags**
 * **To Collection**
 
-    * Add the fragment to a collection.  
+    * Add the fragment to a collection.
     * This can also be done when [associating a collection with the fragment](../../assets/using/content-fragments-assoc-content.md#adding-associated-content).
 
 * **Copy**/**Paste**
@@ -119,7 +119,7 @@ To open your fragment for editing:
 
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](../../sites/developing/using/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
+>To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
 
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
@@ -141,7 +141,7 @@ To open your fragment for editing:
 1. Navigate through the three modes using the icons in the side panel:
 
     * Variations: [Editing the content](#editing-the-content-of-your-fragment) and [Managing your Variations](#creating-and-managing-variations-within-your-fragment)
-    
+
     * [Annotations](../../assets/using/content-fragments-variations.md#annotating-a-content-fragment)
     * [Associated Content](#associating-content-with-your-fragment)
     * [Metadata](#viewingandeditingthemetadataofyourfragment)
@@ -168,7 +168,7 @@ The editor has two options:
 
   >[!CAUTION]
   >
-  >To edit a content fragment you need [the appropriate permissions](../../sites/developing/using/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
+  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
 
   >[!NOTE]
   >
@@ -230,12 +230,12 @@ In addition to the standard options, [Timeline](../../assets/using/managing-asse
 * View information about versions, comments, and annotations
 * Actions for Versions
 
-    * ** [Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)  
-    
-    * ** [Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)  
-    
-    * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)  
-    
+    * ** [Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)
+
+    * ** [Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)
+
+    * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)
+
     * **Save as Version** (select an existing fragment, then the up arrow at the bottom of Timeline)
 
 * Actions for Annotations
@@ -257,7 +257,7 @@ In addition to the standard options, [Timeline](../../assets/using/managing-asse
 
 For example:
 
-![](assets/cfm-6420-19-2019.png) 
+![](assets/cfm-6420-19-2019.png)
 
 ## Comparing Fragment Versions {#comparing-fragment-versions}
 
@@ -265,7 +265,7 @@ The **Compare to Current** action is available from the [Timeline](https://helpx
 
 This will open:
 
-* the **Current** (latest) version (left)  
+* the **Current** (latest) version (left)
 
 * the selected version **v&lt;*x.y*&gt;** (right)
 
@@ -274,7 +274,7 @@ They will be shown side-by-side, where:
 * Any differences are highlighted
 
     * Deleted text - red
-    * Inserted text - green  
+    * Inserted text - green
     * Replaced text - blue
 
 * The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
@@ -285,13 +285,13 @@ They will be shown side-by-side, where:
 >
 >You cannot edit the fragment content when comparing fragments.
 
-![](assets/cfm-6420-20.png) 
+![](assets/cfm-6420-20.png)
 
 ## Reverting to a Version  {#reverting-to-a-version}
 
 You can revert to a specific version of your fragment:
 
-* Directly from the [Timeline](../../assets/using/content-fragments-managing.md#timeline-for-content-fragments).  
+* Directly from the [Timeline](../../assets/using/content-fragments-managing.md#timeline-for-content-fragments).
   Select the required version, then the **Revert to this Version** action.
 
 * While [comparing a version to the current version](../../assets/using/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
@@ -307,7 +307,7 @@ You can revert to a specific version of your fragment:
 Content Fragments must be published for use in the publish enviroment. They can be published:
 
 * After creation; from the **Assets** console.
-* When you [publish a page that uses the fragment](../../sites/authoring/using/content-fragments.md#publishing); the fragment will be listed in the page references.
+* When you [publish a page that uses the fragment](/help/sites-authoring/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 >[!CAUTION]
 >
