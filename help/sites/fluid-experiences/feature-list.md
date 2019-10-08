@@ -28,34 +28,34 @@ The following tables define the features of AEM Fluid Experiences and link to th
 <table>
  <tbody>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html">Content repository</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.html">Content repository</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html">Asset types</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/assets-formats.html">Asset types</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/image-presets.html">Image renditions</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/image-presets.html">Image renditions</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/metadata.html">Metadata and tag management</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/metadata.html">Metadata and tag management</a><br /> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html">Search</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.html">Search</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-collections-touch-ui.html">Collections</a> and <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-light-box.html">lightbox</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-collections-touch-ui.html">Collections</a> and <a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/touch-ui-light-box.html">lightbox</a><br /> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/processing-profiles.html">Profiles</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/processing-profiles.html">Profiles</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html">Version controls</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.html">Version controls</a><br /> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/duplicate-detection.html">Duplicate detection</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/duplicate-detection.html">Duplicate detection</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/enhanced-smart-tags.html ">Smart Tags</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/enhanced-smart-tags.html ">Smart Tags</a><br /> </td>
   </tr>
  </tbody>
 </table>
@@ -65,10 +65,10 @@ The following tables define the features of AEM Fluid Experiences and link to th
 <table>
  <tbody>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html">HTTP API</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/mac-api-assets.html">HTTP API</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments.html">Structured content models</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/content-fragments.html">Structured content models</a></td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html">Content services</a><br /> </td>
@@ -86,7 +86,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html">Core components</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/dynamic-media.html">Dynamic media</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/dynamic-media.html">Dynamic media</a></td>
   </tr>
  </tbody>
 </table>
@@ -99,7 +99,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/user-group-ac-admin.html">User management</a></td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html">Multi-lingual asset management</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/multilingual-assets.html">Multi-lingual asset management</a><br /> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/i18n.html">Internationalization</a></td>
@@ -136,7 +136,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 <table>
  <tbody>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/asset-reports.html">Asset reporting</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/asset-reports.html">Asset reporting</a><br /> </td>
   </tr>
   <tr>
    <td>Enhanced Insights powered by Adobe Analytics</td>

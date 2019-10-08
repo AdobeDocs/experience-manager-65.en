@@ -38,7 +38,7 @@ An HTML5 form can contain multiple external resources, such as image, JavaScript
 
 Hence, reducing the size of the external resources and using only absolutely required resources is the preferred method of improving the performance of the forms. You can perform the following optimizations on an XFA form to reduce the size of external resources of a form:
 
-* Use [compressed images](/assets/using/best-practices-for-optimizing-the-quality-of-your-images.md). It reduces the network activity and amount of memory required to render a form. Therefore, the form load time decreases substantially.
+* Use [compressed images](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). It reduces the network activity and amount of memory required to render a form. Therefore, the form load time decreases substantially.
 * Use the minify option in AEM Configuration Manager (Day CQ HTML Library Manager) to compress JavaScript and CSS files. For details, see [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md).
 * Enable web compression. It reduces the size of the requests and responses originated from a form. For details, see [Performance tuning of AEM forms server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 

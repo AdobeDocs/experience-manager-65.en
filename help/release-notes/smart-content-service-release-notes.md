@@ -29,7 +29,7 @@ The Smart Content Service includes the following key improvements:
 * Algorithm optimizations to further improve model precision, recall values
 * Support for resetting model training for all tags at tenant level
 * Support for Enhanced Smart Tags namespaces to avoid conflicts
-* New model replacement policy to avoid any degradation due to retraining 
+* New model replacement policy to avoid any degradation due to retraining
 * Tenant-wise monitoring for service usage
 * Fixes for issues around clustering and connection, which enhance the robustness of service
 
@@ -80,7 +80,7 @@ The Smart Content Service is available for following locales:
 ## Links {#links}
 
 * [Adobe Experience Manager Product Page on adobe.com](https://www.adobe.com/in/marketing-cloud/experience-manager.html)
-* [Enhanced Smart Tags Documentation](/assets/using/enhanced-smart-tags.md)
+* [Enhanced Smart Tags Documentation](/help/assets/enhanced-smart-tags.md)
 
 ## Product Access and Support (Restricted Sites) {#product-access-and-support-restricted-sites}
 

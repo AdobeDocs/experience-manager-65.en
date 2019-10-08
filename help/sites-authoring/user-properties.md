@@ -65,7 +65,7 @@ Each user can set certain properties for himself or herself.
 
         * Pages will be opened in the current window.
 
-* **Show desktop actions for Assets  
+* **Show desktop actions for Assets
   **
 
   This option requires AEM desktop app to use.
@@ -77,7 +77,7 @@ Each user can set certain properties for himself or herself.
     * Click the color block to open the swatch selector to select a color.
     * Alternatively, enter the hex code for the desire color in the field.
 
-* **Relative Date Presentation  
+* **Relative Date Presentation
   **
 
   To improve readability, AEM will render dates within the last seven days as relative dates (e.g. Three days ago) and older dates as exact dates (e.g. 20 March 2017).
@@ -85,14 +85,14 @@ Each user can set certain properties for himself or herself.
   This option defines how dates in the system are displayed. The following options are available:
 
     * **Always show exact date**: The exact date is always displayed (never a relative date).
-    * **1 Day**: The relative date is shown for dates within one day, otherwise an exact date is shown.  
-    
-    * **7 Days (default)**: The relative date is shown for dates within seven days, otherwise an exact date is shown.  
-    
-    * **1 Month**: The relative date is shown for dates within one month, otherwise an exact date is shown.  
-    
-    * **1 Year**: The relative date is shown for dates within one year, otherwise an exact date is shown.  
-    
+    * **1 Day**: The relative date is shown for dates within one day, otherwise an exact date is shown.
+
+    * **7 Days (default)**: The relative date is shown for dates within seven days, otherwise an exact date is shown.
+
+    * **1 Month**: The relative date is shown for dates within one month, otherwise an exact date is shown.
+
+    * **1 Year**: The relative date is shown for dates within one year, otherwise an exact date is shown.
+
     * **Always show relative date**: Exact dates are never shown and only relative dates are shown.
 
 * **Enable Shortcuts**
@@ -104,17 +104,17 @@ Each user can set certain properties for himself or herself.
 
   This option enables keyboard shortcuts. By default they are enabled, but can be disabled for example if a user has certain accessibility requirements.
 
-* **Use Classic Authoring Experience  
+* **Use Classic Authoring Experience
   **
 
   This option enables [classic UI](/sites/classic-ui-authoring/user-guide.md)-based page authoring. By default the standard UI is used.
 
-* **Enable Assets Home Page  
+* **Enable Assets Home Page
   **
 
   This option will only be available if your system administrator has enabled Assets Home Page experience for the entire organization.
 
 * **Stock Configuration**
 
-  This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](../../../assets/using/aem-assets-adobe-stock.md).
+  This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).
 

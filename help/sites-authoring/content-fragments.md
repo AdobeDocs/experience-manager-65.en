@@ -15,7 +15,7 @@ docset: aem65
 
 # Page Authoring with Content Fragments{#page-authoring-with-content-fragments}
 
-Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](../../../assets/using/content-fragments.md).
+Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments.md).
 
 They allow you to create channel-neutral content, together with (possibly channel-specific) variations. You can then use these fragments, and their variations, when authoring your content pages.
 
@@ -26,13 +26,13 @@ Together with the updated JSON exporter, structured content fragments can also b
 >**Content Fragments** and ** [Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
 >
 >* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
->* **Experience Fragments** are fully laid out content; a fragment of a web page.  
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](../../../assets/using/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
 
 The content fragments enable:
 
@@ -62,14 +62,14 @@ The content fragments enable:
 
 ## Adding a Content Fragment to Your Page {#adding-a-content-fragment-to-your-page}
 
-1. Open your page for editing.  
+1. Open your page for editing.
 
-1. Add the **Content Fragment** component; from either the **Components** browser or **Insert New Component**.  
+1. Add the **Content Fragment** component; from either the **Components** browser or **Insert New Component**.
 
 1. You can either:
 
     * Open the **Assets** browser and filter for **Content Fragments** (the default is Images). Then drag the required fragment onto the component instance.
-    
+
     * Select the content fragment component, then **Configure** from the toolbar. In the dialog you can open the selection dialog to browse and select the required **Content Fragment**.
 
    >[!NOTE]
@@ -84,11 +84,11 @@ The content fragments enable:
    >
    >For more information about further editing functionality see also:
    >
-   >    
-   >    
+   >
+   >
    >    * [Responsive Layout](/help/sites-authoring/responsive-layout.md)
    >    * [Editing Page Content](/help/sites-authoring/editing-content.md)
-   >    
+   >
    >
 
 ### Selecting the Element or Variation {#selecting-the-element-or-variation}
@@ -103,8 +103,8 @@ In the appropriate configuration dialog you can select the available parameters,
 
 * **Display Mode**:
 
-    * **Single Text Element** 
-    
+    * **Single Text Element**
+
     * **Multiple Element**
 
 * **Element**
@@ -116,7 +116,7 @@ In the appropriate configuration dialog you can select the available parameters,
   >
   >The elements available depend on the template used.
 
-* 
+*
   **Variation**
 
     * The default **Master** will always be available.
@@ -133,7 +133,7 @@ In the appropriate configuration dialog you can select the available parameters,
 
 ### Quick Connection to Fragment Editor {#quick-connection-to-fragment-editor}
 
-You can open the fragment source for editing (the asset) using the **Edit** icon on the component toolbar. This will allow you to [edit and manage the content fragment](../../../assets/using/content-fragments.md).
+You can open the fragment source for editing (the asset) using the **Edit** icon on the component toolbar. This will allow you to [edit and manage the content fragment](/help/assets/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -143,7 +143,7 @@ You can open the fragment source for editing (the asset) using the **Edit** icon
 
 When a specific content fragment is added to the page, there is a **Drag components here** placeholder between each HTML paragraph (and at the top/bottom) of the fragment.
 
-This allows you to add extra content [in-between (i.e. in-between content)](../../../assets/using/content-fragments.md#inbetweencontent) the fragment content (at any of the available points), without having to change the root fragment.
+This allows you to add extra content [in-between (i.e. in-between content)](/help/assets/content-fragments.md#inbetweencontent) the fragment content (at any of the available points), without having to change the root fragment.
 
 For in-between content you can:
 
@@ -159,7 +159,7 @@ For in-between content you can:
 
 >[!NOTE]
 >
->You can also [insert visual assets (images) to the fragment itself](../../../assets/using/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>You can also [insert visual assets (images) to the fragment itself](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
 >Visual assets inserted into the fragment itself are attached to the preceding paragraph in the fragment. This means that you cannot position in-between content between a visual asset and the preceding paragraph.
 
@@ -167,20 +167,20 @@ For in-between content you can:
 >
 >After you have added in-between content to a content fragment on your page, then changing the structure of the underlying content fragment (i.e. in the content fragment editor) could lead to erroneous/unexpected results.
 >
->When this occurs the in-between content is kept as is: 
+>When this occurs the in-between content is kept as is:
 >
->* In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.  
->  This can make it appear as if the relative positioning has changed, as in-between paragraphs have no contextual relationship to the (fragment) paragraphs they are positioned next to. 
+>* In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.
+>  This can make it appear as if the relative positioning has changed, as in-between paragraphs have no contextual relationship to the (fragment) paragraphs they are positioned next to.
 >* Unless the two paragraph structures conflict; in such a case, the in-between content is not displayed (although it is still present internally).
 >
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](../../../assets/using/content-fragments-assoc-content.md) with the [content fragment](../../../assets/using/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
+If you have [associated content](/help/assets/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
 
 >[!NOTE]
 >
->There are various methods of adding [visual assets (e.g. images)](../../../assets/using/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>There are various methods of adding [visual assets (e.g. images)](/help/assets/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 >[!NOTE]
 >
@@ -190,11 +190,11 @@ Once you have added a fragment with associated content to your page a new tab (*
 
 From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component will be created):
 
-![](assets/cfm-6420-03.png) 
+![](assets/cfm-6420-03.png)
 
 ### Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 
-If [assets (e.g. images) have been inserted into the fragment itself](/assets/using/content-fragments-authoring.md#insertingassetsintoyourfragment), then the options for editing these assets in the page editor is limited.
+If [assets (e.g. images) have been inserted into the fragment itself](/help/assets/content-fragments-authoring.md#insertingassetsintoyourfragment), then the options for editing these assets in the page editor is limited.
 
 For example, for an image you can
 
@@ -209,6 +209,6 @@ Other changes, such as move, copy, delete must be made in the fragment editor.
 
 Fragments need to be published so they can used used on your published web pages:
 
-* A fragment can be published after [creating the fragment in the Assets console](../../../assets/using/content-fragments.md#publishingandreferencingafragment).
+* A fragment can be published after [creating the fragment in the Assets console](/help/assets/content-fragments.md#publishingandreferencingafragment).
 * If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
 

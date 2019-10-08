@@ -367,7 +367,7 @@ This means that when an IP address needs to be specified you can select (as requ
 
 ### Requirements for AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media is disabled by default. See here to [enable Dynamic Media](../../../assets/using/config-dynamic.md#enabling-dynamic-media).
+AEM Dynamic Media is disabled by default. See here to [enable Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 With Dynamic Media enabled, the following additional technical requirements apply.
 

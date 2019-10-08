@@ -160,7 +160,7 @@ The table below includes an additional column named "Configuration Type" to expl
    <td><code>/libs/settings/dam/indesign</code></td>
    <td>tenant-aware</td>
    <td>Legacy content structures are honored with a higher priority than new, OOTB ones.</td>
-   <td><p>Project level customizations need to be cut and pasted under the equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</p> <p>When running customized Asset Ingestion workflow, references to the old location in /etc would still exist in the Media Extraction Process Configuration. Along with moving the scripts out of /etc to the equivalent /apps and /conf paths, customized Media Extraction process arguments need to be changed from absolute to relative paths, to accommodate for the changes.</p> <p>For more info, see <a href="https://helpx.adobe.com/experience-manager/6-2/assets/using/indesign.html">this page</a>.</p> <p> </p> </td>
+   <td><p>Project level customizations need to be cut and pasted under the equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</p> <p>When running customized Asset Ingestion workflow, references to the old location in /etc would still exist in the Media Extraction Process Configuration. Along with moving the scripts out of /etc to the equivalent /apps and /conf paths, customized Media Extraction process arguments need to be changed from absolute to relative paths, to accommodate for the changes.</p> <p>For more info, see <a href="https://helpx.adobe.com/experience-manager/6-2/help/assets/indesign.html">this page</a>.</p> <p> </p> </td>
   </tr>
   <tr>
    <td>AEM Assets</td>

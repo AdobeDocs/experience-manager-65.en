@@ -30,7 +30,7 @@ As a user, you can do the following:
 
 See the following additional topics:
 
-* [Managing Projects  
+* [Managing Projects
   ](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Working with Tasks](/help/sites-authoring/task-content.md)
 * [Working with Project Workflows](/help/sites-authoring/projects-with-workflows.md)
@@ -73,11 +73,11 @@ In the **Assets** tile, you can gather all assets that you use for a particular 
 
 You upload assets directly in the tile. In addition you can create Image Sets, Spin Sets, or Mixed Media Sets if you have the Dynamic Media add-on.
 
-![](assets/chlimage_1-71.png) 
+![](assets/chlimage_1-71.png)
 
 ### Asset Collections {#asset-collections}
 
-Similar to assets, you can add [asset collections](../../../assets/using/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.
+Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.
 
 ![](assets/chlimage_1-72.png)
 
@@ -103,7 +103,7 @@ The Links tile lets you associate external links with your project.
 
 You can name the link with an easy-to-recognize name as well as change the thumbnail.
 
-![](assets/chlimage_1-76.png) 
+![](assets/chlimage_1-76.png)
 
 ### Project Info {#project-info}
 
@@ -113,17 +113,17 @@ The Project Information tile provides general information on the project includi
 
 Team members can be assigned and deleted from this tile (or have their roles changed) as well as the Team tile.
 
-![](assets/chlimage_1-78.png) 
+![](assets/chlimage_1-78.png)
 
 ### Translation Job {#translation-job}
 
-The Translation Job tile is where you start a translation and also where you see the status of your translations. To set up your translation, see [Creating Translation Projects](/assets/using/translation-projects.md).
+The Translation Job tile is where you start a translation and also where you see the status of your translations. To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).
 
 ![](assets/chlimage_1-79.png)
 
 Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. The translation job list also displays entries for asset metadata and tags. These entries indicate that the metadata and tags for the assets are also translated.
 
-![](assets/chlimage_1-80.png)  
+![](assets/chlimage_1-80.png)
 
 ### Team {#team}
 
@@ -131,9 +131,9 @@ In this tile, you can specify the members of the project team. When editing, you
 
 ![](assets/chlimage_1-81.png)
 
-You can add and delete team members from the team. In addition, you can edit the [user role](#userroles) assigned to the team member. 
+You can add and delete team members from the team. In addition, you can edit the [user role](#userroles) assigned to the team member.
 
-![](assets/chlimage_1-82.png) 
+![](assets/chlimage_1-82.png)
 
 ### Landing Pages {#landing-pages}
 
@@ -165,13 +165,13 @@ These are described in [Working with Project Workflows.](/help/sites-authoring/p
 
 The Launches tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-authoring/projects-with-workflows.md)
 
-![](assets/chlimage_1-86.png) 
+![](assets/chlimage_1-86.png)
 
 ### Tasks {#tasks}
 
 Tasks let you monitor the status of any project-related tasks, including workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
 
-![](assets/chlimage_1-87.png) 
+![](assets/chlimage_1-87.png)
 
 ## Project Templates {#project-templates}
 
@@ -194,45 +194,45 @@ The different user roles are set in a Project template and are used for two prim
 All projects support the following default roles to let you administer security and control permissions:
 
 <table>
- <tbody> 
-  <tr> 
-   <td valign="top" width="160"><p><strong>Role</strong></p> </td> 
-   <td valign="top" width="160"><p><strong>Description</strong></p> </td> 
-   <td valign="top" width="160"><p><strong>Permissions</strong></p> </td> 
-   <td valign="top" width="160"><p><strong>Group Membership</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="160"><p>Observer</p> </td> 
-   <td valign="top" width="160"><p>A user in this role can view project details, including the project status.</p> </td> 
-   <td valign="top" width="160"><p>Read-only permissions on a project</p> </td> 
-   <td valign="top" width="160"><p>workflow-users group</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="160"><p>Editor</p> </td> 
-   <td valign="top" width="160"><p>A user in this role can upload and edit the contents of a project.</p> <p> </p> </td> 
-   <td valign="top" width="160"> 
-    <ul> 
-     <li>Read and Write access on a project, associated metadata, and related assets.</li> 
-     <li>Privileges to upload a shot list, photo shoot, and review and approve assets</li> 
-     <li>Write permission on /etc/commerce</li> 
-     <li>Have modify permision on a specific project</li> 
-    </ul> </td> 
-   <td valign="top" width="160"><p>workflow-users group</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="160"><p>Owner</p> </td> 
-   <td valign="top" width="160"><p>A user in this role can initiate a project. An owner can create a project, intiate work in a project and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.</p> </td> 
-   <td valign="top" width="160"> 
-    <ul> 
-     <li>Write permission on /etc/commerce</li> 
-    </ul> </td> 
-   <td valign="top" width="160"> 
-    <ul> 
-     <li>DAM-users group (to be able to create a project)</li> 
-     <li>project-administrators group (to be able to move assets)</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td valign="top" width="160"><p><strong>Role</strong></p> </td>
+   <td valign="top" width="160"><p><strong>Description</strong></p> </td>
+   <td valign="top" width="160"><p><strong>Permissions</strong></p> </td>
+   <td valign="top" width="160"><p><strong>Group Membership</strong></p> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="160"><p>Observer</p> </td>
+   <td valign="top" width="160"><p>A user in this role can view project details, including the project status.</p> </td>
+   <td valign="top" width="160"><p>Read-only permissions on a project</p> </td>
+   <td valign="top" width="160"><p>workflow-users group</p> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="160"><p>Editor</p> </td>
+   <td valign="top" width="160"><p>A user in this role can upload and edit the contents of a project.</p> <p> </p> </td>
+   <td valign="top" width="160">
+    <ul>
+     <li>Read and Write access on a project, associated metadata, and related assets.</li>
+     <li>Privileges to upload a shot list, photo shoot, and review and approve assets</li>
+     <li>Write permission on /etc/commerce</li>
+     <li>Have modify permision on a specific project</li>
+    </ul> </td>
+   <td valign="top" width="160"><p>workflow-users group</p> </td>
+  </tr>
+  <tr>
+   <td valign="top" width="160"><p>Owner</p> </td>
+   <td valign="top" width="160"><p>A user in this role can initiate a project. An owner can create a project, intiate work in a project and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.</p> </td>
+   <td valign="top" width="160">
+    <ul>
+     <li>Write permission on /etc/commerce</li>
+    </ul> </td>
+   <td valign="top" width="160">
+    <ul>
+     <li>DAM-users group (to be able to create a project)</li>
+     <li>project-administrators group (to be able to move assets)</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 For creative projects, additional roles - for example, photographers - are also provided. You can use these roles to derive custom roles for a specific project.

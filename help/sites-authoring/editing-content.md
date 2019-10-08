@@ -213,7 +213,7 @@ To create a component by dragging one of the above asset types:
 >
 >On a mobile device, the asset browser will fill the entire screen. Once you start dragging an asset, the browser will close to show the page again so you can place the asset.
 
-If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](../../../assets/using/managing-assets-touch-ui.md) directly from the browser by clicking the edit icon next to the asset's name.
+If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/managing-assets-touch-ui.md) directly from the browser by clicking the edit icon next to the asset's name.
 
 ![](assets/screen_shot_2018-03-22at112735.png)
 
