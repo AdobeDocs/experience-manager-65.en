@@ -164,7 +164,7 @@ If the above criteria are not expected to be met during the first eighteen month
 
 It is not recommended to deploy MongoMK for publish instances. The publish tier of the deployment is almost always deployed as a farm of fully independent publish instances running TarMK, which are kept in sync by replicating content from the author instances. This "shared nothing" architecture, proper to the publish instances, allows the deployment of the publish tier to scale horizontally in a linear fashion. The farm topology also provides the benefit of applying any update or upgrade to publish instances on a rolling basis, such that any change to the publish tier will not require any downtime.
 
-This does not apply to AEM Communities using MongoMK clusters on the publish tier whenever there's more than one publisher. If choosing JSRP (see [Community Content Storage](../../../communities/using/working-with-srp.md)), then a MongoMK cluster would be appropriate, as would any publish side cluster regardless of the MK chosen, such as MongoDB or RDB.
+This does not apply to AEM Communities using MongoMK clusters on the publish tier whenever there's more than one publisher. If choosing JSRP (see [Community Content Storage](/help/communities/working-with-srp.md)), then a MongoMK cluster would be appropriate, as would any publish side cluster regardless of the MK chosen, such as MongoDB or RDB.
 
 ### Prerequisites and Recommendations when deploying AEM with MongoMK {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
@@ -190,9 +190,9 @@ A set of prerequisites and recommendations is available if you are considering a
 
 ### Considerations for AEM Communities {#considerations-for-aem-communities}
 
-For sites which plan to deploy [AEM Communities](../../../communities/using/overview.md), it is recommended to [choose a deployment](../../../communities/using/working-with-srp.md#characteristicsofstorageoptions) optimized for handling UGC posted by community members from the publish environment.
+For sites which plan to deploy [AEM Communities](/help/communities/overview.md), it is recommended to [choose a deployment](/help/communities/working-with-srp.md#characteristicsofstorageoptions) optimized for handling UGC posted by community members from the publish environment.
 
-By using a [common store](../../../communities/using/working-with-srp.md), UGC does not need to be replicated between author and other publish instances in order to obtain a consistent view of the UGC.
+By using a [common store](/help/communities/working-with-srp.md), UGC does not need to be replicated between author and other publish instances in order to obtain a consistent view of the UGC.
 
 Below are a set of decisional matrices that can assist you in choosing the best type of persistence for your deployment:
 

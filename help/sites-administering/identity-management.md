@@ -18,7 +18,7 @@ docset: aem65
 Individual visitors to your website can only be identified when you provide the ability for them to log in. There are various reasons why you may want to provide a login capability:
 
 * [AEM Communities
-  ](../../../communities/using/overview.md)Site visitors are required to sign in to post content to the community.
+  ](/help/communities/overview.md)Site visitors are required to sign in to post content to the community.
 * [Closed User Groups](..//help/sites-administering/cug.md)
   You may need to limit access to your website (or sections of it) to specific visitors.
 
@@ -28,7 +28,7 @@ Individual visitors to your website can only be identified when you provide the 
 Log in (and out) functionality is provided by an [account with a **Profile**](#profiles-and-user-accounts), which holds additional information about the registered visitor (user). The actual processes for registration and authorization may differ:
 
 * Self-registration from the website
-  A [Community Site](../../../communities/using/sites-console.md) may be configured to allow visitors to self-register or sign-in with their Facebook or Twitter accounts.
+  A [Community Site](/help/communities/sites-console.md) may be configured to allow visitors to self-register or sign-in with their Facebook or Twitter accounts.
 
 * Request for registration from the website
   For a closed user group you might allow visitors to request registration, but enforce authorization by means of a workflow.

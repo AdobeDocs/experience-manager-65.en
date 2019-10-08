@@ -23,8 +23,8 @@ AEM components are used to hold, format, and render the content made available o
     * When constructing a [Commerce](/help/sites-administering//ecommerce.md) site the components can, for example, collect and render information from the catalog.
       See [Developing eCommerce](/help/sites-developing/ecommerce.md) for more information.
 
-    * When constructing a [Communities](../../../communities/using/author-communities.md) site the components can provide information to and collect information from your visitors.
-      See [Developing Communities](/communities/using/communities.md) for more information.
+    * When constructing a [Communities](/help/communities/author-communities.md) site the components can provide information to and collect information from your visitors.
+      See [Developing Communities](/help/communities/communities.md) for more information.
 
 * On the publish instance the components render your content, presenting it as you require to your website visitors.
 

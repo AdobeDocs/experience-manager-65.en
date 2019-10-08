@@ -43,7 +43,7 @@ Minimum requirements for running Adobe Experience Manager:
 >* [AEM Forms add-on package](../../../forms/using/installing-configuring-aem-forms-osgi.md) requires 15 GB of temporary space.
 >
 
-For further information, see the [Hardware Sizing Guidelines](../../../managing/using/hardware-sizing-guidelines.md).
+For further information, see the [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md).
 
 ### Support Levels {#support-levels}
 
@@ -157,7 +157,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 
 >[!NOTE]
 >
->See [Deploying Communities](../../../communities/using/deploy-communities.md) for additional information regarding the AEM Communities capability.
+>See [Deploying Communities](/help/communities/deploy-communities.md) for additional information regarding the AEM Communities capability.
 
 >[!NOTE]
 >

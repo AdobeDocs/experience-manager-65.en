@@ -26,7 +26,7 @@ These interact to enable you to make content available on your website - so that
 
 The author environment provides the mechanisms for creating, updating and reviewing this content before actually publishing it:
 
-* An author creates and reviews the content (this can be of several types; for example, pages, assets, publications, etc)  
+* An author creates and reviews the content (this can be of several types; for example, pages, assets, publications, etc)
 * which will, at some point, be published to your website.
 
 ![](assets/chlimage_1-132.png)
@@ -35,7 +35,7 @@ On the author environment the functionality of AEM is made available through two
 
 >[!NOTE]
 >
->AEM itself is used to author the AEM documentation. 
+>AEM itself is used to author the AEM documentation.
 >
 >Together with the Dispatcher it is also used for publishing.
 
@@ -50,12 +50,12 @@ The author works in what is known as the **author environment**. This provides a
 Depending on how your instance and your personal access rights are configured you can perform many tasks on your content, including (amongst others):
 
 * generate new content, or edit existing content, on a page
-* use predefined templates to create new content pages  
+* use predefined templates to create new content pages
 * create, edit and manage your assets and collections
-* create, edit and manage your publications  
+* create, edit and manage your publications
 * develop your campaigns and the related resources
-* develop and manage community sites  
-* move, copy or delete content pages, assets, etc  
+* develop and manage community sites
+* move, copy or delete content pages, assets, etc
 * publish (or unpublish) pages, assets, etc
 
 Additionally, there are administrative tasks that help you manage your content:
@@ -73,19 +73,19 @@ When ready, the AEM site's content is published to the **publish environment**. 
 
 Usually, the publish environment is located inside the demilitarized zone; in other words, available to the internet, but no longer under the full protection of the internal network.
 
-When the AEM site is a [community site](../../../communities/using/overview.md), or includes [Communities components](../../../communities/using/author-communities.md), signed-in site visitors (members) may interact with Communities features. For example, they may post to a forum, post a comment, or follow other members. Members may be granted permission to perform activites normally limited to the author environment, such as create new pages (community groups), blog articles, and moderate other members' posts.
+When the AEM site is a [community site](/help/communities/overview.md), or includes [Communities components](/help/communities/author-communities.md), signed-in site visitors (members) may interact with Communities features. For example, they may post to a forum, post a comment, or follow other members. Members may be granted permission to perform activites normally limited to the author environment, such as create new pages (community groups), blog articles, and moderate other members' posts.
 
 >[!NOTE]
 >
 >Unfortunately there is sometimes an overlap in the terminology used. This can happen with:
 >
->* **Publish / Unpublish** 
->  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).  
+>* **Publish / Unpublish**
+>  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).
 >
->* **Activate / Deactivate** 
->  These terms are synonymous with publish/unpublish.  
+>* **Activate / Deactivate**
+>  These terms are synonymous with publish/unpublish.
 >
->* **Replicate / Replication** 
+>* **Replicate / Replication**
 >  These are the technical terms used to indicate the movement of data (e.g. page content, files, code, user comments) from one environment to another; i.e. when publishing, or reverse-replicating user comments.
 >
 

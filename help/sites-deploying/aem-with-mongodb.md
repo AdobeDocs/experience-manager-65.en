@@ -34,7 +34,7 @@ If the criteria are not met, then a TarMK active/standby deployment is recommend
 
 >[!NOTE]
 >
->Additional information on the sizing of author instances and the definition of concurrent users can be found in the [Hardware Sizing Guidelines](../../../managing/using/hardware-sizing-guidelines.md#authors-working-in-parallel).
+>Additional information on the sizing of author instances and the definition of concurrent users can be found in the [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel).
 
 ### Minimal MongoDB Deployment for AEM {#minimal-mongodb-deployment-for-aem}
 
@@ -663,7 +663,7 @@ CSP allows for fine tuning of policies. However, in a complex application CSP he
 
 ### Sizing {#sizing}
 
-For more information on sizing, see the [Hardware Sizing Guidelines](../../../managing/using/hardware-sizing-guidelines.md).
+For more information on sizing, see the [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md).
 
 ### MongoDB Performance Optimization {#mongodb-performance-optimization}
 

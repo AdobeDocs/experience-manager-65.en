@@ -156,7 +156,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 * [Fluid Experiences for headless use cases](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
 * [AEM Content Service: What, Why, and How?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Using Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [Developing mobile app](https://helpx.adobe.com/uk/experience-manager/6-4/mobile/using/developing-content-services.html)
+* [Developing mobile app](https://helpx.adobe.com/uk/experience-manager/6-4/help/mobile/developing-content-services.html)
 * [FAQ for Third Party Access](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
 * [Fluid Experiences Everywhere](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
 * [Using Sling APIs](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)

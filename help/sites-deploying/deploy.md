@@ -49,10 +49,10 @@ Once you have familiarized yourself with these basics, you will find in more adv
 * [Web Console](/help/sites-deploying/web-console.md)
 * [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
 * [Best Practices](/help/sites-deploying/best-practices.md)
-* [Deploying Communities](../../../communities/using/deploy-communities.md)
+* [Deploying Communities](/help/communities/deploy-communities.md)
 * [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
 * [Performance Guidelines](/help/sites-deploying/DO-NOT-DELETE-performance-guidelines-pdf.md)
-* [Getting Started with AEM Mobile](/mobile/using/getting-started-aem-mobile.md)
+* [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Maintenance Release Vehicle Definitions](/help/sites-deploying/maintenance-release-vehicle-definitions.md)
 * [What is AEM Screens?](/help/sites-deploying/aem-screens-introduction.md)
 
@@ -292,7 +292,7 @@ Once logged in, you have access to AEM. For further information, depending on th
 * [Authoring](/sites/authoring/user-guide.md)
 * [Administering](/sites/administering/user-guide.md)
 * [Developing](/sites/developing/user-guide.md)
-* [Managing](../../../managing/using/manage-reference.md)
+* [Managing](/help/managing/manage-reference.md)
 
 ## Advanced Deployment {#advanced-deployment}
 
@@ -311,10 +311,10 @@ The above section should give you a good understanding of the basics of AEM inst
 * [Web Console](/help/sites-deploying/web-console.md)
 * [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
 * [Best Practices](/help/sites-deploying/best-practices.md)
-* [Deploying Communities](../../../communities/using/deploy-communities.md)
+* [Deploying Communities](/help/communities/deploy-communities.md)
 * [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
 * [Performance Guidelines](/help/sites-deploying/DO-NOT-DELETE-performance-guidelines-pdf.md)
-* [Getting Started with AEM Mobile](/mobile/using/getting-started-aem-mobile.md)
+* [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Maintenance Release Vehicle Definitions](/help/sites-deploying/maintenance-release-vehicle-definitions.md)
 * [What is AEM Screens?](/help/sites-deploying/aem-screens-introduction.md)
 

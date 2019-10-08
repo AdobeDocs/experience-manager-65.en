@@ -54,7 +54,7 @@ Reverse replication uses an agent in the publish environment which references th
 
 In other cases, such as for Communities features (for example, forums, blogs, comments, and reviews), the amount of user generated content (UGC) being entered in the publish environment is difficult to efficiently synchronize across AEM instances using replicaiton.
 
-AEM [Communities](../../../communities/using/overview.md) never uses replication for UGC. Instead, the deployment for Communities requires a common store for UGC (see [Community Content Storage](../../../communities/using/working-with-srp.md)).
+AEM [Communities](/help/communities/overview.md) never uses replication for UGC. Instead, the deployment for Communities requires a common store for UGC (see [Community Content Storage](/help/communities/working-with-srp.md)).
 
 ### Replication - Out of the Box {#replication-out-of-the-box}
 
@@ -384,7 +384,7 @@ As the publish environment is usually in the DMZ, to get content back to the aut
 
 >[!NOTE]
 >
->For AEM [Communities](../../../communities/using/overview.md), replication is not used for user generated content on a publish instance. See [Community Content Storage](../../../communities/using/working-with-srp.md).
+>For AEM [Communities](/help/communities/overview.md), replication is not used for user generated content on a publish instance. See [Community Content Storage](/help/communities/working-with-srp.md).
 
 To do this you need:
 

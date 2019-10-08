@@ -21,7 +21,7 @@ If you have been using AEM with classic UI you will need to take action to migra
 
 >[!NOTE]
 >
->Such a migration project may have significant impact on your instance. See [Managing Projects - Best Practices](../../../managing/using/best-practices.md) for recommended guidelines.
+>Such a migration project may have significant impact on your instance. See [Managing Projects - Best Practices](/help/managing/best-practices.md) for recommended guidelines.
 
 ## The Basics {#the-basics}
 

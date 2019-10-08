@@ -92,7 +92,7 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Communities</td>
-   <td>This console allows you to create and manage <a href="../../../communities/using/sites-console.md">community sites</a> for <a href="../../../communities/using/overview.md#engagement-community">engagement</a> and <a href="../../../communities/using/overview.md#enablement-community">enablement</a>.</td>
+   <td>This console allows you to create and manage <a href="/help/communities/sites-console.md">community sites</a> for <a href="/help/communities/overview.md#engagement-community">engagement</a> and <a href="/help/communities/overview.md#enablement-community">enablement</a>.</td>
   </tr>
   <tr>
    <td>Commerce</td>

@@ -152,7 +152,7 @@ An example of the latter would be:
 public class ComponentWhichHasAEMInterfaceInjected implements TitleTrimmer {
     @Reference
     private PageManagerFactory pageManagerFactory;
-  
+
     /**
      * Get the first length characters of the title of the page containing the provided Resource.
      */
@@ -173,7 +173,7 @@ To unit test either of these methods, a developer would use a mocking framework 
 ```java
 @RunWith(JMockit.class)
 public class ClassWhichHasAEMInterfacePassedInTest {
- 
+
     @Tested
     private ClassWhichHasAEMInterfacePassedIn instance;
 
@@ -212,7 +212,7 @@ public class ComponentWhichHasAEMInterfaceInjectedTest {
 
     @Mocked
     private ResourceResolver resourceResolver;
- 
+
     @Test
     public void test_that_long_string_is_trimmed() {
         new Expectations() {{
@@ -236,7 +236,7 @@ This use case involves calling into a static or instance method of an class in t
 
 ```java
 public class ClassWhichUsesAStaticMethodFromAPI {
-     
+
     /**
      * Get a map of asset titles to asset objects.
      *
@@ -261,7 +261,7 @@ public class ClassWhichUsesAStaticMethodFromAPI {
 
 ```java
 public class ClassWhichUsesAnInstanceMethodFromAPI {
-     
+
     /**
      * Count the number of paragraphs in a parsys.
      *
@@ -289,7 +289,7 @@ public class ClassWhichUsesAStaticMethodFromAPITest {
 
     @Mocked
     private Resource resource;
- 
+
     @Test
     public void test_that_empty_iterator_produces_empty_map() {
         new Expectations() {
@@ -315,7 +315,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 
     @Tested
     private ClassWhichUsesAnInstanceMethodFromAPI instance;
- 
+
     @Mocked
     private Resource parsys;
 
@@ -671,7 +671,7 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 <profiles>
 
     <!-- ... -->
-    
+
     <profile>
         <id>integrationServer</id>
         <properties>
@@ -688,4 +688,4 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 
 When licensed for the AEM Communities capability, an additional API jar is necessary.
 
-For details, see [Using Maven for Communities](/communities/using/maven.md)
+For details, see [Using Maven for Communities](/help/communities/maven.md)

@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Embedded Sequences{#embedded-sequences}
+# Embedded Sequences {#embedded-sequences}
 
 Using ***Embedded Sequences***, for channels, allows the user to add components in the parent channel and also to re-use the content from a different channel and embed it into the parent channel.
 
