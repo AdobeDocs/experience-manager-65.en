@@ -30,7 +30,7 @@ Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media c
 1. In AEM, open the page where you want to add the Dynamic Media component.
 1. In the left pane, tap the **Components **icon, then filter for Dynamic Media.
 
-   If no Dynamic Media components are available, you need to enable the Dynamic Media components. See [Editing Page Templates](../../sites/authoring/using/templates.md#editing-templates-template-authors) for more information. 
+   If no Dynamic Media components are available, you need to enable the Dynamic Media components. See [Editing Page Templates](/help/sites-authoring/templates.md#editing-templates-template-authors) for more information. 
 
    ![](assets/6_5_360video_wcmcomponent.png)
 
@@ -81,7 +81,7 @@ The Dynamic Media components that are available include the following:
 
 >[!NOTE]
 >
->These components are not available by default and need to be made available by way of the template editor before using. [After they are made available i](../../sites/authoring/using/templates.md#editing-templates-template-authors)n the template editor, you can add the components to your page as you would any other AEM component.
+>These components are not available by default and need to be made available by way of the template editor before using. [After they are made available i](/help/sites-authoring/templates.md#editing-templates-template-authors)n the template editor, you can add the components to your page as you would any other AEM component.
 
 ![](assets/6_5_dynamicmediawcmcomponents.png) 
 
@@ -250,7 +250,7 @@ You can edit the following **Add To Cart** settings by clicking **Edit** in the 
 Panoramic Media component is for those assets that are spherical panoramic images. Such images provide a 360° viewing experience of a room, property, location, or landscape. For an image to qualify as a spherical panorama, it must have either one OR both of the following:
 
 * An aspect ratio of 2:1.
-* Tagged with the keywords “equirectangular” or (“spherical” + “panorama”) or (“spherical” + “panoramic”). See [Using Tags](../../sites/authoring/using/tags.md).
+* Tagged with the keywords “equirectangular” or (“spherical” + “panorama”) or (“spherical” + “panoramic”). See [Using Tags](/help/sites-authoring/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.
 

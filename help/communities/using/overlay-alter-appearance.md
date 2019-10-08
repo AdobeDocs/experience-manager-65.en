@@ -59,7 +59,7 @@ Push the overlaid comments component to the publish instance using the Replicati
 
 >[!NOTE]
 >
->A more robust form of replication would be to create a package in Package Manager and [activate](../../sites/administering/using/package-manager.md#replicating-packages) it. A package can be exported and archived.
+>A more robust form of replication would be to create a package in Package Manager and [activate](/help/sites-administering/package-manager.md#replicating-packages) it. A package can be exported and archived.
 
 From the global navigation, select **Tools, Deployment, Replication** and then **Activate Tree**.
 

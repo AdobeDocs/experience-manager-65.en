@@ -188,5 +188,5 @@ Perform the following steps to show and hide templates:
 
 * When you modify properties of the form in template editor, do not use the BindReference property.
 * If you want to add a breakpoint, create it when you author an adaptive form template.   
-  For more information on breakpoints, see [Responsive Layout](/sites/authoring/using/responsive-layout.md).
+  For more information on breakpoints, see [Responsive Layout](/help/sites-authoring/responsive-layout.md).
 

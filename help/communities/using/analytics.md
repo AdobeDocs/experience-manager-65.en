@@ -631,6 +631,6 @@ Adobe Analytics provides APIs that allow you to access, export, and delete user 
 ## Resources {#resources}
 
 * Adobe Marketing Cloud: [Analytics Help and Reference](https://marketing.adobe.com/resources/help/en_US/reference/)
-* AEM: [Integrating with Adobe Analytics](../../sites/administering/using/adobeanalytics.md)
-* AEM: [Analytics with External Providers](../../sites/administering/using/external-providers.md)
+* AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
+* AEM: [Analytics with External Providers](/help/sites-administering/external-providers.md)
 

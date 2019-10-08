@@ -61,7 +61,7 @@ To create a new scaffold go to the **Tools** console, then **Default Page Scaffo
 
 *Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template* and *Target Path*, as described above.*
 
-*Next, you have to define the structure of the page that this scaffold will create. To do this go into * [design mode](../../../sites/authoring/using/page-authoring.md#sidekick)* on the scaffold page. A link will appear allowing you to edit the scaffold in the** dialog editor**.*
+*Next, you have to define the structure of the page that this scaffold will create. To do this go into * [design mode](/help/sites-authoring/page-authoring.md#sidekick)* on the scaffold page. A link will appear allowing you to edit the scaffold in the** dialog editor**.*
 
 ![](assets/cq5_dialog_editor.png)
 
@@ -149,7 +149,7 @@ These show that the component cannot be edited - until inheritance is cancelled.
 
 >[!NOTE]
 >
->This is comparable to [inherited components when editing page content](../../../sites/authoring/using/editing-content.md#inheritedcomponentsclassicui).
+>This is comparable to [inherited components when editing page content](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
 
 Clicking on either the lock symbol or the image icon allows you to break inheritance:
 

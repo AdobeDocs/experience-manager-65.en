@@ -70,7 +70,7 @@ To subscribe to notifications:
 
    >[!NOTE]
    >
-   >A few settings need to be configured in order to be notified by email. It is also possible to customize the email template or to add an email template for a new language. Please refer to [Configuring Email Notification](/sites/administering/using/notification.md#configuringemailnotification) to configure email notifications in AEM.
+   >A few settings need to be configured in order to be notified by email. It is also possible to customize the email template or to add an email template for a new language. Please refer to [Configuring Email Notification](/help/sites-administering/notification.md#configuringemailnotification) to configure email notifications in AEM.
 
 1. Select the page actions for which to be notified:
 

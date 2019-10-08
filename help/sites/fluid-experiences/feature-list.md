@@ -74,7 +74,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
    <td><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html">Content services</a><br /> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html">Experience fragments</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/experience-fragments.html">Experience fragments</a></td> 
   </tr>
   <tr>
    <td>HTTP API for structured content (read)<br /> </td> 
@@ -96,7 +96,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 <table>
  <tbody>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html">User management</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/user-group-ac-admin.html">User management</a></td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html">Multi-lingual asset management</a><br /> </td> 
@@ -105,25 +105,25 @@ The following tables define the features of AEM Fluid Experiences and link to th
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/i18n.html">Internationalization</a></td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html">Content translation</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/translation.html">Content translation</a></td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/monitoring-and-maintaining.html">Monitoring</a></td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/backup-and-restore.html">Backup</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/backup-and-restore.html">Backup</a></td> 
   </tr>
   <tr>
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html">Cloud manager</a><br /> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/managing-product-information.html">PIM integration</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/managing-product-information.html">PIM integration</a></td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html">Projects and tasks</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/projects.html">Projects and tasks</a><br /> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/workflows-starting.html">Workflows</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/workflows-starting.html">Workflows</a></td> 
   </tr>
   <tr>
    <td>Connectivity (cloud services)</td> 

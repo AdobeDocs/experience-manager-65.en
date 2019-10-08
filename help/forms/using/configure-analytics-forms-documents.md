@@ -105,7 +105,7 @@ Perform the following steps to create a report suite.
 
    >[!NOTE]
    >
-   >An event number and prop number used to configure AEM Forms analytics must be different from event number and prop number used in [AEM analytics](../../sites/administering/using/adobeanalytics.md) configuration.
+   >An event number and prop number used to configure AEM Forms analytics must be different from event number and prop number used in [AEM analytics](/help/sites-administering/adobeanalytics.md) configuration.
 
 1. Log out of the Adobe Marketing Cloud account.
 

@@ -28,7 +28,7 @@ For adaptive forms authors, reference fragments are provided in the AEM Forms pa
 * Terms & Conditions
 * Terms & Conditions with Scribble
 
-When you install the package, a Reference Fragments folder containing reference fragments is created under Forms & Documents. For installing a package, see [How to Work With Packages](../../sites/administering/using/package-manager.md).
+When you install the package, a Reference Fragments folder containing reference fragments is created under Forms & Documents. For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
 
 ![All fragments listed](assets/ootb-frags.png)
 

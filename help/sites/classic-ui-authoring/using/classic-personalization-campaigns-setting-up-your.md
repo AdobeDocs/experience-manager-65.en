@@ -45,7 +45,7 @@ Then depending on the type of experience(s) you are creating, you will need to [
 
 >[!NOTE]
 >
->See [Segmentation](../../../sites/administering/using/campaign-segmentation.md) for detailed instructions on defining your segments.
+>See [Segmentation](/help/sites-administering//campaign-segmentation.md) for detailed instructions on defining your segments.
 
 ## Creating a New Brand {#creating-a-new-brand}
 
@@ -90,9 +90,9 @@ Configure campaign properties that control the behavior:
 * **Priority:** The priority of this campaign relative to other campaigns. When multiple campaigns are simultaneously On, the campaign that has the highest priority controls the visitor experience. 
 * **On and Off Time:** These properties control the period of time when the campaign controls the visitor experience. The On Time property controls the time when the campaign begins to control the experience. The Off Time property controls when the campaigns stops controlling the experience.
 * **Image:** The image that represents the campaign in AEM.
-* **Cloud Services:** The Cloud Service configurations with which the campaign is integrated. (See [Integrating with Adobe Marketing Cloud](/sites/administering/using/marketing-cloud.md).)
+* **Cloud Services:** The Cloud Service configurations with which the campaign is integrated. (See [Integrating with Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
-* **Adobe Target:** Properties that configure campaigns that are integrated with Adobe Target. (See [Integrating with Adobe Target](/sites/administering/using/target.md).)
+* **Adobe Target:** Properties that configure campaigns that are integrated with Adobe Target. (See [Integrating with Adobe Target](/help/sites-administering/target.md).)
 
 1. From **Campaigns**, select your brand. In the right pane, select your campaign and cick **Properties**.
 
@@ -134,7 +134,7 @@ Now that you have created the basic skeleton for your experience you need to con
 
 * [Adobe Target Offer](/sites/classic-ui-authoring/using/classic-personalization-campaigns.md#testtargetoffers):
 
-    * [Integrate with Adobe Target](/sites/administering/using/target.md)
+    * [Integrate with Adobe Target](/help/sites-administering/target.md)
 
 ### Adding a New Touchpoint {#adding-a-new-touchpoint}
 
@@ -153,7 +153,7 @@ If you have existing experiences you can add a touchpoint directly from the Cale
 >[!NOTE]
 >
 >Adobe is not planning to further enhance this capability (Managing Leads).  
->Recommendation is to [leverage Adobe Campaign and the integration to AEM](/sites/administering/using/campaign.md).
+>Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM, you can organize and add leads either by entering them manually or importing a comma-separated list, for example, a mailing list. Additional ways to generate leads are from newsletter sign-ups or community sign-ups (if configured, those can trigger a workflow that populates leads).
 
@@ -307,7 +307,7 @@ To delete existing leads in the MCM, select the check box next to the lead and c
 >[!NOTE]
 >
 >Adobe is not planning to further enhance this capability (managing lists).  
->Recommendation is to [leverage Adobe Campaign and the integration to AEM](/sites/administering/using/campaign.md).
+>Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 Lists let you organize your leads into groups. With lists, you can target your marketing campaigns to a select group of people, for example, you can send a targeted newsletter to a list. Lists are visible in the MCM, either in the Dashboard or by clicking **Lists**. Both provide you with the name of the list and the number of members.
 

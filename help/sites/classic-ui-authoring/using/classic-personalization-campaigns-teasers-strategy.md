@@ -38,10 +38,10 @@ When adding a teaser paragraph to a page you need to define the **Strategy**.
 This is for the case that several teasers are available for selection as their assigned segments all resolve successfully. The **Strategy** then specifies an extra criteria used to select the teaser shown:
 
 * **Clickstream Score**, is based on the tags and related tag hits held within the visitor's client context (show how often a visitor has clicked on pages containing the respective tag). The hit rates for tags defined on the teaser page are compared.
-* **Random**, for "random" selection; uses the random factor generated for a page, this can be seen with the [client context](../../../sites/administering/using/client-context.md).
+* **Random**, for "random" selection; uses the random factor generated for a page, this can be seen with the [client context](/help/sites-administering//client-context.md).
 * **First** in the list of resolved segments. The order is that of the teasers within the campaign container page.
 
-The [Boost Factor](../../../sites/administering/using/campaign-segmentation.md#boost-factor) of the segment also has an impact on the selection. This is a weighting factor added to a segment definition to increase/decrease the relative likelihood of it being selected.
+The [Boost Factor](/help/sites-administering//campaign-segmentation.md#boost-factor) of the segment also has an impact on the selection. This is a weighting factor added to a segment definition to increase/decrease the relative likelihood of it being selected.
 
 The process and interrelationships of the various selection criteria are best illustrated with an example (a method that can also be used to ensure that your teasers will reach the required audience).
 

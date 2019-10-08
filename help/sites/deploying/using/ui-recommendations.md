@@ -101,7 +101,7 @@ See the Knowledge Base article, [Touch UI Authoring FAQ](https://helpx.adobe.com
 
 ### Selecting Your UI {#selecting-your-ui}
 
-See [Selecting Your UI](../../../sites/authoring/using/select-ui.md) for information about configuring your system as required.
+See [Selecting Your UI](/help/sites-authoring/select-ui.md) for information about configuring your system as required.
 
 ### Touch-Enabled UI Status {#touch-enabled-ui-status}
 
@@ -113,7 +113,7 @@ A complete overview see the [Touch UI Feature Status](../../../release-notes/tou
 
 For background information on basic handling:
 
-* [Authoring Pages](../../../sites/authoring/using/page-authoring.md).
+* [Authoring Pages](/help/sites-authoring/page-authoring.md).
 
 For detailed development information:
 

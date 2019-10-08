@@ -108,7 +108,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360° viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p> 
     <ul> 
      <li>An aspect ratio of 2:1.</li> 
-     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="../../sites/authoring/using/tags.md">Using Tags</a>.</li> 
+     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-authoring/tags.md">Using Tags</a>.</li> 
     </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td> 
   </tr> 
   <tr> 

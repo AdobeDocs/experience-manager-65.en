@@ -679,7 +679,7 @@ In order work around this, make sure you run the installation with a single memb
 
 ### Page Name Length {#page-name-length}
 
-If AEM is running on a MongoMK persistence manager deployment, [page names are limited to 150 characters.](../../../sites/authoring/using/managing-pages.md)
+If AEM is running on a MongoMK persistence manager deployment, [page names are limited to 150 characters.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >

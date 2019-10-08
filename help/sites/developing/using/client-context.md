@@ -29,14 +29,14 @@ Client Context consists mainly of the following aspects:
 
 To create a standalone session store and add it to Client Context, or create a session store that is tied to a Context Store component. AEM installs several Context Store components that you can use right away. You can use these components as a basis for your components.
 
-For information about opening Client Context, configuring the information that it displays, and simulating the user experience, see [Client Context](../../../sites/administering/using/client-context.md).
+For information about opening Client Context, configuring the information that it displays, and simulating the user experience, see [Client Context](/help/sites-administering//client-context.md).
 
 ## Session Stores {#session-stores}
 
 The Client Context includes various session stores that contain user data. Store data comes from the following sources:
 
 * The client web browser.  
-* The server (see [JSONP Store](../../../sites/administering/using/client-context.md#main-pars-variable-8) for storing information from 3rd-party sources)
+* The server (see [JSONP Store](/help/sites-administering//client-context.md#main-pars-variable-8) for storing information from 3rd-party sources)
 
 The Client Context framework provides a [javascript API](/sites/developing/using/ccjsapi.md) that you can use to interact with session stores to read and write user data, and listen and react to store events. You can also create session stores for user data that you use for content targeting or other purposes.
 
@@ -75,7 +75,7 @@ Context store components can include the following items:
 * Edit dialogs for configuring component instances.
 * Javascript that initializes the session store.
 
-For a description of the installed Context Store Components that you can add to Context Store, see [Available Client Context Components](../../../sites/administering/using/client-context.md#available-client-context-components).
+For a description of the installed Context Store Components that you can add to Context Store, see [Available Client Context Components](/help/sites-administering//client-context.md#available-client-context-components).
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ For a description of the installed Context Store Components that you can add to 
 
 ### Targeted Content Delivery {#targeted-content-delivery}
 
-Profile information is also used for delivering [targeted content](../../../sites/authoring/using/content-targeting-touch.md).
+Profile information is also used for delivering [targeted content](/help/sites-authoring/content-targeting-touch.md).
 
 ![](assets/clientcontext_targetedcontentdelivery.png) ![](assets/clientcontext_targetedcontentdeliverydetail.png) 
 

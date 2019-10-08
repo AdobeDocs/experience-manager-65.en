@@ -27,7 +27,7 @@ You can view AEM assets published in Scene7 in various viewers:
 
 You can publish digital assets directly from AEM to Scene7 and you can publish digital assets from Scene7 to AEM.  
 
-This document describes how to publish digital assets from AEM to Scene7 and vice versa. Viewers are also described in detail. For information on configuring AEM for Scene7, see [Integrating Scene7 with AEM](/sites/administering/using/scene7.md).  
+This document describes how to publish digital assets from AEM to Scene7 and vice versa. Viewers are also described in detail. For information on configuring AEM for Scene7, see [Integrating Scene7 with AEM](/help/sites-administering/scene7.md).  
 
 See also [Adding Image Maps](/assets/using/image-maps.md).  
 
@@ -174,7 +174,7 @@ Responsive design for your assets means that your assets adapts depending on whe
 
 To add an interactive viewing experience to a responsive site in the classic UI:
 
-1. Log in to AEM, and ensure that you have [configured Adobe Scene7 Cloud Services](/sites/administering/using/scene7.md#configuring-scene-integration) and that Scene7 components are available.
+1. Log in to AEM, and ensure that you have [configured Adobe Scene7 Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) and that Scene7 components are available.
 
    >[!NOTE]
    >
@@ -209,7 +209,7 @@ The asset has zoom tools at the bottom. Click **+** to enlarge. Click **-** to r
 
 ### Flyout {#flyout}
 
-In the HTML5 Flyout component, the asset is shown as split screen; left the asset in the specified size; right the zoom portion is displayed. Click **Edit** to configure the component. With this component, you can configure [settings common to all Scene7 components](/sites/administering/using/scene7.md#settingscommontoallscene7components).
+In the HTML5 Flyout component, the asset is shown as split screen; left the asset in the specified size; right the zoom portion is displayed. Click **Edit** to configure the component. With this component, you can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components).
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ The Scene7 Image component lets you add Scene7 functionality to your images, suc
 
 [Scene7 Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Scene7, where content and properties were parameterized for variability. The** Image template** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **Image template** component to use values from client context, so that each user experiences the image in a personalized way.
 
-Click **Edit** to configure the component. You can configure [settings common to all Scene7 components](/sites/administering/using/scene7.md#settingscommontoallscene7components) as well as other settings described in this section.
+Click **Edit** to configure the component. You can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components) as well as other settings described in this section.
 
 ![](assets/chlimage_1-55.png)
 
@@ -323,13 +323,13 @@ When using an adaptive video set with the Scene7 video component, the component 
 
 The Scene7 content browser lets you view content from Scene7 directly in AEM. To access the content browser, in the Content Finder, select **Scene7** in the touch-optimized user interface or the **S7** icon in the classic user interface. Functionality is identical between both user interfaces.
 
-If you have multiple configurations, AEM by default displays the [default configuration](/sites/administering/using/scene7.md#configuring-a-default-configuration). You can select different configurations directly in the Scene7 content browser in the drop-down menu.
+If you have multiple configurations, AEM by default displays the [default configuration](/help/sites-administering/scene7.md#configuring-a-default-configuration). You can select different configurations directly in the Scene7 content browser in the drop-down menu.
 
 >[!NOTE]
 >
 >* Assets located in the ad-hoc folder will not appear in the Scene7 content browser.
->* When [Secure Preview is enabled](/sites/administering/using/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), both published and unpublished assets on Scene7 do appear in the Scene7 content browser.
->* If you do not see **Scene7 **or the** S7 **icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/sites/administering/using/scene7.md).
+>* When [Secure Preview is enabled](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), both published and unpublished assets on Scene7 do appear in the Scene7 content browser.
+>* If you do not see **Scene7 **or the** S7 **icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
 >
 >* For video, the Scene7 content browser supports: >
 >    * Adaptive Video Sets: container of all video renditions needed for seamless playback across multiple screens

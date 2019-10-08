@@ -27,7 +27,7 @@ Using the [account settings](#account-settings) and [user preferences](#user-pre
     * Keep Hidden
 
 * **Impersonate as** 
-  With the [Impersonate as](../../../sites/administering/using/security.md#impersonating-another-user) functionality a user can work on behalf of another user.
+  With the [Impersonate as](/help/sites-administering//security.md#impersonating-another-user) functionality a user can work on behalf of another user.
 
 * **Language** 
   The language to use for the UI of the authoring environment. Select the required language from the available list.  
@@ -45,7 +45,7 @@ Using the [account settings](#account-settings) and [user preferences](#user-pre
 The user icon gives you access to various to the following options:
 
 * Sign Out
-* [Impersonate as](../../../sites/administering/using/security.md#impersonating-another-user)
+* [Impersonate as](/help/sites-administering//security.md#impersonating-another-user)
 * [User Preferences](#user-preferences) 
 * [Notification Inbox](../../../sites/classic-ui-authoring/using/author-env-inbox.md)
 

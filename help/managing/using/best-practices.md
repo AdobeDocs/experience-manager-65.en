@@ -211,7 +211,7 @@ Planning the development is key to ensure that your project is built on a solid 
 
   System integration requires you to plan (then implement):
 
-    * How all the sub-systems and [solution integrations](/sites/administering/using/integration.md) will be brought together to operate as one coherent system
+    * How all the sub-systems and [solution integrations](/help/sites-administering/integration.md) will be brought together to operate as one coherent system
     * How any third party systems will be integrated; together with any special considerations, such as offline/online, client-side/browser-side or fallover handling when a third party system is down
 
 * **Test Concept**
@@ -256,7 +256,7 @@ On a similar basis the operations must be properly planned to ensure you have th
     * For users with minimal privileges, workflows should be defined 
     * Users in the `editor` group should not have `admin` rights nor be part of the `administrators` group
 
-  For more information, see [User Administration and Security](../../sites/administering/using/security.md).
+  For more information, see [User Administration and Security](/help/sites-administering/security.md).
 
 * **Monitoring and Maintenance**
 
@@ -298,7 +298,7 @@ Development is a crucial phase that requires more than just coding.
             * a build artifact repository manager; such as Archiva/Nexus
 
     * Third party software integration/dependencies
-    * [Solution integration/dependencies](/sites/administering/using/integration.md)
+    * [Solution integration/dependencies](/help/sites-administering/integration.md)
     * Deployment cadence
 
 * **Test System**
@@ -324,7 +324,7 @@ Development is a crucial phase that requires more than just coding.
 
 * **Integration**
 
-  Plan, document and test all aspects of the system and [solution integration](/sites/administering/using/integration.md), including:
+  Plan, document and test all aspects of the system and [solution integration](/help/sites-administering/integration.md), including:
 
     * An automated testing strategy
     * Automated processes to [move applications from development to test, then production](/managing/using/enterprise-devops.md#code-movement)
@@ -425,7 +425,7 @@ Rollout of your new application needs careful planning to ensure a smooth Go Liv
 
   To ensure the security of your solution, perform specific penetration tests, together with a wider range of security tests.
 
-  See the [Security Checklist](../../sites/administering/using/security-checklist.md) for more details.
+  See the [Security Checklist](/help/sites-administering/security-checklist.md) for more details.
 
 ### Go Live {#go-live}
 
@@ -604,9 +604,9 @@ For best practices on deploying, administering, developing, or authoring, see th
 
 * [Other Best Practices and Guidelines related to Managing an AEM project](../../managing/using/manage-reference.md)
 * [Deploying and Maintaining best practices](/sites/deploying/using/best-practices.md)
-* [Administering best practices](/sites/administering/using/administer-best-practices.md)
+* [Administering best practices](/help/sites-administering/administer-best-practices.md)
 * [Developing best practices](/sites/developing/using/best-practices.md)
-* [Authoring best practices](/sites/authoring/using/best-practices.md)
+* [Authoring best practices](/help/sites-authoring/best-practices.md)
 
 ## Key Documentation Areas {#key-documentation-areas}
 
@@ -620,7 +620,7 @@ For best practices on deploying, administering, developing, or authoring, see th
     * Concepts of AEM:
 
         * [Developing - the basics](/sites/developing/using/the-basics.md)
-        * [MSM concepts](/sites/administering/using/msm.md)
+        * [MSM concepts](/help/sites-administering/msm.md)
         * [HTML Template Language (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
 
 * Related Documentation

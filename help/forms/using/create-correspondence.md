@@ -39,7 +39,7 @@ Select the letter to preview using the following steps:
     * forms-users (to preview on author instance)
     * cm-agent-users (for rendition on publish instance)
 
-   If you do not the required permissions, request the admin for the appropriate access. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](../../sites/administering/using/security.md). If you try to render a correspondence without having the appropriate permissions, the 404 error page appears.
+   If you do not the required permissions, request the admin for the appropriate access. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). If you try to render a correspondence without having the appropriate permissions, the 404 error page appears.
 
 1. If you've selected **Preview **&gt; **Custom**, a dialog opens. In the dialog, select a data file, corresponding to the data dictionary, to preview the letter with and then select **Preview**. A data file is created based on a data dictionary for a specific letter. For more information on the data file, see [Data Dictionary](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
 

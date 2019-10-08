@@ -68,8 +68,8 @@ An XFA form can have a large number of sections dedicated only for Document of R
 Adobe Experience Manager (AEM) forms can help you transform complex transactions into simple, delightful digital experiences. However, it requires concerted effort to develop efficient and productive forms. In addition to HTML5 Forms, here are some recommended reads for general AEM best practices:
 
 * [Best practices for Deploying and maintaining AEM](/sites/deploying/using/best-practices.md)
-* [Best practices for Authoring content](/sites/authoring/using/best-practices.md)
-* [Best practices for Administering AEM](/sites/administering/using/administer-best-practices.md)
+* [Best practices for Authoring content](/help/sites-authoring/best-practices.md)
+* [Best practices for Administering AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practices for Developing solutions](/sites/developing/using/best-practices.md)
 * [Best practices for working with adaptive forms](/forms/using/adaptive-forms-best-practices.md)
 

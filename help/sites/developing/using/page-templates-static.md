@@ -166,11 +166,11 @@ To enable an existing template for your website and you want it to be displayed 
 
 ## How Template Designs are Applied {#how-template-designs-are-applied}
 
-When styles are defined in the UI using [Design Mode](/sites/authoring/using/default-components-designmode.md), the design is persisted at the exact path of the content node for which the style is being defined.
+When styles are defined in the UI using [Design Mode](/help/sites-authoring/default-components-designmode.md), the design is persisted at the exact path of the content node for which the style is being defined.
 
 >[!CAUTION]
 >
->Adobe recommends only applying designs through [Design Mode](/sites/authoring/using/default-components-designmode.md).
+>Adobe recommends only applying designs through [Design Mode](/help/sites-authoring/default-components-designmode.md).
 >
 >Modifying designs in CRX DE for example is not best practice and the application of such designs can vary from expected behavior.
 

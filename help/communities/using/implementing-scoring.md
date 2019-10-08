@@ -410,7 +410,7 @@ for example : https://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/pro
 >The *member-profile-url*
 >
 >* may refer to an author instance if the [Tunnel Service](/communities/using/users.md#tunnel-service) is enabled
->* may be an obscure, random name - see [Security Checklist](../../sites/administering/using/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) regarding authorizable ID
+>* may be an obscure, random name - see [Security Checklist](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) regarding authorizable ID
 >
 
 ### Examples: {#examples}

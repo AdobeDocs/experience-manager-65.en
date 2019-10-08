@@ -24,7 +24,7 @@ This page describes the following:
 * how to work with landing pages in AEM
 * how to set up mobile landing pages
 
-Preparing the design package for importing is covered in [Extending and Configuring the Design Importer](../../../sites/administering/using/extending-the-design-importer-for-landingpages.md). Integrating with Adobe Analytics is covered in [Integrating Landing Pages with Adobe Analytics.](/sites/administering/using/integrating-landing-pages-with-adobe-analytics.md)
+Preparing the design package for importing is covered in [Extending and Configuring the Design Importer](/help/sites-administering//extending-the-design-importer-for-landingpages.md). Integrating with Adobe Analytics is covered in [Integrating Landing Pages with Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ In AEM, you create landing pages by performing the following steps:
 
 1. Create a page in AEM that contains the landing pages canvas. AEM ships with a sample called **Importer Page**.  
 
-1. [Prepare the HTML and assets.](../../../sites/administering/using/extending-the-design-importer-for-landingpages.md)
+1. [Prepare the HTML and assets.](/help/sites-administering//extending-the-design-importer-for-landingpages.md)
 1. Package the resources into a ZIP file referred to here as the Design Package.  
 1. Import the design package on the importer page.  
 1. Modify and publish the page.
@@ -88,7 +88,7 @@ In addition, it is possible to extend this and support custom components. This s
 
 ### Text {#text}
 
-The Text component lets you enter a text block using a WYSIWYG editor. See [Text component](/sites/authoring/using/default-components.md#text) for more information.
+The Text component lets you enter a text block using a WYSIWYG editor. See [Text component](/help/sites-authoring/default-components.md#text) for more information.
 
 ![](assets/chlimage_1-23.png)
 
@@ -98,7 +98,7 @@ The following is an example of a text component on a landing page:
 
 #### Title {#title}
 
-The title component lets you display a title and configure the size (h1-6). See [Title component](/sites/authoring/using/default-components.md#title) for more information.
+The title component lets you display a title and configure the size (h1-6). See [Title component](/help/sites-authoring/default-components.md#title) for more information.
 
 ![](assets/chlimage_1-25.png)
 
@@ -108,7 +108,7 @@ The following is an example of a title component on a landing page:
 
 #### Image {#image}
 
-The image component displays an image that you can either drag and drop from the Content Finder or click to upload. See [image component](/sites/authoring/using/default-components.md) for more information.
+The image component displays an image that you can either drag and drop from the Content Finder or click to upload. See [image component](/help/sites-authoring/default-components.md) for more information.
 
 ![](assets/chlimage_1-27.png)
 
@@ -224,7 +224,7 @@ When configuring any of the form components the following tabs are available in 
 >
 >The fields you see vary depending on the individual component.
 >
->Not all options are available to all lead form components. See Forms for more information on these [common settings](/sites/authoring/using/default-components.md#formsgroup).
+>Not all options are available to all lead form components. See Forms for more information on these [common settings](/help/sites-authoring/default-components.md#formsgroup).
 
 #### Lead Form Components {#lead-form-components}
 
@@ -331,7 +331,7 @@ If you are validating the complete form, also include one of the following:
 When you create a landing page, you need to perform three steps:
 
 1. Create an importer page.
-1. [Prepare the HTML for importing.](../../../sites/administering/using/extending-the-design-importer-for-landingpages.md)
+1. [Prepare the HTML for importing.](/help/sites-administering//extending-the-design-importer-for-landingpages.md)
 1. Import the design package.
 
 ### Use of the Design Importer {#use-of-the-design-importer}
@@ -365,11 +365,11 @@ To create a new landing page:
 
 ### Preparing the HTML for Import {#preparing-the-html-for-import}
 
-Before importing the design package, the HTML needs to be prepared. See [Extending and Configuring the Design Import](../../../sites/administering/using/extending-the-design-importer-for-landingpages.md) for more information.
+Before importing the design package, the HTML needs to be prepared. See [Extending and Configuring the Design Import](/help/sites-administering//extending-the-design-importer-for-landingpages.md) for more information.
 
 ### Importing the Design Package {#importing-the-design-package}
 
-After an importer page has been created, you can import a design package onto it. Details on creating the design package and its recommended structure are explained in [Extending and Configuring the Design Import](../../../sites/administering/using/extending-the-design-importer-for-landingpages.md).
+After an importer page has been created, you can import a design package onto it. Details on creating the design package and its recommended structure are explained in [Extending and Configuring the Design Import](/help/sites-administering//extending-the-design-importer-for-landingpages.md).
 
 Assuming that you have the design package ready, the following steps describe how to import the design package onto an importer page.
 
@@ -388,7 +388,7 @@ Assuming that you have the design package ready, the following steps describe ho
 
 >[!NOTE]
 >
->If you have trouble importing the design package, see [Troubleshooting](../../../sites/administering/using/extending-the-design-importer-for-landingpages.md#troubleshooting).
+>If you have trouble importing the design package, see [Troubleshooting](/help/sites-administering//extending-the-design-importer-for-landingpages.md#troubleshooting).
 
 ## Working with Landing Pages {#working-with-landing-pages}
 
@@ -444,7 +444,7 @@ To add components on the landing page, drag and drop components to the landing p
 
 >[!NOTE]
 >
->If a component on the landing page cannot be edited, you need to re-import the zip file after [modifying the HTML file.](../../../sites/administering/using/extending-the-design-importer-for-landingpages.md) It means that during the import, the non-editable parts were not converted into AEM components.
+>If a component on the landing page cannot be edited, you need to re-import the zip file after [modifying the HTML file.](/help/sites-administering//extending-the-design-importer-for-landingpages.md) It means that during the import, the non-editable parts were not converted into AEM components.
 
 ### Deleting a landing page {#deleting-a-landing-page}
 

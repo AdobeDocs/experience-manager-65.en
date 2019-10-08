@@ -26,7 +26,7 @@ This could serve as an assessment of the development effort that is involved in 
 
 ## How to Set Up {#how-to-set-up}
 
-The Pattern Detector is released separately as a [one package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) working on any source AEM versions from 6.1 to 6.5 targeting AEM 6.5 upgrade. It can be installed using the [Package Manager](../../../sites/administering/using/package-manager.md).
+The Pattern Detector is released separately as a [one package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) working on any source AEM versions from 6.1 to 6.5 targeting AEM 6.5 upgrade. It can be installed using the [Package Manager](/help/sites-administering//package-manager.md).
 
 ## How to Use {#how-to-use}
 

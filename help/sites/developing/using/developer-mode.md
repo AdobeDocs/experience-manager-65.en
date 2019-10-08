@@ -15,7 +15,7 @@ docset: aem65
 
 # Developer Mode{#developer-mode}
 
-When editing pages in AEM, several [modes](../../../sites/authoring/using/author-environment-tools.md#modestouchoptimizedui) are available, including Developer mode. This opens a side panel with several tabs that provide a developer with infomation about the current page. The three tabs are:
+When editing pages in AEM, several [modes](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) are available, including Developer mode. This opens a side panel with several tabs that provide a developer with infomation about the current page. The three tabs are:
 
 * **[Components](#components)** for viewing sructure and performance information.
 * **[Tests](#tests)** for running tests and analyzing the results.
@@ -68,7 +68,7 @@ Developer mode is implemented as a side panel to the page editor. To open the pa
 
 The panel is divided into two tabs:
 
-* ** [Components](../../../sites/developing/using/developer-mode.md#components)** - This shows a component tree, similar to the [content tree](../../../sites/authoring/using/author-environment-tools.md#content-tree) for authors
+* ** [Components](../../../sites/developing/using/developer-mode.md#components)** - This shows a component tree, similar to the [content tree](/help/sites-authoring/author-environment-tools.md#content-tree) for authors
 
 * ** [Errors](../../../sites/developing/using/developer-mode.md#errors)** - When problems occur, details are shown for each component.
 

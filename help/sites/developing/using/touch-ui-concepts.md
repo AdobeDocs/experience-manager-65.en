@@ -15,7 +15,7 @@ docset: aem65
 
 # Concepts of the AEM Touch-Enabled UI{#concepts-of-the-aem-touch-enabled-ui}
 
-With AEM 5.6 Adobe introduced a new touch-enabled UI with [responsive design](/sites/authoring/using/responsive-layout.md) for the author environment. This differs considerably from the original classic UI as it is designed to operate on both touch and desktop devices.
+With AEM 5.6 Adobe introduced a new touch-enabled UI with [responsive design](/help/sites-authoring/responsive-layout.md) for the author environment. This differs considerably from the original classic UI as it is designed to operate on both touch and desktop devices.
 
 This touch-enabled UI is now the standard UI for AEM, superseding the classic UI.
 

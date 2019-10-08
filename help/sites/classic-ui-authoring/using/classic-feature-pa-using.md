@@ -27,5 +27,5 @@ Page analytics data is displayed in the Sites console. When sites are displayed 
 
 >[!NOTE]
 >
->Displaying site analytics data diretly in the console is only available in the touch-optimized UI. See [Seeing Page Analytics Data](../../../sites/authoring/using/page-analytics-using.md) in the standard authoring documentation for details.
+>Displaying site analytics data diretly in the console is only available in the touch-optimized UI. See [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md) in the standard authoring documentation for details.
 

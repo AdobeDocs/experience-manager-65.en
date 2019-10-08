@@ -17,7 +17,7 @@ docset: aem65
 
 Editable templates have been introduced to:
 
-* Allow specialized authors to [create and edit templates](../../../sites/authoring/using/templates.md).
+* Allow specialized authors to [create and edit templates](/help/sites-authoring/templates.md).
 
     * Such specialized authors are called **template authors**
     * Template authors must be members of the `template-authors` group.
@@ -35,12 +35,12 @@ This document:
 
 * Gives an overview of creating editable templates
 
-    * For details see [Creating Page Templates](../../../sites/authoring/using/templates.md)
+    * For details see [Creating Page Templates](/help/sites-authoring/templates.md)
 
 * Describes the admin/developer tasks required to create editable templates
 * Describes the technical underpinnings of editable templates
 
-This document assumes that you are already familiar with creating and editing templates. See the authoring document [Creating Page Templates](../../../sites/authoring/using/templates.md), which details the capabilities of editable templates as exposed to the template author.
+This document assumes that you are already familiar with creating and editing templates. See the authoring document [Creating Page Templates](/help/sites-authoring/templates.md), which details the capabilities of editable templates as exposed to the template author.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ This document assumes that you are already familiar with creating and editing te
 
 ## Creating a New Template {#creating-a-new-template}
 
-Creating editable templates is primarily done with the [template console and template editor](../../../sites/authoring/using/templates.md) by a template author. This section gives an overview of this process and follows with a description of what occurs at a technical level.
+Creating editable templates is primarily done with the [template console and template editor](/help/sites-authoring/templates.md) by a template author. This section gives an overview of this process and follows with a description of what occurs at a technical level.
 
 For information on how to use editable templates in an AEM project see [Creating an AEM project using Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
@@ -74,7 +74,7 @@ When creating a new editable template you:
     * If you want page authors to be able to add and remove components, add a paragraph system to the template.
     * Components can be unlocked and locked again to allow you to define initial content.
 
-   For details on how a template author defines the structure, see [Creating Page Templates](../../../sites/authoring/using/templates.md#editing-a-template-structure-template-author).
+   For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
    For technical deatils of the structure, see [Structure](../../../sites/developing/using/page-templates-editable.md#structure) in this document.
 
@@ -86,7 +86,7 @@ When creating a new editable template you:
 
     * These are applicable to the template (and pages created with the template).
 
-   For details on how a template author defines policies, see [Creating Page Templates](../../../sites/authoring/using/templates.md#editing-a-template-structure-template-author).
+   For details on how a template author defines policies, see [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
    For technical deatil of policies, see [Content Policies](../../../sites/developing/using/page-templates-editable.md#content-policies) in this document.
 
@@ -95,7 +95,7 @@ When creating a new editable template you:
     * Initial Content defines content that will appear when a page is first created based on the template.
     * Initial content can then be edited by page authors.
 
-   For details on how a template author defines the structure, see [Creating Page Templates](../../../sites/authoring/using/templates.md#editing-a-template-initial-content-author).
+   For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-initial-content-author).
 
    For technical details on initial content, see [Initial Content](../../../sites/developing/using/page-templates-editable.md#initial-content) in this document.
 
@@ -104,7 +104,7 @@ When creating a new editable template you:
     * You can define the template layout for a range of devices.
     * Responsive layout for templates operates as it does for page authoring.
 
-   For details on how a template author defines the template layout, see [Creating Page Templates](../../../sites/authoring/using/templates.md#editing-a-template-layout-template-author).
+   For details on how a template author defines the template layout, see [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
    For technical details on template layout, see [Layout](../../../sites/developing/using/page-templates-editable.md#layout) in this document.
 
@@ -113,7 +113,7 @@ When creating a new editable template you:
     * A template can be enabled or disabled to make it available or unavailable to page authors.
     * A template can be made available or unavailable for certain page branches.
 
-   For details on how a template author enables a template, see [Creating Page Templates](../../../sites/authoring/using/templates.md#enabling-and-allowing-a-template-template-author).
+   For details on how a template author enables a template, see [Creating Page Templates](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
 
    For technical deatils on enabling a template, see [Enabling and Allowing a Template for Us](../../../sites/developing/using/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in this document
 
@@ -122,7 +122,7 @@ When creating a new editable template you:
     * When using a template to create a new page there is no visible difference and no indication between static and editable templates. 
     * For the page author, the process is transparent.
 
-   For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](../../../sites/authoring/using/managing-pages.md#templates).
+   For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-authoring/managing-pages.md#templates).
 
    For technical details on creating pages with editable templates, see [Resultant Content Pages](../../../sites/developing/using/page-templates-editable.md#resultant-content-pages) in this document.
 
@@ -204,7 +204,7 @@ To create a new folder, you can either do this:
 
    The `template-authors` group is the default group that needs to be assigned. See the following section [ACLs and Groups](../../../sites/developing/using/page-templates-editable.md#acls-and-groups) for details.
 
-   See [Access Right Management](../../../sites/administering/using/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.
+   See [Access Right Management](/help/sites-administering//user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.
 
 ### Using the Configuration Browser {#using-the-configuration-browser}
 
@@ -401,7 +401,7 @@ Definitions for your customized templates types should be stored in user-defined
 
 ### Template Type and Mobile Device Groups <br> {#template-type-and-mobile-device-groups-br}
 
-The [device groups](../../../sites/developing/using/mobile.md#device-groups) used for an editable template (set as relative path of the property `cq:deviceGroups`) define which mobile devices are available as emulators in the [layout mode](/sites/authoring/using/responsive-layout.md) of page authoring. This value can be set in two places:
+The [device groups](../../../sites/developing/using/mobile.md#device-groups) used for an editable template (set as relative path of the property `cq:deviceGroups`) define which mobile devices are available as emulators in the [layout mode](/help/sites-authoring/responsive-layout.md) of page authoring. This value can be set in two places:
 
 * On the editable template type  
 * On the editable template
@@ -422,7 +422,7 @@ When creating a new editable template, the value is copied from the template typ
 
 If you have created a template that can serve as the basis of other templates, you can copy this template as a template type.
 
-1. Create a template as you would any editable template [as documented here](../../../sites/authoring/using/templates.md#creating-a-new-template-template-author), which will serve as the basis of your template type.
+1. Create a template as you would any editable template [as documented here](/help/sites-authoring/templates.md#creating-a-new-template-template-author), which will serve as the basis of your template type.
 1. Using CRXDE Lite, copy the newly-created template from the `templates` node to the `template-types` node under the [template folder](../../../sites/developing/using/page-templates-editable.md#template-folders).
 1. Delete the template from the `templates` node under the [template folder](../../../sites/developing/using/page-templates-editable.md#template-folders).
 1. In the copy of the template that is under the `template-types` node, delete all `cq:template` and `cq:templateType` `jcr:content` properties.
@@ -525,7 +525,7 @@ Defines the initial content that a new page will have upon creation:
 
 ### Layout {#layout}
 
-When [editing a template you can define the layout](../../../sites/authoring/using/templates.md), this uses [standard responsive layout](/sites/authoring/using/responsive-layout.md) that can also be [configured](/sites/administering/using/configuring-responsive-layout.md).
+When [editing a template you can define the layout](/help/sites-authoring/templates.md), this uses [standard responsive layout](/help/sites-authoring/responsive-layout.md) that can also be [configured](/help/sites-administering/configuring-responsive-layout.md).
 
 ### Content Policies {#content-policies}
 
@@ -564,7 +564,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
 
    Before a template can be used it must be enabled by either:
 
-    * [Enabling the template](../../../sites/authoring/using/templates.md#enablingatemplateauthor) from the **Templates** console.
+    * [Enabling the template](/help/sites-authoring/templates.md#enablingatemplateauthor) from the **Templates** console.
     
     * Setting the status property on the `jcr:content` node.
 
@@ -579,7 +579,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
 
 1. **Allowed Templates**
 
-    * [Define the Allowed Template path(s) on the **Page Properties**](../../../sites/authoring/using/templates.md#allowing-a-template-author) of the appropriate page or root page of a sub-branch.
+    * [Define the Allowed Template path(s) on the **Page Properties**](/help/sites-authoring/templates.md#allowing-a-template-author) of the appropriate page or root page of a sub-branch.
     * Set the property:  
       `cq:allowedTemplates`  
       On the `jcr:content` node of the required branch.

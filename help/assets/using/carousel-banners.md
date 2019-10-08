@@ -51,7 +51,7 @@ To get you up and running quickly:
 
    >[!NOTE]
    >
-   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables. See information on [setting up eCommerce](../../sites/administering/using/generic.md).
+   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables. See information on [setting up eCommerce](/help/sites-administering/generic.md).
    >
    >
    >If you are an AEM Assets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
@@ -100,7 +100,7 @@ When you add hotspots or image maps to a banner image in AEM Assets you need to 
 
 >[!NOTE]
 >
->If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. See information on [setting up eCommerce](../../sites/administering/using/generic.md). In addition, you can use the Interactive component and add it to your web page.
+>If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. See information on [setting up eCommerce](/help/sites-administering/generic.md). In addition, you can use the Interactive component and add it to your web page.
 >
 >If you are an AEM Assets or Media customer, you publish the URL or Embed code and then integrate with your third-party content management system and identify hotspots and image maps manually.
 
@@ -243,7 +243,7 @@ You can add hotspots or image maps to a banner using the Carousel Set editor.
 
 When you add hotspots or image maps, you can define them as a Quickview pop-up display, as a hyperlink, or an Experience Fragment.
 
-See [Experience Fragment](../../sites/authoring/using/experience-fragments.md).
+See [Experience Fragment](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
@@ -308,7 +308,7 @@ To add hotspots to an image banner:
     * Tap **Experience Fragment**.
 
         * If you are an AEM Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap Select in the upper-right corner of the page to return to the Hotspot management page.  
-          See [Experience Fragments](../../sites/authoring/using/experience-fragments.md).
+          See [Experience Fragments](/help/sites-authoring/experience-fragments.md).
         
         * Specify the width and height of the Experience Fragment as it will appear on the banner.
 

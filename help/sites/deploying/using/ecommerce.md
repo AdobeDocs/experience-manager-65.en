@@ -107,7 +107,7 @@ For other implementations, see:
 
 >[!NOTE]
 >
->For information about concepts and administering eCommerce implementations, see [Administering eCommerce](../../../sites/administering/using/ecommerce.md).
+>For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering//ecommerce.md).
 >
 >For information about extending eCommerce capabilities, see [Developing eCommerce](../../../sites/developing/using/ecommerce.md).
 

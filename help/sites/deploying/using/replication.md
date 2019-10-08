@@ -17,7 +17,7 @@ docset: aem65
 
 Replication agents are central to Adobe Experience Manager (AEM) as the mechanism used to:
 
-* [Publish (activate)](../../../sites/authoring/using/publishing-pages.md#activatingcontent) content from an author to a publish environment.
+* [Publish (activate)](/help/sites-authoring/publishing-pages.md#activatingcontent) content from an author to a publish environment.
 * Explicitly flush content from the Dispatcher cache.
 * Return user input (for example, form input) from the publish environment to the author environment (under control of the author environment).
 
@@ -27,7 +27,7 @@ Requests are [queued](../../../sites/deploying/using/osgi-configuration-settings
 >
 >User data (users, user groups, and user profiles) are not replicated between author and publish instances.
 >
->For multiple publish instances, user data is Sling distributed when [User Synchronization](../../../sites/administering/using/sync.md) is enabled.
+>For multiple publish instances, user data is Sling distributed when [User Synchronization](/help/sites-administering//sync.md) is enabled.
 
 ## Replicating from Author to Publish {#replicating-from-author-to-publish}
 
@@ -36,7 +36,7 @@ Replication, to a publish instance or dispatcher, takes place in several steps:
 * the author requests that certain content be published (activated); this can be initiated by a manual request, or by automatic triggers which have been preconfigured.
 * the request is passed to the appropriate default replication agent; an environment can have several default agents which will always be selected for such actions.
 * the replication agent "packages" the content and places it in the replication queue.
-* in the Websites tab the [colored status indicator](../../../sites/authoring/using/publishing-pages.md#determiningpagepublicationstatus) is set for the individual pages.
+* in the Websites tab the [colored status indicator](/help/sites-authoring/publishing-pages.md#determiningpagepublicationstatus) is set for the individual pages.
 * the content is lifted from the queue and transported to the publish environment using the configured protocol; usually this is HTTP.
 * a servlet in the publish environment receives the request and publishes the received content; the default servlet is `https://localhost:4503/bin/receive`.  
 
@@ -404,7 +404,7 @@ If you want to use reverse replication then ensure that this agent is activated.
 >
 >Only content is replicated - user data is not (users, user groups, and user profiles).
 >
->To synchronize user data across multiple publish instances, enable [User Synchronization](../../../sites/administering/using/sync.md).
+>To synchronize user data across multiple publish instances, enable [User Synchronization](/help/sites-administering//sync.md).
 
 Upon installation a default agent is already configured for replication of content to a publish instance running on port 4503 of the localhost.
 

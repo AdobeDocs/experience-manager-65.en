@@ -98,7 +98,7 @@ For further information see [AEM Logging](/sites/deploying/using/configure-loggi
 
 >[!NOTE]
 >
->This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/sites/administering/using/production-ready.md).
+>This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/help/sites-administering/production-ready.md).
 
 **Apache Sling Java Script Handler** Configure settings for the compilation of .java files as scripts (servlets).
 
@@ -135,7 +135,7 @@ In particular for production instances:
 
 >[!NOTE]
 >
->This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/sites/administering/using/production-ready.md).
+>This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/help/sites-administering/production-ready.md).
 
 **Apache Sling Logging Configuration** Configure:
 
@@ -187,7 +187,7 @@ The referrer filter service is an OSGi service that allows you to configure:
 * whether an empty referrer header is allowed  
 * and a white list of servers to be allowed in addition to the server host.
 
-See the [Security Checklist - Issues with Cross-Site Request Forgery](../../../sites/administering/using/security-checklist.md#protect-against-cross-site-request-forgery) for further details.
+See the [Security Checklist - Issues with Cross-Site Request Forgery](/help/sites-administering//security-checklist.md#protect-against-cross-site-request-forgery) for further details.
 
 >[!NOTE]
 >
@@ -282,11 +282,11 @@ When creating a new configuration, do not make changes to the factory configurat
 
 >[!NOTE]
 >
->This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/sites/administering/using/production-ready.md).
+>This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/help/sites-administering/production-ready.md).
 
 **Day CQ HTTP Header Authentication Handler** System wide settings for the basic authentication method of the HTTP request.
 
-When using [closed user groups](../../../sites/administering/using/cug.md) you can configure (amongst others):
+When using [closed user groups](/help/sites-administering//cug.md) you can configure (amongst others):
 
 * **HTTP Realm**
 * The **Default Login Page**
@@ -379,7 +379,7 @@ Various configuration properties are available:
 
 >[!NOTE]
 >
->This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/sites/administering/using/production-ready.md).
+>This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/help/sites-administering/production-ready.md).
 
 **Day CQ WCM Link Checker Configurator** Configure:
 

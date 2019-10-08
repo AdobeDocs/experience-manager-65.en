@@ -150,7 +150,7 @@ When the tag includes the optional title string ( `jcr:title`) it is possible to
 For more details see
 
 * [Tags in Different Languages](/sites/developing/using/building.md#tags-in-different-languages) - which describes use of the APIs
-* [Managing Tags in Different Languages](/sites/administering/using/tags.md#managing-tags-in-different-languages) - which describes use of the Tagging console
+* [Managing Tags in Different Languages](/help/sites-administering/tags.md#managing-tags-in-different-languages) - which describes use of the Tagging console
 
 ### Access Control {#access-control}
 
@@ -211,7 +211,7 @@ The `cq:tags` property is a String array used to store one or more TagIDs when t
 
 ## Moving and Merging Tags {#moving-and-merging-tags}
 
-The following is a description of the effects in the repository when moving or merging tags using the [Tagging console](/sites/administering/using/tags.md):
+The following is a description of the effects in the repository when moving or merging tags using the [Tagging console](/help/sites-administering/tags.md):
 
 * When a tag A is moved or merged into tag B under `/content/cq:tags`:
 

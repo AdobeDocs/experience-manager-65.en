@@ -21,7 +21,7 @@ Content is added using [components](/sites/classic-ui-authoring/using/classic-pa
 
 >[!NOTE]
 >
->Your account needs the [appropriate access rights](../../../sites/administering/using/security.md) and [permissions](../../../sites/administering/using/security.md#permissions) to edit pages; for example, adding, editing or deleting components, annotating, unlocking.
+>Your account needs the [appropriate access rights](/help/sites-administering//security.md) and [permissions](/help/sites-administering//security.md#permissions) to edit pages; for example, adding, editing or deleting components, annotating, unlocking.
 >
 >If you encounter any problems we suggest you contact your system administrator.
 
@@ -55,9 +55,9 @@ These provide access to a wide selection of functionality; including:
 
 * [editing page properties](/sites/classic-ui-authoring/using/classic-page-author-edit-page-properties.md)   
 
-* [scaffolding](/sites/authoring/using/scaffolding.md)  
+* [scaffolding](/help/sites-authoring/scaffolding.md)  
 
-* [client context](../../../sites/administering/using/client-context.md)
+* [client context](/help/sites-administering//client-context.md)
 
 ## Inserting a Component {#inserting-a-component}
 
@@ -173,7 +173,7 @@ As when [Deleting a Component](#deleting-a-component) you can use the context me
 
 Inherited components can be the product of various scenarios, including:
 
-* [Multi site management](/sites/administering/using/msm.md); also in combination with [scaffolding](../../../sites/classic-ui-authoring/using/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Multi site management](/help/sites-administering/msm.md); also in combination with [scaffolding](../../../sites/classic-ui-authoring/using/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Launches](/sites/classic-ui-authoring/using/classic-launches.md) (when based on livecopy).
 * Specific components; for example the Inherited Paragraph System within Geometrixx.
@@ -269,7 +269,7 @@ When you undo or redo the removal, addition, or relocation of one or more paragr
 
 >[!NOTE]
 >
->Your system administrator can [configure various aspects of the Undo/Redo features](/sites/administering/using/config-undo.md) according to the requirements for your instance.
+>Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.
 
 AEM stores a history of actions that you perform and the sequence in which you performed them. So, you undo several actions in the order that you performed them. Then, you can use redo to re-apply one or more of the actions.
 

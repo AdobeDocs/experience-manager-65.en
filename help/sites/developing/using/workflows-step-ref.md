@@ -70,7 +70,7 @@ The following properties are available for many workflow step components, on the
     * If you assign the step to a specific user, then only this user can take action on the step.  
     * If you assign the step to an entire group, then when the workflow reaches this step all users in this group will have the action in their **Workflow Inbox**.  
     
-    * See [Participating in Workflows](../../../sites/authoring/using/workflows-participating.md) for more information.
+    * See [Participating in Workflows](/help/sites-authoring/workflows-participating.md) for more information.
 
 ## AND Split {#and-split}
 
@@ -253,7 +253,7 @@ To configure the step, edit and use the following tabs:
 
 >[!NOTE]
 >
->Some properties need to be configured to enable email notifications. You can also customize the email template or add an email template for a new language. See [Configuring Email Notification](/sites/administering/using/notification.md#configuringemailnotification) to configure email notifications in AEM.
+>Some properties need to be configured to enable email notifications. You can also customize the email template or add an email template for a new language. See [Configuring Email Notification](/help/sites-administering/notification.md#configuringemailnotification) to configure email notifications in AEM.
 
 ### Dialog Participant Step {#dialog-participant-step}
 
@@ -507,7 +507,7 @@ To configure the step, you specify the group or user to assign the work item to,
 
 >[!CAUTION]
 >
->This section deals with the [Forms section of Foundation Components for Page Authoring](../../../sites/authoring/using/default-components-foundation.md#form).
+>This section deals with the [Forms section of Foundation Components for Page Authoring](/help/sites-authoring/default-components-foundation.md#form).
 
 #### Form Participant Step - Configuration {#form-participant-step-configuration}
 

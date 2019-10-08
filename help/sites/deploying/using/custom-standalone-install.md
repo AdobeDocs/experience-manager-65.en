@@ -308,8 +308,8 @@ The following links can be used to verify that your installation is operational 
 
 Although there are many possibilities to configure AEM WCM, certain actions should be taken, or at least reviewed immediately after installation:
 
-* Consult the [Security Checklist](../../../sites/administering/using/security-checklist.md) for tasks required to ensure that your system remains secure.
-* Review the list of default users and groups which are installed with AEM WCM. Check whether you want to take action on any other accounts - see [Security and User Administration](../../../sites/administering/using/security.md) for further details.
+* Consult the [Security Checklist](/help/sites-administering//security-checklist.md) for tasks required to ensure that your system remains secure.
+* Review the list of default users and groups which are installed with AEM WCM. Check whether you want to take action on any other accounts - see [Security and User Administration](/help/sites-administering//security.md) for further details.
 
 ## Accessing CRXDE Lite and the Web Console {#accessing-crxde-lite-and-the-web-console}
 

@@ -26,7 +26,7 @@ Although you can customize your tracking code to enable third-party CMS solution
 Perform these steps to enable Asset Insights through DTM.
 
 1. Tap/click the AEM logo, and go to **Tools** &gt; **Assets** &gt; **Insights Configuration**.
-1. [Configure AEM instance with DTM Cloud Service](/sites/administering/using/dtm.md)
+1. [Configure AEM instance with DTM Cloud Service](/help/sites-administering/dtm.md)
 
    The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit *Account Settings* from the Profile Icon. This step is not required from the Asset Insights standpoint, because the integration of AEM Sites with Asset Insights is still in the works.
 

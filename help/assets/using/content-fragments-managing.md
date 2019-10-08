@@ -19,7 +19,7 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 
 >[!NOTE]
 >
->Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](../../sites/authoring/using/content-fragments.md).
+>Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md).
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -75,7 +75,7 @@ The method of creating a content fragment is (basically) the same for both simpl
 In the **Assets** console a range of actions are available for your content fragments, either:
 
 * From the toolbar; after selection of your fragment all appropriate actions are available.
-* As [quick actions](../../sites/authoring/using/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
+* As [quick actions](/help/sites-authoring/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
 
 ![](assets/cfm-6420-17.png)
 
@@ -307,7 +307,7 @@ You can revert to a specific version of your fragment:
 Content Fragments must be published for use in the publish enviroment. They can be published:
 
 * After creation; from the **Assets** console.
-* When you [publish a page that uses the fragment](../../sites/authoring/using/content-fragments.md#publishing); the fragment will be listed in the page references.
+* When you [publish a page that uses the fragment](/help/sites-authoring/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 >[!CAUTION]
 >

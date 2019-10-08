@@ -19,7 +19,7 @@ One of the many ways to launch or trigger a Forms-centric workflow is through ap
 
 In addition, AEM Inbox consolidates notifications and tasks from various AEM components, including Forms workflows. When a forms workflow containing an Assign task step is triggered, the associated application is listed as a task in the assignee's Inbox. If the assignee is a group, the task appears in the Inbox of all group members until an individual claims or delegates the task.
 
-The Inbox user interface provides list and calendar views to view tasks. You can also configure the view settings. You can filter tasks based on various parameters. For more information about view and filters, see [Your Inbox](/sites/authoring/using/inbox.md).
+The Inbox user interface provides list and calendar views to view tasks. You can also configure the view settings. You can filter tasks based on various parameters. For more information about view and filters, see [Your Inbox](/help/sites-authoring/inbox.md).
 
 In summary, Inbox allows you to create a new application and manage assigned tasks.
 

@@ -115,17 +115,17 @@ Review the Technical Requirements for AEM 6.5 and ensure that your current hardw
 
 **Monitoring and Maintenance:**
 
-[Operations Dashboard](../../../sites/administering/using/operations-dashboard.md)
+[Operations Dashboard](/help/sites-administering//operations-dashboard.md)
 
 [Assets Monitoring Best Practices](../../../assets/using/assets-monitoring-best-practices.md)
 
-[Monitoring Server Resources Using the JMX Console](../../../sites/administering/using/jmx-console.md)
+[Monitoring Server Resources Using the JMX Console](/help/sites-administering//jmx-console.md)
 
 [Revision Cleanup](/sites/deploying/using/revision-cleanup.md)
 
 **Backup/Restore and Disaster Recovery:**
 
-[Backup and Restore](/sites/administering/using/backup-and-restore.md)
+[Backup and Restore](/help/sites-administering/backup-and-restore.md)
 
 [Performance & Scalability](/sites/deploying/using/performance.md)
 

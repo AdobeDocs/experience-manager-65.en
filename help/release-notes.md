@@ -81,8 +81,8 @@ Various enhancements have been made to the UI to make it more productive and eas
 * New Permissions Management UI for Users and Groups 
 * Column Views now also only loads entries that are visible on the screen and only loads more when the user is starting to scroll. List and Card view already did that since 6.0 (improved in 6.4)
 * Column Views now include the workflow status for pages/assets when applicable
-* The [Select All](sites/authoring/using/basic-handling.md#select-all) action is a quick way to execute an action with all pages/assets in the same folder
-* The [Select All](sites/authoring/using/basic-handling.md#select-all) action attempts to perform the action to all pages/assets, not just what has been loaded. A warning dialog will be shown if the action has not been upgraded to handle Bulk Actions
+* The [Select All](/help/sites-authoring/basic-handling.md#select-all) action is a quick way to execute an action with all pages/assets in the same folder
+* The [Select All](/help/sites-authoring/basic-handling.md#select-all) action attempts to perform the action to all pages/assets, not just what has been loaded. A warning dialog will be shown if the action has not been upgraded to handle Bulk Actions
 
 >[!CAUTION]
 >
@@ -219,7 +219,7 @@ For detailed list of changes, see [AEM 6.5 Communities release notes](release-no
 
 You can integrate Livefyre with your AEM 6.5 instance. Information on how to integrate Livefyre with AEM is located here:
 
-* [Integrating Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [Integrating Livefyre](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/livefyre.html)
 
 ### Leverage Customer Focused Development {#leverage-customer-focused-development}
 

@@ -35,7 +35,7 @@ docset: aem65
 
 * if not using the default ports (4502, 4503), then [configure replication agents](#replication-agents-on-author)
 * [replicate the crypto key](#replicate-the-crypto-key)
-* if supporting globalization, [setup automated translation](../../sites/administering/using/translation.md)  
+* if supporting globalization, [setup automated translation](/help/sites-administering/translation.md)  
   (sample setup is provided for development)
 
 **For the [Communities capability](../../communities/using/overview.md)**
@@ -191,7 +191,7 @@ Alternatively, accessing the package using package share from the local AEM inst
 
 Once in the local AEM instance's package repository, use package manager to install the package.
 
-For more information, visit [How to Work With Packages](../../sites/administering/using/package-manager.md#package-share).
+For more information, visit [How to Work With Packages](/help/sites-administering/package-manager.md#package-share).
 
 ## Recommended Deployments {#recommended-deployments}
 

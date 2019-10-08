@@ -122,7 +122,7 @@ The descriptions for accessing scoring and badging data use JSRP, as the UGC is 
 
 **JSRP on author** : experimenting in the author environment results in UGC that is only visible from the author environment.
 
-**JSRP on publish** : similarly, if testing on the publish environment, it will be necessary to access CRXDE Lite with administrative privileges on a publish instance. If the publish instance is running in [production mode](/sites/administering/using/production-ready.md) (nosamplecontent runmode), it will be necessary to [enable CRXDE Lite](/sites/administering/using/enabling-crxde-lite.md).
+**JSRP on publish** : similarly, if testing on the publish environment, it will be necessary to access CRXDE Lite with administrative privileges on a publish instance. If the publish instance is running in [production mode](/help/sites-administering/production-ready.md) (nosamplecontent runmode), it will be necessary to [enable CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 The base location of UGC on JSRP is `/content/usergenerated/asi/jcr/`.
 

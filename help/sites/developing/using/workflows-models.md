@@ -55,7 +55,7 @@ To create a new workflow with the editor:
 >
 >For example, `/var/workflow/models/prototypes`
 >
->This folder can then be used for [managing access to the models in that folder](/sites/administering/using/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
+>This folder can then be used for [managing access to the models in that folder](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
 ## Editing a Workflow {#editing-a-workflow}
 
@@ -139,7 +139,7 @@ To add steps to your workflow model:
 
    At run time, steps are executed in the order in which they appear in the model. After adding step components, you can drag them to a different location in the model.
 
-   You can also copy, cut, paste, group or delete existing steps; as with the [page editor.](../../../sites/authoring/using/editing-content.md)
+   You can also copy, cut, paste, group or delete existing steps; as with the [page editor.](/help/sites-authoring/editing-content.md)
 
    Split steps can also be collapsed/expanded using the toolbar option: ![](assets/wf-collapseexpand-toolbar-icon.png)
 
@@ -186,7 +186,7 @@ You can create a [Transient](/sites/developing/using/workflows.md#transient-work
 
 >[!NOTE]
 >
->When you run a workflow in [transient](/sites/developing/using/workflows.md#transient-workflows) mode AEM does not store any workflow history. Therefore, [Timeline](../../../sites/authoring/using/basic-handling.md#timeline) does not display any information related to that workflow. [](../../../sites/authoring/using/basic-handling.md#timeline)
+>When you run a workflow in [transient](/sites/developing/using/workflows.md#transient-workflows) mode AEM does not store any workflow history. Therefore, [Timeline](/help/sites-authoring/basic-handling.md#timeline) does not display any information related to that workflow. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Make workflow models available in Touch UI {#classic2touchui}
 
@@ -263,7 +263,7 @@ To define **Stages** for your workflow:
 
 To export a workflow model in a package:
 
-1. Create a new package using the [Package Manager](../../../sites/administering/using/package-manager.md#package-manager):
+1. Create a new package using the [Package Manager](/help/sites-administering//package-manager.md#package-manager):
 
     1. Navigate to the Package Manager via **Tools**, **Deployment**, **Packages**.
     
@@ -313,7 +313,7 @@ It is a good practice when testing a workflow to use a variety of payload types;
 
 For example, test your new workflow as follows:
 
-1. [Start your workflow model](/sites/administering/using/workflows-starting.md) from the console.
+1. [Start your workflow model](/help/sites-administering/workflows-starting.md) from the console.
 1. Define the **Payload** and confirm.  
 
 1. Take actions as required so that the workflow proceeds.
@@ -353,7 +353,7 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
    >[!NOTE]
    >
-   >For emails to be sent, [the mail service and user account details need to be configured](/sites/administering/using/notification.md).
+   >For emails to be sent, [the mail service and user account details need to be configured](/help/sites-administering/notification.md).
 
 1. Confirm the updates with the tick.
 

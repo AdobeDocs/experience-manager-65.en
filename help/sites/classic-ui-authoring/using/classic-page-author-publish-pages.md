@@ -117,7 +117,7 @@ To schedule your activation for a later time:
 
 Activating later starts a workflow to activate this version of the page at the specified time. Conversely, deactivating later starts a workflow to deactivate this version of the page at a specific time.
 
-If you want to cancel this activation/deactivation, go to the [Workflow Console](/sites/administering/using/workflows-administering.md#main-pars_title_3-yjqslz-refd) to terminate the corresponding workflow.
+If you want to cancel this activation/deactivation, go to the [Workflow Console](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) to terminate the corresponding workflow.
 
 ### Deactivate Later {#deactivate-later}
 
@@ -131,7 +131,7 @@ To schedule your deactivation for a later time:
 
 **Deactivating late**r starts a workflow to deactivate this version of the page at a specific time.
 
-If you want to cancel this deactivation, go to the [Workflow Console](/sites/administering/using/workflows-administering.md#main-pars_title_3-yjqslz-refd) to terminate the corresponding workflow.
+If you want to cancel this deactivation, go to the [Workflow Console](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) to terminate the corresponding workflow.
 
 ## Scheduled Activation/Deactivation (On/Off Time) {#scheduled-activation-deactivation-on-off-time}
 

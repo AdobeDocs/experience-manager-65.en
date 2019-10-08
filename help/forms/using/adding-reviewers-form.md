@@ -54,7 +54,7 @@ User groups let you associate different sets of submission reviewers with differ
 Before you perform the following steps, see [Prerequisite](../../forms/using/adding-reviewers-form.md#prerequisite).
 
 To create a group and add members to it, navigate to **Tools** &gt; **Operations** &gt; **Security** &gt; **Groups**.  
-For more information, see [User Administration and Services](../../sites/administering/using/security.md).   
+For more information, see [User Administration and Services](/help/sites-administering/security.md).   
 Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. This user group is shipped with AEM Forms, and it ensures that users are added as submission reviewers.
 
 To associate user groups with an adaptive form:

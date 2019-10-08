@@ -63,7 +63,7 @@ The AEM Uber jar includes all AEM APIs as a single dependency in your Maven proj
 
 ### Phase out use of Administrative Resource Resolver {#phase-out-use-of-administrative-resource-resolver}
 
-The use of an administrative session through `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` was quite prevalent in code bases prior to AEM 6.0. These methods have been deprecated for security reasons as they give too broad of a level of access. [In future versions of Sling these methods will be removed](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). It is highly recommended to refactor any code to use Service Users instead. More information about Service Users and [how to phase out administrative sessions can be found here](/sites/administering/using/security-service-users.md#how to phase out admin sessions).
+The use of an administrative session through `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` was quite prevalent in code bases prior to AEM 6.0. These methods have been deprecated for security reasons as they give too broad of a level of access. [In future versions of Sling these methods will be removed](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). It is highly recommended to refactor any code to use Service Users instead. More information about Service Users and [how to phase out administrative sessions can be found here](/help/sites-administering/security-service-users.md#how to phase out admin sessions).
 
 ### Queries and Oak Indexes {#queries-and-oak-indexes}
 
@@ -73,13 +73,13 @@ Several tools for tools for analyzing and inspecting query performance are avail
 
 * [AEM Index Tools](/sites/deploying/using/queries-and-indexing.md)  
 
-* [Operations Diagnosis Tools - Query Performance](../../../sites/administering/using/operations-dashboard.md#diagnosis-tools)  
+* [Operations Diagnosis Tools - Query Performance](/help/sites-administering//operations-dashboard.md#diagnosis-tools)  
 
 * [Oak Utils](https://oakutils.appspot.com/). This is an open source tool that is not maintained by Adobe.
 
 ### Classic UI Authoring {#classic-ui-authoring}
 
-Classic UI authoring is still available in AEM 6.5 but is being deprecated. More information can be found [here](../../../release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). If your application is currently running on the Classic UI author environment it is recommended to upgrade to AEM 6.5 and continue using the Classic UI. Migration to the Touch UI can then be planned as separate project to be completed over several development cycles. In order to use the Classic UI in AEM 6.5 several OSGi configurations are needed to be committed to the code base. More details on how to configure this can be found [here](/sites/administering/using/enable-classic-ui.md).
+Classic UI authoring is still available in AEM 6.5 but is being deprecated. More information can be found [here](../../../release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). If your application is currently running on the Classic UI author environment it is recommended to upgrade to AEM 6.5 and continue using the Classic UI. Migration to the Touch UI can then be planned as separate project to be completed over several development cycles. In order to use the Classic UI in AEM 6.5 several OSGi configurations are needed to be committed to the code base. More details on how to configure this can be found [here](/help/sites-administering/enable-classic-ui.md).
 
 ## Align with 6.5 Repository Structure {#align-repository-structure}
 
@@ -143,7 +143,7 @@ Adobe recommends putting custom scripts at `/apps/settings/dam/indesign/scripts`
 
 ### Recovering ContextHub Configurations {#recovering-contexthub-configurations}
 
-ContextHub configurations are effected by an upgrade. Instructions on how to recover existing ContextHub configurations can be found [here](/sites/administering/using/contexthub-config.md#recovering contexthub configurations after upgrading).
+ContextHub configurations are effected by an upgrade. Instructions on how to recover existing ContextHub configurations can be found [here](/help/sites-administering/contexthub-config.md#recovering contexthub configurations after upgrading).
 
 ### Workflow Customizations {#workflow-customizations}
 
@@ -159,7 +159,7 @@ The structure for Editable templates changed between AEM 6.2 and 6.3. If you are
 
 ### CUG Implementation Changes {#cug-implementation-changes}
 
-The implementation of Closed User Groups has changed significantly to address performance and scalability limitations in previous versions of AEM. The previous version of CUG was deprecated in 6.3 and the new implementation is only supported in the Touch UI. If you are upgrading from 6.2 or ealier then Instructions to migrate to the new CUG implementation can be found [here](../../../sites/administering/using/closed-user-groups.md#upgradetoaem63).
+The implementation of Closed User Groups has changed significantly to address performance and scalability limitations in previous versions of AEM. The previous version of CUG was deprecated in 6.3 and the new implementation is only supported in the Touch UI. If you are upgrading from 6.2 or ealier then Instructions to migrate to the new CUG implementation can be found [here](/help/sites-administering//closed-user-groups.md#upgradetoaem63).
 
 ## Testing Procedure {#testing-procedure}
 

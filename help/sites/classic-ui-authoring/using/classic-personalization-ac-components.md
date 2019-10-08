@@ -25,7 +25,7 @@ When you integrate with Adobe Campaign, you have components available for when w
 
 ## Adobe Campaign Newsletter Components {#adobe-campaign-newsletter-components}
 
-All the Campaign components follow the best practices outlined in [Best Practices for Email Templates](../../../sites/administering/using/best-practices-for-email-templates.md) and are based on the Adobe markup language [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
+All the Campaign components follow the best practices outlined in [Best Practices for Email Templates](/help/sites-administering//best-practices-for-email-templates.md) and are based on the Adobe markup language [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
 
 When you open a newsletter/email that is configured to integrate with Adobe Campaign, you should see the following components in the **Adobe Campaign Newsletter **section:
 
@@ -70,7 +70,7 @@ The image (campaign) component displays an image and accompanying text according
 
 You can upload an image, then edit and manipulate it (for example, crop, rotate, add link/title/text).
 
-You can upload an image, then edit and manipulate it (for example crop, rotate, add link/title/text). You can either drag and drop an image from the [Content Finder](../../../sites/authoring/using/author-environment-tools.md#thecontentfinderclassicui) directly onto the component or its Edit dialog. You can also double-click in the central area of the Edit dialog to browse your local file system and upload an image. The two tabs of the Edit dialog also control all definitions and manipulation of the image:
+You can upload an image, then edit and manipulate it (for example crop, rotate, add link/title/text). You can either drag and drop an image from the [Content Finder](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) directly onto the component or its Edit dialog. You can also double-click in the central area of the Edit dialog to browse your local file system and upload an image. The two tabs of the Edit dialog also control all definitions and manipulation of the image:
 
 ![](assets/chlimage_1-84.png)
 
@@ -200,7 +200,7 @@ The following example shows a Text & Image (Campaign) component being displayed.
 
 ### Text & Personalization (Campaign) {#text-personalization-campaign}
 
-The Text & Personalization (Campaign) component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](../../../sites/authoring/using/rich-text-editor.md). In addition, this component lets you use context fields and personalization blocks available from Adobe Campaign; also see [Inserting Personalization](/sites/classic-ui-authoring/using/classic-personalization-ac-campaign.md#inserting-personalization).
+The Text & Personalization (Campaign) component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). In addition, this component lets you use context fields and personalization blocks available from Adobe Campaign; also see [Inserting Personalization](/sites/classic-ui-authoring/using/classic-personalization-ac-campaign.md#inserting-personalization).
 
 The selection of icons allow you to format your text, including font characteristics, alignment, links, lists and indentation.
 

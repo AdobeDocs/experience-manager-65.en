@@ -39,7 +39,7 @@ When user synchronization is enabled, user data is automatically synchronized ac
 
 For detailed, step-by-step instructions, on how to enable synchronization across a publish farm, see
 
-* [User Synchronization](/help/sites/administering/using/sync.md)
+* [User Synchronization](/help/help/sites-administering/sync.md)
 
 ## User sync in the background  {#user-sync-in-the-background}
 
@@ -71,7 +71,7 @@ As part of the process, the new site pages are replicated to all publish instanc
 
 By design, user data created in the publish environment does not appear in the author environment and vice versa.
 
-When the [User Administration and Security](/help/sites/administering/using/security.md) console is used to add new users in the publish environment, user sync will synchronize the new users and their group membership to other publish instances, if necessary. User sync will also synchronize user groups created through the security console.
+When the [User Administration and Security](/help/help/sites-administering/security.md) console is used to add new users in the publish environment, user sync will synchronize the new users and their group membership to other publish instances, if necessary. User sync will also synchronize user groups created through the security console.
 
 ### User Posts Content on Publish {#user-posts-content-on-publish}
 
@@ -85,7 +85,7 @@ User sync relies on the  author  environment to manage the user data distributio
 
 **Prerequisites**
 
-1. If users and user groups have already been created on one publisher, it is recommended to [manually sync](/help/sites/administering/using/sync.md#manually-syncing-users-and-user-groups) the user data to all publishers prior to configuring and enabling user sync.  
+1. If users and user groups have already been created on one publisher, it is recommended to [manually sync](/help/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) the user data to all publishers prior to configuring and enabling user sync.  
    Once user sync is enabled, only newly created users and groups are  syncrhonized . 
 
 1. Ensure the latest code has been installed:
@@ -129,7 +129,7 @@ Author instance pings the exporter endpoint of publishers. Whenever a user is cr
 
 It enables the author to identify the authorized user, as having permission to sync user data from  author  to publish.
 
-The [authorized user created](/help/sites/administering/using/sync.md#createauthuser) on all the publish instances helps the publishers to connect with  author  and configure Sling distribution on the author. This authorized user has all the requisite [ACLs](/help/sites/administering/using/sync.md#howtoaddacl).
+The [authorized user created](/help/help/sites-administering/sync.md#createauthuser) on all the publish instances helps the publishers to connect with  author  and configure Sling distribution on the author. This authorized user has all the requisite [ACLs](/help/help/sites-administering/sync.md#howtoaddacl).
 
 Whenever data is to be installed on or fetched from publishers, then the author connects with the publishers using the credentials (user name and password) set in this configuration.
 
@@ -150,7 +150,7 @@ Whenever data is to be installed on or fetched from publishers, then the author 
     <g class="gr_ gr_13 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="13" id="13">
       publishUser 
     </g>.</strong></li> 
-  <li>Set the username and password to the <a href="/help/sites/administering/using/sync.md#createauthorizeduser">authorized user</a>.<br /> For example, <strong> 
+  <li>Set the username and password to the <a href="/help/help/sites-administering/sync.md#createauthorizeduser">authorized user</a>.<br /> For example, <strong> 
     <g class="gr_ gr_163 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="163" id="163">
       usersync 
     </g>-admin</strong></li> 
@@ -339,13 +339,13 @@ User synchronization can stop if `rep  :cache `nodes are synced across publisher
 
 If Sling distribution fails, try the following debugging steps:
 
-1. **Check for [improperly added configurations](/help/sites/administering/using/sync.md#improperconfig).** Ensure that multiple configurations are not added or edited, instead, the existing default configurations should be edited.
+1. **Check for [improperly added configurations](/help/help/sites-administering/sync.md#improperconfig).** Ensure that multiple configurations are not added or edited, instead, the existing default configurations should be edited.
 1. **Check configurations**. Ensure that all the [configurations](../../communities/using/sync.md#bestpractices)are appropriately set in your AEM Author instance, as mentioned in the [Best Practices](../../communities/using/sync.md#main-pars-header-863110628).
-1. **Check authorized user permissions**. If the packages are not installed properly, then check that the [authorized user](/help/sites/administering/using/sync.md#createauthuser) created in the first Publish instance has the correct ACLs.
+1. **Check authorized user permissions**. If the packages are not installed properly, then check that the [authorized user](/help/help/sites-administering/sync.md#createauthuser) created in the first Publish instance has the correct ACLs.
 
-   To validate this, instead of the [created authorized user](/help/sites/administering/using/sync.md#createauthuser) change the [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites/administering/using/sync.md#adobegraniteencpasswrd) configuration on Author instance to use Admin user credentials. Now try installing the packages again. If the user sync works fine with administrator credentials, then it means that the created publish user did not have appropriate ACLs.
+   To validate this, instead of the [created authorized user](/help/help/sites-administering/sync.md#createauthuser) change the [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/help/sites-administering/sync.md#adobegraniteencpasswrd) configuration on Author instance to use Admin user credentials. Now try installing the packages again. If the user sync works fine with administrator credentials, then it means that the created publish user did not have appropriate ACLs.
 
-1. **Check Diff Observer Factory configuration**. If only specific nodes are not synced across the publish farm- for example, group members are not synchronized- then ensure that the [Adobe Granite Distribution - Diff Observer Factory](/help/sites/administering/using/sync.md#diffobserver) configuration is enabled and **rep  :members ** are set in **looked properties names**.
+1. **Check Diff Observer Factory configuration**. If only specific nodes are not synced across the publish farm- for example, group members are not synchronized- then ensure that the [Adobe Granite Distribution - Diff Observer Factory](/help/help/sites-administering/sync.md#diffobserver) configuration is enabled and **rep  :members ** are set in **looked properties names**.
 1. **Check AEM Communities User Sync Listener configuration. **If the created users are synced but subscriptions and follows are not working, then ensure that AEM Communities User Sync Listener configuration has:
 
     * Node types- set to **rep:User,  nt :unstructured**, ** nt :resource**, **rep:ACL**, **sling:Folder**, and **sling:OrderedFolder**

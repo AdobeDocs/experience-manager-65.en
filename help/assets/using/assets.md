@@ -70,7 +70,7 @@ Assets managed within CQ DAM can then be accessed via the content finder of WCM:
 
 >[!NOTE]
 >
->The basic GUI handling is the same as the rest of WCM - see [Overview of the GUI Console](../../sites/authoring/using/page-authoring.md) for full details.
+>The basic GUI handling is the same as the rest of WCM - see [Overview of the GUI Console](/help/sites-authoring/page-authoring.md) for full details.
 
 ### Digital Asset Management versus Image Component {#digital-asset-management-versus-image-component}
 

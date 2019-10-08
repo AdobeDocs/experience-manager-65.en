@@ -80,8 +80,8 @@ While creating a new project, different functions may overlap depending on your 
 1. [Create and Manage Locations](/screens/using/managing-locations.md)
 1. [Create and Manage Displays](/screens/using/managing-displays.md)
 1. [Assign Channels](../../screens/using/channel-assignment.md)
-1. [Manage Devices](https://chl-auth/content/help/en/experience-manager/6-5/sites/authoring/using/managing-devices.html)
-1. [Create and Manage Schedules](https://chl-author.corp./content/help/en/experience-manager/6-5/sites/authoring/using/managing-schedules.html)
+1. [Manage Devices](https://chl-auth/content/help/en/experience-manager/6-5/help/sites-authoring/managing-devices.html)
+1. [Create and Manage Schedules](https://chl-author.corp./content/help/en/experience-manager/6-5/help/sites-authoring/managing-schedules.html)
 1. [AEM Screens Player](/screens/using/working-with-screens-player.md)  
 
 1. [Troubleshoot Device Control Center](../../screens/using/monitoring-screens.md)

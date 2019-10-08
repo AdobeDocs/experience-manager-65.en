@@ -278,7 +278,7 @@ The external application is integrated into the paragraph system of the AEM page
 
 >[!NOTE]
 >
->Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](../../../sites/administering/using/aem-as-portal.md).
+>Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](/help/sites-administering//aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -712,7 +712,7 @@ For more detailed information about the Text component and the functionality pro
 
 #### Inplace Editing {#inplace-editing}
 
-In addition to the dialog based Rich Text editing mode, AEM also provides [Inplace Editing](../../../sites/authoring/using/editing-content.md), which allows direct editing of the text as it is displayed in the layout of the page.
+In addition to the dialog based Rich Text editing mode, AEM also provides [Inplace Editing](/help/sites-authoring/editing-content.md), which allows direct editing of the text as it is displayed in the layout of the page.
 
 ### Text & Image {#text-image}
 
@@ -787,7 +787,7 @@ The following example shows a **Title** component being displayed; the design is
 
 The **Video** component allows you to place a predefined, out-of-the-box video element on a page.
 
-See also [Configure your Video Profiles](/sites/administering/using/config-video.md#configuringvideoprofiles) for use with HTML5 elements.
+See also [Configure your Video Profiles](/help/sites-administering/config-video.md#configuringvideoprofiles) for use with HTML5 elements.
 
 After placing an instance of the component on your page you can configure:
 

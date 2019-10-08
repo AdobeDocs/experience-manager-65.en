@@ -142,7 +142,7 @@ You may choose to implement Dynamic Media only for imaging, only for video, or f
 
 By enabling Dynamic Media, the dynamic media features will be available in the UI and every uploaded image asset receives a *cqdam.pyramid.tiff* rendition that is used for fast delivery of dynamic image renditions. Those PTIFFs have significant advantages including (1) the ability to manage only a single master image and generate infinite renditions on-the-fly without any additional storage and (2) the ability to use interactive visualization such as zoom, pan, spin, and so on.
 
-If you want to use Dynamic Media Classic (Scene7) in AEM, you should not enable Dynamic Media unless you are using a [specific scenario](/sites/administering/using/scene7.md#aem-scene-integration-versus-dynamic-media). Dynamic Media is disabled unless you enable dynamic media by way of the runmode.
+If you want to use Dynamic Media Classic (Scene7) in AEM, you should not enable Dynamic Media unless you are using a [specific scenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). Dynamic Media is disabled unless you enable dynamic media by way of the runmode.
 
 To enable dynamic media, you must enable the dynamic media runmode either from the command line or from the quickstart file name.
 
@@ -1005,7 +1005,7 @@ To install feature pack 12445:
 
 1. Navigate to [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) and download either `cq-6.3.0-featurepack-12445`.
 
-   See [How to Work with Packages](../../sites/administering/using/package-manager.md) for more information on using Package Share and Packages in AEM.
+   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and Packages in AEM.
 
 1. Install the feature pack.
 

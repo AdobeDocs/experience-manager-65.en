@@ -40,7 +40,7 @@ Adobe is providing documentation and procedures (with APIs when available), for 
 
 ## AEM Foundation {#aem-foundation}
 
-See [Handling GDPR Requests for the AEM Foundation](/sites/administering/using/handling-gdpr-requests-for-aem-platform.md).
+See [Handling GDPR Requests for the AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ## AEM Opting Into Aggregate Usage Statistics Collection {#aem-opting-into-aggregate-usage-statistics-collection}
 
@@ -48,11 +48,11 @@ See [Aggregated Usage Statistics Collection](../../sites/deploying/using/opt-in-
 
 ## AEM Sites {#aem-sites}
 
-See [AEM Sites - GDPR Readiness.](/sites/administering/using/gdpr-compliance-sites.md)
+See [AEM Sites - GDPR Readiness.](/help/sites-administering/gdpr-compliance-sites.md)
 
 ## AEM Commerce {#aem-commerce}
 
-[See AEM Commerce - GDPR Readiness](/sites/administering/using/gdpr-compliance-commerce.md).
+[See AEM Commerce - GDPR Readiness](/help/sites-administering/gdpr-compliance-commerce.md).
 
 ## AEM Mobile {#aem-mobile}
 

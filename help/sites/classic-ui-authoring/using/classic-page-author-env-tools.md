@@ -62,7 +62,7 @@ You can use the content finder to locate a range of resources. Where appropriate
 * [Images](#finding-images)
 * [Documents](#finding-documents)
 * [Movies](#finding-movies)
-* [Scene 7 Media Browser](/sites/administering/using/scene7.md#scene7contentbrowser)
+* [Scene 7 Media Browser](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [](#products) [Pages](../../../sites/classic-ui-authoring/using/classic-page-author-env-tools.md#finding-pages)  
 
 * [Paragraphs](#referencing-paragraphs-from-other-pages)
@@ -171,9 +171,9 @@ To show direct page references:
 In certain situations further actions are available from Sidekick, including:
 
 * [Launches](/sites/classic-ui-authoring/using/classic-launches.md)
-* [Live Copies](/sites/administering/using/msm.md)  
+* [Live Copies](/help/sites-administering/msm.md)  
 
-* [Blueprint](/sites/administering/using/msm-best-practices.md)
+* [Blueprint](/help/sites-administering/msm-best-practices.md)
 
 Other [inter-page relationships can be seen in the Websites console](/sites/classic-ui-authoring/using/author-env-basic-handling.md#page-information-on-the-websites-console).
 
@@ -210,7 +210,7 @@ The row of icons at the bottom of the Sidekick are used to switch modes for work
 
 >
 >* [Scaffolding](../../../sites/classic-ui-authoring/using/classic-feature-scaffolding.md)
->* [Client Context](../../../sites/administering/using/client-context.md)
+>* [Client Context](/help/sites-administering//client-context.md)
 >* Websites - will open the Websites console.
 >* Reload - will refresh the page.  
 >

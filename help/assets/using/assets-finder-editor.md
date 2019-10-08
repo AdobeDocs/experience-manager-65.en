@@ -286,7 +286,7 @@ To add asset editor components:
 
 #### Metadata Form and Text Field - Configuring the View Metadata Component {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/sites/authoring/using/default-components.md#form) for more information on working with forms.
+The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components.md#form) for more information on working with forms.
 
 1. Create a start action by clicking **Edit** in the Start area of the form. You can enter a Box title, if desired. By default, the Box title is **Metadata**. Select the Client Validation check box if you want the java-script client code for validation generated.
 

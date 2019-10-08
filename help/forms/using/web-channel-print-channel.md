@@ -35,7 +35,7 @@ To upload the template, you need to be a member of the forms-user group. Use the
 
 ## Web channel {#web-channel}
 
-Template Authors and Administrators can create, edit, and enable web templates. To allow other users to author web templates, you need to give them rights. For more information, see [User, Group and Access Rights Administration](../../sites/administering/using/user-group-ac-admin.md).
+Template Authors and Administrators can create, edit, and enable web templates. To allow other users to author web templates, you need to give them rights. For more information, see [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md).
 
 ### Authoring Web Channel Template {#authoring-web-channel-template}
 
@@ -66,7 +66,7 @@ To author a web channel template Complete the following steps:
     
        ![](assets/webchanneltemplate.png)    
     
-       When creating or editing a template, there are various aspects that a Template Author can define. Creating or editing a template is similar to page authoring. For more information, see Editing Templates - Template Authors in [Creating Page Templates](../../sites/authoring/using/templates.md).
+       When creating or editing a template, there are various aspects that a Template Author can define. Creating or editing a template is similar to page authoring. For more information, see Editing Templates - Template Authors in [Creating Page Templates](/help/sites-authoring/templates.md).
 
 1. To allow usage of this template for Interactive Communication creation, enable the template.
 

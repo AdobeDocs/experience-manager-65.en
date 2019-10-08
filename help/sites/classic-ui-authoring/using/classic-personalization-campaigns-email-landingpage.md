@@ -27,7 +27,7 @@ To create an effective newsletter landing page, you need to do the following:
 >[!NOTE]
 >
 >Adobe is not planning to further enhance this capability (Managing Leads and Lists).  
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/sites/administering/using/campaign.md).
+>Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 ## Creating a List for the Newsletter {#creating-a-list-for-the-newsletter}
 
@@ -41,7 +41,7 @@ The following shows an example of a list:
 
 Create a newsletter registration form that allows users to subscribe to tags. The sample Geometrixx web site provides a newsletter page in the Geometrixx toolbar where you can create your form.
 
-To create your own newsletter form, see information about creating forms in the [Forms documentation](/sites/authoring/using/default-components.md#form). The newsletter uses the tags from the Tag library. To add additional tags, see [Tag Administration](../../../sites/authoring/using/tags.md#tagadministration).
+To create your own newsletter form, see information about creating forms in the [Forms documentation](/help/sites-authoring/default-components.md#form). The newsletter uses the tags from the Tag library. To add additional tags, see [Tag Administration](/help/sites-authoring/tags.md#tagadministration).
 
 The hidden fields in the following example provide the bare minimum amount of information (e-mail); in addition, you can add more fields later but this will impact the conversion rate.
 

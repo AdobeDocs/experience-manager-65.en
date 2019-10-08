@@ -27,7 +27,7 @@ To learn more about creating a community site visit :
 
 >[!NOTE]
 >
->If not familiar with the authoring environment, view the documentation on [basic handling](../../sites/authoring/using/basic-handling.md) and a [quick guide to authoring pages](../../sites/authoring/using/qg-page-authoring.md).
+>If not familiar with the authoring environment, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
 
 ## Available Communities Components {#available-communities-components}
 

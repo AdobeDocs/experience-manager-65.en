@@ -29,7 +29,7 @@ For an uploaded asset to qualify as a spherical panorama image that you intend t
   You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:  
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-* Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. See [Using Tags](../../sites/authoring/using/tags.md).
+* Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. See [Using Tags](/help/sites-authoring/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.
 

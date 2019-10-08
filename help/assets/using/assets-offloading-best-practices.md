@@ -155,5 +155,5 @@ Workflow offloading is implemented using an external workflow on the master, tha
 This document focuses on Asset Offloading. Here is some additional documentation on offloading:
 
 * [Offloading Jobs](/sites/deploying/using/offloading.md) 
-* [Assets workflow offloader](/sites/administering/using/workflow-offloader.md)
+* [Assets workflow offloader](/help/sites-administering/workflow-offloader.md)
 

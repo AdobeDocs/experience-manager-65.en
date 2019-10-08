@@ -45,7 +45,7 @@ After performing all the steps, your pages will look as follows:
 
 **Download the final result**
 
-To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](../../../sites/administering/using/package-manager.md) to install the package to your author instance.
+To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](/help/sites-administering//package-manager.md) to install the package to your author instance.
 
 **NOTE: **Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
 
@@ -99,7 +99,7 @@ Sample static.css file and images
 
 1. If the mywebsite item does not appear in the table, refresh the tree or the table.  
 
-1. [Using WebDAV](/sites/administering/using/webdav-access.md) access to the URL at https://localhost:4502, copy the sample `static.css` file and `images` folder from the downloaded mywebsite.zip file into the `/etc/designs/mywebsite` folder. 
+1. [Using WebDAV](/help/sites-administering/webdav-access.md) access to the URL at https://localhost:4502, copy the sample `static.css` file and `images` folder from the downloaded mywebsite.zip file into the `/etc/designs/mywebsite` folder. 
 
    ![](assets/chlimage_1-28.png)
 

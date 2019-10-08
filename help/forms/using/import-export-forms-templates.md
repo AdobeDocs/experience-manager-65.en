@@ -27,7 +27,7 @@ AEM Forms user interface allows you to export assets from an AEM instance by dow
 
 Export and import via AEM Forms user interface is supported for all assets except for Adaptive Form templates and Adaptive Form content policies. Therefore, on exporting an adaptive form from AEM Forms UI, the related adaptive form template and content policies are not automatically exported like other related assets.
 
-For these asset types, you must use AEM Package Manager to create a CRX package on the source AEM server and install the package on the destination server. For information about creating and installing packages, see [Working with packages](../../sites/administering/using/package-manager.md).
+For these asset types, you must use AEM Package Manager to create a CRX package on the source AEM server and install the package on the destination server. For information about creating and installing packages, see [Working with packages](/help/sites-administering/package-manager.md).
 
 ### Download Forms &amp; Documents assets {#download-forms-amp-documents-assets}
 
@@ -253,4 +253,4 @@ On the side panel, you can use the following to narrow down your search results:
 
 The side panel also allows you to save your search settings with names of your choice.
 
-For more information and instructions on using search, filters, saved search, and side panel, see [Search](../../sites/authoring/using/search.md).
+For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).

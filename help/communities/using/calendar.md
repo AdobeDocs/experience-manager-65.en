@@ -136,7 +136,7 @@ Under the **Tag field** tab, the tags which may be applied, if allowed under the
 
 >[!NOTE]
 >
->Visit [Administering Tags](/sites/administering/using/tags.md) to learn how to add a new tag namespace (taxonomy).
+>Visit [Administering Tags](/help/sites-administering/tags.md) to learn how to add a new tag namespace (taxonomy).
 
 #### Translation tab {#translation-tab}
 

@@ -39,19 +39,19 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>Creative Cloud integration</td> 
-   <td><p><a href="/help/sites/administering/using/creative-cloud.md">AEM to Creative Cloud Folder Sharing</a> was introduced in AEM 6.2 as a way to give creative users access to assets from AEM, so that they could open them in CC applications and upload new files or save changes to AEM. A new capability released in Creative Cloud application, Adobe Asset Link, provides a much better user expereince and more powerful access to assets from AEM directly from inside Photoshop, InDesign, and Illustrator.</p> <p>Adobe does not plan to make further enhancements to the AEM to Creative Cloud Folder Sharing integration. While the feature is included in AEM, customers are strongly advised to use replacement solutions.</p> </td> 
+   <td><p><a href="/help/help/sites-administering/creative-cloud.md">AEM to Creative Cloud Folder Sharing</a> was introduced in AEM 6.2 as a way to give creative users access to assets from AEM, so that they could open them in CC applications and upload new files or save changes to AEM. A new capability released in Creative Cloud application, Adobe Asset Link, provides a much better user expereince and more powerful access to assets from AEM directly from inside Photoshop, InDesign, and Illustrator.</p> <p>Adobe does not plan to make further enhancements to the AEM to Creative Cloud Folder Sharing integration. While the feature is included in AEM, customers are strongly advised to use replacement solutions.</p> </td> 
    <td>Customers are advised to switch to new Creative Cloud integration capabilities, including Adobe Assset Link or AEM Desktop App. Please review <a href="../assets/using/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td> 
   </tr>
   <tr>
    <td>Assets</td> 
    <td>
     <ol> 
-     <li>AssetDownloadServlet is disabled by default for the publish instances. For more details, see <a href="../sites/administering/using/security-checklist.md">AEM security checklist</a>.</li> 
+     <li>AssetDownloadServlet is disabled by default for the publish instances. For more details, see <a href="/help/sites-administering/security-checklist.md">AEM security checklist</a>.</li> 
      <li>If a user does not have sufficient (read and write) permissions on /content/dam/collections, the user cannot create a Collection.</li> 
     </ol> </td> 
    <td>
     <ol> 
-     <li>Configuration described at <a href="../sites/administering/using/security-checklist.md">AEM Security checklist</a>.</li> 
+     <li>Configuration described at <a href="/help/sites-administering/security-checklist.md">AEM Security checklist</a>.</li> 
      <li>Honor the access control setup of user and ensure appropriate permissions.<br /> </li> 
     </ol> </td> 
   </tr>

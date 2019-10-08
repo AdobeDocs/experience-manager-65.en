@@ -21,7 +21,7 @@ The basic structure of a form is:
 * Form elements
 * Form end
 
-All of these are realised with a series of default [Form components](/sites/authoring/using/default-components.md#form), available in a standard AEM installation.
+All of these are realised with a series of default [Form components](/help/sites-authoring/default-components.md#form), available in a standard AEM installation.
 
 In addition to [developing new components](/sites/developing/using/developing-components-samples.md) for use on your forms you can also:
 
@@ -36,7 +36,7 @@ In addition to [developing new components](/sites/developing/using/developing-co
 
 >[!NOTE]
 >
->This document focuses on developing forms using the [Foundation Components](../../../sites/authoring/using/default-components-foundation.md) in the classic UI. Adobe recommends leveraging the new [Core Components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html) and [Hide Conditions](/sites/developing/using/hide-conditions.md) for form development in the touch-enabled UI.
+>This document focuses on developing forms using the [Foundation Components](/help/sites-authoring/default-components-foundation.md) in the classic UI. Adobe recommends leveraging the new [Core Components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html) and [Hide Conditions](/sites/developing/using/hide-conditions.md) for form development in the touch-enabled UI.
 
 ## Preloading Form Values {#preloading-form-values}
 
@@ -56,7 +56,7 @@ This is an optional field that specifies the path to a node in the repository. W
 
 Various form fields also have the **Items Load Path**, again an optional path that points to a node in the repository.
 
-The **Items Load Path** is the path to node properties that is used to load predefined values into that specific field on the form, for example, a [drop down list](../../../sites/authoring/using/default-components-foundation.md#dropdown-list), [check box group](../../../sites/authoring/using/default-components-foundation.md#checkbox-group) or [radio group](../../../sites/authoring/using/default-components-foundation.md#radio-group).
+The **Items Load Path** is the path to node properties that is used to load predefined values into that specific field on the form, for example, a [drop down list](/help/sites-authoring/default-components-foundation.md#dropdown-list), [check box group](/help/sites-authoring/default-components-foundation.md#checkbox-group) or [radio group](/help/sites-authoring/default-components-foundation.md#radio-group).
 
 #### Example - Preloading A Dropdown List with Multiple Values {#example-preloading-a-dropdown-list-with-multiple-values}
 

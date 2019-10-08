@@ -29,7 +29,7 @@ A key factor here is that to recognize potential issues you need to know how you
 | System monitoring is (constantly) running in the background. |Including CPU, memory, disk and network usage. Using for example, iostat / vmstat / perfmon. |Logged data is visualized and can be used for tracking performance problems. Raw data is also accessible. |
 | [AEM performance is being monitored](../../../sites/deploying/using/monitoring-and-maintaining.md#monitoring-performance). |Including [Request Counters](../../../sites/deploying/using/monitoring-and-maintaining.md#request-counters) to monitor traffic levels. |If a significant, or long term loss, of performance is seen, detailed investigation should be made. |
 | You are monitoring your [Replication Agents](../../../sites/deploying/using/monitoring-and-maintaining.md#monitoring-your-replication-agents). `` |  |  |
-| Regularly purge workflow instances. |Repository size and workflow performance. |See [Regular Purging of Workflow Instances](/sites/administering/using/workflows-administering.md#regular-purging-of-workflow-instances). |
+| Regularly purge workflow instances. |Repository size and workflow performance. |See [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Backups {#backups}
 
@@ -83,9 +83,9 @@ To do this, you need to [back up your entire repository](#backing-up-your-reposi
 
 ### Backing up your repository {#backing-up-your-repository}
 
-The [Backup and Restore](/sites/administering/using/backup-and-restore.md) section of the CRX documentation covers all issues related to backups of the CRX repository.
+The [Backup and Restore](/help/sites-administering/backup-and-restore.md) section of the CRX documentation covers all issues related to backups of the CRX repository.
 
-For full details of making an online "hot" backup see [Creating an Online Backup](/sites/administering/using/backup-and-restore.md#online-backup).
+For full details of making an online "hot" backup see [Creating an Online Backup](/help/sites-administering/backup-and-restore.md#online-backup).
 
 ## Version Purging {#version-purging}
 
@@ -95,7 +95,7 @@ This section deals with maintenance operations related to the versioning feature
 
 ### Overview {#overview}
 
-The **Purge Versions **tool is available in the ** [Tools](../../../sites/administering/using/tools-consoles.md) console** under **Versioning** or directly at: ``
+The **Purge Versions **tool is available in the ** [Tools](/help/sites-administering//tools-consoles.md) console** under **Versioning** or directly at: ``
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
@@ -117,7 +117,7 @@ The **Purge Versions **tool is available in the ** [Tools](../../../sites/admini
 
 To purge versions of a web site, proceed as follows:
 
-1. Navigate to the ** [Tools](../../../sites/administering/using/tools-consoles.md)** **console**, select **Versioning** and double-click **Purge Versions.**
+1. Navigate to the ** [Tools](/help/sites-administering//tools-consoles.md)** **console**, select **Versioning** and double-click **Purge Versions.**
 1. Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
 
     * If you want to only purge the node defined by your path, unselect **Recursive**.

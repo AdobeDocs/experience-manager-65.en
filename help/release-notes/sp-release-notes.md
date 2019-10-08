@@ -235,7 +235,7 @@ The key highlights for AEM 6.5.2.0 forms are:
  <ul> 
   <li>Enabled the inclusion of dynamic-UI-state in tracking events as custom attributes.<br /> </li> 
   <li>Included support for the delivery of 360-degree video assets in Dynamic Media Scene 7.</li> 
-  <li>Enabled <strong><span class="kbd">Japanese Word Wrap</code></strong> feature via the styles plugin of Rich Text Editor. For more information, see <a href="../sites/administering/using/configure-rich-text-editor-plug-ins.md#jpwordwrap">Configure Japanese word wrap</a>.</li> 
+  <li>Enabled <strong><span class="kbd">Japanese Word Wrap</code></strong> feature via the styles plugin of Rich Text Editor. For more information, see <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap">Configure Japanese word wrap</a>.</li> 
  </ul> 
  <h3>Assets</h3> 
  <ul> 

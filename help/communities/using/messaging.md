@@ -125,7 +125,7 @@ To allow registered users to send direct messages in bulk to user groups, make s
 
 ## Troubleshooting {#troubleshooting}
 
-One way to troubleshoot problems is to enable [debugging messages in the log.](../../sites/administering/using/troubleshooting.md)
+One way to troubleshoot problems is to enable [debugging messages in the log.](/help/sites-administering/troubleshooting.md)
 
 See also [Loggers and Writers for Individual Services](/sites/deploying/using/configure-logging.md#loggers-and-writers-for-individual-services).
 

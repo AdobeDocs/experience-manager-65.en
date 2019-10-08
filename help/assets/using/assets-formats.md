@@ -696,7 +696,7 @@ MIME types are available in CRXDE Lite at the following path:
 
 See [Configure MIME type-based for upload job parameters support](../../assets/using/config-dynamic.md#configuringmimetypebasedassetsforuploadjobparametersupport).
 
-See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/sites/administering/using/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 <table>
  <tbody>

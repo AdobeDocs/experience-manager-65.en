@@ -17,7 +17,7 @@ docset: aem65
 
 A content fragment extends a standard asset; see:
 
-* [Creating and Managing Content Fragments](../../../assets/using/content-fragments.md) and [Page Authoring with Content Fragments](../../../sites/authoring/using/content-fragments.md) for further information about content fragments.
+* [Creating and Managing Content Fragments](../../../assets/using/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md) for further information about content fragments.
 
 * [Managing Assets](../../../assets/using/managing-assets-touch-ui.md) and [Customizing and Extending Assets](/assets/using/extending-assets.md) for further information about standard assets.
 
@@ -124,7 +124,7 @@ For further details see [Content Fragment - Delete Considerations](../../../asse
 >
 >The [Content Fragment Core Component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) is now recommended. See [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) for more details.
 
-Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the [**Content Fragment** core component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) - a [component that allows you to include content fragments on your pages](../../../sites/authoring/using/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this **Content Fragment** core component.
+Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the [**Content Fragment** core component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) - a [component that allows you to include content fragments on your pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this **Content Fragment** core component.
 
 * The component uses the `fragmentPath` property to reference the actual content fragment. The `fragmentPath` property is handled in the same manner as similar properties of other asset types; for example, when the content fragment is moved to another location.
 
@@ -191,7 +191,7 @@ Content fragments can be integrated with:
 
 * **Translations**
 
-  Content Fragments are fully integrated with the [AEM translation workflow](/sites/administering/using/tc-manage.md). On an architectural level, this means:
+  Content Fragments are fully integrated with the [AEM translation workflow](/help/sites-administering/tc-manage.md). On an architectural level, this means:
 
     * The individual translations of a content fragment are actually separate fragments; for example:
 

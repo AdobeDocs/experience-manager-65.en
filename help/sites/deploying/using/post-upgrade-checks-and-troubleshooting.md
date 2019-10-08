@@ -77,7 +77,7 @@ Following the upgrade you should see that Oak version has been updated to **1.10
 
 ### Inspect PreUpgradeBackup folder {#inspect-preupgradebackup-folder}
 
-During the upgrade AEM will attempt to backup customizations and store them beneath `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. In order to view this folder in CRXDE Lite you may need to [temporarily enable CRXDE Lite](/sites/administering/using/enabling-crxde-lite.md).
+During the upgrade AEM will attempt to backup customizations and store them beneath `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. In order to view this folder in CRXDE Lite you may need to [temporarily enable CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 The folder with the time stamp should have a property named `mergeStatus` with a value of `COMPLETED`. The **to-process** folder should be empty and the **overwritten** node indicates which nodes were overwritten during the upgrade. Content beneath the **leftovers** node indicate content that could not be safely merged during the upgrade. If your implementation is dependent on any of the children nodes (and not already installed by your upgraded code package) they will need to be merged manually.
 
@@ -99,7 +99,7 @@ Several features in AEM require additional steps following the upgrade. A full l
 
 #### Enable Data Store Garbage Collection {#enable-data-store-garbage-collection}
 
-If using a File Data Store ensure that the Data Store Garbage Collection task is enabled and added to the Weekly Maintenance list. Instructions are outlined [here](../../../sites/administering/using/data-store-garbage-collection.md).
+If using a File Data Store ensure that the Data Store Garbage Collection task is enabled and added to the Weekly Maintenance list. Instructions are outlined [here](/help/sites-administering//data-store-garbage-collection.md).
 
 >[!NOTE]
 >

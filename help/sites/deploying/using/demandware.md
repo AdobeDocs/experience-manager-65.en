@@ -40,12 +40,12 @@ To install eCommerce functionality you need:
 To install AEM with a Demandware Commerce integration configuration (using the demonstration catalog, Geometrixx Outdoors), the basic steps are:
 
 1. [Install AEM](../../../sites/deploying/using/deploy.md).
-1. Install the content package using the [package manager](../../../sites/administering/using/package-manager.md):
-1. [Author](../../../sites/authoring/using/page-authoring.md) any supplementary pages that you need in AEM.
+1. Install the content package using the [package manager](/help/sites-administering//package-manager.md):
+1. [Author](/help/sites-authoring/page-authoring.md) any supplementary pages that you need in AEM.
 
 >[!NOTE]
 >
->To download the packages, navigate to [Package Share](../../../sites/administering/using/package-manager.md#package-share).
+>To download the packages, navigate to [Package Share](/help/sites-administering//package-manager.md#package-share).
 
 The server connection between AEM and the Demandware Sandbox needs to be configured. Most of the configuration is already preconfigured to work with the provided SiteGenisis demo content package using default paths, libraries, and so on. If the connector is used with other sites and libraries, you will need to update this configuration.
 

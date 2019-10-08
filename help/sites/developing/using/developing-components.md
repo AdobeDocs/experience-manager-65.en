@@ -18,9 +18,9 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimiz
 
 AEM components are used to hold, format, and render the content made available on your webpages.
 
-* When [authoring pages](/sites/authoring/using/default-components.md), the components allow the authors to edit and configure the content.
+* When [authoring pages](/help/sites-authoring/default-components.md), the components allow the authors to edit and configure the content.
 
-    * When constructing a [Commerce](../../../sites/administering/using/ecommerce.md) site the components can, for example, collect and render information from the catalog.  
+    * When constructing a [Commerce](/help/sites-administering//ecommerce.md) site the components can, for example, collect and render information from the catalog.  
       See [Developing eCommerce](../../../sites/developing/using/ecommerce.md) for more information.  
     
     * When constructing a [Communities](../../../communities/using/author-communities.md) site the components can provide information to and collect information from your visitors.  
@@ -308,7 +308,7 @@ For examples, see:
 
 ## Creating and Configuring a Design Dialog {#creating-and-configuring-a-design-dialog}
 
-The Design dialog is provided when a component has design details that can be edited in [Design Mode](/sites/authoring/using/default-components-designmode.md).
+The Design dialog is provided when a component has design details that can be edited in [Design Mode](/help/sites-authoring/default-components-designmode.md).
 
 The definition is very similar to that of a [dialog used for editing content](#creating-a-new-dialog), with the difference that it is defined as a node:
 
@@ -331,7 +331,7 @@ See [Extending Page Authoring - Add New Action to a Component Toolbar](/sites/de
 
 ## Configuring a Component for the References Rail (Borrowed/Lent) {#configuring-a-component-for-the-references-rail-borrowed-lent}
 
-If your new component references content from other pages then you can consider whether you want it to impact the **Borrowed Content** and **Lent Content** sections of the [**References**](../../../sites/authoring/using/basic-handling.md#references) Rail.
+If your new component references content from other pages then you can consider whether you want it to impact the **Borrowed Content** and **Lent Content** sections of the [**References**](/help/sites-authoring/basic-handling.md#references) Rail.
 
 Out-of-the-box AEM only checks the Reference component. To add your component you need to configure the OSGi bundle **WCM Authoring Content Reference Configuration**.
 
@@ -349,12 +349,12 @@ After the component has been developed it needs to be enabled for use in an appr
 
 This can be done by either:
 
-* using [Design mode](/sites/authoring/using/default-components-designmode.md) when editing a specific page.
+* using [Design mode](/help/sites-authoring/default-components-designmode.md) when editing a specific page.
 * [defining the `components` property on the paragraph system of a template](/sites/developing/using/components-basics.md#adding-your-component-to-the-paragraph-system).
 
 ## Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM offers the possibility to configure a paragraph system on your page so that [an instance of your new component is automatically created when a user drags an (appropriate) asset onto an instance of that page](../../../sites/authoring/using/editing-content.md#insertingacomponenttouchoptimizedui) (instead of always having to drag an empty component to the page).
+AEM offers the possibility to configure a paragraph system on your page so that [an instance of your new component is automatically created when a user drags an (appropriate) asset onto an instance of that page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (instead of always having to drag an empty component to the page).
 
 This behavior, and the required asset-to-component relationship can be configured:
 
@@ -419,7 +419,7 @@ You can find the code of this page on GitHub
 
 >[!NOTE]
 >
->The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html) and Editable Templates. See [Creating Page Templates](../../../sites/authoring/using/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
+>The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
 
 ## Using the AEM Brackets Extension {#using-the-aem-brackets-extension}
 
@@ -445,7 +445,7 @@ When migrating a component that was designed for use with the classic UI to a co
 * Components
 
     * Migrate [ `cq:listener`](../../../sites/developing/using/developing-components.md#migrating-cq-listener-code) code that use classic UI specific functions
-    * RTE plugin, for further information see [Configuring the Rich Text Editor](../../../sites/administering/using/rich-text-editor.md).
+    * RTE plugin, for further information see [Configuring the Rich Text Editor](/help/sites-administering//rich-text-editor.md).
     * [Migrate `cq:listener` code](#migrating-cq-listener-code) that uses functions specific to the classic UI
 
 * Dialogs
@@ -487,7 +487,7 @@ As a developer, you want easy access to component documentation so that you can 
 
 For this reason, it is quite easy to make any existing documentation markdown you have available within the component itself.
 
-All you need to do is place a `README.md` file in the component structure. This markdown will then be displayed in the [component console](../../../sites/authoring/using/default-components-console.md).
+All you need to do is place a `README.md` file in the component structure. This markdown will then be displayed in the [component console](/help/sites-authoring/default-components-console.md).
 
 ![](assets/chlimage_1-7.png)
 

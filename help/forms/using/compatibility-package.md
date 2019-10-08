@@ -37,7 +37,7 @@ Ensure that you have [AEM Compatibility package](https://helpx.adobe.com/aem-for
 
 1. Install the latest 6.5 [Compatibility package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-   For more information on uploading and installing the package, see [How to work with packages](../../sites/administering/using/package-manager.md).
+   For more information on uploading and installing the package, see [How to work with packages](/help/sites-administering/package-manager.md).
 
 1. After the logs are stabilized, restart the server. 
 1. Use the migration utility for making your assets compatible with 6.5.

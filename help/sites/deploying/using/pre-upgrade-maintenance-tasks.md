@@ -40,7 +40,7 @@ When executing the upgrade, in addition to the content and code upgrade activiti
 
 ## Fully Back Up AEM {#fully-back-up-aem}
 
-AEM should be fully backed up before beginning the upgrade. Make sure to back up your repository, application installation, datastore, and Mongo instances if applicable. For more information on backing up and restoring an AEM instance, see [Backup and Restore](/sites/administering/using/backup-and-restore.md).
+AEM should be fully backed up before beginning the upgrade. Make sure to back up your repository, application installation, datastore, and Mongo instances if applicable. For more information on backing up and restoring an AEM instance, see [Backup and Restore](/help/sites-administering/backup-and-restore.md).
 
 ## Back Up Changes to /etc {#backup-changes-etc}
 
@@ -52,7 +52,7 @@ When starting AEM from the jar file, a `quickstart.properties` file will be gene
 
 ## Configure Workflow and Audit Log Purging {#configure-wf-audit-purging}
 
-The `WorkflowPurgeTask` and `com.day.cq.audit.impl.AuditLogMaintenanceTask` tasks require separate OSGi configurations and will not work without them. If they fail during pre-upgrade task execution, missing configurations is the most likely reason. Therefore, make sure to add OSGi configurations for these tasks or remove them altogether from the pre-upgrade optimization tasks list if you do not wish to run them. Documentation for configuring workflow purging tasks can be found at [Administering Workflow Instances](https://helpx.adobe.com/experience-manager/6-2/sites/administering/using/wf-administering.html#regular purging of workflow instances) and audit log maintenance task configuration can be found at [Audit Log Maintenance in AEM 6](/sites/administering/using/operations-audit-log.md).
+The `WorkflowPurgeTask` and `com.day.cq.audit.impl.AuditLogMaintenanceTask` tasks require separate OSGi configurations and will not work without them. If they fail during pre-upgrade task execution, missing configurations is the most likely reason. Therefore, make sure to add OSGi configurations for these tasks or remove them altogether from the pre-upgrade optimization tasks list if you do not wish to run them. Documentation for configuring workflow purging tasks can be found at [Administering Workflow Instances](https://helpx.adobe.com/experience-manager/6-2/help/sites-administering/wf-administering.html#regular purging of workflow instances) and audit log maintenance task configuration can be found at [Audit Log Maintenance in AEM 6](/help/sites-administering/operations-audit-log.md).
 
 For workflow and audit log purging on CQ 5.6 as well as audit log purging on AEM 6.0, see [Purge workflow and audit nodes](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
@@ -155,7 +155,7 @@ The list is editable. You can use the plus **(+)** and minus **(-)** buttons bes
 
 **MBean Methods**
 
-The managed bean functionality can be accessed using the [JMX Console](../../../sites/administering/using/jmx-console.md).
+The managed bean functionality can be accessed using the [JMX Console](/help/sites-administering//jmx-console.md).
 
 You can access the MBeans by:
 
@@ -270,7 +270,7 @@ To disable the custom modules defined in the JAAS configuration of `repository.x
 >
 >For more information, see [Authentication with the External Login Module](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
 >
->For an example of `LoginModule` configuration in AEM 6, see [Configuring LDAP with AEM 6](/sites/administering/using/ldap-config.md).
+>For an example of `LoginModule` configuration in AEM 6, see [Configuring LDAP with AEM 6](/help/sites-administering/ldap-config.md).
 
 ## Remove Updates From The /install Directory {#remove-updates-install-directory}
 
@@ -302,7 +302,7 @@ If using TarMK, you should execute Offline Revision Cleanup before upgrading. Th
 >
 >This step is only necessary for instances running crx3
 
-After running revision cleanup on CRX3 instances, you should run Datastore Garbage Collection to remove any unreferenced blobs in the data store. For instructions, see the documentation on [Data Store Garbage Collection](../../../sites/administering/using/data-store-garbage-collection.md).
+After running revision cleanup on CRX3 instances, you should run Datastore Garbage Collection to remove any unreferenced blobs in the data store. For instructions, see the documentation on [Data Store Garbage Collection](/help/sites-administering//data-store-garbage-collection.md).
 
 ## Upgrade the Database Schema If Needed {#upgrade-the-database-schema-if-needed}
 
@@ -341,7 +341,7 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 In order to work around this issue, make sure you do the following:
 
 1. Detach the instance from production traffic
-1. Create a backup of the user(s) causing the problem. You can do this via Package Manager. For more information, see [How to Work with Packages.](../../../sites/administering/using/package-manager.md)
+1. Create a backup of the user(s) causing the problem. You can do this via Package Manager. For more information, see [How to Work with Packages.](/help/sites-administering//package-manager.md)
 1. Delete the user(s) causing the problem. Below is a list of users that might fall under this category:
 
     1. `dynamic-media-replication`

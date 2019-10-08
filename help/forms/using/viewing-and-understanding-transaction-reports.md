@@ -47,7 +47,7 @@ Transaction reports are disabled by default. You can enable the reports from AEM
 
 ### Provide rights to view a transaction report {#provide-rights-to-view-a-transaction-report}
 
-Only members of the fd-administrator group can view transaction reports. To allow a user to view transaction reports, make users member of the fd-administrator group. For instructions about making a user a member of an AEM group, see [User, Group and Access Rights Administration](/help/sites/administering/using/user-group-ac-admin.md).
+Only members of the fd-administrator group can view transaction reports. To allow a user to view transaction reports, make users member of the fd-administrator group. For instructions about making a user a member of an AEM group, see [User, Group and Access Rights Administration](/help/help/sites-administering/user-group-ac-admin.md).
 
 ### (Optional) Configure Transaction Flush Period and Outboxes {#optional-configure-transaction-flush-period-and-outboxes}
 

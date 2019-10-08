@@ -34,10 +34,10 @@ This use case delivers content which is personalized based on the current weathe
 
 Before you start this use case, make sure you understand:
 
-* [Personalization](/help/sites/administering/using/personalization.md)
-* [Configuring ContextHub](/help/sites/administering/using/contexthub-config.md)
-* [Configuring Segmentation with ContextHub](/help/sites/administering/using/segmentation.md)
-* [Authoring Targeted Content Using Targeting Mode](/help/sites/authoring/using/content-targeting-touch.md)
+* [Personalization](/help/help/sites-administering/personalization.md)
+* [Configuring ContextHub](/help/help/sites-administering/contexthub-config.md)
+* [Configuring Segmentation with ContextHub](/help/help/sites-administering/segmentation.md)
+* [Authoring Targeted Content Using Targeting Mode](/help/help/sites-authoring/content-targeting-touch.md)
 
 ### Primary Actors {#primary-actors}
 
@@ -97,8 +97,8 @@ Follow the steps below to set up a project showcasing data triggered asset chang
    >
    >    
    >    
-   >    * ** [Configuring ContextHub](/help/sites/administering/using/contexthub-config.md)**
-   >    * ** [Configuring Segmentation with ContextHub](/help/sites/administering/using/segmentation.md)**
+   >    * ** [Configuring ContextHub](/help/help/sites-administering/contexthub-config.md)**
+   >    * ** [Configuring Segmentation with ContextHub](/help/help/sites-administering/segmentation.md)**
    >    
    >
 

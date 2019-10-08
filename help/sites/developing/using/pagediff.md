@@ -19,7 +19,7 @@ docset: aem65
 
 Content creation is an iterative process. Authoring with efficiency requires being able to see what has changed from one iteration to another. Viewing one page version and then the other is inefficient and prone to error. An author wants to be able to compare the current page to a previous version side-by-side with the differences highlighted.
 
-The page diff allows a user to compare the current page to launches, previous versions, etc. For details of this user feature, see [Page Diff](../../../sites/authoring/using/page-diff.md).
+The page diff allows a user to compare the current page to launches, previous versions, etc. For details of this user feature, see [Page Diff](/help/sites-authoring/page-diff.md).
 
 ## Operation Details {#operation-details}
 

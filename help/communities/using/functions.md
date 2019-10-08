@@ -17,7 +17,7 @@ docset: aem65
 
 The type of features expected from a community experience are well known. Community features are available as community functions. Essentially, they are one or more pages pre-wired to implement a community feature which requires more than simply adding a component to a page in author mode. They are the building blocks used to define the structure of a [community site template](/communities/using/sites.md) from which community sites are [created](../../communities/using/sites-console.md).
 
-Once a community site is created, content may be added to the resulting pages using the standard [AEM authoring mode](../../sites/authoring/using/editing-content.md). Various community functions are available as seen in the community functions console.
+Once a community site is created, content may be added to the resulting pages using the standard [AEM authoring mode](/help/sites-authoring/editing-content.md). Various community functions are available as seen in the community functions console.
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ When added to a template, the following dialog opens, which specifies the defaul
 
 ### Page Function {#page-function}
 
-The page function adds a blank page to the community site that it is wired into the features of the community site: login, menu, notifications, messaging, theming and branding. Content is added to the page using the [standard AEM authoring mode](../../sites/authoring/using/editing-content.md).
+The page function adds a blank page to the community site that it is wired into the features of the community site: login, menu, notifications, messaging, theming and branding. Content is added to the page using the [standard AEM authoring mode](/help/sites-authoring/editing-content.md).
 
 When added to a template, the only configuration is for the [Title and URL Settings](#title-and-url-settings).
 
@@ -328,9 +328,9 @@ On the `AEM Blueprint` panel, it is possible to select the blueprint which is th
 
 The community function is a mini site that includes one or more pages, pre-wired for inclusion into a community site including login, user profiles, notifications, messaging, site menu, search, theming, and branding features. Once the function is created, it is possible to [open the function](#open-community-function) in author edit mode and customize the page or component settings.
 
-Since the community function is implemented as a [live copy](/sites/administering/using/msm.md#live-copies) of a [blueprint](/sites/administering/using/msm-livecopy.md#creatingablueprint), it is possible to rollout changes made to a function which affects all community site pages created from the [community site template](/communities/using/sites.md) or [community group template](../../communities/using/tools-groups.md) that included the function. It is also possible to disassociate a page from its parent blueprint to make page-level modifications.
+Since the community function is implemented as a [live copy](/help/sites-administering/msm.md#live-copies) of a [blueprint](/help/sites-administering/msm-livecopy.md#creatingablueprint), it is possible to rollout changes made to a function which affects all community site pages created from the [community site template](/communities/using/sites.md) or [community group template](../../communities/using/tools-groups.md) that included the function. It is also possible to disassociate a page from its parent blueprint to make page-level modifications.
 
-See also [Multi Site Manager](/sites/administering/using/msm.md).
+See also [Multi Site Manager](/help/sites-administering/msm.md).
 
 ### Thumbnail {#thumbnail}
 
@@ -346,11 +346,11 @@ Select the `Open Community Function` icon to enter author edit mode for authorin
 
 ### Configuring Components {#configuring-components}
 
-A community function is implemented as a Live Copy of an AEM Blueprint, details of which are documented under [Multi Site Manager](/sites/administering/using/msm.md).
+A community function is implemented as a Live Copy of an AEM Blueprint, details of which are documented under [Multi Site Manager](/help/sites-administering/msm.md).
 
 It is possible to not only author page content, but to configure components.
 
-If configuring a component on a page of a created community site, it may be necessary to cancel [inheritance](/sites/administering/using/msm-livecopy.md#changing-live-copy-content) to configure the component. Inheritance should be re-established when configuration is completed.
+If configuring a component on a page of a created community site, it may be necessary to cancel [inheritance](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) to configure the component. Inheritance should be re-established when configuration is completed.
 
 For configuration details, visit [Communities Components](../../communities/using/author-communities.md) for authors.
 

@@ -68,7 +68,7 @@ Setting aside the left navigation rail (which appears on author, but not on publ
 
 ### Top Navigation Bar {#top-navigation-bar}
 
-The top navigation bar is constant for all consoles. For more information, see [Basic Handling](../../sites/authoring/using/basic-handling.md).
+The top navigation bar is constant for all consoles. For more information, see [Basic Handling](/help/sites-authoring/basic-handling.md).
 
 ### Toolbar {#toolbar}
 
