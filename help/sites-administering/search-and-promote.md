@@ -36,7 +36,7 @@ To call the Adobe Search&Promote service from your website, perform the followin
 
 The default URL that is configured for the Search&Promote service is `https://searchandpromote.omniture.com/px/`. To use a different service, use the OSGi console to specify a different URL.
 
-1. Open the OSGi console and click the Configuration tab. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))  
+1. Open the OSGi console and click the Configuration tab. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
 
 1. Click the Day CQ Search&Promote Configuration item.
 1. Enter the URL in the Remote Server URI box, and click Save.
@@ -51,7 +51,7 @@ Configure one or more connections to Search&Promote so that your web pages can i
 
    [https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html)
 
-1. In the Cloud Services page, click on the Adobe Search&Promote link or the Search&Promote icon.  
+1. In the Cloud Services page, click on the Adobe Search&Promote link or the Search&Promote icon.
 
 1. If this is the first time you are configuring Adobe Search&Promote, click **Configure Now** to open the Create Configuration panel.
 
@@ -61,8 +61,8 @@ Configure one or more connections to Search&Promote so that your web pages can i
 
 1. Enter a **Title** that is recognizable to page authors, and enter a unique **Name**, then click **Create**.
 
-   The **Edit Component **window opens.  
-  
+   The **Edit Component **window opens.
+
    Also, the newly created Configuration appears below **Available Configurations** on the **Cloud Services dashboard** Adobe Search&Promote list item.
 
    ![](assets/chlimage_1-60.png)
@@ -74,14 +74,14 @@ Configure one or more connections to Search&Promote so that your web pages can i
 
    >[!NOTE]
    >
-   >In order to get this information **yourself,** first** **you need to log into 
+   >In order to get this information **yourself,** first** **you need to log into
    >
    >
    >[https://searchandpromote.omniture.com/center/](https://searchandpromote.omniture.com/center/)
    >
    >
-   >using your valid Seach&Promote credentials (email/password).  
-   >Then, you need to look at your url in your brouser's address bar which should look something like this:  
+   >using your valid Seach&Promote credentials (email/password).
+   >Then, you need to look at your url in your brouser's address bar which should look something like this:
    >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >
@@ -90,13 +90,13 @@ Configure one or more connections to Search&Promote so that your web pages can i
    >
    >**Where:**
    >
-   >    
-   >    
+   >
+   >
    >    * **XXXXXXXX** corresponds with your** Member id**
-   >    
+   >
    >    * **spYYYYYYYY** corresponds with your **Account Number**
-   >    
-   >    
+   >
+   >
    >
 
 1. Click **Connect To Search&Promote**.
@@ -127,7 +127,7 @@ To configure the data center:
 
 ## Adding Search&Promote components to Sidekick {#adding-search-promote-components-to-sidekick}
 
-In Design mode, edit a **par** component to allow the Search&Promote components in Sidekick. (See the [Components](/sites/developing/using/components.md#addinganewcomponenttotheparagraphsystemdesignmode) documentation for more information.)
+In Design mode, edit a **par** component to allow the Search&Promote components in Sidekick. (See the [Components](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) documentation for more information.)
 
 For information about using the components, see See [Adding Search&Promote Features to a Web Page](/help/sites-authoring/search-and-promote.md).)
 
@@ -141,15 +141,15 @@ When you configure the Search&Promote properties for a page, all child pages inh
 >
 >The service connection must already be configured. (See [Configure the connection to Search&Promote](#connection).)
 
-1. Open the **Page Properties** dialog box. For example, on the** Websites** page, right-click the page and click **Properties**.  
+1. Open the **Page Properties** dialog box. For example, on the** Websites** page, right-click the page and click **Properties**.
 
-1. Click the **Cloud Services** tab.  
+1. Click the **Cloud Services** tab.
 
 1. To disable the inheritance of cloud services configurations from a parent page, click the padlock icon next to the inheritance path.
 
    ![](assets/sandpinheritpadlock.png)
 
-1. Click **Add Service**, select **Adobe Search&Promote**, and click **OK**.  
+1. Click **Add Service**, select **Adobe Search&Promote**, and click **OK**.
 
 1. Select the connection configuration for your Search&Promote account, and then click **OK**.
 

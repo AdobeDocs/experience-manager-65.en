@@ -21,7 +21,7 @@ This section of the documentation describes how to add client-side libraries (cl
 
 For basic information, visit :
 
-* [Using Client-Side Libraries](../../sites/developing/using/clientlibs.md) which provides usage details as well as debugging tools
+* [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) which provides usage details as well as debugging tools
 * [Clientlibs for SCF](/communities/using/client-customize.md#clientlibs) which provides useful information when customizing SCF components
 * [Blog : AEM Client Libraries explained by example](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
@@ -35,11 +35,11 @@ When the required clientlibs are missing, [adding a Communities component to a p
 
 ### Example : Placed Reviews without Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![](assets/chlimage_1-132.png) 
+![](assets/chlimage_1-132.png)
 
 ### Example : Placed Reviews with Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![](assets/chlimage_1-133.png) 
+![](assets/chlimage_1-133.png)
 
 ## Identifying Required Clientlibs {#identifying-required-clientlibs}
 
@@ -52,7 +52,7 @@ For example, at the very top of the [Reviews page](https://localhost:4502/conten
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![](assets/chlimage_1-134.png) 
+![](assets/chlimage_1-134.png)
 
 ## Adding Required Clientlibs {#adding-required-clientlibs}
 
@@ -60,7 +60,7 @@ When it is desired to add a Communities component to a page, it will be necessar
 
 Use [CRXDE|Lite](#using-crxde-lite) to modify an existing clientlibslist for a community site page.
 
-To add a clientlib for a community site using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md) :
+To add a clientlib for a community site using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de)
 * locate the `clientlibslist` node for the page on which you wish to add the component

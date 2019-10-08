@@ -1,6 +1,6 @@
 ---
 title: GDPR Readiness
-seo-title: AEM and General Data Protection Regulation (GDPR) 
+seo-title: AEM and General Data Protection Regulation (GDPR)
 description: Learn about AEM support for the EU General Data Protection Regulation (GDPR) and how to comply when implementing a new AEM project.
 seo-description: Learn about AEM support for the EU General Data Protection Regulation (GDPR) and how to comply when implementing a new AEM project.
 uuid: 9b0b8101-929c-4232-8c6e-1f9b8b2e0aa2
@@ -44,7 +44,7 @@ See [Handling GDPR Requests for the AEM Foundation](/help/sites-administering/ha
 
 ## AEM Opting Into Aggregate Usage Statistics Collection {#aem-opting-into-aggregate-usage-statistics-collection}
 
-See [Aggregated Usage Statistics Collection](../../sites/deploying/using/opt-in-aggregated-usage-statistics.md).
+See [Aggregated Usage Statistics Collection](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 ## AEM Sites {#aem-sites}
 
@@ -64,7 +64,7 @@ These AEM integrations are with GDPR ready services. No personal data from Adobe
 
 For further information see:
 
-* [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)  
+* [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)
 
 * [Adobe Analytics and GDPR](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/)
 

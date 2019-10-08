@@ -29,7 +29,7 @@ It can be accessed from **Tools -&gt;** **General -&gt;** **Components**. In the
 
 With the **Content Only** icon (top left) you can open the **Search** panel to search and/or filter the components:
 
-![](assets/screen-shot_2019-03-05at113251.png) 
+![](assets/screen-shot_2019-03-05at113251.png)
 
 ### Component Details {#component-details}
 
@@ -41,8 +41,8 @@ To view details about a specific component tap/click on the required resource. T
 
   On the Properties tab you can:
 
-    * View the general properties of the component.  
-    * View how the [icon or abbreviation has been defined](/sites/developing/using/components-basics.md#component-icon-in-touch-ui) for the component.
+    * View the general properties of the component.
+    * View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.
 
         * Clicking the source of the icon will take you to that component.
 
@@ -68,7 +68,7 @@ To view details about a specific component tap/click on the required resource. T
 
 * **Documentation**
 
-  If the developer has provided [documentation for the component](../../../sites/developing/using/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.
+  If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.
 
   ![](assets/chlimage_1-171.png)
 

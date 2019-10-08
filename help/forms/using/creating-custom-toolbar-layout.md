@@ -18,7 +18,7 @@ docset: aem65
 
 When you create an adaptive form, you can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
 
-Toolbar layout uses rely heavily on client-side processing driven by complex JavaScript and CSS code. Organizing and optimizing the serving of this code can be a complicated issue. To help deal with this issue, AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client. The client-side library system then takes care of producing the correct links in your final webpage to load the correct code. For detailed information, see [How client-side libraries work in AEM.](../../sites/developing/using/clientlibs.md)
+Toolbar layout uses rely heavily on client-side processing driven by complex JavaScript and CSS code. Organizing and optimizing the serving of this code can be a complicated issue. To help deal with this issue, AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client. The client-side library system then takes care of producing the correct links in your final webpage to load the correct code. For detailed information, see [How client-side libraries work in AEM.](/help/sites-developing/clientlibs.md)
 
 ![Sample layout of the toolbar](assets/default_toolbar_layout.png)
 
@@ -28,7 +28,7 @@ Adaptive forms provide a set of out-of-the-box layouts:
 
 ![Toolbar layouts available out-of-the-box ](assets/toolbar1.png)
 
-Toolbar layouts available out-of-the-box 
+Toolbar layouts available out-of-the-box
 
 In addition, you can create a custom toolbar layout.
 
@@ -96,10 +96,10 @@ Demo custom toolbar layout
            <cq:includeClientLib categories="customtoolbarlayoutauthor" />
    </c:if>
    <div class="guidetoolbar mobileToolbar mobilecustomToolbar" data-guide-position-class="guide-element-hide">
-       <div data-guide-scroll-indicator="true"></div>            
+       <div data-guide-scroll-indicator="true"></div>
        <%@include file="../toolbarCommon.jsp" %>
    </div>
-   
+
    ```
 
    >[!NOTE]
@@ -110,18 +110,18 @@ Demo custom toolbar layout
 
    ```php
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
-   <%--------------------  
+   <%--------------------
    This code iterates over all the tool bar items using the guideToolbar bean.
    If the number of toolbar items are more than 3, then we create a dropdown menu using bootstrap for other actions present in the toolbar.
-   In both desktop and mobile devices, the layout is different.    
+   In both desktop and mobile devices, the layout is different.
    ---------------------------------%>
-   
+
    <c:forEach items="${guideToolbar.items}" var="toolbarItem" varStatus="loop">
        <c:choose>
          <c:when test="${loop.index gt 2}">
       <c:choose>
        <c:when test="${loop.index eq 3}">
-                     <div class="btn-group dropdown">   
+                     <div class="btn-group dropdown">
                        <button type="button" class="btn btn-primary dropdown-toggle label" data-toggle="dropdown">Actions <span class="caret"></code></button>
                        <button type="button" class="btn btn-primary dropdown-toggle icon" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></code></button>
              <ul class="dropdown-menu" role="menu">
@@ -143,7 +143,7 @@ Demo custom toolbar layout
                            </li>
                        </ul>
                      </div>
-   
+
        </c:when>
        <c:otherwise>
          <li>
@@ -154,73 +154,73 @@ Demo custom toolbar layout
        </c:otherwise>
       </c:choose>
          </c:when>
-         <c:otherwise>         
+         <c:otherwise>
      <div id="${toolbarItem.id}_guide-item">
            <sling:include path="${toolbarItem.path}" resourceType="${toolbarItem.resourceType}"/>
         </div>
          </c:otherwise>
-    </c:choose>   
+    </c:choose>
    </c:forEach>
-   
+
    ```
 
    The CSS present inside the clientlib node:
 
    ```css
    .mobilecustomToolbar .dropdown {
-       display: inline-block;    
+       display: inline-block;
    }
 
    .mobilecustomToolbar .dropdown {
-       float: right;   
+       float: right;
    }
-   
+
    .mobilecustomToolbar .dropdown > button {
-      padding: 6px 12px;  
-   }         
-   
+      padding: 6px 12px;
+   }
+
    .mobilecustomToolbar .dropdown .guideFieldWidget, .mobilecustomToolbar .dropdown .guideFieldWidget button {
-       width: 100%;   
-   }         
-   
+       width: 100%;
+   }
+
    .mobilecustomToolbar .dropdown .caret{
        border-bottom: 6px solid;
        border-right: 6px solid transparent;
        border-left: 6px solid transparent;
-    border-top: transparent;                                     
+    border-top: transparent;
    }
-   
+
    .mobilecustomToolbar .dropdown-menu{
     top: auto;
-    bottom: 100%;                            
+    bottom: 100%;
    }
-   
-   .mobilecustomToolbar .btn-group {            
-    vertical-align: super;            
+
+   .mobilecustomToolbar .btn-group {
+    vertical-align: super;
    }
 
    .mobilecustomToolbar .glyphicon {
     font-size: 24px;
    }
 
-   @media (max-width: 767px){                                       
-   
+   @media (max-width: 767px){
+
     .mobilecustomToolbar .dropdown .guideButton .iconButton-icon {
       display: none;
-       }  
-   
+       }
+
        .mobilecustomToolbar .dropdown .guideButton .iconButton-label {
       display: inline-block;
-       } 
-   
+       }
+
        .mobilecustomToolbar .dropdown .guideButton button {
       background-color: #013853;
        }
 
-    .mobilecustomToolbar .btn-group {            
-     vertical-align: top;            
-    }    
-   
+    .mobilecustomToolbar .btn-group {
+     vertical-align: top;
+    }
+
    }
    ```
 

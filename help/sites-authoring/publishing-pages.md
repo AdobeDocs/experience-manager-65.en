@@ -25,13 +25,13 @@ You can also publish/unpublish a page immediately or at a predefined date/time i
 >
 >Certain terms related to publishing can be confused:
 >
->* **Publish / Unpublish** 
->  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).  
+>* **Publish / Unpublish**
+>  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).
 >
->* **Activate / Deactivate** 
->  These terms are synonymous with publish/unpublish.  
+>* **Activate / Deactivate**
+>  These terms are synonymous with publish/unpublish.
 >
->* **Replicate / Replication** 
+>* **Replicate / Replication**
 >  These are the technical terms describing the movement of data (e.g. page content, files, code, user comments) from one environment to another such as when publishing or reverse-replicating user comments.
 >
 
@@ -40,7 +40,7 @@ You can also publish/unpublish a page immediately or at a predefined date/time i
 >If you do not have the required privileges for publishing a specific page:
 >
 >* A workflow will be triggered to notify the appropriate person of your request to publish.
->* This [workflow may have been customized](../../../sites/developing/using/workflows-models.md#main-pars-procedure-6fe6) by your development team.
+>* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 >
 
@@ -61,11 +61,11 @@ If you are editing a page, it can be published directly from the editor.
 
 1. Depending on whether the page has references that need publishing:
 
-    * The page will be published directly if there are no references to be published.  
+    * The page will be published directly if there are no references to be published.
     * If the page has references that need publishing, these will be listed in the **Publish** wizard, where you can either:
 
-        * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.  
-        
+        * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
+
         * Use **Cancel** to abort the action.
 
    ![](assets/chlimage_1.png)
@@ -187,7 +187,7 @@ To publish or unpublish a page using Manage Publication:
    The resources are grouped by the workflows triggered and each given options to:
 
     * Define the title of the workflow.
-    * Keep the workflow package, provided that the workflow has [multi-resourse support](../../../sites/developing/using/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    * Keep the workflow package, provided that the workflow has [multi-resourse support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     * Define a title of the workflow package if the option to keep the workflow package was chosen.
 
    Click **Publish** or **Publish Later **to complete the publication.

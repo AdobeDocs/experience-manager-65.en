@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot issues with AEM Rich Text Editor
 seo-title: FAQ to troubleshoot AEM RTE
-description: Know how to troubleshoot the top-issues and errors related to AEM Rich Text Editor. 
-seo-description: Know how to troubleshoot the top-issues and errors related to AEM Rich Text Editor. 
+description: Know how to troubleshoot the top-issues and errors related to AEM Rich Text Editor.
+seo-description: Know how to troubleshoot the top-issues and errors related to AEM Rich Text Editor.
 uuid: 3a3219db-2366-4164-ad04-4dd1fc990b9d
 contentOwner: asgupta
 topic-tags: troubleshoot
@@ -46,4 +46,4 @@ Also, verify that your multifield implementation code and node structure are cor
 
 ### Configuration available to administrators are not available to authors {#configuration-available-to-administrators-are-not-available-to-authors}
 
-If the interface configurations updates are reflected for administrators but not for author accounts, ensure that the configuration node is not named `config`. Use the [ `configPath` property](/sites/developing/using/components-basics.md#cq-inplaceediting).
+If the interface configurations updates are reflected for administrators but not for author accounts, ensure that the configuration node is not named `config`. Use the [ `configPath` property](/help/sites-developing/components-basics.md#cq-inplaceediting).

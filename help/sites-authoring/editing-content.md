@@ -133,7 +133,7 @@ You can add a new component by using the [component browser](/help/sites-authori
 
 1. Make sure that your page is in [**Edit** mode](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Open the [component browser](/help/sites-authoring/author-environment-tools.md#components-browser).
-1. Drag the required component to the [required position](#component-placeholder).  
+1. Drag the required component to the [required position](#component-placeholder).
 
 1. [Edit](#editmovecopypastedelete) the component.
 
@@ -169,35 +169,35 @@ This is valid for the following asset types (some will be dependent on page/para
 <table>
  <tbody>
   <tr>
-   <th><strong>Asset Type</strong></th> 
-   <th><strong>Resultant Component Type</strong></th> 
+   <th><strong>Asset Type</strong></th>
+   <th><strong>Resultant Component Type</strong></th>
   </tr>
   <tr>
-   <td>Image</td> 
-   <td>Image</td> 
+   <td>Image</td>
+   <td>Image</td>
   </tr>
   <tr>
-   <td>Document</td> 
-   <td>Download</td> 
+   <td>Document</td>
+   <td>Download</td>
   </tr>
   <tr>
-   <td>Product</td> 
-   <td>Product</td> 
+   <td>Product</td>
+   <td>Product</td>
   </tr>
   <tr>
-   <td>Video</td> 
-   <td>Flash</td> 
+   <td>Video</td>
+   <td>Flash</td>
   </tr>
   <tr>
-   <td>Content Fragment</td> 
-   <td>Content Fragment<br /> </td> 
+   <td>Content Fragment</td>
+   <td>Content Fragment<br /> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](../../../sites/developing/using/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.
+>This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.
 
 To create a component by dragging one of the above asset types:
 
@@ -293,7 +293,7 @@ The actual actions available to the user will be shown as appropriate and not al
 
   ![](do-not-localize/screen_shot_2018-03-22at113044.png)
 
-* **Convert to an experience fragment variation  
+* **Convert to an experience fragment variation
   **
 
   This allows you to create a new [experience fragment](/help/sites-authoring/experience-fragments.md) from the selected component or add it to an existing experience fragment.
@@ -407,7 +407,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-authoring
 
 >[!NOTE]
 >
->The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the reszing handles as well as the the emulator toolbar disappear. 
+>The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the reszing handles as well as the the emulator toolbar disappear.
 >
 >If you need to edit the overall layout of the page, affecting multiple components, switch to the [layout mode](/help/sites-authoring/responsive-layout.md).
 
@@ -472,13 +472,13 @@ For example:
 
 There are two options for previewing a page:
 
-* [Preview Mode](#preview-mode) - a quick, in-place preview  
+* [Preview Mode](#preview-mode) - a quick, in-place preview
 
 * [View as Published](#view-as-published) - a full preview that opens the page in a new tab
 
 >[!NOTE]
 >
->* Links in the content are visible, but not accessible in Edit mode. 
+>* Links in the content are visible, but not accessible in Edit mode.
 >* Use either of the preview options if you want to navigate using your links.
 >* Use the [keyboard shortcut](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
 >
@@ -491,7 +491,7 @@ There are two options for previewing a page:
 
 When editing content you can preview the page using the preview [mode](/help/sites-authoring/author-environment-tools.md#page-modes). This mode:
 
-* Hides various edit mechanisms to give you a quick view of how the page will appear on publish.  
+* Hides various edit mechanisms to give you a quick view of how the page will appear on publish.
 * Allows you to use links to navigate.
 * Does **not** refresh the page content.
 

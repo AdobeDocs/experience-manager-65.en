@@ -1,8 +1,8 @@
 ---
 title: Install and configure Interactive Communications
 seo-title: Install and configure Interactive Communications
-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits. 
-seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits. 
+description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
@@ -34,14 +34,14 @@ AEM Forms Interactive Communications run admin, authoring, and agent user interf
 
 Before you begin to install and configure interactive communication and correspondence management capabilities of AEM Forms, ensure that:
 
-* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](../../sites/deploying/using/technical-requirements.md).  
+* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least one AEM instances (Author or Processing) to run AEM Forms interactive communication and correspondence management capabilities:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
-    * **Processing:** A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.   
-    
+    * **Processing:** A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.
+
     * **Publish**: An AEM instance that serves the published content to the public over the Internet or an internal network.
 
 * Memory requirements are met. AEM Forms add-on package requires:
@@ -52,32 +52,32 @@ Before you begin to install and configure interactive communication and correspo
 * Extra requirements for UNIX-based systems: If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system.
 
 <table>
- <tbody> 
-  <tr> 
-   <td>expat</td> 
-   <td>libxcb</td> 
-   <td>freetype</td> 
-   <td>libXau</td> 
-  </tr> 
-  <tr> 
-   <td>libSM</td> 
-   <td>zlib</td> 
-   <td>libICE</td> 
-   <td>libuuid</td> 
-  </tr> 
-  <tr> 
-   <td>glibc</td> 
-   <td>libXext</td> 
-   <td><p>nss-softokn-freebl</p> </td> 
-   <td>fontconfig</td> 
-  </tr> 
-  <tr> 
-   <td>libX11</td> 
-   <td>libXrender</td> 
-   <td>libXrandr</td> 
-   <td>libXinerama</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>expat</td>
+   <td>libxcb</td>
+   <td>freetype</td>
+   <td>libXau</td>
+  </tr>
+  <tr>
+   <td>libSM</td>
+   <td>zlib</td>
+   <td>libICE</td>
+   <td>libuuid</td>
+  </tr>
+  <tr>
+   <td>glibc</td>
+   <td>libXext</td>
+   <td><p>nss-softokn-freebl</p> </td>
+   <td>fontconfig</td>
+  </tr>
+  <tr>
+   <td>libX11</td>
+   <td>libXrender</td>
+   <td>libXrandr</td>
+   <td>libXinerama</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
@@ -138,7 +138,7 @@ Interactive communication is the default and recommended approach to create cust
 
 The AEMFD Compatibility package allows you to use the following assets from AEM 6.4 Forms, AEM 6.3 Forms, and AEM 6.2 Forms on AEM 6.5 Forms:
 
-* Document fragments  
+* Document fragments
 * Letters
 * Data dictionaries
 * Adaptive forms deprecated templates and pages
@@ -175,9 +175,9 @@ You can enable SSL communication for Form Data Model. To enable SSL communicatio
 
 You have configured an environment to use interactive communication and correspondence management capabilities. Now, the steps towards using the capability are:
 
-* [Correspondence management overview](/forms/using/interactive-communications-overview.md)  
+* [Correspondence management overview](/forms/using/interactive-communications-overview.md)
 
-* [Create an interactive communication](../../forms/using/create-interactive-communication.md)  
+* [Create an interactive communication](../../forms/using/create-interactive-communication.md)
 
 * [Create a correspondence management letter](../../forms/using/create-letter.md)
 

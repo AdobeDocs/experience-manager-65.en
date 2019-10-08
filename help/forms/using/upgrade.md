@@ -1,8 +1,8 @@
 ---
 title: Upgrade to AEM 6.5 Forms
 seo-title: Upgrade to AEM 6.5 Forms
-description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms. 
-seo-description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms. 
+description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms.
+seo-description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
 content-type: reference
 topic-tags: installing
@@ -24,7 +24,7 @@ The following diagram displays the available upgrade paths for AEM Forms on OSGi
 
 You can perform a direct upgrade from:
 
-* AEM 6.3 Forms on OSGi  
+* AEM 6.3 Forms on OSGi
 * AEM 6.4 Forms on OSGi
 
 You can also perform a multi-hop upgrade from
@@ -39,16 +39,16 @@ The following diagram displays the available upgrade paths for AEM Forms on JEE:
 
 You can perform a direct upgrade from:
 
-* AEM 6.3 Forms on JEE  
+* AEM 6.3 Forms on JEE
 * AEM 6.4 Forms on JEE
 
 You can also perform a multi-hop upgrade from
 
 * LiveCycle ES2
 * LiveCycle ES3
-* LiveCycle ES4 SP1  
-* AEM 6.0 Forms on JEE   
-* AEM 6.1 Forms on JEE   
+* LiveCycle ES4 SP1
+* AEM 6.0 Forms on JEE
+* AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
 
 You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 Forms. Do the following:
@@ -56,13 +56,13 @@ You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 
 1. Upgrade the existing AEM instance to AEM 6.5. The steps are listed below:
 
     1. Install the latest service pack and patches for AEM 6.3 Forms or AEM 6.4 Forms. For details, see [AEM Sustenance Hub](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
-    1. Prepare the source instance for the upgrade. For detailed steps, see [Upgrading to AEM 6.5](../../sites/deploying/using/upgrade.md).
-    1. Download the [AEM 6.5 QuickStart](../../sites/deploying/using/deploy.md#getting%20the%20software).
+    1. Prepare the source instance for the upgrade. For detailed steps, see [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md).
+    1. Download the [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
     1. **(Unix/Linux-based installations only)** If you are using UNIX or Linux as the underlying operating system, open the terminal window, navigate to the folder containing crx-quickstart, and run the following command:
 
        `chmod -R 755 ../crx-quickstart`
-    
-    1. Upgrade your AEM instance to AEM 6.3. For step by step instructions, see [Upgrading to AEM 6.5](../../sites/deploying/using/upgrade.md).
+
+    1. Upgrade your AEM instance to AEM 6.3. For step by step instructions, see [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md).
 
        Before continuing with the next steps, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the &lt;crx-repository&gt;/error.log file.
 
@@ -76,7 +76,7 @@ You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 
     1. In package share, search **AEM 6.5 Forms add-on packages**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
 
        Alternately, you can also use the hyperlinks listed in [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) to manually download a package.
-    
+
     1. After the download is complete, click **Downloaded**. You are redirected to package manager. In the package manager, search the downloaded package, and click **Install**.
 
        If you manually download the package using the direct link listed in [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html), then open AEM Package Manager, click **Upload Package**, select the downloaded package, and click upload. After the package is uploaded, click package name, and click **Install.**
@@ -95,24 +95,24 @@ You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 
 
       If you are using [Sample for integrating drafts & submissions component](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) with the database and upgrading from a previous version, then run the following SQL queries after performing the upgrade:
 
-      ```    
+      ```
       UPDATE metadata m, additionalmetadatatable am
       SET m.dataType = am.value
       WHERE m.id = am.id
       AND am.key = 'dataType'
-      
+
       ```
 
-      ```    
+      ```
       DELETE from additionalmetadatatable
       WHERE `key` = 'dataType'
-      
+
       ```
 
     * **(If upgrading from AEM 6.2 Forms or previous versions only) Reconfigure Adobe Sign**
 
       If you had Adobe Sign configured in the previous version of AEM Forms, then reconfigure Adobe Sign from AEM Cloud services. For more details, see [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
-    
+
     * **Support for jQuery**
 
       In AEM 6.5 Forms, version of jQuery is updated to 3.2.1 and jQuery UI version is updated to 1.12.1. AEM Form uses JQuery in **noConflict** mode. So, if you are using any other jQuery version, no issues are displayed while performing an upgrade. However, when you upgrade to AEM 6.5 Forms:
@@ -120,15 +120,15 @@ You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 
         * Ensure that your custom components, if any, are compatible with supported jQuery versions.
         * Remove unsupported APIs from the custom components. See [upgrade guide](https://jquery.com/upgrade-guide/3.0/) for the list of removed APIs. For example, support for the load(), .unload(), and .error() APIs is removed. Use the .on() method in place of aforementioned APIs. For example, change $("img").load(fn) to $("img").on("load", fn).
 
-    * **(If upgrading from AEM 6.2 Forms or previous versions only) Reconfigure analytics and reports  
+    * **(If upgrading from AEM 6.2 Forms or previous versions only) Reconfigure analytics and reports
       **
 
       In AEM 6.4 Forms, traffic variable for source and success event for impression are not available. So, when you upgrade from AEM 6.2 Forms or previous versions, AEM Forms stops sending data to Adobe Analytics server and analytics reports for adaptive forms are not available. Moreover, AEM 6.4 Forms introduces traffic variable for the version of form analytics and success event for the amount of time spent on a field. So, reconfigure analytics and reports for your AEM Forms environment. For detailed steps, see [Configuring analytics and reports](../../forms/using/configure-analytics-forms-documents.md).
 
 1. Verify that the server is upgraded successfully, all the data is also migrated successfully, and it can operate normally.
 
-    * **Verify the status of the bundles: **Ensure that all the bundles are in active state.  
-    
+    * **Verify the status of the bundles: **Ensure that all the bundles are in active state.
+
     * **Verify replication and reverse replication:** Publish, fill, and submit a few migrated forms. Verify the submitted data also.
     * **Verify access to admin and developer user interfaces:** Log in to AEM instance from an admin account and verify that you have access to the following URLs:
 
@@ -138,7 +138,7 @@ You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 
 
    >[!NOTE]
    >
-   >In AEM 6.4 Forms, the structure of crx-repository has changed. If upgrade from 6.3 Forms to AEM 6.5 Forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM](/sites/deploying/using/forms-repository-restructuring-in-aem-6-4.md).
+   >In AEM 6.4 Forms, the structure of crx-repository has changed. If upgrade from 6.3 Forms to AEM 6.5 Forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
 
 Direct upgrade path from **AEM 6.0 Forms, AEM 6.1 Forms**, and **AEM 6.2 Forms** to AEM 6.5 Forms is not available. Perform an intermediate [upgrade to AEM 6.2 Forms](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html), [upgrade to AEM 6.3 Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html), or [upgrade to AEM 6.4 Forms](/help/forms/using/upgrade.md) and then upgrade from AEM 6.3 Forms, or AEM 6.4 Forms to AEM 6.5 Forms.
 
@@ -167,9 +167,9 @@ Upgrade your AEM 6.2 instance to AEM 6.3. For step by step instructions, see [ht
 
 Migration involves moving only assets (PDF, XDP, images, adaptive forms, correspondence management assets) from one server to another - processes (LCA), settings, configurations, and a few other pieces of metadata are not migrated. Perform the following steps to migrate to AEM 6.3 Forms:
 
-1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63). 
-1. Move XDP or other compatible assets to the freshly set instance. For detailed instructions, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md). [  
-   ](../../forms/using/import-export-forms-templates.md) 
+1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63).
+1. Move XDP or other compatible assets to the freshly set instance. For detailed instructions, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md). [
+   ](../../forms/using/import-export-forms-templates.md)
 1. Build the required services, if any.
 
    For example, if you are using AEM Forms on JEE Document Services, changes are required in the code to use document services available in AEM Forms on OSGi.
@@ -179,14 +179,14 @@ Migration involves moving only assets (PDF, XDP, images, adaptive forms, corresp
     * **Run Migration Utility**
 
       The migration utility makes the adaptive forms and correspondence management assets of earlier versions compatible with AEM 6.3 forms. You can download the utility from AEM package share. For step-by-step information to configure and use the migration utility, see [migration utility](../../forms/using/migration-utility.md) documentation.
-    
+
     * **Reconfigure Adobe Sign**
 
       If you had Adobe Sign configured in the previous version of AEM Forms, then reconfigure Adobe Sign from AEM Cloud services. For more details, see [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
       Moreover, AEM 6.3 Forms release has introduced many new Adobe Sign features. For step-by-step information to use Adobe Sign, see [Using Adobe Sign in an adaptive form](../../forms/using/working-with-adobe-sign.md).
-    
-    * **Reconfigure analytics and reports  
+
+    * **Reconfigure analytics and reports
       **
 
       In AEM 6.3 Forms, traffic variable for source and success event for impression are not available. So, when you upgrade to AEM 6.3 Forms, AEM Forms stops sending data to Adobe Analytics server and analytics reports for adaptive forms are not available. Moreover, AEM 6.3 Forms introduces traffic variable for the version of form analytics and success event for the amount of time spent on a field. So, reconfigure analytics and reports for your AEM Forms environment. For detailed steps, see [Configuring analytics and reports](../../forms/using/configure-analytics-forms-documents.md).

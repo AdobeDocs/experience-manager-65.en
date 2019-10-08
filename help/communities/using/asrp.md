@@ -51,7 +51,7 @@ The following information comes from the provisioning process:
 * **Data Center URL. **Pull-down to select the production data center identified by your account representative.
 * **Default Report Suite. **Enter the name of the default report suite.
 * **Consumer Key**. Enter the consumer key.
-* **Secret. **Enter the secret. 
+* **Secret. **Enter the secret.
 * Select **Submit.**
 
 Prepare the publish instances:
@@ -73,7 +73,7 @@ Follow the instructions at [Replicate the Crypto Key](../../communities/using/de
 
 ### Externalize Links {#externalize-links}
 
-For correct profile and profile image links, be sure to properly [Configure the Link Externalizer](../../sites/developing/using/externalizer.md).
+For correct profile and profile image links, be sure to properly [Configure the Link Externalizer](/help/sites-developing/externalizer.md).
 
 Be sure to set the domains to be URLs that are routable from the Data Center URL (ASRP endpoint).
 
@@ -91,7 +91,7 @@ On AEM Author instance:
 
 * Navigate from main menu to `Tools > Operations > Replication.`
 * Select **Activate Tree.**
-* **Start Path:  
+* **Start Path:
   **browse to /etc/socialconfig/srpc/
 * Deselect **Only Modified.**
 * Select **Activate.**

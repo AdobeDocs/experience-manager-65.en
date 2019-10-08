@@ -57,7 +57,7 @@ This approach works well for a single node with a private data store. However th
 
 There are three ways of running data store garbage collection, depending on the data store setup on which AEM is running:
 
-1. Via [Revision Cleanup](/sites/deploying/using/revision-cleanup.md) - a garbage collection mechanism usually used for node store cleanup.  
+1. Via [Revision Cleanup](/help/sites-deploying/revision-cleanup.md) - a garbage collection mechanism usually used for node store cleanup.
 
 1. Via [Data Store Garbage Collection](..//help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - a garbage collection mechanism specific for external data stores, available on the Operations Dashboard.
 1. Via the [JMX Console](..//help/sites-administering/jmx-console.md).
@@ -67,33 +67,33 @@ If TarMK is being used as both the node store and data store, then Revision Clea
 The below table shows the data store garbage collection type that needs to be used for all the supported data store deployments in AEM 6:
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Node Store</strong><br /> </td> 
-   <td><strong>Data Store</strong></td> 
-   <td><strong>Garbage Collection Mechanism</strong><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>TarMK</td> 
-   <td>TarMK</td> 
-   <td>Revision Cleanup (binaries are in-lined with Segment Store)</td> 
-  </tr> 
-  <tr> 
-   <td>TarMK</td> 
-   <td>External Filesystem</td> 
-   <td><p>Data Store Garbage Collection task via Operations Dashboard</p> <p>JMX Console</p> </td> 
-  </tr> 
-  <tr> 
-   <td>MongoDB</td> 
-   <td>MongoDB</td> 
-   <td><p>Data Store Garbage Collection task via Operations Dashboard</p> <p>JMX Console</p> </td> 
-  </tr> 
-  <tr> 
-   <td>MongoDB</td> 
-   <td>External Filesystem</td> 
-   <td><p>Data Store Garbage Collection task via Operations Dashboard</p> <p>JMX Console</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Node Store</strong><br /> </td>
+   <td><strong>Data Store</strong></td>
+   <td><strong>Garbage Collection Mechanism</strong><br /> </td>
+  </tr>
+  <tr>
+   <td>TarMK</td>
+   <td>TarMK</td>
+   <td>Revision Cleanup (binaries are in-lined with Segment Store)</td>
+  </tr>
+  <tr>
+   <td>TarMK</td>
+   <td>External Filesystem</td>
+   <td><p>Data Store Garbage Collection task via Operations Dashboard</p> <p>JMX Console</p> </td>
+  </tr>
+  <tr>
+   <td>MongoDB</td>
+   <td>MongoDB</td>
+   <td><p>Data Store Garbage Collection task via Operations Dashboard</p> <p>JMX Console</p> </td>
+  </tr>
+  <tr>
+   <td>MongoDB</td>
+   <td>External Filesystem</td>
+   <td><p>Data Store Garbage Collection task via Operations Dashboard</p> <p>JMX Console</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Running Data Store Garbage Collection via the Operations Dashboard {#running-data-store-garbage-collection-via-the-operations-dashboard}
@@ -119,11 +119,11 @@ Before running data store garbage collection you should check that no backups ar
 
 >[!NOTE]
 >
->The Data Store Garbage Collection task will only be visible if you have configured an external file data store. See [Configuring node stores and data stores in AEM 6](../../../sites/deploying/using/data-store-config.md#file-data-store) for information on how to set up a file data store.
+>The Data Store Garbage Collection task will only be visible if you have configured an external file data store. See [Configuring node stores and data stores in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) for information on how to set up a file data store.
 
 ### Running Data Store Garbage Collection via the JMX Console {#running-data-store-garbage-collection-via-the-jmx-console}
 
-This section is about manually running data store garbage collection via the JMX Console. If your installation is set up without an external data store, then this does not apply to your installation. Instead see the instructions on how to run Revision cleanup under [Maintaining the Repository](/sites/deploying/using/storage-elements-in-aem-6.md#maintaining-the-repository).
+This section is about manually running data store garbage collection via the JMX Console. If your installation is set up without an external data store, then this does not apply to your installation. Instead see the instructions on how to run Revision cleanup under [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ To run garbage collection:
 
 >[!NOTE]
 >
->The data store garbage colleciton task will only start if you have configured an external file data store. If an external file data store has not been configured, the task will return the message `Cannot perform operation: no service of type BlobGCMBean found` after invoking. See [Configuring node stores and data stores in AEM 6](../../../sites/deploying/using/data-store-config.md#file-data-store) for information on how to set up a file data store.
+>The data store garbage colleciton task will only start if you have configured an external file data store. If an external file data store has not been configured, the task will return the message `Cannot perform operation: no service of type BlobGCMBean found` after invoking. See [Configuring node stores and data stores in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) for information on how to set up a file data store.
 
 ## Automating Data Store Garbage Collection {#automating-data-store-garbage-collection}
 

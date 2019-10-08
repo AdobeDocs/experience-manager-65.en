@@ -16,7 +16,7 @@ docset: aem65
 
 Multi Site Manager (MSM) functionality in Adobe Experience Manager (AEM) enables users to reuse content that is authored once and reused across multiple web-locations. The same is available for digital assets as MSM for Assets functionality. Using MSM for Assets, you can:
 
-* Create assets once and then make copies of these assets to reuse in other areas of the site.  
+* Create assets once and then make copies of these assets to reuse in other areas of the site.
 * Keep multiple copies in synchronization and update the original master copy once to push the changes to the child copies.
 * Make local changes by temporarily or permanently suspending the linking between parent and child assets.
 
@@ -32,7 +32,7 @@ To understand the usage scenarios for reusing same content (text and assets) acr
 
 MSM maintains a live relationship between the source asset and its live copies so that:
 
-* Changes to the source assets are applied (rolled out) to live copies as well, that is the live copies are synchronized with the source.  
+* Changes to the source assets are applied (rolled out) to live copies as well, that is the live copies are synchronized with the source.
 * You can update the live copies by suspending the live relationship or remove the inheritance for a few limited fields. The modifications to the source are no longer applied to the live copy.
 
 ### Glossary of MSM for Assets terms {#glossary}
@@ -61,7 +61,7 @@ MSM maintains a live relationship between the source asset and its live copies s
 
 To create live copy from one or more source assets or folders, follow either of the following:
 
-* Method 1: Select the source assets and click **[!UICONTROL Create > Live Copy]** from toolbar at the top.  
+* Method 1: Select the source assets and click **[!UICONTROL Create > Live Copy]** from toolbar at the top.
 
 * Method 2: In AEM user interface, click **[!UICONTROL Create > Live Copy]** from upper-right corner of the interface.
 
@@ -118,7 +118,7 @@ To check the information and statuses of a live copy asset or a folder, follow t
 
    Live copy information and statuses
 
-1. You can enable or disable if child assets borrow the live copy configuration.  
+1. You can enable or disable if child assets borrow the live copy configuration.
 
 1. You can choose the option for the live copy to either inherit the rollout configuration from the parent or change the configuration.
 
@@ -165,7 +165,7 @@ Suspend relationship or change rollout configuration of a specific live copy
 
 For a live copy asset or folder, you can see the following information and take the following actions directly from the References rail:
 
-* See the path of its source.  
+* See the path of its source.
 * Open or reveal a specific live copy in AEM user interface.
 * Roll out the updates.
 
@@ -182,7 +182,7 @@ After a source is modified, the changes can be propagated to the live copies usi
 You can initiate a rollout action from the source asset and update all or a few select live copies.
 
 1. Select a live copy asset or a folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
-1. Click **[!UICONTROL Live Copy Source]**. Click **[!UICONTROL Rollout]** from the toolbar at the top.  
+1. Click **[!UICONTROL Live Copy Source]**. Click **[!UICONTROL Rollout]** from the toolbar at the top.
 
 1. Select the live copies you want to update. Click **[!UICONTROL Rollout]**.
 
@@ -207,28 +207,28 @@ Roll out the modifications of source to the selected live copy
 A synchronize action pulls the modifications from a source only to the selected live copy. Sync action respects and maintains the local modifications done after canceling inheritance. The local modifications are not overwritten and the canceled inheritance is not re-established. You can initiate a sync action in three ways.
 
 <table>
- <tbody> 
-  <tr> 
-   <th scope="col" style="text-align: center;"><strong>Where in AEM interface</strong><br /> </th> 
-   <th scope="col" style="text-align: center;"><strong>When and why to use</strong><br /> </th> 
-   <th style="text-align: center;"><strong>How to use</strong><br /> </th> 
-  </tr> 
-  <tr> 
-   <td>References rail</td> 
-   <td>Quickly synchronize when you already have the source selected.<br /> </td> 
-   <td>See <a href="#refrailsource">Quick actions from References rail for source</a></td> 
-  </tr> 
-  <tr> 
-   <td>Toolbar in the Properties page<br /> </td> 
-   <td>Initiate a sync when you already have the live copy properties open.<br /> </td> 
-   <td>See <a href="#synclc">Synchronize a live copy</a></td> 
-  </tr> 
-  <tr> 
-   <td>Live Copy Overview console</td> 
-   <td>Quickly synchronize multiple assets (not necessarily all) when source folder is selected or Live Copy Overview console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go.<br /> </td> 
-   <td>See <a data-disable-query="false" href="#bulkactions">Actions on many assets in a live copy folder</a></td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th scope="col" style="text-align: center;"><strong>Where in AEM interface</strong><br /> </th>
+   <th scope="col" style="text-align: center;"><strong>When and why to use</strong><br /> </th>
+   <th style="text-align: center;"><strong>How to use</strong><br /> </th>
+  </tr>
+  <tr>
+   <td>References rail</td>
+   <td>Quickly synchronize when you already have the source selected.<br /> </td>
+   <td>See <a href="#refrailsource">Quick actions from References rail for source</a></td>
+  </tr>
+  <tr>
+   <td>Toolbar in the Properties page<br /> </td>
+   <td>Initiate a sync when you already have the live copy properties open.<br /> </td>
+   <td>See <a href="#synclc">Synchronize a live copy</a></td>
+  </tr>
+  <tr>
+   <td>Live Copy Overview console</td>
+   <td>Quickly synchronize multiple assets (not necessarily all) when source folder is selected or Live Copy Overview console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go.<br /> </td>
+   <td>See <a data-disable-query="false" href="#bulkactions">Actions on many assets in a live copy folder</a></td>
+  </tr>
+ </tbody>
 </table>
 
 ### Synchronize a live copy {#synclc}
@@ -269,7 +269,7 @@ Reset action overwrites local edits and brings the live copy at part with its so
 
 You can completely remove the relationship between a source and a live copy using Detach action. The live copy becomes a stand-alone asset or folder after it is detached. It is displayed as a new asset in AEM interface, immediately after detaching. To detach a live copy from its source, follow these steps.
 
-1. Select a live copy asset or folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.  
+1. Select a live copy asset or folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
 
 1. Click **[!UICONTROL Live Copy]**. Click **[!UICONTROL Detach]** in the toolbar. Click **[!UICONTROL Detach]** from the dialog presented.
 
@@ -288,7 +288,7 @@ Alternatively, you can quickly detach multiple assets in a live copy folder from
 If you have multiple assets in a live copy folder, initiating actions on each asset can be tedious. You can quickly initiate the basic actions on many assets from Live Copy Console. The above methods continue to work for individual assets.
 
 1. Select a source folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
-1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**.  
+1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**.
 
 1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. The actions available are **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**.
 
@@ -300,14 +300,14 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 
 ## Extend MSM for Assets {#extendapi}
 
-AEM allows you to extend the functionality using the MSM Java APIs. For Assets, the extending works just the same as it works with MSM for Site. For details, see [Extending the MSM](../../sites/developing/using/extending-msm.md) and the following for information about specific tasks:
+AEM allows you to extend the functionality using the MSM Java APIs. For Assets, the extending works just the same as it works with MSM for Site. For details, see [Extending the MSM](/help/sites-developing/extending-msm.md) and the following for information about specific tasks:
 
-* [Overview of APIs](../../sites/developing/using/extending-msm.md#overview-of-the-java-api)  
+* [Overview of APIs](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
 
-* [Create a new synchronization action](../../sites/developing/using/extending-msm.md#creating-a-new-synchronization-action)
-* [Create a new rollout configuration](../../sites/developing/using/extending-msm.md#creating-a-new-rollout-configuration)  
+* [Create a new synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
+* [Create a new rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
 
-* [Create and use a simple LiveActionFactory class](../../sites/developing/using/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
+* [Create and use a simple LiveActionFactory class](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ Live copies and sources are assets or folders that can be managed, to a certain 
 
 * Copying a live copy, creates a live copy asset with the same source as the first live copy.
 * When you move either a source or its live copy, the live relationship is retained.
-* Edit action does not work for live copy assets. If the source of a live copy is a live copy in itself, then edit action does not work for it.  
+* Edit action does not work for live copy assets. If the source of a live copy is a live copy in itself, then edit action does not work for it.
 * Check-out action is not available for live copy assets.
 * For source folder, the option to create review tasks is available.
 * When viewing the asset listing in list view and column view, a live copy asset or folder displays 'live copy' against it. This helps you easily identify live copies in a folder.
@@ -333,7 +333,7 @@ In more scenarios, MSM for Assets matches the behavior of MSM for Sites function
 
 * Blueprint in MSM for Site is called Live Copy source in MSM for Assets.
 * In Sites, you can compare a blueprint and its live copy but it is not possible in Assets to compare a source to its live copy.
-* You cannot edit a live copy in Assets.  
+* You cannot edit a live copy in Assets.
 * Sites usually have children, but Assets do not. The option to include or exclude children is not present when creating live copies of individual assets.
 * Removing the chapters step in the create site wizard is not supported in MSM for Assets.
 * Configuring MSM locks on page properties (Touch-enabled UI) is not supported in MSM for Assets.

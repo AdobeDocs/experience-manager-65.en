@@ -33,7 +33,7 @@ Transaction reports feature is available as part of the AEM forms add-on package
 
 ### Enable reverse replication on all the publish instances {#enable-reverse-replication-on-all-the-publish-instances}
 
-Transaction reports use reverse replication to consolidate count of transactions from publish instances to author instances. Set up the reverse replication on all the publish instances. For detailed instructions to setup reverse replication, see [replication](/help/sites/deploying/using/replication.md).
+Transaction reports use reverse replication to consolidate count of transactions from publish instances to author instances. Set up the reverse replication on all the publish instances. For detailed instructions to setup reverse replication, see [replication](/help/help/sites-deploying/replication.md).
 
 ### Enable transaction reports {#enable-transaction-reports}
 

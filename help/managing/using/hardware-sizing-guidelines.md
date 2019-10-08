@@ -38,7 +38,7 @@ Basic factors to consider are (in this order):
 
 * **Hard Drive**
 
-    * at least two or three times larger than the repository size** 
+    * at least two or three times larger than the repository size**
       **
 
 * **Memory**
@@ -52,19 +52,19 @@ A typical AEM setup consists of an author and a publish environment. These envir
 
 In a typical project setup, you have several environments on which to stage project phases:
 
-* **Development environment** 
+* **Development environment**
   To develop new features or make significant changes. Best practise is to work using a development environment per developer (usually local installations on their personal systems).
 
-* **Author test environment** 
+* **Author test environment**
   To verify changes. The number of test environments can vary depending on the project requirements (for example, separate for QA, integration testing, or user acceptance testing).
 
-* **Publish test environment** 
+* **Publish test environment**
   Primarily for testing social collaboration use cases and/or the interaction between author and multiple publishing instances.
 
-* **Author production environment** 
+* **Author production environment**
   For authors to edit content.
 
-* **Publish production environment** 
+* **Publish production environment**
   To serve published content.
 
 Additionally the environments may vary, ranging from a single-server system running AEM and an application server, through to a highly scaled set of multi-server, multi-CPU clustered instances. We recommend that you use a separate computer for each production system and that you do not run other applications on these computers.
@@ -73,11 +73,11 @@ Additionally the environments may vary, ranging from a single-server system runn
 
 The sections below provide guidance on how to calculate hardware requirements, taking various considerations into account. For large systems we suggest that you perform a simple set of in-house benchmark tests on a reference configuration.
 
-Performance optimization is a fundamental task that needs to be performed before any benchmarking for a specific project can be done. Please make sure to apply the advice provided in the [Performance Optimization documentation](/sites/deploying/using/configuring-performance.md) before performing any benchmark tests and using their results for any hardware sizing calculations.
+Performance optimization is a fundamental task that needs to be performed before any benchmarking for a specific project can be done. Please make sure to apply the advice provided in the [Performance Optimization documentation](/help/sites-deploying/configuring-performance.md) before performing any benchmark tests and using their results for any hardware sizing calculations.
 
 Hardware sizing requirements for advanced use cases need to be based on a detailed performance assessment of the project. Characteristics of advanced use cases requiring exceptional hardware resources include combinations of:
 
-* high content payload / throughput  
+* high content payload / throughput
 * extensive use of customized code, custom workflows or 3rd party software libraries
 * integration with unsupported external systems
 
@@ -110,7 +110,7 @@ A fail-safe website is deployed on at least two separate systems. If one system 
 
 **System resources scalability**
 
-While all systems are running, an increased computational performance is available. That additional performance is not necessarily linear with the number of cluster nodes as the relationship is highly dependent on the technical environment; please see the [Cluster documentation](../../sites/deploying/using/recommended-deploys.md) for more information.
+While all systems are running, an increased computational performance is available. That additional performance is not necessarily linear with the number of cluster nodes as the relationship is highly dependent on the technical environment; please see the [Cluster documentation](/help/sites-deploying/recommended-deploys.md) for more information.
 
 The estimation of how many cluster nodes are necessary is based on the basic requirements and specific use-cases of the particular web project:
 
@@ -121,16 +121,16 @@ The estimation of how many cluster nodes are necessary is based on the basic req
 
 For benchmarking purposes, Adobe has developed some benchmark tests for standalone author instances.
 
-* **Benchmark test 1** 
+* **Benchmark test 1**
   Calculate maximum throughput of a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages all of a similar nature. The steps involved were logging in to the site, creating a page with a SWF and Image/Text, adding a tag cloud, then activating the page.
 
-    * **Result** 
+    * **Result**
       Maximum throughput for a simple page creation exercise such as above (considered as one transaction) was found to be 1730 transactions/hour.
 
-* **Benchmark test 2** 
+* **Benchmark test 2**
   Calculate maximum throughput when load profile has a mix of fresh page creation (10%), modification of an existing page (80%) and creation then modification of a page in succession (10%). The complexity of the pages remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of the same complexity as defined in benchmark test 1.
 
-    * **Result** 
+    * **Result**
       Maximum throughput for such a mix operation scenario was found to be 3252 transactions per hour.
 
 >[!NOTE]
@@ -149,16 +149,16 @@ In the author environment the number of authors that work in parallel and the lo
 
 For such scenarios Adobe executed benchmark tests on a two node shared-nothing cluster of author instances.
 
-* **Benchmark test 1a** 
+* **Benchmark test 1a**
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput with a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages, all of a similar nature.
 
-    * **Result** 
+    * **Result**
       Maximum throughput for a simple page creation exercise, such as above, (considered as one transaction) is found to be 2016 transactions/hour. This is an increase of approximately 16% when compared to a standalone author instance for the same benchmark test.
 
-* **Benchmark test 2b** 
+* **Benchmark test 2b**
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput when the load profile has a mix of fresh page creation (10%), modification of an existing pages (80%) and creation and modification a page in succession (10%). The complexity of the page remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of complexity the same as defined in benchmark test 1.
 
-    * **Result** 
+    * **Result**
       Maximum throughput for such a mixed operation scenario was found to be 6288 transactions/hour. This is an increase of approximately 93% when compared to a standalone author instance for the same benchmark test.
 
 >[!NOTE]
@@ -175,7 +175,7 @@ You can calculate the number of computers (or CPUs) required for the author envi
 
 This formula can serve as a general guideline for scaling CPUs when authors are performing basic operations with AEM. It assumes that the system and the application are optimized. However, the formula will not hold true for advanced features such as MSM or Assets (see the sections below).
 
-Please also see the additional comments on [Parallelization](../../managing/using/hardware-sizing-guidelines.md#parallelization-of-aem-instances) and [Performance Optimization](/sites/deploying/using/configuring-performance.md).
+Please also see the additional comments on [Parallelization](../../managing/using/hardware-sizing-guidelines.md#parallelization-of-aem-instances) and [Performance Optimization](/help/sites-deploying/configuring-performance.md).
 
 ### Hardware Recommendations {#hardware-recommendations}
 
@@ -184,7 +184,7 @@ Usually you can use the same hardware for your author environment as is recommen
 The benchmark tests at Adobe were performed using the RedHat 5.5 operating system, running on a Hewlett-Packard ProLiant DL380 G5 hardware platform with the following configuration:
 
 * Two Quad Core Intel Xeon X5450 CPUs at 3.00GHz
-* 8 GB RAM  
+* 8 GB RAM
 * Broadcom NetXtreme II BCM5708 Gigabit Ethernet
 * HP Smart Array RAID Controller, 256 MB cache
 * Two 146 GB 10,000 RPM SAS disks configured as a RAID0 stripe set
@@ -230,49 +230,49 @@ Based on the complexity, you can determine the number of servers (or CPU cores) 
 The variables in the equation are as follows:
 
 <table>
- <tbody> 
-  <tr> 
-   <td>traffic</td> 
-   <td>The expected peak traffic per second. You can estimate this as the number of page hits per day, divided by 35’000.</td> 
-  </tr> 
-  <tr> 
-   <td>applicationComplexity</td> 
-   <td><p>Use 1 for a simple application, 2 for a complex application, or a value in-between:</p> 
-    <ul> 
-     <li>1 - a fully anonymous, content orientated site</li> 
-     <li>1.1 - a fully anonymous, content orientated site with client-side/Target personalization</li> 
-     <li>1.5 - a content-orientated site with both anonymous and logged in sections, client-side/Target personalization</li> 
-     <li>1.7 - for a content-orientated site with both anonymous and logged in sections, client-side/Target personalization and some user-generated content</li> 
-     <li>2 - where the entire site requires log in, with extensive use of user-generated content and a variety of personalization techniques</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>cacheRatio</td> 
-   <td>The percentage of pages that come out of the dispatcher cache. Use 1 if all pages come from the cache, or 0 if every page is computed by AEM.</td> 
-  </tr> 
-  <tr> 
-   <td>templateComplexity</td> 
-   <td>Use a value between 1 and 10 to indicate the complexity of your templates. Higher numbers indicate more complex templates, using the value 1 for sites with an average of 10 components per page, the value 5 for a page average of 40 components and 10 for an average of over 100 components.</td> 
-  </tr> 
-  <tr> 
-   <td>activations</td> 
-   <td>Number of average activations (replication of average sized pages and assets from the author to the publish tier) per hour divided by x, where x is the number of activations done on a system without performance side effects to other tasks processed by the system. You can also predefine a pessimistic initial value like x = 100.<br /> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>traffic</td>
+   <td>The expected peak traffic per second. You can estimate this as the number of page hits per day, divided by 35’000.</td>
+  </tr>
+  <tr>
+   <td>applicationComplexity</td>
+   <td><p>Use 1 for a simple application, 2 for a complex application, or a value in-between:</p>
+    <ul>
+     <li>1 - a fully anonymous, content orientated site</li>
+     <li>1.1 - a fully anonymous, content orientated site with client-side/Target personalization</li>
+     <li>1.5 - a content-orientated site with both anonymous and logged in sections, client-side/Target personalization</li>
+     <li>1.7 - for a content-orientated site with both anonymous and logged in sections, client-side/Target personalization and some user-generated content</li>
+     <li>2 - where the entire site requires log in, with extensive use of user-generated content and a variety of personalization techniques</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>cacheRatio</td>
+   <td>The percentage of pages that come out of the dispatcher cache. Use 1 if all pages come from the cache, or 0 if every page is computed by AEM.</td>
+  </tr>
+  <tr>
+   <td>templateComplexity</td>
+   <td>Use a value between 1 and 10 to indicate the complexity of your templates. Higher numbers indicate more complex templates, using the value 1 for sites with an average of 10 components per page, the value 5 for a page average of 40 components and 10 for an average of over 100 components.</td>
+  </tr>
+  <tr>
+   <td>activations</td>
+   <td>Number of average activations (replication of average sized pages and assets from the author to the publish tier) per hour divided by x, where x is the number of activations done on a system without performance side effects to other tasks processed by the system. You can also predefine a pessimistic initial value like x = 100.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 If you have a more complex website, you also need more powerful web servers so that AEM can answer a request in an acceptable time.
 
-* Complexity below 4:  
-  • 1024 MB JVM RAM&#42;  
+* Complexity below 4:
+  • 1024 MB JVM RAM&#42;
   • Low to mid-performance CPU
 
-* Complexity between 4 and 8:  
-  • 2048 MB JVM RAM&#42;  
+* Complexity between 4 and 8:
+  • 2048 MB JVM RAM&#42;
   • Mid to high-performance CPU
 
-* Complexity above 8:  
-  • 4096 MB JVM RAM&#42;  
+* Complexity above 8:
+  • 4096 MB JVM RAM&#42;
   • High to high-end-performance CPU
 
 >[!NOTE]
@@ -297,7 +297,7 @@ Allocate at least 16GB of heap and configure the DAM Update Asset workflow to us
 
 >[!NOTE]
 >
->See also the [Assets Performance Guide](/sites/deploying/using/assets-performance-sizing.md).
+>See also the [Assets Performance Guide](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Multi-Site Manager {#multi-site-manager}
 
@@ -320,7 +320,7 @@ The sizing considerations for a community site depends on the anticipated intera
 
 User generated content (UGC) submitted members is stored separately from page content. While the AEM platform uses a node store that replicates site content from author to publish, AEM Communities uses a single, common store for UGC that is never replicated.
 
-For the UGC store, it is necessary to choose a storage resource provider (SRP), which influences the chosen deployment.  
+For the UGC store, it is necessary to choose a storage resource provider (SRP), which influences the chosen deployment.
 See
 
 * [Community Content Storage](../../communities/using/working-with-srp.md)

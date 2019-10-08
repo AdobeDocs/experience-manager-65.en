@@ -24,7 +24,7 @@ With binary-less mode enabled, the content packages distributed contain referenc
 
 #### How do I enable binary-less distribution? {#how-do-i-enable-binary-less-distribution}
 
-To enable binary-less distribution, deploy with a shared blob store.  
+To enable binary-less distribution, deploy with a shared blob store.
 Check the `useBinaryReferences` property in the OSGI configuration with the factory PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* that your agent is using.
 
 #### How can I customize the error messages while navigating page hierarchy in AEM sites console? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
@@ -43,7 +43,7 @@ If one requires the authors to manage projects as well, then the workaround is t
 
 Create a language root and language copy inside the root, before creating a translation project.
 
-For example,  
+For example,
 Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Subsequently, create language copy of page from the references panel and navigate to `Create structure only` option in `Create & Translate`. Finally, create a translation project and then add the language copy to the translation job.
 
 For details, refer to the additional resources below:
@@ -53,7 +53,7 @@ For details, refer to the additional resources below:
 
 #### How to audit AEM capabilities such as, login attempts and ACL or permission changes? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-AEM has introduced the ability to log administrative changes for better troubleshooting and audit. By default, the information is logged in the `error.log` file. To make monitoring easier, it is recommended that they be redirected to a separate log file.  
+AEM has introduced the ability to log administrative changes for better troubleshooting and audit. By default, the information is logged in the `error.log` file. To make monitoring easier, it is recommended that they be redirected to a separate log file.
 To redirect the output to a separate log file, see [How to audit user management operations in AEM](https://chl-author./content/help/en/experience-manager/6-5/help/sites-administering/audit-user-management-operations.html).
 
 #### How to enable SSL by default? {#how-to-enable-ssl-by-default}
@@ -76,7 +76,7 @@ Also, if the developers want to export a tree of components they can also implem
 
 #### How to disable AEM 6.4 survey pop-up? {#how-to-disable-aem-survey-pop-up}
 
-You can opt into usage statistics collection by using either the Touch UI or the Web Console. For detailed instructions, see [Opting into aggregated usage statistics collection](../../../sites/deploying/using/opt-in-aggregated-usage-statistics.md).
+You can opt into usage statistics collection by using either the Touch UI or the Web Console. For detailed instructions, see [Opting into aggregated usage statistics collection](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 #### Is there a good resource that highlights the key features for upgrading to AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
@@ -100,7 +100,7 @@ When creating language copies through classic UI, Assets are not moved under the
 
 Whereas, when you create a language copy through Touch UI (**References** -&gt; **Update Language Copy**), a new DAM folder is created under the new language and assets are referenced from there.
 
-This is default setting for OOTB configurations. You can set **Translate Page Assets** = **Do not translate** in Translation configurations.  
+This is default setting for OOTB configurations. You can set **Translate Page Assets** = **Do not translate** in Translation configurations.
 For AEM 6.4, **Tools** &gt; **Cloud Services** &gt; **Translation Cloud services**.
 
 #### How to disable an AEM component causing exponential growth for the AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
@@ -117,13 +117,13 @@ To setup and configure Asset Insights for Experience Manager deployed via Adobe 
 
 #### How to customize admin consoles? {#how-to-customize-admin-consoles}
 
-AEM provides various mechanisms to enable you to customize the consoles and the page authoring functionality of your authoring instance. To learn how to create a custom console and customize a default view for a console, please refer to [Customizing the Consoles](../../../sites/developing/using/customizing-consoles-touch.md).
+AEM provides various mechanisms to enable you to customize the consoles and the page authoring functionality of your authoring instance. To learn how to create a custom console and customize a default view for a console, please refer to [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 #### What is the difference between CoralUI 2 and CoralUI 3-based components? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-A new set of Sling components of Granite UI Foundation is created for Coral3 and is located under [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) There is one set for CoralUI 2-based components and one set for CoralUI 3-based components. The new set will not be just a copy-paste of the old set, rather it will be cleaned up (for example streamlining, removing deprecated feature). So it is recommended that a page only use either CoralUI 3-based or CoralUI 2-based set.
+A new set of Sling components of Granite UI Foundation is created for Coral3 and is located under [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-4/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) There is one set for CoralUI 2-based components and one set for CoralUI 3-based components. The new set will not be just a copy-paste of the old set, rather it will be cleaned up (for example streamlining, removing deprecated feature). So it is recommended that a page only use either CoralUI 3-based or CoralUI 2-based set.
 
-To learn more in detail, please refer to [Migration Guide to CoralUI 3-based](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+To learn more in detail, please refer to [Migration Guide to CoralUI 3-based](https://helpx.adobe.com/experience-manager/6-4/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### How to customize the search component in AEM Assets? {#how-to-customize-the-search-component-in-aem-assets}
 

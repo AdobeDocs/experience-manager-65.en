@@ -30,7 +30,7 @@ An Experience Fragment:
 
 You can use Experience Fragments:
 
-* If an author wants to re-use parts (a fragment of an experience) of a page, they need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. Experience Fragments eliminate the need for copy/paste.  
+* If an author wants to re-use parts (a fragment of an experience) of a page, they need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. Authors want to use AEM only for authoring but not for delivering to the customer. A third party system/touchpoint would consume that experience and then deliver to the end user.
 
 >[!NOTE]
@@ -61,7 +61,7 @@ Experience Fragments should be used:
 
 * When you use Omnichannel Commerce.
 
-    * Sharing commerce-related content on [social media](../../../sites/developing/using/experience-fragments.md#social-variations) channels at scale
+    * Sharing commerce-related content on [social media](/help/sites-developing/experience-fragments.md#social-variations) channels at scale
     * Making touchpoints transactional
 
 ## Creating an Experience Fragment {#creating-an-experience-fragment}
@@ -86,7 +86,7 @@ To create an Experience Fragment:
 
    >[!NOTE]
    >
-   >See [Templates for Experience Fragments](../../../sites/developing/using/experience-fragments.md#templates-for-experience-fragments) for further details.
+   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
 
 1. Enter the **Properties** for your **Experience Fragment**.
 
@@ -98,8 +98,8 @@ To create an Experience Fragment:
 
    A message will be displayed. Select:
 
-    * **Done** to return to the console   
-    
+    * **Done** to return to the console
+
     * **Open** to open the fragment editor
 
 ## Editing your Experience Fragment {#editing-your-experience-fragment}
@@ -163,7 +163,7 @@ You can now use your Experience Fragment when authoring your pages:
 
 1. Add the actual Experience Fragment to the component instance; either:
 
-    * Drag the required fragment from the Assets Browser and drop onto the component  
+    * Drag the required fragment from the Assets Browser and drop onto the component
     * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done** (tick)
 
    ![](assets/xf-09.png)
@@ -200,11 +200,11 @@ To create a new Building Block:
 
 Your building block is visible in the **Building Blocks** tab. For each block, the following actions are available:
 
-* Go to master: open the master variation in a new tab  
-* Rename   
+* Go to master: open the master variation in a new tab
+* Rename
 * Delete
 
-![](assets/xf-13.png) 
+![](assets/xf-13.png)
 
 #### Using a Building Block {#using-a-building-block}
 
@@ -235,15 +235,15 @@ Details of your fragment can be seen:
 
     * **Basic**
 
-        * **Title** - mandatory  
-        
+        * **Title** - mandatory
+
         * **Description**
         * **Tags**
-        * **Total number of variants** - information only  
-        
+        * **Total number of variants** - information only
+
         * **Number of web variants** - information only
         * **Number of non-web variants** - inf**ormation only**
-        
+
         * **Number of pages using this fragment** - information only
 
     * **Cloud Services**
@@ -267,7 +267,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 >[!NOTE]
 >
->Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](../../../sites/developing/using/experience-fragments.md#the-plain-html-rendition).
+>Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
@@ -277,7 +277,7 @@ For export to Adobe Target, JSON can also be used. See [Target Integration with 
 
 ## Configuring Allowed Templates {#configuring-allowed-templates}
 
-1. Navigate to the required **Experience Fragments** folder.  
+1. Navigate to the required **Experience Fragments** folder.
 
 1. Select **Configuration options**:
 
@@ -289,7 +289,7 @@ For export to Adobe Target, JSON can also be used. See [Target Integration with 
 
    >[!NOTE]
    >
-   >See [Templates for Experience Fragments](../../../sites/developing/using/experience-fragments.md#templates-for-experience-fragments) for further details.
+   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
 
 1. Select **Save**.
 

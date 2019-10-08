@@ -26,7 +26,7 @@ The integration provides you with the following features:
 * The ability to create Emails in AEM and publish them to Silverpop for distribution.
 * The ability to set action of a AEM form to create an Silverpop subscriber.
 
-After Silverpop Engage is configured, you can publish newsletters or emails to Silverpop Engage. See [Publishing Newsletters to an Email Service](/sites/classic-ui-authoring/using/classic-personalization-campaigns.md).
+After Silverpop Engage is configured, you can publish newsletters or emails to Silverpop Engage. See [Publishing Newsletters to an Email Service](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
 ## Creating a Silverpop Configuration {#creating-a-silverpop-configuration}
 
@@ -45,8 +45,8 @@ To create a Silverpop configuration in Cloud Services:
 
 1. Enter a title and optionally, a name and click **Create**. The** Silverpop Settings** configuration window opens.
 1. Enter the username, password and select an API endpoint from the dropdown list.
-1. Click **Connect to Silverpop.** When you have successfully connected you see a success dialog. Click **OK** to exit the window. You can go to Silverpop by clicking **Go to Silverpop Engage**. 
-1. Silverpop has been configured. You can edit the configuration by clicking **Edit**. 
+1. Click **Connect to Silverpop.** When you have successfully connected you see a success dialog. Click **OK** to exit the window. You can go to Silverpop by clicking **Go to Silverpop Engage**.
+1. Silverpop has been configured. You can edit the configuration by clicking **Edit**.
 1. Additionally, Silverpop Engage framework can be configured for personalized actions by providing title and name (optional). Click Create will successfully create the framework for the already configured Silverpop connection.
 
    Imported data extension columns can later be used through the AEM component - **Text and Personalization**.
@@ -83,7 +83,7 @@ To configure the API end points :
 1. Add two properties to the newly added node:
 
     1. **Name**: `text`, **Type**: `String`, **Value**: `Engage 0`
-    
+
     1. **Name**: `value`, **Type**: `String`, **Value**: `https://api0.silverpop.com`
 
    ![](assets/chlimage_1-42.png)
@@ -95,7 +95,7 @@ To configure the API end points :
    Add two properties to the newly added node:
 
     1. **Name**: `text`, **Type**: `String`, **Value**: `Pilot`
-    
+
     1. **Name**: `value`, **Type**: `String`, **Value**: `https://apipilot.silverpop.com/XMLAPI`
 
 1. To change the existing API End points (Engage 1 to 6), click each of them one-by-one and replace the values as follows:

@@ -69,7 +69,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures. 
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
 ![Cloud-based digital signatures on an ipad](assets/samll_362274_dc_february_launch_press_items_cloud_signature.png)
 
@@ -95,7 +95,7 @@ You can now define rules to [add checkboxes to the Adaptive Form dynamically](..
 
 Variables enable workflow steps to hold and pass metadata across workflow steps at runtime. You can create different types of variables for storing different types of data. For example, integers, strings, documents, or form data model instances. Typically, you use a variable or a collection of variables when you need to make a decision based on the value that it holds or to store information that you need later in a process.
 
-Variables are an extension of [MetaDataMap](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface available in the previous version. It helps save time spent in developing custom ECMAScript code used to retrieve and update metadata values. You continue using MetaDataMap interface and ECMAScript code to manipulate metadata. Some benefits of using variables over MetaDataMap and ECMAScript are:
+Variables are an extension of [MetaDataMap](https://helpx.adobe.com/experience-manager/6-4/help/sites-developing/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface available in the previous version. It helps save time spent in developing custom ECMAScript code used to retrieve and update metadata values. You continue using MetaDataMap interface and ECMAScript code to manipulate metadata. Some benefits of using variables over MetaDataMap and ECMAScript are:
 
 * Dynamically store, update, and use values stored in a variable across the workflow without relying on custom code
 * Retrieve and update values directly to a form data model and data file (XML/JSON ) of a submitted form
@@ -118,7 +118,7 @@ Logging capabilities of forms-centric workflow steps are standardized. Now, all 
 You can now:
 
 * [Validate input data](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) based on a list of constraints. It helps ensure that only valid data is submitted to data source.
-* [Override default endpoint](../../forms/using/configure-data-sources.md#configure-soap-web-services) defined in a WSDL (Web Services Description Language) file.  
+* [Override default endpoint](../../forms/using/configure-data-sources.md#configure-soap-web-services) defined in a WSDL (Web Services Description Language) file.
 
 * [Override default](../../forms/using/configure-data-sources.md#configure-restful-web-services) [scheme, host, and base path](../../forms/using/configure-data-sources.md#configure-restful-web-services) defined in Swagger definition file.
 
@@ -126,75 +126,75 @@ You can now:
 
 ### Major platform updates {#major-platform-updates}
 
-AEM Forms can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers. The following are the major changes in [supported platforms](../../forms/using/aem-forms-jee-supported-platforms.md): 
+AEM Forms can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers. The following are the major changes in [supported platforms](../../forms/using/aem-forms-jee-supported-platforms.md):
 
 <table>
  <tbody>
   <tr>
-   <td>Component</td> 
-   <td>Support Removed</td> 
+   <td>Component</td>
+   <td>Support Removed</td>
   </tr>
   <tr>
-   <td>Operating systems</td> 
+   <td>Operating systems</td>
    <td>
-    <ul> 
-     <li>Microsoft Windows Server 2012 R2</li> 
-     <li>IBM AIX*</li> 
-     <li>Sun Solaris*</li> 
-    </ul> </td> 
+    <ul>
+     <li>Microsoft Windows Server 2012 R2</li>
+     <li>IBM AIX*</li>
+     <li>Sun Solaris*</li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>Application servers<br /> </td> 
+   <td>Application servers<br /> </td>
    <td>
-    <ul> 
-     <li>Oracle Weblogic</li> 
-    </ul> </td> 
+    <ul>
+     <li>Oracle Weblogic</li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>Databases</td> 
+   <td>Databases</td>
    <td>
-    <ul> 
-     <li>IBM DB2 <br /> </li> 
-     <li>Oracle RAC</li> 
-    </ul> </td> 
+    <ul>
+     <li>IBM DB2 <br /> </li>
+     <li>Oracle RAC</li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>LDAP servers</td> 
+   <td>LDAP servers</td>
    <td>
-    <ul> 
-     <li>Microsoft Active Directory 2012</li> 
-     <li>Novell eDirectory 8.8.7 </li> 
-     <li>IBM Lotus Domino 8.5.0 </li> 
-    </ul> </td> 
+    <ul>
+     <li>Microsoft Active Directory 2012</li>
+     <li>Novell eDirectory 8.8.7 </li>
+     <li>IBM Lotus Domino 8.5.0 </li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>Email servers</td> 
+   <td>Email servers</td>
    <td>
-    <ul> 
-     <li>IBM Lotus Domino 8.5.0 </li> 
-    </ul> </td> 
+    <ul>
+     <li>IBM Lotus Domino 8.5.0 </li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>Connectors</td> 
+   <td>Connectors</td>
    <td>
-    <ul> 
-     <li>Connector for Microsoft Sharepoint 2013</li> 
-     <li>Connector for EMC Documentum 7.0</li> 
-    </ul> </td> 
+    <ul>
+     <li>Connector for Microsoft Sharepoint 2013</li>
+     <li>Connector for EMC Documentum 7.0</li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>AEM Forms app<br /> </td> 
+   <td>AEM Forms app<br /> </td>
    <td>
-    <ul> 
-     <li>Windows 8.1 support</li> 
-    </ul> </td> 
+    <ul>
+     <li>Windows 8.1 support</li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>Java </td> 
+   <td>Java </td>
    <td>
-    <ul> 
-     <li>Java 11</li> 
-    </ul> </td> 
+    <ul>
+     <li>Java 11</li>
+    </ul> </td>
   </tr>
  </tbody>
 </table>

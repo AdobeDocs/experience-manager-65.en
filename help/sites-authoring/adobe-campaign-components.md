@@ -19,7 +19,7 @@ When you integrate with Adobe Campaign, you have components available for when w
 
 >[!CAUTION]
 >
->The AEM email components have been deprecated. Due to the nature of email, which merges content and style, the email components provided out-of-the-box by AEM become of limited reuse for customers because of the need to implement custom styles into whatever components are required for projects. 
+>The AEM email components have been deprecated. Due to the nature of email, which merges content and style, the email components provided out-of-the-box by AEM become of limited reuse for customers because of the need to implement custom styles into whatever components are required for projects.
 >
 >Email components can be implemented on project level, and the deprecated AEM email components illustrate how that can be achieved. However these deprecated components should not be used on projects.
 
@@ -41,7 +41,7 @@ A description of these components is in the following section.
 
 The components appear as follows:
 
-![](assets/chlimage_1-43.png) 
+![](assets/chlimage_1-43.png)
 
 ### Heading (Campaign) {#heading-campaign}
 
@@ -56,15 +56,15 @@ You edit the **Heading (Campaign)** component directly. Leave empty to use the p
 
 You can configure the following:
 
-* **Title** 
+* **Title**
   If you want to use a name other than the page title, enter it here.
 
-* **Heading level (1, 2, 3, 4)** 
+* **Heading level (1, 2, 3, 4)**
   The heading level based on the HTML heading sizes 1-4.
 
 The following example shows a Heading (Campaign) component being displayed.
 
-![](assets/chlimage_1-45.png) 
+![](assets/chlimage_1-45.png)
 
 ### Image (Campaign) {#image-campaign}
 
@@ -86,10 +86,10 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 >[!NOTE]
 >
->The in-place editor uses the original size and aspect ratio of the image when editing. You can also specify height and width properties. Any size and aspect ratio restrictions defined in the properties are applied when you save your edit changes.  
+>The in-place editor uses the original size and aspect ratio of the image when editing. You can also specify height and width properties. Any size and aspect ratio restrictions defined in the properties are applied when you save your edit changes.
 
 >
->Depending on your instance, minimum and maximum restrictions may also be imposed by the [design of the page](/sites/developing/using/designer.md); these are developed during project implementation.
+>Depending on your instance, minimum and maximum restrictions may also be imposed by the [design of the page](/help/sites-developing/designer.md); these are developed during project implementation.
 
 Several additional options are available in the full-screen editing mode; for example, map and zoom:
 
@@ -97,33 +97,33 @@ Several additional options are available in the full-screen editing mode; for ex
 
 When an image is loaded, you can configure the following:
 
-* **Map** 
+* **Map**
   To map an image, select Map. You can specify how you want to create the image map (rectangle, polygon, and so on) and where the area should point to.
 
-* **Crop** 
+* **Crop**
   Select Crop to crop an image. Use your mouse to crop the image.
 
-* **Rotate** 
+* **Rotate**
   To rotate an image, select Rotate. Use repeatedly until the image is rotated the way you want it.
 
-* **Clear** 
+* **Clear**
   Remove the current image.
 
-* Zoom bar (classic only)  
+* Zoom bar (classic only)
   To zoom in and out of the image, use the slide bar beneath the image (above the OK and Cancel buttons)
-* **Title** 
+* **Title**
   The title of the image.
 
-* **Alt Text** 
-  An alternative text for use when creating accessible content.  
+* **Alt Text**
+  An alternative text for use when creating accessible content.
 
-* **Link To** 
-  Create a link to assets or other pages within your website.  
+* **Link To**
+  Create a link to assets or other pages within your website.
 
-* **Description** 
+* **Description**
   A description of the image.
 
-* **Size** 
+* **Size**
   Sets the height and the width of the image.
 
 >[!NOTE]
@@ -135,7 +135,7 @@ When an image is loaded, you can configure the following:
 
 The following example shows an Image (Campaign) component being displayed.
 
-![](assets/chlimage_1-47.png) 
+![](assets/chlimage_1-47.png)
 
 ### Link (Campaign) {#link-campaign}
 
@@ -143,16 +143,16 @@ The Link (Campaign) component lets you add a link to your newsletter.
 
 You can configure the following in the **Display**, **URL Info**, or **Advanced** tabs:
 
-* **Link Caption** 
+* **Link Caption**
   The caption for the link. This is the text that users see.
 
-* **Link ToolTip** 
+* **Link ToolTip**
   Adds additional information on how to use the link.
 
-* **LinkType** 
+* **LinkType**
   In the drop-down list, select between a **Custom URL** and an **Adaptive Document**. This field is required. If you select Custom URL, you can provide the Link URL. If you select Adaptive Document, you can provide the document path.
 
-* **Additional URL Parameter** 
+* **Additional URL Parameter**
   Add any additional URL parameters. Click Add Item to add multiple items.
 
 >[!NOTE]
@@ -164,7 +164,7 @@ You can configure the following in the **Display**, **URL Info**, or **Advanced*
 
 The following example shows a Link (Campaign) component being displayed.
 
-![](assets/chlimage_1-48.png) 
+![](assets/chlimage_1-48.png)
 
 ### Scene7 Image Template (Campaign) {#scene-image-template-campaign}
 
@@ -176,7 +176,7 @@ Click **Edit** to configure the component. You can configure the settings descri
 
 In addition, the parameter panel lists all template parameters that have been defined for the template in Scene7. For each of these parameters, you can adapt the value, insert variables, or reset them to their default value.
 
-![](assets/chlimage_1-50.png) 
+![](assets/chlimage_1-50.png)
 
 ### Targeted reference (Campaign) {#targeted-reference-campaign}
 
@@ -190,7 +190,7 @@ Click the folder icon to navigate to the paragraph that you want to reference. W
 
 The Text & Image (Campaign) component adds a text block and an image.
 
-When you click to configure the component, you select Text or Image. 
+When you click to configure the component, you select Text or Image.
 
 ![](assets/chlimage_1-51.png)
 
@@ -206,28 +206,28 @@ See [Image (Campaign) component](#image-campaign) for more information on workin
 
 As with the Text & Personalization (Campaign) and Image (Campaign) components, you can configure:
 
-* **Text** 
+* **Text**
   Enter text. Use the toolbar to modify formatting, create lists, and add links.
 
-* **Image** 
+* **Image**
   Drag an image from the content finder, or click to browse to an image. Crop or rotate as required.
 
-* **Image Properties** (**Advanced Image Properties**)  
+* **Image Properties** (**Advanced Image Properties**)
   Allows you to specify the following:
 
-    * **Title** 
+    * **Title**
       The title for the block; will be shown by mouseover.
-    
-    * **Alt Text** 
+
+    * **Alt Text**
       Alternative text to be shown if the image cannot be displayed.
-    
-    * **Link to** 
+
+    * **Link to**
       Create a link to assets or other pages within your website.
-    
-    * **Description** 
+
+    * **Description**
       A description of the image.
-    
-    * **Size** 
+
+    * **Size**
       Sets the height and width of the image.
 
 >[!NOTE]
@@ -239,7 +239,7 @@ As with the Text & Personalization (Campaign) and Image (Campaign) components, y
 
 The following example shows a Text & Image (Campaign) component being displayed.
 
-![](assets/chlimage_1-52.png) 
+![](assets/chlimage_1-52.png)
 
 ### Text & Personalization (Campaign) {#text-personalization-campaign}
 
@@ -253,7 +253,7 @@ In the inplace editor you can add text, change the justification, add and remove
 
 >[!NOTE]
 >
->* What personalization fields are available depends on what Adobe Campaign template your newsletter is linked to. 
+>* What personalization fields are available depends on what Adobe Campaign template your newsletter is linked to.
 >* After you select a persona from ContextHub, the personalization fields are automatically replaced by data from the selected profile.
 >
 >See [Inserting Personalization](/help/sites-authoring/campaign.md#inserting-personalization).
@@ -293,38 +293,38 @@ This section describes each component in detail.
 The following table describes the components that are available to display and modify Adobe Campaign profile data. Each component can be mapped to an Adobe Campaign profile field to display its value and update the field when the form is submitted. The different components can only be matched to fields of an appropriate data type.
 
 <table>
- <tbody> 
-  <tr> 
-   <td valign="middle"><p><strong>Component</strong></p> </td> 
-   <td valign="middle"><p><strong>Data type of Adobe Campaign field</strong></p> </td> 
-   <td valign="middle"><p><strong>Example field</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="middle"><p>Checkbox (Campaign)</p> </td> 
-   <td valign="middle"><p>boolean</p> </td> 
-   <td valign="middle"><p>No longer contact (by any channel)</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="middle"><p>Date Field (Campaign)</p> <p>Date Field/HTML 5 (Campaign)</p> </td> 
-   <td valign="middle"><p>date</p> </td> 
-   <td valign="middle"><p>Birth date</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="middle"><p>Numeric Field (Campaign)</p> </td> 
-   <td valign="middle"><p>numeric (byte, short, long, double)</p> </td> 
-   <td valign="middle"><p>Age</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="middle"><p>Option Field (Campaign)</p> </td> 
-   <td valign="middle"><p>byte with associated values</p> </td> 
-   <td valign="middle"><p>Gender</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="middle"><p>Text Field (Campaign)</p> </td> 
-   <td valign="middle"><p>string</p> </td> 
-   <td valign="middle"><p>Email</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td valign="middle"><p><strong>Component</strong></p> </td>
+   <td valign="middle"><p><strong>Data type of Adobe Campaign field</strong></p> </td>
+   <td valign="middle"><p><strong>Example field</strong></p> </td>
+  </tr>
+  <tr>
+   <td valign="middle"><p>Checkbox (Campaign)</p> </td>
+   <td valign="middle"><p>boolean</p> </td>
+   <td valign="middle"><p>No longer contact (by any channel)</p> </td>
+  </tr>
+  <tr>
+   <td valign="middle"><p>Date Field (Campaign)</p> <p>Date Field/HTML 5 (Campaign)</p> </td>
+   <td valign="middle"><p>date</p> </td>
+   <td valign="middle"><p>Birth date</p> </td>
+  </tr>
+  <tr>
+   <td valign="middle"><p>Numeric Field (Campaign)</p> </td>
+   <td valign="middle"><p>numeric (byte, short, long, double)</p> </td>
+   <td valign="middle"><p>Age</p> </td>
+  </tr>
+  <tr>
+   <td valign="middle"><p>Option Field (Campaign)</p> </td>
+   <td valign="middle"><p>byte with associated values</p> </td>
+   <td valign="middle"><p>Gender</p> </td>
+  </tr>
+  <tr>
+   <td valign="middle"><p>Text Field (Campaign)</p> </td>
+   <td valign="middle"><p>string</p> </td>
+   <td valign="middle"><p>Email</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Settings Common to Most Components {#settings-common-to-most-components}
@@ -337,45 +337,45 @@ In most components, you can configure the following:
 
 ![](assets/chlimage_1-56.png)
 
-* **Title** 
+* **Title**
   If you want to use a name other than the element name, enter it here.
 
-* **Hide Title** 
+* **Hide Title**
   Select this check box if you do not want the title visble.
 
-* **Description** 
+* **Description**
   Add a description to the field to provide more information for users.
 
-* **Only show value** 
+* **Only show value**
   Only shows the value, if there is one
 
 #### Adobe Campaign {#adobe-campaign}
 
 You can configure the following:
 
-* **Mapping** 
+* **Mapping**
   Select an Adobe Campaign personalization field, if appropriate.
 
-* **Reconciliation Key** 
+* **Reconciliation Key**
   Select this check box if this field is part of the reconciliation key.
 
-![](assets/chlimage_1-57.png) 
+![](assets/chlimage_1-57.png)
 
 #### Constraints {#constraints}
 
-* **Required  
+* **Required
   **Select this check box to make this component required; that is, users must enter a value.
-* **Required Message  
+* **Required Message
   **Optionally, add a message stating that the field is required.
 
-![](assets/chlimage_1-58.png) 
+![](assets/chlimage_1-58.png)
 
 #### Styling {#styling}
 
-* **CSS** 
+* **CSS**
   Enter the CSS classes you want to use for this component.
 
-![](assets/chlimage_1-59.png) 
+![](assets/chlimage_1-59.png)
 
 ### Checkbox (Campaign) {#checkbox-campaign}
 
@@ -385,7 +385,7 @@ You can [configure settings common to most Adobe Campaign components](#settings-
 
 The following example shows a Checkbox (Campaign) component being displayed.
 
-![](assets/chlimage_1-60.png) 
+![](assets/chlimage_1-60.png)
 
 ### Date Field (Campaign) and Date Field/HTML 5 (Campaign) {#date-field-campaign-and-date-field-html-campaign}
 
@@ -393,17 +393,17 @@ Use the date field to allow recipients to a date; for example you may want the r
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 
-* **Constraints - Constraint **drop-down  
-  You can select - **None** or **Date - **to add the constraint of a date or no constraint. If you select date, the answer users enter into the field must be in a date format. 
+* **Constraints - Constraint **drop-down
+  You can select - **None** or **Date - **to add the constraint of a date or no constraint. If you select date, the answer users enter into the field must be in a date format.
 
-* **Constraint Message  
+* **Constraint Message
   **In addition, you can add a constraint message so users know how to properly format their answers.
-* **Styling - Width** 
+* **Styling - Width**
   Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
 
 The following example shows a Date Field (Campaign) component with the width adjusted being displayed.
 
-![](assets/chlimage_1-61.png) 
+![](assets/chlimage_1-61.png)
 
 ### Encrypted Primary Key (Campaign) {#encrypted-primary-key-campaign}
 
@@ -413,14 +413,14 @@ Each form displaying and modifying Adobe Campaign profile data **must** include 
 
 You can configure the following in the Encrypted Primary Key (Campaign) component:
 
-* **Title and Text - Element Name  
+* **Title and Text - Element Name
   **Defaults to encryptedPK. You only need to change the element name when it conflicts with the name of another element on the form. No two form fields can have the same element name.
-* **Adobe Campaign - URL parameter** 
+* **Adobe Campaign - URL parameter**
   Add the URL parameter for the EPK. For example, you can use the value **epk**.
 
 The following example shows an Encrypted Primary Key (Campaign) component being displayed.
 
-![](assets/chlimage_1-62.png) 
+![](assets/chlimage_1-62.png)
 
 ### Error Display (Campaign) {#error-display-campaign}
 
@@ -428,7 +428,7 @@ This component lets you display backend errors. The form's error handling needs 
 
 The following example shows an Error Display (Campaign) component being displayed.
 
-![](assets/chlimage_1-63.png) 
+![](assets/chlimage_1-63.png)
 
 ### Hidden Reconciliation Key (Campaign) {#hidden-reconciliation-key-campaign}
 
@@ -436,14 +436,14 @@ The Hidden Reconciliation Key (Campaign) component allows you to add hidden fiel
 
 You can configure the following in the Hidden Reconciliation Key (Campaign) component:
 
-* **Title and Text - Element Name  
+* **Title and Text - Element Name
   **Defaults to reconcilKey. You only need to change the element name when it conflicts with the name of another element on the form. No two form fields can have the same element name.
-* **Adobe Campaign - Mapping** 
+* **Adobe Campaign - Mapping**
   Map to an Adobe Campaign personalization field.
 
 The following example shows an Hidden Reconciliation Key (Campaign) component being displayed.
 
-![](assets/chlimage_1-64.png) 
+![](assets/chlimage_1-64.png)
 
 ### Numeric Field (Campaign) {#numeric-field-campaign}
 
@@ -451,17 +451,17 @@ Use the numeric field to allow recipients to enter numbers, for example their ag
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 
-* **Constraints - Constraint **drop-down  
-  You can select - **None** or **Numeric - **to add the constraint of either a number or no constraint. If you select number, the answer users enter into the field must be numeric. 
+* **Constraints - Constraint **drop-down
+  You can select - **None** or **Numeric - **to add the constraint of either a number or no constraint. If you select number, the answer users enter into the field must be numeric.
 
-* **Constraint Message  
+* **Constraint Message
   **In addition, you can add a constraint message so users know how to properly format their answers.
-* **Styling - Width** 
+* **Styling - Width**
   Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
 
 The following example shows a Numeric Field (Campaign) component with the width configured being displayed.
 
-![](assets/chlimage_1-65.png) 
+![](assets/chlimage_1-65.png)
 
 ### Option Field (Campaign) {#option-field-campaign}
 
@@ -473,7 +473,7 @@ You can [configure settings common to most Adobe Campaign components](#settings-
 
 The following example shows an Option Field (Campaign) component being displayed.
 
-![](assets/chlimage_1-67.png) 
+![](assets/chlimage_1-67.png)
 
 ### Subscriptions Checklist (Campaign) {#subscriptions-checklist-campaign}
 
@@ -489,7 +489,7 @@ You can [configure settings common to most Adobe Campaign components](#settings-
 
 The following example shows a Subscriptions Checklist (Campaign) component being displayed.
 
-![](assets/chlimage_1-68.png) 
+![](assets/chlimage_1-68.png)
 
 ### Text Field (Campaign) {#text-field-campaign}
 
@@ -497,12 +497,12 @@ The Text Field (Campaign) component that lets you enter string type data, such a
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 
-* **Constraints - Constraint **drop-down  
-  You can select - **None,** **Email, **or** Name (no umlauts) - **to add the constraint of either an email address, name, or no constraint. If you select email, the answer users enter into the field must be an email address. If you select name, it must be a name (umlauts are not allowed). 
+* **Constraints - Constraint **drop-down
+  You can select - **None,** **Email, **or** Name (no umlauts) - **to add the constraint of either an email address, name, or no constraint. If you select email, the answer users enter into the field must be an email address. If you select name, it must be a name (umlauts are not allowed).
 
-* **Constraint Message  
+* **Constraint Message
   **In addition, you can add a constraint message so users know how to properly format their answers.
-* **Styling - Width** 
+* **Styling - Width**
   Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
 
 The following example shows a Text Field (Campaign) component being displayed.

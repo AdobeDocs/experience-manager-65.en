@@ -19,7 +19,7 @@ The author environment of AEM provides various mechanisms for searching for cont
 
 >[!NOTE]
 >
->Outside the author environment other mechanisms are also available for searching, such as the [Query Builder](/sites/developing/using/querybuilder-api.md) and [CRXDE Lite](../../../sites/developing/using/developing-with-crxde-lite.md).
+>Outside the author environment other mechanisms are also available for searching, such as the [Query Builder](/help/sites-developing/querybuilder-api.md) and [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Search Basics {#search-basics}
 
@@ -29,7 +29,7 @@ Search is available from the top toolbar:
 
 With the search rail you can:
 
-* Search for a specific keyword, path or tag.  
+* Search for a specific keyword, path or tag.
 * Filter according to resource specific criteria, such as modified dates, page status, file size, etc.
 * Define and use a [saved search](#saved-searches) - based on the above criteria.
 
@@ -73,11 +73,11 @@ To search and filter your resources:
    >
    >The search criteria can vary:
    >
-   >    
-   >    
+   >
+   >
    >    * Depending on the resource type you have selected; for example, the Assets and Communities criteria are understandably specialized.
    >    * Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
-   >    
+   >
    >
 
    ![](assets/screen-shot_2019-03-05at102509.png)
@@ -90,7 +90,7 @@ To search and filter your resources:
 
 >[!NOTE]
 >
->Search criteria are persisted when selecting an item in the search results. 
+>Search criteria are persisted when selecting an item in the search results.
 >
 >When you select an item on the search results page, when returning to the search page after using the browser back button, the search criteria remain.
 

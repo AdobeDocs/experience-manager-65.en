@@ -73,7 +73,7 @@ Any changes to this behavior should be made in a customized script (either overr
 
 To help debug scoring and badging, a custom log file can be setup. The contents of this log file may then be provided to customer support if problems are encountered with the feature.
 
-For detailed instructions, visit [Create a Custom Log File](../../sites/deploying/using/monitoring-and-maintaining.md#create-a-custom-log-file).
+For detailed instructions, visit [Create a Custom Log File](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 To quickly setup a slinglog file :
 
@@ -84,7 +84,7 @@ To quickly setup a slinglog file :
 1. select **Add new logger**
 
     1. select `DEBUG`for **Log Level**
-    
+
     1. enter a name for **Log File**, for example
 
         * logs/scoring-debug.log
@@ -109,16 +109,16 @@ To see log entries
 * on the server's local disk
 
     * the log file is at &lt;*server-install-dir*&gt;/crx-quickstart/logs/&lt;*log-file-name*&gt;.log
-    
+
     * for example, `.../crx-quickstart/logs/scoring-debug.log`
 
-![](assets/chlimage_1-194.png) 
+![](assets/chlimage_1-194.png)
 
 ## UGC for Scoring and Badging {#ugc-for-scoring-and-badging}
 
 It is possible to view the UGC related to scoring and badging when the chosen SRP is either JSRP or MSRP, but not ASRP. (If not familiar with these terms, see [Community Content Storage](../../communities/using/working-with-srp.md) and [Storage Resource Provider Overview](/communities/using/srp.md).)
 
-The descriptions for accessing scoring and badging data use JSRP, as the UGC is easily accessible using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md).
+The descriptions for accessing scoring and badging data use JSRP, as the UGC is easily accessible using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP on author** : experimenting in the author environment results in UGC that is only visible from the author environment.
 
@@ -150,19 +150,19 @@ The screen shots of repository data come from setting up scoring and badging for
 
 * add scoring and badging properties
 
-      ```    
+      ```
       scoringRules = [/etc/community/scoring/rules/comments-scoring,
        /etc/community/scoring/rules/forums-scoring]
-      ```    
+      ```
 
-      ```    
+      ```
       badgingRules =[/etc/community/badging/rules/comments-scoring,
        /etc/community/badging/rules/forums-scoring]
       ```
 
 * locate the forum component node
 
-    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`  
+    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
       ( `sling:resourceType = social/forum/components/hbs/forum`)
 
 * add property to display badges
@@ -180,19 +180,19 @@ The screen shots of repository data come from setting up scoring and badging for
 
 * add scoring and badging properties
 
-  ```    
+  ```
       scoringRules = [/etc/community/scoring/rules/comments-scoring,
        /etc/community/scoring/rules/forums-scoring]
-      ```    
+      ```
 
-      ```    
+      ```
       badgingRules =[/etc/community/badging/rules/comments-scoring,
        /etc/community/badging/rules/forums-scoring]
       ```
 
 * locate the forum component node
 
-  * `/content/community-components/en/forum/jcr:content/content/forum`  
+  * `/content/community-components/en/forum/jcr:content/content/forum`
   ( `sling:resourceType = social/forum/components/hbs/forum`)
 
 * add property to display badges
@@ -217,9 +217,9 @@ As a user has earned two bronze badges and has been awarded a moderator badge, t
 >
 >This example does not follow these best practices :
 >
->* scoring rule names should be globally unique; they should not end with the same name.  
->  An example of what *not *to do :  
->  /etc/community/scoring/rules/site1/forums-scoring  
+>* scoring rule names should be globally unique; they should not end with the same name.
+>  An example of what *not *to do :
+>  /etc/community/scoring/rules/site1/forums-scoring
 >  /etc/community/scoring/rules/site2/forums-scoring
 >
 >* creating unique badge images for different AEM sites
@@ -245,7 +245,7 @@ For the Community Components guide site, the user and their score is in a path c
 
 The score is stored in the property `scoreValue_tl` which may directonly contain a value or indirectly refer to an atomicCounter.
 
-![](assets/chlimage_1-196.png) 
+![](assets/chlimage_1-196.png)
 
 ### Access Badging UGC {#access-badging-ugc}
 
@@ -261,11 +261,11 @@ Followed by the path to the user's profile, ending in a badges folder, such as
 
 #### awarded badge {#awarded-badge}
 
-![](assets/chlimage_1-197.png) 
+![](assets/chlimage_1-197.png)
 
 #### assigned badge {#assigned-badge}
 
-![](assets/chlimage_1-198.png) 
+![](assets/chlimage_1-198.png)
 
 ## Additional Information {#additional-information}
 

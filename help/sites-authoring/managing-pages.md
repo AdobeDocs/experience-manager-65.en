@@ -31,7 +31,7 @@ This section describes how to create and manage pages with Adobe Experience Mana
 
 As an author you will need to organize your website within AEM. This involves creating and naming your content pages so that:
 
-* You can easily find them on the author environment  
+* You can easily find them on the author environment
 * Visitors to your site can easily browse them on the publish environment
 
 You can also use [folders](#creating-a-new-folder) to help organize your content.
@@ -40,10 +40,10 @@ The structure of a website can be thought of as a tree structure that holds your
 
 The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
 
-* Author environment  
+* Author environment
   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Publish environment  
+* Publish environment
   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
@@ -58,7 +58,7 @@ Depending on the configuration of your instance, use of `/content` might be opti
       /hiking
        /desert-sky-shorts
        /hiking-poles
-       /... 
+       /...
       /running...
       /surfing...
       /...
@@ -78,7 +78,7 @@ This structure can be viewed From the **Sites** console, where you can [navigate
 
 From any point, you can see the upward branch from breadcrumbs in the header bar:
 
-![](assets/caop-01.png) 
+![](assets/caop-01.png)
 
 ### Page Naming Conventions {#page-naming-conventions}
 
@@ -86,30 +86,30 @@ When creating a new page there are two keys fields:
 
 * ** [Title](#title)**:
 
-    * This is displayed to the user in the console and shown at the top of the page content when editing.  
+    * This is displayed to the user in the console and shown at the top of the page content when editing.
     * This field is mandatory.
 
 * ** [Name](#name)**:
 
-    * This is used to generate the URI.  
+    * This is used to generate the URI.
     * User input for this field is optional. If not specified, the name is derived from the title. See the following section [Page Name Restrictions and Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) for details.
 
 #### Page Name Restrictions and Best Practices {#page-name-restrictions-and-best-practices}
 
 The page **Title** and **Name** can be created separately but are related:
 
-* When creating a page, only the **Title** field is required. If no **Name** is provided at page creation, AEM will generate a name from the first 64 characters of the title (observing the validation set out below). Only the first 64 characters are used in order to support the best practice of short page names.  
+* When creating a page, only the **Title** field is required. If no **Name** is provided at page creation, AEM will generate a name from the first 64 characters of the title (observing the validation set out below). Only the first 64 characters are used in order to support the best practice of short page names.
 
 * If a page name is manually specified by the author, the 64 character limit does not apply, however other technical limitations on the page name length may.
 
 >[!NOTE]
 >
->When defining a page name, a good rule-of-thumb is to keep the page name as brief but as expressive and memorable as possible to make it easy to understand for the reader. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.  
+>When defining a page name, a good rule-of-thumb is to keep the page name as brief but as expressive and memorable as possible to make it easy to understand for the reader. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
 
 >
 >Also keep in mind that some browsers (e.g. older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/sites/developing/using/naming-conventions.md) imposesd by AEM and the JCR.
+When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and the JCR.
 
 The minimum allowed characters are:
 
@@ -119,15 +119,15 @@ The minimum allowed characters are:
 * `_` (underscore)
 * `-` (hyphen/minus)
 
-Full details of all characters allowed can be found in [the naming conventions](/sites/developing/using/naming-conventions.md).
+Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).
 
 >[!NOTE]
 >
->If AEM is running on a [MongoMK persistence manager deployment](../../../sites/deploying/using/recommended-deploys.md), page names are limited to 150 characters.
+>If AEM is running on a [MongoMK persistence manager deployment](/help/sites-deploying/recommended-deploys.md), page names are limited to 150 characters.
 
 #### Title {#title}
 
-If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/sites/developing/using/naming-conventions.md) imposed by AEM and JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. For example:
+If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. For example:
 
 | Title |Derived Name |
 |---|---|
@@ -136,7 +136,7 @@ If you supply only a page **Title** when creating a new page, AEM will derive th
 
 #### Name {#name}
 
-When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/sites/developing/using/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.
+When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.
 
 ![](assets/caop-02.png)
 
@@ -154,13 +154,13 @@ The template defines the structure of a page including a thumbnail image and oth
 
 AEM comes with several templates provided out-of-the-box. The templates available depend on the individual website. The key fields are:
 
-* **Title** 
-  The title displayed on the resulting web-page.  
+* **Title**
+  The title displayed on the resulting web-page.
 
-* **Name** 
-  Used when naming the page.  
+* **Name**
+  Used when naming the page.
 
-* **Template** 
+* **Template**
   A list of templates available for use when generating the new page.
 
 >[!NOTE]
@@ -190,23 +190,23 @@ Once you have created and opened a page you can [add content using the component
 Unless all pages have been created for you in advance, before you can start creating content, you must create a page:
 
 1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
-1. Navigate to the location where you want to create the new page. 
+1. Navigate to the location where you want to create the new page.
 1. Open the drop down selector using **Create** in the toolbar, then select **Page** from the list:
 
    ![](assets/caop-03.png)
 
 1. From the first stage of the wizard you can either:
 
-    * Select the template you want used to create the new page, then click/tap **Next** to proceed.  
-    
+    * Select the template you want used to create the new page, then click/tap **Next** to proceed.
+
     * **Cancel** to abort the process.
 
    ![](assets/caop-04.png)
 
 1. From the final stage of the wizard you can either:
 
-    * Use the three tabs to enter the [page properties](/help/sites-authoring/editing-page-properties.md) you want assigned to the new page, then click/tap **Create** to actually create the page.  
-    
+    * Use the three tabs to enter the [page properties](/help/sites-authoring/editing-page-properties.md) you want assigned to the new page, then click/tap **Create** to actually create the page.
+
     * Use **Back** to return to template selection.
 
    Key fields are:
@@ -218,8 +218,8 @@ Unless all pages have been created for you in advance, before you can start crea
     * **Name**:
 
         * This is used to generate the URI. If not specified, the name is derived from the title.
-        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/sites/developing/using/naming-conventions.md) imposesd by AEM and JCR.  
-        
+        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and JCR.
+
         * You **cannot submit invalid characters** in the **Name** field. When AEM detects invalid characters the field will be highlighted and an explanatory message shown to indicate the characters that need removing/replacing.
 
    >[!NOTE]
@@ -304,7 +304,7 @@ You can copy a page and all of its subpages to a new location:
 
 >[!NOTE]
 >
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/sites/developing/using/templates.md#template-availability) for more information.
+>A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 
 The procedure to move or rename a page is basically the same and is handled by the same wizard. With this wizard you can:
 
@@ -328,8 +328,8 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 1. From the **Rename** stage of the wizard you can either:
 
-    * Specify the name you want the page to have after it is moved, then click/tap **Next** to proceed.  
-    
+    * Specify the name you want the page to have after it is moved, then click/tap **Next** to proceed.
+
     * **Cancel** to abort the process.
 
    ![](assets/caop-07.png)
@@ -344,7 +344,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
     * Use the [column view](/help/sites-authoring/basic-handling.md#column-view) to navigate to the new location for the page:
 
-        * Select the destination it by clicking the destination's thumbnail.  
+        * Select the destination it by clicking the destination's thumbnail.
         * Click **Next** to continue.
 
     * Use **Back** to return to page name specification.
@@ -406,7 +406,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 You can [lock/unlock a page](/help/sites-authoring/editing-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
 
-![](assets/screen_shot_2018-03-22at105713.png) ![](assets/screen_shot_2018-03-22at105720.png) 
+![](assets/screen_shot_2018-03-22at105713.png) ![](assets/screen_shot_2018-03-22at105720.png)
 
 ### Creating a New Folder {#creating-a-new-folder}
 

@@ -21,18 +21,18 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 The **Templates Console** allows template authors to:
 
-* Create a new template or copy an existing template.  
+* Create a new template or copy an existing template.
 * Manage the lifecycle of the template.
 
 The **Template Editor** allows template authors to:
 
 * Add components to the template and position them on a responsive grid.
-* Pre-configure the components.  
+* Pre-configure the components.
 * Define which components can be edited on pages created with the template.
 
 This document explains how a **template author** can use the template console and editor to create and manage editable templates.
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](../../../sites/developing/using/page-templates-editable.md) for more information.
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ For detailed information about how editable templates work at a technical level,
 
 The following points are important to consider before you start:
 
-* Creating a new template requires collaboration. For this reason the [Role](#roles) is indicated for each task.  
+* Creating a new template requires collaboration. For this reason the [Role](#roles) is indicated for each task.
 
 * Depending on how your instance is configured, it might be useful to be aware that AEM now provides [two basic types of template](/help/sites-authoring/templates.md#editable-and-static-templates). This does not impact how you actually [use a template to create a page](#using-a-template-to-create-a-page), but it does impact the type of template you can create and how a page relates to its template.
 
@@ -60,14 +60,14 @@ Creating a new template using the **Templates Console** and the **Template Edito
 
 * **Admin**:
 
-    * Creates a new folder for templates requires `admin` rights.  
-    
+    * Creates a new folder for templates requires `admin` rights.
+
     * Such tasks can often also be done by a developer
 
 * **Developer**:
 
     * Concentrates on the technical/internal details
-    * Needs experience with the development environment.  
+    * Needs experience with the development environment.
     * Provides the template author with necessary information.
 
 * **Template Author**:
@@ -94,18 +94,18 @@ AEM now offers two basic types of templates:
 
 * [Editable Templates](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-    * Can be [created](#creatinganewtemplate) and [edited](#editingatemplate) by template authors using the **Template** console and editor. The **Template** console is accessible in the **General** section of the **Tools** console.  
-    
+    * Can be [created](#creatinganewtemplate) and [edited](#editingatemplate) by template authors using the **Template** console and editor. The **Template** console is accessible in the **General** section of the **Tools** console.
+
     * After the new page is created a dynamic connection is maintained between the page and the template. This means that changes to the template structure and/or locked content will be reflected on any pages created with that template. Changes to the unlocked (i.e. initial) content will not be reflected.
     * Use content policies, which you can define these from the template editor, to persist the design properties. Design mode within the page editor is no longer used for editable templates.
 
 * Static Templates
 
-    * Static templates have been available for several versions of AEM.  
-    * They are [provided by your developers](../../../sites/developing/using/page-templates-static.md), so they cannot be created or edited by authors.
-    * Are copied to create the new page, but no dynamic connection exists after this (though the template name is registered for information).  
+    * Static templates have been available for several versions of AEM.
+    * They are [provided by your developers](/help/sites-developing/page-templates-static.md), so they cannot be created or edited by authors.
+    * Are copied to create the new page, but no dynamic connection exists after this (though the template name is registered for information).
     * Use [Design Mode](/help/sites-authoring/default-components-designmode.md) to persist design properties.
-    * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](../../../sites/developing/using/page-templates-static.md) for more information.
+    * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
 
 By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.
 
@@ -127,10 +127,10 @@ When creating a new editable template you:
 * [Define additional properties](#definingtemplatepropertiesauthor) for the template if required
 * [Edit the template](#editingtemplates) to define the:
 
-    * [Structure](#editingatemplatestructureauthor) - Predefined content that cannot be changed on pages created with the template.  
-    
-    * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.  
-    
+    * [Structure](#editingatemplatestructureauthor) - Predefined content that cannot be changed on pages created with the template.
+
+    * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.
+
     * [Layout](#editingatemplatelayoutauthor) - For a range of devices.
     * [Styles](/help/sites-authoring/style-system.md) - Define the styles to be used with the template and its components.
 
@@ -144,11 +144,11 @@ When creating a new editable template you:
 
 >[!CAUTION]
 >
->Never enter any information that needs to be [internationalized](/sites/developing/using/i18n.md) into a template.
+>Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
-A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](../../../sites/developing/using/page-templates-editable.md#template-folders).
+A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).
 
 ### Creating a New Template - Template Author {#creating-a-new-template-template-author}
 
@@ -159,15 +159,15 @@ A template folder should be created for your project to hold your project-specif
    >In a standard AEM instance the **global** folder already exists in the template console. This holds default templates and acts as a fallback if no policies and/or template-types are found in the current folder.
    >
    >
-   >It is recommended best practice to use a [template folder created for your project](../../../sites/developing/using/page-templates-editable.md#template-folders).
+   >It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).
 
-1. Select **Create**, followed by **Create Template** to open the wizard.  
+1. Select **Create**, followed by **Create Template** to open the wizard.
 
 1. Pick a **Template Type**, then select **Next**.
 
    >[!NOTE]
    >
-   >Template types are predefined template layouts and can be thought of as templates for a template. These are predefined by developers or the system administrator. More information can be found in the developer document [Page Templates - Editable](../../../sites/developing/using/page-templates-editable.md#template-type).
+   >Template types are predefined template layouts and can be thought of as templates for a template. These are predefined by developers or the system administrator. More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).
 
 1. Complete the **Template Details**:
 
@@ -252,9 +252,9 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 A template can be made available or unavailable for certain page branches.
 
-1. Open the [Page Properties](/help/sites-authoring/editing-page-properties.md) for the root page of the branch where you want the template to be available.  
+1. Open the [Page Properties](/help/sites-authoring/editing-page-properties.md) for the root page of the branch where you want the template to be available.
 
-1. Open the **Advanced** tab.  
+1. Open the **Advanced** tab.
 
 1. Under **Template Settings** use **Add field** to specify the path(s) to your template(s).
 
@@ -269,7 +269,7 @@ A template can be made available or unavailable for certain page branches.
    >If the **Allowed Templates** list is left empty then the tree will be ascended until a value/list is found.
    >
    >
-   >See [Template Availability](/sites/developing/using/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. Click **Save** to save the changes to the page properties.
 
@@ -282,8 +282,8 @@ A template can be made available or unavailable for certain page branches.
 As the template is referenced when a page is rendered, the fully configured template needs to be published so that it is available on the publish environment.
 
 1. In the **Templates Console**, select the template.
-1. Select **Publish** from the toolbar to open the wizard. 
-1. Select the **Content Policies** to be published in tandem.  
+1. Select **Publish** from the toolbar to open the wizard.
+1. Select the **Content Policies** to be published in tandem.
 
 1. Select **Publish** from the toolbar to complete the action.
 
@@ -347,7 +347,7 @@ In **Structure** mode you define components and content for your template and de
 
 * Components defined in the template structure cannot be moved on a resulting page nor deleted from any resulting pages.
 * If you want page authors to be able to add and remove components, add a paragraph system to the template.
-* Components can be unlocked and locked again to allow you to define [initial content](#editingatemplateinitialcontent).  
+* Components can be unlocked and locked again to allow you to define [initial content](#editingatemplateinitialcontent).
 
 * The design policies for the components and page are defined.
 
@@ -360,8 +360,8 @@ In **Structure** mode of the template editor:
   There are several mechanisms for adding components to the template:
 
     * From the **Components** browser in the side panel.
-    * By using the **Insert Component** option (**+** icon) available on the toolbar of components already on the template or the **Drag components here** box.  
-    
+    * By using the **Insert Component** option (**+** icon) available on the toolbar of components already on the template or the **Drag components here** box.
+
     * By dragging an asset (from the **Assets** browser in the side panel) directly onto the template to generate the appropriate component in situ.
 
   Once added, each component is marked with:
@@ -604,7 +604,7 @@ You can define the template layout for a range of devices. [Responsive layout](/
 >
 >Changes to the layout will be reflected in **Initial Content** mode, but no change is seen in **Structure** mode.
 
-![](assets/chlimage_1-154.png) 
+![](assets/chlimage_1-154.png)
 
 ### Editing a Template - Page Design - Template Author/Developer {#editing-a-template-page-design-template-author-developer}
 
@@ -677,9 +677,9 @@ Using page properties, you can define the required client-side libraries by usin
 
 Using the **Initial Page Properties** option, you can define the initial [page properties](/help/sites-authoring/editing-page-properties.md) to be used when creating resultant pages.
 
-1. From the template editor, select **Page Information** from the toolbar, then **Initial Page Properties** to open the dialog.  
+1. From the template editor, select **Page Information** from the toolbar, then **Initial Page Properties** to open the dialog.
 
-1. In the dialog you can define the properties you want applied to pages created with this template. 
+1. In the dialog you can define the properties you want applied to pages created with this template.
 
    ![](assets/chlimage_1-167.png)
 
@@ -700,7 +700,7 @@ When creating templates you should consider:
 
     * Changes to content policies and design configurations:
 
-        * These apply immediately to the resultant pages. 
+        * These apply immediately to the resultant pages.
         * Publication of the changes is needed for visitors to see the changes.
 
     * Changes to the initial content:

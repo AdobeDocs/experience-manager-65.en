@@ -24,28 +24,28 @@ The assignments feature is the ability to assign enablement resources and learni
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/enablement/components/hbs/myassigned</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/enablement/components/hbs/myassigned</td>
   </tr>
   <tr>
-   <td> <a href="/communities/using/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
+   <td> <a href="/communities/using/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="../../communities/using/clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td> 
+   <td> <a href="../../communities/using/clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/enablement/components/hbs/myassigned/myassigned.hbs</td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/enablement/components/hbs/myassigned/myassigned.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/enablement/components/hbs/myassigned/clientlibs/myassigned.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/enablement/components/hbs/myassigned/clientlibs/myassigned.css</td>
   </tr>
   <tr>
-   <td><strong> properties</strong></td> 
-   <td>see <a href="../../communities/using/assignments.md">Assignments Feature</a></td> 
+   <td><strong> properties</strong></td>
+   <td>see <a href="../../communities/using/assignments.md">Assignments Feature</a></td>
   </tr>
  </tbody>
 </table>
@@ -84,9 +84,9 @@ A community site structure that includes the [Assignments function](../../commun
 
 ### Reference APIs {#reference-apis}
 
-* [Enablement API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
+* [Enablement API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [Reporting API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [Reporting API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 

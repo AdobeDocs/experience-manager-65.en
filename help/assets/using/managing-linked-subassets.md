@@ -58,8 +58,8 @@ This procedure is similar to [Adding AEM assets as references in Adobe Illustrat
 
 ### Create references to AEM assets by exporting a ZIP file {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Perform the steps in [Creating Workflow Models](../../sites/developing/using/workflows-models.md) to create a new workflow.
-1. Use the Package feature of Adobe InDesign to export the document.   
+1. Perform the steps in [Creating Workflow Models](/help/sites-developing/workflows-models.md) to create a new workflow.
+1. Use the Package feature of Adobe InDesign to export the document.
    Adobe InDesign can export a document and the linked assets as a package. In this case, the exported folder contains a Links folder that contains sub-assets in the InDesign file.
 1. Create a ZIP file and upload it to the AEM repository.
 1. Start the Unarchiver workflow.

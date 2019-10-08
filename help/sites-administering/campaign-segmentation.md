@@ -23,7 +23,7 @@ Segmentation is a key consideration when creating a campaign. See [Segmentation 
 
 Depending on the information you have already collected about your site visitors and the goals you want to achieve, you will need to define the segments and strategies needed for your targeted content.
 
-These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Campaigns](/sites/classic-ui-authoring/using/classic-personalization-campaigns.md) section of the website. Teaser pages defined here can be included as teaser paragraphs on any page and define which visitor segment the specialized content is applicable for.
+These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) section of the website. Teaser pages defined here can be included as teaser paragraphs on any page and define which visitor segment the specialized content is applicable for.
 
 AEM allows you to easily create and update segments, teasers, and campaigns. It also allows you to verify the results of your definitions.
 
@@ -45,16 +45,16 @@ Each segment has a **Boost** parameter that is used as a weighting factor; a hig
 The following logic containers are available out-of-the-box and allow you to construct the logic of your segment selection. They can be dragged from the sidekick to the editor:
 
 <table>
- <tbody> 
-  <tr> 
-   <td width="125"> AND Container<br /> </td> 
-   <td width="400"> The boolean AND operator.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> OR Container<br /> </td> 
-   <td width="400"> The boolean OR operator.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td width="125"> AND Container<br /> </td>
+   <td width="400"> The boolean AND operator.<br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> OR Container<br /> </td>
+   <td width="400"> The boolean OR operator.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Segment Traits {#segment-traits}
@@ -62,44 +62,44 @@ The following logic containers are available out-of-the-box and allow you to con
 The following segment traits are available out-of-the-box; they can be dragged from the sidekick to the editor:
 
 <table>
- <tbody> 
-  <tr> 
-   <td width="125"> IP Range<br /> </td> 
-   <td width="400">Defines a range of IP addresses that the visitor can have.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> Page Hits<br /> </td> 
-   <td width="400">How often the page has been requested. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> Page Property<br /> </td> 
-   <td width="400">Any property of the visited page.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> Referral Keywords<br /> </td> 
-   <td width="400">Keywords to match with information from the referring website. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> Script</td> 
-   <td width="400">Javascript expression to be evaluated.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> Segment Reference <br /> </td> 
-   <td width="400">Reference to another segment definition.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> Tag Cloud<br /> </td> 
-   <td width="400">Tags to be matched with those from the pages visited.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> User Age<br /> </td> 
-   <td width="400">As taken from the user profile.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td width="125"> User Property<br /> </td> 
-   <td width="400">Any other information that is available in the user profile. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td width="125"> IP Range<br /> </td>
+   <td width="400">Defines a range of IP addresses that the visitor can have.<br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> Page Hits<br /> </td>
+   <td width="400">How often the page has been requested. <br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> Page Property<br /> </td>
+   <td width="400">Any property of the visited page.<br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> Referral Keywords<br /> </td>
+   <td width="400">Keywords to match with information from the referring website. <br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> Script</td>
+   <td width="400">Javascript expression to be evaluated.<br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> Segment Reference <br /> </td>
+   <td width="400">Reference to another segment definition.<br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> Tag Cloud<br /> </td>
+   <td width="400">Tags to be matched with those from the pages visited.<br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> User Age<br /> </td>
+   <td width="400">As taken from the user profile.<br /> </td>
+  </tr>
+  <tr>
+   <td width="125"> User Property<br /> </td>
+   <td width="400">Any other information that is available in the user profile. </td>
+  </tr>
+ </tbody>
 </table>
 
 You can combine these traits using the boolean operators OR and AND (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting this segment.
@@ -143,7 +143,7 @@ To define your new segment:
 
 You can construct complex segments in AEM. It helps to be aware of a few basic points:
 
-* The top level of the definition is always the AND container that is initially created; this cannot be changed, but does not have an effect on the rest of your segment definition.  
+* The top level of the definition is always the AND container that is initially created; this cannot be changed, but does not have an effect on the rest of your segment definition.
 * Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
 
 The following example is used to select visitors who are either:
@@ -156,7 +156,7 @@ Female and between the ages of 16 and 62
 
 As the main operator is OR you need to start with an **OR Container**. Within this you have 2 AND statements, for each of these you need an **AND Container**, into which you can add the individual traits.
 
-![](assets/screen_shot_2012-02-02at105145am.png) 
+![](assets/screen_shot_2012-02-02at105145am.png)
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 
@@ -183,8 +183,8 @@ Such tests can also be performed on content pages and in combination with **Teas
 
 Mouseover on a teaser paragraph will show the segments applied, whether they currently resolve and therefore, why the current teaser instance has been selected:
 
-![](assets/chlimage_1-47.png) 
+![](assets/chlimage_1-47.png)
 
 ### Using Your Segment {#using-your-segment}
 
-Segments are currently used within [Campaigns](/sites/classic-ui-authoring/using/classic-personalization-campaigns.md). They are used to steer the actual content seen by specific target audiences. See [Understanding Segments](/help/sites-authoring/segmentation-overview.md) for more information.
+Segments are currently used within [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md). They are used to steer the actual content seen by specific target audiences. See [Understanding Segments](/help/sites-authoring/segmentation-overview.md) for more information.

@@ -58,7 +58,7 @@ AEM Forms add-on package is an application deployed onto AEM. Generally, you req
 
 Before you begin to install and configure AEM Forms document services, ensure that:
 
-* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](../../sites/deploying/using/technical-requirements.md).  
+* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. Generally, you require only one AEM instance (author or publish) to run AEM Forms document services:
@@ -73,99 +73,99 @@ Before you begin to install and configure AEM Forms document services, ensure th
 
 * Client software required for PDF generator to perform conversion on Microsoft Windows and Linux are installed:
 
-    * **Microsoft Windows**: Install [Microsoft Office](../../forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)or [Apache OpenOffice   
+    * **Microsoft Windows**: Install [Microsoft Office](../../forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)or [Apache OpenOffice
       ](../../forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
-    
+
     * **Linux**: Install [Apache OpenOffice](../../forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
 >
->* On Microsoft Windows, PDF Generator supports WebKit, Acrobat WebCapture, and WebToPDF conversion routes to convert HTML files to PDF documents.  
+>* On Microsoft Windows, PDF Generator supports WebKit, Acrobat WebCapture, and WebToPDF conversion routes to convert HTML files to PDF documents.
 >* On UNIX-based operating systems, PDF Generator supports WebKit and WebToPDF conversion routes to convert HTML files to PDF documents.
 >
 
 If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system:
 
 <table>
- <tbody> 
-  <tr> 
-   <td width="25%"> 
-    <ul> 
-     <li>expat</li> 
-    </ul> </td> 
-   <td width="25%"> 
-    <ul> 
-     <li>libxcb</li> 
-    </ul> </td> 
-   <td width="25%"> 
-    <ul> 
-     <li>freetype</li> 
-    </ul> </td> 
-   <td width="25%"> 
-    <ul> 
-     <li>libXau</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li>libSM</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>zlib</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libICE</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libuuid</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li>glibc</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXext</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>nss-softokn-freebl</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>fontconfig</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li>libX11</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXrender</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXrandr</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXinerama</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td width="25%">
+    <ul>
+     <li>expat</li>
+    </ul> </td>
+   <td width="25%">
+    <ul>
+     <li>libxcb</li>
+    </ul> </td>
+   <td width="25%">
+    <ul>
+     <li>freetype</li>
+    </ul> </td>
+   <td width="25%">
+    <ul>
+     <li>libXau</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li>libSM</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>zlib</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libICE</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libuuid</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li>glibc</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libXext</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>nss-softokn-freebl</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>fontconfig</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li>libX11</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libXrender</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libXrandr</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libXinerama</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 * **(PDF Generator only**) Install the 32-bit version of libcurl, libcrypto, and libssl libraries and create the below symlinks. The symlinks point to the latest version of the respective libraries:
 
-    * /usr/lib/libcurl.so 
+    * /usr/lib/libcurl.so
     * /usr/lib/libcrypto.so
     * /usr/lib/libssl.so
 
@@ -193,7 +193,7 @@ If you are going use the PDF Generator service to convert native file formats su
 >
 >* Adobe Acrobat, Microsoft Word, Excel, and Powerpoint are available only for Microsoft Windows. If you are using the UNIX-based operating system, install OpenOffice to convert rich text files and supported Microsoft Office files to PDF documents.
 >* Dismiss all the dialog boxes that are displayed after installing Adobe Acrobat and third-party software for all the users configured to use the PDF Generator service.
->* Start all the installed software at least once. Dismiss all the dialog boxes for all the users configured to use the PDF Generator service. 
+>* Start all the installed software at least once. Dismiss all the dialog boxes for all the users configured to use the PDF Generator service.
 >
 
 After installing Acrobat, open Microsoft Word. On the **Acrobat **tab, click** Create PDF** and convert a .doc or .docx file available on your machine to a PDF Document. If the conversion is successful, AEM Forms is ready to use Acrobat with PDF Generator service.
@@ -203,43 +203,43 @@ After installing Acrobat, open Microsoft Word. On the **Acrobat **tab, click** C
 Set environment variables for 64-bit Java Development Kit, third-party applications, and Adobe Acrobat. The environment variables should contain the absolute path of the executable used to start the corresponding application, for example, the table below lists environment variables for a few applications:
 
 <table>
- <tbody> 
-  <tr> 
-   <td valign="top"><p><strong>Application</strong></p> </td> 
-   <td valign="top"><p><strong>Environment variable</strong></p> </td> 
-   <td valign="top"><p><strong>Example</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p><strong>JDK (64-bit)</strong></p> </td> 
-   <td valign="top"><p>JAVA_HOME</p> </td> 
-   <td valign="top"><p>C:\Program Files\Java\jdk1.8.0_74</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p><strong>Adobe Acrobat</strong></p> </td> 
-   <td valign="top"><p>Acrobat_PATH</p> </td> 
-   <td valign="top"><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p><strong>Notepad</strong></p> </td> 
-   <td valign="top"><p>Notepad_PATH</p> </td> 
-   <td valign="top"><p>C:\WINDOWS\notepad.exe<br /> <strong></strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p><strong>OpenOffice</strong></p> </td> 
-   <td valign="top"><p>OpenOffice_PATH</p> </td> 
-   <td valign="top"><p>C:\Program Files (x86)\OpenOffice.org4</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td valign="top"><p><strong>Application</strong></p> </td>
+   <td valign="top"><p><strong>Environment variable</strong></p> </td>
+   <td valign="top"><p><strong>Example</strong></p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p><strong>JDK (64-bit)</strong></p> </td>
+   <td valign="top"><p>JAVA_HOME</p> </td>
+   <td valign="top"><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p><strong>Adobe Acrobat</strong></p> </td>
+   <td valign="top"><p>Acrobat_PATH</p> </td>
+   <td valign="top"><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p><strong>Notepad</strong></p> </td>
+   <td valign="top"><p>Notepad_PATH</p> </td>
+   <td valign="top"><p>C:\WINDOWS\notepad.exe<br /> <strong></strong></p> </td>
+  </tr>
+  <tr>
+   <td valign="top"><p><strong>OpenOffice</strong></p> </td>
+   <td valign="top"><p>OpenOffice_PATH</p> </td>
+   <td valign="top"><p>C:\Program Files (x86)\OpenOffice.org4</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
 >
 >* All environment variables and respective paths are case-sensitive.
->* JAVA_HOME and Acrobat_PATH (Windows only) are mandatory environment variables.  
+>* JAVA_HOME and Acrobat_PATH (Windows only) are mandatory environment variables.
 >* The environment variable OpenOffice_PATH is set to the installation folder instead of the path to the executable.
 >* Do not set up environment variables for Microsoft Office applications such as Word, PowerPoint, Excel, and Project, or for AutoCAD. If these applications are installed on the server, the Generate PDF service automatically starts these applications.
->* On UNIX-based platforms, install OpenOffice as /root. If OpenOffice is not installed as root, the PDF Generator service fails to convert OpenOffice documents to PDF documents. If you are required to install and run OpenOffice as a non-root user, then provide sudo rights to the non-root user.  
->* If you are using OpenOffice on a UNIX-based platform, run the following command to set the path variable:  
+>* On UNIX-based platforms, install OpenOffice as /root. If OpenOffice is not installed as root, the PDF Generator service fails to convert OpenOffice documents to PDF documents. If you are required to install and run OpenOffice as a non-root user, then provide sudo rights to the non-root user.
+>* If you are using OpenOffice on a UNIX-based platform, run the following command to set the path variable:
 >  `export OpenOffice_PATH=/opt/openoffice.org4`
 >
 
@@ -266,7 +266,7 @@ Set environment variables for 64-bit Java Development Kit, third-party applicati
    ```shell
    ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
    ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-   
+
    #WebSphere socket factories (in cryptosf.jar)
    #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
    #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
@@ -281,14 +281,14 @@ Set environment variables for 64-bit Java Development Kit, third-party applicati
 If you are running Microsoft Windows Server, configure the Ink and Handwriting service. The service is required to open Microsoft PowerPoint files which use inking capabilities of Microsoft Office:
 
 1. Open the Server Manager. Click the **Server Manager** icon on the Quick Launch tray.
-1. Click **Add Features** in the **Features** menu. Select the **Ink and Handwriting Services** check box. 
+1. Click **Add Features** in the **Features** menu. Select the **Ink and Handwriting Services** check box.
 1. **Select Features** dialog box with **Ink and Handwriting Services** selected. Click **Install **and the service is installed.
 
 ### Configure the file block settings for Microsoft Office {#configure-the-file-block-settings-for-microsoft-office}
 
 Change the Microsoft Office trust center settings to enable the PDF Generator service to convert files created with older versions of Microsoft Office.
 
-1. Open a Microsoft Office application. For example, Microsoft Word. Navigate to **[!UICONTROL File]**> **[!UICONTROL Options]**. The options dialog box appears.  
+1. Open a Microsoft Office application. For example, Microsoft Word. Navigate to **[!UICONTROL File]**> **[!UICONTROL Options]**. The options dialog box appears.
 
 1. Click **Trust Center**, and click **Trust Center Settings**.
 1. In the **Trust Center settings**, click **File Block Settings**.
@@ -306,14 +306,14 @@ The user account used to start the application server requires the **Replace a p
 
 You can enable a non-administrator user to use the PDF Generator service. Normally, only users with administrative privileges can use the service:
 
-1. Create an environment variable, PDFG_NON_ADMIN_ENABLED.   
+1. Create an environment variable, PDFG_NON_ADMIN_ENABLED.
 
 1. Set value of the environment variable to TRUE.
 1. Restart the AEM Forms instance.
 
 ### Disable User Account Control (UAC) {#disable-user-account-control-uac}
 
-1. To access the System Configuration Utility, go to **Start &gt; Run **and then enter **MSCONFIG.** 
+1. To access the System Configuration Utility, go to **Start &gt; Run **and then enter **MSCONFIG.**
 1. Click the **Tools **tab and scroll down and select **Change UAC Settings**. Click **Launch **to run the command in a new window.
 1. Adjust the slider to the Never notify level. When finished, close the command window and close the System Configuration window.
 1. Verify that registry setting for UAC is set to 0 (zero). Perform the following steps to verify:
@@ -353,10 +353,10 @@ Copy the Unicode font to any of the following directories as appropriate for you
 
 >[!NOTE]
 >
->* On RedHat Enterprise Linux 6.x and later, the courier fonts are not available. To install the courier fonts, download the font-ibm-type1-1.0.3.zip archive. Extract the archive at /usr/share/fonts. Create a symbolic link from /usr/share/X11/fonts to /usr/share/fonts.  
+>* On RedHat Enterprise Linux 6.x and later, the courier fonts are not available. To install the courier fonts, download the font-ibm-type1-1.0.3.zip archive. Extract the archive at /usr/share/fonts. Create a symbolic link from /usr/share/X11/fonts to /usr/share/fonts.
 >* Delete all the .lst font cache files from the Html2PdfSvc/bin and /usr/share/fonts directories.
 >* Ensure that the directories /usr/lib/X11/fonts and /usr/share/fonts exist. If the directories do not exist, then use the ln command to create* a symbolic link from /usr/share/X11/fonts to /usr/lib/X11/fonts and another symbolic link from /usr/share/fonts to /usr/share/X11/fonts. *Also ensure that the courier fonts are available at /usr/lib/X11/fonts.
->* Ensure that all the fonts (Unicode and non-unicode) are available in the /usr/share/fonts or /usr/share/X11/fonts directory.  
+>* Ensure that all the fonts (Unicode and non-unicode) are available in the /usr/share/fonts or /usr/share/X11/fonts directory.
 >* When you run PDF Generator service as a non-root user, provide the non-root user read and write access to all the font directories.
 >
 
@@ -364,7 +364,7 @@ Copy the Unicode font to any of the following directories as appropriate for you
 
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms Document Services and other AEM Forms capabilities. Perform the following steps to install the package:
 
-1. Log in to the [AEM server](https://localhost:4502) as an administrator and open [package share](https://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.  
+1. Log in to the [AEM server](https://localhost:4502) as an administrator and open [package share](https://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
 
 1. In [AEM package share](https://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
 
@@ -382,7 +382,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 1. Stop the AEM instance. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing.
 
-   If you use [AEM installation directory]\crx-quickstart\bin\start.bat to start an AEM instance, edit the sling.properties located at [AEM_root]\crx-quickstart\. 
+   If you use [AEM installation directory]\crx-quickstart\bin\start.bat to start an AEM instance, edit the sling.properties located at [AEM_root]\crx-quickstart\.
 
 1. Add the following properties to the sling.properties file:
 
@@ -395,7 +395,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 #### Configuring the font manager service  {#configuring-the-font-manager-service}
 
-1. Log in to [AEM Configuration Manager](https://localhost:4502/system/console/configMgr) as an administrator. 
+1. Log in to [AEM Configuration Manager](https://localhost:4502/system/console/configMgr) as an administrator.
 1. Locate and open the **CQ-DAM-Handler-Gibson Font Managers** service. Specify the path of the System Fonts, Adobe Server Fonts, and Customer Fonts directories. Click **Save**.
 
    >[!NOTE]
@@ -423,28 +423,28 @@ A local user account is required to run the PDF Generator service. For steps to 
    Open the **General Configuration** tab and modify the value of the following fields for your environment:
 
 <table>
- <tbody> 
-  <tr> 
-   <td>Field</td> 
-   <td>Description</td> 
-   <td>Default Value</td> 
-  </tr> 
-  <tr> 
-   <td>Server Conversion Timeout</td> 
-   <td>A PDFG conversion stays active for the number of seconds defined in the Server Conversion timeout</td> 
-   <td>270 seconds<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>PDFG Cleanup Scan Seconds</td> 
-   <td>The number of seconds required to perform post-conversion operations.<br /> </td> 
-   <td>3600 seconds</td> 
-  </tr> 
-  <tr> 
-   <td>Job Expiration Seconds</td> 
-   <td>Duration for which PDF Generator service is allowed to run a conversion. Ensure that the value of the Job Expiration Seconds is greater than the PDFG Cleanup Scan Seconds value.</td> 
-   <td>7200 seconds</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>Field</td>
+   <td>Description</td>
+   <td>Default Value</td>
+  </tr>
+  <tr>
+   <td>Server Conversion Timeout</td>
+   <td>A PDFG conversion stays active for the number of seconds defined in the Server Conversion timeout</td>
+   <td>270 seconds<br /> </td>
+  </tr>
+  <tr>
+   <td>PDFG Cleanup Scan Seconds</td>
+   <td>The number of seconds required to perform post-conversion operations.<br /> </td>
+   <td>3600 seconds</td>
+  </tr>
+  <tr>
+   <td>Job Expiration Seconds</td>
+   <td>Duration for which PDF Generator service is allowed to run a conversion. Ensure that the value of the Job Expiration Seconds is greater than the PDFG Cleanup Scan Seconds value.</td>
+   <td>7200 seconds</td>
+  </tr>
+ </tbody>
 </table>
 
 #### Configure Acrobat for the PDF Generator service {#configure-acrobat-for-the-pdf-generator-service}
@@ -452,10 +452,10 @@ A local user account is required to run the PDF Generator service. For steps to 
 On Microsoft Windows, the PDF Generator service uses Adobe Acrobat to convert supported file formats to a PDF document. Perform the following steps to configure Adobe Acrobat for the PDF Generator service:
 
 1. Open Acrobat and select **[!UICONTROL Edit]**> **[!UICONTROL Preferences]**> **[!UICONTROL Updater]**. In Check for updates, deselect **Automatically install updates**, and click **OK**. Close Acrobat.
-1. Double-click a PDF document on your system. When Acrobat starts for the first time, the dialog boxes for Sign-in, Welcome screen, and EULA appear. Dismiss these dialog boxes for all the users configured to use PDF Generator. 
+1. Double-click a PDF document on your system. When Acrobat starts for the first time, the dialog boxes for Sign-in, Welcome screen, and EULA appear. Dismiss these dialog boxes for all the users configured to use PDF Generator.
 1. Run the PDF Generator utility batch file to configure Acrobat for the PDF Generator service:
 
-    1. Open [AEM Package Manager](https://localhost:4502/crx/packmgr/index.jsp) and download the adobe-aemfd-pdfg-common-pkg-[version].zip file from the package manager. 
+    1. Open [AEM Package Manager](https://localhost:4502/crx/packmgr/index.jsp) and download the adobe-aemfd-pdfg-common-pkg-[version].zip file from the package manager.
     1. Unzip the downloaded .zip file. Open the command prompt with administrative privileges.
     1. Navigate to the [extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts directory. Run the following batch file:
 
@@ -493,7 +493,7 @@ Before setting up the certificates, ensure that you have a:
 
 * Certificate file (.pfx).
 * Private Key password provided with the certificate.
-* Private Key Alias. You can execute the Java keytool command to view the Private Key Alias:  
+* Private Key Alias. You can execute the Java keytool command to view the Private Key Alias:
   keytool -list -v -keystore [keystore-file] -storetype pkcs12
 * Keystore file password. If you are using Adobe's Reader Extensions certificate, the Keystore file password is always the same as Private Key password.
 
@@ -522,28 +522,28 @@ The Assembler service depends on the Reader Extensions service, Signature servic
 1. Search the following service and ensure that the services are up and running:
 
 <table>
- <tbody> 
-  <tr> 
-   <th>Service Name</th> 
-   <th>Bundle Name</th> 
-  </tr> 
-  <tr> 
-   <td>Signatures Service</td> 
-   <td>adobe-aemfd-signatures</td> 
-  </tr> 
-  <tr> 
-   <td>Reader Extensions Service</td> 
-   <td>com.adobe.aemfd.adobe-aemfd-readerextensions<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Forms Service</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Output Service</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>Service Name</th>
+   <th>Bundle Name</th>
+  </tr>
+  <tr>
+   <td>Signatures Service</td>
+   <td>adobe-aemfd-signatures</td>
+  </tr>
+  <tr>
+   <td>Reader Extensions Service</td>
+   <td>com.adobe.aemfd.adobe-aemfd-readerextensions<br /> </td>
+  </tr>
+  <tr>
+   <td>Forms Service</td>
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td>
+  </tr>
+  <tr>
+   <td>Output Service</td>
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Known issues and troubleshooting {#known-issues-and-troubleshooting}
@@ -552,7 +552,7 @@ The Assembler service depends on the Reader Extensions service, Signature servic
 
 * On UNIX-based operating systems, do the following to find any missing libraries:
 
-1. Navigate to [crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/.  
+1. Navigate to [crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/.
 
 1. Run the following command to list all libraries that WebToPDF requires for HTML to PDF conversion.
 

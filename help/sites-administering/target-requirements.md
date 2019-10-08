@@ -25,14 +25,14 @@ The Client Code identifies the Adobe Target customer account when calling the Ad
 
 >[!NOTE]
 >
->Your account must also be enabled by the Target team in order to use the integration.  
+>Your account must also be enabled by the Target team in order to use the integration.
 
 >
 >If it's not the case, please contact [Adobe Target Customer Care](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html).
 
 ## Enabling the Target Replication Agent {#enabling-the-target-replication-agent}
 
-The Test and Target [replication agent](../../../sites/deploying/using/replication.md) must be enabled on the author instance. Note that this replication agent is not enabled by default if you used the [nosamplecontent](/sites/deploying/using/configure-runmodes.md#using-samplecontent-and-nosamplecontent) run mode for installing AEM. For more information about securing your production environment, see the [Security Checklist](..//help/sites-administering/security-checklist.md).
+The Test and Target [replication agent](/help/sites-deploying/replication.md) must be enabled on the author instance. Note that this replication agent is not enabled by default if you used the [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) run mode for installing AEM. For more information about securing your production environment, see the [Security Checklist](..//help/sites-administering/security-checklist.md).
 
 1. On the AEM home page, click or tap **Tools** &gt; **Deployment** &gt; **Replication**.
 1. Click or tap **Agents On Author**.
@@ -72,7 +72,7 @@ To configure the AEM externalizer:
 
 >[!NOTE]
 >
->For more details see [Externalizing URLs](../../../sites/developing/using/externalizer.md).
+>For more details see [Externalizing URLs](/help/sites-developing/externalizer.md).
 
 1. Navigate to the OSGi web console at** https://&lt;server&gt;:&lt;port&gt;/system/console/configMgr.**
 1. Find **Day CQ Link Externalizer** and enter the domain for the author node.

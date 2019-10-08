@@ -1,8 +1,8 @@
 ---
 title: Installing and Configuring Forms-centric workflow on OSGi
 seo-title: Installing and Configuring Forms-centric workflow on OSGi
-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits. 
-seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits. 
+description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
 topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
@@ -24,7 +24,7 @@ AEM Forms is a powerful enterprise-class platform. Forms-centric workflow on OSG
 
 >[!NOTE]
 >
->With Forms-centric workflow on OSGi, you can rapidly build and deploy workflows for various tasks on the OSGi stack, without having to install the full-fledged Process Management capability on JEE stack. See a [comparison](../../forms/using/capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities. 
+>With Forms-centric workflow on OSGi, you can rapidly build and deploy workflows for various tasks on the OSGi stack, without having to install the full-fledged Process Management capability on JEE stack. See a [comparison](../../forms/using/capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.
 >
 >After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/forms/user-guide.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.
 
@@ -46,14 +46,14 @@ AEM Forms Forms-centric workflow on OSGi runs AEM Inbox and AEM Workflow Model c
 
 Before you begin to install and configure Forms-centric workflow on OSGi, ensure that:
 
-* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](../../sites/deploying/using/technical-requirements.md).  
+* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least one AEM instance (Author or Processing) to run Forms-centric workflow on OSGi:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
-    * **Processing:** A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.   
-    
+    * **Processing:** A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.
+
     * **Publish**: An AEM instance that serves the published content to the public over the Internet or an internal network.
 
 * Memory requirements are met. AEM Forms add-on package requires:
@@ -66,28 +66,28 @@ Before you begin to install and configure Forms-centric workflow on OSGi, ensure
 <table>
  <tbody>
   <tr>
-   <td>expat</td> 
-   <td>libxcb</td> 
-   <td>freetype</td> 
-   <td>libXau</td> 
+   <td>expat</td>
+   <td>libxcb</td>
+   <td>freetype</td>
+   <td>libXau</td>
   </tr>
   <tr>
-   <td>libSM</td> 
-   <td>zlib</td> 
-   <td>libICE</td> 
-   <td>libuuid</td> 
+   <td>libSM</td>
+   <td>zlib</td>
+   <td>libICE</td>
+   <td>libuuid</td>
   </tr>
   <tr>
-   <td>glibc</td> 
-   <td>libXext</td> 
-   <td><p>nss-softokn-freebl</p> </td> 
-   <td>fontconfig</td> 
+   <td>glibc</td>
+   <td>libXext</td>
+   <td><p>nss-softokn-freebl</p> </td>
+   <td>fontconfig</td>
   </tr>
   <tr>
-   <td>libX11</td> 
-   <td>libXrender</td> 
-   <td>libXrandr</td> 
-   <td>libXinerama</td> 
+   <td>libX11</td>
+   <td>libXrender</td>
+   <td>libXrandr</td>
+   <td>libXinerama</td>
   </tr>
  </tbody>
 </table>
@@ -189,6 +189,6 @@ To use Adobe Sign with AEM Forms, [Integrate Adobe Sign with AEM Forms](../../fo
 You have configured an environment to use Forms-centric workflow on OSGi capabilities. Now, the steps toward using the capability are:
 
 * [Using Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md)
-* [Workflow Step Reference](../../sites/developing/using/workflows-step-ref.md)
+* [Workflow Step Reference](/help/sites-developing/workflows-step-ref.md)
 * [Post processing of letters and interactive communications](../../forms/using/submit-letter-topostprocess.md)
 

@@ -41,65 +41,65 @@ As shown below, a configuration of the service exists for sites created with the
 
 To add a new configuration, select the plus '**+**' icon next to the service's name :
 
-* **Message Fields Whitelist** 
+* **Message Fields Whitelist**
   Specifies the properties of the Compose Message component users can edit and persist. If new form elements are added, then the element id would need to be added if desired to be stored in SRP. Default is two entries: *subject* and *content*.
 
-* **Message box size limit** 
+* **Message box size limit**
   The maximum number of bytes in each user's message box. Default is *1073741824 *(1 GB).
 
-* **Message count limit** 
+* **Message count limit**
   The total number of messages allowed per user. A value of -1 indicates an unlimited number of messages is allowed, subject to the message box size limit. Default is *10000* (10k).
 
-* **Notify delivery failure** 
+* **Notify delivery failure**
   If checked, notify sender if message delivery fails to some recipients. Default is *checked*.
 
-* **Failure delivery sender id** 
+* **Failure delivery sender id**
   Name of sender which appears in delivery failed message. Default is *failureNotifier*.
 
-* **Failure message template path** 
+* **Failure message template path**
   Absolute path to the delivery failed message template root. Default is */etc/notification/messaging/default*.
 
-* **No of retries** 
+* **No of retries**
   Number of times to try resending message which fails to be delivered. Default is *3*.
 
-* **Wait between retries** 
+* **Wait between retries**
   Number of seconds to wait between attempts to resend message upon failure to send. Default is *100 *(seconds).
 
-* **Count update pool size** 
+* **Count update pool size**
   Number of concurrent threads used for count update. Default is *10*.
 
-* **Inbox path** 
+* **Inbox path**
   (*Required*) The path, relative to the user's node (/home/users/*username*), to use for the **`inbox`** folder. The path must NOT end with a trailing forward slash '/'. Default is */mail/inbox.*
 
-* **Sent items path** 
+* **Sent items path**
   (*Required*) The path, relative to the user's node (/home/users/*username*), to use for the **`send items`** folder. The path must NOT end with a trailing forward slash '/'. Default is */mail/sentitems* .
 
-* **Support attachments** 
+* **Support attachments**
   If checked, users are able to add attachments to their messages. Default is *checked*.
 
-* **Enable group messaging** 
+* **Enable group messaging**
   If selected, registered users can send bulk message to a group of members. Default is *deselected*. ** **
 
-* **Maximum no. of total recipients** 
-  If group messaging is enabled, specify the maximum number of recipients to which group message can be sent at a time. Default is *100*. 
+* **Maximum no. of total recipients**
+  If group messaging is enabled, specify the maximum number of recipients to which group message can be sent at a time. Default is *100*.
 
-* **Batch size** 
+* **Batch size**
   Number of messages to batch together for a send when sending to a large group of recipients. Default is *100*.
 
-* **Total attachment size** 
+* **Total attachment size**
   If supportAttachments is checked, this value specifies the maximum allowed total size (in bytes) of all attachments. Default is *104857600* (100 MB).
 
-* **Attachment type black list** 
+* **Attachment type black list**
   A blacklist of filename extensions, prefixed with '**.**', that will be rejected by the system. If not blacklisted, then the extension is allowed. Extensions may be added or removed using the '**+**' and '**-**' icons.
 
-* **Allowed attachment types** 
+* **Allowed attachment types**
   **(*Action Required*)** A whitelist of filename extensions, the opposite of the blacklist. To allow all filename extensions, except for those blacklisted, use the '**-**' icon to remove the single empty entry.
 
-* **Service selector** 
-  (*Required*) An absolute path (endpoint) through which the service is called (a virtual resource). The root of the path chosen must be one included in the *Execution Paths* configuration setting of OSGi config [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), such as `/bin/`, `/apps/`, and `/services/`. To select this configuration for a site's messaging feature, this endpoint is provided as the **`Service selector`** value for the `Message List and Compose Message components` (see [Message Feature](../../communities/using/configure-messaging.md)).  
+* **Service selector**
+  (*Required*) An absolute path (endpoint) through which the service is called (a virtual resource). The root of the path chosen must be one included in the *Execution Paths* configuration setting of OSGi config [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), such as `/bin/`, `/apps/`, and `/services/`. To select this configuration for a site's messaging feature, this endpoint is provided as the **`Service selector`** value for the `Message List and Compose Message components` (see [Message Feature](../../communities/using/configure-messaging.md)).
   The default is */bin/messaging* .
 
-* **Field whitelist** 
+* **Field whitelist**
   Use **Message Fields Whitelist**.
 
 >[!CAUTION]
@@ -127,6 +127,6 @@ To allow registered users to send direct messages in bulk to user groups, make s
 
 One way to troubleshoot problems is to enable [debugging messages in the log.](/help/sites-administering/troubleshooting.md)
 
-See also [Loggers and Writers for Individual Services](/sites/deploying/using/configure-logging.md#loggers-and-writers-for-individual-services).
+See also [Loggers and Writers for Individual Services](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 
-The package to monitor is `com.adobe.cq.social.messaging`. 
+The package to monitor is `com.adobe.cq.social.messaging`.

@@ -1,8 +1,8 @@
 ---
 title: Managing Projects - Best Practices Checklist
 seo-title: Managing Projects - Best Practices Checklist
-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status. 
-seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status. 
+description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
+seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
 uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -83,7 +83,7 @@ As always, adjusting any of the factors will impact the others. For example redu
 
 The Four Factors:
 
-![](assets/projectphases_fourphases.png) 
+![](assets/projectphases_fourphases.png)
 
 #### Milestones {#milestones}
 
@@ -99,7 +99,7 @@ The Four Factors:
 
     * How will you define success?
     * How will you measure success?
-    * What are the requirements, business and technical?  
+    * What are the requirements, business and technical?
     * Are there legacy systems to be replaced and if so, is there data to be migrated?
     * Who will be involved?
     * How will you measure progress?
@@ -111,7 +111,7 @@ The Four Factors:
 
     * Use information from the validation milestone as a basis for the estimates.
     * Be realistic in your estimates.
-    * Consider and respect any client guidelines, processes or restrictions that the client may be subject to. 
+    * Consider and respect any client guidelines, processes or restrictions that the client may be subject to.
     * Consider contingency and review processes should a review, or refinement, of the budget is required at a later stage.
     * Remember that costs come in many forms; purchases, use of resources and fees amongst others.
 
@@ -177,16 +177,16 @@ Planning the development is key to ensure that your project is built on a solid 
 
   The system architecture defines the conceptual view of your system; including (amongst other information):
 
-    * [System structure](../../sites/deploying/using/recommended-deploys.md#deployment-scenarios) for all required environments
+    * [System structure](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) for all required environments
     * Sub-systems
     * Third party systems
     * Interfaces; hardware, software and human interaction
-    * Servers for each environment; see the [Technical Requirements](../../sites/deploying/using/technical-requirements.md) and [Hardware Sizing Guidelines](../../managing/using/hardware-sizing-guidelines.md)
-    
+    * Servers for each environment; see the [Technical Requirements](/help/sites-deploying/technical-requirements.md) and [Hardware Sizing Guidelines](../../managing/using/hardware-sizing-guidelines.md)
+
     * Processes for each environment; for example, deployment and maintenance requirements
     * Maintenance activities (Datastore GC, TarPM optimization, etc.)
-    * [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) caching 
-    * [Clustering](../../sites/deploying/using/recommended-deploys.md#deployment-scenarios) Publish/Authorshare 
+    * [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) caching
+    * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
     * Performance for the client-side (JS minify, concat, css sprites, total number of http requests, and others)
 
 * **Application Architecture**
@@ -195,7 +195,7 @@ Planning the development is key to ensure that your project is built on a solid 
 
   It is focused on:
 
-    * How they will interact with each other and with users. 
+    * How they will interact with each other and with users.
     * The data to be consumed and produced by applications, rather than their internal structure.
 
   The definitions should cover:
@@ -216,7 +216,7 @@ Planning the development is key to ensure that your project is built on a solid 
 
 * **Test Concept**
 
-  Before starting development you should draw up an in-depth and comprehensive concept of all [testing](/sites/developing/using/planning.md) requirements for your project.
+  Before starting development you should draw up an in-depth and comprehensive concept of all [testing](/help/sites-developing/planning.md) requirements for your project.
 
   This should include (amongst others):
 
@@ -250,10 +250,10 @@ On a similar basis the operations must be properly planned to ensure you have th
 
   For example:
 
-    * A list of roles (i.e. groups) with `read`/ `write` access definitions for each 
-    
+    * A list of roles (i.e. groups) with `read`/ `write` access definitions for each
+
     * Definition of the use of privileges that impact the publish environment; for example, `replicate`
-    * For users with minimal privileges, workflows should be defined 
+    * For users with minimal privileges, workflows should be defined
     * Users in the `editor` group should not have `admin` rights nor be part of the `administrators` group
 
   For more information, see [User Administration and Security](/help/sites-administering/security.md).
@@ -265,7 +265,7 @@ On a similar basis the operations must be properly planned to ensure you have th
     * What needs monitoring
     * Maintenance tasks; both regular and for special cases
 
-  See also [Monitoring and Maintenance](../../sites/deploying/using/monitoring-and-maintaining.md) for more information.
+  See also [Monitoring and Maintenance](/help/sites-deploying/monitoring-and-maintaining.md) for more information.
 
 * **Migration**
 
@@ -286,7 +286,7 @@ Development is a crucial phase that requires more than just coding.
   Plan and document your development environment, including:
 
     * Architecture
-    * [Development tools](/sites/developing/using/dev-tools.md)
+    * [Development tools](/help/sites-developing/dev-tools.md)
 
         * A typical environment consists of:
 
@@ -319,8 +319,8 @@ Development is a crucial phase that requires more than just coding.
     * Deployment cadence
     * Third party software integration/dependencies
     * Security setup
-    * Baseline performance verified by running the [Tough Day tests](../../sites/developing/using/tough-day.md) on the production setup
-    * Requirements for performance tests; see [Best Practices for Quality Assurance](/sites/deploying/using/configuring-performance.md#best-practices-for-quality-assurance)
+    * Baseline performance verified by running the [Tough Day tests](/help/sites-developing/tough-day.md) on the production setup
+    * Requirements for performance tests; see [Best Practices for Quality Assurance](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integration**
 
@@ -351,7 +351,7 @@ Development is a crucial phase that requires more than just coding.
 
 ### Performance and Testing {#performance-and-testing}
 
-Once the new application is available it will need to undergo stringent testing, both for functionality and [performance](/sites/deploying/using/configuring-performance.md).
+Once the new application is available it will need to undergo stringent testing, both for functionality and [performance](/help/sites-deploying/configuring-performance.md).
 
 >[!NOTE]
 >
@@ -363,7 +363,7 @@ Once the new application is available it will need to undergo stringent testing,
 
 * **End-User Acceptance Test**
 
-  [User acceptance testing](/sites/developing/using/acceptance-signoff.md) (UAT) is crucial to ensure that:
+  [User acceptance testing](/help/sites-developing/acceptance-signoff.md) (UAT) is crucial to ensure that:
 
     * The solution fulfills the user/customer requirements
     * The customer/users accept the solution (function, design and performance)
@@ -376,10 +376,10 @@ Once the new application is available it will need to undergo stringent testing,
 
   For more information about performance testing, see:
 
-    * [Performance Testing](/sites/deploying/using/configuring-performance.md)
-    * [How to plan and run testing](/sites/developing/using/planning.md)  
-    
-    * [Basic Performance Guidelines](/sites/deploying/using/configuring-performance.md#basic-performance-guidelines)
+    * [Performance Testing](/help/sites-deploying/configuring-performance.md)
+    * [How to plan and run testing](/help/sites-developing/planning.md)
+
+    * [Basic Performance Guidelines](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
 
   >[!NOTE]
   >
@@ -419,7 +419,7 @@ Rollout of your new application needs careful planning to ensure a smooth Go Liv
 
 * **Penetration Tests**
 
-  Penetration tests simulate an attack on a computer system to identify potential security weaknesses. 
+  Penetration tests simulate an attack on a computer system to identify potential security weaknesses.
 
 * **Penetration/Security Tests**
 
@@ -511,7 +511,7 @@ The business analyst:
 The development lead:
 
 * Is responsible for the technical delivery of the project.
-* Is responsible for selecting a development methodology that is compliant with client requirements. 
+* Is responsible for selecting a development methodology that is compliant with client requirements.
 * Draws up the development strategy:
 
     * ensuring that it is aligned with the business and performance KPIs
@@ -603,23 +603,23 @@ Deliverables are often used as **Required Documents** for either the current or 
 For best practices on deploying, administering, developing, or authoring, see the following:
 
 * [Other Best Practices and Guidelines related to Managing an AEM project](../../managing/using/manage-reference.md)
-* [Deploying and Maintaining best practices](/sites/deploying/using/best-practices.md)
+* [Deploying and Maintaining best practices](/help/sites-deploying/best-practices.md)
 * [Administering best practices](/help/sites-administering/administer-best-practices.md)
-* [Developing best practices](/sites/developing/using/best-practices.md)
+* [Developing best practices](/help/sites-developing/best-practices.md)
 * [Authoring best practices](/help/sites-authoring/best-practices.md)
 
 ## Key Documentation Areas {#key-documentation-areas}
 
-* AEM Documentation  
+* AEM Documentation
   In addition, the following sections of AEM documentation are of particular interest (however, this list is not exhaustive):
 
-    * [Security](/sites/developing/using/security.md)
-    * [Recommended Deployments](../../sites/deploying/using/recommended-deploys.md)
+    * [Security](/help/sites-developing/security.md)
+    * [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
     * [Enterprise DevOps](/managing/using/enterprise-devops.md)
     * [Hardware sizing](../../managing/using/hardware-sizing-guidelines.md)
     * Concepts of AEM:
 
-        * [Developing - the basics](/sites/developing/using/the-basics.md)
+        * [Developing - the basics](/help/sites-developing/the-basics.md)
         * [MSM concepts](/help/sites-administering/msm.md)
         * [HTML Template Language (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
 

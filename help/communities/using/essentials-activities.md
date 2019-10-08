@@ -36,28 +36,28 @@ A * [social graph](/communities/using/essentials-socialgraph.md)* captures the f
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/activitystreams/components/hbs/activitystreams</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/activitystreams/components/hbs/activitystreams</td>
   </tr>
   <tr>
-   <td> <a href="/communities/using/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
+   <td> <a href="/communities/using/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="../../communities/using/clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.activitystreams</td> 
+   <td> <a href="../../communities/using/clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.hbs.activitystreams</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/activitystreams/components/hbs/activitystreams/activitystreams.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity-title.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity.hbs</td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/activitystreams/components/hbs/activitystreams/activitystreams.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity-title.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/activitystreams/components/hbs/activitystreams/clientlibs/activitystreams.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/activitystreams/components/hbs/activitystreams/clientlibs/activitystreams.css</td>
   </tr>
   <tr>
-   <td><strong> properties</strong></td> 
-   <td>see <a href="../../communities/using/activities.md">Activity Streams Feature</a></td> 
+   <td><strong> properties</strong></td>
+   <td>see <a href="../../communities/using/activities.md">Activity Streams Feature</a></td>
   </tr>
  </tbody>
 </table>
@@ -66,9 +66,9 @@ A * [social graph](/communities/using/essentials-socialgraph.md)* captures the f
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Activity Streams API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [Activity Streams API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [Activity Streams Listener API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.htmld)
+* [Activity Streams Listener API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.htmld)
 
 * [Server-side Customizations](/communities/using/server-customize.md)
 

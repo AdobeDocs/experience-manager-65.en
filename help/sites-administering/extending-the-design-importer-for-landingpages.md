@@ -15,7 +15,7 @@ docset: aem65
 
 # Extending and Configuring the Design Importer for Landing Pages{#extending-and-configuring-the-design-importer-for-landing-pages}
 
-This section describes how to configure and if desired, extend the design importer for landing pages. Working with Landing Pages after import is covered in [Landing Pages.](../../../sites/classic-ui-authoring/using/classic-personalization-campaigns-landingpage.md)
+This section describes how to configure and if desired, extend the design importer for landing pages. Working with Landing Pages after import is covered in [Landing Pages.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 
 **Making the design importer extract your custom component**
 
@@ -323,8 +323,8 @@ A lead form is a form that is used to collect a visitor/lead's profile informati
 * Map lead form fields using specific pre-defined names of CTA lead form, for example - firstName for first-name in lead form, and so on.
 * Fields that are not mapped to lead form will map to cq:form components - text, radio, checkbox, dropdown, hidden, password.
 * User can provide the title using “label” tag and can provide styling by using style attribute “class” (only available for CTA lead form components).
-* Thank You page and subscription list can be provided as a hidden parameter of the form (present in the index.htm) or can be added/edited from edit bar of “Start of lead form”  
-  &lt;input type="hidden" name="redirectUrl" value="/content/we-retail/en/user/register/thank_you"/&gt;  
+* Thank You page and subscription list can be provided as a hidden parameter of the form (present in the index.htm) or can be added/edited from edit bar of “Start of lead form”
+  &lt;input type="hidden" name="redirectUrl" value="/content/we-retail/en/user/register/thank_you"/&gt;
   &lt;input type="hidden" name="groupName" value="leadForm"/&gt;
 
 * Constraints like - required can be provided from edit configuration of each of the component.
@@ -438,7 +438,7 @@ If no encoding is specified in the imported HTML, then the default encoding set 
 
 The Blank Landing Page template can be overlayed by creating a new one at: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Steps for creating a new template in AEM are explained [here](/sites/developing/using/templates.md).
+Steps for creating a new template in AEM are explained [here](/help/sites-developing/templates.md).
 
 ### Referring a component from Landing page {#referring-a-component-from-landing-page}
 
@@ -480,55 +480,55 @@ The components that expose properties configurable via OSGI console are as follo
 The below table briefly describes the properties:
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Component</strong></td> 
-   <td><strong>Property Name</strong></td> 
-   <td><strong>Property Description </strong></td> 
-  </tr> 
-  <tr> 
-   <td>Landing Page Design Importer</td> 
-   <td>Extract Filter</td> 
-   <td>The list of regular expressions to be used for filtering files from extraction. <br /> Zip entries matching any of the specified patterns are excluded from extraction</td> 
-  </tr> 
-  <tr> 
-   <td>Landing Page Builder</td> 
-   <td>File Pattern</td> 
-   <td>The Landing Page Builder can be configured to handle HTML files matching a regular expression as defined by file pattern.</td> 
-  </tr> 
-  <tr> 
-   <td>Mobile Landing Page Builder</td> 
-   <td>File Pattern</td> 
-   <td>The Landing Page Builder can be configured to handle HTML files matching a regular expression as defined by file pattern.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Device Groups</td> 
-   <td>The list of device groups to be supported.</td> 
-  </tr> 
-  <tr> 
-   <td>Landing Page Entry Preprocessor</td> 
-   <td>Search Pattern </td> 
-   <td>The pattern to search for, in the archive entry contents. This regular expression is matched with the entry content line by line. Upon match, the matching text is replaced with the replacement pattern specified.<br /> <br /> See note below regarding current limitations of landing page entry preprocessor.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Replace Pattern</td> 
-   <td>The pattern that replaces the matches found. You may use regex group references like $1, $2. Additionally, this pattern supports keywords like {designPath} that get resolved with the actual value during import.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Component</strong></td>
+   <td><strong>Property Name</strong></td>
+   <td><strong>Property Description </strong></td>
+  </tr>
+  <tr>
+   <td>Landing Page Design Importer</td>
+   <td>Extract Filter</td>
+   <td>The list of regular expressions to be used for filtering files from extraction. <br /> Zip entries matching any of the specified patterns are excluded from extraction</td>
+  </tr>
+  <tr>
+   <td>Landing Page Builder</td>
+   <td>File Pattern</td>
+   <td>The Landing Page Builder can be configured to handle HTML files matching a regular expression as defined by file pattern.</td>
+  </tr>
+  <tr>
+   <td>Mobile Landing Page Builder</td>
+   <td>File Pattern</td>
+   <td>The Landing Page Builder can be configured to handle HTML files matching a regular expression as defined by file pattern.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Device Groups</td>
+   <td>The list of device groups to be supported.</td>
+  </tr>
+  <tr>
+   <td>Landing Page Entry Preprocessor</td>
+   <td>Search Pattern </td>
+   <td>The pattern to search for, in the archive entry contents. This regular expression is matched with the entry content line by line. Upon match, the matching text is replaced with the replacement pattern specified.<br /> <br /> See note below regarding current limitations of landing page entry preprocessor.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Replace Pattern</td>
+   <td>The pattern that replaces the matches found. You may use regex group references like $1, $2. Additionally, this pattern supports keywords like {designPath} that get resolved with the actual value during import.</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
 >
->**Current limitation of Landing Page Entry Preprocessor:** 
+>**Current limitation of Landing Page Entry Preprocessor:**
 >If you need to make any changes to the search pattern, when you open the felix property editor, you need to manually add backslash characters to escape the regex metacharacters. If you do not manually add backslash characters, the regex is considered invalid and will not replace the older one.
 >
 >For example, if the default configuration is
 >
 >`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->And you need to replace `CQ_DESIGN_PATH` with `VIPURL` in the search pattern, then your search pattern should look like this: 
+>And you need to replace `CQ_DESIGN_PATH` with `VIPURL` in the search pattern, then your search pattern should look like this:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 

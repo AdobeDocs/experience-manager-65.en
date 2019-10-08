@@ -103,36 +103,36 @@ Porlet preferences can be configured at deployment time in the portal server or 
 The portlet can be configured with the following preferences:
 
 <table>
- <tbody> 
-  <tr> 
-   <td>startPath</td> 
-   <td><p>This is the start path of the portlet: it defines the content that is initially displayed.</p> <p><strong>Important</strong>: If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than<strong> /</strong>, you need to enable the force <strong>CQUrlInfo</strong> in the Html Library Manager configuration of these AEM instances (e.g. via Felix Webconsole) or editing will not work and the preferences dialog will not appear.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>htmlSelector</td> 
-   <td>The selector that is appended to each url. By default this is <strong>portlet</strong>, so all requests to html pages use urls ending in <strong>.portlet.html.</strong> This allows the use of custom scripts within AEM for portlet rendering.</td> 
-  </tr> 
-  <tr> 
-   <td>addCssToPortalHeader</td> 
-   <td><p>By default css files included in the HTML page from AEM are included in the portlet. Disabling this option excludes the default css files.</p> <p>If this option is enabled, the CSS files are either added to the head of the html page or embedded in the html page depending on the behavior of the portal.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>includeToolbar</td> 
-   <td>By default, a toolbar is rendered inside the content portlet for management functionality. By disabling this option, no toolbar is rendered.</td> 
-  </tr> 
-  <tr> 
-   <td>urlParameterNames</td> 
-   <td><p>List of alternative URL parameter names that might contain the new content URL to display for the portlet. The list is processed top to bottom, the first parameter containing a value is used. If no URL is found, the default URL parameter is used. The provided URL is used, as is, without any further modification.</p> <p>This setting is per deployed portlet - it is also to globally configure some url parameters in the OSGi configuration for the "Day Portal Director Portlet Bridge".</p> </td> 
-  </tr> 
-  <tr> 
-   <td>preferenceDialog</td> 
-   <td>Path to the preferences dialog in AEM - if left empty, the built-in preferences dialog will be used. This defaults to /libs/portal/content/prefs.html.</td> 
-  </tr> 
-  <tr> 
-   <td>initialRedirect</td> 
-   <td>By default, the portlet performs a javascript redirect of the whole portal page on the first invocation. This is to support the drag and drop scenario of modern portal servers. In production this redirect is rarely needed and can therefore be turned off with this preference being set to <em>false</em>.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>startPath</td>
+   <td><p>This is the start path of the portlet: it defines the content that is initially displayed.</p> <p><strong>Important</strong>: If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than<strong> /</strong>, you need to enable the force <strong>CQUrlInfo</strong> in the Html Library Manager configuration of these AEM instances (e.g. via Felix Webconsole) or editing will not work and the preferences dialog will not appear.</p> </td>
+  </tr>
+  <tr>
+   <td>htmlSelector</td>
+   <td>The selector that is appended to each url. By default this is <strong>portlet</strong>, so all requests to html pages use urls ending in <strong>.portlet.html.</strong> This allows the use of custom scripts within AEM for portlet rendering.</td>
+  </tr>
+  <tr>
+   <td>addCssToPortalHeader</td>
+   <td><p>By default css files included in the HTML page from AEM are included in the portlet. Disabling this option excludes the default css files.</p> <p>If this option is enabled, the CSS files are either added to the head of the html page or embedded in the html page depending on the behavior of the portal.</p> </td>
+  </tr>
+  <tr>
+   <td>includeToolbar</td>
+   <td>By default, a toolbar is rendered inside the content portlet for management functionality. By disabling this option, no toolbar is rendered.</td>
+  </tr>
+  <tr>
+   <td>urlParameterNames</td>
+   <td><p>List of alternative URL parameter names that might contain the new content URL to display for the portlet. The list is processed top to bottom, the first parameter containing a value is used. If no URL is found, the default URL parameter is used. The provided URL is used, as is, without any further modification.</p> <p>This setting is per deployed portlet - it is also to globally configure some url parameters in the OSGi configuration for the "Day Portal Director Portlet Bridge".</p> </td>
+  </tr>
+  <tr>
+   <td>preferenceDialog</td>
+   <td>Path to the preferences dialog in AEM - if left empty, the built-in preferences dialog will be used. This defaults to /libs/portal/content/prefs.html.</td>
+  </tr>
+  <tr>
+   <td>initialRedirect</td>
+   <td>By default, the portlet performs a javascript redirect of the whole portal page on the first invocation. This is to support the drag and drop scenario of modern portal servers. In production this redirect is rarely needed and can therefore be turned off with this preference being set to <em>false</em>.</td>
+  </tr>
+ </tbody>
 </table>
 
 #### OSGi Web Console {#osgi-web-console}
@@ -167,8 +167,8 @@ You can either deploy this bundle at runtime or add it to the portlet web applic
 
 After the cache is deployed, the portlet caches contents from the publish instance. The portlet cache can be invalidated with a dispatcher flush from AEM. To configure the portlet to use its own cache:
 
-1. Configure a replication agent in author that targets the portal server. 
-1. Assuming that the portal server runs on host **localhost**, **port 8080 **and the AEM portlet web application is mounted in the context **cqportlet**, the url to flush the cache is `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET as the method.  
+1. Configure a replication agent in author that targets the portal server.
+1. Assuming that the portal server runs on host **localhost**, **port 8080 **and the AEM portlet web application is mounted in the context **cqportlet**, the url to flush the cache is `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET as the method.
    **Note:** Instead of using a request parameter, you can send an http header named **Path**.
 
 #### Flushing the Cache via Replication Agent {#flushing-the-cache-via-replication-agent}
@@ -245,7 +245,7 @@ Authentication configuration options that the portlet uses in AEM WCM instances 
 >
 >When working with AEM there are several methods of managing the configuration settings for OSGi services (console or repository nodes).
 >
->See [Configuring OSGi](/sites/deploying/using/configuring-osgi.md) for full details.
+>See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
 To access the portlet's authentication configuration:
 
@@ -257,7 +257,7 @@ To access the portlet's authentication configuration:
 
    `https://wps-host:10040/wps/PA_CQ5_Portlet/cqbridge/system/console`
 
-1. Log in to the Web console. The default credentials are `admin/admin`. 
+1. Log in to the Web console. The default credentials are `admin/admin`.
 1. In the console, select **Configuration**.
 1. In the **Configuration** menu, select a particular service to configure. Services are provided by the portlet in the OSGi framework.
 
@@ -408,7 +408,7 @@ In addition it is possible to define this role based access on a per portlet ins
 The provided AEM portlet application starts an OSGi container inside the web application just as AEM does. This architecture lets you make use of all of the benefits of OSGi:
 
 * Easy to update and extend
-* Provides hot updates of the portlet without any interaction of the portal server  
+* Provides hot updates of the portlet without any interaction of the portal server
 * Easy to customize the portlet
 
 ### Toolbar Buttons {#toolbar-buttons}
@@ -470,7 +470,7 @@ The portlet's toolbar basically has two view states. Each view and associated bu
 
 #### Publish View {#publish-view}
 
-The publish view only has one button that switches the toolbar to the Manage view. The publish view is represented by the publish.html file in [previous bundle](/sites/deploying/using/configuring-osgi.md#bundles). In the HTML, you can use the following placeholders, which are replaced by the portlet with the respective contents when rendered:
+The publish view only has one button that switches the toolbar to the Manage view. The publish view is represented by the publish.html file in [previous bundle](/help/sites-deploying/configuring-osgi.md#bundles). In the HTML, you can use the following placeholders, which are replaced by the portlet with the respective contents when rendered:
 
 #### Publish View Placeholders {#publish-view-placeholders}
 
@@ -480,7 +480,7 @@ The publish view only has one button that switches the toolbar to the Manage vie
 
 #### Manage View {#manage-view}
 
-The manage view has four buttons: Edit, Websites tab, Refresh and Back. The manage view is represented by the manage.html file in the [previous bundle](/sites/deploying/using/configuring-osgi.md#bundles). In the HTML, you can use the following placeholders, which are replaced by the portlet with the respective contents when rendered:
+The manage view has four buttons: Edit, Websites tab, Refresh and Back. The manage view is represented by the manage.html file in the [previous bundle](/help/sites-deploying/configuring-osgi.md#bundles). In the HTML, you can use the following placeholders, which are replaced by the portlet with the respective contents when rendered:
 
 #### Manage View Placeholders {#manage-view-placeholders}
 
@@ -514,7 +514,7 @@ Example of a button.html file:
 
  <a href="#" onclick="{onclick}">
 
- <img src="/wps/PA_CQ5_Portlet/cqbridge/static/{id}.gif" alt="{text}" 
+ <img src="/wps/PA_CQ5_Portlet/cqbridge/static/{id}.gif" alt="{text}"
 title="{text}"/>
 
  </a>
@@ -555,52 +555,52 @@ If your site has no strict rule for handling the locale information within the p
 Optional OSGi services can be implemented to customize various parts of the portlet. Each service corresponds to a Java interface. This interface can be implemented and deployed through a bundle into the portlet.
 
 <table>
- <tbody> 
-  <tr> 
-   <td>RequestTracker</td> 
-   <td>The request tracker gets notified whenever content is displayed by the portlet. This allows you to keep track of the invocations of the portlet.</td> 
-  </tr> 
-  <tr> 
-   <td>InvocationContextListener</td> 
-   <td>Listener that is invoked at the beginning and end of each request to the portlet. The listener can be used to change or add information for the current request.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>ErrorHandler</td> 
-   <td>Custom error handler for errors during the render phase.</td> 
-  </tr> 
-  <tr> 
-   <td>HttpProcessor</td> 
-   <td>This service can be used to add information to each http invocation to AEM.</td> 
-  </tr> 
-  <tr> 
-   <td>PortletAction</td> 
-   <td>Add an own action to the portlet - this action can be invoked through a portlet action link.</td> 
-  </tr> 
-  <tr> 
-   <td>PortletDecoratorService</td> 
-   <td>This service can be used to decorate the contents of the portlet.</td> 
-  </tr> 
-  <tr> 
-   <td>ResourceProvider</td> 
-   <td>Add your own resource provider to deliver some resource through a portlet resource link to the client.</td> 
-  </tr> 
-  <tr> 
-   <td>TextMapper</td> 
-   <td>Allows you to post process HTML, CSS and Javascript files.</td> 
-  </tr> 
-  <tr> 
-   <td>ToolbarButton</td> 
-   <td>Add your own button to the toolbar.</td> 
-  </tr> 
-  <tr> 
-   <td>UrlMapper</td> 
-   <td>Add a service to apply a custom url mapping or rewriting.</td> 
-  </tr> 
-  <tr> 
-   <td>UserInfoProvider</td> 
-   <td>Add your own information about the user. This service can be used to get information from the portal to the portlet.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>RequestTracker</td>
+   <td>The request tracker gets notified whenever content is displayed by the portlet. This allows you to keep track of the invocations of the portlet.</td>
+  </tr>
+  <tr>
+   <td>InvocationContextListener</td>
+   <td>Listener that is invoked at the beginning and end of each request to the portlet. The listener can be used to change or add information for the current request.<br /> </td>
+  </tr>
+  <tr>
+   <td>ErrorHandler</td>
+   <td>Custom error handler for errors during the render phase.</td>
+  </tr>
+  <tr>
+   <td>HttpProcessor</td>
+   <td>This service can be used to add information to each http invocation to AEM.</td>
+  </tr>
+  <tr>
+   <td>PortletAction</td>
+   <td>Add an own action to the portlet - this action can be invoked through a portlet action link.</td>
+  </tr>
+  <tr>
+   <td>PortletDecoratorService</td>
+   <td>This service can be used to decorate the contents of the portlet.</td>
+  </tr>
+  <tr>
+   <td>ResourceProvider</td>
+   <td>Add your own resource provider to deliver some resource through a portlet resource link to the client.</td>
+  </tr>
+  <tr>
+   <td>TextMapper</td>
+   <td>Allows you to post process HTML, CSS and Javascript files.</td>
+  </tr>
+  <tr>
+   <td>ToolbarButton</td>
+   <td>Add your own button to the toolbar.</td>
+  </tr>
+  <tr>
+   <td>UrlMapper</td>
+   <td>Add a service to apply a custom url mapping or rewriting.</td>
+  </tr>
+  <tr>
+   <td>UserInfoProvider</td>
+   <td>Add your own information about the user. This service can be used to get information from the portal to the portlet.</td>
+  </tr>
+ </tbody>
 </table>
 
 #### Replacing Default Services {#replacing-default-services}
@@ -669,7 +669,7 @@ Add the portlet component to the paragraph system so that it is available to aut
 
 1. In the **General** component category, select the check box next to the Portlet component and click OK.
 
-![](assets/chlimage_1-25.jpeg) 
+![](assets/chlimage_1-25.jpeg)
 
 ### Configuring and deploying your portlet applications {#configuring-and-deploying-your-portlet-applications}
 
@@ -696,7 +696,7 @@ Deploy the portlets to the application server web container so that they are ava
 
 1. Save the web.xml file and repackage the WAR file.
 
-   **Tip:** The `jar cvf nameofapp.war *` command adds contents of the current directory to the nameofapp.war file. 
+   **Tip:** The `jar cvf nameofapp.war *` command adds contents of the current directory to the nameofapp.war file.
 
 1. Deploy the portlet application to the application server. For information, refer to the documentation for your application server.
 
@@ -731,7 +731,7 @@ By default, the portlet connects to the publish instance at localhost:4503 and t
 
 ### Downloading the war file {#downloading-the-war-file}
 
-1. Using either Webdav or CRXDE Lite, navigate to /libs/portal/director.  
+1. Using either Webdav or CRXDE Lite, navigate to /libs/portal/director.
 
 1. Download *cq-portlet-webapp.war*.
 
@@ -764,15 +764,15 @@ To configure the portlet:
    >
    >If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than** /**, you need to enable the force **CQUrlInfo** in the Html Library Manager configuration of these AEM instances (e.g. via Felix Webconsole) or editing will not work and the preferences dialog will not appear.
 
-1. Save the configuration changes in the app server.  
+1. Save the configuration changes in the app server.
 
-1. Navigate to the OSGI admin console for the portlet. The default location is `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. The default username/password is **admin/admin**.  
+1. Navigate to the OSGI admin console for the portlet. The default location is `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. The default username/password is **admin/admin**.
 
 1. Select the **Day Portal Director CQ Server Configuration** configuration and edit the following values:
 
     * **Author Base URL**: The base URL for the AEM author instance.
     * **Publish Base URL**: The base URL for the AEM publish instance.
-    * **Author Is Used As Publish**: Is the author instance used as a publish  
+    * **Author Is Used As Publish**: Is the author instance used as a publish
       instance (for development)?
 
    ![](assets/chlimage_1-137.png)
@@ -796,9 +796,9 @@ Usually the start path points directly to the content in AEM. However if you wan
 To add the portlet to the portal page:
 
 1. Be sure you are in the administration window of your app server and navigate to the location where you manage pages. (for example, in WebSphere 6.1, click **Manage Pages**).
-1. Select the name of the portlet and then select an existing page or create a new page.  
+1. Select the name of the portlet and then select an existing page or create a new page.
 1. Edit the page layout.
-1. Select the portlet and add it to a container. 
+1. Select the portlet and add it to a container.
 1. Save your changes.
 
 #### Using the Portlet {#using-the-portlet}

@@ -34,28 +34,28 @@ The blog feature is comprised of two main components that are available by addin
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/journal/components/hbs/journal</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/journal/components/hbs/journal</td>
   </tr>
   <tr>
-   <td> <a href="/communities/using/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
+   <td> <a href="/communities/using/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="../../communities/using/clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.journal</td> 
+   <td> <a href="../../communities/using/clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.journal</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/journal/components/hbs/journal/clientlibs/journal.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/journal/components/hbs/journal/clientlibs/journal.css</td>
   </tr>
   <tr>
-   <td><strong> properties</strong></td> 
-   <td>see <a href="../../communities/using/blog-feature.md">Blog Feature</a></td> 
+   <td><strong> properties</strong></td>
+   <td>see <a href="../../communities/using/blog-feature.md">Blog Feature</a></td>
   </tr>
  </tbody>
 </table>
@@ -74,9 +74,9 @@ The blog feature is comprised of two main components that are available by addin
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Blog API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [Blog API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Blog Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Blog Endpoints](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](/communities/using/server-customize.md)
 
@@ -86,7 +86,7 @@ A community site structure that includes the [Blog function](../../communities/u
 
 ### Accessing Blog Entries (UGC) {#accessing-blog-entries-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](../../communities/using/moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](../../communities/using/working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).
@@ -110,7 +110,7 @@ See [Primary Publisher](../../communities/using/deploy-communities.md#primary-pu
 
 The AEM platform blocks links from other websites to prevent XSS attacks as described in
 
-* [Protect against Cross-Site Scripting (XSS)](/sites/developing/using/security.md#protect-against-cross-site-scripting-xss)
+* [Protect against Cross-Site Scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 As of AEM 6.2, the modifications previously required to be made manually are included in the default AntiSamy config file.
 

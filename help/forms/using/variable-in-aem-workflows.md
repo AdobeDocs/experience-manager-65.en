@@ -26,7 +26,7 @@ The following video demonstrates how you can create, set, and use variables in A
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
-Variables are an extension of the existing [MetaDataMap](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. You can use [MetaDataMap](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript to access metadata saved using variables.
+Variables are an extension of the existing [MetaDataMap](https://helpx.adobe.com/experience-manager/6-4/help/sites-developing/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. You can use [MetaDataMap](https://helpx.adobe.com/experience-manager/6-4/help/sites-developing/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript to access metadata saved using variables.
 
 ## Create a variable {#create-a-variable}
 
@@ -62,7 +62,7 @@ Execute the following steps to create a variable:
 When you create variables, consider the following practices:
 
 * Create as many variables as a workflow requires. However, to conserve database resources, use the minimum number of variables required, and reuse variables when possible.
-* Variables are case-sensitive. Ensure that you reference variables using the same case in your workflow.  
+* Variables are case-sensitive. Ensure that you reference variables using the same case in your workflow.
 * Avoid using special characters in the name of variable
 
 ## Set a variable {#set-a-variable}
@@ -73,14 +73,14 @@ Changes to variable values affect only the instance of the process in which the 
 
 Depending on the data type of the variable, you can use the following options to set value of a variable:
 
-* **Literal:** Use the option when you know the exact value to specify.  
+* **Literal:** Use the option when you know the exact value to specify.
 
-* **Expression:** Use the option when the value to use is calculated based on an expression. The expression is created in provided expression editor.  
+* **Expression:** Use the option when the value to use is calculated based on an expression. The expression is created in provided expression editor.
 
 * **JSON Dot Notation:** Use the option to retrieve a value from a JSON or FDM type variable.
-* **XPATH:** Use the option to retrieve a value from an XML type variable.  
+* **XPATH:** Use the option to retrieve a value from an XML type variable.
 
-* **Relative to payload:** Use the option when the value to be saved to variable is available at a path relative to payload.  
+* **Relative to payload:** Use the option when the value to be saved to variable is available at a path relative to payload.
 
 * **Absolute path:** Use the option when the value to be saved to variable is available at an absolute path.
 
@@ -127,11 +127,11 @@ Use the expression editor to:
 
 It is based on adaptive forms rule editor with following changes. Rule editor in variables:
 
-* Does not support functions. 
+* Does not support functions.
 * Does not provide a UI to view summary of rules
 * Does not have code editor.
 * Does not support enabling and disabling value of an object.
-* Does not support setting property of an object. 
+* Does not support setting property of an object.
 * Does not support calling a web service.
 
 For more information, see [adaptive forms rule editor](../../forms/using/rule-editor.md).
@@ -153,7 +153,7 @@ The OR Split creates a split in the workflow, after which only one branch is act
 
 You can define routing expression for a branch using a rule definition, ECMA script, or an external script.
 
-You can use variables to define the routing expression using the expression editor. For more information on using routing expressions for the OR Split step, see [OR Split step](../../sites/developing/using/workflows-step-ref.md#or-split).
+You can use variables to define the routing expression using the expression editor. For more information on using routing expressions for the OR Split step, see [OR Split step](/help/sites-developing/workflows-step-ref.md#or-split).
 
 In this example, before defining the routing expression, use [example 2](../../forms/using/variable-in-aem-workflows.md#example2) to set the value for the **totalvalue** variable. Branch 1 is active if the value of the **totalvalue** variable is greater than 50000. Similarly, you can define a rule to make the Branch 2 active if the value of the **totalvalue** variable is less than 50000.
 
@@ -169,13 +169,13 @@ The **Goto Step** allows you to specify the next step in the workflow model to e
 
 Similar to the OR Split step, you can define routing expression for Goto step using a rule definition, ECMA script, or an external script.
 
-You can use variables to define the routing expression using the expression editor. For more information on using routing expressions for the Goto step, see [Goto Step](../../sites/developing/using/workflows-step-ref.md#goto-step).
+You can use variables to define the routing expression using the expression editor. For more information on using routing expressions for the Goto step, see [Goto Step](/help/sites-developing/workflows-step-ref.md#goto-step).
 
 ![Goto Rule](assets/variables_goto_rule1_new.png)
 
 In this example, the Goto step specifies the Review Credit Card Application as the next step if the value for the **actiontaken** variable is equal to **Need more info**.
 
-For more examples on using rule definition in the Goto step, see [Simulating a For loop](../../sites/developing/using/workflows-step-ref.md#simulateforloop).
+For more examples on using rule definition in the Goto step, see [Simulating a For loop](/help/sites-developing/workflows-step-ref.md#simulateforloop).
 
 #### Forms-workflow centric workflow steps {#forms-workflow-centric-workflow-steps}
 
@@ -183,7 +183,7 @@ All AEM Forms workflow steps support variables. For more information, see [Forms
 
 ### Workflow steps without support for variables {#workflow-steps-without-support-for-variables}
 
-You can use [MetaDataMap](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface to access variables in workflow steps that do not support variables.
+You can use [MetaDataMap](https://helpx.adobe.com/experience-manager/6-4/help/sites-developing/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface to access variables in workflow steps that do not support variables.
 
 #### Retrieve the variable value {#retrieve-the-variable-value}
 
@@ -227,7 +227,7 @@ updates the value for the **salary** variable to 50000.
 
 You can use an API to set variables and pass them to invoke workflow instances.
 
-[workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) uses model, wfData, and metaData as arguments. Use MetaDataMap to set value for the variable.
+[workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-4/help/sites-developing/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) uses model, wfData, and metaData as arguments. Use MetaDataMap to set value for the variable.
 
 In this API, the **variableName** variable is set to **value **using metaData.put(variableName, value);
 
@@ -240,7 +240,7 @@ import com.adobe.aemfd.docmanager.Document;
 WorkflowData wfData = workflowSession.newWorkflowData(payloadType, payload);
 MetaDataMap metaData = wfData.getMetaDataMap();
 metaData.put(variableName, value); //Create a variable "variableName" in your workflow model
-WorkflowModel model = workflowSession.getModel(modelId); 
+WorkflowModel model = workflowSession.getModel(modelId);
 workflowSession.startWorkflow(model, wfData, metaData);
 ```
 
@@ -260,14 +260,14 @@ WorkflowData wfData = workflowSession.newWorkflowData(payloadType, payload);
 MetaDataMap metaData = wfData.getMetaDataMap();
 Document doc = new Document("/a/b/c");// initialize a document object
 metaData.put("docVar",doc); //Assuming that you have created a variable "docVar" of type Document in your workflow model
-WorkflowModel model = workflowSession.getModel(modelId); 
+WorkflowModel model = workflowSession.getModel(modelId);
 workflowSession.startWorkflow(model, wfData, metaData);
 ```
 
 ## Edit a variable {#edit-a-variable}
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
-1. Tap the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to the variable name that you want to edit. 
+1. Tap the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to the variable name that you want to edit.
 1. Edit the variable information and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
 
 ## Delete a variable {#delete-a-variable}
@@ -277,7 +277,7 @@ Before deleting the variable, remove all the references of the variable from the
 Execute the following steps to delete a variable:
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
-1. Tap the Delete icon next to the variable name that you want to delete. 
+1. Tap the Delete icon next to the variable name that you want to delete.
 1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to confirm and delete the variable.
 
 ## References {#references}

@@ -52,7 +52,7 @@ Typically, you use these tools together to obtain a comprehensive idea about the
 >
 >These tools are standard tools and not directly supported by Adobe. They don’t require additional licenses.
 
-![](assets/chlimage_1-32.png) ![](assets/chlimage_1-33.png) 
+![](assets/chlimage_1-32.png) ![](assets/chlimage_1-33.png)
 
 ## Long Term Monitoring {#long-term-monitoring}
 
@@ -190,11 +190,11 @@ Here are some out-of-the-box health checks that are helpful to monitor:
 
 In the process of monitoring, if you encounter issues, here are some troubleshooting tasks that you can perform to resolve common issues with AEM instances:
 
-* If using TarMK, run Tar compaction often. For more details, see [Maintaining the Repository](/sites/deploying/using/storage-elements-in-aem-6.md#maintaining-the-repository).
+* If using TarMK, run Tar compaction often. For more details, see [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Check `OutOfMemoryError` logs. For more information, see [Analyze memory problems](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
-* Check the logs for any references to unindexed queries, tree traversals, or index traversals. These indicate unindexed queries or inadequately indexed queries. For For best practices on optimizing query and indexing performance, see [Best Practices for Queries and Indexing](/sites/deploying/using/best-practices-for-queries-and-indexing.md).
-* Use the workflow console to verify that your workflows perform as expected. If possible, condense multiple workflows into a single workflow. 
+* Check the logs for any references to unindexed queries, tree traversals, or index traversals. These indicate unindexed queries or inadequately indexed queries. For For best practices on optimizing query and indexing performance, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+* Use the workflow console to verify that your workflows perform as expected. If possible, condense multiple workflows into a single workflow.
 * Revisit live monitoring, and look for additional bottlenecks or high consumers of any specific resources.
 * Investigate the egress points from the client network and the ingress points to the AEM instance network, including the dispatcher. Frequently, these are bottleneck areas. For more information, see [Assets network considerations](/assets/using/assets-network-considerations.md).
 * Upsize your AEM server. You may have an inadequately sized your AEM instance. Adobe Support can help you identify whether your server is undersized.

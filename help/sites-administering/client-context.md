@@ -17,7 +17,7 @@ docset: aem65
 
 >[!NOTE]
 >
->Client Context has been superseded by ContextHub. For more details, see the related [configuration](/help/sites-administering/contexthub-config.md) and [developer](/sites/developing/using/contexthub.md) documenatation.
+>Client Context has been superseded by ContextHub. For more details, see the related [configuration](/help/sites-administering/contexthub-config.md) and [developer](/help/sites-developing/contexthub.md) documenatation.
 
 The Client Context is a mechanism that provides you with certain information about the current page and visitor. It can be opened using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac):
 
@@ -35,13 +35,13 @@ The icons (only available in the author environment) allow you to configure the 
 
 ![](do-not-localize/clientcontext_icons.png)
 
-* **Edit** 
-  A new page will open allowing you to [edit, add or remove a profile property](#editingprofiledetails).  
+* **Edit**
+  A new page will open allowing you to [edit, add or remove a profile property](#editingprofiledetails).
 
-* **Load** 
-  You can [select from a list of profiles and load the profile](#loading-a-new-user-profile) you want to test.  
+* **Load**
+  You can [select from a list of profiles and load the profile](#loading-a-new-user-profile) you want to test.
 
-* **Reset** 
+* **Reset**
   You can [reset the profile](#resetting-the-profile-to-the-current-user) to that of the current user.
 
 ## Available Client Context Components {#available-client-context-components}
@@ -50,11 +50,11 @@ The Client Context can show the following properties ([depending on what has bee
 
 **Surfer Information** Shows the following client-side information:
 
-* the **IP address** 
+* the **IP address**
 * **keywords** used for search engine referral
 * the **browser** being used
-* the **OS** (operating system) being used 
-* the screen **resolution** 
+* the **OS** (operating system) being used
+* the screen **resolution**
 * the **mouse X** position
 * the **mouse Y** position
 
@@ -86,8 +86,8 @@ When displayed in the Context Cloud, the component uses a Google API to display 
 
 **JSONP Store** A component that displays content that is dependent on your installation.
 
-The JSONP standard is a complement to JSON that allows the circumvention of the same origin policy (making it impossible for a web app to communicate with servers that are on another domain). It consists in wrapping the JSON object in a function call in order to be able load it as a <script> from the other domain (which is an allowed exception to the same origin policy).  
-  
+The JSONP standard is a complement to JSON that allows the circumvention of the same origin policy (making it impossible for a web app to communicate with servers that are on another domain). It consists in wrapping the JSON object in a function call in order to be able load it as a <script> from the other domain (which is an allowed exception to the same origin policy).
+
 The JSONP Store is like any other store, but it loads information that comes from another domain without the need of having a proxy for that information on the current domain. See the example in [Storing Data in Client Context Via JSONP](..//help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
 >[!NOTE]
@@ -120,7 +120,7 @@ For example, whether the mouse is currently over the left or right hand portion 
 
 This session store has no default client context component.
 
-For additional information, see [Client Context in Detail](../../../sites/developing/using/client-context.md).
+For additional information, see [Client Context in Detail](/help/sites-developing/client-context.md).
 
 >[!NOTE]
 >
@@ -200,15 +200,15 @@ Editing a client context can be used to set (or reset) the values of certain pro
 
 ### Editing Property Details {#editing-property-details}
 
-Editing a client context can be used to set (or reset) the values of certain properties. This allows you to test specific scenarios (particularly useful for [segmentation](..//help/sites-administering/campaign-segmentation.md) and [campaigns](/sites/classic-ui-authoring/using/classic-personalization-campaigns.md)).
+Editing a client context can be used to set (or reset) the values of certain properties. This allows you to test specific scenarios (particularly useful for [segmentation](..//help/sites-administering/campaign-segmentation.md) and [campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
-![](assets/clientcontext_alisonparker_edit.png) 
+![](assets/clientcontext_alisonparker_edit.png)
 
 ### Adding a Property Component {#adding-a-property-component}
 
 After you have opened the **ClientContext design page**, you can also **Add** a completely new property using the available components (the components are listed on both the sidekick or from the **Insert New Component** dialog that is opened after a double-click on the **Drag components or assets here** box):
 
-![](assets/clientcontext_alisonparker_new.png) 
+![](assets/clientcontext_alisonparker_new.png)
 
 ### Removing a Property Component {#removing-a-property-component}
 
@@ -218,7 +218,7 @@ After you have opened the **ClientContext design page**, you can also **Remove**
 
 Follow this example to use the JSONP Store context store component to add external data to Client Context. Then, create a segment based on the information from that data. The example uses the JSONP service that WIPmania.com provides. The service returns geolocation information based on the IP address of the web client.
 
-This example uses the Geometrixx Outdoors sample website to access Client Context and to test the created segment. You can use a different web site as long as the page has enabled Client Context. (See [Adding Client Context To a Page](../../../sites/developing/using/client-context.md#adding-client-context-to-a-page).)
+This example uses the Geometrixx Outdoors sample website to access Client Context and to test the created segment. You can use a different web site as long as the page has enabled Client Context. (See [Adding Client Context To a Page](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
 ### Add the JSONP Store Component {#add-the-jsonp-store-component}
 
@@ -234,7 +234,7 @@ Add the JSONP Store component to Client Context and use it to retrieve and store
 
    ![](assets/chlimage_1-4.jpeg)
 
-1. Double-click the component to open the edit dialog. 
+1. Double-click the component to open the edit dialog.
 1. In the JSONP Service URL box, enter the following URL, and then click Fetch Store:
 
    `https://api.wipmania.com/jsonp?callback=${callback}`
@@ -264,7 +264,7 @@ Use the data from the session store that you created using the JSONP store compo
     1. Select the Segment template.
     1. Click Create.
 
-1. Right-click the Winter segment and click Open. 
+1. Right-click the Winter segment and click Open.
 1. Drag the Generic Store Property to the default AND container.
 
    ![](assets/chlimage_1-5.jpeg)

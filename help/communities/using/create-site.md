@@ -31,7 +31,7 @@ To begin creating a new community site:
 
 * select the `Create`button.
 
-![](assets/createcommunitysite.png) 
+![](assets/createcommunitysite.png)
 
 ### Step 1: Site Template {#step-site-template}
 
@@ -41,11 +41,11 @@ On the [Site Template step](../../communities/using/sites-console.md#step2013asi
 
 * **Community Site Title**: `Getting Started Tutorial`
 
-* **Community Site Description**: `A site for engaging with the community.`  
+* **Community Site Description**: `A site for engaging with the community.`
 
-* **Community Site Root**: (leave blank for default root `/content/sites`)  
+* **Community Site Root**: (leave blank for default root `/content/sites`)
 
-* **Cloud Configurations**: (leave blank if no cloud configurations are specified) provide path to the specified cloud configurations. 
+* **Cloud Configurations**: (leave blank if no cloud configurations are specified) provide path to the specified cloud configurations.
 * **Community Site Base Language**: (leave untouched for single language: English) use the drop-down list to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](/help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
 
 * **Community Site Name**: engage
@@ -95,7 +95,7 @@ Check all checkboxes for [User Management](../../communities/using/sites-console
 >
 >For a production environment, it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/communities/using/social-login.md).
 
-![community site settings](assets/site-settings.png) 
+![community site settings](assets/site-settings.png)
 
 #### TAGGING {#tagging}
 
@@ -106,7 +106,7 @@ Finding namespaces is easy using type-ahead search. For example,
 * type 'tut'
 * select `Tutorial`
 
-![](assets/chlimage_1-60.png) 
+![](assets/chlimage_1-60.png)
 
 #### ROLES {#roles}
 
@@ -123,13 +123,13 @@ For example,
 >
 >[Tunnel service](https://helpx.adobe.com/experience-manager/6-3/communities/using/deploy-communities.html#tunnel-service-on-author) allows selection of members and groups existing only in the  publish  environment.
 
-![user roles in new site](assets/site-admin-1.png) 
+![user roles in new site](assets/site-admin-1.png)
 
 #### MODERATION {#moderation}
 
 Accept the default global settings for [moderating](../../communities/using/sites-console.md#moderation) user-generated content (UGC).
 
-![](assets/chlimage_1-61.png) 
+![](assets/chlimage_1-61.png)
 
 #### ANALYTICS {#analytics}
 
@@ -137,7 +137,7 @@ If Adobe Analytics is licensed and an Analytics cloud service and framework have
 
 See [Analytics Configuration for Communities Features](../../communities/using/analytics.md).
 
-![](assets/chlimage_1-62.png) 
+![](assets/chlimage_1-62.png)
 
 #### TRANSLATION {#translation}
 
@@ -150,7 +150,7 @@ The [Translation settings](../../communities/using/sites-console.md#translation)
 * select **Translate entire page**
 * leave default persistence option
 
-![](assets/chlimage_1-63.png) 
+![](assets/chlimage_1-63.png)
 
 #### ENABLEMENT {#enablement}
 
@@ -168,7 +168,7 @@ Select **Create.**
 
 When the process completes, the folder for the new site is displayed in the Communities - Sites console.
 
-![](assets/communitiessitesconsole.png) 
+![](assets/communitiessitesconsole.png)
 
 ## Publish the Community Site {#publish-the-community-site}
 
@@ -184,20 +184,20 @@ On selecting the fourth ellipses icon (More Actions), Export Site and Delete Sit
 
 From left to right they are:
 
-* **Open Site** 
+* **Open Site**
   select the pencil icon to open the community site in author edit mode, to add and/or configure page components
 
-* **Edit Site** 
+* **Edit Site**
   select the properties icon to open the community site for modification of properties, such as the title or to change the theme
 
-* **Publish Site** 
-  select the world icon to publish the community site (for example if your publish server is running on your local machine, then to localhost:4503 by default)  
+* **Publish Site**
+  select the world icon to publish the community site (for example if your publish server is running on your local machine, then to localhost:4503 by default)
 
-* **Export Site** 
-  select the export icon to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.  
+* **Export Site**
+  select the export icon to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.
   Note that UGC is not included in the site package.
 
-* **Delete Site  
+* **Delete Site
   **select the delete icon to delete the community site from within Communities &gt; Sites console. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
 ![](assets/siteactions.png)
@@ -214,7 +214,7 @@ From left to right they are:
 >1. Next to "Settings" select "Edit".
 >1. In pop-up dialog for Agent Settings, select Transport tab.
 >1. In URI, change the port number, 4503, to the desired port number >
->    * for example, to use port 6103:   
+>    * for example, to use port 6103:
 >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
 >1. Select "OK".
@@ -229,7 +229,7 @@ After ensuring the publish server is running, select the world icon to publish t
 
 When the community site has been successfully published, a message briefly appears :
 
-![](assets/chlimage_1-66.png) 
+![](assets/chlimage_1-66.png)
 
 ### New Community User Groups {#new-community-user-groups}
 
@@ -250,11 +250,11 @@ Note that [Aaron McDonald](/communities/using/tutorials.md#demo-users) is a memb
 * Community Engage Moderators
 * Community Engage Members (indirectly as a member of Moderators group)
 
-![](assets/chlimage_1-67.png) 
+![](assets/chlimage_1-67.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![](assets/chlimage_1-68.png) 
+![](assets/chlimage_1-68.png)
 
 ## Configure for Authentication Error {#configure-for-authentication-error}
 
@@ -270,7 +270,7 @@ Add a `Login Page Mapping` as
 
 When working with the publish site for demonstration purposes, it might be useful to change the default home page to the new site.
 
-To do so requires using [CRXDE](https://localhost:4503/crx/de) Lite to edit the [resource-mapping](../../sites/deploying/using/resource-mapping.md) table on publish.
+To do so requires using [CRXDE](https://localhost:4503/crx/de) Lite to edit the [resource-mapping](/help/sites-deploying/resource-mapping.md) table on publish.
 
 To get started:
 
@@ -281,9 +281,9 @@ To get started:
 
     * Select **Create Node:**
 
-        * **Name **localhost.4503  
+        * **Name **localhost.4503
           (do *not *use ':')
-        
+
         * **Type ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. With newly created `localhost.4503` node selected:
@@ -292,7 +292,7 @@ To get started:
 
         * **Name** sling:match
         * **Type** String
-        * **Value** localhost.4503/$  
+        * **Value** localhost.4503/$
           (must end with '$' char)
 
     * Add property:
@@ -311,13 +311,13 @@ To get started:
 >
 >To disable, simply prefix the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
 
-![](assets/chlimage_1-69.png) 
+![](assets/chlimage_1-69.png)
 
 #### Troubleshooting: Error Saving Map {#troubleshooting-error-saving-map}
 
 If unable to save changes, be sure that the node name is `localhost.4503`, with a 'dot' separator, and not `localhost:4503` with a 'colon' separator, as `localhost`is not a valid namespace prefix.
 
-![](assets/chlimage_1-70.png) 
+![](assets/chlimage_1-70.png)
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 

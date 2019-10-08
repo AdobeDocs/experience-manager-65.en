@@ -20,24 +20,24 @@ docset: aem65
 <table>
  <tbody>
   <tr>
-   <th>Product</th> 
-   <td>Adobe Experience Manager<br /> </td> 
+   <th>Product</th>
+   <td>Adobe Experience Manager<br /> </td>
   </tr>
   <tr>
-   <th>Version</th> 
-   <td>6.5</td> 
+   <th>Version</th>
+   <td>6.5</td>
   </tr>
   <tr>
-   <th>Type</th> 
-   <td>Major Release</td> 
+   <th>Type</th>
+   <td>Major Release</td>
   </tr>
   <tr>
-   <th>General availability date</th> 
-   <td>April 8, 2019<br /> </td> 
+   <th>General availability date</th>
+   <td>April 8, 2019<br /> </td>
   </tr>
   <tr>
-   <th>Recommended Updates</th> 
-   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM Releases and Updates</a></td> 
+   <th>Recommended Updates</th>
+   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM Releases and Updates</a></td>
   </tr>
  </tbody>
 </table>
@@ -67,18 +67,18 @@ The Quickstart uses Eclipse Jetty 9.4.15 as servlet engine.
 #### Java Support  {#java-support}
 
 * New support for Java 11, as well as the already supported Java 8
-* For optimal performance, override default GC values with other values. For more information, please see the [Install & Update](sites/deploying/using/custom-standalone-install.md) section.
+* For optimal performance, override default GC values with other values. For more information, please see the [Install & Update](/help/sites-deploying/custom-standalone-install.md) section.
 * Java 11 and Java 8 maintenance updates will be distributed by Adobe for customer usage in AEM-related projects, when not publicly available from Oracle
 
 #### Java Development {#java-development}
 
-* There are now [two versions of the Uberjar](sites/developing/using/ht-projects-maven.md#experience-manager-api-dependencies), a recommended version with public interfaces that are not marked for deprecation, as well as a version that includes interfaces marked for deprecation.
+* There are now [two versions of the Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), a recommended version with public interfaces that are not marked for deprecation, as well as a version that includes interfaces marked for deprecation.
 
 #### User Interface {#user-interface}
 
 Various enhancements have been made to the UI to make it more productive and easier to use.
 
-* New Permissions Management UI for Users and Groups 
+* New Permissions Management UI for Users and Groups
 * Column Views now also only loads entries that are visible on the screen and only loads more when the user is starting to scroll. List and Card view already did that since 6.0 (improved in 6.4)
 * Column Views now include the workflow status for pages/assets when applicable
 * The [Select All](/help/sites-authoring/basic-handling.md#select-all) action is a quick way to execute an action with all pages/assets in the same folder
@@ -86,7 +86,7 @@ Various enhancements have been made to the UI to make it more productive and eas
 
 >[!CAUTION]
 >
->Adobe does not plan to make further enhancements to the Classic UI. AEM 6.5 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated. [Read more](sites/deploying/using/ui-recommendations.md).
+>Adobe does not plan to make further enhancements to the Classic UI. AEM 6.5 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated. [Read more](/help/sites-deploying/ui-recommendations.md).
 
 #### Search & Indexing {#search-indexing}
 
@@ -107,7 +107,7 @@ Full list of changes in [AEM Sites and Add-ons](release-notes/sites.md).
 
 #### Managed Single-page Apps {#managed-single-page-apps}
 
-The Page Editor adds the ability to in-context edit content and compose/layout within client-side rendered experiences (also known [as SPA Editor](sites/developing/using/spa-architecture.md)). Existing single-page apps build with JavaScript framework React or Angular can be extended with the AEM SJ SDK to be made editable for practitioners.
+The Page Editor adds the ability to in-context edit content and compose/layout within client-side rendered experiences (also known [as SPA Editor](/help/sites-developing/spa-architecture.md)). Existing single-page apps build with JavaScript framework React or Angular can be extended with the AEM SJ SDK to be made editable for practitioners.
 
 First shipped as part of AEM 6.4 SP2, with AEM 6.5 the SPA support gains following capabilities:
 
@@ -182,16 +182,16 @@ Key enhancements help to find the right assets faster by providing dynamic searc
 
 AEM 6.5 Forms brings in several new features and enhancements. The highlights include:
 
-* 
-* 
-* 
-* 
-* 
+*
+*
+*
+*
+*
 * Transaction reports to track the number of submitted forms, processed documents, and rendered documents
 * Usability improvements to interactive communications
 * Cloud-based digital signatures in adaptive forms
-* Embed adaptive forms and interactive communications in a AEM Sites single page applications (SPA). 
-* Support for variables in AEM Workflows  
+* Embed adaptive forms and interactive communications in a AEM Sites single page applications (SPA).
+* Support for variables in AEM Workflows
 * Data display pattern support in interactive communications
 * Sorting adaptive forms and interactive communication tables
 * Automated validation of input data in form data models
@@ -236,15 +236,15 @@ This process of prioritization has yielded more than 750 customer focused change
 * Standalone Quickstart: cq-quickstart-6.5.0.jar
 * Application Server Quickstart: cq-quickstart-6.5.0.war
 * Dispatcher 4.3.2 or later for the various web servers and platforms ([download link](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
-* Plug-in for Eclipse IDE ([read more and download](/sites/developing/using/aem-eclipse.md))  
+* Plug-in for Eclipse IDE ([read more and download](/help/sites-developing/aem-eclipse.md))
 
-* Extension for Brackets Code Editor ([read more and download](/sites/developing/using/aem-brackets.md))
+* Extension for Brackets Code Editor ([read more and download](/help/sites-developing/aem-brackets.md))
 * Maven/Gradle dependencies ([download link](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.5.0/))
 
 **Sites**
 
 * Core Components ([GitHub project](https://github.com/adobe/aem-core-wcm-components))
-* We.Retail Reference implementation ([read more](/sites/developing/using/we-retail.md))
+* We.Retail Reference implementation ([read more](/help/sites-developing/we-retail.md))
 * Maven Project Archetypes:
 
     * for full-stack sites: [GitHub project](https://github.com/adobe/aem-project-archetype)
@@ -290,16 +290,16 @@ Experience Manager 6.5 has been certified for GB18030-2005 CITS to use the Chine
 
 ## Install & Update {#install-update}
 
-See [installation instructions](sites/deploying/using/custom-standalone-install.md) for setup requirements.
+See [installation instructions](/help/sites-deploying/custom-standalone-install.md) for setup requirements.
 
-Please see [upgrade documentation](sites/deploying/using/upgrade.md) for detailed instructions.
+Please see [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 
 ## Supported Platforms {#supported-platforms}
 
-Please find the complete matrix of supported platforms incl. Support-Level on [AEM 6.5 Technical Requirements](sites/deploying/using/technical-requirements.md)
+Please find the complete matrix of supported platforms incl. Support-Level on [AEM 6.5 Technical Requirements](/help/sites-deploying/technical-requirements.md)
 
-Oak MicroKernel for  
-Oak MicroKernel for  
+Oak MicroKernel for
+Oak MicroKernel for
 
 >[!NOTE]
 >

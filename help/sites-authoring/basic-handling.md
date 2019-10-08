@@ -17,10 +17,10 @@ docset: aem65
 
 >[!NOTE]
 >
->* This page is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.  
+>* This page is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.
 >
 >* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality will be covered in more detail on other pages.
->* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-authoring/keyboard-shortcuts.md) and [editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).  
+>* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-authoring/keyboard-shortcuts.md) and [editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Getting Started {#getting-started}
@@ -81,55 +81,55 @@ The Navigation panel:
 From Navigation the consoles available are:
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Console</strong></td> 
-   <td valign="top"><strong>Purpose</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Assets<br /> </td> 
-   <td>These consoles let you import and <a href="/assets/user-guide.md">manage digital assets</a> such as images, videos, documents and audio files. These assets can then be used by any website running on the same AEM instance. </td> 
-  </tr> 
-  <tr> 
-   <td>Communities</td> 
-   <td>This console allows you to create and manage <a href="../../../communities/using/sites-console.md">community sites</a> for <a href="../../../communities/using/overview.md#engagement-community">engagement</a> and <a href="../../../communities/using/overview.md#enablement-community">enablement</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>Commerce</td> 
-   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/sites-administering//ecommerce.md">Commerce</a> sites.</td> 
-  </tr> 
-  <tr> 
-   <td>Experience Fragments</td> 
-   <td>An <a href="/help/sites-authoring/experience-fragments.md">experience fragment</a> is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.</td> 
-  </tr> 
-  <tr> 
-   <td>Forms</td> 
-   <td>This console allows you to create, manage, and process your <a href="/forms/user-guide.md">forms and documents</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>Personalization</td> 
-   <td>This console provides a <a href="/help/sites-authoring/personalization.md">framework of tools for authoring targeted content and presenting personalized experiences</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>Projects</td> 
-   <td>The <a href="/help/sites-authoring/touch-ui-managing-projects.md">Projects console gives you direct access to your projects</a>. Projects are virtual dashboards. They can be used to build a team, then give that team access to resources, workflows and tasks, allowing people to work on a common goal. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Screens</td> 
-   <td><a href="/screens/using/authoring-screens.md">Screens</a> will allow you to manage all your customer-facing screens, of any size and in any location.</td> 
-  </tr> 
-  <tr> 
-   <td>Sites</td> 
-   <td>The Sites consoles let you <a href="/help/sites-authoring/page-authoring.md">create, view and manage websites</a> running on your AEM instance. Through these consoles you can create, edit, copy, move and delete website pages, start workflows, and publish pages.<br /> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Console</strong></td>
+   <td valign="top"><strong>Purpose</strong></td>
+  </tr>
+  <tr>
+   <td>Assets<br /> </td>
+   <td>These consoles let you import and <a href="/assets/user-guide.md">manage digital assets</a> such as images, videos, documents and audio files. These assets can then be used by any website running on the same AEM instance. </td>
+  </tr>
+  <tr>
+   <td>Communities</td>
+   <td>This console allows you to create and manage <a href="../../../communities/using/sites-console.md">community sites</a> for <a href="../../../communities/using/overview.md#engagement-community">engagement</a> and <a href="../../../communities/using/overview.md#enablement-community">enablement</a>.</td>
+  </tr>
+  <tr>
+   <td>Commerce</td>
+   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/sites-administering//ecommerce.md">Commerce</a> sites.</td>
+  </tr>
+  <tr>
+   <td>Experience Fragments</td>
+   <td>An <a href="/help/sites-authoring/experience-fragments.md">experience fragment</a> is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.</td>
+  </tr>
+  <tr>
+   <td>Forms</td>
+   <td>This console allows you to create, manage, and process your <a href="/forms/user-guide.md">forms and documents</a>.</td>
+  </tr>
+  <tr>
+   <td>Personalization</td>
+   <td>This console provides a <a href="/help/sites-authoring/personalization.md">framework of tools for authoring targeted content and presenting personalized experiences</a>.</td>
+  </tr>
+  <tr>
+   <td>Projects</td>
+   <td>The <a href="/help/sites-authoring/touch-ui-managing-projects.md">Projects console gives you direct access to your projects</a>. Projects are virtual dashboards. They can be used to build a team, then give that team access to resources, workflows and tasks, allowing people to work on a common goal. <br /> </td>
+  </tr>
+  <tr>
+   <td>Screens</td>
+   <td><a href="/help/screens/authoring-screens.md">Screens</a> will allow you to manage all your customer-facing screens, of any size and in any location.</td>
+  </tr>
+  <tr>
+   <td>Sites</td>
+   <td>The Sites consoles let you <a href="/help/sites-authoring/page-authoring.md">create, view and manage websites</a> running on your AEM instance. Through these consoles you can create, edit, copy, move and delete website pages, start workflows, and publish pages.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Tools Panel {#tools-panel}
 
 In the Tools panel, each option in the side panel contains a range of sub-menus. The [Tools consoles](/help/sites-administering//tools-consoles.md) available here provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.
 
-![](assets/bh-04.png) 
+![](assets/bh-04.png)
 
 ## The Header {#the-header}
 
@@ -185,7 +185,7 @@ The header is always present at the top of the screen. While most options in the
 
   Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs allow you to navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
 
-  Simply click on the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click on an entry to jump to that location. 
+  Simply click on the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click on an entry to jump to that location.
 
   ![](assets/bh-06.png)
 
@@ -239,10 +239,10 @@ There are various help resources available:
 
   From the **Tools** console you can also access the external **Resources**:
 
-    * **Documentation** 
+    * **Documentation**
       View the Web Experience Management documentation
-    
-    * **Developer Resources** 
+
+    * **Developer Resources**
       Developer resources and downloads
 
   >[!NOTE]
@@ -252,11 +252,11 @@ There are various help resources available:
   >
   >For an overview of all keyboard shortcuts see the following documentation:
   >
-  >    
-  >    
+  >
+  >
   >    * [Keyboard shortcuts for editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >    * [Keyboard shortcuts for consoles](/help/sites-authoring/keyboard-shortcuts.md)
-  >    
+  >
   >
 
 ## Actions Toolbar {#actions-toolbar}
@@ -285,7 +285,7 @@ In [Card View](#cardviewquickactions) certain actions are available as quick act
 
 The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
-![](assets/bh-13.png) 
+![](assets/bh-13.png)
 
 ## Viewing and Selecting Resources {#viewing-and-selecting-resources}
 
@@ -294,7 +294,7 @@ Viewing, navigating, and selecting are each conceptually the same across all vie
 You can view, navigate through, and select (for further action) your resources with any of the available views, each of which can be selected by the icon at the top right:
 
 * [Column View](#column-view)
-* [Card View](#card-view)  
+* [Card View](#card-view)
 
 * [List View](#list-view)
 
@@ -307,52 +307,52 @@ You can view, navigate through, and select (for further action) your resources w
 Selecting a specific resource is dependent on a combination of the view and the device:
 
 <table>
- <tbody> 
-  <tr> 
-   <td> </td> 
-   <td>Select</td> 
-   <td>Unselect</td> 
-  </tr> 
-  <tr> 
-   <td>Column View<br /> </td> 
-   <td> 
-    <ul> 
-     <li>Desktop:<br /> Click the thumbnail</li> 
-     <li>Mobile device:<br /> Tap the thumbnail</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Desktop:<br /> Click the thumbnail</li> 
-     <li>Mobile device:<br /> Tap the thumbnail</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Card View<br /> </td> 
-   <td> 
-    <ul> 
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
-     <li>Mobile device:<br /> Tap-and-hold the card</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Desktop:<br /> Click the card</li> 
-     <li>Mobile device:<br /> Tap the card</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>List View</td> 
-   <td> 
-    <ul> 
-     <li>Desktop:<br /> Click the thumbnail</li> 
-     <li>Mobile device:<br /> Tap the thumbnail</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Desktop:<br /> Click the thumbnail</li> 
-     <li>Mobile device:<br /> Tap the thumbnail</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td> </td>
+   <td>Select</td>
+   <td>Unselect</td>
+  </tr>
+  <tr>
+   <td>Column View<br /> </td>
+   <td>
+    <ul>
+     <li>Desktop:<br /> Click the thumbnail</li>
+     <li>Mobile device:<br /> Tap the thumbnail</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Desktop:<br /> Click the thumbnail</li>
+     <li>Mobile device:<br /> Tap the thumbnail</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Card View<br /> </td>
+   <td>
+    <ul>
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
+     <li>Mobile device:<br /> Tap-and-hold the card</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Desktop:<br /> Click the card</li>
+     <li>Mobile device:<br /> Tap the card</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>List View</td>
+   <td>
+    <ul>
+     <li>Desktop:<br /> Click the thumbnail</li>
+     <li>Mobile device:<br /> Tap the thumbnail</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Desktop:<br /> Click the thumbnail</li>
+     <li>Mobile device:<br /> Tap the thumbnail</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Select All {#select-all}
@@ -363,7 +363,7 @@ You can select all items in any view by clicking the **Select All** option at th
 * In **List View** all items in the list are seelcted.
 * In **Column View** all items in the leftmost column are selected.
 
-![](assets/screen-shot_2019-03-05at094659.png) 
+![](assets/screen-shot_2019-03-05at094659.png)
 
 #### Deselecting All {#deselecting-all}
 
@@ -371,7 +371,7 @@ In all cases as you select items, the count of the items selected is displayed a
 
 You can deselect all items and exit selection mode by either:
 
-* clicking or tapping the **X** next to the count,   
+* clicking or tapping the **X** next to the count,
 
 * or using **escape**.
 
@@ -432,7 +432,7 @@ Selecting a resource in the leftmost column will display the child resources in 
     * A visual representation of the page content.
     * The page title.
     * Important dates (such as last edited, last published).
-    * If the page is locked, hidden or part of a livecopy.  
+    * If the page is locked, hidden or part of a livecopy.
     * If appropriate, when you are required to take action as part of a workflow.
 
         * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-authoring/inbox.md).
@@ -448,7 +448,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 ![](assets/bh-19.png)
 
 * The list view lists information for each resource at the current level.
-* You can navigate down through the tree by tapping/clicking on the resource name and back up by using the [breadcrumbs in the header](/help/sites-authoring/basic-handling.md#the-header).  
+* You can navigate down through the tree by tapping/clicking on the resource name and back up by using the [breadcrumbs in the header](/help/sites-authoring/basic-handling.md#the-header).
 
 * To easily select all items in the list, use the checkbox at the top-left of the list.
 
@@ -469,8 +469,8 @@ Selecting a resource in the leftmost column will display the child resources in 
     * **Modified** - Last modified date and last modified by user
     * **Published** - Publication status
     * **Template** - Template on which the page is based
-    * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.  
-    
+    * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
+
     * **Page analytics**
     * **Unique visitors**
     * **Time on page**
@@ -542,11 +542,11 @@ The timeline column allows you to:
         * [Versions](/help/sites-authoring/working-with-page-versions.md)
         * [Workflows](/help/sites-authoring/workflows-applying.md)
 
-            * with the exception of [transient workflows](/sites/developing/using/workflows.md#transient-workflows) as no history information is saved for these
+            * with the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these
 
         * and Show All
 
-* [Add/view comments](#timelineaddingandviewingcomments) about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.  
+* [Add/view comments](#timelineaddingandviewingcomments) about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.
 
 * Specific consoles have additional functionality. For example, in the Sites console you can:
 
@@ -555,7 +555,7 @@ The timeline column allows you to:
 
 These options accessible via the chevron next to the **Comment** field.
 
-![](assets/bh-27.png) 
+![](assets/bh-27.png)
 
 ### References {#references}
 
@@ -566,10 +566,10 @@ These options accessible via the chevron next to the **Comment** field.
 * [Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Content references:
 
-    * links from other pages to the selected page  
+    * links from other pages to the selected page
     * content borrowed from and/or lent to the selected page by the Reference component
 
-![](assets/bh-28.png) 
+![](assets/bh-28.png)
 
 ### Filter {#filter}
 

@@ -41,7 +41,7 @@ When a Forms workflow triggers and you are an assignee or part of the assignee g
 
 Tasks that are assigned to a group appear in the Inbox of all group members. Any group member can claim that task or delegate it to another group member. To do so:
 
-1. Tap to select the thumbnail of the task. Options to open or delegate the task appear at the top. 
+1. Tap to select the thumbnail of the task. Options to open or delegate the task appear at the top.
 
    ![](assets/select-task.png)
 
@@ -59,7 +59,7 @@ Tasks that are assigned to a group appear in the Inbox of all group members. Any
 
 When you open a task, you can view task details and perform available actions. The actions available for a task are defined in the Assign task step of the associated Forms workflow.
 
-1. Tap to select the thumbnail of the task. Options to open or delegate the selected task appear at the top. 
+1. Tap to select the thumbnail of the task. Options to open or delegate the selected task appear at the top.
 1. Tap **Open** to view task details and take actions. The detailed task view opens. In this view, you can view task details and take actions on the task.
 
    >[!NOTE]
@@ -77,7 +77,7 @@ The detailed task view comprises the following sections:
 
 #### Task details {#task-details}
 
-The Task Details section displays information about the task. The information displayed depends on the configuration settings of the [Assign task step](../../sites/developing/using/workflows-step-ref.md) in the workflow. The above example displays the description, status, start date, and workflow used for the task. It also allows attaching a file to the task.
+The Task Details section displays information about the task. The information displayed depends on the configuration settings of the [Assign task step](/help/sites-developing/workflows-step-ref.md) in the workflow. The above example displays the description, status, start date, and workflow used for the task. It also allows attaching a file to the task.
 
 #### Form {#form}
 
@@ -85,15 +85,15 @@ The Form tab in the main content area displays the submitted form and field-leve
 
 #### Workflow details {#workflow-details}
 
-The Workflow Details tab at the top shows the progress of the task through various stages in the workflow. It shows completed, current, and pending stages for the task. The stages for a workflow are defined in the [Assign task step](../../sites/developing/using/workflows-step-ref.md) of the associated workflow.
+The Workflow Details tab at the top shows the progress of the task through various stages in the workflow. It shows completed, current, and pending stages for the task. The stages for a workflow are defined in the [Assign task step](/help/sites-developing/workflows-step-ref.md) of the associated workflow.
 
 In addition, the tab displays task history for each completed stage in the workflow. You can tap **[!UICONTROL View Details]** for a completed stage to know details about that stage. It displays comments, form and task attachments, status, start and end dates, and so on about the task.
 
-![](assets/workflow-details.png) 
+![](assets/workflow-details.png)
 
 #### Actions toolbar {#actions-toolbar}
 
-The Actions toolbar shows all available options for the task. While Save, Reset, and Delegate are default actions, other available actions are configured in [Assign task step](../../sites/developing/using/workflows-step-ref.md). In the example above, Approve and Reject are configured in the workflow.
+The Actions toolbar shows all available options for the task. While Save, Reset, and Delegate are default actions, other available actions are configured in [Assign task step](/help/sites-developing/workflows-step-ref.md). In the example above, Approve and Reject are configured in the workflow.
 
 As you take action on the task, it proceeds further in the workflow.
 
@@ -108,7 +108,7 @@ AEM Inbox displays only active tasks. Completed tasks do not appear in the list.
 
 1. Tap to select a task and click **[!UICONTROL Open]**.
 
-The task opens to display the document or the adaptive form associated with the task. For adaptive form, the task displays the read-only adaptive form or its PDF document of record as configured in the Form/Document tab of the [Assign Task workflow step](../../sites/developing/using/workflows-step-ref.md).
+The task opens to display the document or the adaptive form associated with the task. For adaptive form, the task displays the read-only adaptive form or its PDF document of record as configured in the Form/Document tab of the [Assign Task workflow step](/help/sites-developing/workflows-step-ref.md).
 
 The task details section displays information such as action taken, task status, start date, and end date.
 

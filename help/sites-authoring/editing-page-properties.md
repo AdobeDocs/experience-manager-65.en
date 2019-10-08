@@ -36,7 +36,7 @@ The properties are distributed across several tabs.
     * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
     * A completely new tag can be entered by typing the name in an empty selection box.
 
-        * The new tag will be created when you hit enter. 
+        * The new tag will be created when you hit enter.
         * The new tag will then be shown with a small star on the right indicating that it is a new tag.
 
     * With the drop-down functionality you can select from existing tags.
@@ -86,15 +86,15 @@ The properties are distributed across several tabs.
   >
   >Vanity URLs:
   >
-  >    
-  >    
+  >
+  >
   >    * Must be unique so you should take care that the value is not already used by another page.
   >    * Do not support regex patterns.
   >    * Should not be set to an existing page.
-  >    
+  >
   >
 
-  You also need to configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details. 
+  You also need to configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
 
 * **Redirect Vanity URL**
 
@@ -116,7 +116,7 @@ The properties are distributed across several tabs.
 
 * **Design**
 
-  Indicate the [design](/sites/developing/using/designer.md) to be used for this page.
+  Indicate the [design](/help/sites-developing/designer.md) to be used for this page.
 
 * **Alias**
 
@@ -157,7 +157,7 @@ The properties are distributed across several tabs.
   >The ** [Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
   >
   >
-  >In such a case the CUG permissions must be edited in the [classic UI](/sites/classic-ui-authoring/using/classic-page-author-edit-page-properties.md).
+  >In such a case the CUG permissions must be edited in the [classic UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 * **Login Page**
 
@@ -195,14 +195,14 @@ Shows the page thumbnail image. You can:
 
     * **Enable user sharing for Facebook**
     * **Enable user sharing for Pinterest**
-    * **Preferred XF variation** 
+    * **Preferred XF variation**
       Define experience fragment variation used for generating metadata for page
 
 ### Cloud Services {#cloud-services}
 
 * **Cloud Services**
 
-  Define properties for [cloud services](/sites/developing/using/extending-cloud-config.md).
+  Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalization {#personalization}
 
@@ -221,8 +221,8 @@ Shows the page thumbnail image. You can:
   In this tab you can:
 
     * [Add Permissions](/help/sites-administering//user-group-ac-admin.md)
-    * [Edit Closed User Group](/help/sites-administering//cug.md#applying-your-closed-user-group-to-content-pages)  
-    
+    * [Edit Closed User Group](/help/sites-administering//cug.md#applying-your-closed-user-group-to-content-pages)
+
     * View the [Effective Permissions](/help/sites-administering//user-group-ac-admin.md)
 
   >[!CAUTION]
@@ -230,7 +230,7 @@ Shows the page thumbnail image. You can:
   >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown and the CUG permissions will not be editable, nor will the Authentication Requirement on the [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) tab be editable.
   >
   >
-  >In such a case the CUG permissions must be edited in the [classic UI](/sites/classic-ui-authoring/using/classic-page-author-edit-page-properties.md).
+  >In such a case the CUG permissions must be edited in the [classic UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
   >[!NOTE]
   >
@@ -258,8 +258,8 @@ You can define page properties:
 
 * From the **Sites** console:
 
-    * [Creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (a subset of the properties)  
-    
+    * [Creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (a subset of the properties)
+
     * Clicking or tapping **Properties**
 
         * For a single page
@@ -273,7 +273,7 @@ You can define page properties:
 
 Clicking or tapping** Properties** to define the page properties:
 
-1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.  
+1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.
 
 1. Select the **Properties** option for the required page using either:
 
@@ -282,7 +282,7 @@ Clicking or tapping** Properties** to define the page properties:
 
    The page properties will be shown using the appropriate tabs.
 
-1. Either view or edit the properties as required.  
+1. Either view or edit the properties as required.
 
 1. Then use **Save** to save your updates followed by **Close** to return to the console.
 
@@ -290,7 +290,7 @@ Clicking or tapping** Properties** to define the page properties:
 
 When editing a page you can use **Page Information** to define the page properties:
 
-1. Open the page for which you want to edit properties.  
+1. Open the page for which you want to edit properties.
 
 1. Select the **Page Information** icon to open the selection menu:
 
@@ -347,7 +347,7 @@ Once you have entered Bulk Editing you can:
 
     * A subset of properties
 
-        * Properties that are available on all selected pages and have been explicitly defined as available to bulk editing are visible.  
+        * Properties that are available on all selected pages and have been explicitly defined as available to bulk editing are visible.
         * If you reduce the page selection to one page, then all properties are visible.
 
     * Common properties with a common value
@@ -370,5 +370,5 @@ Once you have entered Bulk Editing you can:
 
 >[!NOTE]
 >
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/sites/developing/using/bulk-editing.md).
+>The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 

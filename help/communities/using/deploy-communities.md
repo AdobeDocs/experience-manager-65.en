@@ -17,7 +17,7 @@ docset: aem65
 
 ## Prerequisites {#prerequisites}
 
-* [AEM 6.5 Platform](../../sites/deploying/using/deploy.md)
+* [AEM 6.5 Platform](/help/sites-deploying/deploy.md)
 
 * AEM Communities license
 
@@ -29,18 +29,18 @@ docset: aem65
 
 ## Installation Checklist {#installation-checklist}
 
-**For the [AEM platform](../../sites/deploying/using/deploy.md#what-is-aem)**
+**For the [AEM platform](/help/sites-deploying/deploy.md#what-is-aem)**
 
-* install latest [AEM 6.5 Updates](#aem64updates)  
+* install latest [AEM 6.5 Updates](#aem64updates)
 
 * if not using the default ports (4502, 4503), then [configure replication agents](#replication-agents-on-author)
 * [replicate the crypto key](#replicate-the-crypto-key)
-* if supporting globalization, [setup automated translation](/help/sites-administering/translation.md)  
+* if supporting globalization, [setup automated translation](/help/sites-administering/translation.md)
   (sample setup is provided for development)
 
 **For the [Communities capability](../../communities/using/overview.md)**
 
-* if deploying a [publish farm](../../sites/deploying/using/recommended-deploys.md#tarmk-farm), [identify the primary publisher](#primary-publisher)
+* if deploying a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [identify the primary publisher](#primary-publisher)
 
 * [enable the tunnel service](#tunnel-service-on-author)
 * [enable social login](/communities/using/social-login.md#adobe-granite-oauth-authentication-handler)
@@ -128,11 +128,11 @@ The necessary steps are :
 
 1. repeat steps 3 and 4 on all author and publish instances
 
-Further information on installing bundles is found on the [Web Console](/sites/deploying/using/configuring-web-console.md#bundles) page.
+Further information on installing bundles is found on the [Web Console](/help/sites-deploying/configuring-web-console.md#bundles) page.
 
 #### Example : Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
-![](assets/chlimage_1-125.png) 
+![](assets/chlimage_1-125.png)
 
 ### SCORM Package {#scorm-package}
 
@@ -142,13 +142,13 @@ The AEM Communities SCORM engine is required for the [enablement](/help/communit
 
 * [cq-social-scorm-package, version 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) which includes the [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 
-<details> 
- <summary>To install a SCORM package</summary> 
- <ol> 
-  <li><p>Install the <a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg" target="_blank">cq-social-scorm-package, version 2.3.7</a><strong> </strong>from the Package Share<strong>.</strong></p> </li> 
-  <li><p>Download <strong><code>/libs/social/config/scorm/database_scormengine_data.sql</code></strong> from cq instance and execute it in mysql server to create an upgraded scormEngineDB schema.</p> </li> 
-  <li><p>Add <code>/content/communities/scorm/RecordResults</code> in Excluded Paths property in CSRF filter from <strong>https://&amp;lt;hostname&amp;gt;:&amp;lt;port&amp;gt;/system/console/configMgr</strong> on publishers.</p> </li> 
- </ol> 
+<details>
+ <summary>To install a SCORM package</summary>
+ <ol>
+  <li><p>Install the <a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg" target="_blank">cq-social-scorm-package, version 2.3.7</a><strong> </strong>from the Package Share<strong>.</strong></p> </li>
+  <li><p>Download <strong><code>/libs/social/config/scorm/database_scormengine_data.sql</code></strong> from cq instance and execute it in mysql server to create an upgraded scormEngineDB schema.</p> </li>
+  <li><p>Add <code>/content/communities/scorm/RecordResults</code> in Excluded Paths property in CSRF filter from <strong>https://&amp;lt;hostname&amp;gt;:&amp;lt;port&amp;gt;/system/console/configMgr</strong> on publishers.</p> </li>
+ </ol>
 </details>
 
 #### SCORM Logging {#scorm-logging}
@@ -157,7 +157,7 @@ As installed, all enablement activity is verbosely logged to the system console.
 
 If desired, the log level can be set to WARN for the `RusticiSoftware.*` package.
 
-For working with logs, see [Working with Audit Records and Log Files](../../sites/deploying/using/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
+For working with logs, see [Working with Audit Records and Log Files](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ### AEM Advanced MLS {#aem-advanced-mls}
 
@@ -205,7 +205,7 @@ The common store supports moderation of, and analytics on, UGC in the publish en
 
 ## Upgrading {#upgrading}
 
-When upgrading to the AEM 6.5 platform from previous versions of AEM, it is important to read [Upgrading to AEM 6.5](../../sites/deploying/using/upgrade.md).
+When upgrading to the AEM 6.5 platform from previous versions of AEM, it is important to read [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md).
 
 In addition to upgrading the platform, read [Upgrading to AEM Communities 6.5](../../communities/using/upgrade.md) to learn about Communities changes.
 
@@ -224,7 +224,7 @@ Therefore, it is necessary to **edit the configuration on all secondary publish 
 For all other (secondary) publish instances in a publish farm :
 
 * sign in with administrator privileges
-* access the [web console](/sites/deploying/using/configuring-osgi.md)
+* access the [web console](/help/sites-deploying/configuring-osgi.md)
 
     * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
@@ -237,7 +237,7 @@ For all other (secondary) publish instances in a publish farm :
 
 Replication is used for site content created in the publish environment, such as community groups, as well as managing members and member groups from the author environment using the [tunnel service](#tunnel-service-on-author).
 
-For the primary publisher, ensure the [Replication Agent Config](../../sites/deploying/using/replication.md) correctly identifies the publish server and authorized user. The default authorized user, `admin,` already has the appropriate permissions (is a member of `Communities Administrators`).
+For the primary publisher, ensure the [Replication Agent Config](/help/sites-deploying/replication.md) correctly identifies the publish server and authorized user. The default authorized user, `admin,` already has the appropriate permissions (is a member of `Communities Administrators`).
 
 In order for some other user to have the appropriate permissions, they must be added as a member to the `administrators` user group (also a member of `Communities Administrators`).
 
@@ -256,18 +256,18 @@ There are two replication agents in the author environment that need the transpo
         1. select **edit**
         1. select the **Transport** tab
         1. if not port `4503`, edit the **URI** to specify the correct port
-        
+
         1. if not user `admin`, edit the **User** and **Password** to specify a member of the `administrators` user group
 
 The following images show the results of changing the port from 4503 to 6103 by :
 
 #### Default Agent (publish) {#default-agent-publish}
 
-![](assets/chlimage_1-127.png) 
+![](assets/chlimage_1-127.png)
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
-![](assets/chlimage_1-128.png) 
+![](assets/chlimage_1-128.png)
 
 ### Tunnel Service on Author {#tunnel-service-on-author}
 
@@ -279,10 +279,10 @@ To enable the tunnel service :
 
 * on **author**
 * sign in with administrative privileges
-* if publisher is not localhost:4503 or transport user is not `admin`,  
+* if publisher is not localhost:4503 or transport user is not `admin`,
   then [configure the replication agent](#replication-agents-on-author)
 
-* access the [Web Console](/sites/deploying/using/configuring-osgi.md)
+* access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
     * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
@@ -291,7 +291,7 @@ To enable the tunnel service :
 * check the **enable **box
 * select **Save**
 
-![](assets/chlimage_1-129.png) 
+![](assets/chlimage_1-129.png)
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
@@ -303,13 +303,13 @@ In order to copy the key material from author to all other instances, it is nece
 
 * access the AEM instance, typically an author instance, that contains the key material to copy
 
-    * locate the `com.adobe.granite.crypto.file` bundle in the local file system  
+    * locate the `com.adobe.granite.crypto.file` bundle in the local file system
       for example,
 
         * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
         * the `bundle.info` file will identify the bundle
 
-    * navigate into the data folder  
+    * navigate into the data folder
       for example,
 
         * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
@@ -318,7 +318,7 @@ In order to copy the key material from author to all other instances, it is nece
 
 * for each target AEM instance
 
-    * navigate into the data folder  
+    * navigate into the data folder
       for example,
 
         * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
@@ -342,7 +342,7 @@ Having the key material stored in the repository, as was the case for AEM 6.2 an
 
 With the key material stored in the repository, the manner for replicating the crypto key from author to other instances is as follows :
 
-Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md) :
+Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de)
 * select `/etc/key`
@@ -351,11 +351,11 @@ Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md) :
 
 * [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle)
 
-![](assets/chlimage_1-130.png) 
+![](assets/chlimage_1-130.png)
 
 #### Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
-* on each publish instance, access the [Web Console](/sites/deploying/using/configuring-osgi.md)
+* on each publish instance, access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
     * for example, [https://&lt;server&gt;:&lt;port&gt;/system/console/bundles](https://localhost:4503/system/console/bundles)
 
@@ -364,7 +364,7 @@ Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md) :
 
 ![](assets/chlimage_1-131.png)
 
-* after a moment, a **Success **dialog should appear :  
+* after a moment, a **Success **dialog should appear :
   `Operation completed successfully.`
 
 ### Apache HTTP Server {#apache-http-server}

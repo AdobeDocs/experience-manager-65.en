@@ -20,70 +20,70 @@ This page documents the details of working with using the Messaging component to
 ## Essentials for Client-Side {#essentials-for-client-side}
 
 <table>
- <tbody> 
-  <tr> 
-   <th colspan="2" style="text-align: center;">Compose Message</th> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"> <strong>resourceType</strong></td> 
-   <td><p>social/messaging/components/hbs/composemessage</p> </td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"> <a href="/communities/using/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td> 
-   <td><p>cq.social.hbs.messaging</p> </td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"> <strong>templates</strong></td> 
-   <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"><strong>css</strong></td> 
-   <td>/libs/social/messaging/components/hbs/composemessage/clientlibs/composemessage.css</td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"><strong>properties</strong></td> 
-   <td>see <a href="../../communities/using/configure-messaging.md" target="_blank">Configure Messaging</a></td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"><strong>admin configuration</strong></td> 
-   <td><a href="../../communities/using/messaging.md">Configure Messaging</a></td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th colspan="2" style="text-align: center;">Compose Message</th>
+  </tr>
+  <tr>
+   <td style="text-align: center;"> <strong>resourceType</strong></td>
+   <td><p>social/messaging/components/hbs/composemessage</p> </td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"> <a href="/communities/using/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
+   <td><p>cq.social.hbs.messaging</p> </td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"> <strong>templates</strong></td>
+   <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"><strong>css</strong></td>
+   <td>/libs/social/messaging/components/hbs/composemessage/clientlibs/composemessage.css</td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"><strong>properties</strong></td>
+   <td>see <a href="../../communities/using/configure-messaging.md" target="_blank">Configure Messaging</a></td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"><strong>admin configuration</strong></td>
+   <td><a href="../../communities/using/messaging.md">Configure Messaging</a></td>
+  </tr>
+ </tbody>
 </table>
 
 <table>
- <tbody> 
-  <tr> 
-   <th colspan="2" style="text-align: center;">Message List</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2" style="text-align: center;">(for Inbox, Sent, and Trash)</td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"> <strong>resourceType</strong></td> 
-   <td><p>social/messaging/components/hbs/messagebox</p> </td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"> <a href="/communities/using/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td> 
-   <td><p>cq.social.hbs.messaging</p> </td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"> <strong>templates</strong></td> 
-   <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"><strong>css</strong></td> 
-   <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"><strong>properties</strong></td> 
-   <td>see <a href="../../communities/using/configure-messaging.md" target="_blank">Configure Messaging</a></td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"><strong>admin configuration</strong></td> 
-   <td><a href="../../communities/using/messaging.md" target="_blank">Configure Messaging</a></td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th colspan="2" style="text-align: center;">Message List</th>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;">(for Inbox, Sent, and Trash)</td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"> <strong>resourceType</strong></td>
+   <td><p>social/messaging/components/hbs/messagebox</p> </td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"> <a href="/communities/using/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
+   <td><p>cq.social.hbs.messaging</p> </td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"> <strong>templates</strong></td>
+   <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"><strong>css</strong></td>
+   <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"><strong>properties</strong></td>
+   <td>see <a href="../../communities/using/configure-messaging.md" target="_blank">Configure Messaging</a></td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"><strong>admin configuration</strong></td>
+   <td><a href="../../communities/using/messaging.md" target="_blank">Configure Messaging</a></td>
+  </tr>
+ </tbody>
 </table>
 
 See also [Client-side Customizations](/communities/using/client-customize.md)
@@ -91,9 +91,9 @@ See also [Client-side Customizations](/communities/using/client-customize.md)
 ## Essentials for Server-Side {#essentials-for-server-side}
 
 * [Configuring Messaging](../../communities/using/configure-messaging.md)
-* [Messaging client APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
-* [Messaging APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
-* [Messaging Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [Messaging client APIs](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
+* [Messaging APIs](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
+* [Messaging Endpoints](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Server-side Customizations](/communities/using/server-customize.md)
 
 >[!CAUTION]
@@ -126,7 +126,7 @@ To try the server-side sample script, you need a development environment and the
 1. Create a `bundle node`in `/apps/engage/install` with arbitrary names, such as:
 
     * Symbolic Name: com.engage.media.social.messaging.MessagingNotification
-    * Name: Getting Started Tutorial Message Notification  
+    * Name: Getting Started Tutorial Message Notification
     * Description: a sample service for sending an email notification to users when they receive a message
     * Package: com.engage.media.social.messaging.notification
 
@@ -217,7 +217,7 @@ public class MessagingEventHandler implements EventHandler {
                 Message msg = resource.adaptTo(Message.class);
 
                 //Get list of recipient Ids from message
-                //For Getting Started Tutorial, Id is same as email. If that is not the case in your site, 
+                //For Getting Started Tutorial, Id is same as email. If that is not the case in your site,
                 //an additional step is needed to retrieve the email for the Id
                 List<String> reclist = msg.getRecipientIdList();
                 for(int i=0;i<reclist.size();i++){

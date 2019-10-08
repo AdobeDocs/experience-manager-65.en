@@ -22,7 +22,7 @@ The integration provides you with the following features:
 * The ability to create Emails in AEM and publish them to Exact Target for distribution.
 * The ability to set action of a AEM form to create an Exact Target subscriber.
 
-After ExactTarget is configured, you can publish newsletters or emails to ExactTarget. See [Publishing Newsletters to an Email Service](/sites/classic-ui-authoring/using/classic-personalization-campaigns.md).
+After ExactTarget is configured, you can publish newsletters or emails to ExactTarget. See [Publishing Newsletters to an Email Service](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
 ## Creating an ExactTarget Configuration {#creating-an-exacttarget-configuration}
 
@@ -48,7 +48,7 @@ To create an ExactTarget configuration in Cloud Services:
 
 1. Select an account, if available. The account is for Enterprise 2.0 customers. Click **OK**.
 
-   ExactTarget has been configured. You can edit the configuration by clicking **Edit**. You can go to ExactTarget by clicking **Go to ExactTarget**. 
+   ExactTarget has been configured. You can edit the configuration by clicking **Edit**. You can go to ExactTarget by clicking **Go to ExactTarget**.
 
 1. AEM now provides a Data Extension feature. You can import ExactTarget data extension columns. This can be configured by clicking "+" sign appearing besides successfully created ExactTarget configuration. Any of the existing data extension can be selected from the drop-down list. For more information on how to configure data extensions, refer [ExactTarget documentation](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
 

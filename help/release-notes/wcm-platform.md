@@ -24,13 +24,13 @@ docset: aem65
 
 >[!CAUTION]
 >
->* The new version of the Oak Segment Tar present since AEM 6.3 requires a repository migration. This step is mandatory if you are upgrading from an older version of TarMK or want to switch the new Segment Tar from another type of persistence. For more information on what the benefits of the new Segment Tar are, see the [Migrating to Oak Segment Tar FAQ](/sites/deploying/using/revision-cleanup.md#migrating-to-oak-segment-tar).
+>* The new version of the Oak Segment Tar present since AEM 6.3 requires a repository migration. This step is mandatory if you are upgrading from an older version of TarMK or want to switch the new Segment Tar from another type of persistence. For more information on what the benefits of the new Segment Tar are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 >
 
 ### Java Support {#java-support}
 
 * New support for Java 11, as well as the already supported Java 8
-* For optimal performance, override default GC values with other values. For more information, please see the [Install & Update](../sites/deploying/using/custom-standalone-install.md) section.
+* For optimal performance, override default GC values with other values. For more information, please see the [Install & Update](/help/sites-deploying/custom-standalone-install.md) section.
 * Java 11 and Java 8 maintenance updates will be distributed by Adobe for customer usage in AEM-related projects, when not publicly available from Oracle
 
 ### OSGI {#osgi}
@@ -62,15 +62,15 @@ Various enhancements have been made to the UI to make it more productive and eas
 
 >[!CAUTION]
 >
->* Adobe does not plan to make further enhancements to the Classic UI. AEM 6.5 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated [Read more](../sites/deploying/using/ui-recommendations.md).
+>* Adobe does not plan to make further enhancements to the Classic UI. AEM 6.5 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
 >
 
 ### Upgrade {#upgrade}
 
-* The upgrade procedure largely remains the same in 6.5. 
+* The upgrade procedure largely remains the same in 6.5.
 * We continue to support the Backward Compatibility , Upgrade Complexity Assessment and Sustainable Upgrades features introduced in 6.4. There have been version specific updates made to these areas where needed.
-* The Pattern Detector packaging has been simplified, and there will be one package assessing upgrades to 6.5 for the available source versions. 
-* Please see the [Upgrade documentation](../sites/deploying/using/upgrade.md) for more details on upgrade procedure.
+* The Pattern Detector packaging has been simplified, and there will be one package assessing upgrades to 6.5 for the available source versions.
+* Please see the [Upgrade documentation](/help/sites-deploying/upgrade.md) for more details on upgrade procedure.
 
 ### Web Server {#web-server}
 

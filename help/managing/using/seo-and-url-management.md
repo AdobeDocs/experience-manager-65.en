@@ -37,7 +37,7 @@ Here are some general tips on how to construct your URLs for SEO:
 
 * Use hyphens to separate words.
 
-    * Name pages using hyphens (-) as separators. 
+    * Name pages using hyphens (-) as separators.
     * Avoid using camel case, underscores, and spaces.
 
 * Avoid the use of query parameters when possible. When necessary, limit them to two or less.
@@ -49,25 +49,25 @@ Here are some general tips on how to construct your URLs for SEO:
 
     * When using selectors on a page, selectors that provide semantic value are preferred.
     * If a human cannot read your URL, a search engine cannot either.
-    * For example:  
-      `mybrand.com/products/product-detail.product-category.product-name.html`  
+    * For example:
+      `mybrand.com/products/product-detail.product-category.product-name.html`
       is preferred to `mybrand.com/products/product-detail.1234.html`
 
 * Avoid subdomains whenever possible, as search engines will treat them as different entities, fragmenting the SEO value of the site.
 
     * Instead use first-level sub paths. For example, instead of `es.mybrand.com/home.html`, use `www.mybrand.com/es/home.html`.
-    
+
     * Plan your content hierarchy to match the way that the content will be presented, according to this guideline.
 
 * Keyword effectiveness in URLs decreases as the length of the URL and the position of the keyword increases. In other words, shorter is better.
 
-    * Use URL shortening techniques and features provided by AEM to remove unnecessary URL pieces. 
+    * Use URL shortening techniques and features provided by AEM to remove unnecessary URL pieces.
     * For example, `mybrand.com/en/myPage.html` is preferred to `mybrand.com/content/my-brand/en/myPage.html`.
 
 * Use canonical URLs.
 
-    * When a URL can be served from different paths or with different parameters or selectors, make sure to use a** ** `rel=canonical` tag on the page. 
-    
+    * When a URL can be served from different paths or with different parameters or selectors, make sure to use a** ** `rel=canonical` tag on the page.
+
     * This can be included in the code for the AEM template.
 
 * Match URLs to page titles whenever possible.
@@ -76,13 +76,13 @@ Here are some general tips on how to construct your URLs for SEO:
 
 * Support case insensitivity in URL requests.
 
-    * Configure the dispatcher to rewrite all inbound requests as lowercase letters. 
+    * Configure the dispatcher to rewrite all inbound requests as lowercase letters.
     * Train content authors to create all pages using lowercase letters.
 
 * Make sure that each page is only served from one protocol.
 
     * Sometimes sites will be served over `http` until a user reaches a page with, for example, a checkout or login form, at which point it switches to `https`. When linking from this page, if the user can return to `http` pages and access them through `https`, the search engine will track these as two separate pages.
-    
+
     * Google currently prefers `https` pages to `http` ones. For this reason it often makes everyone’s life easier to serve the whole site over `https`.
 
 ### Server configuration {#server-configuration}
@@ -108,7 +108,7 @@ Previously, using query parameters was the generally accepted practice when buil
 The trend in recent years has been to remove these in an effort to make URLs more readable. On many platforms, this involves implementing redirects on the web server or Content Delivery Network (CDN), but Sling makes this straightforward. Sling selectors:
 
 * Improve URL readability.
-* Let you cache your pages on the dispatcher and will often improve security. 
+* Let you cache your pages on the dispatcher and will often improve security.
 * Allow you to address the content directly, rather than having a generic servlet that retrieves content. This grants you the benefits of ACLs that you apply to your repository and filters that you apply on the dispatcher.
 
 #### Using selectors for servlets {#using-selectors-for-servlets}
@@ -190,20 +190,20 @@ If an author wants a page to be accessible from a second location for promotiona
 
 You may want to to display localized page names to users of translated content. For example:
 
-* Rather than having a Spanish-speaking user navigate to:  
+* Rather than having a Spanish-speaking user navigate to:
   `www.mydomain.com/es/home.html`
 
-* It would be better for the URL to be:  
+* It would be better for the URL to be:
   `www.mydomain.com/es/casa.html`.
 
 The challenge with localizing the name of the page is that many of the localization tools available on the AEM platform rely on having the page names match across locales in order to keep the content synchronized.
 
 The `sling:alias` property allows you to have our cake and eat it too. `sling:alias` can be added as a property to any resource to allow for an alias name for the resource. In the previous example, you would have:
 
-* A page in the JCR at:  
+* A page in the JCR at:
   `…/es/home`
 
-* Then add a property to it:  
+* Then add a property to it:
   `sling:alias` = `casa`
 
 This would allow the AEM translation tools such as the multi-site manager to continue to maintain a relationship between:
@@ -222,11 +222,11 @@ While also allowing end users to interact with the page name in their native lan
 
 In a standard AEM installation:
 
-* for the OSGi configuration   
-  **Apache Sling Resource Resolver Factory** 
+* for the OSGi configuration
+  **Apache Sling Resource Resolver Factory**
   ( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
-* the property  
+* the property
   **Mapping Location** ( `resource.resolver.map.location`)
 
 * defaults to `/etc/map`.
@@ -255,7 +255,7 @@ However, there is also a simpler way to manage this:
 
    Using the web console (for example, localhost:4502/system/console/configMgr) you can configure the Sling Resource Resolver:
 
-    * **Apache Sling Resource Resolver Factory** 
+    * **Apache Sling Resource Resolver Factory**
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    It is recommended that you build out the mappings required to shorten URLs as regular expressions, then define these configurations under an OsgiConfignode, `config.publish`, that is included in your build.
@@ -270,7 +270,7 @@ However, there is also a simpler way to manage this:
 
    This would convert a URL:
 
-    * from `/content/my-brand/my-page.html` 
+    * from `/content/my-brand/my-page.html`
     * to just `/my-page.html`
 
    This is in line with the recommended practice of keeping URLs as short as possible.
@@ -286,7 +286,7 @@ However, there is also a simpler way to manage this:
      String childUrl = resourceResolver.map(request, child.getPath());
      //Output the childUrl on the page here
    }
-   
+
    ```
 
 #### Apache HTTP Server mod_rewrite {#apache-http-server-mod-rewrite}
@@ -334,7 +334,7 @@ The best practice is to serve all pages using lowercase letters. However, you do
 To configure Apache to force all inbound traffic to lowercase, add the following to the `vhost` config:
 
 ```xml
-RewriteEngine On 
+RewriteEngine On
 RewriteMap lowercase int:tolower
 
 ```
@@ -342,7 +342,7 @@ RewriteMap lowercase int:tolower
 Additionally, add the following to the very top of the `htaccess` file:
 
 ```xml
-RewriteCond $1 [A-Z] 
+RewriteCond $1 [A-Z]
 RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ```
@@ -370,8 +370,8 @@ To programmatically generate a sitemap, register a Sling Servlet listening for a
 
 >[!NOTE]
 >
->You can register a Sling Servlet to listen for the selector `sitemap` with the extension `xml`. This will cause the servlet to process the request any time a URL is requested that ends in:  
->`/<*path-to*>/page.sitemap.xml` 
+>You can register a Sling Servlet to listen for the selector `sitemap` with the extension `xml`. This will cause the servlet to process the request any time a URL is requested that ends in:
+>`/<*path-to*>/page.sitemap.xml`
 >
 >You can then get the requested resource from the request and generate a sitemap from that point in the content tree by using the JCR APIs.
 >
@@ -390,7 +390,7 @@ Make sure to check the additional resources section that follows for instruction
 
 For more information, please see the following additional resources:
 
-* [Resource Mapping](../../sites/deploying/using/resource-mapping.md)
+* [Resource Mapping](/help/sites-deploying/resource-mapping.md)
 * [https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url](https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url)
 * [https://moz.com/blog/15-seo-best-practices-for-structuring-urls](https://moz.com/blog/15-seo-best-practices-for-structuring-urls)
 * [https://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/](https://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/)

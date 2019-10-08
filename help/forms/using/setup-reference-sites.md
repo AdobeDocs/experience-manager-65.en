@@ -20,7 +20,7 @@ We.Finance reference site draw real life use-cases to engage with existing and p
 
 The reference sites allow you to explore and showcase the following key capabilities of AEM Forms.
 
-* Simplified authoring experience of engaging and responsive adaptive forms and interactive communications. 
+* Simplified authoring experience of engaging and responsive adaptive forms and interactive communications.
 * Interactive Communications to create interactive, personalized, and responsive customer communications that adapt to the device setting and layout.
 * Data integration to connect to disparate data sources to prefill and submit form data through a form data model.
 * Forms workflow to automate business processes and workflows.
@@ -40,13 +40,13 @@ The reference sites provide reusable assets that you can use as templates to cre
 
 Before you set up the reference site, ensure that you have the following:
 
-* **AEM essentials  
+* **AEM essentials
   **AEM QuickStart, AEM Forms add-on package, and reference site packages. See [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for add-on and reference sites packages details.
 
-* **An SMTP service** 
+* **An SMTP service**
   You can use any SMTP service.
 
-* **Adobe Sign developer account and Adobe Sign API application  
+* **Adobe Sign developer account and Adobe Sign API application
   **To use digital signing capabilities, Adobe Sign developer account is required. See [Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
 
 * A running instance of Microsoft Dynamics 365 to integrate with AEM Forms. To run the reference site, you import the sample data into the Microsoft Dynamics instance to prefill the interactive communication used in the reference site.
@@ -55,78 +55,78 @@ Before you set up the reference site, ensure that you have the following:
 Perform the following steps in the recommended sequence to set up and configure the reference sites.
 
 <table>
- <tbody> 
-  <tr> 
-   <th><strong>Step</strong></th> 
-   <th width="20%"><strong>Configure</strong></th> 
-   <th><strong>Notes</strong></th> 
-  </tr> 
-  <tr> 
-   <td><a data-disable-query="false" href="#installandconfigureaemform">Install and configure AEM Forms</a></td> 
-   <td>Author and Publish</td> 
-   <td>Install and configure AEM Forms author and publish instances.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="#ssl">Configure SSL</a></td> 
-   <td>Author and Publish<br /> </td> 
-   <td valign="top">Enable HTTP over SSL for secure communications with Adobe Sign.</td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="163"><p><a href="#externalizer">Configure Day CQ Link Externalizer configuration</a></p> </td> 
-   <td>Author and Publish<br /> </td> 
-   <td valign="top" width="159"><p>Reference Site use cases deliver emails for different transactions. This setting is required for Newsletter delivery via email. It ensures that URLs and Images point to the publish instance. </p> </td> 
-  </tr> 
-  <tr> 
-   <td><a href="#cqmail">Configure Day CQ Mail Service</a></td> 
-   <td>Author and Publish</td> 
-   <td>Required for email communication.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="#xss">Override default XSS configuration</a></td> 
-   <td>Publish</td> 
-   <td>Used to override $, {, and } characters that are blocked by xss security.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="#aemds">Configure AEM DS settings</a></td> 
-   <td>Author</td> 
-   <td>Configure AEM DS for form submission on publish instance and processing workflows on the author instance.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="#refsite">Deploy reference sites packages</a></td> 
-   <td>Author</td> 
-   <td>Deploy reference sites packages on AEM Forms author instance.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="../../forms/using/setup-reference-sites.md#optional-import-sample-data-into-microsoft-dynamics">Import sample data into Microsoft Dynamics</a></td> 
-   <td>Author and Publish</td> 
-   <td>Import sample data for credit card application, home mortgage application, and home insurance application walkthrough</td> 
-  </tr> 
-  <tr> 
-   <td><a href="../../forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">Configure OAuth cloud service for Microsoft Dynamics</a></td> 
-   <td>Author and Publish</td> 
-   <td>Configure the OAuth cloud service in AEM Forms to enable communication between AEM Forms and Microsoft Dynamics. </td> 
-  </tr> 
-  <tr> 
-   <td><a href="#scheduler">Configure Adobe Sign Scheduler</a></td> 
-   <td>Author and Publish<br /> </td> 
-   <td>Change the configuration of the scheduler to check status every two minutes.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="#sign-service">Configure Reference Site Adobe Sign Cloud Service</a></td> 
-   <td>Author and Publish<br /> </td> 
-   <td>A configuration that comes with reference sites packages and needs reconfiguration with valid credentials.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="#anonymous">Configure Forms Common Configuration Service for anonymous users</a></td> 
-   <td>Publish</td> 
-   <td>The configuration allows submission, sign and Document of Record generation for anonymous users.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="#fdm">Modify Rest Service Swagger File for Form Data Model</a></td> 
-   <td>Author and Publish<br /> </td> 
-   <td>Modify the service for your environment.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th><strong>Step</strong></th>
+   <th width="20%"><strong>Configure</strong></th>
+   <th><strong>Notes</strong></th>
+  </tr>
+  <tr>
+   <td><a data-disable-query="false" href="#installandconfigureaemform">Install and configure AEM Forms</a></td>
+   <td>Author and Publish</td>
+   <td>Install and configure AEM Forms author and publish instances.</td>
+  </tr>
+  <tr>
+   <td><a href="#ssl">Configure SSL</a></td>
+   <td>Author and Publish<br /> </td>
+   <td valign="top">Enable HTTP over SSL for secure communications with Adobe Sign.</td>
+  </tr>
+  <tr>
+   <td valign="top" width="163"><p><a href="#externalizer">Configure Day CQ Link Externalizer configuration</a></p> </td>
+   <td>Author and Publish<br /> </td>
+   <td valign="top" width="159"><p>Reference Site use cases deliver emails for different transactions. This setting is required for Newsletter delivery via email. It ensures that URLs and Images point to the publish instance. </p> </td>
+  </tr>
+  <tr>
+   <td><a href="#cqmail">Configure Day CQ Mail Service</a></td>
+   <td>Author and Publish</td>
+   <td>Required for email communication.</td>
+  </tr>
+  <tr>
+   <td><a href="#xss">Override default XSS configuration</a></td>
+   <td>Publish</td>
+   <td>Used to override $, {, and } characters that are blocked by xss security.</td>
+  </tr>
+  <tr>
+   <td><a href="#aemds">Configure AEM DS settings</a></td>
+   <td>Author</td>
+   <td>Configure AEM DS for form submission on publish instance and processing workflows on the author instance.</td>
+  </tr>
+  <tr>
+   <td><a href="#refsite">Deploy reference sites packages</a></td>
+   <td>Author</td>
+   <td>Deploy reference sites packages on AEM Forms author instance.</td>
+  </tr>
+  <tr>
+   <td><a href="../../forms/using/setup-reference-sites.md#optional-import-sample-data-into-microsoft-dynamics">Import sample data into Microsoft Dynamics</a></td>
+   <td>Author and Publish</td>
+   <td>Import sample data for credit card application, home mortgage application, and home insurance application walkthrough</td>
+  </tr>
+  <tr>
+   <td><a href="../../forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">Configure OAuth cloud service for Microsoft Dynamics</a></td>
+   <td>Author and Publish</td>
+   <td>Configure the OAuth cloud service in AEM Forms to enable communication between AEM Forms and Microsoft Dynamics. </td>
+  </tr>
+  <tr>
+   <td><a href="#scheduler">Configure Adobe Sign Scheduler</a></td>
+   <td>Author and Publish<br /> </td>
+   <td>Change the configuration of the scheduler to check status every two minutes.</td>
+  </tr>
+  <tr>
+   <td><a href="#sign-service">Configure Reference Site Adobe Sign Cloud Service</a></td>
+   <td>Author and Publish<br /> </td>
+   <td>A configuration that comes with reference sites packages and needs reconfiguration with valid credentials.</td>
+  </tr>
+  <tr>
+   <td><a href="#anonymous">Configure Forms Common Configuration Service for anonymous users</a></td>
+   <td>Publish</td>
+   <td>The configuration allows submission, sign and Document of Record generation for anonymous users.</td>
+  </tr>
+  <tr>
+   <td><a href="#fdm">Modify Rest Service Swagger File for Form Data Model</a></td>
+   <td>Author and Publish<br /> </td>
+   <td>Modify the service for your environment.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Install and configure AEM Forms {#installandconfigureaemform}
@@ -147,7 +147,7 @@ SSL configuration is required to communicate with Adobe Sign servers. For detail
 
 ## Configure Day CQ Link Externalizer configuration {#externalizer}
 
-In AEM, the **Externalizer** is an OSGI service that allows you to programmatically transform a resource path (e.g. /path/to/my/page) into an external and absolute URL (for example, https://www.mycompany.com/path/to/my/page) by prefixing the path with a pre-configured DNS. See [Externalizing URLs](../../sites/developing/using/externalizer.md).
+In AEM, the **Externalizer** is an OSGI service that allows you to programmatically transform a resource path (e.g. /path/to/my/page) into an external and absolute URL (for example, https://www.mycompany.com/path/to/my/page) by prefixing the path with a pre-configured DNS. See [Externalizing URLs](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -158,7 +158,7 @@ In AEM, the **Externalizer** is an OSGI service that allows you to programmatica
 Perform the following steps on both author and publish instances:
 
 1. Go to OSGi Configuration at https://&lt;*hostname&gt;*:&lt;*port&gt;*/system/console/configMgr.
-1. Find and tap **Day CQ Link Externalizer** configuration.  
+1. Find and tap **Day CQ Link Externalizer** configuration.
    The Day CQ Link Externalizer dialog opens for editing the configuration.
 1. In the Day CQ Link Externalizer dialog, in the Domains field:
 
@@ -236,7 +236,7 @@ To import the custom entity for auto insurance application:
 
 To import the custom entity for auto insurance application:
 
-1. Download the** AEMFormsFSIRefsite_1_0.zip** package from https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Select and import the package.  
+1. Download the** AEMFormsFSIRefsite_1_0.zip** package from https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Select and import the package.
 
 1. In your Microsoft Dynamics instance, go to **Settings &gt; Solutions** and click **Import**. Select and import the package.
 
@@ -250,20 +250,20 @@ To import the customer and insurance policy records:
 
 1. In your Microsoft Dynamics instance, do the following:
 
-    * Go to **Sales **&gt; **We.Finance Customers** and click **Import**. 
-    
-    * Go to **Sales **&gt; **We.Finance Auto Insurance** and click **Import**.   
-    
+    * Go to **Sales **&gt; **We.Finance Customers** and click **Import**.
+
+    * Go to **Sales **&gt; **We.Finance Auto Insurance** and click **Import**.
+
     * Go to **Sales **&gt; **We.Finance Home Mortgage **and click **Import**.
 
 ## Configure OAuth cloud service for Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
 Configure the OAuth cloud service in AEM Forms to enable communication between AEM Forms and Microsoft Dynamics. Perform the following steps to configure the OAuth Cloud Service on AEM author and publish instances:
 
-1. On AEM author instance, go to **Tools **&gt; **Cloud Services** &gt; **Data Sources** &gt; **global**. Tap **Refsite Dynamics Integration** icon and tap Properties. 
+1. On AEM author instance, go to **Tools **&gt; **Cloud Services** &gt; **Data Sources** &gt; **global**. Tap **Refsite Dynamics Integration** icon and tap Properties.
 1. Go to Microsoft Azure Active Directory account. Add the copied cloud service configuration URL in the **Reply URL** setting for your registered application. Save the configuration.
 1. In the Authentication Settings tab, specify **Service Root**, **Client Id**, **Client Secret**, and **Resource URL** for your Microsoft Dynamics instance. Click **Connect to OAuth** that redirects to the Microsoft Dynamics login page.
-1. Provide your login credentials. Once logged in, you are redirected to the AEM Forms cloud service configuration page. Click **Save & Close**. The cloud service configuration is saved. 
+1. Provide your login credentials. Once logged in, you are redirected to the AEM Forms cloud service configuration page. Click **Save & Close**. The cloud service configuration is saved.
 1. Go to **Forms **&gt; **Data Integrations** &gt; **We.Finance**. Select Auto Insurance (Dynamics) and click Edit. Microsoft Dynamics entities are listed under the Data Sources tab. Wait until all entities are fetched from Microsoft Dynamics and listed under the data sources tab.
 1. Select the **AutoInsuranceRenewal entity** and click **Test Model Object**. In the input request section, specify the value for customer ID as “900001” and click **Test**. The Output section displays the records fetched from Microsoft Dynamics for customer ID 900001.
 1. In the input request section, specify the value for customer ID as “900001” and click **Test**. The Output section displays the records fetched from Microsoft Dynamics for customer ID 900001.
@@ -338,7 +338,7 @@ To generate a report, seed data is bundled with the reference sites. Before you 
 1. Navigate to https://&lt;*host*&gt;:&lt;*port*&gt;/system/console/configMgr and do the following:
 
     * In the **[!UICONTROL Web Console Configuration]** page, find and click **[!UICONTROL AEM Forms Analytics Configuration]**.
-    
+
     * In the **[!UICONTROL SiteCatalyst Framework]** field of the AEM Forms Analytics Configuration dialog, select we-finance(we-finance) or we-gov(we-gov).
     * Click **[!UICONTROL Save]** and let the page refresh.
 
@@ -355,9 +355,9 @@ The reference site showcases the integration of AEM Forms with Adobe Target that
 
 To experience the integration in the reference site, do the following to configure Target in AEM:
 
-1. Start the author quickstart with the jvm argument `-Dabtesting.enabled=true` to enable A/B testing on the server.** 
-   Note**: If the AEM instance is running on JBoss, which is started as a service from Turnkey installation, add the `-Dabtesting.enabled=true` parameter in the following entry in the `jboss\bin\standalone.conf.bat` file, :  
-   `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`   
+1. Start the author quickstart with the jvm argument `-Dabtesting.enabled=true` to enable A/B testing on the server.**
+   Note**: If the AEM instance is running on JBoss, which is started as a service from Turnkey installation, add the `-Dabtesting.enabled=true` parameter in the following entry in the `jboss\bin\standalone.conf.bat` file, :
+   `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Access https://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html.
 

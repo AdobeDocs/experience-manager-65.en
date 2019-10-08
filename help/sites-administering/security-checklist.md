@@ -23,7 +23,7 @@ This section deals with various steps that you should take to ensure that your A
 
 >[!NOTE]
 >
->There are some additional [security considerations](/sites/developing/using/dev-guidelines-bestpractices.md#security-considerations) applicable at the development phase.
+>There are some additional [security considerations](/help/sites-developing/dev-guidelines-bestpractices.md#security-considerations) applicable at the development phase.
 
 ## Main Security Measures {#main-security-measures}
 
@@ -37,7 +37,7 @@ Enabling the HTTPS transport layer on both author and publish instances is manda
 
 >[!NOTE]
 >
->See the [Enabling HTTP Over SSL](/sites/deploying/using/config-ssl.md) section for more information.
+>See the [Enabling HTTP Over SSL](/help/sites-deploying/config-ssl.md) section for more information.
 
 ### Install Security Hotfixes {#install-security-hotfixes}
 
@@ -49,10 +49,10 @@ Adobe strongly recommends that after installation you change the password for th
 
 These accounts include:
 
-* The AEM `admin` account  
+* The AEM `admin` account
   Once you have changed the password for the AEM admin account, you will need to use the new password when accessing CRX.
 
-* The `admin` password for the OSGi Web console  
+* The `admin` password for the OSGi Web console
   This change will also be applied to the admin account used for accessing the Web console, so you will need to use the same password when accessing that.
 
 These two accounts use separate credentials and having distinct, strong password for each is vital to a secure deployment.
@@ -78,9 +78,9 @@ For more information on changing the web console password, see [Changing the OSG
 
 #### Changing the OSGi web console admin password {#changing-the-osgi-web-console-admin-password}
 
-You must also change the password used for accessing the Web console. This is done by configuring the following properties of the [Apache Felix OSGi Management Console](../../../sites/deploying/using/osgi-configuration-settings.md#apachefelixosgimanagementconsole):
+You must also change the password used for accessing the Web console. This is done by configuring the following properties of the [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md#apachefelixosgimanagementconsole):
 
-**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.  
+**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.
 The password must be changed after the initial installation to ensure the security of your instance.
 
 To do this:
@@ -112,12 +112,12 @@ AEM Dispatcher is a critical piece of your infrastructure. Adobe strongly recomm
 
 ### Configure replication and transport users {#configure-replication-and-transport-users}
 
-A standard installation of AEM specifies `admin` as the user for transport credentials within the default [replication agents](../../../sites/deploying/using/replication.md). Also, the admin user is used to source the replication on the author system.
+A standard installation of AEM specifies `admin` as the user for transport credentials within the default [replication agents](/help/sites-deploying/replication.md). Also, the admin user is used to source the replication on the author system.
 
 For security considerations, both should be changed to reflect the particular use case at hand, with the following two aspects in mind:
 
-* The **transport user** should not be the admin user. Rather, set up a user on the publish system that has only access rights to the relevant portions of the publish system and use that user's credentials for the transport.  
-  
+* The **transport user** should not be the admin user. Rather, set up a user on the publish system that has only access rights to the relevant portions of the publish system and use that user's credentials for the transport.
+
   You can start from the bundled replication-receiver user and configure this user's access rights to match your situation
 
 * The **replication user** or **Agent User Id** should also not be the admin user, but a user who can only see content that is supposed to be replicated. The replication user is used to collect the content to be replicated on the author system before it is sent to the publisher.
@@ -146,7 +146,7 @@ These development OSGi bundles should be uninstalled on both author and publish 
 
 ### Check if the Sling development bundle is present {#check-if-the-sling-development-bundle-is-present}
 
-The [AEM Developer Tools for Eclipse](/sites/developing/using/aem-eclipse.md) deployes the Apache Sling Tooling Support Install (org.apache.sling.tooling.support.install).
+The [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) deployes the Apache Sling Tooling Support Install (org.apache.sling.tooling.support.install).
 
 This OSGi bundle should be uninstalled on both author and publish productive systems before making them accessible.
 
@@ -154,7 +154,7 @@ This OSGi bundle should be uninstalled on both author and publish productive sys
 
 #### The CSRF Protection Framework {#the-csrf-protection-framework}
 
-AEM 6.1 ships with a mechanism that helps protect agains Cross-Site Request Forgery attacks, called the **CSRF Protection Framework**. For more information on how to use it, consult the [documentation](/sites/developing/using/csrf-protection.md).
+AEM 6.1 ships with a mechanism that helps protect agains Cross-Site Request Forgery attacks, called the **CSRF Protection Framework**. For more information on how to use it, consult the [documentation](/help/sites-developing/csrf-protection.md).
 
 #### The Sling Referrer Filter {#the-sling-referrer-filter}
 
@@ -163,23 +163,23 @@ To address known security issues with Cross-Site Request Forgery (CSRF) in CRX W
 The referrer filter service is an OSGi service that allows you to configure:
 
 * which http methods should be filtered
-* whether an empty referrer header is allowed  
+* whether an empty referrer header is allowed
 * and a white list of servers to be allowed in addition to the server host.
 
 By default, all variations of localhost and the current host names the server is bound to are in the white list.
 
 To configure the referrer filter service:
 
-1. Open the Apache Felix console (**Configurations**) at:  
-   `https://<*server*>:<*port_number*>/system/console/configMgr`  
+1. Open the Apache Felix console (**Configurations**) at:
+   `https://<*server*>:<*port_number*>/system/console/configMgr`
 
 1. Login as `admin`.
 1. In the **Configurations** menu, select:
 
    `Apache Sling Referrer Filter`
 
-1. In the `Allow Hosts` field, enter all hosts that are allowed as a referrer. Each entry needs to be of the form  
-   &lt;protocol&gt;://&lt;server&gt;:&lt;port&gt;   
+1. In the `Allow Hosts` field, enter all hosts that are allowed as a referrer. Each entry needs to be of the form
+   &lt;protocol&gt;://&lt;server&gt;:&lt;port&gt;
    For example:
 
     * `https://allowed.server:80` allows all requests from this server with the given port.
@@ -206,33 +206,33 @@ Some OSGI settings are set by default to allow easier debugging of the applicati
 
 For each of the following services the specified settings need to be changed:
 
-* [Adobe Granite HTML Library Manager](../../../sites/deploying/using/osgi-configuration-settings.md#daycqhtmllibrarymanager):
+* [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager):
 
     * enable **Minify** (to remove CRLF and whitespace characters).
     * enable **Gzip** (to allow files to be gzipped and accessed with one request).
     * disable **Debug**
     * disable **Timing**
 
-* [Day CQ WCM Debug Filter](../../../sites/deploying/using/osgi-configuration-settings.md#daycqwcmdebugfilter):
+* [Day CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter):
 
     * uncheck **Enable**
 
-* [Day CQ WCM Filter](../../../sites/deploying/using/osgi-configuration-settings.md#daycqwcmfilter):
+* [Day CQ WCM Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmfilter):
 
     * on publish only, set **WCM Mode** to "disabled"
 
-* [Apache Sling Java Script Handler](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslingjavascripthandler):
+* [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler):
 
     * disable **Generate Debug Info**
 
-* [Apache Sling JSP Script Handler](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslingjspscripthandler):
+* [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler):
 
     * disable **Generate Debug Info**
     * disable **Mapped Content**
 
-For further details see [OSGi Configuration Settings](../../../sites/deploying/using/osgi-configuration-settings.md).
+For further details see [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md).
 
-When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/sites/deploying/using/configuring-osgi.md) for more details and the recommended practices.
+When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 ## Further Readings {#further-readings}
 
@@ -241,10 +241,10 @@ When working with AEM there are several methods of managing the configuration se
 A denial of service (DoS) attack is an attempt to make a computer resource unavailable to its intended users. This is often done by overloading the resource; for example:
 
 * With a flood of requests from an external source.
-* With a request for more information than the system can successfully deliver.  
-  For example, a JSON representation of the entire repository.  
+* With a request for more information than the system can successfully deliver.
+  For example, a JSON representation of the entire repository.
 
-* By requesting a content page with an unlimited number of URLs, The URL can include a handle, some selectors, an extension, and a suffix - any of which can be modified.  
+* By requesting a content page with an unlimited number of URLs, The URL can include a handle, some selectors, an extension, and a suffix - any of which can be modified.
   For example, `.../en.html` can also be requested as: ``
 
     * `.../en.ExtensionDosAttack`
@@ -264,7 +264,7 @@ Sling is *content-centric*. This means that processing is focused on the content
 
 >[!NOTE]
 >
->This is covered in more detail under [Sling Request Processing](/sites/developing/using/the-basics.md#sling-request-processing).
+>This is covered in more detail under [Sling Request Processing](/help/sites-developing/the-basics.md#sling-request-processing).
 
 This approach makes Sling very powerful and very flexible, but as always it is the flexibility that needs to be carefully managed.
 
@@ -275,19 +275,19 @@ To help prevent DoS misuse you can:
    In your application you should:
 
     * Control the selectors in your application, so that you *only* serve the explicit selectors needed and return `404` for all others.
-    
+
     * Prevent the output of an unlimited number of content nodes.
 
 1. Check the configuration of the default renderers, which can be a problem area.
 
-    * In particular the JSON renderer which can transverse the tree structure over multiple levels.  
-      For example, the request:  
-      `https://localhost:4502/.json`  
-      could dump the whole repository in a JSON representation. This would cause significant server problems. For this reason Sling sets a limit on the number of maximum results. To limit the depth of the JSON rendering you can set the value for:  
-      **JSON Max results** ( `json.maximumresults`)  
-      in the configuration for the [Apache Sling GET Servlet](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslinggetservlet). When this limit is exceeded the rendering will be collapsed. The default value for Sling within AEM is `200`.  
-    
-    * As a preventive measure disable the other default renderers (HTML, plain text, XML). Again by configuring the [Apache Sling GET Servlet](../../../sites/deploying/using/osgi-configuration-settings.md#apacheslinggetservlet).
+    * In particular the JSON renderer which can transverse the tree structure over multiple levels.
+      For example, the request:
+      `https://localhost:4502/.json`
+      could dump the whole repository in a JSON representation. This would cause significant server problems. For this reason Sling sets a limit on the number of maximum results. To limit the depth of the JSON rendering you can set the value for:
+      **JSON Max results** ( `json.maximumresults`)
+      in the configuration for the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apacheslinggetservlet). When this limit is exceeded the rendering will be collapsed. The default value for Sling within AEM is `200`.
+
+    * As a preventive measure disable the other default renderers (HTML, plain text, XML). Again by configuring the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apacheslinggetservlet).
 
    >[!CAUTION]
    >
@@ -307,10 +307,10 @@ Since AEM does not provide out of the box indexes for the `FormChooserServlet`, 
 
 In order to mitigate this, please follow the below steps:
 
-1. Go to the Web Console by pointing your browser to *https://serveraddress:serverport/system/console/configMgr* 
+1. Go to the Web Console by pointing your browser to *https://serveraddress:serverport/system/console/configMgr*
 
 1. Search for **Day CQ WCM Form Chooser Servlet**
-1. After you click on the entry, disable the **Advanced Search Require** in the following window.  
+1. After you click on the entry, disable the **Advanced Search Require** in the following window.
 
 1. Click **Save**.
 
@@ -336,7 +336,7 @@ WebDAV should be disabled on both the author and publish environments. This can 
 
    `Apache Sling Simple WebDAV Access to repositories (org.apache.sling.jcr.webdav)`
 
-1. Click the stop button (in the Actions column) to stop this bundle.  
+1. Click the stop button (in the Actions column) to stop this bundle.
 
 1. Again in the list of bundles, find the bundle named:
 
@@ -372,8 +372,8 @@ Although not recommended, you can disable it in case you need the old implementa
 
 ### Prevent Clickjacking {#prevent-clickjacking}
 
-To prevent clickjacking we recommend that you configure your webserver to provide the `X-FRAME-OPTIONS` HTTP header set to `SAMEORIGIN`.  
-  
+To prevent clickjacking we recommend that you configure your webserver to provide the `X-FRAME-OPTIONS` HTTP header set to `SAMEORIGIN`.
+
 For more [information on clickjacking please see the OWASP site](https://www.owasp.org/index.php/Clickjacking).
 
 ### Make Sure You Properly Replicate Encryption Keys When Needed {#make-sure-you-properly-replicate-encryption-keys-when-needed}
@@ -435,4 +435,4 @@ Adobe strongly recommends to perform a penetration test of your AEM infrastructu
 
 ### Development Best Practices {#development-best-practices}
 
-It is critical that new development are following the [Security Best Practices](/sites/developing/using/security.md) to ensure your AEM environement stays safe.
+It is critical that new development are following the [Security Best Practices](/help/sites-developing/security.md) to ensure your AEM environement stays safe.

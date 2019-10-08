@@ -28,13 +28,13 @@ For a simple demonstration, a visual feature, the avatar shown of the signed-in 
 
 ## Modify the HBS Scripts {#modify-the-hbs-scripts}
 
-Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md):
+Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * open [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
     * comment out the tag which includes the avatar for a comment post (~ line 21):
 
-      ```    
+      ```
       <!--
        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
        -->
@@ -44,7 +44,7 @@ Using [CRXDE Lite](../../sites/developing/using/developing-with-crxde-lite.md):
 
     * comment out the tag which includes the avatar for the next comment entry (~ line 44):
 
-      ```    
+      ```
       <!--
        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
        -->
@@ -70,7 +70,7 @@ One way to do so is
 
 [Continuing the experience](../../communities/using/extend-sample-page.md#publish-sample-page) on the publish instance, still signed in as the same user, it is now possible to refresh the page in the publish environment to view the modification to remove the avatar:
 
-![](assets/chlimage_1-136.png) 
+![](assets/chlimage_1-136.png)
 
 ### Sample Comment Extension Package {#sample-comment-extension-package}
 

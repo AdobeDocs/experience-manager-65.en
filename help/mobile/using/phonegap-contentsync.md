@@ -17,7 +17,7 @@ docset: aem65
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](../../sites/developing/using/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ The Content Sync framework creates an archive file that contains the web content
 The following sequence of steps illustrates a typical use case for Content Sync:
 
 1. The AEM developer creates a Content Sync configuration that specifies the content to include.
-1. The Content Sync framework collects and caches the content. 
+1. The Content Sync framework collects and caches the content.
 1. On a mobile device, the mobile application is started and requests content from the server, which is delivered in a ZIP file.
 1. The client unpacks the ZIP content to the local file system. The folder structure in the ZIP file simulates the paths that a client (e.g. a browser) would normally request from the server.
 1. The client opens the content in an embedded browser or uses it in some other way.
@@ -55,9 +55,9 @@ To specify the content of the Content Sync ZIP file, add child nodes to the cq:C
 * `path`: The location of the content.
 * `type`: The name of the configuration type to use for processing the content. Several types are available and are described in Configuration Types.
 
-See Example Content Sync Configuration.  
+See Example Content Sync Configuration.
 
-After you create the Content Sync configuration, it appears in the Content Sync console.  
+After you create the Content Sync configuration, it appears in the Content Sync console.
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ When AEM is installed, members of the administrators group can download from Con
 
 The Day CQ Content Sync Manager service controls access to Content Sync. Configure this service to specify the user or group that can download from Content Sync by default.
 
-If you are [configuring the service using the Web Console](/sites/deploying/using/configuring-osgi.md#osgi-configuration-with-the-web-console), type the name of the user or group as the value of the Fallback Cache Authorizable property.
+If you are [configuring the service using the Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), type the name of the user or group as the value of the Fallback Cache Authorizable property.
 
-If you are [configuring in the repository](/sites/deploying/using/configuring-osgi.md#osgi-configuration-in-the-repository), use the following information about the service:
+If you are [configuring in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), use the following information about the service:
 
 * PID: com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * Property name: contentsync.fallback.authorizable
@@ -85,7 +85,7 @@ If you are [configuring in the repository](/sites/deploying/using/configuring-os
 To configure download access for a specific Content Sync configuration, add the following property to the `cq:ContentSyncConfig` node:
 
 * Name: authorizable
-* Type: String 
+* Type: String
 * Value: The name of the user or group that can download.
 
 For example, your app enables users to install updates directly from Content Sync. To enable all users to download the update, you set the value of the authorizable property to `everyone`.
@@ -101,7 +101,7 @@ You can override the default user and specify a user or group that upates a spec
 To override the default user, specify a user or group that performs updates for a specific Content Sync configuration by adding the following property to the cq:ContentSyncConfig node:
 
 * Name: updateuser
-* Type: String 
+* Type: String
 * Value: The name of the user or group that can performs the updates.
 
 If the cq:ContentSyncConfig node has no updateuser property, the default anonymous user updates the cache.
@@ -156,7 +156,7 @@ The image type is used to include the We.Retail logo in the zip file.
 
 * **deep** - Optional boolean property determining if child pages should be included, as well. The default value is *true.*
 
-* **includeImages** - Optional boolean property determining if images should be included. The default value is *true*.  
+* **includeImages** - Optional boolean property determining if images should be included. The default value is *true*.
   By default, only image components with a resource type of foundation/components/image are considered for inclusion. You can add more resource types by configuring the **Day CQ WCM Pages Update Handler** in the Web console.
 
 **rewrite** The rewrite node defines how the links are rewritten in the exported page. The rewritten links can either point to the files included in the zip file or to the resources on the server.
@@ -165,16 +165,16 @@ The `rewrite` node needs to be located below the `page` node.
 
 The `rewrite` node can have one or more of the following properties:
 
-* `clientlibs`: rewrites clientlibs paths.  
+* `clientlibs`: rewrites clientlibs paths.
 
 * `images`: rewrites images paths.
 * `links`: rewrites links paths.
 
 Each property can have one of the following values:
 
-* `REWRITE_RELATIVE`: rewrites the path with a relative position to the page .html file on the file system.  
+* `REWRITE_RELATIVE`: rewrites the path with a relative position to the page .html file on the file system.
 
-* `REWRITE_EXTERNAL`: rewrites the path by pointing to the resource on the server, using the AEM [Externalizer service](../../sites/developing/using/externalizer.md).
+* `REWRITE_EXTERNAL`: rewrites the path by pointing to the resource on the server, using the AEM [Externalizer service](/help/sites-developing/externalizer.md).
 
 The AEM service called **PathRewriterTransformerFactory** allows you to configure the specific html attributes that will be rewritten. The service can be configured in the Web console and has a configuration for each property of the `rewrite` node: `clientlibs`, `images` and `links`.
 
@@ -247,9 +247,9 @@ The console can be accessed at:
 
 `https://localhost:4502/libs/cq/contentsync/content/console.html`
 
-It looks as follows: 
+It looks as follows:
 
-![](assets/chlimage_1.png) 
+![](assets/chlimage_1.png)
 
 ### Extending the Content Sync framework {#extending-the-content-sync-framework}
 
@@ -333,14 +333,14 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
         img.setSelector("img");
 
         try {
-            if(img.getLastModified() == null || lastUpdated < img.getLastModified().getTime().getTime()) { 
+            if(img.getLastModified() == null || lastUpdated < img.getLastModified().getTime().getTime()) {
                 String src = img.getSrc();
                 String parentPath = configCacheRoot + Text.getRelativeParent(src, 1);
- 
+
                 Node parent = JcrUtil.createPath(parentPath, "sling:Folder", admin);
                 Node image = resolver.getResource(resource.getPath() + "/image").adaptTo(Node.class);
                 JcrUtil.copy(image, parent, Text.getName(src));
-    
+
                 admin.save();
 
                 return true;
@@ -348,7 +348,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
         } catch (RepositoryException e) {
             log.error("Unexpected error while updating logo: ", e);
         }
-  
+
         return false;
     }
 }

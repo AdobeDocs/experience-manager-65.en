@@ -17,7 +17,7 @@ docset: aem65
 
 Depending on each site's topology and features, the following actions may be necessary when upgrading to AEM Communities 6.5 or installing the latest feature pack.
 
-This section is specific to Communities and supplements the information provided in [Upgrading to AEM 6.5](../../sites/deploying/using/upgrade.md) (platform).
+This section is specific to Communities and supplements the information provided in [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md) (platform).
 
 ## Upgrading from AEM 6.1 or Later {#upgrading-from-aem-or-later}
 
@@ -27,7 +27,7 @@ When installing a new Communities feature pack on a deployment configured with M
 
 1. install the [latest feature pack](../../communities/using/deploy-communities.md#latestfeaturepack)
 1. install the [latest Solr config files](/communities/using/msrp.md#upgrading)
-1. reindex MSRP  
+1. reindex MSRP
    see section [MSRP Reindex Tool](/communities/using/msrp.md#msrp-reindex-tool)
 
 ### Enablement 2.0 {#enablement}
@@ -60,16 +60,16 @@ For all AEM 6.3 author and publish instances
     * select to expand config panel
 
         * *uncheck ***`Cloud Storage`**
-        
+
         * select **Save**
 
-![](assets/chlimage_1-176.png) 
+![](assets/chlimage_1-176.png)
 
 ### On-premise Storage {#on-premise-storage}
 
 If the upgraded site did not use cloud storage, any pre-existing UGC must be converted to conform to the new structure introduced in AEM 6.1 Communities in support of the common store.
 
-For this purpose, an open source migration tool is available on GitHub :  
+For this purpose, an open source migration tool is available on GitHub :
 [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
 ### Java APIs {#java-apis}

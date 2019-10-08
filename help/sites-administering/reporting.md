@@ -32,7 +32,7 @@ New instances of a report can also be created from the **Tools** console. Select
 
 >[!NOTE]
 >
->In addition to the standard AEM reports that are available out of the box, you can [develop your own (completely new) reports](/sites/developing/using/dev-reports.md).
+>In addition to the standard AEM reports that are available out of the box, you can [develop your own (completely new) reports](/help/sites-developing/dev-reports.md).
 
 ## The Basics of Report Customization {#the-basics-of-report-customization}
 
@@ -46,10 +46,10 @@ There are various formats of reports available. The following reports all use co
 
 >[!NOTE]
 >
->The following reports each have their own format and customization:  
+>The following reports each have their own format and customization:
 
 >
->* [Health Check](#health-check) uses selection fields to specify the data you want to report on.  
+>* [Health Check](#health-check) uses selection fields to specify the data you want to report on.
 >
 >* [Disk Usage](#disk-usage) uses links to drill down through the repository structure.
 >* [Workflow report](..//help/sites-administering/reporting.md#workflow-report) gives an overview of the workflows running on your instance.
@@ -86,7 +86,7 @@ The options available on the menu will depend on the configuration of the column
 
 The data can be sorted according to a specific column by either:
 
-* clicking on the appropriate column header; the sort will toggle between ascending and descending, indicated by an arrow head immediately next to the title text  
+* clicking on the appropriate column header; the sort will toggle between ascending and descending, indicated by an arrow head immediately next to the title text
 * use the [column's drop-down menu](#column-drop-down-menu) to specifically select either **Sort Ascending** or **Sort Descending**; again this will be indicated by an arrow head immediately next to the title text
 
 ### Groups and the Current data Chart {#groups-and-the-current-data-chart}
@@ -107,7 +107,7 @@ On appropriate columns you can also configure **Filter Settings** and/or **Aggre
 
 Filter Settings allow you to specify the criteria for entries to be displayed. The operators available are:
 
-* `contains`  
+* `contains`
 
 * `equals`
 
@@ -115,7 +115,7 @@ Filter Settings allow you to specify the criteria for entries to be displayed. T
 
 To set a filter:
 
-1. Select the operator that you want from the drop-down list.  
+1. Select the operator that you want from the drop-down list.
 1. Enter the text to be filtered on.
 1. Click **Apply**.
 
@@ -128,7 +128,7 @@ To deactivate the filter:
 
 You can also select an aggregation method (these may vary depending on the column selected):
 
-![](assets/reportaggregate.png) 
+![](assets/reportaggregate.png)
 
 ### Column Properties {#column-properties}
 
@@ -147,7 +147,7 @@ The report can be generated:
 
 1. Set **Grouping** on the required column.
 1. **Edit** the configuration to define how often the snapshots should be made; hourly or daily.
-1. **Finish...** the definition to start the collection of snapshots.  
+1. **Finish...** the definition to start the collection of snapshots.
    The red/green slider button at top left indicates when snapshots are being collected.
 
 The resulting chart is shown at the bottom right:
@@ -156,11 +156,11 @@ The resulting chart is shown at the bottom right:
 
 Once data collection has started you can select:
 
-* **Period** 
+* **Period**
   You can select from and to dates for the report data to be shown.
 
-* **Interval** 
-  Month, Week, Day, Hour can be selected for the scale and aggregation of the report.  
+* **Interval**
+  Month, Week, Day, Hour can be selected for the scale and aggregation of the report.
   For example, if daily snapshots are available for February 2011:
 
     * If the interval is set to `Day`, each snapshot is shown as a single value in the chart.
@@ -172,22 +172,22 @@ Select your requirements, then click **Go** to apply them to the report. To upda
 
 When snapshots are being collected you can:
 
-* Use **Finish...** again to reinitialize the collection.  
-  **Finish** "freezes" the report's structure (i.e. the columns assigned to the report and which are grouped, sorted, filtered, etc.) and starts taking snapshots. 
+* Use **Finish...** again to reinitialize the collection.
+  **Finish** "freezes" the report's structure (i.e. the columns assigned to the report and which are grouped, sorted, filtered, etc.) and starts taking snapshots.
 
-* Open the **Edit** dialog to select **No data snapshots** to terminate collection until required.  
+* Open the **Edit** dialog to select **No data snapshots** to terminate collection until required.
   **Edit** only switches the taking of snapshots on or off. If taking snapshots is switched on again, it uses the state of the report when it was last finished for taking further snapshots.
 
 >[!NOTE]
 >
->Snapshots are stored under `/var/reports/...` where the remainder of the path mirrors the path of the respective report and ID created when the report was finished.  
+>Snapshots are stored under `/var/reports/...` where the remainder of the path mirrors the path of the respective report and ID created when the report was finished.
 
 >
 >Old snapshots can be manually purged, if you are completely sure that you no longer require those instances.
 
 >[!NOTE]
 >
->The preconfigured reports are not perfomance intensive, but it is still recommended to use daily snapshots on a production environment. If possible run these daily snapshots at a time of day when there is not much activity on your website; this can be defined with the `Daily snapshots (repconf.hourofday)` parameter for **Day CQ Reporting Configuration**; see [OSGI Configuration](/sites/deploying/using/configuring-osgi.md) for more details on how to configure this.
+>The preconfigured reports are not perfomance intensive, but it is still recommended to use daily snapshots on a production environment. If possible run these daily snapshots at a time of day when there is not much activity on your website; this can be defined with the `Daily snapshots (repconf.hourofday)` parameter for **Day CQ Reporting Configuration**; see [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) for more details on how to configure this.
 
 #### Display Limits {#display-limits}
 
@@ -199,7 +199,7 @@ Each horizontal line is known as a series (and corresponds to an entry in the ch
 
 To keep the chart clean over longer periods of time there are limits which can be set. For the standard reports these are:
 
-* horizontal series - both default and system maximum is `9`  
+* horizontal series - both default and system maximum is `9`
 
 * vertical aggregated snapshots - default is `35` (per horizontal series)
 
@@ -224,26 +224,26 @@ This is one location where the period for collecting snapshots for [Historic dat
 
 ![](assets/reportedit.png)
 
-* **Title** 
+* **Title**
   You can define your own title.
 
-* **Description** 
+* **Description**
   You can define your own description.
 
-* **Root path** (*only active for certain reports*)  
-  Use this to limit the report to a (sub-) section of the repository. 
+* **Root path** (*only active for certain reports*)
+  Use this to limit the report to a (sub-) section of the repository.
 
 * **Report Processing**
 
-    * **automatically refresh data** 
+    * **automatically refresh data**
       The report data will be refreshed every time you update the report definition.
-    
-    * **manually refresh data** 
-      This option can be used to prevent delays caused by automatic refresh operations when there is a large volume of data.  
-      Selecting this indicates that the report data must be manually refreshed when any aspect of the report configuration has changed. It also means that as soon as you change any aspect of the configuration the report table will be blanked out.  
+
+    * **manually refresh data**
+      This option can be used to prevent delays caused by automatic refresh operations when there is a large volume of data.
+      Selecting this indicates that the report data must be manually refreshed when any aspect of the report configuration has changed. It also means that as soon as you change any aspect of the configuration the report table will be blanked out.
       When this is selected the ** [Load data](#load-data)** button will be displayed (next to **Edit** on the report). **Load data** will load the data and refresh the report data shown.
 
-* **Snapshots** 
+* **Snapshots**
   You can define how often snapshots are to be made; daily, hourly or not at all.
 
 ### Load data {#load-data}
@@ -256,7 +256,7 @@ Clicking on **Load data** will reload the data and update the report being shown
 
 Selecting to manually refresh data means that:
 
-1. As soon as you change the the report configuration, the table of report data will be blanked out.  
+1. As soon as you change the the report configuration, the table of report data will be blanked out.
    For example, if you change the sort mechanism for a column, the data will not be shown.
 1. If you want the report data to be shown again you will need to click on **Load data** to reload the data.
 
@@ -264,14 +264,14 @@ Selecting to manually refresh data means that:
 
 When you **Finish** the report:
 
-* The report definition *as of that point in time* will be used for taking the snapshots (afterwards you can continue working on a report definition as it is then separate from the snaphots).  
+* The report definition *as of that point in time* will be used for taking the snapshots (afterwards you can continue working on a report definition as it is then separate from the snaphots).
 
 * Any existing snapshots will be removed.
 * New snapshots are collected for the [Historic data](#historic-data).
 
 With this dialog you can define, or update, your own title and description for the resulting report.
 
-![](assets/reportfinish.png) 
+![](assets/reportfinish.png)
 
 ## Report Types {#report-types}
 
@@ -289,16 +289,16 @@ The component report delivers information about how your website uses the compon
 
 Mean that you can see, for example:
 
-* Which components are used where.  
+* Which components are used where.
   Useful, for example, when testing.
-* How instances of a specific component are distributed.  
+* How instances of a specific component are distributed.
   This can be interesting if specific pages (i.e. "heavy pages") are experiencing performance issues.
 * Identify parts of the site with frequent/less frequent changes.
 * See how page content develops over time.
 
 All components are included, product-standard and project-specific. Using the **Edit** dialog the user can also set a **Root path** that defines the startpoint of the report - all components under that root are considered for the report.
 
-![](assets/reportcomponent.png) ![](assets/reportcompentall.png) 
+![](assets/reportcomponent.png) ![](assets/reportcompentall.png)
 
 ### Disk Usage {#disk-usage}
 
@@ -306,37 +306,37 @@ The disk usage report shows information about the data stored within your reposi
 
 The report starts in the root ( / ) of the repository; by clicking on a particular branch you can drill down inside the repository (the current path will be reflected in the report title).
 
-![](assets/reportdiskusage.png) 
+![](assets/reportdiskusage.png)
 
 ### Health Check {#health-check}
 
-This report analyzes the current request log:  
-`<*cq-installation-dir*>/crx-quickstart/logs/request.log`  
+This report analyzes the current request log:
+`<*cq-installation-dir*>/crx-quickstart/logs/request.log`
 to help you identify the most expensive request(s) within a given period.
 
 To generate the report you can specify:
 
-* **Period (hours)** 
-  The number of hours (past) to be analysed.  
-  Default: `24`  
+* **Period (hours)**
+  The number of hours (past) to be analysed.
+  Default: `24`
 
-* **max. Results** 
-  Maximum number of output lines.  
-  Default: `50`  
+* **max. Results**
+  Maximum number of output lines.
+  Default: `50`
 
-* **max. Requests** 
-  Maximum number of requests to be analysed.  
-  Default: `-1` (all)  
+* **max. Requests**
+  Maximum number of requests to be analysed.
+  Default: `-1` (all)
 
-* **Email address** 
-  Send results to an email address.  
-  Optional; Default: blank  
-
-* **Run daily at (hh:mm)** 
-  Specify a time for the report to be automatically run on a daily basis.  
+* **Email address**
+  Send results to an email address.
   Optional; Default: blank
 
-![](assets/reporthealth.png) 
+* **Run daily at (hh:mm)**
+  Specify a time for the report to be automatically run on a daily basis.
+  Optional; Default: blank
+
+![](assets/reporthealth.png)
 
 ### Page Activity Report {#page-activity-report}
 
@@ -359,7 +359,7 @@ Mean that you can monitor:
 
 The page activity report takes all its information from the audit log. By default the root path is configured to the audit log at `/var/audit/com.day.cq.wcm.core.page`.
 
-![](assets/reportpageactivity.png) 
+![](assets/reportpageactivity.png)
 
 ### User Generated Content Report {#user-generated-content-report}
 
@@ -377,10 +377,10 @@ This report provides information about user generated content; be that comments,
 Allow you to:
 
 * See which pages are receiving the most comments.
-* Get an overview of all comments that specific site visitors are leaving, maybe the issues are related.  
+* Get an overview of all comments that specific site visitors are leaving, maybe the issues are related.
 * Judge whether new content is provoking comments by monitoring when comments are being made on a page.
 
-![](assets/reportusercontent.png) 
+![](assets/reportusercontent.png)
 
 ### User Report {#user-report}
 
@@ -407,7 +407,7 @@ Allow you to:
 * See the demographic spread of your users.
 * Report on customized fields you have added to the profiles.
 
-![](assets/reportusercanned.png) 
+![](assets/reportusercanned.png)
 
 #### Generic Column {#generic-column}
 
@@ -422,25 +422,25 @@ The Generic column dialog will open when you either:
 
 From the **Definitions** tab you can define:
 
-* **Title** 
+* **Title**
   Your own title for the generic column.
 
-* **Property** 
+* **Property**
   The property name as stored in the repository, usually within the user's profile.
 
-* **Path** 
+* **Path**
   Usually the property is taken from the `profile`.
 
-* **Type** 
+* **Type**
   Select the field type from `String`, `Number`, `Integer`, `Date`.
 
-* **Default Aggregate** 
-  This defines the aggregate used by default if the column is ungrouped in a report with at least one grouped column. Select the required aggregate from `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.   
+* **Default Aggregate**
+  This defines the aggregate used by default if the column is ungrouped in a report with at least one grouped column. Select the required aggregate from `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
   For example, *Count* for a `String` field means that the number of distinct `String` values is displayed for the column in the aggregated state.
 
 In the **Extended** tab you can also define the aggregates and filters available:
 
-![](assets/reportusrgenericcolmextented.png) 
+![](assets/reportusrgenericcolmextented.png)
 
 ### Workflow Instance Report {#workflow-instance-report}
 
@@ -460,13 +460,13 @@ Mean you can:
 
 * Monitor the mean duration of workflows; if this happens regularly it can highlight issues with the workflow.
 
-![](assets/reportworkflowintance.png) 
+![](assets/reportworkflowintance.png)
 
 ### Workflow Report {#workflow-report}
 
 This provides key statistics about the workflows running on your instance.
 
-![](assets/reportworkflow.png) 
+![](assets/reportworkflow.png)
 
 ## Using Reports in a Publish Environment {#using-reports-in-a-publish-environment}
 
@@ -503,19 +503,19 @@ The permissions needed depend on the action:
 
 In a standard AEM installation the following permissions are preset for the reports:
 
-* **User Report** 
-  `user administrators` - read and write  
+* **User Report**
+  `user administrators` - read and write
 
-* **Page Activity Report** 
-  `contributors` - read and write  
+* **Page Activity Report**
+  `contributors` - read and write
 
-* **Component Report** 
-  `contributors` - read and write  
+* **Component Report**
+  `contributors` - read and write
 
-* **User Generated Content Report** 
-  `contributors` - read and write  
+* **User Generated Content Report**
+  `contributors` - read and write
 
-* **Workflow Instance Report** 
+* **Workflow Instance Report**
   `workflow-users` - read and write
 
 All members of the `administrators` group have the necessary rights to create new reports.

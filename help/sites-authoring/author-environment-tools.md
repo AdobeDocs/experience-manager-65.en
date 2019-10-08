@@ -23,7 +23,7 @@ The **Sites** console allows you to navigate and manage your website, using the 
 
 For example, column view:
 
-![](assets/ateat-01.png) 
+![](assets/ateat-01.png)
 
 ## Editing Page Content {#editing-page-content}
 
@@ -91,7 +91,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   From the top toolbar in the **Components** browser you can:
 
-    * Filter components by name.  
+    * Filter components by name.
     * Limit the display to a specific group using the drop down selection.
 
   For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Layout Container**:
@@ -134,7 +134,7 @@ From the top toolbar of the assets browser you can filter the assets by:
 
 * Name
 * Path
-* Asset type such as images, manuscripts, documents, videos, pages, paragraphs, and products  
+* Asset type such as images, manuscripts, documents, videos, pages, paragraphs, and products
 * Asset characteristics such as Orientation (Portrait, Landscape, Square) and Style (Color, Monochrome, Grayscale)
 
     * Available only for certain asset types
@@ -163,7 +163,7 @@ The actual appearance and handling is dependent on the device type you are using
 
 If you need to quickly make a change to an asset, you can start the [asset editor](../../../assets/using/managing-assets-touch-ui.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png) 
+![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Content Tree {#content-tree}
 
@@ -219,8 +219,8 @@ If your page contains Content Fragments then you will also have access to the [b
 * Launches
 * Live copies
 * Language copies
-* Incoming Links  
-* Use of the reference component: borrowed and lent content  
+* Incoming Links
+* Use of the reference component: borrowed and lent content
 * References to Product pages (from the Commerce - Products console)
 
 Open the required console, then navigate to the required resource and open **References** using:
@@ -233,9 +233,9 @@ Open the required console, then navigate to the required resource and open **Ref
 
 Select the appropriate reference type for more information. In certain situations further actions are available when you select a specific reference, including:
 
-* **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link  
+* **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link
 
-* Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page  
+* Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 
 * [References to Product pages](/help/sites-administering//generic.md#showing-product-references) (available from the Commerce-Products console)
 * [Launches](/help/sites-authoring/launches.md), provides access to related launches
@@ -245,7 +245,7 @@ Select the appropriate reference type for more information. In certain situation
 
 For example, you can fix a broken reference within a Reference component:
 
-![](assets/ateat-14.png) 
+![](assets/ateat-14.png)
 
 ## Events - Timeline {#events-timeline}
 
@@ -257,7 +257,7 @@ Open the required console, then navigate to the required resource and open **Tim
 
 [Select your required resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), then either **Show All** or **Activities** to list any recent actions on the selected resources:
 
-![](assets/ateat-16.png) 
+![](assets/ateat-16.png)
 
 ## Page Information {#page-information}
 
@@ -289,19 +289,19 @@ In addition, **Page Information** can provide access to analytics and recommenda
 There are various modes when editing a page allowing for different actions:
 
 * [Edit](/help/sites-authoring/editing-content.md) - the mode to use when editing the page content.
-* [Layout](/help/sites-authoring/responsive-layout.md) - allows you to create and edit your responsive layout dependent on device (if the page is based on a layout container)  
+* [Layout](/help/sites-authoring/responsive-layout.md) - allows you to create and edit your responsive layout dependent on device (if the page is based on a layout container)
 
 * [Scaffolding](/help/sites-authoring/scaffolding.md) - help you to create a large set of pages that share the same structure but have differing content.
-* [Developer](../../../sites/developing/using/developer-mode.md) - allows you to perform various actions (requires privileges). These include inspecting the technical details of a page and its components.  
+* [Developer](/help/sites-developing/developer-mode.md) - allows you to perform various actions (requires privileges). These include inspecting the technical details of a page and its components.
 
 * [Design](/help/sites-authoring/default-components-designmode.md) - allows you to enable/disable components for use on a page and to configure the design of the component (if the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Targeting](/help/sites-authoring/content-targeting-touch.md) - increase content relevance through targeting and measuring across all channels.
-* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - shows Analytics data for the page.  
+* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - shows Analytics data for the page.
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - allows you to view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-authoring/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
-* [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - used to view the page as it will be shown on the publish environment; or to navigate using links in the content.  
+* [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - used to view the page as it will be shown on the publish environment; or to navigate using links in the content.
 
 * [Annotate](/help/sites-authoring/annotations.md) - used to add or view annotations on the page.
 
@@ -333,7 +333,7 @@ Clicking the **Open Selection Dialog** button in the path field opens the [path 
 
 Alternatively you can start typing in the path field and AEM will offer matching paths as you type.
 
-![](assets/ateat-19.png) 
+![](assets/ateat-19.png)
 
 ### Path Browser {#path-browser}
 

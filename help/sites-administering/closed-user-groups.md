@@ -155,7 +155,7 @@ The target of this documentation is the evaluation of the login path as exposed 
 * In case of regular login, tests if a login path can be obtained in the following order:
 
     * from the `LoginPathProvider` as implemented by the new `com.adobe.granite.auth.requirement.impl.RequirementService`,
-    
+
     * from the old, deprecated CUG implementation,
     * from the Login Page Mappings as defined with the `LoginSelectorHandler`,
     * and finally fallback to the Default Login Page as defined with the `LoginSelectorHandler`.
@@ -427,7 +427,7 @@ The following image shows the authentication requirements of an AEM publish inst
 >
 >In this example the optional login path property was not set. Consequently, no second entry has been registered with the authenticator.
 
-![](assets/chlimage_1-24.jpeg) 
+![](assets/chlimage_1-24.jpeg)
 
 #### Retrieve the Effective Login Path {#retrieve-the-effective-login-path}
 
@@ -511,63 +511,63 @@ The following two OSGi components have been introduced to define authentication 
 **org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration**
 
 <table>
- <tbody> 
-  <tr> 
-   <td>Label</td> 
-   <td>Apache Jackrabbit Oak CUG Configuration</td> 
-  </tr> 
-  <tr> 
-   <td>Description</td> 
-   <td>Authorization configuration dedicated to setup and evaluate CUG permissions.</td> 
-  </tr> 
-  <tr> 
-   <td>Confguration Properties</td> 
-   <td> 
-    <ul> 
-     <li><code>cugSupportedPaths</code></li> 
-     <li><code>cugEnabled</code></li> 
-     <li><code>confgurationRanking</code></li> 
-    </ul> <p>Also, see <a href="..//help/sites-administering/closed-user-groups.md#configuration-options" target="_blank">Configuration Options</a> below.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Confguration Policy</td> 
-   <td><code>ConfgurationPolicy.REQUIRE</code></td> 
-  </tr> 
-  <tr> 
-   <td>References</td> 
-   <td><code>CugExclude (ReferenceCardinality.OPTIONAL_UNARY)</code></td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>Label</td>
+   <td>Apache Jackrabbit Oak CUG Configuration</td>
+  </tr>
+  <tr>
+   <td>Description</td>
+   <td>Authorization configuration dedicated to setup and evaluate CUG permissions.</td>
+  </tr>
+  <tr>
+   <td>Confguration Properties</td>
+   <td>
+    <ul>
+     <li><code>cugSupportedPaths</code></li>
+     <li><code>cugEnabled</code></li>
+     <li><code>confgurationRanking</code></li>
+    </ul> <p>Also, see <a href="..//help/sites-administering/closed-user-groups.md#configuration-options" target="_blank">Configuration Options</a> below.</p> </td>
+  </tr>
+  <tr>
+   <td>Confguration Policy</td>
+   <td><code>ConfgurationPolicy.REQUIRE</code></td>
+  </tr>
+  <tr>
+   <td>References</td>
+   <td><code>CugExclude (ReferenceCardinality.OPTIONAL_UNARY)</code></td>
+  </tr>
+ </tbody>
 </table>
 
 **org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl**
 
 <table>
- <tbody> 
-  <tr> 
-   <td>Label</td> 
-   <td>Apache Jackrabbit Oak CUG Exclude List</td> 
-  </tr> 
-  <tr> 
-   <td>Description</td> 
-   <td>Allows to exclude principal(s) with the confgured name(s) from CUG evaluation.</td> 
-  </tr> 
-  <tr> 
-   <td>Confguration Properties</td> 
-   <td> 
-    <ul> 
-     <li><code>principalNames</code></li> 
-    </ul> <p>Also see section Confguration Options below.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Confguration Policy</td> 
-   <td><code>ConfgurationPolicy.REQUIRE</code></td> 
-  </tr> 
-  <tr> 
-   <td>References</td> 
-   <td>NA</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>Label</td>
+   <td>Apache Jackrabbit Oak CUG Exclude List</td>
+  </tr>
+  <tr>
+   <td>Description</td>
+   <td>Allows to exclude principal(s) with the confgured name(s) from CUG evaluation.</td>
+  </tr>
+  <tr>
+   <td>Confguration Properties</td>
+   <td>
+    <ul>
+     <li><code>principalNames</code></li>
+    </ul> <p>Also see section Confguration Options below.</p> </td>
+  </tr>
+  <tr>
+   <td>Confguration Policy</td>
+   <td><code>ConfgurationPolicy.REQUIRE</code></td>
+  </tr>
+  <tr>
+   <td>References</td>
+   <td>NA</td>
+  </tr>
+ </tbody>
 </table>
 
 #### Configuration Options {#configuration-options}
@@ -615,32 +615,32 @@ The following 2 OSGi components have been introduced to defne authentication req
 **com.adobe.granite.auth.requirement.impl.RequirementService**
 
 <table>
- <tbody> 
-  <tr> 
-   <td>Label</td> 
-   <td>-</td> 
-  </tr> 
-  <tr> 
-   <td>Description</td> 
-   <td>Dedicated OSGi service for authentication requirements that registers an observer for content changes afecting auth-requirement (through the <code>granite:AuthenticationRequirement</code> mixin type) and login paths with are exposed to the <code>LoginSelectorHandler</code>. </td> 
-  </tr> 
-  <tr> 
-   <td>Confguration Properties</td> 
-   <td>-</td> 
-  </tr> 
-  <tr> 
-   <td>Confguration Policy</td> 
-   <td><code>ConfgurationPolicy.OPTIONAL</code></td> 
-  </tr> 
-  <tr> 
-   <td>References</td> 
-   <td> 
-    <ul> 
-     <li><code>RequirementHandler (ReferenceCardinality.MANDATORY_UNARY)</code></li> 
-     <li><code>Executor (ReferenceCardinality.MANDATORY_UNARY)</code></li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>Label</td>
+   <td>-</td>
+  </tr>
+  <tr>
+   <td>Description</td>
+   <td>Dedicated OSGi service for authentication requirements that registers an observer for content changes afecting auth-requirement (through the <code>granite:AuthenticationRequirement</code> mixin type) and login paths with are exposed to the <code>LoginSelectorHandler</code>. </td>
+  </tr>
+  <tr>
+   <td>Confguration Properties</td>
+   <td>-</td>
+  </tr>
+  <tr>
+   <td>Confguration Policy</td>
+   <td><code>ConfgurationPolicy.OPTIONAL</code></td>
+  </tr>
+  <tr>
+   <td>References</td>
+   <td>
+    <ul>
+     <li><code>RequirementHandler (ReferenceCardinality.MANDATORY_UNARY)</code></li>
+     <li><code>Executor (ReferenceCardinality.MANDATORY_UNARY)</code></li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 **com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler**
@@ -659,20 +659,20 @@ The authentication related parts of the CUG rewrite only come with a single conf
 **“Authentication Requirement and Login Path Handler”**
 
 <table>
- <tbody> 
-  <tr> 
-   <td>Property</td> 
-   <td>Type</td> 
-   <td>Default Value</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td><p>Label = Supported Paths</p> <p>Name = 'supportedPaths'</p> </td> 
-   <td>Set&lt;String&gt;</td> 
-   <td>-</td> 
-   <td>Paths under which authentication requirements will be respected by this handler. Leave this confguration unset if you want to add the <code>granite:AuthenticationRequirement</code> mixin type to nodes without having them enforced (for example, on author instances). If missing, the feature is disabled. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>Property</td>
+   <td>Type</td>
+   <td>Default Value</td>
+   <td>Description</td>
+  </tr>
+  <tr>
+   <td><p>Label = Supported Paths</p> <p>Name = 'supportedPaths'</p> </td>
+   <td>Set&lt;String&gt;</td>
+   <td>-</td>
+   <td>Paths under which authentication requirements will be respected by this handler. Leave this confguration unset if you want to add the <code>granite:AuthenticationRequirement</code> mixin type to nodes without having them enforced (for example, on author instances). If missing, the feature is disabled. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Default Configuration since AEM 6.3 {#default-configuration-since-aem}
@@ -877,5 +877,5 @@ Adobe provides a tool for migrating to the new CUG implementation. In order to u
 
 >[!NOTE]
 >
->If you run into issues, it is possible to set up a specific logger at **DEBUG** level on `com.day.cq.auth.impl.cug` to get the output of the migration tool. See [Logging](/sites/deploying/using/configure-logging.md) for more information on how to do this.
+>If you run into issues, it is possible to set up a specific logger at **DEBUG** level on `com.day.cq.auth.impl.cug` to get the output of the migration tool. See [Logging](/help/sites-deploying/configure-logging.md) for more information on how to do this.
 

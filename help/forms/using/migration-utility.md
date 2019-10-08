@@ -17,7 +17,7 @@ docset: aem65
 
 # Migrate AEM Forms assets and documents{#migrate-aem-forms-assets-and-documents}
 
-The Migration utility converts the [Adaptive Forms assets](../../forms/using/introduction-forms-authoring.md), [cloud configrurations](/sites/developing/using/extending-cloud-config.md), and [Correspondence Management assets](/forms/using/cm-overview.md) from the format used in the earlier versions to the format used in AEM 6.5 Forms. When you run migration utility, the following are migrated:
+The Migration utility converts the [Adaptive Forms assets](../../forms/using/introduction-forms-authoring.md), [cloud configrurations](/help/sites-developing/extending-cloud-config.md), and [Correspondence Management assets](/forms/using/cm-overview.md) from the format used in the earlier versions to the format used in AEM 6.5 Forms. When you run migration utility, the following are migrated:
 
 * Custom components for adaptive forms
 * Adaptive forms and correspondence management Templates
@@ -44,23 +44,23 @@ If it is an out of place (fresh) installation, before you can use the assets and
 
 Then you need to import your asset package (zip or cmp) on the new setup and then update the assets and documents by [running the Migration utility](#runningmigrationutility). Adobe recommends creating new assets on the new setup only after running the migration utility.
 
-Due to [backward compatibility-related](../../sites/deploying/using/backward-compatibility.md) changes, locations of a few folders in crx-repository are changed. Manually export and import dependencies (custom libraries and assets) from previous setup to fresh environment.
+Due to [backward compatibility-related](/help/sites-deploying/backward-compatibility.md) changes, locations of a few folders in crx-repository are changed. Manually export and import dependencies (custom libraries and assets) from previous setup to fresh environment.
 
 ## Read before you proceed with the migration {##prerequisites}
 
 For Correspondence Management assets:
 
-* For the assets that are imported from the previous platform, a property gets added: **fd:version=1.0**. 
-* Since AEM 6.1 Forms, comments are not available out of the box. The comments that were added previously are available in the assets but are not visible on the interface automatically. You need to customize the extendedProperties property in the AEM Forms user interface to make the comments visible. 
-* In some of the previous versions such as LiveCycle ES4, text was edited using Flex RichTextEditor, but since AEM 6.1 Forms, HTML editor is used. Due to this rendering and appearance of the fonts, font sizes, and font margins may be different from the previous versions in the Author user interface. However, the letters look the same when rendered. 
+* For the assets that are imported from the previous platform, a property gets added: **fd:version=1.0**.
+* Since AEM 6.1 Forms, comments are not available out of the box. The comments that were added previously are available in the assets but are not visible on the interface automatically. You need to customize the extendedProperties property in the AEM Forms user interface to make the comments visible.
+* In some of the previous versions such as LiveCycle ES4, text was edited using Flex RichTextEditor, but since AEM 6.1 Forms, HTML editor is used. Due to this rendering and appearance of the fonts, font sizes, and font margins may be different from the previous versions in the Author user interface. However, the letters look the same when rendered.
 * Lists in text modules are improved and now render differently. There may be visual differences. We recommend that you render and see the letters where you are using lists in text modules.
-* Since image content modules are converted to DAM assets and layouts and fragments are added to forms during migration, the Updated By property for these modules changes to admin. 
-* The version history of the assets is not migrated and is not available after migration. The subsequent version history post migration is maintained. 
-* The Ready to Publish state is deprecated since AEM 6.1 Forms, so all the assets in the Ready to Publish state is changed to Modified state.  
-* Since the user interface is updated in AEM Forms 6.3, the steps to perform the customizations are also different. You need to redo the customization if you are migrating from a version prior to 6.3. 
+* Since image content modules are converted to DAM assets and layouts and fragments are added to forms during migration, the Updated By property for these modules changes to admin.
+* The version history of the assets is not migrated and is not available after migration. The subsequent version history post migration is maintained.
+* The Ready to Publish state is deprecated since AEM 6.1 Forms, so all the assets in the Ready to Publish state is changed to Modified state.
+* Since the user interface is updated in AEM Forms 6.3, the steps to perform the customizations are also different. You need to redo the customization if you are migrating from a version prior to 6.3.
 * Layout Fragments move from /content/apps/cm/layouts/fragmentlayouts/1001 to /content/apps/cm/modules/fragmentlayouts. Data Dictionary reference in assets displays path of the Data Dictionary instead of its name.
 * Any tab spaces being used for alignment in text modules need to be readjusted. For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
-* Asset composer configurations changes to Correspondence Management configurations.   
+* Asset composer configurations changes to Correspondence Management configurations.
 * Assets are moved under folders with names such as Existing Text and Existing List.
 
 ## Using the Migration utility {#using-the-migration-utility}
@@ -75,7 +75,7 @@ When you run the Migration Utility for the first time, a log is created with the
 >
 >Before running the migration utility, ensure that you have taken a backup of your crx repository.
 
-1. In a browser session, log in to AEM author instance as an Admin.  
+1. In a browser session, log in to AEM author instance as an Admin.
 
 1. Open the following URL in the browser:
 
@@ -84,7 +84,7 @@ When you run the Migration Utility for the first time, a log is created with the
    The browser displays four options:
 
     * AEM Forms Assets Migration
-    * Adaptive Forms Custom Components Migration  
+    * Adaptive Forms Custom Components Migration
     * Adaptive Forms Templates Migration
     * AEM Forms Cloud Configurations Migration
 
@@ -103,27 +103,27 @@ When you run the Migration Utility for the first time, a log is created with the
    >During assets migration, you may find warning messages such as “Conflict found for…”. Such messages indicate that rules for some of the components in adaptive forms could not be migrated. For example, if the component had an event which had both rules and scripts, if rules occur after any script none of the rules for the component are migrated. However, such rules can be migrated by opening the rule editor in adaptive form authoring.
    >
    >
-   >These components can be migrated by opening them in Rule Editor in Adaptive Forms editor. 
+   >These components can be migrated by opening them in Rule Editor in Adaptive Forms editor.
    >
-   >    
-   >    
-   >    * To migrate rules and scripts (not required if upgrading from 6.3) in custom components, tap Adaptive Forms Custom Components Migration, and in the next screen, tap Start Migration. The following get migrated:    >    
-   >        
-   >        
+   >
+   >
+   >    * To migrate rules and scripts (not required if upgrading from 6.3) in custom components, tap Adaptive Forms Custom Components Migration, and in the next screen, tap Start Migration. The following get migrated:    >
+   >
+   >
    >        * Rules and Scripts created using rule editor (6.1 FP1 and later)
-   >        * Scripts created using the Script tab in the UI of 6.1 and earlier  
-   >        
-   >        
-   >    * To migrate templates (not required if upgrading from 6.3 and 6.4), tap Adaptive Forms Template Migration, and in the next screen, tap Start Migration. The following get migrated:  
-   >    
-   >        
-   >        
+   >        * Scripts created using the Script tab in the UI of 6.1 and earlier
+   >
+   >
+   >    * To migrate templates (not required if upgrading from 6.3 and 6.4), tap Adaptive Forms Template Migration, and in the next screen, tap Start Migration. The following get migrated:
+   >
+   >
+   >
    >        * Old templates - the adaptive forms templates created under /apps using AEM 6.1 Forms or earlier. This includes the scripts that were defined in the template components.
    >        * New templates - Adaptive forms templates created using template editor under /conf. This includes migration of rules and scripts created using the rule editor.
-   >        
-   >        
-   >    
-   >    
+   >
+   >
+   >
+   >
    >
 
     * To migrate adaptive form custom components, tap **Adaptive Forms Custom Components Migration** and in the Custom Components Migration page, tap **Start** **Migration**. The following get migrated:
@@ -146,17 +146,17 @@ When you run the Migration Utility for the first time, a log is created with the
 
     * Recaptcha
 
-        * Source path: /etc/cloudservices/recaptcha  
+        * Source path: /etc/cloudservices/recaptcha
         * Target path: /conf/global/settings/cloudconfigs/recaptcha
 
     * Adobe Sign
 
-        * Source path: /etc/cloudservices/echosign  
+        * Source path: /etc/cloudservices/echosign
         * Target path: /conf/global/settings/cloudconfigs/echosign
 
     * Typekit cloud services
 
-        * Source path: /etc/cloudservices/typekit  
+        * Source path: /etc/cloudservices/typekit
         * Target path: /conf/global/settings/cloudconfigs/typekit
 
    The browser window displays the following as the migration process takes place:
@@ -166,7 +166,7 @@ When you run the Migration Utility for the first time, a log is created with the
 
    When executed, the Migration utility does the following:
 
-    * **Adds the tags to the assets**: Adds the tag “Correspondence Management : Migrated Assets” / “Adaptive Forms : Migrated Assets”. to the migrated assets, so that the users can identify migrated assets. When you run the Migration utility, all the existing assets in the system are marked as Migrated. 
+    * **Adds the tags to the assets**: Adds the tag “Correspondence Management : Migrated Assets” / “Adaptive Forms : Migrated Assets”. to the migrated assets, so that the users can identify migrated assets. When you run the Migration utility, all the existing assets in the system are marked as Migrated.
     * **Generates tags**: Categories and subcategories present in the previous system are created as tags, and then these tags are associated with the relevant Correspondence Management assets in AEM. For example, a Category (Claims) and a Subcategory (Claims) of a letter template are generated as tags.
 
 1. After the Migration utility finishes running, proceed to the [housekeeping tasks](#housekeepingtasks).
@@ -177,7 +177,7 @@ After running the Migration utility, take care of the following housekeeping tas
 
 1. Ensure that XFA version of layouts and fragment layouts is 3.3 or later. If you are using layouts and fragment layouts of an older version, then there could be issues in rendering the letter. To update version of an older XFA to the latest version, complete the following steps:
 
-    1. [Download the XFA as a zip file](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) from the Forms user interface. 
+    1. [Download the XFA as a zip file](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) from the Forms user interface.
     1. Extract the file.
     1. Open the XFA file in the latest Designer and save it. The version of the XFA gets updated to the latest one.
     1. Upload the XFA in the Forms user interface.

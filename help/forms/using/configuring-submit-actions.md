@@ -30,7 +30,7 @@ The default submit actions available with adaptive forms are:
 * Send PDF via Email
 * Invoke a Forms Workflow
 * Submit using Form Data Model
-* Forms Portal Submit Action  
+* Forms Portal Submit Action
 * Invoke an AEM Workflow
 
 >[!NOTE]
@@ -39,7 +39,7 @@ The default submit actions available with adaptive forms are:
 
 >[!NOTE]
 >
->Ensure that the [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder   
+>Ensure that the [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
 >exists. The directory is required to temporarily store attachments. If the directory does not exist, create it.
 
 >[!CAUTION]
@@ -72,7 +72,7 @@ Use the **Submit to REST Endpoint** action to post the submitted data to a rest 
 
 To post data to an internal server, provide path of the resource. The data is posted the path of the resource. For example, /content/restEndPoint. For such post requests, the authentication information of the submit request is used.
 
-To post data to an external server, provide a URL. The format of the URL is https://host:port/path_to_rest_end_point. Ensure that you configure the path to handle the POST request anonymously. 
+To post data to an external server, provide a URL. The format of the URL is https://host:port/path_to_rest_end_point. Ensure that you configure the path to handle the POST request anonymously.
 
 ![Mapping for field values passed as Thank You Page parameters](assets/post-enabled-actionconfig.png)
 
@@ -84,7 +84,7 @@ Similarly, paramenters that you use for posting XML data and attachments are `da
 
 For example, you use these two parameters in your script to parse data to a rest end point. You use the following syntax to store and parse the data:
 
-`String data=request.getParameter("dataXml");`  
+`String data=request.getParameter("dataXml");`
 `String att=request.getParameter("attachments");`
 
 In this example, `data` stores the XML data, and `att` stores attachment data.
@@ -145,7 +145,7 @@ All out of the box (OOTB) field validations of an adaptive form thate are rerun 
 
 ### Enabling Server-side Validation <br> {#enabling-server-side-validation-br}
 
-Use the **Revalidate on server** under** **Adaptive Form Container in the sidebar to enable or disable server-side validation for the current form. 
+Use the **Revalidate on server** under** **Adaptive Form Container in the sidebar to enable or disable server-side validation for the current form.
 
 ![Enabling Server-Side Validation](assets/revalidate-on-server.png)
 
@@ -167,4 +167,4 @@ Author can configure custom javascript library per adaptive form. In the library
 
 As a part of AEM security and hardening guidelines, configure custom error pages such as 404.jsp and 500.jsp. These handlers are called, when on submitting a form 404 or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node.
 
-For more information, see [Customizing Pages shown by the Error Handler](/sites/developing/using/customizing-errorhandler-pages.md).
+For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md).

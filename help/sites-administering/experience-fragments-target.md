@@ -37,8 +37,8 @@ You can export [Experience Fragments](/help/sites-authoring/experience-fragments
 
 There are three format options available for exporting an Experience Fragment to Adobe Target:
 
-* HTML (default): Support for web and hybrid content delivery  
-* JSON: Support for headless content delivery  
+* HTML (default): Support for web and hybrid content delivery
+* JSON: Support for headless content delivery
 * HTML & JSON
 
 AEM Experience Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target. This is done via Adobe I/O, for which AEM must be [integrated with Adobe Target using Adobe I/O](..//help/sites-administering/integration-ims-adobe-io.md).
@@ -56,7 +56,7 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 >For further information see also:
 >
 >* [Adobe Target development](https://www.adobe.io/apis/experiencecloud/target.html)
->* [Core Components - Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)  
+>* [Core Components - Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 >
 
 ## Prerequisites {#prerequisites}
@@ -68,7 +68,7 @@ Various actions are required:
 
    >[!NOTE]
    >
-   >For link rewriting not covered by the default, the [Experience Fragment Link Rewriter Provider](../../../sites/developing/using/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) is available. With this, customized rules can be developed for your instance.
+   >For link rewriting not covered by the default, the [Experience Fragment Link Rewriter Provider](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) is available. With this, customized rules can be developed for your instance.
 
 ## Add the Cloud Configuration {#add-the-cloud-configuration}
 
@@ -89,10 +89,10 @@ The required options can be selected in **Page Properties** of the required fold
    >
    >If you add the cloud configuration to the Experience Fragment itself, the configuration is inherited by all varations.
 
-1. Select the **Cloud Services** tab.  
+1. Select the **Cloud Services** tab.
 
 1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop down list.
-1. 
+1.
 
    >[!NOTE]
    >

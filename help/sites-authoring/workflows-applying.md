@@ -19,7 +19,7 @@ When authoring, you can invoke workflows to take action on your pages; it is als
 
 When you apply the workflow, you specify the following information:
 
-* The workflow to apply.  
+* The workflow to apply.
   You can apply any workflow (that you have access to, as assigned by your AEM administrator).
 * Optionally, a title that helps identify the workflow instance in a user's Inbox.
 * The workflow payload; this can be one or more pages.
@@ -56,7 +56,7 @@ In both cases you will need to:
 
 You can start a workflow from the toolbar of the **Sites** console:
 
-1. Navigate to and select the required page.  
+1. Navigate to and select the required page.
 
 1. From the **Create** option in the toolbar you can now select **Workflow**.
 
@@ -102,7 +102,7 @@ You can specify details:
 
    >[!NOTE]
    >
-   >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](../../../sites/developing/using/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
+   >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
 
    When complete, use **Next** to proceed.
 
@@ -111,10 +111,10 @@ You can specify details:
 1. In the **Scope** step you can select:
 
     * **Add Content** to open the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) and select additional resources; when in the browser, click/tap **Select** to add the content to the workflow instance.
-    
+
     * An existing resource to see additional actions:
 
-        * **Include children** to specify that children of that resource will be included in the workflow.  
+        * **Include children** to specify that children of that resource will be included in the workflow.
           A dialog will open allowing you to refine the selection according to:
 
             * Include only immediate children.
@@ -122,7 +122,7 @@ You can specify details:
             * Include only already published pages.
 
           Any children specified are added to the list of resources to which the workflow will apply.
-        
+
         * **Remove Selection** to remove that resource from the workflow.
 
    ![](assets/wf-53.png)

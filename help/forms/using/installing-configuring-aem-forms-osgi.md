@@ -29,16 +29,16 @@ AEM Forms is a powerful enterprise-class platform and the data capture (adaptive
 
 AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author and AEM Publish instance to run AEM Forms data capture capabilities. The following topology is suggested to run AEM Forms AEM Forms data capture capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![](assets/recommended-topology.png) 
+![](assets/recommended-topology.png)
 
 ## System Requirements {#system-requirements}
 
 Before you begin to install and configure data capture capability of AEM Forms, ensure that:
 
-* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites/deploying/using/technical-requirements.md).  
+* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
-* An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](../../sites/deploying/using/deploy.md) to run AEM Forms data capture capabilities:
+* An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
     * **Publish**: An AEM instance that serves the published content to the public over the internet or an internal network.
@@ -48,44 +48,44 @@ Before you begin to install and configure data capture capability of AEM Forms, 
     * 15 GB of temporary space for Microsoft Windows-based installations.
     * 6 GB of temporary space for UNIX-based installations.
 
-* Replication and reverse replication for the author and publish instances is set. For details, see [Replication](../../sites/deploying/using/replication.md).
+* Replication and reverse replication for the author and publish instances is set. For details, see [Replication](/help/sites-deploying/replication.md).
 * For UNIX-based systems:
 
     * Install the following 32-bit packages from the installation media:
 
 <table>
- <tbody> 
-  <tr> 
-   <td>expat</td> 
-   <td>fontconfig</td> 
-   <td>freetype</td> 
-   <td>glibc</td> 
-  </tr> 
-  <tr> 
-   <td>libcurl</td> 
-   <td>libICE</td> 
-   <td>libicu</td> 
-   <td>libSM</td> 
-  </tr> 
-  <tr> 
-   <td>libuuid</td> 
-   <td>libX11</td> 
-   <td><p>libXau</p> </td> 
-   <td>libxcb</td> 
-  </tr> 
-  <tr> 
-   <td>libXext</td> 
-   <td>libXinerama</td> 
-   <td>libXrandr</td> 
-   <td>libXrender</td> 
-  </tr> 
-  <tr> 
-   <td>nss-softokn-freebl</td> 
-   <td>OpenSSL</td> 
-   <td>zlib</td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>expat</td>
+   <td>fontconfig</td>
+   <td>freetype</td>
+   <td>glibc</td>
+  </tr>
+  <tr>
+   <td>libcurl</td>
+   <td>libICE</td>
+   <td>libicu</td>
+   <td>libSM</td>
+  </tr>
+  <tr>
+   <td>libuuid</td>
+   <td>libX11</td>
+   <td><p>libXau</p> </td>
+   <td>libxcb</td>
+  </tr>
+  <tr>
+   <td>libXext</td>
+   <td>libXinerama</td>
+   <td>libXrandr</td>
+   <td>libXrender</td>
+  </tr>
+  <tr>
+   <td>nss-softokn-freebl</td>
+   <td>OpenSSL</td>
+   <td>zlib</td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
