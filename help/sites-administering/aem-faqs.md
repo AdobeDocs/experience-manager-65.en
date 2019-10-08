@@ -92,7 +92,7 @@ If the user, uploading the movie files does not have delete permissions under as
 
 Adobe Experience Manager (AEM) 6.4 currently lets you upload up to 2 GB of assets at a time.
 
-For additional information on maximum number of assets that can be operated with AEM 6.4, see [Assets sizing guide](https://chl-author.c/content/help/en/experience-manager/6-5/assets/using/assets-sizing-guide.html).
+For additional information on maximum number of assets that can be operated with AEM 6.4, see [Assets sizing guide](https://chl-author.c/content/help/en/experience-manager/6-5/help/assets/assets-sizing-guide.html).
 
 #### What are the default settings for OOTB configurations while creating Language Copy? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
@@ -113,7 +113,7 @@ As a workaround, you can also manually disable the component either via the UI o
 
 #### How to configure Asset Insights with AEM 6.4 instance? {#how-to-configure-asset-insights-with-aem-instance}
 
-To setup and configure Asset Insights for Experience Manager deployed via Adobe Activation (DTM), please refer to [Set up Asset Insights with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+To setup and configure Asset Insights for Experience Manager deployed via Adobe Activation (DTM), please refer to [Set up Asset Insights with AEM Assets](https://helpx.adobe.com/experience-manager/kt/help/assets/asset-insights-tutorial-setup.html).
 
 #### How to customize admin consoles? {#how-to-customize-admin-consoles}
 
@@ -135,16 +135,16 @@ The Simple search implementation are the materials from the 2017 Summit lab AEM 
 
 AEM Assets is an application on the AEM Platform that allows our customers to manage their digital assets (images, videos, documents and audio clips) in a web-based repository whereas AEM Media Library is a designated part of the AEM WCM content repository where images and other shared resources are stored.
 
-Refer to [AEM Assets vs. AEM MediaLibrary](../../../assets/using/medialibrary.md) for more information.
+Refer to [AEM Assets vs. AEM MediaLibrary](/help/assets/medialibrary.md) for more information.
 
 #### Is it possible to build plugin for WordPress that allows a customer to access Adobe Asset Picker to select images ? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
 Yes, a customer using WordPress can use Adobe Asset Picker to select images from their AEM Assets server to add to posts on their WordPress site.
 
-Refer to [Asset Selector](../../../assets/using/asset-selector.md) for more information.
+Refer to [Asset Selector](/help/assets/asset-selector.md) for more information.
 
 #### Is it possible to extend the search facets in AEM Assets to add additional predicates ? {#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
 
 An enterprise-wide deployment of Adobe Experience Manager (AEM) Assets has the capacity to store many assets. You can add predicates to the default form or use a custom form that includes facets of your choice.
 
-Refer to [Search Facets](/assets/using/search-facets.md) to learn more.
+Refer to [Search Facets](/help/assets/search-facets.md) to learn more.

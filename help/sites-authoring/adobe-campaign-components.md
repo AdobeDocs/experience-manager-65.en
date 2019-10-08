@@ -172,7 +172,7 @@ The following example shows a Link (Campaign) component being displayed.
 
 ![](assets/chlimage_1-49.png)
 
-Click **Edit** to configure the component. You can configure the settings described in this section. This Scene7 Image template is described in detail in [Scene7 Image Template component](/assets/using/scene7.md#image-template).
+Click **Edit** to configure the component. You can configure the settings described in this section. This Scene7 Image template is described in detail in [Scene7 Image Template component](/help/assets/scene7.md#image-template).
 
 In addition, the parameter panel lists all template parameters that have been defined for the template in Scene7. For each of these parameters, you can adapt the value, insert variables, or reset them to their default value.
 

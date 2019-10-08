@@ -29,7 +29,7 @@ You can publish digital assets directly from AEM to Scene7 and you can publish d
 
 This document describes how to publish digital assets from AEM to Scene7 and vice versa. Viewers are also described in detail. For information on configuring AEM for Scene7, see [Integrating Scene7 with AEM](/help/sites-administering/scene7.md).
 
-See also [Adding Image Maps](/assets/using/image-maps.md).
+See also [Adding Image Maps](/help/assets/image-maps.md).
 
 For more information on using video components with AEM, see the following:
 
@@ -37,7 +37,7 @@ For more information on using video components with AEM, see the following:
 
 >[!NOTE]
 >
->If Scene7 assets do not display properly, please make sure that Dynamic media is [disabled](../../../assets/using/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
+>If Scene7 assets do not display properly, please make sure that Dynamic media is [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
 
 ## Manually Publishing to Scene7 from Assets {#manually-publishing-to-scene-from-assets}
 

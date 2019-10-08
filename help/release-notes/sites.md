@@ -25,21 +25,21 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
     * “in” operator for strings, arrays and objects:
 
-      ```    
+      ```
       ${'a' in 'abc’}
        ${100 in myArray}
        ${'a' in myObject}
       ```
 
-    * Variable declarations with data-sly-set :  
+    * Variable declarations with data-sly-set :
       `<sly data-sly-set.title="${currentPage.title}"/>${title}`
-    
-    * List and repeat control parameters: begin, step, end:  
+
+    * List and repeat control parameters: begin, step, end:
       `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
-    
+
     * Identifiers for data-sly-unwrap:
 
-      ```    
+      ```
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
        text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
        </div>
@@ -74,12 +74,12 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
 ## Content Fragments &amp; Editor {#content-fragments-amp-editor}
 
-* New [Annotations](../assets/using/content-fragments-variations.md#viewing-editing-deleting-annotations) rail in Content Fragment Editor to make general comments and see comments make within the text (also show up in Timeline rail)
-* Ability to set the default content type of a multiline text element in a [content fragment model](../assets/using/content-fragments-models.md) to simple text, rich text or markdown
-* Add [comment/annotations](../assets/using/content-fragments-variations.md#annotating-a-content-fragment) by selecting text in the RTE (full-screen view)
-* [Compare versions](../assets/using/content-fragments-managing.md#comparing-fragment-versions) of a Content Fragment side-by-side via Reference rail
+* New [Annotations](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) rail in Content Fragment Editor to make general comments and see comments make within the text (also show up in Timeline rail)
+* Ability to set the default content type of a multiline text element in a [content fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
+* Add [comment/annotations](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) by selecting text in the RTE (full-screen view)
+* [Compare versions](/help/assets/content-fragments-managing.md#comparing-fragment-versions) of a Content Fragment side-by-side via Reference rail
 * The assets Download Report now shows Content Fragments accordingly
-* Add [Content Fragment support to Assets HTTP API](../assets/using/assets-api-content-fragments.md) via /api.json. There are APIs for create, update, read and delete of Content Fragments.
+* Add [Content Fragment support to Assets HTTP API](/help/assets/assets-api-content-fragments.md) via /api.json. There are APIs for create, update, read and delete of Content Fragments.
 
 ## Experience Fragments {#experience-fragments}
 
@@ -89,14 +89,14 @@ See the following for AEM Sites 6.5 enhancements in detail:
 ## Translation {#translation}
 
 * Simplify creating Translation Projects by using Project Masters
-* Simplify executing Translation Projects by setting translation jobs to approved status by default 
+* Simplify executing Translation Projects by setting translation jobs to approved status by default
 * Allow updating translated pages with changes in 3rd-party Translation Memory
 * Allow exporting translation jobs in JSON format
 * Update Microsoft Translation integration to use V3 API
 
 ## Multi-Site Management (MSM) {#multi-site-management-msm}
 
-* For roll-out configs that use PushOnModify, better handling of page move operation to avoid inconsistent state 
+* For roll-out configs that use PushOnModify, better handling of page move operation to avoid inconsistent state
 * Creating a new page inside the livecopy structure will now by default create a standalone page
 * Use MSM features in single-page apps that are using the JS SDK (also called SPA Editor)
 
@@ -116,7 +116,7 @@ See the following for AEM Sites 6.5 enhancements in detail:
 >at.js 2.x is not supported with AEM at the point of the AEM 6.5 release. Please use latest version of at.js 1.x
 
 * Adobe Target integration is can now use the Target Standard API. Earlier versions of AEM use the Target Classic HTTP API which is now deprecated.
-* Adobe Target mbox.js version 63 is included. Adobe strongly recommends to switch implementation to at.js 1.x.  
+* Adobe Target mbox.js version 63 is included. Adobe strongly recommends to switch implementation to at.js 1.x.
 * at.js version 1.5.0 now included. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision at.js 1.x into the site.
 
 ## AEM &amp; Adobe Analytics {#aem-amp-adobe-analytics}

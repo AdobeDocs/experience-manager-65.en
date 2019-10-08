@@ -71,7 +71,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Notes</strong></td>
-   <td><p>See also <a href="../../../assets/using/config-dms7.md#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime">(Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime</a>.</p> </td>
+   <td><p>See also <a href="/help/assets/config-dms7.md#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime">(Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -94,7 +94,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Notes</strong></td>
-   <td>See also <a href="../../../assets/using/config-dynamic.md#optionalmigratingdynamicmediapresetsandconfigurationsfrom63to65zerodowntime">(Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime</a>.</td>
+   <td>See also <a href="/help/assets/config-dynamic.md#optionalmigratingdynamicmediapresetsandconfigurationsfrom63to65zerodowntime">(Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime</a>.</td>
   </tr>
  </tbody>
 </table>

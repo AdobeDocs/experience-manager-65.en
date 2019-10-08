@@ -41,9 +41,9 @@ AEM Delivery and Content Management APIs:
     * [Enabling JSON Export for a Component](/help/help/sites-developing/json-exporter-components.md)
     * See the [Components section in the Developing User Guide](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) for more information
 
-* **Assets**: The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments. See [AEM Assets HTTP API](../../../assets/using/mac-api-assets.md)
+* **Assets**: The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments. See [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **Content Fragments** (CFs): [CF support in Assets HTTP API](../../../assets/using/assets-api-content-fragments.md) and [AEM Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/assets-api-content-fragments/index.html)
+* **Content Fragments** (CFs): [CF support in Assets HTTP API](/help/assets/assets-api-content-fragments.md) and [AEM Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/assets-api-content-fragments/index.html)
 
 The following external resources are for reference only:
 

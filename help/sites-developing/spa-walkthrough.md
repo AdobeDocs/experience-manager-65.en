@@ -207,7 +207,7 @@ The next section, [Loading an SPA Application](/help/sites-developing/spa-walkth
 
    ![](assets/screen_shot_2018-06-07at152636.png)
 
-   The AEM SPA Editor leverages [AEM Content Services](../../../assets/using/content-fragments.md) to deliver the entire content of the page as a JSON model.
+   The AEM SPA Editor leverages [AEM Content Services](/help/assets/content-fragments.md) to deliver the entire content of the page as a JSON model.
 
    By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, etc.).
 

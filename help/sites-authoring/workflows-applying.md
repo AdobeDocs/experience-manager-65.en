@@ -33,7 +33,7 @@ Workflows can be started from:
 >
 >See also:
 >
->* [How to apply workflows to DAM assets](../../../assets/using/assets-workflow.md).
+>* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-authoring/projects-with-workflows.md).
 >
 

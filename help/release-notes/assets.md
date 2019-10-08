@@ -37,7 +37,7 @@ Your organization can use its Adobe Stock enterprise plan within AEM Assets to e
 
 Adobe Stock service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects.
 
-For more info, see [Use Adobe Stock assets in AEM Assets](../assets/using/aem-assets-adobe-stock.md).
+For more info, see [Use Adobe Stock assets in AEM Assets](/help/assets/aem-assets-adobe-stock.md).
 
 ![Preview Adobe Stock image and license from within AEM Assets](assets/stock_image_preview_license_options.png)
 
@@ -49,7 +49,7 @@ Search and filter the licensed Adobe Stock images in AEM
 
 ### Dynamic references in InDesign {#dynamic-references-in-indesign}
 
-The AEM Assets used in Adobe InDesign files are dynamic. The references update automatically if the referenced assets moves in the JCR hierarchy. For more information see, [Managing compound assets](/help/assets/using/managing-linked-subassets.md).
+The AEM Assets used in Adobe InDesign files are dynamic. The references update automatically if the referenced assets moves in the JCR hierarchy. For more information see, [Managing compound assets](/help/help/assets/managing-linked-subassets.md).
 
 ## Brand Portal capabilities {#brand-portal-capabilities}
 
@@ -63,7 +63,7 @@ In large enterprises the infrastructure required to create websites can be distr
 
 AEM Sites offers capabilities to create web pages and AEM Assets is the Digital Asset Management (DAM) system that supplies the required assets for websites. AEM now supports the above use case by integrating AEM Sites and AEM Assets.
 
-For more info, see [Use assets from a Connected Assets](../assets/using/use-assets-across-connected-assets-instances.md).
+For more info, see [Use assets from a Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
 ![Drag and drop DAM assets from an AEM instance in Sites page on a different AEM instance](assets/connected-assets-drag-and-drop-only.gif)
 
@@ -77,11 +77,11 @@ For more details on new Dynamic Media features see [Dynamic Media Release Notes]
 
 ### 360 Video Support {#video-support}
 
-Manage your 360-video files directly in AEM using Dynamic Media’s cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. For more information see [Using 360 Video](../assets/using/360-video.md).
+Manage your 360-video files directly in AEM using Dynamic Media’s cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. For more information see [Using 360 Video](/help/assets/360-video.md).
 
 ### Custom Video Thumbnails {#custom-video-thumbnails}
 
-You can now customize the thumbnails for your video assets using frames from the video itself or other content stored in the DAM. For additional instructions see [About Video Thumbnails](../assets/using/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
+You can now customize the thumbnails for your video assets using frames from the video itself or other content stored in the DAM. For additional instructions see [About Video Thumbnails](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
 ### Accessibility Enhancements {#accessibility-enhancements}
 
@@ -89,7 +89,7 @@ Dynamic Media viewers now include support for enhanced accessibility features li
 
 ## Search experience enhancement {#search-experience-enhancement}
 
-AEM 6.5 onwards, marketers can discover the desired assets faster from the search results page. The search facets are updated with the number of assets even before applying the search filter. Seeing the expected count against the filter helps users navigate through the search results efficiently. For more information, see [Search assets in AEM](../assets/using/search-assets.md).
+AEM 6.5 onwards, marketers can discover the desired assets faster from the search results page. The search facets are updated with the number of assets even before applying the search filter. Seeing the expected count against the filter helps users navigate through the search results efficiently. For more information, see [Search assets in AEM](/help/assets/search-assets.md).
 
 ![See the number of assets without filtering search results in search facets](assets/asset_search_results_in_facets_filters.png)
 
@@ -105,10 +105,10 @@ Use Select All option to select all the assets in one click.
 
 ## Metadata enhancements {#metadata-enhancements}
 
-Assets lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages. You can now assign a folder metadata schema to an existing folder or when creating a new folder. For more information, see [Folder metadata schema](../assets/using/folder-metadata-schema.md).
+Assets lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages. You can now assign a folder metadata schema to an existing folder or when creating a new folder. For more information, see [Folder metadata schema](/help/assets/folder-metadata-schema.md).
 
-When specifying cascading metadata, the choices can be loaded from a JSON file at the run-time, say instead of typing manually in the form. For more information, see [Cascading metadata](/help/assets/using/cascading-metadata.md).
+When specifying cascading metadata, the choices can be loaded from a JSON file at the run-time, say instead of typing manually in the form. For more information, see [Cascading metadata](/help/help/assets/cascading-metadata.md).
 
 ## Reporting enhancements {#reporting-enhancements}
 
-The Content Fragments and link shares are included in the Asset Downloaded report now. For more information, see [Assets reports](/help/assets/using/asset-reports.md).
+The Content Fragments and link shares are included in the Asset Downloaded report now. For more information, see [Assets reports](/help/help/assets/asset-reports.md).

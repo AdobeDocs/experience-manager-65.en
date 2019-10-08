@@ -33,9 +33,9 @@ Some key highlights of this service pack release are:
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.3.
 * Added a configuration property to allow exporting Experience Fragments directly to user-defined workspaces for Adobe Target.
-* Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](../assets/using/search-assets.md#visualsearch).
+* Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](/help/assets/search-assets.md#visualsearch).
 
-* Enhanced the Connected Assets functionality to add support to fetch documents from remote DAM deployments. Site Authors can now search and filter supported documents types in Content Finder. The remote documents can be added to Download component on web pages. See [use connected assets](../assets/using/use-assets-across-connected-assets-instances.md).
+* Enhanced the Connected Assets functionality to add support to fetch documents from remote DAM deployments. Site Authors can now search and filter supported documents types in Content Finder. The remote documents can be added to Download component on web pages. See [use connected assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
 * EnhanceDocument type filters with more MIME types to support multi-valued options.
 * Introduced an external Reprocess workflow for multi-resource support.
@@ -51,9 +51,9 @@ Some key highlights of this service pack release are:
 
 **Product Enhancements**
 
-* Enhanced the Connected Assets functionality to add support to fetch documents from remote DAM deployments. Site Authors can now search and filter supported documents types in Content Finder. The remote documents can be added to Download component on web pages. Hotfix for CQ-4270245. See [use connected assets](../assets/using/use-assets-across-connected-assets-instances.md).
+* Enhanced the Connected Assets functionality to add support to fetch documents from remote DAM deployments. Site Authors can now search and filter supported documents types in Content Finder. The remote documents can be added to Download component on web pages. Hotfix for CQ-4270245. See [use connected assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](../assets/using/search-assets.md#visualsearch).
+* Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](/help/assets/search-assets.md#visualsearch).
 
 ** Fixes**
 
@@ -436,7 +436,7 @@ The key highlights for AEM 6.5.2.0 forms are:
  <h3>Feature Packs Included</h3>
  <h4>Assets</h4>
  <ul>
-  <li>Enabled Multi-Site Manager support for Assets. For more information, see <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/reuse-assets-using-msm.html" target="_blank">Reuse assets using MSM for Assets</a>. NPR-29199: Hotfix for CQ-4259922</li>
+  <li>Enabled Multi-Site Manager support for Assets. For more information, see <a href="https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html" target="_blank">Reuse assets using MSM for Assets</a>. NPR-29199: Hotfix for CQ-4259922</li>
  </ul>
  <h4>Sites</h4>
  <ul>

@@ -48,7 +48,7 @@ The release cycle for this version of Adobe Experience Manager started April 4, 
 
 Adobe Experience Manager 6.5 is generally available since April 8, 2019.
 
-![AEM 6.5 Login Screen](assets/aem65-login-v4.png)
+![AEM 6.5 Login Screen](/help/assets/assets/aem65-login-v4.png)
 
 ## What's New {#what-s-new}
 
@@ -116,11 +116,11 @@ First shipped as part of AEM 6.4 SP2, with AEM 6.5 the SPA support gains followi
 
 #### Headless Content Management {#headless-content-management}
 
-AEM has the ability to serve the content in various formats and from various levels of the stack. Some have been around since 2008 with the [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) and [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Sling Model Exporter](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html)) was introduced in AEM 6.3 and is the method used by the AEM SJ SDK to hydrate single-page apps. The [HTTP API for Assets](assets/using/mac-api-assets.md) is a CRUD API, that was extended for AEM 6.5.
+AEM has the ability to serve the content in various formats and from various levels of the stack. Some have been around since 2008 with the [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) and [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Sling Model Exporter](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html)) was introduced in AEM 6.3 and is the method used by the AEM SJ SDK to hydrate single-page apps. The [HTTP API for Assets](/help/assets/mac-api-assets.md) is a CRUD API, that was extended for AEM 6.5.
 
 New HTTP API capabilites:
 
-* Added [Content Fragment support to HTTP API for Assets](assets/using/assets-api-content-fragments.md) to create, update, read and delete fragments.
+* Added [Content Fragment support to HTTP API for Assets](/help/assets/assets-api-content-fragments.md) to create, update, read and delete fragments.
 * Expose lists of Content Fragments via Content Services with the [Content Fragment List Core Component](https://opensource.adobe.com/aem-core-wcm-components/library/content-fragment-list.html).
 * [Core Component Library](https://opensource.adobe.com/aem-core-wcm-components/library.html) that shows the default Content Services JSON output for each component
 
@@ -157,7 +157,7 @@ Introduction of [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adob
 
 Additionally, AEM integrates with Adobe Stock to help find, preview, license and save Adobe Stock assets directly from the AEM Web UI.
 
-![Asset Link panel in Photoshop](assets/aem65-assetlink-photoshop.png)
+![Asset Link panel in Photoshop](/help/assets/assets/aem65-assetlink-photoshop.png)
 
 #### Connected Assets {#connected-assets}
 
@@ -263,8 +263,8 @@ This process of prioritization has yielded more than 750 customer focused change
 
 **Assets**
 
-* Package to add enhanced PDF Rasterizer ([read more](assets/using/aem-pdf-rasterizer.md))
-* Package to add extended RAW image support ([read more](assets/using/camera-raw.md))
+* Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md))
+* Package to add extended RAW image support ([read more](/help/assets/camera-raw.md))
 
 **Forms**
 

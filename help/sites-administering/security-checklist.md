@@ -320,7 +320,7 @@ The default Asset Download Servlet in AEM allows authenticated users to issue ar
 
 To mitigate potential DoS risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled by default for publish instances on latest AEM versions.
 
-If your setup requires that the Asset Download Server be enabled, please see [this article](../../../assets/using/download-assets-from-aem.md) for more information.
+If your setup requires that the Asset Download Server be enabled, please see [this article](/help/assets/download-assets-from-aem.md) for more information.
 
 ### Disable WebDAV {#disable-webdav}
 

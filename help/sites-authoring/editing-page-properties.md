@@ -309,7 +309,7 @@ From the **Sites** console you can select several pages then use **View Properti
 
 >[!NOTE]
 >
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](../../../assets/using/managing-multiple-assets.md) for details.
+>Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
 >There is also the [Bulk Editor](/help/sites-administering//bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
 
