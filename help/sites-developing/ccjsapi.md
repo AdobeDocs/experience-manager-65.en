@@ -5,7 +5,7 @@ description: The Javascript API for Client Context
 seo-description: The Javascript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
@@ -138,7 +138,7 @@ Calls the JSONP service. The JSONP URL is the service URL suffixed with a give c
 
 **Parameters**
 
-* serviceURL: (Optional) String. The JSONP service to call. A value of null causes the already-configured service URL to be used. A non-null value sets the JSONP service to use for this object. (See setServiceURL.) 
+* serviceURL: (Optional) String. The JSONP service to call. A value of null causes the already-configured service URL to be used. A non-null value sets the JSONP service to use for this object. (See setServiceURL.)
 * dynamicData: (Optional) Object. JSON data to append to the store's initialization data before the callback function is called.
 * callback: (Optional) String. The name of the function to call for processing the JSONP object that the JSONP service returns. The callback function must define a single parameter that is a CQ_Analytics.JSONPStore object.
 
@@ -153,7 +153,7 @@ Creates a CQ_Analytics.JSONPStore object and registers the store with Client Con
 **Parameters**
 
 * storeName: String. The name to use as the STORENAME property. The value of the STOREKEY property is set to storeName with all upper-case characters. If no storeName is provided, the method returns null.
-* serviceURL: (Optional) String. The URL of the JSONP service. 
+* serviceURL: (Optional) String. The URL of the JSONP service.
 * dynamicData: (Optional) Object. JSON data to append to the store's initialization data before the callback function is called.
 * callback: (Optional) String. The name of the function to call for processing the JSONP object that the JSONP service returns. The callback function must define a single parameter that is a CQ_Analytics.JSONPStore object.
 
@@ -254,7 +254,7 @@ The names of the properties are derived from the hierarchy of the data in the JS
 
 ```xml
 {
-A: "valueA",  
+A: "valueA",
 B: {
      B1: "valueBB1"
     }
@@ -264,7 +264,7 @@ B: {
 For this example, the following properties are created in the store:
 
 ```xml
-A: "valueA" 
+A: "valueA"
 B/B1: "valueBB1"
 ```
 
@@ -367,7 +367,7 @@ Calls the JSONP service. The JSONP URL is the service URL suffixed with a give c
 
 **Parameters**
 
-* serviceURL: (Optional) String. The JSONP service to call. A value of null causes the already-configured service URL to be used. A non-null value sets the JSONP service to use for this object. (See setServiceURL.) 
+* serviceURL: (Optional) String. The JSONP service to call. A value of null causes the already-configured service URL to be used. A non-null value sets the JSONP service to use for this object. (See setServiceURL.)
 * dynamicData: (Optional) Object. JSON data to append to the store's initialization data before the callback function is called.
 * callback: (Optional) String. The name of the function to call for processing the JSONP object that the JSONP service returns. The callback function must define a single parameter that is a CQ_Analytics.JSONPStore object.
 
@@ -382,7 +382,7 @@ Creates a CQ_Analytics.PersistedJSONPStore object and registers the store with C
 **Parameters**
 
 * storeName: String. The name to use as the STORENAME property. The value of the STOREKEY property is set to storeName with all upper-case characters. If no storeName is provided, the method returns null.
-* serviceURL: (Optional) String. The URL of the JSONP service. 
+* serviceURL: (Optional) String. The URL of the JSONP service.
 * dynamicData: (Optional) Object. JSON data to append to the store's initialization data before the callback function is called.
 * callback: (Optional) String. The name of the function to call for processing the JSONP object that the JSONP service returns. The callback function must define a single parameter that is a CQ_Analytics.JSONPStore object.
 
@@ -455,7 +455,7 @@ The names of the properties are derived from the hierarchy of the data in the JS
 
 ```xml
 {
-A: "valueA",  
+A: "valueA",
 B: {
      B1: "valueBB1"
     }
@@ -465,7 +465,7 @@ B: {
 For this example, the following properties are created in the store:
 
 ```xml
-A: "valueA" 
+A: "valueA"
 B/B1: "valueBB1"
 ```
 
@@ -721,7 +721,7 @@ Adds the properties of a given object to the intialization data of the session s
 
 **Parameters**
 
-* obj: An object that contains enumerable propertes. 
+* obj: An object that contains enumerable propertes.
 * setValues: When true, the obj properties are added to the session store data if the store data does not already include a property of the same name. When false, no data is added to the session store data.
 
 **Returns**

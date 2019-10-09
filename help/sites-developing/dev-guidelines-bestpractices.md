@@ -5,7 +5,7 @@ description: Guidelines and best practices for developing on AEM
 seo-description: Guidelines and best practices for developing on AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
@@ -54,7 +54,7 @@ This can be done by copying and overlaying the existing definition. In other wor
 
 For example:
 
-* [Customizing a Component](/help/sites-developing/components.md) 
+* [Customizing a Component](/help/sites-developing/components.md)
 
   This involved overlaying a component definition:
 
@@ -65,7 +65,7 @@ For example:
             * from `/libs/foundation/components/text`
             * to `/apps/myProject/components/text`
 
-* [Customizing pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler) 
+* [Customizing pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   This case involves overlaying a servlet:
 
@@ -90,8 +90,8 @@ For example:
 JCR Queries are a powerful tool when employed correctly. They are appropriate for:
 
 * real end-user queries, such as fulltext searches on content.
-* occasions where structured content needs to be found across the entire repository.   
-  
+* occasions where structured content needs to be found across the entire repository.
+
   In such cases, make sure that queries only run when absolutely required, e.g. on component activation or cache invalidation (as opposed to e.g. Workflows Steps, Event Handlers that trigger on content modifications, Filters, etc).
 
 JCR Queries should never be used for pure rendering requests. For example, JCR Queries are not appropriate for
@@ -160,4 +160,4 @@ See [Customizing Error Pages shown by the Error Handler](/help/sites-developing/
 
 Because AEM can access a large number of files it is recommended that the number of [open files for a Java process](/help/sites-deploying/configuring.md#open-files-in-the-java-process) be explicitly configured for AEM.
 
-To minimize this issue development should ensure that any file opened is correctly closed as soon as (meaningfully) possible.  
+To minimize this issue development should ensure that any file opened is correctly closed as soon as (meaningfully) possible.

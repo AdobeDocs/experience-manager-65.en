@@ -5,7 +5,7 @@ description: Information on how to configure Dynamic Media - Scene7 mode.
 seo-description: Information on how to configure Dynamic Media - Scene7 mode.
 uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
@@ -21,11 +21,11 @@ The following architecture diagram describes how Dynamic Media - Scene7 mode wor
 
 With the new architecture, AEM is responsible for master assets and synchs with Dynamic Media for asset processing and publishing:
 
-1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. 
-1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance). 
+1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image.
+1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content out to delivery servers and cache content at the CDN.
 
-![chlimage_1](assets/chlimage_1.png) 
+![chlimage_1](assets/chlimage_1.png)
 
 ## Enabling Dynamic Media in Scene7 mode {#enabling-dynamic-media-in-scene-mode}
 
@@ -47,8 +47,8 @@ If you are upgrading AEM Dynamic Media from 6.3 to 6.4 (which now includes the a
 
 >[NOTE]
 >
->If you run your AEM instance in compatibility mode--that is, you have the compatibility packaged installed--you do not need to run these commands.  
-  
+>If you run your AEM instance in compatibility mode--that is, you have the compatibility packaged installed--you do not need to run these commands.
+
 To migrate your custom presets and configurations from `/etc` to `/conf`, run the following Linux curl command:
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets.migratedmcontent.json`
@@ -88,7 +88,7 @@ To configure Dynamic Media Cloud Services:
     * **[!UICONTROL Company]** - the name of the Dynamic Media account. It is possible you may have multiple Dynamic Media accounts for different sub-brands, divisions, or different staging/production environments.
     * **[!UICONTROL Company Root Folder Path]**
     * **[!UICONTROL Publishing Assets]** - the option **[!UICONTROL Immediately]** means that when assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets. The option **[!UICONTROL Upon Activation]** means that you need to explicitly publish the asset first before a URL/Embed link is provided.
-    * **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).  
+    * **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 
       Unless you have a special arrangment to use your own company's server or a special server, Adobe recommends that you use the default setting.
 
@@ -118,7 +118,7 @@ If you want to further customize your configuration, you can optionally complete
 
 If you want to further customize the configuration and setup of Dynamic Media - Scene7 mode, or optimize its performance, you can complete one or more of the following optional tasks:
 
-* [(Optional) Setup and configuration of Dynamic Media - Scene7 mode settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)  
+* [(Optional) Setup and configuration of Dynamic Media - Scene7 mode settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
 
 * [(Optional) Tuning the performance of Dynamic Media - Scene7 mode](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
@@ -386,12 +386,12 @@ You can use the Batch Set Type **[!UICONTROL Multi-Axis Spin Set]** to create a 
 As an example, suppose you want to create a multi-axis spin set named `spin-2dspin`. You have a set of spin set images that contain three rows, with 12 images per row. The images are named as follows:
 
 ```
-spin-01-01 
- spin-01-02 
- … 
- spin-01-12 
- spin-02-01 
- … 
+spin-01-01
+ spin-01-02
+ …
+ spin-01-12
+ spin-02-01
+ …
  spin-03-12
 ```
 
@@ -544,33 +544,33 @@ The filters provide a way for you to *exclude* assets from being replicated to t
 
 If you are using Dynamic Media for imaging and/or video, then you can use the default filters that we provide as-is. The following filters are active by default:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> </td> 
-   <td><strong>Filter</strong></td> 
-   <td><strong>Mimetype</strong></td> 
-   <td><strong>Renditions</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Dynamic Media Image Delivery</td> 
-   <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td> 
-   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> </td> 
-   <td>The out-of-the-box "filter-images" (applies to single images assets, including interactive images) and "filter-sets" (applies to Spin Sets, Image Sets, Mixed Media Sets, and Carousel Sets) will: 
-    <ul> 
-     <li>Exclude from replication the original image and static image renditions.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Dynamic Media Video Delivery</td> 
-   <td>filter-video</td> 
-   <td>Starts with <strong>video/</strong></td> 
-   <td>The out-of-the-box "filter-video" will: 
-    <ul> 
-     <li>Exclude from replication the original video and static thumbnail renditions.<br /> <br /> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> </td>
+   <td><strong>Filter</strong></td>
+   <td><strong>Mimetype</strong></td>
+   <td><strong>Renditions</strong></td>
+  </tr>
+  <tr>
+   <td>Dynamic Media Image Delivery</td>
+   <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td>
+   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> </td>
+   <td>The out-of-the-box "filter-images" (applies to single images assets, including interactive images) and "filter-sets" (applies to Spin Sets, Image Sets, Mixed Media Sets, and Carousel Sets) will:
+    <ul>
+     <li>Exclude from replication the original image and static image renditions.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Dynamic Media Video Delivery</td>
+   <td>filter-video</td>
+   <td>Starts with <strong>video/</strong></td>
+   <td>The out-of-the-box "filter-video" will:
+    <ul>
+     <li>Exclude from replication the original video and static thumbnail renditions.<br /> <br /> </li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -602,25 +602,25 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
 
    Characters that you can use to filter for replication include the following:
 
-   <table> 
-    <tbody> 
-    <tr> 
-    <td><strong>Character to use</strong></td> 
-    <td><strong>How it filters assets for replication</strong></td> 
-    </tr> 
-    <tr> 
-    <td>*</td> 
-    <td>Wildcard character<br /> </td> 
-    </tr> 
-    <tr> 
-    <td>+</td> 
-    <td>Includes assets for replication.</td> 
-    </tr> 
-    <tr> 
-    <td>-</td> 
-    <td>Excludes assets from replication.</td> 
-    </tr> 
-    </tbody> 
+   <table>
+    <tbody>
+    <tr>
+    <td><strong>Character to use</strong></td>
+    <td><strong>How it filters assets for replication</strong></td>
+    </tr>
+    <tr>
+    <td>*</td>
+    <td>Wildcard character<br /> </td>
+    </tr>
+    <tr>
+    <td>+</td>
+    <td>Includes assets for replication.</td>
+    </tr>
+    <tr>
+    <td>-</td>
+    <td>Excludes assets from replication.</td>
+    </tr>
+    </tbody>
    </table>
 
    Navigate to **content/dam/<`locate your asset`&gt;/jcr:content/renditions**.

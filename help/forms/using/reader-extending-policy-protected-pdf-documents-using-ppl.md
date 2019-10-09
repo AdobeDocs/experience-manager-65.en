@@ -1,12 +1,12 @@
 ---
 title: Reader extending policy-protected PDF documents using Portable Protection Library
 seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents. 
-seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents. 
+description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
+seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
 uuid: 0da17641-d24c-43c2-b918-8b5abe1e5473
 contentOwner: khsingh
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 ---
@@ -43,29 +43,29 @@ You can use the `applyUsageRights`Java API to apply usage rights to policy-prote
 
 **Syntax:** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Parameter</strong></p> </td> 
-   <td><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>inputFile</p> </td> 
-   <td><p>Specify InputStream that represents the PDF document to which usage rights are to be applied. You can use LiveCycle Rights Management or AEM Forms document security protected documents.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>certFile</p> </td> 
-   <td><p>Specify File object that represents a .jks file. The .jks file is a keystore file. It points to a certificate that grants usage rights.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>credentialPassword</p> </td> 
-   <td><p>Specify password of the keystore. </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>usageRights</p> </td> 
-   <td><p>Specifies an object of type <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. The usageRights object represents individual rights that can be applied to a policy-protected PDF document.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Parameter</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>inputFile</p> </td>
+   <td><p>Specify InputStream that represents the PDF document to which usage rights are to be applied. You can use LiveCycle Rights Management or AEM Forms document security protected documents.</p> </td>
+  </tr>
+  <tr>
+   <td><p>certFile</p> </td>
+   <td><p>Specify File object that represents a .jks file. The .jks file is a keystore file. It points to a certificate that grants usage rights.</p> </td>
+  </tr>
+  <tr>
+   <td><p>credentialPassword</p> </td>
+   <td><p>Specify password of the keystore. </p> </td>
+  </tr>
+  <tr>
+   <td><p>usageRights</p> </td>
+   <td><p>Specifies an object of type <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. The usageRights object represents individual rights that can be applied to a policy-protected PDF document.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Retrieve usage rights applied to a policy-protected PDF document. &nbsp; {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
@@ -74,17 +74,17 @@ You can use the `getDocumentUsageRights`Java API to retrieve the reader extensio
 
 **Syntax:** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Parameter</strong></p> </td> 
-   <td><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>inDoc</p> </td> 
-   <td><p>Specify InputStream that represents the PDF document from which usage rights are to be retrieved. You can use LiveCycle Rights Management or AEM Forms document security protected documents.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Parameter</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>inDoc</p> </td>
+   <td><p>Specify InputStream that represents the PDF document from which usage rights are to be retrieved. You can use LiveCycle Rights Management or AEM Forms document security protected documents.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Code Sample {#code-sample}
@@ -95,7 +95,7 @@ ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionPro
 //Create a RightsManagementClient object
 RightsManagementClient2 rmClient2= new RightsManagementClient2(factory);
 
-String inputFileName = "C:\\Sample\\protected.pdf"; //Input file can be RM protected or unprotected pdf file 
+String inputFileName = "C:\\Sample\\protected.pdf"; //Input file can be RM protected or unprotected pdf file
 File certFile = new File("C:\\Sample\\cert.jks"); //RE certificate file
 String password = "password"; //password for RE certificate
 UsageRights usageRights = getUsageRights(true,true,false,false,true,true,false,false,false,false,true);
@@ -113,7 +113,7 @@ FileOutputStream outputStream = new FileOutputStream(myFile);
 int read = 0;
 byte[] bytes = new byte[1024];
 
-while ((read = output.read(bytes)) != -1) { 
+while ((read = output.read(bytes)) != -1) {
 
     outputStream.write(bytes, 0, read);
 }
@@ -121,13 +121,13 @@ while ((read = output.read(bytes)) != -1) {
 System.out.println("UsageRights applied successfully to the document. ”);
  outputStream.close();
 inputFileStream.close();
- 
-//Get Usage Rights for the output pdf document 
+
+//Get Usage Rights for the output pdf document
 InputStream fileWithRe = new FileInputStream(myFile);
 
 GetUsageRightsResult usageRights = rmClient2.getRightsManagementReaderExtensionService().getDocumentUsageRights(fileWithRe);
 
-UsageRights rights = usageRights.getRights(); 
+UsageRights rights = usageRights.getRights();
 String right1 = rights1.toString();
 System.out.println("RE rights for the file are :\n"+right1);
  fileWithRe.close();
@@ -140,17 +140,17 @@ You can use the `removeUsageRights`Java API to remove usage rights from a policy
 
 **Syntax:** `InputStream removeUsageRights(InputStream inputFile)`
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Parameter</strong></p> </td> 
-   <td><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p> </p> <p>inputFile</p> </td> 
-   <td>Specify InputStream that represents the PDF document from which usage<br /> rights are to be removed. You can use LiveCycle Rights Management or AEM Forms document security protected documents.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Parameter</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p> </p> <p>inputFile</p> </td>
+   <td>Specify InputStream that represents the PDF document from which usage<br /> rights are to be removed. You can use LiveCycle Rights Management or AEM Forms document security protected documents.</td>
+  </tr>
+ </tbody>
 </table>
 
 #### Code Sample {#code-sample-1}
@@ -161,7 +161,7 @@ ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionPro
 //Create a RightsManagementClient object
 RightsManagementClient2 rmClient2= new RightsManagementClient2(factory);
 
-String inputFileName = "C:\\Sample\\fileWithRe.pdf"; //Input file can be RM protected or unprotected pdf file 
+String inputFileName = "C:\\Sample\\fileWithRe.pdf"; //Input file can be RM protected or unprotected pdf file
 InputStream inputFileStream = new FileInputStream(inputFileName);
 
 InputStream fileStream = rmClient2.getRightsManagementReaderExtensionService().removeUsageRights(inputFileStream);
@@ -174,11 +174,11 @@ FileOutputStream outputStream = new FileOutputStream(myFile);
 int read = 0;
 byte[] bytes = new byte[1024];
 
-while ((read = fileStream.read(bytes)) != -1) { 
-    
+while ((read = fileStream.read(bytes)) != -1) {
+
     outputStream.write(bytes, 0, read);
 }
-System.out.println("RE rights removed successfully from the document.”); 
+System.out.println("RE rights removed successfully from the document.”);
 outputStream.close();
 inputFileStream.close();
 

@@ -5,7 +5,7 @@ description: Learn how to integrate with Adobe Search&Promote.
 seo-description: Learn how to integrate with Adobe Search&Promote.
 uuid: ddc4510a-9bd1-4238-a8a8-5f4f563edd8d
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 87e62346-98d5-40ec-a3ef-904adf667425
@@ -36,7 +36,7 @@ The default URL that is configured for the Search&Promote service is `https://se
 
 **To change the Search&Promote service URL**:
 
-1. Open the [!UICONTROL OSGi] console and tap the **[!UICONTROL Configuration]** tab. ([http://localhost:4502/system/console/configMgr.](http://localhost:4502/system/console/configMgr))  
+1. Open the [!UICONTROL OSGi] console and tap the **[!UICONTROL Configuration]** tab. ([http://localhost:4502/system/console/configMgr.](http://localhost:4502/system/console/configMgr))
 
 1. Click the **[!UICONTROL Day CQ Search&Promote Configuration]** item.
 1. In the **[!UICONTROL Remote Server URI]** text field, enter the URL, then tap **[!UICONTROL Save]**.
@@ -53,7 +53,7 @@ Configure one or more connections to Search&Promote so that your web pages can i
 
    [http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)
 
-1. In the [!UICONTROL Cloud Services] page, tap the **[!UICONTROL Adobe Search&Promote]** link or the **[!UICONTROL Search&Promote]** icon.  
+1. In the [!UICONTROL Cloud Services] page, tap the **[!UICONTROL Adobe Search&Promote]** link or the **[!UICONTROL Search&Promote]** icon.
 
 1. If this is the first time you are configuring Adobe Search&Promote, tap **[!UICONTROL Configure Now]** to open the [!UICONTROL Create Configuration] panel.
 
@@ -62,7 +62,7 @@ Configure one or more connections to Search&Promote so that your web pages can i
    ![chlimage_1-409](assets/chlimage_1-409.png)
 
 1. Enter a **[!UICONTROL Title]** that is recognizable to page authors, and enter a unique **[!UICONTROL Name]**, then tap **[!UICONTROL Create]**.
-  
+
    Also, the newly created Configuration appears below **[!UICONTROL Available Configurations]** on the **[!UICONTROL Cloud Services dashboard]** Adobe Search&Promote list item.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
@@ -74,13 +74,13 @@ Configure one or more connections to Search&Promote so that your web pages can i
 
    >[!NOTE]
    >
-   >In order to get this information yourself, log into the following: 
+   >In order to get this information yourself, log into the following:
    >
    >[https://searchandpromote.omniture.com/center/](https://searchandpromote.omniture.com/center/)
    >
-   >using your valid Seach&Promote credentials (email/password). 
+   >using your valid Seach&Promote credentials (email/password).
    >
-   >Notice the URL in your brouser's address bar. It should look something similar to the following: 
+   >Notice the URL in your brouser's address bar. It should look something similar to the following:
    >
    >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
@@ -130,15 +130,15 @@ When you configure the Search&Promote properties for a page, all child pages inh
 >
 >The service connection must already be configured. See [Configure the connection to Search&Promote](#configuring-the-connection-to-search-promote).
 
-1. Open the **[!UICONTROL Page Properties]** dialog box. For example, on the **[!UICONTROL Websites]** page, right-click the page and click **[!UICONTROL Properties]**.  
+1. Open the **[!UICONTROL Page Properties]** dialog box. For example, on the **[!UICONTROL Websites]** page, right-click the page and click **[!UICONTROL Properties]**.
 
-1. Click the **[!UICONTROL Cloud Services]** tab.  
+1. Click the **[!UICONTROL Cloud Services]** tab.
 
 1. To disable the inheritance of cloud services configurations from a parent page, click the padlock icon next to the inheritance path.
 
    ![sandpinheritpadlock](assets/sandpinheritpadlock.png)
 
-1. Click **[!UICONTROL Add Service]**, select **[!UICONTROL Adobe Search&Promote]**, then click **[!UICONTROL OK]**.  
+1. Click **[!UICONTROL Add Service]**, select **[!UICONTROL Adobe Search&Promote]**, then click **[!UICONTROL OK]**.
 
 1. Select the connection configuration for your Search&Promote account, then click **[!UICONTROL OK]**.
 

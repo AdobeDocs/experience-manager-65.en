@@ -6,7 +6,7 @@ seo-description: Customize the application icon, application name, launch images
 uuid: fece0fa8-c417-45eb-93f1-a91b49835fa0
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 ---
@@ -88,9 +88,9 @@ Perform the following steps to customize the default app icon and the launch ima
 ### For iOS {#for-ios-1}
 
 1. Open the `Capture.xcodeproj` project in Xcode.
-1. In the navigator view of Capture, navigate to **[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**. 
+1. In the navigator view of Capture, navigate to **[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**.
 
-   Update the value for the `CFBundleDisplayName` attribute to a name you want to display for the app.  
+   Update the value for the `CFBundleDisplayName` attribute to a name you want to display for the app.
 
 1. Build and run AEM Forms app on iOS device or iOS simulator.
 
@@ -124,40 +124,40 @@ The login page of the AEM Forms app has logo and background images. The logo is 
 
 **Before you start**
 
-Ensure that you have following images: 
+Ensure that you have following images:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p>Description</p> </th> 
-   <th><p>Size</p> </th> 
-   <th><p>Filename</p> </th> 
-  </tr> 
-  <tr> 
-   <td><p>Logo</p> </td> 
-   <td><p>72 x 72 pixel</p> </td> 
-   <td><p>LC-logo.png</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Background image (Portrait)</p> </td> 
-   <td><p>1280 x 989 pixel</p> </td> 
-   <td><p>Landing_bg.jpeg</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><p>Description</p> </th>
+   <th><p>Size</p> </th>
+   <th><p>Filename</p> </th>
+  </tr>
+  <tr>
+   <td><p>Logo</p> </td>
+   <td><p>72 x 72 pixel</p> </td>
+   <td><p>LC-logo.png</p> </td>
+  </tr>
+  <tr>
+   <td><p>Background image (Portrait)</p> </td>
+   <td><p>1280 x 989 pixel</p> </td>
+   <td><p>Landing_bg.jpeg</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 **To customize images on the login page using Xcode**
 
-1. Open the `Capture.xcodeproj` project in Xcode.  
+1. Open the `Capture.xcodeproj` project in Xcode.
 
-1. Navigate to the `www/wsmobile/images`folder. 
+1. Navigate to the `www/wsmobile/images`folder.
 1. To change logo, replace the default `LC-logo.png` file with the custom `LC-logo.png` file.
 1. To change background, replace the default `Landing_bg.jpeg` file with the custom `Landing_bg.jpeg`file.
 1. Build and run AEM Forms app on iOS device or iOS simulator.
 
 ### To customize images on the login pages using Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}
 
-1. Open the Android project in Eclipse.  
+1. Open the Android project in Eclipse.
 
 1. Navigate to the `assets/www/wsmobile/images`folder.
 1. To change logo, replace the default `LC-logo.png` file with the custom `LC-logo.png` file.
@@ -166,7 +166,7 @@ Ensure that you have following images:
 
 ### To customize images on the login pages using Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
 
-1. Open the `MWSWindows.sln` project in Visual Studio.  
+1. Open the `MWSWindows.sln` project in Visual Studio.
 
 1. Navigate to the `MWSWindows\www\wsmobile\images`folder.
 1. To change logo, replace the default `LC-logo.png` file with the custom `LC-logo.png` file.
@@ -181,32 +181,32 @@ After you login to the AEM Forms app and tap the menu button, you can see the lo
 
 Ensure that you have following image:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p>Description</p> </th> 
-   <th><p>Size</p> </th> 
-   <th><p>Filename</p> </th> 
-  </tr> 
-  <tr> 
-   <td><p>Logo</p> </td> 
-   <td><p>72 x 72 pixel</p> </td> 
-   <td><p>aem_icon.png</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><p>Description</p> </th>
+   <th><p>Size</p> </th>
+   <th><p>Filename</p> </th>
+  </tr>
+  <tr>
+   <td><p>Logo</p> </td>
+   <td><p>72 x 72 pixel</p> </td>
+   <td><p>aem_icon.png</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 **To customize images on the login page using Xcode**
 
-1. Open the `Capture.xcodeproj` project in Xcode.  
+1. Open the `Capture.xcodeproj` project in Xcode.
 
-1. Navigate to the `www/wsmobile/images`folder. 
+1. Navigate to the `www/wsmobile/images`folder.
 1. To change the logo, replace the default `aem_icon.png` file with the custom `aem_icon.png` file.
 1. Build and run AEM Forms app on iOS device or iOS simulator.
 
 ### To customize images on the login pages using Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
-1. Open the Android project in Eclipse.  
+1. Open the Android project in Eclipse.
 
 1. Navigate to the `assets/www/wsmobile/images`folder.
 1. To change the logo, replace the default `aem_icon.png` file with the custom `aem_icon.png` file.
@@ -214,7 +214,7 @@ Ensure that you have following image:
 
 ### To customize images on the login pages using Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
-1. Open the `MWSWindows.sln` project in Visual Studio.  
+1. Open the `MWSWindows.sln` project in Visual Studio.
 
 1. Navigate to the `MWSWindows\www\wsmobile\images`folder.
 1. To change the logo, replace the default `aem_icon.png` file with the custom `aem_icon.png` file.

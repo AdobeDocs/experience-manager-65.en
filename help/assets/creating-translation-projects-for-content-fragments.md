@@ -5,7 +5,7 @@ description: Learn how to translate content fragments.
 seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: heimoz
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
@@ -31,15 +31,15 @@ When the source content fragment is updated or modified, the corresponding local
 
 The Create and translate workflow includes the following options. The procedural steps associated with each option are similar to those associated with the corresponding option for assets.
 
-* Create structure only: For procedure steps, see [Create structure only for assets](translation-projects.md#create-structure-only). 
-* Create a new translation project: For procedure steps, see [Create a new translation project for assets](translation-projects.md#create-a-new-translation-project). 
+* Create structure only: For procedure steps, see [Create structure only for assets](translation-projects.md#create-structure-only).
+* Create a new translation project: For procedure steps, see [Create a new translation project for assets](translation-projects.md#create-a-new-translation-project).
 * Add to existing translation project: For procedure steps, see [Add to existing translation project for assets](translation-projects.md#add-to-existing-translation-project).
 
 ## Update language copies workflow {#update-language-copies-workflow}
 
 The Update language copies workflow includes the following options. The procedural steps associated with each option are similar to those associated with the corresponding option for assets.
 
-* Create a new translation project: For procedure steps, see [Create a new translation project for assets](translation-projects.md#create-a-new-translation-project) (update workflow). 
+* Create a new translation project: For procedure steps, see [Create a new translation project for assets](translation-projects.md#create-a-new-translation-project) (update workflow).
 * Add to existing translation project: For procedure steps, see [Add to existing translation project for assets](translation-projects.md#add-to-existing-translation-project) (update workflow).
 
 You can also create temporary language copies for fragments similar to the way you create temporary copies for assets. For details, see [Creating temporary language copies for assets](translation-projects.md#creating-temporary-language-copies).
@@ -53,7 +53,7 @@ If the content fragment includes a collection, the assets within the collection 
 To be able to translate content fragments that include mixed media, first edit the default translation framework to enable the translation of inline assets and collections associated with content fragments.
 
 1. Click/tap the AEM logo, and navigate to **[!UICONTROL Tools > Deployment > Cloud Services]**.
-1. Locate **[!UICONTROL Translation Integration]** under **[!UICONTROL Adobe Marketing Cloud]**, and click/tap **[!UICONTROL Show Configurations]**. 
+1. Locate **[!UICONTROL Translation Integration]** under **[!UICONTROL Adobe Marketing Cloud]**, and click/tap **[!UICONTROL Show Configurations]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
@@ -122,7 +122,7 @@ To be able to translate content fragments that include mixed media, first edit t
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
-1. Click/tap the project tile to open the project details page. 
+1. Click/tap the project tile to open the project details page.
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 

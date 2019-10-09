@@ -1,11 +1,11 @@
 ---
 title: Choosing a persistence type for an AEM Forms installation
 seo-title: Choosing a persistence type for an AEM Forms installation
-description: Choose a persistence type wisely. It helps you build an efficient and scalable AEM Forms environment. 
-seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment. 
+description: Choose a persistence type wisely. It helps you build an efficient and scalable AEM Forms environment.
+seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
 uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
@@ -13,7 +13,7 @@ discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 
 # Choosing a persistence type for an AEM Forms installation {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
-Choose a persistence type wisely. It helps you build an efficient and scalable AEM Forms environment. 
+Choose a persistence type wisely. It helps you build an efficient and scalable AEM Forms environment.
 
 Persistence is the method to store content on the physical storages. It defines the actual data structure and storage mechanism for the data. MicroKernels act as persistence managers in AEM Forms. AEM Forms supports persistence (MicroKernals) of type TarMK, MongoMK, and RDBMK. You can choose a persistence type for AEM Forms depending upon the purpose and deployment type (Single-Server, Farm, or Cluster) of an AEM Forms instance.
 
@@ -21,33 +21,33 @@ Persistence is the method to store content on the physical storages. It defines 
 >
 >LiveCycle ES4 SP1 uses TarPM persistence to store content.
 
-The following table lists all the supported persistence types along with various parameters to help you choose a persistence type for your environment: 
+The following table lists all the supported persistence types along with various parameters to help you choose a persistence type for your environment:
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th><strong>Installation Type / Cost</strong></th> 
-   <th><strong>TarMK</strong></th> 
-   <th><strong>MongoMk</strong></th> 
-   <th><strong>RDBMK</strong></th> 
+   <th><strong>Installation Type / Cost</strong></th>
+   <th><strong>TarMK</strong></th>
+   <th><strong>MongoMk</strong></th>
+   <th><strong>RDBMK</strong></th>
   </tr>
   <tr>
-   <th><strong>Standalone Setup</strong></th> 
-   <td>Supported<br /> </td> 
-   <td>Supported</td> 
-   <td>Supported</td> 
+   <th><strong>Standalone Setup</strong></th>
+   <td>Supported<br /> </td>
+   <td>Supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
-   <th><strong>Cluster Setup</strong></th> 
-   <td>Not Supported</td> 
-   <td>Supported</td> 
-   <td>Supported</td> 
+   <th><strong>Cluster Setup</strong></th>
+   <td>Not Supported</td>
+   <td>Supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
-   <th><strong>License Cost</strong></th> 
-   <td>Included with AEM </td> 
-   <td>Separate license required</td> 
-   <td>Separate license required</td> 
+   <th><strong>License Cost</strong></th>
+   <td>Included with AEM </td>
+   <td>Separate license required</td>
+   <td>Separate license required</td>
   </tr>
  </tbody>
 </table>

@@ -7,7 +7,7 @@ uuid: c61997b8-6c36-4bd9-90e5-411841a6c176
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 ---
 
@@ -40,68 +40,68 @@ The following table describes the file manipulation of five sample files (file1,
 <table>
  <thead>
   <tr>
-   <th><p>Folder</p></th> 
-   <th><p>T1</p></th> 
-   <th><p>T2</p></th> 
-   <th><p>T3</p></th> 
-   <th><p>T4</p></th> 
-   <th><p>T5</p></th> 
-   <th><p>T6</p></th> 
-   <th><p>T7</p></th> 
-  </tr> 
- </thead> 
+   <th><p>Folder</p></th>
+   <th><p>T1</p></th>
+   <th><p>T2</p></th>
+   <th><p>T3</p></th>
+   <th><p>T4</p></th>
+   <th><p>T5</p></th>
+   <th><p>T6</p></th>
+   <th><p>T7</p></th>
+  </tr>
+ </thead>
  <tbody>
   <tr>
-   <td><p>Input</p></td> 
-   <td><p>file1, file2, file3, file4</p></td> 
-   <td><p>file2, file3, file4</p></td> 
-   <td><p>file3, file4</p></td> 
-   <td><p>file4</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>file5</p></td> 
-   <td><p>empty</p></td> 
-  </tr> 
+   <td><p>Input</p></td>
+   <td><p>file1, file2, file3, file4</p></td>
+   <td><p>file2, file3, file4</p></td>
+   <td><p>file3, file4</p></td>
+   <td><p>file4</p></td>
+   <td><p>empty</p></td>
+   <td><p>file5</p></td>
+   <td><p>empty</p></td>
+  </tr>
   <tr>
-   <td><p>Stage</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>file1</p></td> 
-   <td><p>file2</p></td> 
-   <td><p>file3</p></td> 
-   <td><p>file4</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>file5</p></td> 
-  </tr> 
+   <td><p>Stage</p></td>
+   <td><p>empty</p></td>
+   <td><p>file1</p></td>
+   <td><p>file2</p></td>
+   <td><p>file3</p></td>
+   <td><p>file4</p></td>
+   <td><p>empty</p></td>
+   <td><p>file5</p></td>
+  </tr>
   <tr>
-   <td><p>Output</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>file1_out</p></td> 
-   <td><p>file1_out, file2_out</p></td> 
-   <td><p>file1_out, file2_out</p></td> 
-   <td><p>file1_out, file2_out, file4_out</p></td> 
-   <td><p>file1_out, file2_out, file4_out</p></td> 
-  </tr> 
+   <td><p>Output</p></td>
+   <td><p>empty</p></td>
+   <td><p>empty</p></td>
+   <td><p>file1_out</p></td>
+   <td><p>file1_out, file2_out</p></td>
+   <td><p>file1_out, file2_out</p></td>
+   <td><p>file1_out, file2_out, file4_out</p></td>
+   <td><p>file1_out, file2_out, file4_out</p></td>
+  </tr>
   <tr>
-   <td><p>Failure</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>file3_fail, file3 </p></td> 
-   <td><p>file3_fail, file3 </p></td> 
-   <td><p>file3_fail, file3 </p></td> 
-  </tr> 
+   <td><p>Failure</p></td>
+   <td><p>empty</p></td>
+   <td><p>empty</p></td>
+   <td><p>empty</p></td>
+   <td><p>empty</p></td>
+   <td><p>file3_fail, file3 </p></td>
+   <td><p>file3_fail, file3 </p></td>
+   <td><p>file3_fail, file3 </p></td>
+  </tr>
   <tr>
-   <td><p>Preserve</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>empty</p></td> 
-   <td><p>file1 </p></td> 
-   <td><p>file1, file2 </p></td> 
-   <td><p>file1, file2 </p></td> 
-   <td><p>file1, file2, file4 </p></td> 
-   <td><p>file1, file2, file4 </p></td> 
-  </tr> 
- </tbody> 
+   <td><p>Preserve</p></td>
+   <td><p>empty</p></td>
+   <td><p>empty</p></td>
+   <td><p>file1 </p></td>
+   <td><p>file1, file2 </p></td>
+   <td><p>file1, file2 </p></td>
+   <td><p>file1, file2, file4 </p></td>
+   <td><p>file1, file2, file4 </p></td>
+  </tr>
+ </tbody>
 </table>
 
 The following text describes file manipulation for each time:
@@ -146,7 +146,7 @@ If a more recent backup was taken, you can restore the files. When restoring the
 
 The following strategies can minimize output and input folder data loss when restoring a watched folder:
 
-* Back up output and failure folders frequently, such as hourly, to avoid loss of result and failure files. 
+* Back up output and failure folders frequently, such as hourly, to avoid loss of result and failure files.
 * Back up the input files in a folder other than the watched folder. This ensures file availability after recovery in case you cannot find the files in either the output or failure folder. Ensure that your file naming scheme is consistent.
 
   For example, if you are saving the output with `%F.`*extension*, the output file will have the same name as the input file. This helps you to determine which input files are manipulated and which ones must be resubmitted. If you see only file1_out file in the result folder and not file2_out, file3_out and file4_out, you must resubmit file2, file3, and file4.

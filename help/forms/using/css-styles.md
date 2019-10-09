@@ -1,12 +1,12 @@
 ---
 title: Creating CSS styles for HTML5 forms
 seo-title: Creating CSS styles for HTML5 forms
-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element. 
-seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element. 
+description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
+seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
 uuid: 43c689b4-243c-43de-a8be-1eef10d75295
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 ---
@@ -55,7 +55,7 @@ The widget element contains the user interface element for interaction with user
        widget content
      </div>
 </div>
- 
+
 <!--field without caption-->
 <div class="widget numericfieldwidget numericInput">
    widget content
@@ -66,54 +66,54 @@ Besides the type and name class, the field component also contains an additional
 
 ## CSS classes for different components {#css-classes-for-different-components}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Component</strong></td> 
-   <td><strong>Type</strong></td> 
-   <td><strong>Name</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Page</td> 
-   <td>page</td> 
-   <td>User-defined name<br /> or<br /> Page&lt;pageNumber&gt; (default)</td> 
-  </tr> 
-  <tr> 
-   <td>Content Area</td> 
-   <td>contentarea</td> 
-   <td>User-defined name</td> 
-  </tr> 
-  <tr> 
-   <td>Subform</td> 
-   <td>subform</td> 
-   <td>User-defined name</td> 
-  </tr> 
-  <tr> 
-   <td>Exclusion Group</td> 
-   <td>exclgroup</td> 
-   <td>User-defined name</td> 
-  </tr> 
-  <tr> 
-   <td>Draw</td> 
-   <td>draw</td> 
-   <td>User-defined name</td> 
-  </tr> 
-  <tr> 
-   <td>Field</td> 
-   <td>field</td> 
-   <td>User-defined name</td> 
-  </tr> 
-  <tr> 
-   <td>Caption</td> 
-   <td>caption</td> 
-   <td>NA</td> 
-  </tr> 
-  <tr> 
-   <td>Widget</td> 
-   <td>widget</td> 
-   <td>The widget developer defines it (For user-defined widgets see the table in the following section)</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Component</strong></td>
+   <td><strong>Type</strong></td>
+   <td><strong>Name</strong></td>
+  </tr>
+  <tr>
+   <td>Page</td>
+   <td>page</td>
+   <td>User-defined name<br /> or<br /> Page&lt;pageNumber&gt; (default)</td>
+  </tr>
+  <tr>
+   <td>Content Area</td>
+   <td>contentarea</td>
+   <td>User-defined name</td>
+  </tr>
+  <tr>
+   <td>Subform</td>
+   <td>subform</td>
+   <td>User-defined name</td>
+  </tr>
+  <tr>
+   <td>Exclusion Group</td>
+   <td>exclgroup</td>
+   <td>User-defined name</td>
+  </tr>
+  <tr>
+   <td>Draw</td>
+   <td>draw</td>
+   <td>User-defined name</td>
+  </tr>
+  <tr>
+   <td>Field</td>
+   <td>field</td>
+   <td>User-defined name</td>
+  </tr>
+  <tr>
+   <td>Caption</td>
+   <td>caption</td>
+   <td>NA</td>
+  </tr>
+  <tr>
+   <td>Widget</td>
+   <td>widget</td>
+   <td>The widget developer defines it (For user-defined widgets see the table in the following section)</td>
+  </tr>
+ </tbody>
 </table>
 
 ## CSS classes for different Fields {#css-classes-for-different-fields}
@@ -122,100 +122,100 @@ The AEM Forms Designer supports different types of fields in a form like Numeric
 
 Every field has an associated widget representing the UI element. The classes of each field and the widgets associated with each field are listed below.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Field Type</strong></td> 
-   <td><strong>Subtype</strong></td> 
-   <td><strong>Widget Name</strong></td> 
-   <td><strong>Widget Type</strong></td> 
-   <td><strong>HTML UI Tag</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Button<br type="_moz" /> </td> 
-   <td>NA</td> 
-   <td>xfaButton<br type="_moz" /> </td> 
-   <td>buttonfieldwidget<br type="_moz" /> </td> 
-   <td>input type=button<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>CheckButton<br type="_moz" /> </td> 
-   <td>checkboxfield<br /> </td> 
-   <td>XfaCheckBox<br type="_moz" /> </td> 
-   <td>checkboxfieldwidget<br type="_moz" /> </td> 
-   <td>input type=checkbox<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>DateField<br type="_moz" /> </td> 
-   <td>datefield<br type="_moz" /> </td> 
-   <td>dateField<br type="_moz" /> </td> 
-   <td>datefieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>DateTimeField<br type="_moz" /> </td> 
-   <td>textfield<br type="_moz" /> </td> 
-   <td>textField<br type="_moz" /> </td> 
-   <td>textfieldwidget</td> 
-   <td>input type=text<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>DecimalField<br type="_moz" /> </td> 
-   <td>numericfield<br type="_moz" /> </td> 
-   <td>numericInput<br type="_moz" /> </td> 
-   <td>numericfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>DropDown<br type="_moz" /> </td> 
-   <td>choicelist<br type="_moz" /> </td> 
-   <td>dropDownListWidget<br type="_moz" /> </td> 
-   <td>choicelistwidget<br type="_moz" /> </td> 
-   <td>select</td> 
-  </tr> 
-  <tr> 
-   <td>ListBox<br type="_moz" /> </td> 
-   <td>choicelist<br type="_moz" /> </td> 
-   <td>listBoxWidget<br type="_moz" /> </td> 
-   <td>choicelistwidget<br type="_moz" /> </td> 
-   <td>ol</td> 
-  </tr> 
-  <tr> 
-   <td>NumericField<br type="_moz" /> </td> 
-   <td>numericfield<br type="_moz" /> </td> 
-   <td>numericInput<br type="_moz" /> </td> 
-   <td>numericfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>PasswordField<br type="_moz" /> </td> 
-   <td>passwordfield<br type="_moz" /> </td> 
-   <td>defaultWidget<br type="_moz" /> </td> 
-   <td>passwordfieldwidget<br type="_moz" /> </td> 
-   <td>input type=password<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>RadioButton<br type="_moz" /> </td> 
-   <td>radiofield<br type="_moz" /> </td> 
-   <td>XfaCheckBox<br type="_moz" /> </td> 
-   <td>radiofieldwidget<br type="_moz" /> </td> 
-   <td>input type=radio<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>TextField<br type="_moz" /> </td> 
-   <td>textfield<br type="_moz" /> </td> 
-   <td>textField<br type="_moz" /> </td> 
-   <td>textfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>TimeField<br type="_moz" /> </td> 
-   <td>textfield<br type="_moz" /> </td> 
-   <td>textField<br type="_moz" /> </td> 
-   <td>textfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Field Type</strong></td>
+   <td><strong>Subtype</strong></td>
+   <td><strong>Widget Name</strong></td>
+   <td><strong>Widget Type</strong></td>
+   <td><strong>HTML UI Tag</strong></td>
+  </tr>
+  <tr>
+   <td>Button<br type="_moz" /> </td>
+   <td>NA</td>
+   <td>xfaButton<br type="_moz" /> </td>
+   <td>buttonfieldwidget<br type="_moz" /> </td>
+   <td>input type=button<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>CheckButton<br type="_moz" /> </td>
+   <td>checkboxfield<br /> </td>
+   <td>XfaCheckBox<br type="_moz" /> </td>
+   <td>checkboxfieldwidget<br type="_moz" /> </td>
+   <td>input type=checkbox<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>DateField<br type="_moz" /> </td>
+   <td>datefield<br type="_moz" /> </td>
+   <td>dateField<br type="_moz" /> </td>
+   <td>datefieldwidget<br type="_moz" /> </td>
+   <td>input type=text<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>DateTimeField<br type="_moz" /> </td>
+   <td>textfield<br type="_moz" /> </td>
+   <td>textField<br type="_moz" /> </td>
+   <td>textfieldwidget</td>
+   <td>input type=text<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>DecimalField<br type="_moz" /> </td>
+   <td>numericfield<br type="_moz" /> </td>
+   <td>numericInput<br type="_moz" /> </td>
+   <td>numericfieldwidget<br type="_moz" /> </td>
+   <td>input type=text<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>DropDown<br type="_moz" /> </td>
+   <td>choicelist<br type="_moz" /> </td>
+   <td>dropDownListWidget<br type="_moz" /> </td>
+   <td>choicelistwidget<br type="_moz" /> </td>
+   <td>select</td>
+  </tr>
+  <tr>
+   <td>ListBox<br type="_moz" /> </td>
+   <td>choicelist<br type="_moz" /> </td>
+   <td>listBoxWidget<br type="_moz" /> </td>
+   <td>choicelistwidget<br type="_moz" /> </td>
+   <td>ol</td>
+  </tr>
+  <tr>
+   <td>NumericField<br type="_moz" /> </td>
+   <td>numericfield<br type="_moz" /> </td>
+   <td>numericInput<br type="_moz" /> </td>
+   <td>numericfieldwidget<br type="_moz" /> </td>
+   <td>input type=text<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>PasswordField<br type="_moz" /> </td>
+   <td>passwordfield<br type="_moz" /> </td>
+   <td>defaultWidget<br type="_moz" /> </td>
+   <td>passwordfieldwidget<br type="_moz" /> </td>
+   <td>input type=password<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>RadioButton<br type="_moz" /> </td>
+   <td>radiofield<br type="_moz" /> </td>
+   <td>XfaCheckBox<br type="_moz" /> </td>
+   <td>radiofieldwidget<br type="_moz" /> </td>
+   <td>input type=radio<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>TextField<br type="_moz" /> </td>
+   <td>textfield<br type="_moz" /> </td>
+   <td>textField<br type="_moz" /> </td>
+   <td>textfieldwidget<br type="_moz" /> </td>
+   <td>input type=text<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>TimeField<br type="_moz" /> </td>
+   <td>textfield<br type="_moz" /> </td>
+   <td>textField<br type="_moz" /> </td>
+   <td>textfieldwidget<br type="_moz" /> </td>
+   <td>input type=text<br type="_moz" /> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## CSS classes for different Draw Elements {#css-classes-for-different-draw-elements}

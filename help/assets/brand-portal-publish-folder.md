@@ -5,7 +5,7 @@ description: Learn how to publish and unpublish folders to Brand Portal.
 seo-description: Learn how to publish and unpublish folders to Brand Portal.
 uuid: 6b77306b-d2e3-457f-81d1-4ee3d9ea4923
 contentOwner: mgulati
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
 discoiquuid: a3ad04a8-29f4-4975-95dd-6e6c726749db
@@ -64,7 +64,7 @@ You have the option to unpublish folders from Brand Portal quickly or schedule i
 
    ![publish2bp-1](assets/publish2bp-1.png)
 
-2. From the toolbar, tap/click **[!UICONTROL Manage Publication]**.  
+2. From the toolbar, tap/click **[!UICONTROL Manage Publication]**.
 
 3. **Unpublish from Brand Portal now**
 

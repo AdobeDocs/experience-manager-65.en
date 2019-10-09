@@ -6,7 +6,7 @@ seo-description: You can manage your application and mobile app content from AEM
 uuid: 0d182989-eb83-4207-a8e0-050edbf98ff9
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 ---
@@ -41,7 +41,7 @@ The **Manage App** Tile displays available application information:
 * Last Modified
 * Last Modified By
 
-![chlimage_1-55](assets/chlimage_1-55.png) 
+![chlimage_1-55](assets/chlimage_1-55.png)
 
 ## The Manage Connection Tile {#the-manage-connection-tile}
 
@@ -57,14 +57,14 @@ The **Manage Connection** tile displays the AEM Mobile On-Demand Services connec
 >
 >See [Configuring Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) for details.
 
-![chlimage_1-56](assets/chlimage_1-56.png) 
+![chlimage_1-56](assets/chlimage_1-56.png)
 
 ## Managing Entities {#managing-entities}
 
 These 3 tiles provide an overview of the state of an app's content:
 
 * **banners**
-* **articles** 
+* **articles**
 * **collections**
 
 Each tile can be expanded to provide a more detailed list view by clicking on the ellipsis (...) in the bottom right corner. These list views provide an alternate way to access common Mobile On Demand actions like delete, upload, and edit properties.

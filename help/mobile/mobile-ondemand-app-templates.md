@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about creating and adding templates a
 uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 ---
 
@@ -62,7 +62,7 @@ Once you create an app using this template, you can add articles, banners, and c
 
 Each entity type has two out-of-the-box templates. These are:
 
-* **Default templates:** used for content creation with applicable default properties/structure 
+* **Default templates:** used for content creation with applicable default properties/structure
 * **Imported templates:** used for importing content from AEM Mobile with applicable default properties/structure
 
 ### Article Templates {#article-templates}
@@ -78,7 +78,7 @@ The Unlimited Article is a sample template representing a typical AEM Mobile On-
 1. Click **Next** to enter the details for social sharing.
 1. Click **Create** to finish the process of creating an article using the sample. You either click **Done** or **Edit Article** to edit the properties of this article.
 
-![chlimage_1-71](assets/chlimage_1-71.png) 
+![chlimage_1-71](assets/chlimage_1-71.png)
 
 ### Adding Components to Article {#adding-components-to-article}
 
@@ -90,7 +90,7 @@ Select an article, you want to edit and click on **Edit** to add components to t
 
 Choose the '**+**' on the left panel to add components to your article.
 
-![chlimage_1-74](assets/chlimage_1-74.png) 
+![chlimage_1-74](assets/chlimage_1-74.png)
 
 ### Creating Out-of-the-box templates {#creating-out-of-the-box-templates}
 

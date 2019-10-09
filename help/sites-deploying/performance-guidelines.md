@@ -5,7 +5,7 @@ description: This article provides general guidelines on how to optimize the per
 seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
 uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
@@ -22,233 +22,233 @@ This page provides general guidelines on how to optimize the performance of your
 
 Illustrated below are the deployment options available for AEM (scroll to view all the options):
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>AEM</strong></p> <p><strong>Product</strong></p> </td> 
-   <td><p><strong>Topology</strong></p> </td> 
-   <td><p><strong>Operating System</strong></p> </td> 
-   <td><p><strong>Application Server</strong></p> </td> 
-   <td><p><strong>JRE</strong></p> </td> 
-   <td><p><strong>Security</strong></p> </td> 
-   <td><p><strong>Micro Kernel</strong></p> </td> 
-   <td><p><strong>Datastore</strong></p> </td> 
-   <td><p><strong>Indexing</strong></p> </td> 
-   <td><p><strong>Web Server</strong></p> </td> 
-   <td><p><strong>Browser</strong></p> </td> 
-   <td><p><strong>Marketing Cloud</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Sites</p> </td> 
-   <td><p>Non-HA</p> </td> 
-   <td><p>Windows</p> </td> 
-   <td><p>CQSE</p> </td> 
-   <td><p>Oracle</p> </td> 
-   <td><p>LDAP</p> </td> 
-   <td><p>Tar</p> </td> 
-   <td><p>Segment</p> </td> 
-   <td><p>Property</p> </td> 
-   <td><p>Apache</p> </td> 
-   <td><p>Edge</p> </td> 
-   <td><p>Target</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Assets</p> </td> 
-   <td><p>Publish-HA</p> </td> 
-   <td><p>Solaris</p> </td> 
-   <td><p>WebLogic</p> </td> 
-   <td><p>IBM</p> </td> 
-   <td><p>SAML</p> </td> 
-   <td><p>MongoDB</p> </td> 
-   <td><p>File</p> </td> 
-   <td><p>Lucene</p> </td> 
-   <td><p>IIS</p> </td> 
-   <td><p>IE</p> </td> 
-   <td><p>Analytics</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Communities</p> </td> 
-   <td><p>Author-CS</p> </td> 
-   <td><p>Red Hat</p> </td> 
-   <td><p>WebSphere</p> </td> 
-   <td><p>HP</p> </td> 
-   <td><p>Oauth</p> </td> 
-   <td><p>RDB/Oracle</p> </td> 
-   <td><p>S3/Azure</p> </td> 
-   <td><p>Solr</p> </td> 
-   <td><p>iPlanet</p> </td> 
-   <td><p>FireFox</p> </td> 
-   <td><p>Campaign</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Forms</p> </td> 
-   <td><p>Author-Offload</p> </td> 
-   <td><p>HP-UX</p> </td> 
-   <td><p>Tomcat</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p>RDB/DB2</p> </td> 
-   <td><p>MongoDB</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Chrome</p> </td> 
-   <td><p>Social</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Mobile</p> </td> 
-   <td><p>Author-Cluster</p> </td> 
-   <td><p>IBM AIX</p> </td> 
-   <td><p>JBoss</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p>RDB/MySQL</p> </td> 
-   <td><p>RDBMS</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Safari</p> </td> 
-   <td><p>Audience</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Multi-site</p> </td> 
-   <td><p>ASRP</p> </td> 
-   <td><p>SUSE</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p>RDB/SQLServer</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Assets</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Commerce</p> </td> 
-   <td><p>MSRP</p> </td> 
-   <td><p>Apple OS</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Activation</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Dynamic Media</p> </td> 
-   <td><p>JSRP</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Mobile</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Brand Portal</p> </td> 
-   <td><p>J2E</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>AoD</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>LiveFyre</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Screens</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Doc Security</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Process Mgt</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Desktop app</p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-   <td><p> </p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>AEM</strong></p> <p><strong>Product</strong></p> </td>
+   <td><p><strong>Topology</strong></p> </td>
+   <td><p><strong>Operating System</strong></p> </td>
+   <td><p><strong>Application Server</strong></p> </td>
+   <td><p><strong>JRE</strong></p> </td>
+   <td><p><strong>Security</strong></p> </td>
+   <td><p><strong>Micro Kernel</strong></p> </td>
+   <td><p><strong>Datastore</strong></p> </td>
+   <td><p><strong>Indexing</strong></p> </td>
+   <td><p><strong>Web Server</strong></p> </td>
+   <td><p><strong>Browser</strong></p> </td>
+   <td><p><strong>Marketing Cloud</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Sites</p> </td>
+   <td><p>Non-HA</p> </td>
+   <td><p>Windows</p> </td>
+   <td><p>CQSE</p> </td>
+   <td><p>Oracle</p> </td>
+   <td><p>LDAP</p> </td>
+   <td><p>Tar</p> </td>
+   <td><p>Segment</p> </td>
+   <td><p>Property</p> </td>
+   <td><p>Apache</p> </td>
+   <td><p>Edge</p> </td>
+   <td><p>Target</p> </td>
+  </tr>
+  <tr>
+   <td><p>Assets</p> </td>
+   <td><p>Publish-HA</p> </td>
+   <td><p>Solaris</p> </td>
+   <td><p>WebLogic</p> </td>
+   <td><p>IBM</p> </td>
+   <td><p>SAML</p> </td>
+   <td><p>MongoDB</p> </td>
+   <td><p>File</p> </td>
+   <td><p>Lucene</p> </td>
+   <td><p>IIS</p> </td>
+   <td><p>IE</p> </td>
+   <td><p>Analytics</p> </td>
+  </tr>
+  <tr>
+   <td><p>Communities</p> </td>
+   <td><p>Author-CS</p> </td>
+   <td><p>Red Hat</p> </td>
+   <td><p>WebSphere</p> </td>
+   <td><p>HP</p> </td>
+   <td><p>Oauth</p> </td>
+   <td><p>RDB/Oracle</p> </td>
+   <td><p>S3/Azure</p> </td>
+   <td><p>Solr</p> </td>
+   <td><p>iPlanet</p> </td>
+   <td><p>FireFox</p> </td>
+   <td><p>Campaign</p> </td>
+  </tr>
+  <tr>
+   <td><p>Forms</p> </td>
+   <td><p>Author-Offload</p> </td>
+   <td><p>HP-UX</p> </td>
+   <td><p>Tomcat</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p>RDB/DB2</p> </td>
+   <td><p>MongoDB</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p>Chrome</p> </td>
+   <td><p>Social</p> </td>
+  </tr>
+  <tr>
+   <td><p>Mobile</p> </td>
+   <td><p>Author-Cluster</p> </td>
+   <td><p>IBM AIX</p> </td>
+   <td><p>JBoss</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p>RDB/MySQL</p> </td>
+   <td><p>RDBMS</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p>Safari</p> </td>
+   <td><p>Audience</p> </td>
+  </tr>
+  <tr>
+   <td><p>Multi-site</p> </td>
+   <td><p>ASRP</p> </td>
+   <td><p>SUSE</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p>RDB/SQLServer</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p>Assets</p> </td>
+  </tr>
+  <tr>
+   <td><p>Commerce</p> </td>
+   <td><p>MSRP</p> </td>
+   <td><p>Apple OS</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p>Activation</p> </td>
+  </tr>
+  <tr>
+   <td><p>Dynamic Media</p> </td>
+   <td><p>JSRP</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p>Mobile</p> </td>
+  </tr>
+  <tr>
+   <td><p>Brand Portal</p> </td>
+   <td><p>J2E</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td><p>AoD</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td><p>LiveFyre</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Screens</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Doc Security</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Process Mgt</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Desktop app</p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+   <td><p> </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -281,13 +281,13 @@ For more information on the AEM platform, see [What is AEM](/help/sites-deployin
 
 There are three important building blocks to an AEM deployment. The **Author Instance** which is used by content authors, editors, and approvers to create and review content. When the content is approved, it is published to a second instance type named the **Publish Instance** from where it is accessed by the end users. The third building block is the **Dispatcher** which is a module that handles caching and URL filtering and is installed on the webserver. For additional information about the AEM architecture, see [Typical Deployment Scenarios](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
-![chlimage_1-1](assets/chlimage_1-1.png) 
+![chlimage_1-1](assets/chlimage_1-1.png)
 
 ### Micro Kernels {#micro-kernels}
 
 Micro Kernels act as persistence managers in AEM. There are three types of Micro Kernels used with AEM: TarMK, MongoDB, and Relational Database (under restricted support). Choosing one to fit your needs depends on the purpose of your instance and the deployment type you are considering. For additional information about Micro Kernels, see the [Recommended Deployments](/help/sites-deploying/recommended-deploys.md) page.
 
-![chlimage_1-2](assets/chlimage_1-2.png) 
+![chlimage_1-2](assets/chlimage_1-2.png)
 
 ### Nodestore {#nodestore}
 
@@ -301,7 +301,7 @@ In AEM, binary data can be stored independently from content nodes. The location
 >
 >The Relational Database Micro Kernel is under restricted support. Contact [Adobe Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) before using this type of Micro Kernel.
 
-![chlimage_1-3](assets/chlimage_1-3.png) 
+![chlimage_1-3](assets/chlimage_1-3.png)
 
 ### Data Store {#data-store}
 
@@ -325,7 +325,7 @@ Listed in this section are the custom index providers used with AEM. To know mor
 >
 >For most deployments, Adobe recommends using the Lucene Index. You should use Solr only for scalability in specialized and complex deployments.
 
-![chlimage_1-4](assets/chlimage_1-4.png) 
+![chlimage_1-4](assets/chlimage_1-4.png)
 
 ### Development Guidelines {#development-guidelines}
 
@@ -420,63 +420,63 @@ Illustrated below are the architecture guidelines for AEM sites and AEM Assets.
 
 **Tar Architecture Guidelines for AEM Assets**
 
-![chlimage_1-6](assets/chlimage_1-6.png) 
+![chlimage_1-6](assets/chlimage_1-6.png)
 
 ### TarMK Settings Guideline {#tarmk-settings-guideline}
 
 For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Setting</strong></td> 
-   <td><strong>Parameter</strong></td> 
-   <td><strong>Value</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Sling Job Queues</td> 
-   <td><code>queue.maxparallel</code></td> 
-   <td>Set value to half of the number of CPU cores. </td> 
-   <td>By default the number of concurrent threads per job queue is equal to the number of CPU cores.</td> 
-  </tr> 
-  <tr> 
-   <td>Granite Transient Workflow Queue</td> 
-   <td><code>Max Parallel</code></td> 
-   <td>Set value to half of the number of CPU cores</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>JVM parameters</td> 
-   <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td> 
-   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> </td> 
-   <td>Add these JVM parameters in the AEM start script to prevent expansive queries from overloading the systems.</td> 
-  </tr> 
-  <tr> 
-   <td>Lucene index configuration</td> 
-   <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td> 
-   <td><p>Enabled</p> <p>Enabled</p> <p>Enabled</p> </td> 
-   <td>For more details on the available parameters, see <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">this page</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>Data Store = S3 Datastore</td> 
-   <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td> 
-   <td><p>1048576 (1MB) or smaller</p> <p>2-10% of max heap size</p> </td> 
-   <td>See also <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">Data Store Configurations</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>DAM Update Asset workflow</td> 
-   <td><code>Transient Workflow</code></td> 
-   <td>checked</td> 
-   <td>This workflow manages the update of assets.</td> 
-  </tr> 
-  <tr> 
-   <td>DAM MetaData Writeback</td> 
-   <td><code>Transient Workflow</code></td> 
-   <td>checked</td> 
-   <td>This workflow manages XMP write-back to the original binary and sets the last modified date in JCR.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Setting</strong></td>
+   <td><strong>Parameter</strong></td>
+   <td><strong>Value</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Sling Job Queues</td>
+   <td><code>queue.maxparallel</code></td>
+   <td>Set value to half of the number of CPU cores. </td>
+   <td>By default the number of concurrent threads per job queue is equal to the number of CPU cores.</td>
+  </tr>
+  <tr>
+   <td>Granite Transient Workflow Queue</td>
+   <td><code>Max Parallel</code></td>
+   <td>Set value to half of the number of CPU cores</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>JVM parameters</td>
+   <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td>
+   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> </td>
+   <td>Add these JVM parameters in the AEM start script to prevent expansive queries from overloading the systems.</td>
+  </tr>
+  <tr>
+   <td>Lucene index configuration</td>
+   <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
+   <td><p>Enabled</p> <p>Enabled</p> <p>Enabled</p> </td>
+   <td>For more details on the available parameters, see <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">this page</a>.</td>
+  </tr>
+  <tr>
+   <td>Data Store = S3 Datastore</td>
+   <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td>
+   <td><p>1048576 (1MB) or smaller</p> <p>2-10% of max heap size</p> </td>
+   <td>See also <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">Data Store Configurations</a>.</td>
+  </tr>
+  <tr>
+   <td>DAM Update Asset workflow</td>
+   <td><code>Transient Workflow</code></td>
+   <td>checked</td>
+   <td>This workflow manages the update of assets.</td>
+  </tr>
+  <tr>
+   <td>DAM MetaData Writeback</td>
+   <td><code>Transient Workflow</code></td>
+   <td>checked</td>
+   <td>This workflow manages XMP write-back to the original binary and sets the last modified date in JCR.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### TarMK Performance Benchmark {#tarmk-performance-benchmark}
@@ -505,7 +505,7 @@ The benchmark tests were performed on the following specifications:
 >
 >The numbers presented below have been normalized to 1 as the baseline and are not the actual throughput numbers.
 
-![chlimage_1-7](assets/chlimage_1-7.png) ![chlimage_1-8](assets/chlimage_1-8.png) 
+![chlimage_1-7](assets/chlimage_1-7.png) ![chlimage_1-8](assets/chlimage_1-8.png)
 
 ## MongoMK {#mongomk}
 
@@ -530,63 +530,63 @@ To establish good performance when using MongoMK, you should start from the foll
 >
 >Binary-less replication should be turned **ON** if the File Datastore is shared.
 
-![chlimage_1-9](assets/chlimage_1-9.png) 
+![chlimage_1-9](assets/chlimage_1-9.png)
 
 ### MongoMK Settings Guidelines {#mongomk-settings-guidelines}
 
 For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Setting</strong></td> 
-   <td><strong>Parameter</strong></td> 
-   <td><strong>Value (default)</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Sling Job Queues</td> 
-   <td><code>queue.maxparallel</code></td> 
-   <td>Set value to half of the number of CPU cores. </td> 
-   <td>By default the number of concurrent threads per job queue is equal to the number of CPU cores.</td> 
-  </tr> 
-  <tr> 
-   <td>Granite Transient Workflow Queue</td> 
-   <td><code>Max Parallel</code></td> 
-   <td>Set value to half of the number of CPU cores.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>JVM parameters</td> 
-   <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td> 
-   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> <p>60000</p> </td> 
-   <td>Add these JVM parameters in the AEM start script to prevent expansive queries from overloading the systems.</td> 
-  </tr> 
-  <tr> 
-   <td>Lucene index configuration</td> 
-   <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td> 
-   <td><p>Enabled</p> <p>Enabled</p> <p>Enabled</p> </td> 
-   <td>For more details on available parameters, see <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">this page</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>Data Store = S3 Datastore</td> 
-   <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td> 
-   <td><p>1048576 (1MB) or smaller</p> <p>2-10% of max heap size</p> </td> 
-   <td>See also <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">Data Store Configurations</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>DocumentNodeStoreService</td> 
-   <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td> 
-   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td> 
-   <td><p>The default size of the cache is set to 256 MB.</p> <p>Has impact on the time it takes to perform cache invalidation.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>oak-observation</td> 
-   <td><p><code>thread pool</code></p> <p><code>length</code></p> </td> 
-   <td><p>min &amp; max = 20</p> <p>50000</p> </td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Setting</strong></td>
+   <td><strong>Parameter</strong></td>
+   <td><strong>Value (default)</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Sling Job Queues</td>
+   <td><code>queue.maxparallel</code></td>
+   <td>Set value to half of the number of CPU cores. </td>
+   <td>By default the number of concurrent threads per job queue is equal to the number of CPU cores.</td>
+  </tr>
+  <tr>
+   <td>Granite Transient Workflow Queue</td>
+   <td><code>Max Parallel</code></td>
+   <td>Set value to half of the number of CPU cores.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>JVM parameters</td>
+   <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
+   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> <p>60000</p> </td>
+   <td>Add these JVM parameters in the AEM start script to prevent expansive queries from overloading the systems.</td>
+  </tr>
+  <tr>
+   <td>Lucene index configuration</td>
+   <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
+   <td><p>Enabled</p> <p>Enabled</p> <p>Enabled</p> </td>
+   <td>For more details on available parameters, see <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">this page</a>.</td>
+  </tr>
+  <tr>
+   <td>Data Store = S3 Datastore</td>
+   <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td>
+   <td><p>1048576 (1MB) or smaller</p> <p>2-10% of max heap size</p> </td>
+   <td>See also <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">Data Store Configurations</a>.</td>
+  </tr>
+  <tr>
+   <td>DocumentNodeStoreService</td>
+   <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td>
+   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
+   <td><p>The default size of the cache is set to 256 MB.</p> <p>Has impact on the time it takes to perform cache invalidation.</p> </td>
+  </tr>
+  <tr>
+   <td>oak-observation</td>
+   <td><p><code>thread pool</code></p> <p><code>length</code></p> </td>
+   <td><p>min &amp; max = 20</p> <p>50000</p> </td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### MongoMK Performance Benchmark {#mongomk-performance-benchmark}
@@ -615,7 +615,7 @@ The benchmark tests were performed on the following specifications:
 >
 >The numbers presented below have been normalized to 1 as the baseline and are not the actual throughput numbers.
 
-![chlimage_1-10](assets/chlimage_1-10.png) ![chlimage_1-11](assets/chlimage_1-11.png) 
+![chlimage_1-10](assets/chlimage_1-10.png) ![chlimage_1-11](assets/chlimage_1-11.png)
 
 ## TarMK vs MongoMK {#tarmk-vs-mongomk}
 
@@ -651,86 +651,86 @@ For further details on TarMK vs MongoMK, see [Recommended Deployments](/help/sit
 
 ### Scenario 1 Technical Specifications {#scenario-technical-specifications}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong> </strong></td> 
-   <td><strong>Author OAK Node</strong></td> 
-   <td><strong>MongoDB Node</strong></td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Server</td> 
-   <td>Bare metal hardware (HP)</td> 
-   <td>Bare metal hardware (HP)</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Operating System</td> 
-   <td>RedHat Linux</td> 
-   <td>RedHat Linux</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>CPU / Cores</td> 
-   <td>Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8 cores</td> 
-   <td>Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8 cores</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>RAM</td> 
-   <td>32GB</td> 
-   <td>32GB</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Disk</td> 
-   <td>Magnetic - &gt;1k IOPS</td> 
-   <td>Magnetic - &gt;1k IOPS</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Java</td> 
-   <td>Oracle JRE Version 8</td> 
-   <td>N/A</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>JVM Heap16GB</td> 
-   <td>16GB</td> 
-   <td>N/A</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Product </td> 
-   <td>AEM 6.2</td> 
-   <td>MongoDB 3.2 WiredTiger</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Nodestore</td> 
-   <td>TarMK or MongoMK</td> 
-   <td>N/A</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Datastore</td> 
-   <td>File DS </td> 
-   <td>N/A</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Scenario</td> 
-   <td><p><br /> Single Product: Assets / 30 concurrent threads per run</p> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong> </strong></td>
+   <td><strong>Author OAK Node</strong></td>
+   <td><strong>MongoDB Node</strong></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Server</td>
+   <td>Bare metal hardware (HP)</td>
+   <td>Bare metal hardware (HP)</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Operating System</td>
+   <td>RedHat Linux</td>
+   <td>RedHat Linux</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>CPU / Cores</td>
+   <td>Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8 cores</td>
+   <td>Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8 cores</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>RAM</td>
+   <td>32GB</td>
+   <td>32GB</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Disk</td>
+   <td>Magnetic - &gt;1k IOPS</td>
+   <td>Magnetic - &gt;1k IOPS</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Java</td>
+   <td>Oracle JRE Version 8</td>
+   <td>N/A</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>JVM Heap16GB</td>
+   <td>16GB</td>
+   <td>N/A</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Product </td>
+   <td>AEM 6.2</td>
+   <td>MongoDB 3.2 WiredTiger</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Nodestore</td>
+   <td>TarMK or MongoMK</td>
+   <td>N/A</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Datastore</td>
+   <td>File DS </td>
+   <td>N/A</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Scenario</td>
+   <td><p><br /> Single Product: Assets / 30 concurrent threads per run</p> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Scenario 1 Performance Benchmark Results {#scenario-performance-benchmark-results}
 
-![chlimage_1-12](assets/chlimage_1-12.png) 
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Scenario 2 Technical Specifications {#scenario-technical-specifications-1}
 
@@ -738,90 +738,90 @@ For further details on TarMK vs MongoMK, see [Recommended Deployments](/help/sit
 >
 >To enable the same number of Authors with MongoDB as with one TarMK system you need a cluster with two AEM nodes. A four node MongoDB cluster can handle 1.8 times the number of Authors than one TarMK instance. An eight node MongoDB cluster can handle 2.3 times the number of Authors than one TarMK instance.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong> </strong></td> 
-   <td><strong>Author TarMK Node</strong></td> 
-   <td><strong>Author MongoMK Node</strong></td> 
-   <td><strong>MongoDB Node</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Server</td> 
-   <td>AWS c3.8xlarge</td> 
-   <td>AWS c3.8xlarge</td> 
-   <td>AWS c3.8xlarge</td> 
-  </tr> 
-  <tr> 
-   <td>Operating System</td> 
-   <td>RedHat Linux</td> 
-   <td>RedHat Linux</td> 
-   <td>RedHat Linux</td> 
-  </tr> 
-  <tr> 
-   <td>CPU / Cores</td> 
-   <td>32</td> 
-   <td>32</td> 
-   <td>32</td> 
-  </tr> 
-  <tr> 
-   <td>RAM</td> 
-   <td>60GB</td> 
-   <td>60GB</td> 
-   <td>60GB</td> 
-  </tr> 
-  <tr> 
-   <td>Disk</td> 
-   <td>SSD - 10k IOPS</td> 
-   <td>SSD - 10k IOPS</td> 
-   <td>SSD - 10k IOPS</td> 
-  </tr> 
-  <tr> 
-   <td>Java</td> 
-   <td>Oracle JRE Version 8</td> 
-   <td><br /> Oracle JRE Version 8</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>JVM Heap16GB</td> 
-   <td>30GB</td> 
-   <td>30GB</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Product </td> 
-   <td>AEM 6.2</td> 
-   <td>AEM 6.2</td> 
-   <td><br /> MongoDB 3.2 WiredTiger</td> 
-  </tr> 
-  <tr> 
-   <td>Nodestore</td> 
-   <td>TarMK </td> 
-   <td>MongoMK</td> 
-   <td><br /> N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Datastore</td> 
-   <td>File DS </td> 
-   <td><br /> File DS</td> 
-   <td><br /> N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Scenario</td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong> </strong></td>
+   <td><strong>Author TarMK Node</strong></td>
+   <td><strong>Author MongoMK Node</strong></td>
+   <td><strong>MongoDB Node</strong></td>
+  </tr>
+  <tr>
+   <td>Server</td>
+   <td>AWS c3.8xlarge</td>
+   <td>AWS c3.8xlarge</td>
+   <td>AWS c3.8xlarge</td>
+  </tr>
+  <tr>
+   <td>Operating System</td>
+   <td>RedHat Linux</td>
+   <td>RedHat Linux</td>
+   <td>RedHat Linux</td>
+  </tr>
+  <tr>
+   <td>CPU / Cores</td>
+   <td>32</td>
+   <td>32</td>
+   <td>32</td>
+  </tr>
+  <tr>
+   <td>RAM</td>
+   <td>60GB</td>
+   <td>60GB</td>
+   <td>60GB</td>
+  </tr>
+  <tr>
+   <td>Disk</td>
+   <td>SSD - 10k IOPS</td>
+   <td>SSD - 10k IOPS</td>
+   <td>SSD - 10k IOPS</td>
+  </tr>
+  <tr>
+   <td>Java</td>
+   <td>Oracle JRE Version 8</td>
+   <td><br /> Oracle JRE Version 8</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>JVM Heap16GB</td>
+   <td>30GB</td>
+   <td>30GB</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>Product </td>
+   <td>AEM 6.2</td>
+   <td>AEM 6.2</td>
+   <td><br /> MongoDB 3.2 WiredTiger</td>
+  </tr>
+  <tr>
+   <td>Nodestore</td>
+   <td>TarMK </td>
+   <td>MongoMK</td>
+   <td><br /> N/A</td>
+  </tr>
+  <tr>
+   <td>Datastore</td>
+   <td>File DS </td>
+   <td><br /> File DS</td>
+   <td><br /> N/A</td>
+  </tr>
+  <tr>
+   <td>Scenario</td>
    <td><p><br /> <br /> Vertical use case: Media / 2000 concurrent threads</p> </td>
    <td></td>
    <td></td>
-  </tr> 
- </tbody> 
+  </tr>
+ </tbody>
 </table>
 
 ### Scenario 2 Performance Benchmark Results {#scenario-performance-benchmark-results-1}
 
-![chlimage_1-13](assets/chlimage_1-13.png) 
+![chlimage_1-13](assets/chlimage_1-13.png)
 
 ### Architecture Scalability Guidelines For AEM Sites and Assets {#architecture-scalability-guidelines-for-aem-sites-and-assets}
 
-![chlimage_1-14](assets/chlimage_1-14.png) 
+![chlimage_1-14](assets/chlimage_1-14.png)
 
 ## Summary of Performance Guidelines  {#summary-of-performance-guidelines}
 

@@ -5,7 +5,7 @@ description: AEM provides various mechanisms to enable you to customize page aut
 seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
 uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
@@ -42,8 +42,8 @@ These can be used in many ways to extend the page authoring functionality in you
 >
 >* Using and creating [clientlibs](/help/sites-developing/clientlibs.md).
 >* Using and creating [overlays](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) 
->* [Structure of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-structure.md) for details of the structural areas used for page authoring.  
+>* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Structure of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-structure.md) for details of the structural areas used for page authoring.
 >
 >This topic is also covered in the [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) session - [User interface customization for AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
@@ -55,7 +55,7 @@ These can be used in many ways to extend the page authoring functionality in you
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`  
+>1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
 >1. Make any changes within `/apps`
 
 ## Add New Layer (Mode) {#add-new-layer-mode}
@@ -149,7 +149,7 @@ In a standard AEM installation:
         * `/libs/foundation/components/text/cq:editConfig`
         * `/libs/foundation/components/image/cq:editConfig`
 
-            * property: `editorType` 
+            * property: `editorType`
 
               Defines the type of inline editor that will be used when the in-place editing is triggered for that component; e.g. `text`, `textimage`, `image`, `title`.
 
@@ -187,7 +187,7 @@ To implement a new in-place editor (within your clientlib):
 
 >[!NOTE]
 >
->For example, see:  
+>For example, see:
 >`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. Implement:
@@ -237,7 +237,7 @@ The out-of-the-box workflow, **Request for Activation**, is automatically trigge
 
 To have customized behavior upon such activation you can overlay the **Request for Activation** workflow:
 
-1. In `/apps` overlay the **Sites** wizard: 
+1. In `/apps` overlay the **Sites** wizard:
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 

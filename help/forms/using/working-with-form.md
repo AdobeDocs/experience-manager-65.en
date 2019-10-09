@@ -5,7 +5,7 @@ description: View and update the form associated with a task or Startpoint in th
 seo-description: View and update the form associated with a task or Startpoint in the AEM Forms app
 uuid: 7481ca5c-a2c0-4697-9008-1e51bce2012e
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 ---
@@ -18,7 +18,7 @@ The forms are downloaded on your app, and are available offline. For example, yo
 
 To sync your form in AEM Forms app:
 
-1. In author instance, select a form, and click **View Properties**.  
+1. In author instance, select a form, and click **View Properties**.
 
 1. In the properties page, click **Advanced.**
 1. Under Advanced, enable option: **Sync with AEM Forms App**, and tap **Save**.

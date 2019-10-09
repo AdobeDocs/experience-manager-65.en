@@ -1,11 +1,11 @@
 ---
 title: Replicating Using Mutual SSL
 seo-title: Replicating Using Mutual SSL
-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other. 
-seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other. 
+description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
+seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
@@ -136,12 +136,12 @@ Install the following items on the author instance:
 * The private key of the author instance.
 * The certificate of the publish instance.
 
-To perform the following procedure, you must be logged in as an adminstrator of the author instance.  
+To perform the following procedure, you must be logged in as an adminstrator of the author instance.
 
 ### Install the Author Private Key {#install-the-author-private-key}
 
 1. Open the User Management page for the author instance. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name. 
+1. To open the properties of your user account, click or tap your user name.
 1. If the Create KeyStore link appears in the Account Settings area, click the link. Configure a password and click OK.
 1. In the Account Settings area, click Manage Keystore.
 
@@ -160,7 +160,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Publish Certificate {#install-the-publish-certificate}
 
 1. Open the User Management page for the author instance. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name. 
+1. To open the properties of your user account, click or tap your user name.
 1. If the Create TrustStore link appears in the Account Settings area, click the link, create a password for the TrustStore and click OK.
 1. In the Account Settings area, click Manage TrustStore.
 1. Click Add Certificate From CER File.
@@ -179,12 +179,12 @@ Install the following items on the publish instance:
 * The private key of the publish instance.
 * The certificate of the author instance. Associate the certificate with the user that is used to execute replication requests.
 
-To perform the following procedure, you must be logged in as an adminstrator of the publish instance.  
+To perform the following procedure, you must be logged in as an adminstrator of the publish instance.
 
 ### Install the Publish Private Key {#install-the-publish-private-key}
 
 1. Open the User Management page for the publish instance. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name. 
+1. To open the properties of your user account, click or tap your user name.
 1. If the Create KeyStore link appears in the Account Settings area, click the link. Configure a password and click OK.
 1. In the Account Settings area, click Manage Keystore.
 1. Click Add Private Key From Key Store File.
@@ -195,7 +195,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Author Certificate {#install-the-author-certificate}
 
 1. Open the User Management page for the publish instance. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Locate the user account that you use to execute replication requests, and click or tap the user name. 
+1. Locate the user account that you use to execute replication requests, and click or tap the user name.
 1. If the Create TrustStore link appears in the Account Settings area, click the link, create a password for the TrustStore and click OK.
 1. In the Account Settings area, click Manage TrustStore.
 1. Click Add Certificate From CER File.
@@ -221,29 +221,29 @@ Configure the replication agent on the author instance to use the HTTPS protocol
 
 To enable MSSL, configure the properties on the Transport tab according to the following table:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property</th> 
-   <th>Value</th> 
-  </tr> 
-  <tr> 
-   <td>URI</td> 
-   <td><p>https://server_name:SSL_port/bin/receive?sling:authRequestLogin=1</p> <p>For example:</p> <p>http://localhost:8443/bin/receive?sling:authRequestLogin=1</p> </td> 
-  </tr> 
-  <tr> 
-   <td>User</td> 
-   <td>No value</td> 
-  </tr> 
-  <tr> 
-   <td>Password</td> 
-   <td>No value</td> 
-  </tr> 
-  <tr> 
-   <td>SSL</td> 
-   <td>Client Auth</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property</th>
+   <th>Value</th>
+  </tr>
+  <tr>
+   <td>URI</td>
+   <td><p>https://server_name:SSL_port/bin/receive?sling:authRequestLogin=1</p> <p>For example:</p> <p>http://localhost:8443/bin/receive?sling:authRequestLogin=1</p> </td>
+  </tr>
+  <tr>
+   <td>User</td>
+   <td>No value</td>
+  </tr>
+  <tr>
+   <td>Password</td>
+   <td>No value</td>
+  </tr>
+  <tr>
+   <td>SSL</td>
+   <td>Client Auth</td>
+  </tr>
+ </tbody>
 </table>
 
 ![chlimage_1-70](assets/chlimage_1-70.png)

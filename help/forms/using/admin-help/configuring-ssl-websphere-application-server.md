@@ -7,7 +7,7 @@ uuid: f939a806-346e-41e0-b2c0-6d0ba83f8f6f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 ---
 
@@ -19,7 +19,7 @@ This section includes the following steps to configure SSL with your IBM WebSphe
 
 For enabling SSL, WebSphere needs access to a user account in the local OS user registry that has permission to administer the system:
 
-* (Windows) Create a new Windows user who is part of the Administrators group and has the privilege to act as part of the operating system. (See [Create a Windows user for WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).) 
+* (Windows) Create a new Windows user who is part of the Administrators group and has the privilege to act as part of the operating system. (See [Create a Windows user for WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
 * (Linux, UNIX) The user can be a root user or another user who has root privileges. When you enable SSL on WebSphere, use the server identification and password of this user.
 
 ### Create a Linux or UNIX user for WebSphere {#create-a-linux-or-unix-user-for-websphere}
@@ -76,7 +76,7 @@ For enabling SSL, WebSphere needs access to a user account in the local OS user 
 ## Enable administrative security {#enable-administrative-security}
 
 1. In WebSphere Administrative Console, select **Security &gt; Global Security**.
-1. Click **Security Configuration Wizard**. 
+1. Click **Security Configuration Wizard**.
 1. Ensure **Enable Application Security** checkbox is enabled. Click **Next**.
 1. Select **Federated Repositories** and click **Next**.
 1. Specify the credentials you want to set and click **Next**.

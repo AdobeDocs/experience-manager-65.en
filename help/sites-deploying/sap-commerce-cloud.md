@@ -5,7 +5,7 @@ description: Learn how to deploy eCommerce with SAP Commerce Cloud.
 seo-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
@@ -30,7 +30,7 @@ Deploying the [necessary eCommerce packages](#packages-needed-for-ecommerce-with
 
 This is available under the English (US) branch ( `/content/geometrixx-outdoors/en_US`) of the Geometrixx Outdoors site:
 
-* [Product Information](#productinformationwithcolorvariants) (with color variants when appropriate)  
+* [Product Information](#productinformationwithcolorvariants) (with color variants when appropriate)
 
 * [Shopping Cart content overviews](#shoppingcartcontentoverview)
 * [Customer Sign-Up](#customersignup) and [Customer Sign-In](#customersignin)
@@ -121,7 +121,7 @@ The steps in this procedure will download and build the hybris server. It will a
    ```shell
    cd <hybris-root-directory>/bin/platform
    . ./setantenv.sh
-   ant clean all 
+   ant clean all
    cd ../..
    ```
 
@@ -152,8 +152,8 @@ The steps in this procedure will download and build the hybris server. It will a
 
 1. From the command line, execute the following to:
 
-    * update the configuration of the hybris server (as required by the extension)  
-    * rebuild the hybris server with the modified configuration  
+    * update the configuration of the hybris server (as required by the extension)
+    * rebuild the hybris server with the modified configuration
     * start the server
 
    ```shell
@@ -208,16 +208,16 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
    [Get File](assets/geometrixx-outdoors-images.zip)
 
-1. Click **Start** to import the specified files. The **Result** tab will show any log entries.  
+1. Click **Start** to import the specified files. The **Result** tab will show any log entries.
 
-1. Click **Done** to close the import window.  
+1. Click **Done** to close the import window.
 
-1. From the sidebar, select **System**, then **Tools**, then **Import**.  
+1. From the sidebar, select **System**, then **Tools**, then **Import**.
 
 1. **Upload** the following **Import file**:
 
    [Get File](assets/base-store.csv)
-   
+
    For hybris 5.7, please use the following:
 
    [Get File](assets/base-store-5_7.csv)
@@ -226,9 +226,9 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
    `en_US - English (United States)`
 
-1. Click **Start** to import the specified files. The **Result** tab will show any log entries.  
+1. Click **Start** to import the specified files. The **Result** tab will show any log entries.
 
-1. Click **Done** to close the import window.  
+1. Click **Done** to close the import window.
 
 1. You can now use the product cockpit to view the imported catalogs and products:
 

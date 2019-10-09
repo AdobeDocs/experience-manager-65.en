@@ -5,7 +5,7 @@ description: This article describes how to share assets, folders, and collection
 seo-description: Share assets, folders, and collections as a URL to external parties without them having to first log in to AEM Assets, thereby securing your asset repository.
 uuid: 50fdb81f-7a38-4f61-9c6a-f814e30c63db
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: e4f9827f-8283-4215-8a04-e48ecb556443
@@ -45,7 +45,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >* &lt;AEM Server&gt;/linkshare.html
    >* &lt;AEM Server&gt;/linksharepreview.html
    >* &lt;AEM Server&gt;/linkexpired.html
-   > 
+   >
    >Block other URLs to ensure that your Author instance is secure.
 
    >[!NOTE]

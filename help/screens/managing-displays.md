@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about creating a new display and devi
 uuid: dfde0740-5c8b-4e6c-bc83-bf8fbb31a16a
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: f8e2e7a3-f3a1-4c35-b055-166752c3fb86
 ---
@@ -80,7 +80,7 @@ Once a device config is set to your display in the location, the next step will 
 
 >[!NOTE]
 >
->Once a device config is set to your display in the location, the next step will be to assign a channel to your display. 
+>Once a device config is set to your display in the location, the next step will be to assign a channel to your display.
 >
 >As shown in the figure below, if the device config is displayed as unassigned in the **DEVICES** pannel, if no channel is assigned to that particular device config.
 >

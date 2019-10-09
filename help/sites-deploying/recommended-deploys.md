@@ -5,7 +5,7 @@ description: This article describes the recommended topologies for AEM.
 seo-description: This article describes the recommended topologies for AEM.
 uuid: 565117b1-4659-41e1-9f57-97dd048e306f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 5e903df9-6591-46e8-9251-45170c78aa21
@@ -149,7 +149,7 @@ It is almost impossible to predict what the exact concurrency model will be afte
 
 A minimum deployment with MongoDB will typically involve the following topology:
 
-* A MongoDB replica set consisting of one primary node, two secondary nodes with each of the MongoDB instances running in an availability zone with a latency under 15 milliseconds across each node;  
+* A MongoDB replica set consisting of one primary node, two secondary nodes with each of the MongoDB instances running in an availability zone with a latency under 15 milliseconds across each node;
 * A cluster of author instances with one leader node, one non-leader node and both active at all time, with each of the author instances running in each of the datacenters, where the MongoDB primary and secondary instances are running.
 
 Additionally, it is highly recommended to configure the datastore on a shared file system or Amazon S3, such that the assets or binaries are not stored within MongoDB. This will ensure optimal performance within the deployment.
@@ -196,7 +196,7 @@ Below are a set of decisional matrices that can assist you in choosing the best 
 
 #### Choosing the deployment type for author instances {#choosing-the-deployment-type-for-author-instances}
 
-![chlimage_1-19](assets/chlimage_1-19.png) 
+![chlimage_1-19](assets/chlimage_1-19.png)
 
 #### Choosing the deployment type for publish instances {#choosing-the-deployment-type-for-publish-instances}
 

@@ -5,7 +5,7 @@ description: How to detect and fix slow re-indexing.
 seo-description: How to detect and fix slow re-indexing.
 uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
@@ -62,7 +62,7 @@ In exceptional circumstances, the thread pool used to manage asychronous indexin
 
 1. Verify that the new Apache Sling Scheduler thread pool is registered and displays in the Apache Sling Scheduler Satus web console.
 
-    * Navigate to the AEM OSGi Web console&gt;Status&gt;Sling Scheduler or go to https://&lt;host&gt;:&lt;port&gt;/system/console/status-slingscheduler (for example, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)) 
+    * Navigate to the AEM OSGi Web console&gt;Status&gt;Sling Scheduler or go to https://&lt;host&gt;:&lt;port&gt;/system/console/status-slingscheduler (for example, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
     * Verify that the following pool entries exist:
 
         * ApacheSlingoak
@@ -104,19 +104,19 @@ To identify and fix a stuck re-indexing process, do the following:
     * Collect 5 minutes of thread dump, one thread dump every 2 seconds.
     * [Set DEBUG level and logs for the appenders](/help/sites-deploying/configure-logging.md).
 
-        * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate* 
+        * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
         * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
 
     * Collect data from the async `IndexStats` MBean:
 
-        * Navigate to AEM OSGi Web Console&gt;Main&gt;JMX&gt;IndexStat&gt;async 
+        * Navigate to AEM OSGi Web Console&gt;Main&gt;JMX&gt;IndexStat&gt;async
 
           or go to [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
     * Use [oak-run.jar's console mode](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) to collect the details of what exists under the * `/:async`* node.
     * Collect a list of repository checkpoints by using the `CheckpointManager` MBean:
 
-        * AEM OSGi Web Console&gt;Main&gt;JMX&gt;CheckpointManager&gt;listCheckpoints()  
+        * AEM OSGi Web Console&gt;Main&gt;JMX&gt;CheckpointManager&gt;listCheckpoints()
 
           or go to [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 

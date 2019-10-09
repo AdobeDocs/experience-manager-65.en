@@ -5,7 +5,7 @@ description: Configure analytics for Communities
 seo-description: Configure analytics for Communities
 uuid: 625a253f-b198-40e8-b34c-dff337fb0eff
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
@@ -58,24 +58,24 @@ This section of the documentation describes how to connect an Analytics report s
 
 To configure Analytics for Communities features, it is necessary to work with your account representative to setup an Adobe Analytics account and [report suite](#adobe-analytics-report-suite-for-video-reporting). Once established, the following information should be available:
 
-* Company Name  
+* Company Name
 
   The company that is associated with the Adobe Analytics account
-* Username  
+* Username
 
-  The login username for the user authorized to manage the Analytics account 
+  The login username for the user authorized to manage the Analytics account
 
   (Should include Web Service Access privileges)
 
-* Password  
+* Password
 
   The login password for the authorized user
 
-* Analytics Data Center  
+* Analytics Data Center
 
   The URL of the Analytics data center for the account
 
-* Report Suite  
+* Report Suite
 
   The name of the Analytics report suite to use
 
@@ -154,7 +154,7 @@ To create a new Analytics Integration, which integrates Adobe Analytics with the
 * Scroll down to **[!UICONTROL Adobe Analytics]**
 * Select either **[!UICONTROL Configure Now]** or **[!UICONTROL Show Configurations]**
 
-![chlimage_1-265](assets/chlimage_1-265.png) 
+![chlimage_1-265](assets/chlimage_1-265.png)
 
 ### Create Configuration Dialog {#create-configuration-dialog}
 
@@ -166,18 +166,18 @@ On the Create Configuration dialog, the values to be entered identify the config
 
 * **[!UICONTROL Title]**
 
-  (Required) A display title for the configuration.  
+  (Required) A display title for the configuration.
 
   For example, enter *Enablement Community Analytics*
 
 * **[!UICONTROL Name]**
 
-  (Optional) If not specified, the name will default to a valid node name derived from the title.  
+  (Optional) If not specified, the name will default to a valid node name derived from the title.
 
   For example, enter *communities*
 
 
-* **[!UICONTROL Template]** 
+* **[!UICONTROL Template]**
 
   Select `Adobe Analytics Configuration`
 
@@ -248,13 +248,13 @@ After successful configuration of the basic connection to Adobe Analytics, it is
 
 * **[!UICONTROL Title]**
 
-  (Required) A display title for the framework  
-  
+  (Required) A display title for the framework
+
   For example, enter *Enablement Community Framework*
 
 * **[!UICONTROL Name]**
 
-  (Optional) If not specified, the name will default to a valid node name derived from the title.  
+  (Optional) If not specified, the name will default to a valid node name derived from the title.
 
   For example, enter *communities*
 
@@ -270,13 +270,13 @@ Creating the Analytics Framework opens the framework for configuration.
 
 The purpose of the framework is to map AEM variables to Analytics variables (evars and events). The Analytics variables available for mapping are [defined in the report suite](#adobe-analytics-report-suite-for-video-reporting).
 
-![chlimage_1-270](assets/chlimage_1-270.png) 
+![chlimage_1-270](assets/chlimage_1-270.png)
 
 ### Select Report Suite {#select-report-suite}
 
 Select the report suite that has been set up for video reporting.
 
-If a report suite has not yet been created or not properly set up, see the previous section:  
+If a report suite has not yet been created or not properly set up, see the previous section:
 [Adobe Analytics Report Suite for Video Reporting](#adobe-analytics-report-suite-for-video-reporting)
 
 The Sidekick is not needed and may be minimized so that it does not obstruct access to the Report Suites settings.
@@ -288,7 +288,7 @@ The Sidekick is not needed and may be minimized so that it does not obstruct acc
 1. Select **[!UICONTROL Add Item +]** two drop down boxes appear
 1. Choose a `Report suite` the report suites associated with the Company account should be available for selection
 1. Select **[!UICONTROL Yes]** in the dialog that opens: ```Load default server settings? Do you want to load the default server settings and overwrite current values in the Server section?```
-1. Choose a `Run Mode`  
+1. Choose a `Run Mode`
    Choose **[!UICONTROL publish]**
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
@@ -377,7 +377,7 @@ If using an existing report suite that mapped any of the variables within evar1 
 
 Following is an example of default mappings after following the [getting started tutorial](getting-started-enablement.md):
 
-![chlimage_1-274](assets/chlimage_1-274.png) 
+![chlimage_1-274](assets/chlimage_1-274.png)
 
 #### Map of eVars sent with each event {#map-of-evars-sent-with-each-event}
 
@@ -421,15 +421,15 @@ If Communities evars and events overwrite mappings that pre-existed in the repor
 
 #### Example Step 1: Dragging Analytics evar14 into mapping table {#example-step-dragging-analytics-evar-into-mapping-table}
 
-![chlimage_1-275](assets/chlimage_1-275.png) 
+![chlimage_1-275](assets/chlimage_1-275.png)
 
 #### Example Step 2: Selecting 'x' to remove replaced evar11 {#example-step-selecting-x-to-remove-replaced-evar}
 
-![chlimage_1-276](assets/chlimage_1-276.png) 
+![chlimage_1-276](assets/chlimage_1-276.png)
 
 #### Example Step 3: AEM var eventdata.siteId remapped to Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
-![chlimage_1-277](assets/chlimage_1-277.png) 
+![chlimage_1-277](assets/chlimage_1-277.png)
 
 ## Publishing the Community Site {#publishing-the-community-site}
 
@@ -499,7 +499,7 @@ When the data may be categorized as "big data", more frequent polling may put a 
 
 The default polling **Import interval** is set to 12 hours.
 
-![chlimage_1-278](assets/chlimage_1-278.png) 
+![chlimage_1-278](assets/chlimage_1-278.png)
 
 ### Component Report Customization {#component-report-customization}
 
@@ -532,7 +532,7 @@ The forum topic is presently the only example of this customization:
     * Modifying the `interval` property will override the Report Importer interval
     * The value is in seconds, and is set to 4 hours (14400 seconds)
 
-![chlimage_1-279](assets/chlimage_1-279.png) 
+![chlimage_1-279](assets/chlimage_1-279.png)
 
 ## Manage user data in Analytics {#manage-user-data-in-analytics}
 

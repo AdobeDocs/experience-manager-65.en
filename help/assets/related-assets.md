@@ -5,7 +5,7 @@ description: Learn how to relate assets that share certain common attributes. Yo
 seo-description: Learn how to relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets.
 uuid: 6a2b1105-1cb0-48ca-bd1d-0ee034b8a0c1
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2bd38e3b-a244-4f18-b081-f10c4eb0149b
@@ -19,7 +19,7 @@ This way, you have the flexibility to share a low resolution file (for example P
 
 ## Relating assets {#relating-assets}
 
-1. From the Assets interface, open the properties page for an asset you want to relate. 
+1. From the Assets interface, open the properties page for an asset you want to relate.
 
    ![chlimage_1-272](assets/chlimage_1-272.png)
 
@@ -56,7 +56,7 @@ This way, you have the flexibility to share a low resolution file (for example P
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Select the asset(s) you want to unrelate from the **[!UICONTROL Remove Relations]** dialog, and the click/tap **[!UICONTROL Unrelate]**. 
+1. Select the asset(s) you want to unrelate from the **[!UICONTROL Remove Relations]** dialog, and the click/tap **[!UICONTROL Unrelate]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
@@ -81,7 +81,7 @@ If the source file is related to another asset, AEM Assets fetches the refenced 
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Click/tap the ellipses below the Translation Job card to view the translation status. 
+1. Click/tap the ellipses below the Translation Job card to view the translation status.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 

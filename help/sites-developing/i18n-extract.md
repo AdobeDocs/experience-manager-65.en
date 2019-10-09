@@ -5,7 +5,7 @@ description: Use xgettext-maven-plugin to extract strings from your source code 
 seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
@@ -30,7 +30,7 @@ Configure how the xgettext-maven-plugin tool extracts strings for your project.
    /javascript { }
    /regexp {
       /files {
-         /java { } 
+         /java { }
          /jsp { }
          /extjstemplate { }
       }
@@ -66,31 +66,31 @@ The pattern part of a rule is used to match the names of the files to include or
 
 When used within a pattern, the / character indicates a subdirectory and the &ast; character matches all. The following table lists several example rules.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Example rule</th> 
-   <th>Effect</th> 
-  </tr> 
-  <tr> 
-   <td><code>{ /include "*" }</code></td> 
-   <td>Include all files.</td> 
-  </tr> 
-  <tr> 
-   <td><code>{ /exclude "*.pdf" }</code></td> 
-   <td>Exclude all PDF files.</td> 
-  </tr> 
-  <tr> 
-   <td><code> { /exclude "*/pom.xml" }</code></td> 
-   <td>Exclude POM files.</td> 
-  </tr> 
-  <tr> 
+<table>
+ <tbody>
+  <tr>
+   <th>Example rule</th>
+   <th>Effect</th>
+  </tr>
+  <tr>
+   <td><code>{ /include "*" }</code></td>
+   <td>Include all files.</td>
+  </tr>
+  <tr>
+   <td><code>{ /exclude "*.pdf" }</code></td>
+   <td>Exclude all PDF files.</td>
+  </tr>
+  <tr>
+   <td><code> { /exclude "*/pom.xml" }</code></td>
+   <td>Exclude POM files.</td>
+  </tr>
+  <tr>
    <td><code class="code">{ /exclude "/content/*" }
       { /include "/content/catalogs/geometrixx/templatepages" }
-      { /include "/content/catalogs/geometrixx/templatepages/*" }</code></td> 
-   <td><p>Exclude all files below the /content node.</p> <p>Include the /content/catalogs/geometrixx/templatepages node.</p> <p>Include all child nodes of /content/catalogs/geometrixx/templatepages.</p> </td> 
-  </tr> 
- </tbody> 
+      { /include "/content/catalogs/geometrixx/templatepages/*" }</code></td>
+   <td><p>Exclude all files below the /content node.</p> <p>Include the /content/catalogs/geometrixx/templatepages node.</p> <p>Include all child nodes of /content/catalogs/geometrixx/templatepages.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Extracting the Strings  {#extracting-the-strings}

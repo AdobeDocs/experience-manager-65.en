@@ -5,7 +5,7 @@ description: Learn about Service Users in AEM.
 seo-description: Learn about Service Users in AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
@@ -65,9 +65,9 @@ Also, make sure that any new features you develop adhere to these principles:
 
 Whether you apply access control while restructuring content or when you do it for a new service user, you must apply the strictest ACLs possible. Use all possible facilities of access control:
 
-* For example, instead of applying `jcr:read` on `/apps`, only apply it to `/apps/*/components/*/analytics`  
+* For example, instead of applying `jcr:read` on `/apps`, only apply it to `/apps/*/components/*/analytics`
 
-* Use [restrictions](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)  
+* Use [restrictions](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)
 
 * Apply ACLs for node types
 * Limit permissions
@@ -78,7 +78,7 @@ Whether you apply access control while restructuring content or when you do it f
 
 If the above fails, Sling 7 offers a Service User Mapping service, which allows to configure a bundle-to-user mapping and two corresponding API methods: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` and ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` which return a session/resource resolver with the privileges of a configured user only. These methods have the following characteristics:
 
-* They allow mapping services to users  
+* They allow mapping services to users
 * They make it possinle to define sub-service users
 * The central configuration point is: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
 * `service-id` = `service-name` [ “:” subservice-name ] 
@@ -101,7 +101,7 @@ To replace the admin session with a service user, you should perform the followi
 1. Setup and test ACEs for your user.
 1. Add a `service-user` mapping for your service and for `user/sub-users`
 
-1. Make the service user sling feature available to your bundle: update to the most recent version of `org.apache.sling.api`.  
+1. Make the service user sling feature available to your bundle: update to the most recent version of `org.apache.sling.api`.
 
 1. Replace the `admin-session` in your code with the `loginService` or `getServiceResourceResolver` APIs.
 
@@ -144,7 +144,7 @@ When adding the corresponding .content.xml to the content of your bundle, make s
 
 To add a mapping from your service to the corresponding System Users you need to create a factory configuration for the ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` service. To keep this modular such configurations can be provided using the [Sling amend mechanism](https://issues.apache.org/jira/browse/SLING-3578). The recommended way to install such configurations with your bundle is by using [Sling Initial Content Loading](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
-1. Create a subfolder SLING-INF/content below the src/main/resources folder of your bundle 
+1. Create a subfolder SLING-INF/content below the src/main/resources folder of your bundle
 1. In this folder create a file named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;some unique name for your factory configuration&gt;.xml with the content of your factory configuration (including all sub-service user mappings). Example:
 
 1. Create a `SLING-INF/content` folder below the `src/main/resources` folder of your bundle;
@@ -211,20 +211,20 @@ When processing events or jobs, and in some cases workflows, the corresponding s
 
 1. Pass the `user-id` in the event payload and use impersonation.
 
-   **Advantages:** Easy to use. 
+   **Advantages:** Easy to use.
 
    **Disadvantages:** Still uses `loginAdministrative()`. It re-authenticates a request that has already been authenticated.
 
 1. Create or reuse a service user that has access to the data.
 
-   **Advantages:** Consistent with the current design. Needs minimal change. 
+   **Advantages:** Consistent with the current design. Needs minimal change.
 
    **Disadvantages:** Needs very powerful service users to be flexible, which can easily lead to privilege escalations. Circumvents the security model.
 
 1. Pass a serialization of the `Subject` in the event payload, and create a `ResourceResolver` based on that subject. One example would be using the JAAS `doAsPrivileged` in the `ResourceResolverFactory`.
 
-   **Advantages:** Clean implementation from a security standpoint. It avoids re-authentication and it operates with the original privileges. Security relevant code is transparent to the consumer of the event. 
-   
+   **Advantages:** Clean implementation from a security standpoint. It avoids re-authentication and it operates with the original privileges. Security relevant code is transparent to the consumer of the event.
+
    **Disadvantages:** Needs refactoring. The fact that the security relevant code transparent to the consumer of the event might also lead to problems.
 
 The third approach is currently the preferred processing technique.

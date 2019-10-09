@@ -5,7 +5,7 @@ description: Explains how to build standard AEM Forms app for iOS.
 seo-description: Explains how to build standard AEM Forms app for iOS.
 uuid: 33ccf014-05af-43c2-abb2-e0bd9c89ce32
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2dec23f7-6cca-4cc9-a78a-acd23ae7da5f
 ---
@@ -16,14 +16,14 @@ AEM Forms provides the complete source code of the AEM Forms app. The source con
 
 To get the AEM Forms app source, perform the following steps:
 
-1. Navigate to package share 
+1. Navigate to package share
 
    URL: `https://<server>:<port>/crx/packageshare`.
 
 1. Download the source package. When you download the package, it is added in your AEM Forms package manager.
 1. After it is downloaded, navigate to: `https://<server>:<port>/crx/packmgr/index.jsp`, and install `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-1. To download the source code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.  
+1. To download the source code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.
 
    The source package is downloaded on your device.
 
@@ -33,29 +33,29 @@ The following image displays the extracted contents of the `adobe-lc-mobileworks
 
 The following table details contents of the `adobe-lc-mobileworkspace-src-[version]/ios` folder.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p>Directory</p> </th> 
-   <th><p>Content</p> </th> 
-  </tr> 
-  <tr> 
-   <td><p><code>CordovaLib</code></p> </td> 
-   <td><p>PhoneGap SDK 6.4.0</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>AEM Forms</code></p> </td> 
-   <td><p>Resources, PhoneGap plug-ins, and application's main module</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>AEM Forms.xcodeproj</code></p> </td> 
-   <td><p>Xcode project for AEM Forms app</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>www</code></p> </td> 
-   <td><p>HTML, CSS, images, and JavaScript files for the AEM Forms app project</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><p>Directory</p> </th>
+   <th><p>Content</p> </th>
+  </tr>
+  <tr>
+   <td><p><code>CordovaLib</code></p> </td>
+   <td><p>PhoneGap SDK 6.4.0</p> </td>
+  </tr>
+  <tr>
+   <td><p><code>AEM Forms</code></p> </td>
+   <td><p>Resources, PhoneGap plug-ins, and application's main module</p> </td>
+  </tr>
+  <tr>
+   <td><p><code>AEM Forms.xcodeproj</code></p> </td>
+   <td><p>Xcode project for AEM Forms app</p> </td>
+  </tr>
+  <tr>
+   <td><p><code>www</code></p> </td>
+   <td><p>HTML, CSS, images, and JavaScript files for the AEM Forms app project</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 For detailed information about Code Signing and adding devices to the iOS Provisioning Portal, see [iOS Code Signing Setup, Process, and Troubleshooting](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html).
@@ -76,7 +76,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
     * Specify the fields to as explained in [Building a Secure AEM Forms app for iOS](/help/forms/using/building-secure-mobile-workspace-app.md) to build a secure AEM Forms app.
 
 1. In the **Build Settings** tab, click **All** and then click **Combined**.
-1. From the **Settings** list, expand **Code Signing**. 
+1. From the **Settings** list, expand **Code Signing**.
 1. For **Code Signing Identity**, select the appropriate signature. For detailed information about, creating new signatures, see [Creating and Downloading Development Provisioning Profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
 1. Ensure that the same signature is selected for **Debug**, **Release**, and **Any iOS SDK**.
 1. Replace the following code in the `AEM Forms-info.plist` file:
@@ -120,7 +120,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
    >This step is required only if AEM Forms app needs to connect to a server that does not follow App Transport Security requirements.
 
 1. Under **PROJECT**, select **AEM Forms** and ensure that the appropriate signature is selected for **Code Signing Identity**, **Debug**, **Release** and **Any iOS SDK**.
-1. Connect a provisioned iPad to a Mac machine. 
+1. Connect a provisioned iPad to a Mac machine.
 1. Select the provisioned device for the **AEM Forms **project.
 
    ![ipad](assets/ipad.png)

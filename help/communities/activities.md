@@ -5,7 +5,7 @@ description: Activities of a signed-in community member
 seo-description: Activities of a signed-in community member
 uuid: 8a05a5ed-0edf-4528-a145-f9dc37d10247
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
@@ -48,15 +48,15 @@ Under the **[!UICONTROL User Activities]** tab, specify which activities to disp
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-* **[!UICONTROL Max number of activities]** 
+* **[!UICONTROL Max number of activities]**
   The number of activities to display
-* **[!UICONTROL Stream Resource Path]** 
+* **[!UICONTROL Stream Resource Path]**
   Leave blank to default to the community site or community group. The stream resource path identifies the source of activities. Default is blank.
-* **[!UICONTROL Display User Activities View]** 
+* **[!UICONTROL Display User Activities View]**
   if checked, the activities page will include a tab which filters activities based on those generated within the community by the current member. Default is checked.
-* **[!UICONTROL Display All Activities View]** 
+* **[!UICONTROL Display All Activities View]**
   If checked, the activities page will include a tab which includes all activities generated within the community to which the current member has access. Default is checked.
-* **[!UICONTROL Display Following View]** 
+* **[!UICONTROL Display Following View]**
   If checked, the activities page will include a tab which filters activities based on those the current member is following. Default is checked.
 
 ## Following View {#following-view}

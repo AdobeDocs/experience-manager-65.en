@@ -5,7 +5,7 @@ description: This page serves as a landing page for AEM Mobile. Follow this page
 seo-description: This page serves as a landing page for AEM Mobile. Follow this page as a starting point to learn about the three different ways for creating apps.
 uuid: a5398216-f9bb-4009-a9f8-a4f0135db67c
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
@@ -19,7 +19,7 @@ discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
 
 >[!CAUTION]
 >
->Existing AEM Mobile Apps customers migrating from AEM 6.2 or 6.3 to AEM 6.4 can continue to use AEM Mobile Apps by downloading a [package from PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). However, new installs of AEM 6.4 will not support AEM Mobile Apps functionality.
+>Existing AEM Mobile Apps customers migrating from AEM 6.2 or 6.3 to AEM 6.5 can continue to use AEM Mobile Apps by downloading a [package from PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). However, new installs of AEM 6.5 will not support AEM Mobile Apps functionality.
 
 Adobe Experience Manager (AEM) Mobile is part of the Adobe Experience Manager multi-channel digital platform that also leverages AEM Assets, Sites, Screens, Workflow, User Manager, Commerce and Forms. AEM Mobile offers remarkable deployment flexibility, enabling enterprises to use a variety of content sources.
 

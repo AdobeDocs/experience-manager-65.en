@@ -5,7 +5,7 @@ description: Learn how to configure global parameters for the central logging se
 seo-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 uuid: 8c9e3628-2f2c-445d-9706-5c7725b85fe2
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
@@ -32,7 +32,7 @@ These are all [OSGi configurations](/help/sites-deploying/configuring-osgi.md).
 * the logging level
 * the location of the central log file
 * the number of versions to be kept
-* version rotation; either maximum size or a time interval  
+* version rotation; either maximum size or a time interval
 * the format to be used when writing the log messages
 
 >[!NOTE]
@@ -46,7 +46,7 @@ In addition to the global logging settings, AEM allows you to configure specific
 * the specific logging level
 * the location of the individual log file
 * the number of versions to be kept
-* version rotation; either maximum size or the time interval   
+* version rotation; either maximum size or the time interval
 * the format to be used when writing the log messages
 * the logger (the OSGi service supplying the log messages)
 
@@ -60,7 +60,7 @@ AEM uses the following to write log messages to file:
 
 These elements are linked by the following parameters for the appropriate elements:
 
-* **Logger (Logging Logger)** 
+* **Logger (Logging Logger)**
 
   Define the service(s) generating the messages.
 
@@ -68,7 +68,7 @@ These elements are linked by the following parameters for the appropriate elemen
 
   Define the physical file for storing the log messages.
 
-  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.  
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
 
 * **Log File (Logging Writer)**
 
@@ -84,7 +84,7 @@ The first is a special case as it controls both the `request.log` and `access.lo
 
 * The Logger:
 
-    * Apache Sling Customizable Request Data Logger 
+    * Apache Sling Customizable Request Data Logger
 
       (org.apache.sling.engine.impl.log.RequestLoggerService)
 
@@ -92,7 +92,7 @@ The first is a special case as it controls both the `request.log` and `access.lo
 
 * Links to:
 
-    * Apache Sling Request Logger 
+    * Apache Sling Request Logger
 
       (org.apache.sling.engine.impl.log.RequestLogger)
 
@@ -104,7 +104,7 @@ The other pairs follow the standard configuration:
 
 * The Logger:
 
-    * Apache Sling Logging Logger Configuration 
+    * Apache Sling Logging Logger Configuration
 
       (org.apache.sling.commons.log.LogManager.factory.config)
 
@@ -112,15 +112,15 @@ The other pairs follow the standard configuration:
 
 * Links to the Writer:
 
-    * Apache Sling Logging Writer Configuration 
+    * Apache Sling Logging Writer Configuration
 
       (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * The Logger:
 
-    * Apache Sling Logging Logger Configuration 
+    * Apache Sling Logging Logger Configuration
       (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
-  
+
     * Writes `Warning` messages to `../logs/error.log` for the service `org.apache.pdfbox`.
 
 * Does not link to a specific Writer so will create and use an implicit Writer with default configuration (daily log rotation).

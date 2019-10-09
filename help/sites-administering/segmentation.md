@@ -5,7 +5,7 @@ description: Learn how to configure segmentation with Context Hub.
 seo-description: Learn how to configure segmentation with Context Hub.
 uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
@@ -32,7 +32,7 @@ The [Audiences](/help/sites-authoring/managing-audiences.md) console is used to 
 
 To access your segments, in global navigation select **Navigation &gt; Personalization &gt; Audiences**.
 
-![chlimage_1-310](assets/chlimage_1-310.png) 
+![chlimage_1-310](assets/chlimage_1-310.png)
 
 ## Segment Editor {#segment-editor}
 
@@ -52,46 +52,46 @@ When the entire statement evaluates to true then the segment has resolved. In th
 
 The following containers are available out-of-the-box and allow you to group comparisons and references together for boolean evaluation. They can be dragged from the components browser to the editor. See the following section [Using AND and OR Containers](/help/sites-administering/segmentation.md#using-and-and-or-containers) for more information.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Container AND<br /> </td> 
-   <td>The boolean AND operator<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Container OR<br /> </td> 
-   <td>The boolean OR operator</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Container AND<br /> </td>
+   <td>The boolean AND operator<br /> </td>
+  </tr>
+  <tr>
+   <td>Container OR<br /> </td>
+   <td>The boolean OR operator</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Comparisons {#comparisons}
 
 The following segment comparisons are available out-of-the-box to evaluate segment properties. They can be dragged from the components browser to the editor.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Property-Value<br /> </td> 
-   <td>Compares a property of a store to a defined value<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Property-Property</td> 
-   <td>Compares one property of a store to another property<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Property-Segment Reference</td> 
-   <td>Compares a property of a store to another referenced segment<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Property-Script Reference</td> 
-   <td>Compares a property of a store to the results of a script<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Segment Reference-Script Reference</td> 
-   <td>Compares a referenced segment to the results of a script<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Property-Value<br /> </td>
+   <td>Compares a property of a store to a defined value<br /> </td>
+  </tr>
+  <tr>
+   <td>Property-Property</td>
+   <td>Compares one property of a store to another property<br /> </td>
+  </tr>
+  <tr>
+   <td>Property-Segment Reference</td>
+   <td>Compares a property of a store to another referenced segment<br /> </td>
+  </tr>
+  <tr>
+   <td>Property-Script Reference</td>
+   <td>Compares a property of a store to the results of a script<br /> </td>
+  </tr>
+  <tr>
+   <td>Segment Reference-Script Reference</td>
+   <td>Compares a referenced segment to the results of a script<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -108,17 +108,17 @@ The following segment comparisons are available out-of-the-box to evaluate segme
 
 The following references are available out-of-the-box to link directly to a script or another segment. They can be dragged from the components browser to the editor.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Segment Reference<br /> </td> 
-   <td>Evaluate the referenced segment</td> 
-  </tr> 
-  <tr> 
-   <td>Script Reference</td> 
-   <td>Evaluate the referenced script. See the following section <a href="/help/sites-administering/segmentation.md#using-script-references">Using Script References</a> for more information.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Segment Reference<br /> </td>
+   <td>Evaluate the referenced segment</td>
+  </tr>
+  <tr>
+   <td>Script Reference</td>
+   <td>Evaluate the referenced script. See the following section <a href="/help/sites-administering/segmentation.md#using-script-references">Using Script References</a> for more information.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Creating a New Segment {#creating-a-new-segment}
@@ -152,7 +152,7 @@ To define your new segment:
 
 Using the AND and OR container components, you can construct complex segments in AEM. When doing this, it helps to be aware of a few basic points:
 
-* The top level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.  
+* The top level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
 * Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
 
 The following example is used to select visitors who are considered in our prime age group:
@@ -165,7 +165,7 @@ Female and between the ages of 30 and 59
 
 You start by placing an OR container component within the default AND container. Within the OR container, you add two AND containers and within both of these you can add the property or reference components.
 
-![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145am.png) 
+![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145am.png)
 
 ### Using Script References {#using-script-references}
 
@@ -178,10 +178,10 @@ By using the Script Reference component, the evaluation of a segment property ca
 
    ```
    ContextHub.console.log(ContextHub.Shared.timestamp(), '[loading] contexthub.segment-engine.scripts - script.profile-info.js');
-   
+
    (function() {
        'use strict';
-   
+
        /**
         * Sample script returning profile information. Returns user info if data is available, false otherwise.
         *
@@ -191,17 +191,17 @@ By using the Script Reference component, the evaluation of a segment property ca
            /* let the SegmentEngine know when script should be re-run */
            this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
            this.dependOn(ContextHub.SegmentEngine.Property('profile/givenName'));
-   
+
            /* variables */
            var name = ContextHub.get('profile/givenName');
            var age = ContextHub.get('profile/age');
-   
+
            return name === 'Joe' && age === 123;
        };
-   
+
        /* register function */
        ContextHub.SegmentEngine.ScriptManager.register('getProfileInfo', getProfileInfo);
-   
+
    })();
    ```
 

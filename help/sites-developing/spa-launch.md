@@ -5,7 +5,7 @@ description: Adobe Experience Platform Launch is the recommended way to implemen
 seo-description: Adobe Experience Platform Launch is the recommended way to implement Analytics, Target, and Audience Manager within SPAs.
 uuid: 8535a911-2863-4e3b-a3fb-414a0e7e9a4e
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: spa
 discoiquuid: a458cc95-cd94-4f3f-9e7b-d6a5780ec4d5
@@ -27,6 +27,6 @@ To understand how to integrate your SPA with Adobe Experience Platform Launch, p
 
 >[!NOTE]
 >
->The referenced KB was created to enable Adobe Experience Platform Launch integration with SPAs that don't leverage the AEM SPA Editor. These methods should also allow the Adobe Experience Platform Launch integration to coexist with SPAs that are built to use the SPA Editor. 
+>The referenced KB was created to enable Adobe Experience Platform Launch integration with SPAs that don't leverage the AEM SPA Editor. These methods should also allow the Adobe Experience Platform Launch integration to coexist with SPAs that are built to use the SPA Editor.
 >
 >The use of Redux alongside the Javascript SPA libraries has not been fully explored. Support of Redux is planned in a future release of the SPA Editor.

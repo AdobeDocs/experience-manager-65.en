@@ -5,7 +5,7 @@ description: Reviews and Review Summary components
 seo-description: Reviews and Review Summary components
 uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
@@ -23,31 +23,31 @@ Anonymous posting of a review is not supported. Site visitors must register and 
 
 ### Reviews {#reviews}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/reviews/components/hbs/reviews</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/reviews/components/hbs/reviews</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>Yes - properties are editable in <i>design </i>mode</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>Yes - properties are editable in <i>design </i>mode</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.reviews</td> 
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
+   <td>cq.social.hbs.reviews</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/reviews/components/hbs/reviews/reviews.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/review.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/status.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/toolbar.hbs</td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/reviews/components/hbs/reviews/reviews.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/review.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/status.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/toolbar.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/reviews/components/hbs/reviews/clientlibs/review.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/reviews/components/hbs/reviews/clientlibs/review.css</td>
   </tr>
   <tr>
-   <td><strong>properties</strong></td> 
-   <td>See <a href="reviews.md">Using Reviews</a></td> 
+   <td><strong>properties</strong></td>
+   <td>See <a href="reviews.md">Using Reviews</a></td>
   </tr>
  </tbody>
 </table>
@@ -74,7 +74,7 @@ Anonymous posting of a review is not supported. Site visitors must register and 
 
 ### Accessing Posted Reviews (UGC) {#accessing-posted-reviews-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).

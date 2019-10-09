@@ -6,7 +6,7 @@ seo-description: This page serves as a landing page for authoring AEM Screens. I
 uuid: 584bb6bf-d4f2-462f-b6fd-71f67f4263f2
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 42dcbe38-7036-4e42-8f73-1c4de6eb2c7d
 ---

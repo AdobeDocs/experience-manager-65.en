@@ -5,7 +5,7 @@ description: Sometimes you may need to create a large set of pages that share th
 seo-description: Sometimes you may need to create a large set of pages that share the same structure but have differing content. With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
 uuid: b1fdf2c0-e6d0-488a-96e5-dfbd6beb7610
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
@@ -144,7 +144,7 @@ In the classic UI, scaffolding is fully integrated with MSM inheritance (when ap
 
 When you open a page in **Scaffolding** mode (using the icon at the bottom of sidekick) any components that are subject to inheritance will be indicated by:
 
-* a lock symbol (for most components; e.g. Text and Title)  
+* a lock symbol (for most components; e.g. Text and Title)
 * a mask with the text **Click to cancel inheritance** (for Image components)
 
 These show that the component cannot be edited - until inheritance is canceled.
@@ -157,7 +157,7 @@ These show that the component cannot be edited - until inheritance is canceled.
 
 Clicking on either the lock symbol or the image icon allows you to break inheritance:
 
-* the symbol will change to an open padlock.  
+* the symbol will change to an open padlock.
 * once unlocked, you can edit the content.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)

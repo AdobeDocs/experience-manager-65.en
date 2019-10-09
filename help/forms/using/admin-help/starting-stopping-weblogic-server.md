@@ -7,7 +7,7 @@ uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 ---
 
@@ -15,31 +15,31 @@ discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 
 Several procedures require you to start or stop the instance of WebLogic Server where you want to deploy AEM forms modules. Ensure that WebLogic Server is stopped or running, depending on the task you are performing.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Activity</p></th> 
-   <th><p>Required WebLogic state</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Activity</p></th>
+   <th><p>Required WebLogic state</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>Creating a WebLogic domain</p></td> 
-   <td><p>Stopped</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Creating a WebLogic managed server</p></td> 
-   <td><p>Running</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Increasing the server thread count</p></td> 
-   <td><p>Running</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Deploying AEM forms products</p></td> 
-   <td><p>Running</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>Creating a WebLogic domain</p></td>
+   <td><p>Stopped</p></td>
+  </tr>
+  <tr>
+   <td><p>Creating a WebLogic managed server</p></td>
+   <td><p>Running</p></td>
+  </tr>
+  <tr>
+   <td><p>Increasing the server thread count</p></td>
+   <td><p>Running</p></td>
+  </tr>
+  <tr>
+   <td><p>Deploying AEM forms products</p></td>
+   <td><p>Running</p></td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -56,7 +56,7 @@ Several procedures require you to start or stop the instance of WebLogic Server 
 
 ## Stop WebLogic Server {#stop-weblogic-server}
 
-1. Start WebLogic Server administration console by typing `https://[host name]:7001/console` in the URL line of a web browser. 
+1. Start WebLogic Server administration console by typing `https://[host name]:7001/console` in the URL line of a web browser.
 1. Log in by typing the user name and password that was used when creating this WebLogic configuration, and then click Log In.
 1. Under Change Center, click Lock & Edit.
 1. Under Domain Structure, click Environment &gt; Servers.
@@ -109,7 +109,7 @@ After you shut down WebLogic Server, you can close the command prompt from which
 1. Under Domain Structure, click Environment &gt; Servers.
 1. In the right pane, click the Control tab.
 1. Select the managed server that you want to stop.
-1. Click the Shutdown button below the managed server you want to stop. 
+1. Click the Shutdown button below the managed server you want to stop.
 1. Select When Work Completes to gracefully shut down the server or select Force Shutdown Now to stop the server immediately without completing ongoing tasks.
 1. On the Server Life Cycle Assistant pane, click Yes to complete the shutdown.
 

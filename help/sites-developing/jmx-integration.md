@@ -5,7 +5,7 @@ description: Expose service attributes and operations to enable administration t
 seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 uuid: 730a09b6-a110-4203-8de2-d4c46edc59f6
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: df8cfde3-543d-4150-9822-9be763908bd7
@@ -21,7 +21,7 @@ For information about using the JMX Console, see [Monitoring Server Resources Us
 
 On the Apache Felix platform, you deploy MBeans as OSGi services. When an MBean service is registered in the OSGi Service Registry, the Aries JMX Whiteboard module automatically registers the MBean with the MBean Server. The MBean is then available to the JMX Console which exposes the public attributes and operations.
 
-![jmxwhiteboard](assets/jmxwhiteboard.png) 
+![jmxwhiteboard](assets/jmxwhiteboard.png)
 
 ## Creating MBeans for CQ5 and CRX {#creating-mbeans-for-cq-and-crx}
 
@@ -42,7 +42,7 @@ The [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manage
 Add annotations to the management interface to specify MBean metadata. The information appears in the JMX console for each implementation class that is deployed. The following annotations are available (for complete information, see the [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Description:** Provides a description of the MBean class or method. When used on the class declaration, the desctiption appears on the JMX Console page for the MBean. When used on a method, the desctiption appears as hover text for the corresponding attribute or operation.
-* **Impact:** The impact of a method. Valid parameter values are the fields defined by [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html). 
+* **Impact:** The impact of a method. Valid parameter values are the fields defined by [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
 
 * **Name:** Specifies the name to display for an operation parameter. Use this annotation to override the actual name of the method parameter that is used in the interface.
 * **OpenTypeInfo:** Specifies the class to use for representing composite data or tabular data in the JMX Console. For use with Open MBeans
@@ -124,7 +124,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 The following graphic shows the page for this MBean in the JMX Console.
 
-![jmxdescription](assets/jmxdescription.png) 
+![jmxdescription](assets/jmxdescription.png)
 
 ### Registering MBeans {#registering-mbeans}
 
@@ -194,7 +194,7 @@ In the following code example, the ExampleMBean service is registered programmat
 Dictionary mbeanProps = new Hashtable();
 mbeanProps.put("jmx.objectname", "com.adobe.example:type=CRX");
 ExampleMBeanImpl mbean = new ExampleMBeanImpl();
-ServiceRegistration serviceregistration = 
+ServiceRegistration serviceregistration =
             componentContext.getBundleContext().registerService(DynamicMBean.class.getName(), mbean, mbeanProps);
 ```
 
@@ -224,7 +224,7 @@ WorkflowMBeanManagerImpl includes a component activation method. When the compon
 
 The MBean metadata appears in the JMX Console with the com.adobe.example domain, the workflow_model type, and Properties is the path of the workflow model condfiguration node.
 
-![jmxworkflowmbean](assets/jmxworkflowmbean.png) 
+![jmxworkflowmbean](assets/jmxworkflowmbean.png)
 
 ### The Example MBean {#the-example-mbean}
 
@@ -239,7 +239,7 @@ import com.adobe.granite.jmx.annotation.Description;
 
 @Description("Example MBean that exposes Workflow model properties.")
 public interface WorkflowMBean {
- 
+
  @Description("The name of the Workflow model.")
  String getModelName();
 }
@@ -258,8 +258,8 @@ import com.adobe.granite.jmx.annotation.AnnotatedStandardMBean;
 
 public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements WorkflowMBean {
 
- WorkflowModel model; 
- 
+ WorkflowModel model;
+
  protected WorkflowMBeanImpl(WorkflowModel inmodel)
    throws NotCompliantMBeanException {
   super(WorkflowMBean.class);
@@ -336,20 +336,20 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
  //Use the WorkflowService service to create WorkflowModel objects
  @Reference
  private WorkflowService workflowservice = null;
- 
+
   private Session session;
 
          //Details about model nodes
-  private static final String MODEL_ROOT ="/etc/workflow/models"; 
+  private static final String MODEL_ROOT ="/etc/workflow/models";
   private static final String MODEL_NODE = "model";
 
   private Set<String> modelIds = new HashSet<String>();
 
         //Storage for ServiceRegistrations for MBean services
   private Collection<ServiceRegistration> mbeanRegistrations= new Vector<ServiceRegistration>(0,1);
- 
+
  @Activate
-        protected void activate(ComponentContext ctx) { 
+        protected void activate(ComponentContext ctx) {
              //Traverse the repository and load the model nodes
              try {
                    session = repository.loginAdministrative(null);
@@ -365,9 +365,9 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
           }
 
         /**
-         * Add JMX domain and key properties to a collection 
+         * Add JMX domain and key properties to a collection
          * Instantiate a WorkflowModel and its WorkflowMBeanImpl object
-         * Register the MBean OSGi service 
+         * Register the MBean OSGi service
          */
  private void makeMBean(String modelId) {
              // create MBean for the model
@@ -394,11 +394,11 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
                            Node n = iter.nextNode();
                            //Look for "jcr:content" nodes
                            if (n.getName().equals("jcr:content")) {
-                                //get the path of the model node and save it 
+                                //get the path of the model node and save it
                                 if(n.hasNode(MODEL_NODE)){
                                       modelIds.add(n.getNode(MODEL_NODE).getPath());
                                  }
-                           } else{ 
+                           } else{
                                    //Scan child nodes
                                    getModelIds(n);
                            }
@@ -436,8 +436,8 @@ For your convenience, you can copy and paste the following XML code into your pr
 #### Example POM file {#example-pom-file}
 
 ```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0" 
-  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.adobe.example.myapp</groupId>
@@ -452,13 +452,13 @@ For your convenience, you can copy and paste the following XML code into your pr
     </properties>
     <build>
         <plugins>
-        <plugin> 
+        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId> 
-            <configuration> 
-                <source>1.5</source> 
-                <target>1.5</target> 
-            </configuration> 
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.5</source>
+                <target>1.5</target>
+            </configuration>
         </plugin>
             <plugin>
                 <groupId>org.apache.felix</groupId>
@@ -473,16 +473,16 @@ For your convenience, you can copy and paste the following XML code into your pr
             </execution>
          </executions>
             </plugin>
-             <plugin> 
-            <groupId>org.apache.felix</groupId> 
+             <plugin>
+            <groupId>org.apache.felix</groupId>
             <artifactId>maven-bundle-plugin</artifactId>
-            <version>1.4.3</version> 
-            <extensions>true</extensions> 
-            <configuration> 
-                <instructions> 
-                    <Export-Package>com.adobe.example.myapp.*;version=${project.version}</Export-Package> 
+            <version>1.4.3</version>
+            <extensions>true</extensions>
+            <configuration>
+                <instructions>
+                    <Export-Package>com.adobe.example.myapp.*;version=${project.version}</Export-Package>
                 </instructions>
-            </configuration> 
+            </configuration>
         </plugin>
         </plugins>
     </build>
@@ -526,7 +526,7 @@ For your convenience, you can copy and paste the following XML code into your pr
        <groupId>com.day.cq.workflow</groupId>
        <artifactId>cq-workflow-api</artifactId>
        <version>5.5.0</version>
-       <scope>provided</scope> 
+       <scope>provided</scope>
       </dependency>
       <dependency>
        <groupId>javax.jcr</groupId>

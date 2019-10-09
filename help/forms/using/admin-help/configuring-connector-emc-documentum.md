@@ -7,7 +7,7 @@ uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 ---
 
@@ -104,7 +104,7 @@ Some manual steps are required to ensure that the Request for Sharing of Task Qu
 1. In administration console, click Services &gt; Connector for EMC Documentum &gt; Configuration Settings.
 1. Under Repository Service Provider Information, change the configured repository provider to EMC Documentum Repository Provider.
 1. Start Workbench and copy the QueueSharing.swf file from the location where you originally copied it to (for example, the Windows desktop or another location) into an existing directory inside the EMC Documentum repository.
-1. In the Workbench Processes view, open the Queue Sharing process. 
+1. In the Workbench Processes view, open the Queue Sharing process.
 1. In the Variables view, open the properties of the "theForm" variable and change the URI to match the path where you placed the QueueSharing.swf file in step 5.
 1. Save the process.
 1. Migrate the process to the production environment according to your organization's policy.

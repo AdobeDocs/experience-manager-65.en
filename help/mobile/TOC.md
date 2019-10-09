@@ -2,10 +2,10 @@
 cloud: experience-cloud
 product: Adobe Experience Manager
 audience: end-user
-user-guide-title: AEM 6.4 Mobile User Guide
+user-guide-title: AEM 6.5 Mobile User Guide
 ---
 
-# AEM 6.4 Mobile User Guide {#mobile}
+# AEM 6.5 Mobile User Guide {#mobile}
 
 + [Mobile User Guide overview](home.md)
 + Introduction to AEM Mobile {#introduction}

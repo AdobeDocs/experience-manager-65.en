@@ -6,7 +6,7 @@ seo-description: Follow this page to learn how to implement Dynamic Embedded Seq
 uuid: 1f442489-2eeb-4dd8-b892-911fcccb3377
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: a40eb5bb-fbf7-4c0d-a34a-db79b884de8f
 ---
@@ -36,11 +36,11 @@ Referencing a *Channel By Role*, allows you to create local version of a channel
 
 >[!NOTE]
 >
->**Embedded Sequences versus Dynamic Embedded Sequences** 
+>**Embedded Sequences versus Dynamic Embedded Sequences**
 >
->A Dynamic Embedded Sequence is similar to an embedded sequence but allows the user to follow a hierarchy where changes/updates made to one channel is propagated to other one in relation. It follows parent-child hierarchy and also includes assets like images or videos.  
+>A Dynamic Embedded Sequence is similar to an embedded sequence but allows the user to follow a hierarchy where changes/updates made to one channel is propagated to other one in relation. It follows parent-child hierarchy and also includes assets like images or videos.
 >
->***Dynamic Embedded Sequences*** lets you display location-specific content whereas ***Embedded Sequences*** only display general slide show of the content. Additionally, while setting up Dynamic Embedded Sequences, you need to configure the channel using channel role and name. Please refer to the steps below for practical implementation.  
+>***Dynamic Embedded Sequences*** lets you display location-specific content whereas ***Embedded Sequences*** only display general slide show of the content. Additionally, while setting up Dynamic Embedded Sequences, you need to configure the channel using channel role and name. Please refer to the steps below for practical implementation.
 >
 >To learn more about implementing embedded sequences, please refer to [**Embedded Sequences**](/help/screens/embedded-sequences.md) in AEM Screens.
 
@@ -62,14 +62,14 @@ The following section explains the creation of a Dynamic Embedded Sequence in an
 
 Before you start implementing this functionality, please make sure you have the following prerequisites ready to start implementing dynamic embedded sequences:
 
-* Create an AEM Screens project (in this example, **Demo**)  
+* Create an AEM Screens project (in this example, **Demo**)
 
 * Create a channel as **Global** under **Channels** folder
 
 * Add content to your **Global** Channel (*Please check **Resources.zip** for relevant assets*)
 
-The following image shows the **Demo** project with **Global** channel in **Channels** folder.   
-![screen_shot_2018-09-07at21032pm](assets/screen_shot_2018-09-07at21032pm.png) 
+The following image shows the **Demo** project with **Global** channel in **Channels** folder.
+![screen_shot_2018-09-07at21032pm](assets/screen_shot_2018-09-07at21032pm.png)
 
 ### Resources {#resources}
 
@@ -81,7 +81,7 @@ You can download the following resources (images and add these to assets) and fu
 >
 >For additional information on how to create a project and how to create a sequence channel, please refer to resources below:
 >
->* **[Creating and Managing Projects](/help/screens/creating-a-screens-project.md)  
+>* **[Creating and Managing Projects](/help/screens/creating-a-screens-project.md)
 >  **
 >* **[Managing a Channel](/help/screens/managing-channels.md)**
 >
@@ -118,7 +118,7 @@ Follow the steps below to implement the functionality:
 
     1. Navigate to **Demo** --&gt; **Locations** --&gt; **Region A**.
     1. Select **Region A **and click **+ Create** from the action bar.
-    1. Select **Location** from the wizard with **Title** as **Store 1**. Similarly, create another location from the wizard titled as **Store 2** with **Title** as **Store 2**. You can leave the **Name** field empy while creating **Store 1** and **Store 2**. 
+    1. Select **Location** from the wizard with **Title** as **Store 1**. Similarly, create another location from the wizard titled as **Store 2** with **Title** as **Store 2**. You can leave the **Name** field empy while creating **Store 1** and **Store 2**.
     1. Repeat step (b) and now select **Sequence Channel** from the wizard. Enter the **Title** as **Region A** and **Name** as **region **for this channel.
 
    >[!CAUTION]
@@ -137,9 +137,9 @@ Follow the steps below to implement the functionality:
 
 1. **Create Display and Channel under each Location.**
 
-    1. Navigate to **Demo** --&gt; **Locations** --&gt; **Region A** --&gt; **Store 1**.  
+    1. Navigate to **Demo** --&gt; **Locations** --&gt; **Region A** --&gt; **Store 1**.
     1. Select **Store 1 **and click **+ Create** from the action bar.
-    1. Select **Display** from the wizard and create **Store1Display.** 
+    1. Select **Display** from the wizard and create **Store1Display.**
     1. Repeat step (b) and this time select **Sequence Channel** from the wizard. Enter the **Title** as **Store1Channel** and the **Name** as **store**.
 
    >[!CAUTION]
@@ -275,7 +275,7 @@ If you assign the display path as **Demo** --&gt; **Locations** --&gt; **Region 
 
 If you assign the display path as **Demo** --&gt; **Locations** --&gt; **Region B** --&gt;** Store 3** --&gt; **Store3Display**, the following content will display on your AEM Screens player.
 
-![channeldisplay2](assets/channeldisplay2.gif) 
+![channeldisplay2](assets/channeldisplay2.gif)
 
 ## Restricting Users and Modifying the ACLs {#restricting-users-and-modifying-the-acls}
 
@@ -291,9 +291,9 @@ The privileges are assigned to each group are as follows:
 
 **Groups**:
 
-* **Global-Author**: Consists of users that have access to all the locations and channels in the **Demo** project and have all the read, write, and edit permissions.  
+* **Global-Author**: Consists of users that have access to all the locations and channels in the **Demo** project and have all the read, write, and edit permissions.
 
-* **Region-Author**: Consists of users that have read, write, and edit permissions to **Region A** and **Region B**.  
+* **Region-Author**: Consists of users that have read, write, and edit permissions to **Region A** and **Region B**.
 
 * **Store-Author**: Consists of users that have read, write, and edit permissions only to **Store 1**, **Store 2**, **Store 3**, and **Store 4**.
 
@@ -312,7 +312,7 @@ Follow the steps below to create groups, users and modify the ACLs as per the pe
     1. Click **Create Group** and enter **Global-Author** in **ID**.
     1. Click **Save & Close**.
 
-   Similarly, create two other groups such as **Region-Author** and **Store-Author**.   
+   Similarly, create two other groups such as **Region-Author** and **Store-Author**.
 
    ![screen_shot_2018-09-17at34008pm](assets/screen_shot_2018-09-17at34008pm.png)
 
@@ -321,8 +321,8 @@ Follow the steps below to create groups, users and modify the ACLs as per the pe
     1. Navigate to **Adobe Experience Manager**.
     1. Click **Tools** --&gt; **Security** --&gt; **Users**.
     1. Click **Create User** and enter **Global-User** in **ID**.
-    1. Enter **Password** and confirm password for this user.  
-    1. Click the **Groups** tab and enter the group name in **Select Group**, for example, enter **Global-Author** to add **Global-User** to that specific group.  
+    1. Enter **Password** and confirm password for this user.
+    1. Click the **Groups** tab and enter the group name in **Select Group**, for example, enter **Global-Author** to add **Global-User** to that specific group.
     1. Click **Save & Close**.
 
    Similarly, create two other users such as **Region-User** and **Store-User** and add those to **Region-Author** and **Store-Author** respectively.
@@ -358,7 +358,7 @@ Follow the steps below to create groups, users and modify the ACLs as per the pe
     1. Navigate to ***/content/screens/demo/locations*** and check all the permissions
     1. Navigate to ***/content/screens/demo/locations***/***region-a*** and check all the permissions. Similarly, check the permissions for **region-b**.
 
-   Please refer to the figure below for understanding the steps:   
+   Please refer to the figure below for understanding the steps:
    ![screen_shot_2018-09-18at115752am](assets/screen_shot_2018-09-18at115752am.png)
 
    The following image shows that now the **Global-User** has access to the **Global Channel** and both the **Region A** and **Region B** with all the four stores namely **Store 1**, **Store 2**, **Store 3**, and **Store 4**.
@@ -370,7 +370,7 @@ Follow the steps below to create groups, users and modify the ACLs as per the pe
     1. Navigate to the **Permissions** tab.
     1. Navigate to ***/content/screens/demo*** and check only the** Read** permissions.
     1. Navigate to ***/content/screens/demo/locations*** and check only the **Read** permissions.
-    1. Navigate to ***/content/screens/demo/channels ***and un-check the permissions for **Global** channel.*** 
+    1. Navigate to ***/content/screens/demo/channels ***and un-check the permissions for **Global** channel.***
     1. Navigate to ***/content/screens/demo/locations***/***region-a*** and check all the permissions. Similarly, check the permissions for **region-b**.
 
    Please refer to the figure below for understanding the steps:
@@ -385,7 +385,7 @@ Follow the steps below to create groups, users and modify the ACLs as per the pe
 
     1. Navigate to the **Permissions** tab.
     1. Navigate to ***/content/screens/demo*** and check only the **Read** permissions.
-    1. Navigate to ***/content/screens/demo/locations*** and check only the **Read** permissions.  
+    1. Navigate to ***/content/screens/demo/locations*** and check only the **Read** permissions.
     1. Navigate to ***/content/screens/demo/channels*** and un-check the permissions for **Global** channel.
     1. Navigate to ***/content/screens/demo/locations/region-a*** and check only the **Read** permissions. Similarly, check only the **Read** permissions for **region-b**.
     1. Navigate to ***/content/screens/demo/locations***/***region-a /store-1*** and check all the permissions. Similarly, check the permissions for **store-2, store-3,** and **store-4**.

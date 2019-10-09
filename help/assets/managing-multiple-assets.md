@@ -5,7 +5,7 @@ description: Learn how to edit the metadata of many assets and collections simul
 seo-description: Learn how to edit the metadata of many assets and collections in bulk.
 uuid: 115a6e39-2f1b-4d07-bec6-30b149524a60
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 5ca217a3-3806-4647-800c-2e3658df00b8
 ---
 

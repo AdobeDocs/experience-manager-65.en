@@ -4,7 +4,7 @@ seo-title: SPA Blueprint
 description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
 seo-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
 uuid: 41a5f0f5-bd84-4e56-a368-a14c73366774
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
@@ -46,7 +46,7 @@ See the NPM package [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/pac
 
 When initializing the `PageModelManager`, the library first loads the provided root model of the App (via parameter, meta property, or current URL). If the library identifies that the model of the current page is not part of the root model it fetches and include it as the model of a child page.
 
-![page_model_consolidation](assets/page_model_consolidation.png) 
+![page_model_consolidation](assets/page_model_consolidation.png)
 
 ### ComponentMapping {#componentmapping}
 
@@ -188,21 +188,21 @@ The underlying [Component Mapping](/help/sites-developing/spa-blueprint.md#compo
 
 ```
 const EditConfig = {
- 
+
     emptyLabel: 'My Component',
- 
+
     isEmpty: function() {
         return !this.props || !this.props.cqModel || this.props.cqModel.isEmpty;
     }
 };
- 
+
 class MyComponent extends Component {
- 
+
     render() {
         return <div className={'my-component'}></div>;
     }
 }
- 
+
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
@@ -217,7 +217,7 @@ In the above implementation, the project component is extended with the emptines
  * @property {String} emptyLabel           Label to be displayed by the placeholder when the component is empty. Optionally returns an empty text value
  * @property {function} isEmpty            Should the component be considered empty. The function is called using the context of the wrapper component giving you access to the component model
  */
- 
+
 /**
  * Map a React component with the given resource types. If an {@link EditConfig} is provided the <i>clazz</i> is wrapped to provide edition capabilities on the AEM Page Editor
  *
@@ -282,6 +282,6 @@ See how a simple SPA works and experiment with an SPA yourself by continuing on 
 
 For more information about SPAs in AEM, see the following documents:
 
-* [SPA Authoring Overview](/help/sites-developing/spa-overview.md) for an overview of SPAs in AEM and the communication model  
+* [SPA Authoring Overview](/help/sites-developing/spa-overview.md) for an overview of SPAs in AEM and the communication model
 
 * [Getting Started with SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) for a guide to a simple SPA and how it works

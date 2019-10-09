@@ -5,7 +5,7 @@ description: This article describes how the dynamic model to component mapping o
 seo-description: This article describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
 uuid: 337b8d90-efd7-442e-9fac-66c33cc26212
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
@@ -43,11 +43,11 @@ Single Page Applications leveraging the Javascript SPA SDK for AEM are model-dri
 
 Each component is extended with the capabilities of the [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). Initialization therefore take the following general form:
 
-1. Each model provider initializes itself and listens for changes made to the piece of model that corresponds to its inner component. 
-1. The [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) must be initialized as represented by the [initialization flow](/help/sites-developing/spa-blueprint.md). 
+1. Each model provider initializes itself and listens for changes made to the piece of model that corresponds to its inner component.
+1. The [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) must be initialized as represented by the [initialization flow](/help/sites-developing/spa-blueprint.md).
 
-1. Once stored, the page model manager returns the complete model of the app. 
-1. This model is then passed to the front-end root [Container](/help/sites-developing/spa-blueprint.md#container) component of the application. 
+1. Once stored, the page model manager returns the complete model of the app.
+1. This model is then passed to the front-end root [Container](/help/sites-developing/spa-blueprint.md#container) component of the application.
 1. Pieces of the model are finally propagated to each individual child component.
 
 ![app_model_initialization](assets/app_model_initialization.png)

@@ -5,7 +5,7 @@ description: Learn how to configure indexes in AEM.
 seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
@@ -78,7 +78,7 @@ The Property Index is generally useful for queries that have property constraint
 1. Name the node **PropertyIndex**, and set the node type to **oak:QueryIndexDefinition**
 1. Set the following properties for the new node:
 
-    * **type:**  `property` (of type String) 
+    * **type:**  `property` (of type String)
     * **propertyNames:**  `jcr:uuid` (of type Name)
 
    This particular example will index the `jcr:uuid` property, whose job is to expose the universally unique idetifier (UUID) of the node it is attached to.
@@ -91,7 +91,7 @@ The Property Index has the following configuration options:
 
 * The **propertyNames** property indicates the list of the properties that will be stored in the index. In case it is missing, the node name will be used as a property name reference value. In this example, the **jcr:uuid** property whose job is to expose the unique identifier (UUID) of its node is added to the index.
 
-* The **unique** flag which, if set to **true** adds a uniqueness constraint on the property index.  
+* The **unique** flag which, if set to **true** adds a uniqueness constraint on the property index.
 
 * The **declaringNodeTypes** propery allows you to specify a certain node type that the index will only apply to.
 * The **reindex** flag which if set to **true**, will trigger a full content reindex.
@@ -148,25 +148,25 @@ In order to define a Lucene Property Index for the above query, you can add the 
 
 Once the node has been created, add the following properties:
 
-* **type:** 
+* **type:**
 
   ```
   lucene (of type String)
 
   ```
 
-* **async:** 
+* **async:**
 
   ```
   async (of type String)
-  
+
   ```
 
-* **fulltextEnabled:** 
+* **fulltextEnabled:**
 
   ```
   false (of type Boolean)
-  
+
   ```
 
 * **includePropertyNames:** `["alias"] (of type String)`
@@ -199,9 +199,9 @@ The default analyzer for an index is configured in the `default` child of the an
 
 If you wish to use any out of the box analyzer, you can configure it following the below procedure:
 
-1. Locate the index you wish to use the analyzer with under the `oak:index` node.  
+1. Locate the index you wish to use the analyzer with under the `oak:index` node.
 
-1. Under the index, create a child node called `default` of type `nt:unstructured`.  
+1. Under the index, create a child node called `default` of type `nt:unstructured`.
 
 1. Add a property to the default node with the following properties:
 
@@ -298,7 +298,7 @@ You can configure the embedded Solr server by:
 
 1. Going to the Web Console at `https://serveraddress:4502/system/console/configMgr`
 1. Search for "**Oak Solr server provider**".
-1. Press the edit button and in the following window set the server type to **Embedded Solr** in the drop-down list.  
+1. Press the edit button and in the following window set the server type to **Embedded Solr** in the drop-down list.
 
 1. Next, edit "**Oak Solr embedded server configuration**" and create a configuration. For more info on the configuration options, please visit the [Apache Solr website](https://lucene.apache.org/solr/documentation.html).
 
@@ -322,11 +322,11 @@ AEM can also be confiured to work with a remote Solr server instance:
 1. Download and extract the latest version of Solr. For more info on how to do this, please consult the [Apache Solr Installation documentation](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
 1. Now, create two Solr shards. You can do this by creating folders for each shard in the folder where Solr has been upacked:
 
-    * For the first shard, create the folder: 
+    * For the first shard, create the folder:
 
    `<solrunpackdirectory>\aemsolr1\node1`
 
-    * For the second shard, create the folder: 
+    * For the second shard, create the folder:
 
    `<solrunpackdirectory>\aemsolr2\node2`
 
@@ -367,7 +367,7 @@ AEM can also be confiured to work with a remote Solr server instance:
 
     * Solr HTTP URL: `http://localhost:8983/solr/`
 
-1. Choose **Remote Solr** in the drop down list under **Oak Solr** server provider.  
+1. Choose **Remote Solr** in the drop down list under **Oak Solr** server provider.
 
 1. Go to CRXDE and login as Admin.
 1. Create a new node called **solrIndex** under **oak:index**, and set the following properties:
@@ -405,7 +405,7 @@ The ACS Commons package also exposes OSGi configurations that can be used to cre
 
 You can access it from the Web Console by searching for "**Ensure Oak Property Index**".
 
-![chlimage_1-150](assets/chlimage_1-150.png) 
+![chlimage_1-150](assets/chlimage_1-150.png)
 
 ### Troubleshooting indexing issues {#troubleshooting-indexing-issues}
 
@@ -436,15 +436,15 @@ The **com.day.cq.search** category is only applicable if you are using the AEM p
 You can enable logging by following this procedure:
 
 1. Point your browser to `https://serveraddress:port/system/console/slinglog`
-1. Click the **Add new Logger** button in the lower part of the console.  
+1. Click the **Add new Logger** button in the lower part of the console.
 
-1. In the newly created row, add the categories mentioned above. You can use the **+** sign to add more than one category to a single logger.  
+1. In the newly created row, add the categories mentioned above. You can use the **+** sign to add more than one category to a single logger.
 
-1. Choose **DEBUG** from the **Log level** drop down list.  
+1. Choose **DEBUG** from the **Log level** drop down list.
 
-1. Set the output file to `logs/queryDebug.log`. This will correlate all the DEBUG events into a single log file.  
+1. Set the output file to `logs/queryDebug.log`. This will correlate all the DEBUG events into a single log file.
 
-1. Run the query or render the page that is using the query you wish to debug.  
+1. Run the query or render the page that is using the query you wish to debug.
 
 1. Once you have executed the query, go back to the logging console and change the log level of the newly created logger to **INFO**.
 
@@ -462,8 +462,8 @@ If the index is configured at a different location, change the path accordingly.
 
 In some cases it is helpful to provide the output of index related MBeans for debugging. You can do this by:
 
-1. Going to the JMX console at: 
-`https://serveraddress:port/system/console/jmx`  
+1. Going to the JMX console at:
+`https://serveraddress:port/system/console/jmx`
 
 1. Search for the following MBeans:
 

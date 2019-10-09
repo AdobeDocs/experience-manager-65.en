@@ -5,7 +5,7 @@ description: Adobe recommends that you upload all referenced files before–or a
 seo-description: Adobe recommends that you upload all referenced files before–or at the same time–you upload the primary 3D model file. When uploading is complete, your 3D files are converted and additional processing is applied to prepare the asset for viewing and rendering.
 uuid: 82ccfbf8-1f82-4960-b9e5-3ce65c16435a
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 0be4a856-951b-4cb6-8103-8004052c63a0
@@ -26,19 +26,19 @@ When uploading is complete, your 3D files are converted and additional processin
 * Generally, there are no restrictions on where you upload 3D content in the AEM Assets folder hierarchy. AEM 3D's automated file dependencies resolution, however, has range limitations to control the time it takes to search large asset repositories. Therefore, Adobe recommends that when you upload 3D assets and their file dependents, you do so within reasonable proximity to each file (common grandparent folder). After file dependencies are resolved, you can freely move both the 3D asset and its dependents anywhere within the repository without losing the established relationships.
 * Adobe recommends that you decide on a consistent folder structure for 3D content *before *you upload. The following tips are some suggested approaches that you can take:
 
-    * **Maintain a separate folder for each 3D asset you upload**. 
+    * **Maintain a separate folder for each 3D asset you upload**.
 
       The folder contains both the primary 3D model file and all its dependents. While putting all assets and dependents into one folder is easy to implement, it is cumbersome to browse for content. It also complicates sharing dependents (texture maps) between models.
-    
-    * **Keep models in one folder and dependents in a sibling or sub-folder**. 
+
+    * **Keep models in one folder and dependents in a sibling or sub-folder**.
 
       This approach readily supports the sharing of dependents between models. However, it can become difficult to find specific dependents if the number of assets is large.
-    
-    * **Separate, parallel folder hierarchies for models and dependents**. 
+
+    * **Separate, parallel folder hierarchies for models and dependents**.
 
       You can model this approach to how 3D authoring applications such as Autodesk Maya, prefer to store content.
 
-* Dependent assets should not be deleted unless the associated 3D asset or assets that referenced them are also removed. You can, however, freely delete 3D assets without the need to delete their dependent assets. If a dependency is lost accidentally, you can easily resolve the dependency to restore it. 
+* Dependent assets should not be deleted unless the associated 3D asset or assets that referenced them are also removed. You can, however, freely delete 3D assets without the need to delete their dependent assets. If a dependency is lost accidentally, you can easily resolve the dependency to restore it.
 
   See [Resolving file dependencies](/help/assets/resolve-file-dependencies.md).
 
@@ -52,44 +52,44 @@ Conversion, processing, and render jobs are queued as needed to prevent slowing 
 
 In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset's card. Each uploaded 3D model typically undergoes the following 4-6 ordered processing stages:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Processing stage</strong><br /> </td> 
-   <td><strong>Processing names</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>1</td> 
-   <td>Processing</td> 
-   <td>Basic initial processing and metadata extraction.</td> 
-  </tr> 
-  <tr> 
-   <td>2</td> 
-   <td>Converting format</td> 
-   <td>The 3D model is being converted from a native format (Autodesk® Maya® or Autodesk® 3ds Max®) to an intermediate format (FBX).</td> 
-  </tr> 
-  <tr> 
-   <td>3</td> 
-   <td>Creating preview</td> 
-   <td>The FBX or OBJ file is ingested and processed. File dependencies are evaluated and resolved as asset references, where possible.</td> 
-  </tr> 
-  <tr> 
-   <td>4</td> 
-   <td>Creating lightmaps</td> 
-   <td>Optional. Lets you increase the quality of the interactive preview and expedite rendering with the default renderer.</td> 
-  </tr> 
-  <tr> 
-   <td>5</td> 
-   <td>Creating animation</td> 
-   <td>Optional. Lets you render a simple animation that is then used as a visual thumbnail in Card View.</td> 
-  </tr> 
-  <tr> 
-   <td>6</td> 
-   <td>Waiting for processing</td> 
-   <td>Shown when other 3D assets have processing priority. For example, assets that were uploaded earlier but have not yet completed processing.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Processing stage</strong><br /> </td>
+   <td><strong>Processing names</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>Processing</td>
+   <td>Basic initial processing and metadata extraction.</td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>Converting format</td>
+   <td>The 3D model is being converted from a native format (Autodesk® Maya® or Autodesk® 3ds Max®) to an intermediate format (FBX).</td>
+  </tr>
+  <tr>
+   <td>3</td>
+   <td>Creating preview</td>
+   <td>The FBX or OBJ file is ingested and processed. File dependencies are evaluated and resolved as asset references, where possible.</td>
+  </tr>
+  <tr>
+   <td>4</td>
+   <td>Creating lightmaps</td>
+   <td>Optional. Lets you increase the quality of the interactive preview and expedite rendering with the default renderer.</td>
+  </tr>
+  <tr>
+   <td>5</td>
+   <td>Creating animation</td>
+   <td>Optional. Lets you render a simple animation that is then used as a visual thumbnail in Card View.</td>
+  </tr>
+  <tr>
+   <td>6</td>
+   <td>Waiting for processing</td>
+   <td>Shown when other 3D assets have processing priority. For example, assets that were uploaded earlier but have not yet completed processing.</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]

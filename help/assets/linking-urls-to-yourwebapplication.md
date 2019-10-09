@@ -5,7 +5,7 @@ description: How to link URLs to your web application in dynamic media
 seo-description: How to link URLs to your web application in dynamic media
 uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
@@ -86,7 +86,7 @@ There are several different ways you can obtain a URL string. However, the steps
 Dynamic Media supports the delivery of static assets, which are additional assets beyond just images and video. Supported static assets formats for delivery include the following:
 
 * Animated GIF
-* Audio files  
+* Audio files
 * CSS
 * JavaScript (when your company is configured with its own domain)
 * PDF
@@ -106,11 +106,11 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
     * `The URL of the published static is the following:`
 
-        * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`  
+        * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
           For example, `https://aem.com/is/content/adobe/image.gif`.
 
-    * click **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.  
+    * click **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
 
       Change the copied URL to use `is/content` in the path instead of `is/image/`.
 
@@ -118,7 +118,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
 1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
 1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations]**.
-1. Under **[!UICONTROL Available Configurations]**, tap the name of the configuration you want.  
+1. Under **[!UICONTROL Available Configurations]**, tap the name of the configuration you want.
 
 1. On the **[!UICONTROL Dynamic Media Cloud Settings]** page, under **[!UICONTROL Video Service URL]**, copy down the entire URL path. You will need the copied URL path later in the steps.
 
@@ -145,8 +145,8 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
-   For example, using the example paths and the example customer name from the steps above, the complete path appears as follows:  
-  
+   For example, using the example paths and the example customer name from the steps above, the complete path appears as follows:
+
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
    This is the complete video URL for a published video rendition.
@@ -164,27 +164,27 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    (The path above is for illustration purposes only; it is not the actual path you copy.)
 
-    * Under **[!UICONTROL Registration ID]**, copy the customer name found in the last part of the ID. You will need the copied customer name later in these steps. 
-  
+    * Under **[!UICONTROL Registration ID]**, copy the customer name found in the last part of the ID. You will need the copied customer name later in these steps.
+
       For example, if the registration ID was `87654321|demoCo`, the customer name you copy would be `demoCo`.
 
 1. Based on the video delivery protocol you are using, copy the respective protocol selector. You will need the copied protocol selector later in these steps.
 
-   <table> 
-    <tbody> 
-      <tr> 
-      <td><strong>Video delivery protocol you are using</strong></td> 
-      <td><strong>Protocol selector to use</strong></td> 
-      </tr> 
-      <tr> 
-      <td><p>HTTP</p> <p>If you are using HTTP (non-secure video delivery), be sure you change <code>https</code> to <code>http</code> in the Video Service URL value you copied earlier.</p> </td> 
-      <td><code>public/</code></td> 
-      </tr> 
-      <tr> 
-      <td>HTTPS</td> 
-      <td><code>public-ssl/</code></td> 
-      </tr> 
-    </tbody> 
+   <table>
+    <tbody>
+      <tr>
+      <td><strong>Video delivery protocol you are using</strong></td>
+      <td><strong>Protocol selector to use</strong></td>
+      </tr>
+      <tr>
+      <td><p>HTTP</p> <p>If you are using HTTP (non-secure video delivery), be sure you change <code>https</code> to <code>http</code> in the Video Service URL value you copied earlier.</p> </td>
+      <td><code>public/</code></td>
+      </tr>
+      <tr>
+      <td>HTTPS</td>
+      <td><code>public-ssl/</code></td>
+      </tr>
+    </tbody>
    </table>
 
 1. Copy the full video asset path in AEM, as processed by Dynamic Media. You will need this copied video asset path later in these steps.

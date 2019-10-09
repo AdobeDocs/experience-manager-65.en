@@ -6,7 +6,7 @@ seo-description: WCAG 2.0 consists of a set of technology independent guidelines
 page-status-flag: de-activated
 uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
@@ -21,7 +21,7 @@ WCAG 2.0 consists of a set of technology independent guidelines and success crit
 >See also:
 >
 >* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)  
+>* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)
 >
 
 These are graded according to three conformance levels: Level A (lowest), Level AA and Level AAA (highest). Briefly, the levels are defined as follows:
@@ -80,11 +80,11 @@ The **Alt Text** field is available in the **Advanced** image properties tab of 
 
 AEM adds an **Alt Text** to your images by default. For the classic UI there are two different scenarios for how the default attribute is created (though the default value may not be sufficient as an alternative and will most likely need to be edited in the **Advanced** image properties tab):
 
-* File: 
+* File:
 
   An image is uploaded from the user’s hard drive. If you add an image component to a page and then choose an image from your hard drive, or another source, the default value for **Alt Text** is `file`. This must be changed in the **Advanced** image properties tab. Again, this value is not displayed in the **Alt Text** field, but when the value is changed, the new value is displayed in the field.
 
-* Asset: 
+* Asset:
 
   An image is added from the digital asset repository. If you drag an image from the digital asset repository to a web page, then the **Title** and **Alt Text** values for that image will be taken from the metadata for that image.
 
@@ -103,7 +103,7 @@ There are various forms of non-text content, so the value of the text alternativ
 * Text alternatives should be succinct yet clearly capture the essential information provided by the non-text content.
 * Overly long descriptions (over 100 characters) should be avoided. If a text alternative requires more detail:
 
-    * provide a short description in the alternative text  
+    * provide a short description in the alternative text
     * and have a longer description in text elsewhere on the same page or in a separate web page. Link to this separate description by making the image a link, or by placing a text link adjacent to the image.
 
 * Alternative text should not replicate content provided in text form nearby on the same page. Remember that many images are illustrations of points already covered in the text of a page, so a detailed text alternative may already exist.
@@ -115,7 +115,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 Specific types of non-text content that require text alternatives might include:
 
-* Illustrative photos: 
+* Illustrative photos:
 
   These are images of people, objects or places. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of [object]*, but may be dependent on the surrounding text.
 
@@ -123,7 +123,7 @@ Specific types of non-text content that require text alternatives might include:
 
   These are small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 
-* Charts and graphs:  
+* Charts and graphs:
 
   These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
 
@@ -143,13 +143,13 @@ Specific types of non-text content that require text alternatives might include:
 
   In AEM this can be done using a combination of the **Alt Text** and **Description** fields in the image’s configuration dialog - as in [How to Meet - Non-text Content (1.1.1)](#how-to-meet-non-text-content).
 
-* Maps, diagrams, flowcharts:  
+* Maps, diagrams, flowcharts:
 
   For graphics providing spatial data (for example. to support describing relationships between objects or a process), ensure that the key message is provided in text format. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
 
-* CAPTCHAs:  
+* CAPTCHAs:
 
-  A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see in order to pass a security test. Providing a text alternative for the image is obviously not possible, so instead you will need to consider alternative non-graphic solutions.  
+  A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see in order to pass a security test. Providing a text alternative for the image is obviously not possible, so instead you will need to consider alternative non-graphic solutions.
 
   The W3C provides a number of suggestions, such as:Each of these approaches has their own merits and drawbacks.
 
@@ -157,9 +157,9 @@ Specific types of non-text content that require text alternatives might include:
     * The use of sound output instead of images
     * Limited use accounts and spam filters.
 
-* Background images:  
+* Background images:
 
-  These are achieved using Cascading Style Sheets (CSS) rather than in HTML. This means it is not possible to specify an alternative text value. Therefore background images should not provide important textual information - if they do, this information must also be provided in the page’s text.  
+  These are achieved using Cascading Style Sheets (CSS) rather than in HTML. This means it is not possible to specify an alternative text value. Therefore background images should not provide important textual information - if they do, this information must also be provided in the page’s text.
 
   However, it is important that an alternative background is displayed when the image cannot be displayed.
 
@@ -183,7 +183,7 @@ This deals with web content that is *time-based*. This covers content that the u
 ### Audio-only and Video-only (Pre-recorded) (1.2.1) {#audio-only-and-video-only-pre-recorded}
 
 * Success Criterion 1.2.1
-* Level A  
+* Level A
 * Audio-only and Video-only (Prerecorded): For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:
 
     * Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.
@@ -205,7 +205,7 @@ Providing this information in a different format, such as text (or audio for vid
 
 * If the content is pre-recorded audio with no video (such as a podcast):
 
-    * Provide a link immediately before or after the content to a text-transcript of the audio content.  
+    * Provide a link immediately before or after the content to a text-transcript of the audio content.
 
       The transcript should be an HTML page with a text equivalent of all spoken and important non-spoken content, plus an indication of who is speaking, a description of the setting, vocal expressions and a description of any other significant audio.
 
@@ -232,7 +232,7 @@ Inserting multimedia, specifically Flash content, into your AEM web pages is sim
 ### Captions (Pre-Recorded) (1.2.2) {#captions-pre-recorded}
 
 * Success Criterion 1.2.2
-* Level A  
+* Level A
 * Captions (Prerecorded): Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.
 
 #### Purpose - Captions (Pre-Recorded) (1.2.2) {#purpose-captions-pre-recorded}
@@ -300,7 +300,7 @@ Exact details of how to create audio-described video are beyond the scope of thi
 ### Captions (Live) (1.2.4)  {#captions-live}
 
 * Success Criterion 1.2.4
-* Level AA  
+* Level AA
 * Captions (Live): Captions are provided for all live audio content in synchronized media.
 
 #### Purpose - Captions (Live) (1.2.4) {#purpose-captions-live}
@@ -346,7 +346,7 @@ Follow the guidance provided for [Audio Description or Media Alternative (Pre-Re
 
 This guideline covers the requirements necessary to support people who:
 
-* may not be able to access information as presented by an author in a *standard *two dimensional, multi-column, colored web page layout   
+* may not be able to access information as presented by an author in a *standard *two dimensional, multi-column, colored web page layout
 
 * may use an audio-only, or alternative visual display such as large text or high contrast.
 
@@ -398,11 +398,11 @@ You can make sure your web pages are given the appropriate structure by:
 
 * **Use lists**: You can use HTML to specify three different types of lists:
 
-    * The `<ul>` element is used for *unordered* lists (bulleted) lists. Individual list items are identified using the `<li>` element. 
+    * The `<ul>` element is used for *unordered* lists (bulleted) lists. Individual list items are identified using the `<li>` element.
 
       in the RTE, use the **Bulleted List** icon.
-    
-    * The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element. 
+
+    * The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element.
 
       In the RTE, use the **Numbered List** icon.
 
@@ -499,7 +499,7 @@ You can make sure your web pages are given the appropriate structure by:
 ### Sensory Characteristics (1.3.3)  {#sensory-characteristics}
 
 * Success Crtierion 1.3.3
-* Level A  
+* Level A
 * Sensory Characteristics: Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.
 
 #### Purpose - Sensory Characteristics (1.3.3) {#purpose-sensory-characteristics}
@@ -556,25 +556,25 @@ Wherever color is used to convey information, make sure that the information is 
 
 For example, make sure that information provided by color is also provided explicitly in text. The illustration below shows how color and text both indicate seating availability for a performance:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Performance</strong></p> </td> 
-   <td><p><strong>Availability</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Tuesday March 16<sup>th</sup></p> </td> 
-   <td><p>SEATS AVAILABLE</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Wednesday March 17th</p> </td> 
-   <td><p>SEATS AVAILABLE</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Thursday March 18<sup>th</sup></p> </td> 
-   <td><p>SOLD OUT</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Performance</strong></p> </td>
+   <td><p><strong>Availability</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Tuesday March 16<sup>th</sup></p> </td>
+   <td><p>SEATS AVAILABLE</p> </td>
+  </tr>
+  <tr>
+   <td><p>Wednesday March 17th</p> </td>
+   <td><p>SEATS AVAILABLE</p> </td>
+  </tr>
+  <tr>
+   <td><p>Thursday March 18<sup>th</sup></p> </td>
+   <td><p>SOLD OUT</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 If color is used as a cue to provide information, you should provide an additional visual cue, such as changing the style (e.g. bold, italics) or font. This helps people with low vision or who have color vision deficiency to identify the information. Howver, it cannot be relied on entirely, as it will not help people who cannot see the page at all.
@@ -599,7 +599,7 @@ If color is used as a cue to provide information, you should provide an addition
 
 People with certain visual impairments may be unable to distinguish between certain low-contrast color pairs. Accessibility problems may occur for these people if either:
 
-* The text contrasts poorly with its background color.  
+* The text contrasts poorly with its background color.
 * The color coding of text (such as link text and non-link text) is important in distinguishing information.
 
 >[!NOTE]
@@ -657,7 +657,7 @@ If images of text must be used, use CSS to replace the images of text with equiv
 
 ### Pause, Stop, Hide (2.2.2)  {#pause-stop-hide}
 
-* Success Criterion 2.2.2 
+* Success Criterion 2.2.2
 * Level A
 * Pause, Stop, Hide: For moving, blinking, scrolling, or auto-updating information, the following are true:
 
@@ -679,9 +679,9 @@ Certain users may find content that moves is distracting and makes it difficult 
 
 Depending on the nature of the content, you can apply one or more of the following suggestions when creating web pages containing moving, flashing or blinking content:
 
-* Provide a means of pausing scrolling content to give users enough time to read it. For example, news tickers or auto-updated text.  
+* Provide a means of pausing scrolling content to give users enough time to read it. For example, news tickers or auto-updated text.
 * Make sure that content that blinks stops blinking after five seconds.
-* Use appropriate technologies to display blinking content that can be disabled by the browser. For example, Graphics Interchange Format (GIF) or Animated Portable Network Graphics (APNG) files.  
+* Use appropriate technologies to display blinking content that can be disabled by the browser. For example, Graphics Interchange Format (GIF) or Animated Portable Network Graphics (APNG) files.
 * Provide a form control on the web page to allow the user to disable all blinking content on the page.
 * If any of the above is not possible, provide a link to a page containing all the content, but without any blinking.
 
@@ -696,7 +696,7 @@ Depending on the nature of the content, you can apply one or more of the followi
 
 ### Three Flashes or Below Threshold (2.3.1) {#three-flashes-or-below-threshold}
 
-* Success Criterion 2.3.1 
+* Success Criterion 2.3.1
 * Level A
 * Three Flashes or Below Threshold: Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.
 
@@ -722,7 +722,7 @@ You should take steps to make sure the following techniques are applied:
 
 ### Page Titled (2.4.2)  {#page-titled}
 
-* Success Crtierion 2.4.2 
+* Success Crtierion 2.4.2
 * Level A
 * Page Titled: Web pages have titles that describe topic or purpose.
 
@@ -743,7 +743,7 @@ You can also edit the page title when editing a page, which is accessible by **S
 
 ### Link Purpose (In Context) (2.4.4)  {#link-purpose-in-context}
 
-* Success Crtierion 2.4.4 
+* Success Crtierion 2.4.4
 * Level A
 * Link Purpose (In Context): The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.
 
@@ -818,7 +818,7 @@ Alternatively, scripts can be used so that a minimal amount of text is provided 
 
 ### Language of Page (3.1.1) {#language-of-page}
 
-* Success Criterion 3.1.1 
+* Success Criterion 3.1.1
 * Level A
 * Language of Page: The default human language of each web page can be programmatically determined.
 
@@ -830,11 +830,11 @@ The purpose of this success criterion is to make sure that text and other lingui
 
 To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. For example:
 
-* If a page is written in British English, the `<html>` element should read: 
+* If a page is written in British English, the `<html>` element should read:
 
   `<html lang = “en-gb”>`
 
-* Whereas a page to be rendered as US English should adopt the following standard: 
+* Whereas a page to be rendered as US English should adopt the following standard:
 
   `<html lang = “en-us”>`
 
@@ -867,7 +867,7 @@ Pages applying this success criterion allow:
 Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code “de”) can be shown as follows:
 
 ```xml
-<blockquote cite = "John F. Kennedy" lang = "de"> 
+<blockquote cite = "John F. Kennedy" lang = "de">
      <p>Ich bin ein Berliner</p>
  </blockquote>
 ```
@@ -899,7 +899,7 @@ To add the span element, with an appropriate language, you can manually edit you
 
 ### Labels or Instructions (3.3.2) {#labels-or-instructions}
 
-* Success Criterion 3.3.2 
+* Success Criterion 3.3.2
 * Level A
 * Labels or Instructions: Labels or instructions are provided when content requires user input.
 
@@ -919,7 +919,7 @@ For some form components it is also possible to visually hide labels using the *
 
 Where image buttons are used (for example, the **Image Button** component) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. So, in the example below, the image with the text `Submit` has alt text of `Submit`, added using the **Title** field in the edit dialog.
 
-![Image button with the Alt Text set in the Title field (edit dialog).](assets/chlimage_1-23.png) 
+![Image button with the Alt Text set in the Title field (edit dialog).](assets/chlimage_1-23.png)
 
 #### Groups of Form Fields {#groups-of-form-fields}
 
@@ -939,11 +939,11 @@ If input for a form field is mandatory, make this clear by using the word requir
 
 The positioning of labels is also important as it helps them to locate appropriate fields. This is of particular importance when the user is faced with a complex form. Follow the convention below:
 
-* Checkboxes or radio buttons:   
+* Checkboxes or radio buttons:
 
   Labels are positioned immediately to the right of the field.
 
-* All other form components (e.g. text boxes, combo boxes):  
+* All other form components (e.g. text boxes, combo boxes):
 
   Labels are positioned either immediately above or immediately to the left of the field.
 
@@ -951,6 +951,6 @@ In simple forms with very limited functionality, appropriately labelling a `Subm
 
 #### More Information - Labels or Instructions (3.3.2) {#more-information-labels-or-instructions}
 
-* [Understanding Success Criterion 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) 
+* [Understanding Success Criterion 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [How to meet Success Criterion 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
 

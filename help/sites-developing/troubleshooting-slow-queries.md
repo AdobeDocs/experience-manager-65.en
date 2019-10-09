@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
@@ -75,7 +75,7 @@ Before adding the cq:tags index rule
 
 * **Query Builder query**
 
-    * ``` 
+    * ```
       type=cq:Page
        property=jcr:content/cq:tags
        property.value=my:tag
@@ -99,7 +99,7 @@ After adding the cq:tags index rule
 
 * **Query Builder query**
 
-    * ``` 
+    * ```
       type=cq:Page
        property=jcr:content/cq:tags
        property.value=myTagNamespace:myTag
@@ -111,8 +111,8 @@ After adding the cq:tags index rule
 
 The addition of the indexRule for `jcr:content/cq:tags` in the `cqPageLucene` index allows `cq:tags` data to be stored in an optimized way.
 
-When a query with the `jcr:content/cq:tags` restriction is performed, the index can look up results by value. That means that if 100 `cq:Page` nodes have `myTagNamespace:myTag` as a value, only those 100 results are returned, and the other 999,000 are excluded from the restriction checks, improving performance by a factor of 10,000.  
-  
+When a query with the `jcr:content/cq:tags` restriction is performed, the index can look up results by value. That means that if 100 `cq:Page` nodes have `myTagNamespace:myTag` as a value, only those 100 results are returned, and the other 999,000 are excluded from the restriction checks, improving performance by a factor of 10,000.
+
 Of course, further query restrictions reduce the eligible result sets and further optimize the query optimization.
 
 Similarly, without an additional index rule for the `cq:tags` property, even a fulltext query with a restriction on `cq:tags` would perform poorly as results from the index would return all fulltext matches. The restriction on cq:tags would be filtered after it.
@@ -180,7 +180,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * 
+        *
           ```
            property=jcr:content/contentType
            property.value=article-page
@@ -188,10 +188,10 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Optimized query**
 
-        * 
+        *
           ```
-           type=cq:Page 
-           property=jcr:content/contentType 
+           type=cq:Page
+           property=jcr:content/contentType
            property.value=article-page
           ```
 
@@ -203,7 +203,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ``` 
+        * ```
           type=nt:hierarchyNode
           property=jcr:content/contentType
           property.value=article-page
@@ -211,7 +211,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Optimized query**
 
-        * ``` 
+        * ```
           type=cq:Page
           property=jcr:content/contentType
           property.value=article-page
@@ -228,7 +228,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ``` 
+        * ```
           property=jcr:content/contentType
           property.value=article-page
           ```
@@ -248,7 +248,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ``` 
+        * ```
           type=cq:Page
           path=/content
           property=jcr:content/contentType
@@ -297,7 +297,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ``` 
+        * ```
           type=cq:Page
           path=/content
           ```
@@ -322,7 +322,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Query Builder query**
 
-        * ``` 
+        * ```
           query type=cq:Page
           path=/content/my-site/us/en
           property=jcr:content/contentType
@@ -347,13 +347,13 @@ The following example uses Query Builder as it's the most common query language 
     - type = "lucene"
     - async = "async"
     - jcr:primaryType = oak:QueryIndexDefinition
-        + indexRules 
-        + cq:Page 
-            + properties 
-            + contentType 
+        + indexRules
+        + cq:Page
+            + properties
+            + contentType
                 - name = "jcr:content/contentType"
                 - propertyIndex = true
-            + publishDate 
+            + publishDate
                 - ordered = true
                 - name = "jcr:content/publishDate"
     ```
@@ -392,10 +392,10 @@ The following example uses Query Builder as it's the most common query language 
     - type = "lucene"
     - async = "async"
     - jcr:primaryType = oak:QueryIndexDefinition
-        + indexRules 
-        + myApp:AuthorModel 
-            + properties 
-            + firstName 
+        + indexRules
+        + myApp:AuthorModel
+            + properties
+            + firstName
                 - name = "firstName"
                 - propertyIndex = true
     ```

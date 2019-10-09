@@ -6,7 +6,7 @@ seo-description: null
 uuid: e56c3c94-384d-401f-b418-dd34cdc57eda
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 ---
@@ -34,7 +34,7 @@ You can use the barcoded forms service API to decode data from a PDF form or an 
 To decode data from a PDF form, perform the following steps:
 
 1. Include project files.
-1. Create a barcoded formsClient API object. 
+1. Create a barcoded formsClient API object.
 1. Get a PDF form that contains barcoded data.
 1. Decode the data from PDF form.
 1. Convert the data to an XML data source.
@@ -106,7 +106,7 @@ Decode form data by using the barcoded forms API(Java):
 
 1. Include project files
 
-   Include client JAR files in your Java project’s class path. 
+   Include client JAR files in your Java project’s class path.
 
 1. Create a barcoded forms Client API object
 
@@ -121,18 +121,18 @@ Decode form data by using the barcoded forms API(Java):
 
    Decode the form data by invoking the `BarcodedFormsServiceClient` object’s `decode` method and passing the following values:
 
-    * The `com.adobe.idp.Document` object that contains the PDF form. 
-    * A `java.lang.Boolean` object that specifies whether to decode a PDF417 barcode. 
-    * A `java.lang.Boolean` object that specifies whether to decode a data matrix barcode. 
-    * A `java.lang.Boolean` object that specifies whether to decode a QR code barcode. 
-    * A `java.lang.Boolean` object that specifies whether to decode a codabar barcode. 
-    * A `java.lang.Boolean` object that specifies whether to decode a code 128 barcode. 
-    * A `java.lang.Boolean` object that specifies whether to decode a code 39 barcode. 
-    * A `java.lang.Boolean` object that specifies whether to decode an EAN-13 barcode. 
-    * A `java.lang.Boolean` object that specifies whether to decode an EAN-8 barcode. 
+    * The `com.adobe.idp.Document` object that contains the PDF form.
+    * A `java.lang.Boolean` object that specifies whether to decode a PDF417 barcode.
+    * A `java.lang.Boolean` object that specifies whether to decode a data matrix barcode.
+    * A `java.lang.Boolean` object that specifies whether to decode a QR code barcode.
+    * A `java.lang.Boolean` object that specifies whether to decode a codabar barcode.
+    * A `java.lang.Boolean` object that specifies whether to decode a code 128 barcode.
+    * A `java.lang.Boolean` object that specifies whether to decode a code 39 barcode.
+    * A `java.lang.Boolean` object that specifies whether to decode an EAN-13 barcode.
+    * A `java.lang.Boolean` object that specifies whether to decode an EAN-8 barcode.
     * A `com.adobe.livecycle.barcodedforms.CharSet` enumeration value that specifies the character set encoding value used in the barcode.
 
-   The `decode` method returns an `org.w3c.dom.Document` object that contains decoded form data. 
+   The `decode` method returns an `org.w3c.dom.Document` object that contains decoded form data.
 
 1. Convert the data to an XML data source
 
@@ -151,8 +151,8 @@ Decode form data by using the barcoded forms API(Java):
 
 1. Process the decoded data
 
-    * Iterate through the `java.util.List` object to get each `org.w3c.dom.Document` object that is located in the list. 
-    * For each element in the list, convert the `org.w3c.dom.Document` object to a `com.adobe.idp.Document` object. (The application logic that converts a `org.w3c.dom.Document` object into a `com.adobe.idp.Document` object is shown in the Decoding barcoded form data using the Java API example). 
+    * Iterate through the `java.util.List` object to get each `org.w3c.dom.Document` object that is located in the list.
+    * For each element in the list, convert the `org.w3c.dom.Document` object to a `com.adobe.idp.Document` object. (The application logic that converts a `org.w3c.dom.Document` object into a `com.adobe.idp.Document` object is shown in the Decoding barcoded form data using the Java API example).
     * Save the XML data as an XML file by invoking the `com.adobe.idp.Document` object’s `copyToFile`, and passing a File object that represents the XML file.
 
 **See also**
@@ -179,8 +179,8 @@ Decode form data by using the barcoded forms API(web service):
 1. Get a PDF form that contains barcoded data
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that contains a barcode.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `binaryData` property with the contents of the byte array.
 
@@ -188,18 +188,18 @@ Decode form data by using the barcoded forms API(web service):
 
    Decode the form data by invoking the `BarcodedFormsServiceService` object’s `decode` method and passing the following values:
 
-    * The `BLOB` object that contains the PDF form. 
-    * A `Boolean` object that specifies whether to decode a PDF417 barcode. 
-    * A `Boolean` object that specifies whether to decode a data matrix barcode. 
-    * A `Boolean` object that specifies whether to decode a QR code barcode. 
-    * A `Boolean` object that specifies whether to decode a codabar barcode. 
-    * A `Boolean` object that specifies whether to decode a code 128 barcode. 
-    * A `Bolean` object that specifies whether to decode a code 39 barcode. 
-    * A `Boolean` object that specifies whether to decode an EAN-13 barcode. 
-    * A `Boolean` object that specifies whether to decode an EAN-8 barcode. 
+    * The `BLOB` object that contains the PDF form.
+    * A `Boolean` object that specifies whether to decode a PDF417 barcode.
+    * A `Boolean` object that specifies whether to decode a data matrix barcode.
+    * A `Boolean` object that specifies whether to decode a QR code barcode.
+    * A `Boolean` object that specifies whether to decode a codabar barcode.
+    * A `Boolean` object that specifies whether to decode a code 128 barcode.
+    * A `Bolean` object that specifies whether to decode a code 39 barcode.
+    * A `Boolean` object that specifies whether to decode an EAN-13 barcode.
+    * A `Boolean` object that specifies whether to decode an EAN-8 barcode.
     * A `CharSet` enumeration value that specifies the character set encoding value used in the barcode.
 
-   The `decode` method returns a string value that contains decoded form data. 
+   The `decode` method returns a string value that contains decoded form data.
 
 1. Convert the data to an XML data source
 

@@ -5,7 +5,7 @@ description: Learn how to mitigate serialization issues in AEM.
 seo-description: Learn how to mitigate serialization issues in AEM.
 uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
@@ -18,15 +18,15 @@ discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 The AEM team at Adobe has been working closely with the open source project [NotSoSerial](https://github.com/kantega/notsoserial) to assist in mitigating the vulnerabilities described in **CVE-2015-7501**. NotSoSerial is licensed under the [Apache 2 license](https://www.apache.org/licenses/LICENSE-2.0) and includes ASM code licensed under its own [BSD-like license](https://asm.ow2.org/license.html).
 
 The agent jar included with this package is Adobe's modified distribution of NotSoSerial.
-  
+
 NotSoSerial is a Java level solution to a Java level problem and is not AEM specific. It adds a preflight check to an attempt to deserialize an object. This check will test a class name against a firewall-style whitelist and/or blacklist. Due to the limited number of classes in the default blacklist, this is unlikely to have an impact on your systems or code.
 
 By default, the agent will perform a blacklist check against current known vulnerable classes. This blacklist is intended to protect you from the current list of exploits that use this type of vulnerability.
 
 The blacklist and whitelist can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
 
-The agent is intended to help mitigate the latest known vulnerable classes. If your project is deserializing untrusted data, it may still be vulnerable to denial of service attacks, out of memory attacks, and unknown future deserialization exploits.  
-  
+The agent is intended to help mitigate the latest known vulnerable classes. If your project is deserializing untrusted data, it may still be vulnerable to denial of service attacks, out of memory attacks, and unknown future deserialization exploits.
+
 Adobe officially supports Java 6, 7, and 8, however our understanding is that NotSoSerial supports Java 5 as well.
 
 ## Installing the Agent {#installing-the-agent}
@@ -35,7 +35,7 @@ Adobe officially supports Java 6, 7, and 8, however our understanding is that No
 >
 >If you have previously installed the serialization hotfix for AEM 6.1, please remove the agent start commands from your java execution line.
 
-1. Install the **com.adobe.cq.cq-serialization-tester** bundle.  
+1. Install the **com.adobe.cq.cq-serialization-tester** bundle.
 
 1. Go to the Bundle Web Console at `https://server:port/system/console/bundles`
 1. Look for the serialization bundle and start it. This should dynamically autoload the NotSoSerial agent.
@@ -50,7 +50,7 @@ The NotSoSerial agent is not included in the stardard distribution of AEM for ap
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Go to the location of the newly unzipped AEM quickstart, and copy the `crx-quickstart/opt/notsoserial/` folder to the `crx-quickstart` folder of the AEM application server installation.  
+1. Go to the location of the newly unzipped AEM quickstart, and copy the `crx-quickstart/opt/notsoserial/` folder to the `crx-quickstart` folder of the AEM application server installation.
 
 1. Change the ownership of `/opt` to the user running the server:
 
@@ -81,14 +81,14 @@ This configuration contains the whitelist, blacklist, and deserialization loggin
 
 In the whitelisting section, these are classes or package prefixes that will be allowed for deserialization. It is important to be aware that if you are deserializing classes of your own, you will need to add either the classes or packages to this whitelist.
 
-**Blacklisting** 
-  
+**Blacklisting**
+
 In the blacklisting section are classes that are never allowed for deserializaiton. The initial set of these classes is limited to classes that have been found vulnerable to remote execution attacks. The blacklist is applied before any whitelisted entries.
 
-**Diagnostinc Logging** 
-  
-In the section for diagnostic logging, you can chose several options to log when deserialization is taking place. These are only logged on first use, and are not logged again on subsequent uses.  
-  
+**Diagnostinc Logging**
+
+In the section for diagnostic logging, you can chose several options to log when deserialization is taking place. These are only logged on first use, and are not logged again on subsequent uses.
+
 The default of **class-name-only** will inform you of the classes that are being deserialized.
 
 You can also set the **full-stack** option which will log a java stack of the first deserialization attempt to inform you where your deserialization is taking place. This can be useful for finding and removing deserialization from your usage.
@@ -127,11 +127,11 @@ In order to load the agent manually, follow the below instructions:
    >
    >The Adobe distribution of the NotSoSerial agent jar can be found in the `crx-quickstart/opt/notsoserial/` folder of your AEM installation.
 
-1. Stop and restart the JVM;  
+1. Stop and restart the JVM;
 
 1. Verify the agent's activation again by following the steps described above in [Verifying The Agent's Activation](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation).
 
 ## Other Considerations {#other-considerations}
 
-If you are running on an IBM JVM, please review the documentation on support for the Java Attach API at [this location](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).  
+If you are running on an IBM JVM, please review the documentation on support for the Java Attach API at [this location](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
 

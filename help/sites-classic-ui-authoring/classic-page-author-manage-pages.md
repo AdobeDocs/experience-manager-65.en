@@ -5,7 +5,7 @@ description: This section describes how to create and manage pages with AEM so t
 seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
@@ -25,7 +25,7 @@ This section describes how to create and manage pages with Adobe Experience Mana
 
 As an author you will need to organize your website within AEM. This involves creating and naming your content pages so that:
 
-* you can easily find them on the author environment  
+* you can easily find them on the author environment
 * visitors to your site can easily browse them on the publish environment
 
 You can also use [folders](#creating-a-new-folder) to help organize your content.
@@ -34,13 +34,13 @@ The structure of a website can be thought of as a *tree structure* that holds yo
 
 The following shows an extract from the Geometrixx site; where, for example, the `Triangle` page will be accessed:
 
-* Author environment  
+* Author environment
 
   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* Publish environment  
+* Publish environment
 
-  `http://localhost:4503/content/geometrixx/en/products/triangle.html`  
+  `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
   Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
 
@@ -51,7 +51,7 @@ The following shows an extract from the Geometrixx site; where, for example, the
         /toolbar...
         /products
           /triangle
-            /overview 
+            /overview
             /features
           /square...
           /circle...
@@ -66,7 +66,7 @@ The following shows an extract from the Geometrixx site; where, for example, the
 
 This structure can be viewed from the Websites console, which you can use to [navigate through the tree structure](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
-![chlimage_1-151](assets/chlimage_1-151.png) 
+![chlimage_1-151](assets/chlimage_1-151.png)
 
 ### Page Naming Conventions {#page-naming-conventions}
 
@@ -74,12 +74,12 @@ When creating a new page there are two keys fields:
 
 * **[Title](#title)**:
 
-    * This is displayed to the user in the console and shown at the top of the page content when editing. 
+    * This is displayed to the user in the console and shown at the top of the page content when editing.
     * This field is mandatory.
 
 * **[Name](#name)**:
 
-    * This is used to generate the URI. 
+    * This is used to generate the URI.
     * User input for this field is optional. If not specified, the name is derived from the title.
 
 When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
@@ -126,13 +126,13 @@ The template defines the structure of a page; including a thumbnail image and ot
 
 AEM comes with several templates provided out-of-the-box. The templates proffered depend on the individual website and the information that needs to be supplied (when creating the new page) depends on the UI being used. The key fields are:
 
-* **Title** 
-  The title displayed on the resulting web-page.  
+* **Title**
+  The title displayed on the resulting web-page.
 
-* **Name** 
-  Used when naming the page.  
+* **Name**
+  Used when naming the page.
 
-* **Template** 
+* **Template**
   A list of templates available for use when generating the new page.
 
 ### Components {#components}
@@ -168,10 +168,10 @@ Unless all pages have been created for you in advance, before you can start crea
     * Provide a **Title**; this is displayed to the user.
     * Provide a **Name**; this is used to generate the URI. If not specified, the name will be derived from the title.
 
-        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and JCR. 
+        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and JCR.
         * In the classic UI you **cannot enter invalid characters** in the **Name** field.
 
-    * Click the template you want to use to create the new page. 
+    * Click the template you want to use to create the new page.
 
       The template is used as the basis for the new page; for example, to determine the basic layout of a content page.
 
@@ -201,7 +201,7 @@ You can open the page to be [edited](/help/sites-classic-ui-authoring/classic-pa
 
 * From **Websites** console, you can **double-click** the page entry to open it for editing.
 
-* From **Websites** console, you can **right-click** (context menu) the page item, then select **Open** from the menu.  
+* From **Websites** console, you can **right-click** (context menu) the page item, then select **Open** from the menu.
 
 * After you have opened a page, you can navigate to other pages within the site (to edit them) by clicking hyperlinks.
 
@@ -218,7 +218,7 @@ When copying, you can copy either:
    >
    >At this stage, it is irrelevant whether you want to copy a single page or the underlying subpages.
 
-1. Click **Copy**.  
+1. Click **Copy**.
 
 1. Navigate to the new location and click:
 
@@ -243,7 +243,7 @@ When copying, you can copy either:
 
 The procedure to move or rename a page is the same. With the same action you can:
 
-* move a page to a new location   
+* move a page to a new location
 * rename a page at the same location
 * move a page to a new location and rename it at the same time
 
@@ -253,7 +253,7 @@ To move or rename a page:
 
 1. There are various methods of triggering a move:
 
-    * From the **Websites** console, click to select the page, then select **Move...** 
+    * From the **Websites** console, click to select the page, then select **Move...**
     * From the **Websites** console, you can also select the page item, then **right-click** and select **Move...**
     * When editing a page you can select **Move Page** from the **Page** tab of the sidekick.
 
@@ -265,27 +265,27 @@ To move or rename a page:
 
 1. Fill in the following fields, as appropriate:
 
-    * **Destination** 
+    * **Destination**
 
-      Use the sitemap (available via the drop-down selector) to select the location where the page should be moved to.  
+      Use the sitemap (available via the drop-down selector) to select the location where the page should be moved to.
 
       If you are only renaming the page, ignore this field.
-    
-    * **Move** 
+
+    * **Move**
 
       Specify the page to be moved - this is usually filled in by default, depending on how and where you started the move action.
-    
-    * **Rename to** 
+
+    * **Rename to**
 
       The current page label displays by default. Specify the new page label, if required.
-    
-    * **Adjust** 
 
-      Update the links on the page listed that point to the moved page: for example, if page A has links to page B, AEM adjusts the links in page A in case you move page B. 
+    * **Adjust**
+
+      Update the links on the page listed that point to the moved page: for example, if page A has links to page B, AEM adjusts the links in page A in case you move page B.
 
       This can be selected/deselected for each individual referencing page.
-    
-    * **Republish** 
+
+    * **Republish**
 
       Republish the referencing page; again this can be selected for each individual page.
 
@@ -328,7 +328,7 @@ You can [lock/unlock a page](/help/sites-classic-ui-authoring/classic-page-autho
 >Folders are also subject to the [Page Naming Conventions](#page-naming-conventions) when specifying the new folder name.
 
 1. Open the **Websites** console and navigate to the required location.
-1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**. 
+1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**.
 1. The **Create Folder** dialog will open. Here you can enter the **Name** and **Title**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)

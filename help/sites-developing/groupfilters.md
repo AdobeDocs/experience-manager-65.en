@@ -5,7 +5,7 @@ description: Create a device group filter to define a set of device capability r
 seo-description: Create a device group filter to define a set of device capability requirements
 uuid: 8db98b98-f26d-4924-930a-a682cd7df866
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
 discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
@@ -42,18 +42,18 @@ import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Service;
 
 @Component(metatype = false)
-@Service 
+@Service
 public class myDeviceGroupFilter implements DeviceGroupFilter {
- 
+
        public String getDescription() {
   return null;
  }
 
- public String getTitle() { 
+ public String getTitle() {
   return null;
  }
 
- public boolean matches(DeviceGroup arg0, String arg1, Map arg2) { 
+ public boolean matches(DeviceGroup arg0, String arg1, Map arg2) {
   return false;
  }
 
@@ -75,7 +75,7 @@ public String getDescription() {
     return "An example device group filter";
 }
 
-public String getTitle() { 
+public String getTitle() {
  return "myFilter";
 }
 ```
@@ -164,7 +164,7 @@ The String value that the getTitle method returns appars in the drop down list o
 
 The String values that the getTitle and getDescription methods return are included at the bottom of the device group summary page.
 
-![filterdescription](assets/filterdescription.png) 
+![filterdescription](assets/filterdescription.png)
 
 ### The Maven POM File {#the-maven-pom-file}
 
@@ -178,7 +178,7 @@ The followng POM code is useful if you use Maven to build your applications. The
 
 **Dependencies:**
 
-* `cq-wcm-mobile-api-5.5.2.jar`: Provides the DeviceGroup and DeviceGroupFilter interfaces.  
+* `cq-wcm-mobile-api-5.5.2.jar`: Provides the DeviceGroup and DeviceGroupFilter interfaces.
 
 * `org.apache.felix.scr.annotations.jar`: Provides the Component and Service annotations.
 

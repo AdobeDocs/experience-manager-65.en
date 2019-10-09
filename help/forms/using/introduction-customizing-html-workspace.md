@@ -6,7 +6,7 @@ seo-description: A quick introduction, with conceptual and technical information
 uuid: 23d19629-b94a-46cc-bb44-9c6088669ec5
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 ---
@@ -22,7 +22,7 @@ AEM form workspace provides capabilities to modify the presentation semantics an
 AEM Forms workspace supports a wide variety of customizations to update the layout of the user interface, its appearance, functionality, and much more. The customizations involve updating one or more of the following:
 
 * Appearances of the user interface
-* Functionality using semantic customizations  
+* Functionality using semantic customizations
 * Reusing HTML components in other applications
 
 ### User interface changes {#user-interface-changes}
@@ -37,77 +37,77 @@ Before customizing workspace, make yourself familiar with the default style shee
 
 To customize the workspace, it is recommended that you make yourself familiar with the existing style sheet, style.css, located in /libs/ws/css folder. A few prominent components are described below.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p>CSS element</p> </th> 
-   <th><p>User interface component modified</p> </th> 
-  </tr> 
-  <tr> 
-   <td><p>#header</p> </td> 
-   <td><p>Header of the AEM Forms workspace</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.categoryList</p> </td> 
-   <td><p>Category list</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.categoryList .header</p> </td> 
-   <td><p>Header of category list</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.categories, .filters</p> </td> 
-   <td><p>Space below category list</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.category, .filter</p> </td> 
-   <td><p>Category</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td> 
-   <td><p>Selected category and mouse over style of category</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>categoryListBar .tool, categoryListBar .content</p> </td> 
-   <td><p>Start process page (closed Category list)</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>filterListBar .tool, filterListBar .content</p> </td> 
-   <td><p>To Do page (closed Filter list)</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>processNameListBar .tool, processNameListBar .content</p> </td> 
-   <td><p>Tracking page (closed Process name list)</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.startPointList, .tasklist</p> </td> 
-   <td><p>The startpoint list or the task list</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.startPointList .header, .tasklist .header</p> </td> 
-   <td><p>The header of a startpoint list or a task list</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.startpoint.selected, .task.selected</p> </td> 
-   <td><p>The selected startpoint or task</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.startpoint.selected .description, .task.selected .description</p> </td> 
-   <td><p>Description of the selected startpoint or task</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>#taskarea</p> </td> 
-   <td><p>The Task area</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>#header .dropdown</p> </td> 
-   <td><p>User dropdown in header</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>.sortDrop dd ul</p> </td> 
-   <td><p>Sort task dropdown</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><p>CSS element</p> </th>
+   <th><p>User interface component modified</p> </th>
+  </tr>
+  <tr>
+   <td><p>#header</p> </td>
+   <td><p>Header of the AEM Forms workspace</p> </td>
+  </tr>
+  <tr>
+   <td><p>.categoryList</p> </td>
+   <td><p>Category list</p> </td>
+  </tr>
+  <tr>
+   <td><p>.categoryList .header</p> </td>
+   <td><p>Header of category list</p> </td>
+  </tr>
+  <tr>
+   <td><p>.categories, .filters</p> </td>
+   <td><p>Space below category list</p> </td>
+  </tr>
+  <tr>
+   <td><p>.category, .filter</p> </td>
+   <td><p>Category</p> </td>
+  </tr>
+  <tr>
+   <td><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td>
+   <td><p>Selected category and mouse over style of category</p> </td>
+  </tr>
+  <tr>
+   <td><p>categoryListBar .tool, categoryListBar .content</p> </td>
+   <td><p>Start process page (closed Category list)</p> </td>
+  </tr>
+  <tr>
+   <td><p>filterListBar .tool, filterListBar .content</p> </td>
+   <td><p>To Do page (closed Filter list)</p> </td>
+  </tr>
+  <tr>
+   <td><p>processNameListBar .tool, processNameListBar .content</p> </td>
+   <td><p>Tracking page (closed Process name list)</p> </td>
+  </tr>
+  <tr>
+   <td><p>.startPointList, .tasklist</p> </td>
+   <td><p>The startpoint list or the task list</p> </td>
+  </tr>
+  <tr>
+   <td><p>.startPointList .header, .tasklist .header</p> </td>
+   <td><p>The header of a startpoint list or a task list</p> </td>
+  </tr>
+  <tr>
+   <td><p>.startpoint.selected, .task.selected</p> </td>
+   <td><p>The selected startpoint or task</p> </td>
+  </tr>
+  <tr>
+   <td><p>.startpoint.selected .description, .task.selected .description</p> </td>
+   <td><p>Description of the selected startpoint or task</p> </td>
+  </tr>
+  <tr>
+   <td><p>#taskarea</p> </td>
+   <td><p>The Task area</p> </td>
+  </tr>
+  <tr>
+   <td><p>#header .dropdown</p> </td>
+   <td><p>User dropdown in header</p> </td>
+  </tr>
+  <tr>
+   <td><p>.sortDrop dd ul</p> </td>
+   <td><p>Sort task dropdown</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### CSS {#css}
@@ -116,7 +116,7 @@ The appearance of AEM Forms workspace borrows its appearance from a CSS. By cust
 
 The top-level steps for CSS customization are:
 
-* Create a CSS file.  
+* Create a CSS file.
 * Add style items to this CSS. See Understanding CSS Styles for more information.
 * Update its references in `html.jsp`.
 
@@ -368,7 +368,7 @@ mvn clean -P Dev install on client-pkg
     * html.jsp - Contains code to find out current browser locale.
 
 * Index - Contains .content.xml
-* profile - Contains offline.jsp.  
+* profile - Contains offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml

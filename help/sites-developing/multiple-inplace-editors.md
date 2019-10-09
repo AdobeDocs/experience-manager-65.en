@@ -5,7 +5,7 @@ description: It is possible to configure your component so that it has multiple 
 seo-description: It is possible to configure your component so that it has multiple in-place editors
 uuid: 4abbfcd5-fe1b-4c02-b115-97db20e60e1e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 0fac1e4a-f08f-4c46-b070-cb1d5a05b6e0
@@ -17,7 +17,7 @@ It is possible to configure your component so that it has multiple in-place edit
 
 When configured you can select the appropriate content and open the appropriate editor. For example:
 
-![chlimage_1-8](assets/chlimage_1-8.png) 
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ## Configuring Multiple Editors {#configuring-multiple-editors}
 
@@ -60,7 +60,7 @@ To configure multiple editors:
 
 1. On the node `cq:inplaceEditing` (of type `cq:InplaceEditingConfig`) define the property:
 
-    * Name:`editorType` 
+    * Name:`editorType`
     * Type: `String`
     * Value: `hybrid`
 
@@ -115,7 +115,7 @@ To have multiple RTEs you need a configuration for each in-place RTE:
 
 >[!NOTE]
 >
->Recommended best practice is to define the `config` node under `cq:InplaceEditingConfig` as each individual RTE can have a different configuration. 
+>Recommended best practice is to define the `config` node under `cq:InplaceEditingConfig` as each individual RTE can have a different configuration.
 >
 >However, for RTE, the `configPath` property is supported when there is only one instance of text editor (editable sub-area) in the component. This use of `configPath` is provided to support backwards compatibility with older UI dialogs of the component.
 

@@ -4,7 +4,7 @@ seo-title: Inline CSS properties for adaptive form components
 description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 ---
@@ -24,7 +24,7 @@ To add inline styles to a component:
 
    You can also select a component from the sidebar. In the Style mode, you can see components listed under Form Objects. However, Form Objects list in the sidebar lists components such as fields and panels. Fields and panels are generic components that can contain components such as text-box and radio-buttons.
 
-   When you select a component from the sidebar, you see all the sub-components listed and the properties of the selected component. You can select a specific sub-component and style it. 
+   When you select a component from the sidebar, you see all the sub-components listed and the properties of the selected component. You can select a specific sub-component and style it.
 
 1. Click a tab in the sidebar to specify CSS properties. You can specify properties such as:
 
@@ -48,45 +48,45 @@ Text box component before applying inline style properties
 
 Notice the change in text box style as shown in the following image after applying the following CSS properties.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>Selector</p> </td> 
-   <td><p>CSS property</p> </td> 
-   <td><p>Value</p> </td> 
-   <td><p>Effect</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Field</p> </td> 
-   <td><p>border</p> </td> 
-   <td><p>Border width =2px</p> <p>Border style=Solid</p> <p>Border color=#1111</p> </td> 
-   <td><p>Creates a Black 2px wide border around the field</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Text box</p> </td> 
-   <td><p>background-color</p> </td> 
-   <td><p>#6495ED</p> </td> 
-   <td><p>Changes the background color to CornflowerBlue (#6495ED)</p> <p>Note: You can specify a color name or its hex code in the value field.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Label</p> </td> 
-   <td><p>Dimenstions &amp; Position &gt; width</p> </td> 
-   <td><p>100px</p> </td> 
-   <td><p>Fixes the width as 100px for the label</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Field Help Icon</td> 
-   <td>Text &gt; Font Color</td> 
-   <td>#2ECC40</td> 
-   <td>Changes the color of the help icon face.</td> 
-  </tr> 
-  <tr> 
-   <td><p>Long description</p> </td> 
-   <td><p>text-align</p> </td> 
-   <td><p>center</p> </td> 
-   <td><p>Aligns the long description for help to center</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p>Selector</p> </td>
+   <td><p>CSS property</p> </td>
+   <td><p>Value</p> </td>
+   <td><p>Effect</p> </td>
+  </tr>
+  <tr>
+   <td><p>Field</p> </td>
+   <td><p>border</p> </td>
+   <td><p>Border width =2px</p> <p>Border style=Solid</p> <p>Border color=#1111</p> </td>
+   <td><p>Creates a Black 2px wide border around the field</p> </td>
+  </tr>
+  <tr>
+   <td><p>Text box</p> </td>
+   <td><p>background-color</p> </td>
+   <td><p>#6495ED</p> </td>
+   <td><p>Changes the background color to CornflowerBlue (#6495ED)</p> <p>Note: You can specify a color name or its hex code in the value field.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Label</p> </td>
+   <td><p>Dimenstions &amp; Position &gt; width</p> </td>
+   <td><p>100px</p> </td>
+   <td><p>Fixes the width as 100px for the label</p> </td>
+  </tr>
+  <tr>
+   <td>Field Help Icon</td>
+   <td>Text &gt; Font Color</td>
+   <td>#2ECC40</td>
+   <td>Changes the color of the help icon face.</td>
+  </tr>
+  <tr>
+   <td><p>Long description</p> </td>
+   <td><p>text-align</p> </td>
+   <td><p>center</p> </td>
+   <td><p>Aligns the long description for help to center</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ![Text box style after inline styling is applied](assets/applied-style.png)

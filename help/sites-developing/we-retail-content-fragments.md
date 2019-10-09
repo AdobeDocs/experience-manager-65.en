@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
@@ -32,7 +32,7 @@ For the full documentation on creating, managing, using and developing content f
 >**Content Fragments** and **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
 >
 >* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
->* **Experience Fragments** are fully laid out content; a fragment of a web page.  
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 
@@ -56,12 +56,12 @@ Here you can [edit and manage](/help/assets/content-fragments.md) your fragment 
 
 ![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png)
 
-* **[Variations](/help/assets/content-fragments-variations.md)** including [Markdown](/help/assets/content-fragments-markdown.md)   
+* **[Variations](/help/assets/content-fragments-variations.md)** including [Markdown](/help/assets/content-fragments-markdown.md)
 
 * **[Associated Content](/help/assets/content-fragments-assoc-content.md)**
 * **[Metadata](/help/assets/content-fragments-metadata.md)**
 
-![cf-46](assets/cf-46.png) 
+![cf-46](assets/cf-46.png)
 
 ## Where Content Fragments are Used in We.Retail {#where-content-fragments-are-used-in-we-retail}
 
@@ -75,7 +75,7 @@ For example, the **Arctic Surfing in Lofoten** content fragment is referenced in
 
     * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
-![cf-53](assets/cf-53.png) 
+![cf-53](assets/cf-53.png)
 
 ## Further Information {#further-information}
 

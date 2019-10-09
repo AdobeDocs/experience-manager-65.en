@@ -5,7 +5,7 @@ description: Workflows typically include steps that require a person to perform 
 seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
@@ -29,8 +29,8 @@ You can perform the following actions to process a work item:
 
   The users who are available for delegation depend on who was assigned the work item:
 
-    * If the work item was assigned to a group, the group members are available. 
-    * If the work item was assigned to a group and then delegated to a user, the group members and the group are available. 
+    * If the work item was assigned to a group, the group members are available.
+    * If the work item was assigned to a group and then delegated to a user, the group members and the group are available.
     * If the work item was assigned to a single user, the work item cannot be delegated.
 
 * **Step Back**

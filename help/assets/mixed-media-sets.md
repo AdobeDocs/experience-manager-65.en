@@ -5,7 +5,7 @@ description: Learn how to work with mixed media sets in dynamic media
 seo-description: Learn how to work with mixed media sets in dynamic media
 uuid: e37fa648-74e2-42e3-8611-8509c92ec00d
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
@@ -15,7 +15,7 @@ discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 
 Mixed Media Sets let you provide a mix of images, Image Sets, Spin Sets, and videos in one presentation.
 
-Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMediaSet]**. In addition, if the Mixed Media Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays. 
+Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMediaSet]**. In addition, if the Mixed Media Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
 ![chlimage_1-348](assets/chlimage_1-348.png)
 
@@ -111,7 +111,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
    >
    >If you want to add assets, tap **[!UICONTROL Add Asset]**.
 
-1. To delete an asset, select the corresponding check box and tap **[!UICONTROL Delete Asset]**. 
+1. To delete an asset, select the corresponding check box and tap **[!UICONTROL Delete Asset]**.
 1. To apply a preset, tap **[!UICONTROL Preset]** in the upper right corner and select a preset to apply to the assets.
 1. Click **[!UICONTROL Save]**. Your newly created Mixed Media Set appears in the folder you created it in.
 
@@ -136,13 +136,13 @@ You can perform a variety of editing tasks to assets in Mixed Media Sets directl
 1. In the Mixed Media Set Editor, do any of the following:
 
     * To reorder assets - In the left panel, tap **[!UICONTROL Assets]** (picture icon), drag an asset to a new location.
-    * To add assets - On the toolbar, tap **[!UICONTROL Add Asset]**. Navigate to the assets. For each asset that you want to add, hover over the asset's image (not the asset's name), then tap the checkmark icon. In the upper-right corner, tap **[!UICONTROL Select]**. 
+    * To add assets - On the toolbar, tap **[!UICONTROL Add Asset]**. Navigate to the assets. For each asset that you want to add, hover over the asset's image (not the asset's name), then tap the checkmark icon. In the upper-right corner, tap **[!UICONTROL Select]**.
     * To delete an asset - In the left panel, tap **[!UICONTROL Assets]** (picture icon), then select the asset. On the toolbar bar tap **[!UICONTROL Delete Asset]**.
     * To sort assets by their name in ascending or descending order, in the left panel, tap **[!UICONTROL Assets]** (picture icon). To the right of the **[!UICONTROL Assets]** heading, tap the up or down caret icons.
 
    >[!NOTE]
    >
-   >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card]** view or **[!UICONTROL Column]** view) navigate to the Mixed Media Set. Hover over the asset and tap the checkmark icon to select it. Press **[!UICONTROL Backspace]** on the keyboard, or tap **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**. 
+   >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card]** view or **[!UICONTROL Column]** view) navigate to the Mixed Media Set. Hover over the asset and tap the checkmark icon to select it. Press **[!UICONTROL Backspace]** on the keyboard, or tap **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
    >* You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 1. Tap **[!UICONTROL Save** when you are done editing.

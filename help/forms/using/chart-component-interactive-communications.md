@@ -1,25 +1,25 @@
 ---
 title: Using charts in Interactive Communications
 seo-title: Chart component in Interactive Communications
-description: Using charts in an Interactive Communication, you can condense large amounts of information into an easy to analyze and understand visual format  
+description: Using charts in an Interactive Communication, you can condense large amounts of information into an easy to analyze and understand visual format
 seo-description: AEM Forms provides a chart component that you can use to create charts in your Interactive Communication. This document explains basic and agent configurations of the chart component.
 uuid: dedd670c-030b-4497-bbcb-3ad935cebcda
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 ---
 
 # Using charts in Interactive Communications {#using-charts-in-interactive-communications}
 
-Using charts in an Interactive Communication, you can condense large amounts of information into an easy to analyze and understand visual format  
+Using charts in an Interactive Communication, you can condense large amounts of information into an easy to analyze and understand visual format
 
 A chart or a graph is a visual representation of data. It condenses large amounts of information into easy-to-understand visual format, enabling the recipients of the Interactive Communication to better visualize, interpret, and analyze complex data.
 
 While creating an Interactive Communication, you can add charts to visually represent two-dimensional data from the Interactive Communication's form data model. The Chart component allows you to add and configure the following types of charts:
 
 * Pie
-* Column  
+* Column
 * Donut
 * Bar (Web channel only)
 * Line
@@ -36,11 +36,11 @@ Complete the following steps to add a chart to an Interactive Communication:
     * Print channel: Target area and Image field
     * Web channel: Panel and Target area
 
-   The dropped Chart component, creates a placeholder for a chart. 
+   The dropped Chart component, creates a placeholder for a chart.
 
 1. Tap the chart component in the Interactive Communication editor and from the Component toolbar select **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png)).
 
-   Properties sidebar appears with the Basic properties of the chart in focus. 
+   Properties sidebar appears with the Basic properties of the chart in focus.
 
    ![Basic properties of a line type chart in print channel](assets/chart_basicproperties.png)
 **Figure:** *Basic properties of a line type chart in print channel*
@@ -50,28 +50,28 @@ Complete the following steps to add a chart to an Interactive Communication:
 
 1. Configure the Basic properties of the chart for print channel and web channel. Apart from the common properties, there are properties that are specific to print and web channel and the chart type.
 
-    * **[!UICONTROL Name]**: Name of the chart object. The name of the chart that you specify here does not appear in the chart output but is used in rules to refer to the chart. 
-    * **[!UICONTROL Chart Type]**: Specify the chart type: Pie, Column, Donut, Line, Line and Point, Point, or Area. 
-    * **[!UICONTROL Hide Object]**: Select to hide the chart in the final output. 
+    * **[!UICONTROL Name]**: Name of the chart object. The name of the chart that you specify here does not appear in the chart output but is used in rules to refer to the chart.
+    * **[!UICONTROL Chart Type]**: Specify the chart type: Pie, Column, Donut, Line, Line and Point, Point, or Area.
+    * **[!UICONTROL Hide Object]**: Select to hide the chart in the final output.
     * Specify the following for **[!UICONTROL x-axis]** and **[!UICONTROL y-axis]**:
 
-        * **[!UICONTROL Title]**: Specify the titles for X and Y axis to be displayed in the Interactive Communication. 
-        * **[!UICONTROL Data Model Object *]**: Browse and select data model objects for the X and Y axis of the chart from the form data model specified while creating the Interactive Communication. Choose two collection/array type properties of the same parent data model object that are meaningful in relation to each other to plot on the X and Y axis of a chart. 
+        * **[!UICONTROL Title]**: Specify the titles for X and Y axis to be displayed in the Interactive Communication.
+        * **[!UICONTROL Data Model Object *]**: Browse and select data model objects for the X and Y axis of the chart from the form data model specified while creating the Interactive Communication. Choose two collection/array type properties of the same parent data model object that are meaningful in relation to each other to plot on the X and Y axis of a chart.
         * **[!UICONTROL Function]**: To use statistical functions to compute the values on the axis, select function for X / Y axis. For more information about functions, see [Use functions in chart](#usefunction) and [Example 2: Application of sum and mean functions in a line chart](#applicationsumfrequency).
 
    >[!NOTE]
    >
    >For print channel, on the X axis, the data model object that you bind should be of Number, String, or Date type. On the Y axis the data model object that you bind should be of Number type. It is recommended that you use the right-side legend in the print channel.
 
-   For more information on chart properties, see [Basic properties in charts](#basicpropertiescharts). 
+   For more information on chart properties, see [Basic properties in charts](#basicpropertiescharts).
 
-1. (Print channel only) In the Agent Settings, specify whether it is mandatory for the agent to use this chart. If i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** option is not selected, the agent can tap the eye icon for the chart in the Content tab of Agent UI to show/hide the chart. 
+1. (Print channel only) In the Agent Settings, specify whether it is mandatory for the agent to use this chart. If i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** option is not selected, the agent can tap the eye icon for the chart in the Content tab of Agent UI to show/hide the chart.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
 1. In the Properties sidebar, tap ![done_icon](assets/done_icon.png).
 
-   Preview to see the appearance and data of the chart. Return to reconfigure the properties of the chart, if necessary. 
+   Preview to see the appearance and data of the chart. Return to reconfigure the properties of the chart, if necessary.
 
 1. Return to making other changes in the Interactive Communication.
 
@@ -111,15 +111,15 @@ By applying functions in a chart, you can plot data that is not directly provide
 
 You can apply the sum function to add up values of multiple instances of same data property and show it only once. For example, in the following graph, the Sum function is applied on the Y axis to add up the amount of the three Bed and Breakfast transactions ($99.45, $78, and $12) and show only one transaction ($189.45).
 
-Sum function can make graph more useful when you want to collate and display sum for many instances of the same data property. 
+Sum function can make graph more useful when you want to collate and display sum for many instances of the same data property.
 
-![creditcardchartsumfunctioncopy](assets/creditcardchartsumfunctioncopy.png) 
+![creditcardchartsumfunctioncopy](assets/creditcardchartsumfunctioncopy.png)
 
 ### Frequency function {#frequency-function}
 
-The Frequency function returns the number of values on X or Y axis for a given value on the other axis. With application of the Frequency function on the y-axis (Amount/TransAmount), the graph displays that there have been three occurrences of Bed and Breakfast transactions and one occurrence of rest of the types of transactions. 
+The Frequency function returns the number of values on X or Y axis for a given value on the other axis. With application of the Frequency function on the y-axis (Amount/TransAmount), the graph displays that there have been three occurrences of Bed and Breakfast transactions and one occurrence of rest of the types of transactions.
 
-![creditcardchartfrequencyfunctioncopy](assets/creditcardchartfrequencyfunctioncopy.png) 
+![creditcardchartfrequencyfunctioncopy](assets/creditcardchartfrequencyfunctioncopy.png)
 
 ## Basic properties in charts {#basicpropertiescharts}
 
@@ -173,7 +173,7 @@ To disable tool tip, leave the Tooltip field blank. This option is not applicabl
 
 * **Inner radius**: available for Donut charts to specify the radius (in pixels) of the inner circle in the chart.
 * **Line color**: available for Line, Line and Point, and Area charts to specify the hexadecimal value of the color for the line in the chart.
-* **Point color**: available for Point and Line and Point charts to specify the hexadecimal value of the color for the points in the chart.  
+* **Point color**: available for Point and Line and Point charts to specify the hexadecimal value of the color for the points in the chart.
 
 * **Area color**: available for Area charts to specify the hexadecimal value of the color for the area under the line in the chart.
 
@@ -232,10 +232,10 @@ Once you have written a custom function, do the following to make it available f
 1. To display the custom function in Function drop-down, in CRXDe Lite, create an `nt:unstructured` node in the apps folder with the following properties:
 
     * Add property `guideComponentType` with value as `fd/af/reducer`. (mandatory)
-    * Add property `value` to a fully qualified name of the custom JavaScript™ function. (mandatory) and set its value to name of the custom function, such as Multiply. 
-    * Add property `jcr:description` with the value you want to display as the name of the custom function that appears in the Function drop-down. For example, **Multiply**. 
+    * Add property `value` to a fully qualified name of the custom JavaScript™ function. (mandatory) and set its value to name of the custom function, such as Multiply.
+    * Add property `jcr:description` with the value you want to display as the name of the custom function that appears in the Function drop-down. For example, **Multiply**.
     * Add property `qtip` with value that will be short description of the custom function. It appears as a tooltip when hovering pointer over the function name in the **Function** drop-down list.
 
 1. Click **Save All** to save the configuration.
 
-The function is now available for use in the Chart.  
+The function is now available for use in the Chart.

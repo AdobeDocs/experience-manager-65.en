@@ -5,7 +5,7 @@ description: Setting up a new campaign requires creating a brand to hold your ca
 seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
 uuid: 86fcd398-803e-4aa5-998c-7624afa7e839
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
@@ -49,7 +49,7 @@ Then depending on the type of experience(s) you are creating, you will need to [
 
 To create a new brand:
 
-1. Open the **MCM** and select **Campaigns** in the left pane.  
+1. Open the **MCM** and select **Campaigns** in the left pane.
 
 1. Select **New...** to enter the **Title** and **Name** and template to be used for your new brand:
 
@@ -85,7 +85,7 @@ To create a new campaign:
 
 Configure campaign properties that control the behavior:
 
-* **Priority:** The priority of this campaign relative to other campaigns. When multiple campaigns are simultaneously On, the campaign that has the highest priority controls the visitor experience. 
+* **Priority:** The priority of this campaign relative to other campaigns. When multiple campaigns are simultaneously On, the campaign that has the highest priority controls the visitor experience.
 * **On and Off Time:** These properties control the period of time when the campaign controls the visitor experience. The On Time property controls the time when the campaign begins to control the experience. The Off Time property controls when the campaigns stops controlling the experience.
 * **Image:** The image that represents the campaign in AEM.
 * **Cloud Services:** The Cloud Service configurations with which the campaign is integrated. (See [Integrating with Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
@@ -138,7 +138,7 @@ Now that you have created the basic skeleton for your experience you need to con
 
 If you have existing experiences you can add a touchpoint directly from the Calendar view of MCM:
 
-1. Select the calendar view for your campaign.  
+1. Select the calendar view for your campaign.
 
 1. Click **Add Touchpoint...** to open the dialog. Specify the experience you want to add:
 
@@ -150,7 +150,7 @@ If you have existing experiences you can add a touchpoint directly from the Cale
 
 >[!NOTE]
 >
->Adobe is not planning to further enhance this capability (Managing Leads).  
+>Adobe is not planning to further enhance this capability (Managing Leads).
 >Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM, you can organize and add leads either by entering them manually or importing a comma-separated list, for example, a mailing list. Additional ways to generate leads are from newsletter sign-ups or community sign-ups (if configured, those can trigger a workflow that populates leads).
@@ -192,7 +192,7 @@ Activating leads helps you track their activity on the publish instance and lets
 
 To active or deactive leads:
 
-1. In AEM, navigate to the MCM and click **Leads**.  
+1. In AEM, navigate to the MCM and click **Leads**.
 
 1. Select the leads you want to activate or deactivate and click **Activate** or **Deactivate**.
 
@@ -214,10 +214,10 @@ To import leads from a comma-separated list:
    >
    >Alternatively, you can import leads by doing one of the following:
    >
-   >* In the Dashboard, click **Import Leads** in the **Lists** pane 
-   >* Click **Lists** and in the **Tools** menu, select **Import Leads**.  
+   >* In the Dashboard, click **Import Leads** in the **Lists** pane
+   >* Click **Lists** and in the **Tools** menu, select **Import Leads**.
 
-1. In the **Tools** menu, select **Import Leads**.  
+1. In the **Tools** menu, select **Import Leads**.
 1. Enter the information as described in Sample Data. The following fields can be imported: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
 
    >[!NOTE]
@@ -242,7 +242,7 @@ To import leads from a comma-separated list:
 
 To add leads to pre-existing lists:
 
-1. In the MCM, click **Leads** to view all available leads.  
+1. In the MCM, click **Leads** to view all available leads.
 
 1. Select the leads you want to add to a list by selecting the check box next to the lead. You can add as many leads as you want.
 
@@ -258,7 +258,7 @@ To add leads to pre-existing lists:
 
 To view lead information, in the MCM, click the check box next to the lead and a right pane opens with all the lead's information displayed, including list affiliation.
 
-![screen_shot_2012-02-21at124228pm](assets/screen_shot_2012-02-21at124228pm.png) 
+![screen_shot_2012-02-21at124228pm](assets/screen_shot_2012-02-21at124228pm.png)
 
 ### Modifying existing leads {#modifying-existing-leads}
 
@@ -294,7 +294,7 @@ To delete existing leads in the MCM, select the check box next to the lead and c
 
 >[!NOTE]
 >
->Adobe is not planning to further enhance this capability (managing lists).  
+>Adobe is not planning to further enhance this capability (managing lists).
 >Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 Lists let you organize your leads into groups. With lists, you can target your marketing campaigns to a select group of people, for example, you can send a targeted newsletter to a list. Lists are visible in the MCM, either in the Dashboard or by clicking **Lists**. Both provide you with the name of the list and the number of members.
@@ -303,7 +303,7 @@ Lists let you organize your leads into groups. With lists, you can target your m
 
 If you click **Lists**, you also can view if the list is a member of another list and see a description.
 
-![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png) 
+![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 
 ### Creating new lists {#creating-new-lists}
 
@@ -321,7 +321,7 @@ To create a new list (group):
 
 To modify an existing list:
 
-1. In the MCM, click **Lists**.   
+1. In the MCM, click **Lists**.
 
 1. From the list, select the check box next to the list you want to edit and click **Edit**. The **Edit List** window opens.
 
@@ -349,9 +349,9 @@ You might merge lists if you have the same conference in two different locations
 
 To merge existing lists:
 
-1. In the MCM, click **Lists**.  
+1. In the MCM, click **Lists**.
 
-1. Select the list you want to merge another list with by selecting the check box next to it.  
+1. Select the list you want to merge another list with by selecting the check box next to it.
 
 1. In the **Tools** menu, select **Merge List**.
 
@@ -379,9 +379,9 @@ At anytime, you can view which leads belong to a specific list either by browsin
 
 To view the leads that belong to a list:
 
-1. In the MCM, click **Lists**.  
+1. In the MCM, click **Lists**.
 
-1. Select the check box next to the list you want to view members for.  
+1. Select the check box next to the list you want to view members for.
 
 1. In the **Tools** menu, select **Show Leads**. AEM displays the leads that are a member of that list. You can browse through the list or search for members.
 

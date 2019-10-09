@@ -5,7 +5,7 @@ description: Learn how to map component data with SiteCatalyst properties.
 seo-description: Learn how to map component data with SiteCatalyst properties.
 uuid: accdb0e8-957c-4617-9a8d-eccc24ac436e
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 2a9be3b7-b325-4d74-a5bc-8d24db491920
@@ -17,7 +17,7 @@ Add components to the framework that gather the data to send to Adobe Analytics.
 
 ![aa-11](assets/aa-11.png)
 
-When the **AEM view** is open the Analytics variables appear in the content finder. 
+When the **AEM view** is open the Analytics variables appear in the content finder.
 
 ![aa-12](assets/aa-12.png)
 
@@ -32,7 +32,7 @@ The mapped data is sent to Adobe Analytics when the page loads and the following
 
 Use the following procedure to map CQ component variables with Adobe Analytics report properties.
 
-1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component component from the **General** category. 
+1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component component from the **General** category.
 
    ![aa-13](assets/aa-13.png)
 
@@ -56,7 +56,7 @@ Use the following procedure to map CQ component variables with Adobe Analytics r
    >
    >It is highly recommended that:
    >
-   >* `eVars` and `props` are mapped to CQ variables beginning with either  `pagedata.X` or `eventdata.X` 
+   >* `eVars` and `props` are mapped to CQ variables beginning with either  `pagedata.X` or `eventdata.X`
    >* whereas events should be mapped to variables starting with `eventdata.events.X`
 
 1. To make the framework available on the publish instance of your site, open the **Page **tab of sidekick, and click **Activate Framework.**
@@ -92,13 +92,13 @@ Several AEM Commerce components use these variable names.
 
 Initially, when you open an Adobe Analytics framework the content finder contains predefined Analytics variables under:
 
-* Traffic   
+* Traffic
 
-* Conversion   
+* Conversion
 
-* Events 
+* Events
 
-When an RSID is selected all the variables belonging to that RSID get added to the list.  
+When an RSID is selected all the variables belonging to that RSID get added to the list.
 The `cf#` is needed in order to map Analytics variables to the CQ variables present on the different tracking components. See Setting Up a Framework for Basic Tracking.
 
 Depending on the view selected for the framework, the content finder will be populated by either Analytics variables (in AEM view) or CQ variables (in Analytics view).
@@ -109,7 +109,7 @@ The list can be manipulated in the following ways:
 
     * If *no button* is selected, the list shows the full list.
     * If the **Traffic** button is selected, the list will only show the variables belonging to the Traffic section
-    * If the **Conversion** button is selected, the list will only show the variables belonging to the Conversion section. 
+    * If the **Conversion** button is selected, the list will only show the variables belonging to the Conversion section.
     * If the **Events** button is selected, the list will only show the variables belonging to the Events section.
 
    >[!NOTE]
@@ -171,7 +171,7 @@ Taking the above image as an example, the **AEM view** has the following propert
 
 ![aa-24](assets/aa-24.png)
 
-1. This view can be accessed by switching to the **Analytics view** tab on the framework. 
+1. This view can be accessed by switching to the **Analytics view** tab on the framework.
 1. Left side: Content Finder (cf#) populated by CQ variables based on the components dragged onto the framework in CQ view.
 1. Tab headers (**AEM view** and **Analytics view**): use these to switch between the two views.
 
@@ -195,8 +195,8 @@ Taking the above image as an example, the **AEM view** has the following propert
 >
 >The CQ variable column of any table can be filled inline as well, by double-clicking on the field and adding text to it. These fields accept javascript as an input.
 >
->* e.g. next to `prop3` you can add  
->* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`  
+>* e.g. next to `prop3` you can add
+>* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`
 >  to send the *title* of a page concatenated with its *sitesection* using *:* (colon) and prefixed with *Adobe* as `prop3`
 >
 

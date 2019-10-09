@@ -7,7 +7,7 @@ uuid: 4e9d8c8f-2153-411b-9c4b-2d14b3c8f4bb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 ---
@@ -21,11 +21,11 @@ The PDF/A-1 specification consists of two levels of conformance, namely A and B.
 For the purpose of this discussion, assume that the following DDX document is used.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8"?> 
- <DDX xmlns="https://ns.adobe.com/DDX/1.0/"> 
-         <DocumentInformation source="Loan.pdf" result="Loan_result.xml"> 
-         <PDFAValidation compliance="PDF/A-1b" resultLevel="Detailed"                       ignoreUnusedResources="true" allowCertificationSignatures="true" /> 
-     </DocumentInformation> 
+ <?xml version="1.0" encoding="UTF-8"?>
+ <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
+         <DocumentInformation source="Loan.pdf" result="Loan_result.xml">
+         <PDFAValidation compliance="PDF/A-1b" resultLevel="Detailed"                       ignoreUnusedResources="true" allowCertificationSignatures="true" />
+     </DocumentInformation>
  </DDX>
 ```
 
@@ -54,7 +54,7 @@ To determine whether a PDF document is PDF/A-compliant, perform the following ta
 1. Reference an existing DDX document.
 1. Reference a PDF document used to determine PDF/A compliancy.
 1. Set run-time options.
-1. Retrieve information about the PDF document. 
+1. Retrieve information about the PDF document.
 1. Save the returned XML document.
 
 **Include project files**
@@ -66,7 +66,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (required if AEM Forms is deployed on JBoss) 
+* adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
 if AEM Forms is deployed on a supported J2EE application server other than JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server that AEM Forms is deployed on. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
@@ -111,7 +111,7 @@ Save the XML document as an XML file so that you can open the file and view the 
 
 [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md) 
+[Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
 ## Determine whether a document is PDF/A compliant using the Java API {#determine-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
@@ -186,34 +186,34 @@ Determine whether a PDF document is PDF/A-compliant by using the Assembler Servi
 
 1. Create a PDF Assembler client.
 
-    * Create an `AssemblerServiceClient` object by using its default constructor. 
-    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `AssemblerServiceClient` object by using its default constructor.
+    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an existing DDX document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the DDX document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the DDX document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Reference a PDF document used to determine PDF/A compliancy.
 
-    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF document. 
+    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the input PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
-    * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. This collection object is used to store the PDF document. 
-    * Create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object. 
+    * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. This collection object is used to store the PDF document.
+    * Create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
     * Assign a string value that represents the key name to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `key` field. This value must match the value of the PDF source element specified in the DDX document.
     * Assign the `BLOB` object that stores the PDF document to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `value` field.
     * Add the `MyMapOf_xsd_string_To_xsd_anyType_Item` object to the `MyMapOf_xsd_string_To_xsd_anyType` object. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object' `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object.
@@ -227,11 +227,11 @@ Determine whether a PDF document is PDF/A-compliant by using the Assembler Servi
 
    Invoke the `AssemblerServiceService` object’s `invoke` method and pass the following values:
 
-    * A `BLOB` object that represents the DDX document. 
+    * A `BLOB` object that represents the DDX document.
     * The `MyMapOf_xsd_string_To_xsd_anyType` object that contains the input PDF document. Its keys must match the names of the PDF source files, and its values must be the `BLOB` object that corresponds to the input PDF file.
     * An `AssemblerOptionSpec` object that specifies run-time options.
 
-   The `invoke` method returns an `AssemblerResult` object that contains XML data that specifies whether the input PDF document is a PDF/A document. 
+   The `invoke` method returns an `AssemblerResult` object that contains XML data that specifies whether the input PDF document is a PDF/A document.
 
 1. Save the returned XML document.
 

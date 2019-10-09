@@ -5,7 +5,7 @@ description: Adding a Social Tag Cloud component to a page
 seo-description: Adding a Social Tag Cloud component to a page
 uuid: 8c400030-976c-457a-bb5f-e473909647a9
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
@@ -45,7 +45,7 @@ Under the **[!UICONTROL Social Tag Cloud]** tab, specify which tags to display a
 
 ![chlimage_1-305](assets/chlimage_1-305.png)
 
-* **[!UICONTROL Social Tags to Display]** 
+* **[!UICONTROL Social Tags to Display]**
   Identify which UGC tags to display. The pull-down options are
 
     * `From page and child pages`
@@ -53,13 +53,13 @@ Under the **[!UICONTROL Social Tag Cloud]** tab, specify which tags to display a
 
   The default is `From page and child pages`, where "page" refers to the **Page** setting below.
 
-* **[!UICONTROL Page]** 
+* **[!UICONTROL Page]**
   (required if not `All tags)` The path to the UGC for a page. Default is the current page if left blank.
 
-* **[!UICONTROL No links on tags]** 
+* **[!UICONTROL No links on tags]**
   If checked, the tags are displayed in the tag cloud as plain text. If unchecked, the tags are displayed as active links which search on all content to which that tag is applied. Default is unchecked and requires the **[!UICONTROL Search Result Path]** to be set.
 
-* **[!UICONTROL Search Result Path]** 
+* **[!UICONTROL Search Result Path]**
   The path to a page on which a `Search Result` component has been placed, configured to reference UGC which includes the UGC path specified by the **Page** setting.
 
 ## Change Display of Social Tag Cloud {#change-display-of-social-tag-cloud}
@@ -70,8 +70,8 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
-* **[!UICONTROL Show full title paths]** 
-  If checked, shows the titles for the parent tags and namespace for each applied tag. 
+* **[!UICONTROL Show full title paths]**
+  If checked, shows the titles for the parent tags and namespace for each applied tag.
 
   For example:
 
@@ -82,26 +82,26 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
   Default is unchecked.
 
-* **[!UICONTROL Show only leaf tags]** 
+* **[!UICONTROL Show only leaf tags]**
   If checked, shows only applied tags which contain no other tags.
 
   For example, given the TagID of
 
-  `Geometrixx Media: Gadgets / Cars` 
+  `Geometrixx Media: Gadgets / Cars`
 
   There are 3 tags which can be applied: `Geometrixx Media (the namespace)`, `Gadgets`, and `Cars`
 
     * Checked: only `Cars` will display, if applied
     * Unchecked: `Geometrixx Media` and `Gadgets`as well as `Cars` will display, if applied
 
-  A simple tag is a leaf tag. 
-  
+  A simple tag is a leaf tag.
+
   Default is unchecked.
 
-* **[!UICONTROL Link Template]** 
+* **[!UICONTROL Link Template]**
   A template, other than a default, used to display the links in a tag cloud, when links are enabled through the component edit dialog.
 
-* **[!UICONTROL Same size for all tags]** 
+* **[!UICONTROL Same size for all tags]**
   If checked, all words in the tag cloud are styled the same. If unchecked, words are styled differently according to their usage. Default is unchecked.
 
 ## Additional Information {#additional-information}

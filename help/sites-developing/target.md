@@ -5,7 +5,7 @@ description: Topics about developing components for use with content targeting
 seo-description: Topics about developing components for use with content targeting
 uuid: 1abc9b1e-939f-447c-8628-ee35c4b33ec4
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 3350bb2d-78a7-45e2-9816-0277a40d3986
@@ -96,7 +96,7 @@ The Target functionality on the client side is managed by the `CQ_Analytics.Test
             CQ_Analytics.TestTarget.clientCode = 'my_client_code';
         </script>
       ...
-  
+
     <div class="cloudservice testandtarget">
   <script type="text/javascript">
   CQ_Analytics.TestTarget.maxProfileParams = 11;
@@ -169,8 +169,8 @@ The JSP script of this component generates calls to the Target javascript API an
       $CQ(function(){
       if( CQ_Analytics &&
           CQ_Analytics.ClientContextMgr &&
-          !CQ_Analytics.ClientContextMgr.isConfigLoaded ) 
-        { 
+          !CQ_Analytics.ClientContextMgr.isConfigLoaded )
+        {
           $CQ("#cq-analytics-texthint").show();
         }
       });
@@ -219,7 +219,7 @@ To remove the Target command from the context menu, add the following property t
 
 For example, to disable targeting for the title components of the Geometrixx Demo Site pages, add the property to the `/apps/geometrixx/components/title/cq:editConfig` node.
 
-![chlimage_1-174](assets/chlimage_1-174.png) 
+![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## Sending Order Confirmation Information to Adobe Target {#sending-order-confirmation-information-to-adobe-target}
 
@@ -263,10 +263,10 @@ The following code for the JSP script of a component accesses the properties of 
           import="com.adobe.cq.commerce.api.CommerceService,
                   com.adobe.cq.commerce.api.CommerceSession,
                   com.adobe.cq.commerce.common.PriceFilter,
-                  com.adobe.cq.commerce.api.Product, 
+                  com.adobe.cq.commerce.api.Product,
                   java.util.List, java.util.Iterator"%><%
 
-/* obtain the CommerceSession object */                     
+/* obtain the CommerceSession object */
 CommerceService commerceservice = resource.adaptTo(CommerceService.class);
 CommerceSession session = commerceservice.login(slingRequest, slingResponse);
 
@@ -300,7 +300,7 @@ When the component is included in the checkout page in the previous example, the
 ```
 <div class="mboxDefault"></div>
 <script type="text/javascript">
-  
+
      mboxCreate('orderConfirmPage',
      'productPurchasedId=47638-S, 46587',
      'orderId=d03cb015-c30f-4bae-ab12-1d62b4d105ca',
@@ -328,7 +328,7 @@ The target.jsp script accesses the page properties to determine the targeting en
 
 When Adobe Target drives content targeting, the engine_tnt.jsp script creates mboxes that contain the content of the targeted experience:
 
-* Adds a `div` element with the class of `mboxDefault`, as required by the Adobe Target API. 
+* Adds a `div` element with the class of `mboxDefault`, as required by the Adobe Target API.
 
 * Adds the mbox content (the content of the targeted experience) inside the `div` element.
 

@@ -5,7 +5,7 @@ description: Learn how to manage asset expiration states and information for lic
 seo-description: Learn how to manage asset expiration states and information for licensed assets in AEM.
 uuid: 3df3a25d-551b-46ad-9398-883736d530ec
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 63dd7d4a-c97e-4949-a4d1-3861e1248ff3
@@ -49,7 +49,7 @@ You can also view the expiration status of assets in the **[!UICONTROL Reference
 
    ![chlimage_1-146](assets/chlimage_1-146.png)
 
-   For expired assets, the References rail displays the expiry status **[!UICONTROL Asset is Expired]** at the top. 
+   For expired assets, the References rail displays the expiry status **[!UICONTROL Asset is Expired]** at the top.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -65,7 +65,7 @@ You can search for expired assets, including expired subassets in the Search pan
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
-1. With the cursor in the Omni Search box, hit the Return key to display the Search Results page. 
+1. With the cursor in the Omni Search box, hit the Return key to display the Search Results page.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -132,7 +132,7 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Click **[!UICONTROL Save]** and then click **[!UICONTROL Close]** to display the Asset console. 
+1. Click **[!UICONTROL Save]** and then click **[!UICONTROL Close]** to display the Asset console.
 1. The publication status for the asset indicates an expired status at the bottom of the asset thumbnail in the card view. In the list view, the status of the asset is displayed as **[!UICONTROL Expired]**.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
@@ -147,7 +147,7 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Hit the Return key and then click/tap the **[!UICONTROL GlobalNav]** icon to display the Search panel. 
+1. Hit the Return key and then click/tap the **[!UICONTROL GlobalNav]** icon to display the Search panel.
 1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)

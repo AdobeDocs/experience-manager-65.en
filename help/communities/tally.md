@@ -5,7 +5,7 @@ description: Tally class overview
 seo-description: Tally class overview
 uuid: c369c6a1-9ced-4b5c-af43-8c03236eaa52
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
@@ -41,7 +41,7 @@ As of AEM 6.1, the [poll](poll-basics.md) component is not currently available.
 
 ### Accessing Posted Tallies (UGC) {#accessing-posted-tallies-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).

@@ -5,7 +5,7 @@ description: Create document fragments for Interactive Communication
 seo-description: Create document fragments for Interactive Communication
 uuid: 215d09a6-949c-45ef-b2b0-88cd0cb4b99c
 contentOwner: anujkapo
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 ---
 
@@ -20,7 +20,7 @@ This tutorial is a step in the [Create your first Interactive Communication](/he
 Document fragments are reusable components of a correspondence that are used to compose an Interactive Communication. The document fragments are of the following types:
 
 * Text - A text asset is a piece of content that consists of one or more paragraphs of text. A paragraph can be static or dynamic.
-* List - List is a group of document fragments, including text, lists, conditions, and images. 
+* List - List is a group of document fragments, including text, lists, conditions, and images.
 * Condition - Conditions enable you to define what content gets included in the Interactive Communication based on the data received from the Form Data Model.
 
 This tutorial walks you through the steps to create multiple text document fragments based on the anatomy provided in [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section. At the end of this tutorial, you will be able to:
@@ -57,7 +57,7 @@ The Bill Details document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** > **Document Fragments**.   
+1. Select **Forms** > **Document Fragments**.
 
 1. Select **Create** > **Text**.
 1. Specify the following information:
@@ -119,7 +119,7 @@ The Customer Details document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** > **Document Fragments**. 
+1. Select **Forms** > **Document Fragments**.
 1. Select **Create** > **Text**.
 1. Specify the following information:
 
@@ -179,7 +179,7 @@ The Bill Summary document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** > **Document Fragments**. 
+1. Select **Forms** > **Document Fragments**.
 1. Select **Create** > **Text**.
 1. Specify the following information:
 
@@ -243,7 +243,7 @@ The Summary of charges document fragment includes the following fields:
 
 Execute the following steps to create static text and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**. 
+1. Select **Forms** &gt; **Document Fragments**.
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 

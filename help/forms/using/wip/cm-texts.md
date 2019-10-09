@@ -5,7 +5,7 @@ description: Document Fragments, such as Text, lists, conditions, and layout fra
 seo-description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
 page-status-flag: never-activated
 uuid: 5bc45fa6-5428-4e0f-8a58-e1fa125ab581
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 372cf182-9fcd-4963-84e1-9a6f95583bd1
 ---
 
@@ -24,14 +24,14 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
 ## Create text {#create-text}
 
-1. Select **Forms** &gt;  **Document Fragments**.  
+1. Select **Forms** &gt;  **Document Fragments**.
 
 1. Tap **Create** &gt; **Text**. Or select a text asset and tap **Edit**.
 1. Specify the following information for the text:
 
-    * **Title: (Optional)** Enter the title for the text asset. Titles need not be unique and can have special characters and non-english characters. Texts are referred by their titles (when available) such as in thumbnails and asset properties. 
-    * **Name:** The unique name for the text asset. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.  
-    
+    * **Title: (Optional)** Enter the title for the text asset. Titles need not be unique and can have special characters and non-english characters. Texts are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Name:** The unique name for the text asset. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
+
     * **Description**: Type a description of the asset.
     * **Data Dictionary**: Optionally, select the data dictionary in which to map. This attribute enables you to add references to data dictionary elements in the text asset.
     * **Tags**: Optionally, to create custom tag enter value in text field and press Enter. You can see your tag below text field of tags. When you save this text, the newly added tags also get created.
@@ -40,9 +40,9 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    The default spellchecker in your browser checks spelling in the Text editor. To manage the spelling and grammar checking, you can edit your browser's spellchecker settings or install browser plugins/addons to check spelling and grammar.
 
-   You can also use the various keyboard shortcuts in the text editor to manage, edit, and format text. For more information on [Text Editor](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) keyboard shortcuts in Correspondence Management Keyboard Shortcuts. 
+   You can also use the various keyboard shortcuts in the text editor to manage, edit, and format text. For more information on [Text Editor](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) keyboard shortcuts in Correspondence Management Keyboard Shortcuts.
 
-1. A text editor opens, enter the text. Use the toolbar at the top of the page to format the text, insert conditions, link, and page breaks.  
+1. A text editor opens, enter the text. Use the toolbar at the top of the page to format the text, insert conditions, link, and page breaks.
 
     [ ![Toolbar](assets/advancedediting.png)
 
@@ -51,7 +51,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
    ](assets/advancedediting-1.png)
 
     * **Link**: Insert hypertext link in the text.
-    * **Repeat**: Repeat prints collection element in Data Dictionary using a delimiter. 
+    * **Repeat**: Repeat prints collection element in Data Dictionary using a delimiter.
     * **Condition**: Tap to insert a condition. Insert text based on condition. If condition is true, then text is visible in letter, otherwise not.
     * **Add Description**: Add annotation to a piece of text. This is metadata visible to the Author but not a part of the letter that is created.
     * **Page Break**: If you set the page break attribute of a text module to false, the text module does not break across pages.
@@ -93,7 +93,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    ![specialcharacters](assets/specialcharacters.png)
 
-   Correspondence Management has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md). 
+   Correspondence Management has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
 
 1. To highlight\emphasize parts of text in an editable inline module, select the text and tap Highlight Color.
 
@@ -101,7 +101,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
 
-   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text. 
+   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
@@ -109,8 +109,8 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    To:
 
-    * Add a data dictionary element in the text, select a data element from the list, and tap Insert ( ![insert](assets/insert.png)). If you select Protected, the data dictionary element is read-only and appears in the letter editor, but not in Create Correspondence user interface or Correspondence Creator.  
-    
+    * Add a data dictionary element in the text, select a data element from the list, and tap Insert ( ![insert](assets/insert.png)). If you select Protected, the data dictionary element is read-only and appears in the letter editor, but not in Create Correspondence user interface or Correspondence Creator.
+
     * Add a place holder element in the text, in the Data Elements panel tap Create New, enter the details for the new Data Element, and tap Create to add the new element to the list. The new place holder can be inserted into the text in the same way as data dictionary element. To edit a placeholder, select a placeholder and tap Edit.
 
    ![Placeholder elements](assets/placeholder_elements_in_xmldata.png)
@@ -132,10 +132,10 @@ The Find and Replace feature allows you to search for (and replace) any string o
 
 ### To search text in a text document fragment {#to-search-text-in-a-text-document-fragment}
 
-1. Open the text document fragment in the text editor.  
+1. Open the text document fragment in the text editor.
 
 1. Tap Find & Replace.
-1. Enter the text to search in the Find text box and press Find. The search text is highlighted in the text module.  
+1. Enter the text to search in the Find text box and press Find. The search text is highlighted in the text module.
 
 1. To search for the next instance of the text, press Find again.
 
@@ -159,7 +159,7 @@ The Find and Replace feature allows you to search for (and replace) any string o
 
 #### To search and replace text in a text document fragment {#to-search-and-replace-text-in-a-text-document-fragment}
 
-1. Open the text module in the text document fragment.  
+1. Open the text module in the text document fragment.
 
 1. Tap Find & Replace.
 1. Enter the text to search in the Find text box and the text to replace the find text with and press Replace.

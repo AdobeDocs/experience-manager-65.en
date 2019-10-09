@@ -5,7 +5,7 @@ description: Adding and configuring the Liking component
 seo-description: Adding and configuring the Liking component
 uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
@@ -39,13 +39,13 @@ Under the **[!UICONTROL Texts & Labels]** tab, specify the properties used to re
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Positive Response Label]** 
+* **[!UICONTROL Positive Response Label]**
   (*Required*) The property name for a positive response.
 
-* **[!UICONTROL Negative Response Label]** 
+* **[!UICONTROL Negative Response Label]**
   (*Required*) The property name for a negative response.
 
-* **[!UICONTROL Tally Name]** 
+* **[!UICONTROL Tally Name]**
   (*Required*) The internal, identifiable property name for this instance of a voting component.
 
 ## Site Visitor Experience {#site-visitor-experience}

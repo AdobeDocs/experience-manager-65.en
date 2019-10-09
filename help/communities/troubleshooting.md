@@ -5,7 +5,7 @@ description: Troubleshooting Community including Known Issues
 seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
@@ -27,14 +27,14 @@ Using Dispatcher 4.1.6 or later will resolve this issue.
 
 If a forum was created on CQ 5.4 and topics posted, and then the site was upgraded to AEM 5.6.1 or later, attempting to view the existing posts may result in an error on the page:
 
-illegal pattern character 'a'  
+illegal pattern character 'a'
 Cannot serve request to /content/demoforums/forum-test.html on this server
 
 And the logs contain the following:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
-org.apache.sling.api.scripting.ScriptEvaluationException: 
+org.apache.sling.api.scripting.ScriptEvaluationException:
 at org.apache.sling.scripting.core.impl.DefaultSlingScript.call(DefaultSlingScript.java:388)
 at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScript.java:171)
 ```

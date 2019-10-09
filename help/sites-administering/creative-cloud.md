@@ -5,7 +5,7 @@ description: Learn to integrate AEM with Adobe Creating Cloud.
 seo-description: Learn to integrate AEM with Adobe Creating Cloud.
 uuid: e55d5571-5fa2-4b86-a714-3f03df1e1ba4
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 61dd04d6-c225-400e-a73b-257a5eec9024

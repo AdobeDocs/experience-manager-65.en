@@ -5,7 +5,7 @@ description: Learn about identity management in AEM.
 seo-description: Learn about identity management in AEM.
 uuid: 719601d2-b850-4114-8ece-1b11708a5078
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a6d9b08d-e669-4b9b-b591-c21cd72b6e22
@@ -16,7 +16,7 @@ discoiquuid: a6d9b08d-e669-4b9b-b591-c21cd72b6e22
 Individual visitors to your website can only be identified when you provide the ability for them to log in. There are various reasons why you may want to provide a login capability:
 
 * [AEM Communities](/help/communities/overview.md)Site visitors are required to sign in to post content to the community.
-* [Closed User Groups](/help/sites-administering/cug.md) 
+* [Closed User Groups](/help/sites-administering/cug.md)
 
   You may need to limit access to your website (or sections of it) to specific visitors.
 
@@ -26,7 +26,7 @@ Log in (and out) functionality is provided by an [account with a **Profile**](#p
 
 * Self-registration from the website
 
-  A [Community Site](/help/communities/sites-console.md) may be configured to allow visitors to self-register or sign-in with their Facebook or Twitter accounts.  
+  A [Community Site](/help/communities/sites-console.md) may be configured to allow visitors to self-register or sign-in with their Facebook or Twitter accounts.
 
 * Request for registration from the website
 
@@ -51,7 +51,7 @@ Additional functionality can be configured or developed:
 
 A form can be used to collect the registration information, then generate the new account and profile.
 
-For example, users can request a new profile, using the Geometrixx page  
+For example, users can request a new profile, using the Geometrixx page
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![registerform](assets/registerform.png)
@@ -72,7 +72,7 @@ For example, users can either log in, or create a new account, using the **Sign 
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![login](assets/login.png) 
+![login](assets/login.png)
 
 ## Logging Out {#logging-out}
 
@@ -87,12 +87,12 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 ```
 
-To see the details of your profile click on **My Profile** in the top right corner of any page; for example with the `admin` account:  
+To see the details of your profile click on **My Profile** in the top right corner of any page; for example with the `admin` account:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 You can view another profile using the [client context](/help/sites-administering/client-context.md) (on the author environment and with sufficient privileges):
 
-1. Open a page; for example the Geometrixx page: 
+1. Open a page; for example the Geometrixx page:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -114,13 +114,13 @@ You can view another profile using the [client context](/help/sites-administerin
 
 You can add fields to the profile definition. For example to add a "Favorite Color" field to the Geometrixx profile:
 
-1. From the Websites console navigate to Geometrixx Outdoors Site &gt; English &gt; User &gt;My Profile.  
+1. From the Websites console navigate to Geometrixx Outdoors Site &gt; English &gt; User &gt;My Profile.
 
-1. Double-click on the **My Profile** page to open it for editing.  
+1. Double-click on the **My Profile** page to open it for editing.
 
-1. In the **Components** tab of sidekick expand the **Form** section.  
+1. In the **Components** tab of sidekick expand the **Form** section.
 
-1. Drag a **Dropdown List** from sidekick to the form, just below the **About me** field.  
+1. Drag a **Dropdown List** from sidekick to the form, just below the **About me** field.
 
 1. Double-click the **Dropdown List** component to open the dialog for configuration and enter:
 
@@ -152,17 +152,17 @@ This involves defining an appropriate property in the user profile in a way that
 
 This is done with:
 
-* [State Providers](#state-providers) 
+* [State Providers](#state-providers)
 
-  To manage the two states of a specific property and the transitions between the two.  
+  To manage the two states of a specific property and the transitions between the two.
 
-* [Workflows](#workflows) 
+* [Workflows](#workflows)
 
   To manage actions related to the states.
 
 Multiple states can be defined; for example in Geometrixx these include:
 
-* subscribing (or unsubscribing) to notifications on newsletters or comment threads  
+* subscribing (or unsubscribing) to notifications on newsletters or comment threads
 * adding and removing a connection to a friend
 
 ### State Providers {#state-providers}
@@ -203,7 +203,7 @@ If such access is not appropriate for your installation you can change these def
 
 This can be done using the **[Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
 
-![aclmanager](assets/aclmanager.png)  
+![aclmanager](assets/aclmanager.png)
 
 ## Profile Components {#profile-components}
 
@@ -218,19 +218,19 @@ This component gives you two fields for:
 
 With default settings the component will appear as follows:
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png) 
+![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
 
 ### Profile Avatar Photo {#profile-avatar-photo}
 
 This component provides the user with a mechanism for selecting and uploading an Avatar Photo file.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png) 
+![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
 
 ### Profile Detailed Name {#profile-detailed-name}
 
 This component allows the user to input a detailed name.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png) 
+![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
 
 ### Profile Gender {#profile-gender}
 

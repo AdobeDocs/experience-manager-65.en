@@ -5,7 +5,7 @@ description: This article describes how to import and export metadata in bulk.
 seo-description: This article describes how to import and export metadata in bulk.
 uuid: 176b7b5e-a1d5-40fe-a651-bfa36c4b409a
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 discoiquuid: f7e30ec4-62fd-43b7-a650-f61034f7a2db
 ---
@@ -27,27 +27,27 @@ The metadata import is asynchronous and does not impede the system performance. 
 1. On the **[!UICONTROL Metadata Import]** page, tap/click the **[!UICONTROL Select File]**.  Select the CSV file with the metadata.
 1. Specify the following parameters:
 
-   <table> 
+   <table>
     <tbody>
     <tr>
-    <td><p>Batch Size</p> </td> 
-    <td><p>Number of assets in a batch for which metadata is to be imported. Default value is 50. Maximum value is 100.</p> </td> 
+    <td><p>Batch Size</p> </td>
+    <td><p>Number of assets in a batch for which metadata is to be imported. Default value is 50. Maximum value is 100.</p> </td>
     </tr>
     <tr>
-    <td><p>Field Separator</p> </td> 
-    <td><p>Default value is comma. You can specify any other character.</p> </td> 
+    <td><p>Field Separator</p> </td>
+    <td><p>Default value is comma. You can specify any other character.</p> </td>
     </tr>
     <tr>
-    <td><p>Multi value Delimiter</p> </td> 
-    <td><p>Separator for metadata values. Default value is |.</p> </td> 
+    <td><p>Multi value Delimiter</p> </td>
+    <td><p>Separator for metadata values. Default value is |.</p> </td>
     </tr>
     <tr>
-    <td><p>Launch Workflows</p> </td> 
-    <td><p>False by default. When set to <em>true</em> and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. </p> </td> 
+    <td><p>Launch Workflows</p> </td>
+    <td><p>False by default. When set to <em>true</em> and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. </p> </td>
     </tr>
     <tr>
-    <td><p>Asset Path Column Name</p> </td> 
-    <td><p>Defines the column name for the CSV file with assets.</p> </td> 
+    <td><p>Asset Path Column Name</p> </td>
+    <td><p>Defines the column name for the CSV file with assets.</p> </td>
     </tr>
     </tbody>
    </table>

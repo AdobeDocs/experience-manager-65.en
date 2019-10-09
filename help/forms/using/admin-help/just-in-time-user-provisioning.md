@@ -7,7 +7,7 @@ uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 ---
 
@@ -20,7 +20,7 @@ AEM forms supports just-in-time provisioning of users that don’t yet exist in 
 This is how traditional authentication works:
 
 1. When a user tries to log in to AEM forms, User Management passes the user’s credentials sequentially to all available authentication providers. (Login credentials include a username/password combination, Kerberos ticket, PKCS7 signature, and so on.)
-1. The authentication provider validates the credentials. 
+1. The authentication provider validates the credentials.
 1. The authentication provider then checks whether the user exists in the User Management database. The following results are possible:
 
    **Exists:** If the user is current and unlocked, User Management returns authentication success. However, if the user is not current or is locked, User Management returns authentication failure.
@@ -41,37 +41,37 @@ When just-in-time provisioning is implemented, a new user is created dynamically
 AEM forms provides the following APIs for just-in-time provisioning:
 
 ```as3
-package com.adobe.idp.um.spi.authentication  ; 
-publ ic interface IdentityCreator { 
-/** 
-* Tries  to create a user with the  in formation  provided in the <code>UserProvisioningBO</code> object. 
-* If the user is successfully created, a valid AuthResponse is returned along with the information using which the user was created. 
-* It is the responsibility of the IdentityCreator to set the User obje ct  in the cre dential map with th e  ke y  <code>UMA u thenticationUtil.authenticatedUserKey</code> 
-* The credentials are available in the <code>UserProvisioningBO</code> object in the 'credentials' property. 
-* If the IdentityCreator is unable to create a user due to any reason, it returns <code>null</code> 
-* @param userBO An object of <code>com.adobe. i dp.um . spi.authenti c ationUserProvisioningBO</code> 
-* @return */public AuthResponse create(UserProvisioningBO userBO); 
-/** 
-* Returns the name of the IdentityCreator which will be registered in preferences. 
-* This name is used to associate the IdentityProvider with the Auth Provider Configuration in the domain. 
-* @return The name of the Identity Creator which is recognized in Configuration. 
-*/ 
-public String getName(); 
-} 
-package com.adobe.idp.um.spi.authentication; 
-import com.adobe.idp.um.api.infomodel.User; 
-public interface AssignmentProvider { 
-/** 
-* Tries to assign roles or permissions or group memberships to users created via Just-in-time provisioning. 
-* @param user The User created via the Just-in-time provisioning process. 
-* @return a Boolean flag indicating whether the assignment was successful or not. 
-*/ 
-public Boolean assign(User user); 
-/** 
-* Returns the name of the AssignmentProvider through which it is registered under preferences. 
-* This name is used to associate the AssignmentProvider with the Auth Provider Configuration in the domain. 
-* @return The name of the AssignmentProvider which is recognized in Configuration. 
-*/public String getName(); 
+package com.adobe.idp.um.spi.authentication  ;
+publ ic interface IdentityCreator {
+/**
+* Tries  to create a user with the  in formation  provided in the <code>UserProvisioningBO</code> object.
+* If the user is successfully created, a valid AuthResponse is returned along with the information using which the user was created.
+* It is the responsibility of the IdentityCreator to set the User obje ct  in the cre dential map with th e  ke y  <code>UMA u thenticationUtil.authenticatedUserKey</code>
+* The credentials are available in the <code>UserProvisioningBO</code> object in the 'credentials' property.
+* If the IdentityCreator is unable to create a user due to any reason, it returns <code>null</code>
+* @param userBO An object of <code>com.adobe. i dp.um . spi.authenti c ationUserProvisioningBO</code>
+* @return */public AuthResponse create(UserProvisioningBO userBO);
+/**
+* Returns the name of the IdentityCreator which will be registered in preferences.
+* This name is used to associate the IdentityProvider with the Auth Provider Configuration in the domain.
+* @return The name of the Identity Creator which is recognized in Configuration.
+*/
+public String getName();
+}
+package com.adobe.idp.um.spi.authentication;
+import com.adobe.idp.um.api.infomodel.User;
+public interface AssignmentProvider {
+/**
+* Tries to assign roles or permissions or group memberships to users created via Just-in-time provisioning.
+* @param user The User created via the Just-in-time provisioning process.
+* @return a Boolean flag indicating whether the assignment was successful or not.
+*/
+public Boolean assign(User user);
+/**
+* Returns the name of the AssignmentProvider through which it is registered under preferences.
+* This name is used to associate the AssignmentProvider with the Auth Provider Configuration in the domain.
+* @return The name of the AssignmentProvider which is recognized in Configuration.
+*/public String getName();
 }
 ```
 

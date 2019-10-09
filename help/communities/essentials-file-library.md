@@ -5,7 +5,7 @@ description: Working with the file library feature
 seo-description: Working with the file library feature
 uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
@@ -17,31 +17,31 @@ This page provides the essential information for working with the file library f
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/filelibrary/components/hbs/filelibrary</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/filelibrary/components/hbs/filelibrary</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.filelibrary</td> 
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.filelibrary</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/filelibrary/components/hbs/filelibrary/filelibrary.hbs<br /> /libs/social/filelibrary/components/hbs/folder/folder.hbs<br /> /libs/social/filelibrary/components/hbs/folder/item.hbs<br /> /libs/social/filelibrary/components/hbs/document/document.hbs<br /> /libs/social/filelibrary/components/hbs/document/item.hbs<br /> </td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/filelibrary/components/hbs/filelibrary/filelibrary.hbs<br /> /libs/social/filelibrary/components/hbs/folder/folder.hbs<br /> /libs/social/filelibrary/components/hbs/folder/item.hbs<br /> /libs/social/filelibrary/components/hbs/document/document.hbs<br /> /libs/social/filelibrary/components/hbs/document/item.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/filelibrary/components/hbs/filelibrary/clientlibs/filelibrary.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/filelibrary/components/hbs/filelibrary/clientlibs/filelibrary.css</td>
   </tr>
   <tr>
-   <td><strong> properties</strong></td> 
-   <td>See <a href="file-library.md">File Library Feature</a></td> 
+   <td><strong> properties</strong></td>
+   <td>See <a href="file-library.md">File Library Feature</a></td>
   </tr>
  </tbody>
 </table>
@@ -62,7 +62,7 @@ A community site structure that includes the [File Library function](functions.m
 
 ### Accessing Comments Posted for File Libraries (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).

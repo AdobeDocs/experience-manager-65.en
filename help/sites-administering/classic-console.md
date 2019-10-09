@@ -5,7 +5,7 @@ description: Learn about the Classic UI Tagging Console.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: c3080c82-0b34-4922-a263-1674a9522649
 contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
@@ -25,7 +25,7 @@ To access the Classic UI Tagging console :
 
   for example, [http://localhost:4502/tagging](http://localhost:4502/tagging)
 
-![managing_tags_usingthetagasministrationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png) 
+![managing_tags_usingthetagasministrationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
 
 ## Creating Tags and Namespaces {#creating-tags-and-namespaces}
 
@@ -41,7 +41,7 @@ To access the Classic UI Tagging console :
 
 1. In both cases enter
 
-    * **Title** 
+    * **Title**
       (*Required*) The display title for the tag. While any character may be entered,
 
       it is recommended to not use these special characters :
@@ -50,15 +50,15 @@ To access the Classic UI Tagging console :
         * `forward slash (/)` - sub-tag delimiter
 
       These characters will not be displayed if entered.
-  
-    * **Name** 
+
+    * **Name**
 
       (*Required*) The node name for the tag.
-  
-    * **Description** 
+
+    * **Description**
 
       (*Optional*) A description for the tag.
-  
+
     * select **Create**
 
 ## Editing Tags {#editing-tags}
@@ -85,7 +85,7 @@ To access the Classic UI Tagging console :
 
 **List** opens a new window showing the paths of all pages using the highlighted tag:
 
-![list_showing_wheretagsarereferenced](assets/list_showing_wheretagsarereferenced.png) 
+![list_showing_wheretagsarereferenced](assets/list_showing_wheretagsarereferenced.png)
 
 ## Moving Tags {#moving-tags}
 
@@ -124,7 +124,7 @@ To merge a tag into another one:
 
 The **Merge Tag** dialog looks as follows:
 
-![mergetag](assets/mergetag.png) 
+![mergetag](assets/mergetag.png)
 
 ## Counting Usage of Tags {#counting-usage-of-tags}
 
@@ -146,7 +146,7 @@ The following procedure shows how to translate the `title`of the tag **Animals**
 1. Add the translations in the following languages:
 
     * **English**: Animals
-    * **German**: Tiere 
+    * **German**: Tiere
     * **French**: Animaux
 
 1. Save the changes.

@@ -4,7 +4,7 @@ seo-title: AEM Modernization Tools
 description: AEM Modernization Tools help you convert your legacy AEM features to the latest technology
 seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
 # AEM Modernization Tools {#modernization-tools}

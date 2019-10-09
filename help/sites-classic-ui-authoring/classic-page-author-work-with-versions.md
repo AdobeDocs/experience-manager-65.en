@@ -5,7 +5,7 @@ description: Versioning creates a "snapshot" of a page at a specific point in ti
 seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: b8412922-3dd5-44e3-a7fa-3e357c89a4ff
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
@@ -30,7 +30,7 @@ To create a new version of a page:
 
 1. Enter a **Comment** (optional).
 1. To set a label to the version (optional), click the **More &gt;&gt;** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. A greyed message is displayed on the page; for example: 
+1. Click **Create Version**. A greyed message is displayed on the page; for example:
 
    Version 1.2 created for: Shirts.
 
@@ -163,9 +163,9 @@ If you want to view the timeline of the document:
 
 1. Select and move (hold and drag) the timeline to move through the document's timeline.
 
-    * All lines indicate published versions. 
+    * All lines indicate published versions.
 
-      When a page is activated, a new line starts. Every time the document is edited a new color appears. 
+      When a page is activated, a new line starts. Every time the document is edited a new color appears.
 
       In the example below, the red line indicates that the page was edited during the timeframe of the initial green version and the yellow line indicates that the page was edited sometime during the red version etc.
 

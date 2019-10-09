@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: fbf7d0d1-865d-45d2-aeec-a7e3caf3fcb2
 contentOwner: David Hasselhof
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
@@ -60,7 +60,7 @@ When using SSR, the [component interaction workflow](/help/sites-developing/spa-
 
 1. The browser requests the SSR content from AEM.
 1. AEM posts the model to Adobe I/O Runtime.
-1. Adobe I/O Runtime returns the generated content  
+1. Adobe I/O Runtime returns the generated content
 1. AEM serves the HTML returned by Adobe I/O Runtime via the HTL template of the backend page component.
 
 ![server-side-rendering-cms-drivenaemnode](assets/server-side-rendering-cms-drivenaemnode-adobeio.png)

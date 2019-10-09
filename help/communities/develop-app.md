@@ -5,7 +5,7 @@ description: Develop application using foundation scripts
 seo-description: Develop application using foundation scripts
 uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
@@ -33,7 +33,7 @@ Using CRXDE Lite:
 1. Click the green **[!UICONTROL [+] Add]**
 1. Click **[!UICONTROL Save All]**
 
-![chlimage_1-231](assets/chlimage_1-231.png) 
+![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Head and body scripts {#head-and-body-scripts}
 
@@ -43,11 +43,11 @@ Using CRXDE Lite:
 
    ```xml
    <%--
-   
+
      An SCF Sandbox Play Component component.
-   
+
      This is the component which renders content for An SCF Sandbox page.
-   
+
    --%><%
    %><%@include file="/libs/foundation/global.jsp"%><%
    %><%@page session="false" %><%
@@ -64,11 +64,11 @@ Using CRXDE Lite:
 
    ```xml
    <%--
-   
+
        An SCF Sandbox Play Component component: playpage.jsp
-   
+
      This is the component which renders content for An SCF Sandbox page.
-   
+
    --%><%
    %><%@include file="/libs/foundation/global.jsp"%><%
    %><%@page session="false" %>
@@ -90,15 +90,15 @@ Using CRXDE Lite:
 
     1. Click **[!UICONTROL Save All]**
 
-   Open `/apps/an-scf-sandbox/components/playpage/body.jsp` and paste in the following text:  
+   Open `/apps/an-scf-sandbox/components/playpage/body.jsp` and paste in the following text:
 
    ```xml
    <%--
-   
+
        An SCF Sandbox Play Component component: body.jsp
-   
+
      This is the component which renders content for An SCF Sandbox page.
-   
+
    --%><%
    %><%@include file="/libs/foundation/global.jsp"%><%
    %><%@page session="false" %>
@@ -124,7 +124,7 @@ The Assets/Component side panel is seen when both the side panel is toggled open
 
 Following is how the play page appears in the classic UI including with content finder (cf):
 
-![chlimage_1-233](assets/chlimage_1-233.png) 
+![chlimage_1-233](assets/chlimage_1-233.png)
 
 ## Communities Components {#communities-components}
 
@@ -134,7 +134,7 @@ To enable Communities components for authoring, start by following these instruc
 
 For the purposes of this sandbox, start with these **Communities** components (enable by checking the box):
 
-* Comments 
+* Comments
 * Forum
 * Rating
 * Reviews
@@ -150,7 +150,7 @@ In addition, choose **[!UICONTROL General]** components, such as
 
 >[!NOTE]
 >
->The components enabled for the page par are stored in the repository as the value of the `components` property of the  
+>The components enabled for the page par are stored in the repository as the value of the `components` property of the
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
 ## Landing Page {#landing-page}
@@ -170,6 +170,6 @@ Change the browser URL to the root page: [http://localhost:4502/editor.html/cont
 
 * Click **[!UICONTROL OK]**
 
-Once the site is published, browsing to the root page on a publish instance will redirect to the english page.  
+Once the site is published, browsing to the root page on a publish instance will redirect to the english page.
 
-The last step before playing with the communities SCF components is to add a Client Library Folder (clientlibs) .... **[⇒](add-clientlibs.md)** 
+The last step before playing with the communities SCF components is to add a Client Library Folder (clientlibs) .... **[⇒](add-clientlibs.md)**

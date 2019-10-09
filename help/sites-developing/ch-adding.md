@@ -5,7 +5,7 @@ description: Add ContextHub to your pages to enable the ContextHub features and 
 seo-description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries
 uuid: ade37960-21c4-4d64-a525-68f0d199f955
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
@@ -47,7 +47,7 @@ Context Hub stores use one of the following persistence modes:
 * **Local:** Uses HTML5 localStorage to persist data. Local storage is persisted on the browser across sessions.
 * **Session:** Uses HTML5 sessionStorage to persist data. Session storage is persisted for the duration of the browser session and is available to all browser windows.
 * **Cookie:** Uses the browser's native support of cookies for data storage. Cookie data is sent to and from the server in HTTP requests.
-* **Window.name:** Uses the window.name property to persist data. 
+* **Window.name:** Uses the window.name property to persist data.
 * **Memory:** Uses a Javascript object to persist data.
 
 By default, Context Hub uses the Local persistence mode. If the browser does not support or allow HTML5 localStorage, Session persistence is used. If the browser does not support or allow HTML5 sessionStorage, Window.name persistence is used.
@@ -132,28 +132,28 @@ The ContextHub segment engine enables you to determine which of the registered s
 ContextHub segments are installed below the `/etc/segmentation/contexthub` node.
 
 * female
-* female-over-30  
-* female-under-30  
+* female-over-30
+* female-under-30
 * male
-* male-over-30  
-* male-under-30  
-* order-value-75-to-100  
-* order-value-over-100  
+* male-over-30
+* male-under-30
+* order-value-75-to-100
+* order-value-over-100
 * over-30
-* summer  
-* summer-female  
-* summer-female-over-30  
-* summer-female-under-30  
-* summer-male  
-* summer-male-over-30  
-* summer-male-under-30  
-* under-30  
-* winter  
-* winter-female  
-* winter-female-over-30  
-* winter-female-under-30  
-* winter-male  
-* winter-male-over-30  
+* summer
+* summer-female
+* summer-female-over-30
+* summer-female-under-30
+* summer-male
+* summer-male-over-30
+* summer-male-under-30
+* under-30
+* winter
+* winter-female
+* winter-female-over-30
+* winter-female-under-30
+* winter-male
+* winter-male-over-30
 * winter-male-under-20
 
 The rules that are used to resolve these segments are summarized as follows:

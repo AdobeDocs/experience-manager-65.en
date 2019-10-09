@@ -5,7 +5,7 @@ description: Content is added using components that can be dragged onto the page
 seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: 0b34fb45-286a-4acb-b5d1-efc3d0e4ab70
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
@@ -43,17 +43,17 @@ Several tabs and icons are available, including:
 
 These provide access to a wide selection of functionality; including:
 
-* [selecting components](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick) 
-* [showing references](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references) 
-* [accessing the audit log](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log) 
-* [switching modes](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes) 
-* [creating](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [restoring](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) and [comparing](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versions  
+* [selecting components](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)
+* [showing references](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
+* [accessing the audit log](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
+* [switching modes](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
+* [creating](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [restoring](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) and [comparing](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versions
 
 * [publishing](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [unpublishing](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) a page
 
-* [editing page properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)   
+* [editing page properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [scaffolding](/help/sites-authoring/scaffolding.md)  
+* [scaffolding](/help/sites-authoring/scaffolding.md)
 
 * [client context](/help/sites-administering/client-context.md)
 
@@ -68,7 +68,7 @@ To insert a new component:
 1. There are several methods of selecting the type of paragraph you want to insert:
 
     * Double-click the area labeled **Drag components or assets here...** - the **Insert New Component** toolbar opens. Select a component and click **OK**.
-    * Drag a component from the floating toolbar (called sidekick) to insert a new paragraph. 
+    * Drag a component from the floating toolbar (called sidekick) to insert a new paragraph.
     * Right-click an existing paragraph and select **New...** - the Insert New Component toolbar opens. Select a component and click **OK**.
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
@@ -146,7 +146,7 @@ To delete a paragraph:
 
 >[!NOTE]
 >
->If you have set your [User Properties to show the Global Editing Toolbar](/help/sites-classic-ui-authoring/author-env-user-props.md) you can also perform certain actions on the paragraphs by using the **Copy**, **Cut**, **Paste**, **Delete** buttons available.  
+>If you have set your [User Properties to show the Global Editing Toolbar](/help/sites-classic-ui-authoring/author-env-user-props.md) you can also perform certain actions on the paragraphs by using the **Copy**, **Cut**, **Paste**, **Delete** buttons available.
 >Various [keyboard shortcuts](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) are also available.
 
 ## Cut/Copy/Paste a Component {#cut-copy-paste-a-component}
@@ -155,7 +155,7 @@ As when [Deleting a Component](#deleting-a-component) you can use the context me
 
 >[!NOTE]
 >
->If you have set your [User Properties to show the Global Editing Toolbar](/help/sites-classic-ui-authoring/author-env-user-props.md) you can also perform certain actions on the paragraphs by using the **Copy**, **Cut**, **Paste**, **Delete** buttons available.  
+>If you have set your [User Properties to show the Global Editing Toolbar](/help/sites-classic-ui-authoring/author-env-user-props.md) you can also perform certain actions on the paragraphs by using the **Copy**, **Cut**, **Paste**, **Delete** buttons available.
 >
 >Various [keyboard shortcuts](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) are also available.
 
@@ -250,7 +250,7 @@ To unlock a page:
 
 Use the following keyboard shortcuts while the content frame of the page has focus:
 
-* Undo: Ctrl+Z (Windows) or Cmd+Z (Mac)  
+* Undo: Ctrl+Z (Windows) or Cmd+Z (Mac)
 * Redo: Ctrl+Y (Windows) or Cmd+Y (Mac)
 
 When you undo or redo the removal, addition, or relocation of one or more paragraphs, flashing (default behavior) highlights indicate the affected paragraphs.
@@ -286,8 +286,8 @@ You can use undo and redo for the following types of page changes:
 * In-place editing of paragraph content
 * Copying, cutting, and pasting items within a page
 * Copying, cutting, and pasting items across pages
-* Adding, removing, and changing files and images  
-* Adding, removing, and changing annotations and sketches  
+* Adding, removing, and changing files and images
+* Adding, removing, and changing annotations and sketches
 * Changes to Scaffold
 * Adding and removing references
 * Changing property values in component dialog boxes.

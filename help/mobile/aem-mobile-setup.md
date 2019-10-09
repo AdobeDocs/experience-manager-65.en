@@ -1,12 +1,12 @@
 ---
 title: AEM Mobile SetUp
 seo-title: AEM Mobile SetUp
-description: Follow this page for setting up AEM Mobile and thus allowing the user to create and manage the content within AEM. This page provides information on integrating the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s). 
-seo-description: Follow this page for setting up AEM Mobile and thus allowing the user to create and manage the content within AEM. This page provides information on integrating the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s). 
+description: Follow this page for setting up AEM Mobile and thus allowing the user to create and manage the content within AEM. This page provides information on integrating the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s).
+seo-description: Follow this page for setting up AEM Mobile and thus allowing the user to create and manage the content within AEM. This page provides information on integrating the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s).
 uuid: 03bf5b56-7750-4f76-b079-43761367655a
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 ---
@@ -19,7 +19,7 @@ discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 
 >[!CAUTION]
 >
->Existing AEM Mobile Apps customers migrating from AEM 6.2 or 6.3 to AEM 6.4 can continue to use AEM Mobile Apps by downloading a [package from PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). However, new installs of AEM 6.4 will not support AEM Mobile Apps functionality.
+>Existing AEM Mobile Apps customers migrating from AEM 6.2 or 6.3 to AEM 6.5 can continue to use AEM Mobile Apps by downloading a [package from PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). However, new installs of AEM 6.5 will not support AEM Mobile Apps functionality.
 
 In order to use AEM to produce content for AEM Mobile apps, you must integrate the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s).
 

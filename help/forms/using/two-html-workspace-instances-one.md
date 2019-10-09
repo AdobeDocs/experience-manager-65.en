@@ -5,7 +5,7 @@ description: How LC administrators can customize HTML WS to host two instances o
 seo-description: How LC administrators can customize HTML WS to host two instances on a single server accessible via different URLs.
 uuid: 0584f512-6b92-4418-b71c-93605cfa1927
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 ---
@@ -20,7 +20,7 @@ Follow these steps to configure AEM Forms workspace.
 
 1. Install the dev package of AEM Forms workspace on your server. See [dev package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), for instructions to create it.
 1. Login to CRXDE Lite as an administrator, by accessing `https://[server]:[port]/lc/crx/de/index.jsp`.
-1. Copy node ws at /content and paste at /content. Rename node to ws2. Click **[!UICONTROL Save all]**. In properties of this node, change value of `sling:resourceType` to ws2. Click **[!UICONTROL Save all]**.  
+1. Copy node ws at /content and paste at /content. Rename node to ws2. Click **[!UICONTROL Save all]**. In properties of this node, change value of `sling:resourceType` to ws2. Click **[!UICONTROL Save all]**.
 
 1. Copy folder ws from /libs and paste at /apps. Rename the folder to ws2. Click **[!UICONTROL Save all]**.
 1. In `GET.jsp` at `/apps/ws2`, make the following code changes. Replace the following
@@ -75,17 +75,17 @@ Follow these steps to configure AEM Forms workspace.
    }
    ```
 
-1. In `userinfo.js` at `/apps/ws2/js/runtime/models` and `/apps/ws2/js/runtime/views`, change string `/lc/content/ws` to `lc/content/ws2`.  
+1. In `userinfo.js` at `/apps/ws2/js/runtime/models` and `/apps/ws2/js/runtime/views`, change string `/lc/content/ws` to `lc/content/ws2`.
 
-1. In `/apps/ws2/js/runtime/services/service.js`, change the path in `getLocalizationData` function to point to `/lc/apps/ws2/Locale.html`.  
+1. In `/apps/ws2/js/runtime/services/service.js`, change the path in `getLocalizationData` function to point to `/lc/apps/ws2/Locale.html`.
 
-1. To refer to `pdf.html` of the new Workspace, change the path of `pdf.html` in `/apps/ws2/js/runtime/views/forms/pdftaskform.js`.  
+1. To refer to `pdf.html` of the new Workspace, change the path of `pdf.html` in `/apps/ws2/js/runtime/views/forms/pdftaskform.js`.
 
-1. To refer to `pdf.html` of the new Workspace, change paths of `pdf.html` and `WsNextAdapter.swf` in `startprocess.html`, `taskdetails.html`, and `processinstancehistory.html` at `/apps/ws2/js/runtime/templates`.  
+1. To refer to `pdf.html` of the new Workspace, change paths of `pdf.html` and `WsNextAdapter.swf` in `startprocess.html`, `taskdetails.html`, and `processinstancehistory.html` at `/apps/ws2/js/runtime/templates`.
 
-1. Copy `/etc/map/ws` folder and paste at `/etc/map`. Rename the new folder to ws2. Click Save all.  
+1. Copy `/etc/map/ws` folder and paste at `/etc/map`. Rename the new folder to ws2. Click Save all.
 
-1. In properties of `ws2`, change value of `sling:redirect` to `content/ws2`.  
+1. In properties of `ws2`, change value of `sling:redirect` to `content/ws2`.
 
 1. Change value of `sling:match` to `^[^/\||]/[^/\||]/ws2$`.
 

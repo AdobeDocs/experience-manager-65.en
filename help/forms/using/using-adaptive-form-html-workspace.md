@@ -5,7 +5,7 @@ description: Using an adaptive form in HTML Workspace
 seo-description: Using an adaptive form in HTML Workspace
 uuid: 1ebe81ae-5c0b-4c07-8cd1-86efdf8415be
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2f514072-81d9-48de-8369-cca94a330f1d
 ---
@@ -32,15 +32,15 @@ Because adaptive forms are in the AEM repository, the LiveCycle application expo
 
 HTML Workspace provides some adaptive form-specific controls in addition to controls that are available for mobile forms. A user can add attachments, save, sign, submit, and navigate the adaptive forms in HTML Workspace when the user opens a Task or Start Point. The following are the specifics:
 
-1. To **attach **files use Task attachments, as was the case in Mobile Forms. Any File Attachment type button of adaptive form is hidden.  
+1. To **attach **files use Task attachments, as was the case in Mobile Forms. Any File Attachment type button of adaptive form is hidden.
 
-1. To save an adaptive form, click **Save**, as was the case in Mobile Forms. Any Save type button of adaptive form is hidden.  
+1. To save an adaptive form, click **Save**, as was the case in Mobile Forms. Any Save type button of adaptive form is hidden.
 
-1. To submit an adaptive form, use the **Submit** button or route actions available, as was the case in Mobile Forms. Any Submit type button of adaptive form is hidden.  
+1. To submit an adaptive form, use the **Submit** button or route actions available, as was the case in Mobile Forms. Any Submit type button of adaptive form is hidden.
 
-1. **Adaptive Form Global toolbar visibility**: If process designer hides the global/top-level toolbar, the toolbar, and the buttons don't appear on adaptive forms.  
+1. **Adaptive Form Global toolbar visibility**: If process designer hides the global/top-level toolbar, the toolbar, and the buttons don't appear on adaptive forms.
 
-1. **Workspace navigation controls for Adaptive Forms**: Next/Previous buttons are available along with save, Submit, and Route Action buttons for an adaptive form in HTML Workspace. Click Next/Previous buttons to navigate panels of adaptive forms in HTML Workspace. The Next/Previous buttons provide deep navigation, similar to navigation controls in the Mobile view of adaptive forms.  
+1. **Workspace navigation controls for Adaptive Forms**: Next/Previous buttons are available along with save, Submit, and Route Action buttons for an adaptive form in HTML Workspace. Click Next/Previous buttons to navigate panels of adaptive forms in HTML Workspace. The Next/Previous buttons provide deep navigation, similar to navigation controls in the Mobile view of adaptive forms.
 
 1. **eSign Services and Summary Component of Adaptive Form**: The Summary component is non-operational in HTML Workspace. In other words, if an adaptive form has a Summary component, it is not visible in workspace. Instead of Auto Submit in the Esign component, the workspace user clicks the Submit or a route action in HTML Workspace. After a document is signed, it is visible as a flat signed document. Click **Submit** or a route action to close/complete the task or Start Point.
 
@@ -48,7 +48,7 @@ HTML Workspace provides some adaptive form-specific controls in addition to cont
 
 ## Steps to use adaptive forms in process design {#steps-to-use-adaptive-forms-in-process-design}
 
-1. Open Adobe Experience Manager Forms Workbench.  
+1. Open Adobe Experience Manager Forms Workbench.
 
 1. Go to **File &gt; New &gt; Application** or use the existing application to create an application.
 

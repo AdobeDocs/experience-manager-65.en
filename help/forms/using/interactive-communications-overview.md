@@ -6,7 +6,7 @@ seo-description: Interactive Communication key capabilities, sample use cases, c
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 ---
@@ -32,7 +32,7 @@ Following are the key capabilities of Interactive Communications:
 
 ## Sample use case {#sample-use-case}
 
-The [Welcome kit for a credit card customer](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) sample use case showcases the capabilities of an Interactive Communication. 
+The [Welcome kit for a credit card customer](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) sample use case showcases the capabilities of an Interactive Communication.
 
 ## Interactive Communication creation  {#interactive-communication-creation}
 
@@ -42,11 +42,11 @@ The [Welcome kit for a credit card customer](/help/forms/using/finance-reference
 
 To create an Interactive Communication, have the [building blocks](#buildingblocks) for Interactive Communication ready and then complete the following steps:
 
-1. Choose to [create an Interactive Communication](/help/forms/using/create-interactive-communication.md).   
+1. Choose to [create an Interactive Communication](/help/forms/using/create-interactive-communication.md).
 
-1. Specify the [form data model](/help/forms/using/data-integration.md), prefill service, and [print and web channel templates](/help/forms/using/web-channel-print-channel.md). You can choose to generate web channel from the print channel. 
+1. Specify the [form data model](/help/forms/using/data-integration.md), prefill service, and [print and web channel templates](/help/forms/using/web-channel-print-channel.md). You can choose to generate web channel from the print channel.
 
-1. Using the [drag-and-drop interface](/help/forms/using/introduction-interactive-communication-authoring.md), add document fragments, images, components to print and web channel of the Interactive Communication as required. 
+1. Using the [drag-and-drop interface](/help/forms/using/introduction-interactive-communication-authoring.md), add document fragments, images, components to print and web channel of the Interactive Communication as required.
 1. Configure the properties for the components inserted, such as the following:
 
     1. Images
@@ -54,7 +54,7 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
     1. [Charts](/help/forms/using/chart-component-interactive-communications.md)
     1. [Document fragments](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Preview print and web channels and, if required, edit the Interactive Communication. 
+1. Preview print and web channels and, if required, edit the Interactive Communication.
 1. The agent uses the Agent UI to [prepare the Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) for sending it to the recipient/post process.
 
 ### Building blocks {#buildingblocks}
@@ -69,78 +69,78 @@ Following are the building blocks required for creating an Interactive Communica
 
 ## Interactive Communications Vs Correspondence Management {#interactive-communications-vs-correspondence-management}
 
-Interactive Communication is the default and recommended approach to create customer communications. To continue using the letters creating in AEM 6.3 Forms and AEM 6.2 Forms, you need to [install a compatibility package](/help/forms/using/compatibility-package.md). Following is a comparison between capabilities of Interactive Communication and letter. 
+Interactive Communication is the default and recommended approach to create customer communications. To continue using the letters creating in AEM 6.3 Forms and AEM 6.2 Forms, you need to [install a compatibility package](/help/forms/using/compatibility-package.md). Following is a comparison between capabilities of Interactive Communication and letter.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td><strong>Capability</strong></td> 
-   <td><strong>Interactive Communication</strong></td> 
-   <td><strong>Letter</strong></td> 
+   <td><strong>Capability</strong></td>
+   <td><strong>Interactive Communication</strong></td>
+   <td><strong>Letter</strong></td>
   </tr>
   <tr>
-   <td>Output</td> 
-   <td>Print and Web</td> 
-   <td>Print</td> 
+   <td>Output</td>
+   <td>Print and Web</td>
+   <td>Print</td>
   </tr>
   <tr>
-   <td>Schema</td> 
-   <td>Form data model </td> 
-   <td>Data dictionary </td> 
+   <td>Schema</td>
+   <td>Form data model </td>
+   <td>Data dictionary </td>
   </tr>
   <tr>
-   <td>Localization</td> 
-   <td>Not supported in form data model</td> 
-   <td>Supported in data dictionary</td> 
+   <td>Localization</td>
+   <td>Not supported in form data model</td>
+   <td>Supported in data dictionary</td>
   </tr>
   <tr>
-   <td>Rule editor</td> 
+   <td>Rule editor</td>
    <td>
-    <ul> 
-     <li>Text and condition support rule editor for creating inline conditions</li> 
-     <li>Interactive Communication editor supports application of rules on components of the web channel</li> 
-    </ul> </td> 
-   <td>No UI for creation of conditional expression</td> 
+    <ul>
+     <li>Text and condition support rule editor for creating inline conditions</li>
+     <li>Interactive Communication editor supports application of rules on components of the web channel</li>
+    </ul> </td>
+   <td>No UI for creation of conditional expression</td>
   </tr>
   <tr>
-   <td>Authoring</td> 
-   <td>Drag-and-drop interface for constructing print and web channel</td> 
-   <td>No drag-and-drop mechanism </td> 
+   <td>Authoring</td>
+   <td>Drag-and-drop interface for constructing print and web channel</td>
+   <td>No drag-and-drop mechanism </td>
   </tr>
   <tr>
-   <td>Charts</td> 
-   <td>Charts supported in print as well as web channel</td> 
-   <td>Not supported</td> 
+   <td>Charts</td>
+   <td>Charts supported in print as well as web channel</td>
+   <td>Not supported</td>
   </tr>
   <tr>
-   <td>Themes</td> 
-   <td>Uses themes to style web channel</td> 
-   <td>Does not support themes</td> 
+   <td>Themes</td>
+   <td>Uses themes to style web channel</td>
+   <td>Does not support themes</td>
   </tr>
   <tr>
-   <td>Auditing and Versioning</td> 
-   <td>Not supported</td> 
-   <td>Supported</td> 
+   <td>Auditing and Versioning</td>
+   <td>Not supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
-   <td>Drafts and manage instance</td> 
-   <td>Not supported</td> 
-   <td>Supported</td> 
+   <td>Drafts and manage instance</td>
+   <td>Not supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
-   <td>Batch processing</td> 
-   <td>Supported </td> 
-   <td>Supported</td> 
+   <td>Batch processing</td>
+   <td>Supported </td>
+   <td>Supported</td>
   </tr>
   <tr>
-   <td>Agent signature</td> 
-   <td>Not supported</td> 
-   <td>Supported</td> 
+   <td>Agent signature</td>
+   <td>Not supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
-   <td>Remote functions</td> 
-   <td>Not supported</td> 
-   <td>Supported</td> 
+   <td>Remote functions</td>
+   <td>Not supported</td>
+   <td>Supported</td>
   </tr>
  </tbody>
 </table>

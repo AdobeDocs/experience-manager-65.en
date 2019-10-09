@@ -4,7 +4,7 @@ seo-title: Synchronizing Adaptive Forms with XFA Form Templates
 description: Synchronizing Adaptive forms with XFA/XDP files.
 seo-description: Synchronizing Adaptive forms with XFA/XDP files.
 uuid: 6613a9bf-c862-4c18-a5b5-f574d301e936
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 ---
@@ -27,7 +27,7 @@ In the AEM Forms authoring environment, you can drag fields from an XFA form (le
 
 To use the information in this article, a familiarity with the following areas is recommended:
 
-* [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md)  
+* [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md)
 
 * XFA (XML Forms Architecture)
 
@@ -43,7 +43,7 @@ Install the package using the package manager: `https://<server>:<port>/crx/pack
 
 The package contains the following assets:
 
-1. `sample-form.xdp`: The XFA form template used as an example  
+1. `sample-form.xdp`: The XFA form template used as an example
 
 1. `sample-xfa-af`: The adaptive form based on the sample-form.xdp file. This adaptive form, however, does not include any fields. In the next step, we will add content to this adaptive form.
 
@@ -76,7 +76,7 @@ As an example, let us update the `sample-form.xdp` file using the following step
 
 If an XDP file gets updated, you see an icon in the editor, when you edit the adaptive forms based on the XDP file. This icon indicates that the adaptive form is out of sync with the XDP file. In the following image, see the icon next in the sidebar.
 
-![Icon to display that the adaptive form is out of sync with the XDP file](assets/sync-af-xfa.png) 
+![Icon to display that the adaptive form is out of sync with the XDP file](assets/sync-af-xfa.png)
 
 ## Synchronizing adaptive forms with the latest XDP file {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
@@ -86,7 +86,7 @@ Clicking on the message synchronizes the fields in the adaptive form with the co
 
 For the example used in this article, open `sample-xfa-af` in authoring mode. The message is displayed toward the bottom of the adaptive form.
 
-![Message prompting you to synchronize the adaptive form with the XDP file](assets/sync-af-xfa-1.png) 
+![Message prompting you to synchronize the adaptive form with the XDP file](assets/sync-af-xfa-1.png)
 
 ### Updating the properties {#updating-the-properties}
 
@@ -114,7 +114,7 @@ The following steps illustrate this use flow for the assets in the example used 
 
 1. Update the `sample-form.xdp` file and delete NumericField1.
 1. Upload the `sample-form.xdp` file in the AEM Forms UI
-1. Open the `sample-xfa-af` adaptive form for authoring. The following error message is displayed: Schema/Form Template for the Adaptive Form has been updated. `Click Here` to rebase it with the new version.  
+1. Open the `sample-xfa-af` adaptive form for authoring. The following error message is displayed: Schema/Form Template for the Adaptive Form has been updated. `Click Here` to rebase it with the new version.
 
 1. Click the link (labeled " `Click Here`") in the message. An error message is displayed noting that the field doesn't exist anymore in the XDP file.
 

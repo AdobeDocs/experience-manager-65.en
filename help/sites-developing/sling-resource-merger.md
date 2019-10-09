@@ -5,7 +5,7 @@ description: The Sling Resource Merger provides services to access and merge res
 seo-description: The Sling Resource Merger provides services to access and merge resources
 uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
@@ -23,13 +23,13 @@ The Sling Resource Merger provides services to access and merge resources. It pr
 
 With the Sling Resource Merger, the overlay/override resources and/or properties are merged with the original resources/properties:
 
-* The content of the customized definition has a higher priority than that of the original (i.e. it *overlays *or* overrides* it).  
+* The content of the customized definition has a higher priority than that of the original (i.e. it *overlays *or* overrides* it).
 
 * Where necessary, [properties](#properties) defined in the customization, indicate how content merged from the original is to be used.
 
 >[!CAUTION]
 >
->The Sling Resource Merger and related methods can only be used with [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html). This also means that it is only appropriate for the stndard, touch-enabled UI; in particular overrides defined in this manner are only applicable for the touch-enabled dialog of a component.  
+>The Sling Resource Merger and related methods can only be used with [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html). This also means that it is only appropriate for the stndard, touch-enabled UI; in particular overrides defined in this manner are only applicable for the touch-enabled dialog of a component.
 >
 >Overlays/overrides for other areas (including other aspects of a touch-enabled component or the classic UI) involve copying the appropriate node and structure from the original to where the customization will be defined.
 
@@ -56,7 +56,7 @@ The goals for using the Sling Resource Merger in AEM are to:
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`  
+>1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
 >
 >1. Make any changes within `/apps`
 >
@@ -67,21 +67,21 @@ The resource merger provides the following properties:
 
 * `sling:hideProperties` ( `String` or `String[]`)
 
-  Specifies the property, or list of properties, to hide. 
-
-  The wildcard `*` hides all.  
-
-* `sling:hideResource` ( `Boolean`) 
-
-  Indicates whether the resources should be completely hidden, including its children. 
-
-* `sling:hideChildren` ( `String` or `String[]`) 
-
-  Contains the child node, or list of child nodes, to hide. The properties of the node will be maintained. 
+  Specifies the property, or list of properties, to hide.
 
   The wildcard `*` hides all.
 
-* `sling:orderBefore` ( `String`) 
+* `sling:hideResource` ( `Boolean`)
+
+  Indicates whether the resources should be completely hidden, including its children.
+
+* `sling:hideChildren` ( `String` or `String[]`)
+
+  Contains the child node, or list of child nodes, to hide. The properties of the node will be maintained.
+
+  The wildcard `*` hides all.
+
+* `sling:orderBefore` ( `String`)
 
   Contains the name of the sibling node that the current node should be positioned in front of.
 
@@ -93,13 +93,13 @@ To create an overlay or override you need to recreate the original node, with th
 
 * Overlay
 
-    * The definition of the navigation entry for the Sites console, as shown in the rail is defined at: 
+    * The definition of the navigation entry for the Sites console, as shown in the rail is defined at:
 
       `/libs/cq/core/content/nav/sites/jcr:title`
 
-    * To overlay this, create the following node: 
+    * To overlay this, create the following node:
 
-      `/apps/cq/core/content/nav/sites` 
+      `/apps/cq/core/content/nav/sites`
 
       Then update the property `jcr:title` as required.
 
@@ -108,8 +108,8 @@ To create an overlay or override you need to recreate the original node, with th
     * The definition of the touch-enabled dialog for the Texts console, is defined at:
 
       `/libs/foundation/components/text/cq:dialog`
-  
-    * To override this, create the following node - for example: 
+
+    * To override this, create the following node - for example:
 
       `/apps/the-project/components/text/cq:dialog`
 
@@ -229,13 +229,13 @@ The Sling Resource Merger includes two custom resource providers - one for overl
 
 >[!NOTE]
 >
->When accessing your resource it is recommended to use the appropriate mount point. 
+>When accessing your resource it is recommended to use the appropriate mount point.
 >
 >This ensures that the Sling Resource Merger is invoked and the fully merged resource returned (reducing the structure that needs to be replicated from `/libs`).
 
 * Overlay:
 
-    * purpose: merge resources based on their search path 
+    * purpose: merge resources based on their search path
     * mount point: `/mnt/overlay`
     * usage: `mount point + relative path`
     * example:
@@ -244,7 +244,7 @@ The Sling Resource Merger includes two custom resource providers - one for overl
 
 * Override:
 
-    * purpose: merge resources based on their super type 
+    * purpose: merge resources based on their super type
     * mount point: `/mnt/overide`
     * usage: `mount point + absolute path`
     * example:

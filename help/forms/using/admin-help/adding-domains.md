@@ -1,13 +1,13 @@
 ---
-title: Adding domains 
-seo-title: Adding domains 
+title: Adding domains
+seo-title: Adding domains
 description: Learn how to add an enterprise, local, or hybrid domain using Domain Management settings and general considerations for domain names and IDs.
 seo-description: Learn how to add an enterprise, local, or hybrid domain using Domain Management settings and general considerations for domain names and IDs.
 uuid: 3ae1e5d4-ea5b-4e0b-be97-3957c3702d5f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 ---
 
@@ -18,12 +18,12 @@ discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
 1. Click New Enterprise Domain.
 1. In the ID box, type a unique identifier for the domain and in the Name box, type a descriptive name for the domain. (See [Important considerations for domain names and IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Specify whether to enable account locking. (See [Configure account-locking settings](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) By default, Enable Account Locking is selected. 
+1. Specify whether to enable account locking. (See [Configure account-locking settings](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) By default, Enable Account Locking is selected.
 1. Click Add Authentication and, in the Authentication Provider list, select a provider, depending on the authentication mechanism your organization uses. Possible values are LDAP, Kerberos, SAML, or a custom authentication provider.
 
    If you select LDAP, you can use the LDAP server specified in your directory configuration, or you can choose different LDAP server to use for authentication. If you choose a different server, your users must exist on both LDAP servers.
 
-1. Provide any additional information required on the page. (See [Authentication settings](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).) 
+1. Provide any additional information required on the page. (See [Authentication settings](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
 1. Add a directory or a custom Service Provider Interface (SPI). (See [Adding directories or custom SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
 1. Click Finish and then click OK.
 
@@ -33,16 +33,16 @@ After creating an enterprise domain, manually synchronize the directory or creat
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
 1. Click New Local Domain.
-1. In the ID box, type a unique identifier for the domain and, in the Name box, type a descriptive name for the domain. (See [Important considerations for domain names and IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).) 
+1. In the ID box, type a unique identifier for the domain and, in the Name box, type a descriptive name for the domain. (See [Important considerations for domain names and IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
 1. Specify whether to enable account locking and then click OK. (See [Configure account-locking settings](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) By default, Enable Account Locking is selected.
 
 ## Add a hybrid domain {#add-a-hybrid-domain}
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
 1. Click New Hybrid Domain.
-1. In the ID box, type a unique identifier for the domain and, in the Name box, type a descriptive name for the domain. (See [Important considerations for domain names and IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).) 
-1. Click Add Authentication and, in the Authentication Provider list, select a provider, depending on the authentication mechanism your organization uses. Possible values are LDAP, Kerberos, SAML, or a custom authentication provider. 
-1. Provide any additional information required on the page. (See [Authentication settings](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).) 
+1. In the ID box, type a unique identifier for the domain and, in the Name box, type a descriptive name for the domain. (See [Important considerations for domain names and IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
+1. Click Add Authentication and, in the Authentication Provider list, select a provider, depending on the authentication mechanism your organization uses. Possible values are LDAP, Kerberos, SAML, or a custom authentication provider.
+1. Provide any additional information required on the page. (See [Authentication settings](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
 1. Click OK and then click OK again.
 
 ## Important considerations for domain names and IDs {#important-considerations-for-domain-names-and-ids}
@@ -67,7 +67,7 @@ When using DB2 for your AEM forms database, the maximum permitted length of the 
 When using MySQL as your AEM forms database, the following limitations apply:
 
 * Use only single-byte (ASCII) characters for the domain ID and domain name. If you use extended ASCII characters, AEM forms will be in an unstable state and may throw an exception if you attempt to delete the domain. To recover from this unstable state, see the " [Remove a domain that contains extended or multi-byte characters](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)" topic on this page.
-* You cannot create two domains that have the same name but differ in case. For example, attempting to create a domain named *Adobe* when a domain named *adobe* already exists results in an error. 
+* You cannot create two domains that have the same name but differ in case. For example, attempting to create a domain named *Adobe* when a domain named *adobe* already exists results in an error.
 * User Management cannot differentiate between two domain names that differ only in the use of extended characters. For example, if you create a domain named *abcde* and a domain named *âbcdè *, they are considered the same.
 
 ### Remove a domain that contains extended or multi-byte characters {#remove-a-domain-that-contains-extended-or-multi-byte-characters}

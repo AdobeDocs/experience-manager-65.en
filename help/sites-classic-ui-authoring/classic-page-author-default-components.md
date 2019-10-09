@@ -1,12 +1,12 @@
 ---
 title: Components
 seo-title: Components
-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. 
-seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. 
+description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
@@ -36,5 +36,5 @@ The following pages provide fast links to some of the major areas of content man
 
 ## Using Design Mode to Configure Components {#using-design-mode-to-configure-components}
 
-In addition to the components that authors can access through the sidekick in a standard installation, various other components are also available. You can use [Design mode](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) to enable/disable these and edit parameters for specific components.  
+In addition to the components that authors can access through the sidekick in a standard installation, various other components are also available. You can use [Design mode](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) to enable/disable these and edit parameters for specific components.
 

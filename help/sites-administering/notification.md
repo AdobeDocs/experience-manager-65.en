@@ -5,7 +5,7 @@ description: Learn how to configure Email Notification in AEM.
 seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
@@ -15,7 +15,7 @@ discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 
 AEM sends email notifications to users who:
 
-* Have subscribed to page events, for example modification or replication. The [Notification Inbox](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) section describes how to subscribe to such events.  
+* Have subscribed to page events, for example modification or replication. The [Notification Inbox](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) section describes how to subscribe to such events.
 
 * Have subscribed to forum events.
 * Have to perform a step in a workflow. The [Participant Step](/help/sites-developing/workflows-step-ref.md#participant-step) section describes how to trigger email notification in a workflow.
@@ -37,7 +37,7 @@ For AEM to be able to send emails, the **Day CQ Mail Service** needs to be prope
 
 The following constraints apply:
 
-* The **SMTP server port** must be 25 or higher.  
+* The **SMTP server port** must be 25 or higher.
 
 * The **SMTP server host name** must not be blank.
 * The **"From" address** must not be blank.
@@ -48,7 +48,7 @@ To help you debug an issue with the **Day CQ Mail Service**, you can watch the l
 
 The configuration looks as follows in the Web console:
 
-![chlimage_1-276](assets/chlimage_1-276.png) 
+![chlimage_1-276](assets/chlimage_1-276.png)
 
 ## Configuring the Email Notification Channel {#configuring-the-email-notification-channel}
 
@@ -67,7 +67,7 @@ To configure the from-email address, add a `sling:OsgiConfig` node to the reposi
 
 Use the following procedure to define the node in your content package source folders:
 
-1. In your `jcr_root/apps/*app_name*/config folder`, create a file named `com.day.cq.wcm.notification.email.impl.EmailChannel.xml` 
+1. In your `jcr_root/apps/*app_name*/config folder`, create a file named `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Add the following XML to represent the node:
 
@@ -82,7 +82,7 @@ When you receive workflow email notifications, both the from-email address and t
 
 The default configuration looks as follows in the Web Console:
 
-![chlimage_1-277](assets/chlimage_1-277.png) 
+![chlimage_1-277](assets/chlimage_1-277.png)
 
 ### Email Templates for Page Notification {#email-templates-for-page-notification}
 
@@ -131,9 +131,9 @@ The template needs to have the following format:
 
 Where &lt;text_x&gt; can be a mix of static text and dynamic string variables. The following variables can be used within the email template for page notifications:
 
-* `${time}`, the event date and time.  
+* `${time}`, the event date and time.
 
-* `${userFullName}`, the full name of the user who triggered the event.  
+* `${userFullName}`, the full name of the user who triggered the event.
 
 * `${userId}`, the ID of the user who triggered the event.
 * `${modifications}`, describes the type of the page event and the page path in the format:
@@ -172,7 +172,7 @@ This is an automatically generated message. Please do not reply.
 
 To customize the English email template for forum notification:
 
-1. In CRXDE, open the file: 
+1. In CRXDE, open the file:
 
    `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
 
@@ -192,7 +192,7 @@ Where `<text_x>` can be a mix of static text and dynamic string variables.
 
 The following variables can be used within the email template for forum notifications:
 
-* `${time}`, the event date and time.  
+* `${time}`, the event date and time.
 
 * `${forum.path}`, the path to the forum page.
 
@@ -256,9 +256,9 @@ The following variables can be used within the email template:
 * `${event.EventType}`, type of the event
 * `${event.TimeStamp}`, date and time of the event
 * `${event.User}`, the user who triggered the event
-* `${initiator.home}`, the initiator node path  
+* `${initiator.home}`, the initiator node path
 
-* `${initiator.name}`, the initiator name  
+* `${initiator.name}`, the initiator name
 
 * `${initiator.email}`, email address of the initiator
 * `${item.id}`, the id of the work item
@@ -272,10 +272,10 @@ The following variables can be used within the email template:
 * `${instance.id}`, the workflow id
 * `${instance.state}`, the workflow state
 * `${model.title}`, title of the workflow model
-* `${model.id}`, the id of the workflow model  
+* `${model.id}`, the id of the workflow model
 
 * `${model.version}`, the version of the workflow model
-* `${payload.data}`, the payload  
+* `${payload.data}`, the payload
 
 * `${payload.type}`, the payload type
 * `${payload.path}`, path of the payload
@@ -287,7 +287,7 @@ To add a template for a new language:
 
 1. In CRXDE, add a file `<language-code>.txt` below:
 
-    * `/etc/notification/email/default/com.day.cq.wcm.core.page` : for page notifications 
+    * `/etc/notification/email/default/com.day.cq.wcm.core.page` : for page notifications
     * `/etc/notification/email/default/com.day.cq.collab.forum` : for forum notifications
     * `/etc/workflow/notification/email/default` : for workflow notifications
 

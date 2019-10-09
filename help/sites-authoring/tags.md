@@ -5,7 +5,7 @@ description: Tags are a quick and easy method of classifying content within a we
 seo-description: Tags are a quick and easy method of classifying content within a website
 uuid: a91f8724-fc35-4f40-b21c-bee90429765b
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
@@ -48,7 +48,7 @@ In the author environment, authors may apply tags by accessing the page properti
 
 To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. The **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
 
-![chlimage_1-92](assets/chlimage_1-92.png) 
+![chlimage_1-92](assets/chlimage_1-92.png)
 
 ### Publishing Tags {#publishing-tags}
 
@@ -56,8 +56,8 @@ As with pages you can perform the following on tags and namespaces:
 
 **Activate**
 
-* Activate individual tags.  
-  
+* Activate individual tags.
+
   Just as with pages, newly created tags will need to be activated before they become available on the publish environment.
 
 >[!NOTE]

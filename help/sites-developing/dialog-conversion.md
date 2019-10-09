@@ -5,7 +5,7 @@ description: The dialog conversion tool is provided to help you extend existing 
 seo-description: The dialog conversion tool is provided to help you extend existing components that only have a dialog defined for the classic UI
 uuid: 999aeef5-3351-48e3-a02e-c960fa58f775
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
@@ -116,7 +116,7 @@ The entry point for the conversion is the `DialogConversionServlet`, which is re
 
 The rewrite rules can be defined in two different ways, either as:
 
-* JCR node structures - [Node-Based Rewrite Rules](/help/sites-developing/dialog-conversion.md#node-based-rewrite-rules)  
+* JCR node structures - [Node-Based Rewrite Rules](/help/sites-developing/dialog-conversion.md#node-based-rewrite-rules)
 
 * Java classes implementing a specific interface - [Java-Based Rewrite Rules](/help/sites-developing/dialog-conversion.md#java-based-rewrite-rules)
 
@@ -176,27 +176,27 @@ For example, the following property `one` will be assigned the value of the prop
 
 Rules also support the following optional properties.
 
-* `cq:rewriteOptional` (boolean) 
+* `cq:rewriteOptional` (boolean)
 
   Set this property on a pattern node to indicate that the node doesn’t have to be present for the pattern to match
 
-* `cq:rewriteRanking` (integer) 
+* `cq:rewriteRanking` (integer)
 
   Set this property on the rule node to affect the order by which the rules are applied. This can be useful in ensuring that rules handling more specific structures aren’t overwritten by more general ones. Rules with a lower ranking take precedence over those with higher ranking. All rules by default receive `Integer.MAX_VALUE` as their ranking.
 
 The replacement tree also supports the following special properties (named beginning with `cq:rewrite`):
 
-* `cq:rewriteMapChildren` (string) 
+* `cq:rewriteMapChildren` (string)
 
   The node containing this property will receive a copy of the children of the node in the original tree referenced by the property value (e.g. `cq:rewriteMapChildren=./items`).
 
-* `cq:rewriteFinal` (boolean) 
+* `cq:rewriteFinal` (boolean)
 
   This is an optimization measure telling the algorithm that the node containing this property is final and doesn't have to be rechecked for matching rewrite rules. When placed on the replacement node itself, the whole replacement tree is considered final.
-* `cq:rewriteCommonAttrs` (boolean) 
+* `cq:rewriteCommonAttrs` (boolean)
 
   Set this property on the replacement node ( `rule`/ `replacement`) to map relevant properties of the original root node to Granite common attribute equivalents in the copy root. It will handle data attributes by copying/creating the `granite:data` subnode on the target and writing `data-*` properties there.
-* `cq:rewriteRenderCondition` (boolean) 
+* `cq:rewriteRenderCondition` (boolean)
 
   Set this property on the replacement node ( `rule`/ `replacement`) to copy any Granite render condition ( `rendercondition` or `granite:rendercondition`) child node from the original root node to a `granite:rendercondition` child of the copy root.
 
@@ -261,15 +261,15 @@ The following class shows an example of a custom rewrite rule implementing the `
 @Component
 @Service
 public class CustomDialogRewriteRule implements DialogRewriteRule {
- 
+
     public boolean matches(Node root) throws RepositoryException {
         // ...
     }
- 
+
     public Node applyTo(Node root, Set<Node> finalNodes) throws DialogRewriteException, RepositoryException {
         // ...
     }
- 
+
     int getRanking() {
         // ...
     }
@@ -290,11 +290,11 @@ public class CustomDialogRewriteRule extends AbstractDialogRewriteRule {
     public boolean matches(Node root) throws RepositoryException {
         // ...
     }
- 
+
     public Node applyTo(Node root, Set<Node> finalNodes) throws RewriteException, RepositoryException {
         // ...
     }
- 
+
 }
 ```
 
@@ -302,30 +302,30 @@ public class CustomDialogRewriteRule extends AbstractDialogRewriteRule {
 
 The `cq-dialog-conversion-content` package contains several predefined rewrite rules. For classic UI widgets see [Using xtypes](/help/sites-developing/xtypes.md) for more information).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Rule</strong></td> 
-   <td><strong>Legacy Component</strong></td> 
-   <td><strong>Granite UI / Coral 3 Replacement</strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>com.adobe.cq.dialogconversion.rules.CqDialogRewriteRule</code></td> 
-   <td>Node of type <code>cq:Dialog</code>, handles different substructures</td> 
-   <td><p>A <code>granite/ui/components/foundation/container</code> using either a <code>fixedcolumns</code> or <code>tabs</code> layout</p> <p>The actual components of the dialog are copied over and are rewritten in subsequent passes of the algorithm.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><code>com.adobe.cq.dialogconversion.rules.IncludeRule</code></td> 
-   <td>xtype = <code>cqinclude</code></td> 
-   <td>The referenced node is copied to the Granite UI / Coral 3 dialog and (possibly) subsequently rewritten by the algorithm.</td> 
-  </tr> 
-  <tr> 
-   <td><code>com.adobe.cq.dialogconversion.rules.MultifieldRewriteRule</code></td> 
-   <td>xtype = <code>multifield</code></td> 
-   <td><p>A <code>granite/ui/components/coral/foundation/form/multifield</code></p> <p>The <code>fieldConfig</code> child node (if any) is rewritten separately, thus not limiting the supported components.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><code>/libs/cq/dialogconversion/rules/classic</code></td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Rule</strong></td>
+   <td><strong>Legacy Component</strong></td>
+   <td><strong>Granite UI / Coral 3 Replacement</strong></td>
+  </tr>
+  <tr>
+   <td><code>com.adobe.cq.dialogconversion.rules.CqDialogRewriteRule</code></td>
+   <td>Node of type <code>cq:Dialog</code>, handles different substructures</td>
+   <td><p>A <code>granite/ui/components/foundation/container</code> using either a <code>fixedcolumns</code> or <code>tabs</code> layout</p> <p>The actual components of the dialog are copied over and are rewritten in subsequent passes of the algorithm.</p> </td>
+  </tr>
+  <tr>
+   <td><code>com.adobe.cq.dialogconversion.rules.IncludeRule</code></td>
+   <td>xtype = <code>cqinclude</code></td>
+   <td>The referenced node is copied to the Granite UI / Coral 3 dialog and (possibly) subsequently rewritten by the algorithm.</td>
+  </tr>
+  <tr>
+   <td><code>com.adobe.cq.dialogconversion.rules.MultifieldRewriteRule</code></td>
+   <td>xtype = <code>multifield</code></td>
+   <td><p>A <code>granite/ui/components/coral/foundation/form/multifield</code></p> <p>The <code>fieldConfig</code> child node (if any) is rewritten separately, thus not limiting the supported components.</p> </td>
+  </tr>
+  <tr>
+   <td><code>/libs/cq/dialogconversion/rules/classic</code></td>
    <td><code class="code">button
       checkbox
       colorfield
@@ -346,11 +346,11 @@ The `cq-dialog-conversion-content` package contains several predefined rewrite r
       tabpanel
       tags
       textarea
-      textfield</code></td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>/libs/cq/dialogconversion/rules/coral2</code></td> 
+      textfield</code></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>/libs/cq/dialogconversion/rules/coral2</code></td>
    <td><code class="code">actionfield
       autocomplete
       button
@@ -384,10 +384,10 @@ The `cq-dialog-conversion-content` package contains several predefined rewrite r
       textarea
       textfield
       userpicker
-      well</code></td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+      well</code></td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Sample Rewrite Rules {#sample-rewrite-rules}

@@ -1,22 +1,22 @@
 ---
-title: New features summary | AEM 6.4 Forms
-seo-title: New features summary | AEM 6.4 Forms
-description: Summary of new features and enhancements in AEM 6.4 Forms.
-seo-description: Summary of new features and enhancements in AEM 6.4 Forms.
+title: New features summary | AEM 6.5 Forms
+seo-title: New features summary | AEM 6.5 Forms
+description: Summary of new features and enhancements in AEM 6.5 Forms.
+seo-description: Summary of new features and enhancements in AEM 6.5 Forms.
 uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
 contentOwner: vishgupt
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 ---
 
-# New features summary | AEM 6.4 Forms {#new-features-summary-aem-forms}
+# New features summary | AEM 6.5 Forms {#new-features-summary-aem-forms}
 
-Summary of new features and enhancements in AEM 6.4 Forms.
+Summary of new features and enhancements in AEM 6.5 Forms.
 
 AEM Forms includes several new features and enhancements that further streamline creation, management, and user experiences with adaptive forms and interactive communications.
 
-Read on for quick introduction to new features and enhancements. Visit documentation for resources offering details. Also, see AEM 6.4 Forms [release notes](/help/release-notes/forms.md). For complete AEM 6.4 Forms documentation, visit [AEM 6.4 Forms User Guide](/help/forms/home.md).
+Read on for quick introduction to new features and enhancements. Visit documentation for resources offering details. Also, see AEM 6.5 Forms [release notes](/help/release-notes/forms.md). For complete AEM 6.5 Forms documentation, visit [AEM 6.5 Forms User Guide](/help/forms/home.md).
 
 ## Interactive Communications {#interactive-communications}
 
@@ -29,14 +29,14 @@ Interactive Communications uses the same underlying technology, processes, and c
 Interactive communication offers significant advantages:
 
 * Provides OOTB integration with Form Data Model to enable easy and streamlined access to back end databases and other CRM systems such as MS Dynamics
-* Provides an integrated authoring interface for print and web channels  
+* Provides an integrated authoring interface for print and web channels
 * Provides drag-and-drop based authoring interface, similar to Adaptive Forms authoring, for both print and web channels.
 
 Interactive communication is the default and recommended approach to create customer communications. To continue using the letters in AEM 6.3 Forms and AEM 6.2 Forms, you need to install a compatibility package.
 
 ### Multi-channel interactive communication authoring {#multi-channel-interactive-communication-authoring}
 
-Using interactive communication, you can author and edit both print and web documents from a single document editor. By utilizing the same document fragments to build renditions of both the channels, you can eliminate effort duplication. 
+Using interactive communication, you can author and edit both print and web documents from a single document editor. By utilizing the same document fragments to build renditions of both the channels, you can eliminate effort duplication.
     ![printweb_2](assets/printweb_2.png)
 
 For more information, see [Interactive Communications Overview](/help/forms/using/interactive-communications-overview.md).
@@ -73,7 +73,7 @@ For more information, see [Prepare and send Interactive Communication using the 
 
 ### Present information in charts {#present-information-in-charts}
 
-Interactive communication supports charts in web and the print channel for richer communications. Using charts such as pie, donut, bar, and column, you can condense and visually present large amounts of information for easy interpretation and analysis. 
+Interactive communication supports charts in web and the print channel for richer communications. Using charts such as pie, donut, bar, and column, you can condense and visually present large amounts of information for easy interpretation and analysis.
 
 ![chart-2](assets/chart-2.png) ![chart](assets/chart.png)
 
@@ -81,7 +81,7 @@ For more information, see [Using charts in Interactive Communications](/help/for
 
 ### Out-of-the-box data connectors to prefill documents {#out-of-the-box-data-connectors-to-prefill-documents}
 
-Interactive communication provides data integration with business tools to connect with multiple business systems including CRM Systems and personalize data into documents. 
+Interactive communication provides data integration with business tools to connect with multiple business systems including CRM Systems and personalize data into documents.
 
 ![fdm_ad](assets/fdm_ad.png)
 
@@ -91,7 +91,7 @@ For more information, see [Use form data model](/help/forms/using/using-form-dat
 
 You can now use FDM elements and rules within document fragments of interactive communication.
 
-* Support for form data model elements 
+* Support for form data model elements
 * Show or hide an asset/text fragment using rules
 * Validate value of an element/variable
 * Execute functions to compute value of a mathematical expression
@@ -147,7 +147,7 @@ With this release, the cloud services configuration for data sources is availabl
 
 ## Adaptive Forms {#adaptive-forms}
 
-![simplification-of-authoring-forms-and-documents_hero-image_2](assets/simplification-of-authoring-forms-and-documents_hero-image_2.png) 
+![simplification-of-authoring-forms-and-documents_hero-image_2](assets/simplification-of-authoring-forms-and-documents_hero-image_2.png)
 
 ### Improve performance of adaptive forms with enhanced lazy loading {#improve-performance-of-adaptive-forms-with-enhanced-lazy-loading}
 
@@ -188,125 +188,125 @@ Following are the improvements in AEM Forms app:
 
 Using document security, you can safely distribute any information that you have saved in a supported format. Document security ensures that only authorized users can use your documents. The following are the major changes in document security:
 
-* Document security provides a [Portable Protection Library (PPL)](/help/forms/using/document-security-offerings.md) to protect a document locally, without sending the document to AEM Forms server. Only security credentials and policy details travel over the network to AEM Forms server. AEM 6.4 Forms has introduced Portable Protection Library (PPL) in an OSGi bundle format. Now, you can directly install the PPL library on an AEM Forms server and use the capabilities of AEM and PPL in conjunction with each other.
+* Document security provides a [Portable Protection Library (PPL)](/help/forms/using/document-security-offerings.md) to protect a document locally, without sending the document to AEM Forms server. Only security credentials and policy details travel over the network to AEM Forms server. AEM 6.5 Forms has introduced Portable Protection Library (PPL) in an OSGi bundle format. Now, you can directly install the PPL library on an AEM Forms server and use the capabilities of AEM and PPL in conjunction with each other.
 * Document security C++ SDK and C++ PPL library can be compiled with Microsoft Visual Studio 2013. The previously supported version was Microsoft Visual Studio 2010.
 
 ## Supported Platforms {#supported-platforms}
 
 AEM Forms can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers. The following are the major changes in supported platforms:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Component</td> 
-   <td>Support Added</td> 
-   <td>Support Removed</td> 
-  </tr> 
-  <tr> 
-   <td>Operating systems</td> 
-   <td> 
-    <ul> 
-     <li>Microsoft Windows Server 2016</li> 
-     <li>Oracle Linux 7 Update 3</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>IBM AIX 7.2 <sup>[1]</sup><br /> </li> 
-     <li>Solaris 11 <sup>[1]</sup></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Application servers<br /> </td> 
-   <td> 
-    <ul> 
-     <li>Red Hat JBoss EAP 7</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>IBM Weblogic 12.1.3</li> 
-     <li>IBM WebSphere 8.5.5</li> 
-     <li>Red Hat JBoss EAP 6</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Databases</td> 
-   <td> 
-    <ul> 
-     <li>Microsoft SQL Server 2016</li> 
-     <li>MySQL 5.7.19 and later</li> 
-     <li>IBM DB2 11.1</li> 
-     <li>Oracle Multitenant architecture</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Microsoft SQL Server 2012<br /> </li> 
-     <li>Microsoft SQL Server 2014</li> 
-     <li>MySQL 5.5</li> 
-     <li>IBM DB2 10.5<br /> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>LDAP servers</td> 
-   <td> 
-    <ul> 
-     <li>Microsoft Active Directory 2016</li> 
-     <li>IBM Tivoli Directory Server 6.4</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Microsoft Active Directory 2008</li> 
-     <li>IBM Tivoli Directory Server 6.3</li> 
-     <li>Oracle Directory Server Enterprise Edition 7.0</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Email servers</td> 
-   <td> 
-    <ul> 
-     <li>Microsoft Office 365</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Novell Groupwise 7</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Connectors</td> 
-   <td> 
-    <ul> 
-     <li>Connector for Microsoft Sharepoint 2016</li> 
-     <li>Connector for EMC Documentum 7.3</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Connector for Microsoft Sharepoint 2007</li> 
-     <li>Connector for Microsoft Sharepoint 2010</li> 
-     <li>Connector for IBM Filenet 5.0</li> 
-     <li>Connector for EMC Documentum 6.7</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Browsers</td> 
-   <td> 
-    <ul> 
-     <li>Apple Safari 11.x on macOS</li> 
-     <li>Apple Safari 11.x on iOS</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Blackberry browser for Blackberry Z30 and Q10 devices</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>AEM Forms app<br /> </td> 
-   <td> 
-    <ul> 
-     <li>Android 4.4 or higher</li> 
-     <li>Apple iOS 10 or higher</li> 
-    </ul> </td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Component</td>
+   <td>Support Added</td>
+   <td>Support Removed</td>
+  </tr>
+  <tr>
+   <td>Operating systems</td>
+   <td>
+    <ul>
+     <li>Microsoft Windows Server 2016</li>
+     <li>Oracle Linux 7 Update 3</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>IBM AIX 7.2 <sup>[1]</sup><br /> </li>
+     <li>Solaris 11 <sup>[1]</sup></li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Application servers<br /> </td>
+   <td>
+    <ul>
+     <li>Red Hat JBoss EAP 7</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>IBM Weblogic 12.1.3</li>
+     <li>IBM WebSphere 8.5.5</li>
+     <li>Red Hat JBoss EAP 6</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Databases</td>
+   <td>
+    <ul>
+     <li>Microsoft SQL Server 2016</li>
+     <li>MySQL 5.7.19 and later</li>
+     <li>IBM DB2 11.1</li>
+     <li>Oracle Multitenant architecture</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Microsoft SQL Server 2012<br /> </li>
+     <li>Microsoft SQL Server 2014</li>
+     <li>MySQL 5.5</li>
+     <li>IBM DB2 10.5<br /> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>LDAP servers</td>
+   <td>
+    <ul>
+     <li>Microsoft Active Directory 2016</li>
+     <li>IBM Tivoli Directory Server 6.4</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Microsoft Active Directory 2008</li>
+     <li>IBM Tivoli Directory Server 6.3</li>
+     <li>Oracle Directory Server Enterprise Edition 7.0</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Email servers</td>
+   <td>
+    <ul>
+     <li>Microsoft Office 365</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Novell Groupwise 7</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Connectors</td>
+   <td>
+    <ul>
+     <li>Connector for Microsoft Sharepoint 2016</li>
+     <li>Connector for EMC Documentum 7.3</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Connector for Microsoft Sharepoint 2007</li>
+     <li>Connector for Microsoft Sharepoint 2010</li>
+     <li>Connector for IBM Filenet 5.0</li>
+     <li>Connector for EMC Documentum 6.7</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Browsers</td>
+   <td>
+    <ul>
+     <li>Apple Safari 11.x on macOS</li>
+     <li>Apple Safari 11.x on iOS</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Blackberry browser for Blackberry Z30 and Q10 devices</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>AEM Forms app<br /> </td>
+   <td>
+    <ul>
+     <li>Android 4.4 or higher</li>
+     <li>Apple iOS 10 or higher</li>
+    </ul> </td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 1. AIX and Solaris operating systems are available only for upgrade customers.

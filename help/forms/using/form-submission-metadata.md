@@ -1,10 +1,10 @@
 ---
 title: Adding information from user data to form submission metadata
 seo-title: Adding information from user data to form submission metadata
-description: Learn how to add information to metadata of a submitted form with user provided data. 
-seo-description: Learn how to add information to metadata of a submitted form with user provided data. 
+description: Learn how to add information to metadata of a submitted form with user provided data.
+seo-description: Learn how to add information to metadata of a submitted form with user provided data.
 uuid: b33ad1c8-d6c9-421d-8a3a-a29d17acfb18
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
 ---
@@ -26,7 +26,7 @@ Perform the following steps to add an element in the metadata:
 1. Open your adaptive form in edit mode.
 
    To open your form in edit mode, in the forms manager, select your form and tap **Open**.
-   
+
 1. In the edit mode, select a component, tap ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
 1. In the sidebar, click **Metadata**.
 1. In the Metadata section, click **Add**.

@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 ---
 
@@ -17,7 +17,7 @@ When a business user or an agent saves a correspondence as draft or submits it, 
 
 >[!NOTE]
 >
->In AEM 6.4 Forms, correspondence management is not available out of the box. If you are upgrading from a previous AEM Forms version, install the compatibility package and migrate your correspondence management assets to continue to use them in AEM 6.4 Forms. For more information, see [Compatibility package](/help/forms/using/compatibility-package.md).
+>In AEM 6.5 Forms, correspondence management is not available out of the box. If you are upgrading from a previous AEM Forms version, install the compatibility package and migrate your correspondence management assets to continue to use them in AEM 6.5 Forms. For more information, see [Compatibility package](/help/forms/using/compatibility-package.md).
 
 ## User data and data stores {#data}
 
@@ -25,22 +25,22 @@ Correspondence management stores data for draft and submitted letters in AEM rep
 
 Depending on the data store persistence configured for your AEM deployment, drafts and submitted correspondence data is stored at the following locations.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td><p><strong>Persistence type</strong></p> </td> 
-   <td><p><strong>Data store</strong></p> </td> 
-   <td><p><strong>Location</strong></p> </td> 
+   <td><p><strong>Persistence type</strong></p> </td>
+   <td><p><strong>Data store</strong></p> </td>
+   <td><p><strong>Location</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Default</p> </td> 
-   <td><p>AEM repository of publish instance and author instances specified in reverse replication configuration</p> </td> 
-   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code><br /> </p> </td> 
+   <td><p>Default</p> </td>
+   <td><p>AEM repository of publish instance and author instances specified in reverse replication configuration</p> </td>
+   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code><br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Remote</p> </td> 
-   <td><p>AEM repository of the remote processing author instance</p> </td> 
-   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code></p> </td> 
+   <td><p>Remote</p> </td>
+   <td><p>AEM repository of the remote processing author instance</p> </td>
+   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code></p> </td>
   </tr>
  </tbody>
 </table>

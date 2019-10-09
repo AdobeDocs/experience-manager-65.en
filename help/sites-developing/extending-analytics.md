@@ -5,7 +5,7 @@ description: AEM Analytics allows you to track user interaction on your website
 seo-description: AEM Analytics allows you to track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
@@ -21,7 +21,7 @@ AEM Analytics allows you to track user interaction on your website. As a develop
 
 >[!NOTE]
 >
->This information is basically generic, but it uses [Adobe Analytics](/help/sites-administering/adobeanalytics.md) for specific examples.  
+>This information is basically generic, but it uses [Adobe Analytics](/help/sites-administering/adobeanalytics.md) for specific examples.
 >
 >For general information on developing components and dialog boxes, see [Developing Components](/help/sites-developing/components.md).
 
@@ -42,9 +42,9 @@ You can pass any number of key-value pairs as the second parameter, which is cal
 An example might look like:
 
 ```xml
-<span data-tracking="{event:'blogEntryView', 
+<span data-tracking="{event:'blogEntryView',
                                 values:{
-                                   'blogEntryContentType': 'blog', 
+                                   'blogEntryContentType': 'blog',
                                    'blogEntryUniqueID': '<%= xssAPI.encodeForJSString(entry.getId()) %>',
                                    'blogEntryTitle': '<%= xssAPI.encodeForJSString(entry.getTitle()) %>',
                                    'blogEntryAuthor':'<%= xssAPI.encodeForJSString(entry.getAuthor()) %>',
@@ -64,7 +64,7 @@ To track events that occur after a page is loaded (such as user interactions), u
 
 Where
 
-* `events` is either a string or a string array (for multiple events).  
+* `events` is either a string or a string array (for multiple events).
 
 * `values` contains all of the values to be tracked
 * `collect` is optional and will return an array containg the event and data object.

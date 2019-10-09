@@ -5,7 +5,7 @@ description: Assets provides for centralized video asset management where you ca
 seo-description: Assets provides for centralized video asset management where you can upload videos directly to Assets for auto-encoding to Scene7 and access Scene7 videos directly from Assets for page authoring.
 uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
@@ -78,7 +78,7 @@ If you do not need a workflow or versioning for your assets, you should upload y
 
    >[!NOTE]
    >
-   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html). 
+   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
    >
    >Adobe recommends that you select either both adaptive video sets when configuring the universal presets or select the **[!UICONTROL Adaptive Video Encoding]** option.
 
@@ -88,7 +88,7 @@ If you do not need a workflow or versioning for your assets, you should upload y
 
 If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Dynamic Media Classic, navigate to the Dynamic Media Classic configuration in the cloud configuration and click **Update the viewer and encoding presets**.
 
-![chlimage_1-131](assets/chlimage_1-131.png) 
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 ### Uploading your master video {#uploading-your-master-video}
 
@@ -115,7 +115,7 @@ The following matrix explains when you should use which component:
 
 >[!NOTE]
 >
->Out of the box, the Dynamic Media Classic video component uses the universal video profile. You can however obtain the HTML5-based video player for use by AEM. In Dynamic Media Classic, copy the embed code of the out-of-box HTML5 video player and put it in your AEM page. 
+>Out of the box, the Dynamic Media Classic video component uses the universal video profile. You can however obtain the HTML5-based video player for use by AEM. In Dynamic Media Classic, copy the embed code of the out-of-box HTML5 video player and put it in your AEM page.
 >
 
 ## AEM Video Component {#aem-video-component}
@@ -144,14 +144,14 @@ The various video encodings are created according to the Dynamic Media Classic e
 >
 >New video profiles and changes to them must be activated to publish.
 
-1. In AEM, go to **[!UICONTROL Tools]**, then select **[!UICONTROL Configuration Console]**. In the Configuration Console navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]** in the navigation tree. 
+1. In AEM, go to **[!UICONTROL Tools]**, then select **[!UICONTROL Configuration Console]**. In the Configuration Console navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]** in the navigation tree.
 1. Create a new Dynamic Media Classic Video Profile. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Edit the new video profile. Select the cloud config first. Then select the same encoding preset as selected in the cloud config.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png) 
+   ![chlimage_1-134](assets/chlimage_1-134.png)
 
    | Property |Description |
    |---|---|
@@ -178,7 +178,7 @@ The foundation video component must know about what video profiles to use in ord
 
 #### Checklist {#checklist}
 
-1. Create a Dynamic Media Classic (Scene7) cloud config. Make sure the video encoding presets are set and the importer is running. 
+1. Create a Dynamic Media Classic (Scene7) cloud config. Make sure the video encoding presets are set and the importer is running.
 1. Create a Dynamic Media Classic video profile for each video encoding preset selected in the cloud config.
 1. The video profiles must be activated.
 1. Configure the design of the foundation video component on your page.

@@ -2,16 +2,16 @@
 cloud: experience-cloud
 product: Adobe Experience Manager
 audience: end-user
-user-guide-title: AEM 6.4 Communities User Guide
+user-guide-title: AEM 6.5 Communities User Guide
 ---
 
-# AEM 6.4 Communities User Guide {#communities}
+# AEM 6.5 Communities User Guide {#communities}
 
 + [Communities User Guide overview](home.md)
 + Introduction to AEM Communities {#introduction}
   + [Communities Sites](administer-landing.md)
   + [AEM Communities Overview](overview.md)
-  + [What's New in AEM 6.4 Communities](whats-new-aem-communities.md)
+  + [What's New in AEM 6.5 Communities](whats-new-aem-communities.md)
   + [AEM Communities Release Notes](/help/release-notes/communities-release-notes.md)
   + [Getting Started with AEM Communities](getting-started.md)
   + [Getting Started with AEM Communities for Enablement](getting-started-enablement.md)
@@ -25,7 +25,7 @@ user-guide-title: AEM 6.4 Communities User Guide
   + [Experience the Published Enablement Site](enablement-published-site.md)
 + Deploying {#deploy}
   + [Deploying Communities](deploy-communities.md)
-  + [Upgrading to AEM 6.4 Communities](upgrade.md)
+  + [Upgrading to AEM 6.5 Communities](upgrade.md)
   + [Recommended Topologies for Communities](topologies.md)
   + [Configuring Dispatcher for Communities](dispatcher.md)
 + Administering {#administer}

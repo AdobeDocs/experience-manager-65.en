@@ -5,7 +5,7 @@ description: Access an external SQL database to so that your AEM applications ca
 seo-description: Access an external SQL database to so that your AEM applications can interact with the data
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
@@ -37,11 +37,11 @@ Knowledge of the source code enables you to decide which solution to use. You ca
 ### POM that bundles hsqldb.jar {#pom-that-bundles-hsqldb-jar}
 
 ```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0" 
-  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <groupId>com.adobe.example.myapp</groupId>
   <artifactId>hsqldb-jdbc-driver-bundle</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -55,16 +55,16 @@ Knowledge of the source code enables you to decide which solution to use. You ca
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.felix</groupId> 
+        <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-        <version>1.4.3</version> 
-        <extensions>true</extensions> 
-        <configuration> 
-         <instructions> 
+        <version>1.4.3</version>
+        <extensions>true</extensions>
+        <configuration>
+         <instructions>
             <Embed-Dependency>*</Embed-Dependency>
             <_exportcontents>org.hsqldb.*</_exportcontents>
           </instructions>
-        </configuration> 
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -117,7 +117,7 @@ The following properties are available to configure a pooled connection service.
 
 The JDBC Connections Pool service is a factory. Therefore, if you use a `sling:OsgiConfig` node to configure the connection service, the name of the node must include the factory service PID followed by *`-alias`*. The alias that you use must be unique for all configuration nodess for that PID. An example node name is `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
-![chlimage_1-7](assets/chlimage_1-7.png) 
+![chlimage_1-7](assets/chlimage_1-7.png)
 
 ### Connecting to the Database {#connecting-to-the-database}
 
@@ -141,22 +141,22 @@ The following example JSP code obtains an instance of the hsqldbds data source, 
 <body>
 <%DataSourcePool dspService = sling.getService(DataSourcePool.class);
   try {
-     DataSource ds = (DataSource) dspService.getDataSource("hsqldbds"); 
+     DataSource ds = (DataSource) dspService.getDataSource("hsqldbds");
      if(ds != null) {
          %><p>Obtained the datasource!</p><%
          %><%final Connection connection = ds.getConnection();
           final Statement statement = connection.createStatement();
-          final ResultSet resultSet = statement.executeQuery("SELECT * from INFORMATION_SCHEMA.SYSTEM_USERS"); 
+          final ResultSet resultSet = statement.executeQuery("SELECT * from INFORMATION_SCHEMA.SYSTEM_USERS");
           int r=0;
           while(resultSet.next()){
              r=r+1;
-          } 
+          }
           resultSet.close();
           %><p>Number of results: <%=r%></p><%
-      } 
+      }
    }catch (Exception e) {
         %><p>error! <%=e.getMessage()%></p><%
-    } 
+    }
 %></body>
 </html>
 ```

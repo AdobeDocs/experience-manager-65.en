@@ -5,7 +5,7 @@ description: You can programmatically modify nodes and properties located within
 seo-description: You can programmatically modify nodes and properties located within the AEM repository, which is part of the Adobe Marketing Cloud
 uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
@@ -66,7 +66,7 @@ Node root = session.getRootNode();
 Once you create a `Node`instance, you can perform tasks such as creating another node and adding a value to it. For example, the following code creates two nodes and adds a value to the second node.
 
 ```java
-// Store content 
+// Store content
 Node day = adobe.addNode("day");
 day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suite!");
 ```
@@ -92,48 +92,48 @@ The following Java code example represents a Java class that connects to Adobe C
  * This Java Quick Start uses the jackrabbit-standalone-2.4.0.jar
  * file. See the previous section for the location of this JAR file
  */
- 
-import javax.jcr.Repository; 
-import javax.jcr.Session; 
-import javax.jcr.SimpleCredentials; 
-import javax.jcr.Node; 
- 
+
+import javax.jcr.Repository;
+import javax.jcr.Session;
+import javax.jcr.SimpleCredentials;
+import javax.jcr.Node;
+
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.jackrabbit.core.TransientRepository;
 
 public class GetRepository {
 
-public static void main(String[] args) throws Exception { 
- 
-try { 
- 
-    //Create a connection to the CQ repository running on local host 
+public static void main(String[] args) throws Exception {
+
+try {
+
+    //Create a connection to the CQ repository running on local host
     Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server");
-   
+
    //Create a Session
-   javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "admin".toCharArray())); 
- 
+   javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "admin".toCharArray()));
+
   //Create a node that represents the root node
-  Node root = session.getRootNode(); 
- 
-  // Store content 
-  Node adobe = root.addNode("adobe"); 
-  Node day = adobe.addNode("day"); 
+  Node root = session.getRootNode();
+
+  // Store content
+  Node adobe = root.addNode("adobe");
+  Node day = adobe.addNode("day");
   day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suite!");
 
-  // Retrieve content 
-  Node node = root.getNode("adobe/day"); 
-  System.out.println(node.getPath()); 
-  System.out.println(node.getProperty("message").getString()); 
- 
+  // Retrieve content
+  Node node = root.getNode("adobe/day");
+  System.out.println(node.getPath());
+  System.out.println(node.getProperty("message").getString());
+
   // Save the session changes and log out
-  session.save(); 
+  session.save();
   session.logout();
   }
  catch(Exception e){
   e.printStackTrace();
   }
- } 
+ }
 }
 ```
 

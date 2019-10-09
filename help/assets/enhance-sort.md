@@ -5,7 +5,7 @@ description: Learn how AEM Assets deploys server-side sorting to sort folder ass
 seo-description: Learn how AEM Assets deploys server-side sorting to sort folder assets or a search query at one go instead of sorting them in batches on the client side.
 uuid: 94e9dae6-dfba-4fda-b70a-039afefd2fa9
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 5a854b34-49d4-4a1d-b6b7-cdada342a2a4
@@ -81,7 +81,7 @@ AEM Assets lets you chronologically sort timeline entries, such as annotations, 
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. In the timeline, select an entry from the list. For example, select **[!UICONTROL Comments]** to display the list of annotations associated with the asset. 
+1. In the timeline, select an entry from the list. For example, select **[!UICONTROL Comments]** to display the list of annotations associated with the asset.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 

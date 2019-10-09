@@ -5,7 +5,7 @@ description: The authoring environment of AEM provides various mechanisms for or
 seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 uuid: 2fe17bbf-f431-49bc-9d27-7a95f1f76252
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
@@ -21,7 +21,7 @@ The **Sites** console allows you to navigate and manage your website, using the 
 
 For example, card view:
 
-![chlimage_1-290](assets/chlimage_1-290.png) 
+![chlimage_1-290](assets/chlimage_1-290.png)
 
 ## Editing Page Content {#editing-page-content}
 
@@ -132,7 +132,7 @@ From the top toolbar of the assets browser you can filter the assets by:
 
 * Name
 * Path
-* Asset type such as images, manuscripts, documents, videos, pages, paragraphs, and products  
+* Asset type such as images, manuscripts, documents, videos, pages, paragraphs, and products
 * Asset characteristics such as Orientation (Portrait, Landscape, Square) and Style (Color, Monochrome, Grayscale)
 
     * Available only for certain asset types
@@ -161,7 +161,7 @@ The actual appearance and handling is dependent on the device type you are using
 
 If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/managing-assets-touch-ui.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png) 
+![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Content Tree {#content-tree}
 
@@ -220,7 +220,7 @@ Open the required console, then navigate to the required resource and open **Ref
 
 Select the appropriate reference type for more information. In certain situations further actions are available when you select a specific reference, including:
 
-* Instances of the Reference component (e.g. navigate to referencing/referenced page)  
+* Instances of the Reference component (e.g. navigate to referencing/referenced page)
 * [References to Product pages](/help/sites-administering/generic.md#showing-product-references) (available from the Commerce-Products console)
 * [Launches](/help/sites-authoring/launches.md)
 * [Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.
@@ -229,7 +229,7 @@ Select the appropriate reference type for more information. In certain situation
 
 For example, you can fix a broken reference within a Reference component:
 
-![chlimage_1-292](assets/chlimage_1-292.png) 
+![chlimage_1-292](assets/chlimage_1-292.png)
 
 ## Events - Timeline {#events-timeline}
 
@@ -241,7 +241,7 @@ Open the required console, then navigate to the required resource and open **Tim
 
 [Select your required resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), then either **Show All** or **Activities** to list any recent actions on the selected resources:
 
-![screen_shot_2018-03-22at154130](assets/screen_shot_2018-03-22at154130.png) 
+![screen_shot_2018-03-22at154130](assets/screen_shot_2018-03-22at154130.png)
 
 ## Page Information {#page-information}
 
@@ -273,19 +273,19 @@ In addition, **Page Information** can provide access to analytics and recommenda
 There are various modes when editing a page allowing for different actions:
 
 * [Edit](/help/sites-authoring/editing-content.md) - the mode to use when editing the page content.
-* [Layout](/help/sites-authoring/responsive-layout.md) - allows you to create and edit your responsive layout dependent on device (if the page is based on a layout container)  
+* [Layout](/help/sites-authoring/responsive-layout.md) - allows you to create and edit your responsive layout dependent on device (if the page is based on a layout container)
 
 * [Scaffolding](/help/sites-authoring/scaffolding.md) - help you to create a large set of pages that share the same structure but have differing content.
-* [Developer](/help/sites-developing/developer-mode.md) - allows you to perform various actions (requires privileges). These include inspecting the technical details of a page and its components.  
+* [Developer](/help/sites-developing/developer-mode.md) - allows you to perform various actions (requires privileges). These include inspecting the technical details of a page and its components.
 
 * [Design](/help/sites-authoring/default-components-designmode.md) - allows you to enable/disable components for use on a page and to configure the design of the component (if the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Targeting](/help/sites-authoring/content-targeting-touch.md) - increase content relevance through targeting and measuring across all channels.
-* [Activity Map](/help/sites-authoring/pa-using.md) - shows Analytics data for the page.  
+* [Activity Map](/help/sites-authoring/pa-using.md) - shows Analytics data for the page.
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - allows you to view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-authoring/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
-* [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - used to view the page as it will be shown on the publish environment; or to navigate using links in the content.  
+* [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - used to view the page as it will be shown on the publish environment; or to navigate using links in the content.
 
 * [Annotate](/help/sites-authoring/annotations.md) - used to add or view annotations on the page.
 
@@ -315,7 +315,7 @@ Path fields have auto-complete and look-ahead funtionality now to make locating 
 
 Clicking the **Open Selection Dialog** button in the path field opens the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) dialog to allow for more detailed selection options.
 
-![](do-not-localize/screen_shot_2018-03-22at154427.png) 
+![](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 ### Path Browser {#path-browser}
 
@@ -341,7 +341,7 @@ Click the X in the search field to clear the search.
 
 To narrow your search, you can reveal the filter options and filter your results based on a certain path.
 
-![chlimage_1-297](assets/chlimage_1-297.png) 
+![chlimage_1-297](assets/chlimage_1-297.png)
 
 ## Keyboard Shortcuts {#keyboard-shortcuts}
 

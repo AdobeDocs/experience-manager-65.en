@@ -5,7 +5,7 @@ description: Learn how to use Dynamic Media to deliver assets for consumption on
 seo-description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
@@ -32,7 +32,7 @@ Dynamic-Media-only features include the following:
 * [Interactive Images](interactive-images.md)
 * [Interactive Videos](interactive-videos.md)
 * [Mixed Media Sets](mixed-media-sets.md)
-* [Panoramic Images](panoramic-images.md)  
+* [Panoramic Images](panoramic-images.md)
 
 * [Spin Sets](spin-sets.md)
 * [Video](video.md)
@@ -60,19 +60,19 @@ When you click an image asset, the view of the asset is different with Dynamic M
 
 Dynamic renditions such as image and viewer presets (under **[!UICONTROL Dynamic]**) are available when Dynamic Media is enabled.
 
-![chlimage_1-358](assets/chlimage_1-358.png) 
+![chlimage_1-358](assets/chlimage_1-358.png)
 
 ### Image sets, spins sets, mixed media sets {#image-sets-spins-sets-mixed-media-sets}
 
 Image sets, spin sets, and mixed media sets are available if Dynamic Media is enabled.
 
-![chlimage_1-359](assets/chlimage_1-359.png) 
+![chlimage_1-359](assets/chlimage_1-359.png)
 
 ### PTIFF renditions {#ptiff-renditions}
 
 Dynamic media enabled assets include `pyramid.tiffs`.
 
-![chlimage_1-360](assets/chlimage_1-360.png) 
+![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### Asset views change {#asset-views-change}
 

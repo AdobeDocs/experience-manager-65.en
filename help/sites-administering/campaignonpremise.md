@@ -5,7 +5,7 @@ description: Learn how to integrate AEM with Adobe Campaign Classic
 seo-description: Learn how to integrate AEM with Adobe Campaign Classic
 uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
@@ -262,7 +262,7 @@ See [Configure the externalizer](/help/sites-developing/externalizer.md) for gen
 
 If it points to `localhost:4503` or another server that Adobe Campaign cannot reach, your images will not appear on the Adobe Campaign console.
 
-![chlimage_1-143](assets/chlimage_1-143.png) 
+![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## Advanced Configurations {#advanced-configurations}
 
@@ -313,7 +313,7 @@ To add a **Registration Number** field, you must have the following elements:
 ```xml
 <element desc="Recipient table (profiles)" img="nms:recipient.png" label="Recipients" labelSingular="Recipient" name="recipient">
 
-  <attribute dataPolicy="smartCase" desc="Recipient registration number" 
+  <attribute dataPolicy="smartCase" desc="Recipient registration number"
   label="Registration Number"
   length="50" name="registrationNumber" type="string"/>
 
@@ -326,7 +326,7 @@ The **nms:seedMember** schema extension named **cus:seedMember** contains:
 <element desc="Seed to insert in the export files" img="nms:unknownad.png" label="Seed addresses" labelSingular="Seed" name="seedMember">
 
   <element name="custom_nms_recipient">
-    <attribute name="registrationNumber" 
+    <attribute name="registrationNumber"
     template="cus:recipient:recipient/@registrationNumber"/>
   </element>
 
@@ -335,7 +335,7 @@ The **nms:seedMember** schema extension named **cus:seedMember** contains:
 
 The **Registration Number** field is now part of the available personalization fields:
 
-![chlimage_1-146](assets/chlimage_1-146.png) 
+![chlimage_1-146](assets/chlimage_1-146.png)
 
 #### Hiding a personalization field {#hiding-a-personalization-field}
 
@@ -348,11 +348,11 @@ To hide a personalization field among those that are already available, you must
 
    ```xml
    <element desc="Seed to insert in the export files" img="nms:unknownad.png" label="Seed addresses" labelSingular="Seed" name="seedMember">
-   
+
      <element name="custom_nms_recipient">
        <attribute advanced="true" name="middleName"/>
      </element>
-   
+
    </element>
    ```
 

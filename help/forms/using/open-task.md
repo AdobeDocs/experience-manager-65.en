@@ -5,7 +5,7 @@ description: Steps to open a task on your AEM Forms app.
 seo-description: Steps to open a task on your AEM Forms app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 ---
@@ -22,7 +22,7 @@ Other forms are saved as draft in the Drafts tab. See [Saving a draft](/help/for
 
    When you select a task, the description of the task, as set in Workbench, is displayed below the task name. After the description the user action / actions associated with the task is displayed.
 
-    * If a task has actions associated with it, tapping the horizontal ellipsis next to the task on your home screen displays the actions. 
+    * If a task has actions associated with it, tapping the horizontal ellipsis next to the task on your home screen displays the actions.
     * If the process designer does not associate any action with a task, the default action associated with the task is Complete.
 
 1. Tap the task to open it.
@@ -35,7 +35,7 @@ Other forms are saved as draft in the Drafts tab. See [Saving a draft](/help/for
 
    When you select an application, the description of the application, is displayed below the application name. After the description the user action / actions associated with the application are displayed.
 
-    * If an application has actions associated with it, tapping the horizontal ellipsis next to the application on your home screen displays the actions. 
+    * If an application has actions associated with it, tapping the horizontal ellipsis next to the application on your home screen displays the actions.
     * If the workflow model of application does not associate any action with the application, the default action associated with the application are displayed.
 
 1. Tap the task to open it.

@@ -1,11 +1,11 @@
 ---
 title: AEM with MongoDB
 seo-title: AEM with MongoDB
-description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment. 
-seo-description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment. 
+description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment.
+seo-description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment.
 uuid: 51c463aa-d467-4857-8fff-e5f81d694145
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 3c59ec8f-b72f-48dd-bac8-9817005ae210
@@ -156,13 +156,13 @@ Below is an example of Document Node Store configuration for a minimal MongoDB d
 # org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config
 #MongoDB server details
 mongodburi=mongodb://aem:aempassword@mongodbserver1.customer.com:27000,mongodbserver2.customer.com:27000
-  
+
 #Name of MongoDB database to use
 db=aem
-  
+
 #Store binaries in custom BlobStore e.g. FileDataStore
 customBlobStore=true
-  
+
 cache=2048
 blobCacheSize=1024
 ```
@@ -575,9 +575,9 @@ The desired output should be 12 megabytes per second and reaching around 3000 IO
 If you are using WMWare ESX to manage and deploy your virtualized environments, make sure you perform the following settings from the ESX console in order to accommodate MongoDB operation:
 
 1. Turn off memory ballooning
-1. Pre-allocate and reserve memory for the virtual machines that will host the MongoDB databases  
+1. Pre-allocate and reserve memory for the virtual machines that will host the MongoDB databases
 1. Use Storage I/O Control to allocate sufficient I/O to the `mongod` process.
-1. Guarantee CPU resources of the machines hosting MongoDB by setting [CPU Reservation](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html)  
+1. Guarantee CPU resources of the machines hosting MongoDB by setting [CPU Reservation](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html)
 
 1. Consider using ParaVirtual I/O drivers. For more information on how to do this, check this [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).
 

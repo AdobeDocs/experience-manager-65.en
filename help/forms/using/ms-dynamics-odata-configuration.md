@@ -5,7 +5,7 @@ description: Leverage, integrate, and work with online and on-premises Microsoft
 seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
 uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
 ---
 
@@ -34,7 +34,7 @@ The OData Cloud Service and form data model with preconfigured Microsoft Dynamic
 
 Before you begin to set up and configure Microsoft Dynamics, ensure that you have:
 
-* Installed the [AEM 6.4 Forms add-on package](https://helpx.adobe.com//experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)
+* Installed the [AEM 6.5 Forms add-on package](https://helpx.adobe.com//experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)
 * Configured Microsoft Dynamics 365 online or installed an instance of one of the following Microsoft Dynamics versions:
 
     * Microsoft Dynamics 365 on-premises
@@ -66,13 +66,13 @@ Microsoft Dynamics uses claims-based authentication to provide access to data on
 >
 >Use this procedure only while integrating AEM Forms with on-premises Microsoft Dynamics server.
 
-1. Configure Microsoft Dynamics on-premises instance for IFD as described in [Configure IFD for Microsoft Dynamics](https://technet.microsoft.com/en-us/library/dn609803.aspx). 
+1. Configure Microsoft Dynamics on-premises instance for IFD as described in [Configure IFD for Microsoft Dynamics](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. Run the following commands using Windows PowerShell to configure claim settings on IFD-enabled Microsoft Dynamics:
 
    ```
-   Add-PSSnapin Microsoft.Crm.PowerShell 
-    $ClaimsSettings = Get-CrmSetting -SettingType OAuthClaimsSettings 
-    $ClaimsSettings.Enabled = $true 
+   Add-PSSnapin Microsoft.Crm.PowerShell
+    $ClaimsSettings = Get-CrmSetting -SettingType OAuthClaimsSettings
+    $ClaimsSettings.Enabled = $true
     Set-CrmSetting -Setting $ClaimsSettings
    ```
 
@@ -95,7 +95,7 @@ Do the following to register an OAuth client on Active Directory Federation Serv
     * `Client-ID` is a client ID you can generate using any GUID generator.
     * `redirect-uri` is the URL to the Microsoft Dynamics OData cloud service on AEM Forms. The default cloud service installed with the AEM Forms package is deployed at the following URL:
 
-      ``` 
+      ```
       http://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
       ```
 
@@ -119,7 +119,7 @@ The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with
    In the **[!UICONTROL Authentication Settings]** tab:
 
     1. Enter the value for the **[!UICONTROL Service Root]** field. Go to the Dynamics instance and navigate to **[!UICONTROL Developer Resources]** to view the value for the Service Root field. For example, https://&lt;tenant-name&gt;/api/data/v9.1/
-    1. Replace the default values in the **[!UICONTROL Client Id]** (also referred to as **[!UICONTROL Application ID]**), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]**, and **[!UICONTROL Resource]** fields with values from your Microsoft Dynamics service configuration. It is mandatory to specify the dynamics instance URL in the **[!UICONTROL Resource]** field to configure Microsoft Dynamics with a form data model. Use the Service Root URL to derive the dynamics instance URL. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/). 
+    1. Replace the default values in the **[!UICONTROL Client Id]** (also referred to as **[!UICONTROL Application ID]**), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]**, and **[!UICONTROL Resource]** fields with values from your Microsoft Dynamics service configuration. It is mandatory to specify the dynamics instance URL in the **[!UICONTROL Resource]** field to configure Microsoft Dynamics with a form data model. Use the Service Root URL to derive the dynamics instance URL. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
     1. Specify **[!UICONTROL openid]** in the **[!UICONTROL Authorization Scope]** field for authorization process on Microsoft Dynamics.
 
    ![dynamics_authentication_settings](assets/dynamics_authentication_settings.png)
@@ -145,7 +145,7 @@ To review the form data model, go to **[!UICONTROL Forms > Data Integrations]**.
 
 Next, you can create an adaptive form based on the form data model and use it in various adaptive form use cases, such as:
 
-* Prefill adaptive form by querying information from Microsoft Dynamics entities and services 
+* Prefill adaptive form by querying information from Microsoft Dynamics entities and services
 * Invoke Microsoft Dynamics server operations defined in a form data model using adaptive form rules
 * Write submitted form data to Microsoft Dynamics entities
 

@@ -5,7 +5,7 @@ description: You can receive notifications from various areas of AEM such as not
 seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
 uuid: 90a3b4db-add9-47d4-a95d-fcc3863d6255
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
@@ -70,25 +70,25 @@ To subscribe to notifications:
 
 1. Select the page actions for which to be notified:
 
-    * Activated: when a page has been activated.  
-    * Deactivated: when a page has been deactivated.  
-    * Deleted (syndication): when a page has been delete-replicated, i.e. when a delete action performed on a page is replicated. 
+    * Activated: when a page has been activated.
+    * Deactivated: when a page has been deactivated.
+    * Deleted (syndication): when a page has been delete-replicated, i.e. when a delete action performed on a page is replicated.
 
-      When a page is deleted or moved, a delete action is automatically replicated: the page is deleted on the source instance where the delete action was performed and on the destination instance defined by the replication agents. 
+      When a page is deleted or moved, a delete action is automatically replicated: the page is deleted on the source instance where the delete action was performed and on the destination instance defined by the replication agents.
 
-    * Modified: when a page has been modified.  
-    * Created: when a page has been created.  
-    * Deleted: when a page has been deleted through the page delete action.  
+    * Modified: when a page has been modified.
+    * Created: when a page has been created.
+    * Deleted: when a page has been deleted through the page delete action.
     * Rolled out: when a page has been rolled out.
 
 1. Define the paths of the pages for which you will be notified:
 
     * Click **Add** to add a new row to the table.
     * Click the **Path** table cell and enter the path, e.g. `/content/docs`.
-    * To be notified for all the pages belonging to the sub-tree, set **Exact?** to **No**. 
+    * To be notified for all the pages belonging to the sub-tree, set **Exact?** to **No**.
 
       To be only notified for actions on the page defined by the path, set **Exact?** to **Yes**.
-      
+
     * To allow the rule, set **Rule** to **Allow**. If set to **Deny**, the rule is denied but not removed and can be allowed later.
 
    To remove a definition, select the row by clicking a table cell and click **Delete**.

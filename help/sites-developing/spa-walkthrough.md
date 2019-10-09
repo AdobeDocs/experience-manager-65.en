@@ -5,7 +5,7 @@ description: This article introduces the concepts of a SPA and walks through usi
 seo-description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
 uuid: 97a199af-b684-433d-b7b1-a8378513cb3d
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
@@ -258,8 +258,8 @@ In the following section we will explore the contract that allows the SPA Editor
 
    `data-cq-data-path="root/responsivegrid/paragraph_1`
 
-   This paths allows the retrieval and association of the edit context configuration object of each component.  
-  
+   This paths allows the retrieval and association of the edit context configuration object of each component.
+
    This is the only markup attribute required for the editor to recognize this as an editable component within the SPA. Based on this attribute, the SPA Editor will determine which editable configuration is associated with the component, so that the correct frame, toolbar, etc. is loaded.
 
    Some specific class names are also added for marking placeholders and for asset drag-and-drop functionality.

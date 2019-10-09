@@ -5,7 +5,7 @@ description: Use assets across multiple pages/folders that are derived from and 
 seo-description: Use assets across multiple pages/folders that are derived from and linked to parent assets. The assets stay in sync with a master copy and with a few clicks, receive the updates from parent assets.
 contentOwner: asgupta
 topic-tags: authoring
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 mini-toc-levels: 1
 ---
 

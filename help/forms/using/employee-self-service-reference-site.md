@@ -5,7 +5,7 @@ description: AEM Forms reference site showcases how organizations can leverage A
 seo-description: AEM Forms reference site showcases how organizations can leverage AEM Forms features to implement employee recruitment and self-service workflows.
 uuid: ecc98e0d-c964-44dc-b219-9ebe92632d22
 topic-tags: introduction
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d2695f71-5126-477c-ae6b-a964fb55728b
 ---
 
@@ -99,7 +99,7 @@ She clicks **[!UICONTROL Apply]** on the Corporate Card application. A single-pa
 
 The organization portal and the employee dashboard are AEM Sites pages. The dashboard lists several self-service options such as the corporate card application. The Apply button on the application is linked to an adaptive form.
 
-The adaptive form for corporate card application is a simple, one-page, responsive adaptive form. It uses basic adaptive form components such as text, telephone, numeric box, and numeric stepper. Review the adaptive form at:   
+The adaptive form for corporate card application is a simple, one-page, responsive adaptive form. It uses basic adaptive form components such as text, telephone, numeric box, and numeric stepper. Review the adaptive form at:
 `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`.
 
 **See it yourself**
@@ -132,7 +132,7 @@ As Sarah spends during business travels, she needs to submit expense reports for
 
 ### Sarah submits the Expense Report application {#sarah-submits-the-expense-report-application}
 
-Sarah goes to her organization's portal, logs in, and clicks **[!UICONTROL Employee]** to access the employee dashboard. She finds Expense Report application on the employee dashboard and clicks **[!UICONTROL Apply]**. 
+Sarah goes to her organization's portal, logs in, and clicks **[!UICONTROL Employee]** to access the employee dashboard. She finds Expense Report application on the employee dashboard and clicks **[!UICONTROL Apply]**.
 
 ![we-finance-home-2](assets/we-finance-home-2.png)
 **Figure:** *Organization portal*
@@ -230,4 +230,4 @@ The submission workflow in the leave application triggers a Forms workflow that 
 
 **See it yourself**
 
-Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for leave application and approve it. 
+Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` and log in using `grios/password` as username/password for Gloria Rios. Open the task created for leave application and approve it.

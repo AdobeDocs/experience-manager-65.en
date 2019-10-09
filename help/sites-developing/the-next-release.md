@@ -5,7 +5,7 @@ description: A subsequent release is nearly always foreseen, and can even start 
 seo-description: A subsequent release is nearly always foreseen, and can even start during the final stages of the current implementation
 uuid: 6ae213fb-1bd3-464c-bfd0-14ddceaee11e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: a7be7d33-9d06-4d07-b7a0-e23251e26cb8

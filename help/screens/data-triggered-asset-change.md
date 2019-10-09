@@ -5,7 +5,7 @@ description: Follow this use case example to learn how to achieve personalized c
 seo-description: Follow this use case example to learn how to achieve personalized content based on some precondition (for example, weather of your location).
 uuid: 8e557e4c-a6e2-4e4a-87bd-e01e2ff0043d
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: example
 topic-tags: use-case-examples
 discoiquuid: 878a2354-0990-4b21-b1ab-b9b33b50e353

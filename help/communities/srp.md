@@ -5,7 +5,7 @@ description: Common storage for Communities
 seo-description: Common storage for Communities
 uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
@@ -37,12 +37,12 @@ See also:
 
 To understand SRP, it is helpful to understand the role of the AEM repository (OAK) in an AEM community site.
 
-**Java Content Repository (JCR)** 
+**Java Content Repository (JCR)**
 This standard defines a data model and application programming interface ([JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html)) for content repositories. It combines characteristics of conventional file systems with those of relational databases, and adds a number of additional features that content applications often need.
 
 One implementation of JCR is the AEM repository, OAK.
 
-**Apache Jackrabbit Oak (OAK)** 
+**Apache Jackrabbit Oak (OAK)**
 [OAK](../../help/sites-deploying/platform.md) is an implementation of JCR 2.0 that is a data storage system specifically designed for content-centric applications. It is a type of hierarchical database designed for unstructured and semi-structured data. The repository stores not only the user-facing content but also all code, templates and internal data used by the application. The UI for accessing content is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 Both JCR and OAK are typically used to refer to the AEM repository.

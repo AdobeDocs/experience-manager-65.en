@@ -5,7 +5,7 @@ description: When you send a newsletter to many users, there are usually some in
 seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
@@ -29,7 +29,7 @@ The feed importer lets you repeatedly import content from external sources into 
 
 To configure the feed importer for tracking bounced emails:
 
-1. In **Tools**, select the Feed Importer.  
+1. In **Tools**, select the Feed Importer.
 
 1. Click **Add** to create a new configuration.
 
@@ -40,14 +40,14 @@ To configure the feed importer for tracking bounced emails:
    All configurations need information about the following in the polling URL:
 
    `username`: The username to use for connecting
-   
+
    `password`: The password to use for connecting
 
    In addition, depending on the protocol, you can configure certain settings.
 
    **POP3 configuration properties:**
 
-   `pop3.leave.on.server`: Defines whether to leave messages on server or not. Set to true to leave messages on server, false otherwise. Defaults to true. 
+   `pop3.leave.on.server`: Defines whether to leave messages on server or not. Set to true to leave messages on server, false otherwise. Defaults to true.
 
    **POP3 examples:**
 
@@ -78,7 +78,7 @@ After configuring the feed importer, you need to configure the From address and 
 
 To configure the newsletter service:
 
-1. In the OSGi console at `<host>:<port>/system/console/configMgr` and navigate to **MCM Newsletter**.  
+1. In the OSGi console at `<host>:<port>/system/console/configMgr` and navigate to **MCM Newsletter**.
 
 1. Configure the service and save the changes when finished.
 

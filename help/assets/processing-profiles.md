@@ -5,7 +5,7 @@ description: A profile a set of rules around the options to be applied to assets
 seo-description: A profile a set of rules around the options to be applied to assets uploaded to a folder. Specify what metadata profile and video encoding profile to apply to video assets that you upload. For image assets, you can also specify what imaging profile to apply to image assets to have them properly cropped.
 uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
@@ -39,19 +39,19 @@ See also [Best practices for organizing your digital assets for using processing
 >
 >Applies to *Dynamic Media - Scene7 mode* only in AEM 6.4.6.0 or later.
 
-You can reprocess assets in a folder that already has an existing processing profile that you later changed. 
+You can reprocess assets in a folder that already has an existing processing profile that you later changed.
 
 For example, suppose you created an Image profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image profile applied to the assets. However, later you decide to add a new smart crop ratio the profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow. A single workflow job applies your updated profile up to a default of 50 assets in the folder.
 
 You can run the reprocess workflow on an asset for which processing failed the first time. As such, even if you have not edited a processing profile or applied a processing profile, you can still run the reprocess workflow on a folder of assets any time.
 
-You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets, for a single job. 
+You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets, for a single job.
 
 
 **To reprocess assets in a folder**:
 1. In AEM, from the Assets page, navigate to a folder of assets that has a processing profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
 
-    Folders that have a processing profile already assigned to it are indicated by the display of the profile's name directly below the folder name in Card View. 
+    Folders that have a processing profile already assigned to it are indicated by the display of the profile's name directly below the folder name in Card View.
 
 1. Select a folder.
 
@@ -86,8 +86,8 @@ You can optionally adjust the batch size of the reprocess workflow from a defaul
     ![Workflow Models page with Scene7: Reprocess Assets workflow selected in Card View](/help/assets/assets/workflow-models0.png)
 
 1. On the tool bar, click **[!UICONTROL Edit]**. A new browser tab opens the Scene7: Reprocess Assets workflow model page.
-1. On the Scene7: Reprocess Assets workflow page, double-click any step between Flow Start and Flow End of the model. 
-    
+1. On the Scene7: Reprocess Assets workflow page, double-click any step between Flow Start and Flow End of the model.
+
     For example, double-click the **[!UICONTROL Scene7: Reprocess Assets]** step to open the **Reprocess Assets - Step Properties** dialog box.
 
     >[!NOTE]
@@ -105,7 +105,7 @@ You can optionally adjust the batch size of the reprocess workflow from a defaul
     ![Synchronizing the workflow model](/help/assets/assets/workflow-models11.png)
 
     Close the browser tab that shows the Scene7: Reprocess Assets workflow model.
- 
+
 1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:

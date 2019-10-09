@@ -7,7 +7,7 @@ uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
 topic-tags: coding
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 ---
@@ -42,8 +42,8 @@ The following illustration is an example of a short-lived process named *MyAppli
 
 When this short-lived process is invoked, it performs the following actions:
 
-1. Obtains the unsecured PDF document that is passed to the process as an input value. 
-1. Encrypts the PDF document with a password. The name of the input parameter for this process is `inDoc` and the data type is document. 
+1. Obtains the unsecured PDF document that is passed to the process as an input value.
+1. Encrypts the PDF document with a password. The name of the input parameter for this process is `inDoc` and the data type is document.
 1. Saves the password-encrypted PDF document as a PDF file to the local file system. This process returns the encrypted PDF document as an output value. The name of the output parameter for this process is `outDoc` and the data type is document.
 
    This process is completed synchronously on the same execution thread from which it was invoked. The name of this short-lived process is `MyApplication/EncryptDocument`and its operation is `invoke`.

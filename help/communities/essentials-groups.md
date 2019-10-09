@@ -5,7 +5,7 @@ description: Creating community sites dynamically
 seo-description: Creating community sites dynamically
 uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
@@ -21,50 +21,50 @@ As of Communities [feature pack 1](deploy-communities.md#latestfeaturepack), it 
 
 ### Community Groups Member List {#community-groups-member-list}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/group/components/hbs/communitygroupmemberlist</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/group/components/hbs/communitygroupmemberlist</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.communitygroups</td> 
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/group/components/hbs/communitygroupmemberlist/communitygroupmemberlist.hbs<br /> </td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/group/components/hbs/communitygroupmemberlist/communitygroupmemberlist.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/group/components/hbs/communitygroupmemberlist/clientlibs/memberList.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/group/components/hbs/communitygroupmemberlist/clientlibs/memberList.css</td>
   </tr>
   <tr>
-   <td><strong>properties</strong></td> 
-   <td>See <a href="creating-groups.md">Community Group</a></td> 
+   <td><strong>properties</strong></td>
+   <td>See <a href="creating-groups.md">Community Group</a></td>
   </tr>
  </tbody>
 </table>
 
 ### Community Groups {#community-groups}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/group/components/hbs/communitygroups</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/group/components/hbs/communitygroups</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.communitygroups</td> 
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/group/components/hbs/communitygroupmemberlist/clientlibs/communitygroups.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/group/components/hbs/communitygroupmemberlist/clientlibs/communitygroups.css</td>
   </tr>
  </tbody>
 </table>

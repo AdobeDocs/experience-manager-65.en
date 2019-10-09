@@ -5,7 +5,7 @@ description: Search in Communities
 seo-description: Search in Communities
 uuid: 5f35a033-2069-499e-9cdb-db25781312f0
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
@@ -91,7 +91,7 @@ To view the existing Oak indices in [CRXDE Lite](../../help/sites-developing/dev
 
 * `/oak:index/socialLucene`
 
-![chlimage_1-235](assets/chlimage_1-235.png) 
+![chlimage_1-235](assets/chlimage_1-235.png)
 
 ## Indexed Search Properties {#indexed-search-properties}
 

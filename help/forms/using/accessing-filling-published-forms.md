@@ -5,7 +5,7 @@ description: Forms Portal equips Web Developers with components to create and cu
 seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: dd03a9de-b412-4d7b-befe-981cb3aa8d0a
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 0452062d-cf85-4009-a0a5-a1e891192ea8
 ---
@@ -35,10 +35,10 @@ The Search and Lister component allow you to add the following functionality to 
 
 * List forms in panel, card, or grid view that are available out of the box. It also supports custom templatesList forms from specific folders in Forms Manager.
 * Specify how forms are rendered - HTML5, PDF, or both.
-* Specify how PDF and XFA-forms are rendered - HTML5, PDF, or both. Non-XFA forms as HTML5.  
+* Specify how PDF and XFA-forms are rendered - HTML5, PDF, or both. Non-XFA forms as HTML5.
 * Enable searching of forms based on criteria, such as form properties, metadata, and tags.
 * Submit form data to a servlet.
-* Use custom style sheets (CSS) to customize the look and feel of the portal.  
+* Use custom style sheets (CSS) to customize the look and feel of the portal.
 * Create links to forms.
 
 You can search for forms in the Forms Portal page by using the following options:

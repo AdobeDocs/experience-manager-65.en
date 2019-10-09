@@ -5,7 +5,7 @@ description: Learn how to configure segmentation for AEM Campaign.
 seo-description: Learn how to configure segmentation for AEM Campaign.
 uuid: f22e41b6-d9d9-4f18-9925-2d4aebc167b3
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
@@ -42,62 +42,62 @@ Each segment has a **Boost** parameter that is used as a weighting factor; a hig
 
 The following logic containers are available out-of-the-box and allow you to construct the logic of your segment selection. They can be dragged from the sidekick to the editor:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> AND Container<br /> </td> 
-   <td> The boolean AND operator.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> OR Container<br /> </td> 
-   <td> The boolean OR operator.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> AND Container<br /> </td>
+   <td> The boolean AND operator.<br /> </td>
+  </tr>
+  <tr>
+   <td> OR Container<br /> </td>
+   <td> The boolean OR operator.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Segment Traits {#segment-traits}
 
 The following segment traits are available out-of-the-box; they can be dragged from the sidekick to the editor:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> IP Range<br /> </td> 
-   <td>Defines a range of IP addresses that the visitor can have.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Page Hits<br /> </td> 
-   <td>How often the page has been requested. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Page Property<br /> </td> 
-   <td>Any property of the visited page.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Referral Keywords<br /> </td> 
-   <td>Keywords to match with information from the referring website. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Script</td> 
-   <td>Javascript expression to be evaluated.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Segment Reference <br /> </td> 
-   <td>Reference to another segment definition.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Tag Cloud<br /> </td> 
-   <td>Tags to be matched with those from the pages visited.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> User Age<br /> </td> 
-   <td>As taken from the user profile.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> User Property<br /> </td> 
-   <td>Any other information that is available in the user profile. </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> IP Range<br /> </td>
+   <td>Defines a range of IP addresses that the visitor can have.<br /> </td>
+  </tr>
+  <tr>
+   <td> Page Hits<br /> </td>
+   <td>How often the page has been requested. <br /> </td>
+  </tr>
+  <tr>
+   <td> Page Property<br /> </td>
+   <td>Any property of the visited page.<br /> </td>
+  </tr>
+  <tr>
+   <td> Referral Keywords<br /> </td>
+   <td>Keywords to match with information from the referring website. <br /> </td>
+  </tr>
+  <tr>
+   <td> Script</td>
+   <td>Javascript expression to be evaluated.<br /> </td>
+  </tr>
+  <tr>
+   <td> Segment Reference <br /> </td>
+   <td>Reference to another segment definition.<br /> </td>
+  </tr>
+  <tr>
+   <td> Tag Cloud<br /> </td>
+   <td>Tags to be matched with those from the pages visited.<br /> </td>
+  </tr>
+  <tr>
+   <td> User Age<br /> </td>
+   <td>As taken from the user profile.<br /> </td>
+  </tr>
+  <tr>
+   <td> User Property<br /> </td>
+   <td>Any other information that is available in the user profile. </td>
+  </tr>
+ </tbody>
 </table>
 
 You can combine these traits using the boolean operators OR and AND (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting this segment.
@@ -141,7 +141,7 @@ To define your new segment:
 
 You can construct complex segments in AEM. It helps to be aware of a few basic points:
 
-* The top level of the definition is always the AND container that is initially created; this cannot be changed, but does not have an effect on the rest of your segment definition.  
+* The top level of the definition is always the AND container that is initially created; this cannot be changed, but does not have an effect on the rest of your segment definition.
 * Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
 
 The following example is used to select visitors who are either:
@@ -154,7 +154,7 @@ Female and between the ages of 16 and 62
 
 As the main operator is OR you need to start with an **OR Container**. Within this you have 2 AND statements, for each of these you need an **AND Container**, into which you can add the individual traits.
 
-![screen_shot_2012-02-02at105145am-1](assets/screen_shot_2012-02-02at105145am-1.png) 
+![screen_shot_2012-02-02at105145am-1](assets/screen_shot_2012-02-02at105145am-1.png)
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 
@@ -181,7 +181,7 @@ Such tests can also be performed on content pages and in combination with **Teas
 
 Mouseover on a teaser paragraph will show the segments applied, whether they currently resolve and therefore, why the current teaser instance has been selected:
 
-![chlimage_1-408](assets/chlimage_1-408.png) 
+![chlimage_1-408](assets/chlimage_1-408.png)
 
 ## Using Your Segment {#using-your-segment}
 

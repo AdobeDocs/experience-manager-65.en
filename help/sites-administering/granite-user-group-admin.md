@@ -5,7 +5,7 @@ description: Learn about Granite user and group administration.
 seo-description: Learn about Granite user and group administration.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
@@ -57,19 +57,19 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
    Here you can enter the user details for the account (most are standard and self-explanatory):
 
-    * **ID** 
+    * **ID**
 
-      This is the unique identification for the user account. It is mandatory and cannot contain spaces. 
-  
+      This is the unique identification for the user account. It is mandatory and cannot contain spaces.
+
     * **Email Address**
-    * **Password** 
+    * **Password**
 
       A password is mandatory.
-  
-    * **Retype Password** 
+
+    * **Retype Password**
 
       This is mandatory as it is required for confirmation of the password.
-  
+
     * **First Name**
     * **Last Name**
     * **Phone Number**
@@ -85,22 +85,22 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
     * **About**
     * **Account Settings**
 
-        * **Status** 
+        * **Status**
           You can flag the account as either **active** or **inactive**.
 
-    * **Photo** 
+    * **Photo**
 
       Here you can upload a photo to use as an avatar.
 
       Accepted file types: `.jpg .png .tif .gif`
 
       Preferred size: `240x240px`
-  
-    * **Add User to Groups** 
+
+    * **Add User to Groups**
 
       Use the selection drop-down to select groups that the user should be a member of. Once selected, use the **X** by the name to deselect before saving.
-  
-    * **Groups** 
+
+    * **Groups**
 
       A list of group(s) that the user is currently a member of. Use the **X** by the name to deselect before saving.
 
@@ -111,17 +111,17 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 ### Editing an Existing User {#editing-an-existing-user}
 
-1. Access the user details from the link under the user name in the Users console.  
+1. Access the user details from the link under the user name in the Users console.
 
 1. You can now edit the details as in [Adding a New User](#adding-a-new-user).
 
-1. Access the user details from the link under the user name in the Users console.  
+1. Access the user details from the link under the user name in the Users console.
 
 1. You can now edit the details as in [Adding a New User](#adding-a-new-user).
 
 ### Changing the Password for an Existing User {#changing-the-password-for-an-existing-user}
 
-1. Access the user details from the link under the user name in the Users console.  
+1. Access the user details from the link under the user name in the Users console.
 
 1. You can now edit the details as in [Adding a New User](#adding-a-new-user). Under **Account Settings** there is a link for **Change Password**.
 
@@ -144,7 +144,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. In the selection box you can select or deselect groups to which the user account should belong.  
+1. In the selection box you can select or deselect groups to which the user account should belong.
 
 1. When you have assigned, or unassigned, the groups as required use:
 
@@ -174,23 +174,23 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
    Here you can enter the group details:
 
-    * **ID** 
+    * **ID**
 
-      This is a unique identifier for the group. This is mandatory and cannot contain spaces. 
-  
-    * **Name** 
+      This is a unique identifier for the group. This is mandatory and cannot contain spaces.
 
-      A name for the group; it will be shown in the Groups console. 
-  
-    * **Description** 
+    * **Name**
 
-      A description of the group. 
-  
+      A name for the group; it will be shown in the Groups console.
+
+    * **Description**
+
+      A description of the group.
+
     * **Add Members to Group**
 
       Use the selection drop-down to select user(s) to add to the group. Once selected, use the **X** by the name to deselect before saving.
 
-    * **Group Members** 
+    * **Group Members**
 
       A list of user(s) in the group. Use the **X** by the name to deselect before saving.
 
@@ -201,7 +201,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 ### Editing an Existing Group {#editing-an-existing-group}
 
-1. Access the group details from the link under the group name in the Groups console.  
+1. Access the group details from the link under the group name in the Groups console.
 
 1. You can now edit and save the details as in [Adding a New Group](#adding-a-new-group).
 

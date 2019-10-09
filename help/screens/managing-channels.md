@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about creating and managing channels.
 uuid: 1f89ea18-63ef-4a42-9337-0f29d6aab938
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: edb7e73b-83e3-4e6d-85e0-f975c99931b0
 ---
@@ -27,7 +27,7 @@ This page shows creating and managing channels for Screens.
 Once you create your project for Screens, follow the steps below to create a new Channel for a Screens project:
 
 1. Select the Adobe Experience Manager link (top left) and then Screens. Alternatively, you can navigate directly from `http://localhost:4502/screens.html/content/screens`
-1. Navigate to Screens project and click **Channels**. 
+1. Navigate to Screens project and click **Channels**.
 1. Click **Create** next to the plus icon in the action bar. A wizard will open (*See Channel Types for more information*).
 
 1. Select the template from the wizard and click **Next**.
@@ -73,7 +73,7 @@ You can edit, view properties and dashboard, copy, preview, and delete a channel
 >
 >Click on the icon on the left to select an item. For example, click on the icon for channel and perform the following actions, as shown in the figure below.
 
-![screen_shot_2018-08-23at10208pm](assets/screen_shot_2018-08-23at10208pm.png) 
+![screen_shot_2018-08-23at10208pm](assets/screen_shot_2018-08-23at10208pm.png)
 
 ### Adding/Editing Content to a Channel {#adding-editing-content-to-a-channel}
 
@@ -84,10 +84,10 @@ To add or edit content in a channel, follow the steps below:
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**Uploading Videos to the Channel** 
+**Uploading Videos to the Channel**
 Follow the steps below to upload videos to your channel:
 
-1. Select the channel where you want to upload the video.   
+1. Select the channel where you want to upload the video.
 1. Click **Edit** from the action bar to open the editor.
 1. Select **Videos** under Assets and drag and drop the required videos.
 
@@ -102,7 +102,7 @@ To view or edit properties of a channel, follow the steps below:
 1. Click on the Channel you want to edit.
 1. Click **Properties **from the action bar to view/edit the channel properties. The following tabs allow you to change the options.
 
-![player2-3](assets/player2-3.gif) 
+![player2-3](assets/player2-3.gif)
 
 ### Viewing Dashboard {#viewing-dashboard}
 
@@ -111,7 +111,7 @@ To view dashboard of a channel, follow the steps below:
 1. Click on the Channel you want to edit.
 1. Click **View Dashboard** from the action bar to view the dashobard. The **CHANNEL INFORMATION** and **ASSIGNED DISPLAYS** panel opens, as shown in the figure below:
 
-![player2-4](assets/player2-4.gif) 
+![player2-4](assets/player2-4.gif)
 
 ### Channel Information {#channel-information}
 
@@ -119,7 +119,7 @@ The Channel Information panel describes the Channel properties, along with the p
 
 Click on the (**...**) in the **Channel Information** action bar to view properties, edit the content, or to update cache (offline content) for the channel.
 
-![screen_shot_2017-12-20at82048am](assets/screen_shot_2017-12-20at82048am.png) 
+![screen_shot_2017-12-20at82048am](assets/screen_shot_2017-12-20at82048am.png)
 
 ### Online and Offline Channels {#online-and-offline-channels}
 
@@ -161,40 +161,40 @@ Follow the steps below to make the channel online:
 
 The following table summarizes the events associated with the automatic and manual updates from the device dashboard.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Event</strong></td> 
-   <td><strong>Device Auto Update</strong></td> 
-   <td><strong>Device Manual Update</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Change in Online Channel</td> 
-   <td>Content updated automatically</td> 
-   <td><p>Content updated on "Device: Push Config"</p> <p>Or,</p> <p>Content updated on <strong><i>Device: Restart</i></strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td>Change in Offline channel but Channel "Push Content" is NOT triggered (no offline package re-creation)</td> 
-   <td>No content update</td> 
-   <td>No content update</td> 
-  </tr> 
-  <tr> 
-   <td>Change in Offline Channel and Channel "Push Content" is triggered (new offline package)</td> 
-   <td>Content updated automatically</td> 
-   <td><p>Content updated on <strong><i>Device: Push Config</i></strong></p> <p>Or,</p> <p>Content updated on <strong><i>Device: Restart</i></strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Change in Config</p> 
-    <ul> 
-     <li>Display (forced channel)</li> 
-     <li>Device</li> 
-     <li>Channel assignments (new channel, removed channel)</li> 
-     <li>Channel assignment (role, event, scheduling)</li> 
-    </ul> </td> 
-   <td>Config updated automatically</td> 
-   <td><p>Config updated on <strong><i>Device: Push Config</i></strong></p> <p>Or,</p> <p>Config updated on <strong><i>Device: Restart</i></strong></p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Event</strong></td>
+   <td><strong>Device Auto Update</strong></td>
+   <td><strong>Device Manual Update</strong></td>
+  </tr>
+  <tr>
+   <td>Change in Online Channel</td>
+   <td>Content updated automatically</td>
+   <td><p>Content updated on "Device: Push Config"</p> <p>Or,</p> <p>Content updated on <strong><i>Device: Restart</i></strong></p> </td>
+  </tr>
+  <tr>
+   <td>Change in Offline channel but Channel "Push Content" is NOT triggered (no offline package re-creation)</td>
+   <td>No content update</td>
+   <td>No content update</td>
+  </tr>
+  <tr>
+   <td>Change in Offline Channel and Channel "Push Content" is triggered (new offline package)</td>
+   <td>Content updated automatically</td>
+   <td><p>Content updated on <strong><i>Device: Push Config</i></strong></p> <p>Or,</p> <p>Content updated on <strong><i>Device: Restart</i></strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Change in Config</p>
+    <ul>
+     <li>Display (forced channel)</li>
+     <li>Device</li>
+     <li>Channel assignments (new channel, removed channel)</li>
+     <li>Channel assignment (role, event, scheduling)</li>
+    </ul> </td>
+   <td>Config updated automatically</td>
+   <td><p>Config updated on <strong><i>Device: Push Config</i></strong></p> <p>Or,</p> <p>Config updated on <strong><i>Device: Restart</i></strong></p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Assigned Displays {#assigned-displays}
@@ -215,7 +215,7 @@ The associated displays will list in the **Assigned Displays** panel, as shown b
 
 Additionally, click on the display in the **ASSIGNED DISPLAYS** panel, to view the display information, as shown below:
 
-![chlimage_1-50](assets/chlimage_1-50.png) 
+![chlimage_1-50](assets/chlimage_1-50.png)
 
 ### The Next Steps {#the-next-steps}
 

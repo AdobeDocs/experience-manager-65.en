@@ -5,7 +5,7 @@ description: Using the sendToPrinter service to send a document to printer.
 seo-description: Using the sendToPrinter service to send a document to printer.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 ---
@@ -18,8 +18,8 @@ In AEM Forms, you can use the SendToPrinter service to send a document to printe
 
 * **Direct accessible printer** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
-* **Indirect accessible printer** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`  
-  
+* **Indirect accessible printer** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
+
   When you send a document to a printer, specify one of these printing protocols:
 
     * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
@@ -59,9 +59,9 @@ The table below lists:
 
 Authentication is supported only for CIFS printing. To authenticate, provide the username/password/domain in PrinterSpec. You can encrypt a password using AEM Granite CyprtoSupport Service by performing the following steps:
 
-1. Go to https://&lt;server&gt;:&lt;port&gt;/system/console.  
+1. Go to https://&lt;server&gt;:&lt;port&gt;/system/console.
 
-1. Go to **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.  
+1. Go to **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
 
 1. Enter some Plain text, and click **[!UICONTROL Protect]**.
 

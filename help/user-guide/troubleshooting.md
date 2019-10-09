@@ -4,7 +4,7 @@ seo-title: Troubleshooting AEM
 description: Troubleshooting AEM
 seo-description: Troubleshooting AEM
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
 # Troubleshooting AEM {#troubleshooting-aem}

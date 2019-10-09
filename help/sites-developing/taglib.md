@@ -5,7 +5,7 @@ description: The Granite, CQ, and Sling tag libraries give you access to specifi
 seo-description: The Granite, CQ, and Sling tag libraries give you access to specific functions for use in the JSP script of your templates and components
 uuid: e622d47b-cfb3-4b4a-b8e3-e1adee294219
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
@@ -163,15 +163,15 @@ It has the following attributes:
 
 * **static** - the locale is taken from the `language` attribute if available, otherwise from the server default locale.
 
-* **page** - the locale is taken from the language of the current page or resource if available, otherwise from the `language` attribute if available, otherwise from the server default locale.  
+* **page** - the locale is taken from the language of the current page or resource if available, otherwise from the `language` attribute if available, otherwise from the server default locale.
 
-* **request** - the locale is taken from the request locale ( `request.getLocale()`).  
+* **request** - the locale is taken from the request locale ( `request.getLocale()`).
 
 * **auto** - the locale is taken from the `language` attribute if available, otherwise from the language of the current page or resource if available, otherwise from the request.
 
 If the `source` attribute is not set:
 
-* If the `language` attribute is set, the `source` attribute defaults to `` `static`.  
+* If the `language` attribute is set, the `source` attribute defaults to `` `static`.
 
 * If the `language` attribute is not set, the `source` attribute defaults to `auto`.
 

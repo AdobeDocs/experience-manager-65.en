@@ -5,7 +5,7 @@ description: AEM provides Client-side Library Folders, which allow you to store 
 seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 uuid: c022992d-a6db-4abb-8c53-4c91d6eed225
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
@@ -105,7 +105,7 @@ The node contains one or more source files that, at runtime, are merged into a s
 
 Client library folders contain the following items:
 
-* The JS and/or CSS source files to merge. 
+* The JS and/or CSS source files to merge.
 * Resources that support CSS styles, such as image files.
 
   **Note:** You can use subfolders to organize source files.
@@ -367,7 +367,7 @@ jsProcessor: ["default:none", "min:gcc;compilationLevel=advanced"]
 ```xml
 jsProcessor: [
    "default:typescript",
-   "min:typescript", 
+   "min:typescript",
    "min:gcc;obfuscate=true"
 ]
 
@@ -451,7 +451,7 @@ The `dumplibs` component includes a test selector that displays the source code 
 The HTML Library Manager service processes `cq:ClientLibraryFolder` tags and generates the libraries at runtime. The type of environment, development or production, determines how you should configure the service:
 
 * Increase security: Disable debugging
-* Improve performance: Remove whitespace and compress libraries. 
+* Improve performance: Remove whitespace and compress libraries.
 * Improve readability: Include whitespace and do not compress.
 
 For information about configuring the service, see [AEM HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md).

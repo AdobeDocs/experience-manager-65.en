@@ -5,7 +5,7 @@ description: Add a ClientLibraryFolder
 seo-description: Add a ClientLibraryFolder
 uuid: cdc1d258-2011-4517-9206-dd2b5d1f7e0d
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
@@ -25,7 +25,7 @@ The `categories`property value given to this client library is the identifier us
 
     * Name: `clientlibs`
     * Type: `cq:ClientLibraryFolder`
-    
+
 1. Click **[!UICONTROL OK]**
 
 ![chlimage_1-220](assets/chlimage_1-220.png)
@@ -83,9 +83,9 @@ In this case, we're including them all, and so would prefer the more basic SCF c
 * Type: **`String`**
 
 * Click **`Multi`**
-* Value: **`cq.social.scf`** 
+* Value: **`cq.social.scf`**
 
-  *&lt;enter&gt; will pop up a dialog*  
+  *&lt;enter&gt; will pop up a dialog*
 
   *Click **[+]** after each entry to add the following clientlib categories:*
 
@@ -103,7 +103,7 @@ In this case, we're including them all, and so would prefer the more basic SCF c
 
 This is how `/etc/designs/an-scf-sandbox/clientlibs` should now appear in the repository:
 
-![chlimage_1-223](assets/chlimage_1-223.png) 
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 ## Include Clientlibs in PlayPage Template {#include-clientlibs-in-playpage-template}
 
@@ -159,7 +159,7 @@ This package exists on the [Create a Sample Page](create-sample-page.md) tutoria
 To create a package:
 
 
-* From **[!UICONTROL CRXDE Lite]**, click the [Package icon](http://localhost:4502/crx/packmgr/) 
+* From **[!UICONTROL CRXDE Lite]**, click the [Package icon](http://localhost:4502/crx/packmgr/)
 * Click **[!UICONTROL Create Package]**
 
     * Package Name: `an-scf-sandbox-minimal-pkg`

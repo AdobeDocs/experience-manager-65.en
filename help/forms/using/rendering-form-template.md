@@ -5,7 +5,7 @@ description: HTML5 forms profiles are associated with profile renders. Profile R
 seo-description: HTML5 forms profiles are associated with profile renders. Profile Renders are JSP pages responsible for generating HTML representation of the form by calling the Forms OSGi service.
 uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 ---
@@ -37,25 +37,25 @@ http://localhost:4502/content/xfaforms/profiles/default.html?
 
 The request parameters supported while rendering form as HTML are:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><strong>Parameter </strong></th> 
-   <th><strong>Description</strong></th> 
-  </tr> 
-  <tr> 
-   <td>template<br /> </td> 
-   <td>This parameter specifies the name of the template file.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>contentRoot<br /> </td> 
-   <td>This parameter specifies the path where the template and the associated resources reside. This path can be the server file system path or a repository path or http or an ftp path.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>submitUrl<br /> </td> 
-   <td>This parameter specifies the url to which the form data xml is posted.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><strong>Parameter </strong></th>
+   <th><strong>Description</strong></th>
+  </tr>
+  <tr>
+   <td>template<br /> </td>
+   <td>This parameter specifies the name of the template file.<br /> </td>
+  </tr>
+  <tr>
+   <td>contentRoot<br /> </td>
+   <td>This parameter specifies the path where the template and the associated resources reside. This path can be the server file system path or a repository path or http or an ftp path.<br /> </td>
+  </tr>
+  <tr>
+   <td>submitUrl<br /> </td>
+   <td>This parameter specifies the url to which the form data xml is posted.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Merge Data with form template {#merge-data-with-form-template}

@@ -7,7 +7,7 @@ uuid: 2bc08b4f-dcbe-4a16-9025-32fc14605e13
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 ---
 
@@ -30,7 +30,7 @@ You can also enable SSO by using SPNEGO. (See [Enable SSO using SPNEGO](enabling
 1. Set the remaining options on the page as required and click OK:
 
     * **SSO type:** (Mandatory) Select HTTP Header to enable SSO using HTTP headers.
-    * **HTTP header for user’s identifier:** (Mandatory) Name of the header whose value contains the logged-in user’s unique identifier. User Management uses this value to find the user in the User Management database. The value obtained from this header should match the unique identifier of the user who is synchronized from the LDAP directory. (See [User settings](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).) 
+    * **HTTP header for user’s identifier:** (Mandatory) Name of the header whose value contains the logged-in user’s unique identifier. User Management uses this value to find the user in the User Management database. The value obtained from this header should match the unique identifier of the user who is synchronized from the LDAP directory. (See [User settings](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
     * **Identifier value maps to user’s User ID instead of user’s unique identifier:** Maps the user’s unique identifier value to the User ID. Select this option if the user’s unique identifier is a binary value that cannot be easily propagated through HTTP headers (for example, objectGUID if you are synchronizing users from Active Directory).
     * **HTTP header for domain:** (Not mandatory) Name of the header whose value contains the domain name. Use this setting only if no single HTTP header uniquely identifies the user. Use this setting for cases where multiple domains exist and the unique identifier is unique only within a domain. In this case, specify the header name in this text box and specify domain mapping for the multiple domains in the Domain mapping box. (See [Editing and converting existing domains](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
     * **Domain mapping:** (Mandatory) Specifies mapping for multiple domains in the format *header value=domain name*.
@@ -57,13 +57,13 @@ You can also enable SSO by using HTTP headers. (See [Enable SSO using HTTP heade
 >
 >AEM Forms on JEE does not support configuring SSO using Kerberos/SPNEGO in a multiple child domain environments .
 
-1. Decide which domain to use to enable SSO. The AEM forms server and the users must be part of the same Windows domain or trusted domain. 
+1. Decide which domain to use to enable SSO. The AEM forms server and the users must be part of the same Windows domain or trusted domain.
 1. In Active Directory, create a user who represents the AEM forms server. (See [Create a user account](enabling-single-sign-on-aem.md#create-a-user-account).) If you are configuring more than one domain to use SPNEGO, ensure that the passwords for each of these users is different. If the passwords are not different, SPNEGO SSO does not work.
 1. Map the service principal name. (See [Map a Service Principal Name (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configure the domain controller. (See [Prevent Kerberos integrity-check failures](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Add or edit an enterprise domain as described in [Adding domains](/help/forms/using/admin-help/adding-domains.md#adding-domains) or [Editing and converting existing domains](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). When you create or edit the enterprise domain, perform these tasks:
 
-    * Add or edit a directory that contains your Active Directory information. 
+    * Add or edit a directory that contains your Active Directory information.
     * Add LDAP as an authentication provider.
     * Add Kerberos as an authentication provider. Provide the following information on the New or Edit Authentication page for Kerberos:
 
@@ -79,12 +79,12 @@ You can also enable SSO by using HTTP headers. (See [Enable SSO using HTTP heade
 
 ### Create a user account {#create-a-user-account}
 
-1. In SPNEGO, register a service as a user in Active Directory on the domain controller to represent AEM forms. On the domain controller, go to Start Menu &gt; Administrative Tools &gt; Active Directory Users And Computers. If Administrative Tools is not in the Start menu, use the Control Panel. 
-1. Click the Users folder to display a list of users. 
+1. In SPNEGO, register a service as a user in Active Directory on the domain controller to represent AEM forms. On the domain controller, go to Start Menu &gt; Administrative Tools &gt; Active Directory Users And Computers. If Administrative Tools is not in the Start menu, use the Control Panel.
+1. Click the Users folder to display a list of users.
 1. Right-click the user folder and select New &gt; User.
 1. Type the First Name/Last Name and User Logon Name and then click Next. For example, set the following values:
 
-    * **First Name**: umspnego 
+    * **First Name**: umspnego
     * **User Logon Name**: spnegodemo
 
 1. Type a password. For example, set it to *password*. Ensure that Password Never Expires is selected and no other options are selected.
@@ -107,7 +107,7 @@ You can also enable SSO by using HTTP headers. (See [Enable SSO using HTTP heade
 
    **REALM:** The Active Directory realm for the domain controller. In this example, it is set to UM.LC.COM. Ensure that you enter the realm in uppercase characters. To determine the realm for Windows 2003, complete the following steps:
 
-    * Right-click My Computer and select Properties 
+    * Right-click My Computer and select Properties
     * Click the Computer Name tab. The Domain Name value is the realm name.
 
    **user:** The login name of the user account you created in the previous task. In this example, it is set to spnegodemo.
@@ -115,7 +115,7 @@ You can also enable SSO by using HTTP headers. (See [Enable SSO using HTTP heade
 If you encounter this error:
 
 ```as3
-DsCrackNames returned 0x2 in the name entry for spnegodemo.  
+DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
@@ -127,11 +127,11 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 ### Prevent Kerberos integrity-check failures {#prevent-kerberos-integrity-check-failures}
 
-1. On the domain controller, go to Start Menu &gt; Administrative Tools &gt; Active Directory Users And Computers. If Administrative Tools is not in the Start menu, use the Control Panel. 
-1. Click the Users folder to display a list of users. 
+1. On the domain controller, go to Start Menu &gt; Administrative Tools &gt; Active Directory Users And Computers. If Administrative Tools is not in the Start menu, use the Control Panel.
+1. Click the Users folder to display a list of users.
 1. Right-click the user account that you created in a previous task. In this example, the user account is `spnegodemo`.
-1. Click Reset Password. 
-1. Type and confirm the same password that you typed previously. In this example, it is set to `password`. 
+1. Click Reset Password.
+1. Type and confirm the same password that you typed previously. In this example, it is set to `password`.
 1. Deselect Change Password At Next Logon and then click OK.
 
 ### Configuring SPNEGO client browser settings {#configuring-spnego-client-browser-settings}
@@ -142,7 +142,7 @@ If the server is accessed by using the computer name, such as https://lcserver:8
 
 **Configure Internet Explorer 6.x**
 
-1. Go to Tools &gt; Internet Options and click the Security tab. 
+1. Go to Tools &gt; Internet Options and click the Security tab.
 1. Click the Local Intranet icon and then click Sites.
 1. Click Advanced and, in the Add This Web Site To The Zone box, type the URL of your forms server. For example, type `https://lcserver.um.lc.com`
 1. Click OK until all dialog boxes are closed.

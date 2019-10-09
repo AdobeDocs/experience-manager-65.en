@@ -5,7 +5,7 @@ description: Create a launch to enable the updating of a new version of existing
 seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
@@ -17,7 +17,7 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page:
 
 * The title appears in the **Sidekick**, from where authors can access them to work on them.
-* The child pages of the source page are included in the launch by default. You can use only the source page if desired. 
+* The child pages of the source page are included in the launch by default. You can use only the source page if desired.
 * By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.
 
 Optionally, you can specify the **Launch Date** (and time) to define when the launch pages are to be promoted and activated. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-classic-ui-authoring/classic-launches-editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
@@ -26,7 +26,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 
 The following procedure creates a launch.
 
-1. Open the Website administration page ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)). 
+1. Open the Website administration page ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
 1. Click **New...** then **New Launch...**.
 1. In the **Create Launch** dialog, specify values for the following properties:
 

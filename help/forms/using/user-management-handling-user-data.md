@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 ---
 
@@ -37,47 +37,47 @@ User management stores user data in a database, such as My Sql, Oracle, MS SQL S
 
 User management stores user data in the following database tables:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Database table</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcPrincipalEntity</code></td> 
-   <td><p>Stores information about principal entities. A principal can be a user, a group, or a role.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcPrincipalUserEntity</code></td> 
-   <td>Stores personally identifiable information (PII) of users. It contains an entry for every user from local, enterprise, and hybrid domains.</td> 
-  </tr> 
-  <tr> 
+<table>
+ <tbody>
+  <tr>
+   <td>Database table</td>
+   <td>Description</td>
+  </tr>
+  <tr>
+   <td><code>EdcPrincipalEntity</code></td>
+   <td><p>Stores information about principal entities. A principal can be a user, a group, or a role.</p> <p> </p> </td>
+  </tr>
+  <tr>
+   <td><code>EdcPrincipalUserEntity</code></td>
+   <td>Stores personally identifiable information (PII) of users. It contains an entry for every user from local, enterprise, and hybrid domains.</td>
+  </tr>
+  <tr>
    <td><p><code>EdcPrincipalLocalAccountEntity</code></p> <p><code class="code">EdcPrincipalLocalAccount
-       </code>(Oracle and MS SQL databases)</p> </td> 
-   <td>Stores data only for local users.</td> 
-  </tr> 
-  <tr> 
-   <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn 
-       </code>(Oracle and MS SQL databases)</p> </td> 
-   <td>Contains entries of all users from local, enterprise, and hybrid domains. It contains user email IDs.</td> 
-  </tr> 
-  <tr> 
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (Oracle and MS SQL databases)</p> </td> 
-   <td>Stores the mapping between users and groups.</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcPrincipalRoleEntity</code></td> 
-   <td>Stores the mapping between roles and principal for both users and groups.</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcPriResPrmEntity</code></td> 
-   <td>Stores the mapping between principal and permissions for both users and groups.</td> 
-  </tr> 
-  <tr> 
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle and MS SQL databases)</p> </td> 
-   <td>Stores old and new attribute values corresponding to a principal.<br /> </td> 
-  </tr> 
- </tbody> 
+       </code>(Oracle and MS SQL databases)</p> </td>
+   <td>Stores data only for local users.</td>
+  </tr>
+  <tr>
+   <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn
+       </code>(Oracle and MS SQL databases)</p> </td>
+   <td>Contains entries of all users from local, enterprise, and hybrid domains. It contains user email IDs.</td>
+  </tr>
+  <tr>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (Oracle and MS SQL databases)</p> </td>
+   <td>Stores the mapping between users and groups.</td>
+  </tr>
+  <tr>
+   <td><code>EdcPrincipalRoleEntity</code></td>
+   <td>Stores the mapping between roles and principal for both users and groups.</td>
+  </tr>
+  <tr>
+   <td><code>EdcPriResPrmEntity</code></td>
+   <td>Stores the mapping between principal and permissions for both users and groups.</td>
+  </tr>
+  <tr>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle and MS SQL databases)</p> </td>
+   <td>Stores old and new attribute values corresponding to a principal.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### AEM repository {#aem-repository}
@@ -145,19 +145,19 @@ Do the following to delete user management data for a principal ID from database
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
-   
+
    Delete from EdcPrincipalEmailAliasEntity where refprincipalid in (Select id from EdcPrincipalEntity where id='<principal_id>');
-   
+
    Delete from EdcPrincipalRoleEntity where refprincipalid in (Select id from EdcPrincipalEntity where id='<principal_id>');
-   
+
    Delete from EdcPriResPrmEntity where refprinid in (Select id from EdcPrincipalEntity where id='<principal_id>');
-   
+
    Delete from EdcPrincipalUserEntity where refprincipalid in (Select id from EdcPrincipalEntity where id='<principal_id>');
-   
+
    Delete from EdcPrincipalMappingEntity where refprincipalid in (Select id from EdcPrincipalEntity where id='<principal_id>');
-   
+
    Delete from EdcPrincipalGrpCtmntEntity where refchildprincipalid in (Select id from EdcPrincipalEntity where id='<principal_id>');
-   
+
    Delete from EdcPrincipalEntity where id='<principal_id>';
    ```
 

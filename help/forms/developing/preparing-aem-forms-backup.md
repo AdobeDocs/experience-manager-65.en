@@ -6,7 +6,7 @@ seo-description: null
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 ---
@@ -31,7 +31,7 @@ You can use the Backup and Restore service to add to existing applications or ne
 
 You can perform these tasks using the Backup and Restore service:
 
-* Enter backup mode. 
+* Enter backup mode.
 * Leave backup mode.
 
 >[!NOTE]
@@ -116,7 +116,7 @@ Enter backup mode by using the Backup and Restore Service API:
 
 1. Decide upon a unique label, determine the amount of time to perform the backup, and decide whether to be in continuous backup mode
 
-   Decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the forms server to stay in continuous backup mode. 
+   Decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the forms server to stay in continuous backup mode.
 
 1. Enter backup mode
 
@@ -142,7 +142,7 @@ Enter backup mode by using the web service provided by Backup and Restore Servic
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the Backup and Restore Service API WSDL. 
+    * Create a Microsoft .NET client assembly that consumes the Backup and Restore Service API WSDL.
     * Reference the Microsoft .NET client assembly.
 
 1. Create a BackupService Client API object
@@ -151,7 +151,7 @@ Enter backup mode by using the web service provided by Backup and Restore Servic
 
 1. Decide upon a unique label, determine the amount of time to perform the backup, and decide whether to be in continuous backup mode
 
-   Decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the forms server to stay in continuous backup mode. 
+   Decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the forms server to stay in continuous backup mode.
 
 1. Enter backup mode
 
@@ -245,7 +245,7 @@ Leave backup mode by using the Backup and Restore Service API (web service):
 
    To use web services, you must make sure that you include the proxy files. Follow these steps to configure your project to use the Backup and Restore Service API as a web service.
 
-    * Create a Microsoft .NET client assembly that consumes the Backup and Restore Service API WSDL. 
+    * Create a Microsoft .NET client assembly that consumes the Backup and Restore Service API WSDL.
     * Reference the Microsoft .NET client assembly.
 
 1. Create a BackupService Client API object

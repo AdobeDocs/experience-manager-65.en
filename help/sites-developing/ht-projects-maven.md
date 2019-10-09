@@ -5,7 +5,7 @@ description: This document describes how to set up an AEM project based on Apach
 seo-description: This document describes how to set up an AEM project based on Apache Maven
 uuid: 675932d3-dabb-4066-a743-75bdf4f049d7
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
@@ -125,7 +125,7 @@ An example of the latter would be:
 public class ComponentWhichHasAEMInterfaceInjected implements TitleTrimmer {
     @Reference
     private PageManagerFactory pageManagerFactory;
-  
+
     /**
      * Get the first length characters of the title of the page containing the provided Resource.
      */
@@ -146,7 +146,7 @@ To unit test either of these methods, a developer would use a mocking framework 
 ```java
 @RunWith(JMockit.class)
 public class ClassWhichHasAEMInterfacePassedInTest {
- 
+
     @Tested
     private ClassWhichHasAEMInterfacePassedIn instance;
 
@@ -185,7 +185,7 @@ public class ComponentWhichHasAEMInterfaceInjectedTest {
 
     @Mocked
     private ResourceResolver resourceResolver;
- 
+
     @Test
     public void test_that_long_string_is_trimmed() {
         new Expectations() {{
@@ -209,7 +209,7 @@ This use case involves calling into a static or instance method of an class in t
 
 ```java
 public class ClassWhichUsesAStaticMethodFromAPI {
-  
+
     /**
      * Get a map of asset titles to asset objects.
      *
@@ -234,7 +234,7 @@ public class ClassWhichUsesAStaticMethodFromAPI {
 
 ```java
 public class ClassWhichUsesAnInstanceMethodFromAPI {
-  
+
     /**
      * Count the number of paragraphs in a parsys.
      *
@@ -262,7 +262,7 @@ public class ClassWhichUsesAStaticMethodFromAPITest {
 
     @Mocked
     private Resource resource;
- 
+
     @Test
     public void test_that_empty_iterator_produces_empty_map() {
         new Expectations() {
@@ -288,7 +288,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 
     @Tested
     private ClassWhichUsesAnInstanceMethodFromAPI instance;
- 
+
     @Mocked
     private Resource parsys;
 
@@ -547,13 +547,13 @@ To achieve deletion of the classes compiled from the JSPs, we set up the Maven C
 >
 >E.g. if you include `/libs/foundation/global.jsp`, you can use the following configuration for the `maven-resources-plugin` instead of the configuration above which completely skips over `/libs`.
 >```
-> <resource>  
->      <directory>src/main/content/jcr_root</directory>  
->      <includes>  
->          <include>apps/**</include>  
+> <resource>
+>      <directory>src/main/content/jcr_root</directory>
+>      <includes>
+>          <include>apps/**</include>
 >          <include>libs/foundation/global.jsp</include>
->    </includes>  
->  </resource>  
+>    </includes>
+>  </resource>
 >  ```
 
 ### How-To Work with SCM Systems {#how-to-work-with-scm-systems}

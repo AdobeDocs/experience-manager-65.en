@@ -5,7 +5,7 @@ description: Learn about configuring link tracking for SiteCatalyst.
 seo-description: Learn about configuring link tracking for SiteCatalyst.
 uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
@@ -17,7 +17,7 @@ When users click links on pages of your website you can capture related informat
 
 ## Configuring Link Tracking for an Adobe Analytics Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Using **Navigation**, go via **Deployment**, **Cloud Services** to the **Adobe Analytics** section.   
+1. Using **Navigation**, go via **Deployment**, **Cloud Services** to the **Adobe Analytics** section.
 
 1. Using **Show Configurations**, open the required Adobe Analytics framework.
 1. Expand the **Link Tracking Configuration** section and configure as required (this page provides further details):
@@ -68,23 +68,23 @@ To track external links for your Adobe Analytics framework:
 
 Properties for tracking when external links are clicked:
 
-* **Track External** 
+* **Track External**
   Enables external link tracking.
 
-* **External Filters** 
+* **External Filters**
   (Optional) Defines filters for matching the external URLs of the link targets. When the link targets match the filter, the link is tracked. External filters are useful for tracking only some of the external links on your pages.
 
   To specify the external links to track, type all or part of the URL of the link target. Separate multiple filters with a comma. Enclose string literals within single quotation marks. No value (the default value of `''`, two single quotes) causes all external links to be tracked.
 
-* **Internal Filters** 
-  Defines filters for matching the URLs of internal links. When the link targets URLs that match this filter, the link is not tracked. The default value is a javascript command that returns the hostname of the URL for the current window address. 
+* **Internal Filters**
+  Defines filters for matching the URLs of internal links. When the link targets URLs that match this filter, the link is not tracked. The default value is a javascript command that returns the hostname of the URL for the current window address.
 
-  To specify the internal links that are not tracked, type all or part of the internal URL of the link target. Separate multiple filters with a comma. Enclose string literals within single quotation marks.  
+  To specify the internal links that are not tracked, type all or part of the internal URL of the link target. Separate multiple filters with a comma. Enclose string literals within single quotation marks.
 
-  The default value is `'javascript:,'+window.location.hostname`  
+  The default value is `'javascript:,'+window.location.hostname`
 
-* **Leave Query String** 
-  Includes URL parameters when evaluating matches with internal and external filters.  
+* **Leave Query String**
+  Includes URL parameters when evaluating matches with internal and external filters.
 
   Enable to include URL parameters when evaluating link target URLs against external and internal filters.
 
@@ -114,15 +114,15 @@ To send variable data with link clicks:
 
 Properties for sending variable data with link clicks:
 
-* **Link Track Events** 
-  Enter the Adobe Analytics event variables that you want to use for counting link clicks.  
+* **Link Track Events**
+  Enter the Adobe Analytics event variables that you want to use for counting link clicks.
 
-  Separate multiple variable names with a comma.  
+  Separate multiple variable names with a comma.
 
   The default value of `None` causes no event tracking.
 
-* **Link Track Vars** 
-  Enter the Adobe Analytics variables that you want to send to Adobe Analytics when links are clicked. Separate multiple variable names with a comma.  
+* **Link Track Vars**
+  Enter the Adobe Analytics variables that you want to send to Adobe Analytics when links are clicked. Separate multiple variable names with a comma.
 
   The default value of `None` causes no variable data to be sent.
 
@@ -146,69 +146,69 @@ This example illustrates how the mapping works in the context of tracking and th
 
    >[!NOTE]
    >
-   >The component that you should use in a real-life scenario depends on the component inherited from (if at all). 
+   >The component that you should use in a real-life scenario depends on the component inherited from (if at all).
    >
    >If not you should have your own component exposed there (by defining an analytics subnode in its page component).
 
    Configure the mapping according to the following table, by dragging the Analytics (SiteCatalyst) variable from the left side-panel:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>CQ Variable<br /> </th> 
-   <th>Entry in Variables Browser<br /> </th> 
-   <th>Adobe Analytics Variable</th> 
-  </tr> 
-  <tr> 
-   <td>pagedata.title</td> 
-   <td>Custom eVar 1 (eVar1)</td> 
-   <td>eVar1</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.pageView</td> 
-   <td>Custom 1 (event1)</td> 
-   <td>event1</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>CQ Variable<br /> </th>
+   <th>Entry in Variables Browser<br /> </th>
+   <th>Adobe Analytics Variable</th>
+  </tr>
+  <tr>
+   <td>pagedata.title</td>
+   <td>Custom eVar 1 (eVar1)</td>
+   <td>eVar1</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.pageView</td>
+   <td>Custom 1 (event1)</td>
+   <td>event1</td>
+  </tr>
+ </tbody>
 </table>
 
 1. Drag the Search component to the mappings area of the framework. The Search component belongs to the General component group in Sidekick. Configure the mapping according to the following table, by dragging the Analytics (SiteCatalyst) variable from the left side-panel:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>CQ Variable<br /> </th> 
-   <th>Entry in Variables Browser</th> 
-   <th>Adobe Analytics Variable</th> 
-  </tr> 
-  <tr> 
-   <td>eventdata.keyword</td> 
-   <td>Custom eVar 2 (eVar2)</td> 
-   <td>eVar2</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.results</td> 
-   <td>Custom eVar 3 (eVar3)</td> 
-   <td>eVar3</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.search</td> 
-   <td>Custom 2 (event2)</td> 
-   <td>event2</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>CQ Variable<br /> </th>
+   <th>Entry in Variables Browser</th>
+   <th>Adobe Analytics Variable</th>
+  </tr>
+  <tr>
+   <td>eventdata.keyword</td>
+   <td>Custom eVar 2 (eVar2)</td>
+   <td>eVar2</td>
+  </tr>
+  <tr>
+   <td>eventdata.results</td>
+   <td>Custom eVar 3 (eVar3)</td>
+   <td>eVar3</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.search</td>
+   <td>Custom 2 (event2)</td>
+   <td>event2</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Configure external link tracking {#configure-external-link-tracking}
 
 1. In your framework, expand the **Link tracking Configuration** area.
-1. Deselect **Track Downloads**.  
+1. Deselect **Track Downloads**.
 
 1. Select **Track External**.
 1. Deselect **Leave Query String**.
-1. Use the following value for the **External Filters** list to identify it as an external URL: 
+1. Use the following value for the **External Filters** list to identify it as an external URL:
 
-   `‘yahoo.com’`  
+   `‘yahoo.com’`
 
 1. Add the following value to the **Link Track Events** field:
 
@@ -216,15 +216,15 @@ This example illustrates how the mapping works in the context of tracking and th
        event1,event2
    ```
 
-1. Add the following value to the **Link track vars** field: 
+1. Add the following value to the **Link track vars** field:
 
    ```
        eVar1,eVar2
    ```
 
-1. On the page that is associated with the framework, add a **Text** component. Inside the **Text** component, add a hyperlink pointing to the following address: 
+1. On the page that is associated with the framework, add a **Text** component. Inside the **Text** component, add a hyperlink pointing to the following address:
 
-   `https://search.yahoo.com/?p=this`  
+   `https://search.yahoo.com/?p=this`
 
 1. Switch to **Preview mode** and click the link.
 
@@ -266,7 +266,7 @@ To enable ad-hoc link tracking you need to:
 
 Configure your Adobe Analytics framework to enable ad-hoc link tracking.
 
-1. Open the Adobe Analytics framework and expand the **Link Tracking Configuration** section.  
+1. Open the Adobe Analytics framework and expand the **Link Tracking Configuration** section.
 
 1. Enable **Ad-hoc Link Tracking**.
 
@@ -313,7 +313,7 @@ Before you can configure ad-hoc link tracking for **Text** components themselves
 
 Use the following procedure to configure link tracking for a **Text** component:
 
-1. Open the page in edit mode and edit the **Text** component.  
+1. Open the page in edit mode and edit the **Text** component.
 
 1. Select the text that you want to use as hypertext and click the Hyperlink button.
 
@@ -323,18 +323,18 @@ Use the following procedure to configure link tracking for a **Text** component:
 
    >[!NOTE]
    >
-   >Custom link tracking is visible as a separate action, beside the Link/Unlink action (Analytics Icon). 
+   >Custom link tracking is visible as a separate action, beside the Link/Unlink action (Analytics Icon).
    >
    >It will only be enabled when you have selected a valid Link in the RTE.
 
    ![aa-17](assets/aa-17.png)
 
-1. Enable **Custom Link Tracking** to override the link tracking configuration of the Adobe Analytics framework and to enable link tracking for the current link.  
+1. Enable **Custom Link Tracking** to override the link tracking configuration of the Adobe Analytics framework and to enable link tracking for the current link.
 
 1. (Optional) To track events with the link click, add Adobe Analytics event names in the **Include Adobe Analytics Variables** field. Separate multiple event name with commas, for example
 
    `event1, event22`.
-   
+
 1. (Optional) To track variable data with the link click, add Adobe Analytics variables in the **Include Adobe Analytics Variables** field. Use either of the following formats:
 
     * `*<Variable-name>*: *<Dynamic Value>*`

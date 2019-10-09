@@ -5,7 +5,7 @@ description: Discusses network considerations when designing an AEM Assets deplo
 seo-description: Discusses network considerations when designing an AEM Assets deployment.
 uuid: 40171fba-8e57-4aee-a765-269877e77f2d
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 70258b2a-2196-4804-94de-9a530eff36b9

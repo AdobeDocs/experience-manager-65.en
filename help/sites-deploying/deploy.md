@@ -5,7 +5,7 @@ description: Learn how to get started with the AEM installation.
 seo-description: Learn how to get started with the AEM installation.
 uuid: 552a41a1-a8b3-4c5a-bfb3-718bcb612752
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
@@ -95,7 +95,7 @@ There are many advanced options and elaborations of this setup, but the basic pa
 
 The following sections describe both the scenarios:
 
-* **On-premise**: AEM deployed and managed in your corporate environment.  
+* **On-premise**: AEM deployed and managed in your corporate environment.
 
 * **Managed Services - Cloud Manager for Adobe Experience Manager**: AEM deployed and managed by Adobe Managed Services.
 
@@ -185,8 +185,8 @@ In the following section we describe the **standalone installation**. For detail
 
 AEM will take a few minutes to unpack the jar file, install itself, and start up. The above procedure results in:
 
-* an **AEM author** instance 
-* running on **localhost** 
+* an **AEM author** instance
+* running on **localhost**
 * on port **4502**
 
 To access the instance point your browser to:
@@ -238,7 +238,7 @@ When the quickstart jar is launched for the first time it will unpack itself int
         conf/
         launchpad/
         logs/
-        metrics/        
+        metrics/
         monitoring/
         opt/
         repository/
@@ -287,7 +287,7 @@ AEM starts and automatically redirects your web browser to the appropriate page,
 
 Once logged in, you have access to AEM. For further information, depending on the your role, see the following:
 
-* [Authoring](/help/sites-authoring/home.md) 
+* [Authoring](/help/sites-authoring/home.md)
 * [Administering](/help/sites-administering/home.md)
 * [Developing](/help/sites-developing/home.md)
 * [Managing](/help/managing/best-practices.md)

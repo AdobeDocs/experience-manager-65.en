@@ -5,7 +5,7 @@ description: Client-side libraries for Communities
 seo-description: Client-side libraries for Communities
 uuid: 0a62f629-e6af-4269-862e-0595824c329f
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
@@ -33,11 +33,11 @@ When the required clientlibs are missing, [adding a Communities component to a p
 
 ### Example: Placed Reviews without Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-244](assets/chlimage_1-244.png) 
+![chlimage_1-244](assets/chlimage_1-244.png)
 
 ### Example: Placed Reviews with Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-245](assets/chlimage_1-245.png) 
+![chlimage_1-245](assets/chlimage_1-245.png)
 
 ## Identifying Required Clientlibs {#identifying-required-clientlibs}
 
@@ -50,7 +50,7 @@ For example, at the very top of the [Reviews page](http://localhost:4502/content
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-246](assets/chlimage_1-246.png) 
+![chlimage_1-246](assets/chlimage_1-246.png)
 
 ## Adding Required Clientlibs {#adding-required-clientlibs}
 

@@ -5,7 +5,7 @@ description: Customizing server-side in AEM Communities
 seo-description: Customizing server-side in AEM Communities
 uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
@@ -33,9 +33,9 @@ All SocialComponent classes must implement the interface `com.adobe.cq.social.sc
 
 ### SocialCollectionComponent Interface {#socialcollectioncomponent-interface}
 
-The SocialCollectionComponent interface extends the SocialComponent interface to better represent resources that are collections of other resources. 
+The SocialCollectionComponent interface extends the SocialComponent interface to better represent resources that are collections of other resources.
 
-All SocialCollectionComponent classes must implement the interface com.adobe.cq.social.scf.SocialCollectionComponent  
+All SocialCollectionComponent classes must implement the interface com.adobe.cq.social.scf.SocialCollectionComponent
 
 ### SocialComponentFactory Interface {#socialcomponentfactory-interface}
 

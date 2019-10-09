@@ -6,7 +6,7 @@ seo-description: How to create an adaptive form using AEM Forms. Adaptive forms 
 uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
 content-type: reference
 topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 ---
 
@@ -19,7 +19,7 @@ Follow these steps to create an adaptive form.
 1. Access AEM Forms Author instance at `https://*[server]:[port]*/*<custom-context-if-any*>.`
 
    ```
-   
+
    ```
 
 1. Enter your credentials on the AEM login page.
@@ -36,7 +36,7 @@ Follow these steps to create an adaptive form.
 
     * **[!UICONTROL Title:]** Specifies the display name of the form. The title helps you identify the form in the AEM Forms user interface.
     * **[!UICONTROL Name:]** Specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
-    * **[!UICONTROL Description:]** Specifies the detailed information about the form. 
+    * **[!UICONTROL Description:]** Specifies the detailed information about the form.
     * **[!UICONTROL Tags:]** Specifies tags to uniquely identify the adaptive form. Tags help in searching the form. To create tags, type new tag names in the **Tags **box.
 
 1. You can create an adaptive form based on one of following form models:
@@ -50,9 +50,9 @@ Follow these steps to create an adaptive form.
 
 1. Tap **Create**. An adaptive form is created and a dialog to open the form for editing appears.
 
-   Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears. 
+   Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
-   Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.  
+   Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
 1. Tap **[!UICONTROL Open]** to open the newly created form in a new tab. The form opens for editing and displays the contents available in the template. It also displays the sidebar to customize the newly created form according to the needs.
 
@@ -172,4 +172,4 @@ By default, the contents of an adaptive form are saved on a user action, such as
 
 ### Enable Auto Save for an adaptive form {#enable-auto-save-for-an-adaptive-form}
 
-By default, the auto save option is not enabled. You can enable the auto save option from the Auto Save tab of an adaptive form. The Auto Save tab also provides several other configuration options. Perform the following steps to enable and configure the auto save option for an adaptive form: 
+By default, the auto save option is not enabled. You can enable the auto save option from the Auto Save tab of an adaptive form. The Auto Save tab also provides several other configuration options. Perform the following steps to enable and configure the auto save option for an adaptive form:

@@ -7,7 +7,7 @@ uuid: 495ba9cc-02f5-4ce5-9503-9f61ca5482db
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 ---
 
@@ -40,34 +40,34 @@ While a single HDR image is often sufficient for IBL stages, AEM 3D provides add
 
 You can fine-tune the appearance of the IBL stage with the following stage properties:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property</strong><br /> </td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>IBL Sun Details</td> 
-   <td><p>Lets you adjust the direction and strength of the supplemental light source that simulates the sun. <span class="diff-html-added">This light source increases the lighting brightness and causes the object to cast a drop-shadow onto the ground plane. Shadow casting is supported when rendering with Rapid Refine and for previewing with Google Chrome; however, it is currently not supported by other browsers.</span></p> 
-    <ul> 
-     <li><strong>lat</strong> - The vertical position of the sun light source (<code>0.0</code>-<code>1.0</code>).<br /> A setting of <code>0.0</code> is at the horizon (vertical center of the Diffuse Lighting Environment Image); <code>1.0</code> is at the zenith (top edge of the Diffuse Lighting Environment Image).</li> 
-     <li><strong>long</strong> - The horizontal position of the sun light source (<code>0.0</code>-<code>1.0</code>).<br /> A setting of 0.0 corresponds to the left; 1.0 corresponds to the right edge of the Diffuse Lighting Environment Image.<br /> </li> 
-     <li><strong>bright</strong> - The brightness of the sun light source. Increase this value to brighten the sunlight source; decrease this value to darken. <br /> A setting of <code>0</code> turns off supplemental lighting and disables cast shadows. The parameter does not affect environment reflections.<br /> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>IBL Camera Height</td> 
-   <td>If the IBL background appears distorted near the horizon, it is possible to reduce or eliminate the distortion by adjusting this property. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Environment Lighting</td> 
-   <td><p><span class="diff-html-added">Lets you control the diffuse lighting. You may need to adjust this property manually to correct the lighting brightness if the Diffuse Lighting Environment Image is unusually bright or dark (for example, night scenes).</span></p> 
-    <ul> 
-     <li><strong>r, g, b</strong> - Currently not used.</li> 
-     <li><strong>bright</strong> - <span class="diff-html-added">Brightness multiplier. Increasing or decreasing this value increases or decreases the overall lighting intensity (both the basic IBL lighting and the brightness of the sunlight source).</span></li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property</strong><br /> </td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>IBL Sun Details</td>
+   <td><p>Lets you adjust the direction and strength of the supplemental light source that simulates the sun. <span class="diff-html-added">This light source increases the lighting brightness and causes the object to cast a drop-shadow onto the ground plane. Shadow casting is supported when rendering with Rapid Refine and for previewing with Google Chrome; however, it is currently not supported by other browsers.</span></p>
+    <ul>
+     <li><strong>lat</strong> - The vertical position of the sun light source (<code>0.0</code>-<code>1.0</code>).<br /> A setting of <code>0.0</code> is at the horizon (vertical center of the Diffuse Lighting Environment Image); <code>1.0</code> is at the zenith (top edge of the Diffuse Lighting Environment Image).</li>
+     <li><strong>long</strong> - The horizontal position of the sun light source (<code>0.0</code>-<code>1.0</code>).<br /> A setting of 0.0 corresponds to the left; 1.0 corresponds to the right edge of the Diffuse Lighting Environment Image.<br /> </li>
+     <li><strong>bright</strong> - The brightness of the sun light source. Increase this value to brighten the sunlight source; decrease this value to darken. <br /> A setting of <code>0</code> turns off supplemental lighting and disables cast shadows. The parameter does not affect environment reflections.<br /> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>IBL Camera Height</td>
+   <td>If the IBL background appears distorted near the horizon, it is possible to reduce or eliminate the distortion by adjusting this property. <br /> </td>
+  </tr>
+  <tr>
+   <td>Environment Lighting</td>
+   <td><p><span class="diff-html-added">Lets you control the diffuse lighting. You may need to adjust this property manually to correct the lighting brightness if the Diffuse Lighting Environment Image is unusually bright or dark (for example, night scenes).</span></p>
+    <ul>
+     <li><strong>r, g, b</strong> - Currently not used.</li>
+     <li><strong>bright</strong> - <span class="diff-html-added">Brightness multiplier. Increasing or decreasing this value increases or decreases the overall lighting intensity (both the basic IBL lighting and the brightness of the sunlight source).</span></li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Increasing the spherical background diameter of an IBL stage {#increasing-the-spherical-background-diameter-of-an-ibl-stage}

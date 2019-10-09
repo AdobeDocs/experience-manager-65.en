@@ -5,7 +5,7 @@ description: To change the appearance, design, or layout of an adaptive form, yo
 seo-description: To change the appearance, design, or layout of an adaptive form, you can change the template applied to it without impacting the form contents.
 page-status-flag: never-activated
 uuid: b8f4ec1f-5330-476c-a61d-8c22a6ba92cf
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8a569d4-9ead-4587-85c6-1b04e1628a52
 ---
 

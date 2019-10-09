@@ -5,7 +5,7 @@ description: Learn how to create a language root using the Classic UI.
 seo-description: Learn how to create a language root using the Classic UI.
 uuid: d44a51a0-1507-4838-851c-cacff48ad825
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
@@ -41,7 +41,7 @@ The following procedure uses the classic UI to create a language root of a site.
 
    In the following example, the equipment/sunglasses/irian page is being copied to the French language version.
 
-   ![languagecopydilogdropdown](assets/languagecopydilogdropdown.png) 
+   ![languagecopydilogdropdown](assets/languagecopydilogdropdown.png)
 
    | Type of language copy |Description |
    |---|---|

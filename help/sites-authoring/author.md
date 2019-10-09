@@ -5,7 +5,7 @@ description: Concepts of authoring in AEM
 seo-description: Concepts of authoring in AEM
 uuid: 824c8b91-07c7-471b-b3aa-5a73d6d48414
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
@@ -22,7 +22,7 @@ These interact to enable you to make content available on your website - so that
 
 The author environment provides the mechanisms for creating, updating and reviewing this content before actually publishing it:
 
-* An author creates and reviews the content (this can be of several types; for example, pages, assets, publications, etc)  
+* An author creates and reviews the content (this can be of several types; for example, pages, assets, publications, etc)
 * which will, at some point, be published to your website.
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
@@ -31,7 +31,7 @@ On the author environment the functionality of AEM is made available through two
 
 >[!NOTE]
 >
->AEM and the Dispatcher are used to publish this AEM documentation. 
+>AEM and the Dispatcher are used to publish this AEM documentation.
 
 ## Author Environment {#author-environment}
 
@@ -44,12 +44,12 @@ The author works in what is known as the **[author environment](/help/sites-auth
 Depending on how your instance and your personal access rights are configured you can perform many tasks on your content, including (amongst others):
 
 * generate new content, or edit existing content, on a page
-* use predefined templates to create new content pages  
+* use predefined templates to create new content pages
 * create, edit and manage your assets and collections
-* create, edit and manage your publications  
+* create, edit and manage your publications
 * develop your campaigns and the related resources
-* develop and manage community sites  
-* move, copy or delete content pages, assets, etc  
+* develop and manage community sites
+* move, copy or delete content pages, assets, etc
 * publish (or unpublish) pages, assets, etc
 
 Additionally, there are administrative tasks that help you manage your content:
@@ -73,13 +73,13 @@ When the AEM site is a [community site](/help/communities/overview.md), or inclu
 >
 >Unfortunately there is sometimes an overlap in the terminology used. This can happen with:
 >
->* **Publish / Unpublish** 
->  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).  
+>* **Publish / Unpublish**
+>  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).
 >
->* **Activate / Deactivate** 
->  These terms are synonymous with publish/unpublish. They are more common in the classic UI.  
+>* **Activate / Deactivate**
+>  These terms are synonymous with publish/unpublish. They are more common in the classic UI.
 >
->* **Replicate / Replication** 
+>* **Replicate / Replication**
 >  These are the technical terms used to indicate the movement of data (e.g. page content, files, code, user comments) from one environment to another; i.e. when publishing, or reverse-replicating user comments.
 >
 

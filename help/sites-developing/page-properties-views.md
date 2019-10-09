@@ -5,7 +5,7 @@ description: Every page has a set of properties that you can edit as required
 seo-description: Every page has a set of properties that you can edit as required
 uuid: cbfca6e6-cb9e-43b1-8889-09a7cc9f8a51
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
@@ -21,7 +21,7 @@ Every page has a set of [properties](/help/sites-authoring/editing-page-properti
 
 The default state for every page property is:
 
-* hidden in the create view (e.g. **Create Page** wizard)  
+* hidden in the create view (e.g. **Create Page** wizard)
 
 * available in the edit view (e.g. **View Properties**)
 
@@ -40,7 +40,7 @@ Fields must be specifically configured if any change is required. This is done u
 For example, see the settings for fields grouped under the **More Titles and Description** on the **Basic** tab for the foundation Page component. These are visible in the **Create Page** wizard as `cq:showOnCreate` has been set to `true`:
 
 ```xml
-/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles   
+/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles
 ```
 
 ## Configuring your Page Properties {#configuring-your-page-properties}
@@ -60,7 +60,7 @@ For example, by default the [**Create Page** wizard](/help/sites-authoring/manag
    >
    >As reference, see:
    >
-   >``` 
+   >```
    >/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog
    >```
    >
@@ -70,7 +70,7 @@ For example, by default the [**Create Page** wizard](/help/sites-authoring/manag
    >
    >The recommended method for configuration and other changes is:
    >
-   >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps` 
+   >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
    >1. Make any changes within `/apps`
 
 1. Set the `path` property on `basic` to point to the override of the basic tab (see the next step as well). For example:

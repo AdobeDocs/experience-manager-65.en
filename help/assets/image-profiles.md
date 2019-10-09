@@ -5,7 +5,7 @@ description: Create image profiles that contain settings for unsharp mask, and s
 seo-description: Create image profiles that contain settings for unsharp mask, and smart crop, or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
@@ -23,41 +23,41 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 You have two image cropping options to choose from and an option for automating the creation of color and image swatches.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>When to use</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Pixel Crop</td> 
-   <td>Bulk crop images based on dimensions only.</td> 
-   <td><p>To use this option, select <strong>Pixel Crop</strong> from the Cropping Options drop-down list.</p> <p>To crop from the sides of an image, you enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file.</p> <p>An Image Profile pixel crop renders in the following manner:<br /> </p> 
-    <ul> 
-     <li>Values are Top, Bottom, Left, and Right.</li> 
-     <li>Top left is considered 0,0 and the pixel crop is calculated from there.</li> 
-     <li>Crop starting point: Left is X and Top is Y</li> 
-     <li>Horizontal calculation: horizontal pixel dimension of original image minus Left and then minus Right.</li> 
-     <li>Vertical calculation: vertical pixel height minus Top, and then minus Bottom.</li> 
-    </ul> <p>For example, suppose you have a 4000 x 3000 pixel image. You use values: Top=250; Bottom=500; Left=300; Right=700.</p> <p>From Top Left (300,250) crop using the fill space of (4000-300-700, 3000-250-500, or 3000,2250).</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Smart Crop</td> 
-   <td>Bulk crop images based on their visual focal point.</td> 
-   <td><p>Smart Crop uses the power of artificial intelligence in Adobe Sensei to quickly automate the cropping of images in bulk. Smart Crop automatically detects and crops to the focal point in any image to capture the intended point of interest, regardless of screen size.</p> <p>To use Smart Crop, select <strong>Smart Crop</strong> from the Cropping Options drop-down list, then to the right of Responsive Image Crop, enable (turn on) the feature.</p> <p>The default breakpoint sizes of Large, Medium, and Small generally cover the full range of sizes that most images are used on mobile and tablet devices, desktops, and banners. If desired, you can edit the default names of Large, Medium, and Small.</p> <p>To add more breakpoints, click <strong>Add Crop</strong>; to delete a crop, click the Garbage Can icon.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Color and Image Swatch</td> 
-   <td>Bulk generate an image swatch for each image.</td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>When to use</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Pixel Crop</td>
+   <td>Bulk crop images based on dimensions only.</td>
+   <td><p>To use this option, select <strong>Pixel Crop</strong> from the Cropping Options drop-down list.</p> <p>To crop from the sides of an image, you enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file.</p> <p>An Image Profile pixel crop renders in the following manner:<br /> </p>
+    <ul>
+     <li>Values are Top, Bottom, Left, and Right.</li>
+     <li>Top left is considered 0,0 and the pixel crop is calculated from there.</li>
+     <li>Crop starting point: Left is X and Top is Y</li>
+     <li>Horizontal calculation: horizontal pixel dimension of original image minus Left and then minus Right.</li>
+     <li>Vertical calculation: vertical pixel height minus Top, and then minus Bottom.</li>
+    </ul> <p>For example, suppose you have a 4000 x 3000 pixel image. You use values: Top=250; Bottom=500; Left=300; Right=700.</p> <p>From Top Left (300,250) crop using the fill space of (4000-300-700, 3000-250-500, or 3000,2250).</p> </td>
+  </tr>
+  <tr>
+   <td>Smart Crop</td>
+   <td>Bulk crop images based on their visual focal point.</td>
+   <td><p>Smart Crop uses the power of artificial intelligence in Adobe Sensei to quickly automate the cropping of images in bulk. Smart Crop automatically detects and crops to the focal point in any image to capture the intended point of interest, regardless of screen size.</p> <p>To use Smart Crop, select <strong>Smart Crop</strong> from the Cropping Options drop-down list, then to the right of Responsive Image Crop, enable (turn on) the feature.</p> <p>The default breakpoint sizes of Large, Medium, and Small generally cover the full range of sizes that most images are used on mobile and tablet devices, desktops, and banners. If desired, you can edit the default names of Large, Medium, and Small.</p> <p>To add more breakpoints, click <strong>Add Crop</strong>; to delete a crop, click the Garbage Can icon.</p> </td>
+  </tr>
+  <tr>
+   <td>Color and Image Swatch</td>
+   <td>Bulk generate an image swatch for each image.</td>
    <td><p><strong>Note</strong>: Smart Swatch is not supported in Dynamic Media Classic.</p> <p>Automatically locate and generate high-quality swatches from product images that show color or texture.</p> <p>To use Color and Image Swatch, select <strong>Smart Crop</strong> from the Cropping Options drop-down list, then to the right of Color and Image Swatch, enable (turn on) the feature. Enter a pixel value in the Width and Height text boxes.</p> <p>While all image crops are available from the Renditions rail, swatches are only used by way of the Copy URL feature. Note that you must use your own viewing component to render the swatch on your site. (The exception to this is carousel banners. Dynamic Media provides the viewing component for the swatch used in carousel banners.)</p> <p><strong>Using image swatches</strong></p> <p>The URL for image swatches is straightforward. That is:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>where <code>:Swatch</code> is appended to the asset request.</p> <p><strong>Using color swatches</strong></p> <p>To use color swatches, you make a <code>req=userdata</code> request with the following:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>For example, the following is a swatch asset in Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>and here is the swatch asset's corresponding <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>The <code>req=userdata</code> response is as follows:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
        SmartCropWidth=200.0
-       SmartSwatchColor=0xA56DB2</code></p> <p>You can also request a <code>req=userdata</code> response in either XML or JSON format, as in the following respective URL examples:</p> <p><code>https://<span class="code">my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json</span><br /> <br /> <code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml</code></p> <p><strong>Note</strong>: You must create your own WCM component to request a color swatch and parse the <code>SmartSwatchColor</code> attribute, represented by a 24-bit RGB hexidecimal value.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_userdata.html" target="_blank">userdata in the Viewers Reference Guide</a>.</p> </td> 
-  </tr> 
- </tbody> 
+       SmartSwatchColor=0xA56DB2</code></p> <p>You can also request a <code>req=userdata</code> response in either XML or JSON format, as in the following respective URL examples:</p> <p><code>https://<span class="code">my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json</span><br /> <br /> <code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml</code></p> <p><strong>Note</strong>: You must create your own WCM component to request a color swatch and parse the <code>SmartSwatchColor</code> attribute, represented by a 24-bit RGB hexidecimal value.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_userdata.html" target="_blank">userdata in the Viewers Reference Guide</a>.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Unsharp Mask {#unsharp-mask}
@@ -70,25 +70,25 @@ You use **Unsharp mask** to fine-tune a sharpening filter effect on the final do
 
 In **Unsharp Mask**, you have the following filtering options:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Amount</td> 
-   <td>Controls the amount of contrast applied to edge pixels. The default is 1.75. For high-resolution images, you can increase it to as high as 5. Think of Amount as a measure of filter intensity. Range is 0-5.</td> 
-  </tr> 
-  <tr> 
-   <td>Radius</td> 
-   <td>Determines the number of pixels surrounding the edge pixels that affect the sharpening. For high-resolution images, enter from 1 through 2. A low value sharpens only the edge pixels; a high value sharpens a wider band of pixels. The correct value depends on the size of the image. The default value is 0.2. Range is 0-250.</td> 
-  </tr> 
-  <tr> 
-   <td>Threshold</td> 
-   <td><p>Determines the range of contrast to ignore when the unsharp mask filter is applied. In other words, this option determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and are sharpened. To avoid introducing noise, experiment with values between 0-255.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Amount</td>
+   <td>Controls the amount of contrast applied to edge pixels. The default is 1.75. For high-resolution images, you can increase it to as high as 5. Think of Amount as a measure of filter intensity. Range is 0-5.</td>
+  </tr>
+  <tr>
+   <td>Radius</td>
+   <td>Determines the number of pixels surrounding the edge pixels that affect the sharpening. For high-resolution images, enter from 1 through 2. A low value sharpens only the edge pixels; a high value sharpens a wider band of pixels. The correct value depends on the size of the image. The default value is 0.2. Range is 0-250.</td>
+  </tr>
+  <tr>
+   <td>Threshold</td>
+   <td><p>Determines the range of contrast to ignore when the unsharp mask filter is applied. In other words, this option determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and are sharpened. To avoid introducing noise, experiment with values between 0-255.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 Sharpening is described in [Sharpening Images](https://marketing.adobe.com/resources/help/en_US/s7/sharpening/s7_sharpening_images.pdf).
@@ -189,11 +189,11 @@ See also [Editing the smart crop or smart swatch of multiple images](#editing-th
 
 **To edit the smart crop or smart swatch of a single image**:
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch image profile applied to it.  
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch image profile applied to it.
 
 1. Tap the folder to open its contents.
 1. Tap the image whose smart crop or smart swatch you want to adjust.
-1. On the toolbar, tap **[!UICONTROL Smart Crop]**.  
+1. On the toolbar, tap **[!UICONTROL Smart Crop]**.
 
 1. Do any of the following:
 
@@ -215,12 +215,12 @@ You can re-run smart crop to generate the additional crops again, if required.
 **To edit the smart crop or smart swatch of multiple images**:
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to a folder that has a smart crop or smart swatch image profile applied to it.
-1. On the folder, tap the **[!UICONTROL More Actions]** (...) icon, then tap **[!UICONTROL Smart Crop]**.  
+1. On the folder, tap the **[!UICONTROL More Actions]** (...) icon, then tap **[!UICONTROL Smart Crop]**.
 
 1. On the **[!UICONTROL Edit Smart Crops]** page, do any of the following:
 
     * Adjust the viewing size of images on the page.
-  
+
       To the right of the breakpoint name drop-down list, drag the slider bar left or right to change the size of the viewable image display.
 
        ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)

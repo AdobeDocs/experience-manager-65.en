@@ -4,7 +4,7 @@ seo-title: AEM 6.4 Implementation User Guide
 description: An overview of how to implement AEM 6.4
 seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
 # AEM 6.4 Implementation User Guides {#aem-64-implementation-user-guides}

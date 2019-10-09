@@ -7,7 +7,7 @@ uuid: 940680fd-b7ab-4376-aa5b-e139223522ea
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 ---
 

@@ -6,7 +6,7 @@ seo-description: Follow this page to create live copy of a channel, view propert
 uuid: 78ec7219-95ab-44d1-9514-1b97aded5bf4
 contentOwner: jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 84085a03-1798-4f1d-858c-6014a3f6aff6
 ---
@@ -21,7 +21,7 @@ This page describes creating live copy of a channel, viewing properties, checkin
 
 >[!NOTE]
 >
->To learn more about Live Copy Sources and Blueprint Configurations, see [MSM Best Practices](/help/sites-administering/msm-best-practices.md). 
+>To learn more about Live Copy Sources and Blueprint Configurations, see [MSM Best Practices](/help/sites-administering/msm-best-practices.md).
 
 ## Creating a Live Copy {#creating-a-live-copy}
 
@@ -29,7 +29,7 @@ Follow the steps below to create a live copy of a channel in your project folder
 
 1. Select the Adobe Experience Manager link (top left) and then **Screens**. Alternatively, you can ﻿go directly to: [http://localhost:4502/screens.html/content/screens](http://localhost:4502/screens.html/content/screens).
 
-1. Navigate to Screens project and click **Channels**. 
+1. Navigate to Screens project and click **Channels**.
 1. Click **Create** and select **Live Copy** to create a live copy of the channel.
 
 1. Select the destination and click **Next**.

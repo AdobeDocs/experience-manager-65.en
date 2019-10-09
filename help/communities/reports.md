@@ -5,7 +5,7 @@ description: Learn how to access reports
 seo-description: Learn how to access reports
 uuid: 580f5eb8-24b2-4404-90d4-81f7108d1ee6
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
@@ -70,13 +70,13 @@ The report provides information on their progress as well as any comments or rat
 
 Select the criteria for the report:
 
-* **[!UICONTROL Site]** 
+* **[!UICONTROL Site]**
   Select an enablement community site
-* **[!UICONTROL User or Group]** 
+* **[!UICONTROL User or Group]**
   * Select User to generate a report for one learner
   * Select Group to generate a report for a group of learners
   The tunnel service will access members and member groups from the publish environment
-* **[!UICONTROL Assignment]** 
+* **[!UICONTROL Assignment]**
   Choose from among the enablement resources assigned to the selected learner(s)
 
 Select **[!UICONTROL Generate]** to create the report:
@@ -91,11 +91,11 @@ The Views console allows reports to be generated on page views by community feat
 
 Select the criteria for the report:
 
-* **[!UICONTROL Site]** 
+* **[!UICONTROL Site]**
   Select a community site
-* **[!UICONTROL Content Type]** 
+* **[!UICONTROL Content Type]**
   May choose All content or select one of the features present on the site
-* Time frame 
+* Time frame
   Select one of:
     * Last 7 days
     * Last 30 days
@@ -114,11 +114,11 @@ The Posts console allows reports to be generate on number of posts to community 
 
 Select the criteria for the report:
 
-* **[!UICONTROL Site]** 
+* **[!UICONTROL Site]**
   Select a community site
-* **[!UICONTROL Content Type]** 
+* **[!UICONTROL Content Type]**
   May choose All content or select one of the features present on the site
-* Time frame 
+* Time frame
   Select one of:
     * Last 7 days
     * Last 30 days

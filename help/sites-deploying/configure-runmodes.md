@@ -5,7 +5,7 @@ description: Learn how to tune your AEM instance for specific purposes by using 
 seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
 uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
@@ -38,13 +38,13 @@ Installation run modes are provided out-of-the-box:
 
 These are two pairs of mutually exclusive run modes; for example, you can:
 
-* define either `author` or `publish`, not both at the same time  
+* define either `author` or `publish`, not both at the same time
 
 * combine `author` with either `samplecontent` or `nosamplecontent` (but not both)
 
 >[!CAUTION]
 >
->When using one of the above run modes (author, publish, samplecontent, nosamplecontent), the value used at installation time defines the run mode for the *entire lifetime* of that installation. 
+>When using one of the above run modes (author, publish, samplecontent, nosamplecontent), the value used at installation time defines the run mode for the *entire lifetime* of that installation.
 >
 >For these run modes you *cannot* change them after installation.
 
@@ -68,7 +68,7 @@ Customized run modes can also be selected at each startup.
 
 These modes allow you to control the use of sample content. The sample content is defined before the quickstart is built and can include packages, configurations, etc:
 
-* The `samplecontent` run mode will install this content (the default mode).  
+* The `samplecontent` run mode will install this content (the default mode).
 
 * The `nosamplecontent` mode will not install the sample content.
 
@@ -82,15 +82,15 @@ The run mode is indicated by a suffix on the folder name. This allows you to sto
 
 * `config`
 
-  Applicable for all run modes  
+  Applicable for all run modes
 
 * `config.author`
 
-  Used for author run mode  
+  Used for author run mode
 
 * `config.publish`
 
-  Used for publish run mode  
+  Used for publish run mode
 
 * `config.<run-mode>`
 
@@ -117,7 +117,7 @@ If you have defined configurations for multiple run modes then you need to defin
 
 1. [ `sling.properties` file](#using-the-sling-properties-file)
 1. [ `-r` option](#using-the-r-option)
-1. [system properties (`-D`)](#using-a-system-property-in-the-start-script)  
+1. [system properties (`-D`)](#using-a-system-property-in-the-start-script)
 
 1. [Filename detection](#filename-detection-renaming-the-jar-file)
 
@@ -127,7 +127,7 @@ When you are using an application server you can also [define the run mode in we
 
 The `sling.properties` file can be used to define the required run mode:
 
-1. Edit the configuration file: 
+1. Edit the configuration file:
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 

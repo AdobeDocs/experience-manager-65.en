@@ -5,7 +5,7 @@ description: Communities messaging
 seo-description: Communities messaging
 uuid: 35d98667-a82e-4ed1-b6a1-1ffbbe1d08b5
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
@@ -41,52 +41,52 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Message Fields Whitelist]** 
+* **[!UICONTROL Message Fields Whitelist]**
   Specifies the properties of the Compose Message component users can edit and persist. If new form elements are added, then the element id would need to be added if desired to be stored in SRP. Default is two entries: *subject* and *content*.
 
-* **[!UICONTROL Message box size limit]** 
+* **[!UICONTROL Message box size limit]**
   The maximum number of bytes in each user's message box. Default is *1073741824* (1 GB).
 
-* **[!UICONTROL Message count limit]** 
+* **[!UICONTROL Message count limit]**
   The total number of messages allowed per user. A value of -1 indicates an unlimited number of messages is allowed, subject to the message box size limit. Default is *10000* (10k).
 
-* **[!UICONTROL Notify delivery failure]** 
+* **[!UICONTROL Notify delivery failure]**
   If checked, notify sender if message delivery fails to some recipients. Default is *checked*.
 
-* **[!UICONTROL Failure delivery sender id]** 
+* **[!UICONTROL Failure delivery sender id]**
   Name of sender which appears in delivery failed message. Default is *failureNotifier*.
 
-* **[!UICONTROL Failure message template path]** 
+* **[!UICONTROL Failure message template path]**
   Absolute path to the delivery failed message template root. Default is */etc/notification/messaging/default*.
 
-* **[!UICONTROL maxRetries.name]** 
+* **[!UICONTROL maxRetries.name]**
   Number of times to try resending message which fails to be delivered. Default is *3*.
 
-* **[!UICONTROL minWaitBetweenRetries.name]** 
+* **[!UICONTROL minWaitBetweenRetries.name]**
   Number of seconds to wait between attempts to resend message upon failure to send. Default is *100 *(seconds).
 
-* **[!UICONTROL Count update pool size]** 
+* **[!UICONTROL Count update pool size]**
   Number of concurrent threads used for count update. Default is *10*.
 
-* **[!UICONTROL inbox.path.name]** 
+* **[!UICONTROL inbox.path.name]**
   (*Required*) The path, relative to the user's node (/home/users/*username*), to use for the **`inbox`** folder. The path must NOT end with a trailing forward slash '/'. Default is */mail/inbox* .
 
-* **[!UICONTROL sentitems.path.name]** 
+* **[!UICONTROL sentitems.path.name]**
   (*Required*) The path, relative to the user's node (/home/users/*username*), to use for the **`senditems`** folder. The path must NOT end with a trailing forward slash '/'. Default is */mail/sentitems* .
 
-* **[!UICONTROL supportAttachments.name]** 
+* **[!UICONTROL supportAttachments.name]**
   If checked, users are able to add attachments to their messages. Default is *checked*.
 
-* **[!UICONTROL batchSize.name]** 
+* **[!UICONTROL batchSize.name]**
   Number of messages to batch together for a send when sending to a large group of recipients. Default is *100*.
 
-* **[!UICONTROL maxTotalAttachmentSize.name]** 
+* **[!UICONTROL maxTotalAttachmentSize.name]**
   If supportAttachments is checked, this value specifies the maximum allowed total size (in bytes) of all attachments. Default is *104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeBlacklist.name]** 
+* **[!UICONTROL attachmentTypeBlacklist.name]**
   A blacklist of file extensions, prefixed with '**.**', that will be rejected by the system. If not blacklisted, then the extension is allowed. Extensions may be added or removed using the '**+**' and '**-**' icons. Default is *DEFAULT*.
 
-* **[!UICONTROL allowedAttachmentTypes.name]** 
+* **[!UICONTROL allowedAttachmentTypes.name]**
   **(*Action Required*)** A whitelist of file extensions, the opposite of the blacklist. To allow all file extensions, except for those blacklisted, use the '**-**' icon to remove the single empty entry.
 
 * **[!UICONTROL serviceSelector.name]**

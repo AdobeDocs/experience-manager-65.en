@@ -5,7 +5,7 @@ description: Voting component overview
 seo-description: Voting component overview
 uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
@@ -21,33 +21,33 @@ Anonymous posting of a vote is not supported. Site visitors must register and si
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> <strong>resourceType</strong></td> 
-   <td>social/tally/components/hbs/voting</td> 
-  </tr> 
-  <tr> 
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>Yes - properties are editable in <i>design </i>mode</td> 
-  </tr> 
-  <tr> 
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
-   <td> cq.social.hbs.voting</td> 
-  </tr> 
-  <tr> 
-   <td> <strong>templates</strong></td> 
-   <td><p> /libs/social/tally/components/hbs/voting/voting.hbs<br /> /libs/social/tally/components/hbs/voting/activity-title.hbs</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>CSS</strong></td> 
-   <td> /libs/social/tally/components/hbs/voting/clientlibs/votingcomponent.css</td> 
-  </tr> 
-  <tr> 
-   <td><strong>properties</strong></td> 
-   <td><p>See <a href="voting.md">Using Voting</a></p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> <strong>resourceType</strong></td>
+   <td>social/tally/components/hbs/voting</td>
+  </tr>
+  <tr>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>Yes - properties are editable in <i>design </i>mode</td>
+  </tr>
+  <tr>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
+   <td> cq.social.hbs.voting</td>
+  </tr>
+  <tr>
+   <td> <strong>templates</strong></td>
+   <td><p> /libs/social/tally/components/hbs/voting/voting.hbs<br /> /libs/social/tally/components/hbs/voting/activity-title.hbs</p> </td>
+  </tr>
+  <tr>
+   <td><strong>CSS</strong></td>
+   <td> /libs/social/tally/components/hbs/voting/clientlibs/votingcomponent.css</td>
+  </tr>
+  <tr>
+   <td><strong>properties</strong></td>
+   <td><p>See <a href="voting.md">Using Voting</a></p> </td>
+  </tr>
+ </tbody>
 </table>
 
 * [Client-side Customizations](client-customize.md)
@@ -62,7 +62,7 @@ Anonymous posting of a vote is not supported. Site visitors must register and si
 
 ### Accessing Posted Voting (UGC) {#accessing-posted-voting-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).

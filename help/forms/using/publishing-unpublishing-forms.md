@@ -5,7 +5,7 @@ description: You can schedule publishing and unpublishing of forms. Published fo
 seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
 uuid: 4de958f8-46d0-4356-ab88-70fa3d480216
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
@@ -22,7 +22,7 @@ The AEM Forms server provides two instances: Author and Publish. Author instance
 AEM Forms support the following types of assets:
 
 * Adaptive forms
-* Adaptive documents  
+* Adaptive documents
 * Adaptive form fragments
 * Themes
 * Form templates (XFA forms)
@@ -53,20 +53,20 @@ Your Adaptive Forms may utilize some configutaions, settings, and customizations
 
 An asset can have the following states:
 
-* **Unpublished:** An asset that has never been published (The unpublished state is applicable only to Forms assets. Correspondence Management assets do not have an Unpublished state.) 
+* **Unpublished:** An asset that has never been published (The unpublished state is applicable only to Forms assets. Correspondence Management assets do not have an Unpublished state.)
 * **Published**: An asset that has been published and is available on the Publish instance
 * **Modified**: An asset that is modified after being published
 
 ## Publish an asset {#publish-an-asset}
 
-1. Log in to the AEM Forms server. 
+1. Log in to the AEM Forms server.
 1. Use one of the following to select and publish an asset.
 
     1. Move the pointer over an asset and tap **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
     1. Do one of following and then tap Publish:
 
         * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
-        * If you are in the list view, select the checkbox of an asset. The asset is selected. 
+        * If you are in the list view, select the checkbox of an asset. The asset is selected.
         * Tap an asset to display its details.
         * Display an asset's properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
 
@@ -98,10 +98,10 @@ AEM Forms lets you publish all Correspondence Management assets on a server in o
 
 Complete the following steps to publish all the Correspondence Management assets on a server:
 
-1. Log in to the AEM Forms server. 
+1. Log in to the AEM Forms server.
 1. Tap **Adobe Experience Manager** in the global navigation bar.
 1. Tap ![tools-1](assets/tools-1.png), and then tap **Forms**.
-1. Tap **Publish Correspondence Management Assets**. 
+1. Tap **Publish Correspondence Management Assets**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
@@ -125,7 +125,7 @@ Follow these steps to schedule the date and time of publishing and unpublishing 
 
 1. Select an asset and tap **[!UICONTROL View Properties]**. The Metadata Properties page opens.
 1. In the Metadata Properties page, tap **[!UICONTROL Advanced]**, and then tap **[!UICONTROL Edit]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. In the **[!UICONTROL Publish On Time]** and **[!UICONTROL Publish Off Time]** fields, select the date and time. 
+1. In the **[!UICONTROL Publish On Time]** and **[!UICONTROL Publish Off Time]** fields, select the date and time.
 
    Tap **[!UICONTROL Done]** ![aem6forms_check](assets/aem6forms_check.png).
 
@@ -177,7 +177,7 @@ Everytime you publish an asset or letter after editing it, a version of the asse
 
    >[!NOTE]
    >
-   >Only the selected asset is deleted, and the dependent assets and are not deleted. To check references of an asset, tap ![references](assets/references.png) and then select an asset. 
+   >Only the selected asset is deleted, and the dependent assets and are not deleted. To check references of an asset, tap ![references](assets/references.png) and then select an asset.
    >
    >If the asset you are attempting to delete is child asset of another asset, it is not deleted. To delete such an asset, remove references of this asset from other assets and then retry.
 
@@ -192,7 +192,7 @@ To enable authentication for your forms:
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
 1. In the Adobe Experience Manager Web Console Configuration, click **Apache Sling Authentication Service** to configure it.
-1. In the Apache Sling Authentication Service dialog that appears, use the **+** button to add paths. 
+1. In the Apache Sling Authentication Service dialog that appears, use the **+** button to add paths.
 
    When you add a path, the authentication service is enabled for forms in that path.
 

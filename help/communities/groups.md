@@ -5,7 +5,7 @@ description: Groups console lets you create Community groups
 seo-description: Groups console lets you create Community groups
 uuid: 7dac2d1b-78fc-4b39-a2cb-100f1e220c23
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
@@ -34,7 +34,7 @@ Several facets of community groups are:
 
 >[!NOTE]
 >
->This Groups console, only accessible from the Communities Sites console, is not to be confused with the member [Groups console](members.md) for managing member groups. 
+>This Groups console, only accessible from the Communities Sites console, is not to be confused with the member [Groups console](members.md) for managing member groups.
 >
 >Member groups are user groups registered in the publish environment and accessed from the author environment using the [tunnel service](deploy-communities.md#tunnel-service-on-author).
 
@@ -71,17 +71,17 @@ From this Groups console, it is possible to author new groups.
   The title appears on the published site for the group.
 
 * **[!UICONTROL Community Group Description]**: A description of the group.
-* **[!UICONTROL Community Group Root]**: The root path to the group. 
+* **[!UICONTROL Community Group Root]**: The root path to the group.
 
   The default root is the parent site, but the root may be moved to any location within the web site. It is not recommended to change it.
 
-* **[!UICONTROL Additional Available Community Group Languages(s)]** menu: Use the pull down menu to select the available community group language(s). The menu displays all the language(s) in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.  
+* **[!UICONTROL Additional Available Community Group Languages(s)]** menu: Use the pull down menu to select the available community group language(s). The menu displays all the language(s) in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
 
 * **[!UICONTROL Community Group Name]**: The name of the group's root page which appears in the URL
 
     * Double-check the name as it is not easily changed after the group is created
     * The base URL will be displayed underneath the `Community Group Name`
-    * For a valid URL, append ".html"  
+    * For a valid URL, append ".html"
 
       *For example*, `http://localhost:4502/content/sites/mysight/en/mygroup.html`
 
@@ -136,14 +136,14 @@ The membership setting allows for selection of one of the three ways to secure a
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-* Optional Membership 
+* Optional Membership
 
   If selected, the community group is a public group. Site members may participate in the group and post without explicitly joining the group. Default is selected.
-* Required Membership  
+* Required Membership
 
   if selected, the community group is an open group. Community site members may view the contents of the group, but must join the group before being able to post content. Members join by selecting the `Join` button in the publish environment. Default is not selected.
 
-* Restricted Membership 
+* Restricted Membership
 
   if selected, the community group is a secret group. Community members must be explicitly invited. Invited members are entered in the search box. Members may be added later using the [Members and Groups consoles](members.md) the author environment. Default is not selected.
 
@@ -211,15 +211,15 @@ The STRUCTURE panel allows the modification of the structure initially created f
 * Drag-and-drop additional [community functions](functions.md) into the site structure
 * On an instance of a community function in the site structure:
 
-    * **`gear icon`** 
+    * **`gear icon`**
 
       Edit settings, including the display title and URL name as well as [privileged members groups](users.md#privilegedmembersgroups)
-  
-    * **`trashcan icon`** 
+
+    * **`trashcan icon`**
 
       Remove (delete) functions from the site structure
-  
-    * **`grid icon`** 
+
+    * **`grid icon`**
 
       Modify the order of functions as displayed in the site's top level navigation bar
 

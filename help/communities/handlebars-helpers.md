@@ -5,7 +5,7 @@ description: Handlebars Helper methods to facilitate work with SCF
 seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
@@ -41,19 +41,19 @@ If safeString is set to true, then the returned string is a SafeString.
 
 ### Parameters {#parameters}
 
-* **context**: String  
+* **context**: String
 
   (optional) Default is the empty string
 
-* **maxLength**: Number  
+* **maxLength**: Number
 
   (optional) Default is the length of the context.
 
-* **maxWords**: Number  
+* **maxWords**: Number
 
   (optional) Default is the number of words in the trimmed string.
 
-* **safeString**: Boolean  
+* **safeString**: Boolean
 
   (optional) Returns a Handlebars.SafeString() if true. Default is false.
 
@@ -89,23 +89,23 @@ A helper to add two spans under a div, one for the full text and the other for t
 
 ### Parameters {#parameters-1}
 
-* **context**: String  
+* **context**: String
 
-  (optional) Default is the empty string.  
+  (optional) Default is the empty string.
 
-* **numChars**: Number 
+* **numChars**: Number
 
   (optional) The number of characters to display when not displaying full text. Default is 100.
 
-* **moreText**: String 
+* **moreText**: String
 
   (optional) The text to display indicating there is more text to display. Default is "more".
 
-* **ellipsesText**: String 
+* **ellipsesText**: String
 
   (optional) The text to display indicating there is hidden text. Default is "...".
 
-* **safeString**: Boolean 
+* **safeString**: Boolean
 
   (optional) Boolean value indicating whether or not to apply Handlebars.SafeString() before returning the result. Default is false.
 
@@ -115,7 +115,7 @@ A helper to add two spans under a div, one for the full text and the other for t
 {{content-loadmore  context numChars=32  moreText="go on"  ellipsesText="..." }}
 
 /*
-If context = 
+If context =
     "Here is the initial less content and this is more content."
 
 Then content-loadmore would return
@@ -129,11 +129,11 @@ A helper to return a formatted date string.
 
 ### Parameters {#parameters-2}
 
-* **context**: Number  
+* **context**: Number
 
   (optional) a millisecond value offset from January 1, 1970 (epoch). Default is the current date.
 
-* **format**: String  
+* **format**: String
 
   (optional) The date format to apply. Default is "YYYY-MM-DDTHH:mm:ss.sssZ" and the result appears as "2015-03-18T18:17:13-07:00"
 
@@ -157,11 +157,11 @@ A helper to return content depending on an equality conditional.
 
 ### Parameters {#parameters-3}
 
-* **lvalue**: String  
+* **lvalue**: String
 
   The left-hand value to compare
 
-* **rvalue**: String  
+* **rvalue**: String
 
   The right-hand value to compare
 
@@ -182,11 +182,11 @@ A block helper that tests the current value of [WCM mode](https://helpx.adobe.co
 
 ### Parameters {#parameters-4}
 
-* **context**: String  
+* **context**: String
 
   (optional) The string to translate. Required if no default provided.
 
-* **mode**: String 
+* **mode**: String
 
   (optional) A comma separated list of [WCM modes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
 
@@ -208,15 +208,15 @@ See also [Internationalizing Strings in JavaScript Code](../../help/sites-develo
 
 ### Parameters {#parameters-5}
 
-* **context**: String  
+* **context**: String
 
   (optional) The string to translate. Required if no default provided.
 
-* **default**: String  
+* **default**: String
 
   (optional) The default string to translate. Required if no context provided.
 
-* **comment**: String  
+* **comment**: String
 
   (optional) A translation hint
 
@@ -240,27 +240,27 @@ This helper, appropriate only on the server-side, provides functionality similar
 
 ### Parameters {#parameters-6}
 
-* **context**: String or object 
+* **context**: String or object
 
-  (optional, unless providing a relative path) 
+  (optional, unless providing a relative path)
 
-  use `this`to pass the current context  
+  use `this`to pass the current context
 
   use `this.id` to obtain the resource at `id` for rendering the resourceType requested
 
-* **resourceType**: String  
+* **resourceType**: String
 
   (optional) resource type will default to resource type from context
 
-* **template**: String  
+* **template**: String
 
   path to component script
 
-* **path**: String  
+* **path**: String
 
   (required) The path to the resource. If path is relative, a context must be provided, else the empty string is returned.
 
-* **authoringDisabled**: Boolean 
+* **authoringDisabled**: Boolean
 
   (optional) Default is false. For internal use only.
 
@@ -280,26 +280,26 @@ This helper, appropriate only on the server-side, provides functionality similar
 
 ### Parameters {#parameters-7}
 
-* **categories**: String 
+* **categories**: String
 
   (optional) A list of comma-separated client lib categories. This will include all Javascript and CSS libraries for the given categories. The theme name is extracted from the request.
 
-* **theme**: String 
+* **theme**: String
 
   (optional) A list of comma-separated client lib categories. This will include all theme related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
 
-* **js**: String 
+* **js**: String
 
   (optional) A list of comma-separated client lib categories. This will include all Javascript libraries for the given categories.
 
-* **css**: String  
+* **css**: String
 
   (optional) A list of comma-separated client lib categories. This will include all CSS libraries for the given categories.
 
 ### Examples {#examples-2}
 
 ```
-// all: js + theme (theme-js + css) 
+// all: js + theme (theme-js + css)
 {{includeClientLib categories="cq.social.hbs.comments, cq.social.hbs.voting"}}
 
 // returns
@@ -318,7 +318,7 @@ This helper, appropriate only on the server-side, provides functionality similar
     <script src="/etc/clientlibs/social/hbs/socialgraph.js" type="text/javascript"></script>
     <script src="/etc/clientlibs/social/hbs/comments.js" type="text/javascript"></script>
 
-// theme only (theme-js + css) 
+// theme only (theme-js + css)
 {{includeClientLib theme="cq.social.hbs.comments, cq.social.hbs.voting"}}
 
 // returns
@@ -347,11 +347,11 @@ For example:
 
 ### Parameters {#parameters-8}
 
-* **context**: Number 
+* **context**: Number
 
   A time in the past to compare to 'now'. Time is expressed as a millisecond value offset from January 1, 1970 (epoch).
 
-* **daysCutoff**: Number  
+* **daysCutoff**: Number
 
   The number of days ago before switching to an actual date. Default is 60.
 
@@ -362,7 +362,7 @@ For example:
 
 /*
 Depending on how long in the past, may return
-  
+
   "3 minutes ago"
 
   "3 hours ago"
@@ -379,7 +379,7 @@ NOTE: this is not a validator and is not to be used for writing attribute values
 
 ### Parameters {#parameters-9}
 
-* **context**: object 
+* **context**: object
 
   the HTML to encode
 
@@ -397,7 +397,7 @@ NOTE: this is not a validator and is not to be used for writing actionalable att
 
 ### Parameters {#parameters-10}
 
-* **context**: Object  
+* **context**: Object
 
   The HTML to encode
 
@@ -415,7 +415,7 @@ NOTE: this is not a validator and is not to be used for writing to arbitrary Jav
 
 ### Parameters {#parameters-11}
 
-* **context**: Object 
+* **context**: Object
 
   The HTML to encode
 
@@ -433,7 +433,7 @@ NOTE: this may return an empty string
 
 ### Parameters {#parameters-12}
 
-* **context**: Object  
+* **context**: Object
 
   The URL to sanitize
 
@@ -461,7 +461,7 @@ A quick overview of helper functions from [Handlebars.js documentation](https://
 
     * Optional private data (options.data)
     * Optional key-value properties from the call (options.hash)
-    * Ability to invoke itself (options.fn()) 
+    * Ability to invoke itself (options.fn())
     * Ability to invoke the inverse of itself (options.inverse())
 
 * It is recommended that the HTML String content returned from a helper is a SafeString.
@@ -486,10 +486,10 @@ var template = Handlebars.compile(source);
 template(context);
 ```
 
-Would render:  
-  
-&lt;ul&gt;  
-&lt;li&gt;&lt;a href="/posts/hello-world"&gt;Post!&lt;/a&gt;&lt;/li&gt;  
+Would render:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/hello-world"&gt;Post!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 ### An example of a block helper from Handlebars.js documentation: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -512,10 +512,10 @@ var template = Handlebars.compile(source);
 template(data);
 ```
 
-Would render:  
-&lt;ul&gt;  
-&lt;li&gt;&lt;a href="/people/1"&gt;Alan&lt;/a&gt;&lt;/li&gt;  
-&lt;li&gt;&lt;a href="/people/2"&gt;Yehuda&lt;/a&gt;&lt;/li&gt;  
+Would render:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/people/1"&gt;Alan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/people/2"&gt;Yehuda&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 ## Custom SCF Helpers {#custom-scf-helpers}
@@ -573,7 +573,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 
 ### Client-side Custom Helpers {#client-side-custom-helpers}
 
-The client-side helpers are Handlebars scripts registered by invoking `Handlebars.registerHelper()`.  
+The client-side helpers are Handlebars scripts registered by invoking `Handlebars.registerHelper()`.
 For example:
 
 ### custom-helpers.js {#custom-helpers-js}
@@ -592,7 +592,7 @@ function(Handlebars, SCF, $CQ) {
 
 ```
 
-The custom client-side helpers must be added to a custom client library.  
+The custom client-side helpers must be added to a custom client library.
 The clientlib must:
 
 * Include a dependency on `cq.social.scf`

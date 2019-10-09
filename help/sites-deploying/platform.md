@@ -5,7 +5,7 @@ description: This article provides a general overview of the AEM platform and it
 seo-description: This article provides a general overview of the AEM platform and its most important components.
 uuid: 214d4c49-1f5c-432c-a2c0-c1fbdceee716
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
@@ -118,7 +118,7 @@ A typical AEM cluster setup with MongoDB storage:
 
 Because Oak is designed to be backwards compatible with the JCR 1.0 standard, there will be almost no changes on the user level. However, there are some noticeable differences that you need to take into account when setting up an Oak based AEM installation:
 
-* Oak does not create indexes automatically. Because of this, custom indexes will need to be created when necessary.  
+* Oak does not create indexes automatically. Because of this, custom indexes will need to be created when necessary.
 * Unlike Jackrabbit 2 where sessions always reflect the latest state of the repository, with Oak a session reflects a stable view of the repository from the time the session was acquired. This is due to the MVCC model on which Oak is based on.
 * Same name siblings (SNS) are not supported in Oak.
 

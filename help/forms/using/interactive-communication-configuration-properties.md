@@ -5,7 +5,7 @@ description: Edit default configuration properties for Interactive Communication
 seo-description: Edit default configuration properties for Interactive Communications
 uuid: 793da9c0-7e8b-464c-b41d-559a72fac9eb
 contentOwner: anujkapo
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
@@ -32,46 +32,46 @@ The configuration properties include:
 
 Tap **Document Fragments Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for document fragments.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Property</td> 
-   <td>Description</td> 
-   <td>Default</td> 
-   <td>Acceptable values</td> 
-  </tr> 
-  <tr> 
-   <td>Data Display Formats</td> 
-   <td>Locale-specific display format for fields, variables, and form data model elements available while creating an Interactive Communication for Print and Web channels.</td> 
-   <td> 
-    <ul> 
-     <li>locale = en_US, de_DE, fr_FR, and ja_JP</li> 
-     <li>dateFormat = dd-MM-yyyy</li> 
-     <li>numberDecimalSeparator = .</li> 
-     <li>numberGroupSeparator = ,</li> 
-     <li>numberUseGroupSeparator = true</li> 
-    </ul> </td> 
-   <td><p>--</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Indentation</td> 
-   <td>The width of single unit of indentation applied to text in list document fragments.</td> 
-   <td>12.7mm</td> 
-   <td>Number</td> 
-  </tr> 
-  <tr> 
-   <td>Roman Numbers Minimum Width</td> 
-   <td>Minimum width to be applied to the bullet or number field, when using roman numbers in list document fragments. </td> 
-   <td>12.7mm</td> 
-   <td>Number</td> 
-  </tr> 
-  <tr> 
-   <td>Number Minimum Width</td> 
-   <td>Minimum width to be applied to the bullet or number field, when using numbered lists apart from roman numbers in list document fragments.</td> 
-   <td>8.0mm</td> 
-   <td>Number</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Property</td>
+   <td>Description</td>
+   <td>Default</td>
+   <td>Acceptable values</td>
+  </tr>
+  <tr>
+   <td>Data Display Formats</td>
+   <td>Locale-specific display format for fields, variables, and form data model elements available while creating an Interactive Communication for Print and Web channels.</td>
+   <td>
+    <ul>
+     <li>locale = en_US, de_DE, fr_FR, and ja_JP</li>
+     <li>dateFormat = dd-MM-yyyy</li>
+     <li>numberDecimalSeparator = .</li>
+     <li>numberGroupSeparator = ,</li>
+     <li>numberUseGroupSeparator = true</li>
+    </ul> </td>
+   <td><p>--</p> </td>
+  </tr>
+  <tr>
+   <td>Indentation</td>
+   <td>The width of single unit of indentation applied to text in list document fragments.</td>
+   <td>12.7mm</td>
+   <td>Number</td>
+  </tr>
+  <tr>
+   <td>Roman Numbers Minimum Width</td>
+   <td>Minimum width to be applied to the bullet or number field, when using roman numbers in list document fragments. </td>
+   <td>12.7mm</td>
+   <td>Number</td>
+  </tr>
+  <tr>
+   <td>Number Minimum Width</td>
+   <td>Minimum width to be applied to the bullet or number field, when using numbered lists apart from roman numbers in list document fragments.</td>
+   <td>8.0mm</td>
+   <td>Number</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Create Correspondence Configuration {#create-correspondence-configuration}
@@ -97,20 +97,20 @@ Tap **Adaptive Form and Interactive Communication Web Channel Configuration** on
 
 Tap **Adaptive Form and Interactive Communication Web Channel Theme Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel themes.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Property</td> 
-   <td>Description</td> 
-   <td>Default</td> 
-   <td>Acceptable values</td> 
-  </tr> 
-  <tr> 
-   <td>Font List Name</td> 
-   <td>List of fonts that are available to use while creating Adaptive Forms and Interactive Communications.</td> 
-   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impact</p> <p>Palatino Linotype</p> </td> 
-   <td>All valid Adobe server fonts</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Property</td>
+   <td>Description</td>
+   <td>Default</td>
+   <td>Acceptable values</td>
+  </tr>
+  <tr>
+   <td>Font List Name</td>
+   <td>List of fonts that are available to use while creating Adaptive Forms and Interactive Communications.</td>
+   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impact</p> <p>Palatino Linotype</p> </td>
+   <td>All valid Adobe server fonts</td>
+  </tr>
+ </tbody>
 </table>
 

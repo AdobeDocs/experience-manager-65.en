@@ -8,7 +8,7 @@ contentOwner: admin
 content-type: reference
 products: SG_AEMFORMS
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 ---
 

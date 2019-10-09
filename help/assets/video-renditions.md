@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
@@ -27,7 +27,7 @@ To view the renditions of a particular video asset, open its asset page, and tap
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-The list of video renditions are displayed in the **[!UICONTROL Renditions]** panel. 
+The list of video renditions are displayed in the **[!UICONTROL Renditions]** panel.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 

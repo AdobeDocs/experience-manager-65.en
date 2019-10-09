@@ -5,7 +5,7 @@ description: Learn how to troubleshoot integration issues.
 seo-description: Learn how to troubleshoot integration issues.
 uuid: fe080e58-a855-4308-a611-f72eb47ba82d
 contentOwner: raiman
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
@@ -27,7 +27,7 @@ In some cases, it might be helpful to add additional statements on component lev
 <%
 log.info("myVariable={}", myVariable);
 %>
-  
+
 <!--
 <%= myJspVariable %>
 -->
@@ -194,7 +194,7 @@ You need to verify that A4T is properly enabled for your Target account by issui
 
 ```
 http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.a4t.json
- 
+
 {
     "a4tEnabled": true,
     "sharedsecret": "SECRET",
@@ -216,7 +216,7 @@ Presented below are two Target APIs that might be useful when troubleshooting Ta
 
 ```
 https://admin.testandtarget.omniture.com/rest/v1/endpoint/<CLIENTCODE>.json
- 
+
 {"api":"https://admin<N>.testandtarget.omniture.com/admin/rest/v1"}
 
 ```
@@ -225,7 +225,7 @@ https://admin.testandtarget.omniture.com/rest/v1/endpoint/<CLIENTCODE>.json
 
 ```
 https://admin<N>.testandtarget.omniture.com/admin/rest/v1/clients/<CLIENT>?email=<EMAIL>&password=<PASSWORD>
- 
+
 Response for N=4, CLIENT-dayintegrationintern
 {
     "clientCode": "dayintegrationintern",

@@ -5,7 +5,7 @@ description: When you start to develop new components you need to understand the
 seo-description: When you start to develop new components you need to understand the basics of their structure and configuration
 uuid: 0225b34d-5ac4-40c3-b226-0c9b24bdf782
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
@@ -54,7 +54,7 @@ Before starting to actually configure or code your component you should ask:
 Before any serious discussion starts about developing components you need to know which UI your authors will be using:
 
 * **Touch-Enabled UI**
-  [The standard user interface](/help/sites-developing/touch-ui-concepts.md) that was introduced in AEM 5.6.0 as a preview and extended in 6.x. It is based on the unified user experience for the Adobe Marketing Cloud, using the underlying technologies of [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) and [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).  
+  [The standard user interface](/help/sites-developing/touch-ui-concepts.md) that was introduced in AEM 5.6.0 as a preview and extended in 6.x. It is based on the unified user experience for the Adobe Marketing Cloud, using the underlying technologies of [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) and [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **Classic UI**
   User interface based on ExtJS technology that was introduced with CQ 5.1.
@@ -129,19 +129,19 @@ Use the following tools to move your components to the publish instance:
 
 The structure of an AEM component is powerful and flexible, the main considerations are:
 
-* Resource Type  
-* Component Definition  
-* Properties and Child Nodes of a Component  
-* Dialogs  
-* Design Dialogs  
-* Component Availability  
+* Resource Type
+* Component Definition
+* Properties and Child Nodes of a Component
+* Dialogs
+* Design Dialogs
+* Component Availability
 * Components and the Content They Create
 
 ### Resource Type {#resource-type}
 
 A key element of the structure is the resource type.
 
-* Content structure declares intentions.  
+* Content structure declares intentions.
 * Resource type implement them.
 
 This is an abstraction that helps ensure that even when the look and feel changes over time,  the intention stays the time.
@@ -155,7 +155,7 @@ The definition of a component can be broken down as follows:
 * AEM components are based on [Sling](https://sling.apache.org/documentation.html).
 * AEM components are (usually) located under:
 
-  * HTL: `/libs/wcm/foundation/components` 
+  * HTL: `/libs/wcm/foundation/components`
   * JSP: `/libs/foundation/components`
 
 * Project/Site specific components are (usually) located under:
@@ -164,15 +164,15 @@ The definition of a component can be broken down as follows:
 
 * AEM standard components are defined as `cq:Component` and have the key elements:
 
-  * jcr properties: 
+  * jcr properties:
 
     A list of jcr properties; these are variable and some may be optional though the basic structure of a component node, its properties and subnodes are defined by the `cq:Component` definition
 
-  * Resources: 
+  * Resources:
 
     These define static elements used by the component.
 
-   * Scripts: 
+   * Scripts:
 
     Are used to implement the behavior of the resulting instance of the component.
 
@@ -199,15 +199,15 @@ The definition of a component can be broken down as follows:
 
     Note: if the component has a dialog, it will automatically appear in the Components browser or Sidekick, even if the cq:editConfig does not exist.
 
-  * `cq:childEditConfig (cq:EditConfig)` - Controls author UI aspects for child components that do not define their own `cq:editConfig`. 
+  * `cq:childEditConfig (cq:EditConfig)` - Controls author UI aspects for child components that do not define their own `cq:editConfig`.
   * Touch-Enabled UI:
 
-      * `cq:dialog` ( `nt:unstructured`) - Dialog for this component. Defines the interface allowing the user to configure the component and/or edit content. 
+      * `cq:dialog` ( `nt:unstructured`) - Dialog for this component. Defines the interface allowing the user to configure the component and/or edit content.
       * `cq:design_dialog` ( `nt:unstructured`) - Design editing for this component
 
   * Classic UI:
 
-      * `dialog` ( `cq:Dialog`) - Dialog for this component. Defines the interface allowing the user to configure the component and/or edit content. 
+      * `dialog` ( `cq:Dialog`) - Dialog for this component. Defines the interface allowing the user to configure the component and/or edit content.
       * `design_dialog` ( `cq:Dialog`) - Design editing for this component.
 
 #### Component Icon in Touch UI {#component-icon-in-touch-ui}
@@ -269,139 +269,139 @@ Many of the nodes/properties needed to define a component are common to both UIs
 
 A component is a node of type `cq:Component` and has the following properties and child nodes:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Name <br /> </strong></td> 
-   <td><strong>Type <br /> </strong></td> 
-   <td><strong>Description <br /> </strong></td> 
-  </tr> 
-  <tr> 
-   <td>.<br /> </td> 
-   <td><code>cq:Component</code></td> 
-   <td>Current component. A component is of node type <code>cq:Component</code>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>componentGroup</code></td> 
-   <td><code>String</code></td> 
-   <td>Group under which the component can be selected in the Components browser (touch-enabled UI) or Sidekick (classic UI).<br /> A value of <code>.hidden</code> is used for components that are not available for selection from the UI such as the actual paragraph systems.</td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:isContainer</code></td> 
-   <td><code>Boolean</code></td> 
-   <td>Indicates whether the component is a container component and therefore can contain other components such as a paragraph system.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:dialog</code></td> 
-   <td><code>nt:unstructured</code><br /> </td> 
-   <td>Definition of the edit dialog for the touch-enabled UI.</td> 
-  </tr> 
-  <tr> 
-   <td><code>dialog</code></td> 
-   <td><code>cq:Dialog</code></td> 
-   <td>Definition of the edit dialog for the classic UI.</td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:design_dialog</code></td> 
-   <td><code>nt:unstructured</code></td> 
-   <td>Definition of the design dialog for the touch-enabled UI.</td> 
-  </tr> 
-  <tr> 
-   <td><code>design_dialog</code></td> 
-   <td><code>cq:Dialog </code></td> 
-   <td>Definition of the design dialog for the classic UI.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>dialogPath</code></td> 
-   <td><code>String</code></td> 
-   <td>Path to a dialog to cover the case when the component does not have a dialog node.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:cellName</code></td> 
-   <td><code>String</code></td> 
-   <td>If set, this property is taken as Cell ID. For more information, please refer to the Knowledge Base article <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs built</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:childEditConfig</code></td> 
-   <td><code>cq:EditConfig</code></td> 
-   <td>When the component is a container, as for example a paragraph system, this drives the edit configuration of the child nodes.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:editConfig</code></td> 
-   <td><code>cq:EditConfig</code></td> 
-   <td><a href="#edit-behavior">Edit configuration of the component</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:htmlTag</code></td> 
-   <td><code>nt:unstructured </code></td> 
-   <td>Returns additional tag attributes that are added to the surrounding html tag. Enables addition of attributes to the automatically generated divs.</td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:noDecoration</code></td> 
-   <td><code>Boolean</code></td> 
-   <td>If true, the component is not rendered with automatically generated div and css classes.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:template</code></td> 
-   <td><code>nt:unstructured</code></td> 
-   <td>If found, this node will be used as a content template when the component is added from the Components Browser or Sidekick.</td> 
-  </tr> 
-  <tr> 
-   <td><code>cq:templatePath</code></td> 
-   <td><code>String</code></td> 
-   <td>Path to a node to use as a content template when the component is added from the Components browser or Sidekick. This must be an absolute path, not relative to the component node.<br /> Unless you want to reuse content already available elsewhere, this is not required and <code>cq:template</code> is sufficient (see below).</td> 
-  </tr> 
-  <tr> 
-   <td><code>jcr:created</code></td> 
-   <td><code>Date</code></td> 
-   <td>Date of creation of the component.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>jcr:description</code></td> 
-   <td><code>String</code></td> 
-   <td>Description of the component.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>jcr:title</code></td> 
-   <td><code>String</code></td> 
-   <td>Title of the component.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>sling:resourceSuperType</code></td> 
-   <td><code>String</code></td> 
-   <td>When set, the component inherits from this component.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>virtual</code></td> 
-   <td><code>sling:Folder</code></td> 
-   <td>Enables creation of virtual components. To see an example, please look at the contact component at:<br /> <code>/libs/foundation/components/profile/form/contact</code></td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Name <br /> </strong></td>
+   <td><strong>Type <br /> </strong></td>
+   <td><strong>Description <br /> </strong></td>
   </tr>
-  <tr> 
-   <td><code>&lt;breadcrumb.jsp&gt;</code></td> 
-   <td><code>nt:file</code><br /> </td> 
-   <td>Script file.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>icon.png</code></td> 
-   <td><code>nt:file</code></td> 
-   <td>Icon of the component, appears next to the Title in Sidekick.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>thumbnail.png</code></td> 
-   <td><code>nt:file</code></td> 
-   <td>Optional thumbnail that is shown while the component is dragged into place from Sidekick.<br /> </td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td>.<br /> </td>
+   <td><code>cq:Component</code></td>
+   <td>Current component. A component is of node type <code>cq:Component</code>.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>componentGroup</code></td>
+   <td><code>String</code></td>
+   <td>Group under which the component can be selected in the Components browser (touch-enabled UI) or Sidekick (classic UI).<br /> A value of <code>.hidden</code> is used for components that are not available for selection from the UI such as the actual paragraph systems.</td>
+  </tr>
+  <tr>
+   <td><code>cq:isContainer</code></td>
+   <td><code>Boolean</code></td>
+   <td>Indicates whether the component is a container component and therefore can contain other components such as a paragraph system.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>cq:dialog</code></td>
+   <td><code>nt:unstructured</code><br /> </td>
+   <td>Definition of the edit dialog for the touch-enabled UI.</td>
+  </tr>
+  <tr>
+   <td><code>dialog</code></td>
+   <td><code>cq:Dialog</code></td>
+   <td>Definition of the edit dialog for the classic UI.</td>
+  </tr>
+  <tr>
+   <td><code>cq:design_dialog</code></td>
+   <td><code>nt:unstructured</code></td>
+   <td>Definition of the design dialog for the touch-enabled UI.</td>
+  </tr>
+  <tr>
+   <td><code>design_dialog</code></td>
+   <td><code>cq:Dialog </code></td>
+   <td>Definition of the design dialog for the classic UI.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>dialogPath</code></td>
+   <td><code>String</code></td>
+   <td>Path to a dialog to cover the case when the component does not have a dialog node.<br /> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>cq:cellName</code></td>
+   <td><code>String</code></td>
+   <td>If set, this property is taken as Cell ID. For more information, please refer to the Knowledge Base article <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs built</a>.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>cq:childEditConfig</code></td>
+   <td><code>cq:EditConfig</code></td>
+   <td>When the component is a container, as for example a paragraph system, this drives the edit configuration of the child nodes.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>cq:editConfig</code></td>
+   <td><code>cq:EditConfig</code></td>
+   <td><a href="#edit-behavior">Edit configuration of the component</a>.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>cq:htmlTag</code></td>
+   <td><code>nt:unstructured </code></td>
+   <td>Returns additional tag attributes that are added to the surrounding html tag. Enables addition of attributes to the automatically generated divs.</td>
+  </tr>
+  <tr>
+   <td><code>cq:noDecoration</code></td>
+   <td><code>Boolean</code></td>
+   <td>If true, the component is not rendered with automatically generated div and css classes.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>cq:template</code></td>
+   <td><code>nt:unstructured</code></td>
+   <td>If found, this node will be used as a content template when the component is added from the Components Browser or Sidekick.</td>
+  </tr>
+  <tr>
+   <td><code>cq:templatePath</code></td>
+   <td><code>String</code></td>
+   <td>Path to a node to use as a content template when the component is added from the Components browser or Sidekick. This must be an absolute path, not relative to the component node.<br /> Unless you want to reuse content already available elsewhere, this is not required and <code>cq:template</code> is sufficient (see below).</td>
+  </tr>
+  <tr>
+   <td><code>jcr:created</code></td>
+   <td><code>Date</code></td>
+   <td>Date of creation of the component.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>jcr:description</code></td>
+   <td><code>String</code></td>
+   <td>Description of the component.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>jcr:title</code></td>
+   <td><code>String</code></td>
+   <td>Title of the component.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>sling:resourceSuperType</code></td>
+   <td><code>String</code></td>
+   <td>When set, the component inherits from this component.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>virtual</code></td>
+   <td><code>sling:Folder</code></td>
+   <td>Enables creation of virtual components. To see an example, please look at the contact component at:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
+  </tr>
+  <tr>
+   <td><code>&lt;breadcrumb.jsp&gt;</code></td>
+   <td><code>nt:file</code><br /> </td>
+   <td>Script file.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>icon.png</code></td>
+   <td><code>nt:file</code></td>
+   <td>Icon of the component, appears next to the Title in Sidekick.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>thumbnail.png</code></td>
+   <td><code>nt:file</code></td>
+   <td>Optional thumbnail that is shown while the component is dragged into place from Sidekick.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 If we look at the **Text** component (either version), we can see these elements:
@@ -417,7 +417,7 @@ If we look at the **Text** component (either version), we can see these elements
 Properties of particular interest include:
 
 * `jcr:title` - title of the component; this can be used to identify the component, for example, it appears in the component list within the components browser or sidekick
-* `jcr:description` - description for the component; can be used as mouse-over hint in the component list within sidekick  
+* `jcr:description` - description for the component; can be used as mouse-over hint in the component list within sidekick
 
 * `sling:resourceSuperType`: this indicates the path of inheritance when extending a component (by overriding a definition)
 
@@ -434,7 +434,7 @@ Child nodes of particular interest include:
 
 * Classic UI:
 
-    * `dialog` ( `cq:Dialog`) - defines the dialog for editing content of this component (specific to the classic UI) 
+    * `dialog` ( `cq:Dialog`) - defines the dialog for editing content of this component (specific to the classic UI)
     * `design_dialog` ( `cq:Dialog`) - specifies the design editing options for this component
     * `icon.png` - graphics file to be used as an icon for the component in the Sidekick
     * `thumbnail.png` - graphics file to be used as a thumbnail for the component while dragging it from the Sidekick
@@ -457,13 +457,13 @@ Dialog definitions are specific to the UI:
 
     * `cq:dialog` ( `nt:unstructured`) nodes:
 
-        * define the dialog for editing content of this component 
+        * define the dialog for editing content of this component
         * specific to the touch-enabled UI
         * are defined using Granite UI components
         * have a property `sling:resourceType`, as standard Sling content structure
         * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the Help icon (the ? icon) is selected.
 
-            * For out-of-the box components this often references a page in the documentation. 
+            * For out-of-the box components this often references a page in the documentation.
             * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
 
   ![chlimage_1-242](assets/chlimage_1-242.png)
@@ -476,13 +476,13 @@ Dialog definitions are specific to the UI:
 
     * `dialog` ( `cq:Dialog`) nodes
 
-        * define the dialog for editing content of this component 
+        * define the dialog for editing content of this component
         * specific to the classic UI
         * are defined using ExtJS widgets
         * have a property `xtype`, which refers to ExtJS
         * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the **Help** button is selected.
 
-            * For out-of-the box components this often references a page in the documentation. 
+            * For out-of-the box components this often references a page in the documentation.
             * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
 
   ![chlimage_1-243](assets/chlimage_1-243.png)
@@ -550,7 +550,7 @@ The properties defined are dependent on the individual definitions. Although the
 
 Components within AEM are subject to 3 different hierarchies:
 
-* **Resource Type Hierarchy** 
+* **Resource Type Hierarchy**
 
   This is used to extend components using the property `sling:resourceSuperType`. This enables the component to inherit. For example a text component will inherit various attributes from the standard component.
 
@@ -558,7 +558,7 @@ Components within AEM are subject to 3 different hierarchies:
     * dialogs
     * descriptions (including thumbnail images, icons, etc)
 
-* **Container Hierarchy** 
+* **Container Hierarchy**
 
   This is used to populate configuration settings to the child component and is most commonly used in a parsys scenario.
 
@@ -566,7 +566,7 @@ Components within AEM are subject to 3 different hierarchies:
 
   Configuration settings (related to edit functionality) in `cq:editConfig` and `cq:childEditConfig` are propagated.
 
-* **Include Hierarchy** 
+* **Include Hierarchy**
 
   This is imposed at runtime by the sequence of includes.
 
@@ -588,8 +588,8 @@ The edit behavior of a component is configured by adding a `cq:editConfig` node 
 
         * In the touch-enabled UI, dialogs are always floating in desktop mode, and automatically opened as fullscreen in mobile.
 
-    * `cq:emptyText` ( `String`): defines text that is displayed when no visual content is present. 
-    * `cq:inherit` ( `Boolean`): defines if missing values are inherited from the component that it inherits from. 
+    * `cq:emptyText` ( `String`): defines text that is displayed when no visual content is present.
+    * `cq:inherit` ( `Boolean`): defines if missing values are inherited from the component that it inherits from.
     * `dialogLayout` (String): defines how the dialog should open.
 
 * [ `cq:editConfig` child nodes](#configuring-with-cq-editconfig-child-nodes):
@@ -599,8 +599,8 @@ The edit behavior of a component is configured by adding a `cq:editConfig` node 
         * Multiple drop targets are only available in the classic UI.
         * In the touch-enabled UI a single drop target is allowed.
 
-    * `cq:actionConfigs` (node type `nt:unstructured`): defines a list of new actions that are appended to the cq:actions list. 
-    * `cq:formParameters` (node type `nt:unstructured`): defines additional parameters that are added to the dialog form. 
+    * `cq:actionConfigs` (node type `nt:unstructured`): defines a list of new actions that are appended to the cq:actions list.
+    * `cq:formParameters` (node type `nt:unstructured`): defines additional parameters that are added to the dialog form.
     * `cq:inplaceEditing` (node type `cq:InplaceEditingConfig`): defines an inplace editing configuration for the component.
     * `cq:listeners` (node type `cq:EditListenersConfig`): defines what happens before or after an action occurs on the component.
 
@@ -626,7 +626,7 @@ There are many existing configurations in the repository. You can easily search 
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* To look for a child node of `cq:editConfig`, e.g. you can search for `cq:dropTargets`, which is of type `cq:DropTargetConfig`; you can use the Query tool in** CRXDE Lite** and search with the following XPath query string: 
+* To look for a child node of `cq:editConfig`, e.g. you can search for `cq:dropTargets`, which is of type `cq:DropTargetConfig`; you can use the Query tool in** CRXDE Lite** and search with the following XPath query string:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -636,37 +636,37 @@ There are many existing configurations in the repository. You can easily search 
 
 The `cq:actions` property ( `String array`) defines one or several actions that can be performed on the component. The following values are available for configuration:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property Value</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>text:&lt;some text&gt;</code></td> 
-   <td>Displays the static text value &lt;some text&gt;<br /> Only visible in classic UI. The touch-enabled UI does not display actions in a contextual menu, so this is not applicable.</td> 
-  </tr> 
-  <tr> 
-   <td>-</td> 
-   <td>Adds a spacer.<br /> Only visible in classic UI. The touch-enabled UI does not display actions in a contextual menu, so this is not applicable.</td> 
-  </tr> 
-  <tr> 
-   <td><code>edit</code></td> 
-   <td>Adds a button to edit the component.</td> 
-  </tr> 
-  <tr> 
-   <td><code>delete</code></td> 
-   <td>Adds a button to delete the component</td> 
-  </tr> 
-  <tr> 
-   <td><code>insert</code></td> 
-   <td>Adds a button to insert a new component before the current one</td> 
-  </tr> 
-  <tr> 
-   <td><code>copymove</code></td> 
-   <td>Adds a button to copy and cut the component.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property Value</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><code>text:&lt;some text&gt;</code></td>
+   <td>Displays the static text value &lt;some text&gt;<br /> Only visible in classic UI. The touch-enabled UI does not display actions in a contextual menu, so this is not applicable.</td>
+  </tr>
+  <tr>
+   <td>-</td>
+   <td>Adds a spacer.<br /> Only visible in classic UI. The touch-enabled UI does not display actions in a contextual menu, so this is not applicable.</td>
+  </tr>
+  <tr>
+   <td><code>edit</code></td>
+   <td>Adds a button to edit the component.</td>
+  </tr>
+  <tr>
+   <td><code>delete</code></td>
+   <td>Adds a button to delete the component</td>
+  </tr>
+  <tr>
+   <td><code>insert</code></td>
+   <td>Adds a button to insert a new component before the current one</td>
+  </tr>
+  <tr>
+   <td><code>copymove</code></td>
+   <td>Adds a button to copy and cut the component.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following configuration adds an edit button, a spacer, a delete and an insert button to the component edit bar:
@@ -691,25 +691,25 @@ The following configuration adds the text "Inherited Configurations from Base Fr
 
 The `cq:layout` property ( `String`) defines how the component can be edited in the classic UI. The following values are available:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property Value</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>rollover</code></td> 
-   <td>Default value. The component edition is accessible "on mouse over" through clicks and/or context menu.<br /> For advanced use, note that the corresponding client side object is: <code>CQ.wcm.EditRollover</code>.</td> 
-  </tr> 
-  <tr> 
-   <td><code>editbar</code></td> 
-   <td>The component edition is accessible through a toolbar.<br /> For advanced use, note that the corresponding client side object is: <code>CQ.wcm.EditBar</code>.</td> 
-  </tr> 
-  <tr> 
-   <td><code>auto</code></td> 
-   <td>The choice is left to the client side code.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property Value</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><code>rollover</code></td>
+   <td>Default value. The component edition is accessible "on mouse over" through clicks and/or context menu.<br /> For advanced use, note that the corresponding client side object is: <code>CQ.wcm.EditRollover</code>.</td>
+  </tr>
+  <tr>
+   <td><code>editbar</code></td>
+   <td>The component edition is accessible through a toolbar.<br /> For advanced use, note that the corresponding client side object is: <code>CQ.wcm.EditBar</code>.</td>
+  </tr>
+  <tr>
+   <td><code>auto</code></td>
+   <td>The choice is left to the client side code.</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -730,25 +730,25 @@ The following configuration adds an edit button to the component edit bar:
 
 The component can be linked to an edit dialog. The `cq:dialogMode` property ( `String`) defines how the component dialog will be opened in the classic UI. The following values are available:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property Value</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>floating</code></td> 
-   <td>The dialog is floating.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>inline</code></td> 
-   <td>(default value). The dialog is anchored over the component.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>auto</code></td> 
-   <td>If the component width is smaller than the client side <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> value, the dialog is floating, otherwise it is inline.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property Value</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><code>floating</code></td>
+   <td>The dialog is floating.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>inline</code></td>
+   <td>(default value). The dialog is anchored over the component.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>auto</code></td>
+   <td>If the component width is smaller than the client side <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> value, the dialog is floating, otherwise it is inline.</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -778,9 +778,9 @@ The `cq:inherit` property ( `boolean`) defines whether missing values are inheri
 
 The `dialogLayout` property defines how a dialog should open by default.
 
-* A value of `fullscreen` opens the dialog in full screen. 
-* An empty value or absence of the property defaults to opening the dialog normally. 
-* Note that the user can always toggle the fullscreen mode within the dialog. 
+* A value of `fullscreen` opens the dialog in full screen.
+* An empty value or absence of the property defaults to opening the dialog normally.
+* Note that the user can always toggle the fullscreen mode within the dialog.
 * Does not apply to the classic UI.
 
 ### Configuring with cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
@@ -798,7 +798,7 @@ The `cq:dropTargets` node (node type `nt:unstructured`) defines a list of drop t
 Each child node of type `cq:DropTargetConfig` defines a drop target in the component. The node name is important because it must be used in the JSP, as follows, to generate the CSS class name assigned to the DOM element that is the effective drop target:
 
 ```
-<drop target css class> = <drag and drop prefix> + 
+<drop target css class> = <drag and drop prefix> +
  <node name of the drop target in the edit configuration>
 ```
 
@@ -806,32 +806,32 @@ The `<*drag and drop prefix*>` is defined by the Java property:
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
-For example, the class name is defined as follows in the JSP of the Download component  
+For example, the class name is defined as follows in the JSP of the Download component
 ( `/libs/foundation/components/download/download.jsp`), where `file` is the node name of the drop target in the edit configuration of the Download component:
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
 The node of type `cq:DropTargetConfig` needs to have the following properties:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property Name</strong></td> 
-   <td><strong>Property Value<br /> </strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>accept</code></td> 
-   <td>Regex applied to the asset mime type to validate if dropping is allowed.</td> 
-  </tr> 
-  <tr> 
-   <td><code>groups</code></td> 
-   <td>Array of drop target groups. Each group must match the group type that is defined in the content finder extension and that is attached to the assets.</td> 
-  </tr> 
-  <tr> 
-   <td><code>propertyName</code></td> 
-   <td>Name of the property that will be updated after a valid drop.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property Name</strong></td>
+   <td><strong>Property Value<br /> </strong></td>
+  </tr>
+  <tr>
+   <td><code>accept</code></td>
+   <td>Regex applied to the asset mime type to validate if dropping is allowed.</td>
+  </tr>
+  <tr>
+   <td><code>groups</code></td>
+   <td>Array of drop target groups. Each group must match the group type that is defined in the content finder extension and that is attached to the assets.</td>
+  </tr>
+  <tr>
+   <td><code>propertyName</code></td>
+   <td>Name of the property that will be updated after a valid drop.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following configuration is taken from the Download component. It enables any asset (the mime-type can be any string) from the `media` group to be dropped from the content finder into the component. After the drop, the component property `fileReference` is being updated:
@@ -895,30 +895,30 @@ The following configuration adds a parameter called `name`, set with the value `
 
 The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an inplace editing configuration for the component. It can have the following properties:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property Name</strong></td> 
-   <td><strong>Property Value<br /> </strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>active</code></td> 
-   <td>(<code>boolean</code>) True to enable the inplace editing of the component.</td> 
-  </tr> 
-  <tr> 
-   <td><code>configPath</code></td> 
-   <td>(<code>String</code>) Path of the editor configuration. The configuration can be specified by a configuration node.</td> 
-  </tr> 
-  <tr> 
-   <td><code>editorType</code></td> 
-   <td><p>(<code>String</code>) Editor type. The available types are:</p> 
-    <ul> 
-     <li>plaintext: to be used for non HTML content.<br /> </li> 
-     <li>title: is an enhanced plaintext editor that converts graphical titles into a plaintext before editing begins. Used by the Geometrixx title component.<br /> </li> 
-     <li>text: to be used for HTML content (uses the Rich Text Editor).<br /> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property Name</strong></td>
+   <td><strong>Property Value<br /> </strong></td>
+  </tr>
+  <tr>
+   <td><code>active</code></td>
+   <td>(<code>boolean</code>) True to enable the inplace editing of the component.</td>
+  </tr>
+  <tr>
+   <td><code>configPath</code></td>
+   <td>(<code>String</code>) Path of the editor configuration. The configuration can be specified by a configuration node.</td>
+  </tr>
+  <tr>
+   <td><code>editorType</code></td>
+   <td><p>(<code>String</code>) Editor type. The available types are:</p>
+    <ul>
+     <li>plaintext: to be used for non HTML content.<br /> </li>
+     <li>title: is an enhanced plaintext editor that converts graphical titles into a plaintext before editing begins. Used by the Geometrixx title component.<br /> </li>
+     <li>text: to be used for HTML content (uses the Rich Text Editor).<br /> </li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following configuration enables the inplace editing of the component and defines `plaintext` as the editor type:
@@ -934,74 +934,74 @@ The following configuration enables the inplace editing of the component and def
 
 The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happens before or after an action on the component. The following table defines its possible properties.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property Name</strong></td> 
-   <td><strong>Property Value<br /> </strong></td> 
-   <td><p><strong>Default Value</strong></p> <p>(Classic UI Only)</p> </td> 
-  </tr> 
-  <tr> 
-   <td><code>beforedelete</code></td> 
-   <td>The handler is triggered before the component is removed.<br /> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>beforeedit</code></td> 
-   <td>The handler is triggered before the component is edited.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>beforecopy</code></td> 
-   <td>The handler is triggered before the component is copied.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>beforemove</code></td> 
-   <td>The handler is triggered before the component is moved.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>beforeinsert</code></td> 
-   <td>The handler is triggered before the component is inserted.<br /> Only operational for the touch-enabled UI.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>beforechildinsert</code></td> 
-   <td>The handler is triggered before the component is inserted inside another component (containers only).</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>afterdelete</code></td> 
-   <td>The handler is triggered after the component is removed.</td> 
-   <td><code>REFRESH_SELF</code></td> 
-  </tr> 
-  <tr> 
-   <td><code>afteredit</code></td> 
-   <td>The handler is triggered after the component is edited.</td> 
-   <td><code>REFRESH_SELF</code></td> 
-  </tr> 
-  <tr> 
-   <td><code>aftercopy</code></td> 
-   <td>The handler is triggered after the component is copied.</td> 
-   <td><code>REFRESH_SELF</code></td> 
-  </tr> 
-  <tr> 
-   <td><code>afterinsert</code></td> 
-   <td>The handler is triggered after the component is inserted.</td> 
-   <td><code>REFRESH_INSERTED</code></td> 
-  </tr> 
-  <tr> 
-   <td><code>aftermove</code></td> 
-   <td>The handler is triggered after the component is moved.</td> 
-   <td><code>REFRESH_SELFMOVED</code></td> 
-  </tr> 
-  <tr> 
-   <td><code>afterchildinsert</code></td> 
-   <td>The handler is triggered after the component is inserted inside another component (containers only).</td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property Name</strong></td>
+   <td><strong>Property Value<br /> </strong></td>
+   <td><p><strong>Default Value</strong></p> <p>(Classic UI Only)</p> </td>
+  </tr>
+  <tr>
+   <td><code>beforedelete</code></td>
+   <td>The handler is triggered before the component is removed.<br /> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>beforeedit</code></td>
+   <td>The handler is triggered before the component is edited.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>beforecopy</code></td>
+   <td>The handler is triggered before the component is copied.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>beforemove</code></td>
+   <td>The handler is triggered before the component is moved.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>beforeinsert</code></td>
+   <td>The handler is triggered before the component is inserted.<br /> Only operational for the touch-enabled UI.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>beforechildinsert</code></td>
+   <td>The handler is triggered before the component is inserted inside another component (containers only).</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>afterdelete</code></td>
+   <td>The handler is triggered after the component is removed.</td>
+   <td><code>REFRESH_SELF</code></td>
+  </tr>
+  <tr>
+   <td><code>afteredit</code></td>
+   <td>The handler is triggered after the component is edited.</td>
+   <td><code>REFRESH_SELF</code></td>
+  </tr>
+  <tr>
+   <td><code>aftercopy</code></td>
+   <td>The handler is triggered after the component is copied.</td>
+   <td><code>REFRESH_SELF</code></td>
+  </tr>
+  <tr>
+   <td><code>afterinsert</code></td>
+   <td>The handler is triggered after the component is inserted.</td>
+   <td><code>REFRESH_INSERTED</code></td>
+  </tr>
+  <tr>
+   <td><code>aftermove</code></td>
+   <td>The handler is triggered after the component is moved.</td>
+   <td><code>REFRESH_SELFMOVED</code></td>
+  </tr>
+  <tr>
+   <td><code>afterchildinsert</code></td>
+   <td>The handler is triggered after the component is inserted inside another component (containers only).</td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -1014,7 +1014,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 
 >[!NOTE]
 >
->In the case of nested components there are certain restrictions on actions defined as properties on the `cq:listeners` node:  
+>In the case of nested components there are certain restrictions on actions defined as properties on the `cq:listeners` node:
 
 >
 >* For nested components, the values of the following properties *must* be `REFRESH_PAGE`: >

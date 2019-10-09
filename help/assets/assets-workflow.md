@@ -5,7 +5,7 @@ description: Learn how to apply workflows to assets, folders, and collections in
 seo-description: Learn how to apply workflows to assets, folders, and collections in AEM Assets.
 uuid: 0dbf20bc-77cf-4719-a304-6d02472e8d80
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: authoring
 discoiquuid: 48204f21-a26d-46b6-b5b3-ecbbec704980

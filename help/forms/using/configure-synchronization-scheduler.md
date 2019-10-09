@@ -5,7 +5,7 @@ description: Learn how to migrate and sync assets, configure sync scheduler, and
 seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
 uuid: a6445b45-9c1c-4483-a32e-453648c488c5
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
 ---
@@ -18,7 +18,7 @@ By default, the synchronization scheduler runs after every 3 minutes to synchron
 
 Perform the following steps to change the interval of the synchronization scheduler:
 
-1. Log in to AEM Configuration Manager. The URL of Configuration Manager is `https://[Server]:[Port]/lc/system/console/configMgr`  
+1. Log in to AEM Configuration Manager. The URL of Configuration Manager is `https://[Server]:[Port]/lc/system/console/configMgr`
 
 1. Locate and open the **FormsManagerConfiguration** bundle.
 

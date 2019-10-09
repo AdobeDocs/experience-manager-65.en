@@ -6,7 +6,7 @@ seo-description: null
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 ---
@@ -19,7 +19,7 @@ You can manually change configuration settings from Administrator UI. To change 
 
 **Summary of steps**To programmatically manage the Preferences Nodes, perform the following steps:
 
-1. Include project files. 
+1. Include project files.
 1. Create an PreferencesManagerService client
 1. Invoke the appropriate role or permission operations
 

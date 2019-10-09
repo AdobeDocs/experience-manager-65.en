@@ -5,7 +5,7 @@ description: AEM comes with a standard error handler for handling HTTP errors
 seo-description: AEM comes with a standard error handler for handling HTTP errors
 uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
@@ -64,7 +64,7 @@ You can develop your own scripts to customize the pages shown by the error handl
 
 HTTP 500 errors are caused by server side exceptions.
 
-* **[500 Internal Server Error](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)** 
+* **[500 Internal Server Error](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
   The server encountered an unexpected condition which prevented it from fulfilling the request.
 
 When request processing results in an exception, the Apache Sling framework (that AEM is built on):
@@ -72,7 +72,7 @@ When request processing results in an exception, the Apache Sling framework (tha
 * logs the exception
 * returns:
 
-    * the HTTP response code 500 
+    * the HTTP response code 500
     * the exception stack trace
 
   in the body of the response.

@@ -5,7 +5,7 @@ description: The Query Builder offers an easy way of querying the content reposi
 seo-description: The Query Builder offers an easy way of querying the content repository
 uuid: 5b599b60-a149-4425-b7ac-7fbe7e048bca
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
@@ -55,9 +55,9 @@ It maps a higher-level search constraint (such as "width &gt; 200") to a specifi
 
 As an example this section describes how to create a custom predicate evaluator that helps data based on the replication metadata:
 
-* `cq:lastReplicated` that stores the date of the last replication action  
+* `cq:lastReplicated` that stores the date of the last replication action
 
-* `cq:lastReplicatedBy` that stores the id of the user who triggered the last replication action  
+* `cq:lastReplicatedBy` that stores the id of the user who triggered the last replication action
 
 * `cq:lastReplicationAction` that stores the last replication action (e.g. Activation, Deactivation)
 
@@ -210,14 +210,14 @@ import org.slf4j.Logger;
 
 import org.slf4j.LoggerFactory;
 
- 
+
 import com.day.cq.search.Predicate;
 
 import com.day.cq.search.eval.AbstractPredicateEvaluator;
 
 import com.day.cq.search.eval.EvaluationContext;
 
- 
+
 @Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
 
 public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
@@ -237,7 +237,7 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
     static final String PREDICATE_SINCE_OP = " >= ";
 
     static final String PREDICATE_ACTION = "action";
- 
+
 
     Logger log = LoggerFactory.getLogger(getClass());
 

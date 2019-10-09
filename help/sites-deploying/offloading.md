@@ -5,7 +5,7 @@ description: Learn how to configure and use AEM instances in a topology in order
 seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
@@ -25,7 +25,7 @@ For information about adding instances to a topology, see [Administering Topolog
 
 The Sling JobManager and JobConsumer enable the creation of jobs that are processed in a topology:
 
-* JobManager: A service that creates jobs for specific topics. 
+* JobManager: A service that creates jobs for specific topics.
 * JobConsumer: A service that executes jobs of one or more topics. Multiple JobConsumer services can be registered for the same topic.
 
 When JobManager creates a job, the Offloading framework selects an Experience Manager cluster in the topology to execute the job:
@@ -103,56 +103,56 @@ The Apache Sling Resource-Based Discovery Service runs on each instance to contr
 
 The Discovery Service sends periodic POST requests (heartbeats) to Topology Connector services to establish and maintain connections with the topology. The Topology Connector service maintains a whitelist of IP addresses or host names that are allowed to join the topology:
 
-* To join an instance to a topology, specify the URL of the Topology Connector service of the root member. 
+* To join an instance to a topology, specify the URL of the Topology Connector service of the root member.
 * To enable an instance to join a topology, add the instance to the whitelist of the root member's Topology Connector service.
 
 Use the Web Console or a sling:OsgiConfig node to configure the following properties of the org.apache.sling.discovery.impt.Config service:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property Name</th> 
-   <th>OSGi Name</th> 
-   <th>Description</th> 
-   <th>Default Value</th> 
-  </tr> 
-  <tr> 
-   <td>Heartbeat timeout (seconds)</td> 
-   <td>heartbeatTimeout</td> 
-   <td>The amount of time in seconds to wait for a heartbeat response before the targeted instance is considered unavailable. </td> 
-   <td>20</td> 
-  </tr> 
-  <tr> 
-   <td>Heartbeat interval (seconds)</td> 
-   <td>heartbeatInterval</td> 
-   <td>The amount of time in seconds between heartbeats.</td> 
-   <td>15</td> 
-  </tr> 
-  <tr> 
-   <td>Minimal Event Delay (seconds)</td> 
-   <td>minEventDelay</td> 
-   <td><p>When a change occurs to the topology, the amount of time to delay the change of state from TOPOLOGY_CHANGING to TOPOLOGY_CHANGED. Each change that occurs when the state is TOPOLOGY_CHANGING increases the delay by this amount of time.</p> <p>This delay prevents listeners from being flooded with events. </p> <p>To use no delay, specify 0 or a negative number.</p> </td> 
-   <td>3</td> 
-  </tr> 
-  <tr> 
-   <td>Topology Connector URLs</td> 
-   <td>topologyConnectorUrls</td> 
-   <td>The URLs of the Topology Connector services to send heartbeat messages.</td> 
-   <td>http://localhost:4502/libs/sling/topology/connector</td> 
-  </tr> 
-  <tr> 
-   <td>Topology Connector Whitelist</td> 
-   <td>topologyConnectorWhitelist</td> 
-   <td>The list of IP addresses or host names that the local Topology Connector service allows in the topology. </td> 
-   <td><p>localhost</p> <p>127.0.0.1</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Repository Descriptor Name</td> 
-   <td>leaderElectionRepositoryDescriptor</td> 
-   <td> </td> 
-   <td>&lt;no value&gt;</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property Name</th>
+   <th>OSGi Name</th>
+   <th>Description</th>
+   <th>Default Value</th>
+  </tr>
+  <tr>
+   <td>Heartbeat timeout (seconds)</td>
+   <td>heartbeatTimeout</td>
+   <td>The amount of time in seconds to wait for a heartbeat response before the targeted instance is considered unavailable. </td>
+   <td>20</td>
+  </tr>
+  <tr>
+   <td>Heartbeat interval (seconds)</td>
+   <td>heartbeatInterval</td>
+   <td>The amount of time in seconds between heartbeats.</td>
+   <td>15</td>
+  </tr>
+  <tr>
+   <td>Minimal Event Delay (seconds)</td>
+   <td>minEventDelay</td>
+   <td><p>When a change occurs to the topology, the amount of time to delay the change of state from TOPOLOGY_CHANGING to TOPOLOGY_CHANGED. Each change that occurs when the state is TOPOLOGY_CHANGING increases the delay by this amount of time.</p> <p>This delay prevents listeners from being flooded with events. </p> <p>To use no delay, specify 0 or a negative number.</p> </td>
+   <td>3</td>
+  </tr>
+  <tr>
+   <td>Topology Connector URLs</td>
+   <td>topologyConnectorUrls</td>
+   <td>The URLs of the Topology Connector services to send heartbeat messages.</td>
+   <td>http://localhost:4502/libs/sling/topology/connector</td>
+  </tr>
+  <tr>
+   <td>Topology Connector Whitelist</td>
+   <td>topologyConnectorWhitelist</td>
+   <td>The list of IP addresses or host names that the local Topology Connector service allows in the topology. </td>
+   <td><p>localhost</p> <p>127.0.0.1</p> </td>
+  </tr>
+  <tr>
+   <td>Repository Descriptor Name</td>
+   <td>leaderElectionRepositoryDescriptor</td>
+   <td> </td>
+   <td>&lt;no value&gt;</td>
+  </tr>
+ </tbody>
 </table>
 
 Use the following procedure to connect a CQ instance to the root member of a topology. The procedure points the instance to the Topology Connector URL of the root topology member. Perform this procedure on all members of the topology.
@@ -184,14 +184,14 @@ Jobs are distributed amoung instances that have the associated topic enabled usi
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
 1. To disable the consumption of a topic for an instance, below the topc name click Disable beside the instance.
-1. To configure all topic consumption for an instance, click the instance identifier below any topic. 
+1. To configure all topic consumption for an instance, click the instance identifier below any topic.
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
 1. Click one of the following buttons beside a topic to configure the consumption behavior for the instance, and then click Save:
 
-    * Enabled: This instance consumes jobs of this topic. 
-    * Disabled: This instance does not consume jobs of this topic. 
+    * Enabled: This instance consumes jobs of this topic.
+    * Disabled: This instance does not consume jobs of this topic.
     * Exclusive: This instance consumes jobs only of this topic.
 
    **Note:** When you select Exclusive for a topic, all of the other topics are automatically set to Disabled.
@@ -229,7 +229,7 @@ The offloading framework uses replication to transport resources between author 
 >
 >A known issue with the automatically-generated replication agents requires you to manually create new replication agents. Follow the procedure in [Problems Using the Automatically Generated Replication Agents](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) before you create the agents for Offloading.
 
-Create the replication agents that transport job payloads between instances for offloading. The following illustration shows the agents that are required to offload from the author to a worker instance. The author has a Sling ID of 1 and the worker instance has a Sling ID of 2: 
+Create the replication agents that transport job payloads between instances for offloading. The following illustration shows the agents that are required to offload from the author to a worker instance. The author has a Sling ID of 1 and the worker instance has a Sling ID of 2:
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -267,7 +267,7 @@ Example: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creating the outgoing agent {#creating-the-outgoing-agent}
 
-1. Create a **Replication Agent** on author. (See the [documention for replication agents](/help/sites-deploying/replication.md)). Specify any **Title**. The **Name** must follow the naming convention. 
+1. Create a **Replication Agent** on author. (See the [documention for replication agents](/help/sites-deploying/replication.md)). Specify any **Title**. The **Name** must follow the naming convention.
 1. Create the agent using the following properties:
 
    | Property |Value |
@@ -281,7 +281,7 @@ Example: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creating the reverse agent {#creating-the-reverse-agent}
 
-1. Create a **Reverse Replication Agent** on author. (See the [documention for replication agents](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must follow the naming convention. 
+1. Create a **Reverse Replication Agent** on author. (See the [documention for replication agents](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must follow the naming convention.
 1. Create the agent using the following properties:
 
    | Property |Value |
@@ -326,7 +326,7 @@ The following procedure assumes the following characteristics for the offloading
 * Users to do not directly interact with one or more Experience Manager instances that process the DAM assets. These instances are dedicated to the background processing of DAM assets.
 
 1. On each Experience Manager instance, configure the Discovery Service so that it points to the root Topography Connector. (See [Configuring Topology Membership](#title4).)
-1. Configure the root Topography Connector so that the connecting instances are on the whitelist. 
+1. Configure the root Topography Connector so that the connecting instances are on the whitelist.
 1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)

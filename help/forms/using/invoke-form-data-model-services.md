@@ -1,10 +1,10 @@
 ---
 title: API to invoke form data model service from adaptive forms
 seo-title: API to invoke form data model service from adaptive forms
-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field. 
-seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field. 
+description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
+seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 ---
@@ -54,29 +54,29 @@ outputFieldN
 
 The API structure specifies the following details about the service operation.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>forDataModelId</code></td> 
-   <td>Specify the repository path to the form data model including its name</td> 
-  </tr> 
-  <tr> 
-   <td><code>operationName</code></td> 
-   <td>Specify the name of the service operation to execute</td> 
-  </tr> 
-  <tr> 
-   <td><code>input</code></td> 
-   <td>Map one or more form objects to the input arguments for the service operation</td> 
-  </tr> 
-  <tr> 
-   <td>Output</td> 
-   <td>Map one or more form objects to output values from the service operation to populate form fields<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>forDataModelId</code></td>
+   <td>Specify the repository path to the form data model including its name</td>
+  </tr>
+  <tr>
+   <td><code>operationName</code></td>
+   <td>Specify the name of the service operation to execute</td>
+  </tr>
+  <tr>
+   <td><code>input</code></td>
+   <td>Map one or more form objects to the input arguments for the service operation</td>
+  </tr>
+  <tr>
+   <td>Output</td>
+   <td>Map one or more form objects to output values from the service operation to populate form fields<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Sample script to invoke a service {#sample-script-to-invoke-a-service}

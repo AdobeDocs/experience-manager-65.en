@@ -6,7 +6,7 @@ seo-description: Customize the gestures on your AEM Forms app
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 ---
@@ -22,7 +22,7 @@ In the AEM Forms app, the left swipe opens up a new task or Startpoint while rig
 1. Open your project.
 
     * For iOS, open `Capture.xcodeproj` in Xcode
-    * For Android, open the Android project in Eclipse. 
+    * For Android, open the Android project in Eclipse.
     * For Windows, open `MWSWindows.sln` in Visual Studio.
 
 1. Navigate to the views folder and open the `task.js` file for editing.
@@ -41,26 +41,26 @@ In the AEM Forms app, the left swipe opens up a new task or Startpoint while rig
 
    `"EventName Selector": "Function"`
 
-   When you trigger a Javascript event named `EventName`on an HTML element specified by `Selector`, the `Function`is called. 
+   When you trigger a Javascript event named `EventName`on an HTML element specified by `Selector`, the `Function`is called.
 
 1. Find
 
-    * "tap .taskContentArea" : "onTaskClick", 
+    * "tap .taskContentArea" : "onTaskClick",
 
-      "tap .taskOpenArea" : "onTaskClick", 
+      "tap .taskOpenArea" : "onTaskClick",
 
-      "tap .task-content" : "onTaskClick", 
+      "tap .task-content" : "onTaskClick",
 
       "tap .last_empty_div" : "onTaskClick",
 
    and replace with
 
-    * "swipe .taskContentArea" : "onTaskClick", 
+    * "swipe .taskContentArea" : "onTaskClick",
 
-      "swipe .taskOpenArea" : "onTaskClick", 
+      "swipe .taskOpenArea" : "onTaskClick",
 
-      "swipe .task-content" : "onTaskClick", 
-      
+      "swipe .task-content" : "onTaskClick",
+
       "swipe .last_empty_div" : "onTaskClick",
 
 1. Save and close the `task.js` file.

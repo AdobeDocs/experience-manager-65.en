@@ -5,7 +5,7 @@ description: Display custom metadata in form listing
 seo-description: Display custom metadata in form listing
 uuid: 746aeece-a6d1-417b-8065-05cd54bd66d6
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 ---
@@ -42,7 +42,7 @@ Perform the following steps to create a custom template for various Forms Portal
 
    Add a title that you want displayed while selecting layout templates.
 
-   *Note: The title can be different from the node name of sling:Folder you created. * 
+   *Note: The title can be different from the node name of sling:Folder you created. *
    *The following image depicts the configuration for the Search & Lister component.* ![Creating a sling:Folder](assets/1-3.png)
 
 1. Create a file template.html in this folder to serve as the custom template.
@@ -104,11 +104,11 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 
 Support for localization, sorting, and using configuration properties on the user interface (Search & Lister Only):
 
-1. **Localization Support**: To localize any static text use the attribute **${localize-***YOUR_TEXT***}** and make the localized value available, if doesn't exist already. 
+1. **Localization Support**: To localize any static text use the attribute **${localize-***YOUR_TEXT***}** and make the localized value available, if doesn't exist already.
 
    *In the example discussed, the attributes ${localize-Apply} and ${localize-Download} are used to localize the Apply and Download text.*
 
-1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a tabled layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort. 
+1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a tabled layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort.
 
    For example, for the "Title" header in the grid view, the value of the "data-sortKey" header is "title". Click the heading to sort the values in a particular column.
 
@@ -153,7 +153,7 @@ Support for localization, sorting, and using configuration properties on the use
 
 ***D.** *To localize "Apply" string
 
-***E.** *Using the configuration property pdfLinkText 
+***E.** *Using the configuration property pdfLinkText
 
 ***F.*** Using the "pdfUrl" metadata
 

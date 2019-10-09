@@ -5,7 +5,7 @@ description: HTTP/2 improves the way browsers and servers communicate, allowing 
 seo-description: HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of needed processing power.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
@@ -44,7 +44,7 @@ To use HTTP/2, you must meet the following requirements:
 * Use the Adobe-bundled CDN (content delivery network) as part of your Dynamic Media license.
 * Use a dedicated (non- company-h.assetsadobe#.com) domain.
 
-  If you already have a dedicated domain, you can opt-in by way of Technical Support.  
+  If you already have a dedicated domain, you can opt-in by way of Technical Support.
 
   If you do not have a dedicated domain, Adobe will schedule your transition to HTTP/2 in 2018.
 
@@ -57,7 +57,7 @@ You must initiate the request to switch over to HTTP/2; it is not automatically 
     1. Provide the following information in your support request:
 
         1. Primary contact name, email, phone.
-        1. All domains to be transitioned over to HTTP2. 
+        1. All domains to be transitioned over to HTTP2.
         1. Verify you are using secure HTTPS for rich media requests.
         1. Verify you are using the CDN through Adobe and are not managed with a direct relationship.
         1. Verify you are using a dedicated domain. If you use Dynamic Media, then you already are using a dedicated domain.

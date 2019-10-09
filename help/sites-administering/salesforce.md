@@ -5,7 +5,7 @@ description: Learn about integrating AEM with Salesforce.
 seo-description: Learn about integrating AEM with Salesforce.
 uuid: db3b25f3-b680-4054-a8db-4161d4c86201
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b9752c60-eb26-4840-9163-a99537a58727
@@ -49,8 +49,8 @@ To configure AEM to integrate with Salesforce:
    >The new configuration redirects to a new page: **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. This is the exact same value that you need to specify in the Callback URL while createing the remote access application in Salesforce. These values must match.
 
 1. Log in to your salesforce account (or if you do not have one, create one at [https://developer.force.com](https://developer.force.com).)
-1. In Salesforce, navigate to **Create** &gt; **Apps** to get to **Connected Apps** (in former versions of salesforce, the workflow was **Deploy** &gt; **Remote Access**). 
-1. Click **New** to connect AEM with Salesforce. 
+1. In Salesforce, navigate to **Create** &gt; **Apps** to get to **Connected Apps** (in former versions of salesforce, the workflow was **Deploy** &gt; **Remote Access**).
+1. Click **New** to connect AEM with Salesforce.
 
    ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -70,7 +70,7 @@ To configure AEM to integrate with Salesforce:
 
 1. In AEM, navigate to **Cloud Services** and navigate to the salesforce configuration you created earlier (for example, **developer**). Click **Edit** and enter the customer key and customer secret from salesforce.com.
 
-   ![chlimage_1-23](assets/chlimage_1-23.jpeg) 
+   ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
    | Login Url |This is the Salesforce Authorization Endpoint. Its value is pre-filled and serves most cases. |
    |---|---|
@@ -81,7 +81,7 @@ To configure AEM to integrate with Salesforce:
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-   In AEM, a confirmation dialog opens telling you that you connected successfully. 
+   In AEM, a confirmation dialog opens telling you that you connected successfully.
 
 1. Navigate to the root page of your website and click **Page Properties**. Then select **Cloud Services** and add **Salesforce** and select the correct confguration (for example, **developer**).
 
@@ -149,7 +149,7 @@ The salesforce client context store shows additional information about the curre
 To do this, you need to configure the following:
 
 1. Link an AEM user with a Salesforce ID via the Salesforce Connect component.
-1. Add the Salesforce Profile Data into the client context page to configure what properties you want to see. 
+1. Add the Salesforce Profile Data into the client context page to configure what properties you want to see.
 1. (Optional) Build a segment that uses the data from the Salesforce Client Context Store.
 
 ### Linking an AEM user with a Salesforce ID {#linking-an-aem-user-with-a-salesforce-id}

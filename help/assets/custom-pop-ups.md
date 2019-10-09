@@ -5,7 +5,7 @@ description: The default Quickview is used in ecommerce experiences whereby a po
 seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
@@ -17,8 +17,8 @@ The default Quickview is used in ecommerce experiences whereby a pop-up is displ
 
 Quickviews are supported by the following viewers in Dynamic Media:
 
-* Interactive Images (clickable hotspots)  
-* Interactive Video (clickable thumbnail images during video playback)  
+* Interactive Images (clickable hotspots)
+* Interactive Video (clickable thumbnail images during video playback)
 * Carousel Banners (clickable hotspots or image maps)
 
 While the functionality of each viewer differs, the process of creating a Quickview is the same across all three supported viewers.
@@ -29,55 +29,55 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    You typically create a Quickview the same time you edit an asset for use with the viewer you are using.
 
-   <table> 
-    <tbody> 
-    <tr> 
-    <td><strong>Viewer you are using</strong></td> 
-    <td><strong>Complete these steps to create the Quickview</strong></td> 
-    </tr> 
-    <tr> 
-    <td>Interactive Images</td> 
-    <td><a href="/help/assets/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Adding hotspots to an image banner</a>.</td> 
-    </tr> 
-    <tr> 
-    <td>Interactive Videos</td> 
-    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adding interactivity to your video</a>.</td> 
-    </tr> 
-    <tr> 
-    <td>Carousel Banners</td> 
-    <td><a href="/help/assets/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Adding Hotspots or Image Maps to a Banner</a>.<br /> </td> 
-    </tr> 
-    </tbody> 
+   <table>
+    <tbody>
+    <tr>
+    <td><strong>Viewer you are using</strong></td>
+    <td><strong>Complete these steps to create the Quickview</strong></td>
+    </tr>
+    <tr>
+    <td>Interactive Images</td>
+    <td><a href="/help/assets/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Adding hotspots to an image banner</a>.</td>
+    </tr>
+    <tr>
+    <td>Interactive Videos</td>
+    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adding interactivity to your video</a>.</td>
+    </tr>
+    <tr>
+    <td>Carousel Banners</td>
+    <td><a href="/help/assets/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Adding Hotspots or Image Maps to a Banner</a>.<br /> </td>
+    </tr>
+    </tbody>
    </table>
 
 1. Obtain the viewer embed code to Integrate the viewer within your website.
 
-   <table> 
-    <tbody> 
-    <tr> 
-    <td><strong>Viewer you are using</strong><br /> </td> 
-    <td><strong>Complete these steps to integrate the viewer with your website</strong></td> 
-    </tr> 
-    <tr> 
-    <td>Interactive image</td> 
-    <td><a href="/help/assets/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Integrating an interactive image with your website</a>.<br /> </td> 
-    </tr> 
-    <tr> 
-    <td>Interactive video<br /> </td> 
-    <td><a href="/help/assets/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrating an interactive video with your website</a>.<br /> </td> 
-    </tr> 
-    <tr> 
-    <td>Carousel banner</td> 
-    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adding a carousel banner to your website page</a>.<br /> </td> 
-    </tr> 
-    </tbody> 
+   <table>
+    <tbody>
+    <tr>
+    <td><strong>Viewer you are using</strong><br /> </td>
+    <td><strong>Complete these steps to integrate the viewer with your website</strong></td>
+    </tr>
+    <tr>
+    <td>Interactive image</td>
+    <td><a href="/help/assets/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Integrating an interactive image with your website</a>.<br /> </td>
+    </tr>
+    <tr>
+    <td>Interactive video<br /> </td>
+    <td><a href="/help/assets/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrating an interactive video with your website</a>.<br /> </td>
+    </tr>
+    <tr>
+    <td>Carousel banner</td>
+    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adding a carousel banner to your website page</a>.<br /> </td>
+    </tr>
+    </tbody>
    </table>
 
 1. The viewer you are using now needs to know how to use the Quickview.
 
    To do this the viewer uses a handler called `QuickViewActive`.
 
-   **Example** 
+   **Example**
    Suppose you were using the following sample embed code on your web page for an interactive image:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
@@ -86,7 +86,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Using the sample embed code example from above, we have the following code:** 
+   **Using the sample embed code example from above, we have the following code:**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -108,7 +108,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    The quickViewActivate handler controls the Quickviews in the viewer. The handler contains the variable list and function calls for use with the Quickview. The embed code provides mapping for the SKU variable set in the Quickview as well as a sample loadQuickView function call.
 
-   **Variable mapping** 
+   **Variable mapping**
    Map variables for use in your web page to the SKU value and generic variables contained in the Quickview:
 
    `var *variable1*= inData.*quickviewVariable*`
@@ -120,11 +120,11 @@ While the functionality of each viewer differs, the process of creating a Quickv
    Map additional variables from the Quickview too, as in the following:
 
    ```
-   var <i>variable2</i>= inData.<i>quickviewVariable2</i> 
+   var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Function call** 
+   **Function call**
    The handler also requires a function call for the Quickview to work. The function is assumed to be accessible by your host page. The embed code provides a sample function call:
 
    `loadQuickView(sku)`
@@ -154,7 +154,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
    }
    ```
 
-    * Upload a test HTML page to a webserver and open.  
+    * Upload a test HTML page to a webserver and open.
 
       With the variables from the Quickview mapped and the function call in place, the browser console writes the variable value to the browser console using the sample function provided.
 
@@ -255,7 +255,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    `*viewerInstance.*init()`
 
-   **Example** 
+   **Example**
    This example uses the Interactive image viewer.
 
    `s7interactiveimageviewer.init()`

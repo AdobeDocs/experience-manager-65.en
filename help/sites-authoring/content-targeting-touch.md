@@ -5,7 +5,7 @@ description:  Targeting mode and the Target component provide tools for creating
 seo-description:  Targeting mode and the Target component provide tools for creating content for experiences
 uuid: 174f9e9b-02c7-48dd-92fc-e407d2a734c3
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
@@ -15,7 +15,7 @@ discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
 
 Author targeted content using Targeting mode of AEM. Targeting mode and the Target component provide tools for creating content for experiences:
 
-* Easily recognize the targeted content that is on the page. A dotted line forms a border around all targeted content. 
+* Easily recognize the targeted content that is on the page. A dotted line forms a border around all targeted content.
 * Select a brand and an activity to see the experiences.
 * Add experiences to an activity or remove experiences.
 * Perform A/B testing and convert winners (Adobe Target only).
@@ -35,9 +35,9 @@ The activities and experiences that you see in Target mode reflect the [Activite
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId` to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names can therefore not be re-used in different campaign types. 
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId` to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names can therefore not be re-used in different campaign types.
 >
->If you use the same name in the same campaign type, you will overwrite the existing campaign. 
+>If you use the same name in the same campaign type, you will overwrite the existing campaign.
 >
 >If while synchronizing, you encounter the error "Request Failed. `thirdPartyId` already exists," change the name of the campaign and synchronize again.
 
@@ -89,13 +89,13 @@ To add an activity:
 
 1. In the **Targeting** engine drop-down menu, select your targeting engine.
 
-    * If you select **ContextHub AEM**, the remaining fields are dimmed and not available. Click or tap **Create**. 
+    * If you select **ContextHub AEM**, the remaining fields are dimmed and not available. Click or tap **Create**.
     * If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.
     * If you are using the AEM/Adobe Campaign integration and are sending targeted content (newsletters), select **Adobe Campaign**. See [Integrating with Adobe Campaign](/help/sites-administering/campaign.md) for more information.
 
 1. In the Activity menu, select either **Experience Targeting** or **A/B Test**.
 
-    * Experience targeting - manage Adobe Target activities from AEM. 
+    * Experience targeting - manage Adobe Target activities from AEM.
     * A/B Test - create/manage A/B test activities in Adobe Target from AEM.
 
 ## The Targeting Process: Create, Target, and Goals & Settings {#the-targeting-process-create-target-and-goals-settings}
@@ -140,7 +140,7 @@ After you [start the targeting process](/help/sites-authoring/content-targeting-
 >
 >An offer is the content of a targeted component.
 
-Experiences are displayed in the Audiences pane. In the following example, experiences include **Default**, **Female**, **Female over 30**, and **Female under 30**. This example shows the Default offer of a targeted **Image** component. 
+Experiences are displayed in the Audiences pane. In the following example, experiences include **Default**, **Female**, **Female over 30**, and **Female under 30**. This example shows the Default offer of a targeted **Image** component.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -380,7 +380,7 @@ Open a library offer from an experience in Targeted mode to edit the offer. The 
 
 1. Select the experience to reveal the library offer.
 1. Convert the library offer to a local/custom offer. See [Converting a Library Offer to a Custom Library](#converting-a-library-offer-to-a-custom-library).
-1. Edit the content of the offer.  
+1. Edit the content of the offer.
 
 1. Save it back to the library. See [Adding a Custom Offer to a Library](#adding-a-custom-offer-to-a-library).
 
@@ -400,7 +400,7 @@ For information targeting engines, see [Targeting Engine](/help/sites-authoring/
 
 An audience must not be used by more than one experience. A warning symbol appears next to an experience when it is mapped to an audience that is mapped to another experience.
 
-![](do-not-localize/chlimage_1-6.png) 
+![](do-not-localize/chlimage_1-6.png)
 
 ### Associating experiences with audiences (AEM or Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -416,7 +416,7 @@ If you have an A/B test activity, audiences are on your left, the percentage tha
 
 You can change the percentages as long as they add up to 100 percent. An audience can be used by multiple experiences in A/B testing.
 
-![chlimage_1-80](assets/chlimage_1-80.png) 
+![chlimage_1-80](assets/chlimage_1-80.png)
 
 ### Associating Audiences and Traffic Percentages with A/B Testing {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
@@ -448,75 +448,75 @@ If using Adobe Target as the targeting engine and you have A4T Analytics configu
 
 The following success metrics are available (used for publish only):
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Conversion</strong></td> 
-   <td><p>The percentage of visitors who clicked on any part of the experience being tested. A conversion can either be counted once per visitor or each time any visitor completes a conversion. The conversion metric is set to one of the following:</p> 
-    <ul> 
-     <li><strong>Viewed a page</strong> - You can define what page the audience viewed by selecting either <strong>URL is</strong> and then defining the URL or multiple URLs, or by selecting <strong>URL contains</strong> and then adding a path or keyword.</li> 
-     <li><strong>Viewed an mbox</strong> - You can define what mbox your audience viewed by entering the name of the mbox. You can enter multiple mboxes by clicking <strong>Add an Mbox</strong>.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Revenue</strong></td> 
-   <td><p>Revenue generated by the visit. You can choose from the following revenue metrics:</p> 
-    <ul> 
-     <li>Revenue per Visitor (RPV)</li> 
-     <li>Average Order Value (AOV)</li> 
-     <li>Total Sales </li> 
-     <li>Orders</li> 
-    </ul> <p>For any of these options, whether an mbox was viewed indicates that the goal has been reached. You can define the mbox or multiple mboxes.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Engagement</strong></td> 
-   <td><p>You can measure three types of engagement:</p> 
-    <ul> 
-     <li>Page Views</li> 
-     <li>Custom Scoring</li> 
-     <li>Time on Site</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Conversion</strong></td>
+   <td><p>The percentage of visitors who clicked on any part of the experience being tested. A conversion can either be counted once per visitor or each time any visitor completes a conversion. The conversion metric is set to one of the following:</p>
+    <ul>
+     <li><strong>Viewed a page</strong> - You can define what page the audience viewed by selecting either <strong>URL is</strong> and then defining the URL or multiple URLs, or by selecting <strong>URL contains</strong> and then adding a path or keyword.</li>
+     <li><strong>Viewed an mbox</strong> - You can define what mbox your audience viewed by entering the name of the mbox. You can enter multiple mboxes by clicking <strong>Add an Mbox</strong>.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Revenue</strong></td>
+   <td><p>Revenue generated by the visit. You can choose from the following revenue metrics:</p>
+    <ul>
+     <li>Revenue per Visitor (RPV)</li>
+     <li>Average Order Value (AOV)</li>
+     <li>Total Sales </li>
+     <li>Orders</li>
+    </ul> <p>For any of these options, whether an mbox was viewed indicates that the goal has been reached. You can define the mbox or multiple mboxes.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Engagement</strong></td>
+   <td><p>You can measure three types of engagement:</p>
+    <ul>
+     <li>Page Views</li>
+     <li>Custom Scoring</li>
+     <li>Time on Site</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 In addition, there are advanced settings that let you determine how to count success metrics. Options include counting the metric per impression or once per visitor and choosing whether to keep the user in the activity or removing them.
 
 Use the advanced settings to determine what happens **after** a user encounters the goal metric. The following table shows the available options.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>After a user encounters this goal metric...</strong></td> 
-   <td><strong>You select the following to happen...</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Increment Count &amp; Keep User in Activity</strong></td> 
-   <td>Specify how the count is incremented: 
-    <ul> 
-     <li>Once per entrant</li> 
-     <li>On every impression, excluding page refreshes</li> 
-     <li>On every impression</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Increment Count, Release User &amp; Allow Reentry</strong></td> 
-   <td>Select the experience the visitor sees if they reenter the activity: 
-    <ul> 
-     <li>Same experience</li> 
-     <li>Random experience</li> 
-     <li>Unseen experience</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Increment Count, Release User &amp; Bar Reentry</strong></td> 
-   <td>Determine what the user sees instead of the activity content: 
-    <ul> 
-     <li>Same experience, without tracking</li> 
-     <li>Default content or other activity content</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>After a user encounters this goal metric...</strong></td>
+   <td><strong>You select the following to happen...</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Increment Count &amp; Keep User in Activity</strong></td>
+   <td>Specify how the count is incremented:
+    <ul>
+     <li>Once per entrant</li>
+     <li>On every impression, excluding page refreshes</li>
+     <li>On every impression</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Increment Count, Release User &amp; Allow Reentry</strong></td>
+   <td>Select the experience the visitor sees if they reenter the activity:
+    <ul>
+     <li>Same experience</li>
+     <li>Random experience</li>
+     <li>Unseen experience</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Increment Count, Release User &amp; Bar Reentry</strong></td>
+   <td>Determine what the user sees instead of the activity content:
+    <ul>
+     <li>Same experience, without tracking</li>
+     <li>Default content or other activity content</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 See [Adobe Target documentation](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) for more information on success metrics.
@@ -647,54 +647,54 @@ You can customize the Target component by accessing the component's options in o
 
 1. Configure the Target component settings as described in the following tables.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Location</strong></td> 
-   <td><p>The location is a string that gives the targeted content location a name and connects offers with places (or locations or components) on the page where those offers should be placed.</p> <p>This field is a generic value.</p> <p>If you put an offer into a component, the offer remembers the location ID. When the page is executed, the engine evaluates the user's segments and based on this, it resolves the experiences from the active campaigns that should be displayed. Then, it checks the location IDs on the page and tries to match offers with those location IDs to them.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Engine</strong></td> 
-   <td>Select between <strong>Client side Rules (without tracking), Adobe Target, ContextHub, </strong>and<strong> Adobe Campaign </strong>depending on which engine you would like to use.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Location</strong></td>
+   <td><p>The location is a string that gives the targeted content location a name and connects offers with places (or locations or components) on the page where those offers should be placed.</p> <p>This field is a generic value.</p> <p>If you put an offer into a component, the offer remembers the location ID. When the page is executed, the engine evaluates the user's segments and based on this, it resolves the experiences from the active campaigns that should be displayed. Then, it checks the location IDs on the page and tries to match offers with those location IDs to them.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Engine</strong></td>
+   <td>Select between <strong>Client side Rules (without tracking), Adobe Target, ContextHub, </strong>and<strong> Adobe Campaign </strong>depending on which engine you would like to use.</td>
+  </tr>
+ </tbody>
 </table>
 
    If you select Adobe Target as the engine:
 
-   ![chlimage_1-90](assets/chlimage_1-90.png) 
+   ![chlimage_1-90](assets/chlimage_1-90.png)
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Accurate targeting</strong></td> 
-   <td><p>Enabling accurate targeting tells the component to wait for client context or context hub data to be available before sending the request to Adobe Target. It may increase load time. For authoring, accurate targeting is always enabled.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Note:</strong> Enabling or disabling accurate targeting on a specific component does not affect the settings you have set globally. You can always override global settings by selecting Accurate Targeting in the component.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Include resolved segments</strong></td> 
-   <td><p>Selecting this check box includes all resolved segments in the mbox call and any parameters configured in the page and in the framework.</p> <p>This only works in situations with XML API where you are synchronizing AEM segments. If you have segments in AEM that are not handled by Adobe Target (like script segments), then this option allows you to resolve the segment in AEM and send information to Adobe Target that the segment is active.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Inherited context parameters</strong></td> 
-   <td>Lists context parameters inherited from the Adobe Target framework, if any, associated with the selected page.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Context Params</strong></td> 
-   <td>Click or tap <strong>Add field</strong> to configure additional context parameters (same as what is available in Target framework). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Static Params</strong></td> 
-   <td>Click or tap <strong>Add field</strong> to configure additional static parameters (same as what is available in Target framework). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. Static parameters do not come from context (client context of content hub).</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Accurate targeting</strong></td>
+   <td><p>Enabling accurate targeting tells the component to wait for client context or context hub data to be available before sending the request to Adobe Target. It may increase load time. For authoring, accurate targeting is always enabled.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Note:</strong> Enabling or disabling accurate targeting on a specific component does not affect the settings you have set globally. You can always override global settings by selecting Accurate Targeting in the component.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Include resolved segments</strong></td>
+   <td><p>Selecting this check box includes all resolved segments in the mbox call and any parameters configured in the page and in the framework.</p> <p>This only works in situations with XML API where you are synchronizing AEM segments. If you have segments in AEM that are not handled by Adobe Target (like script segments), then this option allows you to resolve the segment in AEM and send information to Adobe Target that the segment is active.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Inherited context parameters</strong></td>
+   <td>Lists context parameters inherited from the Adobe Target framework, if any, associated with the selected page.</td>
+  </tr>
+  <tr>
+   <td><strong>Context Params</strong></td>
+   <td>Click or tap <strong>Add field</strong> to configure additional context parameters (same as what is available in Target framework). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
+  </tr>
+  <tr>
+   <td><strong>Static Params</strong></td>
+   <td>Click or tap <strong>Add field</strong> to configure additional static parameters (same as what is available in Target framework). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. Static parameters do not come from context (client context of content hub).</td>
+  </tr>
+ </tbody>
 </table>
 
    >[!NOTE]
@@ -703,24 +703,24 @@ You can customize the Target component by accessing the component's options in o
 
    If you select Client Context (client side) as the engine:
 
-   ![chlimage_1-91](assets/chlimage_1-91.png) 
+   ![chlimage_1-91](assets/chlimage_1-91.png)
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Options for client side - Strategy</strong></td> 
-   <td><p>Select from one of the following:</p> 
-    <ul> 
-     <li><strong>First</strong>: The topmost experience in the list as ordered in the campaign.</li> 
-     <li><strong>Random</strong>: Any experience is used.</li> 
-     <li><strong>Clickstream Score</strong>: The tags and related tag hits that are tracked in the client context are used. The hit rates for tags defined on the teaser page are compared.</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Options for client side - Strategy</strong></td>
+   <td><p>Select from one of the following:</p>
+    <ul>
+     <li><strong>First</strong>: The topmost experience in the list as ordered in the campaign.</li>
+     <li><strong>Random</strong>: Any experience is used.</li>
+     <li><strong>Clickstream Score</strong>: The tags and related tag hits that are tracked in the client context are used. The hit rates for tags defined on the teaser page are compared.</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
    You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.

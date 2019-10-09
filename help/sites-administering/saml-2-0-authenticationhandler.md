@@ -5,7 +5,7 @@ description: Learn about the SAML 2.0 Authentication Handler in AEM.
 seo-description: Learn about the SAML 2.0 Authentication Handler in AEM.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
@@ -18,7 +18,7 @@ AEM ships with a [SAML](http://saml.xml.org/saml-specifications) authentication 
 It supports:
 
 * signing and encryption of messages
-* automatic creation of users  
+* automatic creation of users
 * synching groups to existsing ones in AEM
 * Service Provider and Identity Provider initiated authentication
 
@@ -36,9 +36,9 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 >[!NOTE]
 >
->The SAML 2.0 Authentication Handler is disabled by default. You must set at least one of the following properties in order to enable the handler: 
+>The SAML 2.0 Authentication Handler is disabled by default. You must set at least one of the following properties in order to enable the handler:
 >
->* The Identity Provider POST URL.  
+>* The Identity Provider POST URL.
 >* The Service Provider Entity ID.
 >
 
@@ -64,7 +64,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 >[!NOTE]
 >
->This location is only used if the `request-path` cookie is not set. If you request any page below the configured path without a valid login-token, the requested path is stored in a cookie  
+>This location is only used if the `request-path` cookie is not set. If you request any page below the configured path without a valid login-token, the requested path is stored in a cookie
 >and the browser will be redirected to this location again after successful authentication.
 
 **User-ID Attribute** The name of the attribute containing the user ID used to authenticate and create the user in the CRX repository.
@@ -113,7 +113,7 @@ SAML assertions are signed and may optionally be encrypted. In order for this to
 >
 >The below steps are required only if handler should be able to sign or decrypt messages.
 
-1. Upload the Private key file by clicking **Select Private Key File**. The key meeds to be in PKCS#8 format with DER encoding. 
+1. Upload the Private key file by clicking **Select Private Key File**. The key meeds to be in PKCS#8 format with DER encoding.
 1. Upload the certificate file by clicking **Select Certificate Chain Files**.
 1. Assign an Alias, as shown below:
 

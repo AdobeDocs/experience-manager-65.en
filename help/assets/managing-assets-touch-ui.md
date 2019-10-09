@@ -5,7 +5,7 @@ description: Learn about various asset management and editing tasks that you can
 seo-description: Learn how to upload, manage, and edit assets using the touch-optimized user interface
 uuid: f148c913-7b44-4285-8db9-138f959c4899
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 3583c0e5-2bd7-4f1e-b4b7-ff9bfe02a223
 ---
 
@@ -148,7 +148,7 @@ If you use FTP for uploading assets, the upload settings specified in AEM are ig
 **To upload assets using FTP**
 
 1. Using your choice of FTP client, log in to the FTP server using the FTP user name and password that you received from the provisioning email. In the FTP client, upload files or folders to the FTP server.
-1. [Log in to Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) using credentials received from the provisioning email. On the Global Navigation Bar, tap **[!UICONTROL Upload]**.  
+1. [Log in to Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) using credentials received from the provisioning email. On the Global Navigation Bar, tap **[!UICONTROL Upload]**.
 
 1. On the **[!UICONTROL Upload]** page, near the upper-left corner, tap the **[!UICONTROL Via FTP]** tab.
 1. On the left side of the page, choose an FTP folder to upload files from; on the right side of the page, choose a destination folder.
@@ -163,7 +163,7 @@ If you use FTP for uploading assets, the upload settings specified in AEM are ig
 1. In the lower-right corner of the **[!UICONTROL Upload Job Options]** dialog box, tap **[!UICONTROL Save]**.
 1. In the lower-right corner of the **[!UICONTROL Upload]** page, tap **[!UICONTROL Submit Upload]**.
 
-   To view the progress of the upload, on the Global Navigation Bar, tap **[!UICONTROL Jobs]**. The **[!UICONTROL Jobs]** page displays the progress of the upload. You can continue working in AEM and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.  
+   To view the progress of the upload, on the Global Navigation Bar, tap **[!UICONTROL Jobs]**. The **[!UICONTROL Jobs]** page displays the progress of the upload. You can continue working in AEM and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.
 
    To cancel an upload job in progress, tap **[!UICONTROL Cancel]** next to the **[!UICONTROL Duration]** time.
 
@@ -172,241 +172,241 @@ If you use FTP for uploading assets, the upload settings specified in AEM are ig
 <!-- TBD: After converting this HTML table to MD table, add UICONTROL.
 -->
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Upload option</strong></td> 
-   <td><strong>Sub-option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Job Name</td> 
-   <td> </td> 
-   <td><p>The default name that is pre-filled in the text field includes the user-entered portion of the name and the date-and-time stamp. You can use the default name or enter a name of your own creation for this upload job.</p> <p>The job and other upload and publishing jobs are recorded on the Jobs page, where you can check the status of jobs. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>Publish After Uploading</td> 
-   <td> </td> 
-   <td>Automatically publishes the assets that you upload.</td> 
-  </tr> 
-  <tr> 
-   <td>Overwrite in any folder, same base asset name regardless of extension</td> 
-   <td> </td> 
-   <td>Select this option if you want the files you upload to replace existing files with the same names. The name of this option could be different, depending on the settings in <strong>Application Setup</strong> &gt; <strong>General Settings</strong> &gt; <strong>Upload to Application</strong> &gt; <strong>Overwrite Images</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td>Uncompress Zip or Tar Files on Upload</td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Job Options<br /> </td> 
-   <td> </td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Upload option</strong></td>
+   <td><strong>Sub-option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Job Name</td>
+   <td> </td>
+   <td><p>The default name that is pre-filled in the text field includes the user-entered portion of the name and the date-and-time stamp. You can use the default name or enter a name of your own creation for this upload job.</p> <p>The job and other upload and publishing jobs are recorded on the Jobs page, where you can check the status of jobs. </p> </td>
+  </tr>
+  <tr>
+   <td>Publish After Uploading</td>
+   <td> </td>
+   <td>Automatically publishes the assets that you upload.</td>
+  </tr>
+  <tr>
+   <td>Overwrite in any folder, same base asset name regardless of extension</td>
+   <td> </td>
+   <td>Select this option if you want the files you upload to replace existing files with the same names. The name of this option could be different, depending on the settings in <strong>Application Setup</strong> &gt; <strong>General Settings</strong> &gt; <strong>Upload to Application</strong> &gt; <strong>Overwrite Images</strong>.</td>
+  </tr>
+  <tr>
+   <td>Uncompress Zip or Tar Files on Upload</td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Job Options<br /> </td>
+   <td> </td>
    <td><p>Tap Job Options to open the Upload Job Options dialog box and choose options that affect the entire upload job. These options are the same for all file types.</p> <p>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose Setup &gt; Application Setup. Tap the Default Upload Options button to open the Upload Job Options dialog box. </p> </td>
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>When</td> 
-   <td>Select One-Time or Recurring. To set a recurring job, choose a Repeat option—Daily, Weekly, Monthly, or Custom—to specify when you want the FTP upload job to recur. Then specify the scheduling options as necessary.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Include subfolders</td> 
-   <td>Upload all subfolders within the folder you intend to upload. The names of the folder and its subfolders you upload are entered automatically in AEM Assets.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Crop Options</td> 
-   <td> 
-    <div class="section"> 
-     <p>To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.</p> 
-    </div> <p>To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:</p> 
-    <ul> 
-     <li>Trim Away Based On 
-      <ul> 
-       <li>Color - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li> 
-       <li>Transparency - Choose the Transparency option. 
-        <ul> 
-         <li>Tolerance - Drag the slider to specify a tolerance from 0 through 1.<br /> For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br /> For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li> 
-        </ul> </li> 
-      </ul> </li> 
-    </ul> <p>Note that these crop options are non-destructive.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Color Profile Options</td> 
-   <td><p>Choose a color conversion when you create optimized files that are used for delivery:</p> 
-    <ul> 
-     <li>Default Color Preservation: Maintains the source image colors whenever the images contain color space information; there is no color conversion. Nearly all images today have the appropriate color profile already embedded. However, if a CMYK source image does not contain an embedded color profile, the colors are converted to sRGB (standard Red Green Blue) color space. sRGB is the recommended color space for displaying images on web pages.</li> 
-     <li>Keep Original Color Space: Retains the original colors without any color conversion at the point. For images without an embedded color profile, any color conversion is done using the default color profiles configured in the Publish settings. The color profiles may not align with the color in the files created with this option. Therefore, you are encouraged to use the option Default Color Preservation.</li> 
-     <li>Custom From &gt; To<br /> Opens menus so you can choose a Convert From and Convert To color space. This advanced option overrides any color information that is embedded in the source file. Select this option when all the images that you are submitting contain incorrect or missing color profile data.<br /> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Image Editing Options</td> 
-   <td><p>You can preserve the clipping masks in images, and choose a color profile.</p> <p>See <a href="#setting-image-editing-options-at-upload">Setting image editing options at upload</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Postscript Options</td> 
-   <td><p>You can rasterize PostScript® files, crop files, maintain transparent backgrounds, choose a resolution, and choose a color space.</p> <p>See <a href="#setting-postscript-and-illustrator-upload-options">Setting PostScript and Illustrator upload options</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Photoshop Options</td> 
-   <td><p>You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.</p> <p>Note that templates are not supported in AEM.</p> <p>See <a href="#setting-photoshop-upload-options">Setting Photoshop upload options</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>PDF Options</td> 
-   <td><p>You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.</p> <p>Note that eCatalogs are not supported in AEM</p> <p>See <a href="#setting-pdf-upload-options">Setting PDF upload options</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Illustrator Options</td> 
-   <td><p>You can rasterize Adobe Illustrator® files, maintain transparent backgrounds, choose a resolution, and choose a color space.</p> <p>See <a href="#setting-postscript-and-illustrator-upload-options">Setting PostScript and Illustrator upload options</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>EVideo Options</td> 
-   <td><p>You can transcode a video file by choosing a Video Preset.</p> <p>See <a href="#setting-evideo-upload-options">Setting eVideo upload options</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Batch Set Presets<br /> </td> 
-   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See <a href="config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets" target="_blank">Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="managing-assets-touch-ui.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td> 
-  </tr> 
- </tbody> 
+  </tr>
+  <tr>
+   <td> </td>
+   <td>When</td>
+   <td>Select One-Time or Recurring. To set a recurring job, choose a Repeat option—Daily, Weekly, Monthly, or Custom—to specify when you want the FTP upload job to recur. Then specify the scheduling options as necessary.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Include subfolders</td>
+   <td>Upload all subfolders within the folder you intend to upload. The names of the folder and its subfolders you upload are entered automatically in AEM Assets.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Crop Options</td>
+   <td>
+    <div class="section">
+     <p>To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.</p>
+    </div> <p>To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:</p>
+    <ul>
+     <li>Trim Away Based On
+      <ul>
+       <li>Color - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li>
+       <li>Transparency - Choose the Transparency option.
+        <ul>
+         <li>Tolerance - Drag the slider to specify a tolerance from 0 through 1.<br /> For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br /> For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li>
+        </ul> </li>
+      </ul> </li>
+    </ul> <p>Note that these crop options are non-destructive.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Color Profile Options</td>
+   <td><p>Choose a color conversion when you create optimized files that are used for delivery:</p>
+    <ul>
+     <li>Default Color Preservation: Maintains the source image colors whenever the images contain color space information; there is no color conversion. Nearly all images today have the appropriate color profile already embedded. However, if a CMYK source image does not contain an embedded color profile, the colors are converted to sRGB (standard Red Green Blue) color space. sRGB is the recommended color space for displaying images on web pages.</li>
+     <li>Keep Original Color Space: Retains the original colors without any color conversion at the point. For images without an embedded color profile, any color conversion is done using the default color profiles configured in the Publish settings. The color profiles may not align with the color in the files created with this option. Therefore, you are encouraged to use the option Default Color Preservation.</li>
+     <li>Custom From &gt; To<br /> Opens menus so you can choose a Convert From and Convert To color space. This advanced option overrides any color information that is embedded in the source file. Select this option when all the images that you are submitting contain incorrect or missing color profile data.<br /> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Image Editing Options</td>
+   <td><p>You can preserve the clipping masks in images, and choose a color profile.</p> <p>See <a href="#setting-image-editing-options-at-upload">Setting image editing options at upload</a>.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Postscript Options</td>
+   <td><p>You can rasterize PostScript® files, crop files, maintain transparent backgrounds, choose a resolution, and choose a color space.</p> <p>See <a href="#setting-postscript-and-illustrator-upload-options">Setting PostScript and Illustrator upload options</a>.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Photoshop Options</td>
+   <td><p>You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.</p> <p>Note that templates are not supported in AEM.</p> <p>See <a href="#setting-photoshop-upload-options">Setting Photoshop upload options</a>.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>PDF Options</td>
+   <td><p>You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.</p> <p>Note that eCatalogs are not supported in AEM</p> <p>See <a href="#setting-pdf-upload-options">Setting PDF upload options</a>.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Illustrator Options</td>
+   <td><p>You can rasterize Adobe Illustrator® files, maintain transparent backgrounds, choose a resolution, and choose a color space.</p> <p>See <a href="#setting-postscript-and-illustrator-upload-options">Setting PostScript and Illustrator upload options</a>.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>EVideo Options</td>
+   <td><p>You can transcode a video file by choosing a Video Preset.</p> <p>See <a href="#setting-evideo-upload-options">Setting eVideo upload options</a>.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Batch Set Presets<br /> </td>
+   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See <a href="config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets" target="_blank">Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="managing-assets-touch-ui.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Setting image editing options at upload {#setting-image-editing-options-at-upload}
 
 When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the **[!UICONTROL Upload Job Options]** dialog box:
 
-* Crop white space from the edge of images (see description in table above).  
+* Crop white space from the edge of images (see description in table above).
 * Crop manually from the sides of images (see description in table above).
 * Choose a color profile (see option description in table above).
-* Create a mask from a clipping path. 
+* Create a mask from a clipping path.
 * Sharpen images with unsharp masking options
 * Knockout Background
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Sub-option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Create Mask From Clipping Path<br /> </td> 
-   <td> </td> 
-   <td>C<strong></strong>reate a mask for the image based on its clipping path information. This option applies to images created with image-editing applications in which a clipping path was created.</td> 
-  </tr> 
-  <tr> 
-   <td>Unsharp Masking</td> 
-   <td> </td> 
-   <td><p>Lets you fine-tune a sharpening filter effect on the final downsampled image, controlling the intensity of the effect, the radius of the effect (as measured in pixels), and a threshold of contrast that is ignored.</p> <p>This effect uses the same options as Photoshop’s Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter. Under Unsharp Masking, set the options you want. Setting options are described in the following:</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Amount</td> 
-   <td><p>Controls the amount of contrast that is applied to edge pixels.</p> <p>Think of it as the intensity of the effect. The main difference between the amount values of Unsharp Mask in Dynamic Media and the amount values in Adobe Photoshop, is that Photoshop has an amount range of 1% to 500%. Whereas, in Dynamic Media, the value range is 0.0 to 5.0. A value of 5.0 is the rough equivalent of 500% in Photoshop; a value of 0.9 is the equivalent of 90%, and so on.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Radius</td> 
-   <td><p>Controls the radius of the effect. The value range is 0-250.</p> <p>The effect is run on all pixels in an image and radiates out from all pixels in all directions. The radius is measured in pixels. For example, to get a similar sharpening effect for a 2000 x 2000 pixel image and 500 x 500 pixel image, you would set a radius of two pixels on the 2000 x 2000 pixel image and a radius value of one pixel on the 500 x 500 pixel image. A larger value is used for an image that has more pixels.<br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Threshold</td> 
-   <td><p>Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. It is important so that no "noise" is introduced to an image when this filter is used. The value range is 0-255, which is the number of brightness steps in a grayscale image. 0=black, 128=50% gray and 255=white.</p> <p>For example, a threshold value of 12 ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to contrasty areas such as where eyelashes meet skin.</p> <p>For example, if you have a photo of someone’s face, the Unsharp Mask affects the contrasty parts of the image, such as where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.</p> <p>To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.</p> <p>In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Monochrome</td> 
-   <td><p>Select to unsharp-mask image brightness (intensity).</p> <p>Deselect to unsharp-mask each color component separately.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Knockout Background</td> 
-   <td> </td> 
-   <td>Automatically removes the background of an image when you upload it. This technique is useful to draw attention to a particular object and make it stand out from a busy background. Select to enable or “turn on” the Knockout Background feature and the following sub-options:</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Corner</td> 
-   <td><p>Required.</p> <p>The corner of the image that is used to define the background color to knockout.</p> <p>You can choose from <strong><strong>Upper Left</strong></strong>, <strong><strong>Bottom Left</strong></strong>, <strong><strong>Upper Right</strong></strong>, or <strong><strong>Bottom Right</strong></strong>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Fill Method</td> 
-   <td><p>Required.</p> <p>Controls pixel transparency from the Corner location that you set.</p> <p>You can choose from the following fill methods:<strong></strong></p> 
-    <ul> 
-     <li><strong>Flood Fill</strong> - turns all pixels transparent that match the Corner that you have specified and are connected to it.<strong></strong></li> 
-     <li><strong>Match Pixel</strong> - turns all matching pixels transparent, regardless of their location on the image.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Tolerance</td> 
-   <td><p>Optional.</p> <p>Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.</p> <p>Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Sub-option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Create Mask From Clipping Path<br /> </td>
+   <td> </td>
+   <td>C<strong></strong>reate a mask for the image based on its clipping path information. This option applies to images created with image-editing applications in which a clipping path was created.</td>
+  </tr>
+  <tr>
+   <td>Unsharp Masking</td>
+   <td> </td>
+   <td><p>Lets you fine-tune a sharpening filter effect on the final downsampled image, controlling the intensity of the effect, the radius of the effect (as measured in pixels), and a threshold of contrast that is ignored.</p> <p>This effect uses the same options as Photoshop’s Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter. Under Unsharp Masking, set the options you want. Setting options are described in the following:</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Amount</td>
+   <td><p>Controls the amount of contrast that is applied to edge pixels.</p> <p>Think of it as the intensity of the effect. The main difference between the amount values of Unsharp Mask in Dynamic Media and the amount values in Adobe Photoshop, is that Photoshop has an amount range of 1% to 500%. Whereas, in Dynamic Media, the value range is 0.0 to 5.0. A value of 5.0 is the rough equivalent of 500% in Photoshop; a value of 0.9 is the equivalent of 90%, and so on.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Radius</td>
+   <td><p>Controls the radius of the effect. The value range is 0-250.</p> <p>The effect is run on all pixels in an image and radiates out from all pixels in all directions. The radius is measured in pixels. For example, to get a similar sharpening effect for a 2000 x 2000 pixel image and 500 x 500 pixel image, you would set a radius of two pixels on the 2000 x 2000 pixel image and a radius value of one pixel on the 500 x 500 pixel image. A larger value is used for an image that has more pixels.<br /> </p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Threshold</td>
+   <td><p>Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. It is important so that no "noise" is introduced to an image when this filter is used. The value range is 0-255, which is the number of brightness steps in a grayscale image. 0=black, 128=50% gray and 255=white.</p> <p>For example, a threshold value of 12 ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to contrasty areas such as where eyelashes meet skin.</p> <p>For example, if you have a photo of someone’s face, the Unsharp Mask affects the contrasty parts of the image, such as where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.</p> <p>To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.</p> <p>In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Monochrome</td>
+   <td><p>Select to unsharp-mask image brightness (intensity).</p> <p>Deselect to unsharp-mask each color component separately.</p> </td>
+  </tr>
+  <tr>
+   <td>Knockout Background</td>
+   <td> </td>
+   <td>Automatically removes the background of an image when you upload it. This technique is useful to draw attention to a particular object and make it stand out from a busy background. Select to enable or “turn on” the Knockout Background feature and the following sub-options:</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Corner</td>
+   <td><p>Required.</p> <p>The corner of the image that is used to define the background color to knockout.</p> <p>You can choose from <strong><strong>Upper Left</strong></strong>, <strong><strong>Bottom Left</strong></strong>, <strong><strong>Upper Right</strong></strong>, or <strong><strong>Bottom Right</strong></strong>.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Fill Method</td>
+   <td><p>Required.</p> <p>Controls pixel transparency from the Corner location that you set.</p> <p>You can choose from the following fill methods:<strong></strong></p>
+    <ul>
+     <li><strong>Flood Fill</strong> - turns all pixels transparent that match the Corner that you have specified and are connected to it.<strong></strong></li>
+     <li><strong>Match Pixel</strong> - turns all matching pixels transparent, regardless of their location on the image.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Tolerance</td>
+   <td><p>Optional.</p> <p>Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.</p> <p>Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Setting PostScript and Illustrator upload options {#setting-postscript-and-illustrator-upload-options}
 
 When you upload PostScript (EPS) or Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available in the Upload Job Options dialog box under PostScript Options and Illustrator Options.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Sub-option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Processing</td> 
-   <td> </td> 
-   <td>Choose <strong>Rasterize</strong> to convert vector graphics in the file to the bitmap format.</td> 
-  </tr> 
-  <tr> 
-   <td>Maintain transparent background in rendered image</td> 
-   <td> </td> 
-   <td>Maintain the background transparency of the file.</td> 
-  </tr> 
-  <tr> 
-   <td>Resolution</td> 
-   <td> </td> 
-   <td>Determines the resolution setting. This setting determines how many pixels are displayed per inch in the file.</td> 
-  </tr> 
-  <tr> 
-   <td>Colorspace</td> 
-   <td> </td> 
-   <td>Select the Color Space menu and choose from the following color space options:</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Detect Automatically</td> 
-   <td>Retains the color space of the file.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Force As RGB</td> 
-   <td>Converts to the RGB color space.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Forece As CMYK</td> 
-   <td>Converts to the CMYK color space.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Force As Grayscale</td> 
-   <td>Converts to the grayscale color space.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Sub-option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Processing</td>
+   <td> </td>
+   <td>Choose <strong>Rasterize</strong> to convert vector graphics in the file to the bitmap format.</td>
+  </tr>
+  <tr>
+   <td>Maintain transparent background in rendered image</td>
+   <td> </td>
+   <td>Maintain the background transparency of the file.</td>
+  </tr>
+  <tr>
+   <td>Resolution</td>
+   <td> </td>
+   <td>Determines the resolution setting. This setting determines how many pixels are displayed per inch in the file.</td>
+  </tr>
+  <tr>
+   <td>Colorspace</td>
+   <td> </td>
+   <td>Select the Color Space menu and choose from the following color space options:</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Detect Automatically</td>
+   <td>Retains the color space of the file.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Force As RGB</td>
+   <td>Converts to the RGB color space.<br /> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Forece As CMYK</td>
+   <td>Converts to the CMYK color space.<br /> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Force As Grayscale</td>
+   <td>Converts to the grayscale color space.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Setting Photoshop upload options {#setting-photoshop-upload-options}
@@ -421,59 +421,59 @@ Use the **[!UICONTROL Crop Options]** and **[!UICONTROL Color Profile Options]**
 >
 >Templates are not supported in AEM.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Sub-option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Maintain Layers</td> 
-   <td> </td> 
-   <td>Rips the layers in the PSD, if any, into individual assets. The asset layers remain associated with the PSD. You can view them by opening the PSD file in Detail view and selecting the layer panel.</td> 
-  </tr> 
-  <tr> 
-   <td>Create Template</td> 
-   <td> </td> 
-   <td>Creates a template from the layers in the PSD file.</td> 
-  </tr> 
-  <tr> 
-   <td>Extract Text</td> 
-   <td> </td> 
-   <td>Extracts the text so that users can search for text in a Viewer.</td> 
-  </tr> 
-  <tr> 
-   <td>Extend layers to background size</td> 
-   <td> </td> 
-   <td>Extends the size of ripped image layers to the size of the background layer.</td> 
-  </tr> 
-  <tr> 
-   <td>Layer Naming</td> 
-   <td> </td> 
-   <td>Layers in the PSD file are uploaded as separate images. </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Layer Name</td> 
-   <td>Names the images after their layer names in the PSD file. For example, a layer named Price Tag in the original PSD file becomes an image named Price Tag. However, if the layer names in the PSD file are default Photoshop layer names (Background, Layer 1, Layer 2, and so on), the images are named after their layer numbers in the PSD file, not their default layer names.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Photoshop and Layer Number</td> 
-   <td>Names the images after their layer numbers in the PSD file, ignoring original layer names. Images are named with the Photoshop filename and an appended layer number. For example, the second layer of a file called Spring Ad.psd is named Spring Ad_2 even if it had a non-default name in Photoshop.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Photoshop and Layer Name</td> 
-   <td>Names the images after the PSD file followed by the layer name or layer number. The layer number is used if the layer names in the PSD file are default Photoshop layer names. For example, a layer named Price Tag in a PSD file named SpringAd is named Spring Ad_Price Tag. A layer with the default name Layer 2 is called Spring Ad_2.</td> 
-  </tr> 
-  <tr> 
-   <td>Anchor</td> 
-   <td> </td> 
-   <td><p>Specify how images are anchored in templates that are generated from the layered composition produced from the PSD file. By default, the anchor is the center. A center anchor allows replacement images to best fill the same space, no matter the aspect ratio of the replacement image. Images with a different aspect that replace this image, when referencing the template and using parameter substitution, effectively occupy the same space. Change to a different setting if your application requires the replacement images to fill the allocated space in the template.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Sub-option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Maintain Layers</td>
+   <td> </td>
+   <td>Rips the layers in the PSD, if any, into individual assets. The asset layers remain associated with the PSD. You can view them by opening the PSD file in Detail view and selecting the layer panel.</td>
+  </tr>
+  <tr>
+   <td>Create Template</td>
+   <td> </td>
+   <td>Creates a template from the layers in the PSD file.</td>
+  </tr>
+  <tr>
+   <td>Extract Text</td>
+   <td> </td>
+   <td>Extracts the text so that users can search for text in a Viewer.</td>
+  </tr>
+  <tr>
+   <td>Extend layers to background size</td>
+   <td> </td>
+   <td>Extends the size of ripped image layers to the size of the background layer.</td>
+  </tr>
+  <tr>
+   <td>Layer Naming</td>
+   <td> </td>
+   <td>Layers in the PSD file are uploaded as separate images. </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Layer Name</td>
+   <td>Names the images after their layer names in the PSD file. For example, a layer named Price Tag in the original PSD file becomes an image named Price Tag. However, if the layer names in the PSD file are default Photoshop layer names (Background, Layer 1, Layer 2, and so on), the images are named after their layer numbers in the PSD file, not their default layer names.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Photoshop and Layer Number</td>
+   <td>Names the images after their layer numbers in the PSD file, ignoring original layer names. Images are named with the Photoshop filename and an appended layer number. For example, the second layer of a file called Spring Ad.psd is named Spring Ad_2 even if it had a non-default name in Photoshop.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Photoshop and Layer Name</td>
+   <td>Names the images after the PSD file followed by the layer name or layer number. The layer number is used if the layer names in the PSD file are default Photoshop layer names. For example, a layer named Price Tag in a PSD file named SpringAd is named Spring Ad_Price Tag. A layer with the default name Layer 2 is called Spring Ad_2.</td>
+  </tr>
+  <tr>
+   <td>Anchor</td>
+   <td> </td>
+   <td><p>Specify how images are anchored in templates that are generated from the layered composition produced from the PSD file. By default, the anchor is the center. A center anchor allows replacement images to best fill the same space, no matter the aspect ratio of the replacement image. Images with a different aspect that replace this image, when referencing the template and using parameter substitution, effectively occupy the same space. Change to a different setting if your application requires the replacement images to fill the allocated space in the template.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Setting PDF upload options {#setting-pdf-upload-options}
@@ -486,103 +486,103 @@ When you upload a PDF file, you can format it in various ways. You crop its page
 
 Choose from the following options:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Sub-option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Processing</td> 
-   <td>Rasterize<br /> </td> 
-   <td>(Default) Rips the pages in the PDF file and converts vector graphics to bitmap images. Choose this option to create an eCatalog.</td> 
-  </tr> 
-  <tr> 
-   <td>Extract</td> 
-   <td>Search words</td> 
-   <td>Extracts words from the PDF file so that the file can be searched by keyword in an eCatalog Viewer.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Links</td> 
-   <td>Extracts links from the PDF files and coverts them to Image Maps that are used in an eCatalog Viewer.</td> 
-  </tr> 
-  <tr> 
-   <td>Auto-Generate eCatalog from multiple page PDF</td> 
-   <td> </td> 
-   <td>Automatically creates an eCatalog from the PDF file. The eCatalog is named after the PDF file you uploaded. (This option is only available if you rasterize the PDF file as you upload it.)</td> 
-  </tr> 
-  <tr> 
-   <td>Resolution</td> 
-   <td> </td> 
-   <td>Determines the resolution setting. This setting determines how many pixels are displayed per inch in the PDF file. The default is 150.</td> 
-  </tr> 
-  <tr> 
-   <td>Colorspace</td> 
-   <td> </td> 
-   <td>Select the Color Space menu and choose a color space for the PDF file. Most PDF files have both RGB and CMYK color images. The RGB color space is preferable for online viewing.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Detect automatically</td> 
-   <td>Retains the color space of the PDF file.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Force as RGB</td> 
-   <td>Converts to the RGB color space.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Force as CMYK</td> 
-   <td>Converts to the CMYK color space.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Force as Grayscale</td> 
-   <td>Converts to the grayscale color space.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Sub-option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Processing</td>
+   <td>Rasterize<br /> </td>
+   <td>(Default) Rips the pages in the PDF file and converts vector graphics to bitmap images. Choose this option to create an eCatalog.</td>
+  </tr>
+  <tr>
+   <td>Extract</td>
+   <td>Search words</td>
+   <td>Extracts words from the PDF file so that the file can be searched by keyword in an eCatalog Viewer.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Links</td>
+   <td>Extracts links from the PDF files and coverts them to Image Maps that are used in an eCatalog Viewer.</td>
+  </tr>
+  <tr>
+   <td>Auto-Generate eCatalog from multiple page PDF</td>
+   <td> </td>
+   <td>Automatically creates an eCatalog from the PDF file. The eCatalog is named after the PDF file you uploaded. (This option is only available if you rasterize the PDF file as you upload it.)</td>
+  </tr>
+  <tr>
+   <td>Resolution</td>
+   <td> </td>
+   <td>Determines the resolution setting. This setting determines how many pixels are displayed per inch in the PDF file. The default is 150.</td>
+  </tr>
+  <tr>
+   <td>Colorspace</td>
+   <td> </td>
+   <td>Select the Color Space menu and choose a color space for the PDF file. Most PDF files have both RGB and CMYK color images. The RGB color space is preferable for online viewing.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Detect automatically</td>
+   <td>Retains the color space of the PDF file.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Force as RGB</td>
+   <td>Converts to the RGB color space.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Force as CMYK</td>
+   <td>Converts to the CMYK color space.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Force as Grayscale</td>
+   <td>Converts to the grayscale color space.</td>
+  </tr>
+ </tbody>
 </table>
 
 #### Setting eVideo upload options {#setting-evideo-upload-options}
 
 You can transcode a video file by choosing from a variety of video presets.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Option</strong></td> 
-   <td><strong>Sub-option</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Adaptive Video</td> 
-   <td> </td> 
-   <td><p>A single encoding preset that works with any aspect ratio to create videos for delivery to mobile, tablet, and desktop. Uploaded source videos that are encoded with this preset are set with a fixed height. However, the width automatically scales to preserve the video’s aspect ratio.</p> <p>Best practice is to use Adaptive Video encoding.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Single Encoding Presets</td> 
-   <td>Sort Encoding Presets</td> 
-   <td>Select <strong>Name</strong> or <strong>Size</strong> to sort the encoding presets listed under Desktop, Mobile, and Tablet by name or by resolution size.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Desktop</td> 
-   <td><p>Create an MP4 file for delivering a streaming or progressive video experience to desktop computers.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Mobile</td> 
-   <td><p>Create an MP4 file for delivery on iPhone or Android mobile devices.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.<br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Tablet</td> 
-   <td><p>Create an MP4 file for delivery on iPad or Android tablet devices.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Option</strong></td>
+   <td><strong>Sub-option</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Adaptive Video</td>
+   <td> </td>
+   <td><p>A single encoding preset that works with any aspect ratio to create videos for delivery to mobile, tablet, and desktop. Uploaded source videos that are encoded with this preset are set with a fixed height. However, the width automatically scales to preserve the video’s aspect ratio.</p> <p>Best practice is to use Adaptive Video encoding.</p> </td>
+  </tr>
+  <tr>
+   <td>Single Encoding Presets</td>
+   <td>Sort Encoding Presets</td>
+   <td>Select <strong>Name</strong> or <strong>Size</strong> to sort the encoding presets listed under Desktop, Mobile, and Tablet by name or by resolution size.<br /> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Desktop</td>
+   <td><p>Create an MP4 file for delivering a streaming or progressive video experience to desktop computers.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Mobile</td>
+   <td><p>Create an MP4 file for delivery on iPhone or Android mobile devices.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.<br /> </p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Tablet</td>
+   <td><p>Create an MP4 file for delivery on iPad or Android tablet devices.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Setting Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
@@ -622,7 +622,7 @@ See also [Previewing Dynamic Media Assets.](previewing-assets.md)
 **To preview assets**:
 
 1. From the Assets UI, navigate to the location of the asset you want to preview.
-1. Tap the desired asset to open it.  
+1. Tap the desired asset to open it.
 
 1. In the preview mode, zoom options are available for [supported Image types](assets-formats.md#supported-raster-image-formats) (with interactive editing).
 
@@ -636,7 +636,7 @@ See also [Previewing Dynamic Media Assets.](previewing-assets.md)
 
 ## Editing properties {#editing-properties}
 
-1. Navigate to the location of the asset whose metadata you want to edit.  
+1. Navigate to the location of the asset whose metadata you want to edit.
 
 1. Select the asset, and tap **[!UICONTROL Properties]** from the toolbar to view asset properties.
 
@@ -668,10 +668,10 @@ See also [Previewing Dynamic Media Assets.](previewing-assets.md)
 
    YouTube requires tags to publish and have a link to YouTube (if a suitable link can be found).
 
-   
+
    To be able to create tags, you require write permission for `/content/cq:tags/default` in the CRX repository.
 
-1. To provide a rating to the asset, tap the **[!UICONTROL Advanced]** tab and then tap the star at the appropriate position to assign the desired rating. 
+1. To provide a rating to the asset, tap the **[!UICONTROL Advanced]** tab and then tap the star at the appropriate position to assign the desired rating.
 
    ![ratings](assets/ratings.png)
 
@@ -728,7 +728,7 @@ The other properties and metadata information is retained. A partial copy is not
 
 ### Moving or renaming assets {#moving-or-renaming-assets}
 
-1. Navigate to the location of the asset you want to move.  
+1. Navigate to the location of the asset you want to move.
 
 1. Select the asset, and tap the **[!UICONTROL Move[** icon from the toolbar.
 
@@ -751,15 +751,15 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. On the **[!UICONTROL Select Destination]** page, do one of the following:
 
-    * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed. 
+    * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
     * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** page.
 
 1. If the assets being moved have any referencing pages, assets, or collections, the **[!UICONTROL Adjust References]** tab appears beside the **[!UICONTROL Select Destination]** tab.
 
    Do one of the following on the **[!UICONTROL Adjust References]** page:
 
-    * Specify the references to be adjusted based on the new details, and then tap **[!UICONTROL Move]** to proceed. 
-    * From the **[!UICONTROL Adjust]** column, select or deselect references to the assets. 
+    * Specify the references to be adjusted based on the new details, and then tap **[!UICONTROL Move]** to proceed.
+    * From the **[!UICONTROL Adjust]** column, select or deselect references to the assets.
     * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** page.
     * Tap **[!UICONTROL Cancel]** to stop the move operation.
 
@@ -767,7 +767,7 @@ The other properties and metadata information is retained. A partial copy is not
 
 ### Managing renditions {#managing-renditions}
 
-1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.  
+1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
 1. Tap the asset to open its asset page.
 
@@ -795,7 +795,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Uploading a new rendition**
 
-   Navigate to the asset details page for the asset, and tap the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset. 
+   Navigate to the asset details page for the asset, and tap the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -827,9 +827,9 @@ For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` 
 
 **To view subassets**:
 
-1. Navigate to the location of the asset and open its asset page.  
+1. Navigate to the location of the asset and open its asset page.
 
-1. Tap the **[!UICONTROL Global Navigation]** icon, and choose **[!UICONTROL Subassets]** from the list 
+1. Tap the **[!UICONTROL Global Navigation]** icon, and choose **[!UICONTROL Subassets]** from the list
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
@@ -851,7 +851,7 @@ You require delete permissions on dam/asset to be able to delete an asset. If yo
 
 **To delete assets**:
 
-1. Navigate to the location of the assets you want to delete.  
+1. Navigate to the location of the assets you want to delete.
 
 1. Select the asset, and tap the **[!UICONTROL Delete]** icon from the toolbar.
 
@@ -885,7 +885,7 @@ For more information specific to Dynamic Media, see [Publishing Dynamic Media As
 
 **To publish assets**:
 
-1. Navigate to the location of the assets/folder you want to publish  
+1. Navigate to the location of the assets/folder you want to publish
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published or unpublished are displayed. Choose the references you want to publish.
@@ -900,7 +900,7 @@ While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing
 
 **To unpublish assets**:
 
-1. Navigate to the location of the asset or asset folder you want to remove from the publish environment (unpublish).  
+1. Navigate to the location of the asset or asset folder you want to remove from the publish environment (unpublish).
 
 1. Select the asset or folder to unpublish, and tap the **[!UICONTROL Manage Publication]** icon from the toolbar.
 
@@ -942,7 +942,7 @@ CUGs are an extra way to restrict access to your assets. You can also configure 
 
 ## Searching assets {#searching-assets}
 
-Basic search is detailed in the [Search and filter](/help/sites-authoring/search.md#search-and-filter) section. Use the **[!UICONTROL Search]** panel to search for assets, tags, and metadata. You can search parts of a string using the wildcard asterisk. In addition, you can customize the **[!UICONTROL Search]** panel using [Search facets](search-facets.md). 
+Basic search is detailed in the [Search and filter](/help/sites-authoring/search.md#search-and-filter) section. Use the **[!UICONTROL Search]** panel to search for assets, tags, and metadata. You can search parts of a string using the wildcard asterisk. In addition, you can customize the **[!UICONTROL Search]** panel using [Search facets](search-facets.md).
 
 ![filters_panel](assets/filters_panel.png)
 
@@ -1101,7 +1101,7 @@ You can also add annotations to a collection. However, if a collection contains 
 
 ### Viewing saved annotations {#viewing-saved-annotations}
 
-1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.  
+1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
 1. Tap the **[!UICONTROL Global Navigation]** icon, and tap **[!UICONTROL Timeline]** from the list.
 
@@ -1217,7 +1217,7 @@ The versioning functionality lets you do the following:
 
 **To create asset versioning**:
 
-1. Navigate to the location of the asset for which you want to create a version, and tap it to open its asset page.  
+1. Navigate to the location of the asset for which you want to create a version, and tap it to open its asset page.
 
 1. Tap the **[!UICONTROL Global Navigation]** icon, and the choose **[!UICONTROL Timeline]** from the menu.
 
@@ -1297,7 +1297,7 @@ A collection is an ordered set of assets. Use collections to share assets betwee
 
 A user can have access to multiple collections. Collections are of the following types, based on the way they collate assets:
 
-* A collection with a **static reference list** of assets, folders, and other collections.  
+* A collection with a **static reference list** of assets, folders, and other collections.
 
 * A collection that uses a **search criteria** and dynamically populates assets based on the criteria. This is called a **Smart Collection**.
 

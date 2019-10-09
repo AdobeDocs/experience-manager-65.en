@@ -6,7 +6,7 @@ seo-description: Learn how to configure storage for drafts and submissions
 uuid: 2f4efc07-312c-4908-8c91-84f4e6c5ad25
 topic-tags: publish
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 ---
 
@@ -16,7 +16,7 @@ discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 
 With AEM Forms, you can store:
 
-* **Drafts**: A work-in-progress form that end users fill and save for later, and submit afterwards.  
+* **Drafts**: A work-in-progress form that end users fill and save for later, and submit afterwards.
 
 * **Submissions**: Submitted forms containing user provided data.
 
@@ -28,7 +28,7 @@ In addition to above mentioned default approach, an alternative implementation i
 
 >[!NOTE]
 >
->When you use the Forms Portal submit action or enable the Store data in forms portal option in adaptive form, the form data is stored in AEM repository. In a production environment, it is recommended not to store draft or submitted form data in AEM repository. Instead, you must integrate the drafts and submission component with a secure storage like enterprise database to store drafts and submitted forms data. 
+>When you use the Forms Portal submit action or enable the Store data in forms portal option in adaptive form, the form data is stored in AEM repository. In a production environment, it is recommended not to store draft or submitted form data in AEM repository. Instead, you must integrate the drafts and submission component with a secure storage like enterprise database to store drafts and submitted forms data.
 >
 >For more information, see [Sample for integrating drafts & submissions component with database](/help/forms/using/integrate-draft-submission-database.md).
 
@@ -42,27 +42,27 @@ Specify the values for properties based on your requirements as described below:
 
 Data is reverse replicated to configured author instance.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Property</th> 
-   <th>Value</th> 
+   <th>Property</th>
+   <th>Value</th>
   </tr>
   <tr>
-   <td>Forms Portal Draft Data Service(Identifier for draft data service (<strong>draft.data.service</strong>))</td> 
-   <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td> 
+   <td>Forms Portal Draft Data Service(Identifier for draft data service (<strong>draft.data.service</strong>))</td>
+   <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal Draft Metadata Service (Identifier for draft metadata service (<strong>draft.metadata.service</strong>))</td> 
-   <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td> 
+   <td>Forms Portal Draft Metadata Service (Identifier for draft metadata service (<strong>draft.metadata.service</strong>))</td>
+   <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal Submit Data Service (Identifier for submit data service (<strong>submit.data.service</strong>))</td> 
-   <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td> 
+   <td>Forms Portal Submit Data Service (Identifier for submit data service (<strong>submit.data.service</strong>))</td>
+   <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal Submit Metadata Service (Identifier for submit metadata service (<strong>submit.metadata.service</strong>))</td> 
-   <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceImpl<br /> </td> 
+   <td>Forms Portal Submit Metadata Service (Identifier for submit metadata service (<strong>submit.metadata.service</strong>))</td>
+   <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceImpl<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -71,27 +71,27 @@ Data is reverse replicated to configured author instance.
 
 Data is pushed directly to configured remote instance
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Property</th> 
-   <th>Value</th> 
+   <th>Property</th>
+   <th>Value</th>
   </tr>
   <tr>
-   <td>Forms Portal Draft Data Service(Identifier for draft data service (<strong>draft.data.service</strong>))</td> 
-   <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td> 
+   <td>Forms Portal Draft Data Service(Identifier for draft data service (<strong>draft.data.service</strong>))</td>
+   <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal Draft Metadata Service (Identifier for draft metadata service (<strong>draft.metadata.service</strong>))</td> 
-   <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td> 
+   <td>Forms Portal Draft Metadata Service (Identifier for draft metadata service (<strong>draft.metadata.service</strong>))</td>
+   <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal Submit Data Service (Identifier for submit data service (<strong>submit.data.service</strong>))</td> 
-   <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td> 
+   <td>Forms Portal Submit Data Service (Identifier for submit data service (<strong>submit.data.service</strong>))</td>
+   <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Forms Portal Submit Metadata Service (Identifier for submit metadata service (<strong>submit.metadata.service</strong>))</td> 
-   <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceRemoteImpl<br /> </td> 
+   <td>Forms Portal Submit Metadata Service (Identifier for submit metadata service (<strong>submit.metadata.service</strong>))</td>
+   <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceRemoteImpl<br /> </td>
   </tr>
  </tbody>
 </table>

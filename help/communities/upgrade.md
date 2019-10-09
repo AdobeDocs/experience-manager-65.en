@@ -1,21 +1,21 @@
 ---
-title: Upgrading to AEM 6.4 Communities
-seo-title: Upgrading to AEM 6.4 Communities
-description: How to upgrade from an earlier version to AEM 6.4 Communities
-seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
+title: Upgrading to AEM 6.5 Communities
+seo-title: Upgrading to AEM 6.5 Communities
+description: How to upgrade from an earlier version to AEM 6.5 Communities
+seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
 uuid: c6c2846e-38d4-4e99-9038-bfb486afd8b9
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 ---
 
-# Upgrading to AEM 6.4 Communities {#upgrading-to-aem-communities}
+# Upgrading to AEM 6.5 Communities {#upgrading-to-aem-communities}
 
-Depending on each site's topology and features, the following actions may be necessary when upgrading to AEM Communities 6.4 or installing the latest feature pack.
+Depending on each site's topology and features, the following actions may be necessary when upgrading to AEM Communities 6.5 or installing the latest feature pack.
 
-This section is specific to Communities and supplements the information provided in [Upgrading to AEM 6.4](../../help/sites-deploying/upgrade.md) (platform).
+This section is specific to Communities and supplements the information provided in [Upgrading to AEM 6.5](../../help/sites-deploying/upgrade.md) (platform).
 
 ## Upgrading from AEM 6.1 or Later {#upgrading-from-aem-or-later}
 
@@ -57,13 +57,13 @@ For all AEM 6.3 author and publish instances
     * *Uncheck* **`Cloud Storage`**
     * Select **[!UICONTROL Save]**
 
-![chlimage_1-126](assets/chlimage_1-126.png) 
+![chlimage_1-126](assets/chlimage_1-126.png)
 
 ### On-premise Storage {#on-premise-storage}
 
 If the upgraded site did not use cloud storage, any pre-existing UGC must be converted to conform to the new structure introduced in AEM 6.1 Communities in support of the common store.
 
-For this purpose, an open source migration tool is available on GitHub:  
+For this purpose, an open source migration tool is available on GitHub:
 [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
 ### Java APIs {#java-apis}

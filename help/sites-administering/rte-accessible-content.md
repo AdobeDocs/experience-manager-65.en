@@ -5,7 +5,7 @@ description: Learn how to configure the AEM Rich Text Editor to produce accessib
 seo-description: Learn how to configure the AEM Rich Text Editor to produce accessible sites.
 uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
@@ -23,7 +23,7 @@ AEM supports both:
 >See also:
 >
 >* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Creating accessible content (WCAG 2.0 conformance)](/help/sites-authoring/creating-accessible-content.md)  
+>* [Creating accessible content (WCAG 2.0 conformance)](/help/sites-authoring/creating-accessible-content.md)
 >
 
 Content authors can use features of the RTE to provide accessibility information while adding content to a page. This can include adding structural information through headings and paragraph elements.
@@ -59,9 +59,9 @@ Full instructions on configuring the RTE are available on the [Configuring the R
 * [Activate a Plugin and Configure the features Property](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configuring Other Functionality of the RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-By configuring a plugin within the appropriate `rtePlugins` sub-branch in CRXDE Lite (see the following image), you can activate either all or specific features for that plugin. 
+By configuring a plugin within the appropriate `rtePlugins` sub-branch in CRXDE Lite (see the following image), you can activate either all or specific features for that plugin.
 
-![CRXDE Lite showing an example rtePlugin.](assets/chlimage_1-208.png) 
+![CRXDE Lite showing an example rtePlugin.](assets/chlimage_1-208.png)
 
 ### Example - Specifying Paragraph Formats Available in RTE Selection Field {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -196,6 +196,6 @@ In **Table** you must explicitly set or remove the attribute to/from the DOM ele
 >
 >To add editing capabilities for further additional elements and attributes, ensure that both:
 >
->* The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).  
+>* The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
 >* The attribute is set and/or removed on the DOM element explicitly (`Table`).
 

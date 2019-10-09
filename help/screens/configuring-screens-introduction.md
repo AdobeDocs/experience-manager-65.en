@@ -6,7 +6,7 @@ seo-description: The AEM Screens player is available for Android, Chrome OS, iOS
 uuid: 8ee5311f-b377-4035-af77-e1391a840745
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: administering
 discoiquuid: a94d0891-d75f-482e-8d2a-e0cbf953a9de
 ---
@@ -114,7 +114,7 @@ Follow the steps below to configure ***DeviceServiceImpl***:
 
 1. **Adobe Experience Manager Web Console Configuration** opens. Search for deviceservice. For searching the property, press **Command+F** for **Mac** and **Control+F** for **Windows**.
 
-![screen_shot_2019-02-21at24951pm](assets/screen_shot_2019-02-21at24951pm.png) 
+![screen_shot_2019-02-21at24951pm](assets/screen_shot_2019-02-21at24951pm.png)
 
 #### Dispatcher Configuration {#dispatcher-configuration}
 
@@ -147,63 +147,63 @@ The following section provides the hardware selection guidelines for a Screens P
 
 The following table summarizes the hardware configurations with typical use cases for an AEM Screens project:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Player Configuration</td> 
-   <td>Processor</td> 
-   <td>Memory</td> 
-   <td>Storage SSD</td> 
-   <td>GPU</td> 
-   <td>Display</td> 
-   <td>I/O</td> 
-   <td>Typical Use Cases</td> 
-  </tr> 
-  <tr> 
-   <td>Basic</td> 
-   <td>Dual Core, i3 or entry-level quad core Intel® Atom Processor</td> 
-   <td><p>4GB of memory</p> <p>2MB of cache</p> </td> 
-   <td><p>•ChromeOS 32 GB</p> <p>•Windows 128GB</p> </td> 
-   <td>OnBoard</td> 
-   <td>1920 x 1080</td> 
-   <td>DVI, <br /> Ethernet / Wireless,<br /> 2xUSB</td> 
-   <td> 
-    <ul> 
-     <li>Standard Full Screen Looping <br /> </li> 
-     <li>Day Parting</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Standard</td> 
-   <td>Quad Core, Intel® Core i5 processor</td> 
-   <td><p>8GB of memory</p> <p>4MB of cache</p> </td> 
-   <td>128 GBB</td> 
-   <td>OnBoard</td> 
-   <td>3840x2160 (4K)</td> 
-   <td>DVI, HDMI<br /> Ethernet / Wireless,<br /> 2xUSB</td> 
-   <td> 
-    <ul> 
-     <li>Single Source Dynamic Content </li> 
-     <li>Simple Interactive</li> 
-     <li> 1-3 Zone layouts</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Advanced</td> 
-   <td>Quad Core with hyperthreading, Intel® Core i7 processor</td> 
-   <td><p>16GB of memory</p> <p>8MB of cache</p> </td> 
-   <td>256 GB</td> 
-   <td>Discreet GPU</td> 
-   <td>3840x2160 (4K)</td> 
-   <td>DVI, HDMI<br /> Ethernet / Wireless,<br /> 4xUSB</td> 
-   <td> 
-    <ul> 
-     <li>4 or more Content Zones, Concurrent Video Playback</li> 
-     <li> Multi-Page Interactive</li> 
-     <li>Multi-Source Data Triggers</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Player Configuration</td>
+   <td>Processor</td>
+   <td>Memory</td>
+   <td>Storage SSD</td>
+   <td>GPU</td>
+   <td>Display</td>
+   <td>I/O</td>
+   <td>Typical Use Cases</td>
+  </tr>
+  <tr>
+   <td>Basic</td>
+   <td>Dual Core, i3 or entry-level quad core Intel® Atom Processor</td>
+   <td><p>4GB of memory</p> <p>2MB of cache</p> </td>
+   <td><p>•ChromeOS 32 GB</p> <p>•Windows 128GB</p> </td>
+   <td>OnBoard</td>
+   <td>1920 x 1080</td>
+   <td>DVI, <br /> Ethernet / Wireless,<br /> 2xUSB</td>
+   <td>
+    <ul>
+     <li>Standard Full Screen Looping <br /> </li>
+     <li>Day Parting</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Standard</td>
+   <td>Quad Core, Intel® Core i5 processor</td>
+   <td><p>8GB of memory</p> <p>4MB of cache</p> </td>
+   <td>128 GBB</td>
+   <td>OnBoard</td>
+   <td>3840x2160 (4K)</td>
+   <td>DVI, HDMI<br /> Ethernet / Wireless,<br /> 2xUSB</td>
+   <td>
+    <ul>
+     <li>Single Source Dynamic Content </li>
+     <li>Simple Interactive</li>
+     <li> 1-3 Zone layouts</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Advanced</td>
+   <td>Quad Core with hyperthreading, Intel® Core i7 processor</td>
+   <td><p>16GB of memory</p> <p>8MB of cache</p> </td>
+   <td>256 GB</td>
+   <td>Discreet GPU</td>
+   <td>3840x2160 (4K)</td>
+   <td>DVI, HDMI<br /> Ethernet / Wireless,<br /> 4xUSB</td>
+   <td>
+    <ul>
+     <li>4 or more Content Zones, Concurrent Video Playback</li>
+     <li> Multi-Page Interactive</li>
+     <li>Multi-Source Data Triggers</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## The Next Steps {#the-next-steps}
@@ -219,6 +219,6 @@ Once you have installed and configured Screens player, follow the topics below t
 1. [Registering a Device](device-registration.md)
 1. [Assign Devices](managing-devices.md)
 1. [Create and Manage Schedules](managing-schedules.md)
-1. [AEM Screens Player](working-with-screens-player.md)  
+1. [AEM Screens Player](working-with-screens-player.md)
 1. [Troubleshoot Device Control Center](monitoring-screens.md)
 

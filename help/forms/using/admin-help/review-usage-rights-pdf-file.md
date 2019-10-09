@@ -7,7 +7,7 @@ uuid: b55e945c-03e2-4b26-aacb-f1234ce163f1
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2777706c-d42b-4921-a8f4-720b7c0fa45e
 ---
 

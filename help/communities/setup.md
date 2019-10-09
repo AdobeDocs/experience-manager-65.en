@@ -5,7 +5,7 @@ description: Setting up Communities
 seo-description: Setting up Communities
 uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c

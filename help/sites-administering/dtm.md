@@ -5,7 +5,7 @@ description: Learn about integration with Adobe Dynamic Tag Management.
 seo-description: Learn about integration with Adobe Dynamic Tag Management.
 uuid: cbb9f942-44e3-4cd5-b07d-4298a7a08376
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
@@ -68,7 +68,7 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
 * In the Web Console, use the Adobe DTM Deploy Hook Configuration item on the Configuration page.
 * For an OSGi configuration, the service PID is `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
 
-The following table describes the properties to configure.  
+The following table describes the properties to configure.
 
 | Web Console property |OSGi property |Description |
 |---|---|---|
@@ -85,29 +85,29 @@ Create a cloud configuration so that the AEM instance can authenticate with Dyna
 
 ### General Settings {#general-settings}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>API Token</td> 
-   <td>The value of the API Token property of your Dynamic Tag Management user account. AEM uses this property to authenticate with Dynamic Tag Management.</td> 
-  </tr> 
-  <tr> 
-   <td>Company</td> 
-   <td>The company with which your login ID is associated.</td> 
-  </tr> 
-  <tr> 
-   <td>Property</td> 
-   <td>The name of the Web Property that you created for managing the tags for your AEM site.</td> 
-  </tr> 
-  <tr> 
-   <td>Include Production Code on Author</td> 
-   <td><p>Select this option to cause the AEM author and publish instances to use the production version of the Dynamic Tag Management libraries. </p> <p>When this option is not selected, the Staging Settings apply to the author instance, and the Production Settings apply to the publish instance.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>API Token</td>
+   <td>The value of the API Token property of your Dynamic Tag Management user account. AEM uses this property to authenticate with Dynamic Tag Management.</td>
+  </tr>
+  <tr>
+   <td>Company</td>
+   <td>The company with which your login ID is associated.</td>
+  </tr>
+  <tr>
+   <td>Property</td>
+   <td>The name of the Web Property that you created for managing the tags for your AEM site.</td>
+  </tr>
+  <tr>
+   <td>Include Production Code on Author</td>
+   <td><p>Select this option to cause the AEM author and publish instances to use the production version of the Dynamic Tag Management libraries. </p> <p>When this option is not selected, the Staging Settings apply to the author instance, and the Production Settings apply to the publish instance.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Self Hosting Properties - Staging and Production {#self-hosting-properties-staging-and-production}
@@ -122,72 +122,72 @@ Some properties use values that you obtain from the Library Download section of 
 
 When hosting the Dynamic Tag Management libraries on AEM, AEM automatically configures some properties of the web property according to your configuration. See the descriptions in the following table.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Use Self Hosting</td> 
-   <td>Select when you are hosting the Dynamic Tag Management library file on AEM. Selecting this option causes the other properties in this table to appear.</td> 
-  </tr> 
-  <tr> 
-   <td>DTM Bundle URL</td> 
-   <td>The URL to use for downloading the Dynamic Tag Management library. Obtain this value from the Download URLs section of the Library Download page of Dynamic Tag Management. For security reasons, this value must be configured manually.</td> 
-  </tr> 
-  <tr> 
-   <td>Download Workflow</td> 
-   <td><p>The workflow model to use for downloading and installing the Dynamic Tag Management library. The default model is Default DTM Bundle Download. Use this model unless you have created a custom model.</p> <p>Note that the default download workflow automatically activates the libraries when they are downloaded.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Domain Hint</td> 
-   <td><p>(Optional) The domain of the AEM server that is hosting the Dynamic Tag Management library. Specify a value to override the default domain that is configured for the <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer service</a>.</p> <p>When connected to Dynamic Tag Management, AEM uses this value to configure the Staging HTTP Path or the Production HTTP Path of the Library Download properties for the Dynamic Tag Management web property.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Secure Domain Hint</td> 
-   <td><p>(Optional) The domain of the AEM server that is hosting the Dynamic Tag Management library over HTTPS. Specify a value to override the default domain that is configured for the <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer service</a>.</p> <p>When connected to Dynamic Tag Management, AEM uses this value to configure the Staging HTTPS Path or the Production HTTPS Path of the Library Download properties for the Dynamic Tag Management web property.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Shared Secret</td> 
-   <td><p>(Optional) The shared secret to use for decrypting the download. Obtain this value from the Shared Secret field of the Library Download page of Dynamic Tag Management.</p> <p><strong>Note:</strong> You must have the <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> libraries installed on the computer where AEM is installed so that AEM can decrypt the downloaded libraries.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Enable Polling Importer</td> 
-   <td><p>(Optional) Select to periodically download and install the Dynamic Tag Management library to ensure you are using an updated version. When selected, Dynamic Tag Management does not send HTTP POST requests to the Deploy Hook URL.</p> <p>AEM automatically configures the Deploy Hook URL property of the Library Download properties for the Dynamic Tag Management web property. When selected, the property is configured with no value. When not selected, the property is configured with the URL of your Dynamic Tag Management configuration.</p> <p>Enable polling importer when the Dynamic Tag Management deploy hook cannot connect to AEM, for example when AEM is behind a firewall.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Schedule Expression</td> 
-   <td>(Appears and is required when Enable Polling Importer is selected.) A cron expression that controls when the Dynamic Tag management libraries are downloaded.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Use Self Hosting</td>
+   <td>Select when you are hosting the Dynamic Tag Management library file on AEM. Selecting this option causes the other properties in this table to appear.</td>
+  </tr>
+  <tr>
+   <td>DTM Bundle URL</td>
+   <td>The URL to use for downloading the Dynamic Tag Management library. Obtain this value from the Download URLs section of the Library Download page of Dynamic Tag Management. For security reasons, this value must be configured manually.</td>
+  </tr>
+  <tr>
+   <td>Download Workflow</td>
+   <td><p>The workflow model to use for downloading and installing the Dynamic Tag Management library. The default model is Default DTM Bundle Download. Use this model unless you have created a custom model.</p> <p>Note that the default download workflow automatically activates the libraries when they are downloaded.</p> </td>
+  </tr>
+  <tr>
+   <td>Domain Hint</td>
+   <td><p>(Optional) The domain of the AEM server that is hosting the Dynamic Tag Management library. Specify a value to override the default domain that is configured for the <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer service</a>.</p> <p>When connected to Dynamic Tag Management, AEM uses this value to configure the Staging HTTP Path or the Production HTTP Path of the Library Download properties for the Dynamic Tag Management web property.</p> </td>
+  </tr>
+  <tr>
+   <td>Secure Domain Hint</td>
+   <td><p>(Optional) The domain of the AEM server that is hosting the Dynamic Tag Management library over HTTPS. Specify a value to override the default domain that is configured for the <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer service</a>.</p> <p>When connected to Dynamic Tag Management, AEM uses this value to configure the Staging HTTPS Path or the Production HTTPS Path of the Library Download properties for the Dynamic Tag Management web property.</p> </td>
+  </tr>
+  <tr>
+   <td>Shared Secret</td>
+   <td><p>(Optional) The shared secret to use for decrypting the download. Obtain this value from the Shared Secret field of the Library Download page of Dynamic Tag Management.</p> <p><strong>Note:</strong> You must have the <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> libraries installed on the computer where AEM is installed so that AEM can decrypt the downloaded libraries.</p> </td>
+  </tr>
+  <tr>
+   <td>Enable Polling Importer</td>
+   <td><p>(Optional) Select to periodically download and install the Dynamic Tag Management library to ensure you are using an updated version. When selected, Dynamic Tag Management does not send HTTP POST requests to the Deploy Hook URL.</p> <p>AEM automatically configures the Deploy Hook URL property of the Library Download properties for the Dynamic Tag Management web property. When selected, the property is configured with no value. When not selected, the property is configured with the URL of your Dynamic Tag Management configuration.</p> <p>Enable polling importer when the Dynamic Tag Management deploy hook cannot connect to AEM, for example when AEM is behind a firewall.</p> </td>
+  </tr>
+  <tr>
+   <td>Schedule Expression</td>
+   <td>(Appears and is required when Enable Polling Importer is selected.) A cron expression that controls when the Dynamic Tag management libraries are downloaded.</td>
+  </tr>
+ </tbody>
 </table>
 
-![chlimage_1-352](assets/chlimage_1-352.png) 
+![chlimage_1-352](assets/chlimage_1-352.png)
 
 ### Cloud Hosting Properties - Staging and Production {#cloud-hosting-properties-staging-and-production}
 
-You configure the following properties for your Dynamic Tag Management configuration when Dynamic Tag Configuration is cloud-hosted. 
+You configure the following properties for your Dynamic Tag Management configuration when Dynamic Tag Configuration is cloud-hosted.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Use Self Hosting</td> 
-   <td>Clear this option when the Dynamic Tag Management library file is hosted in the cloud.</td> 
-  </tr> 
-  <tr> 
-   <td>Header Code</td> 
-   <td><p>The header code for staging that is obtained from Dynamic Tag Management for your host. This value is populated automatically when you connect to Dynamic Tag Management.</p> <p> To see the code in Dynamic Tag Management, click the Embed tab, then click the host name. Expand the Header Code section and click the Copy Embed Code of the Staging Embed Code or the Production Embed Code area as required.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Footer Code</td> 
-   <td><p>The footer code for staging that is obtained from Dynamic Tag Management for your host. This value is populated automatically when you connect to Dynamic Tag Management.</p> <p>To see the code in Dynamic Tag Management, click the Embed tab, then click the host name. Expand the Footer Code section and click the Copy Embed Code of the Staging Embed Code or the Production Embed Code area as required.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Use Self Hosting</td>
+   <td>Clear this option when the Dynamic Tag Management library file is hosted in the cloud.</td>
+  </tr>
+  <tr>
+   <td>Header Code</td>
+   <td><p>The header code for staging that is obtained from Dynamic Tag Management for your host. This value is populated automatically when you connect to Dynamic Tag Management.</p> <p> To see the code in Dynamic Tag Management, click the Embed tab, then click the host name. Expand the Header Code section and click the Copy Embed Code of the Staging Embed Code or the Production Embed Code area as required.</p> </td>
+  </tr>
+  <tr>
+   <td>Footer Code</td>
+   <td><p>The footer code for staging that is obtained from Dynamic Tag Management for your host. This value is populated automatically when you connect to Dynamic Tag Management.</p> <p>To see the code in Dynamic Tag Management, click the Embed tab, then click the host name. Expand the Footer Code section and click the Copy Embed Code of the Staging Embed Code or the Production Embed Code area as required.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ![chlimage_1-353](assets/chlimage_1-353.png)

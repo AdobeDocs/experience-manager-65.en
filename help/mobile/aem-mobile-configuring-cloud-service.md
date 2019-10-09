@@ -6,7 +6,7 @@ seo-description: Follow this page to understand how to get right set of permissi
 uuid: 569f9c6d-f521-488a-9e51-f43b7a214dd9
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 8cd6480f-cb4f-40dd-a444-8ba463b78604
 ---
@@ -37,7 +37,7 @@ To get targeted content working for mobile applications there are two services t
 
 ## Adobe Target Cloud Service {#adobe-target-cloud-service}
 
-From the AEM Mobile Dashboard locate the Manage Cloud Services and click the + button. 
+From the AEM Mobile Dashboard locate the Manage Cloud Services and click the + button.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -49,7 +49,7 @@ From the Select a Configuration dropdown you can either create a new configurati
 
 The cloud service that gets created is automatically associated with the mobile application via the wizard. The cq:cloudserviceconfigs property value gets set on the jcr:content node of the apps group node. For the hybrid app sample it gets set on /content/mobileapps/hybrid-reference-app/jcr:content with the value pointing to the automatically generated framework node located at /etc/cloudservices/testandtarget/adobe-target---aem-apps/framework. The framework node has two properties set by default, gender and age. The framework is only used by AEM previewing and does not have any impact on the device.
 
-After completion of the wizard the Manage Cloud Service tile will contain the Target cloud service, however it contains a warning about a missing Adobe Mobile Service account. 
+After completion of the wizard the Manage Cloud Service tile will contain the Target cloud service, however it contains a warning about a missing Adobe Mobile Service account.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -59,7 +59,7 @@ It is necessary to link a Adobe Mobile Services (AMS) account to the application
 
 ### Client Code {#client-code}
 
-To login to the AMS services visit [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), select the mobile application and click the settings. Locate the SDK Target Options field and place the client code into the field and click Save. 
+To login to the AMS services visit [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), select the mobile application and click the settings. Locate the SDK Target Options field and place the client code into the field and click Save.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -67,7 +67,7 @@ Now that the client code has been associated with the mobile application, when t
 
 ### Adobe Mobile Service Could Service {#adobe-mobile-service-could-service}
 
-Now that AMS has been configured, it's time to associate the mobile application in the Adobe Mobile Dashboard. From the AEM Mobile Dashboard locate the Manage Cloud Services and click the + button. 
+Now that AMS has been configured, it's time to associate the mobile application in the Adobe Mobile Dashboard. From the AEM Mobile Dashboard locate the Manage Cloud Services and click the + button.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -99,4 +99,4 @@ When content is staged via the Adobe Mobile Dashboard, staged content is conside
 
 ## Creating Content {#creating-content}
 
-Now that the cloud services have been created and the mobileappoffers handler has been configured, content authors can now start generating targeted experiences. 
+Now that the cloud services have been created and the mobileappoffers handler has been configured, content authors can now start generating targeted experiences.

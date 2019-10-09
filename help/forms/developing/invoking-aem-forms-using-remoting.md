@@ -6,7 +6,7 @@ seo-description: null
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 ---
@@ -34,7 +34,7 @@ The following AEM Forms short-lived process, named `MyApplication/EncryptDocumen
 When this process is invoked, it performs the following actions:
 
 1. Obtains the unsecured PDF document that is passed as an input value. This action is based on the `SetValue` operation. The name of the input parameter is `inDoc` and its data type is `document`. (The `document` data type is an available data type from within Workbench.)
-1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The name of the output value for this process is `outDoc` and represents the password-encrypted PDF document. The data type of outDoc is `document`. 
+1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The name of the output value for this process is `outDoc` and represents the password-encrypted PDF document. The data type of outDoc is `document`.
 1. Saves the password-encrypted PDF document as a PDF file to the local file system. This action is based on the `WriteDocument` operation.
 
 >[!NOTE]
@@ -203,8 +203,8 @@ Within the `mx:RemoteObject` tag, specify a `<mx:method>` tag that specifies the
 The following code example creates a `mx:RemoteObject` instance that invokes the `MyApplication/EncryptDocument` process.
 
 ```as3
- <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);"> 
-          <mx:method name="invoke" result="handleExecuteInvoke(event)"/> 
+ <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);">
+          <mx:method name="invoke" result="handleExecuteInvoke(event)"/>
       </mx:RemoteObject>
 ```
 
@@ -213,14 +213,14 @@ The following code example creates a `mx:RemoteObject` instance that invokes the
 A client application can invoke AEM Forms by specifying a Channel in MXML or ActionScript, as the following ActionScript example shows. The Channel must be an `AMFChannel`, `SecureAMFChannel`, `HTTPChannel`, or `SecureHTTPChannel`.
 
 ```as3
-     ... 
-     private function refresh():void{ 
-         var cs:ChannelSet= new ChannelSet(); 
-         cs.addChannel(new AMFChannel("my-amf",  
-             "https://yourlcserver:8080/remoting/messagebroker/amf")); 
-         EncryptDocument.setCredentials("administrator", "password"); 
-         EncryptDocument.channelSet = cs; 
-     } 
+     ...
+     private function refresh():void{
+         var cs:ChannelSet= new ChannelSet();
+         cs.addChannel(new AMFChannel("my-amf",
+             "https://yourlcserver:8080/remoting/messagebroker/amf"));
+         EncryptDocument.setCredentials("administrator", "password");
+         EncryptDocument.channelSet = cs;
+     }
      ...
 ```
 
@@ -233,15 +233,15 @@ A process created in Workbench can take zero or more input parameters and return
 The following code example passes a PDF document to the `MyApplication/EncryptDocument` process:
 
 ```as3
-     ... 
-     var params:Object = new Object(); 
-      
-     //Document is an instance of DocumentReference 
-     //that store an unsecured PDF document 
-     params["inDoc"] = pdfDocument; 
-      
-     // Invoke an operation synchronously: 
-     EncryptDocument.invoke(params); 
+     ...
+     var params:Object = new Object();
+ 
+     //Document is an instance of DocumentReference
+     //that store an unsecured PDF document
+     params["inDoc"] = pdfDocument;
+ 
+     // Invoke an operation synchronously:
+     EncryptDocument.invoke(params);
      ...
 ```
 
@@ -252,9 +252,9 @@ In this code example, `pdfDocument` is a `DocumentReference` instance that conta
 You can invoke a specific version of a Forms service by using a `_version` parameter in the invocation's parameter map. For example, to invoke version 1.2 of the `MyApplication/EncryptDocument` service:
 
 ```as3
- var params:Object = new Object(); 
- params["inDoc"] = pdfDocument; 
- params["_version"] = "1.2" 
+ var params:Object = new Object();
+ params["inDoc"] = pdfDocument;
+ params["_version"] = "1.2"
  var token:AsyncToken = echoService.echoString(params);
 ```
 
@@ -265,9 +265,9 @@ The `version` parameter must be a string containing a single period. The values 
 AEM Forms process output parameters are deserialized into ActionScript objects from which the client application extracts specific parameters by name, as the following example shows. (The output value of the `MyApplication/EncryptDocument` process is named `outDoc`.)
 
 ```as3
-     ... 
-     var res:Object = event.result; 
-     var docRef:DocumentReference = res["outDoc"] as DocumentReference; 
+     ...
+     var res:Object = event.result;
+     var docRef:DocumentReference = res["outDoc"] as DocumentReference;
      ...
 ```
 
@@ -310,127 +310,127 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
 
 * Creates a `ChannelSet` object in the `creationComplete` handler that represents the channels used by the `RemoteObject` component
 * Passes credentials to the server by calling the `ROLogin` function in response to a Button click event
-* Uses the RemoteObject component to send a String to the server in response to a Button click event. The server returns the same String back to the RemoteObject component 
+* Uses the RemoteObject component to send a String to the server in response to a Button click event. The server returns the same String back to the RemoteObject component
 * Uses the result event of the RemoteObject component to display the String in a TextArea control
 * Logs out of the server by calling the `ROLogout` function in response to a Button click event
 
 ```as3
- <?xml version=”1.0”?> 
- <!-- security/SecurityConstraintCustom.mxml --> 
- <mx:Application xmlns:mx=”https://www.adobe.com/2006/mxml” width=”100%” 
-     height=”100%” creationComplete=”creationCompleteHandler();”> 
-  
-     <mx:Script> 
-         <![CDATA[ 
-             import mx.controls.Alert; 
-             import mx.messaging.config.ServerConfig; 
-             import mx.rpc.AsyncToken; 
-             import mx.rpc.AsyncResponder; 
-             import mx.rpc.events.FaultEvent; 
-             import mx.rpc.events.ResultEvent; 
-             import mx.messaging.ChannelSet; 
-  
-             // Define a ChannelSet object. 
-             public var cs:ChannelSet; 
-  
-             // Define an AsyncToken object. 
-             public var token:AsyncToken; 
-  
-             // Initialize ChannelSet object based on the  
-             // destination of the RemoteObject component. 
-             private function creationCompleteHandler():void { 
-                 if (cs == null) 
-                 cs = ServerConfig.getChannelSet(remoteObject.destination);                     
-             } 
-  
-             // Login and handle authentication success or failure.  
-             private function ROLogin():void { 
-                 // Make sure that the user is not already logged in. 
-                 if (cs.authenticated == false) { 
-                     token = cs.login(“sampleuser”, “samplepassword”); 
-                     // Add result and fault handlers. 
-                     token.addResponder(new AsyncResponder(LoginResultEvent, 
-                     LoginFaultEvent)); 
-                 } 
-             } 
-  
-             // Handle successful login. 
-             private function LoginResultEvent(event:ResultEvent, 
-                 token:Object=null):void  { 
-                     switch(event.result) { 
-                         case “success”: 
-                             authenticatedCB.selected = true; 
-                             break; 
-                             default: 
-                     } 
-                 } 
-      
-                 // Handle login failure. 
-                 private function LoginFaultEvent(event:FaultEvent, 
-                     token:Object=null):void { 
-                         switch(event.fault.faultCode) { 
-                             case “Client.Authentication”: 
-                                 default: 
-                                 authenticatedCB.selected = false; 
-                                 Alert.show(“Login failure: “ + event.fault.faultString); 
-                     } 
-                 } 
-  
-                 // Logout and handle success or failure. 
-                 private function ROLogout():void { 
-                     // Add result and fault handlers. 
-                     token = cs.logout(); 
-                     token.addResponder(new 
-                         AsyncResponder(LogoutResultEvent,LogoutFaultEvent)); 
-                 } 
-  
-                 // Handle successful logout. 
-                 private function LogoutResultEvent(event:ResultEvent, 
-                     token:Object=null):void { 
-                         switch (event.result) { 
-                             case “success”: 
-                                 authenticatedCB.selected = false; 
-                                 break; 
-                                 default: 
-                     } 
-                 } 
-  
-                 // Handle logout failure. 
-                 private function LogoutFaultEvent(event:FaultEvent, 
-                     token:Object=null):void { 
-                         Alert.show(“Logout failure: “ + event.fault.faultString); 
-                 } 
-                 // Handle message recevied by RemoteObject component. 
-                 private function resultHandler(event:ResultEvent):void { 
-                     ta.text += “Server responded: “+ event.result + “\n”; 
-                 } 
-  
-                 // Handle fault from RemoteObject component. 
-                 private function faultHandler(event:FaultEvent):void { 
-                     ta.text += “Received fault: “ + event.fault + “\n”; 
-                 } 
-             ]]> 
-     </mx:Script> 
-     <mx:HBox> 
-         <mx:Label text=”Enter a text for the server to echo”/> 
-         <mx:TextInput id=”ti” text=”Hello World!”/> 
-         <mx:Button label=”Login”  
-             click=”ROLogin();”/> 
-         <mx:Button label=”Echo”   
-             enabled=”{authenticatedCB.selected}” 
-             click=”remoteObject.echo(ti.text);”/> 
-         <mx:Button label=”Logout”  
-             click=”ROLogout();”/> 
-         <mx:CheckBox id=”authenticatedCB”  
-             label=”Authenticated?”  
-             enabled=”false”/> 
-     </mx:HBox> 
-     <mx:TextArea id=”ta” width=”100%” height=”100%”/> 
-  
-     <mx:RemoteObject id=”remoteObject” 
-         destination=”myDest” 
-         result=”resultHandler(event);” 
-         fault=”faultHandler(event);”/> 
+ <?xml version=”1.0”?>
+ <!-- security/SecurityConstraintCustom.mxml -->
+ <mx:Application xmlns:mx=”https://www.adobe.com/2006/mxml” width=”100%”
+     height=”100%” creationComplete=”creationCompleteHandler();”>
+ 
+     <mx:Script>
+         <![CDATA[
+             import mx.controls.Alert;
+             import mx.messaging.config.ServerConfig;
+             import mx.rpc.AsyncToken;
+             import mx.rpc.AsyncResponder;
+             import mx.rpc.events.FaultEvent;
+             import mx.rpc.events.ResultEvent;
+             import mx.messaging.ChannelSet;
+ 
+             // Define a ChannelSet object.
+             public var cs:ChannelSet;
+ 
+             // Define an AsyncToken object.
+             public var token:AsyncToken;
+ 
+             // Initialize ChannelSet object based on the
+             // destination of the RemoteObject component.
+             private function creationCompleteHandler():void {
+                 if (cs == null)
+                 cs = ServerConfig.getChannelSet(remoteObject.destination);
+             }
+ 
+             // Login and handle authentication success or failure.
+             private function ROLogin():void {
+                 // Make sure that the user is not already logged in.
+                 if (cs.authenticated == false) {
+                     token = cs.login(“sampleuser”, “samplepassword”);
+                     // Add result and fault handlers.
+                     token.addResponder(new AsyncResponder(LoginResultEvent,
+                     LoginFaultEvent));
+                 }
+             }
+ 
+             // Handle successful login.
+             private function LoginResultEvent(event:ResultEvent,
+                 token:Object=null):void  {
+                     switch(event.result) {
+                         case “success”:
+                             authenticatedCB.selected = true;
+                             break;
+                             default:
+                     }
+                 }
+ 
+                 // Handle login failure.
+                 private function LoginFaultEvent(event:FaultEvent,
+                     token:Object=null):void {
+                         switch(event.fault.faultCode) {
+                             case “Client.Authentication”:
+                                 default:
+                                 authenticatedCB.selected = false;
+                                 Alert.show(“Login failure: “ + event.fault.faultString);
+                     }
+                 }
+ 
+                 // Logout and handle success or failure.
+                 private function ROLogout():void {
+                     // Add result and fault handlers.
+                     token = cs.logout();
+                     token.addResponder(new
+                         AsyncResponder(LogoutResultEvent,LogoutFaultEvent));
+                 }
+ 
+                 // Handle successful logout.
+                 private function LogoutResultEvent(event:ResultEvent,
+                     token:Object=null):void {
+                         switch (event.result) {
+                             case “success”:
+                                 authenticatedCB.selected = false;
+                                 break;
+                                 default:
+                     }
+                 }
+ 
+                 // Handle logout failure.
+                 private function LogoutFaultEvent(event:FaultEvent,
+                     token:Object=null):void {
+                         Alert.show(“Logout failure: “ + event.fault.faultString);
+                 }
+                 // Handle message recevied by RemoteObject component.
+                 private function resultHandler(event:ResultEvent):void {
+                     ta.text += “Server responded: “+ event.result + “\n”;
+                 }
+ 
+                 // Handle fault from RemoteObject component.
+                 private function faultHandler(event:FaultEvent):void {
+                     ta.text += “Received fault: “ + event.fault + “\n”;
+                 }
+             ]]>
+     </mx:Script>
+     <mx:HBox>
+         <mx:Label text=”Enter a text for the server to echo”/>
+         <mx:TextInput id=”ti” text=”Hello World!”/>
+         <mx:Button label=”Login”
+             click=”ROLogin();”/>
+         <mx:Button label=”Echo”
+             enabled=”{authenticatedCB.selected}”
+             click=”remoteObject.echo(ti.text);”/>
+         <mx:Button label=”Logout”
+             click=”ROLogout();”/>
+         <mx:CheckBox id=”authenticatedCB”
+             label=”Authenticated?”
+             enabled=”false”/>
+     </mx:HBox>
+     <mx:TextArea id=”ta” width=”100%” height=”100%”/>
+ 
+     <mx:RemoteObject id=”remoteObject”
+         destination=”myDest”
+         result=”resultHandler(event);”
+         fault=”faultHandler(event);”/>
  </mx:Application>
 ```
 
@@ -467,41 +467,41 @@ If you are using the AEM Forms single sign-on mechanism, configure the Remoting 
 A client application accesses AEM Forms through a remoting endpoint by using the `RemoteObject` component, as the following example shows.
 
 ```as3
- <?xml version="1.0"?> 
- <mx:Application   
-        backgroundColor="#FFFFFF"> 
-  
-       <mx:Script> 
-          <![CDATA[ 
-  
-            import mx.controls.Alert; 
-            import mx.rpc.events.FaultEvent; 
-  
-            // Prompt user to login on a fault.          
-            private function faultHandler(event:FaultEvent):void 
-            { 
-             if(event.fault.faultCode=="Client.Authentication") 
-             { 
-                 Alert.show( 
-                     event.fault.faultString + "\n" + 
-                     event.fault.faultCode + "\n" + 
-                     "Please login to continue."); 
-             } 
-         } 
-          ]]> 
-       </mx:Script>          
-      
-       <mx:RemoteObject id="srv"  
-           destination="product"  
-           fault="faultHandler(event);"/> 
-      
-       <mx:DataGrid  
-           width="100%" height="100%" 
-           dataProvider="{srv.getProducts.lastResult}"/>  
-  
-       <mx:Button label="Get Data"  
-           click="srv.getProducts();"/>  
-      
+ <?xml version="1.0"?>
+ <mx:Application
+        backgroundColor="#FFFFFF">
+ 
+       <mx:Script>
+          <![CDATA[
+ 
+            import mx.controls.Alert;
+            import mx.rpc.events.FaultEvent;
+ 
+            // Prompt user to login on a fault.
+            private function faultHandler(event:FaultEvent):void
+            {
+             if(event.fault.faultCode=="Client.Authentication")
+             {
+                 Alert.show(
+                     event.fault.faultString + "\n" +
+                     event.fault.faultCode + "\n" +
+                     "Please login to continue.");
+             }
+         }
+          ]]>
+       </mx:Script>
+ 
+       <mx:RemoteObject id="srv"
+           destination="product"
+           fault="faultHandler(event);"/>
+ 
+       <mx:DataGrid
+           width="100%" height="100%"
+           dataProvider="{srv.getProducts.lastResult}"/>
+ 
+       <mx:Button label="Get Data"
+           click="srv.getProducts();"/>
+ 
  </mx:Application>
 ```
 
@@ -548,53 +548,53 @@ When passing a secure document, use single sign-on and specify a AEM forms user 
 AEM Forms supports an operation named `getFileUploadToken` that returns a token that is passed to the upload servlet. The `DocumentReference.constructRequestForUpload` method requires a URL to AEM Forms along with the token returned by the `LC.FileUploadAuthenticator.getFileUploadToken` method. This method returns a `URLRequest` object that is used in the invocation to the upload servlet. The following code demonstrates this application logic.
 
 ```as3
-     ... 
-         private function startUpload():void 
-         {     
-             fileRef.addEventListener(Event.SELECT, selectHandler); 
-             fileRef.addEventListener("uploadCompleteData", completeHandler); 
-             try  
-             { 
-         var success:Boolean = fileRef.browse(); 
-             }  
-             catch (error:Error)  
-             { 
-                 trace("Unable to browse for files."); 
-             } 
-  
-         } 
-  
-          private function selectHandler(event:Event):void 
-             { 
-             var authTokenService:RemoteObject = new RemoteObject("LC.FileUploadAuthenticator"); 
-             authTokenService.addEventListener("result", authTokenReceived); 
-             authTokenService.channelSet = cs; 
-             authTokenService.getFileUploadToken(); 
-             } 
-      
-         private function authTokenReceived(event:ResultEvent):void 
-             { 
-             var token:String = event.result as String; 
-             var request:URLRequest = DocumentReference.constructRequestForUpload("http://localhost:8080", token); 
-              
-             try 
-             { 
-           fileRef.upload(request); 
-             } 
-             catch (error:Error) 
-             { 
-             trace("Unable to upload file."); 
-             }                               
-             } 
-  
-         private function completeHandler(event:DataEvent):void  
-         { 
-              
-             var params:Object = new Object(); 
-             var docRef:DocumentReference = new DocumentReference(); 
-             docRef.url = event.data as String; 
-             docRef.referenceType = DocumentReference.REF_TYPE_URL; 
-         } 
+     ...
+         private function startUpload():void
+         {
+             fileRef.addEventListener(Event.SELECT, selectHandler);
+             fileRef.addEventListener("uploadCompleteData", completeHandler);
+             try
+             {
+         var success:Boolean = fileRef.browse();
+             }
+             catch (error:Error)
+             {
+                 trace("Unable to browse for files.");
+             }
+ 
+         }
+ 
+          private function selectHandler(event:Event):void
+             {
+             var authTokenService:RemoteObject = new RemoteObject("LC.FileUploadAuthenticator");
+             authTokenService.addEventListener("result", authTokenReceived);
+             authTokenService.channelSet = cs;
+             authTokenService.getFileUploadToken();
+             }
+ 
+         private function authTokenReceived(event:ResultEvent):void
+             {
+             var token:String = event.result as String;
+             var request:URLRequest = DocumentReference.constructRequestForUpload("http://localhost:8080", token);
+ 
+             try
+             {
+           fileRef.upload(request);
+             }
+             catch (error:Error)
+             {
+             trace("Unable to upload file.");
+             }
+             }
+ 
+         private function completeHandler(event:DataEvent):void
+         {
+ 
+             var params:Object = new Object();
+             var docRef:DocumentReference = new DocumentReference();
+             docRef.url = event.data as String;
+             docRef.referenceType = DocumentReference.REF_TYPE_URL;
+         }
          ...
 ```
 
@@ -605,7 +605,7 @@ AEM Forms supports an operation named `getFileUploadToken` that returns a token 
 You can use administration console to specify whether documents are secure when passing a document from a Flex client application to a AEM Forms process. By default, AEM Forms is configured to accept secure documents. You can configure AEM Forms to accept secure documents by performing the following steps:
 
 1. Log in to administration console.
-1. Click **Settings**. 
+1. Click **Settings**.
 1. Click** Core System Settings.**
 1. Click Configurations.
 1. Ensure that the Allow non secured document upload from Flex applications option is unselected.
@@ -616,255 +616,255 @@ You can use administration console to specify whether documents are secure when 
 
 ### Quick Start: Invoking a short-lived process by passing a secure document using Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 
-The following code example invokes the `MyApplication/EncryptDocument.`A user must login to click the Select File button that is used to upload a PDF file and invoke the process. That is, once the user is authenticated, the Select File button is enabled. The following illustration shows the Flex client application after a user is authenticated. Notice that the Authenticated CheckBox is enabled. 
+The following code example invokes the `MyApplication/EncryptDocument.`A user must login to click the Select File button that is used to upload a PDF file and invoke the process. That is, once the user is authenticated, the Select File button is enabled. The following illustration shows the Flex client application after a user is authenticated. Notice that the Authenticated CheckBox is enabled.
 
 ![iu_iu_secureremotelogin](assets/iu_iu_secureremotelogin.png)
 
 if AEM Forms is configured to only allow secure documents to be uploaded and the user not have the* Document Upload Application User *role, then an exception is thrown. If the user does have this role, then the file is uploaded and the process is invoked.
 
 ```as3
- <?xml version="1.0" encoding="utf-8"?> 
- <mx:Application  xmlns="*"  
-      creationComplete="initializeChannelSet();"> 
-        <mx:Script> 
-        <![CDATA[ 
-      import mx.rpc.livecycle.DocumentReference; 
-      import flash.net.FileReference; 
-      import flash.net.URLRequest; 
-      import flash.events.Event; 
-      import flash.events.DataEvent; 
-      import mx.messaging.ChannelSet; 
-      import mx.messaging.channels.AMFChannel;   
-      import mx.rpc.events.ResultEvent; 
-      import mx.collections.ArrayCollection; 
-      import mx.rpc.AsyncToken; 
-      import mx.controls.Alert; 
-      import mx.rpc.events.FaultEvent; 
-      import mx.rpc.AsyncResponder; 
-  
-      // Classes used in file retrieval   
-      private var fileRef:FileReference = new FileReference(); 
-      private var docRef:DocumentReference = new DocumentReference(); 
-      private var parentResourcePath:String = "/"; 
-      private var now1:Date;    
-      private var serverPort:String = "hiro-xp:8080"; 
-      
-      // Define a ChannelSet object. 
-      public var cs:ChannelSet;  
-      
-      // Define an AsyncToken object. 
-      public var token:AsyncToken; 
-      
-       // Holds information returned from AEM Forms  
-      [Bindable] 
-      public var progressList:ArrayCollection = new ArrayCollection(); 
-  
-           
-      // Handles a successful login 
-     private function LoginResultEvent(event:ResultEvent, 
-         token:Object=null):void  { 
-             switch(event.result) { 
-                 case "success": 
-                     authenticatedCB.selected = true; 
-                     btnFile.enabled = true; 
-                     btnLogout.enabled = true; 
-                     btnLogin.enabled = false; 
-                         break; 
-                     default: 
-                 } 
-             } 
-              
-              
- // Handle login failure. 
- private function LoginFaultEvent(event:FaultEvent, 
-     token:Object=null):void { 
-     switch(event.fault.faultCode) { 
-                 case "Client.Authentication": 
-                         default: 
-                         authenticatedCB.selected = false; 
-                         Alert.show("Login failure: " + event.fault.faultString); 
-                 } 
-             } 
-                  
-      
-      // Set up channel set to invoke AEM Forms  
-      private function initializeChannelSet():void { 
-        cs = new ChannelSet();  
-        cs.addChannel(new AMFChannel("remoting-amf", "https://" + serverPort + "/remoting/messagebroker/amf"));  
-        EncryptDocument2.channelSet = cs; 
-      } 
-  
-     // Call this method to upload the file. 
-      // This creates a file picker and lets the user select a PDF file to pass to the EncryptDocument process. 
-      private function uploadFile():void { 
-        fileRef.addEventListener(Event.SELECT, selectHandler); 
-        fileRef.addEventListener(DataEvent.UPLOAD_COMPLETE_DATA,completeHandler); 
-        fileRef.browse(); 
-      } 
-  
-      // Gets called for selected file. Does the actual upload via the file upload servlet. 
-      private function selectHandler(event:Event):void { 
-              var authTokenService:RemoteObject = new RemoteObject("LC.FileUploadAuthenticator"); 
-         authTokenService.addEventListener("result", authTokenReceived); 
-         authTokenService.channelSet = cs; 
-         authTokenService.getFileUploadToken(); 
-      } 
-  
-     private function authTokenReceived(event:ResultEvent):void 
-     { 
-     var token:String = event.result as String; 
-     var request:URLRequest = DocumentReference.constructRequestForUpload("https://hiro-xp:8080", token); 
-              
-     try 
-     { 
-           fileRef.upload(request); 
-     } 
-     catch (error:Error) 
-     { 
-         trace("Unable to upload file."); 
-     }                               
- } 
-  
-      // Called once the file is completely uploaded. 
-      private function completeHandler(event:DataEvent):void {                     
-  
-        // Set the docRef’s url and referenceType parameters 
-        docRef.url = event.data as String;       
-        docRef.referenceType=DocumentReference.REF_TYPE_URL; 
-        executeInvokeProcess();  
-      }       
-  
-     //This method invokes the EncryptDocument process 
-      public function executeInvokeProcess():void { 
-         //Create an Object to store the input value for the EncryptDocument process 
-           now1 = new Date(); 
-      
-         var params:Object = new Object(); 
-         params["inDoc"]=docRef; 
-  
-         // Invoke the EncryptDocument process 
-         var token:AsyncToken;             
-         token = EncryptDocument2.invoke(params); 
-         token.name = name; 
-      } 
-  
-      // AEM Forms  login method 
-      private function ROLogin():void { 
-         // Make sure that the user is not already logged in. 
-          
-         //Get the User and Password 
-         var userName:String = txtUser.text; 
-         var pass:String = txtPassword.text; 
-          
-        if (cs.authenticated == false) { 
-             token = cs.login(userName, pass); 
-          
-         // Add result and fault handlers. 
-         token.addResponder(new AsyncResponder(LoginResultEvent,    LoginFaultEvent)); 
-                 } 
-             } 
-      
-      // This method handles a successful process invocation 
-      public function handleResult(event:ResultEvent):void 
-      { 
-            //Retrieve information returned from the service invocation 
-          var token:AsyncToken = event.token;         
-          var res:Object = event.result; 
-          var dr:DocumentReference = res["outDoc"] as DocumentReference; 
-          var now2:Date = new Date(); 
-  
-           // These fields map to columns in the DataGrid 
-          var progObject:Object = new Object(); 
-          progObject.filename = token.name; 
-          progObject.timing = (now2.time - now1.time).toString(); 
-          progObject.state = "Success"; 
-          progObject.link = "<a href='" + dr.url + "'> open </a>"; 
-          progressList.addItem(progObject); 
-      } 
-      
-      // Prompt user to login on a fault.          
-       private function faultHandler(event:FaultEvent):void 
-            { 
-             if(event.fault.faultCode=="Client.Authentication") 
-             { 
-                 Alert.show( 
-                     event.fault.faultString + "\n" + 
-                     event.fault.faultCode + "\n" + 
-                     "Please login to continue."); 
-             } 
-            } 
-      
-       // AEM Forms  logout method 
-     private function ROLogout():void { 
-         // Add result and fault handlers. 
-         token = cs.logout(); 
-         token.addResponder(new AsyncResponder(LogoutResultEvent,LogoutFaultEvent)); 
-     } 
-  
-     // Handle successful logout. 
-     private function LogoutResultEvent(event:ResultEvent, 
-         token:Object=null):void { 
-         switch (event.result) { 
-         case "success": 
-                 authenticatedCB.selected = false; 
-                 btnFile.enabled = false; 
-                 btnLogout.enabled = false; 
-                 btnLogin.enabled = true; 
-                 break; 
-                 default: 
-             } 
-     } 
-  
-     // Handle logout failure. 
-     private function LogoutFaultEvent(event:FaultEvent, 
-             token:Object=null):void { 
-             Alert.show("Logout failure: " + event.fault.faultString); 
-     } 
-  
-          private function resultHandler(event:ResultEvent):void { 
-          // Do anything else here. 
-          } 
-        ]]> 
-  
-      </mx:Script> 
-      <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);"> 
-          <mx:method name="invoke" result="handleResult(event)"/> 
-      </mx:RemoteObject> 
-      
-       <!--//This consists of what is displayed on the webpage--> 
-      <mx:Panel id="lcPanel" title="EncryptDocument  (Deprecated for AEM forms) AEM Forms Remoting Example"  
-           height="25%" width="25%" paddingTop="10" paddingLeft="10" paddingRight="10"  
-           paddingBottom="10"> 
-         <mx:Label width="100%" color="blue" 
-                text="Select a PDF file to pass to the EncryptDocument process"/>  
-        <mx:DataGrid x="10" y="0" width="500" id="idProgress" editable="false"  
-           dataProvider="{progressList}" height="231" selectable="false" > 
-          <mx:columns> 
-            <mx:DataGridColumn headerText="Filename" width="200" dataField="filename" editable="false"/> 
-            <mx:DataGridColumn headerText="State" width="75" dataField="state" editable="false"/> 
-            <mx:DataGridColumn headerText="Timing" width="75" dataField="timing" editable="false"/> 
-            <mx:DataGridColumn headerText="Click to Open" dataField="link" editable="false" > 
-             <mx:itemRenderer> 
-                <mx:Component> 
-                   <mx:Text x="0" y="0" width="100%" htmlText="{data.link}"/> 
-                </mx:Component> 
-             </mx:itemRenderer> 
-            </mx:DataGridColumn> 
-          </mx:columns> 
-        </mx:DataGrid> 
-        <mx:Button label="Select File" click="uploadFile()"  id="btnFile" enabled="false"/> 
-        <mx:Button label="Login" click="ROLogin();" id="btnLogin"/> 
-        <mx:Button label="LogOut" click="ROLogout();" enabled="false" id="btnLogout"/> 
-        <mx:HBox> 
-         <mx:Label text="User:"/> 
-         <mx:TextInput id="txtUser" text=""/> 
-         <mx:Label text="Password:"/> 
-         <mx:TextInput id="txtPassword" text="" displayAsPassword="true"/> 
-         <mx:CheckBox id="authenticatedCB"  
-             label="Authenticated?"  
-             enabled="false"/> 
-     </mx:HBox> 
-      </mx:Panel> 
+ <?xml version="1.0" encoding="utf-8"?>
+ <mx:Application  xmlns="*"
+      creationComplete="initializeChannelSet();">
+        <mx:Script>
+        <![CDATA[
+      import mx.rpc.livecycle.DocumentReference;
+      import flash.net.FileReference;
+      import flash.net.URLRequest;
+      import flash.events.Event;
+      import flash.events.DataEvent;
+      import mx.messaging.ChannelSet;
+      import mx.messaging.channels.AMFChannel;
+      import mx.rpc.events.ResultEvent;
+      import mx.collections.ArrayCollection;
+      import mx.rpc.AsyncToken;
+      import mx.controls.Alert;
+      import mx.rpc.events.FaultEvent;
+      import mx.rpc.AsyncResponder;
+ 
+      // Classes used in file retrieval
+      private var fileRef:FileReference = new FileReference();
+      private var docRef:DocumentReference = new DocumentReference();
+      private var parentResourcePath:String = "/";
+      private var now1:Date;
+      private var serverPort:String = "hiro-xp:8080";
+ 
+      // Define a ChannelSet object.
+      public var cs:ChannelSet;
+ 
+      // Define an AsyncToken object.
+      public var token:AsyncToken;
+ 
+       // Holds information returned from AEM Forms
+      [Bindable]
+      public var progressList:ArrayCollection = new ArrayCollection();
+ 
+ 
+      // Handles a successful login
+     private function LoginResultEvent(event:ResultEvent,
+         token:Object=null):void  {
+             switch(event.result) {
+                 case "success":
+                     authenticatedCB.selected = true;
+                     btnFile.enabled = true;
+                     btnLogout.enabled = true;
+                     btnLogin.enabled = false;
+                         break;
+                     default:
+                 }
+             }
+ 
+ 
+ // Handle login failure.
+ private function LoginFaultEvent(event:FaultEvent,
+     token:Object=null):void {
+     switch(event.fault.faultCode) {
+                 case "Client.Authentication":
+                         default:
+                         authenticatedCB.selected = false;
+                         Alert.show("Login failure: " + event.fault.faultString);
+                 }
+             }
+ 
+ 
+      // Set up channel set to invoke AEM Forms
+      private function initializeChannelSet():void {
+        cs = new ChannelSet();
+        cs.addChannel(new AMFChannel("remoting-amf", "https://" + serverPort + "/remoting/messagebroker/amf"));
+        EncryptDocument2.channelSet = cs;
+      }
+ 
+     // Call this method to upload the file.
+      // This creates a file picker and lets the user select a PDF file to pass to the EncryptDocument process.
+      private function uploadFile():void {
+        fileRef.addEventListener(Event.SELECT, selectHandler);
+        fileRef.addEventListener(DataEvent.UPLOAD_COMPLETE_DATA,completeHandler);
+        fileRef.browse();
+      }
+ 
+      // Gets called for selected file. Does the actual upload via the file upload servlet.
+      private function selectHandler(event:Event):void {
+              var authTokenService:RemoteObject = new RemoteObject("LC.FileUploadAuthenticator");
+         authTokenService.addEventListener("result", authTokenReceived);
+         authTokenService.channelSet = cs;
+         authTokenService.getFileUploadToken();
+      }
+ 
+     private function authTokenReceived(event:ResultEvent):void
+     {
+     var token:String = event.result as String;
+     var request:URLRequest = DocumentReference.constructRequestForUpload("https://hiro-xp:8080", token);
+ 
+     try
+     {
+           fileRef.upload(request);
+     }
+     catch (error:Error)
+     {
+         trace("Unable to upload file.");
+     }
+ }
+ 
+      // Called once the file is completely uploaded.
+      private function completeHandler(event:DataEvent):void {
+ 
+        // Set the docRef’s url and referenceType parameters
+        docRef.url = event.data as String;
+        docRef.referenceType=DocumentReference.REF_TYPE_URL;
+        executeInvokeProcess();
+      }
+ 
+     //This method invokes the EncryptDocument process
+      public function executeInvokeProcess():void {
+         //Create an Object to store the input value for the EncryptDocument process
+           now1 = new Date();
+ 
+         var params:Object = new Object();
+         params["inDoc"]=docRef;
+ 
+         // Invoke the EncryptDocument process
+         var token:AsyncToken;
+         token = EncryptDocument2.invoke(params);
+         token.name = name;
+      }
+ 
+      // AEM Forms  login method
+      private function ROLogin():void {
+         // Make sure that the user is not already logged in.
+ 
+         //Get the User and Password
+         var userName:String = txtUser.text;
+         var pass:String = txtPassword.text;
+ 
+        if (cs.authenticated == false) {
+             token = cs.login(userName, pass);
+ 
+         // Add result and fault handlers.
+         token.addResponder(new AsyncResponder(LoginResultEvent,    LoginFaultEvent));
+                 }
+             }
+ 
+      // This method handles a successful process invocation
+      public function handleResult(event:ResultEvent):void
+      {
+            //Retrieve information returned from the service invocation
+          var token:AsyncToken = event.token;
+          var res:Object = event.result;
+          var dr:DocumentReference = res["outDoc"] as DocumentReference;
+          var now2:Date = new Date();
+ 
+           // These fields map to columns in the DataGrid
+          var progObject:Object = new Object();
+          progObject.filename = token.name;
+          progObject.timing = (now2.time - now1.time).toString();
+          progObject.state = "Success";
+          progObject.link = "<a href='" + dr.url + "'> open </a>";
+          progressList.addItem(progObject);
+      }
+ 
+      // Prompt user to login on a fault.
+       private function faultHandler(event:FaultEvent):void
+            {
+             if(event.fault.faultCode=="Client.Authentication")
+             {
+                 Alert.show(
+                     event.fault.faultString + "\n" +
+                     event.fault.faultCode + "\n" +
+                     "Please login to continue.");
+             }
+            }
+ 
+       // AEM Forms  logout method
+     private function ROLogout():void {
+         // Add result and fault handlers.
+         token = cs.logout();
+         token.addResponder(new AsyncResponder(LogoutResultEvent,LogoutFaultEvent));
+     }
+ 
+     // Handle successful logout.
+     private function LogoutResultEvent(event:ResultEvent,
+         token:Object=null):void {
+         switch (event.result) {
+         case "success":
+                 authenticatedCB.selected = false;
+                 btnFile.enabled = false;
+                 btnLogout.enabled = false;
+                 btnLogin.enabled = true;
+                 break;
+                 default:
+             }
+     }
+ 
+     // Handle logout failure.
+     private function LogoutFaultEvent(event:FaultEvent,
+             token:Object=null):void {
+             Alert.show("Logout failure: " + event.fault.faultString);
+     }
+ 
+          private function resultHandler(event:ResultEvent):void {
+          // Do anything else here.
+          }
+        ]]>
+ 
+      </mx:Script>
+      <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);">
+          <mx:method name="invoke" result="handleResult(event)"/>
+      </mx:RemoteObject>
+ 
+       <!--//This consists of what is displayed on the webpage-->
+      <mx:Panel id="lcPanel" title="EncryptDocument  (Deprecated for AEM forms) AEM Forms Remoting Example"
+           height="25%" width="25%" paddingTop="10" paddingLeft="10" paddingRight="10"
+           paddingBottom="10">
+         <mx:Label width="100%" color="blue"
+                text="Select a PDF file to pass to the EncryptDocument process"/>
+        <mx:DataGrid x="10" y="0" width="500" id="idProgress" editable="false"
+           dataProvider="{progressList}" height="231" selectable="false" >
+          <mx:columns>
+            <mx:DataGridColumn headerText="Filename" width="200" dataField="filename" editable="false"/>
+            <mx:DataGridColumn headerText="State" width="75" dataField="state" editable="false"/>
+            <mx:DataGridColumn headerText="Timing" width="75" dataField="timing" editable="false"/>
+            <mx:DataGridColumn headerText="Click to Open" dataField="link" editable="false" >
+             <mx:itemRenderer>
+                <mx:Component>
+                   <mx:Text x="0" y="0" width="100%" htmlText="{data.link}"/>
+                </mx:Component>
+             </mx:itemRenderer>
+            </mx:DataGridColumn>
+          </mx:columns>
+        </mx:DataGrid>
+        <mx:Button label="Select File" click="uploadFile()"  id="btnFile" enabled="false"/>
+        <mx:Button label="Login" click="ROLogin();" id="btnLogin"/>
+        <mx:Button label="LogOut" click="ROLogout();" enabled="false" id="btnLogout"/>
+        <mx:HBox>
+         <mx:Label text="User:"/>
+         <mx:TextInput id="txtUser" text=""/>
+         <mx:Label text="Password:"/>
+         <mx:TextInput id="txtPassword" text="" displayAsPassword="true"/>
+         <mx:CheckBox id="authenticatedCB"
+             label="Authenticated?"
+             enabled="false"/>
+     </mx:HBox>
+      </mx:Panel>
  </mx:Application>
 ```
 
@@ -888,49 +888,49 @@ The Customer service exposes an operation named `createCustomer`. This discussio
 
 ![iu_iu_flexnewcust](assets/iu_iu_flexnewcust.png)
 
-The following table lists the controls that are part of this client application. 
+The following table lists the controls that are part of this client application.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Control name</p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td><p>txtFirst</p></td> 
-   <td><p>Specifies the customer’s first name. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>txtLast</p></td> 
-   <td><p>Specifies the customer’s last name. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>txtPhone</p></td> 
-   <td><p>Specifies the customer’s phone number.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>txtStreet</p></td> 
-   <td><p>Specifies the customer’s street name.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>txtState</p></td> 
-   <td><p>Specifies the customer’s state. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>txtZIP</p></td> 
-   <td><p>Specifies the customer’s zip code. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>txtCity</p></td> 
-   <td><p>Specifies the customer’s city.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>txtCustId</p></td> 
-   <td><p>Specifies the customer identifier value to which the new account belongs. This text box is populated by the return value of the Customer service’s <code>createCustomer</code> operation. </p></td> 
-  </tr> 
- </tbody> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Control name</p></th>
+   <th><p>Description</p></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><p>txtFirst</p></td>
+   <td><p>Specifies the customer’s first name. </p></td>
+  </tr>
+  <tr>
+   <td><p>txtLast</p></td>
+   <td><p>Specifies the customer’s last name. </p></td>
+  </tr>
+  <tr>
+   <td><p>txtPhone</p></td>
+   <td><p>Specifies the customer’s phone number.</p></td>
+  </tr>
+  <tr>
+   <td><p>txtStreet</p></td>
+   <td><p>Specifies the customer’s street name.</p></td>
+  </tr>
+  <tr>
+   <td><p>txtState</p></td>
+   <td><p>Specifies the customer’s state. </p></td>
+  </tr>
+  <tr>
+   <td><p>txtZIP</p></td>
+   <td><p>Specifies the customer’s zip code. </p></td>
+  </tr>
+  <tr>
+   <td><p>txtCity</p></td>
+   <td><p>Specifies the customer’s city.</p></td>
+  </tr>
+  <tr>
+   <td><p>txtCustId</p></td>
+   <td><p>Specifies the customer identifier value to which the new account belongs. This text box is populated by the return value of the Customer service’s <code>createCustomer</code> operation. </p></td>
+  </tr>
+ </tbody>
 </table>
 
 ### Mapping AEM Forms complex data types {#mapping-aem-forms-complex-data-types}
@@ -944,19 +944,19 @@ In the ActionScript class, use the `RemoteClass` metadata tag to map to the AEM 
 The following ActionScript class named Customer shows how to map to the AEM Forms data type `com.adobe.livecycle.sample.customer.Customer`.
 
 ```as3
- package customer 
-  
- { 
-     [RemoteClass(alias="com.adobe.livecycle.sample.customer.Customer")] 
-     public class Customer 
-     { 
-            public var name:String; 
-            public var street:String; 
-            public var city:String; 
-            public var state:String; 
-            public var phone:String; 
-            public var zip:int; 
-        } 
+ package customer
+ 
+ {
+     [RemoteClass(alias="com.adobe.livecycle.sample.customer.Customer")]
+     public class Customer
+     {
+            public var name:String;
+            public var street:String;
+            public var city:String;
+            public var state:String;
+            public var phone:String;
+            public var zip:int;
+        }
  }
 ```
 
@@ -970,7 +970,7 @@ The ActionScript class's fields match the fields that belong to the AEM Forms co
 
 The Customer ActionScript class belongs to a package named customer. It is recommended that you place all ActionScript classes that map to complex AEM Forms data types in their own package. Create a folder in the Flex project's src folder and place the ActionScript file in the folder, as shown in the following illustration.
 
-![iu_iu_customeras](assets/iu_iu_customeras.png) 
+![iu_iu_customeras](assets/iu_iu_customeras.png)
 
 ### Quick Start: Invoking the Customer custom service using Remoting {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
@@ -981,191 +981,191 @@ The following code example invokes the Customer service and creates a new custom
 >Before you can execute this quick start, you have to create and deploy the Bank custom component.
 
 ```as3
- <?xml version="1.0" encoding="utf-8"?> 
- <mx:Application  layout="absolute" backgroundColor="#B1ABAB"> 
-  
- <mx:Script> 
-            <![CDATA[ 
-      
-      import flash.net.FileReference; 
-      import flash.net.URLRequest; 
-      import flash.events.Event; 
-      import flash.events.DataEvent; 
-      import mx.messaging.ChannelSet; 
-      import mx.messaging.channels.AMFChannel;   
-      import mx.rpc.events.ResultEvent; 
-      import mx.collections.ArrayCollection; 
-      import mx.rpc.AsyncToken; 
-      import mx.managers.CursorManager; 
-      import mx.rpc.remoting.mxml.RemoteObject; 
-  
-  
-      // Custom class that corresponds to an input to the 
-      // AEM Forms encryption method 
-      import customer.Customer; 
-  
-      // Classes used in file retrieval   
-      private var fileRef:FileReference = new FileReference(); 
-      private var parentResourcePath:String = "/"; 
-      private var serverPort:String = "hiro-xp:8080"; 
-      private var now1:Date;   
-      private var fileName:String;    
-  
-      // Prepares parameters for encryptPDFUsingPassword method call 
-      public function executeCreateCustomer():void  
-      { 
-      
-        var cs:ChannelSet= new ChannelSet();  
-     cs.addChannel(new AMFChannel("remoting-amf", "https://" + serverPort + "/remoting/messagebroker/amf"));  
-      
-     customerService.setCredentials("administrator", "password"); 
-     customerService.channelSet = cs; 
-      
-     //Create a Customer object required to invoke the Customer service's 
-     //createCustomer operation 
-     var myCust:Customer = new Customer();  
-      
-     //Get values from the user of the Flex application 
-     var fullName:String = txtFirst.text +" "+txtLast.text ;  
-     var Phone:String = txtPhone.text; 
-     var Street:String = txtStreet.text; 
-     var State:String = txtState.text; 
-     var Zip:int = parseInt(txtZIP.text); 
-     var City:String = txtCity.text; 
-      
-     //Populate Customer fields 
-     myCust.name = fullName; 
-     myCust.phone = Phone; 
-     myCust.street= Street; 
-     myCust.state= State; 
-     myCust.zip = Zip;  
-     myCust.city = City; 
-      
-     //Invoke the Customer service's createCustomer operation 
-     var params:Object = new Object(); 
-        params["inCustomer"]=myCust; 
-     var token:AsyncToken;             
-        token = customerService.createCustomer(params); 
-        token.name = name; 
-      } 
-      
-      private function handleResult(event:ResultEvent):void  
-      { 
-          // Retrieve the information returned from the service invocation 
-          var token:AsyncToken = event.token;         
-          var res:Object = event.result; 
-          var custId:String = res["CustomerId"] as String; 
-      
-          //Assign to the custId to the text box 
-          txtCustId.text = custId;  
-      } 
-      
-      
-      private function resultHandler(event:ResultEvent):void  
-      { 
-      
-      }    
-            ]]> 
- </mx:Script> 
- <mx:RemoteObject id="customerService" destination="CustomerService" result="resultHandler(event);"> 
- <mx:method name="createCustomer" result="handleResult(event)"/> 
- </mx:RemoteObject> 
-  
-  
- <mx:Style source="../bank.css"/> 
-     <mx:Grid> 
-                     <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="New Customer" fontSize="16" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                     <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="First Name:" fontSize="12" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:TextInput styleName="textField" id="txtFirst"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Button label="Create Customer" id="btnCreateCustomer" click="executeCreateCustomer()"/> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                     <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="Last Name" fontSize="12" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:TextInput styleName="textField" id="txtLast"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                     <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="Phone" fontSize="12" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:TextInput styleName="textField" id="txtPhone"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                     <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="Street" fontSize="12" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:TextInput styleName="textField" id="txtStreet"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                     <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="State" fontSize="12" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:TextInput styleName="textField" id="txtState"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                     <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="ZIP" fontSize="12" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:TextInput styleName="textField" id="txtZIP"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                     <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="City" fontSize="12" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:TextInput styleName="textField" id="txtCity"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                             <mx:GridRow width="100%" height="100%"> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:Label text="Customer Identifier" fontSize="12" fontWeight="bold"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                             <mx:TextInput styleName="textField" id="txtCustId" editable="false"/> 
-                         </mx:GridItem> 
-                         <mx:GridItem width="100%" height="100%"> 
-                         </mx:GridItem> 
-                     </mx:GridRow> 
-                 </mx:Grid> 
- </mx:Application> 
+ <?xml version="1.0" encoding="utf-8"?>
+ <mx:Application  layout="absolute" backgroundColor="#B1ABAB">
+ 
+ <mx:Script>
+            <![CDATA[
+ 
+      import flash.net.FileReference;
+      import flash.net.URLRequest;
+      import flash.events.Event;
+      import flash.events.DataEvent;
+      import mx.messaging.ChannelSet;
+      import mx.messaging.channels.AMFChannel;
+      import mx.rpc.events.ResultEvent;
+      import mx.collections.ArrayCollection;
+      import mx.rpc.AsyncToken;
+      import mx.managers.CursorManager;
+      import mx.rpc.remoting.mxml.RemoteObject;
+ 
+ 
+      // Custom class that corresponds to an input to the
+      // AEM Forms encryption method
+      import customer.Customer;
+ 
+      // Classes used in file retrieval
+      private var fileRef:FileReference = new FileReference();
+      private var parentResourcePath:String = "/";
+      private var serverPort:String = "hiro-xp:8080";
+      private var now1:Date;
+      private var fileName:String;
+ 
+      // Prepares parameters for encryptPDFUsingPassword method call
+      public function executeCreateCustomer():void
+      {
+ 
+        var cs:ChannelSet= new ChannelSet();
+     cs.addChannel(new AMFChannel("remoting-amf", "https://" + serverPort + "/remoting/messagebroker/amf"));
+ 
+     customerService.setCredentials("administrator", "password");
+     customerService.channelSet = cs;
+ 
+     //Create a Customer object required to invoke the Customer service's
+     //createCustomer operation
+     var myCust:Customer = new Customer();
+ 
+     //Get values from the user of the Flex application
+     var fullName:String = txtFirst.text +" "+txtLast.text ;
+     var Phone:String = txtPhone.text;
+     var Street:String = txtStreet.text;
+     var State:String = txtState.text;
+     var Zip:int = parseInt(txtZIP.text);
+     var City:String = txtCity.text;
+ 
+     //Populate Customer fields
+     myCust.name = fullName;
+     myCust.phone = Phone;
+     myCust.street= Street;
+     myCust.state= State;
+     myCust.zip = Zip;
+     myCust.city = City;
+ 
+     //Invoke the Customer service's createCustomer operation
+     var params:Object = new Object();
+        params["inCustomer"]=myCust;
+     var token:AsyncToken;
+        token = customerService.createCustomer(params);
+        token.name = name;
+      }
+ 
+      private function handleResult(event:ResultEvent):void
+      {
+          // Retrieve the information returned from the service invocation
+          var token:AsyncToken = event.token;
+          var res:Object = event.result;
+          var custId:String = res["CustomerId"] as String;
+ 
+          //Assign to the custId to the text box
+          txtCustId.text = custId;
+      }
+ 
+ 
+      private function resultHandler(event:ResultEvent):void
+      {
+ 
+      }
+            ]]>
+ </mx:Script>
+ <mx:RemoteObject id="customerService" destination="CustomerService" result="resultHandler(event);">
+ <mx:method name="createCustomer" result="handleResult(event)"/>
+ </mx:RemoteObject>
+ 
+ 
+ <mx:Style source="../bank.css"/>
+     <mx:Grid>
+                     <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="New Customer" fontSize="16" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                     </mx:GridRow>
+                     <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="First Name:" fontSize="12" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:TextInput styleName="textField" id="txtFirst"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Button label="Create Customer" id="btnCreateCustomer" click="executeCreateCustomer()"/>
+                         </mx:GridItem>
+                     </mx:GridRow>
+                     <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="Last Name" fontSize="12" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:TextInput styleName="textField" id="txtLast"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                     </mx:GridRow>
+                     <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="Phone" fontSize="12" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:TextInput styleName="textField" id="txtPhone"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                     </mx:GridRow>
+                     <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="Street" fontSize="12" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:TextInput styleName="textField" id="txtStreet"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                     </mx:GridRow>
+                     <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="State" fontSize="12" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:TextInput styleName="textField" id="txtState"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                     </mx:GridRow>
+                     <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="ZIP" fontSize="12" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:TextInput styleName="textField" id="txtZIP"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                     </mx:GridRow>
+                     <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="City" fontSize="12" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:TextInput styleName="textField" id="txtCity"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                     </mx:GridRow>
+                             <mx:GridRow width="100%" height="100%">
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:Label text="Customer Identifier" fontSize="12" fontWeight="bold"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                             <mx:TextInput styleName="textField" id="txtCustId" editable="false"/>
+                         </mx:GridItem>
+                         <mx:GridItem width="100%" height="100%">
+                         </mx:GridItem>
+                     </mx:GridRow>
+                 </mx:Grid>
+ </mx:Application>
  
 ```
 
@@ -1174,84 +1174,84 @@ The following code example invokes the Customer service and creates a new custom
 This quick start contains a style sheet named* bank.css*. The following code represents the style sheet that is used.
 
 ```as3
- /* CSS file */ 
- global 
- { 
-          backgroundGradientAlphas: 1.0, 1.0; 
-          backgroundGradientColors: #525152,#525152; 
-          borderColor: #424444; 
-          verticalAlign: middle; 
-          color: #FFFFFF; 
-          font-size:12; 
-          font-weight:normal; 
- } 
-  
- ApplicationControlBar 
- { 
-          fillAlphas: 1.0, 1.0; 
-          fillColors: #393839, #393839; 
- } 
-  
- .textField 
- { 
-          backgroundColor: #393839; 
-          background-disabled-color: #636563; 
- } 
-  
-  
- .button 
- { 
-          fillColors: #636563, #424242; 
- } 
-  
- .dropdownMenu 
- { 
-          backgroundColor: #DDDDDD; 
-          fillColors: #636563, #393839; 
-          alternatingItemColors: #888888, #999999; 
- } 
-  
- .questionLabel 
- { 
-      
- } 
-  
- ToolTip  
- { 
-        backgroundColor: black; 
-        backgroundAlpha: 1.0; 
-        cornerRadius: 0; 
-        color: white; 
- } 
-  
- DateChooser  
- { 
-        cornerRadius: 0; /* pixels */ 
-        headerColors: black, black; 
-        borderColor: black; 
-        themeColor: black; 
-        todayColor: red; 
-        todayStyleName: myTodayStyleName; 
-        headerStyleName: myHeaderStyleName; 
-        weekDayStyleName: myWeekDayStyleName; 
-        dropShadowEnabled: true; 
- } 
-  
- .myTodayStyleName  
- { 
-        color: white; 
- } 
-  
- .myWeekDayStyleName  
- { 
-        fontWeight: normal; 
- } 
-  
- .myHeaderStyleName  
- { 
-        color: red; 
-        fontSize: 16; 
-        fontWeight: bold; 
+ /* CSS file */
+ global
+ {
+          backgroundGradientAlphas: 1.0, 1.0;
+          backgroundGradientColors: #525152,#525152;
+          borderColor: #424444;
+          verticalAlign: middle;
+          color: #FFFFFF;
+          font-size:12;
+          font-weight:normal;
+ }
+ 
+ ApplicationControlBar
+ {
+          fillAlphas: 1.0, 1.0;
+          fillColors: #393839, #393839;
+ }
+ 
+ .textField
+ {
+          backgroundColor: #393839;
+          background-disabled-color: #636563;
+ }
+ 
+ 
+ .button
+ {
+          fillColors: #636563, #424242;
+ }
+ 
+ .dropdownMenu
+ {
+          backgroundColor: #DDDDDD;
+          fillColors: #636563, #393839;
+          alternatingItemColors: #888888, #999999;
+ }
+ 
+ .questionLabel
+ {
+ 
+ }
+ 
+ ToolTip
+ {
+        backgroundColor: black;
+        backgroundAlpha: 1.0;
+        cornerRadius: 0;
+        color: white;
+ }
+ 
+ DateChooser
+ {
+        cornerRadius: 0; /* pixels */
+        headerColors: black, black;
+        borderColor: black;
+        themeColor: black;
+        todayColor: red;
+        todayStyleName: myTodayStyleName;
+        headerStyleName: myHeaderStyleName;
+        weekDayStyleName: myWeekDayStyleName;
+        dropShadowEnabled: true;
+ }
+ 
+ .myTodayStyleName
+ {
+        color: white;
+ }
+ 
+ .myWeekDayStyleName
+ {
+        fontWeight: normal;
+ }
+ 
+ .myHeaderStyleName
+ {
+        color: red;
+        fontSize: 16;
+        fontWeight: bold;
  }
 ```
 

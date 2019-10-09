@@ -5,7 +5,7 @@ description: Lists the screen readers supported with HTML5 forms.
 seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 ---
@@ -35,8 +35,8 @@ HTML5 forms support all the default keystrokes and gestures of Voice over. For m
 
 ## Known issues {#known-issues}
 
-* **(Internal Explorer 9 only)** In HTML5 forms, the pages are loaded on demand (dynamically). On-demand page load causes issues with the functioning of screen readers. When focus of the screen reader is on the last field of the page and the user presses tab, instead of setting the focus on the first field of the next page, the screen reader returns focus to the first field of first page of the form. 
-* **(Internal Explorer 9 only)** The Date Picker control in HTML5 forms is not fully accessible with keyboard. In the Date Picker control, if you press Up/Down keys multiple times, the Date Picker control closes and focus moves to next/last field.  
+* **(Internal Explorer 9 only)** In HTML5 forms, the pages are loaded on demand (dynamically). On-demand page load causes issues with the functioning of screen readers. When focus of the screen reader is on the last field of the page and the user presses tab, instead of setting the focus on the first field of the next page, the screen reader returns focus to the first field of first page of the form.
+* **(Internal Explorer 9 only)** The Date Picker control in HTML5 forms is not fully accessible with keyboard. In the Date Picker control, if you press Up/Down keys multiple times, the Date Picker control closes and focus moves to next/last field.
 
 * VoiceOver is unable to detect arrow keys on the date widget on iPad safari.
 

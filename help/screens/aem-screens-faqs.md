@@ -5,7 +5,7 @@ description: Follow this page to get answers to FAQs related to an AEM Screens p
 seo-description: Follow this page to get answers to FAQs related to an AEM Screens project.
 uuid: e394b1bd-1e63-4bd1-b669-923b2a298743
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: troubleshoot
 discoiquuid: 558a7c2f-b32e-428e-89f6-123d72ca1108
@@ -62,7 +62,7 @@ It is recommended to obtain the device ID from the session rather than passed as
 
 Please check for the following possibilities to troubleshoot the blank screen issue:
 
-* AEM is unable to push the Offline Content  
+* AEM is unable to push the Offline Content
 * Channel does not have any content
 * None of the assets are scheduled to show at current time
 
@@ -100,7 +100,7 @@ ChromeOS player can be installed as Chrome Browser plugin in developer mode with
 1. Unzip and save it on disk.
 1. Open Chrome browser and click the 3-dots menu and select **More Tools** --&gt; **Extensions** from the top right corner or directly navigate to ***chrome://extensions***.
 1. Switch on the **Developer mode** from top right corner.
-1. Click on **Load Unpacked **from top left corner and load unzipped Chrome Player.  
+1. Click on **Load Unpacked **from top left corner and load unzipped Chrome Player.
 1. Check **AEM Screens Chrome Player** plugin if is available in the list of extensions.
 1. Open a new tab and click the **Apps** icon from the top left corner, or directly navigate to ***chrome://apps***.
 1. Click on **AEM Screens** Plugin to launch Chrome Player. By default, the player is launched in full screen mode. Press **esc** to exit full screen mode.

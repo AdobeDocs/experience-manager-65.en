@@ -5,7 +5,7 @@ description: Messaging component overview
 seo-description: Messaging component overview
 uuid: 53711f4d-6bbc-4be9-aefe-4e75a81cd67f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
@@ -19,64 +19,64 @@ This page documents the details of working with using the Messaging component to
 
 **Compose Message**
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> <strong>resourceType</strong></td> 
-   <td><p>social/messaging/components/hbs/composemessage</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
-   <td><p>cq.social.hbs.messaging</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>templates</strong></td> 
-   <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td> 
-  </tr> 
-  <tr> 
-   <td><strong>css</strong></td> 
-   <td>/libs/social/messaging/components/hbs/composemessage/clientlibs/composemessage.css</td> 
-  </tr> 
-  <tr> 
-   <td><strong>properties</strong></td> 
-   <td>see <a href="configure-messaging.md">Confiiguring Messaging</a></td> 
-  </tr> 
-  <tr> 
-   <td><strong>admin configuration</strong></td> 
-   <td><a href="messaging.md">Configuring Messaging</a></td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> <strong>resourceType</strong></td>
+   <td><p>social/messaging/components/hbs/composemessage</p> </td>
+  </tr>
+  <tr>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
+   <td><p>cq.social.hbs.messaging</p> </td>
+  </tr>
+  <tr>
+   <td> <strong>templates</strong></td>
+   <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td>
+  </tr>
+  <tr>
+   <td><strong>css</strong></td>
+   <td>/libs/social/messaging/components/hbs/composemessage/clientlibs/composemessage.css</td>
+  </tr>
+  <tr>
+   <td><strong>properties</strong></td>
+   <td>see <a href="configure-messaging.md">Confiiguring Messaging</a></td>
+  </tr>
+  <tr>
+   <td><strong>admin configuration</strong></td>
+   <td><a href="messaging.md">Configuring Messaging</a></td>
+  </tr>
+ </tbody>
 </table>
 
 **Message List** (for Inbox, Sent, and Trash)
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> <strong>resourceType</strong></td> 
-   <td><p>social/messaging/components/hbs/messagebox</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
-   <td><p>cq.social.hbs.messaging</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>templates</strong></td> 
-   <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td> 
-  </tr> 
-  <tr> 
-   <td><strong>css</strong></td> 
-   <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td> 
-  </tr> 
-  <tr> 
-   <td><strong>properties</strong></td> 
-   <td>See <a href="configure-messaging.md">Confiiguring Messaging</a></td> 
-  </tr> 
-  <tr> 
-   <td><strong>admin configuration</strong></td> 
-   <td><a href="messaging.md">Configuring Messaging</a></td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> <strong>resourceType</strong></td>
+   <td><p>social/messaging/components/hbs/messagebox</p> </td>
+  </tr>
+  <tr>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
+   <td><p>cq.social.hbs.messaging</p> </td>
+  </tr>
+  <tr>
+   <td> <strong>templates</strong></td>
+   <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
+  </tr>
+  <tr>
+   <td><strong>css</strong></td>
+   <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td>
+  </tr>
+  <tr>
+   <td><strong>properties</strong></td>
+   <td>See <a href="configure-messaging.md">Confiiguring Messaging</a></td>
+  </tr>
+  <tr>
+   <td><strong>admin configuration</strong></td>
+   <td><a href="messaging.md">Configuring Messaging</a></td>
+  </tr>
+ </tbody>
 </table>
 
 See also [Client-side Customizations](client-customize.md)
@@ -123,7 +123,7 @@ To try the server-side sample script, you will need a development environment an
 1. Create a `bundle node`in `/apps/engage/install` with arbitrary names, such as
 
     * **[!UICONTROL Symbolic Name]**: com.engage.media.social.messaging.MessagingNotification
-    * **[!UICONTROL Name]**: Getting Started Tutorial Message Notificaton 
+    * **[!UICONTROL Name]**: Getting Started Tutorial Message Notificaton
     * **[!UICONTROL Description]**: a sample service for sending an email notification to users when they receive a message
     * **[!UICONTROL Package]**: `com.engage.media.social.messaging.notification`
 
@@ -214,7 +214,7 @@ public class MessagingEventHandler implements EventHandler {
                 Message msg = resource.adaptTo(Message.class);
 
                 //Get list of recipient Ids from message
-                //For Getting Started Tutorial, Id is same as email. If that is not the case in your site, 
+                //For Getting Started Tutorial, Id is same as email. If that is not the case in your site,
                 //an additional step is needed to retrieve the email for the Id
                 List<String> reclist = msg.getRecipientIdList();
                 for(int i=0;i<reclist.size();i++){

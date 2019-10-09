@@ -7,7 +7,7 @@ uuid: d01f430b-9637-4a5f-b3a7-d5ef3e5ecbc5
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
 ---
 
@@ -309,34 +309,34 @@ The following table shows common types of printers and their resolution measured
 >
 >Resampling monochrome images can have unexpected viewing results, such as no image display. If this happens, turn off resampling and convert the file again. This problem is most likely to occur with subsampling, and least likely with bicubic downsampling.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p><strong>Printer resolution</strong></p> </th> 
-   <th><p><strong>Default line screen</strong></p> </th> 
-   <th><p><strong>Image resolution</strong></p> </th> 
-  </tr> 
-  <tr> 
-   <td><p>300 dpi (laser printer)</p> </td> 
-   <td><p>60 lpi</p> </td> 
-   <td><p>120 ppi</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>600 dpi (laser printer)</p> </td> 
-   <td><p>85 lpi</p> </td> 
-   <td><p>170 ppi</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>1200 dpi (imagesetter)</p> </td> 
-   <td><p>120 lpi</p> </td> 
-   <td><p>240 ppi</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>2400 dpi (imagesetter)</p> </td> 
-   <td><p>150 lpi</p> </td> 
-   <td><p>300 ppi</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Printer resolution</strong></p> </th>
+   <th><p><strong>Default line screen</strong></p> </th>
+   <th><p><strong>Image resolution</strong></p> </th>
+  </tr>
+  <tr>
+   <td><p>300 dpi (laser printer)</p> </td>
+   <td><p>60 lpi</p> </td>
+   <td><p>120 ppi</p> </td>
+  </tr>
+  <tr>
+   <td><p>600 dpi (laser printer)</p> </td>
+   <td><p>85 lpi</p> </td>
+   <td><p>170 ppi</p> </td>
+  </tr>
+  <tr>
+   <td><p>1200 dpi (imagesetter)</p> </td>
+   <td><p>120 lpi</p> </td>
+   <td><p>240 ppi</p> </td>
+  </tr>
+  <tr>
+   <td><p>2400 dpi (imagesetter)</p> </td>
+   <td><p>150 lpi</p> </td>
+   <td><p>300 ppi</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Discard Objects {#discard-objects}
@@ -368,7 +368,7 @@ Select **Discard User Data** to remove any personal information that you do not 
 
 ### Clean Up {#clean-up}
 
-Select **Clean Up** to remove unnecessary items from the document.   
+Select **Clean Up** to remove unnecessary items from the document.
 These items include elements that are obsolete or unnecessary for your intended use of the document. Removing certain elements can seriously affect the functionality of the PDF. By default, only elements that do not affect functionality are selected. If you are unsure of the implications of removing other options, use the default selections.
 
 **Compression**
@@ -465,7 +465,7 @@ These options determine how Microsoft Project files are converted. For instructi
 1. **[!UICONTROL **Filename Extensions**:]** Specifies the filename extensions for file types, separated by commas, that are accepted for this application. The default is `mpp`. Do not include a period before or a space between the extensions.
 
 1. **[!UICONTROL Convert Document Information]**: Adds document information from the Properties dialog box of the source file, including title, subject, author, keywords, manager, company, category, and comments. This option is selected by default.
-1. **[!UICONTROL Attach Source File To Adobe PDF]**: Adds the source file to the PDF file as an attachment. 
+1. **[!UICONTROL Attach Source File To Adobe PDF]**: Adds the source file to the PDF file as an attachment.
 1. **[!UICONTROL Create PDF/A-1a Compliant File]**: Forces the use of the PDF/A-1b:2005 RGB Adobe PDF setting.
 1. **[!UICONTROL Run Macros Automatically]**: Runs any macros in the Microsoft Project document (such as a macro that inserts the current time) before converting the document.
 

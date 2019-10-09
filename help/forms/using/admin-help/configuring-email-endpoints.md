@@ -7,7 +7,7 @@ uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 ---
 
@@ -45,7 +45,7 @@ You can configure POP3, IMAP, or SMTP to use Secure Sockets Layer (SSL) for an e
    `keytool -import -file client_certificate -alias myalias -keystore BEA_HOME\jdk150_04\jre\security\cacerts`
 
 1. When prompted, enter the password (for Java, the default password is `changeit`). You will receive a message stating that the certificate was imported successfully.
-1. Use administration console to add the email endpoint to the service. 
+1. Use administration console to add the email endpoint to the service.
 1. Create the email endpoint in administration console. When configuring the endpoint settings, select POP3/IMAP SSL Enabled for incoming messages and SMTP SSL Enabled for outgoing messages, and change the port properties accordingly.
 
 >[!NOTE]
@@ -253,15 +253,15 @@ For forms workflow to receive and handle incoming email messages from users, you
 1. In administration console, click Services &gt; Applications and Services &gt; Service Management.
 1. On the Service Management page, click the Complete Task service.
 1. On the Endpoints tab, select Email from the drop-down list and click Add.
-1. In the Inbox Host box, type the host name or IP address of the mail server. 
-1. In the Inbox User box, type the user name required to log in to the email account that you created to handle form submissions. Depending on the email server and configuration, this name may be only the user name portion of the email or it may be the full email address. 
+1. In the Inbox Host box, type the host name or IP address of the mail server.
+1. In the Inbox User box, type the user name required to log in to the email account that you created to handle form submissions. Depending on the email server and configuration, this name may be only the user name portion of the email or it may be the full email address.
 1. In the Inbox Password box, type the password for the Inbox User.
 1. In the SMTP Host box, type the host name or IP address of the mail server from which the email provider sends results and error messages.
-1. In the SMTP User box, type the user account for the email provider to use when it sends out email for results and errors. This user account can be the same value you used for Inbox User. 
-1. In the SMTP Password box, type the password for the SMTP account. 
-1. In the Operation Name list, select invoke. 
-1. In the attachmentMap list, select Variable and type `*.*` in the adjacent box. This sends all attachments from the inbound mail messages to a map variable for the Complete Task process. 
-1. In the mailBody list, select variable and type `%BODY%` in the adjacent box. 
+1. In the SMTP User box, type the user account for the email provider to use when it sends out email for results and errors. This user account can be the same value you used for Inbox User.
+1. In the SMTP Password box, type the password for the SMTP account.
+1. In the Operation Name list, select invoke.
+1. In the attachmentMap list, select Variable and type `*.*` in the adjacent box. This sends all attachments from the inbound mail messages to a map variable for the Complete Task process.
+1. In the mailBody list, select variable and type `%BODY%` in the adjacent box.
 1. In the mailFrom list, select Variable and type `%SENDER%` in the adjacent box. This maps the sender address to the Complete Task process data.
 1. In the results box, type `results`. This causes the Complete Task or Start Process to return a result string.
 1. Click Add.

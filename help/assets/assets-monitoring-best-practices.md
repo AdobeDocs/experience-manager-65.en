@@ -5,7 +5,7 @@ description: Best practices for monitoring the environment and performance of yo
 seo-description: Best practices for monitoring the environment and performance of your AEM instance after it is deployed.
 uuid: 8cbccf5e-7637-428f-83a8-87c099a3dc7e
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: ef2c875d-af39-40eb-8bee-5a381366bd65
@@ -50,7 +50,7 @@ Typically, you use these tools together to obtain a comprehensive idea about the
 >
 >These tools are standard tools and not directly supported by Adobe. They don’t require additional licenses.
 
-![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png) 
+![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## Long Term Monitoring {#long-term-monitoring}
 
@@ -192,7 +192,7 @@ In the process of monitoring, if you encounter issues, here are some troubleshoo
 * Check `OutOfMemoryError` logs. For more information, see [Analyze memory problems](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 * Check the logs for any references to unindexed queries, tree traversals, or index traversals. These indicate unindexed queries or inadequately indexed queries. For For best practices on optimizing query and indexing performance, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
-* Use the workflow console to verify that your workflows perform as expected. If possible, condense multiple workflows into a single workflow. 
+* Use the workflow console to verify that your workflows perform as expected. If possible, condense multiple workflows into a single workflow.
 * Revisit live monitoring, and look for additional bottlenecks or high consumers of any specific resources.
 * Investigate the egress points from the client network and the ingress points to the AEM instance network, including the dispatcher. Frequently, these are bottleneck areas. For more information, see [Assets network considerations](assets-network-considerations.md).
 * Upsize your AEM server. You may have an inadequately sized your AEM instance. Adobe Support can help you identify whether your server is undersized.

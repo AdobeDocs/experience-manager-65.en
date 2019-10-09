@@ -5,7 +5,7 @@ description: AEM Forms provides tools to manage Adaptive Forms and related asset
 seo-description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 topic-tags: introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
@@ -13,10 +13,10 @@ discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 
 # Introduction to managing forms {#introduction-to-managing-forms}
 
-AEM Forms provides simplified yet powerful user interface to create and manage forms, documents, themes, letters, document fragments, data dictionaries, and related assets. It helps manage the complete lifecycle of forms, documents, and related assets - from a developer's desktop to offering  
+AEM Forms provides simplified yet powerful user interface to create and manage forms, documents, themes, letters, document fragments, data dictionaries, and related assets. It helps manage the complete lifecycle of forms, documents, and related assets - from a developer's desktop to offering
 it on a portal server for end users. You can use the AEM Forms user interface to:
 
-* Access AEM Forms components  
+* Access AEM Forms components
 * Access AEM Forms configurations
 
 >[!NOTE]
@@ -27,13 +27,13 @@ it on a portal server for end users. You can use the AEM Forms user interface to
 
 Along with options to create forms, documents, and related assets, AEM provides options to create sites, assets, manage an AEM instance, and more. You can click the ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager logo to navigate to all the available tools. Along with links to the consoles of other components, it also contains links for AEM Forms . To navigate to AEM Forms, click the **Experience Manager logo** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) &gt; **navigation** ![compass](assets/compass.png) &gt; **Forms**. Links of the following consoles are displayed:
 
-* Forms & Documents  
-* Themes  
+* Forms & Documents
+* Themes
 * Letters
 * Document Fragments
 * Data Dictionaries
 
-![aem-forms-console](assets/aem-forms-console.png) 
+![aem-forms-console](assets/aem-forms-console.png)
 
 ### Forms & Documents  {#forms-documents}
 
@@ -90,7 +90,7 @@ For information about creating and using data dictionaries, see creating [data d
 
 AEM tools panel contains tools for various components. To navigate to AEM Forms-specific tools, click the **Experience Manager logo** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) &gt; **tools** ![hammer](assets/hammer.png) &gt; **Forms**. Tools to perform the following functions are displayed:
 
-* **Configure Watched Folder:** An administrator can configure a network folder, known as a watched folder, so that when a user places a file (such as a PDF file) in the watched folder, a pre-configured operation is started and manipulates the file. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->  
+* **Configure Watched Folder:** An administrator can configure a network folder, known as a watched folder, so that when a user places a file (such as a PDF file) in the watched folder, a pre-configured operation is started and manipulates the file. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
 
 * **Configure Forms App Offline Service:** The AEM Forms app offline service caches the paths or URLs of the resources used in a form. Caching paths or URLs of the resources used in a form improves server-side performance. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
 
@@ -108,8 +108,8 @@ AEM tools panel contains tools for various components. To navigate to AEM Forms-
     * **References:** An AEM Forms asset can be used in multiple AEM Forms assets. For example, a document fragment can be used in multiple letters. References is a list of assets (other forms or resources) that the selected asset is used in and also the list of other assets that the selected asset is using.
 
 * **Breadcrumbs:** A Breadcrumb represents the title of the current console or folder. You can click the Breadcrumb option to navigate between the level of folders that are higher in hierarchy.
-* **View Switcher:** You can click the View Switcher icon ![viewlist](assets/viewlist.png) or ![viewcard](assets/viewcard.png) to quickly switch between list and card view. For more information about common user interface components, see [Working with the Author Environment](/help/sites-authoring/basic-handling.md).  
-* **Search:** The search option ![search](assets/search.png) provides capability to quickly find and jump to the content and tools you need. Type the name of content or product capability and select from the suggestions, for example, type "Documents" to quickly find and navigate to Forms & Documents or Document Fragments console. For more information about search, see AEM 6.2 [search](/help/sites-authoring/search.md) article  
+* **View Switcher:** You can click the View Switcher icon ![viewlist](assets/viewlist.png) or ![viewcard](assets/viewcard.png) to quickly switch between list and card view. For more information about common user interface components, see [Working with the Author Environment](/help/sites-authoring/basic-handling.md).
+* **Search:** The search option ![search](assets/search.png) provides capability to quickly find and jump to the content and tools you need. Type the name of content or product capability and select from the suggestions, for example, type "Documents" to quickly find and navigate to Forms & Documents or Document Fragments console. For more information about search, see AEM 6.2 [search](/help/sites-authoring/search.md) article
 * **Actions toolbar**: On selecting an asset, the actions toolbar appears above the list of assets. It contains all the management tools for the selected asset. You can hover over a tool icon to view the tool tip describing its functionality
 
 >[!NOTE]

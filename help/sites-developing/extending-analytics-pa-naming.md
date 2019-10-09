@@ -5,7 +5,7 @@ description: Adobe Analytics uses the s.pageName property to uniquely identify p
 seo-description: Adobe Analytics uses the s.pageName property to uniquely identify pages and to associate the data that is collected for the pages
 uuid: 37b92099-0cce-4b2d-b55c-928f636dbd7e
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
@@ -61,7 +61,7 @@ To ensure reporting continuity, the value of `s.pageName` should have the follow
 For example, a custom pag component can include a page property that authors use to specify a unique ID for the page that is used as the value for the `s.pageProperties` property:
 
 * The page includes an analytics variable that is set to the value of the unique ID that is stored in the page property.
-* The analytics variable is mapped to the `s.pageProperties` property in the Analytics framework. 
+* The analytics variable is mapped to the `s.pageProperties` property in the Analytics framework.
 * Your implementation of the AnalytcsPageNameProvider interface retrieves the value of the page property to use for querying the page Analytics data.
 
 >[!NOTE]
@@ -85,7 +85,7 @@ Both methods take a `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext`
 * The `Resource` object for the page.
 * The `ResourceResolver` object for the page.
 
-The class also provides a setter for the page name.  
+The class also provides a setter for the page name.
 
 ### Example AnalyticsPageNameProvider Implementation {#example-analyticspagenameprovider-implementation}
 
@@ -96,7 +96,7 @@ The following example `AnalyticsPageNameProvider` implementation supports a cust
 * The property value is stored in the pageName property of the `jcr:content`node of the page instances.
 * The analytics property that stores the `s.pageName` property is called `pagedata.pagename`. This property is mapped to the `s.pageName` property in the Analytics framework.
 
-The following implementation of the `getPageName` method returns the value of the pageName node property if the framework mapping is configured correctly:  
+The following implementation of the `getPageName` method returns the value of the pageName node property if the framework mapping is configured correctly:
 
 ```java
 public String getPageName(AnalyticsPageNameContext context) {
@@ -128,7 +128,7 @@ The following implementation of the getResource method returns the Resource obje
         String basePath = context.getBasePath();
 
         if (pageName != null && basePath != null && resolver != null
-                && framework != null && framework.mapsSCVariable(S_PAGE_NAME)) { 
+                && framework != null && framework.mapsSCVariable(S_PAGE_NAME)) {
             String cqVar = framework.getMapping(S_PAGE_NAME);
             if (cqVar.equals("pagedata.pagename")) {
              Iterator<Resource>
@@ -170,11 +170,11 @@ The following code represents the entire class, including SCR annotations that c
  * from Adobe Systems Incorporated.
  **************************************************************************/
 package com.day.cq.analytics.sitecatalyst;
- 
+
 import java.util.Iterator;
- 
+
 import javax.jcr.query.Query;
- 
+
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.osgi.framework.Constants;
@@ -184,9 +184,9 @@ import com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext;
 import com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider;
 import com.day.cq.analytics.sitecatalyst.Framework;
 import com.day.cq.wcm.api.Page;
- 
+
 import static com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext.S_PAGE_NAME;
- 
+
 /**
  * Default implementation of {@link AnalyticsPageNameProvider} that resolves
  * page title, path or navTitle if mapped in {@link Framework}.
@@ -197,7 +197,7 @@ import static com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext.S_PAGE_
         Constants.SERVICE_DESCRIPTION + "=Example Page Name Resolver implementation",
         Constants.SERVICE_RANKING + ":Integer=200"
     }
-) 
+)
 public class ExamplePageNameProvider implements AnalyticsPageNameProvider {
     public String getPageName(AnalyticsPageNameContext context) {
         String pageName = null;
@@ -214,7 +214,7 @@ public class ExamplePageNameProvider implements AnalyticsPageNameProvider {
         }
         return pageName;
     }
- 
+
     public Resource getResource(AnalyticsPageNameContext context) {
         Resource res = null;
 
@@ -224,7 +224,7 @@ public class ExamplePageNameProvider implements AnalyticsPageNameProvider {
         String basePath = context.getBasePath();
 
         if (pageName != null && basePath != null && resolver != null
-                && framework != null && framework.mapsSCVariable(S_PAGE_NAME)) { 
+                && framework != null && framework.mapsSCVariable(S_PAGE_NAME)) {
             String cqVar = framework.getMapping(S_PAGE_NAME);
             if (cqVar.equals("pagedata.pagename")) {
                 Iterator<Resource>
@@ -237,7 +237,7 @@ public class ExamplePageNameProvider implements AnalyticsPageNameProvider {
         }
         return res;
     }
- 
+
     private String createQuery(String pageName, String basePath, String propName) {
         return "SELECT * FROM [cq:PageContent] WHERE ISDESCENDANTNODE(["
                 + basePath + "]) and [" + propName + "] = \"" + pageName + "\"";

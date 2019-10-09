@@ -5,7 +5,7 @@ description: The Websites console allows you to manage and navigate your website
 seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
 uuid: ec4ccc63-a3b8-464c-9c1a-204fd5d3b121
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
@@ -19,7 +19,7 @@ The authoring environment of AEM provides various mechanisms for organizing and 
 
 The **Websites** console allows you to manage and navigate your website. Using the two panes the structure of your website can be expanded and actions taken on the required element:
 
-![chlimage_1-153](assets/chlimage_1-153.png) 
+![chlimage_1-153](assets/chlimage_1-153.png)
 
 ## Editing your Page Content {#editing-your-page-content}
 
@@ -27,7 +27,7 @@ There is a separate page editor with the classic UI, using the content finder an
 
 `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-![chlimage_1-154](assets/chlimage_1-154.png) 
+![chlimage_1-154](assets/chlimage_1-154.png)
 
 ## Accessing Help {#accessing-help}
 
@@ -43,7 +43,7 @@ Or by using the **Help** button in the edit dialog of specific components; this 
 
 The **Components** tab of the sidekick allows you to browse the components available to be added to the current page. The required group can be expanded, then a component dragged to the required location on the page.
 
-![chlimage_1-155](assets/chlimage_1-155.png) 
+![chlimage_1-155](assets/chlimage_1-155.png)
 
 ## The Content Finder {#the-content-finder}
 
@@ -55,7 +55,7 @@ You can use the content finder to locate a range of resources. Where appropriate
 * [Documents](#finding-documents)
 * [Movies](#finding-movies)
 * [Scene 7 Media Browser](/help/sites-administering/scene7.md#scene7contentbrowser)
-* [Pages](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)  
+* [Pages](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 * [Paragraphs](#referencing-paragraphs-from-other-pages)
 * [Products](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
 * Or to [browse the website by repository structure](#the-content-finder)
@@ -68,7 +68,7 @@ This tab lists any images in the repository.
 
 After you have created an Image paragraph on your page, you can drag an item and drop it into the paragraph.
 
-![chlimage_1-156](assets/chlimage_1-156.png) 
+![chlimage_1-156](assets/chlimage_1-156.png)
 
 ### Finding Documents {#finding-documents}
 
@@ -76,7 +76,7 @@ This tab lists any documents in the repository.
 
 After you have created a Download paragraph on your page, you can drag an item and drop it into the paragraph.
 
-![chlimage_1-157](assets/chlimage_1-157.png) 
+![chlimage_1-157](assets/chlimage_1-157.png)
 
 ### Finding Movies {#finding-movies}
 
@@ -84,31 +84,31 @@ This tab lists any movies (for example, Flash items) in the repository.
 
 After you have created an appropriate paragraph (for example, Flash) on your page, you can drag an item and drop it into the paragraph.
 
-![chlimage_1-158](assets/chlimage_1-158.png) 
+![chlimage_1-158](assets/chlimage_1-158.png)
 
 ### Products {#products}
 
 This tab lists any products. After you have created an appropriate paragraph (for example, Product) on your page, you can drag an item and drop it into the paragraph.
 
-![chlimage_1-159](assets/chlimage_1-159.png) 
+![chlimage_1-159](assets/chlimage_1-159.png)
 
 ### Finding Pages {#finding-pages}
 
 This tab shows all pages. Double-click any page to open it for editing.
 
-![chlimage_1-160](assets/chlimage_1-160.png) 
+![chlimage_1-160](assets/chlimage_1-160.png)
 
 ### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
 
 This tab allows you to search for another page. All paragraphs from that page will be listed. You can then drag a paragraph to your current page, this will create a reference to the original paragraph.
 
-![chlimage_1-161](assets/chlimage_1-161.png) 
+![chlimage_1-161](assets/chlimage_1-161.png)
 
 ### Using the Full Repository View {#using-the-full-repository-view}
 
 This tab shows all the resources in the repository.
 
-![chlimage_1-162](assets/chlimage_1-162.png) 
+![chlimage_1-162](assets/chlimage_1-162.png)
 
 ### Using Search with the Content Browser {#using-search-with-the-content-browser}
 
@@ -118,7 +118,7 @@ On all options you can search for specific items. Any tags and any resources tha
 
 You can also use wildcards for search. Supported wildcards are:
 
-* `*` - matches a sequence of zero or more characters.  
+* `*` - matches a sequence of zero or more characters.
 
 * `?` - matches a single character.
 
@@ -157,7 +157,7 @@ To show direct page references:
 In certain situations further actions are available from Sidekick, including:
 
 * [Launches](/help/sites-classic-ui-authoring/classic-launches.md)
-* [Live Copies](/help/sites-administering/msm.md)  
+* [Live Copies](/help/sites-administering/msm.md)
 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 
@@ -167,7 +167,7 @@ Other [inter-page relationships can be seen in the Websites console](/help/sites
 
 The **Audit Log** can be accessed from the **Information** tab of the sidekick. It lists the recent actions taken on the current page; for example:
 
-![chlimage_1-163](assets/chlimage_1-163.png) 
+![chlimage_1-163](assets/chlimage_1-163.png)
 
 ## Page Information {#page-information}
 
@@ -181,26 +181,26 @@ When editing a page with the classic UI there are various modes that can be acce
 
 The row of icons at the bottom of the Sidekick are used to switch modes for working with the pages:
 
-* [Edit](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md) 
+* [Edit](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
   This is the default mode and allows you to edit the page, adding or deleting components and making other changes.
 
-* [Preview](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) 
+* [Preview](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
 
   This mode allows you to preview the page as if it were appearing on your website in its final form.
 
-* [Design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0) 
+* [Design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 
   In this mode, you have the possibility to edit the design of the page by configuring the components accessible.
 
 >[!NOTE]
 >
->Other options are also available:  
+>Other options are also available:
 >
 >* [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [Client Context](/help/sites-administering/client-context.md)
 >* Websites - will open the Websites console.
->* Reload - will refresh the page.  
+>* Reload - will refresh the page.
 
 ## Keyboard Shortcuts {#keyboard-shortcuts}
 

@@ -5,7 +5,7 @@ description: Learn about user synchronization in AEM.
 seo-description: Learn about user synchronization in AEM.
 uuid: 0c7c35a3-9fed-4d48-8bd5-7f4382bf5fa3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
@@ -85,7 +85,7 @@ Following are the steps necessary to enable user synchronization, followed by a 
 
     * locate `Apache Sling Distribution Agent - Sync Agents Factory`
 
-        * select the existing configuration to open for edit (pencil icon) 
+        * select the existing configuration to open for edit (pencil icon)
 
           Verify `name`: **`socialpubsync`**
 
@@ -97,7 +97,7 @@ Following are the steps necessary to enable user synchronization, followed by a 
 
 ### 2. Create Authorized User {#createauthuser}
 
-**Configure permissions** 
+**Configure permissions**
 This authorized user will be used in step 3 to configure Sling distribution on author.
 
 * **on each publish instance**
@@ -163,7 +163,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
         * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
     * locate `Adobe Granite Distribution - Encrypted Password Transport Secret Provider`
-    * select the existing configuration to open for edit (pencil icon) 
+    * select the existing configuration to open for edit (pencil icon)
 
       Verify `property name` : **`socialpubsync-publishUser`**
 
@@ -186,7 +186,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
 
     * locate `Apache Sling Distribution Agent - Queue Agents Factory`
 
-        * select the existing configuration to open for edit (pencil icon) 
+        * select the existing configuration to open for edit (pencil icon)
 
           Verify `Name` : `socialpubsync-reverse`
 
@@ -210,7 +210,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
 
     * locate `Adobe Granite Distribution - Diff Observer Factory`
 
-        * select the existing configuration to open for edit (pencil icon) 
+        * select the existing configuration to open for edit (pencil icon)
 
           Verify `agent name` : `socialpubsync-reverse`
 
@@ -260,19 +260,19 @@ The default configuration is for a single publish instance. As the reason for en
 
     * locate `Apache Sling Distribution Agent - Sync Agents Factory`
 
-        * select the existing configuration to open for edit (pencil icon) 
+        * select the existing configuration to open for edit (pencil icon)
 
           Verify `Name` : `socialpubsync`
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
-* **Exporter Endpoints** 
+* **Exporter Endpoints**
   There should be an exporter endpoint for each publisher. For example, if there are 2 publishers, localhost:4503 and 4504, there should be 2 entries:
 
     * http://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse
     * http://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse
 
-* **Importer Endpoints** 
+* **Importer Endpoints**
   There should be an importer endpoint for each publisher. For example, if there are 2 publishers, localhost:4503 and 4504, there should be 2 entries:
 
     * http://localhost:4503/libs/sling/distribution/services/importers/socialpubsync
@@ -294,15 +294,15 @@ If there is custom data that is desired to be synchronized across multiple publi
         * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
     * locate `AEM Communities User Sync Listener`
-    * select the existing configuration to open for edit (pencil icon) 
+    * select the existing configuration to open for edit (pencil icon)
 
       Verify `Name`: `socialpubsync-scheduled-trigger`
 
 ![chlimage_1-394](assets/chlimage_1-394.png)
 
-* **Node Types** 
+* **Node Types**
 
-  This is the list of node types that will synchronize. Any node type other than sling:Folder needs to be listed here (sling:folder is handled separately). 
+  This is the list of node types that will synchronize. Any node type other than sling:Folder needs to be listed here (sling:folder is handled separately).
 
   Default list of node types to synchronize:
 
@@ -312,13 +312,13 @@ If there is custom data that is desired to be synchronized across multiple publi
 
 * **Ignorable Properties**
 
-  This is the list of properties that will be ignored if any change is detected. Changes to these properties might get synchronized as a side effect of other changes (since synchronization is always at the node level), but changes to these properties will not by themselves trigger synchronization. 
+  This is the list of properties that will be ignored if any change is detected. Changes to these properties might get synchronized as a side effect of other changes (since synchronization is always at the node level), but changes to these properties will not by themselves trigger synchronization.
 
   Default property to ignore:
 
     * cq:lastModified
 
-* **Ignorable Nodes** 
+* **Ignorable Nodes**
 
   Subpaths that will be entirely ignored during synchronization. Nothing under these subpaths will be synchronized at any time.
 
@@ -327,9 +327,9 @@ If there is custom data that is desired to be synchronized across multiple publi
     * .tokens
     * system
 
-* **Distributed Folders** 
+* **Distributed Folders**
 
-  Most sling:Folders are ignored because synchronization is not necessary. The few exceptions are listed here. 
+  Most sling:Folders are ignored because synchronization is not necessary. The few exceptions are listed here.
 
   Default folders to synchronize
 
@@ -359,11 +359,11 @@ If the Sling ID of a publish instance matches the Sling ID of any other publish 
 
     * search for and delete the file named *sling.id.file*
 
-        * for example, on a Linux system: 
+        * for example, on a Linux system:
 
           `rm -i $(find . -type f -name sling.id.file)`
 
-        * for example, on a Windows system: 
+        * for example, on a Windows system:
 
           `use windows explorer and search for *sling.id.file*`
 

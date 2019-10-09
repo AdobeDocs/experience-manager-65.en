@@ -5,7 +5,7 @@ description: A tutorial on getting started with AEM Communities
 seo-description: A tutorial on getting started with AEM Communities
 uuid: 6aeb8253-f85f-4812-9985-8fbc83006078
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 4f4c73eb-281e-4dfb-9cb0-2341d5ee94ae

@@ -5,7 +5,7 @@ description: AEM provides you with the capability to configure your account and 
 seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: 01e76771-9ac8-4919-9e50-0a63826177d1
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
@@ -79,10 +79,10 @@ Each user can set certain properties for himself or herself.
   This option defines how dates in the system are displayed. The following options are available:
 
     * **Always show exact date**: The exact date is always displayed (never a relative date).
-    * **1 Day**: The relative date is shown for dates within one day, otherwise an exact date is shown. 
-    * **7 Days (default)**: The relative date is shown for dates within seven days, otherwise an exact date is shown. 
-    * **1 Month**: The relative date is shown for dates within one month, otherwise an exact date is shown. 
-    * **1 Year**: The relative date is shown for dates within one year, otherwise an exact date is shown. 
+    * **1 Day**: The relative date is shown for dates within one day, otherwise an exact date is shown.
+    * **7 Days (default)**: The relative date is shown for dates within seven days, otherwise an exact date is shown.
+    * **1 Month**: The relative date is shown for dates within one month, otherwise an exact date is shown.
+    * **1 Year**: The relative date is shown for dates within one year, otherwise an exact date is shown.
     * **Always show relative date**: Exact dates are never shown and only relative dates are shown.
 
 * **Enable Shortcuts**

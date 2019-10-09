@@ -5,7 +5,7 @@ description: The Client Context represents a dynamically assembled collection of
 seo-description: The Client Context represents a dynamically assembled collection of user data
 uuid: 31cfcfd0-14f3-4777-ae85-45eb352756d0
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 7b97fc27-30de-4ef9-9efe-673aec50cff2
@@ -33,7 +33,7 @@ For information about opening Client Context, configuring the information that i
 
 The Client Context includes various session stores that contain user data. Store data comes from the following sources:
 
-* The client web browser.  
+* The client web browser.
 * The server (see [JSONP Store](/help/sites-administering/client-context.md) for storing information from 3rd-party sources)
 
 The Client Context framework provides a [javascript API](/help/sites-developing/ccjsapi.md) that you can use to interact with session stores to read and write user data, and listen and react to store events. You can also create session stores for user data that you use for content targeting or other purposes.
@@ -83,7 +83,7 @@ For a description of the installed Context Store Components that you can add to 
 
 Profile information is also used for delivering [targeted content](/help/sites-authoring/content-targeting-touch.md).
 
-![clientcontext_targetedcontentdelivery](assets/clientcontext_targetedcontentdelivery.png) ![clientcontext_targetedcontentdeliverydetail](assets/clientcontext_targetedcontentdeliverydetail.png) 
+![clientcontext_targetedcontentdelivery](assets/clientcontext_targetedcontentdelivery.png) ![clientcontext_targetedcontentdeliverydetail](assets/clientcontext_targetedcontentdeliverydetail.png)
 
 ## Adding Client Context To A Page {#adding-client-context-to-a-page}
 
@@ -191,7 +191,7 @@ AEM provides the genericstore and the genericstoreproperties context store compo
     * `@param {String} store`
 
       The store to render
-  
+
     * `@param {String} divId`
 
       Id of the div into which the store has to be rendered.
@@ -271,16 +271,16 @@ The personalization.ui client library folder (/etc/clientlibs/foundation/persona
    </div>
    <div class="cq-cc-content">
        <div class="cq-cc-store-property cq-cc-store-property-level0">
-           <!-- personalization:storePropertyTag for a store property goes here --> 
+           <!-- personalization:storePropertyTag for a store property goes here -->
        </div>
        <div class="cq-cc-store-property cq-cc-store-property-level1">
-           <!-- personalization:storePropertyTag for a store property goes here --> 
+           <!-- personalization:storePropertyTag for a store property goes here -->
        </div>
        <div class="cq-cc-store-property cq-cc-store-property-level2">
-           <!-- personalization:storePropertyTag for a store property goes here --> 
+           <!-- personalization:storePropertyTag for a store property goes here -->
        </div>
        <div class="cq-cc-store-property cq-cc-store-property-level3">
-           <!-- personalization:storePropertyTag for a store property goes here --> 
+           <!-- personalization:storePropertyTag for a store property goes here -->
        </div>
    </div>
    <div class="cq-cc-clear"></div>
@@ -292,7 +292,7 @@ The `/libs/cq/personalization/components/contextstores/profiledata` context stor
 * level0, level1, and level2 are distributed vertically, and use a white font.
 * level3, and any additional levels, are distributed horizontally, and use a white font with a darker background.
 
-![chlimage_1-222](assets/chlimage_1-222.png) 
+![chlimage_1-222](assets/chlimage_1-222.png)
 
 ### Rendering Session Store Data for genericstore Components {#rendering-session-store-data-for-genericstore-components}
 
@@ -345,7 +345,7 @@ function getName(){
    } else {
       return null;
    }
-} 
+}
 ```
 
 ### Creating a Listener to react to a Session Store Update {#creating-a-listener-to-react-to-a-session-store-update}
@@ -422,7 +422,7 @@ See [`CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)`](/help/s
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
-  //this will exclude the browser, OS and resolution properties of the surferinfo session store from the 
+  //this will exclude the browser, OS and resolution properties of the surferinfo session store from the
   store.setNonPersisted("browser");
   store.setNonPersisted("OS");
   store.setNonPersisted("resolution");
@@ -440,7 +440,7 @@ The current page must have a corresponding mobile page; this is determined only 
 When switching from the desktop page to its mobile equivalent:
 
 * The DOM of the mobile page is loaded.
-* The main `div` (required) that contains the content, is extracted and injected into the current desktop page.  
+* The main `div` (required) that contains the content, is extracted and injected into the current desktop page.
 
 * The CSS and body classes that need to be loaded need to be manually configured.
 
@@ -452,23 +452,23 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
   DESKTOP_CSS: [
     "/etc/designs/${app}/clientlibs_desktop_v1.css"
   ],
-  
+
   //CSS used by mobile that need to be removed when desktop
   MOBILE_CSS: [
     "/etc/designs/${app}/clientlibs_mobile_v1.css"
   ],
-  
+
   //id of the content that needs to be removed when mobile
   DESKTOP_MAIN_ID: "main",
-  
+
   //id of the content that needs to be removed when desktop
   MOBILE_MAIN_ID: "main",
-  
+
   //body classes used by desktop that need to be removed when mobile
   DESKTOP_BODY_CLASS: [
     "page"
   ],
-  
+
   //body classes used by mobile that need to be removed when desktop
   MOBILE_BODY_CLASS: [
     "page-mobile"
@@ -546,7 +546,7 @@ The init.js.jsp file is executed when the Client Context is loaded by the page. 
    log.info("***** initializing geolocstore ****");
    String store = "locstore";
    String jsonpurl = "https://api.wipmania.com/jsonp?callback=${callback}";
-   
+
    %>
    var locstore = CQ_Analytics.StoreRegistry.getStore("<%= store %>");
    if(!locstore){
@@ -569,19 +569,19 @@ Add the code to the JSP file of the geoloc component to render the store data in
    <div class="cq-cc-store">
       <div class="cq-cc-content">
           <div class="cq-cc-store-property cq-cc-store-property-level0">
-              Continent: <personalization:storePropertyTag propertyName="address/continent" store="locstore"/> 
+              Continent: <personalization:storePropertyTag propertyName="address/continent" store="locstore"/>
           </div>
           <div class="cq-cc-store-property cq-cc-store-property-level1">
-              Country: <personalization:storePropertyTag propertyName="address/country" store="locstore"/> 
+              Country: <personalization:storePropertyTag propertyName="address/country" store="locstore"/>
           </div>
           <div class="cq-cc-store-property cq-cc-store-property-level2">
-              City: <personalization:storePropertyTag propertyName="address/city" store="locstore"/> 
+              City: <personalization:storePropertyTag propertyName="address/city" store="locstore"/>
           </div>
           <div class="cq-cc-store-property cq-cc-store-property-level3">
-              Latitude: <personalization:storePropertyTag propertyName="latitude" store="locstore"/> 
+              Latitude: <personalization:storePropertyTag propertyName="latitude" store="locstore"/>
           </div>
           <div class="cq-cc-store-property cq-cc-store-property-level4">
-              Longitude: <personalization:storePropertyTag propertyName="longitude" store="locstore"/> 
+              Longitude: <personalization:storePropertyTag propertyName="longitude" store="locstore"/>
           </div>
       </div>
        <div class="cq-cc-clear"></div>
@@ -617,17 +617,17 @@ To create a second client context you need to duplicate the branch:
 
 * The subfolder:
 
-  `/content` 
+  `/content`
 
   will contain the content of the customized client context.
 
-* The folder: 
+* The folder:
 
-  `/contextstores` 
-  
+  `/contextstores`
+
   allows you to define different configurations for the context stores.
 
-To use your customized client context, edit the property  
-`path`  
-in the design style of the client context component, as included in the page template. For example, as the standard location of:  
-`/libs/cq/personalization/components/clientcontext/design_dialog/items/path` 
+To use your customized client context, edit the property
+`path`
+in the design style of the client context component, as included in the page template. For example, as the standard location of:
+`/libs/cq/personalization/components/clientcontext/design_dialog/items/path`

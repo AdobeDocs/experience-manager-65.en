@@ -5,7 +5,7 @@ description: Set up AEM Communities to use a relational database as its common s
 seo-description: Set up AEM Communities to use a relational database as its common store
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
@@ -62,31 +62,31 @@ On author, to access the Storage Configuration console
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Database Configuration**
 
-    * **[!UICONTROL JDBC datasource name]** 
+    * **[!UICONTROL JDBC datasource name]**
 
-      Name given to MySQL connection must be the same as entered in [JDBC OSGi configuration](dsrp-mysql.md#configurejdbcconnections)  
+      Name given to MySQL connection must be the same as entered in [JDBC OSGi configuration](dsrp-mysql.md#configurejdbcconnections)
 
       *default*: communities
-  
-    * **[!UICONTROL Database name]** 
 
-      Name given to schema in [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script 
+    * **[!UICONTROL Database name]**
+
+      Name given to schema in [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
       *default*: communities
 
 * **SolrConfiguration**
 
-    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host** 
-  
-      Leave this value blank if running Solr using the internal ZooKeeper. Else, when running in [SolrCloud mode](solr.md#solrcloud-mode) with an external ZooKeeper, set this value to the URI for the ZooKeeper, such as *my.server.com:80* 
-  
+    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
+
+      Leave this value blank if running Solr using the internal ZooKeeper. Else, when running in [SolrCloud mode](solr.md#solrcloud-mode) with an external ZooKeeper, set this value to the URI for the ZooKeeper, such as *my.server.com:80*
+
       *default*: *&lt;blank&gt;*
-  
-    * **[!UICONTROL Solr URL]** 
+
+    * **[!UICONTROL Solr URL]**
 
       *default*: https://127.0.0.1:8983/solr/
-  
-    * **[!UICONTROL Solr Collection]** 
+
+    * **[!UICONTROL Solr Collection]**
 
       *default*: collection1
 

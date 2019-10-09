@@ -7,7 +7,7 @@ uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 ---
@@ -31,35 +31,35 @@ The following diagram shows the application’s logic flow.
 
 The following table describes the steps in this diagram.
 
-<table> 
+<table>
  <thead>
-  <tr> 
-   <th><p>Step</p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
+  <tr>
+   <th><p>Step</p></th>
+   <th><p>Description</p></th>
+  </tr>
  </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>The <code>GetLoanForm</code> Java Servlet is invoked from the HTML start page. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>The <code>GetLoanForm</code> Java Servlet uses the Forms service Client API to render the loan form to the client web browser. The difference between rendering a form that contains a script configured to run on the server and rendering a form that does not contain a script is that you must specify the target location used to execute the script. If a target location is not specified, a script that is configured to run on the server is not executed. For example, consider the application introduced in this section. The <code>CalculateData</code> Java Servlet is the target location where the script is executed.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>The user enters data into interactive fields and clicks the Calculate button. The form is sent to the <code>CalculateData</code> Java Servlet, where the script is executed. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>4</p></td> 
-   <td><p>The form is rendered back to the web browser with the calculation results displayed in the form. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>5</p></td> 
-   <td><p>The user clicks the Submit button when the values are satisfactory. The form is sent to another Java Servlet named <code>ProcessForm</code>.</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>The <code>GetLoanForm</code> Java Servlet is invoked from the HTML start page. </p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>The <code>GetLoanForm</code> Java Servlet uses the Forms service Client API to render the loan form to the client web browser. The difference between rendering a form that contains a script configured to run on the server and rendering a form that does not contain a script is that you must specify the target location used to execute the script. If a target location is not specified, a script that is configured to run on the server is not executed. For example, consider the application introduced in this section. The <code>CalculateData</code> Java Servlet is the target location where the script is executed.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>The user enters data into interactive fields and clicks the Calculate button. The form is sent to the <code>CalculateData</code> Java Servlet, where the script is executed. </p></td>
+  </tr>
+  <tr>
+   <td><p>4</p></td>
+   <td><p>The form is rendered back to the web browser with the calculation results displayed in the form. </p></td>
+  </tr>
+  <tr>
+   <td><p>5</p></td>
+   <td><p>The user clicks the Submit button when the values are satisfactory. The form is sent to another Java Servlet named <code>ProcessForm</code>.</p></td>
+  </tr>
+ </tbody>
 </table>
 
 Typically, a form that is submitted as PDF content contains scripts that are executed on the client. However, server-side calculations can also be executed. A Submit button cannot be used to calculate scripts. In this situation, calculations are not executed because the Forms service considers the interaction to be complete.
@@ -135,15 +135,15 @@ Calculate form data by using the Forms API (Java):
 
 1. Create a Forms Client API object
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Retrieve a form containing a calculation script
 
-    * To retrieve form data that contains a calculation script, create a `com.adobe.idp.Document` object by using its constructor and invoking the `javax.servlet.http.HttpServletResponse` object’s `getInputStream` method from within the constructor. 
+    * To retrieve form data that contains a calculation script, create a `com.adobe.idp.Document` object by using its constructor and invoking the `javax.servlet.http.HttpServletResponse` object’s `getInputStream` method from within the constructor.
     * Invoke the `FormsServiceClient` object’s `processFormSubmission` method and pass the following values:
 
-        * The `com.adobe.idp.Document` object that contains the form data. 
+        * The `com.adobe.idp.Document` object that contains the form data.
         * A string value that specifies environment variables including all relevant HTTP headers. You must specify the content type to handle by specifying one or more values for the `CONTENT_TYPE` environment variable. For example, to handle XML and PDF data, specify the following string value for this parameter: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
         * A string value that specifies the `HTTP_USER_AGENT` header value; for example, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
         * A `RenderOptionsSpec` object that stores run-time options.
@@ -154,10 +154,10 @@ Calculate form data by using the Forms API (Java):
 
 1. Write the form data stream back to the client web browser
 
-    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser. 
-    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method. 
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method. 
-    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument. 
+    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser.
+    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method.
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
+    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument.
     * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
@@ -181,16 +181,16 @@ Calculate form data by using the Forms API (web service):
 
 1. Retrieve a form containing a calculation script
 
-    * To retrieve form data that was posted to a Java Servlet, create a `BLOB` object by using its constructor. 
+    * To retrieve form data that was posted to a Java Servlet, create a `BLOB` object by using its constructor.
     * Create a `java.io.InputStream` object by using the `javax.servlet.http.HttpServletResponse` object’s `getInputStream` method.
     * Create a `java.io.ByteArrayOutputStream` object by using its constructor and passing the length of the `java.io.InputStream` object.
     * Copy the contents of the `java.io.InputStream` object into the `java.io.ByteArrayOutputStream` object.
     * Create a byte array by invoking the `java.io.ByteArrayOutputStream` object’s `toByteArray` method.
-    * Populate the `BLOB` object by invoking its `setBinaryData` method and passing the byte array as an argument. 
+    * Populate the `BLOB` object by invoking its `setBinaryData` method and passing the byte array as an argument.
     * Create a `RenderOptionsSpec` object by using its constructor. Set the locale value by invoking the `RenderOptionsSpec` object’s `setLocale` method and passing a string value that specifies the locale value.
     * Invoke the `FormsServiceClient` object’s `processFormSubmission` method and pass the following values:
 
-        * The `BLOB` object that contains the form data. 
+        * The `BLOB` object that contains the form data.
         * A string value that specifies environment variables included all relevant HTTP headers. For example, you can specify the following string value: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
         * A string value that specifies the `HTTP_USER_AGENT` header value; for example, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
         * A `RenderOptionsSpec` object that stores run-time options. For more information, .
@@ -199,7 +199,7 @@ Calculate form data by using the Forms API (web service):
         * An empty `BLOBHolder` object that is populated by the method.
         * An empty `BLOBHolder` object that is populated by the method.
         * An empty `javax.xml.rpc.holders.ShortHolder` object that is populated by the method.
-        * An empty `MyArrayOf_xsd_anyTypeHolder` object that is populated by the method. This parameter is used to store file attachments that are submitted along with the form. 
+        * An empty `MyArrayOf_xsd_anyTypeHolder` object that is populated by the method. This parameter is used to store file attachments that are submitted along with the form.
         * An empty `FormsResultHolder` object that is populated by the method with the form that is submitted.
 
       The `processFormSubmission` method populates the `FormsResultHolder` parameter with the results of the form submission. The `processFormSubmission` method returns a `FormsResult` object containing the results of the form submission.
@@ -208,9 +208,9 @@ Calculate form data by using the Forms API (web service):
 
 1. Write the form data stream back to the client web browser
 
-    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser. 
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method. 
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array. 
+    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
+    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
     * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**

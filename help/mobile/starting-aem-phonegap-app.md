@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about the starterkit for developers.
 uuid: 952bf9f9-5c79-4212-91b7-1d3850ec2402
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 2ecf05ed-4e56-4e0b-89cf-5161741f9001
 ---

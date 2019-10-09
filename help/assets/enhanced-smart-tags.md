@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 4452ca05-1f20-4f80-884a-a739ae7b8b0e
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 ---
@@ -35,7 +35,7 @@ In summary, here are the main steps to use the Smart Content Service:
 * Training the Smart Content Service
 * Automatic tagging
 
-![flowchart](assets/flowchart.gif) 
+![flowchart](assets/flowchart.gif)
 
 ## Prerequisites {#prerequisites}
 

@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 ---
 
@@ -55,7 +55,7 @@ Perform the following steps to identify process instance IDs for a workflow init
 
    The query returns tasks initiated by the specified `initiator`_ `principal_id`. The tasks are of two types:
 
-    * **Completed tasks**: These tasks have been submitted and display an alphanumeric value in the `process_instance_id` field. Take note of all process instance IDs for submitted tasks and continue with the steps. 
+    * **Completed tasks**: These tasks have been submitted and display an alphanumeric value in the `process_instance_id` field. Take note of all process instance IDs for submitted tasks and continue with the steps.
     * **Tasks initiated but not complete**: These tasks have initiated but not submitted yet. The value in the `process_instance_id` field for these tasks is **0** (zero). In this case, take note of the corresponding task IDs and see [Work with orphan tasks](#orphan).
 
 1. (**For workflow participants**) Execute the following command to retrieve process instance IDs associated with the principal ID of the process participant for the initiator from the `tb_assignment` database table.
@@ -96,7 +96,7 @@ Perform the following steps to determine if a workflow that stores data in primi
 
 1. Review the `tb_<number>` table schema. The table contains variables that store user data for the specified workflow. The variables in the table correspond to the variables in the workflow.
 
-   Identify and take note of the variable that corresponds to workflow variable containing the user ID. If the identified variable is of primitive-type, you can run a query to determine workflow instances associated with a user ID. 
+   Identify and take note of the variable that corresponds to workflow variable containing the user ID. If the identified variable is of primitive-type, you can run a query to determine workflow instances associated with a user ID.
 
 1. Execute the following database command. In this command, the `user_var` is the primitive-type variable that contains user ID.
 
@@ -169,12 +169,12 @@ Once you have the task IDs, do the following to purge the associated files and d
        `<file_name_guid>.session<session_id_string>`
 
        **b. **Delete all marker files and other files with the exact filename as `<file_name_guid>` from the file system.
-    
+
     1. **GDS in database**
 
        Execute the following commands for each session ID:
 
-       ```sql    
+       ```sql
        delete from tb_dm_chunk where documentid in (select documentid from tb_dm_session_reference where sessionid=<session_id>)
        delete from tb_dm_session_reference where sessionid=<session_id>
        delete from tb_dm_deletion where sessionid=<session_id>

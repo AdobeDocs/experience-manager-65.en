@@ -5,7 +5,7 @@ description: Create nested groups
 seo-description: Create nested groups
 uuid: b478454a-24c6-4e1c-a6e0-afeb1bc4992c
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
@@ -85,13 +85,13 @@ The `arts` group should also contain a `groups` folder, but one that is empty an
     * Title: `Visual Arts`
     * Name: `visual`
     * Template: `Reference Group`
-    * Membership: select `Optional Membership` 
+    * Membership: select `Optional Membership`
     A public group, open to all members
 1. Auditory
     * Title: `Auditory Arts`
     * Name: `auditory`
     * Template: `Reference Group`
-    * Membership: select `Required Membership` 
+    * Membership: select `Required Membership`
     An open group, available for members to join
 
 1. History

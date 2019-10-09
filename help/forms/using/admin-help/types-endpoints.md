@@ -7,7 +7,7 @@ uuid: c899245c-14cc-4035-9440-95a5b6c1e47f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8fe572e0-8a53-4129-940f-3fdb990073fe
 ---
 
@@ -39,4 +39,4 @@ The following types of endpoints can be added to services. Not all services supp
 
 **REST:** Processes created in Workbench can be configured so that you can invoke them through Representational State Transfer (REST) requests. REST requests are sent from HTML pages. That is, you can invoke a AEM forms process directly from a web page using a REST request.
 
-The Email, TaskManager, Watched Folder, and Remoting endpoints expose only a specific operation of the service. Adding these endpoints requires a second configuration step to select a method to invoke the service, setting configuration parameters, and specifying input and output parameter mappings. 
+The Email, TaskManager, Watched Folder, and Remoting endpoints expose only a specific operation of the service. Adding these endpoints requires a second configuration step to select a method to invoke the service, setting configuration parameters, and specifying input and output parameter mappings.

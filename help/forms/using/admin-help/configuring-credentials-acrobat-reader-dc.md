@@ -7,7 +7,7 @@ uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 ---
 
@@ -33,7 +33,7 @@ The Trust Store may contain more than one Acrobat Reader DC extensions credentia
 ## Import a Acrobat Reader DC extensions credential {#import-a-acrobat-reader-dc-extensions-credential}
 
 1. In administration console, click Settings &gt; Trust Store Management &gt; Local Credentials.
-1. Click Import and, under Trust Store Type, select Acrobat Reader DC extensions Credential. 
+1. Click Import and, under Trust Store Type, select Acrobat Reader DC extensions Credential.
 1. (Optional) To indicate that this credential is the default credential to use with Acrobat Reader DC extensions, select Default.
 1. In the Alias box, type an identifier for the credential. This identifier is used as the display name for the credential in Acrobat Reader DC extensions. This alias is also used to access the credential programmatically using the AEM forms SDK.
 

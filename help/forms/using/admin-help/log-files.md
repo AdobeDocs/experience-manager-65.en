@@ -7,7 +7,7 @@ uuid: 6ed9fdcd-ff02-4b35-893f-09261a6a557a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
 ---
 
@@ -23,8 +23,8 @@ Events such as run-time or startup errors are recorded to the application server
 
 (WebLogic) Domain log files are located in the *[appserverdomain]* directory, and server log files are located in the *[appserverdomain]/servers/[appserver name]/logs *directory:
 
-* access.log 
-* *[appserver name]*.log 
+* access.log
+* *[appserver name]*.log
 * *[appserver name]*.out.*[incremental number]*
 
 (WebSphere) The following log files are located in the *[appserver root]*/profiles/default/logs/*[appserver name]* directory:

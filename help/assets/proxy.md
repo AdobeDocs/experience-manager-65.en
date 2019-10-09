@@ -1,11 +1,11 @@
 ---
 title: Assets Proxy Development
 seo-title: Assets Proxy Development
-description: A proxy is an AEM instance that uses proxy workers to process jobs. Learn how to configure an AEM proxy, supported operations, proxy components, and how to develop a custom proxy worker. 
-seo-description: A proxy is an AEM instance that uses proxy workers to process jobs. Learn how to configure an AEM proxy, supported operations, proxy components, and how to develop a custom proxy worker. 
+description: A proxy is an AEM instance that uses proxy workers to process jobs. Learn how to configure an AEM proxy, supported operations, proxy components, and how to develop a custom proxy worker.
+seo-description: A proxy is an AEM instance that uses proxy workers to process jobs. Learn how to configure an AEM proxy, supported operations, proxy components, and how to develop a custom proxy worker.
 uuid: 72ceb9a5-f88a-48fe-99da-8ec10192320a
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: extending-assets
 content-type: reference
 discoiquuid: 5332f700-0871-4ce3-945d-fc2e7b65d46e
@@ -25,9 +25,9 @@ A proxy is available via the HTTP Servlet when it is configured to accept proces
 
 ### Supported Operations {#supported-operations}
 
-* `job`  
+* `job`
 
-  **Requirements**: the parameter `jobevent` must be set as a serialized value map. This is used to create an `Event` for a job processor. 
+  **Requirements**: the parameter `jobevent` must be set as a serialized value map. This is used to create an `Event` for a job processor.
 
   **Result**: Adds a new job. If successful, a unique job id is returned.
 
@@ -36,9 +36,9 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
     -F"jobevent=serialized value map" http://localhost:4502/libs/dam/cloud/proxy
 ```
 
-* `result` 
+* `result`
 
-  **Requirements**: the parameter `jobid` must be set.  
+  **Requirements**: the parameter `jobid` must be set.
 
   **Result**: Returns a JSON representation of the result Node as created by the job processor.
 
@@ -47,9 +47,9 @@ curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
     http://localhost:4502   /libs/dam/cloud/proxy
 ```
 
-* `resource`  
+* `resource`
 
-  **Requirements**: the parameter jobid must be set.  
+  **Requirements**: the parameter jobid must be set.
 
   **Result**: Returns a resource associated with the given job.
 
@@ -58,9 +58,9 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
     -F"resourcePath=something.pdf" http://localhost:4502/libs/dam/cloud/proxy
 ```
 
-* `remove`  
+* `remove`
 
-  **Requirements**: the parameter jobid must be set.  
+  **Requirements**: the parameter jobid must be set.
 
   **Results**: Removes a job if found.
 
@@ -121,7 +121,7 @@ The following is an example of API usage:
 ```xml
 @Reference(policy = ReferencePolicy.STATIC)
  ProxyConfig proxyConfig;
- 
+
  // to get proxy config
  Configuration cloudConfig = proxyConfig.getConfiguration();
  final String value = cloudConfig.get("someProperty", "defaultValue");
@@ -146,7 +146,7 @@ Setting up your own custom proxy worker requires you to:
 
 * Then use the JobService API to:
 
-    * dispatch your custom job to the proxy 
+    * dispatch your custom job to the proxy
     * manage your job
 
 * If you want to use the proxy from a workflow, you must implement a custom external step using the WorkflowExternalProcess API and the JobService API.

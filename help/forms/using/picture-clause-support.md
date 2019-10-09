@@ -6,7 +6,7 @@ seo-description: HTML5 forms supports XFA Picture clause for display value and f
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 ---
@@ -37,51 +37,51 @@ Supported expression for Date Picture clause:
 >
 >The default pattern of picture clause is {MMM D, YYYY} pattern. If no pattern is applied, the default pattern is used.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th><strong>Symbol</strong></th> 
-   <th>Interpretation</th> 
+   <th><strong>Symbol</strong></th>
+   <th>Interpretation</th>
   </tr>
   <tr>
-   <td>D</td> 
-   <td>1- or 2-digit (1-31) day of the month</td> 
+   <td>D</td>
+   <td>1- or 2-digit (1-31) day of the month</td>
   </tr>
   <tr>
-   <td>DD</td> 
-   <td>Zero-padded two digit (01-31) day of the month.<br /> </td> 
+   <td>DD</td>
+   <td>Zero-padded two digit (01-31) day of the month.<br /> </td>
   </tr>
   <tr>
-   <td>M</td> 
-   <td>1- or 2-digit (1-12) month of the year.<br /> </td> 
+   <td>M</td>
+   <td>1- or 2-digit (1-12) month of the year.<br /> </td>
   </tr>
   <tr>
-   <td>MM</td> 
-   <td>Zero-padded two digit (01-12) month of the year.<br /> </td> 
+   <td>MM</td>
+   <td>Zero-padded two digit (01-12) month of the year.<br /> </td>
   </tr>
   <tr>
-   <td>MMM</td> 
-   <td>Abbreviated month name of the current locale<br /> </td> 
+   <td>MMM</td>
+   <td>Abbreviated month name of the current locale<br /> </td>
   </tr>
   <tr>
-   <td>MMMM</td> 
-   <td>Full month name of the current locale<br /> </td> 
+   <td>MMMM</td>
+   <td>Full month name of the current locale<br /> </td>
   </tr>
   <tr>
-   <td>EEE</td> 
-   <td>Abbreviated weekday name of the current locale<br /> </td> 
+   <td>EEE</td>
+   <td>Abbreviated weekday name of the current locale<br /> </td>
   </tr>
   <tr>
-   <td>EEEE</td> 
-   <td>Full weekday name of the current locale<br /> </td> 
+   <td>EEEE</td>
+   <td>Full weekday name of the current locale<br /> </td>
   </tr>
   <tr>
-   <td>YY</td> 
-   <td>2-digit year, where 00 = 2000, 29 = 2029, 30 = 1930, and 99 = 1999<br /> </td> 
+   <td>YY</td>
+   <td>2-digit year, where 00 = 2000, 29 = 2029, 30 = 1930, and 99 = 1999<br /> </td>
   </tr>
   <tr>
-   <td>YYYY</td> 
-   <td>4-digit year<br /> </td> 
+   <td>YYYY</td>
+   <td>4-digit year<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -108,87 +108,87 @@ Supported expressions for Numeric Picture clause in **HTML Forms** are:
 * num.percent{}
 * num{Numeric Picture Clause Symbols}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th><strong>Symbol</strong></th> 
-   <th><strong>Interpretation</strong></th> 
-   <th>Input parsing</th> 
+   <th><strong>Symbol</strong></th>
+   <th><strong>Interpretation</strong></th>
+   <th>Input parsing</th>
   </tr>
   <tr>
-   <td>9</td> 
-   <td><strong>Output formatting</strong>: a single digit. Or for the zero digit if the input data is empty or a space in the corresponding position.<br /> </td> 
-   <td>Single digit</td> 
+   <td>9</td>
+   <td><strong>Output formatting</strong>: a single digit. Or for the zero digit if the input data is empty or a space in the corresponding position.<br /> </td>
+   <td>Single digit</td>
   </tr>
   <tr>
-   <td>Z</td> 
-   <td><strong>Output formatting</strong>: a single digit. Or for a space if the input data is empty, a space, or the zero digit in the corresponding position.<br /> </td> 
-   <td>Single digit or space</td> 
+   <td>Z</td>
+   <td><strong>Output formatting</strong>: a single digit. Or for a space if the input data is empty, a space, or the zero digit in the corresponding position.<br /> </td>
+   <td>Single digit or space</td>
   </tr>
   <tr>
-   <td>z</td> 
-   <td><strong>Output formatting</strong>: a single digit. Or for nothing if the input data is empty, a space, or the zero digit in the corresponding position.<br /> </td> 
-   <td>Single digit or nothing</td> 
+   <td>z</td>
+   <td><strong>Output formatting</strong>: a single digit. Or for nothing if the input data is empty, a space, or the zero digit in the corresponding position.<br /> </td>
+   <td>Single digit or nothing</td>
   </tr>
   <tr>
-   <td>E</td> 
-   <td><strong>Output formatting</strong>: the exponent part of a floating point number consisting of the exponential symbol (E). Followed by an optional plus or minus sign. Followed by the exponent value.<br /> </td> 
-   <td>Same as for output formatting</td> 
+   <td>E</td>
+   <td><strong>Output formatting</strong>: the exponent part of a floating point number consisting of the exponential symbol (E). Followed by an optional plus or minus sign. Followed by the exponent value.<br /> </td>
+   <td>Same as for output formatting</td>
   </tr>
   <tr>
-   <td>CR or cr<br /> </td> 
-   <td>Credit symbol (CR) if the number is negative. Else nothing.</td> 
-   <td><br type="_moz" /> </td> 
+   <td>CR or cr<br /> </td>
+   <td>Credit symbol (CR) if the number is negative. Else nothing.</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>S or s<br /> </td> 
-   <td>Output formatting: a minus sign if the number is negative. Else space.<br /> </td> 
-   <td>Minus sign if the number is negative. Plus sign if the number is positive</td> 
+   <td>S or s<br /> </td>
+   <td>Output formatting: a minus sign if the number is negative. Else space.<br /> </td>
+   <td>Minus sign if the number is negative. Plus sign if the number is positive</td>
   </tr>
   <tr>
-   <td>V</td> 
-   <td>Decimal radix of the prevailing locale. Allowing the decimal radix to be implied when input parsing.</td> 
-   <td><br type="_moz" /> </td> 
+   <td>V</td>
+   <td>Decimal radix of the prevailing locale. Allowing the decimal radix to be implied when input parsing.</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>v</td> 
-   <td>Decimal radix of the prevailing locale. Allowing the decimal radix to be implied when input parsing and output formatting.</td> 
-   <td><br type="_moz" /> </td> 
+   <td>v</td>
+   <td>Decimal radix of the prevailing locale. Allowing the decimal radix to be implied when input parsing and output formatting.</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>.</td> 
-   <td>Decimal radix of the prevailing locale.</td> 
-   <td><br type="_moz" /> </td> 
+   <td>.</td>
+   <td>Decimal radix of the prevailing locale.</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>, (U+FF0C)</td> 
-   <td>Grouping separator of the prevailing locale</td> 
-   <td><br type="_moz" /> </td> 
+   <td>, (U+FF0C)</td>
+   <td>Grouping separator of the prevailing locale</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>$ (U+FF04)</td> 
-   <td>Currency symbol of the prevailing locale.</td> 
-   <td><br type="_moz" /> </td> 
+   <td>$ (U+FF04)</td>
+   <td>Currency symbol of the prevailing locale.</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>% (U+FF05)</td> 
-   <td>Percent symbol of the prevailing locale.</td> 
-   <td><br type="_moz" /> </td> 
+   <td>% (U+FF05)</td>
+   <td>Percent symbol of the prevailing locale.</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>( (U+FF08)</td> 
-   <td>Left parenthesis if the number is negative. Else space.</td> 
-   <td><br type="_moz" /> </td> 
+   <td>( (U+FF08)</td>
+   <td>Left parenthesis if the number is negative. Else space.</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>) (U+FF09)</td> 
-   <td>Right parenthesis if the number is negative. Else space.</td> 
-   <td><br type="_moz" /> </td> 
+   <td>) (U+FF09)</td>
+   <td>Right parenthesis if the number is negative. Else space.</td>
+   <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>t</td> 
-   <td>Tab Character</td> 
-   <td><br type="_moz" /> </td> 
+   <td>t</td>
+   <td>Tab Character</td>
+   <td><br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>

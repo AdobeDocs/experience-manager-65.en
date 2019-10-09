@@ -5,7 +5,7 @@ description: Configuring Messaging components
 seo-description: Configuring Messaging components
 uuid: 29ab63b6-67a1-4eb8-8cf8-c1ff52ff2bac
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 88ee8573-58c4-42cd-8e36-2ea4a0d654e4
@@ -62,47 +62,47 @@ Once inheritance is canceled, it will be possible to select the `configure` icon
 
 ![chlimage_1-398](assets/chlimage_1-398.png)
 
-* **[!UICONTROL Service selector]** 
+* **[!UICONTROL Service selector]**
   (*Required*) Set this to the value of the property `serviceSelector.name` from the [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service).
 
-* **[!UICONTROL Compose Page]** 
+* **[!UICONTROL Compose Page]**
   (*Required*) The page to open when a member clicks on the `Reply` button. The target page should contain the **[!UICONTROL Compose Message]** form.
 
-* **[!UICONTROL Reply/View as Resource]** 
+* **[!UICONTROL Reply/View as Resource]**
   If checked, the Reply URL and View URL will reference a resource, else data is passed as query parameters in the URL.
 
-* **[!UICONTROL Profile Display Form]** 
+* **[!UICONTROL Profile Display Form]**
   The profile form to use to display the senders profile.
 
-* **[!UICONTROL Trash Folder]** 
+* **[!UICONTROL Trash Folder]**
   If checked, this Message List component displays only messages flagged as deleted (trash).
 
-* **[!UICONTROL Folder Paths]** 
+* **[!UICONTROL Folder Paths]**
   (*Required*) Referencing the values set for `inbox.path.name` and `sentitems.path.name` in the [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service). When configuring for an `Inbox`, add one entry using the value of `inbox.path.name`. When configuring for an `Outbox`, add one entry using the value of `sentitems.path.name`. When configuring for `Trash`, add two entries with both values.
 
 #### Display tab {#display-tab}
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-* **[!UICONTROL Mark Read Button]** 
+* **[!UICONTROL Mark Read Button]**
   If checked, displays a `Read`button allowing a message to be marked as read.
 
-* **[!UICONTROL Mark Unread Button]** 
+* **[!UICONTROL Mark Unread Button]**
   If checked, displays a `Mark Unread` button allowing a message to be marked as read.
 
-* **[!UICONTROL Delete Button]** 
+* **[!UICONTROL Delete Button]**
   If checked, displays a `Delete`button allowing a message to be marked as read. Will duplicate the delete functionality if **`Message Options`** is also checked.
 
-* **[!UICONTROL Message Options]** 
+* **[!UICONTROL Message Options]**
   If checked, displays **`Reply`**, **`Reply All`**, **`Forward`** and **`Delete`** buttons allowing a message to be resent or deleted. Will duplicate the delete functionality if **`Delete Button`** is also checked.
 
-* **[!UICONTROL Messages Per Page]** 
+* **[!UICONTROL Messages Per Page]**
   The number specified is the maximum number of messages displayed per page in a pagination scheme. If no number is specified (left blank), then all messages are displayed and there is no pagination.
 
-* **[!UICONTROL Timestamp patterns]** 
+* **[!UICONTROL Timestamp patterns]**
   Provide timestamp patterns for one or more languages. Default is for en, de, fr, it, es, ja, zh_CN, ko_KR.
 
-* **[!UICONTROL Display User]** 
+* **[!UICONTROL Display User]**
   Choose either **`Sender`** or **`Recipients`** to determine whether to display the Sender or Recipients.
 
 ### Configuring Compose Message {#configuring-compose-message}
@@ -127,46 +127,46 @@ Once inheritance is canceled, it will be possible to select the `configure` icon
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
-* **[!UICONTROL Redirect URL]** 
+* **[!UICONTROL Redirect URL]**
   Enter the URL of the page shown after the message is sent. For example, `../messaging.html`.
 
-* **[!UICONTROL Cancel URL]** 
+* **[!UICONTROL Cancel URL]**
   Enter the URL of the page shown if the sender cancels the message. For example, `../messaging.html`.
 
-* **[!UICONTROL Maximum length of Message Subject]** 
+* **[!UICONTROL Maximum length of Message Subject]**
   The maximum number of characters allowed in the Subject field. For example, 500. Default is no limit.
 
-* **[!UICONTROL Maximum length of Message Body]** 
+* **[!UICONTROL Maximum length of Message Body]**
   The maximum number of characters allowed in the Content field. For example, 10000. Default is no limit.
 
-* **[!UICONTROL Service selector]** 
+* **[!UICONTROL Service selector]**
   (*Required*) Set this to the value of the property **`serviceSelector.name`** from the [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service).
 
 #### Display tab {#display-tab-1}
 
 ![chlimage_1-403](assets/chlimage_1-403.png)
 
-* **[!UICONTROL Show Subject Field]** 
+* **[!UICONTROL Show Subject Field]**
   If checked, show the `Subject` field and enable adding a subject to the message. Default is not checked.
 
-* **[!UICONTROL Subject Label]** 
+* **[!UICONTROL Subject Label]**
   Enter the text to display next to the `Subject` field. Default is `Subject`.
 
-* **[!UICONTROL Show Attach File Field]** 
+* **[!UICONTROL Show Attach File Field]**
   If checked, show the `Attachment` field and enable adding file attachments to the message. Default is not checked.
 
-* **[!UICONTROL Attach File Label]** 
+* **[!UICONTROL Attach File Label]**
   Enter the text to display next to the `Attachment` field. Default is **`Attach File`**.
 
-* **[!UICONTROL Show Content Field]** 
+* **[!UICONTROL Show Content Field]**
   If checked, show the `Content` field and enable adding a message body. Default is not checked.
 
-* **[!UICONTROL Content Label]** 
+* **[!UICONTROL Content Label]**
   Enter the text to display next to the `Content` field. Default is **`Body`**.
 
-* **[!UICONTROL With Rich Text Editor]** 
+* **[!UICONTROL With Rich Text Editor]**
   If checked, indicates use of a custom Content text box with its own rich text editor. Default is not checked.
 
-* **[!UICONTROL Timestamp patterns]** 
+* **[!UICONTROL Timestamp patterns]**
   Provide timestamp patterns for one or more languages. Default is for en, de, fr, it, es, ja, zh_CN, ko_KR.
 

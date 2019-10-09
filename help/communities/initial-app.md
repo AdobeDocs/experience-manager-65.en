@@ -5,7 +5,7 @@ description: Create template, component, and script
 seo-description: Create template, component, and script
 uuid: b0d03376-d8bc-4e98-aea2-a01744c64ccd
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
@@ -26,14 +26,14 @@ In this exercise, all pages are based on one simple template.
 
 1. In the explorer pane of CRXDE Lite
 
-    * select `/apps/an-scf-sandbox/templates` 
+    * select `/apps/an-scf-sandbox/templates`
     * **[!UICONTROL Create > Create Template]**
 
 1. In the Create Template dialog, type the following values and then click **[!UICONTROL Next]**:
 
     * Label: `playpage`
     * Title: `An SCF Sandbox Play Template`
-    * Description: `An SCF Sandbox template for play pages` 
+    * Description: `An SCF Sandbox template for play pages`
     * Resource Type: `an-scf-sandbox/components/playpage`
     * Ranking: &lt;leave as default&gt;
 
@@ -82,9 +82,9 @@ In this exercise, all pages are based on one simple template.
 Create the *component* that defines the content and renders any pages created based on the [playpage template](#createthepagetemplate).
 
 1. In CRXDE Lite, right-click **`/apps/an-scf-sandbox/components`** and click **[!UICONTROL Create > Component]**.
-1. By setting the node's name (Label) to *playpage*, the path to the component is  
+1. By setting the node's name (Label) to *playpage*, the path to the component is
 
-   `/apps/an-scf-sandbox/components/playpage` 
+   `/apps/an-scf-sandbox/components/playpage`
 
    which corresponds to the Resource Type of the playpage template (optionally minus the initial **`/apps/`** part of the path).
 

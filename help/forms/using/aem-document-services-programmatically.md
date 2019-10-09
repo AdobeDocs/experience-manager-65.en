@@ -5,7 +5,7 @@ description: Learn how to use Document Services APIs to Digitally sign, encrypt,
 seo-description: Learn how to use Document Services APIs to Digitally sign, encrypt, and generate PDF documents.
 uuid: bf5ee197-4daf-4a64-8b6d-2c0d1f232b1c
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 ---
@@ -28,29 +28,29 @@ The DocAssurance service includes the following services:
 
 You can perform the following operations using the DocAssurance service:
 
-* [Add Invisible Signature](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)  
+* [Add Invisible Signature](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)
 
 * [Add Signature Field](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
-* [Apply Document TimeStamp](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)  
+* [Apply Document TimeStamp](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
 * [Get Signature](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
 * [Get Signature Field List](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
-* [Modify Signature Fields](/help/forms/using/aem-document-services-programmatically.md#p-modifying-signature-fields-nbsp-p)  
+* [Modify Signature Fields](/help/forms/using/aem-document-services-programmatically.md#p-modifying-signature-fields-nbsp-p)
 
-* [Secure Document](/help/forms/using/aem-document-services-programmatically.md#p-securing-documents-p)  
+* [Secure Document](/help/forms/using/aem-document-services-programmatically.md#p-securing-documents-p)
 
-* [Get Credential Usage Rights](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)  
+* [Get Credential Usage Rights](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)
 
-* [Get Document Usage Rights](/help/forms/using/aem-document-services-programmatically.md#p-getting-document-usage-rights-p)  
+* [Get Document Usage Rights](/help/forms/using/aem-document-services-programmatically.md#p-getting-document-usage-rights-p)
 
 * [Remove Usage Rights](/help/forms/using/aem-document-services-programmatically.md#p-removing-usage-rights-p)
 * [Verify Digital Signatures](/help/forms/using/aem-document-services-programmatically.md#p-verifying-digital-signatures-p)
 * [Verify Multiple Digital Signatures](/help/forms/using/aem-document-services-programmatically.md#p-verifying-multiple-digital-signatures-p)
-* [Remove Digital Signatures](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)  
+* [Remove Digital Signatures](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
 
 * [Get Certifying Signature Field](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
 * [Get PDF Encryption Type](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
-* [Remove Password Encryption](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)  
+* [Remove Password Encryption](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
 
 * [Remove Certificate Encryption](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
 
@@ -66,33 +66,33 @@ Digital signatures appear in signature fields, which are form fields that contai
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code></td> 
-   <td>Document object containing PDF.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>signatureFieldName</code><br /> </td> 
-   <td>The name of the signature field. This parameter is mandatory and cannot have null as a value.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>fieldMDPOptionsSpec</code></td> 
-   <td>A <code>FieldMDPOptionSpec</code> object that specifies the PDF document fields that are locked after the signature field is signed. This parameter is optional and can accept null value.</td> 
-  </tr> 
-  <tr> 
-   <td><code>seedValueOptionsSpec</code></td> 
-   <td>A <code>SeedValueOptions</code> object that specifies the various seed values for the field. T This parameter is optional and can accept null value.<span class="acrolinxCursorMarker"></span></td> 
-  </tr> 
-  <tr> 
-   <td><code>unlockOptions</code></td> 
-   <td>Includes the parameters require to unlock an encrypted file, This parameter is required only for the encrypted files.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code></td>
+   <td>Document object containing PDF.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>signatureFieldName</code><br /> </td>
+   <td>The name of the signature field. This parameter is mandatory and cannot have null as a value.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>fieldMDPOptionsSpec</code></td>
+   <td>A <code>FieldMDPOptionSpec</code> object that specifies the PDF document fields that are locked after the signature field is signed. This parameter is optional and can accept null value.</td>
+  </tr>
+  <tr>
+   <td><code>seedValueOptionsSpec</code></td>
+   <td>A <code>SeedValueOptions</code> object that specifies the various seed values for the field. T This parameter is optional and can accept null value.<span class="acrolinxCursorMarker"></span></td>
+  </tr>
+  <tr>
+   <td><code>unlockOptions</code></td>
+   <td>Includes the parameters require to unlock an encrypted file, This parameter is required only for the encrypted files.</td>
+  </tr>
+ </tbody>
 </table>
 
 Here is a sample Java code that adds an invisible signature field to a PDF document.
@@ -136,12 +136,12 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * Digital signatures appear in signature fields, which are form fields that contain a graphic representation of the signature. 
- * Signature fields can be visible or invisible. Signers can use a pre existing signature field, or a signature field can be 
+ * Digital signatures appear in signature fields, which are form fields that contain a graphic representation of the signature.
+ * Signature fields can be visible or invisible. Signers can use a pre existing signature field, or a signature field can be
  * programmatically added. In either case, the signature field must exist before a PDF document can be signed.
- * You can programmatically add a signature field by using the Signature service Java API or Signature web service API. 
+ * You can programmatically add a signature field by using the Signature service Java API or Signature web service API.
  * You can add more than one signature field to a PDF document; however, each signature field name must be unique.
- * 
+ *
  * The following Java code example adds an invisible signature field named SignatureField1 to a PDF document.
  */
 
@@ -151,27 +151,27 @@ public class AddInvisibleSignatureField {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  /**
-  * 
+  *
   * @param inputFile - path to an pdf document stored at disk
-  * @param outputFile - path where the output file has to be saved 
-  * @throws SignaturesBaseException 
-  * @throws DuplicateSignatureFieldException 
-  * @throws PermissionsException 
-  * @throws PDFOperationException 
-  * @throws InvalidArgumentException 
-  * @throws DocAssuranceException 
-  * 
+  * @param outputFile - path where the output file has to be saved
+  * @throws SignaturesBaseException
+  * @throws DuplicateSignatureFieldException
+  * @throws PermissionsException
+  * @throws PDFOperationException
+  * @throws InvalidArgumentException
+  * @throws DocAssuranceException
+  *
   */
  public void addInvisibleSignatureField(String inputFile, String outputFile) throws InvalidArgumentException, PDFOperationException, PermissionsException, DuplicateSignatureFieldException, SignaturesBaseException, DocAssuranceException {
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   File outFile = new File(outputFile);
   Document outDoc = null;
-  
+
         //Specify the name of the signature field
         String fieldName = "SignatureField1";
 
@@ -194,7 +194,7 @@ public class AddInvisibleSignatureField {
    // TODO Auto-generated catch block
    e1.printStackTrace();
   } // for an encrypted PDF input, pass unlock options
-       
+
         //save the outDoc
         try {
    outDoc.copyToFile(outFile);
@@ -203,21 +203,21 @@ public class AddInvisibleSignatureField {
    e.printStackTrace();
   }
  }
- 
+
  /**
-  * 
+  *
   * UnlockOptions to be passed to addSignatureField() API to add a signature field in an encrypted pdf document.
   */
  private UnlockOptions getUnlockOptions(){
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 }
 ```
@@ -234,11 +234,11 @@ signOptions.setSigAppearence(sigAppearence);
 
 You can programmatically add a signature field by using the Signature service Java API or Signature web service API. You can add multiple signature fields to a PDF document. However, each signature field name must be unique.
 
-**Syntax**: 
+**Syntax**:
 
 ```
 public Document addSignatureField(Document inDoc,
- String signatureFieldName, 
+ String signatureFieldName,
  Integer pageNo,
  PositionRectangle positionRectangle,
  FieldMDPOptionSpec fieldMDPOptionsSpec,
@@ -247,41 +247,41 @@ public Document addSignatureField(Document inDoc,
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code></td> 
-   <td>Document object containing PDF</td> 
-  </tr> 
-  <tr> 
-   <td><code>signatureFieldName</code></td> 
-   <td>Name of the signature field. This parameter is mandatory and cannot accept a null value.</td> 
-  </tr> 
-  <tr> 
-   <td><code>pageNumber</code></td> 
-   <td>The page number on which the signature field is added. Valid values are 1 to the number of pages contained within the document. This parameter is mandatory and cannot accept a null value.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>positionRectangle</code></td> 
-   <td>A <code>PositionRectangle object</code> that specifies the position for the signature field. This parameter is mandatory and cannot accept a null value. If the specified rectangle does not lie at least partially on the crop box of the specified page, an <code>InvalidArgumentException</code> is thrown. Also, neither the height or width of the specified rectangle can be 0 or negative. Lower left X or lower left Y coordinates can be 0 or greater but not negative, and are relative to the crop box of the page.</td> 
-  </tr> 
-  <tr> 
-   <td><code>fieldMDPOptionsSpec</code></td> 
-   <td>A <code>FieldMDPOptionSpec</code> object that specifies the PDF document fields that are locked after the signature field is signed. This is an optional parameter and can be null.</td> 
-  </tr> 
-  <tr> 
-   <td><code>seedValueOptionsSpec</code></td> 
-   <td>A <code>SeedValueOptions</code> object that specifies the various seed values for the field. This is an optional parameter and can be null.</td> 
-  </tr> 
-  <tr> 
-   <td><code>unlockOptions</code></td> 
-   <td>Includes the parameters required to unlock an encrypted file. This parameter is required only for the encypted files.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code></td>
+   <td>Document object containing PDF</td>
+  </tr>
+  <tr>
+   <td><code>signatureFieldName</code></td>
+   <td>Name of the signature field. This parameter is mandatory and cannot accept a null value.</td>
+  </tr>
+  <tr>
+   <td><code>pageNumber</code></td>
+   <td>The page number on which the signature field is added. Valid values are 1 to the number of pages contained within the document. This parameter is mandatory and cannot accept a null value.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>positionRectangle</code></td>
+   <td>A <code>PositionRectangle object</code> that specifies the position for the signature field. This parameter is mandatory and cannot accept a null value. If the specified rectangle does not lie at least partially on the crop box of the specified page, an <code>InvalidArgumentException</code> is thrown. Also, neither the height or width of the specified rectangle can be 0 or negative. Lower left X or lower left Y coordinates can be 0 or greater but not negative, and are relative to the crop box of the page.</td>
+  </tr>
+  <tr>
+   <td><code>fieldMDPOptionsSpec</code></td>
+   <td>A <code>FieldMDPOptionSpec</code> object that specifies the PDF document fields that are locked after the signature field is signed. This is an optional parameter and can be null.</td>
+  </tr>
+  <tr>
+   <td><code>seedValueOptionsSpec</code></td>
+   <td>A <code>SeedValueOptions</code> object that specifies the various seed values for the field. This is an optional parameter and can be null.</td>
+  </tr>
+  <tr>
+   <td><code>unlockOptions</code></td>
+   <td>Includes the parameters required to unlock an encrypted file. This parameter is required only for the encypted files.</td>
+  </tr>
+ </tbody>
 </table>
 
 Here is a sample Java code that adds a signature field to a PDF document.
@@ -294,9 +294,9 @@ Here is a sample Java code that adds a signature field to a PDF document.
 *Copyright 2014 Adobe Systems Incorporated
 *All Rights Reserved.
 
-*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the 
-*terms of the Adobe license agreement accompanying it.  If you have received this file from a 
-*source other than Adobe, then your use, modification, or distribution of it requires the prior 
+*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the
+*terms of the Adobe license agreement accompanying it.  If you have received this file from a
+*source other than Adobe, then your use, modification, or distribution of it requires the prior
 *written permission of Adobe.
 -------------------------------------------------------------------------------------------------
 
@@ -322,12 +322,12 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * Digital signatures appear in signature fields, which are form fields that contain a graphic representation of the signature. 
- * Signature fields can be visible or invisible. Signers can use a pre existing signature field, or a signature field can be 
+ * Digital signatures appear in signature fields, which are form fields that contain a graphic representation of the signature.
+ * Signature fields can be visible or invisible. Signers can use a pre existing signature field, or a signature field can be
  * programmatically added. In either case, the signature field must exist before a PDF document can be signed.
- * You can programmatically add a signature field by using the Signature service Java API or Signature web service API. 
+ * You can programmatically add a signature field by using the Signature service Java API or Signature web service API.
  * You can add more than one signature field to a PDF document; however, each signature field name must be unique.
- * 
+ *
  * The following Java code example adds a signature field named SignatureField1 to a PDF document.
  */
 
@@ -337,27 +337,27 @@ public class AddSignatureField {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  /**
-  * 
+  *
   * @param inputFile - path to an pdf document stored at disk
-  * @param outputFile - path where the output file has to be saved 
-  * @throws SignaturesBaseException 
-  * @throws DuplicateSignatureFieldException 
-  * @throws PermissionsException 
-  * @throws PDFOperationException 
-  * @throws InvalidArgumentException 
-  * @throws DocAssuranceException 
-  * 
+  * @param outputFile - path where the output file has to be saved
+  * @throws SignaturesBaseException
+  * @throws DuplicateSignatureFieldException
+  * @throws PermissionsException
+  * @throws PDFOperationException
+  * @throws InvalidArgumentException
+  * @throws DocAssuranceException
+  *
   */
  public void addSignatureField(String inputFile, String outputFile) throws InvalidArgumentException, PDFOperationException, PermissionsException, DuplicateSignatureFieldException, SignaturesBaseException, DocAssuranceException {
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   File outFile = new File(outputFile);
   Document outDoc = null;
-  
+
         //Specify the name of the signature field
         String fieldName = "SignatureField1";
 
@@ -382,7 +382,7 @@ public class AddSignatureField {
    // TODO Auto-generated catch block
    e1.printStackTrace();
   } // for an encrypted PDF input, pass unlock options
-       
+
         //save the outDoc
         try {
    outDoc.copyToFile(outFile);
@@ -391,21 +391,21 @@ public class AddSignatureField {
    e.printStackTrace();
   }
  }
- 
+
  /**
-  * 
+  *
   * UnlockOptions to be passed to addSignatureField() API to add a signature field in an encrypted pdf document.
   */
  private UnlockOptions getUnlockOptions(){
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 }
 ```
@@ -418,33 +418,33 @@ You can programmatically timestamp a document as per [PAdES 4](https://en.wikipe
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>doc</code><br /> </td> 
-   <td>Document object containing PDF.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>VerificationTime</code></td> 
-   <td>The time at which the signature should be validated<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>ValidationPreferences</code> </td> 
-   <td>Preferences to control validation configurations.</td> 
-  </tr> 
-  <tr> 
-   <td><code>ResourceResolver</code></td> 
-   <td>Resource resolver to the granite trust store.</td> 
-  </tr> 
-  <tr> 
-   <td><code>UnlockOptions</code></td> 
-   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>doc</code><br /> </td>
+   <td>Document object containing PDF.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>VerificationTime</code></td>
+   <td>The time at which the signature should be validated<br /> </td>
+  </tr>
+  <tr>
+   <td><code>ValidationPreferences</code> </td>
+   <td>Preferences to control validation configurations.</td>
+  </tr>
+  <tr>
+   <td><code>ResourceResolver</code></td>
+   <td>Resource resolver to the granite trust store.</td>
+  </tr>
+  <tr>
+   <td><code>UnlockOptions</code></td>
+   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following code samples adds a time stamp to a document as per [PAdES 4](https://en.wikipedia.org/wiki/PAdES).
@@ -481,13 +481,13 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
  @Component
  @Service(value=Test.class)
  public class Test {
-  
+
      @Reference
      private DocAssuranceService docAssuranceService;
-      
+
      @Reference
      private SlingRepository slingRepository;
-      
+
      @Reference
      private JcrResourceResolverFactory jcrResourceResolverFactory ;
 
@@ -498,17 +498,17 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
       * @throws Exception
       */
      public void TimeStamp(String inputFile, String outputFile) throws Exception{
-          
+
          File inFile = new File(inputFile);
          Document inDoc = new Document(inFile);
-          
+
          File outFile = new File(outputFile);
          Document outDoc = null;
-          
+
          Session adminSession = null;
          ResourceResolver resourceResolver = null;
          try {
-               
+
               /** resourceResolver with admin privileges to be passed to SignatureServiceAPI and Reader Extensions
               the resource resolver for signature options has to be corresponding to the user who has the signing certificate in his granite key store
               the resource resolver for signature options has to be corresponding to the user who has the credential for reader extension in his granite key store
@@ -516,10 +516,10 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
               */
               adminSession = slingRepository.loginAdministrative(null);
               resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-              
+
               VerificationTime verificationTime = getVerificationTimeForPades();
               ValidationPreferences dssPrefs = getValidationPreferences();
-               
+
               //retrieve specifications for each of the services, you may pass null if you don't want to use that service
               //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
                outDoc = docAssuranceService.applyDocumentTimeStamp(inDoc, verificationTime, dssPrefs, resourceResolver, null);
@@ -538,31 +538,31 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
                  adminSession.logout();
              }
          }
-          
+
          outDoc.copyToFile(outFile);
 
      }
 
   public  VerificationTime getVerificationTimeForPades(){
-         
+
          return VerificationTime.SECURE_TIME_ELSE_CURRENT_TIME;
-         
+
      }
 
  /**
        * sets ValidationPreferences
        */
       private static ValidationPreferences getValidationPreferences(){
-          
+
          ValidationPreferencesImpl prefs = new ValidationPreferencesImpl();
          prefs.setPKIPreferences(getPKIPreferences());
-         
+
          //set the unlock options for processing an encrypted pdf document, do not set if the input doc is unprotected
-         
+
          return prefs;
-          
+
      }
-  
+
    /**
        * sets PKIPreferences
        */
@@ -574,18 +574,18 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
          pkiPref.setTSPPreferences(getTspPref());
          return pkiPref;
      }
-  
+
    /**
       * sets CRL Preferences
       */
      private static CRLPreferences getCRLPreferences(){
-      
+
          CRLPreferencesImpl crlPrefs = new CRLPreferencesImpl();
          crlPrefs.setRevocationCheck(RevocationCheckStyle.BestEffort);
          crlPrefs.setGoOnline(true);
          return crlPrefs;
      }
-      
+
      /**
       *
       * sets PathValidationPreferences
@@ -594,13 +594,13 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
          PathValidationPreferencesImpl pathPref = new PathValidationPreferencesImpl();
          pathPref.setDoValidation(true);
          return pathPref;
-          
+
      }
 
    public static TSPPreferences getTspPref(){
    TSPPreferencesImpl tspPrefs=new TSPPreferencesImpl();
    char pass[]=new char[9];
-   
+
    tspPrefs.setTspServerURL("TSPPrefs_ServerURL");
    tspPrefs.setUsername("TSPPrefs_Username");
    tspPrefs.setPassword(pass);
@@ -625,25 +625,25 @@ You can retrieve the names of all signature fields that are located in a PDF doc
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>doc</code><br /> </td> 
-   <td>Document object containing PDF.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>signatureFieldName</code></td> 
-   <td>The name of the signature field that contains a signature. Specify the fully qualified name of the signature field. When using a PDF document that is based on an XFA form, then the partial name of the signature field can be used. For example, <code>form1[0].#subform[1].SignatureField3[3]</code> can be specified as <code>SignatureField3[3]</code>.</td> 
-  </tr> 
-  <tr> 
-   <td><code>UnlockOptions</code></td> 
-   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>doc</code><br /> </td>
+   <td>Document object containing PDF.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>signatureFieldName</code></td>
+   <td>The name of the signature field that contains a signature. Specify the fully qualified name of the signature field. When using a PDF document that is based on an XFA form, then the partial name of the signature field can be used. For example, <code>form1[0].#subform[1].SignatureField3[3]</code> can be specified as <code>SignatureField3[3]</code>.</td>
+  </tr>
+  <tr>
+   <td><code>UnlockOptions</code></td>
+   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code example retrieves the signature information for the given signature field located in a PDF document.
@@ -688,11 +688,11 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.adobe.fd.signatures.client.types.PDFSignature;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. 
+ * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
  * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
- * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as 
+ * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
- * 
+ *
  * The following Java code example retrieves the Signature Info for the given signature field located in a PDF document.
  */
 
@@ -702,28 +702,28 @@ public class GetSignature {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  /**
-  * 
+  *
   * @param inputFile - path to the pdf document stored at disk
-  * @throws SignaturesBaseException 
-  * @throws DuplicateSignatureFieldException 
-  * @throws PermissionsException 
-  * @throws PDFOperationException 
-  * @throws InvalidArgumentException 
-  * 
+  * @throws SignaturesBaseException
+  * @throws DuplicateSignatureFieldException
+  * @throws PermissionsException
+  * @throws PDFOperationException
+  * @throws InvalidArgumentException
+  *
   */
  public void GetSignature(String inputFile) throws Exception {
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-       
+
   //Retrieve signature data for a given signature field.
   //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
         PDFSignature pdfSignature = docAssuranceService.getSignature(inDoc,"fieldName",null);
-        
+
    }
-       
+
   /**
      * sets Unlock Options for encrypted PDF
      */
@@ -731,12 +731,12 @@ public class GetSignature {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 }
 
@@ -766,9 +766,9 @@ The following Java code example retrieves the names of signature fields located 
 *Copyright 2014 Adobe Systems Incorporated
 *All Rights Reserved.
 
-*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the 
-*terms of the Adobe license agreement accompanying it.  If you have received this file from a 
-*source other than Adobe, then your use, modification, or distribution of it requires the prior 
+*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the
+*terms of the Adobe license agreement accompanying it.  If you have received this file from a
+*source other than Adobe, then your use, modification, or distribution of it requires the prior
 *written permission of Adobe.
 -------------------------------------------------------------------------------------------------
 **************************************************************************/
@@ -793,11 +793,11 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. 
+ * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
  * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
- * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as 
+ * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
- * 
+ *
  * The following Java code example retrieves the names of signature fields located in a PDF document.
  */
 
@@ -807,39 +807,39 @@ public class GetSignatureFields {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  /**
-  * 
+  *
   * @param inputFile - path to the pdf document stored at disk
-  * @throws SignaturesBaseException 
-  * @throws DuplicateSignatureFieldException 
-  * @throws PermissionsException 
-  * @throws PDFOperationException 
-  * @throws InvalidArgumentException 
-  * 
+  * @throws SignaturesBaseException
+  * @throws DuplicateSignatureFieldException
+  * @throws PermissionsException
+  * @throws PDFOperationException
+  * @throws InvalidArgumentException
+  *
   */
  public void getSignatureFields(String inputFile) throws Exception {
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-       
+
   //Retrieve the name of the document's signature fields
   //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
         List fieldNames = docAssuranceService.getSignatureFieldList(inDoc,null);
 
-        //Obtain the name of each signature field by iterating through the 
+        //Obtain the name of each signature field by iterating through the
         //List object
-        Iterator iter = fieldNames.iterator(); 
-        int i = 0 ; 
+        Iterator iter = fieldNames.iterator();
+        int i = 0 ;
         String fieldName="";
-        while (iter.hasNext()) { 
-            PDFSignatureField signatureField = (PDFSignatureField)iter.next(); 
+        while (iter.hasNext()) {
+            PDFSignatureField signatureField = (PDFSignatureField)iter.next();
             fieldName = signatureField.getName();
-            System.out.println("The name of the signature field is " +fieldName); 
+            System.out.println("The name of the signature field is " +fieldName);
             i++;
         }
    }
-       
+
   /**
      * sets Unlock Options for encrypted PDF
      */
@@ -847,12 +847,12 @@ public class GetSignatureFields {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 }
 ```
@@ -869,29 +869,29 @@ By modifying an existing signature field, you can edit the PDF document to refle
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code></td> 
-   <td>Document object containing PDF</td> 
-  </tr> 
-  <tr> 
-   <td><code>signatureFieldName</code></td> 
-   <td>The name of the signature field. This parameter is mandatory and cannot accept a null value.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>pdfSignatureFieldProperties</code></td> 
-   <td>Object that specifies information about the <code>PDFSeedValueOptionSpec</code> and <code>FieldMDPOptionSpec</code> values of the signature field.</td> 
-  </tr> 
-  <tr> 
-   <td><code>unlockOptions</code></td> 
-   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code></td>
+   <td>Document object containing PDF</td>
+  </tr>
+  <tr>
+   <td><code>signatureFieldName</code></td>
+   <td>The name of the signature field. This parameter is mandatory and cannot accept a null value.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>pdfSignatureFieldProperties</code></td>
+   <td>Object that specifies information about the <code>PDFSeedValueOptionSpec</code> and <code>FieldMDPOptionSpec</code> values of the signature field.</td>
+  </tr>
+  <tr>
+   <td><code>unlockOptions</code></td>
+   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample modifies a signature field by locking all fields in the form when a signature is applied to the signature field.
@@ -905,9 +905,9 @@ The following Java code sample modifies a signature field by locking all fields 
 *Copyright 2014 Adobe Systems Incorporated
 *All Rights Reserved.
 
-*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the 
-*terms of the Adobe license agreement accompanying it.  If you have received this file from a 
-*source other than Adobe, then your use, modification, or distribution of it requires the prior 
+*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the
+*terms of the Adobe license agreement accompanying it.  If you have received this file from a
+*source other than Adobe, then your use, modification, or distribution of it requires the prior
 *written permission of Adobe.
 -------------------------------------------------------------------------------------------------
 
@@ -942,16 +942,16 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 /**
  * You can modify signature fields that are located in a PDF document by using the Java API and web service API. Modifying a signature field involves
  * manipulating its signature field lock dictionary values or seed value dictionary values.
- * A field lock dictionary specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from making 
- * changes to the field. A seed value dictionary contains constraining information that is used at the time the signature is applied. 
+ * A field lock dictionary specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from making
+ * changes to the field. A seed value dictionary contains constraining information that is used at the time the signature is applied.
  * For example, you can change permissions that control the actions that can occur without invalidating a signature.
- * By modifying an existing signature field, you can make changes to the PDF document to reflect changing business requirements. For example, 
+ * By modifying an existing signature field, you can make changes to the PDF document to reflect changing business requirements. For example,
  * a new business requirement may require locking all document fields after the document is signed.
- * This section explains how to modify a signature field by amending both field lock dictionary and seed value dictionary values. 
- * Changes made to the signature field lock dictionary result in all fields in the PDF document being locked when a signature field is signed. 
+ * This section explains how to modify a signature field by amending both field lock dictionary and seed value dictionary values.
+ * Changes made to the signature field lock dictionary result in all fields in the PDF document being locked when a signature field is signed.
  * Changes made to the seed value dictionary prohibit specific types of changes to the document.
- * 
- * The following Java code example modifies a signature field named SignatureField1 by locking all fields in the form when a signature is applied to the signature field and ensuring that no changes are allowed. 
+ *
+ * The following Java code example modifies a signature field named SignatureField1 by locking all fields in the form when a signature is applied to the signature field and ensuring that no changes are allowed.
  * After the Signature service returns the PDF document that contains the modified signature field
  */
 
@@ -961,52 +961,52 @@ public class ModifySignatureField {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  /**
-  * 
+  *
   * @param inputFile - path to the pdf document stored at disk
   * @param outFile - path where the output file has to be saved
-  * 
-  * 
+  *
+  *
   */
  public void modifySignatureField(String inputFile, String outFile) throws Exception {
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
 
   //Specify the name of the signature field
         String fieldName = "SignatureField1";
-        
+
         //Create a PDFSignatureFieldProperties
         PDFSignatureFieldProperties fieldProperties = new PDFSignatureFieldProperties();
-         
-         //Create a PDFSeedValueOptionSpec object that stores 
+
+         //Create a PDFSeedValueOptionSpec object that stores
          //seed value dictionary information.
          PDFSeedValueOptionSpec seedOptionsSpec = new PDFSeedValueOptionSpec();
-         
-         //Disallow changes to the PDF document. Any change to the document invalidates 
+
+         //Disallow changes to the PDF document. Any change to the document invalidates
          //the signature
          seedOptionsSpec.setMdpValue(MDPPermissions.NoChanges);
-         
-         //Create a FieldMDPOptionSpec object that stores 
+
+         //Create a FieldMDPOptionSpec object that stores
          //signature field lock dictionary information.
-         FieldMDPOptionSpec fieldMDPOptionsSpec = new FieldMDPOptionSpec();    
-         
+         FieldMDPOptionSpec fieldMDPOptionsSpec = new FieldMDPOptionSpec();
+
          //Lock all fields in the PDF document
          fieldMDPOptionsSpec.setAction(FieldMDPAction.ALL);
-         
+
          //Set dictionary information
          fieldProperties.setSeedValue(seedOptionsSpec);
          fieldProperties.setFieldMDP(fieldMDPOptionsSpec);
-                 
+
          //Modify the signature field
          //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
          Document modSignatureField =  docAssuranceService.modifySignatureField(inDoc,fieldName,fieldProperties,null);
-       
+
         //save the modSignatureField
          modSignatureField.copyToFile(new File(outFile));
  }
- 
+
   /**
      * sets Unlock Options for encrypted PDF
      */
@@ -1014,12 +1014,12 @@ public class ModifySignatureField {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 }
 ```
@@ -1032,7 +1032,7 @@ You can secure a PDF document by certifying it with a particular type of signatu
 * The author or originator of the document can specify that the document can be modified in certain ways without invalidating the certified signature. For example, the document can permit filling in forms or commenting. If the author specifies that a certain modification is not permitted, Acrobat restricts users from modifying the document in that way. If such modifications are made, the certified signature is invalid. In addition, Acrobat issues a warning when a user opens the document. (With non-certified signatures, modifications are not prevented, and normal editing operations do not invalidate the original signature.)
 * At the time of signing, the document is scanned for specific types of content that could make the contents of a document ambiguous or misleading. For example, an annotation could obscure some text on a page that is important for understanding what is being certified. An explanation (legal attestation) can be provided about such content.
 
-**Syntax**: 
+**Syntax**:
 
 ```
 secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
@@ -1041,33 +1041,33 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>Document input PDF document<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>encryptionOptions</code><br /> </td> 
-   <td>Includes the arguments required for Encrypting a PDF document<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>signatureOptions</code></td> 
-   <td>Includes the options required for Signing/Certifying a PDF document</td> 
-  </tr> 
-  <tr> 
-   <td><code>readerExtensionOptions</code></td> 
-   <td>Includes the options required for Reader Extending a PDF document</td> 
-  </tr> 
-  <tr> 
-   <td><code>unlockOptions</code></td> 
-   <td>Includes the parameters require to unlock an encrypted file, This is required only if the file is encrypted.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>Document input PDF document<br /> </td>
+  </tr>
+  <tr>
+   <td><code>encryptionOptions</code><br /> </td>
+   <td>Includes the arguments required for Encrypting a PDF document<br /> </td>
+  </tr>
+  <tr>
+   <td><code>signatureOptions</code></td>
+   <td>Includes the options required for Signing/Certifying a PDF document</td>
+  </tr>
+  <tr>
+   <td><code>readerExtensionOptions</code></td>
+   <td>Includes the options required for Reader Extending a PDF document</td>
+  </tr>
+  <tr>
+   <td><code>unlockOptions</code></td>
+   <td>Includes the parameters require to unlock an encrypted file, This is required only if the file is encrypted.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following code sample certifies a PDF document that is based on a PDF file.
@@ -1080,9 +1080,9 @@ The following code sample certifies a PDF document that is based on a PDF file.
 *Copyright 2014 Adobe Systems Incorporated
 *All Rights Reserved.
 
-*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the 
-*terms of the Adobe license agreement accompanying it.  If you have received this file from a 
-*source other than Adobe, then your use, modification, or distribution of it requires the prior 
+*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the
+*terms of the Adobe license agreement accompanying it.  If you have received this file from a
+*source other than Adobe, then your use, modification, or distribution of it requires the prior
 *written permission of Adobe.
 -------------------------------------------------------------------------------------------------
 
@@ -1127,28 +1127,28 @@ import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferences;
 import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferencesImpl;
 
 /**
- * You can secure a PDF document by certifying it with a particular type of signature called a certified signature. 
+ * You can secure a PDF document by certifying it with a particular type of signature called a certified signature.
  * A certified signature is distinguished from a digital signature in these ways:
- * 
+ *
  * It must be the first signature applied to the PDF document; that is, at the time the certified signature is applied, any other signature fields in the document must be unsigned.
- * Only one certified signature is permitted in a PDF document. If you want to sign and certify a PDF document, you must certify it before signing it. 
+ * Only one certified signature is permitted in a PDF document. If you want to sign and certify a PDF document, you must certify it before signing it.
  * After you certify a PDF document, you can digitally sign additional signature fields.
- * 
- * The author or originator of the document can specify that the document can be modified in certain ways without invalidating the certified signature. For example, 
- * the document may permit filling in forms or commenting. If the author specifies that a certain modification is not permitted, Acrobat restricts users from modifying the document 
- * in that way. If such modifications are made, such as by using another application, the certified signature is invalid and Acrobat issues a warning when a user opens the document. 
+ *
+ * The author or originator of the document can specify that the document can be modified in certain ways without invalidating the certified signature. For example,
+ * the document may permit filling in forms or commenting. If the author specifies that a certain modification is not permitted, Acrobat restricts users from modifying the document
+ * in that way. If such modifications are made, such as by using another application, the certified signature is invalid and Acrobat issues a warning when a user opens the document.
  * (With non-certified signatures, modifications are not prevented, and normal editing operations do not invalidate the original signature.)
- * 
- * At the time of signing, the document is scanned for specific types of content that could make the contents of a document ambiguous or misleading. For example, an annotation could 
+ *
+ * At the time of signing, the document is scanned for specific types of content that could make the contents of a document ambiguous or misleading. For example, an annotation could
  * obscure some text on a page that is important for understanding what is being certified. An explanation (legal attestation) can be provided about such content.
- * You can programmatically certify PDF documents by using the Signature service Java API or the Signature web service API. When certifying a PDF document, you must reference a security 
+ * You can programmatically certify PDF documents by using the Signature service Java API or the Signature web service API. When certifying a PDF document, you must reference a security
  * credential that exists in the Credential service.
- * 
- * Note: When certifying and signing the same PDF document, if the certify signature is not trusted, a yellow triangle appears next to the first sign signature when you open the PDF document in Acrobat or Adobe Reader. 
+ *
+ * Note: When certifying and signing the same PDF document, if the certify signature is not trusted, a yellow triangle appears next to the first sign signature when you open the PDF document in Acrobat or Adobe Reader.
  * The certifying signature must be trusted to avoid this situation.
- * 
- * The following Java code example certifies a PDF document that is based on a PDF file. 
- * 
+ *
+ * The following Java code example certifies a PDF document that is based on a PDF file.
+ *
  * PreRequisites - Digital certificate for certifying the document has to be uploaded on AEM Key Store.
  *
  */
@@ -1159,16 +1159,16 @@ public class Certify {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  @Reference
     private SlingRepository slingRepository;
- 
+
  @Reference
     private JcrResourceResolverFactory jcrResourceResolverFactory ;
 
  /**
-  * 
-  * @param inputFile - path to the pdf document stored at JCR node 
+  *
+  * @param inputFile - path to the pdf document stored at JCR node
   * @param outputFile - path to the pdf document where the output needs to be stored
   * @throws IOException
   * @throws RepositoryException
@@ -1176,17 +1176,17 @@ public class Certify {
   * @throws DocAssuranceException
   */
  public void certify(String inputFile, String outputFile) throws IOException, RepositoryException, InvalidArgumentException, DocAssuranceException{
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   File outFile = new File(outputFile);
   Document outDoc = null;
-  
+
   Session adminSession = null;
         ResourceResolver resourceResolver = null;
         try {
-          
+
           /** resourceResolver to be passed to SignatureServiceAPI and Reader Extensions
           the resource resolver for signature options has to be corresponding to the user who has the signing certificate in his granite key store
           the resource resolver for signature options has to be corresponding to the user who has the credential for reader extension in his granite key store
@@ -1194,7 +1194,7 @@ public class Certify {
           */
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-             
+
              //retrieve specifications for each of the services, you may pass null if you don't want to use that service
              //we are not extending the reader in this case, so passing null
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
@@ -1204,7 +1204,7 @@ public class Certify {
     // TODO Auto-generated catch block
     e.printStackTrace();
    }
-    
+
         }
         finally{
             /**
@@ -1220,47 +1220,47 @@ public class Certify {
                 adminSession.logout();
             }
         }
-        
+
         outDoc.copyToFile(outFile);
 
  }
- 
+
  /**
-  * 
-  * @param rr resource resolver corresponding to the user with the access to signing credential for the 
+  *
+  * @param rr resource resolver corresponding to the user with the access to signing credential for the
   * given alias "allcertificatesanypolicytest11ee_new" in this case
   * @return SignatureOptions
   */
  private SignatureOptions getCertificationOptions(ResourceResolver rr){
-  
+
   //create an instance of SignatureOptions
   SignatureOptions signatureOptions = SignatureOptions.getInstance();
-  
+
   //set the operation you want to perform - SIGN/CERTIFY
   signatureOptions.setOperationType(DocAssuranceServiceOperationTypes.CERTIFY);
-  
+
   //signature field to certify, pass null if invisible signature field
   String fieldName = "Signature1" ;
-  
+
   //alias of the private credential uploaded on the Key Store
         String alias = "allcertificatesanypolicytest11ee_new";
-        
+
         //Hash Algo to be used to compute digest the PDF document
         HashAlgorithm algo = HashAlgorithm.SHA256;
-        
+
         //Reason for signing/certifying
         String reason = "Reason";
-        
+
         //location of the signer
         String location = "Location";
-        
+
         //contact info of the signer
         String contactInfo = "Contact Info";
-        
+
         //DocMDP Permissions associated with certification
         MDPPermissions mdpPermissions = MDPPermissions.valueOf("FormChanges");
-        
-        //Create a PDFSignatureAppearanceOptions object 
+
+        //Create a PDFSignatureAppearanceOptions object
         //and show date information
         PDFSignatureAppearenceOptions appOptions = new PDFSignatureAppearenceOptions(
                 PDFSignatureAppearanceType.NAME, null, 1.0d, null, true, true,
@@ -1277,7 +1277,7 @@ public class Certify {
         signatureOptions.setMdpPermissions(mdpPermissions);
   return signatureOptions;
  }
- 
+
  private DSSPreferences getDSSPreferences(ResourceResolver rr){
   //sets the DSS Preferences
         DSSPreferencesImpl prefs = DSSPreferencesImpl.getInstance();
@@ -1286,7 +1286,7 @@ public class Certify {
         gp.setDisableCache(true);
         return prefs;
     }
-    
+
     private PKIPreferences getPKIPreferences(){
      //sets the PKI Preferences
         PKIPreferences pkiPref = new PKIPreferencesImpl();
@@ -1294,7 +1294,7 @@ public class Certify {
         pkiPref.setPathPreferences(getPathValidationPreferences());
         return pkiPref;
     }
-    
+
     private CRLPreferences getCRLPreferences(){
         //specifies the CRL Preferences
         CRLPreferencesImpl crlPrefs = new CRLPreferencesImpl();
@@ -1302,15 +1302,15 @@ public class Certify {
         crlPrefs.setGoOnline(true);
         return crlPrefs;
     }
-    
+
     private PathValidationPreferences getPathValidationPreferences(){
      //sets the path validation preferences
         PathValidationPreferencesImpl pathPref = new PathValidationPreferencesImpl();
         pathPref.setDoValidation(false);
         return pathPref;
-        
+
     }
-    
+
     /**
      * sets Unlock Options for encrypted PDF
      */
@@ -1318,12 +1318,12 @@ public class Certify {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 
 }
@@ -1398,7 +1398,7 @@ For example, an annotation could obscure some text on a page that is important f
 
 ***Note**: Before you can digitally sign a PDF document, you must ensure that you add the credential in AEM Keystore. The credential is the private key used for signing*.
 
-**Syntax**: 
+**Syntax**:
 
 ```
 secureDocument(Document inDoc,
@@ -1410,33 +1410,33 @@ secureDocument(Document inDoc,
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>Document input PDF Document<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>encryptionOptions</code><br /> </td> 
-   <td>Includes the arguments required for Encrypting a PDF Doc<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>signatureOptions</code></td> 
-   <td>Includes the options required for Signing/Certifying a PDF Doc</td> 
-  </tr> 
-  <tr> 
-   <td><code>readerExtensionOptions</code></td> 
-   <td>Includes the options required for Reader Extending a PDF Doc</td> 
-  </tr> 
-  <tr> 
-   <td><code>unlockOptions</code></td> 
-   <td>Includes the parameters require to unlock an encrypted file, This is required only if the file is encrypted.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>Document input PDF Document<br /> </td>
+  </tr>
+  <tr>
+   <td><code>encryptionOptions</code><br /> </td>
+   <td>Includes the arguments required for Encrypting a PDF Doc<br /> </td>
+  </tr>
+  <tr>
+   <td><code>signatureOptions</code></td>
+   <td>Includes the options required for Signing/Certifying a PDF Doc</td>
+  </tr>
+  <tr>
+   <td><code>readerExtensionOptions</code></td>
+   <td>Includes the options required for Reader Extending a PDF Doc</td>
+  </tr>
+  <tr>
+   <td><code>unlockOptions</code></td>
+   <td>Includes the parameters require to unlock an encrypted file, This is required only if the file is encrypted.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 **Sample 1**: This sample is used to carry out password encryption, certifying a signature field and Reader Extending the PDF document.
@@ -1505,10 +1505,10 @@ import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferences;
 import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferencesImpl;
 
 /**
- * 
+ *
  * This class provides a sample code to use {@code DocAssuranceService} to carry out
  * password encryption, certifying a signature field and reader extending the pdf document.
- * 
+ *
  * PreRequisites - Digital certificate for signing the document has to be uploaded on Granite Key Store
  * Digital certificate for reader extending the document has to be uploaded on Granite Key Store
  */
@@ -1519,31 +1519,31 @@ public class PassEncryptCertifyExtend {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  @Reference
     private SlingRepository slingRepository;
- 
+
  @Reference
     private JcrResourceResolverFactory jcrResourceResolverFactory ;
 
  /**
-  * 
-  * @param inputFile - path to the pdf document stored at disk 
+  *
+  * @param inputFile - path to the pdf document stored at disk
   * @param outputFile - path to the pdf document where the output needs to be stored
-  * @throws Exception 
+  * @throws Exception
   */
  public void SecureDocument(String inputFile, String outputFile) throws Exception{
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   File outFile = new File(outputFile);
   Document outDoc = null;
-  
+
   Session adminSession = null;
         ResourceResolver resourceResolver = null;
         try {
-          
+
           /** resourceResolver with admin privileges to be passed to SignatureServiceAPI and Reader Extensions
           the resource resolver for signature options has to be corresponding to the user who has the signing certificate in his granite key store
           the resource resolver for signature options has to be corresponding to the user who has the credential for reader extension in his granite key store
@@ -1551,7 +1551,7 @@ public class PassEncryptCertifyExtend {
           */
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-             
+
              //retrieve specifications for each of the services, you may pass null if you don't want to use that service
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, getPassEncryptionOptions(), getCertificationOptions(resourceResolver), getReaderExtensionOptions(resourceResolver),null);
@@ -1570,11 +1570,11 @@ public class PassEncryptCertifyExtend {
                 adminSession.logout();
             }
         }
-        
+
         outDoc.copyToFile(outFile);
 
  }
- 
+
   /**
      * sets Unlock Options for encrypted PDF
      */
@@ -1582,62 +1582,62 @@ public class PassEncryptCertifyExtend {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
- 
+
  /**
   * @return EncryptionOptions for password encrypting the document.
-  * 
+  *
   */
  private EncryptionOptions getPassEncryptionOptions(){
-  
+
   //Create an instance of EncryptionOptions
   EncryptionOptions encryptionOptions = EncryptionOptions.getInstance();
-  
+
   //Create a PasswordEncryptionOptionSpec object that stores encryption run-time values
         PasswordEncryptionOptionSpec passSpec = new PasswordEncryptionOptionSpec();
-        
+
         //Specify the PDF document resource to encrypt
         passSpec.setEncryptOption(PasswordEncryptionOption.ALL);
-        
+
         //Specify the permission associated with the password
         //These permissions enable data to be extracted from a password
         //protected PDF form
-        List<PasswordEncryptionPermission> encrypPermissions = new ArrayList<PasswordEncryptionPermission>(); 
+        List<PasswordEncryptionPermission> encrypPermissions = new ArrayList<PasswordEncryptionPermission>();
         encrypPermissions.add(PasswordEncryptionPermission.PASSWORD_EDIT_ADD);
         encrypPermissions.add(PasswordEncryptionPermission.PASSWORD_EDIT_MODIFY);
         passSpec.setPermissionsRequested(encrypPermissions);
-        
+
         //Specify the Acrobat version
         passSpec.setCompatability(PasswordEncryptionCompatability.ACRO_7);
-        
+
         //Specify the password values
         passSpec.setDocumentOpenPassword("OpenPassword");
         passSpec.setPermissionPassword("PermissionPassword");
-        
+
         //Set the encryption type to Password Encryption
   encryptionOptions.setEncryptionType(DocAssuranceServiceOperationTypes.ENCRYPT_WITH_PASSWORD);
         encryptionOptions.setPasswordEncryptionOptionSpec(passSpec);
 
      return encryptionOptions;
  }
- 
+
  /**
-  * 
-  * @param resourceResolver corresponding to the user with the access to Reader Extension credential 
+  *
+  * @param resourceResolver corresponding to the user with the access to Reader Extension credential
   * for the given alias -"production" in this case
   * @return
   */
  private ReaderExtensionOptions getReaderExtensionOptions(ResourceResolver resourceResolver){
-  
+
   //Create an instance of ReaderExtensionOptions
   ReaderExtensionOptions reOptions = ReaderExtensionOptions.getInstance();
-  
+
   //Create instance for UsageRights to be enabled in the reader
   UsageRights uRights = new UsageRights();
   //enabling comments in the PDF Reader
@@ -1645,54 +1645,54 @@ public class PassEncryptCertifyExtend {
   //setting ReaderExtensionsOptionSpec in the reOptions
   reOptions.setReOptions(new ReaderExtensionsOptionSpec(uRights, "Enable commenting in PDF"));
   //alias of the credential to be used for extending the PDF Reader
-  reOptions.setCredentialAlias("production");  
+  reOptions.setCredentialAlias("production");
   //corresponding to the user with the access to Reader Extension credential
-  reOptions.setResourceResolver(resourceResolver); 
-  
+  reOptions.setResourceResolver(resourceResolver);
+
   return reOptions;
  }
- 
+
  /**
-  * 
-  * @param rr resource resolver corresponding to the user with the access to signing credential for the 
+  *
+  * @param rr resource resolver corresponding to the user with the access to signing credential for the
   * given alias "allcertificatesanypolicytest11ee_new" in this case
   * @return SignatureOptions
   */
  private SignatureOptions getCertificationOptions(ResourceResolver rr){
-  
+
   //create an instance of SignatureOptions
   SignatureOptions signatureOptions = SignatureOptions.getInstance();
-  
+
   //set the operation you want to perform - SIGN/CERTIFY
   signatureOptions.setOperationType(DocAssuranceServiceOperationTypes.CERTIFY);
-  
+
   //signature field to certify, pass null if invisible signature field
   String fieldName = "Signature1" ;
-  
+
   //alias of the private credential uploaded on the Key Store
         String alias = "allcertificatesanypolicytest11ee_new";
-        
+
         //Hash Algo to be used to compute digest the PDF document
         HashAlgorithm algo = HashAlgorithm.SHA384;
-        
+
         //Reason for signing/certifying
         String reason = "Test Reason";
-        
+
         //location of the signer
         String location = "Test Location";
-        
+
         //contact info of the signer
         String contactInfo = "Test Contact";
-        
+
         //DocMDP Permissions associated with certification
         MDPPermissions mdpPermissions = MDPPermissions.valueOf("FormChanges");
-        
-        //Create a PDFSignatureAppearanceOptions object 
+
+        //Create a PDFSignatureAppearanceOptions object
         //and show date information
         PDFSignatureAppearenceOptions appOptions = new PDFSignatureAppearenceOptions(
                 PDFSignatureAppearanceType.NAME, null, 1.0d, null, true, true,
                 true, true, true, true, true, TextDirection.AUTO);
-        
+
         signatureOptions.setSignatureFieldName(fieldName);
         signatureOptions.setAlgo(algo);
         signatureOptions.setContactInfo(contactInfo);
@@ -1704,7 +1704,7 @@ public class PassEncryptCertifyExtend {
         signatureOptions.setMdpPermissions(mdpPermissions);
   return signatureOptions;
  }
- 
+
  private DSSPreferences getDSSPreferences(ResourceResolver rr){
   //sets the DSS Preferences
         DSSPreferencesImpl prefs = DSSPreferencesImpl.getInstance();
@@ -1713,7 +1713,7 @@ public class PassEncryptCertifyExtend {
         gp.setDisableCache(true);
         return prefs;
     }
-    
+
     private PKIPreferences getPKIPreferences(){
      //sets the PKI Preferences
         PKIPreferences pkiPref = new PKIPreferencesImpl();
@@ -1721,7 +1721,7 @@ public class PassEncryptCertifyExtend {
         pkiPref.setPathPreferences(getPathValidationPreferences());
         return pkiPref;
     }
-    
+
     private CRLPreferences getCRLPreferences(){
         //specifies the CRL Preferences
         CRLPreferencesImpl crlPrefs = new CRLPreferencesImpl();
@@ -1729,15 +1729,15 @@ public class PassEncryptCertifyExtend {
         crlPrefs.setGoOnline(true);
         return crlPrefs;
     }
-    
+
     private PathValidationPreferences getPathValidationPreferences(){
      //sets the path validation preferences
         PathValidationPreferencesImpl pathPref = new PathValidationPreferencesImpl();
         pathPref.setDoValidation(false);
         return pathPref;
-        
+
     }
-    
+
 }
 ```
 
@@ -1816,10 +1816,10 @@ import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferences;
 import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferencesImpl;
 
 /**
- * 
+ *
  * This class provides a sample code to use {@code DocAssuranceService} to carry out
  * certificate encryption, signing a signature field and reader extending the pdf document.
- * 
+ *
  * PreRequisites - Digital certificate for encrypting the document has to be uploaded on Granite Trust Store
        Digital certificate for signing the document has to be uploaded on Granite Key Store
  * Digital certificate for reader extending the document has to be uploaded on Granite Key Store
@@ -1828,34 +1828,34 @@ import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferencesI
 @Component
 @Service(value=PassEncryptSignExtend.class)
 public class PassEncryptSignExtend {
- 
+
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  @Reference
     private SlingRepository slingRepository;
- 
+
  @Reference
     private JcrResourceResolverFactory jcrResourceResolverFactory ;
 
  /**
-  * 
-  * @param inputFile - path to the pdf document stored at disk 
+  *
+  * @param inputFile - path to the pdf document stored at disk
   * @param outputFile - path to the pdf document where the output needs to be stored
-  * @throws Exception 
+  * @throws Exception
   */
  public void CertEncryptSignReaderExtend(String inputFile, String outputFile) throws Exception{
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   File outFile = new File(outputFile);
   Document outDoc = null;
-  
+
   Session adminSession = null;
         ResourceResolver resourceResolver = null;
         try {
-          
+
           /** resourceResolver with admin privileges to be passed to SignatureServiceAPI and Reader Extensions
           the resource resolver for signature options has to be corresponding to the user who has the signing certificate in his granite key store
           the resource resolver for signature options has to be corresponding to the user who has the credential for reader extension in his granite key store
@@ -1863,7 +1863,7 @@ public class PassEncryptSignExtend {
           */
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-             
+
              //retrieve specifications for each of the services, you may pass null if you don't want to use that service
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, getCertEncryptionOptions(), getSignatureOptions(resourceResolver), getReaderExtensionOptions(resourceResolver),null);
@@ -1882,11 +1882,11 @@ public class PassEncryptSignExtend {
                 adminSession.logout();
             }
         }
-        
+
         outDoc.copyToFile(outFile);
 
  }
- 
+
   /**
      * sets Unlock Options for encrypted PDF
      */
@@ -1894,77 +1894,77 @@ public class PassEncryptSignExtend {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
-    
+
  /**
   * @return EncryptionOptions for password encrypting the document.
-  * 
+  *
   */
  private EncryptionOptions getCertEncryptionOptions(){
-  
+
   //Create an instance of EncryptionOptions
   EncryptionOptions encryptionOptions = EncryptionOptions.getInstance();
-  
+
         //Set the encryption type to Certificate Encryption
   encryptionOptions.setEncryptionType(DocAssuranceServiceOperationTypes.ENCRYPT_WITH_CERTIFCATE);
-  
+
   //Set the List that stores PKI information
-  List<CertificateEncryptionIdentity> pkiIdentities = new ArrayList<CertificateEncryptionIdentity>(); 
-   
+  List<CertificateEncryptionIdentity> pkiIdentities = new ArrayList<CertificateEncryptionIdentity>();
+
   //Set the Permission List
   List<CertificateEncryptionPermissions> permList = new ArrayList<CertificateEncryptionPermissions>();
   permList.add(CertificateEncryptionPermissions.PKI_ALL_PERM) ;
-   
+
   //Create a Recipient object to store certificate information
   Recipient recipient = new Recipient();
-   
+
   //Specify the alias of the public certificate present in the trust store that is used to encrypt the document
   recipient.setX509Cert("alias");
   /*
    * An alternative to add a certificate is by providing the alias
    * of the certificate stored in AEM trust store.
-   * recipient.setAlias(alias);                             
+   * recipient.setAlias(alias);
    */
-  
+
   //Create an EncryptionIdentity object
-  CertificateEncryptionIdentity encryptionId = new CertificateEncryptionIdentity(); 
+  CertificateEncryptionIdentity encryptionId = new CertificateEncryptionIdentity();
   encryptionId.setPerms(permList);
   encryptionId.setRecipient(recipient);
-   
+
   //Add the EncryptionIdentity to the list
   pkiIdentities.add(encryptionId);
 
   //Set encryption run-time options
-  CertificateEncryptionOptionSpec certOptionsSpec = new CertificateEncryptionOptionSpec(); 
+  CertificateEncryptionOptionSpec certOptionsSpec = new CertificateEncryptionOptionSpec();
   certOptionsSpec.setOption(CertificateEncryptionOption.ALL);
   certOptionsSpec.setCompat(CertificateEncryptionCompatibility.ACRO_9);
 
   //Set the certificate encryption option
   encryptionOptions.setCertOptionSpec(certOptionsSpec)
-  
+
   //Set the PKI Identities in encryption Options
         encryptionOptions.setPkiIdentities(pkiIdentities);
 
      return encryptionOptions;
  }
- 
+
  /**
-  * 
-  * @param resourceResolver corresponding to the user with the access to Reader Extension credential 
+  *
+  * @param resourceResolver corresponding to the user with the access to Reader Extension credential
   * for the given alias -"production" in this case
   * @return
   */
  private ReaderExtensionOptions getReaderExtensionOptions(ResourceResolver resourceResolver){
-  
+
   //Create an instance of ReaderExtensionOptions
   ReaderExtensionOptions reOptions = ReaderExtensionOptions.getInstance();
-  
+
   //Create instance for UsageRights to be enabled in the reader
   UsageRights uRights = new UsageRights();
   //enabling comments in the PDF Reader
@@ -1972,51 +1972,51 @@ public class PassEncryptSignExtend {
   //setting ReaderExtensionsOptionSpec in the reOptions
   reOptions.setReOptions(new ReaderExtensionsOptionSpec(uRights, "Enable commenting in PDF"));
   //alias of the credential to be used for extending the PDF Reader
-  reOptions.setCredentialAlias("production");  
+  reOptions.setCredentialAlias("production");
   //corresponding to the user with the access to Reader Extension credential
-  reOptions.setResourceResolver(resourceResolver); 
-  
+  reOptions.setResourceResolver(resourceResolver);
+
   return reOptions;
  }
- 
+
  /**
-  * 
-  * @param rr resource resolver corresponding to the user with the access to signing credential for the 
+  *
+  * @param rr resource resolver corresponding to the user with the access to signing credential for the
   * given alias "allcertificatesanypolicytest11ee_new" in this case
   * @return SignatureOptions
   */
  private SignatureOptions getSignatureOptions(ResourceResolver rr){
-  
+
   //create an instance of SignatureOptions
   SignatureOptions signatureOptions = SignatureOptions.getInstance();
-  
+
   //set the operation you want to perform - SIGN/CERTIFY
   signatureOptions.setOperationType(DocAssuranceServiceOperationTypes.SIGN);
-  
+
   //field to sign
   String fieldName = "Signature1" ;
-  
+
   //alias of the private credential uploaded on the Key Store
         String alias = "allcertificatesanypolicytest11ee_new";
-        
+
         //Hash Algo to be used to compute digest the PDF document
         HashAlgorithm algo = HashAlgorithm.SHA384;
-        
+
         //Reason for signing/certifying
         String reason = "Test Reason";
-        
+
         //location of the signer
         String location = "Test Location";
-        
+
         //contact info of the signer
         String contactInfo = "Test Contact";
-        
-        //Create a PDFSignatureAppearanceOptions object 
+
+        //Create a PDFSignatureAppearanceOptions object
         //and show date information
         PDFSignatureAppearenceOptions appOptions = new PDFSignatureAppearenceOptions(
                 PDFSignatureAppearanceType.NAME, null, 1.0d, null, true, true,
                 true, true, true, true, true, TextDirection.AUTO);
-        
+
         signatureOptions.setSignatureFieldName(fieldName);
         signatureOptions.setAlgo(algo);
         signatureOptions.setContactInfo(contactInfo);
@@ -2027,7 +2027,7 @@ public class PassEncryptSignExtend {
         signatureOptions.setCredential(new CredentialContext(alias, rr));
   return signatureOptions;
  }
- 
+
  private DSSPreferences getDSSPreferences(ResourceResolver rr){
   //sets the DSS Preferences
         DSSPreferencesImpl prefs = DSSPreferencesImpl.getInstance();
@@ -2036,7 +2036,7 @@ public class PassEncryptSignExtend {
         gp.setDisableCache(true);
         return prefs;
     }
-    
+
     private PKIPreferences getPKIPreferences(){
      //sets the PKI Preferences
         PKIPreferences pkiPref = new PKIPreferencesImpl();
@@ -2044,7 +2044,7 @@ public class PassEncryptSignExtend {
         pkiPref.setPathPreferences(getPathValidationPreferences());
         return pkiPref;
     }
-    
+
     private CRLPreferences getCRLPreferences(){
         //specifies the CRL Preferences
         CRLPreferencesImpl crlPrefs = new CRLPreferencesImpl();
@@ -2052,15 +2052,15 @@ public class PassEncryptSignExtend {
         crlPrefs.setGoOnline(true);
         return crlPrefs;
     }
-    
+
     private PathValidationPreferences getPathValidationPreferences(){
      //sets the path validation preferences
         PathValidationPreferencesImpl pathPref = new PathValidationPreferencesImpl();
         pathPref.setDoValidation(false);
         return pathPref;
-        
+
     }
-    
+
 }
 ```
 
@@ -2072,21 +2072,21 @@ To fetch usage rights information of the credential specified by the given `cred
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>credentialAlias</code><br /> </td> 
-   <td>The <code>credentialAlias</code> that specifies the credential.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>credentialPassword</code><br /> </td> 
-   <td>The password of the credential if the credential is encrypted, null needs to be used if the credential is not encrypted.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>credentialAlias</code><br /> </td>
+   <td>The <code>credentialAlias</code> that specifies the credential.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>credentialPassword</code><br /> </td>
+   <td>The password of the credential if the credential is encrypted, null needs to be used if the credential is not encrypted.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following sample fetches usage rights information for the credential specified.
@@ -2142,7 +2142,7 @@ public class ReaderExtensionsSampleService {
 public void getCredentialUsageRights() {
   try {
 
-   GetUsageRightsResult usageRightsResult = docAssuranceService.getCredentialUsageRights("production", 
+   GetUsageRightsResult usageRightsResult = docAssuranceService.getCredentialUsageRights("production",
      resourceResolverFactory.getAdministrativeResourceResolver(null));
 
    System.out.println("Credential usage Rights are as follows");
@@ -2150,7 +2150,7 @@ public void getCredentialUsageRights() {
 
   } catch (Exception e) {
    e.printStackTrace();
-  } 
+  }
  }
 }
 ```
@@ -2163,17 +2163,17 @@ To fetch usage rights information for a given document, call this API from withi
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDocument</code><br /> </td> 
-   <td>The document to fetch usage rights information from<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDocument</code><br /> </td>
+   <td>The document to fetch usage rights information from<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 This following sample code returns the usage rights information for a document.
@@ -2224,10 +2224,10 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 @Component(metatype = true, immediate = true, label = "ReaderExtensionsSampleService")
 @Service(value = ReaderExtensionsSampleService.class)
 public class ReaderExtensionsSampleService {
- 
+
  @Reference(referenceInterface=DocAssuranceService.class)
  private DocAssuranceService docAssuranceService;
- 
+
  @Reference(referenceInterface=ResourceResolverFactory.class)
 private ResourceResolverFactory resourceResolverFactory;
 
@@ -2236,19 +2236,19 @@ public void getDocumentUsageRights() {
   try {
    //Name of the input file on which usage rights is to be applied.
    String inputFileName = "C:/RETest/input/GetUsageRightsInfo/02_fromAcrobat7.0.8_Acro700_UB8_BS_signed_commenting.pdf";
-   
+
    //Document to be input to Doc Assurance Service
    inputDocument = new Document(new File(inputFileName));
-   
+
    //Unlock options to unlock the document if some kind of security is set on it.
    //Currently set to null because input document has no security.
    UnlockOptions unlockOptions = null;
-   
+
    GetUsageRightsResult usageRightsResult = docAssuranceService.getDocumentUsageRights(inputDocument, unlockOptions);
-   
+
    System.out.println("Document usage Rights are as follows");
    System.out.println(usageRightsResult.toString());
-   
+
   } catch (Exception e) {
    e.printStackTrace();
   } finally {
@@ -2281,21 +2281,21 @@ You can remove the usage rights for a document by calling the `removeUsageRights
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDocument</code><br /> </td> 
-   <td>The document to remove usage rights from.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>unlockOptions</code><br /> </td> 
-   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDocument</code><br /> </td>
+   <td>The document to remove usage rights from.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>unlockOptions</code><br /> </td>
+   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following sample removes the usage rights for a given document.
@@ -2346,10 +2346,10 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 @Component(metatype = true, immediate = true, label = "ReaderExtensionsSampleService")
 @Service(value = ReaderExtensionsSampleService.class)
 public class ReaderExtensionsSampleService {
- 
+
  @Reference(referenceInterface=DocAssuranceService.class)
  private DocAssuranceService docAssuranceService;
- 
+
  @Reference(referenceInterface=ResourceResolverFactory.class)
 private ResourceResolverFactory resourceResolverFactory;
 
@@ -2359,28 +2359,28 @@ public void removeDocumentUsageRights() {
   try {
    //Name of the input file on which usage rights is to be applied.
    String inputFileName = "C:/RETest/input/RemoveUsageRights/01_Ubiquitized_50-267_PDF1.5_UB2_Rights.pdf";
-   
+
    //Name of the output file where result will be saved.
    String outputFileName = "C:/RETest/output/samples/removeUsageRightsOutput.pdf";
-   
+
    //Document to be input to Doc Assurance Service
    inputDocument = new Document(new File(inputFileName));
-   
+
    //Unlock options to unlock the document if some kind of security is set on it.
    //Currently set to null because input document has no security.
    UnlockOptions unlockOptions = null;
-   
-   //Specify null encryption options and signatures options. 
+
+   //Specify null encryption options and signatures options.
    //If requirement is also to encrypt and sign the document then, corresponding options can also be specified.
    outDocument = docAssuranceService.removeUsageRights(inputDocument, unlockOptions);
-   
+
    File outputdir = new File("C:/RETest/output/samples");
    outputdir.mkdirs();
-   
+
    outDocument.copyToFile(new File(outputFileName));
   } catch (Exception e) {
    e.printStackTrace();
-  } 
+  }
 }
 
 /**
@@ -2408,38 +2408,38 @@ Digital signatures can be verified to ensure that a signed PDF document was not 
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>Document object containing PDF<br /> </td> 
-  </tr> 
-  <tr> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>Document object containing PDF<br /> </td>
+  </tr>
+  <tr>
    <td><code class="code">signatureField
-      Name</code><br /> </td> 
-   <td>The name of the signature field to be validated. either fully qualified name or partial name can be given<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>revocationCheckStyle</code></td> 
-   <td>The option to govern the revocation checking of the certificates encountered during validation</td> 
-  </tr> 
-  <tr> 
-   <td><code>verificationTime</code></td> 
-   <td>The time at which the signature should be validated</td> 
-  </tr> 
-  <tr> 
-   <td><code>dssPrefs</code></td> 
-   <td>Preferences to control various validation configurations. For an encrypted document, set unlock options by using <code>setUnlockOptions()</code></td> 
-  </tr> 
-  <tr> 
-   <td><code>resourceResolver</code></td> 
-   <td>Resource resolver to the granite trust store</td> 
-  </tr> 
- </tbody> 
+      Name</code><br /> </td>
+   <td>The name of the signature field to be validated. either fully qualified name or partial name can be given<br /> </td>
+  </tr>
+  <tr>
+   <td><code>revocationCheckStyle</code></td>
+   <td>The option to govern the revocation checking of the certificates encountered during validation</td>
+  </tr>
+  <tr>
+   <td><code>verificationTime</code></td>
+   <td>The time at which the signature should be validated</td>
+  </tr>
+  <tr>
+   <td><code>dssPrefs</code></td>
+   <td>Preferences to control various validation configurations. For an encrypted document, set unlock options by using <code>setUnlockOptions()</code></td>
+  </tr>
+  <tr>
+   <td><code>resourceResolver</code></td>
+   <td>Resource resolver to the granite trust store</td>
+  </tr>
+ </tbody>
 </table>
 
 This sample code uses `DocAssuranceService` to verify a signature field in an encrypted PDF document.
@@ -2452,9 +2452,9 @@ This sample code uses `DocAssuranceService` to verify a signature field in an en
 *Copyright 2014 Adobe Systems Incorporated
 *All Rights Reserved.
 
-*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the 
-*terms of the Adobe license agreement accompanying it.  If you have received this file from a 
-*source other than Adobe, then your use, modification, or distribution of it requires the prior 
+*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the
+*terms of the Adobe license agreement accompanying it.  If you have received this file from a
+*source other than Adobe, then your use, modification, or distribution of it requires the prior
 *written permission of Adobe.
 -------------------------------------------------------------------------------------------------
 
@@ -2501,15 +2501,15 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferences;
 import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 /**
- * 
+ *
  * This class provides a sample code to use {@code DocAssuranceService} to carry out
  * verification of a signature field in an already Encrypted PDF Document
- * 
- * Digital signatures can be verified to ensure that a signed PDF document was not modified and that the digital signature is valid. 
- * When verifying a digital signature, you can check the signature's status and the signature's properties, such as the signer's identity. 
- * Before trusting a digital signature, it is recommended that you verify it. When verifying a digital signature, reference a PDF document 
+ *
+ * Digital signatures can be verified to ensure that a signed PDF document was not modified and that the digital signature is valid.
+ * When verifying a digital signature, you can check the signature's status and the signature's properties, such as the signer's identity.
+ * Before trusting a digital signature, it is recommended that you verify it. When verifying a digital signature, reference a PDF document
  * that contains a digital signature.
- * 
+ *
  * For unprotected document, you are not required to set UnlockOptions in ValidationPreferences
  * PreRequisites - The certificate chain upto the Root Certificate should be uploaded on CQ trust Store
  */
@@ -2520,40 +2520,40 @@ public class VerifyFieldEncryptedPDF {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  @Reference
     private SlingRepository slingRepository;
- 
+
  @Reference
     private JcrResourceResolverFactory jcrResourceResolverFactory ;
 
  /**
-  * 
-  * @param inputFile - path to an encrypted pdf document stored at JCR node 
+  *
+  * @param inputFile - path to an encrypted pdf document stored at JCR node
   * @throws IOException
   * @throws RepositoryException
   * @throws InvalidArgumentException
   * @throws DocAssuranceException
   */
  public void verifyFieldEncryptedPDF(String inputFile,String fieldName) throws IOException, RepositoryException, InvalidArgumentException, DocAssuranceException{
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   Session adminSession = null;
         ResourceResolver resourceResolver = null;
         try {
-          
+
          //the resource resolver has to be corresponding to the user who has access to CQ Trust Store
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-             
+
            //Specify the name of the signature field
-             
+
              RevocationCheckStyle revocationCheckStyle = RevocationCheckStyle.AlwaysCheck;
              VerificationTime verificationTime = VerificationTime.CURRENT_TIME;
              ValidationPreferences dssPrefs = getValidationPreferences();
-            
+
              //Verify the digital signature
              PDFSignatureVerificationInfo  signInfo = docAssuranceService.verify(
                  inDoc,
@@ -2565,8 +2565,8 @@ public class VerifyFieldEncryptedPDF {
 
              //Get the Signature Status
              SignatureStatus sigStatus = signInfo.getStatus();
-             String myStatus=""; 
-             
+             String myStatus="";
+
              //Determine the status of the signature
              if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
                  myStatus = "The signatures located in the dynamic PDF form are unknown";
@@ -2594,31 +2594,31 @@ public class VerifyFieldEncryptedPDF {
                  myStatus = "There were changes to a signed PDF document";
             else if (sigStatus == SignatureStatus.CertificationSigWithChanges)
                  myStatus = "There were changes made to the PDF document.";
-                        
+
              //Get the signature type
              SignatureType sigType = signInfo.getSignatureType();
              String myType = "";
-                
+
              if (sigType.getType() == PDFSignatureType.AUTHORSIG)
                     myType="Certification";
              else if(sigType.getType() == PDFSignatureType.RECIPIENTSIG)
                     myType="Recipient";
-            
+
              //Get the identity of the signer
              IdentityInformation signerId = signInfo.getSigner();
              String signerMsg = "";
-            
+
             if (signerId.getStatus() == IdentityStatus.UNKNOWN)
                 signerMsg = "Identity Unknown";
             else if (signerId.getStatus() == IdentityStatus.TRUSTED)
                 signerMsg = "Identity Trusted";
             else if (signerId.getStatus() == IdentityStatus.NOTTRUSTED)
                 signerMsg = "Identity Not Trusted";
-                     
+
             //Get the Signature properties returned by the Signature service
             SignatureProperties sigProps = signInfo.getSignatureProps();
             String signerName =  sigProps.getSignerName();
-             
+
            System.out.println("The status of the signature is: "+myStatus +". The signer identity is "+signerMsg +". The signature type is "+myType +". The name of the signer is "+signerName+".");
            }
            catch (Exception ee)
@@ -2641,21 +2641,21 @@ public class VerifyFieldEncryptedPDF {
          }
 
  }
- 
+
  /**
    * sets ValidationPreferences
    */
   private static ValidationPreferences getValidationPreferences(){
-        
+
         ValidationPreferencesImpl prefs = new ValidationPreferencesImpl();
         prefs.setPKIPreferences(getPKIPreferences());
-       
+
         //set the unlock options for processing an encrypted pdf document, do not set if the input doc is unprotected
         prefs.setUnlockOptions(getUnlockOptions());
         return prefs;
-        
+
     }
-    
+
   /**
    * sets PKIPreferences
    */
@@ -2667,7 +2667,7 @@ public class VerifyFieldEncryptedPDF {
         pkiPref.setTSPPreferences(getTspPref());
         return pkiPref;
     }
-    
+
     private static TSPPreferences getTspPref(){
      TSPPreferencesImpl tsp = new TSPPreferencesImpl();
      tsp.setRevocationCheck(RevocationCheckStyle.BestEffort);
@@ -2682,7 +2682,7 @@ public class VerifyFieldEncryptedPDF {
      * sets CRL Preferences
      */
     private static CRLPreferences getCRLPreferences(){
-    
+
         CRLPreferencesImpl crlPrefs = new CRLPreferencesImpl();
         crlPrefs.setRevocationCheck(RevocationCheckStyle.BestEffort);
         crlPrefs.setGoOnline(true);
@@ -2690,16 +2690,16 @@ public class VerifyFieldEncryptedPDF {
     }
 
     /**
-     * 
+     *
      * sets PathValidationPreferences
      */
     private static PathValidationPreferences getPathValidationPreferences(){
         PathValidationPreferencesImpl pathPref = new PathValidationPreferencesImpl();
         pathPref.setDoValidation(true);
         return pathPref;
-        
+
     }
-    
+
     /**
      * sets Unlock Options for encrypted PDF
      */
@@ -2707,12 +2707,12 @@ public class VerifyFieldEncryptedPDF {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 
 }
@@ -2726,33 +2726,33 @@ AEM lets you verify digital signatures in PDF documents. A PDF document can cont
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>Document object containing PDF<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>revocationCheckStyle</code></td> 
-   <td>The option to govern the revocation checking of the certificates encountered during validation</td> 
-  </tr> 
-  <tr> 
-   <td><code>verificationTime</code></td> 
-   <td>The time at which the signature should be validated</td> 
-  </tr> 
-  <tr> 
-   <td><code>dssPrefs</code></td> 
-   <td>Preferences to control various validation configurations. For an encrypted document, set unlock options by using <code>setUnlockOptions()</code></td> 
-  </tr> 
-  <tr> 
-   <td><code>resourceResolver</code></td> 
-   <td>Resource resolver to the granite trust store</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>Document object containing PDF<br /> </td>
+  </tr>
+  <tr>
+   <td><code>revocationCheckStyle</code></td>
+   <td>The option to govern the revocation checking of the certificates encountered during validation</td>
+  </tr>
+  <tr>
+   <td><code>verificationTime</code></td>
+   <td>The time at which the signature should be validated</td>
+  </tr>
+  <tr>
+   <td><code>dssPrefs</code></td>
+   <td>Preferences to control various validation configurations. For an encrypted document, set unlock options by using <code>setUnlockOptions()</code></td>
+  </tr>
+  <tr>
+   <td><code>resourceResolver</code></td>
+   <td>Resource resolver to the granite trust store</td>
+  </tr>
+ </tbody>
 </table>
 
 The following sample code uses DocAssuranceService to verify the signature fields in an already encrypted PDF document.
@@ -2766,9 +2766,9 @@ The following sample code uses DocAssuranceService to verify the signature field
 *Copyright 2014 Adobe Systems Incorporated
 *All Rights Reserved.
 
-*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the 
-*terms of the Adobe license agreement accompanying it.  If you have received this file from a 
-*source other than Adobe, then your use, modification, or distribution of it requires the prior 
+*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the
+*terms of the Adobe license agreement accompanying it.  If you have received this file from a
+*source other than Adobe, then your use, modification, or distribution of it requires the prior
 *written permission of Adobe.
 -------------------------------------------------------------------------------------------------
 
@@ -2813,16 +2813,16 @@ import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferences;
 import com.adobe.fd.signatures.pki.client.types.prefs.PathValidationPreferencesImpl;
 
 /**
- * 
+ *
  * This class provides a sample code to use {@code DocAssuranceService} to carry out
  * verification of all the signature fields in an already Encrypted PDF Document
- * 
- * Assume that a PDF document contains multiple digital signatures as a result of a business process that requires signatures from multiple 
- * signers. For example, consider a financial transaction that requires both a loan officer's and a manager's signature. You can use the 
+ *
+ * Assume that a PDF document contains multiple digital signatures as a result of a business process that requires signatures from multiple
+ * signers. For example, consider a financial transaction that requires both a loan officer's and a manager's signature. You can use the
  * Signature service Java API or web service API to verify all signatures within the PDF document. When verifying multiple digital signatures,
- * you can check the status and properties of each signature. Before you trust a digital signature, it is recommended that you verify it. It 
+ * you can check the status and properties of each signature. Before you trust a digital signature, it is recommended that you verify it. It
  * is recommended that you are familiar with verifying a single digital signature.
- * 
+ *
  * For unprotected document, you are not required to set UnlockOptions in ValidationPreferences
  * PreRequisites - The certificate chain upto the Root Certificate should be uploaded on CQ trust Store
  */
@@ -2833,38 +2833,38 @@ public class VerifyEncryptedPDFDoc {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  @Reference
     private SlingRepository slingRepository;
- 
+
  @Reference
     private JcrResourceResolverFactory jcrResourceResolverFactory ;
 
  /**
-  * 
-  * @param inputFile - path to an encrypted pdf document stored at JCR node 
+  *
+  * @param inputFile - path to an encrypted pdf document stored at JCR node
   * @throws IOException
   * @throws RepositoryException
   * @throws InvalidArgumentException
   * @throws DocAssuranceException
   */
  public void verifyEncryptedPDFDoc(String inputFile) throws IOException, RepositoryException, InvalidArgumentException, DocAssuranceException{
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   Session adminSession = null;
         ResourceResolver resourceResolver = null;
         try {
-          
+
           //the resource resolver has to be corresponding to the user who has access to CQ Trust Store
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-             
+
              RevocationCheckStyle revocationCheckStyle = RevocationCheckStyle.CheckIfAvailable;
              VerificationTime verificationTime = VerificationTime.CURRENT_TIME;
              ValidationPreferences dssPrefs = getValidationPreferences();
-            
+
              //Verify the digital signature
              PDFDocumentVerificationInfo  docInfo = docAssuranceService.verifyDocument(
                  inDoc,
@@ -2875,18 +2875,18 @@ public class VerifyEncryptedPDFDoc {
 
              //Get a list of all signatures that are located in the PDF document
              List allSignatures = docInfo.getVerificationInfos();
-             
-           //Create an Iterator object and iterate through 
+
+           //Create an Iterator object and iterate through
            //the List object
-           Iterator<PDFSignatureVerificationInfo> iter = allSignatures.iterator(); 
-           
-           while (iter.hasNext()) { 
-                  PDFSignatureVerificationInfo signInfo = (PDFSignatureVerificationInfo)iter.next(); 
-                   
+           Iterator<PDFSignatureVerificationInfo> iter = allSignatures.iterator();
+
+           while (iter.hasNext()) {
+                  PDFSignatureVerificationInfo signInfo = (PDFSignatureVerificationInfo)iter.next();
+
                   //Get the Signature Status
                      SignatureStatus sigStatus = signInfo.getStatus();
-                     String myStatus=""; 
-                     
+                     String myStatus="";
+
                    //Determine the status of the signature
                      if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
                          myStatus = "The signatures located in the dynamic PDF form are unknown";
@@ -2914,20 +2914,20 @@ public class VerifyEncryptedPDFDoc {
                          myStatus = "There were changes to a signed PDF document";
                     else if (sigStatus == SignatureStatus.CertificationSigWithChanges)
                          myStatus = "There were changes made to the PDF document.";
-                           
+
                      //Get the signature type
                     SignatureType sigType = signInfo.getSignatureType();
                     String myType = "";
-                    
+
                     if (sigType.getType() == PDFSignatureType.AUTHORSIG)
                         myType="Certification";
                     else if(sigType.getType() == PDFSignatureType.RECIPIENTSIG)
                         myType="Recipient";
-                                 
+
                     //Get the Signature properties returned by the Signature service
                     SignatureProperties sigProps = signInfo.getSignatureProps();
                     String signerName =  sigProps.getSignerName();
-                     
+
                    System.out.println("The status of the signature is: "+myStatus +". The signature type is "+myType +". The name of the signer is "+signerName+".");
                }
            }
@@ -2951,21 +2951,21 @@ public class VerifyEncryptedPDFDoc {
          }
 
  }
- 
+
  /**
    * sets ValidationPreferences
    */
   private static ValidationPreferences getValidationPreferences(){
-        
+
         ValidationPreferencesImpl prefs = new ValidationPreferencesImpl();
         prefs.setPKIPreferences(getPKIPreferences());
-       
+
         //set the unlock options for processing an encrypted pdf document, do not set if the document is unprotected
         prefs.setUnlockOptions(getUnlockOptions());
         return prefs;
-        
+
     }
-    
+
   /**
    * sets PKIPreferences
    */
@@ -2975,12 +2975,12 @@ public class VerifyEncryptedPDFDoc {
         pkiPref.setPathPreferences(getPathValidationPreferences());
         return pkiPref;
     }
-    
+
     /**
      * sets CRL Preferences
      */
     private static CRLPreferences getCRLPreferences(){
-    
+
         CRLPreferencesImpl crlPrefs = new CRLPreferencesImpl();
         crlPrefs.setRevocationCheck(RevocationCheckStyle.CheckIfAvailable);
         crlPrefs.setGoOnline(true);
@@ -2988,16 +2988,16 @@ public class VerifyEncryptedPDFDoc {
     }
 
     /**
-     * 
+     *
      * sets PathValidationPreferences
      */
     private static PathValidationPreferences getPathValidationPreferences(){
         PathValidationPreferencesImpl pathPref = new PathValidationPreferencesImpl();
         pathPref.setDoValidation(false);
         return pathPref;
-        
+
     }
-    
+
     /**
      * sets Unlock Options for encrypted PDF
      */
@@ -3005,12 +3005,12 @@ public class VerifyEncryptedPDFDoc {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 
 }
@@ -3024,25 +3024,25 @@ You can apply a new digital signature to a signature field only after you remove
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>Document object containing PDF<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>signatureFieldName</code></td> 
-   <td>The name of the signature field<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>unlockOptions</code><br /> </td> 
-   <td>Includes the parameters require to unlock an encrypted file, This is required only if the file is encrypted<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>Document object containing PDF<br /> </td>
+  </tr>
+  <tr>
+   <td><code>signatureFieldName</code></td>
+   <td>The name of the signature field<br /> </td>
+  </tr>
+  <tr>
+   <td><code>unlockOptions</code><br /> </td>
+   <td>Includes the parameters require to unlock an encrypted file, This is required only if the file is encrypted<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample removes a digital signature from a signature field.
@@ -3056,9 +3056,9 @@ The following Java code sample removes a digital signature from a signature fiel
 *Copyright 2014 Adobe Systems Incorporated
 *All Rights Reserved.
 
-*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the 
-*terms of the Adobe license agreement accompanying it.  If you have received this file 
-*from a source other than Adobe, then your use, modification, or distribution of it requires 
+*NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the
+*terms of the Adobe license agreement accompanying it.  If you have received this file
+*from a source other than Adobe, then your use, modification, or distribution of it requires
 *the prior written permission of Adobe.
 -------------------------------------------------------------------------------------------------
 
@@ -3084,11 +3084,11 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesOtherException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * Digital signatures must be removed from a signature field before a newer digital signature can be applied. 
- * A digital signature cannot be overwritten. 
+ * Digital signatures must be removed from a signature field before a newer digital signature can be applied.
+ * A digital signature cannot be overwritten.
  * If you attempt to apply a digital signature to a signature field that contains a signature, an exception occurs
- * 
- *The following Java code example removes a digital signature from a signature field named SignatureField1. 
+ *
+ *The following Java code example removes a digital signature from a signature field named SignatureField1.
  *The name of the PDF file that contain the signature field is LoanSigned.pdf
  */
 
@@ -3099,27 +3099,27 @@ public class ClearSignatureField {
  @Reference
  private DocAssuranceService docAssuranceService;
  /**
-  * 
+  *
   * @param inputFile - path to an encrypted pdf document stored at disk
-  * @param outFile - path where the output file has to be saved 
-  * @throws Exception 
+  * @param outFile - path where the output file has to be saved
+  * @throws Exception
   */
  public void clearSignatureField(String inputFile, String outFile) throws Exception{
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
         //Specify the name of the signature field
         String fieldName = "SignatureField1";
 
         //Clear the signature field
         //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
         Document outPDF = docAssuranceService.clearSignatureField(inDoc,fieldName,null);
-        
+
         //save the outPDF
         outPDF.copyToFile(new File(outFile));
  }
- 
+
   /**
      * sets Unlock Options for encrypted PDF
      */
@@ -3127,12 +3127,12 @@ public class ClearSignatureField {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 }
 ```
@@ -3145,21 +3145,21 @@ You can retrieve the names of all signature fields that are located in a PDF doc
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>Document object containing PDF.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>UnlockOptions</code></td> 
-   <td>UnlockOptions includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>Document object containing PDF.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>UnlockOptions</code></td>
+   <td>UnlockOptions includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code example retrieves the signature field that was used to certify the document.
@@ -3203,11 +3203,11 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. 
+ * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
  * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
- * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as 
+ * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
- * 
+ *
  * The following Java code example retrieves the ignature field that was used to certify the document.
  */
 
@@ -3217,28 +3217,28 @@ public class GetCertifyingSignatureField {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  /**
-  * 
+  *
   * @param inputFile - path to the pdf document stored at disk
-  * @throws SignaturesBaseException 
-  * @throws DuplicateSignatureFieldException 
-  * @throws PermissionsException 
-  * @throws PDFOperationException 
-  * @throws InvalidArgumentException 
-  * 
+  * @throws SignaturesBaseException
+  * @throws DuplicateSignatureFieldException
+  * @throws PermissionsException
+  * @throws PDFOperationException
+  * @throws InvalidArgumentException
+  *
   */
  public void getCertifyingSignatureField(String inputFile) throws Exception {
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-       
+
   //Retrieve signature data for a given signature field.
   //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
         PDFSignatureField pdfSignature = docAssuranceService.getCertifyingSignatureField(inDoc,null);
-        
+
    }
-       
+
   /**
      * sets Unlock Options for encrypted PDF
      */
@@ -3246,12 +3246,12 @@ public class GetCertifyingSignatureField {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 }
 
@@ -3265,17 +3265,17 @@ You can retrieve the names of all signature fields that are located in a PDF doc
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>A document supplied as input. It may or may not be encrypted.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>A document supplied as input. It may or may not be encrypted.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code example retrieves the Signature information for the given signature field located in a PDF document.
@@ -3320,11 +3320,11 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.adobe.fd.encryption.client.EncryptionTypeResult;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. 
+ * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
  * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
- * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as 
+ * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
- * 
+ *
  * The following Java code example retrieves the Signature Info for the given signature field located in a PDF document.
  */
 
@@ -3334,28 +3334,28 @@ public class GetPDFEncryption {
 
  @Reference
  private DocAssuranceService docAssuranceService;
- 
+
  /**
-  * 
+  *
   * @param inputFile - path to the pdf document stored at disk
-  * @throws SignaturesBaseException 
-  * @throws DuplicateSignatureFieldException 
-  * @throws PermissionsException 
-  * @throws PDFOperationException 
-  * @throws InvalidArgumentException 
-  * 
+  * @throws SignaturesBaseException
+  * @throws DuplicateSignatureFieldException
+  * @throws PermissionsException
+  * @throws PDFOperationException
+  * @throws InvalidArgumentException
+  *
   */
  public void getPDFEncryption(String inputFile) throws Exception {
-  
+
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-       
+
   //Retrieve signature data for a given signature field.
   //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
         EncryptionTypeResult encryptionTypeResult = docAssuranceService.getPDFEncryption(inDoc);
-        
+
    }
-       
+
   /**
      * sets Unlock Options for encrypted PDF
      */
@@ -3363,12 +3363,12 @@ public class GetPDFEncryption {
         UnlockOptions unlockOptions = new UnlockOptions();
         //sets the Open Password for password encrypted PDF
         unlockOptions.setPassword("OpenPassword");
-        
+
         //for Certificate Encrypted Document, set the alias of the credential uploaded in the user's key store
         //and corresponding resource resolver
-        
+
         return unlockOptions;
-        
+
     }
 }
 
@@ -3382,21 +3382,21 @@ Remove password-based encryption from a PDF document to let users open the PDF d
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>Document supplied as input. It must be password protected.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>password</code><br /> </td> 
-   <td>Either a document open or permission password to be used for removing security from the document.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>Document supplied as input. It must be password protected.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>password</code><br /> </td>
+   <td>Either a document open or permission password to be used for removing security from the document.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following code sample removes password-based encryption from a PDF document.
@@ -3426,36 +3426,36 @@ public class RemovePasswordEncryption {
  // Create reference for DocAssuranceService
  @Reference
  private DocAssuranceService docAssuranceService;
-    
+
  @Reference
     private SlingRepository slingRepository;
 
  /**
   * The below sample code demonstrates removing password encryption from a PDF using AEM EncryptionService.
-  * 
+  *
   * @param inFilePath  path of the input PDF File
-  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"  
-  * 
+  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
+  *
   * @param outFilePath path where the output PDF File needs to be saved
-  * Path Example for Files stored at hardDisk = "C:/temp/test_out.pdf"  
+  * Path Example for Files stored at hardDisk = "C:/temp/test_out.pdf"
   * @throws Exception
   */
  public void removePasswordEncryption(String inputFile, String outputFile) throws Exception {
 
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   File outFile = new File(outputFile);
   Document outDoc = null;
-     
+
      try{
- 
+
       String password = "PermissionPassword"; //master password with which the pdf was encrypted
                 //in case if the pdf is encrypted only with user password, specify the
                 //user password
       //Remove password-based encryption from the PDF document
       outDoc = docAssuranceService.removePDFPasswordSecurity(inDoc,password);
-         
+
      }finally{
                 /**
                  * always close the PDFDocument object after your processing is done.
@@ -3463,13 +3463,13 @@ public class RemovePasswordEncryption {
                 if(inDoc != null){
                     inDoc.close();
                 }
-                
+
         }
-            
+
         outDoc.copyToFile(outFile);
 
  }
- 
+
 }
 ```
 
@@ -3481,25 +3481,25 @@ You can remove certificate-based encryption from a PDF document so that users ca
 
 **Input Parameters**
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>inDoc</code><br /> </td> 
-   <td>A Document object that represents the certificate-encrypted PDF document.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>alias</code><br /> </td> 
-   <td>The alias that corresponds to the key in Granite Trust Store that is used to remove certificate-based encryption from the PDF document.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>ResourceResolver</code></td> 
-   <td>ResourceResolver to access the key store of the particular user to fetch the Credential.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>inDoc</code><br /> </td>
+   <td>A Document object that represents the certificate-encrypted PDF document.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>alias</code><br /> </td>
+   <td>The alias that corresponds to the key in Granite Trust Store that is used to remove certificate-based encryption from the PDF document.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>ResourceResolver</code></td>
+   <td>ResourceResolver to access the key store of the particular user to fetch the Credential.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample removes certificate-based encryption from a PDF document.
@@ -3532,47 +3532,47 @@ public class RemovePKIEncryption {
  // Create reference for docAssuranceServiceInterface
  @Reference
  private DocAssuranceService docAssuranceService;
-    
+
  @Reference
     private SlingRepository slingRepository;
-    
+
  @Reference
     private JcrResourceResolverFactory jcrResourceResolverFactory ;
- 
+
  /**
   * The below sample code demonstrates encrypting PDF with Password using AEM docAssuranceService.
-  * 
+  *
   * @param inFilePath  path of the input PDF File
-  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"  
-  * 
+  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
+  *
   * @param outFilePath path where the output PDF File needs to be saved
-  * Path Example for Files stored at hardDisk = "C:/temp/test_Encrypted.pdf"  
-  * 
+  * Path Example for Files stored at hardDisk = "C:/temp/test_Encrypted.pdf"
+  *
   * @throws Exception
   */
  public void removePKIEncryption(String inputFile, String outputFile) throws Exception {
 
   File inFile = new File(inputFile);
   Document inDoc = new Document(inFile);
-  
+
   File outFile = new File(outputFile);
   Document outDoc = null;
-     
+
         Session adminSession = null;
         ResourceResolver resourceResolver = null;
         try{
     adminSession = slingRepository.loginAdministrative(null);
     resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-     
-    //Remove certificate-based encryption from the PDF document 
+
+    //Remove certificate-based encryption from the PDF document
     /**
      * Here the alias("encryption") of the private credential stored in the keystore of the
      * user has been provided with the user's resource resolver
      */
     outDoc = docAssuranceService.removePDFCertificateSecurity(inDoc, "encryption",resourceResolver);
-    
+
         }catch(Exception e){
-        
+
          // TODO Auto-generated catch block
         }finally{
             /**
@@ -3588,7 +3588,7 @@ public class RemovePKIEncryption {
                 adminSession.logout();
             }
         }
-        
+
         outDoc.copyToFile(outFile);
  }
 
@@ -3599,11 +3599,11 @@ public class RemovePKIEncryption {
 
 The Output service provides APIs to render an XDP file in .pdf, .pcl, .zpl, and .ps formats. The service supports following APIs:
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Generates a PDF document by merging a form design with data stored on a network location, local file system, or HTTP location as literal values.  
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Generates a PDF document by merging a form design with data stored on a network location, local file system, or HTTP location as literal values.
 
 * **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Generates a PDF document by merging a form design with data that are stored in an application.
 * **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** Merges a form design with data to create a PDF document. Optionally, generates a metadata file for each record or saves the output to a PDF file.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Generates a PCL, PostScript, or ZPL output from a form design and data file stored on a network location, local file system, or HTTP location as literal values.  
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Generates a PCL, PostScript, or ZPL output from a form design and data file stored on a network location, local file system, or HTTP location as literal values.
 
 * **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Generates a PCL, PostScript, and ZPL output from a form design and data file that are stored in an application.
 
@@ -3615,25 +3615,25 @@ The generatePDFOutput API generates a PDF document by merging a form design with
 
 #### Input Parameters {#input-parameters}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>uriOrFileName</td> 
-   <td>Specifies path and name of the input file. The file can be of type PDF or XDP. If only filename is specified, the file is read in relation to contentRoot specified in options.</td> 
-  </tr> 
-  <tr> 
-   <td>data</td> 
-   <td>An XML file that contains the data that is merged with the PDF document.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>options</td> 
-   <td>Specifies values of contentRoot, locale, AcrobatVersion, linearizedPDF, and taggedPDF variables. The options parameter accept object of type PDFOutputOptions. <br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>uriOrFileName</td>
+   <td>Specifies path and name of the input file. The file can be of type PDF or XDP. If only filename is specified, the file is read in relation to contentRoot specified in options.</td>
+  </tr>
+  <tr>
+   <td>data</td>
+   <td>An XML file that contains the data that is merged with the PDF document.<br /> </td>
+  </tr>
+  <tr>
+   <td>options</td>
+   <td>Specifies values of contentRoot, locale, AcrobatVersion, linearizedPDF, and taggedPDF variables. The options parameter accept object of type PDFOutputOptions. <br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample generates a PDF document by merging a form design with data stored in an XML file.
@@ -3651,7 +3651,7 @@ try {
 
         PDFOutputOptions option = new PDFOutputOptions();         option.setContentRoot(contentRoot);         if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
 
-        { 
+        {
 
             option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
 
@@ -3722,25 +3722,25 @@ The generatePDFOutput API generates a PDF document by merging a form design with
 
 #### Input Parameter {#input-parameter}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameters</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Inputdocument<br /> </td> 
-   <td>Specifies path and name of the input file. The file can be of type PDF or XDP. If only filename is specified, the file is read in relation to contentRoot specified in options. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>data</td> 
-   <td>An XML file that contains the data that is merged with the PDF document.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>options</td> 
-   <td>Specifies values of contentRoot, locale, AcrobatVersion, linearizedPDF, and taggedPDF variables. The options parameter accepts object of type PDFOutputOptions.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameters</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Inputdocument<br /> </td>
+   <td>Specifies path and name of the input file. The file can be of type PDF or XDP. If only filename is specified, the file is read in relation to contentRoot specified in options. <br /> </td>
+  </tr>
+  <tr>
+   <td>data</td>
+   <td>An XML file that contains the data that is merged with the PDF document.<br /> </td>
+  </tr>
+  <tr>
+   <td>options</td>
+   <td>Specifies values of contentRoot, locale, AcrobatVersion, linearizedPDF, and taggedPDF variables. The options parameter accepts object of type PDFOutputOptions.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample generates a PDF document by merging a form design with data stored in an XML file.
@@ -3789,7 +3789,7 @@ Document doc=null;
 
             }
 
-            InputStream inputXMLStream = new FileInputStream(inputXML); 
+            InputStream inputXMLStream = new FileInputStream(inputXML);
 
             InputStream templateStream = new FileInputStream(templateStr);;
 
@@ -3832,29 +3832,29 @@ Merges a form design with data to create a PDF document. Optionally, generates a
 
 #### Input Parameters {#input-parameters-1}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>templates<br /> </td> 
-   <td>Specifies Map of key and template filename.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>data</td> 
-   <td>Specifies Map of key and data document. If key is not null, then data document is rendered with template for corresponding key specified in the templates Map. </td> 
-  </tr> 
-  <tr> 
-   <td>options</td> 
-   <td>Specifies values of contentRoot, locale, AcrobatVersion, linearizedPDF, and taggedPDF variables. The options parameter accepts object of type PDFOutputOptions.</td> 
-  </tr> 
-  <tr> 
-   <td>batchOptions</td> 
-   <td>Specifies the value of the variable <code>generateManyFiles</code>. Set the generateManyFiles flag to generate multiple files. The options parameter accepts object of type BatchOptions.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>templates<br /> </td>
+   <td>Specifies Map of key and template filename.<br /> </td>
+  </tr>
+  <tr>
+   <td>data</td>
+   <td>Specifies Map of key and data document. If key is not null, then data document is rendered with template for corresponding key specified in the templates Map. </td>
+  </tr>
+  <tr>
+   <td>options</td>
+   <td>Specifies values of contentRoot, locale, AcrobatVersion, linearizedPDF, and taggedPDF variables. The options parameter accepts object of type PDFOutputOptions.</td>
+  </tr>
+  <tr>
+   <td>batchOptions</td>
+   <td>Specifies the value of the variable <code>generateManyFiles</code>. Set the generateManyFiles flag to generate multiple files. The options parameter accepts object of type BatchOptions.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample generates PDF documents by merging a form designs with data stored in an XML file.
@@ -3949,25 +3949,25 @@ Generates a PCL, PostScript, and ZPL output from a form design and data file. Th
 
 #### Input Parameters {#input-parameters-2}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>uriOrFileName<br /> </td> 
-   <td>Specifies path and name of the input file. If only filename is specified, the file is read in relation to contentRoot specified in options. The file can be of type PDF or XDP.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>data</td> 
-   <td>An XML file that contains data that is merged with PDF documents.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>options</td> 
-   <td>Specifies values of contentRoot, locale, AcrobatVersion, linearizedPDF, and taggedPDF variables. The options parameter accepts object of type PrintedOutputOptions.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>uriOrFileName<br /> </td>
+   <td>Specifies path and name of the input file. If only filename is specified, the file is read in relation to contentRoot specified in options. The file can be of type PDF or XDP.<br /> </td>
+  </tr>
+  <tr>
+   <td>data</td>
+   <td>An XML file that contains data that is merged with PDF documents.<br /> </td>
+  </tr>
+  <tr>
+   <td>options</td>
+   <td>Specifies values of contentRoot, locale, AcrobatVersion, linearizedPDF, and taggedPDF variables. The options parameter accepts object of type PrintedOutputOptions.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample generates a PCL, PostScript, and ZPL output from a form design and data. The output type depends upon the value passed to the `printConfig`parameter.
@@ -3997,7 +3997,7 @@ Document doc=null;
 
                      }else if(printConfig.equalsIgnoreCase("zpl")) {                                                                       options.setPrintConfig(PrintConfig.ZPL300);
 
-            }  
+            }
 
             InputStream in = new FileInputStream(inputXML);
 
@@ -4040,25 +4040,25 @@ Generates a PCL, PostScript, and ZPL output given a form design and data file. T
 
 #### Input Parameters {#input-parameters-3}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Inputdocument<br /> </td> 
-   <td>Specifies path and name of the input file. If only filename is specified, the file is read in relation to contentRoot specified in options. The file can be of type XDP. </td> 
-  </tr> 
-  <tr> 
-   <td>data</td> 
-   <td>An XML file that contains data that is merged with PDF documents.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>options</td> 
-   <td>This object is used to set the values of contentRoot, locale, printConfig, copies, and paginationOverride. The options parameter accepts object of type PrintedOutputOptions.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Inputdocument<br /> </td>
+   <td>Specifies path and name of the input file. If only filename is specified, the file is read in relation to contentRoot specified in options. The file can be of type XDP. </td>
+  </tr>
+  <tr>
+   <td>data</td>
+   <td>An XML file that contains data that is merged with PDF documents.<br /> </td>
+  </tr>
+  <tr>
+   <td>options</td>
+   <td>This object is used to set the values of contentRoot, locale, printConfig, copies, and paginationOverride. The options parameter accepts object of type PrintedOutputOptions.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample generates a PCL, PostScript, and ZPL output from a form design and data. The output type depends upon the value passed to the `printConfig`parameter.
@@ -4125,29 +4125,29 @@ Generates a document of PS, PCL, and ZPL format by merging a form design with da
 
 #### Input Parameters {#input-parameters-4}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>templates<br /> </td> 
-   <td>Specifies the map of key and template filename.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>data</td> 
-   <td>Specifies map of key and data document. If key is not null, then data document is rendered with template for corresponding key in the templates Map.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>options</td> 
-   <td>Specifies object of type PrintedOutputOptions. This object is used to set the values of contentRoot, locale, printConfig, copies, paginationOverride.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>batchOptions</td> 
-   <td>Specifies value of variable generateManyFiles. Set the generateManyFiles flag to generate multiple files. The options parameter accepts object of type BatchOptions.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>templates<br /> </td>
+   <td>Specifies the map of key and template filename.<br /> </td>
+  </tr>
+  <tr>
+   <td>data</td>
+   <td>Specifies map of key and data document. If key is not null, then data document is rendered with template for corresponding key in the templates Map.<br /> </td>
+  </tr>
+  <tr>
+   <td>options</td>
+   <td>Specifies object of type PrintedOutputOptions. This object is used to set the values of contentRoot, locale, printConfig, copies, paginationOverride.<br /> </td>
+  </tr>
+  <tr>
+   <td>batchOptions</td>
+   <td>Specifies value of variable generateManyFiles. Set the generateManyFiles flag to generate multiple files. The options parameter accepts object of type BatchOptions.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample generates PCL, PostScript, and ZPL output in batch from multiple form design templates and data files. The output type depends upon the value passed to the `printConfig`parameter.
@@ -4231,7 +4231,7 @@ String outputFolder="C:/Output";
 
                  }
 
-                 return outputs;  
+                 return outputs;
 
           }
 
@@ -4269,21 +4269,21 @@ Exports form data from an interactive PDF form in XML and XDP formats.
 
 #### Input Parameters {#input-parameters-5}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>xdpOrPdf<br /> </td> 
-   <td>Specifies a document object containing an XDP or PDF file. </td> 
-  </tr> 
-  <tr> 
-   <td>dataFormat<br /> </td> 
-   <td>Specified the format in which data is exported. It accepts variable of type enum(XDP, XmlData, Auto).<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>xdpOrPdf<br /> </td>
+   <td>Specifies a document object containing an XDP or PDF file. </td>
+  </tr>
+  <tr>
+   <td>dataFormat<br /> </td>
+   <td>Specified the format in which data is exported. It accepts variable of type enum(XDP, XmlData, Auto).<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample exports form data from an interactive PDF form in XML and XDP formats.
@@ -4302,7 +4302,7 @@ try {
 
         in = new FileInputStream(inDoc);
 
-        if(dataFormat.equalsIgnoreCase("xml")) 
+        if(dataFormat.equalsIgnoreCase("xml"))
 
         {
 
@@ -4354,21 +4354,21 @@ Imports form data into an interactive PDF form.
 
 #### Input Parameters {#input-parameters-6}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>PDF<br /> </td> 
-   <td>Specifies a document object containing PDF files. </td> 
-  </tr> 
-  <tr> 
-   <td>Data<br /> </td> 
-   <td>An XML file that contains data in XML format.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>PDF<br /> </td>
+   <td>Specifies a document object containing PDF files. </td>
+  </tr>
+  <tr>
+   <td>Data<br /> </td>
+   <td>An XML file that contains data in XML format.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample imports form data into an interactive PDF form.
@@ -4441,39 +4441,39 @@ The GeneratePDFService provides APIs to convert various file formats such as .do
 
 #### PDF Generator API available on Microsoft Windows and Linux {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>API</strong></td> 
-   <td><p><strong>Microsoft Windows </strong></p> </td> 
-   <td><strong>Linux </strong></td> 
-  </tr> 
-  <tr> 
-   <td>createPDF</td> 
-   <td><strong>✓</strong></td> 
-   <td><strong>✓</strong></td> 
-  </tr> 
-  <tr> 
-   <td>exportPDF</td> 
-   <td><strong>✓</strong></td> 
-   <td><strong>✓</strong></td> 
-  </tr> 
-  <tr> 
-   <td>optimizePDF</td> 
-   <td><strong>✓</strong></td> 
-   <td>✖</td> 
-  </tr> 
-  <tr> 
-   <td>exportPDF</td> 
-   <td><strong>✓</strong></td> 
-   <td>✖</td> 
-  </tr> 
-  <tr> 
-   <td>OCR PDF (searchable PDF)</td> 
-   <td><strong>✓</strong></td> 
-   <td>✖</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>API</strong></td>
+   <td><p><strong>Microsoft Windows </strong></p> </td>
+   <td><strong>Linux </strong></td>
+  </tr>
+  <tr>
+   <td>createPDF</td>
+   <td><strong>✓</strong></td>
+   <td><strong>✓</strong></td>
+  </tr>
+  <tr>
+   <td>exportPDF</td>
+   <td><strong>✓</strong></td>
+   <td><strong>✓</strong></td>
+  </tr>
+  <tr>
+   <td>optimizePDF</td>
+   <td><strong>✓</strong></td>
+   <td>✖</td>
+  </tr>
+  <tr>
+   <td>exportPDF</td>
+   <td><strong>✓</strong></td>
+   <td>✖</td>
+  </tr>
+  <tr>
+   <td>OCR PDF (searchable PDF)</td>
+   <td><strong>✓</strong></td>
+   <td>✖</td>
+  </tr>
+ </tbody>
 </table>
 
 #### createPDF {#createpdf}
@@ -4489,64 +4489,64 @@ The createPDF service returns a java.util.Map with results. The keys of the map 
 
 The createPDF service throws the following exceptions:
 
-* ConversionException  
-* InvalidParameterException  
+* ConversionException
+* InvalidParameterException
 * FileFormatNotSupportedException
 
 **Syntax:** `Map createPDF(Document inputDoc, String inputFilename, String fileTypeSettings, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws InvalidParameterException, ConversionException, FileFormatNotSupportedException;`
 
 #### Input Parameters {#input-parameters-7}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>inputDoc<br /> </td> 
-   <td>Specifies a document object. The document object contains the input file. Create a com.adobe.aemfd.docmanager.Document object over the input document. It is a mandatory parameter.</td> 
-  </tr> 
-  <tr> 
-   <td>inputFileName<br /> </td> 
-   <td>The name of the input file along with the extension. It is a mandatory parameter.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>fileTypeSettings</td> 
-   <td>It is an optional parameter.</td> 
-  </tr> 
-  <tr> 
-   <td>pdfSettings</td> 
-   <td><p>PDF output for the converted document. You can apply only following settings:</p> 
-    <ul> 
-     <li>High_Quality_Print<br /> </li> 
-     <li>PDFA1b_2005_RGB<br /> </li> 
-     <li>PDFA1b_2005_CMYK<br /> </li> 
-     <li>PDFX1a_2001<br /> </li> 
-     <li>PDFX3_2002<br /> </li> 
-     <li>Press_Quality<br /> </li> 
-     <li>Smallest_File_Size</li> 
-    </ul> <p>It is an optional parameter.<br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td>securitySettings</td> 
-   <td><p>Security settings for the converted document. You can apply the following settings:</p> 
-    <ul> 
-     <li>No Security</li> 
-     <li>Password Security<br /> </li> 
-     <li>Certificate Security<br /> </li> 
-     <li>Adobe Policy Server</li> 
-    </ul> <p>It is an optional parameter.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>settingsDoc</td> 
-   <td>The file contains the settings applied while generating the PDF document (Such as, Optimizing PDF document for Web View) and settings applied after creating the PDF document (Such as, Initial View and Security). It is an optional parameter.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>xmpDoc </td> 
-   <td>The file contains metadata information applied to the generated PDF Document. This parameter is optional.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>inputDoc<br /> </td>
+   <td>Specifies a document object. The document object contains the input file. Create a com.adobe.aemfd.docmanager.Document object over the input document. It is a mandatory parameter.</td>
+  </tr>
+  <tr>
+   <td>inputFileName<br /> </td>
+   <td>The name of the input file along with the extension. It is a mandatory parameter.<br /> </td>
+  </tr>
+  <tr>
+   <td>fileTypeSettings</td>
+   <td>It is an optional parameter.</td>
+  </tr>
+  <tr>
+   <td>pdfSettings</td>
+   <td><p>PDF output for the converted document. You can apply only following settings:</p>
+    <ul>
+     <li>High_Quality_Print<br /> </li>
+     <li>PDFA1b_2005_RGB<br /> </li>
+     <li>PDFA1b_2005_CMYK<br /> </li>
+     <li>PDFX1a_2001<br /> </li>
+     <li>PDFX3_2002<br /> </li>
+     <li>Press_Quality<br /> </li>
+     <li>Smallest_File_Size</li>
+    </ul> <p>It is an optional parameter.<br /> </p> </td>
+  </tr>
+  <tr>
+   <td>securitySettings</td>
+   <td><p>Security settings for the converted document. You can apply the following settings:</p>
+    <ul>
+     <li>No Security</li>
+     <li>Password Security<br /> </li>
+     <li>Certificate Security<br /> </li>
+     <li>Adobe Policy Server</li>
+    </ul> <p>It is an optional parameter.</p> </td>
+  </tr>
+  <tr>
+   <td>settingsDoc</td>
+   <td>The file contains the settings applied while generating the PDF document (Such as, Optimizing PDF document for Web View) and settings applied after creating the PDF document (Such as, Initial View and Security). It is an optional parameter.<br /> </td>
+  </tr>
+  <tr>
+   <td>xmpDoc </td>
+   <td>The file contains metadata information applied to the generated PDF Document. This parameter is optional.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code converts a document of supported file type to a PDF document.
@@ -4621,11 +4621,11 @@ The createPDF service returns a java.util.Map with results. The keys of the map 
 
 The createPDF service throws the following exceptions:
 
-* ConversionException  
-* InvalidParameterException  
+* ConversionException
+* InvalidParameterException
 * FileFormatNotSupportedException
 
-**Syntax:** 
+**Syntax:**
 
 ```
 Map exportPDF(Document inputDoc, String inputFileName, String formatType, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
@@ -4634,29 +4634,29 @@ Map exportPDF(Document inputDoc, String inputFileName, String formatType, Docume
 
 #### Input Parameters {#input-parameters-8}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>inputDoc<br /> </td> 
-   <td>Specifies the document to be converted. </td> 
-  </tr> 
-  <tr> 
-   <td>inputFileName<br /> </td> 
-   <td>The name of the file along with the extension.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>formatType</td> 
-   <td>The output file format for the exportPDF API.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>settingsDoc </td> 
-   <td>The file contains the configurations to be applied while generating the output document. Generally, it is an XML file.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>inputDoc<br /> </td>
+   <td>Specifies the document to be converted. </td>
+  </tr>
+  <tr>
+   <td>inputFileName<br /> </td>
+   <td>The name of the file along with the extension.<br /> </td>
+  </tr>
+  <tr>
+   <td>formatType</td>
+   <td>The output file format for the exportPDF API.<br /> </td>
+  </tr>
+  <tr>
+   <td>settingsDoc </td>
+   <td>The file contains the configurations to be applied while generating the output document. Generally, it is an XML file.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample converts a PDF document to specified file type.
@@ -4715,11 +4715,11 @@ The OptimizePDF API optimizes PDF files by reducing their size. The result of th
 
 The createPDF service throws the following exceptions:
 
-* ConversionException  
-* InvalidParameterException  
+* ConversionException
+* InvalidParameterException
 * FileFormatNotSupportedException
 
-**Syntax:** 
+**Syntax:**
 
 ```
 OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
@@ -4728,25 +4728,25 @@ OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Docume
 
 #### Input Parameters {#input-parameters-9}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>inputDoc<br /> </td> 
-   <td>Specifies the input document. It is a mandatory parameter.</td> 
-  </tr> 
-  <tr> 
-   <td>fileTypeSettings<br /> </td> 
-   <td>It is an optional parameter.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>settingsDoc </td> 
-   <td>The file contains the settings applied while generating the PDF document (Such as, Optimizing PDF document for Web View) and settings applied after creating the PDF document (Such as, Initial View and Security). It is an optional parameter.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>inputDoc<br /> </td>
+   <td>Specifies the input document. It is a mandatory parameter.</td>
+  </tr>
+  <tr>
+   <td>fileTypeSettings<br /> </td>
+   <td>It is an optional parameter.<br /> </td>
+  </tr>
+  <tr>
+   <td>settingsDoc </td>
+   <td>The file contains the settings applied while generating the PDF document (Such as, Optimizing PDF document for Web View) and settings applied after creating the PDF document (Such as, Initial View and Security). It is an optional parameter.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample optimizes the input PDF file by reducing its size.
@@ -4806,11 +4806,11 @@ The htmlToPdf2 service returns an HtmlToPdfResult object. You can obtain the con
 
 The htmlToPdf2 service throws the following exceptions:
 
-* ConversionException  
-* InvalidParameterException  
+* ConversionException
+* InvalidParameterException
 * FileFormatNotSupportedException
 
-**Syntax:** 
+**Syntax:**
 
 ```
 HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String securitySettingsName, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
@@ -4819,25 +4819,25 @@ HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String 
 
 #### Input Parameters {#input-parameters-10}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>inputDoc<br /> </td> 
-   <td>Specifies the input document. It is a mandatory parameter.</td> 
-  </tr> 
-  <tr> 
-   <td>fileTypeSettings<br /> </td> 
-   <td>It is an optional parameter.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>settingsDoc </td> 
-   <td>The file contains the settings applied while generating the PDF document (Such as, Optimizing PDF document for Web View) and settings applied after creating the PDF document (Such as, Initial View and Security). It is an optional parameter.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>inputDoc<br /> </td>
+   <td>Specifies the input document. It is a mandatory parameter.</td>
+  </tr>
+  <tr>
+   <td>fileTypeSettings<br /> </td>
+   <td>It is an optional parameter.<br /> </td>
+  </tr>
+  <tr>
+   <td>settingsDoc </td>
+   <td>The file contains the settings applied while generating the PDF document (Such as, Optimizing PDF document for Web View) and settings applied after creating the PDF document (Such as, Initial View and Security). It is an optional parameter.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample converts an HTML page to a PDF document.
@@ -4901,15 +4901,15 @@ The createPDF service returns a java.util.Map with results. The keys of the map 
 
 The createPDF service throws the following exceptions:
 
-* ConversionException  
-* InvalidParameterException  
+* ConversionException
+* InvalidParameterException
 * FileFormatNotSupportedException
 
 #### createPDF {#createpdf-1}
 
 Converts the supported formats to PDF documents. The method accepts files formats .ps, .eps, and .prn as an input. You can apply specific security permissions, output settings, and Metadata information to the output PDF document.
 
-**Syntax:** 
+**Syntax:**
 
 ```
 Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
@@ -4918,52 +4918,52 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
 
 #### Input Parameters {#input-parameters-11}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>inputDoc<br /> </td> 
-   <td>Specifies the input document. It is a mandatory parameter.</td> 
-  </tr> 
-  <tr> 
-   <td>inputFileName</td> 
-   <td>Specifies the complete name of the input file along with the extension of the file. It is a mandatory parameter.</td> 
-  </tr> 
-  <tr> 
-   <td>pdfSettings</td> 
-   <td><p>PDF output settings for the converted document. You can apply only following settings:</p> 
-    <ul> 
-     <li>High_Quality_Print<br /> </li> 
-     <li>PDFA1b_2005_RGB<br /> </li> 
-     <li>PDFA1b_2005_CMYK<br /> </li> 
-     <li>PDFX1a_2001<br /> </li> 
-     <li>PDFX3_2002<br /> </li> 
-     <li>Press_Quality<br /> </li> 
-     <li>Smallest_File_Size</li> 
-    </ul> <p>It is an optional parameter.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>securitySettings</td> 
-   <td><p>Security settings for the converted document. You can apply the following settings:</p> 
-    <ul> 
-     <li>No Security</li> 
-     <li>Password Security<br /> </li> 
-     <li>Certificate Security<br /> </li> 
-     <li>Adobe Policy Server</li> 
-    </ul> <p>It is an optional parameter.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>settingsDoc </td> 
-   <td>The file contains the settings applied while generating the PDF document (Such as, Optimizing PDF document for Web View) and settings applied after creating the PDF document (Such as, Initial View and Security). It is an optional parameter.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>xmpDoc </td> 
-   <td>The file contains metadata information for generated PDF Document. It is an optional parameter.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>inputDoc<br /> </td>
+   <td>Specifies the input document. It is a mandatory parameter.</td>
+  </tr>
+  <tr>
+   <td>inputFileName</td>
+   <td>Specifies the complete name of the input file along with the extension of the file. It is a mandatory parameter.</td>
+  </tr>
+  <tr>
+   <td>pdfSettings</td>
+   <td><p>PDF output settings for the converted document. You can apply only following settings:</p>
+    <ul>
+     <li>High_Quality_Print<br /> </li>
+     <li>PDFA1b_2005_RGB<br /> </li>
+     <li>PDFA1b_2005_CMYK<br /> </li>
+     <li>PDFX1a_2001<br /> </li>
+     <li>PDFX3_2002<br /> </li>
+     <li>Press_Quality<br /> </li>
+     <li>Smallest_File_Size</li>
+    </ul> <p>It is an optional parameter.</p> </td>
+  </tr>
+  <tr>
+   <td>securitySettings</td>
+   <td><p>Security settings for the converted document. You can apply the following settings:</p>
+    <ul>
+     <li>No Security</li>
+     <li>Password Security<br /> </li>
+     <li>Certificate Security<br /> </li>
+     <li>Adobe Policy Server</li>
+    </ul> <p>It is an optional parameter.</p> </td>
+  </tr>
+  <tr>
+   <td>settingsDoc </td>
+   <td>The file contains the settings applied while generating the PDF document (Such as, Optimizing PDF document for Web View) and settings applied after creating the PDF document (Such as, Initial View and Security). It is an optional parameter.<br /> </td>
+  </tr>
+  <tr>
+   <td>xmpDoc </td>
+   <td>The file contains metadata information for generated PDF Document. It is an optional parameter.</td>
+  </tr>
+ </tbody>
 </table>
 
 The following Java code sample converts input files of type PostScript (PS), Encapsulated PostScript (EPS), and printer text files (PRN) to PDF files.

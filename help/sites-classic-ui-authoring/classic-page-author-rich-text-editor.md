@@ -5,7 +5,7 @@ description: The Rich Text Editor is a basic building block for inputting textua
 seo-description: The Rich Text Editor is a basic building block for inputting textual content into AEM.
 uuid: 42001071-f7a7-475d-8aab-a8054303db68
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
@@ -61,9 +61,9 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 
 Here you can apply formatting to characters you have selected (highlighted); some options also have short-cut keys:
 
-* Bold (Ctrl-B)  
-* Italic (Ctrl-I)  
-* Underline (Ctrl-U)  
+* Bold (Ctrl-B)
+* Italic (Ctrl-I)
+* Underline (Ctrl-U)
 * Subscript
 * Superscript
 
@@ -101,15 +101,15 @@ The standard functions of **Cut** and **Copy** are available. Several flavors of
 
 * Cut (**Ctrl-X**)
 * Copy (**Ctrl-C**)
-* Paste 
+* Paste
 
-  This is the default paste mechanism (**Ctrl-V**) for the component; when installed out-of-the-box this is configured to be "Paste from Word".  
+  This is the default paste mechanism (**Ctrl-V**) for the component; when installed out-of-the-box this is configured to be "Paste from Word".
 
-* Paste as Text 
+* Paste as Text
 
-  Strips all styles and formatting to paste only the plain text.  
+  Strips all styles and formatting to paste only the plain text.
 
-* Paste from Word 
+* Paste from Word
 
   This pastes the content as HTML (with some necessary reformatting).
 
@@ -133,7 +133,7 @@ AEM keeps a record of your last 50 actions in the current component, held in chr
 
 Your text can be either left, center or right aligned.
 
-![cq55_rte_alignment_use](assets/cq55_rte_alignment_use.png) 
+![cq55_rte_alignment_use](assets/cq55_rte_alignment_use.png)
 
 ### Indentation {#indentation}
 
@@ -141,7 +141,7 @@ Your text can be either left, center or right aligned.
 
 The indentation of a paragraph can be increased, or decreased. The selected paragraph will be indented, any new text entered will retain the current level of indentation.
 
-![cq55_rte_indent_use](assets/cq55_rte_indent_use.png) 
+![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
 
 ### Lists {#lists}
 
@@ -153,7 +153,7 @@ Nested lists can be achieved by indenting one or more list items.
 
 The style of a list can be changed by simply positioning the cursor within the list, then selecting the other style. A sublist can also have a different style to the containing list. This can be applied once the sublist has been created (by indentation).
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png) 
+![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
 
 ### Links {#links}
 
@@ -169,7 +169,7 @@ A dialog will allow you to specify the target URL; also whether it should be ope
 
 You can:
 
-* type in a URI directly  
+* type in a URI directly
 * use the site map to select a page within your website
 * enter the URI, then append the target anchor; e.g. `www.TargetUri.org#AnchorName`
 * enter an anchor only (to reference "the current page"); e.g. `#anchor`
@@ -182,7 +182,7 @@ You can:
 
 To break the link position the cursor anywhere within the link text and click the **Unlink** icon:
 
-![](do-not-localize/chlimage_1-13.png) 
+![](do-not-localize/chlimage_1-13.png)
 
 ### Anchors {#anchors}
 
@@ -196,7 +196,7 @@ Enter the name of the anchor then click **OK** to save.
 
 The anchor is shown when the component is being edited and can now be used within a target for links.
 
-![chlimage_1-145](assets/chlimage_1-145.png) 
+![chlimage_1-145](assets/chlimage_1-145.png)
 
 ### Find and Replace {#find-and-replace}
 
@@ -212,7 +212,7 @@ The search will always start from the current cursor position within the text. W
 
 The **Replace** option allows you to **Find**, then **Replace** an individual instance with the specified text, or to **Replace all** instances in the current component.
 
-![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png) 
+![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
 ### Images {#images}
 
@@ -264,36 +264,36 @@ In both the **Text** and **Table** components table functionality is available v
 
 The table specific functions are:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><a href="#table-properties">Table Properties</a><br /> </td> 
-  </tr> 
-  <tr> 
-   <td><a href="#cell-properties">Cell Properties<br /> </a></td> 
-  </tr> 
-  <tr> 
-   <td><a href="#add-or-delete-rows">Add or Delete Rows<br /> </a></td> 
-  </tr> 
-  <tr> 
-   <td><a href="#add-or-delete-columns">Add or Delete Columns<br /> </a></td> 
-  </tr> 
-  <tr> 
-   <td><a href="#selecting-entire-rows-or-columns">Selecting Entire Rows or Columns<br /> </a></td> 
-  </tr> 
-  <tr> 
-   <td><a href="#merge-cells">Merge Cells<br /> </a></td> 
-  </tr> 
-  <tr> 
-   <td><a href="#split-cells">Split Cells<br /> </a></td> 
-  </tr> 
-  <tr> 
-   <td><a href="#creating-nested-tables">Nested Tables</a></td> 
-  </tr> 
-  <tr> 
-   <td><a href="#remove-table">Remove Table</a> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><a href="#table-properties">Table Properties</a><br /> </td>
+  </tr>
+  <tr>
+   <td><a href="#cell-properties">Cell Properties<br /> </a></td>
+  </tr>
+  <tr>
+   <td><a href="#add-or-delete-rows">Add or Delete Rows<br /> </a></td>
+  </tr>
+  <tr>
+   <td><a href="#add-or-delete-columns">Add or Delete Columns<br /> </a></td>
+  </tr>
+  <tr>
+   <td><a href="#selecting-entire-rows-or-columns">Selecting Entire Rows or Columns<br /> </a></td>
+  </tr>
+  <tr>
+   <td><a href="#merge-cells">Merge Cells<br /> </a></td>
+  </tr>
+  <tr>
+   <td><a href="#split-cells">Split Cells<br /> </a></td>
+  </tr>
+  <tr>
+   <td><a href="#creating-nested-tables">Nested Tables</a></td>
+  </tr>
+  <tr>
+   <td><a href="#remove-table">Remove Table</a> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Table Properties {#table-properties}
@@ -304,31 +304,31 @@ The basic properties of the table can be configured, before clicking **OK** to s
 
 ![cq55_rte_tableproperties_dialog](assets/cq55_rte_tableproperties_dialog.png)
 
-* **Width** 
+* **Width**
 
-  The total width of the table.  
+  The total width of the table.
 
-* **Height** 
+* **Height**
 
-  The total height of the table.  
+  The total height of the table.
 
-* **Border** 
+* **Border**
 
-  The size of the table border.  
+  The size of the table border.
 
-* **Cell padding** 
+* **Cell padding**
 
-  This defines the white space between the cell content and its borders.  
+  This defines the white space between the cell content and its borders.
 
-* **Cell spacing** 
+* **Cell spacing**
 
   This defines the distance between the cells.
 
 >[!NOTE]
 >
->**Width**, **Height** and certain cell properties can be defined in either:  
+>**Width**, **Height** and certain cell properties can be defined in either:
 >
->* pixels  
+>* pixels
 >* percentages
 
 >[!CAUTION]
@@ -343,11 +343,11 @@ The properties of a specific cell, or series of cells, can be configured:
 
 ![cq55_rte_cellproperties_dialog](assets/cq55_rte_cellproperties_dialog.png)
 
-* **Width** 
-* **Height** 
-* **Horizontal Align** - Left, Center or Right  
-* **Vertical Align** - Top, Middle, Bottom or Baseline  
-* **Cell type** - Data or Header  
+* **Width**
+* **Height**
+* **Horizontal Align** - Left, Center or Right
+* **Vertical Align** - Top, Middle, Bottom or Baseline
+* **Cell type** - Data or Header
 * **Apply to:**
     * Single cell
     * Entire row

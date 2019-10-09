@@ -5,7 +5,7 @@ description: This article describes various reports around assets in AEM Assets 
 seo-description: Know about the various types of asset reports you can generate in AEM Assets. Learn how to generate and customize each report.
 uuid: 55657e05-1c1b-4cc7-a5bb-a11b3f97c854
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: d403ed1b-ac6b-4b01-9e67-958edeed80a4
 ---
 
@@ -88,7 +88,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
    ![link_share](assets/link_share.png)
 
-1. Tap/click **[!UICONTROL Next]** from the toolbar.  
+1. Tap/click **[!UICONTROL Next]** from the toolbar.
 
 1. In the **[!UICONTROL Configure Columns]** page, some columns are selected to appear in the report by default. You can select additional columns. Deselect a selected column to exclude it in the report.
 
@@ -120,10 +120,10 @@ You can add custom columns to the following reports to display more data for you
 * Files
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets > Reports]**.
-1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.  
+1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
 
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and tap/click **[!UICONTROL Next]**.
-1. Configure report details such as title, description, thumbnail, folder path, date range, and so on as applicable.  
+1. Configure report details such as title, description, thumbnail, folder path, date range, and so on as applicable.
 
 1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
 
@@ -145,10 +145,10 @@ You can add custom columns to the following reports to display more data for you
 
 To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
 
-1. Access the web console (configuration manager) from *https://&lt;Server&gt;.&lt;Port&gt;:/system/console/configMgr*.  
+1. Access the web console (configuration manager) from *https://&lt;Server&gt;.&lt;Port&gt;:/system/console/configMgr*.
 
-1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.  
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
 
-1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.  
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
 
 1. Save the changes.

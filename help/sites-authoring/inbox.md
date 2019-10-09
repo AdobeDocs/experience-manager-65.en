@@ -5,7 +5,7 @@ description: Managing your tasks with the inbox
 seo-description: Managing your tasks with the inbox
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
@@ -67,7 +67,7 @@ Out-of-the-box AEM comes pre-loaded with four tasks assigned to the administrato
 
 To open the AEM notification inbox:
 
-1. Click/tap on the indicator in the toolbar.  
+1. Click/tap on the indicator in the toolbar.
 
 1. Select **View all**. The **AEM Inbox** will open. The inbox shows items from workflows, projects and tasks.
 1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
@@ -84,7 +84,7 @@ To open the AEM notification inbox:
 
 This view lists all items, together with key relevant information:
 
-![wf-82](assets/wf-82.png) 
+![wf-82](assets/wf-82.png)
 
 ### Inbox - Calendar View {#inbox-calendar-view}
 
@@ -101,7 +101,7 @@ You can:
 * drill down for more detailed information on an item
 * select a date range to focus the view:
 
-![wf-91](assets/wf-91.png) 
+![wf-91](assets/wf-91.png)
 
 ### Inbox - View Settings {#inbox-view-settings}
 
@@ -178,7 +178,7 @@ From the inbox you can create tasks:
     * **Basic**:
 
         * **Title**
-        * **Project** 
+        * **Project**
         * **Assignee**
         * **Content**; similar to Payload, this is a reference from the task to a location in the repository
         * **Description**
@@ -234,7 +234,7 @@ For certain tasks you can create a [Project](/help/sites-authoring/projects.md) 
 
 You can filter the items listed:
 
-1. Open the **AEM Inbox**.  
+1. Open the **AEM Inbox**.
 
 1. Open the filter selector:
 

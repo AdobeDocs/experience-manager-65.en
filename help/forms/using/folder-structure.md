@@ -6,7 +6,7 @@ seo-description: How to understand the folder structure of AEM Forms workspace s
 uuid: ee844f89-887e-4f07-9db3-389859baa374
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 ---

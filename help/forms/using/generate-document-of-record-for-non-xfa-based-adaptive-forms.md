@@ -7,7 +7,7 @@ uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
 topic-tags: adaptive_forms
 topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 ---
@@ -39,7 +39,7 @@ When you create an adaptive form, you can select a form model. Your options are:
     * Associate an XFA template for document of record. Ensure that associated XFA template uses the same XML schema as your adaptive form
     * Automatically generate document of record
 
-* None 
+* None
 
   Lets you create an adaptive form without a form model. The document of record is automatically generated for your adaptive form.
 
@@ -47,14 +47,14 @@ When you select a form model, configure document of record using options availab
 
 ## Automatically generated document of record {#automatically-generated-document-of-record}
 
-A document of record lets your customers keep a copy of submitted form for printing purpose. When you automatically generate a document of record, everytime you change your form, its document of record is updated immediately. For example, you remove age field for customers who select United States of America as their country. When such customers generate a document of record, the age field is not visible to them in the document of record.   
-  
+A document of record lets your customers keep a copy of submitted form for printing purpose. When you automatically generate a document of record, everytime you change your form, its document of record is updated immediately. For example, you remove age field for customers who select United States of America as their country. When such customers generate a document of record, the age field is not visible to them in the document of record.
+
 Automatically generated document of record has the following advantages:
 
 * It takes care of data binding.
 * It automatically hides fields which are marked exclude from document of record at the time of submission. No extra effort is required.
 * It saves time for designing document of record template.
-* It lets you try different styling and appearance using different base templates and choose best style and appearance for Document of Record. Styling appearances are optional, and if you do not specify styling, system styles are set as default.  
+* It lets you try different styling and appearance using different base templates and choose best style and appearance for Document of Record. Styling appearances are optional, and if you do not specify styling, system styles are set as default.
 * It ensures any change in form is immediately reflected in document of record.
 
 ## Components to automatically generate a document of record {#components-to-automatically-generate-a-document-of-record}
@@ -83,110 +83,110 @@ The following sections describe how adaptive form elements appear in document of
 
 ### Fields {#fields}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Adaptive form component</th> 
-   <th>Corresponding XFA component</th> 
-   <th>Included by default in document of record Template?</th> 
-   <th>Notes</th> 
-  </tr> 
-  <tr> 
-   <td>Button</td> 
-   <td>Button</td> 
-   <td>false</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Check box</td> 
-   <td>Check Box</td> 
-   <td>true</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Date picker</td> 
-   <td>Date/Time Field</td> 
-   <td>true</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Drop-down list</td> 
-   <td>Drop-down List</td> 
-   <td>true</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Scribble Signature</td> 
-   <td>Signature Scribble</td> 
-   <td>true</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Numeric box</td> 
-   <td>Numeric Field</td> 
-   <td>true</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Password box</td> 
-   <td>Password Field</td> 
-   <td>false</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Radio Button</td> 
-   <td>Radio Button</td> 
-   <td>true</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Text box</td> 
-   <td>Text Field</td> 
-   <td>true</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Reset button</td> 
-   <td>Reset Button</td> 
-   <td>false</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Submit button</td> 
-   <td><p>Email Submit Button</p> <p>HTTP Submit Button</p> </td> 
-   <td>false</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Terms and conditions</td> 
-   <td> </td> 
-   <td>true</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>File Attachment</td> 
-   <td> </td> 
-   <td>false</td> 
-   <td>Not available in document of record template. Only Available in document of record through attachments.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Adaptive form component</th>
+   <th>Corresponding XFA component</th>
+   <th>Included by default in document of record Template?</th>
+   <th>Notes</th>
+  </tr>
+  <tr>
+   <td>Button</td>
+   <td>Button</td>
+   <td>false</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Check box</td>
+   <td>Check Box</td>
+   <td>true</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Date picker</td>
+   <td>Date/Time Field</td>
+   <td>true</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Drop-down list</td>
+   <td>Drop-down List</td>
+   <td>true</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Scribble Signature</td>
+   <td>Signature Scribble</td>
+   <td>true</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Numeric box</td>
+   <td>Numeric Field</td>
+   <td>true</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Password box</td>
+   <td>Password Field</td>
+   <td>false</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Radio Button</td>
+   <td>Radio Button</td>
+   <td>true</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Text box</td>
+   <td>Text Field</td>
+   <td>true</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Reset button</td>
+   <td>Reset Button</td>
+   <td>false</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Submit button</td>
+   <td><p>Email Submit Button</p> <p>HTTP Submit Button</p> </td>
+   <td>false</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Terms and conditions</td>
+   <td> </td>
+   <td>true</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>File Attachment</td>
+   <td> </td>
+   <td>false</td>
+   <td>Not available in document of record template. Only Available in document of record through attachments.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Containers {#containers}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Adaptive form component</th> 
-   <th>Corresponding XFA component</th> 
-   <th>Notes</th> 
-  </tr> 
-  <tr> 
-   <td>Panel<br /> </td> 
-   <td>Subform<br /> </td> 
-   <td>Repeatable panel maps to repeatable subform.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Adaptive form component</th>
+   <th>Corresponding XFA component</th>
+   <th>Notes</th>
+  </tr>
+  <tr>
+   <td>Panel<br /> </td>
+   <td>Subform<br /> </td>
+   <td>Repeatable panel maps to repeatable subform.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Static components {#static-components}
@@ -216,31 +216,31 @@ A base template is used to define header, footer, styling, and appearance for a 
 
 **Master page conventions**
 
-* In the base template, you should name the root subform as `AF_METATEMPLATE` and the master page as `AF_MASTERPAGE`.  
+* In the base template, you should name the root subform as `AF_METATEMPLATE` and the master page as `AF_MASTERPAGE`.
 
-* The master page with the name `AF_MASTERPAGE` located under the `AF_METATEMPLATE` root subform is given preference for extracting header, footer, and styling information.  
+* The master page with the name `AF_MASTERPAGE` located under the `AF_METATEMPLATE` root subform is given preference for extracting header, footer, and styling information.
 
 * If `AF_MASTERPAGE` is absent, the first master page present in the base template is used.
 
 **Styling conventions for fields**
 
-* To apply style on the fields in the document of record, the base template provides fields located in the `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` root subform.  
+* To apply style on the fields in the document of record, the base template provides fields located in the `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` root subform.
 
 * The properties of these fields are applied to the fields in the document of record. These fields should follow the `AF_<name of field in all caps>_XFO` naming convention. For example, the field name for check box should be `AF_CHECKBOX_XFO`.
 
 To create a base template, do the following in AEM Designer.
 
 1. Click **File &gt; New**.
-1. Select the **Based on a template** option.  
+1. Select the **Based on a template** option.
 
 1. Select the **Forms - Document of Record** category.
 1. Select **DoR Base Template**.
-1. Click **Next** and provide the required information.  
+1. Click **Next** and provide the required information.
 
 1. (Optional) Modify the styling and appearance of fields that you want to apply on the fields in the document of record.
 1. Save the form.
 
-You can now use the saved form as a base template for document of record.  
+You can now use the saved form as a base template for document of record.
 Do not modify or remove any scripts present in the base template.
 
 **Modifying base template**
@@ -258,7 +258,7 @@ Configure the document of record template of your form to let your customers dow
 
 Perform the following steps to configure a document of record for adaptive forms:
 
-1. In AEM author instance, click **Forms &gt; Forms and Documents.** 
+1. In AEM author instance, click **Forms &gt; Forms and Documents.**
 1. Select a form, and click **View Properties**.
 1. In the Properties window, tap **Form Model**.
 
@@ -300,23 +300,23 @@ While generating a document of record, you can change branding information for t
 To localize the branding information that you enter in the Document of Record tab, you need to ensure the locale of the browser is set appropriately. To customize the branding information of document of record, complete the following steps:
 
 1. Select a panel (root panel) in the document of record and then tap ![configure](assets/configure.png).
-1. Tap ![dortab](assets/dortab.png). The Document of Record tab appears. 
-1. Select either the default template or a custom template for rendering the document of record. If you select the default template, a thumbnail preview of the document of record appears below the Template drop-down. 
+1. Tap ![dortab](assets/dortab.png). The Document of Record tab appears.
+1. Select either the default template or a custom template for rendering the document of record. If you select the default template, a thumbnail preview of the document of record appears below the Template drop-down.
 
    ![brandingtemplate](assets/brandingtemplate.png)
 
-   If you choose to select a custom template, browse a select an XDP on your AEM Forms server. If you want to use a template that is not already on your AEM Forms server, you need to first upload the XDP to your AEM Forms server. 
+   If you choose to select a custom template, browse a select an XDP on your AEM Forms server. If you want to use a template that is not already on your AEM Forms server, you need to first upload the XDP to your AEM Forms server.
 
 1. Based on whether you select a default or a custom template, some or all of the following properties appear in the Document Of Record tab. Specify these appropriately:
 
-    * **Logo Image**: You can either choose to use the logo image from the adaptive form, choose one from DAM, or upload one from your computer. 
+    * **Logo Image**: You can either choose to use the logo image from the adaptive form, choose one from DAM, or upload one from your computer.
     * **Form Title**
     * **Header Text**
     * **Disclaimer Label**
     * **Disclaimer**
     * **Disclaimer Text**
     * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
-    * **Font Family**: Font family of the text in the document of record PDF 
+    * **Font Family**: Font family of the text in the document of record PDF
     * **For Check Box and Radio Button components, show only the selected values**
     * **Separator for multiple selected value(s)**
     * **Include form objects that are not bound to data model**
@@ -379,9 +379,9 @@ The document of record settings of a component are available under its propertie
 Keep in mind the following considerations and limitations when working on document of record for adaptive forms.
 
 * Document of record templates do not support rich text. Therefore, any rich text in the static adaptive form or in the information filled in by the end user appears as plain text in the document of record.
-* Document fragments in an adaptive form do not appear in the document of record. However, adaptive form fragments are supported. 
-* document of record is used for printing purpose only.   
-* Content binding in document of record generated for XML Schema based adaptive form is not supported. 
-* Content binding in document of record generated for XML Schema based adaptive form is not supported.   
+* Document fragments in an adaptive form do not appear in the document of record. However, adaptive form fragments are supported.
+* document of record is used for printing purpose only.
+* Content binding in document of record generated for XML Schema based adaptive form is not supported.
+* Content binding in document of record generated for XML Schema based adaptive form is not supported.
 * Localized version of document of record is created on demand for a locale when the user requests the rendering of the document of record. Localization of document of record occurs along with localization of adaptive form. For more information on localization of document of record and adaptive forms see [Using AEM translation workflow to localize adaptive forms and document of record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 

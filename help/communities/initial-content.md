@@ -5,7 +5,7 @@ description: Create content
 seo-description: Create content
 uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
@@ -91,7 +91,7 @@ was defined, which provides the optional ability to reference design assets in a
 
 * Click the green `[+] Add`
 
-The respository should appear as follows:  
+The respository should appear as follows:
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 

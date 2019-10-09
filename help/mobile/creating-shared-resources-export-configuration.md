@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about exporting shared resources from
 uuid: 99b8ff94-8135-4643-a15b-aa6fb91f5401
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
 ---

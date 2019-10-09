@@ -7,7 +7,7 @@ uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 ---
@@ -23,24 +23,24 @@ The following illustration is a screenshot of a portfolio with *On an Image* sty
 Creating a PDF Portfolio serves as a paperless alternative to passing a collection of documents. Using AEM Forms you can create portfolios by invoking the Assembler service with a structured DDX document. The following DDX document is an example of a DDX document that creates a PDF Portfolio.
 
 ```as3
- <DDX xmlns="https://ns.adobe.com/DDX/1.0/"> 
-     <PDF result="portfolio1.pdf"> 
-         <Portfolio>   
-             <Navigator source="myNavigator">   
-                 <Resource name="navigator/image.xxx" source="myImage.png"/> 
-             </Navigator> 
-         </Portfolio> 
-         <PackageFiles source="dog1"  > 
-              <FieldData name="X">72</FieldData> 
-             <FieldData name="Y">72</FieldData> 
-             <File filename="saint_bernard.jpg" mimetype="image/jpeg"/> 
-         </PackageFiles> 
-         <PackageFiles source="dog2"  > 
-             <FieldData name="X">120</FieldData> 
-             <FieldData name="Y">216</FieldData> 
-             <File filename="greyhound.pdf"/> 
-         </PackageFiles>     
-     </PDF> 
+ <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
+     <PDF result="portfolio1.pdf">
+         <Portfolio>
+             <Navigator source="myNavigator">
+                 <Resource name="navigator/image.xxx" source="myImage.png"/>
+             </Navigator>
+         </Portfolio>
+         <PackageFiles source="dog1"  >
+              <FieldData name="X">72</FieldData>
+             <FieldData name="Y">72</FieldData>
+             <File filename="saint_bernard.jpg" mimetype="image/jpeg"/>
+         </PackageFiles>
+         <PackageFiles source="dog2"  >
+             <FieldData name="X">120</FieldData>
+             <FieldData name="Y">216</FieldData>
+             <File filename="greyhound.pdf"/>
+         </PackageFiles>
+     </PDF>
  </DDX>
 ```
 
@@ -63,7 +63,7 @@ To create a PDF Portfolio, perform the following tasks:
 1. Reference an existing DDX document.
 1. Reference the required documents.
 1. Set run-time options.
-1. Assemble the portfolio. 
+1. Assemble the portfolio.
 1. Save the assembled portfolio.
 
 **Include project files**
@@ -114,7 +114,7 @@ A PDF Portfolio is returned within a collection object. Iterate through the coll
 
 **See also**
 
-[Assemble a PDF Portfolio using the Java API](#assemble-a-pdf-portfolio-using-the-java-api) 
+[Assemble a PDF Portfolio using the Java API](#assemble-a-pdf-portfolio-using-the-java-api)
 
 [Assemble a PDF Portfolio using the web service API](#assemble-a-pdf-portfolio-using-the-web-service-api)
 
@@ -162,7 +162,7 @@ Assemble a PDF Portfolio by using the Assembler Service API (Java):
    Invoke the `AssemblerServiceClient` object’s `invokeDDX` method and pass the following required values:
 
     * A `com.adobe.idp.Document` object that represents the DDX document to use
-    * A `java.util.Map` object that contains the files required to build a PDF Portfolio. 
+    * A `java.util.Map` object that contains the files required to build a PDF Portfolio.
     * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object that specifies the runtime options, including the default font and the job log level
 
    The `invokeDDX` method returns a `com.adobe.livecycle.assembler.client.AssemblerResult` object that contains the assembled PDF Portfolio and any exceptions that occurred.
@@ -197,34 +197,34 @@ Assemble a PDF Portfolio by using the Assembler Service API (web service):
 
 1. Create a PDF Assembler client.
 
-    * Create an `AssemblerServiceClient` object by using its default constructor. 
-    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `AssemblerServiceClient` object by using its default constructor.
+    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an existing DDX document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the DDX document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the DDX document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
 
 1. Reference the required documents.
 
-    * For each input file, create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input file. 
+    * For each input file, create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input file.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the input file and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
     * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. This collection object is used to store input files required to create a PDF Portfolio.
-    * For each input file, create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object. 
+    * For each input file, create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
     * Assign a string value that represents the key name to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `key` field. This value must match the value of the element specified in the DDX document. (Perform this task for each input file.)
     * Assign the `BLOB` object that stores the input file to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `value` field. (Perform this task for each input PDF document.)
     * Add the `MyMapOf_xsd_string_To_xsd_anyType_Item` object to the `MyMapOf_xsd_string_To_xsd_anyType` object. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object's `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Perform this task for each input PDF document.)
@@ -242,7 +242,7 @@ Assemble a PDF Portfolio by using the Assembler Service API (web service):
     * The `MyMapOf_xsd_string_To_xsd_anyType` object that contains the required files
     * An `AssemblerOptionSpec` object that specifies run-time options
 
-   The `invokeDDX` method returns an `AssemblerResult` object that contains the results of the job and any exceptions that occurred. 
+   The `invokeDDX` method returns an `AssemblerResult` object that contains the results of the job and any exceptions that occurred.
 
 1. Save the assembled portfolio.
 

@@ -5,7 +5,7 @@ description: The default set of Cloud Services can be extended with custom Cloud
 seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
@@ -63,9 +63,9 @@ The default set of Cloud Services can be extended with custom Cloud Service type
    <%@page contentType="text/html"
                pageEncoding="utf-8"%><%
    %><%@include file="/libs/foundation/global.jsp"%><div>
-   
+
    <div>
-       <h3>Google Analytics Settings</h3> 
+       <h3>Google Analytics Settings</h3>
        <ul>
            <li><div class="li-bullet"><strong>accountID: </strong><br><%= xssAPI.encodeForHTML(properties.get("accountID", "")) %></div></li>
        </ul>
@@ -156,7 +156,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
                    com.day.cq.wcm.webservicesupport.Configuration,
                    com.day.cq.wcm.webservicesupport.ConfigurationManager" %>
    <%@include file="/libs/foundation/global.jsp" %><%
-   
+
    String[] services = pageProperties.getInherited("cq:cloudserviceconfigs", new String[]{});
    ConfigurationManager cfgMgr = resource.getResourceResolver().adaptTo(ConfigurationManager.class);
    if(cfgMgr != null) {
@@ -165,21 +165,21 @@ The default set of Cloud Services can be extended with custom Cloud Service type
        if(cfg != null) {
            accountID = cfg.get("accountID", null);
        }
-   
+
        if(accountID != null) {
        %>
    <script type="text/javascript">
-   
+
      var _gaq = _gaq || [];
      _gaq.push(['_setAccount', '<%= accountID %>']);
      _gaq.push(['_trackPageview']);
-   
+
      (function() {
        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
      })();
-   
+
    </script><%
        }
    }
@@ -204,7 +204,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
     * **Parent Configuration**: `/etc/cloudservices/googleanalytics`
     * **Title:**  `My First GA Config`
 
-   Choose **Google Analytics Configuration** and click **Create**.  
+   Choose **Google Analytics Configuration** and click **Create**.
 
 1. Enter a **Account ID**, for example `AA-11111111-1`. Click **OK**.
 1. Navigate to a page and add the newly created configuration in the page properties, under the **Cloud Services** tab.

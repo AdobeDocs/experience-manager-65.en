@@ -1,11 +1,11 @@
 ---
 title: Overlays
 seo-title: Overlays
-description: AEM uses the principle of overlays to allow you to extend and customize the consoles and other functionality 
-seo-description: AEM uses the principle of overlays to allow you to extend and customize the consoles and other functionality 
+description: AEM uses the principle of overlays to allow you to extend and customize the consoles and other functionality
+seo-description: AEM uses the principle of overlays to allow you to extend and customize the consoles and other functionality
 uuid: d14c08fe-04c0-4925-8c99-c6644357919d
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
@@ -58,7 +58,7 @@ Since AEM 6.0, changes have been made to how overlays are implemented and used:
 
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 
-* You ***must not* make changes in the `/libs` branch** 
+* You ***must not* make changes in the `/libs` branch**
   Any changes you do make may be lost, because this branch is liable to changes whenever you:
 
     * upgrade on your instance
@@ -88,7 +88,7 @@ For overlays the resource delivered is an aggregate of the resources and propert
 * Finally the Servlet Resolver must also be configured (in this example to add /etc as well)
 
     ```
-    PID = org.apache.sling.servlets.resolver.SlingServletResolver  
+    PID = org.apache.sling.servlets.resolver.SlingServletResolver
     servletresolver.paths=["/bin/","/libs/","/apps/","/etc/","/system/","/index.servlet","/login.servlet","/services/"]
     ```
 

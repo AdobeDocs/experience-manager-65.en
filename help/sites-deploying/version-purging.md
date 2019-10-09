@@ -5,7 +5,7 @@ description: This article describes the available options for version purging.
 seo-description: This article describes the available options for version purging.
 uuid: 6140c87e-ae1c-409d-bdbb-71b397f0b738
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
@@ -25,21 +25,21 @@ These versions are never purged, so the repository size will grow over time and 
 
 AEM is shipped with various mechanisms to help you manage your repository:
 
-* the [Version Manager](#version-manager) 
+* the [Version Manager](#version-manager)
 
-  This can be configured to purge old versions when new versions are created.  
+  This can be configured to purge old versions when new versions are created.
 
-* the [Purge Versions](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) tool 
+* the [Purge Versions](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) tool
 
-  This is used as part of monitoring and maintaining your repository. 
+  This is used as part of monitoring and maintaining your repository.
 
   It allows you to intervene to remove old versions of a node, or a hierarchy of nodes, according to these parameters:
 
-    * The maximum number of versions to be kept in the repository. 
+    * The maximum number of versions to be kept in the repository.
 
-      When this number is exceeded, the oldest version is removed. 
+      When this number is exceeded, the oldest version is removed.
 
-    * The maximum age of any version kept in the repository. 
+    * The maximum age of any version kept in the repository.
 
       When the age of a version exceeds this value, it is purged from the repository.
 
@@ -59,35 +59,35 @@ To configure the Version Manager, create a configuration for:
 
 The following options are available:
 
-* `versionmanager.createVersionOnActivation` (Boolean, default: true) 
+* `versionmanager.createVersionOnActivation` (Boolean, default: true)
 
-  whether to create a version when pages are activated. 
+  whether to create a version when pages are activated.
 
-  A version is created unless the replication agent is configured to suppress creation of versions, which is honoured by the Version Manager 
+  A version is created unless the replication agent is configured to suppress creation of versions, which is honoured by the Version Manager
 
   A version is only created if the activation happens on a paths that is contained in versionmanager.ivPaths (see below).
 
-* `versionmanager.ivPaths` (String[], default: {"/"}) 
+* `versionmanager.ivPaths` (String[], default: {"/"})
 
   paths on which versions are implicitly created on activation if versionmanager.createVersionOnActivation is true.
 
-* `versionmanager.purgingEnabled` (Boolean, default: false) 
+* `versionmanager.purgingEnabled` (Boolean, default: false)
 
   whether to enable purging when new versions are created
 
-* `versionmanager.purgePaths` (String[], default: {"/content"}) 
+* `versionmanager.purgePaths` (String[], default: {"/content"})
 
   on which paths to purge versions when new versions are created.
 
-* `versionmanager.maxAgeDays` (int, default: 30) 
+* `versionmanager.maxAgeDays` (int, default: 30)
 
-  on purge, any version older than this value will be removed. If this value is less than 1, purging is not performed based on the age of the version  
+  on purge, any version older than this value will be removed. If this value is less than 1, purging is not performed based on the age of the version
 
-* `versionmanager.maxNumberVersions` (int, default 5) 
+* `versionmanager.maxNumberVersions` (int, default 5)
 
   on purge, any version older than the n-th newest version will be removed. If this value is less than 1, purging is not performed based on the number of versions
 
-* `versionmanager.minNumberVersions` (int, default 0) 
+* `versionmanager.minNumberVersions` (int, default 0)
 
   The minimum number of versions to keep regardless of the age. If this value is set to a value less than 1 no minimum number of versions is retained.
 
@@ -119,8 +119,8 @@ For example, when defining the maximum AND minimum number of versions to retain 
 
 * Setting:
 
-    * `maxNumberVersions` = 3 
-    * `maxAgeDays` = 30 
+    * `maxNumberVersions` = 3
+    * `maxAgeDays` = 30
     * `minNumberVersions` = 3
 
 * With:

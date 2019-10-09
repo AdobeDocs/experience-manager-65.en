@@ -161,7 +161,7 @@ Version 3.1
 ### Compatibility {#compatibility}
 
 * **Running as a Windows service is not supported (Windows only)** - This may work but it has not been tested.
-* **Dynamic Media** ( `dynamicmedia-scene7` mode) - Compatibility of AEM3D with the new Dynamic Media solution released with AEM 6.4 is not yet fully verified. If Dynamic Media and AEM3D is deployed together, it is recommended that you place 3D assets and their dependencies only in an area of the AEM Assets repository that is not assigned to Dynamic Media. This recommendation is especially important for 32-bit TIFF files which are required for 3D Stages but are not supported by Dynamic Media.
+* **Dynamic Media** ( `dynamicmedia-scene7` mode) - Compatibility of AEM3D with the new Dynamic Media solution released with AEM 6.5 is not yet fully verified. If Dynamic Media and AEM3D is deployed together, it is recommended that you place 3D assets and their dependencies only in an area of the AEM Assets repository that is not assigned to Dynamic Media. This recommendation is especially important for 32-bit TIFF files which are required for 3D Stages but are not supported by Dynamic Media.
 
 ### General {#general}
 

@@ -1,11 +1,11 @@
 ---
 title: Metadata Schemas
 seo-title: Metadata Schemas
-description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.  
-seo-description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.  
+description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
+seo-description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
 uuid: cadbdc1c-8a57-48c1-aec8-e03d714c6384
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: c4c16dac-0f71-459a-8a19-a46a81eecc65
 ---
 
@@ -37,19 +37,19 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
     * **default**: The base metadata schema form for assets.
 
-   The following child forms inherit the properties of the default form:  
+   The following child forms inherit the properties of the default form:
 
-   i. **image**: Schema form for assets with the MIME type `image`, for example, `image/jpeg`, `image/png`, and so on.  
+   i. **image**: Schema form for assets with the MIME type `image`, for example, `image/jpeg`, `image/png`, and so on.
 
-   The "image" form has the following child form templates:  
-   
-   a. **jpeg**: Schema form for assets with sub type jpeg.  
+   The "image" form has the following child form templates:
 
-   b. **tiff**: Schema form for the assets with sub type TIFF.  
+   a. **jpeg**: Schema form for assets with sub type jpeg.
 
-   ii. **application**: Schema form for assets with MIME type application, for example `application/pdf`, `application/zip`, and so on.  
-   
-   a. **pdf**: Schema form for assets with sub type PDF.  
+   b. **tiff**: Schema form for the assets with sub type TIFF.
+
+   ii. **application**: Schema form for assets with MIME type application, for example `application/pdf`, `application/zip`, and so on.
+
+   a. **pdf**: Schema form for assets with sub type PDF.
 
    iii. **video**: Schema form for assets with MIME type video, such as `video/avi`, `video/mp4` and so on.
 
@@ -98,69 +98,69 @@ You can add new tabs or form items to the metadata schema form. The tabs and for
 
 The **[!UICONTROL Build Form]** tab lists form items that you use in your schema form. The **[!UICONTROL Settings]** tab provides the attributes of each item that you select in the **[!UICONTROL Build Form]** tab. The following table lists the form items available in the **[!UICONTROL Build Form]** tab:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Component Name</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Section Header</td> 
-   <td>Add a section heading for a list of common components.</td> 
-  </tr> 
-  <tr> 
-   <td>Single Line Text</td> 
-   <td>Add a single line text property. It is stored as a string.</td> 
-  </tr> 
-  <tr> 
-   <td>Multi Value Text</td> 
-   <td>Add a multi value text property. It is stored as a string array.</td> 
-  </tr> 
-  <tr> 
-   <td>Number</td> 
-   <td>Add a number component.</td> 
-  </tr> 
-  <tr> 
-   <td>Date</td> 
-   <td>Add a date component.</td> 
-  </tr> 
-  <tr> 
-   <td>Dropdown</td> 
-   <td>Add a dropdown list.</td> 
-  </tr> 
-  <tr> 
-   <td>Standard Tags</td> 
-   <td>Add a tag. </td> 
-  </tr> 
-  <tr> 
-   <td>Smart Tags</td> 
-   <td>Add to augment search capabilities by automatically adding metadata tags.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Hidden Field</td> 
-   <td>Add a hidden field. It is sent as a POST parameter when the asset is saved.</td> 
-  </tr> 
-  <tr> 
-   <td>Asset Referenced By</td> 
-   <td>Add this component to view list of assets referenced by the asset.</td> 
-  </tr> 
-  <tr> 
-   <td>Asset Referencing</td> 
-   <td>Add to display a list of assets that reference the asset.</td> 
-  </tr> 
-  <tr> 
-   <td>Products References</td> 
-   <td>Add to show the list of products linked with the asset.</td> 
-  </tr> 
-  <tr> 
-   <td>Asset Rating</td> 
-   <td>Add to display options for rating the asset.</td> 
-  </tr> 
-  <tr> 
-   <td>Contextual Metadata</td> 
-   <td>Add to control the display of other metadata tabs in the properties page of assets.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Component Name</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Section Header</td>
+   <td>Add a section heading for a list of common components.</td>
+  </tr>
+  <tr>
+   <td>Single Line Text</td>
+   <td>Add a single line text property. It is stored as a string.</td>
+  </tr>
+  <tr>
+   <td>Multi Value Text</td>
+   <td>Add a multi value text property. It is stored as a string array.</td>
+  </tr>
+  <tr>
+   <td>Number</td>
+   <td>Add a number component.</td>
+  </tr>
+  <tr>
+   <td>Date</td>
+   <td>Add a date component.</td>
+  </tr>
+  <tr>
+   <td>Dropdown</td>
+   <td>Add a dropdown list.</td>
+  </tr>
+  <tr>
+   <td>Standard Tags</td>
+   <td>Add a tag. </td>
+  </tr>
+  <tr>
+   <td>Smart Tags</td>
+   <td>Add to augment search capabilities by automatically adding metadata tags.<br /> </td>
+  </tr>
+  <tr>
+   <td>Hidden Field</td>
+   <td>Add a hidden field. It is sent as a POST parameter when the asset is saved.</td>
+  </tr>
+  <tr>
+   <td>Asset Referenced By</td>
+   <td>Add this component to view list of assets referenced by the asset.</td>
+  </tr>
+  <tr>
+   <td>Asset Referencing</td>
+   <td>Add to display a list of assets that reference the asset.</td>
+  </tr>
+  <tr>
+   <td>Products References</td>
+   <td>Add to show the list of products linked with the asset.</td>
+  </tr>
+  <tr>
+   <td>Asset Rating</td>
+   <td>Add to display options for rating the asset.</td>
+  </tr>
+  <tr>
+   <td>Contextual Metadata</td>
+   <td>Add to control the display of other metadata tabs in the properties page of assets.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Editing the metadata component {#editing-the-metadata-component}

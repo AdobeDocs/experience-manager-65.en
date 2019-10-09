@@ -5,7 +5,7 @@ description: Learn how to opt into Adobe Analytics and Adobe Target.
 seo-description: Learn how to opt into Adobe Analytics and Adobe Target.
 uuid: 9090a0f3-d373-4826-aa68-6aa82c0fbfbb
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
@@ -21,9 +21,9 @@ You have the following options for configuring the integration:
 
 * Configure the integration via the task.
 
-  This can be done either immediately or later, the task will remain in the Inbox until some action is taken. In either case the configuration can be done directly in the UI, or with the use of a pre-defined `.properties` file.  
+  This can be done either immediately or later, the task will remain in the Inbox until some action is taken. In either case the configuration can be done directly in the UI, or with the use of a pre-defined `.properties` file.
 
-* Opt out of the integration. 
+* Opt out of the integration.
 
   Consider this option if you prefer to [manually configure the integration](/help/sites-administering/marketing-cloud.md). See also [Integrating AEM with Adobe Target and Adobe Analytics using DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
@@ -50,7 +50,7 @@ When you opt into the integration, AEM performs the following tasks:
 
 >[!NOTE]
 >
->AT.js is the default client library. This is configured under your [target cloud services configuration](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration). 
+>AT.js is the default client library. This is configured under your [target cloud services configuration](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
 >
 >Adobe recommends that you use AT.js as the client library.
 
@@ -63,7 +63,7 @@ To opt-in from the pre-loaded, out-of-the-box task:
 1. For Analytics:
 
     1. Enter the user account information for Analytics, then click the corresponding **Add** button.
-    1. The appropriate credentials are authenticated. 
+    1. The appropriate credentials are authenticated.
     1. When the Analytics account is authenticated, select the Analytics report suite to use. AEM retrieves those Analytics report suites. The status is updated to **Added**.
 
 1. For Target:
@@ -72,7 +72,7 @@ To opt-in from the pre-loaded, out-of-the-box task:
     1. The appropriate credentials are authenticated. The status is updated to **Added**.
 
 1. Select **Next**.
-1. Select the sites for which Analytics and/or Target should be used.  
+1. Select the sites for which Analytics and/or Target should be used.
 
 1. Select **Done** to complete.
 
@@ -139,7 +139,7 @@ The following procedure describes how to opt into the integration using the prop
 1. Start or restart the server, and then log in using an administrator account.
 1. Open the Configure Analytics & Targeting task as described in [Configuring the Integration](/help/sites-administering/opt-in.md#configuring-the-integration). Instead of requesting your account information, the wizard uses the values from the `.properties` file.
 
-   Select **Add** for the appropriate service, then continue with the wizard. 
+   Select **Add** for the appropriate service, then continue with the wizard.
 
    ![optin-02](assets/optin-02.png)
 
@@ -151,7 +151,7 @@ You do not need to alter the cloud configurations. However, you can configure th
 
 >[!NOTE]
 >
->By default when you opt into the Adobe Target configuration wizard, Accurate Targeting is enabled. 
+>By default when you opt into the Adobe Target configuration wizard, Accurate Targeting is enabled.
 >
 >Accurate targeting means that the cloud service configuration waits for the context to load before loading content. As a result, in terms of performance, accurate targeting may create a few millisecond delay before loading content.
 >
@@ -202,7 +202,7 @@ Which parameters you send depends on the following:
   In this case, the curl request that creates both Analytics and Target configurations and attachs them to the we-retail page would be:
 
   ```shell
-  
+
   curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 

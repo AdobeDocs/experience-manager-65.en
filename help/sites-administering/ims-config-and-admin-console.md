@@ -1,11 +1,11 @@
 ---
-title:  Adobe IMS Authentication and Admin Console Support for AEM Managed Services 
-seo-title:  Adobe IMS Authentication and Admin Console Support for AEM Managed Services 
+title:  Adobe IMS Authentication and Admin Console Support for AEM Managed Services
+seo-title:  Adobe IMS Authentication and Admin Console Support for AEM Managed Services
 description: Learn how to use the the Admin Console in AEM.
 seo-description: Learn how to use the the Admin Console in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
@@ -39,7 +39,7 @@ IMS Authentication works by using the OAuth protocol between AEM and the Adobe I
 
 The user login flow is shown below, the user will be redirected to IMS and optionally to the customer IDP for SSO validation and then redirected back to AEM.
 
-![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png) 
+![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
 ## How To Set Up {#how-to-set-up}
 
@@ -83,13 +83,13 @@ Users and Groups can be manually created in the Admin Console UI. This method ca
 
 Users can also be manually created if the customer is already using this method for administering other Adobe products like Analytics, Target or Creative Cloud applications.
 
-![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png) 
+![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
 #### File Upload in the Admin Console UI {#file-upload-in-the-admin-console-ui}
 
 For easy handling of user creation, a CSV file can be uploaded for adding users in bulk:
 
-![image2018-9-23_18-59-57](assets/image2018-9-23_18-59-57.png) 
+![image2018-9-23_18-59-57](assets/image2018-9-23_18-59-57.png)
 
 #### User Sync Tool {#user-sync-tool}
 
@@ -117,12 +117,12 @@ More information about the new group features can be found here:
 
 >[!NOTE]
 >
->For more information regarding the User Sync Tool, refer to the [documentation page](https://adobe-apiplatform.github.io/user-sync.py/en/).  
+>For more information regarding the User Sync Tool, refer to the [documentation page](https://adobe-apiplatform.github.io/user-sync.py/en/).
 >
 >
 >The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->The Adobe I/O Console Documentation can be found [here](https://www.adobe.io/apis/cloudplatform/console.html).   
+>The Adobe I/O Console Documentation can be found [here](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
 >The User Management API that is used by the User Sync Tool is covered at this [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
@@ -153,7 +153,7 @@ Under each Product Context instance, there will be an associated Product Profile
 
 Any users and groups added under this product profile will be able to login to that instance as shown in the example below:
 
-![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png) 
+![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
 ### Logging into AEM {#logging-into-aem}
 
@@ -161,7 +161,7 @@ Any users and groups added under this product profile will be able to login to t
 
 AEM can continue to support local logins for Admin users, as the login screen has an option to log in locally:
 
-![screen_shot_2018-09-18at121056am](assets/screen_shot_2018-09-18at121056am.png) 
+![screen_shot_2018-09-18at121056am](assets/screen_shot_2018-09-18at121056am.png)
 
 #### IMS Based Login {#ims-based-login}
 
@@ -181,7 +181,7 @@ The IDP is Okta in the below example:
 
 After authentication is complete, the user will be redirected back to AEM and logged in:
 
-![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png) 
+![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
 ### Migrating Existing Users {#migrating-existing-users}
 

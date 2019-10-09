@@ -6,7 +6,7 @@ seo-description: How to reuse AEM Forms workspace components in your own webapps
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 ---
@@ -19,20 +19,20 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
 1. Create a path `/apps/sampleApplication/wscomponents`.
 1. Copy css, images, js/libs, js/runtime, and js/registry.js
 
-    * from `/libs/ws` 
+    * from `/libs/ws`
     * to `/apps/sampleApplication/wscomponents`.
 
 1. Create a demomain.js file inside /apps/sampleApplication/wscomponents/js folder. Copy code from /libs/ws/js/main.js into demomain.js.
 1. In demomain.js, remove the code to initialize Router and add the following code:
 
    ```
-   require(['initializer','runtime/util/usersession'], 
-       function(initializer, UserSession) { 
-           UserSession.initialize( 
-               function() { 
+   require(['initializer','runtime/util/usersession'],
+       function(initializer, UserSession) {
+           UserSession.initialize(
+               function() {
                    // Render all the global components
-                   initializer.initGlobal();  
-               }); 
+                   initializer.initGlobal();
+               });
        });
    ```
 
@@ -42,10 +42,10 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
 
    ```as3
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
-   <div class="UserInfoView gcomponent" data-name="userinfo"></div> 
-   <div class="filterListView gcomponent" data-name="filterlist"></div> 
-   <div class="taskListView gcomponent" data-name="tasklist"></div> 
-   
+   <div class="UserInfoView gcomponent" data-name="userinfo"></div>
+   <div class="filterListView gcomponent" data-name="filterlist"></div>
+   <div class="taskListView gcomponent" data-name="tasklist"></div>
+
    ```
 
    Also include the CSS files required for the AEM Forms workspace components.
@@ -57,22 +57,22 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
 1. To customize the components, you may extend the existing views for the required component as follows:
 
    ```as3
-   define([ 
-       ‘jquery’, 
-       ‘underscore’, 
-       ‘backbone’, 
+   define([
+       ‘jquery’,
+       ‘underscore’,
+       ‘backbone’,
        ‘runtime/views/userinfo'],
-       function($, _, Backbone, UserInfo){ 
-           var demoUserInfo = UserInfo.extend({ 
-               //override the functions to customize the functionality 
-               render: function() { 
-                   UserInfo.prototype.render.call(this); // call the render function of the super class 
-                   … 
-                   //other tasks 
-                   … 
-               } 
-           }); 
-           return demoUserInfo; 
+       function($, _, Backbone, UserInfo){
+           var demoUserInfo = UserInfo.extend({
+               //override the functions to customize the functionality
+               render: function() {
+                   UserInfo.prototype.render.call(this); // call the render function of the super class
+                   …
+                   //other tasks
+                   …
+               }
+           });
+           return demoUserInfo;
    });
    ```
 
@@ -81,7 +81,7 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
    ```as3
    body {
        font-family: "Myriad pro", Arial;
-       background: #000;    //This was origianlly #CCC    
+       background: #000;    //This was origianlly #CCC
        position: relative;
        margin: 0 auto;
    }

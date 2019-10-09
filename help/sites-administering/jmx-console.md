@@ -5,7 +5,7 @@ description: Learn how to monitor server resources using the JMX console.
 seo-description: Learn how to monitor server resources using the JMX console.
 uuid: b3cfcc0b-69db-415d-9244-ac22a7387247
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 0798ae5c-e06e-425f-ba8a-9309eb233083
@@ -128,7 +128,7 @@ Operations for administering running, completed, stale, and failed workflow inst
 * Arguments:
 
     * Model: (Optional) The ID of the model to which the operation is applied. Specify no model to apply the operation to the workflow instances of all workflow models. The ID is the path to the model node, for example:
-  
+
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
     * Number of days since workflow started: The age of the workflow instances to purge, in days.
     * Dry run: (Optional) Specify a value of `true` to see the results of the operation without actually performing the operation. The default value of `false` causes the operation to be performed.
@@ -234,252 +234,252 @@ Information about the CRX repository
 
 **Descriptors** A set of key-value pairs that represent repository properties. All properties are read-only.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Key</th> 
-   <th>Value</th> 
-  </tr> 
-  <tr> 
-   <td>option.node.and.property.with.same.name.supported</td> 
-   <td>Indicates whether a node and a property of the node can have the same name. true indicates same names are supported, false indicates it is not supported. </td> 
-  </tr> 
-  <tr> 
-   <td>identifier.stability</td> 
-   <td>Indicates the stability of non-referenceable node identifiers. The following values are possible: 
-    <ul> 
-     <li>identifier.stability.indefinite.duration: Identifiers do not change.</li> 
-     <li>identifier.stability.method.duration: Identifiers can change between method calls.</li> 
-     <li>identifier.stability.save.duration: Identifiers do not change within a save/refresh cycle.</li> 
-     <li>identifier.stability.session.duration: Identifiers do not change during a session.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>query.xpath.pos.index</td> 
-   <td>Indicates whether the JCR 1.0 XPath query language is supported. true indicates support, and false indicates no support.</td> 
-  </tr> 
-  <tr> 
-   <td>crx.repository.systemid</td> 
-   <td>The system identifier as found in the system.id file.</td> 
-  </tr> 
-  <tr> 
-   <td>option.query.sql.supported</td> 
-   <td>Indicates whether the JCR 1.0 XPath query language is supported. true indicates support, and false indicates no support.</td> 
-  </tr> 
-  <tr> 
-   <td>jcr.repository.version</td> 
-   <td>The version of the repository implementation.</td> 
-  </tr> 
-  <tr> 
-   <td>option.update.primary.node.type.supported</td> 
-   <td>Indicates whether the primary node type of a node can be changed. true indicates you can change the primary node type, and false indicates the change is not supported.</td> 
-  </tr> 
-  <tr> 
-   <td>option.node.type.management.supported</td> 
-   <td>Indicates whether node type management is supported. true indicates it is supported, and false indicates no support.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.overrides.supported</td> 
-   <td>Indicates whether you can override the inherited property or child node definition of a node type. true indicates overrides are supported, and false indicates no overrides.</td> 
-  </tr> 
-  <tr> 
-   <td>option.observation.supported</td> 
-   <td>true indicates that asynchronous observation of repository changes is supported. Support of asynchronous observation enables applications to recieve and respond to notifications about each change as they occur.</td> 
-  </tr> 
-  <tr> 
-   <td>query.jcrscore</td> 
-   <td><p>true indicates indicates that the jcr:score pseudo-property is available in XPath and SQL queries that include a jcrfn:contains (in XPath) or CONTAINS (in SQL) function to perform a full-text search.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>option.simple.versioning.supported</td> 
-   <td>true indicates that the repository supports simple versioning. With simple versioning, the repository maintains a sequential series of versions of a node.</td> 
-  </tr> 
-  <tr> 
-   <td>option.workspace.management.supported</td> 
-   <td>true indicates that the repository supports the creation and deletion of workspaces using APIs.</td> 
-  </tr> 
-  <tr> 
-   <td>option.update.mixin.node.types.supported</td> 
-   <td>true indicates that the repository supports the addition and removal of mixin node types of an existing node.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.primary.item.name.supported</td> 
-   <td>true indicates that the repository enables node definitions to contain a primary item as a child. A primary item is accessible using the API without knowing the item name.</td> 
-  </tr> 
-  <tr> 
-   <td>level.2.supported</td> 
-   <td>true indicates that both LEVEL_1_SUPPORTED and OPTION_XML_IMPORT_SUPPORTED are true.</td> 
-  </tr> 
-  <tr> 
-   <td>write.supported</td> 
-   <td>true indicates that the repository provides write-access using the API. false indicates read-only access.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.update.in.use.supported</td> 
-   <td>true indicates that you can change node definitions that are in-use by existing nodes.</td> 
-  </tr> 
-  <tr> 
-   <td>jcr.specification.version</td> 
-   <td>The version of the JCR specification that the repository implements.</td> 
-  </tr> 
-  <tr> 
-   <td>option.journaled.observation.supported</td> 
-   <td>true indicates that applications can perfom journaled observation of the repository. with journaled observation, a set of change notifications can be obtained for a specific period of time. </td> 
-  </tr> 
-  <tr> 
-   <td>query.languages</td> 
-   <td>The query languages that the repository supports. No value indicates no query support.</td> 
-  </tr> 
-  <tr> 
-   <td>option.xml.export.supported</td> 
-   <td>true indicates that the repository supports exporting nodes as XML code.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.multiple.binary.properties.supported</td> 
-   <td>true indicates that the repository supports the registration of node types that have multiple binary properties. false indicates a single binary property is supported for a node type.</td> 
-  </tr> 
-  <tr> 
-   <td>option.access.control.supported</td> 
-   <td>true indicates that the repository supports access control, for setting and determining user privileges for node access.</td> 
-  </tr> 
-  <tr> 
-   <td>option.baselines.supported</td> 
-   <td>true indicates that the repository supports both configurations and baselines.</td> 
-  </tr> 
-  <tr> 
-   <td>option.shareable.nodes.supported</td> 
-   <td>true indicates the repository supports the creation of shareable nodes.</td> 
-  </tr> 
-  <tr> 
-   <td>crx.cluster.id</td> 
-   <td>The identifier of the repository cluster.</td> 
-  </tr> 
-  <tr> 
-   <td>query.stored.queries.supported</td> 
-   <td>true indicates that the repository supports stored queries.</td> 
-  </tr> 
-  <tr> 
-   <td>query.full.text.search.supported</td> 
-   <td>true indicates that the repository supports full-text search.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.inheritance</td> 
-   <td><p>Indicates the level of repository support for node type inheritance. The following values are possible:</p> <p>node.type.management.inheritance.minimal: Registration of primary node types is limited to those that have only nt:base as a supertype. Registration of mixin node types is limited to those with no supertype.</p> <p>node.type.management.inheritance.single: Registration of primary node types is limited to those with one supertype. Registration of mixin node types is limited to those with at most one supertype.</p> <p><br /> node.type.management.inheritance.multiple: Primary node types can be registered with one or more supertypes. Mixin node types can be registered with zero or more supertypes.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>crx.cluster.preferredMaster</td> 
-   <td>true indicates that this cluster node is the preferred master of the cluster.</td> 
-  </tr> 
-  <tr> 
-   <td>option.transactions.supported</td> 
-   <td>true indicates the repository supports transactions.</td> 
-  </tr> 
-  <tr> 
-   <td>jcr.repository.vendor.url</td> 
-   <td>The URL of the repository vendor.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.value.constraints.supported</td> 
-   <td>true indicates the repository supports value constraints for node properties.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.property.types</td> 
-   <td>an array of javax.jcr.PropertyType constants that represent the property types that a registered node type can specify. A zero-length array indicates registered node types cannot specify property definitions. Property types are STRING, URI, BOOLEAN, LONG, DOUBLE, DECIMAL, BINARY, DATE, NAME, PATH, WEAKREFERENCE, REFERENCE, and UNDEFINED (if supported)</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.orderable.child.nodes.supported</td> 
-   <td>true indicates the repository supports the preservation of the order of child nodes.</td> 
-  </tr> 
-  <tr> 
-   <td>jcr.repository.vendor</td> 
-   <td>The name of the repository vendor.</td> 
-  </tr> 
-  <tr> 
-   <td>query.joins</td> 
-   <td><p>The level of support for joins in queries. The following values are possible:</p> 
-    <ul> 
-     <li>query.joins.none: No support for joins. Queries can use one selector.</li> 
-     <li>query.joins.inner: Support for inner joins.</li> 
-     <li>query.joins.inner.outer: Support for inner and outer joins.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>org.apache.jackrabbit.spi.commons.AdditionalEventInfo</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>query.xpath.doc.order</td> 
-   <td>true indicates the repository supports the XPath 1.0 query language.</td> 
-  </tr> 
-  <tr> 
-   <td>query.jcrpath</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>option.xml.import.supported</td> 
-   <td>true indicates the repository supports the importing XML code as content.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.same.name.siblings.supported</td> 
-   <td>true indicates the repository supports sibling nodes (nodes with the same parent) with the same names.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.residual.definitions.supported</td> 
-   <td>true indicates the repository supports name properties with residual definitions. When supported, the name attribute of an item definition can be an asterisk ("*").</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.autocreated.definitions.supported</td> 
-   <td>true indicates the repository supports the automatic creation of child items (nodes or properties) of a node when the node is created.</td> 
-  </tr> 
-  <tr> 
-   <td>crx.cluster.master</td> 
-   <td>true indicates this repository node is the master node of the cluster.</td> 
-  </tr> 
-  <tr> 
-   <td>level.1.supported</td> 
-   <td>true indicates that option.xml.export.support is true and query.languages is of non-zero length.</td> 
-  </tr> 
-  <tr> 
-   <td>option.unfiled.content.supported</td> 
-   <td>true indicates the repository supports unfiled content. Unfiled nodes are not part of the repository hierarchy.</td> 
-  </tr> 
-  <tr> 
-   <td>jcr.specification.name</td> 
-   <td>The name of the JCR specification that the repository implements.</td> 
-  </tr> 
-  <tr> 
-   <td>option.versioning.supported</td> 
-   <td>true indicates the repository supports full versioning.</td> 
-  </tr> 
-  <tr> 
-   <td>jcr.repository.name</td> 
-   <td>The name of the repository.</td> 
-  </tr> 
-  <tr> 
-   <td>option.locking.supported</td> 
-   <td>true indicates the repository supports the locking of nodes. Locking enables a user to temporarily prevent other users from making changes.</td> 
-  </tr> 
-  <tr> 
-   <td>jcr.repository.version.display</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>option.activities.supported</td> 
-   <td>true indicates the repository supports activities. Activities are a a set of changes that are performed in a workspace that are merged into another workspace.</td> 
-  </tr> 
-  <tr> 
-   <td>node.type.management.multivalued.properties.supported</td> 
-   <td>true indicates the repository supports node properties that can have zero or more values.</td> 
-  </tr> 
-  <tr> 
-   <td>option.retention.supported</td> 
-   <td>true indicates the repository supports the use of external retention management applications to apply retention policies to content and supports hold and release.</td> 
-  </tr> 
-  <tr> 
-   <td>option.lifecycle.supported</td> 
-   <td>true indicates the repository supports lifecycle management.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Key</th>
+   <th>Value</th>
+  </tr>
+  <tr>
+   <td>option.node.and.property.with.same.name.supported</td>
+   <td>Indicates whether a node and a property of the node can have the same name. true indicates same names are supported, false indicates it is not supported. </td>
+  </tr>
+  <tr>
+   <td>identifier.stability</td>
+   <td>Indicates the stability of non-referenceable node identifiers. The following values are possible:
+    <ul>
+     <li>identifier.stability.indefinite.duration: Identifiers do not change.</li>
+     <li>identifier.stability.method.duration: Identifiers can change between method calls.</li>
+     <li>identifier.stability.save.duration: Identifiers do not change within a save/refresh cycle.</li>
+     <li>identifier.stability.session.duration: Identifiers do not change during a session.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>query.xpath.pos.index</td>
+   <td>Indicates whether the JCR 1.0 XPath query language is supported. true indicates support, and false indicates no support.</td>
+  </tr>
+  <tr>
+   <td>crx.repository.systemid</td>
+   <td>The system identifier as found in the system.id file.</td>
+  </tr>
+  <tr>
+   <td>option.query.sql.supported</td>
+   <td>Indicates whether the JCR 1.0 XPath query language is supported. true indicates support, and false indicates no support.</td>
+  </tr>
+  <tr>
+   <td>jcr.repository.version</td>
+   <td>The version of the repository implementation.</td>
+  </tr>
+  <tr>
+   <td>option.update.primary.node.type.supported</td>
+   <td>Indicates whether the primary node type of a node can be changed. true indicates you can change the primary node type, and false indicates the change is not supported.</td>
+  </tr>
+  <tr>
+   <td>option.node.type.management.supported</td>
+   <td>Indicates whether node type management is supported. true indicates it is supported, and false indicates no support.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.overrides.supported</td>
+   <td>Indicates whether you can override the inherited property or child node definition of a node type. true indicates overrides are supported, and false indicates no overrides.</td>
+  </tr>
+  <tr>
+   <td>option.observation.supported</td>
+   <td>true indicates that asynchronous observation of repository changes is supported. Support of asynchronous observation enables applications to recieve and respond to notifications about each change as they occur.</td>
+  </tr>
+  <tr>
+   <td>query.jcrscore</td>
+   <td><p>true indicates indicates that the jcr:score pseudo-property is available in XPath and SQL queries that include a jcrfn:contains (in XPath) or CONTAINS (in SQL) function to perform a full-text search.</p> </td>
+  </tr>
+  <tr>
+   <td>option.simple.versioning.supported</td>
+   <td>true indicates that the repository supports simple versioning. With simple versioning, the repository maintains a sequential series of versions of a node.</td>
+  </tr>
+  <tr>
+   <td>option.workspace.management.supported</td>
+   <td>true indicates that the repository supports the creation and deletion of workspaces using APIs.</td>
+  </tr>
+  <tr>
+   <td>option.update.mixin.node.types.supported</td>
+   <td>true indicates that the repository supports the addition and removal of mixin node types of an existing node.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.primary.item.name.supported</td>
+   <td>true indicates that the repository enables node definitions to contain a primary item as a child. A primary item is accessible using the API without knowing the item name.</td>
+  </tr>
+  <tr>
+   <td>level.2.supported</td>
+   <td>true indicates that both LEVEL_1_SUPPORTED and OPTION_XML_IMPORT_SUPPORTED are true.</td>
+  </tr>
+  <tr>
+   <td>write.supported</td>
+   <td>true indicates that the repository provides write-access using the API. false indicates read-only access.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.update.in.use.supported</td>
+   <td>true indicates that you can change node definitions that are in-use by existing nodes.</td>
+  </tr>
+  <tr>
+   <td>jcr.specification.version</td>
+   <td>The version of the JCR specification that the repository implements.</td>
+  </tr>
+  <tr>
+   <td>option.journaled.observation.supported</td>
+   <td>true indicates that applications can perfom journaled observation of the repository. with journaled observation, a set of change notifications can be obtained for a specific period of time. </td>
+  </tr>
+  <tr>
+   <td>query.languages</td>
+   <td>The query languages that the repository supports. No value indicates no query support.</td>
+  </tr>
+  <tr>
+   <td>option.xml.export.supported</td>
+   <td>true indicates that the repository supports exporting nodes as XML code.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.multiple.binary.properties.supported</td>
+   <td>true indicates that the repository supports the registration of node types that have multiple binary properties. false indicates a single binary property is supported for a node type.</td>
+  </tr>
+  <tr>
+   <td>option.access.control.supported</td>
+   <td>true indicates that the repository supports access control, for setting and determining user privileges for node access.</td>
+  </tr>
+  <tr>
+   <td>option.baselines.supported</td>
+   <td>true indicates that the repository supports both configurations and baselines.</td>
+  </tr>
+  <tr>
+   <td>option.shareable.nodes.supported</td>
+   <td>true indicates the repository supports the creation of shareable nodes.</td>
+  </tr>
+  <tr>
+   <td>crx.cluster.id</td>
+   <td>The identifier of the repository cluster.</td>
+  </tr>
+  <tr>
+   <td>query.stored.queries.supported</td>
+   <td>true indicates that the repository supports stored queries.</td>
+  </tr>
+  <tr>
+   <td>query.full.text.search.supported</td>
+   <td>true indicates that the repository supports full-text search.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.inheritance</td>
+   <td><p>Indicates the level of repository support for node type inheritance. The following values are possible:</p> <p>node.type.management.inheritance.minimal: Registration of primary node types is limited to those that have only nt:base as a supertype. Registration of mixin node types is limited to those with no supertype.</p> <p>node.type.management.inheritance.single: Registration of primary node types is limited to those with one supertype. Registration of mixin node types is limited to those with at most one supertype.</p> <p><br /> node.type.management.inheritance.multiple: Primary node types can be registered with one or more supertypes. Mixin node types can be registered with zero or more supertypes.</p> </td>
+  </tr>
+  <tr>
+   <td>crx.cluster.preferredMaster</td>
+   <td>true indicates that this cluster node is the preferred master of the cluster.</td>
+  </tr>
+  <tr>
+   <td>option.transactions.supported</td>
+   <td>true indicates the repository supports transactions.</td>
+  </tr>
+  <tr>
+   <td>jcr.repository.vendor.url</td>
+   <td>The URL of the repository vendor.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.value.constraints.supported</td>
+   <td>true indicates the repository supports value constraints for node properties.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.property.types</td>
+   <td>an array of javax.jcr.PropertyType constants that represent the property types that a registered node type can specify. A zero-length array indicates registered node types cannot specify property definitions. Property types are STRING, URI, BOOLEAN, LONG, DOUBLE, DECIMAL, BINARY, DATE, NAME, PATH, WEAKREFERENCE, REFERENCE, and UNDEFINED (if supported)</td>
+  </tr>
+  <tr>
+   <td>node.type.management.orderable.child.nodes.supported</td>
+   <td>true indicates the repository supports the preservation of the order of child nodes.</td>
+  </tr>
+  <tr>
+   <td>jcr.repository.vendor</td>
+   <td>The name of the repository vendor.</td>
+  </tr>
+  <tr>
+   <td>query.joins</td>
+   <td><p>The level of support for joins in queries. The following values are possible:</p>
+    <ul>
+     <li>query.joins.none: No support for joins. Queries can use one selector.</li>
+     <li>query.joins.inner: Support for inner joins.</li>
+     <li>query.joins.inner.outer: Support for inner and outer joins.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>org.apache.jackrabbit.spi.commons.AdditionalEventInfo</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>query.xpath.doc.order</td>
+   <td>true indicates the repository supports the XPath 1.0 query language.</td>
+  </tr>
+  <tr>
+   <td>query.jcrpath</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>option.xml.import.supported</td>
+   <td>true indicates the repository supports the importing XML code as content.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.same.name.siblings.supported</td>
+   <td>true indicates the repository supports sibling nodes (nodes with the same parent) with the same names.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.residual.definitions.supported</td>
+   <td>true indicates the repository supports name properties with residual definitions. When supported, the name attribute of an item definition can be an asterisk ("*").</td>
+  </tr>
+  <tr>
+   <td>node.type.management.autocreated.definitions.supported</td>
+   <td>true indicates the repository supports the automatic creation of child items (nodes or properties) of a node when the node is created.</td>
+  </tr>
+  <tr>
+   <td>crx.cluster.master</td>
+   <td>true indicates this repository node is the master node of the cluster.</td>
+  </tr>
+  <tr>
+   <td>level.1.supported</td>
+   <td>true indicates that option.xml.export.support is true and query.languages is of non-zero length.</td>
+  </tr>
+  <tr>
+   <td>option.unfiled.content.supported</td>
+   <td>true indicates the repository supports unfiled content. Unfiled nodes are not part of the repository hierarchy.</td>
+  </tr>
+  <tr>
+   <td>jcr.specification.name</td>
+   <td>The name of the JCR specification that the repository implements.</td>
+  </tr>
+  <tr>
+   <td>option.versioning.supported</td>
+   <td>true indicates the repository supports full versioning.</td>
+  </tr>
+  <tr>
+   <td>jcr.repository.name</td>
+   <td>The name of the repository.</td>
+  </tr>
+  <tr>
+   <td>option.locking.supported</td>
+   <td>true indicates the repository supports the locking of nodes. Locking enables a user to temporarily prevent other users from making changes.</td>
+  </tr>
+  <tr>
+   <td>jcr.repository.version.display</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>option.activities.supported</td>
+   <td>true indicates the repository supports activities. Activities are a a set of changes that are performed in a workspace that are merged into another workspace.</td>
+  </tr>
+  <tr>
+   <td>node.type.management.multivalued.properties.supported</td>
+   <td>true indicates the repository supports node properties that can have zero or more values.</td>
+  </tr>
+  <tr>
+   <td>option.retention.supported</td>
+   <td>true indicates the repository supports the use of external retention management applications to apply retention policies to content and supports hold and release.</td>
+  </tr>
+  <tr>
+   <td>option.lifecycle.supported</td>
+   <td>true indicates the repository supports lifecycle management.</td>
+  </tr>
+ </tbody>
 </table>
 
 **WorkspaceNames** The names of the workspaces in the repository. Read-only.
@@ -547,12 +547,12 @@ Read-only.
 
 * Arguments:
 
-    * `target`: (Optional) A `String` value that represents the name of the ZIP file or directory in which to archive the repository data. To use a ZIP file, Include the ZIP file name extension. To use a directory, include no file name extension.  
-  
-      To perform an incremental backup, specify the directory that was previously used for the backup.  
-  
-      You can specify an absolute or a relative path. Relative paths are relative to the parent of the crx-quickstart directory.  
-  
+    * `target`: (Optional) A `String` value that represents the name of the ZIP file or directory in which to archive the repository data. To use a ZIP file, Include the ZIP file name extension. To use a directory, include no file name extension.
+
+      To perform an incremental backup, specify the directory that was previously used for the backup.
+
+      You can specify an absolute or a relative path. Relative paths are relative to the parent of the crx-quickstart directory.
+
       When you specify no value, the default value of `backup-currentdate.zip` is used, where `currentdate` is in the format `yyyyMMdd-HHmm`.
 
 * Returned value: none
@@ -811,62 +811,62 @@ Sets the completion value of the server startup process. The progress bar on the
 
 * Returned value: none.
 
-![launcherprogress](assets/launcherprogress.png) 
+![launcherprogress](assets/launcherprogress.png)
 
 ## Third-Party Services {#third-party-services}
 
 Several third-party server resources install MBeans that expose attributes and operations to the JMX console. The following table lists the third-party resources and provides links to more information.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Domain</th> 
-   <th>Type</th> 
-   <th>MBean Class</th> 
-  </tr> 
-  <tr> 
-   <td>JMImplementation</td> 
-   <td>MBeanServerDelegate</td> 
-   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServerDelegate.html">javax.management.MBeanServerDelegate</a></td> 
-  </tr> 
-  <tr> 
-   <td>com.sun.management</td> 
-   <td>HotSpotDiagnostic</td> 
-   <td><a href="https://docs.oracle.com/javase/8/docs/jre/api/management/extension/com/sun/management/HotSpotDiagnosticMXBean.html">com.sun.management.HotSpotDiagnosticMXBean</a></td> 
-  </tr> 
-  <tr> 
-   <td>java.lang</td> 
-   <td> 
-    <ul> 
-     <li>ClassLoading</li> 
-     <li>Compilation</li> 
-     <li>GarbageCollector</li> 
-     <li>Memory</li> 
-     <li>MemoryManager</li> 
-     <li>MemoryPool</li> 
-     <li>OperatingSystem</li> 
-     <li>Runtime</li> 
-     <li>Threading</li> 
-    </ul> </td> 
-   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a> package</td> 
-  </tr> 
-  <tr> 
-   <td>java.util.logging</td> 
-   <td> </td> 
-   <td><a href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/LoggingMXBean.html">java.util.logging.LoggingMXBean</a></td> 
-  </tr> 
-  <tr> 
-   <td>osgi.core</td> 
-   <td> 
-    <ul> 
-     <li>bundleState</li> 
-     <li>framework</li> 
-     <li>packageState</li> 
-     <li>serviceState</li> 
-    </ul> </td> 
-   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a> package</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Domain</th>
+   <th>Type</th>
+   <th>MBean Class</th>
+  </tr>
+  <tr>
+   <td>JMImplementation</td>
+   <td>MBeanServerDelegate</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServerDelegate.html">javax.management.MBeanServerDelegate</a></td>
+  </tr>
+  <tr>
+   <td>com.sun.management</td>
+   <td>HotSpotDiagnostic</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/jre/api/management/extension/com/sun/management/HotSpotDiagnosticMXBean.html">com.sun.management.HotSpotDiagnosticMXBean</a></td>
+  </tr>
+  <tr>
+   <td>java.lang</td>
+   <td>
+    <ul>
+     <li>ClassLoading</li>
+     <li>Compilation</li>
+     <li>GarbageCollector</li>
+     <li>Memory</li>
+     <li>MemoryManager</li>
+     <li>MemoryPool</li>
+     <li>OperatingSystem</li>
+     <li>Runtime</li>
+     <li>Threading</li>
+    </ul> </td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a> package</td>
+  </tr>
+  <tr>
+   <td>java.util.logging</td>
+   <td> </td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/LoggingMXBean.html">java.util.logging.LoggingMXBean</a></td>
+  </tr>
+  <tr>
+   <td>osgi.core</td>
+   <td>
+    <ul>
+     <li>bundleState</li>
+     <li>framework</li>
+     <li>packageState</li>
+     <li>serviceState</li>
+    </ul> </td>
+   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a> package</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Using the JMX Console {#using-the-jmx-console}
@@ -904,14 +904,14 @@ JConsole will start and the JConsole window will appear.
 
 JConsole will display a list of local Java Virtual Machine processes. The list will contain two quickstart processes. Select the quickstart "CHILD" process from the list of local processes (usually the one with the higher PID).
 
-![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png) 
+![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
 
 ### Connecting to a remote CRX process {#connecting-to-a-remote-crx-process}
 
-In order to connect to a remote CRX process, the JVM that hosts the remote CRX process will need to be enabled to accept remote JMX connections.  
-  
-To enable remote JMX connections, the following system property must be set when starting the JVM:  
-  
+In order to connect to a remote CRX process, the JVM that hosts the remote CRX process will need to be enabled to accept remote JMX connections.
+
+To enable remote JMX connections, the following system property must be set when starting the JVM:
+
 `com.sun.management.jmxremote.port=portNum`
 
 In the property above, `portNum` is the port number through which you want to enable JMX RMI connections. Be sure to specify an unused port number. In addition to publishing an RMI connector for local access, setting this property publishes an additional RMI connector in a private read-only registry at the specified port using a well known name, "jmxrmi".

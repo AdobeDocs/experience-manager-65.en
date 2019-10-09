@@ -13,7 +13,7 @@ discoiquuid: 3f592c5a-4e59-436e-b67b-3ed575c6afc3
 
 # AEM Forms {#aem-forms}
 
-This section provides highlights of the AEM 6.4 Forms release. A detailed description of all new features can be found in the [Summary of new features and enhancements in AEM 6.4 Forms](/help/forms/using/whats-new.md).
+This section provides highlights of the AEM 6.5 Forms release. A detailed description of all new features can be found in the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md).
 
 ## Multi-channel Interactive Communications {#multi-channel-interactive-communications}
 
@@ -54,4 +54,4 @@ This section provides highlights of the AEM 6.4 Forms release. A detailed descri
 
 ## Single-hop upgrade from LiveCycle to Experience Manager Forms 6.4 {#single-hop-upgrade-from-livecycle-to-experience-manager-forms}
 
-* Upgrade directly from LiveCycle ES4 to AEM 6.4 Forms JEE
+* Upgrade directly from LiveCycle ES4 to AEM 6.5 Forms JEE

@@ -5,7 +5,7 @@ description: Learn how AEM deals with the top 10 OWASP security risks.
 seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
@@ -19,7 +19,7 @@ These are listed below, together with an explanation of how CRX deals with them.
 
 ## 1. Injection {#injection}
 
-* SQL - Prevented by design: The default repository setup neither includes nor requires a traditional database, all data is stored in the content repository. All access is limited to authenticated users and can only be performed through the JCR API. SQL is supported for search queries only (SELECT). Furthemore SQL offers value binding support.  
+* SQL - Prevented by design: The default repository setup neither includes nor requires a traditional database, all data is stored in the content repository. All access is limited to authenticated users and can only be performed through the JCR API. SQL is supported for search queries only (SELECT). Furthemore SQL offers value binding support.
 * LDAP - LDAP injection is not possible, since the authentication module filters the input and performs the user import using the bind method.
 * OS - There is no shell execution performed from within the application.
 
@@ -65,5 +65,5 @@ Mitigated by server configuration (e.g. use HTTPS only).
 
 ## 10. Unvalidated Redirects and Forwards {#unvalidated-redirects-and-forwards}
 
-Mitigated by restricting all redirects to user-supplied destinations to internal locations.  
+Mitigated by restricting all redirects to user-supplied destinations to internal locations.
 

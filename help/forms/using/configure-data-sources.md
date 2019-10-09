@@ -4,7 +4,7 @@ seo-title: Configure data sources
 description: Learn how to configure different types of data sources and leverage to create form data models.
 seo-description: Learn how to configure different types of data sources and leverage to create form data models.
 uuid: 292217c2-8110-4232-a78b-edea212765d2
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 ---
@@ -17,9 +17,9 @@ Learn how to configure different types of data sources and leverage to create fo
 
 AEM Forms Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box. However, with little customization, you can integrate other data sources as well.
 
-* Relational databases - MySQL, Microsoft SQL Server, IBM DB2, and Oracle RDBMS  
-* AEM user profile  
-* RESTful web services  
+* Relational databases - MySQL, Microsoft SQL Server, IBM DB2, and Oracle RDBMS
+* AEM user profile
+* RESTful web services
 * SOAP-based web services
 * OData services
 
@@ -51,7 +51,7 @@ You can configure relational databases using AEM Web Console Configuration. Do t
 1. Enable **[!UICONTROL Test on Borrow]** or **[!UICONTROL Test on Return]** to specify that the objects are validated before being borrowed or returned from and to the pool, respectively.
 1. Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
 
-    * SELECT 1 (MySQL and MS SQL) 
+    * SELECT 1 (MySQL and MS SQL)
     * SELECT 1 from dual (Oracle)
 
 1. Tap **[!UICONTROL Save]** to save the configuration.

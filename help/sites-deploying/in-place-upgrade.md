@@ -5,7 +5,7 @@ description: Learn how to perform an in-place upgrade.
 seo-description: Learn how to perform an in-place upgrade.
 uuid: c7428dc0-2b9e-401d-8f80-19e936f6d739
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
@@ -29,9 +29,9 @@ Before executing your upgrade, there are several steps that must be completed. S
 
 ## Preparation of the AEM Quickstart jar file {#prep-quickstart-file}
 
-1. Stop the instance if it is running.  
+1. Stop the instance if it is running.
 
-1. Download the new AEM jar file and use it to replace the old one outside the `crx-quickstart` folder.  
+1. Download the new AEM jar file and use it to replace the old one outside the `crx-quickstart` folder.
 
 1. Unpack the new quickstart jar by running:
 
@@ -60,60 +60,60 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profile and flags listed in the following table:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Source Repository</strong></td> 
-   <td><strong>Target Repository</strong></td> 
-   <td><strong>Profile</strong></td> 
-   <td><strong>Additional Flags</strong><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>crx2 or TarMK with <code>FileDataStore</code></td> 
-   <td>TarMK</td> 
-   <td>segment-fds</td> 
-   <td>See Troubleshooting section below</td> 
-  </tr> 
-  <tr> 
-   <td>crx2</td> 
-   <td>MongoMK</td> 
-   <td>mongo-from-crx2 </td> 
-   <td><code>-T mongo-uri=mongo://mongo-host:mongo-port -T mongo-db=mongo-database-name</code></td> 
-  </tr> 
-  <tr> 
-   <td>TarMK or crx2 with <code>S3DataStore</code></td> 
-   <td>TarMK</td> 
-   <td>segment-custom-ds</td> 
-   <td>See Troubleshooting section below</td> 
-  </tr> 
-  <tr> 
-   <td>TarMK with no datastore</td> 
-   <td>TarMK</td> 
-   <td>segment-no-ds</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>MongoMK</td> 
-   <td>MongoMK</td> 
-   <td>No migration is needed</td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Source Repository</strong></td>
+   <td><strong>Target Repository</strong></td>
+   <td><strong>Profile</strong></td>
+   <td><strong>Additional Flags</strong><br /> </td>
+  </tr>
+  <tr>
+   <td>crx2 or TarMK with <code>FileDataStore</code></td>
+   <td>TarMK</td>
+   <td>segment-fds</td>
+   <td>See Troubleshooting section below</td>
+  </tr>
+  <tr>
+   <td>crx2</td>
+   <td>MongoMK</td>
+   <td>mongo-from-crx2 </td>
+   <td><code>-T mongo-uri=mongo://mongo-host:mongo-port -T mongo-db=mongo-database-name</code></td>
+  </tr>
+  <tr>
+   <td>TarMK or crx2 with <code>S3DataStore</code></td>
+   <td>TarMK</td>
+   <td>segment-custom-ds</td>
+   <td>See Troubleshooting section below</td>
+  </tr>
+  <tr>
+   <td>TarMK with no datastore</td>
+   <td>TarMK</td>
+   <td>segment-no-ds</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>MongoMK</td>
+   <td>MongoMK</td>
+   <td>No migration is needed</td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 <!--please check above table-->
 
 **Where:**
 
-* `mongo-host` is the MongoDB server IP (for example, 127.0.0.1)  
+* `mongo-host` is the MongoDB server IP (for example, 127.0.0.1)
 
-* `mongo-port` is the MongoDB server port (for example: 27017)  
+* `mongo-port` is the MongoDB server port (for example: 27017)
 
 * `mongo-database-name` represents the name of the database (for example: aem-author)
 
 **You may also require additional switches for the following scenarios:**
 
-* If you are performing the upgrade on a Windows system where Java memory mapping is not handled correctly, please add the `--disable-mmap` parameter to the command.  
+* If you are performing the upgrade on a Windows system where Java memory mapping is not handled correctly, please add the `--disable-mmap` parameter to the command.
 
 * If you are using Java 7, add the `-XX:MaxPermSize=2048m` parameter just after the `-Xmx` parameter.
 
@@ -155,9 +155,9 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 **If using S3:**
 
-1. Remove any jars beneath `crx-quickstart/install` associated with an earlier version of the S3 connector.  
+1. Remove any jars beneath `crx-quickstart/install` associated with an earlier version of the S3 connector.
 
-1. Download the latest release of the 1.8.x S3 connector from [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)  
+1. Download the latest release of the 1.8.x S3 connector from [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 
 1. Extract the package to a temporary folder and copy the contents of `jcr_root/libs/system/install` to the `crx-quickstart/install` folder.
 

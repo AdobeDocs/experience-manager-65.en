@@ -6,7 +6,7 @@ seo-description: Follow this page for configuring the cloud services and buildin
 uuid: 59aa99c3-1425-4cc5-9839-a57a6a545d45
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 3c84f4ec-d89b-4ad4-802e-ee3e2d49d916
 ---
@@ -80,9 +80,9 @@ In order to take advantage of PhoneGap's command line interface, you will need t
 1. Platform SDK (iOS, Android, WindowsPhone, ...) and,
 1. PhoneGap CLI
 
-You can read more [here](https://docs.phonegap.com/references/phonegap-cli/).  
+You can read more [here](https://docs.phonegap.com/references/phonegap-cli/).
 
-Once you have installed the pre-requisites, give it a simple test by creating a simple app and getting it running either in your simulator or better yet on your device, from a terminal try:  
+Once you have installed the pre-requisites, give it a simple test by creating a simple app and getting it running either in your simulator or better yet on your device, from a terminal try:
 
 ```xml
 phonegap create myApp

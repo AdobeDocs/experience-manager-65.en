@@ -5,7 +5,7 @@ description: Learn how to enable the detection of duplicate assets in AEM.
 seo-description: Learn how to enable the detection of duplicate assets in AEM.
 uuid: 7a71c508-14c4-4d15-98bd-cd00b07ef91e
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 3bba2c24-cae7-43e3-814f-0b703ca9d708

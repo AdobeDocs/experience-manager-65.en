@@ -5,7 +5,7 @@ description: Learn how to use the CRX2Oak migration tool.
 seo-description: Learn how to use the CRX2Oak migration tool.
 uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
@@ -19,7 +19,7 @@ CRX2Oak is a tool designed to migrate data between different repositories.
 
 It can be used to migrate data from older CQ versions based on Apache Jackrabbit 2 to Oak, and it can also be used to copy data between Oak repositories.
 
-You can download the newest version of crx2oak from the public Adobe repository at this location:  
+You can download the newest version of crx2oak from the public Adobe repository at this location:
 [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
 The list of changes and fixes for the newest version can be found in the [CRX2Oak Release Notes](/help/release-notes/crx2oak.md).
@@ -40,7 +40,7 @@ Support for migrating repositories using external Blob Stores (commonly known as
 
 The below diagram illustrates all the possible migration combinations supported by CRX2Oak:
 
-![chlimage_1-151](assets/chlimage_1-151.png) 
+![chlimage_1-151](assets/chlimage_1-151.png)
 
 ## Features {#features}
 
@@ -94,7 +94,7 @@ If there is any part of the content that is not required on the new instance, yo
 
 If data needs to be copied between two repositories and you have a content path that is different on both instances, you can define it in the `--merge-path` parameter. Once you do, CRX2Oak will copy only the new nodes to the destination repository and will keep the old ones in place.
 
-![chlimage_1-152](assets/chlimage_1-152.png) 
+![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Version Support {#version-support}
 
@@ -108,7 +108,7 @@ You can also choose whether to copy orphaned versions by adding `--copy-orphaned
 
 Both parameters also support a `YYYY-MM-DD` date format, in case you want to copy versions no later than a specific date.
 
-![chlimage_1-153](assets/chlimage_1-153.png) 
+![chlimage_1-153](assets/chlimage_1-153.png)
 
 #### Open Source Version {#open-source-version}
 
@@ -127,11 +127,11 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 * `--cache`: Cache size in MB (default is `256`)
 
 * `--mmap`: Enable memory mapped file access for Segment Store
-* `--src-password:` Password for the source RDB database  
+* `--src-password:` Password for the source RDB database
 
-* `--src-user:` User for the source RDB  
+* `--src-user:` User for the source RDB
 
-* `--user`: User for the targed RDB  
+* `--user`: User for the targed RDB
 
 * `--password`: Password for the target RDB.
 
@@ -161,7 +161,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--src-fileblobstore`: The datastore directory to be used as a source `FileBlobStore`
 
-* `--src-s3datastore`: The datastore directory to be used for the source `S3DataStore`  
+* `--src-s3datastore`: The datastore directory to be used for the source `S3DataStore`
 
 * `--src-s3config`: The configuration file for the source `S3DataStore`.
 
@@ -183,21 +183,21 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 You can also enable debug information for the migration process in order to troubleshoot any issues that might appear during the process. You can do this differently depending on the mode you wish to run the tool in:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>CRX2Oak Mode</strong></td> 
-   <td><strong>Action</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Quickstart mode</td> 
-   <td>You can add the <strong>--log-level TRACE</strong> or <strong>--log-level DEBUG </strong>options to the command line when running CRX2Oak. In this mode logs are automatically redirected to the <strong>upgrade.log file</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td>Standalone mode</td> 
-   <td><p>Add the <strong>--trace</strong> options to the CRX2Oak command line to show TRACE events on standard output (you need to redirect logs yourself using redirection character: '&gt;' or 'tee' command for later inspection).</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>CRX2Oak Mode</strong></td>
+   <td><strong>Action</strong></td>
+  </tr>
+  <tr>
+   <td>Quickstart mode</td>
+   <td>You can add the <strong>--log-level TRACE</strong> or <strong>--log-level DEBUG </strong>options to the command line when running CRX2Oak. In this mode logs are automatically redirected to the <strong>upgrade.log file</strong>.</td>
+  </tr>
+  <tr>
+   <td>Standalone mode</td>
+   <td><p>Add the <strong>--trace</strong> options to the CRX2Oak command line to show TRACE events on standard output (you need to redirect logs yourself using redirection character: '&gt;' or 'tee' command for later inspection).</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Other Considerations {#other-considerations}

@@ -6,7 +6,7 @@ seo-description: null
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 ---
@@ -73,7 +73,7 @@ The following data types are supported when invoking AEM Forms services using RE
 * A URL that points to the content of Document (if the list consists of `com.adobe.idp.Document` objects)
 
   The following example is an XML message returned by a service that has a single output parameter named *list*, which is a list of integers.
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`An output map parameter is represented in the resultant XML message as a series of XML elements with one element for each record in the map. Every element is given the same name as the map record’s key. The value of each element is either a text representation of the map record’s value (if the map consists of records with a string value) or a URL pointing to the Document’s content (if the map consists of records with the `com.adobe.idp.Document` value). Below is an example of an XML message returned by a service that has a single output parameter named `map`. This parameter value is a map consisting of records that associate letters with `com.adobe.idp.Document` objects. 
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`An output map parameter is represented in the resultant XML message as a series of XML elements with one element for each record in the map. Every element is given the same name as the map record’s key. The value of each element is either a text representation of the map record’s value (if the map consists of records with a string value) or a URL pointing to the Document’s content (if the map consists of records with the `com.adobe.idp.Document` value). Below is an example of an XML message returned by a service that has a single output parameter named `map`. This parameter value is a map consisting of records that associate letters with `com.adobe.idp.Document` objects.
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Asynchronous invocations {#asynchronous-invocations}
@@ -113,20 +113,20 @@ If a synchronous or asynchronous invocation request cannot be completed due to a
 If the invocation URL (or the `async_result` URL in the case of an asynchronous invocation) does have an .xml suffix, the REST Provider returns the HTTP code `200 OK`followed by an XML document describing the exception in the following format.
 
 ```as3
- <exception> 
-       <exception_class_name>[ 
-       <DSCError> 
-          <componentUID>component_UUD</componentUID> 
-         <errorCode>error_code</errorCode> 
-         <minorCode>minor_code</minorCode> 
-         <message>error_message</message> 
-       </DSCError> 
- ]  
-       <message>exception_message</message> 
-     <stackTrace>exception_stack_trace</stackTrace> 
-       </exception_class_name> 
-     <exception> 
-       </exception> 
+ <exception>
+       <exception_class_name>[
+       <DSCError>
+          <componentUID>component_UUD</componentUID>
+         <errorCode>error_code</errorCode>
+         <minorCode>minor_code</minorCode>
+         <message>error_message</message>
+       </DSCError>
+ ]
+       <message>exception_message</message>
+     <stackTrace>exception_stack_trace</stackTrace>
+       </exception_class_name>
+     <exception>
+       </exception>
  </exception>
 ```
 
@@ -177,18 +177,18 @@ The following REST invocation examples are provided:
 The following HTML example passes two `Boolean` values to an AEM Forms process named `RestTest2`. The name of the invocation method is `invoke` and the version is 1.0. Notice that the HTML Post method is used.
 
 ```as3
- <html> 
- <body> 
-  
- <form name="input" action="http://localhost:9080/rest/services/RestTest2/invoke/1.0" method="post"> 
-  
- Boolean 1: <input type="text" name="inBooleanList" value="true"> 
- Boolean 2: <input type="text" name="inBooleanList" value="false"> 
- <input type="submit" value="Submit"> 
-  
- </form> 
-  
- </body> 
+ <html>
+ <body>
+ 
+ <form name="input" action="http://localhost:9080/rest/services/RestTest2/invoke/1.0" method="post">
+ 
+ Boolean 1: <input type="text" name="inBooleanList" value="true">
+ Boolean 2: <input type="text" name="inBooleanList" value="false">
+ <input type="submit" value="Submit">
+ 
+ </form>
+ 
+ </body>
  </html>
 ```
 
@@ -197,17 +197,17 @@ The following HTML example passes two `Boolean` values to an AEM Forms process n
 The following HTML example passes a date value to an AEM Forms process named `SOAPEchoService`. The name of the invocation method is `echoCalendar`. Notice that the HTML `Post` method is used.
 
 ```as3
- <html> 
- <body> 
-  
- <form name="input" action="http://localhost:9080/rest/services/SOAPEchoService/echoCalendar" method="post"> 
-  
- Date: <input type="text" name="value-to-echo" value="2009-01-02T12:15:30Z"> 
- <input type="submit" value="Submit"> 
-  
- </form> 
-  
- </body> 
+ <html>
+ <body>
+ 
+ <form name="input" action="http://localhost:9080/rest/services/SOAPEchoService/echoCalendar" method="post">
+ 
+ Date: <input type="text" name="value-to-echo" value="2009-01-02T12:15:30Z">
+ <input type="submit" value="Submit">
+ 
+ </form>
+ 
+ </body>
  </html>
 ```
 
@@ -216,18 +216,18 @@ The following HTML example passes a date value to an AEM Forms process named `SO
 The following HTML example invokes an AEM Forms process named `MyApplication/EncryptDocument` that requires a PDF document. For information about this process, see [Invoking AEM Forms using MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
 ```as3
- <html> 
- <body> 
-  
- <form name="input" action="http://localhost:9080/rest/services/MyApplication/EncryptDocument/invoke" method="post"  
-          enctype="multipart/form-data"> 
-  
- File: <input type="file" name="value-to-echo"> 
- <input type="submit" value="Submit"/> 
-  
- </form> 
-  
- </body> 
+ <html>
+ <body>
+ 
+ <form name="input" action="http://localhost:9080/rest/services/MyApplication/EncryptDocument/invoke" method="post"
+          enctype="multipart/form-data">
+ 
+ File: <input type="file" name="value-to-echo">
+ <input type="submit" value="Submit"/>
+ 
+ </form>
+ 
+ </body>
  </html>
 ```
 
@@ -236,20 +236,20 @@ The following HTML example invokes an AEM Forms process named `MyApplication/Enc
 The following HTML example invokes an AEM Forms process named `RestTest3` that requires a document and two text values. Notice that the HTML Post method is used.
 
 ```as3
- <html> 
- <body> 
-  
- <form name="input" action="http://localhost:9080/rest/services/RestTest3" method="post"  
-          enctype="multipart/form-data"> 
-  
- Doc: <input type="file" name="inDoc"> 
- String 1: <input type="text" name="inListOfStrings" value="hello"> 
- String 2: <input type="text" name="inListOfStrings" value="privet"> 
- <input type="submit" value="Submit"/> 
-  
- </form> 
-  
- </body> 
+ <html>
+ <body>
+ 
+ <form name="input" action="http://localhost:9080/rest/services/RestTest3" method="post"
+          enctype="multipart/form-data">
+ 
+ Doc: <input type="file" name="inDoc">
+ String 1: <input type="text" name="inListOfStrings" value="hello">
+ String 2: <input type="text" name="inListOfStrings" value="privet">
+ <input type="submit" value="Submit"/>
+ 
+ </form>
+ 
+ </body>
  </html>
 ```
 
@@ -258,17 +258,17 @@ The following HTML example invokes an AEM Forms process named `RestTest3` that r
 The following HTML example invokes an AEM Forms process named `SOAPEchoService` that requires an enumeration value. Notice that the HTML Post method is used.
 
 ```as3
- <html> 
- <body> 
-  
- <form name="input" action="https://hiro-xp:8080/rest/services/SOAPEchoService/echoEnum" method="post"> 
-  
- Color Enum Value: <input type="text" name="value-to-echo" value="green"> 
- <input type="submit" value="Submit"> 
-  
- </form> 
-  
- </body> 
+ <html>
+ <body>
+ 
+ <form name="input" action="https://hiro-xp:8080/rest/services/SOAPEchoService/echoEnum" method="post">
+ 
+ Color Enum Value: <input type="text" name="value-to-echo" value="green">
+ <input type="submit" value="Submit">
+ 
+ </form>
+ 
+ </body>
  </html>
 ```
 
@@ -282,23 +282,23 @@ You can invoke an AEM Forms short-lived process named *MyApplication/EncryptDocu
 
 When this process is invoked, it performs the following actions:
 
-1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`. 
+1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`.
 1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The password encrypted PDF document is returned in a process variable named `outDoc`.
 
    When this process is invoked using a REST request, the encrypted PDF document is displayed in the web browser. Before you view the PDF document, you specify the password (unless security is disabled). The following HTML code represents a REST invocation request to the `MyApplication/EncryptDocument` process.
 
    ```as3
-    <html> 
-    <body> 
-    <form action="https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument" method="post" enctype="multipart/form-data"> 
-         <p>Chose a PDF file (.pdf) to send to the EncryptDocument process.</p> 
-         <p>file: 
-           <input type="file" name="inDoc" /> 
-         </p> 
-         <p> 
-           <input type="submit"/> 
-         </p> 
-    </form> 
+    <html>
+    <body>
+    <form action="https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument" method="post" enctype="multipart/form-data">
+         <p>Chose a PDF file (.pdf) to send to the EncryptDocument process.</p>
+         <p>file:
+           <input type="file" name="inDoc" />
+         </p>
+         <p>
+           <input type="submit"/>
+         </p>
+    </form>
     </body>
    ```
 
@@ -312,4 +312,4 @@ The complete URL to invoke the process is https://hiro-xp:8080/rest/services/MyA
 
 If the process requires a PDF document as an input value, ensure that you submit the form as PDF, as shown in the previous illustration. Also, to successfully invoke a process, the process must return a PDF document. Otherwise Acroabt cannot handle the return value and an error occurs. You do not have to specify the name of the input process variable. For example, the* MyApplication/EncryptDocument* process has an input variable named `inDoc`. You do not have to specify inDoc, as long as the form is submited as PDF.
 
-You can also submit form data as XML to a Forms process, To submit XML data, ensure that the `Submit As` drop down specifies XML. Because the return value of the process must be a PDF document, the PDF document is displayed in Acrobat. 
+You can also submit form data as XML to a Forms process, To submit XML data, ensure that the `Submit As` drop down specifies XML. Because the return value of the process must be a PDF document, the PDF document is displayed in Acrobat.

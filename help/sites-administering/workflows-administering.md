@@ -5,7 +5,7 @@ description: Lear how to administer Workflow Instances.
 seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
@@ -29,7 +29,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 
 ## Monitoring the Status of Workflow Instances {#monitoring-the-status-of-workflow-instances}
 
-1. Using Navigation select **Tools**, then **Workflow**. 
+1. Using Navigation select **Tools**, then **Workflow**.
 1. Select **Instances** to display the list of workflow instances currently in progress.
 
    ![wf-96](assets/wf-96.png)
@@ -40,7 +40,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 
 ## Suspending, Resuming, and Terminating a Workflow Instance {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. Using Navigation select **Tools**, then **Workflow**. 
+1. Using Navigation select **Tools**, then **Workflow**.
 1. Select **Instances** to display the list of workflow instances currently in progress.
 
    ![wf-96-1](assets/wf-96-1.png)
@@ -51,7 +51,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 
 ## Viewing Archived Workflows {#viewing-archived-workflows}
 
-1. Using Navigation select **Tools**, then **Workflow**. 
+1. Using Navigation select **Tools**, then **Workflow**.
 1. Select **Archive** to display the list of workflow instances that completed successfully.
 
    ![wf-98](assets/wf-98.png)
@@ -71,10 +71,10 @@ A range of consoles are available for administering your workflows. Use the [glo
 
 When a workflow fails, AEM provides the **Failures** console to allow you to investigate and take appropriate action once the original cause has been handled:
 
-* **Failure Details** 
+* **Failure Details**
   Opens a window to show the **Failure Message**, **Step** and **Failure Stack**.
 
-* **Open History** 
+* **Open History**
   Shows details of the workflow history.
 
 * **Retry Step** Executes the Script Step component instance again. Use the Retry Step command after you have fixed the cause of the original errror. For example, retry the step after you fix a bug in the script that the Process Step executes.
@@ -83,7 +83,7 @@ When a workflow fails, AEM provides the **Failures** console to allow you to inv
 
 To investigate failures, then resume or terminate the workflow afterwards, use the following steps:
 
-1. Using Navigation select **Tools**, then **Workflow**. 
+1. Using Navigation select **Tools**, then **Workflow**.
 1. Select **Failures** to display the list of workflow instances that did not complete successfully.
 1. Select a specific item, then the appropriate action:
 
@@ -109,38 +109,38 @@ To configure the service, you can use the [Web Console](/help/sites-deploying/co
 >
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property Name (Web Console)</th> 
-   <th>OSGi Property Name</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Job Name</td> 
-   <td>scheduledpurge.name</td> 
-   <td>A descriptive name for the scheduled purge.</td> 
-  </tr> 
-  <tr> 
-   <td>Workflow Status</td> 
-   <td>scheduledpurge.workflowStatus</td> 
-   <td><p>The status of the workflow instances to purge. The following values are valid:</p> 
-    <ul> 
-     <li>COMPLETED: Completed workflow instances are purged.</li> 
-     <li>RUNNING: Running workflow instances are purged.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Models To Purge</td> 
-   <td>scheduledpurge.modelIds</td> 
-   <td><p>The ID of the workflow models to purge. The ID is the path to the model node, for example:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Specify no value to purge instances of all workflow models.</p> <p>To specify multiple models, click the + button in the Web Console. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>Workflow Age</td> 
-   <td>scheduledpurge.daysold</td> 
-   <td>The age of the workflow instances to purge, in days.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property Name (Web Console)</th>
+   <th>OSGi Property Name</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Job Name</td>
+   <td>scheduledpurge.name</td>
+   <td>A descriptive name for the scheduled purge.</td>
+  </tr>
+  <tr>
+   <td>Workflow Status</td>
+   <td>scheduledpurge.workflowStatus</td>
+   <td><p>The status of the workflow instances to purge. The following values are valid:</p>
+    <ul>
+     <li>COMPLETED: Completed workflow instances are purged.</li>
+     <li>RUNNING: Running workflow instances are purged.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Models To Purge</td>
+   <td>scheduledpurge.modelIds</td>
+   <td><p>The ID of the workflow models to purge. The ID is the path to the model node, for example:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Specify no value to purge instances of all workflow models.</p> <p>To specify multiple models, click the + button in the Web Console. </p> </td>
+  </tr>
+  <tr>
+   <td>Workflow Age</td>
+   <td>scheduledpurge.daysold</td>
+   <td>The age of the workflow instances to purge, in days.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Setting the Maximum Size of the Inbox {#setting-the-maximum-size-of-the-inbox}

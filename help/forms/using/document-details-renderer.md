@@ -5,7 +5,7 @@ description: Conceptual information on how renders work in AEM Forms workspace t
 seo-description: Conceptual information on how renders work in AEM Forms workspace to render the various supported form and file types.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 ---
@@ -21,7 +21,7 @@ In AEM Forms workspace, multiple form types are supported seamlessly. These incl
 * Images
 * Third-party applications (for example, Correspondence Management)
 
-This document explains the working of these renderers from the perspective of semantic customization / component reuse, so that customer requirements are met without breaking any rendition. While AEM Forms workspace allows for any user interface / semantic changes, it is recommended that the rendering logic of different form types not be changed, otherwise the results can be unpredictable. This document is for guidance / knowledge to support rendering the same form, using same workspace components in different portals, and not for modifying the rendering logic itself. 
+This document explains the working of these renderers from the perspective of semantic customization / component reuse, so that customer requirements are met without breaking any rendition. While AEM Forms workspace allows for any user interface / semantic changes, it is recommended that the rendering logic of different form types not be changed, otherwise the results can be unpredictable. This document is for guidance / knowledge to support rendering the same form, using same workspace components in different portals, and not for modifying the rendering logic itself.
 
 ## PDF Forms {#pdf-forms}
 

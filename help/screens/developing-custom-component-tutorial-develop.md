@@ -4,7 +4,7 @@ seo-title: Developing a Custom Component for AEM Screens
 description: The following tutorial walks through the steps to create a custom component for AEM Screens. AEM Screens reuses many existing design patterns and technologies of other AEM products. The tutorial highlights differences and special considerations when developing for AEM Screens.
 seo-description: An introductory tutorial to build a simple "Hello World" component for AEM Screens. AEM Screens reuses many existing design patterns and technologies of other AEM products. The following tutorial intends to highlight the specific differences and considerations when developing for AEM Screens.
 uuid: 8ec8be5a-6348-48f2-9cb7-75b2bad555a6
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: developing
 discoiquuid: 24eb937f-ab51-4883-8236-8ebe6243f6e3
@@ -19,7 +19,7 @@ The following tutorial walks through the steps to create a custom component for 
 
 This tutorial is intended for developers who are new to AEM Screens. In this tutorial a simple "Hello World" component is built for a Sequence channel in AEM Screens. A dialog allows authors to update the text displayed.
 
-![overviewhellow](assets/overviewhellow.png) 
+![overviewhellow](assets/overviewhellow.png)
 
 ## Prerequisites {#prerequisites}
 
@@ -125,15 +125,15 @@ AEM Screens has some interesting constraints that are not necessarily true for t
    Populate the file with the following:
 
    ```xml
-   <!--/* 
-   
-    /apps/weretail-run/components/content/helloworld/helloworld.html 
-   
+   <!--/*
+
+    /apps/weretail-run/components/content/helloworld/helloworld.html
+
    */-->
-   
+
    <!--/* production: preview authoring mode + unspecified mode (i.e. on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
-   
+
    <!--/* edit: any other authoring mode, i.e. edit, design, scaffolding, etc. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
@@ -151,10 +151,10 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
    ```xml
    <!--/*
-    /apps/weretail-run/components/content/helloworld/production.html  
-      
+    /apps/weretail-run/components/content/helloworld/production.html
+
    */-->
-   
+
    <div data-duration="${properties.duration}" class="cmp-hello-world">
     <h1 class="cmp-hello-world__message">${properties.message}</h1>
    </div>
@@ -171,23 +171,23 @@ AEM Screens has some interesting constraints that are not necessarily true for t
    Populate the file with the following:
 
    ```xml
-   
+
    <!--/*
-   
-    /apps/weretail-run/components/content/helloworld/edit.html 
-    
+
+    /apps/weretail-run/components/content/helloworld/edit.html
+
    */-->
-   
+
    <!--/* if message populated */-->
-   <div 
+   <div
     data-sly-test.message="${properties.message}"
     class="aem-Screens-editWrapper cmp-hello-world">
     <p class="cmp-hello-world__message">${message}</p>
    </div>
-   
+
    <!--/* empty place holder */-->
-   <div data-sly-test="${!message}" 
-        class="aem-Screens-editWrapper cq-placeholder cmp-hello-world" 
+   <div data-sly-test="${!message}"
+        class="aem-Screens-editWrapper cq-placeholder cmp-hello-world"
         data-emptytext="${'Hello World' @ i18n, locale=request.locale}">
    </div>
    ```
@@ -263,10 +263,10 @@ AEM Screens has some interesting constraints that are not necessarily true for t
            </items>
        </content>
    </jcr:root>
-   
+
    ```
 
-   The textfield for the Message will be saved to a property named `message` and that the numberfield for the Duration will be saved to a property named `duration`. These two properties are both referenced in `/apps/weretail-run/components/content/helloworld/production.html` by HTL as `${properties.message}` and `${properties.duration}`. 
+   The textfield for the Message will be saved to a property named `message` and that the numberfield for the Duration will be saved to a property named `duration`. These two properties are both referenced in `/apps/weretail-run/components/content/helloworld/production.html` by HTL as `${properties.message}` and `${properties.duration}`.
 
    ![Hello World - completed dialog](assets/2018-04-29_at_5_21pm.png)
 
@@ -284,14 +284,14 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    ![2018-04-30_at_1046am](assets/2018-04-30_at_1046am.png)
 
-1. Beneath the `clientlibs` folder create a new node named `shared` of type `cq:ClientLibraryFolder.` 
+1. Beneath the `clientlibs` folder create a new node named `shared` of type `cq:ClientLibraryFolder.`
 
    ![2018-04-30_at_1115am](assets/2018-04-30_at_1115am.png)
 
 1. Add the following properties to the shared client library:
 
     * `allowProxy` | Boolean | `true`
-    
+
     * `categories`| String[] | `cq.screens.components`
 
    ![Properties for /apps/weretail-run/components/content/helloworld/clientlibs/shared](assets/2018-05-03_at_1026pm.png)
@@ -308,9 +308,9 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    ```
    #base=css
-   
+
    styles.less
-   
+
    ```
 
 1. Create a folder named `css` beneath the `shared` folder. Add a file named `style.less` beneath the `css` folder. The structure of the client libraries should now look like this:
@@ -323,14 +323,14 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    ```css
    /**
-       Shared Styles 
+       Shared Styles
       /apps/weretail-run/components/content/helloworld/clientlibs/shared/css/styles.less
-   
+
    **/
-   
+
    .cmp-hello-world {
        background-color: #fff;
-    
+
     &__message {
      color: #000;
      font-family: Helvetica;
@@ -339,7 +339,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
    }
    ```
 
-1. Copy and paste the `shared` client library folder to create a new client library named `production`. 
+1. Copy and paste the `shared` client library folder to create a new client library named `production`.
 
    ![Copy the shared client library to create a new production client library](assets/copy-clientlib.gif)
 
@@ -357,18 +357,18 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    ```css
    /**
-       Production Styles 
+       Production Styles
       /apps/weretail-run/components/content/helloworld/clientlibs/production/css/styles.less
-   
+
    **/
    .cmp-hello-world {
-   
+
        height: 100%;
        width: 100%;
        position: fixed;
-       
+
     &__message {
-           
+
      position: relative;
      font-size: 5rem;
      top:25%;
@@ -378,7 +378,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    The above styles will display the message centered in the middle of the screen, but only in production mode.
 
-A third clientlibrary category: `cq.screens.components.edit` could be used to add Edit-only specific styles to the component. 
+A third clientlibrary category: `cq.screens.components.edit` could be used to add Edit-only specific styles to the component.
 
 | Clientlib Category |Usage |
 |---|---|
@@ -449,7 +449,7 @@ The Hello World component is intended to be used on a Sequence Channel. To test 
 
    ![2018-04-30_at_5_53pm](assets/2018-04-30_at_5_53pm.png)
 
-1. In [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par) navigate to `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. Notice the `components` property now includes `group:Screens`, `group:We.Retail Run - Content`. 
+1. In [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par) navigate to `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. Notice the `components` property now includes `group:Screens`, `group:We.Retail Run - Content`.
 
    ![Design configuration under /apps/settings/wcm/designs/we-retail-run](assets/2018-05-07_at_1_14pm.png)
 

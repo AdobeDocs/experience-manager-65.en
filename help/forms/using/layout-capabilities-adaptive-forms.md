@@ -4,7 +4,7 @@ seo-title: Layout capabilities of adaptive forms
 description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 uuid: 7df2d234-e2e3-432a-9720-e73296424302
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 ---
@@ -39,7 +39,7 @@ All these panel layouts are defined in the following location:
 >
 >To change the layout of an adaptive form, use the Authoring Mode in AEM.
 
-![Location of layouts in CRX repository](assets/layouts_location_in_crx.png) 
+![Location of layouts in CRX repository](assets/layouts_location_in_crx.png)
 
 ## Panel layout {#panel-layout}
 
@@ -54,7 +54,7 @@ The Panel layouts are available at `/libs/fd/af/layouts/panel` location.
 
 Use this panel layout to create a responsive layout that adjusts to the screen size of your device without any need for specialized navigation.
 
-Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]** components one after another inside the panel. 
+Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]** components one after another inside the panel.
 
 ![A form using responsive layout as seen on a small screen](assets/responsive_layout_seen_on_small_screen.png)
 
@@ -144,7 +144,7 @@ A Toolbar Layout controls positioning and display of any action buttons that you
 
 ![A list of Toolbar Layouts in adaptive forms to control layout of buttons](assets/toolbar-layouts.png)
 
-**Figure:** *A list of Toolbar Layouts in adaptive forms* 
+**Figure:** *A list of Toolbar Layouts in adaptive forms*
 
 Toolbar layouts are available at `/libs/fd/af/layouts/toolbar` location. adaptive forms provide the following Toolbar Layouts, by default.
 

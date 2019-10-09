@@ -5,7 +5,7 @@ description: Learn how to manage translation projects in AEM.
 seo-description: Learn how to manage translation projects in AEM.
 uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
@@ -42,12 +42,12 @@ AEM detects whether a translation project is being created for the initial trans
 * **The language copy does not include the page:** AEM treats this situation as the initial translation. The page is immediately copied to the language copy, and included in the project. When the translated page is imported into AEM, AEM copies it directly to the language copy.
 * **The language copy already includes the page:** AEM treats this situation as an updated translation. A launch is created and a copy of the page is added to the launch, and included in the project. Launches enable you to review updated translations before committing it to the language copy:
 
-    * When the translated page is imported into AEM, it overwrites the page in the launch. 
+    * When the translated page is imported into AEM, it overwrites the page in the launch.
     * The translated page overwrites the language copy only when the launch is promoted.
 
 For example, the /content/geometrixx/fr language root is created for the French translation of the /content/geometrixx/en master language. There are no other pages in the French language copy.
 
-* A translation project is created for the /content/geometrixx/en/products page and all child pages, targeting the French language copy. Because the language copy does not include the /content/geometrixx/fr/products page, AEM immediately copies the /content/geometrixx/en/products page and all child pages to the French language copy. The copies are also included in the translation project. 
+* A translation project is created for the /content/geometrixx/en/products page and all child pages, targeting the French language copy. Because the language copy does not include the /content/geometrixx/fr/products page, AEM immediately copies the /content/geometrixx/en/products page and all child pages to the French language copy. The copies are also included in the translation project.
 * A translation project is created for the /content/geometrixx/en page and all child pages, targeting the French language copy. Because the language copy includes the page that corresponds with the /content/geometrixx/en page (the language root), AEM copies the /content/geometrixx/en page and all child pages and adds them to a launch. The copies are also included in the translation project.
 
 ## Creating Translation Projects Using the References Panel {#creating-translation-projects-using-the-references-panel}
@@ -55,7 +55,7 @@ For example, the /content/geometrixx/fr language root is created for the French 
 Create translation projects so that you can execute and manage the workflow for translating the resources of your language master. When you create projects, you specify the page in the language master that you are translating and the language copies for which you are performing the translation:
 
 * The cloud configuration of the translation integration framework that is associated with the selected page determines many properties of the translation projects, such as the translation workflow to use.
-* A project is created for each language copy that is selected. 
+* A project is created for each language copy that is selected.
 * A copy of the selected page and associated assets are created and added to each project. These copies are later sent to the translation provider for translating.
 
 You can specify that the child pages of the selected page are also selected. In this case, copies of the child pages are also added to each project so that they are translated. When any child pages are associated with different translation integration framework configurations, AEM creates additional projects.
@@ -70,7 +70,7 @@ The References panel indicates whether the you are updating existing language co
 
 After translating, you can [review the translation](#reviewing-and-promoting-updated-content) before overwriting the language copy with it. When no language copy exists for the selected page, the Create & Translate tab appears to provide access to project-related commands.
 
-![chlimage_1-240](assets/chlimage_1-240.png) 
+![chlimage_1-240](assets/chlimage_1-240.png)
 
 ### Create Translation Projects for a New Language Copy {#create-translation-projects-for-a-new-language-copy}
 
@@ -86,7 +86,7 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 1. Click or tap Create & Translate and then configure the translation job:
 
     * Use the Languages drop-down to select a language copy for which you want to translate. Select additional languages as required. Languages that appear in the list correspond with the [language roots that you have created](/help/sites-administering/tc-prep.md#creating-a-language-root).
-    * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option. 
+    * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option.
     * For Project, select Create New Translation Project.
     * Type a name for the project.
 
@@ -107,7 +107,7 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 1. Select Language Copies, and then select the language copies for which you are translating the source pages.
 1. Click or tap Update Language Copies and then configure the translation job:
 
-    * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option. 
+    * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option.
     * For Project, select Create New Translation Project.
     * Type a name for the project.
 
@@ -137,7 +137,7 @@ As when creating a new project, when adding pages, copies of the pages are added
 
 1. Click or tap Update Language Copies and then configure the properties:
 
-    * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option. 
+    * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option.
     * For Project, select Add To Existing Translation Project.
     * Select the project.
 
@@ -213,7 +213,7 @@ You can add pages, assets, tags or i18n dictionaries to the Translation Job of y
 
 Your tags are now added in your translation job.
 
-![chlimage_1-257](assets/chlimage_1-257.png) 
+![chlimage_1-257](assets/chlimage_1-257.png)
 
 ## Seeing Translation Project Details {#seeing-translation-project-details}
 
@@ -222,13 +222,13 @@ The Translation Summary tile contains the properties that are configured for a t
 * Source Language: The language of the pages that are being translated.
 * Target Language: The language into which the pages are being translated.
 * Translation Method: The translation workflow. Either Human Translation or Machine Translation is supported.
-* Translation Provider: The translation service provider that is performing the translation. 
+* Translation Provider: The translation service provider that is performing the translation.
 * Content Category: (Machine Translation) The content category that is used for translating.
 * Cloud Config: The cloud configuration for the translation service connector that is used for the project.
 
 When a project is created using the Resources pane of a page, these properties are automatically configured based on the properties of the source page.
 
-![chlimage_1-258](assets/chlimage_1-258.png) 
+![chlimage_1-258](assets/chlimage_1-258.png)
 
 ## Monitoring the Status of a Translation Job {#monitoring-the-status-of-a-translation-job}
 
@@ -395,7 +395,7 @@ Populate your language copy so that it contains content from the master language
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
-1. Select Language Copies, and then select the language copies that you want to populate. 
+1. Select Language Copies, and then select the language copies that you want to populate.
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 

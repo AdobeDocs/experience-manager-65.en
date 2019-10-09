@@ -1,15 +1,15 @@
 ---
-title: Initiate Document Services APIs from AEM Workflow 
-seo-title: Initiate Document Services APIs from AEM Workflow 
+title: Initiate Document Services APIs from AEM Workflow
+seo-title: Initiate Document Services APIs from AEM Workflow
 description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A
 seo-description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A
 uuid: aacec2df-1ad6-4ff2-a99d-ef206efcdc09
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 ---
- 
+
 # Initiate Document Services APIs from AEM Workflow  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
@@ -33,7 +33,7 @@ The Invoke DDX workflow requires the following input documents:
 
 * **DDX**: It is a mandatory input for the Invoke DDX workflow step and can be specified by selecting one of the following options from the DDX input drop-down.
 
-    * *Relative To Payload*: The DDX input file is relative to the payload folder for the workflow item. 
+    * *Relative To Payload*: The DDX input file is relative to the payload folder for the workflow item.
     * *Use Payload*: The payload for the workflow item is used as the input DDX document.
     * *Absolute Path*: The absolute path to the DDX document in the CRX repository.
 
@@ -46,7 +46,7 @@ The Invoke DDX workflow requires the following input documents:
 The Environment Options tab allows you to set various processing options for the invoke API.
 
 * *Job Log Level*: Specifies the log level for the processing logs.
-* *Validate Only*: Checks the validity of the input DDX.  
+* *Validate Only*: Checks the validity of the input DDX.
 
 * *Fail On Error*: Specifies whether the call to Assembler service should fail in case of an error. The default value is False.
 
@@ -55,7 +55,7 @@ The Environment Options tab allows you to set various processing options for the
 Depending on the input DDX, the invoke API can produce multiple output documents. The Output Documents tab allows you to select where output document will be saved.
 
 1. *Save Output in Payload*: Saves output documents under the payload folder, or overwrites the payload, if payload is a file.
-1. *Output Document's Map*: Allows to explicitly specify where to save each output document by adding one entry per output document. Each entry specifies the document and where to save it. An output document can overwrite the payload or saved under the payload folder. It is useful when there are multiple output documents.  
+1. *Output Document's Map*: Allows to explicitly specify where to save each output document by adding one entry per output document. Each entry specifies the document and where to save it. An output document can overwrite the payload or saved under the payload folder. It is useful when there are multiple output documents.
 
 1. *Job Log*: Specifies where to save the job log document, which is helpful in troubleshooting failures.
 
@@ -63,7 +63,7 @@ Depending on the input DDX, the invoke API can produce multiple output documents
 
 The Convert to PDF/A workflow step invokes the `toPDFA` Assembler service API. It is used for converting PDF documents to PDF/A compliant documents.
 
-1. Drag the **[!UICONTROL ConvertToPDFA]** workflow step under the Forms Workflow tab in Sidekick.  
+1. Drag the **[!UICONTROL ConvertToPDFA]** workflow step under the Forms Workflow tab in Sidekick.
 
 1. Double-click the added workflow step to edit the component.
 1. In the Edit component dialog, configure input documents, conversion options, and output documents, and click **[!UICONTROL OK]**.
@@ -85,7 +85,7 @@ Conversion Options allow you to specify options that alter the process of PDF/A 
 * *Signatures* : Specifies how the signatures in input document must be processed during conversion.
 * *Color Space* : Specifies the predefined color space to be used for output PDF/A document.
 * *Verify* Conversion: Specifies whether the converted PDF/A document should be verified for PDF/A compliance after conversion.
-* *Job Log Level* : Specifies the log level to be used for processing logs.  
+* *Job Log Level* : Specifies the log level to be used for processing logs.
 
 * *Metadata Extension Schema* : Specifies the path to the metadata extension schema to be used for XMP properties in PDF document's metadata.
 
@@ -108,7 +108,7 @@ The Render PDF Form workflow is a wrapper around `renderPDFForm` Forms service A
 
 #### Input documents {#input-documents-2}
 
-* *Template File*: Specifies the location of the XDP template. It is a mandatory field.  
+* *Template File*: Specifies the location of the XDP template. It is a mandatory field.
 
 * *Data Document*: Specifies the location of data xml that needs to be merged with the template.
 
@@ -137,7 +137,7 @@ The Generate Non Interactive PDF Workflow is a wrapper around `generatePDFOutput
 
 #### Input documents {#input-documents-3}
 
-* *Template File*: Specifies the location of the XDP template. It is a mandatory field.  
+* *Template File*: Specifies the location of the XDP template. It is a mandatory field.
 
 * *Data Document*: Specifies the location of the data xml that needs to be merged with the template.
 

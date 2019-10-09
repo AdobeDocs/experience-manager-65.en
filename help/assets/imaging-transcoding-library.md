@@ -5,7 +5,7 @@ description: Learn how to configure and use Adobe's Imaging Transcoding Library,
 seo-description: Learn how to configure and use Adobe's Imaging Transcoding Library, an image processing solution that can perform core image-handling functions, including encoding, transcoding, image resampling, and image resizing.
 uuid: 5a458026-1151-424f-8900-563fb86f7b0e
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 674af52d-60de-4112-913e-6cfd2bfeceb9
 ---
 
@@ -79,14 +79,14 @@ You can configure the following options for the` `-resize` `parameter:`
 
 ## Configuring Imaging Transcoding Library {#configuring-imaging-transcoding-library}
 
-1. When executing the SWitchEngine command, create a conf file to point to the libraries using the following commands: 
+1. When executing the SWitchEngine command, create a conf file to point to the libraries using the following commands:
     * cd /etc/ld.so.conf.d
     * touch SWitchEngineLibs.conf
     * vi SWitchEngineLibs.conf
     * cat SWitchEngineLibs.conf
        /opt/aem/author/crx-quickstart/launchpad/felix/bundle545/data/binaries
-    * ldconfig     
-     
+    * ldconfig
+
     Only for the bash file, configure `LD_LIBRARY_PATH` using the following steps:
 
     * `vi ~/.bash_profile`
@@ -101,7 +101,7 @@ You can configure the following options for the` `-resize` `parameter:`
 
    If the value is not set to "." restart the session.
 
-1. Download the <a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg">Imaging transcoding library package</a> (version 1.4) and install it using Crx Package Manager. Supported Platforms are RHEL7 and CentOS7.  
+1. Download the <a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg">Imaging transcoding library package</a> (version 1.4) and install it using Crx Package Manager. Supported Platforms are RHEL7 and CentOS7.
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.

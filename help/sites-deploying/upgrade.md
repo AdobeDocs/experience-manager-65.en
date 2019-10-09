@@ -6,7 +6,7 @@ seo-description: Learn about the basics of upgrading an older AEM installation t
 uuid: aa878528-5161-4df3-9fed-cc779fb6bdbe
 contentOwner: sarchiz
 topic-tags: upgrading
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader

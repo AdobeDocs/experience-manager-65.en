@@ -5,7 +5,7 @@ description: Learn about SharePoint Connector Licenses, Copyright Notices and Di
 seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
@@ -58,159 +58,159 @@ The following table lists 3rd party libraries used within the SharePoint Connect
 
 ## Overview of CRX 3rd Party Libraries {#overview-of-crx-rd-party-libraries}
 
-The following table lists 3rd party libraries used within CRX, together with the licenses, copyright notices or disclaimers by which they are covered: 
+The following table lists 3rd party libraries used within CRX, together with the licenses, copyright notices or disclaimers by which they are covered:
 
-<table> 
- <colgroup> 
-  <col width="100" /> 
-  <col width="100" /> 
- </colgroup> 
- <tbody> 
-  <tr> 
-   <td>Filename</td> 
-   <td> 
+<table>
+ <colgroup>
+  <col width="100" />
+  <col width="100" />
+ </colgroup>
+ <tbody>
+  <tr>
+   <td>Filename</td>
+   <td>
     <code>
-      License 
-    </code></td> 
-  </tr> 
-  <tr> 
-   <td>commons-codec-1.3.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>commons-collections-3.1.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>commons-httpclient-3.0.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>commons-logging-1.0</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>concurrent-1.3.4.jar</td> 
-   <td><a href="#concurrent">Concurrent</a></td> 
-  </tr> 
-  <tr> 
-   <td>derby-10.1.2.1.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>hsqldb-1.8.0.4.jar</td> 
-   <td><a href="#hypersonic-sql-group">Hypersonic SQL Group</a></td> 
-  </tr> 
-  <tr> 
-   <td>jaxen-1.1-beta-6.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>jcr-1.0.jar</td> 
-   <td><a href="#day-jcr">Day JCR</a></td> 
-  </tr> 
-  <tr> 
-   <td>jdom-1.0.jar</td> 
-   <td><a href="#jdom">JDOM</a></td> 
-  </tr> 
-  <tr> 
-   <td>log4j-1.2.8.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>lucene-1.4.3.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>pdfbox-0.7.2.jar</td> 
-   <td><a href="#pdfbox">PDFBox</a></td> 
-  </tr> 
-  <tr> 
-   <td>poi-2.5.1-day.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>poi-scratchpad-20041101.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>slf4j-log4j12-1.0.jar</td> 
-   <td><a href="#slf-j-org">SLF4J.ORG</a></td> 
-  </tr> 
-  <tr> 
-   <td>xercesImpl-2.6.2.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>xmlParserAPIs-2.0.2.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
- </tbody> 
+      License
+    </code></td>
+  </tr>
+  <tr>
+   <td>commons-codec-1.3.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>commons-collections-3.1.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>commons-httpclient-3.0.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>commons-logging-1.0</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>concurrent-1.3.4.jar</td>
+   <td><a href="#concurrent">Concurrent</a></td>
+  </tr>
+  <tr>
+   <td>derby-10.1.2.1.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>hsqldb-1.8.0.4.jar</td>
+   <td><a href="#hypersonic-sql-group">Hypersonic SQL Group</a></td>
+  </tr>
+  <tr>
+   <td>jaxen-1.1-beta-6.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>jcr-1.0.jar</td>
+   <td><a href="#day-jcr">Day JCR</a></td>
+  </tr>
+  <tr>
+   <td>jdom-1.0.jar</td>
+   <td><a href="#jdom">JDOM</a></td>
+  </tr>
+  <tr>
+   <td>log4j-1.2.8.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>lucene-1.4.3.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>pdfbox-0.7.2.jar</td>
+   <td><a href="#pdfbox">PDFBox</a></td>
+  </tr>
+  <tr>
+   <td>poi-2.5.1-day.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>poi-scratchpad-20041101.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>slf4j-log4j12-1.0.jar</td>
+   <td><a href="#slf-j-org">SLF4J.ORG</a></td>
+  </tr>
+  <tr>
+   <td>xercesImpl-2.6.2.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>xmlParserAPIs-2.0.2.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Overview of CQSE 3rd Party Libraries {#overview-of-cqse-rd-party-libraries}
 
-The following table lists 3rd party libraries used within the Communiqué Servlet Engine, together with the licenses, copyright notices or disclaimers by which they are covered: 
+The following table lists 3rd party libraries used within the Communiqué Servlet Engine, together with the licenses, copyright notices or disclaimers by which they are covered:
 
-<table> 
- <colgroup> 
-  <col width="100" /> 
-  <col width="100" /> 
- </colgroup> 
- <tbody> 
-  <tr> 
-   <td>Library</td> 
-   <td>License</td> 
-  </tr> 
-  <tr> 
-   <td>ant-1.6.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>geronimo-spec-j2ee-connector-1.0-M1.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>jasper-compiler-4.1.30-cqse.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>jasper-runtime-4.1.30-cqse.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>jdom-1.0.jar</td> 
-   <td><a href="#jdom">JDOM</a></td> 
-  </tr> 
-  <tr> 
-   <td>log4j-1.2.8.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td>portlet-api-1.0.jar</td> 
-   <td><a href="#apache">Sun Portlet</a></td> 
-  </tr> 
-  <tr> 
-   <td>servletapi-2.3.jar</td> 
-   <td><a href="#sun-servlet">Sun Servlet</a></td> 
-  </tr> 
-  <tr> 
-   <td>xml-apis-2.0.2.jar</td> 
-   <td><a href="#apache">Apache</a></td> 
-  </tr> 
-  <tr> 
-   <td><br /> </td> 
-   <td><a href="#sax">SAX</a></td> 
-  </tr> 
-  <tr> 
-   <td><br /> </td> 
-   <td><a href="#w-c-document">W3C Document</a></td> 
-  </tr> 
-  <tr> 
-   <td><br /> </td> 
-   <td><a href="#w-c-software">W3C Software</a></td> 
-  </tr> 
- </tbody> 
+<table>
+ <colgroup>
+  <col width="100" />
+  <col width="100" />
+ </colgroup>
+ <tbody>
+  <tr>
+   <td>Library</td>
+   <td>License</td>
+  </tr>
+  <tr>
+   <td>ant-1.6.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>geronimo-spec-j2ee-connector-1.0-M1.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>jasper-compiler-4.1.30-cqse.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>jasper-runtime-4.1.30-cqse.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>jdom-1.0.jar</td>
+   <td><a href="#jdom">JDOM</a></td>
+  </tr>
+  <tr>
+   <td>log4j-1.2.8.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td>portlet-api-1.0.jar</td>
+   <td><a href="#apache">Sun Portlet</a></td>
+  </tr>
+  <tr>
+   <td>servletapi-2.3.jar</td>
+   <td><a href="#sun-servlet">Sun Servlet</a></td>
+  </tr>
+  <tr>
+   <td>xml-apis-2.0.2.jar</td>
+   <td><a href="#apache">Apache</a></td>
+  </tr>
+  <tr>
+   <td><br /> </td>
+   <td><a href="#sax">SAX</a></td>
+  </tr>
+  <tr>
+   <td><br /> </td>
+   <td><a href="#w-c-document">W3C Document</a></td>
+  </tr>
+  <tr>
+   <td><br /> </td>
+   <td><a href="#w-c-software">W3C Software</a></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Apache {#apache}
@@ -428,7 +428,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      the CopyOnWriteArrayList and ConcurrentReaderHashMap classes are
      adapted from Sun JDK source code. These are copyright of Sun
      Microsystems, Inc, and are used with their kind permission, as
-     described in this license: 
+     described in this license:
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 
 ```
@@ -436,8 +436,8 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 ## Day JCR {#day-jcr}
 
 ```xml
-     Day Management AG ("Licensor") is willing to license this 
-     specification to you ONLY UPON THE CONDITION THAT YOU ACCEPT ALL OF 
+     Day Management AG ("Licensor") is willing to license this
+     specification to you ONLY UPON THE CONDITION THAT YOU ACCEPT ALL OF
      THE TERMS CONTAINED IN THIS LICENSE AGREEMENT ("Agreement").
      Please read the terms and conditions of this Agreement carefully.
      *Content Repository for Java^TM Technology API Specification
@@ -464,7 +464,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 
      *2. License for the Distribution of Compliant Implementations*. Licensor
      also grants you a perpetual, non-exclusive, non-transferable, worldwide,
-     fully paid-up, royalty free, limited license (without the right to 
+     fully paid-up, royalty free, limited license (without the right to
      sublicense) under any applicable copyrights or, subject to the
      provisions of subsection 4 below, patent rights it may have covering the
      Specification to create and/or distribute an Independent Implementation
@@ -491,8 +491,8 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      may neither: (a) grant or otherwise pass through to your licensees any
      licenses under Licensor's applicable intellectual property rights; nor
      (b) authorize your licensees to make any claims concerning their
-     implementation's compliance with the Specification. 
-     
+     implementation's compliance with the Specification.
+
      *4. Reciprocity Concerning Patent Licenses*. With respect to any patent
      claims covered by the license granted under subparagraph 2 above that
      would be infringed by all technically feasible implementations of the
@@ -570,7 +570,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 
      ORIGINAL LICENSE (a.k.a. "hypersonic_lic.txt")
 
-     For content, code, and products originally developed by Thomas Mueller 
+     For content, code, and products originally developed by Thomas Mueller
      and the Hypersonic SQL Group:
 
      Copyright (c) 1995-2000 by the Hypersonic SQL Group.
@@ -795,7 +795,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 
      Copyright 2003 Sun Microsystems, Inc. and IBM
      Corporation
-     All rights reserved. 
+     All rights reserved.
 
      NOTICE; LIMITED LICENSE GRANTS
 
@@ -971,127 +971,127 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 ## Sun Servlet {#sun-servlet}
 
 ```xml
-     Java(TM) Servlet API Specification ("Specification") 
+     Java(TM) Servlet API Specification ("Specification")
      Version: 2.3
      Status: Final Release
      Release: September 17, 2001
 
-     Copyright 2001 Sun Microsystems, Inc. 
-     901 San Antonio Road, Palo Alto, California 94303, U.S.A. 
-     All rights reserved. 
+     Copyright 2001 Sun Microsystems, Inc.
+     901 San Antonio Road, Palo Alto, California 94303, U.S.A.
+     All rights reserved.
 
-     NOTICE 
-     The Specification is protected by copyright and the information 
-     described therein may be protected by one or more U.S. patents, 
-     foreign patents, or pending applications.  Except as provided under 
-     the following license, no part of the Specification may be 
-     reproduced in any form by any means without the prior written 
-     authorization of Sun Microsystems, Inc. ("Sun") and its licensors, 
-     if any.  Any use of the Specification and the information described 
-     therein will be governed by the terms and conditions of this 
-     license and the Export Control Guidelines as set forth in the Terms 
-     of Use on Sun's website.  By viewing, downloading or otherwise 
-     copying the Specification, you agree that you have read, 
-     understood, and will comply with all of the terms and conditions 
-     set forth herein. 
+     NOTICE
+     The Specification is protected by copyright and the information
+     described therein may be protected by one or more U.S. patents,
+     foreign patents, or pending applications.  Except as provided under
+     the following license, no part of the Specification may be
+     reproduced in any form by any means without the prior written
+     authorization of Sun Microsystems, Inc. ("Sun") and its licensors,
+     if any.  Any use of the Specification and the information described
+     therein will be governed by the terms and conditions of this
+     license and the Export Control Guidelines as set forth in the Terms
+     of Use on Sun's website.  By viewing, downloading or otherwise
+     copying the Specification, you agree that you have read,
+     understood, and will comply with all of the terms and conditions
+     set forth herein.
 
      Sun hereby grants you a fully-paid, non-exclusive, non-transferable,
-     worldwide, limited license (without the right to sublicense), under 
-     Sun's intellectual property rights that are essential to practice 
-     the Specification, to internally practice the Specification for the 
-     purpose of designing and developing your Java applets and 
-     applications intended to run on the Java platform or creating a 
-     clean room implementation of the Specification that: (i) includes a 
+     worldwide, limited license (without the right to sublicense), under
+     Sun's intellectual property rights that are essential to practice
+     the Specification, to internally practice the Specification for the
+     purpose of designing and developing your Java applets and
+     applications intended to run on the Java platform or creating a
+     clean room implementation of the Specification that: (i) includes a
      complete implementation of the current version of the Specification,
-     without subsetting or supersetting; (ii) implements all of the 
+     without subsetting or supersetting; (ii) implements all of the
      interfaces and functionality of the Specification without subsetting
-     or supersetting; (iii) includes a complete implementation of any 
-     optional components (as defined by the Specification) which you 
-     choose to implement, without subsetting or supersetting; (iv) 
-     implements all of the interfaces and functionality of such optional 
+     or supersetting; (iii) includes a complete implementation of any
+     optional components (as defined by the Specification) which you
+     choose to implement, without subsetting or supersetting; (iv)
+     implements all of the interfaces and functionality of such optional
      components, without subsetting or supersetting; (v) does not add any
-     additional packages, classes or interfaces to the "java.*" or 
-     "javax.*" packages or subpackages or other packages defined by the 
-     Specification; (vi) satisfies all testing requirements available 
-     from Sun relating to the most recently published version of the 
-     Specification six (6) months prior to any release of the clean room 
-     implementation or upgrade thereto; (vii) does not derive from any 
-     Sun source code or binary code materials; and (viii) does not 
-     include any Sun source code or binary code materials without an 
-     appropriate and separate license from Sun. The Specification 
-     contains the proprietary information of Sun and may only be used in 
-     accordance with the license terms set forth herein. This license  
-     will terminate immediately without notice from Sun if you fail to 
-     comply with any provision of this license.   Upon termination or 
-     expiration of this license, you must cease use of or destroy the 
-     Specification. 
+     additional packages, classes or interfaces to the "java.*" or
+     "javax.*" packages or subpackages or other packages defined by the
+     Specification; (vi) satisfies all testing requirements available
+     from Sun relating to the most recently published version of the
+     Specification six (6) months prior to any release of the clean room
+     implementation or upgrade thereto; (vii) does not derive from any
+     Sun source code or binary code materials; and (viii) does not
+     include any Sun source code or binary code materials without an
+     appropriate and separate license from Sun. The Specification
+     contains the proprietary information of Sun and may only be used in
+     accordance with the license terms set forth herein. This license
+     will terminate immediately without notice from Sun if you fail to
+     comply with any provision of this license.   Upon termination or
+     expiration of this license, you must cease use of or destroy the
+     Specification.
 
-     TRADEMARKS 
+     TRADEMARKS
      No right, title, or interest in or to any trademarks, service marks,
      or trade names of Sun or Sun's licensors is granted hereunder.  Sun,
      Sun Microsystems, the Sun logo, Java,  and the Java Coffee Cup logo,
      are trademarks or registered trademarks of Sun Microsystems, Inc. in
-     the U.S. and other countries. 
+     the U.S. and other countries.
 
-     DISCLAIMER OF WARRANTIES 
+     DISCLAIMER OF WARRANTIES
      THE SPECIFICATION IS PROVIDED "AS IS".  SUN MAKES NO REPRESENTATIONS
-     OR WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+     OR WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
      TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-     OR NON-INFRINGEMENT THAT THE CONTENTS OF THE SPECIFICATION ARE 
-     SUITABLE FOR ANY PURPOSE OR THAT ANY PRACTICE OR IMPLEMENTATION OF 
+     OR NON-INFRINGEMENT THAT THE CONTENTS OF THE SPECIFICATION ARE
+     SUITABLE FOR ANY PURPOSE OR THAT ANY PRACTICE OR IMPLEMENTATION OF
      SUCH CONTENTS WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,
      TRADE SECRETS OR OTHER RIGHTS.  This document does not represent any
      commitment to release or implement any portion of the Specification
-     in any product. 
+     in any product.
 
-     THE SPECIFICATION COULD INCLUDE TECHNICAL INACCURACIES OR 
-     TYPOGRAPHICAL ERRORS.  CHANGES ARE PERIODICALLY ADDED TO THE 
-     INFORMATION THEREIN; THESE CHANGES WILL BE INCORPORATED INTO NEW 
-     VERSIONS OF THE SPECIFICATION, IF ANY.  SUN MAY MAKE IMPROVEMENTS 
-     AND/OR CHANGES TO THE PRODUCT(S) AND/OR THE PROGRAM(S) DESCRIBED IN 
-     THE SPECIFICATION AT ANY TIME.  Any use of such changes in the 
-     Specification will be governed by the then-current license for the 
-     applicable version of the Specification. 
+     THE SPECIFICATION COULD INCLUDE TECHNICAL INACCURACIES OR
+     TYPOGRAPHICAL ERRORS.  CHANGES ARE PERIODICALLY ADDED TO THE
+     INFORMATION THEREIN; THESE CHANGES WILL BE INCORPORATED INTO NEW
+     VERSIONS OF THE SPECIFICATION, IF ANY.  SUN MAY MAKE IMPROVEMENTS
+     AND/OR CHANGES TO THE PRODUCT(S) AND/OR THE PROGRAM(S) DESCRIBED IN
+     THE SPECIFICATION AT ANY TIME.  Any use of such changes in the
+     Specification will be governed by the then-current license for the
+     applicable version of the Specification.
 
-     LIMITATION OF LIABILITY 
-     TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL SUN OR ITS 
-     LICENSORS BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION, 
-     LOST REVENUE, PROFITS OR DATA, OR FOR SPECIAL, INDIRECT, 
-     CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND 
-     REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF OR RELATED TO 
-     ANY FURNISHING, PRACTICING, MODIFYING OR ANY USE OF THE 
-     SPECIFICATION, EVEN IF SUN AND/OR ITS LICENSORS HAVE BEEN ADVISED 
-     OF THE POSSIBILITY OF SUCH DAMAGES. 
+     LIMITATION OF LIABILITY
+     TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL SUN OR ITS
+     LICENSORS BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION,
+     LOST REVENUE, PROFITS OR DATA, OR FOR SPECIAL, INDIRECT,
+     CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND
+     REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF OR RELATED TO
+     ANY FURNISHING, PRACTICING, MODIFYING OR ANY USE OF THE
+     SPECIFICATION, EVEN IF SUN AND/OR ITS LICENSORS HAVE BEEN ADVISED
+     OF THE POSSIBILITY OF SUCH DAMAGES.
 
-     You will indemnify, hold harmless, and defend Sun and its licensors 
-     from any claims arising or resulting from: (i) your use of the 
-     Specification; (ii) the use or distribution of your Java 
-     application, applet and/or clean room implementation; and/or (iii) 
-     any claims that later versions or releases of any Specification 
-     furnished to you are incompatible with the Specification provided 
-     to you under this license. 
+     You will indemnify, hold harmless, and defend Sun and its licensors
+     from any claims arising or resulting from: (i) your use of the
+     Specification; (ii) the use or distribution of your Java
+     application, applet and/or clean room implementation; and/or (iii)
+     any claims that later versions or releases of any Specification
+     furnished to you are incompatible with the Specification provided
+     to you under this license.
 
-     RESTRICTED RIGHTS LEGEND 
-     U.S. Government:  If this Specification is being acquired by or on 
-     behalf of the U.S. Government or by a U.S. Government prime 
-     contractor or subcontractor (at any tier), then the Government's 
-     rights in the Software and accompanying documentation shall be only 
-     as set forth in this license; this is in accordance with 48 C.F.R. 
-     227.7201 through 227.7202-4 (for Department of Defense (DoD) 
-     acquisitions) and with 48 C.F.R. 2.101 and 12.212 (for non-DoD 
-     acquisitions). 
+     RESTRICTED RIGHTS LEGEND
+     U.S. Government:  If this Specification is being acquired by or on
+     behalf of the U.S. Government or by a U.S. Government prime
+     contractor or subcontractor (at any tier), then the Government's
+     rights in the Software and accompanying documentation shall be only
+     as set forth in this license; this is in accordance with 48 C.F.R.
+     227.7201 through 227.7202-4 (for Department of Defense (DoD)
+     acquisitions) and with 48 C.F.R. 2.101 and 12.212 (for non-DoD
+     acquisitions).
 
-     REPORT 
-     You may wish to report any ambiguities, inconsistencies or 
-     inaccuracies you may find in connection with your use of the 
-     Specification ("Feedback"). To the extent that you provide Sun with 
-     any Feedback, you hereby: (i) agree that such Feedback is provided 
-     on a non-proprietary and non-confidential basis, and (ii) grant Sun 
-     a perpetual, non-exclusive, worldwide, fully paid-up, irrevocable 
-     license, with the right to sublicense through multiple levels of 
-     sublicensees, to incorporate, disclose, and use without limitation 
-     the Feedback for any purpose related to the Specification and 
-     future versions, implementations, and test suites thereof. 
+     REPORT
+     You may wish to report any ambiguities, inconsistencies or
+     inaccuracies you may find in connection with your use of the
+     Specification ("Feedback"). To the extent that you provide Sun with
+     any Feedback, you hereby: (i) agree that such Feedback is provided
+     on a non-proprietary and non-confidential basis, and (ii) grant Sun
+     a perpetual, non-exclusive, worldwide, fully paid-up, irrevocable
+     license, with the right to sublicense through multiple levels of
+     sublicensees, to incorporate, disclose, and use without limitation
+     the Feedback for any purpose related to the Specification and
+     future versions, implementations, and test suites thereof.
 
      (LFI#95810/Form ID#011801)
 
@@ -1112,7 +1112,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
 
      Public documents on the W3C site are provided by the copyright
-     holders under the following license. The software or Document Type 
+     holders under the following license. The software or Document Type
      Definitions (DTDs) associated with W3C specifications are governed
      by the Software Notice. By using and/or copying this document, or the
      W3C document from which this statement is linked, you (the
@@ -1128,9 +1128,9 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      A link or URL to the original W3C document.
 
      The pre-existing copyright notice of the original author, or if
-     it doesn't exist, a notice of the form: "Copyright © [$date-of-document] 
+     it doesn't exist, a notice of the form: "Copyright © [$date-of-document]
      World Wide Web Consortium, (Massachusetts
-     Institute of Technology, Institut National de Recherche en Informatique 
+     Institute of Technology, Institut National de Recherche en Informatique
      et en Automatique, Keio
      University). All Rights Reserved.
      <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>" (Hypertext is preferred, but a
@@ -1138,14 +1138,14 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 
      If it exists, the STATUS of the W3C document.
 
-     When space permits, inclusion of the full text of this NOTICE 
+     When space permits, inclusion of the full text of this NOTICE
      should be provided. We request that authorship
      attribution be provided in any software, documents, or other items
      or products that you create pursuant to the implementation of the
      contents of this document, or any portion thereof.
 
      No right to create modifications or derivatives of W3C documents
-     is granted pursuant to this license. However, if additional 
+     is granted pursuant to this license. However, if additional
      requirements (documented in the Copyright
      FAQ) are satisfied, the right to create modifications or
      derivatives is sometimes granted by the W3C to individuals
@@ -1171,11 +1171,11 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 
      --------------------------------------------------------------------
      This formulation of W3C's notice and license became active on
-     April 05 1999 so as to account for the treatment of DTDs, schema's 
-     and bindings. See the older formulation for the policy prior to this 
-     date. Please see our Copyright FAQ for common questions about using 
-     materials from our site, including specific terms and conditions 
-     for packages like libwww, Amaya, and Jigsaw. 
+     April 05 1999 so as to account for the treatment of DTDs, schema's
+     and bindings. See the older formulation for the policy prior to this
+     date. Please see our Copyright FAQ for common questions about using
+     materials from our site, including specific terms and conditions
+     for packages like libwww, Amaya, and Jigsaw.
      Other questions about this notice can be directed to site-policy@
      w3.org.
 
@@ -1217,14 +1217,14 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      terms and conditions. If none exist, a short notice of the
      following form (hypertext is preferred, text is permitted) should
      be used within the body of any redistributed or derivative code:
-     "Copyright © [$date-of-software] World Wide Web Consortium, 
+     "Copyright © [$date-of-software] World Wide Web Consortium,
      (Massachusetts Institute of Technology, Institut National de
-     Recherche en Informatique et en Automatique, Keio University). 
+     Recherche en Informatique et en Automatique, Keio University).
      All Rights Reserved.
      <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>"
 
      Notice of any changes or modifications to the W3C files,
-     including the date changes were made. (We recommend you provide 
+     including the date changes were made. (We recommend you provide
      URIs to the location from which the code is derived.)
 
      THIS SOFTWARE AND DOCUMENTATION IS PROVIDED "AS IS," AND
@@ -1249,9 +1249,9 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      version ensures that W3C software licensing terms are no more
      restrictive than GPL and consequently W3C software may be
      distributed in GPL packages. See the older formulation for the
-     policy prior to this date. Please see our Copyright FAQ for common 
-     questions about using materials from our site, including specific 
-     terms and conditions for packages like libwww, Amaya, and Jigsaw. 
+     policy prior to this date. Please see our Copyright FAQ for common
+     questions about using materials from our site, including specific
+     terms and conditions for packages like libwww, Amaya, and Jigsaw.
      Other questions about this notice can be directed to site-policy@
      w3.org.
 
@@ -1263,36 +1263,36 @@ The following table lists 3rd party libraries used within the Communiqué Servle
 ## WordNet {#wordnet}
 
 ```xml
-WordNet Release 3.0 
-This software and database is being provided to you, the LICENSEE, 
+WordNet Release 3.0
+This software and database is being provided to you, the LICENSEE,
 by Princeton University under the following license. By obtaining, using
  and/or copying this software and database, you agree that you have
  read, understood, and will comply with these terms and conditions.
 
-Permission to use, copy, modify and distribute this software and 
+Permission to use, copy, modify and distribute this software and
 database and its documentation for any purpose and without fee or
  royalty is hereby granted, provided that you agree to comply with the
- following copyright notice and statements, including the disclaimer, 
-and that the same appear on ALL copies of the software, database 
-and documentation, including modifications that you make for internal 
+ following copyright notice and statements, including the disclaimer,
+and that the same appear on ALL copies of the software, database
+and documentation, including modifications that you make for internal
 use or for distribution.
 
 WordNet 3.0 Copyright 2006 by Princeton University. All rights reserved.
 
-THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND 
-PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS OR 
-WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT 
-NOT LIMITATION, PRINCETON UNIVERSITY MAKES NO 
+THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND
+PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT
+NOT LIMITATION, PRINCETON UNIVERSITY MAKES NO
 REPRESENTATIONS OR WARRANTIES OF MERCHANT- ABILITY OR
- FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF 
-THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL 
-NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
+ FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF
+THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL
+NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,
 TRADEMARKS OR OTHER RIGHTS.
 
-The name of Princeton University or Princeton may not be used in 
-advertising or publicity pertaining to distribution of the software and/or 
-database. Title to copyright in this software, database and any associated 
-documentation shall at all times remain with Princeton University and 
+The name of Princeton University or Princeton may not be used in
+advertising or publicity pertaining to distribution of the software and/or
+database. Title to copyright in this software, database and any associated
+documentation shall at all times remain with Princeton University and
 LICENSEE agrees to preserve same.
 
 ```

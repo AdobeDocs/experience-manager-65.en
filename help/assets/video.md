@@ -5,7 +5,7 @@ description: Learn how to work with video in Dynamic Media
 seo-description: Learn how to work with video in Dynamic Media
 uuid: 15e89f88-2787-472d-bbb6-d370bbab9228
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
@@ -23,7 +23,7 @@ The following step-by-step workflow description is designed to help you get up a
 >
 >Before you work with video in Dynamic Media, make sure that your AEM admininistrator has already enabled and configured Dynamic Media Cloud Services.
 >
->* See [Configuring Dynamic Media Cloud Services in Configuring Dynamic Media - Hybrid mode.](/help/assets/config-dynamic.md) 
+>* See [Configuring Dynamic Media Cloud Services in Configuring Dynamic Media - Hybrid mode.](/help/assets/config-dynamic.md)
 >* See [Configuring Dynamic Media - Scene7 mode](config-dms7.md) and [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
 >
 
@@ -51,35 +51,35 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Organize, browse, and search video assets
 
-        * [Organizing digital assets](organize-assets.md) 
+        * [Organizing digital assets](organize-assets.md)
 
           Learn more about [Best practices for organizing your digital assets for using processing profiles](best-practices-for-file-management.md)
-  
+
         * [Searching video assets](search-video-assets.md) or [Searching assets](managing-assets-touch-ui.md#searching-assets)
 
     * Preview and publish video assets
 
-        * View the source video and encoded renditions of the video along with its associated thumbnails:  
+        * View the source video and encoded renditions of the video along with its associated thumbnails:
 
-          [Previewing videos](managing-video-assets.md#uploading-and-previewing-video-assets) or [Previewing assets](previewing-assets.md)  
+          [Previewing videos](managing-video-assets.md#uploading-and-previewing-video-assets) or [Previewing assets](previewing-assets.md)
 
-          [Viewing video renditions](video-renditions.md)  
+          [Viewing video renditions](video-renditions.md)
 
           [Managing video renditions](managing-assets-touch-ui.md#managing-renditions)
-  
+
         * [Manage viewer presets](managing-viewer-presets.md)
         * [Publishing assets](publishing-dynamicmedia-assets.md)
 
     * Work with video metadata
 
-        * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:  
+        * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
 
-          [Viewing video rendition properties](video-renditions.md) 
-  
-        * Edit the properties of video such as the title, description, and tags, custom metadata fields:  
+          [Viewing video rendition properties](video-renditions.md)
+
+        * Edit the properties of video such as the title, description, and tags, custom metadata fields:
 
           [Editing video properties](managing-assets-touch-ui.md#editing-properties)
-  
+
         * [Managing metadata for digital assets](metadata.md)
         * [Metadata schemas](metadata-schemas.md)
 
@@ -98,10 +98,10 @@ The following step-by-step workflow description is designed to help you get up a
 
     * If you are using a third-party web content management system, you can link or embed videos to your web pages.
 
-        * Integrate video using URL:  
+        * Integrate video using URL:
 
           [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
-        * Integrate video using embed code on web page: 
+        * Integrate video using embed code on web page:
 
           [Embedding the video viewer on a web page](embed-code.md).
 
@@ -185,85 +185,85 @@ Progressive video is delivered by downloading and storing the video locally to a
 
 The following table describes the device, browser, and playback method of videos on desktop computers and mobile devices using the Scene7 Video Viewer.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Device</strong></td> 
-   <td><strong>Browser</strong></td> 
-   <td><strong>Video playback mode</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Desktop</td> 
-   <td>Internate Explorer 9 and 10</td> 
-   <td>Progressive download.</td> 
-  </tr> 
-  <tr> 
-   <td>Desktop</td> 
-   <td>Internate Explorer 11+</td> 
-   <td>On Windows 8 and Windows 10 - Force use of HTTPS whenever HLS is requested. Known limitation: HTTP on HLS does not work in this browser/operating system combination<br /> <br /> On Windows 7 - Progressive download. Uses standard logic for selecting HTTP versus HTTPS protocol.</td> 
-  </tr> 
-  <tr> 
-   <td>Desktop</td> 
-   <td>Firefox 23-44</td> 
-   <td>Progressive download.</td> 
-  </tr> 
-  <tr> 
-   <td>Desktop</td> 
-   <td>Firefox 45 or later</td> 
-   <td>HLS video streaming.</td> 
-  </tr> 
-  <tr> 
-   <td>Desktop</td> 
-   <td>Chrome</td> 
-   <td>HLS video streaming.</td> 
-  </tr> 
-  <tr> 
-   <td>Desktop</td> 
-   <td>Safari (Mac)</td> 
-   <td>HLS video streaming.</td> 
-  </tr> 
-  <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (Android 6 or earlier)</td> 
-   <td>Progressive download.</td> 
-  </tr> 
-  <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (Android 7 or later)</td> 
-   <td>HLS video streaming.</td> 
-  </tr> 
-  <tr> 
-   <td>Mobile</td> 
-   <td>Android (default browser)</td> 
-   <td>Progressive download.</td> 
-  </tr> 
-  <tr> 
-   <td>Mobile</td> 
-   <td>Safari (iOS)</td> 
-   <td>HLS video streaming.</td> 
-  </tr> 
-  <tr> 
-   <td>Mobile</td> 
-   <td>Chrome (iOS)</td> 
-   <td>HLS video streaming.</td> 
-  </tr> 
-  <tr> 
-   <td>Mobile</td> 
-   <td>Blackberry</td> 
-   <td>HLS video streaming.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Device</strong></td>
+   <td><strong>Browser</strong></td>
+   <td><strong>Video playback mode</strong></td>
+  </tr>
+  <tr>
+   <td>Desktop</td>
+   <td>Internate Explorer 9 and 10</td>
+   <td>Progressive download.</td>
+  </tr>
+  <tr>
+   <td>Desktop</td>
+   <td>Internate Explorer 11+</td>
+   <td>On Windows 8 and Windows 10 - Force use of HTTPS whenever HLS is requested. Known limitation: HTTP on HLS does not work in this browser/operating system combination<br /> <br /> On Windows 7 - Progressive download. Uses standard logic for selecting HTTP versus HTTPS protocol.</td>
+  </tr>
+  <tr>
+   <td>Desktop</td>
+   <td>Firefox 23-44</td>
+   <td>Progressive download.</td>
+  </tr>
+  <tr>
+   <td>Desktop</td>
+   <td>Firefox 45 or later</td>
+   <td>HLS video streaming.</td>
+  </tr>
+  <tr>
+   <td>Desktop</td>
+   <td>Chrome</td>
+   <td>HLS video streaming.</td>
+  </tr>
+  <tr>
+   <td>Desktop</td>
+   <td>Safari (Mac)</td>
+   <td>HLS video streaming.</td>
+  </tr>
+  <tr>
+   <td>Mobile</td>
+   <td>Chrome (Android 6 or earlier)</td>
+   <td>Progressive download.</td>
+  </tr>
+  <tr>
+   <td>Mobile</td>
+   <td>Chrome (Android 7 or later)</td>
+   <td>HLS video streaming.</td>
+  </tr>
+  <tr>
+   <td>Mobile</td>
+   <td>Android (default browser)</td>
+   <td>Progressive download.</td>
+  </tr>
+  <tr>
+   <td>Mobile</td>
+   <td>Safari (iOS)</td>
+   <td>HLS video streaming.</td>
+  </tr>
+  <tr>
+   <td>Mobile</td>
+   <td>Chrome (iOS)</td>
+   <td>HLS video streaming.</td>
+  </tr>
+  <tr>
+   <td>Mobile</td>
+   <td>Blackberry</td>
+   <td>HLS video streaming.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
 
 The following graphic shows the overall authoring workflow of videos that are uploaded and encoded by way of DMGateway and made available for public consumption.
 
-![chlimage_1-427](assets/chlimage_1-427.png) 
+![chlimage_1-427](assets/chlimage_1-427.png)
 
 ## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
-![chlimage_1-428](assets/chlimage_1-428.png) 
+![chlimage_1-428](assets/chlimage_1-428.png)
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
@@ -323,15 +323,15 @@ Because all codecs use lossy compression, bitrate is the most important factor i
 
 When selecting a bitrate encoding, there are two types you can choose:
 
-* **Constant Bitrate Encoding** (CBR) &ndash; During CBR encoding, the bitrate or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.  
+* **Constant Bitrate Encoding** (CBR) &ndash; During CBR encoding, the bitrate or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
 
-  Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Using custom-added video encoding parameters](video-profiles.md#using-custom-added-video-encoding-parameters).  
+  Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Using custom-added video encoding parameters](video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **Variable Bitrate Encoding** (VBR) &ndash; VBR encoding adjusts the data rate down and to the upper limit you set, based on the data required by the compressor. This means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.  
+* **Variable Bitrate Encoding** (VBR) &ndash; VBR encoding adjusts the data rate down and to the upper limit you set, based on the data required by the compressor. This means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
 
   VBR takes longer to encode but produces the most favorable results; the quality of the media file is superior. VBR is most commonly used for http progressive delivery of video content.
 
-**When should you use VBR versus CRB?** 
+**When should you use VBR versus CRB?**
 When it comes to selecting VBR versus CBR, it is almost always recommended that you use VBR for your media files. VBR provides higher quality files at competitive bitrates. When you use VBR, be sure you use with two-pass encoding, and set the maximum bitrate to be 1.5x the target video bitrate.
 
 When you choose a video encoding preset, take into account the target end user’s connection speed. Choose a preset with a data rate that is 80 percent of that speed. For example, if the target end user’s connection speed is 1000 Kbps, the best preset is one with a video data rate of 800 Kbps.
@@ -392,39 +392,39 @@ If the resulting ratio is a whole integer, it means that the video is optimally 
 
 As an example, suppose that your source video is 1920 x 1080. In the following table, the three encoded videos provide the optimal encoding settings to use.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p>Video Type</p> </th> 
-   <th><p>Width x Height</p> </th> 
-   <th><p>Width Ratio</p> </th> 
-   <th><p>Height Ratio</p> </th> 
+<table>
+ <tbody>
+  <tr>
+   <th><p>Video Type</p> </th>
+   <th><p>Width x Height</p> </th>
+   <th><p>Width Ratio</p> </th>
+   <th><p>Height Ratio</p> </th>
   </tr>
-  <tr> 
-   <td><p>Source</p> </td> 
-   <td><p>1920 x 1080</p> </td> 
-   <td><p>1</p> </td> 
-   <td><p>1</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Encoded</p> </td> 
-   <td><p>960 x 540</p> </td> 
-   <td><p>2</p> </td> 
-   <td><p>2</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Encoded</p> </td> 
-   <td><p>640 x 360</p> </td> 
-   <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Encoded</p> </td> 
-   <td><p>480 x 270</p> </td> 
-   <td><p>4</p> </td> 
-   <td><p>4</p> </td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>Source</p> </td>
+   <td><p>1920 x 1080</p> </td>
+   <td><p>1</p> </td>
+   <td><p>1</p> </td>
+  </tr>
+  <tr>
+   <td><p>Encoded</p> </td>
+   <td><p>960 x 540</p> </td>
+   <td><p>2</p> </td>
+   <td><p>2</p> </td>
+  </tr>
+  <tr>
+   <td><p>Encoded</p> </td>
+   <td><p>640 x 360</p> </td>
+   <td><p>3</p> </td>
+   <td><p>3</p> </td>
+  </tr>
+  <tr>
+   <td><p>Encoded</p> </td>
+   <td><p>480 x 270</p> </td>
+   <td><p>4</p> </td>
+   <td><p>4</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Encoded video file format {#encoded-video-file-format}
@@ -463,19 +463,19 @@ To publish to YouTube, you need a Google account. If you have a GMAIL account th
 
 **To configure Google Cloud settings**:
 
-1. Create a new Google account.  
+1. Create a new Google account.
 
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)  
+   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
 
    If you already have a Google account, skip to the next step.
 
 1. Go to [https://cloud.google.com/](https://cloud.google.com/).
 1. On the Google Cloud Platform page, near the top, tap **[!UICONTROL Console]**. You may need **Sign in** using your Google account credentials.
 1. On the **[!UICONTROL Dashboard]** page, tap **[!UICONTROL Create Project]**.
-1. In the **[!UICONTROL New Project]** dialog box, enter in a project name.  
-  
+1. In the **[!UICONTROL New Project]** dialog box, enter in a project name.
+
    Note that your project ID is based on your project name. As such, choose the project name carefully; it cannot be changed after it is created. Also, you will need to enter the same project ID again when you set up YouTube in Adobe Experience Manager later on. You may want to write down the project’s ID.
-1. Tap **[!UICONTROL Create]**.  
+1. Tap **[!UICONTROL Create]**.
 
 1. On your project’s **[!UICONTROL Dashboard]**, in the **[!UICONTROL Getting Started]** card, tap **[!UICONTROL Enable APIs and get credentials like keys]**.
 1. Near the top of the **[!UICONTROL Dashboard]** page, tap **[!UICONTROL Enable API]**.
@@ -486,18 +486,18 @@ To publish to YouTube, you need a Google account. If you have a GMAIL account th
 1. Under **[!UICONTROL What data will you be accessing?]** select **[!UICONTROL User data]**.
 1. Tap **[!UICONTROL What credentials do I need?]** button.
 1. Under the **[!UICONTROL Create an OAuth 2.0 client ID]** heading, enter a unique name.
-1. In the text field under the **[!UICONTROL Authorized Javascript origins]** heading, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:  
-  
-   `https://<servername.domain>:<port_number>`  
-  
+1. In the text field under the **[!UICONTROL Authorized Javascript origins]** heading, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
+
+   `https://<servername.domain>:<port_number>`
+
    For example, `https://1a2b3c.mycompany.com:4321`
 
    **Note**: The path example above is intended for illustration purposes only.
 
-1. In the text field under the **[!UICONTROL Authorized redirect URIs]** heading, enter the following, substituting your own domain and port number in the path, then press Enter to add the path to the list:  
-  
-   `https://<servername.domain>:<port#>/etc/cloudservices/youtube.youtubecredentialcallback.json`  
-  
+1. In the text field under the **[!UICONTROL Authorized redirect URIs]** heading, enter the following, substituting your own domain and port number in the path, then press Enter to add the path to the list:
+
+   `https://<servername.domain>:<port#>/etc/cloudservices/youtube.youtubecredentialcallback.json`
+
    For example, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    **Note**: The path example above is intended for illustration purposes only.
@@ -536,8 +536,8 @@ Publishing videos to YouTube requires that you have one or more channels. If you
 
    Remember the name you enter here because you will need to enter it again when you setup YouTube in AEM.
 
-1. (Optional) If necessary, add more channels.  
-  
+1. (Optional) If necessary, add more channels.
+
    Now you will add tags for publishing.
 
 ### Adding tags for publishing {#adding-tags-for-publishing}
@@ -564,8 +564,8 @@ Or, if you intend to use the default tags in AEM, you can skip this task and go 
 1. Tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL YouTube Account Settings]** dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
-   You specified the project ID when you initially configured Google Cloud settings earlier. 
-   
+   You specified the project ID when you initially configured Google Cloud settings earlier.
+
    Leave the **[!UICONTROL YouTube Account Setting]** dialog box open; you will return to it in a moment.
 
 1. Using a plain text editor, open the JSON file that you downloaded and saved earlier in the task Configuring Google Cloud settings.
@@ -597,7 +597,7 @@ Or, if you intend to use the default tags in AEM, you can skip this task and go 
 
    To delete a tag you have added, select the tag, and tap **[!UICONTROL X]**.
 
-1. When you are finished adding the tags you want, tap **[!UICONTROL OK]**.  
+1. When you are finished adding the tags you want, tap **[!UICONTROL OK]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -619,32 +619,32 @@ To create the metadata processing profile, you are first going to copy values fr
     * In the **[!UICONTROL Field Label]** text field, select and copy the value.
 
       Paste the copied value into an open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
-  
-    * In the **[!UICONTROL Map to property]** text field, select and copy the value.  
 
-      Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open. 
-  
+    * In the **[!UICONTROL Map to property]** text field, select and copy the value.
+
+      Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
+
     * Under **[!UICONTROL Choices]**, select and copy the default value that you want to use (such as People & Blogs or Science & Technology).
-  
+
       Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
 
 1. Under the YouTube Publishing heading, tap **[!UICONTROL YouTube Privacy]**. (Do not tap the YouTube Privacy drop-down list.)
 1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:
 
-    * In the **[!UICONTROL Field Label]** text field, select and copy the value. 
+    * In the **[!UICONTROL Field Label]** text field, select and copy the value.
 
       Paste the copied value into an open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
 
-    * In the **[!UICONTROL Map to property]** text field, select and copy the value.  
+    * In the **[!UICONTROL Map to property]** text field, select and copy the value.
 
       Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
 
-    * Under **[!UICONTROL Choices]**, select and copy the default value that you want to use. Notice that the Choices are grouped in pairs of two. The bottom field in the pair is the default value that you want to copy, such as public, unlisted, or private.  
+    * Under **[!UICONTROL Choices]**, select and copy the default value that you want to use. Notice that the Choices are grouped in pairs of two. The bottom field in the pair is the default value that you want to copy, such as public, unlisted, or private.
 
       Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
 
 1. Near the upper-right corner of the **[!UICONTROL Metadata Schema Editor]** page, tap **[!UICONTROL Cancel]**.
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Metadata Profiles]**.  
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 
 1. On the **[!UICONTROL Metadata Profiles** page, near the upper-right corner of the page, tap **[!UICONTROL Create**. In the **[!UICONTROL Add Metadata Profile** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
 1. On the **[!UICONTROL Metadata Profile Editor]** page, tap the **[!UICONTROL Advance]** tab.
@@ -692,8 +692,8 @@ See [Monitoring video encoding and YouTube publishing progress](#monitoring-vide
 1. On the **[!UICONTROL Select Tags]** page, navigate to the tags you want to use, and then select one or more tags.
 1. In the upper-right corner of the page, tap the **[!UICONTROL Confirm]** icon.
 1. In the upper-right corner of the video's properties page, tap **[!UICONTROL Save]**.
-1. On the toolbar, tap **[!UICONTROL Publish > Publish]**.  
-  
+1. On the toolbar, tap **[!UICONTROL Publish > Publish]**.
+
    You can optionally verify the published video on your YouTube channel.
 
 ### (Optional) Verifying the published video on YouTube {#optional-verifying-the-published-video-on-youtube}
@@ -775,7 +775,7 @@ To monitor progress (including failed encoding/YouTube publish):
    >* Apache Sling Job Queue Configuration
    >* Adobe Granite Workflow External Process Job Handler
    >* Granite Workflow Timeout Queue
-   > 
+   >
    >You may adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
 1. For workflows in progress, see **Workflow Instances** available from **[!UICONTROL Tools > Workflow > Instances]**.
@@ -790,7 +790,7 @@ To monitor progress (including failed encoding/YouTube publish):
 
    ![chlimage_1-434](assets/chlimage_1-434.png)
 
-   From the **[!UICONTROL Workflow Instances]** area, you can also suspend, terminate, or rename workflows. See [Administering workflows](/help/sites-administering/workflows-administering.md) for more information. 
+   From the **[!UICONTROL Workflow Instances]** area, you can also suspend, terminate, or rename workflows. See [Administering workflows](/help/sites-administering/workflows-administering.md) for more information.
 
 1. For failed jobs, see **Workflow Failures** available from **[!UICONTROL Tools > Workflow > Failures]**. The **[!UICONTROL Workflow Failure]** lists all failed workflow activities.
 
@@ -830,9 +830,9 @@ How you configure notification depends on whether you want notifications for enc
 * For YouTube publishing jobs, do the following:
 
 1. In AEM, select **[!UICONTROL Tools > Workflow > Models]**.
-1. Select the **[!UICONTROL Publish to YouTube]** workflow, then tap **[!UICONTROL Edit]**. 
-1. Right-click the **[!UICONTROL YouTube Upload]** workflow step, then tap **[!UICONTROL Edit]**. 
-1. Tap the **[!UICONTROL Argument]s** tab. 
+1. Select the **[!UICONTROL Publish to YouTube]** workflow, then tap **[!UICONTROL Edit]**.
+1. Right-click the **[!UICONTROL YouTube Upload]** workflow step, then tap **[!UICONTROL Edit]**.
+1. Tap the **[!UICONTROL Argument]s** tab.
 1. You can select or clear the following check boxes:
 
     * **[!UICONTROL Publish Start]**
@@ -878,11 +878,11 @@ For video reports to work correctly, a Report Suite ID is automatically created 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Video Reports]**.
 1. On the Video Reports page, do one of the following:
 
-    * Near the upper-right corner, tap the **[!UICONTROL Refresh Video Report]** icon.  
+    * Near the upper-right corner, tap the **[!UICONTROL Refresh Video Report]** icon.
 
       You only need to use Refresh if the end date of the report is the current day. This ensures that you see the video tracking that has occurred since the last time you ran the report.
-  
-    * Near the upper-right corner, tap the **[!UICONTROL Date Picker]** icon. 
+
+    * Near the upper-right corner, tap the **[!UICONTROL Date Picker]** icon.
 
       Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report]**.
 
@@ -917,43 +917,43 @@ To view Video Reports based on a video viewer that you created using the Scene7 
 
 1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
-    * First, determine if you need the `&preset` parameter. 
+    * First, determine if you need the `&preset` parameter.
 
-      If the `config2` parameter is `companypreset`, you do *not* need `&preset=parameter`.  
+      If the `config2` parameter is `companypreset`, you do *not* need `&preset=parameter`.
 
       If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
-  
-    * Then, add the AppMeasurementBridge.jsp script: 
+
+    * Then, add the AppMeasurementBridge.jsp script:
 
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
 1. Create the TrackingManager component by doing the following:
 
-    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following: 
+    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following:
 
-      `var trackingManager = new s7sdk.TrackingManager();` 
-  
-    * Connect components to TrackingManager by doing the following: 
+      `var trackingManager = new s7sdk.TrackingManager();`
 
-      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager. 
+    * Connect components to TrackingManager by doing the following:
 
-      For example, if the component is `videoPlayer`, add 
+      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
 
-      `trackingManager.attach(videoPlayer);` 
+      For example, if the component is `videoPlayer`, add
 
-      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components. 
+      `trackingManager.attach(videoPlayer);`
+
+      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components.
 
     * Create the AppMeasurementBridge object by adding the following:
 
-      ``` 
+      ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
-  
+
       ```
 
     * Add the tracking function by adding the following:
 
-      ``` 
-      trackingManager.setCallback(appMeasurementBridge.track, 
+      ```
+      trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
 
@@ -1008,16 +1008,16 @@ See [Serving static (non-image) contents](https://marketing.adobe.com/resources/
 
 1. Do one of the following:
 
-    * For a pop-up video viewer experience, tap **[!UICONTROL URL]**. In the URL dialog box, select and copy the URL to the Clipboard and then past the URL into a simple text editor. Append the copied URL of the video with the following syntax:  
-  
-      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`  
-  
+    * For a pop-up video viewer experience, tap **[!UICONTROL URL]**. In the URL dialog box, select and copy the URL to the Clipboard and then past the URL into a simple text editor. Append the copied URL of the video with the following syntax:
+
+      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
+
       Note the `,1` at the end of the caption path. Immediately following the .vtt filename extension in the path, you have the option to enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
-  
-    * For an embedded video viewer experience, tap **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:  
-  
-      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`  
-  
+
+    * For an embedded video viewer experience, tap **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
+
+      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
+
       Note the `,1` at the end of the caption path. Immediately following the .vtt filename extension in the path, you have the option to enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
 ## Adding chapter markers to video {#adding-chapter-markers-to-video}
@@ -1028,34 +1028,34 @@ You can make your long form videos easier to watch and navigate by adding chapte
 >
 >The video player that is used must support the use of chapter markers. Dynamic Media video players do support chapter markers but using third party video players may not.
 
-If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).  
-  
-You create a chapter list for your video in much the same way that you create captions. That is, you create a WebVTT file. Note, however, that this file must be separate from any WebVTT caption file that you may also be using; you cannot combine captions and chapters into one WebVTT file.  
-  
+If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+
+You create a chapter list for your video in much the same way that you create captions. That is, you create a WebVTT file. Note, however, that this file must be separate from any WebVTT caption file that you may also be using; you cannot combine captions and chapters into one WebVTT file.
+
 You can use the following sample as an example of the format you use to create a WebVTT file with chapter navigation:
 
 ### WebVTT file with video chapter navigation {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
-WEBVTT 
-Chapter 1 
-00:00.000 --> 01:04.364 
-The bicycle store behind it all. 
-Chapter 2 
-01:04.364 --> 02:00.944 
-Creative Cloud. 
-Chapter 3 
-02:00.944 --> 03:02.937 
-Ease of management for a working solution. 
-Chapter 4 
-03:02.937 --> 03:35.000 
+WEBVTT
+Chapter 1
+00:00.000 --> 01:04.364
+The bicycle store behind it all.
+Chapter 2
+01:04.364 --> 02:00.944
+Creative Cloud.
+Chapter 3
+02:00.944 --> 03:02.937
+Ease of management for a working solution.
+Chapter 4
+03:02.937 --> 03:35.000
 Cost-efficient access to rapidly evolving technology.
 ```
 
-In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000 --> 01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter’s contents. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the video’s timeline.  
-  
-Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is .vtt. You can learn more information about the WebVTT captioning standard.  
-  
+In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000 --> 01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter’s contents. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the video’s timeline.
+
+Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
+
 See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
 
 **To add chapter markers to video:**
@@ -1064,8 +1064,8 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
 
    For global support of video chapters in languages other than English, be aware that the WebVTT standard requires that you create separate .vtt files and calls for each language you want to support.
 
-1. Save the `.vtt` file in UTF8 encoding to avoid problems with character rendition in the chapter title text.  
-  
+1. Save the `.vtt` file in UTF8 encoding to avoid problems with character rendition in the chapter title text.
+
    Generally, you want to name the chapter VTT file the same name as the video file, and append it with chapters. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
 1. In AEM, upload your WebVTT chapter file.
 
@@ -1073,33 +1073,33 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
 
 1. Do one of the following:
 
-   <table> 
-     <tbody> 
-      <tr> 
-       <td>For a pop-up video viewer experience</td> 
-       <td> 
-       <ol> 
-       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li> 
-       <li>From the drop-down menu, then tap <strong>Viewers</strong>.</li> 
-       <li>In the left rail, tap the video viewer preset name. A preview of the video is opened in a separate page.</li> 
-       <li>In the left rail, at the bottom, tap <strong>URL</strong>.</li> 
-       <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li> 
-       <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li> 
-      </ol> </td> 
-      </tr> 
-      <tr> 
-       <td>For an embedded video viewer experience<br /> </td> 
-       <td> 
-       <ol> 
-       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li> 
-       <li>From the drop-down menu, then tap <strong>Viewers</strong>.</li> 
-       <li>In the left rail, tap the video viewer preset name. A preview of the video is opened in a separate page.</li> 
-       <li>In the left rail, at the bottom, tap <strong>Embed</strong>.</li> 
-       <li>In the Embed Code dialog box, select and copy the entire code to the Clipboard, then paste it into a simple text editor.</li> 
-       <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li> 
-      </ol> </td> 
-      </tr> 
-     </tbody> 
+   <table>
+     <tbody>
+      <tr>
+       <td>For a pop-up video viewer experience</td>
+       <td>
+       <ol>
+       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
+       <li>From the drop-down menu, then tap <strong>Viewers</strong>.</li>
+       <li>In the left rail, tap the video viewer preset name. A preview of the video is opened in a separate page.</li>
+       <li>In the left rail, at the bottom, tap <strong>URL</strong>.</li>
+       <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
+       <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li>
+      </ol> </td>
+      </tr>
+      <tr>
+       <td>For an embedded video viewer experience<br /> </td>
+       <td>
+       <ol>
+       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
+       <li>From the drop-down menu, then tap <strong>Viewers</strong>.</li>
+       <li>In the left rail, tap the video viewer preset name. A preview of the video is opened in a separate page.</li>
+       <li>In the left rail, at the bottom, tap <strong>Embed</strong>.</li>
+       <li>In the Embed Code dialog box, select and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
+       <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+      </ol> </td>
+      </tr>
+     </tbody>
     </table>
 
 ## About video thumbnails {#about-video-thumbnails}

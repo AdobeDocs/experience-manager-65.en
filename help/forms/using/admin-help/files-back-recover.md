@@ -7,7 +7,7 @@ uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 ---
 
@@ -138,7 +138,7 @@ You can use the mysqldump utility to obtain the full database backup. Full backu
 See [Backup Strategy Summary](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
 ```as3
-binlog_format=mixed 
+binlog_format=mixed
 log-bin=logname
 ```
 

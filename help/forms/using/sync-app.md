@@ -6,7 +6,7 @@ seo-description: Synchronize the AEM Forms app on your mobile device with the AE
 uuid: 7e1526e1-13bd-498a-a265-cd4f2d05ccdd
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 ---
@@ -32,7 +32,7 @@ Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right c
 
    ![Sync frequency setting in General Settings window](assets/gen-settings-1.png)
 
-1. On the Sync frequency option, tap the value to the right of Sync frequency. 
+1. On the Sync frequency option, tap the value to the right of Sync frequency.
 1. In the drop-down list, select the new synchronization frequency.
 
 ### Technical specifications {#technical-specifications}

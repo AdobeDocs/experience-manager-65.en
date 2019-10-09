@@ -5,7 +5,7 @@ description: Learn about WebDAV access in AEM.
 seo-description: Learn about WebDAV access in AEM.
 uuid: b0ecaa5d-5454-42df-8453-404ece734c32
 contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
@@ -45,7 +45,7 @@ When you use WebDAV to create and edit folders and files, AEM creates and edits 
 
 The URL for the WebDAV server has the following structure:
 
-<table> 
+<table>
  <colgroup>
   <col width="100" />
   <col width="100" />
@@ -58,28 +58,28 @@ The URL for the WebDAV server has the following structure:
    <td>
     <code>
      <strong>URL Component</strong>
-    </code></td> 
-   <td><code>https://&lt;host&gt;:&lt;port&gt;</code></td> 
-   <td><code>/&lt;crx-webapp-path&gt;</code></td> 
-   <td><code>/repository</code></td> 
-   <td><code>/&lt;workspace&gt;</code></td> 
+    </code></td>
+   <td><code>https://&lt;host&gt;:&lt;port&gt;</code></td>
+   <td><code>/&lt;crx-webapp-path&gt;</code></td>
+   <td><code>/repository</code></td>
+   <td><code>/&lt;workspace&gt;</code></td>
   </tr>
   <tr>
    <td>
     <code>
      <strong>Example</strong>
-    </code></td> 
-   <td><code>http://localhost:4502</code></td> 
-   <td><code>/crx</code></td> 
-   <td><code>/repository</code></td> 
-   <td><code>/crx.default</code></td> 
+    </code></td>
+   <td><code>http://localhost:4502</code></td>
+   <td><code>/crx</code></td>
+   <td><code>/repository</code></td>
+   <td><code>/crx.default</code></td>
   </tr>
   <tr>
-   <td><strong>Description</strong></td> 
-   <td>Host and port on which AEM runs</td> 
-   <td>Path for the AEM repository webapp</td> 
-   <td>Path to which WebDAV servlet is mapped</td> 
-   <td>Name of the workspace</td> 
+   <td><strong>Description</strong></td>
+   <td>Host and port on which AEM runs</td>
+   <td>Path for the AEM repository webapp</td>
+   <td>Path to which WebDAV servlet is mapped</td>
+   <td>Name of the workspace</td>
   </tr>
  </tbody>
 </table>
@@ -197,7 +197,7 @@ Connecting via WebDAV on Linux doesn't require any configuration, but does invol
 To connect to AEM via WebDAV with GNOME:
 
 1. In Nautilus (file explorer), select **Places** and select **Connect to Server**.
-1. In the **Connect to Server** window, select WebDAV (HTTP) in Service Type.  
+1. In the **Connect to Server** window, select WebDAV (HTTP) in Service Type.
 
 1. In **Server**, enter `http://localhost:4502/crx/repository/crx.default`
 
@@ -225,7 +225,7 @@ GNOME has now mounted AEM as a volume and you can use it like any other volume.
    >
    >If AEM is located on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address
 
-1. In **Folder**, enter `dav`  
+1. In **Folder**, enter `dav`
 
 1. Click **Save and Connect**.
 1. When prompted for your password, enter the password `admin` and click **Connect**.

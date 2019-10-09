@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about Content Sync for Adobe PhoneGap
 uuid: 65ee4138-b79a-44a7-83da-3e933ccae854
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 7941987a-2f4c-4c62-8ab2-0f6f30ceb064
 ---
@@ -53,9 +53,9 @@ To specify the content of the Content Sync ZIP file, add child nodes to the cq:C
 * `path`: The location of the content.
 * `type`: The name of the configuration type to use for processing the content. Several types are available and are described in Configuration Types.
 
-See Example Content Sync Configuration.  
+See Example Content Sync Configuration.
 
-After you create the Content Sync configuration, it appears in the Content Sync console.  
+After you create the Content Sync configuration, it appears in the Content Sync console.
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ The image type is used to include the We.Retail logo in the zip file.
 
 * **deep** - Optional boolean property determining if child pages should be included, as well. The default value is *true.*
 
-* **includeImages** - Optional boolean property determining if images should be included. The default value is *true*.  
+* **includeImages** - Optional boolean property determining if images should be included. The default value is *true*.
 
   By default, only image components with a resource type of foundation/components/image are considered for inclusion. You can add more resource types by configuring the **Day CQ WCM Pages Update Handler** in the Web console.
 
@@ -155,14 +155,14 @@ The `rewrite` node needs to be located below the `page` node.
 
 The `rewrite` node can have one or more of the following properties:
 
-* `clientlibs`: rewrites clientlibs paths.  
+* `clientlibs`: rewrites clientlibs paths.
 
 * `images`: rewrites images paths.
 * `links`: rewrites links paths.
 
 Each property can have one of the following values:
 
-* `REWRITE_RELATIVE`: rewrites the path with a relative position to the page .html file on the file system.  
+* `REWRITE_RELATIVE`: rewrites the path with a relative position to the page .html file on the file system.
 
 * `REWRITE_EXTERNAL`: rewrites the path by pointing to the resource on the server, using the AEM [Externalizer service](/help/sites-developing/externalizer.md).
 
@@ -330,7 +330,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
                 Node parent = JcrUtil.createPath(parentPath, "sling:Folder", admin);
                 Node image = resolver.getResource(resource.getPath() + "/image").adaptTo(Node.class);
                 JcrUtil.copy(image, parent, Text.getName(src));
-  
+
                 admin.save();
 
                 return true;
@@ -338,7 +338,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
         } catch (RepositoryException e) {
             log.error("Unexpected error while updating logo: ", e);
         }
-  
+
         return false;
     }
 }

@@ -6,7 +6,7 @@ seo-description: null
 uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 ---
@@ -44,7 +44,7 @@ To convert a PDF document to a PDF/A document, perform the following steps:
 1. Create a DocConvert client
 1. Reference a PDF document to convert to a PDF/A document.
 1. Set tracking information.
-1. Convert the document. 
+1. Convert the document.
 1. Save the PDF/A document.
 
 **Include project files**
@@ -56,7 +56,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
-* adobe-utilities.jar (required if AEM Forms is deployed on JBoss Application Server) 
+* adobe-utilities.jar (required if AEM Forms is deployed on JBoss Application Server)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss Application Server)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
@@ -99,11 +99,11 @@ Convert a PDF document to a PDF/A document by using the Java API:
 
 1. Include project files
 
-   Include client JAR files, such as adobe-docconverter-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-docconverter-client.jar, in your Java project’s class path.
 
 1. Create a DocConvert client
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `DocConverterServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference a PDF document to convert to a PDF/A document
@@ -123,11 +123,11 @@ Convert a PDF document to a PDF/A document by using the Java API:
     * The `com.adobe.idp.Document` object that contains the PDF document to convert
     * The `PDFAConversionOptionSpec` object that specifies tracking information
 
-   The `toPDFA` method returns a `PDFAConversionResult` object that contains the PDF/A document. 
+   The `toPDFA` method returns a `PDFAConversionResult` object that contains the PDF/A document.
 
 1. Save the PDF/A document
 
-    * Retrieve the PDF/A document by invoking the `PDFAConversionResult` object’s `getPDFA` method. This method returns a `com.adobe.idp.Document` object that represents the PDF/A document. 
+    * Retrieve the PDF/A document by invoking the `PDFAConversionResult` object’s `getPDFA` method. This method returns a `com.adobe.idp.Document` object that represents the PDF/A document.
     * Create a `java.io.File` object that represents the PDF/A file. Ensure that the file name extension is .pdf.
     * Populate the file with PDF/A data by invoking the `com.adobe.idp.Document` object’s `copyToFile` method and passing the `java.io.File` object.
 
@@ -147,7 +147,7 @@ Convert a PDF document to a PDF/A document by using the DocConverter API (web se
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the DocConverter WSDL. 
+    * Create a Microsoft .NET client assembly that consumes the DocConverter WSDL.
     * Reference the Microsoft .NET client assembly.
 
 1. Create a DocConvert client
@@ -159,7 +159,7 @@ Convert a PDF document to a PDF/A document by using the DocConverter API (web se
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the PDF document that is converted to a PDF/A document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `binaryData` property with the contents of the byte array.
 
@@ -175,7 +175,7 @@ Convert a PDF document to a PDF/A document by using the DocConverter API (web se
     * The `BLOB` object that contains the PDF document to convert
     * The `PDFAConversionOptionSpec` object that specifies tracking information
 
-   The `toPDFA` method returns a `PDFAConversionResult` object that contains the PDF/A document. 
+   The `toPDFA` method returns a `PDFAConversionResult` object that contains the PDF/A document.
 
 1. Save the PDF/A document
 
@@ -261,7 +261,7 @@ Determine PDF/A compliancy by using the Java API:
 
 1. Create a DocConvert client
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `DocConverterServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference a PDF document used to determine PDF/A compliancy
@@ -272,7 +272,7 @@ Determine PDF/A compliancy by using the Java API:
 1. Set run-time options
 
     * Create a `PDFAValidationOptionSpec` object by using its constructor.
-    * Set the compliance level by invoking the `PDFAValidationOptionSpec` object’s `setCompliance` method and passing `PDFAValidationOptionSpec.Compliance.PDFA_1B`. 
+    * Set the compliance level by invoking the `PDFAValidationOptionSpec` object’s `setCompliance` method and passing `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
     * Set the information tracking level by invoking the `PDFAValidationOptionSpec` object’s `setLogLevel` method and passing a string value that specifies the tracking level. For example, pass the value `FINE`. For information about the different values, see the `setLogLevel` method in the [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Retrieve information about the PDF document
@@ -312,14 +312,14 @@ Determine PDF/A compliancy by using the web service API:
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the PDF document that is converted to a PDF/A document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `binaryData` property with the contents of the byte array.
 
 1. Set run-time options
 
     * Create a `PDFAValidationOptionSpec` object by using its constructor.
-    * Set the compliance level by assigning the `PDFAValidationOptionSpec` object’s `compliance` data member with the value `PDFAConversionOptionSpec_Compliance.PDFA_1B`. 
+    * Set the compliance level by assigning the `PDFAValidationOptionSpec` object’s `compliance` data member with the value `PDFAConversionOptionSpec_Compliance.PDFA_1B`.
     * Set the information tracking level by assigning the `PDFAValidationOptionSpec` object’s `resultLevel` data member with the value `PDFAValidationOptionSpec_ResultLevel.DETAILED`.
 
 1. Retrieve information about the PDF document

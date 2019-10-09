@@ -5,7 +5,7 @@ description: Best practices for file support in AEM Assets.
 seo-description: Best practices for file support in AEM Assets.
 uuid: 2cb76dee-9f72-4071-b2f2-dc180771e1ec
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 9197bba8-d3b1-4d99-a971-8fa643979096
@@ -69,7 +69,7 @@ Imaging Transcoding library supports the following MIME types:
 * PNG (8 bit and 16 bit)
 * GIF
 * BMP
-* TIFF/Compressed TIFF (apart from 32 Bit Tiffs and PTiffs).  
+* TIFF/Compressed TIFF (apart from 32 Bit Tiffs and PTiffs).
 * ICO
 * ICN
 

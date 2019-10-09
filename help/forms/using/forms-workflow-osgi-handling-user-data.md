@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 ---
 
@@ -33,34 +33,34 @@ The default repository locations where payload, drafts, and history of a workflo
 >
 >You can configure different locations to store payload, draft, and history data when creating a workflow or application. To identify the locations where a workflow or application stored data, review the workflow.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> </td> 
-   <td>AEM 6.4 Forms</td> 
-   <td>AEM 6.3 Forms</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Workflow <br /> instance</strong></td> 
-   <td>/var/workflow/instances/[server_id]/&lt;date&gt;/[workflow-instance]/</td> 
-   <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Payload</strong></td> 
-   <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td> 
-   <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Drafts</strong></td> 
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td> 
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td> 
-  </tr> 
-  <tr> 
-   <td><strong>History</strong></td> 
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td> 
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> </td>
+   <td>AEM 6.4 Forms</td>
+   <td>AEM 6.3 Forms</td>
+  </tr>
+  <tr>
+   <td><strong>Workflow <br /> instance</strong></td>
+   <td>/var/workflow/instances/[server_id]/&lt;date&gt;/[workflow-instance]/</td>
+   <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
+  </tr>
+  <tr>
+   <td><strong>Payload</strong></td>
+   <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
+   <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
+  </tr>
+  <tr>
+   <td><strong>Drafts</strong></td>
+   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
+   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
+  </tr>
+  <tr>
+   <td><strong>History</strong></td>
+   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
+   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Access and delete user data {#access-and-delete-user-data}
@@ -100,7 +100,7 @@ To identify and access user data stored for a workflow instance, perform the fol
 
    ![status](assets/status.png)
 
-1. In the workflow instance node, navigate to `data/payload/`. The `path` property stores the path to the payload for the workflow instance. You can navigate to the path to access data stored in the payload. 
+1. In the workflow instance node, navigate to `data/payload/`. The `path` property stores the path to the payload for the workflow instance. You can navigate to the path to access data stored in the payload.
 
    ![payload-path](assets/payload-path.png)
 

@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about Screens Player. It also explain
 uuid: 93e113ea-fbef-4757-982b-b7dc52fc76a7
 contentOwner: jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 4ad51b5e-c628-4440-9f2e-41d17cb10bc3
 ---
@@ -65,7 +65,7 @@ You can clear cache for channels and applications from the Admin UI in AEM Scree
 
 Select the **Content Cache** from the side rail to update the cache.
 
-![screen_shot_2018-10-15at105717am](assets/screen_shot_2018-10-15at105717am.png) 
+![screen_shot_2018-10-15at105717am](assets/screen_shot_2018-10-15at105717am.png)
 
 ### The Channel Switcher {#the-channel-switcher}
 
@@ -95,7 +95,7 @@ Follow these steps to change preferences from your Player:
 1. Navigate to **Configuration** from the left action menu.
 1. Enable/disable configuration for **Admin UI** or **Channel Switcher**.
 
-![screen_shot_2018-10-15at101257am-1](assets/screen_shot_2018-10-15at101257am-1.png) 
+![screen_shot_2018-10-15at101257am-1](assets/screen_shot_2018-10-15at101257am-1.png)
 
 ## Troubleshooting AEM Screens Player {#troubleshooting-aem-screens-player}
 

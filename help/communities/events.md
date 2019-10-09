@@ -5,7 +5,7 @@ description: OSGi events are sent that can trigger asynchronous listeners
 seo-description: OSGi events are sent that can trigger asynchronous listeners
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
@@ -23,7 +23,7 @@ For the Communities components delivered in the release, the following tables de
 
 ## Topics and Verbs {#topics-and-verbs}
 
-[Calendar Component](calendar-basics-for-developers.md) 
+[Calendar Component](calendar-basics-for-developers.md)
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verb** |**Description** |
@@ -33,7 +33,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 | UPDATE |member's calendar event or comment is edited |
 | DELETE |member's calendar event or comment is deleted |
 
-[Comments Component](essentials-comments.md) 
+[Comments Component](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** |**Description** |
@@ -53,7 +53,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 | UPDATE |member updates a folder or file |
 | DELETE |member deletes a folder or file |
 
-[Forum Component](essentials-forum.md) 
+[Forum Component](essentials-forum.md)
 SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verb** |**Description** |
@@ -63,7 +63,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | UPDATE |member's forum topic or reply is edited |
 | DELETE |member's forum topic or reply is deleted |
 
-[Journal Component](blog-developer-basics.md) 
+[Journal Component](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verb** |**Description** |
@@ -73,7 +73,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | UPDATE |member's blog article or comment is edited |
 | DELETE |member's blog article or comment is deleted |
 
-[QnA Component](qna-essentials.md) 
+[QnA Component](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verb** |**Description** |
@@ -85,7 +85,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | UNSELECT |member's answer is de-selected |
 | DELETE |member's QnA question or answer is deleted |
 
-[Reviews Component](reviews-basics.md) 
+[Reviews Component](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** |**Description** |
@@ -94,7 +94,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 | UPDATE |member's review is edited |
 | DELETE |member's review is deleted |
 
-[Rating Component](rating-basics.md) 
+[Rating Component](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** |**Description** |
@@ -102,7 +102,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 | ADD RATING |member's content has been up rated |
 | REMOVE RATING |member's content has been down rated |
 
-[Voting Component](essentials-voting.md) 
+[Voting Component](essentials-voting.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** |**Description** |
@@ -110,7 +110,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 | ADD VOTING |member's content has been up voted |
 | REMOVE VOTING |member's content has been down voted |
 
-**Moderation-enabled Components** 
+**Moderation-enabled Components**
 SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verb** |**Description** |
@@ -134,9 +134,9 @@ The custom event would override the method `getVerb()` so that an appropriate `v
 
 ### Pseudo-Code for Custom Component Event {#pseudo-code-for-custom-component-event}
 
-[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);  
-[com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);  
-[com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);  
+[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
+[com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
+[com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
 [com.adobe.granite.activitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
 
 ```java
@@ -147,10 +147,10 @@ import com.adobe.cq.social.scf.core.SocialEvent;
 import com.adobe.granite.activitystreams.ObjectTypes;
 import com.adobe.granite.activitystreams.Verbs;
 
-/* 
- * The Recipe type, passed to RecipeEvent(), would be a custom Recipe class 
- * that extends either 
- * com.adobe.cq.social.scf.SocialComponent 
+/*
+ * The Recipe type, passed to RecipeEvent(), would be a custom Recipe class
+ * that extends either
+ * com.adobe.cq.social.scf.SocialComponent
  * or
  * com.adobe.cq.social.scf.SocialCollectionComponent
  * See https://docs.adobe.com/docs/en/aem/6-2/develop/communities/scf/server-customize.html
@@ -176,8 +176,8 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
      */
     public RecipeEvent(final Recipe recipe, final String userId, final RecipeEvent.RecipeActions action) {
         String recipePath = recipe.getResource().getPath();
-        String parentPath = (recipe.getParentComponent() != null) ? 
-                             recipe.getParentComponent().getResource().getPath() : 
+        String parentPath = (recipe.getParentComponent() != null) ?
+                             recipe.getParentComponent().getResource().getPath() :
                              recipe.getSourceComponentId();
         this(recipePath, userId, parentPath, action);
     }
@@ -189,8 +189,8 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
      * @param action - the recipe action that triggered this event
      */
     public RecipeEvent(final String recipePath, final String userId, final String parentPath) {
-        super(RECIPE_TOPIC, recipePath, userId, action, 
-              new BaseEventObject(recipePath, ObjectTypes.ARTICLE), 
+        super(RECIPE_TOPIC, recipePath, userId, action,
+              new BaseEventObject(recipePath, ObjectTypes.ARTICLE),
               new BaseEventObject(parentPath, ObjectTypes.COLLECTION),
               new HashMap<String, Object>(1) {
             private static final long serialVersionUID = 1L;
@@ -211,8 +211,8 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
      * List of available recipe actions that can trigger a recipe event.
      */
     public static enum RecipeActions implements SocialEvent.SocialActions {
-        RecipeAdded, 
-        RecipeModified, 
+        RecipeAdded,
+        RecipeModified,
         RecipeDeleted;
 
         @Override

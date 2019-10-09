@@ -6,7 +6,7 @@ seo-description: he AEM Mobile Dashboard allows you to create, build and deploy 
 uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 ---
@@ -97,7 +97,7 @@ Alternatively, you can download the device source to build locally through the [
 
 >[!CAUTION]
 >
->The Metrics tile displays only after you configure the cloud service. 
+>The Metrics tile displays only after you configure the cloud service.
 >
 >See [Configure your Adobe Mobile Services Cloud Service](/help/mobile/configure-adobe-mobile-cloud-service.md) for details.
 

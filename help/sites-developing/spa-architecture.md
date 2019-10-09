@@ -5,7 +5,7 @@ description: This article presents important questions to consider when engaging
 seo-description: This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM as well as gives an overview of the architecture of AEM with respect to SPAs to keep in mind when deploying a developed SPA on AEM.
 uuid: c77b37be-6acc-4cb4-9ae3-ba09583e6fff
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
@@ -72,34 +72,34 @@ If the [principles of developing SPAs in AEM](/help/sites-developing/spa-archite
 
 There may be cases however when this is not entirely necessary. The following table gives an overview of the various design models, their advantages, and their disadvantages.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th><strong>Design Model<br /> </strong></th> 
-   <th><strong>Advantages</strong></th> 
-   <th><strong>Disadvantages</strong></th> 
+   <th><strong>Design Model<br /> </strong></th>
+   <th><strong>Advantages</strong></th>
+   <th><strong>Disadvantages</strong></th>
   </tr>
   <tr>
-   <td>AEM is used as a headless CMS without using the <a href="/help/sites-developing/spa-reference-materials.md">SPA Editor SDK framework.</a></td> 
-   <td>The front end developer has full control over the app.</td> 
-   <td><p>Content authors cannot leverage AEM's content authoring experience.</p> <p>The code is neither portable nor reusable if it contains static references or routing.</p> <p>Does not allow use of the template editor so the front end developer must maintain editable templates via the JCR.</p> </td> 
+   <td>AEM is used as a headless CMS without using the <a href="/help/sites-developing/spa-reference-materials.md">SPA Editor SDK framework.</a></td>
+   <td>The front end developer has full control over the app.</td>
+   <td><p>Content authors cannot leverage AEM's content authoring experience.</p> <p>The code is neither portable nor reusable if it contains static references or routing.</p> <p>Does not allow use of the template editor so the front end developer must maintain editable templates via the JCR.</p> </td>
   </tr>
   <tr>
-   <td>The front end developer uses the SPA Editor SDK framework but only opens some areas to the content author.</td> 
-   <td>The developer keeps control over the app by only enabling authoring in restricted areas of the app.</td> 
-   <td><p>Content authors are restricted to a limited set of AEM's content authoring experience.</p> <p>The code risks being neither portable nor reusable if it contains static references or routing.</p> <p>Does not allow use of the template editor so the front end developer must maintain editable templates via the JCR.</p> </td> 
+   <td>The front end developer uses the SPA Editor SDK framework but only opens some areas to the content author.</td>
+   <td>The developer keeps control over the app by only enabling authoring in restricted areas of the app.</td>
+   <td><p>Content authors are restricted to a limited set of AEM's content authoring experience.</p> <p>The code risks being neither portable nor reusable if it contains static references or routing.</p> <p>Does not allow use of the template editor so the front end developer must maintain editable templates via the JCR.</p> </td>
   </tr>
   <tr>
-   <td>The project fully leverages the SPA Editor SDK and the frontend components are developed as a library and the content structure of the app is delegated to AEM.</td> 
-   <td><p>The app is reusable and portable.</p> <p>The content author can edit the app using AEM's content authoring experience.<br /> </p> <p>The SPA is compatible with the template editor.</p> </td> 
-   <td><p>The developer is not in control of the structure of the app and the portion of content delegated to AEM.</p> <p>The developer can still reserve areas of the app for the content that is not meant to be authored using AEM.</p> </td> 
+   <td>The project fully leverages the SPA Editor SDK and the frontend components are developed as a library and the content structure of the app is delegated to AEM.</td>
+   <td><p>The app is reusable and portable.</p> <p>The content author can edit the app using AEM's content authoring experience.<br /> </p> <p>The SPA is compatible with the template editor.</p> </td>
+   <td><p>The developer is not in control of the structure of the app and the portion of content delegated to AEM.</p> <p>The developer can still reserve areas of the app for the content that is not meant to be authored using AEM.</p> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Although all models are supported in AEM, only by implementing the third (and thereby following the recommended [SPA development principles in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) will the content authors be able to interact with and edit the content of the SPA in AEM as they are accustomed.  
+>Although all models are supported in AEM, only by implementing the third (and thereby following the recommended [SPA development principles in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) will the content authors be able to interact with and edit the content of the SPA in AEM as they are accustomed.
 
 ## Migrating Existing SPAs to AEM {#migrating-existing-spas-to-aem}
 

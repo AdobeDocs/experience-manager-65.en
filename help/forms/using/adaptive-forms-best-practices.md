@@ -4,7 +4,7 @@ seo-title: Best practices for working with adaptive forms
 description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 ---
@@ -37,7 +37,7 @@ A simplified and standardized project structure can significantly reduce develop
 
 For more information, see [How to Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-* The FileVault tool or VLT helps you map the content of a CRX or AEM instance to your file system. It provides change control management operations, such as check-in and check-out of the AEM project content. See [How to use the VLT Tool](/help/sites-developing/ht-vlttool.md).  
+* The FileVault tool or VLT helps you map the content of a CRX or AEM instance to your file system. It provides change control management operations, such as check-in and check-out of the AEM project content. See [How to use the VLT Tool](/help/sites-developing/ht-vlttool.md).
 
 * If you use Eclipse-integrated development environment, you can use AEM Developer tools for seamless integration of Eclipse IDE with AEM instances to create AEM applications. For details, see [AEM developer tools for Eclipse](/help/sites-developing/aem-eclipse.md).
 
@@ -63,12 +63,12 @@ For more information, see [Create an adaptive form](/help/forms/using/creating-a
 
 * AEM Forms provides out-of-the-box adaptive form templates that you can use to create adaptive forms. You can also create your own templates. AEM provides static and editable templates.
 
-    * Static templates are defined and configured by developers. 
+    * Static templates are defined and configured by developers.
     * Editable templates are created by authors using template editor. The template editor lets you define a basic structure and initial content in a template. Any modification in the structure layer is reflected in all forms using that template. The initial content may include pre-configured theme, prefill service, submit action, and so on. However, these settings can be modified for a form using the form editor. For more information, see [Adaptive form templates](/help/forms/using/template-editor.md).
 
 * For styling a specific field or panel instance, use [inline styling](/help/forms/using/inline-style-adaptive-forms.md). Alternatively, you can define a class in a CSS file and specify the class name in the CSS Class property of the component.
 * Include a client library in a component to consistently apply styles across adaptive forms or fragments that use that component. For more information, see [Create an adaptive form page component](/help/forms/using/custom-adaptive-forms-templates.md).
-* Apply styles defined in a client library to select adaptive forms by specifying the path to the client library in the CSS file path field in the adaptive form container properties. 
+* Apply styles defined in a client library to select adaptive forms by specifying the path to the client library in the CSS file path field in the adaptive form container properties.
 * To create a client library of your styles, you can configure the custom CSS file in the Theme Editor base clientlib or in the Form Container properties.
 * Adaptive forms provide panel layouts, such as responsive, tabbed, accordions, and wizard, to control how form components are laid out in a panel. You can create custom panel layouts and make them available for use by form authors. For more information, see [Creating custom layout components for adaptive forms](/help/forms/using/custom-layout-components-forms.md).
 * You can also customize specific adaptive form components like fields and panel layout.
@@ -85,7 +85,7 @@ For more information, see [Create an adaptive form](/help/forms/using/creating-a
 
 * Use Objects browser in the sidebar to quickly access fields deep down in the form hierarchy. You can use the search box to search for objects in the form or objects tree to navigate from one object to another.
 * To view and edit the properties of a component in the components browser in the sidebar, select the component and click ![cmppr-1](assets/cmppr-1.png). You can also double-click a component to view its properties in the properties browser.
-* Use keyboard shortcuts to take quick actions on your forms. See [AEM Forms Keyboard Shortcuts](/help/forms/using/keyboard-shortcuts.md).  
+* Use keyboard shortcuts to take quick actions on your forms. See [AEM Forms Keyboard Shortcuts](/help/forms/using/keyboard-shortcuts.md).
 
 * Adaptive form components are recommended for use only in adaptive form pages. The components have dependency on their parent hierarchy. Hence, do not use them in an AEM page.
 
@@ -98,11 +98,11 @@ AEM Forms provides a [rule editor](/help/forms/using/rule-editor.md) that allows
 Rule editor provides a visual editor and a code editor for writing rules. Consider the following when writing rules using the code editor mode:
 
 * Use meaningful and unique names for form fields and components to avoid any possible conflicts while writing rules.
-* Use `this` operator for a component to refer to itself in a rule expression. It ensures that the rule remains valid even if the component name changes. For example, `field1.valueCommit script: this.value > 10`.  
+* Use `this` operator for a component to refer to itself in a rule expression. It ensures that the rule remains valid even if the component name changes. For example, `field1.valueCommit script: this.value > 10`.
 
 * Use component names when referring to other form components. Use the `value` property to fetch the value of a field or component. For example, `field1.value`.
 
-* Refer components by relative unique hierarchy to avoid any conflict. For example, `parentName.fieldName`.  
+* Refer components by relative unique hierarchy to avoid any conflict. For example, `parentName.fieldName`.
 
 * When handling complex or commonly-used rules, consider writing business logic as functions in a separate client library that you can specify and reuse across adaptive forms. The client library should be a self-contained library and should not have any external dependencies, except on jQuery and Underscore.js. You can also use the client library to enforce [server-side revalidation](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) of submitted form data.
 * Adaptive forms provide a set of APIs that you can use to communicate with and perform actions on adaptive forms. Some of the key APIs are as follows. For more information, see [JavaScript Library API reference for Adaptive Forms](https://adobe.com/go/learn_aemforms_documentation_63).
@@ -112,7 +112,7 @@ Rule editor provides a visual editor and a code editor for writing rules. Consid
     * `guideBridge.setFocus(somExp, focusOption, runCompletionExp)`: Sets focus to a field.
     * `guideBridge.validate(errorList, somExpression, focus)`: Validates a form.
     * `guideBridge.getDataXML(options)`: Gets form data as XML.
-    * `guideBridge.resolveNode(somExpression)`: Gets a form object. 
+    * `guideBridge.resolveNode(somExpression)`: Gets a form object.
     * `guideBridge.setProperty(somList, propertyName, valueList)`: Sets property of a form object.
     * In addition, you can use the following field properties:
 
@@ -130,7 +130,7 @@ Adaptive for themes allow you to create reusable styles that can be applied acro
 * Use asset library for quick application of text styles, background and images. When a style is added in the asset library, it is available for other themes and in the style mode of the form editor.
 * Apply global settings like font and page background using page-level selector.
 * Use client libraries to import existing or advanced styling into your themes.
-* You can override styling for specific fields, panels, or buttons in a form style layer.  
+* You can override styling for specific fields, panels, or buttons in a form style layer.
 * If a theme does not fulfill your styling requirement, you can use predefined classes such as guideFieldNode, guideFieldLabel, guideFieldWidget, and guidePanelNode to apply common style across forms.
 
 For more information, see [Themes](/help/forms/using/themes.md).
@@ -141,14 +141,14 @@ Form authors and end users typically face performance issues when loading large 
 
 Consider the following best practices to overcome performance issues with large forms:
 
-* It is recommended to create adaptive forms using XSD form data model even when converting an XFA to adaptive form, if possible.  
+* It is recommended to create adaptive forms using XSD form data model even when converting an XFA to adaptive form, if possible.
 * Include only those fields and panels in adaptive forms that capture information from the user. Consider keeping static content minimal or use URLs to open them in a separate window.
 * While every form is designed for a specific purpose, there are some common segments in most forms. For example, personal details, address, employment details, and so on. Create [adaptive form fragments](/help/forms/using/adaptive-form-fragments.md) for common form elements and sections and use them across forms. You can also save a panel in an existing form as a fragment. Any change in a fragment is reflected in all associated adaptive forms. It promotes collaborative authoring as multiple authors can work simultaneously on different fragments that make up a form.
 
     * Similar to adaptive forms, it is recommended that all fragment-specific styling and custom scripts are defined in the client library using the fragment container dialog. Also, try creating self-sufficient fragments that do not depend on objects outside it.
     * Avoid using cross-fragments scripting. If there's any object outside the fragment that you must refer to, try to make that object a part of the parent form. If the object must still reside in another fragment, refer to it by its name in the script.
 
-* Use Save and Resume with auto-save to save the adaptive form periodically and enable users to revisit later to complete the form. 
+* Use Save and Resume with auto-save to save the adaptive form periodically and enable users to revisit later to complete the form.
 * Configure fragments to load lazily. At runtime, fragment marked to load lazily are rendered only when they are required. It significantly reduces the load time for large forms. It is also supported in fragments with repeatable panels. For more information, see [Configure lazy loading](/help/forms/using/lazy-loading-adaptive-forms.md).
 
     * Do not configure lazy loading on fragments in a responsive grid layout or in the first panel.
@@ -175,12 +175,12 @@ For more information, see [Prefill adaptive form fields](/help/forms/using/prepo
 Adaptive forms require Submit actions to process user-specified data. A Submit action determines the task performed on the data that you submit using an adaptive form.
 
 * There are several submit actions available out-of-the-box in adaptive forms. For details, see [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md).
-* You can write a custom submit action if the default submit actions do not fulfill your use case. For more information, see [Writing custom Submit action for adaptive forms](/help/forms/using/custom-submit-action-form.md). 
+* You can write a custom submit action if the default submit actions do not fulfill your use case. For more information, see [Writing custom Submit action for adaptive forms](/help/forms/using/custom-submit-action-form.md).
 * Include server-side validations to prevent submission of invalid data submission.
 
 You can leverage multi-sign experience of Adobe Sign in adaptive forms. Consider the following when configuring Adobe Sign in adaptive forms. For details, see [Using Adobe Sign in an adaptive form](/help/forms/using/working-with-adobe-sign.md).
 
-* Adobe Sign enabled adaptive form is submitted only after all the signers have signed the form. Forms appear in Pending Sign state until the form is signed by all signers.   
+* Adobe Sign enabled adaptive form is submitted only after all the signers have signed the form. Forms appear in Pending Sign state until the form is signed by all signers.
 * You can configure in-form signing experience or redirect signers to a signing page on submission.
 * Configure sequential or parallel signing experience, as appropriate.
 
@@ -213,7 +213,7 @@ For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-con
 
 Calvin SDK is a utility API for Adaptive Forms developers to test Adaptive Forms. Calvin SDK is built on top of the [Hobbes.js testing framework](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). You can use the framework to test the following:
 
-* Rendition experience of an Adaptive Form 
+* Rendition experience of an Adaptive Form
 * Prefill experience of an Adaptive Form
 * Submit experience of an Adaptive Form
 * Expression Rules
@@ -236,8 +236,8 @@ AEM provides translation workflows that you can use to localize adaptive forms. 
 Some best practices when localizing adaptive forms are as follows:
 
 * Use adaptive form fragments for common elements across forms and localize fragments. It ensures that you localize a fragment once and it reflects in all forms where the localized fragment is used.
-* Any modifications like adding a new component or applying a script in a localized form are not localized automatically. Therefore, you must finalize a form before localizing it to avoid multiple localization cycles.   
-* Use `afAcceptLang` request parameter to override the browser locale and render the form in the specified locale. For example, the following URL will force to render the form in Japanese locale, irrespective of the locale specified in the browser setting: 
+* Any modifications like adding a new component or applying a script in a localized form are not localized automatically. Therefore, you must finalize a form before localizing it to avoid multiple localization cycles.
+* Use `afAcceptLang` request parameter to override the browser locale and render the form in the specified locale. For example, the following URL will force to render the form in Japanese locale, irrespective of the locale specified in the browser setting:
 
   `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
 
@@ -256,10 +256,10 @@ You can configure an additional instance of AEM Forms server that resides behind
 
 You often need to move your AEM projects from one environment to another. Some of the key things to remember when moving are as follows:
 
-* Take backup of your existing client libraries, custom code, and configurations. 
+* Take backup of your existing client libraries, custom code, and configurations.
 * Deploy product packages and patches manually and in the specified order in the new environment.
-* Deploy project-specific code packages and bundles manually and as a separate package or bundle on the new AEM server. 
-* (*AEM Forms on JEE only*) Deploy LCAs and DSCs manually on Forms Workflow server. 
+* Deploy project-specific code packages and bundles manually and as a separate package or bundle on the new AEM server.
+* (*AEM Forms on JEE only*) Deploy LCAs and DSCs manually on Forms Workflow server.
 * Use [Export-Import](/help/forms/using/import-export-forms-templates.md) functionality to move assets to the new environment. You can also configure the replication agent and publish the assets.
 
 ### Configuring AEM {#configuring-aem}
@@ -269,7 +269,7 @@ Some best practices to configure AEM to improve the overall performance are as f
 * Enable HTML client library compression for JavaScript and CSS from Felix Console. See [Clientlibs explained by example](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
 * Cache all client libraries at `/etc.clientlibs/fd` and any additional custom client libraries on AEM dispatcher to increase the responsiveness and security of your published forms. For more information, see [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-* Do not cache `/content/forms/af/` and `/content/dam/formsanddocuments/*` paths. for detailed information about configuring adaptive forms caching, see [Caching adaptive forms](/help/forms/using/configure-adaptive-forms-cache.md).  
+* Do not cache `/content/forms/af/` and `/content/dam/formsanddocuments/*` paths. for detailed information about configuring adaptive forms caching, see [Caching adaptive forms](/help/forms/using/configure-adaptive-forms-cache.md).
 
 * Enable HTML via web server compression module. For more information, see [Performance tuning of AEM Forms server](/help/forms/using/performance-tuning-aem-forms.md).
 * Increase calls per request configuration for large forms. See [Optimizing performance of large and complex forms](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).

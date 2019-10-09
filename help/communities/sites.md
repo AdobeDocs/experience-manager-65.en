@@ -5,7 +5,7 @@ description: How to access the Site Templates console
 seo-description: How to access the Site Templates console
 uuid: d2f7556e-7e43-424e-82f1-41790aeb2d98
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
@@ -41,13 +41,13 @@ This will bring up the Site Editor panel which contains 3 sub-panels:
 
 On the Basic Info panel, a name, description and whether the template is enabled or disabled are configured:
 
-* **[!UICONTROL Community Site Template Name]** 
+* **[!UICONTROL Community Site Template Name]**
   The template name id
 
-* **[!UICONTROL Community Site Template Description]** 
+* **[!UICONTROL Community Site Template Description]**
   The template description
 
-* **[!UICONTROL Disabled/Enabled]** 
+* **[!UICONTROL Disabled/Enabled]**
   A toggle switch controlling whether the template is referenceable
 
 ### Thumbnail {#thumbnail}

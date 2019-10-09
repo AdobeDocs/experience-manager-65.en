@@ -5,7 +5,7 @@ description: Tagging allows content to be categorized and organized
 seo-description: Tagging allows content to be categorized and organized
 uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
@@ -31,129 +31,129 @@ The following is a list of the bulk editor query parameters:
 >
 >Each parameter can have a long and a short name. For example the long name for the search root path is `rootPath`, the short one is `rp`. If the long name is not defined, the short one is read from the request.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><p> Parameter</p> <p>(long name / short name)<br /> </p> </td> 
-   <td> Type <br /> </td> 
-   <td> Description <br /> </td> 
-  </tr> 
-  <tr> 
-   <td> rootPath / rp<br /> </td> 
-   <td> String </td> 
-   <td> search root path</td> 
-  </tr> 
-  <tr> 
-   <td> queryParams / qp<br /> </td> 
-   <td> String</td> 
-   <td> search query</td> 
-  </tr> 
-  <tr> 
-   <td> contentMode / cm<br /> </td> 
-   <td> Boolean</td> 
-   <td> when true, the content mode is enabled<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> colsValue / cv<br /> </td> 
-   <td> String[]</td> 
-   <td> searched properties (checked values from colsSelection displayed as checkboxes)</td> 
-  </tr> 
-  <tr> 
-   <td> extraCols / ec<br /> </td> 
-   <td> String[]</td> 
-   <td> extra searched properties (displayed in a comma-separated text field)</td> 
-  </tr> 
-  <tr> 
-   <td> initialSearch / is<br /> </td> 
-   <td> Boolean</td> 
-   <td> when true, the query is performed on page load<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> colsSelection / cs<br /> </td> 
-   <td> String[]</td> 
-   <td> searched properties selection (displayed as checkboxes)</td> 
-  </tr> 
-  <tr> 
-   <td> showGridOnly / sgo<br /> </td> 
-   <td> Boolean</td> 
-   <td> when true, shows only the grid and not the search panel <br /> </td> 
-  </tr> 
-  <tr> 
-   <td> searchPanelCollapsed / spc</td> 
-   <td> Boolean</td> 
-   <td> when true, search panel is collapsed on load</td> 
-  </tr> 
-  <tr> 
-   <td> hideRootPath / hrp</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the root path field</td> 
-  </tr> 
-  <tr> 
-   <td> hideQueryParams / hqp</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the query field</td> 
-  </tr> 
-  <tr> 
-   <td> hideContentMode / hcm</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the content mode field</td> 
-  </tr> 
-  <tr> 
-   <td> hideColsSelection / hcs</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the columns selection field</td> 
-  </tr> 
-  <tr> 
-   <td> hideExtraCols / hec</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the extra columns field</td> 
-  </tr> 
-  <tr> 
-   <td> hideSearchButton</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the search button</td> 
-  </tr> 
-  <tr> 
-   <td> hideSaveButton / hsavep</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the save button</td> 
-  </tr> 
-  <tr> 
-   <td> hideExportButton / hexpb</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the export button</td> 
-  </tr> 
-  <tr> 
-   <td> hideImportButton / hib</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the import button</td> 
-  </tr> 
-  <tr> 
-   <td> hideResultNumber / hrn</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the grid search result number text</td> 
-  </tr> 
-  <tr> 
-   <td> hideInsertButton / hinsertb</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the grid insert button</td> 
-  </tr> 
-  <tr> 
-   <td> hideDeleteButton / hdelb</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the grid delete button</td> 
-  </tr> 
-  <tr> 
-   <td> hidePathCol / hpc</td> 
-   <td> Boolean</td> 
-   <td> when true, hides the grid "path" column</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><p> Parameter</p> <p>(long name / short name)<br /> </p> </td>
+   <td> Type <br /> </td>
+   <td> Description <br /> </td>
+  </tr>
+  <tr>
+   <td> rootPath / rp<br /> </td>
+   <td> String </td>
+   <td> search root path</td>
+  </tr>
+  <tr>
+   <td> queryParams / qp<br /> </td>
+   <td> String</td>
+   <td> search query</td>
+  </tr>
+  <tr>
+   <td> contentMode / cm<br /> </td>
+   <td> Boolean</td>
+   <td> when true, the content mode is enabled<br /> </td>
+  </tr>
+  <tr>
+   <td> colsValue / cv<br /> </td>
+   <td> String[]</td>
+   <td> searched properties (checked values from colsSelection displayed as checkboxes)</td>
+  </tr>
+  <tr>
+   <td> extraCols / ec<br /> </td>
+   <td> String[]</td>
+   <td> extra searched properties (displayed in a comma-separated text field)</td>
+  </tr>
+  <tr>
+   <td> initialSearch / is<br /> </td>
+   <td> Boolean</td>
+   <td> when true, the query is performed on page load<br /> </td>
+  </tr>
+  <tr>
+   <td> colsSelection / cs<br /> </td>
+   <td> String[]</td>
+   <td> searched properties selection (displayed as checkboxes)</td>
+  </tr>
+  <tr>
+   <td> showGridOnly / sgo<br /> </td>
+   <td> Boolean</td>
+   <td> when true, shows only the grid and not the search panel <br /> </td>
+  </tr>
+  <tr>
+   <td> searchPanelCollapsed / spc</td>
+   <td> Boolean</td>
+   <td> when true, search panel is collapsed on load</td>
+  </tr>
+  <tr>
+   <td> hideRootPath / hrp</td>
+   <td> Boolean</td>
+   <td> when true, hides the root path field</td>
+  </tr>
+  <tr>
+   <td> hideQueryParams / hqp</td>
+   <td> Boolean</td>
+   <td> when true, hides the query field</td>
+  </tr>
+  <tr>
+   <td> hideContentMode / hcm</td>
+   <td> Boolean</td>
+   <td> when true, hides the content mode field</td>
+  </tr>
+  <tr>
+   <td> hideColsSelection / hcs</td>
+   <td> Boolean</td>
+   <td> when true, hides the columns selection field</td>
+  </tr>
+  <tr>
+   <td> hideExtraCols / hec</td>
+   <td> Boolean</td>
+   <td> when true, hides the extra columns field</td>
+  </tr>
+  <tr>
+   <td> hideSearchButton</td>
+   <td> Boolean</td>
+   <td> when true, hides the search button</td>
+  </tr>
+  <tr>
+   <td> hideSaveButton / hsavep</td>
+   <td> Boolean</td>
+   <td> when true, hides the save button</td>
+  </tr>
+  <tr>
+   <td> hideExportButton / hexpb</td>
+   <td> Boolean</td>
+   <td> when true, hides the export button</td>
+  </tr>
+  <tr>
+   <td> hideImportButton / hib</td>
+   <td> Boolean</td>
+   <td> when true, hides the import button</td>
+  </tr>
+  <tr>
+   <td> hideResultNumber / hrn</td>
+   <td> Boolean</td>
+   <td> when true, hides the grid search result number text</td>
+  </tr>
+  <tr>
+   <td> hideInsertButton / hinsertb</td>
+   <td> Boolean</td>
+   <td> when true, hides the grid insert button</td>
+  </tr>
+  <tr>
+   <td> hideDeleteButton / hdelb</td>
+   <td> Boolean</td>
+   <td> when true, hides the grid delete button</td>
+  </tr>
+  <tr>
+   <td> hidePathCol / hpc</td>
+   <td> Boolean</td>
+   <td> when true, hides the grid "path" column</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Developing a Bulk Editor based Component: the Product List Component {#developing-a-bulk-editor-based-component-the-product-list-component}
@@ -264,187 +264,187 @@ Here is an XML representation of the dialog sub nodes:
 
 Every part of the bulk editor can be configured. The following table lists all the configuration properties for the bulk editor.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Property name</td> 
-   <td>Definition</td> 
-  </tr> 
-  <tr> 
-   <td>rootPath</td> 
-   <td>Search root path</td> 
-  </tr> 
-  <tr> 
-   <td>queryParams</td> 
-   <td>Search query</td> 
-  </tr> 
-  <tr> 
-   <td>contentMode</td> 
-   <td>True to enable content mode: properties are read on jcr:content node and not on search result node</td> 
-  </tr> 
-  <tr> 
-   <td>colsValue</td> 
-   <td>Searched properties (checked values from colsSelection displayed as checkboxes)</td> 
-  </tr> 
-  <tr> 
-   <td>extraCols</td> 
-   <td>Extra searched properties (displayed in a textfield comma separated)</td> 
-  </tr> 
-  <tr> 
-   <td>initialSearch</td> 
-   <td>True to perform query on page load</td> 
-  </tr> 
-  <tr> 
-   <td>colsSelection</td> 
-   <td>Searched properties selection (displayed as checkboxes)</td> 
-  </tr> 
-  <tr> 
-   <td>showGridOnly</td> 
-   <td>True to show only the grid and not the search panel (do not forget to set the initialSearch to true)</td> 
-  </tr> 
-  <tr> 
-   <td>searchPanelCollapsed</td> 
-   <td>True to collapse search panel by default</td> 
-  </tr> 
-  <tr> 
-   <td>hideRootPath</td> 
-   <td>Hide root path field</td> 
-  </tr> 
-  <tr> 
-   <td>hideQueryParams</td> 
-   <td>Hide query field</td> 
-  </tr> 
-  <tr> 
-   <td>hideContentMode</td> 
-   <td>Hide content mode field</td> 
-  </tr> 
-  <tr> 
-   <td>hideColsSelection</td> 
-   <td>Hide cols selection field</td> 
-  </tr> 
-  <tr> 
-   <td>hideExtraCols</td> 
-   <td>Hide extra cols field</td> 
-  </tr> 
-  <tr> 
-   <td>hideSearchButton</td> 
-   <td>Hide search button</td> 
-  </tr> 
-  <tr> 
-   <td>hideSaveButton</td> 
-   <td>Hide save button</td> 
-  </tr> 
-  <tr> 
-   <td>hideExportButton</td> 
-   <td>Hide export button</td> 
-  </tr> 
-  <tr> 
-   <td>hideImportButton</td> 
-   <td>Hide import button</td> 
-  </tr> 
-  <tr> 
-   <td>hideResultNumber</td> 
-   <td>Hide grid search result number text</td> 
-  </tr> 
-  <tr> 
-   <td>hideInsertButton</td> 
-   <td>Hide grid insert button</td> 
-  </tr> 
-  <tr> 
-   <td>hideDeleteButton</td> 
-   <td>Hide grid delete button</td> 
-  </tr> 
-  <tr> 
-   <td>hidePathCol</td> 
-   <td>Hide grid "path" column</td> 
-  </tr> 
-  <tr> 
-   <td>queryURL</td> 
-   <td>Path to query servlet</td> 
-  </tr> 
-  <tr> 
-   <td>exportURL</td> 
-   <td>Path to export servlet</td> 
-  </tr> 
-  <tr> 
-   <td>importURL</td> 
-   <td>Path to import servlet</td> 
-  </tr> 
-  <tr> 
-   <td>insertedResourceType</td> 
-   <td>Resource type added to node when a row is inserted</td> 
-  </tr> 
-  <tr> 
-   <td>saveButton</td> 
-   <td>Save button widget config</td> 
-  </tr> 
-  <tr> 
-   <td>searchButton</td> 
-   <td>Search button widget config</td> 
-  </tr> 
-  <tr> 
-   <td>exportButton</td> 
-   <td>Export button widget config</td> 
-  </tr> 
-  <tr> 
-   <td>importButton</td> 
-   <td>Import button widget config</td> 
-  </tr> 
-  <tr> 
-   <td>searchPanel</td> 
-   <td>Search panel widget config</td> 
-  </tr> 
-  <tr> 
-   <td>grid</td> 
-   <td>Grid widget config</td> 
-  </tr> 
-  <tr> 
-   <td>store</td> 
-   <td>Store config</td> 
-  </tr> 
-  <tr> 
-   <td>colModel</td> 
-   <td>Grid column model config</td> 
-  </tr> 
-  <tr> 
-   <td>rootPathInput</td> 
-   <td>rootPath widget config</td> 
-  </tr> 
-  <tr> 
-   <td>queryParamsInput</td> 
-   <td>queryParams widget config</td> 
-  </tr> 
-  <tr> 
-   <td>contentModeInput</td> 
-   <td>contentMode widget config</td> 
-  </tr> 
-  <tr> 
-   <td>colsSelectionInput</td> 
-   <td>colsSelection widget config</td> 
-  </tr> 
-  <tr> 
-   <td>extraColsInput</td> 
-   <td>extraCols widget config</td> 
-  </tr> 
-  <tr> 
-   <td>colsMetadata</td> 
-   <td>Column metadata config. Possible properties are (applied to all cells of the column): <br /> 
-    <ul> 
-     <li>cellStyle: html style </li> 
-     <li>cellCls: css class </li> 
-     <li>readOnly: true to not being able to change value </li> 
-     <li>checkbox: true to define all cells of the column as checkboxes (true/false values) </li> 
-     <li>forcedPosition: integer value to specify where column must be placed in grid (between 0 and number of colums-1)<p><br /> </p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Property name</td>
+   <td>Definition</td>
+  </tr>
+  <tr>
+   <td>rootPath</td>
+   <td>Search root path</td>
+  </tr>
+  <tr>
+   <td>queryParams</td>
+   <td>Search query</td>
+  </tr>
+  <tr>
+   <td>contentMode</td>
+   <td>True to enable content mode: properties are read on jcr:content node and not on search result node</td>
+  </tr>
+  <tr>
+   <td>colsValue</td>
+   <td>Searched properties (checked values from colsSelection displayed as checkboxes)</td>
+  </tr>
+  <tr>
+   <td>extraCols</td>
+   <td>Extra searched properties (displayed in a textfield comma separated)</td>
+  </tr>
+  <tr>
+   <td>initialSearch</td>
+   <td>True to perform query on page load</td>
+  </tr>
+  <tr>
+   <td>colsSelection</td>
+   <td>Searched properties selection (displayed as checkboxes)</td>
+  </tr>
+  <tr>
+   <td>showGridOnly</td>
+   <td>True to show only the grid and not the search panel (do not forget to set the initialSearch to true)</td>
+  </tr>
+  <tr>
+   <td>searchPanelCollapsed</td>
+   <td>True to collapse search panel by default</td>
+  </tr>
+  <tr>
+   <td>hideRootPath</td>
+   <td>Hide root path field</td>
+  </tr>
+  <tr>
+   <td>hideQueryParams</td>
+   <td>Hide query field</td>
+  </tr>
+  <tr>
+   <td>hideContentMode</td>
+   <td>Hide content mode field</td>
+  </tr>
+  <tr>
+   <td>hideColsSelection</td>
+   <td>Hide cols selection field</td>
+  </tr>
+  <tr>
+   <td>hideExtraCols</td>
+   <td>Hide extra cols field</td>
+  </tr>
+  <tr>
+   <td>hideSearchButton</td>
+   <td>Hide search button</td>
+  </tr>
+  <tr>
+   <td>hideSaveButton</td>
+   <td>Hide save button</td>
+  </tr>
+  <tr>
+   <td>hideExportButton</td>
+   <td>Hide export button</td>
+  </tr>
+  <tr>
+   <td>hideImportButton</td>
+   <td>Hide import button</td>
+  </tr>
+  <tr>
+   <td>hideResultNumber</td>
+   <td>Hide grid search result number text</td>
+  </tr>
+  <tr>
+   <td>hideInsertButton</td>
+   <td>Hide grid insert button</td>
+  </tr>
+  <tr>
+   <td>hideDeleteButton</td>
+   <td>Hide grid delete button</td>
+  </tr>
+  <tr>
+   <td>hidePathCol</td>
+   <td>Hide grid "path" column</td>
+  </tr>
+  <tr>
+   <td>queryURL</td>
+   <td>Path to query servlet</td>
+  </tr>
+  <tr>
+   <td>exportURL</td>
+   <td>Path to export servlet</td>
+  </tr>
+  <tr>
+   <td>importURL</td>
+   <td>Path to import servlet</td>
+  </tr>
+  <tr>
+   <td>insertedResourceType</td>
+   <td>Resource type added to node when a row is inserted</td>
+  </tr>
+  <tr>
+   <td>saveButton</td>
+   <td>Save button widget config</td>
+  </tr>
+  <tr>
+   <td>searchButton</td>
+   <td>Search button widget config</td>
+  </tr>
+  <tr>
+   <td>exportButton</td>
+   <td>Export button widget config</td>
+  </tr>
+  <tr>
+   <td>importButton</td>
+   <td>Import button widget config</td>
+  </tr>
+  <tr>
+   <td>searchPanel</td>
+   <td>Search panel widget config</td>
+  </tr>
+  <tr>
+   <td>grid</td>
+   <td>Grid widget config</td>
+  </tr>
+  <tr>
+   <td>store</td>
+   <td>Store config</td>
+  </tr>
+  <tr>
+   <td>colModel</td>
+   <td>Grid column model config</td>
+  </tr>
+  <tr>
+   <td>rootPathInput</td>
+   <td>rootPath widget config</td>
+  </tr>
+  <tr>
+   <td>queryParamsInput</td>
+   <td>queryParams widget config</td>
+  </tr>
+  <tr>
+   <td>contentModeInput</td>
+   <td>contentMode widget config</td>
+  </tr>
+  <tr>
+   <td>colsSelectionInput</td>
+   <td>colsSelection widget config</td>
+  </tr>
+  <tr>
+   <td>extraColsInput</td>
+   <td>extraCols widget config</td>
+  </tr>
+  <tr>
+   <td>colsMetadata</td>
+   <td>Column metadata config. Possible properties are (applied to all cells of the column): <br />
+    <ul>
+     <li>cellStyle: html style </li>
+     <li>cellCls: css class </li>
+     <li>readOnly: true to not being able to change value </li>
+     <li>checkbox: true to define all cells of the column as checkboxes (true/false values) </li>
+     <li>forcedPosition: integer value to specify where column must be placed in grid (between 0 and number of colums-1)<p><br /> </p> </li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Columns Metadata Configuration {#columns-metadata-configuration}
 
 You can configure for each column:
 
-* display properties: html style, CSS class and read-only  
+* display properties: html style, CSS class and read-only
 
 * a checkbox
 * a forced position
@@ -557,11 +557,11 @@ The Save servlet concept is that the modifications are not directly posted to ea
 
 Each updated property is sent to the servlet in the following format:
 
-* Parameter name: &lt;jcr path&gt;/&lt;property name&gt;  
+* Parameter name: &lt;jcr path&gt;/&lt;property name&gt;
 
-  Example: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku  
+  Example: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
-* Value: &lt;value&gt;  
+* Value: &lt;value&gt;
 
   Example: 12123
 

@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about the out-of-the-box handlers for
 uuid: 436038cb-fb76-4bb5-ae79-5d4043b81dd9
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 ---
@@ -59,7 +59,7 @@ The following lists out-of-the-box app handlers:
 This handler should be added to any AEM Apps ContentSync Config.
 
 * ***type - String - mobilecontentlisting***
-* ***path*** - String - keep empty, must be present to be seen as a valid handler but path is inferred to be the current ContentSync cache. This value is ignored. 
+* ***path*** - String - keep empty, must be present to be seen as a valid handler but path is inferred to be the current ContentSync cache. This value is ignored.
 * ***targetRootDirectory* -** String - the prefix to add to paths as a target root for content update for this handler.
 * ***order - Long* -** Order for ContentSync to excute this handler. This number should be set higher than all other handlers such as 100. It should be run after traditional content handlers.
 
@@ -160,7 +160,7 @@ AEM properties are those that are name-spaced with "cq", "sling" or "jcr". Other
 
 **app-assets** Includes all assets associated with an app instance. This handler will include any assets found under the specified path along with any assets referenced by an app instance's appAssetPath property.
 
-* ***type - String*** - app-assets  
+* ***type - String*** - app-assets
 
 * ***path** - **String*** - path to a location under an app instance where app assets are stored
 
@@ -170,7 +170,7 @@ The mobileappsoffers handler exends the mobileappspages handler and adds the fol
 
 * ***locationRoot - String*** - specify the location of the mobile application
 * ***includePageTypes - String*** - defaults to support cq/personalization/components/teaserpage and cq/personalization/components/offerproxy
-* ***selector - String*** - should be set to tandt 
+* ***selector - String*** - should be set to tandt
 * ***path - String***- the path to the campaign's brand
 
 **mobileappconfig** The mobileappconfig content sync handler provide a way to inject JSON data into the MobileAppsConfig.json. To register a provider class developers will add their MobileAppsInfoProvider class with the list of providers. The handler will iterate over the list of MobileAppsInfoProviders and allow the provider to inject data into the resulting json file. The list of properties which this handler supports are:

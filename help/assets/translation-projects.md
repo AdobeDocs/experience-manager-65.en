@@ -5,7 +5,7 @@ description: Learn how to create translation projects in AEM.
 seo-description: Learn how to create translation projects in AEM.
 uuid: 9d360f6b-584f-4bd1-afb9-cd32aa8db0b9
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 914d1248-aa7c-4191-ade2-7cb19e95cd35
 ---
 
@@ -203,7 +203,7 @@ Run this workflow to translate any additional set of assets and include it in a 
 If you use this option, a translation project is created for the set of assets for which you want to update a language copy.
 
 1. From the Assets UI, select the source folder where you added an asset.
-1. Open the **[!UICONTROL References]** pane, and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies. 
+1. Open the **[!UICONTROL References]** pane, and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Select the check box before **[!UICONTROL Language Copies]**, and then select the target folder corresponding to the appropriate locale.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)

@@ -7,7 +7,7 @@ uuid: 90e7690b-1ce0-4604-b58f-6dca4f2372cf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 ---
 
@@ -20,9 +20,9 @@ If you enable SSO using SPNEGO, add a Kerberos authentication provider with SPNE
 ## Add an authentication provider {#add-an-authentication-provider}
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
-1. Click an existing domain in the list. If you are adding authentication for a new domain, see [Add an enterprise domain](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) or [Add a hybrid domain](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain). 
-1. Click Add Authentication and, in the Authentication Provider list, select a provider, depending on the authentication mechanism your organization uses. 
-1. Provide any additional information required on the page. (See [Authentication settings](configuring-authentication-providers.md#authentication-settings).) 
+1. Click an existing domain in the list. If you are adding authentication for a new domain, see [Add an enterprise domain](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) or [Add a hybrid domain](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
+1. Click Add Authentication and, in the Authentication Provider list, select a provider, depending on the authentication mechanism your organization uses.
+1. Provide any additional information required on the page. (See [Authentication settings](configuring-authentication-providers.md#authentication-settings).)
 1. (Optional) Click Test to test the configuration.
 1. Click OK and then click OK again.
 
@@ -36,8 +36,8 @@ If you enable SSO using SPNEGO, add a Kerberos authentication provider with SPNE
 ## Delete an authentication provider {#delete-an-authentication-provider}
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
-1. Click the appropriate domain in the list. 
-1. Select the check boxes for the authentication providers to delete and click Delete. 
+1. Click the appropriate domain in the list.
+1. Select the check boxes for the authentication providers to delete and click Delete.
 1. Click OK on the confirmation page that appears and click OK again.
 
 ## Authentication settings {#authentication-settings}
@@ -122,7 +122,7 @@ Just-in-time provisioning creates a user in the User Management database automat
 This procedure describes the way traditional authentication works in AEM forms:
 
 1. When a user tries to log in to AEM forms, User Management passes their credentials sequentially to all available authentication providers. (Login credentials include username/password combination, Kerberos ticket, PKCS7 signature, and so on.)
-1. The authentication provider validates the credentials. 
+1. The authentication provider validates the credentials.
 1. The authentication provider then checks whether the user exists in the User Management database. The following statuses are possible:
 
    **Exists** If the user is current and unlocked, User Management returns authentication success. However, if the user is not current or is locked, User Management returns authentication failure.
@@ -131,7 +131,7 @@ This procedure describes the way traditional authentication works in AEM forms:
 
    **Invalid** User Management returns authentication failure.
 
-1. The result returned by the authentication provider is evaluated. If the authentication provider returned authentication success, the user is allowed to log in. Otherwise, User Management checks with the next authentication provider (steps 2-3). 
+1. The result returned by the authentication provider is evaluated. If the authentication provider returned authentication success, the user is allowed to log in. Otherwise, User Management checks with the next authentication provider (steps 2-3).
 1. Authentication failure is returned if no available authentication provider validates the user credentials.
 
 When just-in-time provisioning is enabled, new users are created dynamically in User Management if one of the authentication providers validates their credentials. (After step 3 in the procedure above.)

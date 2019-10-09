@@ -5,7 +5,7 @@ description: Variations allow you to author content for the fragment, then creat
 seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
 uuid: affccda0-be5f-47d2-85b6-8701b77ac932
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
@@ -29,10 +29,10 @@ Perform a range of other actions depending on the data-type being edited; for ex
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
 * Select between [Rich Text](#rich-text), [Plain Text](#plain-text) and [Markdown](#markdown) for editing
 
-* [Upload Content](#uploading-content)  
+* [Upload Content](#uploading-content)
 
 * [View key statistics](#viewing-key-statistics) (about multi-line text)
-* [Summarize Text](#summarizing-text)  
+* [Summarize Text](#summarizing-text)
 
 * [Synchronize variations with Master content](#synchronizing-with-master)
 
@@ -80,12 +80,12 @@ The full-screen editor provides:
 
 The following actions are also available (for all the [formats](#formats)) when the full-screen editor (i.e. multi-line text) is open:
 
-* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))  
-* [Show Text Statistics](#viewing-key-statistics)  
+* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))
+* [Show Text Statistics](#viewing-key-statistics)
 * [Upload content](#uploading-content)
 * [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
 * [Summarize Text](#summarizing-text)
-* [Annotate](content-fragments-variations.md#annotating-a-content-fragment) your text  
+* [Annotate](content-fragments-variations.md#annotating-a-content-fragment) your text
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
 
@@ -106,7 +106,7 @@ Rich text editing allows you to format:
 * Bold
 * Italic
 * Underline
-* Alignment: left, center, right  
+* Alignment: left, center, right
 * Bulleted list
 * Numbered list
 * Indentation: increase, decrease
@@ -160,7 +160,7 @@ You can also open the full-screen editor for further [actions](#actions).
 
 When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. For example:
 
-![cfx-6420-22](assets/cfx-6420-22.png) 
+![cfx-6420-22](assets/cfx-6420-22.png)
 
 ### Uploading Content {#uploading-content}
 
@@ -195,7 +195,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 >
 
 1. Select **[!UICONTROL Master]** or the required variation.
-1. Open the full-screen editor.  
+1. Open the full-screen editor.
 
 1. Select **[!UICONTROL Summarize text]** from the toolbar.
 
@@ -222,7 +222,7 @@ To annotate a fragment:
 
    ![cfm-6420-24](assets/cfm-6420-24.png)
 
-1. A dialog will open. Here you can enter your annotation.  
+1. A dialog will open. Here you can enter your annotation.
 
 1. Close the full-screen editor and **[!UICONTROL Save]** the fragment.
 
@@ -236,7 +236,7 @@ Annotations:
   >
   >A drop-down selector is provided if multiple annotations have been applied to one piece of text.
 
-* When you delete the entire text to which the annotation was applied, the annotation is deleted as well.  
+* When you delete the entire text to which the annotation was applied, the annotation is deleted as well.
 
 * Can be listed, and deleted, by selecting the **[!UICONTROL Annotations]** tab in the fragment editor.
 
@@ -306,7 +306,7 @@ You can make changes to the variation content after either:
 * [Creating your variation](#creating-a-variation).
 * Opening an existing fragment, then selecting the required variation from the side panel.
 
-![cfm-6420-26](assets/cfm-6420-26.png) 
+![cfm-6420-26](assets/cfm-6420-26.png)
 
 ### Renaming a Variation {#renaming-a-variation}
 
@@ -357,7 +357,7 @@ When editing a variation you have access to the action for synchronizing the cur
 1. Open your content fragment in the fragment editor. Ensure that the **Master** has been edited.
 2. Select a specific variation, then the appropriate synchronization action from either:
 
-    * the **Actions** drop down selector - **Select current element with master** 
+    * the **Actions** drop down selector - **Select current element with master**
     * the toolbar of the full-screen editor - **Sync with master**
 
 3. Master and the variation will be shown side-by-side:

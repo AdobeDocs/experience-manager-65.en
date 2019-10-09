@@ -4,7 +4,7 @@ seo-title: Catalog Producer
 seo-description: Learn how to use Catalog Producer in AEM Assets to generate product catalogs using your digital assets.
 uuid: da822d83-8b99-4089-ae1b-11d897d4044e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
@@ -83,7 +83,7 @@ Catalog Producer uses product information management (PIM) data to map product p
    >
    >To change the metadata for a referenced product, navigate to the Products console (**AEM Logo** &gt; **Commerce** &gt; **Products**), and select the product. Then, click/tap the **View Properties** icon from the toolbar and edit the metadata in the Properties page of the asset.
 
-1. To rearrange the pages in catalog, tap/click the **Create** icon from the toolbar and then choose **Merge** from the menu. In the wizard, the carousel on top allows you to reorder pages by dragging them. You can also remove pages.  
+1. To rearrange the pages in catalog, tap/click the **Create** icon from the toolbar and then choose **Merge** from the menu. In the wizard, the carousel on top allows you to reorder pages by dragging them. You can also remove pages.
 
 1. Tap/click **Next**. To add an existing InDesign file as a cover page, tap/click **Browse** beside the **Choose Cover Page** box, and specify the path for the cover page template.
 1. Tap/click **Save**, and then tap/click **Done** to close the confirmation dialog.

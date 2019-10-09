@@ -7,7 +7,7 @@ uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 ---
 
@@ -33,8 +33,8 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
 1. If you click Configure, the Configure Endpoints page appears, where you can make any changes that you require:
 
-    * To rename an endpoint or edit its description, click it. 
-    * To add a Task Manager endpoint, click Add TaskManager. For details about the Task Manager settings, see [Configuring Task Manager endpoints](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints). 
+    * To rename an endpoint or edit its description, click it.
+    * To add a Task Manager endpoint, click Add TaskManager. For details about the Task Manager settings, see [Configuring Task Manager endpoints](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
     * To add a Watched Folder endpoint, click Add WatchedFolder. For details about the Watched Folder settings, see [Watched folder endpoint settings](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
     * To add an Email endpoint, click Add Email. For details about the Email settings, see [Email endpoint settings](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
     * To add an EJB endpoint, click Add EJB and specify a name and description for the endpoint.
@@ -44,7 +44,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
     * To remove an endpoint, select the checkbox next to it and click Remove.
 
 1. Click Next.
-1. If a process or service in the LCA has configuration parameters, a Configure Parameters page appears, where you configure the service parameters and click Next. 
+1. If a process or service in the LCA has configuration parameters, a Configure Parameters page appears, where you configure the service parameters and click Next.
 1. On the Configure Security Profile page, make any changes that you require:
 
     * **Require callers to authenticate:** This setting indicates whether the service can be invoked with or without credentials.
@@ -52,7 +52,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
       If *Callers are currently required to authenticate* is displayed, the caller of the service must be authenticated and the user principal for that caller must be authorized to invoke the service; otherwise, the invocation attempt will be refused. To remove the need to authenticate, click Allow Unauthenticated Callers.
 
       If *Callers are not required to authenticate* is displayed, the caller of the service need not be authenticated. The invocation of the service will always succeed because there is no authorization check. To require authentication, click Require Callers to Authenticate.
-    
+
     * **Run As:** Specifies run-time identity used by a service after it has been invoked. To change this option, click Change. Choose from the following options:
 
       **Unspecified:** The default behavior is used.
@@ -61,8 +61,8 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
       **System:** Runs the service with full privileges. This is the default setting for long-lived processes.
 
-      **Named User:** Enables you to run the service as a specific user. This is the default setting for short-lived processes. When you select this option, click Select User to display the Select Principal page, where you can search for and select the user. 
-    
+      **Named User:** Enables you to run the service as a specific user. This is the default setting for short-lived processes. When you select this option, click Select User to display the Select Principal page, where you can search for and select the user.
+
     * To add a principal to the security profile, click Add Principal and select the user or group to add as a principal. Click Next and then select the permissions you want to assign to this principal:
 
       **INVOKE_PERM:** To invoke all operations on the service
@@ -100,8 +100,8 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 1. Click Configure next to the archive file to configure.
 1. The Configure Endpoints page appears, where you can make any changes that you require:
 
-    * To rename an endpoint or edit its description, click it. 
-    * To add a Task Manager endpoint, click Add TaskManager. For details about the Task Manager settings, see [Configuring Task Manager endpoints](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints). 
+    * To rename an endpoint or edit its description, click it.
+    * To add a Task Manager endpoint, click Add TaskManager. For details about the Task Manager settings, see [Configuring Task Manager endpoints](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
     * To add a Watched Folder endpoint, click Add WatchedFolder. For details about the Watched Folder settings, see [Watched folder endpoint settings](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
     * To add an Email endpoint, click Add Email. For details about the Email settings, see [Email endpoint settings](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
     * To add an EJB endpoint, click Add EJB and specify a name and description for the endpoint.
@@ -111,7 +111,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
     * To remove an endpoint, select the checkbox next to it and click Remove.
 
 1. Click Next.
-1. If a process or service in the LCA has configuration parameters, a Configure Parameters page appears, where you configure the service parameters and click Next. 
+1. If a process or service in the LCA has configuration parameters, a Configure Parameters page appears, where you configure the service parameters and click Next.
 1. On the Configure Security Profile page, you can make any changes that you require:
 
     * **Require callers to authenticate:** This setting indicates whether the service can be invoked with or without credentials.
@@ -119,7 +119,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
       If *Callers are currently required to authenticate* is displayed, the caller of the service must be authenticated and the user principal for that caller must be authorized to invoke the service; otherwise, the invocation attempt will be refused. To remove the need to authenticate, click Allow Unauthenticated Callers.
 
       If *Callers are not required to authenticate* is displayed, the caller of the service may or may not be authenticated. The invocation of the service will always succeed because there is no authorization check. To require authentication, click Require Callers to Authenticate.
-    
+
     * **Run As:** Specifies run-time identity used by a service after it has been invoked. To change this option, click Change. Choose from the following options:
 
       **Unspecified:** The default behavior is used.
@@ -128,8 +128,8 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
       **System:** Runs the service with full privileges. This is the default setting for long-lived processes.
 
-      **Named User:** Enables you to run the service as a specific user. This is the default setting for short-lived processes. When you select this option, click Select User to display the Select Principal page, where you can search for and select the user. 
-    
+      **Named User:** Enables you to run the service as a specific user. This is the default setting for short-lived processes. When you select this option, click Select User to display the Select Principal page, where you can search for and select the user.
+
     * To add a principal to the security profile, click Add Principal and select the user or group to add as a principal. Click Next and then select the permissions you want to assign to this principal:
 
       **INVOKE_PERM:** To invoke all operations on the service

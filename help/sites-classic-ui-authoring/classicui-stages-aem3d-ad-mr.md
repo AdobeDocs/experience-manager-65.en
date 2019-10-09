@@ -5,7 +5,7 @@ description: Learn how to set up a standard stage with Autodesk Maya and Mental 
 seo-description: Learn how to set up a standard stage with Autodesk Maya and Mental Ray.
 uuid: 05c4858b-6261-4de3-a87a-03dd6bc519a4
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
@@ -39,15 +39,15 @@ discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
     * **[!UICONTROL Common]** tab
 
       Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all [!UICONTROL Renderable Cameras].
-  
+
     * **[!UICONTROL Quality]** tab
 
         * **[!UICONTROL Overall quality]** `- 0.5` or less
         * **[!UICONTROL Indirect Diffuse (GI) Mode]** - `Final Gather`
         * **[!UICONTROL Filter Size]** - `2.0`, `2.0`
 
-    * Render the scene at the typical image sizes that you expect to use. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want. 
-  
+    * Render the scene at the typical image sizes that you expect to use. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
+
       Be aware that rendering with Mental Ray, using image-based lighting, is very slow and CPU-intensive. Adobe recommends that you configure the lowest quality settings that are still capable of producing the desired render quality.
 
 1. Remove the reference that you created in step 2.

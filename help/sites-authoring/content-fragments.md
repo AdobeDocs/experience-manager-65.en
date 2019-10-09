@@ -5,7 +5,7 @@ description: AEM Content Fragments allow you to design, create, curate, and use 
 seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 uuid: 66ccdff8-1658-4374-8562-97f81f434488
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
@@ -28,7 +28,7 @@ Together with the updated JSON exporter, structured content fragments can also b
 >**Content Fragments** and **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
 >
 >* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
->* **Experience Fragments** are fully laid out content; a fragment of a web page.  
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 
@@ -64,9 +64,9 @@ The content fragments enable:
 
 ## Adding a Content Fragment to Your Page {#adding-a-content-fragment-to-your-page}
 
-1. Open your page for editing.  
+1. Open your page for editing.
 
-1. Add the **[!UICONTROL Content Fragment]** component; from either the **[!UICONTROL Components]** browser or **[!UICONTROL Insert New Component]**.  
+1. Add the **[!UICONTROL Content Fragment]** component; from either the **[!UICONTROL Components]** browser or **[!UICONTROL Insert New Component]**.
 
 1. You can either:
 
@@ -100,7 +100,7 @@ In the appropriate configuration dialog you can select the available parameters,
 
 * **[!UICONTROL Display Mode]**:
 
-    * **[!UICONTROL Single Text Element]** 
+    * **[!UICONTROL Single Text Element]**
     * **[!UICONTROL Multiple Element]**
 
 * **[!UICONTROL Element]**
@@ -162,10 +162,10 @@ For in-between content you can:
 >
 >After you have added in-between content to a content fragment on your page, then changing the structure of the underlying content fragment (i.e. in the content fragment editor) could lead to erroneous/unexpected results.
 >
->When this occurs the in-between content is kept as is: 
+>When this occurs the in-between content is kept as is:
 >
->* In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.  
->  This can make it appear as if the relative positioning has changed, as in-between paragraphs have no contextual relationship to the (fragment) paragraphs they are positioned next to. 
+>* In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.
+>  This can make it appear as if the relative positioning has changed, as in-between paragraphs have no contextual relationship to the (fragment) paragraphs they are positioned next to.
 >* Unless the two paragraph structures conflict; in such a case, the in-between content is not displayed (although it is still present internally).
 >
 
@@ -185,7 +185,7 @@ Once you have added a fragment with associated content to your page a new tab (*
 
 From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component will be created):
 
-![cfm-6420-03](assets/cfm-6420-03.png) 
+![cfm-6420-03](assets/cfm-6420-03.png)
 
 ## Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 

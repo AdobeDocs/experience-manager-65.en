@@ -5,7 +5,7 @@ description: Use Mobile Device Management (MDM) for the large-scale deployment o
 seo-description: Use Mobile Device Management (MDM) for the large-scale deployment of apps on mobile devices.
 uuid: 8a2ce42b-5e9b-42c1-a945-c069f6152f6e
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 ---
@@ -20,9 +20,9 @@ Mobile Device Management (MDM) enables the large-scale deployment of apps on mob
 
 ## Main features generally provided by MDM solutions: {#main-features-generally-provided-by-mdm-solutions}
 
-* Enable device enrollment in your enterprise environment  
-* Allow the configuring and updating device settings  
-* Enforce security compliance.  
+* Enable device enrollment in your enterprise environment
+* Allow the configuring and updating device settings
+* Enforce security compliance.
 * Secure mobile access to corporate resources
 
 An MDM solution along with Mobile Application Management, allows you to manage internal, public, and purchased apps across the mobile devices in your enterprise.

@@ -5,7 +5,7 @@ description: You can create email content in AEM and process it in Adobe Campaig
 seo-description: You can create email content in AEM and process it in Adobe Campaign emails
 uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
@@ -15,7 +15,7 @@ discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 
 You can create email content in AEM and process it in Adobe Campaign emails. To do that, you must:
 
-1. Create a new newsletter in AEM from an Adobe Campaign-specific template.  
+1. Create a new newsletter in AEM from an Adobe Campaign-specific template.
 1. Select [an Adobe Campaign service](#selecting-the-adobe-campaign-cloud-service-and-template) before editing the content to access all the functionality.
 1. Edit the content.
 1. Validate the content.
@@ -45,7 +45,7 @@ Detailed instructions are described in this document.
 
 >[!NOTE]
 >
->When adding email templates, be sure to add them under **/content/campaigns** to make them available. 
+>When adding email templates, be sure to add them under **/content/campaigns** to make them available.
 >
 
 #### Creating new email content {#creating-new-email-content-1}
@@ -61,7 +61,7 @@ Detailed instructions are described in this document.
 1. Select **Create** then **Create Page**.
 1. Select one of the available templates specific to which Adobe Campaign you are connecting to, then click **Next**. Three templates are available by default:
 
-    * **Adobe Campaign Classic Email**: lets you add content to a predefined template (two columns) before sending it to Adobe Campaign Classic for delivery. 
+    * **Adobe Campaign Classic Email**: lets you add content to a predefined template (two columns) before sending it to Adobe Campaign Classic for delivery.
     * **Adobe Campaign Standard Email**: lets you add content to a predefined template (two columns) before sending it to Adobe Campaign Standard for delivery.
 
 1. Fill in the **Title** and optionally the **Description** and click **Create**. The title is used as the subject of the newsletter/email unless you overwrite it while editing the email.
@@ -128,7 +128,7 @@ To edit email content:
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Open the components panel on left side of screen and select **Adobe Campaign Newsletter** from the drop-down menu to find those components. 
+1. Open the components panel on left side of screen and select **Adobe Campaign Newsletter** from the drop-down menu to find those components.
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -161,7 +161,7 @@ To insert personalization:
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
-1. Open the component by clicking the Pencil icon. The inplace editor opens. 
+1. Open the component by clicking the Pencil icon. The inplace editor opens.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
@@ -310,7 +310,7 @@ Adobe Campaign allows you to recover and synchronize content created in AEM with
 * A Message Center delivery
 * A delivery template
 
-In AEM, if a newsletter is linked to a single delivery, the delivery code displays on the page. 
+In AEM, if a newsletter is linked to a single delivery, the delivery code displays on the page.
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 

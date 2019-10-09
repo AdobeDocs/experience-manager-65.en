@@ -5,7 +5,7 @@ description: Update AEM Forms app settings such as the Home screen and fetch Sta
 seo-description: Update AEM Forms app settings such as the Home screen and fetch Startpoints and attachments options
 uuid: 234cd2da-2b47-4d60-82ed-68363d782632
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 ---
@@ -41,7 +41,7 @@ You can make the following changes to the settings of your app.
 
 * **Offline mode**: To enable or disable the offline service for AEM Forms app. See [Working in the offline mode](/help/forms/using/work-offline-mode.md) for details.
 
-* **Landing screen**: To set the start location ([Home screen](/help/forms/using/home-screen.md)) for the app. 
+* **Landing screen**: To set the start location ([Home screen](/help/forms/using/home-screen.md)) for the app.
 
   Available options:
 

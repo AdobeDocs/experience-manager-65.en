@@ -5,7 +5,7 @@ description: Learn how to integrate AEM with ExactTarget.
 seo-description: Learn how to integrate AEM with ExactTarget.
 uuid: dafa0a1a-2d1e-40fc-a729-f2ce7ebc7807
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d1cff2bb-9fdf-49cb-a695-d437bba5653d
@@ -46,7 +46,7 @@ To create an ExactTarget configuration in Cloud Services:
 
 1. Select an account, if available. The account is for Enterprise 2.0 customers. Click **OK**.
 
-   ExactTarget has been configured. You can edit the configuration by clicking **Edit**. You can go to ExactTarget by clicking **Go to ExactTarget**. 
+   ExactTarget has been configured. You can edit the configuration by clicking **Edit**. You can go to ExactTarget by clicking **Go to ExactTarget**.
 
 1. AEM now provides a Data Extension feature. You can import ExactTarget data extension columns. This can be configured by clicking "+" sign appearing besides successfully created ExactTarget configuration. Any of the existing data extension can be selected from the drop-down list. For more information on how to configure data extensions, refer [ExactTarget documentation](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
 

@@ -5,7 +5,7 @@ description: Learn how to work with image sets in dynamic media
 seo-description: Learn how to work with image sets in dynamic media
 uuid: 16008278-f59f-4fa8-90e9-19c78f132439
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
@@ -15,7 +15,7 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 
 Image Sets give users an integrated viewing experience, where users can see different views of an item by clicking a thumbnail image. Image Sets let you present alternative views of an item and the viewer offers zooming tools for examining images closely.
 
-Image Sets are designated by a banner with the word **[!UICONTROL IMAGESET]**. In addition, if the Image Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays. 
+Image Sets are designated by a banner with the word **[!UICONTROL IMAGESET]**. In addition, if the Image Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
 ![chlimage_1-339](assets/chlimage_1-339.png)
 
@@ -43,8 +43,8 @@ To get you up and running quickly:
 
    To create an Image Set in Assets, tap **[!UICONTROL Create > Image Sets]**. Then, add images and tap **[!UICONTROL Save]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). 
-   
+   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+
    **Important** &mdash; Batch sets are created by the IPS (Image Production System) as part of asset ingestion and are available only in Dynamic Media - Scene7 mode.
 
    See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
@@ -57,7 +57,7 @@ To get you up and running quickly:
 
    See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
 
-1. (Optional) [Viewing Image Sets](image-sets.md#viewing-image-sets) that were created using batch set presets. 
+1. (Optional) [Viewing Image Sets](image-sets.md#viewing-image-sets) that were created using batch set presets.
 1. [Preview Image Sets.](previewing-assets.md)
 
    Select the Image Set and you can preview it. Tap the thumbnail icons to examine your Image Set in the selected Viewer. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
@@ -172,7 +172,7 @@ However, sets created using batch set presets, do *not* appear in the user inter
 
   ![chlimage_1-343](assets/chlimage_1-343.png)
 
-* From a member image of any set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of. 
+* From a member image of any set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
   ![chlimage_1-344](assets/chlimage_1-344.png)
 

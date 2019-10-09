@@ -5,7 +5,7 @@ description: Adding the Reviews and Reviews Summary components to a page
 seo-description: Adding the Reviews and Reviews Summary components to a page
 uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
@@ -41,7 +41,7 @@ Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of rat
 
 ![chlimage_1-342](assets/chlimage_1-342.png)
 
-* **[!UICONTROL Allowed Ratings]** 
+* **[!UICONTROL Allowed Ratings]**
 
   A list of ratings from which a member can choose.
 
@@ -55,7 +55,7 @@ On the website, required ratings are marked with an asterisk. If an item is requ
 
 ![chlimage_1-343](assets/chlimage_1-343.png)
 
-* **[!UICONTROL Required Ratings]** 
+* **[!UICONTROL Required Ratings]**
 
   A subset of allowed ratings, indicating which ratings are required.
 
@@ -71,59 +71,59 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 ![chlimage_1-344](assets/chlimage_1-344.png)
 
-* **[!UICONTROL Allow Replies]** 
+* **[!UICONTROL Allow Replies]**
   If checked, allow replies to reviews. Default is unchecked.
 
-* **[!UICONTROL Closed]** 
+* **[!UICONTROL Closed]**
   If checked, the review is closed to new reviews and replies. Default is unchecked.
 
-* **[!UICONTROL Allow File Uploads]** 
+* **[!UICONTROL Allow File Uploads]**
   If checked, allow file attachments to be uploaded for the review. Default is unchecked.
 
-* **[!UICONTROL ]Max File Size** 
+* **[!UICONTROL ]Max File Size**
   Relevant only if **[!UICONTROL Allow File Uploads]** is checked. This field limits the size (in bytes) of an uploaded file. Default is 10 MB.
 
-* **[!UICONTROL Max Message Length]** 
+* **[!UICONTROL Max Message Length]**
   Maximum number of characters that may be entered into the text box. Default is 4096 characters.
 
-* **[!UICONTROL Allowed File Types]** 
+* **[!UICONTROL Allowed File Types]**
   Relevant only if **[!UICONTROL Allow File Uploads]** is checked. A comma separated list of file extensions with the "dot" separater. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed. Default is none specified such that all file types are allowed.
 
-* **[!UICONTROL Rich Text Editor]** 
+* **[!UICONTROL Rich Text Editor]**
   If checked, posts may be entered with markup. Default is unchecked.
 
-* **[!UICONTROL Allow Voting]** 
+* **[!UICONTROL Allow Voting]**
   If checked, include the Voting feature for a topic. Default is unchecked.
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews are managed. For more information, see [Moderating User Generated Content](moderate-ugc.md).
 
 ![chlimage_1-345](assets/chlimage_1-345.png)
 
-* **[!UICONTROL Pre-Moderation]** 
+* **[!UICONTROL Pre-Moderation]**
   If checked, reviews must be approved before they will appear on a publish site. Default is unchecked.
 
-* **[!UICONTROL Delete Reviews]** 
+* **[!UICONTROL Delete Reviews]**
   If checked, the member who posted the review is provided the ability to delete it. Default is unchecked.
 
-* **[!UICONTROL Deny Reviews]** 
+* **[!UICONTROL Deny Reviews]**
   If checked, allow moderators to deny reviews. Default is unchecked.
 
-* **[!UICONTROL Close / Reopen Reviews]** 
+* **[!UICONTROL Close / Reopen Reviews]**
   If checked, allow moderators to close and reopen reviews. Default is unchecked.
 
-* **[!UICONTROL Flag Reviews]** 
+* **[!UICONTROL Flag Reviews]**
   If checked, allow members to flag reviews as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Flag Reason List]** 
+* **[!UICONTROL Flag Reason List]**
   If checked, allow members to choose, from a drop-down list, their reason for flagging a review as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Custom Flag Reason]** 
+* **[!UICONTROL Custom Flag Reason]**
   If checked, allow members to enter their own reason for flagging a review as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Moderation Threshold]** 
+* **[!UICONTROL Moderation Threshold]**
   Enter the number of times a review has to be flagged by members before moderators are notified. Default is one time (1).
 
-* **[!UICONTROL Flagging Limit]** 
+* **[!UICONTROL Flagging Limit]**
   Enter the number of times a review has to be flagged before it is hidden from public view. This number must be greater than or equal to the **[!UICONTROL Moderation Threshold]**. Default is 5.
 
 ### Adding a Review Summary (Display) to a Page {#adding-a-review-summary-display-to-a-page}
@@ -176,19 +176,19 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
 ![chlimage_1-349](assets/chlimage_1-349.png)
 
-* **[!UICONTROL Comment Resource Type]** 
+* **[!UICONTROL Comment Resource Type]**
 
   Navigate to the resourceType of an extended `comment`component (single comment) in /apps. For example, `/apps/social/commons/components/hbs/comments/comment`
 
   This resource will identify the resourceType of the UGC created when a visitor posts a comment.
 
-* **[!UICONTROL Voting Resource Type]** 
+* **[!UICONTROL Voting Resource Type]**
 
   Navigate to the resourceType of an extended `voting`component in /apps. For example, `/apps/social/components/hbs/voting`
 
   This resource will identify the resource type of the UGC created when a visitor posts a vote.
 
-* **[!UICONTROL Comment System Resource Type]** 
+* **[!UICONTROL Comment System Resource Type]**
 
   Navigate to the resourceType of an extended `comments`component (Comment System) in /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](handlebars-helpers.md#include)
 

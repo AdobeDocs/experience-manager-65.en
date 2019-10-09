@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
@@ -33,29 +33,29 @@ The class also provides several methods for intervening in workflow lifecycles.
 
 The following table provides links to the reference documentation of several key Java objects to use when interacting programmatically with workflows. The examples that follow demonstrate how to obtain and use the class objects in code.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Features<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"></a></th> 
-   <th>Objects<br /> </th> 
-  </tr> 
-  <tr> 
-   <td>Accessing a workflow<br /> </td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html"><code>WorkflowSession</code></a><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Executing and querying a workflow instance<br /> </td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html"><code>Workflow</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html"><code>WorkItem</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html"><code>WorkflowData</code></a><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Managing a workflow model<br /> </td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html"><code>WorkflowModel</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html"><code>WorkflowNode</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html"><code>WorkflowTransition</code></a><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Information for a node that is in the workflow (or not) </td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"><code>WorkflowStatus</code></a></td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Features<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"></a></th>
+   <th>Objects<br /> </th>
+  </tr>
+  <tr>
+   <td>Accessing a workflow<br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html"><code>WorkflowSession</code></a><br /> </td>
+  </tr>
+  <tr>
+   <td>Executing and querying a workflow instance<br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html"><code>Workflow</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html"><code>WorkItem</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html"><code>WorkflowData</code></a><br /> </td>
+  </tr>
+  <tr>
+   <td>Managing a workflow model<br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html"><code>WorkflowModel</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html"><code>WorkflowNode</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html"><code>WorkflowTransition</code></a><br /> </td>
+  </tr>
+  <tr>
+   <td>Information for a node that is in the workflow (or not) </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"><code>WorkflowStatus</code></a></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Obtaining Workflow Objects in ECMA Scripts {#obtaining-workflow-objects-in-ecma-scripts}
@@ -99,21 +99,21 @@ The following HTTP request methods apply to:
 
 `http://localhost:4502/etc/workflow/instances`
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>HTTP request method</td> 
-   <td>Actions</td> 
-  </tr> 
-  <tr> 
-   <td><code>GET</code></td> 
-   <td>Lists the available workflow instances.</td> 
-  </tr> 
-  <tr> 
-   <td><code>POST</code></td> 
-   <td><p>Creates a new workflow instance. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example <code>JCR_PATH</code> or URL).<br /> The payload is sent as parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>HTTP request method</td>
+   <td>Actions</td>
+  </tr>
+  <tr>
+   <td><code>GET</code></td>
+   <td>Lists the available workflow instances.</td>
+  </tr>
+  <tr>
+   <td><code>POST</code></td>
+   <td><p>Creates a new workflow instance. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example <code>JCR_PATH</code> or URL).<br /> The payload is sent as parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Managing a Workflow Instance by its State {#managing-a-workflow-instance-by-its-state}
@@ -132,21 +132,21 @@ The following HTTP request methods apply to:
 
 `http://localhost:4502/etc/workflow/instances/{id}`
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>HTTP request method</td> 
-   <td>Actions</td> 
-  </tr> 
-  <tr> 
-   <td><code>GET</code></td> 
-   <td>Gets the instances data (definition and metadata) including the link to the respective workflow model.</td> 
-  </tr> 
-  <tr> 
-   <td><code>POST</code></td> 
-   <td>Changes the state of the instance. The new state is sent as the parameter <code>state</code> and must have one of the following values: <code>RUNNING</code>, <code>SUSPENDED</code>, or <code>ABORTED</code>.<br /> If the new state is not reachable (for example when suspending a terminated instance) a <code>409</code> (<code>CONFLICT</code>) response is sent back to the client.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>HTTP request method</td>
+   <td>Actions</td>
+  </tr>
+  <tr>
+   <td><code>GET</code></td>
+   <td>Gets the instances data (definition and metadata) including the link to the respective workflow model.</td>
+  </tr>
+  <tr>
+   <td><code>POST</code></td>
+   <td>Changes the state of the instance. The new state is sent as the parameter <code>state</code> and must have one of the following values: <code>RUNNING</code>, <code>SUSPENDED</code>, or <code>ABORTED</code>.<br /> If the new state is not reachable (for example when suspending a terminated instance) a <code>409</code> (<code>CONFLICT</code>) response is sent back to the client.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Managing Workflow Models {#managing-workflow-models}
@@ -155,21 +155,21 @@ The following HTTP request methods apply to:
 
 `http://localhost:4502/etc/workflow/models`
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>HTTP request method</td> 
-   <td>Actions</td> 
-  </tr> 
-  <tr> 
-   <td><code>GET</code></td> 
-   <td>Lists the available workflow models.</td> 
-  </tr> 
-  <tr> 
-   <td><code>POST</code></td> 
-   <td>Creates a new workflow model. If the parameter <code>title</code> is sent, a new model is created with the specified title. Attaching a JSON model definition as parameter <code>model</code> creates a new workflow model according to the provided definition.<br /> A <code>201</code> response (<code>CREATED</code>) is sent back with a location header containing the URL of the new workflow model resource.<br /> The same happens when a model definition is attached as a file parameter called <code>modelfile</code>.<br /> In both the cases of the <code>model</code> and <code>modelfile</code> parameters, an additional parameter called <code>type</code> is required to define the serialization format. New serialization formats can be integrated using the OSGI API. A standard JSON serializer is delivered with the workflow engine. Its type is JSON. See below for an example of the format.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>HTTP request method</td>
+   <td>Actions</td>
+  </tr>
+  <tr>
+   <td><code>GET</code></td>
+   <td>Lists the available workflow models.</td>
+  </tr>
+  <tr>
+   <td><code>POST</code></td>
+   <td>Creates a new workflow model. If the parameter <code>title</code> is sent, a new model is created with the specified title. Attaching a JSON model definition as parameter <code>model</code> creates a new workflow model according to the provided definition.<br /> A <code>201</code> response (<code>CREATED</code>) is sent back with a location header containing the URL of the new workflow model resource.<br /> The same happens when a model definition is attached as a file parameter called <code>modelfile</code>.<br /> In both the cases of the <code>model</code> and <code>modelfile</code> parameters, an additional parameter called <code>type</code> is required to define the serialization format. New serialization formats can be integrated using the OSGI API. A standard JSON serializer is delivered with the workflow engine. Its type is JSON. See below for an example of the format.</td>
+  </tr>
+ </tbody>
 </table>
 
 Example: in the browser, a request to `http://localhost:4502/etc/workflow/models.json` generates a json response similar to the following:
@@ -240,29 +240,29 @@ The following HTTP request methods apply to:
 
 Where `*{uri}*` is the path to the model node in the repository.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>HTTP request method</td> 
-   <td>Actions</td> 
-  </tr> 
-  <tr> 
-   <td><code>GET</code></td> 
-   <td>Gets the <code>HEAD</code> version of the model (definition and metadata).</td> 
-  </tr> 
-  <tr> 
-   <td><code>PUT</code></td> 
-   <td>Updates the <code>HEAD</code> version of the model (creates a new version).<br /> The complete model definition for the new version of the model must be added as a parameter called <code>model</code>. Additionally a <code>type</code> parameter is needed as when creating new models and needs to have the value <code>JSON</code>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>POST</code></td> 
-   <td>Same behaviour as with PUT. Needed because AEM widgets do not support <code>PUT</code> operations.</td> 
-  </tr> 
-  <tr> 
-   <td><code>DELETE</code></td> 
-   <td>Deletes the model. In order to solve firewall/proxy issues a <code>POST</code> that contains an <code>X-HTTP-Method-Override</code> header entry with value <code>DELETE</code> will also be accepted as <code>DELETE</code> request.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>HTTP request method</td>
+   <td>Actions</td>
+  </tr>
+  <tr>
+   <td><code>GET</code></td>
+   <td>Gets the <code>HEAD</code> version of the model (definition and metadata).</td>
+  </tr>
+  <tr>
+   <td><code>PUT</code></td>
+   <td>Updates the <code>HEAD</code> version of the model (creates a new version).<br /> The complete model definition for the new version of the model must be added as a parameter called <code>model</code>. Additionally a <code>type</code> parameter is needed as when creating new models and needs to have the value <code>JSON</code>.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>POST</code></td>
+   <td>Same behaviour as with PUT. Needed because AEM widgets do not support <code>PUT</code> operations.</td>
+  </tr>
+  <tr>
+   <td><code>DELETE</code></td>
+   <td>Deletes the model. In order to solve firewall/proxy issues a <code>POST</code> that contains an <code>X-HTTP-Method-Override</code> header entry with value <code>DELETE</code> will also be accepted as <code>DELETE</code> request.</td>
+  </tr>
+ </tbody>
 </table>
 
 Example: in the browser, a request to `http://localhost:4502/var/workflow/models/publish_example.json` returns a `json` response that is similar to the following code:
@@ -273,7 +273,7 @@ Example: in the browser, a request to `http://localhost:4502/var/workflow/models
   "title":"Publish Example",
   "version":"1.0",
   "description":"This example shows a simple review and publish process.",
-  "metaData": 
+  "metaData":
   {
     "multiResourceSupport":"true",
     "tags":"wcm,publish"
@@ -359,21 +359,21 @@ The following HTTP request methods apply to:
 
 `http://localhost:4502/bin/workflow/inbox`
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>HTTP request method</td> 
-   <td>Actions</td> 
-  </tr> 
-  <tr> 
-   <td><code>GET</code></td> 
-   <td>Lists the work items that are in the inbox of the user, who is identified by the HTTP authentication headers.</td> 
-  </tr> 
-  <tr> 
-   <td><code>POST</code></td> 
-   <td>Completes the work item whose URI is sent as the parameter <code>item</code> and advances the according workflow instance to the next node(s), that is defined by the parameter <code>route</code> or <code>backroute</code> in case of going a step back.<br /> If the parameter <code>delegatee</code> is sent, the work item identified by the parameter <code>item</code> is delegated to the specified participant.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>HTTP request method</td>
+   <td>Actions</td>
+  </tr>
+  <tr>
+   <td><code>GET</code></td>
+   <td>Lists the work items that are in the inbox of the user, who is identified by the HTTP authentication headers.</td>
+  </tr>
+  <tr>
+   <td><code>POST</code></td>
+   <td>Completes the work item whose URI is sent as the parameter <code>item</code> and advances the according workflow instance to the next node(s), that is defined by the parameter <code>route</code> or <code>backroute</code> in case of going a step back.<br /> If the parameter <code>delegatee</code> is sent, the work item identified by the parameter <code>item</code> is delegated to the specified participant.</td>
+  </tr>
+ </tbody>
 </table>
 
 #### Managing a (User) Inbox by the WorkItem ID {#managing-a-user-inbox-by-the-workitem-id}
@@ -418,11 +418,11 @@ The `uri` displayed in the results can be used as the instance `id` in other com
 
 To change the **Workflow Title** displayed in the **Instances** tab of the workflow console, send a `POST` command:
 
-* to: `http://localhost:4502/etc/workflow/instances/{id}`  
+* to: `http://localhost:4502/etc/workflow/instances/{id}`
 
 * with the following parameters:
 
-    * `action`: its value has to be: `UPDATE` 
+    * `action`: its value has to be: `UPDATE`
     * `workflowTitle`: the workflow title
 
 #### How to change the Workflow Title - REST using curl {#how-to-change-the-workflow-title-rest-using-curl}
@@ -465,7 +465,7 @@ In a JSP script (or Java code for a servlet class), use the HTTP request object 
 ```java
 <%
 %><%@include file="/libs/foundation/global.jsp"%><%
-%><%@page session="false" 
+%><%@page session="false"
     import="com.adobe.granite.workflow.WorkflowSession,
   org.apache.sling.api.SlingHttpServletRequest"%><%
 
@@ -496,7 +496,7 @@ The examples used:
 
 >[!NOTE]
 >
->Deleting the model sets the `deleted` property of the model's `metaData` child node to `true`. 
+>Deleting the model sets the `deleted` property of the model's `metaData` child node to `true`.
 >
 >Deletion does not remove the model node.
 
@@ -641,7 +641,7 @@ wfSession.terminateWorkflow(workflow);
   ```shell
   # starting a workflow
   curl -d "model={id}&payloadType={type}&payload={payload}" http://localhost:4502/etc/workflow/instances
-  
+
   # for example:
   curl -u admin:admin -d "model=/var/workflow/models/request_for_activation/jcr:content/model&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
   ```
@@ -671,10 +671,10 @@ wfSession.terminateWorkflow(workflow);
   ```shell
   # suspending a workflow
   curl -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/{id}
-  
+
   # for example:
   curl -u admin:admin -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-  
+
   ```
 
 * **Resuming a workflow**
@@ -682,10 +682,10 @@ wfSession.terminateWorkflow(workflow);
   ```shell
   # resuming a workflow
   curl -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/{id}
-  
+
   # for example:
   curl -u admin:admin -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-  
+
   ```
 
 * **Terminating a workflow instance**
@@ -693,7 +693,7 @@ wfSession.terminateWorkflow(workflow);
   ```shell
   # terminating a workflow
   curl -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/{id}
-  
+
   # for example:
   curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
   ```
@@ -745,7 +745,7 @@ wfSession.complete(workItem, routes.get(0));
   ```shell
   # listing the work items
   curl -u admin:admin http://localhost:4502/bin/workflow/inbox
-  
+
   ```
 
   Details for work items currently in the Inbox will be listed; for example:
@@ -794,7 +794,7 @@ wfSession.complete(workItem, routes.get(0));
       "type_xss": "Task",
       "type": "Task"
     }
-  
+
   ```
 
 * **Delegating Work Items**
@@ -802,8 +802,8 @@ wfSession.complete(workItem, routes.get(0));
   ```xml
   # delegating
   curl -d "item={item}&delegatee={delegatee}" http://localhost:4502/bin/workflow/inbox
-  
-  # for example: 
+
+  # for example:
   curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_act_1&delegatee=administrators" http://localhost:4502/bin/workflow/inbox
   ```
 
@@ -816,10 +816,10 @@ wfSession.complete(workItem, routes.get(0));
   ```xml
   # retrieve the list of routes; the results will be similar to {"results":1,"routes":[{"rid":"233123169","label":"End","label_xss":"End"}]}
   http://localhost:4502/etc/workflow/instances/<path-to-the-workitem>.routes.json
-  
+
   # completing or advancing to the next step; use the appropriate route ID (rid value) from the above list
   curl -d "item={item}&route={route}" http://localhost:4502/bin/workflow/inbox
-  
+
   # for example:
   curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
   ```
@@ -849,7 +849,7 @@ import com.adobe.granite.workflow.event.WorkflowEvent;
 import com.adobe.granite.workflow.exec.WorkItem;
 
 /**
- * The <code>WorkflowEventCatcher</code> class listens to workflow events. 
+ * The <code>WorkflowEventCatcher</code> class listens to workflow events.
  */
 @Component(metatype=false, immediate=true)
 @Service(value=org.osgi.service.event.EventHandler.class)

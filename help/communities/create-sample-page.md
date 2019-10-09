@@ -5,7 +5,7 @@ description: Create a Sample community site
 seo-description: Create a Sample community site
 uuid: 04a8f027-b7d8-493a-a9bd-5c4a6715d754
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
@@ -85,7 +85,7 @@ After creating the site template, from global navigation select **[!UICONTROL Co
     * Select any design
 
 * Select `Next`
-* Select `Next`  
+* Select `Next`
 
   (Accept all default Settings)
 

@@ -5,7 +5,7 @@ description: This article outlines the overall strategies and methodologies used
 seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
@@ -104,7 +104,7 @@ On systems with MongoDB backends, AEM provides several [JMX](/help/sites-adminis
 
 For the cache named **Document-Diff**, the hit rate should be over `.90`. If the hit rate falls below 90%, it is likely that you will need to modify your `DocumentNodeStoreService` configuration. Adobe product support can recommend optimal settings for your environment.
 
-* The **Oak Repository Statistics** Mbean. It can be accessed directly by going to: 
+* The **Oak Repository Statistics** Mbean. It can be accessed directly by going to:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
@@ -129,7 +129,7 @@ For basic tests, Apache Bench can be used to measure web server response times a
 After running performance tests on the author instance, any issues will need to be investigated, diagnosed and addressed. You can use several tools and techniques when performing analysis and addressing issues:
 
 * You can inspect the [Request Performance log](/help/sites-administering/operations-dashboard.md#request-performance) in the Operations Dashboard. This tool can be used to identify slow page requests
-* Analyze slow running queries with the [Query Performance tool](/help/sites-administering/operations-dashboard.md#query-performance)  
+* Analyze slow running queries with the [Query Performance tool](/help/sites-administering/operations-dashboard.md#query-performance)
 
 * Watch the error lof for errors or warnings. For more information, see [Logging](/help/sites-deploying/configure-logging.md)
 * Monitor system hardware resources such as memory and CPU utilization, disk I/O or network I/O. These resources are often the causes of performance bottlenecks

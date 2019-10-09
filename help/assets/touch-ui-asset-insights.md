@@ -5,7 +5,7 @@ description: Learn how the Asset Insights feature lets you track user ratings an
 seo-description: Learn how the Asset Insights feature lets you track user ratings and usage statistics of assets that are used in third-party websites, marketing campaigns, and Adobe's creative solutions. Derive insights regarding asset performance and popularity.
 uuid: fff948f7-d8c4-40a2-af0e-de73a528e23f
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 330bad1b-72b3-48a3-95c4-9a90a3e6c9f7
@@ -52,7 +52,7 @@ You can view the Asset Insights scores from the metadata page.
    >
    >Because the Asset Insights feature typically fetches the Solutions data from Adobe Analytics in a periodic manner, the Solutions section may not display the the most recent data. The time period for which the data is displayed depends the schedule of the fetch operation that Asset Insights runs to retrieve Analytics data.
 
-1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. Details, including clicks and impressions are displayed as trend lines of a graph. 
+1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. Details, including clicks and impressions are displayed as trend lines of a graph.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 

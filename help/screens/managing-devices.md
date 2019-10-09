@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about device assignment. The Devices 
 uuid: 889cc11c-60f7-4966-82b5-9ebdd082a3c5
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 8dc08e29-a377-4e84-84ee-442470c19019
 ---
@@ -59,8 +59,8 @@ Follow the steps below to assign a device to a display:
 
 >[!NOTE]
 >
->Every time the first device is added to a new Screens project, a user group is created.  
->For instance, if the project node name is *we-retail*, then the user group name is *screens-we-retail-devices*.  
+>Every time the first device is added to a new Screens project, a user group is created.
+>For instance, if the project node name is *we-retail*, then the user group name is *screens-we-retail-devices*.
 >This group will be added as a member of the **Contributors** group, as shown in the figure below:
 
 ![chlimage_1-39](assets/chlimage_1-39.png)

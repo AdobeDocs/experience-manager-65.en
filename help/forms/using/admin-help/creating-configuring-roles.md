@@ -7,7 +7,7 @@ uuid: e8e4331d-48e1-4fa9-8f44-f885f4ab1a54
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 ---
 
@@ -102,7 +102,7 @@ The following additional default roles may be included, depending on the AEM for
    >
    >When using MySQL, you cannot create two roles that have the same name but differ in the use of extended characters. For example, attempting to create a role named abcde when one named âbcdè already exists results in an error.
 
-1. Click Find Permissions, select the permissions to add to the role. 
+1. Click Find Permissions, select the permissions to add to the role.
 1. Click OK and then click Next.
 1. Assign this role to users and groups:
 
@@ -167,7 +167,7 @@ You can change the permissions for any of the roles that you created. You cannot
 
    By default, the Role Management page displays all the roles in the User Management database. If the list of roles is large, use the Find area at the top of the page to search for a specific role name.
 
-1. Select the role to view permissions for and click the Permissions tab. 
+1. Select the role to view permissions for and click the Permissions tab.
 1. To change these permissions, click Find Permissions, select the check boxes for the permissions to add to the role, click OK, and then click Save.
 1. To delete a permission, select the permission, click Delete, and then click Save.
 

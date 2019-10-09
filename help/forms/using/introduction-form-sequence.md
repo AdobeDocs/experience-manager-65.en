@@ -5,7 +5,7 @@ description: With AEM Forms, you can define a sequence of form panel in which yo
 seo-description: With AEM Forms, you can define a sequence of form panel in which you want users to navigate and fill an adaptive form.
 uuid: b2b94e4c-0c28-47ba-8e23-fd8742baf71c
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
 ---
@@ -24,8 +24,8 @@ Let's take a use case where you need to create a sequence for fill, verify, sign
 
    In this example, we can add the following panels:
 
-    * **Fill**: It contains forms fields for capturing data. Here, you can include nested sub-panels to create sections for different types of information, such as personal, family, financial, and so on. 
-    * **Verify**: It contains the **Verify** component that can be used in an XFA-based adaptive form. It displays the information captured in the Fill panel in read-only mode for verification. 
+    * **Fill**: It contains forms fields for capturing data. Here, you can include nested sub-panels to create sections for different types of information, such as personal, family, financial, and so on.
+    * **Verify**: It contains the **Verify** component that can be used in an XFA-based adaptive form. It displays the information captured in the Fill panel in read-only mode for verification.
     * **E-sign**: It contains the **Sign** component that can be used in an XFA-based adaptive form. it provides the following signing services:
 
         * Adobe Document Cloud eSign services

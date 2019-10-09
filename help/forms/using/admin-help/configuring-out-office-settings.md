@@ -7,7 +7,7 @@ uuid: 0d01df0a-aa6a-40e5-bf24-423ed1c932cc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 ---
 
@@ -60,8 +60,8 @@ While a user is out of the office, you can assign one or more users to perform a
     1. Click the name of the user who you want to change.
     1. In the Default User For Out of Office Tasks list, select a user from the list. If you do not want to designate a default user to receive reassigned items, select Do Not Assign.
 
-       If the appropriate user name does not appear in the list, click Find User and use the Find User dialog box to search for the user. Select the appropriate user from the list and click Select User. You can also click View User’s Schedule in the Find User dialog box to see the selected user’s out of office schedule. 
-    
-    1. If there are any processes that should not be sent to the default user, click Add An Exception, then select the process and select another user from the list. You can also select Do Not Assign to have the task remain assigned to the user who is out of the office. 
+       If the appropriate user name does not appear in the list, click Find User and use the Find User dialog box to search for the user. Select the appropriate user from the list and click Select User. You can also click View User’s Schedule in the Find User dialog box to see the selected user’s out of office schedule.
+
+    1. If there are any processes that should not be sent to the default user, click Add An Exception, then select the process and select another user from the list. You can also select Do Not Assign to have the task remain assigned to the user who is out of the office.
     1. Click Save.
 

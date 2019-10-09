@@ -5,7 +5,7 @@ description: The Assembler service lets you combine, rearrange, and augment PDF 
 seo-description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
 uuid: e9c4c153-951e-469f-8d4b-981bf582f9a2
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: d34f1598-38bc-46c3-b6cd-954a3880994a
 ---
@@ -37,7 +37,7 @@ The following example is a simple DDX document used to assemble the document. It
 </PDF>
 ```
 
-Document assembly produces a resultant document that contains the following content and  
+Document assembly produces a resultant document that contains the following content and
 characteristics:
 
 * All or part of each source document
@@ -101,7 +101,7 @@ Here are some of the ways you can assemble XDP documents:
 
 ### Assemble a simple XDP document {#assemble-a-simple-xdp-document}
 
-The following illustration shows three source XDP documents being assembled into a single resultant XDP document. The resultant XDP document contains the three source XDP documents including their associated data. The resultant document obtains basic attributes from the base document, which is the first source XDP document. 
+The following illustration shows three source XDP documents being assembled into a single resultant XDP document. The resultant XDP document contains the three source XDP documents including their associated data. The resultant document obtains basic attributes from the base document, which is the first source XDP document.
 
 ![Assembling a simple XDP document from multiple XDP documents](assets/as_assembler_xdpassembly.png)
 **Figure:** *Assembling a simple XDP document from multiple XDP documents*
@@ -124,36 +124,36 @@ Typically, XDP documents can contain images referenced either through absolute o
 
 You can specify how the Assembler service handles the images referenced in the source XDP documents either through absolute or relative references in the XDP files when assembling. You can choose to have all the images embedded in the resultant so that it contains no relative or absolute references. You define this by setting the value of the resolveAssets tag, which can take any of the following options. By default, no references are resolved in the result document.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Value</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>none</td> 
-   <td>Does not resolve any references.</td> 
-  </tr> 
-  <tr> 
-   <td>all</td> 
-   <td>Embeds all referenced images in the source XDP document.</td> 
-  </tr> 
-  <tr> 
-   <td>relative</td> 
-   <td>Embeds all the images referenced through relative references in the source XDP<br /> document.</td> 
-  </tr> 
-  <tr> 
-   <td>absolute</td> 
-   <td>Embeds all the images referenced through absolute references in the source XDP<br /> document.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Value</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>none</td>
+   <td>Does not resolve any references.</td>
+  </tr>
+  <tr>
+   <td>all</td>
+   <td>Embeds all referenced images in the source XDP document.</td>
+  </tr>
+  <tr>
+   <td>relative</td>
+   <td>Embeds all the images referenced through relative references in the source XDP<br /> document.</td>
+  </tr>
+  <tr>
+   <td>absolute</td>
+   <td>Embeds all the images referenced through absolute references in the source XDP<br /> document.</td>
+  </tr>
+ </tbody>
 </table>
 
 You can specify the value of the resolveAssets attribute either in the XDP source tag or in the parent XDP result tag. If the attribute is specified to the XDP result tag, it will be inherited by all the XDP source elements which are children of XDP result. However, explicitly specifying the attribute for a source element overrides the setting of the result element for that source document alone.
 
 #### Resolve all source references in an XDP document {#resolve-all-source-references-in-an-xdp-document}
 
-To resolve all references in the source XDP documents, specify the resolveAssets attribute for the  
+To resolve all references in the source XDP documents, specify the resolveAssets attribute for the
 resultant document to all, as in the example below:
 
 ```xml
@@ -166,7 +166,7 @@ resultant document to all, as in the example below:
 </DDX
 ```
 
-You can also specify the attribute for all the source XDP documents independently to get the same  
+You can also specify the attribute for all the source XDP documents independently to get the same
 result.
 
 ```xml
@@ -297,7 +297,7 @@ You can use the Assembler service to obtain the following information about a PD
     * Position of each word on each page of the document
     * Sentences in each paragraph of each page of the document
 
-* Bookmarks, including the page number, title, destination, and appearance. You can export this data from a PDF document and import it into a PDF document.  
+* Bookmarks, including the page number, title, destination, and appearance. You can export this data from a PDF document and import it into a PDF document.
 
 * File attachments, including file information. For page-level attachments, it also includes the location of the file attachment annotation. You can export this data from a PDF document and import it into a PDF document.
 

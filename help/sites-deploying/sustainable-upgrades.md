@@ -5,7 +5,7 @@ description: Learn about sustainable upgrades in AEM 6.4.
 seo-description: Learn about sustainable upgrades in AEM 6.4.
 uuid: 59d64af5-6ee0-40c8-b24a-c06848f70daa
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 5ca8dd7a-4efd-493e-8022-d2f10903b0a2
@@ -25,17 +25,17 @@ There are two components of the customization framework: the **API Surface** and
 
 In previous releases of AEM many APIs were exposed via the Uber Jar. Some of these APIs were not intended to be used by customers, but were exposed to support AEM functionality across bundles. Going forward, the Java APIs will be marked as Public or Private to indicate to customers which APIs are safe to use in the context of upgrades. Other specifics include:
 
-* Java APIs marked as `Public` can be used and referenced by custom implementation bundles.  
+* Java APIs marked as `Public` can be used and referenced by custom implementation bundles.
 
-* The Public APIs will be backwards compatible with the installation of a compatibility package.  
-* The compatibility package will contain a compatibility Uber JAR to ensure backwards compatability  
+* The Public APIs will be backwards compatible with the installation of a compatibility package.
+* The compatibility package will contain a compatibility Uber JAR to ensure backwards compatability
 * Java APIs marked as `Private` are intended to only be used by AEM internal bundles and should not be used by custom bundles.
 
 >[!NOTE]
 >
 >The concept of `Private` and `Public` in this context should not be confused with Java notions of public and private classes.
 
-![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png) 
+![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
 #### Content Classifications {#content-classifications}
 
@@ -43,13 +43,13 @@ AEM has long used the principal of overlays and Sling Resource Merger to allow c
 
 In order to make it safer and easier for customers to understand what areas of **/libs** are safe to use and overlay the content in **/libs** has been classified with the following mixins:
 
-* **Public (granite:PublicArea)** - Defines a node as public so that it can overlaid, inherited ( `sling:resourceSuperType`) or used directly ( `sling:resourceType`). Nodes beneath /libs marked as Public will be safe to upgrade with the addition of a Compatibility Package. In general customers should only leverage nodes marked as Public.  
+* **Public (granite:PublicArea)** - Defines a node as public so that it can overlaid, inherited ( `sling:resourceSuperType`) or used directly ( `sling:resourceType`). Nodes beneath /libs marked as Public will be safe to upgrade with the addition of a Compatibility Package. In general customers should only leverage nodes marked as Public.
 
-* **Abstract (granite:AbstractArea)** - Defines a node as abstract. Nodes can be overlaid or inherited ( `sling:resourceSupertype`) but must not be used directly ( `sling:resourceType`).  
+* **Abstract (granite:AbstractArea)** - Defines a node as abstract. Nodes can be overlaid or inherited ( `sling:resourceSupertype`) but must not be used directly ( `sling:resourceType`).
 
-* **Final (granite:FinalArea)** - Defines a node as final. Nodes classified as final cannot be overlaid or inherited. Final nodes can be used directly via `sling:resourceType`. Subnodes under final node are considered internal by default  
+* **Final (granite:FinalArea)** - Defines a node as final. Nodes classified as final cannot be overlaid or inherited. Final nodes can be used directly via `sling:resourceType`. Subnodes under final node are considered internal by default
 
-* **Internal (granite:InternalArea)** - Defines a node as internal. Nodes classified as internal cannot be overlaid, inherited, or used directly. These nodes are meant only for internal functionality of AEM  
+* **Internal (granite:InternalArea)** - Defines a node as internal. Nodes classified as internal cannot be overlaid, inherited, or used directly. These nodes are meant only for internal functionality of AEM
 
 * **No Annotation** - Nodes inherit classification based on the tree hierachy. The / root is by default Public. **Nodes with a parent classified as Internal or Final are also to be treated as Internal.**
 

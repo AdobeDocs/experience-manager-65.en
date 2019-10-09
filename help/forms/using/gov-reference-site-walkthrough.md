@@ -1,11 +1,11 @@
 ---
 title: We.Gov reference site walkthrough
 seo-title: We.Gov reference site walkthrough
-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments manage individual information. 
-seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments manage individual information. 
+description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments manage individual information.
+seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments manage individual information.
 uuid: 348f9067-28b5-47ed-8e83-0dbadeff0854
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
 ---
@@ -22,7 +22,7 @@ We.Gov is a state run organization that lets adoptive parents enroll for child s
 
 * Eligibility of the applicant, the adoptive parent
 * Personal and professional details of the applicant (if the applicant is eligible for child support)
-* Personal details of the adopted child 
+* Personal details of the adopted child
 
   Applicant can provide details for more than one child
 * Bank account details of the applicant in which the applicant can receive child support benefits
@@ -37,7 +37,7 @@ The We.Gov organization receives the application. The organization gets the appl
 
 After the application is approved, the applicant receives an email from the We.Gov site. The **View Document **option in the email links to a document with the enrollment details of the applicant.
 
-The infographic below shows the step-by-step workflow of the We.Gov reference site scenario. 
+The infographic below shows the step-by-step workflow of the We.Gov reference site scenario.
 
 ![workflow_aem_gov_2](assets/workflow_aem_gov_2.png)
 
@@ -82,22 +82,22 @@ In your browser, open `https://<hostname>:<PublishPort>/content/we-gov/en.html`.
 To see the rules:
 
 1. Open the form in edit mode on the author instance. URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`.
-1. Select a component and click ![edit-rules](assets/edit-rules.png). 
+1. Select a component and click ![edit-rules](assets/edit-rules.png).
 
-   The Rule Editor opens listing all the rules applied in the form.  
+   The Rule Editor opens listing all the rules applied in the form.
 
 1. In the left side panel, click rules `passMsg` and `failMsg` to understand how the eligibility check works.
 
 ## Sarah starts her application for child support {#sarah-starts-her-application-for-child-support}
 
-Sarah clicks **[!UICONTROL Start Application]** after she is informed of her eligibility for child support.  
+Sarah clicks **[!UICONTROL Start Application]** after she is informed of her eligibility for child support.
 In the Application For Child Support Services page, Sarah provides details in the following sections:
 
-* **[!UICONTROL About Applicant]**: Lets Sarah provide her details in this section.  
+* **[!UICONTROL About Applicant]**: Lets Sarah provide her details in this section.
 
-* **[!UICONTROL Child Information]**: Lets Sarah provide child's information, who is covered under support services.   
+* **[!UICONTROL Child Information]**: Lets Sarah provide child's information, who is covered under support services.
 
-* **[!UICONTROL Payment]**: Lets Sarah provide her bank details in which We.Gov can deposit monthly support compensation.  
+* **[!UICONTROL Payment]**: Lets Sarah provide her bank details in which We.Gov can deposit monthly support compensation.
 
 * **[!UICONTROL Fee Payment]**: Lets Sarah provide her credit card details to pay for the application fee.
 
@@ -129,11 +129,11 @@ Under Applicant Information, she is asked to provide details under the following
 
 Under Basic Information, Sarah provides her ID proof and her personal information. Sarah’s personal information includes her name, email ID, and social security number.
 
-* **[!UICONTROL Relationship]**  
+* **[!UICONTROL Relationship]**
 
-  Under Relationship, Sarah enters information about her marital status. 
-  
-* **[!UICONTROL Additional Information]**  
+  Under Relationship, Sarah enters information about her marital status.
+
+* **[!UICONTROL Additional Information]**
 
   Under Additional Information, Sarah enters an ID number, her date of birth, and current address and phone number.
 
@@ -146,20 +146,20 @@ In the Child Information section, she provides the following details:
 * Number of children to claim child support services
 * Child’s name, social security number, date of birth, and place of birth
 
-If Sarah chooses more than one child, she gets extra forms enabled with the same details to fill.   
-Sarah chooses her single child, Joe, and enters his name.  
+If Sarah chooses more than one child, she gets extra forms enabled with the same details to fill.
+Sarah chooses her single child, Joe, and enters his name.
 
 ### Sarah provides payment information {#sarah-provides-payment-information}
 
 After Sarah provides information of the adopted child (or children) and clicks **[!UICONTROL Next]**, she is taken to the **[!UICONTROL Payment Information]** section.
 
-In the Payment Information section, she provides the bank account details in which she can receive the child support benefits.  
+In the Payment Information section, she provides the bank account details in which she can receive the child support benefits.
 She enters her 10-digit bank account number.
 
 ## Sarah pays the application fee and signs the form {#sarah-pays-the-application-fee-and-signs-the-form}
 
-After Sarah agrees to the terms and conditions of the application, she pays the application fee of $25. Application fee is required to process her application.  
-Sarah enters her credit card details and clicks **[!UICONTROL Pay Now]**. After paying the fees, a PDF version of the application appears with a signature field. 
+After Sarah agrees to the terms and conditions of the application, she pays the application fee of $25. Application fee is required to process her application.
+Sarah enters her credit card details and clicks **[!UICONTROL Pay Now]**. After paying the fees, a PDF version of the application appears with a signature field.
 
 ![sarah-sign-1](assets/sarah-sign-1.png)
 
@@ -169,10 +169,10 @@ Her application is submitted to the We.Gov site.
 
 ### <strong>Sarah receives an acknowledgement email</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
-After Sarah pays the application fee, she receives an acknowledgement email from the We.Gov site.  
+After Sarah pays the application fee, she receives an acknowledgement email from the We.Gov site.
 We.Gov processes the application, and Sarah is informed she will receive monthly compensation after her application is approved.
 
-![sarah-ack-email](assets/sarah-ack-email.png) 
+![sarah-ack-email](assets/sarah-ack-email.png)
 
 ### How it works {#how-it-works-1}
 
@@ -198,7 +198,7 @@ See the theme here: `https://<hostname>:<AuthorPort>/editor.html/content/dam/for
 
 To see all the rules, perform the following steps:
 
-1. Open the form in the authoring mode. 
+1. Open the form in the authoring mode.
 
    URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`
 
@@ -224,8 +224,8 @@ Gloria can see, approve, or reject the application from the application dashboar
 
 Gloria, head of approvals at We.Gov, opens her AEM inbox. She sees a review task in her list of tasks. She opens and views the review task.
 
-She sees a PDF of the form filled with details Sarah entered along with the documents Sarah uploaded.  
-Gloria can approve or reject the application. However, Gloria clicks **[!UICONTROL Assessment Required]** to get the application assessed. 
+She sees a PDF of the form filled with details Sarah entered along with the documents Sarah uploaded.
+Gloria can approve or reject the application. However, Gloria clicks **[!UICONTROL Assessment Required]** to get the application assessed.
 
 ![gloria-sends-assessment](assets/gloria-sends-assessment.png)
 
@@ -240,7 +240,7 @@ Access inbox at https://&lt;***hostname***&gt;:&lt;***PublishPort***&gt;/content
 * Username: grios
 * Password: password
 
-In her AEM inbox, Sarah's application is added as a review task. Select the task, and click **Assessment Required** to proceed to the next step.  
+In her AEM inbox, Sarah's application is added as a review task. Select the task, and click **Assessment Required** to proceed to the next step.
 
 ### Conard gets the Assessment task {#conard-assessment-task}
 
@@ -273,7 +273,7 @@ Conard's default credentials are:
 * Username: csimms
 * Password: password
 
-You can see a new Assessment Request task added in the inbox. Submit the completed assessment and proceed to the next step.  
+You can see a new Assessment Request task added in the inbox. Submit the completed assessment and proceed to the next step.
 
 ### Gloria reviews the assessment and approves the application {#gloria-reviews-the-assessment-and-approves-the-application}
 
@@ -283,7 +283,7 @@ After Conard submits the assessment, Gloria sees a Review task in her inbox. She
 
 Under Task Details, Gloria sees Last Action Taken as "Submit for Re-evaluation" (by Conard). Gloria sees that Conard Simms assessed the application.
 
-![gloriaapproves](assets/gloriaapproves.png) 
+![gloriaapproves](assets/gloriaapproves.png)
 
 ### How it works {#how-it-works-5}
 
@@ -309,9 +309,9 @@ The enrollment document lists details such as the reference ID, child covered, d
 
 ![sarah-enrollment-details](assets/sarah-enrollment-details.png)
 
-Sarah can view the documents she uploaded in the same page. 
+Sarah can view the documents she uploaded in the same page.
 
-![uploaded-documents](assets/uploaded-documents.png) 
+![uploaded-documents](assets/uploaded-documents.png)
 
 ### How it works {#how-it-works-6}
 
@@ -329,7 +329,7 @@ Alternatively, to see the document in your browser, open: `https://<hostname>:<P
 
 We.Gov, from time to time, reviews the performance of their child support services application to check for any issues that customers might be facing. They use this analysis to take informed decisions about the changes required in the child support services application to enhance the user experience, reduce abandonment rate of forms, and thereby improve conversion. They leverage the integration of AEM Forms with Adobe Analytics for their analysis. The following image depicts their analytics dashboard.
 
-![child-support-analytics-dashboard](assets/child-support-analytics-dashboard.png) 
+![child-support-analytics-dashboard](assets/child-support-analytics-dashboard.png)
 
 ### How it works {#how-it-works-7}
 
@@ -349,9 +349,9 @@ For you to view and explore the analytics report, we are providing seed data for
 To generate analytics report with seed data:
 
 1. In the address browser of CRXDE lite, type: **/apps/we-gov/demo-artifacts/analyticsTestData/Child support service Analytics Test Data**
-1. The seed data is selected in the left side directory structure. 
-1. Double click the selected file to open its content in the right side panel. 
-1. Copy all the content in the test data file. 
+1. The seed data is selected in the left side directory structure.
+1. Double click the selected file to open its content in the right side panel.
+1. Copy all the content in the test data file.
 1. In CRXDE, navigate to: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
 1. In the analyticsdata field under Properties, paste the copied content of the test data file.
 1. Now generate analytics report again for **[!UICONTROL Application for Child Support Services]**. You can see the seed data in the generated report.

@@ -5,7 +5,7 @@ description: Learn how to use APIs to access letter instances.
 seo-description: Learn how to use APIs to access letter instances.
 uuid: e7fb7798-f49d-458f-87f5-22df5f3e7d10
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 ---
@@ -30,7 +30,7 @@ Correspondence Management exposes APIs to fetch letter instances through the Let
 
 >[!NOTE]
 >
->LetterInstanceService is OSGI service and its instance can be retrieved by using @Reference in Java  
+>LetterInstanceService is OSGI service and its instance can be retrieved by using @Reference in Java
 >Class or sling.getService(LetterInstanceService. Class ) in JSP.
 
 ### Using&nbsp;getAllLetterInstances {#using-nbsp-getallletterinstances}
@@ -39,17 +39,17 @@ The following API finds the letter instances based on the query object (both Sub
 
 **Syntax**: `List getAllLetterInstances(Query query) throws ICCException;`
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Parameter</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>query</td> 
-   <td>The query parameter is used to find/filter Letter instance. Here query supports only top-level attributes/properties of the object. Query consists of statements and the "attributeName" used in the Statement object should be the name of the property in the Letter instance object.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Parameter</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>query</td>
+   <td>The query parameter is used to find/filter Letter instance. Here query supports only top-level attributes/properties of the object. Query consists of statements and the "attributeName" used in the Statement object should be the name of the property in the Letter instance object.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Example 1: Fetch all the letter instances of type SUBMITTED {#example-fetch-all-the-letter-instances-of-type-submitted}
@@ -60,9 +60,9 @@ The following code returns the list of submitted letter instances. To get only d
 @Reference
 LetterInstanceService letterInstanceService;
 Query query = new Query();
- 
+
 List<LetterInstanceVO> submittedLetterInstances = new ArrayList<LetterInstanceVO>();
- 
+
 Statement statementForInstanceType = new Statement();
 statementForInstanceType.setAttributeName("letterInstanceType");
 statementForInstanceType.setOperator(Operator.EQUALS);
@@ -79,18 +79,18 @@ The following code has multiple statements in the same query to get the results 
 ```java
 @Reference
 LetterInstanceService letterInstanceService;
- 
+
 String submittedBy = "tglodman";
 Query query = new Query();
- 
+
 List<LetterInstanceVO> submittedLetterInstances = new ArrayList<LetterInstanceVO>();
- 
+
 Statement statementForInstanceType = new Statement();
 statementForInstanceType.setAttributeName("letterInstanceType");
 statementForInstanceType.setOperator(Operator.EQUALS);
 statementForInstanceType.setAttributeValue(LetterInstanceType.COMPLETE.name());
 query.addStatement(statementForInstanceType);
- 
+
 Statement statementForSubmittedBy = new Statement();
 statementForSubmittedBy .setAttributeName("submittedby");
 statementForSubmittedBy .setOperator(Operator.EQUALS);

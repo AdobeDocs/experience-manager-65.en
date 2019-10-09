@@ -5,7 +5,7 @@ description: Trying out Experience Fragments in We.Retail
 seo-description: Trying out Experience Fragments in We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: aheimoz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
@@ -26,7 +26,7 @@ This supports the headless Content Management System (CMS) use-case, where autho
 >**[Content Fragments](/help/sites-developing/we-retail-content-fragments.md)** and **Experience Fragments** are different features within AEM:
 >
 >* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
->* **Experience Fragments** are fully laid out content; a fragment of a web page.  
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 

@@ -1,10 +1,10 @@
 ---
 title: Reference adaptive form fragments
 seo-title: Reference adaptive form fragments
-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly. 
-seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly. 
+description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
+seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 ---
@@ -17,12 +17,12 @@ For adaptive forms authors, reference fragments are provided in the AEM Forms pa
 
 * Address
 * Contact Information
-* Credit card Information  
+* Credit card Information
 * Current Employment
-* Dependents Information  
+* Dependents Information
 * Employment History
 * Income & Expenditure
-* Name  
+* Name
 * Terms & Conditions
 * Terms & Conditions with Scribble
 
@@ -39,7 +39,7 @@ Includes fields to specify mailing address. The available fields are street addr
 
 ## Contact Information {#contact-information}
 
-Includes fields to capture phone number and email address. 
+Includes fields to capture phone number and email address.
     ![Contact information fragment](assets/contact-info.png)
 
 [Click to enlarge](assets/contact-info-1.png)
@@ -51,7 +51,7 @@ Includes fields to capture credit card information that can be used to process p
 
 ## Current Employment {#current-employment}
 
-Includes fields to capture current employment details like employment status, field of employment, designation, organization, and date of joining. 
+Includes fields to capture current employment details like employment status, field of employment, designation, organization, and date of joining.
     ![Current Employment fragment](assets/current-emp.png)
 
 [Click to enlarge](assets/current-emp-1.png)

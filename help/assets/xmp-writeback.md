@@ -6,7 +6,7 @@ seo-description: Learn how the XMP writeback feature propagates the metadata cha
 uuid: 093997f5-379e-427c-b8be-ed19b84c222f
 contentOwner: asgupta
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1258c866-8f04-4331-b6ba-1de6f9b51591
 ---
 
@@ -36,7 +36,7 @@ To enable the metadata changes to be propagated to the renditions of the asset w
 
 1. Open Configuration Manager from *https://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr*.
 1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
-1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes. 
+1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
 
    ![chlimage_1-346](assets/chlimage_1-346.png)
 

@@ -7,13 +7,13 @@ uuid: 353ff561-0d30-4d62-8cad-68890c883c92
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 ---
 
 # Setting up an IBL stage with Autodesk Maya and Mental Ray {#setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray}
 
-1. In Maya, create a new, empty scene.  
+1. In Maya, create a new, empty scene.
 
 1. Create a (temporary) reference to a representative model. Doing so helps to facilitate evaluating lighting, setting up cameras, and configuring the renderer.
 1. Set up image-based lighting.
@@ -44,7 +44,7 @@ discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 
    Configure the **[!UICONTROL Render Settings]** with the following suggestions.
 
-    * **[!UICONTROL Common]** tab  
+    * **[!UICONTROL Common]** tab
 
       Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all **[!UICONTROL Renderable Cameras]**.
 
@@ -54,13 +54,13 @@ discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
         * **Indirect Diffuse (GI) Mode** - `Final Gather`
         * ``**Filter Size** - `2.0`, `2.0`
 
-    * Render the scene at the typical image sizes that you expect to use. If necessary, refine the lights, Render settings, or both to achieve the results you want. 
+    * Render the scene at the typical image sizes that you expect to use. If necessary, refine the lights, Render settings, or both to achieve the results you want.
 
       Be aware that rendering with Mental Ray, using image-based lighting, is very slow and CPU-intensive. Adobe recommends that you configure the lowest quality settings that are still capable of producing the desired render quality.
 
-1. Remove the reference that you created in step 2.  
+1. Remove the reference that you created in step 2.
 
-1. Save the scene, then exit Autodesk Maya.  
+1. Save the scene, then exit Autodesk Maya.
 
 1. Upload the scene and the IBL PTIFF into AEM and wait for upload processing to complete.
 
@@ -72,7 +72,7 @@ discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 
    AEM 3D may not be able to detect the IBL image configured in the stage. In such situations, you must resolve the missing dependencies manually. You can assign the same previously uploaded IBL PTIFF image for each of the missing dependencies. Or, you can assign different images to further control the IBL effects. After resolving the dependencies, be sure you tap **[!UICONTROL Save]** to initiate reprocessing.
 
-1. Open Asset Properties in AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Verify that **[!UICONTROL Class]** is set to **[!UICONTROL 3D Stage]**. Save and exit.  
+1. Open Asset Properties in AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Verify that **[!UICONTROL Class]** is set to **[!UICONTROL 3D Stage]**. Save and exit.
 
 1. Open a 3D asset, select the new stage, and verify that it previews and renders as expected.
 

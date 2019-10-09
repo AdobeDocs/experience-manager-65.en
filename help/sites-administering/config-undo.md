@@ -5,7 +5,7 @@ description: Learn how to configure Undo support for page editing in AEM.
 seo-description: Learn how to configure Undo support for page editing in AEM.
 uuid: e5a49587-a2a6-41d5-b449-f7a8f7e4cee6
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
@@ -39,14 +39,14 @@ You can configure these OSGi service properties for your own instance.
 
 The following lists the properties as displayed in the Web console, followed by the name of the corresponding OSGi parameter, together with a description and the default value (where appropriate):
 
-* **Enable** 
+* **Enable**
   ( `cq.wcm.undo.enabled`)
 
     * **Description**: Determines whether page authors can undo and redo changes.
     * **Default**: `Selected`
     * **Type**: `Boolean`
 
-* **Path** 
+* **Path**
   ( `cq.wcm.undo.path`)
 
     * **Description**: The repository path for persisting binary undo data. When authors change binary data such as images, the original version of the data is persisted here. When changes to binary data is undone, this binary undo data is restored to the page.
@@ -57,21 +57,21 @@ The following lists the properties as displayed in the Web console, followed by 
   >
   >By default, only administrators can access the `/var/undo` node. Authors can perform undo and redo operations on binary content only after they are given permissions to access the binary undo data.
 
-* **Min. validity** 
+* **Min. validity**
   ( `cq.wcm.undo.validity`)
 
-    * **Description**: The minimum amount of time that binary undo data is stored, in hours. After this time period, the binary data is available for deletion, to conserve disk space. 
+    * **Description**: The minimum amount of time that binary undo data is stored, in hours. After this time period, the binary data is available for deletion, to conserve disk space.
     * **Default**: `10`
     * **Type**: `Integer`
 
-* **Steps** 
+* **Steps**
   ( `cq.wcm.undo.steps`)
 
     * **Description**: The maximum number of page actions that are stored in the undo history.
     * **Default**: `20`
     * **Type**: `Integer`
 
-* **Persistence** 
+* **Persistence**
   ( `cq.wcm.undo.persistence`)
 
     * **Description**: The class that persists undo history. Two persistence classes are provided:
@@ -82,17 +82,17 @@ The following lists the properties as displayed in the Web console, followed by 
     * **Default**: `CQ.undo.persistence.WindowNamePersistence`
     * **Type**: `String`
 
-* **Persistence mode** 
+* **Persistence mode**
   ( `cq.wcm.undo.persistence.mode`)
 
-    * **Description**: Determines when undo history is persisted. Select this option to persist undo history after each page edit. Clear this option to persist only when a page reload occurs (for example, the user navigates to a different page).  
-  
+    * **Description**: Determines when undo history is persisted. Select this option to persist undo history after each page edit. Clear this option to persist only when a page reload occurs (for example, the user navigates to a different page).
+
       Persisting undo history uses web browser resources. If your users' browser reacts slowly to page edits, try persisting the undo history on page reloads.
 
     * **Default**: `Selected`
     * **Type**: `Boolean`
 
-* **Marker mode** 
+* **Marker mode**
   ( `cq.wcm.undo.markermode`)
 
     * **Description**: Specifies the visual cue to use for indicating which paragraphs are affected when an undo or redo occurs. The following values are valid:
@@ -103,7 +103,7 @@ The following lists the properties as displayed in the Web console, followed by 
     * **Default**: `flash`
     * **Type**: `String`
 
-* **Good components** 
+* **Good components**
   ( `cq.wcm.undo.whitelist`)
 
     * **Description**: A list of components that you want to be affected by undo and redo commands. Add component paths to this list when they function correctly with undo/redo. Append an asterisk (&ast;) to specify a group of components:
@@ -112,7 +112,7 @@ The following lists the properties as displayed in the Web console, followed by 
 
           `foundation/components/text`
 
-        * The following value specifies all foundation components: 
+        * The following value specifies all foundation components:
 
           `foundation/components/*`
 
@@ -121,7 +121,7 @@ The following lists the properties as displayed in the Web console, followed by 
     * **Default**: The property is populated with many components that AEM provides.
     * **Type**: `String[]`
 
-* **Bad components** 
+* **Bad components**
   ( `cq.wcm.undo.blacklist`)
 
     * **Description**: A list of components and/or component operations that you do not want to be affected by the undo command. Add components and component operations that do not behave correctly with the undo command:

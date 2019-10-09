@@ -5,7 +5,7 @@ description: Learn how to integrate AEM with third party services.
 seo-description: Learn how to integrate AEM with third party services.
 uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
@@ -22,7 +22,7 @@ With AEM, you can integrate with the following non-Adobe products out of the box
 * Generic Analytics Snippet - analytics
 * Microsoft Translator or other machine translation providers
 * Pushwoosh Connection - Apps - push notifications
-* Salesforce - sales and CRM software 
+* Salesforce - sales and CRM software
 * Silverpop Engage - marketing automation, email, mobile, and social
 * Twitter - social networking
 * YouTube - video sharing

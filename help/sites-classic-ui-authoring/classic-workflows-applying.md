@@ -5,7 +5,7 @@ description: Workflows can be started from either the Websites console or, when 
 seo-description: Workflows can be started from either the Websites console or, when editing a page, from Sidekick.
 uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
@@ -15,12 +15,12 @@ discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 
 When you apply the workflow, you specify the following information:
 
-* The workflow to apply. 
+* The workflow to apply.
 
   You can apply any workflow (that you have access to, as assigned by your AEM administrator).
 * Optionally:
 
-    * A comment that provides information about why you started the workflow. 
+    * A comment that provides information about why you started the workflow.
     * A title that helps identify the workflow instance in a user's Inbox.
 
 >[!NOTE]

@@ -5,7 +5,7 @@ description: This tutorial enables you to create a fully featured website with A
 seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: bb8d4efd-7631-4cc5-8084-b03c6aabdef3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
@@ -22,17 +22,17 @@ This tutorial enables you to create a fully featured website with Adobe Experien
 This tutorial describes how to:
 
 1. Install AEM.
-1. Access CRXDE Lite (the development environment).  
-1. Set up the project structure in CRXDE Lite.  
+1. Access CRXDE Lite (the development environment).
+1. Set up the project structure in CRXDE Lite.
 1. Create the template, component, and scripts used as the basis for creating content pages.
 1. Create the root page for your website and then content pages.
 1. Create the following components for use on your pages:
 
-    * **[!UICONTROL Top Navigation]** 
-    * **[!UICONTROL List Children]** 
-    * **[!UICONTROL Logo]** 
-    * **[!UICONTROL Image]** 
-    * **[!UICONTROL Text-Image]** 
+    * **[!UICONTROL Top Navigation]**
+    * **[!UICONTROL List Children]**
+    * **[!UICONTROL Logo]**
+    * **[!UICONTROL Image]**
+    * **[!UICONTROL Text-Image]**
     * **[!UICONTROL Search]**
 
 1. Include various foundation components.
@@ -56,7 +56,7 @@ Website content package
 
 To install an AEM instance for developing your website, follow the instructions for setting up a [deployment environment with author and publish instances](/help/sites-deploying/deploy.md#author-and-publish-installs), or perform a [generic installation](/help/sites-deploying/deploy.md#default-local-install). The generic installation involves downloading the AEM Quickstart JAR file, placing the license.properties file in the same directory as the JAR file, and double-clicking the JAR file.
 
-After you have installed AEM, access the CRXDE Lite development environment by clicking the CRXDE Lite link on the Welcome page: 
+After you have installed AEM, access the CRXDE Lite development environment by clicking the CRXDE Lite link on the Welcome page:
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -94,11 +94,11 @@ Sample static.css file and images
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. In the folder tree, select the **[!UICONTROL Designs]** folder and then click **[!UICONTROL New > New Page]**. Type `mywebsite` as the title and click **[!UICONTROL Create]**.  
+1. In the folder tree, select the **[!UICONTROL Designs]** folder and then click **[!UICONTROL New > New Page]**. Type `mywebsite` as the title and click **[!UICONTROL Create]**.
 
-1. If the mywebsite item does not appear in the table, refresh the tree or the table.  
+1. If the mywebsite item does not appear in the table, refresh the tree or the table.
 
-1. [Using WebDAV](/help/sites-administering/webdav-access.md) access to the URL at http://localhost:4502, copy the sample `static.css` file and `images` folder from the downloaded mywebsite.zip file into the `/etc/designs/mywebsite` folder. 
+1. [Using WebDAV](/help/sites-administering/webdav-access.md) access to the URL at http://localhost:4502, copy the sample `static.css` file and `images` folder from the downloaded mywebsite.zip file into the `/etc/designs/mywebsite` folder.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -116,7 +116,7 @@ Create a template to use as the basis of the web pages of your site.
 
 A template defines the default content of a new page. Complex websites may use several templates for creating the different types of pages in the site. In this exercise, all pages are based on one simple template.
 
-1. In the folder tree of CRXDE Lite, right-click `/apps/mywebsite/templates` and click **[!UICONTROL Create > Create Template]**.  
+1. In the folder tree of CRXDE Lite, right-click `/apps/mywebsite/templates` and click **[!UICONTROL Create > Create Template]**.
 
 1. In the Create Template dialog, type the following values and then click **[!UICONTROL Next]**:
 
@@ -174,11 +174,11 @@ Add code to the contentpage.jsp script to define the page content.
 
    ```java
    <%--
-   
+
      My Website Content Page Component component.
-   
+
      This is My Website Content Page Component.
-   
+
    --%><%
    %><%@include file="/libs/foundation/global.jsp"%><%
    %><%@page session="false" %><%
@@ -192,7 +192,7 @@ Add code to the contentpage.jsp script to define the page content.
    ```java
    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
        pageEncoding="ISO-8859-1"%>
-   <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+   <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "https://www.w3.org/TR/html4/loose.dtd">
    <html>
    <head>
@@ -243,7 +243,7 @@ In this section, you create the following pages which all use the contentpage te
     * **Title**: Services
     * Select the **[!UICONTROL My Website Content Page Template]**
 
-1. In the folder tree, select the `/Websites/My Website/English` page and click **[!UICONTROL New > New Page]**. 
+1. In the folder tree, select the `/Websites/My Website/English` page and click **[!UICONTROL New > New Page]**.
 1. In the **[!UICONTROL Create Page]** dialog, enter the following property values and then click **[!UICONTROL Create]**:
 
     * **Title**: Customers
@@ -271,7 +271,7 @@ This section describes how to enhance the contentpage script using the AEM found
 
 The **[!UICONTROL Products]** page will look as follows:
 
-![chlimage_1-4](assets/chlimage_1-4.jpeg) 
+![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
 #### Using the Foundation Page Scripts {#using-the-foundation-page-scripts}
 
@@ -313,7 +313,7 @@ For example, in your component JSP code, you can reference the scripts that the 
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
                {propsDialog: "/libs/foundation/components/page/dialog",
                   locked: false locked: false
-                }); 
+                });
    ```
 
 #### Using your own scripts {#using-your-own-scripts}
@@ -404,7 +404,7 @@ In the first version of the top navigation component (topnav) the navigation ite
 
 Your top navigation will look as follows:
 
-![chlimage_1-114](assets/chlimage_1-114.png) 
+![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Creating the Top Navigation Component {#creating-the-top-navigation-component-1}
 
@@ -425,23 +425,23 @@ Add the rendering script to topnav to generate text links to child pages:
 1. Replace the code that is there by copying and pasting the following code:
 
    ```xml
-   <%@include file="/libs/foundation/global.jsp"%><% 
+   <%@include file="/libs/foundation/global.jsp"%><%
    %><%@ page import="java.util.Iterator,
-           com.day.text.Text, 
-           com.day.cq.wcm.api.PageFilter, com.day.cq.wcm.api.Page" %><% 
+           com.day.text.Text,
+           com.day.cq.wcm.api.PageFilter, com.day.cq.wcm.api.Page" %><%
        /* get starting point of navigation */
-       Page navRootPage = currentPage.getAbsoluteParent(2); 
-       if (navRootPage == null && currentPage != null) { 
-       navRootPage = currentPage; 
+       Page navRootPage = currentPage.getAbsoluteParent(2);
+       if (navRootPage == null && currentPage != null) {
+       navRootPage = currentPage;
        }
-       if (navRootPage != null) { 
+       if (navRootPage != null) {
            Iterator<Page> children = navRootPage.listChildren(new PageFilter(request));
-           while (children.hasNext()) { 
-               Page child = children.next(); 
-               %><a href="<%= child.getPath() %>.html"><%=child.getTitle() %></a><% 
-           } 
-       } 
-   %> 
+           while (children.hasNext()) {
+               Page child = children.next();
+               %><a href="<%= child.getPath() %>.html"><%=child.getTitle() %></a><%
+           }
+       }
+   %>
    ```
 
 #### Including Top Navigation in the Contentpage Component {#including-top-navigation-in-the-contentpage-component}
@@ -514,47 +514,47 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
 1. Copy the following code into `navimage.png.java.`The code extends the AbstractImageServlet class:
 
     * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
-    * The parent page of the resource is extracted from the ImageContext object. The page title and subtitle are then obtained. 
+    * The parent page of the resource is extracted from the ImageContext object. The page title and subtitle are then obtained.
     * [ImageHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
 
    ```java
    package apps.mywebsite.components.contentpage;
-   
-   import java.awt.Color; 
-   import java.awt.Paint; 
-   import java.awt.geom.Rectangle2D; 
-   
-   import java.io.IOException;
-   import javax.jcr.RepositoryException; 
 
-   import com.day.cq.wcm.api.Page; 
-   import com.day.cq.wcm.api.PageManager; 
-   import com.day.cq.wcm.api.components.Component; 
+   import java.awt.Color;
+   import java.awt.Paint;
+   import java.awt.geom.Rectangle2D;
+
+   import java.io.IOException;
+   import javax.jcr.RepositoryException;
+
+   import com.day.cq.wcm.api.Page;
+   import com.day.cq.wcm.api.PageManager;
+   import com.day.cq.wcm.api.components.Component;
    import com.day.cq.wcm.api.designer.Designer;
-   
-   import com.day.cq.commons.SlingRepositoryException; 
-   import com.day.cq.wcm.commons.WCMUtils; 
-   import com.day.cq.wcm.commons.AbstractImageServlet; 
-   import com.day.cq.commons.ImageHelper; 
-   
-   import com.day.image.Font; 
-   import com.day.image.Layer; 
-   
-   import org.apache.sling.api.SlingHttpServletRequest; 
-   import org.apache.sling.api.SlingHttpServletResponse; 
-   import org.apache.sling.api.resource.Resource; 
-   import org.apache.sling.api.servlets.SlingSafeMethodsServlet; 
-   
+
+   import com.day.cq.commons.SlingRepositoryException;
+   import com.day.cq.wcm.commons.WCMUtils;
+   import com.day.cq.wcm.commons.AbstractImageServlet;
+   import com.day.cq.commons.ImageHelper;
+
+   import com.day.image.Font;
+   import com.day.image.Layer;
+
+   import org.apache.sling.api.SlingHttpServletRequest;
+   import org.apache.sling.api.SlingHttpServletResponse;
+   import org.apache.sling.api.resource.Resource;
+   import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
+
    /**
      * Renders the navigation image
-     */ 
+     */
    public class navimage_png extends AbstractImageServlet {
-   
+
          protected Layer createLayer(ImageContext ctx)
                 throws RepositoryException, IOException {
             PageManager pageManager = ctx.resolver.adaptTo(PageManager.class);
             Page currentPage = pageManager.getContainingPage(ctx.resource);
-   
+
             /* constants for image appearance */
             int scale = 6;
             int paddingX = 24;
@@ -572,22 +572,22 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
             Paint titleColor = Color.WHITE;
             Font titleFont = new Font("Myriad Pro", 10 * scale, Font.BOLD);
             int titleBase = 10 * scale;
-   
+
             /* obtain and format the page subtitle */
             String subtitle = currentPage.getProperties().get("subtitle", "");
             Paint subtitleColor = new Color(0xffa9afb1, true);
             Font subTitleFont = new Font("Tahoma", 7);
             int subTitleBase = 20;
-   
+
             /* create a layer that contains the background image from the mywebsite design */
             Designer dg = ctx.resolver.adaptTo(Designer.class);
             String imgPath = new String(dg.getDesignPath(currentPage)+"/images/navimage_bg.jpg");
             Layer bg = ImageHelper.createLayer(ctx.resolver.resolve(imgPath));
-   
+
             /* draw the title text (4 times bigger) */
             Rectangle2D titleExtent = titleFont.getTextExtent(0, 0, 0, 0, title, Font.ALIGN_LEFT, 0, 0);
             Rectangle2D subtitleExtent = subTitleFont.getTextExtent(0, 0, 0, 0, subtitle, Font.ALIGN_LEFT, 0, 0);
-   
+
             /* ensure subtitleExtent is wide enough */
             if ( subtitle.length() > 0 ) {
                 int titleWidth = (int)titleExtent.getWidth() / scale;
@@ -608,25 +608,25 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
             text.resize(text.getWidth() / scale, text.getHeight() / scale);
             text.setX(0);
             text.setY(0);
-   
+
             if (subtitle.length() > 0) {
                 /* draw the subtitle normal sized */
                 text.setPaint(subtitleColor);
-                text.drawText(0, subTitleBase, 0, 0, subtitle, subTitleFont, Font.ALIGN_LEFT | Font.ALIGN_BASE, 0, 0); 
+                text.drawText(0, subTitleBase, 0, 0, subtitle, subTitleFont, Font.ALIGN_LEFT | Font.ALIGN_BASE, 0, 0);
             }
-   
+
             /* merge the image and text layers */
             text.setY(paddingY);
             text.setX(paddingX);
             text.setBackgroundColor(bgColor);
-   
+
             int bgWidth = bg.getWidth();
             if ( text.getWidth() + 2 * paddingX > bgWidth ) {
                 bgWidth = text.getWidth() + 2 * paddingX;
                 bg.resize(bgWidth, bg.getHeight());
             }
             bg.merge(text);
-   
+
             return bg;
         }
     }
@@ -641,7 +641,7 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
 
 Create the listchildren component that generates a list of page links that include the title, description, and date of pages (for example, product pages). The links target the child pages of the current page, or of a root page that is specified in the component dialog.
 
-![chlimage_1-116](assets/chlimage_1-116.png) 
+![chlimage_1-116](assets/chlimage_1-116.png)
 
 #### Creating Product Pages {#creating-product-pages}
 
@@ -662,7 +662,7 @@ Create two pages located below the **[!UICONTROL Products]** page. For each page
 
 1. In CRXDE Lite, set a description and a date for the Product 1 page:
 
-    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node. 
+    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node.
     1. In the **[!UICONTROL Properties]** tab, enter the following values:
 
         * **[!UICONTROL Name]**: `jcr:description`
@@ -681,7 +681,7 @@ Create two pages located below the **[!UICONTROL Products]** page. For each page
 
 1. In CRXDE Lite, set a description and a date for the Product 2 page:
 
-    1. Select the `/content/mywebsite/en/products/product2/jcr:content` node. 
+    1. Select the `/content/mywebsite/en/products/product2/jcr:content` node.
     1. In the **[!UICONTROL Properties]** tab, enter the following values:
 
         * **[!UICONTROL Name]**: jcr:description
@@ -722,7 +722,7 @@ Develop the script for the listchildren component.
    <%@include file="/libs/foundation/global.jsp"%><%
    %><%@ page import="java.util.Iterator,
             com.day.cq.wcm.api.PageFilter"%><%
-        /* Create a new Page object using the path of the current page */ 
+        /* Create a new Page object using the path of the current page */
          String listroot = properties.get("listroot", currentPage.getPath());
         Page rootPage = pageManager.getPage(listroot);
         /* iterate through the child pages and gather properties */
@@ -904,7 +904,7 @@ Create the dialog for configuring your logo component in Design mode. Design-mod
     1. Right-click the `/apps/mywebsite/components/logo` node and click **[!UICONTROL Create > Create Dialog]**.
     1. Type the following property values and then click **[!UICONTROL OK]**:
 
-        * **[!UICONTROL Label]** `design_dialog` 
+        * **[!UICONTROL Label]** `design_dialog`
         * **[!UICONTROL Title]** `Logo (Design)`
 
 1. Right-click the tab1 node in the design_dialog branch and click Delete. Click **[!UICONTROL Save All]**.
@@ -1131,7 +1131,7 @@ Create a component that displays an image in the paragraph system. To save time,
 
 1. Open img.GET.java and change the package to `apps.mywebsite.components.image`.
 
-![chlimage_1-128](assets/chlimage_1-128.png) 
+![chlimage_1-128](assets/chlimage_1-128.png)
 
 #### Creating the Image Script {#creating-the-image-script}
 
@@ -1188,7 +1188,7 @@ In this section, you use a cq:editConfig node to enable you to drag assets from 
 | groups |String |media |
 | propertyName |String |./imageReference |
 
-![chlimage_1-129](assets/chlimage_1-129.png) 
+![chlimage_1-129](assets/chlimage_1-129.png)
 
 #### Adding the icon {#adding-the-icon}
 
@@ -1254,7 +1254,7 @@ In this section, you create the component to search for content on the website. 
 
 Your search input box will look as follows on the **[!UICONTROL English]** page:
 
-![chlimage_1-131](assets/chlimage_1-131.png) 
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 #### Creating the Search Component {#creating-the-search-component-1}
 
@@ -1276,7 +1276,7 @@ Your search input box will look as follows on the **[!UICONTROL English]** page:
 1. Copy the following nodes and paste them to the `apps/mywebsite/components/search` node:
 
     * `/libs/foundation/components/search/dialog`
-    * `` `/libs/foundation/components/search/i18n` 
+    * `` `/libs/foundation/components/search/i18n`
     * `/libs/foundation/components/search/icon.png`
 
 1. Click **[!UICONTROL Save All]**.
@@ -1334,7 +1334,7 @@ This section describes how to create the search script:
        <p class="searchmeta">Results ${result.startIndex + 1} - ${result.startIndex + fn:length(result.hits)} of ${result.totalMatches} for <b>${fn:escapeXml(search.query)}</b>. (${result.executionTime} seconds)</p>
       <br/>
 
-     <div class="searchresults"> 
+     <div class="searchresults">
        <div class="results">
          <c:forEach var="hit" items="${result.hits}" varStatus="status">
            <div class="hit">
@@ -1354,7 +1354,7 @@ This section describes how to create the search script:
                          <a href="<c:url value="${currentPage.path}.html"><c:param name="q" value="${query.query}"/></c:url>"><span style="font-size:${query.size}px"><c:out value="${query.query}"/></span></a>
                      </c:forEach>
                  </div>
-             </c:if> 
+             </c:if>
              <c:if test="${result.facets.languages.containsHit}">
                  <p>Languages</p>
                  <c:forEach var="bucket" items="${result.facets.languages.buckets}">
@@ -1365,7 +1365,7 @@ This section describes how to create the search script:
                          <c:otherwise><a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a></c:otherwise>
                      </c:choose><br/>
                  </c:forEach>
-             </c:if> 
+             </c:if>
              <c:if test="${result.facets.tags.containsHit}">
                  <p>Tags</p>
                  <c:forEach var="bucket" items="${result.facets.tags.buckets}">
@@ -1379,7 +1379,7 @@ This section describes how to create the search script:
                          </c:choose><br/>
                      </c:if>
                  </c:forEach>
-             </c:if> 
+             </c:if>
              <c:if test="${result.facets.mimeTypes.containsHit}">
                  <jsp:useBean id="fileTypes" class="com.day.cq.wcm.foundation.FileTypes"/>
                  <p>File types</p>
@@ -1401,7 +1401,7 @@ This section describes how to create the search script:
                      </c:choose><br/>
                  </c:forEach>
              </c:if>
-   
+
          <c:if test="${fn:length(search.relatedQueries) > 0}">
 
           <br/><br/><div class="related">
@@ -1410,10 +1410,10 @@ This section describes how to create the search script:
                <a href="${currentPage.path}.html?q=${rq}"><c:out value="${rq}"/></a>
            </c:forEach></div>
          </c:if>
-         </div> 
+         </div>
 
          <c:if test="${fn:length(result.resultPages) > 1}">
-           <div class="pagination"> 
+           <div class="pagination">
                <fmt:message key="resultPagesText"/>
            <c:if test="${result.previousPage != null}">
              <a href="${result.previousPage.URL}"><fmt:message key="previousText"/></a>
@@ -1453,7 +1453,7 @@ To include a search input box in the left section of your contentpage, proceed a
 
    ```java
    %><%@ page import="com.day.text.Text"%><%
-   %><% String docroot = currentDesign.getPath(); 
+   %><% String docroot = currentDesign.getPath();
    String home = Text.getAbsoluteParent(currentPage.getPath(), 2);%><%
    ```
 
@@ -1469,8 +1469,8 @@ To include a search input box in the left section of your contentpage, proceed a
    <div class="form_1">
         <form class="geo" action="<%= home %>/toolbar/search.html" id="form" >
              <p>
-                  <input class="geo" type="text" name="q"><br> 
-                  <a href="<%= home %>/toolbar/search.html" class="link_1">advanced search</a> 
+                  <input class="geo" type="text" name="q"><br>
+                  <a href="<%= home %>/toolbar/search.html" class="link_1">advanced search</a>
              </p>
         </form>
    </div>

@@ -1,11 +1,11 @@
 ---
-title: Internationalizing UI Strings 
-seo-title: Internationalizing UI Strings 
+title: Internationalizing UI Strings
+seo-title: Internationalizing UI Strings
 description: Java and Javascript APIs enable you to internationalize strings
 seo-description: Java and Javascript APIs enable you to internationalize strings
 uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
@@ -20,7 +20,7 @@ Java and Javascript APIs enable you to internationalize strings in the following
 * Javascript in client-side libraries or in page source.
 * JCR node property values used in dialogs and component configuration properties.
 
-For an overview of the internationalization and localization process, see [Internationalizing Components](/help/sites-developing/i18n.md).  
+For an overview of the internationalization and localization process, see [Internationalizing Components](/help/sites-developing/i18n.md).
 
 ## Internationalizing Strings in Java and JSP Code {#internationalizing-strings-in-java-and-jsp-code}
 
@@ -40,7 +40,7 @@ There are two ways to determine the language that the user prefers:
 * For authenticated users, determine the language from the preferences in the user account.
 * The locale of the requested page.
 
-The language property of the user account is the preferred method because it is more reliable. However, the user must be logged in to use this method.  
+The language property of the user account is the preferred method because it is more reliable. However, the user must be logged in to use this method.
 
 #### Creating the I18n Java object {#creating-the-i-n-java-object}
 
@@ -59,7 +59,7 @@ To use the page locale to determine the language, you first need to obtain the R
 ```java
 Locale pageLang = currentPage.getLanguage(false);
 ResourceBundle resourceBundle = slingRequest.getResourceBundle(pageLang);
-I18n i18n = new I18n(resourceBundle); 
+I18n i18n = new I18n(resourceBundle);
 ```
 
 #### Internationalizing a String {#internationalizing-a-string}
@@ -93,7 +93,7 @@ Include variables in the localized string to build contextual meaning into a sen
 [In the dictionary](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), the variables are represented in strings as bracketed indexes. Specify the values of the variables as arguments of the `get` method. The arguments are placed following the translation hint, and the indexes correspond with the order of the arguments:
 
 ```xml
-i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems); 
+i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
 ```
 
 The internationalized string and the translation hint must exactly match the string and comment in the dictionary. You can omit the localization hint by providing a `null` value as the second argument.
@@ -140,7 +140,7 @@ The function parameters are different than the Java I18n.get method:
 * The second parameter is an array of values to inject into the string literal.
 * The third parameter is the localization hint.
 
-The following example uses Javascript to localize the "Welcome back Administrator. You have 2 messages in your inbox." sentence:  
+The following example uses Javascript to localize the "Welcome back Administrator. You have 2 messages in your inbox." sentence:
 
 ```
 Granite.I18n.setLocale("fr");

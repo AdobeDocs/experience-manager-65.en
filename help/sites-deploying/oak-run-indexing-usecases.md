@@ -4,7 +4,7 @@ seo-title: Oak-run.jar Indexing Use Cases
 description: Learn about the various user cases for performing indexing with the Oak-run tool.
 seo-description: Learn about the various user cases for performing indexing with the Oak-run tool.
 uuid: 3c50080d-1e0d-4886-8d37-269f06881eb4
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 084075b8-826d-4f27-9342-35f33368f24f
@@ -28,8 +28,8 @@ Sections below would provide sample commands. oak-run index command supports all
 
 This is a use case related to index corruption. In some cases it was not possible to determine which of the indexes are corrupt. Therefore, Adobe has provided tooling that:
 
-1. Performs index consistency checks on all indexes and provides a report on which indexes are valid and which are not valid;  
-1. The tooling is usable even if AEM is not accessible;  
+1. Performs index consistency checks on all indexes and provides a report on which indexes are valid and which are not valid;
+1. The tooling is usable even if AEM is not accessible;
 1. It is easy to use.
 
 Checking for corrupt indexes can be performed via `--index-consistency-check` operation:
@@ -108,21 +108,21 @@ Depending on the [scenarios](https://jackrabbit.apache.org/oak/docs/query/indexi
 
 Some points to note around reindexing:
 
-* Reindexing is lot slower on `DocumentNodeStore` setups compared to `SegmentNodeStore` setups where all content is local;  
+* Reindexing is lot slower on `DocumentNodeStore` setups compared to `SegmentNodeStore` setups where all content is local;
 
-* With the current design, while reindexing happens the async indexer is blocked and all other async indexes become stale and do not get update for the duration of indexing. Because of this, if the system is in use, users may not see up to date results;  
-* Reindexing involves traversal of the whole repository which can put a high load on the AEM setup and thus impact end user experience;  
-* For a `DocumentNodeStore` installation where reindexing might take a considerable amount of time, if the connection to the Mongo database fails in the middle of the operation, indexing would have to be restarted from scratch;  
+* With the current design, while reindexing happens the async indexer is blocked and all other async indexes become stale and do not get update for the duration of indexing. Because of this, if the system is in use, users may not see up to date results;
+* Reindexing involves traversal of the whole repository which can put a high load on the AEM setup and thus impact end user experience;
+* For a `DocumentNodeStore` installation where reindexing might take a considerable amount of time, if the connection to the Mongo database fails in the middle of the operation, indexing would have to be restarted from scratch;
 
 * In some cases reindexing can take long time because of text extraction. This is mainly specific for setups having lots of PDF files, where the time spent on text extraction can impact indexing time.
 
 To meet these objectives the oak-run index tooling supports different modes for reindexing which can be used as required. The oak-run index command provides following benefits:
 
-* **out-of-band reindexing** - oak-run reindexing can be done separately from a running AEM setup and thus, it minimizes the impact on the AEM instance that is in use;  
+* **out-of-band reindexing** - oak-run reindexing can be done separately from a running AEM setup and thus, it minimizes the impact on the AEM instance that is in use;
 
-* **out-of-lane reindexing** - The reindexing takes place without impacting indexing indexing operations. This means that the async indexer can continue to index other indexes;  
+* **out-of-lane reindexing** - The reindexing takes place without impacting indexing indexing operations. This means that the async indexer can continue to index other indexes;
 
-* **Simplified reindex for DocumentNodeStore installations** - For `DocumentNodeStore` installations, reindexing can be done with a single command which ensures that reindexing is done in the most optimal way;  
+* **Simplified reindex for DocumentNodeStore installations** - For `DocumentNodeStore` installations, reindexing can be done with a single command which ensures that reindexing is done in the most optimal way;
 
 * **Supports updating index definitions and introducing new index definitions**
 
@@ -136,7 +136,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 This provides following benefits
 
-* Minimal impact on running AEM instances. Most of the reads can be done from secondary servers and running AEM caches are not adversaly impacted due to all the traversal required for reindexing;  
+* Minimal impact on running AEM instances. Most of the reads can be done from secondary servers and running AEM caches are not adversaly impacted due to all the traversal required for reindexing;
 * Users can also provide a JSON of a new or updated index via the `--index-definitions-file` option.
 
 ### Reindex - SegmentNodeStore {#reindexsegmentnodestore}
@@ -171,7 +171,7 @@ For `SegmentNodeStore` installations reindexing can be done via a single oak-run
 You can trigger reindexing with the following command:
 
 ```shell
-java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore  /path/to/segmentstore/ 
+java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore  /path/to/segmentstore/
 ```
 
 The difference between this approach and the one explained above is that checkpoint creation and index import are done automatically. The downside is that AEM needs to be down during the process.
@@ -181,10 +181,10 @@ The difference between this approach and the one explained above is that checkpo
 In this use case, you can perform reindexing on a cloned setup to minimize impact on the running AEM instance:
 
 1. Create checkpoint via a JMX operation. You can do this by going to the [JMX Console](/help/sites-administering/jmx-console.md) and search for `CheckpointManager`. Then, click on the **createCheckpoint(long p1)** operation using a high value for expiration in seconds (for example, **2592000**).
-1. Copy the `crx-quickstart` folder to a new machine 
-1. Perform reindex via oak-run index command  
+1. Copy the `crx-quickstart` folder to a new machine
+1. Perform reindex via oak-run index command
 
-1. Copy the generated index files to AEM server  
+1. Copy the generated index files to AEM server
 
 1. Import the index files via JMX.
 
@@ -200,9 +200,9 @@ Oak-run now supports providing index definitions in JSON format and creation of 
 
 The process you need to consider for this use case is:
 
-1. A developer would update the index definitions on a local instance and then generate an index definition JSON file via the `--index-definitions` option  
+1. A developer would update the index definitions on a local instance and then generate an index definition JSON file via the `--index-definitions` option
 
-1. The updated JSON is then given to the System Administrator  
-1. System Administrator follows the out-of-band approach and prepares the index on a different installation  
+1. The updated JSON is then given to the System Administrator
+1. System Administrator follows the out-of-band approach and prepares the index on a different installation
 1. Once this is completed, the generated index files will be imported on a running AEM installation.
 

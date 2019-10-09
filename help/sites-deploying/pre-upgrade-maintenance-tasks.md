@@ -5,7 +5,7 @@ description: Learn about the pre-upgrade tasks in AEM.
 seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 6c0d4b31-6464-470b-9e40-1fc2abb9b2a6
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
@@ -83,7 +83,7 @@ The `PreUpgradeTasksMBean` OSGI component comes preconfigured with a list of pre
 
 1. Go to the Web Console by browsing to `https://serveraddress:serverport/system/console/configMgr`
 
-1. Search for "**preupgradetasks**", then click on the first matching component. The full name of the component is `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`  
+1. Search for "**preupgradetasks**", then click on the first matching component. The full name of the component is `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
 1. Modify the list of maintenance tasks that need to run as shown below:
 
@@ -91,49 +91,49 @@ The `PreUpgradeTasksMBean` OSGI component comes preconfigured with a list of pre
 
 The task list differs depending on the run mode that is being used to start the instance. Below is a description of the run mode each maintenance task is designed for.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Task</strong></td> 
-   <td><strong>Run Mode</strong></td> 
-   <td><strong>Notes</strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>TarIndexMergeTask</code></td> 
-   <td>crx2</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>DataStoreGarbageCollectionTask</code></td> 
-   <td>crx2</td> 
-   <td>Will run mark and sweep. For shared datastores, remove this step and run<br /> manually or properly prepare instances before executing.</td> 
-  </tr> 
-  <tr> 
-   <td><code>ConsistencyCheckTask</code></td> 
-   <td>crx2</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>WorkflowPurgeTask</code></td> 
-   <td>crx2/crx3</td> 
-   <td>Must configure the Adobe Granite Workflow Purge Configuration OSGi before running.</td> 
-  </tr> 
-  <tr> 
-   <td><code>GenerateBundlesListFileTask</code></td> 
-   <td>crx2/crx3</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>RevisionCleanupTask</code></td> 
-   <td>crx3</td> 
-   <td>For TarMK instances on AEM 6.0 to 6.2, manually run Offline Revision Cleanup instead.</td> 
-  </tr> 
-  <tr> 
-   <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td> 
-   <td>crx3</td> 
-   <td>Must configure the Audit Log Purge Scheduler OSGi configuration before running.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Task</strong></td>
+   <td><strong>Run Mode</strong></td>
+   <td><strong>Notes</strong></td>
+  </tr>
+  <tr>
+   <td><code>TarIndexMergeTask</code></td>
+   <td>crx2</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>DataStoreGarbageCollectionTask</code></td>
+   <td>crx2</td>
+   <td>Will run mark and sweep. For shared datastores, remove this step and run<br /> manually or properly prepare instances before executing.</td>
+  </tr>
+  <tr>
+   <td><code>ConsistencyCheckTask</code></td>
+   <td>crx2</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>WorkflowPurgeTask</code></td>
+   <td>crx2/crx3</td>
+   <td>Must configure the Adobe Granite Workflow Purge Configuration OSGi before running.</td>
+  </tr>
+  <tr>
+   <td><code>GenerateBundlesListFileTask</code></td>
+   <td>crx2/crx3</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>RevisionCleanupTask</code></td>
+   <td>crx3</td>
+   <td>For TarMK instances on AEM 6.0 to 6.2, manually run Offline Revision Cleanup instead.</td>
+  </tr>
+  <tr>
+   <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td>
+   <td>crx3</td>
+   <td>Must configure the Audit Log Purge Scheduler OSGi configuration before running.</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!CAUTION]
@@ -144,7 +144,7 @@ The task list differs depending on the run mode that is being used to start the 
 
 The `PreUpgradeTasksMBeanImpl` OSGI component comes pre-configured with a list of pre-upgrade health check tags to execute when the `runAllPreUpgradeHealthChecks` method is called:
 
-* **system** - the tag used by the granite maintenance health checks  
+* **system** - the tag used by the granite maintenance health checks
 
 * **pre-upgrade** - this is a custom tag that could be added to all the health checks that you can set to run before an upgrade
 
@@ -157,78 +157,78 @@ The managed bean functionality can be accessed using the [JMX Console](/help/sit
 You can access the MBeans by:
 
 1. Going to the JMX Console at *https://serveraddress:serverport/system/console/jmx*
-1. Search for **PreUpgradeTasks** and click the result  
+1. Search for **PreUpgradeTasks** and click the result
 
 1. Select any method from the **Operations** section and select **Invoke** in the following window.
 
 Below is a list of all the available methods that the `PreUpgradeTasksMBeanImpl` exposes:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Method Name</strong></td> 
-   <td><strong>Type</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>getAvailablePreUpgradeTasksNames()</code></td> 
-   <td>INFO</td> 
-   <td>Displays the list of available pre-upgrade maintenance tasks names.</td> 
-  </tr> 
-  <tr> 
-   <td><code>getAvailablePreUpgradeHealthChecksTagNames()</code></td> 
-   <td>INFO</td> 
-   <td>Displays the list of pre-upgrade health checks tag names.</td> 
-  </tr> 
-  <tr> 
-   <td><code>runAllPreUpgradeTasks()</code></td> 
-   <td>ACTION</td> 
-   <td>Runs all the pre-upgrade maintenance tasks in the list.</td> 
-  </tr> 
-  <tr> 
-   <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
-   <td>Runs the pre-upgrade maintenance task with the name given as the parameter.</td> 
-  </tr> 
-  <tr> 
-   <td><code>isRunAllPreUpgradeTaskRunning()</code></td> 
-   <td>ACTION_INFO</td> 
-   <td>Checks if the <code>runAllPreUpgradeTasksmaintenance</code> task is currently running.</td> 
-  </tr> 
-  <tr> 
-   <td><code>getAnyPreUpgradeTaskRunning()</code></td> 
-   <td>ACTION_INFO</td> 
-   <td>Checks if any pre-upgrade maintenance task is currently running and<br /> returns an array containing the names of currently running tasks.</td> 
-  </tr> 
-  <tr> 
-   <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
-   <td>Displays the exact running time of the pre-upgrade maintenance task with the name given as the parameter.</td> 
-  </tr> 
-  <tr> 
-   <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td> 
-   <td>ACTION</td> 
-   <td>Displays the last running state of the pre-upgrade maintenance task with the name given as the parameter.</td> 
-  </tr> 
-  <tr> 
-   <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
-   <td>ACTION</td> 
-   <td><p>Runs all the pre-upgrade health checks and saves their status in a file named <code>preUpgradeHCStatus.properties</code> that is located in the sling home path. If the <code>shutDownOnSuccess</code> parameter is set to <code>true</code>, the AEM instance will be shut down, but only if all the pre-upgrade health checks have an OK status.</p> <p>The properties file will be used as a precondition for any future upgrade<br /> and the upgrade process will be stopped if the pre-upgrade health check<br /> execution failed. If you want to ignore the result of the pre-upgrade<br /> health checks and launch the upgrade anyway, you can delete the file.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
-   <td>ACTION</td> 
-   <td>Lists all the imported packages that will no longer be satisfied when<br /> upgrading to the specified AEM version. The target AEM version must be<br /> given as parameter.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Method Name</strong></td>
+   <td><strong>Type</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><code>getAvailablePreUpgradeTasksNames()</code></td>
+   <td>INFO</td>
+   <td>Displays the list of available pre-upgrade maintenance tasks names.</td>
+  </tr>
+  <tr>
+   <td><code>getAvailablePreUpgradeHealthChecksTagNames()</code></td>
+   <td>INFO</td>
+   <td>Displays the list of pre-upgrade health checks tag names.</td>
+  </tr>
+  <tr>
+   <td><code>runAllPreUpgradeTasks()</code></td>
+   <td>ACTION</td>
+   <td>Runs all the pre-upgrade maintenance tasks in the list.</td>
+  </tr>
+  <tr>
+   <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td>
+   <td>ACTION</td>
+   <td>Runs the pre-upgrade maintenance task with the name given as the parameter.</td>
+  </tr>
+  <tr>
+   <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
+   <td>ACTION_INFO</td>
+   <td>Checks if the <code>runAllPreUpgradeTasksmaintenance</code> task is currently running.</td>
+  </tr>
+  <tr>
+   <td><code>getAnyPreUpgradeTaskRunning()</code></td>
+   <td>ACTION_INFO</td>
+   <td>Checks if any pre-upgrade maintenance task is currently running and<br /> returns an array containing the names of currently running tasks.</td>
+  </tr>
+  <tr>
+   <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td>
+   <td>ACTION</td>
+   <td>Displays the exact running time of the pre-upgrade maintenance task with the name given as the parameter.</td>
+  </tr>
+  <tr>
+   <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td>
+   <td>ACTION</td>
+   <td>Displays the last running state of the pre-upgrade maintenance task with the name given as the parameter.</td>
+  </tr>
+  <tr>
+   <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
+   <td>ACTION</td>
+   <td><p>Runs all the pre-upgrade health checks and saves their status in a file named <code>preUpgradeHCStatus.properties</code> that is located in the sling home path. If the <code>shutDownOnSuccess</code> parameter is set to <code>true</code>, the AEM instance will be shut down, but only if all the pre-upgrade health checks have an OK status.</p> <p>The properties file will be used as a precondition for any future upgrade<br /> and the upgrade process will be stopped if the pre-upgrade health check<br /> execution failed. If you want to ignore the result of the pre-upgrade<br /> health checks and launch the upgrade anyway, you can delete the file.</p> </td>
+  </tr>
+  <tr>
+   <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
+   <td>ACTION</td>
+   <td>Lists all the imported packages that will no longer be satisfied when<br /> upgrading to the specified AEM version. The target AEM version must be<br /> given as parameter.</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
 >
 >The MBean methods can be invoked via:
 >
->* The JMX Console  
->* Any external application that connects to JMX  
+>* The JMX Console
+>* Any external application that connects to JMX
 >* cURL
 >
 

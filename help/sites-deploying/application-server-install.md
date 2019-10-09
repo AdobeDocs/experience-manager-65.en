@@ -5,7 +5,7 @@ description: Learn how to install AEM with an application server.
 seo-description: Learn how to install AEM with an application server.
 uuid: c9571f80-6ed1-46fe-b7c3-946658dfc3f4
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
@@ -42,7 +42,7 @@ AEM comes as a single war file to deploy.
 If deployed the following will happen by default:
 
 * the run mode is `author`
-* the instance (Repository, Felix OSGI environment, bundles etc.) is installed in `${user.dir}/crx-quickstart`where `${user.dir}` is the current working directory, this path to crx-quickstart is called `sling.home`  
+* the instance (Repository, Felix OSGI environment, bundles etc.) is installed in `${user.dir}/crx-quickstart`where `${user.dir}` is the current working directory, this path to crx-quickstart is called `sling.home`
 
 * the context root is the war file name e.g : `aem-6`
 
@@ -52,7 +52,7 @@ You can change the default behaviour in the following way:
 
 * run mode : configure the `sling.run.modes` parameter in the `WEB-INF/web.xml` file of the AEM war file before deployment
 
-* sling.home: configure the `sling.home` parameter in the `WEB-INF/web.xml`file of the AEM war file before deployment  
+* sling.home: configure the `sling.home` parameter in the `WEB-INF/web.xml`file of the AEM war file before deployment
 
 * context root: rename the AEM war file
 
@@ -192,7 +192,7 @@ Before a deployment read the [General Description](#general-description) above.
     * Tomcat enables neither admin nor manager access at installation. Therefore you have to manually edit `tomcat-users.xml` to allow access for these accounts:
 
         * Edit `tomcat-users.xml` to include access for admin and manager. The configuration should look similar to the following example:
-        * ```        
+        * ```
           <?xml version='1.0' encoding='utf-8'?>
            <tomcat-users>
            <role rolename="manager"/>
@@ -215,11 +215,11 @@ Before a deployment read the [General Description](#general-description) above.
 
     * If you install the AEM web application using the manager-gui then you need to increase the maximal size of an uploaded file, as the default only allows 50MB upload size. For that open the web.xml of the manager web application,
 
-      `webapps/manager/WEB-INF/web.xml`    
-    
+      `webapps/manager/WEB-INF/web.xml`
+
       and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a a `web.xml` file:
-        
-        ```        
+
+        ```
           <multipart-config>
            <!-- 500MB max -->
            <max-file-size>524288000</max-file-size>

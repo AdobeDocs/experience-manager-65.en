@@ -5,7 +5,7 @@ description: Learn how to configure and monitor replication agents in AEM.
 seo-description: Learn how to configure and monitor replication agents in AEM.
 uuid: 0e4fa6be-2e94-42c7-9cc2-516495e48deb
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 6fe1c5c5-deb7-4405-82e4-23e0f90e2bd8
@@ -36,11 +36,11 @@ Replication, to a publish instance or dispatcher, takes place in several steps:
 * the replication agent "packages" the content and places it in the replication queue.
 * in the Websites tab the [colored status indicator](/help/sites-authoring/publishing-pages.md#determining-publication-status) is set for the individual pages.
 * the content is lifted from the queue and transported to the publish environment using the configured protocol; usually this is HTTP.
-* a servlet in the publish environment receives the request and publishes the received content; the default servlet is `http://localhost:4503/bin/receive`.  
+* a servlet in the publish environment receives the request and publishes the received content; the default servlet is `http://localhost:4503/bin/receive`.
 
 * multiple author and publish environments can be configured.
 
-![chlimage_1-144](assets/chlimage_1-144.png) 
+![chlimage_1-144](assets/chlimage_1-144.png)
 
 ## Replicating from Publish to Author {#replicating-from-publish-to-author}
 
@@ -74,18 +74,18 @@ To follow this example and use the default replication agents you need to [Insta
 >* Agents on author : Reverse Replication Agent (publish_reverse)
 >* Agents on publish : Reverse Replication (outbox)
 >
->To check the status of either the agent or the queue use the **Tools** console.  
+>To check the status of either the agent or the queue use the **Tools** console.
 >See [Monitoring your Replication Agents](#monitoring-your-replication-agents).
 
 ### Replication (Author to Publish) {#replication-author-to-publish}
 
 1. Navigate to the support page on the author environment.
 
-   `http://localhost:4502/content/geometrixx/en/support.html` 
+   `http://localhost:4502/content/geometrixx/en/support.html`
 
 1. Edit the page to add some new text.
 1. **Activate Page** to publish the changes.
-1. Open the support page on the publish environment: 
+1. Open the support page on the publish environment:
 
    `http://localhost:4503/content/geometrixx/en/support.html`
 
@@ -93,10 +93,10 @@ To follow this example and use the default replication agents you need to [Insta
 
 This replication is actioned from the author environment by the:
 
-* **Default Agent (publish)** 
+* **Default Agent (publish)**
   This agent replicates content to the default publish instance.
 
-  Details of this (configuration and logs) can be accessed from the Tools console of the author environment; or: 
+  Details of this (configuration and logs) can be accessed from the Tools console of the author environment; or:
 
   `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
@@ -281,14 +281,14 @@ The following settings are only needed if a proxy is needed:
 
   These are used, as appropriate, to indicate the action to be used when flushing the handle or path. The sub-parameters are dynamic:
 
-    * `{action}` indicates a replication action 
+    * `{action}` indicates a replication action
     * `{path}` indicates a path
 
   They are substituted by the path/action relevant to the request and therefore do not need to be "hardcoded":
 
   >[!NOTE]
   >
-  >If you have installed AEM in a context other than the recommended default context, then you will need to register the context in the HTTP Headers. For example: 
+  >If you have installed AEM in a context other than the recommended default context, then you will need to register the context in the HTTP Headers. For example:
   >
   >`CQ-Handle:/<*yourContext*>{path}`
 
@@ -394,7 +394,7 @@ If you want to use reverse replication then ensure that this agent is activated.
 
 **A reverse replication agent in the publish environment (an outbox)** This is the passive element as it acts as an "outbox". User input is placed here, from where it is collected by the agent in the author environment.
 
-![chlimage_1-9](assets/chlimage_1-9.jpeg) 
+![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
 ### Configuring Replication for Multiple Publish Instances {#configuring-replication-for-multiple-publish-instances}
 
@@ -425,10 +425,10 @@ To configure replication of content for an additional publish instance you need 
 
     * In the **Transport** tab:
 
-        * Enter the required URI for the new publish instance; for example, 
+        * Enter the required URI for the new publish instance; for example,
 
           `http://localhost:4504/bin/receive`.
-        
+
         * Enter the site-specific user account used for replication.
         * You can configure other parameters as required.
 
@@ -442,7 +442,7 @@ If you encounter any problems, you can check the logs on the author instance. De
 
 >[!NOTE]
 >
->This can be combined with use of the [Agent User Id](#settings) to select different content for replicating to the individual publish environments. For each publish environment:  
+>This can be combined with use of the [Agent User Id](#settings) to select different content for replicating to the individual publish environments. For each publish environment:
 >
 >1. Configure a replication agent for replicating to that publish environment.
 >1. Configure a user account; with the access rights required to read the content that will be replicated to that specific publish environment.
@@ -468,10 +468,10 @@ Default agents are included with the installation. However, certain configuratio
 
     * In the **Transport** tab:
 
-        * Enter the required URI for the new publish instance; for example, 
+        * Enter the required URI for the new publish instance; for example,
 
           `http://localhost:80/dispatcher/invalidate.cache`.
-        
+
         * Enter the site-specific user account used for replication.
         * You can configure other parameters as required.
 
@@ -510,7 +510,7 @@ If you navigate to `/etc/replication` you can see the following three nodes:
 
 The two `agents` hold configuration information about the appropriate environment, and are only active when that environment is running. For example, `agents.publish` will only be used in the publish environment. The following screenshot shows the publish agent in the author environment, as included with AEM WCM:
 
-![chlimage_1-147](assets/chlimage_1-147.png) 
+![chlimage_1-147](assets/chlimage_1-147.png)
 
 ## Monitoring your Replication Agents {#monitoring-your-replication-agents}
 
@@ -541,9 +541,9 @@ To monitor a replication agent:
    >
    >Do not use the "Test Connection" link for the Reverse Replication Outbox on a publish instance.
    >
-   >If a replication test is performed for an Outbox queue, any items that are older than the test replication will be re-processed with every reverse replication. 
+   >If a replication test is performed for an Outbox queue, any items that are older than the test replication will be re-processed with every reverse replication.
    >
-   >If such items already exist in a queue, they can be found with the following XPath JCR query and should be removed. 
+   >If such items already exist in a queue, they can be found with the following XPath JCR query and should be removed.
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
@@ -553,16 +553,16 @@ For details about troubleshooting, you can read the [Troubleshooting Replication
 
 For additional information, Adobe has a series of Knowledge Base articles related to replication:
 
-[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)  
-[https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)  
-[https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)  
-[https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)  
-[https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)  
-[https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)  
-[https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)  
-[https://helpx.adobe.com/experience-manager/kb/replication-stuck.html](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)  
-[https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)  
-[https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)  
-[https://helpx.adobe.com/experience-manager/kb/ACLReplication.html](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)  
-[https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)  
+[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)
+[https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)
+[https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)
+[https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)
+[https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
+[https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)
+[https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)
+[https://helpx.adobe.com/experience-manager/kb/replication-stuck.html](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)
+[https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)
+[https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)
+[https://helpx.adobe.com/experience-manager/kb/ACLReplication.html](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)
+[https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)
 [https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)

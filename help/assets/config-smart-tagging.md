@@ -5,7 +5,7 @@ description: Learn how to configure smart tagging and enhanced smart tagging in 
 seo-description: How to configure the Smart Tags Content Service from within AEM.
 uuid: f4a7e2cf-190b-47e0-9e78-bcac9f1cf6ef
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 957fef58-b1d4-4312-87d1-92f32a79161b
 ---
 
@@ -19,7 +19,7 @@ The article details out the following key tasks that are required to configure t
 
 * Create a Smart Content Service configuration in AEM to generate a public key. Obtain public certificate for OAuth integration.
 * Create an integration in Adobe I/O and upload the generated public key.
-* Configure your AEM instance using the API key and other credentials from Adobe I/O.  
+* Configure your AEM instance using the API key and other credentials from Adobe I/O.
 * Optionally, enable auto-tagging on asset upload.
 
 ## Prerequisites {#prerequisites}
@@ -35,7 +35,7 @@ To enable Enhanced Smart Tags, in addition to the above, also install the latest
 
 A public certificate allows you to authenticate your profile on Adobe I/O.
 
-1. From the AEM user interface, tap the AEM logo, and go to **[!UICONTROL Tools > Cloud Services]**> **[!UICONTROL Legacy Cloud Services]**.  
+1. From the AEM user interface, tap the AEM logo, and go to **[!UICONTROL Tools > Cloud Services]**> **[!UICONTROL Legacy Cloud Services]**.
 
 1. In the Cloud Services page, tap/click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the Smart Tags configuration. Tap/click **[!UICONTROL Create]**.

@@ -5,7 +5,7 @@ description: AEM is based on Sling and uses a JCR repository with node types off
 seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
@@ -24,7 +24,7 @@ In addition to these. AEM provides a range of custom node types.
 
 ### cq:AuditEvent {#cq-auditevent}
 
-**Description** 
+**Description**
 
 Defines the node type of an audit event node.
 
@@ -35,7 +35,7 @@ Defines the node type of an audit event node.
 * `@prop cq:category`
 * `@prop cq:properties`
 
-**Definition** 
+**Definition**
 
 * `[cq:AuditEvent]`
     * `- * (undefined)`
@@ -52,7 +52,7 @@ Defines the node type of an audit event node.
 
 ### cq:Comment {#cq-comment}
 
-**Description** 
+**Description**
 
 Defines the nodetype of a comment node.
 
@@ -71,11 +71,11 @@ Defines the nodetype of a comment node.
 
 ### cq:CommentAttachment {#cq-commentattachment}
 
-**Description** 
+**Description**
 
 Defines the nodetype of a `commentattachment` node
 
-**Definition** 
+**Definition**
 
 * `[cq:CommentAttachment] > nt:file`
     * `- * (undefined)`
@@ -83,11 +83,11 @@ Defines the nodetype of a `commentattachment` node
 
 ### cq:CommentContent {#cq-commentcontent}
 
-**Description** 
+**Description**
 
 Defines the nodetype of a comment content node
 
-**Definition** 
+**Definition**
 
 * `[cq:Comment] > mix:title, mix:created, mix:language, nt:unstructured, cq:Taggable`
 * `- email (string)`
@@ -100,14 +100,14 @@ Defines the nodetype of a comment content node
 
 ### cq:GeoLocation {#cq-geolocation}
 
-**Description** 
+**Description**
 
 A mixin that defines a geographic location in decimal degrees (DD)
 
 * `@prop latitude` - latitude encoded as double using decimal degrees
 * `@prop longitude` - longitude encoded as double using decimal degrees
 
-**Definition** 
+**Definition**
 
 * `[cq:GeoLocation] mixin`
 * `- latitude (double)`
@@ -115,11 +115,11 @@ A mixin that defines a geographic location in decimal degrees (DD)
 
 ### cq:Trackback {#cq-trackback}
 
-**Description** 
+**Description**
 
 Defines the node type of a trackback node.
 
-**Definition** 
+**Definition**
 
 * `[cq:Trackback] > mix:title, mix:created, mix:language, nt:unstructured`
 
@@ -133,7 +133,7 @@ Defines the default CQ page.
 
 * `@node jcr:content` - Primary content of the page.
 
-**Definition** 
+**Definition**
 
 * `[cq:Page] > nt:hierarchyNode orderable`
     * `+ jcr:content (nt:base) = nt:unstructured copy primary`
@@ -141,17 +141,17 @@ Defines the default CQ page.
 
 ### cq:PseudoPage {#cq-pseudopage}
 
-**Description** 
+**Description**
 
 Defines a mixin type that marks nodes as pseudo pages. This means they can be adapted for Page and WCM editing support.
 
-**Definition** 
+**Definition**
 
 * `[cq:PseudoPage] mixin`
 
 ### cq:PageContent {#cq-pagecontent}
 
-**Description** 
+**Description**
 
 Defines the default node for page content, with the minimum properties as used by WCM.
 
@@ -172,7 +172,7 @@ Defines the default node for page content, with the minimum properties as used b
 >
 >It is not compulsory for page content to use this type.
 
-**Definition** 
+**Definition**
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
     * `- cq:template (string)`
     * `- cq:allowedTemplates (string) multiple`
@@ -188,14 +188,14 @@ Defines the default node for page content, with the minimum properties as used b
 
 ### cq:Template {#cq-template}
 
-**Description** 
+**Description**
 
 Defines a CQ template.
 
 * `@node jcr:content` - Default content for new pages.
 * `@node icon.png` - A file that holds a characteristic icon.
 * `@node thumbnail.png` - A file that holds a characteristic thumbnail image.
-* `@node workflows` - Auto assign workflow configuration. The configuration will follow the structure below: 
+* `@node workflows` - Auto assign workflow configuration. The configuration will follow the structure below:
     *  `+ workflows`
         *  `+ name1`
             * `- cq:path`
@@ -204,7 +204,7 @@ Defines a CQ template.
 * `@prop allowedChildren` - Regular expression patterns to determine the path(s) to templates allowed as child templates.
 * `@prop ranking` - Position within the list of templates in the create page dialog.
 
-**Definition** 
+**Definition**
 
 * `[cq:Template] > nt:hierarchyNode, mix:title`
     * `- * (undefined)`
@@ -413,7 +413,7 @@ DAM asset.
 
 ### dam:Thumbnail {#dam-thumbnail}
 
-**Description** 
+**Description**
 
 Thumbnail to represent a DAM asset.
 
@@ -485,12 +485,12 @@ Poll configuration.
 
 * `@prop source (String) mandatory` - Data source URI, this is required and must not be empty
 * `@prop target (String)` - The target location where data retrieved from the data source is stored. This is optional and defaults to the cq:PollConfig node.
-* `@prop interval (Long)` - The interval in seconds at which to poll for new or updated data from the data source. This is optional and defaults to 30 Minutes (1800 seconds).  
+* `@prop interval (Long)` - The interval in seconds at which to poll for new or updated data from the data source. This is optional and defaults to 30 Minutes (1800 seconds).
 * [Creating Custom Data Importer Services for Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definition**
 
-* `[cq:PollConfig] 
+* `[cq:PollConfig]
     * `mixin`
     * `- source (String) mandatory`
     * `- target (String)`
@@ -544,7 +544,7 @@ MailerService nodetypes. The mailer uses nodes having this mixin as root nodes o
 
 ### cq:LiveRelationship {#cq-liverelationship}
 
-**Description** 
+**Description**
 
 Defines a LiveRelationship mixin. A master node and a slave node can be virtually linked through a LiveRelationship.
 
@@ -557,7 +557,7 @@ Defines a LiveRelationship mixin. A master node and a slave node can be virtuall
 
 ### cq:LiveSync {#cq-livesync}
 
-**Description** 
+**Description**
 
 Defines a LiveSync mixin. If a node is involved in a LiveRelationship with a master node as a slave, it is marked a LiveSync.
 
@@ -600,7 +600,7 @@ Defines a LiveSyncAction attached to a LiveSync.
 
 ### cq:LiveSyncConfig {#cq-livesyncconfig}
 
-**Description** 
+**Description**
 
 Live Sync configuration.
 
@@ -617,7 +617,7 @@ For AEM 5.4 add to the end of list:
 
 ### cq:BlueprintAction {#cq-blueprintaction}
 
-**Description** 
+**Description**
 
 Blueprint action
 
@@ -693,7 +693,7 @@ Defines an application privilege ACL.
 
 ### cq:PrivilegeAce {#cq-privilegeace}
 
-**Description** 
+**Description**
 
 Defines an application privilege ACE.
 
@@ -776,7 +776,7 @@ Defines a single tag, but can also contain tags, thus creating a taxonomy
 
 ### cq:Taggable {#cq-taggable}
 
-**Description** 
+**Description**
 
 Abstract base mixin for taggable content.
 
@@ -810,7 +810,7 @@ Any user/public website can tag the content (Web2.0 style), used inside cq:userC
 
 ### cq:AllowsUserContent {#cq-allowsusercontent}
 
-**Description** 
+**Description**
 
 Adds a `cq:userContent` subnode that can be modified by users. Each user will have its own `cq:userContent/<userid>` subnode, that typically has the mixin `cq:UserTaggable`.
 
@@ -842,7 +842,7 @@ Can be modified by users.
 
 ### cq:UserData {#cq-userdata}
 
-**Description** 
+**Description**
 
 User data
 
@@ -866,7 +866,7 @@ Client library folder
 
 ### cq:Widget {#cq-widget}
 
-**Description** 
+**Description**
 
 Widget
 
@@ -880,7 +880,7 @@ Widget
 
 ### cq:WidgetCollection {#cq-widgetcollection}
 
-**Description** 
+**Description**
 
 Widget collection
 
@@ -912,7 +912,7 @@ Panel
 
 ### cq:TabPanel {#cq-tabpanel}
 
-**Description** 
+**Description**
 
 Tab panel
 
@@ -923,7 +923,7 @@ Tab panel
 
 ### cq:Field {#cq-field}
 
-**Description** 
+**Description**
 
 Field
 
@@ -942,7 +942,7 @@ Field
 
 Wiki topic
 
-**Definition** 
+**Definition**
 
 * `[wiki:Topic] > nt:unstructured, nt:hierarchyNode, mix:versionable, mix:lockable`
     * `+ * (wiki:Topic) version`
@@ -1069,7 +1069,7 @@ Auto assign workflow configuration. The configuration will follow this structure
 
 **Definition**
 
-* `[cq:WorkflowModel] > nt:base, mix:versionable` 
+* `[cq:WorkflowModel] > nt:base, mix:versionable`
     * `orderable`
     * `- title (String)`
     * `- description (String)`
@@ -1083,7 +1083,7 @@ Auto assign workflow configuration. The configuration will follow this structure
 
 ### cq:WorkflowNode {#cq-workflownode}
 
-**Description** 
+**Description**
 
 Workflow node
 

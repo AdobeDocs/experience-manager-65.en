@@ -6,7 +6,7 @@ seo-description: Learn to create your first Interactive Communication.
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 topic-tags: introduction
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 ---
@@ -43,7 +43,7 @@ A telecom operator sends monthly bills to the customers over the email. The bill
 
 ## Prerequisites {#prerequisites}
 
-* Set up an AEM author instance.  
+* Set up an AEM author instance.
 * Install [AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) on author instance
 * Set up the MYSQL database
 * Obtain JDBC database driver (JAR file) from database provider. Examples in the tutorial are based on MySQL database and use Oracle's [MySQL JDBC database driver](https://dev.mysql.com/downloads/connector/j/5.1.html).
@@ -74,10 +74,10 @@ A form data model allows you to connect an Interactive Communication to disparat
 
 **Goals:**
 
-* Configure database instance (MySQL database) as a data source  
+* Configure database instance (MySQL database) as a data source
 * Create the form data model using MySQL database as a data source
 * Add data model objects to form data model
-* Configure read and write services for the form data model  
+* Configure read and write services for the form data model
 * Create associations between the data model objects
 * View auto-generated sample data
 * Edit sample data

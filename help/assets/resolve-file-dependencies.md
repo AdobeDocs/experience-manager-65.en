@@ -7,7 +7,7 @@ uuid: 49cefabf-147b-4a78-90f3-0f2d6a8e8cae
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 ---
 
@@ -42,7 +42,7 @@ Primary 3D model file dependencies, such as texture map files, are automatically
 
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. The newly uploaded asset are now properly listed as referenced assets.
 
-    * **Ignore the dependencies**. 
+    * **Ignore the dependencies**.
 
       If a missing dependency is no longer needed, under the **[!UICONTROL Referenced Asset]** column, in the text field to the left of the missing file, type `n/a` so that AEM 3D ignores the file.
 

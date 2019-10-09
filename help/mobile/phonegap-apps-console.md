@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about creating and editing apps using
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 ---
@@ -63,7 +63,7 @@ The Home page, or index.html page of a language variation of an application appe
 Mobile applications are based on a blueprint that defines a page structure and properties. You can configure the following application properties:
 
 * **Title:** The application title.
-* **Destination Path:** The location in the repository where the application is stored. Leave the default to create a path based on the app name.  
+* **Destination Path:** The location in the repository where the application is stored. Leave the default to create a path based on the app name.
 
 * **Name:** The default value is the value of the Title property with space characters removed. The name is used within CQ to refer to the application, for example for the repository node that represents the application.
 * **Description:** A description of the application.

@@ -6,7 +6,7 @@ seo-description: null
 uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 ---
@@ -54,7 +54,7 @@ You can programmatically create policies using the Document Security Java API or
 Policies enable you to perform these tasks:
 
 * Specify the individuals who can open the document. Recipients can either belong to or be external to your organization.
-* Specify how recipients can use the document. You can restrict access to different Acrobat and Adobe Reader features. These features include the ability to print and copy text, add signatures, and add comments to a document. 
+* Specify how recipients can use the document. You can restrict access to different Acrobat and Adobe Reader features. These features include the ability to print and copy text, add signatures, and add comments to a document.
 * Change the access and security settings at any time, even after you distribute the policy-protected document.
 * Monitor the use of the document after you distribute it. You can see how the document is being used and who is using it. For example, you can find out when someone has opened the document.
 
@@ -63,64 +63,64 @@ Policies enable you to perform these tasks:
 When creating a policy using the web service API, reference an existing Portable Document Rights Language (PDRL) XML file that describes the policy. Policy permissions and the principal are defined in the PDRL document. The following XML document is an example of a PDRL document.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
- <Policy PolicyInstanceVersion="1" PolicyID="5DA3F847-DE76-F9CC-63EA-49A8D59154DE" PolicyCreationTime="2004-08-30T00:02:28.294+00:00" PolicyType="1" PolicySchemaVersion="1.0" PolicyName="SDK Test Policy -4344050357301573237" PolicyDescription="An SDK Test policy" xmlns="https://www.adobe.com/schema/1.0/pdrl"> 
-       <PolicyEntry> 
-          <ns1:Permission PermissionName="com.adobe.aps.onlineOpen" Access="ALLOW" xmlns:ns1="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns2:Permission PermissionName="com.adobe.aps.offlineOpen" Access="ALLOW" xmlns:ns2="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns3:Permission PermissionName="com.adobe.aps.pdf.editNotes" Access="ALLOW" xmlns:ns3="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns4:Permission PermissionName="com.adobe.aps.pdf.fillAndSign" Access="ALLOW" xmlns:ns4="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-          <Principal PrincipalNameType="SYSTEM"> 
-             <PrincipalDomain>EDC_SPECIAL</PrincipalDomain> 
-  
-             <PrincipalName>all_internal_users</PrincipalName> 
-          </Principal> 
-       </PolicyEntry> 
-       <PolicyEntry> 
-          <ns5:Permission PermissionName="com.adobe.aps.onlineOpen" Access="ALLOW" xmlns:ns5="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns6:Permission PermissionName="com.adobe.aps.offlineOpen" Access="ALLOW" xmlns:ns6="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns7:Permission PermissionName="com.adobe.aps.pdf.copy" Access="ALLOW" xmlns:ns7="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns8:Permission PermissionName="com.adobe.aps.pdf.printLow" Access="ALLOW" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" xmlns:ns8="https://www.adobe.com/schema/1.0/pdrl" /> 
-  
-          <ns9:Permission PermissionName="com.adobe.aps.policySwitch" Access="ALLOW" xmlns:ns9="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns10:Permission PermissionName="com.adobe.aps.revoke" Access="ALLOW" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" xmlns:ns10="https://www.adobe.com/schema/1.0/pdrl" /> 
-  
-          <ns11:Permission PermissionName="com.adobe.aps.pdf.edit" Access="ALLOW" xmlns:ns11="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns12:Permission PermissionName="com.adobe.aps.pdf.editNotes" Access="ALLOW" xmlns:ns12="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns13:Permission PermissionName="com.adobe.aps.pdf.fillAndSign" Access="ALLOW" xmlns:ns13="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <ns14:Permission PermissionName="com.adobe.aps.pdf.printHigh" Access="ALLOW" xmlns:ns14="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" /> 
-  
-          <Principal PrincipalNameType="SYSTEM"> 
-             <PrincipalDomain>EDC_SPECIAL</PrincipalDomain> 
-  
-             <PrincipalName>publisher</PrincipalName> 
-          </Principal> 
-       </PolicyEntry> 
-  
-       <OfflineLeasePeriod> 
-          <Duration>P31D</Duration> 
-       </OfflineLeasePeriod> 
-  
-       <AuditSettings isTracked="true" /> 
-  
-       <PolicyValidityPeriod isAbsoluteTime="false"> 
-          <ValidityPeriodRelative> 
-             <NotBeforeRelative>PT0S</NotBeforeRelative> 
-  
-             <NotAfterRelative>P20D</NotAfterRelative> 
-          </ValidityPeriodRelative> 
-       </PolicyValidityPeriod> 
- </Policy> 
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <Policy PolicyInstanceVersion="1" PolicyID="5DA3F847-DE76-F9CC-63EA-49A8D59154DE" PolicyCreationTime="2004-08-30T00:02:28.294+00:00" PolicyType="1" PolicySchemaVersion="1.0" PolicyName="SDK Test Policy -4344050357301573237" PolicyDescription="An SDK Test policy" xmlns="https://www.adobe.com/schema/1.0/pdrl">
+       <PolicyEntry>
+          <ns1:Permission PermissionName="com.adobe.aps.onlineOpen" Access="ALLOW" xmlns:ns1="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns2:Permission PermissionName="com.adobe.aps.offlineOpen" Access="ALLOW" xmlns:ns2="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns3:Permission PermissionName="com.adobe.aps.pdf.editNotes" Access="ALLOW" xmlns:ns3="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns4:Permission PermissionName="com.adobe.aps.pdf.fillAndSign" Access="ALLOW" xmlns:ns4="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+          <Principal PrincipalNameType="SYSTEM">
+             <PrincipalDomain>EDC_SPECIAL</PrincipalDomain>
+ 
+             <PrincipalName>all_internal_users</PrincipalName>
+          </Principal>
+       </PolicyEntry>
+       <PolicyEntry>
+          <ns5:Permission PermissionName="com.adobe.aps.onlineOpen" Access="ALLOW" xmlns:ns5="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns6:Permission PermissionName="com.adobe.aps.offlineOpen" Access="ALLOW" xmlns:ns6="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns7:Permission PermissionName="com.adobe.aps.pdf.copy" Access="ALLOW" xmlns:ns7="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns8:Permission PermissionName="com.adobe.aps.pdf.printLow" Access="ALLOW" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" xmlns:ns8="https://www.adobe.com/schema/1.0/pdrl" />
+ 
+          <ns9:Permission PermissionName="com.adobe.aps.policySwitch" Access="ALLOW" xmlns:ns9="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns10:Permission PermissionName="com.adobe.aps.revoke" Access="ALLOW" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" xmlns:ns10="https://www.adobe.com/schema/1.0/pdrl" />
+ 
+          <ns11:Permission PermissionName="com.adobe.aps.pdf.edit" Access="ALLOW" xmlns:ns11="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns12:Permission PermissionName="com.adobe.aps.pdf.editNotes" Access="ALLOW" xmlns:ns12="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns13:Permission PermissionName="com.adobe.aps.pdf.fillAndSign" Access="ALLOW" xmlns:ns13="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <ns14:Permission PermissionName="com.adobe.aps.pdf.printHigh" Access="ALLOW" xmlns:ns14="https://www.adobe.com/schema/1.0/pdrl" xmlns="https://www.adobe.com/schema/1.0/pdrl-ex" />
+ 
+          <Principal PrincipalNameType="SYSTEM">
+             <PrincipalDomain>EDC_SPECIAL</PrincipalDomain>
+ 
+             <PrincipalName>publisher</PrincipalName>
+          </Principal>
+       </PolicyEntry>
+ 
+       <OfflineLeasePeriod>
+          <Duration>P31D</Duration>
+       </OfflineLeasePeriod>
+ 
+       <AuditSettings isTracked="true" />
+ 
+       <PolicyValidityPeriod isAbsoluteTime="false">
+          <ValidityPeriodRelative>
+             <NotBeforeRelative>PT0S</NotBeforeRelative>
+ 
+             <NotAfterRelative>P20D</NotAfterRelative>
+          </ValidityPeriodRelative>
+       </PolicyValidityPeriod>
+ </Policy>
  
 ```
 
@@ -134,7 +134,7 @@ To create a policy, perform the following steps:
 
 1. Include project files.
 1. Create a Document Security Client API object.
-1. Set the policy’s attributes. 
+1. Set the policy’s attributes.
 1. Create a policy entry.
 1. Register the policy.
 
@@ -180,7 +180,7 @@ You can specify just a start date, which results in the policy being valid after
 
 When setting attributes that belong to a policy, you can also set encryption settings. These encryption settings take affect when the policy is applied to a document. You can specify the following encryption values:
 
-* **AES256**: Represents the AES encryption algorithm with a 256-bit key. 
+* **AES256**: Represents the AES encryption algorithm with a 256-bit key.
 * **AES128**: Represents the AES encryption algorithm with a 128-bit key.
 * **NoEncryption:** Represents no encryption.
 
@@ -194,7 +194,7 @@ When specifying the `NoEncryption` option, you cannot set the `PlaintextMetadata
 
 A policy entry attaches principals, which are groups and users, and permissions to a policy. A policy must have at least one policy entry. Assume, for example, that you perform these tasks:
 
-* Create and register a policy entry that enables a group to only view a document while online and prohibits recipients from copying it. 
+* Create and register a policy entry that enables a group to only view a document while online and prohibits recipients from copying it.
 * Attach the policy entry to the policy.
 * Secure a document with the policy by using Acrobat.
 
@@ -210,7 +210,7 @@ Create a policy by using the Document Security API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path.
 
 1. Create a Document Security Client API object.
 
@@ -220,20 +220,20 @@ Create a policy by using the Document Security API (Java):
 1. Set the policy’s attributes.
 
     * Create a `Policy` object by invoking the `InfomodelObjectFactory` object’s static `createPolicy` method. This method returns a `Policy` object.
-    * Set the policy’s name attribute by invoking the `Policy` object’s `setName` method and passing a string value that specifies the policy name. 
+    * Set the policy’s name attribute by invoking the `Policy` object’s `setName` method and passing a string value that specifies the policy name.
     * Set the policy’s description by invoking the `Policy` object’s `setDescription` method and passing a string value that specifies the policy’s description.
-    * Set the policy set to which the new policy belongs by invoking the `Policy` object’s `setPolicySetName` method and passing a string value that specifies the policy set name. (You can specify `null` for this parameter value that results in the policy being added to the *My Policies* policy set.) 
-    * Create the policy’s validity period by invoking the `InfomodelObjectFactory` object’s static `createValidityPeriod` method. This method returns a `ValidityPeriod` object. 
-    * Set the number of days for which a policy-protected document is accessible by invoking the `ValidityPeriod` object’s `setRelativeExpirationDays` method and passing an integer value that specifies the number of days. 
+    * Set the policy set to which the new policy belongs by invoking the `Policy` object’s `setPolicySetName` method and passing a string value that specifies the policy set name. (You can specify `null` for this parameter value that results in the policy being added to the *My Policies* policy set.)
+    * Create the policy’s validity period by invoking the `InfomodelObjectFactory` object’s static `createValidityPeriod` method. This method returns a `ValidityPeriod` object.
+    * Set the number of days for which a policy-protected document is accessible by invoking the `ValidityPeriod` object’s `setRelativeExpirationDays` method and passing an integer value that specifies the number of days.
     * Set the policy’s validity period by invoking the `Policy` object’s `setValidityPeriod` method and passing the `ValidityPeriod` object.
 
 1. Create a policy entry.
 
     * Create a policy entry by invoking the `InfomodelObjectFactory` object’s static `createPolicyEntry` method. This method returns a `PolicyEntry` object.
-    * Specify the policy’s permissions by invoking the `InfomodelObjectFactory` object’s static `createPermission` method. Pass a static data member that belongs to the `Permission` interface that represents the permission. This method returns a `Permission` object. For example, to add the permission that enables users to copy data from a policy-protected PDF document, pass `Permission.COPY`. (Repeat this step for each permission to add). 
-    * Add the permission to the policy entry by invoking the `PolicyEntry` object’s `addPermission` method and passing the `Permission` object. (Repeat this step for each `Permission` object that you created). 
+    * Specify the policy’s permissions by invoking the `InfomodelObjectFactory` object’s static `createPermission` method. Pass a static data member that belongs to the `Permission` interface that represents the permission. This method returns a `Permission` object. For example, to add the permission that enables users to copy data from a policy-protected PDF document, pass `Permission.COPY`. (Repeat this step for each permission to add).
+    * Add the permission to the policy entry by invoking the `PolicyEntry` object’s `addPermission` method and passing the `Permission` object. (Repeat this step for each `Permission` object that you created).
     * Create the policy principal by invoking the `InfomodelObjectFactory` object’s static `createSpecialPrincipal` method. Pass a data member that belongs to the `InfomodelObjectFactory` object that represents the principal. This method returns a `Principal` object. For example, to add the publisher of the document as the principal, pass `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-    * Add the principal to the policy entry by invoking the `PolicyEntry` object’s `setPrincipal`method and passing the `Principal` object. 
+    * Add the principal to the policy entry by invoking the `PolicyEntry` object’s `setPrincipal`method and passing the `Principal` object.
     * Add the policy entry to the policy by invoking the `Policy` object’s `addPolicyEntry` method and passing the `PolicyEntry` object.
 
 1. Register the policy.
@@ -271,10 +271,10 @@ Create a policy by using the Document Security API (web service):
 
 1. Create a Document Security Client API object.
 
-    * Create a `DocumentSecurityServiceClient` object by using its default constructor. 
-    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
+    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -285,22 +285,22 @@ Create a policy by using the Document Security API (web service):
 
 1. Set the policy’s attributes.
 
-    * Create a `PolicySpec` object by using its constructor. 
-    * Set the policy’s name by assigning a string value to the `PolicySpec` object’s `name` data member. 
-    * Set the policy’s description by assigning a string value to the `PolicySpec` object’s `description` data member. 
-    * Set the policy set to which the policy will belong by assigning a string value to the `PolicySpec` object’s `policySetName` data member. You must specify an existing policy set name. (You can specify `null` for this parameter value that results in the policy being added to *My Policies*.) 
+    * Create a `PolicySpec` object by using its constructor.
+    * Set the policy’s name by assigning a string value to the `PolicySpec` object’s `name` data member.
+    * Set the policy’s description by assigning a string value to the `PolicySpec` object’s `description` data member.
+    * Set the policy set to which the policy will belong by assigning a string value to the `PolicySpec` object’s `policySetName` data member. You must specify an existing policy set name. (You can specify `null` for this parameter value that results in the policy being added to *My Policies*.)
     * Set the policy’s offline lease period by assigning an integer value to the `PolicySpec` object’s `offlineLeasePeriod` data member.
     * Set the `PolicySpec` object’s `policyXml` data member with a string value that represents PDRL XML data. To perform this task, create a .NET `StreamReader` object by using its constructor. Pass the location of a PDRL XML file that represents the policy to the `StreamReader` constructor. Next, invoke the `StreamReader` object’s `ReadLine` method and assign the return value to a string variable. Iterate through the `StreamReader` object until the `ReadLine` method returns null. Assign the string variable to the `PolicySpec` object’s `policyXml` data member.
 
 1. Create a policy entry.
 
-   It is not necessary to create a policy entry when creating a policy using the Document Security web service API. The policy entry is defined in the PDRL document. 
+   It is not necessary to create a policy entry when creating a policy using the Document Security web service API. The policy entry is defined in the PDRL document.
 
 1. Register the policy.
 
    Register the policy by invoking the `DocumentSecurityServiceClient` object’s `registerPolicy` method and passing the following values:
 
-    * The `PolicySpec` object that represents the policy to register. 
+    * The `PolicySpec` object that represents the policy to register.
     * A string value that represents the policy set that the policy belongs to. You can specify a `null` value which results in the policy being added to the *MyPolices* policy set.
 
    If you use a AEM forms administrator account within connection settings to create the `DocumentSecurityClient` object, specify the policy set name when you invoke the `registerPolicy` method.
@@ -334,8 +334,8 @@ To modify an existing policy, perform the following steps:
 
 1. Include project files.
 1. Create a Document Security Client API object.
-1. Retrieve an existing policy. 
-1. Change policies attributes. 
+1. Retrieve an existing policy.
+1. Change policies attributes.
 1. Update the policy.
 
 **Include project files**
@@ -370,11 +370,11 @@ Modify an existing policy by using the Document Security API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path.
 
 1. Create a Document Security Client API object.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `RightsManagementClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Retrieve an existing policy.
@@ -382,12 +382,12 @@ Modify an existing policy by using the Document Security API (Java):
     * Create a `PolicyManager` object by invoking the `RightsManagementClient` object’s `getPolicyManager` method.
     * Create a `Policy` object that represents the policy to update by invoking the `PolicyManager` object’s `getPolicy` method and passing the following values”
 
-        * A string value that represents the policy set name to which the policy belongs. You can specify `null` that results in the `MyPolicies` policy set being used. 
+        * A string value that represents the policy set name to which the policy belongs. You can specify `null` that results in the `MyPolicies` policy set being used.
         * A string value that represents the policy name.
 
 1. Set the policy’s attributes.
 
-   Change the policy’s attributes to meet your business requirements. For example, to change the policy’s offline lease period, invoke the `Policy` object’s `setOfflineLeasePeriod` method. 
+   Change the policy’s attributes to meet your business requirements. For example, to change the policy’s offline lease period, invoke the `Policy` object’s `setOfflineLeasePeriod` method.
 
 1. Update the policy.
 
@@ -411,10 +411,10 @@ Modify an existing policy by using the Document Security API (web service):
 
 1. Create a Document Security Client API object.
 
-    * Create a `RightsManagementServiceClient` object by using its default constructor. 
-    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `RightsManagementServiceClient` object by using its default constructor.
+    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -427,12 +427,12 @@ Modify an existing policy by using the Document Security API (web service):
 
    Create a `PolicySpec` object that represents the policy to modify by invoking the `RightsManagementServiceClient` object’s `getPolicy` method and passing the following values:
 
-    * A string value that specifies the policy set name to which the policy belongs. You can specify `null` that results in the `MyPolicies` policy set being used. 
+    * A string value that specifies the policy set name to which the policy belongs. You can specify `null` that results in the `MyPolicies` policy set being used.
     * A string value that specifies the name of the policy.
 
 1. Set the policy’s attributes.
 
-   Change the policy’s attributes to meet your business requirements. 
+   Change the policy’s attributes to meet your business requirements.
 
 1. Update the policy.
 
@@ -479,11 +479,11 @@ Delete a policy by using the Document Security API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path.
 
 1. Create a Document Security Client API object.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `RightsManagementClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Delete the policy.
@@ -491,7 +491,7 @@ Delete a policy by using the Document Security API (Java):
     * Create a `PolicyManager` object by invoking the `RightsManagementClient` object’s `getPolicyManager` method.
     * Delete the policy by invoking the `PolicyManager` object’s `deletePolicy` method and passing the following values:
 
-        * A string value that specifies the policy set name to which the policy belongs. You can specify `null` that results in the `MyPolicies` policy set being used. 
+        * A string value that specifies the policy set name to which the policy belongs. You can specify `null` that results in the `MyPolicies` policy set being used.
         * A string value that specifies the name of the policy to delete.
 
 **Code examples**
@@ -514,10 +514,10 @@ Delete a policy by using the Document Security API (web service):
 
 1. Create a Document Security Client API object.
 
-    * Create a `RightsManagementServiceClient` object by using its default constructor. 
-    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `RightsManagementServiceClient` object by using its default constructor.
+    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -530,7 +530,7 @@ Delete a policy by using the Document Security API (web service):
 
    Delete a policy by invoking the `RightsManagementServiceClient` object’s `deletePolicy` method and passing the following values:
 
-    * A string value that specifies the policy set name to which the policy belongs. You can specify `null` that results in the `MyPolicies` policy set being used. 
+    * A string value that specifies the policy set name to which the policy belongs. You can specify `null` that results in the `MyPolicies` policy set being used.
     * A string value that specifies the name of the policy to delete.
 
 **Code examples**
@@ -596,7 +596,7 @@ Apply a policy to a PDF document by using the Document Security API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path.
 
 1. Create a Document Security Client API object.
 
@@ -605,7 +605,7 @@ Apply a policy to a PDF document by using the Document Security API (Java):
 
 1. Retrieve a PDF document.
 
-    * Create a `java.io.FileInputStream` object that represents the PDF document by using its constructor. Pass a string value that specifies the location of the PDF document. 
+    * Create a `java.io.FileInputStream` object that represents the PDF document by using its constructor. Pass a string value that specifies the location of the PDF document.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
 
 1. Apply an existing policy to the PDF document.
@@ -613,9 +613,9 @@ Apply a policy to a PDF document by using the Document Security API (Java):
     * Create a `DocumentManager` object by invoking the `RightsManagementClient` object’s `getDocumentManager` method.
     * Apply a policy to the PDF document by invoking the `DocumentManager` object’s `protectDocument` method and passing the following values:
 
-        * The `com.adobe.idp.Document` object that contains the PDF document to which the policy is applied. 
+        * The `com.adobe.idp.Document` object that contains the PDF document to which the policy is applied.
         * A string value that specifies the name of the document.
-        * A string value that specifies the name of the policy set to which the policy belongs. You can specify a `null` value that results in the `MyPolicies` policy set being used. 
+        * A string value that specifies the name of the policy set to which the policy belongs. You can specify a `null` value that results in the `MyPolicies` policy set being used.
         * A string value that specifies the policy name.
         * A string value that represents the name of the user manager domain of the user who is the publisher of the document. This parameter value is optional and can be null (if this parameter is null, then the next parameter value must be null).
         * A string value that represents the name of the canonical name of the user manager user who is the publisher of the document. This parameter value is optional and can be `null` (if this parameter is null, then the previous parameter value must be `null`).
@@ -625,7 +625,7 @@ Apply a policy to a PDF document by using the Document Security API (Java):
 
 1. Save the PDF document.
 
-    * Invoke the `RMSecureDocumentResult` object’s `getProtectedDoc` method to get the policy-protected PDF document. This method returns a `com.adobe.idp.Document` object. 
+    * Invoke the `RMSecureDocumentResult` object’s `getProtectedDoc` method to get the policy-protected PDF document. This method returns a `com.adobe.idp.Document` object.
     * Create a `java.io.File` object and ensure that the file extension is PDF.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `Document` object to the file (ensure that you use the `Document` object that was returned by the `getProtectedDoc` method).
 
@@ -656,10 +656,10 @@ Apply a policy to a PDF document by using the Document Security API (web service
 
 1. Create a Document Security Client API object.
 
-    * Create a `RightsManagementServiceClient` object by using its default constructor. 
-    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `RightsManagementServiceClient` object by using its default constructor.
+    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -682,13 +682,13 @@ Apply a policy to a PDF document by using the Document Security API (web service
 
     * The `BLOB` object that contains the PDF document to which the policy is applied.
     * A string value that specifies the name of the document.
-    * A string value that specifies the name of the policy set to which the policy belongs. You can specify a `null` value that results in the `MyPolicies` policy set being used. 
+    * A string value that specifies the name of the policy set to which the policy belongs. You can specify a `null` value that results in the `MyPolicies` policy set being used.
     * A string value that specifies the policy name.
     * A string value that represents the name of the user manager domain of the user who is the publisher of the document. This parameter value is optional and can be null (if this parameter is null, then the next parameter value must be `null`).
     * A string value that represents the name of the canonical name of the user manager user who is the publisher of the document. This parameter value is optional and can be null (if this parameter is null, then the previous parameter value must be `null`).
     * A `RMLocale` value that specifies the locale value (for example, `RMLocale.en`).
-    * A string output parameter that is used to store the policy identifier value. 
-    * A string output parameter that is used to store the policy-protected identifier value. 
+    * A string output parameter that is used to store the policy identifier value.
+    * A string output parameter that is used to store the policy-protected identifier value.
     * A string output parameter that is used to store the mime type (for example, `application/pdf`).
 
    The `protectDocument` method returns a `BLOB` object that contains the policy-protected PDF document.
@@ -759,7 +759,7 @@ Remove a policy from a policy-protected PDF document by using the Document Secur
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path.
 
 1. Create a Document Security Client API object.
 
@@ -768,7 +768,7 @@ Remove a policy from a policy-protected PDF document by using the Document Secur
 
 1. Retrieve a policy-protected PDF document.
 
-    * Create a `java.io.FileInputStream` object that represents the policy-protected PDF document by using its constructor and passing a string value that specifies the location of the PDF document. 
+    * Create a `java.io.FileInputStream` object that represents the policy-protected PDF document by using its constructor and passing a string value that specifies the location of the PDF document.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
 
 1. Remove the policy from the PDF document.
@@ -801,10 +801,10 @@ Remove a policy from a policy-protected PDF document using the Document Security
 
 1. Create a Document Security Client API object.
 
-    * Create a `DocumentSecurityServiceClient` object by using its default constructor. 
-    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
+    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -816,8 +816,8 @@ Remove a policy from a policy-protected PDF document using the Document Security
 1. Retrieve a policy-protected PDF document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the policy-protected PDF document from which the policy is removed.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
@@ -905,7 +905,7 @@ Revoke access to a policy-protected PDF document by using the Document Security 
 
 1. Create a Document Security Client API object
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `DocumentSecurityClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Retrieve a policy-protected PDF document
@@ -917,11 +917,11 @@ Revoke access to a policy-protected PDF document by using the Document Security 
 
     * Create a `DocumentManager` object by invoking the `DocumentSecurityClient` object’s `getDocumentManager` method.
     * Retrieve the license identifier value of the policy-protected document by invoking the `DocumentManager` object’s `getLicenseId` method. Pass the `com.adobe.idp.Document` object that represents the policy-protected document. This method returns a string value that represents the license identifier value.
-    * Create a `LicenseManager` object by invoking the `DocumentSecurityClient` object’s `getLicenseManager` method. 
+    * Create a `LicenseManager` object by invoking the `DocumentSecurityClient` object’s `getLicenseManager` method.
     * Revoke the policy-protected document by invoking the `LicenseManager` object’s `revokeLicense` method and passing the following values:
 
-        * A string value that specifies the license identifier value of the policy-protected document (specify the return value of the `DocumentManager` object’s `getLicenseId` method). 
-        * A static data member of the `License` interface that specifies the reason to revoke the document. For example, you can specify `License.DOCUMENT_REVISED`. 
+        * A string value that specifies the license identifier value of the policy-protected document (specify the return value of the `DocumentManager` object’s `getLicenseId` method).
+        * A static data member of the `License` interface that specifies the reason to revoke the document. For example, you can specify `License.DOCUMENT_REVISED`.
         * A `java.net.URL` value that specifies the location to where a revised document is located. If you do not want to redirect a user to another URL, then you can pass `null`.
 
 **Code examples**
@@ -944,10 +944,10 @@ Revoke access to a policy-protected PDF document by using the Document Security 
 
 1. Create a Document Security Client API object
 
-    * Create a `DocumentSecurityServiceClient` object by using its default constructor. 
-    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
+    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -960,7 +960,7 @@ Revoke access to a policy-protected PDF document by using the Document Security 
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a policy-protected PDF document that is revoked.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the policy-protected PDF document to revoke and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
@@ -969,7 +969,7 @@ Revoke access to a policy-protected PDF document by using the Document Security 
     * Retrieve the license identifier value of the policy-protected document by invoking the `DocumentSecurityServiceClient` object’s `getLicenseID` method and passing the `BLOB` object that represents the policy-protected document. This method returns a string value that represents the license identifier.
     * Revoke the policy-protected document by invoking the `DocumentSecurityServiceClient` object’s `revokeLicense` method and passing the following values:
 
-        * A string value that specifies the license identifier value of the policy-protected document (specify the return value of the `DocumentSecurityServiceService` object’s `getLicenseId` method). 
+        * A string value that specifies the license identifier value of the policy-protected document (specify the return value of the `DocumentSecurityServiceService` object’s `getLicenseId` method).
         * A static data member of the `Reason` enum that specifies the reason to revoke the document. For example, you can specify `Reason.DOCUMENT_REVISED`.
         * A `string` value that specifies the URL location to where a revised document is located. If you do not want to redirect a user to another URL, then you can pass `null`.
 
@@ -1046,14 +1046,14 @@ Reinstate access to a revoked document by using the Document Security API (Java)
 
 1. Retrieve the license identifier of the revoked PDF document.
 
-    * Create a `java.io.FileInputStream` object that represents the revoked PDF document by using its constructor and passing a string value that specifies the location of the PDF document. 
+    * Create a `java.io.FileInputStream` object that represents the revoked PDF document by using its constructor and passing a string value that specifies the location of the PDF document.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
     * Create a `DocumentManager` object by invoking the `DocumentSecurityClient` object’s `getDocumentManager` method.
     * Retrieve the license identifier value of the revoked document by invoking the `DocumentManager` object’s `getLicenseId` method and passing the `com.adobe.idp.Document` object that represents the revoked document. This method returns a string value that represents the license identifier.
 
 1. Reinstate access to the revoked PDF document.
 
-    * Create a `LicenseManager` object by invoking the `DocumentSecurityClient` object’s `getLicenseManager` method. 
+    * Create a `LicenseManager` object by invoking the `DocumentSecurityClient` object’s `getLicenseManager` method.
     * Reinstate access to the revoked PDF document by invoking the `LicenseManager` object’s `unrevokeLicense` method and passing the license identifier value of the revoked document.
 
 **Code examples**
@@ -1076,10 +1076,10 @@ Reinstate access to a revoked document using the Document Security API (web serv
 
 1. Create a Document Security Client API object.
 
-    * Create a `DocumentSecurityServiceClient` object by using its default constructor. 
-    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
+    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -1092,7 +1092,7 @@ Reinstate access to a revoked document using the Document Security API (web serv
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a revoked PDF document to which access is reinstated.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the revoked PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
@@ -1129,8 +1129,8 @@ You cannot perform this task if your version of LiveCycle is 8.x or an earlier v
 To inspect a policy-protected PDF document, perform the following steps:
 
 1. Include project files.
-1. Create a Document Security Client API object. 
-1. Retrieve a policy-protected document to inspect. 
+1. Create a Document Security Client API object.
+1. Retrieve a policy-protected document to inspect.
 1. Obtain information about the policy-protected document.
 
 **Include project files**
@@ -1210,10 +1210,10 @@ Inspect a policy-protected PDF document by using the Document Security Service A
 
 1. Create a Document Security Client API object.
 
-    * Create a `RightsManagementServiceClient` object by using its default constructor. 
-    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `RightsManagementServiceClient` object by using its default constructor.
+    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -1232,7 +1232,7 @@ Inspect a policy-protected PDF document by using the Document Security Service A
 
 1. Inspect the document.
 
-   Inspect the policy-protected document by invoking the `RightsManagementServiceClient` object’s `inspectDocument` method. Pass the `BLOB` object that contains the policy-protected PDF document. This method returns a `RMInspectResult` object that contains information about the policy-protected document. 
+   Inspect the policy-protected document by invoking the `RightsManagementServiceClient` object’s `inspectDocument` method. Pass the `BLOB` object that contains the policy-protected PDF document. This method returns a `RMInspectResult` object that contains information about the policy-protected document.
 
 1. Obtain information about the policy-protected document.
 
@@ -1269,7 +1269,7 @@ To create a watermark, perform the following steps:
 
 1. Include project files.
 1. Create a Document Security Client API object.
-1. Set the watermarks attributes. 
+1. Set the watermarks attributes.
 1. Register the watermark with the Document Security service.
 
 **Include project files**
@@ -1285,82 +1285,82 @@ Before you can programmatically perform a Document Security service operation, y
 To create a new watermark, you must set watermark attributes. The name attribute must always be defined. In addition to the name attribute, you must set at least one of the following attributes:
 
 * Custom Text
-* DateIncluded 
+* DateIncluded
 * UserIdIncluded
 * UserNameIncluded
 
-The following table lists key and value pairs that are required when creating a watermark using web services. 
+The following table lists key and value pairs that are required when creating a watermark using web services.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Key Name</p></th> 
-   <th><p>Description</p></th> 
-   <th><p>Value</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Key Name</p></th>
+   <th><p>Description</p></th>
+   <th><p>Value</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p><code>WaterBackCmd:IS_USERNAME_ENABLED</code></p></td> 
-   <td><p>Specifies if the user name of the user opening the document is part of the watermark.</p></td> 
-   <td><p>True or False</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:IS_USERID_ENABLED</code></p></td> 
-   <td><p>Specifies if the identification of the user opening the document is part of the watermark.</p></td> 
-   <td><p>True or False</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:IS_CURRENTDATE_ENABLED</code></p></td> 
-   <td><p>Specifies if the current date is part of the watermark.</p></td> 
-   <td><p>True or False</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code></p></td> 
-   <td><p>If this value is true, then the value of the custom text must be specified using <code>WaterBackCmd:SRCTEXT</code>.</p></td> 
-   <td><p>True or False</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:OPACITY</code></p></td> 
-   <td><p>Specifies the opacity of the watermark. The default value is 0.5 if it is not specified.</p></td> 
-   <td><p>A value between 0.0 and 1.0.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:ROTATION</code></p></td> 
-   <td><p>Specifies the rotation of the watermark. The default value is 0 degrees.</p></td> 
-   <td><p>A value between 0 and 359.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:SCALE</code></p></td> 
-   <td><p>If this value is specified, then <code>WaterBackCmd:IS_SIZE_ENABLED</code> must be present and the value must be true. If this attribute is not specified, the default behavior is fit to page.</p></td> 
-   <td><p>A value greater than 0.0 and less than or equal to 1.0.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:HORIZ_ALIGN</code></p></td> 
-   <td><p>Specifies the watermark’s horizontal alignment. The default value is center.</p></td> 
-   <td><p>left, center, or right</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:VERT_ALIGN</code></p></td> 
-   <td><p>Specifies the watermark’s vertical alignment. The default value is center.</p></td> 
-   <td><p>top, center, or bottom</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:IS_USE_BACKGROUND</code></p></td> 
-   <td><p>Specifies if the watermark is a background. The default value is false.</p></td> 
-   <td><p>True or False</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:IS_SIZE_ENABLED</code></p></td> 
-   <td><p>True if a custom scale is specified. If this value is true, SCALE must also be specified. If this value is false, then the default is fit to page.</p></td> 
-   <td><p>True or False</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>WaterBackCmd:SRCTEXT</code></p></td> 
-   <td><p>Specifies the custom text for a watermark. If this value is present, then <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> must also be present and set to true.</p></td> 
-   <td><p>True or False</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p><code>WaterBackCmd:IS_USERNAME_ENABLED</code></p></td>
+   <td><p>Specifies if the user name of the user opening the document is part of the watermark.</p></td>
+   <td><p>True or False</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:IS_USERID_ENABLED</code></p></td>
+   <td><p>Specifies if the identification of the user opening the document is part of the watermark.</p></td>
+   <td><p>True or False</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:IS_CURRENTDATE_ENABLED</code></p></td>
+   <td><p>Specifies if the current date is part of the watermark.</p></td>
+   <td><p>True or False</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code></p></td>
+   <td><p>If this value is true, then the value of the custom text must be specified using <code>WaterBackCmd:SRCTEXT</code>.</p></td>
+   <td><p>True or False</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:OPACITY</code></p></td>
+   <td><p>Specifies the opacity of the watermark. The default value is 0.5 if it is not specified.</p></td>
+   <td><p>A value between 0.0 and 1.0.</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:ROTATION</code></p></td>
+   <td><p>Specifies the rotation of the watermark. The default value is 0 degrees.</p></td>
+   <td><p>A value between 0 and 359.</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:SCALE</code></p></td>
+   <td><p>If this value is specified, then <code>WaterBackCmd:IS_SIZE_ENABLED</code> must be present and the value must be true. If this attribute is not specified, the default behavior is fit to page.</p></td>
+   <td><p>A value greater than 0.0 and less than or equal to 1.0.</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:HORIZ_ALIGN</code></p></td>
+   <td><p>Specifies the watermark’s horizontal alignment. The default value is center.</p></td>
+   <td><p>left, center, or right</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:VERT_ALIGN</code></p></td>
+   <td><p>Specifies the watermark’s vertical alignment. The default value is center.</p></td>
+   <td><p>top, center, or bottom</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:IS_USE_BACKGROUND</code></p></td>
+   <td><p>Specifies if the watermark is a background. The default value is false.</p></td>
+   <td><p>True or False</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:IS_SIZE_ENABLED</code></p></td>
+   <td><p>True if a custom scale is specified. If this value is true, SCALE must also be specified. If this value is false, then the default is fit to page.</p></td>
+   <td><p>True or False</p></td>
+  </tr>
+  <tr>
+   <td><p><code>WaterBackCmd:SRCTEXT</code></p></td>
+   <td><p>Specifies the custom text for a watermark. If this value is present, then <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> must also be present and set to true.</p></td>
+   <td><p>True or False</p></td>
+  </tr>
+ </tbody>
 </table>
 
 All watermarks must have one of the following attributes defined:
@@ -1390,17 +1390,17 @@ Create a watermark by using the Document Security API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as the `adobe-rightsmanagement-client.jar`, in your Java project’s class path. 
+   Include client JAR files, such as the `adobe-rightsmanagement-client.jar`, in your Java project’s class path.
 
 1. Create a Document Security Client API object.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `RightsManagementClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Set the watermark attributes
 
     * Create a `Watermark` object by invoking the `InfomodelObjectFactory` object’s static `createWatermark` method. This method returns a `Watermark` object.
-    * Set the watermark’s name attribute by invoking the `Watermark` object’s `setName` method and passing a string value that specifies the policy name. 
+    * Set the watermark’s name attribute by invoking the `Watermark` object’s `setName` method and passing a string value that specifies the policy name.
     * Set the watermark’s background attribute by invoking the `Watermark` object’s `setBackground` method and passing `true`. By setting this attribute, the watermark appears in the background of the document.
     * Set the watermark’s custom text attribute by invoking the `Watermark` object’s `setCustomText` method and passing a string value that represents the watermark’s text.
     * Set the watermark’s opacity attribute by invoking the `Watermark` object’s `setOpacity` method and passing an integer value that specifies the opacity level. A value of 100 indicates the watermark is completely opaque and a value of 0 indicates the watermark is completely transparent.
@@ -1430,10 +1430,10 @@ Create a watermark by using the Document Security API (web service):
 
 1. Create a Document Security Client API object.
 
-    * Create a `RightsManagementServiceClient` object by using its default constructor. 
-    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `RightsManagementServiceClient` object by using its default constructor.
+    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -1447,10 +1447,10 @@ Create a watermark by using the Document Security API (web service):
     * Create a `WatermarkSpec` object by invoking the `WatermarkSpec` constructor.
     * Set the watermark’s name by assigning a string value to the `WatermarkSpec` object’s `name` data member.
     * Set the watermark’s `id` attribute by assigning a string value to the `WatermarkSpec` object’s `id` data member.
-    * For each watermark property to set, create a separate `MyMapOf_xsd_string_To_xsd_anyType_Item` object. 
-    * Set the key value by assigning a value to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object’s `key` data member (for example, `WaterBackCmd:OPACITY)`. 
-    * Set the value by assigning a value to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object’s `value` data member (for example, `.25`). 
-    * Create a `MyArrayOf_xsd_anyType` object. For each `MyMapOf_xsd_string_To_xsd_anyType_Item` object, invoke the `MyArrayOf_xsd_anyType` object’s `Add` method. Pass the `MyMapOf_xsd_string_To_xsd_anyType_Item` object. 
+    * For each watermark property to set, create a separate `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+    * Set the key value by assigning a value to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object’s `key` data member (for example, `WaterBackCmd:OPACITY)`.
+    * Set the value by assigning a value to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object’s `value` data member (for example, `.25`).
+    * Create a `MyArrayOf_xsd_anyType` object. For each `MyMapOf_xsd_string_To_xsd_anyType_Item` object, invoke the `MyArrayOf_xsd_anyType` object’s `Add` method. Pass the `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
     * Assign the `MyArrayOf_xsd_anyType` object to the `WatermarkSpec` object’s `values` data member.
 
 1. Register the watermark.
@@ -1490,8 +1490,8 @@ To modify a watermark, perform the following steps:
 
 1. Include project files.
 1. Create a Document Security Client API object.
-1. Retrieve the watermark to modify. 
-1. Set the watermarks attributes. 
+1. Retrieve the watermark to modify.
+1. Set the watermarks attributes.
 1. Update the watermark.
 
 **Include project files**
@@ -1540,12 +1540,12 @@ Modify a watermark by using the Document Security API (Java):
 
 1. Create a Document Security Client API object.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `DocumentSecurityClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Retrieve the watermark to modify.
 
-   Create a `WatermarkManager` object by invoking the `DocumentSecurityClient` object’s `getWatermarkManager` method and pass a string value that specifies the watermark name. This method returns a `Watermark` object that represents the watermark to modify. 
+   Create a `WatermarkManager` object by invoking the `DocumentSecurityClient` object’s `getWatermarkManager` method and pass a string value that specifies the watermark name. This method returns a `Watermark` object that represents the watermark to modify.
 
 1. Set the watermark attributes.
 
@@ -1577,10 +1577,10 @@ Modify a watermark by using the Document Security API (web service):
 
 1. Create a Document Security Client API object.
 
-    * Create a `DocumentSecurityServiceClient` object by using its default constructor. 
-    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
+    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -1595,10 +1595,10 @@ Modify a watermark by using the Document Security API (web service):
 
 1. Set the watermark attributes.
 
-    * For each watermark property to update, create a separate `MyMapOf_xsd_string_To_xsd_anyType_Item` object. 
-    * Set the key value by assigning a value to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object’s `key` data member (for example, `WaterBackCmd:OPACITY)`. 
-    * Set the value by assigning a value to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object’s `value` data member (for example, `.50`). 
-    * Create a `MyArrayOf_xsd_anyType` object. For each `MyMapOf_xsd_string_To_xsd_anyType_Item` object, invoke the `MyArrayOf_xsd_anyType` object’s `Add` method. Pass the `MyMapOf_xsd_string_To_xsd_anyType_Item` object. 
+    * For each watermark property to update, create a separate `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+    * Set the key value by assigning a value to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object’s `key` data member (for example, `WaterBackCmd:OPACITY)`.
+    * Set the value by assigning a value to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object’s `value` data member (for example, `.50`).
+    * Create a `MyArrayOf_xsd_anyType` object. For each `MyMapOf_xsd_string_To_xsd_anyType_Item` object, invoke the `MyArrayOf_xsd_anyType` object’s `Add` method. Pass the `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
     * Assign the `MyArrayOf_xsd_anyType` object to the `WatermarkSpec` object’s `values` data member.
 
 1. Update the watermark.
@@ -1634,7 +1634,7 @@ To search for a Rights Management event, perform the following steps:
 
 1. Include project files.
 1. Create a Rights Management Client API object.
-1. Specify the event for which to search. 
+1. Specify the event for which to search.
 1. Search for the event.
 
 **Include project files**
@@ -1665,7 +1665,7 @@ Search for events by using the Rights Management API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path.
 
 1. Create a Rights Management Client API object
 
@@ -1674,7 +1674,7 @@ Search for events by using the Rights Management API (Java):
 1. Specify the events to search for
 
     * Create an `EventManager` object by invoking the `DocumentSecurityClient` object’s `getEventManager` method. This method returns an `EventManager` object.
-    * Create an `EventSearchFilter` object by invoking its constructor. 
+    * Create an `EventSearchFilter` object by invoking its constructor.
     * Specify the event for which to search by invoking the `EventSearchFilter` object’s `setEventCode` method and passing a static data member that belongs to the `EventManager` class that represents the event for which to search. For example, to search for the policy create event, pass `EventManager.POLICY_CREATE_EVENT`.
 
    >[!NOTE]
@@ -1705,10 +1705,10 @@ Search for events by using the Rights Management API (web service):
 
 1. Create a Rights Management Client API object
 
-    * Create a `DocumentSecurityServiceClient` object by using its default constructor. 
-    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
+    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -1719,210 +1719,210 @@ Search for events by using the Rights Management API (web service):
 
 1. Specify the events to search for
 
-    * Create an `EventSpec` object by using its constructor. 
-    * Specify the start of the time period during which the event occurred by setting the `EventSpec` object’s `firstTime.date` data member with `DataTime` instance that represents the start of the date range when the event occurred. 
+    * Create an `EventSpec` object by using its constructor.
+    * Specify the start of the time period during which the event occurred by setting the `EventSpec` object’s `firstTime.date` data member with `DataTime` instance that represents the start of the date range when the event occurred.
     * Assign the value `true` to the `EventSpec` object’s `firstTime.dateSpecified` data member.
-    * Specify the end of the time period during which the event occurred by setting the `EventSpec` object’s `lastTime.date` data member with `DataTime` instance that represents the end of the date range when the event occurred. 
+    * Specify the end of the time period during which the event occurred by setting the `EventSpec` object’s `lastTime.date` data member with `DataTime` instance that represents the end of the date range when the event occurred.
     * Assign the value `true` to the `EventSpec` object’s `lastTime.dateSpecified` data member.
     * Set the event to search for by assigning a string value to the `EventSpec` object’s `eventCode` data member. The following table lists the numeric values that you can assign to this property:
 
-    <table> 
-    <thead> 
-    <tr> 
-    <th><p>Event type</p></th> 
-    <th><p>Value</p></th> 
-    </tr> 
-    </thead> 
+    <table>
+    <thead>
+    <tr>
+    <th><p>Event type</p></th>
+    <th><p>Value</p></th>
+    </tr>
+    </thead>
     <tbody>
-    <tr> 
-    <td><p><code>ALL_EVENTS</code></p></td> 
-    <td><p>999</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_CHANGE_PASSWORD_EVENT</code></p></td> 
-    <td><p>1000</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_REGISTER_EVENT</code></p></td> 
-    <td><p>1001</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_PREREGISTER_EVENT</code></p></td> 
-    <td><p>1002</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_ACTIVATE_EVENT</code></p></td> 
-    <td><p>1003</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_DEACTIVATE_EVENT</code></p></td> 
-    <td><p>1004</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_AUTHENTICATE_EVENT</code></p></td> 
-    <td><p>1005</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_AUTHENTICATE_DENY_EVENT </code></p></td> 
-    <td><p>1006</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_ACCOUNT_LOCK_EVENT</code></p></td> 
-    <td><p>1007</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_DELETE_EVENT </code></p></td> 
-    <td><p>1008</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>USER_UPDATE_PROFILE_EVENT </code></p></td> 
-    <td><p>1009</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_VIEW_EVENT </code></p></td> 
-    <td><p>2000</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_PRINT_LOW_EVENT </code></p></td> 
-    <td><p>2001</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_PRINT_HIGH_EVENT </code></p></td> 
-    <td><p>2002</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_SIGN_EVENT </code></p></td> 
-    <td><p>2003</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_ADD_ANNOTATION_EVENT </code></p></td> 
-    <td><p>2004</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_FORM_FILL_EVENT </code></p></td> 
-    <td><p>2005</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_CLOSE_EVENT </code></p></td> 
-    <td><p>2006</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_MODIFY_EVENT </code></p></td> 
-    <td><p>2007</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_CHANGE_SECURITY_HANDLER_EVENT </code></p></td> 
-    <td><p>2008</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_SWITCH_POLICY_EVENT </code></p></td> 
-    <td><p>2009</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_REVOKE_EVENT </code></p></td> 
-    <td><p>2010</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>$1</code></p></td> 
-    <td><p>2011</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_SECURE_EVENT </code></p></td> 
-    <td><p>2012</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_UNKNOWN_CLIENT_EVENT </code></p></td> 
-    <td><p>2013</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DOCUMENT_CHANGE_REVOKE_URL_EVENT </code></p></td> 
-    <td><p>2014</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>POLICY_CHANGE_EVENT </code></p></td> 
-    <td><p>3000</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>POLICY_ENABLE_EVENT </code></p></td> 
-    <td><p>3001</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>POLICY_DISABLE_EVENT </code></p></td> 
-    <td><p>3002</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>POLICY_CREATE_EVENT </code></p></td> 
-    <td><p>3003</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>POLICY_DELETE_EVENT </code></p></td> 
-    <td><p>3004</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>POLICY_CHANGE_OWNER_EVENT </code></p></td> 
-    <td><p>3005</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>SERVER_CLIENT_SYNC_EVENT </code></p></td> 
-    <td><p>4000</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>SERVER_SYNC_DIR_INFO_EVENT </code></p></td> 
-    <td><p>4001</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>SERVER_SYNC_DIR_COMPLETE_EVENT </code></p></td> 
-    <td><p>4002</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>SERVER_VERSION_MISMATCH_EVENT </code></p></td> 
-    <td><p>4003</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>SERVER_CONFIG_CHANGE_EVENT </code></p></td> 
-    <td><p>4004</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>SERVER_ENABLE_OFFLINE_ACCESS_EVENT </code></p></td> 
-    <td><p>4005</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>ADMIN_ADD_EVENT </code></p></td> 
-    <td><p>5000</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>ADMIN_DELETE_EVENT </code></p></td> 
-    <td><p>5001</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>ADMIN_EDIT_EVENT </code></p></td> 
-    <td><p>5002</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>ADMIN_ACTIVATE_EVENT </code></p></td> 
-    <td><p>5003</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>ADMIN_DEACTIVATE_EVENT </code></p></td> 
-    <td><p>5004</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>ERROR_DIRECTORY_SERVICE_EVENT </code></p></td> 
-    <td><p>6000</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>CREATED_POLICYSET_EVENT</code></p></td> 
-    <td><p>7000</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>DELETED_POLICYSET_EVENT</code></p></td> 
-    <td><p>7001</p></td> 
-    </tr> 
-    <tr> 
-    <td><p><code>MODIFIED_POLICYSET_EVENT</code></p></td> 
-    <td><p>7002</p></td> 
-    </tr> 
-    </tbody> 
+    <tr>
+    <td><p><code>ALL_EVENTS</code></p></td>
+    <td><p>999</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_CHANGE_PASSWORD_EVENT</code></p></td>
+    <td><p>1000</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_REGISTER_EVENT</code></p></td>
+    <td><p>1001</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_PREREGISTER_EVENT</code></p></td>
+    <td><p>1002</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_ACTIVATE_EVENT</code></p></td>
+    <td><p>1003</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_DEACTIVATE_EVENT</code></p></td>
+    <td><p>1004</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_AUTHENTICATE_EVENT</code></p></td>
+    <td><p>1005</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_AUTHENTICATE_DENY_EVENT </code></p></td>
+    <td><p>1006</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_ACCOUNT_LOCK_EVENT</code></p></td>
+    <td><p>1007</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_DELETE_EVENT </code></p></td>
+    <td><p>1008</p></td>
+    </tr>
+    <tr>
+    <td><p><code>USER_UPDATE_PROFILE_EVENT </code></p></td>
+    <td><p>1009</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_VIEW_EVENT </code></p></td>
+    <td><p>2000</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_PRINT_LOW_EVENT </code></p></td>
+    <td><p>2001</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_PRINT_HIGH_EVENT </code></p></td>
+    <td><p>2002</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_SIGN_EVENT </code></p></td>
+    <td><p>2003</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_ADD_ANNOTATION_EVENT </code></p></td>
+    <td><p>2004</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_FORM_FILL_EVENT </code></p></td>
+    <td><p>2005</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_CLOSE_EVENT </code></p></td>
+    <td><p>2006</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_MODIFY_EVENT </code></p></td>
+    <td><p>2007</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_CHANGE_SECURITY_HANDLER_EVENT </code></p></td>
+    <td><p>2008</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_SWITCH_POLICY_EVENT </code></p></td>
+    <td><p>2009</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_REVOKE_EVENT </code></p></td>
+    <td><p>2010</p></td>
+    </tr>
+    <tr>
+    <td><p><code>$1</code></p></td>
+    <td><p>2011</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_SECURE_EVENT </code></p></td>
+    <td><p>2012</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_UNKNOWN_CLIENT_EVENT </code></p></td>
+    <td><p>2013</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DOCUMENT_CHANGE_REVOKE_URL_EVENT </code></p></td>
+    <td><p>2014</p></td>
+    </tr>
+    <tr>
+    <td><p><code>POLICY_CHANGE_EVENT </code></p></td>
+    <td><p>3000</p></td>
+    </tr>
+    <tr>
+    <td><p><code>POLICY_ENABLE_EVENT </code></p></td>
+    <td><p>3001</p></td>
+    </tr>
+    <tr>
+    <td><p><code>POLICY_DISABLE_EVENT </code></p></td>
+    <td><p>3002</p></td>
+    </tr>
+    <tr>
+    <td><p><code>POLICY_CREATE_EVENT </code></p></td>
+    <td><p>3003</p></td>
+    </tr>
+    <tr>
+    <td><p><code>POLICY_DELETE_EVENT </code></p></td>
+    <td><p>3004</p></td>
+    </tr>
+    <tr>
+    <td><p><code>POLICY_CHANGE_OWNER_EVENT </code></p></td>
+    <td><p>3005</p></td>
+    </tr>
+    <tr>
+    <td><p><code>SERVER_CLIENT_SYNC_EVENT </code></p></td>
+    <td><p>4000</p></td>
+    </tr>
+    <tr>
+    <td><p><code>SERVER_SYNC_DIR_INFO_EVENT </code></p></td>
+    <td><p>4001</p></td>
+    </tr>
+    <tr>
+    <td><p><code>SERVER_SYNC_DIR_COMPLETE_EVENT </code></p></td>
+    <td><p>4002</p></td>
+    </tr>
+    <tr>
+    <td><p><code>SERVER_VERSION_MISMATCH_EVENT </code></p></td>
+    <td><p>4003</p></td>
+    </tr>
+    <tr>
+    <td><p><code>SERVER_CONFIG_CHANGE_EVENT </code></p></td>
+    <td><p>4004</p></td>
+    </tr>
+    <tr>
+    <td><p><code>SERVER_ENABLE_OFFLINE_ACCESS_EVENT </code></p></td>
+    <td><p>4005</p></td>
+    </tr>
+    <tr>
+    <td><p><code>ADMIN_ADD_EVENT </code></p></td>
+    <td><p>5000</p></td>
+    </tr>
+    <tr>
+    <td><p><code>ADMIN_DELETE_EVENT </code></p></td>
+    <td><p>5001</p></td>
+    </tr>
+    <tr>
+    <td><p><code>ADMIN_EDIT_EVENT </code></p></td>
+    <td><p>5002</p></td>
+    </tr>
+    <tr>
+    <td><p><code>ADMIN_ACTIVATE_EVENT </code></p></td>
+    <td><p>5003</p></td>
+    </tr>
+    <tr>
+    <td><p><code>ADMIN_DEACTIVATE_EVENT </code></p></td>
+    <td><p>5004</p></td>
+    </tr>
+    <tr>
+    <td><p><code>ERROR_DIRECTORY_SERVICE_EVENT </code></p></td>
+    <td><p>6000</p></td>
+    </tr>
+    <tr>
+    <td><p><code>CREATED_POLICYSET_EVENT</code></p></td>
+    <td><p>7000</p></td>
+    </tr>
+    <tr>
+    <td><p><code>DELETED_POLICYSET_EVENT</code></p></td>
+    <td><p>7001</p></td>
+    </tr>
+    <tr>
+    <td><p><code>MODIFIED_POLICYSET_EVENT</code></p></td>
+    <td><p>7002</p></td>
+    </tr>
+    </tbody>
     </table>
 
 1. Search for the event
@@ -1996,7 +1996,7 @@ Apply a policy to a Word document by using the Document Security API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path.
 
 1. Create a Document Security Client API object.
 
@@ -2005,7 +2005,7 @@ Apply a policy to a Word document by using the Document Security API (Java):
 
 1. Retrieve a Word document.
 
-    * Create a `java.io.FileInputStream` object that represents the Word document by using its constructor and passing a string value that specifies the location of the Word document. 
+    * Create a `java.io.FileInputStream` object that represents the Word document by using its constructor and passing a string value that specifies the location of the Word document.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
 
 1. Apply an existing policy to the Word document.
@@ -2013,9 +2013,9 @@ Apply a policy to a Word document by using the Document Security API (Java):
     * Create a `DocumentManager` object by invoking the `DocumentSecurityClient` object’s `getDocumentManager` method.
     * Apply a policy to the Word document by invoking the `DocumentManager` object’s `protectDocument` method and passing the following values:
 
-        * The `com.adobe.idp.Document` object that contains the Word document to which the policy is applied. 
+        * The `com.adobe.idp.Document` object that contains the Word document to which the policy is applied.
         * A string value that specifies the name of the document.
-        * A string value that specifies the name of the policy set to which the policy belongs. You can specify a `null` value that results in the `MyPolicies` policy set being used. 
+        * A string value that specifies the name of the policy set to which the policy belongs. You can specify a `null` value that results in the `MyPolicies` policy set being used.
         * A string value that specifies the policy name.
         * A string value that represents the name of the user manager domain of the user who is the publisher of the document. This parameter value is optional and can be null (if this parameter is null, then the next parameter value must be null).
         * A string value that represents the name of the canonical name of the user manager user who is the publisher of the document. This parameter value is optional and can be `null` (if this parameter is `null`, then the previous parameter value must be `null`).
@@ -2025,7 +2025,7 @@ Apply a policy to a Word document by using the Document Security API (Java):
 
 1. Save the Word document.
 
-    * Invoke the `RMSecureDocumentResult` object’s `getProtectedDoc` method to get the policy-protected Word document. This method returns a `com.adobe.idp.Document` object. 
+    * Invoke the `RMSecureDocumentResult` object’s `getProtectedDoc` method to get the policy-protected Word document. This method returns a `com.adobe.idp.Document` object.
     * Create a `java.io.File` object and ensure that the file extension is DOC.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `Document` object to the file (ensure that you use the `Document` object that was returned by the `getProtectedDoc` method).
 
@@ -2049,10 +2049,10 @@ Apply a policy to a Word document by using the Document Security API (web servic
 
 1. Create a Document Security Client API object.
 
-    * Create a `DocumentSecurityServiceClient` object by using its default constructor. 
-    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
+    * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DocumentSecurityServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
@@ -2075,13 +2075,13 @@ Apply a policy to a Word document by using the Document Security API (web servic
 
     * The `BLOB` object that contains the Word document to which the policy is applied.
     * A string value that specifies the name of the document.
-    * A string value that specifies the name of the policy set to which the policy belongs. You can specify a `null` value that results in the `MyPolicies` policy set being used. 
+    * A string value that specifies the name of the policy set to which the policy belongs. You can specify a `null` value that results in the `MyPolicies` policy set being used.
     * A string value that specifies the policy name.
     * A string value that represents the name of the user manager domain of the user who is the publisher of the document. This parameter value is optional and can be null (if this parameter is null, then the next parameter value must be `null`).
     * A string value that represents the name of the canonical name of the user manager user who is the publisher of the document. This parameter value is optional and can be null (if this parameter is null, then the previous parameter value must be `null`).
     * A `RMLocale` value that specifies the locale value (for example, `RMLocale.en`).
-    * A string output parameter that is used to store the policy identifier value. 
-    * A string output parameter that is used to store the policy-protected identifier value. 
+    * A string output parameter that is used to store the policy identifier value.
+    * A string output parameter that is used to store the policy-protected identifier value.
     * A string output parameter that is used to store the mime type (for example, `application/doc`).
 
    The `protectDocument` method returns a `BLOB` object that contains the policy-protected Word document.
@@ -2151,7 +2151,7 @@ Remove a policy from a policy-protected Word document by using the Document Secu
 
 1. Include project files
 
-   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-rightsmanagement-client.jar, in your Java project’s class path.
 
 1. Create a Document Security Client API object
 
@@ -2160,7 +2160,7 @@ Remove a policy from a policy-protected Word document by using the Document Secu
 
 1. Retrieve a policy-protected Word document
 
-    * Create a `java.io.FileInputStream` object that represents the policy-protected Word document by using its constructor and passing a string value that specifies the location of the Word document. 
+    * Create a `java.io.FileInputStream` object that represents the policy-protected Word document by using its constructor and passing a string value that specifies the location of the Word document.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
 
 1. Remove the policy from the Word document
@@ -2193,10 +2193,10 @@ Remove a policy from a policy-protected Word document by using the Document Secu
 
 1. Create a Document Security Client API object
 
-    * Create a `RightsManagementServiceClient` object by using its default constructor. 
-    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `RightsManagementServiceClient` object by using its default constructor.
+    * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `RightsManagementServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
@@ -2208,8 +2208,8 @@ Remove a policy from a policy-protected Word document by using the Document Secu
 1. Retrieve a policy-protected Word document
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the policy-protected Word document from which the policy is removed.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the Word document and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the Word document and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 

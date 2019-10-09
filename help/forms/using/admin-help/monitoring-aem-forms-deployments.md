@@ -7,7 +7,7 @@ uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 ---
 
@@ -21,7 +21,7 @@ For more information about monitoring AEM forms deployments, see [A technical gu
 
 AEM forms provides two registered MBeans that provide navigation and statistic information. These are the only MBeans that are supported for integration and inspection:
 
-* **ServiceStatistic:** This MBean provides information about Service name and its version. 
+* **ServiceStatistic:** This MBean provides information about Service name and its version.
 * **OperationStatistic:** This MBean provides the statistic of every forms server’s service. This is where administrators can get information about a particular service such as invocation time, number of errors, and so on.
 
 ### ServiceStatisticMbean public interfaces {#servicestatisticmbean-public-interfaces}
@@ -29,8 +29,8 @@ AEM forms provides two registered MBeans that provide navigation and statistic i
 These public interfaces of ServiceStatistic MBean can be accessed for testing purposes:
 
 ```as3
- public String getServiceId();  
- public int getMajorVersion();  
+ public String getServiceId();
+ public int getMajorVersion();
  public int getMinorVersion();
 ```
 
@@ -39,26 +39,26 @@ These public interfaces of ServiceStatistic MBean can be accessed for testing pu
 These public interfaces of OperationStatistic MBean can be accessed for testing purposes:
 
 ```as3
- // InvocationCount: The number of times the method is invoked.  
- public long getInvocationCount();  
- // InvocationStartTime: The time at which the method started to execute.  
- public long getInvocationStartTime();  
- // InvocationEndTime: The time at which the method finished execution.  
- public long getInvocationEndTime();  
- // InvocationTime: The time taken for the execution of the method.  
- public long getInvocationTime();  
- // LastSamplingDateTime: Convert InvocationStartTime to a formatted string  
- public String getLastSamplingDateTime();  
- // MaxInvocationTime: The maximum time taken for the execution of the method.  
- public long getMaxInvocationTime();  
- // MinInvocationTime: The minimum time taken for the execution of the method.  
- public long getMinInvocationTime();  
- // AverageInvocationTime: the averege execution time taken for the execution of the method.  
- public double getAverageInvocationTime();  
- // ExceptionCount: The number of times the method has thrown an Exception.  
- public long getExceptionCount();  
- // ExceptionMessage: The message of the last exception occurred.  
- public String getExeptionMessage();  
+ // InvocationCount: The number of times the method is invoked.
+ public long getInvocationCount();
+ // InvocationStartTime: The time at which the method started to execute.
+ public long getInvocationStartTime();
+ // InvocationEndTime: The time at which the method finished execution.
+ public long getInvocationEndTime();
+ // InvocationTime: The time taken for the execution of the method.
+ public long getInvocationTime();
+ // LastSamplingDateTime: Convert InvocationStartTime to a formatted string
+ public String getLastSamplingDateTime();
+ // MaxInvocationTime: The maximum time taken for the execution of the method.
+ public long getMaxInvocationTime();
+ // MinInvocationTime: The minimum time taken for the execution of the method.
+ public long getMinInvocationTime();
+ // AverageInvocationTime: the averege execution time taken for the execution of the method.
+ public double getAverageInvocationTime();
+ // ExceptionCount: The number of times the method has thrown an Exception.
+ public long getExceptionCount();
+ // ExceptionMessage: The message of the last exception occurred.
+ public String getExeptionMessage();
  public void setExceptionMessage(String errorMessage);
 ```
 
@@ -113,7 +113,7 @@ To view MBeans from JConsole, configure the JBoss application server’s JVM sta
 
 **WebLogic 9.2 /10 - configure the JVM startup**
 
-1. Edit the startWebLogic.bat file that is located under* [WebLogic home]*/user_projects/domains/Adobe_Live_Cycle/bin. 
+1. Edit the startWebLogic.bat file that is located under* [WebLogic home]*/user_projects/domains/Adobe_Live_Cycle/bin.
 1. Find the JAVA_OPTS line and add the following:
 
    ```as3
@@ -142,8 +142,8 @@ To view MBeans from JConsole, configure the JBoss application server’s JVM sta
 1. Add or uncomment the following three lines in the /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties file (or &lt;Your Websphere JRE&gt;/ lib/management/management.properties):
 
    ```as3
-    com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect  
-    com.sun.management.jmxremote.authenticate=false  
+    com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect
+    com.sun.management.jmxremote.authenticate=false
     com.sun.management.jmxremote.ssl=false
    ```
 

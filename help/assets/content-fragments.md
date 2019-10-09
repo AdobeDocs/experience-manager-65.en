@@ -6,7 +6,7 @@ seo-description: Learn how Content Fragments allow you to design, create, curate
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 ---
@@ -26,15 +26,15 @@ Content fragments can also be delivered in JSON format, using the Sling Model (J
 
 This and the following pages cover the tasks for creating, configuring and maintaining your content fragments:
 
-* [Managing Content Fragments](content-fragments-managing.md) - create your content fragments; then edit, publish and reference  
+* [Managing Content Fragments](content-fragments-managing.md) - create your content fragments; then edit, publish and reference
 
-* [Content Fragment Models](content-fragments-models.md) - enabling, creating and defining your models  
+* [Content Fragment Models](content-fragments-models.md) - enabling, creating and defining your models
 
-* [Variations - Authoring Fragment Content](content-fragments-variations.md) - author the fragment content and create variations of the Master  
+* [Variations - Authoring Fragment Content](content-fragments-variations.md) - author the fragment content and create variations of the Master
 
-* [Markdown](content-fragments-markdown.md) - using markdown syntax for your fragment  
+* [Markdown](content-fragments-markdown.md) - using markdown syntax for your fragment
 
-* [Using Associated Content](content-fragments-assoc-content.md) - adding associated content  
+* [Using Associated Content](content-fragments-assoc-content.md) - adding associated content
 
 * [Metadata - Fragment Properties](content-fragments-metadata.md) - viewing and editing the fragment properties
 
@@ -80,7 +80,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 >**Content Fragments** and **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
 >
 >* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
->* **Experience Fragments** are fully laid out content; a fragment of a web page.  
+>* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
@@ -128,7 +128,7 @@ Content Fragments are a content structure that:
 * Are without layout or design (some text formatting is possible in Rich Text mode).
 * Contain one, or more, [constituent parts](#constituent-parts-of-a-content-fragment).
 * Can [contain, or be connected to, images](#fragments-with-visual-assets).
-* Can use [in-between content](#in-between-content-when-page-authoring-with-content-fragments) when referenced on a page.  
+* Can use [in-between content](#in-between-content-when-page-authoring-with-content-fragments) when referenced on a page.
 
 * Are independent from the delivery mechanism (i.e. page, channel).
 
@@ -255,7 +255,7 @@ In-between content:
 
 * Is available for use in the [Page Editor when working with Content Fragments](/help/sites-authoring/content-fragments.md).
 * Is [additional content added within the flow of a fragment](/help/sites-authoring/content-fragments.md#adding-in-between-content) once it has been used/referenced on a page.
-* In-between content can be added to any fragment, where there is only one element visible.  
+* In-between content can be added to any fragment, where there is only one element visible.
 * Associated content can be used, as can assets and/or components from the appropriate browser.
 
 >[!CAUTION]

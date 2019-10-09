@@ -6,7 +6,7 @@ seo-description: A formset is a collection of HTML5 forms grouped and presented 
 uuid: 77f81465-bd60-4aee-8507-585fe08adb78
 contentOwner: vishgupt
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
 ---
@@ -28,7 +28,7 @@ AEM Forms workspace supports formsets. With formsets, multiple forms related to 
 
    ![2](assets/2.png)
 
-1. Click the **Formset** tab, select the relevant formset from the list, and then click **OK**.  
+1. Click the **Formset** tab, select the relevant formset from the list, and then click **OK**.
 
 1. Deploy the application after updating other relevant process properties.
 
@@ -38,11 +38,11 @@ Once a formset is attached to a startpoint, the startpoint can be invoked, as an
 
 The operations supported on formset through the AEM Forms workspace are:
 
-* Save as draft 
-* Lock 
+* Save as draft
+* Lock
 * Abandon
-* Submit 
-* Add Attachments 
+* Submit
+* Add Attachments
 * Add Notes
 * Move between forms in a formset using Back or Next buttons
 

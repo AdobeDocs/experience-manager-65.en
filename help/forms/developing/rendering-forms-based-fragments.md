@@ -7,7 +7,7 @@ uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 ---
@@ -27,8 +27,8 @@ A *script fragment* contains reusable JavaScript functions or values that are st
 Here are advantages of using fragments:
 
 * **Content reuse**: You can use fragments to reuse content in multiple form designs. When you need to use some of the same content in multiple forms, it is faster and simpler to use a fragment than to copy or re-create the content. Using fragments also ensures that the frequently used parts of a form design have consistent content and appearance in all the referencing forms.
-* **Global updates**: You can use fragments to make global changes to multiple forms only once, in one file. You can change the content, script objects, data bindings, layout, or styles in a fragment, and all XDP forms that reference the fragment will reflect the changes. 
-* For example, a common element across many forms might be an address block that includes a drop-down list object for the country. If you need to update the values for the drop-down list object, you must open many forms to make the changes. If you include the address block in a fragment, you only need to open one fragment file to make the changes. 
+* **Global updates**: You can use fragments to make global changes to multiple forms only once, in one file. You can change the content, script objects, data bindings, layout, or styles in a fragment, and all XDP forms that reference the fragment will reflect the changes.
+* For example, a common element across many forms might be an address block that includes a drop-down list object for the country. If you need to update the values for the drop-down list object, you must open many forms to make the changes. If you include the address block in a fragment, you only need to open one fragment file to make the changes.
 * To update a fragment in a PDF form, you must resave the form in Designer.
 * **Shared form creation**: You can use fragments to share the creation of forms among several resources. Form developers with expertise in scripting or other advanced features of Designer can develop and share fragments that take advantage of scripting and dynamic properties. Form designers can use those fragments to lay out form designs and to ensure that all parts of a form have a consistent appearance and functionality across multiple forms designed by multiple people.
 
@@ -102,16 +102,16 @@ Render a form based on fragments by using the Forms API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path.
 
 1. Create a Forms Client API object
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Specify URI values
 
-    * Create a `URLSpec` object that stores URI values by using its constructor. 
+    * Create a `URLSpec` object that stores URI values by using its constructor.
     * Invoke the `URLSpec` object’s `setApplicationWebRoot` method and pass a string value that represents the application’s web root.
     * Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design and the fragments are located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository://`.
     * Invoke the `URLSpec` object’s `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
@@ -121,9 +121,9 @@ Render a form based on fragments by using the Forms API (Java):
    Invoke the `FormsServiceClient` object’s `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-    * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object. 
-    * A `PDFFormRenderSpec` object that stores run-time options. 
-    * A `URLSpec` object that contains URI values that are required by the Forms service to render a form based on fragments. 
+    * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object.
+    * A `PDFFormRenderSpec` object that stores run-time options.
+    * A `URLSpec` object that contains URI values that are required by the Forms service to render a form based on fragments.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
 
    The `renderPDFForm` method returns a `FormsResult` object that contains a form data stream that must be written to the client web browser.
@@ -135,7 +135,7 @@ Render a form based on fragments by using the Forms API (Java):
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
     * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
     * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
-    * Create a byte array populate it with the form data stream by invoking the `InputStream` object’s `read`method and passing the byte array as an argument. 
+    * Create a byte array populate it with the form data stream by invoking the `InputStream` object’s `read`method and passing the byte array as an argument.
     * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
@@ -154,7 +154,7 @@ Render a form based on fragments using the Forms API (web service):
 
 1. Include project files
 
-    * Create Java proxy classes that consume the Forms service WSDL. 
+    * Create Java proxy classes that consume the Forms service WSDL.
     * Include the Java proxy classes into your class path.
 
 1. Create a Forms Client API object
@@ -163,7 +163,7 @@ Render a form based on fragments using the Forms API (web service):
 
 1. Specify URI values
 
-    * Create a `URLSpec` object that store URI values by using its constructor. 
+    * Create a `URLSpec` object that store URI values by using its constructor.
     * Invoke the `URLSpec` object’s `setApplicationWebRoot` method and pass a string value that represents the application’s web root.
     * Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository://`.
     * Invoke the `URLSpec` object’s `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
@@ -173,11 +173,11 @@ Render a form based on fragments using the Forms API (web service):
    Invoke the `FormsService` object’s `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-    * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`. 
-    * A `PDFFormRenderSpec` object that stores run-time options. Note that the tagged PDF option cannot be set if the input document is a PDF document. If the input file is an XDP file, the tagged PDF option can be set. 
-    * A `URLSpec` object that contains URI values required by the Forms service. 
+    * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`.
+    * A `PDFFormRenderSpec` object that stores run-time options. Note that the tagged PDF option cannot be set if the input document is a PDF document. If the input file is an XDP file, the tagged PDF option can be set.
+    * A `URLSpec` object that contains URI values required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
-    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This parameter is used to store the rendered form. 
+    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This parameter is used to store the rendered form.
     * An empty `javax.xml.rpc.holders.LongHolder` object that is populated by the method. This argument will store the number of pages in the form.
     * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the method. This argument will store the locale value.
     * An empty `com.adobe.idp.services.holders.FormsResultHolder` object that will contain the results of this operation.
@@ -186,12 +186,12 @@ Render a form based on fragments using the Forms API (web service):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member. 
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method. 
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
     * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array. 
+    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
     * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**

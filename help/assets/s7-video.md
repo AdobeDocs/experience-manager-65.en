@@ -5,7 +5,7 @@ description: Learn about the centralized video asset management AEM Assets where
 seo-description: Learn about the centralized video asset management AEM Assets where you can upload videos for auto-encoding to Dynamic Media Classic and access Dynamic Media Classic videos directly from AEM Assets. Dynamic Media Classic video integration extends the reach of optimized video to all screens.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: rbrough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
@@ -80,7 +80,7 @@ To configure universal presets:
 
    >[!NOTE]
    >
-   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html). 
+   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
    >
    >Adobe recommends that you select either both adaptive video sets when configuring the universal presets or select the **[!UICONTROL Adaptive Video Encoding]** option.
 
@@ -90,7 +90,7 @@ To configure universal presets:
 
 If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Scene7, navigate to the Scene7 configuration in the cloud configuration and click **[!UICONTROL Update the viewer and encoding presets]**.
 
-![chlimage_1-364](assets/chlimage_1-364.png) 
+![chlimage_1-364](assets/chlimage_1-364.png)
 
 ## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
 
@@ -144,14 +144,14 @@ The various video encodings are created according to the S7 encoding presets sel
 >New video profiles and changes to them must be activated to publish.
 
 1. In AEM, tap **[!UICONTROL Tools > Configuration Console**.
-1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree. 
+1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
 1. Create a new S7 Video Profile. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
 1. Edit the new video profile. Select the cloud config first. Then select the same encoding preset as selected in the cloud config.
 
-   ![chlimage_1-367](assets/chlimage_1-367.png) 
+   ![chlimage_1-367](assets/chlimage_1-367.png)
 
    | Property |Description |
    |---|---|
@@ -178,7 +178,7 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 
 #### Checklist {#checklist}
 
-1. Create a S7 cloud config. Make sure the video encoding presets are set and the importer is running. 
+1. Create a S7 cloud config. Make sure the video encoding presets are set and the importer is running.
 1. Create a S7 video profile for each video encoding preset selected in the cloud config.
 1. The video profiles must be activated.
 1. Configure the design of the **[!UICONTROL oundation Video]** component on your page.

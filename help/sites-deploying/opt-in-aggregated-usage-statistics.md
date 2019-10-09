@@ -5,7 +5,7 @@ description: Learn how to opt into aggregated usage statistics.
 seo-description: Learn how to opt into aggregated usage statistics.
 uuid: 835fd281-da4f-42ef-bae8-9ca91a29bc65
 contentOwner: raiman
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 0c2b1c67-2fa4-4b2e-8512-0973177656e2

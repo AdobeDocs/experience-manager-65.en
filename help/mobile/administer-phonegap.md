@@ -6,7 +6,7 @@ seo-description: This page serves as landing page for administering Adobe PhoneG
 uuid: 31bda96a-bc35-4f04-9107-7d575c04d761
 contentOwner: msm-service
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: cd080122-7ae5-4e6e-a8f6-b95dfbb0b511
 ---

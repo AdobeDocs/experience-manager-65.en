@@ -5,7 +5,7 @@ description: Tips for coding for AEM
 seo-description: Tips for coding for AEM
 uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
@@ -39,21 +39,21 @@ Note that these conventions don’t necessarily need to apply to customer implem
 
 Ideally, names should reveal their intention. A common code test for when names are not as clear as they should be is the presence of comments explaining what the variable or method is for:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Unclear</strong></p> </td> 
-   <td><p><strong>Clear</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>int d; //elapsed time in days</p> </td> 
-   <td><p>int elapsedTimeInDays;</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>//get tagged images<br /> public List getItems() {}</p> </td> 
-   <td><p>public List getTaggedImages() {}</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Unclear</strong></p> </td>
+   <td><p><strong>Clear</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>int d; //elapsed time in days</p> </td>
+   <td><p>int elapsedTimeInDays;</p> </td>
+  </tr>
+  <tr>
+   <td><p>//get tagged images<br /> public List getItems() {}</p> </td>
+   <td><p>public List getTaggedImages() {}</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Don't repeat yourself  {#don-t-repeat-yourself}

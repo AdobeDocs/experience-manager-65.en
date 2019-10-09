@@ -5,7 +5,7 @@ description: Learn how to configure Dynamic Media - Hybrid mode.
 seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 ---
 
@@ -38,11 +38,11 @@ If you are a customer of Dynamic Media, you are required to use hybrid delivery 
 
 ## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
-![chlimage_1-506](assets/chlimage_1-506.png) 
+![chlimage_1-506](assets/chlimage_1-506.png)
 
 ## Hybrid publishing architecture for images {#hybrid-publishing-architecture-for-images}
 
-![chlimage_1-507](assets/chlimage_1-507.png) 
+![chlimage_1-507](assets/chlimage_1-507.png)
 
 ## Supported Dynamic Media configurations {#supported-dynamic-media-configurations}
 
@@ -54,73 +54,73 @@ The configuration tasks that follow reference the following terms:
 | AEM publish node |White "X" in a red square. |The publish node that you deploy to On-Premise or through Managed Services. |
 | Image Service publish node |White check mark in a green circle. |The publish node that you run on Data Centers that are managed by Adobe. Refers to the image service URL. |
 
-You may choose to implement Dynamic Media only for imaging, only for video, or for both imaging and video. To determine the steps for configuring Dynamic Media for your specific scenario, please reference the following table. 
+You may choose to implement Dynamic Media only for imaging, only for video, or for both imaging and video. To determine the steps for configuring Dynamic Media for your specific scenario, please reference the following table.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Scenario</strong></td> 
-   <td><strong>How it Works</strong></td> 
-   <td><strong>Configuration Steps</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Deliver ONLY images in production</td> 
-   <td>Images are delivered through servers in Adobe’s worldwide data centers and then cached by a CDN for scalable performance and global reach.</td> 
-   <td> 
-    <ol> 
-     <li>On the AEM <strong>author</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li> 
-     <li>Configure imaging in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services</a>.</li> 
-     <li><a href="#configuring-image-replication">Configure image replication</a>.</li> 
-     <li><a href="#replicating-catalog-settings">Replicate catalog settings</a>.</li> 
-     <li><a href="#replicating-viewer-presets">Replicate viewer presets</a>.</li> 
-     <li><a href="#using-default-asset-filters-for-replication">Use default asset filters for replication</a>.</li> 
-     <li><a href="#configuring-dynamic-media-image-server-settings">Configure Dynamic Media Image Server settings</a>.</li> 
-     <li><a href="#delivering-assets">Deliver assets</a>.</li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Deliver ONLY images in pre-production (Dev, QE, Stage, and so on.)</td> 
-   <td>Images are delivered through the AEM publish node. In this scenario, since traffic is minimal, there is no need to deliver images to Adobe’s data center. An additional benefit is that this allows for secure preview of content before production launch</td> 
-   <td> 
-    <ol> 
-     <li>On the AEM <strong>author</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li> 
-     <li>On AEM <strong>publish</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li> 
-     <li><a href="#replicating-viewer-presets">Replicate viewer presets</a>.</li> 
-     <li>Set up <a href="#setting-up-asset-filters-for-imaging-in-non-production-deployments">asset filter for non-production images</a>.</li> 
-     <li><a href="#configuring-dynamic-media-image-server-settings">Configure Dynamic Media Image Server settings.</a></li> 
-     <li><a href="#delivering-assets">Deliver assets.</a></li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Deliver ONLY video in any environment (Production, Dev, QE, Stage, and so on)</td> 
-   <td>Videos are delivered and cached by a CDN for scalable performance and global reach. The video poster image (thumbnail of video which shows before playback initiates) will be delivered by the AEM publish instance.</td> 
-   <td> 
-    <ol> 
-     <li>On the AEM <strong>author</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li> 
-     <li>On the AEM <strong>publish</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a> (the publish instance serves the video poster image and provides metadata for video playback).</li> 
-     <li>Configure video in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li> 
-     <li><a href="#replicating-viewer-presets">Replicate viewer presets</a>.</li> 
-     <li>Set up <a href="#setting-up-asset-filters-for-video-only-deployments">asset filter for video-only</a>.</li> 
-     <li><a href="#delivering-assets">Deliver assets.</a></li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Deliver BOTH images and video in production</td> 
-   <td><p>Videos are delivered and cached by a CDN for scalable performance and global reach. Images and video poster images are delivered through servers in Adobe’s worldwide data centers and then cached by a CDN for scalable performance and global reach.</p> <p>Please refer to previous sections to setup image or video in pre-production. </p> </td> 
-   <td> 
-    <ol> 
-     <li>On the AEM <strong>author</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li> 
-     <li>Configure video in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li> 
-     <li>Configure imaging in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li> 
-     <li><a href="#configuring-image-replication">Configure image replication</a>.</li> 
-     <li><a href="#replicating-catalog-settings">Replicate catalog settings</a>.</li> 
-     <li><a href="#replicating-viewer-presets">Replicate viewer presets</a>.</li> 
-     <li><a href="#using-default-asset-filters-for-replication">Use default asset filters for replication.</a></li> 
-     <li><a href="#configuring-dynamic-media-image-server-settings">Configure Dynamic Media Image Server settings.</a></li> 
-     <li><a href="#delivering-assets">Deliver assets.</a></li> 
-    </ol> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Scenario</strong></td>
+   <td><strong>How it Works</strong></td>
+   <td><strong>Configuration Steps</strong></td>
+  </tr>
+  <tr>
+   <td>Deliver ONLY images in production</td>
+   <td>Images are delivered through servers in Adobe’s worldwide data centers and then cached by a CDN for scalable performance and global reach.</td>
+   <td>
+    <ol>
+     <li>On the AEM <strong>author</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li>
+     <li>Configure imaging in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services</a>.</li>
+     <li><a href="#configuring-image-replication">Configure image replication</a>.</li>
+     <li><a href="#replicating-catalog-settings">Replicate catalog settings</a>.</li>
+     <li><a href="#replicating-viewer-presets">Replicate viewer presets</a>.</li>
+     <li><a href="#using-default-asset-filters-for-replication">Use default asset filters for replication</a>.</li>
+     <li><a href="#configuring-dynamic-media-image-server-settings">Configure Dynamic Media Image Server settings</a>.</li>
+     <li><a href="#delivering-assets">Deliver assets</a>.</li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td>Deliver ONLY images in pre-production (Dev, QE, Stage, and so on.)</td>
+   <td>Images are delivered through the AEM publish node. In this scenario, since traffic is minimal, there is no need to deliver images to Adobe’s data center. An additional benefit is that this allows for secure preview of content before production launch</td>
+   <td>
+    <ol>
+     <li>On the AEM <strong>author</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li>
+     <li>On AEM <strong>publish</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li>
+     <li><a href="#replicating-viewer-presets">Replicate viewer presets</a>.</li>
+     <li>Set up <a href="#setting-up-asset-filters-for-imaging-in-non-production-deployments">asset filter for non-production images</a>.</li>
+     <li><a href="#configuring-dynamic-media-image-server-settings">Configure Dynamic Media Image Server settings.</a></li>
+     <li><a href="#delivering-assets">Deliver assets.</a></li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td>Deliver ONLY video in any environment (Production, Dev, QE, Stage, and so on)</td>
+   <td>Videos are delivered and cached by a CDN for scalable performance and global reach. The video poster image (thumbnail of video which shows before playback initiates) will be delivered by the AEM publish instance.</td>
+   <td>
+    <ol>
+     <li>On the AEM <strong>author</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li>
+     <li>On the AEM <strong>publish</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a> (the publish instance serves the video poster image and provides metadata for video playback).</li>
+     <li>Configure video in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li>
+     <li><a href="#replicating-viewer-presets">Replicate viewer presets</a>.</li>
+     <li>Set up <a href="#setting-up-asset-filters-for-video-only-deployments">asset filter for video-only</a>.</li>
+     <li><a href="#delivering-assets">Deliver assets.</a></li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td>Deliver BOTH images and video in production</td>
+   <td><p>Videos are delivered and cached by a CDN for scalable performance and global reach. Images and video poster images are delivered through servers in Adobe’s worldwide data centers and then cached by a CDN for scalable performance and global reach.</p> <p>Please refer to previous sections to setup image or video in pre-production. </p> </td>
+   <td>
+    <ol>
+     <li>On the AEM <strong>author</strong> node, <a href="#enabling-dynamic-media">enable dynamic media</a>.</li>
+     <li>Configure video in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li>
+     <li>Configure imaging in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li>
+     <li><a href="#configuring-image-replication">Configure image replication</a>.</li>
+     <li><a href="#replicating-catalog-settings">Replicate catalog settings</a>.</li>
+     <li><a href="#replicating-viewer-presets">Replicate viewer presets</a>.</li>
+     <li><a href="#using-default-asset-filters-for-replication">Use default asset filters for replication.</a></li>
+     <li><a href="#configuring-dynamic-media-image-server-settings">Configure Dynamic Media Image Server settings.</a></li>
+     <li><a href="#delivering-assets">Deliver assets.</a></li>
+    </ol> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Enabling Dynamic Media {#enabling-dynamic-media}
@@ -152,7 +152,7 @@ To enable dynamic media, you must enable the dynamic media runmode either from t
 
    ```
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
-  
+
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
    ```
 
@@ -217,8 +217,8 @@ To disable dynamic media after you have enabled it, you remove the **[!UICONTROL
 
 If you are upgrading AEM Dynamic Media from 6.3 to 6.4 &ndash; which now includes the ability for zero downtime (also known as "Opt-in") deployments &ndash; you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
-**Note**: If you run your AEM instance in compatibility mode&ndash;that is, you have the compatibility packaged installed&ndash;you do not need to run these commands.  
-  
+**Note**: If you run your AEM instance in compatibility mode&ndash;that is, you have the compatibility packaged installed&ndash;you do not need to run these commands.
+
 To migrate your custom presets and configurations from `/etc` to `/conf`, run the following Linux curl command:
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets.migratedmcontent.json`
@@ -233,7 +233,7 @@ Dynamic Media image delivery works by publishing image assets, including video t
 
 You must do the following:
 
-1. [Set up authentication](#setting-up-authentication). 
+1. [Set up authentication](#setting-up-authentication).
 1. [Configure the replication agent](#configuring-the-replication-agent).
 
 The Replication Agent publishes Dynamic Media assets such as images, video metadata, and sets to the Adobe-hosted Image Service. The Replication Agent is not enabled by default.
@@ -331,7 +331,7 @@ Replication test succeeded
 >
 >You can also check by doing one of the following:
 >
->* Check the replication logs to make sure the asset is replicated. 
+>* Check the replication logs to make sure the asset is replicated.
 >* Publish an image. Tap the image and select **[!UICONTROL Viewers]** in drop-down menu. Select a viewer preset, then tap **[!UICONTROL URL]**, and copy and paste the URL in the browser to verify that you can see the image.
 
 ### Troubleshooting Authentication {#troubleshooting-authentication}
@@ -392,7 +392,7 @@ Or the error log:
 
 ```shell
 07.25.2019 12:00:59.893 *ERROR* [sling-threadpool-db2763bb-bc50-4bb5-bb64-10a09f432712-(apache-sling-job-thread-pool)-90-com_day_cq_replication_job_s7delivery(com/day/cq/replication/job/s7delivery)] com.day.cq.replication.Agent.s7delivery.queue Error during processing of replication.
- 
+
 java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe.com:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
@@ -455,7 +455,7 @@ Replicate log example:
 
 1. Navigate to the **[!UICONTROL s7delivery Replication Agent]** node.
 
-   `localhost:4502/crx/de/index.jsp#/etc/replication/agents.author/s7delivery/jcr:content`  
+   `localhost:4502/crx/de/index.jsp#/etc/replication/agents.author/s7delivery/jcr:content`
 
 1. Add this setting to the replication agent (Boolean with value set to **[!UICONTROL True]**):
 
@@ -552,23 +552,23 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
 1. Do any one of the following to verify and, if necessary, debug the package installation:
 
-    * **Check the Video Analytics preset by way of the JCR** 
-      To check the Video Analytics preset by way of the JCR, you must have access to **[!UICONTROL CRXDE Lite]**.  
-  
+    * **Check the Video Analytics preset by way of the JCR**
+      To check the Video Analytics preset by way of the JCR, you must have access to **[!UICONTROL CRXDE Lite]**.
+
       AEM - In **[!UICONTROL CRXDE Lite]**, navigate to `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata  `
-  
-      That is `http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`  
-  
+
+      That is `http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
+
       If you do not have access to **[!UICONTROL CRXDE Lite]** on the Author node, you can check the preset through the Publish server.
 
     * **Check the Video Analytics preset through the Image Server**
 
       You can validate the Video Analytics preset directly by making an Image Server `req=userdata` request.
 
-      For example, to see the Analytics preset on the Author node, you can make the following request:  
-  
-      `http://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`  
-  
+      For example, to see the Analytics preset on the Author node, you can make the following request:
+
+      `http://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
+
       To validate the preset on Publish servers, you can make a similar direct request to the Publish server. The responses are the same on Author and Publish nodes. The response looks similar to the following:
 
       ```
@@ -580,16 +580,16 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
     * **Check the Video Analytics preset through the Video Reporting tool in AEM**
 
-      Tap **[!UICONTROL Tools > Assets > Video Reporting]** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`  
-  
+      Tap **[!UICONTROL Tools > Assets > Video Reporting]** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
+
       If you see the following error message, the report suite is available, but unpopulated. This error is correct--and desired--in a new installation before the system collects any data.
 
       ![screen_shot_2018-05-23at52254pm](assets/screen_shot_2018-05-23at52254pm.png)
 
-   To generate reporting data, upload and publish one video. Use **[!UICONTROL Copy URL]** and run the video at least one time.  
-  
-   Be aware that it can take up to 12 hours before the reporting data is populated from Video Viewer usage.  
-  
+   To generate reporting data, upload and publish one video. Use **[!UICONTROL Copy URL]** and run the video at least one time.
+
+   Be aware that it can take up to 12 hours before the reporting data is populated from Video Viewer usage.
+
    If there is an error and the report suite is not set correctly, the following alert is displayed.
 
    ![screen_shot_2018-05-23at52612pm](assets/screen_shot_2018-05-23at52612pm.png)
@@ -656,45 +656,45 @@ The filters provide a way for you to _exclude_ assets from being replicated to t
 
 If you are using Dynamic Media for 1) imaging in production _or_ 2) imaging and video, then you can use the default filters that we provide as-is. The following filters are active by default:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> </td> 
-   <td><strong>Filter</strong></td> 
-   <td><strong>Mimetype</strong></td> 
-   <td><strong>Renditions</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Dynamic Media Image Delivery</td> 
-   <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td> 
-   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> </td> 
-   <td>The out-of-the-box "filter-images" (applies to single images assets, including interactive images) and "filter-sets" (applies to Spin Sets, Image Sets, Mixed Media Sets, and Carousel Sets) will: 
-    <ul> 
-     <li>Include PTIFF images and Metadata for replication (Any rendition starting with <strong>cqdam</strong>).</li> 
-     <li>Exclude from replication the original image and static image renditions.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Dynamic Media Video Delivery</td> 
-   <td>filter-video</td> 
-   <td>Starts with <strong>video/</strong></td> 
-   <td>The out-of-the-box "filter-video" will: 
-    <ul> 
-     <li>Include proxy video renditions, video thumbnail/poster image, metadata (both at parent video and video renditions) for replication (Any rendition starting with <strong>cqdam</strong>).</li> 
-     <li>Exclude from replication the original video and static thumbnail renditions.<br /> <br /> <strong>Note:</strong> The proxy video renditions do not contain binaries, but instead are just node properties. Hence, there is no impact on publisher repository size.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Dynamic Media Classic (Scene7) integration</td> 
-   <td><p>filter-images</p> <p>filter-sets</p> <p>filter-video</p> </td> 
-   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> <p>Starts with <strong>video/</strong></p> </td> 
-   <td><p>You configure the Transport URI to point to your AEM publish server instead of the Adobe Dynamic Media Cloud Replication Service URL. Setting up this filter will allow Dynamic Media Classic to deliver assets instead of the AEM publish instance.</p> <p>The out-of-the-box "filter-images," "filter-sets," and "filter-video" will:</p> 
-    <ul> 
-     <li>Include PTIFF image, proxy video renditions, and metadata for replication. However, because they do not exist in the JCR-for those running AEM - Dynamic Media Classic integration-it effectively does nothing.</li> 
-     <li>Exclude from replication the original image, static image renditions, original video, and static thumbnail renditions. Instead, Dynamic Media Classic will be delivering image and video assets.</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> </td>
+   <td><strong>Filter</strong></td>
+   <td><strong>Mimetype</strong></td>
+   <td><strong>Renditions</strong></td>
+  </tr>
+  <tr>
+   <td>Dynamic Media Image Delivery</td>
+   <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td>
+   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> </td>
+   <td>The out-of-the-box "filter-images" (applies to single images assets, including interactive images) and "filter-sets" (applies to Spin Sets, Image Sets, Mixed Media Sets, and Carousel Sets) will:
+    <ul>
+     <li>Include PTIFF images and Metadata for replication (Any rendition starting with <strong>cqdam</strong>).</li>
+     <li>Exclude from replication the original image and static image renditions.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Dynamic Media Video Delivery</td>
+   <td>filter-video</td>
+   <td>Starts with <strong>video/</strong></td>
+   <td>The out-of-the-box "filter-video" will:
+    <ul>
+     <li>Include proxy video renditions, video thumbnail/poster image, metadata (both at parent video and video renditions) for replication (Any rendition starting with <strong>cqdam</strong>).</li>
+     <li>Exclude from replication the original video and static thumbnail renditions.<br /> <br /> <strong>Note:</strong> The proxy video renditions do not contain binaries, but instead are just node properties. Hence, there is no impact on publisher repository size.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Dynamic Media Classic (Scene7) integration</td>
+   <td><p>filter-images</p> <p>filter-sets</p> <p>filter-video</p> </td>
+   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> <p>Starts with <strong>video/</strong></p> </td>
+   <td><p>You configure the Transport URI to point to your AEM publish server instead of the Adobe Dynamic Media Cloud Replication Service URL. Setting up this filter will allow Dynamic Media Classic to deliver assets instead of the AEM publish instance.</p> <p>The out-of-the-box "filter-images," "filter-sets," and "filter-video" will:</p>
+    <ul>
+     <li>Include PTIFF image, proxy video renditions, and metadata for replication. However, because they do not exist in the JCR-for those running AEM - Dynamic Media Classic integration-it effectively does nothing.</li>
+     <li>Exclude from replication the original image, static image renditions, original video, and static thumbnail renditions. Instead, Dynamic Media Classic will be delivering image and video assets.</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -734,7 +734,7 @@ If you are using Dynamic Media for imaging in non-production deployments, follow
 
 1. Locate **[!UICONTROL filter-images]**, right-click it and select **[!UICONTROL Copy]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
-1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node]**. Enter the name `damRenditionFilters` of type `nt:unstructured`. 
+1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node]**. Enter the name `damRenditionFilters` of type `nt:unstructured`.
 1. Locate [!UICONTROL `damRenditionFilters`], right-click it and select **[!UICONTROL Paste]**.
 
 This sets up the AEM publish instance to deliver the images to your non-production environment. The filter will also exclude from replication the original image and static renditions, which are not needed on the publish instance.
@@ -745,7 +745,7 @@ This sets up the AEM publish instance to deliver the images to your non-producti
 >
 >If you are using more than one filter on a server&mdash;for example, one filter for replication to publish and a second filter for s7delivery&mdash;then you need to ensure that these two filters have a different **userId** assigned to them in the **[!UICONTROL jcr:content]** node. See the image that follows:
 
-![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png) 
+![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
 ### Customizing Asset Filters for replication {#customizing-asset-filters-for-replication}
 
@@ -774,25 +774,25 @@ To optionally customize asset filters for replication:
 
    Characters that you can use to filter for replication include the following:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Character to use</strong></td> 
-   <td><strong>How it filters assets for replication</strong></td> 
-  </tr> 
-  <tr> 
-   <td>*</td> 
-   <td>Wildcard character<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>+</td> 
-   <td>Includes assets for replication.</td> 
-  </tr> 
-  <tr> 
-   <td>-</td> 
-   <td>Excludes assets from replication.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Character to use</strong></td>
+   <td><strong>How it filters assets for replication</strong></td>
+  </tr>
+  <tr>
+   <td>*</td>
+   <td>Wildcard character<br /> </td>
+  </tr>
+  <tr>
+   <td>+</td>
+   <td>Includes assets for replication.</td>
+  </tr>
+  <tr>
+   <td>-</td>
+   <td>Excludes assets from replication.</td>
+  </tr>
+ </tbody>
 </table>
 
    Navigate to `content/dam/<locate_your_asset>/jcr:content/renditions`.
@@ -832,44 +832,44 @@ Configuring the Dynamic Media Image Server involves editing the Adobe CQ Scene7 
    >
    >In most cases, there is no need to change the default values. However, if you do change the default values, you must restart the bundle for the changes to take affect.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property</strong></td> 
-   <td><strong>Default value</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>TcpPort.name</td> 
-   <td><code><em>empty</em></code></td> 
-   <td>Port number to use for communication with the ImageServer process. By default free port is automatically detected.</td> 
-  </tr> 
-  <tr> 
-   <td>AllowRemoteAccess.name</td> 
-   <td><code><em>empty</em></code></td> 
-   <td><p>Allow or disallow remote access to ImageServer process. If false, the image server listens only on localhost.</p> <p>Default externalizer settings that point to the localhost need to specify the actual domain or IP address of the specific VM instance. The reason for this is because the localhost may be pointing to the parent system of the VM.</p> <p>Domains or IP addresses for the VM may need to have a host file entry so that it can resolve itself.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>MaxRenderRgnPixels</td> 
-   <td>16 MPixels</td> 
-   <td>Maximum size in megapixels that is rendered.</td> 
-  </tr> 
-  <tr> 
-   <td>MaxMessageSize</td> 
-   <td>16 MBytes</td> 
-   <td>Maximum message size in megabytes that is delivered.</td> 
-  </tr> 
-  <tr> 
-   <td>RandomAccessUrlTimeout</td> 
-   <td>20</td> 
-   <td>Timeout value for how long in seconds the ImageServer will wait for the JCR to respond to a ranged tile request.</td> 
-  </tr> 
-  <tr> 
-   <td>WorkerThreads</td> 
-   <td>10</td> 
-   <td>Number of worker threads.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property</strong></td>
+   <td><strong>Default value</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>TcpPort.name</td>
+   <td><code><em>empty</em></code></td>
+   <td>Port number to use for communication with the ImageServer process. By default free port is automatically detected.</td>
+  </tr>
+  <tr>
+   <td>AllowRemoteAccess.name</td>
+   <td><code><em>empty</em></code></td>
+   <td><p>Allow or disallow remote access to ImageServer process. If false, the image server listens only on localhost.</p> <p>Default externalizer settings that point to the localhost need to specify the actual domain or IP address of the specific VM instance. The reason for this is because the localhost may be pointing to the parent system of the VM.</p> <p>Domains or IP addresses for the VM may need to have a host file entry so that it can resolve itself.</p> </td>
+  </tr>
+  <tr>
+   <td>MaxRenderRgnPixels</td>
+   <td>16 MPixels</td>
+   <td>Maximum size in megapixels that is rendered.</td>
+  </tr>
+  <tr>
+   <td>MaxMessageSize</td>
+   <td>16 MBytes</td>
+   <td>Maximum message size in megabytes that is delivered.</td>
+  </tr>
+  <tr>
+   <td>RandomAccessUrlTimeout</td>
+   <td>20</td>
+   <td>Timeout value for how long in seconds the ImageServer will wait for the JCR to respond to a ranged tile request.</td>
+  </tr>
+  <tr>
+   <td>WorkerThreads</td>
+   <td>10</td>
+   <td>Number of worker threads.</td>
+  </tr>
+ </tbody>
 </table>
 
 1. Tap **[!UICONTROL Save]**.
@@ -907,59 +907,59 @@ Be sure you tap the **[!UICONTROL Access Control]** tab (to the right of the **[
 
 Table of Manifest settings and their default values:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property</strong></td> 
-   <td><strong>Default value</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>bkgcolor</td> 
-   <td>FFFFFF</td> 
-   <td><p>Default background color. RGB value used to fill in any area of a reply image which does not contain actual image data.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_bkgcolor.html">BkgColor</a> in the Image Serving API.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>defaultpix</td> 
-   <td>300,300</td> 
-   <td><p>Default view size. The server constrains reply images to be no larger than this width and height, if the request does not specify the view size explicitly using wid=, hei=, or scl=.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values may be set to 0 to keep them unconstrained. Does not apply to nested/embedded requests.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">DefaultPix</a> in the Image Serving API.</p> <p>Usually, however, you are using a viewer preset or image preset to deliver the asset. Defaultpix only applies to an asset that is not using a viewer preset or image preset.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>defaultthumbpix</td> 
-   <td>100,100</td> 
-   <td><p>Default thumbnail size. Used instead of attribute::DefaultPix for thumbnail requests (req=tmb).</p> <p>The server constrains reply images to be no larger than this width and height, if a thumbnail request (req=tmb) does not specify the size explicitly not specify the view size explicitly using wid=, hei=, or scl=.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values may be set to 0 to keep them unconstrained. </p> <p>Does not apply to nested/embedded requests.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in the Image Serving API. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>expiration</td> 
-   <td>36000000</td> 
-   <td><p>Default client cache time to live. Provides a default expiration interval in case a particular catalog record does not contain a valid catalog::Expiration value.</p> <p>Real number, 0 or greater. Number of milliseconds until expiration since the reply data was generated. Set to 0 to always expire the reply image immediately, which effectively disables client caching. By default, this value is set to 10 hours, which means that if a new image is published, it takes 10 hours for the old image to leave the user's cache. Contact Customer Care if you need the cache cleared sooner.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_expiration.html">Expiration</a> in the Image Serving API.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>jpegquality</td> 
-   <td>80</td> 
-   <td><p>Default JPEG encoding attributes. Specifies the default attributes for JPEG reply images.</p> <p>Integer number and flag, separated by a comma. The first value is in the range 1..100 and defines the quality. The second value may be 0 for normal behavior, or 1 to disable the RGB chromaticity down-sampling usually employed by JPEG encoders.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_jpegquality.html">JpegQuality</a> in the Image Serving API.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>maxpix</td> 
-   <td>2000,2000</td> 
-   <td><p>Reply image size limit. Maximum reply image width and height that is returned to the client.</p> <p>The server returns an error if a request causes a reply image whose width or height is larger than attribute::MaxPix.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_maxpix.html">MaxPix</a> in the Image Serving API.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>resmode</td> 
-   <td>SHARP2</td> 
-   <td><p>Default resampling mode. Specifies the default resampling and interpolation attributes to be used for scaling image data.</p> <p>Used when resMode= is not specified in a request.</p> <p>Allowed values include BILIN, BICUB, or SHARP2.</p> <p>Enum. Set to 2 for bilin, 3 for bicub, or 4 for sharp2 interpolation mode. Use sharp2 for best results.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_is_cat_resmode.html">ResMode</a> in the Image Serving API.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>resolution</td> 
-   <td>72</td> 
-   <td><p>Default object resolution. Provides a default object resolution in case a particular catalog record does not contain a valid catalog::Resolution value.</p> <p>Real number, larger than 0. Typically expressed as pixels per inch, but may also be in other units, such as pixels per meter.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_resolution.html">Resolution</a> in the Image Serving API.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>thumbnailtime</td> 
-   <td>1%,11%,21%,31%,41%,51%,61%,71%,81%,91%</td> 
-   <td>These values represent a snapshot of video playtime and are passed to <a href="https://encoding.com/">encoding.com</a>. See <a href="/help/assets/video.md#about-video-thumbnails">About video thumbnails</a> for more information.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property</strong></td>
+   <td><strong>Default value</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>bkgcolor</td>
+   <td>FFFFFF</td>
+   <td><p>Default background color. RGB value used to fill in any area of a reply image which does not contain actual image data.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_bkgcolor.html">BkgColor</a> in the Image Serving API.</p> </td>
+  </tr>
+  <tr>
+   <td>defaultpix</td>
+   <td>300,300</td>
+   <td><p>Default view size. The server constrains reply images to be no larger than this width and height, if the request does not specify the view size explicitly using wid=, hei=, or scl=.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values may be set to 0 to keep them unconstrained. Does not apply to nested/embedded requests.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">DefaultPix</a> in the Image Serving API.</p> <p>Usually, however, you are using a viewer preset or image preset to deliver the asset. Defaultpix only applies to an asset that is not using a viewer preset or image preset.</p> </td>
+  </tr>
+  <tr>
+   <td>defaultthumbpix</td>
+   <td>100,100</td>
+   <td><p>Default thumbnail size. Used instead of attribute::DefaultPix for thumbnail requests (req=tmb).</p> <p>The server constrains reply images to be no larger than this width and height, if a thumbnail request (req=tmb) does not specify the size explicitly not specify the view size explicitly using wid=, hei=, or scl=.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values may be set to 0 to keep them unconstrained. </p> <p>Does not apply to nested/embedded requests.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in the Image Serving API. </p> </td>
+  </tr>
+  <tr>
+   <td>expiration</td>
+   <td>36000000</td>
+   <td><p>Default client cache time to live. Provides a default expiration interval in case a particular catalog record does not contain a valid catalog::Expiration value.</p> <p>Real number, 0 or greater. Number of milliseconds until expiration since the reply data was generated. Set to 0 to always expire the reply image immediately, which effectively disables client caching. By default, this value is set to 10 hours, which means that if a new image is published, it takes 10 hours for the old image to leave the user's cache. Contact Customer Care if you need the cache cleared sooner.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_expiration.html">Expiration</a> in the Image Serving API.</p> </td>
+  </tr>
+  <tr>
+   <td>jpegquality</td>
+   <td>80</td>
+   <td><p>Default JPEG encoding attributes. Specifies the default attributes for JPEG reply images.</p> <p>Integer number and flag, separated by a comma. The first value is in the range 1..100 and defines the quality. The second value may be 0 for normal behavior, or 1 to disable the RGB chromaticity down-sampling usually employed by JPEG encoders.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_jpegquality.html">JpegQuality</a> in the Image Serving API.</p> </td>
+  </tr>
+  <tr>
+   <td>maxpix</td>
+   <td>2000,2000</td>
+   <td><p>Reply image size limit. Maximum reply image width and height that is returned to the client.</p> <p>The server returns an error if a request causes a reply image whose width or height is larger than attribute::MaxPix.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_maxpix.html">MaxPix</a> in the Image Serving API.</p> </td>
+  </tr>
+  <tr>
+   <td>resmode</td>
+   <td>SHARP2</td>
+   <td><p>Default resampling mode. Specifies the default resampling and interpolation attributes to be used for scaling image data.</p> <p>Used when resMode= is not specified in a request.</p> <p>Allowed values include BILIN, BICUB, or SHARP2.</p> <p>Enum. Set to 2 for bilin, 3 for bicub, or 4 for sharp2 interpolation mode. Use sharp2 for best results.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_is_cat_resmode.html">ResMode</a> in the Image Serving API.</p> </td>
+  </tr>
+  <tr>
+   <td>resolution</td>
+   <td>72</td>
+   <td><p>Default object resolution. Provides a default object resolution in case a particular catalog record does not contain a valid catalog::Resolution value.</p> <p>Real number, larger than 0. Typically expressed as pixels per inch, but may also be in other units, such as pixels per meter.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_resolution.html">Resolution</a> in the Image Serving API.</p> </td>
+  </tr>
+  <tr>
+   <td>thumbnailtime</td>
+   <td>1%,11%,21%,31%,41%,51%,61%,71%,81%,91%</td>
+   <td>These values represent a snapshot of video playtime and are passed to <a href="https://encoding.com/">encoding.com</a>. See <a href="/help/assets/video.md#about-video-thumbnails">About video thumbnails</a> for more information.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Configuring Dynamic Media Color Management {#configuring-dynamic-media-color-management}
@@ -1014,69 +1014,69 @@ After you install the feature pack, you need to configure the appropriate defaul
 
     **Color Correction Properties Table**
 
-    <table> 
-    <tbody> 
-      <tr> 
-      <td><strong>Property</strong></td> 
-      <td><strong>Type</strong></td> 
-      <td><strong>Default</strong></td> 
-      <td><strong>Description</strong></td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilergb.html">iccprofilergb</a></td> 
-      <td>String</td> 
-      <td>&lt;empty&gt;</td> 
-      <td>Name of the default RGB color profile.</td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilecmyk.html">iccprofilecmyk</a></td> 
-      <td>String</td> 
-      <td>&lt;empty&gt;</td> 
-      <td>Name of the default CMYK color profile.</td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilegray.html">iccprofilegray</a></td> 
-      <td>String</td> 
-      <td>&lt;empty&gt;</td> 
-      <td>Name of the default Gray color profile.</td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcrgb.html">iccprofilesrcrgb</a></td> 
-      <td>String</td> 
-      <td>&lt;empty&gt;</td> 
-      <td>Name of the default RGB color profile used for RGB images that do not have an embedded color profile</td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrccmyk.html">iccprofilesrccmyk</a></td> 
-      <td>String</td> 
-      <td>&lt;empty&gt;</td> 
-      <td>Name of the default CMYK color profile used for CMYK images that do not have an embedded color profile.</td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcgray.html">iccprofilesrcgray</a></td> 
-      <td>String</td> 
-      <td>&lt;empty&gt;</td> 
-      <td>Name of the default Gray color profile used for CMYK images that do not have an embedded color profile.</td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccblackpointcompensation.html">iccblackpointcompensation</a></td> 
-      <td>Boolean</td> 
-      <td>True</td> 
-      <td>Specifies whether black point compensation should be done during color correction. Adobe recommends this to be on.</td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccdither.html">iccdither</a></td> 
-      <td>Boolean</td> 
-      <td>False</td> 
-      <td>Specifies whether dithering should be done during color correction.</td> 
-      </tr> 
-      <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccrenderintent.html">iccrenderintent</a></td> 
-      <td>String</td> 
-      <td>relative</td> 
-      <td><p>Specifies the render intent. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recommends <strong>relative </strong><i></i>as the default.</p> </td> 
-      </tr> 
-    </tbody> 
+    <table>
+    <tbody>
+      <tr>
+      <td><strong>Property</strong></td>
+      <td><strong>Type</strong></td>
+      <td><strong>Default</strong></td>
+      <td><strong>Description</strong></td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilergb.html">iccprofilergb</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default RGB color profile.</td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilecmyk.html">iccprofilecmyk</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default CMYK color profile.</td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilegray.html">iccprofilegray</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default Gray color profile.</td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default RGB color profile used for RGB images that do not have an embedded color profile</td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default CMYK color profile used for CMYK images that do not have an embedded color profile.</td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcgray.html">iccprofilesrcgray</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default Gray color profile used for CMYK images that do not have an embedded color profile.</td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccblackpointcompensation.html">iccblackpointcompensation</a></td>
+      <td>Boolean</td>
+      <td>True</td>
+      <td>Specifies whether black point compensation should be done during color correction. Adobe recommends this to be on.</td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccdither.html">iccdither</a></td>
+      <td>Boolean</td>
+      <td>False</td>
+      <td>Specifies whether dithering should be done during color correction.</td>
+      </tr>
+      <tr>
+      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccrenderintent.html">iccrenderintent</a></td>
+      <td>String</td>
+      <td>relative</td>
+      <td><p>Specifies the render intent. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recommends <strong>relative </strong><i></i>as the default.</p> </td>
+      </tr>
+    </tbody>
     </table>
 
    >[!NOTE]
@@ -1087,174 +1087,174 @@ After you install the feature pack, you need to configure the appropriate defaul
 
    The following color profiles are installed:
 
-    <table> 
-    <tbody> 
-      <tr> 
-      <th><p>Name</p> </th> 
-      <th><p>Colorspace</p> </th> 
-      <th><p>Description</p> </th> 
-      </tr> 
-      <tr> 
-      <td>AdobeRGB</td> 
-      <td>RGB</td> 
-      <td>Adobe RGB (1998)</td> 
-      </tr> 
-      <tr> 
-      <td>AppleRGB</td> 
-      <td>RGB</td> 
-      <td>Apple RGB</td> 
-      </tr> 
-      <tr> 
-      <td>CIERGB</td> 
-      <td>RGB</td> 
-      <td>CIE RGB</td> 
-      </tr> 
-      <tr> 
-      <td>CoatedFogra27</td> 
-      <td>CMYK</td> 
-      <td>Coated FOGRA27 (ISO 12647-2:2004)</td> 
-      </tr> 
-      <tr> 
-      <td>CoatedFogra39</td> 
-      <td>CMYK</td> 
-      <td>Coated FOGRA39 (ISO 12647-2:2004)</td> 
-      </tr> 
-      <tr> 
-      <td>CoatedGraCol</td> 
-      <td>CMYK</td> 
-      <td>Coated GRACoL 2006 (ISO 12647-2:2004)</td> 
-      </tr> 
-      <tr> 
-      <td>ColorMatchRGB</td> 
-      <td>RGB</td> 
-      <td>ColorMatch RGB</td> 
-      </tr> 
-      <tr> 
-      <td>EuropeISOCoated</td> 
-      <td>CMYK</td> 
-      <td>Europe ISO Coated FOGRA27</td> 
-      </tr> 
-      <tr> 
-      <td>EuroscaleCoated</td> 
-      <td>CMYK</td> 
-      <td>Euroscale Coated v2</td> 
-      </tr> 
-      <tr> 
-      <td>EuroscaleUncoated</td> 
-      <td>CMYK</td> 
-      <td>Euroscale Uncoated v2</td> 
-      </tr> 
-      <tr> 
-      <td>JapanColorCoated</td> 
-      <td>CMYK</td> 
-      <td>Japan Color 2001 Coated</td> 
-      </tr> 
-      <tr> 
-      <td>JapanColorNewspaper</td> 
-      <td>CMYK</td> 
-      <td>Japan Color 2002 Newspaper</td> 
-      </tr> 
-      <tr> 
-      <td>JapanColorUncoated</td> 
-      <td>CMYK</td> 
-      <td>Japan Color 2001 Uncoated</td> 
-      </tr> 
-      <tr> 
-      <td>JapanColorWebCoated</td> 
-      <td>CMYK</td> 
-      <td>Japan Color 2003 Web Coated</td> 
-      </tr> 
-      <tr> 
-      <td>JapanWebCoated</td> 
-      <td>CMYK</td> 
-      <td>Japan Web Coated (Ad)</td> 
-      </tr> 
-      <tr> 
-      <td>NewsprintSNAP2007</td> 
-      <td>CMYK</td> 
-      <td>US Newsprint (SNAP 2007)</td> 
-      </tr> 
-      <tr> 
-      <td>NTSC</td> 
-      <td>RGB</td> 
-      <td>NTSC (1953)</td> 
-      </tr> 
-      <tr> 
-      <td>PAL</td> 
-      <td>RGB</td> 
-      <td>PAL/SECAM</td> 
-      </tr> 
-      <tr> 
-      <td>ProPhoto</td> 
-      <td>RGB</td> 
-      <td>ProPhoto RGB</td> 
-      </tr> 
-      <tr> 
-      <td>PS4Default</td> 
-      <td>CMYK</td> 
-      <td>Photoshop 4 Default CMYK</td> 
-      </tr> 
-      <tr> 
-      <td>PS5Default</td> 
-      <td>CMYK</td> 
-      <td>Photoshop 5 Default CMYK</td> 
-      </tr> 
-      <tr> 
-      <td>SheetfedCoated</td> 
-      <td>CMYK</td> 
-      <td>U.S. Sheetfed Coated v2</td> 
-      </tr> 
-      <tr> 
-      <td>SheetfedUncoated</td> 
-      <td>CMYK</td> 
-      <td>U.S. Sheetfed Uncoated v2</td> 
-      </tr> 
-      <tr> 
-      <td>SMPTE</td> 
-      <td>RGB</td> 
-      <td>SMPTE-C</td> 
-      </tr> 
-      <tr> 
-      <td>sRGB</td> 
-      <td>RGB</td> 
-      <td>sRGB IEC61966-2.1</td> 
-      </tr> 
-      <tr> 
-      <td>UncoatedFogra29</td> 
-      <td>CMYK</td> 
-      <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td> 
-      </tr> 
-      <tr> 
-      <td>WebCoated</td> 
-      <td>CMYK</td> 
-      <td>U.S. Web Coated (SWOP) v2</td> 
-      </tr> 
-      <tr> 
-      <td>WebCoatedFogra28</td> 
-      <td>CMYK</td> 
-      <td>Web Coated FOGRA28 (ISO 12647-2:2004)</td> 
-      </tr> 
-      <tr> 
-      <td>WebCoatedGrade3</td> 
-      <td>CMYK</td> 
-      <td>Web Coated SWOP 2006 Grade 3 Paper</td> 
-      </tr> 
-      <tr> 
-      <td>WebCoatedGrade5</td> 
-      <td>CMYK</td> 
-      <td>Web Coated SWOP 2006 Grade 5 Paper</td> 
-      </tr> 
-      <tr> 
-      <td>WebUncoated</td> 
-      <td>CMYK</td> 
-      <td>U.S. Web Uncoated v2</td> 
-      </tr> 
-      <tr> 
-      <td>WideGamutRGB</td> 
-      <td>RGB</td> 
-      <td>Wide Gamut RGB</td> 
-      </tr> 
-    </tbody> 
+    <table>
+    <tbody>
+      <tr>
+      <th><p>Name</p> </th>
+      <th><p>Colorspace</p> </th>
+      <th><p>Description</p> </th>
+      </tr>
+      <tr>
+      <td>AdobeRGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+      </tr>
+      <tr>
+      <td>AppleRGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+      </tr>
+      <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>CIE RGB</td>
+      </tr>
+      <tr>
+      <td>CoatedFogra27</td>
+      <td>CMYK</td>
+      <td>Coated FOGRA27 (ISO 12647-2:2004)</td>
+      </tr>
+      <tr>
+      <td>CoatedFogra39</td>
+      <td>CMYK</td>
+      <td>Coated FOGRA39 (ISO 12647-2:2004)</td>
+      </tr>
+      <tr>
+      <td>CoatedGraCol</td>
+      <td>CMYK</td>
+      <td>Coated GRACoL 2006 (ISO 12647-2:2004)</td>
+      </tr>
+      <tr>
+      <td>ColorMatchRGB</td>
+      <td>RGB</td>
+      <td>ColorMatch RGB</td>
+      </tr>
+      <tr>
+      <td>EuropeISOCoated</td>
+      <td>CMYK</td>
+      <td>Europe ISO Coated FOGRA27</td>
+      </tr>
+      <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>Euroscale Coated v2</td>
+      </tr>
+      <tr>
+      <td>EuroscaleUncoated</td>
+      <td>CMYK</td>
+      <td>Euroscale Uncoated v2</td>
+      </tr>
+      <tr>
+      <td>JapanColorCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 Coated</td>
+      </tr>
+      <tr>
+      <td>JapanColorNewspaper</td>
+      <td>CMYK</td>
+      <td>Japan Color 2002 Newspaper</td>
+      </tr>
+      <tr>
+      <td>JapanColorUncoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 Uncoated</td>
+      </tr>
+      <tr>
+      <td>JapanColorWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2003 Web Coated</td>
+      </tr>
+      <tr>
+      <td>JapanWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Web Coated (Ad)</td>
+      </tr>
+      <tr>
+      <td>NewsprintSNAP2007</td>
+      <td>CMYK</td>
+      <td>US Newsprint (SNAP 2007)</td>
+      </tr>
+      <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC (1953)</td>
+      </tr>
+      <tr>
+      <td>PAL</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+      </tr>
+      <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>ProPhoto RGB</td>
+      </tr>
+      <tr>
+      <td>PS4Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 4 Default CMYK</td>
+      </tr>
+      <tr>
+      <td>PS5Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 5 Default CMYK</td>
+      </tr>
+      <tr>
+      <td>SheetfedCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+      </tr>
+      <tr>
+      <td>SheetfedUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Uncoated v2</td>
+      </tr>
+      <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+      </tr>
+      <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+      </tr>
+      <tr>
+      <td>UncoatedFogra29</td>
+      <td>CMYK</td>
+      <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td>
+      </tr>
+      <tr>
+      <td>WebCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+      </tr>
+      <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>Web Coated FOGRA28 (ISO 12647-2:2004)</td>
+      </tr>
+      <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 3 Paper</td>
+      </tr>
+      <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 5 Paper</td>
+      </tr>
+      <tr>
+      <td>WebUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Uncoated v2</td>
+      </tr>
+      <tr>
+      <td>WideGamutRGB</td>
+      <td>RGB</td>
+      <td>Wide Gamut RGB</td>
+      </tr>
+    </tbody>
     </table>
 
 1. Tap **[!UICONTROL Save All]**.
@@ -1273,22 +1273,22 @@ After you complete all the tasks above, activated Dynamic Media assets are serve
 
 See [Delivering Dynamic Media Assets](delivering-dynamic-media-assets.md).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>When you...</strong></td> 
-   <td><strong>Result</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Copy an image URL</td> 
-   <td><p>The Copy URL dialog box displays a URL similar to following (URL is for demonstration purposes only):</p> <p><code>https://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</code></p> <p>Where <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="/help/assets/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Copy a viewer URL</td> 
-   <td><p>The Copy URL dialog box displays a URL similar to the following (URL is for demonstration purposes only):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Where <code>PUBLISHNODE</code> refers to the regular AEM publish node and <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="/help/assets/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Copy a viewer's embed code</td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>When you...</strong></td>
+   <td><strong>Result</strong></td>
+  </tr>
+  <tr>
+   <td>Copy an image URL</td>
+   <td><p>The Copy URL dialog box displays a URL similar to following (URL is for demonstration purposes only):</p> <p><code>https://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</code></p> <p>Where <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="/help/assets/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Copy a viewer URL</td>
+   <td><p>The Copy URL dialog box displays a URL similar to the following (URL is for demonstration purposes only):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Where <code>PUBLISHNODE</code> refers to the regular AEM publish node and <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="/help/assets/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Copy a viewer's embed code</td>
    <td><p>The Copy Embed Code dialog box displays a code snippet similar to the following (code sample is for demonstration purposes only):</p> <p><code class="code">&lt;style type="text/css"&gt;
        #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
@@ -1307,9 +1307,9 @@ See [Delivering Dynamic Media Assets](delivering-dynamic-media-assets.md).
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
        "asset" : "/content/dam/path/to/Image.jpg" }
        }).init();
-       &lt;/script&gt;</code></p> <p>Where <code>PUBLISHNODE</code> refers to the regular AEM publish node and <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="/help/assets/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td> 
-  </tr> 
- </tbody> 
+       &lt;/script&gt;</code></p> <p>Where <code>PUBLISHNODE</code> refers to the regular AEM publish node and <code>IMAGESERVICEPUBLISHNODE</code> refers to the Image Service URL.</p> <p>See also <a href="/help/assets/delivering-dynamic-media-assets.md">Delivering Dynamic Media Assets</a>.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### WCM Dynamic Media and Interactive Media Components {#wcm-dynamic-media-and-interactive-media-components}

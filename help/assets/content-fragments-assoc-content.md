@@ -5,7 +5,7 @@ description: Associated content provides the connection so that assets can be (o
 seo-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
 uuid: 1bc1eefa-7a7c-43be-a8a8-0d153d60c5c4
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
@@ -34,7 +34,7 @@ To make the association you first need to [add your media asset(s) to a collecti
 1. Select **[!UICONTROL Associate Content]** or **[!UICONTROL Associate Collection]** (as appropriate, depending on whether any collections have already been associated or not).
 1. Select the required collection.
 
-   You can optionally add the fragment itself to the selected collection; this aids tracking. 
+   You can optionally add the fragment itself to the selected collection; this aids tracking.
 
    ![cfm-6420-04](assets/cfm-6420-04.png)
 

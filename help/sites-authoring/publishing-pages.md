@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 1222859d-ef8d-462e-a125-b76e6cfec26d
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
@@ -23,13 +23,13 @@ You can also publish/unpublish a page immediately or at a predefined date/time i
 >
 >Certain terms related to publishing can be confused:
 >
->* **Publish / Unpublish** 
->  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).  
+>* **Publish / Unpublish**
+>  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).
 >
->* **Activate / Deactivate** 
->  These terms are synonymous with publish/unpublish.  
+>* **Activate / Deactivate**
+>  These terms are synonymous with publish/unpublish.
 >
->* **Replicate / Replication** 
+>* **Replicate / Replication**
 >  These are the technical terms describing the movement of data (e.g. page content, files, code, user comments) from one environment to another such as when publishing or reverse-replicating user comments.
 >
 
@@ -59,10 +59,10 @@ If you are editing a page, it can be published directly from the editor.
 
 1. Depending on whether the page has references that need publishing:
 
-    * The page will be published directly if there are no references to be published. 
+    * The page will be published directly if there are no references to be published.
     * If the page has references that need publishing, these will be listed in the **Publish** wizard, where you can either:
 
-        * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process. 
+        * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
         * Use **Cancel** to abort the action.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)

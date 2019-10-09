@@ -6,7 +6,7 @@ seo-description: App metadata is required details for releasing an application t
 uuid: c140be0f-8403-416e-af0f-29072a2ab942
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 ---
@@ -52,7 +52,7 @@ You can include App screenshots to the metadata roll up. Some vendors require ac
 
 To add an Asset as a screenshot:
 
-1. While in edit mode of the **Manage App** page, click add (plus icon).  
+1. While in edit mode of the **Manage App** page, click add (plus icon).
 1. Select the asset and click **Select** to add the asset.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)

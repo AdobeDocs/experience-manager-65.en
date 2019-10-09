@@ -4,7 +4,7 @@ seo-title: Use form data model
 description: Learn how to use form data model to create and work with adaptive forms and interactive communications.
 seo-description: Learn how to use form data model to create and work with adaptive forms and interactive communications.
 uuid: 9a8bd44a-34a1-41ef-a57b-d5e3dd0a77ee
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
 discoiquuid: 7a1bfd43-39b1-478b-a294-92c78eaebbf2
 ---
@@ -83,7 +83,7 @@ Form data model editor allows you to generate and edit sample data for data mode
 
 To preview an interactive communication with sample form data model data:
 
-1. On AEM author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**. 
+1. On AEM author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
 1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
 
@@ -113,7 +113,7 @@ When a user submits a form based on a form data model, you can configure the for
 
 To configure the Form Data Model submit action, open Adaptive Form Container properties and select **[!UICONTROL Submit using Form Data Model]** from the Submit Action drop-down under the Submission accordion. Then, browse and select a data model object from the **[!UICONTROL Name of the data model object to submit]** drop-down. Save the properties.
 
-On form submission, data for the configured data model object is written to the respective data source. 
+On form submission, data for the configured data model object is written to the respective data source.
 
 ![data-submission](assets/data-submission.png)
 

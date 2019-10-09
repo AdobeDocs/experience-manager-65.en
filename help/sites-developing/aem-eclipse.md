@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
@@ -13,7 +13,7 @@ discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
- ![](do-not-localize/chlimage_1-9.png) 
+ ![](do-not-localize/chlimage_1-9.png)
 
 ## Overview {#overview}
 
@@ -21,9 +21,9 @@ The AEM Developer Tools for Eclipse is a Eclipse plugin based on the [Eclipse pl
 
 It offers several features that make AEM development easier:
 
-* Seamless integration with AEM instances through Eclipse Server Connector.  
+* Seamless integration with AEM instances through Eclipse Server Connector.
 * Synchronization for both content and OSGI bundles.
-* Debugging support with code hot-swaping capability.  
+* Debugging support with code hot-swaping capability.
 * Simple bootstrap of AEM projects via a specific Project Creation Wizard.
 * Easy editing of JCR properties.
 
@@ -31,9 +31,9 @@ It offers several features that make AEM development easier:
 
 Before using the AEM Developer Tools, you need to:
 
-* Download and install [Eclipse IDE for Java EE Developers](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools currently support Eclipse Kepler or newer  
+* Download and install [Eclipse IDE for Java EE Developers](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools currently support Eclipse Kepler or newer
 
-* Can be used with AEM version 5.6.1 or newer  
+* Can be used with AEM version 5.6.1 or newer
 * Configure your eclipse installation to ensure that you have at least 1 gigabyte of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Before using the AEM Developer Tools, you need to:
 
 Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
 
-1. Browse the [**AEM** Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/).  
+1. Browse the [**AEM** Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Copy the **Installation Link**.
 
@@ -72,7 +72,7 @@ Once you have fulfilled the [requirements](#requirements) above, you can install
 
 The AEM Development Tools for Eclipse ships with a Perspective that offers you full control over your AEM projects and instances.
 
-![chlimage_1-2](assets/chlimage_1-2.jpeg) 
+![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
 ## Sample Multi-Module Project {#sample-multi-module-project}
 

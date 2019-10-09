@@ -1,22 +1,22 @@
 ---
-title: AEM 6.4 Forms User Guide
-seo-title: AEM 6.4 Forms User Guide
+title: AEM 6.5 Forms User Guide
+seo-title: AEM 6.5 Forms User Guide
 description: This guide covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 ---
 
-# AEM 6.4 Forms User Guide
+# AEM 6.5 Forms User Guide
 
 This guide covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 
 ## Key AEM articles
 
 * [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [AEM 6.4 Release Notes](/help/release-notes/home.md)
+* [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 user guides
+## AEM 6.5 user guides
 
 | User Guide | Description |
 |--- |---|

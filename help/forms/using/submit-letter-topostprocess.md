@@ -5,7 +5,7 @@ description: Post Processing of Letters in Correspondence Management lets you cr
 seo-description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
 uuid: 4163bba9-e82b-4d3e-b1df-909855413a9e
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
 ---
@@ -31,14 +31,14 @@ To associate post processes with letters or interactive communications, you firs
    ![Config Manager](assets/2configmanager-1.png)
 
 1. On this page, locate AEM Forms Client SDK Configuration and expand it by clicking it.
-1. In Server URL, enter the name of your AEM Forms on JEE server, login details, and then click **Save**. 
+1. In Server URL, enter the name of your AEM Forms on JEE server, login details, and then click **Save**.
 
    ![Enter name of the LiveCycle server](assets/1cofigmanager.png)
 
 1. Specify the username and password.
 1. Ensure that sun.util.calendar is added to Deserialization Firewall Configuration.
 
-   Go to Deserialization Firewall Configuration and under Whitelisted classes of package prefixes, add sun.util.calendar. 
+   Go to Deserialization Firewall Configuration and under Whitelisted classes of package prefixes, add sun.util.calendar.
 
 1. Now your servers are mapped and the post processes in AEM Forms on JEE are available in the AEM user interface while creating letters.
 
@@ -52,10 +52,10 @@ To associate post processes with letters or interactive communications, you firs
 
    Go to the Adobe Experience Manager Web Console Configurations page > **[!UICONTROL Correspondence Management Configurations]** and set up the following parameters:
 
-    1. **inPDFDoc (PDF document parameter):** A PDF document as input. This input contains the rendered letter as input. The parameter names indicated are configurable. They can be configured from Correspondence Management configurations from configuration. 
-    1. **inXMLDoc (XML data parameter):** An XML document as input. This input contains data entered by user in the form of XML. 
-    1. **inXDPDoc (XDP document parameter):** An XML document as input. This input contains underlying layout (XDP). 
-    1. **inAttachmentDocs (Attachment Documents parameter):** A list input parameter. This input contains all the attachments as input. 
+    1. **inPDFDoc (PDF document parameter):** A PDF document as input. This input contains the rendered letter as input. The parameter names indicated are configurable. They can be configured from Correspondence Management configurations from configuration.
+    1. **inXMLDoc (XML data parameter):** An XML document as input. This input contains data entered by user in the form of XML.
+    1. **inXDPDoc (XDP document parameter):** An XML document as input. This input contains underlying layout (XDP).
+    1. **inAttachmentDocs (Attachment Documents parameter):** A list input parameter. This input contains all the attachments as input.
     1. **redirectURL (Redirect URL Output):** An output type indicating the url to redirect to.
 
    Your forms workflow must have either PDF document parameter or XML data parameter as input with the same name as specified in **[!UICONTROL Correspondence Management Configurations]**. This is required for the process to be listed in the Post Process dropdown.
@@ -72,36 +72,36 @@ To associate post processes with letters or interactive communications, you firs
 
 ## Letter Instances Retrieval {#letter-instances-retrieval}
 
-Saved letter instances can be manipulated further, such as retrieval of letter instances and deletion of letter instances, by using the following APIs defined in LetterInstanceService. 
+Saved letter instances can be manipulated further, such as retrieval of letter instances and deletion of letter instances, by using the following APIs defined in LetterInstanceService.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Server-side API</strong></td> 
-   <td><strong>Operation name</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p>Public LetterInstanceVO</p> <p>getLetterInstance(String letterInstanceId)</p> <p>Throws ICCException; </p> </td> 
-   <td>getLetterInstance</td> 
-   <td>Fetch the specified letter instance </td> 
-  </tr> 
-  <tr> 
-   <td>Public void deleteLetterInstance(String letterInstanceId) throws ICCException; </td> 
-   <td>deleteLetterInstance </td> 
-   <td>Deleted the specified letter instance </td> 
-  </tr> 
-  <tr> 
-   <td>List getAllLetterInstances(Query) throws ICCException; </td> 
-   <td>getAllLetterInstances </td> 
-   <td>This API fetches letter instances based on the input query parameter. To fetch all letter instances, query parameter can be passed as null.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Public Boolean letterInstanceExists(String letterInstanceName) throws ICCException; </td> 
-   <td>letterInstanceExists </td> 
-   <td>Check if a LetterInstance exists by the given name </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Server-side API</strong></td>
+   <td><strong>Operation name</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><p>Public LetterInstanceVO</p> <p>getLetterInstance(String letterInstanceId)</p> <p>Throws ICCException; </p> </td>
+   <td>getLetterInstance</td>
+   <td>Fetch the specified letter instance </td>
+  </tr>
+  <tr>
+   <td>Public void deleteLetterInstance(String letterInstanceId) throws ICCException; </td>
+   <td>deleteLetterInstance </td>
+   <td>Deleted the specified letter instance </td>
+  </tr>
+  <tr>
+   <td>List getAllLetterInstances(Query) throws ICCException; </td>
+   <td>getAllLetterInstances </td>
+   <td>This API fetches letter instances based on the input query parameter. To fetch all letter instances, query parameter can be passed as null.<br /> </td>
+  </tr>
+  <tr>
+   <td>Public Boolean letterInstanceExists(String letterInstanceName) throws ICCException; </td>
+   <td>letterInstanceExists </td>
+   <td>Check if a LetterInstance exists by the given name </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Associating a post process with a letter {#associating-a-post-process-with-a-letter}
@@ -110,7 +110,7 @@ In the CCR user interface, complete the following steps to associate a post proc
 
 1. Hover over a letter and tap **View Properties**.
 1. Select **Edit**.
-1. In the Basic Properties, using the Post Process drop-down, select the post process to associate with the letter. Both the AEM and Forms-related post processes are listed in the drop-down. 
+1. In the Basic Properties, using the Post Process drop-down, select the post process to associate with the letter. Both the AEM and Forms-related post processes are listed in the drop-down.
 1. Tap **Save**.
 1. After configuring the letter with the Post Process, publish the letter and optionally on the publish instance, specify the processing URL in AEM DS Settings service. This ensures that the post process is run on the processing instance.
 

@@ -1,22 +1,22 @@
 ---
-title: AEM 6.4 Mobile User Guide
-seo-title: AEM 6.4 Mobile User Guide
+title: AEM 6.5 Mobile User Guide
+seo-title: AEM 6.5 Mobile User Guide
 description: This guide describes how to create and manage content for mobile applications.
 seo-description: Describes how to create and manage content for mobile applications.
 ---
 
-# AEM 6.4 Mobile User Guide
+# AEM 6.5 Mobile User Guide
 
 This guide covers all AEM Mobile tasks, such as how to create and manage content for mobile applications.
 
 ## Key AEM articles
 
 * [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [AEM 6.4 Release Notes](/help/release-notes/home.md)
+* [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 user guides
+## AEM 6.5 user guides
 
 | User Guide | Description |
 |--- |---|

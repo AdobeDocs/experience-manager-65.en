@@ -13,7 +13,7 @@ discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 
 # AEM Assets Release Notes {#aem-assets-release-notes}
 
-The key features, highlights, and enhancements done in AEM 6.4 Assets are covered in these release notes. For detailed information, follow the provided links.
+The key features, highlights, and enhancements done in AEM 6.5 Assets are covered in these release notes. For detailed information, follow the provided links.
 
 ## Adobe Asset Link {#adobe-asset-link}
 
@@ -23,16 +23,16 @@ To learn more about the capability, prerequisites, and how to access it, see the
 
 ## Enhanced Smart Tags (powered by Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
-AEM 6.4 introduces artificial intelligence based Enhanced Smart Tags capability in addition to Smart Tags that was launched in AEM 6.3.
+AEM 6.5 introduces artificial intelligence based Enhanced Smart Tags capability in addition to Smart Tags that was launched in AEM 6.3.
 
 * Smart Content Service learns customer's business taxonomy and uses it to automatically tag digital assets with customer relevant tags in addition to generic tags. It improves asset discoverability significantly and reduces time to market.
 * Adobe Sensei powers the Smart Content Service, which enables you to train the image recognition algorithm on your business taxonomy. This content intelligence is then used to apply relevant tags on similar assets.
 
-To use AEM Assets Enhanced Smart Tags, install the [latest service pack of AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+To use AEM Assets Enhanced Smart Tags, install the [latest service pack of AEM 6.5](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
 ## Smart Translation Search (powered by Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
-AEM 6.4 introduces Smart Translation Search capability to support multilingual search scenarios. Customers with globally distributed teams across multiple locales now have access to search in different languages without having to go through costly and time-consuming translation workflows.
+AEM 6.5 introduces Smart Translation Search capability to support multilingual search scenarios. Customers with globally distributed teams across multiple locales now have access to search in different languages without having to go through costly and time-consuming translation workflows.
 
 * Search query is translated without manual intervention.
 * Smart Tags are generated in English and are machine-translated to others languages.
@@ -40,7 +40,7 @@ AEM 6.4 introduces Smart Translation Search capability to support multilingual s
 
 ## User Experience {#user-experience}
 
-AEM 6.4 delivers significant user experience improvements in areas of browse, search, multi-page assets and administration tools. Details below:
+AEM 6.5 delivers significant user experience improvements in areas of browse, search, multi-page assets and administration tools. Details below:
 
 Browse improvements
 
@@ -72,7 +72,7 @@ Catalogs
 
 ## Metadata {#metadata}
 
-AEM 6.4 includes multiple advanced metadata management capabilities to manage metadata at scale and enforce metadata integrity through rules and validations. Here are the key capabilities:
+AEM 6.5 includes multiple advanced metadata management capabilities to manage metadata at scale and enforce metadata integrity through rules and validations. Here are the key capabilities:
 
 * New Bulk Metadata Export capability to export (all, selective) metadata for large number of assets in CSV format for editing, sharing, and third-party integration.
 * New Bulk Metadata Import capability to import CSV file for adding new metadata, updating existing metadata for multiple assets in one go. This operation is asynchronous and does not hinder system performance. Once complete, user is notified via AEM's Notification system.
@@ -80,7 +80,7 @@ AEM 6.4 includes multiple advanced metadata management capabilities to manage me
 
 ## Reports {#reports}
 
-AEM 6.4 delivers significant Asset reporting enhancements:
+AEM 6.5 delivers significant Asset reporting enhancements:
 
 * New enterprise-level, scalable (for large repositories) reports framework applying Sling jobs for asynchronously processing report requests. You can schedule report at a specific date and time. You can also add custom columns to a report.
 * New OOTB reports most commonly asked by customers such as Disk Usage, Files, Link Shares, Publish to Brand Portal, and Smart Tags Training.
@@ -99,7 +99,7 @@ AEM 6.4 delivers significant Asset reporting enhancements:
 
 ## AEM desktop app {#aem-desktop-app}
 
-AEM desktop app is updated to version 1.8, which is compatible with AEM 6.4. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.  
+AEM desktop app is updated to version 1.8, which is compatible with AEM 6.5. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.  
 Here is a list of AEM desktop app highlights since AEM 6.3 was released:
 
 * Ability to upload hierarchical folders in the background.
@@ -117,7 +117,7 @@ For easier access to the documentation and best practices, the following documen
 
 ## Tiered Storage {#tiered-storage}
 
-AEM 6.4 includes a set of features that support various tiered storage preferences and implement lifecycle rules. The storage options also support (but are not limited) public clouds - AWS or Azure.
+AEM 6.5 includes a set of features that support various tiered storage preferences and implement lifecycle rules. The storage options also support (but are not limited) public clouds - AWS or Azure.
 
 * The ability for users to select and later change storage class at will and define rules for storage of assets from one class to another or manage the lifecycle of their assets.
 * The ability for users to lower their storage cost by selecting a different AWS or Azure.
@@ -126,7 +126,7 @@ For an overview of supported platforms, please refer to the [Technical Requireme
 
 ## Closed User Group {#closed-user-group}
 
-* In AEM 6.4, Closed User Group or CUG provides a way to restrict folder access on publish instance, it’s a touch UI option to add principals through folder properties page at the folder level and are applied to all folder and subfolders/assets inside.
+* In AEM 6.5, Closed User Group or CUG provides a way to restrict folder access on publish instance, it’s a touch UI option to add principals through folder properties page at the folder level and are applied to all folder and subfolders/assets inside.
 * In publish mode, if a CUG is configured and authorization enabled on a folder, users are redirected to a login page when they try to access the folder. Therefore, authorized users can access the folder and its assets only after successful login. Hence, CUG restricts read access to a given tree in the content repository for everyone except selected principals.
 
 ## Dynamic Media add-on {#dynamic-media-add-on}
@@ -135,7 +135,7 @@ Dynamic Media in 6.4 supports a new mode - where master asset is uploaded and ma
 
 In this mode (introduced first with the release of [AEM 6.3 Feature Packs 14410 and 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), users benefit from end-to-end asset management and dynamic media features using the modern AEM Assets web UI, and still leverage the delivery services that are backwards compatible with Dynamic Media Classic (Scene7)—including delivery URLs, which are unchanged.
 
-In addition, AEM 6.4 introduces new features powered by Adobe Sensei, enhancements for emerging media like VR and 3D, Dynamic Media viewers, and support for Experience Fragments in Interactive Images and Carousel Banners.
+In addition, AEM 6.5 introduces new features powered by Adobe Sensei, enhancements for emerging media like VR and 3D, Dynamic Media viewers, and support for Experience Fragments in Interactive Images and Carousel Banners.
 
 ### Smart Crop (powered by Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
 

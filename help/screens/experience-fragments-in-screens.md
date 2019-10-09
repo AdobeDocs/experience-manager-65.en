@@ -1,12 +1,12 @@
 ---
 title: Using Experience Fragments
 seo-title: Using Experience Fragments
-description: Follow this page to learn about using Experience Fragments in AEM Screens. 
-seo-description: Follow this page to learn about using Experience Fragments in AEM Screens. 
+description: Follow this page to learn about using Experience Fragments in AEM Screens.
+seo-description: Follow this page to learn about using Experience Fragments in AEM Screens.
 uuid: 77ca8b98-1a0f-4517-a493-04a03acdea36
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: a310dd2f-02bd-44bc-9ad8-bf7450648054
 ---
@@ -17,7 +17,7 @@ Using Experience Fragments covers the following topics:
 
 * **Overview**
 * **Using Experience Fragments in AEM Screens**
-* **Propagating Changes from the Master Page**  
+* **Propagating Changes from the Master Page**
 
 ## Overview {#overview}
 
@@ -38,7 +38,7 @@ As an example, the following workflow demonstrates the use of experience fragmen
 
 ***Creating a Project***
 
-1. Click Screens and select **Create** --&gt; **Create Project **to create a new project. 
+1. Click Screens and select **Create** --&gt; **Create Project **to create a new project.
 
 1. Select **Screens **from the **Create Screens Project **wizard.
 
@@ -54,7 +54,7 @@ A **DemoProject** will be added to your AEM Screens.  ***Creating a Channel***
 
 1. Enter the **Title** as **TestChannel** and click **Create**.
 
-A **TestChannel** will be added to your **DemoProject**.   
+A **TestChannel** will be added to your **DemoProject**.
 ![screen_shot_2018-05-24at22228pm](assets/screen_shot_2018-05-24at22228pm.png)
 
 >[!NOTE]
@@ -67,7 +67,7 @@ Follow the steps below to leverage the content from **We.Retail** to your **Test
 
 1. **Navigate to a Sites page in We.Retail**
 
-    1. Navigate to Sites and select **We.Retail **-&gt;** United States **-&gt;**English **and select **Equipment** page to use this as an experience fragment for your Screens channel. 
+    1. Navigate to Sites and select **We.Retail **-&gt;** United States **-&gt;**English **and select **Equipment** page to use this as an experience fragment for your Screens channel.
     1. Click **Edit** from the action bar to open the page you want to use as an experience fragment for your Screens channel.
 
    ![screen_shot_2018-06-06at105309am](assets/screen_shot_2018-06-06at105309am.png)
@@ -132,8 +132,8 @@ After completion of precceeding steps, you can validate your experience fragment
 1. Navigating to the **TestChannel**.
 1. Selecting the **Preview** from the action bar.
 
-You will view the content from the **Sites** page (live-copy of the experience fragment) in your channel, as shown in the figure below:   
-![screen_shot_2018-06-08at120739pm](assets/screen_shot_2018-06-08at120739pm.png) 
+You will view the content from the **Sites** page (live-copy of the experience fragment) in your channel, as shown in the figure below:
+![screen_shot_2018-06-08at120739pm](assets/screen_shot_2018-06-08at120739pm.png)
 
 ## Propagating Changes from the Master Page {#propagating-changes-from-the-master-page}
 
@@ -181,6 +181,6 @@ Follow the steps below to confirm the changes in your channel:
 
 1. Click **Preview** from the action bar to confirm the changes.
 
-The following image illustrates the changes in your **TestChannel**:   
+The following image illustrates the changes in your **TestChannel**:
 ![screen_shot_2018-06-08at33351pm](assets/screen_shot_2018-06-08at33351pm.png)
 

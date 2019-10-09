@@ -4,7 +4,7 @@ seo-title: Configuring the Submit action
 description: AEM Forms allows you to configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
 seo-description: AEM Forms allows you to configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
 uuid: aa261e65-a1ec-402b-80de-0ba8a294e315
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 ---
@@ -27,7 +27,7 @@ The default submit actions available with adaptive forms are:
 * Send PDF via Email
 * Invoke a Forms Workflow
 * Submit using Form Data Model
-* Forms Portal Submit Action  
+* Forms Portal Submit Action
 * Invoke an AEM Workflow
 
 >[!NOTE]
@@ -68,7 +68,7 @@ Use the **[!UICONTROL Submit to REST Endpoint]** action to post the submitted da
 
 To post data to an internal server, provide path of the resource. The data is posted the path of the resource. For example, /content/restEndPoint. For such post requests, the authentication information of the submit request is used.
 
-To post data to an external server, provide a URL. The format of the URL is https:// host:port/path_to_rest_end_point. Ensure that you configure the path to handle the POST request anonymously. 
+To post data to an external server, provide a URL. The format of the URL is https:// host:port/path_to_rest_end_point. Ensure that you configure the path to handle the POST request anonymously.
 
 ![Mapping for field values passed as Thank You Page parameters](assets/post-enabled-actionconfig.png)
 
@@ -80,7 +80,7 @@ Similarly, paramenters that you use for posting XML data and attachments are `da
 
 For example, you use these two parameters in your script to parse data to a rest end point. You use the following syntax to store and parse the data:
 
-`String data=request.getParameter("dataXml");`  
+`String data=request.getParameter("dataXml");`
 `String att=request.getParameter("attachments");`
 
 In this example, `data` stores the XML data, and `att` stores attachment data.
@@ -141,7 +141,7 @@ All out of the box (OOTB) field validations of an adaptive form thate are rerun 
 
 ### Enabling Server-side Validation {#enabling-server-side-validation-br}
 
-Use the **Revalidate on server** under Adaptive Form Container in the sidebar to enable or disable server-side validation for the current form. 
+Use the **Revalidate on server** under Adaptive Form Container in the sidebar to enable or disable server-side validation for the current form.
 
 ![Enabling Server-Side Validation](assets/revalidate-on-server.png)
 **Figure:** *Enabling Server-Side Validation*

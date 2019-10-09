@@ -5,7 +5,7 @@ description: Scoring and Badges feature overview
 seo-description: Scoring and Badges feature overview
 uuid: 858ca54f-b416-445d-a449-cef7eed33926
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
@@ -108,7 +108,7 @@ To see log entries:
     * The log file is at &lt;*server-install-dir*&gt;/crx-quickstart/logs/&lt;*log-file-name*&gt;.log
     * For example, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-249](assets/chlimage_1-249.png) 
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC for Scoring and Badging {#ugc-for-scoring-and-badging}
 
@@ -153,7 +153,7 @@ The screen shots of repository data come from setting up scoring and badging for
 
     * Locate the forum component node
 
-        * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`  
+        * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
           ( `sling:resourceType = social/forum/components/hbs/forum`)
 
@@ -172,12 +172,12 @@ The screen shots of repository data come from setting up scoring and badging for
 
     * Add scoring and badging properties
 
-        * ``` 
+        * ```
           scoringRules = [/etc/community/scoring/rules/comments-scoring,
           /etc/community/scoring/rules/forums-scoring]
           ```
-        
-        * ``` 
+
+        * ```
           badgingRules =[/etc/community/badging/rules/comments-scoring,
           /etc/community/badging/rules/forums-scoring]
           ```
@@ -185,7 +185,7 @@ The screen shots of repository data come from setting up scoring and badging for
     * Locate the forum component node
 
         * `/content/community-components/en/forum/jcr:content/content/forum`
-        
+
           ( `sling:resourceType = social/forum/components/hbs/forum`)
 
     * Add property to display badges
@@ -209,9 +209,9 @@ As a user has earned two bronze badges and has been awarded a moderator badge, t
 >
 >This example does not follow these best practices:
 >
->* scoring rule names should be globally unique; they should not end with the same name.  
->  An example of what *not* to do:  
->  /etc/community/scoring/rules/site1/forums-scoring  
+>* scoring rule names should be globally unique; they should not end with the same name.
+>  An example of what *not* to do:
+>  /etc/community/scoring/rules/site1/forums-scoring
 >  /etc/community/scoring/rules/site2/forums-scoring
 >
 >* creating unique badge images for different AEM sites
@@ -237,7 +237,7 @@ For the Community Components guide site, the user and their score is in a path c
 
 The score is stored in the property `scoreValue_tl` which may directonly contain a value or indirectly refer to an atomicCounter.
 
-![chlimage_1-251](assets/chlimage_1-251.png) 
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### Access Badging UGC {#access-badging-ugc}
 
@@ -253,11 +253,11 @@ Followed by the path to the user's profile, ending in a badges folder, such as
 
 #### Awarded badge {#awarded-badge}
 
-![chlimage_1-252](assets/chlimage_1-252.png) 
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### assigned badge {#assigned-badge}
 
-![chlimage_1-253](assets/chlimage_1-253.png) 
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## Additional Information {#additional-information}
 

@@ -13,7 +13,7 @@ discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 
 ## Pre-requisites {#pre-requisites}
 
-Setup the reference site as described in [Setup and configure AEM 6.4 Forms Reference Site](/help/forms/using/setup-reference-sites.md).
+Setup the reference site as described in [Setup and configure AEM 6.5 Forms Reference Site](/help/forms/using/setup-reference-sites.md).
 
 ## We.Finance Reference Site scenario  {#we-finance-reference-site-scenario}
 

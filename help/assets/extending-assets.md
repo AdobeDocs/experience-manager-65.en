@@ -5,7 +5,7 @@ description: Learn ways by which you can customize and extend Asset Share and As
 seo-description: Learn ways by which you can customize and extend Asset Share and Asset Editor, which presents users with a specifically tailored interface and set of functionality.
 uuid: 18e36100-aff9-4238-a0e9-4fd61d61863f
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: extending-assets
 content-type: reference
 discoiquuid: a73b26c0-1a5f-4841-b002-bd43ff1ee766

@@ -5,7 +5,7 @@ description: Create language root folders to prepare for translating multilingua
 seo-description: Create language root folders to prepare for translating multilingual assets.
 uuid: 8a146234-60c0-4ee6-8f54-1275c887be23
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 61f86320-71a6-4d3c-839d-155a2083d995
@@ -39,7 +39,7 @@ Perform the following steps to prepare your assets for translation:
 
 1. Create the language root of your language master. For example, the language root of the English language copy in the sample folder hierarchy is */content/dam/en*. Ensure that the language root is correctly configured according to the information in [Creating a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
 
-1. Add assets to your language master. 
+1. Add assets to your language master.
 1. Create the language root of each target language for which you require a language copy.
 
 ## Creating a Language Root {#creating-a-language-root}

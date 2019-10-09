@@ -5,7 +5,7 @@ description: AEM provides various mechanisms to enable you to customize the cons
 seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
 uuid: f10cea87-ef8a-468e-94ca-89a1017dcf44
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
@@ -21,7 +21,7 @@ AEM provides various mechanisms to enable you to customize the consoles (and the
 
 * Clientlibs
 
-  Clientlibs allow you to extend the default implementation to realize new functionality, while reusing the standard functions, objects, and methods. When customizing, you can create your own clientlib under `/apps.` For example it can hold the code required for your custom component.  
+  Clientlibs allow you to extend the default implementation to realize new functionality, while reusing the standard functions, objects, and methods. When customizing, you can create your own clientlib under `/apps.` For example it can hold the code required for your custom component.
 
 * Overlays
 
@@ -35,7 +35,7 @@ These can be used in many ways to extend your AEM consoles. A small selection ar
 >
 >* Using and creating [clientlibs](/help/sites-developing/clientlibs.md).
 >* Using and creating [overlays](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) 
+>* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
 >This topic is also covered in the [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) session - [User interface customization for AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
@@ -47,7 +47,7 @@ These can be used in many ways to extend your AEM consoles. A small selection ar
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`  
+>1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
 >
 >1. Make any changes within `/apps`
 >
@@ -66,7 +66,7 @@ For example, the following locations within the `/libs` structure can be overlai
 
 * toolbar(s) (dependent on console; for example sites):
 
-    * default 
+    * default
 
       `/libs/wcm/core/content/sites/jcr:content/body/content/header/items/default`
 
@@ -153,11 +153,11 @@ You can find the code of this page on GitHub
 
    To use the new console (for example in the [rail for navigation](#add-new-navigation-option-to-rail)) an ID is used, so that it can be explicitly referenced. The ID is used to connect the console and its navigation definition. The ID is defined in the `rail` node of the page; for example, for the Sites console:
 
-    * the rail node is: 
+    * the rail node is:
 
       `/libs/wcm/core/content/sites/jcr:content/body/rail`
 
-        * here the `currentId` property is defined: 
+        * here the `currentId` property is defined:
 
           `currentId` = `cq-sites`
 
@@ -241,7 +241,7 @@ You can find the code of this page on GitHub
     * To create the connection, the `id` property references (i.e. must be the same as) the `currentID` property [for the appropriate console](#create-a-custom-console):
 
         * property: `id`
-        * value: same as for your console (e.g. `cq-launches`) 
+        * value: same as for your console (e.g. `cq-launches`)
 
           for example: the same value as the `currentId` property on:
 
@@ -312,7 +312,7 @@ You can find the code of this page on GitHub
    Define the following property:
 
     * **Name**: `sling:hideResource`
-    * **Type**: `String` 
+    * **Type**: `String`
     * **Value**: `true`
 
 `aem-admin-extension-customize-sites` is a sample package showing how to customize an existing AEM 6 admin console. This package provides updates to Sites administration:
@@ -350,7 +350,7 @@ You can restrict access to a navigation option using ACLs:
     * `tools`
     * `communities`
 -->
- 
+
 ## Customizing Columns in the List View {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
@@ -371,7 +371,7 @@ To customize the columns in the list view:
 
 1. Overlay the list of available columns.
 
-    * On the node: 
+    * On the node:
 
       `/apps/wcm/core/content/common/availablecolumns`
 
@@ -381,7 +381,7 @@ To customize the columns in the list view:
 
 1. Optionally:
 
-    * If you want to plug additional data, you need to write a ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` with a 
+    * If you want to plug additional data, you need to write a ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` with a
 
       `pageInfoProviderType` property.
 

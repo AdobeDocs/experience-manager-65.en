@@ -5,7 +5,7 @@ description: An interactive development tool to get started with the social comp
 seo-description: An interactive development tool to get started with the social component framework (SCF)
 uuid: 120e56d1-b93c-4f92-bab4-6bb5e40e0ddf
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
@@ -62,11 +62,11 @@ The guide provides a listing of SCF components available for preview and prototy
 
 Components Guide as viewed on an author instance in Edit mode:
 
-![chlimage_1-404](assets/chlimage_1-404.png) 
+![chlimage_1-404](assets/chlimage_1-404.png)
 
 ## Component Pages {#component-pages}
 
-Select a component from the list along the left side of the page. 
+Select a component from the list along the left side of the page.
 
 ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -98,8 +98,8 @@ Under the **Templates** tab:
 
 ![chlimage_1-407](assets/chlimage_1-407.png)
 
-* **Include the child component with sling:include** 
-  
+* **Include the child component with sling:include**
+
   If unchecked, the Component Guide will use the existing resource in the repository (a jcr node which is a child of a par node).
 
     * text displayed is: "This component is included via its par node."
@@ -148,8 +148,8 @@ Using the comments component as an example, on either the author or publish inst
 
    For example, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-1. Select the component's `jcr:content` node 
-   
+1. Select the component's `jcr:content` node
+
    For example, `/content/community-components/en/comments/jcr:content`
 
 1. Add a property
@@ -159,13 +159,13 @@ Using the comments component as an example, on either the author or publish inst
     * **Value** `true`
 
 1. Select **[!UICONTROL Save All]**
-1. Reload the Comments page in the guide 
-   
+1. Reload the Comments page in the guide
+
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
 1. Notice there are now 3 tabs for Templates, CSS, and Data.
 
-![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png) 
+![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png)
 
 ### Templates Tab {#templates-tab}
 

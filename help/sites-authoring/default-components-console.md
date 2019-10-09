@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 308b7fa1-9525-43f3-8c15-1076485b3f8c
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
@@ -27,7 +27,7 @@ It can be accessed from **Tools** -&gt; **General** -&gt; **Components**. In the
 
 With the **Content Only** icon (top left) you can open the **Search** panel to search and/or filter the components:
 
-![chlimage_1-302](assets/chlimage_1-302.png) 
+![chlimage_1-302](assets/chlimage_1-302.png)
 
 ## Component Details {#component-details}
 

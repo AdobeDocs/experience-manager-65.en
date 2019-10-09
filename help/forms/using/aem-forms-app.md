@@ -1,12 +1,12 @@
 ---
 title: AEM Forms app
 seo-title: AEM Forms app
-description: AEM Forms app enables your field workers to use adaptive forms on their mobile devices. 
-seo-description: AEM Forms app enables your field workers to use adaptive forms on their mobile devices. 
+description: AEM Forms app enables your field workers to use adaptive forms on their mobile devices.
+seo-description: AEM Forms app enables your field workers to use adaptive forms on their mobile devices.
 uuid: fac976c8-b713-4492-b153-f567e7a11ceb
 contentOwner: sashanka
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 ---
@@ -31,7 +31,7 @@ To install, customize, and distribute the app on iOS, Android, or Windows device
 
 ## Prerequisites {#prerequisites}
 
-AEM Forms app requires an AEM Forms server. Users can render forms you create in the AEM Forms  
+AEM Forms app requires an AEM Forms server. Users can render forms you create in the AEM Forms
 server, fill them, save as drafts, and submit them. The app connects to the server and fetches enabled forms from it. AEM Forms app syncs with the server and as soon as forms are loaded in the app, users can work offline. If the app is offline, data is saved on the device, and the data is synced with the server when the app is online.
 
 ### AEM Forms app with servers using AEM Forms Workflow {#aem-forms-app-with-servers-using-aem-forms-workflow}
@@ -52,7 +52,7 @@ The forms are downloaded on your app, and are available offline. For example, yo
 
 To sync your form in AEM Forms app:
 
-1. In author instance, select a form, and click **[!UICONTROL View Properties]**.  
+1. In author instance, select a form, and click **[!UICONTROL View Properties]**.
 
 1. In the properties page, click **[!UICONTROL Advanced]**.
 1. Under Advanced, enable option: **[!UICONTROL Sync with AEM Forms App]** and tap **[!UICONTROL Save]**.
@@ -108,7 +108,7 @@ For details, see [Working in the offline mode](/help/forms/using/work-offline-mo
 
 You can add the following attachments to a form on your mobile device
 
-* **Notes**- You can use the Notes feature to add a freehand scribble or a text note in your form. For details, see [Adding a note](/help/forms/using/add-attachments.md#adding-a-note).  
+* **Notes**- You can use the Notes feature to add a freehand scribble or a text note in your form. For details, see [Adding a note](/help/forms/using/add-attachments.md#adding-a-note).
 
 * **Picture**- The AEM Forms app includes a feature that uses the camera functionality or the gallery of your mobile device. Using the photograph attachment, you can add a photograph with the associated form. For details, see [Adding a photograph](/help/forms/using/add-attachments.md#adding-a-photograph).
 
@@ -212,7 +212,7 @@ For details on how to distribute the app via MDM, see [Distribute AEM Forms app]
 
 If you are upgrading to the latest version of AEM Forms app, ensure that you read through the following points:
 
-* **If you installed an earlier version of the app from the play store on Android** 
+* **If you installed an earlier version of the app from the play store on Android**
   You can upgrade the app directly from the play store.
 
 * **If earlier version of the app is built and installed using the source code (applicable for iOS and Android)**:

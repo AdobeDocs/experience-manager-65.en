@@ -4,7 +4,7 @@ seo-title: Extending an AEM Screens Component
 description: The following tutorial walks through the steps and best practices for extending out of the box AEM Screens components. The Image component is extended to add an authorable text overlay.
 seo-description: The following tutorial walks through the steps and best practices for extending out of the box AEM Screens components. The Image component is extended to add an authorable text overlay.
 uuid: 38ee3a2b-a51a-4c35-b93a-89a0e5fc3837
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: developing
 discoiquuid: 46bdc191-5056-41a4-9804-8f7c4a035abf
@@ -80,7 +80,7 @@ The Poster component is rendered in full screen in preview/production mode. In e
 
 1. Copy the `cq:editConfig` node beneath `/libs/screens/core/components/content/image.`Paste the `cq:editConfig` beneath the `/apps/weretail-run/components/content/poster` component.
 
-   On the `cq:editConfig/cq:dropTargets/image/parameters` node update the `sling:resourceType` property to equal `weretail-run/components/content/poster`. 
+   On the `cq:editConfig/cq:dropTargets/image/parameters` node update the `sling:resourceType` property to equal `weretail-run/components/content/poster`.
 
    ![edit-config](assets/edit-config.png)
 
@@ -105,7 +105,7 @@ The Poster component is rendered in full screen in preview/production mode. In e
            </image>
        </cq:dropTargets>
    </jcr:root>
-   
+
    ```
 
 1. Copy WCM Foundation `image` dialog to be used for the `poster` component.
@@ -222,7 +222,7 @@ The Poster component is rendered in full screen in preview/production mode. In e
            </items>
        </content>
    </jcr:root>
-   
+
    ```
 
    The property `sling:hideChildren`= `"[linkURL,size]`" is used on the `items` node to ensure that the **linkURL** and **size** fields are hidden from the dialog. Removing these nodes from the poster dialog is not enough. The property `sling:hideResource="{Boolean}true"` on the accessibility tab is used to hide the entire tab.
@@ -245,15 +245,15 @@ The Poster component is rendered in full screen in preview/production mode. In e
 
    ```xml
    <!--/*
-   
-       /apps/weretail-run/components/content/poster/production.html 
-          
+
+       /apps/weretail-run/components/content/poster/production.html
+
    */-->
    <div data-sly-use.image="image.js"
         data-duration="${properties.duration}"
         class="cmp-poster"
         style="background-image: url(${request.contextPath @ context='uri'}${image.src @ context='uri'});">
-       <div class="cmp-poster__text 
+       <div class="cmp-poster__text
                    cmp-poster__text--${properties.textPosition @ context='attribute'}
                    cmp-poster__text--${properties.textColor @ context='attribute'}">
            <h1 class="cmp-poster__title">${properties.jcr:title}</h1>
@@ -279,14 +279,14 @@ The Poster component is rendered in full screen in preview/production mode. In e
 
    ```xml
    <!--/*
-   
-       /apps/weretail-run/components/content/poster/edit.html 
-          
+
+       /apps/weretail-run/components/content/poster/edit.html
+
    */-->
-   
+
    <div class="aem-Screens-editWrapper ${image.cssClass} cmp-poster" data-sly-use.image="image.js" data-emptytext="${'Poster' @ i18n, locale=request.locale}">
        <img class="cmp-poster__image" src="${request.contextPath}${image.src @ context='uri'}" width="100%" />
-       <div class="cmp-poster__text 
+       <div class="cmp-poster__text
               cmp-poster__text--${properties.textPosition @ context='attribute'}
           cmp-poster__text--${properties.textColor @ context='attribute'}">
          <p class="cmp-poster__title">${properties.jcr:title}</p>
@@ -311,7 +311,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    ![2018-05-03_at_1008pm](assets/2018-05-03_at_1008pm.png)
 
-1. Beneath the `clientlibs` folder create a new node named `shared` of type `cq:ClientLibraryFolder.` 
+1. Beneath the `clientlibs` folder create a new node named `shared` of type `cq:ClientLibraryFolder.`
 
    ![2018-05-03_at_1011pm](assets/2018-05-03_at_1011pm.png)
 
@@ -334,9 +334,9 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    ```
    #base=css
-   
+
    styles.less
-   
+
    ```
 
 1. Create a folder named `css` beneath the `shared` folder. Add a file named `style.less` beneath the `css` folder. The structure of the client libraries should now look like this:
@@ -348,53 +348,53 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 1. Populate `/apps/weretail-run/components/content/poster/clientlibs/shared/css/styles.less` with the following:
 
    ```css
-   /* 
+   /*
     /apps/weretail-run/components/content/poster/clientlibs/shared/css/styles.less
-    Poster Component - Shared Style 
+    Poster Component - Shared Style
    */
-   
+
    @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400i');
-   
+
    @text-light-color: #fff;
    @text-dark-color: #000;
    @title-font-family: 'Fjalla One', sans-serif;
    @description-font-family: 'Open Sans', sans-serif;
-   
+
    .cmp-poster {
-    
+
          &__text {
          position: absolute;
          color: @text-light-color;
          top: 0;
          text-align:center;
          width: 100%;
-         
+
          &--left {
           text-align: left;
                 margin-left: 1em;
          }
-         
+
          &--right {
           text-align: right;
                 margin-right: 1em;
          }
-         
+
          &--dark {
           color: @text-dark-color;
          }
        }
-       
+
        &__title {
          font-weight: bold;
             font-family: @title-font-family;
             font-size: 1.2em;
        }
-   
+
        &__description {
      font-style: italic;
            font-family: @description-font-family;
     }
-   
+
    }
    ```
 
@@ -417,27 +417,27 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 1. Populate `/apps/weretail-run/components/content/poster/clientlibs/production/css/styles.less` with the following:
 
    ```css
-   /* 
+   /*
     /apps/weretail-run/components/content/poster/clientlibs/production/css/styles.less
-    Poster Component - Production Style 
+    Poster Component - Production Style
    */
-   
+
    .cmp-poster {
-   
-       background-size: cover; 
-    height: 100%; 
+
+       background-size: cover;
+    height: 100%;
     width: 100%;
     position:absolute;
-   
+
         &__text {
-   
+
            top: 2em;
-   
+
            &--left {
                width: 40%;
                top: 5em;
            }
-   
+
            &--right {
                width: 40%;
                right: 1em;
@@ -449,27 +449,27 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
      font-weight: 900;
      margin: 0.1rem;
     }
-    
+
     &__description {
      font-size: 2rem;
      margin: 0.1rem;
      font-weight: 400;
-     
+
     }
-   
+
        &__logo {
      position: absolute;
      max-width: 200px;
      top: 1em;
      left: 0;
     }
-    
+
    }
    ```
 
    The above styles display the Title and Description in an absolute position on the screen. The title will be displayed significantly larger than the description. The BEM notation of the component makes it very easy to carefully scope the styles within the cmp-poster class.
 
-A third clientlibrary category: `cq.screens.components.edit` could be used to add Edit only specific styles to the component. 
+A third clientlibrary category: `cq.screens.components.edit` could be used to add Edit only specific styles to the component.
 
 | Clientlib Category |Usage |
 |---|---|
@@ -486,7 +486,7 @@ The Poster component is intended to be used on a Sequence Channel. The starter p
 
    ![2018-05-07_at_3_23pm](assets/2018-05-07_at_3_23pm.png)
 
-1. Edit the dialog of the Poster component to add an Image, Title, Description. Use the Text Position and Text Color choices to ensure the Title/Description is readable over the Image. 
+1. Edit the dialog of the Poster component to add an Image, Title, Description. Use the Text Position and Text Color choices to ensure the Title/Description is readable over the Image.
 
    ![2018-05-07_at_3_25pm](assets/2018-05-07_at_3_25pm.png)
 

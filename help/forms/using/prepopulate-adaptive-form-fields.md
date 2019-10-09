@@ -4,7 +4,7 @@ seo-title: Prefill adaptive form fields
 description: Use existing data to prefill fields of an adaptive form.
 seo-description: With adaptive forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
 uuid: 05d74a59-3950-4513-bfce-6ff3d9d5318c
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
 ---
@@ -46,8 +46,8 @@ You can prefill both bound and unbound fields of an adaptive form. The prefill d
          .
          .
       <numericbox>12</numericbox>
-         . 
-         .              
+         .
+         .
     </data>
   </afUnboundData>
 </afData>
@@ -92,13 +92,13 @@ The structure of prefill XML and submitted XML for adaptive forms based on XML s
 * **Submitted XML structure**: if no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData` wrapper tag. If the prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML has the same format. If the prefill XML does not have `afData/afBoundData` wrapper and instead start directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
 <xs:schema targetNamespace="https://adobe.com/sample.xsd"
             xmlns="https://adobe.com/sample.xsd"
             xmlns:xs="https://www.w3.org/2001/XMLSchema">
- 
+
     <xs:element name="sample" type="SampleType"/>
-         
+
     <xs:complexType name="SampleType">
         <xs:sequence>
             <xs:element name="noOfProjectsAssigned" type="xs:string"/>
@@ -154,7 +154,7 @@ For adaptive forms based on JSON schema, the structure of prefill JSON and submi
     "properties": {
         "address": {
             "type": "object",
-            "properties": { 
+            "properties": {
     "name": {
      "type": "string"
     },
@@ -231,9 +231,9 @@ To enable prefill service, specify the Default Prefill Service Configuration in 
 >
 >Prefill Service Configuration is applicable for adaptive forms, HTML5 forms, and HTML5 form sets.
 
-1. Open **[!UICONTROL Adobe Experience Manager Web Console Configuration]** by using the URL:   
+1. Open **[!UICONTROL Adobe Experience Manager Web Console Configuration]** by using the URL:
    https://&lt;server&gt;:&lt;port&gt;/system/console/configMgr
-1. Search and open **[!UICONTROL Default Prefill Service Configuration]**. 
+1. Search and open **[!UICONTROL Default Prefill Service Configuration]**.
 
    ![prefill_config](assets/prefill_config.png)
 
@@ -343,7 +343,7 @@ You can use custom prefill service for the scenarios, where you constantly read 
 The prefill service is an OSGi service and is packaged through OSGi bundle. You create the OSGi bundle, upload, and install it to AEM Forms bundles. Before you get started with creating the bundle:
 
 * [Download the AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* [Download the boilerplate package](/help/forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)  
+* [Download the boilerplate package](/help/forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
 
 * Place the data (prefill data) file in the crx-repository. You can place the file at any location in the \contents folder of crx-repository.
 

@@ -5,7 +5,7 @@ description: Learn how to determine the optimal hardware sizing for a new Digita
 seo-description: Learn how to determine the optimal hardware sizing for a new Digital Asset Management (DAM) setup and how to troubleshoot performance issues
 uuid: 8291c5b9-c543-41cf-8754-445826200930
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
@@ -45,7 +45,7 @@ To be able to estimate what hardware you require to process assets, the followin
 * The resolution of the images in amount of pixels
 * The heap assigned to AEM's process
 
-The amount of pixels contained in the image determines the processing time - more pixels means processing takes a longer time.  
+The amount of pixels contained in the image determines the processing time - more pixels means processing takes a longer time.
 Image type, compression rate, or the related size of the file the image is stored in does not influence the overall performance significantly.
 
 Heap has been identified to be the most important limiting factor. Whenever the asset exceeds the available free memory, the processing performance drops rapidly.
@@ -79,7 +79,7 @@ Reasons for bad latency and throughput in a NAS are usually network topology or 
 **Network Attached Storage** Over-used network attached storage systems can cause an array of problems:
 
 * Low disk space is a frequently encountered trouble that can be prevented through proper sizing of a DAM project.
-* High disk latency will propagate into slow access times for CRX and may result in interactive performance problems.  
+* High disk latency will propagate into slow access times for CRX and may result in interactive performance problems.
 * Low disk throughput may result in low performance for CQ5 DAM.
 
 ## Testing for Performance {#testing-for-performance}

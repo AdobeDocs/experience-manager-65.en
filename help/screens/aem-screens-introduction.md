@@ -7,7 +7,7 @@ uuid: f94ca9d0-c368-4f80-a492-cf79f25ccf4a
 contentOwner: User
 content-type: reference
 topic-tags: introduction
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 ---
 
@@ -31,7 +31,7 @@ Creating and managing an application using Screens is simple and intuitive. An *
 
 The following diagram shows the general architecture of the AEM Screens player:
 
-![chlimage_1-40](assets/chlimage_1-40.png) 
+![chlimage_1-40](assets/chlimage_1-40.png)
 
 ## Create a Digital Signage Experience in 5 minutes {#create-a-digital-signage-experience-in-minutes}
 
@@ -78,7 +78,7 @@ While creating a new project, different functions may overlap depending on your 
 1. [Assign Channels](channel-assignment.md)
 1. [Manage Devices](managing-devices.md)
 1. [Create and Manage Schedules](managing-schedules.md)
-1. [AEM Screens Player](working-with-screens-player.md)  
+1. [AEM Screens Player](working-with-screens-player.md)
 1. [Troubleshoot Device Control Center](monitoring-screens.md)
 
 

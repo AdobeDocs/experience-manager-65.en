@@ -5,7 +5,7 @@ description: Learn how to use Adobe Dynamic Tag Management (DTM )to enable Asset
 seo-description: Learn how to use Adobe Dynamic Tag Management (DTM )to enable Asset Insights.
 uuid: fd548ee7-559a-4d72-8d80-af4514151ca6
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: fa65084a-b69a-4ce2-8798-21ef23392964
@@ -69,7 +69,7 @@ Perform these steps to enable Asset Insights through DTM:
 
    ```
    var sObj;
-  
+
    if (arguments.length > 0) {
      sObj = arguments[0];
    } else {
@@ -108,7 +108,7 @@ Perform these steps to enable Asset Insights through DTM:
     * As indicated in comments within the Insights Page Tracker code (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), when Page Tracker does not create an `AppMeasurement` object, the first three arguments (RSID, Tracking Server, and Visitor Namespace) are irrelevant. Empty strings are passed instead to highlight this.
 
       The remaining arguments correspond to what is configured in the Insights Configuration page (**[!UICONTROL Tools > Assets > Insights Configuration]**).
-  
+
     * The AppMeasurement object is retrieved by querying `satelliteLib` for all available SiteCatalyst engines. If multiple tags are configured, change the index of the array selector appropriately. Entries in the array are ordered as per SiteCatalyst tools available in the DTM interface.
 
 1. Save and close the Code Editor window, and then save the changes in the Tool configuration.

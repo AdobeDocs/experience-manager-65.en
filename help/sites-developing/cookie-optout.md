@@ -5,7 +5,7 @@ description: AEM provides a service that enables you to configure and control ho
 seo-description: AEM provides a service that enables you to configure and control how cookies are used with your web pages
 uuid: 10d95176-0a56-41f1-9d36-01dbdac757d4
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
@@ -37,7 +37,7 @@ To configure the service, you can use the [Web Console](/help/sites-deploying/co
 Use client-side javascript to call Adobe Granite Opt-Out Service to verify that you can use a cookie. Use the Granite.OptOutUtil javascript object to perform any of the following tasks:
 
 * Obtain a list of cookie names that indicate that that user does not consent to using cookies for tracking purposes.
-* Obtain a list of cookies that can be used. 
+* Obtain a list of cookies that can be used.
 * Determine whether the web browser contains a cookie that indicates the user does not consent to the use of cookies for tracking.
 * Determine whether a specific cookie can be used.
 
@@ -49,11 +49,11 @@ For example, the following javascript function determines whether the COOKIE_NAM
 
 ```
 function writeCookie(value){
-   if (!Granite.OptOutUtil.maySetCookie("COOKIE_NAME")) 
+   if (!Granite.OptOutUtil.maySetCookie("COOKIE_NAME"))
       return;
    if (value) {
       value = encodeURIComponent(value);
-      document.cookie = "COOKIE_NAME=" + value; 
+      document.cookie = "COOKIE_NAME=" + value;
    }
 }
 ```

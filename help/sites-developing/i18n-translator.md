@@ -5,7 +5,7 @@ description: AEM provides a console for managing the various translations of tex
 seo-description: AEM provides a console for managing the various translations of texts used in component UI
 uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
@@ -13,7 +13,7 @@ discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 
 # Using Translator to Manage Dictionaries{#using-translator-to-manage-dictionaries}
 
-AEM provides a console for managing the various translations of texts used in component UI. This console is available at 
+AEM provides a console for managing the various translations of texts used in component UI. This console is available at
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
@@ -83,7 +83,7 @@ Create a dictionary for managing your localized UI strings. After you create a d
 
    >[!NOTE]
    >
-   >The translator will only save translations for languages that are actually present underneath the path (e.g. `/apps/myProject/i18n`).  
+   >The translator will only save translations for languages that are actually present underneath the path (e.g. `/apps/myProject/i18n`).
    >
    >Make sure that these correspond to the languages shown in the grid.
 
@@ -131,7 +131,7 @@ Change or remove English strings as they are changed or removed in the code. Whe
 
 Use the following procedure to add a string.
 
-1. In the Dictionaries drop-down menu, select the dictionary to which you are adding a string. In the drop-down menu, Dictionaries are represented by their path in the respository. 
+1. In the Dictionaries drop-down menu, select the dictionary to which you are adding a string. In the drop-down menu, Dictionaries are represented by their path in the respository.
 1. Above the Strings and Translations table, click Add.
 
    ![chlimage_1-209](assets/chlimage_1-209.png)
@@ -265,11 +265,11 @@ Add or remove languages that the Translation tool supports and that are provided
 
 The Translator tool includes the following languages in the dictionary table:
 
-* de - German  
-* fr - French  
-* it - Italian  
-* es - Spanish  
-* ja - Japanese  
+* de - German
+* fr - French
+* it - Italian
+* es - Spanish
+* ja - Japanese
 * pt-br - Brazilian Portuguese
 * zh-cn - Simplified Chinese
 * zh-tw - Traditional Chinese (limited support)
@@ -298,7 +298,7 @@ Use the following procedure to add or remove languages.
 
    >[!NOTE]
    >
-   >The translator will only save translations for languages that are actually [present in the dictionary](#creating-a-dictionary) (i.e. underneath the dictionary path such as `/apps/myProject/i18n`).  
+   >The translator will only save translations for languages that are actually [present in the dictionary](#creating-a-dictionary) (i.e. underneath the dictionary path such as `/apps/myProject/i18n`).
    >
    >Make sure that these correspond to the languages shown in the grid.
 
@@ -308,7 +308,7 @@ After defing a dictionary for a language new to your AEM instance you need to ma
 
 1. To change the list of available languages available in **Preferences** of the **Security** console:
 
-    1. Create an overlay in your application code for: 
+    1. Create an overlay in your application code for:
 
        ```
                /libs/cq/security/widgets/source/widgets/security/Preferences.js
@@ -317,11 +317,11 @@ After defing a dictionary for a language new to your AEM instance you need to ma
 
 1. To make the language available in **Preferences** from the **Websites** console you need to make the following changes in your application:
 
-    1. Create an overlay for the structure under: 
+    1. Create an overlay for the structure under:
 
-       `/libs/cq/security/content/tools/userProperties` 
+       `/libs/cq/security/content/tools/userProperties`
 
-    1. Inside the overlay update the language list under: 
+    1. Inside the overlay update the language list under:
 
        `items/common/items /lang/options`
 
@@ -353,7 +353,7 @@ To change the default definitions:
 
     * **Language list**:
 
-      The path to the language list in the repository. Set this to the location used to overlay: 
+      The path to the language list in the repository. Set this to the location used to overlay:
 
       ```
              /apps/wcm/core/resources/languages
@@ -362,7 +362,7 @@ To change the default definitions:
    You can do this using the OSGi Web Console:
 
    ```shell
-   https://<hostname>:<port-number>/system/console/configMgr/com.day.cq.wcm.core.impl.LanguageManagerImpl 
+   https://<hostname>:<port-number>/system/console/configMgr/com.day.cq.wcm.core.impl.LanguageManagerImpl
    ```
 
 ## Publishing Dictionaries {#publishing-dictionaries}
@@ -372,7 +372,7 @@ Incorporate your dictionaries into the release management process of your AEM ap
 * Dictionaries are available for components in their publish environment.
 * Changes to component UI strings are deployed along with the updated translations.
 
-Similarly, testing of dictionary strings should be performed as part of your normal software development lifecycle.  
+Similarly, testing of dictionary strings should be performed as part of your normal software development lifecycle.
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ seo-description: Follow this page to learn more about page templates. Page compo
 uuid: c53901c9-5974-4c6b-ac61-1c094a93c9d6
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 ---
@@ -136,7 +136,7 @@ The controller.js.jsp script generates the controller fragment for each page. Th
 .controller('<c:out value="${controllerNameStripped}"/>', ['$scope', '$http',
     function($scope, $http) {
         var data = $http.get('<c:out value="${relativeResourcePath}"/>.angular.json' + cacheKiller);
- 
+
         // component fragments which consume the contents of `data` go here
     }
 ])
@@ -219,7 +219,7 @@ Alternatively, if `$scope.wcmMode == false`, each navigation event results in a 
 
 ### Component Script Details {#component-script-details}
 
-![chlimage_1-36](assets/chlimage_1-36.png) 
+![chlimage_1-36](assets/chlimage_1-36.png)
 
 #### ng-component.jsp {#ng-component-jsp}
 
@@ -324,29 +324,29 @@ This strategy does not require that you bundle and install the plugins to AEM ea
 
 Include other hooks as required. The following hooks are available (as provided by the Phonegap sample hello world app):
 
-* after_build 
+* after_build
 * before_build
-* after_compile 
+* after_compile
 * before_compile
-* after_docs 
+* after_docs
 * before_docs
-* after_emulate 
+* after_emulate
 * before_emulate
-* after_platform_add 
+* after_platform_add
 * before_platform_add
-* after_platform_ls 
+* after_platform_ls
 * before_platform_ls
-* after_platform_rm 
+* after_platform_rm
 * before_platform_rm
-* after_plugin_add 
+* after_plugin_add
 * before_plugin_add
-* after_plugin_ls 
+* after_plugin_ls
 * before_plugin_ls
-* after_plugin_rm 
+* after_plugin_rm
 * before_plugin_rm
-* after_prepare 
+* after_prepare
 * before_prepare
-* after_run 
+* after_run
 * before_run
 
 #### platforms/ {#platforms}

@@ -5,7 +5,7 @@ description: How to add Dynamic Media components to a page in AEM
 seo-description: How to add Dynamic Media components to a page in AEM
 uuid: 77abcb87-2df7-449b-be52-540d749890b6
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
@@ -27,12 +27,12 @@ Adding the Dynamic Media or Interactive Media component to a page is the same as
 
 >[!NOTE]
 >
->If there is a Dynamic Media component, an Interactive Media component, or both on a web page that is accessed by a user with read-only permissions, the page breaks and the components are not render correctly. The reason is because the page is reconstructed to ensure that the properties of the components are good and any referenced assets and configurations are accessible. The page is then rendered again causing the components to break; the respective component code on the page cannot be re-rendered due to the user’s read-only access.  
-  
+>If there is a Dynamic Media component, an Interactive Media component, or both on a web page that is accessed by a user with read-only permissions, the page breaks and the components are not render correctly. The reason is because the page is reconstructed to ensure that the properties of the components are good and any referenced assets and configurations are accessible. The page is then rendered again causing the components to break; the respective component code on the page cannot be re-rendered due to the user’s read-only access.
+
 >To avoid this issue, ensure that AEM Sites users have the necessary permissions to access the assets.
 
 1. In AEM, open the page where you want to add the Dynamic Media or Interactive Media component.
-1. In the left pane, click the **[!UICONTROL Components]** icon and filter for **[!UICONTROL Dynamic Media]**. If no Dynamic Media component is available, you need to enable the Dynamic Media components. See [Editing Page Templates](/help/sites-authoring/templates.md#editing-templates-template-authors) for more information. 
+1. In the left pane, click the **[!UICONTROL Components]** icon and filter for **[!UICONTROL Dynamic Media]**. If no Dynamic Media component is available, you need to enable the Dynamic Media components. See [Editing Page Templates](/help/sites-authoring/templates.md#editing-templates-template-authors) for more information.
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
@@ -62,7 +62,7 @@ Dynamic Media and Interactive Media are available under the [!UICONTROL Dynamic 
 >
 >These components are not available by default and need to be made available via the template editor before using. [After they are made available i](/help/sites-authoring/templates.md#editing-templates-template-authors)n the template editor, you can add the components to your page as you would any other AEM component.
 
-![chlimage_1-539](assets/chlimage_1-539.png) 
+![chlimage_1-539](assets/chlimage_1-539.png)
 
 ### Dynamic Media component {#dynamic-media-component}
 
@@ -70,8 +70,8 @@ The Dynamic Media component is smart&mdash;depending on whether you add an image
 
 >[!NOTE]
 >
->If there is a Dynamic Media component, an Interactive Media component, or both on a web page that is accessed by a user with read-only permissions, the page breaks and the components are not render correctly. The reason is because the page is reconstructed to ensure that the properties of the components are good and any referenced assets and configurations are accessible. The page is then rendered again causing the components to break; the respective component code on the page cannot be re-rendered due to the user’s read-only access.  
-  
+>If there is a Dynamic Media component, an Interactive Media component, or both on a web page that is accessed by a user with read-only permissions, the page breaks and the components are not render correctly. The reason is because the page is reconstructed to ensure that the properties of the components are good and any referenced assets and configurations are accessible. The page is then rendered again causing the components to break; the respective component code on the page cannot be re-rendered due to the user’s read-only access.
+
 >To avoid this issue, ensure that AEM Sites users have the necessary permissions to access the assets.
 
 >[!NOTE]
@@ -195,8 +195,8 @@ The Interactive Media component is smart&mdash;depending on whether you add an i
 
 >[!NOTE]
 >
->If there is a Dynamic Media component, an Interactive Media component, or both on a web page that is accessed by a user with read-only permissions, the page breaks and the components are not render correctly. The reason is because the page is reconstructed to ensure that the properties of the components are good and any referenced assets and configurations are accessible. The page is then rendered again causing the components to break; the respective component code on the page cannot be re-rendered due to the user’s read-only access.  
-  
+>If there is a Dynamic Media component, an Interactive Media component, or both on a web page that is accessed by a user with read-only permissions, the page breaks and the components are not render correctly. The reason is because the page is reconstructed to ensure that the properties of the components are good and any referenced assets and configurations are accessible. The page is then rendered again causing the components to break; the respective component code on the page cannot be re-rendered due to the user’s read-only access.
+
 >To avoid this issue, ensure that AEM Sites users have the necessary permissions to access the assets.
 
 ![chlimage_1-541](assets/chlimage_1-541.png)

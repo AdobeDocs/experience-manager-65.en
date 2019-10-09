@@ -7,7 +7,7 @@ uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 ---
 
@@ -62,10 +62,10 @@ The following settings are available for the barcoded forms service.
 
 The Central Migration Bridge service ( `CentralMigrationBridge`) invokes a subset of Adobe Central Pro Output Server (Central) functionality, which includes the JFMERGE, JFTRANS, and XMLIMPORT commands. Central Migration Bridge service operations allow you to reuse the following Central assets in AEM forms:
 
-* template design (&ast;.ifd) 
-* output templates (&ast;.mdf) 
-* data files (&ast;.dat files) 
-* preamble files (&ast;.pre files) 
+* template design (&ast;.ifd)
+* output templates (&ast;.mdf)
+* data files (&ast;.dat files)
+* preamble files (&ast;.pre files)
 * data definition files (&ast;.tdf)
 
 The following setting is available for the Central Migration Bridge service.
@@ -282,13 +282,13 @@ In most cases, the default Guides render services is sufficient to prepare a Gui
 
 The Guide Utilities operations allow you to add the following Guide rendering tasks to a process:
 
-* Determine whether data is available to populate the Guide with 
-* Embed the Guide data or convert it to a link 
-* Convert referenced content to URLs that are externally accessible 
-* Substitute values in an HTML document or other wrapper, or convert them to URLs that are externally accessible 
-* Set the submit location 
-* Specify input values 
-* Create a parameter to represent referenced content 
+* Determine whether data is available to populate the Guide with
+* Embed the Guide data or convert it to a link
+* Convert referenced content to URLs that are externally accessible
+* Substitute values in an HTML document or other wrapper, or convert them to URLs that are externally accessible
+* Set the submit location
+* Specify input values
+* Create a parameter to represent referenced content
 * If variations are available, set a variation
 
 The default values for the Guide Utilities service support most use cases. However, if necessary, you can change the following values.
@@ -442,9 +442,9 @@ The following settings are available for the Microsoft SharePoint configuration 
 
 The Output service `(OutputService)`enables you to merge XML form data with a form design created in AEM forms Designer to create a document output stream in one of the following formats:
 
-* A PDF or PDF/A document output stream. 
-* An Adobe PostScript output stream. 
-* A Printer Control Language (PCL) output stream. 
+* A PDF or PDF/A document output stream.
+* An Adobe PostScript output stream.
+* A Printer Control Language (PCL) output stream.
 * A Zebra Programming Language (ZPL) output stream.
 
 The output stream can be sent to a network printer, a local printer, or a disk file. When you use the Output service as part of a process, you can also send the output stream to an email recipient as a file attachment.
@@ -701,19 +701,19 @@ In a cluster configuration, the batch size for a watched folder endpoint does no
 
 **Result Folder:** The default name for the result folder. This folder is used to copy the results files into. This value can be an empty, relative, or absolute path with the following file pattern.
 
-* %F = filename prefix 
+* %F = filename prefix
 * %E = filename extension
-* %Y = year (full) 
-* %y = year (last two digits) 
+* %Y = year (full)
+* %y = year (last two digits)
 * %M = month
-* %D = day of month 
-* %d = day of year 
-* %H = hour (24-hour clock) 
-* %h = hour (12-hour clock) 
-* %m = minute 
-* %s = second 
-* %l = millisecond 
-* %R = random number (from 0 through 9) 
+* %D = day of month
+* %d = day of year
+* %H = hour (24-hour clock)
+* %h = hour (12-hour clock)
+* %m = minute
+* %s = second
+* %l = millisecond
+* %R = random number (from 0 through 9)
 * %P = process or job id
 
 For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure/%Y/%M/%D/%H/`, the result folder is `C:/Test/WF0/failure/2009/07/17/20`.
@@ -785,9 +785,9 @@ Default security profiles are installed, which can then be configured to meet yo
 
    If you select Yes, the caller of the service must be authenticated and the user principal for that caller must be authorized to invoke the service; otherwise, the invocation attempt will be refused.
 
-   If you select No, the caller of the service may or may not be authenticated. The invocation of the service will always succeed because there is no authorization check. 
+   If you select No, the caller of the service may or may not be authenticated. The invocation of the service will always succeed because there is no authorization check.
 
-1. For services that contain one or more operations flagged for anonymous access, select or deselect Anonymous Access Allowed. When anonymous access is enabled, any user within the system can invoke operations on the service. If anonymous access is disabled, users must be granted permission to call the service and invoke operations. Users are granted these permissions either directly or as being part of a group that has such permissions. 
+1. For services that contain one or more operations flagged for anonymous access, select or deselect Anonymous Access Allowed. When anonymous access is enabled, any user within the system can invoke operations on the service. If anonymous access is disabled, users must be granted permission to call the service and invoke operations. Users are granted these permissions either directly or as being part of a group that has such permissions.
 1. For some services, the user account that executes the operation affects the results. For example, in Content Services (Deprecated), the user that stores content is made the owner of the content, which affects who can later access the content. If you are using a process to store content, think about what user is used to execute the Document Management service, because that user will own the stored content.
 
    To specify the run-time identity used by a service to execute operations, select Specify Run As, select an option from the associated list, and then click Save. Choose from the following options:
@@ -804,7 +804,7 @@ Default security profiles are installed, which can then be configured to meet yo
    >
    >Render and submit services that are used with xfaForm, Document Form, and Form variables are always executed using the System user account.
 
-1. Click Add Principal to specify the permissions that users and groups have for this service. 
+1. Click Add Principal to specify the permissions that users and groups have for this service.
 1. The Select Principal screen displays the users and groups that are configured in User Management. If the user or group you want is not displayed, use the search function to find it. Click a user or group name.
 1. On the Add Permissions screen, select the permissions to assign to the user or group for this service:
 
@@ -838,9 +838,9 @@ Each service can take advantage of the pooling capabilities to handle incoming i
 1. On the Service Management page, click the service to configure.
 1. Click the Pooling tab.
 1. In the Request Processing Strategy list, select Pooled Instances for All Requests.
-1. In the Initial Service Instance Pool Size box, enter the initial size of the pool. When the service is deployed, this number is used to determine the number of service implementation instances that are created and allocated to the free pool, awaiting invocation requests. This enables the service container to respond immediately to invocation requests without having to first initialize a service instance. 
-1. In the Maximum Service Instance Pool Size box, enter the maximum number of instances in the pool for a given service. This setting controls the number of threads that can execute a given service at a given time. The default value is 0, which results in unlimited pool size. 
-1. In the Maximum Asynchronous Service Instances box, enter the maximum number of instances from the pool that can be used to service asynchronous requests at any given time. This setting allows the service to limit the number of requests that it can handle in parallel. 
+1. In the Initial Service Instance Pool Size box, enter the initial size of the pool. When the service is deployed, this number is used to determine the number of service implementation instances that are created and allocated to the free pool, awaiting invocation requests. This enables the service container to respond immediately to invocation requests without having to first initialize a service instance.
+1. In the Maximum Service Instance Pool Size box, enter the maximum number of instances in the pool for a given service. This setting controls the number of threads that can execute a given service at a given time. The default value is 0, which results in unlimited pool size.
+1. In the Maximum Asynchronous Service Instances box, enter the maximum number of instances from the pool that can be used to service asynchronous requests at any given time. This setting allows the service to limit the number of requests that it can handle in parallel.
 1. In the Invocation Wait Timeout box, enter the number of milliseconds to wait for a service to become available for an invocation request. If you do not specify a value for this setting, the default is 0, which results in no wait time.
 1. Click Save.
 

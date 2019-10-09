@@ -5,7 +5,7 @@ description: Learn how to configure the Translation Integration Framework.
 seo-description: Learn how to configure the Translation Integration Framework.
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
@@ -19,11 +19,11 @@ The Translation Integration Framework integrates with third-party translation se
 * Create a Translation Integration Framework configuration.
 * Associate the cloud configurations with your pages.
 
-For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).  
+For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
 
 ## Connecting to a Translation Service Provider {#connecting-to-a-translation-service-provider}
 
-Create a cloud configuration that connects AEM to your translation service provider. AEM includes the capability to connect to Microsoft Translator by default. For other translation providers, download the connector package from [Package Share](/help/sites-administering/package-manager.md#package-share).  
+Create a cloud configuration that connects AEM to your translation service provider. AEM includes the capability to connect to Microsoft Translator by default. For other translation providers, download the connector package from [Package Share](/help/sites-administering/package-manager.md#package-share).
 The following translation vendors provide an implementation of the new API for the Translation Projects. Links to learn more about the integration and how to download from Package Share:
 
 * [Clay Tablet Technologies](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) (not on PackageShare, contact vendor directly)
@@ -41,7 +41,7 @@ The following translation vendors provide an implementation of the new API for t
 
 >[!NOTE]
 >
->To find the latest list of human and machine translation providers, have a look at these pages:  
+>To find the latest list of human and machine translation providers, have a look at these pages:
 >
 >
 >* [AEM Human Translation](https://www.adobe.com/go/aem-human-translation-connectors)
@@ -71,53 +71,53 @@ After you configure a translation integration framework, you can [associate it w
 **Note:** For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
 
 A single configuration of the framework controls how to translate page content, community content, and assets.
-![chlimage_1-386](assets/chlimage_1-386.png) 
+![chlimage_1-386](assets/chlimage_1-386.png)
 
 ### Sites Configuration Properties {#sites-configuration-properties}
 
 The Sites properties control how the translation of page content is performed.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Translation Workflow</td> 
-   <td><p>Select the translation method that the framework performs for site content:</p> 
-    <ul> 
-     <li>Machine Translation: The translation provider performs the translation using machine translation in real time.</li> 
-     <li>Human Translation: Content is sent to the translation provider to be translated by translators. </li> 
-     <li>Do Not Translate: Content is not sent for translation. This is to skip certain content branches which would not be translated but could be updated with latest content.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Translation Provider</td> 
-   <td>Select the translation provider to perform the translation. A provider appears in the list when their corresponding connector is installed.</td> 
-  </tr> 
-  <tr> 
-   <td>Content Category</td> 
-   <td>(Machine Translation Only) A category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.</td> 
-  </tr> 
-  <tr> 
-   <td>Translate Tags</td> 
-   <td>Select to translate tags that are associated with the page.</td> 
-  </tr> 
-  <tr> 
-   <td>Translate Page Assets</td> 
-   <td><p>Select how to translate assets that are added to components from the file system or referenced from Assets:</p> 
-    <ul> 
-     <li>Do not translate: Page assets are not translated.</li> 
-     <li>Using Sites translation workflow: Assets are handled according to the configuration properties on the Sites tab.</li> 
-     <li>Using Assets translation workflow: Assets are handled according to the configuration of the properties on the Assets tab.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Auto-Execute Translation</td> 
-   <td>Select to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review and scope the translation job when you select this option.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Translation Workflow</td>
+   <td><p>Select the translation method that the framework performs for site content:</p>
+    <ul>
+     <li>Machine Translation: The translation provider performs the translation using machine translation in real time.</li>
+     <li>Human Translation: Content is sent to the translation provider to be translated by translators. </li>
+     <li>Do Not Translate: Content is not sent for translation. This is to skip certain content branches which would not be translated but could be updated with latest content.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Translation Provider</td>
+   <td>Select the translation provider to perform the translation. A provider appears in the list when their corresponding connector is installed.</td>
+  </tr>
+  <tr>
+   <td>Content Category</td>
+   <td>(Machine Translation Only) A category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.</td>
+  </tr>
+  <tr>
+   <td>Translate Tags</td>
+   <td>Select to translate tags that are associated with the page.</td>
+  </tr>
+  <tr>
+   <td>Translate Page Assets</td>
+   <td><p>Select how to translate assets that are added to components from the file system or referenced from Assets:</p>
+    <ul>
+     <li>Do not translate: Page assets are not translated.</li>
+     <li>Using Sites translation workflow: Assets are handled according to the configuration properties on the Sites tab.</li>
+     <li>Using Assets translation workflow: Assets are handled according to the configuration of the properties on the Assets tab.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Auto-Execute Translation</td>
+   <td>Select to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review and scope the translation job when you select this option.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Communities Configuration Properties {#communities-configuration-properties}
@@ -134,46 +134,46 @@ Communities properties control how the translation of user-generated content is 
 
 Assets properties control how to configure assets. For more information about translating assets, see [Creating Language Copies for Assets](/help/assets/translation-projects.md).
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Translation Workflow</td> 
-   <td><p>Select the type of translation that the framework performs for assets:</p> 
-    <ul> 
-     <li>Machine Translation: The translation provider performs the translation immediately using machine translation.</li> 
-     <li>Human Translation: Content is automatically sent to the translation provider to be manually translated. </li> 
-     <li>Do Not Translate: Assets are not sent for translation.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Translation Provider</td> 
-   <td>Select the translation provider to perform the translation. A provider appears in the list when their corresponding connector is installed.</td> 
-  </tr> 
-  <tr> 
-   <td>Content Category</td> 
-   <td>(Machine Translation only) A category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.</td> 
-  </tr> 
-  <tr> 
-   <td>Translate Assets</td> 
-   <td>Select to include assets in the translation project. </td> 
-  </tr> 
-  <tr> 
-   <td>Translate Metadata</td> 
-   <td>Select to translate asset metadata.</td> 
-  </tr> 
-  <tr> 
-   <td>Translate Tags</td> 
-   <td>Select to translate tags that are associated with the asset.</td> 
-  </tr> 
-  <tr> 
-   <td>Auto-Execute Translation</td> 
-   <td>Select to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Translation Workflow</td>
+   <td><p>Select the type of translation that the framework performs for assets:</p>
+    <ul>
+     <li>Machine Translation: The translation provider performs the translation immediately using machine translation.</li>
+     <li>Human Translation: Content is automatically sent to the translation provider to be manually translated. </li>
+     <li>Do Not Translate: Assets are not sent for translation.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Translation Provider</td>
+   <td>Select the translation provider to perform the translation. A provider appears in the list when their corresponding connector is installed.</td>
+  </tr>
+  <tr>
+   <td>Content Category</td>
+   <td>(Machine Translation only) A category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.</td>
+  </tr>
+  <tr>
+   <td>Translate Assets</td>
+   <td>Select to include assets in the translation project. </td>
+  </tr>
+  <tr>
+   <td>Translate Metadata</td>
+   <td>Select to translate asset metadata.</td>
+  </tr>
+  <tr>
+   <td>Translate Tags</td>
+   <td>Select to translate tags that are associated with the asset.</td>
+  </tr>
+  <tr>
+   <td>Auto-Execute Translation</td>
+   <td>Select to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.</td>
+  </tr>
+ </tbody>
 </table>
 
 1. In the side bar, click or tap Tools &gt; Operations &gt; Cloud &gt; Cloud Services.

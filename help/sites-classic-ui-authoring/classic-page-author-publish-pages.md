@@ -5,7 +5,7 @@ description: Once you have created and reviewed your content on the author envir
 seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
 uuid: 2b1cb08b-dbe9-4032-8527-15a11aa59d51
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
@@ -23,13 +23,13 @@ You can also publish/unpublish a page immediately or at a predefined date/time i
 >
 >Certain terms related to publishing can be confused:
 >
->* **Publish / Unpublish** 
->  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).  
+>* **Publish / Unpublish**
+>  These are the primary terms for the actions that make your content publicly available on your publish environment (or not).
 >
->* **Activate / Deactivate** 
->  These terms are synonymous with publish/unpublish.  
+>* **Activate / Deactivate**
+>  These terms are synonymous with publish/unpublish.
 >
->* **Replicate / Replication** 
+>* **Replicate / Replication**
 >  These are the technical terms describing the movement of data (e.g. page content, files, code, user comments) from one environment to another such as when publishing or reverse-replicating user comments.
 >
 
@@ -83,7 +83,7 @@ You can also activate a page when you have it open for editing.
 After you have opened the page and modified its contents, you:
 
 1. Select the **Page** tab in the Sidekick.
-1. Click **Activate Page**. 
+1. Click **Activate Page**.
 
    A message displays at the top right of the window confirming that the page has been activated.
 
@@ -108,7 +108,7 @@ To deactivate a page:
 
 To schedule your activation for a later time:
 
-1. In the Websites console, go to the **Activate** menu, and select **Activate later**. 
+1. In the Websites console, go to the **Activate** menu, and select **Activate later**.
 1. In the dialog that opens you provide the date and time for activation and click **OK**. This creates a version of the page that is activated at the specified time.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
@@ -121,9 +121,9 @@ If you want to cancel this activation/deactivation, go to the [Workflow Console]
 
 To schedule your deactivation for a later time:
 
-1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.   
+1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.
 
-1. In the dialog that opens you provide the date and time for deactivation and click **OK**. 
+1. In the dialog that opens you provide the date and time for deactivation and click **OK**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 

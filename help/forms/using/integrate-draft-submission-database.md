@@ -5,7 +5,7 @@ description: Reference implementation of customized data and metadata services t
 seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
 uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 ---
@@ -35,13 +35,13 @@ Perform the following steps, on all the author and publish instances, to install
    [Get File](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Go to AEM package manager at https://[*host*]:[*port*]/crx/packmgr/.
-1. Click **[!UICONTROL Upload Package]**.  
+1. Click **[!UICONTROL Upload Package]**.
 
 1. Browse to select the **aem-fp-db-integration-sample-pkg-6.1.2.zip** package and click **[!UICONTROL OK]**.
 1. Click **[!UICONTROL Install]** to next to the package to install the package.
 1. Go to **[!UICONTROL AEM Web Console Configuration]**
  page at https://[*host*]:[*port*]/system/console/configMgr.
-1. Click to open **[!UICONTROL Forms Portal Draft and Submission Configuration]** in edit mode.  
+1. Click to open **[!UICONTROL Forms Portal Draft and Submission Configuration]** in edit mode.
 
 1. Specify the values for properties as described in the following table:
 
@@ -77,78 +77,78 @@ Perform the following steps, on all the author and publish instances, to install
 
    **Note**: If you change the table names, provide them in the Form Portal configuration.
 
-1. Leave other configurations as is and click **[!UICONTROL Save]**.  
+1. Leave other configurations as is and click **[!UICONTROL Save]**.
 
 1. The database connection can be done via Apache Sling Connection Pooled Data Source.
 1. For Apache Sling connection, find and click to open **[!UICONTROL Apache Sling Connection Pooled DataSource]** in edit mode in the Web Console Configuration. Specify the values for properties as described in the following table:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property</strong></td> 
-   <td><strong>Value</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Datasource name</td> 
-   <td><p>A datasource name for filtering drivers from the data source pool</p> <p><strong>Note: </strong><em>The sample implementation uses FormsPortal as the datasource name.</em></p> </td> 
-  </tr> 
-  <tr> 
-   <td>JDBC driver class</td> 
-   <td>com.mysql.jdbc.Driver</td> 
-  </tr> 
-  <tr> 
-   <td>JDBC connection URI<br /> </td> 
-   <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td> 
-  </tr> 
-  <tr> 
-   <td>Username</td> 
-   <td>A username to authenticate and perform actions on database tables</td> 
-  </tr> 
-  <tr> 
-   <td>Password</td> 
-   <td>Password associated with the username</td> 
-  </tr> 
-  <tr> 
-   <td>Transaction Isolation</td> 
-   <td>READ_COMMITTED</td> 
-  </tr> 
-  <tr> 
-   <td>Max Active Connections</td> 
-   <td>1000</td> 
-  </tr> 
-  <tr> 
-   <td>Max Idle Connections</td> 
-   <td>100</td> 
-  </tr> 
-  <tr> 
-   <td>Min Idle Connections</td> 
-   <td>10</td> 
-  </tr> 
-  <tr> 
-   <td>Initial Size</td> 
-   <td>10</td> 
-  </tr> 
-  <tr> 
-   <td>Max Wait</td> 
-   <td>100000</td> 
-  </tr> 
-  <tr> 
-   <td>Test on Borrow</td> 
-   <td>Checked</td> 
-  </tr> 
-  <tr> 
-   <td>Test while Idle</td> 
-   <td>Checked</td> 
-  </tr> 
-  <tr> 
-   <td>Validation Query</td> 
-   <td>Example values are SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td> 
-  </tr> 
-  <tr> 
-   <td>Validation Query timeout</td> 
-   <td>10000</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property</strong></td>
+   <td><strong>Value</strong></td>
+  </tr>
+  <tr>
+   <td>Datasource name</td>
+   <td><p>A datasource name for filtering drivers from the data source pool</p> <p><strong>Note: </strong><em>The sample implementation uses FormsPortal as the datasource name.</em></p> </td>
+  </tr>
+  <tr>
+   <td>JDBC driver class</td>
+   <td>com.mysql.jdbc.Driver</td>
+  </tr>
+  <tr>
+   <td>JDBC connection URI<br /> </td>
+   <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
+  </tr>
+  <tr>
+   <td>Username</td>
+   <td>A username to authenticate and perform actions on database tables</td>
+  </tr>
+  <tr>
+   <td>Password</td>
+   <td>Password associated with the username</td>
+  </tr>
+  <tr>
+   <td>Transaction Isolation</td>
+   <td>READ_COMMITTED</td>
+  </tr>
+  <tr>
+   <td>Max Active Connections</td>
+   <td>1000</td>
+  </tr>
+  <tr>
+   <td>Max Idle Connections</td>
+   <td>100</td>
+  </tr>
+  <tr>
+   <td>Min Idle Connections</td>
+   <td>10</td>
+  </tr>
+  <tr>
+   <td>Initial Size</td>
+   <td>10</td>
+  </tr>
+  <tr>
+   <td>Max Wait</td>
+   <td>100000</td>
+  </tr>
+  <tr>
+   <td>Test on Borrow</td>
+   <td>Checked</td>
+  </tr>
+  <tr>
+   <td>Test while Idle</td>
+   <td>Checked</td>
+  </tr>
+  <tr>
+   <td>Validation Query</td>
+   <td>Example values are SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
+  </tr>
+  <tr>
+   <td>Validation Query timeout</td>
+   <td>10000</td>
+  </tr>
+ </tbody>
 </table>
 
    >[!NOTE]
@@ -157,7 +157,7 @@ Perform the following steps, on all the author and publish instances, to install
    > * Point your author and publish instances to use same database. Value of the JDBC connection URI field must be same for all the author and publish instances.
    >
 
-1. Leave other configurations as is and click **[!UICONTROL Save]**.  
+1. Leave other configurations as is and click **[!UICONTROL Save]**.
 
 1. If you already have a table in the database schema, skip to the next step.
 
@@ -182,7 +182,7 @@ Perform the following steps, on all the author and publish instances, to install
    **SQL statement for metadata table**
 
    ```sql
-   CREATE TABLE `metadata` ( 
+   CREATE TABLE `metadata` (
    `formPath` varchar(1000) DEFAULT NULL,
    `formType` varchar(100) DEFAULT NULL,
    `description` text,
@@ -217,7 +217,7 @@ Perform the following steps, on all the author and publish instances, to install
    PRIMARY KEY (`id`),
    UNIQUE KEY `ID_UNIQUE` (`id`)
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-   
+
    ```
 
    **SQL statement for additionalmetadatatable**
@@ -263,14 +263,14 @@ Perform the following steps, on all the author and publish instances, to install
 
    ```sql
    ALTER TABLE metadata add agreementId varchar(255) DEFAULT NULL,
-   add nextSigners varchar(255) DEFAULT NULL, 
+   add nextSigners varchar(255) DEFAULT NULL,
    add eSignStatus varchar(45) DEFAULT NULL,
    add pendingSignID varchar(45) DEFAULT NULL,
    add agreementDataId varchar(255) DEFAULT NULL,
    add enablePortalSubmit varchar(45) DEFAULT NULL,
    add submitType varchar(45) DEFAULT NULL,
    add dataType varchar(45) DEFAULT NULL;
-   
+
    ```
 
    ```sql
@@ -329,13 +329,13 @@ Perform the following steps to create [a client library](/help/sites-developing/
 1. Right-click the node, click **[!UICONTROL create new file]**, and create a file with extension .txt. For example, `js.txt`Add the following code to the newly created .txt file and click **[!UICONTROL Save All]**.
 
    ```
-   #base=util 
+   #base=util
     util.js
    ```
 
    In the above code, `util` is the name of the folder and `util.js` name of the file in the `util` folder. The `util` folder and `util.js` file are created in suceeeding steps.
 
-1. Right-click the `cq:ClientLibraryFolder` node created in step 2, select Create > Create Folder. Create a folder named `util`. Click **[!UICONTROL Save All]**. Right-click the `util` folder, select Create > Create File. Create a file named `util.js`. Click **[!UICONTROL Save All]**.  
+1. Right-click the `cq:ClientLibraryFolder` node created in step 2, select Create > Create Folder. Create a folder named `util`. Click **[!UICONTROL Save All]**. Right-click the `util` folder, select Create > Create File. Create a file named `util.js`. Click **[!UICONTROL Save All]**.
 
 1. Add the following code to util.js file and click **[!UICONTROL Save All]**. The code validate length of the file name.
 
@@ -375,11 +375,11 @@ Perform the following steps to create [a client library](/help/sites-developing/
                            }
                        }
                    }
-   
+
       });
            });
        };
-   
+
        if (window.guideBridge) {
            connectWithGuideBridge(window.guideBridge);
        } else {
@@ -388,7 +388,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
            });
        }
    })();
-   
+
    ```
 
    >[!NOTE]
@@ -405,7 +405,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
 
     * **[!UICONTROL multi option:]** Enabled
 
-1. Navigate to `/libs/fd/af/runtime/clientlibs/guideRuntime`and append the `fp.validation` value to the **embed **property.  
+1. Navigate to `/libs/fd/af/runtime/clientlibs/guideRuntime`and append the `fp.validation` value to the **embed **property.
 
 1. Navigate to /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA and append the `fp.validation` value to embed property.
 

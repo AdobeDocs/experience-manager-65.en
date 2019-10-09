@@ -5,7 +5,7 @@ description: Templates are used when creating a page which will be used as the b
 seo-description: Templates are used when creating a page which will be used as the base for the new page
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
@@ -49,7 +49,7 @@ The advantages of Editable Templates:
     * the initial content
     * content policies
 
-* After the new page is created a dynamic connection is maintained between the page and the template; this means that changes to the template structure will be reflected on any pages created with that template (changes to the initial content will not be reflected).  
+* After the new page is created a dynamic connection is maintained between the page and the template; this means that changes to the template structure will be reflected on any pages created with that template (changes to the initial content will not be reflected).
 * Uses content policies (edited from the template editor) to persist the design properties (does not use Design mode within the page editor).
 * Are stored under `/conf`
 * See [Editable Templates](/help/sites-developing/page-templates-editable.md) for further information.
@@ -63,7 +63,7 @@ The advantages of Editable Templates:
 Static Templates:
 
 * Must be defined and configured by your developers.
-* This was the original templating system of AEM and has been available for many versions. 
+* This was the original templating system of AEM and has been available for many versions.
 * A static template is a hierarchy of nodes that has the same structure as the page to be created, but without any actual content.
 * Are copied to create the new page, no dynamic connection exists after this.
 * Uses [Design Mode](/help/sites-authoring/default-components-designmode.md) to persist design properties.
@@ -84,7 +84,7 @@ Static Templates:
 >
 >Therefore, Adobe recommends that you start simple, by defining:
 >
->* only the `cq:allowedTemplates` property  
+>* only the `cq:allowedTemplates` property
 >
 >* only on the site root
 >
@@ -98,7 +98,7 @@ When creating a new page in the site admin interface, the list of available temp
 
 The following properties determine whether a template `T` is allowed to be used for a new page to be placed as a child of page `P`. Each of these properties is a multi-value string holding zero or more Regular Expressions that are used for matching with paths:
 
-* The `cq:allowedTemplates` property of the `jcr:content` subnode of `P` or an ancestor of `P`. 
+* The `cq:allowedTemplates` property of the `jcr:content` subnode of `P` or an ancestor of `P`.
 
 * The `allowedPaths` property of `T`.
 
@@ -122,7 +122,7 @@ The evaluation works as follows:
 
 The following diagram depicts the template evaluation process:
 
-![chlimage_1-176](assets/chlimage_1-176.png) 
+![chlimage_1-176](assets/chlimage_1-176.png)
 
 #### Limiting templates used in child pages {#limiting-templates-used-in-child-pages}
 

@@ -1,11 +1,11 @@
 ---
 title: Barcoded Forms Service
 seo-title: Using AEM Forms Barcoded Forms Service
-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes. 
-seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes. 
+description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes.
+seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes.
 uuid: 96e0a1e6-3f53-4fea-85c2-4de3cff52d73
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: dcf60604-c401-4c74-95c7-e7d4457fdfe5
 ---
@@ -42,45 +42,45 @@ For each barcode in an image, the Barcoded Forms service locates the barcode, de
 The Barcoded Forms service returns the following XML document after decoding the barcodes:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?>  
-<xb:scanned_image xmlns:xb="https://decoder.barcodedforms.adobe.com/xmlbeans"     path="tiff" version="1.0"> 
-    <xb:decode> 
-        <xb:date>2007-05-11T15:07:49.965-04:00</xb:date>  
-        <xb:host_name>myhost.adobe.com</xb:host_name>  
-        <xb:status type="success"> 
-            <xb:message />  
-        </xb:status> 
-    </xb:decode> 
-    <xb:barcode id="1"> 
-        <xb:header symbology="pdf417"> 
-            <xb:location page_no="1"> 
-                <xb:coordinates> 
-                    <xb:point x="0.119526625" y="0.60945123" />  
-                    <xb:point x="0.44457594" y="0.60945123" />  
-                    <xb:point x="0.44457594" y="0.78445125" />  
-                    <xb:point x="0.119526625" y="0.78445125" />  
-                </xb:coordinates> 
-            </xb:location> 
-        </xb:header> 
-        <xb:body> 
-            <xb:content encoding="utf-8">t_SID t_FirstName t_MiddleName t_LastName t_nFirstName t_nMiddleName t_nLastName 90210 Patti Y Penne Patti P Prosciutto</xb:content>  
-        </xb:body> 
-    </xb:barcode> 
-    <xb:barcode id="2"> 
-        <xb:header symbology="pdf417"> 
-            <xb:location page_no="1"> 
-                <xb:coordinates> 
-                    <xb:point x="0.119526625" y="0.825" />  
-                    <xb:point x="0.44457594" y="0.825" />  
-                    <xb:point x="0.44457594" y="0.9167683" />  
-                    <xb:point x="0.119526625" y="0.9167683" />  
-                </xb:coordinates> 
-            </xb:location> 
-         </xb:header> 
-        <xb:body> 
-            <xb:content encoding="utf-8">t_FormType t_FormVersion ChangeName 20061128</xb:content>  
-         </xb:body> 
-    </xb:barcode> 
+<?xml version="1.0" encoding="UTF-8" ?>
+<xb:scanned_image xmlns:xb="https://decoder.barcodedforms.adobe.com/xmlbeans"     path="tiff" version="1.0">
+    <xb:decode>
+        <xb:date>2007-05-11T15:07:49.965-04:00</xb:date>
+        <xb:host_name>myhost.adobe.com</xb:host_name>
+        <xb:status type="success">
+            <xb:message />
+        </xb:status>
+    </xb:decode>
+    <xb:barcode id="1">
+        <xb:header symbology="pdf417">
+            <xb:location page_no="1">
+                <xb:coordinates>
+                    <xb:point x="0.119526625" y="0.60945123" />
+                    <xb:point x="0.44457594" y="0.60945123" />
+                    <xb:point x="0.44457594" y="0.78445125" />
+                    <xb:point x="0.119526625" y="0.78445125" />
+                </xb:coordinates>
+            </xb:location>
+        </xb:header>
+        <xb:body>
+            <xb:content encoding="utf-8">t_SID t_FirstName t_MiddleName t_LastName t_nFirstName t_nMiddleName t_nLastName 90210 Patti Y Penne Patti P Prosciutto</xb:content>
+        </xb:body>
+    </xb:barcode>
+    <xb:barcode id="2">
+        <xb:header symbology="pdf417">
+            <xb:location page_no="1">
+                <xb:coordinates>
+                    <xb:point x="0.119526625" y="0.825" />
+                    <xb:point x="0.44457594" y="0.825" />
+                    <xb:point x="0.44457594" y="0.9167683" />
+                    <xb:point x="0.119526625" y="0.9167683" />
+                </xb:coordinates>
+            </xb:location>
+         </xb:header>
+        <xb:body>
+            <xb:content encoding="utf-8">t_FormType t_FormVersion ChangeName 20061128</xb:content>
+         </xb:body>
+    </xb:barcode>
 </xb:scanned_image>
 
 ```
@@ -132,7 +132,7 @@ You can use the **AEMFD Barcoded Forms Service** in AEM Console to configure pro
 
 Barcoded Forms Service provides the following two APIs:
 
-* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodes all the barcodes available in an input PDF document or tiff image. It returns another XML document that contains data that was retrieved from all the barcodes available in the input document or image.  
+* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodes all the barcodes available in an input PDF document or tiff image. It returns another XML document that contains data that was retrieved from all the barcodes available in the input document or image.
 
 * **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convert data decoded using decode API to XML data. This XML data can be merged with an XFA Form. It returns a list of XML documents, one for each barcode.
 
@@ -158,45 +158,45 @@ The following sample code decodes a barcode in a document and saves the output X
 %><sling:defineObjects/><%
 
  // Get reference to BarcodedForms OSGi service.
- // Within an OSGi bundle @Reference annotation 
+ // Within an OSGi bundle @Reference annotation
  // can be used to retrieve service reference
 
  BarcodedFormsService bcfService = sling.getService(BarcodedFormsService.class);
 
- // Path to image containing barcodes in AEM repository. 
+ // Path to image containing barcodes in AEM repository.
  // Replace this with path to image in your repository
  String documentPath = "/content/dam/TestImage-010.tif";
 
- // Create a Docmanager Document object for 
+ // Create a Docmanager Document object for
  // the tiff file containing barcode
  // Please see Docmanager Document javadoc for
  // more details
  Document inputDoc = new Document(documentPath);
 
- // Invoke decode operation of barcoded forms service 
+ // Invoke decode operation of barcoded forms service
  // Second parameter is set to true to decode PDF417 barcode symbology
  // Please see javadoc for details of parameters
 
  org.w3c.dom.Document result = bcfService.decode(inputDoc, // Input Document Object
-                                                    true, 
-                                                    false,  
+                                                    true,
                                                     false,
                                                     false,
                                                     false,
                                                     false,
                                                     false,
                                                     false,
-                                                    CharSet.UTF_8);// use UTF-8 character encoding 
+                                                    false,
+                                                    CharSet.UTF_8);// use UTF-8 character encoding
 
  out.println("<h2> Output Returned from decode operation </h2>");
  printDoc(result,out);
 
- // Invoke extractToXML to convert Carriage 
- // return / Tab delimited data to XML 
+ // Invoke extractToXML to convert Carriage
+ // return / Tab delimited data to XML
 
  List<org.w3c.dom.Document> listResult = bcfService.extractToXML(result, // w3c document from the output of decode operation
                                                                     Delimiter.Carriage_Return, // Lines are separated using "\r"
-                                                                    Delimiter.Tab, // Fields are separated using "\t" 
+                                                                    Delimiter.Tab, // Fields are separated using "\t"
                                                                     XMLFormat.XDP); // wraps generated XML in <xdp:xdp> packet
 
  out.println("<h2> Output returned from extractToXML </h2>");
@@ -235,7 +235,7 @@ The following sample workflow process decodes a barcode in a document and saves 
 
 ```
 /*
- * Imports 
+ * Imports
  */
 var BarcodedFormsService = Packages.com.adobe.fd.bcf.api.BarcodedFormsService;
 var CharSet = Packages.com.adobe.fd.bcf.api.CharSet;
@@ -259,13 +259,13 @@ var bcfService = sling.getService(BarcodedFormsService);
 var payload = graniteWorkItem.getWorkflowData().getPayload();
 var payload_path = payload.toString();
 
-/* Create resource resolver using current session 
+/* Create resource resolver using current session
  * this resource resolver needs to be passed to Document
- * object constructor when file is to be read from 
- * crx repository. 
+ * object constructor when file is to be read from
+ * crx repository.
  */
 
-/* get ResourceResolverFactory service reference , used 
+/* get ResourceResolverFactory service reference , used
  * to construct resource resolver
  */
 var resourceResolverFactory = sling.getService(ResourceResolverFactory);
@@ -276,7 +276,7 @@ var authInfo = {
 
 var resourceResolver = resourceResolverFactory.getResourceResolver(authInfo);
 
-// Create Document object from payload_path 
+// Create Document object from payload_path
 var inputDocument = new Document(payload_path, resourceResolver);
 
 // invoke decode operation to decode barcodes in inputDocument

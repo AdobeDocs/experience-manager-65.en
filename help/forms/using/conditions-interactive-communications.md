@@ -1,11 +1,11 @@
 ---
 title: Conditions in Interactive Communications
 seo-title: Conditions in Interactive Communications
-description: Creating and editing condition fragments to be used in Interactive Communications - condition is one of the four types of document fragments used to build Interactive Communications. The other three are texts, lists, and layout fragments.  
+description: Creating and editing condition fragments to be used in Interactive Communications - condition is one of the four types of document fragments used to build Interactive Communications. The other three are texts, lists, and layout fragments.
 seo-description: Creating and editing conditions to be used in Interactive Communications
 uuid: 93d69398-aead-4e23-8db3-b3e890477113
 topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3ade2a54-cb9a-4e34-808c-c6feec23cfe1
 ---
 
@@ -25,7 +25,7 @@ Examples:
 The assets in the conditions that are rendered based on the applied rules and the values passed to the rule. The rules in the conditions can check values in the following types of data:
 
 * Associated form data model's property
-* Any variables that you create in the condition  
+* Any variables that you create in the condition
 * Strings
 * Numbers
 * Mathematical expressions
@@ -33,19 +33,19 @@ The assets in the conditions that are rendered based on the applied rules and th
 
 ## Create condition {#createcondition}
 
-1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**. 
-1. Select **[!UICONTROL Create]** > **[!UICONTROL Condition]**. 
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
+1. Select **[!UICONTROL Create]** > **[!UICONTROL Condition]**.
 1. Specify the following information:
 
-    * **[!UICONTROL Title]**: (Optional) Enter the title for the condition. Titles need not be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and properties. 
+    * **[!UICONTROL Title]**: (Optional) Enter the title for the condition. Titles need not be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and properties.
     * **[!UICONTROL Name]**: The unique name for the condition, within a folder. No two document fragments (text, condition, or list) in any state can exist with the same name within a folder. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **[!UICONTROL Description]**: Type a description of the document fragment.
-    * **[!UICONTROL Form Data Model]**: Optionally, select the Form Data Model radio button to create the condition based on a form data model. When you select Form Data Model radio button, **[!UICONTROL Form Data Model*]** field appears. Browse and select a form data model. While creating condition for an Interactive Communication, ensure that you use the same data model that you intend to use in the Interactive Communication. For more information on form data model, see [Data Integration](/help/forms/using/data-integration.md). 
+    * **[!UICONTROL Form Data Model]**: Optionally, select the Form Data Model radio button to create the condition based on a form data model. When you select Form Data Model radio button, **[!UICONTROL Form Data Model*]** field appears. Browse and select a form data model. While creating condition for an Interactive Communication, ensure that you use the same data model that you intend to use in the Interactive Communication. For more information on form data model, see [Data Integration](/help/forms/using/data-integration.md).
     * **[!UICONTROL Tags]**: Optionally, to create custom tag enter value in text field and tap Enter. When you save this condition, the newly added tags get created.
 
 1. Tap **[!UICONTROL Next]**.
 
-   Create Condition page appears. 
+   Create Condition page appears.
 
    ![createcondition](assets/createcondition.png)
 
@@ -59,7 +59,7 @@ The assets in the conditions that are rendered based on the applied rules and th
 
 1. Tap on the appropriate assets to select them to include in the condition and then tap **[!UICONTROL Done]**.
 
-   Create Condition page appears and lists the added assets. 
+   Create Condition page appears and lists the added assets.
 
    ![createconditionassetsadd](assets/createconditionassetsadd.png)
 
@@ -79,7 +79,7 @@ The assets in the conditions that are rendered based on the applied rules and th
 
    You can select the following options to specify how the condition behaves at runtime:
 
-    * **Multiple Results Evaluation Disabled\Multiple Results Evaluation Enabled**: When this option is enabled (appears as "Multiple Results Evaluation Enabled"), all the rules are evaluated and the result is the sum of all the true rules. If this option is disabled (appears as "Multiple Results Evaluation Disabled") then only the first rule that is found to be true is evaluated and becomes the output of the condition. 
+    * **Multiple Results Evaluation Disabled\Multiple Results Evaluation Enabled**: When this option is enabled (appears as "Multiple Results Evaluation Enabled"), all the rules are evaluated and the result is the sum of all the true rules. If this option is disabled (appears as "Multiple Results Evaluation Disabled") then only the first rule that is found to be true is evaluated and becomes the output of the condition.
     * **Page Break**: Select this option ( ![break](assets/break.png)) to add a page break between the assets of the conditions. When this option is not selected ( ![nobreak](assets/nobreak.png)), if a condition is overflowing to the next page in the print output, the whole condition is shifted to the next page instead of breaking in the page between the assets in the condition.
 
 1. Tap **[!UICONTROL Create Rule]** to add rules to display or hide the assets, as required. To use variables in the rules, see [creating variables](#variables). For more information, see [Adding rules to condition](#ruleeditor).
@@ -104,10 +104,10 @@ The assets in the conditions that are rendered based on the applied rules and th
 
 You can edit a condition using the following steps. You can also choose to edit a condition from within an Interactive Communication by selecting Edit Fragment in the popup menu.
 
-1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**. 
-1. Navigate to the condition and select it. 
-1. Tap **[!UICONTROL Edit]**. 
-1. Make the required changes in the condition. For more details on the information you can change in a condition, see [Create condition](#createcondition). 
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
+1. Navigate to the condition and select it.
+1. Tap **[!UICONTROL Edit]**.
+1. Make the required changes in the condition. For more details on the information you can change in a condition, see [Create condition](#createcondition).
 1. Tap **[!UICONTROL Save]**and then tap **[!UICONTROL Close]**.
 
 ## Create rules in condition {#ruleeditor}
@@ -138,14 +138,14 @@ Using rule editor in a condition, you can create rules to display or hide assets
    >
    >Collection property is not supported for creating rules to display assets.
 
-1. Select the appropriate operator to evaluate the rule, such as Is Equal To, Contains, and Starts With. 
+1. Select the appropriate operator to evaluate the rule, such as Is Equal To, Contains, and Starts With.
 1. Insert the evaluating expression, string, data model property, variable, or date.
 
    ![Rule to show an asset when policy type is standard](assets/ruleincondition.png)
 
    Rule to show an asset when policy type is standard
 
-    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to create [variables](#variables) to construct rules. Tap Resize again to go back to the regular Create Rule dialog. 
+    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to create [variables](#variables) to construct rules. Tap Resize again to go back to the regular Create Rule dialog.
     * You can also create multiple conditions in a rule.
 
 1. Tap **[!UICONTROL Done]**.
@@ -171,24 +171,24 @@ Tap Resize again to go back to the Create Rule\Edit Rule dialog.
 
 1. In the left pane, tap **[!UICONTROL Variables]**.
 
-   The Variables pane appears. 
+   The Variables pane appears.
 
    ![expandededitrulevariables](assets/expandededitrulevariables.png)
 
 1. Tap **[!UICONTROL Create]**.
 
-   Create Variables pane appears. 
+   Create Variables pane appears.
 
 1. Enter the following information and tap **[!UICONTROL Create]**:
 
     * **[!UICONTROL Name*]**: Name of the variable.
-    * **[!UICONTROL Description]**: Optionally enter a description about the variable. 
-    * **[!UICONTROL Type*]**: Select a type of the variable: String, Number, Boolean, or Date. 
+    * **[!UICONTROL Description]**: Optionally enter a description about the variable.
+    * **[!UICONTROL Type*]**: Select a type of the variable: String, Number, Boolean, or Date.
     * **[!UICONTROL Allow Specific Values Only]**: For String and Number variables, you can ensure that the agent chooses from a specific set of values for a placeholder in the Agent UI. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values*]** field.
 
 1. Tap **[!UICONTROL Create]**.
 
-   The variable is created and listed in the Variables pane. 
+   The variable is created and listed in the Variables pane.
 
 1. To insert a variable in the rule, drag-and-drop the variable into a placeholder for an option in the rule.
 1. After you have constructed a valid rule, tap **[!UICONTROL Done]**.

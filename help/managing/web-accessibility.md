@@ -5,7 +5,7 @@ description: Learn how to create accessible websites and content with AEM.
 seo-description: Learn how to create accessible websites and content with AEM.
 uuid: b68281af-3e8a-4842-b762-1c59f9132795
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-accessibility
 content-type: reference
 topic-tags: introduction
@@ -18,7 +18,7 @@ There are many social, economical, and legal motivations for ensuring that web c
 
 Creating accessible websites and content with AEM impact:
 
-* Administrators responsible for configuring Adobe Experience Manager (AEM) to ensure accessibility features are correctly enabled.  
+* Administrators responsible for configuring Adobe Experience Manager (AEM) to ensure accessibility features are correctly enabled.
 * Authors using these features to create web sites that support key guidelines in WCAG 2.0.
 
   Creating accessible content is a process. AEM provides the capabilities, but content authors need to ensure that they follow the techniques required to create accessible content.
@@ -33,15 +33,15 @@ The following pages and section provide information and guidelines:
 
   Guidelines on how administrators can configure AEM for producing accessible content.
 
-* [Creating Accessible Content (WCAG 2.0 Conformance)](/help/sites-authoring/creating-accessible-content.md)  
+* [Creating Accessible Content (WCAG 2.0 Conformance)](/help/sites-authoring/creating-accessible-content.md)
 
-  The WCAG 2.0 Guidelines provide a list of success criteria for Level A and Level AA conformance levels. This page details the success criteria covered by AEM, together with how to meet them when generating content.  
+  The WCAG 2.0 Guidelines provide a list of success criteria for Level A and Level AA conformance levels. This page details the success criteria covered by AEM, together with how to meet them when generating content.
 
-* [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md)  
+* [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md)
 
   Background information about WCAG 2.0.
 
-* [Creating Accessible Adaptive Forms](/help/forms/using/creating-accessible-adaptive-forms.md)  
+* [Creating Accessible Adaptive Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
 
   Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 

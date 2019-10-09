@@ -5,7 +5,7 @@ description: Find out about the prerequisites for integrating with Adobe Target.
 seo-description: Find out about the prerequisites for integrating with Adobe Target.
 uuid: 88be6a97-c964-4e42-a3a2-ed9b2c9ee49e
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
@@ -23,7 +23,7 @@ The Client Code identifies the Adobe Target customer account when calling the Ad
 
 >[!NOTE]
 >
->Your account must also be enabled by the Target team in order to use the integration.  
+>Your account must also be enabled by the Target team in order to use the integration.
 >
 >
 >If it's not the case, please contact [Adobe Target Customer Care](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html).

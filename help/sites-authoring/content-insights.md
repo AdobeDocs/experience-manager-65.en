@@ -5,7 +5,7 @@ description: Content Insight provides information about page performance using w
 seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
@@ -32,7 +32,7 @@ The Content Insight page includes reports that use Adobe SiteCatalyst, Adobe Tar
 * Target: Reports on campaign activity for which your page includes offers.
 * BrightEdge: Reports on the page features that improve the visibility of the page to search engines, and recommends features that should be implemented.
 
-See [Opening Analytics and Recommendations for a Page](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page). 
+See [Opening Analytics and Recommendations for a Page](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
 ## Reporting Period
 
@@ -75,13 +75,13 @@ The Sources report indicates how users navigated to the page, for example from s
 
 ## The Bounces Report {#the-bounces-report}
 
-The Bounces report includes a graph that shows the number of bounces that have occurred for a page over the selected reporting period. 
+The Bounces report includes a graph that shows the number of bounces that have occurred for a page over the selected reporting period.
 
 ![chlimage_1-315](assets/chlimage_1-315.png)
 
 ## The Campaign Activity Report {#the-campaign-activity-report}
 
-For each campaign for which the page is active, a report appears named *Campaign Name* Activity. The report shows page impressions and conversions for each segment for which an offer is provided. 
+For each campaign for which the page is active, a report appears named *Campaign Name* Activity. The report shows page impressions and conversions for each segment for which an offer is provided.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 

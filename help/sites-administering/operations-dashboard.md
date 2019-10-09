@@ -5,7 +5,7 @@ description: Learn how to use the Operations Dashboard.
 seo-description: Learn how to use the Operations Dashboard.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
@@ -48,7 +48,7 @@ The Health Reports interface can be accessed through the **Tools** - **Operation
 
 The card system exposes three possible states: **OK**, **WARN** and **CRITICAL**. The states are a result of rules and thresholds, which can be configured by hovering the mouse over the card and then clicking the gear icon in the action bar:
 
-![chlimage_1-415](assets/chlimage_1-415.png) 
+![chlimage_1-415](assets/chlimage_1-415.png)
 
 ### Health Check Types {#health-check-types}
 
@@ -71,25 +71,25 @@ In the Operations Dashboard you can visualize the result of both individual and 
 
 Creating an individual Health Check involves two steps: implementing a Sling Health Check and adding an entry for the Health Check in the Dashboard's configuration nodes.
 
-1. In order to create a Sling Health Check, you need to create an OSGI component implementing the Sling HealthCheck interface. You will add this component inside a bundle. The properties of the component will fully identify the Health Check. Once the component is installed, a JMX MBean will automatically be created for the Health Check. See the [Sling Health Check Documentation](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) for more information.  
-  
+1. In order to create a Sling Health Check, you need to create an OSGI component implementing the Sling HealthCheck interface. You will add this component inside a bundle. The properties of the component will fully identify the Health Check. Once the component is installed, a JMX MBean will automatically be created for the Health Check. See the [Sling Health Check Documentation](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) for more information.
+
    Example of a Sling Health Check component, written with OSGI service component annotations:
 
    ```java
-   @Component(service = HealthCheck.class,         
-   property = {             
-       HealthCheck.NAME + "=Example Check",             
-       HealthCheck.TAGS + "=example",             
-       HealthCheck.TAGS + "=test",             
-       HealthCheck.MBEAN_NAME + "=exampleHealthCheckMBean"         
+   @Component(service = HealthCheck.class,
+   property = {
+       HealthCheck.NAME + "=Example Check",
+       HealthCheck.TAGS + "=example",
+       HealthCheck.TAGS + "=test",
+       HealthCheck.MBEAN_NAME + "=exampleHealthCheckMBean"
    })
-    public class ExampleHealthCheck implements HealthCheck { 
-       @Override     
-       public Result execute() {     
-           // health check code     
+    public class ExampleHealthCheck implements HealthCheck {
+       @Override
+       public Result execute() {
+           // health check code
        }
     }
-   
+
    ```
 
    >[!NOTE]
@@ -100,7 +100,7 @@ Creating an individual Health Check involves two steps: implementing a Sling Hea
 
    The following properties should be set on the new node:
 
-    * **Name:** `sling:resourceType` 
+    * **Name:** `sling:resourceType`
 
         * **Type:** `String`
         * **Value:** `granite/operations/components/mbean`
@@ -120,12 +120,12 @@ Creating an individual Health Check involves two steps: implementing a Sling Hea
 
    >[!NOTE]
    >
-   >Make sure that the `/apps/settings/granite/operations/hc` path has the following properties set to true:  
+   >Make sure that the `/apps/settings/granite/operations/hc` path has the following properties set to true:
    >
    >
    >`sling:configCollectionInherit`
    >
-   >`sling:configPropertyInherit`  
+   >`sling:configPropertyInherit`
    >
    >
    >This will tell the configuration manager to merge the new configurations with the existing ones from `/libs`.
@@ -164,7 +164,7 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
 
    With the following properties:
 
-    * **Name:** `sling:resourceType` 
+    * **Name:** `sling:resourceType`
 
         * **Type:** `String`
         * **Value:** `granite/operations/components/mbean`
@@ -178,147 +178,147 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
    >
    >If you create individual health checks that logically belong under a composite check that is already present in the Dashboard by default, they will be automatically captured and grouped under the respective composite check. Because of this, there is no need to create a new configuration node for these checks.
    >
-   >For example, if you create an individual security health check, all you need to do is assign it the "**security**" tag, and it is installed, it will automatically appear under the Security Checks composite check in the Operations Dashboard.  
+   >For example, if you create an individual security health check, all you need to do is assign it the "**security**" tag, and it is installed, it will automatically appear under the Security Checks composite check in the Operations Dashboard.
 
 ### Health Checks Provided with AEM {#health-checks-provided-with-aem}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>zHealthcheck Name</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Query Performance</td> 
-   <td><p>This health check was simplified <strong>in AEM 6.4</strong>, and now checks the recently-refactored <code>Oak QueryStats</code> MBean, more specifically the <code>SlowQueries </code>attribute. If the statistics contain any slow queries, then the health check returns a warning. Otherwise, it returns the OK status.<br /> </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Oservation Queue Lenght</td> 
-   <td><p>Observation Queue Length iterates over all Event Listeners and Background Observers, compares their <code>queueSize </code>to their <code>maxQueueSize</code> and:</p> 
-    <ul> 
-     <li>returns Critical status if the <code>queueSize</code> value exceeds the <code>maxQueueSize</code> value (that is when events would be dropped)</li> 
-     <li>returns Warn if the <code>queueSize</code> value is over the <code>maxQueueSize * WARN_THRESHOLD</code> (the default value is 0.75) </li> 
-    </ul> <p>The maximum length of each queue comes from separate configurations (Oak and AEM), and is not configurable from this health check. The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Query Traversal Limits</td> 
-   <td><p>Query Traversal Limits checks the <code>QueryEngineSettings</code> MBean, more specifically the <code>LimitInMemory</code> and <code>LimitReads</code> attributes, and returns the following status:</p> 
-    <ul> 
-     <li>returns the Warn status if one of the limits is equal or higher than the <code>Integer.MAX_VALUE</code></li> 
-     <li>returns the Warn status if one of the limits is lower than 10000 (the recommended setting from Oak)</li> 
-     <li>returns the Critical status if the <code>QueryEngineSettings</code> or any of the limits cannot be retrieved</li> 
-    </ul> <p>The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Synchronized Clocks</td> 
-   <td><p>This check is relevant only for <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">document nodestore clusters</a>. It returns the following status:</p> 
-    <ul> 
-     <li>returns the Warn status when the instance clocks get out of sync and go over a predefined low threshold</li> 
-     <li>returns the Critical status when the instance clocks get out of sync and go over a predefined high threshold</li> 
-    </ul> <p>The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=slingDiscoveryOakSynchronizedClocks,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Asynchronous Indexes</td> 
-   <td><p>The Asynchronous Indexes check:</p> 
-    <ul> 
-     <li>returns Critical status if at least one indexing lane is failing</li> 
-     <li>checks the <code>lastIndexedTime</code> for all indexing lanes and: 
-      <ul> 
-       <li>returns Critical status if it's more than 2 hours ago </li> 
-       <li>returns Warning status if it's between 2 hours and 45 minutes ago </li> 
-       <li>returns OK status if it's less than 45 minutes ago </li> 
-      </ul> </li> 
-     <li>if none of these conditions are met, it returns the OK status</li> 
-    </ul> <p>Both the Critical and Warn status thresholds are configurable. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Note: </strong>This health check is available with AEM 6.4 and has been backported to AEM 6.3.0.1.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Large Lucene Indexes</td> 
-   <td><p>This check uses the data exposed by the <code>Lucene Index Statistics</code> MBean to identify large indexes and returns:</p> 
-    <ul> 
-     <li>a Warning status if there is an index with more than 1 billion documents</li> 
-     <li>a Critical status if there is an index with more than 1.5 billion documents</li> 
-    </ul> <p>The thresholds are configurable and the MBean for the health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Note: </strong>This check is available with AEM 6.4 and has been backported to AEM 6.3.2.0.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>System Maintenance</td> 
-   <td><p>System Maintenance is a composite check that returns the OK if all maintenance tasks are running as configured. Keep in mind that:</p> 
-    <ul> 
-     <li>each maintenance task is accompanied by an associated health check</li> 
-     <li>if a task is not added to a maintenance window, its health check will return Critical</li> 
-     <li>you need to configure the Audit Log and Workflow Purge maintenance tasks or otherwise remove them from the maintenance windows. If left unconfigured, these tasks will fail on the first attempted run, so the System Maintenance check will return the Critical status.</li> 
-     <li><strong>With AEM 6.4</strong>, there is also a check for the <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene Binaries Maintenance</a> task</li> 
-     <li>on AEM 6.2 and lower, the system maintenance check returns a Warning status right after startup because the tasks never run. Starting with 6.3, they will return OK if the first maintenance window wasn't reached yet.</li> 
-    </ul> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Replication Queue</td> 
-   <td><p>This check iterates over replication agents and looks at their queues. For the item at the top of the queue, the check looks at how many times the agent retried replication. If the agent retried replication more than the value of the <code>numberOfRetriesAllowed</code> parameter, it returns a warning. The <code>numberOfRetriesAllowed</code> parameter is configurable. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Sling Jobs</td> 
-   <td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>zHealthcheck Name</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Query Performance</td>
+   <td><p>This health check was simplified <strong>in AEM 6.4</strong>, and now checks the recently-refactored <code>Oak QueryStats</code> MBean, more specifically the <code>SlowQueries </code>attribute. If the statistics contain any slow queries, then the health check returns a warning. Otherwise, it returns the OK status.<br /> </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Oservation Queue Lenght</td>
+   <td><p>Observation Queue Length iterates over all Event Listeners and Background Observers, compares their <code>queueSize </code>to their <code>maxQueueSize</code> and:</p>
+    <ul>
+     <li>returns Critical status if the <code>queueSize</code> value exceeds the <code>maxQueueSize</code> value (that is when events would be dropped)</li>
+     <li>returns Warn if the <code>queueSize</code> value is over the <code>maxQueueSize * WARN_THRESHOLD</code> (the default value is 0.75) </li>
+    </ul> <p>The maximum length of each queue comes from separate configurations (Oak and AEM), and is not configurable from this health check. The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Query Traversal Limits</td>
+   <td><p>Query Traversal Limits checks the <code>QueryEngineSettings</code> MBean, more specifically the <code>LimitInMemory</code> and <code>LimitReads</code> attributes, and returns the following status:</p>
+    <ul>
+     <li>returns the Warn status if one of the limits is equal or higher than the <code>Integer.MAX_VALUE</code></li>
+     <li>returns the Warn status if one of the limits is lower than 10000 (the recommended setting from Oak)</li>
+     <li>returns the Critical status if the <code>QueryEngineSettings</code> or any of the limits cannot be retrieved</li>
+    </ul> <p>The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Synchronized Clocks</td>
+   <td><p>This check is relevant only for <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">document nodestore clusters</a>. It returns the following status:</p>
+    <ul>
+     <li>returns the Warn status when the instance clocks get out of sync and go over a predefined low threshold</li>
+     <li>returns the Critical status when the instance clocks get out of sync and go over a predefined high threshold</li>
+    </ul> <p>The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=slingDiscoveryOakSynchronizedClocks,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Asynchronous Indexes</td>
+   <td><p>The Asynchronous Indexes check:</p>
+    <ul>
+     <li>returns Critical status if at least one indexing lane is failing</li>
+     <li>checks the <code>lastIndexedTime</code> for all indexing lanes and:
+      <ul>
+       <li>returns Critical status if it's more than 2 hours ago </li>
+       <li>returns Warning status if it's between 2 hours and 45 minutes ago </li>
+       <li>returns OK status if it's less than 45 minutes ago </li>
+      </ul> </li>
+     <li>if none of these conditions are met, it returns the OK status</li>
+    </ul> <p>Both the Critical and Warn status thresholds are configurable. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Note: </strong>This health check is available with AEM 6.4 and has been backported to AEM 6.3.0.1.</p> </td>
+  </tr>
+  <tr>
+   <td>Large Lucene Indexes</td>
+   <td><p>This check uses the data exposed by the <code>Lucene Index Statistics</code> MBean to identify large indexes and returns:</p>
+    <ul>
+     <li>a Warning status if there is an index with more than 1 billion documents</li>
+     <li>a Critical status if there is an index with more than 1.5 billion documents</li>
+    </ul> <p>The thresholds are configurable and the MBean for the health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Note: </strong>This check is available with AEM 6.4 and has been backported to AEM 6.3.2.0.</p> </td>
+  </tr>
+  <tr>
+   <td>System Maintenance</td>
+   <td><p>System Maintenance is a composite check that returns the OK if all maintenance tasks are running as configured. Keep in mind that:</p>
+    <ul>
+     <li>each maintenance task is accompanied by an associated health check</li>
+     <li>if a task is not added to a maintenance window, its health check will return Critical</li>
+     <li>you need to configure the Audit Log and Workflow Purge maintenance tasks or otherwise remove them from the maintenance windows. If left unconfigured, these tasks will fail on the first attempted run, so the System Maintenance check will return the Critical status.</li>
+     <li><strong>With AEM 6.4</strong>, there is also a check for the <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene Binaries Maintenance</a> task</li>
+     <li>on AEM 6.2 and lower, the system maintenance check returns a Warning status right after startup because the tasks never run. Starting with 6.3, they will return OK if the first maintenance window wasn't reached yet.</li>
+    </ul> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Replication Queue</td>
+   <td><p>This check iterates over replication agents and looks at their queues. For the item at the top of the queue, the check looks at how many times the agent retried replication. If the agent retried replication more than the value of the <code>numberOfRetriesAllowed</code> parameter, it returns a warning. The <code>numberOfRetriesAllowed</code> parameter is configurable. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Sling Jobs</td>
+   <td>
     <div>
-      Sling Jobs checks the number of jobs queued in the JobManager, compares it to the 
-     <code>maxNumQueueJobs</code> threshold, and: 
-    </div> 
-    <ul> 
-     <li>returns Critical if more than the <code>maxNumQueueJobs</code> are in the queue</li> 
-     <li>returns Critical if there are long-running active jobs that are older than 1 hour</li> 
-     <li>returns Critical if there are queued jobs, and the last finished job time is older than 1 hour</li> 
-    </ul> <p>Only the maximum number of queued jobs parameter is configurable and it has the default value of 1000.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Request Performance</td> 
-   <td><p>This check looks at the <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling metric </a>and:</p> 
-    <ul> 
-     <li>returns Critical if the 75th percentile value is over the critical threshold (the default value is 500 milliseconds)</li> 
-     <li>returns Warn if the 75th percentile value is over the warn threshold (the default value is 200 milliseconds)</li> 
-    </ul> <p>The MBean for this health check is<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Log Errors</td> 
-   <td><p>This check returns the Warn status if there are errors in the log.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Disk Space</td> 
-   <td><p>The Disk Space check looks at the <code>FileStoreStats</code> MBean, retrieves the size of the Node Store and the amount of usable disk space on the Node Store partition, and:</p> 
-    <ul> 
-     <li>returns Warn if the usable disk space to repository size ratio is less than the warn threshold (the default value is 10)</li> 
-     <li>returns Critical if the usable disk space to repository size ratio is less than the critical threshold (the default value is 2)</li> 
-    </ul> <p>Both thresholds are configurable. The check only works on instances with a Segment Store.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Scheduler Health Check</td> 
-   <td><p>This check returns a warning if the instance has Quartz jobs running for more than 60 seconds. The acceptable duration threshold is configurable.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingCommonsSchedulerHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingCommonsSchedulerHealthCheck,type=HealthCheck</a><em>.</em></p> </td> 
-  </tr> 
-  <tr> 
-   <td>Security Checks</td> 
-   <td><p>The Security check is a composite which aggregates the results of multiple security-related checks. These individual health checks address different concerns from the security checklist available at the <a href="/help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> The check is useful as a security smoke test when the instance is started. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitych</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">ecks,type=HealthCheck</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>Active Bundles</td> 
-   <td><p>Active Bundles checks the state of all bundles and:</p> 
-    <ul> 
-     <li>returns the Warn status if any of the bundles is not active or (starting, with lazy activation)</li> 
-     <li>it ignores the status of bundles in the ignore list</li> 
-    </ul> <p>The ignore list parameter is configurable.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Code Cache Check</td> 
-   <td><p>This is a Health Check that verifies several JVM conditions that can trigger a CodeCache bug present in Java 7:</p> 
-    <ul> 
-     <li>returns Warn if the instance is running on Java 7, with Code Cache flushing enabled</li> 
-     <li>returns Warn if the instance is running on Java 7, and the Reserved Code Cache size is less than a minimum threshold (the default value is 90MB)</li> 
-    </ul> <p>The <code>minimum.code.cache.size</code> threshold is configurable. For more information about the bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">check</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> this page</a>.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Resource Search Path Errors</td> 
-   <td><p>Checks if there are any resources in the path <code>/apps/foundation/components/primary</code> and:</p> 
-    <ul> 
-     <li>returns Warn if there are child nodes under <code>/apps/foundation/components/primary</code></li> 
-    </ul> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td> 
-  </tr> 
- </tbody> 
+      Sling Jobs checks the number of jobs queued in the JobManager, compares it to the
+     <code>maxNumQueueJobs</code> threshold, and:
+    </div>
+    <ul>
+     <li>returns Critical if more than the <code>maxNumQueueJobs</code> are in the queue</li>
+     <li>returns Critical if there are long-running active jobs that are older than 1 hour</li>
+     <li>returns Critical if there are queued jobs, and the last finished job time is older than 1 hour</li>
+    </ul> <p>Only the maximum number of queued jobs parameter is configurable and it has the default value of 1000.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Request Performance</td>
+   <td><p>This check looks at the <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling metric </a>and:</p>
+    <ul>
+     <li>returns Critical if the 75th percentile value is over the critical threshold (the default value is 500 milliseconds)</li>
+     <li>returns Warn if the 75th percentile value is over the warn threshold (the default value is 200 milliseconds)</li>
+    </ul> <p>The MBean for this health check is<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Log Errors</td>
+   <td><p>This check returns the Warn status if there are errors in the log.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Disk Space</td>
+   <td><p>The Disk Space check looks at the <code>FileStoreStats</code> MBean, retrieves the size of the Node Store and the amount of usable disk space on the Node Store partition, and:</p>
+    <ul>
+     <li>returns Warn if the usable disk space to repository size ratio is less than the warn threshold (the default value is 10)</li>
+     <li>returns Critical if the usable disk space to repository size ratio is less than the critical threshold (the default value is 2)</li>
+    </ul> <p>Both thresholds are configurable. The check only works on instances with a Segment Store.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Scheduler Health Check</td>
+   <td><p>This check returns a warning if the instance has Quartz jobs running for more than 60 seconds. The acceptable duration threshold is configurable.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingCommonsSchedulerHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingCommonsSchedulerHealthCheck,type=HealthCheck</a><em>.</em></p> </td>
+  </tr>
+  <tr>
+   <td>Security Checks</td>
+   <td><p>The Security check is a composite which aggregates the results of multiple security-related checks. These individual health checks address different concerns from the security checklist available at the <a href="/help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> The check is useful as a security smoke test when the instance is started. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitych</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">ecks,type=HealthCheck</a></p> </td>
+  </tr>
+  <tr>
+   <td>Active Bundles</td>
+   <td><p>Active Bundles checks the state of all bundles and:</p>
+    <ul>
+     <li>returns the Warn status if any of the bundles is not active or (starting, with lazy activation)</li>
+     <li>it ignores the status of bundles in the ignore list</li>
+    </ul> <p>The ignore list parameter is configurable.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Code Cache Check</td>
+   <td><p>This is a Health Check that verifies several JVM conditions that can trigger a CodeCache bug present in Java 7:</p>
+    <ul>
+     <li>returns Warn if the instance is running on Java 7, with Code Cache flushing enabled</li>
+     <li>returns Warn if the instance is running on Java 7, and the Reserved Code Cache size is less than a minimum threshold (the default value is 90MB)</li>
+    </ul> <p>The <code>minimum.code.cache.size</code> threshold is configurable. For more information about the bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">check</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> this page</a>.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>Resource Search Path Errors</td>
+   <td><p>Checks if there are any resources in the path <code>/apps/foundation/components/primary</code> and:</p>
+    <ul>
+     <li>returns Warn if there are child nodes under <code>/apps/foundation/components/primary</code></li>
+    </ul> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Monitoring with Nagios {#monitoring-with-nagios}
@@ -362,11 +362,11 @@ The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans.
 
    ```xml
    define command{
-   
+
        command_name    check_http_json-int
-   
+
        command_line    /usr/lib/nagios/plugins/check_http_json --user "$ARG1$" --pass "$ARG2$" -u 'https://$HOSTNAME$:$ARG3$/$ARG4$' -e '$ARG5$' -w '$ARG6$' -c '$ARG7$'
-   
+
    }
    ```
 
@@ -374,15 +374,15 @@ The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans.
 
    ```xml
    define service {
-   
+
        use generic-service
-   
+
        host_name my.remote.host
-   
+
        service_description AEM Author Used Memory
-   
+
        check_command  check_http_json-int!<cq-user>!<cq-password>!<cq-port>!system/sling/monitoring/mbeans/java/lang/Memory.infinity.json!{noname}.mbean:attributes.HeapMemoryUsage.mbean:attributes.used.mbean:value!<warn-threshold-in-bytes>!<critical-threshold-in-bytes>
-   
+
        }
    ```
 
@@ -402,7 +402,7 @@ Amongst its most important features are:
 
 You can reach the Diagnosis Tools screen by going to **Tools - Operations - Diagnosis** from the AEM Welcome screen. You can also access the screen by directly accessing the following URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
-![chlimage_1-418](assets/chlimage_1-418.png) 
+![chlimage_1-418](assets/chlimage_1-418.png)
 
 ### Log Messages {#log-messages}
 
@@ -457,8 +457,8 @@ The Request Performance page allows the analysis of the slowest page requests pr
 
 The page displays:
 
-* The time when the request was made 
-* The URL and the method of request 
+* The time when the request was made
+* The URL and the method of request
 * The duration in milliseconds
 
 By default, the slowest 20 page requests are captured, but the limit can be modified in the Configuration Manager.
@@ -469,13 +469,13 @@ The Query Performance page allows the analysis of the slowest queries performed 
 
 The page displays:
 
-* The time when the query was made 
-* The language of the query 
-* The number of times the query was issued 
-* The statement of the query 
+* The time when the query was made
+* The language of the query
+* The number of times the query was issued
+* The statement of the query
 * The duration in milliseconds
 
-![chlimage_1-421](assets/chlimage_1-421.png) 
+![chlimage_1-421](assets/chlimage_1-421.png)
 
 ### Explain Query {#explain-query}
 
@@ -485,9 +485,9 @@ The Explain Query is a tool that explains how Oak is executing a query. It can b
 
 **Features**
 
-* Supports the Xpath, JCR-SQL and JCR-SQL2 query languages  
-* Reports the actual execution time of the provided query  
-* Detects slow queries and warns about queries that could be potentially slow  
+* Supports the Xpath, JCR-SQL and JCR-SQL2 query languages
+* Reports the actual execution time of the provided query
+* Detects slow queries and warns about queries that could be potentially slow
 * Reports the Oak index used to execute the query
 * Displays the actual Oak Query engine explanation
 * Provides click-to-load list of Slow and Popular queries
@@ -502,7 +502,7 @@ The second entry is the execution plan.
 
 Ticking the **Include execution time** box before running the query will also show the amount of time the query was executed in, allowing for more information that can be used for optimizing the indexes for your application or deployment.
 
-![chlimage_1-423](assets/chlimage_1-423.png) 
+![chlimage_1-423](assets/chlimage_1-423.png)
 
 ### The Index Manager {#the-index-manager}
 
@@ -522,7 +522,7 @@ This will trigger the download of a zip containing useful information about the 
 
 From this window you can select what to export (log files and or thread dumps) and the number of days of logs included in the download relative to the current date.
 
-![download_status_zip](assets/download_status_zip.png) 
+![download_status_zip](assets/download_status_zip.png)
 
 ### Download Thread Dump {#download-thread-dump}
 
@@ -628,45 +628,45 @@ You can schedule the Version Purge maintenance task to delete old versions autom
 
 Custom maintenance tasks can be implemented as OSGi services. As the maintenance task infrastructure is based on Apache Sling's job handling, a maintenance task must implement the java interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. In addition, it must declare several service registration properties to be detected as a maintenance task, as listed below:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Service Property Name</strong><br /> </td> 
-   <td><strong>Description</strong></td> 
-   <td><strong>Example</strong><br /> </td> 
-   <td><strong>Type</strong></td> 
-  </tr> 
-  <tr> 
-   <td>granite.maintenance.isStoppable</td> 
-   <td>Boolean attribute defining whether the task can be stopped by the user. If a task declares that it is stoppable it must check during its execution whether it has been stopped and then act accordingly. The default is false.</td> 
-   <td>true</td> 
-   <td>Optional</td> 
-  </tr> 
-  <tr> 
-   <td>granite.maintenance.mandatory</td> 
-   <td>Boolean attribute defining whether a task is mandatory and must be run periodically. If a task is mandatory but currently not in any active schedule window, a Health Check will report this as an error. The default is false.</td> 
-   <td>true</td> 
-   <td>Optional</td> 
-  </tr> 
-  <tr> 
-   <td>granite.maintenance.name</td> 
-   <td>A unique name for the task - this is used to reference the task. This is usally a simple name.</td> 
-   <td>MyMaintenanceTask</td> 
-   <td>Required</td> 
-  </tr> 
-  <tr> 
-   <td>granite.maintenance.title</td> 
-   <td>A title displayed for this task</td> 
-   <td>My Special Maintenance Task</td> 
-   <td>Required</td> 
-  </tr> 
-  <tr> 
-   <td>job.topics</td> 
-   <td>This is a unique topic of the maintenance task.<br /> The Apache Sling job handling will start a job with exactly this topic to execute the maintenance task and as the task is registered for this topic it gets executed.<br /> The topic must start with <i>com/adobe/granite/maintenance/job/</i></td> 
-   <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td> 
-   <td>Required</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Service Property Name</strong><br /> </td>
+   <td><strong>Description</strong></td>
+   <td><strong>Example</strong><br /> </td>
+   <td><strong>Type</strong></td>
+  </tr>
+  <tr>
+   <td>granite.maintenance.isStoppable</td>
+   <td>Boolean attribute defining whether the task can be stopped by the user. If a task declares that it is stoppable it must check during its execution whether it has been stopped and then act accordingly. The default is false.</td>
+   <td>true</td>
+   <td>Optional</td>
+  </tr>
+  <tr>
+   <td>granite.maintenance.mandatory</td>
+   <td>Boolean attribute defining whether a task is mandatory and must be run periodically. If a task is mandatory but currently not in any active schedule window, a Health Check will report this as an error. The default is false.</td>
+   <td>true</td>
+   <td>Optional</td>
+  </tr>
+  <tr>
+   <td>granite.maintenance.name</td>
+   <td>A unique name for the task - this is used to reference the task. This is usally a simple name.</td>
+   <td>MyMaintenanceTask</td>
+   <td>Required</td>
+  </tr>
+  <tr>
+   <td>granite.maintenance.title</td>
+   <td>A title displayed for this task</td>
+   <td>My Special Maintenance Task</td>
+   <td>Required</td>
+  </tr>
+  <tr>
+   <td>job.topics</td>
+   <td>This is a unique topic of the maintenance task.<br /> The Apache Sling job handling will start a job with exactly this topic to execute the maintenance task and as the task is registered for this topic it gets executed.<br /> The topic must start with <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
+   <td>Required</td>
+  </tr>
+ </tbody>
 </table>
 
 Apart from the above service properties, the `process()` method of the `JobConsumer` interface needs to be implemented by adding the code that should be executed for the maintance task. The provided `JobExecutionContext` can be used to output status information, check if the job is stopped by the user and create a result (success or failed).
@@ -677,12 +677,12 @@ Below is an example of a custom maintenance task that deletes files from a confi
 
 src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p> </p> <p><code>/*</code></p> <p><code> * #%L</code></p> <p><code> * sample-maintenance-task</code></p> <p><code> * %%</code></p> <p><code> * Copyright (C) 2014 Adobe</code></p> <p><code> * %%</code></p> <p><code> * Licensed under the Apache License, Version 2.0 (the "License");</code></p> <p><code> * you may not use this file except in compliance with the License.</code></p> <p><code> * You may obtain a copy of the License at</code></p> <p><code> * </code></p> <p><code> * <a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a></code></p> <p><code> * </code></p> <p><code> * Unless required by applicable law or agreed to in writing, software</code></p> <p><code> * distributed under the License is distributed on an "AS IS" BASIS,</code></p> <p><code> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</code></p> <p><code> * See the License for the specific language governing permissions and</code></p> <p><code> * limitations under the License.</code></p> <p><code> * #L%</code></p> <p><code> */</code></p> <p><code> </code></p> <p><code>package com.adobe.granite.samples.maintenance.impl;</code></p> <p><code> </code></p> <p><code>import java.io.File;</code></p> <p><code>import java.util.Calendar;</code></p> <p><code>import java.util.Collection;</code></p> <p><code>import java.util.Map;</code></p> <p><code> </code></p> <p><code>import org.apache.commons.io.FileUtils;</code></p> <p><code>import org.apache.commons.io.filefilter.IOFileFilter;</code></p> <p><code>import org.apache.commons.io.filefilter.TrueFileFilter;</code></p> <p><code>import org.apache.felix.scr.annotations.Activate;</code></p> <p><code>import org.apache.felix.scr.annotations.Component;</code></p> <p><code>import org.apache.felix.scr.annotations.Properties;</code></p> <p><code>import org.apache.felix.scr.annotations.Property;</code></p> <p><code>import org.apache.felix.scr.annotations.Service;</code></p> <p><code>import org.apache.sling.commons.osgi.PropertiesUtil;</code></p> <p><code>import org.apache.sling.event.jobs.Job;</code></p> <p><code>import org.apache.sling.event.jobs.consumer.JobConsumer;</code></p> <p><code>import org.apache.sling.event.jobs.consumer.JobExecutionContext;</code></p> <p><code>import org.apache.sling.event.jobs.consumer.JobExecutionResult;</code></p> <p><code>import org.apache.sling.event.jobs.consumer.JobExecutor;</code></p> <p><code>import org.slf4j.Logger;</code></p> <p><code>import org.slf4j.LoggerFactory;</code></p> <p><code> </code></p> <p><code>import com.adobe.granite.maintenance.MaintenanceConstants;</code></p> <p><code> </code></p> <p><code>@Component(metatype = true,</code></p> <p><code> label = "Delete Temp Files Maintenance Task",</code></p> <p><code> description = "Maintatence Task which deletes files from a configurable temporary directory which have been modified in the last 24 hours.")</code></p> <p><code>@Service</code></p> <p><code>@Properties({</code></p> <p><code> @Property(name = MaintenanceConstants.PROPERTY_TASK_NAME, value = "DeleteTempFilesTask", propertyPrivate = true),</code></p> <p><code> @Property(name = MaintenanceConstants.PROPERTY_TASK_TITLE, value = "Delete Temp Files", propertyPrivate = true),</code></p> <p><code> @Property(name = JobConsumer.PROPERTY_TOPICS, value = MaintenanceConstants.TASK_TOPIC_PREFIX</code></p> <p><code> + "DeleteTempFilesTask", propertyPrivate = true) })</code></p> <p><code>public class DeleteTempFilesTask implements JobExecutor {</code></p> <p><code> </code></p> <p><code> private static final Logger log = LoggerFactory.getLogger(DeleteTempFilesTask.class);</code></p> <p><code> </code></p> <p><code> @Property(label = "Temporary Directory", description="Temporary Directory. Defaults to the java.io.tmpdir system property.")</code></p> <p><code> private static final String PROP_TEMP_DIR = "temp.dir";</code></p> <p><code> </code></p> <p><code> private File tempDir;</code></p> <p><code> </code></p> <p><code> @Activate</code></p> <p><code> private void activate(Map&lt;string, object=""&gt; properties) {</code></p> <p><code> this.tempDir = new File(PropertiesUtil.toString(properties.get(PROP_TEMP_DIR),</code></p> <p><code> System.getProperty("java.io.tmpdir")));</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> @Override</code></p> <p><code> public JobExecutionResult process(Job job, JobExecutionContext context) {</code></p> <p><code> log.info("Deleting old temp files from {}.", tempDir.getAbsolutePath());</code></p> <p><code> Collection&lt;file&gt; files = FileUtils.listFiles(tempDir, new LastModifiedBeforeYesterdayFilter(),</code></p> <p><code> TrueFileFilter.INSTANCE);</code></p> <p><code> int counter = 0;</code></p> <p><code> for (File file : files) {</code></p> <p><code> log.debug("Deleting file {}.", file.getAbsolutePath());</code></p> <p><code> counter++;</code></p> <p><code> file.delete();</code></p> <p><code> // TODO - capture the output of delete() and do something useful with it</code></p> <p><code> }</code></p> <p><code> return context.result().message(String.format("Deleted %s files.", counter)).succeeded();</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> /**</code></p> <p><code> * IOFileFilter which filters out files which have been modified in the last 24 hours.</code></p> <p><code> *</code></p> <p><code> */</code></p> <p><code> private static class LastModifiedBeforeYesterdayFilter implements IOFileFilter {</code></p> <p><code> </code></p> <p><code> private final long minTime;</code></p> <p><code> </code></p> <p><code> private LastModifiedBeforeYesterdayFilter() {</code></p> <p><code> Calendar cal = Calendar.getInstance();</code></p> <p><code> cal.add(Calendar.DATE, -1);</code></p> <p><code> this.minTime = cal.getTimeInMillis();</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> @Override</code></p> <p><code> public boolean accept(File dir, String name) {</code></p> <p><code> // this method is never actually called.</code></p> <p><code> return false;</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> @Override</code></p> <p><code> public boolean accept(File file) {</code></p> <p><code> return file.lastModified() <= this.minTime;</code></p> <p><code> }</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code>}</code></p> <p><code>&lt;file&gt;&lt;/string,&gt;</code></p> <p> </p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p> </p> <p><code>/*</code></p> <p><code> * #%L</code></p> <p><code> * sample-maintenance-task</code></p> <p><code> * %%</code></p> <p><code> * Copyright (C) 2014 Adobe</code></p> <p><code> * %%</code></p> <p><code> * Licensed under the Apache License, Version 2.0 (the "License");</code></p> <p><code> * you may not use this file except in compliance with the License.</code></p> <p><code> * You may obtain a copy of the License at</code></p> <p><code> * </code></p> <p><code> * <a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a></code></p> <p><code> * </code></p> <p><code> * Unless required by applicable law or agreed to in writing, software</code></p> <p><code> * distributed under the License is distributed on an "AS IS" BASIS,</code></p> <p><code> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</code></p> <p><code> * See the License for the specific language governing permissions and</code></p> <p><code> * limitations under the License.</code></p> <p><code> * #L%</code></p> <p><code> */</code></p> <p><code> </code></p> <p><code>package com.adobe.granite.samples.maintenance.impl;</code></p> <p><code> </code></p> <p><code>import java.io.File;</code></p> <p><code>import java.util.Calendar;</code></p> <p><code>import java.util.Collection;</code></p> <p><code>import java.util.Map;</code></p> <p><code> </code></p> <p><code>import org.apache.commons.io.FileUtils;</code></p> <p><code>import org.apache.commons.io.filefilter.IOFileFilter;</code></p> <p><code>import org.apache.commons.io.filefilter.TrueFileFilter;</code></p> <p><code>import org.apache.felix.scr.annotations.Activate;</code></p> <p><code>import org.apache.felix.scr.annotations.Component;</code></p> <p><code>import org.apache.felix.scr.annotations.Properties;</code></p> <p><code>import org.apache.felix.scr.annotations.Property;</code></p> <p><code>import org.apache.felix.scr.annotations.Service;</code></p> <p><code>import org.apache.sling.commons.osgi.PropertiesUtil;</code></p> <p><code>import org.apache.sling.event.jobs.Job;</code></p> <p><code>import org.apache.sling.event.jobs.consumer.JobConsumer;</code></p> <p><code>import org.apache.sling.event.jobs.consumer.JobExecutionContext;</code></p> <p><code>import org.apache.sling.event.jobs.consumer.JobExecutionResult;</code></p> <p><code>import org.apache.sling.event.jobs.consumer.JobExecutor;</code></p> <p><code>import org.slf4j.Logger;</code></p> <p><code>import org.slf4j.LoggerFactory;</code></p> <p><code> </code></p> <p><code>import com.adobe.granite.maintenance.MaintenanceConstants;</code></p> <p><code> </code></p> <p><code>@Component(metatype = true,</code></p> <p><code> label = "Delete Temp Files Maintenance Task",</code></p> <p><code> description = "Maintatence Task which deletes files from a configurable temporary directory which have been modified in the last 24 hours.")</code></p> <p><code>@Service</code></p> <p><code>@Properties({</code></p> <p><code> @Property(name = MaintenanceConstants.PROPERTY_TASK_NAME, value = "DeleteTempFilesTask", propertyPrivate = true),</code></p> <p><code> @Property(name = MaintenanceConstants.PROPERTY_TASK_TITLE, value = "Delete Temp Files", propertyPrivate = true),</code></p> <p><code> @Property(name = JobConsumer.PROPERTY_TOPICS, value = MaintenanceConstants.TASK_TOPIC_PREFIX</code></p> <p><code> + "DeleteTempFilesTask", propertyPrivate = true) })</code></p> <p><code>public class DeleteTempFilesTask implements JobExecutor {</code></p> <p><code> </code></p> <p><code> private static final Logger log = LoggerFactory.getLogger(DeleteTempFilesTask.class);</code></p> <p><code> </code></p> <p><code> @Property(label = "Temporary Directory", description="Temporary Directory. Defaults to the java.io.tmpdir system property.")</code></p> <p><code> private static final String PROP_TEMP_DIR = "temp.dir";</code></p> <p><code> </code></p> <p><code> private File tempDir;</code></p> <p><code> </code></p> <p><code> @Activate</code></p> <p><code> private void activate(Map&lt;string, object=""&gt; properties) {</code></p> <p><code> this.tempDir = new File(PropertiesUtil.toString(properties.get(PROP_TEMP_DIR),</code></p> <p><code> System.getProperty("java.io.tmpdir")));</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> @Override</code></p> <p><code> public JobExecutionResult process(Job job, JobExecutionContext context) {</code></p> <p><code> log.info("Deleting old temp files from {}.", tempDir.getAbsolutePath());</code></p> <p><code> Collection&lt;file&gt; files = FileUtils.listFiles(tempDir, new LastModifiedBeforeYesterdayFilter(),</code></p> <p><code> TrueFileFilter.INSTANCE);</code></p> <p><code> int counter = 0;</code></p> <p><code> for (File file : files) {</code></p> <p><code> log.debug("Deleting file {}.", file.getAbsolutePath());</code></p> <p><code> counter++;</code></p> <p><code> file.delete();</code></p> <p><code> // TODO - capture the output of delete() and do something useful with it</code></p> <p><code> }</code></p> <p><code> return context.result().message(String.format("Deleted %s files.", counter)).succeeded();</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> /**</code></p> <p><code> * IOFileFilter which filters out files which have been modified in the last 24 hours.</code></p> <p><code> *</code></p> <p><code> */</code></p> <p><code> private static class LastModifiedBeforeYesterdayFilter implements IOFileFilter {</code></p> <p><code> </code></p> <p><code> private final long minTime;</code></p> <p><code> </code></p> <p><code> private LastModifiedBeforeYesterdayFilter() {</code></p> <p><code> Calendar cal = Calendar.getInstance();</code></p> <p><code> cal.add(Calendar.DATE, -1);</code></p> <p><code> this.minTime = cal.getTimeInMillis();</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> @Override</code></p> <p><code> public boolean accept(File dir, String name) {</code></p> <p><code> // this method is never actually called.</code></p> <p><code> return false;</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> @Override</code></p> <p><code> public boolean accept(File file) {</code></p> <p><code> return file.lastModified() <= this.minTime;</code></p> <p><code> }</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code>}</code></p> <p><code>&lt;file&gt;&lt;/string,&gt;</code></p> <p> </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 [experiencemanager-java-maintenancetask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
@@ -705,7 +705,7 @@ The **System Overview Dashboard** displays a high-level overview of the configur
 
 To access the System Overview Dashboard, navigate to **Tools &gt; Operations &gt; System Overview**.
 
-![system_overview_dashboard](assets/system_overview_dashboard.png) 
+![system_overview_dashboard](assets/system_overview_dashboard.png)
 
 ### System Overview Dashboard Explained {#system-overview-dashboard-explained}
 
@@ -713,198 +713,198 @@ The table below, describes all the informations displayed in the System Overview
 
 You can also download a `JSON` file summarizing the dashboard information by clicking the **Download** button in the upper right-hand corner of the dashboard.The `JSON` endpoint is `/libs/granite/operations/content/systemoverview/export.json` and it can be used in a `curl` script for external monitoring.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Section</strong></td> 
-   <td><strong>What information is displayed</strong></td> 
-   <td><strong>When is it critical</strong></td> 
-   <td><strong>Links To</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Health Checks</td> 
-   <td> 
-    <ul> 
-     <li>a list of checks that are in Critical status</li> 
-     <li>a list of checks that are in Warn status</li> 
-    </ul> </td> 
-   <td>Indicated visually:<br /> 
-    <ul> 
-     <li>a red tag for Critical checks</li> 
-     <li>an orange tag for Warn checks</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Health Reports page</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Maintenance Tasks</td> 
-   <td> 
-    <ul> 
-     <li>a list of tasks that failed</li> 
-     <li>a list of tasks that are currently running</li> 
-     <li>a list of tasks that have succeeded in the last run</li> 
-     <li>a list of tasks that have never run</li> 
-     <li>a list of tasks that are not scheduled</li> 
-    </ul> </td> 
-   <td><p>Indicated visually:</p> 
-    <ul> 
-     <li>a red tag for failed tasks</li> 
-     <li>an orange tag for running tasks (as they might impact performance)</li> 
-     <li>grey tags for every other status</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>Maintenance Tasks page</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>System</td> 
-   <td> 
-    <ul> 
-     <li>operating system and OS version (for example, Mac OS X)</li> 
-     <li>system load average, as retrieved from <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li> 
-     <li>disk space (on the partition where the home directory is located)</li> 
-     <li>maximum heap, as returned by <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li> 
-    </ul> </td> 
-   <td>N/A</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Instance</td> 
-   <td> 
-    <ul> 
-     <li>the AEM version</li> 
-     <li>list of run modes</li> 
-     <li>the date when the instance was started</li> 
-    </ul> </td> 
-   <td>N/A</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Repository</td> 
-   <td> 
-    <ul> 
-     <li>the Oak version</li> 
-     <li>type of node store (Segment Tar or Document) 
-      <ul> 
-       <li>if the type is document, the type of document store is displayed (RDB or Mongo)</li> 
-      </ul> </li> 
-     <li>if there is a custom data store: 
-      <ul> 
-       <li>for a File Data Store, the path is displayed</li> 
-       <li>for an S3 Data store, the name of the S3 bucket is displayed</li> 
-       <li>for a Shared S3 Data store, the name of the S3 bucket is displayed</li> 
-       <li>for an Azure Data Store, the container is displayed</li> 
-      </ul> </li> 
-     <li>if there is no custom external datastore, a message indicating this fact is displayed</li> 
-    </ul> </td> 
-   <td>N/A</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Distribution Agents</td> 
-   <td> 
-    <ul> 
-     <li>a list of agents with blocked queues</li> 
-     <li>a list of misconfigured agents ("Configuration Error")</li> 
-     <li>a list of agents with queue processing paused</li> 
-     <li>a list of idle agents</li> 
-     <li>a list of running agents (that are currently processing entries)</li> 
-    </ul> </td> 
-   <td><p>Indicated visually:</p> 
-    <ul> 
-     <li>a red tag for blocked agents or configuration errors</li> 
-     <li>an orange tag for paused agents</li> 
-     <li>a grey tag for paused, idle or running agents<br /> </li> 
-    </ul> </td> 
-   <td>Distribution page<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Replication Agents</td> 
-   <td> 
-    <ul> 
-     <li>a list of agents with blocked queues</li> 
-     <li>a list of idle agents</li> 
-     <li>a list of running agents (that are currently processing entries)</li> 
-    </ul> </td> 
-   <td><p>Indicated visually:<br /> </p> 
-    <ul> 
-     <li>a red tag for blocked agents</li> 
-     <li>a grey tag for paused agents</li> 
-    </ul> </td> 
-   <td>Replication page</td> 
-  </tr> 
-  <tr> 
-   <td>Workflows</td> 
-   <td> 
-    <ul> 
-     <li>Workflow Jobs: 
-      <ul> 
-       <li>number of failed workflow jobs (if any)</li> 
-       <li>number of canceled workflow jobs (if any)</li> 
-      </ul> </li> 
-    </ul> 
-    <ul> 
-     <li>Workflow Counts - number of workflows in a given status (if any): 
-      <ul> 
-       <li>running</li> 
-       <li>failed</li> 
-       <li>suspended</li> 
-       <li>aborted</li> 
-      </ul> </li> 
-    </ul> <p>For each of the statuses presented above a query is performed, with a limit of 400 milliseconds. At 400 milliseconds, the number of entries obtained up to that point is displayed.</p> </td> 
-   <td><p>Not interpreted:</p> 
-    <ul> 
-     <li>the user should investigate when there are workflows and jobs in unexpected statuses.</li> 
-    </ul> </td> 
-   <td>Workflow Failures page</td> 
-  </tr> 
-  <tr> 
-   <td>Sling Jobs</td> 
-   <td><p>Sling job counts - number of jobs in a given status (if any):</p> 
-    <ul> 
-     <li>failed</li> 
-     <li>queued</li> 
-     <li>canceled</li> 
-     <li>active</li> 
-    </ul> </td> 
-   <td><p>Not interpreted:</p> 
-    <ul> 
-     <li>the user should investigate when there are jobs in unexpected statuses or with high counts.</li> 
-    </ul> </td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Estimated Node Counts</td> 
-   <td><p>Estimated number of:</p> 
-    <ul> 
-     <li>pages</li> 
-     <li>assets</li> 
-     <li>tags</li> 
-     <li>authorizables</li> 
-     <li>total number of nodes<br /> </li> 
-    </ul> <p>The total number of nodes is obtained from the nodeCounterMBean, while the rest of the statistics are obtained from IndexInfoService.</p> </td> 
-   <td>N/A</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Backup</td> 
-   <td>Displays "Online Backup in Progress" if this is the case.</td> 
-   <td>N/A</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>Indexing</td> 
-   <td><p>Displays:</p> 
-    <ul> 
-     <li>"Indexing in progress"</li> 
-     <li>"Query in progress"</li> 
-    </ul> <p>If an indexing or query thread is present in the thread dump.</p> </td> 
-   <td>N/A</td> 
-   <td>N/A</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Section</strong></td>
+   <td><strong>What information is displayed</strong></td>
+   <td><strong>When is it critical</strong></td>
+   <td><strong>Links To</strong></td>
+  </tr>
+  <tr>
+   <td>Health Checks</td>
+   <td>
+    <ul>
+     <li>a list of checks that are in Critical status</li>
+     <li>a list of checks that are in Warn status</li>
+    </ul> </td>
+   <td>Indicated visually:<br />
+    <ul>
+     <li>a red tag for Critical checks</li>
+     <li>an orange tag for Warn checks</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Health Reports page</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Maintenance Tasks</td>
+   <td>
+    <ul>
+     <li>a list of tasks that failed</li>
+     <li>a list of tasks that are currently running</li>
+     <li>a list of tasks that have succeeded in the last run</li>
+     <li>a list of tasks that have never run</li>
+     <li>a list of tasks that are not scheduled</li>
+    </ul> </td>
+   <td><p>Indicated visually:</p>
+    <ul>
+     <li>a red tag for failed tasks</li>
+     <li>an orange tag for running tasks (as they might impact performance)</li>
+     <li>grey tags for every other status</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>Maintenance Tasks page</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>System</td>
+   <td>
+    <ul>
+     <li>operating system and OS version (for example, Mac OS X)</li>
+     <li>system load average, as retrieved from <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
+     <li>disk space (on the partition where the home directory is located)</li>
+     <li>maximum heap, as returned by <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
+    </ul> </td>
+   <td>N/A</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>Instance</td>
+   <td>
+    <ul>
+     <li>the AEM version</li>
+     <li>list of run modes</li>
+     <li>the date when the instance was started</li>
+    </ul> </td>
+   <td>N/A</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>Repository</td>
+   <td>
+    <ul>
+     <li>the Oak version</li>
+     <li>type of node store (Segment Tar or Document)
+      <ul>
+       <li>if the type is document, the type of document store is displayed (RDB or Mongo)</li>
+      </ul> </li>
+     <li>if there is a custom data store:
+      <ul>
+       <li>for a File Data Store, the path is displayed</li>
+       <li>for an S3 Data store, the name of the S3 bucket is displayed</li>
+       <li>for a Shared S3 Data store, the name of the S3 bucket is displayed</li>
+       <li>for an Azure Data Store, the container is displayed</li>
+      </ul> </li>
+     <li>if there is no custom external datastore, a message indicating this fact is displayed</li>
+    </ul> </td>
+   <td>N/A</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>Distribution Agents</td>
+   <td>
+    <ul>
+     <li>a list of agents with blocked queues</li>
+     <li>a list of misconfigured agents ("Configuration Error")</li>
+     <li>a list of agents with queue processing paused</li>
+     <li>a list of idle agents</li>
+     <li>a list of running agents (that are currently processing entries)</li>
+    </ul> </td>
+   <td><p>Indicated visually:</p>
+    <ul>
+     <li>a red tag for blocked agents or configuration errors</li>
+     <li>an orange tag for paused agents</li>
+     <li>a grey tag for paused, idle or running agents<br /> </li>
+    </ul> </td>
+   <td>Distribution page<br /> </td>
+  </tr>
+  <tr>
+   <td>Replication Agents</td>
+   <td>
+    <ul>
+     <li>a list of agents with blocked queues</li>
+     <li>a list of idle agents</li>
+     <li>a list of running agents (that are currently processing entries)</li>
+    </ul> </td>
+   <td><p>Indicated visually:<br /> </p>
+    <ul>
+     <li>a red tag for blocked agents</li>
+     <li>a grey tag for paused agents</li>
+    </ul> </td>
+   <td>Replication page</td>
+  </tr>
+  <tr>
+   <td>Workflows</td>
+   <td>
+    <ul>
+     <li>Workflow Jobs:
+      <ul>
+       <li>number of failed workflow jobs (if any)</li>
+       <li>number of canceled workflow jobs (if any)</li>
+      </ul> </li>
+    </ul>
+    <ul>
+     <li>Workflow Counts - number of workflows in a given status (if any):
+      <ul>
+       <li>running</li>
+       <li>failed</li>
+       <li>suspended</li>
+       <li>aborted</li>
+      </ul> </li>
+    </ul> <p>For each of the statuses presented above a query is performed, with a limit of 400 milliseconds. At 400 milliseconds, the number of entries obtained up to that point is displayed.</p> </td>
+   <td><p>Not interpreted:</p>
+    <ul>
+     <li>the user should investigate when there are workflows and jobs in unexpected statuses.</li>
+    </ul> </td>
+   <td>Workflow Failures page</td>
+  </tr>
+  <tr>
+   <td>Sling Jobs</td>
+   <td><p>Sling job counts - number of jobs in a given status (if any):</p>
+    <ul>
+     <li>failed</li>
+     <li>queued</li>
+     <li>canceled</li>
+     <li>active</li>
+    </ul> </td>
+   <td><p>Not interpreted:</p>
+    <ul>
+     <li>the user should investigate when there are jobs in unexpected statuses or with high counts.</li>
+    </ul> </td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>Estimated Node Counts</td>
+   <td><p>Estimated number of:</p>
+    <ul>
+     <li>pages</li>
+     <li>assets</li>
+     <li>tags</li>
+     <li>authorizables</li>
+     <li>total number of nodes<br /> </li>
+    </ul> <p>The total number of nodes is obtained from the nodeCounterMBean, while the rest of the statistics are obtained from IndexInfoService.</p> </td>
+   <td>N/A</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>Backup</td>
+   <td>Displays "Online Backup in Progress" if this is the case.</td>
+   <td>N/A</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>Indexing</td>
+   <td><p>Displays:</p>
+    <ul>
+     <li>"Indexing in progress"</li>
+     <li>"Query in progress"</li>
+    </ul> <p>If an indexing or query thread is present in the thread dump.</p> </td>
+   <td>N/A</td>
+   <td>N/A</td>
+  </tr>
+ </tbody>
 </table>
 

@@ -5,7 +5,7 @@ description: Using IntelliJ IDEA to develop AEM projects
 seo-description: Using IntelliJ IDEA to develop AEM projects
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
@@ -141,7 +141,7 @@ You are now all set up for debugging your JSPs in AEM.
 1. Set breakpoints in your component code
 1. Access a page in your browser
 
-![chlimage_1-52](assets/chlimage_1-52.png) 
+![chlimage_1-52](assets/chlimage_1-52.png)
 
 ### Debugging Bundles with IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 

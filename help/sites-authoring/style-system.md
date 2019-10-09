@@ -4,7 +4,7 @@ seo-title: Style System
 description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 seo-description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 uuid: 0d857650-8738-49e6-b431-f69c088be74f
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
@@ -35,13 +35,13 @@ Using the style system generally takes the following form.
 
 1. The web designer creates different visual variations of a component.
 
-1. The HTML developer is provided with the HTML output of the components and the desired visual variations to implement.  
+1. The HTML developer is provided with the HTML output of the components and the desired visual variations to implement.
 
-1. The HTML developer defines the CSS classes that correspond to each visual variation and are to be inserted on the element wrapping the components.  
+1. The HTML developer defines the CSS classes that correspond to each visual variation and are to be inserted on the element wrapping the components.
 
 1. The HTML developer implements the corresponding CSS code (and optionally JS code) for each of the visual variations so that they look as defined.
 
-1. The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.  
+1. The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.
 
 1. The AEM developer or template author configures the page templates and edits the policy of each styled component, adding the defined CSS classes, giving user-friendly names to each style, and indicating which styles can be combined.
 
@@ -53,7 +53,7 @@ Actually implementing the styles only requires deployment on AEM and selection w
 
 The following diagram illustrates the architecture of the style system.
 
-![aem-style-system](assets/aem-style-system.png) 
+![aem-style-system](assets/aem-style-system.png)
 
 ## Use {#use}
 
@@ -63,7 +63,7 @@ Download the [style system demo package](assets/package_-_style_systemdemo.zip)
 
 >[!NOTE]
 >
->The demo package is intended to show how the style system can be used by authors, rather than as a reference of how to best implement it. 
+>The demo package is intended to show how the style system can be used by authors, rather than as a reference of how to best implement it.
 >
 >This package will be needed only until We.Retail provides a built-in example and best practice implementation.
 

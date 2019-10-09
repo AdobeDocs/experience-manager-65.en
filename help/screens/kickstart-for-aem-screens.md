@@ -7,7 +7,7 @@ uuid: 73fff2f2-c926-4435-8ab2-891771c843aa
 contentOwner: Jyotika syal
 content-type: reference
 topic-tags: introduction
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: 9e03f35e-284b-43d8-b095-c94800e2e9b3
 ---
 
@@ -38,7 +38,7 @@ The following steps allow you to create a sample project for Screens and publish
    >1. Navigate to [Adobe Experience Manager Web Console Configuration](http://localhost:4502/system/console/configMgr/org.apache.sling.security.impl.ReferrerFilter).
    >1. Check the **allow.empty** option.
    >1. Click **Save**.
-   >    
+   >
    >To learn more about the preceding steps in details, refer to the ***Prerequisites*** section in [Configuring and Deploying AEM Screens](configuring-screens-introduction.md).
 
 1. **Creating a new project**
@@ -105,7 +105,7 @@ The following steps allow you to create a sample project for Screens and publish
    Follow the steps below to create a new location for your project:
 
     1. Navigate to the *Test_Project* you created and select the **Locations** folder.
-    1. Click **Create** next to the plus icon in the action bar (see the figure below). A wizard will open. 
+    1. Click **Create** next to the plus icon in the action bar (see the figure below). A wizard will open.
     1. Select **Location** from the wizard and click **Next**.
     1. Enter the **Name** and **Title** for your location (enter the title as *TestLocation*) and click **Create**.
 
@@ -122,7 +122,7 @@ The following steps allow you to create a sample project for Screens and publish
    ***Displays*** represent the digital experience that run on one or multiple screens.
 
     1. Navigate to the location where you want to create your display (*Test_Projec*t --&gt; **Locations** --&gt; *TestLocation)* as shown in the figure above and selct *TestLocation*.
-    1. Click** Create **from the action bar. 
+    1. Click** Create **from the action bar.
     1. Select **Display** from the **Create** wizard and click **Next**.
     1. Enter **Title** for your display location (enter the title as *TestDisplay*).
     1. Click **Create**.
@@ -159,7 +159,7 @@ The following steps allow you to create a sample project for Screens and publish
     1. Select *TestDisplay* and tap/click **Assign Channel **from the action bar, *Or*,
     1. Click **Dashboard** and select **+Assign Channel** at the top right from **ASSIGNED CHANNELS & SCHEDULES** panel, as shown in the figure below. **Channel Assignment** dialog box opens.
     1. Select **Reference Channel** by **path**.
-    1. Select the **Channel Path** (*Test_Project* --&gt; *Channels* --&gt; *TestChannel* ) in the **Channel**. The **Channel Role** will be automatically populated with the channel name. 
+    1. Select the **Channel Path** (*Test_Project* --&gt; *Channels* --&gt; *TestChannel* ) in the **Channel**. The **Channel Role** will be automatically populated with the channel name.
     1. Select the **Priority** for this channel as *1*.
     1. Choose the **Supported Events** as **Initial Load** and **Idle Screen**.
     1. Enter **Schedule** and select the dates in **active from** and **active until**. *(You need to fill these fields only if you want the channel to display for a particular interval of time.)*
@@ -191,7 +191,7 @@ The following steps allow you to create a sample project for Screens and publish
    To view the pending device:
 
     1. Launch a separate browser window.
-    1. Go to Screens player using the [web browser](http://localhost:4502/content/mobileapps/cq-screens-player/firmware.html) or launch the AEM Screens app. When you open the device you will notice the device's state as unregistered. 
+    1. Go to Screens player using the [web browser](http://localhost:4502/content/mobileapps/cq-screens-player/firmware.html) or launch the AEM Screens app. When you open the device you will notice the device's state as unregistered.
     1. From the AEM dashboard, navigate to *Test_Project* --&gt; **Devices**
     1. Click **Device Manager** from the action bar.
     1. Click **Device Registration** and you will see the pending devices, as shown in the figure below.
@@ -265,6 +265,6 @@ For in-depth understanding for all the modules for Screens, see the resources be
 1. [Assign Channels](channel-assignment.md)
 1. [Manage Devices](managing-devices.md)
 1. [Create and Manage Schedules](managing-schedules.md)
-1. [AEM Screens Player](working-with-screens-player.md)  
+1. [AEM Screens Player](working-with-screens-player.md)
 1. [Troubleshoot Device Control Center](monitoring-screens.md)
 

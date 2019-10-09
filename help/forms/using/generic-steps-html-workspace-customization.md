@@ -6,7 +6,7 @@ seo-description: How to get started customizing AEM Forms workspace user interfa
 uuid: 555b5039-cd68-4090-8a8f-30b654474f55
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 ---

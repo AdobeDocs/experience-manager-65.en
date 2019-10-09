@@ -1,11 +1,11 @@
 ---
 title: Using Rulesets to Transform URLs
 seo-title: Using Rulesets to Transform URLs
-description: You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript) that evaluate XML data and take certain actions if that data meets certain conditions. 
-seo-description: You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript) that evaluate XML data and take certain actions if that data meets certain conditions. 
+description: You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript) that evaluate XML data and take certain actions if that data meets certain conditions.
+seo-description: You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript) that evaluate XML data and take certain actions if that data meets certain conditions.
 uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
@@ -16,18 +16,18 @@ discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript) that evaluate XML data and take certain actions if that data meets certain conditions. Each rule consists of at least one condition and at least one action. A rule evaluates the XML data against the conditions, and if a condition is met, then it takes the appropriate action. Examples of rule sets include the following:
 
 * Adding a MIME type suffix. Many services and websites require image suffixes, such as adding `.jpg` to a URL.
-* Creating a folder path to the URL for SEO (Search Engine Optimization) purposes. 
+* Creating a folder path to the URL for SEO (Search Engine Optimization) purposes.
 
-  See [How Adobe Scene7 Publishing System Supports SEO](https://marketing.adobe.com/resources/help/en_US/s7/s7_seo.pdf).  
+  See [How Adobe Scene7 Publishing System Supports SEO](https://marketing.adobe.com/resources/help/en_US/s7/s7_seo.pdf).
 
-* Adding metadata to the URL for SEO (Search Engine Optimization) purposes. 
+* Adding metadata to the URL for SEO (Search Engine Optimization) purposes.
 
-  See [How Adobe Scene7 Publishing System Supports SEO](https://marketing.adobe.com/resources/help/en_US/s7/s7_seo.pdf).  
+  See [How Adobe Scene7 Publishing System Supports SEO](https://marketing.adobe.com/resources/help/en_US/s7/s7_seo.pdf).
 
 * Setting the content disposition to trigger a download.
 * Simplify Image Serving templating URLs for personalization. For example, turn `rgb{XX,YY,ZZ}` into the RTF-ready `\redXX\greenYY\blueZZ`
 
-* Request certain characters to be encoded such as `$`, `{`, and `}`, and certain characters to be decoded toward ImageServer. For example, Facebook does not work well with URLs containing special characters.  
+* Request certain characters to be encoded such as `$`, `{`, and `}`, and certain characters to be decoded toward ImageServer. For example, Facebook does not work well with URLs containing special characters.
 
   See [Removing special characters from URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
@@ -37,13 +37,13 @@ In the context of Dynamic Media, websites that use an XML-based system to manage
 >
 >Use caution when using rulesets; they can prevent Dynamic Media content from being displayed on your website.
 
-There are sample rulesets available that can help you create your own ruleset.  
+There are sample rulesets available that can help you create your own ruleset.
 See [Rule set reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html).
 
-As with all rule set creation, ensure that your XML file is valid before you upload it by using an XML validator program such as xmlvalid.  
+As with all rule set creation, ensure that your XML file is valid before you upload it by using an XML validator program such as xmlvalid.
 See also [Troubleshooting rule sets](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
 
-Also, make sure you first test your rule set in a staging environment that does not impact your live production environment.  
+Also, make sure you first test your rule set in a staging environment that does not impact your live production environment.
 Production environments and staging environments typically require different logins.
 
 * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)

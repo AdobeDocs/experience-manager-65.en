@@ -7,7 +7,7 @@ uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 ---
 
@@ -29,7 +29,7 @@ You can use the PDF Generator web pages to convert files.
     * If you are using custom settings, select an Adobe PDF setting, security setting, and file type setting and specify a time out.
 
       The Adobe PDF settings are applicable only to PS-to-PDF, EPS-to-PDF, PRN-to-PDF, Image-to-PDF with OCR on, and Native-to-PDF conversions. The time-out setting specifies the maximum time the conversion takes to complete. The default is 270 seconds. These settings are not used during Image-to-PDF and OpenOffice-to-PDF conversions.
-    
+
     * If you are uploading a settings file, type its path and name in the box, or click Browse to find and select the file.
 
 1. (Optional) Under XMP Metadata File, type the path and name of the XMP file, or click Browse to find and select the file. An XMP file can be used to include standard metadata information. (See [About XMP files](converting-files-using-pdf-generator.md#about-xmp-files).)
@@ -50,7 +50,7 @@ You can create XMP files in Acrobat.
 
 You can use PDF Generator to convert the following types of files to Adobe PDF:
 
-* HTML files, which you can convert by uploading an HTML file or by specifying the URL of a web page or website. 
+* HTML files, which you can convert by uploading an HTML file or by specifying the URL of a web page or website.
 * Archived files (ZIP), which can contain HTML files, image files, or both.
 
 If the ZIP file contains more than one HTML file at the lowest level of its folder hierarchy, the ZIP file must also contain an index.htm or index.html file.
@@ -76,7 +76,7 @@ If the ZIP file contains more than one HTML file at the lowest level of its fold
     * To use custom settings, select Use Custom Settings, specify the security and file type settings, and specify a time-out value. The default value is 270 seconds.
 
       ***Note**: If you configured the Generate PDF service to use Acrobat WebCapture, the File Type Settings that you select on this page do not affect the PDF produced. Instead, make the appropriate changes to the version of Acrobat that is installed on the server. *
-    
+
     * To use an existing settings file, select Upload Settings File and click Browse to go to the file location.
 
 1. To upload an XMP file, click Browse and go to the file location. An XMP file can be used to include standard metadata information. (See [About XMP files](converting-files-using-pdf-generator.md#about-xmp-files).)
@@ -94,7 +94,7 @@ You can export PDF files to various file formats, as described in the Generate P
 
    The Conversion Time that is displayed when the file is converted may be larger than the value you specify here. The Conversion Time includes the time spent waiting for the thread or process, time taken to convert the file, and the time taken by the fallback converter (if applicable). time. The Specify a Timeout value is just the time taken to convert the file.
 
-1. (Optional) In the **Specify custom Preflight profile** option, click Browse, and select a [custom Preflight profile](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight profiles are only used while converting documents to PDF archive (PDF/A) format. 
+1. (Optional) In the **Specify custom Preflight profile** option, click Browse, and select a [custom Preflight profile](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight profiles are only used while converting documents to PDF archive (PDF/A) format.
 1. Click Export. When the conversion is complete, a link to the exported file appears.
 1. Click the link to view the converted file.
 

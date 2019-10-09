@@ -5,7 +5,7 @@ description: Add enablement resources
 seo-description: Add enablement resources
 uuid: da940242-0c9b-4ad8-8880-61fd41461c3b
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
@@ -21,14 +21,14 @@ To add an enablement resource to the new community site:
     * For example, [http://localhost:4502/](http://localhost:4503/)
 * Sign in as a system administrator
 * From global navigation, select **Communities > [Resources](resources.md)**
-![chlimage_1-199](assets/chlimage_1-199.png) 
+![chlimage_1-199](assets/chlimage_1-199.png)
 ![chlimage_1-200](assets/chlimage_1-200.png)
 * Select the community site to which enablement resources are being added
     * Select `Enablement Tutorial`
 * From the menu, select ` Create`
 * Select **[!UICONTROL Resource]**
 
-![chlimage_1-201](assets/chlimage_1-201.png) 
+![chlimage_1-201](assets/chlimage_1-201.png)
 
 ### Basic Info {#basic-info}
 
@@ -60,15 +60,15 @@ Upload a Resource. If a video resource, either upload a custom image to display 
 
 ### Settings {#settings}
 
-* **[!UICONTROL Social Settings]** 
+* **[!UICONTROL Social Settings]**
   Leave default settings to experience commenting and rating of enablement resources by learners.
-* **[!UICONTROL Due Date]** 
+* **[!UICONTROL Due Date]**
   *(Optional)* A date by which the assignment should be completed may be selected.
-* **[!UICONTROL Resource Author]** 
+* **[!UICONTROL Resource Author]**
   *(Optional)* Leave blank.
-* **[!UICONTROL Resource Contact&ast;]** 
+* **[!UICONTROL Resource Contact&ast;]**
   *(Required)* Use the pulldown menu to select member `Quinn Harper`.
-* **[!UICONTROL Resource Expert]** 
+* **[!UICONTROL Resource Expert]**
   *(Optional)* Leave blank.
 **Note**: if users or groups are not visible, check that they were added to the `Community Enable Members` group and *Saved* on the publish instance.
 ![chlimage_1-206](assets/chlimage_1-206.png)
@@ -76,7 +76,7 @@ Upload a Resource. If a video resource, either upload a custom image to display 
 
 ### Assignments {#assignments}
 
-* **[!UICONTROL Add Assignees]** 
+* **[!UICONTROL Add Assignees]**
   Leave unset as this enablement resource will be added to a learning path. If a learner is assigned to the individual enablement resource as well as a learningpPath containing the enablement resource, the learner will be assigned to the enablement resource twice.
 
 ![chlimage_1-207](assets/chlimage_1-207.png)
@@ -97,7 +97,7 @@ Before Enrollees are able to see the assigned Resourse, it must be published:
 
 Activation is confirmed with a success message:
 
-![chlimage_1-209](assets/chlimage_1-209.png) 
+![chlimage_1-209](assets/chlimage_1-209.png)
 
 ## Add a Second Enablement Resource {#add-a-second-enablement-resource}
 
@@ -111,7 +111,7 @@ Return to the Enablement Tutorial listing of it's Resources.
 
 *Hint: if both Resources are not visible, refresh the page.*
 
-![chlimage_1-211](assets/chlimage_1-211.png) 
+![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Add a Learning Path {#add-a-learning-path}
 
@@ -155,10 +155,10 @@ On the Add Resources panel
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
-* **[!UICONTROL Add Assignees]** 
+* **[!UICONTROL Add Assignees]**
   Use the pulldown menu to select the `Community Ski Class` group, which should included members `Riley Taylor` and `Sidney Croft.`
 
-* **[!UICONTROL Learning Path Contact&ast;]** 
+* **[!UICONTROL Learning Path Contact&ast;]**
   *(Required)* Use the pulldown menu to select member `Quinn Harper`.
 
 * Select **[!UICONTROL Create]**

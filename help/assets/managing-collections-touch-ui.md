@@ -5,7 +5,7 @@ description: Understand the concept of collection in AEM Assets. Learn how to co
 seo-description: Understand the concept of collection in AEM Assets and learn how you can share collections with other users.
 uuid: bc760801-8b6e-4b99-9861-c1439bb3576f
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: authoring
 discoiquuid: 974ef0f7-1a3f-480b-b314-b9dbc9115af9
@@ -24,7 +24,7 @@ You can share multiple collections with a user. Each collection contains referen
 
 Collections are of the following types, based on the way they collate assets:
 
-* A collection that contains a **static reference list** of assets, folders, and other collections  
+* A collection that contains a **static reference list** of assets, folders, and other collections
 
 * A **Smart collection** that dynamically includes assets based on a search criteria
 
@@ -87,7 +87,7 @@ You can drag assets from the Assets UI to a collection. You can also create a co
 
 ### Creating a smart collection {#creating-a-smart-collection}
 
-A Smart Collection uses a search criteria to dynamically populate assets. You can create a Smart Collection using only files and not folders or files and folders. 
+A Smart Collection uses a search criteria to dynamically populate assets. You can create a Smart Collection using only files and not folders or files and folders.
 
 To create a smart collection, follow the steps:
 
@@ -148,7 +148,7 @@ Smart collections are built by saving a search so you can alter their content by
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. With the cursor in the Omni Search box, press the Return key. 
+1. With the cursor in the Omni Search box, press the Return key.
 1. Tap/click the GlobalNav icon to display the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, select the smart collection you want to modify. The Search panel displays the filters configured for the saved search.
 
@@ -254,7 +254,7 @@ You can add a collection to another collection, thereby creating a nested collec
 
 In the Assets UI, you can search or filter assets based on certain rules, search criteria, or custom search facets. If you save these as **Saved Searches**, you can access them later from the **Saved Searches** list in the Filter panel. Creating a saved search also creates a smart collection.
 
-![saved_searches_list](assets/saved_searches_list.png) 
+![saved_searches_list](assets/saved_searches_list.png)
 
 ### Creating Saved Searches {#creating-saved-searches}
 
@@ -275,7 +275,7 @@ Editing saved searches is the same as editing smart collections. For details, se
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
 1. With the cursor in the Omni Search box, press the Return key.
-1. Click or tap the **[!UICONTROL GlobalNav]** icon to display the Filters panel.  
+1. Click or tap the **[!UICONTROL GlobalNav]** icon to display the Filters panel.
 
 1. From the **[!UICONTROL Saved Searches]** list, tap/click the **Delete** icon next to the smart collection you want to delete.
 

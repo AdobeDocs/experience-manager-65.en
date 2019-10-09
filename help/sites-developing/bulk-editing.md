@@ -5,7 +5,7 @@ description: Bulk editing of page properties allows you to edit the properties o
 seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
@@ -17,7 +17,7 @@ discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 
 Due to the possibility of different values, page properties are not enabled for bulk editing as default. They must be explicitily whitelisted (enabled). When defining the page properties to be available for bulk editing you need to consider certain implications, such as:
 
-* Certain fields are usually unique; for example a page title. You must decide whether it is meaningful to enable such fields for bulk editing, when one value will be applied.  
+* Certain fields are usually unique; for example a page title. You must decide whether it is meaningful to enable such fields for bulk editing, when one value will be applied.
 * Certain fields might have multiple values - this needs meaningful representation when rendering.
 
   For example, a check-box indicating "Ready for Publication". This might have several values before bulk-editing (e.g. ready, in-review, in-progress).
@@ -28,7 +28,7 @@ Due to the possibility of different values, page properties are not enabled for 
 >
 >* Not available in the classic UI.
 >* Not available for pages within a live copy.
->* Only available for pages with the same resource type. 
+>* Only available for pages with the same resource type.
 >
 
 >[!NOTE]
@@ -39,7 +39,7 @@ Due to the possibility of different values, page properties are not enabled for 
 
 >[!NOTE]
 >
->Certain fields might have multiple values - this needs meaningful representation when rendering. For this reason you should only enable the following field types: 
+>Certain fields might have multiple values - this needs meaningful representation when rendering. For this reason you should only enable the following field types:
 >
 >* `/libs/granite/ui/components/foundation/form/textfield`
 >* `/libs/granite/ui/components/foundation/form/textarea`

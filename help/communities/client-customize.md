@@ -5,7 +5,7 @@ description: Customizing behavior or appearance client-side in AEM Communities
 seo-description: Customizing behavior or appearance client-side in AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
@@ -55,7 +55,7 @@ The value of the `data-scf-component` attribute may be the default, such as **`s
 
 To bind a component, the entire component script must be enclosed within a &lt;div&gt; element with the following attributes:
 
-* `data-component-id`="{{id}}"  
+* `data-component-id`="{{id}}"
 
   resolves to the id property from the context
 
@@ -109,7 +109,7 @@ To extend a components Javascript implementation, you need only
 1. Create a component for you app with a jcr:resourceSuperType set to the value of the extended component's jcr:resourceType, e.g. social/forum/components/hbs/forum
 1. Examine the default SCF component's Javascript to determine what methods need to be registered using SCF.registerComponent()
 1. Either copy the extended component's Javascript or start from scratch
-1. Extend the method  
+1. Extend the method
 1. Use SCF.registerComponent() to register all methods with either the defaults or the customized objects and views.
 
 ### forum.js: Sample Extension of Forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
@@ -164,7 +164,7 @@ These versions are found in:
 
 For example:
 
-* Client folder node: /etc/clientlibs/social/hbs/forum 
+* Client folder node: /etc/clientlibs/social/hbs/forum
 * Categories property: cq.social.hbs.forum
 
 The [Community Components guide](components-guide.md) lists the complete clientlibs required for each SCF component.
@@ -183,7 +183,7 @@ These versions are found in the SCF libs folder:
 
 For example:
 
-* Client folder node: /libs/social/forum/hbs/forum/clientlibs 
+* Client folder node: /libs/social/forum/hbs/forum/clientlibs
 * Categories property: cq.social.author.hbs.forum
 
 Note: while author clientlibs never embed other libraries, they do list their dependencies. When embedded in other libraries, the dependencies are not automatically pulled in and must be embedded as well.

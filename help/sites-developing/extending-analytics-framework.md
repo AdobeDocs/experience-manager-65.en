@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 444a29c2-3b4e-4d21-adc0-5f317ece2b77
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
@@ -38,7 +38,7 @@ s.trackExternalLinks= true;
 s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 s.linkInternalFilters= 'javascript:,'+window.location.hostname;
 s.trackDownloadLinks= true;
-        
+
 s.visitorNamespace = "mynamespace";
 s.trackingServer = "xxxxxxx.net";
 s.trackingServerSecure = "xxxxxxx.net";
@@ -79,7 +79,7 @@ s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 s.prop10= 'CONSTANT';
 s.linkInternalFilters= 'javascript:,'+window.location.hostname;
 s.trackDownloadLinks= true;
-        
+
 s.visitorNamespace = "mynamespace";
 s.trackingServer = "xxxxxxx.net";
 s.trackingServerSecure = "xxxxxxx.net";
@@ -109,7 +109,7 @@ Use the following procedure to add variables to the list:
 
 ### Adding custom javascript to an Adobe Analytics Framework {#adding-custom-javascript-to-an-adobe-analytics-framework}
 
-The free-from javascript box in the **General Analytics Settings** area enables you to add custom code to a Adobe Analytics framework. 
+The free-from javascript box in the **General Analytics Settings** area enables you to add custom code to a Adobe Analytics framework.
 
 ![aa-21](assets/aa-21.png)
 
@@ -135,7 +135,7 @@ The following procedure demonstrates how to use the javascript box to customize 
 
    >[!CAUTION]
    >
-   >This code is necessary if you want to send variables in a Adobe Analytics call that have been customized in some way that cannot be done through the basic drag&drop interface OR through inline javascript in Adobe Analytics View.  
+   >This code is necessary if you want to send variables in a Adobe Analytics call that have been customized in some way that cannot be done through the basic drag&drop interface OR through inline javascript in Adobe Analytics View.
    >
    >If the custom variables are outside of the s_doPlugins function they will be sent as *undefined *in the Adobe Analytics call
 
@@ -152,10 +152,10 @@ A Adobe Analytics framework has the following configruations:
 * The following code is added to the free-from javascript box:
 
   ```
-  s.usePlugins=true; 
-   function s_doPlugins(s) { 
-   s.prop1 = s.prop2+'|'+s.prop3; 
-   } 
+  s.usePlugins=true;
+   function s_doPlugins(s) {
+   s.prop1 = s.prop2+'|'+s.prop3;
+   }
    s.doPlugins=s_doPlugins;
   ```
 
@@ -163,7 +163,7 @@ A Adobe Analytics framework has the following configruations:
 
 For example, the following values are generated in Adobe Analytics:
 
-![aa-20](assets/aa-20.png)  
+![aa-20](assets/aa-20.png)
 
 ### Adding Global Custom Code for All Adobe Analytics Frameworks {#adding-global-custom-code-for-all-adobe-analytics-frameworks}
 
@@ -207,7 +207,7 @@ Therefore, your javascript should set `s.usePlugins` to `true` so that any code 
 
    The sitecatalyst component contains the automatically-created sitecatalyst.jsp file.
 
-1. Right-click the sitecatalyst.jsp file and click Delete.  
+1. Right-click the sitecatalyst.jsp file and click Delete.
 
 1. Right-click the sitecatalyst component and click Create > Create File. Specify the name `config.js.jsp` and then click OK.
 
@@ -243,7 +243,7 @@ For example, if you integrate the `getQueryParams` plugin, you can call the plug
 s.usePlugins=true;
 function s_doPlugins(s) {
    // take the query string from the referrer
-   s.eVar1=s.getQueryParam('pid','',document.referrer); 
+   s.eVar1=s.getQueryParam('pid','',document.referrer);
 }
 s.doPlugins=s_doPlugins;
 ```
@@ -262,7 +262,7 @@ The /libs/cq/analytics/clientlibs/sitecatalyst/plugins client library folder inc
 
 Use the following procedure to create the client library folder for your plugins. You only need to peform this procedure once. To add a plugin to the client library folder, use the subsequent procedure.
 
-1. In a web browser, open CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))  
+1. In a web browser, open CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 
 1. Right-click the /apps/my-app/clientlibs folder and click Create &gt; Create Node. Enter the following property values and then click OK:
 
@@ -279,7 +279,7 @@ Use the following procedure to create the client library folder for your plugins
 
    Click OK in the Edit window to confirm the property value.
 
-1. Right-click the client library folder that you just created and click Create &gt; Create File. For the file name type js.txt, and then click OK.  
+1. Right-click the client library folder that you just created and click Create &gt; Create File. For the file name type js.txt, and then click OK.
 
 1. Click Save All.
 
@@ -288,20 +288,20 @@ Use the following procedure to obtain the plugin code, store the code in the AEM
 1. Log in to [sc.omniture.com](https://sc.omniture.com) using your Adobe Analytics account.
 1. On the landing page go to Help &gt; Help Home.
 1. In the table of contents on the left side, click Implementation Plug-ins.
-1. Click the link to the plugin that you want to add and when the page opens, locate the javascript source code for the plugin, then select the code and copy it.  
+1. Click the link to the plugin that you want to add and when the page opens, locate the javascript source code for the plugin, then select the code and copy it.
 
 1. Right-click your client library folder, and click Create &gt; Create File. For the file name, type the name of the plugin that you are integrating followed by .js, and then click OK. For example, if you are integrating the getQueryParam plugin, name the file getQueryParam.js.
 
    When you create the file, it opens for editing.
 
-1. Paste the plugin javascript code into the file, click Save All, and then close the file.  
+1. Paste the plugin javascript code into the file, click Save All, and then close the file.
 
-1. Open the js.txt file from your client library folder.  
+1. Open the js.txt file from your client library folder.
 
 1. In a new line, add the name of the file that contains the plugin, for example getQueryParam.js. Then, click Save All and close the file.
 
 >[!NOTE]
 >
->When using plugins, make sure to integrate any supporting plugins as well, otherwise the plugin javascript will not recognize the calls that it makes to the functions in the supporting plugin. For example, the getPreviousValue() plugin requires the split() plugin to function correctly.  
->  
+>When using plugins, make sure to integrate any supporting plugins as well, otherwise the plugin javascript will not recognize the calls that it makes to the functions in the supporting plugin. For example, the getPreviousValue() plugin requires the split() plugin to function correctly.
+>
 >The name of the support plugin needs to be added to **js.txt** as well.

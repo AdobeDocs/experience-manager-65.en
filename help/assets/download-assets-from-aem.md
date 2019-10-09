@@ -4,7 +4,7 @@ seo-title: Download assets from AEM
 description:  Learn how to download assets from AEM and enable or disable the download functionality.
 seo-description:  Learn how to download assets from AEM and enable or disable the download functionality.
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 mini-toc-levels: 2
 ---
 
@@ -48,7 +48,7 @@ See [!UICONTROL Run Modes] for more information on defining configuration proper
 1. In the config folder, create a new file of type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Populate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` with the following. Sets a maximum size (in bytes) for the download as value of `asset.download.prezip.maxcontentsize`. The below sample configures the maximum size of the ZIP download to not exceed 100 kB.
 
-``` 
+```
 enabled=B"true"
 asset.download.prezip.maxcontentsize=I"102400"
 ```

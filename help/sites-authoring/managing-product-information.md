@@ -5,7 +5,7 @@ description: Creative Project streamlines the entire photo shoot workflow that i
 seo-description: Creative Project streamlines the entire photo shoot workflow that including generating a photo shoot request, uploading a photo shoot, collaborating on a photo shoot, and packaging approved assets
 uuid: 09f27d36-e725-45cb-88d1-27383aedceed
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
@@ -101,7 +101,7 @@ You can track the progress of a project by monitoring the active/completed tasks
 
 Use the following to monitor the progress of a project:
 
-* **Task card** 
+* **Task card**
 
 * **Task list**
 
@@ -116,7 +116,7 @@ The Task card provides the following details:
 
 The Task list provides detailed information around the currently active workflow task for the project. To display the list, tap/click the Task card. The Task list also displays metadata such as start date, due date, assignee, priority, and status of the task.
 
-![chlimage_1-137](assets/chlimage_1-137.png) 
+![chlimage_1-137](assets/chlimage_1-137.png)
 
 ## Workflow Configuration {#workflow-configuration}
 
@@ -359,7 +359,7 @@ You can customize the Project Photo Shoot workflows based on requirements. This 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
 1. Open the **Role Based Task** step.
-1. In the **Task** tab, provide a name for the Task that will display in the **Task** List. You may also assign the task to a role, set the default priority, provide a description, and specify a time when the task is due. 
+1. In the **Task** tab, provide a name for the Task that will display in the **Task** List. You may also assign the task to a role, set the default priority, provide a description, and specify a time when the task is due.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -373,7 +373,7 @@ You can customize the Project Photo Shoot workflows based on requirements. This 
    >
    >Tapping/clicking **OK** does not save the changes in the workflow. To save changes in the workflow, tap/click **Save**.
 
-1. Open the **Workflow** tasks from side kick, and add a **Goto** task. 
+1. Open the **Workflow** tasks from side kick, and add a **Goto** task.
 1. Open the **Goto** task and tap/click the **Process** tab.
 1. Specify the following code in the **Script** box:
 
@@ -403,7 +403,7 @@ You can customize the Project Photo Shoot workflows based on requirements. This 
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-1. Tap/click **OK**.  
+1. Tap/click **OK**.
 
 1. Tap/click **Save** to save the workflow.
 

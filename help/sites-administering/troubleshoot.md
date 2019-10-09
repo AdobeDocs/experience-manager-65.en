@@ -5,7 +5,7 @@ description: Learn about troubleshooting issues with AEM.
 seo-description: Learn about troubleshooting issues with AEM.
 uuid: d68e9ead-8aa6-4108-9f1e-85d7cd7a370f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
@@ -27,33 +27,33 @@ The following section covers some issues that you may encounter when using AEM, 
 
 The following table provides an overview of problems administrators may need to troubleshoot:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Role(s)</strong></td> 
-   <td><strong>Problem </strong></td> 
-  </tr> 
-  <tr> 
-   <td>System Administrator</td> 
-   <td><p>Double-clicking the Quickstart jar does not have any effect or opens the jar file with another program (for example, archive manager)</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>System Administrator</p> </td> 
-   <td><p>My application running on CRX throws out-of-memory errors</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>System Administrator</p> </td> 
-   <td><p>The AEM Welcome screen does not display in the browser after double-clicking AEM CM Quickstart</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>System Administrator</p> <p>admin user</p> </td> 
-   <td><p>Making a Thread Dump</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>System Administrator</p> <p>admin user</p> </td> 
-   <td><p>Checking for unclosed JCR sessions</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Role(s)</strong></td>
+   <td><strong>Problem </strong></td>
+  </tr>
+  <tr>
+   <td>System Administrator</td>
+   <td><p>Double-clicking the Quickstart jar does not have any effect or opens the jar file with another program (for example, archive manager)</p> </td>
+  </tr>
+  <tr>
+   <td><p>System Administrator</p> </td>
+   <td><p>My application running on CRX throws out-of-memory errors</p> </td>
+  </tr>
+  <tr>
+   <td><p>System Administrator</p> </td>
+   <td><p>The AEM Welcome screen does not display in the browser after double-clicking AEM CM Quickstart</p> </td>
+  </tr>
+  <tr>
+   <td><p>System Administrator</p> <p>admin user</p> </td>
+   <td><p>Making a Thread Dump</p> </td>
+  </tr>
+  <tr>
+   <td><p>System Administrator</p> <p>admin user</p> </td>
+   <td><p>Checking for unclosed JCR sessions</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Installation Issues {#installation-issues}
@@ -76,15 +76,15 @@ The thread dump is a list of all the Java threads that are currently active. If 
 
 1. Select the **Threads **under** Status** tab.
 
-![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png) 
+![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
 ### Using jstack (command line) {#using-jstack-command-line}
 
-1. Find the PID (process id) of the AEM Java instance. 
+1. Find the PID (process id) of the AEM Java instance.
 
    For example, you can use `ps -ef` or `jps`.
 
-1. Run: 
+1. Run:
 
    `jstack <pid>`
 

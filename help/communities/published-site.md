@@ -5,7 +5,7 @@ description: Browse to a published site
 seo-description: Browse to a published site
 uuid: f510224c-d991-4528-864d-44672138740c
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 4dc54701-68b9-49dd-a212-b0b53330c1c0
@@ -26,7 +26,7 @@ When first arriving at the published site, the site visitor would typically not 
 
 ## http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-311](assets/chlimage_1-311.png) 
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 ## Anonymous Site Visitor {#anonymous-site-visitor}
 
@@ -99,7 +99,7 @@ Members are able to post a new topic or follow a topic.
 
 Site visitors are able to view posts and sort them in various ways.
 
-![chlimage_1-315](assets/chlimage_1-315.png) 
+![chlimage_1-315](assets/chlimage_1-315.png)
 
 ## Groups link {#groups-link}
 
@@ -155,7 +155,7 @@ On author - with administrative privileges, navigate to the [Communities Groups 
 
 Continuing on publish, log out as Aaron McDonald, and view the groups in the Sports Group as an anonymous site visitor:
 
-* From home page 
+* From home page
 * Select `Groups`link
 * Select `Sports`link
 * Select the Sports' `Groups`link
@@ -164,7 +164,7 @@ Only the Baseball group will be visible.
 
 Log in as Weston McCall (weston.mccall@dodgit.com / password), and navigate to the same location. Notice that Weston is able to `Join` the open `Baseball` group and either `enter or Leave` the private `Gymnastics`group.
 
-![chlimage_1-320](assets/chlimage_1-320.png) 
+![chlimage_1-320](assets/chlimage_1-320.png)
 
 ## Web Page link {#web-page-link}
 
@@ -172,7 +172,7 @@ View the basic web page included in the site by selecting the Web Page link. The
 
 For example, go to **author** instance, open the `engage` folder in the [Communities Sites console](sites-console.md), select the **Open Site** icon to enter author edit mode. Then select preview mode to select the `Web Page`link, then select edit mode to add Title and Text components. Last, re-publish either just the page or the entire site.
 
-![chlimage_1-321](assets/chlimage_1-321.png) 
+![chlimage_1-321](assets/chlimage_1-321.png)
 
 ## Administration Link {#administration-link}
 
@@ -180,7 +180,7 @@ When the community member has moderation privileges, then the Administration lin
 
 Use the browser's back button to return to the published site. Most consoles are not accessible from global navigation in the publish environment.
 
-![chlimage_1-322](assets/chlimage_1-322.png) 
+![chlimage_1-322](assets/chlimage_1-322.png)
 
 ## Self-Registration {#self-registration}
 

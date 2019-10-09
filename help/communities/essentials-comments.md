@@ -5,7 +5,7 @@ description: Comments component overview
 seo-description: Comments component overview
 uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
@@ -19,31 +19,31 @@ The comments component establishes a comment system such that each individual po
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td> social/commons/components/hbs/comments</td> 
+   <td> <strong>resourceType</strong></td>
+   <td> social/commons/components/hbs/comments</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>Yes - properties are editable in <i>design </i>mode</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>Yes - properties are editable in <i>design </i>mode</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.voting</td> 
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td>
+   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.voting</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/commons/components/hbs/comments/comments.hbs<br /> </td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/commons/components/hbs/comments/comments.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>CSS</strong></td> 
-   <td> /libs/social/commons/components/hbs/comments/clientlibs/commentsystem.css</td> 
+   <td> <strong>CSS</strong></td>
+   <td> /libs/social/commons/components/hbs/comments/clientlibs/commentsystem.css</td>
   </tr>
   <tr>
-   <td><strong> properties</strong></td> 
-   <td> See <a href="comments.md">Using Comments</a></td> 
+   <td><strong> properties</strong></td>
+   <td> See <a href="comments.md">Using Comments</a></td>
   </tr>
  </tbody>
 </table>
@@ -81,7 +81,7 @@ This applies to any component which extends a comment system.
 
 ### Accessing Posted Comments (UGC) {#accessing-posted-comments-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).

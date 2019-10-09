@@ -1,13 +1,13 @@
 ---
 title: Change the order of evaluation for authentication
 seo-title: Change the order of evaluation for authentication
-description: You can change the order in which AEM forms evaluates multiple authentication providers. 
-seo-description: You can change the order in which AEM forms evaluates multiple authentication providers. 
+description: You can change the order in which AEM forms evaluates multiple authentication providers.
+seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 ---
 
@@ -20,20 +20,20 @@ If you configured multiple authentication providers, you can change the order in
 1. Find the following node in the file:
 
    ```as3
-    <node name="AuthSchemes"> 
-        <map />  
-            <node name="CertificateAuth"> 
-                <map> 
-                    <entry key="order" value="3" />  
-                    <entry key="name" value="edc.server.auth.scheme.certificate" />  
-                </map> 
-        </node> 
-        <node name="Kerberos"> 
-            <map> 
-                <entry key="kerberosSPN" value="defaultSPN" />  
-                <entry key="order" value="1" />  
-                <entry key="name" value="edc.server.auth.scheme.kerberos" />  
-            </map> 
+    <node name="AuthSchemes">
+        <map />
+            <node name="CertificateAuth">
+                <map>
+                    <entry key="order" value="3" />
+                    <entry key="name" value="edc.server.auth.scheme.certificate" />
+                </map>
+        </node>
+        <node name="Kerberos">
+            <map>
+                <entry key="kerberosSPN" value="defaultSPN" />
+                <entry key="order" value="1" />
+                <entry key="name" value="edc.server.auth.scheme.kerberos" />
+            </map>
     </node>
    ```
 

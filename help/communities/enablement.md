@@ -5,7 +5,7 @@ description: Configure enablement features in Communities
 seo-description: Configure enablement features in Communities
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
@@ -23,23 +23,23 @@ Use of the enablement features requires the following:
 
 Installation of:
 
-* **SCORM** 
+* **SCORM**
   Sharable Content Object Reference Model (SCORM) is a collection of standards and specifications for e-learning. SCORM also defines how content may be packaged into a transferable ZIP file.
 
-* **MySQL** 
+* **MySQL**
   MySQL is a relational database primarily used for SCORM tracking and reporting data for Enablement, as well as tables for tracking video progress. The SCORM for enablement feature pack requires the MySQL JDBC driver.
 
-* **FFmpeg** 
+* **FFmpeg**
   FFmpeg is a solution for converting and streaming audio and video and, when installed, is used for proper transcoding of [Video Assets](../../help/sites-authoring/default-components-foundation.md#video). For enablement communities, it is used in the author environment to obtain metadata for uploaded resources as well as generate a thumbnail to display when listing the resource.
 
 Setup of:
 
-* **Community Managers** 
+* **Community Managers**
   For enablement communities, only members of the `Community Enablement Managers` user group may be assigned the role of `*Community Site* Enablement Manager`, whose permissions may include content creation, assignments, and member management in the publish environment.
 
 Optional configuration of:
 
-* **Adobe Analytics** 
+* **Adobe Analytics**
   Integration with Adobe Analytics adds comprehensive reporting features and supports the Video Heartbeat addtion to Analytics.
 
 * **Dispatcher**
@@ -52,19 +52,19 @@ Each step links to documentation which provides the necessary details.
 
 **On all author/publish instances:**
 
-1. **[install JDBC driver for MySQL](deploy-communities.md#jdbc-driver-for-mysql)** 
-Use Web Console (bundles): *http://localhost:4502/system/console/bundles* 
+1. **[install JDBC driver for MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
+Use Web Console (bundles): *http://localhost:4502/system/console/bundles*
 Install *before* installing SCORM package
 
-1. **[install SCORM package](deploy-communities.md#scorm-package)** 
+1. **[install SCORM package](deploy-communities.md#scorm-package)**
 Use Package Manager: *http://localhost:4502/crx/packmgr/*
 
 **On any server:**
 
 1. **[install MySQL, MySQL Workbench](mysql.md)**
 
-1. **[install MySQL databases](mysql.md#database-setup)** 
-Execute SQL scripts downloaded from author instance  
+1. **[install MySQL databases](mysql.md#database-setup)**
+Execute SQL scripts downloaded from author instance
 Use MySQL Workbench
 
 **On same server hosting author instance:**
@@ -73,32 +73,32 @@ Use MySQL Workbench
 
 **On all author/publish instances:**
 
-1. **[configure JDBC Connections pool](mysql.md#configure-jdbc-connections)** 
+1. **[configure JDBC Connections pool](mysql.md#configure-jdbc-connections)**
 Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
-1. **[configure SCORM engine service](mysql.md#aem-communities-scormengine-service)** 
+1. **[configure SCORM engine service](mysql.md#aem-communities-scormengine-service)**
 Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
-1. **[configure CSRF filters](mysql.md#adobe-granite-csrf-filter)** 
+1. **[configure CSRF filters](mysql.md#adobe-granite-csrf-filter)**
 Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
 **On author instance:**
 
-1. (*optional*) **[configure Analytics service](analytics.md)** 
+1. (*optional*) **[configure Analytics service](analytics.md)**
 Use Tools, Deployment, Cloud Services console: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[configure FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)** 
+1. **[configure FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 Use Workflow/Models console
 
-1. **[enable Tunnel Service](deploy-communities.md#tunnel-service-on-author)** 
+1. **[enable Tunnel Service](deploy-communities.md#tunnel-service-on-author)**
 Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
-1. **[create Community administrators](users.md#creating-community-members)** For author environment use classic-UI Security console: *http://localhost:4502/useradmin* 
- create user(s) with path = /home/users/community  
+1. **[create Community administrators](users.md#creating-community-members)** For author environment use classic-UI Security console: *http://localhost:4502/useradmin*
+ create user(s) with path = /home/users/community
 
-    * Add members(s) to the following groups: 
-  
-      * Community Enablement Managers 
+    * Add members(s) to the following groups:
+
+      * Community Enablement Managers
       * Communities Administrators
 
 ## Dispatcher {#dispatcher}

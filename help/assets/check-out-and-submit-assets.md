@@ -5,7 +5,7 @@ description: Learn how to check out assets for editing and check them back in af
 seo-description: Learn how to check out assets for editing and check them back in after the changes are complete.
 uuid: d84850d3-fa29-47b3-ad99-151407360833
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: e93cf898-498b-418f-a25c-be350914cc76
@@ -47,7 +47,7 @@ This feature helps prevent other users from overriding the changes made by an au
 
    ![chlimage_1-473](assets/chlimage_1-473.png)
 
-1. Edit the asset and save the changes. For example, crop the image and save. 
+1. Edit the asset and save the changes. For example, crop the image and save.
 
    ![chlimage_1-474](assets/chlimage_1-474.png)
 

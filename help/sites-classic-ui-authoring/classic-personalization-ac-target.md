@@ -5,7 +5,7 @@ description: Setting up segmentation includes creating segments, a brand, campai
 seo-description: Setting up segmentation includes creating segments, a brand, campaign, and experiences.
 uuid: 520cd006-0aa8-43f3-b754-efb7397bb92f
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
@@ -39,7 +39,7 @@ To create segments:
 
 To create a brand:
 
-1. In **Sites**, navigate to the **Campaigns** folder (for example in We.Retail). 
+1. In **Sites**, navigate to the **Campaigns** folder (for example in We.Retail).
 1. Click **Create Page **and enter a title for the page, for example We.Retail Brand and select the **Brand **template.
 
 ### Creating a Campaign {#creating-a-campaign}
@@ -53,7 +53,7 @@ To create a campaign:
 
 To create experiences for segments:
 
-1. Open the **Campaign** page you just created. 
+1. Open the **Campaign** page you just created.
 1. Create experiences for your segments by clicking **Create Page** and entering a title for your page, for example, Male as you are creating an experience for the Male segment, and select the **Experience** template.
 1. Open the created Experience page.
 1. Click **Edit**, then below Segments click **Add Item**.
@@ -74,7 +74,7 @@ To create a newsletter with targeted content:
    >
    >[Email samples are only available in Geometrixx](/help/sites-developing/we-retail.md#weretail). Please download sample Geometrixx content from Package Share.
 
-1. In the newsletter, add a Text and Personalization component. 
+1. In the newsletter, add a Text and Personalization component.
 1. Add text into the Text and Personalization component, such as "This is the default."
 1. Click the arrow next to **Edit** and select **Targeting**.
 1. Select your brand from the Brand drop-down menu and select your Campaign. (This is the brand and campaign you created earlier).
@@ -88,7 +88,7 @@ To create a newsletter with targeted content:
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Navigate to another segment (Male), and click **Add offer** and click the plus icon +. Then edit the offer. 
+1. Navigate to another segment (Male), and click **Add offer** and click the plus icon +. Then edit the offer.
 1. Navigate to another segment (Female) and click **Add offer** and the plus icon +. Then edit this offer.
 1. Click **Next** to see Mapping, then click **Next** to see Settings, which does not apply to Adobe Campaign, and click **Save**.
 

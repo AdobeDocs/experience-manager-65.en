@@ -5,7 +5,7 @@ description: Get started with AEM Forms workspace with this quick overview of th
 seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
 uuid: fac103bd-142b-46cc-9db7-22d1880260f8
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ebabecb9-91c4-4991-8f5b-d27f940d2ecb
 ---
@@ -54,51 +54,51 @@ In AEM Forms workspace, the default render and submit services, in the default a
 
 The mapping between various types of customizations in both the workspaces is as follows.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td><strong>Type of customization </strong></td> 
-   <td><strong>Customizations covered </strong></td> 
-   <td><strong>Corresponding AEM Forms workspace customization scenario</strong></td> 
+   <td><strong>Type of customization </strong></td>
+   <td><strong>Customizations covered </strong></td>
+   <td><strong>Corresponding AEM Forms workspace customization scenario</strong></td>
   </tr>
   <tr>
-   <td>Localization customization</td> 
+   <td>Localization customization</td>
    <td>
-    <ol> 
-     <li>Changing locale of Workspace</li> 
-    </ol> </td> 
+    <ol>
+     <li>Changing locale of Workspace</li>
+    </ol> </td>
    <td>
-    <ol> 
-     <li><a href="/help/forms/using/changing-locale-user-interface.md">Changing AEM Forms workspace Locale</a></li> 
-    </ol> </td> 
+    <ol>
+     <li><a href="/help/forms/using/changing-locale-user-interface.md">Changing AEM Forms workspace Locale</a></li>
+    </ol> </td>
   </tr>
   <tr>
-   <td>Theme customization</td> 
+   <td>Theme customization</td>
    <td>
-    <ol> 
-     <li>Replacing images</li> 
-     <li>Modifying colors</li> 
-    </ol> </td> 
+    <ol>
+     <li>Replacing images</li>
+     <li>Modifying colors</li>
+    </ol> </td>
    <td>
-    <ol> 
-     <li><a href="/help/forms/using/changing-organization-logo-branding.md">Changing Organization Logo</a> </li> 
-     <li><a href="/help/forms/using/changing-color-scheme-interface.md">Changing Color Scheme</a></li> 
-    </ol> </td> 
+    <ol>
+     <li><a href="/help/forms/using/changing-organization-logo-branding.md">Changing Organization Logo</a> </li>
+     <li><a href="/help/forms/using/changing-color-scheme-interface.md">Changing Color Scheme</a></li>
+    </ol> </td>
   </tr>
   <tr>
-   <td>Layout customization</td> 
+   <td>Layout customization</td>
    <td>
-    <ol> 
-     <li>Simplifying the Workspace user interface<br /> </li> 
-     <li>Creating a New Login Screen</li> 
-     <li>Creating a custom Approval Container</li> 
-    </ol> </td> 
+    <ol>
+     <li>Simplifying the Workspace user interface<br /> </li>
+     <li>Creating a New Login Screen</li>
+     <li>Creating a custom Approval Container</li>
+    </ol> </td>
    <td>
-    <ol> 
-     <li><a href="/help/forms/using/description-reusable-components.md">Working with Reusable components</a></li> 
-     <li><a href="/help/forms/using/creating-new-login-screen.md">Creating a new Login screen</a></li> 
-     <li>Approval Container is deprecated.</li> 
-    </ol> </td> 
+    <ol>
+     <li><a href="/help/forms/using/description-reusable-components.md">Working with Reusable components</a></li>
+     <li><a href="/help/forms/using/creating-new-login-screen.md">Creating a new Login screen</a></li>
+     <li>Approval Container is deprecated.</li>
+    </ol> </td>
   </tr>
  </tbody>
 </table>

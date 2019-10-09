@@ -1,11 +1,11 @@
 ---
 title: AEM Communities Release Notes
 seo-title: AEM Communities
-description: Release notes specific to Adobe Experience Manager 6.4 Communities.
-seo-description: Release notes specific to Adobe Experience Manager 6.4 Communities.
+description: Release notes specific to Adobe Experience Manager 6.5 Communities.
+seo-description: Release notes specific to Adobe Experience Manager 6.5 Communities.
 uuid: 2de9f511-2a61-4003-9b2c-d6728bc9d57a
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
+products: SG_EXPERIENCEMANAGER/6.5
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
@@ -13,7 +13,7 @@ discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 
 # AEM Communities Release Notes {#aem-communities-release-notes}
 
-This section provides information on the improvements to AEM Communities since the 6.3 release. To learn about the new features in greater detail, see [What's New in AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
+This section provides information on the improvements to AEM Communities since the 6.3 release. To learn about the new features in greater detail, see [What's New in AEM 6.5 Communities](/help/communities/whats-new-aem-communities.md).
 
 To obtain the latest release, see the [Deploying Communities](/help/communities/deploy-communities.md#latest-releases) section of the documentation.
 
@@ -52,7 +52,7 @@ Moderation:
 * Community Moderators have additional Moderation filters (e.g. answered/unanswered questions)
 * Community Moderators can bookmark and link moderation to predefined filters (e.g. all posts pending approval)
 
-Overall compatibility with foundational changes in AEM 6.4.
+Overall compatibility with foundational changes in AEM 6.5.
 
 Note: all these features are also available for AEM 6.3. Please check the AEM Communities release notes for [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
 

@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about creating/managing locations.
 uuid: f18802d4-dae8-48b2-8c94-ecc73579b29f
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 70bdf384-6c27-403b-a6ab-fdec68016428
 ---
@@ -28,7 +28,7 @@ This page shows creating and managing locations for Screens.
 Once you create your project for Screens, follow the steps below to create a new Location for a Screens project:
 
 1. Select the Adobe Experience Manager link (top left) and then Screens. Alternatively, you can ﻿go directly to: [http://localhost:4502/screens.html/content/screens](http://localhost:4502/screens.html/content/screens).
-1. Navigate to Screens project and click **Locations**. 
+1. Navigate to Screens project and click **Locations**.
 1. Click **Create** next to the plus icon in the action bar. A wizard will open.
 1. Select the template **Location** from the wizard and click **Next**.
 

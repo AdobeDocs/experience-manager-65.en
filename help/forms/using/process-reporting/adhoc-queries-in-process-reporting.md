@@ -6,7 +6,7 @@ seo-description: Create custom queries to search for AEM Forms on JEE  process a
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 ---
 
@@ -89,7 +89,7 @@ After you create a query, use the options in the upper right corner of the **Cre
 
 * **Cancel**: Cancel the changes and go back to the **My Filters** panel.
 
-* **Run**: Execute the current query to see and / or verify the results. In this case, you do not need to save the query before executing the query. You can verify the results, make changes if required, and then save the query when you are satisfied with the output.  
+* **Run**: Execute the current query to see and / or verify the results. In this case, you do not need to save the query before executing the query. You can verify the results, make changes if required, and then save the query when you are satisfied with the output.
 
 * **Save**: Save the filter. The filter can then be viewed and executed from the **My Filters** panel.
 
@@ -116,9 +116,9 @@ Use the options in the **My Filters** panel to **Add** ![lc_pr_add_filter](asset
 
 1. The following fields are displayed in a Process Search result:
 
-    * **Process ID**: The ID of the process. The field is hyperlinked. If you click a process ID in this field, you are redirected to the **[!UICONTROL Process Details]** panel for the process.  
-    * **Initiator**: The AEM Forms user who started the process instance  
-    * **Created Time**: The date and time when the process instance started  
+    * **Process ID**: The ID of the process. The field is hyperlinked. If you click a process ID in this field, you are redirected to the **[!UICONTROL Process Details]** panel for the process.
+    * **Initiator**: The AEM Forms user who started the process instance
+    * **Created Time**: The date and time when the process instance started
     * **Completed Time**: The date and time when the process instance completed
     * **Duration**: The duration from start to completion of the process instance
     * **Status**: The current status of the process instance.
@@ -129,9 +129,9 @@ Use the options in the **My Filters** panel to **Add** ![lc_pr_add_filter](asset
 
    Similarly, the following fields are displayed in a Task Search result:
 
-    * **Task ID**: The ID of the task. The field is hyperlinked. If you click a task ID in this field, you are redirected to the **[!UICONTROL Task Details]** panel for the task.  
-    * **Initiator**: The AEM Forms user who started the process instance  
-    * **Created Time**: The date and time when the process instance started  
+    * **Task ID**: The ID of the task. The field is hyperlinked. If you click a task ID in this field, you are redirected to the **[!UICONTROL Task Details]** panel for the task.
+    * **Initiator**: The AEM Forms user who started the process instance
+    * **Created Time**: The date and time when the process instance started
 
     * **Completed Time**: The date and time when the process instance completed
     * **Duration**: The duration from start to completion of the process instance
@@ -146,7 +146,7 @@ Use the options in the **My Filters** panel to **Add** ![lc_pr_add_filter](asset
 1. Click the rail button ![lc_pr_rail_button](assets/lc_pr_rail_button.png) on the upper-left to collapse the **My Filters** pane and expands the space available for the **Report** panel.
 1. Use the options in the upper right corner of the **Report** panel to perform operations on the query result.
 
-    * **Refresh**: Refreshes the report with latest data lying in the storage  
+    * **Refresh**: Refreshes the report with latest data lying in the storage
     * **Export to CSV**: Export the report data to a comma-separated file.
 
    >[!NOTE]
@@ -188,8 +188,8 @@ You can view the details of a specific AEM Forms process/task:
 
    **Left panel:** Displays the following details of the selected process:
 
-    * Name of process  
-    * Process creation date time  
+    * Name of process
+    * Process creation date time
     * Process completion date time
     * Process duration
     * Process status
@@ -197,20 +197,20 @@ You can view the details of a specific AEM Forms process/task:
 
    **Upper-Right panel:** Displays the following details of the tasks that make up selected process:
 
-    * Task ID  
+    * Task ID
     * Task name
     * Task owner
     * Task creation date time
-    * Task update date time  
+    * Task update date time
     * Task completion date time
     * Task duration
     * Task status
 
    **Lower-Right panel:** Displays the following details of the process history of the selected process:
 
-    * Process name  
+    * Process name
     * Process initiator
-    * Process update date time  
+    * Process update date time
     * Process completion date time
     * Process status
 
@@ -221,9 +221,9 @@ You can view the details of a specific AEM Forms process/task:
    **Left panel:** Displays the following details of the selected task:
 
     * Task Name
-    * ID of process to which this task belongs  
-    * Task description  
-    * Task creation date time  
+    * ID of process to which this task belongs
+    * Task description
+    * Task creation date time
     * Task completion date time
     * Task duration
     * Task status
@@ -231,7 +231,7 @@ You can view the details of a specific AEM Forms process/task:
 
    **Upper-Right panel:** Displays the following details of the forms that make up selected task:
 
-    * Form ID  
+    * Form ID
     * Form creation date time
     * Form update date time
     * Form template Url

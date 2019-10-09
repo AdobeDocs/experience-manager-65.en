@@ -4,7 +4,7 @@ seo-title: Create form data model
 description: Learn how to create form data models with or without configured data sources.
 seo-description: Learn how to create form data models with or without configured data sources.
 uuid: bed1a82e-a799-4034-9068-1478b95e6c70
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
 discoiquuid: 3a3a6ede-52af-4c37-8a51-c2ea721a28dc
 ---
@@ -33,7 +33,7 @@ Ensure that you have configured the data sources you intend to use in the form d
 1. Tap **[!UICONTROL Create > Form Data Model]**.
 1. In the Create Form Data Model dialog:
 
-    * Specify a name for the form data model. 
+    * Specify a name for the form data model.
     * (**Optional**) Specify title, description, and tags for the form data model.
     * (**Optional and applicable only if data sources are configured**) Tap the tick icon next to the **[!UICONTROL Data Source Configuration]** field and select the configuration node where cloud services for the data sources you want to use reside. It restricts the list of data sources available for selection on the next page to the ones available in the selected configuration node. However, any JDBC database and AEM user profile data sources are listed by default. If you do not select a configuration node, data sources from all configuration nodes are listed.
 

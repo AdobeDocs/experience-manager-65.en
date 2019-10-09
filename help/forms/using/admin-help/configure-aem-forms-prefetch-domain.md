@@ -1,13 +1,13 @@
 ---
 title: Configure AEM forms to prefetchdomain information
 seo-title: Configure AEM forms to prefetchdomain information
-description: Configure AEM forms to prefetch domain information if you experience a slower response time due to deeply nested groups or if you are a member of many groups. 
-seo-description: Configure AEM forms to prefetch domain information if you experience a slower response time due to deeply nested groups or if you are a member of many groups. 
+description: Configure AEM forms to prefetch domain information if you experience a slower response time due to deeply nested groups or if you are a member of many groups.
+seo-description: Configure AEM forms to prefetch domain information if you experience a slower response time due to deeply nested groups or if you are a member of many groups.
 uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 ---
 
@@ -20,17 +20,17 @@ Users may experience a slower response time if they belong to many groups (for e
 1. Add the following node (marked in bold):
 
    ```as3
-    <node name="UM"> 
-    <map/>  
-    <node name="PrincipalCache"> 
-        <map> 
-            <entry key="principalCacheSize" value="1000"/> 
-            <entry key="principalCacheBatchFetchSize" value="10"/> 
-            <entry key="rebuildCacheAfterSync" value="true /> 
-            <entry key="enableFullPrefetch" value="false"/> 
-            <entry key="principalCacheDomains" value="Domain_Name1/Domain_Name2/Domain_Name3"/> 
-        <map> 
-    </node> 
+    <node name="UM">
+    <map/>
+    <node name="PrincipalCache">
+        <map>
+            <entry key="principalCacheSize" value="1000"/>
+            <entry key="principalCacheBatchFetchSize" value="10"/>
+            <entry key="rebuildCacheAfterSync" value="true />
+            <entry key="enableFullPrefetch" value="false"/>
+            <entry key="principalCacheDomains" value="Domain_Name1/Domain_Name2/Domain_Name3"/>
+        <map>
+    </node>
     <node name="APSAuditService">
    ```
 

@@ -5,7 +5,7 @@ description: Adding a Rating component to a page
 seo-description: Adding a Rating component to a page
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
@@ -35,7 +35,7 @@ Under the **[!UICONTROL Texts & Labels]** tab you specify the internal identifie
 
 ![chlimage_1-495](assets/chlimage_1-495.png)
 
-**[!UICONTROL Tally Name]** 
+**[!UICONTROL Tally Name]**
   (*Required*) A simple name for the `Rating`which uniquely identifies this instance. Must be a valid node name for the repository.
 
 ## Site Visitor Experience {#site-visitor-experience}

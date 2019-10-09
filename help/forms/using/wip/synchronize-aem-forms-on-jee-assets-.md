@@ -1,12 +1,12 @@
 ---
-title: DO NOT PUBLISH - Synchronize AEM Forms on JEE assets 
-seo-title: DO NOT PUBLISH - Synchronize AEM Forms on JEE assets 
+title: DO NOT PUBLISH - Synchronize AEM Forms on JEE assets
+seo-title: DO NOT PUBLISH - Synchronize AEM Forms on JEE assets
 description: Learn how to synchronize AEM Forms on JEE Assets.
 seo-description: Learn how to synchronize AEM Forms on JEE Assets.
 page-status-flag: never-activated
 uuid: 678b85d5-e58c-4e1a-bd07-f8ff8a3dc1f5
 contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2e4baac7-2999-4874-9a85-77d3ea578058
 ---
 
@@ -39,7 +39,7 @@ The assets available in the Workbench have more priority over the assets availab
 Perform the following steps to manually sync the assets:
 
 1. Log in to AEM Forms. On the top-left corner, tap **Adobe Experience Manager** &gt; **Forms** &gt;  **Forms & Documents**.
-1. Tap **Create** and select **Files from Workbench**.   
+1. Tap **Create** and select **Files from Workbench**.
    The synchronization process starts synchronizing assets between AEM Forms user interface and Workbench.
 
 ## Troubleshoot asset migration {#troubleshoot-asset-migration}

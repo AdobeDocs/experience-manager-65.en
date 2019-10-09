@@ -7,7 +7,7 @@ uuid: b90998bc-e3d4-493a-9371-55ccb44da20d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 ---
 
@@ -28,54 +28,54 @@ AEM forms (and earlier versions) used JMS queues to execute operations asynchron
 Asynchronous operations are handled in this manner:
 
 1. Work Manager receives a work item for execution.
-1. Work Manager stores the work item in a database table and assigns a unique identifier to the work item. The database record contains all of the information required to execute the work item. 
+1. Work Manager stores the work item in a database table and assigns a unique identifier to the work item. The database record contains all of the information required to execute the work item.
 1. Work Manager threads pull in work items when the threads become free. Before pulling in the work items, threads can check whether the required services are started, whether there is enough heap size to pull in the next work item, and whether there are enough CPU cycles to process the work item. Work Manager also evaluates attributes of the work item (such as its priority) when scheduling its execution.
 
 AEM forms administrators can use Health Monitor to check Work Manager statistics, such as the number of work items in the queue and their statuses. You can also use Health Monitor to pause, resume, retry, or delete work items. (See [View statistics related to Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
 ## Configuring Work Manager throttling options {#configuring-work-manager-throttling-options}
 
-You can configure throttling for Work Manager, so that work items are scheduled only when there are enough memory resources available. You configure throttling by setting the following JVM options in your application server. 
+You can configure throttling for Work Manager, so that work items are scheduled only when there are enough memory resources available. You configure throttling by setting the following JVM options in your application server.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Property</p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Property</p></th>
+   <th><p>Description</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><code> adobe.work-manager.queue-refill-interval</code></td> 
-   <td><p>Specifies the time interval, in milliseconds, that Work Manager uses when checking for new items in its queue.</p><p>The value for this option is an integer. The default value is <code>1000</code> milliseconds (1 second). </p><p>If the volume of asynchronous invocations is low, you can increase this value. For example, you could increase it to somewhere between 2000 and 5000 (2 to 5 seconds). </p><p>If the volume of asynchronous invocations is high, the default value should be sufficient, but you can use a lower value if necessary. Decreasing this value too much (for example, below 50, which results in a poll frequency of 20 times per second) causes a substantial overhead on the system.</p></td> 
-  </tr> 
-  <tr> 
-   <td><code> adobe.workmanager.debug-mode-enabled</code></td> 
-   <td><p>Set this option to <code>true</code> to enable debug mode, or to false to disable it. </p><p>In debug mode, messages regarding Work Manager policy violations and Work Manager pause/resume actions are logged. Set this option to true only when troubleshooting.</p></td> 
-  </tr> 
-  <tr> 
-   <td><code> adobe.workmanager.memory-control.enabled</code></td> 
-   <td><p>Set this option to <code>true</code> to enable throttling based on the memory-control settings described below, or to <code>false</code> to disable throttling.</p></td> 
-  </tr> 
-  <tr> 
-   <td><code> adobe.workmanager.memory-control.high-limit</code></td> 
-   <td><p>Specifies the maximum percentage of memory that can be in use before Work Manager throttles incoming jobs.</p><p>The default value for this option is <code>95</code>. This value should be fine for most systems. Increase it only if your system needs to push through to its maximum capacity. But note that as you increase this value, the risk of Out of Memory issues also increases.</p><p>If you are running AEM forms in a clustered environment, you may want to set the memory control limit settings differently on different nodes of the cluster. For example, you could have a lower high-limit on nodes A and B, which are programmed in your load balancer for interactive work. And you could have higher high-limits set on nodes C and D, which are not used by the load balancer, but reserved for asynchronous work.</p></td> 
-  </tr> 
-  <tr> 
-   <td><code> adobe.workmanager.memory-control.low-limit</code></td> 
-   <td><p>Specifies the maximum percentage of memory that can be in use before Work Manager stops throttling incoming jobs.</p><p>The default value for this option is <code>20</code>. This value should be fine for most systems.</p></td> 
-  </tr> 
-  <tr> 
-   <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td> 
-   <td><p>Specifies the maximum batch size for workmanager. The default batch size is 10.</p><p>If the status of a process in the workmanager is not updated even after the task is complete, then set the batch size to 1.</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><code> adobe.work-manager.queue-refill-interval</code></td>
+   <td><p>Specifies the time interval, in milliseconds, that Work Manager uses when checking for new items in its queue.</p><p>The value for this option is an integer. The default value is <code>1000</code> milliseconds (1 second). </p><p>If the volume of asynchronous invocations is low, you can increase this value. For example, you could increase it to somewhere between 2000 and 5000 (2 to 5 seconds). </p><p>If the volume of asynchronous invocations is high, the default value should be sufficient, but you can use a lower value if necessary. Decreasing this value too much (for example, below 50, which results in a poll frequency of 20 times per second) causes a substantial overhead on the system.</p></td>
+  </tr>
+  <tr>
+   <td><code> adobe.workmanager.debug-mode-enabled</code></td>
+   <td><p>Set this option to <code>true</code> to enable debug mode, or to false to disable it. </p><p>In debug mode, messages regarding Work Manager policy violations and Work Manager pause/resume actions are logged. Set this option to true only when troubleshooting.</p></td>
+  </tr>
+  <tr>
+   <td><code> adobe.workmanager.memory-control.enabled</code></td>
+   <td><p>Set this option to <code>true</code> to enable throttling based on the memory-control settings described below, or to <code>false</code> to disable throttling.</p></td>
+  </tr>
+  <tr>
+   <td><code> adobe.workmanager.memory-control.high-limit</code></td>
+   <td><p>Specifies the maximum percentage of memory that can be in use before Work Manager throttles incoming jobs.</p><p>The default value for this option is <code>95</code>. This value should be fine for most systems. Increase it only if your system needs to push through to its maximum capacity. But note that as you increase this value, the risk of Out of Memory issues also increases.</p><p>If you are running AEM forms in a clustered environment, you may want to set the memory control limit settings differently on different nodes of the cluster. For example, you could have a lower high-limit on nodes A and B, which are programmed in your load balancer for interactive work. And you could have higher high-limits set on nodes C and D, which are not used by the load balancer, but reserved for asynchronous work.</p></td>
+  </tr>
+  <tr>
+   <td><code> adobe.workmanager.memory-control.low-limit</code></td>
+   <td><p>Specifies the maximum percentage of memory that can be in use before Work Manager stops throttling incoming jobs.</p><p>The default value for this option is <code>20</code>. This value should be fine for most systems.</p></td>
+  </tr>
+  <tr>
+   <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
+   <td><p>Specifies the maximum batch size for workmanager. The default batch size is 10.</p><p>If the status of a process in the workmanager is not updated even after the task is complete, then set the batch size to 1.</p></td>
+  </tr>
+ </tbody>
 </table>
 
 **Add Java options to JBoss**
 
 1. Stop the JBoss application server.
-1. Open the *[appserver root]*/bin/run.bat (Windows) or run.sh (Linux or UNIX) in an editor and add any of the Java options as required, in the format `-Dproperty=value`. 
+1. Open the *[appserver root]*/bin/run.bat (Windows) or run.sh (Linux or UNIX) in an editor and add any of the Java options as required, in the format `-Dproperty=value`.
 1. Restart the server.
 
 **Add Java options to WebLogic**
@@ -94,9 +94,9 @@ You can configure throttling for Work Manager, so that work items are scheduled 
 **Add Java options to WebSphere**
 
 1. In the WebSphere Administrative Console navigation tree, click Servers &gt; Server Types &gt; WebSphere application servers.
-1. In the right pane, click the server name. 
-1. Under Server Infrastructure, click Java and forms workflow &gt; Process Definition. 
-1. Under Additional Properties, click Java Virtual Machine. 
-1. In the Generic JVM arguments box, type the arguments you require. 
+1. In the right pane, click the server name.
+1. Under Server Infrastructure, click Java and forms workflow &gt; Process Definition.
+1. Under Additional Properties, click Java Virtual Machine.
+1. In the Generic JVM arguments box, type the arguments you require.
 1. Click OK or Apply, and then click Save directly to the master configuration.
 

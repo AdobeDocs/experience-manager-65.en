@@ -5,7 +5,7 @@ description: follow component and following component overview
 seo-description: follow component and following component overview
 uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
@@ -23,44 +23,44 @@ The `following`component lists the members that are either following the current
 
 ### Following {#following}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/socialgraph/components/hbs/relationships</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/socialgraph/components/hbs/relationships</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.socialgraph</td> 
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.hbs.socialgraph</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/socialgraph/components/hbs/relationships/relationships.hbs</td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/socialgraph/components/hbs/relationships/relationships.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/socialgraph/components/hbs/relationships/clientlibs/relationships.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/socialgraph/components/hbs/relationships/clientlibs/relationships.css</td>
   </tr>
   <tr>
-   <td><strong> properties</strong></td> 
-   <td>See <a href="socialgraph.md">Using Social Graph</a></td> 
+   <td><strong> properties</strong></td>
+   <td>See <a href="socialgraph.md">Using Social Graph</a></td>
   </tr>
   <tr>
-   <td><strong> optional<br /> property</strong></td> 
+   <td><strong> optional<br /> property</strong></td>
    <td>
-    <ul> 
-     <li>Name: <strong><code>outgoing</code></strong></li> 
-     <li>Type: Boolean</li> 
-     <li>Value:<br /> 
-      <ul> 
-       <li><i>true </i>- the <code>following</code> component will list the members who the currently signed-in member <code>follows</code></li> 
-       <li><i>false </i>- the <code>following</code> component will list the members who <code>follow </code>the currently signed-in member</li> 
-      </ul> </li> 
-    </ul> <p>Defaults to <i>true</i> if the property is missing. Currently, it is not possible to set this property using the edit dialog in author mode. The property must be added to an instance of the <code>following </code>node using <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td> 
+    <ul>
+     <li>Name: <strong><code>outgoing</code></strong></li>
+     <li>Type: Boolean</li>
+     <li>Value:<br />
+      <ul>
+       <li><i>true </i>- the <code>following</code> component will list the members who the currently signed-in member <code>follows</code></li>
+       <li><i>false </i>- the <code>following</code> component will list the members who <code>follow </code>the currently signed-in member</li>
+      </ul> </li>
+    </ul> <p>Defaults to <i>true</i> if the property is missing. Currently, it is not possible to set this property using the edit dialog in author mode. The property must be added to an instance of the <code>following </code>node using <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>

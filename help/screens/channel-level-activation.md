@@ -5,7 +5,7 @@ description: Follow this guide to understand channel level activation using sing
 seo-description: Follow this guide to understand channel level activation using single event playback.
 uuid: 87230344-5f9a-42a4-a7a8-ae4203303612
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 content-type: reference
 discoiquuid: c28fd669-f23e-4d53-bec1-a2911274567d
@@ -31,7 +31,7 @@ Using Channel Level Activation covers the following topics:
 The following example provides a solution by focusing on the following key terms:
 
 * a ***main sequence channel*** for the global sequence
-* a ***single event channel*** that runs only once at a set time 
+* a ***single event channel*** that runs only once at a set time
 * a ***set schedule and priority*** for the single playback event that occurs inside the main sequence channel
 
 ## Using Channel Level Activation {#using-channel-level-activation}
@@ -42,11 +42,11 @@ The following section explains the creation of a single event playback inside a 
 
 Before you start implementing this functionality, please make sure you have the following prerequisites ready to start implementing channel level activation:
 
-* Create an AEM Screens project (in this example, **Channel Level Activation**)  
+* Create an AEM Screens project (in this example, **Channel Level Activation**)
 
 * Create a channel as **MainAdChannel** under **Channels** folder
 
-* Create another channel as **TargetedSinglePlay** under **Channels** folder  
+* Create another channel as **TargetedSinglePlay** under **Channels** folder
 
 * Add relevant assets to both the channels
 
@@ -58,7 +58,7 @@ The following image shows the **Channel Level Activation** project with **MainAd
 >
 >For additional information on how to create a project and how to create a sequence channel, please refer to resources below:
 >
->* [Creating and Managing Projects](/help/screens/creating-a-screens-project.md)  
+>* [Creating and Managing Projects](/help/screens/creating-a-screens-project.md)
 >
 >* [Managing a Channel](/help/screens/managing-channels.md)
 >
@@ -100,7 +100,7 @@ Follow the steps below to implement the functionality:
     1. Select **Reference Channel**.. by path.
     1. Select the **Channel Path** as **Channel Level Activation** --&gt; ***Channels*** --&gt; ***MainAdChannel***.
     1. The **Channel Role** is populated as **mainadchannel**.
-    1. Select the **Priority** as **1**. 
+    1. Select the **Priority** as **1**.
     1. Select the **Supported Events** as **Initial Load** and **Idle Screen**.
     1. Click **Save**.
 
@@ -117,11 +117,11 @@ Follow the steps below to implement the functionality:
     1. Select **Reference Channel**.. by path.
     1. Select the **Channel Path** as **Channel Level Activation*** --&gt; ***Channels*** --&gt; ***TargetedSinglePlay***.*
     1. The **Channel Role** is populated as **targetedsingleplay**.
-    1. Set the **Priority** as **2**. 
+    1. Set the **Priority** as **2**.
     1. Select the **Supported Events** as **Initial Load**, **Idle Screen **and** Timer***, *as shown in the figure below.
-    1. Choose the date in **active from** as November 27, 2018 11:59 pm and in **active until** as November 28, 2018 12:05 am.* 
+    1. Choose the date in **active from** as November 27, 2018 11:59 pm and in **active until** as November 28, 2018 12:05 am.*
        *
-    1. Click **Save**.* 
+    1. Click **Save**.*
        *
 
    >[!CAUTION]

@@ -5,7 +5,7 @@ description: Create an Interactive Communication using all building blocks
 seo-description: Create an Interactive Communication using all building blocks
 uuid: 91702f41-5c19-4840-a3b5-59d69003fd67
 contentOwner: anujkapo
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
 ---
 
@@ -43,8 +43,8 @@ The following is the list of resources that have already been created in this tu
 
 **Images:** PayNow and ValueAddedServices
 
-1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**. 
-1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed. 
+1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**.
+1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Specify **create_first_ic** in the **Title** and the **Name** field. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
 
@@ -67,7 +67,7 @@ The following is the list of resources that have already been created in this tu
 
    ![create_first_ic_doc_fragments](assets/create_first_ic_doc_fragments.png)
 
-1. Tap **Charts** target area, and tap **+** to add a **Chart** component. 
+1. Tap **Charts** target area, and tap **+** to add a **Chart** component.
 1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). The chart properties display in the left pane:
 
     1. Specify a name for the chart.
@@ -83,7 +83,7 @@ The following is the list of resources that have already been created in this tu
 
    Similarly, create binding with **calltime**, **callnumber**, **callduration**, and **callcharges** for text fields in the **Time**, **Number**, **Duration**, and **Charges** columns respectively.
 
-1. Tap **PayNow** target area, and tap **+** to add an **Image** component. 
+1. Tap **PayNow** target area, and tap **+** to add an **Image** component.
 1. Tap the Image component and select ![configure_icon](assets/configure_icon.png) (Configure). The image properties display in the left pane:
 
     1. Specify **PayNow** as the name of the image in the **Name** field.
@@ -104,8 +104,8 @@ The following is the list of resources that have already been created in this tu
 
 **Images:** PayNowWeb and ValueAddedServicesWeb
 
-1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**. 
-1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed. 
+1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**.
+1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Specify **create_first_ic** in the **Title** and the **Name** field. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
 
@@ -127,7 +127,7 @@ The following is the list of resources that have already been created in this tu
    | bill_summary_first_ic |BillSummary |
    | summary_charges_first_interactive_communication |Charges |
 
-1. Tap **Summary of Charges** target area, and tap **+** to add a **Chart** component. 
+1. Tap **Summary of Charges** target area, and tap **+** to add a **Chart** component.
 1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). The chart properties display in the left pane:
 
     1. Specify a name for the chart.
@@ -147,7 +147,7 @@ The following is the list of resources that have already been created in this tu
 1. Select the **Calldate** table column heading and tap ![edit](assets/edit.png) (Edit) to rename the text to **Call Date**. Similarly, rename other column headings in the table.
 1. Based on the use case, insert a **Pay Now** button in the Interactive Communication that provides the user an option to make the payment by clicking the button. Execute the following steps to insert the button:
 
-    1. Tap **Pay Now** target area, and tap **+** to add a **Text** component. 
+    1. Tap **Pay Now** target area, and tap **+** to add a **Text** component.
     1. Tap the text component and tap ![edit](assets/edit.png) (Edit).
     1. Rename the text to **Pay Now**.
     1. Select the text and tap the Hyperlink icon.
@@ -168,7 +168,7 @@ The following is the list of resources that have already been created in this tu
 
    ![ic_web_hyperlink](assets/ic_web_hyperlink.png)
 
-1. Tap **Pay Now** target area, and tap **+** to add an **Image** component. 
+1. Tap **Pay Now** target area, and tap **+** to add an **Image** component.
 1. Tap the Image component and select ![configure_icon](assets/configure_icon.png) (Configure). The image properties display in the left pane:
 
     1. Specify **PayNow** as the name of the image in the **Name** field.
@@ -186,11 +186,11 @@ You can also create an Interactive Communication by enabling auto synchronizatio
 Execute the following steps to derive the Web channel content using Print channel:
 
 1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**.
-1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed. 
+1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Specify **create_first_ic** in the **Title** and the **Name** field. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
 
-    1. Specify **create_first_ic_print_template** as the Print template and tap **Select**. 
+    1. Specify **create_first_ic_print_template** as the Print template and tap **Select**.
     1. Select the **Use Print as Master for Web Channel** checkbox.
     1. Specify **Create_First_IC_templates** folder &gt; **Create_First_IC_Web_Template** as the Web template and tap **Select**.
     1. Tap **Create**.
@@ -199,16 +199,16 @@ Execute the following steps to derive the Web channel content using Print channe
 
 1. Tap **Edit** to open the Interactive Communication in the right pane.
 1. Execute steps 6 - 15 of [Create Interactive Communication for Print channel](/help/forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel) section.
-1. Tap the **Channels** tab from the left pane and tap **Web** to auto-generate content for the Web channel from the Print channel. 
+1. Tap the **Channels** tab from the left pane and tap **Web** to auto-generate content for the Web channel from the Print channel.
 1. As the **Use Print as Master for Web Channel** checkbox is selected in step 4, the content and bindings are auto-generated for Web channel from the Print channel.
 
    The print channel content is inserted below the Web channel template content. To modify the Web channel content that has been auto-generated from the Print channel, you can cancel the inheritance for any target area.
 
-   Hover over the relevant target area in the web channel and select ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) and then in the **Cancel Inheritance** dialog, tap **Yes**. 
+   Hover over the relevant target area in the web channel and select ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) and then in the **Cancel Inheritance** dialog, tap **Yes**.
 
    ![cancel_inheritance_web_channel](assets/cancel_inheritance_web_channel.png)
 
-   If you have canceled inheritance of a component, you can re-enable it. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and tap ![reenableinheritance](assets/reenableinheritance.png). 
+   If you have canceled inheritance of a component, you can re-enable it. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and tap ![reenableinheritance](assets/reenableinheritance.png).
 
 1. Select the **Content** tab in the left pane.
 1. Drag-and-drop the auto-generated Web channel content to the existing panels in the Web template using the content tree. The following is the list of components that need to be rearranged:

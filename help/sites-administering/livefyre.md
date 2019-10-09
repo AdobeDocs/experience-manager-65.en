@@ -7,7 +7,7 @@ uuid: c355705d-6e0f-4a33-aa1f-d2d1c818aac0
 contentOwner: ind14750
 content-type: reference
 topic-tags: integration
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 ---
 
@@ -55,8 +55,8 @@ AEM 6.4 comes with Livefyre feature package 1.2.6 pre-installed. This package on
 
 1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General &gt; Configuration Browser**.
 1. Click **Create** to open the Create Configuration dialog.
-1. Name your confguration and check the **Cloud Configurations** checkbox.   
-  
+1. Name your confguration and check the **Cloud Configurations** checkbox.
+
    This will create a folder under **Tools &gt; Deployment &gt; Livefyre Configuration** with the name provided.
 
    ![livefyre-aem-create-config-folder](assets/livefyre-aem-create-config-folder.png)
@@ -72,7 +72,7 @@ Configure AEM to use your organization's Livefyre license credentials, allowing 
 
    >[!NOTE]
    >
-   >Folders must have Cloud Configurations enabled in their properties before Livefyre configurations can be added to them. Configuration folders are created and managed in the Configuration Browser. 
+   >Folders must have Cloud Configurations enabled in their properties before Livefyre configurations can be added to them. Configuration folders are created and managed in the Configuration Browser.
    >
    >You cannot create a name for a configuration—it is referenced by the path of the folder it is in. You can only have one configuration per folder.
 
@@ -191,8 +191,8 @@ To import UGC into AEM Assets:
    >
    >Twitter has limits on identical requests coming from the same account. When importing more than a couple assets, modify the messages individually to avoid being flagged.
 
-1. Click **Done** in the top-right corner to finish the Rights Request workflow.  
-  
+1. Click **Done** in the top-right corner to finish the Rights Request workflow.
+
    You can see the status of a pending Rights Request for an asset in Livefyre Studio. If content is pending a rights request, the asset will not display in AEM Assets until rights are granted. The asset automatically appears in AEM Assets when a Rights Request is granted.
 
    For Instagram, you must track the content owner's response and manually grant rights if given rights to the content.

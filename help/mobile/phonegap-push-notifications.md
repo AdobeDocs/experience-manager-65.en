@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about how to use push notifications i
 uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 ---
@@ -28,7 +28,7 @@ Using push notifications with AEM requires a few different technologies. First, 
 Once installed and configured (as explained below) it works like this:
 
 1. A push notification is created in AEM, and sent to the service provider (Amazon SNS or Pushwoosh).
-1. The service provider receives it and sends it to the core provider (APNS or GCM). 
+1. The service provider receives it and sends it to the core provider (APNS or GCM).
 1. The core provider pushes the notification to all devices registered for that push. For each device it uses the cellular data network or WiFi, whichever is currently available on the device.
 1. The notification displays on the device if the app it is registered for is not running. A user tapping on the notification will start the app and display the notification within the app. In the case that the application is already running, only the in-app notification is displayed.
 
@@ -72,7 +72,7 @@ You will need to follow the steps [here](https://developer.android.com/google/gc
 
 The following steps shows a different method of creating GCM API Keys:
 
-1. Log into google and go to the [Google's Developer page](https://developers.google.com/mobile/add?platform=android&cntapi=gcm). 
+1. Log into google and go to the [Google's Developer page](https://developers.google.com/mobile/add?platform=android&cntapi=gcm).
 1. Choose your app from the list (or create a new one).
 1. Under Android Package Name, enter your app id, i.e. `com.adobe.cq.mobile.weretail.outdoorsapp`. (If that does not work, try again with "test.test".)
 1. Click **Continue To Choose and configure services**
@@ -164,12 +164,12 @@ Follow these steps to set up Amazon SNS for push notifications:
     1. Open "Inline Policies" if it is not already opened. You should see a policy there with a name like oneClick_Cognito_&lt;yourIdentityPoolName&gt;Unauth_Role_1234567890123.
     1. Click "Edit Policy". Replace the contents of the Policy Document with this snippet of JSON:
 
-    <table> 
-    <tbody> 
-     <tr> 
-     <td><p> </p> <p>{</p> <p> "Version": "2012-10-17",</p> <p> "Statement": [</p> <p> {</p> <p> "Action": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "Effect": "Allow",</p> <p> "Resource": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td> 
-     </tr> 
-    </tbody> 
+    <table>
+    <tbody>
+     <tr>
+     <td><p> </p> <p>{</p> <p> "Version": "2012-10-17",</p> <p> "Statement": [</p> <p> {</p> <p> "Action": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "Effect": "Allow",</p> <p> "Resource": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
+     </tr>
+    </tbody>
     </table>
 
     1. Click on **Apply Policy**
@@ -192,7 +192,7 @@ To use Pushwoosh:
 
     1. For Android support, you need to provide your GCM API key.
     1. When configuring the app, choose Cordova as the framework.
-    1. For iOS support you need to provide the Certificate file (.cer), Push Certificate (.p12) and private key password; these should have been obtained from Apple's APNS site. For Framework, choose Cordova. 
+    1. For iOS support you need to provide the Certificate file (.cer), Push Certificate (.p12) and private key password; these should have been obtained from Apple's APNS site. For Framework, choose Cordova.
     1. Pushwoosh will generate an App Id for that app, in the form "XXXXX-XXXXX", where each X is a hexadecimal value (0 through F).
 
 >[!NOTE]
@@ -208,12 +208,12 @@ Create two content nodes (one in app-config and one in app-config-dev) called no
 * /content/`<your app>`/shell/jcr:content/pge-app/app-config-dev/notificationsConfig
 * /content/`<your app>`/shell/jcr:content/pge-app/app-config/notificationsConfig
 
-With these properties (.content.xml files) :  
-&lt;jcr:root xmlns:jcr=" [https://www.jcp.org/jcr/1.0](https://www.jcp.org/jcr/1.0)" xmlns:nt=" [https://www.jcp.org/jcr/nt/1.0](https://www.jcp.org/jcr/nt/1.0)"  
-jcr:primaryType="nt:unstructured"  
-excludeProperties="[appAPIAccessToken]"  
-path="../../../.."  
-targetRootDirectory=“www"  
+With these properties (.content.xml files) :
+&lt;jcr:root xmlns:jcr=" [https://www.jcp.org/jcr/1.0](https://www.jcp.org/jcr/1.0)" xmlns:nt=" [https://www.jcp.org/jcr/nt/1.0](https://www.jcp.org/jcr/nt/1.0)"
+jcr:primaryType="nt:unstructured"
+excludeProperties="[appAPIAccessToken]"
+path="../../../.."
+targetRootDirectory=“www"
 type="notificationsconfig”/&gt;
 
 >[!NOTE]
@@ -262,7 +262,7 @@ Before building and deploying to your configured mobile device, you must configu
 1. Click on the App.
 1. Find the Manage Cloud Services tile and click on the pencil, to modify your cloud configs.
 1. Select Amazon SNS Connnection, Pushwoosh Connection, or Adobe Mobile Services, as the notification configuration.
-1. Enter the provider properties and click Submit to save them, and Done. They are not verified remotely at this stage, except in the case of AMS. 
+1. Enter the provider properties and click Submit to save them, and Done. They are not verified remotely at this stage, except in the case of AMS.
 1. You should now see the config you just entered on the Manage Cloud Services tile.
 
 ### Step 6: Build and deploy the app {#step-build-and-deploy-the-app}
@@ -354,9 +354,9 @@ Once the **Push Notifications** tile displays in your dashboard, use the create 
 
    >[!NOTE]
    >
-   >The Link Button Text is limited to 20 characters. 
+   >The Link Button Text is limited to 20 characters.
    >
-   >If the end user doesn't have the latest version of the application and the linked path isn't available, confirming the action of the deep link will bring the user to the main page of the app. 
+   >If the end user doesn't have the latest version of the application and the linked path isn't available, confirming the action of the deep link will bring the user to the main page of the app.
 
 1. Enter the **Text Details** in the **Create Notification Wizard** and click **Create**.
 

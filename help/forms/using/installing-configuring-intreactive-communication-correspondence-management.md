@@ -82,7 +82,7 @@ Before you begin to install and configure interactive communication and correspo
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms interactive communication, correspondence management, and other capabilities. Perform the following steps to install the add-on package:
 
 1. Log in to the [AEM server](http://localhost:4502) as an administrator and open [package share](http://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
-1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **AEM 6.4 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
+1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
 
    You can also use the version number to search an add-on package. For version number of the latest package, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
 
@@ -131,9 +131,9 @@ Perform the following steps on all the Author and Publish instances to whitelist
 
 #### Install Compatibility Package {#install-compatibility-package}
 
-Interactive communication is the default and recommended approach to create customer communications in AEM 6.4 Forms. If you have upgraded or migrated from a previous version, and plan to continue using letters (Correspondence Management), install the [AEMFD Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+Interactive communication is the default and recommended approach to create customer communications in AEM 6.5 Forms. If you have upgraded or migrated from a previous version, and plan to continue using letters (Correspondence Management), install the [AEMFD Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
-The AEMFD Compatibility package allows you to use the following assets from AEM 6.3 Forms and AEM 6.2 Forms on AEM 6.4 Forms:
+The AEMFD Compatibility package allows you to use the following assets from AEM 6.3 Forms and AEM 6.2 Forms on AEM 6.5 Forms:
 
 * Document fragments  
 * Letters

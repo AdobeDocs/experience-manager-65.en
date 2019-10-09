@@ -5,7 +5,7 @@ description: AEM components are used to hold, format, and render the content mad
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 uuid: bf789fb8-0bb8-406c-b4d6-c360b02a46d8
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
@@ -22,7 +22,7 @@ AEM components are used to hold, format, and render the content made available o
 
       See [Developing eCommerce](/help/sites-developing/ecommerce.md) for more information.
 
-    * When constructing a [Communities](/help/communities/author-communities.md) site the components can provide information to and collect information from your visitors. 
+    * When constructing a [Communities](/help/communities/author-communities.md) site the components can provide information to and collect information from your visitors.
 
       See [Developing Communities](/help/communities/communities.md) for more information.
 
@@ -143,7 +143,7 @@ For full details see:
 * Granite UI
 
     * Provides Coral UI markup wrapped into Sling components for building UI consoles and dialogs
-    * [Concepts of the AEM Touch-Enabled UI - Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 
+    * [Concepts of the AEM Touch-Enabled UI - Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
     * [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
@@ -169,13 +169,13 @@ An example node structure might be:
 ```xml
 newComponent (cq:Component)
   cq:dialog (nt:unstructured)
-    content 
-      layout 
-      items 
-        column 
-          items 
-            file 
-            description  
+    content
+      layout
+      items
+        column
+          items
+            file
+            description
 ```
 
 Customizing a dialog is similar to developing a component as the dialog is itself a component (i.e. markup rendered by a component script together with behavior/style provided by a client library).
@@ -196,7 +196,7 @@ For examples, see:
 >See:
 >
 >* the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
->* the related sample code covered under [Code Sample - How to Customize Dialog Fields](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).  
+>* the related sample code covered under [Code Sample - How to Customize Dialog Fields](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
 #### Creating a New Field {#creating-a-new-field}
@@ -374,7 +374,7 @@ This behavior, and the required asset-to-component relationship can be configure
 
 1. For each asset-to-component mapping create a node:
 
-    * Name: text; it is recommended that the name indicate the asset and related component type; for example, image 
+    * Name: text; it is recommended that the name indicate the asset and related component type; for example, image
     * Type: `nt:unstructured`
 
    Each with the following properties:
@@ -427,7 +427,7 @@ The [AEM Brackets Extension](/help/sites-developing/aem-brackets.md) provides a 
 
 The extension:
 
-* Eases synchronization (no Maven or File Vault required) to help increase developer efficiency and also helps front-end developers with limited AEM knowledge to participate on projects.  
+* Eases synchronization (no Maven or File Vault required) to help increase developer efficiency and also helps front-end developers with limited AEM knowledge to participate on projects.
 * Provides some [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) support, the template language designed to simplify component development and increase security.
 
 >[!NOTE]
@@ -450,7 +450,7 @@ When migrating a component that was designed for use with the classic UI to a co
 
 * Dialogs
 
-    * You will need to create a new dialog for use in the touch-enabled UI. However, for compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI. 
+    * You will need to create a new dialog for use in the touch-enabled UI. However, for compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI.
     * The [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) is provided to help you extend existing components.
     * [Mapping ExtJS to Granite UI Components](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) provides a convenient overview of ExtJS xtypes and node types with their equivalent Granite UI resource types.
     * Customizing fields, for more information see the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).

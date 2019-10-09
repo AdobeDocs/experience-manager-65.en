@@ -6,7 +6,7 @@ seo-description: Learn about the procedure you need to follow in order to upgrad
 uuid: 56fb6af7-6e5f-4288-822b-f40c4605a28b
 contentOwner: sarchiz
 topic-tags: upgrading
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
@@ -32,9 +32,9 @@ The assumed topology for this section consists of an Author server running on Ta
 
 ![upgrade-preparation-author](assets/upgrade-preparation-author.png)
 
-1. Stop content authoring  
-1. Stop the standby instance  
-1. Disable replication agents on the author  
+1. Stop content authoring
+1. Stop the standby instance
+1. Disable replication agents on the author
 1. Run the [pre-upgrade maintenance tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
 ### Upgrade Execution {#upgrade-execution-1}
@@ -42,23 +42,23 @@ The assumed topology for this section consists of an Author server running on Ta
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
 1. Run the [in-place upgrade](/help/sites-deploying/in-place-upgrade.md)
-1. Update the dispatcher module *if needed* 
-1. QA validates the upgrade  
+1. Update the dispatcher module *if needed*
+1. QA validates the upgrade
 1. Shutdown the author instance.
 
 ### If Successful {#if-successful}
 
 ![if_successful](assets/if_successful.jpg)
 
-1. Copy the upgraded instance to create a new Cold Standby  
-1. Start the Author instance  
+1. Copy the upgraded instance to create a new Cold Standby
+1. Start the Author instance
 1. Start the Standby instance.
 
 ### If Unsuccessful (Rollback) {#if-unsuccessful-rollback}
 
 ![rollback](assets/rollback.jpg)
 
-1. Start the Cold Standby instance as the new Primary  
+1. Start the Cold Standby instance as the new Primary
 1. Rebuild the Author environment from the Cold Standby.
 
 ## MongoMK Author Cluster {#mongomk-author-cluster}
@@ -73,44 +73,44 @@ The assumed topology for this section consists of a MongoMK Author cluster with 
 
 ![mongo-upgrade_prep](assets/mongo-upgrade_prep.jpg)
 
-1. Stop content authoring  
-1. Clone the data store for backup  
+1. Stop content authoring
+1. Clone the data store for backup
 1. Stop all but one AEM Author instance, your primary Author
-1. Remove all but one MongoDB node from the replica set, your primary Mongo instance 
-1. Update the `DocumentNodeStoreService.cfg` file on the primary Author to reflect your single member replica set 
-1. Restart the primary Author to ensure that it restarts properly  
-1. Disable replication agents on the primary Author  
-1. Run [pre-upgrade maintenance tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) on the primary Author instance  
+1. Remove all but one MongoDB node from the replica set, your primary Mongo instance
+1. Update the `DocumentNodeStoreService.cfg` file on the primary Author to reflect your single member replica set
+1. Restart the primary Author to ensure that it restarts properly
+1. Disable replication agents on the primary Author
+1. Run [pre-upgrade maintenance tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) on the primary Author instance
 1. If necessary, upgrade MongoDB on the primary Mongo instance to version 3.2 with WiredTiger
 
 ### Upgrade Execution {#execution}
 
 ![mongo-execution](assets/mongo-execution.jpg)
 
-1. Run an [in-place upgrade](/help/sites-deploying/in-place-upgrade.md) on the primary Author  
-1. Update the Dispatcher or Web Module *if needed* 
+1. Run an [in-place upgrade](/help/sites-deploying/in-place-upgrade.md) on the primary Author
+1. Update the Dispatcher or Web Module *if needed*
 1. QA validates the upgrade
 
 ### If Successful {#successful-1}
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Create new 6.3 Author instances, connected to the upgraded Mongo instance  
-1. Rebuild the MongoDB nodes that were removed from the cluster  
-1. Update the `DocumentNodeStoreService.cfg` files to reflect the full replica set  
-1. Restart the Author instances, one at a time  
+1. Create new 6.3 Author instances, connected to the upgraded Mongo instance
+1. Rebuild the MongoDB nodes that were removed from the cluster
+1. Update the `DocumentNodeStoreService.cfg` files to reflect the full replica set
+1. Restart the Author instances, one at a time
 1. Remove the cloned data store.
 
 ### If Unsuccessful (Rollback)  {#if-unsuccessful}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
-1. Reconfigure the secondary Author instances to connect to the cloned data store  
-1. Shut down the upgraded Author primary instance  
-1. Shut down the upgraded Mongo primary instance.  
-1. Start up the secondary Mongo instances with one of them as the new primary  
-1. Configure the `DocumentNodeStoreService.cfg` files on the secondary Author instances to point to the replica set of not yet upgraded Mongo instances  
-1. Start up the secondary Author instances  
+1. Reconfigure the secondary Author instances to connect to the cloned data store
+1. Shut down the upgraded Author primary instance
+1. Shut down the upgraded Mongo primary instance.
+1. Start up the secondary Mongo instances with one of them as the new primary
+1. Configure the `DocumentNodeStoreService.cfg` files on the secondary Author instances to point to the replica set of not yet upgraded Mongo instances
+1. Start up the secondary Author instances
 1. Clean up the upgraded author instances, Mongo node and data store.
 
 ## TarMK Publish Farm {#tarmk-publish-farm}
@@ -125,46 +125,46 @@ The assumed topology for this section consists of two TarMK publish instances, f
 
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
-1. Stop traffic to the Publish 2 instance at the load balancer  
-1. Run [pre-upgrade maintenance](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) on Publish 2  
-1. Run an [in-place upgrade](/help/sites-deploying/in-place-upgrade.md) on Publish 2  
-1. Update the Dispatcher or Web Module *if needed* 
-1. Flush the Dispatcher cache  
-1. QA validates Publish 2 through the Dispatcher, behind the firewall  
-1. Shutdown Publish 2  
-1. Copy the Publish 2 instance  
+1. Stop traffic to the Publish 2 instance at the load balancer
+1. Run [pre-upgrade maintenance](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) on Publish 2
+1. Run an [in-place upgrade](/help/sites-deploying/in-place-upgrade.md) on Publish 2
+1. Update the Dispatcher or Web Module *if needed*
+1. Flush the Dispatcher cache
+1. QA validates Publish 2 through the Dispatcher, behind the firewall
+1. Shutdown Publish 2
+1. Copy the Publish 2 instance
 1. Start Publish 2
 
 ### If Successful {#successful-2}
 
 ![upgrade-publish1](assets/upgrade-publish1.png)
 
-1. Enable traffic to Publish 2  
-1. Stop traffic to Publish 1  
-1. Stop the Publish 1 instance  
-1. Replace the Publish 1 instance with a copy of Publish 2  
-1. Update the Dispatcher or Web Module *if needed* 
-1. Flush the Dispatcher cache for Publish 1  
-1. Start Publish 1  
+1. Enable traffic to Publish 2
+1. Stop traffic to Publish 1
+1. Stop the Publish 1 instance
+1. Replace the Publish 1 instance with a copy of Publish 2
+1. Update the Dispatcher or Web Module *if needed*
+1. Flush the Dispatcher cache for Publish 1
+1. Start Publish 1
 1. QA validates Publish 1 through the Dispatcher, behind the firewall
 
 ### If Unsuccessful (Rollback) {#rollback}
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
-1. Create a copy of Publish 1  
-1. Replace the Publish 2 instance with a copy of Publish 1  
-1. Flush the Dispatcher cache for Publish 2  
-1. Start Publish 2  
-1. QA validates Publish 2 through the Dispatcher, behind the firewall  
+1. Create a copy of Publish 1
+1. Replace the Publish 2 instance with a copy of Publish 1
+1. Flush the Dispatcher cache for Publish 2
+1. Start Publish 2
+1. QA validates Publish 2 through the Dispatcher, behind the firewall
 1. Enable traffic to Publish 2
 
 ## Final Upgrade Steps {#final-upgrade-steps}
 
-1. Enable traffic to Publish 1  
-1. QA performs final validation from a public URL  
-1. Enable replication agents from the Author environment  
-1. Resume content authoring  
+1. Enable traffic to Publish 1
+1. QA performs final validation from a public URL
+1. Enable replication agents from the Author environment
+1. Resume content authoring
 1. Perform [post-upgrade checks](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
 
 ![final](assets/final.jpg)

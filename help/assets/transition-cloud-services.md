@@ -1,11 +1,11 @@
 ---
-title: Applying translation cloud services to folders 
-seo-title: Applying translation cloud services to folders 
+title: Applying translation cloud services to folders
+seo-title: Applying translation cloud services to folders
 description: null
 seo-description: null
 uuid: ffbe5f8a-faef-4d61-9301-c323c21ec16c
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 5344cc2e-f4eb-4d43-87ae-e0f04a82c377
@@ -51,7 +51,7 @@ If you want to apply a custom connector for the translation services you want to
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Specify a title and a name for the connector, and then click/tap **[!UICONTROL Create]**. The custom connector is available in the list of connectors in the **[!UICONTROL Cloud Services]** tab described in step 5 of [Applying the translation services](#applying-the-translation-services). 
+1. Specify a title and a name for the connector, and then click/tap **[!UICONTROL Create]**. The custom connector is available in the list of connectors in the **[!UICONTROL Cloud Services]** tab described in step 5 of [Applying the translation services](#applying-the-translation-services).
 1. Run any translation workflow described in [Creating Translation Projects](translation-projects.md) after you apply the custom connector. Verify the details of the connector in the **[!UICONTROL Translation Summary]** tile of the translation project in the **[!UICONTROL Projects]** console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)

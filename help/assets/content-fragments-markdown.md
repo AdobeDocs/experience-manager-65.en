@@ -5,7 +5,7 @@ description: When you are authoring, the content fragment editor uses markdown s
 seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
@@ -45,11 +45,11 @@ To create a header by placing a hash tag (#) in front of the heading. One hash t
 
 Optionally, you can create a H1 by underlining the text in equal signs and create a H2 by underlining the text in minus signs. For example:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`This is an H1`  
+&nbsp;&nbsp;&nbsp;&nbsp;`This is an H1`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`=============`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`This is an H2`  
+&nbsp;&nbsp;&nbsp;&nbsp;`This is an H2`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`-------------`
 
@@ -76,21 +76,21 @@ These are examples of inline links:
 A reference link has the following syntax:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Hey you should [checkout][0] this [cool thing][wiki] that I [made][].`
-  
-&nbsp;&nbsp;&nbsp;&nbsp;`[0]: https://www.google.ca`  
 
-&nbsp;&nbsp;&nbsp;&nbsp;`[wiki]: https://www.wikipedia.org`  
+&nbsp;&nbsp;&nbsp;&nbsp;`[0]: https://www.google.ca`
+
+&nbsp;&nbsp;&nbsp;&nbsp;`[wiki]: https://www.wikipedia.org`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`[made]: https://www.stackoverflow.com`
-  
+
 ## Images {#images}
 
 The syntax for images is similar to the links. You can create inline and referenced images.
 
 For example, an inline image has the following syntax:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`![Alt text](/path/to/img.jpg)`  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;`![Alt text](/path/to/img.jpg)`
+
 &nbsp;&nbsp;&nbsp;&nbsp;`![Alt text](/path/to/img.jpg "Optional title")`
 
 The syntax includes:
@@ -111,21 +111,21 @@ Where “id” is the name of a defined image reference. Image references are de
 
 You can quote text by adding the &gt; symbol before the text. For example:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`>This is block quotes`  
+&nbsp;&nbsp;&nbsp;&nbsp;`>This is block quotes`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`>asdhfjlkasdhlf`  
+&nbsp;&nbsp;&nbsp;&nbsp;`>asdhfjlkasdhlf`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>asdfahsdlfasdfj`
 
 You can have nested block quotes. For example:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.` 
+&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`>`  
+&nbsp;&nbsp;&nbsp;&nbsp;`>`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is nested blockquote.`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is nested blockquote.`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`>`  
+&nbsp;&nbsp;&nbsp;&nbsp;`>`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`> Back to the first level.`
 
@@ -137,15 +137,15 @@ To create an unordered list, use the &ast; symbol before the items in the list. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;`* item in list`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`* item in list`  
+&nbsp;&nbsp;&nbsp;&nbsp;`* item in list`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`* item in list`
 
 To create an ordered list, add the numbers, followed by a period, before each item in the list. For example:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`1. First item in list.`  
+&nbsp;&nbsp;&nbsp;&nbsp;`1. First item in list.`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`2. Second item in list.`  
+&nbsp;&nbsp;&nbsp;&nbsp;`2. Second item in list.`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`3. Third item in list.`
 

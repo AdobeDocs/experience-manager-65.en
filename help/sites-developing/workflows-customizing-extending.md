@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 9f4ea2a8-8b21-4e7c-ac73-dd37d9ada111
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
@@ -31,7 +31,7 @@ A workflow step component defines the appearance and behavior of the step when c
 * The edit dialog for configuring component properties.
 * The service or script that is executed at runtime.
 
-As with [all components](/help/sites-developing/components.md), workflow step components inherit from the component that is specifed for the `sling:resourceSuperType` property. The following diagram shows the hierarchy of `cq:component` nodes that form the basis of all workflow step components. The diagram also includes the **Process Step**, **Participant Step**, and **Dynamic Participant Step** components, as these are the most common (and basic) starting points for developing custom step components. 
+As with [all components](/help/sites-developing/components.md), workflow step components inherit from the component that is specifed for the `sling:resourceSuperType` property. The following diagram shows the hierarchy of `cq:component` nodes that form the basis of all workflow step components. The diagram also includes the **Process Step**, **Participant Step**, and **Dynamic Participant Step** components, as these are the most common (and basic) starting points for developing custom step components.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 
@@ -50,7 +50,7 @@ The `/libs/cq/workflow/components/model/step` component is the nearest common an
 
 * `step.jsp`
 
-  The `step.jsp` script renders the title of the step component when it is added to a model. 
+  The `step.jsp` script renders the title of the step component when it is added to a model.
 
   ![wf-22-1](assets/wf-22-1.png)
 
@@ -74,7 +74,7 @@ The following objects are available (dependent on step type) within ECMA scripts
 * [WorkItem](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
 * [WorkflowSession](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
 * [WorkflowData](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
-* `args`: array with the process arguments.  
+* `args`: array with the process arguments.
 
 * `sling`: to access other osgi services.
 * `jcrSession`
@@ -164,8 +164,8 @@ The value that is specified in this text field is added to the workflow instance
 
 Each base step component enable workflow model developers to configure the following key features at design time:
 
-* Process Step: The service or ECMA script to execute at runtime. 
-* Participant Step: The ID of the user that is assigned the generated work item. 
+* Process Step: The service or ECMA script to execute at runtime.
+* Participant Step: The ID of the user that is assigned the generated work item.
 * Dynamic Participant Step: The service or ECMA script that selects the ID of the user that is assigned the work item.
 
 To focus the component for use in a specific workflow scenario, configure the key feature in the design and remove the ability for model developers to change it.
@@ -200,7 +200,7 @@ To focus the component for use in a specific workflow scenario, configure the ke
 
 Customize your participant step component to provide features that are found in the [Form Participant Step](/help/sites-developing/workflows-step-ref.md#form-participant-step) and [Dialog Participant Step](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) components:
 
-* Present a form to the user when they open the generated work item. 
+* Present a form to the user when they open the generated work item.
 * Present a custom dialog to the user when they complete the generated work item.
 
 Peform the following procedure on your new component (see [Creating Custom Workflow Step Components](#creating-custom-workflow-step-components)):
@@ -306,7 +306,7 @@ The `MetaDataMap` object of workflow instances is useful for storing and retriev
 
 The workflow `MetaDataMap` is available to Java and ECMA script process implementations:
 
-* In Java implementations of the WorkflowProcess interface, the `args` parameter is the `MetaDataMap` object for the workflow. 
+* In Java implementations of the WorkflowProcess interface, the `args` parameter is the `MetaDataMap` object for the workflow.
 
 * In ECMA script implementations, the value is available using the `args` and `metadata` variables.
 
@@ -316,7 +316,7 @@ The edit dialog of the **Process Step** component includes the **Arguments** pro
 
 In the following diagram, the value of the **Arguments** property is `argument1, argument2`:
 
-![wf-24](assets/wf-24.png) 
+![wf-24](assets/wf-24.png)
 
 #### Java {#java-1}
 
@@ -326,7 +326,7 @@ The following Java code is the `execute` method for a `WorkflowProcess` implemen
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
      if (args.containsKey("PROCESS_ARGS")){
       log.info("workflow metadata for key PROCESS_ARGS and value {}",args.get("PROCESS_ARGS","string").toString());
-     } 
+     }
     }
 ```
 
@@ -387,7 +387,7 @@ To define a process step as an OSGI service component (Java bundle):
 
 1. Add the SCR property `process.label`  and set the value as you require. This will be the name which your process step is listed as when using the generic **Process Step** component. See the example below.
 1. In the **Models** editor, add the process step to the workflow using the generic **Process Step** component.
-1. In the edit dialog (of the **Process Step**), go to the **Process** tab and select your process implementation. 
+1. In the edit dialog (of the **Process Step**), go to the **Process** tab and select your process implementation.
 1. If you use arguments in your code, set the **Process Arguments**. For example: false.
 1. Save the changes, for both the step and the workflow model (top left corner of the model editor).
 
@@ -423,7 +423,7 @@ import javax.jcr.Session;
 public class MyProcess implements WorkflowProcess {
 
  @Property(value = "An example workflow process implementation.")
- static final String DESCRIPTION = Constants.SERVICE_DESCRIPTION; 
+ static final String DESCRIPTION = Constants.SERVICE_DESCRIPTION;
  @Property(value = "Adobe")
  static final String VENDOR = Constants.SERVICE_VENDOR;
  @Property(value = "My Sample Workflow Process")
@@ -436,7 +436,7 @@ public class MyProcess implements WorkflowProcess {
   if (workflowData.getPayloadType().equals(TYPE_JCR_PATH)) {
    String path = workflowData.getPayload().toString() + "/jcr:content";
    try {
-    Session jcrSession = session.adaptTo(Session.class); 
+    Session jcrSession = session.adaptTo(Session.class);
     Node node = (Node) jcrSession.getItem(path);
     if (node != null) {
      node.setProperty("approved", readArgument(args));
@@ -478,8 +478,8 @@ The following example script demonstrates how to access the JCR node that repres
 
 ```
 var workflowData = graniteWorkItem.getWorkflowData();
-if (workflowData.getPayloadType() == "JCR_PATH") { 
-    var path = workflowData.getPayload().toString(); 
+if (workflowData.getPayloadType() == "JCR_PATH") {
+    var path = workflowData.getPayload().toString();
     var jcrsession = graniteWorkflowSession.adaptTo(Packages.javax.jcr.Session);
     var node = jcrsession.getNode(path);
     if (node.hasProperty("approved")){
@@ -493,16 +493,16 @@ The following script checks if the payload is an image ( `.png` file), creates a
 
 ```
 var workflowData = graniteWorkItem.getWorkflowData();
-if (workflowData.getPayloadType() == "JCR_PATH") { 
-    var path = workflowData.getPayload().toString(); 
+if (workflowData.getPayloadType() == "JCR_PATH") {
+    var path = workflowData.getPayload().toString();
     var jcrsession = graniteWorkflowSession.adaptTo(Packages.javax.jcr.Session);
     var node = jcrsession.getRootNode().getNode(path.substring(1));
-     if (node.isNodeType("nt:file") && node.getProperty("jcr:content/jcr:mimeType").getString().indexOf("image/") == 0) { 
+     if (node.isNodeType("nt:file") && node.getProperty("jcr:content/jcr:mimeType").getString().indexOf("image/") == 0) {
         var is = node.getProperty("jcr:content/jcr:data").getStream();
         var layer = new Packages.com.day.image.Layer(is);
         layer.grayscale();
                 var parent = node.getParent();
-                var gn = parent.addNode("grey" + node.getName(), "nt:file"); 
+                var gn = parent.addNode("grey" + node.getName(), "nt:file");
         var content = gn.addNode("jcr:content", "nt:resource");
                 content.setProperty("jcr:mimeType","image/png");
                 var cal = Packages.java.util.Calendar.getInstance();
@@ -539,7 +539,7 @@ You can develop participant choosers for **Dynamic Participant Step** components
 
 When a **Dynamic Participant Step** component is started during a workflow, the step needs to detemine the participant to which the generated work item can be assigned. To do this the step either:
 
-* sends a request to an OSGi service 
+* sends a request to an OSGi service
 * executes an ECMA script to select the participant
 
 You can develop a service or ECMA script that selects the participant according to the requirements of your workflow.
@@ -560,18 +560,18 @@ To define a participant step as an OSGI service component (Java class):
 
    ```java
    package com.adobe.example.workflow.impl.process;
-   
+
    import com.adobe.granite.workflow.WorkflowException;
    import com.adobe.granite.workflow.WorkflowSession;
    import com.adobe.granite.workflow.exec.ParticipantStepChooser;
    import com.adobe.granite.workflow.exec.WorkItem;
    import com.adobe.granite.workflow.exec.WorkflowData;
    import com.adobe.granite.workflow.metadata.MetaDataMap;
-   
+
    import org.apache.felix.scr.annotations.Component;
    import org.apache.felix.scr.annotations.Property;
    import org.apache.felix.scr.annotations.Service;
-   
+
    import org.osgi.framework.Constants;
 
    /**
@@ -579,11 +579,11 @@ To define a participant step as an OSGI service component (Java class):
     */
    @Component
    @Service
-   
+
    public class MyDynamicParticipant implements ParticipantStepChooser {
 
     @Property(value = "An example implementation of a dynamic participant chooser.")
-    static final String DESCRIPTION = Constants.SERVICE_DESCRIPTION; 
+    static final String DESCRIPTION = Constants.SERVICE_DESCRIPTION;
        @Property(value = "Adobe")
        static final String VENDOR = Constants.SERVICE_VENDOR;
        @Property(value = "Dynamic Participant Chooser Process")
@@ -629,8 +629,8 @@ The following table lists the variables that provide immediate access to workflo
 ```
 function getParticipant() {
     var workflowData = graniteWorkItem.getWorkflowData();
-    if (workflowData.getPayloadType() == "JCR_PATH") { 
-        var path = workflowData.getPayload().toString(); 
+    if (workflowData.getPayloadType() == "JCR_PATH") {
+        var path = workflowData.getPayload().toString();
         if (path.indexOf("/content/we-retail/de") == 0) {
             return "admin";
         } else {
@@ -698,19 +698,19 @@ import org.slf4j.LoggerFactory;
 import javax.jcr.Node;
 import javax.jcr.PathNotFoundException;
 import javax.jcr.RepositoryException;
-import javax.jcr.Session; 
+import javax.jcr.Session;
 
 @Component
 @Service
 public class LaunchBulkActivate implements WorkflowProcess {
- 
+
  private static final Logger log = LoggerFactory.getLogger(LaunchBulkActivate.class);
 
  @Property(value="Bulk Activate for Launches")
   static final String PROCESS_NAME ="process.label";
  @Property(value="A sample workflow process step to support Launches bulk activation of pages")
  static final String SERVICE_DESCRIPTION = Constants.SERVICE_DESCRIPTION;
- 
+
  @Reference
  private ResourceCollectionManager rcManager;
 public void execute(WorkItem workItem, WorkflowSession workflowSession) throws Exception {
@@ -818,7 +818,7 @@ An easy way to start creating your own custom step is to copy an existing step f
 
     * `sling:resourceSuperType`
 
-      Must inherit from an existing step. 
+      Must inherit from an existing step.
 
       In this example we are inheriting from the base step at `cq/workflow/components/model/step`, but you can use other super types like `participant`, `process`, etc.
 
@@ -826,11 +826,11 @@ An easy way to start creating your own custom step is to copy an existing step f
 
       Is the title displayed when the component is listed in the step browser (left side panel of the workflow model editor).
 
-    * `cq:icon` 
+    * `cq:icon`
 
       Used to specify a [Coral icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) for the step.
 
-    * `componentGroup` 
+    * `componentGroup`
 
       Must be one of the following:
 
@@ -867,7 +867,7 @@ After [Creating the Basic Step](#creating-the-basic-step), define the step **Con
 
       When set to `true`, then your step component will inherit properties from the step you specified in `sling:resourceSuperType`.
 
-    * `cq:disableTargeting` 
+    * `cq:disableTargeting`
 
       Set as required.
 
@@ -877,7 +877,7 @@ After [Creating the Basic Step](#creating-the-basic-step), define the step **Con
 
    **Properties of interest:**
 
-    * `jcr:title` 
+    * `jcr:title`
 
       Sets the default title on the step card in the model map and in the **Title** field of the **My Custom - Step Properties** configuration dialog.
 
@@ -1027,9 +1027,9 @@ The `_cq_dialog/.content.xml` sample used in this example:
 >
 >Classic UI model editor dialogs will still work with the standard, touch-enabled UI editor.
 >
->Though AEM has a [dialog conversion](/help/sites-developing/dialog-conversion.md) tool if you want to upgrade your classic UI step dialogs to standard UI dialogs. After conversion there are still some manual improvements that could be done to the dialog for certain cases.  
+>Though AEM has a [dialog conversion](/help/sites-developing/dialog-conversion.md) tool if you want to upgrade your classic UI step dialogs to standard UI dialogs. After conversion there are still some manual improvements that could be done to the dialog for certain cases.
 >
->* In cases where an upgraded dialog is empty you can look at dialogs in `/libs` that have similar functionality as examples of how to provide a solution. For example: 
+>* In cases where an upgraded dialog is empty you can look at dialogs in `/libs` that have similar functionality as examples of how to provide a solution. For example:
 >
 >* `/libs/cq/workflow/components/model`
 >* `/libs/cq/workflow/components/workflow`

@@ -5,7 +5,7 @@ description: Connecting your MySQL server
 seo-description: Connecting your MySQL server
 uuid: e02d9404-de75-4fdb-896c-ea3f64f980a3
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
@@ -39,7 +39,7 @@ As SQL is case insensitive, for case sensitive operating systems, it is necessar
 For example, to specify all lower case table names on a Linux OS:
 
 * Edit file `/etc/my.cnf`
-* In the `[mysqld]` section, add the following line: 
+* In the `[mysqld]` section, add the following line:
   `lower_case_table_names = 1`
 
 ### UTF8 character set {#utf-character-set}
@@ -51,9 +51,9 @@ Change MySQL to have UTF8 as its character set:
 
 Change the MySQL database to default to UTF8:
 * Edit file `/etc/my.cnf`
-* In the `[client]` section, add the following line: 
+* In the `[client]` section, add the following line:
   `default-character-set=utf8`
-* In the `[mysqld]` section, add the following line: 
+* In the `[mysqld]` section, add the following line:
   `character-set-server=utf8`
 
 ## Installing MySQL Workbench {#installing-mysql-workbench}
@@ -66,7 +66,7 @@ MySQL Workbench should be downloaded and installed following the instructions fo
 
 When the MySQL Workbench is first launched, unless already in use for other purposes, it will not yet show any connections:
 
-![chlimage_1-327](assets/chlimage_1-327.png) 
+![chlimage_1-327](assets/chlimage_1-327.png)
 
 ### New Connection Settings {#new-connection-settings}
 
@@ -87,17 +87,17 @@ When the MySQL Workbench is first launched, unless already in use for other purp
 
 #### Successful Connection {#successful-connection}
 
-![chlimage_1-328](assets/chlimage_1-328.png) 
+![chlimage_1-328](assets/chlimage_1-328.png)
 
 #### New Enablement Connection {#new-enablement-connection}
 
-![chlimage_1-329](assets/chlimage_1-329.png) 
+![chlimage_1-329](assets/chlimage_1-329.png)
 
 ## Database Setup {#database-setup}
 
 Upon opening the new Enablement connection, notice there is a test schema and default user accounts.
 
-![chlimage_1-330](assets/chlimage_1-330.png) 
+![chlimage_1-330](assets/chlimage_1-330.png)
 
 ### Obtain SQL Scripts {#obtain-sql-scripts}
 
@@ -142,12 +142,12 @@ Be sure to install the schema before installing the data.
 In the MySQL Workbench
 
 * From the File pulldown menu
-* Select `Open SQL Script ...` 
+* Select `Open SQL Script ...`
 * In this order, select one of:
     1. `database_scormengine.sql`
     1. `database_scorm_integration.sql`
 
-![chlimage_1-332](assets/chlimage_1-332.png) 
+![chlimage_1-332](assets/chlimage_1-332.png)
 
 #### Step 2: execute SQL Script {#step-execute-sql-script}
 
@@ -155,19 +155,19 @@ In the Workbench window for the file opened in Step 1, select the `lightening (f
 
 Note that the execution of the `database_scormengine.sql` script to create the SCORM database may take a minute to complete.
 
-![chlimage_1-333](assets/chlimage_1-333.png) 
+![chlimage_1-333](assets/chlimage_1-333.png)
 
 #### Refresh {#refresh}
 
 Once the scripts are executed, it is necessary to refresh the `SCHEMAS`section of the `Navigator` in order to see the new database. Use the refresh icon to the right of 'SCHEMAS':
 
-![chlimage_1-334](assets/chlimage_1-334.png) 
+![chlimage_1-334](assets/chlimage_1-334.png)
 
 #### Result: scormenginedb {#result-scormenginedb}
 
 After installing and refreshing SCHEMAS, the **`scormenginedb`**will be visible.
 
-![chlimage_1-335](assets/chlimage_1-335.png) 
+![chlimage_1-335](assets/chlimage_1-335.png)
 
 ## Configure JDBC Connections {#configure-jdbc-connections}
 
@@ -188,7 +188,7 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
 
 * Enter the following values:
     * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
-    * **[!UICONTROL ]DBC connection URIJ**: `jdbc:mysql://localhost:3306/aem63reporting` specify server in place of localhost if MySQL server is not the same as 'this' AEM server 
+    * **[!UICONTROL ]DBC connection URIJ**: `jdbc:mysql://localhost:3306/aem63reporting` specify server in place of localhost if MySQL server is not the same as 'this' AEM server
     * **[!UICONTROL Username]**: Root or enter the configured Username for the MySQL server, if not 'root'
     * **[!UICONTROL Password]**: Clear this field if no password set for MySQL, else enter the configured password for the MySQL Username
     * **[!UICONTROL Datasource name]**: Name entered for the [MySQL connection](#new-connection-settings), for example, 'enablement'
@@ -216,10 +216,10 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
 * Verify the following parameter values are consistent with the [JDBC Connection](#configurejdbcconnectionspool) config:
     * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/ScormEngineDB` *ScormEngineDB* is the default database name in the SQL scripts
     * **[!UICONTROL Username]**: Root or enter the configured Username for the MySQL server, if not 'root'
-    * **[!UICONTROL Password]**: Clear this field if no password set for MySQL, else enter the configured password for the MySQL Username 
+    * **[!UICONTROL Password]**: Clear this field if no password set for MySQL, else enter the configured password for the MySQL Username
 * Regarding the following parameter:
-    * **[!UICONTROL Scorm User Password]**: DO NOT EDIT 
-  
+    * **[!UICONTROL Scorm User Password]**: DO NOT EDIT
+
       For internal use only. It is for a special service user used by AEM Communities to communicate with the scorm engine.
 * Select **[!UICONTROL Save]**
 

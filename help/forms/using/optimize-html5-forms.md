@@ -5,7 +5,7 @@ description: You can optimize the output size of the HTML5 forms.
 seo-description: You can optimize the output size of the HTML5 forms.
 uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 ---
@@ -38,7 +38,7 @@ Apache can communicate with JBoss using HTTP or the AJP protocol.
    >
    >For Linux, the default APACHE_HOME directory is /etc/httpd/.
 
-1. Configure the proxy on port 8080 of JBoss. 
+1. Configure the proxy on port 8080 of JBoss.
 
    Add the following configuration to the *APACHE_HOME/conf/httpd.conf* configuration file.
 
@@ -50,7 +50,7 @@ Apache can communicate with JBoss using HTTP or the AJP protocol.
    >[!NOTE]
    >
    >When you use a proxy, the following configuration changes are required:
-   > 
+   >
    >* Access: *https://&lt;server&gt;:&lt;port&gt;/system/console/configMgr*
    >* Edit the configuration for Apache Sling Referrer Filter
    >* In the Allow Hosts, add the entry for the proxy server
@@ -67,7 +67,7 @@ Apache can communicate with JBoss using HTTP or the AJP protocol.
         SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
         SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
        #Dealing with proxy servers
-   
+
         <IfModule mod_headers.c>
            Header append Vary User-Agent
         </IfModule>

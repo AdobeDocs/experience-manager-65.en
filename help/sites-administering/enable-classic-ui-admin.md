@@ -5,7 +5,7 @@ description: Lear how to use the Admin Consoles available in AEM.
 seo-description: Lear how to use the Admin Consoles available in AEM.
 uuid: 701dc57c-f7b4-421e-a847-577ae2585e80
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
@@ -38,7 +38,7 @@ In this example, we are re-enabling the Classic UI for the Sites console.
    *  **Path**: `/apps/cq/core/content/nav/sites`
    * **Overlay Location**: `/apps/`
    * **Match Node Types**: active (select the checkbox)
- 
+
 1. Add the following boolean property to the overlaid node:
 
    `enableDesktopOnly = {Boolean}true`

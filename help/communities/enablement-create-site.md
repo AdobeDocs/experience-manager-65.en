@@ -5,7 +5,7 @@ description: Create a community site for enablement
 seo-description: Create a community site for enablement
 uuid: 6822cc99-e272-4661-bddf-aa0800b88c41
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
@@ -34,17 +34,17 @@ On the **Site Template** step, enter a title, description, the name for the URL,
 
 * **Community Site Title**: `Enablement Tutorial`
 
-* **Community Site Description**: `A site for enabling the community to learn.`  
+* **Community Site Description**: `A site for enabling the community to learn.`
 
-* **Community Site Root**: (leave blank for default root `/content/sites`)  
+* **Community Site Root**: (leave blank for default root `/content/sites`)
 
 * **Cloud Configurations**: (leave blank if no cloud configurations are specified) provide path to the specified cloud configurations.
-* **Community Site Base Language**: (leave untouched for single language: English) use the pull down menu to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.  
+* **Community Site Base Language**: (leave untouched for single language: English) use the pull down menu to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
 
 * **[!UICONTROL Community Site Name]**: `enable`
 
     * the initial URL will be displayed underneath the Community Site Name
-    * for a valid URL, append a base language code + ".html"  
+    * for a valid URL, append a base language code + ".html"
 
       *for example*, http://localhost:4502/content/sites/ `enable/en.html`
 
@@ -147,13 +147,13 @@ The [Translation settings](sites-console.md#translation) specify whether or not 
 
 For an enablement community, it is necessary to identify one or more Community Enablement Managers.
 
-* **[!UICONTROL Enablement Managers]** 
+* **[!UICONTROL Enablement Managers]**
   (required) Members of the `Community Enablement Managers` group are available to be selected to manage this community site.
 
     * Type "s"
     * Select `Sirius Nilson`
 
-* **[!UICONTROL Marketing Cloud Org Id]** 
+* **[!UICONTROL Marketing Cloud Org Id]**
   (optional) The ID for an Adobe Analytics account which is necessary when including [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) in the enablement reporting.
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
@@ -184,21 +184,21 @@ On selecting the ellipses icon (More Actions icon), Export Site and Delete Site 
 
 From left to right they are:
 
-* **Open Site** 
+* **Open Site**
   Select the pencil icon to open the community site in author edit mode, to add and/or configure page components
 
-* **Edit Site** 
+* **Edit Site**
   Select the properties icon to open the community site for modification of properties, such as the title or to change the theme
 
-* **Publish Site** 
+* **Publish Site**
   Select the world icon to publish the community site (to localhost:4503 by default)
 
-* **Export Site** 
-  Select the export icon to create a package of the community site that is both stored in [package manager](../../help/sites-administering/package-manager.md) and downloaded.  
-  
+* **Export Site**
+  Select the export icon to create a package of the community site that is both stored in [package manager](../../help/sites-administering/package-manager.md) and downloaded.
+
   Note that UGC is not included in the site package.
 
-* **Delete Site** 
+* **Delete Site**
   To delete the community site, select the Delete Site icon that appears on hovering the mouse over the site in Communities Site Console. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
 ![enablesiteactions](assets/enablesiteactions.png)
@@ -273,7 +273,7 @@ To get started
 
     * Select **[!UICONTROL Create Node]**
 
-        * **Name** localhost.4503  
+        * **Name** localhost.4503
 
           (Do *not* use `:`)
 
@@ -285,7 +285,7 @@ To get started
 
         * **Name** sling:match
         * **Type** String
-        * **Value** localhost.4503/\$ 
+        * **Value** localhost.4503/\$
 
           (Must end with '$' char)
 

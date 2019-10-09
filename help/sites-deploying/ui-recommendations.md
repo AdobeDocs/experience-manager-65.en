@@ -1,11 +1,11 @@
 ---
 title: User Interface Recommendations for Customers
 seo-title: User Interface Recommendations for Customers
-description: A list of recommendations related to the classic and touch-optimized user interfaces. 
-seo-description: A list of recommendations related to the classic and touch-optimized user interfaces. 
+description: A list of recommendations related to the classic and touch-optimized user interfaces.
+seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
 uuid: c661fb10-4dbc-4f8b-93be-3e77af1ad095
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
@@ -19,22 +19,22 @@ This document is intended to guide customers to make a choice on what UI to use 
 
 Terms of interest:
 
-* **UI (or standard UI)** 
-  Modern user interface that was introduced in 5.6.0 as a technology preview and extended in subsequent releases. It is based on the unified user experience for the Adobe Experience Cloud, formerly known as touch-enabled UI or touch UI.  
+* **UI (or standard UI)**
+  Modern user interface that was introduced in 5.6.0 as a technology preview and extended in subsequent releases. It is based on the unified user experience for the Adobe Experience Cloud, formerly known as touch-enabled UI or touch UI.
 
-* **Classic UI** 
+* **Classic UI**
   User interface based on ExtJS technology that was introduced with CQ 5.1 in 2008.
 
-* **Site Admin** 
+* **Site Admin**
   Capabilities to manage the site hierarchy (move, activate, managed references) and create new pages.
 
-* **Page Authoring** 
+* **Page Authoring**
   Capabilities to add/edit the content of a page.
 
-* **DAM/Assets Admin** 
+* **DAM/Assets Admin**
   Capabilities to manage digital assets (including images, video, documents, downloads).
 
-* **ContextHub** 
+* **ContextHub**
   Capabilities to aggregate information about the visitor and use it for various purposes. Provides an user interface to simulate persons visiting the site. Starting AEM 6.2, ContextHub replaced the previous technology, Client Context.
 
 ## General {#general}
@@ -51,46 +51,46 @@ Adobe does not plan to make further enhancements to the Classic UI starting AEM 
 
 The following is a list of recommendations from Product Management for Adobe Experience Manager 6.4:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>My project...</th> 
-   <th>Recommendations</th> 
-  </tr> 
-  <tr> 
-   <td>Is just starting to use Adobe Experience Manager.</td> 
-   <td>Use the default UI.</td> 
-  </tr> 
-  <tr> 
-   <td><p>Has used AEM for a while.</p> <p>Has used the product UI out-of-the-box and developed custom components for the sites.<br /> </p> </td> 
-   <td> 
-    <ol> 
-     <li>Update to 6.4</li> 
-     <li>Use the default UI for site administration, assets, .. etc.<br /> </li> 
-     <li>Configure the "Edit Page" action to open the classic UI Page Editor. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li> 
-    </ol> <p>Then, in a second phase:</p> 
-    <ol> 
-     <li>Update your components dialogs to use the Coral 3 dialog format. Adobe recommends to use the <a href="/help/sites-developing/dialog-conversion.md">Dialog Conversion Tool</a> to update the components.</li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Has built a site that uses the ClientContext with integrations.<br /> </td> 
-   <td> 
-    <ol> 
-     <li>Update to 6.4</li> 
-     <li>Use the default UI for site administration, assets, .. etc.</li> 
-     <li>Configure the "Edit Page" action to open the classic UI Page Editor. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li> 
-    </ol> <p>Then, in a second phase:</p> 
-    <ol> 
-     <li>Update your components dialogs to use the Coral 3 dialog format. Adobe recommends to use the <a href="/help/sites-developing/dialog-conversion.md">Dialog Conversion Tool</a> to update the components.</li> 
-     <li>Configure the ContextHub (the replacement for the ClientContext) and update the page templates to use the ContextHub. Note that the ContextHub has a compatibility mode that allows loading custom ClientContext stores.</li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Has used CQ/AEM for many years.</p> <p>Has extended the product UI (e.g Site Admin) and built components with extensive edit dialogs.</p> </td> 
-   <td><p>Update to 6.4 and configure the classic UI as the default for page authoring for all users. See <a href="#selecting-your-ui">Selecting Your UI</a>.</p> <p>Then start a project to apply customization and optimize component dialogs in Coral 3 format. See <a href="#resources-to-help">Resources to Help</a>.<br /> </p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>My project...</th>
+   <th>Recommendations</th>
+  </tr>
+  <tr>
+   <td>Is just starting to use Adobe Experience Manager.</td>
+   <td>Use the default UI.</td>
+  </tr>
+  <tr>
+   <td><p>Has used AEM for a while.</p> <p>Has used the product UI out-of-the-box and developed custom components for the sites.<br /> </p> </td>
+   <td>
+    <ol>
+     <li>Update to 6.4</li>
+     <li>Use the default UI for site administration, assets, .. etc.<br /> </li>
+     <li>Configure the "Edit Page" action to open the classic UI Page Editor. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li>
+    </ol> <p>Then, in a second phase:</p>
+    <ol>
+     <li>Update your components dialogs to use the Coral 3 dialog format. Adobe recommends to use the <a href="/help/sites-developing/dialog-conversion.md">Dialog Conversion Tool</a> to update the components.</li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td>Has built a site that uses the ClientContext with integrations.<br /> </td>
+   <td>
+    <ol>
+     <li>Update to 6.4</li>
+     <li>Use the default UI for site administration, assets, .. etc.</li>
+     <li>Configure the "Edit Page" action to open the classic UI Page Editor. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li>
+    </ol> <p>Then, in a second phase:</p>
+    <ol>
+     <li>Update your components dialogs to use the Coral 3 dialog format. Adobe recommends to use the <a href="/help/sites-developing/dialog-conversion.md">Dialog Conversion Tool</a> to update the components.</li>
+     <li>Configure the ContextHub (the replacement for the ClientContext) and update the page templates to use the ContextHub. Note that the ContextHub has a compatibility mode that allows loading custom ClientContext stores.</li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td><p>Has used CQ/AEM for many years.</p> <p>Has extended the product UI (e.g Site Admin) and built components with extensive edit dialogs.</p> </td>
+   <td><p>Update to 6.4 and configure the classic UI as the default for page authoring for all users. See <a href="#selecting-your-ui">Selecting Your UI</a>.</p> <p>Then start a project to apply customization and optimize component dialogs in Coral 3 format. See <a href="#resources-to-help">Resources to Help</a>.<br /> </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## FAQ {#faq}
@@ -117,13 +117,13 @@ For background information on basic handling:
 For detailed development information:
 
 * [Touch-optimized UI architecture](/help/sites-developing/touch-ui-concepts.md).
-* Use the [Dialog Conversion tool](/help/sites-developing/dialog-conversion.md) to convert component Edit dialogs from the classic UI to the touch-optimized UI.  
+* Use the [Dialog Conversion tool](/help/sites-developing/dialog-conversion.md) to convert component Edit dialogs from the classic UI to the touch-optimized UI.
 
-* [Structure of the touch-optimized UI](/help/sites-developing/touch-ui-structure.md).  
+* [Structure of the touch-optimized UI](/help/sites-developing/touch-ui-structure.md).
 
-* [Customizing the consoles in the touch-optimized UI](/help/sites-developing/customizing-consoles-touch.md) (includes sample code).  
+* [Customizing the consoles in the touch-optimized UI](/help/sites-developing/customizing-consoles-touch.md) (includes sample code).
 
-* [Customizing page authoring in the touch-optimized UI](/help/sites-developing/customizing-page-authoring-touch.md) (includes sample code).  
+* [Customizing page authoring in the touch-optimized UI](/help/sites-developing/customizing-page-authoring-touch.md) (includes sample code).
 
 * [AEM Gem Session on touch-optimized customization](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Granite UI documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).

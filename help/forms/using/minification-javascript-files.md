@@ -6,7 +6,7 @@ seo-description: Instructions to generate minified code after AEM Forms workspac
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 ---
@@ -29,9 +29,9 @@ To generate minified code for semantic changes follow these steps.
 
    ```
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
-   
+
    To
-   
+
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
@@ -44,9 +44,9 @@ To generate minified code for semantic changes follow these steps.
                name="sharequeue"
                path="runtime/models/sharequeue.js"
                service="service"/>
-   
+
    To
-   
+
    <sharequeue
                name="sharequeue"
                path="runtime/myModels/mySharequeue.js"

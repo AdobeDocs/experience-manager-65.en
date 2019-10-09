@@ -5,7 +5,7 @@ description: Learn about Asset templates in AEM Assets and how to use Asset temp
 seo-description: Learn about Asset templates in AEM Assets and how to use Asset templates to create marketing collateral.
 uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
@@ -120,7 +120,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-317](assets/chlimage_1-317.png)
 
-1. To swap an image, click/tap the **[!UICONTROL Asset Finder]** icon. 
+1. To swap an image, click/tap the **[!UICONTROL Asset Finder]** icon.
 
    ![chlimage_1-318](assets/chlimage_1-318.png)
 
@@ -136,7 +136,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
-1. To edit a specific page in a multipage collateral, use the page navigator at the bottom. 
+1. To edit a specific page in a multipage collateral, use the page navigator at the bottom.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
@@ -161,7 +161,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. Click/tap the PDF rendition from the list of renditions to download the the PDF file. Open the PDF file to review the collateral. 
+1. Click/tap the PDF rendition from the list of renditions to download the the PDF file. Open the PDF file to review the collateral.
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 

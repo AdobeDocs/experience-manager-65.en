@@ -5,7 +5,7 @@ description: If a user spends more than 60 seconds on a field, a fieldvisit even
 seo-description: If a user spends more than 60 seconds on a field, a fieldvisit event is triggered and the details of the field are sent to Adobe SiteCatalyst.
 uuid: 2f790085-2f1a-45be-9a69-6100c76dcae0
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
 ---
@@ -14,45 +14,45 @@ discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
 
 Out of the box, the following events are tracked in an analytics enabled Adaptive Form:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Event</th> 
-   <th>Available variables</th> 
-  </tr> 
-  <tr> 
-   <td>render</td> 
-   <td>formName, formTitle, formInstance, source</td> 
-  </tr> 
-  <tr> 
-   <td>abandon</td> 
-   <td>formName, formTitle, formInstance, panelName, panelTitle</td> 
-  </tr> 
-  <tr> 
-   <td>save</td> 
-   <td>formName, formTitle, formInstance, panelName, source</td> 
-  </tr> 
-  <tr> 
-   <td>submit</td> 
-   <td>formName, formTitle, formInstance, source</td> 
-  </tr> 
-  <tr> 
-   <td>error</td> 
-   <td>formName, formTitle, fieldName, fieldTitle, panelTitle</td> 
-  </tr> 
-  <tr> 
-   <td>help</td> 
-   <td>formName, formTitle, fieldName, fieldTitle, panelTitle</td> 
-  </tr> 
-  <tr> 
-   <td>fieldVisit</td> 
-   <td>formName, formTitle, fieldName, fieldTitle, panelTitle<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>panelVisit</td> 
-   <td>formName, formTitle, panelName, panelTitle</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Event</th>
+   <th>Available variables</th>
+  </tr>
+  <tr>
+   <td>render</td>
+   <td>formName, formTitle, formInstance, source</td>
+  </tr>
+  <tr>
+   <td>abandon</td>
+   <td>formName, formTitle, formInstance, panelName, panelTitle</td>
+  </tr>
+  <tr>
+   <td>save</td>
+   <td>formName, formTitle, formInstance, panelName, source</td>
+  </tr>
+  <tr>
+   <td>submit</td>
+   <td>formName, formTitle, formInstance, source</td>
+  </tr>
+  <tr>
+   <td>error</td>
+   <td>formName, formTitle, fieldName, fieldTitle, panelTitle</td>
+  </tr>
+  <tr>
+   <td>help</td>
+   <td>formName, formTitle, fieldName, fieldTitle, panelTitle</td>
+  </tr>
+  <tr>
+   <td>fieldVisit</td>
+   <td>formName, formTitle, fieldName, fieldTitle, panelTitle<br /> </td>
+  </tr>
+  <tr>
+   <td>panelVisit</td>
+   <td>formName, formTitle, panelName, panelTitle</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Customizing the field visit event timeout {#customizing-the-field-visit-event-timeout}
@@ -65,7 +65,7 @@ You can modify the `trackEvent`function available in `/libs/afanalytics/js/custo
 
 You can evaluate value of *eventName *and *variableValueMap* arguments to change the tracking behavior of events. For example, you can choose to send the information to analytics server after a certain number of error events occur. You can also choose to perform any of the following customizations:
 
-* You can set a threshold time before sending the event.  
+* You can set a threshold time before sending the event.
 * You can maintain a state to decide action, for example, *fieldVisit* pushes a dummy event based on the timestamp of the last event.
 * You can use the `pushEvent` function to send the event to analytics server *.*
 

@@ -5,7 +5,7 @@ description: This article helps establish clear goals, phases and deliverables w
 seo-description: This article helps establish clear goals, phases and deliverables when planning the AEM upgrade.
 uuid: e912e097-a042-46e5-8084-125a6d05ac8b
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 901108a1-c0cb-4680-bc71-6266bcde2775
@@ -31,52 +31,52 @@ Note that it is possible to upgrade directly from AEM versions 6.0 and up to 6.4
 
 Below you will find a list of areas that are impacted in a typical AEM Upgrade project:
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td><strong>Component</strong></td> 
-   <td><strong>Impact</strong></td> 
-   <td><strong>Description</strong></td> 
+   <td><strong>Component</strong></td>
+   <td><strong>Impact</strong></td>
+   <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>Operating System</td> 
-   <td>Uncertain, but subtle effects</td> 
-   <td>At the time of the AEM upgrade, it may be time to upgrade the operating system as well and this might have some impact.</td> 
+   <td>Operating System</td>
+   <td>Uncertain, but subtle effects</td>
+   <td>At the time of the AEM upgrade, it may be time to upgrade the operating system as well and this might have some impact.</td>
   </tr>
   <tr>
-   <td>Java Runtime</td> 
-   <td>Moderate Impact</td> 
-   <td>AEM 6.3 requires JRE 1.7.x (64bit) or later. JRE 1.8 is the only version currently supported by Oracle.</td> 
+   <td>Java Runtime</td>
+   <td>Moderate Impact</td>
+   <td>AEM 6.3 requires JRE 1.7.x (64bit) or later. JRE 1.8 is the only version currently supported by Oracle.</td>
   </tr>
   <tr>
-   <td>Hardware</td> 
-   <td>Moderate Impact</td> 
-   <td>Online Revision Cleanup requires free<br /> disk space equal to 25% of the repository's size and 15% free heap space<br /> to complete successfully. You may need to upgrade your hardware to<br /> ensure sufficient resources for Online Revision Cleanup to fully<br /> execute. Additionally, if upgrading from a version prior to AEM 6, there<br /> may be additional storage requirements.</td> 
+   <td>Hardware</td>
+   <td>Moderate Impact</td>
+   <td>Online Revision Cleanup requires free<br /> disk space equal to 25% of the repository's size and 15% free heap space<br /> to complete successfully. You may need to upgrade your hardware to<br /> ensure sufficient resources for Online Revision Cleanup to fully<br /> execute. Additionally, if upgrading from a version prior to AEM 6, there<br /> may be additional storage requirements.</td>
   </tr>
   <tr>
-   <td>Content Repository (CRX or Oak)</td> 
-   <td>High Impact</td> 
-   <td>Starting from version 6.1, AEM does not support CRX2, so a migration to<br /> Oak (CRX3) is required if upgrading from an older version. AEM 6.3 has<br /> implemented a new Segment Node Store that also requires a migration. The<br /> crx2oak tool is used for this purpose.</td> 
+   <td>Content Repository (CRX or Oak)</td>
+   <td>High Impact</td>
+   <td>Starting from version 6.1, AEM does not support CRX2, so a migration to<br /> Oak (CRX3) is required if upgrading from an older version. AEM 6.3 has<br /> implemented a new Segment Node Store that also requires a migration. The<br /> crx2oak tool is used for this purpose.</td>
   </tr>
   <tr>
-   <td>AEM Components/Content</td> 
-   <td>Moderate Impact</td> 
-   <td><code>/libs</code> and <code>/apps</code> are easily handled through the upgrade, but <code>/etc</code> usually requires some manual re-application of customizations.</td> 
+   <td>AEM Components/Content</td>
+   <td>Moderate Impact</td>
+   <td><code>/libs</code> and <code>/apps</code> are easily handled through the upgrade, but <code>/etc</code> usually requires some manual re-application of customizations.</td>
   </tr>
   <tr>
-   <td>AEM Services</td> 
-   <td>Low Impact</td> 
-   <td>Most AEM core services are tested for upgrade. This is an aera of low impact.</td> 
+   <td>AEM Services</td>
+   <td>Low Impact</td>
+   <td>Most AEM core services are tested for upgrade. This is an aera of low impact.</td>
   </tr>
   <tr>
-   <td>Custom Application Services</td> 
-   <td>Low to High Impact</td> 
-   <td>Depending on the application and customization, there may be be<br /> dependencies on JVM, operating system versions and some indexing related<br /> changes, as indexes are not generated automatically in Oak.</td> 
+   <td>Custom Application Services</td>
+   <td>Low to High Impact</td>
+   <td>Depending on the application and customization, there may be be<br /> dependencies on JVM, operating system versions and some indexing related<br /> changes, as indexes are not generated automatically in Oak.</td>
   </tr>
   <tr>
-   <td>Custom Application Content</td> 
-   <td>Low to High Impact</td> 
-   <td>Content that will not be handled through the upgrade can be backed up<br /> before the upgrade takes place and then moved back into the repository.<br /> Most content can be handled through the migration tool.</td> 
+   <td>Custom Application Content</td>
+   <td>Low to High Impact</td>
+   <td>Content that will not be handled through the upgrade can be backed up<br /> before the upgrade takes place and then moved back into the repository.<br /> Most content can be handled through the migration tool.</td>
   </tr>
  </tbody>
 </table>

@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 167b74dd-eb64-4eae-ba20-17d181203493
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: c80f5e74-3f78-40c0-8ab3-c3ad38251818
@@ -36,13 +36,13 @@ When organizing a collection of assets, for example, all *Nature* images, you ca
 
 You can limit who can access certain folders in Assets by making the folder part of a closed user group (CUG). To make a folder part of a CUG:
 
-1. In Assets, right-click the folder you want to add closed user group properties for and select **[!UICONTROL Properties]**.  
+1. In Assets, right-click the folder you want to add closed user group properties for and select **[!UICONTROL Properties]**.
 
 1. Click the **[!UICONTROL CUG]** tab.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-1. Select the **[!UICONTROL Enabled]** check box to make the folder and its assets available only to a closed user group.  
+1. Select the **[!UICONTROL Enabled]** check box to make the folder and its assets available only to a closed user group.
 
 1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **[!UICONTROL Add item]**. If necessary, add the realm. Click **[!UICONTROL OK]** to save your changes.
 

@@ -5,7 +5,7 @@ description: How community sites, templates, and groups function
 seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
@@ -63,7 +63,7 @@ Following are links to essential information for Communities components, functio
 
 ## Javadocs {#javadocs}
 
-The [online javadocs](../../help/sites-developing/reference-materials.md) reflect the APIs available in the AEM 6.3 release.  
+The [online javadocs](../../help/sites-developing/reference-materials.md) reflect the APIs available in the AEM 6.3 release.
 Communities APIs are in `com.adobe.cq.social.*` packages.
 
 For each [feature pack](deploy-communities.md#latestfeaturepack), a javadoc jar is made available. For more information, visit [Using Maven for Communities](maven.md#javadocs).

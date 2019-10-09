@@ -5,7 +5,7 @@ description: Learn how to troubleshoot AEM by working with logs.
 seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: b64e0b25-5228-4c2f-9cc1-dde524134026
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
@@ -17,8 +17,8 @@ This section includes detailed information on logs available to help you trouble
 
 CRX records detailed logs. After you unpack and start Quickstart, you can find logs in the following locations:
 
-* crx-quickstart/launchpad/logs 
-* crx-quickstart/server/logs 
+* crx-quickstart/launchpad/logs
+* crx-quickstart/server/logs
 * crx-quickstart/logs
 
 ## Activating the DEBUG Log Level {#activating-the-debug-log-level}
@@ -39,7 +39,7 @@ A line in the debug file usually starts with DEBUG, and then provides the log le
 DEBUG 3 WebApp Panel: WebApp successfully deployed
 ```
 
-The log levels are as follows: 
+The log levels are as follows:
 
 | 0 |Fatal error |The action has failed, and the installer cannot proceed. |
 |---|---|---|

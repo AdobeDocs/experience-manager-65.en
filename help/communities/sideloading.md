@@ -5,7 +5,7 @@ description: Communities component sideloading is useful when a web page is desi
 seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
@@ -46,17 +46,17 @@ When adding the SCF component, the most common tag to use is the DIV tag, but ot
 
 Whatever tag is used, at a minimum, the element must conform to the normal SCF root element pattern by containing these two attributes:
 
-* **data-component-id** 
+* **data-component-id**
   The effective path to the added component
 
-* **data-scf-component** 
+* **data-scf-component**
   The resourceType of the component
 
 Following is one example of an added comments component:
 
 ```xml
 <div
-    class="scf-commentsystem scf translation-commentsystem" 
+    class="scf-commentsystem scf translation-commentsystem"
     data-component-id="<%= currentPage.getPath()%>/jcr:content/content-left/comments"
     data-scf-component="social/commons/components/hbs/comments"
 >

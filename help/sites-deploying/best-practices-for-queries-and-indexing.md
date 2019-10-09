@@ -5,7 +5,7 @@ description: This article provides guidelines on how to optimize your indexes an
 seo-description: This article provides guidelines on how to optimize your indexes and queries.
 uuid: 0609935a-4a72-4b8e-a28e-daede9fc05f4
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
@@ -219,7 +219,7 @@ Re-indexing of Oak indexes is to be avoided unless covered by a reasons in the t
 >
 >Prior to consulting the tables below to determine is re-indexing is useful,** always **verify:
 >
->* the query is correct 
+>* the query is correct
 >* the query resolves to the expected index (using [Explain Query](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
 >* the indexing process has completed
 >
@@ -321,17 +321,17 @@ The following detail possible issues together with resolutions:
 
 * How to Resolve:
 
-    * Perform a traversing repository check; for example: 
+    * Perform a traversing repository check; for example:
 
-      [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck) 
+      [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
       traversing the repository determines if other binaries (besides lucene files) are missing
-    
+
     * If binaries other than lucene indexes are missing, restore from backup
     * Otherwise, [re-index](#how-to-re-index) *all* lucene indexes
-    * Note: 
+    * Note:
 
-      This condition is indicative of a misconfigured datastore that may result in ANY binary (eg. assets binaries) to go missing. 
+      This condition is indicative of a misconfigured datastore that may result in ANY binary (eg. assets binaries) to go missing.
 
       In this case, restore to the last known good version of the repository to recover all missing binaries.
 
@@ -348,7 +348,7 @@ The following detail possible issues together with resolutions:
 
 * How to Verify:
 
-    * The `AsyncIndexUpdate` (every 5s) will fail with an exception in the error.log: 
+    * The `AsyncIndexUpdate` (every 5s) will fail with an exception in the error.log:
 
       `...a Lucene index file is corrupt...`
 
@@ -378,10 +378,10 @@ The following detail possible issues together with resolutions:
 
     * `[oak:queryIndexDefinition]@reindex-async=true`
 
-* Re-index the property index asynchronously using the Web Console via the **PropertyIndexAsyncReindex** MBean; 
+* Re-index the property index asynchronously using the Web Console via the **PropertyIndexAsyncReindex** MBean;
 
-  for example, 
-  
+  for example,
+
   [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
 #### Re-indexing Lucene Property indexes {#re-indexing-lucene-property-indexes}

@@ -5,7 +5,7 @@ description: The Apache Sling Discovery feature provides a Java API that enables
 seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
 uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
@@ -35,7 +35,7 @@ Jobs do not require payloads. However, the payload is necessary if the job requi
 
 Create a client that calls the JobManager.addJob method to create a job that an automatically-selected JobConsumer executes. Provide the following information to create the job:
 
-* Topic: The job topic. 
+* Topic: The job topic.
 * Name: (Optional)
 * Properties Map: A `Map<String, Object>` object that contains any number of properties, such as the input payload paths and output Payload paths. This Map object is available to the JobConsumer object that executes the job.
 
@@ -128,7 +128,7 @@ public class MyJobConsumer implements JobConsumer {
  public static final String TOPIC = "com/adobe/example/offloading";
 
  @Property(value = TOPIC)
- static final String myTopic = JobConsumer.PROPERTY_TOPICS; 
+ static final String myTopic = JobConsumer.PROPERTY_TOPICS;
 
  @Reference
  private ResourceResolverFactory resolverFactory;
@@ -174,7 +174,7 @@ The MyJobConsumer class generates the following log messages for an input payloa
 
 The Consumed property can be observed using CRXDE Lite:
 
-![chlimage_1-25](assets/chlimage_1-25.png) 
+![chlimage_1-25](assets/chlimage_1-25.png)
 
 ## Maven Dependencies {#maven-dependencies}
 
@@ -185,7 +185,7 @@ Add the following dependency defenitions to your pom.xml file so that Maven can 
    <groupId>org.apache.sling</groupId>
    <artifactId>org.apache.sling.event</artifactId>
    <version>3.1.5-R1485539</version>
-   <scope>provided</scope> 
+   <scope>provided</scope>
 </dependency>
 <dependency>
    <groupId>com.adobe.granite</groupId>

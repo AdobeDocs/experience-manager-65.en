@@ -7,7 +7,7 @@ uuid: 13b8481e-5ef0-4a07-9602-7bc4d9e05dd4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 ---
 
@@ -20,9 +20,9 @@ Printing to this printer from any application sends the document (in PostScript 
 The following steps are required to set up a PDFG Network Printer:
 
 1. Configure email settings. (See [Configure email settings for PDFG Network Printer](setting-pdfg-network-printer-windows.md#configure-email-settings-for-pdfg-network-printer).)
-1. In administration console, configure the PDFG Network Printer settings. (See [Configure the PDFG Network Printer settings](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings).) 
+1. In administration console, configure the PDFG Network Printer settings. (See [Configure the PDFG Network Printer settings](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings).)
 1. Ensure that your users are configured with a valid email address in the AEM forms database and assign the PDFGUserPermission to each user. <!-- Fix broken link See Setting up and organizing users -->
-1. Ensure that 32-bit JRE6 is installed on your users’ computers. 
+1. Ensure that 32-bit JRE6 is installed on your users’ computers.
 1. Install the printer on your users’ computers. (See [Install PDFG Network Printer on a user’s computer](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
 ## Configure email settings for PDFG Network Printer {#configure-email-settings-for-pdfg-network-printer}
@@ -33,7 +33,7 @@ The following steps are required to set up a PDFG Network Printer:
 ## Configure the PDFG Network Printer settings {#configure-the-pdfg-network-printer-settings}
 
 1. In administration console, click Services &gt; PDF Generator &gt; PDFG Network Printer
-1. In the Adobe PDF Settings and the Security Settings lists, select the options to apply to the generated PDF. For details on these settings, see [Configuring Adobe PDF settings](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) and [Configuring security settings](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings). 
+1. In the Adobe PDF Settings and the Security Settings lists, select the options to apply to the generated PDF. For details on these settings, see [Configuring Adobe PDF settings](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) and [Configuring security settings](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
 1. To send the converted PDFs back to users, select the Email The Converted PDF File Back To The User option and specify the following information:
 
     * The email address to use to send PDFs to the users
@@ -42,7 +42,7 @@ The following steps are required to set up a PDFG Network Printer:
 
 1. To send the converted PDFs to a AEM forms service or process, select the Forward The Converted PDF To The Specified AEM forms Service Or Process option and specify the following information:
 
-    * The name of the service to invoke 
+    * The name of the service to invoke
     * The name of the operation of the service to invoke
     * The name of the input parameter, as specified in the component.xml file of the service or process. The PDF document will be used as a value for that input parameter.
 
@@ -56,7 +56,7 @@ Users who have either the PDFG Administrator or PDFG User role can install a PDF
 
 1. (PDFG Administrators) In administration console, click Services &gt; PDF Generator &gt; PDFG Network Printer.
 
-   (PDFG Users) Go to `http(s)://[host]:[port]/pdfgui` and click the link under PDFG Network Printer Installation. 
+   (PDFG Users) Go to `http(s)://[host]:[port]/pdfgui` and click the link under PDFG Network Printer Installation.
 
 1. Under PDFG Network Printer Installation, click the link. When prompted for user account information, specify the user name and password that you used in step 1 to log in. A message appears, stating that the printer has been successfully installed.
 

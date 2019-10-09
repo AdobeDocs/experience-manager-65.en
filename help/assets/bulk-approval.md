@@ -5,7 +5,7 @@ description: Set up review workflows for assets within a folder or a collection 
 seo-description: Set up review workflows for assets within a folder or a collection and share it with reviewers.
 uuid: 60e137ec-ee0b-42cc-908d-2a7ab229893a
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: authoring
 discoiquuid: 93455c0c-c3da-4d8c-8e43-933a5fd08770
@@ -46,7 +46,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 
    ![task_details](assets/task_details.png)
 
-1. In the Advanced tab, enter a label to be used to create the URI. 
+1. In the Advanced tab, enter a label to be used to create the URI.
 
    ![review_name](assets/review_name.png)
 
