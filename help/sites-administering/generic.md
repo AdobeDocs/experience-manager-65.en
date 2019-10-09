@@ -17,14 +17,14 @@ docset: aem65
 
 The AEM generic solution provides methods of managing the commerce information held within the repository (as opposed to using an external ecommerce engine). This includes:
 
-* [Products](..//help/sites-administering/concepts.md#products)
-* [Product Variants](..//help/sites-administering/concepts.md#product-variants)
+* [Products](/help/sites-administering/concepts.md#products)
+* [Product Variants](/help/sites-administering/concepts.md#product-variants)
 
-* [Catalog(s)](..//help/sites-administering/concepts.md#catalogs)
-* [Promotions](..//help/sites-administering/concepts.md#promotions)
-* [Vouchers](..//help/sites-administering/concepts.md#vouchers)
-* [Orders](..//help/sites-administering/concepts.md#shopping-cart-and-orders)
-* [Proxy Pages](..//help/sites-administering/concepts.md#proxy-pages)
+* [Catalog(s)](/help/sites-administering/concepts.md#catalogs)
+* [Promotions](/help/sites-administering/concepts.md#promotions)
+* [Vouchers](/help/sites-administering/concepts.md#vouchers)
+* [Orders](/help/sites-administering/concepts.md#shopping-cart-and-orders)
+* [Proxy Pages](/help/sites-administering/concepts.md#proxy-pages)
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Specify:
 
     * **Importer**
-      The importer for the specific [commerce provider](..//help/sites-administering/concepts.md#commerce-providers), by default `Geometrixx`.
+      The importer for the specific [commerce provider](/help/sites-administering/concepts.md#commerce-providers), by default `Geometrixx`.
 
     * **Source **
       The file you want imported; you can use the browser to select a file.
@@ -111,7 +111,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
       `/etc/commerce/products/<*store name*>/`
 
     * **Commerce Provider**
-      The importer for your [commerce provider](..//help/sites-administering/concepts.md#commerce-providers); by default Geometrixx.
+      The importer for your [commerce provider](/help/sites-administering/concepts.md#commerce-providers); by default Geometrixx.
 
     * **Source File**
       The location in the repository of the file you want imported.
@@ -138,7 +138,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
    ![](do-not-localize/chlimage_1-2.png)
 
-1. The wizard will open. Use the **Basic** and **Product Tabs** to enter the [product attributes](..//help/sites-administering/concepts.md#product-attributes) for the new product or product variant.
+1. The wizard will open. Use the **Basic** and **Product Tabs** to enter the [product attributes](/help/sites-administering/concepts.md#product-attributes) for the new product or product variant.
 
    >[!NOTE]
    >
@@ -174,7 +174,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. The [product attributes](..//help/sites-administering/concepts.md#product-attributes) will be shown. Use **Edit** and **Done** to make any changes.
+1. The [product attributes](/help/sites-administering/concepts.md#product-attributes) will be shown. Use **Edit** and **Done** to make any changes.
 
 ### Showing Product References {#showing-product-references}
 
@@ -657,7 +657,7 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
    ![](do-not-localize/chlimage_1-14.png)
 
-1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](..//help/sites-administering/concepts.md#order-information).
+1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](/help/sites-administering/concepts.md#order-information).
 
 1. Select **Create** to save the information.
 
@@ -675,5 +675,5 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
    ![](do-not-localize/chlimage_1-15.png)
 
-1. The [order information](..//help/sites-administering/concepts.md#order-information) will be shown. Use **Edit** and **Done** to make any changes.
+1. The [order information](/help/sites-administering/concepts.md#order-information) will be shown. Use **Edit** and **Done** to make any changes.
 

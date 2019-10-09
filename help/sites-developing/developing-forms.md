@@ -317,7 +317,7 @@ When the Show/Hide configuration is invalid, the configuration is provided only 
 
 ### Developing Scripts for use with Forms {#developing-scripts-for-use-with-forms}
 
-For more information about the API elements that can be used when writing scripts see the [javadocs related to forms](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.md).
+For more information about the API elements that can be used when writing scripts see the [javadocs related to forms](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 You can use this for actions such as calling a service before the form is submitted and canceling the service if it fails:
 

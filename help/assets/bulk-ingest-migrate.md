@@ -41,5 +41,5 @@ See also [Configuring Dynamic Media - Scene7 mode](/help/assets/config-dms7.md).
 1. Adobe Enterprise Support for AEM provides you the FTP credentials and access to feature pack 18912.
 1. When you receive the feature pack 18912, install it.
 
-   See [How to Work with Packages](../..//help/sites-administering/package-manager.md) for more information on using Package Share and packages in AEM.
+   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and packages in AEM.
 

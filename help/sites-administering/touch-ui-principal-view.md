@@ -67,7 +67,7 @@ Privileges can be added by searching using the text field and then selecting fro
 
 >[!NOTE]
 >
->For a complete list of privileges and descriptions, please see [this page](..//help/sites-administering/user-group-ac-admin.md#access-right-management).
+>For a complete list of privileges and descriptions, please see [this page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
@@ -83,7 +83,7 @@ In addition to list of privileges and the Permission Type on a given path, this 
 
 >[!NOTE]
 >
->For more information on what each restriction means, please consult [this page](..//help/sites-administering/user-group-ac-admin.md#restrictions).
+>For more information on what each restriction means, please consult [this page](/help/sites-administering/user-group-ac-admin.md#restrictions).
 
 Restrictions can be added as shown below by choosing the restriction type, entering the value and hitting the **+** icon. ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
@@ -124,36 +124,36 @@ It caused confusion as to what exactly is being configured. The following table 
 <table>
  <tbody>
   <tr>
-   <th>Classic UI Privilege Combinations</th> 
-   <th>Permissions UI Privilege</th> 
+   <th>Classic UI Privilege Combinations</th>
+   <th>Permissions UI Privilege</th>
   </tr>
   <tr>
-   <td>Read</td> 
-   <td><code>jcr:read</code></td> 
+   <td>Read</td>
+   <td><code>jcr:read</code></td>
   </tr>
   <tr>
-   <td>Modify</td> 
-   <td><p><code>jcr:modifyProperties</code></p> <p><code>jcr:lockManagement</code></p> <p><code>jcr:versionManagement</code></p> </td> 
+   <td>Modify</td>
+   <td><p><code>jcr:modifyProperties</code></p> <p><code>jcr:lockManagement</code></p> <p><code>jcr:versionManagement</code></p> </td>
   </tr>
   <tr>
-   <td>Create</td> 
-   <td><p><code>jcr:addChildNodes</code></p> <p><code>jcr:nodeTypeManagement</code></p> </td> 
+   <td>Create</td>
+   <td><p><code>jcr:addChildNodes</code></p> <p><code>jcr:nodeTypeManagement</code></p> </td>
   </tr>
   <tr>
-   <td>Delete</td> 
-   <td><p><code>jcr:removeNode</code></p> <p><code>jcr:removeChildNodes</code></p> </td> 
+   <td>Delete</td>
+   <td><p><code>jcr:removeNode</code></p> <p><code>jcr:removeChildNodes</code></p> </td>
   </tr>
   <tr>
-   <td>Read ACL</td> 
-   <td><code>jcr:readAccessControl</code></td> 
+   <td>Read ACL</td>
+   <td><code>jcr:readAccessControl</code></td>
   </tr>
   <tr>
-   <td>Edit ACL</td> 
-   <td><code>jcr:modifyAccessControl</code></td> 
+   <td>Edit ACL</td>
+   <td><code>jcr:modifyAccessControl</code></td>
   </tr>
   <tr>
-   <td>Replicate</td> 
-   <td><code>crx:replicate</code></td> 
+   <td>Replicate</td>
+   <td><code>crx:replicate</code></td>
   </tr>
  </tbody>
 </table>

@@ -37,11 +37,11 @@ In addition to defining the management interface, the interface also defines the
 
 ### Using Annotations to Provide MBean Information {#using-annotations-to-provide-mbean-information}
 
-The [com.adobe.granite.jmx.annotation](/help/sites-developing/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.md) package provides several annotations and classes for easily providing MBean metadata to the JMX console. Use these annotations and classes instead of adding information to the MBean's MBeanInfo object directly.
+The [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) package provides several annotations and classes for easily providing MBean metadata to the JMX console. Use these annotations and classes instead of adding information to the MBean's MBeanInfo object directly.
 
 **Annotations**
 
-Add annotations to the management interface to specify MBean metadata. The information appears in the JMX console for each implementation class that is deployed. The following annotations are available (for complete information, see the [com.adobe.granite.jmx.annotation JavaDocs](/help/sites-developing/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.md)):
+Add annotations to the management interface to specify MBean metadata. The information appears in the JMX console for each implementation class that is deployed. The following annotations are available (for complete information, see the [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Description:** Provides a description of the MBean class or method. When used on the class declaration, the desctiption appears on the JMX Console page for the MBean. When used on a method, the desctiption appears as hover text for the corresponding attribute or operation.
 * **Impact:** The impact of a method. Valid parameter values are the fields defined by [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).

@@ -377,7 +377,7 @@ You can pass the following request parameters in a URL to launch the asset selec
    <td valign="top"><p>dialog</p> </td>
    <td valign="top"><p>true, false</p> </td>
    <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?dialog=true">https://localhost:4502/aem/assetpicker.html?dialog=true</a></p> </td>
-   <td valign="top"><p>Use these parameters to open the asset selector as <a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/layouts/dialog/index.html" target="_blank">Granite Dialog</a>. This option is only applicable when you launch the asset selector through <a href="https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/pathfield/index.html?highlight=pathfield" target="_blank">Granite Path Field</a>, and configure it as pickerSrc URL.</p> </td>
+   <td valign="top"><p>Use these parameters to open the asset selector as <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/layouts/dialog/index.html" target="_blank">Granite Dialog</a>. This option is only applicable when you launch the asset selector through <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/pathfield/index.html?highlight=pathfield" target="_blank">Granite Path Field</a>, and configure it as pickerSrc URL.</p> </td>
   </tr>
   <tr>
    <td valign="top"><p>assettype (S)</p> </td>

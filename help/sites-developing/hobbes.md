@@ -28,7 +28,7 @@ The AEM test framework uses Hobbes.js, a testing library written in Javascript. 
 
 >[!NOTE]
 >
->Refer to the Hobbes.js [documentation](/help/sites-developing/reference-materials/test-api/index.md) for full details of the API.
+>Refer to the Hobbes.js [documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) for full details of the API.
 
 ## Structure of Tests {#structure-of-tests}
 
@@ -101,7 +101,7 @@ Test Suites execute sequentially in the order that they appear in the console. Y
 
 The following procedure steps you through the creation and execution of a Test Suite using [We.Retail content](/help/sites-developing/we-retail.md), but you can easily modify the test to use a different web page.
 
-For full details about creating your own Test Suites, see the [Hobbes.js API documentation](/help/sites-developing/reference-materials/test-api/index.md).
+For full details about creating your own Test Suites, see the [Hobbes.js API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Right-click the `/etc/clientlibs` folder and click **Create > Create Folder**. Type `myTests` for the name and click **OK**.

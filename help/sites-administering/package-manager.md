@@ -228,7 +228,7 @@ To grant users the right to create, modify, upload, and install packages, you mu
 * **/etc/packages** (full rights excluding delete)
 * the node that contains the package contents
 
-See [Setting permissions](..//help/sites-administering/security.md#settingpagepermissions) for instructions on changing permissions.
+See [Setting permissions](/help/sites-administering/security.md#settingpagepermissions) for instructions on changing permissions.
 
 ### Creating a New Package {#creating-a-new-package}
 

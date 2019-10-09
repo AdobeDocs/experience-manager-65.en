@@ -42,7 +42,7 @@ To configure AEM to integrate with Salesforce:
 
 >[!CAUTION]
 >
->You need to install the [Salesforce Force API](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/com.adobe.cq.mcm.salesforce.content#) integration package before you continue with the procedure. For more details on how to work with packages see the [How to Work with Packages](..//help/sites-administering/package-manager.md#package-share) page.
+>You need to install the [Salesforce Force API](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/com.adobe.cq.mcm.salesforce.content#) integration package before you continue with the procedure. For more details on how to work with packages see the [How to Work with Packages](/help/sites-administering/package-manager.md#package-share) page.
 
 1. In AEM, navigate to **Cloud Services**. In Third-Party Services, click **Configure Now** in **Salesforce**.
 
@@ -55,8 +55,8 @@ To configure AEM to integrate with Salesforce:
    >The new configuration redirects to a new page: **https://localhost:4502/etc/cloudservices/salesforce/developer.html**. This is the exact same value that you need to specify in the Callback URL while createing the remote access application in Salesforce. These values must match.
 
 1. Log in to your salesforce account (or if you do not have one, create one at [https://developer.force.com](https://developer.force.com).)
-1. In Salesforce, navigate to **Create** &gt; **Apps **to get to **Connected Apps** (in former versions of salesforce, the workflow was **Deploy** &gt; **Remote Access**). 
-1. Click **New** to connect AEM with Salesforce. 
+1. In Salesforce, navigate to **Create** &gt; **Apps **to get to **Connected Apps** (in former versions of salesforce, the workflow was **Deploy** &gt; **Remote Access**).
+1. Click **New** to connect AEM with Salesforce.
 
    ![](assets/chlimage_1-71.png)
 
@@ -76,7 +76,7 @@ To configure AEM to integrate with Salesforce:
 
 1. In AEM, navigate to **Cloud Services** and navigate to the salesforce configuration you created earlier (for example, **developer**). Click **Edit** and enter the customer key and customer secret from salesforce.com.
 
-   ![](assets/chlimage_1-15.jpeg) 
+   ![](assets/chlimage_1-15.jpeg)
 
    | Login Url |This is the Salesforce Authorization Endpoint. Its value is pre-filled and serves most cases. |
    |---|---|
@@ -87,7 +87,7 @@ To configure AEM to integrate with Salesforce:
 
    ![](assets/chlimage_1-74.png)
 
-   In AEM, a confirmation dialog opens telling you that you connected successfully. 
+   In AEM, a confirmation dialog opens telling you that you connected successfully.
 
 1. Navigate to the root page of your website and click **Page Properties**. Then select **Cloud Services** and add **Salesforce** and select the correct confguration (for example, **developer**).
 
@@ -155,7 +155,7 @@ The salesforce client context store shows additional information about the curre
 To do this, you need to configure the following:
 
 1. Link an AEM user with a Salesforce ID via the Salesforce Connect component.
-1. Add the Salesforce Profile Data into the client context page to configure what properties you want to see. 
+1. Add the Salesforce Profile Data into the client context page to configure what properties you want to see.
 1. (Optional) Build a segment that uses the data from the Salesforce Client Context Store.
 
 ### Linking an AEM user with a Salesforce ID {#linking-an-aem-user-with-a-salesforce-id}
@@ -211,7 +211,7 @@ You can load user data from Salesforce in the Client Context to use for personal
 You can build a segment that uses data from the Salesforce Client Context Store. To do this:
 
 1. Navigate to segmentation in AEM either by going to **Tools** &gt; **Segmentation** or going to [https://localhost:4502/miscadmin#/etc/segmentation](https://localhost:4502/miscadmin#/etc/segmentation).
-1. Create or update a segment to include data from Salesforce. For more information, see [Segmentation](..//help/sites-administering/campaign-segmentation.md).
+1. Create or update a segment to include data from Salesforce. For more information, see [Segmentation](/help/sites-administering/campaign-segmentation.md).
 
 ## Searching Leads {#searching-leads}
 

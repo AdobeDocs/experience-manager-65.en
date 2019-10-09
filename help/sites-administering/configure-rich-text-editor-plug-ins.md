@@ -17,7 +17,7 @@ docset: aem65
 
 RTE functionalities are made available via a series of plug-ins, each with features property. You can configure the features property to enable or disable, one or more RTE features. This article describes how to specifically configure the RTE plug-ins.
 
-For details about the other RTE configurations, see [Configure Rich Text Editor](..//help/sites-administering/rich-text-editor.md).
+For details about the other RTE configurations, see [Configure Rich Text Editor](/help/sites-administering/rich-text-editor.md).
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ By default, `format`, `link`, `list`, `justify`, and `control` plugins and all t
 >
 >The respective `rtePlugins` node is referred to as `<rtePlugins-node>` to avoid duplication in this article.
 
-1. Using CRXDE Lite, locate the text component for your project.  
+1. Using CRXDE Lite, locate the text component for your project.
    ``
 1. Create the parent node of `<*rtePlugins-node*>` if it does not exist, before configuring any RTE plug-ins:
 
@@ -44,56 +44,56 @@ By default, `format`, `link`, `list`, `justify`, and `control` plugins and all t
         * text: .../text/dialog/items/tab1/items/**text**
 
     * Are of type:** jcr:primaryType** `cq:Widget`
-    
+
     * Both have the following property:
 
-        * **Name** `name`  
-        
+        * **Name** `name`
+
         * **Type** `String`
-        
+
         * **Value** `./text`
 
 1. Depending on the UI you are configuring for, create a node `<*rtePlugins-node*>`, if it does not exist:
 
-    * **Name** `rtePlugins`  
-    
+    * **Name** `rtePlugins`
+
     * **Type** `nt:unstructured`
 
 1. Below this create a node for each plug-in that you want to activate:
 
     * **Type** `nt:unstructured`
-    
+
     * **Name** the Plug-in ID of the plug-in required
 
 After activating a plug-in, follow these guidelines to configure `features` property.
 
 <table>
- <tbody> 
-  <tr> 
-   <td style="text-align: center;"><strong> </strong></td> 
-   <th scope="row" style="text-align: center;" valign="middle"><strong>Enable all features<br /> </strong></th> 
-   <th scope="row" style="text-align: center;" valign="middle"><strong>Enable a few specific features</strong></th> 
-   <th scope="row" style="text-align: center;" valign="middle"><strong>Disable all features<br /> </strong></th> 
-  </tr> 
-  <tr> 
-   <td><strong>Name</strong></td> 
-   <td>features</td> 
-   <td>features</td> 
-   <td>features</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Type</strong></td> 
-   <td>String</td> 
-   <td>String[] (multi-string; set Type to String and click Multi in CRXDE Lite)</td> 
-   <td>String</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Value</strong></td> 
-   <td>* (an asterisk)<br /> </td> 
-   <td>set to one, or more, feature values</td> 
-   <td><strong>-</strong></td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td style="text-align: center;"><strong> </strong></td>
+   <th scope="row" style="text-align: center;" valign="middle"><strong>Enable all features<br /> </strong></th>
+   <th scope="row" style="text-align: center;" valign="middle"><strong>Enable a few specific features</strong></th>
+   <th scope="row" style="text-align: center;" valign="middle"><strong>Disable all features<br /> </strong></th>
+  </tr>
+  <tr>
+   <td><strong>Name</strong></td>
+   <td>features</td>
+   <td>features</td>
+   <td>features</td>
+  </tr>
+  <tr>
+   <td><strong>Type</strong></td>
+   <td>String</td>
+   <td>String[] (multi-string; set Type to String and click Multi in CRXDE Lite)</td>
+   <td>String</td>
+  </tr>
+  <tr>
+   <td><strong>Value</strong></td>
+   <td>* (an asterisk)<br /> </td>
+   <td>set to one, or more, feature values</td>
+   <td><strong>-</strong></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Understand the findreplace plug-in {#findreplace}
@@ -106,9 +106,9 @@ The find and replace dialog becomes transparent when find is clicked and becomes
 
 When using RTE, authors can paste content in one of the following three modes:
 
-* **Browser mode**: Paste text using the browser's default paste implementation. It is not a recommended method as it may introduce unwanted markup.  
+* **Browser mode**: Paste text using the browser's default paste implementation. It is not a recommended method as it may introduce unwanted markup.
 
-* **Plain text mode**: Paste the clipboard content as plain text. It strips all elements of style and formatting from the copied content before inserting in AEM component.  
+* **Plain text mode**: Paste the clipboard content as plain text. It strips all elements of style and formatting from the copied content before inserting in AEM component.
 
 * **MS Word mode**: Paste the text, including tables, with formatting when copying from MS Word. Copying and pasting text from another source such as a web page or MS Excel is not supported and retain only partial formatting.
 
@@ -116,17 +116,17 @@ When using RTE, authors can paste content in one of the following three modes:
 
 You can provide some, all, or none of these three icons to your authors in the RTE toolbar:
 
-* **[!UICONTROL Paste (Ctrl+V)]**: Can be pre-configured to correspond to one of the above three Paste modes.  
+* **[!UICONTROL Paste (Ctrl+V)]**: Can be pre-configured to correspond to one of the above three Paste modes.
 
-* **[!UICONTROL Paste as Text]**: Provides Plain text mode functionality.  
+* **[!UICONTROL Paste as Text]**: Provides Plain text mode functionality.
 
 * **[!UICONTROL Paste from Word]**: Provides MS Word mode functionality.
 
 To configure RTE to display the required icons, follow these steps.
 
-1. Navigate to your component; for example:  
+1. Navigate to your component; for example:
    `/apps/<*myProject*>/components/text`
-1. Navigate to the node `rtePlugins/edit`. See [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin) if the node does not exist.
+1. Navigate to the node `rtePlugins/edit`. See [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin) if the node does not exist.
 1. Create the `features` property on the `edit` node and add one or more of the features.
 
    Save all changes.
@@ -137,19 +137,19 @@ You can pre-configure the behavior of the `Paste (Ctrl+V)` icon, using the follo
 
 The configuration allows for the following three types of use cases:
 
-* Paste text using the browser's default paste implementation. It is not a recommended method as it may introduce unwanted markup. Configured using `browser` below.  
+* Paste text using the browser's default paste implementation. It is not a recommended method as it may introduce unwanted markup. Configured using `browser` below.
 
-* Paste the clipboard content as plain text. It strips all elements of style and formatting from the copied content before inserting in AEM component. Configured using `plaintext` below.  
+* Paste the clipboard content as plain text. It strips all elements of style and formatting from the copied content before inserting in AEM component. Configured using `plaintext` below.
 
 * Paste the text, including tables, with formatting when copying from MS Word. Copying and pasting text from another source such as a web page or MS Excel is not supported and retain only partial formatting. Configured using `wordhtml` below.
 
-1. In your component, navigate to `<rtePlugins-node>/edit` node. Create the nodes if these do not exist. For more information, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. In your component, navigate to `<rtePlugins-node>/edit` node. Create the nodes if these do not exist. For more information, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. In the `edit` node create a property using the following details:
 
     * **Name** `defaultPasteMode`
-    
+
     * **Type** `String`
-    
+
     * **Value** One of the required paste mode `browser`, `plaintext`, or `wordhtml`.
 
 ### Configure the formats allowed when pasting content {#pasteformats}
@@ -167,29 +167,29 @@ For links, you can also define the protocols that are automatically accepted.
 
 To configure which formats are allowed when pasting text into AEM from another program:
 
-1. In your component, navigate to the node `<*rtePlugins-node*>/edit`. Create the nodes if these do not exist. For more details, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. In your component, navigate to the node `<*rtePlugins-node*>/edit`. Create the nodes if these do not exist. For more details, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. Create a node under the `edit` node to hold the HTML paste rules:
 
     * **Name** `htmlPasteRules`
-    
+
     * **Type** `nt:unstructured`
 
 1. Create a node under `htmlPasteRules`, to hold details of the basic formats allowed:
 
     * **Name** `allowBasics`
-    
+
     * **Type** `nt:unstructured`
 
 1. To control the individual formats accepted, create one, or more, of the following properties on the `allowBasics` node:
 
     * **Name** `bold`
-    
+
     * **Name** `italic`
-    
+
     * **Name** `underline`
-    
-    * **Name** `anchor` (for both links and named anchors)  
-    
+
+    * **Name** `anchor` (for both links and named anchors)
+
     * **Name** `image`
 
    All properties are of **Type** Boolean, so in the appropriate **Value** you can either select or remove the check mark to enable or disable the functionality.
@@ -201,47 +201,47 @@ To configure which formats are allowed when pasting text into AEM from another p
 1. Other formats can also be defined using a range of other properties or nodes, also applied to the `htmlPasteRules` node:
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Property</strong></td> 
-   <td><strong>Type</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>allowBlockTags</td> 
-   <td>String[]</td> 
-   <td><p>Defines the list of block tags allowed.</p> <p>Possible block tags include (amongst others):</p> 
-    <ul> 
-     <li>headlines (h1, h2, h3)</li> 
-     <li>paragraphs (p)</li> 
-     <li>lists (ol, ul)</li> 
-     <li>tables (table)</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>fallbackBlockTag</td> 
-   <td>String</td> 
-   <td><p>Defines the block tag used for any blocks having a block tag not included in allowBlockTags.</p> <p>p suffices in most cases.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>table</td> 
-   <td>nt:unstructured</td> 
-   <td><p>Defines the behavior when pasting tables.<br /> </p> <p>This node must have the property <code>allow</code> (type <code>Boolean</code>) to define whether pasting tables is allowed.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type<code> String</code>) to define how pasted table content is handled. Valid values for <code>ignoreMode</code> are:</p> 
-    <ul> 
-     <li><code>remove</code>: Removes table content.</li> 
-     <li><code>paragraph</code>: Turns table cells into paragraphs.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>list</td> 
-   <td>nt:unstructured</td> 
-   <td><p>Defines the behavior when pasting lists.<br /> </p> <p>Must have the property <code>allow</code> (type <code>Boolean</code>) to define whether the pasting of lists is allowed.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type <code>String</code>) to define how to handle any list content pasted. Valid values for <code>ignoreMode</code> are:</p> 
-    <ul> 
-     <li><code>remove</code>: Removes list content.</li> 
-     <li><code>paragraph</code>: Turns list items into paragraphs.</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Property</strong></td>
+   <td><strong>Type</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>allowBlockTags</td>
+   <td>String[]</td>
+   <td><p>Defines the list of block tags allowed.</p> <p>Possible block tags include (amongst others):</p>
+    <ul>
+     <li>headlines (h1, h2, h3)</li>
+     <li>paragraphs (p)</li>
+     <li>lists (ol, ul)</li>
+     <li>tables (table)</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>fallbackBlockTag</td>
+   <td>String</td>
+   <td><p>Defines the block tag used for any blocks having a block tag not included in allowBlockTags.</p> <p>p suffices in most cases.</p> </td>
+  </tr>
+  <tr>
+   <td>table</td>
+   <td>nt:unstructured</td>
+   <td><p>Defines the behavior when pasting tables.<br /> </p> <p>This node must have the property <code>allow</code> (type <code>Boolean</code>) to define whether pasting tables is allowed.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type<code> String</code>) to define how pasted table content is handled. Valid values for <code>ignoreMode</code> are:</p>
+    <ul>
+     <li><code>remove</code>: Removes table content.</li>
+     <li><code>paragraph</code>: Turns table cells into paragraphs.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>list</td>
+   <td>nt:unstructured</td>
+   <td><p>Defines the behavior when pasting lists.<br /> </p> <p>Must have the property <code>allow</code> (type <code>Boolean</code>) to define whether the pasting of lists is allowed.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type <code>String</code>) to define how to handle any list content pasted. Valid values for <code>ignoreMode</code> are:</p>
+    <ul>
+     <li><code>remove</code>: Removes list content.</li>
+     <li><code>paragraph</code>: Turns list items into paragraphs.</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
    Example of a valid `htmlPasteRules` structure:
@@ -276,7 +276,7 @@ Authors can apply Styles to change the appearance of a portion of text. The styl
 
 When the Styles plug-in is enabled for the first time, no default Styles are available. The pop-up list is empty. To provide the authors with Styles, do the following:
 
-* Enable the Style drop-down selector.  
+* Enable the Style drop-down selector.
 * Specify the location(s) of the style sheet(s).
 * Specify the individual styles that can be selected from the Style drop down list.
 
@@ -284,19 +284,19 @@ For later (re-)configurations, say to add more styles, follow only the instructi
 
 >[!NOTE]
 >
->Styles can also be defined for [tables or table cells](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). These configurations require separate procedures.
+>Styles can also be defined for [tables or table cells](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). These configurations require separate procedures.
 
 ### Enable the Style drop-down selector list {#styleselectorlist}
 
 This is done by enabling the styles plug-in.
 
-1. In your component, navigate to the node `<*rtePlugins-node*>/styles`. Create the nodes if these do not exist. For more details, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. In your component, navigate to the node `<*rtePlugins-node*>/styles`. Create the nodes if these do not exist. For more details, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. Create the `features` property on the `styles` node:
 
-    * **Name ** `features`  
-    
+    * **Name ** `features`
+
     * **Type** `String`
-    
+
     * **Value** `*` (asterisk)
 
 1. Save all changes.
@@ -312,10 +312,10 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 1. Navigate to the root node of your text component, for example `/apps/<*myProject*>/components/text`.
 1. Add the property `externalStyleSheets` to the parent node of `<*rtePlugins-node*>`:
 
-    * **Name ** `externalStyleSheets`  
-    
-    * **Type** `String[]` (multi-string; click **Multi** in CRXDE)  
-    
+    * **Name ** `externalStyleSheets`
+
+    * **Type** `String[]` (multi-string; click **Multi** in CRXDE)
+
     * **Value(s)** The path and filename of every style sheet you want to include. Use repository paths.
 
    >[!NOTE]
@@ -347,29 +347,29 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 1. Under the node `styles`, create a new node (also called `styles`) to hold the list being made available:
 
     * **Name** `styles`
-    
+
     * **Type** `cq:WidgetCollection`
 
 1. Create a new node under the `styles` node to represent an individual style:
 
-    * **Name**, you can specify the name, but it should be suitable for the style  
-    
+    * **Name**, you can specify the name, but it should be suitable for the style
+
     * **Type** `nt:unstructured`
 
 1. Add the property `cssName` to this node to reference the CSS class:
 
     * **Name** `cssName`
-    
-    * **Type** `String`  
-    
+
+    * **Type** `String`
+
     * **Value** The name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
 1. Add the property `text` to the same node; this defines the text shown in the selection box:
 
     * **Name** `text`
-    
+
     * **Type** `String`
-    
+
     * **Value** Description of the style; appears in the Style drop-down selection box.
 
 1. Save the changes.
@@ -437,7 +437,7 @@ Any text authored in RTE is placed within a block tag, the default being <p>. By
 
 When the Paragraph Formats plug-in is enabled for the first time, no default Paragraph Formats are available. The pop-up list is empty. To provide the authors with Paragraph Formats, do the following:
 
-* Enable the Format drop-down selector list.  
+* Enable the Format drop-down selector list.
 * Specify the block tags that can be selected as paragraph formats from the drop-down.
 
 For later (re-)configurations, say to add more formats, follow only the relevant part of the instructions.
@@ -446,13 +446,13 @@ For later (re-)configurations, say to add more formats, follow only the relevant
 
 First enable the paraformat plug-in:
 
-1. In your component, navigate to the node `<*rtePlugins-node*>/paraformat`. Create the nodes if these do not exist. For more details, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. In your component, navigate to the node `<*rtePlugins-node*>/paraformat`. Create the nodes if these do not exist. For more details, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. Create the `features` property on the `paraformat` node:
 
-    * **Name ** `features`  
-    
+    * **Name ** `features`
+
     * **Type** `String`
-    
+
     * **Value** `*` (asterisk)
 
 >[!NOTE]
@@ -477,30 +477,30 @@ Paragraph formats may be made available for selection by:
 1. Under the `paraformat` node create a new node, to hold the list of formats:
 
     * **Name** `formats`
-    
+
     * **Type** `cq:WidgetCollection`
 
 1. Create a new node under the `formats` node, this holds details for an individual format:
 
-    * **Name**, you can specify the name, but it should be suitable for the format (for example, myparagraph, myheading1).  
-    
+    * **Name**, you can specify the name, but it should be suitable for the format (for example, myparagraph, myheading1).
+
     * **Type** `nt:unstructured`
 
 1. To this node, add the property to define the block tag used:
 
     * **Name** `tag`
-    
+
     * **Type** `String`
-    
-    * **Value** The block tag for the format; for example: p, h1, h2, etc.  
+
+    * **Value** The block tag for the format; for example: p, h1, h2, etc.
       You do not need to enter the delimiting angle-brackets.
 
 1. To the same node add another property, for descriptive text to appear in the drop-down list:
 
     * **Name** `description`
-    
+
     * **Type** `String`
-    
+
     * **Value** The descriptive text for this format; for example, Paragraph, Heading 1, Heading 2, and so on. This text is displayed in the Format selection list.
 
 1. Save the changes.
@@ -523,45 +523,45 @@ You can configure the RTE to make your own selection of characters available; ei
 
 ### Define a single character {#definesinglechar}
 
-1. In your component, navigate to the node `<*rtePlugins-node*>/misctools`. Create the nodes if these do not exist. For more details, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. In your component, navigate to the node `<*rtePlugins-node*>/misctools`. Create the nodes if these do not exist. For more details, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. Create the `features` property on the `misctools` node:
 
     * **Name** `features`
-    
-    * **Type** 
-    
-      ```    
-      String[] 
-      
+
+    * **Type**
+
+      ```
+      String[]
+
       ```
 
-    * **Value** `specialchars`  
+    * **Value** `specialchars`
       (or `String / *` if applying all features for this plug-in)
 
 1. Under `misctools` create a node to hold the special character configurations:
 
     * **Name** `specialCharsConfig`
-    
+
     * **Type** `nt:unstructured`
 
 1. Under `specialCharsConfig` create another node to hold the list of characters:
 
     * **Name** `chars`
-    
+
     * **Type** `nt:unstructured`
 
 1. Under `chars` add a new node to hold an individual character definition:
 
-    * **Name **you can specify the name, but it should reflect the character; for example, half.  
-    
+    * **Name **you can specify the name, but it should reflect the character; for example, half.
+
     * **Type** `nt:unstructured`
 
 1. To this node add the following property:
 
     * **Name** `entity`
-    
+
     * **Type** `String`
-    
+
     * **Value** the HTML representation of the required character; for example, `&189;` for the fraction one half.
 
 1. Save the changes.
@@ -577,18 +577,18 @@ You can configure the RTE to make your own selection of characters available; ei
 1. Use steps 1 to 3 from [Defining a Single Character](#definingasinglecharacter).
 1. Under `chars` add a new node to hold the definition of the character range:
 
-    * **Name **you can specify the name, but it should reflect the character range; for example, pencils.  
-    
+    * **Name **you can specify the name, but it should reflect the character range; for example, pencils.
+
     * **Type** `nt:unstructured`
 
 1. Under this node (named according to your special character range) add the following two properties:
 
-    * **Name** `rangeStart`  
-      **Type** `Long`  
-      **Value** the [Unicode](https://unicode.org/) representation (decimal) of the first character in the range  
-    
-    * **Name** `rangeEnd`  
-      **Type** `Long`  
+    * **Name** `rangeStart`
+      **Type** `Long`
+      **Value** the [Unicode](https://unicode.org/) representation (decimal) of the first character in the range
+
+    * **Name** `rangeEnd`
+      **Type** `Long`
       **Value** the [Unicode](https://unicode.org/) representation (decimal) of the last character in the range
 
 1. Save the changes.
@@ -615,27 +615,27 @@ Styles are typically applied on text, but a separate set of Styles can also be a
 >
 >Copying and pasting tables in or from RTE component is browser-dependent. It is not supported out of the box for all browsers. You may get varied results depending on table structure and browser. For example, when you copy and paste a table in a RTE component in Mozilla Firefox in Classic UI and Touch UI, the layout of the table is not preserved.
 
-1. Within your component navigate to the node `<*rtePlugins-node*>/table`. Create the nodes if these do not exist. For more details, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. Within your component navigate to the node `<*rtePlugins-node*>/table`. Create the nodes if these do not exist. For more details, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. Create the `features` property on the `table` node:
 
     * **Name** `features`
-    
+
     * **Type** `String`
-    
+
     * **Value** `*`
 
    >[!NOTE]
    >
    >If you do not want to enable all table features you can create the `features` property as:
    >
-   >    
-   >    
+   >
+   >
    >    * **Type** `String[]`
-   >    
+   >
    >    * **Value**(s) one, or both, of the following, as required:
-   >    * `<li><code>table</code> to allow the editing of table properties; including the styles</li>` `<li><code>cellprops</code> to allow the editing of cell properties; including the styles</li>` 
-   >    
-   >    
+   >    * `<li><code>table</code> to allow the editing of table properties; including the styles</li>` `<li><code>cellprops</code> to allow the editing of cell properties; including the styles</li>`
+   >
+   >
    >
 
 1. Define the location of CSS style sheets to refer those. See [Specifying the location of your style sheet](#specifyingthelocationofyourstylesheet) as this is the same as when defining [styles for text](#stylestext). The location may be defined if you defined other styles.
@@ -643,20 +643,20 @@ Styles are typically applied on text, but a separate set of Styles can also be a
 
     * To define styles for the entire table (available under **Table properties**):
 
-        * **Name** `tableStyles`  
-        
+        * **Name** `tableStyles`
+
         * **Type** `cq:WidgetCollection`
 
     * To define styles for the individual cells (available under **Cell properties**):
 
-        * **Name** `cellStyles`  
-        
+        * **Name** `cellStyles`
+
         * **Type** `cq:WidgetCollection`
 
 1. Create a new node (under the `tableStyles` or `cellStyles` node as appropriate) to represent an individual style:
 
     * **Name** ** **you can specify the name, but it should reflect the style. ``
-    
+
     * **Type** `nt:unstructured`
 
 1. On this node create the properties:
@@ -664,17 +664,17 @@ Styles are typically applied on text, but a separate set of Styles can also be a
     * To define the CSS style to be referenced
 
         * **Name** `cssName`
-        
+
         * **Type** `String`
-        
+
         * **Value **the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
     * To define a descriptive text to appear in the drop-down selector
 
         * **Name** `text`
-        
+
         * **Type** `String`
-        
+
         * **Value **the text to appear in the selection list
 
 1. Save all changes.
@@ -730,9 +730,9 @@ To add more dictionaries, if required, follow these steps.
 
 >[!NOTE]
 >
->The RTE spell checker is available on-demand. It does not run automatically as you start typing text. 
+>The RTE spell checker is available on-demand. It does not run automatically as you start typing text.
 >
->To run the spell checker, tap/click the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words. 
+>To run the spell checker, tap/click the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
 >
 >If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
 
@@ -740,13 +740,13 @@ To add more dictionaries, if required, follow these steps.
 
 RTE allows authors to undo or redo a few last edits. By default, 50 edits are stored in the history. You can configure this value as required.
 
-1. Within your component navigate to the node `<*rtePlugins-node*>/undo`. Create these nodes if they do not exist. For more details, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. Within your component navigate to the node `<*rtePlugins-node*>/undo`. Create these nodes if they do not exist. For more details, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. On the `undo` node create the property:
 
     * **Name** `maxUndoSteps`
-    
+
     * **Type** `Long`
-    
+
     * **Value **the number of undo steps you want saved in the history.
 
         * The default is 50.
@@ -760,13 +760,13 @@ When the tab character is pressed within any text a predefined number of spaces 
 
 To define the tab size:
 
-1. In your component, navigate to the node `<*rtePlugins-node*>/keys`. Create the nodes if these do not exist. For more details, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. In your component, navigate to the node `<*rtePlugins-node*>/keys`. Create the nodes if these do not exist. For more details, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. On the `keys` node create the property:
 
     * **Name** `tabSize`
-    
+
     * **Type** `String`
-    
+
     * **Value **the number of space characters to be used for the tabulator
 
 1. Save the changes.
@@ -779,13 +779,13 @@ When indentation is enabled (default) you can define the size of indent:
 >
 >This indent size is only applied to paragraphs (blocks) of text; it does not affect the indentation of actual lists.
 
-1. Within your component navigate to the node `<*rtePlugins-node*>/lists`. Create these nodes if they do not exist. For more details, see [activate a plug-in](..//help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
+1. Within your component navigate to the node `<*rtePlugins-node*>/lists`. Create these nodes if they do not exist. For more details, see [activate a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 1. On the `lists` node create the `identSize` parameter:
 
     * **Name**: `identSize`
-    
+
     * **Type**: `Long`
-    
+
     * **Value**: number of pixels required for the indent margin
 
 ## Configure the height of editable space {#editablespace}
@@ -798,10 +798,10 @@ You can define the height of the editable space shown within the component dialo
 
 1. On the `../items/text` node in the dialog definition for the component, create a new property:
 
-    * **Name** `height`  
-    
+    * **Name** `height`
+
     * **Type** `Long`
-    
+
     * **Value** the height of the edit canvas in pixels
 
    >[!NOTE]
@@ -819,12 +819,12 @@ When adding links in AEM, you can define:
 
 To configure how links are added in AEM from another program, define the HTML rules.
 
-1. Using CRXDE Lite, locate the text component for your project.  
+1. Using CRXDE Lite, locate the text component for your project.
    ``
 1. Create a new node at the same level as <*rtePlugins-node*>, that is, create the node under the parent node of `<rtePlugins-node>`:
 
     * **Name** `htmlRules`
-    
+
     * **Type** `nt:unstructured`
 
    >[!NOTE]
@@ -834,7 +834,7 @@ To configure how links are added in AEM from another program, define the HTML ru
    >    * **Name** `xtype`
    >    * **Type** `String`
    >    * **Value** `richtext`
-   >    
+   >
    >The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples include:
    >
    >    * `/apps/<*myProject*>/components/text/dialog/items/text`
@@ -849,58 +849,58 @@ To configure how links are added in AEM from another program, define the HTML ru
 
     * CSS style for internal links:
 
-        * **Name** `cssInternal`  
+        * **Name** `cssInternal`
         * **Type** `String`
         * **Value** the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
     * CSS style for external links
 
-        * **Name** `cssExternal`  
+        * **Name** `cssExternal`
         * **Type** `String`
         * **Value** the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
     * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
 
-        * **Name** `protocols`  
+        * **Name** `protocols`
         * **Type** `String[]`
         * **Value**(s) one, or more, protocols
 
     * **defaultProtocol** (property of type **String**): Protocol to be used if the user did not specify one explicitly.
 
-        * **Name** `defaultProtocol`  
+        * **Name** `defaultProtocol`
         * **Type** `String`
         * **Value**(s) one, or more, default protocols
 
     * Definition of how to handle the target attribute of a link. Create a new node:
 
-        * **Name** `targetConfig`  
+        * **Name** `targetConfig`
         * **Type** `nt:unstructured`
 
       On the node `targetConfig`: define the required properties:
 
         * Specify the target mode:
 
-            * **Name** `mode`  
+            * **Name** `mode`
             * **Type** `String`)
             * **Value**(s) :
 
-                * `auto`: means that an automatic target is chosen  
+                * `auto`: means that an automatic target is chosen
 
-                  (specified by the `targetExternal` property for external links or `targetInternal` for internal links). 
-                
+                  (specified by the `targetExternal` property for external links or `targetInternal` for internal links).
+
                 * `manual`: not applicable in this context
                 * `blank`: not applicable in this context
 
         * The target for internal links:
 
-            * **Name** `targetInternal`  
-            * **Type** `String`  
+            * **Name** `targetInternal`
+            * **Type** `String`
             * **Value** the target for internal links (only use when the `` mode is `auto`)
 
         * The target for external links:
 
             * **Name** `targetExternal`
-            * **Type** `String`  
+            * **Type** `String`
             * **Value** the target for external links (only used when the mode is `auto`).
 
 1. Save all changes.

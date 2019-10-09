@@ -62,7 +62,7 @@ Methods to avoid :
 
 ### Use Search Collections {#use-search-collections}
 
-Different SRPs can have different native query languages. It is recommended to use methods from the [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) package to run the appropriate query language.
+Different SRPs can have different native query languages. It is recommended to use methods from the [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) package to run the appropriate query language.
 
 For more information, see [Search Essentials](/help/communities/search-implementation.md).
 

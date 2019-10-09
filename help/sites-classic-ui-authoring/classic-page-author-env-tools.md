@@ -137,7 +137,7 @@ You can also use wildcards for search. Supported wildcards are:
 >
 >There's a pseudo property "name" which must be used to perform a wildcard search.
 
-For example, if there is an image avaialable with the name:
+For example, if there is an image available with the name:
 
 `ad-nmvtis.jpg`
 
@@ -152,7 +152,7 @@ the following search patterns will find it (and any other images matching the pa
 
 >[!NOTE]
 >
->You can also use [SQL2](/help/sites-developing/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.md) search.
+>You can also use [SQL2](/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) search.
 
 ## Showing References {#showing-references}
 

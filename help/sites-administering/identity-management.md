@@ -19,7 +19,7 @@ Individual visitors to your website can only be identified when you provide the 
 
 * [AEM Communities
   ](/help/communities/overview.md)Site visitors are required to sign in to post content to the community.
-* [Closed User Groups](..//help/sites-administering/cug.md)
+* [Closed User Groups](/help/sites-administering/cug.md)
   You may need to limit access to your website (or sections of it) to specific visitors.
 
 * [Personalization
@@ -44,7 +44,7 @@ Additional functionality can be configured or developed:
 
 >[!NOTE]
 >
->The information specified in the profile can also be used to provide the user with targeted content via [Segments](..//help/sites-administering/campaign-segmentation.md) and [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+>The information specified in the profile can also be used to provide the user with targeted content via [Segments](/help/sites-administering/campaign-segmentation.md) and [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
 ## Registration Forms {#registration-forms}
 
@@ -59,7 +59,7 @@ Upon submitting the request, the profile page opens where the user can provide p
 
 ![](assets/profilepage.png)
 
-The new account is also visible in the [Users console](..//help/sites-administering/security.md).
+The new account is also visible in the [Users console](/help/sites-administering/security.md).
 
 ## Login {#login}
 
@@ -89,7 +89,7 @@ https://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 To see the details of your profile click on **My Profile** in the top right corner of any page; for example with the `admin` account:
 `https://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-You can view another profile using the [client context](..//help/sites-administering/client-context.md) (on the author environment and with sufficient privileges):
+You can view another profile using the [client context](/help/sites-administering/client-context.md) (on the author environment and with sufficient privileges):
 
 1. Open a page; for example the Geometrixx page:
    `https://localhost:4502/cf#/content/geometrixx/en.html`
@@ -198,7 +198,7 @@ That allows:
 
 If such access is not appropriate for your installation you can change these default settings.
 
-This can be done using the ** [Access Control](..//help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
+This can be done using the ** [Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
 
 ![](assets/aclmanager.png)
 

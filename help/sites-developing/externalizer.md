@@ -19,7 +19,7 @@ In AEM, the **Externalizer** is an OSGI service that allows you to programmatica
 
 Because an instance cannot know its externally visible URL if it is running behind a web layer, and because sometimes a link has to be created outside of the request scope, this service provides a central place to configure those external URLs and build them.
 
-This page explains how to configure the **Externalizer** service and how to use it. For more details, please refer to the [Javadocs](/help/sites-developing/reference-materials/javadoc/com/day/cq/commons/Externalizer.md).
+This page explains how to configure the **Externalizer** service and how to use it. For more details, please refer to the [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configuring the Externalizer service {#configuring-the-externalizer-service}
 
@@ -124,5 +124,5 @@ This section shows a few examples of how the **Externalizer** service can be use
 
     * `https://publish-3.internal/contextpath/my/page.html`
 
-1. You can find more examples in the [Javadocs](/help/sites-developing/reference-materials/javadoc/com/day/cq/commons/Externalizer.md).
+1. You can find more examples in the [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 

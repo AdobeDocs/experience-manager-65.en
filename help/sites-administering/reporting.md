@@ -52,7 +52,7 @@ There are various formats of reports available. The following reports all use co
 >* [Health Check](#health-check) uses selection fields to specify the data you want to report on.
 >
 >* [Disk Usage](#disk-usage) uses links to drill down through the repository structure.
->* [Workflow report](..//help/sites-administering/reporting.md#workflow-report) gives an overview of the workflows running on your instance.
+>* [Workflow report](/help/sites-administering/reporting.md#workflow-report) gives an overview of the workflows running on your instance.
 >
 >So the following procedures for column configuration are not appropriate. See the descriptions of the individual reports for their details.
 
@@ -411,7 +411,7 @@ Allow you to:
 
 #### Generic Column {#generic-column}
 
-The **Generic** column is available in the User Report so that you can access customized information, usually from the [user profiles](..//help/sites-administering/identity-management.md#profiles-and-user-accounts); for example, [Favorite Color as detailed under Adding Fields to the Profile Definition](..//help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
+The **Generic** column is available in the User Report so that you can access customized information, usually from the [user profiles](/help/sites-administering/identity-management.md#profiles-and-user-accounts); for example, [Favorite Color as detailed under Adding Fields to the Profile Definition](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
 
 The Generic column dialog will open when you either:
 

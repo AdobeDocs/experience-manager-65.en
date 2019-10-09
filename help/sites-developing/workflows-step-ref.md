@@ -342,7 +342,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
 1. **Example Dialog Definition**
 
-   The following XML code snippet represents a dialog that stores a `String` value in the `watchEmail` node of the payload content. The title node represents the [TextField](/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.md) component:
+   The following XML code snippet represents a dialog that stores a `String` value in the `watchEmail` node of the payload content. The title node represents the [TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component:
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -388,7 +388,6 @@ To configure the step, edit and use the following tabs:
 * **Participant Chooser**
 
     * **Participant Chooser**: The name of the [participant chooser that you create](#developingtheparticipantchooser).
-
     * **Arguments**: Any required arguments.
     * **Email**: Whether an email notification should be sent to the user.
 
@@ -431,7 +430,7 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
 * **OSGi service**
 
-  Services must implement the [com.day.cq.workflow.exec.ParticipantStepChooser](/help/sites-developing/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.md) interface. The interface defines the following members:
+  Services must implement the [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. The interface defines the following members:
 
     * `SERVICE_PROPERTY_LABEL` field: Use this field to specify the name of the participant chooser. The name appears in a list of available participant choosers in the **Dynamic Participant Step** properties.
 
@@ -452,7 +451,7 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
 #### Dynamic Participant Step - Example Participant Chooser Service {#dynamic-participant-step-example-participant-chooser-service}
 
-The following Java class implements the `ParticipantStepChooser` interface. The class returns the name of the participant who initiated the workflow. The code uses the same logic that the sample script ( `initator-participant-chooser.ecma`) uses.
+The following Java class implements the `ParticipantStepChooser` interface. The class returns the name of the participant who initiated the workflow. The code uses the same logic that the sample script (`initiator-participant-chooser.ecma`) uses.
 
 The `@Property` annotation sets the value of the `SERVICE_PROPERTY_LABEL` field to `Workflow Initiator Participant Chooser`.
 
@@ -495,7 +494,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 In the **Dynamic Participant Step** properties dialog, the **Participant Chooser** list includes the item `Workflow Initiator Participant Chooser (script)`, which represents this service.
 
-``When the workflow model is started, the log indicates the ID of the user who initiated the workflow and who is assigned the work item. In this example, the `admin` user started the workflow.
+When the workflow model is started, the log indicates the ID of the user who initiated the workflow and who is assigned the work item. In this example, the `admin` user started the workflow.
 
 `13.09.2015 15:48:53.037 *INFO* [10.176.129.223 [1347565733037] POST /etc/workflow/instances HTTP/1.1] com.adobe.example.InitiatorParticipantChooser Assigning Dynamic Participant Step work item to admin`
 
@@ -524,9 +523,7 @@ To configure the step, edit and use the following tabs:
 Create a form for use with a **Form Participant Step** as normal. However, forms for a Form Participant Step must have the following configurations:
 
 * The **Start of Form** component must have the **Action Type** property set to `Edit Workflow Controlled Resource(s)`.
-
 * The **Start of Form** component must have a value for the the `Form Identifier` property.
-
 * The form components must have the **Element Name** property set to the path of the node where the field data is stored. The path must locate a node in the workflow payload content. The value uses the following format:
 
   `./jcr:content/path_to_node`
@@ -541,7 +538,7 @@ In the following example, the field data is used as the content of a **Text** co
 
 `./jcr:content/par/text_3/text`
 
-``The first example can be used for any page that the `cq:Page` component renders. The second example can only be used when the payload page includes a **Text** component that has an ID of `text_3`.
+The first example can be used for any page that the `cq:Page` component renders. The second example can only be used when the payload page includes a **Text** component that has an ID of `text_3`.
 
 The form can be located anywhere in the repository, however workflow users must be authorized to read the form.
 

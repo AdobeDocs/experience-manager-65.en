@@ -18,18 +18,13 @@ docset: aem65
 
 Adobe Experience Manager (AEM) provides several APIs for developing applications and extending AEM. The following list provides the documentation for APIs supported by AEM:
 
-* [Adobe AEM 6.5.0 API](/help/sites-developing/reference-materials/javadoc/index.md)
-
+* [Adobe AEM 6.5.0 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)
 * API differences (coming soon)
-* [Granite UI (Touch-enabled) API documentation](/help/sites-developing/reference-materials/granite-ui/api/index.md)
-
-* [Coral UI guide](/help/sites-developing/reference-materials/coral-ui/coralui3/index.md)
-
-* [Widgets API (Classic UI) documentation](/help/sites-developing/reference-materials/widgets-api/index.md)
-
-* [UI test framework JavaScript API reference](/help/sites-developing/reference-materials/test-api/index.md)
-
-* [Editor core JavaScript API reference](/help/sites-developing/reference-materials/jsdoc/ui-touch/editor-core/index.md)
+* [Granite UI (Touch-enabled) API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+* [Coral UI guide](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+* [Widgets API (Classic UI) documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
+* [UI test framework JavaScript API reference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
+* [Editor core JavaScript API reference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor SDK framework JavaScript API references:
 
@@ -43,7 +38,7 @@ AEM Delivery and Content Management APIs:
 
 * **Assets**: The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments. See [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **Content Fragments** (CFs): [CF support in Assets HTTP API](/help/assets/assets-api-content-fragments.md) and [AEM Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/assets-api-content-fragments/index.html)
+* **Content Fragments** (CFs): [CF support in Assets HTTP API](/help/assets/assets-api-content-fragments.md) and [AEM Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 
 The following external resources are for reference only:
 

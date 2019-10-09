@@ -74,7 +74,7 @@ Aside from the AEM `admin` account, failing to change the default password for t
 * Exposure of the server with a default password during startup and shutdown (that can take minutes for large servers);
 * Exposure of the server when the repository is down/restarting bundle - and OSGI is running.
 
-For more information on changing the web console password, see [Changing the OSGi web console admin password](..//help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) below.
+For more information on changing the web console password, see [Changing the OSGi web console admin password](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) below.
 
 #### Changing the OSGi web console admin password {#changing-the-osgi-web-console-admin-password}
 
@@ -126,7 +126,7 @@ For security considerations, both should be changed to reflect the particular us
 
 AEM 6 introduces the new Operations Dashboard, aimed at aiding system operators troubleshoot problems and monitor the health of an instance.
 
-The dashboard also comes with a collection of security health checks. It is recommended you check the status of all the security health checks before going live with your production instance. For more information, consult the [Operations Dashboard documentation](..//help/sites-administering/operations-dashboard.md).
+The dashboard also comes with a collection of security health checks. It is recommended you check the status of all the security health checks before going live with your production instance. For more information, consult the [Operations Dashboard documentation](/help/sites-administering/operations-dashboard.md).
 
 ### Check if Example Content is Present {#check-if-example-content-is-present}
 
@@ -134,7 +134,7 @@ All example content and users (e.g. the Geometrixx project and its components) s
 
 >[!NOTE]
 >
->The sample We.Retail applications are removed if this instance is running in [Production Ready Mode](/help/sites-administering/production-ready.md). If, for any reason, this is not the case, you can uninstall the sample content by going to Package Manager, then serarching for and uninstalling all We.Retail packages. Fore more info, see How to [Work With Packages](..//help/sites-administering/package-manager.md).
+>The sample We.Retail applications are removed if this instance is running in [Production Ready Mode](/help/sites-administering/production-ready.md). If, for any reason, this is not the case, you can uninstall the sample content by going to Package Manager, then serarching for and uninstalling all We.Retail packages. Fore more info, see How to [Work With Packages](/help/sites-administering/package-manager.md).
 
 ### Check if the CRX development bundles are present {#check-if-the-crx-development-bundles-are-present}
 

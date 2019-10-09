@@ -15,8 +15,8 @@ docset: aem65
 
 # eCommerce{#ecommerce}
 
-* [Concepts](..//help/sites-administering/concepts.md)
-* [Administering (generic)](..//help/sites-administering/generic.md)
+* [Concepts](/help/sites-administering/concepts.md)
+* [Administering (generic)](/help/sites-administering/generic.md)
 * [SAP Commerce Cloud](/help/sites-administering/hybris.md)
 * [Salesforce Commerce Cloud](/help/sites-administering/demandware.md)
 * [Magento](/help/sites-administering/magento.md)
@@ -185,7 +185,7 @@ AEM eCommerce provides:
 
 ## The Framework {#the-framework}
 
-The [Concepts](..//help/sites-administering/concepts.md) section covers the framework in more detail, but the following provides a high-level, high-speed view of the framework:
+The [Concepts](/help/sites-administering/concepts.md) section covers the framework in more detail, but the following provides a high-level, high-speed view of the framework:
 
 ### What? {#what}
 

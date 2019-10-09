@@ -41,7 +41,7 @@ The eCommerce API is provided by the packages:
 
 `com.adobe.cq.commerce.*`
 
-See the [API documentation](/help/sites-developing/reference-materials/javadoc/index.md) for further information.
+See the [API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) for further information.
 
 >[!NOTE]
 >

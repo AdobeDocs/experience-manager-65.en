@@ -29,10 +29,10 @@ The data includes page and user data; for example:
 
 The following pages help you configure the integration:
 
-* [Connecting to Adobe Analytics and Creating Frameworks](..//help/sites-administering/adobeanalytics-connect.md)
+* [Connecting to Adobe Analytics and Creating Frameworks](/help/sites-administering/adobeanalytics-connect.md)
 * [Configuring Link Tracking for Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
-* [Mapping Component Data with Adobe Analytics Properties](..//help/sites-administering/adobeanalytics-mapping.md)
-* [Configuring Video Tracking for Adobe Analytics](..//help/sites-administering/adobeanalytics-video.md)
+* [Mapping Component Data with Adobe Analytics Properties](/help/sites-administering/adobeanalytics-mapping.md)
+* [Configuring Video Tracking for Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Adobe Classifications](/help/sites-administering/adobeanalytics-classifications.md)
 
 You can also use the [Opt-in wizard](/help/sites-administering/opt-in.md) to easily perform the integration.

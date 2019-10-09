@@ -357,10 +357,10 @@ MSM enables you to specify sets of rollout configurations that are used generall
 
 The following list of locations where you can specify the rollout configurations to use describes how MSM determines which rollout configurations to use for a live copy:
 
-* ** [Live copy page properties](..//help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** When a live copy page is configured to use one or more rollout configurations, MSM uses those rollout configurations.
-* ** [Blueprint page properties](..//help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** When a live copy is based on a blueprint, and the live copy page is not configured with a rollout configuration, the rollout configuration that is associated with the blueprint source page is used.
+* ** [Live copy page properties](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** When a live copy page is configured to use one or more rollout configurations, MSM uses those rollout configurations.
+* ** [Blueprint page properties](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** When a live copy is based on a blueprint, and the live copy page is not configured with a rollout configuration, the rollout configuration that is associated with the blueprint source page is used.
 * **Live copy parent page properties:** When neither the live copy page nor the blueprint source page are configured with a rollout configuration, the rollout configuration that applies to the live copy page's parent page is used.
-* ** [System default](..//help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** When the rollout configuration of the live copy's parent page cannot be determined, the system default rollout configuration is used.
+* ** [System default](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** When the rollout configuration of the live copy's parent page cannot be determined, the system default rollout configuration is used.
 
 For example, a blueprint uses the We.Retail Reference Site as source content. A site is created from the blueprint. Each item in the following list describes a different scenario regarding the use of rollout configurations:
 

@@ -19,8 +19,8 @@ There are several methods available for tracking video events, 2 of which are le
 
 >[!NOTE]
 >
->Before you continue, make sure** **that you have a** playable video** uploaded within AEM.  
-  
+>Before you continue, make sure** **that you have a** playable video** uploaded within AEM.
+
 >To ensure that your videos play on the page, consult ** [this tutorial](/help/sites-authoring/default-components-foundation.md#video)** for information about how to transcode video files in AEM.
 
 Use the following procedure to set up a framework for video tracking using each method.
@@ -33,18 +33,18 @@ Use the following procedure to set up a framework for video tracking using each 
 
 1. Set up a web page by dragging a** video component** from the sidekick and adding a playable **video as an asset** for the component
 
-1. [Create an Adobe Analytics configuration and framework](..//help/sites-administering/adobeanalytics.md).
+1. [Create an Adobe Analytics configuration and framework](/help/sites-administering/adobeanalytics.md).
 
     * The examples in the sections that follow use the name **my-sc-configuration** for the configuration and** videofw** for the framework**.**
 
 1. On the framework page, select an RSID and set the usage to all. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. From the General component category in Sidekick, drag the Video component onto the framework.  
+1. From the General component category in Sidekick, drag the Video component onto the framework.
 1. Select a tracking method:
 
-    * [Milestones](..//help/sites-administering/adobeanalytics.md)
-    * [Non-legacy Milestones](..//help/sites-administering/adobeanalytics.md)
-    * [Legacy Milestones](..//help/sites-administering/adobeanalytics.md)
-    * [Legacy Seconds](..//help/sites-administering/adobeanalytics.md)
+    * [Milestones](/help/sites-administering/adobeanalytics.md)
+    * [Non-legacy Milestones](/help/sites-administering/adobeanalytics.md)
+    * [Legacy Milestones](/help/sites-administering/adobeanalytics.md)
+    * [Legacy Seconds](/help/sites-administering/adobeanalytics.md)
 
 1. When you select a tracking method, the list of CQ variables changes accordingly. Use the sections that follow for information about how to further configure the component and map the CQ variables with Adobe Analytics properties.
 
@@ -69,56 +69,56 @@ The XX suffix is the track offset that defines the milestone. For example, speci
 The following table describes the default CQ variables that are provided for the Milestones method:
 
 <table>
- <tbody> 
-  <tr> 
-   <th>CQ variables</th> 
-   <th>Adobe Analytics properties</th> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoName </td> 
-   <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if this is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoFileName </td> 
-   <td>Variables mapped to this will contain the file’s name. Only sent along with eventdata.events.a.media.view </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoFilePath </td> 
-   <td>Variables mapped to this will contain the file’s path on the server. Only sent along with eventdata.events.a.media.view </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.a.media.segmentView </td> 
-   <td>Sent every time a segment milestone is passed </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.a.media.timePlayed</td> 
-   <td>Sent every time a milestone is triggered, the number of seconds the user spent watching the given segment is also sent along with this event. e.g. eventX=21<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.a.media.view </td> 
-   <td>Sent on initializing video view</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.a.media.complete </td> 
-   <td>Sent when video finished playing<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.milestoneX </td> 
-   <td>Sent when the given milestone is passed, X stands for the second the milestone gets triggered at<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.a.contentType </td> 
-   <td>Sent on every milestone; shows up as pev3 in the Adobe Analytics call, usually sent as "video"<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.a.media.name </td> 
-   <td>Exactly matches eventdata.videoName </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.a.media.segment </td> 
-   <td>Contains information on the segment that has been viewed e.g. 2:O:4-8 </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>CQ variables</th>
+   <th>Adobe Analytics properties</th>
+  </tr>
+  <tr>
+   <td>eventdata.videoName </td>
+   <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if this is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.</td>
+  </tr>
+  <tr>
+   <td>eventdata.videoFileName </td>
+   <td>Variables mapped to this will contain the file’s name. Only sent along with eventdata.events.a.media.view </td>
+  </tr>
+  <tr>
+   <td>eventdata.videoFilePath </td>
+   <td>Variables mapped to this will contain the file’s path on the server. Only sent along with eventdata.events.a.media.view </td>
+  </tr>
+  <tr>
+   <td>eventdata.events.a.media.segmentView </td>
+   <td>Sent every time a segment milestone is passed </td>
+  </tr>
+  <tr>
+   <td>eventdata.events.a.media.timePlayed</td>
+   <td>Sent every time a milestone is triggered, the number of seconds the user spent watching the given segment is also sent along with this event. e.g. eventX=21<br /> </td>
+  </tr>
+  <tr>
+   <td>eventdata.events.a.media.view </td>
+   <td>Sent on initializing video view</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.a.media.complete </td>
+   <td>Sent when video finished playing<br /> </td>
+  </tr>
+  <tr>
+   <td>eventdata.events.milestoneX </td>
+   <td>Sent when the given milestone is passed, X stands for the second the milestone gets triggered at<br /> </td>
+  </tr>
+  <tr>
+   <td>eventdata.a.contentType </td>
+   <td>Sent on every milestone; shows up as pev3 in the Adobe Analytics call, usually sent as "video"<br /> </td>
+  </tr>
+  <tr>
+   <td>eventdata.a.media.name </td>
+   <td>Exactly matches eventdata.videoName </td>
+  </tr>
+  <tr>
+   <td>eventdata.a.media.segment </td>
+   <td>Contains information on the segment that has been viewed e.g. 2:O:4-8 </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -137,78 +137,78 @@ The following table describes the default CQ variables that are provided for the
 
    For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html) guide.
 
-1. [Add the framework](..//help/sites-administering/adobeanalytics.md) to the page.
+1. [Add the framework](/help/sites-administering/adobeanalytics.md) to the page.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
 
 The Adobe Analytics tracking data examples that follow apply to Milestone tracking using track offsets of 4,8,16,20, and 24, and the following mappings for the CQ variables:
 
 <table>
- <tbody> 
-  <tr> 
-   <th>CQ variable</th> 
-   <th>Adobe Analytics property</th> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoName </td> 
-   <td>prop2</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoFileName </td> 
-   <td>prop3 </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoFilePath </td> 
-   <td>prop4</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.a.media.segmentView </td> 
-   <td>event1</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.a.media.timePlayed</td> 
-   <td>event2<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.a.media.view </td> 
-   <td>event3</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.a.media.complete </td> 
-   <td>event4<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.milestone4</td> 
-   <td>event10</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.milestone8</td> 
-   <td>event11</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.milestone16</td> 
-   <td>event12</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.milestone20</td> 
-   <td>event13</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.events.milestone24</td> 
-   <td>event14</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.a.contentType </td> 
-   <td>eVar3</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.a.media.name </td> 
-   <td>eVar1, prop1 </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.a.media.segment </td> 
-   <td>eVar2</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>CQ variable</th>
+   <th>Adobe Analytics property</th>
+  </tr>
+  <tr>
+   <td>eventdata.videoName </td>
+   <td>prop2</td>
+  </tr>
+  <tr>
+   <td>eventdata.videoFileName </td>
+   <td>prop3 </td>
+  </tr>
+  <tr>
+   <td>eventdata.videoFilePath </td>
+   <td>prop4</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.a.media.segmentView </td>
+   <td>event1</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.a.media.timePlayed</td>
+   <td>event2<br /> </td>
+  </tr>
+  <tr>
+   <td>eventdata.events.a.media.view </td>
+   <td>event3</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.a.media.complete </td>
+   <td>event4<br /> </td>
+  </tr>
+  <tr>
+   <td>eventdata.events.milestone4</td>
+   <td>event10</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.milestone8</td>
+   <td>event11</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.milestone16</td>
+   <td>event12</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.milestone20</td>
+   <td>event13</td>
+  </tr>
+  <tr>
+   <td>eventdata.events.milestone24</td>
+   <td>event14</td>
+  </tr>
+  <tr>
+   <td>eventdata.a.contentType </td>
+   <td>eVar3</td>
+  </tr>
+  <tr>
+   <td>eventdata.a.media.name </td>
+   <td>eVar1, prop1 </td>
+  </tr>
+  <tr>
+   <td>eventdata.a.media.segment </td>
+   <td>eVar2</td>
+  </tr>
+ </tbody>
 </table>
 
 For this example, the Video component appears as follows on the framework page:
@@ -234,12 +234,12 @@ Calls to Adobe Analytics using the example provided should look like this when v
 *This is the **third call** made to Adobe Analytics:*
 
 * *prop1 and eVar1 contain a.media.name; *
-* *event1 because a segment has been viewed  
+* *event1 because a segment has been viewed
   *
 * *event2 sent with time played = 4*
-* *event11 sent because eventdata.events.milestone8 has been reached  
+* *event11 sent because eventdata.events.milestone8 has been reached
   *
-* *prop2 to 4 are not sent (since eventdata.events.a.media.view was not triggered)  
+* *prop2 to 4 are not sent (since eventdata.events.a.media.view was not triggered)
   *
 
 ## Non-Legacy Milestones {#non-legacy-milestones}
@@ -275,7 +275,7 @@ eventdata.events.milestoneXX
 
    For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html) guide.
 
-1. [Add the framework](..//help/sites-administering/adobeanalytics.md) to the page.
+1. [Add the framework](/help/sites-administering/adobeanalytics.md) to the page.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
 
 ## Legacy Milestones {#legacy-milestones}
@@ -293,20 +293,20 @@ This method is similar to the Milestones method with the difference that the mil
    Also, the information sent to Adobe Analytics is less customizable; there are only 3 variables available for mapping:
 
 <table>
- <tbody> 
-  <tr> 
-   <td>eventdata.videoName <br /> </td> 
-   <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if the Title is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoFileName </td> 
-   <td>Variables mapped to this will contain the file’s name. Only sent once, at the beginning of playing a video.</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoFilePath </td> 
-   <td>Variable mapped to this will contain the file’s path on the server. Only sent once, at the beginning of playing a video.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>eventdata.videoName <br /> </td>
+   <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if the Title is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.<br /> </td>
+  </tr>
+  <tr>
+   <td>eventdata.videoFileName </td>
+   <td>Variables mapped to this will contain the file’s name. Only sent once, at the beginning of playing a video.</td>
+  </tr>
+  <tr>
+   <td>eventdata.videoFilePath </td>
+   <td>Variable mapped to this will contain the file’s path on the server. Only sent once, at the beginning of playing a video.</td>
+  </tr>
+ </tbody>
 </table>
 
    >[!NOTE]
@@ -324,15 +324,15 @@ This method is similar to the Milestones method with the difference that the mil
    *The **pev3** variable sent in the call contains the following information:*
 
     * *Name* - The name of the video file (*film.avi*)
-    
+
     * *Length* - The length of the video file, in seconds (*100*)
-    
+
     * *Player Name* - The video player used to play the video file (*HTML5 video*)
-    
+
     * *Total Seconds Played* - The total number of seconds the video was played (*25*)
-    
+
     * *Start Timestamp* - Timestamp that identifies when the video play started (*1331035567*)
-    
+
     * *Play Session* - The details of the play session. This field indicates how the user interacted with the video. This might include data such as where they started playing the video, whether they used the video slider to advance the video, and where they stopped playing the video (*L10E24S58L58 - video was stopped at sec. 25 of section L10, then skipped to sec. 48*)
 
 ## Legacy seconds {#legacy-seconds}
@@ -350,20 +350,20 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
    The information sent to Adobe Analytics is less customizable. There are only 3 variables available for mapping:
 
 <table>
- <tbody> 
-  <tr> 
-   <td>eventdata.videoName <br /> </td> 
-   <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if the Title is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoFileName </td> 
-   <td>Variable mapped to this will contain the file’s name. Only sent once, at the beginning of playing a video.</td> 
-  </tr> 
-  <tr> 
-   <td>eventdata.videoFilePath </td> 
-   <td>Variable mapped to this will contain the file’s path on the server. Only sent once, at the beginning of playing a video.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td>eventdata.videoName <br /> </td>
+   <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if the Title is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.<br /> </td>
+  </tr>
+  <tr>
+   <td>eventdata.videoFileName </td>
+   <td>Variable mapped to this will contain the file’s name. Only sent once, at the beginning of playing a video.</td>
+  </tr>
+  <tr>
+   <td>eventdata.videoFilePath </td>
+   <td>Variable mapped to this will contain the file’s path on the server. Only sent once, at the beginning of playing a video.</td>
+  </tr>
+ </tbody>
 </table>
 
    >[!NOTE]
@@ -378,7 +378,7 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
    ![](assets/lseconds.png)
 
-   *The call is similar to the Legacy Milestones call above. Please see the information on pev3 ** [provided there](..//help/sites-administering/adobeanalytics.md)**.*
+   *The call is similar to the Legacy Milestones call above. Please see the information on pev3 ** [provided there](/help/sites-administering/adobeanalytics.md)**.*
 
 **References used in this tutorial:**
 
