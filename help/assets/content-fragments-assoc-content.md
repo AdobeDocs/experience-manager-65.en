@@ -3,17 +3,19 @@ title: Associated Content
 seo-title: Associated Content
 description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
 seo-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
-uuid: 0b79e45a-14b7-40e3-8b6c-456a83d215d5
+uuid: 1bc1eefa-7a7c-43be-a8a8-0d153d60c5c4
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
-discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
-docset: aem65
-
+discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 ---
 
-# Associated Content{#associated-content}
+# Associated Content {#associated-content}
+
+>[!CAUTION]
+>
+>Some Content Fragment functionality requires the application of [AEM 6.4 Service Pack 2 (6.4.2.0) or later](/help/release-notes/sp-release-notes.md).
 
 Associated content provides the connection so that assets (i.e.) can be (optionally) used with the fragment when it is added to a content page. This provides flexibility by [providing a range of assets to access when using the content fragment on a page](/help/sites-authoring/content-fragments.md#using-associated-content), while also helping to reduce the time required to search for the appropriate asset.
 
@@ -21,24 +23,24 @@ Associated content provides the connection so that assets (i.e.) can be (optiona
 
 >[!NOTE]
 >
->There are various methods of adding [visual assets (e.g. images)](/help/assets/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>There are various methods of adding [visual assets (e.g. images)](content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
-To make the association you first need to [add your media asset(s) to a collection](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection). Once that is done you can:
+To make the association you first need to [add your media asset(s) to a collection](managing-collections-touch-ui.md#adding-assets-to-a-collection). Once that is done you can:
 
-1. Open your fragment and select **Associated Content** from the side panel.
+1. Open your fragment and select **[!UICONTROL Associated Content]** from the side panel.
 
-   ![](assets/chlimage_1-71.png)
+   ![chlimage_1-207](assets/chlimage_1-207.png)
 
-1. Select **Associate Content** or **Associate Collection** (as appropriate, depending on whether any collections have already been associated or not).
+1. Select **[!UICONTROL Associate Content]** or **[!UICONTROL Associate Collection]** (as appropriate, depending on whether any collections have already been associated or not).
 1. Select the required collection.
 
-   You can optionally add the fragment itself to the selected collection; this aids tracking.
+   You can optionally add the fragment itself to the selected collection; this aids tracking. 
 
-   ![](assets/cfm-6420-04.png)
+   ![cfm-6420-04](assets/cfm-6420-04.png)
 
 1. Confirm (with the check mark). The collection will be listed as associated.
 
-   ![](assets/cfm-6420-05.png)
+   ![cfm-6420-05](assets/cfm-6420-05.png)
 
 ## Editing Associated Content {#editing-associated-content}
 

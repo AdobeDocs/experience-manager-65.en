@@ -3,14 +3,12 @@ title: About document security
 seo-title: About document security 
 description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
 seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
-uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
+uuid: 31b0c24f-a588-44f7-a9ba-e9780e82c066
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
 ---
 
 # About document security {#about-document-security}
@@ -46,7 +44,7 @@ Document security consists of a server and user interface:
 
 **Web pages:** The interface where you create policies, manage your policy-protected documents, and monitor events that are associated with policy-protected documents. Administrators can also configure global options such as user authentication, auditing, and messaging for invited users, and manage invited user accounts.
 
-![](assets/rm_psworkflow.png)
+![rm_psworkflow](assets/rm_psworkflow.png)
 
 The steps in the illustration are as follows:
 
@@ -85,7 +83,7 @@ Various types of users work with document security to accomplish different tasks
 
   Users with this role can configure the document security server, using the Configuration page in document security section of administration console. This permission is associated with the role, Manage Configuration.
 
-  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+  **Note**: *Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
 
   **Document security policy set administrator**
 
@@ -98,7 +96,7 @@ Various types of users work with document security to accomplish different tasks
     * View events
     * Delegate
 
-  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+  **Note**: *Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
 
   **Document security manage invited and local users**
 
@@ -108,7 +106,7 @@ Various types of users work with document security to accomplish different tasks
     * Invite external users
     * Access end-user web pages
 
-  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+  **Note**: *Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
 
   **Document security invite user**
 
@@ -158,7 +156,7 @@ Users and administrators create policies through the document security web pages
 
 A policy can be removed from a document by using the client application.
 
-![](assets/rm_psonline_policy.png)
+![rm_psonline_policy](assets/rm_psonline_policy.png)
 
 The steps in the diagram are as follows:
 
@@ -176,7 +174,7 @@ To open and use policy-protected documents, the policy must include your name as
 
 When you attempt to open a policy-protected document, Acrobat, Adobe Reader, or the Acrobat Reader DC extensions connects to document security to authenticate you. Then, you can proceed to log on. If the document usage is being audited, a notification message appears. After document security determines which document permissions to grant, it manages the decryption of the document. You can then use the document according to the policy confidentiality settings. 
 
-![](assets/rm_psopen_online.png)
+![rm_psopen_online](assets/rm_psopen_online.png)
 
 The steps in the diagram are as follows:
 

@@ -3,15 +3,13 @@ title: Promoting Launches
 seo-title: Promoting Launches
 description: You need to promote launch pages to move the content back into the source (production) before publishing. 
 seo-description: You need to promote launch pages to move the content back into the source (production) before publishing. 
-uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
+uuid: 56483f8f-d66e-4677-a7bd-3b1425625b2b
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
-docset: aem65
+discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-
 ---
 
 # Promoting Launches{#promoting-launches}
@@ -21,7 +19,6 @@ You need to promote launch pages to move the content back into the source (produ
 * Whether to promote only the current page or the entire launch.
 * Whether to promote the child pages of the current page.
 * Whether to promote the full launch or only pages that have changed.
-* Whether to delete the launch after being promoted.
 
 >[!NOTE]
 >
@@ -51,8 +48,8 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
     * the **Sites** console:
 
-        1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). All references will be shown.
-        
+        1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#references) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). All references will be shown.
+
         1. Select **Launches** (e.g. Launches (1)) to show a list of the specific launches.
         1. Select the specific launch to show the actions available.
         1. Select **Promote launch** to open the wizard.
@@ -64,20 +61,14 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
 1. In the first step you can specify:
 
-    * **Target**
-
-        * **Delete launch after promotion**
-
-    * **Scope**
-
-        * **Promote full launch**
-        * **Promote modified pages**
-        * **Promote current page**
-        * **Promote current page and sub pages**
+    * **Promote full launch**
+    * **Promote modified pages**
+    * **Promote current page**
+    * **Promote current page and sub pages**
 
    For example, when selecting to only promote modified pages:
 
-   ![](assets/launches-pd-06.png)
+   ![chlimage_1](assets/chlimage_1.png)
 
    >[!NOTE]
    >
@@ -86,7 +77,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 1. Select **Next** to proceed.
 1. You can review the pages to be promoted, these will depend on the range of pages you have chosen:
 
-   ![](assets/chlimage_1-102.png)
+   ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. Select **Promote**.
 
@@ -94,7 +85,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
 When you are editing a launch page, the **Promote Launch** action is also available from **Page Information**. This will open the wizard to collect the information needed.
 
-![](assets/chlimage_1-103.png)
+![chlimage_1-2](assets/chlimage_1-2.png)
 
 >[!NOTE]
 >
@@ -104,21 +95,16 @@ When you are editing a launch page, the **Promote Launch** action is also availa
 
 After creating a nested launch you can promote it back to any of the sources, including the root source (production).
 
-![](assets/chlimage_1-104.png)
+![chlimage_1-3](assets/chlimage_1-3.png)
 
-1. As with [Creating a Nested Launch](#creatinganestedlaunchlaunchwithinalaunch), navigate to and select the required launch in either the **Launches** console or the **References** rail.
+1. As with [Creating a Nested Launch](/help/sites-authoring/launches-creating.md#creating-a-nested-launch), navigate to and select the required launch in either the **Launches** console or the **References** rail.
 1. Select **Promote launch** to open the wizard.  
 
 1. Enter the required details:
 
-    * **Target**
+    * **Promotion target** 
 
-        * **Promotion target** 
-          You can promote to any of the sources.
-        
-        * **Delete launch after promotion** 
-          After promotion the selected launch, and any launches nested within it, will be deleted.** 
-          **
+      You can promote to any of the sources.
 
     * **Scope** 
       Here you can select whether to promote the entire launch, or only pages that have actually been edited. If the latter, you can then select to include/exclude sub-pages. The default configuration is to only promote page changes for the current page:
@@ -128,12 +114,12 @@ After creating a nested launch you can promote it back to any of the sources, in
         * **Promote current page**
         * **Promote current page and sub pages**
 
-   ![](assets/chlimage_1-105.png)
+   ![chlimage_1-4](assets/chlimage_1-4.png)
 
 1. Select **Next**.
 1. Review the promotion details before selecting **Promote**:
 
-   ![](assets/chlimage_1-106.png)
+   ![chlimage_1-5](assets/chlimage_1-5.png)
 
    >[!NOTE]
    >
@@ -141,7 +127,7 @@ After creating a nested launch you can promote it back to any of the sources, in
 
 1. Your changes will be promoted and reflected in the **Launches** console:
 
-   ![](assets/chlimage_1-107.png)
+   ![chlimage_1-6](assets/chlimage_1-6.png)
 
 ## Processing Promoted Pages Using AEM Workflow {#processing-promoted-pages-using-aem-workflow}
 
@@ -155,5 +141,5 @@ To start a workflow automatically when pages are promoted, [configure a workflow
 
 For example, you can automatically generate page activation requests when authors promote Launches pages. Configure a workflow launcher to start the Request Activation workflow when the package node is modified. 
 
-![](assets/chlimage_1-108.png)
+![chlimage_1-7](assets/chlimage_1-7.png)
 

@@ -3,16 +3,14 @@ title: Updating general settings
 seo-title: Updating general settings
 description: Update AEM Forms app settings such as the Home screen and fetch Startpoints and attachments options
 seo-description: Update AEM Forms app settings such as the Home screen and fetch Startpoints and attachments options
-uuid: 650d677e-2b3c-498e-9e46-fa659af934ca
+uuid: 234cd2da-2b47-4d60-82ed-68363d782632
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
-discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
-docset: aem65
-
+discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 ---
 
-# Updating general settings{#updating-general-settings}
+# Updating general settings {#updating-general-settings}
 
 General settings of the AEM Forms app let you specify settings such as fetching attachments, offline mode, landing screen, default category, and autsave frequency.
 
@@ -22,16 +20,14 @@ When you synchronize your app with the AEM Forms server, all the forms and defin
 
 The out-of-the-box AEM Forms app solution does not download the attachments associated with each form when your app is synchronized.
 
-In the General tab, change the download attachments, offline mode, landing screen, autosave, and synchronization settings. You can change the [Home screen](../../forms/using/home-screen.md) of your app.
+In the General tab, change the download attachments, offline mode, landing screen, autosave, and synchronization settings. You can change the [Home screen](/help/forms/using/home-screen.md) of your app.
 
 **Navigate to the General tab on the Settings screen**
 
 1. To go to the Setting screen, tap the Menu button at the upper-left corner of the Home screen, and then Tap **Settings**.
 1. In the Settings screen, tap the General tab.
 
-   ![General settings in the AEM Forms app](assets/gen-settings-1.png)
-
-   General Settings screen
+   ![General settings in the AEM Forms app](assets/gen-settings-2.png)
 
    >[!NOTE]
    >
@@ -42,18 +38,23 @@ In the General tab, change the download attachments, offline mode, landing scree
 You can make the following changes to the settings of your app.
 
 * **Fetch task attachments**: To specify whether or not to download the associated attachments when each task is downloaded to your app.
-* **Offline mode**: To enable or disable the offline service for AEM Forms app. See [Working in the offline mode](/forms/using/work-offline-mode.md) for details.
-* **Landing screen**: To set the start location ([Home screen](../../forms/using/home-screen.md)) for the app.  
+
+* **Offline mode**: To enable or disable the offline service for AEM Forms app. See [Working in the offline mode](/help/forms/using/work-offline-mode.md) for details.
+
+* **Landing screen**: To set the start location ([Home screen](/help/forms/using/home-screen.md)) for the app. 
+
   Available options:
 
-  * Forms
-  * Tasks
-  * Favorites
+    * Forms
+    * Tasks
+    * Favorites
 
 * **Default category**: Lets you select the category of forms to show in the home screen. When you select All, you can see the all the forms in the home screen. Categories are populated based on the forms loaded in the app. Forms are available in the app based on the form settings specified in the AEM Forms server.
 
-* **Autosave Frequency**: To set the frequency at which your [mobile app saves form data](../../forms/using/autosave-data-app.md) locally.
-* **Synchronization Frequency**: To set the frequency at which your [mobile app is synchronized](../../forms/using/sync-app.md) with the AEM Forms server in the online mode.
+* **Autosave Frequency**: To set the frequency at which your [mobile app saves form data](/help/forms/using/autosave-data-app.md) locally.
+
+* **Synchronisation Frequency**: To set the frequency at which your [mobile app is synchronized](/help/forms/using/sync-app.md) with the AEM Forms server in the online mode.
+
 **Clear Local Data**: Clear the database, including settings and local data for all users and file storage from the device.
 
 >[!NOTE]
@@ -62,4 +63,4 @@ You can make the following changes to the settings of your app.
 >
 >However, you will be prompted to confirm the clear cache operation.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

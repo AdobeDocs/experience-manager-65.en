@@ -3,16 +3,14 @@ title: Creating and managing reviews for assets in forms
 seo-title: Creating and managing reviews for assets in forms
 description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form. 
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form. 
-uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
+uuid: 6b1aa54f-d03c-483a-a398-6522b285194c
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
-discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
-docset: aem65
-
+discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 ---
 
-# Creating and managing reviews for assets in forms{#creating-and-managing-reviews-for-assets-in-forms}
+# Creating and managing reviews for assets in forms {#creating-and-managing-reviews-for-assets-in-forms}
 
 ## Review {#review}
 
@@ -21,7 +19,7 @@ A Review is a mechanism that allows one or more reviewers to comment on an asset
 ## Setting up a review {#setting-up-a-review}
 
 1. Navigate to the Forms tab and select a form.
-1. If the asset does not have a review in progress, a Start Review ![](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Click the Start Review ![](assets/aem6forms_review_chat_comment.png) icon.
+1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Click the Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon.
 1. Enter the following information:
 
     * Review name: Mandatory, can contain alphanumeric characters, hyphen, or underscore.
@@ -39,8 +37,7 @@ This section describes what happens when a review is created or set up.
 1. All reviewers are assigned a review task. The task appears in their Notifications section. A reviewer can click a notification, or go to the Inbox to view the task. A reviewer can click to open the review task, to view the form, and start adding comments.
 
    ![Reviewer Notification Alert](assets/noti.png)
-
-   Reviewer Notification Alert
+**Figure:** *Reviewer Notification Alert*
 
 1. The comment box is available to the initiator and reviewers of the asset. Others can view the comments, but cannot write comments.
 
@@ -52,27 +49,23 @@ This section describes what happens when a review is created or set up.
 
 1. Navigate to the Forms tab and select a form.  
 
-1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Only review initiator can manage (update/end) the review.
+1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Only review initiator can manage (update/end) the review.
 
-   Click the Manage Review ![](assets/aem6forms_review_chat_comment.png)icon.
+   Click the Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icon.
 
    For user other than initiator the Manage Review icon is disabled. 
 
 1. You get a screen that displays information:
 
-    * **Review name**: Cannot be edited.  
-    
-    * **Review description**: Available for editing.  
-    
-    * **Review deadline**: Available for editing. One can modify the deadline to any date and time beyond the current date and time.  
-    
+    * **Review name**: Cannot be edited. 
+    * **Review description**: Available for editing. 
+    * **Review deadline**: Available for editing. One can modify the deadline to any date and time beyond the current date and time.
     * **Reviewers**: Available for editing. You can add or remove reviewers. If a task is overdue, you can add reviewers only after extending the deadline beyond the current date.
 
 1. Edit the necessary fields, and then click Update.
 
    ![Review updated state in Task Manager](assets/tskmgr.png)
-
-   Review updated state in Task Manager
+**Figure:** *Review updated state in Task Manager*
 
 1. To end the review, click End.
 
@@ -86,8 +79,7 @@ This section describes, what happens on Review end / modification:
 1. If a reviewer is removed:
 
    ![Removing a reviewer](assets/removeduser.png)
-
-   Removing a reviewer
+**Figure:** *Removing a reviewer*
 
     1. If incomplete, the assigned task is terminated.
     1. The reviewer can no longer comment on the asset.
@@ -95,8 +87,7 @@ This section describes, what happens on Review end / modification:
 1. If a reviewer is added:
 
    ![Adding a reviewer](assets/addedreviewer.png)
-
-   Adding a reviewer
+**Figure:** *Adding a reviewer*
 
     1. A review task is created and assigned to the newly added reviewer.
     1. The newly added reviewer can add comments for the asset.

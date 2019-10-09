@@ -3,36 +3,37 @@ title: Identity Management
 seo-title: Identity Management
 description: Learn about identity management in AEM.
 seo-description: Learn about identity management in AEM.
-uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
+uuid: 719601d2-b850-4114-8ece-1b11708a5078
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
-docset: aem65
-
+discoiquuid: a6d9b08d-e669-4b9b-b591-c21cd72b6e22
 ---
 
 # Identity Management{#identity-management}
 
 Individual visitors to your website can only be identified when you provide the ability for them to log in. There are various reasons why you may want to provide a login capability:
 
-* [AEM Communities
-  ](/help/communities/overview.md)Site visitors are required to sign in to post content to the community.
-* [Closed User Groups](/help/sites-administering/cug.md)
+* [AEM Communities](/help/communities/overview.md)Site visitors are required to sign in to post content to the community.
+* [Closed User Groups](/help/sites-administering/cug.md) 
+
   You may need to limit access to your website (or sections of it) to specific visitors.
 
-* [Personalization
-  ](/help/sites-administering/personalization.md) Allowing visitors to configure certains aspects of how they access your website.
+* [Personalization](/help/sites-administering/personalization.md) Allowing visitors to configure certain aspects of how they access your website.
 
 Log in (and out) functionality is provided by an [account with a **Profile**](#profiles-and-user-accounts), which holds additional information about the registered visitor (user). The actual processes for registration and authorization may differ:
 
 * Self-registration from the website
-  A [Community Site](/help/communities/sites-console.md) may be configured to allow visitors to self-register or sign-in with their Facebook or Twitter accounts.
+
+  A [Community Site](/help/communities/sites-console.md) may be configured to allow visitors to self-register or sign-in with their Facebook or Twitter accounts.  
 
 * Request for registration from the website
+
   For a closed user group you might allow visitors to request registration, but enforce authorization by means of a workflow.
+
 * Register each account from the author environment
+
   If you have a small number of profiles, which will need authorization anyway, you may decide to register each directly.
 
 To allow visitors to register, a series of components and forms can be used to collect the required identification information, then the additional (often optional) profile information. After they have registered, they should also be able to check and update, the details that they have submitted.
@@ -44,20 +45,20 @@ Additional functionality can be configured or developed:
 
 >[!NOTE]
 >
->The information specified in the profile can also be used to provide the user with targeted content via [Segments](/help/sites-administering/campaign-segmentation.md) and [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+>The information specified in the profile can also be used to provide the user with targeted content via [Segments](/help/sites-administering/campaign-segmentation.md) and [Campaigns](/help/sites-authoring/personalization.md).
 
 ## Registration Forms {#registration-forms}
 
-A [form](/help/sites-authoring/default-components.md#formcomponent) can be used to collect the registration information, then generate the new account and profile.
+A form can be used to collect the registration information, then generate the new account and profile.
 
-For example, users can request a new profile, using the Geometrixx page
-`https://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
+For example, users can request a new profile, using the Geometrixx page  
+`http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![](assets/registerform.png)
+![registerform](assets/registerform.png)
 
 Upon submitting the request, the profile page opens where the user can provide personal details.
 
-![](assets/profilepage.png)
+![profilepage](assets/profilepage.png)
 
 The new account is also visible in the [Users console](/help/sites-administering/security.md).
 
@@ -69,9 +70,9 @@ This provides the visitor with the standard fields of **Username** and **Passwor
 
 For example, users can either log in, or create a new account, using the **Sign In** option on the Geometrixx toolbar, which uses the page:
 
-`https://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
+`http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![](assets/login.png)
+![login](assets/login.png) 
 
 ## Logging Out {#logging-out}
 
@@ -82,17 +83,19 @@ As there is a login mechanism, a logout mechanism is also required. This is avai
 Depending on your registration form the visitor may have registered information in their profile. They should be able to view and/or update this at a later stage. This can be done with a similar form; for example, in Geometrixx:
 
 ```
-https://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
+http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 ```
 
-To see the details of your profile click on **My Profile** in the top right corner of any page; for example with the `admin` account:
-`https://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
+To see the details of your profile click on **My Profile** in the top right corner of any page; for example with the `admin` account:  
+`http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 You can view another profile using the [client context](/help/sites-administering/client-context.md) (on the author environment and with sufficient privileges):
 
-1. Open a page; for example the Geometrixx page:
-   `https://localhost:4502/cf#/content/geometrixx/en.html`
+1. Open a page; for example the Geometrixx page: 
+
+   `http://localhost:4502/cf#/content/geometrixx/en.html`
+
 1. Click **My Profile** in the top right corner. You will see the profile of your current account; for example the administrator.
 1. Press **control-alt-C** to open the client context.
 1. In top left corner of the client context, click the **Load a Profile** button.
@@ -103,7 +106,7 @@ You can view another profile using the [client context](/help/sites-administerin
 1. Click **OK**.
 1. Click again on **My Profile**. The form will be updated with Alison's details.
 
-   ![](assets/profilealison.png)
+   ![profilealison](assets/profilealison.png)
 
 1. You can now use **Edit Profile** or **Change Password** to update the details.
 
@@ -111,20 +114,18 @@ You can view another profile using the [client context](/help/sites-administerin
 
 You can add fields to the profile definition. For example to add a "Favorite Color" field to the Geometrixx profile:
 
-1. From the Websites console navigate to Geometrixx Outdoors Site &gt; English &gt; User &gt;My Profile.
+1. From the Websites console navigate to Geometrixx Outdoors Site &gt; English &gt; User &gt;My Profile.  
 
-1. Double-click on the **My Profile** page to open it for editing.
+1. Double-click on the **My Profile** page to open it for editing.  
 
-1. In the **Components** tab of sidekick expand the **Form** section.
+1. In the **Components** tab of sidekick expand the **Form** section.  
 
-1. Drag a **Dropdown List** from sidekick to the form, just below the **About me** field.
+1. Drag a **Dropdown List** from sidekick to the form, just below the **About me** field.  
 
 1. Double-click the **Dropdown List** component to open the dialog for configuration and enter:
 
     * **Element Name** - `favoriteColor`
-
     * **Title** - `Favorite Color`
-
     * **Items** - Add several colors as items
 
    Click **OK** to save.
@@ -133,11 +134,11 @@ You can add fields to the profile definition. For example to add a "Favorite Col
 
    Next time you view a profile you can select a favorite color:
 
-   ![](assets/aparkerfavcolour.png)
+   ![aparkerfavcolour](assets/aparkerfavcolour.png)
 
    The field will be saved under the **profile** section of the relevant user account:
 
-   ![](assets/aparkercrxdelite.png)
+   ![aparkercrxdelite](assets/aparkercrxdelite.png)
 
 ## Profile States {#profile-states}
 
@@ -151,15 +152,17 @@ This involves defining an appropriate property in the user profile in a way that
 
 This is done with:
 
-* [State Providers](#state-providers)
-  To manage the two states of a specific property and the transitions between the two.
+* [State Providers](#state-providers) 
 
-* [Workflows](#workflows)
+  To manage the two states of a specific property and the transitions between the two.  
+
+* [Workflows](#workflows) 
+
   To manage actions related to the states.
 
 Multiple states can be defined; for example in Geometrixx these include:
 
-* subscribing (or unsubscribing) to notifications on newsletters or comment threads
+* subscribing (or unsubscribing) to notifications on newsletters or comment threads  
 * adding and removing a connection to a friend
 
 ### State Providers {#state-providers}
@@ -179,17 +182,17 @@ A workflow is needed to implement the actions related to the states. For example
 
 ## Profiles and User Accounts {#profiles-and-user-accounts}
 
-Profiles are stored in the Content Repository as part of the the [user account](/help/sites-administering/security-landing.md#usersandgroupsinaem).
+Profiles are stored in the Content Repository as part of the the [user account](/help/sites-administering/user-group-ac-admin.md).
 
 The profile can be found under `/home/users/geometrixx`:
 
-![](assets/chlimage_1-138.png)
+![chlimage_1-385](assets/chlimage_1-385.png)
 
 On a standard installation (author or publish) everyone has read access to the entire profile information of all users. everyone is a "*Built-in group automatically containing all existing users and groups. The list of members cannot be edited*".
 
 These access rights are defined by the following wildcard ACL:
 
-/home everyone allow jcr:read rep:glob = &#42;/profile&#42;
+/home everyone allow jcr:read rep:glob = &ast;/profile&ast;
 
 That allows:
 
@@ -198,9 +201,9 @@ That allows:
 
 If such access is not appropriate for your installation you can change these default settings.
 
-This can be done using the ** [Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
+This can be done using the **[Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
 
-![](assets/aclmanager.png)
+![aclmanager](assets/aclmanager.png)  
 
 ## Profile Components {#profile-components}
 
@@ -215,23 +218,23 @@ This component gives you two fields for:
 
 With default settings the component will appear as follows:
 
-![](assets/dc_profiles_checkedpassword.png)
+![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png) 
 
 ### Profile Avatar Photo {#profile-avatar-photo}
 
 This component provides the user with a mechanism for selecting and uploading an Avatar Photo file.
 
-![](assets/dc_profiles_avatarphoto.png)
+![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png) 
 
 ### Profile Detailed Name {#profile-detailed-name}
 
 This component allows the user to input a detailed name.
 
-![](assets/dc_profiles_detailedname.png)
+![dc_profiles_detailedname](assets/dc_profiles_detailedname.png) 
 
 ### Profile Gender {#profile-gender}
 
 This component allows the user to input their gender.
 
-![](assets/dc_profiles_gender.png)
+![dc_profiles_gender](assets/dc_profiles_gender.png)
 

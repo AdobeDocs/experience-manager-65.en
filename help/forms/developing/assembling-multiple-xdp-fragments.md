@@ -3,34 +3,32 @@ title: Assembling Multiple XDP Fragments
 seo-title: Assembling Multiple XDP Fragments
 description: null
 seo-description: null
-uuid: 0e35ff85-ff40-4878-ae31-aa8da75bd3ec
+uuid: 9e74e0e0-568d-4760-91a8-03dc1362d497
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
-docset: aem65
-
+discoiquuid: 0ed1f69d-c212-4d47-a572-ae030f2983fc
 ---
 
-# Assembling Multiple XDP Fragments{#assembling-multiple-xdp-fragments}
+# Assembling Multiple XDP Fragments {#assembling-multiple-xdp-fragments}
 
-You can assemble multiple XDP fragments into a single XDP document. For example, consider XDP fragments where each XDP file contains one or more subforms used to create a health form. The following illustration shows the outline view (represents the tuc018_template_flowed.xdp file used in the *Assembling multiple XDP fragments* quick start):
+You can assemble multiple XDP fragments into a single XDP document. For example, consider XDP fragments where each XDP file contains one or more subforms used to create a health form. The following illustration shows the outline view (represents the tuc018_template_flowed.xdp file used in the *Assembling multiple XDP fragments* quick start): 
 
-![](assets/am_am_forma.png)
+![am_am_forma](assets/am_am_forma.png)
 
 The following illustration shows the patient section (represents the tuc018_contact.xdp file used in the *Assembling multiple XDP fragments* quick start): 
 
-![](assets/am_am_formb.png)
+![am_am_formb](assets/am_am_formb.png)
 
 The following illustration shows the patient health section (represents the tuc018_patient.xdp file used in the *Assembling multiple XDP fragments* quick start): 
 
-![](assets/am_am_formc.png)
+![am_am_formc](assets/am_am_formc.png)
 
 This fragment contains two subforms named *subPatientPhysical* and *subPatientHealth*. Both of these sub forms are referenced in the DDX document that is passed to the Assembler service. Using the Assembler service, you can combine all of these XDP fragments into a single XDP document, as shown in the following illustration. 
 
-![](assets/am_am_formd.png)
+![am_am_formd](assets/am_am_formd.png)
 
 The following DDX document assembles multiple XDP fragments into an XDP document.
 
@@ -138,19 +136,17 @@ An assembled XDP document is returned within a collection object. Iterate throug
 
 **See also**
 
-[Assemble multiple XDP fragments using the Java API](assembling-multiple-xdp-fragments.md#assemble_multiple_xdp_fragments_using_the_java_api)
+[Assemble multiple XDP fragments using the Java API](assembling-multiple-xdp-fragments.md#assemble-multiple-xdp-fragments-using-the-java-api)
 
-[Assemble multiple XDP fragments using the web service API](assembling-multiple-xdp-fragments.md#assemble_multiple_xdp_fragments_using_the_web_service_api)
+[Assemble multiple XDP fragments using the web service API](assembling-multiple-xdp-fragments.md#assemble-multiple-xdp-fragments-using-the-web-service-api)
 
-<!-- Unresolved links and the next 2 are bad links 
-[Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
+[Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
--->
+[Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Programmatically Assembling PDF Documents](/programming-with-aem-forms/programmatically-assembling-pdf-documents-programmatically-assembling-pdf-documents-programmatically.md#programmatically_assembling_pdf_documents)
+[Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-[Creating PDF Documents Using Fragments](/programming-with-aem-forms/creating-document-output-streams-creating-document-output-streams-creating.md#creating_pdf_documents_using_fragments)
+[Creating PDF Documents Using Fragments](/help/forms/developing/creating-document-output-streams.md)
 
 ## Assemble multiple XDP fragments using the Java API {#assemble-multiple-xdp-fragments-using-the-java-api}
 
@@ -204,16 +200,13 @@ Assemble multiple XDP fragments by using the Assembler Service API (Java):
 
 **See also**
 
-[Assembling Multiple XDP Fragments](assembling-multiple-xdp-fragments.md#assembling_multiple_xdp_fragments)
+[Assembling Multiple XDP Fragments](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 
-<!-- unresolved links
-[Quick Start (SOAP mode): Assembling multiple XDP fragments using the Java API](#unresolvedlink-lc-qs-assembler-as.xml#ws624e3cba99b79e12e69a9941333732bac8-7f57.2)
+[Quick Start (SOAP mode): Assembling multiple XDP fragments using the Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-[Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
+[Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
--->
-
+[Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Assemble multiple XDP fragments using the web service API {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
@@ -224,7 +217,7 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
    Create a Microsoft .NET project that uses MTOM. Ensure that you use the following WSDL definition when setting a service reference:
 
    ```as3
-    https://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
+    http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
    >[!NOTE]
@@ -234,7 +227,7 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
 1. Create a PDF Assembler client.
 
     * Create an `AssemblerServiceClient` object by using its default constructor. 
-    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service, such as `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
+    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service, such as `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
     * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
     * Enable basic HTTP authentication by performing the following tasks:
@@ -290,10 +283,6 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
 
 **See also**
 
-[Assembling Multiple XDP Fragments](assembling-multiple-xdp-fragments.md#assembling_multiple_xdp_fragments)
+[Assembling Multiple XDP Fragments](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 
-<!-- unresolved links
-[Quick Start (MTOM): Assembling multiple XDP fragments using the web service API](#unresolvedlink-lc-qs-assembler-as.xml#ws624e3cba99b79e12e69a9941333732bac8-7f56.2)
-
-[Invoking AEM Forms using MTOM](#unresolvedlink-lc-in-invoke-using-web-services-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fe7.2)
--->
+[Invoking AEM Forms using MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

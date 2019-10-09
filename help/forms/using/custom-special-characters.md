@@ -3,16 +3,14 @@ title: Custom special characters in Correspondence Management
 seo-title: Custom special characters in Correspondence Management
 description: Learn how to add custom special characters in Correspondence Management.
 seo-description: Learn how to add custom special characters in Correspondence Management.
-uuid: a1890f6d-8e0c-471f-a9bd-861acf1f17e6
+uuid: ac4f1353-f1ef-43b7-8e80-aba56a155e3f
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
-docset: aem65
-
+discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
 ---
 
-# Custom special characters in Correspondence Management{#custom-special-characters-in-correspondence-management}
+# Custom special characters in Correspondence Management {#custom-special-characters-in-correspondence-management}
 
 ## Overview {#overview}
 
@@ -26,10 +24,10 @@ For example, you can insert the following special characters:
 
 You can insert special characters in letters:
 
-* In the [text editor](/forms/using/document-fragments.md#createtext)
-* In an [editable, inline module in a correspondence](../../forms/using/create-correspondence.md#managecontent)
+* In the [text editor](/help/forms/using/document-fragments.md#createtext)
+* In an [editable, inline module in a correspondence](/help/forms/using/create-correspondence.md#managecontent)
 
-![](assets/specialcharactersinlinemodule.png)
+![specialcharactersinlinemodule](assets/specialcharactersinlinemodule.png)
 
 The admin can add support for more/custom special characters by customization. This article provides the instructions on how you can add support for additional, custom special characters.
 
@@ -56,13 +54,9 @@ Use the following steps to add support for custom special characters:
        >
        >Do not make changes in the /libs branch. Any changes you do make may be lost, because this branch is liable to changes whenever you:
        >
-       >    
-       >    
-       >    * Upgrade on your instance
-       >    * Apply a hot fix
-       >    * Install a feature pack
-       >    
-       >
+       >* Upgrade on your instance
+       >* Apply a hot fix
+       >* Install a feature pack
 
     1. Click **OK** and then click **Save All**. The specialcharacters folder is created in the specified path.
 
@@ -75,7 +69,7 @@ Use the following steps to add support for custom special characters:
    | cmConfigurationType |String |cmTextEditorConfiguration |
    | cssPath |String |/libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Right-click the **[!UICONTROL specialcharacters]** folder at the following path and select **Create &gt; Child Node** and then click **Save All**:
+1. Right-click the **[!UICONTROL specialcharacters]** folder at the following path and select **Create &gt; Child Node **and then click **Save All**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode&gt;
 
@@ -83,7 +77,7 @@ Use the following steps to add support for custom special characters:
 1. Click **Save All**.
 1. Make the changes in the special characters as required:
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>To...</strong></td> 

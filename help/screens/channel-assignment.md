@@ -3,17 +3,15 @@ title: Channel Assignment
 seo-title: Channel Assignment
 description: Follow this page to learn about Channel Assignment and Dayparting.
 seo-description: Follow this page to learn about Channel Assignment and Dayparting.
-uuid: fe429485-dcc9-4507-864c-b04393cedeee
+uuid: 9ff9ca1c-c7d3-454c-9c65-24c0d40a9a36
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/SCREENS
+products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 topic-tags: authoring
-discoiquuid: 212adcd1-835b-453d-9d3e-775366abf181
-docset: aem65
-
+discoiquuid: 6303a1fd-8ee7-4565-a0c7-9295a2cd9306
 ---
 
-# Channel Assignment{#channel-assignment}
+# Channel Assignment {#channel-assignment}
 
 This section covers the following topics:
 
@@ -27,7 +25,7 @@ This page shows assigning channel to your displays.
 
 **Pre-requisites**:
 
-* [Configuring and Deploying Screens](/help/sites-deploying/configuring-screens-introduction.md)
+* [Configuring and Deploying Screens](/help/screens/configuring-screens-introduction.md)
 * [Create and Manage Screens Project](/help/screens/creating-a-screens-project.md)
 * [Create and Manage Channels](/help/screens/managing-channels.md)
 * [Create and Manage Locations](/help/screens/managing-locations.md)
@@ -37,19 +35,19 @@ This page shows assigning channel to your displays.
 
 Follow the steps below to assign a channel to a display:
 
-1. Navigate to the required display, for example, **DemoProject*** *--&gt; **Locations** --&gt; **SanJose** --&gt; **StoreDisplay**.
+1. Navigate to the required display, for example, **DemoProject** &gt; **Locations** &gt; **SanJose** &gt; **StoreDisplay**.
 
-   ![](assets/screen_shot_2018-08-23at25359pm.png)
+   ![screen_shot_2018-08-23at25359pm](assets/screen_shot_2018-08-23at25359pm.png)
 
-1. Tap/click **Assign Channel **in the action bar
+1. Tap/click **Assign Channel** in the action bar
 
    Or,
 
-   Tap/click **Dashboard **and** **click** +Assign Channel **from the** ASSIGNED CHANNNELS **panel to open the **Channel Assignment** dialog box.
+   Tap/click **Dashboard**and click **+Assign Channel** from the **ASSIGNED CHANNNELS** panel to open the **Channel Assignment** dialog box.
 
-   ![](assets/screen_shot_2018-08-23at25938pm.png)
+   ![screen_shot_2018-08-23at25938pm](assets/screen_shot_2018-08-23at25938pm.png)
 
-   You can configure the following properties from the **Channel Assignment **dialog box:
+   You can configure the following properties from the **Channel Assignment** dialog box:
 
    **Channel Role**:
 
@@ -88,7 +86,7 @@ Follow the steps below to assign a channel to a display:
 
 1. Click **Save** to assign the created channel to a display.
 
-### Dayparting {#dayparting}
+## Dayparting {#dayparting}
 
 Schedules when when combined with **Dayparting**, allows you to set a global schedule with multiple channels running at specific times of the day, and re-use that setup for all your displays at once.
 
@@ -96,11 +94,11 @@ DayParting refers to as splitting up a day into time slots and specifying which 
 
 The following examples explain dayparting in channels in three different scenarios:
 
-#### Playing content on a single day divided into multiple time slots {#playing-content-on-a-single-day-divided-into-multiple-time-slots}
+### Playing content on a single day divided into multiple time slots {#playing-content-on-a-single-day-divided-into-multiple-time-slots}
 
 This example shows how a Restaurant uses dayparting to showcase its breakfast, lunch and dinner menu.
 
-Here, we will divide each day into three different time slots, so that channel content plays as per the specified time of the day:
+Here, we will divide each day into three different time slots, so that channel content plays as per the specified time of the day: 
 
 | **Channel** |**Role** |**Priority** |**Schedule** |
 |---|---|---|---|
@@ -112,34 +110,34 @@ Here, we will divide each day into three different time slots, so that channel c
 
 This example shows the dayparting achieved in a casino where live event occurs every weekend from 8:00 pm until 10:00 pm and specials are available for dinner menu after 10:00 pm until 1:00 am.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Channel</strong></td>
-   <td><strong>Role</strong></td>
-   <td><strong>Priority</strong></td>
-   <td><strong>Schedule</strong></td>
-  </tr>
-  <tr>
-   <td>LiveConcert</td>
-   <td>Weekend</td>
-   <td> </td>
-   <td>Oct 21, 2017 - Oct 22, 2017 <br /> after 20:00 before 22:00</td>
-  </tr>
-  <tr>
-   <td>SpecialsDinner</td>
-   <td>Weekend</td>
-   <td> </td>
-   <td>Oct 21, 2017 - Oct 22, 2017 <br /> after 22:00 before 1:00</td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td><strong>Channel</strong></td> 
+   <td><strong>Role</strong></td> 
+   <td><strong>Priority</strong></td> 
+   <td><strong>Schedule</strong></td> 
+  </tr> 
+  <tr> 
+   <td>LiveConcert</td> 
+   <td>Weekend</td> 
+   <td> </td> 
+   <td>Oct 21, 2017 - Oct 22, 2017 <br /> after 20:00 before 22:00</td> 
+  </tr> 
+  <tr> 
+   <td>SpecialsDinner</td> 
+   <td>Weekend</td> 
+   <td> </td> 
+   <td>Oct 21, 2017 - Oct 22, 2017 <br /> after 22:00 before 1:00</td> 
+  </tr> 
+ </tbody> 
 </table>
 
-#### Playing content for a particular month/months {#playing-content-for-a-particular-month-months}
+### Playing content for a particular month/months {#playing-content-for-a-particular-month-months}
 
 This example shows the dayparting for a store that displays their summer collection from the months of June until August and fall collection from September until the end of October.
 
-Here, you will create dayparting as per months, so that channel content plays as per the specified months of the year.
+Here, you will create dayparting as per months, so that channel content plays as per the specified months of the year. 
 
 | **Channel** |**Role** |**Priority** |**Schedule** |
 |---|---|---|---|
@@ -150,7 +148,7 @@ Here, you will create dayparting as per months, so that channel content plays as
 >
 >Additionally, you can define ***Priority*** for each of the channels. For example, if two channels are set for the same day and time or for the same month, then the channel with higher priority is played first. The minimum value for priority can be set as 0.
 
-#### Playing content for channels with same priority {#playing-content-for-channels-with-same-priority}
+### Playing content for channels with same priority {#playing-content-for-channels-with-same-priority}
 
 This examples shows the dayparting for a store that displays their winter collection with the same schedule in the month of December. But since the Channel B has priority set as 2, during that week; channel B plays its content rather than Channel A.
 

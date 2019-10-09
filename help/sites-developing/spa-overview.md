@@ -3,14 +3,12 @@ title: SPA Editor Overview
 seo-title: SPA Editor Overview
 description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
 seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
-uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
+uuid: 600f1100-5cfa-4b75-a58c-f773395b5e05
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
-docset: aem65
-
+discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 ---
 
 # SPA Editor Overview{#spa-editor-overview}
@@ -20,6 +18,8 @@ Single page applications (SPAs) can offer compelling experiences for website use
 The SPA Editor offers a comprehensive solution for supporting SPAs within AEM. This page gives an overview of how SPA support is structured in AEM, how the SPA Editor works, and how the SPA framework and AEM keep in synch.
 
 >[!NOTE]
+>
+>The Single-Page Application (SPA) Editor feature requires [AEM 6.4 service pack 2](/help/release-notes/sp-release-notes.md) or newer.
 >
 >The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
 
@@ -49,9 +49,9 @@ If the SPA page component inherits from the page core component, there are two o
 * If the template is editable, add it to the page policy.
 * Or add the categories using the `customfooterlibs.html`.
 
-For each resource in the exported model the SPA will map an actual component which will do the
-rendering. The model, represented as JSON, are then rendered using the component mappings within a container.
-![](assets/screen_shot_2018-08-20at144152.png)
+For each resource in the exported model the SPA will map an actual component which will do the  
+rendering. The model, represented as JSON, are then rendered using the component mappings within a container.  
+![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ rendering. The model, represented as JSON, are then rendered using the component
 
 When the `cq.authoring.pagemodel.messaging` category is added to the page, it will send a message to the Page Editor to establish the JSON communication data type. When the communication data type is set to JSON, the GET requests will communicate with the Sling Model end-points of a component. After an update occurs in the page editor, the JSON representation of the updated component is sent to the Page Model library. The Page Model library then informs the SPA of updates.
 
-![](assets/screen_shot_2018-08-20at143628.png)
+![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
 ## Workflow {#workflow}
 
@@ -72,15 +72,15 @@ You can understand the flow of the interaction between the SPA and AEM by thinki
 * The page model manager notifies the editor it is ready for edition and passes the page model as a JSON structure.
 * The editor doesn't alter or even access the DOM structure of the page being authored rather it provides the latest page model.
 
-![](assets/screen_shot_2018-08-20at144324.png)
+![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 
 ### Basic SPA Editor Workflow {#basic-spa-editor-workflow}
 
 Keeping in mind the key elements of the SPA Editor, the high-level workflow of editing a SPA within AEM appears to the author as follows.
 
-![](assets/untitled1.gif)
+![untitled1](assets/untitled1.gif)
 
-1. SPA Editor loads.
+1. SPA Editor loads.  
 
 1. SPA is loaded in a separate frame.
 1. SPA requests JSON content and renders components client-side.
@@ -103,17 +103,17 @@ Keeping in mind the key elements of the SPA Editor, the high-level workflow of e
 
 This is a more detailed overview of the client-server interaction when editing a SPA.
 
-![](assets/page_editor_spa_authoringmediator-2.png)
+![page_editor_spa_authoringmediator-2](assets/page_editor_spa_authoringmediator-2.png)
 
-1. The SPA initializes itself and requests the page model from the Sling Model Exporter.
+1. The SPA initializes itself and requests the page model from the Sling Model Exporter.  
 
 1. The Sling Model Exporter requests the resources that compose the page from the repository.
 
-1. The repository returns the resources.
+1. The repository returns the resources.  
 
-1. The Sling Model Exporter returns the model of the page.
+1. The Sling Model Exporter returns the model of the page.  
 
-1. The SPA instantiates its components based on the page model.
+1. The SPA instantiates its components based on the page model.  
 
 1. **6a** The content informs the editor that it is ready for authoring.
 
@@ -123,23 +123,23 @@ This is a more detailed overview of the client-server interaction when editing a
 
 1. When the author edits a component, the page editor posts a modification request to the default POST servlet.
 
-1. The resource is updated in the repository.
+1. The resource is updated in the repository.  
 
-1. The updated resource is provided to the POST servlet.
+1. The updated resource is provided to the POST servlet.  
 
-1. The default POST servlet informs the page editor that the resource has been updated.
+1. The default POST servlet informs the page editor that the resource has been updated.  
 
-1. The page editor requests the new page model.
+1. The page editor requests the new page model.  
 
-1. The resources that compose the page are requested from the repository.
+1. The resources that compose the page are requested from the repository.  
 
 1. The resources that compose the page are provided by the repository to the Sling Model Exporter.
 
-1. The updated page model is returned to the editor.
+1. The updated page model is returned to the editor.  
 
 1. The page editor updates the page model reference of the SPA.
 
-1. The SPA updates its components based on the new page model reference.
+1. The SPA updates its components based on the new page model reference.  
 
 1. The component configurations of the page editors are updated.
 
@@ -153,27 +153,27 @@ This is a more detailed overview of the client-server interaction when editing a
 
 This is a more detailed overview focusing on the authoring experience.
 
-![](assets/spa_content_authoringmodel.png)
+![spa_content_authoringmodel](assets/spa_content_authoringmodel.png)
 
-1. The SPA fetches the page model.
+1. The SPA fetches the page model.  
 
 1. **2a** The page model provides the editor with the data required for authoring.
 
    **2b** When notified, the component orchestrator update the content structure of the page.
 
-1. The component orchestrator queries the mapping between an AEM resource type and a SPA component.
+1. The component orchestrator queries the mapping between an AEM resource type and a SPA component.  
 
-1. The component orchestrator dynamically instantiates the SPA component based on the page model and component mapping.
+1. The component orchestrator dynamically instantiates the SPA component based on the page model and component mapping.  
 
-1. The page editor updates the page model.
+1. The page editor updates the page model.  
 
 1. **6a** The page model provides updated authoring data to the page editor.
 
    **6b** The page model dispatches changes to the component orchestrator.
 
-1. The component orchestrator fetches the component mapping.
+1. The component orchestrator fetches the component mapping.  
 
-1. The component orchestrator updates the content of the page.
+1. The component orchestrator updates the content of the page.  
 
 1. When the SPA completes updating the content of the page, the page editor loads the authoring environment.
 
@@ -196,7 +196,7 @@ Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK
 
 ### Limitations {#limitations}
 
-The AEM SPA Editor SDK was introduced with AEM 6.4 service pack 2. It is fully supported by Adobe, and as a new feature it continues to be enhanced and expanded. The following AEM features are not yet supported by the SPA Editor:
+The AEM SPA Editor SDK was introduced with AEM 6.4 service pack 2. It is fully supported by Adobe, and as a new feature it continues to be enhanced and expanded. The following AEM features are not yet covered by the SPA Editor:
 
 * Target mode
 * ContextHub
@@ -208,4 +208,3 @@ The AEM SPA Editor SDK was introduced with AEM 6.4 service pack 2. It is fully s
 * Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening etc.
 * Developer mode
 * Launch
-

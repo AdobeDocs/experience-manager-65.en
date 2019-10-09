@@ -3,14 +3,12 @@ title: eCommerce
 seo-title: eCommerce
 description: The integration framework includes an integration layer with an API
 seo-description: The integration framework includes an integration layer with an API
-uuid: 48e01bbb-8f9e-489c-bbe4-24563e84ff35
+uuid: 39a13c2f-4478-4030-8fe4-03f5b271d04f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
-discoiquuid: 612b45de-4505-4fc8-9f11-ae5a0952ed65
-docset: aem65
-
+discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 ---
 
 # eCommerce{#ecommerce}
@@ -23,17 +21,17 @@ The integration framework includes an integration layer with an API. This allows
 For more information, see:
 
 * [Developing (generic)](/help/sites-developing/generic.md)
-* [Developing with SAP Commerce Cloud](/help/sites-developing/hybris.md)
+* [Developing with SAP Commerce Cloud](/help/sites-developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >
->Since the eCommerce framework can be used with any eCommerce solution, see [Developing (generic)](/help/sites-developing/generic.md) for more information about developing possibilities.
+>Since the eCommerce framework can be used with any eCommerce solution, see [Developing (generic)](/help/sites-developing/generic.md) for more information about developing possibilities with Intershop, Elastic Path or IBM Websphere Commerce.
 
 >[!NOTE]
 >
 >To use the integration framework with external eCommerce providers, you first need to install the required packages. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
 >
->For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering//ecommerce.md).
+>For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering/ecommerce.md).
 
 ## API Documentation {#api-documentation}
 
@@ -41,7 +39,7 @@ The eCommerce API is provided by the packages:
 
 `com.adobe.cq.commerce.*`
 
-See the [API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) for further information.
+See the [API documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) for further information.
 
 >[!NOTE]
 >

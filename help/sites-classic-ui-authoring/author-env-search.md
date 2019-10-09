@@ -3,17 +3,15 @@ title: Search
 seo-title: Search
 description: The author environment of AEM provides various mechanisms for searching for content, dependent on the the resource type.
 seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the the resource type.
-uuid: 6dd3df4d-6040-4230-8373-fc028687b675
+uuid: b50c8144-1993-441d-8303-fcb6b0f24376
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
-docset: aem65
-
+discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 ---
 
-# Search{#search}
+# Search{#search-features}
 
 The author environment of AEM provides various mechanisms for searching for content, dependent on the the resource type.
 
@@ -25,7 +23,7 @@ The author environment of AEM provides various mechanisms for searching for cont
 
 To access the search panel, click on the **Search** tab at the top of the left-hand pane of the appropriate console.
 
-![](assets/chlimage_1-101.png)
+![chlimage_1-140](assets/chlimage_1-140.png)
 
 The search panel lets you search across all your website pages. It contains fields and widgets for the following:
 
@@ -39,7 +37,7 @@ The search panel lets you search across all your website pages. It contains fiel
 >When your instance is configured for [Lucene search](/help/sites-deploying/queries-and-indexing.md) you can use the following in **Fulltext**:
 >
 >* [Wildcards](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
->* [Boolean Operators](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+>* [Boolean Operators](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)  
 >
 >* [Regular expressions](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Field Grouping](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
@@ -52,7 +50,7 @@ Execute the search by clicking **Search** at the bottom of the pane. Click **Res
 
 At various locations a filter can be set (and cleared) to drill down and refine your view:
 
-![](assets/chlimage_1-102.png)
+![chlimage_1-141](assets/chlimage_1-141.png)
 
 ## Find and Replace {#find-and-replace}
 
@@ -61,7 +59,7 @@ In the **Websites** console a **Find & Replace** menu option allows you to searc
 1. Select the root page, or folder, where you want the find and replace action to take place.
 1. Select **Tools** then **Find & Replace**:
 
-   ![](assets/screen_shot_2012-02-15at120346pm.png)
+   ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
 1. The **Find & Replace** dialog does the following:
 
@@ -73,7 +71,7 @@ In the **Websites** console a **Find & Replace** menu option allows you to searc
 
    Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
 
-   ![](assets/screen_shot_2012-02-15at120719pm.png)
+   ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
 1. Click **Replace** to actually replace all instances. You will be asked to confirm the action.
 
@@ -84,7 +82,7 @@ The default scope for the find and replace servlet covers the following properti
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `https://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
+The scope can be changed using the Apache Felix Web Management Console (for example, at `http://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
 
 >[!NOTE]
 >

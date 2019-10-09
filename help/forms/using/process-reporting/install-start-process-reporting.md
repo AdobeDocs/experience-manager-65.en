@@ -3,16 +3,14 @@ title: Getting Started with Process Reporting
 seo-title: Getting Started with Process Reporting
 description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
 seo-description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
-uuid: 685cad39-da2c-411d-a0b0-201917438bcf
+uuid: 86ba17da-57e5-4e7a-a864-583d8c0f830e
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
-discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
-docset: aem65
-
+discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 ---
 
-# Getting Started with Process Reporting{#getting-started-with-process-reporting}
+# Getting Started with Process Reporting {#getting-started-with-process-reporting}
 
 Process Reporting gives AEM Forms users the ability to query information about AEM Forms processes that are currently defined in the AEM Forms implementation. However, Process Reporting does not access data directly from the AEM Forms repository. The data is first published to the Process Reporting repository on a scheduled basis (*by the ProcessDataPublisher & ProcessDataStorage service*s). The reports and queries in Process Reporting are then generated out of the Process Reporting data published to the repository. Process Reporting is installed as part of the Forms Workflow module.
 
@@ -49,8 +47,6 @@ Perform the following steps to change the publishing schedule:
 >If you are running your AEM Forms implementation on a cluster, perform the following steps on each node of the cluster.
 
 1. Stop the AEM Forms server instance.
-1.
-
     * (For Windows) Open the `[*JBoss root*]/bin/run.conf.bat` file in an editor.
     * (For Linux, AIX and Solaris) `[*JBoss root*]/bin/run.conf.sh` file in an editor.
 
@@ -65,7 +61,7 @@ Perform the following steps to change the publishing schedule:
 1. Restart the AEM Forms server instance.
 
 1. Stop the AEM Forms server instance.
-1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers **&gt; **Application servers** and then, in the right pane, click the server name.  
+1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers** &gt;  **Application servers** and then, in the right pane, click the server name.  
 
 1. Under Server Infrastructure, click **Java and Process Management** &gt; **Process Definition**.  
 
@@ -78,22 +74,29 @@ Perform the following steps to change the publishing schedule:
     * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Click **Apply**, click OK, and then click **Save directly to the master configuration**.  
+
 1. Restart the AEM Forms server instance.
+
 1. Stop the AEM Forms server instance.
 1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `https://[hostname]:[port]/console`.  
+
 1. Under Change Center, click **Lock & Edit**.  
-1. Under Domain Structure, click **Environment **&gt; **Servers **and, in the right pane, click the managed server name.  
+
+1. Under Domain Structure, click **Environment** &gt;  **Servers **and, in the right pane, click the managed server name.  
+
 1. On the next screen, click the **Configuration **tab &gt; **Server Start** tab.  
+
 1. In the Arguments box, add the JVM argument `-Dreporting.publisher.cron = <expression>`.
 
    **Example**: The following cron expression causes Process Reporting to publish AEM Forms data to the Process Reporting repository every 5 hours:
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Click **Save **and then click **Activate Changes**.  
+1. Click **Save** and then click **Activate Changes**.  
+
 1. Restart the AEM Forms server instance.
 
-![](assets/processdatapublisherservice.png) 
+![processdatapublisherservice](assets/processdatapublisherservice.png)
 
 ### ProcessDataStorage service {#processdatastorage-service}
 
@@ -105,10 +108,10 @@ You can use the Administration console to configure the root (**default**: `/con
 
 #### To configure the Process Reporting repository locations {#to-configure-the-process-reporting-repository-locations}
 
-1. Log in to** Administration Console** with administrator credentials. The default URL of Administration Console is `https://[server]:[port]/adminui`
-1. Navigate to **Home **&gt; **Services **&gt; **Applications and Services** &gt;** Service Management** and open the **ProcessDataStorageProvider** service.
+1. Log in to **Administration Console** with administrator credentials. The default URL of Administration Console is `https://[server]:[port]/adminui`
+1. Navigate to **Home** &gt;  **Services** &gt;  **Applications and Services** &gt; **Service Management** and open the **ProcessDataStorageProvider** service.
 
-   ![](assets/process-data-storage-service.png)
+   ![process-data-storage-service](assets/process-data-storage-service.png)
 
    **RootFolder**
 
@@ -131,7 +134,7 @@ The ReportConfiguration service is used by Process Reporting for configuring the
 #### To configure the ReportingConfiguration service {#to-configure-the-reportingconfiguration-service}
 
 1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `https://[*server*]:[*port*]/lc/system/console/configMgr`
-1. Open the **ReportingConfiguration **service. 
+1. Open the **ReportingConfiguration** service.
 1. **Number of Records**
 
    When running a query on the repository, a result can potentially contain a large number of records. If the resultset is large, the query execution can consume server resources.
@@ -150,10 +153,9 @@ The ReportConfiguration service is used by Process Reporting for configuring the
    >
    >This is the same location as specified in the ProcessDataStorage configuration option **Root Folder**.
    >
-   >
    >If you update the Root Folder option in the ProcessDataStorage configuration, you need to update the CRX Storage Path location in the ReportConfiguration service.
 
-1. Click **Save **and close **CQ Configuration Manager**.
+1. Click **Save** and close **CQ Configuration Manager**.
 
 ### ProcessDataPublisher service {#processdatapublisher-service}
 
@@ -161,13 +163,13 @@ The ProcessDataPublisher service imports process data from the AEM Forms databas
 
 #### To configure ProcessDataPublisher service &nbsp; {#to-configure-processdatapublisher-service-nbsp}
 
-1. Log in to** Administration Console** with administrator credentials.
+1. Log in to **Administration Console** with administrator credentials.
 
    The default URL is `https://[server]:port]/adminui/`.
 
-1. Navigate to **Home **&gt; **Services **&gt; **Applications and Services** &gt;** Service Management** and open the **ProcessDataPublisher** service.
+1. Navigate to **Home** &gt;  **Services** &gt;  **Applications and Services** &gt;** Service Management** and open the **ProcessDataPublisher** service.
 
-![](assets/processdatapublisherservice-1.png)
+![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
 **Publish Data**
 
@@ -233,13 +235,13 @@ Specify your credentials to log in to the Process Reporting module.
 >
 >`PERM_PROCESS_REPORTING_USER`
 
-![Login to Process Reporting](assets/capture1_new.png)
+![capture](assets/capture.png)
 
-When you log in to Process Reporting, the **[!UICONTROL Home]**screen displays.
+When you log in to Process Reporting, the **[!UICONTROL Home]** screen displays.
 
 ### Process Reporting Home screen {#process-reporting-home-screen}
 
-![](assets/process-reporting-home-screen.png)
+![process-reporting-home-screen](assets/process-reporting-home-screen.png)
 
 **Process Reporting tree view:** The tree view on the left side of the Home screen contains the items for the Process Reporting modules.
 
@@ -247,15 +249,15 @@ The tree view consists of the following top-level items:
 
 **Reports:** This item contains the out-of-the-box reports that ship with Process Reporting.
 
-For details on the pre-defined reports, see [Pre-defined Reports in Process Reporting](../../../forms/using/process-reporting/pre-defined-reports-in-process-reporting.md).
+For details on the pre-defined reports, see [Pre-defined Reports in Process Reporting](pre-defined-reports-in-process-reporting.md).
 
 **Adhoc Queries:** This item contains options to perform filter-based search for processes and tasks.
 
-For details on ad-hoc queries, see [Ad-hoc Queries in Process Reporting](../../../forms/using/process-reporting/adhoc-queries-in-process-reporting.md).
+For details on ad-hoc queries, see [Ad-hoc Queries in Process Reporting](adhoc-queries-in-process-reporting.md).
 
 **Custom:** The Custom node displays custom reports that you create.
 
-For the procedure to create and display custom reports, see [Custom Reports in Process Reporting](../../../forms/using/process-reporting/process-reporting-custom-reports.md).
+For the procedure to create and display custom reports, see [Custom Reports in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
 **Process Reporting title bar:** The Process Reporting title bar contains some generic options that you can use when working in the user interface.
 
@@ -267,7 +269,7 @@ Click the title at any time to go back to the Home screen.
 
 The Last Update Time displays the last date and time up to which the data updates were pushed to the Process Reporting repository.
 
-For details on the data publishing service and how to schedule this service, see [Schedule process data publishing](../../../forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in the article Getting Started with Process Reporting.
+For details on the data publishing service and how to schedule this service, see [Schedule process data publishing](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in the article Getting Started with Process Reporting.
 
 **Process Reporting user:** The logged in user name displays to the right of the Last Update time.
 
@@ -277,4 +279,4 @@ For details on the data publishing service and how to schedule this service, see
 * **[!UICONTROL **Help**]**: View the Help documentation on Process Reporting.
 * **[!UICONTROL **Logout**]**: Log out of Process Reporting
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

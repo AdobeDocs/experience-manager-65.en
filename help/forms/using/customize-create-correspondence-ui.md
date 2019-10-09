@@ -3,16 +3,14 @@ title: Customize create correspondence UI
 seo-title: Customize create correspondence UI
 description: Learn how to customize create correspondence UI.
 seo-description: Learn how to customize create correspondence UI.
-uuid: 9dee9b6f-4129-4560-9bf8-db48110b76f7
+uuid: 5b6eb8fd-0270-4638-bdf4-cb7015919d57
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
-discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
-docset: aem65
-
+discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 ---
 
-# Customize create correspondence UI{#customize-create-correspondence-ui}
+# Customize create correspondence UI {#customize-create-correspondence-ui}
 
 ## Overview {#overview}
 
@@ -21,8 +19,7 @@ Correspondence Management allows you to rebrand its solution template for better
 You can change the logo in the Create Correspondence UI with your organization's logo.
 
 ![The custom icon in the Create Correspondence UI](assets/0_1_introscreenshot.png)
-
-The custom icon in the Create Correspondence UI
+**Figure:** *The custom icon in the Create Correspondence UI*
 
 ### Changing the logo in the Create Correspondence UI {#changing-the-logo-in-the-create-correspondence-ui}
 
@@ -71,13 +68,9 @@ Use the following steps to create the required folder structure in the /apps bra
        >
        >Do not make changes in the /libs branch. Any changes you do make may be lost, because this branch is liable to changes whenever you:
        >
-       >    
-       >    
-       >    * Upgrade on your instance
-       >    * Apply a hot fix
-       >    * Install a feature pack
-       >    
-       >
+       >* Upgrade on your instance
+       >* Apply a hot fix
+       >* Install a feature pack
 
     1. Click **OK**. The css folder is created in the specified path.
 
@@ -104,7 +97,7 @@ Use the following steps to create the required folder structure in the /apps bra
 
 Upload your custom logo file to CRX. Standard HTML rules govern the rendering of the logo. The image file formats supported are according to the browser you are using to access AEM Forms. All the browsers support JPEG, GIF, and PNG. For more information, see the browser-specific documentation on the supported image formats.
 
-* The default dimensions of the logo image are 48 px &#42; 48 px. Ensure that your image is similar to this size or bigger than 48 px &#42; 48 px.
+* The default dimensions of the logo image are 48 px &ast; 48 px. Ensure that your image is similar to this size or bigger than 48 px &ast; 48 px.
 * If the height of your logo image is more than 50 px, Create Correspondence user interface scales down the image to a maximum height of 50 px as this is the height of the header. While scaling the image down, Create Correspondence user interface maintains the aspect ratio of your image. 
 * The Create Correspondence User Interface does not scale up your image if it is small, so ensure you use a logo image at least 48 px in height and sufficient width for clarity.
 
@@ -129,7 +122,7 @@ Use the following steps to upload the custom logo file to CRX:
 
    jcr:content's properties appear. 
 
-   ![](assets/jcrcontentproperties.png)
+   ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
 1. Double-click the **jcr:data **property.
 
@@ -142,8 +135,7 @@ Use the following steps to upload the custom logo file to CRX:
    The image file formats supported are according to the browser you are using to access AEM Forms. All the browsers support JPEG, GIF, and PNG. For more information, see the browser-specific documentation on the supported image formats. 
 
    ![Sample custom logo file](assets/geometrixx-outdoors.png)
-
-   Example: CustomLogo.png to be used as the custom logo
+**Figure:** *Example - CustomLogo.png to be used as the custom logo*
 
 1. Click **Save All**.
 
@@ -177,6 +169,5 @@ Use the following steps to set up the style sheet for rendering the logo:
 Clear the browser cache and then open the Create Correspondence UI instance in your browser. You should see your custom logo. 
 
 ![Create correspondence user interface with custom logo](assets/0_1_introscreenshot-1.png)
-
-The custom icon in the Create Correspondence UI
+**Figure:** *The custom icon in the Create Correspondence UI*
 

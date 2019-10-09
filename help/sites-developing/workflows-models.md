@@ -3,21 +3,19 @@ title: Creating Workflow Models
 seo-title: Creating Workflow Models
 description: You create a workflow model to define the series of steps executed when a user starts the workflow.
 seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
+uuid: 53d94176-4d5f-4ab3-9628-6b7d44f81139
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
-docset: aem65
-
+discoiquuid: 9d2dba11-0d2d-4aed-b941-c8ade9bb7bfa
 ---
 
 # Creating Workflow Models{#creating-workflow-models}
 
 >[!CAUTION]
 >
->For use of the classic UI, please see the [AEM 6.3 documentation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) for reference.
+>For use of the classic UI, please see the [AEM 6.3 documentation](https://helpx.adobe.com/experience-manager/6-3/sites-developing/workflows-models.html) for reference.
 
 You create a [workflow model](/help/sites-developing/workflows.md#model) to define the series of steps executed when a user starts the workflow. You can also define model properties, such as whether the workflow is transient or uses multiple resources.
 
@@ -27,30 +25,32 @@ When a user starts a workflow, an instance is started; this is the corresponding
 
 When you first create a new workflow model it contains:
 
-* The steps, **Flow Start** and **Flow End**.
-  These represent the beginning and end of the workflow. These steps are required and cannot be edited/removed.
+* The steps, **[!UICONTROL Flow Start]** and **[!UICONTROL Flow End]**.
 
-* An example **Participant** step named **Step 1**.
+  These represent the beginning and end of the workflow. These steps are required and cannot be edited or removed. 
+
+* An example **Participant** step named **Step 1**. 
+
   This step is configured to assign a work item to the workflow initiator. Edit or delete this step, and add steps as required.
 
 To create a new workflow with the editor:
 
-1. Open the **Workflow Models** console; via **Tools**, **Workflow**, **Models** or, for example:
+1. Open the **[!UICONTROL Workflow Models]** console; by way of **[!UICONTROL Tools]**, **[!UICONTROL Workflow]**, **[!UICONTROL Models]** or, for example:
 
-   [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
+   [http://localhost:4502/aem/workflow](http://localhost:4502/aem/workflow)
 
-1. Select **Create**, then **Create Model**.
-1. The **Add Workflow Model** dialog appears. Enter the **Title** and **Name** (optional) before selecting **Done**.
-1. The new model is listed in the **Workflow Models** console.
-1. Select your new workflow, then use [**Edit** to open it for configuration](#editinganexistingworkflow):
+1. Select **[!UICONTROL Create]**, then **[!UICONTROL Create Model]**.
+1. The **[!UICONTROL Add Workflow Model]** dialog box appears. Enter the **[!UICONTROL Title]** and **[!UICONTROL Name]** (optional) before selecting **[!UICONTROL Done]**.
+1. The new model is listed in the **[!UICONTROL Workflow Models]** console.
+1. Select your new workflow, then use [**[!UICONTROL Edit]** to open it for configuration](#editing-a-workflow):
 
-   ![](assets/wf-01.png)
+   ![wf-01](assets/wf-01.png)
 
 >[!NOTE]
 >
 >If creating models programmatically (using a crx package) you can also create a sub-folder within:
 >
->`/var/workflow/models`
+>`/var/workflow/models`   
 
 >
 >For example, `/var/workflow/models/prototypes`
@@ -61,79 +61,79 @@ To create a new workflow with the editor:
 
 You can edit any existing workflow model to:
 
-* [define steps](#addingasteptoamodel-) and their [parameters](#configuring-a-workflow-step)
+* [define steps](#adding-a-step-to-a-model) and their [parameters](#configuring-a-workflow-step)
 
-* configure workflow properties, including [stages](#configuring-workflow-stages-that-show-workflow-progress), [whether the workflow is transient](#creatingatransientworkflow-) and/or [uses multiple resources](#configuring-a-workflow-for-multi-resource-support)
+* configure workflow properties, including [stages](#configuring-workflow-stages-that-show-workflow-progress), [whether the workflow is transient](#creating-a-transient-workflow) and/or [uses multiple resources](#configuring-a-workflow-for-multi-resource-support)
 
-Editing a [**Default and/or Legacy** (out-of-the-box) workflow](#editing-a-default-or-legacy-workflow-for-the-first-time) has an additional step, to ensure that a [safe copy](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) is taken prior to your changes being made.
+Editing a [**Default or Legacy** (out-of-the-box) workflow](#editing-a-default-or-legacy-workflow-for-the-first-time) has an additional step, to ensure that a [safe copy](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) is taken prior to your changes being made.
 
-When updates to your workflow are complete you must use **Sync** to **Generate a Runtime Model**. See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
+When updates to your workflow are complete you must use **[!UICONTROL Sync]** to **[!UICONTROL Generate a Runtime Model]**. See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
 
 ### Sync your Workflow - Generate a Runtime Model {#sync-your-workflow-generate-a-runtime-model}
 
-**Sync** (right in the editor toolbar) generates a [runtime model](/help/sites-developing/workflows.md#runtime-model). The runtime model is the model actually used when a user starts a workflow. If you do not **Sync** your changes, then the changes will not be available at runtime.
+**Sync** (right in the editor toolbar) generates a [runtime model](/help/sites-developing/workflows.md#runtime-model). The runtime model is the model actually used when a user starts a workflow. If you do not **[!UICONTROL Sync]** your changes, then the changes will not be available at runtime.
 
-When you (or any other user) make any changes to the workflow you must use **Sync** to generate a runtime model - even when individual dialogs (for example, for steps) have had their own save options.
+When you (or any other user) make any changes to the workflow you must use **[!UICONTROL Sync]** to generate a runtime model - even when individual dialogs (for example, for steps) have had their own save options.
 
-When the changes are synchronized with the runtime (saved) model, **Synched** is shown instead.
+When the changes are synchronized with the runtime (saved) model, **[!UICONTROL Synched]** is shown instead.
 
-Some steps have mandatory fields and/or built in validation. When these conditions are not satisfied an error will be shown when you attempt to **Sync** the model. For example, when no participant has been defined for a **Participant** step:
+Some steps have mandatory fields and/or built in validation. When these conditions are not satisfied an error will be shown when you attempt to **[!UICONTROL Sync]** the model. For example, when no participant has been defined for a **[!UICONTROL Participant]** step:
 
-![](assets/wf-21.png)
+![wf-21](assets/wf-21.png) 
 
 ### Editing a Default or Legacy Workflow for the First Time {#editing-a-default-or-legacy-workflow-for-the-first-time}
 
 When you open a [Default and/or Legacy model](/help/sites-developing/workflows.md#workflow-types) for editing:
 
-* The Steps browser is not available (left side).
-* There is an **Edit** action available in the toolbar (right side).
+* The **[!UICONTROL Steps]** browser is not available (left side).  
+* There is an **[!UICONTROL Edit]** action available in the toolbar (right side).
 * Initially the model, and its properties, is presented in read-only mode as:
 
     * Default workflows are located in `/libs`
     * Legacy workflows are located in `/etc`
 
-Selecting **Edit** will:
+Selecting **[!UICONTROL Edit]** will:
 
 * take a copy of the workflow into `/conf`
-* make the Steps browser available
+* make the **[!UICONTROL Steps]** browser available
 * enable you to make changes
 
 >[!NOTE]
 >
 >See [Locations of Workflow Models](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) for further information.
 
-![](assets/wf-22.png)
+![wf-22](assets/wf-22.png) 
 
 ### Adding a Step to a Model {#adding-a-step-to-a-model}
 
 You will need to add steps to your model to represent the activity to perform - each step performs a specific activity. A selection of step components are available in a standard AEM instance.
 
-When you edit a model, the available steps appear in the various groups of the **Steps browser**. For example:
+When you edit a model, the available steps appear in the various groups of the **[!UICONTROL Steps]** browser. For example:
 
-![](assets/wf-10.png)
+![wf-10](assets/wf-10.png)
 
 >[!NOTE]
 >
 >For information about the primary step components that are installed with AEM, see [Workflow Steps Reference](/help/sites-developing/workflows-step-ref.md).
 
-To add steps to your workflow model:
+**To add a step to a model**:
 
-1. Open an existing workflow model for editing. From the **Workflows Model** console, select the required model, then **Edit**.
-1. Open the Steps browser; using **Toggle Side Panel**, at the far left of the top toolbar. Here you can:
+1. Open an existing workflow model for editing. From the **[!UICONTROL Workflows Model]** console, select the required model, then **[!UICONTROL Edit]**. 
+1. Open the **[!UICONTROL Steps]** browser; using **[!UICONTROL Toggle Side Panel]**, at the far left of the top toolbar. Here you can:
 
-    * **Filter** for specific steps.
+    * **[!UICONTROL Filter]** for specific steps.
     * Use the drop down selector to limit the selection to a specific group of steps.
-    * Select the Show Description icon ![](assets/wf-stepinfo-icon.png) to show more details about the appropriate step.
+    * Select the Show Description icon ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) to show more details about the appropriate step.
 
-   ![](assets/wf-02.png)
+   ![wf-02](assets/wf-02.png)
 
 1. Drag the appropriate step(s) to the required location in the model.
 
-   For example, a **Participant Step**.
+   For example, a **[!UICONTROL Participant Step]**.
 
-   Once added to the flow you can [configure the step](#configuring-a-workflow-step).
+   After it is added to the flow you can [configure the step](#configuring-a-workflow-step).
 
-   ![](assets/wf-03.png)
+   ![wf-03](assets/wf-03.png)
 
 1. Add as many steps, or other updates, as required.
 
@@ -141,32 +141,31 @@ To add steps to your workflow model:
 
    You can also copy, cut, paste, group or delete existing steps; as with the [page editor.](/help/sites-authoring/editing-content.md)
 
-   Split steps can also be collapsed/expanded using the toolbar option: ![](assets/wf-collapseexpand-toolbar-icon.png)
+   Split steps can also be collapsed/expanded using the toolbar option: ![wf-collapseexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
 
-1. Confirm the changes with **Sync** (editor toolbar) to generate the runtime model.
+1. Confirm the changes with **[!UICONTROL Sync]** (editor toolbar) to generate the runtime model.
 
    See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
 
 ### Configuring a Workflow Step {#configuring-a-workflow-step}
 
-You can **Configure** and customize the behavior of a workflow step using the **Step Properties** dialogs.
+You can **Configure** and customize the behavior of a workflow step using the **[!UICONTROL Step Properties]** dialog boxes.
 
-1. To open the **Step Properties** dialog for a step either:
+1. To open the **[!UICONTROL Step Properties]** dialog box for a step either:
 
-    * Click/tap the* *step in the workflow model and select **Configure** from the component toolbar.
-
+    * Tap the step in the workflow model and select **[!UICONTROL Configure]** from the component toolbar.
     * Double-click on the step.
 
    >[!NOTE]
    >
    >For information about the primary step components that are installed with AEM, see [Workflow Steps Reference](/help/sites-developing/workflows-step-ref.md).
 
-1. Configure the **Step Properties** as required; the properties available depend on the step type, there may also be several tabs available. For example, the default **Participant Step**, present in a new workflow as `Step 1`:
+1. Configure the **[!UICONTROL Step Properties]** as required; the properties available depend on the step type, there may also be several tabs available. For example, the default **[!UICONTROL Participant Step]**, present in a new workflow as `Step 1`:
 
-   ![](assets/wf-11.png)
+   ![wf-11](assets/wf-11.png)
 
 1. Confirm your updates with the tick.
-1. Confirm the changes with **Sync** (editor toolbar) to generate the runtime model.
+1. Confirm the changes with **[!UICONTROL Sync]** (editor toolbar) to generate the runtime model.
 
    See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
 
@@ -174,13 +173,13 @@ You can **Configure** and customize the behavior of a workflow step using the **
 
 You can create a [Transient](/help/sites-developing/workflows.md#transient-workflows) workflow model when creating a new model, or by editing an existing one:
 
-1. Open the workflow model for [editing](#editinganexistingworkflow).
-1. Select **Workflow Model Properties** from the toolbar.
-1. In the dialog activate **Transient Workflow** (or deactivate if required):
+1. Open the workflow model for [editing](#editing-a-workflow).
+1. Select **[!UICONTROL Workflow Model Properties]** from the toolbar.
+1. In the dialog box, activate **[!UICONTROL Transient Workflow]** (or deactivate if required):
 
-   ![](assets/wf-07.png)
+   ![wf-07](assets/wf-07.png)
 
-1. Confirm the change with **Save & Close**; followed by **Sync** (editor toolbar) to generate the runtime model.
+1. Confirm the change with **[!UICONTROL Save & Close]**; followed by **[!UICONTROL Sync]** (editor toolbar) to generate the runtime model.
 
    See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
 
@@ -188,34 +187,36 @@ You can create a [Transient](/help/sites-developing/workflows.md#transient-workf
 >
 >When you run a workflow in [transient](/help/sites-developing/workflows.md#transient-workflows) mode AEM does not store any workflow history. Therefore, [Timeline](/help/sites-authoring/basic-handling.md#timeline) does not display any information related to that workflow. [](/help/sites-authoring/basic-handling.md#timeline)
 
-## Make workflow models available in Touch UI {#classic2touchui}
+### Make workflow models available in Touch UI {#make-workflow-models-available-in-touchui}
 
-If a workflow model that is present in Classic UI but is missing in the selection popup menu in Timeline rail of Touch UI, then follow the configuration to make it available. The following steps illustrates using the AEM Assets workflow models called **[!UICONTROL Request for Activation]** and **[!UICONTROL Request for Deactivation]**.
+If a workflow model that is present in Classic UI but is missing in the selection popup menu in **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. The following steps illustrates using the AEM Assets workflow models called **[!UICONTROL Request for Activation]** and **[!UICONTROL Request for Deactivation]**.
 
 1. Confirm that the model is not available in Touch-enabled UI. Access an asset using `/assets.html/content/dam` path. Select the asset. Open **[!UICONTROL Timeline]** in left rail. Click **[!UICONTROL Start Workflow]** and notice that **[!UICONTROL Request for Activation]** and **[!UICONTROL Request for Deactivation]** models are not present in the popup list.
-1. Click **[!UICONTROL Tools > General > Tagging]**. Select **[!UICONTROL Workflow]**.
-1. Click **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Click **[!UICONTROL Submit]**.
 
-   ![Create tag in workflow model](assets/workflow_create_tag.png)
+1. Click **[!UICONTROL Tools > General > Tagging]**. Select **[!UICONTROL Workflow]**.
+
+1. Click **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Click **[!UICONTROL Submit]**.
+![Create tag in workflow model](assets/workflow_create_tag.png)
 
 1. Click **[!UICONTROL Tools > Workflow > Models]**. Select **[!UICONTROL Request for Activation]** (or **[!UICONTROL Request for Deactivation]**). Click **[!UICONTROL Edit]**.
-1. In the sidekick, go to **[!UICONTROL Page]** tab. Open **[!UICONTROL Page Properties]**.
-1. Add `Workflow : DAM` to **[!UICONTROL Tags/Keywords]** field. Click **[!UICONTROL OK]**. Click **[!UICONTROL Save]**.
 
-   ![Edit Page Properties of Model](assets/workflow_model_edit_activation1.png)
+1. In the sidekick, go to **[!UICONTROL Page]** tab. Open **[!UICONTROL Page Properties]**.
+
+1. Add `Workflow : DAM` to **[!UICONTROL Tags/Keywords]** field. Click **[!UICONTROL OK]**. Click **[!UICONTROL Save]**.
+![Edit Page Properties of Model](assets/workflow_model_edit_activation1.png)
 
 ### Configuring a Workflow for Multi Resource Support {#configuring-a-workflow-for-multi-resource-support}
 
 You can configure a workflow model for [Multi Resource Support](/help/sites-developing/workflows.md#multi-resource-support) when creating a new model, or by editing an existing one:
 
-1. Open the workflow model for [editing](#editinganexistingworkflow).
-1. Select **Workflow Model Properties** from the toolbar.
+1. Open the workflow model for [editing](#editing-a-workflow).
+1. Select **[!UICONTROL Workflow Model Properties]** from the toolbar.  
 
-1. In the dialog activate **Multi Resource Support** (or deactivate if required):
+1. In the dialog box, activate **[!UICONTROL Multi Resource Support]** (or deactivate if required):
 
-   ![](assets/wf-08.png)
+   ![wf-08](assets/wf-08.png)
 
-1. Confirm the change with **Save & Close**; followed by **Sync** (editor toolbar) to generate the runtime model.
+1. Confirm the change with **[!UICONTROL Save & Close]**; followed by **[!UICONTROL Sync]** (editor toolbar) to generate the runtime model.
 
    See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
 
@@ -225,24 +226,24 @@ You can configure a workflow model for [Multi Resource Support](/help/sites-deve
 
 >[!CAUTION]
 >
->If workflow stages are defined in **Page Properties**, but not used for any of the workflow steps, then the progress bar will not show any progress (regardless of the current workflow step).
+>If workflow stages are defined in **[!UICONTROL Page Properties]**, but not used for any of the workflow steps, then the progress bar will not show any progress (regardless of the current workflow step).
 
 The stages to be available are defined in the workflow models; existing workflow models can be updated to include stage definitions. You can define any number of stages for the workflow model.
 
-To define **Stages** for your workflow:
+To define **[!UICONTROL Stages]** for your workflow:
 
 1. Open your workflow model for editing.
-1. Select **Workflow Model Properties** from the toolbar. Then open the **Stages** tab.
-1. Add (and position) your required **Stages**. You can define any number of stages for the workflow model.
+1. Select **[!UICONTROL Workflow Model Properties]** from the toolbar. Then open the **[!UICONTROL Stages]** tab.
+1. Add (and position) your required **[!UICONTROL Stages]**. You can define any number of stages for the workflow model.
 
    For example:
 
-   ![](assets/wf-08-1.png)
+   ![wf-08-1](assets/wf-08-1.png)
 
-1. Click **Save & Close** to save the properties.
+1. Click **[!UICONTROL Save & Close]** to save the properties.
 1. Assign a stage to each of the steps in the workflow model. For example:
 
-   ![](assets/wf-09.png)
+   ![wf-09](assets/wf-09.png)
 
    A stage can be assigned to more than one step. For example:
 
@@ -255,42 +256,39 @@ To define **Stages** for your workflow:
    | Step 5 |Approve |
    | Step 6 |Complete |
 
-1. Confirm the changes with **Sync** (editor toolbar) to generate the runtime model.
+1. Confirm the changes with **[!UICONTROL Sync]** (editor toolbar) to generate the runtime model.
 
    See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
 
 ## Exporting a Workflow Model in a Package {#exporting-a-workflow-model-in-a-package}
 
-To export a workflow model in a package:
+1. Create a new package using the [Package Manager](/help/sites-administering/package-manager.md#package-manager):
 
-1. Create a new package using the [Package Manager](/help/sites-administering//package-manager.md#package-manager):
+    1. Navigate to the Package Manager by way of **[!UICONTROL Tools]**, **[!UICONTROL Deployment]**, **[!UICONTROL Packages]**.
+    1. Click **[!UICONTROL Create Package]**.
+    1. Specify the **[!UICONTROL Package Name]**, and any other details as required.
+    1. Click **[!UICONTROL OK]**.
 
-    1. Navigate to the Package Manager via **Tools**, **Deployment**, **Packages**.
+1. Click **[!UICONTROL Edit]** on the toolbar of your new package.  
 
-    1. Click **Create Package**.
-    1. Specify the **Package Name**, and any other details as required.
-    1. Click **OK**.
+1. Open the **[!UICONTROL Filters]** tab.  
 
-1. Click **Edit** on the toolbar of your new package.
-
-1. Open the **Filters** tab.
-
-1. Select **Add Filter** and specify the path of your workflow model *design*:
+1. Select **[!UICONTROL Add Filter]** and specify the path of your workflow model *design*:
 
    `/conf/global/settings/workflow/models/<*your-model-name*>`
 
-   Click **Done**.
+   Click **[!UICONTROL Done]**.
 
-1. Select **Add Filter** and specify the path of your *runtime* workflow model:
+1. Select **[!UICONTROL Add Filter]** and specify the path of your *runtime* workflow model:
 
    `/var/workflow/models/<*your-model-name*>`
 
-   Click **Done**.
+   Click **[!UICONTROL Done]**.
 
 1. Add additional filters for any custom scripts that are used by your model.
-1. Click **Save** to confirm your filter definitions.
-1. Select **Build** from the toolbar of your package definition.
-1. Select **Download** from the package toolbar.
+1. Click **[!UICONTROL Save]** to confirm your filter definitions.
+1. Select **[!UICONTROL Build]** from the toolbar of your package definition.
+1. Select **[!UICONTROL Download]** from the package toolbar.
 
 ## Using Workflows to Process Form Submissions {#using-workflows-to-process-form-submissions}
 
@@ -299,11 +297,11 @@ You can configure a form to be processed by the selected workflow. When users su
 To configure the workflow to be used with your form:
 
 1. Create a new page and open it for editing.
-1. Add a **Form** component to the page.
-1. **Configure** the **Form Start** component that appeared in the page.
-1. Use **Start Workflow** to select the desired workflow from those available:
+1. Add a **[!UICONTROL Form]** component to the page.
+1. Configure the **[!UICONTROL Form Start]** component that appeared in the page.
+1. Use **[!UICONTROL Start Workflow]** to select the desired workflow from those available:
 
-   ![](assets/wf-12.png)
+   ![wf-12](assets/wf-12.png)
 
 1. Confirm the new form configuration with the tick.
 
@@ -314,12 +312,12 @@ It is a good practice when testing a workflow to use a variety of payload types;
 For example, test your new workflow as follows:
 
 1. [Start your workflow model](/help/sites-administering/workflows-starting.md) from the console.
-1. Define the **Payload** and confirm.
+1. Define the **[!UICONTROL Payload]** and confirm.  
 
 1. Take actions as required so that the workflow proceeds.
 1. Monitor the log files while the workflow is running.
 
-You can also configure AEM to display **DEBUG** messages in the log files. See [Logging](/help/sites-deploying/configure-logging.md) for further information and when the development is finished, set the **Log Level** back to **Info**.
+You can also configure AEM to display **[!UICONTROL DEBUG]** messages in the log files. See [Logging](/help/sites-deploying/configure-logging.md) for further information and when the development is finished, set the **[!UICONTROL Log Level]** back to **[!UICONTROL Info]**.
 
 ## Examples {#examples}
 
@@ -331,25 +329,25 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
    The new workflow will contain:
 
-    * **Flow Start**
+    * **[!UICONTROL Flow Start]**
     * `Step 1`
-    * **Flow End**
+    * **[!UICONTROL Flow End]**
 
 1. Delete `Step 1` (as it is the wrong step type for this example):
 
-    * Click on the step and select **Delete** from the component toolbar. Confirm the action.
+    * Click on the step and select **[!UICONTROL Delete]** from the component toolbar. Confirm the action.
 
-1. From the **Workflow** selection of the steps browser, drag a **Participant Step** onto the workflow and position it between **Flow Start** and **Flow End**.
-1. To open the properties dialog either:
+1. From the **[!UICONTROL Workflow]** selection of the steps browser, drag a **[!UICONTROL Participant Step]** onto the workflow and position it between **[!UICONTROL Flow Start]** and **[!UICONTROL Flow End*]*.
+1. To open the properties dialog box either:
 
-    * Click on the participant step and select **Configure** from the component toolbar.
+    * Click on the participant step and select **[!UICONTROL Configure]** from the component toolbar.
     * Double-click on participant step.
 
-1. In the **Common** tab enter `Validate Content` for both the **Title** and **Description**.
-1. Open the **User/Group** tab:
+1. In the **[!UICONTROL Common]** tab enter `Validate Content` for both the **[!UICONTROL Title]** and **[!UICONTROL Description]**.
+1. Open the **[!UICONTROL User/Group]** tab:
 
-    * Activate **Notify user via email**.
-    * Select `Administrator` ( `admin`) for the **User/Group** field.
+    * Activate **[!UICONTROL Notify user via email]**.
+    * Select `Administrator` ( `admin`) for the **[!UICONTROL User/Group]** field.
 
    >[!NOTE]
    >
@@ -359,47 +357,43 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
    You will be returned to the overview of the workflow model, here the participant step will have been renamed to `Validate Content`.
 
-1. Drag an **Or Split** onto the workflow and position it between `Validate Content` and **Flow End**.
-1. Open the **Or Split** for configuration.
+1. Drag an **[!UICONTROL Or Split]** onto the workflow and position it between `Validate Content` and **[!UICONTROL Flow End]**.
+1. Open the **[!UICONTROL Or Split]** for configuration.
 1. Configure:
 
-    * **Common**: specify the split name.
-    * **Branch 1**: select **Default Route**.
+    * **[!UICONTROL Common]**: select **[!UICONTROL 2 Branches]**
+    * **[!UICONTROL Branch 1]**: select **[!UICONTROL Default Route]**.
+    * **[!UICONTROL Branch 2]**: ensure **[!UICONTROL Default Route]** is not selected.
 
-    * **Branch 2**: ensure **Default Route** is not selected.
+1. Confirm your updates to the **[!UICONTROL OR Split]**.
+1. Drag a **[!UICONTROL Participant Step]** to the left-hand branch, open the properties, specify the following values, then confirm the changes:
 
-1. Confirm your updates to the **OR Split**.
-1. Drag a **Participant Step** to the left-hand branch, open the properties, specify the following values, then confirm the changes:
+    * **[!UICONTROL Title]**: `Reject Publish Request`
+    * **[!UICONTROL User/Group]**: for example, `projects-administrators`
+    * **[!UICONTROL Notify user via email]**: Activate to have the user notified by email.
 
-    * **Title**: `Reject Publish Request`
+1. Drag a **[!UICONTROL Process Step]** to the right-hand branch, open the properties, specify the following values, then confirm the changes:
 
-    * **User/Group**: for example, `projects-administrators`
+    * **[!UICONTROL Title]**: `Publish Page as Requested`
+    * **[!UICONTROL Process]**: select `Activate Page`. This process publishes the selected page to the publisher instances.
 
-    * **Notify user via email**: Activate to have the user notified by email.
-
-1. Drag a **Process Step** to the right-hand branch, open the properties, specify the following values, then confirm the changes:
-
-    * **Title**: `Publish Page as Requested`
-
-    * **Process**: select `Activate Page`. This process publishes the selected page to the publisher instances.
-
-1. Click **Sync** (editor toolbar) to generate the runtime model.
+1. Click **[!UICONTROL Sync]** (editor toolbar) to generate the runtime model.
 
    See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
 
    Your new workflow model will look like:
 
-   ![](assets/wf-13.png)
+   ![wf-13](assets/wf-13.png)
 
-1. Apply this workflow to your page, so that when the user moves to **Complete** the **Validate Content** step, they can select whether they want to **Publish Page as Requested**, or **Reject Publish Request**.
+1. Apply this workflow to your page, so that when the user moves to **[!UICONTROL Complete]** the **[!UICONTROL Validate Content]** step, they can select whether they want to **[!UICONTROL Publish Page as Requested]**, or **[!UICONTROL Reject Publish Request]**.
 
-   ![](assets/chlimage_1-72.png)
+   ![chlimage_1-182](assets/chlimage_1-182.png)
 
-### Example: Defining a Rule for an OR Split using ECMA script {#defineruleecmascript}
+### Example: Defining a Rule for an OR Split {#example-defining-a-rule-for-an-or-split}
 
-**OR Split** steps allow you to introduce conditional processing paths into your workflow.
+**[!UICONTROL OR Split]** steps allow you to introduce conditional processing paths into your workflow.
 
-To define an OR rule, proceed as follows:
+To define an OR rule:
 
 1. Create two scripts and save them in the repository, for example under:
 
@@ -409,24 +403,25 @@ To define an OR rule, proceed as follows:
    >
    >The scripts must have a [function `check()`](#function-check) that returns a boolean.
 
-1. Edit the workflow and add the **OR Split** to the model.
-1. Edit the properties of **Branch 1** of the **OR Split**:
+1. Edit the workflow and add the **[!UICONTROL OR Split]** to the model.
+1. Edit the properties of **[!UICONTROL Branch 1]** of the **[!UICONTROL OR Split]**:
 
-    * Define this as the **Default Route** by setting the **Value** to `true`.
+    * Define this as the **[!UICONTROL Default Route]** by setting the **[!UICONTROL Value]** to `true`. 
+    * As **[!UICONTROL Rule]**, set the path to the script. For example: 
 
-    * As **Rule**, set the path to the script. For example:
       `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
    >
    >You can switch the branch order if required.
 
-1. Edit the properties of the **Branch 2** of the **OR Split**.
+1. Edit the properties of the **[!UICONTROL Branch 2]** of the **[!UICONTROL OR Split]**.
 
-    * As **Rule**, set the path to the other script. For example:
+    * As **[!UICONTROL Rule]**, set the path to the other script. For example:
+
       `/apps/myapp/workflow/scripts/myscript2.ecma`
 
-1. Set the properties of the individual steps in each branch. Make sure the **User/Group** is set.
+1. Set the properties of the individual steps in each branch. Make sure the **[!UICONTROL User/Group]** is set.
 1. Click **Sync** (editor toolbar) to persist your changes to the runtime model.
 
    See [Sync your Workflow](#sync-your-workflow-generate-a-runtime-model) for details.
@@ -449,7 +444,7 @@ function check() {
        return true;
       } else {
        return false;
-      }
+      } 
      } else {
       return false;
      }
@@ -461,4 +456,4 @@ function check() {
 
 You can customize any of the out-of-the-box workflows. To have customized behavior you overlay details of the appropriate workflow.
 
-For example, **Request for Activation**. This workflow is used for publishing pages within **Sites** and is automatically triggered when a content author does not have the appropriate replication rights. See [Customizing Page Authoring - Customizing the Request for Activation Workflow](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) for further details.
+For example, **[!UICONTROL Request for Activation]**. This workflow is used for publishing pages within **[!UICONTROL Sites]** and is automatically triggered when a content author does not have the appropriate replication rights. See [Customizing Page Authoring - Customizing the Request for Activation Workflow](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) for further details.

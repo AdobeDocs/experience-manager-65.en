@@ -3,20 +3,18 @@ title: Creating custom layout components for adaptive forms
 seo-title: Creating custom layout components for adaptive forms
 description: Procedure to create custom layout components for adaptive forms.
 seo-description: Procedure to create custom layout components for adaptive forms.
-uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
+uuid: 09a0cacc-d693-46dc-90a3-254d1878a68a
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
-discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
-docset: aem65
-
+discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 ---
 
-# Creating custom layout components for adaptive forms{#creating-custom-layout-components-for-adaptive-forms}
+# Creating custom layout components for adaptive forms {#creating-custom-layout-components-for-adaptive-forms}
 
 ## Prerequisite {#prerequisite}
 
-Knowledge of layouts, which enables you to create/use a custom layout. See [Changing Panel Layout](../../forms/using/layout-capabilities-adaptive-forms.md).
+Knowledge of layouts, which enables you to create/use a custom layout. See [Changing Panel Layout](/help/forms/using/layout-capabilities-adaptive-forms.md).
 
 ## Adaptive Form Panel Layout component {#adaptive-form-panel-layout-component}
 
@@ -28,11 +26,7 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 1. Copy a panel layout from the location `/libs/fd/af/layouts/panel` (for example, `tabbedPanelLayout`) to `/apps` (for example, `/apps/af-custom-layout`).
 1. Rename the layout you copied to `customPanelLayout`. Change the properties of the nodes `qtip` and `jcr:description`. For example, change them to `Custom layout - Toggle tabs`.
 
-   |  
-   qtip   |
-   |---|
-
-   ![Custom Panel Layout CRX DE Snapshot](assets/custom_layout_new.png)
+![Custom Panel Layout CRX DE Snapshot](assets/custom.png)
 
    >[!NOTE]
    >

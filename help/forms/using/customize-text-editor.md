@@ -3,16 +3,14 @@ title: Customize text editor
 seo-title: Customize text editor
 description: Learn how to customize text editor.
 seo-description: Learn how to customize text editor.
-uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
+uuid: 28963da7-607f-41ed-8f72-8b19779f41d0
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
-discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
-docset: aem65
-
+discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 ---
 
-# Customize text editor{#customize-text-editor}
+# Customize text editor {#customize-text-editor}
 
 ## Overview {#overview}
 
@@ -41,7 +39,7 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
 
        `/libs/fd/cm/config`
     
-       ![Overlay node](assets/1-1.png)
+       ![Overlay node](assets/1-4.png)
 
     1. Ensure that the Overlay Node dialog has the following values:
 
@@ -49,9 +47,9 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
 
        **Location:** /apps/
 
-       **Match** **Node Types:** Selected
+       **Match Node Types:** Selected
     
-       ![Overlay node](assets/2.png)
+       ![Overlay node](assets/2-2.png)
 
     1. Click **OK**. The folder structure is created in the apps folder.  
 
@@ -183,7 +181,7 @@ After you have made changes to fonts in the tbxeditor-config.xml file in CRX and
 
 For example, the Sazanami Mincho Medium font added in the [Customize fonts by editing the tbxeditor-config.xml file in CRX](#customizefonts) procedure appears in the text editor UI as following:
 
-![](assets/sazanamiminchointext.png)
+![sazanamiminchointext](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >

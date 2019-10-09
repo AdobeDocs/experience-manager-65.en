@@ -3,17 +3,15 @@ title: AEM Assets vs. AEM MediaLibrary
 seo-title: AEM Assets vs. AEM MediaLibrary
 description: Frequently asked questions around AEM Assets and. AEM Media Library, including differences between the two.
 seo-description: Frequently asked questions around AEM Assets and. AEM Media Library, including differences between the two.
-uuid: 47c789f6-f8b9-4de3-b04b-2caf53e8a9d5
-contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+uuid: 61c4c12f-1d8c-4276-ab9d-3d9ed0a66542
+contentOwner: asgupta
+products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 9af77d13-f860-4615-a7cd-b0eedbc48a87
-docset: aem65
-
+discoiquuid: 7d81d7fd-27d1-4d87-9248-dfcf6c52ffb3
 ---
 
-# AEM Assets vs. AEM MediaLibrary{#aem-assets-vs-aem-medialibrary}
+# AEM Assets vs. AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
 
 Adobe Experience Manager (AEM) Assets is an integral part of the AEM platform. This smooth integration is seen as a major advantage of AEM and ensures consistency in content management and high productivity for content authors.
 
@@ -33,6 +31,8 @@ Unique features that are only available to customers of AEM Assets are:
 
 1. the ability to extract and edit metadata other than title, tags and description.  
 1. the AEM Assets Admin, available from the welcome screen by clicking the second button next to the siteadmin  
+1. the Geometrixx Asset Share example DAM finder  
+1. All components being used in the Geometrixx Asset Share - namely: Query Builder, Category Predicate, Date Predicate, Generic Predicate, Lens Deck, Mosaic Lens, List Lens, iFrame Lens and all Asset-related actions  
 1. All workflow steps related to Digital Asset Management, namely AEM Assets Ingestion, AEM Assets Deletion, AEM Assets Sub-Asset-Handling, AEM Assets metadata extraction  
 1. libraries including "dam" im package space
 
@@ -42,11 +42,11 @@ Using these features requires a valid license of AEM Assets.
 
 No. To ease installation and deployment, all AEM Applications and add-ons are delivered in one single package with all functionality included. This does not imply that you have permission to use all features in the package.
 
-### I want to edit metadata of digital assets. Do I need AEM Assets? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+#### I want to edit metadata of digital assets. Do I need AEM Assets? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
 If you are planning to edit metadata other than title, description and tags, it is required to license AEM Assets.
 
-### I want to use the category predicate on my website. Do I need AEM Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
+#### I want to use the category predicate on my website. Do I need AEM Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
 Yes, the category predicate, together with all other components used in Geometrixx Press Center are part of AEM Assets and require an AEM Assets license.
 
@@ -65,47 +65,3 @@ You can remove all AEM Assets-specific workflows, components, taxonomies, option
 ### I want to add images to a page and want to crop and resize these images. Do I need AEM Assets? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
 For this use case it is not required to buy AEM Assets, even the use of the Media Library is not required to use images on a website as the smart image component allows uploading images directly into the page.
-
-### A detail list of features available in AEM Assets vs Media Library {#listoffeatures}
-
-**AEM Assets**
-
-* Collections and lightbox
-* Advanced metadata properties and management
-* Adobe Asset Link (connect to Creative Cloud for enterprise)
-* AEM desktop app
-* Processing profiles
-* InDesign server integration
-* Asset Templates and catalog producer framework
-* Adobe Photoshop, Illustrator, and InDesign linked-assets
-* DAM Proxy Server - performance offloading
-* Multi-lingual asset management
-* PIM integration
-* Rights Management
-* Camera RAW Support
-* Search Facets Management and configuration
-* Pre-built DAM workflows (for example, photoshoot)
-* Asset Reporting and Analytics: Asset Insights
-* 3D Asset Management   
-* Connected Assets
-* Brand Portal
-* Self-service access
-* Browse, Search and Download
-* Collections and Folder Sharing
-* Admin Tools
-* Smart Tags
-* Visual Search
-* Assets Admin UI
-
-**Media Library**
-
-* Basic Metadata Properties
-* Tag Management
-* Version Control
-* Static Renditions
-* Projects, Tasks, Workflow Authoring
-* Activity Stream (timeline)
-* Query Builder (API)
-* Marketing Cloud Integration
-* UI Customization & Extension
-* Comments & Annotation

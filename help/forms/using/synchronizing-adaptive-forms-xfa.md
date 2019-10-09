@@ -3,19 +3,17 @@ title: Synchronizing Adaptive Forms with XFA Form Templates
 seo-title: Synchronizing Adaptive Forms with XFA Form Templates
 description: Synchronizing Adaptive forms with XFA/XDP files.
 seo-description: Synchronizing Adaptive forms with XFA/XDP files.
-uuid: 92818132-1ae0-4576-84f2-ece485a34457
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+uuid: 6613a9bf-c862-4c18-a5b5-f574d301e936
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
-discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
-docset: aem65
-
+discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 ---
 
-# Synchronizing Adaptive Forms with XFA Form Templates{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Synchronizing Adaptive Forms with XFA Form Templates {#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Introduction {#introduction}
 
-You can create an adaptive form based on an XFA form template ( `*.XDP` file). This reuse allows you to preserve your investment in existing XFA forms. For information on how to use an XFA form template for creating an adaptive form, [Create an Adaptive Form based on a template](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+You can create an adaptive form based on an XFA form template ( `*.XDP` file). This reuse allows you to preserve your investment in existing XFA forms. For information on how to use an XFA form template for creating an adaptive form, [Create an Adaptive Form based on a template](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 You can reuse fields from the XDP file in your adaptive form. These fields are referred to as binded fields. The properties of the binded fields (such as scripts, labels, and display format) are copied from the XDP file. You can also choose to override the value of some of these properties.
 
@@ -29,15 +27,15 @@ In the AEM Forms authoring environment, you can drag fields from an XFA form (le
 
 To use the information in this article, a familiarity with the following areas is recommended:
 
-* [Creating an adaptive form](../../forms/using/creating-adaptive-form.md)  
+* [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md)  
 
 * XFA (XML Forms Architecture)
 
-To use the assets provides for the example in the article, download the sample package as explained in the next section, [Sample package](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
+To use the assets provides for the example in the article, download the sample package as explained in the next section, [Sample package](/help/forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
 
 ## Sample package {#sample-package}
 
-The article uses an example to demonstrate how to synchronize the adaptive form with an updated XFA form template. The assets used in the example are available in a package, which can be downloaded from the [Downloads](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) section in this article.
+The article uses an example to demonstrate how to synchronize the adaptive form with an updated XFA form template. The assets used in the example are available in a package, which can be downloaded from the [Downloads](/help/forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) section in this article.
 
 After uploading the package, you can view these assets in the AEM Forms UI.
 
@@ -49,7 +47,7 @@ The package contains the following assets:
 
 1. `sample-xfa-af`: The adaptive form based on the sample-form.xdp file. This adaptive form, however, does not include any fields. In the next step, we will add content to this adaptive form.
 
-### Add content to adaptive form <br> {#add-content-to-adaptive-form-br}
+### Add content to adaptive form {#add-content-to-adaptive-form-br}
 
 1. Navigate to https://&lt;server&gt;:&lt;port&gt;/aem/forms.html. Enter your credentials if asked.
 1. Open the sample-af-xfa for editing in author mode.
@@ -96,11 +94,11 @@ All the properties that were copied from the XDP file to the adaptive form are u
 
 To update the properties in the example adaptive form, click the link (labeled `"Click Here"`) in the message. The title of TextField1 changes from **Text Field** to **My Text Field**.
 
-![](assets/update-property.png)
+![update-property](assets/update-property.png)
 
 >[!NOTE]
 >
->The label AF Numeric Field did not get changed because you had overridden this property from the component properties dialog, as described in [Add content to adaptive forms](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
+>The label AF Numeric Field did not get changed because you had overridden this property from the component properties dialog, as described in [Add content to adaptive forms](#p-add-content-to-adaptive-form-br-p).
 
 ### Adding new fields from XDP file to adaptive form &nbsp; {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 

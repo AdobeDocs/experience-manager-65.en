@@ -3,24 +3,22 @@ title: Introduction to authoring adaptive forms
 seo-title: Introduction to authoring adaptive forms 
 description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
+uuid: 07ff8e79-daf7-4608-9171-91854619cc0b
 content-type: reference
 topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
-docset: aem65
-
+discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 ---
 
-# Introduction to authoring adaptive forms {#introduction-to-authoring-adaptive-forms}
+# Introduction to authoring adaptive forms  {#introduction-to-authoring-adaptive-forms}
 
 ## Overview {#overview}
 
 Adaptive forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides an intuitive user interface and out-of-the-box components for creating and working with adaptive forms. You can choose to create an adaptive form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an adaptive form:
 
 * **Using a form data model** 
-  [Data integration](../../forms/using/data-integration.md) lets you integrate entities and services from disparate data sources in to a form data model that you can use to create adaptive forms. Choose form data model if the adaptive form you are creating involves fetching and write data from and to multiple data source. 
+  [Data integration](/help/forms/using/data-integration.md) lets you integrate entities and services from disparate data sources in to a form data model that you can use to create adaptive forms. Choose form data model if the adaptive form you are creating involves fetching and write data from and to multiple data source. 
 
 * **Using an XDP Form Template** 
   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into adaptive forms. Any existing XFA rules are retained in the associated adaptive forms. The resulting adaptive forms support XFA constructs, such as validations, events, properties, and patterns.
@@ -28,10 +26,11 @@ Adaptive forms allow you to create forms that are engaging, responsive, dynamic,
 * **Using an XML Schema Definition (XSD) or a JSON Schema** 
   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an adaptive form and use its elements to add dynamic content to the adaptive form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring adaptive forms. 
 
-* **Using none or without a form model  
-  **Adaptive forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+* **Using none or without a form model**
 
-For more information about creating an adaptive form, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
+Adaptive forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+
+For more information about creating an adaptive form, see [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md).
 
 ## Adaptive form authoring UI {#adaptive-form-authoring-ui}
 
@@ -62,40 +61,46 @@ The Sidebar allows you to
 * Search, view, and use assets in your AEM Digital Asset Management (DAM) repository.
 * Add components on your form.
 
-[ ![Sidebar](assets/sidebar-comps.png)
+    ![Sidebar](assets/sidebar-comps-2.png)
+[Click to enlarge](assets/sidebar-comps-2.png)
 
-Click to enlarge
-
-](assets/sidebar-comps-1.png) **A.** Content browser **B.** Properties browser **C.** Assets browser **D.** Components browser
+**A.** Content browser **B.** Properties browser **C.** Assets browser **D.** Components browser
 
 The sidebar comprises the following browsers:
 
-* **Content** **browser** 
+* **Content browser** 
+
   In the content browser, you can see
 
-    * **Form Objects  
-      **Shows object hierarchy of the Form. Author can navigate to specific form component by tapping that element in Form Object Tree. Author can search objects and rearrange them from this tree.** 
-      **
-    
-    * **Data Model Objects  
-      **Lets you see the form model hierarchy.  
+    * **Form Objects**
+
+      Shows object hierarchy of the Form. Author can navigate to specific form component by tapping that element in Form Object Tree. Author can search objects and rearrange them from this tree.
+
+    * **Data Model Objects** 
+
+      Lets you see the form model hierarchy. 
+
       It allows you to drag and drop form-model elements on the adaptive form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
 
-* **Properties browser  
-  **Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:  
-  Select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
+* **Properties browser**
 
-* **Assets** **browser** 
+  Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:
+
+  Select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
+
+* **Assets browser** 
+
   Segregates different types content such as images, documents, pages, movies, and so on.
 
 * **Components browser** 
-  Includes components that you can use to build an adaptive form. You can drag components from onto the adaptive form to add form elements, and configure added element as per the requirements. The following table describes the components listed in components browser**.**
 
-<table>
+  Includes components that you can use to build an adaptive form. You can drag components from onto the adaptive form to add form elements, and configure added element as per the requirements. The following table describes the components listed in components browser.
+
+<table> 
  <tbody> 
   <tr> 
-   <th width="150"><strong>Component</strong></th> 
-   <th style="text-align: left;" valign="middle"><strong>Functionality</strong></th> 
+   <th><strong>Component</strong></th> 
+   <th><strong>Functionality</strong></th> 
   </tr> 
   <tr> 
    <td>Adobe Sign Block</td> 
@@ -107,7 +112,7 @@ The sidebar comprises the following browsers:
   </tr> 
   <tr> 
    <td>Captcha</td> 
-   <td>Adds CAPTCHA validation using Google reCAPTCHA service. For details, see <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Using CAPTCHA in adaptive forms</a>.</td> 
+   <td>Adds CAPTCHA validation using Google reCAPTCHA service. For details, see <a href="/help/forms/using/captcha-adaptive-forms.md" target="_blank">Using CAPTCHA in adaptive forms</a>.</td> 
   </tr> 
   <tr> 
    <td>Chart</td> 
@@ -158,7 +163,7 @@ The sidebar comprises the following browsers:
    <td>Adds the page footer that typically includes copyright information, and links to other pages. </td> 
   </tr> 
   <tr> 
-   <td width="150">Image</td> 
+   <td>Image</td> 
    <td>Allows you to insert an image.</td> 
   </tr> 
   <tr> 
@@ -166,11 +171,11 @@ The sidebar comprises the following browsers:
    <td>Lets your customers select an image to provide information. You can use the information to provide personalized services to your customers.</td> 
   </tr> 
   <tr> 
-   <td width="150">Next Button</td> 
+   <td>Next Button</td> 
    <td>Adds a button to navigate to the next panel in a form.</td> 
   </tr> 
   <tr> 
-   <td width="150">Numeric box</td> 
+   <td>Numeric box</td> 
    <td>Adds a field for capturing numeric values</td> 
   </tr> 
   <tr> 
@@ -178,11 +183,11 @@ The sidebar comprises the following browsers:
    <td>Use Numeric Stepper in your form to let your customers input a numeric value, which they can increase or decrease based on a predefined step.</td> 
   </tr> 
   <tr> 
-   <td width="150">Panel</td> 
-   <td><p>Adds a panel or subpanel.</p> <p>You can also add a panel component from the parent panel toolbar using the <span class="uicontrol">Add Child Panel</code> button. Similarly, you can add a panel-specific toolbar using the <span class="uicontrol">Add Panel Toolbar</code> button. You can configure the position of the panel toolbar using the Edit Panel dialog.</p> </td> 
+   <td>Panel</td> 
+   <td><p>Adds a panel or subpanel.</p> <p>You can also add a panel component from the parent panel toolbar using the <span class="uicontrol">Add Child Panel</span> button. Similarly, you can add a panel-specific toolbar using the <span class="uicontrol">Add Panel Toolbar</span> button. You can configure the position of the panel toolbar using the Edit Panel dialog.</p> </td> 
   </tr> 
   <tr> 
-   <td width="150">Password box</td> 
+   <td>Password box</td> 
    <td>Adds a field for capturing a password.</td> 
   </tr> 
   <tr> 
@@ -190,19 +195,19 @@ The sidebar comprises the following browsers:
    <td>Adds a button that users require to go back to the previous page or panel.</td> 
   </tr> 
   <tr> 
-   <td width="150">Radio button</td> 
+   <td>Radio button</td> 
    <td>Adds radio buttons.</td> 
   </tr> 
   <tr> 
-   <td width="150">Reset button</td> 
+   <td>Reset button</td> 
    <td>Adds a button to reset form fields.</td> 
   </tr> 
   <tr> 
-   <td width="150">Save Button</td> 
+   <td>Save Button</td> 
    <td>Adds a button to save form data.</td> 
   </tr> 
   <tr> 
-   <td width="150">(Deprecated) Scribble signature</td> 
+   <td>Scribble signature</td> 
    <td>Adds a field for capturing scribble signatures.</td> 
   </tr> 
   <tr> 
@@ -214,19 +219,19 @@ The sidebar comprises the following browsers:
    <td>Displays the information provided in the form and the signature fields for the user to verify and sign the form.</td> 
   </tr> 
   <tr> 
-   <td width="150">Text</td> 
+   <td>Text</td> 
    <td>Allows you to specify static text.</td> 
   </tr> 
   <tr> 
-   <td width="150">Submit Button</td> 
+   <td>Submit Button</td> 
    <td>Adds a submit button to submit the form to the configured submit action.</td> 
   </tr> 
   <tr> 
-   <td width="150">Summary Step</td> 
+   <td>Summary Step</td> 
    <td>Submits the form and displays summary text that authors specifies after the form is submitted. </td> 
   </tr> 
   <tr> 
-   <td width="150">Switch</td> 
+   <td>Switch</td> 
    <td>Adds a switch that performs a toggle or enable/disable action. You cannot add more than two options in the Switch component. Since a switch can have only two values: On or Off, mandatory is not applicable. At-least one value is saved irrespective of the user input. <br /> </td> 
   </tr> 
   <tr> 
@@ -244,11 +249,11 @@ The sidebar comprises the following browsers:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td width="150">Terms and Conditions<br /> </td> 
+   <td>Terms and Conditions<br /> </td> 
    <td>Adds a field that authors can use to specify the terms and conditions for users to review before filling the form.</td> 
   </tr> 
   <tr> 
-   <td width="150">Text box </td> 
+   <td>Text box </td> 
    <td><p>Adds a text box in which a user can specify the required information. </p> <p>By default, the Text Box component accepts only plain text. You can enable a Text Box component to accept Rich Text. A Rich Text enabled text component provide options to add headers, change character styles (bold, italicize, underline the characters), create ordered and unordered lists, change text background and text color, and add hyperlinks. To enable rich text for a text box, enable the<strong> Allow Rich Text</strong> option in the component properties.</p> </td> 
   </tr> 
   <tr> 
@@ -256,7 +261,7 @@ The sidebar comprises the following browsers:
    <td>Specifies a title for the adaptive form.</td> 
   </tr> 
   <tr> 
-   <td width="150">Verify Step</td> 
+   <td>Verify Step</td> 
    <td><p>Adds a placeholder to display the filled form for verification by user.</p> <p><strong>Note</strong>: Adaptive form containing the Verify component does not support anonymous users. Also, it is not recommended to use the Verify component in an adaptive form fragment.</p> </td> 
   </tr> 
  </tbody> 
@@ -266,15 +271,13 @@ The sidebar comprises the following browsers:
 
 Some best practices and key points to remember when working with adaptive form components are as follows:
 
-* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![](assets/cmppr.png) to open the component properties in the Properties browser.
-* A component is identified with its element name. When you tap ![](assets/cmppr.png), you can change the name of the component by changing the **[!UICONTROL Element Name]** field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter. 
+* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
+* A component is identified with its element name. When you tap ![cmppr](assets/cmppr.png), you can change the name of the component by changing the **[!UICONTROL Element Name]** field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter. 
 
 * You can modify the Title property of an adaptive form component inline in the form editor without opening the Properties browser as long as the title is visible on the form. To do so:
 
-    1. Tap to select a component that has a **[!UICONTROL Title]** property and whose **[!UICONTROL Hide title]** property is disabled.  
-    
-    1. Tap ![](assets/aem_6_3_edit.png) to make the title editable.  
-    
+    1. Tap to select a component that has a **[!UICONTROL Title]** property and whose **[!UICONTROL Hide title]** property is disabled.
+    1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) to make the title editable.
     1. Modify the title and tap the Return key or tap anywhere outside the component to save the changes. Tap the Esc key to discard the changes.
 
 * Some adaptive form components like Email and Telephone include out-of-the-box validation patterns. However, you can specify custom validation by updating the **[!UICONTROL Validation Pattern]** field under the Patterns accordion in the component properties. See component descriptions in the table above for more information about default validations.  
@@ -288,13 +291,13 @@ Some best practices and key points to remember when working with adaptive form c
 * Specify values for Radio Button and Check Box items in `{value}={text}` format in component properties.
 * The File attachment component, by default, allows a user to attach only one file. However, you can configure the component properties to support multiple attachments. In addition, if a user attaches multiple files with the same filename, the attachments can cause some issues. Therefore, it is recommended to associate a unique identifier for each submitted attachment at form submission. To do so:
 
-    1. On your AEM Forms server, navigate to **Adobe Experience Manager &gt; Tools &gt; Operations &gt; Web Console**.
-    1. Find and tap **Adaptive Forms Configuration Service**.
-    1. In the Adaptive Forms Configuration Service dialog, enable **Make File Names Unique**. By default, it is disabled.
+    1. On your AEM Forms server, navigate to **[!UICONTROL Adobe Experience Manager > Tools > Operations > Web Console]**.
+    1. Find and tap **[!UICONTROL Adaptive Forms Configuration Service]**.
+    1. In the Adaptive Forms Configuration Service dialog, enable **[!UICONTROL Make File Names Unique]**. By default, it is disabled.
 
-* To enable users to attach a PDF using Safari browser, ensure that **application/pdf** is added to the Supported File Types property of the File attachment component. Adaptive forms created with previous AEM Forms version may contain **.pdf** instead of **application/pdf** in the Supported File Types property.
+* To enable users to attach a PDF using Safari browser, ensure that **[!UICONTROL application/pdf]** is added to the Supported File Types property of the File attachment component. Adaptive forms created with previous AEM Forms version may contain **[!UICONTROL .pdf]** instead of **[!UICONTROL application/pdf]** in the Supported File Types property.
 
-For more best practices around adaptive forms, see [Best practices for working with adaptive forms](/forms/using/adaptive-forms-best-practices.md).
+For more best practices around adaptive forms, see [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md).
 
 >[!NOTE]
 >
@@ -304,25 +307,24 @@ For more best practices around adaptive forms, see [Best practices for working w
 
 The page toolbar on the top provides options that let you preview the form, change form properties, and edit form layout. You can preview the form when you author it, and make changes accordingly. In the page toolbar, you see:
 
-* **Toggle Side Panel ** ![](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
+* **[!UICONTROL Toggle Side Panel]** ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
 
-* **Page information** ![](assets/theme-options.png): Lets you view page properties, publish/unpublish a form, start a form workflow, and open the form in classic UI.  
+* **[!UICONTROL Page information]** ![theme-options](assets/theme-options.png): Lets you view page properties, publish/unpublish a form, start a form workflow, and open the form in classic UI.  
 
-* **Emulator ** ![](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
+* **[!UICONTROL Emulator]** ![ruler](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
 
-* **Edit**: Lets you select other modes such as: **Edit, Style, Developer, **and** Design**.
+* **[!UICONTROL Edit]**: Lets you select other modes such as: **Edit, Style, Developer, **and** Design**.
 
-    * **Edit**: Lets you edit the properties of the form and its components. For example, adding a component, dropping an image, and specifying mandatory fields. 
-    * **Style**: Lets you style the appearance of components of your form. For example, in style mode, you can select a panel and specify its background color.  
-    
-    * **Developer**: Lets a developer to:
+    * **[!UICONTROL Edit]**: Lets you edit the properties of the form and its components. For example, adding a component, dropping an image, and specifying mandatory fields. 
+    * **[!UICONTROL Style]**: Lets you style the appearance of components of your form. For example, in style mode, you can select a panel and specify its background color.
+    * **[!UICONTROL Developer]**: Lets a developer to:
 
         * Discover what forms are composed of.
         * Debug what is happening where and when, which in turn helps to resolve issues.
 
-    * **Design**. Lets you enable or disable custom components, or out-of-the-box components that are not listed in the Sidebar.
+    * **[!UICONTROL Design]**: Lets you enable or disable custom components, or out-of-the-box components that are not listed in the Sidebar.
 
-* **Preview**: Lets you preview how the form looks when you publish it.
+* **[!UICONTROL Preview]**: Lets you preview how the form looks when you publish it.
 
 ### Component toolbar {#component-toolbar}
 
@@ -330,25 +332,25 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 When you select a component, you see a toolbar that lets you work it. You get options to cut, paste, move, and specify properties of the components. Your options are:
 
-A.** Configure**: When you tap **Configure**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for adaptive form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
+A.**[!UICONTROL Configure]**: When you tap **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for adaptive form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
 
-B.** Copy**: You can use the copy option to copy a component and paste it in other places in the form. When you paste a component, the pasted component gets a new element name but retains the properties of the copied component.
+B.**[!UICONTROL Copy]**: You can use the copy option to copy a component and paste it in other places in the form. When you paste a component, the pasted component gets a new element name but retains the properties of the copied component.
 
-C.** Cut**: You can use the cut option to move a component from one place to another in the adaptive form.
+C.**[!UICONTROL Cut]**: You can use the cut option to move a component from one place to another in the adaptive form.
 
-D. **Delete**: Lets you delete the component from the form.
+D. **[!UICONTROL Delete]**: Lets you delete the component from the form.
 
-E. **Insert**: Lets you insert a component above the selected component.
+E. **[!UICONTROL Insert]**: Lets you insert a component above the selected component.
 
-F. **Paste**: Lets you paste the component you cut or copied using the options described above.
+F. **[!UICONTROL Paste]**: Lets you paste the component you cut or copied using the options described above.
 
-G. **Edit rules**: Lets you open the rule editor. For more information, see [Rule Editor](../../forms/using/rule-editor.md).
+G. **[!UICONTROL Edit rules]**: Lets you open the rule editor. For more information, see [Rule Editor](/help/forms/using/rule-editor.md).
 
 H. **Group**: Lets you select multiple components if you want to cut, copy, or paste more than one component together.
 
-I. **Parent**: Lets you select the parent of a component. For example, a text field lies within a sub-section, which resides in a section. The section resides in the guide root panel, and the adaptive form container is the parent of a guide root panel. For a component, you can see all the options with the hierarchy sorted bottoms-up.
+I. **[!UICONTROL Parent]**: Lets you select the parent of a component. For example, a text field lies within a sub-section, which resides in a section. The section resides in the guide root panel, and the adaptive form container is the parent of a guide root panel. For a component, you can see all the options with the hierarchy sorted bottoms-up.
 
-For example, if you tap **Parent** for a text box, you can see:
+For example, if you tap **[!UICONTROL Parent]** for a text box, you can see:
 
 * Sub-section
 * Section
@@ -371,16 +373,16 @@ The adaptive form page is the actual form. It is like any other WCM page modeled
 
 The content structure typically contains the following primary components:
 
-* **guideContainer**: The root of an adaptive form, which is marked as **Start of adaptive form **in the adaptive form UI. In** **this component, you can specify:
+* **[!UICONTROL guideContainer]**: The root of an adaptive form, which is marked as **Start of adaptive form** in the adaptive form UI. In this component, you can specify:
 
     * *Mobile Layout of the adaptive form*: Defines the appearance of the form on mobile devices.
     * *Thank You page*: Defines the page where the user is redirected after submitting the form.
     * *Submit Action*: Defines how the form is processed on the server once the user submits the form.
     * *Styling*: Specifies the path to the CSS file used to customize the appearance of the form.
 
-* **rootPanel: **The root panel of an adaptive form. It can contain subpanels under the items node. Each panel including the root panel can have a layout associated with it. The layout of the panel dictates how the form is laid out. For example, in the Accordion layout*, *its items are laid out as Accordion steps.
+* **[!UICONTROL rootPanel]**: The root panel of an adaptive form. It can contain subpanels under the items node. Each panel including the root panel can have a layout associated with it. The layout of the panel dictates how the form is laid out. For example, in the Accordion layout*, *its items are laid out as Accordion steps.
 
-* **toolbar: **An adaptive form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **Add Toolbar **action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on. 
+* **[!UICONTROL toolbar]**: An adaptive form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **Add Toolbar **action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on. 
 
-* **assets: **This node contains additional information used for form authoring. For example, form model details, localization details, and so on).
+* **[!UICONTROL assets]**: This node contains additional information used for form authoring. For example, form model details, localization details, and so on).
 

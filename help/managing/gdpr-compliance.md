@@ -1,17 +1,15 @@
 ---
 title: GDPR Readiness
-seo-title: AEM and General Data Protection Regulation (GDPR)
+seo-title: AEM and General Data Protection Regulation (GDPR) 
 description: Learn about AEM support for the EU General Data Protection Regulation (GDPR) and how to comply when implementing a new AEM project.
 seo-description: Learn about AEM support for the EU General Data Protection Regulation (GDPR) and how to comply when implementing a new AEM project.
-uuid: 9b0b8101-929c-4232-8c6e-1f9b8b2e0aa2
+uuid: c443aa47-0766-4280-b0f2-b5b06534ffba
 contentOwner: aheimoz
 topic-tags: introduction
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: grdp
-discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
-docset: aem65
-
+discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 ---
 
 # GDPR Readiness{#gdpr-readiness}
@@ -32,7 +30,7 @@ Adobe Experience Manager (AEM) must be considered as part of a company's GDPR co
 
 AEM instances, and the custom applications that might process Personal Data, are owned and operated by AEM customers. This means that the Data Subject requests for access and erasure (deletion) as defined in GDPR are both owned and managed by the AEM customer, so AEM 6.4 does not include any out-of-the-box service to handle GDPR requests.
 
-![](assets/gdpr-01.png)
+![gdpr-01](assets/gdpr-01.png)
 
 The diagram above illustrates what a GDPR request workflow might look like.
 
@@ -64,13 +62,13 @@ These AEM integrations are with GDPR ready services. No personal data from Adobe
 
 For further information see:
 
-* [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)
+* [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)  
 
 * [Adobe Analytics and GDPR](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/)
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities bestows upon the data subjects right to their data portability, right to access, and right to be forgotten by means of [out-of-the-box APIs](/help/communities/user-ugc-management-service.md). These APIs enable bulk deletion and bulk export of user generated content, and disabling user accounts identified through their authorizable IDs. However, permanent deletion of user account is realizable through deletion of user node in CRXDE Lite, which addresses the need of easy Opt-out from the system.
+AEM Communities bestows upon the data subjects right to their data portability, right to access, and right to be forgotten by means of [out-of-the-box APIs](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/user-ugc-management-service.html). These APIs enable bulk deletion and bulk export of user generated content, and disabling user accounts identified through their authorizable IDs. However, permanent deletion of user account is realizable through deletion of user node in CRXDE Lite, which addresses the need of easy Opt-out from the system.
 
 Additionally, AEM Communities offers privacy by design owing to its Bulk Moderation console, which allows privileged members to find and delete the contributions and details of the users. The Members management console enables limiting to the point of banning a contributor. Moreover, it authorizes the data subjects to delete the contributions authored by them.
 
@@ -78,11 +76,10 @@ Additionally, AEM Communities offers privacy by design owing to its Bulk Moderat
 
 AEM Forms includes components and workflows that capture, process, and store data to orchestrate business processes and complete digital transactions. Different components use different data stores and allow integration with custom data stores as well. The following documentation explains procedures and guidelines for accessing and handling user data to support GDPR workflows for a component.
 
-* [Forms Portal](/forms/using/forms-portal-handling-user-data.md)
-* [Correspondence Management](/forms/using/correspondence-management-handling-user-data.md)
-* [Integration with Adobe Sign](/forms/using/integration-adobe-sign-handling-user-data.md)
-* [Forms-centric workflows on OSGi](/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Forms JEE workflows](/forms/using/forms-workflow-jee-handling-user-data.md) (AEM Forms JEE only)
-* [Document Security](/forms/using/document-security-handling-user-data.md) (AEM Forms JEE only)
-* [User Management](/forms/using/user-management-handling-user-data.md) (AEM Forms JEE only)
-
+* [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
+* [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)
+* [Integration with Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+* [Forms-centric workflows on OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
+* [Forms JEE workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md) (AEM Forms JEE only)
+* [Document Security](/help/forms/using/document-security-handling-user-data.md) (AEM Forms JEE only)
+* [User Management](/help/forms/using/user-management-handling-user-data.md) (AEM Forms JEE only)

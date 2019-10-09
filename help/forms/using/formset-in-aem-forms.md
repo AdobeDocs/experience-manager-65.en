@@ -3,16 +3,14 @@ title: Form set in AEM Forms
 seo-title: Form set in AEM Forms
 description: This article introduces form set and explains how to create form sets by stitching together HTML5 forms. This article also explains how you can prefill xml data to a form set and how you can use form sets in process management.
 seo-description: This article introduces form set and explains how to create form sets by stitching together HTML5 forms. This article also explains how you can prefill xml data to a form set and how you can use form sets in process management.
-uuid: a1a2f267-26a9-4f45-bcfc-dbdedad95973
+uuid: 20ff948a-db5c-45b9-84e7-cacdeae44ebe
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
-docset: aem65
-
+discoiquuid: d90f80e7-0c5d-4c56-93a2-c3888b1cbf30
 ---
 
-# Form set in AEM Forms{#form-set-in-aem-forms}
+# Form set in AEM Forms {#form-set-in-aem-forms}
 
 ## Overview {#overview}
 
@@ -30,7 +28,7 @@ Form sets are also supported in AEM Forms app, allowing your field workforce to 
 
 You can associate several XDPs or Form Templates, created using Designer, into a form set. Form sets can then be used selectively render the XDPs based on values entered by the users in initial forms and their profiles.
 
-Use [AEM Forms user interface](../../forms/using/introduction-managing-forms.md) to manage all your forms, form sets, and related assets.
+Use [AEM Forms user interface](/help/forms/using/introduction-managing-forms.md) to manage all your forms, form sets, and related assets.
 
 ### Create a form set {#create-a-form-set}
 
@@ -59,9 +57,9 @@ To create a form set, do the following:
 
 1. In the Configure Form(s) page, you can do the following:
 
-    * Form Order: Drag-and-drop the forms to reorder them.** **The form order defines the order in which forms are shown to end user in AEM Forms app and stand-alone rendition. 
+    * Form Order: Drag-and-drop the forms to reorder them. The form order defines the order in which forms are shown to end user in AEM Forms app and stand-alone rendition. 
     * Form Identifier: Specifies a unique identity for the forms to be used in eligibility expressions.
-    * Data root: For each form in form set, Author can configure the XPATH where the data of that particular form is positioned in submitted XML. By default, the value is /. If all the forms in form set are schema bound and share the same XML schema, you can change this value. It is recommended that every field in form has proper data binding specified in the XDP. If two fields in two different forms share the common data binding, then the field in the second form shows prefilled values from the first form. Do not bind two subforms with the same internal contents to the same XML node. For more information the XML structure of form set, see [Prefill XML for Form set](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+    * Data root: For each form in form set, Author can configure the XPATH where the data of that particular form is positioned in submitted XML. By default, the value is /. If all the forms in form set are schema bound and share the same XML schema, you can change this value. It is recommended that every field in form has proper data binding specified in the XDP. If two fields in two different forms share the common data binding, then the field in the second form shows prefilled values from the first form. Do not bind two subforms with the same internal contents to the same XML node. For more information the XML structure of form set, see [Prefill XML for Form set](/help/forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
     * Eligibility expression: Specifies a JavaScript expression that evaluates a Boolean value and indicates whether a form in form set is eligible for filling. If false, user is not asked or even shown the form to fill. Typically, the expression is based on the values of the fields that are captured before this form. Expressions also contain calls to the form set API fs.valueOf to extract the values filled in by the user in a field of a form of the form set:
 
    *fs.valueOf(&lt;Form Identifier&gt;, &lt;fieldSom expression&gt;) &gt; &lt;value&gt;*
@@ -90,14 +88,14 @@ Once a form set is created, you can perform following actions on that form set:
 * Preview: Preview provides two options: Preview as HTML (without data) and custom preview with sample data.
 * View/Edit Properties: You can view/edit the metadata properties of a selected form set.
 
-![](assets/createformset3.png) 
+![createformset3](assets/createformset3.png) 
 
 ### Edit a form set {#edit-a-form-set}
 
 To edit a form set, do the following:
 
 1. Select Forms &gt; Forms and Documents.
-1. Locate the form set you want to edit. Hover over it and select Edit ( ![](assets/editicon.png)).
+1. Locate the form set you want to edit. Hover over it and select Edit ( ![editicon](assets/editicon.png)).
 1. In the Configure Form(s) page, you can edit the following:
 
     * Form Order 
@@ -347,13 +345,13 @@ In case there is a root element in the prefill XML, the name of that element is 
 
 AEM Forms app allows field workers to synchronize their mobile devices with an AEM Forms server and work on their tasks. The application works even when the device is offline by saving data locally on the device. Using annotation features, such as photographs, field workers can provide accurate information to integrate into the business processes.  
   
-For more information on AEM Forms app, see [AEM Forms app overview](/forms/using/mobile-workspace-overview.md).
+For more information on AEM Forms app, see [AEM Forms app](/help/forms/using/aem-forms-app.md).
 
 ## Known limitations - patterns not fully supported in Form set {#known-limitations-patterns-not-fully-supported-in-form-set}
 
 The following data patterns are not fully supported in Form set:
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Pattern not fully supported in Form set</strong></td> 

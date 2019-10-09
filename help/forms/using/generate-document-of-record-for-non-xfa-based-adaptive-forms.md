@@ -3,17 +3,16 @@ title: Generate Document of Record for adaptive forms
 seo-title: Generate Document of Record for adaptive forms
 description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
 seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
+uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
 topic-tags: adaptive_forms
 topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
+noindex: true
 ---
 
-# Generate Document of Record for adaptive forms{#generate-document-of-record-for-adaptive-forms}
+# Generate Document of Record for adaptive forms {#generate-document-of-record-for-adaptive-forms}
 
 ## Overview {#overview}
 
@@ -29,17 +28,19 @@ This article explains how you can generate a document of record for adaptive for
 
 When you create an adaptive form, you can select a form model. Your options are:
 
-* [Form Templates](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)  
+* [Form Templates](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)
+
   Lets you select an XFA template for your adaptive form. When you select an XFA template, you can use the associated XDP file for document of record as described above.
 
-* [XML Schema](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)  
+* [XML Schema](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
+
   Lets you select an XML schema definition for your adaptive form. When you select an XML schema for your adaptive form, you can:
 
     * Associate an XFA template for document of record. Ensure that associated XFA template uses the same XML schema as your adaptive form
-    * Automatically generate document of record* 
-      *
+    * Automatically generate document of record
 
-* None  
+* None 
+
   Lets you create an adaptive form without a form model. The document of record is automatically generated for your adaptive form.
 
 When you select a form model, configure document of record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
@@ -82,7 +83,7 @@ The following sections describe how adaptive form elements appear in document of
 
 ### Fields {#fields}
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <th>Adaptive form component</th> 
@@ -173,7 +174,7 @@ The following sections describe how adaptive form elements appear in document of
 
 ### Containers {#containers}
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <th>Adaptive form component</th> 
@@ -259,7 +260,8 @@ Perform the following steps to configure a document of record for adaptive forms
 
 1. In AEM author instance, click **Forms &gt; Forms and Documents.** 
 1. Select a form, and click **View Properties**.
-1. In the Properties window, tap **Form Model**.  
+1. In the Properties window, tap **Form Model**.
+
    You can also select a form model when you create a form.
 
    >[!NOTE]
@@ -286,12 +288,8 @@ Perform the following steps to configure a document of record for adaptive forms
    >
    >Ensure that schema used to create adaptive form and schema (data schema) of XFA Form are same if:
    >
-   >    
-   >    
-   >    * Your Adaptive form is schema based
-   >    * You are using **Associate Form Template as the Document of Record Template** option for document of record
-   >    
-   >
+   >* Your Adaptive form is schema based
+   >* You are using **Associate Form Template as the Document of Record Template** option for document of record
 
 1. Click **Done.**
 
@@ -301,11 +299,11 @@ While generating a document of record, you can change branding information for t
 
 To localize the branding information that you enter in the Document of Record tab, you need to ensure the locale of the browser is set appropriately. To customize the branding information of document of record, complete the following steps:
 
-1. Select a panel (root panel) in the document of record and then tap ![](assets/configure.png).
-1. Tap ![](assets/dortab.png). The Document of Record tab appears. 
+1. Select a panel (root panel) in the document of record and then tap ![configure](assets/configure.png).
+1. Tap ![dortab](assets/dortab.png). The Document of Record tab appears. 
 1. Select either the default template or a custom template for rendering the document of record. If you select the default template, a thumbnail preview of the document of record appears below the Template drop-down. 
 
-   ![](assets/brandingtemplate.png)
+   ![brandingtemplate](assets/brandingtemplate.png)
 
    If you choose to select a custom template, browse a select an XDP on your AEM Forms server. If you want to use a template that is not already on your AEM Forms server, you need to first upload the XDP to your AEM Forms server. 
 
@@ -361,20 +359,20 @@ Fields in a panel rendered in a column layout in the document of record
 
 Document of record settings let you choose options you want to include in the document of record. For example, a bank accepts name, age, social security number, and phone number in a form. The form generates a bank account number, and branch details. You can choose to display only the name, social security number, bank account, and branch details in document of record.
 
-The document of record settings of a component are available under its properties. To access the properties a component, select the component and click ![](assets/cmppr.png) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
+The document of record settings of a component are available under its properties. To access the properties a component, select the component and click ![cmppr](assets/cmppr.png) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
 
 **Field level settings**
 
 * **Exclude From Document Of Record**: Setting the property true excludes the field from document of record. This is script-able property named `excludeFromDoR`. Its behavior depends on **Exclude fields from DoR if hidden** form level property.
 
-* **Display panel as table: **Setting the property displays panel as table in document of record if panel has less than 6 fields in it. Applicable for panel only.
-* **Exclude title from Document of Record: **Setting the property excludes title of the panel/table from document of record. Applicable for panel and table only.
-* **Exclude description from Document of Record: **Setting the property excludes description of the panel/table from document of record. Applicable for panel and table only.
+* **Display panel as table:** Setting the property displays panel as table in document of record if panel has less than 6 fields in it. Applicable for panel only.
+* **Exclude title from Document of Record:** Setting the property excludes title of the panel/table from document of record. Applicable for panel and table only.
+* **Exclude description from Document of Record:** Setting the property excludes description of the panel/table from document of record. Applicable for panel and table only.
 
 **Form level settings**
 
-* **Include unbound fields in DoR: **Setting the property includes unbound fields from Schema based adaptive form in document of record. By default it is true.
-* **Exclude fields from DoR if hidden: **Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from document of record if the property is set true, provided “Exclude From Document of Record” property is not set.
+* **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based adaptive form in document of record. By default it is true.
+* **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from document of record if the property is set true, provided “Exclude From Document of Record” property is not set.
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 
@@ -385,5 +383,5 @@ Keep in mind the following considerations and limitations when working on docume
 * document of record is used for printing purpose only.   
 * Content binding in document of record generated for XML Schema based adaptive form is not supported. 
 * Content binding in document of record generated for XML Schema based adaptive form is not supported.   
-* Localized version of document of record is created on demand for a locale when the user requests the rendering of the document of record. Localization of document of record occurs along with localization of adaptive form. For more information on localization of document of record and adaptive forms see [Using AEM translation workflow to localize adaptive forms and document of record](/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+* Localized version of document of record is created on demand for a locale when the user requests the rendering of the document of record. Localization of document of record occurs along with localization of adaptive form. For more information on localization of document of record and adaptive forms see [Using AEM translation workflow to localize adaptive forms and document of record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 

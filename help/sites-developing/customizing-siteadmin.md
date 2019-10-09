@@ -3,14 +3,12 @@ title: Customizing the Websites Console (Classic UI)
 seo-title: Customizing the Websites Console (Classic UI)
 description: The Websites Administration console can be extended to display custom columns
 seo-description: The Websites Administration console can be extended to display custom columns
-uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
+uuid: 7587d026-f974-46fe-bac3-3872d3a083ab
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
-docset: aem65
-
+discoiquuid: 73e57f20-4022-46ab-aa5c-ec866298b645
 ---
 
 # Customizing the Websites Console (Classic UI){#customizing-the-websites-console-classic-ui}
@@ -30,7 +28,7 @@ This step-by-step tutorial explains how to display a new column in the Websites 
 >This tutorial can also be used to extend the following administration consoles:
 >
 >* the Digital Assets console
->* the Community console
+>* the Community console  
 >
 
 ### Creating the OSGI Service {#creating-the-osgi-service}
@@ -102,8 +100,8 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 >[!CAUTION]
 >
->* Your implementation should decide, based on the provided request and/or resource, whether it should add the information to the JSON object or not.
->* If your `ListInfoProvider` implementation defines a property that already exists in the response object, its value will be overwritten by the one you provide.
+>* Your implementation should decide, based on the provided request and/or resource, whether it should add the information to the JSON object or not. 
+>* If your `ListInfoProvider` implementation defines a property that already exists in the response object, its value will be overwritten by the one you provide.  
 >  You can use [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) to manage the execution order of multiple `ListInfoProvider` implementations.
 >
 
@@ -111,36 +109,35 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 When you open the Websites Administration console and browse through your site, the browser is issuing an ajax call to get the JSON object that is used to build the console. For example, when you browse to the `/content/geometrixx` folder, the following request is sent to the AEM server to build the console:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 To make sure that the new service is running after having deployed the bundle containing it:
 
-1. Point your browser to the following URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+1. Point your browser to the following URL: 
+
+   [http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. The response should display the new properties as follows:
 
-![](assets/screen_shot_2012-02-13at163046.png)
+![screen_shot_2012-02-13at163046](assets/screen_shot_2012-02-13at163046.png) 
 
 ### Displaying the New Column {#displaying-the-new-column}
 
 The last step consists in adapting the nodes structure of the Websites Administration console to display the new property for all the Geometrixx pages by overlaying `/libs/wcm/core/content/siteadmin`. Proceed as follows:
 
-1. In CRXDE Lite, create the nodes structure `/apps/wcm/core/content` with nodes of type `sling:Folder` to reflect the structure `/libs/wcm/core/content`.
+1. In CRXDE Lite, create the nodes structure `/apps/wcm/core/content` with nodes of type `sling:Folder` to reflect the structure `/libs/wcm/core/content`.  
 
 1. Copy the node `/libs/wcm/core/content/siteadmin` and paste it below `/apps/wcm/core/content`.
 
 1. Copy the node `/apps/wcm/core/content/siteadmin/grid/assets` to `/apps/wcm/core/content/siteadmin/grid/geometrixx` and changes its properties:
 
-    * Remove **pageText**
+    * Remove **pageText** 
+    * Set **pathRegex** to `/content/geometrixx(/.*)?`
 
-    * Set **pathRegex** `` to `/content/geometrixx(/.*)?`
       This will make the grid configuration active for all geometrixx websites.
 
     * Set **storeProxySuffix** to `.pages.json`
-
     * Edit the **storeReaderFields** multivalued property and add the `starred` value.
-
     * To activate MSM functionality add the following MSM parameters to the multi-String property **storeReaderFields**:
 
         * **msm:isSource**
@@ -149,23 +146,23 @@ The last step consists in adapting the nodes structure of the Websites Administr
 
 1. Add a `starred` node (of type **nt:unstructured**) below `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` with the following properties:
 
-    * **dataIndex**: `starred` of type String
-
+    * **dataIndex**: `starred` of type String 
     * **header**: `Starred` of type String
-
     * **xtype**: `gridcolumn` of type String
 
-1. (optional) Drop the columns you do not want to display at `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (optional) Drop the columns you do not want to display at `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`  
 
-1. `/siteadmin` is a vanity path that, as default, points to `/libs/wcm/core/content/siteadmin`.
-   To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadmin` define the property `sling:vanityOrder` to have a value higher than that defined on `/libs/wcm/core/content/siteadmin`. The default value is 300, so anything higher is suitable.
+1. `/siteadmin` is a vanity path that, as default, points to `/libs/wcm/core/content/siteadmin`. 
 
-1. Go to the Websites Administration console and navigate to the Geometrixx site:
-   [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
+   To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadmin` define the property `sling:vanityOrder` to have a value higher than that defined on `/libs/wcm/core/content/siteadmin`. The default value is 300, so anything higher is suitable.  
+
+1. Go to the Websites Administration console and navigate to the Geometrixx site: 
+
+   [http://localhost:4502/siteadmin#/content/geometrixx](http://localhost:4502/siteadmin#/content/geometrixx).
 
 1. The new column called **Starred** is available, displaying custom information as follows:
 
-![](assets/screen_shot_2012-02-14at104602.png)
+![screen_shot_2012-02-14at104602](assets/screen_shot_2012-02-14at104602.png)
 
 >[!CAUTION]
 >
@@ -173,4 +170,4 @@ The last step consists in adapting the nodes structure of the Websites Administr
 
 ### Sample package {#sample-package}
 
-The outcome of this tutorial is available in the [Customizing the Websites Administration Console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) package on Package Share.
+The outcome of this tutorial is available in the [Customizing the Websites Administration Console](http://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) package on Package Share.

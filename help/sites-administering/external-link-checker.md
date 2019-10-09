@@ -3,14 +3,12 @@ title: The External Link Checker
 seo-title: The External Link Checker
 description: Learn about the External Link Checker in AEM.
 seo-description: Learn about the External Link Checker in AEM.
-uuid: 09160594-e45f-4604-8b36-f14b148b9f63
+uuid: fd0c6ff6-52d2-4096-af40-54786e9d9ab8
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: d1ccd194-8549-4188-8932-7136be1e88a2
-docset: aem65
-
+discoiquuid: 49b195b2-78c4-49f9-b07a-a87b73624c2c
 ---
 
 # The External Link Checker{#the-external-link-checker}
@@ -25,24 +23,23 @@ An external link checker is provided within AEM. The link checker:
 
 To use the external link checker:
 
-1. Using **Navigation**, select **Tools**, then **Sites**.
-1. Select **External Link Checker**, a list of all external links is generated.
+1. Open the **Tools** console.
+1. Double-click on **External Link Checker** (either the right or left pane). A list of all external links is generated.
 1. Validate a specific link by selecting it in the list, then clicking **Check**:
 
-   ![](assets/telc-01.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
-   Information is displayed:
+   Information such as:
 
-    * **Status** of the link
-    * **URL**
-    * **Referrer**
-    * time since the link was **Last Checked** (validated)
-    * the **Last Status** returned  
-    
-    * time since the link was **Last Available**
-    * time since the link was **Last Accessed**
+    * status of the link
+    * URL
+    * time since the link was last validated
+    * time since the link was last available
+    * time since the link was last accessed
+
+   is displayed.
 
 1. On the individual content pages invalid links will be shown as broken:
 
-   ![](assets/chlimage_1-143.png)
+   ![chlimage_1-110](assets/chlimage_1-110.png)
 

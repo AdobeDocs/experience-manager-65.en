@@ -3,17 +3,15 @@ title: Working with To-do lists
 seo-title: Working with To-do lists
 description: How to open, work on, and complete the tasks as required, such as approving or rejecting a request or adding more information.
 seo-description: How to open, work on, and complete the tasks as required, such as approving or rejecting a request or adding more information.
-uuid: f9cfad8e-5d0c-4a30-8153-2a03bf7dd986
+uuid: d929223b-b468-42d5-990b-8df9afb9d6fb
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
-discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
-docset: aem65
-
+discoiquuid: 2cb251a6-d8d0-4563-b0f0-2dca38037155
 ---
 
-# Working with To-do lists{#working-with-to-do-lists}
+# Working with To-do lists {#working-with-to-do-lists}
 
 When you view your To-do lists, you may see tasks from a business process that are assigned to you, or to any groups that you belong to, or are the shared tasks of other users. You can open, work on, and complete the tasks as required, such as approving or rejecting a request or adding more information. After you complete a task, it is sent to the next person in the business process,
 
@@ -81,7 +79,7 @@ When you open a task from your To-do list, if your list is shared, you can lock 
    >
    >You can also lock or unlock a task on any tab when the task is open.
 
-   ![](assets/lock_task.png)
+   ![lock_task](assets/lock_task.png)
 
    All Options menu on a task
 
@@ -94,7 +92,7 @@ When you open and claim a task from a group or shared list, the task is moved fr
 1. On the To-do page, in the left pane, select a group or shared To-do list. All the tasks are displayed in the middle pane.
 1. Perform one of these steps:
 
-    * To claim a task, without opening it, from a group or shared To-do list, click **Claim **by hovering the pointer over the task. Alternatively, when task is open, the Claim button is available in the action bar below the task pane. Upon claiming, a task moves from the group or shared To-do list to your list.
+    * To claim a task, without opening it, from a group or shared To-do list, click **Claim** by hovering the pointer over the task. Alternatively, when task is open, the Claim button is available in the action bar below the task pane. Upon claiming, a task moves from the group or shared To-do list to your list.
     * To claim and open a task from a group or shared To-do list, click **Claim and open**.
 
 ## Working with tasks {#working-with-tasks}
@@ -145,7 +143,7 @@ You can forward a task along with any notes or attachments to another user or sh
 
 You may be allowed to work on a task offline and later submit its form from Adobe® Reader® or Adobe® Acrobat® Professional or Adobe® Acrobat® Standard. When the form is submitted, your email client is started with the appropriate server email address. You can then email the completed form to the server.
 
-1. On any tab, click** Offline**.
+1. On any tab, click **Offline**.
 1. Specify a filename to save the form under and click **Save**. The form that is associated with the task is saved locally and the task remains in your To-do list until the form is submitted.
 
 ### Work with attachments {#work-with-attachments}
@@ -181,26 +179,25 @@ You may be allowed to add, update, delete, or save any attachments locally.
 
 ### Save your work without completing the task {#save-your-work-without-completing-the-task}
 
-1. On any tab, tap** Save**.
+1. On any tab, tap **Save**.
 
    The Save As Draft dialog appears. The default name of the draft is the task name from the task template.
 
-   ![](assets/saveasdraftdialog.png)
+   ![saveasdraftdialog](assets/saveasdraftdialog.png)
 
    >[!NOTE]
    >
    >You can configure workspace to periodically auto-save the information entered by a user as a draft. If auto-save is enabled and a user is working on a draft, the draft is saved periodically. In case of auto-save, the default name of the task is automatically taken. 
    >
-   >
-   >For more information, see Save Draft Periodically in [Managing Preferences](/forms/using/getting-started-livecycle-html-workspace.md).
+   >For more information, see Save Draft Periodically in [Managing Preferences](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 1. In the Save As Draft dialog, specify a unique name for the task and tap **OK**.
 
-   ![](assets/saveasdraftdialog_name.png)
+   ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 
    The draft is saved with the specified name. The task remains in your To-do list and any changes you made in the form are saved in the Drafts folder. Further, in your To-do list, you can search for the draft using the draft name to resume working on it.
 
-   ![](assets/searchfortask.png)
+   ![searchfortask](assets/searchfortask.png)
 
 ## Completing tasks {#completing-tasks}
 
@@ -210,8 +207,10 @@ You can complete a task in various ways:
 
 * Using the actions available in any of the tabs
 * Using the actions built in the form itself
-* From your To-do list, without opening the task  
+* From your To-do list, without opening the task
+
   Note: This option is available if `isMustOpenToComplete` field is not selected in the `Assign Task` step in Workbench, while designing a process.
+  
 * By email, if you receive email notifications
 
 When you complete a task, depending on the task, a confirmation dialog box may appear reaffirming your action. For example, you may see a dialog that prompts you to attest to the validity of the information that you provided.
@@ -256,11 +255,11 @@ You can submit multiple tasks from your To Do list. Only tasks of the same proce
 
 1. Select tasks for bulk approval. Multiple tasks of the same process, with the same task names, and the same route options can be selected. Once you select one task for approval, only the tasks with the same process, with the same task names, and the same route options remain enabled. The rest are disabled. 
 
-   ![](assets/1_bulkapproval.png)
+   ![1_bulkapproval](assets/1_bulkapproval.png)
 
 1. Click the available Submit option. The selected tasks get submitted. 
 
-   ![](assets/bulkapproval.png)
+   ![bulkapproval](assets/bulkapproval.png)
 
 ## Participating in tasks through email {#participating-in-tasks-through-email}
 
@@ -349,7 +348,7 @@ If you are granted access to another user’s To-do list, you cannot view any ta
 
 **Access another queue**
 
-1. In the **Preferences **tab, open the **Queues** tab.
+1. In the **Preferences** tab, open the **Queues** tab.
 1. Click '+' for the 'User queues that I have access to'. Search for the name of the user in the pop- ``up dialog.
 1. Select the name of the user and click **Request**.
 
@@ -390,4 +389,4 @@ You can set a default person to which all of your tasks are sent. You can also s
 
 1. When you finish setting preferences, click **Save**. If your settings indicate that you are currently out of the office, your changes take effect immediately. Otherwise, they take effect at the specified start date and time. If you log in while you are out of the office, you are not considered in the office until you change your settings.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

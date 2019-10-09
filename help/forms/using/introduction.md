@@ -3,15 +3,13 @@ title: Introduction to HTML5 forms
 seo-title: Introduction to HTML5 forms
 description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format. 
 seo-description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format. 
-uuid: 63a2f000-c4c5-40e8-ab3f-c7c44c79ec09
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+uuid: a68f1ca1-32dd-48f9-9359-8f09abd1c3de
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
-docset: aem65
-
+discoiquuid: b8cd2656-8bc2-4bd7-a3d6-dc76b0a2d429
 ---
 
-# Introduction to HTML5 forms{#introduction-to-html-forms}
+# Introduction to HTML5 forms {#introduction-to-html-forms}
 
 HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format. This capability enables the rendering of forms on mobile devices and desktop browsers on which XFA-based PDF is not supported. HTML5 forms not only supports the existing capabilities of XFA form templates but also adds new capabilities, such as scribble signature, for mobile devices.
 
@@ -19,7 +17,7 @@ HTML5 forms generates documents based on standard HTML5 constructs. You can view
 
 ![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
-## Key capabilities of HTML5 forms <br> {#key-capabilities-of-html-forms-br}
+## Key capabilities of HTML5 forms {#key-capabilities-of-html-forms-br}
 
 * Renders existing XFA forms in HTML5 supported on all compatible browsers.
 * Leverages standard XFA form design capabilities to target forms for mobile devices.
@@ -37,10 +35,10 @@ Form developers can use an XFA template to render forms in PDF and HTML5 formats
 
 ## Manage HTML5 forms {#manage-html-forms}
 
-AEM also provides a unified view for listing and managing all form templates using AEM Forms UI. You can activate, deactivate, publish, and preview forms. For more information, see [Introduction to managing forms](../../forms/using/introduction-managing-forms.md).
+AEM also provides a unified view for listing and managing all form templates using AEM Forms UI. You can activate, deactivate, publish, and preview forms. For more information, see [Introduction to managing forms](/help/forms/using/introduction-managing-forms.md).
 
 ### Forms customization {#forms-customization}
 
-HTML5 forms renders form templates using standard HTML5 constructs. This makes it simple to customize and extend forms in HTML5 format using web technologies, primarily CSS, and JavaScript. You can easily customize the appearance of existing widgets, create your own custom widgets, or use custom styles in forms. For more information about creating custom widgets and customizing existing widgets, see [Plug in custom widgets with HTML5 forms](../../forms/using/custom-widgets.md).
+HTML5 forms renders form templates using standard HTML5 constructs. This makes it simple to customize and extend forms in HTML5 format using web technologies, primarily CSS, and JavaScript. You can easily customize the appearance of existing widgets, create your own custom widgets, or use custom styles in forms. For more information about creating custom widgets and customizing existing widgets, see [Plug in custom widgets with HTML5 forms](/help/forms/using/custom-widgets.md).
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

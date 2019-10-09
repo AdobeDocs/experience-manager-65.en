@@ -3,22 +3,20 @@ title: Configure service settings
 seo-title: Configure service settings
 description: Learn how to configure service settings.
 seo-description: Learn how to configure service settings.
-uuid: f50a72f2-9015-4ae2-a738-f8ad9fa53251
+uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1c558816-e8d3-4080-84c8-4e3991649487
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 ---
 
-# Configure service settings{#configure-service-settings}
+# Configure service settings {#configure-service-settings}
 
 You can use the Service Management page to configure settings for each of the services that are part of AEM forms. The available settings vary depending on the service being configured.
 
 1. In administration console, click Services &gt; Applications and Services &gt; Service Management.
-1. Stop the service before changing it. (See [Starting and stopping services](/forms/using/admin-help/starting-stopping-services.md#starting_and_stopping_services).)
+1. Stop the service before changing it. (See [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Click the name of the service that you want to configure.
 1. If the service has a Configuration tab, use it to change the settings for the service. See the list of links below for details.
 
@@ -26,9 +24,9 @@ You can use the Service Management page to configure settings for each of the se
    >
    >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the * [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) *
 
-1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying_security_settings_for_a_service).
-1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/forms/using/admin-help/topics/managing-endpoints.md).
-1. Click the Pooling tab and set the pooling settings. See [Configuring pooling for a service](configure-service-settings.md#configuring_pooling_for_a_service).
+1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying-security-settings-for-a-service).
+1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
+1. Click the Pooling tab and set the pooling settings. See [Configuring pooling for a service](configure-service-settings.md#configuring-pooling-for-a-service).
 1. Click Save to save your changes or click Cancel to discard them.
 1. Select the checkbox next to the service name and click Start to restart the service.
 
@@ -59,6 +57,20 @@ The following settings are available for the barcoded forms service.
 **Base File Path:** The file path relative to which the batch input and output file parameters for the Run XML File Job and Run Flat File Job operations are resolved. In clustered configurations, the base file path must be a shared file system location to which all cluster nodes have read/write access.
 
 **Data Source Name:** The name of data source used to maintain state and history information about batch processing jobs. The specified data source must support global (XA) transactions.
+
+## Central Migration Bridge service (Deprecated) settings {#central-migration-bridge-service-settings}
+
+The Central Migration Bridge service ( `CentralMigrationBridge`) invokes a subset of Adobe Central Pro Output Server (Central) functionality, which includes the JFMERGE, JFTRANS, and XMLIMPORT commands. Central Migration Bridge service operations allow you to reuse the following Central assets in AEM forms:
+
+* template design (&ast;.ifd) 
+* output templates (&ast;.mdf) 
+* data files (&ast;.dat files) 
+* preamble files (&ast;.pre files) 
+* data definition files (&ast;.tdf)
+
+The following setting is available for the Central Migration Bridge service.
+
+**Central Install Directory:** The directory where Adobe Central 5.7 is installed.
 
 ## Content Repository Connector for EMC Documentum service settings {#content-repository-connector-for-emc-documentum-service-settings}
 
@@ -333,11 +345,11 @@ The following settings are available for the JMS service.
 
 **Provider URL:** The URL of the JNDI service provider. The default value is based on the JBoss Application Server. The following URL are default values for the application servers that AEM forms supports:
 
-**JBoss:** <server name>:1099
+**JBoss:** `<server name>:1099`
 
-**WebLogic:** <server name>:7001
+**WebLogic:** `<server name>:7001`
 
-**WebSphere:** <server name>:2809
+**WebSphere:** `<server name>:2809`
 
 **JNDI Username:** The user name of the account to use for authenticating with the JNDI service provider that is used for looking up queue and topic names. The default value is guest.
 
@@ -357,7 +369,7 @@ The following settings are available for the JMS service.
 
 **Other Properties:** Property name and value pairs that you can pass to the JNDI service provider. These properties depend on the implementation and configuration of the provider that you are using.
 
-The property name and value pairs are separated by semi-colons (;). For example, the following text shows the value that would be specified for two properties named name1 and name2, with values value1 and value2, respectively:
+The property name and value pairs are separated by semi-colons **;**. For example, the following text shows the value that would be specified for two properties named name1 and name2, with values value1 and value2, respectively:
 
 `name1=value1;name2=value2`
 
@@ -369,7 +381,7 @@ The following settings are available for the LDAP service.
 
 **Initial Context Factory:** The Java class to use as the context factory. This class is used to create a connection to the LDAP server. The default value is com.sun.jndi.ldap.LdapCtxFactory, which is appropriate for most LDAP servers.
 
-**Provider URL:** The URL to use to connect to the LDAP service. The format of the value is ldap://server name:port
+**Provider URL:** The URL to use to connect to the LDAP service. The format of the value is `ldap://server name:port`
 
 *server name* is the name of the computer that hosts the LDAP server
 
@@ -408,7 +420,7 @@ The following settings are available for the Microsoft SharePoint configuration 
 
 **Offline Support:** Enables users to continue using the mobile client applications even when they do not have a connection to the server (for example, when they are out of cell range or in airplane mode). Users must also enable the Offline Support setting on their mobile devices. This feature is available for Android and iOS devices. By default, this feature is off.
 
-***note**: If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.*
+**Note**: *If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.*
 
 **Android:** Allows Android devices to connect to the server.
 
@@ -657,7 +669,7 @@ The following settings are available for the Signature service.
 
 ## Watched Folder service settings {#watched-folder-service-settings}
 
-The Watched Folder service ( `WatchedFolder`) configures attributes that are common for all watched folder endpoints. It also provides default values for watched folder endpoints. (See [Configuring watched folder endpoints](../../../forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) It is not invoked by external client applications or used in processes created in Workbench.
+The Watched Folder service ( `WatchedFolder`) configures attributes that are common for all watched folder endpoints. It also provides default values for watched folder endpoints. (See [Configuring watched folder endpoints](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) It is not invoked by external client applications or used in processes created in Workbench.
 
 The following settings are available for the Watched Folder service.
 
@@ -706,7 +718,7 @@ In a cluster configuration, the batch size for a watched folder endpoint does no
 
 For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure/%Y/%M/%D/%H/`, the result folder is `C:/Test/WF0/failure/2009/07/17/20`.
 
-If the path is not absolute but relative, the folder is created inside the watched folder. For more information about file patterns, see [About file patterns](../../../forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+If the path is not absolute but relative, the folder is created inside the watched folder. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
 ***Note**: The smaller the size of the result folders, the better Watched Folder performance will be. For example, if the estimated load for the watched folder is 1000 files every hour, try a pattern like `result/%Y%M%D%H` so that a new subfolder is created every hour. If the load is smaller (for example, 1000 files per day), you could use a pattern like `result/%Y%M%D`.*
 
@@ -796,18 +808,18 @@ Default security profiles are installed, which can then be configured to meet yo
 1. The Select Principal screen displays the users and groups that are configured in User Management. If the user or group you want is not displayed, use the search function to find it. Click a user or group name.
 1. On the Add Permissions screen, select the permissions to assign to the user or group for this service:
 
-    * **INVOKE_PERM: **To invoke all operations on the service
-    * **MODIFY_CONFIG_PERM: **To modify the configuration of a service
-    * **SUPERVISOR_PERM: **To view process instance data for a service that is created from a process
-    * **START_STOP_PERM: **To start and stop a service
-    * **ADD_REMOVE_ENDPOINTS_PERM: **To add, remove, and modify endpoints for a service
-    * **CREATE_VERSION_PERM: **To create a new version of the service
-    * **DELETE_VERSION_PERM: **To delete a version of the service
-    * **MODIFY_VERSION_PERM: **To modify a version of the service
-    * **READ_PERM: **To view the service
-    * **PROCESS_OWNER_PERM: **For use in a future version of AEM forms. Do not use this permission.
-    * **SERVICE_MANAGER_PERM: **For use in a future version of AEM forms. Do not use this permission.
-    * **SERVICE_AGENT_PERM: **For use in a future version of AEM forms. Do not use this permission.
+    * **INVOKE_PERM:** To invoke all operations on the service
+    * **MODIFY_CONFIG_PERM:** To modify the configuration of a service
+    * **SUPERVISOR_PERM:** To view process instance data for a service that is created from a process
+    * **START_STOP_PERM:** To start and stop a service
+    * **ADD_REMOVE_ENDPOINTS_PERM:** To add, remove, and modify endpoints for a service
+    * **CREATE_VERSION_PERM:** To create a new version of the service
+    * **DELETE_VERSION_PERM:** To delete a version of the service
+    * **MODIFY_VERSION_PERM:** To modify a version of the service
+    * **READ_PERM:** To view the service
+    * **PROCESS_OWNER_PERM:** For use in a future version of AEM forms. Do not use this permission.
+    * **SERVICE_MANAGER_PERM:** For use in a future version of AEM forms. Do not use this permission.
+    * **SERVICE_AGENT_PERM:** For use in a future version of AEM forms. Do not use this permission.
 
 1. Click Add.
 

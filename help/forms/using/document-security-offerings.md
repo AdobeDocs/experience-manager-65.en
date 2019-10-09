@@ -3,17 +3,15 @@ title: Document security offerings
 seo-title: Document security offerings
 description: Learn about various tools and features of AEM Document Security
 seo-description: Learn about various tools and features of AEM Document Security
-uuid: 24e3275c-cd44-47c0-a6a0-e4cfb1bced8a
+uuid: b9417ca7-ddfb-46d0-a5b7-2f39ee90b9dd
 contentOwner: khsingh
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 91e85e86-2361-4d1d-aa73-c3cce46ab1f1
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 8e7a8481-b8cd-4f2b-b9d2-7a8132f1d3f6
 ---
 
-# Document security offerings{#document-security-offerings}
+# Document security offerings {#document-security-offerings}
 
 Adobe Experience Manager Forms document security ensures that only authorized users can use your documents. Using document security, you can safely distribute any information that you have saved in a supported format. Supported file formats include Adobe Portable Document Format (PDF) and Microsoft Word, Excel, and PowerPoint files.
 
@@ -39,7 +37,7 @@ The server is included in AEM Forms Document Security add-on offering. You can c
 
 AEM Forms Document Security provides various tools to apply security policies. You can choose a tool as per your requirements and specifications.
 
-![](assets/document-security-offerings.png)
+![document-security-offerings](assets/document-security-offerings.png)
 
 You can use Document Security SDK, Adobe Acrobat, Document Security Extension for Microsoft Office, or Portable Protection Library to apply and track the security policies:
 
@@ -53,7 +51,7 @@ You can use Document Security SDK, Adobe Acrobat, Document Security Extension fo
 
 * **Document Security Extension for Microsoft Office**: You can use the Document Security Extension for Microsoft Office to apply predefined policies to your Microsoft Office files from within the Microsoft Office programs. The extension ensures that only authorized people can use policy protected Microsoft Word, Excel, and PowerPoint files. Only authorized users who have the plugin installed can use the policy-protected files.﻿  
   
-  The Document Security extension is available as a Microsoft Office plug-in. You can contact [AEM support team](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) to procure the extension. Later on, you can visit [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/aem-document-security-extension-help.html) help to learn about installing, configuring, and using the extension.
+  The Document Security extension is available as a Microsoft Office plug-in. You can download theextension from [Adobe website](https://www.adobe.com/in/products/livecycle/rightsmanagement/extension/downloads.html). Later on, you can visit [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/aem-document-security-extension-help.html) help to learn about installing, configuring, and using the extension.
 
 * **Portable Protection Library:** Portable Protection Library (PPL) protects a document locally, without sending the document to AEM Forms server. Only security credentials and policy details travel over the network. PPL also allows you to limit policy retrieval access to only logged-in users. You can fetch policies with the context of the user logged in AEM user.  
   
@@ -71,7 +69,7 @@ You can use Document Security SDK, Adobe Acrobat, Document Security Extension fo
 
 Microsoft Windows full-text search engines (SharePoint Index server) and Adobe Experience Manager (AEM) can perform full-text search on commonly used document formats such as, plain-text files, Microsoft Office documents, and PDF documents. You can use Document Security indexers to enable fulltext search engines to search protected PDF documents:
 
-* **iFilter indexer: **You can use the iFilter indexer to index protected PDF documents and enable Microsoft Windows full-text search engines (Desktop Indexing Service and SharePoint Indexserver) to search protected PDF documents. For detailed information see, [AEM SharePoint IFilter for Protected Documents](assets/sharepoint-ifilter-doc-security.pdf).  
+* **iFilter indexer:** You can use the iFilter indexer to index protected PDF documents and enable Microsoft Windows full-text search engines (Desktop Indexing Service and SharePoint Indexserver) to search protected PDF documents. For detailed information see, [AEM SharePoint IFilter for Protected Documents](assets/sharepoint-ifilter-doc-security.pdf).  
 
 * **AEM Forms Document Security Indexer:** You can use the AEM Forms Document Security indexer to index protected PDF documents and enable Adobe Experience Manager to search protected PDF documents. The indexers are part of AEM Forms Document Security offering. These are included in AEM Forms on JEE installers.
 

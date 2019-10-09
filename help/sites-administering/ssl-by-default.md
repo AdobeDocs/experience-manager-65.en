@@ -3,14 +3,12 @@ title: SSL By Default
 seo-title: SSL By Default
 description: Learn how to use SSL by Default in AEM.
 seo-description: Learn how to use SSL by Default in AEM.
-uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
+uuid: 262474b0-f5fa-4cff-8727-9f39c5b5f760
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
-discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
-docset: aem65
-
+discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 ---
 
 # SSL By Default{#ssl-by-default}
@@ -23,21 +21,21 @@ You can start configuring SSL By Default by clicking the relevant Inbox message 
 
 In the list, select and open the **Configure HTTPS** alert:
 
-![](assets/chlimage_1-103.png)
+![chlimage_1-341](assets/chlimage_1-341.png)
 
->[!NOTE]
+>[NOTE!]
 >
->If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *https://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8*
+>If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-A service user called **ssl-service **has been created for this feature. Once you open the alert, you will be guided through the follwing configuration wizard:
+A service user called **ssl-service** has been created for this feature. Once you open the alert, you will be guided through the follwing configuration wizard:
 
 1. First, set up the Store Credentials. These are the credentials for the **ssl-service** system user's key store that will contain the private key and trust store for the HTTPS listener.
 
-   ![](assets/chlimage_1-104.png)
+   ![chlimage_1-342](assets/chlimage_1-342.png)
 
 1. Once you enter the credentials, click **Next** in the upper right corner of the page. Then, upload the associated private key and certificate for the SSL connection.
 
-   ![](assets/chlimage_1-105.png)
+   ![chlimage_1-343](assets/chlimage_1-343.png)
 
    >[!NOTE]
    >
@@ -45,7 +43,7 @@ A service user called **ssl-service **has been created for this feature. Once yo
 
 1. Lastly, specify the HTTPS hostname and the TCP port for the HTTPS listener.
 
-   ![](assets/screen_shot_2018-07-25at31658pm.png)
+   ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
 
 ## Automating SSL By Default {#automating-ssl-by-default}
 
@@ -64,7 +62,7 @@ You can use the following payload in your POST to automate configuration:
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="keystorePassword"
-
+ 
 test
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="keystorePasswordConfirm"
@@ -78,11 +76,11 @@ test
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="privatekeyFile"; filename="server.der"
 Content-Type: application/x-x509-ca-cert
-
+ 
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="certificateFile"; filename="server.crt"
 Content-Type: application/x-x509-ca-cert
-
+ 
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="httpsPort"
 8443
@@ -192,25 +190,25 @@ Finally, upload the **localhostprivate.der** as the Private Key and **localhost.
 
 >[!NOTE]
 >
->See [Using cURL with AEM](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/curl.html) for a centralized list of useful cURL commands in AEM.
+>See [Using cURL with AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) for a centralized list of useful cURL commands in AEM.
 
 You can also automate the SSL configuration by using the cURL tool. You can do this by posting the configuration parameters to this URL:
 
-*https://serveraddress:serverport/libs/granite/security/post/sslSetup.html*
+*https://&lt;serveraddress&gt;:&lt;serverport&gt;/libs/granite/security/post/sslSetup.html*
 
 Below are the parameters you can use in order to change the various settings in the configuration wizard:
 
-* `-F "keystorePassword=password"` - the keystore password;
+* `-F "keystorePassword=password"` - the keystore password;  
 
-* `-F "keystorePasswordConfirm=password"` - confirm the keystore password;
+* `-F "keystorePasswordConfirm=password"` - confirm the keystore password;  
 
-* `-F "truststorePassword=password"` - the truststore password;
+* `-F "truststorePassword=password"` - the truststore password;  
 
-* `-F "truststorePasswordConfirm=password"` - confirm the truststore password;
+* `-F "truststorePasswordConfirm=password"` - confirm the truststore password;  
 
-* `-F "privatekeyFile=@localhostprivate.der"` - specify the private key;
+* `-F "privatekeyFile=@localhostprivate.der"` - specify the private key;  
 
-* `-F "certificateFile=@localhost.crt"` - specify the certificate;
+* `-F "certificateFile=@localhost.crt"` - specify the certificate;  
 
 * `-F "httpsHostname=host.example.com"`- specify the hostname;
 * `-F "httpsPort=8443"` - the port the HTTPS listener will work on.
@@ -233,5 +231,5 @@ You can send the servlet a chain of certificates by repeating the certificateFil
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:
-[https://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](https://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:  
+[http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)

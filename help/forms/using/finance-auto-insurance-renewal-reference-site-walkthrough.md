@@ -3,20 +3,17 @@ title: We.Finance Auto Insurance Renewal reference site walkthrough
 seo-title: We.Finance Auto Insurance Renewal reference site walkthrough
 description: null
 seo-description: null
-uuid: c749a6f7-71f1-4f47-b824-9c7b699072c7
+uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-type: reference
-discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
-docset: aem65
-
+topic-tags: introduction
+discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 ---
 
-# We.Finance Auto Insurance Renewal reference site walkthrough{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
+# We.Finance Auto Insurance Renewal reference site walkthrough {#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
 ## Pre-requisites {#pre-requisites}
 
-Setup the reference site as described in [Setup and configure AEM Forms Reference Site](../../forms/using/setup-reference-sites.md).
+Setup the reference site as described in [Setup and configure AEM 6.4 Forms Reference Site](/help/forms/using/setup-reference-sites.md).
 
 ## We.Finance Reference Site scenario  {#we-finance-reference-site-scenario}
 
@@ -41,11 +38,11 @@ Gloria logs into AEM instance, clicks **Auto Insurance Renewal,** and then click
 
 Sarah receives an email with the subject “Your Auto Insurance Renewal”.
 
-![Agent UI](assets/agent_ui_email_new.png) 
+![agent_ui_email](assets/agent_ui_email.png) 
 
 #### See it yourself {#see-it-yourself}
 
-Go to **Adobe Experience Manager &gt; Forms &gt; Forms & Documents &gt; We.Finance &gt; Auto Insurance. **Select the** Auto Insurance Renewal **interactive communication** **and** **click** Open Agent UI**. The interactive communication opens up in the Agent UI. Enter a valid email address to receive the email with attached policy document and click Submit.
+Go to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents** &gt; **We.Finance** &gt; **Auto Insurance**. Select the **Auto Insurance Renewal** interactive communication and click **Open Agent UI**. The interactive communication opens up in the Agent UI. Enter a valid email address to receive the email with attached policy document and click Submit.
 
 You can access and review the Auto Insurance Renewal interactive communication directly from `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
@@ -55,7 +52,7 @@ Sarah receives an email with an attachment from We.Finance which reminds her tha
 
 Sarah clicks **Renew Now** and is directed to the web version of her Auto Insurance letter. On top of this letter, Sarah finds number of days left for her policy to expire. The page provides Sarah a basic overview of her Insurance Policy details such as Policy Number, Amount Due, and other information such as discount offers and loyalty rewards. Sarah again clicks **Renew Now** at the bottom of the policy.
 
-![](assets/ref1.png) 
+![ref1](assets/ref1.png) 
 
 #### How it works {#how-it-works}
 

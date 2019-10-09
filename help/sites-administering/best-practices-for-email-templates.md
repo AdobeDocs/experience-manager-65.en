@@ -3,24 +3,16 @@ title: Best Practices for Email Templates
 seo-title: Best Practices for Email Templates
 description: Find best practices on creating email templates in AEM.
 seo-description: Find best practices on creating email templates in AEM.
-uuid: 07417a63-7ca6-484c-b55d-57b319428329
+uuid: 714090bd-a742-4004-a968-aebd8fd03e04
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
-docset: aem65
-
+discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 ---
 
 # Best Practices for Email Templates{#best-practices-for-email-templates}
-
->[!CAUTION]
->
->The AEM email components have been deprecated. Due to the nature of email, which merges content and style, the email components provided out-of-the-box by AEM become of limited reuse for customers because of the need to implement custom styles into whatever components are required for projects. 
->
->Email components can be implemented on project level, and the deprecated AEM email components illustrate how that can be achieved. However these deprecated components should not be used on projects.
 
 This document describes some of the best practices around email design resulting in a well-developed email campaign template.
 
@@ -30,15 +22,13 @@ Use these best practices when creating your own newsletter.
 
 >[!NOTE]
 >
->All campaign content should be created under a `master` page of type `cq/personalization/components/ambitpage`.
+>All campaign content should be created under a `master` page of type `cq/personalization/components/ambitpage`. For example if you are planning a campaign structure is something like:
 >
->For example if your planned campaign structure is something like
+>* `/content/campaigns/teasers/en/campaign-promotion-global`
 >
->`/content/campaigns/teasers/en/campaign-promotion-global`
+>You should make sure it resides under a master page:
 >
->You should make sure it resides under a `master` page
->
->`/content/campaigns/teasers/master/en/campaign-promotion-global`
+>* `/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 >[!NOTE]
 >
@@ -48,7 +38,7 @@ Use these best practices when creating your own newsletter.
 
 ***/libs/mcm/campaign/components/campaign_newsletterpage***
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Best practice</strong></td> 
@@ -89,7 +79,7 @@ Use these best practices when creating your own newsletter.
  </tbody> 
 </table>
 
-### Images {#images}
+## Images {#images}
 
 /libs/mcm/campaign/components/image
 
@@ -97,14 +87,14 @@ Use these best practices when creating your own newsletter.
 |---|---|
 | Add *alt* attributes to images |The *alt* attribute has been defined as mandatory for the image component. |
 | Use *jpg* instead of *png* format for images |Images will always be served as JPG by the image component. |
-| Use <img> element instead of background images in a table. |No background image data is used in the templates. |
+| Use `<img>` element instead of background images in a table. |No background image data is used in the templates. |
 | Add attribute style="display block" on pictures. Allows to display well on Gmail. |All images contain per default the *style="display block"* attribute. |
 
-### Text and Links {#text-and-links}
+## Text and Links {#text-and-links}
 
 /libs/mcm/campaign/components/heading, /libs/mcm/campaign/components/textimage
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Best Practice</strong></td> 
@@ -121,11 +111,11 @@ Use these best practices when creating your own newsletter.
  </tbody> 
 </table>
 
-### Generic {#generic}
+## Generic {#generic}
 
 | **Best Practice** |**Implementation** |
 |---|---|
-| Use W3C validator to correct the HTML code. Make sure all open tags are properly closed. |Code was validated. For XHTML transitional Doctype only the missing xmlns attribute for the <html> element is missing. |
+| Use W3C validator to correct the HTML code. Make sure all open tags are properly closed. |Code was validated. For XHTML transitional Doctype only the missing xmlns attribute for the `<html>` element is missing. |
 | Don’t bother with JavaScript or Flash - those technologies are largely unsupported by email clients. |Neither JavaScript nor Flash is used in the newsletter template. |
 | Add a plain text version for multipart sending. |A new widget was build into the page properties to easily extract a plaintext version from the page content. This can be used as a starting point for the final plaintext version. |
 
@@ -139,7 +129,7 @@ To offer a solid base and to broaden the variety of content flow possibilities, 
 
 All have a **header**, a **footer** and a **body** section. Below the body section, each template differs in **column design** (1, 2 or 3 columns).
 
-![](assets/chlimage_1-69.png) 
+![chlimage_1-318](assets/chlimage_1-318.png) 
 
 ### Components {#components}
 

@@ -3,14 +3,12 @@ title: Concepts of the AEM Touch-Enabled UI
 seo-title: Concepts of the AEM Touch-Enabled UI
 description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
 seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
-uuid: 401c5a65-6ddc-4942-ab8e-395016f9c629
+uuid: 8ec6514e-f623-40be-a7bf-2e85bf4385ca
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
-docset: aem65
-
+discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 ---
 
 # Concepts of the AEM Touch-Enabled UI{#concepts-of-the-aem-touch-enabled-ui}
@@ -28,36 +26,35 @@ The touch-enabled UI includes:
 * The suite header that:
 
     * Shows the logo
-    * Provides a link to the Global Navigation
+    * Provides a link to the Global Navigation 
     * Provides link to other generic actions; such as Search, Help, Marketing Cloud Solutions, Notifications and User Settings.
 
 * The left-hand rail (shown when needed and hidable), which can show:
 
-    * Timeline
+    * Timeline 
     * References
     * Filters
 
 * The navigation header, which is again context sensitive and can show:
 
-    * Indicates which console you are currently using and/or your location within that console
+    * Indicates which console you are currently using and/or your location within that console 
     * Selection for the left-hand rail
     * Breadcrumbs
-    * Access to appropriate **Create** actions
-
+    * Access to appropriate **Create** actions 
     * View selections
 
 * The content area that:
 
     * Lists the items of content (be they pages, assets, forum posts, etc)
     * Can be formatted as requested, e.g. column, card, or list
-    * Uses a responsive design (the display resizes automatically according to your device and/or window size)
+    * Uses a responsive design (the display resizes automatically according to your device and/or window size) 
     * Uses infinite scrolling (no more pagination, all items are listed ine one window)
 
-![](assets/chlimage_1-79.png)
+![chlimage_1-183](assets/chlimage_1-183.png)
 
 >[!NOTE]
 >
->Nearly all AEM functionality has been ported to the touch-enabled UI. However in some limited cases, functionality will revert to the classic UI. See [Touch UI Feature Status](../../../release-notes/touch-ui-features-status.md) for more information.
+>Nearly all AEM functionality has been ported to the touch-enabled UI. However in some limited cases, functionality will revert to the classic UI. See [Touch UI Feature Status](/help/release-notes/touch-ui-features-status.md) for more information.
 
 The touch-enabled UI has been designed by Adobe to provide consistency in the user experience across multiple products. It is based on:
 
@@ -78,9 +75,9 @@ For a further overview of the touch-enabled UI structure, see the article [Struc
 
 ## AEM Technology Stack {#aem-technology-stack}
 
-AEM uses the Granite platform as a base and the Granite platform includes, amongst other things, the Java Content Repository.
+AEM uses the Granite platform as a base and the Granite platform includes, amongst other things, the Java Content Repository. 
 
-![](assets/chlimage_1-80.png)
+![chlimage_1-184](assets/chlimage_1-184.png) 
 
 ## Granite {#granite}
 
@@ -114,10 +111,8 @@ These adhere to the requirements:
 * Be extensible
 * Be easy to override
 
-![](assets/chlimage_1-81.png)
-GraniteUI.pdf
+![](assets/chlimage_1-185.png)  
 
-[Get File](assets/graniteui.pdf)
 The Granite UI:
 
 * Uses the RESTful architecture of Sling
@@ -128,9 +123,10 @@ The Granite UI:
 * Is designed for both mobile and desktop devices (respects mobile first)
 * Can be used in any Granite-based platform/product/project; eg AEM
 
-![](assets/chlimage_1-82.png)
+![chlimage_1-186](assets/chlimage_1-186.png)
 
 * [Granite UI Foundation Components](#granite-ui-foundation-components)
+
   This library of foundation components can be used or extended by other libraries.
 
 * [Granite UI Administration Components](#granite-ui-administration-components)
@@ -142,11 +138,11 @@ The client-server communication in the Granite UI consists of hypertext, not obj
 * The server enriches the HTML with semantic data
 * The client enriches the hypertext with hypermedia (interaction)
 
-![](assets/chlimage_1-83.png)
+![chlimage_1-187](assets/chlimage_1-187.png) 
 
 #### Client-Side {#client-side}
 
-This uses an extension of HTML vocabulary, provided so that the author can express their intention to build an interactive webapp. This is a similar approach to [WAI-ARIA](https://www.w3.org/TR/wai-aria/) and [microformats](https://microformats.org/).
+This uses an extension of HTML vocabulary, provided so that the author can express their intention to build an interactive webapp. This is a similar approach to [WAI-ARIA](https://www.w3.org/TR/wai-aria/) and [microformats](http://microformats.org/).
 
 It primarily consists of a collection of interaction patterns (for example, asyncronously submitting a form) that are interpreted by JS and CSS codes, run on the client-side. The role of the client-side is to enhance the markup (given as the hypermedia affordance by the server) for interactivity.
 
@@ -176,38 +172,38 @@ This is delivered as part of the content package:
 
 The differences between Granite UI and ExtJS (used for the classic UI) are also of interest:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>ExtJS</strong></td>
-   <td><strong>Granite UI</strong></td>
-  </tr>
-  <tr>
-   <td>Remote Procedure Call<br /> </td>
-   <td>State Transistions</td>
-  </tr>
-  <tr>
-   <td>Data transfer objects</td>
-   <td>Hypermedia</td>
-  </tr>
-  <tr>
-   <td>Client knows server internals</td>
-   <td>Client does not know internals</td>
-  </tr>
-  <tr>
-   <td>"Fat client"</td>
-   <td>"Thin client"</td>
-  </tr>
-  <tr>
-   <td>Specialized client libraries</td>
-   <td>Universal client libraries</td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td><strong>ExtJS</strong></td> 
+   <td><strong>Granite UI</strong></td> 
+  </tr> 
+  <tr> 
+   <td>Remote Procedure Call<br /> </td> 
+   <td>State Transistions</td> 
+  </tr> 
+  <tr> 
+   <td>Data transfer objects</td> 
+   <td>Hypermedia</td> 
+  </tr> 
+  <tr> 
+   <td>Client knows server internals</td> 
+   <td>Client does not know internals</td> 
+  </tr> 
+  <tr> 
+   <td>"Fat client"</td> 
+   <td>"Thin client"</td> 
+  </tr> 
+  <tr> 
+   <td>Specialized client libraries</td> 
+   <td>Universal client libraries</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ### Granite UI Foundation Components {#granite-ui-foundation-components}
 
-The [Granite UI foundation components](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) provide the basic building blocks needed for building any UI. They include, amongst others:
+The [Granite UI foundation components](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) provide the basic building blocks needed for building any UI. They include, amongst others:
 
 * Button
 * Hyperlink
@@ -221,7 +217,7 @@ This library contains a Granite UI component for each Coral element. A component
 
 Purpose:
 
-* Component model for HTML Elements
+* Component model for HTML Elements  
 * Component composition
 * Automatic unit and functionality testing
 
@@ -252,22 +248,22 @@ When upgrading ExtJS code to use the Granite UI, the following list provides a c
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags`|
+| `tags` |`granite/ui/components/foundation/form/autocomplete` `cq/gui/components/common/datasources/tags`|
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Node type** |**Granite UI resource type** |
 |---|---|
-| `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs`|
+| `cq:WidgetCollection` | `granite/ui/components/foundation/container`|
+| `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs`|
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Granite UI Administration Components {#granite-ui-administration-components}
 
-The [Granite UI administration components](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) build on the foundation components to provide generic building blocks that any administration application can implement. These include, amongst others:
+The [Granite UI administration components](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) build on the foundation components to provide generic building blocks that any administration application can implement. These include, amongst others:
 
-* Global Navigation Bar
-* Rail (skeleton)
+* Global Navigation Bar  
+* Rail (skeleton)  
 * Search Panel
 
 Purpose:
@@ -282,21 +278,17 @@ Implementation:
 
 ## Coral UI {#coral-ui}
 
-CoralUI.pdf
-
-[Get File](assets/coralui.pdf)
 Coral UI (CUI) is an implementation of Adobe's visual style for the touch-enabled UI, that has been designed to provide consistency in the user experience across multiple products. Coral UI provides everything you need to adopt the visual style used on the authoring environment.
 
 >[!CAUTION]
 >
 >Coral UI is a UI library made available to AEM customers for building applications and web interfaces within the boundaries of their licensed use of the product.
 >
->Use of Coral UI is only permitted:
-
+>Use of Coral UI is only permitted:  
 >
 >* When it has been shipped and bundled with AEM.
 >* For use when extending the existing UI of the authoring environment.
->* Adobe corporate collateral, ads, and presentations.
+>* Adobe corporate collateral, ads, and presentations.  
 >* The UI of Adobe-branded applications (the font must not be readily available for other uses).
 >* With minor customizations.
 >
@@ -309,7 +301,7 @@ Coral UI (CUI) is an implementation of Adobe's visual style for the touch-enable
 
 The Coral UI is a collection of building blocks for developing web applications.
 
-![](assets/chlimage_1-84.png)
+![chlimage_1-188](assets/chlimage_1-188.png)
 
 Designed to be modular from the start, each module forms a distinct layer based on its primary role. Although the layers have been designed to support each other, they can also be used independently if needed. This makes it possible to implement Coral’s user experience in any HTML-capable environment.
 
@@ -337,20 +329,20 @@ Implementation:
 For example, the markup:
 
 ```xml
-<button class="btn btn-large btn-primary" type="button">Large button</button>
+<button class="btn btn-large btn-primary" type="button">Large button</button> 
 <button class="btn btn-large" type="button">Large button</button>
 ```
 
-Is displayed as:
+Is displayed as: 
 
-![](assets/chlimage_1-85.png)
+![chlimage_1-189](assets/chlimage_1-189.png)
 
 The look-and-feel is defined in LESS, tied to an element by dedicated class name (the following extract has been shortened for the sake of brevity):
 
 ```xml
 .btn {
-    font-size: @baseFontSize;
-    line-height: @baseLineHeight;
+    font-size: @baseFontSize; 
+    line-height: @baseLineHeight; 
     .buttonBackground(@btnBackground,
                                 @btnBackgroundHighlight,
                                 @grayDark, 0 1px 1px rgba(255,255,255,.75));
@@ -359,8 +351,8 @@ The look-and-feel is defined in LESS, tied to an element by dedicated class name
 Actual values are defined in a LESS variable file (the following extract has been shortened for the sake of brevity):
 
 ```xml
-@btnBackgroundHighlight: darken(@white, 10%);
-@btnPrimaryBackgroundHighlight: spin(@btnPrimaryBackground, 20%);
+@btnBackgroundHighlight: darken(@white, 10%); 
+@btnPrimaryBackgroundHighlight: spin(@btnPrimaryBackground, 20%); 
 @baseFontSize: 17px;
 @baseFontFamily: @sansFontFamily;
 ```
@@ -402,13 +394,13 @@ Implementation:
 * jQuery plugin, tied to specific DOM element(s)
 * Using `data-*` attributes to customize behavior
 
-An extract of example markup (note the options specified as data-&#42; attributes):
+An extract of example markup (note the options specified as data-&ast; attributes):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
   <li class="item">
     <div class="thumbnail">
-      <img href="/a.html" src="/a.thumb.319.319..png">
+      <img href="/a.html" src="/a.thumb.319.319..png"> 
       <div class="caption">
         <h4>Toolbar</h4>
           <p><small>toolbar</small><br></p>
@@ -417,7 +409,7 @@ An extract of example markup (note the options specified as data-&#42; attribute
   </li>
   <li class="item">
     <div class="thumbnail">
-      <img href="/a.html" src="/a.thumb.319.319..png">
+      <img href="/a.html" src="/a.thumb.319.319..png"> 
       <div class="caption">
         <h4>Toolbar</h4>
         <p><small>toolbar</small><br></p>
@@ -434,7 +426,7 @@ $(‘.cards’).cardlayout ();
 
 This will show as:
 
-![](assets/chlimage_1-86.png)
+![chlimage_1-190](assets/chlimage_1-190.png)
 
 The `cardLayout` plugin lays out the enclosed `UL` elements based on their respective heights and also taking the parent’s width into consideration.
 
@@ -446,7 +438,7 @@ A widget can both trigger and listen to custom events to cooperate with other wi
 
 Purpose:
 
-* Implement higher level UI elements exhibiting complex behavior
+* Implement higher level UI elements exhibiting complex behavior  
 * Triggering and handling events
 
 Implementation:
@@ -470,13 +462,13 @@ $(".tagManager").tagsManager({
 The plugin emits HTML markup (this markup uses basic elements, which may use other plugins internally):
 
 ```
-<span>Pisa</code>
+<span>Pisa</span>
 <a title="Removing tag" tagidtoremove="0"
-   id="myRemover_0" class="myTagRemover" href="#">x</a></code>
+   id="myRemover_0" class="myTagRemover" href="#">x</a></span>
 
-<span id="myTag_1" class="myTag"><span>Rome</code>
+<span id="myTag_1" class="myTag"><span>Rome</span>
 <a title="Removing tag" tagidtoremove="1"
-   id="myRemover_1" class="myTagRemover" href="#">x</a></code>
+   id="myRemover_1" class="myTagRemover" href="#">x</a></span>
 
 <input type="text" data-original-title="" class="input-medium tagManager"
        placeholder="Tags" name="tags" data-provide="typeahead" data-items="6"
@@ -485,7 +477,7 @@ The plugin emits HTML markup (this markup uses basic elements, which may use oth
 
 This will show as:
 
-![](assets/chlimage_1-87.png)
+![chlimage_1-191](assets/chlimage_1-191.png) 
 
 ### Utility Library {#utility-library}
 
@@ -500,7 +492,7 @@ Although the HTML element plugins and widgets may rely on functionality provided
 
 Purpose:
 
-* Provide common functionality
+* Provide common functionality   
 * Event bus implementation
 * Client-side templates
 * XSS

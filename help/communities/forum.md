@@ -3,205 +3,178 @@ title: Forum Feature
 seo-title: Forum Feature
 description: How to add and configure the forum feature
 seo-description: How to add and configure the forum feature
-uuid: e69be4e1-c9d5-4d51-8e7e-609e5460e378
+uuid: ced860ef-6f8a-4df2-acc8-6a48140fca83
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
-docset: aem65
-
+discoiquuid: 3495f983-d71e-4704-be4e-8a42a63f72db
 ---
 
-# Forum Feature{#forum-feature}
+# Forum Feature {#forum-feature}
 
 ## Introduction {#introduction}
 
-The forum feature provides an area for signed-in site visitors (community members) in the publish environment to :
+The forum feature provides an area for signed-in site visitors (community members) in the publish environment to:
 
-* create new topics
-* view and reply to topics
-* follow a topic
-* search a forum
-* help moderate the forum content
-* move forum topics from one page to another
+* Create new topics
+* View and reply to topics
+* Follow a topic
+* Search a forum
+* Help moderate the forum content
+* Move forum topics from one page to another
 
 This section of the documentation describes
 
-* adding the forum feature to an AEM site
-* configuration settings for the `Forum`component
+* Adding the forum feature to an AEM site
+* Configuration settings for the `Forum`component
 
-### Adding a Forum to a Page {#adding-a-forum-to-a-page}
+## Adding a Forum to a Page {#adding-a-forum-to-a-page}
 
 To add a `Forum` component to a page in author mode, use the component browser to locate
 
 * `Communities / Forum`
 
-and drag it into place on a page where the forum should appear.
+And drag it into place on a page where the forum should appear.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum`component will appear :
+When the [required client-side libraries](essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum`component will appear:
 
-![](assets/chlimage_1-104.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
-### Configuring a Forum {#configuring-a-forum}
+## Configuring a Forum {#configuring-a-forum}
 
 Select the placed `Forum` component to access and select the `Configure` icon which opens the edit dialog.
 
-![](assets/chlimage_1-105.png) ![](assets/forum-config.png)
+![chlimage_1-61](assets/chlimage_1-61.png) ![chlimage_1-62](assets/chlimage_1-62.png)
 
-#### Settings tab {#settings-tab}
+### Settings tab {#settings-tab}
 
-Under the **Settings **tab, specify settings for topics and replies :
+Under the **[!UICONTROL Settings]** tab, specify settings for topics and replies:
 
-* **Allow Attachment Thumbnail
-  **If checked, a thumbnail of the attached image is created.
-* **Max Attach Thumbnail Size**
-  Maximum size (in pixels) of the attachment thumbnail image. The default value is 800 x 800.
+* **[!UICONTROL Topics Per Page]** 
+  Defines the number of topics/posts shown per page. Default is 10.
 
-* **Min Image size for Thumbnail**
-* **Max Thumbnail Size**
-  Maximum size (in pixels) of the thumbnail image for inline image. The default value is 800 x 800.
-
-* **Topics Per Page
-  **Defines the number of topics/posts shown per page. Default is 10.
-* **Moderated**
+* **[!UICONTROL Moderated]** 
   If checked, posting of topics and comments must be approved before they will appear on a publish site. Default is unchecked.
 
-* **Closed**
+* **[!UICONTROL Closed]** 
   If checked, the forum is closed to new topics and comments. Default is unchecked.
 
-* **Rich Text Editor**
+* **[!UICONTROL Rich Text Editor]** 
   If checked, topics and comments may be entered with markup. Default is unchecked.
 
-* **Allow Tagging**
-  If checked, allow members to add tag labels to their post (see **Tag field** tab). Default is unchecked.
+* **[!UICONTROL Allow Tagging]** 
+  If checked, allow members to add tag labels to their post (see **[!UICONTROL Tag field]** tab). Default is unchecked.
 
-* **Allow File Uploads**
+* **[!UICONTROL Allow File Uploads]** 
   If checked, allow file attachments to be added to the topic or comment. Default is unchecked.
 
-* **Allow Following**
-  If checked, include the following feature for forum posts, which allows members to be [notified](/help/communities/notifications.md) of new posts. Default is unchecked.
+* **[!UICONTROL Allow Following]** 
+  If checked, include the following feature for forum posts, which allows members to be [notified](notifications.md) of new posts. Default is unchecked.
 
-* **Allow Pinning**
+* **[!UICONTROL Allow Pinning]** 
   If checked, forum topics may be pinned to the top of the list of topics. Default is unchecked.
 
-* **Allow Featured Content**
-  if checked, the idea is able to be identified as [featured content](/help/communities/featured.md). Default is unchecked.
+* **[!UICONTROL Allow Featured Content]** 
+  if checked, the idea is able to be identified as [featured content](featured.md). Default is unchecked.
 
-* **Allow Email Subscriptions**
-  If checked, allow members to be notified of new posts by email ([subscription](/help/communities/subscriptions.md)). Requires `Allow Following` to be checked and [email configured](/help/communities/email.md). Default is unchecked.
+* **[!UICONTROL Allow Email Subscriptions]** 
+  If checked, allow members to be notified of new posts by email ([subscription](subscriptions.md)). Requires `Allow Following` to be checked and [email configured](email.md). Default is unchecked.
 
-* **Max File Size**
+* **[!UICONTROL Max File Size]** 
   Relevant only if `Allow File Uploads` is checked. This field will limit the size (in bytes) of an uploaded file. Default is 104857600 (10 Mb).
 
-* **Allowed File Types**
-  Relevant only if `Allow File Uploads` is checked. A comma separated list of file extensions with the "dot" separater. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed to be uploaded. Default is none specified such that** **all file types are allowed.
+* **[!UICONTROL Allowed File Types]** 
+  Relevant only if `Allow File Uploads` is checked. A comma separated list of file extensions with the "dot" separater. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed to be uploaded. Default is none specified such that all file types are allowed.
 
-* **Max Attach Image File Size**
-  Relevant only if Allow File Uploads is checked. Maximum number of bytes an uploaded image file may have. Default is 2097152** **(2 Mb).
+* **[!UICONTROL Max Attach Image File Size]** 
+  Relevant only if Allow File Uploads is checked. Maximum number of bytes an uploaded image file may have. Default is 2097152 (2 Mb).
 
-* **Allow Threaded Replies**
+* **[!UICONTROL Allow Threaded Replies]** 
   If checked, allow replies to comments posted to the topic. Default is unchecked.
 
-* **Allow Voting**
-  If checked, include the Voting feature with a topic. Default is unchecked.
-
-* **Allow Users to Delete Comments and Topics**
+* **[!UICONTROL Allow Users to Delete Comments and Topics]** 
   If checked, allow members to delete the comments and topics they posted. Default is unchecked.
 
-* **Show Breadcrumbs**
+* **[!UICONTROL Allow Voting]** 
+  If checked, include the Voting feature with a topic. Default is unchecked.
+
+* **[!UICONTROL Show Breadcrumbs]** 
   If checked, show navigational breadcrumbs on topic pages. Default is checked.
 
-* **Display Badges**
-  If checked, display earned and assigned [badges](/help/communities/implementing-scoring.md) with a member's blog entry. Default is unchecked.
-
-* **Allow Privileged Members**
-  If checked, only Privileged members are allowed to create content.
-
-* **Allowed Privileged Members
-  **Add the privileged members allowed to create content.
-* **Block User Generated Content in Author Edit Mode**
-  If enabled, blocks User Generated Content while editing in Author Mode.
-
-* **Enable Mention**
-  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users recieve notifications about their mentions.
-
-* **Max Mentions**
-  Restrict the maximum number of mentions allowed in a post. Default is 10.
-
-* **UI Mention Pattern**
-  Specify the alowed pattern string to tag (@mention) the registered user in a post. For example `~{{familyName}}{{givenName}}`.
+* **[!UICONTROL Display Badges]** 
+  If checked, display earned and assigned [badges](implementing-scoring.md) with a member's blog entry. Default is unchecked.
 
 >[!NOTE]
 >
 >It may be necessary to check both `AllowThreaded Replies` and `Allow users to Delete Comments and Topics` to enable comments on a topic.
 
-#### User Moderation tab {#user-moderation-tab}
+### User Moderation tab {#user-moderation-tab}
 
-Under the **User Moderation **tab, specify how the posted topics and replies (user generated content) are managed. For more information, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
+Under the **[!UICONTROL User Moderation]** tab, specify how the posted topics and replies (user generated content) are managed. For more information, see [Moderating User Generated Content](moderate-ugc.md).
 
-* **Deny Posts**
+* **[!UICONTROL Deny Posts]** 
   If checked, trusted member moderators will be allowed to deny posts and prevent the post from appearing on the public forum. Default is unchecked.
 
-* **Close / Reopen Topics**
+* **[!UICONTROL Close / Reopen Topics]** 
   If checked, trusted member moderators may close a topic to further edits and comments, and may also reopen a topic. Default is unchecked.
 
-* **Move Topics**
+* **[!UICONTROL Move Topics]** 
   If checked, allow publish-side moderators to move topics. Default is checked.
 
-* **Flag Posts**
+* **[!UICONTROL Flag Posts]** 
   If checked, allow members to flag others' topics or comments as inappropriate. Default is unchecked.
 
-* **Flag Reason List**
+* **[!UICONTROL Flag Reason List]** 
   If checked, allow members to choose, from a drop-down list, their reason for flagging a topic or comment as inappropriate. Default is unchecked.
 
-* **Custom Flag Reason**
+* **[!UICONTROL Custom Flag Reason]** 
   If checked, allow members to enter their own reason for flagging a topic or comment as inappropriate. Default is unchecked.
 
-* **Moderation Threshold**
+* **[!UICONTROL Moderation Threshold]** 
   Enter the number of times a topic or comment has to be flagged by members before moderators are notified. Default is 1 ( one time).
 
-* **Flagging Limit**
+* **[!UICONTROL Flagging Limit]** 
   Enter the number of times a topic or comment has to be flagged before it is hidden from public view. If set to -1, the flagged topic or comment is never hidden from public view. Else, this number must be greater than or equal to the Moderation Threshold. Default is 5.
 
-#### Tag field tab {#tag-field-tab}
+### Tag field tab {#tag-field-tab}
 
-Under the **Tag field** tab, the tags which may be applied, if allowed under the **Settings **tab, are limited according to namespaces chosen.
+Under the **[!UICONTROL Tag field]** tab, the tags which may be applied, if allowed under the **[!UICONTROL Settings]** tab, are limited according to namespaces chosen.
 
-* **Allowed Namespaces**
-  Relevant if `Allow Tagging` is checked under the **Settings **tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
+* **[!UICONTROL Allowed Namespaces]** 
+  Relevant if `Allow Tagging` is checked under the **[!UICONTROL Settings]** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
 
-* **Suggestion Limit**
-  Enter the number of tags to be displayed as a suggestion to the member posting to the forum. Default is **-**1 (no limits).
+* **[!UICONTROL Suggestion Limit]** 
+  Enter the number of tags to be displayed as a suggestion to the member posting to the forum. Default is **-** 1 (no limits).
 
-#### Translation tab {#translation-tab}
+### Translation tab {#translation-tab}
 
-Under the **Translation **tab, if translation is enabled for the community site, translation may be set to translate the entire topic or selected posts.
+Under the **[!UICONTROL Translation]** tab, if translation is enabled for the community site, translation may be set to translate the entire topic or selected posts.
 
-* **Translate All**
+* **[!UICONTROL Translate All]** 
   If checked, the forum thread is translated into the user's preferred language. Default is unchecked.
 
-#### Sort Settings tab {#sort-settings-tab}
+### Sort Settings tab {#sort-settings-tab}
 
-Under the **Sort Settings **tab, specify how the posted comments are sorted when displayed.
+Under the **[!UICONTROL Sort Settings]** tab, specify how the posted comments are sorted when displayed.
 
-* **Sort By**
-  Check all allowed sort selections : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
+* **[!UICONTROL Sort By]** 
+  Check all allowed sort selections: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
 
-* **Set as Default**
+* **[!UICONTROL Set as Default]** 
   Pull down to select one of the checked sort options to appear as the default. Default is `Newest`.
 
-* **Select Time Options for Analytics Sorting**
+* **[!UICONTROL Select Time Options for Analytics Sorting]** 
   Pull down to select one of `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
 
-### Additional Information {#additional-information}
+## Additional Information {#additional-information}
 
-More information may be found on the [Forum Essentials](/help/communities/essentials-forum.md) page for developers.
+More information may be found on the [Forum Essentials](essentials-forum.md) page for developers.
 
-For moderation of posted topics and comments, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
+For moderation of posted topics and comments, see [Moderating User Generated Content](moderate-ugc.md).
 
-For tagging posted topics and comments, see [Tagging User Generated Content](/help/communities/tag-ugc.md).
+For tagging posted topics and comments, see [Tagging User Generated Content](tag-ugc.md).
 
-For translation of posted topics and comments, see [Translating User Generated Content](/help/communities/translate-ugc.md).
+For translation of posted topics and comments, see [Translating User Generated Content](translate-ugc.md).

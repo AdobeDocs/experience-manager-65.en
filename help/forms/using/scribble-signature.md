@@ -3,17 +3,15 @@ title: Using Scribble Signature in HTML5 forms
 seo-title: Using Scribble Signature in HTML5 forms
 description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices. 
 seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices. 
-uuid: 163dd55a-971a-4dd4-93a7-a14e80184d9b
+uuid: afac2d37-ef0d-428b-aed7-64a00d62792d
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
-discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
-docset: aem65
-
+discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 ---
 
-# Using Scribble Signature in HTML5 forms{#using-scribble-signature-in-html-forms}
+# Using Scribble Signature in HTML5 forms {#using-scribble-signature-in-html-forms}
 
 HTML5 forms are increasingly being used on touch devices, and one common requirement is to support signatures. Scribing (Writing with a stylus or finger) is becoming an accepted way of signing forms on mobile devices. HTML5 forms and Forms Designer now enable the option of having a scribble signature field on the form. When the form is rendered in the browser, one can sign on these fields using a stylus, mouse, or touch.
 
@@ -22,7 +20,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 1. Open a form in Forms Designer. 
 1. Drag and drop the Signature Scribble field on the page.
 
-   ![](assets/designer_scribble.png)
+   ![designer_scribble](assets/designer_scribble.png)
 
    >[!NOTE]
    >
@@ -37,7 +35,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 
        >[!NOTE]
        >
-       >To open the XML Source tab, click **View **&gt; **XML Source**.
+       >To open the XML Source tab, click **View** &gt;  **XML Source**.
 
     1. Locate the `<ui>` tag in the `<field>` tag and modify the source code to look like the following:
 
@@ -58,7 +56,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 
 Once a Signature Scribble field has been added to the form and rendered, clicking or tapping on the field opens a dialog box. The user can scribble a signature in the draw area designated by a dotted rectangle, using a mouse, finger or stylus.
 
-![](assets/geolocation.png)
+![geolocation](assets/geolocation.png)
 
 **A.** Brush **B.** Eraser **C.** Geolocation **D.** Geolocation information
 
@@ -87,11 +85,11 @@ Clicking the **OK** icon saves the scribble as an image in the field. The image 
 
 Tapping or clicking the Scribble field opens the dialog box in read-only mode.
 
-![](assets/3.png) 
+![3](assets/3.png) 
 
 ### Selecting Pen size {#selecting-pen-size}
 
-Click the **Brushes **icon to display a list of available pen sizes. Click or tap a pen size to use the corresponding pen.
+Click the **Brushes** icon to display a list of available pen sizes. Click or tap a pen size to use the corresponding pen.
 
 ### Delete Signatures from the form {#delete-signatures-from-the-form}
 
@@ -100,4 +98,4 @@ To delete the signatures from the form:
 * (Mobile devices) Long press the signature field, and on the confirmation dialog, tap **Yes**.
 * (Desktop) Hover over the signature field, click the **Cancel** icon, and on the confirmation dialog, click **Yes**.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

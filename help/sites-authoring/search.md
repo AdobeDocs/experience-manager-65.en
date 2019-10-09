@@ -3,17 +3,15 @@ title: Search
 seo-title: Search
 description: Find your content faster with comprehensive search
 seo-description: Find your content faster with comprehensive search
-uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
+uuid: 1e80cf85-653f-4dde-930a-de05415b994f
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
-docset: aem65
-
+discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 ---
 
-# Search{#search}
+# Search{#search-features}
 
 The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 
@@ -29,7 +27,7 @@ Search is available from the top toolbar:
 
 With the search rail you can:
 
-* Search for a specific keyword, path or tag.
+* Search for a specific keyword, path or tag.  
 * Filter according to resource specific criteria, such as modified dates, page status, file size, etc.
 * Define and use a [saved search](#saved-searches) - based on the above criteria.
 
@@ -43,18 +41,18 @@ To search and filter your resources:
 
 1. Open **Search** (with the magnifying glass in the toolbar) and enter your search term. Suggestions will be made and can be selected:
 
-   ![](assets/s-01.png)
+   ![screen_shot_2018-03-23at101404](assets/screen_shot_2018-03-23at101404.png)
 
    By default the search results will be limited to your current location (i.e. console and related resource type):
 
-   ![](assets/screen_shot_2018-03-23at101445.png)
+   ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
 1. If required, you can remove the location filter (select **X** on the filter you want removed) to search across all consoles/resource types.
 1. The results will be shown, grouped according to console and related resource type.
 
    You can either select a specific resource (for further action), or drill down by selecting the required resource type; for example **View All Sites**:
 
-   ![](assets/screen-shot_2019-03-05at101900.png)
+   ![screen_shot_2018-03-23at101523](assets/screen_shot_2018-03-23at101523.png)
 
 1. If you want to drill down further, select the Rail symbol (top left) to open the side panel **Filters & Options**.
 
@@ -73,24 +71,20 @@ To search and filter your resources:
    >
    >The search criteria can vary:
    >
-   >
-   >
-   >    * Depending on the resource type you have selected; for example, the Assets and Communities criteria are understandably specialized.
-   >    * Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
-   >
-   >
+   >* Depending on the resource type you have selected; for example, the Assets and Communities criteria are understandably specialized.
+   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
 
-   ![](assets/screen-shot_2019-03-05at102509.png)
+   ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
 
 1. You can also add additional search terms:
 
-   ![](assets/screen-shot_2019-03-05at102613.png)
+   ![screen_shot_2018-03-23at101710](assets/screen_shot_2018-03-23at101710.png)
 
 1. Close **Search** with the **X** (top right).
 
 >[!NOTE]
 >
->Search criteria are persisted when selecting an item in the search results.
+>Search criteria are persisted when selecting an item in the search results. 
 >
 >When you select an item on the search results page, when returning to the search page after using the browser back button, the search criteria remain.
 
@@ -100,15 +94,15 @@ As well as searching by a wide range of facets you can also save a particular se
 
 1. Define your search criteria and select **Save**.
 
-   ![](assets/screen-shot_2019-03-05at102613-1.png)
+   ![screen_shot_2018-03-23at101710-1](assets/screen_shot_2018-03-23at101710-1.png)
 
 1. Assign a name, then use **Save** to confirm:
 
-   ![](assets/screen-shot_2019-03-05at102725.png)
+   ![screen_shot_2018-03-23at101852](assets/screen_shot_2018-03-23at101852.png)
 
 1. Your saved search will be available from the selector the next time you access the search panel:
 
-   ![](assets/screen-shot_2019-03-05at102927.png)
+   ![screen_shot_2018-03-23at102128](assets/screen_shot_2018-03-23at102128.png)
 
 1. Once saved you can:
 
@@ -117,5 +111,5 @@ As well as searching by a wide range of facets you can also save a particular se
 
 Saved searches can be modified by selecting the saved search and clicking **Edit Saved Search** at the bottom of the search panel.
 
-![](assets/screen-shot_2019-03-05at103010.png)
+![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)
 

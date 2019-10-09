@@ -3,14 +3,12 @@ title: RDBMS Support in AEM 6.4
 seo-title: RDBMS Support in AEM 6.4
 description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
-uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
+uuid: 599d3e61-99eb-4a1c-868b-52b20a615500
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
-docset: aem65
-
+discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 ---
 
 # RDBMS Support in AEM 6.4{#rdbms-support-in-aem}
@@ -37,11 +35,17 @@ The repository is created by configuring the `DocumentNodeStoreService` OSGi ser
 
 In order for it to work, a data source needs to be configured with AEM. This is done via the `org.apache.sling.datasource.DataSourceFactory.config` file. The JDBC drivers for the respective database need to be provided separately as OSGi bundles inside the local configuration.
 
-For steps on creating OSGi bundles for JDBC drivers, please see this [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) on the Apache Sling website.
+For steps on creating OSGi bundles for JDBC drivers, please see this [documentation](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) on the Apache Sling website.
+
+>[!NOTE]
+>
+>Some of the SQL drivers are already packaged as OSGi bundles.
+>
+>If this is the case, then just copy the jar file to install-path/crx-quickstart/install/9.
 
 Once the bundles are in place, follow the below steps in order to configure AEM with RDB persistence:
 
-1. Make sure the database daemon is started and that you have an active database for use with AEM.
+1. Make sure the database daemon is started and that you have an active database for use with AEM. 
 1. Copy the AEM 6.3 jar into the installation directory.
 1. Create a folder called `crx-quickstart\install` in the installation directory.
 1. Configure the document node store by creating a configuration file with the following name in the `crx-quickstart\install` directory:
@@ -58,9 +62,14 @@ Once the bundles are in place, follow the below steps in order to configure AEM 
 
 1. Next, prepare the JDBC OSGi bundles to be used with AEM:
 
-    1. In the `crx-quickstart/install` folder, create a folder named `9`.
-
-    1. Place the JDBC jar in the new folder.
+    1. Download the ZIP archive from https://dev.mysql.com/downloads/connector/j/
+       * version must be >= 5.1.38
+    1. Extract the `mysql-connector-java-version-bin.jar` (bundle) from the archive
+    1. Use the web console to install and start the bundle :
+       * Go to *http://serveraddress:serverport/system/console/bundles*
+       * Select **Install/Update**
+       * Browse to the select the bundle extracted from the downloaded ZIP archive
+       * Check that **Oracle Corporation's JDBC Driver for MySQLcom.mysql.jdbc** is active, and start it.
 
 1. Finally, start AEM with the `crx3` and `crx3rdb` runmodes:
 
@@ -76,7 +85,7 @@ The following configuration options are available:
 
 * `datasource.name:` The data source name. The default is `oak`.
 
-* `url:` The URL string of the database that needs to be used with JDBC. Each database type has its own URL string format. For more info, see [URL String Formats](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) below.
+* `url:` The URL string of the database that needs to be used with JDBC. Each database type has its own URL string format. For more info, see [URL String Formats](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) below.  
 
 * `driverClassName:` The JDBC driver class name. This will differ depending on the database you want to use and subsequently, the driver that is needed to connect to it. Below are the class names for all the databases supported by AEM:
 
@@ -86,7 +95,7 @@ The following configuration options are available:
     * `com.mysql.jdbc.Driver` for MySQL and MariaDB (experimental);
     * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server (experimental).
 
-* `username:` The username the database runs under.
+* `username:` The username the database runs under.  
 
 * `password:` The database password.
 
@@ -94,10 +103,12 @@ The following configuration options are available:
 
 A different URL string format is used in the data source configuration depending on the database type that needs to be used. Below is a list of formats for the databases that AEM currently supports:
 
-* `jdbc:postgresql:databasename` for PostgreSQL;
+* `jdbc:postgresql:databasename` for PostgreSQL;  
+
 * `jdbc:db2://localhost:port/databasename` for DB2;
 * `jdbc:oracle:thin:localhost:port:SID` for Oracle;
-* `jdbc:mysql://localhost:3306/databasename` for MySQL and MariaDB (experimental);
+* `jdbc:mysql://localhost:3306/databasename` for MySQL and MariaDB (experimental);  
+
 * `jdbc:sqlserver://localhost:1453;databaseName=name` for Microsoft SQL Server (experimental).
 
 ## Known Limitations {#known-limitations}

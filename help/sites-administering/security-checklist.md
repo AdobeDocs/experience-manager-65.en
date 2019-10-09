@@ -3,14 +3,12 @@ title: Security Checklist
 seo-title: Security Checklist
 description: Learn about the various security considerations when configuring and deploying AEM.
 seo-description: Learn about the various security considerations when configuring and deploying AEM.
-uuid: 8e293316-4177-4271-87c6-9dc1a2e85a07
+uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
-docset: aem65
-
+discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
 ---
 
 # Security Checklist{#security-checklist}
@@ -37,7 +35,7 @@ Enabling the HTTPS transport layer on both author and publish instances is manda
 
 >[!NOTE]
 >
->See the [Enabling HTTP Over SSL](/help/sites-deploying/config-ssl.md) section for more information.
+>See the [Enabling HTTP Over SSL](/help/sites-administering/ssl-by-default.md) section for more information.
 
 ### Install Security Hotfixes {#install-security-hotfixes}
 
@@ -45,14 +43,16 @@ Ensure that you have installed the latest [Security Hotfixes provided by Adobe](
 
 ### Change Default Passwords For the AEM and OSGi Console Admin Accounts {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe strongly recommends that after installation you change the password for the privileged [**AEM** `admin` accounts](#changingthecqadminpassword) (on all instances).
+Adobe strongly recommends that after installation you change the password for the privileged [**AEM** `admin` accounts](#changing-the-aem-admin-password) (on all instances).
 
 These accounts include:
 
 * The AEM `admin` account
+
   Once you have changed the password for the AEM admin account, you will need to use the new password when accessing CRX.
 
 * The `admin` password for the OSGi Web console
+
   This change will also be applied to the admin account used for accessing the Web console, so you will need to use the same password when accessing that.
 
 These two accounts use separate credentials and having distinct, strong password for each is vital to a secure deployment.
@@ -78,9 +78,9 @@ For more information on changing the web console password, see [Changing the OSG
 
 #### Changing the OSGi web console admin password {#changing-the-osgi-web-console-admin-password}
 
-You must also change the password used for accessing the Web console. This is done by configuring the following properties of the [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md#apachefelixosgimanagementconsole):
+You must also change the password used for accessing the Web console. This is done by configuring the following properties of the [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md):
 
-**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.
+**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.  
 The password must be changed after the initial installation to ensure the security of your instance.
 
 To do this:
@@ -88,7 +88,7 @@ To do this:
 1. Navigate to the web console at `<server>:<port>/system/console/configMgr`.
 1. Navigate to** Apache Felix OSGi Management Console** and change the **user name** and **password**.
 
-   ![](assets/chlimage_1-3.png)
+   ![chlimage_1-166](assets/chlimage_1-166.png)
 
 1. Click **Save**.
 
@@ -116,8 +116,8 @@ A standard installation of AEM specifies `admin` as the user for transport crede
 
 For security considerations, both should be changed to reflect the particular use case at hand, with the following two aspects in mind:
 
-* The **transport user** should not be the admin user. Rather, set up a user on the publish system that has only access rights to the relevant portions of the publish system and use that user's credentials for the transport.
-
+* The **transport user** should not be the admin user. Rather, set up a user on the publish system that has only access rights to the relevant portions of the publish system and use that user's credentials for the transport.  
+  
   You can start from the bundled replication-receiver user and configure this user's access rights to match your situation
 
 * The **replication user** or **Agent User Id** should also not be the admin user, but a user who can only see content that is supposed to be replicated. The replication user is used to collect the content to be replicated on the author system before it is sent to the publisher.
@@ -134,7 +134,7 @@ All example content and users (e.g. the Geometrixx project and its components) s
 
 >[!NOTE]
 >
->The sample We.Retail applications are removed if this instance is running in [Production Ready Mode](/help/sites-administering/production-ready.md). If, for any reason, this is not the case, you can uninstall the sample content by going to Package Manager, then serarching for and uninstalling all We.Retail packages. Fore more info, see How to [Work With Packages](/help/sites-administering/package-manager.md).
+>The sample We.Retail applications are removed if this instance is running in [Production Ready Mode](/help/sites-administering/production-ready.md). If, for any reason, this is not the case, you can uninstall the sample content by going to Package Manager, then serarching for and uninstalling all We.Retail packages. Fore more info, see [How to Work With Packages](package-manager.md).
 
 ### Check if the CRX development bundles are present {#check-if-the-crx-development-bundles-are-present}
 
@@ -163,7 +163,7 @@ To address known security issues with Cross-Site Request Forgery (CSRF) in CRX W
 The referrer filter service is an OSGi service that allows you to configure:
 
 * which http methods should be filtered
-* whether an empty referrer header is allowed
+* whether an empty referrer header is allowed  
 * and a white list of servers to be allowed in addition to the server host.
 
 By default, all variations of localhost and the current host names the server is bound to are in the white list.
@@ -171,7 +171,8 @@ By default, all variations of localhost and the current host names the server is
 To configure the referrer filter service:
 
 1. Open the Apache Felix console (**Configurations**) at:
-   `https://<*server*>:<*port_number*>/system/console/configMgr`
+
+   `https://<server>:<port_number>/system/console/configMgr`  
 
 1. Login as `admin`.
 1. In the **Configurations** menu, select:
@@ -179,7 +180,9 @@ To configure the referrer filter service:
    `Apache Sling Referrer Filter`
 
 1. In the `Allow Hosts` field, enter all hosts that are allowed as a referrer. Each entry needs to be of the form
-   &lt;protocol&gt;://&lt;server&gt;:&lt;port&gt;
+
+   &lt;protocol&gt;://&lt;server&gt;:&lt;port&gt; 
+
    For example:
 
     * `https://allowed.server:80` allows all requests from this server with the given port.
@@ -206,26 +209,26 @@ Some OSGI settings are set by default to allow easier debugging of the applicati
 
 For each of the following services the specified settings need to be changed:
 
-* [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager):
+* [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md):
 
     * enable **Minify** (to remove CRLF and whitespace characters).
     * enable **Gzip** (to allow files to be gzipped and accessed with one request).
     * disable **Debug**
     * disable **Timing**
 
-* [Day CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter):
+* [Day CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md):
 
     * uncheck **Enable**
 
-* [Day CQ WCM Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmfilter):
+* [Day CQ WCM Filter](/help/sites-deploying/osgi-configuration-settings.md):
 
     * on publish only, set **WCM Mode** to "disabled"
 
-* [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler):
+* [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md):
 
     * disable **Generate Debug Info**
 
-* [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler):
+* [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md):
 
     * disable **Generate Debug Info**
     * disable **Mapped Content**
@@ -242,10 +245,12 @@ A denial of service (DoS) attack is an attempt to make a computer resource unava
 
 * With a flood of requests from an external source.
 * With a request for more information than the system can successfully deliver.
-  For example, a JSON representation of the entire repository.
+
+  For example, a JSON representation of the entire repository.  
 
 * By requesting a content page with an unlimited number of URLs, The URL can include a handle, some selectors, an extension, and a suffix - any of which can be modified.
-  For example, `.../en.html` can also be requested as: ``
+
+  For example, `.../en.html` can also be requested as:
 
     * `.../en.ExtensionDosAttack`
     * `.../en.SelectorDosAttack.html`
@@ -275,19 +280,23 @@ To help prevent DoS misuse you can:
    In your application you should:
 
     * Control the selectors in your application, so that you *only* serve the explicit selectors needed and return `404` for all others.
-
     * Prevent the output of an unlimited number of content nodes.
 
 1. Check the configuration of the default renderers, which can be a problem area.
 
     * In particular the JSON renderer which can transverse the tree structure over multiple levels.
-      For example, the request:
-      `https://localhost:4502/.json`
-      could dump the whole repository in a JSON representation. This would cause significant server problems. For this reason Sling sets a limit on the number of maximum results. To limit the depth of the JSON rendering you can set the value for:
-      **JSON Max results** ( `json.maximumresults`)
-      in the configuration for the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apacheslinggetservlet). When this limit is exceeded the rendering will be collapsed. The default value for Sling within AEM is `200`.
 
-    * As a preventive measure disable the other default renderers (HTML, plain text, XML). Again by configuring the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apacheslinggetservlet).
+      For example, the request:
+
+      `http://localhost:4502/.json`
+
+      could dump the whole repository in a JSON representation. This would cause significant server problems. For this reason Sling sets a limit on the number of maximum results. To limit the depth of the JSON rendering you can set the value for: 
+
+      **JSON Max results** ( `json.maximumresults`)
+
+      in the configuration for the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). When this limit is exceeded the rendering will be collapsed. The default value for Sling within AEM is `200`.
+
+    * As a preventive measure disable the other default renderers (HTML, plain text, XML). Again by configuring the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md).
 
    >[!CAUTION]
    >
@@ -303,24 +312,16 @@ To help prevent DoS misuse you can:
 >
 >This mitigation should be performed only on AEM environments that are not using Forms.
 
-Since AEM does not provide out of the box indexes for the `FormChooserServlet`, using form selectors in queries will trigger a costly repository traversal, usually grinding the AEM instance to a halt. Form selectors can be detected by the presence of the **&#42;.form.&#42;** string in queries.
+Since AEM does not provide out of the box indexes for the `FormChooserServlet`, using form selectors in queries will trigger a costly repository traversal, usually grinding the AEM instance to a halt. Form selectors can be detected by the presence of the **&ast;.form.&ast;** string in queries.
 
 In order to mitigate this, please follow the below steps:
 
-1. Go to the Web Console by pointing your browser to *https://serveraddress:serverport/system/console/configMgr*
+1. Go to the Web Console by pointing your browser to *https://&lt;serveraddress&gt;:&lt;serverport&gt;/system/console/configMgr* 
 
 1. Search for **Day CQ WCM Form Chooser Servlet**
-1. After you click on the entry, disable the **Advanced Search Require** in the following window.
+1. After you click on the entry, disable the **Advanced Search Require** in the following window.  
 
 1. Click **Save**.
-
-**Mitigate Against DoS Caused by Asset Download Servlet**
-
-The default Asset Download Servlet in AEM allows authenticated users to issue arbitrarily-large, concurrent download requests for creating ZIP files of assets visible to them that can overload the server and/or network.
-
-To mitigate potential DoS risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled by default for publish instances on latest AEM versions.
-
-If your setup requires that the Asset Download Server be enabled, please see [this article](/help/assets/download-assets-from-aem.md) for more information.
 
 ### Disable WebDAV {#disable-webdav}
 
@@ -330,13 +331,13 @@ WebDAV should be disabled on both the author and publish environments. This can 
 
    `https://<*host*>:<*port*>/system/console`
 
-   For example `https://localhost:4503/system/console/bundles`.
+   For example `http://localhost:4503/system/console/bundles`.
 
 1. In the list of bundles, find the bundle named:
 
    `Apache Sling Simple WebDAV Access to repositories (org.apache.sling.jcr.webdav)`
 
-1. Click the stop button (in the Actions column) to stop this bundle.
+1. Click the stop button (in the Actions column) to stop this bundle.  
 
 1. Again in the list of bundles, find the bundle named:
 
@@ -350,13 +351,13 @@ WebDAV should be disabled on both the author and publish environments. This can 
 
 ### Verify That You Are Not Disclosing Personally Identifiable Information In the Users Home Path {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
-It is important you protect your users by making sure that you do not expose any personally identifiable information in the repository users home path.
+It is important you protect your users by making sure that you do not expose any personally indetifiable information in the repository users home path.
 
-Since AEM 6.1, the way user (also known as authorizable) ID node names are stored is changed with a new implementation of the `AuthorizableNodeName` interface. The new interface will no longer expose the user ID in the node name but will generate a random name instead.
+Since AEM 6.1, the way user (also known as authorizable) ID node names are stored is changed with a new implementation of the `AuthorizableNodeName` interface. The new interface will no longer expose the user ID in the node name, but will generate a random name instead.
 
 No configuration needs to be performed in order to enable it, as this is now the default way of generating authorizable IDs in AEM.
 
-Although not recommended, you can disable it in case you need the old implementation for backward compatibility with your existing applications. In order to do this, you need to:
+Although not recommended, you can disable it in case you need the old implementation for backwards compatibility with your exsiting applications. In order to do this, you need to:
 
 1. Go to the Web Console and remove the** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** entry from property **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
@@ -372,8 +373,8 @@ Although not recommended, you can disable it in case you need the old implementa
 
 ### Prevent Clickjacking {#prevent-clickjacking}
 
-To prevent clickjacking we recommend that you configure your webserver to provide the `X-FRAME-OPTIONS` HTTP header set to `SAMEORIGIN`.
-
+To prevent clickjacking we recommend that you configure your webserver to provide the `X-FRAME-OPTIONS` HTTP header set to `SAMEORIGIN`.  
+  
 For more [information on clickjacking please see the OWASP site](https://www.owasp.org/index.php/Clickjacking).
 
 ### Make Sure You Properly Replicate Encryption Keys When Needed {#make-sure-you-properly-replicate-encryption-keys-when-needed}
@@ -424,8 +425,8 @@ In AEM 6.2 and older versions, the keys are stored in the repository under the `
 
 The recommended way to securely replicate the keys across your instances is to only replicate this node. You can selectively replicate nodes via CRXDE Lite:
 
-1. Open CRXDE Lite by going to *https://serrveraddress:4502/crx/de/index.jsp*
-1. Select the `/etc/key` node. ``
+1. Open CRXDE Lite by going to *https://&lt;serrveraddress&gt;:4502/crx/de/index.jsp*
+1. Select the `/etc/key` node.
 1. Go to the **Replication** tab.
 1. Press the **Replication** button.
 

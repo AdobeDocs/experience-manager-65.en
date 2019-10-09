@@ -3,14 +3,12 @@ title: Page Templates - Static
 seo-title: Page Templates - Static
 description: A Template is used to create a Page and defines which components can be used within the selected scope
 seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
-uuid: 7a473c19-9565-476e-9e54-ab179da04d71
+uuid: 86a8ecf8-e0c5-422e-9227-7a24bb5774e3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cfd90e8f-9b9b-4d0b-be31-828469b961de
-docset: aem65
-
+discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
 ---
 
 # Page Templates - Static{#page-templates-static}
@@ -30,69 +28,69 @@ Each Template will present you with a selection of components available for use.
 
 A template is a node of type cq:Template and has the following properties and child nodes:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Name <br /> </strong></td>
-   <td><strong>Type <br /> </strong></td>
-   <td><strong>Description <br /> </strong></td>
-  </tr>
-  <tr>
-   <td>. <br /> </td>
-   <td> cq:Template</td>
-   <td>Current template. A template is of node type cq:Template.<br /> </td>
-  </tr>
-  <tr>
-   <td> allowedChildren </td>
-   <td> String[]</td>
-   <td>Path of a template that is allowed to be a child of this template.<br /> </td>
-  </tr>
-  <tr>
-   <td> allowedParents</td>
-   <td> String[]</td>
-   <td>Path of a template that is allowed to be a parent of this template.<br /> </td>
-  </tr>
-  <tr>
-   <td> allowedPaths</td>
-   <td> String[]</td>
-   <td>Path of a page that is allowed to be based on this template.<br /> </td>
-  </tr>
-  <tr>
-   <td> jcr:created</td>
-   <td> Date</td>
-   <td>Date of creation of the template.<br /> </td>
-  </tr>
-  <tr>
-   <td> jcr:description</td>
-   <td> String</td>
-   <td>Description of the template.<br /> </td>
-  </tr>
-  <tr>
-   <td> jcr:title</td>
-   <td> String</td>
-   <td>Title of the template.<br /> </td>
-  </tr>
-  <tr>
-   <td> ranking</td>
-   <td> Long</td>
-   <td>Rank of the template. Used to display the template in the User Interface.<br /> </td>
-  </tr>
-  <tr>
-   <td> jcr:content</td>
-   <td> cq:PageContent</td>
-   <td>Node containing the content of the template.<br /> </td>
-  </tr>
-  <tr>
-   <td> thumbnail.png</td>
-   <td> nt:file</td>
-   <td>Thumbnail of the template.<br /> </td>
-  </tr>
-  <tr>
-   <td> icon.png</td>
-   <td> nt:file</td>
-   <td>Icon of the template.<br /> </td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td><strong>Name <br /> </strong></td> 
+   <td><strong>Type <br /> </strong></td> 
+   <td><strong>Description <br /> </strong></td> 
+  </tr> 
+  <tr> 
+   <td>. <br /> </td> 
+   <td> cq:Template</td> 
+   <td>Current template. A template is of node type cq:Template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> allowedChildren </td> 
+   <td> String[]</td> 
+   <td>Path of a template that is allowed to be a child of this template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> allowedParents</td> 
+   <td> String[]</td> 
+   <td>Path of a template that is allowed to be a parent of this template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> allowedPaths</td> 
+   <td> String[]</td> 
+   <td>Path of a page that is allowed to be based on this template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> jcr:created</td> 
+   <td> Date</td> 
+   <td>Date of creation of the template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> jcr:description</td> 
+   <td> String</td> 
+   <td>Description of the template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> jcr:title</td> 
+   <td> String</td> 
+   <td>Title of the template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> ranking</td> 
+   <td> Long</td> 
+   <td>Rank of the template. Used to display the template in the User Interface.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> jcr:content</td> 
+   <td> cq:PageContent</td> 
+   <td>Node containing the content of the template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> thumbnail.png</td> 
+   <td> nt:file</td> 
+   <td>Thumbnail of the template.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> icon.png</td> 
+   <td> nt:file</td> 
+   <td>Icon of the template.<br /> </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 A template is the basis of a page.
@@ -112,7 +110,7 @@ There are two aspects to be considered:
 
 A Template is created under a node of type **cq:Template**.
 
-![](assets/screen_shot_2012-02-13at63646pm.png)
+![screen_shot_2012-02-13at63646pm](assets/screen_shot_2012-02-13at63646pm.png)
 
 Various properties can be set, in particular:
 
@@ -121,11 +119,11 @@ Various properties can be set, in particular:
 
 This node contains a jcr:content (cq:PageContent) node which be used as the basis for the content node of resulting pages; this references, using sling:resourceType, the component to be used for rendering the actual content of a new page.
 
-![](assets/screen_shot_2012-02-13at64010pm.png)
+![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
 This component is used to define the structure and design of the content when a new page is created.
 
-![](assets/screen_shot_2012-02-13at64137pm.png)
+![screen_shot_2012-02-13at64137pm](assets/screen_shot_2012-02-13at64137pm.png) 
 
 ### The content produced by a Template {#the-content-produced-by-a-template}
 
@@ -152,17 +150,17 @@ To see a list of all templates in the repository, proceed as follows:
 
 1. In CRXDE Lite, open the **Tools** menu and click **Query**.
 
-1. In the Query tab
+1. In the Query tab  
 1. As **Type**, select **XPath**.
-
 1. In the **Query** input field, enter following string:
-   //element(&#42;, cq:Template)
+
+   //element(&ast;, cq:Template)
 
 1. Click **Execute**. The list is displayed in the result box.
 
 In most cases, you will take an existing template and develop a new one for your own use. See [Developing Page Templates](#developing-page-templates) for more information.
 
-To enable an existing template for your website and you want it to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the allowedPaths property of the template node to: **/content(/.&#42;)?**
+To enable an existing template for your website and you want it to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the allowedPaths property of the template node to: **/content(/.&ast;)?**
 
 ## How Template Designs are Applied {#how-template-designs-are-applied}
 
@@ -176,13 +174,17 @@ When styles are defined in the UI using [Design Mode](/help/sites-authoring/defa
 
 If designs are only applied using Design Mode, then the following sections, [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution), [Decision Tree](/help/sites-developing/page-templates-static.md#decision-tree), and the [Example](/help/sites-developing/page-templates-static.md#example) are not applicable.
 
+>[!NOTE]
+>
+>This section describes design path resolution behavior as of AEM 6.4.2.0.
+
 ### Design Path Resolution {#design-path-resolution}
 
 When rendering content based on a static template, AEM will attempt to apply the most relevant design and styles to the content based on a traversal of the content hierarchy.
 
 AEM determines the most relevant style for a content node in the following order:
 
-* If there is a design for the full and exact path of the content node (as when the design is defined in Design Mode), then use that design.
+* If there is a design for the full and exact path of the content node (as when the design is defined in Design Mode), then use that design.  
 * If there is a design for the content node of the parent, then use that design.
 * If there is a design for any node on the path of the content node, then use that design.
 
@@ -192,7 +194,7 @@ In the last two cases, if there is more than one applicable design, use the one 
 
 This is a graphical representation of the [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution) logic.
 
-![](assets/design_path_resolution.png)
+![design_path_resolution](assets/design_path_resolution.png) 
 
 ### Example {#example}
 
@@ -202,61 +204,61 @@ Consider a simple content structure as follows, where a design could apply to an
 
 The following table describes how AEM will choose a design.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Finding Design For<br /> </strong></td>
-   <td><strong>Designs Exist For<br /> </strong></td>
-   <td><strong>Design Chosen<br /> </strong></td>
-   <td><strong>Comment</strong></td>
-  </tr>
-  <tr>
+<table> 
+ <tbody> 
+  <tr> 
+   <td><strong>Finding Design For<br /> </strong></td> 
+   <td><strong>Designs Exist For<br /> </strong></td> 
+   <td><strong>Design Chosen<br /> </strong></td> 
+   <td><strong>Comment</strong></td> 
+  </tr> 
+  <tr> 
    <td><code class="code">leaf
-      </code></td>
-   <td><p><code>root</code></p> <p><code>branch</code></p> <p><code>leaf</code></p> </td>
-   <td><code>leaf</code></td>
-   <td>The most exact match is always taken.<br /> </td>
-  </tr>
-  <tr>
-   <td><code>leaf</code></td>
-   <td><p><code>root</code></p> <p><code>branch</code></p> </td>
-   <td><code>branch</code></td>
-   <td>Fall back to the closest match lower in the tree.</td>
-  </tr>
-  <tr>
-   <td><code>leaf</code></td>
-   <td><code>root</code></td>
-   <td><code>root</code></td>
-   <td>If all else fails, take what's remaining.<br /> </td>
-  </tr>
-  <tr>
-   <td><code>branch</code></td>
-   <td><code>branch</code></td>
-   <td><code>branch</code></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>branch</code></td>
+      </code></td> 
+   <td><p><code>root</code></p> <p><code>branch</code></p> <p><code>leaf</code></p> </td> 
+   <td><code>leaf</code></td> 
+   <td>The most exact match is always taken.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td><code>leaf</code></td> 
+   <td><p><code>root</code></p> <p><code>branch</code></p> </td> 
+   <td><code>branch</code></td> 
+   <td>Fall back to the closest match lower in the tree.</td> 
+  </tr> 
+  <tr> 
+   <td><code>leaf</code></td> 
+   <td><code>root</code></td> 
+   <td><code>root</code></td> 
+   <td>If all else fails, take what's remaining.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td><code>branch</code></td> 
+   <td><code>branch</code></td> 
+   <td><code>branch</code></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><code>branch</code></td> 
    <td><p><code>branch</code></p> <p><code class="code">leaf
-       </code></p> </td>
-   <td><code>branch</code></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>branch</code></td>
+       </code></p> </td> 
+   <td><code>branch</code></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><code>branch</code></td> 
    <td><p><code>root</code></p> <p><code class="code">branch
-       </code></p> </td>
-   <td><code>branch</code></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><code>branch</code></td>
+       </code></p> </td> 
+   <td><code>branch</code></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><code>branch</code></td> 
    <td><p><code>root</code></p> <p><code class="code">leaf
-       </code></p> </td>
-   <td><code>root</code></td>
-   <td><p>If there is not an exact match, take the one lower in the tree.</p> <p>The assumption is that this will always be applicable, but further up the tree can be too specific.<br /> </p> </td>
-  </tr>
- </tbody>
+       </code></p> </td> 
+   <td><code>root</code></td> 
+   <td><p>If there is not an exact match, take the one lower in the tree.</p> <p>The assumption is that this will always be applicable, but further up the tree can be too specific.<br /> </p> </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ## Developing Page Templates {#developing-page-templates}
@@ -275,7 +277,7 @@ To create a new template based on an existing template:
 
    >[!NOTE]
    >
-   >The list of available templates depends on the location of the new page and the restrictions on placement specified in each template. See [Template Availability](#templateavailibility).
+   >The list of available templates depends on the location of the new page and the restrictions on placement specified in each template. See [Template Availability](/help/sites-developing/templates.md#template-availability).
 
 1. Change the **jcr:title** of the new template node to reflect its new role. You can also update the **jcr:description** if appropriate. Be sure to change the template availability of the page as appropriate.
 
@@ -283,7 +285,7 @@ To create a new template based on an existing template:
    >
    >If you want your template to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the `allowedPaths` property of the template node to: `/content(/.*)?`
 
-   ![](assets/chlimage_1-88.png)
+   ![chlimage_1-251](assets/chlimage_1-251.png)
 
 1. Copy the component on which the template is based (this is indicated by the **sling:resourceType** property of the **jcr:content** node within the template) to create a new instance.
 
@@ -297,7 +299,6 @@ To create a new template based on an existing template:
    >[!NOTE]
    >
    >Changes made to the **/apps/&lt;website&gt;/templates/&lt;template-name&gt;** node will affect the template instance (as in the selection list).
-   >
    >
    >Changes made to the **/apps/&lt;website&gt;/components/&lt;component-name&gt;** node will affect the content page created when the template is used.
 
@@ -318,5 +319,5 @@ This example illustrates how to allow a template to be used for certain content 
 1. In CRXDE Lite, navigate to the template you want to use for your page, for example, the Newsletter template.
 1. Change the `allowedPaths` property and other properties used for [template availabillity](/help/sites-developing/templates.md#template-availability). For example, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` means that this template is allowed in any path under `/content/geometrixx-outdoors`.
 
-   ![](assets/chlimage_1-89.png)
+   ![chlimage_1-252](assets/chlimage_1-252.png)
 

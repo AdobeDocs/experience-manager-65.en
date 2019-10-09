@@ -1,0 +1,81 @@
+SYMBOLIC NAME                                      BUNDLE NAME                                                  VERSION
+com.adobe.cq.cq-experience-fragments               AEM - Experience Fragments                                   1.1.238
+com.adobe.cq.social.cq-social-calendar-api         AEM Communities Calendar - API Bundle                        1.5.9
+com.adobe.cq.social.cq-social-calendar-impl        AEM Communities Calendar - Impl Bundle                       1.5.18
+com.adobe.cq.social.cq-social-commons              AEM Communities Commons - Bundle                             1.9.81
+com.adobe.cq.social.cq-social-group                AEM Communities CommunityGroup - Bundle                      1.6.35
+com.adobe.cq.social.cq-social-console              AEM Communities Console - Bundle                             1.5.73
+com.adobe.cq.social.cq-social-enablement-api       AEM Communities Enablement Api - Bundle                      2.2.18
+com.adobe.cq.social.cq-social-enablement-impl      AEM Communities Enablement Impl - Bundle                     2.2.41
+com.adobe.cq.social.cq-social-journal              AEM Communities Journal - Bundle                             1.5.15
+com.adobe.cq.social.cq-social-members-api          AEM Communities Members API - Bundle                         1.2.4
+com.adobe.cq.social.cq-social-members-impl         AEM Communities Members Impl - Bundle                        1.2.8
+com.adobe.cq.social.cq-social-moderation           AEM Communities Moderation - Bundle                          2.4.13
+com.adobe.cq.social.cq-social-notifications-api    AEM Communities Notifications - API Bundle                   1.2.12
+com.adobe.cq.social.cq-social-notifications-impl   AEM Communities Notifications - IMPL Bundle                  1.2.25
+com.adobe.cq.social.cq-social-qna                  AEM Communities QnA - Bundle                                 1.6.11
+com.adobe.cq.social.cq-social-sync                 AEM Communities Sync - Bundle                                1.2.6
+com.adobe.cq.social.cq-social-user-ugc-management  AEM Communities User Ugc Moderation - Bundle                 1.1.1
+com.day.cq.cq-personalization                      AEM Personalization                                          5.11.66
+com.adobe.cq.cq-dam-mac-sync                       Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Bundle  1.4.38
+com.adobe.cq.dam.cq-scene7-imaging                 Adobe CQ DAM Scene7 Dynamic Imaging                          1.5.18
+com.day.cq.dam.cq-dam-stock-integration            Adobe CQ DAM Stock Integration                               1.0.4
+com.day.cq.cq-search                               Adobe CQ Search QueryBuilder                                 5.11.10
+com.day.cq.wcm.cq-wcm-translation                  Adobe CQ Translation Workflow                                1.4.178
+com.day.cq.wcm.cq-command                          Adobe Experience Manager Command Implementation              1.0.12
+afml                                               Adobe FO Markup Layout Library                               3.0.595117
+com.adobe.granite.auth.saml                        Adobe Granite - SAML 2.0 Authentication Handler              1.0.10.CQ640-B0003
+com.adobe.granite.acp.platform                     Adobe Granite ACP Platform                                   0.2.12
+com.adobe.granite.asset.core                       Adobe Granite Asset API Implementation                       2.2.56.CQ640-B0002
+com.adobe.granite.contexthub.commons               Adobe Granite ContextHub Commons                             0.1.58.CQ640-B0001
+com.adobe.granite.repository.hc.impl               Adobe Granite Health Checks for the Repository               1.0.54.CQ640-B0002
+com.adobe.granite.auth.oauth                       Adobe Granite OAuth Authentication Handler                   1.5.26.CQ640-B0007
+com.adobe.granite.rest.api                         Adobe Granite RESTful API Core                               1.1.10.CQ640-B0002
+com.day.cq.cq-replication                          Adobe Granite Replication                                    6.2.46.CQ640-B0008
+com.adobe.granite.ui.clientlibs                    Adobe Granite UI Clientlibs                                  1.0.76.CQ640-B0003
+com.adobe.granite.ui.clientlibs.processor.gcc      Adobe Granite UI Clientlibs - Google Closure Compiler        1.0.8.CQ640-B0002
+com.adobe.granite.ui.commons                       Adobe Granite UI Commons                                     5.10.2.CQ640-B0003
+com.adobe.granite.workflow.console                 Adobe Granite Workflow Console                               1.0.86.CQ640-B0006
+com.adobe.granite.workflow.core                    Adobe Granite Workflow Core                                  2.0.168.CQ640-B0007
+pdfcore                                            Adobe PDF Core                                               3.0.604301
+pdfencryption                                      Adobe PDF Encryption                                         3.0.604301
+PDFServices.extraction                             Adobe PDF Extraction services                                3.0.604301
+PDFServices.manipulations                          Adobe PDF Manipulation services                              3.0.604301
+PDFServices.security                               Adobe PDF Security services                                  3.0.604301
+org.apache.felix.webconsole.plugins.memoryusage    Apache Felix Web Console Memory Usage Plugin                 1.0.8
+org.apache.sling.models.api                        Apache Sling Models API                                      1.3.8
+org.apache.sling.models.impl                       Apache Sling Models Implementation                           1.4.10
+org.apache.sling.commons.threads                   Apache Sling Thread Support                                  3.2.18
+com.adobe.cq.cq-product-info-provider              CQ ProductInfo Provider                                      6.4.10
+com.adobe.cq.com.adobe.cq.projects.core            CQ Projects - Core Bundle                                    0.4.36
+com.adobe.dam.cq-dam-cfm-impl                      ContentFragmentManagement - Implementation                   0.10.74
+com.day.cq.dam.cq-dam-similaritysearch             DAM Similarity Search Bundle                                 5.11.42
+com.day.cq.dam.cq-dam-commons                      Day Communique 5 DAM Commons                                 5.11.184
+com.day.cq.dam.cq-dam-scene7                       Day Communique 5 DAM Scene7 Integration                      5.11.112
+com.day.cq.cq-replication-audit                    Day Communique 5 Replication - Auditing                      5.11.8
+com.day.cq.wcm.cq-wcm-core                         Day Communique 5 WCM Core Implementation                     5.11.264
+com.day.cq.wcm.cq-msm-core                         Day Communique 5 WCM Multi Site Management Core              5.11.56
+com.day.cq.dam.cq-dam-s7dam                        Day Communique 5.6 DAM s7 Dam Integration                    5.11.172
+com.adobe.granite.translation.connector.msft.core  Granite Translation - Microsoft Connector Core Bundle        1.3.20.CQ640-BOOO2
+com.fasterxml.jackson.core.jackson-annotations     Jackson-annotations                                          2.9.5
+com.fasterxml.jackson.core.jackson-core            Jackson-core                                                 2.9.5
+org.apache.jackrabbit.oak-api                      Oak API                                                      1.8.11
+org.apache.jackrabbit.oak-blob-plugins             Oak Blob Plugins                                             1.8.11
+org.apache.jackrabbit.oak-blob                     Oak Blob Store                                               1.8.11
+org.apache.jackrabbit.oak-authorization-cug        Oak CUG Authorization                                        1.8.11
+org.apache.jackrabbit.oak-commons                  Oak Commons                                                  1.8.11
+org.apache.jackrabbit.oak-store-composite          Oak Composite Store                                          1.8.11
+org.apache.jackrabbit.oak-core                     Oak Core                                                     1.8.11
+org.apache.jackrabbit.oak-core-spi                 Oak Core SPI                                                 1.8.11
+org.apache.jackrabbit.oak-store-document           Oak DocumentNodeStore                                        1.8.11
+org.apache.jackrabbit.oak-auth-external            Oak External Authentication Support                          1.8.11
+org.apache.jackrabbit.oak-jcr                      Oak JCR Binding                                              1.8.11
+org.apache.jackrabbit.oak-auth-ldap                Oak LDAP Authentication Support                              1.8.11
+org.apache.jackrabbit.oak-lucene                   Oak Lucene                                                   1.8.11
+org.apache.jackrabbit.oak-store-spi                Oak NodeStore and Commit SPI                                 1.8.11
+org.apache.jackrabbit.oak-query-spi                Oak Query SPI                                                1.8.11
+org.apache.jackrabbit.oak-security-spi             Oak Security SPI                                             1.8.11
+org.apache.jackrabbit.oak-segment-tar              Oak Segment Tar                                              1.8.11
+org.apache.jackrabbit.oak-solr-osgi                Oak Solr OSGi                                                1.8.11
+com.adobe.granite.repository                       Oak content repository                                       1.4.90
+com.fasterxml.jackson.core.jackson-databind        jackson-databind                                             2.9.5

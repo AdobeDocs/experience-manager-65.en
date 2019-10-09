@@ -1,0 +1,72 @@
+SYMBOLIC NAME                                     BUNDLE NAME                                                   VERSION
+com.adobe.cq.inbox.cq-inbox-ui                    AEM - Inbox UI                                                1.1.10
+com.adobe.cq.cq-analytics-integration             AEM 6 Analytics Integration Bundle                            1.2.18
+com.adobe.cq.social.cq-social-activitystreams     AEM Communities ActivityStreams - Bundle                      1.5.21
+com.adobe.cq.social.cq-social-as-provider         AEM Communities AdobeSocial Resource Provider - Bundle        1.4.5
+com.adobe.cq.social.cq-social-badging-impl        AEM Communities Badging - Bundle                              1.2.11
+com.adobe.cq.social.cq-social-commons             AEM Communities Commons - Bundle                              1.9.54
+com.adobe.cq.social.cq-social-console             AEM Communities Console - Bundle                              1.5.64
+com.adobe.cq.social.cq-social-enablement-impl     AEM Communities Enablement Impl - Bundle                      2.2.36
+com.adobe.cq.social.cq-social-handlebars          AEM Communities Handlebars Scripting Engine - Bundle          1.9.7
+com.adobe.cq.social.cq-social-members-impl        AEM Communities Members Impl - Bundle                         1.2.6
+com.adobe.cq.social.cq-social-messaging-api       AEM Communities Messaging - API Bundle                        1.5.7
+com.adobe.cq.social.cq-social-messaging-impl      AEM Communities Messaging - Impl Bundle                       1.5.12
+com.adobe.cq.social.cq-social-moderation          AEM Communities Moderation - Bundle                           2.4.11
+com.adobe.cq.social.cq-social-ms-provider         AEM Communities Mongo Storage Resource Provider - Bundle      1.1.6
+com.adobe.cq.social.cq-social-notifications-impl  AEM Communities Notifications - IMPL Bundle                   1.2.21
+com.adobe.cq.social.cq-social-rdb-provider        AEM Communities Relational Social Resource Provider - Bundle  1.2.3
+com.adobe.cq.social.cq-social-scf-api             AEM Communities SCF - API Bundle                              2.1.7
+com.adobe.cq.social.cq-social-scf-impl            AEM Communities SCF - Impl Bundle                             2.1.10
+com.adobe.cq.social.cq-social-srp-impl            AEM Communities SRP - Impl Bundle                             1.3.18
+com.adobe.cq.social.cq-social-scoring-impl        AEM Communities Scoring - Bundle                              2.2.11
+com.day.cq.cq-personalization                     AEM Personalization                                           5.11.58
+com.adobe.cq.com.adobe.cq.ui.commons              AEM UI WCM Commons Bundle                                     1.2.28.CQ640-B0003
+com.adobe.cq.cq-dam-mac-sync                      Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Bundle   1.4.24
+com.adobe.cq.dam.cq-scene7-imaging                Adobe CQ DAM Scene7 Dynamic Imaging                           1.5.14
+com.adobe.cq.cq-experiencelog                     Adobe CQ Experience Log Client Bundle                         1.3.4
+com.day.cq.wcm.cq-wcm-translation                 Adobe CQ Translation Workflow                                 1.4.162
+com.adobe.granite.auth.ims                        Adobe Granite IMSAuthentication Handler                       1.1.14.CQ640-B0004
+com.adobe.granite.omnisearch.core                 Adobe Granite Omnisearch Core Module                          1.0.86.CQ640-B0003
+com.adobe.granite.ui.commons                      Adobe Granite UI Commons                                      5.10.2.CQ640-B0001
+com.adobe.granite.workflow.console                Adobe Granite Workflow Console                                1.0.86.CQ640-B0004
+com.adobe.granite.workflow.core                   Adobe Granite Workflow Core                                   2.0.168.CQ640-B0004
+com.adobe.cq.adobeims.core                        Adobe IMS Core Bundle                                         1.0.20
+org.apache.jackrabbit.jackrabbit-api              Apache Jackrabbit API                                         2.16.1
+com.adobe.cq.cq-product-info-provider             CQ ProductInfo Provider                                       6.4.4
+com.adobe.cq.com.adobe.cq.projects.core           CQ Projects - Core Bundle                                     0.4.30
+com.adobe.dam.cq-dam-cfm-impl                     ContentFragmentManagement - Implementation                    0.10.66
+com.day.cq.dam.cq-dam-similaritysearch            DAM Similarity Search Bundle                                  5.11.38
+com.day.cq.dam.cq-dam-api                         Day Communique 5 DAM API                                      5.11.70
+com.day.cq.dam.cq-dam-commons                     Day Communique 5 DAM Commons                                  5.11.172
+com.day.cq.dam.cq-dam-core                        Day Communique 5 DAM Core Implementation                      5.11.306.NPR-21507-B0006
+com.day.cq.dam.cq-dam-indesign                    Day Communique 5 DAM InDesign Integration                     5.11.32
+com.day.cq.dam.cq-dam-scene7                      Day Communique 5 DAM Scene7 Integration                       5.11.106
+com.day.cq.mcm.cq-mcm-salesforce                  Day Communique 5 MCM Salesforce.com Integration               1.5.10
+com.day.cq.cq-mailer                              Day Communique 5 Mailer                                       5.12.6
+com.day.cq.wcm.cq-wcm-designimporter              Day Communique 5 WCM Design Importer                          1.5.14
+com.day.cq.wcm.cq-msm-core                        Day Communique 5 WCM Multi Site Management Core               5.11.38
+com.day.cq.wcm.cq-wcm-webservice-support          Day Communique 5 WCM Webservice Support                       5.11.26
+com.day.cq.dam.cq-dam-s7dam                       Day Communique 5.6 DAM s7 Dam Integration                     5.11.154.NPR-21507-B0002
+org.apache.jackrabbit.jackrabbit-data             Jackrabbit Data                                               2.16.1
+org.apache.jackrabbit.jackrabbit-jcr-commons      Jackrabbit JCR Commons                                        2.16.1
+org.apache.jackrabbit.jackrabbit-spi              Jackrabbit SPI                                                2.16.1
+org.apache.jackrabbit.jackrabbit-spi-commons      Jackrabbit SPI Commons                                        2.16.1
+org.apache.jackrabbit.jackrabbit-webdav           Jackrabbit WebDAV Library                                     2.16.1
+org.apache.jackrabbit.oak-api                     Oak API                                                       1.8.3
+org.apache.jackrabbit.oak-blob-plugins            Oak Blob Plugins                                              1.8.3
+org.apache.jackrabbit.oak-blob                    Oak Blob Store                                                1.8.3
+org.apache.jackrabbit.oak-authorization-cug       Oak CUG Authorization                                         1.8.3
+org.apache.jackrabbit.oak-commons                 Oak Commons                                                   1.8.3
+org.apache.jackrabbit.oak-store-composite         Oak Composite Store                                           1.8.3
+org.apache.jackrabbit.oak-core                    Oak Core                                                      1.8.3
+org.apache.jackrabbit.oak-core-spi                Oak Core SPI                                                  1.8.3
+org.apache.jackrabbit.oak-store-document          Oak DocumentNodeStore                                         1.8.3
+org.apache.jackrabbit.oak-auth-external           Oak External Authentication Support                           1.8.3
+org.apache.jackrabbit.oak-jcr                     Oak JCR Binding                                               1.8.3
+org.apache.jackrabbit.oak-auth-ldap               Oak LDAP Authentication Support                               1.8.3
+org.apache.jackrabbit.oak-lucene                  Oak Lucene                                                    1.8.3
+org.apache.jackrabbit.oak-store-spi               Oak NodeStore and Commit SPI                                  1.8.3
+org.apache.jackrabbit.oak-query-spi               Oak Query SPI                                                 1.8.3
+org.apache.jackrabbit.oak-security-spi            Oak Security SPI                                              1.8.3
+org.apache.jackrabbit.oak-segment-tar             Oak Segment Tar                                               1.8.3
+org.apache.jackrabbit.oak-solr-osgi               Oak Solr OSGi                                                 1.8.3

@@ -3,15 +3,16 @@ title: Transaction Reports Billable APIs
 seo-title: Transaction Reports Billable APIs
 description: List of all the APIs that are accounted as transactions
 seo-description: List of all the APIs that are accounted as transactions
-uuid: d2f38ae4-75df-426f-af34-52ae6fb324f3
+uuid: 8861e325-7393-4d2c-9ec1-17f391ca3909
+contentOwner: khsingh
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
-docset: aem65
-
+discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 ---
 
-# Transaction Reports Billable APIs{#transaction-reports-billable-apis}
+# Transaction Reports Billable APIs {#transaction-reports-billable-apis}
+
+List of all the APIs that are accounted as transactions
 
 AEM Forms provides several APIs to submit forms, process documents, and render documents. Some APIs are accounted as transactions and others are free to use. This document provides a list of all the APIs that are accounted as transactions in a transaction report. Here are a few common scenarios where a billable API is used:
 
@@ -24,10 +25,9 @@ AEM Forms provides several APIs to submit forms, process documents, and render d
 * Using the assign task step and doc services steps of AEM Workflows
 * Using adaptive form within an adaptive form
 
-Billing APIs does not account for the number of pages, the length of a document or form, or final format of the rendered document. A transaction report divides the transactions into two categories: Documents Rendered and Forms Submitted.
+Billing APIs does not account for the number of pages, the length of a document or form, or final format of the rendered document. A transaction report divides the transactions into three categories: Documents Processed, Documents Rendered, and Forms Submitted.
 
-* **Forms Submitted: **When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an adaptive form, HTML5 Form, PDF Forms, and form set are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.  
-
+* **Forms Submitted:** When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an adaptive form, HTML5 Form, PDF Forms, and form set are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
 * **Documents Rendered:** Generating a document by combining a template and data, digitally signing or certifying a document, using a billable document services APIs for document services, or converting a document from one format to another are accounted as documents rendered.
 
 >[!NOTE]
@@ -38,10 +38,10 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### Generate PDF Service {#generate-pdf-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
@@ -105,10 +105,10 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### Distiller Service {#distiller-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
@@ -130,10 +130,10 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### Document of Record Service (DoR Service) {#document-of-record-service-dor-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
@@ -149,10 +149,10 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### Output Service {#output-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
@@ -192,10 +192,10 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### Forms Service {#forms-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
@@ -217,10 +217,10 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### Convert PDF Service {#convert-pdf-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
@@ -242,10 +242,10 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### Barcoded Forms Service {#barcoded-forms-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
@@ -261,17 +261,17 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### Assembler Service {#assembler-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td> 
-   <td>Executes the specified DDX document and returns an <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html" title="class in com.adobe.fd.assembler.client">AssemblerResult</a> object containing the resultant documents. </td> 
+   <td>Executes the specified DDX document and returns an <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> object containing the resultant documents. </td> 
    <td>Documents Processed</td> 
    <td>The following operations are not accounted as transactions:
     <ul> 
@@ -281,7 +281,7 @@ Billing APIs does not account for the number of pages, the length of a document 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
-   <td>Executes the specified DDX document and returns an <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html" title="class in com.adobe.fd.assembler.client">AssemblerResult</a> object containing the resultant documents. </td> 
+   <td>Executes the specified DDX document and returns an <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> object containing the resultant documents. </td> 
    <td>Documents Processed</td> 
    <td>All the input file formats that PDF Generator, Forms, and Output services support, Assembler service supports all those formats as output file formats. </td> 
   </tr>
@@ -302,10 +302,10 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 ### PDF Utility Service  {#pdf-utility-service}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
@@ -319,24 +319,43 @@ Billing APIs does not account for the number of pages, the length of a document 
  </tbody>
 </table>
 
+### Doc Assurance Service {#doc-assurance-service}
+
+<table> 
+ <tbody>
+  <tr>
+   <td><p>API</p> </td> 
+   <td>Description</td> 
+   <td>Transaction report category</td> 
+   <td>Additional Information</td> 
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a></td> 
+   <td>The API enables you to secure your document. You can use the API to sign, certify, reader extend, or encrypt a PDF document. </td> 
+   <td>Documents Processed</td> 
+   <td>Only sign and certify operation of the <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> are billed.</td> 
+  </tr>
+ </tbody>
+</table>
+
 ## Billable Data Capture APIs {#billable-data-capture-apis}
 
-All the submission events of adaptive forms, HTML5 Forms, and form set are accounted as transactions. By default, submission of a PDF Form is not accounted as a transaction. Use the provided [transaction recorder API](transaction-reports-billable-apis.md#recordingbillableapisastransactionsforcustomcode) to record a PDF Forms submission as a transaction.
+All the submission events of adaptive forms, HTML5 Forms, and form set are accounted as transactions. By default, submission of a PDF Form is not accounted as a transaction. Use the provided [transaction reports API](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) to recording a PDF Forms submission as a transaction.
 
 ### Adaptive Forms {#adaptive-forms}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="15%"><p>Use Case</p> </td> 
-   <td width="15%">Description</td> 
-   <td width="15%">Transaction report category</td> 
+   <td><p>Use Case</p> </td> 
+   <td>Description</td> 
+   <td>Transaction report category</td> 
    <td>Additional Information</td> 
   </tr>
   <tr>
    <td>Submitting an adaptive form</td> 
    <td>Submits an adaptive form to configured submit action. </td> 
-   <td width="20%">Forms Submitted</td> 
+   <td>Forms Submitted</td> 
    <td>
     <ul> 
      <li>Successful submissions account for single or two transactions. The number of transactions counted depends upon the type of submit action used for submission. For example, sending PDF through email submit action accounts for two counts of transactions. One transaction for form submission and another for PDF generated using the Document of Record (DOR) service. </li> 
@@ -348,16 +367,16 @@ All the submission events of adaptive forms, HTML5 Forms, and form set are accou
 
 ### HTML5 Forms {#html-forms}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="15%"><p>Use Case</p> </td> 
-   <td width="15%">Description </td> 
-   <td width="15%">Transaction report category</td> 
+   <td><p>Use Case</p> </td> 
+   <td>Description </td> 
+   <td>Transaction report category</td> 
    <td>Additional Information</td> 
   </tr>
   <tr>
-   <td width="30%">Submitting an HTML5 Form</td> 
+   <td>Submitting an HTML5 Form</td> 
    <td>Submits an HTML5 Form to submit URL configured in the form.</td> 
    <td>Forms Submitted</td> 
    <td> </td> 
@@ -367,16 +386,16 @@ All the submission events of adaptive forms, HTML5 Forms, and form set are accou
 
 ### Form set {#form-set}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td width="15%">Description</td> 
-   <td width="15%">Transaction report category</td> 
+   <td><p>API</p> </td> 
+   <td>Description</td> 
+   <td>Transaction report category</td> 
    <td>Additional Information</td> 
   </tr>
   <tr>
-   <td width="30%">Submitting a form set</td> 
+   <td>Submitting a form set</td> 
    <td>Submits form set to the submit URL configured in the form set.</td> 
    <td>Forms Submitted</td> 
    <td>
@@ -394,16 +413,16 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ### Interactive Communication - Web Channel {#interactive-communication-web-channel}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
   </tr>
   <tr>
-   <td width="30%">Rendering a web channel</td> 
+   <td>Rendering a web channel</td> 
    <td>Opens the web version of an interactive communication.</td> 
    <td>Documents Rendered</td> 
    <td>
@@ -415,16 +434,16 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ### Interactive Communication - Print Channel {#interactive-communication-print-channel}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
+   <td><p>API</p> </td> 
    <td>Description</td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
   </tr>
   <tr>
-   <td width="30%"><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td> 
    <td>Generates the PDF version of an interactive communication.</td> 
    <td>Documents Rendered</td> 
    <td>
@@ -436,15 +455,15 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ### Form-centric AEM Workflows on OSGi  {#form-centric-aem-workflows-on-osgi}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>Use case</p> </td> 
+   <td><p>Use case</p> </td> 
    <td>Transaction report category</td> 
    <td>Additional Information</td> 
   </tr>
   <tr>
-   <td width="30%">Submitting an Assign Task step</td> 
+   <td>Submitting an Assign Task step</td> 
    <td>Forms Submitted</td> 
    <td>
     <div> 
@@ -465,11 +484,11 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## Recording billable APIs as transactions for custom code {#recording-billable-apis-as-transactions-for-custom-code}
 
-Actions like submitting a PDF Form, using Agent UI to preview an interactive communication, using non-standard form submission, and custom implementations are not accounted as transactions. AEM Forms provides an API to record such actions as transactions. You can call the API from your custom implementations to [record a transaction](/forms/using/record-transaction-custom-implementation.md).
+Actions like submitting a PDF Form, using Agent UI to preview an interactive communication, using non-standard form submission, and custom implementations are not accounted as transactions. AEM Forms provides an API to record such actions as transactions. You can call the API from your custom implementations to [record a transaction](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
 
 ## Related Articles {#related-articles}
 
-* [Transaction Reports Overview](../../forms/using/transaction-reports-overview.md)
-* [Viewing and Understanding a Transaction Reports](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Record a transaction for custom implementations](/forms/using/record-transaction-custom-implementation.md)
+* [Transaction Reports Overview](/help/forms/using/transaction-reports-overview.md)
+* [Viewing and Understanding a Transaction Reports](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
 

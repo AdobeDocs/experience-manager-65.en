@@ -1,0 +1,202 @@
+SYMBOLIC NAME                                         BUNDLE NAME                                                    VERSION
+com.day.cq.dam.cq-dam-stock-integration               Adobe CQ DAM Stock Integration                                 1.0.4
+com.adobe.granite.acp.platform                        Adobe Granite ACP Platform                                     0.2.20
+com.adobe.stock.api                                   Adobe Stock Apis SDK                                           1.0.2
+com.adobe.cq.dam.cq-dam-ui-models                     AEM - DAM Sling Model Bundle                                   0.1.6
+com.day.cq.com.adobe.cq.wcm.ui.components             AEM WCM Components - UI Utilities                              1.2.2
+com.day.cq.wcm.cq-msm-move-api                        Day Communique 5 WCM Multi Site Management Move Handle API     0.0.1.CQ640-B0001
+com.day.cq.remote.content.renderer                    Remote Content Renderer                                        2.0.4
+com.adobe.cq.cq-experience-fragments                  AEM - Experience Fragments                                     1.1.240
+com.adobe.cq.inbox.cq-inbox-ui                        AEM - Inbox UI                                                 1.1.10
+com.adobe.cq.cq-socialmedia-integration               AEM - Social Media Integration                                 1.1.18
+com.adobe.cq.cq-target-integration                    AEM 6 - Adobe Target integration                               1.2.48
+com.adobe.cq.cq-analytics-integration                 AEM 6 Analytics Integration Bundle                             1.2.20
+com.adobe.cq.social.cq-social-activitystreams         AEM Communities ActivityStreams - Bundle                       1.5.28
+com.adobe.cq.social.cq-social-as-provider             AEM Communities AdobeSocial Resource Provider - Bundle         1.4.8
+com.adobe.cq.social.cq-social-badging-impl            AEM Communities Badging - Bundle                               1.2.11
+com.adobe.cq.social.cq-social-calendar-api            AEM Communities Calendar - API Bundle                          1.5.9
+com.adobe.cq.social.cq-social-calendar-impl           AEM Communities Calendar - Impl Bundle                         1.5.18
+com.adobe.cq.social.cq-social-commons                 AEM Communities Commons - Bundle                               1.9.84
+com.adobe.cq.social.cq-social-group                   AEM Communities CommunityGroup - Bundle                        1.6.38
+com.adobe.cq.social.cq-social-console                 AEM Communities Console - Bundle                               1.5.76
+com.adobe.cq.social.cq-social-enablement-api          AEM Communities Enablement Api - Bundle                        2.2.18
+com.adobe.cq.social.cq-social-enablement-impl         AEM Communities Enablement Impl - Bundle                       2.2.41
+com.adobe.cq.social.cq-social-reporting-management    AEM Communities Enablement Reporting Management- Bundle        1.2.3
+com.adobe.cq.social.cq-social-filelibrary             AEM Communities File Library - Bundle                          1.4.12
+com.adobe.cq.social.cq-social-forum                   AEM Communities Forum - Bundle                                 1.7.10
+com.adobe.cq.social.cq-social-gamification-api        AEM Communities Gamification API - Bundle                      1.1.8
+com.adobe.cq.social.cq-social-handlebars              AEM Communities Handlebars Scripting Engine - Bundle           1.9.13
+com.adobe.cq.social.cq-social-ideation-impl           AEM Communities Ideation - Bundle                              1.1.11
+com.adobe.cq.social.cq-social-ideation-api            AEM Communities Ideation API - Bundle                          1.1.7
+com.adobe.cq.social.cq-social-jcr-provider            AEM Communities JCR Resource Provider (6.2+ glue) - Bundle     1.3.6
+com.adobe.cq.social.cq-social-jcr-provider-common     AEM Communities JCR Resource Provider Common Code - Bundle     1.3.7
+com.adobe.cq.social.cq-social-journal                 AEM Communities Journal - Bundle                               1.5.15
+com.adobe.cq.social.cq-social-members-api             AEM Communities Members API - Bundle                           1.2.4
+com.adobe.cq.social.cq-social-members-impl            AEM Communities Members Impl - Bundle                          1.2.8
+com.adobe.cq.social.cq-social-messaging-api           AEM Communities Messaging - API Bundle                         1.5.8
+com.adobe.cq.social.cq-social-messaging-impl          AEM Communities Messaging - Impl Bundle                        1.5.13
+com.adobe.cq.social.cq-social-moderation              AEM Communities Moderation - Bundle                            2.4.13
+com.adobe.cq.social.cq-social-ms-provider             AEM Communities Mongo Storage Resource Provider - Bundle       1.1.8
+com.adobe.cq.social.cq-social-notifications-api       AEM Communities Notifications - API Bundle                     1.2.12
+com.adobe.cq.social.cq-social-notifications-impl      AEM Communities Notifications - IMPL Bundle                    1.2.25
+com.adobe.cq.social.cq-social-qna                     AEM Communities QnA - Bundle                                   1.6.11
+com.adobe.cq.social.cq-social-rdb-provider            AEM Communities Relational Social Resource Provider - Bundle   1.2.12
+com.adobe.cq.social.cq-social-review                  AEM Communities Review - Bundle                                1.5.6
+com.adobe.cq.social.cq-social-scf-api                 AEM Communities SCF - API Bundle                               2.1.8
+com.adobe.cq.social.cq-social-scf-impl                AEM Communities SCF - Impl Bundle                              2.1.13
+com.adobe.cq.social.cq-social-srp-impl                AEM Communities SRP - Impl Bundle                              1.3.20
+com.adobe.cq.social.cq-social-srp-api                 AEM Communities SRP Base - API Bundle                          1.3.19
+com.adobe.cq.social.cq-social-scoring-impl            AEM Communities Scoring - Bundle                               2.2.11
+com.adobe.cq.social.cq-social-graph-impl              AEM Communities SocialGraph Impl - Bundle                      1.3.7
+com.adobe.cq.social.cq-social-sync                    AEM Communities Sync - Bundle                                  1.2.6
+com.adobe.cq.social.cq-social-ugcbase-api             AEM Communities UGC Base - API Bundle                          2.4.13
+com.adobe.cq.social.cq-social-ugcbase-impl            AEM Communities UGC Base - Impl Bundle                         2.4.20
+com.adobe.cq.social.cq-social-ugc-search-collections  AEM Communities UGC SearchCollections - Bundle                 2.4.16
+com.adobe.cq.social.cq-social-user-ugc-management     AEM Communities User Ugc Moderation - Bundle                   1.1.1
+com.adobe.cq.com.adobe.cq.msm.ui                      AEM MSM - UI Utilities                                         0.1.14
+com.day.cq.cq-personalization                         AEM Personalization                                            5.11.66
+com.adobe.cq.screens.com.adobe.cq.screens             AEM Screens - Core                                             1.3.172
+com.adobe.cq.com.adobe.cq.sites.ui                    AEM Sites - UI Utilities                                       0.2.22
+com.adobe.cq.com.adobe.cq.ui.commons                  AEM UI WCM Commons Bundle                                      1.2.30.CQ640-B0003
+com.adobe.cq.com.adobe.cq.wcm.style                   AEM WCM Style API                                              1.0.16
+com.adobe.xmp.worker.files.native.fragment.linux      Adobe - XMPFiles Worker platform fragment linux                1.0.8
+com.adobe.xmp.worker.files.native.fragment.macosx     Adobe - XMPFiles Worker platform fragment macosx               1.0.8
+com.adobe.xmp.worker.files.native.fragment.win        Adobe - XMPFiles Worker platform fragment win                  1.0.8
+com.adobe.cq.cq-dtm                                   Adobe CQ - DTM Integration Bundle                              0.4.12
+com.adobe.cq.dtm-reactor.core                         Adobe CQ Activation DTM Core Bundle                            1.1.6
+com.adobe.cq.dtm-reactor.ui                           Adobe CQ Activation DTM UI Bundle                              1.0.10
+com.adobe.cq.cq-content-insight                       Adobe CQ Content Insight and Recommendations                   1.4.6
+com.adobe.cq.dam.cq-dam-svg-handler                   Adobe CQ Creative Cloud APIs - DAM SVG Asset Handler           0.3.4
+com.adobe.cq.cq-dam-mac-sync                          Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Bundle    1.4.40
+com.adobe.cq.cq-dam-mac-sync-helper                   Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Helper    1.4.16
+com.day.cq.dam.cq-dam-entitlement                     Adobe CQ DAM Entitlement Implementation                        1.2.14
+com.adobe.cq.dam.cq-scene7-imaging                    Adobe CQ DAM Scene7 Dynamic Imaging                            1.5.20
+com.adobe.cq.cq-experiencelog                         Adobe CQ Experience Log Client Bundle                          1.3.6
+com.adobe.cq.export.json                              Adobe CQ JSON Exporter                                         0.1.10
+com.adobe.cq.export.json.impl                         Adobe CQ JSON Exporter Implementation                          0.1.8
+com.day.cq.cq-search                                  Adobe CQ Search QueryBuilder                                   5.11.10
+com.day.cq.wcm.cq-wcm-translation                     Adobe CQ Translation Workflow                                  1.4.180
+com.day.cq.wcm.cq-wcm-foundation                      Adobe CQ WCM Foundation Components                             5.11.54
+com.adobe.cq.wcm.cq-wcm-launches-core                 Adobe Communique 5 WCM Launches Core                           5.12.10
+com.day.cq.wcm.cq-command                             Adobe Experience Manager Command Implementation                1.0.12
+afml                                                  Adobe FO Markup Layout Library                                 3.0.595117
+com.adobe.granite.auth.saml                           Adobe Granite - SAML 2.0 Authentication Handler                1.0.10.CQ640-B0008
+com.adobe.granite.asset.core                          Adobe Granite Asset API Implementation                         2.2.56.CQ640-B0002
+com.day.cq.cq-authhandler                             Adobe Granite Authentication Handler                           5.6.90
+com.adobe.granite.crx-packagemgr                      Adobe Granite CRX Package Manager                              1.2.60.CQ640-B0005
+com.adobe.granite.crxde-lite                          Adobe Granite CRXDE Lite                                       1.1.34.CQ640-B0001
+com.adobe.granite.csrf                                Adobe Granite CSRF Framework                                   1.0.18.CQ640-B0004
+com.adobe.granite.contexthub.commons                  Adobe Granite ContextHub Commons                               0.1.58.CQ640-B0001
+com.adobe.granite.crypto                              Adobe Granite Crypto Support                                   3.4.12.CQ640-B0002
+com.adobe.granite.repository.hc.impl                  Adobe Granite Health Checks for the Repository                 1.0.54.CQ640-B0002
+com.adobe.granite.auth.ims                            Adobe Granite IMSAuthentication Handler                        1.1.14.CQ640-B0008
+com.adobe.granite.monitoring.core                     Adobe Granite Monitoring Support                               1.0.6.CQ640-B0004
+com.adobe.granite.auth.oauth                          Adobe Granite OAuth Authentication Handler                     1.5.26.CQ640-B0007
+com.adobe.granite.omnisearch.core                     Adobe Granite Omnisearch Core Module                           1.0.86.CQ640-B0003
+com.adobe.granite.operations.ui.core                  Adobe Granite Operations Dashboard UI Core Package             0.0.58.CQ640-B0002
+com.adobe.granite.rest.api                            Adobe Granite RESTful API Core                                 1.1.10.CQ640-B0002
+com.day.cq.cq-replication                             Adobe Granite Replication                                      6.2.46.CQ640-B0012
+com.adobe.granite.security.user                       Adobe Granite Security Module                                  0.4.50.CQ640-B0002
+com.adobe.granite.security.ui                         Adobe Granite Security UI Module                               1.0.44.CQ640-B0001
+com.adobe.granite.timeline                            Adobe Granite Timeline Support                                 1.0.20.CQ640-B0002
+com.adobe.granite.ui.clientlibs                       Adobe Granite UI Clientlibs                                    1.0.76.CQ640-B0003
+com.adobe.granite.ui.clientlibs.processor.gcc         Adobe Granite UI Clientlibs - Google Closure Compiler          1.0.8.CQ640-B0002
+com.adobe.granite.ui.commons                          Adobe Granite UI Commons                                       5.10.2.CQ640-B0005
+com.adobe.granite.workflow.api                        Adobe Granite Workflow API                                     1.0.18.CQ640-B0002
+com.adobe.granite.workflow.console                    Adobe Granite Workflow Console                                 1.0.86.CQ640-B0006
+com.adobe.granite.workflow.core                       Adobe Granite Workflow Core                                    2.0.168.CQ640-B0008
+com.day.cq.cq-xssprotection                           Adobe Granite XSS Protection                                   5.7.4.CQ640-B0004
+com.adobe.cq.adobeims.core                            Adobe IMS Core Bundle                                          1.0.22
+pdfcore                                               Adobe PDF Core                                                 3.0.611029
+pdfencryption                                         Adobe PDF Encryption                                           3.0.611029
+PDFServices.extraction                                Adobe PDF Extraction services                                  3.0.611029
+PDFServices.manipulations                             Adobe PDF Manipulation services                                3.0.611029
+PDFServices.security                                  Adobe PDF Security services                                    3.0.611029
+com.adobe.xmp.core                                    Adobe XMP Core Duo                                             1.0.6
+org.apache.aries.jmx.whiteboard                       Apache Aries Whiteboard support for JMX DynamicMBean services  1.2.0
+org.apache.commons.codec                              Apache Commons Codec                                           1.11.0
+org.apache.commons.io                                 Apache Commons IO                                              2.6.0
+com.day.commons.osgi.wrapper.fop                      Apache FOP bundle                                              1.16.0
+org.apache.felix.http.jetty                           Apache Felix Http Jetty                                        4.0.6
+org.apache.felix.http.whiteboard                      Apache Felix Http Whiteboard                                   4.0.0
+org.apache.felix.webconsole.plugins.memoryusage       Apache Felix Web Console Memory Usage Plugin                   1.0.8
+org.apache.felix.webconsole                           Apache Felix Web Management Console                            4.3.12
+org.apache.jackrabbit.jackrabbit-api                  Apache Jackrabbit API                                          2.16.4
+org.apache.jackrabbit.vault                           Apache Jackrabbit FileVault Core Bundle                        3.2.8
+org.apache.sling.api                                  Apache Sling API                                               2.20.0
+org.apache.sling.distribution.core                    Apache Sling Distribution Core                                 0.3.4
+org.apache.sling.engine                               Apache Sling Engine Implementation                             2.6.16
+org.apache.sling.event                                Apache Sling Event Support                                     4.2.12
+org.apache.sling.i18n                                 Apache Sling I18N Support                                      2.5.14
+org.apache.sling.installer.factory.configuration      Apache Sling Installer Configuration Admin Support             1.1.3.B001
+org.apache.sling.installer.provider.jcr               Apache Sling JCR Installer                                     3.1.27.B001
+org.apache.sling.jcr.resource                         Apache Sling JCR Resource Resolver                             3.0.16
+org.apache.sling.models.api                           Apache Sling Models API                                        1.3.8
+org.apache.sling.models.impl                          Apache Sling Models Implementation                             1.4.10
+org.apache.sling.resourceresolver                     Apache Sling Resource Resolver                                 1.6.8
+org.apache.sling.scripting.sightly.compiler           Apache Sling Scripting HTL Compiler                            1.0.22.1_4_0
+org.apache.sling.scripting.sightly                    Apache Sling Scripting HTL Engine                              1.0.54.1_4_0
+org.apache.sling.scripting.sightly.compiler.java      Apache Sling Scripting HTL Java Compiler                       1.0.26.1_4_0
+org.apache.sling.security                             Apache Sling Security                                          1.1.16
+org.apache.sling.servlets.resolver                    Apache Sling Servlet Resolver                                  2.5.4
+org.apache.sling.commons.threads                      Apache Sling Thread Support                                    3.2.18
+org.apache.tika.core                                  Apache Tika core                                               1.20.0
+org.apache.tika.parsers                               Apache Tika parsers                                            1.20.0
+com.adobe.cq.cq-product-info-provider                 CQ ProductInfo Provider                                        6.4.12
+com.adobe.cq.com.adobe.cq.projects.core               CQ Projects - Core Bundle                                      0.4.36
+com.adobe.dam.cq-dam-cfm-impl                         ContentFragmentManagement - Implementation                     0.10.80
+com.day.cq.dam.cq-dam-similaritysearch                DAM Similarity Search Bundle                                   5.11.44
+day-commons-jstl                                      Day Commons Library - JavaServer Pages Standard Tag Library    1.2.2
+com.day.cq.cq-compat-codeupgrade                      Day Communique 5 Code Upgrade service                          1.7.84.B0001
+com.day.cq.cq-commons                                 Day Communique 5 Commons Library                               5.11.18
+com.day.cq.dam.cq-dam-api                             Day Communique 5 DAM API                                       5.11.72
+com.day.cq.dam.cq-dam-handler                         Day Communique 5 DAM Asset Handler Implementation              5.11.26
+com.day.cq.dam.cq-dam-commons                         Day Communique 5 DAM Commons                                   5.11.192
+com.day.cq.dam.cq-dam-core                            Day Communique 5 DAM Core Implementation                       5.11.356
+com.day.cq.dam.cq-dam-indesign                        Day Communique 5 DAM InDesign Integration                      5.11.34
+com.day.cq.dam.cq-dam-scene7                          Day Communique 5 DAM Scene7 Integration                        5.11.124
+com.day.cq.mcm.cq-mcm-salesforce                      Day Communique 5 MCM Salesforce.com Integration                1.5.12
+com.day.cq.cq-mailer                                  Day Communique 5 Mailer                                        5.14.2
+com.day.cq.cq-replication-audit                       Day Communique 5 Replication - Auditing                        5.11.8
+com.day.cq.cq-security                                Day Communique 5 Security                                      5.11.18
+com.day.cq.wcm.cq-wcm-content-sync                    Day Communique 5 WCM Content Sync Extensions                   5.11.14
+com.day.cq.wcm.cq-wcm-core                            Day Communique 5 WCM Core Implementation                       5.11.284
+com.day.cq.wcm.cq-wcm-designimporter                  Day Communique 5 WCM Design Importer                           1.5.20
+com.day.cq.wcm.cq-msm-api                             Day Communique 5 WCM Multi Site Management API                 5.11.2.CQ640-B0003
+com.day.cq.wcm.cq-msm-core                            Day Communique 5 WCM Multi Site Management Core                5.11.74
+com.day.cq.wcm.cq-wcm-taglib                          Day Communique 5 WCM Tag Lib                                   5.12.10
+com.day.cq.wcm.cq-wcm-webservice-support              Day Communique 5 WCM Webservice Support                        5.11.26
+com.day.cq.wcm.cq-wcm-workflow                        Day Communique 5 WCM Workflow                                  5.11.18.CQ640-B0003
+com.day.cq.workflow.cq-workflow-api                   Day Communique 5 Workflow API                                  6.2.2
+com.day.cq.workflow.cq-workflow-impl                  Day Communique 5 Workflow Implementation                       6.2.14
+com.day.cq.dam.cq-dam-s7dam                           Day Communique 5.6 DAM s7 Dam Integration                      5.11.176
+com.adobe.granite.logging                             Granite Logging - Analysis                                     1.0.26.CQ640-B0002
+com.adobe.granite.translation.connector.msft.core     Granite Translation - Microsoft Connector Core Bundle          1.3.20.CQ640-R0004
+org.apache.jackrabbit.jackrabbit-data                 Jackrabbit Data                                                2.16.4
+org.apache.jackrabbit.jackrabbit-jcr-commons          Jackrabbit JCR Commons                                         2.16.4
+org.apache.jackrabbit.jackrabbit-spi                  Jackrabbit SPI                                                 2.16.4
+org.apache.jackrabbit.jackrabbit-spi-commons          Jackrabbit SPI Commons                                         2.16.4
+org.apache.jackrabbit.jackrabbit-webdav               Jackrabbit WebDAV Library                                      2.16.4
+com.fasterxml.jackson.core.jackson-annotations        Jackson-annotations                                            2.9.6
+com.fasterxml.jackson.core.jackson-core               Jackson-core                                                   2.9.6
+org.apache.jackrabbit.oak-api                         Oak API                                                        1.8.13
+org.apache.jackrabbit.oak-blob-plugins                Oak Blob Plugins                                               1.8.13
+org.apache.jackrabbit.oak-blob                        Oak Blob Store                                                 1.8.13
+org.apache.jackrabbit.oak-authorization-cug           Oak CUG Authorization                                          1.8.13
+org.apache.jackrabbit.oak-commons                     Oak Commons                                                    1.8.13
+org.apache.jackrabbit.oak-store-composite             Oak Composite Store                                            1.8.13
+org.apache.jackrabbit.oak-core                        Oak Core                                                       1.8.13
+org.apache.jackrabbit.oak-core-spi                    Oak Core SPI                                                   1.8.13
+org.apache.jackrabbit.oak-store-document              Oak DocumentNodeStore                                          1.8.13
+org.apache.jackrabbit.oak-auth-external               Oak External Authentication Support                            1.8.13
+org.apache.jackrabbit.oak-jcr                         Oak JCR Binding                                                1.8.13
+org.apache.jackrabbit.oak-auth-ldap                   Oak LDAP Authentication Support                                1.8.13
+org.apache.jackrabbit.oak-lucene                      Oak Lucene                                                     1.8.13
+org.apache.jackrabbit.oak-store-spi                   Oak NodeStore and Commit SPI                                   1.8.13
+org.apache.jackrabbit.oak-query-spi                   Oak Query SPI                                                  1.8.13
+org.apache.jackrabbit.oak-security-spi                Oak Security SPI                                               1.8.13
+org.apache.jackrabbit.oak-segment-tar                 Oak Segment Tar                                                1.8.13
+org.apache.jackrabbit.oak-solr-osgi                   Oak Solr OSGi                                                  1.8.13
+com.adobe.granite.repository                          Oak content repository                                         1.4.90
+com.fasterxml.jackson.core.jackson-databind           jackson-databind                                               2.9.6
+org.mongodb.mongo-java-driver                         mongo-java-driver                                              3.6.4

@@ -3,20 +3,16 @@ title: Rendering Forms
 seo-title: Rendering Forms
 description: null
 seo-description: null
-uuid: 42fdb4bf-4800-4ad7-bcbc-6ee450621a99
+uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: f5694b5c-7b98-459a-9b58-2759a066b787
-docset: aem65
-
+discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 ---
 
-# Rendering Forms{#rendering-forms}
-
-## Rendering Forms {#rendering-forms}
+# Rendering Forms {#rendering-forms}
 
 **About the Forms service**
 
@@ -30,27 +26,27 @@ Depending upon the type of client application, you can write the form to a clien
 * The web service (Java Base64) examples are a Java servlet.
 * The web service (MTOM) examples are a console application (not all quick starts have a MTOM example).
 
-  ***Note**: For information about creating a web application that uses java servlets to invoke the Forms service, see [Creating Web Applications that Renders Forms](/programming-with-aem-forms/rendering-forms-rendering-forms creating-web-applications-renders-forms.md#creating_web_applications_that_renders_forms). *
+  ***Note**: For information about creating a web application that uses java servlets to invoke the Forms service, see [Creating Web Applications that Renders Forms](/help/forms/developing/creating-web-applications-renders-forms.md).*
 
   You can pass a form design (an XDP file) or a PDF document to the Forms service using one of two ways:
 
 * You can reference the form design using a URL value. This approach involves using a `URLSpec` object. The content root is passed to the Forms service using the `URLSpec` object’s `setContentRootURI` method. The Form design name ( `formQuery`) is passed as a separate parameter. The two values are concatenated to get the absolute reference to the form design. (Most of the quick starts located in the *Rendering Forms* section use this approach.)
-* You can pass a `com.adobe.idp.Document` that contains the form design to the Forms service. Two new methods named `renderPDFForm2` and `renderHTMLForm2` accept a `com.adobe.idp.Document` object that contains a form design. (See [Passing Documents to the Forms Service](/programming-with-aem-forms/rendering-forms-rendering-forms passing-documents-forms-service-passing.md#passing_documents_to_the_forms_service).)
+* You can pass a `com.adobe.idp.Document` that contains the form design to the Forms service. Two new methods named `renderPDFForm2` and `renderHTMLForm2` accept a `com.adobe.idp.Document` object that contains a form design. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md)
 
-  You can accomplish these tasks using the Forms service:
+You can accomplish these tasks using the Forms service:
 
-* Render interactive PDF forms. (See [Rendering Interactive PDF Forms](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-interactive-pdf-forms-rendering.md#rendering_interactive_pdf_forms).)
-* Render forms at the client. (See [Rendering Forms at the Client](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-forms-client-rendering-forms.md#rendering_forms_at_the_client).)
-* Render forms based on fragments. (See [Rendering Forms Based on Fragments](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-forms-based-fragments-rendering.md#rendering_forms_based_on_fragments).)
-* Render rights-enabled forms. (See [Rendering Rights-Enabled Forms](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-rights-enabled-forms-rendering.md#rendering_rights_enabled_forms).)
-* Render forms as HTML. (See [Rendering Forms as HTML](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-forms-html-rendering-forms rendering-forms-html-rendering-forms.md#rendering_forms_as_html).)
-* Rendering HTML Forms Using Custom CSS Files ([Rendering HTML Forms Using Custom CSS Files](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-html-forms-using-custom.md#rendering_html_forms_using_custom_css_files).)
-* Handle submitted forms. (See [Handling Submitted Forms](/programming-with-aem-forms/rendering-forms-rendering-forms handling-submitted-forms-handling-submitted.md#handling_submitted_forms).)
-* Creating PDF Documents with Submitted XML Data. (See [Creating PDF Documents with Submitted XML Data](/programming-with-aem-forms/rendering-forms-rendering-forms creating-pdf-documents-submitted-xml.md#creating_pdf_documents_with_submitted_xml_data).)
-* Prepopulate forms. (See [Prepopulating Forms with Flowable Layouts](/programming-with-aem-forms/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating.md#prepopulating_forms_with_flowable_layouts).)
-* Passing Documents. (See [Passing Documents to the Forms Service](/programming-with-aem-forms/rendering-forms-rendering-forms passing-documents-forms-service-passing.md#passing_documents_to_the_forms_service).)
-* Calculate form data. (See [Calculating Form Data](/programming-with-aem-forms/rendering-forms-rendering-forms calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculating_form_data).)
-* Optimize an application. (See [Optimizing the Performance of the Forms Service](/programming-with-aem-forms/rendering-forms-rendering-forms optimizing-performance-forms-service-optimizing.md#optimizing_the_performance_of_the_forms_service).)
+* Render interactive PDF forms. (See [Rendering Interactive PDF Forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+* Render forms at the client. (See [Rendering Forms at the Client](/help/forms/developing/rendering-forms-client.md).)
+* Render forms based on fragments. (See [Rendering Forms Based on Fragments](/help/forms/developing/rendering-forms-based-fragments.md).)
+* Render rights-enabled forms. (See [Rendering Rights-Enabled Forms](/help/forms/developing/rendering-rights-enabled-forms.md).)
+* Render forms as HTML. (See [Rendering Forms as HTML](/help/forms/developing/rendering-forms-html.md).)
+* Rendering HTML Forms Using Custom CSS Files ([Rendering HTML Forms Using Custom CSS Files](/help/forms/developing/rendering-html-forms-using-custom.md).)
+* Handle submitted forms. (See [Handling Submitted Forms](/help/forms/developing/handling-submitted-forms.md).)
+* Creating PDF Documents with Submitted XML Data. (See [Creating PDF Documents with Submitted XML Data](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
+* Prepopulate forms. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+* Passing Documents. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md)
+* Calculate form data. (See [Calculating Form Data](/help/forms/developing/calculating-form-data.md).)
+* Optimize an application. (See [Optimizing the Performance of the Forms Service](/help/forms/developing/optimizing-performance-forms-service.md).)
 
-  ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)*.**
+  ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*
 

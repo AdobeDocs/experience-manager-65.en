@@ -3,17 +3,15 @@ title: Layout Design
 seo-title: Layout Design
 description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
 seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
-uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
+uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
-docset: aem65
-
+discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 ---
 
-# Layout Design{#layout-design}
+# Layout Design {#layout-design}
 
 XFA form templates or XDPs are the templates for:
 
@@ -44,111 +42,6 @@ Follow these steps to create layouts for letters/print channel of Interactive Co
     1. Break a section into subforms if the section contains elements at specific positions, and these elements contain large amounts of data. Then arrange the subforms to achieve the desired behavior.
     1. For Primary residence section, add a placeholder target area. This placeholder is bound to fragment Primary residence at the time of letter/Interactive Communication designing.
     1. Upload the layout (and the fragment, if any, that uses the layout) into the AEM Forms server.
-
-### Use subform in an XDP template {#usesubformxdp}
-
-Once you analyze the layout required to create your Interactive Communication, you can create subforms in the XDP template using Forms Designer. Blank subform components used in the XDP template result in the display of target areas in the Print channel of the Interactive Communication.
-
->[!NOTE]
->
->Add content to the Print channel of the Interactive Communication instead of adding content to the subform component in the XDP template. Add content to the target areas in the Print channel using [document fragments, charts, images](../../forms/using/create-interactive-communication.md#main-pars-header-741471925), and layout fragments.
-
-Perform the following steps to use subform in an XDP template:
-
-1. Open the Forms Designer, select **File** &gt; **New** &gt; **Use a blank form**, tap **Next**, and then tap **Finish** to open the form for template creation.
-
-   Ensure that the **Object Library** and **Object** options are selected from the **Window** menu.
-
-1. Drag-and-drop the **Subform** component from the **Object Library** to the form.
-
-   ![Component Designer](assets/subform_component_designer_new.png)
-
-1. Select the subform to display the options for the subform in the **Object** window in the right pane.
-1. Select the **Subform** tab and select **Flowed** from the **Content** drop-down list. Drag the left endpoint of the subform to adjust the length.
-
-   ![Flowed Subform](assets/object_subform_flowed_new.png)
-
-1. In the **Binding** tab:
-
-    1. Specify a name for the subform in the **Name** field.
-    1. Select **No data binding** from the **Data Binding** drop-down list.
-
-1. Similarly, select the root subform from the left pane.
-
-   ![Root Subform](assets/root_subform_designer_new.png)
-
-1. Select the **Subform** tab and select **Flowed** from the **Content** drop-down list. In the **Bindings** tab:
-
-    1. Specify a name for the subform in the **Name** field.
-    1. Select **No data binding** from the **Data Binding** drop-down list.
-
-   Repeat steps 2 to 5 to add more subforms to the XDP template. Add [text, document fragments, images, and charts](../../forms/using/create-interactive-communication.md#main-pars-header-741471925) to the target areas only while authoring the Interactive Communication.
-
-1. Select **File** &gt; **Save As** to save the file on the local file system:
-
-    1. Navigate to the location to save the file and specify a name for the XDP template.
-    1. Select **.xdp** from the **Save as type** drop-down list.
-    
-    1. Tap **Save**.
-
-### Use Image Field component in an XDP template {#use-image-field-component-in-an-xdp-template}
-
-Use the Image Field or Subform component in the XDP template and add an image while authoring the Interactive Communication.
-
->[!NOTE]
->
->Add image to the Print channel of the Interactive Communication instead of adding image to the Image Field or Subform component in the XDP template. For more information, see [Adding content to the Interactive Communication](../../forms/using/create-interactive-communication.md#step2).
-
-Perform the following steps to use Image Field component in an XDP template:
-
-1. Drag-and-drop the **Image Field** component from the **Object Library** to the form.
-1. Select the subform to display the options for the subform in the **Object** window in the right pane.
-1. In the **Binding** tab:
-
-    1. Specify a name for the image field in the **Name** field.
-    1. Select **No data binding** from the **Data Binding** drop-down list.
-
-### Create XDP template for layout fragments {#xdplayoutfragments}
-
-Use the Table component in Forms Designer to create layout fragments and then use them to create tables while authoring the Print channel of Interactive Communication. Using layout fragments to create tables ensure that the table content retains the structure when the web channel is auto-generated using the print channel.
-
->[!NOTE]
->
->Enter text in the table cells or [create binding with the form data model objects](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) only while authoring the Interactive Communication.
-
-Perform the following steps to use the Table component in the XDP template using Forms Designer:
-
-1. Drag-and-drop the **Table** component from the **Object Library** to the form.
-1. In the **Insert Table** dialog:
-
-    1. Specify the number of rows and columns for the table.
-    1. Select the **Include Header Row in Table** checkbox to include a row for the table header.
-    1. Tap **OK**.
-
-1. Tap **+** in the left pane next to the name of the table, right-click cell names included in the header and other rows, and select **Rename Object** to rename the table cells.
-1. Click the table header text fields in the **Design View** and rename them.
-1. Drag-and-drop the **Text Field** component from the **Object Library** to each table cell in the **Design View**. Perform this step to be able to bind table cells with the form data model objects while authoring the Interactive Communication.
-
-   ![Text fields in a table](assets/text_fields_table_new.png)
-
-1. Select the name of the row from the left pane and select **Object** &gt; **Binding** &gt; **Repeat Row for Each Data Item**. Perform this step to ensure that if a binding is created between the table cells of this row with form data model objects of collection type, the table row is automatically repeated for each data item available in the database.
-
-   Enter text in the table cells or [create binding with the form data model objects](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) only while authoring the Interactive Communication.
-
-1. Select **File** &gt; **Save As** to save the file on the local file system:
-
-    1. Navigate to the location to save the file and specify the name for the XDP template.
-    1. Select **.xdp** from the **Save as type** drop-down list.
-    
-    1. Tap **Save**.
-
-### Upload XDP template to the AEM Forms server {#uploadxdptemplate}
-
-Once you have created an XDP template using the Forms Designer, you must upload it to AEM Forms server so that the template is available for use while creating the Interactive Communication.
-
-1. Select **Forms** &gt; **Forms & Documents**.
-1. Tap **Create** &gt; **File Upload**.
-1. Navigate to the location of the XDP template on the local file system and tap **Open** to import the XDP template to the AEM Forms server.
 
 ## Using schema {#using-schema}
 
@@ -187,35 +80,35 @@ Use a subform if you want to capture multiple module content in a top-down verti
 
 Use a field if you want to capture module data or data dictionary element data into your layout's schema (because fields are bound to data) or to display module content on a master page. Remember that content in a master page cannot flow with body page content, so you must ensure that the image field is used as a header logo. This table provides more criteria for deciding when to use a subform or a field in a layout.
 
-<table cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top"><p><strong>Use a subform when</strong></p> </td> 
-   <td valign="top"><p><strong>Use a text field when</strong></p> </td> 
+   <td><p><strong>Use a subform when</strong></p> </td> 
+   <td><p><strong>Use a text field when</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top"><p>It contains a combination of elements, such as a Last Name and First Name</p> </td> 
-   <td valign="top"><p>It contains a single element, such as a Policy Number.</p> </td> 
+   <td><p>It contains a combination of elements, such as a Last Name and First Name</p> </td> 
+   <td><p>It contains a single element, such as a Policy Number.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top"><p>It includes multiple paragraphs</p> </td> 
-   <td valign="top"><p>Text is wrapped and justified</p> </td> 
+   <td><p>It includes multiple paragraphs</p> </td> 
+   <td><p>Text is wrapped and justified</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top"><p>Repeating, optional, and conditional data groups are bound to subforms, to reduce the risk of design errors that could occur if scripts are used to achieve the same results</p> </td> 
-   <td valign="top"><p>Elements such as your organization’s logo and address appear on all pages of a letter/Interactive Communication. In this case, create form fields for those elements and place them on the master page. If you set the field binding to "No Data Binding", the no fields appear as relatable fields in the Letter/Interactive Communication Editor. If you want to relate some type of content to these fields, they must have binding.</p> <p>If your company address contains more than one line of data, use text field with the "Allow Multiple Lines" option to represent the address on the layout.</p> <p>If a text field's data type is set to plain text, the plain text version of the module output is used instead of the rich text version (all formatting is discarded). To preserve the formatting, set the text field’s data type to rich text.</p> </td> 
+   <td><p>Repeating, optional, and conditional data groups are bound to subforms, to reduce the risk of design errors that could occur if scripts are used to achieve the same results</p> </td> 
+   <td><p>Elements such as your organization’s logo and address appear on all pages of a letter/Interactive Communication. In this case, create form fields for those elements and place them on the master page. If you set the field binding to "No Data Binding", the no fields appear as relatable fields in the Letter/Interactive Communication Editor. If you want to relate some type of content to these fields, they must have binding.</p> <p>If your company address contains more than one line of data, use text field with the "Allow Multiple Lines" option to represent the address on the layout.</p> <p>If a text field's data type is set to plain text, the plain text version of the module output is used instead of the rich text version (all formatting is discarded). To preserve the formatting, set the text field’s data type to rich text.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top"><p>Text is flowed</p> </td> 
-   <td valign="top"><p>Text fields and image fields are used on master pages. Master pages cannot use subforms as target areas.</p> </td> 
+   <td><p>Text is flowed</p> </td> 
+   <td><p>Text fields and image fields are used on master pages. Master pages cannot use subforms as target areas.</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top"><p>Objects are grouped and organized without binding the subform to a data element</p> </td> 
-   <td valign="top"><p> </p> </td> 
+   <td><p>Objects are grouped and organized without binding the subform to a data element</p> </td> 
+   <td><p> </p> </td> 
   </tr> 
   <tr> 
-   <td valign="top"><p>There is a text field inside the subform. The subform can grow and not overwrite other objects below it on the layout.</p> </td> 
-   <td valign="top"><p>You need easy access to its data in the post process.</p> </td> 
+   <td><p>There is a text field inside the subform. The subform can grow and not overwrite other objects below it on the layout.</p> </td> 
+   <td><p>You need easy access to its data in the post process.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -228,5 +121,5 @@ When elements such as your organization’s logo and address appear on all pages
 
 Use the layout’s server render format to Dynamic XML Form; otherwise, any letters/Interactive Communications based on this layout cannot render correctly. By default, the server render format in Forms Designer is set to Dynamic XML Form. To ensure that you are using the correct format:
 
-* In Designer, click **File **&gt; **Form Properties **&gt; **Defaults**, and ensure that the PDF Render/Format setting is set to Dynamic XML Form.
+* In Designer, click **[!UICONTROL File > Form Properties > Default]**, and ensure that the PDF Render/Format setting is set to Dynamic XML Form.
 

@@ -3,22 +3,20 @@ title: Creating a custom toolbar action
 seo-title: Creating a custom toolbar action
 description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
 seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
-uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
+uuid: 6761f389-1baa-4a59-a6e0-0f86f70fc692
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
-discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
-docset: aem65
-
+discoiquuid: b80a2bfe-6f57-4229-a9ee-1ec87f3c3306
 ---
 
-# Creating a custom toolbar action{#creating-a-custom-toolbar-action}
+# Creating a custom toolbar action {#creating-a-custom-toolbar-action}
 
 ## Prerequisites {#prerequisite}
 
 Before you create a custom toolbar action, make yourself familiar with [Using Client Side Libraries](/help/sites-developing/clientlibs.md) and [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## What is an action <br> {#what-is-an-action-br}
+## What is an action {#what-is-an-action-br}
 
 An adaptive form provides a toolbar that lets a form author configure a set of options. These options are defined as actions for the adaptive form. Click the Edit button in the Toolbar for Panel to set the actions supported by adaptive forms.
 
@@ -26,11 +24,11 @@ An adaptive form provides a toolbar that lets a form author configure a set of o
 
 Besides the set of actions provided by default, you can create custom actions in the toolbar. For example, you can add an action to enable the user to review all the adaptive form fields before a form is submitted.
 
-## Steps to create a custom action in an adaptive form <br> {#steps}
+## Steps to create a custom action in an adaptive form {#steps}
 
 To illustrate the creation of a custom toolbar action, the following steps guide you to create a button for end users to review all the adaptive form fields before submitting a filled form.
 
-1. All the default actions supported by adaptive forms are present in `/libs/fd/af/components/actions` folder. In CRXDE, copy the `fileattachmentlisting` node from `/libs/fd/af/components/actions/fileattachmentlisting` to `/apps/customaction`.
+1. All the default actions supported by adaptive forms are present in `/libs/fd/af/components/actions` folder. In CRXDE, copy the `fileattachmentlisting` node from `/libs/fd/af/components/actions/fileattachmentlisting` to `/apps/customaction`.  
 
 1. After copying the node to `apps/customaction` folder, rename the node name to `reviewbeforesubmit`. Also, change the `jcr:title` and `jcr:description` properties of the node.
 
@@ -54,11 +52,11 @@ To illustrate the creation of a custom toolbar action, the following steps guide
    ```
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <guide:initializeBean name="guideField" className="com.adobe.aemds.guide.common.GuideButton"/>
-
+   
    <c:if test="${not isEditMode}">
            <cq:includeClientLib categories="reviewsubmitclientlibruntime" />
    </c:if>
-
+   
    <%--- BootStrap Modal Dialog  --------------%>
    <div class="modal fade" id="reviewSubmit" tabindex="-1">
        <div class="modal-dialog">
@@ -68,29 +66,29 @@ To illustrate the creation of a custom toolbar action, the following steps guide
                </div>
                <div class="modal-body">
                    <div class="modal-list">
-                       <table class="table table-bordered">
-                           <tr class="name">
-                               <td class="reviewlabel col-md-3 active">
+                       <table>
+                           <tr>
+                               <td>
                                    <label>Your Name is: </label>
                                </td>
                            </tr>
-                           <tr class="pan">
-                               <td class="reviewlabel col-md-3 active">
+                           <tr>
+                               <td>
                                    <label>Your Pan Number is: </label>
                                </td>
                            </tr>
-                           <tr class="dob">
-                               <td class="reviewlabel col-md-3 active">
+                           <tr>
+                               <td>
                                    <label>Your Date Of Birth is: </label>
                                </td>
                            </tr>
-                           <tr class="80cdeclaration">
-                               <td class="reviewlabel col-md-3 active">
+                           <tr>
+                               <td>
                                    <label>Your Total 80C Declaration Amount is: </label>
                                </td>
                            </tr>
-                           <tr class="rentpaid">
-                               <td class="reviewlabel col-md-3 active">
+                           <tr>
+                               <td>
                                    <label>Your Total HRA Amount is: </label>
                                </td>
                            </tr>
@@ -110,7 +108,7 @@ To illustrate the creation of a custom toolbar action, the following steps guide
    Add the following code in the `ReviewBeforeSubmit.js` file.
 
    ```
-
+   
    /*anonymous function to handle show of review before submit view */
    $(function () {
        if($("div.reviewbeforesubmit button[id*=reviewbeforesubmit]").length > 0) {
@@ -126,7 +124,7 @@ To illustrate the creation of a custom toolbar action, the following steps guide
                    }
                }, this);
                result = guideBridge.getElementProperty(options);
-
+   
                $('#reviewSubmit .reviewlabel').each(function(index, item){
                    var data = ((result.data[index] == null) ? "No Data Filled" : result.data[index]);
                    if($(this).next().hasClass("reviewlabelvalue")){
@@ -151,12 +149,12 @@ To illustrate the creation of a custom toolbar action, the following steps guide
        text-align: right;
        padding:2px;
    }
-
+   
    .modal-list .reviewlabelvalue {
        border: #cde0ec 1px solid;
        padding:2px;
    }
-
+   
    /* Adding icon for this action in mobile devices */
    /* This is the glyphicon provided by bootstrap eye-open */
    /* .<type> .iconButton-icon */
@@ -166,7 +164,7 @@ To illustrate the creation of a custom toolbar action, the following steps guide
        font-family: 'Glyphicons Halflings';
        font-style: normal;
    }
-
+   
    .reviewbeforesubmit .iconButton-icon:before {
        content: "\e105"
    }

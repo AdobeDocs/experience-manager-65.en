@@ -3,14 +3,12 @@ title: How to Audit User Management Operations in AEM
 seo-title: How to Audit User Management Operations in AEM
 description: Learn how to audit User Management Operations in AEM.
 seo-description: Learn how to audit User Management Operations in AEM.
-uuid: 9d177afb-172c-4858-a678-254c97cfa472
+uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
-docset: aem65
-
+discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 ---
 
 # How to Audit User Management Operations in AEM{#how-to-audit-user-management-operations-in-aem}
@@ -31,15 +29,14 @@ By default, the entries will be written to the `error.log` file. To make monitor
 
 In order to redirect the logging output to a separate log file, you'll need to create a new **Apache Sling Logging Logger** configuration. We'll use `useraudit.log` as the name of the separate file in the example below.
 
-1. Go to the Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
+1. Go to the Web Console by browsing to `https://<serveraddress>:<serverport>/system/console/configMgr`
 1. Search for **Apache Sling Logging Logger Configuration**. Then, press the "+" in the right hand side of the entry to create a new factory configuration.
 1. Create the following configuration:
 
     * **Log Level:** Information
     * **Log File:** logs/useraudit.log
-    * **Message Pattern:** level default  
-    
-    * **Logger: **com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+    * **Message Pattern:** level default 
+    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
    In order to enter both loggers into the **Logger** field, you need to enter the name of the first, then create another field by pressing the "+" button and entering the name of the second logger.
 
@@ -77,7 +74,7 @@ If configured correctly, the output should look like this:
 19.05.2017 15:44:10.405 *INFO* [0:0:0:0:0:0:0:1 [1495197850401] POST /home/users/3/35XVpVtLRx4a5J9gKrVG.rw.userprops.html HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction Password for User 'john' was changed
 ```
 
-## Classic UI {#classic-ui}
+## Classic UI
 
 In the Classic UI, information about CRUD operations recorded in the audit log relating to adding and deleting users is limited to the ID of the user affected and when the changed happened.
 
@@ -86,4 +83,3 @@ For example:
 ```
 10.05.2019 18:01:09.123 INFO [0:0:0:0:0:0:0:1 [1557491469096] POST /libs/cq/security/authorizables/POST HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction User 'test' was created
 ```
-

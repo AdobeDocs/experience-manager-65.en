@@ -3,16 +3,14 @@ title: Performance tuning of AEM Forms server
 seo-title: Performance tuning of AEM Forms server
 description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
 seo-description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
-uuid: bf23b62c-7559-4726-8f4e-cc8b1457e501
+uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
-discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
-docset: aem65
-
+discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 ---
 
-# Performance tuning of AEM Forms server{#performance-tuning-of-aem-forms-server}
+# Performance tuning of AEM Forms server {#performance-tuning-of-aem-forms-server}
 
 This article discusses strategies and best practices you can implement to reduce bottlenecks and optimize the performance of your AEM Forms deployment.
 
@@ -32,14 +30,14 @@ The available options for caching are as follows:
 The default cache settings for AEM Forms may not be good enough to achieve optimal performance. Therefore, it is recommended to use the following settings:
 
 * **Cache Strategy**: Aggressive
-* **Cache size **(in terms of number of forms): As required
+* **Cache size** (in terms of number of forms): As required
 * **Max Object Size**: As required
 
 ![Mobile Forms Configurations](assets/snap.png)
 
 >[!NOTE]
 >
->If you use AEM Dispatcher to cache adaptive forms, it also caches adaptive form which contains forms with pre-filled data. If such forms are served from AEM Dispatcher cache, it may lead to serving pre-filled or stale data to the users. So, use AEM Dispatcher to cache adaptive forms which do not use pre-filled data. Moreover, a dispatcher cache does not auto-invalidate cached fragments. So, do not use it to cache form fragments. For such forms and fragments, use [Adaptive forms cache](../../forms/using/configure-adaptive-forms-cache.md).
+>If you use AEM Dispatcher to cache adaptive forms, it also caches adaptive form which contains forms with pre-filled data. If such forms are served from AEM Dispatcher cache, it may lead to serving pre-filled or stale data to the users. So, use AEM Dispatcher to cache adaptive forms which do not use pre-filled data. Moreover, a dispatcher cache does not auto-invalidate cached fragments. So, do not use it to cache form fragments. For such forms and fragments, use [Adaptive forms cache](/help/forms/using/configure-adaptive-forms-cache.md).
 
 ## JVM parameters {#jvm-parameters}
 
@@ -84,7 +82,8 @@ Apache can communicate to CRX using the HTTP protocol. The configurations are fo
    >
    >For Linux, the default `APACHE_HOME` is `/etc/httpd/`.
 
-1. Configure the proxy on port 4502 of crx.  
+1. Configure the proxy on port 4502 of crx. 
+
    Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
 
    ```java
@@ -138,7 +137,7 @@ To improve the performance, you can direct the antivirus software to exclude the
 
 * AEM Installation directory. If it is not possible to exclude complete directory, exclude the following:
 
-    * [AEM installation directory]\crx-repository\temp  
+    * [AEM installation directory]\crx-repository\temp 
     * [AEM installation directory]\crx-repository\repository
     * [AEM installation directory]\crx-repository\launchpad
 
@@ -150,18 +149,18 @@ To improve the performance, you can direct the antivirus software to exclude the
 
 * **(AEM Forms on JEE only)** Global Document Storage (GDS) directory. The default location is:
 
-    * (JBoss) [appserver root]/server/[server]/svcnative/DocumentStorage
-    * (WebLogic) [appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage
-    * (WebSphere) [appserver root]/installedApps/adobe/[server]/DocumentStorage
+    * (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
+    * (WebLogic) `[appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage`
+    * (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
 
 * **(AEM Forms on JEE only)** AEM Forms server logs and temporary directory. The default location is:
 
-    * Server logs - [AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs
+    * Server logs - `[AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs`
     * Temp directory - [AEM Forms installation directory]\temp
 
 >[!NOTE]
 >
->* If you are using a different location for GDS and temporary directory, open [AdminUI](https://[server]:[port]/adminui), navigate to **Home &gt; Settings &gt; Core System Settings &gt; Core Configurations** to confirm the location in use.
+>* If you are using a different location for GDS and temporary directory, open the AdminUI at `https://[server]:[port]/adminui)`, navigate to **Home &gt; Settings &gt; Core System Settings &gt; Core Configurations** to confirm the location in use.
 >
 >* If the AEM Forms server performs slow even after excluding the suggested directories, then exclude the Java executable file (java.exe) also.   
 >

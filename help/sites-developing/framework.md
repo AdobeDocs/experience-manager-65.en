@@ -3,24 +3,22 @@ title: AEM Tagging Framework
 seo-title: AEM Tagging Framework
 description: Tag content and leverage the AEM Tagging infrastructure
 seo-description: Tag content and leverage the AEM Tagging infrastructure
-uuid: f80a2cb1-359f-41dd-a70b-626d92cc3d4c
+uuid: 55ba5977-217b-4b0f-a794-ddb9216ee62b
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
-docset: aem65
-
+discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 ---
 
 # AEM Tagging Framework{#aem-tagging-framework}
 
 To tag content and leverage the AEM Tagging infrastructure :
 
-* The tag must exist as a node of type ` [cq:Tag](#tags-cq-tag-node-type)` under the [taxonomy root node](#taxonomy-root-node)
+* The tag must exist as a node of type [`cq:Tag`](#tags-cq-tag-node-type) under the [taxonomy root node](#taxonomy-root-node)
 
-* The tagged content node's NodeType must include the [ `cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin
-* The [TagID](#tagid) is added to the content node's [ `cq:tags`](#tagged-content-cq-tags-property) property and resolves to a node of type ` [cq:Tag](#tags-cq-tag-node-type)`
+* The tagged content node's NodeType must include the [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin
+* The [TagID](#tagid) is added to the content node's [`cq:tags`](#tagged-content-cq-tags-property) property and resolves to a node of type [`cq:Tag`](#tags-cq-tag-node-type)
 
 ## Tags : cq:Tag Node Type  {#tags-cq-tag-node-type}
 
@@ -37,12 +35,12 @@ The tagging framework also provides the ability to restrict authors and site vis
 ### Tag Characteristics {#tag-characteristics}
 
 * node type is `cq:Tag`
-* node name is a component of the ` [TagID](#tagid)`
-* the ` [TagID](#tagid)` always includes a [namespace](#tag-namespace)
+* node name is a component of the [`TagID`](#tagid)
+* the [`TagID`](#tagid) always includes a [namespace](#tag-namespace)
 
-* optional `jcr:title` property (the Title to display in the UI)
+* optional `jcr:title` property (the Title to display in the UI)  
 
-* optional `jcr:description` property
+* optional `jcr:description` property  
 
 * when containing child nodes, is referred to as a [container tag](#container-tags)
 * is stored in the repository below a base path called the [taxonomy root node](#taxonomy-root-node)
@@ -53,7 +51,7 @@ A TagID identifies a path which resolves to a tag node in the repository.
 
 Typically, the TagID is a shorthand TagID starting with the namespace or it can be an absolute TagID starting from the [taxonomy root node](#taxonomy-root-node).
 
-When content is tagged, if it does not yet exist, the ` [cq:tags](#tagged-content-cq-tags-property)` property is added to the content node and the TagID is added to the property's String array value.
+When content is tagged, if it does not yet exist, the [`cq:tags`](#tagged-content-cq-tags-property) property is added to the content node and the TagID is added to the property's String array value.
 
 The TagID consists of a [namespace](#tag-namespace) followed by the local TagID. [Container tags](#container-tags) have sub-tags that represent a hierarchical order in the taxonomy. Sub-tags can be used to reference tags same as any local TagID. For example tagging content with "fruit" is allowed, even if it is a container tag with sub-tags, such as "fruit/apple" and "fruit/banana".
 
@@ -83,64 +81,64 @@ If the tag ID contains a colon ":", the colon separates the namespace from the t
 
 The standard and only location of tags is below /content/cq:tags.
 
-Tag referencing non-existing paths or paths that do not point to a cq:Tag node are considered invalid and are ignored.
-
+Tag referencing non-existing paths or paths that do not point to a cq:Tag node are considered invalid and are ignored.  
+  
 The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository:
 
-The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository :
-The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository :
+The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository :  
+The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository : 
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>TagID<br /> </strong></td>
-   <td><strong>Namespace</strong></td>
-   <td><strong>Local ID</strong></td>
-   <td><strong>Container tag(s)</strong></td>
-   <td><strong>Leaf tag</strong></td>
-   <td><strong>Repository<br /> Absolute tag path</strong></td>
-  </tr>
-  <tr>
-   <td>dam:fruit/apple/braeburn</td>
-   <td>dam</td>
-   <td>fruit/apple/braeburn</td>
-   <td>fruit, apple</td>
-   <td>braeburn</td>
-   <td>/content/cq:tags/dam/fruit/apple/braeburn</td>
-  </tr>
-  <tr>
-   <td>color/red</td>
-   <td>default</td>
-   <td>color/red</td>
-   <td>color</td>
-   <td>red</td>
-   <td>/content/cq:tags/default/color/red</td>
-  </tr>
-  <tr>
-   <td>sky</td>
-   <td>default</td>
-   <td>sky</td>
-   <td>(none)</td>
-   <td>sky</td>
-   <td>/content/cq:tags/default/sky</td>
-  </tr>
-  <tr>
-   <td>dam:</td>
-   <td>dam</td>
-   <td>(none)</td>
-   <td>(none)</td>
-   <td>(none, the namespace)</td>
-   <td>/content/cq:tags/dam</td>
-  </tr>
-  <tr>
-   <td>/content/cq:tags/category/car</td>
-   <td>category</td>
-   <td>car</td>
-   <td>car</td>
-   <td>car</td>
-   <td>/content/cq:tags/category/car</td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td><strong>TagID<br /> </strong></td> 
+   <td><strong>Namespace</strong></td> 
+   <td><strong>Local ID</strong></td> 
+   <td><strong>Container tag(s)</strong></td> 
+   <td><strong>Leaf tag</strong></td> 
+   <td><strong>Repository<br /> Absolute tag path</strong></td> 
+  </tr> 
+  <tr> 
+   <td>dam:fruit/apple/braeburn</td> 
+   <td>dam</td> 
+   <td>fruit/apple/braeburn</td> 
+   <td>fruit, apple</td> 
+   <td>braeburn</td> 
+   <td>/content/cq:tags/dam/fruit/apple/braeburn</td> 
+  </tr> 
+  <tr> 
+   <td>color/red</td> 
+   <td>default</td> 
+   <td>color/red</td> 
+   <td>color</td> 
+   <td>red</td> 
+   <td>/content/cq:tags/default/color/red</td> 
+  </tr> 
+  <tr> 
+   <td>sky</td> 
+   <td>default</td> 
+   <td>sky</td> 
+   <td>(none)</td> 
+   <td>sky</td> 
+   <td>/content/cq:tags/default/sky</td> 
+  </tr> 
+  <tr> 
+   <td>dam:</td> 
+   <td>dam</td> 
+   <td>(none)</td> 
+   <td>(none)</td> 
+   <td>(none, the namespace)</td> 
+   <td>/content/cq:tags/dam</td> 
+  </tr> 
+  <tr> 
+   <td>/content/cq:tags/category/car</td> 
+   <td>category</td> 
+   <td>car</td> 
+   <td>car</td> 
+   <td>car</td> 
+   <td>/content/cq:tags/category/car</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ### Localization of Tag Title {#localization-of-tag-title}
@@ -160,7 +158,7 @@ Also, denying read permissions for certains tags or namespaces will control the 
 
 A typical practice includes:
 
-* Allowing the `tag-administrators` group/role write access to all namespaces (add/modify under `/content/cq:tags`). This group comes with AEM out-of-the-box.
+* Allowing the `tag-administrators` group/role write access to all namespaces (add/modify under `/content/cq:tags`). This group comes with AEM out-of-the-box.  
 
 * Allowing users/authors read access to all the namespaces that should be readable to them (mostly all).
 * Allowing users/authors write access to those namespaces where tags should be freely definable by users/authors (add_node under `/content/cq:tags/some_namespace`)
@@ -177,7 +175,7 @@ The `cq:OwnerTaggable` mixin, which inherits from `cq:Taggable`, is intended to 
 >
 >* pages ( `cq:Page`) where the `jcr:content`node is of type `cq:PageContent` which includes the `cq:Taggable` mixin.
 >
->* assets ( `cq:Asset`) where the `jcr:content/metadata` node always has the `cq:Taggable` mixin.
+>* assets ( `cq:Asset`) where the `jcr:content/metadata` node always has the `cq:Taggable` mixin.  
 >
 
 ### Node Type Notation (CND) {#node-type-notation-cnd}
@@ -203,7 +201,7 @@ The essential definitions for the Node Types included in AEM are as follows:
 
 ## Tagged Content: cq:tags Property {#tagged-content-cq-tags-property}
 
-The `cq:tags` property is a String array used to store one or more TagIDs when they are applied to content by authors or site visitors. The property only has meaning when added to a node which is defined with the ` [cq:Taggable](#taggable-content-cq-taggable-mixin)` mixin.
+The `cq:tags` property is a String array used to store one or more TagIDs when they are applied to content by authors or site visitors. The property only has meaning when added to a node which is defined with the [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
 
 >[!NOTE]
 >
@@ -218,29 +216,31 @@ The following is a description of the effects in the repository when moving or m
     * tag A is not deleted and gets a `cq:movedTo` property.
     * tag B is created (in case of a move) and gets a `cq:backlinks` property.
 
-* `cq:movedTo` points to tag B.
-  This property means that tag A has been moved or merged into tag B. Moving tag B will update this property accordingly. Tag A is thus hidden and is only kept in the repository to resolve tag IDs in content nodes pointing to tag A. The tag garbage collector removes tags like tag A once no more content nodes point to them.
+* `cq:movedTo` points to tag B. 
+
+  This property means that tag A has been moved or merged into tag B. Moving tag B will update this property accordingly. Tag A is thus hidden and is only kept in the repository to resolve tag IDs in content nodes pointing to tag A. The tag garbage collector removes tags like tag A once no more content nodes point to them. 
+
   A special value for the `cq:movedTo` property is `nirvana`: it is applied when the tag is deleted but cannot be removed from the repository because there are subtags with a `cq:movedTo` that must be kept.
 
-**Note**: *The "cq:movedTo" property is only added to the moved or merged tag if either of these conditions are met:*
-*1. Tag is used in content (meaning it has a reference) OR*
-*2. Tag has children that have already been moved.*
+    >[!NOTE]The `cq:movedTo` property is only added to the moved or merged tag if either of these conditions are met: 
+    >1. Tag is used in content (meaning it has a reference) OR
+    >1. Tag has children that have already been moved.
 
 * `cq:backlinks` keeps the references in the other direction, i.e. it keeps a list of all the tags that have been moved to or merged with tag B. This is mostly required to keep `cq:movedTo`properties up to date when tag B is moved/merged/deleted as well or when tag B is activated, in which case all its backlinks tags must be activated as well.
 
-**Note**: *The "cq:backlinks" property is only added to the moved or merged tag if either of these conditions are met:*
-*1. Tag is used in content (meaning it has a reference) OR*
-*2. Tag has children that have already been moved.*
+>[!NOTE]The `cq:backlinks` property is only added to the moved or merged tag if either of these conditions are met:
+>1. Tag is used in content (meaning it has a reference) OR 
+>1. Tag has children that have already been moved.
 
 * Reading a `cq:tags` property of a content node involves the following resolving:
 
     1. If there is no match under `/content/cq:tags`, no tag is returned.
-    1. If the tag has a `cq:movedTo` property set, the referenced tag ID is followed.
+    1. If the tag has a `cq:movedTo` property set, the referenced tag ID is followed. 
+
        This step is repeated as long as the followed tag has a `cq:movedTo` property.
 
     1. If the followed tag does not have a `cq:movedTo` property, the tag is read.
 
-* To publish the change when a tag has been moved or merged, the `cq:Tag` node and all its backlinks must be replicated: this is automatically done when the tag is activated in the tag administration console.
+* To publish the change when a tag has been moved or merged, the `cq:Tag` node and all its backlinks must be replicated: this is automatically done when the tag is activated in the tag administration console.  
 
 * Later updates to the page's `cq:tags` property automatically clean up the "old" references. This is triggered because resolving a moved tag through the API returns the destination tag, thus providing the destination tag ID.
-

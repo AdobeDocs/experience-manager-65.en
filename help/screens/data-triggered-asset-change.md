@@ -3,13 +3,12 @@ title: Data Triggered Asset Change
 seo-title: Data Triggered Asset Change
 description: Follow this use case example to learn how to achieve personalized content based on some precondition (for example, weather of your location).
 seo-description: Follow this use case example to learn how to achieve personalized content based on some precondition (for example, weather of your location).
-uuid: d65a6e74-03cb-49f7-b582-66f05708b2af
+uuid: 8e557e4c-a6e2-4e4a-87bd-e01e2ff0043d
+contentOwner: jsyal
+products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 content-type: example
 topic-tags: use-case-examples
-products: SG_EXPERIENCEMANAGER/6.5/SCREENS
-discoiquuid: 55408b4d-2727-48fa-8bd5-9c1a0f03f03f
-docset: aem65
-
+discoiquuid: 878a2354-0990-4b21-b1ab-b9b33b50e353
 ---
 
 # Data Triggered Asset Change{#data-triggered-asset-change}
@@ -22,8 +21,7 @@ The following AEM Screens project leverages AEM personalization which includes t
 
 This use case delivers content which is personalized based on the current weather in each location, if the weather is:
 
-* *sunny, it displays summer clothing  
-  *
+* *sunny, it displays summer clothing*
 * *cold, it displays winter clothing*
 
 >[!NOTE]
@@ -34,10 +32,10 @@ This use case delivers content which is personalized based on the current weathe
 
 Before you start this use case, make sure you understand:
 
-* [Personalization](/help/help/sites-administering/personalization.md)
-* [Configuring ContextHub](/help/help/sites-administering/contexthub-config.md)
-* [Configuring Segmentation with ContextHub](/help/help/sites-administering/segmentation.md)
-* [Authoring Targeted Content Using Targeting Mode](/help/help/sites-authoring/content-targeting-touch.md)
+* [Personalization](/help/sites-administering/personalization.md)
+* [Configuring ContextHub](/help/sites-administering/contexthub-config.md)
+* [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md)
+* [Authoring Targeted Content Using Targeting Mode](/help/sites-authoring/content-targeting-touch.md)
 
 ### Primary Actors {#primary-actors}
 
@@ -49,22 +47,21 @@ Follow the steps below to set up a project showcasing data triggered asset chang
 
 1. Create an AEM Screens Project named as **DataTriggerAsset**, as shown below.
 
-   ![](assets/screen_shot_2019-02-28at120427pm.png)
+   ![screen_shot_2019-02-28at120427pm](assets/screen_shot_2019-02-28at120427pm.png)
 
 1. **Creating a Sequence Channel**
 
     1. Select the **Channels** folder and click **Create** to open the wizard to create a channel.
-    
-    1. Select **Sequence Channel **from the wizard and create the channel titled as **DataTrigger**.
+    1. Select **Sequence Channel** from the wizard and create the channel titled as **DataTrigger**.
 
-   ![](assets/screen_shot_2019-02-28at120710pm.png)
+   ![screen_shot_2019-02-28at120710pm](assets/screen_shot_2019-02-28at120710pm.png)
 
 1. **Adding Content to Sequence Channel**
 
-    1. Select the channel (**DataTrigger**).
+    1. Select the channel **DataTrigger**.
     1. Click **Edit** from the action bar to open the editor. Drag and drop few assets to your channel.
 
-   ![](assets/screen_shot_2019-02-28at21511pm.png)
+   ![screen_shot_2019-02-28at21511pm](assets/screen_shot_2019-02-28at21511pm.png)
 
    >[!NOTE]
    >
@@ -72,11 +69,10 @@ Follow the steps below to set up a project showcasing data triggered asset chang
 
 1. **Setting ContextHub and Targeting Configurations**
 
-    1. Navigate to **DataTriggerAsset** --&gt; **Channels** --&gt; **DataTrigger** and click **Properties** from the action bar.   
-    
+    1. Navigate to **DataTriggerAsset** --&gt; **Channels** --&gt; **DataTrigger** and click **Properties** from the action bar.
     1. Click **Personalization** tab.
 
-   ![](assets/screen_shot_2019-02-28at10644pm.png)
+   ![screen_shot_2019-02-28at10644pm](assets/screen_shot_2019-02-28at10644pm.png)
 
 1. **Adding ContextHub and Targeting Configurations**
 
@@ -84,7 +80,6 @@ Follow the steps below to set up a project showcasing data triggered asset chang
     1. Once you have downloaded the package to your AEM instance, you need to set the ContextHub and Segments Path:
 
     * For **ContextHub**, set the path to: ***/libs/settings/cloudsettings/legacy/contexthub***
-    
     * For **Segments Path**, set the path to: ***/conf/data-triggers/settings/wcm/segments***
 
    Data Triggers
@@ -95,32 +90,26 @@ Follow the steps below to set up a project showcasing data triggered asset chang
    >
    >To learn about configuring ContextHub and Segmentation, refer to:
    >
-   >    
-   >    
-   >    * ** [Configuring ContextHub](/help/help/sites-administering/contexthub-config.md)**
-   >    * ** [Configuring Segmentation with ContextHub](/help/help/sites-administering/segmentation.md)**
-   >    
-   >
+   >* [Configuring ContextHub](/help/sites-administering/contexthub-config.md)
+   >* [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md)
 
-   ![](assets/screen_shot_2019-02-28at31502pm.png)
+   ![screen_shot_2019-02-28at31502pm](assets/screen_shot_2019-02-28at31502pm.png)
 
    Click **Save & Close**.
 
 1. **Switching to Targeting Mode**
 
-    1. Navigate to **DataTriggerAsset** --&gt; **Channels** --&gt; **DataTrigger **and** **click** Edit** from the action bar.  
-    
+    1. Navigate to **DataTriggerAsset** &gt; **Channels** &gt; **DataTrigger** and click **Edit** from the action bar.
     1. Select **Targeting** from the menu bar under **Edit**.
 
-   ![](assets/screen_shot_2019-02-28at21849pm.png)
+   ![screen_shot_2019-02-28at21849pm](assets/screen_shot_2019-02-28at21849pm.png)
 
 1. **Adding the Targeted Content**
 
     1. Select **Data Triggers** in **BRAND** and **Seasonal Data-Trigger **in **ACTIVITY**.
-    
     1. Click the **Start Targeting**
 
-   ![](assets/screen_shot_2019-02-28at31953pm.png)
+   ![screen_shot_2019-02-28at31953pm](assets/screen_shot_2019-02-28at31953pm.png)
 
 1. **Defining the Targeted Component**
 
@@ -132,7 +121,7 @@ Follow the steps below to set up a project showcasing data triggered asset chang
    >
    >To hide the **Assets** panel in the editor, you will have to click the left arrow on the right hand side panel, as shown in the figure below.
 
-   ![](assets/target.gif)
+   ![target](assets/target.gif)
 
 ## Viewing the Results {#viewing-the-results}
 
@@ -140,11 +129,11 @@ Once you have completed the preceding steps, follow along further to preview and
 
 1. Click **Preview** from the editor.
 
-   ![](assets/target2.gif)
+   ![target2](assets/target2.gif)
 
 1. To showcase, how the image will change, depending on the location and further the temperature of your area, you can manually click the ContextHub icon, as shown below.
 
    As soon as you update the location, the temperature of that area is captured and the image updates with the winter selection and replaces the summer selection image.
 
-   ![](assets/target3.gif)
+   ![target3](assets/target3.gif)
 

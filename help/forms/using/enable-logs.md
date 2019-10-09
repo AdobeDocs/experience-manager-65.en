@@ -3,17 +3,15 @@ title: Enable logging for HTML5 forms
 seo-title: Enable logging for HTML5 forms
 description: The logger utility enables logging for a form and helps you debug form-related issues.
 seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
-uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
+uuid: d6279092-57f3-4fc6-b41b-9caf65459d4d
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
-docset: aem65
-
+discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 ---
 
-# Enable logging for HTML5 forms{#enable-logging-for-html-forms}
+# Enable logging for HTML5 forms {#enable-logging-for-html-forms}
 
 You can configure the logger utility to start creating logs for HTML5 forms. The logger utility has various levels, you can set a level as per your requirements. HTML5 forms has server and client components. You can configure logs for both the components.
 
@@ -21,7 +19,7 @@ You can configure the logger utility to start creating logs for HTML5 forms. The
 
 Perform the following steps to configure server-side logs:
 
-1. Go to https://[server]:[port]/system/console/configMgr. Locate and open the *Apace Sling logging logger configuration* option. A dialog box appears: 
+1. Go to `https://[server]:[port]/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. A dialog box appears: 
 
    ![ Apace Sling logging logger configuration option dialog box](assets/logconfig.png)
 
@@ -54,7 +52,7 @@ The log configuration is made up of the log level and the logger category.
 
 #### Log Destination {#log-destination}
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <th><strong>Log Destination</strong></th> 
@@ -77,7 +75,7 @@ The log configuration is made up of the log level and the logger category.
 
 #### Log Levels {#log-levels}
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <th>Log Level</th> 
@@ -120,7 +118,7 @@ The log configuration is made up of the log level and the logger category.
 
 #### Logger Categories {#logger-categories}
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <th>Log Category</th> 
@@ -149,7 +147,7 @@ In the log URL, the log configuration query string parameter is defined as follo
 
 For example:
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <th>Log Configuration</th> 
@@ -192,7 +190,7 @@ To change the location and name of the log file:
 1. Log in to Configuration Manager as an administrator. The default URL of Configuration Manager is `https://[*Server*]:[*Port*]/system/console/configMgr`. 
 1. Click **Apache Sling Logging Logger Configuration**. A dialog box appears.
 
-   ![](assets/logconfig-1.png)
+   ![logconfig-1](assets/logconfig-1.png)
 
 1. Change the **Log Level** to Debug.  
 
@@ -204,4 +202,4 @@ To change the location and name of the log file:
 
 1. Change the **Logger** to **HTMLFormsPerfLogger** and click **Save**.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

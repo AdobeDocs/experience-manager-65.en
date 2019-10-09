@@ -3,17 +3,17 @@ title: Watermarking
 seo-title: Watermarking
 description: Learn how to use the Watermarking feature to add a digital watermark to assets.
 seo-description: Use the Watermarking feature to add a digital watermark to assets, which helps users verify your authenticity and ownership of copyright of the assets.
-uuid: d4194185-7ce9-4869-a66d-f0985cee37f9
-contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+uuid: 893fd179-2b5b-4b01-b671-b5a052953397
+contentOwner: asgupta
+products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 7ce1b154-dc55-4721-bfe9-eb444c01cf64
-docset: aem65
-
+discoiquuid: 69032497-6676-4d67-9ff2-2730c949a491
 ---
 
-# Watermarking{#watermarking}
+# Watermarking {#watermarking}
+
+Learn how to use the Watermarking feature to add a digital watermark to assets.
 
 The Watermarking feature in Adobe Experience Manager (AEM) Assets lets you add a digital watermark to assets, which helps users verify the authenticity and copyright ownership of the assets. AEM Assets supports text to be used as a watermark on PNG and JPEG files.
 

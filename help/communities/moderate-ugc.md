@@ -3,129 +3,124 @@ title: Moderating Community Content
 seo-title: Moderating Community Content
 description: Moderation concepts and actions
 seo-description: Moderation concepts and actions
-uuid: 5c991d3a-0037-4d78-8f91-bb62e44441fa
+uuid: a24d09e7-3260-4eec-844e-97e6849c94d8
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
-docset: aem65
-
+discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 ---
 
-# Moderating Community Content{#moderating-community-content}
+# Moderating Community Content {#moderating-community-content}
 
 ## Overview {#overview}
 
-Community content, also known as user generated content (UGC), is created when a member (signed in site visitor) posts content from a published community site through interaction with one of the following community components :
+Community content, also known as user generated content (UGC), is created when a member (signed in site visitor) posts content from a published community site through interaction with one of the following community components:
 
-* [blog](/help/communities/blog-feature.md) : members post a blog article or comment
-* [calendar](/help/communities/calendar.md) : members post a calendar event or comment
-* [comments](/help/communities/comments.md) : members post a comment or reply to a comment
+* [Blog](blog-feature.md): members post a blog article or comment
+* [Calendar](calendar.md): members post a calendar event or comment
+* [Comments](comments.md): members post a comment or reply to a comment  
+* [Forum](forum.md): members post a new topic or reply to a topic
+* [Ideation](ideation-feature.md): members post an idea or comment
+* [QnA](working-with-qna.md): members create a question or answer a question
+* [Reviews](reviews.md): members post a comment when rating an item
 
-* [forum](/help/communities/forum.md) : members post a new topic or reply to a topic
-* [ideation](/help/communities/ideation-feature.md) : members post an idea or comment
-* [QnA](/help/communities/working-with-qna.md) : members create a question or answer a question
-* [reviews](/help/communities/reviews.md) : members post a comment when rating an item
+Moderation of UGC is useful for recognizing positive contributions as well as limiting negative ones (such as spam and abusive language). UGC can be moderated from several environments:
 
-Moderation of UGC is useful for recognizing positive contributions as well as limiting negative ones (such as spam and abusive language). UGC can be moderated from several environments : [](/help/communities/working-with-srp.md)
+* [Bulk moderation console](moderation.md) 
 
-* [bulk moderation console](/help/communities/moderation.md)
-  The Moderation console is accessible by administrators and [community moderators](/help/communities/users.md) in the public environment as well as by administrators in the author environment. This is possible when community content is stored in a [common store](/help/communities/working-with-srp.md).
+  The Moderation console is accessible by administrators and [community moderators](users.md) in the public environment as well as by administrators in the author environment. This is possible when community content is stored in a [common store](working-with-srp.md).
 
-* [in-context moderation](/help/communities/in-context.md)
+* [In-context moderation](in-context.md)
+
   Moderation in the publish environment may be performed by administrators and community moderators directly on the page where the content was posted.
 
 ## Moderation Actions {#moderation-actions}
 
-The actions which can be performed on posted content (UGC) varies depending on the user identity and the environment. The table below uses the following terminology to describe the various roles according to user identity :
+The actions which can be performed on posted content (UGC) varies depending on the user identity and the environment. The table below uses the following terminology to describe the various roles according to user identity:
 
-* `Admin`
-  a user who is a member of [community-administrators](/help/communities/users.md) group
+* `Admin`  
+  A user who is a member of [community-administrators](users.md) group
+* `Moderator` 
+  A member of a [community moderators](users.md#publishenvironmentusersandgroups) group (has [moderator permissions](in-context.md#moderatorpermissions))
+* `Creator`  
+  The user who posted the content
+* `Member`  
+  A signed-in user without special permissions
+* `Visitor` 
+  An anonymous user
 
-* `Moderator`
-  a member of a [community moderators](/help/communities/users.md#publishenvironmentusersandgroups) group (has [moderator permissions](/help/communities/in-context.md#moderatorpermissions))
-
-* `Creator`
-  the user who posted the content
-
-* `Member`
-  a signed-in user without special permissions
-
-* `Visitor`
-  an anonymous user
-
-<table>
+<table> 
  <tbody>
   <tr>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"><strong>Admin</strong></td>
-   <td style="text-align: center;"><strong>Moderator</strong></td>
-   <td style="text-align: center;"><strong>Creator</strong></td>
-   <td style="text-align: center;"><strong>Member</strong></td>
-   <td style="text-align: center;"><strong>Visitor</strong></td>
-   <td style="text-align: center;"><strong>Event<br /> Triggered</strong></td>
-   <td style="text-align: center;" width="65%"><strong>Premoderated</strong></td>
+   <td> </td> 
+   <td><strong>Admin</strong></td> 
+   <td><strong>Moderator</strong></td> 
+   <td><strong>Creator</strong></td> 
+   <td><strong>Member</strong></td> 
+   <td><strong>Visitor</strong></td> 
+   <td><strong>Event<br /> Triggered</strong></td> 
+   <td><strong>Premoderated</strong></td> 
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Edit/<br /> Delete</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
+   <td><strong>Edit/<br /> Delete</strong></td> 
+   <td>X</td> 
+   <td>X</td> 
+   <td>X</td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Cut</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
+   <td><strong>Cut</strong></td> 
+   <td>X</td> 
+   <td>X</td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Deny</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
+   <td><strong>Deny</strong></td> 
+   <td>X</td> 
+   <td>X</td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td>X</td> 
+   <td> </td> 
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Close/<br /> Reopen</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X<br /> </td>
+   <td><strong>Close/<br /> Reopen</strong></td> 
+   <td>X</td> 
+   <td>X</td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td>X</td> 
+   <td>X<br /> </td> 
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Flag/<br /> Unflag</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: left;"> </td>
+   <td><strong>Flag/<br /> Unflag</strong></td> 
+   <td>X</td> 
+   <td>X</td> 
+   <td> </td> 
+   <td>X</td> 
+   <td> </td> 
+   <td>X</td> 
+   <td> </td> 
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Allow</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
+   <td><strong>Allow</strong></td> 
+   <td>X</td> 
+   <td>X</td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td>X</td> 
+   <td>X</td> 
   </tr>
  </tbody>
 </table>
@@ -142,11 +137,11 @@ It is possible for an administrator or community moderator to move one or more f
 
 By selecting the Cut action, the content is copied to a clipboard. Multiple posts may be copied and moved as a group to the new location.
 
-![](assets/cutugc.png) ![](assets/putbackugc.png)
+![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
 
 At the other location, when content is present in the clipboard, a Paste button is visible next to New Post with a number identifying the number of posts that will be pasted. The Paste button includes an option to clear the clipboard instead of pasting.
 
-![](assets/chlimage_1-28.png) ![](assets/chlimage_1-29.png)
+![chlimage_1-218](assets/chlimage_1-218.png) ![chlimage_1-219](assets/chlimage_1-219.png)
 
 ### Deny {#deny}
 
@@ -178,13 +173,13 @@ The Allow action is an option for UGC that has been Flagged, Denied or has not b
 
 ### Premoderation {#premoderation}
 
-When UGC is premoderated, the post will not appear on the published site until approved by a moderation action. During creation of a [community site](/help/communities/sites-console.md), checking the box ` [Content is Premoderated](/help/communities/sites-console.md#moderation)` will enable premoderation for the entire site. Once components are placed on a page, components which support moderation can be configured for premoderation using a setting in their edit dialog :
+When UGC is premoderated, the post will not appear on the published site until approved by a moderation action. During creation of a [community site](sites-console.md), checking the box ` [Content is Premoderated](sites-console.md#moderation)` will enable premoderation for the entire site. Once components are placed on a page, components which support moderation can be configured for premoderation using a setting in their edit dialog:
 
-* [comments](/help/communities/comments.md) and [reviews](/help/communities/reviews.md)
-  on **User Moderation** tab, check **Pre-Moderation**
+* [Comments](comments.md) and [reviews](reviews.md)
 
-* [forum](/help/communities/forum.md), [ideation](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), and [calendar](/help/communities/calendar.md)
-  on **Settings** tab, check **Moderated**
+  on **[!UICONTROL User Moderation]** tab, check **[!UICONTROL Pre-Moderation]**
+
+* [Forum](forum.md), [ideation](ideation-feature.md), [QnA](working-with-qna.md), and [calendar](calendar.md) on **[!UICONTROL Settings]** tab, check **[!UICONTROL Moderated]**
 
 ### Spam Detection {#spam-detection}
 
@@ -192,22 +187,22 @@ Spam detection is an auto-moderation functionality, which filters out undesireab
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-However, to customize or extend the default spam words create a set of words in the /apps directory following the structure of the default spam words by means of [overlay](/help/communities/overlay-comments.md).
+However, to customize or extend the default spam words create a set of words in the /apps directory following the structure of the default spam words by means of [overlay](overlay-comments.md).
 
 A user generated post (across all the content types, for example blogs, forums, and comments) containing spam word(s) is marked with the text “This post was classified as spam” above the post.
 
 Moderator can see such a post and mark the same to allow or deny from appearing on the site. Moderation actions on these posts can be performed either in-context or through bulk moderation UI.
 
-![](assets/spamdetection.png)
+![spamdetection](assets/spamdetection.png)
 
 To enable spam detection engine, follow these steps:
 
-1. Open [Web Console](https://localhost:4502/system/console/configMgr), by going to /system/console/configMgr.
+1. Open [Web Console](http://localhost:4502/system/console/configMgr), by going to `/system/console/configMgr`.
 
-1. Locate **AEM Communities Auto Moderation** configuration, and edit it.
-1. Add the "SpamProcess" entry.
+1. Locate **[!UICONTROL AEM Communities Auto Moderation]** configuration, and edit it.
+1. Add the `SpamProcess` entry.
 
-![](assets/spamprocess.png)
+![spamprocess](assets/spamprocess.png)
 
 >[!NOTE]
 >
@@ -223,16 +218,16 @@ The value the rules generate are from 1 (all negative, no positive words) to 10 
 
 The rules defined in the /libs component are:
 
-* Rule 1 : set value to 1 if there are no positive words and at least one negative word
-* Rule 2 : set value to 10 if there are no negative words and at least one positive word
-* Rule 3 : set value to 3 if there are more negative words than positive words
-* Rule 4 : set value to 8 if there are more positive words than negative words
+* Rule 1: set value to 1 if there are no positive words and at least one negative word
+* Rule 2: set value to 10 if there are no negative words and at least one positive word
+* Rule 3: set value to 3 if there are more negative words than positive words
+* Rule 4: set value to 8 if there are more positive words than negative words
 
 To overwrite or add rules, create a set of rules in the /apps directory following the structure of the default rules. Edit the sentiment configuration to identify the location of the rules.
 
 Once analyzed, the sentiment is stored with the UGC.
 
-From the [bulk moderation console](/help/communities/moderation.md), it is possible to filter and view UGC based on whether the sentiment is negative, neutral, or positive.
+From the [bulk moderation console](moderation.md), it is possible to filter and view UGC based on whether the sentiment is negative, neutral, or positive.
 
 #### Watchwords {#watchwords}
 
@@ -246,35 +241,35 @@ The default list of watchwords may be entered as properties of a node in the res
 
 The **sentimentprocess.name** may also be modifed to reference the location of a custom set of sentiment rules.
 
-To configure sentiment and watchwords :
+To configure sentiment and watchwords:
 
-* on an author instance
-* sign in as administrator
-* open [Web Console](https://localhost:4502/system/console/configMgr)
-* locate `sentimentprocess.name`
-* select the configuration to open in edit mode
+* On an author instance
+* Sign in as administrator
+* Open [Web Console](http://localhost:4502/system/console/configMgr)
+* Locate `sentimentprocess.name`
+* Select the configuration to open in edit mode
 
-![](assets/sentimentprocess.png)
+![sentimentprocess](assets/sentimentprocess.png)
 
-* **Positive Watchwords**
+* **Positive Watchwords** 
   A comma separated list of words contributing to a positive sentiment that override the defaults. Default is an empty list.
 
-* **Negative Watchwords**
+* **Negative Watchwords** 
   A comma separated list of words contributing to a negative sentiment that override the defaults. Default is an empty list.
 
-* **Explicit Path to Watchwords Node**
+* **Explicit Path to Watchwords Node** 
   The repository location of a node containing default `positive` and `negative` properties specifying default watchwords. Default is `/libs/settings/community/watchwords/default`.
 
-* **Sentiment Rules**
+* **Sentiment Rules** 
   The repository location of the rules for calculating sentiment based on positive and negative watchwords. Default is `/libs/cq/workflow/components/workflow/social/sentiments/rules` (however, there is no longer any workflow involved).
 
 Following is an example of a custom entry for the default watchwords, when `Explicit Path to Watchwords Node` is set to `/libs/settings/community/watchwords/default`.
 
-![](assets/crxde.png)
+![crxde](assets/crxde.png)
 
 ### Moderator Permissions {#moderator-permissions}
 
-The following permissions, when assigned to the same resource, are collectively referred to as **`moderator permissions`** :
+The following permissions, when assigned to the same resource, are collectively referred to as **`moderator permissions`**:
 
 * `Read`
 * **`Modify`**

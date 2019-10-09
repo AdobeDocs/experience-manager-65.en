@@ -3,31 +3,31 @@ title: Applying Workflows to Pages
 seo-title: Applying Workflows to Pages
 description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
 seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
-uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
+uuid: 8a1d16f8-69fc-4e3a-b72a-b799ea381024
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
-docset: aem65
-
+discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 ---
 
 # Applying Workflows to Pages{#applying-workflows-to-pages}
 
-When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
+When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow.
 
 When you apply the workflow, you specify the following information:
 
 * The workflow to apply.
+
   You can apply any workflow (that you have access to, as assigned by your AEM administrator).
+
 * Optionally, a title that helps identify the workflow instance in a user's Inbox.
 * The workflow payload; this can be one or more pages.
 
 Workflows can be started from:
 
-* [the **Sites** console](#starting-a-workflow-from-the-sites-console).
-* [when editing a page, from **Page Information**](#starting-a-workflow-from-the-page-editor).
+* the **[Sites](#starting-a-workflow-from-the-sites-console)** console.
+* when editing a page, from **[Page Information](#starting-a-workflow-from-the-page-editor)**.
 
 >[!NOTE]
 >
@@ -45,8 +45,8 @@ Workflows can be started from:
 
 You can start a workflow from either:
 
-* [the **Create** option of the Sites toolbar](#starting-a-workflow-from-the-sites-toolbar).
-* [the **Timeline** rail of the Sites console](#starting-a-workflow-from-the-timeline).
+* the **[Create](#starting-a-workflow-from-the-sites-toolbar)** option of the Sites toolbar.
+* the **[Timeline](#starting-a-workflow-from-the-timeline)** rail of the Sites console.
 
 In both cases you will need to:
 
@@ -56,11 +56,11 @@ In both cases you will need to:
 
 You can start a workflow from the toolbar of the **Sites** console:
 
-1. Navigate to and select the required page.
+1. Navigate to and select the required page.  
 
 1. From the **Create** option in the toolbar you can now select **Workflow**.
 
-   ![](assets/screen_shot_2019-03-06at121237pm.png)
+   ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
 1. The **Create Workflow** wizard will help you [specify the workflow details](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -68,10 +68,10 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 From the **Timeline** you can start a workflow to be applied to your selected resource.
 
-1. [Select the resource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) and open [Timeline](/help/sites-authoring/basic-handling.md#timeline) (or open Timeline and then select the resource).
+1. [Select the resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) and open [Timeline](/help/sites-authoring/basic-handling.md#timeline) (or open Timeline and then select the resource).
 1. The arrowhead by the comment field can be used to reveal **Start Workflow**:
 
-   ![](assets/screen-shot_2019-03-05at120026.png)
+   ![wf-51](assets/wf-51.png)
 
 1. The **Create Workflow** wizard will help you [specify the workflow details](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -81,8 +81,8 @@ The **Create Workflow** wizard will help you select the workflow and specify the
 
 After opening the **Create Workflow** wizard from either:
 
-* [the **Create** option of the Sites toolbar](#starting-a-workflow-from-the-sites-toolbar).
-* [the **Timeline** rail of the Sites console](#starting-a-workflow-from-the-timeline).
+* the **[Create](#starting-a-workflow-from-the-sites-toolbar)** option of the Sites toolbar.
+* the **[Timeline](#starting-a-workflow-from-the-timeline)** rail of the Sites console.
 
 You can specify details:
 
@@ -106,15 +106,15 @@ You can specify details:
 
    When complete, use **Next** to proceed.
 
-   ![](assets/wf-52.png)
+   ![wf-52](assets/wf-52.png)
 
 1. In the **Scope** step you can select:
 
     * **Add Content** to open the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) and select additional resources; when in the browser, click/tap **Select** to add the content to the workflow instance.
-
     * An existing resource to see additional actions:
 
         * **Include children** to specify that children of that resource will be included in the workflow.
+
           A dialog will open allowing you to refine the selection according to:
 
             * Include only immediate children.
@@ -125,7 +125,7 @@ You can specify details:
 
         * **Remove Selection** to remove that resource from the workflow.
 
-   ![](assets/wf-53.png)
+   ![wf-53](assets/wf-53.png)
 
    >[!NOTE]
    >
@@ -137,5 +137,5 @@ You can specify details:
 
 When editing a page you can select **Page Information** from the toolbar. The drop down menu has the option **Start in Workflow**. This will open a dialog where you can specify the required workflow, together with a title if required:
 
-![](assets/wf-54.png)
+![wf-54](assets/wf-54.png)
 
