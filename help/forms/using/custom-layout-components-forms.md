@@ -5,7 +5,7 @@ description: Procedure to create custom layout components for adaptive forms.
 seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: 09a0cacc-d693-46dc-90a3-254d1878a68a
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 ---
@@ -37,7 +37,7 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 
    ```css
    /** CSS defining new styles used by custom layout **/
-   
+
    .menu-nav {
        background-color: rgb(198, 38, 76);
        height: 30px;
@@ -47,33 +47,33 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
        -webkit-transition: -webkit-transform 1s;  /* For Safari 3.1 to 6.0 */
     transition: transform 1s;
    }
-   
+
    .tab-content {
     border: 1px solid #08b1cf;
    }
-   
+
    .custom-navigation {
        -webkit-transition: width 1s, height 1s, -webkit-transform 1s;  /* For Safari 3.1 to 6.0 */
     transition: width 1s, height 1s, transform 1s;
    }
-   
+
    .panel-name {
        padding-left: 30px;
        font-size: 20px;
    }
-   
+
    @media (min-width: 992px) {
     .nav-close {
      width: 0px;
        }
    }
-   
+
    @media (min-width: 768px) and (max-width: 991px) {
     .nav-close {
      height: 0px;
        }
    }
-   
+
    @media (max-width: 767px) {
     .menu-nav, .custom-navigation {
         display: none;
@@ -84,13 +84,13 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
    ```
    /** function for toggling the navigators **/
    var toggleNav = function () {
-   
+
        var nav = $('.custom-navigation');
        if (nav) {
            nav.toggleClass('nav-close');
        }
    }
-   
+
    /** function to populate the panel title **/
    $(window).on('load', function() {
        if (window.guideBridge) {
@@ -111,7 +111,7 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 
    ```
    <%-- jsp encapsulating navigator container and panel container divs --%>
-   
+
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
    <cq:includeClientLib categories="af.panel.custom"/>
    <div>
@@ -140,7 +140,7 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 
    ```
    <%-- jsp governing the navigation part --%>
-   
+
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
    <%@ page import="com.adobe.aemds.guide.utils.StyleUtils" %>
    <%-- navigation tabs --%>
@@ -169,14 +169,14 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 
    ```
    <%-- jsp governing the panel content --%>
-   
+
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
-   
+
    <div id="${guidePanel.id}_guide-item-container" class="tab-content">
        <c:if test="${guidePanel.hasToolbar && (guidePanel.toolbarPosition == 'Top') }">
            <sling:include path="${guidePanel.toolbar.path}"/>
        </c:if>
-   
+
    <c:forEach items="${guidePanel.items}" var="panelItem">
        <div class="tab-pane" id="${panelItem.id}_guide-item" role="tabpanel">
            <c:set var="isNestedLayout" value="${guide:hasNestablePanelLayout(guidePanel,panelItem)}"/>

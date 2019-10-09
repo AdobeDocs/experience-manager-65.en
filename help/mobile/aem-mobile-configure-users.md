@@ -6,7 +6,7 @@ seo-description: Follow this page to understand the user roles and how to config
 uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 ---

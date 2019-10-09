@@ -6,7 +6,7 @@ seo-description: With the Mobile On Demand Preflight app, you can view all proje
 uuid: bea83055-8172-4634-88ec-5d3f163ad8e0
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 ---

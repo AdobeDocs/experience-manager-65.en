@@ -5,7 +5,7 @@ description: Many components directly related to content allow you to add an ann
 seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
@@ -43,7 +43,7 @@ A special [mode](/help/sites-authoring/author-environment-tools.md#page-modes) i
 
 >[!NOTE]
 >
->You can annotate a variety of resources:  
+>You can annotate a variety of resources:
 >
 >* [Annotating assets](/help/assets/managing-assets-touch-ui.md#annotating)
 >* [Annotating video assets](/help/assets/managing-video-assets.md#annotating-video-assets)

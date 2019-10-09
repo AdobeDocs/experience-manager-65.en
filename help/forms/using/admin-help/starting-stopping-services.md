@@ -7,7 +7,7 @@ uuid: 8c831cb2-4165-4118-8a09-764cec4e5e05
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 ---
 
@@ -15,21 +15,21 @@ discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 
 There are two types of services that are part of AEM forms:
 
-* Services that control the AEM forms application server and database. 
+* Services that control the AEM forms application server and database.
 * Services that control AEM forms modules
 
 ## Start or stop the services associated with AEM forms modules {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
 AEM forms modules (for example, Forms, Rights Management, Output) operate as services. At times, you may need to stop or start the services for these AEM forms modules. For example, you must stop and then restart a AEM forms service after you change a setting for the service.
 
-1. In administration console click **Services** &gt; **Applications and Services** &gt; **Service Management**. 
+1. In administration console click **Services** &gt; **Applications and Services** &gt; **Service Management**.
 1. On the Service Management page, select the check box beside the service to stop or start and click Stop or Start.
 
 ## Start or stop services for the application server and database {#start-or-stop-services-for-the-application-server-and-database}
 
 A complete implementation of AEM forms includes an application server and database services:
 
-* *`[application server]`* for AEM forms 
+* *`[application server]`* for AEM forms
 * *`[database]`* for AEM forms
 
 On Windows, these services are accessible through the **Administrative Tools** &gt; **Services panel**. For example, if you installed AEM forms on JBoss by using the turnkey method, the following services are available on your system:

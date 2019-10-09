@@ -5,7 +5,7 @@ description: How-to customize the task details page in AEM Forms workspace to mo
 seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
 uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 ---

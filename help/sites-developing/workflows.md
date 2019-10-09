@@ -5,7 +5,7 @@ description: AEM provides several tools and resources for creating worklfow mode
 seo-description: AEM provides several tools and resources for creating worklfow models, developing workflow steps, and for programmatically interacting with workflows
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
@@ -32,12 +32,12 @@ Key aspects are covered below, while the following pages cover further details:
 >
 >For information about:
 >
->* Participating in workflows, see [Using Workflows](/help/sites-authoring/workflows.md). 
+>* Participating in workflows, see [Using Workflows](/help/sites-authoring/workflows.md).
 >* Administering workflows and workflow instances, see [Administering Workflows](/help/sites-administering/workflows.md).
 >* For an end-to-end Community Article see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 >* See the [Ask the AEM Experts Webinar on Workflows](https://bit.ly/ATACE218).
 >* For an end-to-end Community Article see [Creating a custom Adobe Experience Manager 6.3 Dynamic Participant step](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html).
->* Changes to the locations of information see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) and [Workflow Best Practices - Locations](/help/sites-developing/workflows-best-practices.md#locations).  
+>* Changes to the locations of information see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) and [Workflow Best Practices - Locations](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
 ## Model {#model}
@@ -62,7 +62,7 @@ Edits to the workflow model that occur, and/or runtime models that are generated
 
 Each step accomplishes a discrete task. There are different types of workflow steps:
 
-* Participant (User/Group): These steps generate a work item and assign it to a user or group. A user must complete the work item to advance the workflow. 
+* Participant (User/Group): These steps generate a work item and assign it to a user or group. A user must complete the work item to advance the workflow.
 * Process (Script, Java method call): These steps are executed automatically by the system. An ECMA script or Java class implements the step. Services can be developed to listen to special workflow events and perform tasks according to the business logic.
 * Container (Sub Workflow): This type of step starts another workflow model.
 * OR Split/Join: Use logic to decide which step to execute next in the workflow.
@@ -107,8 +107,8 @@ Completed and terminated instances are archived.
 
 ### Inbox {#inbox}
 
-Each user account has its own workflow inbox in which the assigned `WorkItems` are accessible.   
-  
+Each user account has its own workflow inbox in which the assigned `WorkItems` are accessible.
+
 The `WorkItems` are assigned to either the user account directly or to the group to which they belongs.
 
 ### Workflow Types {#workflow-types}
@@ -121,7 +121,7 @@ There are various types of workflow as indicated in the Workflow Models console:
 
   These are the out-of-the-box workflows included in a standard AEM instance.
 
-* Custom workflows (no indicator in the console) 
+* Custom workflows (no indicator in the console)
 
   These are workflows that have been created as new, or from out-of-the-box workflows that have been overlaid with customizations.
 
@@ -207,4 +207,4 @@ When creating a new form, the form submission can be easily associated with a wo
 
 ### Workflows and Translation {#workflows-and-translation}
 
-Workflows are also an integral part of the [Translation](/help/sites-administering/translation.md) process. 
+Workflows are also an integral part of the [Translation](/help/sites-administering/translation.md) process.

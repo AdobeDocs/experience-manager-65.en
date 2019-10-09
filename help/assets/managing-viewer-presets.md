@@ -5,7 +5,7 @@ description: How to create and manage Dynamic Media viewer presets
 seo-description: How to create and manage Dynamic Media viewer presets
 uuid: 31ef7a4e-2053-43b5-ac6c-cdc4b30c3914
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
@@ -18,7 +18,7 @@ A Dynamic Media viewer preset is a collection of settings that determine how use
 
 For instructions on creating and customizing your own HTML5 viewer presets, see the *Adobe Scene7 HTML5 Viewer SDK*. The SDK is available on the IS publish server embedded in the SDK itself. Each library version has its own SDK documentation included.
 
-Path: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.  
+Path: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.
 For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
 
 See also the [Adobe Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/).
@@ -53,7 +53,7 @@ See [Responsive Image library](https://marketing.adobe.com/resources/help/en_US/
 
 >[!NOTE]
 >
->Please note that you must publish all out-of-the-box viewers before you first use them.  
+>Please note that you must publish all out-of-the-box viewers before you first use them.
 >See [Publishing Viewer Presets.](#publishing-viewer-presets)
 
 ## Viewer preset system compatibility  {#viewer-preset-system-compatibility}
@@ -71,65 +71,65 @@ All out-of-the-box Viewer Presets that come with Dynamic Media are fully compati
 
 Administrators can add and customize the following rich media types when creating new viewer presets.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Carousel Set</strong><br /> </td> 
-   <td><p>Hotspots, or image maps, or both are added to a series of two or more images. A customer can pan the images left or right and then click a hotspot on an image for additional details or for purchasing directly from a website's category, home, or landing pages.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Flyout Zoom</strong></td> 
-   <td><p>Displays a second image of the zoomed area next to the original image. There are no controls to use - users move the selection over the area they want to view.</p> <p>When determining the complete bandwidth usage for this viewer, consider that both the main image and the flyout image are served in the viewer. The main image size (Stage Width and Height) and the Zoom Factor determine the flyout image size. To keep the flyout file size from becoming too large, balance these two values: if you have a large main image size, lower the Zoom Factor value. (The Flyout Width and Flyout Height determine the size of the flyout window, but not the size of the flyout image that is served into the viewer.)</p> <p>For example, if your main image size is 350 by 350 pixels, with a Zoom Factor of 3, the resulting flyout image is 1050 by 1050 pixels. If your main image size is 300 by 300 pixels, with a Zoom Factor of 4, the flyout image is 1200 by 1200 pixels. Depending on the JPEG quality setting (recommended settings are between 80-90), you can decrease the file size significantly. Recommended zoom factors are 2.5 to 4, depending on the size of your main image.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Inline Zoom</strong></td> 
-   <td>Displays an image of the zoomed area within the original viewer. There are no controls to use. That is, users move the selection over the area they want to view.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Image Set</strong></td> 
-   <td>In the Image Set viewer, users can see different views or color variations of an item by clicking a thumbnail image. This viewer also offers zooming tools for examining images closely.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Interactive Image</strong></td> 
-   <td>Hotspots are added to portions of an image that a customer can then click for additional details or for purchasing directly from a website's category, home, or landing pages.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Interactive Video</strong></td> 
-   <td>Thumbnails are added to timeline segments in a video that a customer can then click for additional details or for purchasing directly from a website's category, home, or landing pages.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Mixed Media</strong></td> 
-   <td>Displays different types of media in one viewer. You can include spin sets, image set, images, and videos.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Panoramic Image</strong></td> 
-   <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360° viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p> 
-    <ul> 
-     <li>An aspect ratio of 2:1.</li> 
-     <li>Tagged with the keywords <span class="kbd">equirectangular</span>, or <span class="kbd">spherical</span> and <span class="kbd">panorama</span>, or <span class="kbd">spherical </span>and <span class="kbd">panoramic</span>. See <a href="/help/sites-authoring/tags.md">Using Tags</a>.</li> 
-    </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Spin Set</strong></td> 
-   <td>Provides multiple views of an image so users can turn the object to examine the different sides and angles.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Video</strong></td> 
-   <td><p>Plays video using progressive or adaptive bitrate streaming. Adaptive bitrate streaming automatically performs device and bandwidth detection to serve the right quality video in the right format.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Vertical Zoom</strong></td> 
-   <td><p>The Vertical Zoom viewer lets you maximize a product imagery viewing experience to give your users the best representation of a product. The vertical location of swatches does the following:</p> 
-    <ul> 
-     <li>Ensures swatches are “above the fold”.<br /> With horizontal swatches, depending on the user’s desktop screen size, swatches were not be visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li> 
-     <li>Maximizes main image size.<br /> With horizontal swatches, it is necessary to reserve space on the page to ensure that they are visible. This positioning decreased the size of the main image. With a vertical swatch layout, however, you do not need to allocate this space. As such, you can maximize the main image size.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Zoom</strong></td> 
-   <td>Lets users zoom into the area by clicking it. Users can click controls to zoom in, zoom out, and reset the image to its default size.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Carousel Set</strong><br /> </td>
+   <td><p>Hotspots, or image maps, or both are added to a series of two or more images. A customer can pan the images left or right and then click a hotspot on an image for additional details or for purchasing directly from a website's category, home, or landing pages.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Flyout Zoom</strong></td>
+   <td><p>Displays a second image of the zoomed area next to the original image. There are no controls to use - users move the selection over the area they want to view.</p> <p>When determining the complete bandwidth usage for this viewer, consider that both the main image and the flyout image are served in the viewer. The main image size (Stage Width and Height) and the Zoom Factor determine the flyout image size. To keep the flyout file size from becoming too large, balance these two values: if you have a large main image size, lower the Zoom Factor value. (The Flyout Width and Flyout Height determine the size of the flyout window, but not the size of the flyout image that is served into the viewer.)</p> <p>For example, if your main image size is 350 by 350 pixels, with a Zoom Factor of 3, the resulting flyout image is 1050 by 1050 pixels. If your main image size is 300 by 300 pixels, with a Zoom Factor of 4, the flyout image is 1200 by 1200 pixels. Depending on the JPEG quality setting (recommended settings are between 80-90), you can decrease the file size significantly. Recommended zoom factors are 2.5 to 4, depending on the size of your main image.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Inline Zoom</strong></td>
+   <td>Displays an image of the zoomed area within the original viewer. There are no controls to use. That is, users move the selection over the area they want to view.</td>
+  </tr>
+  <tr>
+   <td><strong>Image Set</strong></td>
+   <td>In the Image Set viewer, users can see different views or color variations of an item by clicking a thumbnail image. This viewer also offers zooming tools for examining images closely.</td>
+  </tr>
+  <tr>
+   <td><strong>Interactive Image</strong></td>
+   <td>Hotspots are added to portions of an image that a customer can then click for additional details or for purchasing directly from a website's category, home, or landing pages.</td>
+  </tr>
+  <tr>
+   <td><strong>Interactive Video</strong></td>
+   <td>Thumbnails are added to timeline segments in a video that a customer can then click for additional details or for purchasing directly from a website's category, home, or landing pages.</td>
+  </tr>
+  <tr>
+   <td><strong>Mixed Media</strong></td>
+   <td>Displays different types of media in one viewer. You can include spin sets, image set, images, and videos.</td>
+  </tr>
+  <tr>
+   <td><strong>Panoramic Image</strong></td>
+   <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360° viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p>
+    <ul>
+     <li>An aspect ratio of 2:1.</li>
+     <li>Tagged with the keywords <span class="kbd">equirectangular</span>, or <span class="kbd">spherical</span> and <span class="kbd">panorama</span>, or <span class="kbd">spherical </span>and <span class="kbd">panoramic</span>. See <a href="/help/sites-authoring/tags.md">Using Tags</a>.</li>
+    </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Spin Set</strong></td>
+   <td>Provides multiple views of an image so users can turn the object to examine the different sides and angles.</td>
+  </tr>
+  <tr>
+   <td><strong>Video</strong></td>
+   <td><p>Plays video using progressive or adaptive bitrate streaming. Adaptive bitrate streaming automatically performs device and bandwidth detection to serve the right quality video in the right format.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Vertical Zoom</strong></td>
+   <td><p>The Vertical Zoom viewer lets you maximize a product imagery viewing experience to give your users the best representation of a product. The vertical location of swatches does the following:</p>
+    <ul>
+     <li>Ensures swatches are “above the fold”.<br /> With horizontal swatches, depending on the user’s desktop screen size, swatches were not be visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
+     <li>Maximizes main image size.<br /> With horizontal swatches, it is necessary to reserve space on the page to ensure that they are visible. This positioning decreased the size of the main image. With a vertical swatch layout, however, you do not need to allocate this space. As such, you can maximize the main image size.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Zoom</strong></td>
+   <td>Lets users zoom into the area by clicking it. Users can click controls to zoom in, zoom out, and reset the image to its default size.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## List of out-of-the-box viewer presets {#list-of-out-of-the-box-viewer-presets}
@@ -144,202 +144,202 @@ See *Viewers release notes* in the table of contents of the [Viewers Reference G
 
 >[!NOTE]
 >
->All out-of-the-box viewer presets in Dynamic Media come already activated (on), but you must publish them.  
+>All out-of-the-box viewer presets in Dynamic Media come already activated (on), but you must publish them.
 >See [Publishing Viewer Presets](#publishing-viewer-presets).
 >
->Any new viewer presets that you create and add must be both activated *and* published.  
+>Any new viewer presets that you create and add must be both activated *and* published.
 >See [Activating or Deactivating Viewer Presets](#activating-or-deactivating-viewer-presets) and [Publishing Viewer Presets](#publishing-viewer-presets).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Viewer preset title</strong></td> 
-   <td><strong>Type</strong></td> 
-   <td><strong>CSS file name</strong><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Carousel_Dotted_dark</td> 
-   <td>Carousel_Set</td> 
-   <td><code>html5_carouselviewer_dotted_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Carousel_Dotted_light</td> 
-   <td>Carousel_Set</td> 
-   <td><code>html5_carouselviewer_dotted_light.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Carousel_Numeric_dark</td> 
-   <td>Carousel_Set</td> 
-   <td><code>html5_carouselviewer_numeric_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Carousel_Numeric_light</td> 
-   <td>Carousel_Set</td> 
-   <td><code>html5_carouselviewer_numeric_light.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Flyout</td> 
-   <td>Flyout_Zoom</td> 
-   <td><code>html5_flyoutviewer.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>ImageSet_dark</td> 
-   <td>Image Set</td> 
-   <td><code>html5_zoomviewer_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>ImageSet_light</td> 
-   <td>Image Set</td> 
-   <td><code>html5_zoomviewer_light.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>InlineMixedMedia_dark</td> 
-   <td>Mixed_Media</td> 
-   <td><code>html5_inlinemixedmediaviewer_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>InlineMixedMedia_light</td> 
-   <td>Mixed_Media</td> 
-   <td><code>html5_inlinemixedmediaviewer_light.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>InlineZoom</td> 
-   <td>Flyout_Zoom</td> 
-   <td><code>html5_inlinezoomviewer.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>MixedMedia_dark</td> 
-   <td>Mixed_Media</td> 
-   <td><code>html5_mixedmediaviewer_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>MixedMedia_light</td> 
-   <td>Mixed_Media</td> 
-   <td><code>html5_mixedmediaviewer_light.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>PanoramicImage</td> 
-   <td>Panoramic_Image</td> 
-   <td><code>html5_panoramicimage.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>PanoramicImageVR</td> 
-   <td>Panoramic_Image</td> 
-   <td><code>html5_panoramicimage.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Shoppable_Banner</td> 
-   <td>Interactive_Image</td> 
-   <td><code>html5_interactiveimage.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Shoppable_Video_dark</td> 
-   <td>Interactive_Video</td> 
-   <td><code>html5_interactivevideoviewer_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Shoppable_Video_light</td> 
-   <td>Interactive_Video</td> 
-   <td><code>html5_interactivevideovewer_light.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>SpinSet_dark</td> 
-   <td>Spin_Set</td> 
-   <td><code>html5_spinviewer_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>SpinSet_light</td> 
-   <td>Spin_Set</td> 
-   <td><code>html5_spinviewer_light.css</code></td> 
-  </tr> 
-  <tr> 
-   <td><p>Video</p> <p>(Includes support for closed captioning)</p> </td> 
-   <td>Video</td> 
-   <td><code>html5_videoviewer.css</code></td> 
-  </tr> 
-  <tr> 
-   <td><p>Video_social</p> <p>(Includes support for closed captioning and social media)</p> </td> 
-   <td>Video</td> 
-   <td><code>html5_videoviewersocial.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Zoom_dark<br /> </td> 
-   <td>Zoom<br /> </td> 
-   <td><code>html5_basiczoomviewer_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>Zoom_light<br /> </td> 
-   <td>Zoom</td> 
-   <td><code>html5_basiczoomviewer_light.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>ZoomVertical_dark<br /> </td> 
-   <td>Vertical_Zoom</td> 
-   <td><code>html5_zoomverticalviewer_dark.css</code></td> 
-  </tr> 
-  <tr> 
-   <td>ZoomVertical_light</td> 
-   <td>Vertical_Zoom</td> 
-   <td><code>html5_zoomverticalviewer_light.css</code></td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Viewer preset title</strong></td>
+   <td><strong>Type</strong></td>
+   <td><strong>CSS file name</strong><br /> </td>
+  </tr>
+  <tr>
+   <td>Carousel_Dotted_dark</td>
+   <td>Carousel_Set</td>
+   <td><code>html5_carouselviewer_dotted_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>Carousel_Dotted_light</td>
+   <td>Carousel_Set</td>
+   <td><code>html5_carouselviewer_dotted_light.css</code></td>
+  </tr>
+  <tr>
+   <td>Carousel_Numeric_dark</td>
+   <td>Carousel_Set</td>
+   <td><code>html5_carouselviewer_numeric_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>Carousel_Numeric_light</td>
+   <td>Carousel_Set</td>
+   <td><code>html5_carouselviewer_numeric_light.css</code></td>
+  </tr>
+  <tr>
+   <td>Flyout</td>
+   <td>Flyout_Zoom</td>
+   <td><code>html5_flyoutviewer.css</code></td>
+  </tr>
+  <tr>
+   <td>ImageSet_dark</td>
+   <td>Image Set</td>
+   <td><code>html5_zoomviewer_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>ImageSet_light</td>
+   <td>Image Set</td>
+   <td><code>html5_zoomviewer_light.css</code></td>
+  </tr>
+  <tr>
+   <td>InlineMixedMedia_dark</td>
+   <td>Mixed_Media</td>
+   <td><code>html5_inlinemixedmediaviewer_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>InlineMixedMedia_light</td>
+   <td>Mixed_Media</td>
+   <td><code>html5_inlinemixedmediaviewer_light.css</code></td>
+  </tr>
+  <tr>
+   <td>InlineZoom</td>
+   <td>Flyout_Zoom</td>
+   <td><code>html5_inlinezoomviewer.css</code></td>
+  </tr>
+  <tr>
+   <td>MixedMedia_dark</td>
+   <td>Mixed_Media</td>
+   <td><code>html5_mixedmediaviewer_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>MixedMedia_light</td>
+   <td>Mixed_Media</td>
+   <td><code>html5_mixedmediaviewer_light.css</code></td>
+  </tr>
+  <tr>
+   <td>PanoramicImage</td>
+   <td>Panoramic_Image</td>
+   <td><code>html5_panoramicimage.css</code></td>
+  </tr>
+  <tr>
+   <td>PanoramicImageVR</td>
+   <td>Panoramic_Image</td>
+   <td><code>html5_panoramicimage.css</code></td>
+  </tr>
+  <tr>
+   <td>Shoppable_Banner</td>
+   <td>Interactive_Image</td>
+   <td><code>html5_interactiveimage.css</code></td>
+  </tr>
+  <tr>
+   <td>Shoppable_Video_dark</td>
+   <td>Interactive_Video</td>
+   <td><code>html5_interactivevideoviewer_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>Shoppable_Video_light</td>
+   <td>Interactive_Video</td>
+   <td><code>html5_interactivevideovewer_light.css</code></td>
+  </tr>
+  <tr>
+   <td>SpinSet_dark</td>
+   <td>Spin_Set</td>
+   <td><code>html5_spinviewer_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>SpinSet_light</td>
+   <td>Spin_Set</td>
+   <td><code>html5_spinviewer_light.css</code></td>
+  </tr>
+  <tr>
+   <td><p>Video</p> <p>(Includes support for closed captioning)</p> </td>
+   <td>Video</td>
+   <td><code>html5_videoviewer.css</code></td>
+  </tr>
+  <tr>
+   <td><p>Video_social</p> <p>(Includes support for closed captioning and social media)</p> </td>
+   <td>Video</td>
+   <td><code>html5_videoviewersocial.css</code></td>
+  </tr>
+  <tr>
+   <td>Zoom_dark<br /> </td>
+   <td>Zoom<br /> </td>
+   <td><code>html5_basiczoomviewer_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>Zoom_light<br /> </td>
+   <td>Zoom</td>
+   <td><code>html5_basiczoomviewer_light.css</code></td>
+  </tr>
+  <tr>
+   <td>ZoomVertical_dark<br /> </td>
+   <td>Vertical_Zoom</td>
+   <td><code>html5_zoomverticalviewer_dark.css</code></td>
+  </tr>
+  <tr>
+   <td>ZoomVertical_light</td>
+   <td>Vertical_Zoom</td>
+   <td><code>html5_zoomverticalviewer_light.css</code></td>
+  </tr>
+ </tbody>
 </table>
 
 ### Supported mobile viewers gestures matrix {#supported-mobile-viewers-gestures-matrix}
 
 The following table identifies the mobile viewer gestures that are supported on iOS, Android 2.x, and Android 3.x devices.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Gesture</strong></td> 
-   <td><strong>Flyout Zoom</strong></td> 
-   <td><strong>Zoom</strong></td> 
-   <td><strong>Spin</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p><strong>Drag</strong></p> </td> 
-   <td><p>Pans</p> </td> 
-   <td><p>Pans</p> </td> 
-   <td><p>Pans</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><strong>Tap</strong></p> </td> 
-   <td><p>Shows flyout window</p> </td> 
-   <td><p>Shows or hides the user interface</p> </td> 
-   <td><p>Shows or hides the user interface</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><strong>Double-tap</strong></p> </td> 
-   <td><p>Does not apply</p> </td> 
-   <td><p>Zooms in or resets</p> </td> 
-   <td><p>Zooms in or resets</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><strong>Pinch open</strong></p> </td> 
-   <td><p>Does not apply</p> </td> 
-   <td><p>Zooms in (iOS and Android 3x only)</p> </td> 
-   <td><p>Zooms in (iOS and Android 3x only)</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><strong>Pinch close</strong></p> </td> 
-   <td><p>Does not apply</p> </td> 
-   <td><p>Zooms out (iOS and Android 3x only)</p> </td> 
-   <td><p>Zooms out (iOS and Android 3x only)</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><strong>Swipe</strong></p> </td> 
-   <td><p>Scrolls swatch bar</p> </td> 
-   <td><p>Scrolls images</p> </td> 
-   <td><p>Spins</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><strong>Flick</strong></p> </td> 
-   <td><p>Scrolls swatch bar</p> </td> 
-   <td><p>Scrolls images</p> </td> 
-   <td><p>Spins</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Gesture</strong></td>
+   <td><strong>Flyout Zoom</strong></td>
+   <td><strong>Zoom</strong></td>
+   <td><strong>Spin</strong></td>
+  </tr>
+  <tr>
+   <td><p><strong>Drag</strong></p> </td>
+   <td><p>Pans</p> </td>
+   <td><p>Pans</p> </td>
+   <td><p>Pans</p> </td>
+  </tr>
+  <tr>
+   <td><p><strong>Tap</strong></p> </td>
+   <td><p>Shows flyout window</p> </td>
+   <td><p>Shows or hides the user interface</p> </td>
+   <td><p>Shows or hides the user interface</p> </td>
+  </tr>
+  <tr>
+   <td><p><strong>Double-tap</strong></p> </td>
+   <td><p>Does not apply</p> </td>
+   <td><p>Zooms in or resets</p> </td>
+   <td><p>Zooms in or resets</p> </td>
+  </tr>
+  <tr>
+   <td><p><strong>Pinch open</strong></p> </td>
+   <td><p>Does not apply</p> </td>
+   <td><p>Zooms in (iOS and Android 3x only)</p> </td>
+   <td><p>Zooms in (iOS and Android 3x only)</p> </td>
+  </tr>
+  <tr>
+   <td><p><strong>Pinch close</strong></p> </td>
+   <td><p>Does not apply</p> </td>
+   <td><p>Zooms out (iOS and Android 3x only)</p> </td>
+   <td><p>Zooms out (iOS and Android 3x only)</p> </td>
+  </tr>
+  <tr>
+   <td><p><strong>Swipe</strong></p> </td>
+   <td><p>Scrolls swatch bar</p> </td>
+   <td><p>Scrolls images</p> </td>
+   <td><p>Spins</p> </td>
+  </tr>
+  <tr>
+   <td><p><strong>Flick</strong></p> </td>
+   <td><p>Scrolls swatch bar</p> </td>
+   <td><p>Scrolls images</p> </td>
+   <td><p>Spins</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Increasing the number of Dynamic Media viewer presets that display {#increasing-the-number-of-viewer-presets-that-display}
@@ -391,18 +391,18 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 1. On the **Edit Viewer Preset** page, tap the **[!UICONTROL Appearance]** tab.
 1. Do one of the following:
 
-    * In the **[!UICONTROL Selected Type]** pull-down menu, select a component whose visual design you want to customize. Alternatively, you can tap any visual element in the viewer to select it for configuration.  
-  
-      The visual editor lets you see what effect a certain property has on a style. Just set or adjust any property to instantly see what effect it has on the viewer using the sample to the left of the editor.
-  
-      The CSS styling properties for each type of viewer preset are described in the any "Customizing *&lt;viewer_name&gt;* Viewer" Help topic in the [Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/).
-  
-      For example, if you are creating a viewer preset of the type `Mixed_Media`, see [Customizing Mixed Media Viewer](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_mixedmedia_viewer_customizingviewer.html) for a list and description of each property. 
+    * In the **[!UICONTROL Selected Type]** pull-down menu, select a component whose visual design you want to customize. Alternatively, you can tap any visual element in the viewer to select it for configuration.
 
-    * If you have defined style settings in a separate CSS file, you can upload the CSS file to AEM Assets. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.  
-  
-      When you import a CSS file, the visual editor checks to see if the CSS uses the correct viewer markers. For example, if you are creating a Zoom viewer, all the CSS rules you import must be defined using its viewer class name `.s7mixedmediaviewer` defined on a parent viewer element.  
-  
+      The visual editor lets you see what effect a certain property has on a style. Just set or adjust any property to instantly see what effect it has on the viewer using the sample to the left of the editor.
+
+      The CSS styling properties for each type of viewer preset are described in the any "Customizing *&lt;viewer_name&gt;* Viewer" Help topic in the [Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/).
+
+      For example, if you are creating a viewer preset of the type `Mixed_Media`, see [Customizing Mixed Media Viewer](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_mixedmedia_viewer_customizingviewer.html) for a list and description of each property.
+
+    * If you have defined style settings in a separate CSS file, you can upload the CSS file to AEM Assets. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
+
+      When you import a CSS file, the visual editor checks to see if the CSS uses the correct viewer markers. For example, if you are creating a Zoom viewer, all the CSS rules you import must be defined using its viewer class name `.s7mixedmediaviewer` defined on a parent viewer element.
+
       You can import arbitrary, handmade CSS as long as it properly defines the CSS markers for a given viewer. (CSS markers are described in any "Customzing *&lt;viewer name&gt;* Viewer" Help topic in the [Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/). For example, if you want to read about CSS markers for the Zoom Viewer, see [Customizing Zoom Viewer](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_20_zoom_viewer_customizingviewer.html).) It is possible, however, that the visual editor may not understand some CSS values. In such cases, the visual editor attempts to override the errors so that the CSS can still work.
 
    >[!NOTE]
@@ -440,21 +440,21 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 
 When you create or edit an Interactive Video viewer preset, you have the choice of which **[!UICONTROL Display Mode]** setting to use when you select `InteractiveSwatches` from the **[!UICONTROL Selected Component]** pull-down menu under the **[!UICONTROL Behavior]** tab. The display mode you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`display mode (default) or a `continuous`display mode.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Display Mode</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Segment</td> 
-   <td><p><code>Segment </code>is the default display mode for the out-of-box Interactive Video Viewer presets <code>Shoppable_Video_light</code> and <code>Shoppable_Video_dark</code> and any Interactive Video Viewer presets that you create yourself.</p> <p>In this mode, when there are fewer thumbnails assigned to a video segment than the number of visible spots in the display panel, thumbnails from the next or previous sub-segments are <i>not </i>pulled in to fill any empty spots in the panel. That is, it preserves the display of swatches that were assigned to the particular video segment.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Continuous</td> 
-   <td><p>In <code>continuous </code>display mode, if the number of thumbnails in a segment is less than the number that are visible in the panel, the viewer automatically includes the display of thumbnails from the next segment, or the previous segment, in cases where the last thumbnail is displayed.</p> <p>The <a href="/help/assets/interactive-videos.md">video in this topic</a> is an example of the <code>continuous </code>display mode.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Display Mode</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Segment</td>
+   <td><p><code>Segment </code>is the default display mode for the out-of-box Interactive Video Viewer presets <code>Shoppable_Video_light</code> and <code>Shoppable_Video_dark</code> and any Interactive Video Viewer presets that you create yourself.</p> <p>In this mode, when there are fewer thumbnails assigned to a video segment than the number of visible spots in the display panel, thumbnails from the next or previous sub-segments are <i>not </i>pulled in to fill any empty spots in the panel. That is, it preserves the display of swatches that were assigned to the particular video segment.</p> </td>
+  </tr>
+  <tr>
+   <td>Continuous</td>
+   <td><p>In <code>continuous </code>display mode, if the number of thumbnails in a segment is less than the number that are visible in the panel, the viewer automatically includes the display of thumbnails from the next segment, or the previous segment, in cases where the last thumbnail is displayed.</p> <p>The <a href="/help/assets/interactive-videos.md">video in this topic</a> is an example of the <code>continuous </code>display mode.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 **About Auto Scrolling Behavior in the Interactive Video Viewer**
@@ -479,15 +479,15 @@ Video sub-segment 3 does not extend beyond the thumbnails that are assigned to i
 
 The logic that the viewer uses for how many thumbnails are displayed in the panel based on the number of available positions is as follows:
 
-* Number of sub-segments = round up to next sub-segment (number of thumbnails / number of visible slots in the thumbnail panel, based on browser window size).  
+* Number of sub-segments = round up to next sub-segment (number of thumbnails / number of visible slots in the thumbnail panel, based on browser window size).
 
   Using the example in the table above, 9 thumbnails / 4 slots = 2.25; the viewer logic rounds it up to 3 sub-segments.
 
-* Number of thumbnails = round up to next thumbnail (number of thumbnails / number of video sub-segments).  
+* Number of thumbnails = round up to next thumbnail (number of thumbnails / number of video sub-segments).
 
   Using the example in the table above, 9 thumbnails / 3 video sub-segments = 3 thumbnails.
 
-* Duration of sub-segment = total video duration / number of video sub-segments.  
+* Duration of sub-segment = total video duration / number of video sub-segments.
 
   Using the example in the table above, 30 seconds / 3 video sub-segments = 10 second display of each video sub-segment.
 

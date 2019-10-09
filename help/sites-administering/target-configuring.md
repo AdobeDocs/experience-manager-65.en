@@ -1,11 +1,11 @@
 ---
-title: Manually Configuring the Integration with Adobe Target 
-seo-title: Manually Configuring the Integration with Adobe Target 
+title: Manually Configuring the Integration with Adobe Target
+seo-title: Manually Configuring the Integration with Adobe Target
 description: Learn how to manually configure the integration with Adobe Target.
 seo-description: Learn how to manually configure the integration with Adobe Target.
 uuid: 0bb76a65-f981-4cc5-bee8-5feb3297137c
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
@@ -21,7 +21,7 @@ The [Opt-in wizard](/help/sites-administering/opt-in.md) that [integrates AEM wi
 
 You can also configure Adobe Target to use Adobe Target as the reporting source when targeting content by configuring the A4T Analytics Cloud Configuration.
 
-To locate the cloud configuration and the framework, Navigate to **Cloud Services** via **Tools** &gt; **Deployment** &gt; **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))  
+To locate the cloud configuration and the framework, Navigate to **Cloud Services** via **Tools** &gt; **Deployment** &gt; **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 Below Adobe Target, click or tap **Show Configurations**.
 
 ### Provisioned Target Configuration Properties {#provisioned-target-configuration-properties}
@@ -32,7 +32,7 @@ The following property values are used in the Provisioned Target Configuration c
 * **E-Mail:** As entered in the Opt-in wizard.
 * **Password:** As entered in the Opt-in wizard.
 * **API Type:** REST
-* **Synchronize Segments From Adobe Target:** Selected. 
+* **Synchronize Segments From Adobe Target:** Selected.
 
 * **Client library:** mbox.js.
 * **Use DTM to deliver client library:** Not selected. Select this option if you [use DTM](/help/sites-administering/dtm.md) or another tag management system to host the mbox.js or AT.js file. Adobe recommends that you use DTM rather than AEM to deliver the library.
@@ -42,7 +42,7 @@ The following property values are used in the Provisioned Target Configuration c
 
 >[!NOTE]
 >
->In AEM 6.3, you can select the Target Library file, [AT.JS](https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html), which is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. 
+>In AEM 6.3, you can select the Target Library file, [AT.JS](https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html), which is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications.
 >
 >AT.js offers several improvements over the mbox.js library:
 >
@@ -55,7 +55,7 @@ The following property values are used in the Provisioned Target Configuration c
 
 ### Provisioned Target Framework Properties {#provisioned-target-framework-properties}
 
-The Provisioned Target Framework that the Opt-in wizard creates is configured to send context data from the Profile Data store. The age and the gender data items of the store is sent to Target by default. Your solution likely requires additional parameters to be sent. 
+The Provisioned Target Framework that the Opt-in wizard creates is configured to send context data from the Profile Data store. The age and the gender data items of the store is sent to Target by default. Your solution likely requires additional parameters to be sent.
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -67,7 +67,7 @@ You can configure Adobe Target to use Adobe Analytics as the reporting source wh
 
 To do this, you need to specify which A4T cloud configuration to connect your Adobe Target cloud configuration with:
 
-1. Navigate to **Cloud Services** via the **AEM logo** &gt; **Tools** &gt; **Deployment** &gt; **Cloud Services**. 
+1. Navigate to **Cloud Services** via the **AEM logo** &gt; **Tools** &gt; **Deployment** &gt; **Cloud Services**.
 1. In the **Adobe Target** section, click **Configure Now**.
 1. Reconnect to your Adobe Target configuration.
 1. In the **A4T Analytics Cloud Configuration** drop-down menu, select the framework.
@@ -77,12 +77,12 @@ To do this, you need to specify which A4T cloud configuration to connect your Ad
    >Only analytics configurations that are enabled for A4T are available.
    >
    >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
-   > 
+   >
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
    >1. Tap or click **Save All**.
-   >    
+   >
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
@@ -128,19 +128,19 @@ Use the following procedure to create a Target cloud configuration in AEM:
     1. Select the **Adobe Target Configuration** template.
     1. Click **Create**.
 
-   The edit dialog opens. 
+   The edit dialog opens.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
    >[!NOTE]
    >
    >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
-   > 
+   >
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
    >1. Tap or click **Save All**.
-   
+
 1. In the dialog, provide values for these properties.
 
     * **Client Code**: the Target account Client Code
@@ -151,14 +151,14 @@ Use the following procedure to create a Target cloud configuration in AEM:
 
     * **Use accurate targeting:** By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
     * **Synchronize Segments from Adobe Target:** Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
-    * **Client library:** Select whether you want the mbox.js or AT.js client library. 
+    * **Client library:** Select whether you want the mbox.js or AT.js client library.
     * **Use DTM to deliver client library** - Select this option to use either AT.js or mbox.js from DTM or another tag managment system. You must [configure the DTM integration](/help/sites-administering/dtm.md) to use this option. Adobe recommends that you use DTM rather than AEM to deliver the library.
     * **Custom mbox.js**: Leave blank if you checked the DTM box or to use the default mbox.js. Alternatively upload your custom mbox.js. Only appears if you have selected mbox.js.
     * **Custom AT.js**: Leave blank if you checked the DTM box or to use the default AT.js. Alternatively upload your custom AT.js. Only appears if you have selected AT.js.
 
    >[!NOTE]
    >
-   >By default when you opt into the Adobe Target configuration wizard, Accurate Targeting is enabled. 
+   >By default when you opt into the Adobe Target configuration wizard, Accurate Targeting is enabled.
    >
    >Accurate targeting means that the cloud service configuration waits for the context to load before loading content. As a result, in terms of performance, accurate targeting may create a few millisecond delay before loading content.
    >
@@ -191,7 +191,7 @@ You can create multiple frameworks for a single Target configuration. Multiple f
    >
    >When mapping, parameters are passed to an mbox via simple strings. You cannot map arrays from ContextHub.
 
-   For example, to use **Profile Data** about your site vistors to control your Target campaign, drag the **Profile Data** component to the page. The profile data variables that are available for mapping to Target parameters appear. 
+   For example, to use **Profile Data** about your site vistors to control your Target campaign, drag the **Profile Data** component to the page. The profile data variables that are available for mapping to Target parameters appear.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -211,7 +211,7 @@ Associate your [AEM activities](/help/sites-authoring/activitylib.md) with your 
 
 >[!NOTE]
 >
->What types of activities are available is determined by the following:  
+>What types of activities are available is determined by the following:
 >
 >
 >* If the **xt_only** option is enabled on the Adobe Target tenant (clientcode) used on the AEM side to connect to Adobe Target, then you can create **only** XT activities in AEM.
@@ -252,7 +252,7 @@ When you associate a page with the framework, the child pages inherit the associ
 Perform the following tasks to troubleshoot problems that occur when connecting to Target:
 
 * Make sure that the user credentials that you provide are correct.
-* Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies. 
+* Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies.
 * Look for helpful messages in the AEM error log. The error.log file is located in the **crx-quickstart/logs** directory where AEM is installed.
 * When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
 

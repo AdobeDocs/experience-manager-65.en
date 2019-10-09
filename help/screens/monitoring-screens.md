@@ -6,7 +6,7 @@ seo-description: Follow this page to monitor and troubleshoot performance for yo
 uuid: 9e3d87c4-a5ff-43cb-a0b0-8919a6086586
 contentOwner: Jyotika Syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: troubleshoot
 discoiquuid: 58738b4e-90ba-4656-85a7-2283e54d7919
 ---
@@ -55,7 +55,7 @@ Additionally, click **Clear cache** and **Update** to clear the cache of your de
 
 Also, click the **...** from the top right corner of the **Device Details** panel to restart or refresh the status of your player.
 
-![chlimage_1-56](assets/chlimage_1-56.png) 
+![chlimage_1-56](assets/chlimage_1-56.png)
 
 ### Update Device Information {#update-device-information}
 
@@ -73,7 +73,7 @@ Click **Properties** to view the **Device Properties** dialog box. You can edit 
 >
 >To learn more about the events associated with device's automatic or manual updates, see the section ***Automatic versus Manual Updates from the Device Dashboard*** in [Managing Channels](managing-channels.md).
 
-![chlimage_1-59](assets/chlimage_1-59.png) 
+![chlimage_1-59](assets/chlimage_1-59.png)
 
 ### View Player Screenshot {#view-player-screenshot}
 
@@ -81,7 +81,7 @@ You can view the player screenshot from the device from the **PLAYER SCREENSHOT 
 
 Click (**...**) on the top right corner of the Player Screenshot panel and select **Refresh Screenshot **to view the snapshot of the running player.
 
-![chlimage_1-60](assets/chlimage_1-60.png) 
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Manage Preferences {#manage-preferences}
 
@@ -95,7 +95,7 @@ The **PREFERENCES** panel allows the user to change preferences for **Admin UI**
 
 Additionally, click **View Preferences** from the top right corner to update the server URL and the resolution.
 
-![chlimage_1-62](assets/chlimage_1-62.png) 
+![chlimage_1-62](assets/chlimage_1-62.png)
 
 ## Troubleshoot OSGI Settings {#troubleshoot-osgi-settings}
 
@@ -109,7 +109,7 @@ Follow the steps below to enable the Apache Sling Referrer Filter Allow Empty
 1. Check the **allow.empty **option.
 1. Click **Save**.
 
-![chlimage_1-63](assets/chlimage_1-63.png) 
+![chlimage_1-63](assets/chlimage_1-63.png)
 
 ### Recommendations {#recommendations}
 

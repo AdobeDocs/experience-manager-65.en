@@ -2,13 +2,13 @@
 cloud: experience-cloud
 product: Adobe Experience Manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets User Guide
+user-guide-title: AEM 6.5 Assets User Guide
 ---
 
-# AEM 6.4 Assets User Guide {#assets}
+# AEM 6.5 Assets User Guide {#assets}
 
 + [Assets user guide](home.md)
-+ [AEM 6.4 Assets release notes](../release-notes/assets.md)
++ [AEM 6.5 Assets release notes](../release-notes/assets.md)
 + [About DAM](assets.md)
 + [User experience improvements](ux-improvements.md)
 + [Best practices for assets](best-practices-for-assets.md)

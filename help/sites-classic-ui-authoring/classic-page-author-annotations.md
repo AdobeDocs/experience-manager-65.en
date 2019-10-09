@@ -6,7 +6,7 @@ seo-description: Adding content to the pages of your website is often subject to
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
@@ -67,27 +67,27 @@ The three icons at top left allow you to minimize the annotation (together with 
 >Sketches are not available in Internet Explorer so:
 >
 >* the icon will not be shown.
->* existing sketches, created in another browser, will not be shown. 
+>* existing sketches, created in another browser, will not be shown.
 >
 
 Sketches are a feature of annotations that allow you to create simple line graphics anywhere on the browser window (visible portion):
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* The cursor will change to a crosswire when you are in sketch mode. You can draw multiple distinct lines.  
+* The cursor will change to a crosswire when you are in sketch mode. You can draw multiple distinct lines.
 * The sketch line reflects the annotation color and can be either:
 
-    * freehand 
+    * freehand
 
       the default mode; finish by releasing the mouse button.
-  
-    * straight: 
+
+    * straight:
 
       hold down `ALT` and click the start and end points; finish with a double-click.
 
 * After you have exited sketch modus, you can click on a sketch line to select that sketch.
-* Move a sketch by selecting the sketch, then dragging it to the desired position.  
-* A sketch overlays the content. This means that within the 4 corners of the sketch you cannot click on the underlying paragraph; for example, if you need to edit, or access a link. If this becomes an issue (for example, you have a sketch covering a large area of the page) then minimize the appropriate annotation, as this will also minimize all related sketches, giving you access to the underlying area.  
+* Move a sketch by selecting the sketch, then dragging it to the desired position.
+* A sketch overlays the content. This means that within the 4 corners of the sketch you cannot click on the underlying paragraph; for example, if you need to edit, or access a link. If this becomes an issue (for example, you have a sketch covering a large area of the page) then minimize the appropriate annotation, as this will also minimize all related sketches, giving you access to the underlying area.
 * To delete an individual sketch - select the required sketch, then press the **Delete** key (**fn**-**backspace** on a MAC).
 
 * If you move, or copy, a paragraph then any related annotations and their sketches will also be moved, or copied; their position in relation to the paragraph will remain the same.

@@ -7,7 +7,7 @@ uuid: 72be06f3-3e90-495e-8425-72380d95704a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 ---
 
@@ -61,7 +61,7 @@ When you edit a policy, the changes affect documents that the policy currently p
 
 The status of the document determines when the change takes effect:
 
-* If the document is online, changes are applied immediately unless the user has the document open. In this case, the user must close the document for the changes to take effect. 
+* If the document is online, changes are applied immediately unless the user has the document open. In this case, the user must close the document for the changes to take effect.
 * If a recipient is using the document offline (for example, on a laptop computer), the changes take effect the next time the recipient takes the document online and synchronizes with document security by opening any policy-protected document.
 
 >[!NOTE]
@@ -72,7 +72,7 @@ When you edit policies, these restrictions apply:
 
 * Invited users can only edit policies if the administrator enables this capability. If you cannot edit policies, the Edit option will not be available.
 * Policy set coordinators can edit policies within policy sets only if they have the correct permissions. The super user or policy set administrator sets these permissions in the document security administrator interface.
-* If the policy has a watermark configured that the administrator deleted since the policy was created, this watermark will no longer be applied to documents if you edit and save the policy. Deleted watermarks remain in effect only for existing policies as long as you do not edit the policy. If you edit the policy, you must select another watermark to replace the deleted one. 
+* If the policy has a watermark configured that the administrator deleted since the policy was created, this watermark will no longer be applied to documents if you edit and save the policy. Deleted watermarks remain in effect only for existing policies as long as you do not edit the policy. If you edit the policy, you must select another watermark to replace the deleted one.
 * You cannot grant anonymous access to a document by editing the policy that is currently applied. If you edit the policy, users must still log in to access the document. To apply anonymous access to this document, first remove the policy in the client application and then apply another policy that permits anonymous access.
 * Policies that Acrobat auto-generates for the recipients of a document that is attached to an email message in Microsoft Outlook do not appear in the policy list. To access this policy, locate the document on the Documents page, open the Document Detail page, and click the policy name in the list of document details.
 
@@ -80,7 +80,7 @@ When you edit policies, these restrictions apply:
 
 1. On the document security page, click Policies and click one of these tabs:
 
-    * To create or edit a personal policy, click the My Policy tab. 
+    * To create or edit a personal policy, click the My Policy tab.
     * To create or edit a shared policy, if you have permission, click the Policy Sets tab and click the appropriate policy set name, then click the Policies tab.
 
 1. Click New or select the policy that you want to edit from the list.
@@ -129,7 +129,7 @@ In the Users and Groups area, you specify the users who have access to documents
 
 * In the Find box, type the user or group name or email address.
 * In the Using list, select Name or Email.
-* In the Type list, select User or Group. 
+* In the Type list, select User or Group.
 * Select the domain you want to search from the In list, and click Find.
 * When the results are returned, select the user or group to add, and click Add.
 
@@ -272,7 +272,7 @@ The Unchangeable Advanced Settings area contains the following settings. You can
 **Document Restrictions:** Select the PDF document components to encrypt. Other client applications encrypt the entire document but not linked or embedded files. You can choose from these options:
 
 * The entire document, including its attachments and metadata. *Metadata* is information about the document and its content that you can view through the document Properties dialog box or the Acrobat Advanced menu. In Acrobat, you can attach files of different types (for example, text, audio, and video files) to PDF documents.
-* The document and its attachments but not the metadata. 
+* The document and its attachments but not the metadata.
 * The document attachments only. You can encrypt the attachments to a PDF file without encrypting the document content.
 
 ## Enable or disable shared policies {#enable-or-disable-shared-policies}
@@ -299,7 +299,7 @@ When you create or edit a policy, a page is displayed where you can configure de
 
 The administrator can configure the following confidentiality settings for a policy:
 
-* General document confidentiality options, such as the document validity period and offline lease period 
+* General document confidentiality options, such as the document validity period and offline lease period
 * The authorized users, and the document restrictions and privileges for each of those users
 * Advanced document confidentiality options, including dynamic watermarks and document encryption
 
@@ -311,7 +311,7 @@ You can view more detailed information about a policy that appears in the list, 
 >
 >Policies that Acrobat auto-generates for the recipients of documents that are attached to email messages in Microsoft Outlook do not appear in the policy list. You can view these policies only by opening the Document Detail page for the associated document.
 
-1. On the document security page, click Policies and then click the My Policies tab. 
+1. On the document security page, click Policies and then click the My Policies tab.
 1. Complete the search information to search for personal policies.
 1. Select the appropriate policy from the list.
 1. On the Policy Detail page, you can see details about the policy, edit the policy, or view events related to the policy.
@@ -331,7 +331,7 @@ Administrators can search for shared policies and for personal policies that wer
    **Policy Name:** The name of the policy. You can search for part or all of the policy name.
 
 1. In the text box, type the corresponding value. For example, if you selected Policy Name, type the policy name you are searching for.
-1. In the Display list, select the number of results to display and then click Find. The search results are displayed. 
+1. In the Display list, select the number of results to display and then click Find. The search results are displayed.
 1. (Optional) To view policy details, click the policy.
 
 ## Copy a policy {#copy-a-policy}
@@ -340,8 +340,8 @@ You can copy an existing policy and save it with a new name and description. Cop
 
 External users can copy policies only if the administrator enables this capability. If you cannot create policies, the Copy option will not be available.
 
-1. On the document security page, click Policies and then click the My Policy tab. 
-1. Select the appropriate policy from the list. 
+1. On the document security page, click Policies and then click the My Policy tab.
+1. Select the appropriate policy from the list.
 1. On the Policy Detail page, click Copy.
 1. In the New Policy Name box, type the new policy name. Optionally, type a new Description.
 
@@ -372,9 +372,9 @@ You can delete policies that you created. Administrators can delete policies tha
 
 Invited users can delete policies only if the administrator enables this capability. If you cannot delete policies, the delete option will not be available.
 
-1. On the document security page, click Policies. 
+1. On the document security page, click Policies.
 1. Click the My Policy tab.
-1. To delete a shared policy, click the Policy Sets tab and click the appropriate policy set name. 
+1. To delete a shared policy, click the Policy Sets tab and click the appropriate policy set name.
 1. Select the check box beside the appropriate policy and click Delete, and then click OK.
 
 >[!NOTE]
@@ -387,6 +387,6 @@ You can sort the policy list by column heading to find policies more easily. A t
 
 1. On the document security page, click Policies and click the Policy Set tab.
 1. Select a policy set and then click the Policies tab.
-1. Click the appropriate column heading. 
+1. Click the appropriate column heading.
 1. To change the sort order, click the column again.
 

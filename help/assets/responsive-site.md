@@ -5,7 +5,7 @@ description: How to use the responsive code feature to deliver optimized images
 seo-description: How to use the responsive code feature to deliver optimized images
 uuid: 7c6baef5-7513-4644-94ed-2383e8724c17
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
@@ -27,7 +27,7 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
-1. Select a responsive image preset. The **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons appear. 
+1. Select a responsive image preset. The **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons appear.
 
    ![chlimage_1-409](assets/chlimage_1-409.png)
 

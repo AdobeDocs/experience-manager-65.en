@@ -5,7 +5,7 @@ description: The Author Environment and Tools section provides information about
 seo-description: The Author Environment and Tools section provides information about using Content Finder to find and use assets when editing pages. AEM Assets provides other methods for working with assets.
 uuid: 65d1e593-9957-45b7-8831-45055aa41a1d
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: f3b4d49b-5873-4825-91b9-71a3204516b1

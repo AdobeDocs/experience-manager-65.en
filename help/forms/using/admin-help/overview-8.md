@@ -7,7 +7,7 @@ uuid: 7890b0a6-bae5-4ad5-ae41-503b988ba3da
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 ---
 
@@ -29,4 +29,4 @@ On the Output pages in administration console, you can perform several tasks:
 * Specify XCI configuration options. (See [Specify XCI configuration options](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options).)
 * Specify security settings. (See [Specify security settings](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings).)
 
-After you change the settings, click Save to apply them to Output. You do not need to restart the server for the changes to take effect, but you may need to restart the Output service when configuring cache settings. 
+After you change the settings, click Save to apply them to Output. You do not need to restart the server for the changes to take effect, but you may need to restart the Output service when configuring cache settings.

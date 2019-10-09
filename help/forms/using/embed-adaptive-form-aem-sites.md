@@ -5,7 +5,7 @@ description: You can embed adaptive forms in AEM sites pages. Users can fill and
 seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 topic-tags: interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
@@ -21,10 +21,10 @@ For information about embedding an adaptive form in an external web page, see [E
 
 In AEM Sites page, you can add an adaptive form or interactive communication using:
 
-* **[AEM Forms Container component](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** 
-  AEM Forms provides a component that you can add to your site pages. The AEM Forms Container component lets you embed an adaptive form and interactive communication.  
+* **[AEM Forms Container component](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+  AEM Forms provides a component that you can add to your site pages. The AEM Forms Container component lets you embed an adaptive form and interactive communication.
 
-* **[Asset browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** 
+* **[Asset browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
   All the forms and interactive communications you create are available under Assets. You can drag-drop the form as an asset on your page.
 
 ## Prerequisites {#prerequisites}
@@ -49,7 +49,7 @@ To embed an adaptive form or interactive communication using AEM Forms Container
 1. Tap the embedded AEM Forms Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit AEM Forms Container]** dialog opens.
 1. In the Edit AEM Forms Container dialog, specify the following.
 
-    * **Asset Type:** Select the type of asset to embed. The options are adaptive form and interactive communication 
+    * **Asset Type:** Select the type of asset to embed. The options are adaptive form and interactive communication
     * **Asset Path**: Browse and select the adaptive form or interactive communication to embed. It is auto-populated if you dropped it from the Assets browser.
     * (Adaptive form only) **Post Submission**: Select the action to trigger on form submission. You can choose to show a thank you message or a thank you page.
 

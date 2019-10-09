@@ -7,7 +7,7 @@ uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 ---
 
@@ -36,7 +36,7 @@ For each stalled item, the list shows the following information:
 
 You can do the following tasks on the Stalled Operations or Stalled Branches page:
 
-* Select an error to view details about it. When you select an error, the Error Details page appears. 
+* Select an error to view details about it. When you select an error, the Error Details page appears.
 * Terminate or retry stalled operations or retry stalled branches.
 
 ## Terminating or retrying stalled operations or branches {#terminating-or-retrying-stalled-operations-or-branches}

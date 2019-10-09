@@ -5,7 +5,7 @@ description: When a site is configured to use ASRP or MSRP, the actual UGC is no
 seo-description: When a site is configured to use ASRP or MSRP, the actual UGC is not be stored in AEM's node store (JCR)
 uuid: 5f9f8c9b-4c6a-45b0-96ff-14934380eba7
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: ee786a5c-b985-4d78-9063-6c79ae5e13e6

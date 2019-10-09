@@ -5,7 +5,7 @@ description: How to author a new AEM Communities site
 seo-description: How to author a new AEM Communities site
 uuid: b8557416-cae4-489e-ab3b-e94d56686b7a
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
@@ -26,7 +26,7 @@ To get started creating a new community site:
 
 * Select the `Create` button
 
-![createcommunitysite](assets/createcommunitysite.png) 
+![createcommunitysite](assets/createcommunitysite.png)
 
 ### Step 1: Site Template {#step-site-template}
 
@@ -36,11 +36,11 @@ On the [Site Template step](sites-console.md#step2013asitetemplate), enter a tit
 
 * **[!UICONTROL Community Site Title]**: `Getting Started Tutorial`
 
-* **[!UICONTROL Community Site Description]**: `A site for engaging with the community.`  
+* **[!UICONTROL Community Site Description]**: `A site for engaging with the community.`
 
-* **[!UICONTROL Community Site Root]**: (leave blank for default root `/content/sites`)  
+* **[!UICONTROL Community Site Root]**: (leave blank for default root `/content/sites`)
 
-* **[!UICONTROL Cloud Configurations]**: (leave blank if no cloud configurations are specified) provide path to the specified cloud configurations. 
+* **[!UICONTROL Cloud Configurations]**: (leave blank if no cloud configurations are specified) provide path to the specified cloud configurations.
 * **[!UICONTROL Community Site Base Language]**: (leave untouched for single language: English) use the pull down menu to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
 
 * **[!UICONTROL Community Site Name]**: engage
@@ -62,7 +62,7 @@ The Design step is presented in two sections for selecing the theme and branding
 
 Select the desired style to apply to the template. When selected, the theme will be overlayed with a check mark.
 
-![sitetheme](assets/sitetheme.png) 
+![sitetheme](assets/sitetheme.png)
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
@@ -92,7 +92,7 @@ Check all checkboxes for [User Management](sites-console.md#user-management)
 >
 >For a production environment, it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](social-login.md).
 
-![createsitesettings](assets/createsitesettings.png) 
+![createsitesettings](assets/createsitesettings.png)
 
 #### TAGGING {#tagging}
 
@@ -103,7 +103,7 @@ Finding namespaces is easy using type-ahead search. For example,
 * Type 'tut'
 * Select `Tutorial`
 
-![chlimage_1-355](assets/chlimage_1-355.png) 
+![chlimage_1-355](assets/chlimage_1-355.png)
 
 #### ROLES {#roles}
 
@@ -120,13 +120,13 @@ For example,
 >
 >[Tunnel service](https://helpx.adobe.com/experience-manager/6-3/communities/using/deploy-communities.html#tunnel-service-on-author) allows selection of members and groups existing only in the  publish  environment.
 
-![community_roles-1](assets/community_roles-1.png) 
+![community_roles-1](assets/community_roles-1.png)
 
 #### MODERATION {#moderation}
 
 Accept the default global settings for [moderating](sites-console.md#moderation) user generated content (UGC).
 
-![chlimage_1-356](assets/chlimage_1-356.png) 
+![chlimage_1-356](assets/chlimage_1-356.png)
 
 #### ANALYTICS {#analytics}
 
@@ -134,7 +134,7 @@ If Adobe Analytics is licensed and an Analytics cloud service and framework have
 
 See [Analytics Configuration for Communities Features](analytics.md).
 
-![chlimage_1-357](assets/chlimage_1-357.png) 
+![chlimage_1-357](assets/chlimage_1-357.png)
 
 #### TRANSLATION {#translation}
 
@@ -147,7 +147,7 @@ The [Translation settings](sites-console.md#translation) specify the base langua
 * Select **[!UICONTROL Translate entire page]**
 * Leave default persistence option
 
-![chlimage_1-358](assets/chlimage_1-358.png) 
+![chlimage_1-358](assets/chlimage_1-358.png)
 
 #### ENABLEMENT {#enablement}
 
@@ -165,7 +165,7 @@ Select **[!UICONTROL Create]**.
 
 When the process completes, the folder for the new site is displayed in the Communities - Sites console.
 
-![communitiessitesconsole](assets/communitiessitesconsole.png) 
+![communitiessitesconsole](assets/communitiessitesconsole.png)
 
 ## Publish the New Community Site {#publish-the-new-community-site}
 
@@ -181,22 +181,22 @@ On selecting the fourth ellipses icon (More Actions), Export Site and Delete Sit
 
 From left to right they are:
 
-* **Open Site** 
+* **Open Site**
   Select the pencil icon to open the community site in author edit mode, to add and/or configure page components
 
-* **Edit Site** 
+* **Edit Site**
   Select the properties icon to open the community site for modification of properties, such as the title or to change the theme
 
-* **Publish Site** 
-  Select the world icon to publish the community site (for example if your publish server is running on your local machine, then to localhost:4503 by default)  
+* **Publish Site**
+  Select the world icon to publish the community site (for example if your publish server is running on your local machine, then to localhost:4503 by default)
 
-* **Export Site** 
+* **Export Site**
   Select the export icon to create a package of the community site that is both stored in [package manager](../../help/sites-administering/package-manager.md) and downloaded.
 
   Note that UGC is not included in the site package.
 
-* **Delete Site**  
-  
+* **Delete Site**
+
   select the delete icon to delete the community site from within **[!UICONTROL Communities > Sites console]**. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
 ![siteactions-1](assets/siteactions-1.png)
@@ -212,7 +212,7 @@ From left to right they are:
 >1. Select **[!UICONTROL Default Agent (publish)]**
 >1. Next to **[!UICONTROL Settings]** select **[!UICONTROL Edit]**
 >1. In pop up dialog for Agent Settings, select Transport tab
->1. In URI, change the port number, 4503, to the desired port number 
+>1. In URI, change the port number, 4503, to the desired port number
 >
 >For example, to use port 6103: `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
 >
@@ -227,7 +227,7 @@ After ensuring the publish server is running, select the world icon to publish t
 
 When the community site has been successfully published, a message briefly appears:
 
-![chlimage_1-361](assets/chlimage_1-361.png) 
+![chlimage_1-361](assets/chlimage_1-361.png)
 
 ### Notice New Community User Groups {#notice-new-community-user-groups}
 
@@ -248,11 +248,11 @@ Notice that [Aaron McDonald](tutorials.md#demo-users) is a member of
 * Community Engage Moderators
 * Community Engage Members (indirectly as a member of Moderators group)
 
-![chlimage_1-362](assets/chlimage_1-362.png) 
+![chlimage_1-362](assets/chlimage_1-362.png)
 
 #### http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-363](assets/chlimage_1-363.png) 
+![chlimage_1-363](assets/chlimage_1-363.png)
 
 ## Configure for Authentication Error {#configure-for-authentication-error}
 
@@ -280,9 +280,9 @@ To get started:
     * Select **[!UICONTROL Create Node]**
 
         * **Name** localhost.4503
-          
+
           (do *not* use `:`)
-        
+
         * **Type** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. With newly created `localhost.4503` node selected
@@ -291,7 +291,7 @@ To get started:
 
         * **Name** sling:match
         * **Type** String
-        * **Value** localhost.4503/\$  
+        * **Value** localhost.4503/\$
 
           (must end with '$' char)
 
@@ -311,13 +311,13 @@ To get started:
 >
 >To disable, simply prepend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **[!UICONTROL Save All]**.
 
-![chlimage_1-364](assets/chlimage_1-364.png) 
+![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Troubleshooting: Error Saving Map {#troubleshooting-error-saving-map}
 
 If unable to save changes, be sure the node name is `localhost.4503`, with a 'dot' separator, and not `localhost:4503` with a 'colon' separator, as `localhost`is not a valid namespace prefix.
 
-![chlimage_1-365](assets/chlimage_1-365.png) 
+![chlimage_1-365](assets/chlimage_1-365.png)
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 

@@ -5,7 +5,7 @@ description: View Comments page
 seo-description: View Comments page
 uuid: 1f043133-51c6-41e8-bbdb-d9fd7780136b
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: b3cb8f12-197e-4f5e-bd7d-70b55e76b0ca

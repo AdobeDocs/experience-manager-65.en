@@ -5,7 +5,7 @@ description: Integrating Search&amp;Promote capabilities in your web site, you c
 seo-description: Integrating Search&amp;Promote capabilities in your web site, you can use the Search&amp;Promote components to add features to your pages such as keyword search, search results page search refinement, and banners.
 uuid: 8831aa56-9d7f-44ca-9d32-5901bf762154
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
@@ -15,7 +15,7 @@ discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 
 To integrate Search&amp;Promote capabilities in your web site, use the [!UICONTROL Search&amp;Promote] components to add the following features to your pages:
 
-* Keyword search  
+* Keyword search
 * Search results page
 * Search refinement
 * Banners
@@ -24,45 +24,45 @@ Note that you can use Search&amp;Promote capabilities only if your AEM administr
 
 Facets are configured on the Search&amp;Promote server, as is the information that each component provides. The following table provides a brief description of each component. Subsequent sections provide detailed information about their use.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Search&amp;Promote component</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Banners</td> 
-   <td>Displays banner advertisements. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Breadcrumbs</td> 
-   <td>Displays the search keyword and the sequence of filters that the user has applied to search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Checkbox List-Facet</td> 
-   <td>A list of checkboxes for selecting facets for filtering search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Dropdown Facet</td> 
-   <td>A drop-downl list of facets for filtering search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Link List Facet</td> 
-   <td>A list of facet links for filtering search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Pagination</td> 
-   <td>Controls for navigating through pages of search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Results</td> 
-   <td>Displays the results of a keyword search.</td> 
-  </tr> 
-  <tr> 
-   <td>Search</td> 
-   <td>Adds a search field to the page.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Search&amp;Promote component</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Banners</td>
+   <td>Displays banner advertisements. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td>
+  </tr>
+  <tr>
+   <td>Breadcrumbs</td>
+   <td>Displays the search keyword and the sequence of filters that the user has applied to search results.</td>
+  </tr>
+  <tr>
+   <td>Checkbox List-Facet</td>
+   <td>A list of checkboxes for selecting facets for filtering search results.</td>
+  </tr>
+  <tr>
+   <td>Dropdown Facet</td>
+   <td>A drop-downl list of facets for filtering search results.</td>
+  </tr>
+  <tr>
+   <td>Link List Facet</td>
+   <td>A list of facet links for filtering search results.</td>
+  </tr>
+  <tr>
+   <td>Pagination</td>
+   <td>Controls for navigating through pages of search results.</td>
+  </tr>
+  <tr>
+   <td>Results</td>
+   <td>Displays the results of a keyword search.</td>
+  </tr>
+  <tr>
+   <td>Search</td>
+   <td>Adds a search field to the page.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Creating the search results page {#creating-the-search-results-page}
@@ -79,9 +79,9 @@ The **[!UICONTROL Pagination]** component enables users to navigate multiple pag
 
 You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
 
-* **[!UICONTROL Hide single result page]** &ndash; Select this option to hide the page navigation controls when the search returns a single page of results.  
-* **[!UICONTROL Hide First/Last]** &ndash; Select this option to prevent users from jumping to the first or last page of results.  
-* **[!UICONTROL Hide Previous/Next]** &ndash; Determines whether users can navigate results pages relative to the current page.  
+* **[!UICONTROL Hide single result page]** &ndash; Select this option to hide the page navigation controls when the search returns a single page of results.
+* **[!UICONTROL Hide First/Last]** &ndash; Select this option to prevent users from jumping to the first or last page of results.
+* **[!UICONTROL Hide Previous/Next]** &ndash; Determines whether users can navigate results pages relative to the current page.
 * **[!UICONTROL Hide view all]** &ndash; Determines whether the user can consolidate all search results on a single page. Typically, providing paged data makes more efficient use of server resources. Select this option to prevent the transfer of large data sets in one response message.
 
 ## Enabling the filtering of results by facets {#enabling-the-filtering-of-results-by-facets}
@@ -106,13 +106,13 @@ The drop-down list is populated with the facets that are associated with all sea
 
 The **[!UICONTROL Link List Facet]** component enables customers to progressively narrow their focus on items that are categorized under multiple facet members or facets.
 
-Facet members appear as a list of links. The text of each link is the name of a facet member that is associated with the current search results. When a customer clicks a facet link, the page reloads and a subset of the search results appears. The list of links is updated accordingly enabling an even narrower focus. 
+Facet members appear as a list of links. The text of each link is the name of a facet member that is associated with the current search results. When a customer clicks a facet link, the page reloads and a subset of the search results appears. The list of links is updated accordingly enabling an even narrower focus.
 
 ![sandplinklistcomp](assets/sandplinklistcomp.png)
 
 The links in the list also changes when a filter is applied from a different type of [!UICONTROL Search&amp;Promote] component. The use of multiple types filter components can provide effective filter combinations.
 
-The **[!UICONTROL Breadcrumbs]** component enables customers to see the filters that are currently applied to search results, in the order in which they were applied. Customers can click the items in the breadcrumb to revert to that filter combination. 
+The **[!UICONTROL Breadcrumbs]** component enables customers to see the filters that are currently applied to search results, in the order in which they were applied. Customers can click the items in the breadcrumb to revert to that filter combination.
 
 ![sandpbreadcrumbcomp](assets/sandpbreadcrumbcomp.png)
 
@@ -127,10 +127,10 @@ The **[!UICONTROL Search]** component enables customers to perform keyword searc
 
 Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
 
-* **[!UICONTROL Result Page Path]** &ndash; The path to the page that displays search results.  
+* **[!UICONTROL Result Page Path]** &ndash; The path to the page that displays search results.
 * **[!UICONTROL Enable Auto-Complete]** &ndash; Select to cause suggested search keywords to appear when the customer begins typing in the search box.
 
-![sandpsearchcomp](assets/sandpsearchcomp.png) 
+![sandpsearchcomp](assets/sandpsearchcomp.png)
 
 ## Adding banners {#adding-banners}
 

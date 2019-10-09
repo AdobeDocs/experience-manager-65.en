@@ -6,7 +6,7 @@ seo-description: null
 uuid: 8c2020df-ea3c-49fa-916f-38a458f40d2b
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 ---
@@ -44,7 +44,7 @@ You can apply usage rights to PDF documents using the Acrobat Reader DC extensio
 To apply usage rights to a PDF document, perform the following steps:
 
 1. Include project files.
-1. Create a Acrobat Reader DC extensions Client object. 
+1. Create a Acrobat Reader DC extensions Client object.
 1. Retrieve a PDF document.
 1. Specify usage rights to apply.
 1. Apply usage rights to the PDF document.
@@ -96,11 +96,11 @@ Apply usage rights to a PDF document by using the Acrobat Reader DC Extensions A
 
 1. Include project files
 
-   Include client JAR files, such as adobe-reader-extensions-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-reader-extensions-client.jar, in your Java project’s class path.
 
 1. Create a Acrobat Reader DC extensions Client object.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `ReaderExtensionsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Retrieve a PDF document.
@@ -110,7 +110,7 @@ Apply usage rights to a PDF document by using the Acrobat Reader DC Extensions A
 
 1. Specify usage rights to apply.
 
-    * Create a `UsageRights` object that represents usage rights by using its constructor. 
+    * Create a `UsageRights` object that represents usage rights by using its constructor.
     * For each usage right to apply, invoke a corresponding method that belongs to the `UsageRights` object. For example, to add the `enableFormFillIn` usage right, invoke the `UsageRights` object’s `enableFormFillIn` method and pass `true`. (Repeat this step for each usage right to apply).
 
 1. Apply usage rights to the PDF document.
@@ -159,15 +159,15 @@ Apply usage rights to a PDF document by using the Acrobat Reader DC Extensions A
 
 1. Create a Acrobat Reader DC extensions Client object.
 
-    * Create a `ReaderExtensionsServiceClient` object by using its default constructor. 
-    * Create a `ReaderExtensionsServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Ensure you specify `?blob=mtom`.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ReaderExtensionsServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `ReaderExtensionsServiceClient` object by using its default constructor.
+    * Create a `ReaderExtensionsServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Ensure you specify `?blob=mtom`.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ReaderExtensionsServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Retrieve a PDF document.
@@ -180,12 +180,12 @@ Apply usage rights to a PDF document by using the Acrobat Reader DC Extensions A
 
 1. Specify usage rights to apply.
 
-    * Create a `UsageRights` object that represents usage rights by using its constructor. 
+    * Create a `UsageRights` object that represents usage rights by using its constructor.
     * For each usage right to apply, assign the value `true` to the corresponding data member that belongs to the `UsageRights` object. For example, to add the `enableFormFillIn` usage right, assign `true` to the `UsageRights` object’s `enableFormFillIn` data member. (Repeat this step for each usage right to apply).
 
 1. Apply usage rights to the PDF document.
 
-    * Create a `ReaderExtensionsOptionSpec` object by using its constructor. This object contains run-time options that are required by the Acrobat Reader DC extensions service. 
+    * Create a `ReaderExtensionsOptionSpec` object by using its constructor. This object contains run-time options that are required by the Acrobat Reader DC extensions service.
     * Assign the `UsageRights` object to the `ReaderExtensionsOptionSpec` object’s `usageRights` data member.
     * Assign a string value that specifies the message that a user sees when the rights-enabled PDF document is opened in Adobe Reader to the `ReaderExtensionsOptionSpec` object’s `message` data member.
     * Apply usage rights to the PDF document by invoking the `ReaderExtensionsServiceClient` object’s `applyUsageRights` method and passing the following values:
@@ -226,7 +226,7 @@ You can remove usage rights from a rights-enabled document. Removing usage-right
 To remove usage rights from a rights-enabled PDF document, perform the following steps:
 
 1. Include project files.
-1. Create a Acrobat Reader DC extensions Client object. 
+1. Create a Acrobat Reader DC extensions Client object.
 1. Retrieve a rights-enabled PDF document.
 1. Remove usage rights from the PDF document.
 1. Save the PDF document.
@@ -271,15 +271,15 @@ Remove usage rights from a rights-enabled PDF document by using the Acrobat Read
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-reader-extensions-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-reader-extensions-client.jar, in your Java project’s class path.
 
 1. Create a Acrobat Reader DC extensions Client object.
 
-   Create a `ReaderExtensionsServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ReaderExtensionsServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Retrieve a PDF document.
 
-    * Create a `java.io.FileInputStream` object that represent the rights-enabled PDF document by using its constructor and passing a string value that specifies the location of the PDF document. 
+    * Create a `java.io.FileInputStream` object that represent the rights-enabled PDF document by using its constructor and passing a string value that specifies the location of the PDF document.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
 
 1. Remove usage rights from the PDF document.
@@ -315,21 +315,21 @@ Remove usage rights from a rights-enabled PDF document by using the Acrobat Read
 
 1. Create a Acrobat Reader DC extensions Client object.
 
-    * Create a `ReaderExtensionsServiceClient` object by using its default constructor. 
-    * Create a `ReaderExtensionsServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Ensure you specify `?blob=mtom`.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ReaderExtensionsServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `ReaderExtensionsServiceClient` object by using its default constructor.
+    * Create a `ReaderExtensionsServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Ensure you specify `?blob=mtom`.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ReaderExtensionsServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Retrieve a PDF document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the rights-enabled PDF document from which usage rights are removed.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file.
     * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
@@ -365,7 +365,7 @@ You can retrieve information about the credential that was used to apply usage r
 To retrieve information about the credential that was used to apply usage rights to a PDF document, perform the following steps:
 
 1. Include project files.
-1. Create a Acrobat Reader DC extensions Client object. 
+1. Create a Acrobat Reader DC extensions Client object.
 1. Retrieve a rights-enabled PDF document.
 1. Retrieve information about the credential.
 
@@ -388,7 +388,7 @@ After you retrieve a rights-enabled PDF document, you can obtain information abo
 * The message that is displayed within Adobe Reader when the rights-enabled PDF document is opened.
 * The date after which the credential is no longer valid.
 * The date before which the credential is not valid.
-* The usage rights that were set for this rights-enabled PDF document. 
+* The usage rights that were set for this rights-enabled PDF document.
 * The number of times that the credential has been used.
 
 **See also**
@@ -450,30 +450,30 @@ Retrieve credential information using the Acrobat Reader DC extensions API (web 
 
 1. Create a Acrobat Reader DC extensions Client object.
 
-    * Create an `ReaderExtensionsServiceClient` object by using its default constructor. 
+    * Create an `ReaderExtensionsServiceClient` object by using its default constructor.
     * Create a `ReaderExtensionsServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Ensure you specify `?blob=mtom`.)
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ReaderExtensionsServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ReaderExtensionsServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Retrieve a PDF document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a rights-enabled PDF document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the rights-enabled PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
 
 1. Remove usage rights from the PDF document.
 
     * Retrieve information about the credential used to apply usage-rights to the PDF document by invoking the `ReaderExtensionsServiceClient` object’s `getDocumentUsageRights` method and passing the `com.adobe.idp.Document` object that contains the rights-enabled PDF document. This method returns a `GetUsageRightsResult` object that contains credential information.
-    * Retrieve the date after which the credential is no longer valid by getting the value of the `GetUsageRightsResult` object’s `notAfter` data member. The data type of this data member is `System.DateTime`. 
-    * Retrieve the message that is displayed when the rights-enabled PDF document is opened in Adobe Reader by getting the value of the `GetUsageRightsResult` object’s `message` data member. The data type of this data member is a string. 
+    * Retrieve the date after which the credential is no longer valid by getting the value of the `GetUsageRightsResult` object’s `notAfter` data member. The data type of this data member is `System.DateTime`.
+    * Retrieve the message that is displayed when the rights-enabled PDF document is opened in Adobe Reader by getting the value of the `GetUsageRightsResult` object’s `message` data member. The data type of this data member is a string.
     * Retrieve the number of times that the credential is used by getting the value of the `GetUsageRightsResult` object’s `useCount` data member. The data type of this data member is an integer.
 
 **See also**

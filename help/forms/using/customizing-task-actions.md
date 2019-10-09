@@ -5,7 +5,7 @@ description: You can customize appearance of the task actions, use only images f
 seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 ---
@@ -26,7 +26,7 @@ To customize the text style, add the following code snippet in the `/apps/ws/css
     top: 16px;
     display: none;
 }
- 
+
 #taskarea .taskActionsPopUp ul{
     list-style-type: none;
     padding: 0px;
@@ -36,21 +36,21 @@ To customize the text style, add the following code snippet in the `/apps/ws/css
     box-shadow: inset 0px 0px 11px 2px #1C1C1C;
     height:34px;
 }
- 
+
 #taskarea .taskActionsPopUp li{
     width: auto;
     height: 34px;
     float: left;
     border-right: 1px solid #B2B2B2;
 }
- 
+
 #taskarea .taskActionsPopUp li i{
     height: 34px;
     width: 20px;
     float: left;
     cursor: pointer;
 }
- 
+
 #taskarea .taskActionsPopUp li a{
     color: white;
     text-decoration: none;
@@ -62,7 +62,7 @@ To customize the text style, add the following code snippet in the `/apps/ws/css
     max-width: 150px;
     margin: 8px 10px 0px 4px;
 }
- 
+
 /*-------- For Task Actions visible in task Details task action popup ----------------------------------------------------*/
 .task .taskActionsPopUp {
     position: absolute;
@@ -73,19 +73,19 @@ To customize the text style, add the following code snippet in the `/apps/ws/css
     background: #2f2f2f;
     display:none;
 }
- 
+
 .task .taskActionsPopUp ul{
     list-style: none outside none;
     font-size: 13px;
     width: 160px;
 }
- 
+
 .task .taskActionsPopUp li{
     height: 33px;
     border-bottom: 1px solid #474747;
     width: 20px
 }
- 
+
 .task .taskActionsPopUp ul a{
     white-space: nowrap;
     overflow: hidden;
@@ -168,12 +168,12 @@ To show only images for actions, customize the images used in route actions. For
            <!--END_TASKACTIONS-->
            <%}%>
        </div>
-    
+
    ```
 
    ```
    //New code
-    
+
    <div class="taskActionsPopUp">
            <!--START_TASKACTIONS-->
            <ul>
@@ -215,15 +215,15 @@ To show only images for actions, customize the images used in route actions. For
        font-size: 13px;
        width: 160px;
    }
-    
+
    To
    .task .taskActionsPopUp ul{
        list-style: none outside none;
        font-size: 13px;
    }
-    
+
    AND
-    
+
    .task .taskActionsPopUp ul a{
        white-space: nowrap;
        overflow: hidden;
@@ -238,9 +238,9 @@ To show only images for actions, customize the images used in route actions. For
        cursor: pointer;
        border-bottom: 1px solid #474747;
    }
-    
+
    To
-    
+
    .task .taskActionsPopUp ul a{
        white-space: nowrap;
        overflow: hidden;
@@ -270,7 +270,7 @@ Perform the following steps to customize Details task actions pop-up menu:
         <!--START_ACTIONBUTTONGROUP-->
         <ul>
             <li class="leftArrow"><a href="javascript:void(0);"><</a></li>
-             
+
             <% if (isOwner && showDirectActions) { %>
                 <% if (routeList === null) {%>
                     <li class="routeAction">
@@ -284,7 +284,7 @@ Perform the following steps to customize Details task actions pop-up menu:
                     <%}%>
                 <%}%>
              <%}%>
-              
+
             <% if (isOwner || (showACLActions && availableCommands.taskACLCommands !== null && availableCommands.taskACLCommands !== undefined && availableCommands.taskACLCommands.length > 0) ||  availableCommands.otherCommands.length > 2) { %>
                 <%for (var i = 0; showACLActions && i < availableCommands.taskACLCommands.length; i++) {%>
                     <li title="<%= $.t('taskaction.taskaclcommand.'+availableCommands.taskACLCommands[i]+'.tooltip')%>">
@@ -292,7 +292,7 @@ Perform the following steps to customize Details task actions pop-up menu:
                         <a href="javascript:void(0);" value="<%= availableCommands.taskACLCommands[i]%>" data-action="taskACL"><%= $.t('taskaction.taskaclcommand.'+availableCommands.taskACLCommands[i]+'.value')%></a>
                     </li>
                 <%}%>
-                 
+
                 <%for (var i = 0; i < availableCommands.otherCommands.length; i++) {%>
                     <li title="<%= $.t('taskaction.othercommand.'+availableCommands.otherCommands[i]+'.tooltip')%>">
                         <i class="<%= availableCommands.otherCommands[i]%>" value="<%= availableCommands.otherCommands[i]%>" data-action="other"/>
@@ -300,7 +300,7 @@ Perform the following steps to customize Details task actions pop-up menu:
                     </li>
                 <%}%>
             <%}%>
-             
+
             <li class="rightArrow"><a href="javascript:void(0);">></a></li>
         </ul>
         <!--END_ACTIONBUTTONGROUP-->
@@ -310,12 +310,12 @@ Perform the following steps to customize Details task actions pop-up menu:
 
 ```
 //New code
- 
+
 <div class="taskActionsPopUp">
         <!--START_ACTIONBUTTONGROUP-->
         <ul>
             <li class="leftArrow"><a href="javascript:void(0);"><</a></li>
-             
+
             <% if (isOwner && showDirectActions) { %>
                 <% if (routeList === null) {%>
                     <li class="routeAction">
@@ -329,7 +329,7 @@ Perform the following steps to customize Details task actions pop-up menu:
                     <%}%>
                 <%}%>
              <%}%>
-              
+
             <% if (isOwner || (showACLActions && availableCommands.taskACLCommands !== null && availableCommands.taskACLCommands !== undefined && availableCommands.taskACLCommands.length > 0) ||  availableCommands.otherCommands.length > 2) { %>
                 <%for (var i = 0; showACLActions && i < availableCommands.taskACLCommands.length; i++) {%>
                     <li title="<%= $.t('taskaction.taskaclcommand.'+availableCommands.taskACLCommands[i]+'.tooltip')%>">
@@ -338,7 +338,7 @@ Perform the following steps to customize Details task actions pop-up menu:
                         </a>
                     </li>
                 <%}%>
-                 
+
                 <%for (var i = 0; i < availableCommands.otherCommands.length; i++) {%>
                     <li title="<%= $.t('taskaction.othercommand.'+availableCommands.otherCommands[i]+'.tooltip')%>">
                         <a href="javascript:void(0);" value="<%= availableCommands.otherCommands[i]%>" data-action="other">
@@ -347,7 +347,7 @@ Perform the following steps to customize Details task actions pop-up menu:
                     </li>
                 <%}%>
             <%}%>
-             
+
             <li class="rightArrow"><a href="javascript:void(0);">></a></li>
         </ul>
         <!--END_ACTIONBUTTONGROUP-->

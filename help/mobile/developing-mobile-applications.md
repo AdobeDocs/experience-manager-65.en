@@ -6,7 +6,7 @@ seo-description: Follow this page to start developing mobile application in AEM 
 uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 ---

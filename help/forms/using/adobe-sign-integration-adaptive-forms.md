@@ -5,7 +5,7 @@ description: Learn how to configure Adobe Sign for AEM Forms
 seo-description: Learn how to configure Adobe Sign for AEM Forms
 uuid: 9efd5c44-3d87-4c56-aa6c-e65397fff243
 contentOwner: sashanka
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 ---
@@ -98,9 +98,9 @@ An Adobe Sign enabled adaptive form is submitted only after all the signers comp
 1. Log in to AEM Forms server with admin credentials and navigate to **[!UICONTROL Tools** >  **Operations** >  **Web Console]**.
 
    You can also open the following URL in a browser window:
-   
-   `https://[localhost]:[port]/system/console/configMgr` 
+
+   `https://[localhost]:[port]/system/console/configMgr`
 
 1. Locate and open the **[!UICONTROL Adobe Sign Configuration Service]** option. Specify a [cron expression](https://en.wikipedia.org/wiki/Cron#CRON_expression) in the **[!UICONTROL Status Update Scheduler Expression]** field and click **[!UICONTROL Save]**. For example, to run the configuration service daily at 00:00 am, specify `0 0 0 1/1 * ? *` in the **[!UICONTROL Status Update Scheduler Expression]** field.
 
-Default interval to sync status of Adobe Sign is now changed. 
+Default interval to sync status of Adobe Sign is now changed.

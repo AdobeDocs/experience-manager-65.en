@@ -5,7 +5,7 @@ description: Tasks represent items of work to be done on content and are used in
 seo-description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
 uuid: df4efb3f-8298-4159-acfe-305ba6b46791
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
@@ -21,17 +21,17 @@ Tasks are also used in projects to determine the level of completeness of curren
 
 You can track project progress by looking at the active/completed tasks inside a project represented by the **Tasks** tile. Project progress can be determined by:
 
-* **Task Tile:** An overall progress of the project is depicted in the Task Tile available on the project details page.  
+* **Task Tile:** An overall progress of the project is depicted in the Task Tile available on the project details page.
 
 * **Task List:** When clicking the Task tile, a list of tasks is displayed. This list has detailed information about all the tasks related to the project.
 
-Both list workflow tasks as well as tasks you create directly in the **Tasks** tile. 
+Both list workflow tasks as well as tasks you create directly in the **Tasks** tile.
 
 ### Task Tile {#task-tile}
 
 If a project has any related tasks, a Task Tile is displayed inside the project. The Task Tile shows the current status of the project. This is based on existing tasks inside the workflow and does not include any tasks that will generated in future as the workflow proceeds. The following information is visible in the task tile:
 
-* Percentage of completed tasks  
+* Percentage of completed tasks
 * Percentage of active tasks
 * Percentage of overdue tasks
 

@@ -5,7 +5,7 @@ description: Learn how to configure AEM so that static objects do not expire (fo
 seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
@@ -66,7 +66,7 @@ All files, which are not dynamic and which do not change over time, can and shou
      ExpiresByType image/png "access plus 1 day"
      ExpiresByType image/gif "access plus 1 day"
    </Location>
-   
+
    ```
 
    This allows the intermediate cache (e.g. the browser cache) to store CSS, Javascript, PNG and GIF files for up to one day in client caches. Although this example illustrates global settings for everything below `/content` and `/etc/designs`, you should make it more granular.

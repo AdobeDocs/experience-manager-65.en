@@ -5,7 +5,7 @@ description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document 
 seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 ---
@@ -24,10 +24,10 @@ AEM LiveCycle Connector is part of the [AEM Forms add-on package](/help/forms/us
 
 Although the properties are self explanatory, the important ones are as follows:
 
-* **Server URL** - Specifies URL to the LiveCycle server. If you want LiveCycle and AEM to communicate over https, start AEM with the following JVM 
+* **Server URL** - Specifies URL to the LiveCycle server. If you want LiveCycle and AEM to communicate over https, start AEM with the following JVM
 
   ```
-  argument 
+  argument
    -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
   ```
 
@@ -88,15 +88,15 @@ To start an exposed service from within AEM, perform the following steps:
 1. Obtain the service reference. Get a handle to the service instance. If you are writing a Java class, you can use the Declarative Services annotations.
 
    ```java
-   
+
    import com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient;
    import com.adobe.livecycle.generatepdf.client.CreatePDFResult;
    import com.adobe.idp.Document;
-    
+
    @Reference
    GeneratePdfServiceClient generatePDF;
    ...
-    
+
    Resource r = resourceResolver.getResource("/path/tp/docx");
    Document sourceDoc = new Document(r.adaptTo(InputStream.class));
    CreatePDFResult result = generatePDF.createPDF2(
@@ -113,11 +113,11 @@ To start an exposed service from within AEM, perform the following steps:
    The above code snippet starts the createPDF API of GeneratePdfServiceClient to convert a document to PDF. You can perform similar invocation in a JSP using the following code. The major difference is the following code uses Sling ScriptHelper to access the GeneratePdfServiceClient.
 
    ```java
-   
+
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
    <%@ page import="com.adobe.livecycle.generatepdf.client.CreatePDFResult" %>
    <%@ page import="com.adobe.idp.Document" %>
-    
+
    GeneratePdfServiceClient generatePDF = sling.getService(GeneratePdfServiceClient.class);
    Document sourceDoc = ...
    CreatePDFResult result = generatePDF.createPDF2(
@@ -139,10 +139,10 @@ The ServiceClientFactory class is required in some cases. For example, you requi
 
 import com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider;
 import com.adobe.idp.dsc.clientsdk.ServiceClientFactory;
- 
+
 @Reference
 ServiceClientFactoryProvider scfProvider;
- 
+
 ...
 ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 ...
@@ -165,10 +165,10 @@ import com.adobe.livecycle.dsc.clientsdk.security.PasswordCredential;
 import com.adobe.livecycle.dsc.clientsdk.security.PrivilegedAction;
 import com.adobe.livecycle.dsc.clientsdk.security.RunAsManager;
 import com.adobe.idp.dsc.registry.component.ComponentRegistry;
-  
+
 @Reference
 private RunAsManager runAsManager;
-  
+
 List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List<Component>>() {
             public List<Component> run() {
                 return componentRegistry.getComponents();
@@ -198,14 +198,14 @@ import com.adobe.idp.dsc.InvocationRequest
 import com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider
 import com.adobe.idp.dsc.clientsdk.ServiceClientFactory
 import com.adobe.livecycle.dsc.clientsdk.InvocationProperties
-   
+
 ServiceClientFactoryProvider scfp = sling.getService(ServiceClientFactoryProvider.class)
 ServiceClientFactory serviceClientFactory = scfp.getDefaultServiceClientFactory()
 InvocationRequest ir = serviceClientFactory.createInvocationRequest("sample/LetterSubmissionProcess", "invoke", new HashMap(), true);
-  
+
 //Here we are invoking the request with system user
 ir.setProperty(InvocationProperties.INVOKER_TYPE,InvocationProperties.INVOKER_TYPE_SYSTEM)
-   
+
 InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir);
 ```
 

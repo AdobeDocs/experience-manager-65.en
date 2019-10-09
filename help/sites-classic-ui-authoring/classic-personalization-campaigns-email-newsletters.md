@@ -5,7 +5,7 @@ description: You can publish newsletters to e-mail services such as ExactTarget 
 seo-description: You can publish newsletters to e-mail services such as ExactTarget and Silverpop Engage.
 uuid: 1a7adcfe-8e52-49f4-9a00-99ac99881225
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
@@ -35,12 +35,12 @@ An email or newsletter that you want to publish to an e-mail service can be crea
 
 To create a new email that is published to the configured e-mail service:
 
-1. Go to **Websites** and then **Campaigns**. Select a campaign. 
+1. Go to **Websites** and then **Campaigns**. Select a campaign.
 1. Click **New** to open the **Create Page** window.
 1. Enter the title, name, and select the **Geometrixx Newsletter** template from the list of available templates.
 1. Click **Create**.
-1. Open the created email. 
-1. Switch to design mode to select the components you want to display in the sidekick. 
+1. Open the created email.
+1. Switch to design mode to select the components you want to display in the sidekick.
 1. Switch to edit mode and start adding content (text, images, [email tools](#adding-exacttarget-email-tools-to-your-email), [personalization variables](#adding-text-and-personalization-tool-to-your-e-mail), and so on) to your email.
 
 ### Adding ExactTarget Email Tools to your email {#adding-exacttarget-email-tools-to-your-email}
@@ -58,37 +58,37 @@ The **Email Tools** component for ExactTarget can add more email functionality t
 
 1. Select an option from the **Options** menu:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Physical Mailing Address (Required)</td> 
-   <td>This component inserts the physical mailing address of your organization in your email.</td> 
-  </tr> 
-  <tr> 
-   <td>Profile Center (Required)</td> 
-   <td>The profile center is a webpage where subscribers can enter and maintain the personal information that you keep about them.</td> 
-  </tr> 
-  <tr> 
-   <td>View Email as a Web Page</td> 
-   <td>This component allows the user to view the email as a webpage.</td> 
-  </tr> 
-  <tr> 
-   <td>Privacy Policy</td> 
-   <td>This component inserts the link to your privacy policy in the email.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Unsubscribe Center</td> 
-   <td>Gives the option to the user to unsubscribe from your mailing list.</td> 
-  </tr> 
-  <tr> 
-   <td>Subscription Center</td> 
-   <td>A subscription center is a web page where a subscriber can control the messages they receive from your organization.</td> 
-  </tr> 
-  <tr> 
-   <td>Track Email Opens</td> 
-   <td>A hidden component that allows you to use ExactTarget tracking feature.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Physical Mailing Address (Required)</td>
+   <td>This component inserts the physical mailing address of your organization in your email.</td>
+  </tr>
+  <tr>
+   <td>Profile Center (Required)</td>
+   <td>The profile center is a webpage where subscribers can enter and maintain the personal information that you keep about them.</td>
+  </tr>
+  <tr>
+   <td>View Email as a Web Page</td>
+   <td>This component allows the user to view the email as a webpage.</td>
+  </tr>
+  <tr>
+   <td>Privacy Policy</td>
+   <td>This component inserts the link to your privacy policy in the email.<br /> </td>
+  </tr>
+  <tr>
+   <td>Unsubscribe Center</td>
+   <td>Gives the option to the user to unsubscribe from your mailing list.</td>
+  </tr>
+  <tr>
+   <td>Subscription Center</td>
+   <td>A subscription center is a web page where a subscriber can control the messages they receive from your organization.</td>
+  </tr>
+  <tr>
+   <td>Track Email Opens</td>
+   <td>A hidden component that allows you to use ExactTarget tracking feature.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
    >[!NOTE]
@@ -123,9 +123,9 @@ You can add personalized fields in an email by adding the **Text and Personaliza
 
 To apply your E-mail service configuration to a newsletter:
 
-1. Create an E-mail Service configuration. 
+1. Create an E-mail Service configuration.
 1. Open your email/newsletter.
-1. Open the email/newsletter settings by either clicking **Settings** or by clicking **Page Properties in** the sidekick. 
+1. Open the email/newsletter settings by either clicking **Settings** or by clicking **Page Properties in** the sidekick.
 1. Click **Add Service** in **Cloud Services** tab. You see the list of services. Select your required configuration - either **ExactTarget** or **Silverpop** - from the list from the drop-down list.
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
@@ -138,9 +138,9 @@ Emails/Newsletters can be published to your E-mail Service by following these st
 
 1. Open the email.
 1. Before publishing a email, make sure you have applied the correct configuration to your email.
-1. Click **Publish**. This opens the **Publish Newsletter To E-mail Service Provider** window. 
-1. Fill in the **Newsletter Name** field. The email/newsletter is published to E-mail Service Provider with this name. In case a email name is not provided, then the email is published using the page name of the newsletter in AEM. 
-1. Click **Publish**. 
+1. Click **Publish**. This opens the **Publish Newsletter To E-mail Service Provider** window.
+1. Fill in the **Newsletter Name** field. The email/newsletter is published to E-mail Service Provider with this name. In case a email name is not provided, then the email is published using the page name of the newsletter in AEM.
+1. Click **Publish**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 

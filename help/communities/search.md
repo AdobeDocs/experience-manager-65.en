@@ -5,7 +5,7 @@ description: Adding and configuring Search to a Communities site
 seo-description: Adding and configuring Search to a Communities site
 uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
@@ -45,12 +45,12 @@ Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are s
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
-* **[!UICONTROL Search Paths]** 
+* **[!UICONTROL Search Paths]**
   By adding search paths using the Add Item button, the content search is limited. As an example, to limit the search to a specific forum, select a forum component placed within a page:
 
     * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Result Page]** 
+* **[!UICONTROL Result Page]**
   The results will appear on a separate page specified by using the browser to select a page containing the `Search Results` component.
 
 ## Search Results {#search-results}
@@ -81,10 +81,10 @@ Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL Search Results Per Page]** 
+* **[!UICONTROL Search Results Per Page]**
   Define the number of topics/posts shown per page. Default is 10.
 
-* **[!UICONTROL Search Paths]** 
+* **[!UICONTROL Search Paths]**
   By adding search paths using the Add Item button, the content search is limited.
 
 ## Additional Information {#additional-information}

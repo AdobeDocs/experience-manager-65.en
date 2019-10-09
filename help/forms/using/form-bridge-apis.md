@@ -5,7 +5,7 @@ description: External applications use the FormBridge API to connect to the XFA 
 seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
 uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 ---
@@ -24,7 +24,7 @@ window.addEventListener("FormBridgeInitialized",
                                 function(event) {
                                     var fb = event.detail.formBridge;
                                     fb.connect(function() {
-                                           //use form bridge functions 
+                                           //use form bridge functions
                          })
                             })
 
@@ -63,7 +63,7 @@ Returns the version number of the Scripting library
 
 **getDataXML(options)** Returns the current form data in XML Format
 
-* **Input:** 
+* **Input:**
 
     * **options:** JavaScript Object containing following properties:
 
@@ -85,28 +85,28 @@ Returns the version number of the Scripting library
         * **widgetConfig:** Allows the user to override the default widgets in the form with custom widgets. The configuration is overridden as follows:
 
           *formBridge.registerConfig("widgetConfig":{/&ast;configuration&ast;/})*
-        
-        * ***pagingConfig:** Allows the user to override the default behavior of rendering only the first page. The configuration is overridden as follows: 
+
+        * ***pagingConfig:** Allows the user to override the default behavior of rendering only the first page. The configuration is overridden as follows:
 
           *window.formBridge.registerConfig("pagingConfig":{pagingDisabled: <true | false>, shrinkPageDisabled: <true | false> }).*
-        
+
         * **LoggingConfig:** Allows the user to override the level of logging, disable logging for a category, or whether to display the logs console or send to server. The configuration can be overridden as follows:**
-        * *formBridge.registerConfig{  
-          **"LoggerConfig" : {  
-        * *{  
-        * *"on":`<true *| *false>`,  
-        * *"category":`<array of categories>`,  
-        * *"level":`<level of categories>`, "  
-        * *type":`<"console"/"server"/"both">`  
-        * *}  
+        * *formBridge.registerConfig{
+          **"LoggerConfig" : {
+        * *{
+        * *"on":`<true *| *false>`,
+        * *"category":`<array of categories>`,
+        * *"level":`<level of categories>`, "
+        * *type":`<"console"/"server"/"both">`
+        * *}
           **}*
-        
-        * ***SubmitServiceProxyConfig:** Allow the users to register submission and logger proxy services.  
-          *window.formBridge.registerConfig("submitServiceProxyConfig",  
-          {  
-          "submitServiceProxy" : "`<submitServiceProxy>`",  
-          "logServiceProxy": "`<logServiceProxy>`",  
-          "submitUrl" : "`<submitUrl>`"  
+
+        * ***SubmitServiceProxyConfig:** Allow the users to register submission and logger proxy services.
+          *window.formBridge.registerConfig("submitServiceProxyConfig",
+          {
+          "submitServiceProxy" : "`<submitServiceProxy>`",
+          "logServiceProxy": "`<logServiceProxy>`",
+          "submitUrl" : "`<submitUrl>`"
           });
 
     * **config:** Value of the configuration
@@ -117,7 +117,7 @@ Returns the version number of the Scripting library
 
 **hideFields(fieldArray)** Hides the fields whose Som expressions are provided in the fieldArray. Sets the presence property of the specified fields to invisible
 
-* **Input:** 
+* **Input:**
 
     * **fieldArray:** Array of Som expressions for the fields to hide
 
@@ -168,9 +168,9 @@ Returns the version number of the Scripting library
 
 **setFieldValue (som, value)** Sets the value of the fields for the given Som expressions
 
-* **Input:** 
+* **Input:**
 
-    * **som:** Array containing Som expressions of the field. The som expression to set value of the fields. 
+    * **som:** Array containing Som expressions of the field. The som expression to set value of the fields.
     * **value:** Array containing values corresponding to Som expressions provided in a **som **array. If the data type of the value is not the same as the fieldType, the value is not modified.
 
 * **Output:** None
@@ -192,7 +192,7 @@ if(a.errors) {
      while((err = a.getNextMessage()) != null)
                alert(a.message)
 } else {
-   alert(a.data[0]) 
+   alert(a.data[0])
 }
 
 ```

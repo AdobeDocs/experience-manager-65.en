@@ -7,7 +7,7 @@ uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 ---
@@ -21,11 +21,11 @@ Before you can pass the DDX document to the Assembler service, convert the XML f
 For this discussion, assume that the following DDX document is dynamically created.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8"?> 
- <DDX xmlns="https://ns.adobe.com/DDX/1.0/"> 
-      <PDFsFromBookmarks prefix="stmt"> 
-     <PDF source="AssemblerResultPDF.pdf"/> 
- </PDFsFromBookmarks> 
+ <?xml version="1.0" encoding="UTF-8"?>
+ <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
+      <PDFsFromBookmarks prefix="stmt">
+     <PDF source="AssemblerResultPDF.pdf"/>
+ </PDFsFromBookmarks>
  </DDX>
 ```
 
@@ -46,9 +46,9 @@ To disassemble a PDF document by using a dynamically created DDX document, perfo
 1. Include project files.
 1. Create a PDF Assembler client.
 1. Create the DDX document.
-1. Convert the DDX document. 
+1. Convert the DDX document.
 1. Set run-time options.
-1. Disassemble the PDF document. 
+1. Disassemble the PDF document.
 1. Save the disassembled PDF documents.
 
 **Include project files**
@@ -123,32 +123,32 @@ Dynamically create a DDX document and disassemble a PDF document by using the As
     * Call the `DocumentBuilder` object’s `newDocument` method to instantiate a `org.w3c.dom.Document` object.
     * Create the DDX document’s root element by invoking the `org.w3c.dom.Document` object’s `createElement` method. This method creates an `Element` object that represents the root element. Pass a string value representing the name of the element to the `createElement` method. Cast the return value to `Element`. Next, set a value for the child element by calling its `setAttribute` method. Finally, append the element to the header element by calling the header element’s `appendChild` method, and pass the child element object as an argument. The following lines of code show this application logic:
       ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
-  
+
     * Create the `PDFsFromBookmarks` element by calling the `Document` object’s `createElement` method. Pass a string value representing the name of the element to the `createElement` method. Cast the return value to `Element`. Set a value for the `PDFsFromBookmarks` element by calling its `setAttribute` method. Append the `PDFsFromBookmarks` element to the `DDX` element by calling the DDX element’s `appendChild` method. Pass the `PDFsFromBookmarks` element object as an argument. The following lines of code show this application logic:
 
       ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
-  
+
     * Create a `PDF` element by calling the `Document` object’s `createElement` method. Pass a string value that represents the element’s name. Cast the return value to `Element`. Set a value for the `PDF` element by calling its `setAttribute` method. Append the `PDF` element to the `PDFsFromBookmarks` element by calling the `PDFsFromBookmarks` element’s `appendChild` method. Pass the `PDF` element object as an argument. The following lines of code shows this application logic:
 
       ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
 
 1. Convert the DDX document.
 
-    * Create a `javax.xml.transform.Transformer` object by invoking the `javax.xml.transform.Transformer` object’s static `newInstance` method. 
-    * Create a `Transformer` object by invoking the `TransformerFactory` object’s `newTransformer` method. 
-    * Create a `ByteArrayOutputStream` object by using its constructor. 
+    * Create a `javax.xml.transform.Transformer` object by invoking the `javax.xml.transform.Transformer` object’s static `newInstance` method.
+    * Create a `Transformer` object by invoking the `TransformerFactory` object’s `newTransformer` method.
+    * Create a `ByteArrayOutputStream` object by using its constructor.
     * Create a `javax.xml.transform.dom.DOMSource` object by using its constructor. Pass the `org.w3c.dom.Document` object that represents the DDX document.
     * Create a `javax.xml.transform.dom.DOMSource` object by using its constructor and passing the `ByteArrayOutputStream` object.
-    * Populate the Java `ByteArrayOutputStream` object by invoking the `javax.xml.transform.Transformer` object’s `transform` method. Pass the `javax.xml.transform.dom.DOMSource` and the `javax.xml.transform.stream.StreamResult` objects. 
-    * Create a byte array and allocate the size of the `ByteArrayOutputStream` object to the byte array. 
-    * Populate the byte array by invoking the `ByteArrayOutputStream` object’s `toByteArray` method. 
+    * Populate the Java `ByteArrayOutputStream` object by invoking the `javax.xml.transform.Transformer` object’s `transform` method. Pass the `javax.xml.transform.dom.DOMSource` and the `javax.xml.transform.stream.StreamResult` objects.
+    * Create a byte array and allocate the size of the `ByteArrayOutputStream` object to the byte array.
+    * Populate the byte array by invoking the `ByteArrayOutputStream` object’s `toByteArray` method.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the byte array.
 
 1. Reference a PDF document to disassemble.
 
     * Create a `java.util.Map` object that is used to store input PDF documents by using a `HashMap` constructor.
-    * Create a `java.io.FileInputStream` object by using its constructor and passing the location of the PDF document to disassemble. 
-    * Create a `com.adobe.idp.Document` object. Pass the `java.io.FileInputStream` object that contains the PDF document to disassemble. 
+    * Create a `java.io.FileInputStream` object by using its constructor and passing the location of the PDF document to disassemble.
+    * Create a `com.adobe.idp.Document` object. Pass the `java.io.FileInputStream` object that contains the PDF document to disassemble.
     * Add an entry to the `java.util.Map` object by invoking its `put` method and passing the following arguments:
 
         * A string value that represents the key name. This value must match the value of the PDF source element specified in the DDX document. (In the DDX document that is dynamically created, the value is `AssemblerResultPDF.pdf`.)
@@ -199,15 +199,15 @@ Dynamically create a DDX document and disassemble a PDF document by using the As
 
 1. Create a PDF Assembler client.
 
-    * Create an `AssemblerServiceClient` object by using its default constructor. 
-    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `AssemblerServiceClient` object by using its default constructor.
+    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Create the DDX document.
@@ -216,11 +216,11 @@ Dynamically create a DDX document and disassemble a PDF document by using the As
     * Create the DDX document’s root element by invoking the `XmlElement` object’s `CreateElement` method. This method creates an `Element` object that represents the root element. Pass a string value representing the name of the element to the `CreateElement` method. Set a value for the DDX element by calling its `SetAttribute` method. Finally, append the element to the DDX document by calling the `XmlElement` object’s `AppendChild` method. Pass the DDX object as an argument. The following lines of code show this application logic:
 
       ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
-  
+
     * Create the DDX document’s `PDFsFromBookmarks` element by calling the `XmlElement` object’s `CreateElement` method. Pass a string value representing the name of the element to the `CreateElement` method. Next, set a value for the element by calling its `SetAttribute` method. Append the `PDFsFromBookmarks` element to the root element by calling the `DDX` element’s `AppendChild` method. Pass the `PDFsFromBookmarks` element object as an argument. The following lines of code show this application logic:
 
       ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
-  
+
     * Create the DDX document’s `PDF` element by calling the `XmlElement` object’s `CreateElement` method. Pass a string value representing the name of the element to the `CreateElement` method. Next, set a value for the child element by calling its `SetAttribute` method. Append the `PDF` element to the `PDFsFromBookmarks` element by calling the `PDFsFromBookmarks` element’s `AppendChild` method. Pass the `PDF` element object as an argument. The following lines of code shows this application logic:
 
       ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
@@ -230,16 +230,16 @@ Dynamically create a DDX document and disassemble a PDF document by using the As
     * Create a `System.IO.MemoryStream` object by using its constructor.
     * Populate the `MemoryStream` object with the DDX document by using the `XmlElement` object that represents the DDX document. Invoke the `XmlElement` object’s `Save` method and pass the `MemoryStream` object.
     * Create a byte array and populate it with data located in the `MemoryStream` object. The following code shows this application logic:
-  
+
       ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
-  
+
     * Create a `BLOB` object. Assign the byte array to the `BLOB` object’s `MTOM` field.
 
 1. Reference a PDF document to disassemble.
 
-    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF document. This `BLOB` object is passed to the `invokeOneDocument` as an argument. 
+    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF document. This `BLOB` object is passed to the `invokeOneDocument` as an argument.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the input PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property the contents of the byte array.
 
@@ -256,7 +256,7 @@ Dynamically create a DDX document and disassemble a PDF document by using the As
     * The `mapItem` array that contains the input PDF document
     * An `AssemblerOptionSpec` object that specifies run-time options
 
-   The `invokeDDX` method returns an `AssemblerResult` object that contains the results of the job and any exceptions that occurred. 
+   The `invokeDDX` method returns an `AssemblerResult` object that contains the results of the job and any exceptions that occurred.
 
 1. Save the disassembled PDF documents.
 

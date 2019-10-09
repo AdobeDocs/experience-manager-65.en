@@ -5,7 +5,7 @@ description: This article details the adjustments that are required after an upg
 seo-description: This article details the adjustments that are required after an upgrade in order for the custom search forms to function.
 uuid: 35b8fbb9-5951-4e1c-bf04-4471a55b9cb0
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
@@ -44,19 +44,19 @@ Below you will find a list of all cusom Search Forms and the modifications they 
 
 ### Fulltext Predicate with node name "fulltext" {#fulltext-predicate-with-node-name-fulltext}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1</td> 
-   <td>fulltext</td> 
+   <td>Node/s in default Search Form in 6.1</td>
+   <td>fulltext</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/common/admin/customsearch/searchpredicates/fulltextpredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/common/admin/customsearch/searchpredicates/fulltextpredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td>n/a</td> 
+   <td>Resource type in 6.2</td>
+   <td>n/a</td>
   </tr>
  </tbody>
 </table>
@@ -67,19 +67,19 @@ In AEM 6.1, the standard fulltext predicate was part of the search form. In 6.2,
 
 ### Other Fulltext Predicates {#other-fulltext-predicates}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search From in 6.1</td> 
-   <td>n/a</td> 
+   <td>Node/s in default Search From in 6.1</td>
+   <td>n/a</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/common/admin/customsearch/searchpredicates/fulltextpredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/common/admin/customsearch/searchpredicates/fulltextpredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/fulltextpredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/fulltextpredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -88,19 +88,19 @@ In AEM 6.1, the standard fulltext predicate was part of the search form. In 6.2,
 
 ### Path Browser Predicates {#path-browser-predicates}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>path</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>path</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/common/admin/customsearch/searchpredicates/pathpredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/common/admin/customsearch/searchpredicates/pathpredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/pathpredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/pathpredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -109,19 +109,19 @@ In AEM 6.1, the standard fulltext predicate was part of the search form. In 6.2,
 
 ### Tags Predicates {#tags-predicates}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>tags</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>tags</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/common/admin/customsearch/searchpredicates/tagspredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/common/admin/customsearch/searchpredicates/tagspredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/tagspredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/tagspredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -130,26 +130,26 @@ In AEM 6.1, the standard fulltext predicate was part of the search form. In 6.2,
 
 ### Page Status Predicate {#page-status-predicate}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>pagestatuspredicate</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>pagestatuspredicate</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/pagestatuspredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/pagestatuspredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td>n/a</td> 
+   <td>Resource type in 6.2</td>
+   <td>n/a</td>
   </tr>
  </tbody>
 </table>
 
 The Page Status has been replaced by two Options Property Predicates, one for publish and one for LiveCopy status.
 
-**Actions:** 
+**Actions:**
 
 * Remove the `pagestatuspredicate` node
 * Copy node
@@ -166,19 +166,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Date Range Predicates {#date-range-predicates}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>daterangepredicate</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>daterangepredicate</td>
   </tr>
   <tr>
-   <td>Resource type in 6.1</td> 
-   <td>cq/gui/components/common/admin/customsearch/searchpredicates/daterangepredicate</td> 
+   <td>Resource type in 6.1</td>
+   <td>cq/gui/components/common/admin/customsearch/searchpredicates/daterangepredicate</td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/daterangepredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/daterangepredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -187,19 +187,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Hidden Filter {#hidden-filter}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>type</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>type</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>granite/ui/components/foundation/form/hidden</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>granite/ui/components/foundation/form/hidden</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>granite/ui/components/foundation/form/hidden</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>granite/ui/components/foundation/form/hidden</p> </td>
   </tr>
  </tbody>
 </table>
@@ -208,19 +208,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Analytics Predicate {#analytics-predicate}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>analyticspredicate</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>analyticspredicate</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/analyticspredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/analyticspredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/analyticspredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/analyticspredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -229,19 +229,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Range Predicate {#range-predicate}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>n/a</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>n/a</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/rangepredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/rangepredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/rangepredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/rangepredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -254,19 +254,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Options Property Predicate {#options-property-predicate}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>n/a</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>n/a</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/optionspredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/optionspredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/optionspredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/optionspredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -275,19 +275,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Slider Range Predicate {#slider-range-predicate}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>n/a</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>n/a</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/sliderrangepredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/sliderrangepredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/sliderrangepredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/sliderrangepredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -296,19 +296,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Components Predicate {#components-predicate}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>n/a</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>n/a</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/componentspredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/componentspredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/componentspredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/componentspredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -317,19 +317,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Author Predicate {#author-predicate}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>n/a</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>n/a</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/userpredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/userpredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/userpredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/userpredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -338,19 +338,19 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
 
 ### Templates Predicate {#templates-predicate}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Node/s in default Search Form in 6.1<br /> <br /> </td> 
-   <td>n/a</td> 
+   <td>Node/s in default Search Form in 6.1<br /> <br /> </td>
+   <td>n/a</td>
   </tr>
   <tr>
-   <td><p>Resource type in 6.1</p> </td> 
-   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/templatespredicate</p> </td> 
+   <td><p>Resource type in 6.1</p> </td>
+   <td><p>cq/gui/components/siteadmin/admin/searchpanel/searchpredicates/templatespredicate</p> </td>
   </tr>
   <tr>
-   <td>Resource type in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/templatespredicate</p> </td> 
+   <td>Resource type in 6.2</td>
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/templatespredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -415,7 +415,7 @@ Action: Adjust the resourceType property (add "/coral" like in the 6.2 location 
 | Resource type in 6.1 |dam/gui/components/admin/customsearch/searchpredicates/publishpredicate |
 | Resource type in 6.2 |dam/gui/coral/components/admin/customsearch/searchpredicates/publishpredicate |
 
-**Actions:** 
+**Actions:**
 
 * Adjust the `resourceType` property (add "**/coral**" like in the 6.2 location indicated above)
 
@@ -466,7 +466,7 @@ Action: Adjust the resourceType property (add "/coral" like in the 6.2 location 
 | Resource type in 6.1 |dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
 | Resource type in 6.2 |cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |
 
-**Actions:** 
+**Actions:**
 
 * Adjust the `resourceType` property (add "**/coral**" like in the 6.2 location indicated above)
 
@@ -483,7 +483,7 @@ Action: Adjust the resourceType property (add "/coral" like in the 6.2 location 
 | Resource type in 6.1 |dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
 | Resource type in 6.2 |cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |
 
-**Actions:** 
+**Actions:**
 
 * Adjust the `resourceType` property (add "**/coral**" like in the 6.2 location indicated above)
 

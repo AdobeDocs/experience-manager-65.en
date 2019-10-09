@@ -5,7 +5,7 @@ description: Learn how to integrate AEM with Dynamic Media Classic.
 seo-description: Learn how to integrate AEM with Dynamic Media Classic.
 uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
@@ -45,7 +45,7 @@ When you work with assets in this solution, you do one of the following:
 * Upload assets directly to Dynamic Media Classic and then access by way of the **Dynamic Media Classic** content browser for page authoring or
 * Upload to AEM Assets and then enable automatic publishing to Dynamic Media Classic; you access via **Assets** content browser for page authoring
 
-The components you use for this integration are found in the **Dynamic Media Classic** component area in [Design mode.](/help/sites-authoring/author-environment-tools.md#page-modes)  
+The components you use for this integration are found in the **Dynamic Media Classic** component area in [Design mode.](/help/sites-authoring/author-environment-tools.md#page-modes)
 
 ### AEM Dynamic Media {#aem-dynamic-media}
 
@@ -73,81 +73,81 @@ To use Dynamic Media and Dynamic Media Classic simultaneously:
 1. Configure [Dynamic Media Classic](#creating-a-cloud-configuration-for-scene) in cloud services.
 1. Follow the specific instructions particular to your use case:
 
-    <table> 
-    <tbody> 
-    <tr> 
-    <td> </td> 
-    <td> </td> 
-    <td><strong>Dynamic Media</strong></td> 
-    <td> </td> 
-    <td><strong>Dynamic Media Classic Integration</strong></td> 
-    <td> </td> 
-    </tr> 
-    <tr> 
-    <td><strong>If you are ...</strong></td> 
-    <td><strong>Use Case Workflow</strong></td> 
-    <td><strong>Imaging/Video</strong></td> 
-    <td><strong>Dynamic Media Component</strong></td> 
-    <td><strong>S7 Content Browser and Components</strong></td> 
-    <td><strong>Automatic Upload from Assets to S7</strong></td> 
-    </tr> 
-    <tr> 
-    <td>New to Sites and Dynamic Media</td> 
-    <td>Upload assets to AEM and use AEM Dynamic Media component to author assets on Sites pages</td> 
-    <td><p>On</p> <p>(See step 3)</p> </td> 
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td> 
-    <td>Off</td> 
-    <td>Off</td> 
-    </tr> 
-    <tr> 
-    <td>In retail and are new to Sites and Dynamic Media</td> 
-    <td>Upload NON-product assets to AEM for management and delivery. Upload PRODUCT assets to Dynamic Media Classic and use Dynamic Media Classic content browser in AEM and component to author Product Detail Pages on Sites.</td> 
-    <td><p>On</p> <p>(See step 3)</p> </td> 
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td> 
-    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td> 
-    <td>Off</td> 
-    </tr> 
-    <tr> 
-    <td>New to Assets and Dynamic Media</td> 
-    <td>Upload assets to AEM Assets and use published URL/embed code from Dynamic Media</td> 
-    <td><p>On</p> <p>(See step 3)</p> </td> 
-    <td>Off</td> 
-    <td>Off</td> 
-    <td>Off</td> 
-    </tr> 
-    <tr> 
-    <td>New to Dynamic Media and Templating</td> 
-    <td>Use Dynamic Media for imaging and video. Author image templates in Dynamic Media Classic and use Dynamic Media Classic content finder to include templates in Sites pages.</td> 
-    <td><p>On</p> <p>(See step 3)</p> </td> 
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td> 
-    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td> 
-    <td>Off</td> 
-    </tr> 
-    <tr> 
-    <td>An existing Dynamic Media Classic customer and are new to Sites</td> 
-    <td>Upload assets to Dynamic Media Classic and use AEM Dynamic Media Classic content browser to search and author assets on Sites pages</td> 
-    <td>Off</td> 
-    <td>Off</td> 
-    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td> 
-    <td>Off</td> 
-    </tr> 
-    <tr> 
-    <td>An existing Dynamic Media Classic customer and are new to Sites and Assets</td> 
-    <td>Upload assets to DAM and automatically publish to Dynamic Media Classic for delivery. Use AEM Dynamic Media Classic content browser to search and author assets on Sites pages.</td> 
-    <td>Off</td> 
-    <td>Off</td> 
-    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td> 
-    <td><p><a href="#configuringautouploadingfromaemassets">On</a></p> <p>(See step 4)</p> </td> 
-    </tr> 
-    <tr> 
-    <td>Existing Dynamic Media Classic customer and new to Assets</td> 
-    <td><p>Upload assets to AEM and use Dynamic Media to generate renditions for download/share. Automatically publish AEM assets to Dynamic Media Classic for delivery.</p> <p><strong>Important:</strong> Incurs duplicate processing and renditions generated in AEM will not be synchronized to Dynamic Media Classic</p> </td> 
-    <td><p>On</p> <p>(See step 3)</p> </td> 
-    <td>Off</td> 
-    <td>Off</td> 
-    <td><p><a href="#configuringautouploadingfromaemassets">On</a></p> <p>(See step 4)</p> </td> 
-    </tr> 
-    </tbody> 
+    <table>
+    <tbody>
+    <tr>
+    <td> </td>
+    <td> </td>
+    <td><strong>Dynamic Media</strong></td>
+    <td> </td>
+    <td><strong>Dynamic Media Classic Integration</strong></td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td><strong>If you are ...</strong></td>
+    <td><strong>Use Case Workflow</strong></td>
+    <td><strong>Imaging/Video</strong></td>
+    <td><strong>Dynamic Media Component</strong></td>
+    <td><strong>S7 Content Browser and Components</strong></td>
+    <td><strong>Automatic Upload from Assets to S7</strong></td>
+    </tr>
+    <tr>
+    <td>New to Sites and Dynamic Media</td>
+    <td>Upload assets to AEM and use AEM Dynamic Media component to author assets on Sites pages</td>
+    <td><p>On</p> <p>(See step 3)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td>
+    <td>Off</td>
+    <td>Off</td>
+    </tr>
+    <tr>
+    <td>In retail and are new to Sites and Dynamic Media</td>
+    <td>Upload NON-product assets to AEM for management and delivery. Upload PRODUCT assets to Dynamic Media Classic and use Dynamic Media Classic content browser in AEM and component to author Product Detail Pages on Sites.</td>
+    <td><p>On</p> <p>(See step 3)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td>
+    <td>Off</td>
+    </tr>
+    <tr>
+    <td>New to Assets and Dynamic Media</td>
+    <td>Upload assets to AEM Assets and use published URL/embed code from Dynamic Media</td>
+    <td><p>On</p> <p>(See step 3)</p> </td>
+    <td>Off</td>
+    <td>Off</td>
+    <td>Off</td>
+    </tr>
+    <tr>
+    <td>New to Dynamic Media and Templating</td>
+    <td>Use Dynamic Media for imaging and video. Author image templates in Dynamic Media Classic and use Dynamic Media Classic content finder to include templates in Sites pages.</td>
+    <td><p>On</p> <p>(See step 3)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">On</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td>
+    <td>Off</td>
+    </tr>
+    <tr>
+    <td>An existing Dynamic Media Classic customer and are new to Sites</td>
+    <td>Upload assets to Dynamic Media Classic and use AEM Dynamic Media Classic content browser to search and author assets on Sites pages</td>
+    <td>Off</td>
+    <td>Off</td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td>
+    <td>Off</td>
+    </tr>
+    <tr>
+    <td>An existing Dynamic Media Classic customer and are new to Sites and Assets</td>
+    <td>Upload assets to DAM and automatically publish to Dynamic Media Classic for delivery. Use AEM Dynamic Media Classic content browser to search and author assets on Sites pages.</td>
+    <td>Off</td>
+    <td>Off</td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">On</a></td>
+    <td><p><a href="#configuringautouploadingfromaemassets">On</a></p> <p>(See step 4)</p> </td>
+    </tr>
+    <tr>
+    <td>Existing Dynamic Media Classic customer and new to Assets</td>
+    <td><p>Upload assets to AEM and use Dynamic Media to generate renditions for download/share. Automatically publish AEM assets to Dynamic Media Classic for delivery.</p> <p><strong>Important:</strong> Incurs duplicate processing and renditions generated in AEM will not be synchronized to Dynamic Media Classic</p> </td>
+    <td><p>On</p> <p>(See step 3)</p> </td>
+    <td>Off</td>
+    <td>Off</td>
+    <td><p><a href="#configuringautouploadingfromaemassets">On</a></p> <p>(See step 4)</p> </td>
+    </tr>
+    </tbody>
     </table>
 
 1. (Optional; see use case table) - Set up the [Dynamic Media cloud configuration](/help/assets/config-dynamic.md) and [enable the Dynamic Media server](/help/assets/config-dynamic.md).
@@ -220,7 +220,7 @@ When setting up AEM Assets and Dynamic Media Classic synchronization, it is impo
 
 #### Uploading to Dynamic Media Classic from AEM Assets {#uploading-to-scene-from-aem-assets}
 
-* There is a designated synchronization folder in AEM for Dynamic Media Classic uploads. 
+* There is a designated synchronization folder in AEM for Dynamic Media Classic uploads.
 * Uploads to Dynamic Media Classic can be automated if the digital assets are placed in the designated synchronization folder.
 * The folder and subfolder structure in AEM is replicated in Dynamic Media Classic.
 
@@ -232,45 +232,45 @@ When setting up AEM Assets and Dynamic Media Classic synchronization, it is impo
 
 With the synchronization between AEM Assets and Dynamic Media Classic, there are currently the following limitations/design implications:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Limitation/design implication</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>One designated synchronization (target) folder</td> 
-   <td>You can only have one designated folder per company in AEM for Dynamic Media Classic uploads. You can create multiple configurations if you need to have access to more than one company account in Dynamic Media Classic.</td> 
-  </tr> 
-  <tr> 
-   <td>Folder structure</td> 
-   <td>If you delete a synced folder with assets, all Dynamic Media Classic remote assets are deleted but the folder remains.</td> 
-  </tr> 
-  <tr> 
-   <td>Ad-hoc folder</td> 
-   <td>Assets that reside outside the target folder that are manually uploaded to Dynamic Media Classic in WCM are automatically placed in a separate ad-hoc folder on Dynamic Media Classic. You configure this in the cloud configuration in AEM.</td> 
-  </tr> 
-  <tr> 
-   <td>Mixed media</td> 
-   <td>Mixed media sets appear in AEM although they are not supported in AEM.</td> 
-  </tr> 
-  <tr> 
-   <td>PDFs</td> 
-   <td>Generated PDFs from eCatalogs in Dynamic Media Classic get imported into the CQ target folder.</td> 
-  </tr> 
-  <tr> 
-   <td>UI refreshing</td> 
-   <td>When synchronizing between AEM and Dynamic Media Classic, be sure to refresh the user interface to view changes. </td> 
-  </tr> 
-  <tr> 
-   <td>Video thumbnails</td> 
-   <td>If uploading a video to AEM Assets for encoding via Dynamic Media Classic, the video thumbnails and encoded videos may take some time to be available in AEM Assets, depending on video processing time.</td> 
-  </tr> 
-  <tr> 
-   <td>Target subfolders</td> 
-   <td><p>If you are using subfolders within the target folder, ensure that you either use unique names for each asset (regardless of location) or you configure Dynamic Media Classic (in the Setup area) to not overwrite assets regardless of location.</p> <p>Otherwise, assets with the same name that are uploaded to a Dynamic Media Classic target subfolder are uploaded, but the same-named asset in the target folder is deleted. </p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Limitation/design implication</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>One designated synchronization (target) folder</td>
+   <td>You can only have one designated folder per company in AEM for Dynamic Media Classic uploads. You can create multiple configurations if you need to have access to more than one company account in Dynamic Media Classic.</td>
+  </tr>
+  <tr>
+   <td>Folder structure</td>
+   <td>If you delete a synced folder with assets, all Dynamic Media Classic remote assets are deleted but the folder remains.</td>
+  </tr>
+  <tr>
+   <td>Ad-hoc folder</td>
+   <td>Assets that reside outside the target folder that are manually uploaded to Dynamic Media Classic in WCM are automatically placed in a separate ad-hoc folder on Dynamic Media Classic. You configure this in the cloud configuration in AEM.</td>
+  </tr>
+  <tr>
+   <td>Mixed media</td>
+   <td>Mixed media sets appear in AEM although they are not supported in AEM.</td>
+  </tr>
+  <tr>
+   <td>PDFs</td>
+   <td>Generated PDFs from eCatalogs in Dynamic Media Classic get imported into the CQ target folder.</td>
+  </tr>
+  <tr>
+   <td>UI refreshing</td>
+   <td>When synchronizing between AEM and Dynamic Media Classic, be sure to refresh the user interface to view changes. </td>
+  </tr>
+  <tr>
+   <td>Video thumbnails</td>
+   <td>If uploading a video to AEM Assets for encoding via Dynamic Media Classic, the video thumbnails and encoded videos may take some time to be available in AEM Assets, depending on video processing time.</td>
+  </tr>
+  <tr>
+   <td>Target subfolders</td>
+   <td><p>If you are using subfolders within the target folder, ensure that you either use unique names for each asset (regardless of location) or you configure Dynamic Media Classic (in the Setup area) to not overwrite assets regardless of location.</p> <p>Otherwise, assets with the same name that are uploaded to a Dynamic Media Classic target subfolder are uploaded, but the same-named asset in the target folder is deleted. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Configuring Dynamic Media Classic servers {#configuring-scene-servers}
@@ -279,7 +279,7 @@ If you run AEM behind a proxy or have special firewall settings, you may need to
 
 If you navigate to `/etc/cloudservices/scene7/endpoints.html`, you see the servers listed (and can edit them by clicking on the URL):
 
-![chlimage_1-296](assets/chlimage_1-296.png) 
+![chlimage_1-296](assets/chlimage_1-296.png)
 
 ### Creating a cloud configuration for Dynamic Media Classic {#creating-a-cloud-configuration-for-scene}
 
@@ -297,7 +297,7 @@ A cloud configuration defines the mapping between a Dynamic Media Classic folder
 
 To configure AEM to be able to publish assets to Dynamic Media Classic:
 
-1. Tap the AEM icon and navigate to **[!UICONTROL Deployment > Cloud Services]** to access Adobe Dynamic Media Classic.  
+1. Tap the AEM icon and navigate to **[!UICONTROL Deployment > Cloud Services]** to access Adobe Dynamic Media Classic.
 
 1. Tap **[!UICONTROL Configure now]**.
 
@@ -307,11 +307,11 @@ To configure AEM to be able to publish assets to Dynamic Media Classic:
 
    >[!NOTE]
    >
-   >When creating additional configurations, the **[!UICONTROL parent configuration]** field displays. 
+   >When creating additional configurations, the **[!UICONTROL parent configuration]** field displays.
    >
    >Do **not** change the parent configuration. Changing the parent configuration can break the integration.
 
-1. Enter the email address, password, and region of your Dynamic Media Classic account and tap **[!UICONTROL Connect to Dynamic Media Classic]**. You are connected to the Dynamic Media Classic server and the dialog expands with more options.  
+1. Enter the email address, password, and region of your Dynamic Media Classic account and tap **[!UICONTROL Connect to Dynamic Media Classic]**. You are connected to the Dynamic Media Classic server and the dialog expands with more options.
 
 1. Enter the **[!UICONTROL Company]** name and **[!UICONTROL Root Path]** (this is the published server name together with any path you want to specify; if you do not know the published server name, in Dynamic Media Classic, go to **[!UICONTROL Setup > Application Setup]**.)
 
@@ -342,7 +342,7 @@ You must enable the Adobe CQ Dynamic Media Classic Dam Listener, which is disabl
 To enable it:
 
 1. Tap the [!UICONTROL Tools] icon, then navigate to **[!UICONTROL Operations > Web Console]**. The Web console opens.
-1. Navigate to **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** and select the **[!UICONTROL Enabled]** check box. 
+1. Navigate to **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** and select the **[!UICONTROL Enabled]** check box.
 
    ![chlimage_1-299](assets/chlimage_1-299.png)
 
@@ -411,7 +411,7 @@ However, if you do not want assets pushed to Dynamic Media Classic to publish au
 
 Before you can push assets to Dynamic Media Classic without publishing them, you must set up the following:
 
-1. Contact Dynamic Media Classic Customer Care (s7support@adobe.com) to enable secure preview for your Dynamic Media Classic account. 
+1. Contact Dynamic Media Classic Customer Care (s7support@adobe.com) to enable secure preview for your Dynamic Media Classic account.
 1. Follow directions to [setup secure preview for your Dynamic Media Classic account.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 These are the same steps you would follow to create any secure test setup in Dynamic Media Classic.
@@ -465,9 +465,9 @@ When enabling Dynamic Media Classic for the WCM, note that as with other configu
 
 To enable Dynamic Media Classic for WCM in the touch-optimized UI:
 
-1. Tap the AEM icon and navigate to **[!UICONTROL Sites]** and then the root page of your web site (not language specific).  
+1. Tap the AEM icon and navigate to **[!UICONTROL Sites]** and then the root page of your web site (not language specific).
 
-1. In the toolbar, select the [!UICONTROL settings] icon and tap **[!UICONTROL Open Properties]**.   
+1. In the toolbar, select the [!UICONTROL settings] icon and tap **[!UICONTROL Open Properties]**.
 
 1. Tap **[!UICONTROL Cloud Services]** and tap **[!UICONTROL Add Configuration]** and select **[!UICONTROL Dynamic Media Classic]**.
 1. In the **[!UICONTROL Adobe Dynamic Media Classic]** drop-down list, select the desired configuration and tap **[!UICONTROL OK]**.
@@ -480,9 +480,9 @@ To enable Dynamic Media Classic for WCM in the touch-optimized UI:
 
 To enable Dynamic Media Classic for WCM in the classic UI:
 
-1. In AEM, tap **[!UICONTROL Websites]** and navigate to the root page of your web site (not language specific).  
+1. In AEM, tap **[!UICONTROL Websites]** and navigate to the root page of your web site (not language specific).
 
-1. In the sidekick, tap the **[!UICONTROL Page]** icon and tap **[!UICONTROL Page Properties]**.  
+1. In the sidekick, tap the **[!UICONTROL Page]** icon and tap **[!UICONTROL Page Properties]**.
 
 1. Tap **[!UICONTROL Cloud Services > Add services > Dynamic Media Classic]**.
 1. In the **[!UICONTROL Adobe Dynamic Media Classic]** drop-down list, select the desired configuration and tap **[!UICONTROL OK]**.
@@ -498,7 +498,7 @@ Only one Dynamic Media Classic configuration can be marked as default at a given
 To configure the default configuration:
 
 1. Tap the AEM icon and navigate to **[!UICONTROL Deployment > Cloud Services]**, tap **[!UICONTROL Dynamic Media Classic]**, and select your configuration in Dynamic Media Classic.
-1. Tap **[!UICONTROL Edit]** to open the configuration.  
+1. Tap **[!UICONTROL Edit]** to open the configuration.
 
 1. In the **[!UICONTROL General]** tab, select the **[!UICONTROL Default Configuration]** check box to make this the default company and root path that appears in the Dynamic Media Classic content browser.
 
@@ -515,7 +515,7 @@ You can configure the folder that assets are uploaded to in Dynamic Media Classi
 To configure the adhoc folder:
 
 1. Tap the AEM icon and navigate to **[!UICONTROL Deployment > Cloud Services]**, tap **[!UICONTROL Dynamic Media Classic]**, and select your configuration in Dynamic Media Classic.
-1. Tap **[!UICONTROL Edit]** to open the configuration.  
+1. Tap **[!UICONTROL Edit]** to open the configuration.
 
 1. Tap the **[!UICONTROL Advanced]** tab. In the **[!UICONTROL Ad-hoc Folder]** field, you can modify the **Ad-hoc** folder. By default, it is the **name_of_the_company/CQ5_adhoc**.
 
@@ -561,7 +561,7 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
 
    >[!NOTE]
    >
-   >If you are uploading PSD files, process them as templates with layer extractions. To do so, enter the following in the **[!UICONTROL jobParam]** value field: 
+   >If you are uploading PSD files, process them as templates with layer extractions. To do so, enter the following in the **[!UICONTROL jobParam]** value field:
    >
    >`process=MaintainLayers&createTemplate=true`
    >
@@ -575,7 +575,7 @@ If you are having trouble integrating AEM with Dynamic Media Classic, see the fo
 
 **If your digital asset publishing to Dynamic Media Classic fails:**
 
-* Check that the the asset you are trying to upload is in the **[!UICONTROL CQ target]** folder (you specify this folder in the Dynamic Media Classic cloud configuration). 
+* Check that the the asset you are trying to upload is in the **[!UICONTROL CQ target]** folder (you specify this folder in the Dynamic Media Classic cloud configuration).
 * If it is not, you need to configure the cloud configuration in **[!UICONTROL Page Properties]** for that page to allow uploading to the **[!UICONTROL CQ adhoc]** folder.
 
 * Check the logs for any information.

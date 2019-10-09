@@ -7,7 +7,7 @@ uuid: f0c8331a-d995-483d-97b7-259df53b1a1a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 ---
 
@@ -40,7 +40,7 @@ After you install and configure your AEM forms environment with Document Securit
 1. In administration console, click Services &gt; Document Security&gt; Policies and then click Policy Sets tab.
 1. Select Global Policy Set and then click Visible Users And Groups tab.
 1. Click Add Domain(s) and add existing domains as required.
-1. Navigate to Services &gt; document security &gt; Configuration &gt; My Policies and click Visible Users And Groups tab. 
+1. Navigate to Services &gt; document security &gt; Configuration &gt; My Policies and click Visible Users And Groups tab.
 1. Click Add Domain(s) and add existing domains as required.
 
 ## Administrator user restrictions {#administrator-user-restrictions}

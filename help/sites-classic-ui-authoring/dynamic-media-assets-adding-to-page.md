@@ -5,7 +5,7 @@ description: To add the dynamic media functionality to assets you use on your we
 seo-description: To add the dynamic media functionality to assets you use on your websites, you can add the Dynamic Media or Interactive Media component directly on the page.
 uuid: 650d0867-a079-4936-a466-55b7a30803a2
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250

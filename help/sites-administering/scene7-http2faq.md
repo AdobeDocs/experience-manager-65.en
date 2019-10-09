@@ -5,7 +5,7 @@ description: Learn about HTTP2 content delivery.
 seo-description: Learn about HTTP2 content delivery.
 uuid: e837c3e0-6e48-46f1-b510-847c9976807a
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f

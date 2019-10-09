@@ -6,7 +6,7 @@ seo-description: Follow this page to learn more about how you can monitor device
 uuid: 9843219d-ed39-4e4f-bef4-e500528ff9f1
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 8879e510-4f0e-46da-87d2-77c5aaacb26e
 ---

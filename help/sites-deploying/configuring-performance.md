@@ -5,7 +5,7 @@ description: Learn how to configure certain aspects of AEM to optimize performan
 seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
@@ -255,7 +255,7 @@ Therefore, you can create a job queue for the topic that matches the job topics 
 
 The following procedure creates a job queue for a workflow, using the DAM Update Asset workflow as an example.
 
-1. Execute the workflow model for which you want to create the job queue, so that topic statistics are generated. For example, add an image to Assets to execute the DAM Update Asset workflow. 
+1. Execute the workflow model for which you want to create the job queue, so that topic statistics are generated. For example, add an image to Assets to execute the DAM Update Asset workflow.
 1. Open the Sling Jobs console. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
 1. Discover the workflow-related topics in the console. For DAM Update Asset, the following topics are found:
 
@@ -354,8 +354,8 @@ Based on the following principles.
 
 **Component Breakpoints**
 
-* Each component has a specific breaking point when related to performance. This means that a component can show good performance until a specific point is reached, after which performance will degrade rapidly.   
-* To get a full overview of the application, you must first verify your components to determine when the breakpoint of each is reached.   
+* Each component has a specific breaking point when related to performance. This means that a component can show good performance until a specific point is reached, after which performance will degrade rapidly.
+* To get a full overview of the application, you must first verify your components to determine when the breakpoint of each is reached.
 * To find the breakpoint you can perform a load test where, over a period of time, you increase the number of users to create an increasing load. By monitoring this load, and the response of the components, you will encounter specific performance behavior when the breaking point of the component is reached. The point can be qualified by the number of concurrent transactions per second, together with the number of concurrent users (if the component is sensitive to this KPI).
 * This information can then act as a benchmark for improvements, indicate the efficiency of the measures being used, and help define test scenarios.
 
@@ -448,7 +448,7 @@ In the later stages of implementation you will need to optimize the application 
 
 Any optimizations made must be tested to ensure they have:
 
-* not affected the functionality 
+* not affected the functionality
 * been verified with the load tests before being released
 
 A selection of tools is available to help you with load-generation, performance monitoring and/or results analysis:
@@ -483,7 +483,7 @@ The [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dis
 >
 >You may have been redirected to this page if you followed a link to the Dispatcher documentation that is embedded in the documentation for a previous version of AEM.
 
-The Dispatcher offers a number of built-in mechanisms that you can use to optimize performance if your website takes advantage of them. This section tells you how to design your web site to maximize the benefits of caching. 
+The Dispatcher offers a number of built-in mechanisms that you can use to optimize performance if your website takes advantage of them. This section tells you how to design your web site to maximize the benefits of caching.
 
 >[!NOTE]
 >
@@ -492,7 +492,7 @@ The Dispatcher offers a number of built-in mechanisms that you can use to optimi
 >* can cache everything that you can store as a page and request using an URL
 >* cannot store other things, such as cookies, session data and form data.
 >
->In general, a lot of caching strategies involve selecting good URLs and not relying on this additional data. 
+>In general, a lot of caching strategies involve selecting good URLs and not relying on this additional data.
 >
 >With Dispatcher version 4.1.11 you can also cache response headers, see [Caching HTTP Response Headers](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
@@ -536,7 +536,7 @@ If possible, avoid URL parameters for pages that you want to cache. For example,
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
 ```
 
-However, you can put these parameters into the page URL, as follows: 
+However, you can put these parameters into the page URL, as follows:
 
 ```xml
 www.myCompany.com/pictures/gallery.christmas.1.html
@@ -574,8 +574,8 @@ www.myCompany.com/news/main.large.html
 If you render page titles, or other text, as pictures, then it is recommended to store the files so that they are deleted upon a content update on the page:
 
 1. Place the image file in the same folder as the page.
-1. Use the following naming format for the image file:  
-  
+1. Use the following naming format for the image file:
+
    `<page file name>.<image file name>`
 
 For example, you can store the title of the page myPage.html in the file myPage.title.gif. This file is automatically deleted if the page is updated, so any change to the page title is automatically reflected in the cache.
@@ -663,37 +663,37 @@ The CQ configuration places the repository and datastore on the same logical vol
 
 The following table illustrates the size of data volumes that are used in the backup benchmarks. The initial baseline content is first installed, then additional known amounts of data are added to increase the size of the content backed up. Back-ups will be created at specific increments to represent a large increase in content and what may be produced in a day. The distribution of content (pages, images, tags) will be roughly based on realistic production asset composition. Pages, images, and tags will be limited to a maximum of 800 child pages. Each page will include title, Flash, text/image, video, slideshow, form, table, cloud, and carousel components. Images will be uploaded from a pool of 400 unique files ranging in size from 37 kB to 594 kB.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Content</strong></td> 
-   <td><strong>Nodes</strong></td> 
-   <td><strong>Pages</strong></td> 
-   <td><strong>Images</strong></td> 
-   <td><strong>Tags</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Base install</td> 
-   <td>69,610</td> 
-   <td>562</td> 
-   <td>256</td> 
-   <td>237</td> 
-  </tr> 
-  <tr> 
-   <td>Small content for incremental back-up</td> 
-   <td><br type="_moz" /> </td> 
-   <td>+100</td> 
-   <td>+2</td> 
-   <td>+2</td> 
-  </tr> 
-  <tr> 
-   <td>Large content for full back-up</td> 
-   <td><br type="_moz" /> </td> 
-   <td>+10,000</td> 
-   <td>+100</td> 
-   <td>+100</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Content</strong></td>
+   <td><strong>Nodes</strong></td>
+   <td><strong>Pages</strong></td>
+   <td><strong>Images</strong></td>
+   <td><strong>Tags</strong></td>
+  </tr>
+  <tr>
+   <td>Base install</td>
+   <td>69,610</td>
+   <td>562</td>
+   <td>256</td>
+   <td>237</td>
+  </tr>
+  <tr>
+   <td>Small content for incremental back-up</td>
+   <td><br type="_moz" /> </td>
+   <td>+100</td>
+   <td>+2</td>
+   <td>+2</td>
+  </tr>
+  <tr>
+   <td>Large content for full back-up</td>
+   <td><br type="_moz" /> </td>
+   <td>+10,000</td>
+   <td>+100</td>
+   <td>+100</td>
+  </tr>
+ </tbody>
 </table>
 
 The backup benchmark is repeated with the additionnal content sets added at each repetition.

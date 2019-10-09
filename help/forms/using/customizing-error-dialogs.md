@@ -5,7 +5,7 @@ description: How-to customize the error dialogs of LiveCycle AEM Forms workspace
 seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 ---
@@ -26,7 +26,7 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
     "ok" : "Ok",
     "ErrorCode" : "Error Code:"
     }
-    
+
    To
     "wserror" : {
     "message" : "Error Message:",
@@ -95,7 +95,7 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
        width: 100px;
        font-size: 18px;
        color: white;
-    
+
    }
    .error-dialog .single-col{
        width: 100%;
@@ -160,9 +160,9 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
        overflow-y:scroll;
        overflow-x:hidden;
        width:100%;
-    
+
    }
-    
+
    .error-background, .popup-background, .wsMessageBackGround, .userInfoBackGround, .busyState, .aboutWorkspaceBG {
        width: 100%;
        height: 100%;
@@ -181,7 +181,7 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
 1. For the foot bar button span, separate the `.error-dialog` and `.foot-bar` button spans from the composite list. To make this change, add the following in the newStyle.css file:
 
    ```css
-   
+
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
    #userSearchPopUp #actionbar span, #taskarea .action button span, .error-dialog .foot-bar button span, .oooAction button span, .wsMessageContainerDiv .action button span
    {
@@ -190,9 +190,9 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
        white-space: nowrap;
        overflow: hidden;
    }
-    
+
    To
-    
+
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
    #userSearchPopUp #actionbar span, #taskarea .action button span, .oooAction button span, .wsMessageContainerDiv .action button span
    {
@@ -201,7 +201,7 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
        white-space: nowrap;
        overflow: hidden;
    }
-    
+
    /*-------- Customized following Portion --------*/
    .error-dialog .foot-bar button span
    {
@@ -234,9 +234,9 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
     box-shadow:0px 0px 10px 3px #888;
     display:none;
 }
- 
+
 To
- 
+
 .error-dialog{
     border: 9px solid #DEDEDE;
     width: 200px;
@@ -266,9 +266,9 @@ To
     overflow: hidden;
     white-space: nowrap;
 }
- 
+
 To
- 
+
 .error-dialog .head-bar{
     height: 40px;
     background: url(../images/error.png) no-repeat 7px 10px #DEDEDE;

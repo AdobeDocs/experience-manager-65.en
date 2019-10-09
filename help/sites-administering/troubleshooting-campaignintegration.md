@@ -5,7 +5,7 @@ description: Learn how to troubleshoot issues with the Adobe Campaign Integratio
 seo-description: Learn how to troubleshoot issues with the Adobe Campaign Integration.
 uuid: 835ac2c3-ef2f-4963-9047-aeda3647b114
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
@@ -53,7 +53,7 @@ To fix this issue, change the following in **$CAMPAIGN_HOME/conf/config-&lt;inst
 
 In Adobe Campaign, ensure that you have no trailing slash (/) after the port number.
 
-![chlimage_1-149](assets/chlimage_1-149.png) 
+![chlimage_1-149](assets/chlimage_1-149.png)
 
 ## If you get a warning about your setlocale {#if-you-get-a-warning-about-your-setlocale}
 
@@ -70,7 +70,7 @@ If you see the following error message in the AEM log file:
 Use the following workaround:
 
 1. Open file **$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js**
-1. Modify line 467 of method “amcGetSeedMetaData” 
+1. Modify line 467 of method “amcGetSeedMetaData”
 1. Change `label : [inclView.@label](mailto:inclView.@label)` to `label : String([inclView.@label](mailto:inclView.@label))`
 
 1. Save.
@@ -129,4 +129,4 @@ When creating a mail template for Adobe Campaign, you must include the property 
 
 ## If you get the error "com.day.cq.mcm.campaign.servlets.util.ParameterMapper" in your logs {#if-you-get-the-error-com-day-cq-mcm-campaign-servlets-util-parametermapper-in-your-logs}
 
-When using your custom template, you get the error "com.day.cq.mcm.campaign.servlets.util.ParameterMapper" in your logs. In this event, be sure to install Featurepack 6576 from [Package Share](/help/sites-administering/package-manager.md#package-share). This is an issue where if the acMapping property is set to a value other than recipient.firstName, a blank value is created on the Adobe Campaign Manager side. 
+When using your custom template, you get the error "com.day.cq.mcm.campaign.servlets.util.ParameterMapper" in your logs. In this event, be sure to install Featurepack 6576 from [Package Share](/help/sites-administering/package-manager.md#package-share). This is an issue where if the acMapping property is set to a value other than recipient.firstName, a blank value is created on the Adobe Campaign Manager side.

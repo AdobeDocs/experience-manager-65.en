@@ -5,7 +5,7 @@ description: Learn how to create, configure and develop new AEM dashboards.
 seo-description: Learn how to create, configure and develop new AEM dashboards.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
@@ -17,12 +17,12 @@ When using AEM you are able of managing a lot of content of different types (e.g
 
 >[!NOTE]
 >
->AEM Dashboards are created on a per user basis, so a user can only access to their own dashboard.  
+>AEM Dashboards are created on a per user basis, so a user can only access to their own dashboard.
 >
 >
 >However, [Dashboard templates](#creating-a-dashboard-template) can be used to share common configuration and Dashboard layout.
 
-![chlimage_1-22](assets/chlimage_1-22.jpeg) 
+![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
 ## Administering Dashboards {#administering-dashboards}
 
@@ -30,13 +30,13 @@ When using AEM you are able of managing a lot of content of different types (e.g
 
 To create a new Dashboard, proceed as follows:
 
-1. In the **Tools** section, click **Configuration Console**.  
+1. In the **Tools** section, click **Configuration Console**.
 
-1. In the tree, Double-Click **Dashboard**.  
+1. In the tree, Double-Click **Dashboard**.
 
-1. Click **New Dashboard**.  
+1. Click **New Dashboard**.
 
-1. Type the **Title** (e.g. My Dashboard) and the **Name**.  
+1. Type the **Title** (e.g. My Dashboard) and the **Name**.
 
 1. Click **Create**.
 
@@ -44,23 +44,23 @@ To create a new Dashboard, proceed as follows:
 
 You may want to have multiple dashboards to quickly see information about your content from different views. To help you to create new Dashboard, AEM provides a clone feature that you can use to duplicate an existing Dashboard. To clone a Dashboard, proceed as follows:
 
-1. In the **Tools** section, click **Configuration Console**.  
+1. In the **Tools** section, click **Configuration Console**.
 
 1. In the tree, Click **Dashboard**.
-1. Click on the dashboard you want to clone.  
+1. Click on the dashboard you want to clone.
 
-1. Click **Clone**.  
+1. Click **Clone**.
 
 1. Type the **Name** of your new dashboard.
 
 ### Removing A Dashboard {#removing-a-dashboard}
 
-1. In the **Tools** section, click **Configuration Console**.  
+1. In the **Tools** section, click **Configuration Console**.
 
 1. In the tree, Click **Dashboard**.
-1. Click on the dashboard you want to delete.  
+1. Click on the dashboard you want to delete.
 
-1. Click **Remove**.  
+1. Click **Remove**.
 
 1. Click **Yes** to confirm.
 
@@ -76,7 +76,7 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 Each reporting component provides at least three tabs:
 
-* **Basic**: contains the main configuration.  
+* **Basic**: contains the main configuration.
 
 * **Report:** contains the configuration specific of each report.
 * **Style**: contains styling configuration like chart size and margin.
@@ -205,7 +205,7 @@ $.ajax({
        "path": "/var/audit/com.day.cq.wcm.core.page/",
        "type": "cq:AuditEvent"
    },
-  dataType: "json"     
+  dataType: "json"
 }).done(function( res ) {
     var authors = {};
     // from JSON to Object
@@ -216,24 +216,24 @@ $.ajax({
         }
         var auth = authors[userId] || {userId : userId};
         auth.contrib = (auth.contrib || 0) +1;
-        
+
         authors[userId] = auth;
     }
-    
+
     // order by contribution
     var orderedByContrib = [];
     for(var a in authors) {
         orderedByContrib.push(authors[a]);
     }
     orderedByContrib.sort(function(a,b){return b.contrib - a.contrib});
-    
+
     // produce the list
     for (var i=0, tot=orderedByContrib.length; i < tot; i++) {
         var current = orderedByContrib[i];
         $("<div> #" + (i + 1) +" "+ current.userId + " (" + current.contrib +" contrib.)</div>").appendTo("#authors-list");
 
     }
-});  
+});
 ```
 
 The `JSP` includes both `global.jsp` and `clientlib`.

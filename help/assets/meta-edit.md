@@ -5,7 +5,7 @@ description: Learn about asset metadata in AEM Assets an various ways by which y
 seo-description: Learn about asset metadata in AEM Assets an various ways by which you can edit asset metadata.
 uuid: 37b19dab-17cc-487e-a3fc-0098400a2ad8
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 7d731038-13a3-4ff9-b9f0-ec0c54b94c73
 ---
 
@@ -48,7 +48,7 @@ For details on how to edit metadata schema, see [Editing metadata schema forms](
 You can add your own namespaces within AEM. Just as there are predefined namespaces such as cq, jcr and sling, you can have a namespace for your repository metadata and xml processing.
 
 1. Go to the node type administration page *https://&lt;host&gt;:&lt;port&gt;/crx/explorer/nodetypes/index.jsp*.
-1. Click or tap **[!UICONTROL Namespaces]** at the top of the page. The namespace administration page is displayed in a window.  
+1. Click or tap **[!UICONTROL Namespaces]** at the top of the page. The namespace administration page is displayed in a window.
 
 1. To add a namespace, click or tap **[!UICONTROL New]** at the bottom.
 1. Specify a custom namespace in the XML namespace convention (Specify the id in the form of a URI and an associated prefix for the id), and click or tap **[!UICONTROL Save]**.

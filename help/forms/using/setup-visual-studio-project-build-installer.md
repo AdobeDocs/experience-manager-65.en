@@ -5,7 +5,7 @@ description: Learn how to set up a Visual Studio project to build the AEM Forms 
 seo-description: Learn how to set up a Visual Studio project to build the AEM Forms Windows mobile device app.
 uuid: 0a72387a-d920-4f66-8983-d500ef0ecd90
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 ---
@@ -23,7 +23,7 @@ To get the AEM Forms app source, perform the following steps:
 1. Download the source package. When you download the package, it is added in your AEM Forms package manager.
 1. After it is downloaded, navigate to: `https://<server>:<port>/crx/packmgr/index.jsp`, and install `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-1. To download the source code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser. 
+1. To download the source code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.
 
    The source package is downloaded on your device.
 
@@ -33,7 +33,7 @@ The following image displays the extracted contents of the `adobe-lc-mobileworks
 
 The following image displays the directory structure of the `windows` folder in the `src` folder.
 
-![win-dir](assets/win-dir.png) 
+![win-dir](assets/win-dir.png)
 
 ## Setting up the environment {#setting-up-the-environment}
 
@@ -60,7 +60,7 @@ Perform the following steps to build and deploy AEM Forms app.
 >
 >Data stored on Windows file system for AEM Forms app is not encrypted. It is recommended that you use a third-party tool like Windows BitLocker Drive Encryption to encrypt disk data.
 
-1. In the Visual Studio Standard Toolbar, select **Release** from the drop-down for build mode.  
+1. In the Visual Studio Standard Toolbar, select **Release** from the drop-down for build mode.
 
 1. Select Windows-AnyCPU, Windows-x64, or Windows-x86 based on your platform. Windows-AnyCPU is recommended.
 1. In the Visual Studio Solution Explorer, right-click the project **CordovaApp.Windows** and select **Store &gt; Create AppPackages**.
@@ -71,7 +71,7 @@ Perform the following steps to build and deploy AEM Forms app.
 
    The CordovaApp.Windows_3.0.2.0_anycpu.appx installer file is created in the platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test directory.
 
-   If you encounter the error `Retarget to windows 8.1 required`, right-click the error and in the pop-up menu, select **Retarget To Windows 8.1**. 
+   If you encounter the error `Retarget to windows 8.1 required`, right-click the error and in the pop-up menu, select **Retarget To Windows 8.1**.
 
    ![retarget-solution](assets/retarget-solution.png)
 
@@ -96,8 +96,8 @@ Perform the following steps to build and deploy AEM Forms app.
 
    The directory Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contains the four main components in it:
 
-    1. `.appx` file 
-    1. Certificate (Currently it is a self-signed certificate by Apache Cordova) 
+    1. `.appx` file
+    1. Certificate (Currently it is a self-signed certificate by Apache Cordova)
     1. Dependency folder
     1. PowerShell file (.ps1 extension)
 
@@ -109,7 +109,7 @@ There are two ways to install the application on a Windows device.
 
 1. Right-click on the PowerShell file ( `Add-AppDevPackage.ps1)`, and choose **Run with PowerShell**.
 
-1. The setup prompts you to get a developer license. Use Microsoft account credentials to acquire developer license. 
+1. The setup prompts you to get a developer license. Use Microsoft account credentials to acquire developer license.
 
    This license is valid for 30 days, and you can renew it for free.
 
@@ -125,7 +125,7 @@ Microsoft recommends that you install a trusted authority issued public certific
 
 To deploy the app:
 
-* Ensure that the device is joined to the domain of the enterprise.   
+* Ensure that the device is joined to the domain of the enterprise.
 * Enable group policy setting.
 
 **To enable group policy setting:**
@@ -151,7 +151,7 @@ For more information, click [here](https://blogs.msdn.com/b/mvpawardprogram/arch
 
 To install the app on Windows using Visual Studio:
 
-1. Connect the device using remote debugger. 
+1. Connect the device using remote debugger.
 
    For more information, see [Run Windows Store apps on a remote machine](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 

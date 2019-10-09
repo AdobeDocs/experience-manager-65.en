@@ -5,7 +5,7 @@ description: Tutorial on how to set up an enablement community
 seo-description: Tutorial on how to set up an enablement community
 uuid: 25b43ee4-6fdd-496c-94fe-daf1d300aecb
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714

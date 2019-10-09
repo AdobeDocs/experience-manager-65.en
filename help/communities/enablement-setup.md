@@ -5,7 +5,7 @@ description: Initial Setup for Enablement
 seo-description: Initial Setup for Enablement
 uuid: 873ec41d-c088-41d9-a535-de5300661de6
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2

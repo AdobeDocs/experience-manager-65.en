@@ -79,7 +79,7 @@ See the [Authoring documentation](/help/sites-authoring/home.md) for more inform
 
 >[!CAUTION]
 >
->Adobe does not plan to make further enhancements to the Classic UI. AEM 6.4 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated. [Read more](/help/sites-deploying/ui-recommendations.md).
+>Adobe does not plan to make further enhancements to the Classic UI. AEM 6.5 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated. [Read more](/help/sites-deploying/ui-recommendations.md).
 
 #### Content Repository {#content-repository}
 
@@ -125,7 +125,7 @@ Full list of changes in [AEM Sites and Add-ons](sites.md).
 
 #### Fluid Experiences {#fluid-experiences}
 
-The introduction of Fluid Experiences at the start of 2017, backed by Content Fragments, Experience Fragments and Content Services were the start to evolve to a multi-channel-first content management. AEM 6.4 extends each of the areas significantly:
+The introduction of Fluid Experiences at the start of 2017, backed by Content Fragments, Experience Fragments and Content Services were the start to evolve to a multi-channel-first content management. AEM 6.5 extends each of the areas significantly:
 
 **[Content Fragments](/help/assets/content-fragments.md)**
 
@@ -141,19 +141,19 @@ Various enhancements to Sling Model Exporter and the Core Components are include
 
 #### Getting Sites Built Quicker {#gettings-sites-built-quicker}
 
-AEM 6.4 completes the transformation to the next generation component model. The Core Components concept introduced in AEM 6.3, and now joined by the Style System, provides an efficient way to build new and extend existing sites.
+AEM 6.5 completes the transformation to the next generation component model. The Core Components concept introduced in AEM 6.3, and now joined by the Style System, provides an efficient way to build new and extend existing sites.
 
 Recommended tutorial to learn on how to best leverage the new component model: [Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
 #### Screens Add-on {#screens-add-on}
 
-Delivering a consistent message across all marketing channels including Digital Signage and kiosk networks is what AEM Screens stands for. AEM 6.4 adds support to run the Signage Player on Microsoft Windows and Google Chrome OS hardware. Further, enhancements to remote device management and schedules (groups of channels) are available.
+Delivering a consistent message across all marketing channels including Digital Signage and kiosk networks is what AEM Screens stands for. AEM 6.5 adds support to run the Signage Player on Microsoft Windows and Google Chrome OS hardware. Further, enhancements to remote device management and schedules (groups of channels) are available.
 
 For more information on the Screens updates, see [AEM Screens User Guide](/help/screens/home.md).
 
 ### Experience Manager Communities {#experience-manager-communities}
 
-AEM 6.4 adds many new features and enhancements to Communities. Full list of changes is available in [AEM Communities](communities-release-notes.md). Highlights for this release are:
+AEM 6.5 adds many new features and enhancements to Communities. Full list of changes is available in [AEM Communities](communities-release-notes.md). Highlights for this release are:
 
 #### Enhancements to Moderation {#enhancements-to-moderation}
 
@@ -173,7 +173,7 @@ Ability to bookmark the pre-defined moderation filters on moderation console has
 
 #### Delete UGC and user profiles {#delete-ugc-and-user-profiles}
 
-AEM 6.4 Communities exposes [out-of-the-box APIs](/help/communities/user-ugc-management-service.md) and sample [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) to enable end users have control over their data. These APIs also enable data processing and data controlling organizations to serve EU GDPR compliance requests.
+AEM 6.5 Communities exposes [out-of-the-box APIs](/help/communities/user-ugc-management-service.md) and sample [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) to enable end users have control over their data. These APIs also enable data processing and data controlling organizations to serve EU GDPR compliance requests.
 
 #### Enhancements to Site and Group Management {#enhancements-to-site-and-group-management}
 
@@ -195,7 +195,7 @@ Assignment and Catalog functions are now available within groups. This enables l
 
 ### Experience Manager Assets {#experience-manager-assets}
 
-AEM 6.4 brings in several new features and enhancements to Assets including new, improved CreativeCloud integration, key Artificial Intelligence innovations, improved metadata management, reporting enhancements, and overall user experience improvements. The full list of changes available in [AEM Assets](assets.md). The highlights of the release are:
+AEM 6.5 brings in several new features and enhancements to Assets including new, improved CreativeCloud integration, key Artificial Intelligence innovations, improved metadata management, reporting enhancements, and overall user experience improvements. The full list of changes available in [AEM Assets](assets.md). The highlights of the release are:
 
 **Adobe Asset Link**
 
@@ -207,7 +207,7 @@ To learn more about this capability, prerequisites, and how to access it, see [A
 
 **AEM desktop app**
 
-AEM desktop app has been updated to Version 1.8, which is compatible with AEM 6.4. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.
+AEM desktop app has been updated to Version 1.8, which is compatible with AEM 6.5. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.
 
 Improvements introduced since the AEM 6.3 release include the ability to upload hierarchical folders in the background, a new UI to monitor asset background operations, enhanced caching, networking and login, as well as overall stability improvements. The documentation also includes a [best practices guide](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
@@ -223,7 +223,7 @@ Various enhancements include the ability to import and export metadata simultane
 
 **Reports**
 
-Asset reporting underwent a big overhaul in AEM 6.4 with new reporting framework, user experience, and more OOTB reports for customer usecases. To learn how to generate various reports, see [Asset Reports](/help/assets/asset-reports.md).
+Asset reporting underwent a big overhaul in AEM 6.5 with new reporting framework, user experience, and more OOTB reports for customer usecases. To learn how to generate various reports, see [Asset Reports](/help/assets/asset-reports.md).
 
 **User Experience**
 
@@ -235,7 +235,7 @@ Various enhancements in areas of metadata, reporting, digital rights, login expe
 
 #### Dynamic Media Add-on {#dynamic-media-add-on}
 
-AEM 6.4 includes many new features and enhancements to Dynamic Media. The full list is available in [AEM Assets](assets.md). Key highlights include the following:
+AEM 6.5 includes many new features and enhancements to Dynamic Media. The full list is available in [AEM Assets](assets.md). Key highlights include the following:
 
 **Smart Crop**
 
@@ -269,7 +269,7 @@ See [Working with 3D assets](/help/assets/assets-3d.md) documentation to learn m
 
 ### Experience Manager Forms {#experience-manager-forms}
 
-AEM 6.4 Forms brings in several new features and enhancements. The highlights include:
+AEM 6.5 Forms brings in several new features and enhancements. The highlights include:
 
 * Multi-channel Interactive Communications
 * Prefill Interactive Communications from business applications
@@ -277,11 +277,11 @@ AEM 6.4 Forms brings in several new features and enhancements. The highlights in
 * Lazy loading fragments
 * Single-hop upgrade from LiveCycle to Experience Manager Forms 6.4
 
-More details on [AEM Forms](forms.md) release notes page. Also, see the [Summary of new features and enhancements in AEM 6.4 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources.
+More details on [AEM Forms](forms.md) release notes page. Also, see the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources.
 
 ### Experience Manager Livefyre {#experience-manager-livefyre}
 
-You can integrate Livefyre with your AEM 6.4 instance. Information on how to integrate Livefyre with AEM is located here:
+You can integrate Livefyre with your AEM 6.5 instance. Information on how to integrate Livefyre with AEM is located here:
 
 * [Integrating Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
 
@@ -291,7 +291,7 @@ Adobe is using a customer focused development model that allows customers to con
 
 Adobe has the procedures and processes in place to enable collection, prioritization, and tracking of customer focused bug resolution and enhancement request development. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement & Defect Tracking System. Customer questions are identified and resolved with Customer Care where possible. When escalated to R&D, all customer information is captured, and used for prioritization and reporting purposes. Priority is given in development to paid support and warrantee issues and paid customer enhancements.
 
-This process of prioritization has yielded more than 500 customer focused changes fixed in AEM 6.4.
+This process of prioritization has yielded more than 500 customer focused changes fixed in AEM 6.5.
 
 ## List of files that are part of the Release {#list-of-files-that-are-part-of-the-release}
 
@@ -363,11 +363,11 @@ Please see [upgrade documentation](/help/sites-deploying/upgrade.md) for detaile
 
 ## Supported Platforms {#supported-platforms}
 
-Please find the complete matrix of supported platforms incl. Support-Level on [AEM 6.4 Technical Requirements](/help/sites-deploying/technical-requirements.md) 
+Please find the complete matrix of supported platforms incl. Support-Level on [AEM 6.5 Technical Requirements](/help/sites-deploying/technical-requirements.md) 
 
 >[!NOTE]
 >
->Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9 and 10 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe will only provide support for LTS releases of Java to run AEM in production. Therefore Java 8 is the recommended version to use with AEM 6.4.
+>Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9 and 10 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe will only provide support for LTS releases of Java to run AEM in production. Therefore Java 8 is the recommended version to use with AEM 6.5.
 
 ## Deprecated and Removed Features {#deprecated-and-removed-features}
 

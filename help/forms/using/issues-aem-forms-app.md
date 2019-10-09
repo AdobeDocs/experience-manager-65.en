@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot AEM Forms app
 seo-title: Troubleshoot AEM Forms app
-description: Learn about common issues with AEM Forms app and how to troubleshoot them. 
-seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them. 
+description: Learn about common issues with AEM Forms app and how to troubleshoot them.
+seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
 uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 ---
@@ -29,7 +29,7 @@ AEM Forms app for iOS configured to sync with AEM Forms on OSGi supports only fi
 
 1. On the connected server, navigate to **Adobe Experience Manager &gt; Tools &gt; Operations &gt; Web Console**.
 1. Find and click **Adaptive Form Configuration Service**.
-1. In the Adaptive Form Configuration Service dialog, enable **Make File Names Unique**. 
+1. In the Adaptive Form Configuration Service dialog, enable **Make File Names Unique**.
 
    If **Make File Names Unique** setting is disabled, users experience data loss if they try to submit adaptive forms with multiple attachments.
 
@@ -39,17 +39,17 @@ AEM Forms app for iOS configured to sync with AEM Forms on OSGi supports only fi
 
 For HTML5 forms enabled in AEM Forms app with **Save as Draft** HTML Render Profile, the saved drafts are not visible to workspace users. To view saved drafts of HTML5 forms submitted by workspace users on the portal, perform the following steps:
 
-1. Open CRXDE and login with administrator credentials. 
+1. Open CRXDE and login with administrator credentials.
 
    URL: `https://<server>:<port>/lc/crx/de/index.jsp`
 
 1. In the root path of the CRXDE, in the Access Control List under Access Control, click **+**.
 1. In the **Add New Entry** dialog, click the group search button in the Principal field.
-1. In the Name field of the Select Principal dialog, type `PERM_WORKSPACE_USER` and click **Search**. 
+1. In the Name field of the Select Principal dialog, type `PERM_WORKSPACE_USER` and click **Search**.
 1. Select `PERM_WORKSPACE_USER` group in the Select Principal dialog and click **OK**.
-1. In the Add New Entry dialog, `PERM_WORKSPACE_USER` group is selected in the Principal field. 
+1. In the Add New Entry dialog, `PERM_WORKSPACE_USER` group is selected in the Principal field.
 
-   Enable `jcr:read` privileges for the user group.  
+   Enable `jcr:read` privileges for the user group.
 
 1. Click **OK**.
 
@@ -59,12 +59,12 @@ When AEM Forms app is connected to an older version of AEM Forms server, non-cac
 
 Perform the following steps to resolve the issue:
 
-1. In author instance, navigate to **Adobe Experience Manager &gt; Tools &gt; Configure Workspace App Offline Service &gt; Configure Now**. 
+1. In author instance, navigate to **Adobe Experience Manager &gt; Tools &gt; Configure Workspace App Offline Service &gt; Configure Now**.
 1. In **Workspace App Offline Service** page, click **Manual Resource Cache**.
 
    URL: https://&lt;server&gt;:&lt;port&gt;/libs/fd/workspace-offline/content/config.html
 
-1. In the **Manual Resource Cache** tab, click the **+** button to add a CRX path. 
+1. In the **Manual Resource Cache** tab, click the **+** button to add a CRX path.
 1. In the **Add a New Resource** field, type: /etc.clientlibs/fd/xfaforms/I18N/en_US.js and click **Add**.
 1. Click **Save**.
 
@@ -82,13 +82,13 @@ The error message is displayed when you build AEM Forms app in Android Studio. T
 
 **Resolution:** Click **Fix Gradle wrapper and re-import project** to resolve the issue.
 
-![gradle_unsupported_version](assets/gradle_unsupported_version.png) 
+![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
 ## Gradle and Android Gradle plug-in compatibility issues {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
 **Error Message:** The versions of the Android Gradle plugin and Gradle are not compatible.
 
-The error message is displayed when you select **Build APK** option from the **Build** menu on the Android Studio user interface. 
+The error message is displayed when you select **Build APK** option from the **Build** menu on the Android Studio user interface.
 
 ![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 

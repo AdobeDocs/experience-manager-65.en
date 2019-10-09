@@ -5,7 +5,7 @@ description: Learn how AEM can create personalized content
 seo-description: Learn how AEM can create personalized content
 uuid: 3a1aaa3d-5f57-4fb7-a4be-523f0d274b79
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791

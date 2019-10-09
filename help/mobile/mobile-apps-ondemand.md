@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about the roles and responsibilities 
 uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
 contentOwner: msm-service
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
 ---

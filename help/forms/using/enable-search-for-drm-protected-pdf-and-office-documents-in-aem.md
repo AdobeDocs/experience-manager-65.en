@@ -1,12 +1,12 @@
 ---
 title: Enable AEM to search document security protected PDF and Microsoft Office documents
 seo-title: Enable AEM to search document security protected PDF and Microsoft Office documents
-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.  
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.  
+description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
+seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
 uuid: dba882f8-bad4-4122-a0df-03cf087afb23
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 ---
@@ -52,7 +52,7 @@ A secure connection enables  seamless  flow of information between AEM Forms on 
     * **Enable 2-way SSL**: Enable the Enable 2-way SSL option.
     * **KeyStore File URL**: Specify the URL of the  keystore  file.
     * **TrustStore  FIle  URL**: Specify the URL of the  truststore  file.
-    * **KeyStore Password**: Specify the password for the  keystore  file. 
+    * **KeyStore Password**: Specify the password for the  keystore  file.
     * **TrustStorePassword**: Specify the password for the  truststore  file.
     * **Service Name**: Add the RightsManagementService to the list of specified services.
 

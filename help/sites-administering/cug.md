@@ -5,7 +5,7 @@ description: Learn how to create a Closed User Group.
 seo-description: Learn how to create a Closed User Group.
 uuid: 03d5fc69-6e4b-41c1-88c9-7454250c29ac
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
@@ -17,9 +17,9 @@ Closed User Groups (CUGs) are used to limit access to specific pages that reside
 
 To configure such a area within your website you:
 
-* [create the actual closed user group and assign members](#creating-the-user-group-to-be-used).  
+* [create the actual closed user group and assign members](#creating-the-user-group-to-be-used).
 
-* [apply this group to the required pages](#applying-your-closed-user-group-to-content-pages) and select (or create) the login page for use by the members of the CUG; also specified when applying a CUG to a content page.  
+* [apply this group to the required pages](#applying-your-closed-user-group-to-content-pages) and select (or create) the login page for use by the members of the CUG; also specified when applying a CUG to a content page.
 
 * [create a link, of some form, to at least one page within the protected area](#linking-to-the-realm), otherwise it will not be visible.
 * [configure the Dispatcher](#configure-dispatcher-for-cugs) if in use.
@@ -68,7 +68,7 @@ To apply the CUG to a page:
    ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
 1. In the following window, go to the **Advanced** tab.
-1. Scroll down and enable the tickbox in the **Authentication Requirement** section.  
+1. Scroll down and enable the tickbox in the **Authentication Requirement** section.
 
 1. Add your comnfiguration path below, then press Save.
 1. Next, go to the **Permissions** tab and press the **Edit Closed User Group** button.
@@ -86,9 +86,9 @@ To apply the CUG to a page:
 1. Specify the **Login Page** that members of the group will use; for example:
 
    `/content/geometrixx/en/toolbar/login.html`
-   
+
    This is optional, if left blank the standard login page will be used.
-   
+
 1. Add the **Admitted Groups**. Use + to add groups or - to remove. Only members of these groups will be allowed to log in and access the pages.
 1. Assign a **Realm** (a name for the groups of pages) if required. Leave empty to use the page title.
 1. Click **OK** to save the specification.
@@ -116,13 +116,13 @@ Configure [session management in the dispatcher.any file](https://helpx.adobe.co
 ```xml
 /sessionmanagement
     ...
-    /header "Cookie:login-token" 
+    /header "Cookie:login-token"
     ...
 ```
 
 >[!NOTE]
 >
->When a Dispatcher farm has session-management enabled, all pages that the farm handles are not cached. To cache pages that are outside of CUG, create a second farm in dispatcher.any  
+>When a Dispatcher farm has session-management enabled, all pages that the farm handles are not cached. To cache pages that are outside of CUG, create a second farm in dispatcher.any
 >that handles the non-CUG pages.
 
 1. Configure [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) by defining `/directory`; for example:

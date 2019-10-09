@@ -1,13 +1,13 @@
 ---
-title: Learn About AEM 6.4 Capabilities
-seo-title: Learn About AEM 6.4 Capabilities
-description: An description of the essential capabilities of AEM 6.4
-seo-description: An description of the essential capabilities of AEM 6.4
+title: Learn About AEM 6.5 Capabilities
+seo-title: Learn About AEM 6.5 Capabilities
+description: An description of the essential capabilities of AEM 6.5
+seo-description: An description of the essential capabilities of AEM 6.5
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
-# Learn About AEM 6.4 Capabilities {#learn-about-aem-64-capabilities}
+# Learn About AEM 6.5 Capabilities {#learn-about-aem-64-capabilities}
 
 ## AEM Sites {#aem-sites}
 

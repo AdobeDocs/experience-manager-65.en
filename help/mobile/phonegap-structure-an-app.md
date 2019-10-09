@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about how to create structure of an a
 uuid: bf0e8b0c-a075-4847-b56d-de458715027c
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
 ---

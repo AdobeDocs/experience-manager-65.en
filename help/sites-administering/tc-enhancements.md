@@ -4,7 +4,7 @@ seo-title: Translation Enhancements
 description: Translation enhancements in AEM.
 seo-description: Translation enhancements in AEM.
 uuid: 0563603f-327b-48f1-ac14-6777c06734b9
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
@@ -30,7 +30,7 @@ Options to improve productivity working with translation projects have been adde
 
    ![screen_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
 
-1. To select the recurring execution of a translation project, select the frequency with the dropdown under **Repeat Translation**. Recurring project execution will automatically create and execute translation jobs in the specified intervals. 
+1. To select the recurring execution of a translation project, select the frequency with the dropdown under **Repeat Translation**. Recurring project execution will automatically create and execute translation jobs in the specified intervals.
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
@@ -42,7 +42,7 @@ It is possible to configure multiple target languages in a translation project, 
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Switch to the **Advanced** tab. You can add multiple languages under **Target Language**. 
+1. Switch to the **Advanced** tab. You can add multiple languages under **Target Language**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -50,7 +50,7 @@ It is possible to configure multiple target languages in a translation project, 
 
    ![screen_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
 
-1. Translation jobs will be created in the project for every target language. They can be started either one by one within the project, or all at once by executing the project globally in Projects Admin. 
+1. Translation jobs will be created in the project for every target language. They can be started either one by one within the project, or all at once by executing the project globally in Projects Admin.
 
    ![screen_shot_2018-04-22at213854](assets/screen_shot_2018-04-22at213854.jpg)
 
@@ -72,7 +72,7 @@ Manual edits of translated content can be synchronized back to the Translation M
 
 ## Language Copies on Multiple Levels {#language-copies-on-multiple-levels}
 
-Language roots can now be grouped under nodes, for example by region, while still being recognized as roots of language copies. 
+Language roots can now be grouped under nodes, for example by region, while still being recognized as roots of language copies.
 
 ![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 

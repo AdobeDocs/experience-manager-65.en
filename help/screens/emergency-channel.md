@@ -5,7 +5,7 @@ description: Follow this use case example to learn about creating and managing a
 seo-description: Follow this use case example to learn about creating and managing an emergency channel that the content author can switch from a sequence channel in case of a precondition.
 uuid: 527137b4-0421-4917-95e1-195611e25f54
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: example
 topic-tags: use-case-examples
 discoiquuid: 0d711658-5174-40c5-9e75-cc68c1836948
@@ -59,7 +59,7 @@ Follow the steps below to set up an emergency channel:
 1. **Creating an Emergency Channel**
 
     1. Select the **Channels** folder.
-    1. Click on **Create** to open the wizard to create a channel. 
+    1. Click on **Create** to open the wizard to create a channel.
     1. Select **Sequence Channel **from the wizard and create the channel titled as **EmergencyChannel**.
 
    >[!NOTE]
@@ -77,7 +77,7 @@ Follow the steps below to set up an emergency channel:
 
 1. **Creating a Location**
 
-    1. Navigate to **Locations** folder. 
+    1. Navigate to **Locations** folder.
     1. Click **Create** from the action bar and create a location titled **Store** from the wizard.
 
    ![screen_shot_2019-02-22at121638pm](assets/screen_shot_2019-02-22at121638pm.png)
@@ -97,7 +97,7 @@ Follow the steps below to set up an emergency channel:
 
 1. Assign both the Displays to your Schedule and set Priorities
 
-    1. Select the schedule** (StoreSchedule)** and click **Dashboard** from the action bar. 
+    1. Select the schedule** (StoreSchedule)** and click **Dashboard** from the action bar.
     1. Click **+ Assign Channel** from the **ASSIGNED CHANNELS** panel.
     1. From the **Channel Assignment** dialog box:
 
@@ -120,7 +120,7 @@ Follow the steps below to set up an emergency channel:
     1. From the **Channel Assignment** dialog box:
 
         1. Select the path to the **EmergencyChannel**
-        1. Set the **Priority** as 1 
+        1. Set the **Priority** as 1
         1. Set the Supported Events as **Initial Load**, **Idle Screen**, and **User Interaction**
         1. Click **Save**
 
@@ -138,7 +138,7 @@ Follow the steps below to set up an emergency channel:
     1. Select the path to the Schedule (for example, here, **EmergencyChannel** --&gt; **Schedules** --&gt;**StoreSchedule**).
     1. Click **Save**.
 
-   You can view the assigned schedule to the display from the **StoreSchedule** dashboard. 
+   You can view the assigned schedule to the display from the **StoreSchedule** dashboard.
 
    ![screen_shot_2019-03-04at122003pm](assets/screen_shot_2019-03-04at122003pm.png)
 

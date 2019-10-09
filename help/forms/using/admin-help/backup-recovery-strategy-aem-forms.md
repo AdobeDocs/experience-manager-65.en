@@ -7,7 +7,7 @@ uuid: 98fc3115-76e5-4e58-aa30-3601866a441f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 ---
 
@@ -69,7 +69,7 @@ Even though you can change the database server and many other parameters, you ca
 
 Before you restart the forms server after a recovery, do the following:
 
-1. Start the system in maintenance mode. 
+1. Start the system in maintenance mode.
 1. Do the following to ensure that Form Manager is synced with AEM forms in the maintenance mode:
 
     1. Go to https://&lt;*server*&gt;:&lt;*port*&gt;/lc/fm and log in using adminstrator/password credentials.
@@ -77,7 +77,7 @@ Before you restart the forms server after a recovery, do the following:
     1. Click **Admin Options**.
     1. Click **Start** to synchronize assets from the repository.
 
-1. In a clustered environment, the master node (with respect to AEM) should be up before the slave nodes. 
+1. In a clustered environment, the master node (with respect to AEM) should be up before the slave nodes.
 1. Ensure that no processes are initiated from either internal or external sources such as the Web, SOAP, or EJB process initiators until the normal operation of the system is validated.
 
 If the main AEM forms database is moved or changed, review the install Guides relevant to your application server for information on updating the database connection information for the AEM forms data sources IDP_DS and EDC_DS.

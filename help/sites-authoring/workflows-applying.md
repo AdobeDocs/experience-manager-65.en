@@ -5,7 +5,7 @@ description: When authoring, you can invoke workflows to take action on your pag
 seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
 uuid: 8a1d16f8-69fc-4e3a-b72a-b799ea381024
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
@@ -56,7 +56,7 @@ In both cases you will need to:
 
 You can start a workflow from the toolbar of the **Sites** console:
 
-1. Navigate to and select the required page.  
+1. Navigate to and select the required page.
 
 1. From the **Create** option in the toolbar you can now select **Workflow**.
 

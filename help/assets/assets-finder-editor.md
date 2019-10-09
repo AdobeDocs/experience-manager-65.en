@@ -5,7 +5,7 @@ description: Learn how to create custom Asset Editor pages and edit multiple ass
 seo-description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
 uuid: 2913886b-c433-47ab-8b79-8c37717176d3
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 565e307a-e42e-4967-ba72-f1c6fb078676
@@ -41,8 +41,8 @@ You customize the DAM Finder functionality and create pages that have all the fu
 Here are some use cases for creating a customized Asset Share page:
 
 * Press Center for Journalists
-* Image Search Engine for internal business users 
-* Image Database for website users 
+* Image Search Engine for internal business users
+* Image Database for website users
 * Media Tagging Interface for metadata editors
 
 ### Creating an Asset Share Page {#creating-an-asset-share-page}
@@ -71,7 +71,7 @@ To customize your Asset Share page, you use elements from the sidekick and you a
 
 To create a new asset share page via the digital asset manager:
 
-1. In the digital asset manager, in **[!UICONTROL New]**, select **[!UICONTROL New Asset Share]**. 
+1. In the digital asset manager, in **[!UICONTROL New]**, select **[!UICONTROL New Asset Share]**.
 1. In the **[!UICONTROL Title]**, enter the name of the asset share page. If desired, enter a name for the URL.
 
    ![screen_shot_2012-04-19at23626pm](assets/screen_shot_2012-04-19at23626pm.png)
@@ -90,44 +90,44 @@ To add actions to the Asset Share page:
 
 1. In the Asset Share page that you want to customize, click **[!UICONTROL Actions]** in the sidekick.
 
-    The following actions are available: 
+    The following actions are available:
 
     ![assetshare2](assets/assetshare2.bmp)
 
     <table>
-    <tbody> 
-    <tr> 
-    <td><strong>Action</strong></td> 
-    <td><strong>Description </strong></td> 
-    </tr> 
-    <tr> 
-    <td><strong>Delete Action</strong></td> 
-    <td>Users can delete the selected assets.</td> 
-    </tr> 
-    <tr> 
-    <td><strong>Download Action</strong></td> 
-    <td>Lets users download selected assets to their computers.</td> 
-    </tr> 
-    <tr> 
-    <td><strong>Lightbox Action</strong></td> 
-    <td>Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. The lightbox can also be used as a shopping cart for assets.<br /> </td> 
-    </tr> 
-    <tr> 
-    <td><strong>Move Action</strong></td> 
-    <td>Users can move the asset to another location</td> 
-    </tr> 
-    <tr> 
-    <td><strong>Tags Action</strong></td> 
-    <td>Lets users add tags to selected assets</td> 
-    </tr> 
-    <tr> 
-    <td><strong>View Asset Action </strong></td> 
-    <td>Opens the asset in the Asset editor for user manipulation.</td> 
-    </tr> 
-    </tbody> 
+    <tbody>
+    <tr>
+    <td><strong>Action</strong></td>
+    <td><strong>Description </strong></td>
+    </tr>
+    <tr>
+    <td><strong>Delete Action</strong></td>
+    <td>Users can delete the selected assets.</td>
+    </tr>
+    <tr>
+    <td><strong>Download Action</strong></td>
+    <td>Lets users download selected assets to their computers.</td>
+    </tr>
+    <tr>
+    <td><strong>Lightbox Action</strong></td>
+    <td>Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. The lightbox can also be used as a shopping cart for assets.<br /> </td>
+    </tr>
+    <tr>
+    <td><strong>Move Action</strong></td>
+    <td>Users can move the asset to another location</td>
+    </tr>
+    <tr>
+    <td><strong>Tags Action</strong></td>
+    <td>Lets users add tags to selected assets</td>
+    </tr>
+    <tr>
+    <td><strong>View Asset Action </strong></td>
+    <td>Opens the asset in the Asset editor for user manipulation.</td>
+    </tr>
+    </tbody>
     </table>
 
-1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action. 
+1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
     ![chlimage_1-387](assets/chlimage_1-387.png)
 
@@ -143,7 +143,7 @@ To change how search results are viewed:
 
 1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
-The following lenses are available: 
+The following lenses are available:
 
 | **Lens** |**Description** |
 |---|---|
@@ -198,7 +198,7 @@ To add predicates:
 
     ![assetshare4](assets/assetshare4.bmp)
 
-    The following predicates are available: 
+    The following predicates are available:
 
     | **Predicate** |**Description** |
     |---|---|
@@ -410,7 +410,7 @@ The following actions are available:
 | **References** |Click this to show on what pages the asset is being used.  |
 | **Versioning** |Lets you create and restore versions of an asset.  |
 
-1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action. 
+1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
@@ -429,9 +429,9 @@ To multi-edit assets with the Asset Editor page:
     * on Windows: `Ctrl + click` each asset.
     * on Mac: `Cmd + click` each asset.
 
-   To select a range of assets: click the first asset then `Shift + click` the last asset.  
+   To select a range of assets: click the first asset then `Shift + click` the last asset.
 
-1. Click **[!UICONTROL Edit Metadata]** in the **Actions** field (left part of the page).  
+1. Click **[!UICONTROL Edit Metadata]** in the **Actions** field (left part of the page).
 
 1. The Geometrixx **[!UICONTROL Press Center Asset Editor]** page opens in a new tab. The metadata of the assets are displayed as follows:
 
@@ -451,8 +451,8 @@ To multi-edit assets with the Asset Editor page:
     * Click the `+` icon to add the tag to all the assets.
     * Click the `arrow` and select a tag to add a new tag to all the assets.
 
-   Click **[!UICONTROL OK]** to write the changes to the form. The box beside the **Tags** field is automatically checked.  
+   Click **[!UICONTROL OK]** to write the changes to the form. The box beside the **Tags** field is automatically checked.
 
-1. Edit the Description field. For example set it to: `This is a common description`. When a field is edited, its value overwrites the existing values of the selected assets when the form is submitted. The box beside the field is automatically checked when the field is edited.  
+1. Edit the Description field. For example set it to: `This is a common description`. When a field is edited, its value overwrites the existing values of the selected assets when the form is submitted. The box beside the field is automatically checked when the field is edited.
 
 1. Click **[!UICONTROL Update Metadata]** to submit the form and save the changes for all the assets. Only the checked metadata are modified.

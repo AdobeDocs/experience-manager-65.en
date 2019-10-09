@@ -1,12 +1,12 @@
 ---
-title: Creating Document Output Streams 
-seo-title: Creating Document Output Streams 
+title: Creating Document Output Streams
+seo-title: Creating Document Output Streams
 description: null
 seo-description: null
 uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 ---
@@ -79,7 +79,7 @@ To create an interactive PDF form that lets a user enter data, use the Forms ser
 To create a PDF document, perform the following steps:
 
 1. Include project files.
-1. Create an Output Client object. 
+1. Create an Output Client object.
 1. Reference an XML data source.
 1. Set PDF run-time options.
 1. Set rendering run-time options.
@@ -108,40 +108,40 @@ Before you can programmatically perform an Output service operation, you must cr
 
 To merge data with the form design, you must reference an XML data source that contains data. An XML element must exist for every form field that you plan to populate with data. The XML element name must match the field name. An XML element is ignored if it does not correspond to a form field or if the XML element name does not match the field name. It is not necessary to match the order in which the XML elements are displayed if all XML elements are specified.
 
-Consider the following example loan application form. 
+Consider the following example loan application form.
 
 ![cp_cp_loanformdata](assets/cp_cp_loanformdata.png)
 
 To merge data into this form design, you must create an XML data source that corresponds to the form. The following XML represents an XDP XML data source that corresponds to the example mortgage application form.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8" ?>  
- - <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"> 
- - <xfa:data> 
- - <data> 
-     - <Layer> 
-         <closeDate>1/26/2007</closeDate>  
-         <lastName>Johnson</lastName>  
-         <firstName>Jerry</firstName>  
-         <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>  
-         <city>New York</city>  
-         <zipCode>00501</zipCode>  
-         <state>NY</state>  
-         <dateBirth>26/08/1973</dateBirth>  
-         <middleInitials>D</middleInitials>  
-         <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>  
-         <phoneNumber>5555550000</phoneNumber>  
-     </Layer> 
-     - <Mortgage> 
-         <mortgageAmount>295000.00</mortgageAmount>  
-         <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>  
-         <purchasePrice>300000</purchasePrice>  
-         <downPayment>5000</downPayment>  
-         <term>25</term>  
-         <interestRate>5.00</interestRate>  
-     </Mortgage> 
- </data> 
- </xfa:data> 
+ <?xml version="1.0" encoding="UTF-8" ?>
+ - <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
+ - <xfa:data>
+ - <data>
+     - <Layer>
+         <closeDate>1/26/2007</closeDate>
+         <lastName>Johnson</lastName>
+         <firstName>Jerry</firstName>
+         <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
+         <city>New York</city>
+         <zipCode>00501</zipCode>
+         <state>NY</state>
+         <dateBirth>26/08/1973</dateBirth>
+         <middleInitials>D</middleInitials>
+         <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
+         <phoneNumber>5555550000</phoneNumber>
+     </Layer>
+     - <Mortgage>
+         <mortgageAmount>295000.00</mortgageAmount>
+         <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
+         <purchasePrice>300000</purchasePrice>
+         <downPayment>5000</downPayment>
+         <term>25</term>
+         <interestRate>5.00</interestRate>
+     </Mortgage>
+ </data>
+ </xfa:data>
  </xfa:datasets>
 ```
 
@@ -205,11 +205,11 @@ Create a PDF document by using the Output API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path.
 
 1. Create an Output Client object.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `OutputClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference an XML data source.
@@ -219,7 +219,7 @@ Create a PDF document by using the Output API (Java):
 
 1. Set PDF run-time options.
 
-    * Create a `PDFOutputOptionsSpec` object by using its constructor. 
+    * Create a `PDFOutputOptionsSpec` object by using its constructor.
     * Set the File URI option by invoking the `PDFOutputOptionsSpec` object’s `setFileURI` method. Pass a string value that specifies the location of the PDF file that the Output service generates. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer.
 
 1. Set rendering run-time options.
@@ -239,7 +239,7 @@ Create a PDF document by using the Output API (Java):
 
    Create a PDF document by invoking the `OutputClient` object’s `generatePDFOutput` method and passing the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the name of the form design.
     * A string value that specifies the content root where the form design is located.
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -263,7 +263,7 @@ Create a PDF document by using the Output API (Java):
 1. Retrieve the results of the operation.
 
     * Retrieve a `com.adobe.idp.Document` object that represents the status of the `generatePDFOutput` operation by invoking the `OutputResult` object’s `getStatusDoc` method. This method returns status XML data that specifies whether the operation was successful.
-    * Create a `java.io.File` object that contains the results of the operation. Ensure that the file name extension is .xml. 
+    * Create a `java.io.File` object that contains the results of the operation. Ensure that the file name extension is .xml.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file (ensure that you use the `com.adobe.idp.Document` object that was returned by the `getStatusDoc` method).
 
    Although the Output service writes the PDF document to the location specified by the argument that is passed to the `PDFOutputOptionsSpec` object’s `setFileURI` method, you can programmatically retrieve the PDF/A document by invoking the `OutputResult` object’s `getGeneratedDoc` method.
@@ -294,28 +294,28 @@ Create a PDF document by using the Output API (web service):
 
 1. Create an Output Client object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
+    * Create an `OutputServiceClient` object by using its default constructor.
     * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. However, specify `?blob=mtom` to use MTOM.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `OutputServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `OutputServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an XML data source.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store XML data that will be merged with the PDF document.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the XML file that contains form data. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the XML file that contains form data.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Set PDF run-time options
 
-    * Create a `PDFOutputOptionsSpec` object by using its constructor. 
+    * Create a `PDFOutputOptionsSpec` object by using its constructor.
     * Set the File URI option by assigning a string value that specifies the location of the PDF file that the Output service generates to the `PDFOutputOptionsSpec` object’s `fileURI` data member. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer.
 
 1. Set rendering run-time options.
@@ -335,7 +335,7 @@ Create a PDF document by using the Output API (web service):
 
    Create a PDF document by invoking the `OutputServiceService` object’s `generatePDFOutput`method and passing the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the name of the form design.
     * A string value that specifies the content root where the form design is located.
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -384,7 +384,7 @@ Your organization must assess its own needs, the length of time you intend to ke
 
 A PDF/A document must use the font that is specified in the form design and fonts cannot be substituted. As a result, if a font that is located within a PDF document is not available on the host operating system (OS), then an exception occurs.
 
-When a PDF/A document is opened in Acrobat, a message is displayed that confirms that the document is a PDF/A document, as shown in the following illustration. 
+When a PDF/A document is opened in Acrobat, a message is displayed that confirms that the document is a PDF/A document, as shown in the following illustration.
 
 ![cp_cp_pdfamessage](assets/cp_cp_pdfamessage.png)
 
@@ -401,7 +401,7 @@ When a PDF/A document is opened in Acrobat, a message is displayed that confirms
 To create a PDF/A document, perform the following steps:
 
 1. Include project files.
-1. Create an Output Client object. 
+1. Create an Output Client object.
 1. Reference an XML data source.
 1. Set PDF/A run-time options.
 1. Set rendering run-time options.
@@ -470,7 +470,7 @@ Create a PDF/A document by using the Output API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path.
 
 1. Create an Output Client object.
 
@@ -484,13 +484,13 @@ Create a PDF/A document by using the Output API (Java):
 
 1. Set PDF/A run-time options.
 
-    * Create a `PDFOutputOptionsSpec` object by using its constructor. 
+    * Create a `PDFOutputOptionsSpec` object by using its constructor.
     * Set the File URI option by invoking the `PDFOutputOptionsSpec` object’s `setFileURI` method. Pass a string value that specifies the location of the PDF file that the Output service generates. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer.
 
 1. Set rendering run-time options.
 
     * Create a `RenderOptionsSpec` object by using its constructor.
-    * Set the `PDFAConformance` value by invoking the `RenderOptionsSpec` object’s `setPDFAConformance` method and passing a `PDFAConformance` enum value that specifies the conformance level. For example, to specify conformance level A, pass `PDFAConformance.A`. 
+    * Set the `PDFAConformance` value by invoking the `RenderOptionsSpec` object’s `setPDFAConformance` method and passing a `PDFAConformance` enum value that specifies the conformance level. For example, to specify conformance level A, pass `PDFAConformance.A`.
     * Set the `PDFARevisionNumber` value by invoking the `RenderOptionsSpec` object’s `setPDFARevisionNumber` method and passing `PDFARevisionNumber.Revision_1`.
 
    >[!NOTE]
@@ -501,7 +501,7 @@ Create a PDF/A document by using the Output API (Java):
 
    Create a PDF/A document by invoking the `OutputClient` object’s `generatePDFOutput` method and passing the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF/A document, specify `TransformationFormat.PDFA`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF/A document, specify `TransformationFormat.PDFA`.
     * A string value that specifies the name of the form design.
     * A string value that specifies the content root where the form design is located.
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -521,7 +521,7 @@ Create a PDF/A document by using the Output API (Java):
 1. Retrieve the results of the operation.
 
     * Create a `com.adobe.idp.Document` object that represents the status of the `generatePDFOutput` method by invoking the `OutputResult` object’s `getStatusDoc` method.
-    * Create a `java.io.File` object that will contain the results of the operation. Ensure that the file name extension is .xml. 
+    * Create a `java.io.File` object that will contain the results of the operation. Ensure that the file name extension is .xml.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file (ensure that you use the `com.adobe.idp.Document` object that was returned by the `getStatusDoc` method).
 
    >[!NOTE]
@@ -552,28 +552,28 @@ Create a PDF/A document by using the Output API (web service):
 
 1. Create an Output Client object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
+    * Create an `OutputServiceClient` object by using its default constructor.
     * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. However, specify `?blob=mtom` to use MTOM.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `OutputServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `OutputServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an XML data source.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store data that will be merged with the PDF/A document.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to encrypt and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to encrypt and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the byte array contents.
 
 1. Set PDF/A run-time options.
 
-    * Create a `PDFOutputOptionsSpec` object by using its constructor. 
+    * Create a `PDFOutputOptionsSpec` object by using its constructor.
     * Set the File URI option by assigning a string value that specifies the location of the PDF file that the Output service generates to the `PDFOutputOptionsSpec` object’s `fileURI` data member. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer
 
 1. Set rendering run-time options.
@@ -590,7 +590,7 @@ Create a PDF/A document by using the Output API (web service):
 
    Create a PDF document by invoking the `OutputServiceService` object’s `generatePDFOutput`method and passing the following values:
 
-    * A TransformationFormat enumeration value. To generate a PDF document, specify `TransformationFormat.PDFA`. 
+    * A TransformationFormat enumeration value. To generate a PDF document, specify `TransformationFormat.PDFA`.
     * A string value that specifies the name of the form design.
     * A string value that specifies the content root where the form design is located.
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -636,7 +636,7 @@ You can programmatically retrieve Loan.xdp from Content Services (deprecated) an
 To pass a document obtained from Content Services (deprecated) to the Output service, perform the following tasks:
 
 1. Include project files.
-1. Create a Output and a Document Management Client API object. 
+1. Create a Output and a Document Management Client API object.
 1. Retrieve the form design from Content Services (deprecated).
 1. Render the non-interactive PDF form.
 1. Perform an action with the data stream.
@@ -685,7 +685,7 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-output-client.jar and adobe-contentservices-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-output-client.jar and adobe-contentservices-client.jar, in your Java project’s class path.
 
 1. Create an Output and a Document Management Client API object.
 
@@ -697,17 +697,17 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
    Invoke the `DocumentManagementServiceClientImpl` object’s `retrieveContent` method and pass the following values:
 
-    * A string value that specifies the store where the content is added. The default store is `SpacesStore`. This value is a mandatory parameter. 
+    * A string value that specifies the store where the content is added. The default store is `SpacesStore`. This value is a mandatory parameter.
     * A string value that specifies the fully qualified path of the content to retrieve (for example, `/Company Home/Form Designs/Loan.xdp`). This value is a mandatory parameter.
     * A string value that specifies the version. This value is an optional parameter, and you can pass an empty string. In this situation, the latest version is retrieved.
 
-   The `retrieveContent` method returns a `CRCResult` object that contains the XDP file. Retrieve a `com.adobe.idp.Document` instance by invoking the `CRCResult` object’s `getDocument` method. 
+   The `retrieveContent` method returns a `CRCResult` object that contains the XDP file. Retrieve a `com.adobe.idp.Document` instance by invoking the `CRCResult` object’s `getDocument` method.
 
 1. Render the non-interactive PDF form.
 
    Invoke the `OutputClient` object’s `generatePDFOutput2` method and pass the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the content root where the additional resources such as images are located.
     * A `com.adobe.idp.Document` object that represents the form design (use the instance returned by the `CRCResult` object’s `getDocument` method).
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -718,8 +718,8 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
 1. Perform an action with the form data stream.
 
-    * Retrieve a `com.adobe.idp.Document` object that represents the non-interactive form by invoking the `OutputResult` object’s `getGeneratedDoc` method. 
-    * Create a `java.io.File` object that contains the results of the operation. Ensure that the file name extension is .pdf. 
+    * Retrieve a `com.adobe.idp.Document` object that represents the non-interactive form by invoking the `OutputResult` object’s `getGeneratedDoc` method.
+    * Create a `java.io.File` object that contains the results of the operation. Ensure that the file name extension is .pdf.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file (ensure that you use the `com.adobe.idp.Document` object that was returned by the `getGeneratedDoc` method).
 
 **See also**
@@ -752,10 +752,10 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
 1. Create an Output and a Document Management Client API object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
-    * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `OutputServiceClient` object by using its default constructor.
+    * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `OutputServiceClient.ClientCredentials.UserName.UserName`.
@@ -772,19 +772,19 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
    Retrieve content by invoking the `DocumentManagementServiceClient` object’s `retrieveContent` method and passing the following values:
 
-    * A string value that specifies the store where the content is added. The default store is `SpacesStore`. This value is a mandatory parameter. 
-    * A string value that specifies the fully qualified path of the content to retrieve (for example, `/Company Home/Form Designs/Loan.xdp`). This value is a mandatory parameter. 
-    * A string value that specifies the version. This value is an optional parameter, and you can pass an empty string. In this situation, the latest version is retrieved. 
+    * A string value that specifies the store where the content is added. The default store is `SpacesStore`. This value is a mandatory parameter.
+    * A string value that specifies the fully qualified path of the content to retrieve (for example, `/Company Home/Form Designs/Loan.xdp`). This value is a mandatory parameter.
+    * A string value that specifies the version. This value is an optional parameter, and you can pass an empty string. In this situation, the latest version is retrieved.
     * A string output parameter that stores the browse link value.
     * A `BLOB` output parameter that stores the content. You can use this output parameter to retrieve the content.
-    * A `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` output parameter that stores content attributes. 
+    * A `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` output parameter that stores content attributes.
     * A `CRCResult` output parameter. Instead of using this object, you can use the `BLOB` output parameter to retrieve the content.
 
 1. Render the non-interactive PDF form.
 
    Invoke the `OutputServiceClient` object’s `generatePDFOutput2` method and pass the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the content root where the additional resources such as images are located.
     * A `BLOB` object that represents the form design (use the `BLOB` instance returned by Content Services (deprecated)).
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -793,7 +793,7 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
     * An output `BLOB` object that is populated by the `generatePDFOutput2` method. The `generatePDFOutput2` method populates this object with generated metadata that describes the document. (This parameter value is required only for web service invocation).
     * An output `OutputResult` object that contains the results of the operation. (This parameter value is required only for web service invocation).
 
-   The `generatePDFOutput2` method returns a `BLOB` object that contains the non-interactive PDF form. 
+   The `generatePDFOutput2` method returns a `BLOB` object that contains the non-interactive PDF form.
 
 1. Perform an action with the form data stream.
 
@@ -812,7 +812,7 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
 The Output service renders a non-interactive PDF form that is based on a form design that is typically saved as an XDP file and created in Designer. You can pass a `com.adobe.idp.Document` object that contains the form design to the Output service. The Output service then renders the form design located in the `com.adobe.idp.Document` object.
 
-An advantage of passing a `com.adobe.idp.Document` object to the Output service is that other AEM Forms service operations return a `com.adobe.idp.Document` instance. That is, you can get a `com.adobe.idp.Document` instance from another service operation and render it. For example, assume that an XDP file is stored in the AEM Forms repository, as shown in the following illustration. 
+An advantage of passing a `com.adobe.idp.Document` object to the Output service is that other AEM Forms service operations return a `com.adobe.idp.Document` instance. That is, you can get a `com.adobe.idp.Document` instance from another service operation and render it. For example, assume that an XDP file is stored in the AEM Forms repository, as shown in the following illustration.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
@@ -837,7 +837,7 @@ You can create a PDF based on an XDP file located in the repository using one of
 To pass a document obtained from the AEM Forms repository to the Output service, perform the following tasks:
 
 1. Include project files.
-1. Create a Output and a Document Management Client API object. 
+1. Create a Output and a Document Management Client API object.
 1. Retrieve the form design from the AEM Forms repository.
 1. Render the non-interactive PDF form.
 1. Perform an action with the data stream.
@@ -886,7 +886,7 @@ Pass a document retrieved from the Repository by using the Output service and Re
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-output-client.jar and adobe-repository-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-output-client.jar and adobe-repository-client.jar, in your Java project’s class path.
 
 1. Create an Output and a Document Management Client API object.
 
@@ -896,13 +896,13 @@ Pass a document retrieved from the Repository by using the Output service and Re
 
 1. Retrieve the form design from the AEM Forms Repository.
 
-   Invoke the `ResourceRepositoryClient` object’s `readResourceContent` method and pass a string value that specifies the URI location to the XDP file. For example, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. This value is a mandatory. This method returns a `com.adobe.idp.Document` instance that represents the XDP file. 
+   Invoke the `ResourceRepositoryClient` object’s `readResourceContent` method and pass a string value that specifies the URI location to the XDP file. For example, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. This value is a mandatory. This method returns a `com.adobe.idp.Document` instance that represents the XDP file.
 
 1. Render the non-interactive PDF form.
 
    Invoke the `OutputClient` object’s `generatePDFOutput2` method and pass the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the content root where the additional resources such as images are located. For example, `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
     * A `com.adobe.idp.Document` object that represents the form design (use the instance returned by the `ResourceRepositoryClient` object’s `readResourceContent` method).
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -913,8 +913,8 @@ Pass a document retrieved from the Repository by using the Output service and Re
 
 1. Perform an action with the form data stream.
 
-    * Retrieve a `com.adobe.idp.Document` object that represents the non-interactive form by invoking the `OutputResult` object’s `getGeneratedDoc` method. 
-    * Create a `java.io.File` object that contains the results of the operation. Ensure that the file name extension is .pdf. 
+    * Retrieve a `com.adobe.idp.Document` object that represents the non-interactive form by invoking the `OutputResult` object’s `getGeneratedDoc` method.
+    * Create a `java.io.File` object that contains the results of the operation. Ensure that the file name extension is .pdf.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file (ensure that you use the `com.adobe.idp.Document` object that was returned by the `getGeneratedDoc` method).
 
 **See also**
@@ -950,7 +950,7 @@ Before reading *Creating PDF Documents using Fragments*, it is recommended that 
 To create a PDF document based on fragments, perform the following steps:
 
 1. Include project files.
-1. Create an Output and Assembler Client object. 
+1. Create an Output and Assembler Client object.
 1. Use the Assembler service to generate the form design.
 1. Use the Output service to generate the PDF document.
 1. Save the PDF document as a PDF file.
@@ -997,7 +997,7 @@ Create a PDF document based on fragments by using the Output Service API and Ass
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path.
 
 1. Create an Output and Assembler Client object.
 
@@ -1010,7 +1010,7 @@ Create a PDF document based on fragments by using the Output Service API and Ass
    Invoke the `AssemblerServiceClient` object’s `invokeDDX` method and pass the following required values:
 
     * A `com.adobe.idp.Document` object that represents the DDX document to use.
-    * A `java.util.Map` object that contains the input XDP files. 
+    * A `java.util.Map` object that contains the input XDP files.
     * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object that specifies the run-time options, including the default font and the job log level.
 
    The `invokeDDX` method returns a `com.adobe.livecycle.assembler.client.AssemblerResult` object that contains the assembled XDP document. To retrieve the assembled XDP document, perform the following actions:
@@ -1034,8 +1034,8 @@ Create a PDF document based on fragments by using the Output Service API and Ass
 
 1. Save the PDF document as a PDF file.
 
-    * Retrieve a `com.adobe.idp.Document` object that represents the PDF document by invoking the `OutputResult` object’s `getGeneratedDoc` method. 
-    * Create a `java.io.File` object that contains the results of the operation. Ensure that the filename extension is .pdf. 
+    * Retrieve a `com.adobe.idp.Document` object that represents the PDF document by invoking the `OutputResult` object’s `getGeneratedDoc` method.
+    * Create a `java.io.File` object that contains the results of the operation. Ensure that the filename extension is .pdf.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file. (Ensure that you use the `com.adobe.idp.Document` object that the `getGeneratedDoc` method returned.).
 
 **See also**
@@ -1076,10 +1076,10 @@ Create a PDF document based on fragments by using the Output Service API and Ass
 
 1. Create an Output and Assembler Client object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
+    * Create an `OutputServiceClient` object by using its default constructor.
     * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. However, specify `?blob=mtom` to use MTOM.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the `OutputServiceClient.ClientCredentials.UserName.UserName`field.
@@ -1109,7 +1109,7 @@ Create a PDF document based on fragments by using the Output Service API and Ass
 
    Invoke the `OutputServiceClient` object’s `generatePDFOutput2` method and pass the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the content root where the additional resources, such as images, are located.
     * A `BLOB` object that represents the form design (use the `BLOB` instance returned by the Assembler service).
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -1118,7 +1118,7 @@ Create a PDF document based on fragments by using the Output Service API and Ass
     * An output `BLOB` object that the `generatePDFOutput2` method populates. The `generatePDFOutput2` method populates this object with generated metadata that describes the document. (This parameter value is required only for web service invocation).
     * An output `OutputResult` object that contains the results of the operation. (This parameter value is required only for web service invocation).
 
-   The `generatePDFOutput2` method returns a `BLOB` object that contains the non-interactive PDF form. 
+   The `generatePDFOutput2` method returns a `BLOB` object that contains the non-interactive PDF form.
 
 1. Save the PDF document as a PDF file.
 
@@ -1157,7 +1157,7 @@ Using the Output service, you can merge XML data with a form design and print th
 To print to a file, perform the following steps:
 
 1. Include project files.
-1. Create an Output Client object. 
+1. Create an Output Client object.
 1. Reference an XML data source.
 1. Set print run-time options required to print to a file.
 1. Print the print stream to a file.
@@ -1219,11 +1219,11 @@ Print to a file using the Output API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as the adobe-output-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as the adobe-output-client.jar, in your Java project’s class path.
 
 1. Create an Output Client object.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `OutputClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference an XML data source.
@@ -1242,9 +1242,9 @@ Print to a file using the Output API (Java):
    Print to a file by invoking the `OutputClient` object’s `generatePrintedOutput` method and passing the following values:
 
     * A `PrintFormat` enumeration value that specifies the print stream format to create. For example, to create a PostScript print stream, pass `PrintFormat.PostScript`.
-    * A string value that specifies the name of the form design. 
+    * A string value that specifies the name of the form design.
     * A string value that specifies the location of related collateral files such as image files.
-    * A string value that specifies the location of the XDC file to use (you can pass `null` if you specified the XDC file to use by using the `PrintedOutputOptionsSpec` object). 
+    * A string value that specifies the location of the XDC file to use (you can pass `null` if you specified the XDC file to use by using the `PrintedOutputOptionsSpec` object).
     * The `PrintedOutputOptionsSpec` object that contains run-time options required to print to a file.
     * The `com.adobe.idp.Document` object that contain the XML data source that contains form data.
 
@@ -1257,7 +1257,7 @@ Print to a file using the Output API (Java):
 1. Retrieve the results of the operation.
 
     * Create a `com.adobe.idp.Document` object that represents the status of the `generatePrintedOutput` method by invoking the `OutputResult` object’s `getStatusDoc` method (the `OutputResult` object was returned by the `generatePrintedOutput` method).
-    * Create a `java.io.File` object that will contain the results of the operation. Ensure that the file extension is XML. 
+    * Create a `java.io.File` object that will contain the results of the operation. Ensure that the file extension is XML.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file (ensure that you use the `com.adobe.idp.Document` object that was returned by the `getStatusDoc` method).
 
 **See also**
@@ -1284,28 +1284,28 @@ Print to a file using the Output API (web service):
 
 1. Create an Output Client object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
+    * Create an `OutputServiceClient` object by using its default constructor.
     * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. However, specify `?blob=mtom` to use MTOM.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `OutputServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `OutputServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an XML data source.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store form data.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that specifies the location of the XML file that contains form data.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `binaryData` property with the contents of the byte array.
 
 1. Set print run-time options required to print to a file.
 
-    * Create a `PrintedOutputOptionsSpec` object by using its constructor. 
+    * Create a `PrintedOutputOptionsSpec` object by using its constructor.
     * Specify the file by assigning a string value that represents the location and name of the file to the `PrintedOutputOptionsSpec` object’s `fileURI` data member. For example, if you want the Output service to print to a PostScript file named *MortgageForm.ps* located in C:\Adobe, specify C:\\Adobe\MortgageForm.ps.
     * Specify the number of copies to print by assigning an integer value that represents the number of copies to the `PrintedOutputOptionsSpec` object’s `copies` data members.
 
@@ -1314,10 +1314,10 @@ Print to a file using the Output API (web service):
    Print to a file by invoking the `OutputServiceService` object’s `generatePrintedOutput` method and passing the following values:
 
     * A `PrintFormat` enumeration value that specifies the print stream format to create. For example, to create a PostScript print stream, pass `PrintFormat.PostScript`.
-    * A string value that specifies the name of the form design. 
+    * A string value that specifies the name of the form design.
     * A string value that specifies the location of related collateral files such as image files.
-    * A string value that specifies the location of the XDC file to use (you can pass `null` if you specified the XDC file to use by using the `PrintedOutputOptionsSpec` object). 
-    * The `PrintedOutputOptionsSpec` object that contains print run-time options required to print to a file. 
+    * A string value that specifies the location of the XDC file to use (you can pass `null` if you specified the XDC file to use by using the `PrintedOutputOptionsSpec` object).
+    * The `PrintedOutputOptionsSpec` object that contains print run-time options required to print to a file.
     * The `BLOB` object that contains the XML data source that contains form data.
     * A `BLOB` object that is populated by the `generatePDFOutput` method. The `generatePDFOutput` method populates this object with generated metadata that describes the document. (This parameter value is required for web service invocation only.)
     * A `BLOB` object that is populated by the `generatePDFOutput` method. The `generatePDFOutput` method populates this object with result data. (This parameter value is required for web service invocation only.)
@@ -1362,7 +1362,7 @@ Using the Output service, you can merge XML data with a form design and output t
 To send a print stream to a network printer, perform the following steps:
 
 1. Include project files.
-1. Create an Output Client object. 
+1. Create an Output Client object.
 1. Reference an XML data source.
 1. Set print run-time options
 1. Retrieve a document to print.
@@ -1413,79 +1413,79 @@ Another limitation of sending a PDF document to a printer is that it just prints
 
 To retrieve a document to print, you use the `generatePrintedOutput` method. The following table specifies content types that are set for a given print stream when using the `generatePrintedOutput` method.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Print format </p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Print format </p></th>
+   <th><p>Description</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>DPL </p></td> 
-   <td><p>Creates a dpl203.xdc by default or custom xdc output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>DPL300DPI </p></td> 
-   <td><p>Creates a DPL 300 DPI output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>DPL406DPI </p></td> 
-   <td><p>Creates a DPL 400 DPI output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>DPL600DPI </p></td> 
-   <td><p>Creates a DPL 600 DPI output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>GenericColorPCL </p></td> 
-   <td><p>Creates a Generic Color PCL (5c) output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>GenericPSLevel3 </p></td> 
-   <td><p>Creates a Generic PostScript Level 3 output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>IPL </p></td> 
-   <td><p>Creates a Custom IPL output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>IPL300DPI </p></td> 
-   <td><p>Creates a IPL 300 DPI output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>IPL400DPI </p></td> 
-   <td><p>Creates a IPL 400 DPI output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>PCL </p></td> 
-   <td><p>Creates a Generic Monochrome PCL (5e) output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>PostScript </p></td> 
-   <td><p>Creates a Generic PostScript Level 2 output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>TPCL </p></td> 
-   <td><p>Creates a Custom TPCL output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>TPCL305DPI </p></td> 
-   <td><p>Creates a TPCL 305 DPI output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>TPCL600DPI </p></td> 
-   <td><p>Creates a TPCL 600 DPI output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>ZPL </p></td> 
-   <td><p>Creates a ZPL 203 DPI output stream.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>ZPL300DPI </p></td> 
-   <td><p>Creates a ZPL 300 DPI output stream.</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>DPL </p></td>
+   <td><p>Creates a dpl203.xdc by default or custom xdc output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>DPL300DPI </p></td>
+   <td><p>Creates a DPL 300 DPI output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>DPL406DPI </p></td>
+   <td><p>Creates a DPL 400 DPI output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>DPL600DPI </p></td>
+   <td><p>Creates a DPL 600 DPI output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>GenericColorPCL </p></td>
+   <td><p>Creates a Generic Color PCL (5c) output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>GenericPSLevel3 </p></td>
+   <td><p>Creates a Generic PostScript Level 3 output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>IPL </p></td>
+   <td><p>Creates a Custom IPL output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>IPL300DPI </p></td>
+   <td><p>Creates a IPL 300 DPI output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>IPL400DPI </p></td>
+   <td><p>Creates a IPL 400 DPI output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>PCL </p></td>
+   <td><p>Creates a Generic Monochrome PCL (5e) output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>PostScript </p></td>
+   <td><p>Creates a Generic PostScript Level 2 output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>TPCL </p></td>
+   <td><p>Creates a Custom TPCL output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>TPCL305DPI </p></td>
+   <td><p>Creates a TPCL 305 DPI output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>TPCL600DPI </p></td>
+   <td><p>Creates a TPCL 600 DPI output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>ZPL </p></td>
+   <td><p>Creates a ZPL 203 DPI output stream.</p></td>
+  </tr>
+  <tr>
+   <td><p>ZPL300DPI </p></td>
+   <td><p>Creates a ZPL 300 DPI output stream.</p></td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -1508,11 +1508,11 @@ Send a print stream to a network printer by using the Output API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as the adobe-output-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as the adobe-output-client.jar, in your Java project’s class path.
 
 1. Create an Output Client object
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `OutputClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference an XML data source
@@ -1533,13 +1533,13 @@ Send a print stream to a network printer by using the Output API (Java):
     * Retrieve a document to print by invoking the `OutputClient` object’s `generatePrintedOutput` method and passing the following values:
 
         * A `PrintFormat` enumeration value that specifies the print stream. For example, to create a PostScript print stream, pass `PrintFormat.PostScript`.
-        * A string value that specifies the name of the form design. 
+        * A string value that specifies the name of the form design.
         * A string value that specifies the location of related collateral files, such as image files.
         * A string value that specifies the location of the XDC file to use.
         * The `PrintedOutputOptionsSpec` object that contains run-time options that are required to print to a file.
         * The `com.adobe.idp.Document` object that represents the XML data source that contains form data to merge with the form design.
 
-      This method returns an `OutputResult` object that contains the results of the operation. 
+      This method returns an `OutputResult` object that contains the results of the operation.
 
     * Create a `com.adobe.idp.Document` object to send to the printer by invoking the `OutputResult` object ‘s `getGeneratedDoc` method. This method returns a `com.adobe.idp.Document` object.
 
@@ -1547,7 +1547,7 @@ Send a print stream to a network printer by using the Output API (Java):
 
    Send the print stream to a network printer by invoking the `OutputClient` object’s `sendToPrinter` method and passing the following values:
 
-    * A `com.adobe.idp.Document` object that represents the print stream to send to the printer. 
+    * A `com.adobe.idp.Document` object that represents the print stream to send to the printer.
     * A `PrinterProtocol` enumeration value that specifies the printer protocol to use. For example, to specify the SharedPrinter protocol, pass `PrinterProtocol.SharedPrinter`.
     * A string value that specifies the name of the print server. For example, assuming the name of the print server is PrintSever1, pass `\\\PrintSever1`.
     * A string value that specifies the name of the printer. For example, assuming the name of the printer is Printer1, pass `\\\PrintSever1\Printer1`.
@@ -1570,22 +1570,22 @@ Send a print stream to a network printer by using the Output API (web service):
 
 1. Create an Output Client object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
+    * Create an `OutputServiceClient` object by using its default constructor.
     * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. However, specify `?blob=mtom` to use MTOM.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `OutputServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `OutputServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an XML data source.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store form data.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that specifies the location of the XML file that contains form data.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. Determine the byte array length by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. Determine the byte array length by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
@@ -1602,7 +1602,7 @@ Send a print stream to a network printer by using the Output API (web service):
     * Retrieve a document to print by invoking the `OutputServiceService` object’s `generatePrintedOutput` method and passing the following values:
 
         * A `PrintFormat` enumeration value that specifies the print stream. For example, to create a PostScript print stream, pass `PrintFormat.PostScript`.
-        * A string value that specifies the name of the form design. 
+        * A string value that specifies the name of the form design.
         * A string value that specifies the location of related collateral files, such as image files.
         * A string value that specifies the location of the XDC file to use.
         * The `PrintedOutputOptionsSpec` object that contains print run-time options that are used when sending a print stream to a network printer.
@@ -1617,7 +1617,7 @@ Send a print stream to a network printer by using the Output API (web service):
 
    Send the print stream to a network printer by invoking the `OutputClient` object’s `sendToPrinter` method and passing the following values:
 
-    * A `BLOB` object that represents the print stream to send to the printer. 
+    * A `BLOB` object that represents the print stream to send to the printer.
     * A `PrinterProtocol` enumeration value that specifies the printer protocol to use. For example, to specify the SharedPrinter protocol, pass `PrinterProtocol.SharedPrinter`.
     * A `bool` value that specifies whether to user the previous parameter value. Pass the value `true`. (This parameter value is required for web service invocation only.)
     * A string value that specifies the name of the print server. For example, assuming that the name of the print server is PrintSever1, pass `\\\PrintSever1`.
@@ -1633,60 +1633,60 @@ The Output service can create separate documents for each record within an XML d
 
 The following illustration also shows the Output service processing an XML data file that contains multiple records. However, assume that you instruct the Output service to create a single PDF document that contains all data records. In this situation, the Output service generates one document that contains all of the records.
 
-The following illustration shows the Output service processing an XML data file that contains multiple records. Assume that you instruct the Output service to create a separate PDF document for each data record. In this situation, the Output service generates a separate PDF document for each data record. 
+The following illustration shows the Output service processing an XML data file that contains multiple records. Assume that you instruct the Output service to create a separate PDF document for each data record. In this situation, the Output service generates a separate PDF document for each data record.
 
 ![cm_outputbatchmany](assets/cm_outputbatchmany.png)
 
 The following XML data shows an example of a data file that contains three data records.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8"?> 
- <batch> 
- <LoanRecord> 
-     <mortgageAmount>500000</mortgageAmount> 
-     <lastName>Blue</lastName> 
-     <firstName>Tony</firstName> 
-     <SSN>555666777</SSN> 
-     <PositionTitle>Product Manager</PositionTitle> 
-     <Address>555 No Where Dr</Address> 
-     <City>New York</City> 
-     <StateProv>New York</StateProv> 
-     <ZipCode>51256</ZipCode> 
-     <Email>TBlue@NoMailServer.com</Email> 
-     <PhoneNum>555-7418</PhoneNum> 
-     <FaxNum>555-9981</FaxNum> 
-     <Description>Buy a home</Description> 
- </LoanRecord> 
- <LoanRecord> 
-     <mortgageAmount>300000</mortgageAmount> 
-     <lastName>White</lastName> 
-     <firstName>Sam</firstName> 
-     <SSN>555666222</SSN> 
-     <PositionTitle>Program Manager</PositionTitle> 
-     <Address>557 No Where Dr</Address> 
-     <City>New York</City> 
-     <StateProv>New York</StateProv> 
-     <ZipCode>51256</ZipCode> 
-     <Email>SWhite@NoMailServer.com</Email> 
-     <PhoneNum>555-7445</PhoneNum> 
-     <FaxNum>555-9986</FaxNum> 
-     <Description>Buy a home</Description> 
- </LoanRecord> 
- <LoanRecord> 
-     <mortgageAmount>700000</mortgageAmount> 
-     <lastName>Green</lastName> 
-     <firstName>Steve</firstName> 
-     <SSN>55566688</SSN> 
-     <PositionTitle>Project Manager</PositionTitle> 
-     <Address>445 No Where Dr</Address> 
-     <City>New York</City> 
-     <StateProv>New York</StateProv> 
-     <ZipCode>51256</ZipCode> 
-     <Email>SGreeb@NoMailServer.com</Email> 
-     <PhoneNum>555-2211</PhoneNum> 
-     <FaxNum>555-2221</FaxNum> 
-     <Description>Buy a home</Description> 
- </LoanRecord> 
+ <?xml version="1.0" encoding="UTF-8"?>
+ <batch>
+ <LoanRecord>
+     <mortgageAmount>500000</mortgageAmount>
+     <lastName>Blue</lastName>
+     <firstName>Tony</firstName>
+     <SSN>555666777</SSN>
+     <PositionTitle>Product Manager</PositionTitle>
+     <Address>555 No Where Dr</Address>
+     <City>New York</City>
+     <StateProv>New York</StateProv>
+     <ZipCode>51256</ZipCode>
+     <Email>TBlue@NoMailServer.com</Email>
+     <PhoneNum>555-7418</PhoneNum>
+     <FaxNum>555-9981</FaxNum>
+     <Description>Buy a home</Description>
+ </LoanRecord>
+ <LoanRecord>
+     <mortgageAmount>300000</mortgageAmount>
+     <lastName>White</lastName>
+     <firstName>Sam</firstName>
+     <SSN>555666222</SSN>
+     <PositionTitle>Program Manager</PositionTitle>
+     <Address>557 No Where Dr</Address>
+     <City>New York</City>
+     <StateProv>New York</StateProv>
+     <ZipCode>51256</ZipCode>
+     <Email>SWhite@NoMailServer.com</Email>
+     <PhoneNum>555-7445</PhoneNum>
+     <FaxNum>555-9986</FaxNum>
+     <Description>Buy a home</Description>
+ </LoanRecord>
+ <LoanRecord>
+     <mortgageAmount>700000</mortgageAmount>
+     <lastName>Green</lastName>
+     <firstName>Steve</firstName>
+     <SSN>55566688</SSN>
+     <PositionTitle>Project Manager</PositionTitle>
+     <Address>445 No Where Dr</Address>
+     <City>New York</City>
+     <StateProv>New York</StateProv>
+     <ZipCode>51256</ZipCode>
+     <Email>SGreeb@NoMailServer.com</Email>
+     <PhoneNum>555-2211</PhoneNum>
+     <FaxNum>555-2221</FaxNum>
+     <Description>Buy a home</Description>
+ </LoanRecord>
  </batch>
 ```
 
@@ -1701,7 +1701,7 @@ Notice that the XML element that starts and ends each data record is `LoanRecord
 To create multiple PDF files based on an XML data source, perform the following steps:
 
 1. Include project files.
-1. Create an Output Client object. 
+1. Create an Output Client object.
 1. Reference an XML data source.
 1. Set PDF run-time options.
 1. Set rendering run-time options.
@@ -1736,8 +1736,8 @@ An XML element must exist for every form field that you want to populate with da
 
 You must set the following run-time options for the Output service to successfully create multiple files based on an XML data source:
 
-* **Many Files**: Specifies whether the Output service creates a single document or multiple documents. You can specify true or false. To create a separate document for each data record in the XML data source, specify true. 
-* **File URI**: Specifies the location of the files that the Output service generates. For example, assume that you specify C:\\Adobe\forms\Loan.pdf. In this situation, the Output service creates a file named Loan.pdf and places the file in the C:\\Adobe\forms folder. When there are multiple files, the file names are Loan0001.pdf, Loan0002.pdf, Loan0003.pdf and so on. If you specify a file location, the files are placed on the server, not the client computer. 
+* **Many Files**: Specifies whether the Output service creates a single document or multiple documents. You can specify true or false. To create a separate document for each data record in the XML data source, specify true.
+* **File URI**: Specifies the location of the files that the Output service generates. For example, assume that you specify C:\\Adobe\forms\Loan.pdf. In this situation, the Output service creates a file named Loan.pdf and places the file in the C:\\Adobe\forms folder. When there are multiple files, the file names are Loan0001.pdf, Loan0002.pdf, Loan0003.pdf and so on. If you specify a file location, the files are placed on the server, not the client computer.
 * **Record Name**: Specifies the XML element name in the data source that separates the data records. For example, in the example XML data source that is shown earlier in this section, the XML element that separates data records is called `LoanRecord`. (Instead of setting the Record Name run-time option, you can set the Record Level by assigning it a numeric value that indicates the element level that contains data records. However, you can set only the Record Name or the Record Level. You cannot set both values.)
 
 **Set rendering run-time options**
@@ -1757,31 +1757,31 @@ After you reference a valid XML data source that contains multiple data records 
 After the Output service performs an operation, it returns XML data that specifies whether the operation was successful. The following XML is returned by the Output service. In this situation, the Output service generated 42 documents.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8"?> 
- <printResult> 
- <status>0</status> 
- <requestId>4ad85f9e2</requestId> 
- <context/> 
- <messages> 
- <message>Printed all 42 records successfully.</message> 
- </messages> 
- <printSpec> 
- <input> 
- <validated>true</validated> 
- <dataFile recordIdField="" recordLevel="0" recordName="LoanRecord"/> 
- <sniffRules lookAhead="300"/> 
- <formDesign>Loan.xdp</formDesign> 
- <contentRoot>C:\Adobe</contentRoot> 
- <metadata-spec record="false"/> 
- </input> 
- <output> 
- <format>PDF</format> 
- <fileURI>C:\Adobe\forms\Loan.pdf</fileURI> 
- <optionString>cacheenabled=true&padebug=false&linearpdf=false&pdfarevisionnumber=1&pdfaconformance=A&taggedpdf=false&TransactionTimeOut=180</optionString> 
- <waitForResponse>true</waitForResponse> 
- <outputStream>multiple</outputStream> 
- </output> 
- </printSpec> 
+ <?xml version="1.0" encoding="UTF-8"?>
+ <printResult>
+ <status>0</status>
+ <requestId>4ad85f9e2</requestId>
+ <context/>
+ <messages>
+ <message>Printed all 42 records successfully.</message>
+ </messages>
+ <printSpec>
+ <input>
+ <validated>true</validated>
+ <dataFile recordIdField="" recordLevel="0" recordName="LoanRecord"/>
+ <sniffRules lookAhead="300"/>
+ <formDesign>Loan.xdp</formDesign>
+ <contentRoot>C:\Adobe</contentRoot>
+ <metadata-spec record="false"/>
+ </input>
+ <output>
+ <format>PDF</format>
+ <fileURI>C:\Adobe\forms\Loan.pdf</fileURI>
+ <optionString>cacheenabled=true&padebug=false&linearpdf=false&pdfarevisionnumber=1&pdfaconformance=A&taggedpdf=false&TransactionTimeOut=180</optionString>
+ <waitForResponse>true</waitForResponse>
+ <outputStream>multiple</outputStream>
+ </output>
+ </printSpec>
  </printResult>
 ```
 
@@ -1808,12 +1808,12 @@ Create multiple PDF files by using the Output API (Java):
 
 1. Reference an XML data source
 
-    * Create a `java.io.FileInputStream` object that represents the XML data source that contains multiple records by using its constructor and passing a string value that specifies the location of the XML file. 
+    * Create a `java.io.FileInputStream` object that represents the XML data source that contains multiple records by using its constructor and passing a string value that specifies the location of the XML file.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
 
 1. Set PDF run-time options
 
-    * Create a `PDFOutputOptionsSpec` object by using its constructor. 
+    * Create a `PDFOutputOptionsSpec` object by using its constructor.
     * Set the Many Files option by invoking the `PDFOutputOptionsSpec` object’s `setGenerateManyFiles` method. For example, pass the value `true` to instruct the Output service to create a separate PDF file for each record in the XML data source. (If you pass `false`, the Output service generates a single PDF document that contains all records).
     * Set the File URI option by invoking the `PDFOutputOptionsSpec` object’s `setFileUri` method and passing a string value that specifies the location of the files that the Output service generates. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer.
     * Set the Record Name option by invoking the `OutputOptionsSpec` object’s `setRecordName` method and passing a string value that specifies the XML element name in the data source that separates the data records. (For example, consider the XML data source shown earlier in this section. The name of the XML element that separates data records is LoanRecord).
@@ -1827,14 +1827,14 @@ Create multiple PDF files by using the Output API (Java):
 
    Generate multiple PDF files by invoking the `OutputClient` object’s `generatePDFOutput` method and passing the following values:
 
-    * A `TransformationFormat` enum value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enum value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the name of the form design.
     * A string value that specifies the content root where the form design is located.
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
     * A `RenderOptionsSpec` object that contains rendering run-time options.
     * The `com.adobe.idp.Document` object that contains the XML data source that contains data to merge with the form design.
 
-   The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation. 
+   The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation.
 
 1. Retrieve the results of the operation
 
@@ -1865,29 +1865,29 @@ Create multiple PDF files by using the Output API (web service):
 
 1. Create an Output Client object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
+    * Create an `OutputServiceClient` object by using its default constructor.
     * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. However, specify `?blob=mtom` to use MTOM.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `OutputServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `OutputServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an XML data source.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store form data that contains multiple records.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the XML file that contains multiple records.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Set PDF run-time options.
 
-    * Create a `PDFOutputOptionsSpec` object by using its constructor. 
-    * Set the Many Files option by assigning a Boolean value to the `OutputOptionsSpec` object’s `generateManyFiles` data member. For example, assign the value `true` to this data member to instruct the Output service to create a separate PDF file for each record in the XML data source. (If you assign `false` to this data member, then the Output service generates a single PDF that contains all records). 
+    * Create a `PDFOutputOptionsSpec` object by using its constructor.
+    * Set the Many Files option by assigning a Boolean value to the `OutputOptionsSpec` object’s `generateManyFiles` data member. For example, assign the value `true` to this data member to instruct the Output service to create a separate PDF file for each record in the XML data source. (If you assign `false` to this data member, then the Output service generates a single PDF that contains all records).
     * Set the file URI option by assigning a string value that specifies the location of the file(s) that the Output service generates to the `OutputOptionsSpec` object’s `fileURI` data member. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer.
     * Set the record name option by assigning a string value that specifies the XML element name in the data source that separates the data records to the `OutputOptionsSpec` object’s `recordName` data member.
     * Set the copies option by assigning an integer value that specifies the number of copies that the Output service generates to the `OutputOptionsSpec` object’s `copies` data member.
@@ -1901,7 +1901,7 @@ Create multiple PDF files by using the Output API (web service):
 
    Create multiple PDF files by invoking the `OutputServiceService` object’s `generatePDFOutput`method and passing the following values:
 
-    * A TransformationFormat enum value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A TransformationFormat enum value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the name of the form design.
     * A string value that specifies the content root where the form design is located.
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -1943,7 +1943,7 @@ In addition, the Output service is able to generate document packages, where mul
 To instruct the Output service to use search rules while generating a document, perform the following steps:
 
 1. Include project files.
-1. Create an Output Client object. 
+1. Create an Output Client object.
 1. Reference an XML data source.
 1. Define search rules.
 1. Set PDF run-time options.
@@ -2015,7 +2015,7 @@ Create search rules by using the Output API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path.
 
 1. Create an Output Client object.
 
@@ -2029,7 +2029,7 @@ Create search rules by using the Output API (Java):
 
 1. Define search rules.
 
-    * Create a `Rule` object by using its constructor. 
+    * Create a `Rule` object by using its constructor.
     * Define a text pattern by invoking the `Rule` object’s `setPattern` method and passing a string value that specifies a text pattern.
     * Define the corresponding form design by invoking the `Rule` object’s `setForm` method . Pass a string value that specifies the name of the form design.
 
@@ -2042,8 +2042,8 @@ Create search rules by using the Output API (Java):
 
 1. Set PDF run-time options.
 
-    * Create a `PDFOutputOptionsSpec` object by using its constructor. 
-    * Specify the name and location of the PDF file that the Output service generates by invoking the `PDFOutputOptionsSpec` object’s `setFileURI` method. Pass a string value that specifies the location of the PDF file. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer. 
+    * Create a `PDFOutputOptionsSpec` object by using its constructor.
+    * Specify the name and location of the PDF file that the Output service generates by invoking the `PDFOutputOptionsSpec` object’s `setFileURI` method. Pass a string value that specifies the location of the PDF file. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer.
     * Set the rules that you defined by invoking the `PDFOutputOptionsSpec` object’s `setRules` method. Pass the `java.util.List` object that contains the `Rule` objects.
     * Set the number of bytes to scan for the defined text patterns by invoking the `PDFOutputOptionsSpec` object’s `setLookAhead` method. Pass an integer value that represents the numbers of bytes.
 
@@ -2056,7 +2056,7 @@ Create search rules by using the Output API (Java):
 
    Generate a PDF document that is based on multiple form designs by invoking the `OutputClient` object’s `generatePDFOutput` method and passing the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the name of the default form design. That is, the form design that is used if a text pattern is not located.
     * A string value that specifies the content root where the form designs are located.
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -2097,28 +2097,28 @@ Create search rules by using the Output API (web service):
 
 1. Create an Output Client object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
+    * Create an `OutputServiceClient` object by using its default constructor.
     * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. However, specify `?blob=mtom` to use MTOM.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `OutputServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `OutputServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an XML data source.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store data that will be merged with the PDF document.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to encrypt and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to encrypt and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Define search rules.
 
-    * Create a `Rule` object by using its constructor. 
+    * Create a `Rule` object by using its constructor.
     * Define a text pattern by assigning a string value that specifies a text pattern to the `Rule` object’s `pattern` data member.
     * Define the corresponding form design by assigning a string value that specifies the form design to the `Rule` object’s `form` data member.
 
@@ -2131,8 +2131,8 @@ Create search rules by using the Output API (web service):
 
 1. Set PDF run-time options
 
-    * Create a `PDFOutputOptionsSpec` object by using its constructor. 
-    * Set the file URI option by assigning a string value that specifies the location of the PDF file that the Output service generates to the `PDFOutputOptionsSpec` object’s `fileURI` data member. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer. 
+    * Create a `PDFOutputOptionsSpec` object by using its constructor.
+    * Set the file URI option by assigning a string value that specifies the location of the PDF file that the Output service generates to the `PDFOutputOptionsSpec` object’s `fileURI` data member. The File URI option is relative to the J2EE application server hosting AEM Forms, not the client computer.
     * Set the copies option by assigning an integer value that specifies the number of copies that the Output service generates to the `PDFOutputOptionsSpec` object’s `copies` data member.
     * Set the rules that you defined by assigning the `MyArrayOf_xsd_anyType` object that stores the rules to the `PDFOutputOptionsSpec` object’s `rules` data member.
     * Set the number of bytes to scan for the defined text patterns by assigning an integer value that represents the numbers of bytes to scan to the `PDFOutputOptionsSpec` object’s `lookAhead` data method.
@@ -2154,7 +2154,7 @@ Create search rules by using the Output API (web service):
 
    Create a PDF document by invoking the `OutputServiceService` object’s `generatePDFOutput`method and passing the following values:
 
-    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`. 
+    * A `TransformationFormat` enumeration value. To generate a PDF document, specify `TransformationFormat.PDF`.
     * A string value that specifies the name of the form design.
     * A string value that specifies the content root where the form design is located.
     * A `PDFOutputOptionsSpec` object that contains PDF run-time options.
@@ -2203,7 +2203,7 @@ Attempting to flatten a PDF that is a non-interactive PDF document causes an exc
 To flatten an interactive PDF document to a non-interactive PDF document, perform the following steps:
 
 1. Include project files.
-1. Create an Output Client object. 
+1. Create an Output Client object.
 1. Retrieve an interactive PDF document.
 1. Transform the PDF document.
 1. Save the non-interactive PDF document as a PDF file.
@@ -2256,7 +2256,7 @@ Flatten an interactive PDF document to a non-interactive PDF document by using t
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path.
 
 1. Create an Output Client object.
 
@@ -2272,7 +2272,7 @@ Flatten an interactive PDF document to a non-interactive PDF document by using t
 
    Transform the interactive PDF document to a non-interactive PDF document by invoking the `OutputServiceService` object’s `transformPDF` method and passing the following values:
 
-    * The `com.adobe.idp.Document` object that contains the interactive PDF document. 
+    * The `com.adobe.idp.Document` object that contains the interactive PDF document.
     * A `TransformationFormat` enum value. To generate a non-interactive PDF document, specify `TransformationFormat.PDF`.
     * A `PDFARevisionNumber` enum value that specifies the revision number. Because this parameter is meant for a PDF/A document, you can specify `null`.
     * A string value that represents the amendment number and year, separated by a colon. Because this parameter is meant for a PDF/A document, you can specify `null`.
@@ -2311,22 +2311,22 @@ Flatten an interactive PDF document to a non-interactive PDF document by using t
 
 1. Create an Output Client object.
 
-    * Create an `OutputServiceClient` object by using its default constructor. 
+    * Create an `OutputServiceClient` object by using its default constructor.
     * Create an `OutputServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. However, specify `?blob=mtom` to use MTOM.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `OutputServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `OutputServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `OutputServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Retrieve an interactive PDF document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the interactive PDF document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the interactive PDF document.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
 
@@ -2334,12 +2334,12 @@ Flatten an interactive PDF document to a non-interactive PDF document by using t
 
    Transform the interactive PDF document to a non-interactive PDF document by invoking the `OutputClient` object’s `transformPDF` method and passing the following values:
 
-    * A `BLOB` object that contains the interactive PDF document. 
+    * A `BLOB` object that contains the interactive PDF document.
     * A `TransformationFormat` enumeration value. To generate a non-interactive PDF document, specify `TransformationFormat.PDF`.
-    * A `PDFARevisionNumber` enum value that specifies the revision number. 
+    * A `PDFARevisionNumber` enum value that specifies the revision number.
     * A Boolean value that specifies whether the `PDFARevisionNumber` enum value is used. Because this parameter is meant for a PDF/A document, you can specify `false`.
     * A string value that represents the amendment number and year, separated by a colon. Because this parameter is meant for a PDF/A document, you can specify `null`.
-    * A `PDFAConformance` enum value that represents the PDF/A conformance level. 
+    * A `PDFAConformance` enum value that represents the PDF/A conformance level.
     * Boolean value that specifies whether the `PDFAConformance` enum value is used. Because this parameter is meant for a PDF/A document, you can specify `false`.
 
    The `transformPDF` method returns a `BLOB` object that contains a non-interactive PDF document.

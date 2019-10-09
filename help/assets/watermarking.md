@@ -5,7 +5,7 @@ description: Learn how to use the Watermarking feature to add a digital watermar
 seo-description: Use the Watermarking feature to add a digital watermark to assets, which helps users verify your authenticity and ownership of copyright of the assets.
 uuid: 893fd179-2b5b-4b01-b671-b5a052953397
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 69032497-6676-4d67-9ff2-2730c949a491
@@ -20,7 +20,7 @@ The Watermarking feature in Adobe Experience Manager (AEM) Assets lets you add a
 To be able to apply watermark on assets, add the Watermark step in the DAM Update Asset workflow.
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the Workflow Models page, select the **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.  
+1. From the Workflow Models page, select the **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
 
 1. From the Side Panel, drag the **[!UICONTROL Add Watermark]** step to the DAM Update Asset workflow.
 

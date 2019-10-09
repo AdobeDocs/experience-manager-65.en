@@ -6,7 +6,7 @@ seo-description: How managers and organization heads can access and work on the 
 uuid: a44d5a64-c03a-4337-8577-b121e6202449
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 ---
@@ -29,78 +29,78 @@ AEM Forms restricts a users' access to only those tasks for which the user has a
 1. In the DSC, define a new SPI for hierarchy management to define direct reports and hierarchy within the AEM Forms users. Following is a sample Java™ code snippet.
 
    ```as3
-   public class MyHierarchyMgmtService 
-   { 
+   public class MyHierarchyMgmtService
+   {
         /*
        Input : Principal Oid for a livecycle user
        Output : Returns true when the user is either the service invoker OR his direct/indirect report.
        */
        boolean isInHierarchy(String principalOid) {
-   
+
        }
-        
-       /* 
+
+       /*
        Input : Principal Oid for a livecycle user
        Output : List of principal Oids for direct reports of the livecycle user
        A user may get direct reports only for himself OR his direct/indirect reports.
-       So the API is functionally equivalent to - 
+       So the API is functionally equivalent to -
        isInHierarchy(principalOid) ? <return direct reports> : <return empty list>
        */
        List<String> getDirectReports(String principalOid) {
-   
+
        }
-    
-       /* 
+
+       /*
        Returns whether a livecycle user has direct reports or not.
        It's functionally equivalent to -
        getDirectReports(principalOid).size()>0
        */
        boolean isManager(String principalOid) {
-   
-       }  
+
+       }
    }
    ```
 
 1. Create a component.xml file. Please ensure that spec-id must be same as shown in code snippet below. Following is a sample code snippet that you can repurpose.
 
    ```as3
-   <component xmlns="https://adobe.com/idp/dsc/component/document"> 
-       <component-id>com.adobe.sample.SampleDSC</component-id> 
-       <version>1.1</version> 
-       <supports-export>false</supports-export> 
-         <descriptor-class>com.adobe.idp.dsc.component.impl.DefaultPOJODescriptorImpl</descriptor-class> 
-         <services> 
-           <service name="MyHierarchyMgmtService" title="My hierarchy management service" orchestrateable="false"> 
-           <auto-deploy service-id="MyHierarchyMgmtService" category-id="Sample DSC" major-version="1" minor-version="0" /> 
-           <description>Service for resolving hierarchy management.</description> 
-            <specifications> 
-            <specification spec-id="com.adobe.idp.taskmanager.dsc.enterprise.HierarchyManagementProvider"/> 
-            </specifications> 
-           <specification-version>1.0</specification-version> 
-           <implementation-class>com.adobe.sample.hierarchymanagement.MyHierarchyMgmtService</implementation-class> 
-           <request-processing-strategy>single_instance</request-processing-strategy> 
-           <supported-connectors>default</supported-connectors> 
-           <operation-config> 
-               <operation-name>*</operation-name> 
-               <transaction-type>Container</transaction-type> 
-               <transaction-propagation>supports</transaction-propagation> 
-               <!--transaction-timeout>3000</transaction-timeout--> 
-           </operation-config> 
-           <operations> 
-               <operation anonymous-access="true" name="isInHierarchy" method="isInHierarchy"> 
-                   <input-parameter name="principalOid" type="java.lang.String" /> 
-                   <output-parameter name="result" type="java.lang.Boolean"/> 
-               </operation> 
-               <operation anonymous-access="true" name="getDirectReports" method="getDirectReports"> 
-                   <input-parameter name="principalOid" type="java.lang.String" /> 
-                   <output-parameter name="result" type="java.util.List"/> 
-               </operation> 
-               <operation anonymous-access="true" name="isManager" method="isManager"> 
-                   <input-parameter name="principalOid" type="java.lang.String" /> 
-                   <output-parameter name="result" type="java.lang.Boolean"/> 
-               </operation> 
-               </operations> 
-               </service> 
+   <component xmlns="https://adobe.com/idp/dsc/component/document">
+       <component-id>com.adobe.sample.SampleDSC</component-id>
+       <version>1.1</version>
+       <supports-export>false</supports-export>
+         <descriptor-class>com.adobe.idp.dsc.component.impl.DefaultPOJODescriptorImpl</descriptor-class>
+         <services>
+           <service name="MyHierarchyMgmtService" title="My hierarchy management service" orchestrateable="false">
+           <auto-deploy service-id="MyHierarchyMgmtService" category-id="Sample DSC" major-version="1" minor-version="0" />
+           <description>Service for resolving hierarchy management.</description>
+            <specifications>
+            <specification spec-id="com.adobe.idp.taskmanager.dsc.enterprise.HierarchyManagementProvider"/>
+            </specifications>
+           <specification-version>1.0</specification-version>
+           <implementation-class>com.adobe.sample.hierarchymanagement.MyHierarchyMgmtService</implementation-class>
+           <request-processing-strategy>single_instance</request-processing-strategy>
+           <supported-connectors>default</supported-connectors>
+           <operation-config>
+               <operation-name>*</operation-name>
+               <transaction-type>Container</transaction-type>
+               <transaction-propagation>supports</transaction-propagation>
+               <!--transaction-timeout>3000</transaction-timeout-->
+           </operation-config>
+           <operations>
+               <operation anonymous-access="true" name="isInHierarchy" method="isInHierarchy">
+                   <input-parameter name="principalOid" type="java.lang.String" />
+                   <output-parameter name="result" type="java.lang.Boolean"/>
+               </operation>
+               <operation anonymous-access="true" name="getDirectReports" method="getDirectReports">
+                   <input-parameter name="principalOid" type="java.lang.String" />
+                   <output-parameter name="result" type="java.util.List"/>
+               </operation>
+               <operation anonymous-access="true" name="isManager" method="isManager">
+                   <input-parameter name="principalOid" type="java.lang.String" />
+                   <output-parameter name="result" type="java.lang.Boolean"/>
+               </operation>
+               </operations>
+               </service>
          </services>
    </component>
    ```
@@ -108,7 +108,7 @@ AEM Forms restricts a users' access to only those tasks for which the user has a
 1. Deploy DSC through Workbench. Restart `ProcessManagementTeamTasksService` service.
 1. You may have to refresh your browser or logout/login with the user again.
 
-The following screen illustrates accessing the tasks of direct reports and the available actions. 
+The following screen illustrates accessing the tasks of direct reports and the available actions.
 
 ![cu_manager_view](assets/cu_manager_view.png)
 

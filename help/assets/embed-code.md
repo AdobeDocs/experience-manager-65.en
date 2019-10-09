@@ -5,7 +5,7 @@ description: Learn how to embed Dynamic Media video or images on a web page
 seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
@@ -43,7 +43,7 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
    See [Publishing Image Presets](managing-image-presets.md#publishing-image-presets).
 
-1. In the left rail, select the drop-down menu and tap **[!UICONTROL Viewers]**. 
+1. In the left rail, select the drop-down menu and tap **[!UICONTROL Viewers]**.
 1. In the left rail, tap a viewer preset name. The viewer preset is applied to the asset.
 1. Tap **[!UICONTROL Embed]**.
 1. In the **[!UICONTROL Embed Code]** dialog box, copy the entire code to the clipboard, and then tap **[!UICONTROL Close]**.

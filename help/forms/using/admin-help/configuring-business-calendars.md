@@ -7,7 +7,7 @@ uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 ---
 
@@ -93,7 +93,7 @@ There are two methods that you can use to associate a business calendar with a u
 ### Associate business calendars with users based on business calendar keys {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
 1. In administration console, click Services &gt; forms workflow &gt; Business Calendars, and then click the Mapping tab.
-1. In the The System Will Use list, select User Manager Business Calendar Key Resolution. 
+1. In the The System Will Use list, select User Manager Business Calendar Key Resolution.
 1. Select Display User Manager Business Calendar Key. A list displays, containing a unique set of business calendar keys that have been defined in User Management.
 
    For local and hybrid domains, the list displays the values entered into the Business Calendar Key field in User Management. For enterprise (LDAP) domains, the list displays the unique set that is returned from the LDAP field (for example, "country") that was configured in the LDAP domain settings.
@@ -106,7 +106,7 @@ There are two methods that you can use to associate a business calendar with a u
 ### Associate business calendars with users and groups based on directory service groups {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
 
 1. In administration console, click Services &gt; forms workflow &gt; Business Calendars, and then click the Mapping tab.
-1. In the The System Will Use list, select Groups Defined By The Directory Server. 
+1. In the The System Will Use list, select Groups Defined By The Directory Server.
 1. On the Mapping tab, select Display Directory Service Groups. A list displays, containing the groups that have been defined in User Management. (See [Directory settings](/help/forms/using/admin-help/configuring-directories.md#directory-settings).)
 
    >[!NOTE]

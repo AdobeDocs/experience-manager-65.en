@@ -7,7 +7,7 @@ uuid: ac7856be-e3b7-4b81-b8b9-fc909b5907b4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 ---
 
@@ -87,7 +87,7 @@ You can use either administration console, the LCBackupMode command, or the API 
 You can use the command line interface `LCBackupMode` scripts to put AEM forms in safe backup mode.
 
 1. Set ADOBE_LIVECYCLE and start the application server.
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder. 
+1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
 1. Depending on your operating system, edit the `LCBackupMode.cmd` or `LCBackupMode.sh` script to provide default values that are appropriate for your system.
 1. At the command prompt, run the following command on a single line:
 
@@ -119,14 +119,14 @@ You can use either the administration console or the command line option to leav
 To use Administration Console to take AEM forms out of safe backup mode (snapshot mode), perform the following tasks.
 
 1. Log in to Administration Console.
-1. Click Settings &gt; Core System Settings &gt; Backup Utilities. 
+1. Click Settings &gt; Core System Settings &gt; Backup Utilities.
 1. Deselect Operate In Safe Backup Mode and click OK.
 
 **Leave all backup modes**
 
 You can use the command line interface to take AEM forms out of safe backup mode (snapshot mode) or to end the current backup mode session (rolling mode). Note that you cannot use the administration console to leave rolling backup mode. While in rolling backup mode, the Backup Utilities controls on the Administration Console are disabled. You must use either API call or use the LCBackupMode command.
 
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder. 
+1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
 1. Depending on your operating system, edit the `LCBackupMode.cmd` or `LCBackupMode.sh` script to provide default values that are appropriate for your system.
 
    >[!NOTE]

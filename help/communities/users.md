@@ -5,7 +5,7 @@ description: Users of AEM Communities can self-register and edit their profiles
 seo-description: Users of AEM Communities can self-register and edit their profiles
 uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
@@ -215,7 +215,7 @@ In the left pane:
 1. Clear the search box and select **[!UICONTROL Hide Users]**
 2. Locate and drag `community-enablementmanagers` to the **[!UICONTROL Groups]** tab of the new user displayed in the right pane
 
-![chlimage_1-132](assets/chlimage_1-132.png) 
+![chlimage_1-132](assets/chlimage_1-132.png)
 
 ### Community Administrators Role {#community-administrators-role}
 

@@ -5,7 +5,7 @@ description: Learn how to configure AEM.
 seo-description: Learn how to configure AEM.
 uuid: edcdd4bd-5917-417e-8913-40d488383ea9
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
@@ -23,23 +23,23 @@ There are many aspects of AEM that can be configured:
 
 Depending on the specific configuration these changes can be made by using either the:
 
-* **Adobe CQ Web Console** 
+* **Adobe CQ Web Console**
 
-  This is a standard location for configuring OSGi bundles and services. 
+  This is a standard location for configuring OSGi bundles and services.
 
   See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for further details and recommended practices.
 
-* **Repository** 
+* **Repository**
 
-  A sub-set of OSGi configurations are available in the repository. This ensures that copying, or replicating, repository contents recreates identical configurations. You can also add your own configurations, dependent on run-mode, to the repository. 
+  A sub-set of OSGi configurations are available in the repository. This ensures that copying, or replicating, repository contents recreates identical configurations. You can also add your own configurations, dependent on run-mode, to the repository.
 
   See [OSGi Configuration in the Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) and in particular [Adding a New Configuration to the Repository](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) for further details.
 
-* **File system** 
+* **File system**
 
   A few configuration files reside within the file system.
 
-* **AEM WCM** 
+* **AEM WCM**
 
   Various aspects can be configured within AEM WCM itself, many using the [Tools](/help/sites-administering/tools-consoles.md) console; for example, replication agents.
 
@@ -69,7 +69,7 @@ Several key configuration issues are listed in the [Security Checklist](/help/si
 
 There are two UIs available for use in AEM:
 
-* The Touch-optimized UI   
+* The Touch-optimized UI
 * The Classic UI
 
 You can configure the UI you require using [Root Mapping](/help/sites-deploying/osgi-configuration-settings.md).
@@ -86,19 +86,19 @@ Operation is seamless as no special configuration is required, when needed you c
 
 This means that when an IP address needs to be specified you can select (as required) from:
 
-* an IPv6 address 
+* an IPv6 address
 
-  for example `https://[ab12::34c5:6d7:8e90:1234]:4502`  
+  for example `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* an IPv4 address 
+* an IPv4 address
 
-  for example `https://123.1.1.4:4502`  
+  for example `https://123.1.1.4:4502`
 
-* a server name 
+* a server name
 
   for example, `https://www.yourserver.com:4502`
 
-* the default case of `localhost` will be interpreted for both IPv4 and IPv6 network installations 
+* the default case of `localhost` will be interpreted for both IPv4 and IPv6 network installations
 
   for example, `http://localhost:4502`
 
@@ -245,19 +245,19 @@ If the AEM process exceeds this maximum, then the message " `too many open files
 
 To avoid such exceptions you need to:
 
-1. Check how many open files your AEM process is using. 
+1. Check how many open files your AEM process is using.
 
-   How you make this check will depend on the platform your instance is running on. Utilities such as lsof (Unix) or Process Explorer (Windows) can be used. 
+   How you make this check will depend on the platform your instance is running on. Utilities such as lsof (Unix) or Process Explorer (Windows) can be used.
 
    This value should be monitored during development and testing to:
 
-    * confirm that files are being closed as required 
+    * confirm that files are being closed as required
     * to determine the maximum value needed (under various circumstances)
 
-1. Set the maximum allowed. 
+1. Set the maximum allowed.
 
-   The new value should cater for both the current needs and any future peaks, so it is advisable to to double the current needs. 
-   
+   The new value should cater for both the current needs and any future peaks, so it is advisable to to double the current needs.
+
    By default, `serverctl` configures `CQ_MAX_OPEN_FILES` to `8192`; this should be sufficient for most scenarios.
 
 ### Configuring the Rich Text Editor {#configuring-the-rich-text-editor}
@@ -286,7 +286,7 @@ See the [Basics of Report Customization](/help/sites-administering/reporting.md#
 
 CQ sends email notifications to users who:
 
-* Have subscribed to page events, for example modification or replication.   
+* Have subscribed to page events, for example modification or replication.
 * Have subscribed to forum events.
 * Have to perform a step in a workflow.
 

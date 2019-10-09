@@ -1,11 +1,11 @@
 ---
 title: Create targeted experiences in AEM Forms
 seo-title: Create targeted experiences in AEM Forms
-description: Use Target in AEM Forms to create customized experiences for targeted customers. 
-seo-description: Use Target in AEM Forms to create customized experiences for targeted customers. 
+description: Use Target in AEM Forms to create customized experiences for targeted customers.
+seo-description: Use Target in AEM Forms to create customized experiences for targeted customers.
 uuid: 174b6054-8fe3-4ab2-8afd-435e5dff9044
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
 ---
@@ -28,14 +28,14 @@ Configure Adobe Target in AEM to use it with adaptive forms and interactive comm
 
    `https://<hostname>:<port>/libs/cq/personalization/touch-ui/content/v2/activities.html`
 
-1. In the Activities page, tap **Create > Create Brand**. 
+1. In the Activities page, tap **Create > Create Brand**.
 1. You are asked to choose a template and enter properties.
 
-   Select a template, tap **Next.** Enter the title of your brand in the Properties section, and tap **Create.** 
-   Your brand is now listed in the Activities page. 
+   Select a template, tap **Next.** Enter the title of your brand in the Properties section, and tap **Create.**
+   Your brand is now listed in the Activities page.
 
-1. Tap your brand in the Activities page. 
-1. In Master Area of your brand, tap **Create** &gt; **Create Activity**. 
+1. Tap your brand in the Activities page.
+1. In Master Area of your brand, tap **Create** &gt; **Create Activity**.
 
    When you create an activity, you specify its details, target, and settings.
 
@@ -69,14 +69,14 @@ Configure Adobe Target in AEM to use it with adaptive forms and interactive comm
 
    To open a form or interactive communication in edit mode, tap **Select** and then tap **Open**.
 
-   Alternatively, four buttons appear when you move your pointer over the form or interactive communication icon without selecting it. You can tap the **Edit** button that appears, to open the form in edit mode. 
+   Alternatively, four buttons appear when you move your pointer over the form or interactive communication icon without selecting it. You can tap the **Edit** button that appears, to open the form in edit mode.
 
-1. In the page toolbar, tap **Page Information** ![theme-options](assets/theme-options.png) > **Open Properties**. 
+1. In the page toolbar, tap **Page Information** ![theme-options](assets/theme-options.png) > **Open Properties**.
 1. In the General tab, choose a configuration for the **Adobe Target** field. Tap **Save & Close**.
 
 ## Applying created activity to an adaptive form image or an interactive communication image {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 
-1. Open the adaptive form and interactive communication for editing. If you are opening an interactive communication, open the Web Channel.   
+1. Open the adaptive form and interactive communication for editing. If you are opening an interactive communication, open the Web Channel.
 
 1. In the authoring mode of your interactive communication or adaptive form, add an image to be targeted.
 
@@ -84,8 +84,8 @@ Configure Adobe Target in AEM to use it with adaptive forms and interactive comm
    >
    >AEM Forms supports targeting only image components. Ensure that the panel hosting the image component does not contain any other component and the number of columns for the panel are set to 1.
 
-1. Switch from **Edit **to **Targeting **mode. The option to switch modes is near the Top-Right corner. 
-1. Select a **BRAND**, select **ACTIVITY**, and tap **Start Targeting**. The **Audiences** menu appears on right side of the editor. 
+1. Switch from **Edit **to **Targeting **mode. The option to switch modes is near the Top-Right corner.
+1. Select a **BRAND**, select **ACTIVITY**, and tap **Start Targeting**. The **Audiences** menu appears on right side of the editor.
 
    ![targeting-menu](assets/targeting-menu.png)
 

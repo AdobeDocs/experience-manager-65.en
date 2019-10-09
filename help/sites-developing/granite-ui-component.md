@@ -5,7 +5,7 @@ description: Granite UI provides a range of components designed to be used in fo
 seo-description: Granite UI provides a range of components designed to be used in forms, called fields
 uuid: cf26e057-4b0c-45f4-8975-2c658517f20e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
@@ -57,7 +57,7 @@ For examples, see:
 
 >[!NOTE]
 >
->As this mechanism uses JSP, i18n and XSS are not given out-of-the-box. This means that you will need to internationalize and escape your Strings. The following directoriy contains the generic fields from a standard instance, you can use these as a reference: 
+>As this mechanism uses JSP, i18n and XSS are not given out-of-the-box. This means that you will need to internationalize and escape your Strings. The following directoriy contains the generic fields from a standard instance, you can use these as a reference:
 >
 >`/libs/granite/ui/components/foundation/form` directory
 
@@ -80,7 +80,7 @@ Your customized field should only override the `render.jsp` script, where you pr
    ```
    // Delivers the value of the field (read from the content)
    ValueMap vm = (ValueMap) request.getAttribute(Field.class.getName());
-   vm.get("value, String.class"); 
+   vm.get("value, String.class");
    ```
 
    For more details, please refer to the implementation of out-ot-the-box Granite UI fields; for example, `/libs/granite/ui/components/foundation/form/textfield`.

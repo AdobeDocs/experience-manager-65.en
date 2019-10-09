@@ -5,7 +5,7 @@ description: The SAP Commerce Cloud integration framework includes an integratio
 seo-description: The SAP Commerce Cloud integration framework includes an integration layer with an API
 uuid: a780dd17-027a-4a61-af8f-3e2f600524c7
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
@@ -68,22 +68,22 @@ See the following examples below:
 ### Example {#example}
 
 ```shell
-/content/store 
-+ cq:commerceProvider = hybris 
-  + mens 
-    + polo-shirt-1 
-    + polo-shirt-2 
-    + employee 
-+ cq:commerceProvider = jcr 
-  + adobe-logo-shirt 
-    + cq:commerceType = product 
-    + price = 12.50 
-  + adobe-logo-shirt_S 
-    + cq:commerceType = variant 
-    + size = S 
-  + adobe-logo-shirt_XL 
-    + cq:commerceType = variant 
-    + size = XL 
+/content/store
++ cq:commerceProvider = hybris
+  + mens
+    + polo-shirt-1
+    + polo-shirt-2
+    + employee
++ cq:commerceProvider = jcr
+  + adobe-logo-shirt
+    + cq:commerceType = product
+    + price = 12.50
+  + adobe-logo-shirt_S
+    + cq:commerceType = variant
+    + size = S
+  + adobe-logo-shirt_XL
+    + cq:commerceType = variant
+    + size = XL
     + price = 14.50
 ```
 
@@ -101,20 +101,20 @@ The default settings in the code are tuned for Hybris 5.
 
 To develop for Hybris 4 the following is required:
 
-* When invoking maven add the following command line argument to the command 
+* When invoking maven add the following command line argument to the command
 
-  `-P hybris4` 
+  `-P hybris4`
 
   It downloads the pre-configured Hybris 4 distribution and embeds it in the bundle:
 
   ```
   cq-commerce-hybris-server
-  
+
   ```
 
 * In the OSGi configuration manager:
 
-    * Disable Hybris 5 support for the Default Response Parser service. 
+    * Disable Hybris 5 support for the Default Response Parser service.
     * Ensure that Hybris Basic Authentication Handler service has a lower service ranking than Hybris OAuth Handler service.
 
 ### Session Handling {#session-handling}
@@ -134,11 +134,11 @@ hybris uses a user session to store information such as the customer's shopping 
 * This session "owns" the **shopping cart**
 
     * performs add/remove/etc
-    * performs the various calculations on the cart; 
+    * performs the various calculations on the cart;
 
       `commerceSession.getProductPrice(Product product)`
 
-* Owns the *storage location* for the **order** data 
+* Owns the *storage location* for the **order** data
 
   `CommerceSession.getUserContext()`
 
@@ -165,7 +165,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 
 * The hybris extension provides a polling importer ("hybris" scheme"), which can be configured to import changes into AEM at a specified interval (for example, every 24 hours where the interval is specified in seconds):
 
-    * ``` 
+    * ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -176,7 +176,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
        }
       ```
 
-* The catalog configuration in AEM recognizes **Staged** and **Online** catalog versions.  
+* The catalog configuration in AEM recognizes **Staged** and **Online** catalog versions.
 
 * Syncing products between catalog versions will require a (de-)activation of the corresponding AEM page (a, c)
 
@@ -188,7 +188,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
     * The product is in an **Online** catalog version for product pages.
     * The referenced products are available in an **Online** catalog version for other pages (e.g. campaign pages).
 
-* Activated product pages need to access the product data's **Online** version (d).  
+* Activated product pages need to access the product data's **Online** version (d).
 
 * The AEM publish instance requires access to hybris for the retrieval of product and personalized data (d).
 
@@ -214,9 +214,9 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >
 >While products (in general) can have many variant axes, the out-of-the-box product component only handles two:
 >
->1. `size`  
+>1. `size`
 >
->1. plus one more  
+>1. plus one more
 >   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 >
 
@@ -224,7 +224,7 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 
 In general:
 
-* product data is located under `/etc`  
+* product data is located under `/etc`
 
 * and product references under `/content`.
 
@@ -295,7 +295,7 @@ public interface VariantFilter {
  * axis and value. The following example returns a list of
  * variant products that have a value of <i>blue</i> on the
  * <i>color</i> axis.
- * 
+ *
  * <p>
  * <code>product.getVariants(new AxisFilter("color", "blue"));</code>
  */
@@ -429,7 +429,7 @@ public class AxisFilter implements VariantFilter {
 
 * The following illustrates an example of cart information in the ClientContext cart:
 
-![chlimage_1-13](assets/chlimage_1-13.png) 
+![chlimage_1-13](assets/chlimage_1-13.png)
 
 #### Architecture of Checkout {#architecture-of-checkout}
 
@@ -489,7 +489,7 @@ The `CommerceSession` owns the three elements:
 >
 >`yourProject/commerce/components/shippingpicker`:
 >
->* Essentially this could be a copy of `foundation/components/form/radio`, but with callbacks to the `CommerceSession` for: 
+>* Essentially this could be a copy of `foundation/components/form/radio`, but with callbacks to the `CommerceSession` for:
 >
 >* Checking if the method is available
 >* Adding pricing information
@@ -541,11 +541,11 @@ The entry point for the search API is the `CommerceService#search` method which 
 
 Integration is provided between AEM and various eCommerce systems. This requires a strategy for synchronizing shoppers between the various systems so that AEM-specific code only has to know about AEM and vice-versa:
 
-* Authentication 
+* Authentication
 
   AEM is presumed to be the *only* web front-end and therefore performs *all* authentication.
 
-* Slave Accounts 
+* Slave Accounts
 
   AEM creates a slave account in hybris for each shopper. The username of the slave account is the same as the AEM username. A cryptographically-random password is auto-generated and stored (encrypted) in AEM.
 
@@ -577,7 +577,7 @@ A AEM front-end can be positioned in front of an existing hybris implementation.
 
 To build upon existing functionality your custom import handler:
 
-* has to implement the `ImportHandler` interface   
+* has to implement the `ImportHandler` interface
 
 * can extend the `DefaultImportHandler`
 

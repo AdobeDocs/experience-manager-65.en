@@ -5,7 +5,7 @@ description: Community information in a journaling format
 seo-description: Community information in a journaling format
 uuid: 01f1a547-d22b-4da6-a69c-ab420e5a9e19
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
@@ -37,7 +37,7 @@ This section of the documentation describes
 
 >[!NOTE]
 >
->The components `Journal`and `Journal Sidebar` are titled `Blog` and `Blog Sidebar`. 
+>The components `Journal`and `Journal Sidebar` are titled `Blog` and `Blog Sidebar`.
 >
 >The blog feature found in AEM 6.0 and earlier releases is now removed. It was based on a template and only allowed authors to create content in the author environment.
 
@@ -96,71 +96,71 @@ The blog title to display on the page.
   >
   >Note:
   >The Journal Title is used to automatically create URL for the blog. Maximum 50 characters (with 5 characters additional for uniqueness) are used from the journal title you specify here to create URL for the blog.
-  
-* **[!UICONTROL Journal Description]** 
+
+* **[!UICONTROL Journal Description]**
 The blog description.
 
-* **[!UICONTROL Topics Per Page]** 
+* **[!UICONTROL Topics Per Page]**
 
   Defines the number of blog entries/comments shown per page. Default is 10.
 
-* **[!UICONTROL Moderated]** 
+* **[!UICONTROL Moderated]**
 
   If checked, posting of blog entries and comments must be approved before they will appear on a publish site. Default is unchecked.
 
-* **[!UICONTROL Closed]** 
+* **[!UICONTROL Closed]**
 
   If checked, the blog is closed to new blog entries and comments. Default is unchecked.
 
-* **[!UICONTROL Rich Text Editor]** 
+* **[!UICONTROL Rich Text Editor]**
 
   If checked, blog entries and comments may be entered with markup. Default is checked.
 
-* **[!UICONTROL Allow Tagging]** 
+* **[!UICONTROL Allow Tagging]**
 
   If checked, allow members to add tag labels to their post (see **[!UICONTROL Tag field]** tab). Default is unchecked.
 
-* **[!UICONTROL Allow File Uploads]** 
+* **[!UICONTROL Allow File Uploads]**
 
   If checked, allow file attachments to be added to a blog entry or comment. Default is unchecked.
 
-* **[!UICONTROL Max File Size]** 
+* **[!UICONTROL Max File Size]**
 
   Relevant only if `Allow File Uploads` is checked. This field will limit the size (in bytes) of an uploaded file. Default is 104857600 (10 Mb).
 
-* **[!UICONTROL Allowed File Types]** 
+* **[!UICONTROL Allowed File Types]**
 
   Relevant only if `Allow File Uploads` is checked. A comma separated list of file extensions with the "dot" separater. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed to be uploaded. Default is none specified such that all file types are allowed.
 
-* **[!UICONTROL Max Attach Image File Size]** 
+* **[!UICONTROL Max Attach Image File Size]**
 
   Relevant only if Allow File Uploads is checked. Maximum number of bytes an uploaded image file may have. Default is 2097152 (2 Mb).
 
-* **[!UICONTROL Allow Replies]** 
+* **[!UICONTROL Allow Replies]**
 
   If checked, allow replies to comments posted to the blog entry. Default is unchecked.
 
-* **[!UICONTROL Allow Users to Delete Comments and Topics]** 
+* **[!UICONTROL Allow Users to Delete Comments and Topics]**
 
   If checked, allow members to delete the comments and blog entries they posted. Default is unchecked.
 
-* **[!UICONTROL Allow Following]** 
+* **[!UICONTROL Allow Following]**
 
   If checked, include the following feature for blog articles, which allows members to be [notified](notifications.md) of new posts. Default is unchecked.
 
-* **[!UICONTROL Allow Email Subscriptions]** 
+* **[!UICONTROL Allow Email Subscriptions]**
 
   If checked, allow members to be notified of new posts by email ([subscription](subscriptions.md)). Requires `Allow Following` to be checked and [email configured](email.md). Default is unchecked.
 
-* **[!UICONTROL Allow Voting]** 
+* **[!UICONTROL Allow Voting]**
 
   If checked, include the Voting feature with a blog entry. Default is unchecked.
 
-* **[!UICONTROL Display Badges]** 
+* **[!UICONTROL Display Badges]**
 
   If checked, display earned and assigned [badges](implementing-scoring.md) with a member's blog entry. Default is unchecked.
 
-* **[!UICONTROL Allow Featured Content]** 
+* **[!UICONTROL Allow Featured Content]**
 
   if checked, the idea is able to be identified as [featured content](featured.md). Default is unchecked.
 
@@ -168,31 +168,31 @@ The blog description.
 
 Under the **[!UICONTROL User Moderation]** tab, specify the moderation settings:
 
-* **[!UICONTROL Deny Posts]** 
+* **[!UICONTROL Deny Posts]**
 
-  If checked, trusted member moderators will be allowed to deny posts and prevent the post from appearing on the public forum. Default is unchecked.  
+  If checked, trusted member moderators will be allowed to deny posts and prevent the post from appearing on the public forum. Default is unchecked.
 
-* **[!UICONTROL Close/Reopen Topics]** 
+* **[!UICONTROL Close/Reopen Topics]**
 
-  If checked, trusted member moderators may close a topic to further edits and comments, and may also reopen a topic. Default is unchecked.  
+  If checked, trusted member moderators may close a topic to further edits and comments, and may also reopen a topic. Default is unchecked.
 
-* **[!UICONTROL Flag Posts]** 
+* **[!UICONTROL Flag Posts]**
 
-  If checked, allow members to flag others' topics or comments as inappropriate. Default is unchecked. 
+  If checked, allow members to flag others' topics or comments as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Flag Reason List]** 
+* **[!UICONTROL Flag Reason List]**
 
-  If checked, allow members to choose, from a drop-down list, their reason for flagging a topic or comment as inappropriate. Default is unchecked.  
+  If checked, allow members to choose, from a drop-down list, their reason for flagging a topic or comment as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Custom Flag Reason]** 
+* **[!UICONTROL Custom Flag Reason]**
 
   If checked, allow members to enter their own reason for flagging a topic or comment as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Moderation Threshold]** 
+* **[!UICONTROL Moderation Threshold]**
 
   Enter the number of times a topic or comment has to be flagged by members before moderators are notified. Default is 1 ( one time).
 
-* **[!UICONTROL Flagging Limit]** 
+* **[!UICONTROL Flagging Limit]**
 
   Enter the number of times a topic or comment has to be flagged before it is hidden from public view. If set to -1, the flagged topic or comment is never hidden from public view. Else, this number must be greater than or equal to the Moderation Threshold. Default is 5.
 
@@ -200,11 +200,11 @@ Under the **[!UICONTROL User Moderation]** tab, specify the moderation settings:
 
 Under the **[!UICONTROL Tag field]** tab, specify the which tags may be applied if **[!UICONTROL Allow Tagging]** is check on the **[!UICONTROL Settings]** tab:
 
-* **[!UICONTROL Allowed Namespaces]** 
+* **[!UICONTROL Allowed Namespaces]**
 
   Relevant if `Allow Tagging` is checked under the **[!UICONTROL Settings]** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
 
-* **[!UICONTROL Suggestion Limit]** 
+* **[!UICONTROL Suggestion Limit]**
 
   Enter the number of tags to be displayed as a suggestion to the member posting to the forum. A value of -1 means no limits. Default is 0.
 
@@ -216,7 +216,7 @@ Under the **[!UICONTROL Journal Sidebar Settings]** tab, specify the date format
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* **[!UICONTROL Date format]** 
+* **[!UICONTROL Date format]**
 
   The format used to display for archives of blog entries. The format uses placeholders following the Java convention.
 
@@ -228,7 +228,7 @@ Under the **[!UICONTROL Journal Sidebar Settings]** tab, specify the date format
 
   Default is "yyyy MMMMM" which would display, for example, "2015 June"
 
-* **[!UICONTROL View Type]** 
+* **[!UICONTROL View Type]**
 
   The Title and type of blog entries to display in the sidebar. The choice is between
 
@@ -236,13 +236,13 @@ Under the **[!UICONTROL Journal Sidebar Settings]** tab, specify the date format
     * Categories
     * Archives
 
-* **[!UICONTROL Journal Component Path]** 
+* **[!UICONTROL Journal Component Path]**
 
   *(Optional)* The location of the blog resource from which blog articles are to be listed. If left blank, will use the component of resourceType `social/journal/components/hbs/journal` that appears on the same page.
 
     * For example, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
-* **[!UICONTROL Suggestion Limit]** 
+* **[!UICONTROL Suggestion Limit]**
 
   The number of blog articles to be displayed. A value of -1 means no limit. Default is -1.
 

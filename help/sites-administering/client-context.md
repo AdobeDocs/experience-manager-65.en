@@ -5,7 +5,7 @@ description: Learn how to use the Client Context in AEM.
 seo-description: Learn how to use the Client Context in AEM.
 uuid: c3881210-32c7-4f78-84f4-5d378d4d3d99
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: d13c68ba-be49-440b-8bbe-a10edbfb9b9b
@@ -33,13 +33,13 @@ The icons (only available in the author environment) allow you to configure the 
 
 ![](do-not-localize/clientcontext_icons.png)
 
-* **Edit** 
-  A new page will open allowing you to [edit, add or remove a profile property](#editing-property-details).  
+* **Edit**
+  A new page will open allowing you to [edit, add or remove a profile property](#editing-property-details).
 
-* **Load** 
-  You can [select from a list of profiles and load the profile](#loading-a-new-user-profile) you want to test.  
+* **Load**
+  You can [select from a list of profiles and load the profile](#loading-a-new-user-profile) you want to test.
 
-* **Reset** 
+* **Reset**
   You can [reset the profile](#resetting-the-profile-to-the-current-user) to that of the current user.
 
 ## Available Client Context Components {#available-client-context-components}
@@ -48,11 +48,11 @@ The Client Context can show the following properties ([depending on what has bee
 
 **Surfer Information** Shows the following client-side information:
 
-* the **IP address** 
+* the **IP address**
 * **keywords** used for search engine referral
 * the **browser** being used
-* the **OS** (operating system) being used 
-* the screen **resolution** 
+* the **OS** (operating system) being used
+* the screen **resolution**
 * the **mouse X** position
 * the **mouse Y** position
 
@@ -84,8 +84,8 @@ When displayed in the Context Cloud, the component uses a Google API to display 
 
 **JSONP Store** A component that displays content that is dependent on your installation.
 
-The JSONP standard is a complement to JSON that allows the circumvention of the same origin policy (making it impossible for a web app to communicate with servers that are on another domain). It consists in wrapping the JSON object in a function call in order to be able load it as a from the other domain (which is an allowed exception to the same origin policy).  
-  
+The JSONP standard is a complement to JSON that allows the circumvention of the same origin policy (making it impossible for a web app to communicate with servers that are on another domain). It consists in wrapping the JSON object in a function call in order to be able load it as a from the other domain (which is an allowed exception to the same origin policy).
+
 The JSONP Store is like any other store, but it loads information that comes from another domain without the need of having a proxy for that information on the current domain. See the example in [Storing Data in Client Context Via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
 >[!NOTE]
@@ -200,13 +200,13 @@ Editing a client context can be used to set (or reset) the values of certain pro
 
 Editing a client context can be used to set (or reset) the values of certain properties. This allows you to test specific scenarios (particularly useful for [segmentation](/help/sites-administering/campaign-segmentation.md) and [campaigns](/help/sites-authoring/personalization.md)).
 
-![clientcontext_alisonparker_edit](assets/clientcontext_alisonparker_edit.png) 
+![clientcontext_alisonparker_edit](assets/clientcontext_alisonparker_edit.png)
 
 ### Adding a Property Component {#adding-a-property-component}
 
 After you have opened the **ClientContext design page**, you can also **Add** a completely new property using the available components (the components are listed on both the sidekick or from the **Insert New Component** dialog that is opened after a double-click on the **Drag components or assets here** box):
 
-![clientcontext_alisonparker_new](assets/clientcontext_alisonparker_new.png) 
+![clientcontext_alisonparker_new](assets/clientcontext_alisonparker_new.png)
 
 ### Removing a Property Component {#removing-a-property-component}
 
@@ -232,7 +232,7 @@ Add the JSONP Store component to Client Context and use it to retrieve and store
 
    ![chlimage_1-40](assets/chlimage_1-40.jpeg)
 
-1. Double-click the component to open the edit dialog. 
+1. Double-click the component to open the edit dialog.
 1. In the JSONP Service URL box, enter the following URL, and then click Fetch Store:
 
    `https://api.wipmania.com/jsonp?callback=${callback}`
@@ -262,7 +262,7 @@ Use the data from the session store that you created using the JSONP store compo
     1. Select the Segment template.
     1. Click Create.
 
-1. Right-click the Winter segment and click Open. 
+1. Right-click the Winter segment and click Open.
 1. Drag the Generic Store Property to the default AND container.
 
    ![chlimage_1-41](assets/chlimage_1-41.jpeg)

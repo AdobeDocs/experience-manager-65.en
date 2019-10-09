@@ -1,11 +1,11 @@
 ---
-title: Page Templates - Editable 
-seo-title: Page Templates - Editable 
+title: Page Templates - Editable
+seo-title: Page Templates - Editable
 description: Editable templates have been introduced to, allow non-developers to create and edit templates, provide templates that retain a dynamic connection to any pages created from them, and make the page component more generic
 seo-description: Editable templates have been introduced to, allow non-developers to create and edit templates, provide templates that retain a dynamic connection to any pages created from them, and make the page component more generic
 uuid: ca0b8ae2-8300-4f4f-9418-0b5f0d32aeae
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
@@ -46,7 +46,7 @@ This document assumes that you are already familiar with creating and editing te
 
 >[!NOTE]
 >
->Following tutorial might also be of interest for setting up an editable page template in a new project:  
+>Following tutorial might also be of interest for setting up an editable page template in a new project:
 >[Getting Started with AEM Sites Part 2 - Creating a Base Page and Template](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
@@ -121,7 +121,7 @@ When creating a new editable template you:
 
 1. Use it to create content pages.
 
-    * When using a template to create a new page there is no visible difference and no indication between static and editable templates. 
+    * When using a template to create a new page there is no visible difference and no indication between static and editable templates.
     * For the page author, the process is transparent.
 
    For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-authoring/managing-pages.md#templates).
@@ -145,7 +145,7 @@ When creating a new editable template you:
 For organizing your templates you can use the following folders:
 
 * **global**
-* Site-specific 
+* Site-specific
 
   The site-specific folders that you create to organize your templates are created with an account holding admin priviliges.
 
@@ -199,7 +199,7 @@ To create a new folder, you can either do this:
 
    Name: `jcr:title`
 
-    * Type: `String` 
+    * Type: `String`
     * Value: The title (for the folder) you want to appear in the **Templates** console.
 
 1. In *addition* to the standard authoring permissions and privileges (e.g. `content-authors`) you now need to assign group(s) and define the required access rights (ACLs) for your authors to be able to create templates in the new folder.
@@ -244,58 +244,58 @@ The `template-authors` group is the group used to manage access to templates and
 
 The following table details the necessary permissions for template editing.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Path</th> 
-   <th>Role / Group</th> 
-   <th>Permissions<br /> </th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td> 
-   <td>Template Authors<br /> </td> 
-   <td>read, write, replicate</td> 
-   <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td> 
-  </tr> 
-  <tr> 
-   <td>Anonymous Web User</td> 
-   <td>read</td> 
-   <td>Anonymous Web User must read templates while rendering a page</td> 
-  </tr> 
-  <tr> 
-   <td>Content Authors</td> 
-   <td>replicate</td> 
-   <td>replicateContent authors need to activate the templates of a page when activating a page</td> 
-  </tr> 
-  <tr> 
-   <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td> 
-   <td><code>Template Author</code></td> 
-   <td>read, write, replicate</td> 
-   <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td> 
-  </tr> 
-  <tr> 
-   <td>Annonymous Web User</td> 
-   <td>read</td> 
-   <td>Anonymous Web User must read policies while rendering a page</td> 
-  </tr> 
-  <tr> 
-   <td>Content Authors</td> 
-   <td>replicate</td> 
-   <td>Content authors need to activate the policies of a template of a page when activating a page</td> 
-  </tr> 
-  <tr> 
-   <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td> 
-   <td>Template Author</td> 
-   <td>read</td> 
-   <td>Template author creates a new template based on one of the predefined template types.</td> 
-  </tr> 
-  <tr> 
-   <td>Anonymous Web User</td> 
-   <td>none</td> 
-   <td>Anonymous Web User must not access the template types</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Path</th>
+   <th>Role / Group</th>
+   <th>Permissions<br /> </th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
+   <td>Template Authors<br /> </td>
+   <td>read, write, replicate</td>
+   <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td>
+  </tr>
+  <tr>
+   <td>Anonymous Web User</td>
+   <td>read</td>
+   <td>Anonymous Web User must read templates while rendering a page</td>
+  </tr>
+  <tr>
+   <td>Content Authors</td>
+   <td>replicate</td>
+   <td>replicateContent authors need to activate the templates of a page when activating a page</td>
+  </tr>
+  <tr>
+   <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
+   <td><code>Template Author</code></td>
+   <td>read, write, replicate</td>
+   <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td>
+  </tr>
+  <tr>
+   <td>Annonymous Web User</td>
+   <td>read</td>
+   <td>Anonymous Web User must read policies while rendering a page</td>
+  </tr>
+  <tr>
+   <td>Content Authors</td>
+   <td>replicate</td>
+   <td>Content authors need to activate the policies of a template of a page when activating a page</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
+   <td>Template Author</td>
+   <td>read</td>
+   <td>Template author creates a new template based on one of the predefined template types.</td>
+  </tr>
+  <tr>
+   <td>Anonymous Web User</td>
+   <td>none</td>
+   <td>Anonymous Web User must not access the template types</td>
+  </tr>
+ </tbody>
 </table>
 
 This default `template-authors` group only covers the project setups, where all `template-authors` members are allowed to access and author all templates. For more complex setups, where multiple template authors groups are needed to separate access to templates, more custom template authors groups must be created. However the permissions for the template authors groups would still be the same.
@@ -304,58 +304,58 @@ This default `template-authors` group only covers the project setups, where all 
 
 Templates should no longer be stored in `/conf/global`, however for some legacy installations there may still be templates in this location. ONLY in such legacy situations should the following `/conf/global` paths be explicitly configured.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Path</th> 
-   <th>Role / Group</th> 
-   <th>Permissions<br /> </th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td> 
-   <td>Template Authors</td> 
-   <td>read, write, replicate</td> 
-   <td>Template authors that create, read, update, delete, and replicate templates in <code>/conf/global</code></td> 
-  </tr> 
-  <tr> 
-   <td>Anonymous Web User</td> 
-   <td>read</td> 
-   <td>Anonymous Web User must read templates while rendering a page</td> 
-  </tr> 
-  <tr> 
-   <td>Content Authors</td> 
-   <td>replicate</td> 
-   <td>Content authors need to activate the templates of a page when activating a page</td> 
-  </tr> 
-  <tr> 
-   <td rowspan="3"><code>/conf/global/settings/wcm/policies</code></td> 
-   <td><code>Template Author</code></td> 
-   <td>read, write, replicate</td> 
-   <td>Template authors that create, read, update, delete, and replicate templates in <code>/conf/global</code></td> 
-  </tr> 
-  <tr> 
-   <td>Anonymous Web User</td> 
-   <td>read</td> 
-   <td>Anonymous Web User must read policies while rendering a page</td> 
-  </tr> 
-  <tr> 
-   <td>Content Authors</td> 
-   <td>replicate</td> 
-   <td>Content authors need to activate the policies of a template of a page when activating a page</td> 
-  </tr> 
-  <tr> 
-   <td rowspan="2"><code>/conf/global/settings/wcm/template-types</code></td> 
-   <td>Template Author</td> 
-   <td>read</td> 
-   <td>Template author creates a new template based on one of the predefined template types</td> 
-  </tr> 
-  <tr> 
-   <td>Anonymous Web User</td> 
-   <td>none</td> 
-   <td>Anonymous Web User must not access the template types</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Path</th>
+   <th>Role / Group</th>
+   <th>Permissions<br /> </th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
+   <td>Template Authors</td>
+   <td>read, write, replicate</td>
+   <td>Template authors that create, read, update, delete, and replicate templates in <code>/conf/global</code></td>
+  </tr>
+  <tr>
+   <td>Anonymous Web User</td>
+   <td>read</td>
+   <td>Anonymous Web User must read templates while rendering a page</td>
+  </tr>
+  <tr>
+   <td>Content Authors</td>
+   <td>replicate</td>
+   <td>Content authors need to activate the templates of a page when activating a page</td>
+  </tr>
+  <tr>
+   <td rowspan="3"><code>/conf/global/settings/wcm/policies</code></td>
+   <td><code>Template Author</code></td>
+   <td>read, write, replicate</td>
+   <td>Template authors that create, read, update, delete, and replicate templates in <code>/conf/global</code></td>
+  </tr>
+  <tr>
+   <td>Anonymous Web User</td>
+   <td>read</td>
+   <td>Anonymous Web User must read policies while rendering a page</td>
+  </tr>
+  <tr>
+   <td>Content Authors</td>
+   <td>replicate</td>
+   <td>Content authors need to activate the policies of a template of a page when activating a page</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><code>/conf/global/settings/wcm/template-types</code></td>
+   <td>Template Author</td>
+   <td>read</td>
+   <td>Template author creates a new template based on one of the predefined template types</td>
+  </tr>
+  <tr>
+   <td>Anonymous Web User</td>
+   <td>none</td>
+   <td>Anonymous Web User must not access the template types</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Template Type {#template-type}
@@ -405,7 +405,7 @@ Definitions for your customized templates types should be stored in user-defined
 
 The [device groups](/help/sites-developing/mobile.md#device-groups) used for an editable template (set as relative path of the property `cq:deviceGroups`) define which mobile devices are available as emulators in the [layout mode](/help/sites-authoring/responsive-layout.md) of page authoring. This value can be set in two places:
 
-* On the editable template type  
+* On the editable template type
 * On the editable template
 
 When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
@@ -508,7 +508,7 @@ Defines the structure of the resultant page:
 * The `root` ( `structure/jcr:content/root`) node defines the list of components that will be available in the resulting page.
 
     * Components defined in the template structure cannot be moved on or deleted from any resultant pages.
-    * Once a component is unlocked the `editable` property is set to `true`. 
+    * Once a component is unlocked the `editable` property is set to `true`.
     * Once a component that already contains content is unlocked, this content will be moved to the `initial` branch.
 
 * The `cq:responsive` node holds definitions for the responsive layout.
@@ -535,7 +535,7 @@ The content (or design) policies define the design properties of a component. Fo
 
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 
-  Provides a relative reference to the content policy for the page's paragraph system.  
+  Provides a relative reference to the content policy for the page's paragraph system.
 
 * The property `cq:policy`, on the component-explicit nodes under `root`, provide links to the policies for the individual components.
 
@@ -570,7 +570,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
     * [Enabling the template](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author) from the **Templates** console.
     * Setting the status property on the `jcr:content` node.
 
-        * For example, on: 
+        * For example, on:
           `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
         * Define the property:
 
@@ -581,7 +581,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
 1. **Allowed Templates**
 
     * [Define the Allowed Template path(s) on the **Page Properties**](/help/sites-authoring/templates.md#allowing-a-template-author) of the appropriate page or root page of a sub-branch.
-    * Set the property: 
+    * Set the property:
 
       `cq:allowedTemplates`
 
@@ -599,11 +599,11 @@ Pages created from editable templates:
 
 * Have references to information held in the template and template type. This is achieved with a `jcr:content` node with the properties:
 
-    * `cq:template` 
+    * `cq:template`
 
       Provides the dynamic reference to the actual template; enables changes to the template to be reflected on the actual pages.
-  
-    * `cq:templateType` 
+
+    * `cq:templateType`
 
       Provides a reference to the template type.
 
@@ -611,17 +611,17 @@ Pages created from editable templates:
 
 The above diagram shows how templates, content, and components interrelate:
 
-* Controller - `/content/<my-site>/<my-page>` 
+* Controller - `/content/<my-site>/<my-page>`
 
-  The resultant page that references the template. The content controls the entire process. According to the definitions it accesses the appropriate template and components.  
+  The resultant page that references the template. The content controls the entire process. According to the definitions it accesses the appropriate template and components.
 
 * Configuration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
 
-  The [template and related content policies](#template-definitions) define the page configuration.  
+  The [template and related content policies](#template-definitions) define the page configuration.
 
-* Model - OSGi bundles 
+* Model - OSGi bundles
 
-  The [OSGI bundles](/help/sites-deploying/osgi-configuration-settings.md) implement the functionality.  
+  The [OSGI bundles](/help/sites-deploying/osgi-configuration-settings.md) implement the functionality.
 
 * View - `/apps/<my-site>/components`
 
@@ -639,6 +639,6 @@ When rendering a page:
     * The page component will only allow the author to edit the nodes of the template structure that have been flagged as editable (as well as any children).
     * When rendering a component on a page, the relative path of that component will be taken from the `jcr:content` node; the same path under the `policies/jcr:content` node of the template will then be searched.
 
-        * The `cq:policy` property of this node points to the actual content policy (i.e. it holds the design configuration for that component). 
+        * The `cq:policy` property of this node points to the actual content policy (i.e. it holds the design configuration for that component).
         * This allows you to have multiple templates that re-use the same content policy configurations.
 

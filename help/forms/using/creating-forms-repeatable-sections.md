@@ -1,10 +1,10 @@
 ---
 title: Creating forms with repeatable sections
 seo-title: Creating forms with repeatable sections
-description: Repeatable sections are panels that can be dynamically added or removed to a form.  
-seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.  
+description: Repeatable sections are panels that can be dynamically added or removed to a form.
+seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 ---
@@ -39,7 +39,7 @@ You can use one of the following methods to create repeatable panels:
         1. In the rule area, under WHEN, select state **is clicked**.
         1. Under THEN:
 
-            * To create an add panel button, select **Add Instance**, and drag-drop the panel using ![toggle-side-panel](assets/toggle-side-panel.png) or select it using **Drop object or select here.** 
+            * To create an add panel button, select **Add Instance**, and drag-drop the panel using ![toggle-side-panel](assets/toggle-side-panel.png) or select it using **Drop object or select here.**
             * To create a delete panel button, select **Remove Instance**, and drag-drop the panel using ![toggle-side-panel](assets/toggle-side-panel.png) or select it using **Drop object or select here.**
 
        Select **Code Editor** in the Form Objects and Functions row. Click **Edit Rules** and in the code area:
@@ -123,21 +123,21 @@ You can create repeatable panels from an XML Schema and from the minOccours & ma
 In the following code, the `SampleType`panel uses the minOccours & maxOccurs property.
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
     <xs:schema targetNamespace="https://adobe.com/sample.xsd"
                     xmlns="https://adobe.com/sample.xsd"
                     xmlns:xs="https://www.w3.org/2001/XMLSchema"
                 >
 
         <xs:element name="sample" type="SampleType"/>
-        
+
         <xs:complexType name="SampleType">
             <xs:sequence>
                 <xs:element name="leaderName" type="xs:string" default="Enter Name"/>
                 <xs:element name="assignmentStartDate" type="xs:date"/>
                 <xs:element name="gender" type="GenderEnum"/>
                 <xs:element name="noOfProjectsAssigned" type="IntType"/>
-                <xs:element name="assignmentDetails" type="AssignmentDetails" 
+                <xs:element name="assignmentDetails" type="AssignmentDetails"
                                             minOccurs="0" maxOccurs="10"/>
             </xs:sequence>
         </xs:complexType>

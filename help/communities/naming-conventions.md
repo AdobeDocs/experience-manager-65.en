@@ -5,7 +5,7 @@ description: Hyphens in Java Package Name
 seo-description: Hyphens in Java Package Name
 uuid: 48086e6c-c35b-4ffc-b216-d01feca7bf9a
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa

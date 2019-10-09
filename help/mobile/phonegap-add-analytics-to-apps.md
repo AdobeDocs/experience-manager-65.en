@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about how you can use Mobile App Anal
 uuid: d3ff6f9b-0467-4abe-9a59-b3495a6af0f8
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 ---
@@ -51,7 +51,7 @@ For further details on how to download the ADBMobileConfig from your Mobile Appl
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
     extension="json"
-    path="../../../.." 
+    path="../../../.."
     selector="ADBMobileConfig"
     targetRootDirectory="www"
     type="mobileADBMobileConfigJSON"/>

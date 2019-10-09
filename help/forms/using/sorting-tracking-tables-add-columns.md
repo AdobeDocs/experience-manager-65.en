@@ -5,7 +5,7 @@ description: How-to customize the display of the details of user processes in th
 seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 ---
@@ -22,91 +22,91 @@ The tracking tab in AEM Forms workspace is used to display the details of proces
 * Completion Time ( `completeTime`)
 * Owner ( `currentAssignment.queueOwner`)
 
-The remaining attributes in the task model available for display in the task table are:   
+The remaining attributes in the task model available for display in the task table are:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>actionInstanceId</p> </td> 
-   <td><p>isOpenFullScreen</p> </td> 
-   <td><p>reminderCount</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>classOfTask</p> </td> 
-   <td><p>isOwner</p> </td> 
-   <td><p>routeList</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>consultGroupId</p> </td> 
-   <td><p>isRouteSelectionRequired</p> </td> 
-   <td><p>savedFormCount</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>contentType</p> </td> 
-   <td><p>isShowAttachments</p> </td> 
-   <td><p>serializedImageTicket</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>createTime</p> </td> 
-   <td><p>isStartTask</p> </td> 
-   <td><p>serviceName</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>creationId</p> </td> 
-   <td><p>isVisible</p> </td> 
-   <td><p>serviceTitle</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>currentAssignment</p> </td> 
-   <td><p>nextReminder</p> </td> 
-   <td><p>showACLActions</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>deadline</p> </td> 
-   <td><p>numForms</p> </td> 
-   <td><p>showDirectActions</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>description</p> </td> 
-   <td><p>numFormsToBeSaved</p> </td> 
-   <td><p>status</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>displayName</p> </td> 
-   <td><p>outOfOfficeUserId</p> </td> 
-   <td><p>summaryUrl</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>forwardGroupId</p> </td> 
-   <td><p>outOfOfficeUserName</p> </td> 
-   <td><p>supportsSave</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>isApprovalUI</p> </td> 
-   <td><p>priority</p> </td> 
-   <td><p>taskACL</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>isCustomUI</p> </td> 
-   <td><p>processInstanceId</p> </td> 
-   <td><p>taskFormType</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>isDefaultImage</p> </td> 
-   <td><p>processInstanceStatus</p> </td> 
-   <td><p>taskUserInfo</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>isLocked</p> </td> 
-   <td><p>processVariables</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><p>isMustOpenToComplete</p> </td> 
-   <td><p>readerSubmitOptions</p> </td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p>actionInstanceId</p> </td>
+   <td><p>isOpenFullScreen</p> </td>
+   <td><p>reminderCount</p> </td>
+  </tr>
+  <tr>
+   <td><p>classOfTask</p> </td>
+   <td><p>isOwner</p> </td>
+   <td><p>routeList</p> </td>
+  </tr>
+  <tr>
+   <td><p>consultGroupId</p> </td>
+   <td><p>isRouteSelectionRequired</p> </td>
+   <td><p>savedFormCount</p> </td>
+  </tr>
+  <tr>
+   <td><p>contentType</p> </td>
+   <td><p>isShowAttachments</p> </td>
+   <td><p>serializedImageTicket</p> </td>
+  </tr>
+  <tr>
+   <td><p>createTime</p> </td>
+   <td><p>isStartTask</p> </td>
+   <td><p>serviceName</p> </td>
+  </tr>
+  <tr>
+   <td><p>creationId</p> </td>
+   <td><p>isVisible</p> </td>
+   <td><p>serviceTitle</p> </td>
+  </tr>
+  <tr>
+   <td><p>currentAssignment</p> </td>
+   <td><p>nextReminder</p> </td>
+   <td><p>showACLActions</p> </td>
+  </tr>
+  <tr>
+   <td><p>deadline</p> </td>
+   <td><p>numForms</p> </td>
+   <td><p>showDirectActions</p> </td>
+  </tr>
+  <tr>
+   <td><p>description</p> </td>
+   <td><p>numFormsToBeSaved</p> </td>
+   <td><p>status</p> </td>
+  </tr>
+  <tr>
+   <td><p>displayName</p> </td>
+   <td><p>outOfOfficeUserId</p> </td>
+   <td><p>summaryUrl</p> </td>
+  </tr>
+  <tr>
+   <td><p>forwardGroupId</p> </td>
+   <td><p>outOfOfficeUserName</p> </td>
+   <td><p>supportsSave</p> </td>
+  </tr>
+  <tr>
+   <td><p>isApprovalUI</p> </td>
+   <td><p>priority</p> </td>
+   <td><p>taskACL</p> </td>
+  </tr>
+  <tr>
+   <td><p>isCustomUI</p> </td>
+   <td><p>processInstanceId</p> </td>
+   <td><p>taskFormType</p> </td>
+  </tr>
+  <tr>
+   <td><p>isDefaultImage</p> </td>
+   <td><p>processInstanceStatus</p> </td>
+   <td><p>taskUserInfo</p> </td>
+  </tr>
+  <tr>
+   <td><p>isLocked</p> </td>
+   <td><p>processVariables</p> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><p>isMustOpenToComplete</p> </td>
+   <td><p>readerSubmitOptions</p> </td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 For the following customizations in the task table, you need to do semantic changes in the source code. See [Introduction to Customizing AEM Forms workspace](/help/forms/using/introduction-customizing-html-workspace.md) fo how you can make semantic changes using workspace SDK and build a minified package from the changed source.
@@ -191,13 +191,13 @@ To sort the task list table when you click the column heading:
            if(target.hasClass('taskName')){
             attribute = 'stepName';
            } else if(target.hasClass('taskInstructions')){
-               attribute = 'instructions'; 
+               attribute = 'instructions';
            } else if(target.hasClass('taskRoute')){
-               attribute = 'selectedRoute'; 
+               attribute = 'selectedRoute';
            } else if(target.hasClass('taskCreateTime')){
-               attribute = 'createTime'; 
+               attribute = 'createTime';
            } else if(target.hasClass('taskCompleteTime')){
-               attribute = 'completeTime'; 
+               attribute = 'completeTime';
            }
            taskList.comparator = function (task) {
             return task.get(attribute);

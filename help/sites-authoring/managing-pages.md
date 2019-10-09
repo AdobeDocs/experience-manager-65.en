@@ -5,7 +5,7 @@ description: How to create and manage pages with AEM
 seo-description: How to create and manage pages with AEM
 uuid: 9bdc3222-6a0c-48a2-be1d-79ceb3bbc828
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
@@ -29,7 +29,7 @@ This section describes how to create and manage pages with Adobe Experience Mana
 
 As an author you will need to organize your website within AEM. This involves creating and naming your content pages so that:
 
-* You can easily find them on the author environment  
+* You can easily find them on the author environment
 * Visitors to your site can easily browse them on the publish environment
 
 You can also use [folders](#creating-a-new-folder) to help organize your content.
@@ -54,7 +54,7 @@ Depending on the configuration of your instance, use of `/content` might be opti
       /hiking
        /desert-sky-shorts
        /hiking-poles
-       /... 
+       /...
       /running...
       /surfing...
       /...
@@ -74,7 +74,7 @@ This structure can be viewed From the **Sites** console, where you can [navigate
 
 From any point, you can see the upward branch from breadcrumbs in the header bar:
 
-![screen_shot_2018-03-22at104706](assets/screen_shot_2018-03-22at104706.png) 
+![screen_shot_2018-03-22at104706](assets/screen_shot_2018-03-22at104706.png)
 
 ### Page Naming Conventions {#page-naming-conventions}
 
@@ -82,25 +82,25 @@ When creating a new page there are two keys fields:
 
 * **[Title](#title)**:
 
-    * This is displayed to the user in the console and shown at the top of the page content when editing. 
+    * This is displayed to the user in the console and shown at the top of the page content when editing.
     * This field is mandatory.
 
 * **[Name](#name)**:
 
-    * This is used to generate the URI. 
+    * This is used to generate the URI.
     * User input for this field is optional. If not specified, the name is derived from the title. See the following section [Page Name Restrictions and Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) for details.
 
 #### Page Name Restrictions and Best Practices {#page-name-restrictions-and-best-practices}
 
 The page **Title** and **Name** can be created separately but are related:
 
-* When creating a page, only the **Title** field is required. If no **Name** is provided at page creation, AEM will generate a name from the first 64 characters of the title (observing the validation set out below). Only the first 64 characters are used in order to support the best practice of short page names.  
+* When creating a page, only the **Title** field is required. If no **Name** is provided at page creation, AEM will generate a name from the first 64 characters of the title (observing the validation set out below). Only the first 64 characters are used in order to support the best practice of short page names.
 
 * If a page name is manually specified by the author, the 64 character limit does not apply, however other technical limitations on the page name length may.
 
 >[!NOTE]
 >
->When defining a page name, a good rule-of-thumb is to keep the page name as brief but as expressive and memorable as possible to make it easy to understand for the reader. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.  
+>When defining a page name, a good rule-of-thumb is to keep the page name as brief but as expressive and memorable as possible to make it easy to understand for the reader. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
 >
 >Also keep in mind that some browsers (e.g. older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
 
@@ -149,13 +149,13 @@ The template defines the structure of a page including a thumbnail image and oth
 
 AEM comes with several templates provided out-of-the-box. The templates available depend on the individual website. The key fields are:
 
-* **Title** 
-  The title displayed on the resulting web-page.  
+* **Title**
+  The title displayed on the resulting web-page.
 
-* **Name** 
-  Used when naming the page.  
+* **Name**
+  Used when naming the page.
 
-* **Template** 
+* **Template**
   A list of templates available for use when generating the new page.
 
 >[!NOTE]
@@ -185,7 +185,7 @@ Once you have created and opened a page you can [add content using the component
 Unless all pages have been created for you in advance, before you can start creating content, you must create a page:
 
 1. Open the Sites console (for example, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
-1. Navigate to the location where you want to create the new page. 
+1. Navigate to the location where you want to create the new page.
 1. Open the drop down selector using **Create** in the toolbar, then select **Page** from the list:
 
    ![screen_shot_2018-03-22at104944](assets/screen_shot_2018-03-22at104944.png)
@@ -335,7 +335,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
     * Use the [column view](/help/sites-authoring/basic-handling.md#column-view) to navigate to the new location for the page:
 
-        * Select the destination it by clicking the destination's thumbnail. 
+        * Select the destination it by clicking the destination's thumbnail.
         * Click **Next** to continue.
 
     * Use **Back** to return to page name specification.
@@ -387,7 +387,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 You can [lock/unlock a page](/help/sites-authoring/editing-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
 
-![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png) 
+![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
 ### Creating a New Folder {#creating-a-new-folder}
 

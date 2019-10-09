@@ -7,7 +7,7 @@ uuid: 3895fda6-29ae-46f5-b2bc-abc989808648
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
 ---
 
@@ -36,18 +36,18 @@ discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
 
    Configure the Render Settings with the following suggestions:
 
-    * **[!UICONTROL Common]** tab  
+    * **[!UICONTROL Common]** tab
 
       Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
-  
+
     * **[!UICONTROL Quality]** tab
 
         * **[!UICONTROL Overall quality]** `- 0.5` or less
         * **[!UICONTROL Indirect Diffuse (GI) Mode]** - `Final Gather`
         * **[!UICONTROL Filter Size]** - `2.0`, `2.0`
 
-    * Render the scene at the typical image sizes that you expect to use. If necessary, refine the lights, or Render settings, or do both to achieve the results you want. 
-  
+    * Render the scene at the typical image sizes that you expect to use. If necessary, refine the lights, or Render settings, or do both to achieve the results you want.
+
       Be aware that rendering with Mental Ray, using image-based lighting, is very slow and CPU-intensive. Adobe recommends that you configure the lowest quality settings that are still capable of producing the desired render quality.
 
 1. Remove the reference that you created in step 2.

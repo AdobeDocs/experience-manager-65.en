@@ -5,7 +5,7 @@ description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in a
 seo-description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in adaptive forms.
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms
 topic-tags: author
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2

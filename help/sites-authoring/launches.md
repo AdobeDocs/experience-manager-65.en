@@ -5,7 +5,7 @@ description: Launches enable you to efficiently develop content for a future rel
 seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 uuid: ff6a2898-7a77-4315-bb1f-efa9caa5f3b2
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
@@ -69,9 +69,9 @@ Launches allow you to:
 
     * Automatically - this involves the following:
 
-        * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch. 
+        * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.
         * The **Production Ready** flag: this can only be set when editing a launch.
-        * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published. 
+        * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.
 
           If no date has been set, the flag will have no effect.
 
@@ -95,7 +95,7 @@ Launches allow you to:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`. 
+>Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
 >
 >Please contact your system administrator if you experience any problems.
 

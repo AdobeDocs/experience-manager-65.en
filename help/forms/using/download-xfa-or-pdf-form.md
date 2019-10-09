@@ -5,7 +5,7 @@ description: You can export forms from the repository to the local system and mi
 seo-description: You can export forms from the repository to the local system and migrate the downloaded forms to new repository.
 uuid: 5f7fbd14-cb9d-4749-8708-7efe49df89d7
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 ---
@@ -20,15 +20,15 @@ In AEM Forms, the download operation is supported for the following asset types:
 * PDF forms
 * Documents (flat PDF files)
 
-AEM Forms supports download of these form types individually or in a folder containing one or more supported forms.  
+AEM Forms supports download of these form types individually or in a folder containing one or more supported forms.
 
 Aside from these assets, you can download the `Resource` type of asset if it is present in a folder. This functionality is provided to enable you to download the resource referred to by an XFA form along with the form.
 
 ## Download one or more forms {#download-one-or-more-forms}
 
-1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`.  
+1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`.
 
-1. Navigate to the location of the asset you want to download.  
+1. Navigate to the location of the asset you want to download.
 
 1. Select the asset. Click the **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png) icon in the toolbar.
 

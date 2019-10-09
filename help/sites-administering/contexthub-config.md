@@ -5,7 +5,7 @@ description: Learn how to configure Context Hub.
 seo-description: Learn how to configure Context Hub.
 uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 780d1a2d-38f1-4115-a9bd-f466aa3774dd
@@ -69,7 +69,7 @@ Add a UI mode to group related ContextHub modules. When you create the UI mode, 
 
 1. Provide values for the following properties:
 
-    * UI Mode Title: The title that identifies the UI mode 
+    * UI Mode Title: The title that identifies the UI mode
     * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example `coral-Icon--user`
     * Enabled: Select to show the UI mode in the ContextHub toolbar
 
@@ -182,18 +182,18 @@ To save data from the MD5 service of the jsontest.com site, use the procedure in
 * **Detail Configuration (JSON):**
 
   ```
-  { 
-   "service": { 
-   "jsonp": false, 
-   "timeout": 1000, 
-   "ttl": 1800000, 
-   "secure": false, 
-   "host": "md5.jsontest.com", 
-   "port": 80, 
-   "params":{ 
-   "text":"text to md5" 
-       } 
-     } 
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
    }
   ```
 
@@ -210,12 +210,12 @@ Use the procecure in [Adding a UI Module](/help/sites-administering/contexthub-c
 * **Detail Configuration (JSON):**
 
   ```
-  { 
-   "icon": "coral-Icon--data", 
-   "title": "MD5 Converstion", 
-   "storeMapping": { "md5": "md5" }, 
-   "template": "<p> {{md5.original}}</p>; 
-                <p>{{md5.md5}}</p>" 
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Converstion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
   }
   ```
 
@@ -255,4 +255,4 @@ ContextHub configurations are stored below the /etc/cloudsettings/default node, 
 
 ![chlimage_1-324](assets/chlimage_1-324.png)
 
-To recover your ContextHub configurations, use CRXDE Lite to copy the nodes that represent your stores, UI modes, and UI modules from below the default-pre-upgrade_*yyyymmdd_xxxxxx* node to below the /etc/cloudsettings/default node. 
+To recover your ContextHub configurations, use CRXDE Lite to copy the nodes that represent your stores, UI modes, and UI modules from below the default-pre-upgrade_*yyyymmdd_xxxxxx* node to below the /etc/cloudsettings/default node.

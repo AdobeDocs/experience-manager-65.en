@@ -5,7 +5,7 @@ description: AEM 3D (Adobe Experience Manager 3D) lets you upload, manage, view,
 seo-description: AEM 3D (Adobe Experience Manager 3D) lets you upload, manage, view, and render 3D content. Support for viewing and rendering is optimized for individual objects.
 uuid: 4a145423-203f-4494-b62c-80cf9401f705
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: c601a44a-6604-4cc2-b35a-60d2c5a950e1

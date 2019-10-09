@@ -5,7 +5,7 @@ description: You can create email content in AEM and process it in Adobe Campaig
 seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
 uuid: 439df7fb-590b-45b8-9768-565b022a808b
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
@@ -15,7 +15,7 @@ discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 
 You can create email content in AEM and process it in Adobe Campaign emails. To do that, you must:
 
-1. Create a new newsletter in AEM from an Adobe Campaign-specific template.  
+1. Create a new newsletter in AEM from an Adobe Campaign-specific template.
 1. Select [an Adobe Campaign service](#selectingtheadobecampaigncloudservice) before editing the content to access all the functionality.
 1. Edit the content.
 1. Validate the content.
@@ -43,7 +43,7 @@ Detailed instructions are described in this document.
 
 >[!NOTE]
 >
->When adding email templates, be sure to add them under **/content/campaigns** to make them available. 
+>When adding email templates, be sure to add them under **/content/campaigns** to make them available.
 >
 
 1. In AEM, select the **Websites** folder then browse your explorer to find where your email campaigns are managed. In the following example, the node concerned is **Websites** &gt; **Campaigns** &gt; **Geometrixx Outdoors** &gt; **Email Campaigns**.
@@ -57,7 +57,7 @@ Detailed instructions are described in this document.
 1. Select **New** &gt; **New Page** to create new email content.
 1. Select one of the available templates specific to Adobe Campaign, then fill the general properties of the page. Three templates are available by default:
 
-    * **Adobe Campaign Email (AC 6.1)**: lets you add content to a predefined template before sending it to Adobe Campaign 6.1 for delivery. 
+    * **Adobe Campaign Email (AC 6.1)**: lets you add content to a predefined template before sending it to Adobe Campaign 6.1 for delivery.
     * **Adobe Campaign Email (ACS)**: lets you add content to a predefined template before sending it to Adobe Campaign Standard for delivery.
 
    ![chlimage_1-173](assets/chlimage_1-173.png)
@@ -91,7 +91,7 @@ In addition you may also need to select the Adobe Campaign template and change t
 
 You can edit email content in either the classic user interface or the touch-optimized user interface.
 
-1. Enter the subject and the text version of the email by selecting **Page properties** &gt; **Email** from the toolbox. 
+1. Enter the subject and the text version of the email by selecting **Page properties** &gt; **Email** from the toolbox.
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -143,7 +143,7 @@ See [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-persona
 
 You can preview how the newsletter will look as well as preview the personalization.
 
-1. Open the newsletter you want to preview and click Preview (magnifying glass) to shrink the sidekick. 
+1. Open the newsletter you want to preview and click Preview (magnifying glass) to shrink the sidekick.
 1. Click one of the email client icons to see what your newsletter looks like in each email client.
 
    ![chlimage_1-181](assets/chlimage_1-181.png)

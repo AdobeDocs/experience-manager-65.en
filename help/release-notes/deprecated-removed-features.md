@@ -24,7 +24,7 @@ This process gives customers at least one release cycle to adapt their implement
 
 ## Deprecated Features {#deprecated-features}
 
-This section lists features and capabilities that have been marked as deprecated with AEM 6.4. Generally, features that are planned to be removed in a future release are set to deprecated first, with an alternative provided.
+This section lists features and capabilities that have been marked as deprecated with AEM 6.5. Generally, features that are planned to be removed in a future release are set to deprecated first, with an alternative provided.
 
 Customers are advised to review if they make use of the feature/capability in their current deployment, and make plans to change their implementation to use the alternative provided.
 
@@ -37,7 +37,7 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>UI</td> 
-   <td><p>Adobe does not plan to make further enhancements to the Classic UI. AEM 6.4 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated. </p> 
+   <td><p>Adobe does not plan to make further enhancements to the Classic UI. AEM 6.5 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated. </p> 
     <ul> 
      <li>/libs/cq/core/content/welcome.html</li> 
      <li>/siteadmin</li> 
@@ -53,7 +53,7 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>Components</td> 
-   <td><p>Adobe does not plan to make further enhancements to the Foundation Components listed below. AEM 6.4 has the Foundation Components included, and customers upgrading from earlier releases can keep using them as is. Note that Foundation Components remain fully supported while being deprecated. </p> 
+   <td><p>Adobe does not plan to make further enhancements to the Foundation Components listed below. AEM 6.5 has the Foundation Components included, and customers upgrading from earlier releases can keep using them as is. Note that Foundation Components remain fully supported while being deprecated. </p> 
     <ul> 
      <li>foundation/components/account/accountname</li> 
      <li>foundation/components/account/actions</li> 
@@ -84,7 +84,7 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>Components</td> 
-   <td><p>Adobe does not plan to make further enhancements to the Foundation Components listed below. AEM 6.4 has the Foundation Components included, and customers upgrading from earlier releases can keep using them as is. Note that Foundation Components remain fully supported while being deprecated.</p> 
+   <td><p>Adobe does not plan to make further enhancements to the Foundation Components listed below. AEM 6.5 has the Foundation Components included, and customers upgrading from earlier releases can keep using them as is. Note that Foundation Components remain fully supported while being deprecated.</p> 
     <ul> 
      <li>foundation/components/timing</li> 
     </ul> </td> 
@@ -92,7 +92,7 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>Portal Director</td> 
-   <td><p>The Portal Director is a set of features, that enables the hosting of AEM content via Portlet in 3rd party servers.</p> <p>Adobe does not plan to make further enhancements to the Portal Dirtector feature under the location listed below. AEM 6.4 has the Portal Director included, and customers upgrading from earlier releases can keep using it as is. Note that Portal Direct remains fully supported while being deprecated.</p> 
+   <td><p>The Portal Director is a set of features, that enables the hosting of AEM content via Portlet in 3rd party servers.</p> <p>Adobe does not plan to make further enhancements to the Portal Dirtector feature under the location listed below. AEM 6.5 has the Portal Director included, and customers upgrading from earlier releases can keep using it as is. Note that Portal Direct remains fully supported while being deprecated.</p> 
     <ul> 
      <li>/libs/portal/director</li> 
     </ul> </td> 
@@ -100,7 +100,7 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>Portlet Component</td> 
-   <td><p>Portlet Components under /foundation/components/portlet enables the hosting of JSR Portlets in AEM as components.</p> <p>Adobe does not plan to make further enhancements to the Portlet Component feature. AEM 6.4 has the Portlet Component included, and customers upgrading from earlier releases can keep using it as is. Note that Portlet Component remains fully supported while being deprecated.</p> </td> 
+   <td><p>Portlet Components under /foundation/components/portlet enables the hosting of JSR Portlets in AEM as components.</p> <p>Adobe does not plan to make further enhancements to the Portlet Component feature. AEM 6.5 has the Portlet Component included, and customers upgrading from earlier releases can keep using it as is. Note that Portlet Component remains fully supported while being deprecated.</p> </td> 
    <td>At the point of writing, it's not planned to provide a replacement.</td> 
   </tr>
   <tr>
@@ -110,7 +110,7 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>Assets</td> 
-   <td><p>Assets Offloading has been deprecated starting with AEM 6.4</p> </td> 
+   <td><p>Assets Offloading has been deprecated starting with AEM 6.5</p> </td> 
    <td> </td> 
   </tr>
  </tbody>
@@ -118,7 +118,7 @@ Customers are advised to review if they make use of the feature/capability in th
 
 ## Removed Features {#removed-features}
 
-This section lists features and capabilities that have been removed from AEM 6.4. Prior releases had these capabilites marked as depreacted.
+This section lists features and capabilities that have been removed from AEM 6.5. Prior releases had these capabilites marked as depreacted.
 
 <table> 
  <tbody>
@@ -199,12 +199,12 @@ This section is used to pre-announce changes in future release, that are not dep
   <tr>
    <td>Browser Support</td> 
    <td>Microsoft Internet Explorer</td> 
-   <td>AEM 6.4 is the last release that supports Microsoft Internet Explorer 11.</td> 
+   <td>AEM 6.5 is the last release that supports Microsoft Internet Explorer 11.</td> 
   </tr>
   <tr>
    <td>Foundation</td> 
    <td>UI Framework</td> 
-   <td>Adobe is deprecating the Coral UI 2 components in 2019. AEM 6.4 is completely based on Coral UI 3 (introduced with AEM 6.2). Adobe recommends its customers and partners that have build custom UIs with Coral 2 to refactored these to Coral 3. Adobe offers a tool to convert Coral 2 dialogs to Coral 3 - <a href="/help/sites-developing/dialog-conversion.md">Read more</a>.</td> 
+   <td>Adobe is deprecating the Coral UI 2 components in 2019. AEM 6.5 is completely based on Coral UI 3 (introduced with AEM 6.2). Adobe recommends its customers and partners that have build custom UIs with Coral 2 to refactored these to Coral 3. Adobe offers a tool to convert Coral 2 dialogs to Coral 3 - <a href="/help/sites-developing/dialog-conversion.md">Read more</a>.</td> 
   </tr>
  </tbody>
 </table>

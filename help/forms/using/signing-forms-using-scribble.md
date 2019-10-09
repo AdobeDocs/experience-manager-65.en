@@ -4,7 +4,7 @@ seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signing forms using scribble
 seo-description: Signing forms using scribble
 uuid: e807d0de-6d5f-458e-be3e-273ed7a521c0
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 ---
@@ -15,13 +15,13 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 
 Both the components provide a window, as displayed below, to sign a form. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
 
-![Scribble sign dialog](assets/scribble-signature.png) 
+![Scribble sign dialog](assets/scribble-signature.png)
 
 ## Configure an adaptive form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Create a Document of Record option enabled or form template based adaptive form. For step-by-step information, see [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md).
 1. Drag-and-drop the **Scribble Signature** component from component browser to the adaptive form.
-1. Tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays properties of the Scribble Signature component. Configure properties of the Scribble Signature component. 
+1. Tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays properties of the Scribble Signature component. Configure properties of the Scribble Signature component.
 1. Drag-and-drop the Signature Step component from component browser to the adaptive form.
 
    >[!NOTE]
@@ -56,9 +56,9 @@ Both the components provide a window, as displayed below, to sign a form. You ca
 
    ![Scribble sign dialog](assets/scribblewidget.jpg)
 
-1. Click complete to finish the signing process. 
+1. Click complete to finish the signing process.
 
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
-The signatures are added to the form and the form control moves to the next panel.  
+The signatures are added to the form and the form control moves to the next panel.
 

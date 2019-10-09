@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
@@ -17,13 +17,13 @@ AEM provides several process steps that can be used for creating workflow models
 
 ## Process Characteristics {#process-characteristics}
 
-For each process step, the following characteristics are described.  
+For each process step, the following characteristics are described.
 
 ### Java Class or ECMA Path {#java-class-or-ecma-path}
 
 Process steps are defined either by a Java class or an ECMAScript.
 
-* For the Java class processes, the fully qualified class name is provided. 
+* For the Java class processes, the fully qualified class name is provided.
 * For the ECMAScript processes the path to the script is provided.
 
 ### Payload {#payload}
@@ -67,7 +67,7 @@ The recommended way to do this is to use a service user created with the necessa
 
 >[!CAUTION]
 >
->If you are upgrading from a version prior to AEM 6.2 you might need to update your implementation. 
+>If you are upgrading from a version prior to AEM 6.2 you might need to update your implementation.
 >
 >In previous versions, the admin session was passed to the `WorkflowProcess` implementations and could then had full access to the repository without having to define specific ACLs.
 >
@@ -116,7 +116,7 @@ The `ProcessAssembler` process executes multiple sub-processes sequentially in a
 ```
         args := arg [',' arg]
         arg := processname ['::' processargs]
-        processname := /* A fully qualified Java Class or absolute 
+        processname := /* A fully qualified Java Class or absolute
         repository path to an ECMAScript */
         processargs := processarg [';' processarg]*
         processarg := '[' nobracketprocessarg ']' | nobracketprocessarg
@@ -216,7 +216,7 @@ Locks the payload of the workflow.
 
 * **Java class:** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **Payload:** JCR_PATH and JCR_UUID 
+* **Payload:** JCR_PATH and JCR_UUID
 * **Arguments:** None
 * **Timeout:** Ignored
 
@@ -231,7 +231,7 @@ Unlocks the payload of the workflow.
 
 * **Java class:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **Payload:** JCR_PATH and JCR_UUID 
+* **Payload:** JCR_PATH and JCR_UUID
 * **Arguments:** None
 * **Timeout:** Ignored
 

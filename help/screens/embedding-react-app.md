@@ -5,7 +5,7 @@ description: Follow this page to learn how to embed an interactive single page a
 seo-description: Follow this page to learn how to embed an interactive single page application using REACT (or Angular) using the AEM SPA editor that can be configured by business professionals in AEM and also how to integrate your interactive application with offline Adobe Analytics.
 uuid: 02ae67bb-058a-4aa9-b484-0c60a8d897ad
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: developing
 discoiquuid: 70fdeeb8-0c82-44f3-a6fa-ee4dfb32a90b
@@ -30,7 +30,7 @@ Follow the steps below to use the AEM SPA Editor:
    ```
    mvn clean install archetype:update-local-catalog
    mvn archetype:crawl
-   
+
    mvn archetype:generate \
    -DarchetypeCatalog=internal \
    -DarchetypeGroupId=com.adobe.cq.spa.archetypes \
@@ -74,7 +74,7 @@ Follow the steps below to add the interative REACT app to AEM Screens:
    >
    >Make sure you add the user interaction event when assigning the channel to the display.
 
-1. Click **Edit** from the action bar to edit the properties of the sequence channel. 
+1. Click **Edit** from the action bar to edit the properties of the sequence channel.
 
    ![screen_shot_2019-02-15at100555am](assets/screen_shot_2019-02-15at100555am.png)
 

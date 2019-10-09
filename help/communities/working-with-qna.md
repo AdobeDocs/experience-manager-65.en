@@ -5,7 +5,7 @@ description: Adding the QnA forum feature to a page
 seo-description: Adding the QnA forum feature to a page
 uuid: 006c0bf0-c230-4890-8080-65651f4b4dac
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: bbbe32bb-9d97-461e-822f-a7ddc6c9f9ef

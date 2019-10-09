@@ -5,7 +5,7 @@ description: Learn how to work with carousel banners in dynamic media
 seo-description: Learn how to work with carousel banners in dynamic media
 uuid: 6d6de9ac-a6e1-4f07-a610-cc84e26bf76b
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
@@ -29,7 +29,7 @@ Here you can navigate through the images (by clicking on the numbers). In additi
 
 In this example, a user has tapped or clicked an image map and accessed the quick view window for gloves:
 
-![chlimage_1-440](assets/chlimage_1-440.png) 
+![chlimage_1-440](assets/chlimage_1-440.png)
 
 ## Watch how carousel banners are created {#watch-how-carousel-banners-are-created}
 
@@ -131,42 +131,42 @@ However, in complex cases, the quick view URL has different varying elements in 
 
 Consider the following examples of quick view URLs and their resulting hotspot or image map variables:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Single SKU, found in the query string.</td> 
-   <td><p>The recorded quick view URLs include the following:</p> 
-    <ul> 
-     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li> 
-     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li> 
-     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li> 
-     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li> 
-    </ul> <p>The only variable part in the URL is the value of the <code>productId=</code> query string parameter, and it is clearly a SKU value. Therefore, our hotspots or image maps only need SKU fields populated with values like <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td>Single SKU, found in the URL path.</td> 
-   <td><p>The recorded quick view URLs include the following:</p> 
-    <ul> 
-     <li><p><code>https://server/product/6422350843</code></p> </li> 
-     <li><p><code>https://server/product/1607745002</code></p> </li> 
-     <li><p><code>https://server/product/0086724882</code></p> </li> 
-    </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of the hotspots/image maps:<strong><code>6422350843</code>, <code>1607745002,</code> </strong><code>0086724882.</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td>SKU and category ID in the query string.</td> 
-   <td><p>The recorded quick view URLs include the following:</p> 
-    <ul> 
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li> 
-     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li> 
-    </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID is stored in the <code>category=</code>parameter.</p> <p>As such, the hotspot/image map definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p> 
-    <ul> 
-     <li><p>SKU is <strong><code>305466</code></strong> and <code>categoryId</code> is <code>1100004</code>.</p> </li> 
-     <li><p>SKU is <strong><code>310181</code></strong> and <code>categoryId</code> is <strong><code>1100004</code></strong>.</p> </li> 
-     <li><p>SKU is <strong><code>308706</code></strong> and <code>categoryId</code> is <strong><code>1740148</code></strong>.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Single SKU, found in the query string.</td>
+   <td><p>The recorded quick view URLs include the following:</p>
+    <ul>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+    </ul> <p>The only variable part in the URL is the value of the <code>productId=</code> query string parameter, and it is clearly a SKU value. Therefore, our hotspots or image maps only need SKU fields populated with values like <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
+  </tr>
+  <tr>
+   <td>Single SKU, found in the URL path.</td>
+   <td><p>The recorded quick view URLs include the following:</p>
+    <ul>
+     <li><p><code>https://server/product/6422350843</code></p> </li>
+     <li><p><code>https://server/product/1607745002</code></p> </li>
+     <li><p><code>https://server/product/0086724882</code></p> </li>
+    </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of the hotspots/image maps:<strong><code>6422350843</code>, <code>1607745002,</code> </strong><code>0086724882.</code></p> </td>
+  </tr>
+  <tr>
+   <td>SKU and category ID in the query string.</td>
+   <td><p>The recorded quick view URLs include the following:</p>
+    <ul>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+    </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID is stored in the <code>category=</code>parameter.</p> <p>As such, the hotspot/image map definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p>
+    <ul>
+     <li><p>SKU is <strong><code>305466</code></strong> and <code>categoryId</code> is <code>1100004</code>.</p> </li>
+     <li><p>SKU is <strong><code>310181</code></strong> and <code>categoryId</code> is <strong><code>1100004</code></strong>.</p> </li>
+     <li><p>SKU is <strong><code>308706</code></strong> and <code>categoryId</code> is <strong><code>1740148</code></strong>.</p> </li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Uploading Image Banners {#uploading-image-banners}
@@ -242,8 +242,8 @@ See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banne
 
 >[!NOTE]
 >
->When you add hotspots to an image in an [Interactive Image](interactive-images.md) or a Carousel Banner, the hotspot information is stored in the same metadata location - relative to the image's location--regardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image - along with its defined hotspot data - in either viewer.  
-  
+>When you add hotspots to an image in an [Interactive Image](interactive-images.md) or a Carousel Banner, the hotspot information is stored in the same metadata location - relative to the image's location--regardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image - along with its defined hotspot data - in either viewer.
+
 >Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots; an Interactive Image does not. Keep this in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. You may want to create Interactive Images and Carousel Banners using separate copies of the same image instead.
 
 >[!NOTE]
@@ -273,18 +273,18 @@ See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banne
         * If you are an AEM Sites and Ecommerce customer, tap the **[!UICONTROL Product Picker]** icon (magnifying glass) to open the **[!UICONTROL Select Product]** page. Tap the product you want to use, then tap the check mark in the upper-right corner of the page to return to the **[!UICONTROL Carousel Banner Editor]**.
         * If you are not an AEM Sites or Ecommerce customer
 
-            * See [Identifying hotspot variables](#identifying-hotspot-and-image-map-variables) as you may want to define these variables. 
+            * See [Identifying hotspot variables](#identifying-hotspot-and-image-map-variables) as you may want to define these variables.
             * Then, manually enter the SKU value. In the **[!UICONTROL SKU Value]** text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the quick view template so that the system knows to associate the tapped hotspot with a particular SKU's quick view.
             * (Optional) If there are other variables within the quick view that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an additional variable. For example, `category=Mens` is an added variable.
             * See [Working with Selectors](working-with-selectors.md) for more information.
 
     * Tap **[!UICONTROL Hyperlink]**.
 
-        * If you are an AEM Sites customer, tap the **[!UICONTROL Site Selector]** icon (folder) to navigate to a URL.  
+        * If you are an AEM Sites customer, tap the **[!UICONTROL Site Selector]** icon (folder) to navigate to a URL.
 
           >[!NOTE]
           >The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
-  
+
         * If you are a standalone customer, in the **[!UICONTROL HREF]** text field, specify the full URL path to a linked web page.
 
           Be sure you specify whether to open the link in a new browser tab (recommended default) or the same tab.
@@ -294,13 +294,13 @@ See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banne
     * Tap **[!UICONTROL Experience Fragment]**.
 
         * If you are an AEM Sites customer, tap the **[!UICONTROL Search]** icon (magnifying glass) to open the Experience Fragment page. Tap the Experience Fragment you want to use, then tap **[!UICONTROL Select]** in the upper-right corner of the page to return to the Hotspot management page.
-  
+
           See [Experience Fragments](/help/sites-authoring/experience-fragments.md).
 
           **Note**: Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment. To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
         * Specify the width and height of the Experience Fragment as it will appear on the banner.
-  
+
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    You can also preview what the carousel banner will look like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
@@ -323,7 +323,7 @@ You can perform a variety of editing tasks on Carousel Sets such as the followin
 * Add slides to a Carousel Set. See also [Working with Selectors](working-with-selectors.md).
 * Re-order slides in the Carousel Set.
 * Delete assets in the Carousel Set.
-* Apply a viewer preset.  
+* Apply a viewer preset.
 * Delete the Carousel Set.
 * Add or edit hotspots and image maps. See also [Working with Selectors](working-with-selectors.md).
 
@@ -354,8 +354,8 @@ You can use **[!UICONTROL Preview]** to see what your carousel banner will look 
 
 When you are satisfied with the carousel banner, you can publish it.
 
-* See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).  
-* See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.  
+* See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
+* See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
 * See [Adding Dynamic Media Assets to pages.](adding-dynamic-media-assets-to-pages.md)
 
 You can preview carousel banners from the Carousel Editor (preferred method) or from the **[!UICONTROL Viewers]** list.
@@ -382,7 +382,7 @@ You can preview carousel banners from the Carousel Editor (preferred method) or 
 
 You need to publish the carousel in order to use it. Publishing a Carousel Set activates the URL and Embed Code. It also publishes the carousel to the Dynamic Media cloud which is integrated with a CDN for scalable and performant delivery.
 
-If you use an existing interactive image with hotspots for your carousel banner, you must publish the interactive image separately after you publish the carousel banner. 
+If you use an existing interactive image with hotspots for your carousel banner, you must publish the interactive image separately after you publish the carousel banner.
 
 Also, if you modify a pre-existing published interactive image that you are using in a carousel banner, you must publish the interactive image before those changes are reflected in the carousel banner.
 
@@ -400,7 +400,7 @@ However, if you are a stand-alone AEM assets customer you can manually add the c
 
    See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-1. Add the embed code that you copied from AEM Assets to your webpage.  
+1. Add the embed code that you copied from AEM Assets to your webpage.
 
    The copied embed code is responsive so it should automatically fit the embedding area of the page.
 

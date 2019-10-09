@@ -5,7 +5,7 @@ description: This article presents a sample SPA application, explains how it is 
 seo-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
 uuid: e863fdc7-6c8e-49c5-9513-d3ed88196f07
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
@@ -32,9 +32,9 @@ This article summarizes the basic functioning of a simple SPA and the minimum th
 
 For more detail on how SPAs work in AEM, see the following documents:
 
-* [SPA Introduction and Walkthrough](/help/sites-developing/spa-walkthrough.md)  
+* [SPA Introduction and Walkthrough](/help/sites-developing/spa-walkthrough.md)
 
-* [SPA Authoring Introduction](/help/sites-developing/spa-overview.md)  
+* [SPA Authoring Introduction](/help/sites-developing/spa-overview.md)
 
 * [SPA Blueprint](/help/sites-developing/spa-blueprint.md)
 

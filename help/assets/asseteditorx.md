@@ -5,7 +5,7 @@ description: Learn how to extend the capabilities of Asset Editor using custom c
 seo-description: Learn how to extend the capabilities of Asset Editor using custom components.
 uuid: b2e6701d-9fbf-4b3f-a175-67aab05340d3
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: extending-assets
 content-type: reference
 discoiquuid: 90dc9025-ad40-47ea-9e17-af8c93ef650c
@@ -138,29 +138,29 @@ This example describes how to build a component that shows and displays the meta
        sling:resourceSuperType="foundation/components/parbase"
        allowedParents="[*/parsys]"
        componentGroup="Asset Editor"/>
-   
+
    ```
 
 1. Add `samplemeta.jsp` with the following snippet:
 
    ```xml
    <%--
-   
+
      Sample metadata field comopnent
-   
+
    --%><%@ page import="com.day.cq.dam.api.Asset,
                     java.security.AccessControlException" %><%
    %><%@include file="/libs/foundation/global.jsp"%><%
-   
+
        String value = "";
        String name = "dam:sampleMetadata";
        boolean readOnly = false;
-   
+
        // If the form page is requested for an asset loadResource will be the asset.
        Resource loadResource = (Resource) request.getAttribute("cq.form.loadresource");
-   
+
        if (loadResource != null) {
-   
+
            // Determine if the loaded asset is read only.
            Session session = slingRequest.getResourceResolver().adaptTo(Session.class);
            try {
@@ -172,7 +172,7 @@ This example describes how to build a component that shows and displays the meta
                readOnly = true;
            }
            catch (RepositoryException re) {}
-   
+
            // Get the value of the metadata.
            Asset asset = loadResource.adaptTo(Asset.class);
            try {
@@ -197,12 +197,12 @@ This example describes how to build a component that shows and displays the meta
            }%>
        </div>
    </div>
-   
+
    ```
 
 1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. So that you can remove paragraphs, add a multi-value property `cq:actions` with a single value of `DELETE`.
 
-1. Navigate to your browser, and on your sample page (for example, `asseteditor.html`) switch to design mode and enable your new component for the paragraph system.  
+1. Navigate to your browser, and on your sample page (for example, `asseteditor.html`) switch to design mode and enable your new component for the paragraph system.
 
 1. In **Edit** mode, the new component (for example, **Sample Metadata**) is now available in the sidekick (found in the **Asset Editor** group). Insert the component. To be able to store the metadata, it must be added to the metadata form.
 

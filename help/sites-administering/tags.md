@@ -5,7 +5,7 @@ description: Learn how to administer Tags in AEM.
 seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
@@ -17,13 +17,13 @@ Tags are a quick and easy method of classifying content within a website. They c
 
 In Adobe Experience Manager (AEM), a tag can be a property of
 
-* a content node for a page (see [Using Tags](/help/sites-authoring/tags.md))  
+* a content node for a page (see [Using Tags](/help/sites-authoring/tags.md))
 
 * a metadata node for an asset (see [Managing Metadata for Digital Assets](/help/assets/metadata.md))
 
 In addition to pages and assets, tags are used for AEM Communities features
 
-* user generated content (see [Tagging UGC)](/help/communities/tag-ugc.md)  
+* user generated content (see [Tagging UGC)](/help/communities/tag-ugc.md)
 
 * Enablement Resources (see [Tagging Enablement Resources](/help/communities/functions.md#catalog-function))
 
@@ -38,15 +38,15 @@ Some of the features of tags within AEM include :
     * colon (:) - delimits the namespace tag
     * forward slash (/) - delimits sub-tags
 
-* Tags can be applied by authors and site visitors. Irrespective of their creator, all forms of tags are made available for selection, both when assigning to a page, or when searching. 
+* Tags can be applied by authors and site visitors. Irrespective of their creator, all forms of tags are made available for selection, both when assigning to a page, or when searching.
 * Tags can be created and their taxonomy modified by members of the "tag-administrators" group and members who have modification rights to `/content/cq:tags`.
 
     * A tag that contains child tags is referred to as a container tag
     * A tag that is not a container tag is referred to as a leaf tag
     * A tag namespace is either a leaf tag or container tag
 
-* Tags are used by the [Search component](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) to facilitate finding content. 
-* Tags are used by the [Teaser component](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), which monitors a user's tag cloud to provide targeted content. 
+* Tags are used by the [Search component](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) to facilitate finding content.
+* Tags are used by the [Teaser component](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), which monitors a user's tag cloud to provide targeted content.
 * If tagging is an important aspect of your content
 
     * make sure to package tags with the pages that use them
@@ -68,7 +68,7 @@ To access the Tagging console :
     * select **`General`**
     * select **`Tagging`**
 
-![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsole.png) 
+![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ### Creating a Namespace {#creating-a-namespace}
 
@@ -78,13 +78,13 @@ The namespace is itself a tag, and need not contain any sub-tags. However, to co
 
 ![chlimage_1-183](assets/chlimage_1-183.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespaces.png)
 
-* **Title** 
+* **Title**
   *(required) *A display title for the namespace.
 
-* **Name** 
+* **Name**
   *(optional) *A name for the namespace. If not specified, a valid node name is created from the Title. See [TagID](/help/sites-developing/framework.md#tagid).
 
-* **Description** 
+* **Description**
   *(optional) *A description of the namespace.
 
 Once the required information is entered
@@ -109,7 +109,7 @@ Selecting a namespace or other tag makes available the following operations :
 
 When the browser window is not wide enough to display all icons, then the right-most icons are grouped together under a **`... More`** icon, which will display a drop-down list of the hidden operation icons when selected.
 
-![chlimage_1-185](assets/chlimage_1-185.png) 
+![chlimage_1-185](assets/chlimage_1-185.png)
 
 ### Selecting a Namespace Tag {#selecting-a-namespace-tag}
 
@@ -117,7 +117,7 @@ When first selected, if the namespace does not contain any tags, then the proper
 
 To select the tag for operations, and to multi-select, only select the icon next to the title. Selecting the title will only display properties or open the tag to display its contents.
 
-![chlimage_1-186](assets/chlimage_1-186.png) ![chlimage_1-187](assets/chlimage_1-187.png) 
+![chlimage_1-186](assets/chlimage_1-186.png) ![chlimage_1-187](assets/chlimage_1-187.png)
 
 ### Viewing Tag Properties {#viewing-tag-properties}
 
@@ -125,7 +125,7 @@ To select the tag for operations, and to multi-select, only select the icon next
 
 When a namespace or other tag is selected, selecting the **`View Properties`** icon results in the display of information as to the `name`, time of last edit, and number of references. If published, the time it was last published and the id of the publisher are shown. This information will appear in a column to the left of the tag columns.
 
-![chlimage_1-189](assets/chlimage_1-189.png) 
+![chlimage_1-189](assets/chlimage_1-189.png)
 
 ### Showing Tag References {#showing-tag-references}
 
@@ -141,7 +141,7 @@ By selecting the arrow to the right of the count, the reference names are listed
 
 The path to the reference is displayed as a tool tip when hovering over a reference.
 
-![chlimage_1-192](assets/chlimage_1-192.png) 
+![chlimage_1-192](assets/chlimage_1-192.png)
 
 ### Creating Tags {#creating-tags}
 
@@ -151,13 +151,13 @@ When a namespace or other tag is selected (by selecting the icon next to the tit
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-* **Title** 
+* **Title**
   *(required) *A display title for the tag.
 
-* **Name** 
+* **Name**
   *(optional) *A name for the tag. If not specified, a valid node name is created from the Title. See [TagID](/help/sites-developing/framework.md#tagid).
 
-* **Description** 
+* **Description**
   *(optional) *A description of the tag.
 
 Once the required information is entered
@@ -174,7 +174,7 @@ After edits are made, select **Save**.
 
 For details about adding language translations, see the section on [Managing Tags in Different Languages](#managing-tags-in-different-languages).
 
-![chlimage_1-196](assets/chlimage_1-196.png) 
+![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Moving Tags {#moving-tags}
 
@@ -188,16 +188,16 @@ When a namespace or other tag is selected, selecting the **`Move`** icon will al
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-* **Path** 
+* **Path**
   *(readonly)* The current path to the selected tag.
 
-* **Move to** 
+* **Move to**
   Browse to the new path under which to move the tag.
 
-* **Rename to** 
+* **Rename to**
   Initially displays the current `name`of the tag. A new `name`may be entered.
 
-* 
+*
 * select **Save**
 
 ### Merging Tags {#merging-tags}
@@ -210,10 +210,10 @@ When a namespace or other tag is selected, selecting the **`Merge`**icon will op
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-* **Path** 
+* **Path**
   *(readonly)* The path of the tag selected to be merged into another tag.
 
-* **Merge into** 
+* **Merge into**
   Browse to select the path of the tag to merge into.
 
 >[!NOTE]

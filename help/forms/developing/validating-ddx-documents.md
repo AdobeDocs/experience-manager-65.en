@@ -7,7 +7,7 @@ uuid: da668170-d2e9-4fff-aef5-432a856bd0bd
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 ---
@@ -31,8 +31,8 @@ To validate a DDX document, perform the following tasks:
 1. Include project files.
 1. Create an Assembler client.
 1. Reference an existing DDX document.
-1. Set run-time options to validate the DDX document. 
-1. Perform the validation. 
+1. Set run-time options to validate the DDX document.
+1. Perform the validation.
 1. Save the validation results in a log file.
 
 **Include project files**
@@ -44,7 +44,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (required if AEM Forms is deployed on JBoss) 
+* adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
 if AEM Forms is deployed on a supported J2EE application server other than JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server that AEM Forms is deployed on.
@@ -89,7 +89,7 @@ Validate a DDX document by using the Assembler Service API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-assembler-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-assembler-client.jar, in your Java project’s class path.
 
 1. Create a PDF Assembler client.
 
@@ -104,7 +104,7 @@ Validate a DDX document by using the Assembler Service API (Java):
 1. Set run-time options to validate the DDX document.
 
     * Create an `AssemblerOptionSpec` object that stores run-time options by using its constructor.
-    * Set the run-time option that instructs the Assembler service to validate the DDX document by invoking the `AssemblerOptionSpec` object’s setValidateOnly method and passing `true`. 
+    * Set the run-time option that instructs the Assembler service to validate the DDX document by invoking the `AssemblerOptionSpec` object’s setValidateOnly method and passing `true`.
     * Set the amount of information that the Assembler service writes to the log file by invoking the `AssemblerOptionSpec` object’s `getLogLevel` method and passing a string value meets your requirements. When validating a DDX document, you want more information written to the log file that will assist in the validation process. As a result, you can pass the value `FINE` or `FINER`.
 
 1. Perform the validation.
@@ -112,15 +112,15 @@ Validate a DDX document by using the Assembler Service API (Java):
    Invoke the `AssemblerServiceClient` object’s `invokeDDX` method and pass the following values:
 
     * A `com.adobe.idp.Document` object that represents the DDX document.
-    * The value `null` for the java.io.Map object that usually stores PDF documents. 
+    * The value `null` for the java.io.Map object that usually stores PDF documents.
     * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object that specifies the run-time options.
 
-   The `invokeDDX` method returns an `AssemblerResult` object that contains information that specifies whether the DDX document is valid. 
+   The `invokeDDX` method returns an `AssemblerResult` object that contains information that specifies whether the DDX document is valid.
 
 1. Save the validation results in a log file.
 
     * Create a `java.io.File` object and ensure that the file name extension is .xml.
-    * Invoke the `AssemblerResult` object’s `getJobLog` method. This method returns a `com.adobe.idp.Document` instance that contains validation information. 
+    * Invoke the `AssemblerResult` object’s `getJobLog` method. This method returns a `com.adobe.idp.Document` instance that contains validation information.
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file.
 
    >[!NOTE]
@@ -151,29 +151,29 @@ Validate a DDX document by using the Assembler Service API (web service):
 
 1. Create a PDF Assembler client.
 
-    * Create an `AssemblerServiceClient` object by using its default constructor. 
+    * Create an `AssemblerServiceClient` object by using its default constructor.
     * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an existing DDX document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the DDX document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the DDX document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
 
 1. Set run-time options to validate the DDX document.
 
     * Create an `AssemblerOptionSpec` object that stores run-time options by using its constructor.
-    * Set the run-time option that instructs the Assembler service to validate the DDX document by assigning the value true to the `AssemblerOptionSpec` object’s `validateOnly` data member. 
+    * Set the run-time option that instructs the Assembler service to validate the DDX document by assigning the value true to the `AssemblerOptionSpec` object’s `validateOnly` data member.
     * Set the amount of information that the Assembler service writes to the log file by assigning a string value to the `AssemblerOptionSpec` object’s `logLevel` data member. method When validating a DDX document, you want more information written to the log file that will assist in the validation process. As a result, you can specify the value `FINE` or `FINER`. For information about the run-time options that you can set, see the `AssemblerOptionSpec` class reference in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Perform the validation.
@@ -181,7 +181,7 @@ Validate a DDX document by using the Assembler Service API (web service):
    Invoke the `AssemblerServiceClient` object’s `invokeDDX` method and pass the following values:
 
     * A `BLOB` object that represents the DDX document.
-    * The value `null` for the `Map` object that usually stores PDF documents. 
+    * The value `null` for the `Map` object that usually stores PDF documents.
     * An `AssemblerOptionSpec` object that specifies run-time options.
 
    The `invokeDDX` method returns an `AssemblerResult` object that contains information that specifies whether the DDX document is valid.
@@ -189,7 +189,7 @@ Validate a DDX document by using the Assembler Service API (web service):
 1. Save the validation results in a log file.
 
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the log file and the mode to open the file in. Ensure that the file name extension is .xml.
-    * Create a `BLOB` object that stores log information by getting the value of the `AssemblerResult` object’s `jobLog` data member. 
+    * Create a `BLOB` object that stores log information by getting the value of the `AssemblerResult` object’s `jobLog` data member.
     * Create a byte array that stores the content of the `BLOB` object. Populate the byte array by getting the value of the `BLOB` object’s `MTOM` field.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
     * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.

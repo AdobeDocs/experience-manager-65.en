@@ -5,7 +5,7 @@ description: Learn how to work with spin sets in dynamic media
 seo-description: Learn how to work with spin sets in dynamic media
 uuid: a80a0491-6500-463a-83c4-ff4b90a88182
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
@@ -17,7 +17,7 @@ A Spin Set simulates the real-world act of turning an object to examine it. Spin
 
 A Spin Set simulates a 360-degree viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can “free-form” zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
 
-Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays. 
+Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
@@ -62,7 +62,7 @@ To get you up and running quickly with Spin Sets, follow this workflow:
 
 1. [Publish Spin Sets.](publishing-dynamicmedia-assets.md)
 
-   Publishing a Spin Set activates the order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360 degree view.**[!UICONTROL URL]** and **[!UICONTROL Embed]** string. In addition, you must [publish the viewer preset](managing-viewer-presets.md). 
+   Publishing a Spin Set activates the order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360 degree view.**[!UICONTROL URL]** and **[!UICONTROL Embed]** string. In addition, you must [publish the viewer preset](managing-viewer-presets.md).
 
 1. [Link URLs to your Web Application](linking-urls-to-yourwebapplication.md) or [Embed the Video or Image Viewer](embed-code.md).
 
@@ -115,7 +115,7 @@ Batch sets are created by the IPS (Image Production System) as part of asset ing
 
 1. Do either one of the following:
 
-    * Near the upper-left corner of the **[!UICONTROL Spin Set Editor]** page, tap **[!UICONTROL Add Asset]**. 
+    * Near the upper-left corner of the **[!UICONTROL Spin Set Editor]** page, tap **[!UICONTROL Add Asset]**.
     * Near the middle of the **[!UICONTROL Spin Set Editor]** page, tap **[!UICONTROL Tap to open Asset Selector]**.
 
    Tap to select assets that you want to include in your Spin Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
@@ -132,7 +132,7 @@ Batch sets are created by the IPS (Image Production System) as part of asset ing
 
 1. (Optional) Do any of the following:
 
-    * To delete an image, select the image, then tap **[!UICONTROL Delete Asset]**. 
+    * To delete an image, select the image, then tap **[!UICONTROL Delete Asset]**.
     * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
 
 1. Tap **[!UICONTROL Save]**. Your newly created Spin Set appears in the folder in which you created it.
@@ -149,7 +149,7 @@ You can also view sets by way of the user interface as described in [Editing Spi
 
    ![chlimage_1-384](assets/chlimage_1-384.png)
 
-1. From a member image of any set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of. 
+1. From a member image of any set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
@@ -180,9 +180,9 @@ You can perform a variety of editing tasks on Spin Sets such as the following:
 1. To edit the Spin Set, do any of the following:
 
     * To reorder images, drag an image to a new location (select the reorder icon to move items).
-    * To sort items in ascending or descending order, tap the column heading. 
+    * To sort items in ascending or descending order, tap the column heading.
     * To add an asset or update an existing asset, tap **[!UICONTROL Add Asset]**. Navigate to an asset, select it, then tap **[!UICONTROL Select]** near the upper-right corner.
-    If you delete the image that AEM uses for the thumbnail by replacing it with another image, the original asset still displays. 
+    If you delete the image that AEM uses for the thumbnail by replacing it with another image, the original asset still displays.
     * To delete an asset, select it and tap **[!UICONTROL Delete Asset]**.
     * To apply a preset, tap the **[!UICONTROL Preset]** icon and select a preset.
     * To delete an entire Spin Set, navigate to the Spin Set, select it, and select **[!UICONTROL Delete]**

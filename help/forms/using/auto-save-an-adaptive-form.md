@@ -4,7 +4,7 @@ seo-title: Auto-save an adaptive form
 description: You can configure an adaptive form to automatically start saving the content based on an event or a pre-defined time-interval
 seo-description: You can configure an adaptive form to automatically start saving the content based on an event or a pre-defined time-interval
 uuid: 0fe9a389-269b-438a-9489-d9d1d09558a1
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 ---
@@ -49,7 +49,7 @@ For an adaptive form, the auto save option is not enabled out of the box. You ca
 
    >[!NOTE]
    >
-   >For auto save option to work for anonymous users, ensure that you configure the Forms Common Configuration Service to allow all users to preview, verify, and sign forms. 
+   >For auto save option to work for anonymous users, ensure that you configure the Forms Common Configuration Service to allow all users to preview, verify, and sign forms.
    >
    >To configure the service, go to AEM Web Console configuration at `https://[server]:[host]/system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
 
@@ -62,22 +62,22 @@ You can implement a custom event to trigger the autosave functionality. Perform 
    For example, the following script uses the custom `emailFocusChange`event to trigger the autosave functionality:
 
    ```
-   window.addEventListener("bridgeInitializeStart", function (){   
-       guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) { 
+   window.addEventListener("bridgeInitializeStart", function (){
+       guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) {
            if(data.target.name === 'Email') {
                guideBridge.trigger("emailFocusChange");
            }
        });
       });
    });
-   
+
    ```
 
    >[!NOTE]
    >
    >A category property is defined while creating the client library folders. Keep the value assigned to category property handy.
 
-1. Open the adaptive form in author mode.  
+1. Open the adaptive form in author mode.
 
 1. In the edit mode, select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
 1. In th properties, open the **[!UICONTROL Basic]** section. In the **[!UICONTROL Client Library Category]** box, enter the value of the category property defined while creating the client library folders.

@@ -5,7 +5,7 @@ description: Learn how to run AEM in Production Ready Mode.
 seo-description: Learn how to run AEM in Production Ready Mode.
 uuid: f48c8bae-c72f-4772-967e-f1526f096399
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
@@ -45,7 +45,7 @@ More specifically, the following configuration changes will be performed when AE
 
 1. The **Apache Sling Simple WebDAV Access to repositories** ( `org.apache.sling.jcr.webdav`) bundle will only be available on **author** instances.
 
-1. Newly created users will be required to change the password on the first login. This does not apply to the admin user.  
+1. Newly created users will be required to change the password on the first login. This does not apply to the admin user.
 1. **Generate debug info** is disabled for the **Apache Java Script Handler**.
 
 1. **Mapped content** and **Generate debug info** are disabled for the **Apache Sling JSP Script Handler**.

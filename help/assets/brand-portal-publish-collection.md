@@ -5,7 +5,7 @@ description: Learn how to publish and unpublish collections to Brand Portal.
 seo-description: Learn how to publish and unpublish collections to Brand Portal.
 uuid: 49548a25-197f-4106-b8d0-e7580643efcf
 contentOwner: mgulati
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
 discoiquuid: deedd5bf-0337-4b46-87e1-4996d7780f97
@@ -35,7 +35,7 @@ If you make subsequent modifications to the original collection in AEM Assets, t
    ![publish_to_bp_icon](assets/publish_to_bp_icon.png)
 
 4. In the confirmation dialog, tap/click **[!UICONTROL Publish]**.
-5. Close the confirmation message. 
+5. Close the confirmation message.
 6. Log in to Brand Portal as an administrator. The published collection is available in the Collections console.
 
    ![published_collection](assets/published_collection.png)

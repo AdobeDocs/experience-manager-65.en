@@ -5,7 +5,7 @@ description: Components are modular units which realize specific functionality t
 seo-description: Components are modular units which realize specific functionality to present your content on your website
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
@@ -25,7 +25,7 @@ This page provides an overview of Adobe Experience Manager (AEM) components such
 * Can run anywhere within any AEM system. They can also be limited to run under specific components.
 * Have a standardized user interface.
 * Have edit behavior that can be configured.
-* Use dialog boxes that are built using sub-elements based on Granite UI components   
+* Use dialog boxes that are built using sub-elements based on Granite UI components
 * Are developed using [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (recommended) or JSP.
 * Can be developed to create customized components that extend the default functionality.
 
@@ -47,8 +47,8 @@ Each AEM component:
 AEM comes with a variety of [out-of-the-box components](/help/sites-authoring/default-components.md) that provide comprehensive functionality including:
 
 * Paragraph System ( `parsys`)
-* Page ( `responsivegrid` - touch-enabled UI only)  
-* Text  
+* Page ( `responsivegrid` - touch-enabled UI only)
+* Text
 * Image, with accompanying text
 * Toolbar
 
@@ -77,7 +77,7 @@ For an overview of all of the available components in your AEM instance, use the
 
 Alternatively, you can also use CRXDE Lite to get a list of all the components available in the repository.
 
-1. In **[!UICONTROL CRXDE Lite]**, select **[!UICONTROL Tools]** from the toolbar, then **[!UICONTROL Query]**, which opens the **[!UICONTROL Query]** tab.  
+1. In **[!UICONTROL CRXDE Lite]**, select **[!UICONTROL Tools]** from the toolbar, then **[!UICONTROL Query]**, which opens the **[!UICONTROL Query]** tab.
 
 1. In the **[!UICONTROL Query]** tab, select `XPath` as **[!UICONTROL Type]**.
 

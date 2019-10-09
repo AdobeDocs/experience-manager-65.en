@@ -5,7 +5,7 @@ description: Learn how to upload, preview, annotate, and publish video assets.
 seo-description: Learn how to upload, preview, annotate, and publish video assets.
 uuid: 56a8c221-409f-4605-97b1-a054dd2abfab
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
@@ -74,7 +74,7 @@ After your video assets are published, they are available to you for including i
 ## Annotate video assets {#annotating-video-assets}
 
 1. From the Assets console, tap the **[!UICONTROL Edit]** icon on the asset card to display the asset details page.
-1. Tap the **[!UICONTROL Preview]** icon to play the video. 
+1. Tap the **[!UICONTROL Preview]** icon to play the video.
 1. To annotate the video, tap the **[!UICONTROL Annotate]** button. An annotation is added at the particular timepoint (frame) in the video.
 
    While annotating, you can draw on the canvas and include a comment with the drawing. Comments are automatically saved in Adobe Experience Manager Assets.

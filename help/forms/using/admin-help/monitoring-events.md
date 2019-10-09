@@ -7,7 +7,7 @@ uuid: 22add6ff-536d-4cb9-8eac-b72cad5c3ecf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 ---
 
@@ -70,7 +70,7 @@ You can search for events on the Events page by using a combination of event sea
 1. On the document security page, click Events.
 1. In the Find list, select the search criteria you want to use. Depending on your selection in the Find list, a second list is displayed that provides additional search criteria. If applicable, in the text box, type the search criteria.
 
-   For more details about the specific event types, see [Event auditing options](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options). 
+   For more details about the specific event types, see [Event auditing options](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 
 1. In the User list, select the user type who performed the event:
 
@@ -81,13 +81,13 @@ You can search for events on the Events page by using a combination of event sea
 
     * Click the calendar to open the Date Picker.
     * Use the arrows to find a year and month.
-    * Click a day of the month on the calendar. 
+    * Click a day of the month on the calendar.
     * Click OK to close the Date Picker.
 
 1. In the Display list, select the number of search results to display per page.
 1. Click Find.
 
-   Any failed events are highlighted in the list with a denied icon. 
+   Any failed events are highlighted in the list with a denied icon.
 
 1. To view details about an event, click the description of the event in the list.
 
@@ -95,6 +95,6 @@ You can search for events on the Events page by using a combination of event sea
 
 You can sort the events list by column heading to find events more easily. Triangle icons next to the column heading indicate which column is currently used to sort. An upward-pointing triangle indicates ascending order, while a downward-pointing triangle indicates descending order.
 
-1. Click the appropriate column heading. 
+1. Click the appropriate column heading.
 1. To change the sort order, click the column heading again.
 

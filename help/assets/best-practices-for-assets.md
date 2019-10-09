@@ -5,7 +5,7 @@ description: Depending upon your AEM Assets deployment and features that you use
 seo-description: Depending upon your AEM Assets deployment and features that you use for asset ingestion, rendition generation, and metadata extraction, identifying and adhering to best practices in different areas greatly enhances system stability and performance under load.
 uuid: 2738ddc7-7f7c-41b5-84d9-4eecb52da1e9
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 750505d4-f31d-4ee5-bca0-96e587b06559

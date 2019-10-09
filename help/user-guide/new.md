@@ -4,7 +4,7 @@ seo-title: Resources for New AEM Users
 description: Questions, answers, and resources for users new to AEM
 seo-description: Questions, answers, and resources for users new to AEM
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
 # Resources for New AEM Users {#resources-for-new-aem-users}

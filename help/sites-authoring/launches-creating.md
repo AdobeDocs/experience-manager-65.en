@@ -1,11 +1,11 @@
 ---
 title: Creating Launches
 seo-title: Creating Launches
-description: You can create a launch to enable the updating of a new version of existing web pages for future activation. 
-seo-description: You can create a launch to enable the updating of a new version of existing web pages for future activation. 
+description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
+seo-description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
 uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
@@ -17,7 +17,7 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page:
 
 * The title appears in the [References](/help/sites-authoring/author-environment-tools.md#references) rail, from where authors can access them to work on them.
-* The child pages of the source page are included in the launch by default. You can use only the source page if desired. 
+* The child pages of the source page are included in the launch by default. You can use only the source page if desired.
 * By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.
 
 Optionally, you can specify the **Launch Date** (and time) to define when the launch pages are to be promoted and activated. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
@@ -60,7 +60,7 @@ You can create a launch from either the Sites or Launches console:
 
    >[!NOTE]
    >
-   >To add pages and/or branches to a launch they must be within a site; i.e. below a common top-level root. 
+   >To add pages and/or branches to a launch they must be within a site; i.e. below a common top-level root.
    >
    >If a site contains language roots below the top level, the pages and branches for a launch must be below a common language root.
 
@@ -81,7 +81,7 @@ You can create a launch from either the Sites or Launches console:
     * **use a new template to replace the page**: See [Create Launch with New Template](#create-launch-with-new-template) for more details.
     * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
 
-      By default, this option is selected. 
+      By default, this option is selected.
 
     * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
@@ -108,7 +108,7 @@ When [creating a launch](/help/sites-authoring/launches-creating.md#create-launc
 
 Selecting this will:
 
-* update the other options available,  
+* update the other options available,
 * include a new step where you can select the required template.
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
@@ -145,9 +145,9 @@ Creating a nested launch from the **Launches** console is basically the same as 
 To create a nested launch from the **Sites** console - based on an existing launch:
 
 1. Access the [Launch from References (Sites console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) to show the available actions.
-1. Select **Create launch** to open the wizard (as the source has already been selected it will skip the **Select Source** step).  
+1. Select **Create launch** to open the wizard (as the source has already been selected it will skip the **Select Source** step).
 
-1. Enter the **Launch Title** and any other required details (as with a normal launch).  
+1. Enter the **Launch Title** and any other required details (as with a normal launch).
 
 1. Use **Create** to complete the process and create your new launch. The confirmation dialog will ask whether you want to open the launch immediately.
 

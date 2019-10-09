@@ -5,7 +5,7 @@ description: The AEM SPA Editor SDK was featured in a series of AEM Gems session
 seo-description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
 uuid: 326ac431-79d4-48ed-aa48-0c9bfdbd23d0
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 48ab972b-ca26-40d1-b89e-86124ceb173b

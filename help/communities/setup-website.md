@@ -5,7 +5,7 @@ description: Set up directories
 seo-description: Set up directories
 uuid: a31edcd5-dab8-4a42-953b-1d076c2182b2
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
@@ -32,9 +32,9 @@ The code in this tutorial will rely on the main folder name being the same for t
 >
 >* The names seen in CRXDE are node names which form the path to addressable content
 >* Node names may contain spaces, but when used in an URI, the space must be encoded either as '%20' or '+'
->* Node names may contain hyphens and underscores, but they must be encoded when referenced as a package name within a Java file. Both hyphens and underscores are escaped with underscore followed by their unicode value: 
+>* Node names may contain hyphens and underscores, but they must be encoded when referenced as a package name within a Java file. Both hyphens and underscores are escaped with underscore followed by their unicode value:
 >
->  * hyphen becomes '_002d'  
+>  * hyphen becomes '_002d'
 >  * underscore becomes '_005f'
 
 ## Set up the Application Directory (/apps) {#setup-the-application-directory-apps}
@@ -95,7 +95,7 @@ The /etc/designs directory contains the images, scripts, and stylesheets to be d
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-1. Refresh the explorer pane if "An SCF Sandbox" folder does not appear.  
+1. Refresh the explorer pane if "An SCF Sandbox" folder does not appear.
 
 1. Return to CRXDE Lite (http:// localhost:4502/crx/de) and expand /etc/designs to see the node named "an-scf-sandbox".
 

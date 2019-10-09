@@ -5,7 +5,7 @@ description: This article presents an example of how to adapt a simple, existing
 seo-description: This article presents an example of how to adapt a simple, existing React component to work with the AEM SPA Editor.
 uuid: aebca2ea-a020-45e1-8043-f8c21154c660
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
@@ -53,7 +53,7 @@ The city can be updated in a dialog just like any other AEM component.
 
 The change is persisted and the component updates itself automatically with new weather data.
 
-![screen_shot_2018-06-08at143524](assets/screen_shot_2018-06-08at143524.png) 
+![screen_shot_2018-06-08at143524](assets/screen_shot_2018-06-08at143524.png)
 
 ### Weather Component Implementation {#weather-component-implementation}
 

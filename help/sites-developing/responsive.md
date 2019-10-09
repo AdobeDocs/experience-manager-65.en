@@ -5,7 +5,7 @@ description: With responsive design, the same pages can be effectively displayed
 seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
@@ -24,7 +24,7 @@ Design your web pages so that they adapt to the client viewport in which they ar
 * Layout: Use single-column layouts for smaller viewports, and multiple-column layouts for larger viewports.
 * Text size: Use larger text size (when appropriate, such as headings) in larger viewports.
 * Content: Include only the most important content when displaying on smaller devices.
-* Navigation: Device-specific tools are provided for accessing other pages. 
+* Navigation: Device-specific tools are provided for accessing other pages.
 * Images: Serving image renditions that are appropriate for the client viewport. according to the window dimensions.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
@@ -34,7 +34,7 @@ Develop Adobe Experience Manager (AEM) applications that generate HTML5 pages th
 * Maximum width of 480 pixels (phone, portrait)
 * Maximum width of 767 pixels (phone, landscape)
 * Width between 768 pixels and 979 pixels (tablet, portrait)
-* Width between 980 pixels and 1199 pixels (tablet, landscape) 
+* Width between 980 pixels and 1199 pixels (tablet, landscape)
 * Width of 1200px or greater (desktop)
 
 See the following topics for information about implementing responsive design behavior:
@@ -80,49 +80,49 @@ The We.Retail Media sample uses this strategy to define styles in the site desig
 
 The following table lists the files in the css child folder.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>File name</th> 
-   <th>Description</th> 
-   <th>Media Query</th> 
-  </tr> 
-  <tr> 
-   <td>style.css</td> 
-   <td>Common styles.</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>bootstrap.css</td> 
-   <td>Common styles, defined by Twitter Bootstrap.</td> 
-   <td>N/A</td> 
-  </tr> 
-  <tr> 
-   <td>responsive-1200px.css</td> 
-   <td>Styles for all media that are 1200 pixels wide or wider.</td> 
-   <td><p>@media (min-width: 1200px) {<br /> ...<br /> }</p> </td> 
-  </tr> 
-  <tr> 
-   <td>responsive-980px-1199px.css</td> 
-   <td>Styles for media that are between 980 pixels and 1199 pixels wide.</td> 
-   <td><p>@media (min-width: 980px) and (max-width: 1199px) {<br /> ...<br /> }</p> </td> 
-  </tr> 
-  <tr> 
-   <td>responsive-768px-979px.css</td> 
-   <td>Styles for media that are between 768 pixels and 979 pixels wide. </td> 
-   <td><p>@media (min-width: 768px) and (max-width: 979px) {<br /> ...<br /> }</p> </td> 
-  </tr> 
-  <tr> 
-   <td>responsive-767px-max.css</td> 
-   <td>Styles for all media that are less than 768 pixels wide.</td> 
-   <td><p>@media (max-width: 767px) {<br /> ...<br /> }</p> </td> 
-  </tr> 
-  <tr> 
-   <td>responsive-480px.css</td> 
-   <td>Styles for all media that are less than 481 pixels wide.</td> 
-   <td>@media (max-width: 480) {<br /> ...<br /> }</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>File name</th>
+   <th>Description</th>
+   <th>Media Query</th>
+  </tr>
+  <tr>
+   <td>style.css</td>
+   <td>Common styles.</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>bootstrap.css</td>
+   <td>Common styles, defined by Twitter Bootstrap.</td>
+   <td>N/A</td>
+  </tr>
+  <tr>
+   <td>responsive-1200px.css</td>
+   <td>Styles for all media that are 1200 pixels wide or wider.</td>
+   <td><p>@media (min-width: 1200px) {<br /> ...<br /> }</p> </td>
+  </tr>
+  <tr>
+   <td>responsive-980px-1199px.css</td>
+   <td>Styles for media that are between 980 pixels and 1199 pixels wide.</td>
+   <td><p>@media (min-width: 980px) and (max-width: 1199px) {<br /> ...<br /> }</p> </td>
+  </tr>
+  <tr>
+   <td>responsive-768px-979px.css</td>
+   <td>Styles for media that are between 768 pixels and 979 pixels wide. </td>
+   <td><p>@media (min-width: 768px) and (max-width: 979px) {<br /> ...<br /> }</p> </td>
+  </tr>
+  <tr>
+   <td>responsive-767px-max.css</td>
+   <td>Styles for all media that are less than 768 pixels wide.</td>
+   <td><p>@media (max-width: 767px) {<br /> ...<br /> }</p> </td>
+  </tr>
+  <tr>
+   <td>responsive-480px.css</td>
+   <td>Styles for all media that are less than 481 pixels wide.</td>
+   <td>@media (max-width: 480) {<br /> ...<br /> }</td>
+  </tr>
+ </tbody>
 </table>
 
 The css.txt file in the `/etc/designs/weretail/clientlibs` folder lists the CSS files that the client library folder includes. The order of the files implements style precedence. Styles are more specific as the device size decreases.
@@ -190,7 +190,7 @@ When working with AEM there are several methods of managing the configuration se
 For example, to create a ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` node in your application:
 
 * Parent folder: `/apps/application_name/config`
-* Name: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`  
+* Name: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
   The - `*alias*` suffix is required because the MobileEmulatorProvider service is a factory service. Use any alias that is unique for this factory.
 
@@ -260,10 +260,10 @@ The `picturefill.js` library requires HTML code that is similar to the following
 
 ```xml
 <div data-picture>
-    <div data-src='path to default image'></div> 
-    <div data-src='path to small image'    data-media="(media query for phone)"></div> 
-    <div data-src='path to medium image'   data-media="(media query for tablet)"></div> 
-    <div data-src='path to large image'     data-media="(media query for monitor)"></div>   
+    <div data-src='path to default image'></div>
+    <div data-src='path to small image'    data-media="(media query for phone)"></div>
+    <div data-src='path to medium image'   data-media="(media query for tablet)"></div>
+    <div data-src='path to large image'     data-media="(media query for monitor)"></div>
 </div>
 ```
 
@@ -271,9 +271,9 @@ When the page is rendered, picturefull.js inserts an `img` element as the last c
 
 ```xml
 <div data-picture>
-    <div data-src='path to default image'></div> 
-    <div data-src='path to small image'    data-media="(media query for phone)"></div> 
-    <div data-src='path to medium image'   data-media="(media query for tablet)"></div> 
+    <div data-src='path to default image'></div>
+    <div data-src='path to small image'    data-media="(media query for phone)"></div>
+    <div data-src='path to medium image'   data-media="(media query for tablet)"></div>
     <div data-src='path to large image'     data-media="(media query for monitor)"></div>
     <img src="path to medium image">
 </div>
@@ -304,9 +304,9 @@ The following example HTML selects from 2 DAM renditions of the same image.
 
 ```xml
 <div data-picture>
-    <div data-src='/content/dam/geometrixx-media/articles/meridien.png'></div> 
+    <div data-src='/content/dam/geometrixx-media/articles/meridien.png'></div>
     <div data-src='/content/dam/geometrixx-media/articles/meridien.png/jcr:content/renditions/cq5dam.thumbnail.319.319.png'    data-media="(min-width: 769px)"></div>
-    <div data-src='/content/dam/geometrixx-media/articles/meridien.png/jcr:content/renditions/cq5dam.thumbnail.140.100.png'   data-media="(min-width: 481px)"></div>  
+    <div data-src='/content/dam/geometrixx-media/articles/meridien.png/jcr:content/renditions/cq5dam.thumbnail.140.100.png'   data-media="(min-width: 481px)"></div>
 </div>
 ```
 
@@ -344,7 +344,7 @@ When the browser loads the page, it requests the image using the value of the sr
 
 The `image_0` node has a `jcr:resourceType` value of `foundation/components/image`, which has a `sling:resourceSuperType` value of `foundation/components/parbase`. The parbase component includes the img.GET.java script that matches the selector and the file name extension of the request URL. CQ uses this script (servlet) to render the image.
 
-To see the source code of the script, use CRXDE Lite to open the `/libs/foundation/components/parbase/img.GET.java`  
+To see the source code of the script, use CRXDE Lite to open the `/libs/foundation/components/parbase/img.GET.java`
 file.
 
 ## Scaling images for the current viewport size {#scaling-images-for-the-current-viewport-size}
@@ -410,10 +410,10 @@ The value of the `data-scr` attribute is a URL that Sling resolves to the Adapti
 The following HTML code is an example of the `div` elements that the JSP generates:
 
 ```xml
-<div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.320.low.jpg'></div> 
-    <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.320.medium.jpg'    data-media="(min-width: 320px)"></div> 
-    <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.480.medium.jpg'    data-media="(min-width: 321px)"></div> 
-    <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.476.high.jpg'     data-media="(min-width: 481px)"></div> 
+<div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.320.low.jpg'></div>
+    <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.320.medium.jpg'    data-media="(min-width: 320px)"></div>
+    <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.480.medium.jpg'    data-media="(min-width: 321px)"></div>
+    <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.476.high.jpg'     data-media="(min-width: 481px)"></div>
     <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.620.high.jpg'     data-media="(min-width: 769px)"></div>
     <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.full.high.jpg'     data-media="(min-width: 1025px)"></div>
 ```
@@ -470,32 +470,32 @@ Use the Web Console ([http://localhost:4502/system/console/configMgr](http://loc
 
 For information about how to configure AEM services, see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md).
 
-<table> 
- <tbody> 
-  <tr> 
-   <th> </th> 
-   <th>Web console</th> 
-   <th>sling:OsgiConfig</th> 
-  </tr> 
-  <tr> 
-   <th>Service or Node name</th> 
-   <td>The service name on the Configuration tab is Adobe CQ Adaptive Image Component Servlet</td> 
-   <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td> 
-  </tr> 
-  <tr> 
-   <th>Property</th> 
-   <td><p>Supported widths</p> 
-    <ul> 
-     <li>To add a supported width, click a + button and enter a positive integer.</li> 
-     <li>To remove a supported width, click the associated - button.</li> 
-     <li>To modify a supported width, edit the field value.</li> 
-    </ul> </td> 
-   <td><p>adapt.supported.widths</p> 
-    <ul> 
-     <li>The property is a multivalued String value.</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th> </th>
+   <th>Web console</th>
+   <th>sling:OsgiConfig</th>
+  </tr>
+  <tr>
+   <th>Service or Node name</th>
+   <td>The service name on the Configuration tab is Adobe CQ Adaptive Image Component Servlet</td>
+   <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td>
+  </tr>
+  <tr>
+   <th>Property</th>
+   <td><p>Supported widths</p>
+    <ul>
+     <li>To add a supported width, click a + button and enter a positive integer.</li>
+     <li>To remove a supported width, click the associated - button.</li>
+     <li>To modify a supported width, edit the field value.</li>
+    </ul> </td>
+   <td><p>adapt.supported.widths</p>
+    <ul>
+     <li>The property is a multivalued String value.</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Implementation details {#implementation-details}
@@ -511,7 +511,7 @@ The class uses Felix SCR annotations to configure the resource type and file ext
 @Properties(value = {
     @Property(name = "sling.servlet.resourceTypes", value = "foundation/components/adaptiveimage", propertyPrivate = true),
     @Property(name = "sling.servlet.selectors", value = "img", propertyPrivate = true),
-    @Property(name = "sling.servlet.extensions", value ={ 
+    @Property(name = "sling.servlet.extensions", value ={
             "jpg",
             "jpeg",
             "png",
@@ -649,7 +649,7 @@ The `AbstractImageServlet` class provides the `doGet` method that processes the 
 
 The `ImageReferenceModificationServlet` class overrides the `createLayer` method and implements the logic that determines the image resource to render. The method retrieves a child node of the page's `jcr:content` node named `image`. An [Image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/Image.html) object is created from this `image` node, and the `getFileReference` method returns the path to the image file from the `fileReference` property of the image node.
 
->[!NOTE] 
+>[!NOTE]
 >The [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) class provides the getFileReferencemethod.
 >
 
@@ -663,7 +663,7 @@ If you are not familiar with fluid grids, see the [Introduction to Fluid Grids](
 
 Use page components to generate the HTML elements that define the content blocks of the page. The ClientLibraryFolder that the page references provides the CSS that controls the layout of the content blocks:
 
-* Page component: Adds div elements that represent rows of content blocks. The div elements that represent content blocks include a parsys component where authors add content. 
+* Page component: Adds div elements that represent rows of content blocks. The div elements that represent content blocks include a parsys component where authors add content.
 * Client library folder: Provides the CSS file that includes media queries and styles for the div elements.
 
 For example, the sample geometrixx-media application contains the media-home component. This page component inserts two scripts, which generate two `div` elements of class `row-fluid`:
@@ -691,7 +691,7 @@ For example, the sample geometrixx-media application contains the media-home com
 ```
 
 >[!NOTE]
-> 
+>
 >When a component includes multiple `cq:include` elements that reference the parsys component, each `path` attribute must have a different value.
 >
 
@@ -727,12 +727,12 @@ The following example CSS is a subset of those styles. This subset focuses on `s
  .row-fluid .span4 {     width: 31.491712707182323%; }
 }
 
-@media (min-width: 1200px) {  
+@media (min-width: 1200px) {
  .span12 { width: 1170px }
- .span8 { width: 770px } 
- .span4 { width: 370px } 
- .row-fluid .span12 { width: 100% } 
- .row-fluid .span8 { width: 65.81196581196582% } 
+ .span8 { width: 770px }
+ .span4 { width: 370px }
+ .row-fluid .span12 { width: 100% }
+ .row-fluid .span8 { width: 65.81196581196582% }
  .row-fluid .span4 { width: 31.623931623931625% }
 }
 ```
@@ -812,7 +812,7 @@ For example, the `/apps/geometrixx-media/components/2-col-article-summary` compo
 
 The `.row-fluid .span6` selectors of the page's CSS applies to the `div` elements of the same class and structure in this HTML. However, the component also includes the /apps/geometrixx-media/components/2-col-article-summary/clientlibs client library folder:
 
-* The CSS uses the same media queries as the page component to establish changes in layout at the same discrete page widths. 
+* The CSS uses the same media queries as the page component to establish changes in layout at the same discrete page widths.
 * Selectors use the `multi-col-article-summary` class of the row `div` element to override the behavior of the page's `row-fluid` class.
 
 For example, the following styles are included in the `/apps/geometrixx-media/components/2-col-article-summary/clientlibs/css/responsive-480px.css` file:
@@ -858,13 +858,13 @@ For each range of viewport widths that you are targeting, use a static page widt
 
 Use grids to scale content blocks to adapt to different viewport sizes. Content blocks span a specific number of columns. As column widths increase or decrease to fit different viewport sizes, the width of the content blocks increase or decrease accordingly. Scaling can support both large- and medium-sized viewports that are wide enough to accommodate the side-by-side placement of content blocks.
 
-![](do-not-localize/chlimage_1-1.png) 
+![](do-not-localize/chlimage_1-1.png)
 
 #### Repositioning content in the grid {#repositioning-content-in-the-grid}
 
 The size of content blocks can be constrained by a minimum width, beyond which scaling is no longer effective. For smaller viewports, the grid can be used to vertically distribute blocks of content rather than horizontally.
 
-![](do-not-localize/chlimage_1-2.png) 
+![](do-not-localize/chlimage_1-2.png)
 
 ### Designing the grid {#designing-the-grid}
 

@@ -5,7 +5,7 @@ description: Learn about Adobe Classifications.
 seo-description: Learn about Adobe Classifications.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
@@ -87,45 +87,45 @@ In the default implementation SAINTDefaultTransformer, the child resources of th
 
 Properties include the following:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property path</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>transformer</td> 
-   <td>A class name of a SAINTTransformer implementation</td> 
-  </tr> 
-  <tr> 
-   <td>email</td> 
-   <td>Notification e-mail address.</td> 
-  </tr> 
-  <tr> 
-   <td>reportsuites</td> 
-   <td>Report suite IDs to run the import job for. </td> 
-  </tr> 
-  <tr> 
-   <td>dataset</td> 
-   <td>Dataset relation ID to run the import job for. </td> 
-  </tr> 
-  <tr> 
-   <td>description</td> 
-   <td>Job description. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>overwrite</td> 
-   <td>Flag to overwrite data collisions. Default is <strong>false</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td>checkdivisions</td> 
-   <td>Flag to check report suites for compatibility. Default is <strong>true</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td>deleteprocessed</td> 
-   <td>Flag to delete the processed nodes after export. Default is <strong>false</strong>.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property path</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>transformer</td>
+   <td>A class name of a SAINTTransformer implementation</td>
+  </tr>
+  <tr>
+   <td>email</td>
+   <td>Notification e-mail address.</td>
+  </tr>
+  <tr>
+   <td>reportsuites</td>
+   <td>Report suite IDs to run the import job for. </td>
+  </tr>
+  <tr>
+   <td>dataset</td>
+   <td>Dataset relation ID to run the import job for. </td>
+  </tr>
+  <tr>
+   <td>description</td>
+   <td>Job description. <br /> </td>
+  </tr>
+  <tr>
+   <td>overwrite</td>
+   <td>Flag to overwrite data collisions. Default is <strong>false</strong>.</td>
+  </tr>
+  <tr>
+   <td>checkdivisions</td>
+   <td>Flag to check report suites for compatibility. Default is <strong>true</strong>.</td>
+  </tr>
+  <tr>
+   <td>deleteprocessed</td>
+   <td>Flag to delete the processed nodes after export. Default is <strong>false</strong>.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Automating Adobe Classifications Export {#automating-adobe-classifications-export}

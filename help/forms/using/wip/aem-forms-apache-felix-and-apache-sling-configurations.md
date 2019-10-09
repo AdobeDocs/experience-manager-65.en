@@ -6,7 +6,7 @@ seo-description: This article explores all the Apache Felix/Apache Sling configu
 page-status-flag: never-activated
 uuid: 23e66061-1846-46c2-b856-d98753703fda
 contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 35e106f1-eba2-4f1c-9bf0-69c2e7217980
 ---
 
@@ -48,32 +48,32 @@ Assembler service lets you combine, rearrange, and augment PDF and XDP documents
 
 Assembler service depends on the Reader Extensions service, Signature service, Forms service, and Output service. Perform the following steps to ensure that above mentioned services are configured:
 
-1. Open AEM Bundles Web Console as an administrator. The default URL is `https://[server]:[port]/system/console/bundles`. 
+1. Open AEM Bundles Web Console as an administrator. The default URL is `https://[server]:[port]/system/console/bundles`.
 1. Search the services/bundles listed below and ensure that these services are up and running:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Service<br /> </th> 
-   <th>Bundle </th> 
-  </tr> 
-  <tr> 
-   <td>Signatures Service</td> 
-   <td>adobe-aemfd-signatures</td> 
-  </tr> 
-  <tr> 
-   <td>Reader Extensions Service</td> 
-   <td>com.adobe.aemfd.adobe-aemfd-readerextensions<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Forms Service</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Output Service</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Service<br /> </th>
+   <th>Bundle </th>
+  </tr>
+  <tr>
+   <td>Signatures Service</td>
+   <td>adobe-aemfd-signatures</td>
+  </tr>
+  <tr>
+   <td>Reader Extensions Service</td>
+   <td>com.adobe.aemfd.adobe-aemfd-readerextensions<br /> </td>
+  </tr>
+  <tr>
+   <td>Forms Service</td>
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td>
+  </tr>
+  <tr>
+   <td>Output Service</td>
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td>
+  </tr>
+ </tbody>
 </table>
 
 Barcoded Forms service extracts data from electronic images of barcodes. By default, the service starts scanning a barcode from all the sides (Top to bottom, left to right, bottom to top, and right to left). You can use the **AEMFD Barcoded Forms Service** configuration to limit the service to scan the barcode only from specified side. To configure the sides, navigate to AEM Web Console Configuration, open the AEMFD Barcoded Forms Service configuration, and change select the required sides.

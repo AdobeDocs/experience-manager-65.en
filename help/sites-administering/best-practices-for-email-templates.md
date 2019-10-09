@@ -5,7 +5,7 @@ description: Find best practices on creating email templates in AEM.
 seo-description: Find best practices on creating email templates in AEM.
 uuid: 714090bd-a742-4004-a968-aebd8fd03e04
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 topic-tags: best-practices
@@ -38,45 +38,45 @@ Use these best practices when creating your own newsletter.
 
 ***/libs/mcm/campaign/components/campaign_newsletterpage***
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Best practice</strong></td> 
-   <td><strong>Implementation</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p>Specify document type to ensure consistent rendering.</p> <p>Add DOCTYPE at the beginning (HTML or XHTML)</p> </td> 
-   <td><p>Is configurable by design changing the <i>cq:doctype</i> property in<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>The default is "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Can be changed to "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Specify character definition to ensure correct rendering of special characters.</p> <p>Add CHARSET declaration (e.g. iso-8859-15, UTF-8) to &lt;head&gt;</p> </td> 
-   <td><p>Is set to UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Code all structure using the &lt;table&gt;element. For more complicated layouts, you should nest tables to build complex structures.</p> <p>Email should look good even without css.</p> </td> 
-   <td><p>Tables are used throughout the whole template for structuring content. Currently using a maximum of four nested tables (1 base table + max. 3 nesting levels)</p> <p>&lt;div&gt; tags are only used in author mode to ensure proper component editing.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Use element attributes (such as cellpadding, valign, and width) to set table dimensions. This forces a box-model structure.</td> 
-   <td><p>All tables contain necessary attributes like <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i> and <i>width</i>.</p> <p>To harmonize element positioning inside tables, all table cells have the attribute <i>valign="top"</i> being set.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Account for mobile-friendliness, if possible. Use media queries to increase text sizes on small screens, provide thumb-sized hit areas for links.</p> <p>Make an email responsive if the design allows for it.</p> </td> 
-   <td>As far as CSS styles are being used to illustrate demo design, media queries are being used to offer a mobile friendly version.</td> 
-  </tr> 
-  <tr> 
-   <td>Inline CSS is better than putting all the CSS at the beginning.</td> 
-   <td><p>To better demonstrate the underlying HTML structure and ease the possibility to customize the newsletter structure only some CSS definitions have been inlined.</p> <p>Base styles and template variations have been extracted to a style block in the &lt;head&gt; of the page. On final submission of the newsletter these CSS definitions should be inlined into the HTML. An automatic inlinening mechansim is planned, but currently not available.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Keep your CSS simple. Avoid compound style declarations, shorthand code, CSS layout properties, complex selectors and pseudo-elements.</td> 
-   <td>As far as CSS styles are being used to illustrate demo design, the CSS recommendations are being followed.</td> 
-  </tr> 
-  <tr> 
-   <td>Emails should be 600-800 pixels maximum width. This will make them behave better within the preview-pane size provided by many clients.</td> 
-   <td>The <i>width</i> of content table is limited to 600px in demo design.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Best practice</strong></td>
+   <td><strong>Implementation</strong></td>
+  </tr>
+  <tr>
+   <td><p>Specify document type to ensure consistent rendering.</p> <p>Add DOCTYPE at the beginning (HTML or XHTML)</p> </td>
+   <td><p>Is configurable by design changing the <i>cq:doctype</i> property in<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>The default is "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Can be changed to "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
+  </tr>
+  <tr>
+   <td><p>Specify character definition to ensure correct rendering of special characters.</p> <p>Add CHARSET declaration (e.g. iso-8859-15, UTF-8) to &lt;head&gt;</p> </td>
+   <td><p>Is set to UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
+  </tr>
+  <tr>
+   <td><p>Code all structure using the &lt;table&gt;element. For more complicated layouts, you should nest tables to build complex structures.</p> <p>Email should look good even without css.</p> </td>
+   <td><p>Tables are used throughout the whole template for structuring content. Currently using a maximum of four nested tables (1 base table + max. 3 nesting levels)</p> <p>&lt;div&gt; tags are only used in author mode to ensure proper component editing.</p> </td>
+  </tr>
+  <tr>
+   <td>Use element attributes (such as cellpadding, valign, and width) to set table dimensions. This forces a box-model structure.</td>
+   <td><p>All tables contain necessary attributes like <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i> and <i>width</i>.</p> <p>To harmonize element positioning inside tables, all table cells have the attribute <i>valign="top"</i> being set.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Account for mobile-friendliness, if possible. Use media queries to increase text sizes on small screens, provide thumb-sized hit areas for links.</p> <p>Make an email responsive if the design allows for it.</p> </td>
+   <td>As far as CSS styles are being used to illustrate demo design, media queries are being used to offer a mobile friendly version.</td>
+  </tr>
+  <tr>
+   <td>Inline CSS is better than putting all the CSS at the beginning.</td>
+   <td><p>To better demonstrate the underlying HTML structure and ease the possibility to customize the newsletter structure only some CSS definitions have been inlined.</p> <p>Base styles and template variations have been extracted to a style block in the &lt;head&gt; of the page. On final submission of the newsletter these CSS definitions should be inlined into the HTML. An automatic inlinening mechansim is planned, but currently not available.</p> </td>
+  </tr>
+  <tr>
+   <td>Keep your CSS simple. Avoid compound style declarations, shorthand code, CSS layout properties, complex selectors and pseudo-elements.</td>
+   <td>As far as CSS styles are being used to illustrate demo design, the CSS recommendations are being followed.</td>
+  </tr>
+  <tr>
+   <td>Emails should be 600-800 pixels maximum width. This will make them behave better within the preview-pane size provided by many clients.</td>
+   <td>The <i>width</i> of content table is limited to 600px in demo design.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Images {#images}
@@ -94,21 +94,21 @@ Use these best practices when creating your own newsletter.
 
 /libs/mcm/campaign/components/heading, /libs/mcm/campaign/components/textimage
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Best Practice</strong></td> 
-   <td><strong>Implementation</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Use html &lt;font&gt; instead of style in CSS (font-family)</td> 
-   <td>The RichTextEditor (e.g. in textimage component) now supports choosing and applying font-families and font-sizes to selected texts. They will be rendered as &lt;font&gt; tags.</td> 
-  </tr> 
-  <tr> 
-   <td>Use basic, cross-platform fonts such as <i>Arial, Verdana, Georgia</i> and <i>Times New Roman</i>.</td> 
-   <td><p>Depends on newsletter design.</p> <p>For the demo design the font "Helvetica" is used, but will fall back to generic sans-serif font, if not present.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Best Practice</strong></td>
+   <td><strong>Implementation</strong></td>
+  </tr>
+  <tr>
+   <td>Use html &lt;font&gt; instead of style in CSS (font-family)</td>
+   <td>The RichTextEditor (e.g. in textimage component) now supports choosing and applying font-families and font-sizes to selected texts. They will be rendered as &lt;font&gt; tags.</td>
+  </tr>
+  <tr>
+   <td>Use basic, cross-platform fonts such as <i>Arial, Verdana, Georgia</i> and <i>Times New Roman</i>.</td>
+   <td><p>Depends on newsletter design.</p> <p>For the demo design the font "Helvetica" is used, but will fall back to generic sans-serif font, if not present.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Generic {#generic}
@@ -129,7 +129,7 @@ To offer a solid base and to broaden the variety of content flow possibilities, 
 
 All have a **header**, a **footer** and a **body** section. Below the body section, each template differs in **column design** (1, 2 or 3 columns).
 
-![chlimage_1-318](assets/chlimage_1-318.png) 
+![chlimage_1-318](assets/chlimage_1-318.png)
 
 ### Components {#components}
 

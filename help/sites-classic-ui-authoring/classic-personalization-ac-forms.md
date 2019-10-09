@@ -5,7 +5,7 @@ description: AEM lets you create and use forms that interact with Adobe Campaign
 seo-description: AEM lets you create and use forms that interact with Adobe Campaign on your website. Specific fields can be inserted into your forms and mapped to the Adobe Campaign database.
 uuid: 7b1028f3-268a-4d4d-bc9f-acd176f5ef3d
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
@@ -113,7 +113,7 @@ After you create a form and edit form content, you may want to manually test tha
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. In Components, select Adobe Campaign so only those componente are visible. 
+>You must have an **Encryted Primary Key** component on each form. In Components, select Adobe Campaign so only those componente are visible.
 >
 >Although in this procedure you enter the epk number manually, in practice, users would get a link to this page (whether to unsubscribe, subscribe, or update your profile) within a newsletter. Based on the user, the epk automatically updates.
 >

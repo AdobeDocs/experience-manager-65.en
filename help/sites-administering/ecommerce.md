@@ -1,11 +1,11 @@
 ---
 title: eCommerce
 seo-title: eCommerce
-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints. 
-seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints. 
+description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
+seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
@@ -37,7 +37,7 @@ eCommerce, together with Product Information Management (PIM), handles the activ
 * Creation, lifetime, and obsolescence of a product
 * Price management
 * Transaction management
-* Management of entire catalogs  
+* Management of entire catalogs
 * Live and centralized storage records
 * Web interfaces
 
@@ -66,9 +66,9 @@ AEM eCommerce provides:
 
 * A number of **out-of-the-box AEM components** to illustrate what can be achieved for your project:
 
-    * Product display 
-    * Shopping cart 
-    * Check-out 
+    * Product display
+    * Shopping cart
+    * Check-out
     * Recently viewed products
     * Vouchers
     * and others
@@ -83,7 +83,7 @@ AEM eCommerce provides:
 
     * the AEM search
     * the search of the eCommerce system
-    * a third party search (such as Search&Promote) 
+    * a third party search (such as Search&Promote)
     * or a combination thereof.
 
   ![chlimage_1-151](assets/chlimage_1-151.png)
@@ -98,7 +98,7 @@ AEM eCommerce provides:
 
 * The possibility to develop **experience-driven commerce based on shopper data and activity**. This allows you to realize many scenarios:
 
-    * One example might be providing reductions in shipping costs when the total order exceeds a specific amount. 
+    * One example might be providing reductions in shipping costs when the total order exceeds a specific amount.
     * Another might allow you to provide seasonal offers that use profile data (e.g. location). These can then be highlighted, again depending on other factors when necessary.
 
   In the example below one teaser is shown as the contents of the cart are less than $75:
@@ -112,7 +112,7 @@ AEM eCommerce provides:
 * And other features including:
 
     * Shopping cart contents retained across sessions
-    * Full order history 
+    * Full order history
     * Express catalog update
 
 ## The Framework {#the-framework}
@@ -123,7 +123,7 @@ The [Concepts](/help/sites-administering/concepts.md) section covers the framewo
 
 * The integration framework provides the API, a range of components to illustrate functionality and several extensions to provide examples of connection methods.
 * The framework provides the basic structure needed for a project implementation.
-* The framework is extensible.  
+* The framework is extensible.
 * The framework does not provide an out-of-the-box, ready-to-use site. A certain amount of development work is always needed to adapt the framework to your specifications.
 
 ### Why? {#why}

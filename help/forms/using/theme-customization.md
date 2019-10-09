@@ -6,7 +6,7 @@ seo-description: How to customize the theme of your AEM Forms app.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 ---
@@ -15,8 +15,8 @@ discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 
 You can customize the HTML code and CSS file to provide a distinct organization-specific look and feel to AEM Forms app. For example, you can change the background color and height of tasks or Startpoints. The following example provides instructions to change:
 
-* display instructions in place of the description  
-* number of display routes  
+* display instructions in place of the description
+* number of display routes
 * background gradient color
 
 ## Steps {#steps}
@@ -24,7 +24,7 @@ You can customize the HTML code and CSS file to provide a distinct organization-
 1. Open your project.
 
     * For iOS, open `Capture.xcodeproj` in Xcode
-    * For Android, open the Android project in Eclipse. 
+    * For Android, open the Android project in Eclipse.
     * For Windows, open `MWSWindows.sln` in Visual Studio.
 
 1. Navigate to the templates folder.
@@ -41,7 +41,7 @@ You can customize the HTML code and CSS file to provide a distinct organization-
                   <div class="description_details">
                     <%= task.description %>
                   </div>
-                 <%} else 
+                 <%} else
    ```
 
    Replace it with `<%`.
@@ -72,8 +72,8 @@ You can customize the HTML code and CSS file to provide a distinct organization-
     * In Eclipse, navigate to **assets &gt; www &gt; wsmobile &gt; css**.
     * In Visual Studio, navigate to **MWSWindows &gt; www &gt; wsmobile &gt; css**.
 
-1. 
-   Open the `_style.css` file for editing.  
+1.
+   Open the `_style.css` file for editing.
 1. For Background image, change `#323232` to `#fff`.
 1. Save the changes and close `_style.css` file.
 1. Open the AEM Forms app.

@@ -5,7 +5,7 @@ description: You need to specify the processing server URL before you submit a f
 seo-description: You need to specify the processing server URL before you submit a form.
 uuid: 2b415c99-275b-4b67-bb8e-35329514ecbb
 contentOwner: amgoyal
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
 ---
@@ -23,7 +23,7 @@ This article describes how to configure **AEM DS Settings Service**. This settin
 
 Following are the steps to configure the **[!UICONTROL AEM DS Settings]**:
 
-1. Open the Configuration Manager on the publish instance using the URL: 
+1. Open the Configuration Manager on the publish instance using the URL:
 
    *http://localhost:port/system/console/configMgr*.
 

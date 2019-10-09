@@ -5,7 +5,7 @@ description: Key focus areas around AEM configuration, changes to hardware, soft
 seo-description: Key focus areas around AEM configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of AEM Assets.
 uuid: b5746549-34bf-4fb3-bb67-05c0380d4a07
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 6e454056-96cf-4269-9bed-e6b96c480388
@@ -112,7 +112,7 @@ Adobe recommends enabling HTTPS because many companies have firewalls that sniff
 
 Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your AEM instance. Common configuration options, including firewalls or proxies can help improve network performance. Here are some key points to bear in mind:
 
-* Depending upon your instance type (small, moderate, large), ensure that you have sufficient network bandwidth for your AEM instance. Adequate bandwidth allocation is especially important if AEM is hosted on AWS. 
+* Depending upon your instance type (small, moderate, large), ensure that you have sufficient network bandwidth for your AEM instance. Adequate bandwidth allocation is especially important if AEM is hosted on AWS.
 * If your AEM instance is hosted on AWS, you can benefit by having a versatile scaling policy. Upsize the instance if users expect high load. Downsize it for moderate/low load.
 * HTTPS: Most users have firewalls that sniff HTTP traffic, which can adversely impact uploading of files or even corrupt files during the upload operation.
 * Large file uploads: Ensure that users have wired connections to the network (WiFi connections saturate quickly).
@@ -127,7 +127,7 @@ Wherever possible, set the DAM Update Asset workflow to Transient. The setting s
 >
 >By default, the DAM Update Asset workflow is set to Transient in AEM 6.3. In this case, you can skip the following procedure.
 
-1. Open `http://localhost:4502/miscadmin` on the AEM instance you want to configure.  
+1. Open `http://localhost:4502/miscadmin` on the AEM instance you want to configure.
 
 1. From the navigation tree, expand **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 1. Double-click **[!UICONTROL DAM Update Asset]**.
@@ -172,9 +172,9 @@ The DAM Update Asset workflow contains a full suite of steps that are configured
 >
 >Running the DAM Update Asset workflow intensively can sharply increase the size of your file datatastore. Results of an experiment performed by Adobe have shown that the datastore size can increase by approximately 400 GB if around 5500 workflows are performed within 8 hours.
 >
->It is a temporary increase, and the datastore is restored to its original size after you run the datastore garbage collection task. 
+>It is a temporary increase, and the datastore is restored to its original size after you run the datastore garbage collection task.
 >
->Typically, the datastore garbage collection task runs weekly along with other scheduled maintenance tasks. 
+>Typically, the datastore garbage collection task runs weekly along with other scheduled maintenance tasks.
 >
 >If you have a limited disk space and run DAM Update Asset workflows intensively, consider scheduling the garbage collection task more frequently.
 
@@ -219,7 +219,7 @@ In addition, set the path of ImageMagick's temporary folder in the *configure.xm
 >
 >If you are using AEM on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files.
 
-<!-- 
+<!--
 
 #### Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
@@ -240,11 +240,11 @@ To disable Page Extraction:
 1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Launchers]** tab
-1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model 
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model
 1. Click **[!UICONTROL Edit]**
 1. Select **[!UICONTROL Disable]**
 1. Click **[!UICONTROL OK]**
-1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model
 
 -->
 
@@ -302,34 +302,34 @@ Update index configurations to improve reindexing time:
 
 1. Browse to */oak:index/ntBaseLucene/indexRules/nt:base/properties*
 1. Add two nt:unstructured nodes **[!UICONTROL slingResource]** and **[!UICONTROL damResolvedPath]** under */oak:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Set the properties below on the nodes (where ordered and propertyIndex properties are of type *Boolean*: 
+1. Set the properties below on the nodes (where ordered and propertyIndex properties are of type *Boolean*:
 
-   slingResource  
+   slingResource
 
-   name="sling:resource"  
+   name="sling:resource"
 
-   ordered=false  
+   ordered=false
 
-   propertyIndex= true 
+   propertyIndex= true
 
-   type="String" 
+   type="String"
 
-   damResolvedPath 
+   damResolvedPath
 
-   name="dam:resolvedPath" 
+   name="dam:resolvedPath"
 
-   ordered=false 
+   ordered=false
 
-   propertyIndex=true 
+   propertyIndex=true
 
    type="String"
 
 1. On the /oak:index/ntBaseLucene node, set the property *reindex=true*
 1. Click **[!UICONTROL Save All]**
-1. Monitor the error.log to see when indexing is completed: 
+1. Monitor the error.log to see when indexing is completed:
 
    Reindexing completed for indexes: [/oak:index/ntBaseLucene]
-   
+
 1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
 1. Once indexing is completed then go back to CRXDe and set the **[!UICONTROL type]** property to disabled on these two indexes
 

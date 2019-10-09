@@ -5,7 +5,7 @@ description: Programmatically query Forms Manager to retrieve a filtered list of
 seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 ---
@@ -18,104 +18,104 @@ To search forms using the REST API, send a GET request to the server at `https:/
 
 ## Query parameters {#query-parameters}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Attribute name<br /> </strong></td> 
-   <td><strong>Description<br /> </strong></td> 
-  </tr> 
-  <tr> 
-   <td>func<br /> </td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Attribute name<br /> </strong></td>
+   <td><strong>Description<br /> </strong></td>
+  </tr>
+  <tr>
+   <td>func<br /> </td>
    <td><p>Specifies the function to call. To search forms, set value of the <code>func </code>attribute to <code>searchForms</code>.</p> <p>For example, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Note:</strong> <em>This parameter is mandatory.</em><br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td>appPath<br /> </td> 
-   <td><p>Specifies the application path to search for forms. By default, the appPath attribute searches all the applications available at the root node level.<br /> </p> <p>You can specify multiple application paths in a single search query. Separate multiple paths with pipe (|) character. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>cutPoints<br /> </td> 
-   <td><p>Specifies the properties to fetch with the assets. You can use asterisk (*) to fetch all the properties at once. Use the pipe (|) operator to specify multiple properties. </p> <p>For example, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Note</strong>: </p> 
-    <ul> 
-     <li><em>Properties such as id, path, and name are always fetched. </em></li> 
-     <li><em>Every asset has a different set of properties. Properties such as formUrl, pdfUrl, and guideUrl do not depend on the cutpoints attribute. These properties depend on the asset type and are fetched accordingly. </em></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>relation<br /> </td> 
-   <td>Specifies the related assets to fetch along with the search results. You can choose one of the following options to fetch related assets: 
-    <ul> 
-     <li><strong>NO_RELATION</strong>: Do not fetch related assets.</li> 
-     <li><strong>IMMEDIATE</strong>: Fetches assets that are directly related to search results.</li> 
-     <li><strong>ALL</strong>: Fetch directly and indirectly related assets.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>maxSize</td> 
-   <td>Specifies the maximum number of forms to fetch.</td> 
-  </tr> 
-  <tr> 
-   <td>offset</td> 
-   <td>Specifies the number of forms to skip from the start.</td> 
-  </tr> 
-  <tr> 
-   <td>returnCount</td> 
-   <td>Specifies whether to return the search results that match the given criteria or not. </td> 
-  </tr> 
-  <tr> 
-   <td>statements</td> 
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Note:</strong> <em>This parameter is mandatory.</em><br /> </p> </td>
+  </tr>
+  <tr>
+   <td>appPath<br /> </td>
+   <td><p>Specifies the application path to search for forms. By default, the appPath attribute searches all the applications available at the root node level.<br /> </p> <p>You can specify multiple application paths in a single search query. Separate multiple paths with pipe (|) character. </p> </td>
+  </tr>
+  <tr>
+   <td>cutPoints<br /> </td>
+   <td><p>Specifies the properties to fetch with the assets. You can use asterisk (*) to fetch all the properties at once. Use the pipe (|) operator to specify multiple properties. </p> <p>For example, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Note</strong>: </p>
+    <ul>
+     <li><em>Properties such as id, path, and name are always fetched. </em></li>
+     <li><em>Every asset has a different set of properties. Properties such as formUrl, pdfUrl, and guideUrl do not depend on the cutpoints attribute. These properties depend on the asset type and are fetched accordingly. </em></li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>relation<br /> </td>
+   <td>Specifies the related assets to fetch along with the search results. You can choose one of the following options to fetch related assets:
+    <ul>
+     <li><strong>NO_RELATION</strong>: Do not fetch related assets.</li>
+     <li><strong>IMMEDIATE</strong>: Fetches assets that are directly related to search results.</li>
+     <li><strong>ALL</strong>: Fetch directly and indirectly related assets.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>maxSize</td>
+   <td>Specifies the maximum number of forms to fetch.</td>
+  </tr>
+  <tr>
+   <td>offset</td>
+   <td>Specifies the number of forms to skip from the start.</td>
+  </tr>
+  <tr>
+   <td>returnCount</td>
+   <td>Specifies whether to return the search results that match the given criteria or not. </td>
+  </tr>
+  <tr>
+   <td>statements</td>
    <td><p>Specifies the list of statements. The queries are executes on the list of the statements specified in the JSON format. </p> <p>For example,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
-       statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>In the above example, </p> 
-    <ul> 
-     <li><strong>name</strong>: specifies the name of the property to search for.</li> 
-     <li><strong>value</strong>: specifies the value of the property to search for.</li> 
-     <li><strong>operator</strong>: specifies the operator to apply while searching. The following operators are supported: 
-      <ul> 
-       <li>EQ - Equal to </li> 
-       <li>NEQ - Not equal to</li> 
-       <li>GT - Greater than</li> 
-       <li>LT - Less than</li> 
-       <li>GTEQ - Greater than or equal to</li> 
-       <li>LTEQ - Less than or equal to</li> 
-       <li>CONTAINS - A contains B if B is a part of A</li> 
-       <li>FULLTEXT - Full text search</li> 
-       <li>STARTSWITH - A starts with B if B is the beginning part of A</li> 
-       <li>ENDSWITH - A ends with B if B is the ending part of A</li> 
-       <li>LIKE - Implements the LIKE operator</li> 
-       <li>AND - Combine multiple statements</li> 
-      </ul> <p><strong>Note:</strong> <em>GT, LT, GTEQ, and LTEQ operators are applicable for properties of linear type such as LONG, DOUBLE, and DATE.</em></p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>orderings<br /> </td> 
+       statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>In the above example, </p>
+    <ul>
+     <li><strong>name</strong>: specifies the name of the property to search for.</li>
+     <li><strong>value</strong>: specifies the value of the property to search for.</li>
+     <li><strong>operator</strong>: specifies the operator to apply while searching. The following operators are supported:
+      <ul>
+       <li>EQ - Equal to </li>
+       <li>NEQ - Not equal to</li>
+       <li>GT - Greater than</li>
+       <li>LT - Less than</li>
+       <li>GTEQ - Greater than or equal to</li>
+       <li>LTEQ - Less than or equal to</li>
+       <li>CONTAINS - A contains B if B is a part of A</li>
+       <li>FULLTEXT - Full text search</li>
+       <li>STARTSWITH - A starts with B if B is the beginning part of A</li>
+       <li>ENDSWITH - A ends with B if B is the ending part of A</li>
+       <li>LIKE - Implements the LIKE operator</li>
+       <li>AND - Combine multiple statements</li>
+      </ul> <p><strong>Note:</strong> <em>GT, LT, GTEQ, and LTEQ operators are applicable for properties of linear type such as LONG, DOUBLE, and DATE.</em></p> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>orderings<br /> </td>
    <td><p>Specifies the order criteria for the search results. The criteria is defined in the JSON format. You can sort search results on more than one field. The results are sorted in the order as the fields appear in the query.</p> <p>For example,</p> <p>To retrieve query results ordered by title property in the ascending order, add following parameter: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
        orderingsArray.put(orderings);
-       entityBuilder.add("orderings", orderingsArray.toString());</code></p> 
-    <ul> 
-     <li><strong>name</strong>: Specifies the name of the property to use to order the search results.</li> 
-     <li><strong>criteria</strong>: Specifies the order of the results. The order attribute accepts following values: 
-      <ul> 
-       <li>ASC - Use ASC to arrange results in the ascending order.<br /> </li> 
-       <li>DES - Use DES to arrange results in the descending order.</li> 
-      </ul> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>includeXdp</td> 
-   <td>Specifies whether to retrieve the binary content or not. The <code>includeXdp</code> attribute is applicable for assets of type <code>FORM</code>, <code>PDFFORM</code>, and <code>PRINTFORM</code>.</td> 
-  </tr> 
-  <tr> 
-   <td>assetType</td> 
-   <td>Specifies the asset types to retrieve from all the published assets. Use the pipe (|) operator to specify multiple asset types. Valid asset types are FORM, PDFFORM, PRINTFORM, RESOURCE, and GUIDE.</td> 
-  </tr> 
- </tbody> 
+       entityBuilder.add("orderings", orderingsArray.toString());</code></p>
+    <ul>
+     <li><strong>name</strong>: Specifies the name of the property to use to order the search results.</li>
+     <li><strong>criteria</strong>: Specifies the order of the results. The order attribute accepts following values:
+      <ul>
+       <li>ASC - Use ASC to arrange results in the ascending order.<br /> </li>
+       <li>DES - Use DES to arrange results in the descending order.</li>
+      </ul> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>includeXdp</td>
+   <td>Specifies whether to retrieve the binary content or not. The <code>includeXdp</code> attribute is applicable for assets of type <code>FORM</code>, <code>PDFFORM</code>, and <code>PRINTFORM</code>.</td>
+  </tr>
+  <tr>
+   <td>assetType</td>
+   <td>Specifies the asset types to retrieve from all the published assets. Use the pipe (|) operator to specify multiple asset types. Valid asset types are FORM, PDFFORM, PRINTFORM, RESOURCE, and GUIDE.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Sample request {#sample-request}

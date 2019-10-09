@@ -5,7 +5,7 @@ description: This page serves as a landing for Administering AEM Screens. Follow
 seo-description: This page serves as a landing for Administering AEM Screens. Follow this page to learn about administrative roles associated with AEM Screens.
 uuid: 7aa5b6dd-6050-4620-9785-c7ff0360ec81
 contentOwner: Jyotika Syal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: administering
 discoiquuid: 7903e83b-427f-445a-a257-6aa2c4261632
@@ -20,8 +20,8 @@ An Administrator is responsible for installation and configuration, monitoring (
 An AEM Screens administrator is responsible for the following tasks:
 
 * [Installation and Configuration](configuring-screens-introduction.md)
-* [Device Registration](device-registration.md)  
-* [Setting up ACLs](setting-up-acls.md)  
+* [Device Registration](device-registration.md)
+* [Setting up ACLs](setting-up-acls.md)
 * [Implementing Chrome OS Player](implementing-chrome-os-player.md)
 * [Implementing Android Player](implementing-android-player.md)
 * [Implementing Windows 10 Player](implementing-windows-player.md)

@@ -94,7 +94,7 @@ Before you begin to install and configure Forms-centric workflow on OSGi, ensure
 AEM Forms add-on package is an application deployed onto AEM. The package contains Forms-centric workflow on OSGi and other capabilities. Perform the following steps to install the add-on package:
 
 1. Log in to the [AEM server](http://localhost:4502) as an administrator and open [package share](http://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
-1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **AEM 6.4 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
+1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
 
    You can also use the version number to search an add-on package. For version number of the latest package, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
 

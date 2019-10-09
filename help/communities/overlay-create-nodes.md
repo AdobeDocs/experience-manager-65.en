@@ -1,11 +1,11 @@
 ---
 title: Create Nodes
 seo-title: Create Nodes
-description: Overlay the comments system 
-seo-description: Overlay the comments system 
+description: Overlay the comments system
+seo-description: Overlay the comments system
 uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
@@ -88,5 +88,5 @@ The overlay's own `Type`(property `sling:resourceType`) must be a relative self-
 1. Select the green `[+] Add`
    * Select **[!UICONTROL Save All]**
 
-![chlimage_1-4](assets/chlimage_1-4.png) 
+![chlimage_1-4](assets/chlimage_1-4.png)
 

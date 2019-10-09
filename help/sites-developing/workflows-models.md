@@ -5,7 +5,7 @@ description: You create a workflow model to define the series of steps executed 
 seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
 uuid: 53d94176-4d5f-4ab3-9628-6b7d44f81139
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 9d2dba11-0d2d-4aed-b941-c8ade9bb7bfa
@@ -27,9 +27,9 @@ When you first create a new workflow model it contains:
 
 * The steps, **[!UICONTROL Flow Start]** and **[!UICONTROL Flow End]**.
 
-  These represent the beginning and end of the workflow. These steps are required and cannot be edited or removed. 
+  These represent the beginning and end of the workflow. These steps are required and cannot be edited or removed.
 
-* An example **Participant** step named **Step 1**. 
+* An example **Participant** step named **Step 1**.
 
   This step is configured to assign a work item to the workflow initiator. Edit or delete this step, and add steps as required.
 
@@ -50,7 +50,7 @@ To create a new workflow with the editor:
 >
 >If creating models programmatically (using a crx package) you can also create a sub-folder within:
 >
->`/var/workflow/models`   
+>`/var/workflow/models`
 
 >
 >For example, `/var/workflow/models/prototypes`
@@ -79,13 +79,13 @@ When the changes are synchronized with the runtime (saved) model, **[!UICONTROL 
 
 Some steps have mandatory fields and/or built in validation. When these conditions are not satisfied an error will be shown when you attempt to **[!UICONTROL Sync]** the model. For example, when no participant has been defined for a **[!UICONTROL Participant]** step:
 
-![wf-21](assets/wf-21.png) 
+![wf-21](assets/wf-21.png)
 
 ### Editing a Default or Legacy Workflow for the First Time {#editing-a-default-or-legacy-workflow-for-the-first-time}
 
 When you open a [Default and/or Legacy model](/help/sites-developing/workflows.md#workflow-types) for editing:
 
-* The **[!UICONTROL Steps]** browser is not available (left side).  
+* The **[!UICONTROL Steps]** browser is not available (left side).
 * There is an **[!UICONTROL Edit]** action available in the toolbar (right side).
 * Initially the model, and its properties, is presented in read-only mode as:
 
@@ -102,7 +102,7 @@ Selecting **[!UICONTROL Edit]** will:
 >
 >See [Locations of Workflow Models](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) for further information.
 
-![wf-22](assets/wf-22.png) 
+![wf-22](assets/wf-22.png)
 
 ### Adding a Step to a Model {#adding-a-step-to-a-model}
 
@@ -118,7 +118,7 @@ When you edit a model, the available steps appear in the various groups of the *
 
 **To add a step to a model**:
 
-1. Open an existing workflow model for editing. From the **[!UICONTROL Workflows Model]** console, select the required model, then **[!UICONTROL Edit]**. 
+1. Open an existing workflow model for editing. From the **[!UICONTROL Workflows Model]** console, select the required model, then **[!UICONTROL Edit]**.
 1. Open the **[!UICONTROL Steps]** browser; using **[!UICONTROL Toggle Side Panel]**, at the far left of the top toolbar. Here you can:
 
     * **[!UICONTROL Filter]** for specific steps.
@@ -210,7 +210,7 @@ If a workflow model that is present in Classic UI but is missing in the selectio
 You can configure a workflow model for [Multi Resource Support](/help/sites-developing/workflows.md#multi-resource-support) when creating a new model, or by editing an existing one:
 
 1. Open the workflow model for [editing](#editing-a-workflow).
-1. Select **[!UICONTROL Workflow Model Properties]** from the toolbar.  
+1. Select **[!UICONTROL Workflow Model Properties]** from the toolbar.
 
 1. In the dialog box, activate **[!UICONTROL Multi Resource Support]** (or deactivate if required):
 
@@ -269,9 +269,9 @@ To define **[!UICONTROL Stages]** for your workflow:
     1. Specify the **[!UICONTROL Package Name]**, and any other details as required.
     1. Click **[!UICONTROL OK]**.
 
-1. Click **[!UICONTROL Edit]** on the toolbar of your new package.  
+1. Click **[!UICONTROL Edit]** on the toolbar of your new package.
 
-1. Open the **[!UICONTROL Filters]** tab.  
+1. Open the **[!UICONTROL Filters]** tab.
 
 1. Select **[!UICONTROL Add Filter]** and specify the path of your workflow model *design*:
 
@@ -312,7 +312,7 @@ It is a good practice when testing a workflow to use a variety of payload types;
 For example, test your new workflow as follows:
 
 1. [Start your workflow model](/help/sites-administering/workflows-starting.md) from the console.
-1. Define the **[!UICONTROL Payload]** and confirm.  
+1. Define the **[!UICONTROL Payload]** and confirm.
 
 1. Take actions as required so that the workflow proceeds.
 1. Monitor the log files while the workflow is running.
@@ -406,8 +406,8 @@ To define an OR rule:
 1. Edit the workflow and add the **[!UICONTROL OR Split]** to the model.
 1. Edit the properties of **[!UICONTROL Branch 1]** of the **[!UICONTROL OR Split]**:
 
-    * Define this as the **[!UICONTROL Default Route]** by setting the **[!UICONTROL Value]** to `true`. 
-    * As **[!UICONTROL Rule]**, set the path to the script. For example: 
+    * Define this as the **[!UICONTROL Default Route]** by setting the **[!UICONTROL Value]** to `true`.
+    * As **[!UICONTROL Rule]**, set the path to the script. For example:
 
       `/apps/myapp/workflow/scripts/myscript1.ecma`
 
@@ -444,7 +444,7 @@ function check() {
        return true;
       } else {
        return false;
-      } 
+      }
      } else {
       return false;
      }

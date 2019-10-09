@@ -6,7 +6,7 @@ seo-description: Learn how to use SSL by Default in AEM.
 uuid: 262474b0-f5fa-4cff-8727-9f39c5b5f760
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 ---
@@ -62,7 +62,7 @@ You can use the following payload in your POST to automate configuration:
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="keystorePassword"
- 
+
 test
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="keystorePasswordConfirm"
@@ -76,11 +76,11 @@ test
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="privatekeyFile"; filename="server.der"
 Content-Type: application/x-x509-ca-cert
- 
+
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="certificateFile"; filename="server.crt"
 Content-Type: application/x-x509-ca-cert
- 
+
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="httpsPort"
 8443
@@ -198,17 +198,17 @@ You can also automate the SSL configuration by using the cURL tool. You can do t
 
 Below are the parameters you can use in order to change the various settings in the configuration wizard:
 
-* `-F "keystorePassword=password"` - the keystore password;  
+* `-F "keystorePassword=password"` - the keystore password;
 
-* `-F "keystorePasswordConfirm=password"` - confirm the keystore password;  
+* `-F "keystorePasswordConfirm=password"` - confirm the keystore password;
 
-* `-F "truststorePassword=password"` - the truststore password;  
+* `-F "truststorePassword=password"` - the truststore password;
 
-* `-F "truststorePasswordConfirm=password"` - confirm the truststore password;  
+* `-F "truststorePasswordConfirm=password"` - confirm the truststore password;
 
-* `-F "privatekeyFile=@localhostprivate.der"` - specify the private key;  
+* `-F "privatekeyFile=@localhostprivate.der"` - specify the private key;
 
-* `-F "certificateFile=@localhost.crt"` - specify the certificate;  
+* `-F "certificateFile=@localhost.crt"` - specify the certificate;
 
 * `-F "httpsHostname=host.example.com"`- specify the hostname;
 * `-F "httpsPort=8443"` - the port the HTTPS listener will work on.
@@ -231,5 +231,5 @@ You can send the servlet a chain of certificates by repeating the certificateFil
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:  
+Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)

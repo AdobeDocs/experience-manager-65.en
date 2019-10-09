@@ -6,7 +6,7 @@ seo-description: An adaptive form theme is an AEM client library that you use to
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
 topic-tags: customization
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 ---
 
@@ -28,7 +28,7 @@ An **adaptive form theme** is an AEM client library that you use to define the s
 
 You create an **adaptive template** and apply the theme to the template. You then use this custom template to create an **adaptive form**.
 
-![Adaptive Form and Client Library](assets/hierarchy.png) 
+![Adaptive Form and Client Library](assets/hierarchy.png)
 
 ## To create an adaptive form theme {#to-create-an-adaptive-form-theme}
 
@@ -57,8 +57,8 @@ You create an **adaptive template** and apply the theme to the template. You the
 
     * `less` folder: Contains the `less` variable files in which you define the `less` variables and `less mixins` that are used to manage the .css styles.
 
-      This folder consists of `less` variable files, `less` mixin files, `less` files defining styles using mixins and variables. And all these less files are then imported in styles.less. 
-    
+      This folder consists of `less` variable files, `less` mixin files, `less` files defining styles using mixins and variables. And all these less files are then imported in styles.less.
+
     * `css`folder: Contains the .css files in which you define the static styles to be used in the theme.
 
    **Less variables files**: These are the files, where you define or override the variables that are used in defining CSS styles.
@@ -92,8 +92,8 @@ You create an **adaptive template** and apply the theme to the template. You the
 
     1. Import default adaptive form variables:
 
-       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less` 
-    
+       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
+
     1. Then import the less file that includes overridden variables.
 
    Sample new variable definitions:
@@ -123,7 +123,7 @@ You create an **adaptive template** and apply the theme to the template. You the
      -o-border-radius: @radius;
      border-radius: @radius;
    }
-   
+
    .border(@color, @type, @size) {
       border: @color @size @type;
    }
@@ -146,9 +146,9 @@ You create an **adaptive template** and apply the theme to the template. You the
    @import "forestTheme-variables";
    @import "../../../clientlibs/fd/af/guidetheme/common/less/components.less";
    @import "../../../clientlibs/fd/af/guidetheme/common/less/layouts.less";
-   
+
    /* custom styles */
-   
+
    .guidetoolbar {
      input[type="button"], button, .button {
        .rounded-corners (@button-radius);
@@ -160,7 +160,7 @@ You create an **adaptive template** and apply the theme to the template. You the
        }
      }
    }
-   
+
    form {
        background-image: url(../images/forest.png);
     background-repeat: no-repeat;
@@ -175,10 +175,10 @@ You create an **adaptive template** and apply the theme to the template. You the
    ```
    #base=/apps/clientlibs/fd/af/third-party/css
    bootstrap.css
-   
+
    #base=less
    styles.less
-   
+
    #base=/apps/clientlibs/fd/xfaforms/xfalib/css
    datepicker.css
    listboxwidget.css
@@ -216,7 +216,7 @@ After you have created an adaptive form theme, perform the following steps to us
 
        The following sample code snippet imports the `af.theme.forest` theme.
 
-       ```    
+       ```
        <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
        <cq:includeClientLib categories="af.theme.forest"/>
        ```

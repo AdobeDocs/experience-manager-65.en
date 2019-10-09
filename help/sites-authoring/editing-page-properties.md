@@ -5,7 +5,7 @@ description: Define the required properties for a page
 seo-description: Define the required properties for a page
 uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
@@ -34,7 +34,7 @@ The properties are distributed across several tabs.
     * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
     * A completely new tag can be entered by typing the name in an empty selection box.
 
-        * The new tag will be created when you hit enter. 
+        * The new tag will be created when you hit enter.
         * The new tag will then be shown with a small star on the right indicating that it is a new tag.
 
     * With the drop-down functionality you can select from existing tags.
@@ -148,11 +148,11 @@ The properties are distributed across several tabs.
 
    Shows the page thumbnail image. You can:
 
-    * **Generate Preview** 
+    * **Generate Preview**
 
-      Generate a preview of the page to use as thumbnail. 
+      Generate a preview of the page to use as thumbnail.
 
-    * **Upload Image** 
+    * **Upload Image**
 
       Upload an image to use as thumbnail.
 
@@ -164,7 +164,7 @@ The properties are distributed across several tabs.
 
     * **Enable user sharing for Facebook**
     * **Enable user sharing for Pinterest**
-    * **Preferred XF variation** 
+    * **Preferred XF variation**
       Define experience fragment variation used for generating metadata for page
 
 ### Cloud Services {#cloud-services}
@@ -186,7 +186,7 @@ The properties are distributed across several tabs.
   In this tab you can:
 
     * [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
-    * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages) 
+    * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
     * View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
 
   >[!CAUTION]
@@ -236,7 +236,7 @@ You can define page properties:
 
 Clicking or tapping **Properties** to define the page properties:
 
-1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.  
+1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.
 
 1. Select the **Properties** option for the required page using either:
 
@@ -245,7 +245,7 @@ Clicking or tapping **Properties** to define the page properties:
 
    The page properties will be shown using the appropriate tabs.
 
-1. Either view or edit the properties as required.  
+1. Either view or edit the properties as required.
 
 1. Then use **Save** to save your updates followed by **Close** to return to the console.
 
@@ -253,7 +253,7 @@ Clicking or tapping **Properties** to define the page properties:
 
 When editing a page you can use **Page Information** to define the page properties:
 
-1. Open the page for which you want to edit properties.  
+1. Open the page for which you want to edit properties.
 
 1. Select the **Page Information** icon to open the selection menu:
 

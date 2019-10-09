@@ -5,7 +5,7 @@ description: Define new types of ContextHub stores and modules when the ones pro
 seo-description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
 uuid: 1d80c01d-ec5d-4e76-849d-bec0e1c3941a
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
@@ -57,7 +57,7 @@ When you register a store candiate, you provide a name for the store type. When 
 When you register a store candidate, you indicate its priority. When a store candidate is registered using the same store type as an already-registered store candidate, the candidate with the higher priority is used. Therefore, you can override existing store candidates with new implementations.
 
 ```
-ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate, 
+ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandiate', 0);
 ```
 

@@ -5,7 +5,7 @@ description: Use the Content Insight page to analyze the performance of the page
 seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
 uuid: 6b8a489d-f262-495d-adff-125c9a2c49b9
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
@@ -71,7 +71,7 @@ The granularity affects the reports that plot data against time, such as the Vie
 
 ## Assigning Tasks for SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
-Use the SEO Recommendations report to create tasks for improving page visibility to search engines. For each recommendation in the report that does not have a checkmark, you can create a task that you assign to a user to perform the required work. 
+Use the SEO Recommendations report to create tasks for improving page visibility to search engines. For each recommendation in the report that does not have a checkmark, you can create a task that you assign to a user to perform the required work.
 
 ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -104,4 +104,4 @@ Use the following procedure to create a task for an SEO recommendation.
 
 >[!NOTE]
 >
->The task that is created also includes the path to the page to which the SEO recommendation applies. 
+>The task that is created also includes the path to the page to which the SEO recommendation applies.

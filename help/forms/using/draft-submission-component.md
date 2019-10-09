@@ -5,7 +5,7 @@ description: Drafts and submissions component lists forms that are in the draft 
 seo-description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
 uuid: 351d6df5-0dc3-4f7a-8bdf-0f1c8dd80f34
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 219dd379-5bc9-40b0-bdc2-2fb347da29d8
 ---
@@ -25,63 +25,63 @@ The drafts functionality is enabled out of the box. When a user clicks **Save** 
 Perform the following steps to add and configure a Drafts & Submissions component:
 
 1. Drag-and-drop the **Drafts & Submissions** component under Document Services category in the components browser on to your page.
-1. Tap the component and then tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the component. 
+1. Tap the component and then tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the component.
 
    ![Drafts & Submission component](assets/drafts-submissions-edit.png)
 
 1. In the Edit dialog, specify the following details and tap **Done** to save the settings.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Tab</th> 
-   <th>Configuration</th> 
-   <th>Description</th> 
+   <th>Tab</th>
+   <th>Configuration</th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>General</td> 
-   <td>Total Result</td> 
-   <td>Specifies the maximum number of results to display. If the count of results increases the Total Result limit, a <strong>More </strong>link appears at the bottom of the component. Clicking <strong>More </strong>shows all the forms. </td> 
+   <td>General</td>
+   <td>Total Result</td>
+   <td>Specifies the maximum number of results to display. If the count of results increases the Total Result limit, a <strong>More </strong>link appears at the bottom of the component. Clicking <strong>More </strong>shows all the forms. </td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Style Type</td> 
-   <td>Specifies the style of the component. You can specify <strong>No Style</strong>, <strong>Default Style</strong>, or <strong>Custom Style</strong> for listing the forms. For Custom Style Option, you can specify the path of custom CSS file in the <strong>Custom Style Path </strong>field<strong>.</strong></td> 
+   <td> </td>
+   <td>Style Type</td>
+   <td>Specifies the style of the component. You can specify <strong>No Style</strong>, <strong>Default Style</strong>, or <strong>Custom Style</strong> for listing the forms. For Custom Style Option, you can specify the path of custom CSS file in the <strong>Custom Style Path </strong>field<strong>.</strong></td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Custom Style Path</td> 
-   <td>If you choose <strong>Custom Style</strong> option in the <strong>Style Type</strong> field, use the <strong>Custom Style Path</strong> field to specify the path of custom CSS file. </td> 
+   <td> </td>
+   <td>Custom Style Path</td>
+   <td>If you choose <strong>Custom Style</strong> option in the <strong>Style Type</strong> field, use the <strong>Custom Style Path</strong> field to specify the path of custom CSS file. </td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Display Options</td> 
-   <td><p>Specifies the tabs to display. You can choose to display draft forms, submitted forms, or both. </p> <p><strong>Note</strong>:<em> For <strong>Display options</strong>, if you select an option other than <strong>Both</strong>, the <strong>Default Tab</strong> field option is not used.</em></p> </td> 
+   <td> </td>
+   <td>Display Options</td>
+   <td><p>Specifies the tabs to display. You can choose to display draft forms, submitted forms, or both. </p> <p><strong>Note</strong>:<em> For <strong>Display options</strong>, if you select an option other than <strong>Both</strong>, the <strong>Default Tab</strong> field option is not used.</em></p> </td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Default Tab</td> 
-   <td>Specifies the tab to display when the forms portal page loads. You can choose between <strong>Draft Forms Tab</strong> and <strong>Submitted Forms Tab</strong>.</td> 
+   <td> </td>
+   <td>Default Tab</td>
+   <td>Specifies the tab to display when the forms portal page loads. You can choose between <strong>Draft Forms Tab</strong> and <strong>Submitted Forms Tab</strong>.</td>
   </tr>
   <tr>
-   <td>Draft Forms Tab Configuration</td> 
-   <td>Custom Title</td> 
-   <td>Specifies title of the <strong>Draft Forms</strong> tab. The default value is <strong>Draft Forms.</strong></td> 
+   <td>Draft Forms Tab Configuration</td>
+   <td>Custom Title</td>
+   <td>Specifies title of the <strong>Draft Forms</strong> tab. The default value is <strong>Draft Forms.</strong></td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Layout Template</td> 
-   <td><p>Specifies the layout to use for Draft Forms list.</p> <p><strong>Note:</strong> Do not use the Default (Deprecated) option.<br /> </p> </td> 
+   <td> </td>
+   <td>Layout Template</td>
+   <td><p>Specifies the layout to use for Draft Forms list.</p> <p><strong>Note:</strong> Do not use the Default (Deprecated) option.<br /> </p> </td>
   </tr>
   <tr>
-   <td>Submitted Forms Tab Configuration</td> 
-   <td>Custom Title </td> 
-   <td>Specifies title of the <strong>Submitted Forms </strong>tab. The default value is <strong>Submitted Forms.</strong></td> 
+   <td>Submitted Forms Tab Configuration</td>
+   <td>Custom Title </td>
+   <td>Specifies title of the <strong>Submitted Forms </strong>tab. The default value is <strong>Submitted Forms.</strong></td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Layout Template</td> 
-   <td>Specifies the layout to use for Submitted Forms<strong> </strong>list. </td> 
+   <td> </td>
+   <td>Layout Template</td>
+   <td>Specifies the layout to use for Submitted Forms<strong> </strong>list. </td>
   </tr>
  </tbody>
 </table>

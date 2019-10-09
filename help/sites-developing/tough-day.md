@@ -5,7 +5,7 @@ description: The Tough Day test simulates the daily load of around 1000 authors 
 seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 7a13efe0-c455-4af0-ad7b-c39cb2479d74
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
@@ -58,54 +58,54 @@ java -jar toughday2.jar --help_full
 
 In the table below, you can find the relevant help parameters.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Parameter</strong></td> 
-   <td><strong>Description</strong></td> 
-   <td><strong>Example</strong></td> 
-  </tr> 
-  <tr> 
-   <td>--help</td> 
-   <td>Prints out global information, for example: the available actions, predefined suites, run modes and global parameters.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>--help_publish</td> 
-   <td>Prints out all the available publishers.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>--help_tests</td> 
-   <td>Prints the test classes and their description.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>--help_full</td> 
-   <td>Prints all of the above, plus tests, publishers and suite components.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td> --help --runmode/publishmode type=&lt;Mode&gt;</td> 
-   <td>Lists information about the specified run or publish mode.</td> 
-   <td><p>java -jar toughday2.jar --help --runmode type=constantload</p> <p>java -jar toughday2.jar --help --publishmode type=intervals</p> </td> 
-  </tr> 
-  <tr> 
-   <td>--help --suite=&lt;SuiteName&gt;</td> 
-   <td>Lists all the tests of a given suite and their respective configurable properties.</td> 
-   <td><br /> java -jar toughday2.jar --help --suite=get_tests</td> 
-  </tr> 
-  <tr> 
-   <td> --help --tag=&lt;Tag&gt;</td> 
-   <td><br /> Lists all the items that have the specified tag.</td> 
-   <td>java -jar toughday2.jar --help --tag=publish</td> 
-  </tr> 
-  <tr> 
-   <td>--help &lt;TestClass/PublisherClass&gt;</td> 
-   <td><br /> Lists all the configurable properties for the given test or publisher.</td> 
-   <td><p>java -jar toughday2.jar --help UploadPDFTest</p> <p>java -jar toughday2.jar --help CSVPublisher</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Parameter</strong></td>
+   <td><strong>Description</strong></td>
+   <td><strong>Example</strong></td>
+  </tr>
+  <tr>
+   <td>--help</td>
+   <td>Prints out global information, for example: the available actions, predefined suites, run modes and global parameters.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>--help_publish</td>
+   <td>Prints out all the available publishers.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>--help_tests</td>
+   <td>Prints the test classes and their description.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>--help_full</td>
+   <td>Prints all of the above, plus tests, publishers and suite components.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td> --help --runmode/publishmode type=&lt;Mode&gt;</td>
+   <td>Lists information about the specified run or publish mode.</td>
+   <td><p>java -jar toughday2.jar --help --runmode type=constantload</p> <p>java -jar toughday2.jar --help --publishmode type=intervals</p> </td>
+  </tr>
+  <tr>
+   <td>--help --suite=&lt;SuiteName&gt;</td>
+   <td>Lists all the tests of a given suite and their respective configurable properties.</td>
+   <td><br /> java -jar toughday2.jar --help --suite=get_tests</td>
+  </tr>
+  <tr>
+   <td> --help --tag=&lt;Tag&gt;</td>
+   <td><br /> Lists all the items that have the specified tag.</td>
+   <td>java -jar toughday2.jar --help --tag=publish</td>
+  </tr>
+  <tr>
+   <td>--help &lt;TestClass/PublisherClass&gt;</td>
+   <td><br /> Lists all the configurable properties for the given test or publisher.</td>
+   <td><p>java -jar toughday2.jar --help UploadPDFTest</p> <p>java -jar toughday2.jar --help CSVPublisher</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Global Parameters {#global-parameters}
@@ -113,7 +113,7 @@ In the table below, you can find the relevant help parameters.
 Tough Day 2 offers global parameters that set or change the environment for the tests. These include the host that is targeted, the port number, the protocol used, user and password for the instance and many more. For example:
 
 ```xml
-java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true 
+java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true
 ```
 
 You can find the relevant parameters in the list bellow:
@@ -253,7 +253,7 @@ globals:
 tests:
   - config : UploadAsset
     properties :
-      title : NewAsset 
+      title : NewAsset
 ```
 
 Aditionally, you can also remove tests from predefined suites or publishers from the default configuration with the use of the `exclude` parameter. Please note that you must also specify the suite name and the actual name of the test (not the Test C `lass` name). You can find the test name in the `name` property of the test class. In the example below, the `CreatePageTreeTest` (named `UploadAsset`) test is removed from the toughday suite.
@@ -271,7 +271,7 @@ globals:
   host : localhost
   suite : toughday
 tests:
-  - exclude : UploadAsset 
+  - exclude : UploadAsset
 ```
 
 ### Run Modes {#run-modes}
@@ -308,7 +308,7 @@ The test selection process is the same for both run modes and it goes as follows
 Furthermore, tests can have a `count` property, which limits the number of executions to a given number. After this number is passed, no further executions of the test will occur. All test instances that are already running will finish the run as configured. The following example shows how to add these parameters either at the command line or by using a yaml configuration file.
 
 ```xml
-java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20 
+java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20
 ```
 
 or
@@ -369,7 +369,7 @@ By default, both publishers are enabled.
 
 Additionally, there are two modes in which the metrics are reported:
 
-* The **simple** publish mode - reports the results from the beginning of the execution up to the point of publishing. 
+* The **simple** publish mode - reports the results from the beginning of the execution up to the point of publishing.
 * The **intervals** publish mode - reports the results in a given time frame. You can set the time frame with the **interval** publish mode parameter.
 
 The following example shows how to configure the `intervals` parameter either at the command line or by using a yaml configuration file.
@@ -377,16 +377,16 @@ The following example shows how to configure the `intervals` parameter either at
 By using command line parameters:
 
 ```xml
-java -jar toughday2.jar --host=localhost --add CreatePageTreeTest --publishmode type=intervals interval=10s 
+java -jar toughday2.jar --host=localhost --add CreatePageTreeTest --publishmode type=intervals interval=10s
 ```
 
 By using a yaml configuration file:
 
 ```xml
 publishmode:
-     type : intervals 
-     interval : 10s 
-     tests: 
+     type : intervals
+     interval : 10s
+     tests:
         -add : CreatePageTreeTest
 
 ```

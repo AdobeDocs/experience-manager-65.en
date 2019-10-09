@@ -5,7 +5,7 @@ description: Primary 3D model file dependencies, such as texture map files, are 
 seo-description: Primary 3D model file dependencies, such as texture map files, are automatically resolved where possible. This functionality is accomplished by having AEM search nearby Asset folders for files with the same names that are found in the 3D file.
 uuid: b1b83cb7-b6e5-4417-9a53-b6d8bcf8d2e0
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 14754023-e7c4-4dc5-a9d8-408b81861d95
@@ -42,7 +42,7 @@ Primary 3D model file dependencies, such as texture map files, are automatically
 
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. The newly uploaded asset are now properly listed as referenced assets.
 
-    * **[!UICONTROL Ignore the dependencies]**. 
+    * **[!UICONTROL Ignore the dependencies]**.
 
       If a missing dependency is no longer needed, under the **[!UICONTROL Referenced Asset]** column, in the text field to the left of the missing file, type `n/a` so that AEM 3D ignores the file.
 

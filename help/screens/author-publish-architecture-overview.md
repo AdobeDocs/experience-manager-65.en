@@ -5,7 +5,7 @@ description: AEM Screens architecture resembles a traditional AEM Sites architec
 seo-description: AEM Screens architecture resembles a traditional AEM Sites architecture. Content is authored on an AEM author instance and then forward-replicated to multiple publish instances. Follow this page to learn more on author and publish architectural overview.
 uuid: f5c848fb-c230-4fb1-8760-e42c643fc405
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: administering
 discoiquuid: e650e33b-198f-41bf-a912-3d76f635b557
@@ -39,7 +39,7 @@ AEM Screens architecture resembles a traditional AEM Sites architecture. Content
 
 The following diagram illustrates the author and publish environments.
 
-![screen_shot_2019-03-04at30236pm](assets/screen_shot_2019-03-04at30236pm.png) 
+![screen_shot_2019-03-04at30236pm](assets/screen_shot_2019-03-04at30236pm.png)
 
 ## Architectural Design {#architectural-design}
 
@@ -98,7 +98,7 @@ Registration continues to originate on the AEM author instance. AEM Screens Devi
 
 Once a device has been registered on the author environment the device configuration and channel/schedule assignments are replicated to the AEM publish instances. The AEM Screens Device configuration is then updated to point to the Load Balancer in front the AEM publish farm. This is intended to be a one-time setup, once the Screens Device is successfully connected to the publish environment it can continue to recieve commands originating from the author environment and there should be no need to ever connect the Screens device to the author environment directly.
 
-![screen_shot_2019-02-25at15218pm](assets/screen_shot_2019-02-25at15218pm.png) 
+![screen_shot_2019-02-25at15218pm](assets/screen_shot_2019-02-25at15218pm.png)
 
 ### The Next Steps {#the-next-steps}
 

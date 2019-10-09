@@ -1,11 +1,11 @@
 ---
 title: Creating adaptive forms using JSON Schema
 seo-title: Creating adaptive forms using JSON Schema
-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms. 
-seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms. 
+description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 ---
 
@@ -32,53 +32,53 @@ An JSON Schema consists of simple and complex element types. The elements have a
 
 This mapping of JSON elements with adaptive form components is as follows:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><strong>JSON element, properties, or attributes</strong></th> 
-   <th><strong>Adaptive form component</strong></th> 
-  </tr> 
-  <tr> 
-   <td><p>String properties with enum and enumNames constraint.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
-   <td><p>Drop down component:</p> 
-    <ul> 
-     <li>Values listed in enumNames are displayed in the drop box.</li> 
-     <li>Values listed in the enum are used for calculation.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>String property with format constraint. For example, email, and date.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td> 
-   <td> 
-    <ul> 
-     <li>Email component is mapped when the type is string and format is email.</li> 
-     <li>Textbox component with validation is mapped when the type is string and format is hostname.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td> 
-   <td><br /> <br /> Text field<br /> <br /> <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>number property<br /> </td> 
-   <td>Numeric Field with sub type set to float<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>integer property<br /> </td> 
-   <td>Numeric Field with sub type set to integer<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>boolean property<br /> </td> 
-   <td>Switch<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>object property<br /> </td> 
-   <td>Panel<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>array property</td> 
-   <td>Repeatable Panel with min and max equal to minItems and maxItems respectively. Only Homogenous arrays are supported. So the items constraint must be an object and not an array.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><strong>JSON element, properties, or attributes</strong></th>
+   <th><strong>Adaptive form component</strong></th>
+  </tr>
+  <tr>
+   <td><p>String properties with enum and enumNames constraint.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Drop down component:</p>
+    <ul>
+     <li>Values listed in enumNames are displayed in the drop box.</li>
+     <li>Values listed in the enum are used for calculation.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>String property with format constraint. For example, email, and date.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td>
+    <ul>
+     <li>Email component is mapped when the type is string and format is email.</li>
+     <li>Textbox component with validation is mapped when the type is string and format is hostname.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td>
+   <td><br /> <br /> Text field<br /> <br /> <br /> </td>
+  </tr>
+  <tr>
+   <td>number property<br /> </td>
+   <td>Numeric Field with sub type set to float<br /> </td>
+  </tr>
+  <tr>
+   <td>integer property<br /> </td>
+   <td>Numeric Field with sub type set to integer<br /> </td>
+  </tr>
+  <tr>
+   <td>boolean property<br /> </td>
+   <td>Switch<br /> </td>
+  </tr>
+  <tr>
+   <td>object property<br /> </td>
+   <td>Panel<br /> </td>
+  </tr>
+  <tr>
+   <td>array property</td>
+   <td>Repeatable Panel with min and max equal to minItems and maxItems respectively. Only Homogenous arrays are supported. So the items constraint must be an object and not an array.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Common schema properties {#common-schema-properties}
@@ -286,7 +286,7 @@ Definition keys are used to identify reusable schemas. The reusable schema defin
 ```
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
- 
+
   "definitions": {
     "address": {
       "type": "object",
@@ -298,9 +298,9 @@ Definition keys are used to identify reusable schemas. The reusable schema defin
       "required": ["street_address", "city", "state"]
     }
   },
- 
+
   "type": "object",
- 
+
   "properties": {
     "billing_address": { "$ref": "#/definitions/address" },
     "shipping_address": { "$ref": "#/definitions/address" }
@@ -336,100 +336,100 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 
 ## Limit acceptable values for an adaptive form component {#limit-acceptable-values-for-an-adaptive-form-component}
 
-You can add the following restrictions to JSON Schema elements to limit the values acceptable to an adaptive form component: 
+You can add the following restrictions to JSON Schema elements to limit the values acceptable to an adaptive form component:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong> Schema property</strong></p> </td> 
-   <td><p><strong>Data Type</strong></p> </td> 
-   <td><p><strong>Description</strong></p> </td> 
-   <td><p><strong>Component</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>maximum</code></p> </td> 
-   <td><p>String</p> </td> 
-   <td><p>Specifies the upper bound for numeric values and dates. By default, the maximum value is included.</p> </td> 
-   <td> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper<br /> </li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>minimum</code></p> </td> 
-   <td><p>String</p> </td> 
-   <td><p>Specifies the lower bound for numeric values and dates. By default, the minimum value is included.</p> </td> 
-   <td> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>Boolean</p> </td> 
-   <td><p>If true, the numeric value or date specified in the component of the form must be less than the numeric value or date specified for the maximum property.</p> <p>If false, the numeric value or date specified in the component of the form must be less than or equal to the numeric value or date specified for the maximum property.</p> </td> 
-   <td> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>Boolean</p> </td> 
-   <td><p>If true, the numeric value or date specified in the component of the form must be greater than the numeric value or date specified for the minimum property.</p> <p>If false, the numeric value or date specified in the component of the form must be greater than or equal to the numeric value or date specified for the minimum property.</p> </td> 
-   <td> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>minLength</code></p> </td> 
-   <td><p>String</p> </td> 
-   <td><p>Specifies the minimum number of characters allowed in a component. The minimum length must be equal to or greater than zero.</p> </td> 
-   <td> 
-    <ul> 
-     <li>Text box</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><code>maxLength</code></td> 
-   <td>String</td> 
-   <td>Specifies the maximum number of characters allowed in a component. The maximum length must be equal to or greater than zero.</td> 
-   <td> 
-    <ul> 
-     <li>Text box</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p><code>pattern</code></p> </td> 
-   <td><p>String</p> </td> 
-   <td><p>Specifies the sequence of the characters. A component accepts the characters if the characters conform to specified pattern.</p> <p>The pattern property maps to the validation pattern of the corresponding adaptive form component.</p> </td> 
-   <td> 
-    <ul> 
-     <li>All adaptive forms components which are mapped to an XSD schema </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>maxItems</td> 
-   <td>String</td> 
-   <td>Specifies the maximum number of item in an array. The maximum items must be equal to or greater than zero.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>minItems</td> 
-   <td>String</td> 
-   <td>Specifies the minimum number of item in an array. The minimum items must be equal to or greater than zero.</td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong> Schema property</strong></p> </td>
+   <td><p><strong>Data Type</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+   <td><p><strong>Component</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p><code>maximum</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the upper bound for numeric values and dates. By default, the maximum value is included.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper<br /> </li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>minimum</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the lower bound for numeric values and dates. By default, the minimum value is included.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>exclusiveMaximum</code></p> </td>
+   <td><p>Boolean</p> </td>
+   <td><p>If true, the numeric value or date specified in the component of the form must be less than the numeric value or date specified for the maximum property.</p> <p>If false, the numeric value or date specified in the component of the form must be less than or equal to the numeric value or date specified for the maximum property.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>exclusiveMinimum</code></p> </td>
+   <td><p>Boolean</p> </td>
+   <td><p>If true, the numeric value or date specified in the component of the form must be greater than the numeric value or date specified for the minimum property.</p> <p>If false, the numeric value or date specified in the component of the form must be greater than or equal to the numeric value or date specified for the minimum property.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>minLength</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the minimum number of characters allowed in a component. The minimum length must be equal to or greater than zero.</p> </td>
+   <td>
+    <ul>
+     <li>Text box</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><code>maxLength</code></td>
+   <td>String</td>
+   <td>Specifies the maximum number of characters allowed in a component. The maximum length must be equal to or greater than zero.</td>
+   <td>
+    <ul>
+     <li>Text box</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>pattern</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the sequence of the characters. A component accepts the characters if the characters conform to specified pattern.</p> <p>The pattern property maps to the validation pattern of the corresponding adaptive form component.</p> </td>
+   <td>
+    <ul>
+     <li>All adaptive forms components which are mapped to an XSD schema </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>maxItems</td>
+   <td>String</td>
+   <td>Specifies the maximum number of item in an array. The maximum items must be equal to or greater than zero.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>minItems</td>
+   <td>String</td>
+   <td>Specifies the minimum number of item in an array. The minimum items must be equal to or greater than zero.</td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Non-supported constructs  {#non-supported-constructs}
@@ -451,6 +451,6 @@ In a repeatable subform, you must use the complete subform. If you want only sel
 
 You have two options:
 
-* Scroll through the tree structure  
+* Scroll through the tree structure
 * Use the Search box to find an element
 

@@ -5,7 +5,7 @@ description: Steps to work with a AEM Forms process from your Mobile device defi
 seo-description: Steps to work with a AEM Forms process from your Mobile device defined in Workbench.
 uuid: 9c51ce52-e7ba-43d3-a85c-67067f680ccb
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 ---

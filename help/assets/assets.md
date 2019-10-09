@@ -5,7 +5,7 @@ description: Learn what is digital asset management, its use cases, and Adobe's 
 seo-description: Learn what is digital asset management, its use cases, and Adobe's AEM Asset offering.
 uuid: f9c9e14c-65d1-45e5-9572-d3f908c84ea1
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 7c851395-5f10-4311-899a-e73328f57e85
 ---
 
@@ -22,8 +22,8 @@ Completely integrated into AEM, AEM Assets lets you do the following:
 * Add and share images, documents, audio files, and video files in a variety of file formats.
 * Manage assets by grouping them by tags, lightboxes, or stars (your favorites). Add annotations to assets.
 * Find assets by searching file names, the full text of documents, and by searching dates, document type, and tags.
-* Add or edit metadata information for assets. Metadata is automatically versioned together with the corresponding asset. You can import or export asset metadata. 
-* Perform image editing functions such as scaling and adding image filters. Import and export multiple digital assets simultaneously using a WebDAV or CIFS folder. 
+* Add or edit metadata information for assets. Metadata is automatically versioned together with the corresponding asset. You can import or export asset metadata.
+* Perform image editing functions such as scaling and adding image filters. Import and export multiple digital assets simultaneously using a WebDAV or CIFS folder.
 * Use workflows and notifications to allow joint processing and downloading of any set of assets and manage access rights to assets.
 
 ### AEM Assets fully integrated in CQ WCM {#aem-assets-fully-integrated-in-cq-wcm}

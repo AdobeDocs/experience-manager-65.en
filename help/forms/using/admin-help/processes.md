@@ -7,7 +7,7 @@ uuid: 4cd17400-681a-4e40-996c-7dda57ce449a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
 ---
 
@@ -45,8 +45,8 @@ For each process instance, the list shows the following information:
 
 You can do the following tasks on the Process Instance page:
 
-* Select a process instance to view details about it, such as its operations and subprocesses. When you select a process instance, the Process Instance Details page appears. 
-* Suspend, unsuspend, or terminate process instances. 
+* Select a process instance to view details about it, such as its operations and subprocesses. When you select a process instance, the Process Instance Details page appears.
+* Suspend, unsuspend, or terminate process instances.
 * Search for a process instance. To begin a search, click Search.
 
 ### About process instance statuses {#about-process-instance-statuses}
@@ -163,7 +163,7 @@ When you terminate a subprocess, its status changes to TERMINATING, then TERMINA
 
 You cannot terminate processes that have gateway elements in the process diagram. If you attempt to terminate these types of processes, the operations within the gateway elements are not affected. To terminate operations that are within a gateway element, you must terminate the operations directly.
 
-1. On the Process Instance Details page, click the Operations tab or the Subprocesses tab. 
+1. On the Process Instance Details page, click the Operations tab or the Subprocesses tab.
 1. Select the operation or subprocess and click Terminate.
 
 ### Retry an operation {#retry-an-operation}
@@ -179,7 +179,7 @@ When you retry an operation, Forms workflow is sent a request to restart the ope
 
 The Operation Details page shows a summary of one operation in a process and its current user assignments.
 
-1. In administration console, click Services &gt; Forms workflow &gt; Forms workflow. 
+1. In administration console, click Services &gt; Forms workflow &gt; Forms workflow.
 1. Click a process name to display its process instances. Click a process instance to display the Process Instance Details page, then select an operation to display the Operation Detail page.
 
    For each task, the list shows the following information:

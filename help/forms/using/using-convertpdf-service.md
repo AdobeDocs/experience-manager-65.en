@@ -1,11 +1,11 @@
 ---
 title: ConvertPDF Service
 seo-title: ConvertPDF Service
-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files. 
-seo-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files. 
+description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files.
+seo-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 ---
@@ -29,7 +29,7 @@ You can use the **AEMFD ConvertPDF Service** in AEM Console to configure propert
 
 The ConvertPDF service provides the following two APIs:
 
-* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Converts a PDF document to a PostScript file.  
+* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Converts a PDF document to a PostScript file.
 
 * **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Converts a PDF document to an image file. Supported image formats are JPEG, JPEG2000, PNG, and TIFF.
 
@@ -47,7 +47,7 @@ The ConvertPDF service provides the following two APIs:
 %><sling:defineObjects/><%
 
  // Get reference to ConvertPdfService OSGi service.
- // Within an OSGi bundle @Reference annotation 
+ // Within an OSGi bundle @Reference annotation
  // can be used to retrieve service reference
 
  ConvertPdfService cpdfService = sling.getService(ConvertPdfService.class);
@@ -56,8 +56,8 @@ The ConvertPDF service provides the following two APIs:
  // please replace this with path to your document
 String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
- // Create a Docmanager Document object for 
- // the flat PDF file which needs to be converted 
+ // Create a Docmanager Document object for
+ // the flat PDF file which needs to be converted
  // to PostScript
 
  Document inputPDF = new Document(documentPath);
@@ -91,7 +91,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %><sling:defineObjects/><%
 
  // Get reference to ConvertPdfService OSGi service.
- // Within an OSGi bundle @Reference annotation 
+ // Within an OSGi bundle @Reference annotation
  // can be used to retrieve service reference
 
  ConvertPdfService cpdfService = sling.getService(ConvertPdfService.class);
@@ -100,8 +100,8 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
  // please replace this with path to your document
  String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
- // Create a Docmanager Document object for 
- // the flat PDF file which needs to be converted 
+ // Create a Docmanager Document object for
+ // the flat PDF file which needs to be converted
  // to image
 
  Document inputPDF = new Document(documentPath);
@@ -128,15 +128,15 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 Running the ConvertPDF service from a workflow is similar to running from JSP/Servlet.
 
-The only difference is on running the service from JSP/Servlet the document object automatically retrieves an instance of ResourceResolver object from the ResourceResolverHelper object. This automatic mechanism  
-does not work when the code is called from a workflow. For a workflow, explicitly pass an instance of the ResourceResolver object to the Document class constructor. Then, the Document object uses  
+The only difference is on running the service from JSP/Servlet the document object automatically retrieves an instance of ResourceResolver object from the ResourceResolverHelper object. This automatic mechanism
+does not work when the code is called from a workflow. For a workflow, explicitly pass an instance of the ResourceResolver object to the Document class constructor. Then, the Document object uses
 provided ResourceResolver object to read content from the repository.
 
 The following sample workflow process converts the input document to a PostScript document. The code is written in ECMAScript and the document is passed as workflow payload:
 
 ```
 /*
- * Imports 
+ * Imports
  */
 var ConvertPdfService = Packages.com.adobe.fd.cpdf.api.ConvertPdfService;
 var ToPSOptionsSpec = Packages.com.adobe.fd.cpdf.api.ToPSOptionsSpec;
@@ -154,13 +154,13 @@ var cpdfService = sling.getService(ConvertPdfService);
 var payload = graniteWorkItem.getWorkflowData().getPayload();
 var payload_path = payload.toString();
 
-/* Create resource resolver using current session 
+/* Create resource resolver using current session
  * this resource resolver needs to be passed to Document
- * object constructor when file is to be read from 
- * crx repository. 
+ * object constructor when file is to be read from
+ * crx repository.
  */
 
-/* get ResourceResolverFactory service reference , used 
+/* get ResourceResolverFactory service reference , used
  * to construct resource resolver
  */
 var resourceResolverFactory = sling.getService(ResourceResolverFactory);
@@ -171,7 +171,7 @@ var authInfo = {
 
 var resourceResolver = resourceResolverFactory.getResourceResolver(authInfo);
 
-// Create Document object from payload_path 
+// Create Document object from payload_path
 var inputDocument = new Document(payload_path, resourceResolver);
 
 // options object to be passed to toPS operation

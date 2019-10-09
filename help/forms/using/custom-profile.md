@@ -5,7 +5,7 @@ description: A HTML5 forms profile is a resource node in Apache Sling. It repres
 seo-description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
 uuid: b9938280-a92c-4dde-b465-04372db3ca8d
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 ---
@@ -52,13 +52,13 @@ To create a custom profile, perform the following steps:
 
 ### Create Profile Node {#create-profile-node}
 
-1. Navigate to the CRX DE interface at the URL: `https://[server]:[port]/crx/de` and log in to the interface with administrator credentials.  
+1. Navigate to the CRX DE interface at the URL: `https://[server]:[port]/crx/de` and log in to the interface with administrator credentials.
 
-1. In the left pane, navigate to the location */content/xfaforms/profiles*.  
+1. In the left pane, navigate to the location */content/xfaforms/profiles*.
 
-1. Copy the node default, and paste the node in different folder (*/content/profiles*) with name *hrform*.  
+1. Copy the node default, and paste the node in different folder (*/content/profiles*) with name *hrform*.
 
-1. Select the new node, *hrform*, and add a string property: *sling:resourceType* with value: *hrform/demo*.  
+1. Select the new node, *hrform*, and add a string property: *sling:resourceType* with value: *hrform/demo*.
 
 1. Click Save All in toolbar menu to save the changes.
 
@@ -72,7 +72,7 @@ After creating a custom profile, add render information to this profile. On rece
 1. Click the **Save All** button.
 1. Navigate to `/libs/xfaforms/profile/html.jsp` and copy the node **html.jsp**.
 1. Paste **html.jsp** node into the `/apps/hrform/demo` folder created above with same name **html.jsp** and click **Save**.
-1. If you have any other components of profile script, follow step 1-6 to copy the components in /apps/hrform/demo folder.  
+1. If you have any other components of profile script, follow step 1-6 to copy the components in /apps/hrform/demo folder.
 
 1. To verify that th profile is created, open URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 

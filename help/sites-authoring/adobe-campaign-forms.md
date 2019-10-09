@@ -5,7 +5,7 @@ description: AEM lets you create and use forms that interact with Adobe Campaign
 seo-description: AEM lets you create and use forms that interact with Adobe Campaign on your website
 uuid: 61778ea7-c4d7-43ee-905f-f3ecb752aae2
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
@@ -91,7 +91,7 @@ This section only details specific links to Adobe Campaign. For more information
     * **Adobe Campaign: Subscribe to Services**: lets you manage the subscriptions of a recipient in Adobe Campaign.
     * **Adobe Campaign: Unsubscribe from Services**: lets you cancel the subscriptions of a recipient in Adobe Campaign.
 
-1. You must have an **Encrypted Primary Key** component on each form. This component defines which URL parameter will be used to accept the encrypted primary key of an Adobe Campaign profile. In Components, select Adobe Campaign so only those componente are visible. 
+1. You must have an **Encrypted Primary Key** component on each form. This component defines which URL parameter will be used to accept the encrypted primary key of an Adobe Campaign profile. In Components, select Adobe Campaign so only those componente are visible.
 1. Drag the component **Encrypted Primary Key** to the form (anywhere) and click or tap the **Configuration** icon. In the **Adobe Campaign** tab, specify any name for the URL parameter. Click or tap the check mark to save your changes.
 
    Generated links to this form need to use this URL parameter and assign it the encrypted primary key of an Adobe Campaign profile. The encrypted primary key must be properly URL (percent) encoded.
@@ -121,7 +121,7 @@ After you create a form and edit form content, you may want to manually test tha
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. In Components, select Adobe Campaign so only those componente are visible. 
+>You must have an **Encryted Primary Key** component on each form. In Components, select Adobe Campaign so only those componente are visible.
 >
 >Although in this procedure you enter the epk number manually, in practice, users would get a link to this page (whether to unsubscribe, subscribe, or update your profile) within a newsletter. Based on the user, the epk automatically updates.
 >

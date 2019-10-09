@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about Schedules, that lets you organi
 uuid: c05328a0-620a-4597-b7b3-f4433e78d4e9
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 75ed3c42-4be9-42ae-9d76-e0343af81516
 ---
@@ -28,7 +28,7 @@ You can create a schedule for your Screens project that will manage all the acti
 Follow the steps below to create schedule for your channel:
 
 1. Select the Adobe Experience Manager link (top left) and then Screens. Alternatively, you can ﻿go directly to: [http://localhost:4502/screens.html/content/screens](http://localhost:4502/screens.html/content/screens).
-1. Navigate to Screens project and click **Schedules**. 
+1. Navigate to Screens project and click **Schedules**.
 1. Click **Create** from the action bar.
 1. Select **Schedule** from the **Create** wizard and click **Next**.
 

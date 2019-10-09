@@ -5,7 +5,7 @@ description: Lear how to configure Layout Container and Layout Mode.
 seo-description: Lear how to configure Layout Container and Layout Mode.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
@@ -29,19 +29,19 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
     * The default **Layout Container** component is defined under:
 
       /libs/wcm/foundation/components/responsivegrid
-  
+
     * You can define layout containers:
 
         * As a component that the user can add to a page.
         * As the default parsys for the page.
-        * Both. 
+        * Both.
 
           You can have the layout container as standard for the page, while allowing the user to add further layout containers within this; for example, to achieve column control.
 
-* **[Layout Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** 
+* **[Layout Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
 
-* [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) 
+* [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
   This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content will be rendered using the Emulator.
 
 >[!CAUTION]
@@ -109,7 +109,7 @@ They can be defined using CRXDE Lite or XML.
 >If you are migrating an existing project (with existing content) you need to:
 >
 >* add breakpoints to the templates
->* add the same breakpoints to the existing pages  
+>* add the same breakpoints to the existing pages
 >  As inheritance is in operation you can limit this to the root page of your content.
 >
 
@@ -249,7 +249,7 @@ Any resizing of a component within the grid will trigger the following listeners
 
 * `beforeedit`
 * `beforechildedit`
-* `afteredit`  
+* `afteredit`
 
 * `afterchildedit`
 

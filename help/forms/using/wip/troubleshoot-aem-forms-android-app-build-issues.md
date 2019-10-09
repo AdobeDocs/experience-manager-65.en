@@ -6,7 +6,7 @@ seo-description: Steps to troubleshoot AEM Forms Android App build issues
 page-status-flag: never-activated
 uuid: 03ffd800-109b-41a6-8d11-3dd0f607443c
 contentOwner: anujkapo
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: forms-app
 discoiquuid: 4f3815e9-2151-41aa-a8b2-8905f87de387
@@ -29,13 +29,13 @@ The error message is displayed when you are using an unsupported version of Grad
 
 **Resolution:** Click **Fix Gradle wrapper and re-import project** to resolve the issue.
 
-![gradle_unsupported_version](assets/gradle_unsupported_version.png) 
+![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
 ## Gradle and Android Gradle plug-in compatibility issues {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
 **Error Message:** The versions of the Android Gradle plugin and Gradle are not compatible.
 
-The error message is displayed when you select **Build APK** option from the **Build** menu on the Android Studio user interface. 
+The error message is displayed when you select **Build APK** option from the **Build** menu on the Android Studio user interface.
 
 ![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 
@@ -43,7 +43,7 @@ The error message is displayed when you select **Build APK** option from the **B
 
 For example, the Android Studio console recommends downgrading the Gradle version to 3.5. Edit the version in **distributionUrl **of** gradle-wrapper.properties** file.
 
-Select **Build** &gt; **Build APK **to resolve the error and generate the .apk file. 
+Select **Build** &gt; **Build APK **to resolve the error and generate the .apk file.
 
 ![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)
 

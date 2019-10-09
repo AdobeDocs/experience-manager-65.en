@@ -5,7 +5,7 @@ description: Learn how to work with interactive video in dynamic media
 seo-description: Learn how to work with interactive video in dynamic media
 uuid: 5de8844f-d5d0-4fda-b59e-74682eda949f
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 ---
 
@@ -33,7 +33,7 @@ Click the thumbnail to pause the video and open the product's Quickview. For exa
 
 ## Watch how interactive videos are created {#watch-how-interactive-videos-are-created}
 
-Watch a 7 minute 30 second walkthrough on [how interactive videos are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).  
+Watch a 7 minute 30 second walkthrough on [how interactive videos are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
 (Although the video walkthrough is branded with Assets on Demand, the principles and steps still apply to Interactive Video in AEM Assets.)
 
 ## Adobe Customer Success Webinar {#adobe-customer-success-webinar}
@@ -60,37 +60,37 @@ When you finish the tutorial in the last Example section, the final demo web pag
 
 **Interactive video workflow**:
 
-1. **(Optional) Identifying Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identifying Quickview variables](#optional-identifying-quickview-variables). 
+1. **(Optional) Identifying Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identifying Quickview variables](#optional-identifying-quickview-variables).
 
-   *Note that this step is only required if all the following are true*:  
+   *Note that this step is only required if all the following are true*:
 
    * You want to add interactivity to your video by triggering to Quickviews.
-   * Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).  
+   * Your implementation of AEM does *not* use an eCommerce integration framework for pulling product data into AEM from any eCommerce solution such as IBM Websphere Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).
 
-1. **(Optional) Creating an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.  
+1. **(Optional) Creating an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.
 
-   Creating your own Interactive Video viewer preset is not required if you intend to use the out-of-the-box Interactive Video viewer presets `Shoppable_Video_Light` or `Shoppable_Video_Dark` instead. 
+   Creating your own Interactive Video viewer preset is not required if you intend to use the out-of-the-box Interactive Video viewer presets `Shoppable_Video_Light` or `Shoppable_Video_Dark` instead.
    See [Creating a New Viewer Preset](managing-viewer-presets.md#creating-a-new-viewer-preset) (this is optional) and [Special considerations for creating an Interactive Viewer preset](managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
-1. **Uploading a video and its associated image assets** - Upload a video and associated images that you want to make interactive.  
+1. **Uploading a video and its associated image assets** - Upload a video and associated images that you want to make interactive.
 
-   See [Uploading a video and its associated thumbnail assets](#uploading-a-video-and-its-associated-thumbnail-assets).  
+   See [Uploading a video and its associated thumbnail assets](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Adding interactivity to your video** - Add one or more time segments to the video. Then, associate image thumbnails within those time segments. Assign each image thumbnail to an action such as a hyperlink, a Quickview, or an Experience Fragment.  
+1. **Adding interactivity to your video** - Add one or more time segments to the video. Then, associate image thumbnails within those time segments. Assign each image thumbnail to an action such as a hyperlink, a Quickview, or an Experience Fragment.
 
-   (Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.)  
+   (Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.)
 
-   Finish by publishing the interactive video assets. Publishing creates the embed code or URL that you will eventually copy and apply to your website landing page.See [Adding interactivity to your video](#adding-interactivity-to-your-video).  
+   Finish by publishing the interactive video assets. Publishing creates the embed code or URL that you will eventually copy and apply to your website landing page.See [Adding interactivity to your video](#adding-interactivity-to-your-video).
 
    See [Publishing Assets](publishing-dynamicmedia-assets.md).
 
 1. **Adding an interactive video to your website or to your website in AEM**
 
-   If you use AEM Sites, or AEM eCommerce, or both, you can add the interactive video directly to a web page in AEM by dragging the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md) 
+   If you use AEM Sites, or AEM eCommerce, or both, you can add the interactive video directly to a web page in AEM by dragging the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
-   Use the embed code or URL to integrate your interactive video with your website experiences. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).  
+   Use the embed code or URL to integrate your interactive video with your website experiences. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
 
-   If you are using a third party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quickview implementation that is used on your website. See [Integrating an interactive video with an existing Quickview](#integrating-an-interactive-video-with-an-existing-quickview).  
+   If you are using a third party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quickview implementation that is used on your website. See [Integrating an interactive video with an existing Quickview](#integrating-an-interactive-video-with-an-existing-quickview).
 
 ## (Optional) Identifying Quickview variables {#optional-identifying-quickview-variables}
 
@@ -140,44 +140,44 @@ However, in complex cases, the Quickview URL has different varying elements in a
 
 Consider the following examples of Quickview URLs and their resulting thumbnail variables:
 
-<table> 
-     <tbody> 
-      <tr> 
-       <td><p>Single SKU, found in the query string.</p> </td> 
-       <td><p>The recorded Quickview URLs include the following:</p> 
-        <ul> 
-         <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li> 
-         <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li> 
-         <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li> 
-         <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li> 
-        </ul> <p>The only variable part in the URL is the value of the <code>productId=</code> query string parameter, and it is clearly a SKU value. Therefore, our thumbnails only need SKU fields populated with values like <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td> 
-      </tr> 
-      <tr> 
-       <td><p>Single SKU, found in the URL path.</p> </td> 
-       <td><p>The recorded Quickview URLs include the following:</p> 
-        <ul> 
-         <li><p><code>https://server/product/6422350843</code></p> </li> 
-         <li><p><code>https://server/product/1607745002</code></p> </li> 
-         <li><p><code>https://server/product/0086724882</code></p> </li> 
-        </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of AEM thumbnails: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td> 
-      </tr> 
-      <tr> 
-       <td><p>SKU and category ID in the query string.</p> </td> 
-       <td><p>The recorded Quickview URLs include the following:</p> 
-        <ul> 
-         <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
-         <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li> 
-         <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li> 
-        </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID is stored in the <code>category=</code> parameter.</p> <p>As such, the thumbnail definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p> 
-        <ul> 
-         <li>SKU is <code>305466</code> and <code>categoryId</code> is <code>1100004</code></li> 
-         <li>SKU is <code>310181</code> and <code>categoryId</code> is <code>1100004</code></li> 
-         <li>SKU is <code>308706</code> and <code>categoryId</code> is <code>1740148</code></li> 
-        </ul> <p> </p> </td> 
-      </tr> 
-     </tbody> 
-    </table> </td> 
-  </tr> 
+<table>
+     <tbody>
+      <tr>
+       <td><p>Single SKU, found in the query string.</p> </td>
+       <td><p>The recorded Quickview URLs include the following:</p>
+        <ul>
+         <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+         <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+         <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+         <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+        </ul> <p>The only variable part in the URL is the value of the <code>productId=</code> query string parameter, and it is clearly a SKU value. Therefore, our thumbnails only need SKU fields populated with values like <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+      </tr>
+      <tr>
+       <td><p>Single SKU, found in the URL path.</p> </td>
+       <td><p>The recorded Quickview URLs include the following:</p>
+        <ul>
+         <li><p><code>https://server/product/6422350843</code></p> </li>
+         <li><p><code>https://server/product/1607745002</code></p> </li>
+         <li><p><code>https://server/product/0086724882</code></p> </li>
+        </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of AEM thumbnails: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+      </tr>
+      <tr>
+       <td><p>SKU and category ID in the query string.</p> </td>
+       <td><p>The recorded Quickview URLs include the following:</p>
+        <ul>
+         <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+         <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+         <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+        </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID is stored in the <code>category=</code> parameter.</p> <p>As such, the thumbnail definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p>
+        <ul>
+         <li>SKU is <code>305466</code> and <code>categoryId</code> is <code>1100004</code></li>
+         <li>SKU is <code>310181</code> and <code>categoryId</code> is <code>1100004</code></li>
+         <li>SKU is <code>308706</code> and <code>categoryId</code> is <code>1740148</code></li>
+        </ul> <p> </p> </td>
+      </tr>
+     </tbody>
+    </table> </td>
+  </tr>
   <tr>
 </table>
 
@@ -249,7 +249,7 @@ If you uploaded the wrong videos or images, or you want to delete uploaded video
 
 1. Upload the video and associated thumbnail assets to the folder or folders you want.
 
-   See [Uploading assets](managing-assets-touch-ui.md).  
+   See [Uploading assets](managing-assets-touch-ui.md).
 
    See [Uploading assets using FTP job scheduling](managing-assets-touch-ui.md).
 
@@ -276,18 +276,18 @@ After you save your interactive video, the video is immediately opened into Prev
 1. In the Assets view, navigate to the video that you uploaded and want to make interactive.
 1. Do one of the following:
 
-    * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). On the toolbar, tap **[!UICONTROL Edit]**. 
+    * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). On the toolbar, tap **[!UICONTROL Edit]**.
     * Hover on the image, then tap **[!UICONTROL More actions]** (three dots icon) &gt; **[!UICONTROL Edit]**.
     * Tap the image to open it in the Detail View page. On the toolbar, tap **[!UICONTROL Edit]**.
 
 1. On the **[!UICONTROL Create Interactive Video]** page, do any one of the following:
 
-    * Tap the **[!UICONTROL Play]** button to begin playing the video. When a particular product, service, or detail that you want to highlight comes into view, tap **[!UICONTROL Add Segment]** on the toolbar. Repeat until you have reached the end of the video.  
-  
+    * Tap the **[!UICONTROL Play]** button to begin playing the video. When a particular product, service, or detail that you want to highlight comes into view, tap **[!UICONTROL Add Segment]** on the toolbar. Repeat until you have reached the end of the video.
+
       For each time segment that you add, you can assign one or more thumbnail images to it and then link those thumbnails to Quickview product pages for customers to purchase or to web pages for more information.
 
-    * Tap the **[!UICONTROL Play]** button to begin playing the video. When a particular product, service, or detail that you want to highlight comes into view, tap **[!UICONTROL Pause]**. Tap **[!UICONTROL Add Segment]**.  
-  
+    * Tap the **[!UICONTROL Play]** button to begin playing the video. When a particular product, service, or detail that you want to highlight comes into view, tap **[!UICONTROL Pause]**. Tap **[!UICONTROL Add Segment]**.
+
       Continue playing and pausing the video at points along the timeline where you want to add a segment until you reach the end of the video.
 
 1. (Optional) Drag the bar on the **[!UICONTROL Timeline Scale Slider]** left to zoom in or right to zoom out, thereby controlling how much detail you see of the segments that you have added.
@@ -296,33 +296,33 @@ After you save your interactive video, the video is immediately opened into Prev
 
    Depending on the length of your video, the **[!UICONTROL Segment Duration]** defaults to the following values:
 
-   <table> 
-    <tbody> 
-      <tr> 
-      <td><strong>If the video length is...</strong></td> 
-      <td><strong>The Segment Duration setting defaults to...</strong></td> 
-      </tr> 
-      <tr> 
-      <td>3 minutes or more</td> 
-      <td>60 seconds</td> 
-      </tr> 
-      <tr> 
-      <td>2-3 minutes</td> 
-      <td>30 seconds</td> 
-      </tr> 
-      <tr> 
-      <td>1-2 minutes</td> 
-      <td>20 seconds<br /> </td> 
-      </tr> 
-      <tr> 
-      <td>30-60 seconds</td> 
-      <td>10 seconds</td> 
-      </tr> 
-      <tr> 
-      <td>30 seconds or less</td> 
-      <td>5 seconds</td> 
-      </tr> 
-    </tbody> 
+   <table>
+    <tbody>
+      <tr>
+      <td><strong>If the video length is...</strong></td>
+      <td><strong>The Segment Duration setting defaults to...</strong></td>
+      </tr>
+      <tr>
+      <td>3 minutes or more</td>
+      <td>60 seconds</td>
+      </tr>
+      <tr>
+      <td>2-3 minutes</td>
+      <td>30 seconds</td>
+      </tr>
+      <tr>
+      <td>1-2 minutes</td>
+      <td>20 seconds<br /> </td>
+      </tr>
+      <tr>
+      <td>30-60 seconds</td>
+      <td>10 seconds</td>
+      </tr>
+      <tr>
+      <td>30 seconds or less</td>
+      <td>5 seconds</td>
+      </tr>
+    </tbody>
    </table>
 
    The video timeline uses as much screen real estate as what is made available to it. As such, when you resize the browser, the segments you have added maintain their correct width.
@@ -349,10 +349,10 @@ After you save your interactive video, the video is immediately opened into Prev
 
 1. (Optional) Do any of the following:
 
-    * To adjust a segment's start time and end time.  
-  
-      Select a segment, then drag the leading or trailing blue oval to adjust the start or end time, respectively. The video frame displayed moves to the appropriate time in the video, based on your adjustments. The movement of the timeline segment is restricted based on any adjacent segments in the timeline. The minimum allowed segment time is one second.  
-  
+    * To adjust a segment's start time and end time.
+
+      Select a segment, then drag the leading or trailing blue oval to adjust the start or end time, respectively. The video frame displayed moves to the appropriate time in the video, based on your adjustments. The movement of the timeline segment is restricted based on any adjacent segments in the timeline. The minimum allowed segment time is one second.
+
       Use the following navigation shortcuts to quickly check and fine-tune your video segments:
 
         * Tap the leading blue oval to seek the video directly to the beginning of that segment.
@@ -363,32 +363,32 @@ After you save your interactive video, the video is immediately opened into Prev
 
    Repositioning the ending of a timeline segment
 
-    * To delete a segment  
-  
-      Select the last segment that is on the timeline, then on the toolbar, tap **[!UICONTROL Delete Segment]**. If two or more segments are selected, the **[!UICONTROL Delete Segment]** feature is disabled.  
-  
+    * To delete a segment
+
+      Select the last segment that is on the timeline, then on the toolbar, tap **[!UICONTROL Delete Segment]**. If two or more segments are selected, the **[!UICONTROL Delete Segment]** feature is disabled.
+
       You can only delete the last segment. For example, if you wanted to delete all the segments on the timeline, you must always select the last one, then tap **[!UICONTROL Delete Segment]**.
 
-1. Select a time segment to which you want to associate one or more thumbnail images. 
+1. Select a time segment to which you want to associate one or more thumbnail images.
 1. To the right of the video, tap the **[!UICONTROL Content]** tab.
-1. Under the **[!UICONTROL Content]** tab, tap **[!UICONTROL Select Assets]**, then browse and select all the image assets that you want to use with your video. The selected assets are added to the **[!UICONTROL Asset Selector]** panel in the **[!UICONTROL Content]** tab.  
+1. Under the **[!UICONTROL Content]** tab, tap **[!UICONTROL Select Assets]**, then browse and select all the image assets that you want to use with your video. The selected assets are added to the **[!UICONTROL Asset Selector]** panel in the **[!UICONTROL Content]** tab.
 
 1. In the asset selector below the Content tab, do any of the following:
-   <table> 
-    <tbody> 
-      <tr> 
-      <td>To associate a thumbnail to the selected timeline segment</td> 
-      <td><p>Tap the image in the asset selector panel on the right.</p> <p>You can add as many thumbnails as you want to a timeline segment. For each image you select, a check mark appears over the image in the asset selector.</p> </td> 
-      </tr> 
-      <tr> 
-      <td>To remove a thumbnail from the selected timeline segment</td> 
-      <td><p>Do any of the following:</p> 
-        <ul> 
-        <li>In the asset selector panel, tap an image with a check mark to deselect it. The image asset is removed from the timeline segment.<br /> </li> 
-        <li>In the selected timeline segment, tap an image, then on the toolbar, tap <strong>Delete Product</strong>.</li> 
-        </ul> </td> 
-      </tr> 
-    </tbody> 
+   <table>
+    <tbody>
+      <tr>
+      <td>To associate a thumbnail to the selected timeline segment</td>
+      <td><p>Tap the image in the asset selector panel on the right.</p> <p>You can add as many thumbnails as you want to a timeline segment. For each image you select, a check mark appears over the image in the asset selector.</p> </td>
+      </tr>
+      <tr>
+      <td>To remove a thumbnail from the selected timeline segment</td>
+      <td><p>Do any of the following:</p>
+        <ul>
+        <li>In the asset selector panel, tap an image with a check mark to deselect it. The image asset is removed from the timeline segment.<br /> </li>
+        <li>In the selected timeline segment, tap an image, then on the toolbar, tap <strong>Delete Product</strong>.</li>
+        </ul> </td>
+      </tr>
+    </tbody>
    </table>
 
    ![Asset picker](assets/chlimage_1-133.png)
@@ -397,51 +397,51 @@ After you save your interactive video, the video is immediately opened into Prev
 
 1. Select a single thumbnail image within one of the timeline segments, then tap the **[!UICONTROL Actions]** tab.
 1. Do any of the following:
-   <table> 
-    <tbody> 
-      <tr> 
-      <td>To associate the selected thumbnail image with a Quickview</td> 
-      <td><p>Under Action Type, tap <strong>Quickview</strong>.</p> <p>If you are an AEM Sites and Ecommerce customer:</p> 
-       <ul> 
-       <li>Notice that the SKU Value text field is pre-populated with the selected product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you are offering. This is populated automatically when the image is associated with a product in AEM Commerce.</li> 
-       <li>If the pre-populated SKU is incorrect, tap or click the Product Picker icon (magnifying glass) to open the Select Product page. Tap or click the product you want to use, then tap the check mark in the upper-right corner of the page to return to the Interactive Video Editor.</li> 
-       </ul> <p> If you are <em>not</em> an AEM Sites or Ecommerce customer</p> 
-       <ul> 
-       <li>See <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identifying hotspot variables</a>. You will need to define these variables. </li> 
-       <li>By default, this SKU field uses the image asset's filename without the extension. If you follow a standard naming convention for your files based on SKU, then this typically does not require any additional edits. </li> 
-       <li>Otherwise, edit the default value and enter the correct SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quickview template so that the system knows to associate the tapped image with a particular SKU's Quickview.</li> 
-       </ul> <p>(Optional) If there are other variables within the Quickview that you need to use to further identify a product, tap <strong>Add Generic Variable</strong>. In the text field, specify an additional variable. For example, <code>category=Womens</code> is an added variable.</p> <p> </p> </td> 
-      </tr> 
-      <tr> 
-      <td>To associate the selected thumbnail image with a hyperlink</td> 
-      <td><p>Under Action Type, tap <strong>Hyperlink</strong>, then do one of the following:</p> 
-       <ul> 
-       <li>If you are an AEM Sites customer, tap the Site Selector icon (folder) to navigate to a webpage. Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.</li> 
-       <li>If you are a standalone Dynamic Media customer, in the HREF text field, specify the full URL path to a linked web page.</li> 
-       </ul> <p>Be sure you specify whether to open the link in a new browser tab or in the current tab.</p> </td> 
-      </tr> 
-      <tr> 
-      <td>To associate the selected thumbnail image with an Experience Fragment</td> 
-      <td><p>Under Action Type, tap <strong>Experience Fragment</strong>, then do the following:<p> 
-       <ul> 
-       <li>If you are an AEM Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap <strong>Select </strong>in the upper-right corner of the page to return to the Actions panel on the previous page.<br /> See <a href="/help/sites-authoring/experience-fragments.md">Experience Fragments</a>.</li> 
-      </ul> 
-       <ul> 
+   <table>
+    <tbody>
+      <tr>
+      <td>To associate the selected thumbnail image with a Quickview</td>
+      <td><p>Under Action Type, tap <strong>Quickview</strong>.</p> <p>If you are an AEM Sites and Ecommerce customer:</p>
+       <ul>
+       <li>Notice that the SKU Value text field is pre-populated with the selected product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you are offering. This is populated automatically when the image is associated with a product in AEM Commerce.</li>
+       <li>If the pre-populated SKU is incorrect, tap or click the Product Picker icon (magnifying glass) to open the Select Product page. Tap or click the product you want to use, then tap the check mark in the upper-right corner of the page to return to the Interactive Video Editor.</li>
+       </ul> <p> If you are <em>not</em> an AEM Sites or Ecommerce customer</p>
+       <ul>
+       <li>See <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identifying hotspot variables</a>. You will need to define these variables. </li>
+       <li>By default, this SKU field uses the image asset's filename without the extension. If you follow a standard naming convention for your files based on SKU, then this typically does not require any additional edits. </li>
+       <li>Otherwise, edit the default value and enter the correct SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quickview template so that the system knows to associate the tapped image with a particular SKU's Quickview.</li>
+       </ul> <p>(Optional) If there are other variables within the Quickview that you need to use to further identify a product, tap <strong>Add Generic Variable</strong>. In the text field, specify an additional variable. For example, <code>category=Womens</code> is an added variable.</p> <p> </p> </td>
+      </tr>
+      <tr>
+      <td>To associate the selected thumbnail image with a hyperlink</td>
+      <td><p>Under Action Type, tap <strong>Hyperlink</strong>, then do one of the following:</p>
+       <ul>
+       <li>If you are an AEM Sites customer, tap the Site Selector icon (folder) to navigate to a webpage. Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.</li>
+       <li>If you are a standalone Dynamic Media customer, in the HREF text field, specify the full URL path to a linked web page.</li>
+       </ul> <p>Be sure you specify whether to open the link in a new browser tab or in the current tab.</p> </td>
+      </tr>
+      <tr>
+      <td>To associate the selected thumbnail image with an Experience Fragment</td>
+      <td><p>Under Action Type, tap <strong>Experience Fragment</strong>, then do the following:<p>
+       <ul>
+       <li>If you are an AEM Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap <strong>Select </strong>in the upper-right corner of the page to return to the Actions panel on the previous page.<br /> See <a href="/help/sites-authoring/experience-fragments.md">Experience Fragments</a>.</li>
+      </ul>
+       <ul>
        <li>Specify the width and height of the Experience Fragment as it will appear on the video.</li>
-       </ul><strong>Note</strong>: Be aware that the social media sharing tools in Interactive Video are not supported when you embed the viewer in an Experience Fragment. To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.</p></tr>< 
-      <tr> 
-      <td>To edit an action already assigned to a thumbnail image</td> 
-      <td>Within a timeline segment, tap a thumbnail image that has a chain link to the right of its text label. The chain link indicates that an action is assigned to it. Tap the <strong>Actions</strong> tab to make your changes.</td> 
-      </tr> 
-      <tr> 
-      <td>To change the text label of a thumbnail image</td> 
-      <td><p>By default, the text label uses the thumbnail image’s <code>Title</code> metadata field. If <code>Title</code> is not present, the thumbnail image's filename is used instead, but without the extension.</p> <p>To change the text label of a thumbnail image, under the <strong>Actions </strong>tab, directly below the image asset that is displayed, enter the desired text. See the illustration below.</p> <p>Note that the new text label is used only by the video player itself and the thumbnail text that is displayed in the timeline segment. The label change does not affect the thumbnail image's Title metadata field nor its filename.</p> </td> 
-      </tr> 
-      <tr> 
-      <td>To revert a change you have made</td> 
-      <td>Near the upper-right corner of the page, tap <strong>Undo</strong> or <strong>Redo</strong>.</td> 
-      </tr> 
-    </tbody> 
+       </ul><strong>Note</strong>: Be aware that the social media sharing tools in Interactive Video are not supported when you embed the viewer in an Experience Fragment. To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.</p></tr><
+      <tr>
+      <td>To edit an action already assigned to a thumbnail image</td>
+      <td>Within a timeline segment, tap a thumbnail image that has a chain link to the right of its text label. The chain link indicates that an action is assigned to it. Tap the <strong>Actions</strong> tab to make your changes.</td>
+      </tr>
+      <tr>
+      <td>To change the text label of a thumbnail image</td>
+      <td><p>By default, the text label uses the thumbnail image’s <code>Title</code> metadata field. If <code>Title</code> is not present, the thumbnail image's filename is used instead, but without the extension.</p> <p>To change the text label of a thumbnail image, under the <strong>Actions </strong>tab, directly below the image asset that is displayed, enter the desired text. See the illustration below.</p> <p>Note that the new text label is used only by the video player itself and the thumbnail text that is displayed in the timeline segment. The label change does not affect the thumbnail image's Title metadata field nor its filename.</p> </td>
+      </tr>
+      <tr>
+      <td>To revert a change you have made</td>
+      <td>Near the upper-right corner of the page, tap <strong>Undo</strong> or <strong>Redo</strong>.</td>
+      </tr>
+    </tbody>
    </table>
 
    ![experiencefragment_interactivevideos](assets/experiencefragment_interactivevideos.png)
@@ -455,11 +455,11 @@ After you save your interactive video, the video is immediately opened into Prev
 
 1. (Optional) Do either of the following:
 
-    * **[!UICONTROL Merge Segment]** - You can combine two adjacent segments (with or without product thumbnails assigned to them) into one segment.  
-  
+    * **[!UICONTROL Merge Segment]** - You can combine two adjacent segments (with or without product thumbnails assigned to them) into one segment.
+
       On the timeline, tap two or more contiguous segments that you want to merge into one. Note that there are no blue oval drag handles on the two selected segments in the illustration below.
 
-      Tap **[!UICONTROL Merge Segment]** on the toolbar. 
+      Tap **[!UICONTROL Merge Segment]** on the toolbar.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -513,14 +513,14 @@ If you are a standalone AEM Assets customer, you can manually add the interactiv
 
 **To integrate an interactive video with your website**:
 
-1. Copy the published interactive video's embed code or URL.  
+1. Copy the published interactive video's embed code or URL.
 
-   See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).  
+   See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
    If you added interactivity with Quickviews, only use the embed code; if you added interactivity with hyperlinked webpages, you can also use the published URL. Note, however, that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
 
-1. In the target's web page code, identify where the static video is located.  
-1. Remove the static video and replace the code with the embed code or URL that you copied from AEM Assets, as is.  
+1. In the target's web page code, identify where the static video is located.
+1. Remove the static video and replace the code with the embed code or URL that you copied from AEM Assets, as is.
 
    The copied embed code is set for a responsive environment so it should automatically fit the area previously occupied by the static video.
 
@@ -541,7 +541,7 @@ Notice that it is standard video embed code:
 ```xml
 <style type="text/css">
  #s7video_div.s7videoviewer{
-   width:100%; 
+   width:100%;
    height:auto;
  }
 </style>
@@ -551,9 +551,9 @@ Notice that it is standard video embed code:
 <script type="text/javascript">
  var s7videoviewer = new s7viewers.VideoViewer({
   "containerId" : "s7video_div",
-  "params" : { 
+  "params" : {
    "serverurl" : "https://adobedemo62-h.assetsadobe.com/is/image",
-   "contenturl" : "https://demos-pub.assetsadobe.com/", 
+   "contenturl" : "https://demos-pub.assetsadobe.com/",
    "config" : "/etc/dam/presets/viewer/Video",
    "config2": "/etc/dam/presets/analytics",
    "videoserverurl": "https://gateway-na.assetsadobe.com/DMGateway/public/demoCo",
@@ -603,7 +603,7 @@ The embed code returned by AEM already has a ready-to-use event handler in place
 ```xml
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
-   width:100%; 
+   width:100%;
    height:auto;
  }
 </style>
@@ -613,9 +613,9 @@ The embed code returned by AEM already has a ready-to-use event handler in place
 <script type="text/javascript">
  var s7interactivevideoviewer = new s7viewers.InteractiveVideoViewer({
   "containerId" : "s7interactivevideo_div",
-  "params" : { 
+  "params" : {
    "serverurl" : "https://adobedemo62-h.assetsadobe.com/is/image",
-   "contenturl" : "https://demos-pub.assetsadobe.com/", 
+   "contenturl" : "https://demos-pub.assetsadobe.com/",
    "config" : "/etc/dam/presets/viewer/Shoppable_Video_light",
    "config2": "/etc/dam/presets/analytics",
    "videoserverurl": "https://gateway-na.assetsadobe.com/DMGateway/public/demoCo",
@@ -624,21 +624,21 @@ The embed code returned by AEM already has a ready-to-use event handler in place
    "asset" : "/content/dam/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4" }
  })
  /* // Example of interactive video event for quickview.
-   s7interactivevideoviewer.setHandlers({ 
+   s7interactivevideoviewer.setHandlers({
    "quickViewActivate": function(inData) {
      var sku=inData.sku; //SKU for product ID
     //To pass other parameter from the hotspot, you need to add custom parameter during the hotspot setup as parameterName=value
     loadQuickView(sku); //Replace this call with your quickview plugin
     //Please refer to your quickviewer plugin for the quickview call
-    }, 
-"initComplete":function() { 
+    },
+"initComplete":function() {
     //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---
     var popup = document.getElementById('quickview_div'); // get custom quickview container
     popup.parentNode.removeChild(popup); // remove it from current DOM
     var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
-    var inner_container = document.getElementById(sdkContainerId); 
+    var inner_container = document.getElementById(sdkContainerId);
     inner_container.appendChild(popup); //Attach custom quickview container to viewer
-    } 
+    }
    });
  */
  s7interactivevideoviewer.init();
@@ -651,37 +651,37 @@ There are two default callback handlers present in the standard embed code: `qui
 
 The process of constructing the Quickview URL is opposite to the process of identifying thumbnail variables covered earlier in this topic. Using our previously identified Quickview URL examples, you can see how the Quickview URL is constructed in each case:
 
-<table> 
-     <tbody> 
-      <tr> 
-       <td><p>Single SKU, found in the query string</p> </td> 
+<table>
+     <tbody>
+      <tr>
+       <td><p>Single SKU, found in the query string</p> </td>
        <td><code class="code">s7interactivevideoviewer.setHandlers({
           "quickViewActivate": function(inData) {
           var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
           },
-          });</code></td> 
-      </tr> 
-      <tr> 
-       <td>Single SKU, found in the URL path</td> 
+          });</code></td>
+      </tr>
+      <tr>
+       <td>Single SKU, found in the URL path</td>
        <td><code class="code">s7interactivevideoviewer.setHandlers({
           "quickViewActivate": function(inData) {
           var quickViewUrl = "https://server/product/" + inData.sku;
           },
-          });</code></td> 
-      </tr> 
-      <tr> 
-       <td><p>SKU and category ID in the query string</p> </td> 
+          });</code></td>
+      </tr>
+      <tr>
+       <td><p>SKU and category ID in the query string</p> </td>
        <td><code class="code">s7interactivevideoviewer.setHandlers({
           "quickViewActivate": function(inData) {
           var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
           },
-          });</code></td> 
-      </tr> 
-     </tbody> 
-    </table> </td> 
-  </tr> 
-  <tr></tr> 
- </tbody> 
+          });</code></td>
+      </tr>
+     </tbody>
+    </table> </td>
+  </tr>
+  <tr></tr>
+ </tbody>
 </table>
 
 The last step to trigger the Quickview URL and activate the Quickview panel most likely requires the assistance of a front-end IT person from your IT department. They have the knowledge to know best how to accurately trigger the Quickview implementation from the proper step, having a ready-to-use Quickview URL.
@@ -731,7 +731,7 @@ The complete source code is as follows:
 ```xml
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
-   width:100%; 
+   width:100%;
    height:auto;
  }
 </style>
@@ -741,9 +741,9 @@ The complete source code is as follows:
 <script type="text/javascript">
  var s7interactivevideoviewer = new s7viewers.InteractiveVideoViewer({
   "containerId" : "s7interactivevideo_div",
-  "params" : { 
+  "params" : {
    "serverurl" : "https://adobedemo62-h.assetsadobe.com/is/image",
-   "contenturl" : "https://demos-pub.assetsadobe.com/", 
+   "contenturl" : "https://demos-pub.assetsadobe.com/",
    "config" : "/etc/dam/presets/viewer/Shoppable_Video_light",
    "videoserverurl": "https://gateway-na.assetsadobe.com/DMGateway/public/demoCo",
    "interactivedata": "content/dam/_VTT/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4.svideo.vtt",
@@ -751,19 +751,19 @@ The complete source code is as follows:
    "asset" : "/content/dam/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4" }
  })
  // Example of interactive video event for quickview.
-   s7interactivevideoviewer.setHandlers({ 
+   s7interactivevideoviewer.setHandlers({
    "quickViewActivate": function(inData) {
      var sku=inData.sku; //SKU for product ID
      var categoryId=inData.categoryId; //categoryId
     var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
     loadQuickView(quickViewUrl);
     },
-   "initComplete":function() { 
+   "initComplete":function() {
     //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---
     var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
     var inner_container = document.getElementById(sdkContainerId);
     inner_container.appendChild(document.getElementById("quickview-modal"));
-    } 
+    }
    });
  s7interactivevideoviewer.init();
 </script>

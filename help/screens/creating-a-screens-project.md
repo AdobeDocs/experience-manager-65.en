@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about creating a new Screens project.
 uuid: c73126ca-18d0-45b4-bdde-a3653082bfc4
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 00ea321c-3f79-4aa5-83cc-3fa2fe9e35d9
 ---
@@ -56,17 +56,17 @@ In a project, there are four kind of folders, as shown in the figure below:
 * **Channels**
 * **Devices**
 
-![screen_shot_2018-08-23at110114am](assets/screen_shot_2018-08-23at110114am.png) 
+![screen_shot_2018-08-23at110114am](assets/screen_shot_2018-08-23at110114am.png)
 
 ### Viewing Properties {#viewing-properties}
 
-Once you create the Screens project, click **Properties** on the action bar to edit properties of an exiting AEM Screens project. 
+Once you create the Screens project, click **Properties** on the action bar to edit properties of an exiting AEM Screens project.
 
 ![screen_shot_2018-08-23at110211am](assets/screen_shot_2018-08-23at110211am.png)
 
 The following options allow you to edit/change properties of your *DemoProject*.
 
-![screen_shot_2018-08-23at110409am](assets/screen_shot_2018-08-23at110409am.png) 
+![screen_shot_2018-08-23at110409am](assets/screen_shot_2018-08-23at110409am.png)
 
 ### Creating a Custom Folder {#creating-a-custom-folder}
 
@@ -74,14 +74,14 @@ You can also create your own custom folder under **Schedules**, **Locations**, *
 
 To create a custom folder:
 
-1. Select your project and click on **Create** next to plus icon in the action bar. 
+1. Select your project and click on **Create** next to plus icon in the action bar.
 1. The **Create** wizard opens and select the appropriate option.
 1. Click **Next**.
 1. Enter the properties and click **Create**.
 
 The following steps show the creation of an applications folder to your **Applications** master page in *DemoProject*.
 
-![player2-1](assets/player2-1.gif) 
+![player2-1](assets/player2-1.gif)
 
 ### The Next Steps {#the-next-steps}
 

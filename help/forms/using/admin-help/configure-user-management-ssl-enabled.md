@@ -7,7 +7,7 @@ uuid: 4b3f8ac7-fa38-4adf-a851-82d55fe431fe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 ---
 
@@ -15,7 +15,7 @@ discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 
 For synchronization to work properly over LDAPS, the LDAP certificates that the certificate authority (CA) issued must be present in the application server’s Java runtime environment (JRE). Import the certificate into the application server’s JRE cacerts file, which is usually in the *[JAVA_HOME]*/jre/lib/security/cacerts directory.
 
-1. Enable SSL on the directory server. For details, see the documentation provided by your directory vendor. 
+1. Enable SSL on the directory server. For details, see the documentation provided by your directory vendor.
 1. Export a client certificate from the directory server.
 1. Use the keytool program to import the client certificate file into the default Java virtual machine (JVM™) certificate store of the AEM forms application server . The procedure for this task varies, depending on your JVM and client installation paths. For example, if you use BEA WebLogic Server with JDK 1.5, from a command prompt, type this text:
 

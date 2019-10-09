@@ -5,7 +5,7 @@ description: Learn how to monitor AEM.
 seo-description: Learn how to monitor AEM.
 uuid: 371791ab-2ea3-4d77-9db5-e1672c6b0831
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
@@ -41,7 +41,7 @@ Your company will probably have a backup policy that you will need to follow, ad
 * how critical the system and data is.
 * how often changes are made to either the software or data.
 * volume of data; capacity can occasionally be an issue, as can the time needed to perform the backup.
-* whether your backup can be made while users are online; and if possible, what is the performance impact.  
+* whether your backup can be made while users are online; and if possible, what is the performance impact.
 * the geographical distribution of users; i.e. when is the best time to backup (to minimize impact)?
 * your disaster recovery policy; are there guidelines on where the backup data has to be stored (e.g. offsite, specific medium, etc).
 
@@ -49,7 +49,7 @@ Often a full backup is taken at regular intervals (e.g. daily, weekly or monthly
 
 >[!CAUTION]
 >
->When implementing backups of your production instances, tests *must* be made to ensure that the backup can be successfully restored.  
+>When implementing backups of your production instances, tests *must* be made to ensure that the backup can be successfully restored.
 >
 >Without this, the backup is potentially useless (worst case scenario).
 
@@ -120,9 +120,9 @@ To purge versions of a web site, proceed as follows:
     * If you want to only purge the node defined by your path, unselect **Recursive**.
     * If you want to purge the node defined by your path and its descendants select **Recursive**.
 
-1. Set the maximum number of versions (for each node) that you want to keep. Leave empty to not use this setting.  
+1. Set the maximum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
 
-1. Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.  
+1. Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.
 
 1. Click **Dry Run** to preview what the purge process would do.
 1. Click **Purge** to launch the process.
@@ -135,7 +135,7 @@ To purge versions of a web site, proceed as follows:
 
 The **Dry Run** and **Purge** processes list all the nodes that have been processed. During the process, a node can have one of the following status:
 
-* `ignore (not versionnable)`: the node does not support versioning and is ignored during the process.  
+* `ignore (not versionnable)`: the node does not support versioning and is ignored during the process.
 * `ignore (no version)`: the node does not have any version and is ignored during the process. ``
 * `retained`: the node is not purged.
 * `purged`: the node is purged.
@@ -143,7 +143,7 @@ The **Dry Run** and **Purge** processes list all the nodes that have been proces
 Moreover the console provides useful information about the versions:
 
 * `V 1.0`: the version number.
-* `V 1.0.1`&ast;: the star indicates that the version is the current one.  
+* `V 1.0.1`&ast;: the star indicates that the version is the current one.
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: the date of the version.
 
 In the next example:
@@ -151,7 +151,7 @@ In the next example:
 * The **Shirts** versions are purged because their version age is greater than 2 days.
 * The **Tonga Fashions!** versions are purged because their number of versions is greater than 5.
 
-![global_version_screenshot](assets/global_version_screenshot.png) 
+![global_version_screenshot](assets/global_version_screenshot.png)
 
 ## Working with Audit Records and Log Files {#working-with-audit-records-and-log-files}
 
@@ -168,7 +168,7 @@ AEM WCM records detailed logs. After you unpack and start Quickstart, you can fi
 
 Log file rotation refers to the process that limits the growth of file by creating new file periodically. In AEM, a log file called `error.log` will be rotated once a day according to the given rules:
 
-* The `error.log` file is renamed according to the pattern {original_filename} `.yyyy-MM-dd`. For example on July 2010 11th, the current log file is renamed `error.log-2010-07-10`, then a new `error.og` is created.  
+* The `error.log` file is renamed according to the pattern {original_filename} `.yyyy-MM-dd`. For example on July 2010 11th, the current log file is renamed `error.log-2010-07-10`, then a new `error.og` is created.
 * Previous log files are not deleted, so it is your responsibility to clean old log files periodically to limit the disk usage.
 
 >[!NOTE]
@@ -184,42 +184,42 @@ Various log files are held on the file server where you installed AEM:
     * `access.log`
 
       All access requests to AEM WCM and the repository are registered here.
-    
-    * `audit.log` 
+
+    * `audit.log`
 
       Moderation actions are registered here.
-    
-    * `error.log` 
+
+    * `error.log`
 
       Error messages (of varying levels of severity) are registered here.
-    
-    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html) 
 
-      This log is only used if dynamic media is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process. 
-    
-    * `request.log` 
+    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)
+
+      This log is only used if dynamic media is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process.
+
+    * `request.log`
 
       Each access request is registered here together with the response.
-    
-    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html) 
+
+    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)
 
       This log is only used if dynamic media is enabled. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
-    
-    * `stderr.log` 
 
-      Holds error messages, again of varying levels of severity, generated during startup. By default the log level is set to `Warning` ( `WARN`) 
-    
-    * `stdout.log` 
+    * `stderr.log`
+
+      Holds error messages, again of varying levels of severity, generated during startup. By default the log level is set to `Warning` ( `WARN`)
+
+    * `stdout.log`
 
       Holds logging messages indicating events during startup.
-    
-    * `upgrade.log` 
+
+    * `upgrade.log`
 
       Provides a log of all upgrade operations that runs from the `com.day.compat.codeupgrade` and `com.adobe.cq.upgradesexecutor` packages.
 
 * `<cq-installation-dir>/crx-quickstart/repository`
 
-    * `revision.log` 
+    * `revision.log`
 
       Revision journaling information.
 
@@ -263,11 +263,11 @@ In certain circumstances you may want to create a custom log file with a differe
 1. Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
     * Name:
-    
-    `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (as this is a Logger) 
 
-      Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.config-MINE` 
-    
+    `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (as this is a Logger)
+
+      Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+
     * Type: `sling:OsgiConfig`
 
    >[!NOTE]
@@ -276,15 +276,15 @@ In certain circumstances you may want to create a custom log file with a differe
 
 1. Set the following properties on this node:
 
-    * Name: `org.apache.sling.commons.log.file` 
+    * Name: `org.apache.sling.commons.log.file`
 
-      Type: String  
+      Type: String
 
       Value: specify the Log File; for example, `logs/myLogFile.log`
 
-    * Name: `org.apache.sling.commons.log.names`  
+    * Name: `org.apache.sling.commons.log.names`
 
-      Type: `String[] (String + Multi)`  
+      Type: `String[] (String + Multi)`
 
       Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
 
@@ -292,32 +292,32 @@ In certain circumstances you may want to create a custom log file with a differe
         * `org.apache.felix`
         *  `com.day`
 
-    * Name: `org.apache.sling.commons.log.level`  
+    * Name: `org.apache.sling.commons.log.level`
 
-      Type: String  
+      Type: String
 
-      Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug` 
-    
+      Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug`
+
     * Configure the other parameters as required:
 
-        * Name: `org.apache.sling.commons.log.pattern` 
+        * Name: `org.apache.sling.commons.log.pattern`
 
-          Type: `String`  
+          Type: `String`
 
-          Value: specify the pattern of the log message as required; for example,  
+          Value: specify the pattern of the log message as required; for example,
 
           `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
    >
-   >`org.apache.sling.commons.log.pattern` supports up to six arguments. 
+   >`org.apache.sling.commons.log.pattern` supports up to six arguments.
    >
-   >{0} The timestamp of type `java.util.Date` 
+   >{0} The timestamp of type `java.util.Date`
    >{1} the log marker
-   >{2} the name of the current thread  
-   >{3} the name of the logger  
-   >{4} the log level  
-   >{5} the log message  
+   >{2} the name of the current thread
+   >{3} the name of the logger
+   >{4} the log level
+   >{5} the log message
    >
    >If the log call includes a `Throwable` the stacktrace is appended to the message.
 
@@ -331,7 +331,7 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >Therefore, a log file specified as:
    >
-   >`logs/thelog.log`  
+   >`logs/thelog.log`
    >
    >writes to:
    >
@@ -339,26 +339,26 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >And a log file specified as:
    >
-   >`../logs/thelog.log`  
+   >`../logs/thelog.log`
    >
    >writes to a directory:
    >
-   >`<cq-installation-dir>/logs/`  
+   >`<cq-installation-dir>/logs/`
    >(i.e. next to `<cq-installation-dir>/crx-quickstart/`)
 
 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
 
    >[!CAUTION]
    >
-   >A new Logging Writer Configuration is only required when the existing default is not suitable.  
+   >A new Logging Writer Configuration is only required when the existing default is not suitable.
    >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
 
    Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
-    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer) 
+    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer)
 
       As with the Logger, `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
-    
+
     * Type: `sling:OsgiConfig`
 
    >[!NOTE]
@@ -367,25 +367,25 @@ In certain circumstances you may want to create a custom log file with a differe
 
    Set the following properties on this node:
 
-    * Name: `org.apache.sling.commons.log.file`   
+    * Name: `org.apache.sling.commons.log.file`
 
-      Type: `String`  
+      Type: `String`
 
-      Value: specify the Log File so that it matches the file specified in the Logger;   
+      Value: specify the Log File so that it matches the file specified in the Logger;
 
-      for this example, `../logs/myLogFile.log`.  
-    
+      for this example, `../logs/myLogFile.log`.
+
     * Configure the other parameters as required:
 
-        * Name: `org.apache.sling.commons.log.file.number`  
+        * Name: `org.apache.sling.commons.log.file.number`
 
-          Type: `Long`  
+          Type: `Long`
 
-          Value: specify the number of log files you want kept; for example, `5`  
-        
-        * Name: `org.apache.sling.commons.log.file.size`  
+          Value: specify the number of log files you want kept; for example, `5`
 
-          Type: `String`  
+        * Name: `org.apache.sling.commons.log.file.size`
+
+          Type: `String`
 
           Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
 
@@ -394,16 +394,16 @@ In certain circumstances you may want to create a custom log file with a differe
    >`org.apache.sling.commons.log.file.size` controls the rotation of the log file by setting either:
    >
    >* a maximum file size
-   >* a time/date schedule   
+   >* a time/date schedule
    >
-   >to indicate when a new file will be created (and the existing file renamed according to the name pattern).  
+   >to indicate when a new file will be created (and the existing file renamed according to the name pattern).
    >
    >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
    >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
    >
    >  The default is '.'yyyy-MM-dd (for daily log rotation).
    >
-   >  So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.  
+   >  So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
    >
    >  | `'.'yyyy-MM` |Rotation at the beginning of each month |
    >  |---|---|
@@ -451,7 +451,7 @@ These entries hold the same information as shown when editing a page.
 
 OSGi events also generate audit records which can be seen from the **Configuration Status** tab -&gt; **Log Files **tab in the AEM Web Console:
 
-![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png) 
+![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
 ## Monitoring Your Replication Agents {#monitoring-your-replication-agents}
 
@@ -490,9 +490,9 @@ To monitor a replication agent:
    >
    >Do not use the "Test Connection" link for the Reverse Replication Outbox on a publish instance.
    >
-   >If a replication test is performed for an Outbox queue, any items that are older than the test replication will be re-processed with every reverse replication.  
+   >If a replication test is performed for an Outbox queue, any items that are older than the test replication will be re-processed with every reverse replication.
    >
-   >If such items already exist in a queue, they can be found with the following XPath JCR query and should be removed.  
+   >If such items already exist in a queue, they can be found with the following XPath JCR query and should be removed.
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
@@ -554,89 +554,89 @@ The following gives a short overview of some of the tools available for monitori
 
 Some of these will be dependent on your operating system.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Tool</td> 
-   <td>Used to analyze...</td> 
-   <td>Usage / More information...</td> 
-  </tr> 
-  <tr> 
-   <td>request.log</td> 
-   <td>Response times and concurrency.</td> 
-   <td><a href="#interpreting-the-request-log">Interpreting the request.log</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>truss/strace</td> 
-   <td>Page Loads</td> 
-   <td><p>Unix/Linux commands to trace system calls and signals. Increase the log level to <code>INFO</code>.</p> <p>Analyze the number of page loads per request, which pages, etc.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Thread dumps</td> 
-   <td>Observe JVM threads. Identify contentions, locks and long-runners.</td> 
-   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analysis tools are also available, such as <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td>Heap Dumps</td> 
-   <td>Out of Memory issues that cause slow performance.</td> 
-   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>See the <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Troubleshooting Guide for Java SE 6 with HotSpot VM</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>System calls</td> 
-   <td>Identify timing issues.</td> 
-   <td><p>Calls to <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing are used to generate timestamps from your code, or via <a href="#html-comments">HTML-comments</a>.</p> <p><strong>Note:</strong> These should be implemented so that they can be activated / deactivated as required; when a system is running smoothly the overhead of collecting statistics will not be needed.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Apache Bench</td> 
-   <td>Identify memory leaks, selectively analyze response time.</td> 
-   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> for full details.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Search Analysis</td> 
-   <td> </td> 
-   <td>Execute search queries offline, identify response time of query, test and confirm result set.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>JMeter</td> 
-   <td>Load and functional tests.</td> 
-   <td><a href="https://jakarta.apache.org/jmeter/">https://jakarta.apache.org/jmeter/</a></td> 
-  </tr> 
-  <tr> 
-   <td>JProfiler</td> 
-   <td>In-depth CPU and memory profiling.</td> 
-   <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td> 
-  </tr> 
-  <tr> 
-   <td>JConsole</td> 
-   <td>Observe JVM metrics and threads.</td> 
-   <td><p>Usage: jconsole</p> <p>See <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> and <a href="#monitoring-performance-using-jconsole">Monitoring Performance using JConsole</a>.</p> <p><strong>Note:</strong> With JDK 1.6, JConsole is extensible with plug-ins; for example, Top or TDA (Thread Dump Analyzer).</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Java VisualVM</td> 
-   <td>Observe JVM metrics, threads, memory and profiling.</td> 
-   <td><p>Usage: jvisualvm or visualvm<br /> </p> <p>See <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> and <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance using (J)VisualVM</a>.</p> <p><strong>Note:</strong> With JDK 1.6, VisualVM is extensible with plug-ins.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>truss/strace, lsof</td> 
-   <td>In depth kernel call and process analysis (Unix).</td> 
-   <td>Unix/Linux commands.</td> 
-  </tr> 
-  <tr> 
-   <td>Timing Statistics</td> 
-   <td>See timing statistics for page rendering.</td> 
-   <td><p>To see timing statistics for page rendering you can use <strong>Ctrl-Shift-U</strong> together with <code>?debugClientLibs=true</code> set in the URL.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>CPU and memory profiling tool<br /> </td> 
-   <td><a href="#interpreting-the-request-log">Used when analyzing slow requests during development</a>.</td> 
-   <td>For example, <a href="https://www.yourkit.com/">YourKit</a>.</td> 
-  </tr> 
-  <tr> 
-   <td><a href="#information-collection">Information Collection</a></td> 
-   <td>The ongoing state of your installation.</td> 
-   <td>Knowing as much as possible about your installation can also help you track down what might have caused a change in performance, and whether these changes are justified. These metrics need to be collected at regular intervals so you can easily see significant changes.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Tool</td>
+   <td>Used to analyze...</td>
+   <td>Usage / More information...</td>
+  </tr>
+  <tr>
+   <td>request.log</td>
+   <td>Response times and concurrency.</td>
+   <td><a href="#interpreting-the-request-log">Interpreting the request.log</a>.</td>
+  </tr>
+  <tr>
+   <td>truss/strace</td>
+   <td>Page Loads</td>
+   <td><p>Unix/Linux commands to trace system calls and signals. Increase the log level to <code>INFO</code>.</p> <p>Analyze the number of page loads per request, which pages, etc.</p> </td>
+  </tr>
+  <tr>
+   <td>Thread dumps</td>
+   <td>Observe JVM threads. Identify contentions, locks and long-runners.</td>
+   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analysis tools are also available, such as <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+  </tr>
+  <tr>
+   <td>Heap Dumps</td>
+   <td>Out of Memory issues that cause slow performance.</td>
+   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>See the <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Troubleshooting Guide for Java SE 6 with HotSpot VM</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>System calls</td>
+   <td>Identify timing issues.</td>
+   <td><p>Calls to <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing are used to generate timestamps from your code, or via <a href="#html-comments">HTML-comments</a>.</p> <p><strong>Note:</strong> These should be implemented so that they can be activated / deactivated as required; when a system is running smoothly the overhead of collecting statistics will not be needed.</p> </td>
+  </tr>
+  <tr>
+   <td>Apache Bench</td>
+   <td>Identify memory leaks, selectively analyze response time.</td>
+   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> for full details.</p> </td>
+  </tr>
+  <tr>
+   <td>Search Analysis</td>
+   <td> </td>
+   <td>Execute search queries offline, identify response time of query, test and confirm result set.<br /> </td>
+  </tr>
+  <tr>
+   <td>JMeter</td>
+   <td>Load and functional tests.</td>
+   <td><a href="https://jakarta.apache.org/jmeter/">https://jakarta.apache.org/jmeter/</a></td>
+  </tr>
+  <tr>
+   <td>JProfiler</td>
+   <td>In-depth CPU and memory profiling.</td>
+   <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
+  </tr>
+  <tr>
+   <td>JConsole</td>
+   <td>Observe JVM metrics and threads.</td>
+   <td><p>Usage: jconsole</p> <p>See <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> and <a href="#monitoring-performance-using-jconsole">Monitoring Performance using JConsole</a>.</p> <p><strong>Note:</strong> With JDK 1.6, JConsole is extensible with plug-ins; for example, Top or TDA (Thread Dump Analyzer).</p> </td>
+  </tr>
+  <tr>
+   <td>Java VisualVM</td>
+   <td>Observe JVM metrics, threads, memory and profiling.</td>
+   <td><p>Usage: jvisualvm or visualvm<br /> </p> <p>See <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> and <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance using (J)VisualVM</a>.</p> <p><strong>Note:</strong> With JDK 1.6, VisualVM is extensible with plug-ins.</p> </td>
+  </tr>
+  <tr>
+   <td>truss/strace, lsof</td>
+   <td>In depth kernel call and process analysis (Unix).</td>
+   <td>Unix/Linux commands.</td>
+  </tr>
+  <tr>
+   <td>Timing Statistics</td>
+   <td>See timing statistics for page rendering.</td>
+   <td><p>To see timing statistics for page rendering you can use <strong>Ctrl-Shift-U</strong> together with <code>?debugClientLibs=true</code> set in the URL.</p> </td>
+  </tr>
+  <tr>
+   <td>CPU and memory profiling tool<br /> </td>
+   <td><a href="#interpreting-the-request-log">Used when analyzing slow requests during development</a>.</td>
+   <td>For example, <a href="https://www.yourkit.com/">YourKit</a>.</td>
+  </tr>
+  <tr>
+   <td><a href="#information-collection">Information Collection</a></td>
+   <td>The ongoing state of your installation.</td>
+   <td>Knowing as much as possible about your installation can also help you track down what might have caused a change in performance, and whether these changes are justified. These metrics need to be collected at regular intervals so you can easily see significant changes.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Interpreting the request.log {#interpreting-the-request-log}
@@ -667,9 +667,9 @@ A good starting point for performance analysis is the request log:
 The log looks as follows (the lines are shortened for simplicity):
 
 ```xml
-31/Mar/2009:11:32:57 +0200 [379] -> GET /path/x HTTP/1.1 
-31/Mar/2009:11:32:57 +0200 [379] <- 200 text/html 33ms 
-31/Mar/2009:11:33:17 +0200 [380] -> GET /path/y HTTP/1.1 
+31/Mar/2009:11:32:57 +0200 [379] -> GET /path/x HTTP/1.1
+31/Mar/2009:11:32:57 +0200 [379] <- 200 text/html 33ms
+31/Mar/2009:11:33:17 +0200 [380] -> GET /path/y HTTP/1.1
 31/Mar/2009:11:33:17 +0200 [380] <- 200 application/json 39ms
 ```
 
@@ -729,7 +729,7 @@ Tests must be made to determine how many concurrent users the system can handle 
 
 ### Using rlog.jar to find requests with long duration times {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM includes various helper tools located in:  
+AEM includes various helper tools located in:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 One of these, `rlog.jar`, can be used to quickly sort `request.log` so that requests are displayed by duration, from longest to shortest time.
@@ -737,38 +737,38 @@ One of these, `rlog.jar`, can be used to quickly sort `request.log` so that requ
 The following command shows the possible arguments:
 
 ```shell
-$java -jar rlog.jar 
-Request Log Analyzer Version 21584 Copyright 2005 Day Management AG 
-Usage: 
-  java -jar rlog.jar [options] <filename> 
-Options: 
-  -h               Prints this usage. 
-  -n <maxResults>  Limits output to <maxResults> lines. 
-  -m <maxRequests> Limits input to <maxRequest> requests. 
+$java -jar rlog.jar
+Request Log Analyzer Version 21584 Copyright 2005 Day Management AG
+Usage:
+  java -jar rlog.jar [options] <filename>
+Options:
+  -h               Prints this usage.
+  -n <maxResults>  Limits output to <maxResults> lines.
+  -m <maxRequests> Limits input to <maxRequest> requests.
   -xdev            Exclude POST request to CRXDE.
 ```
 
 For example, you can run it specifying `request.log` file as a parameter and show the 10 first requests that have the longest duration:
 
 ```shell
-$ java -jar ../opt/helpers/rlog.jar -n 10 request.log 
-*Info * Parsed 464 requests. 
-*Info * Time for parsing: 22ms 
-*Info * Time for sorting: 2ms 
-*Info * Total Memory: 1mb 
-*Info * Free Memory: 1mb 
-*Info * Used Memory: 0mb 
------------------------------------------------------- 
-     18051ms 31/Mar/2009:11:15:34 +0200 200 GET /content/geometrixx/en/company.html text/ html 
-      2198ms 31/Mar/2009:11:15:20 +0200 200 GET /libs/cq/widgets.js application/x-javascript 
-      1981ms 31/Mar/2009:11:15:11 +0200 200 GET /libs/wcm/content/welcome.html text/html 
-      1973ms 31/Mar/2009:11:15:52 +0200 200 GET /content/campaigns/geometrixx.teasers..html text/html 
-      1883ms 31/Mar/2009:11:15:20 +0200 200 GET /libs/security/cq-security.js application/x-javascript 
+$ java -jar ../opt/helpers/rlog.jar -n 10 request.log
+*Info * Parsed 464 requests.
+*Info * Time for parsing: 22ms
+*Info * Time for sorting: 2ms
+*Info * Total Memory: 1mb
+*Info * Free Memory: 1mb
+*Info * Used Memory: 0mb
+------------------------------------------------------
+     18051ms 31/Mar/2009:11:15:34 +0200 200 GET /content/geometrixx/en/company.html text/ html
+      2198ms 31/Mar/2009:11:15:20 +0200 200 GET /libs/cq/widgets.js application/x-javascript
+      1981ms 31/Mar/2009:11:15:11 +0200 200 GET /libs/wcm/content/welcome.html text/html
+      1973ms 31/Mar/2009:11:15:52 +0200 200 GET /content/campaigns/geometrixx.teasers..html text/html
+      1883ms 31/Mar/2009:11:15:20 +0200 200 GET /libs/security/cq-security.js application/x-javascript
       1876ms 31/Mar/2009:11:15:20 +0200 200 GET /libs/tagging/widgets.js application/x-javascript
-      1869ms 31/Mar/2009:11:15:20 +0200 200 GET /libs/tagging/widgets/themes/default.js application/x-javascript 
-      1729ms 30/Mar/2009:16:45:56 +0200 200 GET /libs/wcm/content/welcome.html text/html; charset=utf-8 
-      1510ms 31/Mar/2009:11:15:34 +0200 200 GET /bin/wcm/contentfinder/asset/view.json/ content/dam?_dc=1238490934657&query=&mimeType=image&_charset_=utf-8 application/json 
-      1462ms 30/Mar/2009:17:23:08 +0200 200 GET /libs/wcm/content/welcome.html text/html; charset=utf-8 
+      1869ms 31/Mar/2009:11:15:20 +0200 200 GET /libs/tagging/widgets/themes/default.js application/x-javascript
+      1729ms 30/Mar/2009:16:45:56 +0200 200 GET /libs/wcm/content/welcome.html text/html; charset=utf-8
+      1510ms 31/Mar/2009:11:15:34 +0200 200 GET /bin/wcm/contentfinder/asset/view.json/ content/dam?_dc=1238490934657&query=&mimeType=image&_charset_=utf-8 application/json
+      1462ms 30/Mar/2009:17:23:08 +0200 200 GET /libs/wcm/content/welcome.html text/html; charset=utf-8
 ```
 
 You may need to concatenate the individual `request.log` files if you need to do this operation on a large data sample.
@@ -877,7 +877,7 @@ The tool command `jconsole` is available with the JDK.
 
 1. Start your AEM instance.
 1. Run `jconsole.`
-1. Select your AEM instance and **Connect**.  
+1. Select your AEM instance and **Connect**.
 
 1. From within the `Local` application, double-click `com.day.crx.quickstart.Main`; the Overview will be shown as default:
 
@@ -949,7 +949,7 @@ To see the total number of page activations since server installation use a repo
 
 * **Type** `XPath`
 
-* **Path** `/`  
+* **Path** `/`
 
 * **Query** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
@@ -961,7 +961,7 @@ To see the number of pages currently on the server use a repository query; via C
 
 * **Type** `XPath`
 
-* **Path** `/`  
+* **Path** `/`
 
 * **Query** `//element(*, cq:Page)`
 
@@ -971,7 +971,7 @@ To determine the total number of rollouts since installation use a repository qu
 
 * **Type** `XPath`
 
-* **Path** `/`  
+* **Path** `/`
 
 * **Query** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
@@ -983,7 +983,7 @@ To determine the total number of Live Copies made since installation use a repos
 
 * **Type** `XPath`
 
-* **Path** `/`  
+* **Path** `/`
 
 * **Query** `//element(*, cq:LiveSyncConfig)`
 
@@ -995,7 +995,7 @@ To see how many DAM assets you currently maintain, use a repository query; via C
 
 * **Type** `XPath`
 
-* **Path** `/`  
+* **Path** `/`
 
 * **Query** `/jcr:root/content/dam//element(*, dam:Asset)`
 
@@ -1003,7 +1003,7 @@ To see how many DAM assets you currently maintain, use a repository query; via C
 
 To determine the total size of the `/var/dam` folder:
 
-1. Use WebDAV to map the repository to the local file system.  
+1. Use WebDAV to map the repository to the local file system.
 
 1. Use the command line:
 
@@ -1020,7 +1020,7 @@ To see the number of templates currently on the server use a repository query; v
 
 * **Type** `XPath`
 
-* **Path** `/`  
+* **Path** `/`
 
 * **Query** `//element(*, cq:Template)`
 
@@ -1030,7 +1030,7 @@ To see the number of components currently on the server use a repository query; 
 
 * **Type** `XPath`
 
-* **Path** `/`  
+* **Path** `/`
 
 * **Query** `//element(*, cq:Component)`
 
@@ -1155,7 +1155,7 @@ Or JConsole:
    -Dcom.sun.management.jmxremote.ssl=false
   ```
 
-* Then connect to the JVM with the JConsole; see:  
+* Then connect to the JVM with the JConsole; see:
   ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
 
 This will help you see how much memory is being used, what GC algorithms are being used, how long they take to run, and what effect this has on your application performance. Without this, tuning is just "randomly twiddling knobs".

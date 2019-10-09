@@ -5,7 +5,7 @@ description: AEM provides a framework for automating tests for your AEM UI
 seo-description: AEM provides a framework for automating tests for your AEM UI
 uuid: b0280a70-643e-4455-82ea-fa7a90823b53
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 topic-tags: testing
@@ -44,7 +44,7 @@ Navigate to the Tools console via **Global Navigation -&gt; Tools &gt; Operation
 
 When opening the console, the Test Suites are listed to the left along with an option to run all of them sequentially. The space to the right shown with a checkered background, is a placeholder for showing page content as the tests run.
 
-![chlimage_1-27](assets/chlimage_1-27.png) 
+![chlimage_1-27](assets/chlimage_1-27.png)
 
 ### Running a Single Test Suite {#running-a-single-test-suite}
 

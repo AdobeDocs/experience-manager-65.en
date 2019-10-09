@@ -5,7 +5,7 @@ description: Find your content faster with comprehensive search
 seo-description: Find your content faster with comprehensive search
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
@@ -27,7 +27,7 @@ Search is available from the top toolbar:
 
 With the search rail you can:
 
-* Search for a specific keyword, path or tag.  
+* Search for a specific keyword, path or tag.
 * Filter according to resource specific criteria, such as modified dates, page status, file size, etc.
 * Define and use a [saved search](#saved-searches) - based on the above criteria.
 
@@ -84,7 +84,7 @@ To search and filter your resources:
 
 >[!NOTE]
 >
->Search criteria are persisted when selecting an item in the search results. 
+>Search criteria are persisted when selecting an item in the search results.
 >
 >When you select an item on the search results page, when returning to the search page after using the browser back button, the search criteria remain.
 

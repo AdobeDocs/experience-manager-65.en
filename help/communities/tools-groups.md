@@ -5,7 +5,7 @@ description: How to access the Group Templates console
 seo-description: How to access the Group Templates console
 uuid: a3c6dfe6-f973-4dcf-9c66-ea52cbe56630
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
@@ -47,13 +47,13 @@ This will bring up the Site Editor panel which contains 3 sub-panels:
 
 On the Basic Info panel, a name, description and whether the template is enabled or disabled are configured:
 
-* **[!UICONTROL New Group Template Name]** 
+* **[!UICONTROL New Group Template Name]**
   The template name id
 
-* **[!UICONTROL Description]** 
+* **[!UICONTROL Description]**
   The template description
 
-* **[!UICONTROL Disabled/Enabled]** 
+* **[!UICONTROL Disabled/Enabled]**
   A toggle switch controlling whether the template is referenceable
 
 ### Thumbnail {#thumbnail}

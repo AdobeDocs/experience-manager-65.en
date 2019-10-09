@@ -5,7 +5,7 @@ description: Create form data model for Interactive Communication
 seo-description: Create form data model for Interactive Communication
 uuid: f7483d27-b468-4e6c-a849-f8e084f73e1e
 contentOwner: anujkapo
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ef873c07-be89-4cd0-8913-65765b989f90
 ---
 
@@ -46,7 +46,7 @@ Before you begin, ensure that you have the following:
 
 ## Step 1: Set up the database {#step-set-up-the-database}
 
-A database is essential to create an Interactive Communication. This tutorial uses a database to display Form Data Model and persistence capabilities of Interactive Communications. Set up a database containing customer, bills, and calls tables.  
+A database is essential to create an Interactive Communication. This tutorial uses a database to display Form Data Model and persistence capabilities of Interactive Communications. Set up a database containing customer, bills, and calls tables.
 The following image illustrates sample data for the customer table:
 
 ![sample_data_cust](assets/sample_data_cust.png)
@@ -75,7 +75,7 @@ Do the following to configure your MySQL database:
 
         * **Datasource name:** You can specify any name. For example, specify **MySQL**.
         * **DataSource service property name**: Specify name of the service property containing the DataSource name. It is specified while registering the data source instance as OSGi service. For example, **datasource.name**.
-        * **JDBC driver class**: Specify Java class name of the JDBC driver. For MySQL database, specify **com.mysql.jdbc.Driver**. 
+        * **JDBC driver class**: Specify Java class name of the JDBC driver. For MySQL database, specify **com.mysql.jdbc.Driver**.
         * **JDBC connection URI**: Specify connection URL of the database. For MySQL database running on port 3306 and schema teleca, the URL is: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
         * **Username:** Username of the database. It is required to enable JDBC driver to establish a connection with the database.
         * **Password:** Password of the database. It is required to enable JDBC driver to establish a connection with the database.
@@ -151,7 +151,7 @@ A computed property is the one whose value is computed based on a rule or an exp
 
 Based on the use case, create the **usagecharges** child computed property in the **bills** data model object using the following mathematical expression:
 
-* usage charges = call charges + conference call charges + SMS charges + mobile internet charges + roaming national + roaming international + VAS (all these properties exist in the bills data model object)  
+* usage charges = call charges + conference call charges + SMS charges + mobile internet charges + roaming national + roaming international + VAS (all these properties exist in the bills data model object)
 
   For more information on the **usagecharges** child computed property, see [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md).
 
@@ -209,10 +209,10 @@ Perform the following steps to create associations between data model objects:
 
 1. In the **Add Argument** dialog box:
 
-    * Select **mobilenum **from the **Name** drop-down list. The mobile number property is a common property that is available in customer and calls data model objects. As a result, it is used to create an association between customer and calls data model objects.  
+    * Select **mobilenum **from the **Name** drop-down list. The mobile number property is a common property that is available in customer and calls data model objects. As a result, it is used to create an association between customer and calls data model objects.
 
       For each mobile number available in the customer data model object, there are multiple call records available in the calls table.
-    
+
     * Specify an optional title and description for the argument.
     * Select **customer** from the **Binding To** drop-down list.
     * Select **mobilenum** from the **Binding Value** drop-down list.
@@ -234,10 +234,10 @@ Perform the following steps to create associations between data model objects:
     * Specify a title for the association. It is an optional field.
     * Select **One to One** from the **Type** drop-down list.
     * Select **bills** from the **Model Object** drop-down list.
-    * Select **get** from the **Service** drop-down list. The **billplan** property, which is the primary key for the bills table, is already available in the **Arguments** section.  
+    * Select **get** from the **Service** drop-down list. The **billplan** property, which is the primary key for the bills table, is already available in the **Arguments** section.
 
       The bills and customer data model objects are linked using the billplan (bills) and customerplan (customer) properties respectively. Create a binding between these properties to retrieve the plan details for any customer available in the MySQL database.
-    
+
     * Select **customer** from the **Binding To** drop-down list.
     * Select **customerplan** from the **Binding Value** drop-down list.
     * Tap **Done** to create a binding between the billplan and customerplan properties.

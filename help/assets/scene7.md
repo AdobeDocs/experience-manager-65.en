@@ -5,7 +5,7 @@ description: Learn how to add Dynamic Media Classic features and components to y
 seo-description: Learn how to add Dynamic Media Classic features and components to your AEM page.
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Alva Ware-Bevacqui
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
@@ -23,11 +23,11 @@ You can view AEM assets published in Dynamic Media Classic in various viewers:
 * Image Template
 * Image
 
-You can publish digital assets directly from AEM to Dynamic Media Classic and you can publish digital assets from Dynamic Media Classic to AEM.  
+You can publish digital assets directly from AEM to Dynamic Media Classic and you can publish digital assets from Dynamic Media Classic to AEM.
 
-This document describes how to publish digital assets from AEM to Dynamic Media Classic and vice versa. Viewers are also described in detail. For information on configuring AEM for Dynamic Media Classic, see [Integrating Dynamic Media Classic with AEM](/help/sites-administering/scene7.md).  
+This document describes how to publish digital assets from AEM to Dynamic Media Classic and vice versa. Viewers are also described in detail. For information on configuring AEM for Dynamic Media Classic, see [Integrating Dynamic Media Classic with AEM](/help/sites-administering/scene7.md).
 
-See also [Adding Image Maps](image-maps.md).  
+See also [Adding Image Maps](image-maps.md).
 
 For more information on using video components with AEM, see [Video](video.md).
 
@@ -80,17 +80,17 @@ Adding a Dynamic Media Classic (Scene7) component to a page is the same as addin
 
 **To add a Dynamic Media Classic (Scene7) component to a page**:
 
-1. In AEM, open the page where you want to add the Dynamic Media Classic (Scene7) component.  
+1. In AEM, open the page where you want to add the Dynamic Media Classic (Scene7) component.
 
 1. If no Dynamic Media Classic components are available, click **[!UICONTROL Design]** mode, tap any component with a blue border, tap the **[!UICONTROL Parent]** icon, and then the **[!UICONTROL Configuration]** icon. In **[!UICONTROL Parsys (Design)]**, select all the Dynamic Media Classic components to make them available and click **[!UICONTROL OK]**.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. Click **[!UICONTROL Edit]** to return to **[!UICONTROL Edit]** mode.  
+1. Click **[!UICONTROL Edit]** to return to **[!UICONTROL Edit]** mode.
 
-1. Drag a component from the Dynamic Media Classic group in the sidekick onto the page in the desired location.  
+1. Drag a component from the Dynamic Media Classic group in the sidekick onto the page in the desired location.
 
-1. Click the **[!UICONTROL Configuration]** icon to open the component.  
+1. Click the **[!UICONTROL Configuration]** icon to open the component.
 
 1. Edit the component as necessary and click **[!UICONTROL OK]** to save changes.
 1. Drag your image or video from the content browser onto the Dynamic Media Classic component you added to the page.
@@ -131,7 +131,7 @@ Although configuration options vary, the following are common to all [!UICONTROL
 
 You set these configuration options by opening (double-clicking) a Dynamic Media Classic component, for example, when you open a **[!UICONTROL Zoom]** component:
 
-![chlimage_1-226](assets/chlimage_1-226.png) 
+![chlimage_1-226](assets/chlimage_1-226.png)
 
 ### Zoom {#zoom}
 
@@ -139,7 +139,7 @@ The HTML5 Zoom component displays a larger image when you press the **[!UICONTRO
 
 The asset has zoom tools at the bottom. Tap **[!UICONTROL +]** to enlarge. Tap **[!UICONTROL -]** to reduce. Tapping the **[!UICONTROL x]** or the reset zoom arrow brings the image back to the original size it was imported as. Tap the diagonal arrows to make it full screen. Tap **[!UICONTROL Edit]** to configure the component. With this component, you can configure [settings common to all [!UICONTROL Dynamic Media Classic] components](#settings-common-to-all-scene-components).
 
-![chlimage_1-227](assets/chlimage_1-227.png) 
+![chlimage_1-227](assets/chlimage_1-227.png)
 
 ### Flyout {#flyout}
 
@@ -151,7 +151,7 @@ In the HTML5 **[!UICONTROL Flyout]** component, the asset is shown as split scre
 >
 >If your **[!UICONTROL Flyout]** component uses the default size, as set in the **[!UICONTROL Design View]**, then the default size is used and the component stretches to accomodate the page layout size with responsive setup of the component enabled. Be aware, however, that there is a limitation on responsive setup of the component. When the you use the **[!UICONTROL Flyout]** component with responsive setup, you should not use it with full page stretch. Otherwise, the **[!UICONTROL Flyout]** may extend beyond the page's right border.
 
-![chlimage_1-228](assets/chlimage_1-228.png) 
+![chlimage_1-228](assets/chlimage_1-228.png)
 
 ### Image {#image}
 
@@ -201,7 +201,7 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
 **[!UICONTROL Parameter Panel]** &ndash; When importing an image, the parameters are pre-populated with information from the image. If there is no content that can be dynamically changed, this window is empty.
 
-![chlimage_1-233](assets/chlimage_1-233.png) 
+![chlimage_1-233](assets/chlimage_1-233.png)
 
 #### Changing text dynamically {#changing-text-dynamically}
 
@@ -211,7 +211,7 @@ To change the text dynamically, enter new text in the fields and click **[!UICON
 
 The text in the image changes. You can reset the text back to the original value by tapping **[!UICONTROL Reset]** next to the field.
 
-![chlimage_1-235](assets/chlimage_1-235.png) 
+![chlimage_1-235](assets/chlimage_1-235.png)
 
 #### Changing text to reflect the value of a client context value {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
@@ -221,12 +221,12 @@ To link a field to a client context value, tap **[!UICONTROL Select]** to open t
 
 The text reflects the name of the currently logged in user. You can reset the text back to the original value by clicking **[!UICONTROL Reset]** next to the field.
 
-![chlimage_1-237](assets/chlimage_1-237.png) 
+![chlimage_1-237](assets/chlimage_1-237.png)
 
 #### Making the Dynamic Media Classic Image Template a link {#making-the-scene-image-template-a-link}
 
 1. On the page with the Dynamic Media Classic **[!UICONTROL Image Template]** component, tap **[!UICONTROL Edit]**.
-1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window). 
+1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -238,9 +238,9 @@ The Dynamic Media Classic **[!UICONTROL Video]** component (available from the D
 
 It can be used for adaptive video sets, a single MP4 video, or a single F4V video.
 
-See [Video](s7-video.md) for more information on how videos work with Dynamic Media Classic integration. In addition, see [the Dynamic Media Classic Video component versus the Foundation Video component](s7-video.md). 
+See [Video](s7-video.md) for more information on how videos work with Dynamic Media Classic integration. In addition, see [the Dynamic Media Classic Video component versus the Foundation Video component](s7-video.md).
 
-![chlimage_1-239](assets/chlimage_1-239.png) 
+![chlimage_1-239](assets/chlimage_1-239.png)
 
 ### Known limitations for the video component {#known-limitations-for-the-video-component}
 
@@ -262,11 +262,11 @@ If you have multiple configurations, AEM by default displays the [default config
 >* Assets located in the ad-hoc folder will not appear in the Dynamic Media Classic content browser.
 >* When [Secure Preview is enabled](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), both published and unpublished assets on Dynamic Media Classic do appear in the Dynamic Media Classic content browser.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
->* For video, the Dynamic Media Classic content browser supports: 
+>* For video, the Dynamic Media Classic content browser supports:
 >
 >  * Adaptive Video Sets: container of all video renditions needed for seamless playback across multiple screens
->  * Single MP4 video 
->  * Single F4V video 
+>  * Single MP4 video
+>  * Single F4V video
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
 
@@ -278,7 +278,7 @@ Browse Dynamic Media Classic assets by selecting **[!UICONTROL Dynamic Media Cla
 
 >[!NOTE]
 >
->* The Dynamic Media Classic content browser loads about 100 assets and sorts them by name. 
+>* The Dynamic Media Classic content browser loads about 100 assets and sorts them by name.
 >* If you have a secure preview server set, the browser will use that preview server to render thumbnails and assets.
 >
 

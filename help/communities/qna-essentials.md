@@ -5,7 +5,7 @@ description: Questions and answers forum feature
 seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
@@ -17,31 +17,31 @@ This page provides the essential information for working with the questions and 
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> resourceType</td> 
-   <td>social/qna/components/hbs/qnaforum</td> 
+   <td> resourceType</td>
+   <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">includable</a></td> 
-   <td>No</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component">includable</a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md">clientllibs</a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.qna</td> 
+   <td> <a href="clientlibs.md">clientllibs</a></td>
+   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.qna</td>
   </tr>
   <tr>
-   <td> templates</td> 
-   <td> /libs/social/qna/components/hbs/qnaforum/qnaforum.hbs<br /> /libs/social/qna/components/hbs/qnaforum/activity-title.hbs</td> 
+   <td> templates</td>
+   <td> /libs/social/qna/components/hbs/qnaforum/qnaforum.hbs<br /> /libs/social/qna/components/hbs/qnaforum/activity-title.hbs</td>
   </tr>
   <tr>
-   <td> css</td> 
-   <td> /libs/social/qna/components/hbs/qnaforum/clientlibs/qnaforum.css</td> 
+   <td> css</td>
+   <td> /libs/social/qna/components/hbs/qnaforum/clientlibs/qnaforum.css</td>
   </tr>
   <tr>
-   <td> properties</td> 
-   <td>See <a href="working-with-qna.md">Q&amp;A Forum Feature</a></td> 
+   <td> properties</td>
+   <td>See <a href="working-with-qna.md">Q&amp;A Forum Feature</a></td>
   </tr>
  </tbody>
 </table>
@@ -62,7 +62,7 @@ A community site structure that includes the [QnA function](functions.md#qna-fun
 
 ### Accessing QnA Forum Posts (UGC) {#accessing-qna-forum-posts-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).

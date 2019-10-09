@@ -1,11 +1,11 @@
 ---
 title: Prepare and send Interactive Communication using the Agent UI
 seo-title: Prepare and send Interactive Communication using the Agent UI
-description: The Agent UI allows the agents to prepare and send Interactive Communication to the post process. The Agent makes the required modifications as allowed, and submits the Interactive Communication to a post process, such as email or print. 
+description: The Agent UI allows the agents to prepare and send Interactive Communication to the post process. The Agent makes the required modifications as allowed, and submits the Interactive Communication to a post process, such as email or print.
 seo-description: Prepare and send Interactive Communication using the Agent UI
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 ---
 
@@ -19,13 +19,13 @@ After an Interactive Communication is created, the Agent can open the Interactiv
 
 While preparing the Interactive Communication using the Agent UI, the agent manages the following aspects of the Interactive Communication in the Agent UI before submitting it to a post process:
 
-* **Data**: The Data tab of the Agent UI displays any agent-editable variables and unlocked form data model properties in the Interactive Communication. These variables/properties are created while editing or creating document fragments included in the Interactive Communication. The Data tab also includes any fields that are built in the XDP/print channel template. The Data tab appears only when there are any variables, form data model properties, or fields in the Interactive Communication that are editable by the agent. 
-* **Content**: In the Content tab, the Agent manages the content such as document fragments and content variables in the Interactive Communication. The Agent can make the changes in the document fragment as allowed while creating the Interactive Communication in the properties of those document fragments. The Agent can also reorder, add/remove a document fragment, and add page breaks, if allowed. 
+* **Data**: The Data tab of the Agent UI displays any agent-editable variables and unlocked form data model properties in the Interactive Communication. These variables/properties are created while editing or creating document fragments included in the Interactive Communication. The Data tab also includes any fields that are built in the XDP/print channel template. The Data tab appears only when there are any variables, form data model properties, or fields in the Interactive Communication that are editable by the agent.
+* **Content**: In the Content tab, the Agent manages the content such as document fragments and content variables in the Interactive Communication. The Agent can make the changes in the document fragment as allowed while creating the Interactive Communication in the properties of those document fragments. The Agent can also reorder, add/remove a document fragment, and add page breaks, if allowed.
 * **Attachments**: The Attachments tab appears in the Agent UI only if the Interactive Communication has any attachments or the Agent has library access. The agent may or may not be allowed to change or edit the attachments.
 
 ## Prepare Interactive Communication using the Agent UI {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Select **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**. 
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Select the appropriate Interactive Communication and tap **[!UICONTROL Open Agent UI]**.
 
    >[!NOTE]
@@ -34,7 +34,7 @@ While preparing the Interactive Communication using the Agent UI, the agent mana
 
    ![openagentiui](assets/openagentiui.png)
 
-   Based on the Interactive Communication's content and properties, the agent UI appears with the following three tabs: Data, Content, and Attachment. 
+   Based on the Interactive Communication's content and properties, the agent UI appears with the following three tabs: Data, Content, and Attachment.
 
    ![agentuitabs](assets/agentuitabs.png)
 
@@ -56,7 +56,7 @@ In the Content tab, manage the content such as document fragments and content va
 
 1. Edit the document fragments, as required, in the Content tab. To bring focus to the relevant fragment in the content hierarchy, you can either tap the relevant line or paragraph in the Interactive Communication preview or tap the fragment directly in the Content hierarchy.
 
-   For example, the document fragment with the line "Make a payment online now ... " is selected in the preview in the below graphic and the same document fragment has got selected in the Content tab. 
+   For example, the document fragment with the line "Make a payment online now ... " is selected in the preview in the below graphic and the same document fragment has got selected in the Content tab.
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
@@ -76,7 +76,7 @@ In the Content tab, manage the content such as document fragments and content va
 
 1. To add a page break to the print output of the Interactive Communication, place the cursor where you want to insert a page break and select Page Break Before or Page Break After ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   An explicit page break placeholder gets inserted in the Interactive Communication. To view how an explicit page break affects the Interactive Communication, see the print preview. 
+   An explicit page break placeholder gets inserted in the Interactive Communication. To view how an explicit page break affects the Interactive Communication, see the print preview.
 
    ![explicitpagebreak](assets/explicitpagebreak.png)
 
@@ -86,7 +86,7 @@ In the Content tab, manage the content such as document fragments and content va
 
 1. Select **[!UICONTROL Attachment]**. The Agent UI displays the available attachments as set up while creating the Interactive Communication.
 
-   You can choose not to submit an attachment along with the Interactive Communication by tapping the view icon and you can tap the cross in the attachment to delete it (if the agent is allowed to delete or hide the attachment) from the Interactive Communication. For the attachments specified as mandatory while creating the Interactive Communication, the View and Delete icons are disabled. 
+   You can choose not to submit an attachment along with the Interactive Communication by tapping the view icon and you can tap the cross in the attachment to delete it (if the agent is allowed to delete or hide the attachment) from the Interactive Communication. For the attachments specified as mandatory while creating the Interactive Communication, the View and Delete icons are disabled.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
@@ -96,7 +96,7 @@ In the Content tab, manage the content such as document fragments and content va
    >
    >Library Access icon is available only if library access was enabled while creating the Interactive Communication (in the Document Container properties of the Print channel).
 
-1. If the order of the attachments was not locked while creating the Interactive Communication, you can reorder the attachments by selecting an attachment and tapping the down and up arrows. 
+1. If the order of the attachments was not locked while creating the Interactive Communication, you can reorder the attachments by selecting an attachment and tapping the down and up arrows.
 1. Use Web Preview and Print Preview to see if the two outputs are as per your requirement.
 
    If you find the previews to be satisfactory, tap **[!UICONTROL Submit]** to submit/send the Interactive Communication to a post process. Or to make changes, exit the preview to go back to the making changes.
@@ -121,11 +121,11 @@ List toolbar
 
 To highlight\emphasize parts of text in an editable fragment, select the text and tap Highlight Color.
 
-![highlighttextagentui](assets/highlighttextagentui.png) 
+![highlighttextagentui](assets/highlighttextagentui.png)
 
 ### Paste formatted text {#pasteformattedtext}
 
-![pastedtext](assets/pastedtext.png) 
+![pastedtext](assets/pastedtext.png)
 
 ### Insert special characters in text {#specialcharacters}
 
@@ -144,14 +144,14 @@ The Agent UI has built in support for 210 special characters. The admin can [add
 ![](do-not-localize/contentoptionsdocfragments.png)
 
 * **Up/Down arrows**: Arrows to move document fragments up or down in the Interactive Communication.
-* **Delete**: If allowed, delete the document fragment from the Interactive Communication. 
+* **Delete**: If allowed, delete the document fragment from the Interactive Communication.
 * **Page Break Before** (applicable for child fragments of target area): Inserts page break before the document fragment.
-* **Indent**: Increase or decrease indent of a document fragment. 
+* **Indent**: Increase or decrease indent of a document fragment.
 * **Page Break After **(applicable for child fragments of target area): Inserts page break after the document fragment.
 
 ![docfragoptions](assets/docfragoptions.png)
 
-* Edit (text fragments only): Open rich text editor for editing the text document fragment. For more information, see [Formatting text](#formattingtext).  
+* Edit (text fragments only): Open rich text editor for editing the text document fragment. For more information, see [Formatting text](#formattingtext).
 
 * Selection (eye icon): Includes\excludes document fragment from the Interactive Communication.
 * Unfilled Values (info): Indicates the number of unfilled variables in the document fragment.
@@ -161,7 +161,7 @@ The Agent UI has built in support for 210 special characters. The admin can [add
 ![listoptions](assets/listoptions.png)
 
 * Insert Blank Line: Inserts new blank line.
-* Selection (eye icon): Includes\excludes document fragment from the Interactive Communication.  
+* Selection (eye icon): Includes\excludes document fragment from the Interactive Communication.
 * Skip Bullets/Numberings: Enable to skip bullets/numbering in the list document fragment.
 * Unfilled Values (info): Indicates the number of unfilled variables in the document fragment.
 

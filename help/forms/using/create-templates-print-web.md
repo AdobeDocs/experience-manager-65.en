@@ -5,7 +5,7 @@ description: Create Print and Web templates for Interactive Communication
 seo-description: Create Print and Web templates for Interactive Communication
 uuid: d7b0d9a5-f5f0-4c21-a6f8-622bf94f4491
 contentOwner: anujkapo
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 ---
 
@@ -92,10 +92,10 @@ Execute the following steps to create an XDP template for the Print channel:
 
    To save time, you can also copy and paste existing subforms to create new subforms.
 
-   To shift the **Charts** subform to the right of the Charges subform, select the **Charts** subform from the left pane, select the **Layout** tab, and specify a value for **AnchorX** field. The value must be greater than the value for the **Width** field for the **Charges** subform. Select the **Charges** subform and select the **Layout** tab to view the value of the **Width** field. 
+   To shift the **Charts** subform to the right of the Charges subform, select the **Charts** subform from the left pane, select the **Layout** tab, and specify a value for **AnchorX** field. The value must be greater than the value for the **Width** field for the **Charges** subform. Select the **Charges** subform and select the **Layout** tab to view the value of the **Width** field.
 
 1. Drag-and-drop the **Text** object from the **Object Library** to the form and enter the **Dial XXXX to subscribe** text in the box.
-1. Right-click the text object in the left pane, select **Rename Object**, and enter the name of the text object as **Subscribe**. 
+1. Right-click the text object in the left pane, select **Rename Object**, and enter the name of the text object as **Subscribe**.
 
    ![print_xdp_template_subform](assets/print_xdp_template_subform.png)
 
@@ -172,7 +172,7 @@ To create a Web channel template, define a folder where you can save the created
 Execute the following steps to create a folder for the editable templates:
 
 1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) &gt; **Configuration Browser**.
-1. In the Configuration Browser page, tap **Create**. 
+1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
    ![create_first_ic_web_template](assets/create_first_ic_web_template.png)
@@ -199,7 +199,7 @@ Execute the following steps to create a template for the Web channel in the **Cr
 
 1. Navigate to the appropriate template folder by selecting **Tools** &gt; **Templates** &gt; **Create_First_IC_templates** folder.
 1. Tap **Create**.
-1. On the **Pick a Template Type** configuration wizard, select **Interactive Communication - Web Channel** and tap **Next**. 
+1. On the **Pick a Template Type** configuration wizard, select **Interactive Communication - Web Channel** and tap **Next**.
 1. On the **Template Details** configuration wizard, specify **Create_First_IC_Web_Template** as the template title. Specify an optional description and tap **Create**.
 
    A confirmation message that the **Create_First_IC_Web_Template **is displayed.

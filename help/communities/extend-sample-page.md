@@ -5,7 +5,7 @@ description: Add Custom Comments to a page
 seo-description: Add Custom Comments to a page
 uuid: 7dbaff4f-9986-435d-9379-7add676ea254
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7185fb13-46a2-4fa3-aa21-a51e63cdb9be

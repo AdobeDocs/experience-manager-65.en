@@ -5,7 +5,7 @@ description: This article teaches how to add custom action to the Asset Listing 
 seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 72ce6c24-2758-4888-b797-1b134acc54d2
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 ---
@@ -21,7 +21,7 @@ You can add a custom action to the Asset Listing view for:
 * One or more asset types or letters
 * Execution (action/command becomes active) on selection of single, multiple assets/letters, or without selection
 
-This customization is demonstrated with the scenario that adds a command "Download Flat PDF" to the Asset Listing view for Letters. This customization scenario allows your users to download flat PDF of a single selected letter.  
+This customization is demonstrated with the scenario that adds a command "Download Flat PDF" to the Asset Listing view for Letters. This customization scenario allows your users to download flat PDF of a single selected letter.
 
 ### Prerequisites {#prerequisites}
 
@@ -37,7 +37,7 @@ The below steps add a command "Download Flat PDF" to the Asset Listing view for 
 
 To customize Correspondence Management to allow your users to download a flat PDF of letters, complete the following steps:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.  
+1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
 
 1. In the apps folder, create a folder named items with path/structure similar to the items folder located in selection folder using the following steps:
 
@@ -70,7 +70,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
 1. Under the newly created items folder, add a node for the custom button/action in a particular asset (Example: downloadFlatPDF) using the following steps:
 
-    1. Right-click the **[!UICONTROL items]** folder and select **[!UICONTROL Create** > **Create Node]**.  
+    1. Right-click the **[!UICONTROL items]** folder and select **[!UICONTROL Create** > **Create Node]**.
 
     1. Ensure that the Create Node dialog has the following values and click **[!UICONTROL OK]**:
 
@@ -81,54 +81,54 @@ To customize Correspondence Management to allow your users to download a flat PD
     1. Click the new node you have created (here downloadFlatPDF). CRX displays the node's properties.
     1. Add the following properties to the node (here downloadFlatPDF) and click **[!UICONTROL Save All]**:
 
-    <table> 
-    <tbody> 
-    <tr> 
-    <td><strong>Name</strong></td> 
-    <td><strong>Type</strong></td> 
-    <td><strong>Value and Description</strong></td> 
-    </tr> 
-    <tr> 
-    <td>class</td> 
-    <td>String</td> 
-    <td>foundation-collection-action</td> 
-    </tr> 
-    <tr> 
-    <td>foundation-collection-action</td> 
-    <td>String</td> 
-    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> can be one or more (comma separate multiple entries) of the following: LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td> 
-    </tr> 
-    <tr> 
-    <td>icon</td> 
-    <td>String</td> 
-    <td>icon-download<br /> <br /> The icon that Correspondence Management displays to the left side of your command/menu. For different icons and settings available, see <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI Icons documentation</a>.<br /> </td> 
-    </tr> 
-    <tr> 
-    <td>jcr:primaryType</td> 
-    <td>Name</td> 
-    <td>nt:unstructured</td> 
-    </tr> 
-    <tr> 
-    <td>rel</td> 
-    <td>String</td> 
-    <td>download-flat-pdf-button</td> 
-    </tr> 
-    <tr> 
-    <td>sling:resourceType</td> 
-    <td>String</td> 
-    <td>granite/ui/components/endor/actionbar/button</td> 
-    </tr> 
-    <tr> 
-    <td>text</td> 
-    <td>String</td> 
-    <td>Download Flat PDF (Or any other label)<br /> <br /> The command that appears in the Asset Listing interface</td> 
-    </tr> 
-    <tr> 
-    <td>title</td> 
-    <td>String</td> 
-    <td>Download a flat PDF of the selected letter (Or any other label/Alt text)<br /> <br /> The title is the alt text that Correspondence Management displays when the user hovers over the custom command.</td> 
-    </tr> 
-    </tbody> 
+    <table>
+    <tbody>
+    <tr>
+    <td><strong>Name</strong></td>
+    <td><strong>Type</strong></td>
+    <td><strong>Value and Description</strong></td>
+    </tr>
+    <tr>
+    <td>class</td>
+    <td>String</td>
+    <td>foundation-collection-action</td>
+    </tr>
+    <tr>
+    <td>foundation-collection-action</td>
+    <td>String</td>
+    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> can be one or more (comma separate multiple entries) of the following: LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
+    </tr>
+    <tr>
+    <td>icon</td>
+    <td>String</td>
+    <td>icon-download<br /> <br /> The icon that Correspondence Management displays to the left side of your command/menu. For different icons and settings available, see <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI Icons documentation</a>.<br /> </td>
+    </tr>
+    <tr>
+    <td>jcr:primaryType</td>
+    <td>Name</td>
+    <td>nt:unstructured</td>
+    </tr>
+    <tr>
+    <td>rel</td>
+    <td>String</td>
+    <td>download-flat-pdf-button</td>
+    </tr>
+    <tr>
+    <td>sling:resourceType</td>
+    <td>String</td>
+    <td>granite/ui/components/endor/actionbar/button</td>
+    </tr>
+    <tr>
+    <td>text</td>
+    <td>String</td>
+    <td>Download Flat PDF (Or any other label)<br /> <br /> The command that appears in the Asset Listing interface</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td>String</td>
+    <td>Download a flat PDF of the selected letter (Or any other label/Alt text)<br /> <br /> The title is the alt text that Correspondence Management displays when the user hovers over the custom command.</td>
+    </tr>
+    </tbody>
     </table>
 
 1. In the apps folder, create a folder named js with path/structure similar to the items folder located in admin folder using the following steps:
@@ -154,18 +154,18 @@ To customize Correspondence Management to allow your users to download a flat PD
        `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
        Name the file as formaction.js.
-    
-    1. Double-click the file to open it in CRX. 
+
+    1. Double-click the file to open it in CRX.
     1. In the formaction.js file (under the /apps branch), copy the code from the formaction.js file at the following location:
 
        `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
 
        Then append the following code at the end in the formaction.js file (under the /apps branch) and click **[!UICONTROL Save All]**:
 
-       ```    
+       ```
        /* Action url for xml file to be added.*/
        var ACTION_URL = "/apps/fd/cm/ma/gui/content/commons/actionhandlers/items/letterpdfdownloader.html";
-        
+
        /* File upload handling*/
        var fileSelectedHandler = function(e){
            if(e && e.target && e.target.value)
@@ -173,7 +173,7 @@ To customize Correspondence Management to allow your users to download a flat PD
            else
                $(".downloadLetterPDFBtn").attr('disabled','disabled');
        }
-        
+
        /*Handing of Download button in pop up.*/
        var downloadClickHandler = function(){
            $('#downloadLetterPDFDilaog').modal("hide");
@@ -181,7 +181,7 @@ To customize Correspondence Management to allow your users to download a flat PD
            var path = $(element).data("path");
            $("#fileUploadForm").attr('action', ACTION_URL + "?letterId="+path).submit();
        }
-        
+
        /*Click handling on action button.*/
        $(document).on("click",'.download-flat-pdf-button',function(e){
            $("#uploadSamepledata").val("");
@@ -215,8 +215,8 @@ To customize Correspondence Management to allow your users to download a flat PD
                    '<button type="button" class="coral-Button coral-Button--primary downloadLetterPDFBtn" disabled="disabled">Download</button>'+
                '</div>'+
        '</div>';
-       ```    
-    
+       ```
+
        The code you add in this step overrides the code under the libs folder, so copy the previous code to formaction.js file in the /apps branch. Copying the code from the /libs branch to the /apps branch ensures that the previous functionality also works.
 
        The above code is for letters-specific action handling of the command created in this procedure. For action handling of other assets, modify the JavaScript code.
@@ -235,13 +235,13 @@ To customize Correspondence Management to allow your users to download a flat PD
 
        **[!UICONTROL Match Node Types:]** Selected
 
-    1. Click **[!UICONTROL OK]**. The folder structure is created in the apps folder.  
+    1. Click **[!UICONTROL OK]**. The folder structure is created in the apps folder.
 
     1. Click **[!UICONTROL Save All]**.
 
 1. Under the newly created items node, add a node for the custom button/action in a particular asset (Example: letterpdfdownloader) using the following steps:
 
-    1. Right click the items folder and select **[!UICONTROL Create > Create Node]**.  
+    1. Right click the items folder and select **[!UICONTROL Create > Create Node]**.
 
     1. Ensure that the Create Node dialog has the following values and click **[!UICONTROL OK]**:
 
@@ -249,7 +249,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
        **[!UICONTROL Type:]** nt:unstructured
 
-    1. Click the new node you have created (here downloadFlatPDF). CRX displays the node's properties.   
+    1. Click the new node you have created (here downloadFlatPDF). CRX displays the node's properties.
 
     1. Add the following property to the node (here letterpdfdownloader) and click **[!UICONTROL Save All]**:
 
@@ -266,8 +266,8 @@ To customize Correspondence Management to allow your users to download a flat PD
        /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
        Name the file as POST.jsp. (The filename needs to be POST.jsp only.)
-    
-    1. Double-click the **[!UICONTROL POST.jsp]** file to open it in CRX. 
+
+    1. Double-click the **[!UICONTROL POST.jsp]** file to open it in CRX.
     1. Add the following code to POST.jsp file and click **[!UICONTROL Save All]**:
 
        This code is specific to the letter render service. For any other asset, add that asset's java libraries to this code. For more information on AEM Forms APIs, see [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en).
@@ -275,7 +275,7 @@ To customize Correspondence Management to allow your users to download a flat PD
        For more information on AEM libraries, see AEM [Components](/help/sites-developing/components.md).
 
        ```xml
-       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
+       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */
        <%@include file="/libs/foundation/global.jsp"%>
        <!DOCTYPE html lang="en" PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
        <%@page import="com.adobe.icc.ddg.api.*"%>
@@ -343,7 +343,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
 After you have added custom functionality to download flat PDF of your letters, you can use the following steps to download flat PDF version of the letter you select:
 
-1. Go to `https://[server]:[port]/[ContextPath]/projects.html` and log in.  
+1. Go to `https://[server]:[port]/[ContextPath]/projects.html` and log in.
 
 1. Select **[!UICONTROL Forms > Letters]**. Correspondence Management lists the letters available in the system.
 1. Click **[!UICONTROL Select]** and then click a letter to select it.

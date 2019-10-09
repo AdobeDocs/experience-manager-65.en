@@ -5,7 +5,7 @@ description: A content fragment extends a standard asset.
 seo-description: A content fragment extends a standard asset.
 uuid: f8d0bb22-0b51-4488-a1c8-29e50213c913
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: af95c6c7-0475-4f55-88a8-ec5e39a9ddcd
@@ -35,7 +35,7 @@ Depending on the type of fragment, either models or templates are also used:
 
 >[!CAUTION]
 >
->[Content fragment models](/help/assets/content-fragments-models.md) are now recommended for creating all your fragments. 
+>[Content fragment models](/help/assets/content-fragments-models.md) are now recommended for creating all your fragments.
 >
 >Content fragment models are used for all examples in We.Retail.
 
@@ -76,19 +76,19 @@ Content fragments with structured content (i.e. based on a content fragment mode
 
 * All content is stored under the `jcr:content/data` node of the asset:
 
-  * The element data is stored under the master sub-node:  
+  * The element data is stored under the master sub-node:
 
     `jcr:content/data/master`
 
-  * Variations are stored under a sub-node that carries the name of the variation:  
+  * Variations are stored under a sub-node that carries the name of the variation:
 
     e.g. `jcr:content/data/myvariation`
 
-  * The data of each element is stored in the respective sub-node as a property with the element name:  
+  * The data of each element is stored in the respective sub-node as a property with the element name:
 
     e.g. the content of element `text` is stored as property `text` on `jcr:content/data/master`
 
-* Metadata and associated content is stored below `jcr:content/metadata`  
+* Metadata and associated content is stored below `jcr:content/metadata`
 
   Except for the title and description, which are not considered traditional metadata and stored on `jcr:content`
 
@@ -160,17 +160,17 @@ The backend implementation of content fragments is, for example, responsible for
 
 The parameters for this can be configured in the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), for the OSGi bundle **DAM Content Fragments Configuration**.
 
-* **Resource types** 
+* **Resource types**
 
   A list of `sling:resourceTypes` can be provided to define components that are used for rendering content fragments and where the background processing should be applied to.
 
-* **Reference Properties** 
+* **Reference Properties**
 
   A list of properties can be configured to specify where the reference to the fragment is stored for the respective component.
 
 >[!NOTE]
 >
->There is no direct mapping between property and component type. 
+>There is no direct mapping between property and component type.
 >
 >AEM simply takes the first property that can be found on a paragraph. So you should choose the properties carefully.
 
@@ -202,17 +202,17 @@ Content fragments can be integrated with:
 
   * The individual translations of a content fragment are actually separate fragments; for example:
 
-    * they are located under different language roots: 
+    * they are located under different language roots:
 
         <pre>/content/dam/<<i>path</i>/en/<<i>to</i>>/<<i>fragment</i>></pre>
         vs.
         <pre>/content/dam/<<i>path</i>>/de/<<i>to</i>>/<<i>fragment</i>>`</pre>
 
-    * but they share exactly the same relative path below the language root: 
+    * but they share exactly the same relative path below the language root:
 
-        <pre>/content/dam/<<i>path</i>>/en/<<i>to</i>>/<<i>fragment</i>></pre> 
+        <pre>/content/dam/<<i>path</i>>/en/<<i>to</i>>/<<i>fragment</i>></pre>
 
-        vs. 
+        vs.
 
         <pre>/content/dam/<<i>path</i>>/de/<<i>to</i>>/<<i>fragment</i>></pre>
 
@@ -223,14 +223,14 @@ Content fragments can be integrated with:
   >The AEM translation workflow works with `/content`:
   >
   >  * As the content fragment models reside in `/conf`, these are not included in such translations. You can [internationalize the UI strings](/help/sites-developing/i18n-dev.md).
-  >  * Templates are copied to create the fragment so this is implicit. 
+  >  * Templates are copied to create the fragment so this is implicit.
 
 * **Metadata schemas**
 
   * Content fragments (re)use the [metadata schemas](/help/assets/metadata-schemas.md), that can be defined with standard assets.
-* CFM provides its own, specific schema:  
-  
-  `/libs/dam/content/schemaeditors/forms/contentfragment`  
+* CFM provides its own, specific schema:
+
+  `/libs/dam/content/schemaeditors/forms/contentfragment`
 
   this can be extended if required.
 * The respective schema form is integrated with the fragment editor.
@@ -249,8 +249,8 @@ You can use the server-side API to access your content fragments; see:
 
 The following three interfaces can serve as entry points:
 
-* **Fragment Template** 
-  
+* **Fragment Template**
+
   <pre><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html">FragmentTemplate</a></pre>
 
   Use `FragmentTemplate.createFragment()` for creating a new fragment.
@@ -259,12 +259,12 @@ The following three interfaces can serve as entry points:
   Resource templateOrModelRsc = resourceResolver.getResource("...");
   FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
   ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
-  
+
   ```
 
   This interface represents:
 
-    * either a content fragment model or content fragment template from which to create a content fragment, 
+    * either a content fragment model or content fragment template from which to create a content fragment,
     * and (after the creation) the structural information of that fragment
 
   This information can include:
@@ -295,8 +295,8 @@ The following three interfaces can serve as entry points:
 
         * Get basic data (name, title, description)
 
-* **Content Fragment** 
- 
+* **Content Fragment**
+
   <pre><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html">ContentFragment</a></pre>
 
   This interface allows you to work with a content fragment in an abstract way.
@@ -313,7 +313,7 @@ The following three interfaces can serve as entry points:
 
         * List elements
         * Get elements by name
-        * Create new elements (see [Caveats](#caveats)) 
+        * Create new elements (see [Caveats](#caveats))
         * Access element data (see `ContentElement`)
 
     * List variations defined for the fragment
@@ -329,7 +329,7 @@ The following three interfaces can serve as entry points:
   Interfaces that represent the prime elements of a fragment are:
 
     * **Content Element**
-  
+
         <pre><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html">ContentElement</a></pre>
 
         * Get basic data (name, title, description)
@@ -344,7 +344,7 @@ The following three interfaces can serve as entry points:
 
         * Shortcut for resolving variations (applying some additional, implementation-specific fallback logic if the specified variation is not available for an element)
 
-    * **Content Variation** 
+    * **Content Variation**
 
         <pre><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html">ContentVariation</a></pre>
 
@@ -492,7 +492,7 @@ Resource fragmentResource = resourceResolver.getResource("/content/dam/fragments
 if (fragmentResource != null) {
     ContentFragment fragment = fragmentResource.adaptTo(ContentFragment.class);
     // the resource is now accessible through the API
-} 
+}
 ```
 
 ### Example: Creating a new content fragment {#example-creating-a-new-content-fragment}
@@ -516,16 +516,16 @@ The auto save interval (measured in seconds) can be defined using the configurat
 
 * Node: `<conf-root>/settings/dam/cfm/jcr:content`
 * Property Name: `autoSaveInterval`
-* Type: `Long`  
+* Type: `Long`
 
 * Default: `600` (10 minutes); this is defined on `/libs/settings/dam/cfm/jcr:content`
 
 If you want to set an auto save interval of 5 minutes you need to define the property on your node; for example:
 
 * Node: `/conf/global/settings/dam/cfm/jcr:content`
-* Property Name: `autoSaveInterval`  
+* Property Name: `autoSaveInterval`
 
-* Type: `Long`  
+* Type: `Long`
 
 * Value: `300` (5 minutes equates to 300 seconds)
 

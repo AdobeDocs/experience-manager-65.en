@@ -5,7 +5,7 @@ description: The File Library feature lets signed-in site visitors upload, manag
 seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: 7da94703-8334-4c02-ba2a-55b5cde22e6c
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
@@ -46,74 +46,74 @@ Select the placed `File Library` component to access and select the `Configure` 
 
 Under the **[!UICONTROL Comments]** tab, specify if and how comments for uploaded files appear:
 
-* **[!UICONTROL Allow Comments on Files]** 
+* **[!UICONTROL Allow Comments on Files]**
   If checked, allow comments on uploaded files. Default is unchecked.
 
-* **[!UICONTROL Comments Per Page]** 
+* **[!UICONTROL Comments Per Page]**
   Limits the number of comments shown per page as well as the number of replies shown. Default is **10**.
 
-* **[!UICONTROL Max File Size]** 
+* **[!UICONTROL Max File Size]**
   This value will limit the uploaded file size. Default limit is 104857600 (10 Mb).
 
-* **[!UICONTROL Max Message Length]** 
+* **[!UICONTROL Max Message Length]**
   Maximum number of characters that may be entered into the text box. Default is 4096 characters.
 
-* **[!UICONTROL Allowed File Types]** 
+* **[!UICONTROL Allowed File Types]**
   A comma separated list of file extensions with the "dot" separater. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed. Default is none specified such that all file types are allowed.
 
-* **[!UICONTROL Rich Text Editor]** 
+* **[!UICONTROL Rich Text Editor]**
   If checked, comments may be entered with markup. Default is unchecked.
 
-* **[!UICONTROL Delete Comments]** 
+* **[!UICONTROL Delete Comments]**
   If checked, users are allowed to delete their own comments. Default is checked.
 
-* **[!UICONTROL Allow Tagging]** 
+* **[!UICONTROL Allow Tagging]**
   If checked, the ability to add a tag to the file will be enabled. Default is unchecked.
 
-* **[!UICONTROL Allowed Namespaces]** 
+* **[!UICONTROL Allowed Namespaces]**
   If Allow Tagging is checked, the tags available will be limited to the namespaces checked. If none are checked, then all are allowed. Default is all namespaces.
 
-* **[!UICONTROL Suggestion Limit]** 
+* **[!UICONTROL Suggestion Limit]**
   If Allow Tagging is checked, this setting limits the number of suggested tags to display. If set to -1, there is no limit. Default is -1.
 
-* **[!UICONTROL Allow Voting]** 
+* **[!UICONTROL Allow Voting]**
   If checked, the ability to voter for a file will be enabled. Default is unchecked.
 
-* **[!UICONTROL Allow Following]** 
+* **[!UICONTROL Allow Following]**
   If checked, include the following feature for blog articles, which allows members to be [notified](notifications.md) of new posts. Default is unchecked.
 
-* **[!UICONTROL Allow Threaded Replies]** 
+* **[!UICONTROL Allow Threaded Replies]**
   If checked, allow replies to posted comments. Default is unchecked.
 
 ### User Moderation tab {#user-moderation-tab}
 
 Under the **[!UICONTROL User Moderation]** tab, configure moderation of comments, if comments are allowed:
 
-* **[!UICONTROL Pre-Moderation]** 
+* **[!UICONTROL Pre-Moderation]**
   If checked, comments must be approved before they will appear on a publish site. Default is unchecked.
 
-* **[!UICONTROL Delete Comments]** 
+* **[!UICONTROL Delete Comments]**
   If checked, the visitor who posted the comment is provided the ability to delete it. Default is checked.
 
-* **[!UICONTROL Deny Comments]** 
+* **[!UICONTROL Deny Comments]**
   If checked, allow trusted member moderators to deny comments. Default is unchecked.
 
-* **[!UICONTROL Close / Reopen Comments]** 
+* **[!UICONTROL Close / Reopen Comments]**
   If checked, allow trusted member moderators to close and reopen comments. Default is unchecked.
 
-* **[!UICONTROL Flag Comments]** 
+* **[!UICONTROL Flag Comments]**
   If checked, allow visitors to flag comments as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Flag Reason List]** 
+* **[!UICONTROL Flag Reason List]**
   If checked, allow visitors to choose, from a drop-down list, their reason for flagging a comment as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Custom Flag Reason]** 
+* **[!UICONTROL Custom Flag Reason]**
   If checked, allow visitors to enter their own reason for flagging a comment as inappropriate. Default is unchecked.
 
-* **[!UICONTROL Moderation Threshold]** 
+* **[!UICONTROL Moderation Threshold]**
   Enter the number of times a comment has to be flagged by visitors before moderators are notified. Default is one time (**1**).
 
-* **[!UICONTROL Flagging Limit]** 
+* **[!UICONTROL Flagging Limit]**
   Enter the number of times a comment has to be flagged before it is hidden from public view. This number must be greater than or equal to the **Moderation Threshold**. Default is 5.
 
 ## Additional Information {#additional-information}

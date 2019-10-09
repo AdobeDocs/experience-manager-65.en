@@ -1,12 +1,12 @@
 ---
 title: Asset Level Scheduling
 seo-title: Asset Level Scheduling
-description: Follow this page to learn how to activate a specific asset in a channel for a scheduled time frame in the player's local timezone. 
-seo-description: Follow this page to learn how to activate a specific asset in a channel for a scheduled time frame in the player's local timezone. 
+description: Follow this page to learn how to activate a specific asset in a channel for a scheduled time frame in the player's local timezone.
+seo-description: Follow this page to learn how to activate a specific asset in a channel for a scheduled time frame in the player's local timezone.
 uuid: b79d521b-19d4-47c8-a41a-148d7bbf6ac9
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: da25cdc7-c814-493e-8d8e-b6191fee2831
 noindex: true
@@ -23,7 +23,7 @@ The following topics are covered in this section:
 * OvervieW
 * Using Asset Level Scheduling
 * Handling Recurrence in Assets
-* Multi Asset Scheduling  
+* Multi Asset Scheduling
 
 
 >[!CAUTION]

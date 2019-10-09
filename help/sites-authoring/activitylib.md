@@ -5,7 +5,7 @@ description: The Activities console enables you to create, organize, and manage 
 seo-description: The Activities console enables you to create, organize, and manage the marketing activities of your brands
 uuid: 544be007-3d4b-4f55-a7f8-34a3dfcaf503
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
@@ -15,8 +15,8 @@ discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 
 The Activities console enables you to create, organize, and manage the marketing [activities](/help/sites-authoring/personalization.md#activities) of your brands:
 
-* Add brands. 
-* For each brand, add and configure activities. 
+* Add brands.
+* For each brand, add and configure activities.
 * Administer activities.
 
 >[!NOTE]
@@ -37,7 +37,7 @@ Activities are displayed with a label describing what kind of activity is define
 
 >[!NOTE]
 >
->What types of activities are available is determined by the following:  
+>What types of activities are available is determined by the following:
 >
 >* If the **xt_only** option is enabled on the Adobe Target tenant (clientcode) used on the AEM side to connect to Adobe Target, then you can create **only** XT activities in AEM.
 >
@@ -103,7 +103,7 @@ To add an activity:
 1. If you are using AEM targeting or Adobe Target experience targeting:
 
     1. Click or tap **Select Audience **and select the segment that your experience targets.
-    1. Click or tap **Add Experience**, type a name, and click or tap **OK**. 
+    1. Click or tap **Add Experience**, type a name, and click or tap **OK**.
     1. Click or tap **Next**.
 
    If you are using Adobe Target A/B Testing:
@@ -162,7 +162,7 @@ You can see the performance of any Adobe Target activity (XT or A/B). If you are
 To view activity performance and convert winning experiences:
 
 1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
-1. Click or tap the brand for which you want to see activities. 
+1. Click or tap the brand for which you want to see activities.
 1. Select the activity and click or tap **View Properties **and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Performance data is displayed.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
@@ -171,7 +171,7 @@ To view activity performance and convert winning experiences:
 
    Converting the winner does the following:
 
-    * It disables the current activity 
+    * It disables the current activity
     * Modifies all pages and replaces the targeted content with the actual content of the winning experience. The content of the winning experience becomes part of the normal page **without** targeting.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
@@ -221,7 +221,7 @@ To avoid synchonization problems, always use unique names for activities. If an 
 >
 >When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. When you delete the campaign in Adobe Target, `thirdPartyId` is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names can therefore not be re-used in different campaign types.
 >
->If you use the same name in the same campaign type, you will overwrite the existing campaign. 
+>If you use the same name in the same campaign type, you will overwrite the existing campaign.
 >
 >If while synchronizing, you encounter the error "Request Failed. `thirdPartyId` already exists," change the name of the campaign and synchronize again.
 

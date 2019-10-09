@@ -5,7 +5,7 @@ description: These sizing guidelines offer an approximation of the hardware reso
 seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
 uuid: 83f928e3-986b-461b-8b3e-8faacd11172e
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
@@ -74,7 +74,7 @@ Performance optimization is a fundamental task that needs to be performed before
 
 Hardware sizing requirements for advanced use cases need to be based on a detailed performance assessment of the project. Characteristics of advanced use cases requiring exceptional hardware resources include combinations of:
 
-* high content payload / throughput  
+* high content payload / throughput
 * extensive use of customized code, custom workflows or 3rd party software libraries
 * integration with unsupported external systems
 
@@ -118,20 +118,20 @@ The estimation of how many cluster nodes are necessary is based on the basic req
 
 For benchmarking purposes, Adobe has developed some benchmark tests for standalone author instances.
 
-* **Benchmark test 1**  
-  
+* **Benchmark test 1**
+
   Calculate maximum throughput of a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages all of a similar nature. The steps involved were logging in to the site, creating a page with a SWF and Image/Text, adding a tag cloud, then activating the page.
 
-    * **Result**  
-  
+    * **Result**
+
       Maximum throughput for a simple page creation exercise such as above (considered as one transaction) was found to be 1730 transactions/hour.
 
-* **Benchmark test 2**  
-  
+* **Benchmark test 2**
+
   Calculate maximum throughput when load profile has a mix of fresh page creation (10%), modification of an existing page (80%) and creation then modification of a page in succession (10%). The complexity of the pages remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of the same complexity as defined in benchmark test 1.
 
     * **Result**
-  
+
       Maximum throughput for such a mix operation scenario was found to be 3252 transactions per hour.
 
 >[!NOTE]
@@ -151,7 +151,7 @@ In the author environment the number of authors that work in parallel and the lo
 For such scenarios Adobe executed benchmark tests on a two node shared-nothing cluster of author instances.
 
 * **Benchmark test 1a**
-  
+
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput with a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages, all of a similar nature.
 
     * **Result**
@@ -159,7 +159,7 @@ For such scenarios Adobe executed benchmark tests on a two node shared-nothing c
       Maximum throughput for a simple page creation exercise, such as above, (considered as one transaction) is found to be 2016 transactions/hour. This is an increase of approximately 16% when compared to a standalone author instance for the same benchmark test.
 
 * **Benchmark test 2b**
-  
+
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput when the load profile has a mix of fresh page creation (10%), modification of an existing pages (80%) and creation and modification a page in succession (10%). The complexity of the page remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of complexity the same as defined in benchmark test 1.
 
     * **Result**
@@ -189,7 +189,7 @@ Usually you can use the same hardware for your author environment as is recommen
 The benchmark tests at Adobe were performed using the RedHat 5.5 operating system, running on a Hewlett-Packard ProLiant DL380 G5 hardware platform with the following configuration:
 
 * Two Quad Core Intel Xeon X5450 CPUs at 3.00GHz
-* 8 GB RAM  
+* 8 GB RAM
 * Broadcom NetXtreme II BCM5708 Gigabit Ethernet
 * HP Smart Array RAID Controller, 256 MB cache
 * Two 146 GB 10,000 RPM SAS disks configured as a RAID0 stripe set
@@ -269,15 +269,15 @@ The variables in the equation are as follows:
 If you have a more complex website, you also need more powerful web servers so that AEM can answer a request in an acceptable time.
 
 * Complexity below 4:
-    * 1024 MB JVM RAM&ast; 
+    * 1024 MB JVM RAM&ast;
     * Low to mid-performance CPU
 
-* Complexity between 4 and 8: 
-    * 2048 MB JVM RAM&ast; 
+* Complexity between 4 and 8:
+    * 2048 MB JVM RAM&ast;
     * Mid to high-performance CPU
 
-* Complexity above 8: 
-    * 4096 MB JVM RAM&ast; 
+* Complexity above 8:
+    * 4096 MB JVM RAM&ast;
     * High to high-end-performance CPU
 
 >[!NOTE]
@@ -325,7 +325,7 @@ The sizing considerations for a community site depends on the anticipated intera
 
 User generated content (UGC) submitted members is stored separately from page content. While the AEM platform uses a node store that replicates site content from author to publish, AEM Communities uses a single, common store for UGC that is never replicated.
 
-For the UGC store, it is necessary to choose a storage resource provider (SRP), which influences the chosen deployment.  
+For the UGC store, it is necessary to choose a storage resource provider (SRP), which influences the chosen deployment.
 See
 
 * [Community Content Storage](/help/communities/working-with-srp.md)

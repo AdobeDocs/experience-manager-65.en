@@ -5,7 +5,7 @@ description: The AEM generic solution provides methods of managing the commerce 
 seo-description: The AEM generic solution provides methods of managing the commerce information held within the repository.
 uuid: 8af6933a-2dee-4b73-bc15-71b8394d082f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
@@ -16,7 +16,7 @@ discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 The AEM generic solution provides methods of managing the commerce information held within the repository (as opposed to using an external ecommerce engine). This includes:
 
 * [Products](/help/sites-administering/concepts.md#products)
-* [Product Variants](/help/sites-administering/concepts.md#product-variants)  
+* [Product Variants](/help/sites-administering/concepts.md#product-variants)
 
 * [Catalog(s)](/help/sites-administering/concepts.md#catalogs)
 * [Promotions](/help/sites-administering/concepts.md#promotions)
@@ -68,20 +68,20 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Specify:
 
     * **Importer**
-  
-      The importer for the specific [commerce provider](/help/sites-administering/concepts.md#commerce-providers), by default `Geometrixx`. 
-  
-    * **Source** 
-  
-      The file you want imported; you can use the browser to select a file. 
-  
-    * **Incremental Import** 
-  
+
+      The importer for the specific [commerce provider](/help/sites-administering/concepts.md#commerce-providers), by default `Geometrixx`.
+
+    * **Source**
+
+      The file you want imported; you can use the browser to select a file.
+
+    * **Incremental Import**
+
       Indicate whether this is an incremental import (as opposed to full).
 
    >[!NOTE]
    >
-   >The incremental import (of the sample geometrixx-outdoor importer) operates at the product level. 
+   >The incremental import (of the sample geometrixx-outdoor importer) operates at the product level.
    >
    >A customized importer can be defined to operate as required.
 
@@ -106,22 +106,22 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
 1. Specify:
 
-    * **Store Name** 
-  
+    * **Store Name**
+
       Products will be imported to:
 
       `/etc/commerce/products/<*store name*>/`
-  
-    * **Commerce Provider** 
-  
-      The importer for your [commerce provider](/help/sites-administering/concepts.md#commerce-providers); by default Geometrixx. 
-  
+
+    * **Commerce Provider**
+
+      The importer for your [commerce provider](/help/sites-administering/concepts.md#commerce-providers); by default Geometrixx.
+
     * **Source File**
-  
-      The location in the repository of the file you want imported. 
-  
-    * **Incremental Import** 
-  
+
+      The location in the repository of the file you want imported.
+
+    * **Incremental Import**
+
       Indicate whether this is an incremental import (as opposed to full).
 
 1. Click **Import Products**.
@@ -323,8 +323,8 @@ The mechanism to select the image to be displayed is as follows:
 
 >[!NOTE]
 >
->Often the product information is published through the pages that reference it. For instance, when publishing page X which references product Y, AEM will ask if you also want to publish product Y.  
->  
+>Often the product information is published through the pages that reference it. For instance, when publishing page X which references product Y, AEM will ask if you also want to publish product Y.
+>
 >For special cases, AEM also supports publishing direct from the product data.
 
 1. Using the **Products** console (via **Commerce**) navigate to your product information.
@@ -382,7 +382,7 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 1. Drag and drop an image in the component from the [assets browser](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. You can either:
 
-    * click the component and then click Edit icon 
+    * click the component and then click Edit icon
     * make a slow double click
 
 1. Click the fullscreen icon.
@@ -413,7 +413,7 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
    ![](do-not-localize/chlimage_1-22.png)
 
 1. Switch to [preview](/help/sites-authoring/editing-content.md#previewing-pages) mode.
-1. Click the + hotspot. A dialog opens where you can choose the size and quantity of the product you entered in **Path**. 
+1. Click the + hotspot. A dialog opens where you can choose the size and quantity of the product you entered in **Path**.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
@@ -497,7 +497,7 @@ To generate a Catalog:
    For example, open the **Tags/Keywords** field to select Activity, then Swimming from the Geometrixx-Outdoors section.
 
 1. Click **OK** to save your properties; example products will be shown under the **Product Selection Criteria** on the blueprint page.
-1. Click on **Rollout Changes...**, select **Rollout page and all sub pages**, then click **Next** then **Rollout**. Once the rollout is completed successfully the **Status** indicator will be shown as green. 
+1. Click on **Rollout Changes...**, select **Rollout page and all sub pages**, then click **Next** then **Rollout**. Once the rollout is completed successfully the **Status** indicator will be shown as green.
 1. You can now click **Close** and check the new catalog section; for example, on and under:
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
@@ -556,8 +556,8 @@ To rollout a catalog:
 
 #### Blueprint Importer - Classic UI {#blueprint-importer-classic-ui}
 
-1. Using the **Tools** console, navigate to **Commerce**.  
-  
+1. Using the **Tools** console, navigate to **Commerce**.
+
    For example:
 
    `http://localhost:4502/miscadmin#/etc/commerce`
@@ -583,7 +583,7 @@ To rollout a catalog:
 1. Open the **Websites** console of your author instance.
 1. In the left-hand pane select your required **Campaign**.
 1. Click on **New**, select the **Promotion** template, then specify a **Title** (and **Name** if required) for your new voucher.
-1. Click **Create**. The new promotion page will be shown in the right-hand pane.  
+1. Click **Create**. The new promotion page will be shown in the right-hand pane.
 
 1. Edit the **Properties** by either:
 
@@ -592,7 +592,7 @@ To rollout a catalog:
 
    Specify the **Promotion Type**, **Discount Type**, **Discount Value** and any other fields as required.
 
-1. Click **OK** to save.  
+1. Click **OK** to save.
 
 1. You can now activate your promotion, so that shoppers will see it on the publish instance.
 
@@ -605,10 +605,10 @@ To rollout a catalog:
 1. Open the **Websites** console of your author instance.
 1. In the left-hand pane select your required **Campaign**.
 1. Click on **New**, select the **Voucher** template, then specify a **Title** (and **Name** if required) for your new voucher.
-1. Click **Create**. The new voucher page will be shown in the right-hand pane.  
+1. Click **Create**. The new voucher page will be shown in the right-hand pane.
 
 1. Open your new voucher page with a double-click, then click on **Edit** to configure the information as required.
-1. Click **OK** to save.  
+1. Click **OK** to save.
 
 1. You can now activate your voucher, so that shoppers can use it in their carts on the publish instance.
 
@@ -639,17 +639,17 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
 >[!NOTE]
 >
->It should be remembered that out-of-the-box AEM does not have actions required for standard functionality related to orders, such as returning merchandise, updating order status, doing fulfilment, generating packing slips. It is primarily intended as a technology preview. 
+>It should be remembered that out-of-the-box AEM does not have actions required for standard functionality related to orders, such as returning merchandise, updating order status, doing fulfilment, generating packing slips. It is primarily intended as a technology preview.
 >
->The generic order management in AEM has been kept basic; the fields available in the wizard are dependent on the scaffold:  
+>The generic order management in AEM has been kept basic; the fields available in the wizard are dependent on the scaffold:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >If you create a customized scaffold you can store more order information.
 
 >[!NOTE]
 >
->The orders console exposes the vendor order information, which is never published.  
->  
+>The orders console exposes the vendor order information, which is never published.
+>
 >The customer order information is held in their home directories and is exposed by the Order History for their Account. This information is published along with the rest of their home directory.
 
 ### Creating Order Information {#creating-order-information}
@@ -661,7 +661,7 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
    ![](do-not-localize/chlimage_1-26.png)
 
-1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](/help/sites-administering/concepts.md#order-information).  
+1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](/help/sites-administering/concepts.md#order-information).
 
 1. Select **Create** to save the information.
 

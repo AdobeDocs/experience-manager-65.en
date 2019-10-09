@@ -7,7 +7,7 @@ uuid: 9eeaabeb-c4d0-4551-98ba-d900757e59d3
 contentOwner: asgupta
 topic-tags: extending-assets
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: f18ccd41-2db3-47b2-9462-29723c7ed9ab
 ---
 
@@ -28,9 +28,9 @@ To process large files using ImageMagick, consider higher than usual memory requ
 Multiple versions of ImageMagic installation files are available for various operating systems. Use the appropriate version for your operating system.
 
 1. Download the appropriate [ImageMagick installation files](https://www.imagemagick.org/script/download.php) for your operating system.
-1. To install ImageMagick on the disk hosting the AEM server, launch the installation file.  
+1. To install ImageMagick on the disk hosting the AEM server, launch the installation file.
 
-1. Set the path Environment variable to the ImageMagic installation directory. 
+1. Set the path Environment variable to the ImageMagic installation directory.
 1. To check whether the installation was successful, execute the `identify -version` command.
 
 ## Set up the command line process step {#set-up-the-command-line-process-step}

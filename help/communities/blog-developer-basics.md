@@ -5,7 +5,7 @@ description: Blog overview
 seo-description: Blog overview
 uuid: ce0885de-6276-47a2-8f6c-358f0beb2b89
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: de8d0e6d-827b-45fe-a538-d3fe1dec8427
@@ -29,31 +29,31 @@ The blog feature is comprised of two main components that are available by addin
 
 ### Blog {#blog}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/journal/components/hbs/journal</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/journal/components/hbs/journal</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.journal</td> 
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.journal</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/journal/components/hbs/journal/clientlibs/journal.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/journal/components/hbs/journal/clientlibs/journal.css</td>
   </tr>
   <tr>
-   <td><strong> properties</strong></td> 
-   <td>see <a href="blog-feature.md">Blog Feature</a></td> 
+   <td><strong> properties</strong></td>
+   <td>see <a href="blog-feature.md">Blog Feature</a></td>
   </tr>
  </tbody>
 </table>
@@ -84,7 +84,7 @@ A community site structure that includes the [Bog function](functions.md#blog-fu
 
 ### Accessing Blog Entries (UGC) {#accessing-blog-entries-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).

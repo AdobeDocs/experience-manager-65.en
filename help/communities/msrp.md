@@ -5,7 +5,7 @@ description: Set up AEM Communities to use a relational database as its common s
 seo-description: Set up AEM Communities to use a relational database as its common store
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
@@ -56,35 +56,35 @@ On author, to access the Storage Configuration console:
 * **[!UICONTROL mongoDB Configuration]**
 
     * **[!UICONTROL mongoDB URI]**
-  
+
       *default*: mongodb://localhost/?maxPoolSize=10&waitQueueMultiple=5&readPreference=secondaryPreferred
-  
-    * **[!UICONTROL mongoDB Database]** 
-  
+
+    * **[!UICONTROL mongoDB Database]**
+
       *default*: communities
-  
-    * **[!UICONTROL mongoDB UGC Collection]** 
+
+    * **[!UICONTROL mongoDB UGC Collection]**
 
       *default*: content
-  
-    * **[!UICONTROL mongoDB Attachment Collection]** 
-  
+
+    * **[!UICONTROL mongoDB Attachment Collection]**
+
       *default*: attachments
 
 * **[!UICONTROL SolrConfiguration]**
 
-    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host** 
+    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-      When running in [SolrCloud mode](solr.md#solrcloud-mode) with an external ZooKeeper, set this value to the `HOST:PORT` for the ZooKeeper, such as *my.server.com:2181* 
-      For a ZooKeeper Ensemble, enter comma-separated `HOST:PORT` values, such as *host1:2181,host2:2181* 
-      Leave blank if running Solr in standalone mode using the internal ZooKeeper.  
+      When running in [SolrCloud mode](solr.md#solrcloud-mode) with an external ZooKeeper, set this value to the `HOST:PORT` for the ZooKeeper, such as *my.server.com:2181*
+      For a ZooKeeper Ensemble, enter comma-separated `HOST:PORT` values, such as *host1:2181,host2:2181*
+      Leave blank if running Solr in standalone mode using the internal ZooKeeper.
       *Default*: *&lt;blank&gt;*
-    * **[!UICONTROL Solr URL]** 
-      The URL used to communicate with Solr in standalone mode. 
-      Leave blank if running in SolrCloud mode.  
+    * **[!UICONTROL Solr URL]**
+      The URL used to communicate with Solr in standalone mode.
+      Leave blank if running in SolrCloud mode.
       *Default*: https://127.0.0.1:8983/solr/
-    * **[!UICONTROL Solr Collection]** 
-      The Solr collection name.  
+    * **[!UICONTROL Solr Collection]**
+      The Solr collection name.
       *Default*: collection1
 * Select **[!UICONTROL Submit]**
 
@@ -104,7 +104,7 @@ To work with replica sets and learn how to define connections between applicatio
 
 ```shell
 # Example url for:
-#     servers "mongoserver1", "mongoserver2", "mongoserver3" 
+#     servers "mongoserver1", "mongoserver2", "mongoserver3"
 #     replica set 'rs0'
 # port numbers only necessary if not default port 27017
 mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mongoport3>/?replicaSet=rs0&maxPoolSize=100&waitQueueMultiple=50&readPreference=secondaryPreferred
@@ -128,7 +128,7 @@ If upgrading from an earlier version configured with MSRP, it will be necessary 
 1. Install new Solr configuration files
     * For [standard MLS](solr.md#installing-standard-mls)
     * For [advanced MLS](solr.md#installing-advanced-mls)
-1. Reindex MSRP 
+1. Reindex MSRP
    See section [MSRP Reindex Tool](#msrp-reindex-tool)
 
 ## Publishing the Configuration {#publishing-the-configuration}
@@ -165,7 +165,7 @@ When reindexing, there is a tradeoff between memory and performance controlled b
 
 A reasonable default is 5000:
 
-* If memory is an issue, specify a a smaller number 
+* If memory is an issue, specify a a smaller number
 * If speed is an issue, specify a larger number to increase speed
 
 ### Running MSRP Reindex Tool Using cURL Command {#running-msrp-reindex-tool-using-curl-command}
@@ -176,21 +176,21 @@ The basic format is:
 
 cURL -u *signin* -d *data* *reindex-url*
 
-*signin* = administrator-id:password  
+*signin* = administrator-id:password
 For example: admin:admin
 
 *data* = "batchSize=*size*&path=*path"*
 
-*size* = how many UGC entries to reindex per operation  
+*size* = how many UGC entries to reindex per operation
 `/content/usergenerated/asi/mongo/`
 
-*path* = the root location of the tree of UGC to reindex  
+*path* = the root location of the tree of UGC to reindex
 
-* To reindex all UGC, specify the value of the `asipath`property of  
-`/etc/socialconfig/srpc/defaultconfiguration`  
+* To reindex all UGC, specify the value of the `asipath`property of
+`/etc/socialconfig/srpc/defaultconfiguration`
 * To limit the index to some UGC, specify a subtree of `asipath`
 
-*reindex-url* = the endpoint for reindexing of SRP  
+*reindex-url* = the endpoint for reindexing of SRP
 `http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]

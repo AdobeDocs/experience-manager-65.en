@@ -7,7 +7,7 @@ uuid: c1d20997-f853-4772-b1c6-8cea73221d0a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d3565776-1b7d-498c-9840-b17f80170d9b
 ---
 

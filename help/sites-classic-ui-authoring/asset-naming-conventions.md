@@ -5,7 +5,7 @@ description: Nodes in the repository are subject to naming conventions of the Ja
 seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository. However, Adobe Experience Manager imposes further conventions for the name of asset nodes.
 uuid: 6b622a60-90e8-461e-9b67-42c11c7038f9
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b

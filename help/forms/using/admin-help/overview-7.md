@@ -7,7 +7,7 @@ uuid: f495c170-2d17-45b0-b09d-22cce101131e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e87c7379-28ed-4fda-aef1-970d2b54f30d
 ---
 

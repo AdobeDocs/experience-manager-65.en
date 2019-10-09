@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
@@ -49,7 +49,7 @@ When a Adobe Analytics framework is added to the page, the `cloudservices` scrip
 <!--
 CQ_Analytics.Sitecatalyst.frameworkComponents = ['foundation/components/page'];
 /**
- * Sets Adobe Analytics variables accordingly to mapped components. If <code>options</code> 
+ * Sets Adobe Analytics variables accordingly to mapped components. If <code>options</code>
  * object is provided only variables matching the options.componentPath are set.
  *
  * @param {Object} options Parameter object from CQ_Analytics.record() call. Optional.
@@ -95,7 +95,7 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
 $CQ(function(){
  if( CQ_Analytics &&
   CQ_Analytics.ClientContextMgr &&
-  !CQ_Analytics.ClientContextMgr.isConfigLoaded ) 
+  !CQ_Analytics.ClientContextMgr.isConfigLoaded )
   {
    $CQ("#cq-analytics-texthint").show();
   }
@@ -195,7 +195,7 @@ Configure the topnav component and edit the JSP file to define the tracking even
 1. In the a element, add the following attribute:
 
    ```xml
-   onclick = "tracknav('<%= child.getPath() %>.html')" 
+   onclick = "tracknav('<%= child.getPath() %>.html')"
    ```
 
 1. At the bottom of the page, add the following javascript code:
@@ -214,7 +214,7 @@ Configure the topnav component and edit the JSP file to define the tracking even
                    });
                }
        }
-   </script> 
+   </script>
    ```
 
 1. Click Save All.
@@ -278,7 +278,7 @@ The content of the topnav.jsp file should appear as follows:
                 });
             }
     }
-</script>  
+</script>
 ```
 
 >[!NOTE]

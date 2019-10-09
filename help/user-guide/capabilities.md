@@ -4,7 +4,7 @@ seo-title: AEM 6.4 Capabilities User Guide
 description: An overview of the essential capabilities of AEM 6.4
 seo-description: An overview of the essential capabilities of AEM 6.4
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
 # AEM 6.4 Capabilities User Guides {#aem-64-capabilities-user-guides}

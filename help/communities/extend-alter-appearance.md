@@ -5,7 +5,7 @@ description: Modify the HBS scripts
 seo-description: Modify the HBS scripts
 uuid: 6e1030af-f170-4a60-9d3f-439afd05de57
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
@@ -29,7 +29,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
     * Comment out the tag which includes the avatar for a comment post (~ line 21):
 
-      ``` 
+      ```
       <!--
        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
        -->
@@ -39,7 +39,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
     * Comment out the tag which includes the avatar for the next comment entry (~ line 44):
 
-      ``` 
+      ```
       <!--
        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
        -->
@@ -65,7 +65,7 @@ One way to do so is
 
 [Continuing the experience](extend-sample-page.md#publish-sample-page) on the publish instance, still signed in as the same user, it is now possible to refresh the page in the publish environment to view the modification to remove the avatar:
 
-![chlimage_1-81](assets/chlimage_1-81.png) 
+![chlimage_1-81](assets/chlimage_1-81.png)
 
 ## Sample Comment Extension Package {#sample-comment-extension-package}
 

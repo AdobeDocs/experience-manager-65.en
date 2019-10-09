@@ -5,7 +5,7 @@ description: Multi-zone Layout allows you to create multiple zone content and us
 seo-description: Multi-zone Layout allows you to create multiple zone content and use a variety of assets such as videos, images and text that can be combined in a single screen. Follow this page to learn more.
 uuid: 2ad689ef-700a-4eed-b5e2-fc57f2288388
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: authoring
 discoiquuid: 4c073172-d93c-4b73-87ab-0b08789193a3
@@ -44,15 +44,15 @@ Create a channel titled as **MultiZone** in **Zones** project. Follow the steps 
 **Creating the Channel **
 
 1. Select the Adobe Experience Manager link (top left) and then **Screens**. Alternatively, you can ﻿go directly to: http://localhost:4502/screens.html/content/screens.
-1. Navigate to **Channels** folder and click **Create** from the action bar.   
+1. Navigate to **Channels** folder and click **Create** from the action bar.
 
-1. Select **Left L-bar Split Screen Chanel** from the **Create** wizard.  
+1. Select **Left L-bar Split Screen Chanel** from the **Create** wizard.
 
 1. Click **Next** and enter the **title** as **MultiZone**.
 
 1. Click **Create** to complete the channel creation.
 
-![screen_shot_2018-12-07at120026pm](assets/screen_shot_2018-12-07at120026pm.png) 
+![screen_shot_2018-12-07at120026pm](assets/screen_shot_2018-12-07at120026pm.png)
 
 ### Using Single Assets in one or more Zones {#using-single-assets-in-one-or-more-zones}
 
@@ -105,7 +105,7 @@ If you want the zones to display sequence of images or content and a static imag
 1. **Add Content to all three Zones**
 
     1. Navigate to **Zones** --&gt; **Channels** --&gt; **MultiZone**.
-    1. Select the embedded sequence in one of the zones. 
+    1. Select the embedded sequence in one of the zones.
     1. Click the **Configure** (wrench) icon to one of the embedded sequences in the editor.
     1. Select the channel path as **Zones** --&gt; **Channels** --&gt; **EmbeddedChannels** --&gt; **Zone1**, as shown in the figure below.
 

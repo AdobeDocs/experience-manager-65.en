@@ -7,7 +7,7 @@ uuid: 0bf1a8a7-c917-4248-9937-d24e31c5ba17
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 ---
 
@@ -23,14 +23,14 @@ For each enterprise domain you configure, specify the directories that the authe
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
 1. Click New Enterprise Domain or select an existing enterprise domain.
-1. Click Add Directory. 
+1. Click Add Directory.
 1. In the Profile Name box, type a name to distinguish this directory and then click Next.
-1. Configure the directory server settings. (See [Directory settings](configuring-directories.md#directory-settings).) 
+1. Configure the directory server settings. (See [Directory settings](configuring-directories.md#directory-settings).)
 1. To verify that a connection can be made to the LDAP server, click Test. If the test fails, review the exception in the Application Server log file to determine the root cause of the failure. Click Close and then click Next.
-1. Select User Settings and configure the settings as required. (See [Directory settings](configuring-directories.md#directory-settings).) 
+1. Select User Settings and configure the settings as required. (See [Directory settings](configuring-directories.md#directory-settings).)
 1. To verify that the base DN and other configured attributes collect the correct batch of users, click Test. LDAP attempts to retrieve the first 200 records by using the provided settings (such as the base DN, search filter, and all attributes).
 
-   If users are returned, the results show the values that are assigned to each field as per the attribute set. If the test fails because of a non-existent server name, incorrect authorization information, or incorrect attributes, the following error message appears: "The search criteria specified did not return any result". To determine the root cause of the failure, review the exception in the Application Server log file. Click Close and then click Next. 
+   If users are returned, the results show the values that are assigned to each field as per the attribute set. If the test fails because of a non-existent server name, incorrect authorization information, or incorrect attributes, the following error message appears: "The search criteria specified did not return any result". To determine the root cause of the failure, review the exception in the Application Server log file. Click Close and then click Next.
 
 1. Select Group Settings and configure the settings as required. (See [Directory settings](configuring-directories.md#directory-settings).)
 1. To verify that the base DN and other configured attributes collect the correct batch of groups, click Test. If groups are returned, the results show the values that are assigned to each field as per the attribute set. Click Close.
@@ -41,9 +41,9 @@ For information about creating a custom SPI, see "Developing SPIs for AEM forms"
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
 1. Click New Enterprise Domain or select an existing enterprise domain.
-1. Click Add Directory. 
-1. Type a name in the Profile Name box, select Custom SPI Provider, and then click Next. 
-1. Select a custom user provider from the list and click Next. 
+1. Click Add Directory.
+1. Type a name in the Profile Name box, select Custom SPI Provider, and then click Next.
+1. Select a custom user provider from the list and click Next.
 1. Select a custom group provider from the list and click Finish.
 
 ## Edit a directory {#edit-a-directory}
@@ -52,7 +52,7 @@ You can edit the details of a directory that you previously configured.
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
 1. Click the appropriate domain in the list and, on the page that appears, select the appropriate directory from the list.
-1. Configure the directory, user, and group settings as required. (See [Directory settings](configuring-directories.md#directory-settings).) 
+1. Configure the directory, user, and group settings as required. (See [Directory settings](configuring-directories.md#directory-settings).)
 1. Click OK.
 
 ## Delete a directory {#delete-a-directory}
@@ -205,7 +205,7 @@ The LDAP protocol provides a mechanism to query large data sets in a paginated w
 >This section describes using the VLV control for the Sun ONE Directory Server. However, you can use this control for any directory server that supports VLV control.
 
 1. When configuring the directory, select Enable Virtual List View (VLV) Control on both the User Settings page and the Group Settings page. When you select the check box, you must also specify a sort name in the Sort Field box. The default value is uid. (See [Adding directories or custom SPIs](configuring-directories.md#adding-directories-or-custom-spis) or [Edit a directory](configuring-directories.md#edit-a-directory).)
-1. Use Sun ONE administration console or a command-line script to create the LDAP VLV entries for users and groups. If you use a command-line script, you can use the sample users and groups LDIF files. (See [Configuring the Sun ONE Directory Server for VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).) 
+1. Use Sun ONE administration console or a command-line script to create the LDAP VLV entries for users and groups. If you use a command-line script, you can use the sample users and groups LDIF files. (See [Configuring the Sun ONE Directory Server for VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
 1. Stop the server and create the required index. (See [Create the Directory Server Index for VLV](configuring-directories.md#create-the-directory-server-index-for-vlv).)
 
 ### Configuring the Sun ONE Directory Server for VLV {#configuring-the-sun-one-directory-server-for-vlv}
@@ -219,19 +219,19 @@ Creating a VLV requires a pair of entries that include the `vlvSearch` and `vlvI
 Here is a sample script LDIF for VLV entry for users:
 
 ```as3
- dn: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config 
- objectclass: top 
- objectclass: vlvSearch 
- cn: lcuser 
- vlvBase: dc=corp,dc=adobe,dc=com 
- vlvScope: 2 
- vlvFilter: (&(objectclass=inetOrgPerson)) 
- aci: (target="ldap:///cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config")(targetattr="*")(version 3.0; acl "Config" 
- ;allow(read,search,compare) userdn="ldap:///all"; ) 
- dn: cn=lcuser,cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config 
- cn: lcuser 
- vlvSort: cn 
- objectclass: top 
+ dn: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
+ objectclass: top
+ objectclass: vlvSearch
+ cn: lcuser
+ vlvBase: dc=corp,dc=adobe,dc=com
+ vlvScope: 2
+ vlvFilter: (&(objectclass=inetOrgPerson))
+ aci: (target="ldap:///cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config")(targetattr="*")(version 3.0; acl "Config"
+ ;allow(read,search,compare) userdn="ldap:///all"; )
+ dn: cn=lcuser,cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
+ cn: lcuser
+ vlvSort: cn
+ objectclass: top
  objectclass: vlvIndex
 ```
 
@@ -273,13 +273,13 @@ After configuring the directory settings and creating the LDAP VLV entries for u
    The following output is generated:
 
    ```as3
-    D:\tools\ldap\sun\shared\bin>..\..\slapd-chetanmeh-xp3\vlvindex.bat -n userRoot -T livecycle 
-    [21/Nov/2007:16:47:26 +051800] - userRoot: Indexing VLV: livecycle 
-    [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 1000 entries (5%). 
-    [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 2000 entries (9%). 
-    ... 
-    [21/Nov/2007:16:47:29 +051800] - userRoot: Indexed 20000 entries (94%). 
-    [21/Nov/2007:16:47:29 +051800] - userRoot: Indexed 21000 entries (99%). 
+    D:\tools\ldap\sun\shared\bin>..\..\slapd-chetanmeh-xp3\vlvindex.bat -n userRoot -T livecycle
+    [21/Nov/2007:16:47:26 +051800] - userRoot: Indexing VLV: livecycle
+    [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 1000 entries (5%).
+    [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 2000 entries (9%).
+    ...
+    [21/Nov/2007:16:47:29 +051800] - userRoot: Indexed 20000 entries (94%).
+    [21/Nov/2007:16:47:29 +051800] - userRoot: Indexed 21000 entries (99%).
     [21/Nov/2007:16:47:29 +051800] - userRoot: Finished indexing.
    ```
 
@@ -292,19 +292,19 @@ After configuring the directory settings and creating the LDAP VLV entries for u
    Output such as the following sample data is generated:
 
    ```as3
-    D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=* 
-    ldapsearch.exe: started Tue Nov 27 16:34:20 2007 
-    version: 1 
-    dn: 
-    objectClass: top 
-    namingContexts: dc=corp,dc=adobe,dc=com 
-    supportedExtension: 2.16.840.1.113730.3.5.7 
-    ... 
-    vlvsearch: cn=MCC ou=testdata dc=corp dc=adobe dc=com, cn=userRoot,cn=ldbm dat 
-        abase,cn=plugins,cn=config 
-    vlvsearch: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config 
-    vlvsearch: cn=Browsing ou=testdata,cn=userRoot,cn=ldbm database,cn=plugins,cn= 
-        config 
+    D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*
+    ldapsearch.exe: started Tue Nov 27 16:34:20 2007
+    version: 1
+    dn:
+    objectClass: top
+    namingContexts: dc=corp,dc=adobe,dc=com
+    supportedExtension: 2.16.840.1.113730.3.5.7
+    ...
+    vlvsearch: cn=MCC ou=testdata dc=corp dc=adobe dc=com, cn=userRoot,cn=ldbm dat
+        abase,cn=plugins,cn=config
+    vlvsearch: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
+    vlvsearch: cn=Browsing ou=testdata,cn=userRoot,cn=ldbm database,cn=plugins,cn=
+        config
     1 matches
    ```
 

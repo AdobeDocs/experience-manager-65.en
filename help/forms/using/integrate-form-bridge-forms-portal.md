@@ -5,7 +5,7 @@ description: You can use the FormBridge API to get or set the values of form fie
 seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
 uuid: 09f2189f-d584-4b84-895e-22833b6b17e3
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 ---
@@ -43,13 +43,13 @@ An existing HTML application can leverage the FormBridge API to interact with a 
        <head>
           <cq:include script="formRuntime.jsp"/>
            <!-- Portal Scripts and Styles -->
-          <cq:include script="portalheader.jsp"/> 
+          <cq:include script="portalheader.jsp"/>
        </head>
        <body>
            <div id="leftdiv" >
-               <div id="leftdivcontentarea">   
+               <div id="leftdivcontentarea">
                    <!-- Portal Body -->
-                 <cq:include script="portalbody.jsp"/>  
+                 <cq:include script="portalbody.jsp"/>
                </div>
            </div>
            <div id="rightdiv">
@@ -60,11 +60,11 @@ An existing HTML application can leverage the FormBridge API to interact with a 
                <!  --To assist in page transitions -- add navigation, based on scrolling -->
                <cq:include  script="../nav/scroll/nav_footer.jsp"/>
                <cq:include script="footer.jsp"/>
-               </div>    
+               </div>
            </div>
        </body>
    </html>
-   
+
    ```
 
    >[!NOTE]

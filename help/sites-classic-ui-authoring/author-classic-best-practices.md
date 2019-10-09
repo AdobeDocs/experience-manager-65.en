@@ -5,7 +5,7 @@ description: Authoring best practices describe how to use AEM in the most effici
 seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
@@ -33,27 +33,27 @@ Specific documents are described and linked to in the tables that follow.
 
 Best practices around Assets, including the dynamic media capability and Scene 7 integration, are described in the following topics:
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>File Formats</td> 
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Assets File formats Best Practices</a></td> 
-   <td>Describes best practices around file support within AEM Assets.</td> 
+   <td>File Formats</td>
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Assets File formats Best Practices</a></td>
+   <td>Describes best practices around file support within AEM Assets.</td>
   </tr>
   <tr>
-   <td>Video Encoding</td> 
-   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Encoding best practices</a></td> 
-   <td>Describes best practice tips around encoding source video files.</td> 
+   <td>Video Encoding</td>
+   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Encoding best practices</a></td>
+   <td>Describes best practice tips around encoding source video files.</td>
   </tr>
   <tr>
-   <td>Dynamic Imaging</td> 
-   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Dynamic Imaging best practices</a></td> 
-   <td><p>Describes how to sharpen an image for best results and the best way to optimize the quality of your images if you're using the Dynamic Media functionality or are integrating with Scene7. </p> </td> 
+   <td>Dynamic Imaging</td>
+   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Dynamic Imaging best practices</a></td>
+   <td><p>Describes how to sharpen an image for best results and the best way to optimize the quality of your images if you're using the Dynamic Media functionality or are integrating with Scene7. </p> </td>
   </tr>
   <tr>
-   <td>Mulltilingual Assets</td> 
-   <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Translation best practices</a></td> 
-   <td>Describes best practices around translating AEM assets efficiently.</td> 
+   <td>Mulltilingual Assets</td>
+   <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Translation best practices</a></td>
+   <td>Describes best practices around translating AEM assets efficiently.</td>
   </tr>
  </tbody>
 </table>

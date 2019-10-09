@@ -5,7 +5,7 @@ description: Creating community groups
 seo-description: Creating community groups
 uuid: 05429b23-9083-498c-9eb3-d49b049d9446
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
@@ -37,22 +37,22 @@ Under the **[!UICONTROL Settings]** tab, you provide the basic features of the g
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-* **[!UICONTROL Group Name]** 
+* **[!UICONTROL Group Name]**
   The title of the group to display on the community site.
 
-* **[!UICONTROL Description]** 
+* **[!UICONTROL Description]**
   A description of the group to display on the community site.
 
-* **[!UICONTROL Invite]** 
+* **[!UICONTROL Invite]**
   A list of members to invite to join the group. Type-ahead search will provide suggestions of community members to invite.
 
-* **[!UICONTROL Group URL Name]** 
+* **[!UICONTROL Group URL Name]**
   The name for the group page that becomes part of the URL.
 
-* **[!UICONTROL Open Group]** 
+* **[!UICONTROL Open Group]**
   Selecting `Open Group` indicates any anonymous site visitor may view the content, and will de-select `Member Only Group`.
 
-* **[!UICONTROL Member Only Group]** 
+* **[!UICONTROL Member Only Group]**
   Selecting `Member Only Group` indicates only members of the group may view the content, and will de-select `Open Group`.
 
 Under the **[!UICONTROL Template]** tab is the ability to select from the list of community group templates that were specified when the groups function was included in the community site's structure or in a community site template.

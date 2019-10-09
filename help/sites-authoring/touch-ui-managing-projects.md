@@ -5,7 +5,7 @@ description: Projects lets you organize your project by grouping resources into 
 seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed in the the Projects console
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
@@ -45,7 +45,7 @@ Out of the box, AEM provides these templates to choose from when you create a pr
 The procedure of creating a project is the same from project to project. The difference between the types of projects includes available [user roles](/help/sites-authoring/projects.md) and [workflows](/help/sites-authoring/projects-with-workflows.md).  To create a new project:
 
 1. In **Projects**, tap/click **Create** to open the **Create Project** wizard:
-1. Select a template. Out of the box, Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md), and [Product Photo Shoot Product](/help/sites-authoring/managing-product-information.md) are available and click **Next**. 
+1. Select a template. Out of the box, Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md), and [Product Photo Shoot Product](/help/sites-authoring/managing-product-information.md) are available and click **Next**.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -82,7 +82,7 @@ The same method is used to delete a project from the console or a linked resourc
     * To delete a resource link within a project, open your project in the **Projects** console.
 
 1. Enter selection mode by clicking **Select** and selecting your project or resource link.
-1. Tap/click **Delete**.  
+1. Tap/click **Delete**.
 
 1. You need to confirm the deletion in a dialog. If confirmed, the project or resource link is deleted. Tap/click **Deselect** to exit selection mode.
 
@@ -122,13 +122,13 @@ To open a tile so that you can view or modify items:
 
 To view project statistics, in the **Projects** console, click **Show Statistics View**. The level of completion for each project displays. Click **Show Statistics View** again to go to the **Projects** console.
 
-![chlimage_1-263](assets/chlimage_1-263.png) 
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 ### Viewing a Project Timeline {#viewing-a-project-timeline}
 
 The project timeline provides information on when assets in the project were last used. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. Assets are displayed in the left pane. Click/tap **Timeline** to return to the **Projects** console.
 
-![chlimage_1-264](assets/chlimage_1-264.png) 
+![chlimage_1-264](assets/chlimage_1-264.png)
 
 ### Viewing Active/Inactive Projects {#viewing-active-inactive-projects}
 
@@ -138,7 +138,7 @@ To toggle between your active and inactive projects, in the **Projects** console
 
 If the icon has an x next to, it is displaying the inactive projects.
 
-![chlimage_1-266](assets/chlimage_1-266.png) 
+![chlimage_1-266](assets/chlimage_1-266.png)
 
 ## Making Projects Inactive or Active {#making-projects-inactive-or-active}
 

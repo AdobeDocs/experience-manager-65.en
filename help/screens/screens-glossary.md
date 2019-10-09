@@ -7,7 +7,7 @@ uuid: 2cbb7e48-0436-497d-adbd-7abdb7343fcc
 contentOwner: User
 content-type: reference
 topic-tags: introduction
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 discoiquuid: 984f91ab-9b4c-4cb8-aefa-bc765157349a
 ---
 

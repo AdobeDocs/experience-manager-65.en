@@ -5,7 +5,7 @@ description: AEM Forms allows you to integrate adaptive forms with AEM Forms on 
 seo-description: AEM Forms allows you to integrate adaptive forms with AEM Forms on JEE processes for processing form data.
 uuid: ee7ea442-d604-4520-9af5-ad40ec4927a1
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
 ---

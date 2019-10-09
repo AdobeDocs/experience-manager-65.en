@@ -5,7 +5,7 @@ description: By default, the attachment support for HTML5 forms is disabled.
 seo-description: By default, the attachment support for HTML5 forms is disabled.
 uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 ---
@@ -15,20 +15,20 @@ discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 You can upload, preview, and submit attachments with HTML5 forms. By default, the attachment support is disabled. To enable the attachment support:
 
 1. Create a [custom profile](/help/forms/using/custom-profile.md) with mutiselect string property `mfAttachmentOptions`.
-1. In the custom profile, specify properties `fileSizeLimit`, `multiSelect`, and `buttonTex`t to configure options of the file attachment widget. As required, you can also specify more custom properties.   
+1. In the custom profile, specify properties `fileSizeLimit`, `multiSelect`, and `buttonTex`t to configure options of the file attachment widget. As required, you can also specify more custom properties.
 
 1. In the custom profile, use the following configurations:
 
     * **multiSelect** -&gt; true or false (true by default)
     * **fileSizeLimit** -&gt; value_in_mb (say 5) (2 MBs by default)
-    * **buttonText** -&gt; Button text for pop-up window ("Attach" by default) 
+    * **buttonText** -&gt; Button text for pop-up window ("Attach" by default)
     * **accept** -&gt; file types to accept ("audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf" by default)
 
    >[!NOTE]
    >
    >In Microsoft Internet Explorer 9, users can attach files larger than the specified limit. It is a known issue.
 
-1. Use the [metadata editor](/help/forms/using/manage-form-metadata.md) to select the custom profile that you have created above for HTML 5 forms. 
+1. Use the [metadata editor](/help/forms/using/manage-form-metadata.md) to select the custom profile that you have created above for HTML 5 forms.
 1. Render your form template with custom profile and the attachments icon would appear on the forms toolbar.
 
    >[!NOTE]

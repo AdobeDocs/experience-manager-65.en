@@ -5,7 +5,7 @@ description: Learn how to create or delete a watched folder, or modify the prope
 seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
 uuid: 659d4d8c-99b8-40dd-b884-bfee4d476fe1
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 ---
@@ -35,9 +35,9 @@ Perform the following steps to create a watched folder:
 1. Tap **Tools** &gt; **Forms** &gt; **Configure Watched Folder.** A list of already configured watched folders is displayed.
 1. Tap **New**. A list of fields required to create the watched folder is displayed:
 
-    * **Name**: Identifies the watched folder. Use only alphanumeric characters for the name. 
+    * **Name**: Identifies the watched folder. Use only alphanumeric characters for the name.
     * **Path**: Specifies the watched folder location. In a clustered environment, this setting must point to a shared network folder that is accessible to every user running AEM on different nodes of a cluster.
-    * **Process Files Using**: The type of the process to start. You can specify workflow, script, or service. 
+    * **Process Files Using**: The type of the process to start. You can specify workflow, script, or service.
     * **Service Name/Script Path/Workflow Path**: The behavior of the field is based on the value specified for the **Process Files Using **field. You can specify the following values:
 
         * For Workflow, specify the workflow model to be executed. For example, /etc/workflow/models/&lt;workflow_name&gt;/jcr:content/model
@@ -61,7 +61,7 @@ Perform the following steps to create a watched folder:
 
     * **Payload Mapper Filter:** When you create a watched folder, it creates a folder structure within the folder being watched. The folder structure has stage, result, preserve, input, and failure folders. The folder structure can serve as input payload to the workflow and accept output from a workflow. It can also list failure points, if any. The structure of a payload is different from the structure of a watched folder. You can write custom scripts to map structure of a watched folder to the payload. Such a script is called payload mapper filter. Two out-of-the-box payload mapper implementations are available. If you do not have [a custom implementation](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use one of out-of-the-box implementation:
 
-        * **Default mapper:** Use the default payload mapper to keep input and output contents of the watched folders in separate input and output folders in the payload.  
+        * **Default mapper:** Use the default payload mapper to keep input and output contents of the watched folders in separate input and output folders in the payload.
         * **Simple File-based payload mapper:** Use the Simple File-based payload mapper to keep input and output contents directly in the payload folder. It does not create any extra hierarchy, like default mapper.
 
     * **Run Mode**: Specify the comma-separated list of allowed run-modes for workflow execution.
@@ -73,7 +73,7 @@ Perform the following steps to create a watched folder:
     * **Wait Time:** Specify time, in milliseconds, to wait before you scan a folder or file after it is created. For example, if the wait time is 3,600,000 milliseconds (one hour) and the file was created one minute ago, this file will be picked up after 59 or more minutes have passed. The default value is 0.
 
       This setting is useful to ensure that all the content of file or folder is copied to the input folder. For example, if you have a large file to process and the file takes ten minutes to download, set the wait time to 10&ast;60 &ast;1000 milliseconds. This interval prevents the watched folder from scanning the file if it is not ten minutes old.
-    
+
     * **Delete Results Older Than:** Specify time, in number of days, to wait before deleting the Files and folders older than the specified value. This setting is useful in ensuring that the result folder does not become full. A value of -1 days indicates to never delete the results folder. The default value is -1.
     * **Result Folder Name:** Specify the name of the folder to store the results. If the results do not appear in this folder, check the failure folder. Read-only files are not processed and are saved in the failure folder. You can use an absolute or relative path with the following file patterns:
 
@@ -90,7 +90,7 @@ Perform the following steps to create a watched folder:
         * %s = second
         * %l = millisecond
         * %R = random number (between 0 and 9)
-        * %P = process or job id  
+        * %P = process or job id
         * For example, if it is 8 PM on July 17, 2009 and you specify C:/Test/WF0/failure/%Y/%M/%D/%H/, the result folder is C:/Test/WF0/failure/2009/07/17/20.
         * If the path is not absolute but relative, the folder is created inside the watched folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the watched folder. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -99,7 +99,7 @@ Perform the following steps to create a watched folder:
     * **Batch Size:** Specify the number of files or folders to be picked up per scan. It prevents an overload on the system; scanning too many files at one time can cause a crash. The default value is 2.
 
       If the scan interval is small, the threads scan the input folder often. If files are dropped frequently into the watched folder, then you should keep the scan interval small. If files are dropped infrequently, use a larger scan interval so that the other services can use the threads.
-    
+
     * **Throttle On:** When this option is enabled, it limits the number of watched folder jobs that AEM forms processes at any given time. The Batch Size value determines the maximum number of jobs. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
     * **Overwrite Existing Files With Similar Name**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
     * **Preserve Files On Failure:** When set to True, the input files are preserved in case of failure. The default value is true.

@@ -7,7 +7,7 @@ uuid: 630372d5-255f-4ea8-974d-d4f923108673
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 ---
 
@@ -22,7 +22,7 @@ Use the Task Search page to search for tasks by user name or task ID. The search
 ## Search for tasks associated with a user {#search-for-tasks-associated-with-a-user}
 
 1. In administration console, click Services &gt; forms workflow &gt; Task Search.
-1. In Search By, select User Name. If you know part of the user name that you are searching for, type it in the box. Click Find User. 
+1. In Search By, select User Name. If you know part of the user name that you are searching for, type it in the box. Click Find User.
 1. The Find User page appears. You can refine your search further, by searching by user name or email. When you locate the user that you are looking for, select the radio button beside the name and click OK.
 1. By default, the task search looks for tasks that are currently assigned to the user. To also search for tasks that were previously assigned to the user, select Show Unassigned Task. To also search for tasks that the user has completed, select Show Completed Task.
 1. Click Search. The Task List page appears, listing the search result.

@@ -6,7 +6,7 @@ seo-description: null
 uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 ---
@@ -19,7 +19,7 @@ The Encryption service lets you encrypt and decrypt documents. When a document i
 
 You can accomplish these tasks using the Encryption service:
 
-* Encrypt a PDF document with a password. (See [Encrypting PDF Documents with a Password](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).) 
+* Encrypt a PDF document with a password. (See [Encrypting PDF Documents with a Password](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 * Encrypt a PDF document with a certificate. (See [Encrypting PDF Documents with Certificates](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 * Remove password-based encryption from a PDF document. (See [Removing Password Encryption](encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 * Remove certificate-based encryption from a PDF document. (See [Removing Certificate Based Encryption](encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
@@ -45,7 +45,7 @@ When you encrypt a PDF document with a password, a user must specify the passwor
 To encrypt a PDF document with a password, perform the following steps:
 
 1. Include project files.
-1. Create an Encryption Client API object. 
+1. Create an Encryption Client API object.
 1. Get a PDF document to encrypt.
 1. Set encryption run-time options.
 1. Add the password.
@@ -118,7 +118,7 @@ Encrypt a PDF document with a password by using the Encryption API (Java):
 
 1. Create an Encryption Client API.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `EncryptionServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Get a PDF document to encrypt.
@@ -131,7 +131,7 @@ Encrypt a PDF document with a password by using the Encryption API (Java):
     * Create a `PasswordEncryptionOptionSpec` object by invoking its constructor.
     * Specify the PDF document resources to encrypt by invoking the `PasswordEncryptionOptionSpec` object’s `setEncryptOption` method and passing a `PasswordEncryptionOption` enumeration value that specifies the document resources to encrypt. For example, to encrypt the entire PDF document, including its metadata and its attachments, specify `PasswordEncryptionOption.ALL`.
     * Create a `java.util.List` object that stores the encryption permissions by using the `ArrayList` constructor.
-    * Specify a permission by invoking the `java.util.List` object ‘s `add` method and passing an enumeration value that corresponds to the permission that you want to set. For example, to set the permission that lets a user copy data located in the PDF document, specify `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repeat this step for each permission to set). 
+    * Specify a permission by invoking the `java.util.List` object ‘s `add` method and passing an enumeration value that corresponds to the permission that you want to set. For example, to set the permission that lets a user copy data located in the PDF document, specify `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repeat this step for each permission to set).
     * Specify the Acrobat compatibility option by invoking the `PasswordEncryptionOptionSpec` object’s `setCompatability` method and passing an enumeration value that specifies the Acrobat compatibility level. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
     * Specify the password value that lets a user open the encrypted PDF document by invoking the `PasswordEncryptionOptionSpec` object’s `setDocumentOpenPassword` method and passing a string value that represents the open password.
     * Specify the master password value that lets a user remove encryption from the PDF document by invoking the `PasswordEncryptionOptionSpec` object’s `setPermissionPassword` method and passing a string value that represents the master password.
@@ -143,7 +143,7 @@ Encrypt a PDF document with a password by using the Encryption API (Java):
     * The `com.adobe.idp.Document` object that contains the PDF document to encrypt with the password.
     * The `PasswordEncryptionOptionSpec` object that contains encryption run-time options.
 
-   The `encryptPDFUsingPassword` method returns a `com.adobe.idp.Document` object that contains a password-encrypted PDF document. 
+   The `encryptPDFUsingPassword` method returns a `com.adobe.idp.Document` object that contains a password-encrypted PDF document.
 
 1. Save the encrypted PDF document as a PDF file.
 
@@ -174,22 +174,22 @@ Encrypt a PDF document with a password by using the Encryption API (web service)
 
 1. Create an Encryption Client API object.
 
-    * Create an `EncryptionServiceClient` object by using its default constructor. 
-    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `EncryptionServiceClient` object by using its default constructor.
+    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Get a PDF document to encrypt.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that is encrypted with a password.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to encrypt and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to encrypt and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning the contents of the byte array to the `BLOB` object’s `MTOM` data member.
 
@@ -253,7 +253,7 @@ A public key certificate contains a user’s public key and identifying informat
 To encrypt a PDF document with a certificate, perform the following steps:
 
 1. Include project files.
-1. Create an Encryption Client API object. 
+1. Create an Encryption Client API object.
 1. Get a PDF document to encrypt.
 1. Reference the certificate.
 1. Set encryption run-time options.
@@ -322,7 +322,7 @@ Encrypt a PDF document with a certificate by using the Encryption API (Java):
 
 1. Create an Encryption Client API object.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `EncryptionServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Get a PDF document to encrypt.
@@ -334,11 +334,11 @@ Encrypt a PDF document with a certificate by using the Encryption API (Java):
 
     * Create a `java.util.List` object that stores permission information by using its constructor.
     * Specify the permission associated with the encrypted document by invoking the `java.util.List` object’s `add` method and passing a `CertificateEncryptionPermissions` enumeration value that represents the permissions that are granted to the user who opens the secured PDF document. For example, to specify all permissions, pass `CertificateEncryptionPermissions.PKI_ALL_PERM`.
-    * Create a `Recipient` object by using its constructor. 
+    * Create a `Recipient` object by using its constructor.
     * Create a `java.io.FileInputStream` object that represents the certificate that is used to encrypt the PDF document by using its constructor and passing a string value that specifies the location of the certificate.
-    * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object that represents the certificate. 
+    * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object that represents the certificate.
     * Invoke the `Recipient` object’s `setX509Cert` method and pass the `com.adobe.idp.Document` object that contains the certificate. (In addition, the `Recipient`object can have a Truststore certificate alias or LDAP URL as a certificate source.)
-    * Create a `CertificateEncryptionIdentity` object that stores permission and certificate information by using its constructor. 
+    * Create a `CertificateEncryptionIdentity` object that stores permission and certificate information by using its constructor.
     * Invoke the `CertificateEncryptionIdentity` object’s `setPerms` method and pass the `java.util.List` object that stores permission information.
     * Invoke the `CertificateEncryptionIdentity` object’s `setRecipient` method and pass the `Recipient` object that stores certificate information.
     * Create a `java.util.List` object that stores certificate information by using its constructor.
@@ -389,35 +389,35 @@ Encrypt a PDF document with a certificate by using the Encryption API (web servi
 
 1. Create an Encryption Client API object.
 
-    * Create an `EncryptionServiceClient` object by using its default constructor. 
-    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `EncryptionServiceClient` object by using its default constructor.
+    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Get a PDF document to encrypt.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that is encrypted with a certificate.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to encrypt and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to encrypt and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
 
 1. Reference the certificate.
 
-    * Create a `Recipient` object by using its constructor. This object will store certificate information. 
+    * Create a `Recipient` object by using its constructor. This object will store certificate information.
     * Create a `BLOB` object by using its constructor. This `BLOB` object will store the certificate that encrypts the PDF document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the certificate and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning the contents of the byte array to the `BLOB` object’s `MTOM` data member.
     * Assign the `BLOB` object that stores the certificate to the `Recipient` object’s `x509Cert` data member.
-    * Create a `CertificateEncryptionIdentity` object that stores certificate information by using its constructor. 
+    * Create a `CertificateEncryptionIdentity` object that stores certificate information by using its constructor.
     * Assign the `Recipient` object that stores the certificate to the `CertificateEncryptionIdentity`object’s recipient data member.
     * Create an `Object` array and assign the `CertificateEncryptionIdentity` object to the first element of the `Object` array. This `Object` array is passed as a parameter to the `encryptPDFUsingCertificates` method.
 
@@ -465,7 +465,7 @@ Certificate-based encryption can be removed from a PDF document so that users ca
 To remove certificate-based encryption from a PDF document, perform the following steps:
 
 1. Include project files.
-1. Create an encryption service client. 
+1. Create an encryption service client.
 1. Get the encrypted PDF document.
 1. Remove encryption.
 1. Save the PDF document as a PDF file.
@@ -520,7 +520,7 @@ Remove certificate-based encryption from a PDF document by using the Encryption 
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-encryption-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-encryption-client.jar, in your Java project’s class path.
 
 1. Create an encryption service client.
 
@@ -536,7 +536,7 @@ Remove certificate-based encryption from a PDF document by using the Encryption 
 
    Remove certificate-based encryption from the PDF document by invoking the `EncryptionServiceClient` object’s `removePDFCertificateSecurity` method and passing the following values:
 
-    * The `com.adobe.idp.Document` object that contains the encrypted PDF document. 
+    * The `com.adobe.idp.Document` object that contains the encrypted PDF document.
     * A string value that specifies the alias name of the private key that corresponds to the key used to encrypt the PDf document.
 
    The `removePDFCertificateSecurity` method returns a `com.adobe.idp.Document` object that contains an unsecured PDF document.
@@ -570,22 +570,22 @@ Remove certificate-based encryption by using the Encryption API (web service):
 
 1. Create an encryption service client.
 
-    * Create an `EncryptionServiceClient` object by using its default constructor. 
-    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `EncryptionServiceClient` object by using its default constructor.
+    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Get the encrypted PDF document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the encrypted PDF document.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the encrypted PDF document and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the encrypted PDF document and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning the contents of the byte array to the `BLOB` object’s `MTOM` data member.
 
@@ -593,10 +593,10 @@ Remove certificate-based encryption by using the Encryption API (web service):
 
    Invoke the `EncryptionServiceClient` object’s `removePDFCertificateSecurity` method and pass the following values:
 
-    * The `BLOB` object that contains file stream data that represents an encrypted PDF document. 
+    * The `BLOB` object that contains file stream data that represents an encrypted PDF document.
     * A string value that specifies the alias name of the public key that corresponds to the private key used to encrypt the PDf document.
 
-   The `removePDFCredentialSecurity` method returns a `BLOB` object that contains an unsecured PDF document. 
+   The `removePDFCredentialSecurity` method returns a `BLOB` object that contains an unsecured PDF document.
 
 1. Save the PDF document.
 
@@ -626,7 +626,7 @@ Password-based encryption can be removed from a PDF document so that users can o
 To remove password-based encryption from a PDF document, perform the following steps:
 
 1. Include project files
-1. Create an encryption service client. 
+1. Create an encryption service client.
 1. Get the encrypted PDF document.
 1. Remove the password.
 1. Save the PDF document as a PDF file.
@@ -675,11 +675,11 @@ Remove password-based encryption from a PDF document by using the Encryption API
 
 1. Include project files.
 
-   Include client JAR files, such as the adobe-encryption-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as the adobe-encryption-client.jar, in your Java project’s class path.
 
 1. Create an encryption service client.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `EncryptionServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Get the encrypted PDF document.
@@ -691,7 +691,7 @@ Remove password-based encryption from a PDF document by using the Encryption API
 
    Remove password-based encryption from the PDF document by invoking the `EncryptionServiceClient` object’s `removePDFPasswordSecurity` method and passing the following values:
 
-    * A `com.adobe.idp.Document` object that contains the encrypted PDF document. 
+    * A `com.adobe.idp.Document` object that contains the encrypted PDF document.
     * A string value that specifies the master password value that is used to remove encryption from the PDF document.
 
    The `removePDFPasswordSecurity` method returns a `com.adobe.idp.Document` object that contains an unsecured PDF document.
@@ -719,22 +719,22 @@ Remove password-based encryption by using the Encryption API (web service):
 
 1. Create an encryption service client.
 
-    * Create an `EncryptionServiceClient` object by using its default constructor. 
-    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `EncryptionServiceClient` object by using its default constructor.
+    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Get the encrypted PDF document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a password-encrypted PDF document.
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the encrypted PDF document and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the encrypted PDF document and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning the contents of the byte array to the `BLOB` object’s `MTOM` data member.
 
@@ -742,10 +742,10 @@ Remove password-based encryption by using the Encryption API (web service):
 
    Invoke the `EncryptionServiceService` object’s `removePDFPasswordSecurity` method and pass the following values:
 
-    * The `BLOB` object that contains file stream data that represents an encrypted PDF document. 
+    * The `BLOB` object that contains file stream data that represents an encrypted PDF document.
     * A string value that specifies the password value that is used to remove encryption from the PDF document. This value is specified when encrypting the PDF document with a password.
 
-   The `removePDFPasswordSecurity` method returns a `BLOB` object that contains an unsecured PDF document. 
+   The `removePDFPasswordSecurity` method returns a `BLOB` object that contains an unsecured PDF document.
 
 1. Save the PDF document.
 
@@ -773,7 +773,7 @@ A password-encrypted or certificate-encrypted PDF document must be unlocked befo
 To unlock an encrypted PDF document, perform the following steps:
 
 1. Include project files.
-1. Create an encryption service client. 
+1. Create an encryption service client.
 1. Get the encrypted PDF document.
 1. Unlock the document.
 1. Perform an AEM Forms operation.
@@ -826,7 +826,7 @@ Unlock an encrypted PDF document by using the Encryption API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-encryption-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-encryption-client.jar, in your Java project’s class path.
 
 1. Create an encryption service client.
 
@@ -844,15 +844,15 @@ Unlock an encrypted PDF document by using the Encryption API (Java):
 
    To unlock a PDF document that is encrypted with a password, invoke the `unlockPDFUsingPassword` method and pass the following values:
 
-    * A `com.adobe.idp.Document` object that contains the password-encrypted PDF document. 
+    * A `com.adobe.idp.Document` object that contains the password-encrypted PDF document.
     * A string value that specifies the password value that is used to open a password-encrypted PDF document. This value is specified when encrypting the PDF document with a password.
 
    To unlock a PDF document that is encrypted with a certificate, invoke the `unlockPDFUsingCredential` method and pass the following values:
 
-    * A `com.adobe.idp.Document` object that contains the certificate-encrypted PDF document. 
+    * A `com.adobe.idp.Document` object that contains the certificate-encrypted PDF document.
     * A string value that specifies the alias name of the public key that corresponds to the private key used to encrypt the PDF document.
 
-   The `unlockPDFUsingPassword` and `unlockPDFUsingCredential` methods both return a `com.adobe.idp.Document` object that you pass to another AEM Forms Java method to perform an operation. 
+   The `unlockPDFUsingPassword` and `unlockPDFUsingCredential` methods both return a `com.adobe.idp.Document` object that you pass to another AEM Forms Java method to perform an operation.
 
 1. Perform a AEM Forms operation.
 
@@ -884,22 +884,22 @@ Unlock an encrypted PDF document by using the Encryption API (web service):
 
 1. Create an encryption service client.
 
-    * Create an `EncryptionServiceClient` object by using its default constructor. 
-    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `EncryptionServiceClient` object by using its default constructor.
+    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Get an encrypted PDF document.
 
-    * Create a `BLOB` object by using its constructor. 
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the encrypted PDF document and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `BLOB` object by using its constructor.
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the encrypted PDF document and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning the contents of the byte array to the `BLOB` object’s `MTOM` data member.
 
@@ -909,7 +909,7 @@ Unlock an encrypted PDF document by using the Encryption API (web service):
 
    To unlock a PDF document that is encrypted with a password, invoke the `unlockPDFUsingPassword` method and pass the following values:
 
-    * A `BLOB` object that contains the password-encrypted PDF document. 
+    * A `BLOB` object that contains the password-encrypted PDF document.
     * A string value that specifies the password value that is used to open a password-encrypted PDF document. This value is specified when encrypting the PDF document with a password.
 
    To unlock a PDF document that is encrypted with a certificate, invoke the `unlockPDFUsingCredential` method and pass the following values:
@@ -917,7 +917,7 @@ Unlock an encrypted PDF document by using the Encryption API (web service):
     * A `BLOB` object that contains the certificate-encrypted PDF document.
     * A string value that specifies the alias name of the public key that corresponds to the private key used to encrypt the PDf document.
 
-   The `unlockPDFUsingPassword` and `unlockPDFUsingCredential` methods both return a `com.adobe.idp.Document` object that you pass to another AEM Forms method to perform an operation. 
+   The `unlockPDFUsingPassword` and `unlockPDFUsingCredential` methods both return a `com.adobe.idp.Document` object that you pass to another AEM Forms method to perform an operation.
 
 1. Perform a AEM Forms operation.
 
@@ -951,7 +951,7 @@ A PDF document can be protected by the following encryption types:
 To determine the type of encryption that is protecting a PDF document, perform the following steps:
 
 1. Include project files.
-1. Create an encryption service client. 
+1. Create an encryption service client.
 1. Get the encrypted PDF document.
 1. Determine the encryption type.
 
@@ -999,11 +999,11 @@ Determine the type of encryption that is protecting a PDF document by using the 
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-encryption-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-encryption-client.jar, in your Java project’s class path.
 
 1. Create a service client.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `EncryptionServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Get the encrypted PDF document.
@@ -1013,7 +1013,7 @@ Determine the type of encryption that is protecting a PDF document by using the 
 
 1. Determine the encryption type.
 
-    * Determine the encryption type by invoking the `EncryptionServiceClient` object’s `getPDFEncryption` method and passing the `com.adobe.idp.Document` object that contains the PDF document. This method returns an `EncryptionTypeResult` object. 
+    * Determine the encryption type by invoking the `EncryptionServiceClient` object’s `getPDFEncryption` method and passing the `com.adobe.idp.Document` object that contains the PDF document. This method returns an `EncryptionTypeResult` object.
     * Invoke the `EncryptionTypeResult` object’s `getEncryptionType` method. This method returns an `EncryptionType` enum value that specifies the encryption type. For example, if the PDF document is protected with password-based encryption, this method returns `EncryptionType.PASSWORD`.
 
 **See also**
@@ -1040,28 +1040,28 @@ Determine the type of encryption that is protecting a PDF document by using the 
 
 1. Create a service client.
 
-    * Create an `EncryptionServiceClient` object by using its default constructor. 
-    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.) 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `EncryptionServiceClient` object by using its default constructor.
+    * Create an `EncryptionServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptionServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Get the encrypted PDF document.
 
-    * Create a `BLOB` object by using its constructor. 
-    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the encrypted PDF document and the mode in which to open the file. 
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a `BLOB` object by using its constructor.
+    * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the encrypted PDF document and the mode in which to open the file.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning the contents of the byte array to the `BLOB` object’s `MTOM` data member.
 
 1. Determine the encryption type.
 
-    * Invoke the `EncryptionServiceClient` object’s `getPDFEncryption` method and pass the `BLOB` object that contains the PDF document. This method returns an `EncryptionTypeResult` object. 
+    * Invoke the `EncryptionServiceClient` object’s `getPDFEncryption` method and pass the `BLOB` object that contains the PDF document. This method returns an `EncryptionTypeResult` object.
     * Get the value of the `EncryptionTypeResult` object’s `encryptionType` data method. For example, if the PDF document is protected with password-based encryption, the value of this data member is `EncryptionType.PASSWORD`.
 
 **See also**

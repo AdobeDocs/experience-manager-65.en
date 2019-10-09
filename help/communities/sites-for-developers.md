@@ -5,7 +5,7 @@ description: Exporting and deleting community sites and creating custom site tem
 seo-description: Exporting and deleting community sites and creating custom site templates
 uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
@@ -32,8 +32,8 @@ To do so,
 
 /**apps**/social/console/components/hbs/sitepage/**&lt;*template-name*&gt;**.hbs
 
-**Property**: page-template  
-**Type**: String  
+**Property**: page-template
+**Type**: String
 **Value**: &lt;*template-name*&gt; (no extension)
 
 **Configuration node**:

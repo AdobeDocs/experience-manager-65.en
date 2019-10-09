@@ -5,7 +5,7 @@ description: Know about metadata profiles for assets. Learn how to create a meta
 seo-description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 uuid: fd366fb8-0585-40e8-bb9a-97475879f293
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: a8e2c376-7a53-45e2-b547-204115fe35c3
@@ -18,7 +18,7 @@ A Metadata Profile lets you apply default metadata to assets within a folder. Cr
 ## Adding a metadata profile {#adding-a-metadata-profile}
 
 1. Tap or click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**, and then tap **[!UICONTROL Create]**.
-1. Enter a title for the Metadata Profile, for example Sample Metadata, and click **[!UICONTROL Submit]**. The **[!UICONTROL Edit Form]** for the Metadata Profile is displayed. 
+1. Enter a title for the Metadata Profile, for example Sample Metadata, and click **[!UICONTROL Submit]**. The **[!UICONTROL Edit Form]** for the Metadata Profile is displayed.
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
 
@@ -45,90 +45,90 @@ A Metadata Profile lets you apply default metadata to assets within a folder. Cr
 
 1. (Optional) Add more components to the **[!UICONTROL Edit Form]** from the **[!UICONTROL Build Form]** tab, and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available from the **[!UICONTROL Build Form]** tab:
 
-    <table> 
-    <tbody> 
-      <tr> 
-      <td><strong>Component</strong></td> 
-      <td><strong>Properties</strong></td> 
-      </tr> 
-      <tr> 
-      <td>Section Header</td> 
-      <td> 
-        <ul> 
-        <li>Field Label</li> 
-        <li>Description</li> 
-        </ul> </td> 
-      </tr> 
-      <tr> 
-      <td>Single Line Text</td> 
-      <td> 
-        <ul> 
-        <li>Field Label</li> 
-        <li>Map to property</li> 
-        <li>Default Value</li> 
-        </ul> </td> 
-      </tr> 
-      <tr> 
-      <td>Multi Value Text</td> 
-      <td> 
-        <ul> 
-        <li>Field Label</li> 
-        <li>Map to property</li> 
-        <li>Default Value</li> 
-        </ul> </td> 
-      </tr> 
-      <tr> 
-      <td>Number</td> 
-      <td> 
-        <ul> 
-        <li>Field Label</li> 
-        <li>Map to property</li> 
-        <li>Default Value</li> 
-        </ul> </td> 
-      </tr> 
-      <tr> 
-      <td>Date</td> 
-      <td> 
-        <ul> 
-        <li>Field Label</li> 
-        <li>Map to property</li> 
-        <li>Default Value</li> 
-        </ul> </td> 
-      </tr> 
-      <tr> 
-      <td>Standard Tags</td> 
-      <td> 
-        <ul> 
-        <li>Field Label</li> 
-        <li>Map to property</li> 
-        <li>Default Value</li> 
-        <li>Description</li> 
-        </ul> </td> 
-      </tr> 
-    </tbody> 
+    <table>
+    <tbody>
+      <tr>
+      <td><strong>Component</strong></td>
+      <td><strong>Properties</strong></td>
+      </tr>
+      <tr>
+      <td>Section Header</td>
+      <td>
+        <ul>
+        <li>Field Label</li>
+        <li>Description</li>
+        </ul> </td>
+      </tr>
+      <tr>
+      <td>Single Line Text</td>
+      <td>
+        <ul>
+        <li>Field Label</li>
+        <li>Map to property</li>
+        <li>Default Value</li>
+        </ul> </td>
+      </tr>
+      <tr>
+      <td>Multi Value Text</td>
+      <td>
+        <ul>
+        <li>Field Label</li>
+        <li>Map to property</li>
+        <li>Default Value</li>
+        </ul> </td>
+      </tr>
+      <tr>
+      <td>Number</td>
+      <td>
+        <ul>
+        <li>Field Label</li>
+        <li>Map to property</li>
+        <li>Default Value</li>
+        </ul> </td>
+      </tr>
+      <tr>
+      <td>Date</td>
+      <td>
+        <ul>
+        <li>Field Label</li>
+        <li>Map to property</li>
+        <li>Default Value</li>
+        </ul> </td>
+      </tr>
+      <tr>
+      <td>Standard Tags</td>
+      <td>
+        <ul>
+        <li>Field Label</li>
+        <li>Map to property</li>
+        <li>Default Value</li>
+        <li>Description</li>
+        </ul> </td>
+      </tr>
+    </tbody>
     </table>
 
       ![chlimage_1-484](assets/chlimage_1-484.png)
 
-1. Click **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page. 
+1. Click **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
 
    ![chlimage_1-485](assets/chlimage_1-485.png)
 
 ## Copying a metadata profile {#copying-a-metadata-profile}
 
-1. From the **Metadata Profiles** page, select a Metadata Profile to make a copy of it. 
+1. From the **Metadata Profiles** page, select a Metadata Profile to make a copy of it.
 
    ![chlimage_1-486](assets/chlimage_1-486.png)
 
 1. Click **Copy** from the toolbar.
 1. In the **Copy Metadata Profile** dialog, enter a title for the new copy of the Metadata Profile.
-1. Click **Copy**. The copy of the Metadata Profile appears in the list of profiles in the **Metadata Profiles** page. 
+1. Click **Copy**. The copy of the Metadata Profile appears in the list of profiles in the **Metadata Profiles** page.
 
    ![chlimage_1-487](assets/chlimage_1-487.png)
 
 ## Deleting a metadata profile {#deleting-a-metadata-profile}
 
-1. From the **[!UICONTROL Metadata Profiles]** page, select a profile to delete. 
+1. From the **[!UICONTROL Metadata Profiles]** page, select a profile to delete.
 
    ![chlimage_1-488](assets/chlimage_1-488.png)
 
@@ -165,7 +165,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 #### Applying metadata profiles to folders from Properties {#applying-metadata-profiles-to-folders-from-properties}
 
 1. In the left rail, tap **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
-1. On the folder, tap the check mark to select it, then tap  **[!UICONTROL Properties]**.  
+1. On the folder, tap the check mark to select it, then tap  **[!UICONTROL Properties]**.
 
 1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save]**.
 
@@ -185,7 +185,7 @@ In addition to applying a profile to a folder, you can also apply one globally s
 
       ![chlimage_1-492](assets/chlimage_1-492.png)
 
-    * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property metadataProfile:/etc/dam/metadata/dynamicmedia/&lt;name_of_metadata_profile&gt; and tap **[!UICONTROL Save All]**. 
+    * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property metadataProfile:/etc/dam/metadata/dynamicmedia/&lt;name_of_metadata_profile&gt; and tap **[!UICONTROL Save All]**.
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 

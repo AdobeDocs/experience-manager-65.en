@@ -6,7 +6,7 @@ seo-description: Follow this page to learn how you can update all the channels i
 uuid: 9b52c5e7-aa6d-4f55-b23c-8bd923723552
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 5d4ca652-d918-4b2b-b239-a2be9255ef0d
 noindex: true

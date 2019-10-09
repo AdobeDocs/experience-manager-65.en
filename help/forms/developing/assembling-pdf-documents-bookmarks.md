@@ -7,7 +7,7 @@ uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 ---
@@ -24,13 +24,13 @@ Bookmarks contain the following properties:
 For the purpose of this discussion, assume that the following DDX document is used.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8"?> 
- <DDX xmlns="https://ns.adobe.com/DDX/1.0/"> 
-       <PDF result="FinalDoc.pdf"> 
-          <PDF source="Loan.pdf"> 
-             <Bookmarks source="doc2" /> 
-          </PDF> 
-       </PDF> 
+ <?xml version="1.0" encoding="UTF-8"?>
+ <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
+       <PDF result="FinalDoc.pdf">
+          <PDF source="Loan.pdf">
+             <Bookmarks source="doc2" />
+          </PDF>
+       </PDF>
  </DDX>
 ```
 
@@ -41,24 +41,24 @@ In this example DDX document, the `Bookmarks` element specifies `doc2` as the va
 This topic uses the following XML bookmarks language to assemble a PDF document containing bookmarks.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8"?> 
- <Bookmarks xmlns="https://ns.adobe.com/pdf/bookmarks" version="1.0"> 
-       <Bookmark> 
-          <Action> 
-             <Launch NewWindow="true"> 
-                <File Name="C:\Adobe\LoanDetails.pdf" /> 
-             </Launch> 
-          </Action> 
-         <Title>Open the Loan document</Title> 
-       </Bookmark> 
- <Bookmark> 
-          <Action> 
-             <Launch> 
-                <Win Name="C:\WINDOWS\notepad.exe" /> 
-             </Launch> 
-          </Action> 
-     <Title>Launch NotePad</Title> 
-       </Bookmark> 
+ <?xml version="1.0" encoding="UTF-8"?>
+ <Bookmarks xmlns="https://ns.adobe.com/pdf/bookmarks" version="1.0">
+       <Bookmark>
+          <Action>
+             <Launch NewWindow="true">
+                <File Name="C:\Adobe\LoanDetails.pdf" />
+             </Launch>
+          </Action>
+         <Title>Open the Loan document</Title>
+       </Bookmark>
+ <Bookmark>
+          <Action>
+             <Launch>
+                <Win Name="C:\WINDOWS\notepad.exe" />
+             </Launch>
+          </Action>
+     <Title>Launch NotePad</Title>
+       </Bookmark>
  </Bookmarks>
 ```
 
@@ -97,7 +97,7 @@ To assemble a PDF document that contains bookmarks, perform the following tasks:
 1. Reference the bookmark XML document.
 1. Add the PDF document and the bookmark XML document to a Map collection.
 1. Set run-time options.
-1. Assemble the PDF document. 
+1. Assemble the PDF document.
 1. Save the PDF document that contains bookmarks.
 
 **Include project files**
@@ -109,7 +109,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (required if AEM Forms is deployed on JBoss) 
+* adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
 if AEM Forms is deployed on a supported J2EE application server other than JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server that AEM Forms is deployed on. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
@@ -127,9 +127,9 @@ A DDX document must be referenced to assemble a PDF document. This DDX document 
 Reference a PDF document to which bookmarks are added. It does not matter whether the referenced PDF document already contains bookmarks. If the `Bookmarks` element is a child of the PDF source element, then the Bookmarks will replace those that already exist in the PDF source. However, if you want to keep the existing bookmarks, then ensure that `Bookmarks` is a sibling of the PDF source element. For example, consider the following example:
 
 ```as3
- <PDF result="foo"> 
-      <PDF source="inDoc"/> 
-      <Bookmarks source="doc2"/> 
+ <PDF result="foo">
+      <PDF source="inDoc"/>
+      <Bookmarks source="doc2"/>
  </PDF>
 ```
 
@@ -171,7 +171,7 @@ Assemble a PDF document with bookmarks by using the Assembler Service API (Java)
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-assembler-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-assembler-client.jar, in your Java project’s class path.
 
 1. Create a PDF Assembler client.
 
@@ -185,12 +185,12 @@ Assemble a PDF document with bookmarks by using the Assembler Service API (Java)
 
 1. Reference a PDF document to which bookmarks are added.
 
-    * Create a `java.io.FileInputStream` object by using its constructor and passing the location of the PDF document. 
+    * Create a `java.io.FileInputStream` object by using its constructor and passing the location of the PDF document.
     * Create a `com.adobe.idp.Document` object by using its constructor and pass the `java.io.FileInputStream` object that contains the PDF document.
 
 1. Reference the bookmark XML document.
 
-    * Create a `java.io.FileInputStream` object by using its constructor and passing the location of the XML file that represents the bookmark XML document. 
+    * Create a `java.io.FileInputStream` object by using its constructor and passing the location of the XML file that represents the bookmark XML document.
     * Create a `com.adobe.idp.Document` object and pass the `java.io.FileInputStream` object that contains the PDF document.
 
 1. Add the PDF document and the bookmark XML document to a Map collection.
@@ -226,7 +226,7 @@ Assemble a PDF document with bookmarks by using the Assembler Service API (Java)
    To obtain the newly created PDF document, perform the following actions:
 
     * Invoke the `AssemblerResult` object’s `getDocuments` method. This returns a `java.util.Map` object.
-    * Iterate through the `java.util.Map` object until you find the resultant `com.adobe.idp.Document` object. (You can use the PDF result element specified in the DDX document to get the document.) 
+    * Iterate through the `java.util.Map` object until you find the resultant `com.adobe.idp.Document` object. (You can use the PDF result element specified in the DDX document to get the document.)
     * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to extract the PDF document.
 
 **See also**
@@ -251,38 +251,38 @@ Assemble a PDF document with bookmarks by using the Assembler Service API (web s
 
 1. Create a PDF Assembler client.
 
-    * Create an `AssemblerServiceClient` object by using its default constructor. 
-    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `AssemblerServiceClient` object by using its default constructor.
+    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an existing DDX document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the DDX document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the DDX document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Reference a PDF document to which bookmarks are added.
 
-    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF. 
+    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the input PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Reference the bookmark XML document.
 
-    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the bookmark XML document. 
+    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the bookmark XML document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the input PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
@@ -290,8 +290,8 @@ Assemble a PDF document with bookmarks by using the Assembler Service API (web s
 
     * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. This collection object is used to store the input PDF documents and the bookmark XML document.
     * For each input PDF document and the bookmark XML document , create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
-    * Assign a string value that represents the key name to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `key` field. This value must match the value of the PDF source element specified in the DDX document. 
-    * Assign the `BLOB` object that stores the PDF document to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `value` field. 
+    * Assign a string value that represents the key name to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `key` field. This value must match the value of the PDF source element specified in the DDX document.
+    * Assign the `BLOB` object that stores the PDF document to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `value` field.
     * Add the `MyMapOf_xsd_string_To_xsd_anyType_Item` object to the `MyMapOf_xsd_string_To_xsd_anyType` object. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object's `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Perform this task for each input PDF document and the bookmark XML document.)
 
 1. Set run-time options.
@@ -307,7 +307,7 @@ Assemble a PDF document with bookmarks by using the Assembler Service API (web s
     * The `MyMapOf_xsd_string_To_xsd_anyType` array that contains the input documents
     * An `AssemblerOptionSpec` object that specifies run-time options
 
-   The `invokeDDX` method returns an `AssemblerResult` object that contains the results of the job and any exceptions that may have occurred. 
+   The `invokeDDX` method returns an `AssemblerResult` object that contains the results of the job and any exceptions that may have occurred.
 
 1. Save the PDF document that contains bookmarks.
 

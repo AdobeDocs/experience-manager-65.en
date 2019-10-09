@@ -5,7 +5,7 @@ description: Tips and best-practices for naming, organizing, managing metadata f
 seo-description: Tips and best-practices for naming, organizing, managing metadata for digital asset files.
 uuid: 14aef804-b2b8-4f60-a78c-b8c5168ba7ce
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 9705a088-c982-4097-a732-7ec11dc1ad41
@@ -21,10 +21,10 @@ See [Profiles for Processing Video, Metadata, and Images](processing-profiles.md
 
 The following are best practice tips for organizing your digital asset files.
 
-* Organize your files based on the metadata that you add to them instead of on the folders in which they reside. You can accomplish this by adding metadata profiles. 
+* Organize your files based on the metadata that you add to them instead of on the folders in which they reside. You can accomplish this by adding metadata profiles.
 
   * See [Metadata Profiles.](metadata-profiles.md)
-  * See [Metadata for Digital Asset Management](metadata.md).  
+  * See [Metadata for Digital Asset Management](metadata.md).
 
 * In most cases, your collection of digital assets are always growing. Therefore, it is important, earlier on, to formalize metadata use, folder structure, and file naming among all your uploaded assets. Standardizing on these things ensures that as your pool of digital assets grows, you can apply processing profiles to folders with greater precision and consistency.
 * Use folders only to impose a consisistent storage structure for your digital assets. For example, folder structures that can help you refine what profiles to assign may include the following:

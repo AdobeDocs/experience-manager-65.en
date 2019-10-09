@@ -5,7 +5,7 @@ description: The proxy server acts as an intermediate server that relays request
 seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
 uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
@@ -114,7 +114,7 @@ The content of `test.html` is:
 <html>
 <head>
     <title>Test</title>
-</head>  
+</head>
 <body>
     Test<br>
     <img src="test.jpg">

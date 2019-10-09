@@ -5,7 +5,7 @@ description: The integration framework includes an integration layer with an API
 seo-description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
@@ -23,8 +23,8 @@ A number of out-of-the-box AEM components are provided to use the integration la
 
 * A product display component
 * A shopping cart
-* Promotions and vouchers  
-* Catalog and section blueprints  
+* Promotions and vouchers
+* Catalog and section blueprints
 * Check-out
 * Search
 
@@ -49,7 +49,7 @@ The eCommerce framework can be used with any eCommerce solution, the engine bein
 
 * The `cq:commerceProvider` property is also used to reference the appropriate commerce factory definition.
 
-    * For example, a `cq:commerceProvider` property with the value geometrixx will correlate to the OSGi configuration for **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - where the parameter `commerceProvider` also has the value `geometrixx`. 
+    * For example, a `cq:commerceProvider` property with the value geometrixx will correlate to the OSGi configuration for **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - where the parameter `commerceProvider` also has the value `geometrixx`.
     * Here further properties can be configured (when appropriate and available).
 
 In a standard AEM installation a specific implementation is required, for example:
@@ -61,17 +61,17 @@ In a standard AEM installation a specific implementation is required, for exampl
 ### Example {#example}
 
 ```shell
-/etc/commerce/products/geometrixx-outdoors 
-+ cq:commerceProvider = geometrixx 
-  + adobe-logo-shirt 
-    + cq:commerceType = product 
-    + price = 12.50 
-  + adobe-logo-shirt_S 
-    + cq:commerceType = variant 
-    + size = S 
-  + adobe-logo-shirt_XL 
-    + cq:commerceType = variant 
-    + size = XL 
+/etc/commerce/products/geometrixx-outdoors
++ cq:commerceProvider = geometrixx
+  + adobe-logo-shirt
+    + cq:commerceType = product
+    + price = 12.50
+  + adobe-logo-shirt_S
+    + cq:commerceType = variant
+    + size = S
+  + adobe-logo-shirt_XL
+    + cq:commerceType = variant
+    + size = XL
     + price = 14.50
 ```
 
@@ -90,7 +90,7 @@ The **CommerceSession**:
 * Owns the **shopping cart**
 
     * performs add/remove/etc
-    * performs the various calculations on the cart; 
+    * performs the various calculations on the cart;
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
@@ -118,13 +118,13 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >
 >In effect a variant axes is determined by whatever `Product.getVariantAxes()` returns:
 >
->* for the generic implementation AEM reads it from a property in the product data ( `cq:productVariantAxes`)  
+>* for the generic implementation AEM reads it from a property in the product data ( `cq:productVariantAxes`)
 >
 >While products (in general) can have many variant axes, the out-of-the-box product component only handles two:
 >
->1. `size`  
+>1. `size`
 >
->1. plus one more  
+>1. plus one more
 >   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 >
 
@@ -132,7 +132,7 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 
 In general:
 
-* PIM data is located under `/etc`  
+* PIM data is located under `/etc`
 
 * Product references under `/content`.
 
@@ -203,7 +203,7 @@ public interface VariantFilter {
  * axis and value. The following example returns a list of
  * variant products that have a value of <i>blue</i> on the
  * <i>color</i> axis.
- * 
+ *
  * <p>
  * <code>product.getVariants(new AxisFilter("color", "blue"));</code>
  */
@@ -337,7 +337,7 @@ public class AxisFilter implements VariantFilter {
 
 * The following illustrates an example of cart information in the ClientContext cart:
 
-![chlimage_1-33](assets/chlimage_1-33.png) 
+![chlimage_1-33](assets/chlimage_1-33.png)
 
 #### Architecture of Checkout {#architecture-of-checkout}
 
@@ -411,11 +411,11 @@ This makes use of the search API to query the selected commerce engine (see [eCo
 
 There are several generic / helper classes provided by the core project:
 
-1. `CommerceQuery` 
+1. `CommerceQuery`
 
    Is used to describe a search query (contains information about the query text, current page, page size, sort and selected facets). All eCommerce services that implement the search API will receive instances of this class in order to perform their search. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
 
-1. `FacetParamHelper` 
+1. `FacetParamHelper`
 
    Is a utility class that provides one static method - `toParams` - that is used for generating `GET` parameter strings from a list of facets and one toggled value. This is useful on the UI side, where you need to display a hyperlink for each value of each facet, such that when the user clicks on the hyperlink the respective value is toggled (i.e. if it was selected it is removed from the query, otherwise added). This takes care of all the logic of handling multiple/single-valued facets, overriding values, etc.
 
@@ -425,7 +425,7 @@ The entry point for the search API is the `CommerceService#search` method which 
 
 * Vouchers:
 
-    * A Voucher is a page-based component that is created / edited with the Websites console and stored under: 
+    * A Voucher is a page-based component that is created / edited with the Websites console and stored under:
 
       `/content/campaigns`
 
@@ -443,13 +443,13 @@ The entry point for the search API is the `CommerceService#search` method which 
 
     * The **Voucher** component ( `/libs/commerce/components/voucher`) provides:
 
-        * A renderer for voucher administration; this shows any vouchers currently in the cart. 
+        * A renderer for voucher administration; this shows any vouchers currently in the cart.
         * The edit dialogs (form) for administrating (adding/removing) the vouchers.
         * The actions required for adding/removing vouchers to/from the cart.
 
 * Promotions:
 
-    * A Promotion is a page-based component that is created / edited with the Websites console and stored under: 
+    * A Promotion is a page-based component that is created / edited with the Websites console and stored under:
 
       `/content/campaigns`
 
@@ -481,7 +481,7 @@ Adding/Removing a voucher from a cart is accomplished via the `CommerceSession` 
 ```java
 /**
  * Apply a voucher to this session's cart.
- * 
+ *
  * @param code the voucher's code
  * @throws CommerceException
  */
@@ -489,7 +489,7 @@ public void addVoucher(String code) throws CommerceException;
 
 /**
  * Remove a voucher that was previously added with {@link #addVoucher(String)}.
- * 
+ *
  * @param code the voucher's code
  * @throws CommerceException
  */
@@ -497,7 +497,7 @@ public void removeVoucher(String code) throws CommerceException;
 
 /**
  * Get a list of vouchers that were added to this cart via {@link #addVoucher(String)}.
- * 
+ *
  * @throws CommerceException
  */
 public List<Voucher> getVouchers() throws CommerceException;
@@ -531,8 +531,8 @@ Promotion handlers are OSGi services which modify the shopping cart. The cart wi
  * @param cartEntry The cart line item
  * @return A discounted <code>PriceInfo</code> or <code>null</code>
  */
-public PriceInfo applyCartEntryPromotion(CommerceSession commerceSession, 
-                                         Promotion promotion, CartEntry cartEntry) 
+public PriceInfo applyCartEntryPromotion(CommerceSession commerceSession,
+                                         Promotion promotion, CartEntry cartEntry)
     throws CommerceException;
 
 /**
@@ -543,10 +543,10 @@ public PriceInfo applyCartEntryPromotion(CommerceSession commerceSession,
  * @param promotion The configured promotion
  * @return A discounted <code>PriceInfo</code> or <code>null</code>
  */
-public PriceInfo applyOrderPromotion(CommerceSession commerceSession, Promotion promotion) 
+public PriceInfo applyOrderPromotion(CommerceSession commerceSession, Promotion promotion)
     throws CommerceException;
 
-public PriceInfo applyShippingPromotion(CommerceSession commerceSession, Promotion promotion) 
+public PriceInfo applyShippingPromotion(CommerceSession commerceSession, Promotion promotion)
     throws CommerceException;
 
 /**

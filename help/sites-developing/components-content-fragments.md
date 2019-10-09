@@ -5,7 +5,7 @@ description: AEM content fragments are created and managed as page-independent a
 seo-description: AEM content fragments are created and managed as page-independent assets
 uuid: 289ed9cb-9531-43a9-b0d8-a3499e2e9ee5
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
@@ -72,7 +72,7 @@ In the repository the in-between content is stored relative to its position insi
 
 To illustrate this, let us consider that we have:
 
-* An instance of a content fragment composed of three paragraphs  
+* An instance of a content fragment composed of three paragraphs
 * And that some content has already been inserted after the second paragraph
 
     * This means that the content will be stored in the second parsys.

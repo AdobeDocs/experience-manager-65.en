@@ -5,7 +5,7 @@ description: Learn about the External Link Checker in AEM.
 seo-description: Learn about the External Link Checker in AEM.
 uuid: fd0c6ff6-52d2-4096-af40-54786e9d9ab8
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 49b195b2-78c4-49f9-b07a-a87b73624c2c

@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about out of the box integration of A
 uuid: f4f71c85-ab6b-4e4d-94d3-5ba55ec0a246
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: administering
 discoiquuid: 2784b590-3402-492f-94a6-36fe16633e89
 ---
@@ -15,7 +15,7 @@ discoiquuid: 2784b590-3402-492f-94a6-36fe16633e89
 
 >[!CAUTION]
 >
->This AEM Screens functionality is only available, if you have installed AEM 6.4.2 Feature Pack 2 and AEM 6.3.3 Feature Pack 4.  
+>This AEM Screens functionality is only available, if you have installed AEM 6.4.2 Feature Pack 2 and AEM 6.3.3 Feature Pack 4.
 
 >
 >To get access to either of these Feature Packs, you must contact Adobe Support and request access. Once you have permissions you can download it from Package Share.
@@ -66,31 +66,31 @@ Navigate to **Adobe Experience Manager Web Console Configuration** to configure 
 
 The following table highlights the properties with their description for configure Adobe Analytics for AEM Screens:
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
-   <td><strong>Description</strong></td> 
+   <td><strong>Property</strong></td>
+   <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td><strong>Analytics URL</strong></td> 
-   <td>URL to post analytics data from the player<br /> </td> 
+   <td><strong>Analytics URL</strong></td>
+   <td>URL to post analytics data from the player<br /> </td>
   </tr>
   <tr>
-   <td><strong>Analytics API Key</strong></td> 
-   <td>API key to authenticate to the Adobe Analytics server (provided by the Accounts Manager)</td> 
+   <td><strong>Analytics API Key</strong></td>
+   <td>API key to authenticate to the Adobe Analytics server (provided by the Accounts Manager)</td>
   </tr>
   <tr>
-   <td><strong>Analytics Project</strong></td> 
-   <td>AEM Screens project configured on your analytics to receive data (provided by the Accounts Manager)</td> 
+   <td><strong>Analytics Project</strong></td>
+   <td>AEM Screens project configured on your analytics to receive data (provided by the Accounts Manager)</td>
   </tr>
   <tr>
-   <td><strong>Environment</strong></td> 
-   <td><p>Stage or Production environment.</p> <p><em>For development/stage</em> - https://cc-api-data-stage.adobe.io/ingest/<br /> <em>For Production</em> - https://cc-api-data.adobe.io/ingest/</p> </td> 
+   <td><strong>Environment</strong></td>
+   <td><p>Stage or Production environment.</p> <p><em>For development/stage</em> - https://cc-api-data-stage.adobe.io/ingest/<br /> <em>For Production</em> - https://cc-api-data.adobe.io/ingest/</p> </td>
   </tr>
   <tr>
-   <td><strong>Analytics Send Frequency</strong></td> 
-   <td>Frequency in minutes for sending analytics data from the players. By default, it is set to 15 mins.</td> 
+   <td><strong>Analytics Send Frequency</strong></td>
+   <td>Frequency in minutes for sending analytics data from the players. By default, it is set to 15 mins.</td>
   </tr>
  </tbody>
 </table>

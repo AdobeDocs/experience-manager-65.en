@@ -5,7 +5,7 @@ description: You can search forms and assets in your AEM instance using AEM sear
 seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 ---
@@ -62,9 +62,9 @@ Select one of the following options, to search across all the assets modified wi
 
 You can search for assets using one of the following statuses:
 
-* **Published**: Search all assets that are published and not modified after the publishing.  
+* **Published**: Search all assets that are published and not modified after the publishing.
 
-* **Unpublished**: Search all assets that are never published.  
+* **Unpublished**: Search all assets that are never published.
 
 * **Modified**: Search all assets that are modified or unpublished after the publishing.
 
@@ -72,31 +72,31 @@ You can search for assets using one of the following statuses:
 
 You can select any number of asset types. The search returns the union of all the selected asset types.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Option</th> 
-   <th>Description</th> 
+   <th>Option</th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>Form Template<br /> </td> 
-   <td>Search across all the form templates.<br /> </td> 
+   <td>Form Template<br /> </td>
+   <td>Search across all the form templates.<br /> </td>
   </tr>
   <tr>
-   <td>PDF Form</td> 
-   <td>Search across all the PDF documents.</td> 
+   <td>PDF Form</td>
+   <td>Search across all the PDF documents.</td>
   </tr>
   <tr>
-   <td>Document</td> 
-   <td>Search across all the documents.</td> 
+   <td>Document</td>
+   <td>Search across all the documents.</td>
   </tr>
   <tr>
-   <td>Adaptive Form<br /> </td> 
-   <td>Search across all the adaptive forms.</td> 
+   <td>Adaptive Form<br /> </td>
+   <td>Search across all the adaptive forms.</td>
   </tr>
   <tr>
-   <td>Resource</td> 
-   <td>Search across all the resources.<br /> </td> 
+   <td>Resource</td>
+   <td>Search across all the resources.<br /> </td>
   </tr>
  </tbody>
 </table>

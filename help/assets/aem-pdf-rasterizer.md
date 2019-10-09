@@ -5,7 +5,7 @@ description: This article describes how to generate high-quality thumbnails and 
 seo-description: Learn how to generate high-quality thumbnails and renditions using the Adobe PDF Rasterizer library.
 uuid: f621b9d7-433f-42c4-aae8-ddab1ddb969c
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 9913aa72-5eda-403b-bb4b-5e30f593a602
@@ -31,7 +31,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
    >
    >The PDF Rasterizer library is available for Windows and Linux only.
 
-1. Access the AEM Assets Workflow console from *https://&lt;AEM server&gt;:&lt;Port&gt;/workflow*. 
+1. Access the AEM Assets Workflow console from *https://&lt;AEM server&gt;:&lt;Port&gt;/workflow*.
 1. Open the DAM Update Asset workflow page.
 1. Configure the following to skip the default thumbnail and web rendition generation for PDF/AI files:
 

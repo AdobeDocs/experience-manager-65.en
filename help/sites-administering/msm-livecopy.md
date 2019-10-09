@@ -5,7 +5,7 @@ description: Learn how to create and synchronize Live Copies.
 seo-description: Learn how to create and synchronize Live Copies.
 uuid: f6f410d4-8c72-48b7-a217-afd6076b512d
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
@@ -141,7 +141,7 @@ If you omit some language branches or chapters from the live copy, you can add t
 
 When you create the site, provide values for the following properties:
 
-* **Initial Languages**: The language branches of the blueprint source to include in the live copy. 
+* **Initial Languages**: The language branches of the blueprint source to include in the live copy.
 * **Initial Chapters**: The child pages of the blueprint language branches to include in the live copy.
 * **Destination Path**: The location of the root page of the live copy site.
 * **Title**: The title of the root page of the live copy site.
@@ -188,7 +188,7 @@ The properties of a live copy page show the following information about the live
 
 To view the properties:
 
-1. In the **Sites** console, select the live copy page and open the properties. 
+1. In the **Sites** console, select the live copy page and open the properties.
 1. Select the **Live Copy** tab.
 
    For example:
@@ -203,7 +203,7 @@ To view the properties:
 
 Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the live copy pages that use the current (blueprint) page as the source. Use this list to keep track of the live copies. The list appears on the **Blueprint** tab of the [page properties](/help/sites-authoring/editing-page-properties.md).
 
-![chlimage_1-219](assets/chlimage_1-219.png) 
+![chlimage_1-219](assets/chlimage_1-219.png)
 
 ## Synchronizing your Live Copy {#synchronizing-your-live-copy}
 
@@ -220,7 +220,7 @@ Roll out a blueprint page to push content changes to live copies. A **Rollout** 
 
 #### Rolling Out a Blueprint from Page Properties {#rolling-out-a-blueprint-from-page-properties}
 
-1. In the **Sites** console, select the page in the blueprint and open the properties. 
+1. In the **Sites** console, select the page in the blueprint and open the properties.
 1. Open the **Blueprint** tab.
 1. Select **Rollout**.
 
@@ -232,17 +232,17 @@ Roll out a blueprint page to push content changes to live copies. A **Rollout** 
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. In the **Sites** console, select the page in the blueprint and open the **[References](/help/sites-authoring/basic-handling.md#references)** panel (from the toolbar). 
+1. In the **Sites** console, select the page in the blueprint and open the **[References](/help/sites-authoring/basic-handling.md#references)** panel (from the toolbar).
 1. Select the **Blueprint** option from the list, to show the blueprints associated with this page.
 1. Select the required blueprint from the list.
 1. Click or tap **Rollout**.
 1. You will be asked to confirm details of the rollout:
 
-    * **Rollout scope**: 
+    * **Rollout scope**:
 
-      Specify whether the scope is for the selected page alone, or should include subpages. 
+      Specify whether the scope is for the selected page alone, or should include subpages.
 
-    * **Background rollout**: 
+    * **Background rollout**:
 
       If many pages/subpages are involved you can run the rollout as a background task.
 
@@ -272,7 +272,7 @@ Synchronize a live copy to pull changes from the source to the livecopy.
 >
 >Synchronizing executes the rollout configurations that use the [On Rollout](/help/sites-administering/msm-sync.md#rollout-triggers) trigger.
 
-1. In the **Sites** console, select the live copy page and open the properties. 
+1. In the **Sites** console, select the live copy page and open the properties.
 1. Open the **Live Copy** tab.
 1. Click or tap **Synchronize**.
 
@@ -297,7 +297,7 @@ The [Synchronize action is also available from the Live Copy Overview](/help/sit
 
 To change live copy content, you can:
 
-* Add parapraphs to the page.  
+* Add parapraphs to the page.
 * Update existing content by breaking the live copy inheritance for any page or component.
 
 >[!NOTE]
@@ -409,7 +409,7 @@ On an existing live copy you can change the depth for a page; i.e. whether child
 
 * Switching to a deep live copy:
 
-    * Child-pages remain untouched. 
+    * Child-pages remain untouched.
     * To see the effect of the switch, you can make a roll-out, any content modifications are applied according the roll-out configuration.
 
 * Switching to a shallow live copy, then back to deep:
@@ -459,14 +459,14 @@ Cancel inheritance to change the component content or delete the component:
 
 To enable inhertance for a component, click or tap the **Re-enable Inheritance** icon on the component toolbar.
 
-![](do-not-localize/chlimage_1-9.png) 
+![](do-not-localize/chlimage_1-9.png)
 
 ### Changing the Order of Components on a Live Copy Page {#changing-the-order-of-components-on-a-live-copy-page}
 
 If a live copy contains components that are part of a paragraph system, inheritance of that paragraph system adheres to the following rules:
 
-* The order of components in an inherited paragraph system can be modified, even with inheritance established.  
-* On rollout, the order of the components will be restored from the blueprint. if new components were added to the live copy before rollout, they will be reordered along with the components above which they were added.   
+* The order of components in an inherited paragraph system can be modified, even with inheritance established.
+* On rollout, the order of the components will be restored from the blueprint. if new components were added to the live copy before rollout, they will be reordered along with the components above which they were added.
 * If inheritance of the paragraph system is cancelled, the order of components will not be restored on rollout and will remain as is in the live copy.
 
 >[!NOTE]
@@ -508,13 +508,13 @@ You can later re-enable inheritance for a property if required.
 
 To enable inhertance for a property, click or tap the **Revert Inheritance** icon that appears next to the property.
 
-![](do-not-localize/chlimage_1-11.png) 
+![](do-not-localize/chlimage_1-11.png)
 
 ### Resetting a Live Copy Page {#resetting-a-live-copy-page}
 
 Reset a live copy page to:
 
-* Remove all inheritance cancellations and  
+* Remove all inheritance cancellations and
 * Return the page to the same state as the source page.
 
 Resetting affects changes that you have made to page properties, the paragraph system and components.

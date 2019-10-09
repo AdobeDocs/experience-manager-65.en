@@ -5,7 +5,7 @@ description: Learn how to configure Adobe Experience Manager (AEM) Assets to res
 seo-description: Learn how to configure Adobe Experience Manager (AEM) Assets to restrict the type of assets (files) that users can upload.
 uuid: bcde34f1-5d64-4dc3-a124-0482c93be31e
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: ff6b23fb-347d-4e68-932e-52b42b15f784

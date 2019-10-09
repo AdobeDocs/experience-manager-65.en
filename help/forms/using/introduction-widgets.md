@@ -1,11 +1,11 @@
 ---
 title: Appearance framework for adaptive and HTML5 forms
 seo-title: Appearance framework for adaptive and HTML5 forms
-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting. 
-seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting. 
+description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
+seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 ---
@@ -24,57 +24,57 @@ The appearance framework relies on various options, events (triggers), and funct
 
 ## Common options {#common-options}
 
-The following are the set global options. These options are available for every field. 
+The following are the set global options. These options are available for every field.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Property </th> 
-   <th>Description</th> 
+   <th>Property </th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>name</td> 
-   <td>An identifier used to specify this object or event in script expressions. For example, this property specifies the name of the host application.</td> 
+   <td>name</td>
+   <td>An identifier used to specify this object or event in script expressions. For example, this property specifies the name of the host application.</td>
   </tr>
   <tr>
-   <td>value</td> 
-   <td>Actual value of the field. </td> 
+   <td>value</td>
+   <td>Actual value of the field. </td>
   </tr>
   <tr>
-   <td>displayValue</td> 
-   <td>This value of the field is displayed. </td> 
+   <td>displayValue</td>
+   <td>This value of the field is displayed. </td>
   </tr>
   <tr>
-   <td>screenReaderText</td> 
-   <td>Screen Readers use this value to narrate information about the field. The form provides the value and you can override the value.<br /> </td> 
+   <td>screenReaderText</td>
+   <td>Screen Readers use this value to narrate information about the field. The form provides the value and you can override the value.<br /> </td>
   </tr>
   <tr>
-   <td>tabIndex</td> 
-   <td>The position of the field in the tab sequence of the form. Override the tabIndex only if you want to change the default tab order of the form.</td> 
+   <td>tabIndex</td>
+   <td>The position of the field in the tab sequence of the form. Override the tabIndex only if you want to change the default tab order of the form.</td>
   </tr>
   <tr>
-   <td>role</td> 
-   <td>Role of the element, for example, Heading or Table.</td> 
+   <td>role</td>
+   <td>Role of the element, for example, Heading or Table.</td>
   </tr>
   <tr>
-   <td>height</td> 
-   <td>The height of the widget. It is specified in pixels. </td> 
+   <td>height</td>
+   <td>The height of the widget. It is specified in pixels. </td>
   </tr>
   <tr>
-   <td>width</td> 
-   <td>The width of the widget. It is specified in pixels.</td> 
+   <td>width</td>
+   <td>The width of the widget. It is specified in pixels.</td>
   </tr>
   <tr>
-   <td>access</td> 
-   <td>Controls used to access the contents of a container object, such as a subform.</td> 
+   <td>access</td>
+   <td>Controls used to access the contents of a container object, such as a subform.</td>
   </tr>
   <tr>
-   <td>paraStyles</td> 
-   <td>The para property of an XFA element to the widget.</td> 
+   <td>paraStyles</td>
+   <td>The para property of an XFA element to the widget.</td>
   </tr>
   <tr>
-   <td>dir</td> 
-   <td>The direction of the text. The possible values are ltr (left-to-right) and rtl (right-to-left).</td> 
+   <td>dir</td>
+   <td>The direction of the text. The possible values are ltr (left-to-right) and rtl (right-to-left).</td>
   </tr>
  </tbody>
 </table>
@@ -87,27 +87,27 @@ To interact with forms framework, a widget triggers some events to enable the fo
 
 #### Events triggered by widget {#events-triggered-by-widget}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Event </th> 
-   <th>Description</th> 
+   <th>Event </th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>XFA_ENTER_EVENT</td> 
-   <td>This event is triggered whenever the field is in focus. It allows the “enter” script to run on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td> 
+   <td>XFA_ENTER_EVENT</td>
+   <td>This event is triggered whenever the field is in focus. It allows the “enter” script to run on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_EXIT_EVENT</td> 
-   <td>This event is triggered whenever the user leaves the field. It allows the engine to set the value of the field and run its “exit” script. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td> 
+   <td>XFA_EXIT_EVENT</td>
+   <td>This event is triggered whenever the user leaves the field. It allows the engine to set the value of the field and run its “exit” script. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_CHANGE_EVENT</td> 
-   <td>This event is triggered to allow the engine to run the “change” script written on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td> 
+   <td>XFA_CHANGE_EVENT</td>
+   <td>This event is triggered to allow the engine to run the “change” script written on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_CLICK_EVENT</td> 
-   <td>This event is triggered whenever the field is clicked. it allows the engine to run the “click” script written on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td> 
+   <td>XFA_CLICK_EVENT</td>
+   <td>This event is triggered whenever the field is clicked. it allows the engine to run the “click” script written on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -116,27 +116,27 @@ To interact with forms framework, a widget triggers some events to enable the fo
 
 The appearance framework calls some functions of the widget which are implemented in the custom widgets. The widget must implement the following functions:
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Function</th> 
-   <th>Description</th> 
+   <th>Function</th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>focus: function()</td> 
-   <td>Puts focus on the field.</td> 
+   <td>focus: function()</td>
+   <td>Puts focus on the field.</td>
   </tr>
   <tr>
-   <td>click: function()</td> 
-   <td>Puts focus on the field and calls XFA_CLICK_EVENT.</td> 
+   <td>click: function()</td>
+   <td>Puts focus on the field and calls XFA_CLICK_EVENT.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Note</strong>: Applicable only for HTML5 forms.</p> </td> 
-   <td>Sends error message and error type to the widget. The widget displays the error.</td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Note</strong>: Applicable only for HTML5 forms.</p> </td>
+   <td>Sends error message and error type to the widget. The widget displays the error.</td>
   </tr>
   <tr>
-   <td><p>clearError: function()</p> <p><strong>Note</strong>: Applicable only for HTML5 forms.</p> </td> 
-   <td>Called if the errors in the field are fixed. The widget hides the error.</td> 
+   <td><p>clearError: function()</p> <p><strong>Note</strong>: Applicable only for HTML5 forms.</p> </td>
+   <td>Called if the errors in the field are fixed. The widget hides the error.</td>
   </tr>
  </tbody>
 </table>
@@ -147,77 +147,77 @@ All custom widgets should conform to the above specifications. To use the featur
 
 ### TextEdit: Text Field {#textedit-text-field}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Option</th> 
-   <th>Description</th> 
+   <th>Option</th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>multiline</td> 
-   <td>True if the field supports entering a newline character, else false.</td> 
+   <td>multiline</td>
+   <td>True if the field supports entering a newline character, else false.</td>
   </tr>
   <tr>
-   <td>maxChars</td> 
-   <td>Maximum number of characters that can be entered in the field.</td> 
+   <td>maxChars</td>
+   <td>Maximum number of characters that can be entered in the field.</td>
   </tr>
   <tr>
-   <td><p>limitLengthToVisibleArea</p> <p><strong>Note</strong>: Applicable only for HTML5 forms</p> </td> 
-   <td>Specifies behavior of text field when the width of text exceeds the width of the widget.</td> 
+   <td><p>limitLengthToVisibleArea</p> <p><strong>Note</strong>: Applicable only for HTML5 forms</p> </td>
+   <td>Specifies behavior of text field when the width of text exceeds the width of the widget.</td>
   </tr>
  </tbody>
 </table>
 
 ### ChoiceList: DropDownList, ListBox {#choicelist-dropdownlist-listbox}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Option</th> 
-   <th>Description</th> 
+   <th>Option</th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>value<br /> </td> 
-   <td>Array of selected values.<br /> </td> 
+   <td>value<br /> </td>
+   <td>Array of selected values.<br /> </td>
   </tr>
   <tr>
-   <td>items<br /> </td> 
-   <td>Array of objects to be displayed as options. Each object contains two properties -<br /> save: value to save, display: value to display.<br /> <br /> </td> 
+   <td>items<br /> </td>
+   <td>Array of objects to be displayed as options. Each object contains two properties -<br /> save: value to save, display: value to display.<br /> <br /> </td>
   </tr>
   <tr>
-   <td><p>editable</p> <p><strong>Note</strong>: Applicable only for HTML5 forms.<br /> </p> </td> 
-   <td>If value is true, custom text entry is enabled in the widget.<br /> </td> 
+   <td><p>editable</p> <p><strong>Note</strong>: Applicable only for HTML5 forms.<br /> </p> </td>
+   <td>If value is true, custom text entry is enabled in the widget.<br /> </td>
   </tr>
   <tr>
-   <td>displayValue<br /> </td> 
-   <td>Array of values to display.<br /> </td> 
+   <td>displayValue<br /> </td>
+   <td>Array of values to display.<br /> </td>
   </tr>
   <tr>
-   <td>multiselect<br /> </td> 
-   <td>True if multiple selections are allowed, else false.<br /> </td> 
+   <td>multiselect<br /> </td>
+   <td>True if multiple selections are allowed, else false.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 #### API {#api}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Function</th> 
-   <th>Description</th> 
+   <th>Function</th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td><p>addItem:<em> function(itemValues)<br /> itemValues: object containing the display and save value <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td> 
-   <td>Adds a item to the list.</td> 
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: object containing the display and save value <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td>
+   <td>Adds a item to the list.</td>
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: index of the item to remove from the list<br /> </em><br /> <br /> </td> 
-   <td>Deletes an option from the list.</td> 
+   <td>deleteItem<em>: function(nIndex)<br /> nIndex: index of the item to remove from the list<br /> </em><br /> <br /> </td>
+   <td>Deletes an option from the list.</td>
   </tr>
   <tr>
-   <td>clearItems:<code> function()</code></td> 
-   <td>Clears all the options from the list.</td> 
+   <td>clearItems:<code> function()</code></td>
+   <td>Clears all the options from the list.</td>
   </tr>
  </tbody>
 </table>
@@ -234,23 +234,23 @@ All custom widgets should conform to the above specifications. To use the featur
 
 ### CheckButton: RadioButton, CheckBox {#checkbutton-radiobutton-checkbox}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Options</th> 
-   <th>Description</th> 
+   <th>Options</th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>values</td> 
-   <td><p>Array of values(on/off/neutral).</p> <p>It is array of values for the different states of the checkButton. values[0] is the value when the state is ON, values[1] is the value when the state is OFF,<br /> values[2] is the value when the state is NEUTRAL. Length of the values array is equal to the value of state option.<br /> </p> </td> 
+   <td>values</td>
+   <td><p>Array of values(on/off/neutral).</p> <p>It is array of values for the different states of the checkButton. values[0] is the value when the state is ON, values[1] is the value when the state is OFF,<br /> values[2] is the value when the state is NEUTRAL. Length of the values array is equal to the value of state option.<br /> </p> </td>
   </tr>
   <tr>
-   <td>states</td> 
-   <td><p>Number of states allowed. </p> <p>Two for adaptive forms (On, Off) and three for HTML5 forms (On, Off, Neutral).</p> </td> 
+   <td>states</td>
+   <td><p>Number of states allowed. </p> <p>Two for adaptive forms (On, Off) and three for HTML5 forms (On, Off, Neutral).</p> </td>
   </tr>
   <tr>
-   <td>state</td> 
-   <td><p>Current state of the element.</p> <p>Two for adaptive forms (On, Off) and three for HTML5 forms (On, Off, Neutral).</p> </td> 
+   <td>state</td>
+   <td><p>Current state of the element.</p> <p>Two for adaptive forms (On, Off) and three for HTML5 forms (On, Off, Neutral).</p> </td>
   </tr>
  </tbody>
 </table>

@@ -7,7 +7,7 @@ uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 ---
 
@@ -19,7 +19,7 @@ You can use administration console to perform a one-time purge of obsolete recor
 
 **Access the Job Purge Scheduler page**
 
-1. In Administration Console, click Health Monitor in the upper-right corner of the page. 
+1. In Administration Console, click Health Monitor in the upper-right corner of the page.
 1. Click the Job Purge Scheduler tab.
 
 Information about any currently scheduled purges is displayed in the Job Purge Scheduler Information box.

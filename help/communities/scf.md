@@ -5,7 +5,7 @@ description: The social component framework (SCF) simplifies the process of conf
 seo-description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
 uuid: 23b4418d-b91c-46fc-bf42-1154ef79fe5a
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
@@ -38,7 +38,7 @@ The SocialComponent API may be extended to provide data required by a client for
 
 ### How Pages are Rendered for Client {#how-pages-are-rendered-for-client}
 
-![chlimage_1-25](assets/chlimage_1-25.png) 
+![chlimage_1-25](assets/chlimage_1-25.png)
 
 ### Component Customization and Extension {#component-customization-and-extension}
 
@@ -91,7 +91,7 @@ The `DefaultSocialGetServlet`
 
 A default GET servlet listens to .social.json requests to which the SocialComponent responds with customizable JSON.
 
-![chlimage_1-26](assets/chlimage_1-26.png) 
+![chlimage_1-26](assets/chlimage_1-26.png)
 
 ### HTTP API - POST Requests {#http-api-post-requests}
 
@@ -103,7 +103,7 @@ This framework endpoint pattern makes CUD operations extensible, reusable and te
 
 There is a Sling POST:operation for every SocialComponent operation. The business logic and maintenance code for each operation are wrapped in an OperationService which is accessible through the HTTP API or from elsewhere as an OSGi service. Hooks are provided supporting pluggable operation extensions for before/after actions.
 
-![chlimage_1-27](assets/chlimage_1-27.png) 
+![chlimage_1-27](assets/chlimage_1-27.png)
 
 ### Storage Resource Provider (SRP) {#storage-resource-provider-srp}
 
@@ -169,7 +169,7 @@ The [Community Components Guide](components-guide.md) allows includable componen
 **When using JSP**, a resource is included using the tag [cq:include](../../help/sites-developing/taglib.md#lt-cq-include):
 
 ```
-<cq:include path="votes" 
+<cq:include path="votes"
  resourceType="social/tally/components/voting" />
 
 ```
@@ -217,5 +217,5 @@ Additional developer information may be found in the [Coding Guidelines](code-gu
 
 ## Troubleshooting {#troubleshooting}
 
-Common concerns and known issues are described in the [Troubleshooting](troubleshooting.md) section.  
+Common concerns and known issues are described in the [Troubleshooting](troubleshooting.md) section.
 

@@ -1,12 +1,12 @@
 ---
 title: DO NOT PUBLISH - Submitting and storing content in JCR repository
 seo-title: DO NOT PUBLISH - Submitting and storing content in JCR repository
-description: You can configure store content path for your Adaptive Forms to configure to store form data in JCR repository on form submission. 
-seo-description: You can configure store content path for your Adaptive Forms to configure to store form data in JCR repository on form submission. 
+description: You can configure store content path for your Adaptive Forms to configure to store form data in JCR repository on form submission.
+seo-description: You can configure store content path for your Adaptive Forms to configure to store form data in JCR repository on form submission.
 page-status-flag: never-activated
 uuid: 14a62525-bc2b-4acb-bc81-2b696d54d463
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d433956c-bffa-493d-be8a-a4091b27314d
 ---
 
@@ -24,11 +24,11 @@ Store content (deprecated) action is one of the submit actions that can be used 
 
 In case of an XFA- or XSD-based Adaptive Form, only the unbound fields are stored as properties on the node. The file attachments in the Adaptive Form are stored as children nodes. A child node is created for each file attachment component and the files are stored under the corresponding child component nodes.
 
-Once the data is stored, the user is redirected to the configured Thank you page. If the Thank you page is not configured, the user is redirected to the out-of-the-box Thank you Page. The path to the newly created node is passed as a URL parameter in the Thank you Page. 
+Once the data is stored, the user is redirected to the configured Thank you page. If the Thank you page is not configured, the user is redirected to the out-of-the-box Thank you Page. The path to the newly created node is passed as a URL parameter in the Thank you Page.
 
 ![Node Structure of submitted form data ](assets/crxstorewithfa.png)
 
-**Figure:** *Node Structure of submitted form data* 
+**Figure:** *Node Structure of submitted form data*
 
 ![Properties of the node created for form submission](assets/crxsubmitprop.png)
 
@@ -48,8 +48,8 @@ Consider the following when configuring the store content path:
 
 * The user submitting data should have `add_node` permission on the parent folder specified as the store content path. Here, the parent folder in the example used in this article is `/content/usergenerated/content/forms/af/HMRCDemo`. The `HMRCDemo` folder should have the `addChildNodes` permission. This permission can also be inherited from any ancestor node of the parent folder.
 
-* If the path ends with `/`, a unique node is created under the configured store content path and the data is stored on that unique node.  
-  If the path does not end with `/`, the data is stored on the node at the configured path. No unique node is generated.  
+* If the path ends with `/`, a unique node is created under the configured store content path and the data is stored on that unique node.
+  If the path does not end with `/`, the data is stored on the node at the configured path. No unique node is generated.
 
 * The node to which the store content path refers to, should be of the type `sling:folder`. For example, in this example, `HMRCDemo` is of the type `sling:folder`.
 

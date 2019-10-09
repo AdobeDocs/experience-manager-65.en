@@ -5,7 +5,7 @@ description: Learn about the AEM Product Feed.
 seo-description: Learn about the AEM Product Feed.
 uuid: 99eb9bdc-2717-45d4-9203-6394b7d7ddc6
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 1f920892-c52e-42ca-900c-2c7ab3c503b3
@@ -57,7 +57,7 @@ Then you also have to edit two configurations in the Web Console before you can 
 
 ## Schedule the Product Feed {#schedule-the-product-feed}
 
-To enable scheduled feed generation, you must configure a scheduler for it.  
+To enable scheduled feed generation, you must configure a scheduler for it.
 A scheduler is configured as a child configuration of your specific Search&Promote cloud services configuration.
 
 1. Navigate to your Search&Promote configuration.

@@ -5,7 +5,7 @@ description: How to perform moderator actions
 seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
@@ -25,10 +25,10 @@ Visit the moderation overview for a description of [moderation actions](moderate
 
 The UI presented to the moderator on the publish instance is contained within the dialog for posting and managing user generated content (UGC). The elements of the UI are determined by the status of the site visitor - whether they are...
 
-1. The member who posted the content  
-1. A trusted member moderator  
-1. An administrator  
-1. Signed in, but neither an administrator, moderator, nor author of the content  
+1. The member who posted the content
+1. A trusted member moderator
+1. An administrator
+1. Signed in, but neither an administrator, moderator, nor author of the content
 1. Not signed in
 
 ## Example {#example}
@@ -47,11 +47,11 @@ For more on community user groups, visit [Managing Users and User Groups](users.
 
     * Select Forum
     * Select New Post
-    * Enter the Subject  
+    * Enter the Subject
 
       When to change the nectar in Humming Bird Feeder
 
-    * Enter the body text  
+    * Enter the body text
 
       I haven't had much success when I hang a hummingbird feeder up every year. Seems they come a day or two then that is it. I change it once a week is that too long? Do I need to change it sooner?
     * Select Post
@@ -61,7 +61,7 @@ For more on community user groups, visit [Managing Users and User Groups](users.
 
     * Select Forum
     * For the Hummingbird Topic, select Read More
-    * Enter the comment for Post Reply  
+    * Enter the comment for Post Reply
 
       I change mine once a week and I get them from May til October.
 
@@ -72,7 +72,7 @@ For more on community user groups, visit [Managing Users and User Groups](users.
 
     * Select Forum
     * For the Hummingbird Topic, select Read More
-    * Enter the comment for Post Reply  
+    * Enter the comment for Post Reply
 
       I sell nectar and feeders - visit https://my.viral.url/
 

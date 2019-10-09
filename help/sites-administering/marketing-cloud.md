@@ -5,7 +5,7 @@ description: Learn how to integrate AEM with Adobe Marketing Cloud.
 seo-description: Learn how to integrate AEM with Adobe Marketing Cloud.
 uuid: 36d71dd3-7fb0-4237-99d3-4fbb2e162e7b
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
@@ -17,11 +17,11 @@ The [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.ht
 
 With Adobe Experience Manager (AEM), you can seamlessly integrate with the following products of the Adobe Marketing Cloud:
 
-* Adobe Analytics provides marketers with actionable, real-time intelligence about online strategies and marketing initiatives.  
+* Adobe Analytics provides marketers with actionable, real-time intelligence about online strategies and marketing initiatives.
 * Adobe Target gives marketers the ability to continually make their online content more relevant to their customers — yielding greater conversion.
 * Adobe Scene7 automates media management, streamlines web publishing, and enhances web experiences, all in a hosted environment.
 * Adobe Dynamic Tag Management gives marketers intuitive tools to quickly and easily manage an unlimited number of Adobe and third-party tags.
-* Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites.  
+* Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites.
 * Adobe Campaign lets you manage email delivery content directly in Adobe Experience Manager.
 
 In addition, you can integrate AEM with the [creative cloud](/help/sites-administering/creative-cloud.md) and with [third-party services](/help/sites-administering/third-party-services.md).
@@ -110,7 +110,7 @@ For information on how AEM integrates with Adobe Campaign, see [Integrating with
 
 Learn about AEM and Livefyre:
 
-* [Getting Started with Livefyre](https://answers.livefyre.com/developers/getting-started)  
+* [Getting Started with Livefyre](https://answers.livefyre.com/developers/getting-started)
 
 * [Livefyre and AEM](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 

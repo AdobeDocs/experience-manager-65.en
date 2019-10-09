@@ -5,7 +5,7 @@ description: Rating component overview
 seo-description: Rating component overview
 uuid: 48ef61ad-be7a-4a6b-a284-23e5bb4f1671
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
@@ -21,33 +21,33 @@ Anonymous posting of a rating is not supported. Site visitors must register and 
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> <strong>resourceType</strong></td> 
-   <td> social/tally/components/hbs/rating</td> 
-  </tr> 
-  <tr> 
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>Yes - properties are editable in <i>design </i>mode</td> 
-  </tr> 
-  <tr> 
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
-   <td> cq.social.hbs.rating</td> 
-  </tr> 
-  <tr> 
-   <td> <strong>templates</strong></td> 
-   <td><p> /libs/social/tally/components/hbs/rating/rating.hbs<br /> /libs/social/tally/components/hbs/rating/display.hbs<br /> /libs/social/tally/components/hbs/rating/histogram.hbs</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>CSS</strong></td> 
-   <td> /libs/social/tally/components/hbs/rating/clientlibs/ratingcomponent.css</td> 
-  </tr> 
-  <tr> 
-   <td><strong>properties</strong></td> 
-   <td><p>See <a href="rating.md">Using Rating</a></p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> <strong>resourceType</strong></td>
+   <td> social/tally/components/hbs/rating</td>
+  </tr>
+  <tr>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>Yes - properties are editable in <i>design </i>mode</td>
+  </tr>
+  <tr>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
+   <td> cq.social.hbs.rating</td>
+  </tr>
+  <tr>
+   <td> <strong>templates</strong></td>
+   <td><p> /libs/social/tally/components/hbs/rating/rating.hbs<br /> /libs/social/tally/components/hbs/rating/display.hbs<br /> /libs/social/tally/components/hbs/rating/histogram.hbs</p> </td>
+  </tr>
+  <tr>
+   <td><strong>CSS</strong></td>
+   <td> /libs/social/tally/components/hbs/rating/clientlibs/ratingcomponent.css</td>
+  </tr>
+  <tr>
+   <td><strong>properties</strong></td>
+   <td><p>See <a href="rating.md">Using Rating</a></p> </td>
+  </tr>
+ </tbody>
 </table>
 
 * [Client-side Customizations](client-customize.md)
@@ -62,7 +62,7 @@ Anonymous posting of a rating is not supported. Site visitors must register and 
 
 ### Accessing Posted Ratings (UGC) {#accessing-posted-ratings-ugc}
 
-UGC should be moderated using one of the standard methods for moderation.  
+UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
 As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).

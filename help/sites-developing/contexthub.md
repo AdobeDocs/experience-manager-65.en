@@ -5,7 +5,7 @@ description: ContextHub is a framework for storing, manipulating, and presenting
 seo-description: ContextHub is a framework for storing, manipulating, and presenting context data
 uuid: 14e6ff4f-ffbe-454a-b2ec-a35333526e27
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
@@ -33,7 +33,7 @@ Each ContextHub store is an instance of a predefined store type:
 
 * ContextHub provides several [sample store types](/help/sites-developing/ch-samplestores.md).
 * Use AEM consoles to [create stores](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
-* Developers can [create custom store types](/help/sites-developing/ch-extend.md#creating-custom-store-candidates). 
+* Developers can [create custom store types](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Developers can [access store data](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via Javascript.
 
 ## Segmentation {#segmentation}

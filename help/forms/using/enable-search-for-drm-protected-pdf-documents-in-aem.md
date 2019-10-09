@@ -1,12 +1,12 @@
 ---
 title: Enable AEM to search document security protected PDF documents
 seo-title: Enable AEM to search document security protected PDF documents
-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.  
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.  
+description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
+seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
 uuid: c743cda3-252f-4c1f-8d94-e6d26d91dcd8
 contentOwner: khsingh
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 759068fa-dc1b-4cf5-bc7b-62b8c5464831
 ---
@@ -22,10 +22,10 @@ AEM search is capable of searching and locating AEM assets and performing text s
 
 * If you are using AEM Forms on OSGi:
 
-    * Install [AEM Forms Document Security Indexer package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) on the AEM Forms server. 
+    * Install [AEM Forms Document Security Indexer package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) on the AEM Forms server.
     * Ensure an AEM Forms on JEE server is up and running and document security is installed on corresponding AEM Forms on JEE server. The AEM Form on JEE server is required to index the protected document.
 
-* If you are using only AEM Forms on JEE server, the indexer package is already installed.  
+* If you are using only AEM Forms on JEE server, the indexer package is already installed.
 * Ensure that all the bundles are up and running. If all the bundles are not active, wait until all the bundles are up and running.
 
     * For AEM Forms on OSGi, the bundles are listed at `https://[server]:[port]/system/console/bundles`.

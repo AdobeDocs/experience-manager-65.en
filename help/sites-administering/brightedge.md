@@ -5,7 +5,7 @@ description: Learn about integrating AEM with BrightEdge Content Optimizer.
 seo-description: Learn about integrating AEM with BrightEdge Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
@@ -47,7 +47,7 @@ Associate pages with a BrightEdge configuration to send page data to the BrightE
 
 1. Open the classic Websites console. ([http://localhost:4502/siteadmin#/content](http://localhost:4502/siteadmin#/content))
 1. In the Websites tree, select the folder or page that contains the page that you want to associate with the BrightEdge configuration.
-1. In the list of pages, right-click the page to configure and click Properties. 
+1. In the list of pages, right-click the page to configure and click Properties.
 1. On the Cloud Services tab, click the Add Service button, and in the Cloud Services dialog select BrightEdge Content Optimizer and then click OK.
 1. In the BrightEdge Content Optimizer list, select the BrightEdge configuration to associate with the page and then click OK.
 

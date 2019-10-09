@@ -7,7 +7,7 @@ uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 ---
 
@@ -45,10 +45,10 @@ You can create as many search templates as required.
       **Tip**: *If you select the Task Visible element, users will be able to remove completed tasks from the search results.*
 
       The search criteria fields for the selected element appear at the bottom of the Criteria tab.
-    
+
     * For each Process Element, Task Element, and Process Variable that you select, fill in the corresponding search fields at the bottom of the Criteria tab:
 
-        * Select a relational operator (such as "be equal to") from the list provided and specify the value of the operand in the box beside it. 
+        * Select a relational operator (such as "be equal to") from the list provided and specify the value of the operand in the box beside it.
         * (Optional) To enable users to change the operand value in Workspace, select Allow The User To Change The Operand.
         * (Optional) To enable users to change the relational operator, select Allow The User To Select Another Relational Operator. In the list that appears, select the operators that will be available to the user.
 

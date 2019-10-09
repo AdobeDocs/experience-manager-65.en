@@ -5,7 +5,7 @@ description: Describes the recording capabilities of AEM and how to configure AE
 seo-description: Describes the recording capabilities of AEM and how to configure AEM to record specific events.
 uuid: 95f58e89-45c0-4643-8671-f1b819c08c87
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: extending-assets
 content-type: reference
 discoiquuid: 4b945204-f141-4656-a122-1334822e6d02
@@ -43,19 +43,19 @@ The following events can be configured to be recorded:
 
 The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the AEM Assets Event Recorder tuning. To configure the AEM Assets Event Recorder, proceed as follows:
 
-1. Navigate to the **[!UICONTROL Web console]** 
+1. Navigate to the **[!UICONTROL Web console]**
 
-1. Click **[!UICONTROL Configuration]**.  
+1. Click **[!UICONTROL Configuration]**.
 
-1. Double click **[!UICONTROL Day CQ DAM Event Recorder]**.  
+1. Double click **[!UICONTROL Day CQ DAM Event Recorder]**.
 
-1. Check **[!UICONTROL Enables this service]**.  
+1. Check **[!UICONTROL Enables this service]**.
 
-1. Check which **[!UICONTROL Event Types]** you want to be recorded in the user activity stream.  
+1. Check which **[!UICONTROL Event Types]** you want to be recorded in the user activity stream.
 
 1. Click **[!UICONTROL Save]**.
 
 ## Reading recorded events {#reading-recorded-events}
 
-The recorded events are stored as activities. You can read them programmatically by using the [ActivityManager API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).  
+The recorded events are stored as activities. You can read them programmatically by using the [ActivityManager API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
 

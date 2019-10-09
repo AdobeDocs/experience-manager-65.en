@@ -5,7 +5,7 @@ description: Learn how to deal with Multi Site Manager rollout conflicts.
 seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
 uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
@@ -24,7 +24,7 @@ When conflicting pages do exist (in the blueprint and live copy branches), MSM a
 To ensure that the rollout is not blocked, possible definitions can include:
 
 * which page (blueprint or live copy) will have priority during rollout,
-* which pages will be renamed (and how),  
+* which pages will be renamed (and how),
 * how this will affect any published content.
 
   The default behavior of AEM (out-of-the-box) is that published content will not be impacted. So if a page that was manually created in the live copy branch has been published, that content will still be published after the conflict handling and rollout.
@@ -35,11 +35,11 @@ In addition to the standard functionality, customized conflict handlers can be a
 
 In the following sections we use the example of a new page `b`, created in both the blueprint and the live copy branch (created manually), to illustrate the various methods of conflict resolution:
 
-* blueprint: `/b` 
+* blueprint: `/b`
 
-  A master page; with 1 child page, bp-level-1. 
+  A master page; with 1 child page, bp-level-1.
 
-* live copy: `/b` 
+* live copy: `/b`
 
   A page manually created in the live copy branch; with 1 child page, `lc-level-1`.
 
@@ -47,24 +47,24 @@ In the following sections we use the example of a new page `b`, created in both 
 
 **Before Rollout**
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>blueprint before rollout</strong></td> 
-   <td><strong>live copy before rollout</strong></td> 
-   <td><strong>publish before rollout</strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>b</code><br /> <br /> (created in blueprint branch, ready for rollout)<br /> </td> 
-   <td><code>b</code><br /> <br /> (manually created in live copy branch)<br /> </td> 
-   <td><code>b</code><br /> <br /> (contains the content of the page b that was manually created in the live copy branch)</td> 
-  </tr> 
-  <tr> 
-   <td><code> /bp-level-1</code></td> 
-   <td><code> /lc-level-1</code><br /> <br /> (manually created in live copy branch)<br /> </td> 
-   <td><code> /lc-level-1</code><br /> <br /> (contains the content of the page<br /> child-level-1 that was manually created in the live copy branch)</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>blueprint before rollout</strong></td>
+   <td><strong>live copy before rollout</strong></td>
+   <td><strong>publish before rollout</strong></td>
+  </tr>
+  <tr>
+   <td><code>b</code><br /> <br /> (created in blueprint branch, ready for rollout)<br /> </td>
+   <td><code>b</code><br /> <br /> (manually created in live copy branch)<br /> </td>
+   <td><code>b</code><br /> <br /> (contains the content of the page b that was manually created in the live copy branch)</td>
+  </tr>
+  <tr>
+   <td><code> /bp-level-1</code></td>
+   <td><code> /lc-level-1</code><br /> <br /> (manually created in live copy branch)<br /> </td>
+   <td><code> /lc-level-1</code><br /> <br /> (contains the content of the page<br /> child-level-1 that was manually created in the live copy branch)</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Rollout Manager and Conflict Handling {#rollout-manager-and-conflict-handling}
@@ -73,7 +73,7 @@ The rollout manager allows you to activate or deactivate conflict management.
 
 This is done using [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of **Day CQ WCM Rollout Manager**:
 
-* **Handle conflict with manually created Pages**: 
+* **Handle conflict with manually created Pages**:
 
   ( `rolloutmgr.conflicthandling.enabled`)
 
@@ -98,7 +98,7 @@ AEM provides:
 
 The default conflict handler:
 
-* Is called `ResourceNameRolloutConflictHandler`  
+* Is called `ResourceNameRolloutConflictHandler`
 
 * With this handler the blueprint page is given precedence.
 * The service ranking for this handler is set low ( ``i.e. below the default value for the `service.ranking` property) as the assumption is that customized handlers will need a higher ranking. However, the ranking is not the absolute minimum to ensure flexibility when required.
@@ -119,30 +119,30 @@ This conflict handler gives precedence to the blueprint. The live copy page `/b`
 
 **After Rollout**
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>blueprint after rollout</strong></td> 
-   <td><strong>live copy after rollout</strong><br /> </td> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>blueprint after rollout</strong></td>
+   <td><strong>live copy after rollout</strong><br /> </td>
    <td></td>
-   <td><strong>live copy after rollout</strong><br /> <br /> <br /> </td> 
-   <td><strong>publish after rollout</strong><br /> <br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>b</code></td> 
-   <td><code>b</code><br /> <br /> (has the content of the blueprint page b that was rolled out)<br /> </td> 
+   <td><strong>live copy after rollout</strong><br /> <br /> <br /> </td>
+   <td><strong>publish after rollout</strong><br /> <br /> </td>
+  </tr>
+  <tr>
+   <td><code>b</code></td>
+   <td><code>b</code><br /> <br /> (has the content of the blueprint page b that was rolled out)<br /> </td>
    <td></td>
-   <td><code>b_msm_moved</code><br /> <br /> (has the content of the page b that was manually created in the live copy branch)</td> 
-   <td><code>b</code><br /> <br /> (no change; contains the content of the original page b that was manually created in the live copy branch and is now called b_msm_moved)<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code> /bp-level-1</code></td> 
-   <td><code class="code"> /bp-level-1</code></td> 
-   <td><code> /lc-level-1</code><br /> <br /> (no change)</td> 
-   <td><code> </code></td> 
-   <td><code> /lc-level-1</code><br /> <br /> (no change)</td> 
-  </tr> 
- </tbody> 
+   <td><code>b_msm_moved</code><br /> <br /> (has the content of the page b that was manually created in the live copy branch)</td>
+   <td><code>b</code><br /> <br /> (no change; contains the content of the original page b that was manually created in the live copy branch and is now called b_msm_moved)<br /> </td>
+  </tr>
+  <tr>
+   <td><code> /bp-level-1</code></td>
+   <td><code class="code"> /bp-level-1</code></td>
+   <td><code> /lc-level-1</code><br /> <br /> (no change)</td>
+   <td><code> </code></td>
+   <td><code> /lc-level-1</code><br /> <br /> (no change)</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Customized Handlers {#customized-handlers}
@@ -179,27 +179,27 @@ In this case the live copy effectively takes precedence. The blueprint page `/b`
 
   Stays the same.
 
-<table> 
+<table>
  <caption>
-   After Rollout 
- </caption> 
- <tbody> 
-  <tr> 
-   <td><strong>blueprint after rollout</strong></td> 
-   <td><strong>live copy after rollout</strong><br /> <br /> <br /> </td> 
-   <td><strong>publish after rollout</strong><br /> <br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>b</code></td> 
-   <td><code>b</code><br /> <br /> (no change; has the content of the page b that was manually created in the live copy branch)</td> 
-   <td><code>b</code><br /> <br /> (no change; contains the content of the page b that was manually created in the live copy branch)<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code> /bp-level-1</code><br /> </td> 
-   <td><code> /lc-level-1</code><br /> <br /> (no change)</td> 
-   <td><code> /lc-level-1</code><br /> <br /> (no change)</td> 
-  </tr> 
- </tbody> 
+   After Rollout
+ </caption>
+ <tbody>
+  <tr>
+   <td><strong>blueprint after rollout</strong></td>
+   <td><strong>live copy after rollout</strong><br /> <br /> <br /> </td>
+   <td><strong>publish after rollout</strong><br /> <br /> </td>
+  </tr>
+  <tr>
+   <td><code>b</code></td>
+   <td><code>b</code><br /> <br /> (no change; has the content of the page b that was manually created in the live copy branch)</td>
+   <td><code>b</code><br /> <br /> (no change; contains the content of the page b that was manually created in the live copy branch)<br /> </td>
+  </tr>
+  <tr>
+   <td><code> /bp-level-1</code><br /> </td>
+   <td><code> /lc-level-1</code><br /> <br /> (no change)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (no change)</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Service Rankings {#service-rankings}

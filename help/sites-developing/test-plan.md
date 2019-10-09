@@ -5,7 +5,7 @@ description: The individual test cases are amalgamated into your Test Plan
 seo-description: The individual test cases are amalgamated into your Test Plan
 uuid: 99822b02-7b75-422d-ae21-16c4af742567
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 3a8302e8-bc61-402c-a9f2-5db3dfa6dd6d
@@ -26,7 +26,7 @@ For example, certain tests can affect a Go / No-Go decision, and therefore must 
 If your project uses any form of development iteration (involving multiple releases being made available) then you may need or want an indication of the results for each iteration. This can be used to indicate:
 
 * which tests will be covered in which iteration.
-* the results seen for tests repeated in various iterations. 
+* the results seen for tests repeated in various iterations.
 * that priority tests and tests on basic features are repeated at regular intervals.
 
 ## Tester

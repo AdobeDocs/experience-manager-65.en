@@ -5,7 +5,7 @@ description: Programmatically work with tags or extending tags within a custom A
 seo-description: Programmatically work with tags or extending tags within a custom AEM application
 uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
@@ -82,7 +82,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 ```java
 // Getting the tags of a Resource:
-Tag[] tags = tagManager.getTags(resource); 
+Tag[] tags = tagManager.getTags(resource);
 
 // Setting tags to a Resource:
 tagManager.setTags(resource, tags);

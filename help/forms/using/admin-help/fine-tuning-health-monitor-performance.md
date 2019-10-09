@@ -7,7 +7,7 @@ uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 ---
 
@@ -15,52 +15,52 @@ discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 
 Collecting the system statistics that populate Health Monitor has some impact on the performance of your AEM forms environment. This impact can be controlled by setting the Java options listed below in your application server.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Property</p></th> 
-   <th><p>Purpose</p></th> 
-   <th><p>Default value</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Property</p></th>
+   <th><p>Purpose</p></th>
+   <th><p>Default value</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>adobe.healthmonitor.enabled</p></td> 
-   <td><p>Turn on or off Health Monitor thread</p></td> 
-   <td><p>true</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe.cache.statistics-enabled</p></td> 
-   <td><p>Turn on or off Gemfire caching</p></td> 
-   <td><p>true</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe.healthmonitor.refresh-interval</p></td> 
-   <td><p>The interval in milliseconds after which the Health Monitor thread collects the statistics</p></td> 
-   <td><p>10 minutes (600,000 milliseconds)</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe.cache.multicast-port</p></td> 
-   <td><p>The multicast port used to communicate with other members of the distributed system. If set to zero, multicast is disabled for both member discovery and distribution. </p><p>Note: Select different multicast addresses and ports for different distributed systems. Do not use different addresses only.</p></td> 
-   <td><p>No default value. Valid values range from 0 to 65535.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>statistic-sample-rate</p></td> 
-   <td><p>The rate in milliseconds at which statistics are sampled. Operating system statistics are only updated when a sample is taken.</p></td> 
-   <td><p>600000</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe.workmanager.healthmonitor.enabled</p></td> 
-   <td><p>This property enables or disables Work Manager statistic collection, such as job or work item count.</p></td> 
-   <td><p>true</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>adobe.healthmonitor.enabled</p></td>
+   <td><p>Turn on or off Health Monitor thread</p></td>
+   <td><p>true</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe.cache.statistics-enabled</p></td>
+   <td><p>Turn on or off Gemfire caching</p></td>
+   <td><p>true</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe.healthmonitor.refresh-interval</p></td>
+   <td><p>The interval in milliseconds after which the Health Monitor thread collects the statistics</p></td>
+   <td><p>10 minutes (600,000 milliseconds)</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe.cache.multicast-port</p></td>
+   <td><p>The multicast port used to communicate with other members of the distributed system. If set to zero, multicast is disabled for both member discovery and distribution. </p><p>Note: Select different multicast addresses and ports for different distributed systems. Do not use different addresses only.</p></td>
+   <td><p>No default value. Valid values range from 0 to 65535.</p></td>
+  </tr>
+  <tr>
+   <td><p>statistic-sample-rate</p></td>
+   <td><p>The rate in milliseconds at which statistics are sampled. Operating system statistics are only updated when a sample is taken.</p></td>
+   <td><p>600000</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe.workmanager.healthmonitor.enabled</p></td>
+   <td><p>This property enables or disables Work Manager statistic collection, such as job or work item count.</p></td>
+   <td><p>true</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Add Java options to JBoss {#add-java-options-to-jboss}
 
 1. Stop the JBoss application server.
-1. Open the *[appserver root]*/bin/run.bat (Windows) or run.sh (Linux or UNIX) in an editor and add any of the Java options as required. 
+1. Open the *[appserver root]*/bin/run.bat (Windows) or run.sh (Linux or UNIX) in an editor and add any of the Java options as required.
 1. Restart the server.
 
 ## Add Java options to WebLogic {#add-java-options-to-weblogic}

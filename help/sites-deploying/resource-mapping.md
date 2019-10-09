@@ -5,7 +5,7 @@ description: Learn how to define redirects, vanity URLs and virtual hosts for AE
 seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
 uuid: 33de7e92-8144-431b-badd-e6a667cd78e1
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
@@ -44,18 +44,18 @@ The mappings form two lists that the JCR Resource Resolver evaluates (top-down) 
 
 These lists can be viewed (together with configuration information) under the **JCR ResourceResolver** option of the Felix console; for example, `https://<host>:<port>/system/console/jcrresolver`:
 
-* Configuration 
+* Configuration
 
   Shows the current configuration (as defined for the [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md).
 
-* Configuration Test 
+* Configuration Test
 
-  This allows you to enter a URL or resource path. Click **Resolve** or **Map** to confirm how the system will transform the entry.  
+  This allows you to enter a URL or resource path. Click **Resolve** or **Map** to confirm how the system will transform the entry.
 
-* **Resolver Map Entries** 
+* **Resolver Map Entries**
   The list of entries used by the ResourceResolver.resolve methods to map URLs to Resources.
 
-* **Mapping Map Entries** 
+* **Mapping Map Entries**
   The list of entries used by the ResourceResolver.map methods to map Resource Paths to URLs.
 
 The two lists show various entries, including those defined as defaults by the application(s). These often aim to simplify URLs for the user.
@@ -96,14 +96,14 @@ This is the structure used when defining mappings for the HTTP protocol. Other f
 
 To create the mapping that prefixes any request to http://localhost:4503/ with `/content`:
 
-1. Using CRXDE navigate to `/etc/map/http`.  
+1. Using CRXDE navigate to `/etc/map/http`.
 
 1. Create a new node:
 
-    * **Type** `sling:Mapping` 
+    * **Type** `sling:Mapping`
 
-      This node type is intended for such mappings, though its use is not mandatory. 
-    
+      This node type is intended for such mappings, though its use is not mandatory.
+
     * **Name** `localhost_any`
 
 1. Click **Save All**.
@@ -111,20 +111,20 @@ To create the mapping that prefixes any request to http://localhost:4503/ with `
 
     * **Name** `sling:match`
 
-        * **Type** `String` 
+        * **Type** `String`
         * **Value** `localhost.4503/`
 
     * **Name** `sling:internalRedirect`
 
-        * **Type** `String` 
+        * **Type** `String`
         * **Value** `/content/`
 
 1. Click **Save All**.
 
-This will handle a request such as:  
-`localhost:4503/geometrixx/en/products.html`  
-as if:  
-`localhost:4503/content/geometrixx/en/products.html`  
+This will handle a request such as:
+`localhost:4503/geometrixx/en/products.html`
+as if:
+`localhost:4503/content/geometrixx/en/products.html`
 had been requested.
 
 >[!NOTE]

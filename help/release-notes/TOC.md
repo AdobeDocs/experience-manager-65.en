@@ -1,13 +1,13 @@
 ---
 cloud: experience-cloud
-product: SG_EXPERIENCEMANAGER/6.4
+product: experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Release Notes
+user-guide-title: AEM 6.5 Release Notes
 ---
 
-# AEM 6.4 Release Notes {#release-notes}
+# AEM 6.5 Release Notes {#release-notes}
 
-+ [AEM 6.4 overview](home.md)
++ [AEM 6.5 overview](home.md)
 + [General Release Notes](release-notes.md)
 + [Service Pack Release Notes](sp-release-notes.md)
 + [AEM Sites Release Notes](sites.md)

@@ -5,7 +5,7 @@ description: If you need to manage targeted content, such as activities, experie
 seo-description: If you need to manage targeted content, such as activities, experiences, and offers between your sites, you can take advantage of AEM's built-in multisite support for targeted content
 uuid: acb2ffe1-d846-4580-bb69-d5af860796db
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
@@ -22,8 +22,8 @@ If you need to manage targeted content, such as activities, experiences, and off
 This document describes the following:
 
 * Provides a brief overview of AEM's multisite support for targeted content.
-* Describes some possible usage scenarios on how you can link sites (in one brand). 
-* Provides an example walkthrough of how marketers would use this feature. 
+* Describes some possible usage scenarios on how you can link sites (in one brand).
+* Provides an example walkthrough of how marketers would use this feature.
 * Detailed instructions on how to implement multisite support for targeted content.
 
 To set up how your sites share personalized content, you need to perform the following steps:
@@ -102,7 +102,7 @@ Each site shares personalized content in geographic regions:
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-For the northern hemisphere, we have a winter activity created but in the male audience the marketer in North America would like a different image for winter, so he or she changes it in the United States site. 
+For the northern hemisphere, we have a winter activity created but in the male audience the marketer in North America would like a different image for winter, so he or she changes it in the United States site.
 
 ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -155,7 +155,7 @@ Areas can span activities and offers. After you have created an area in either o
 
 To create a new area:
 
-1. Navigate to **Personalization** &gt; **Activities** or **Offers** or and then to your brand. 
+1. Navigate to **Personalization** &gt; **Activities** or **Offers** or and then to your brand.
 1. Tap or click **Create Area**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
@@ -217,7 +217,7 @@ To link a site to an area:
 
 1. Navigate to the site (or page) that you want to link to an area.
 1. Select the site or page and tap or click **View Properties**.
-1. Tap or click the **Personalization** tab. 
+1. Tap or click the **Personalization** tab.
 1. In the **Brand** menu, select the brand you want to link your area to. After you select the brand, available areas are available in the **Area Reference** menu.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)

@@ -7,7 +7,7 @@ uuid: f421e206-e7b5-416c-b9fb-974094f10a66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 ---
 
@@ -34,7 +34,7 @@ AEM forms does not provide any option to generate a key pair. However, you can g
 The following signature types are supported and can be imported in AEM forms:
 
 * XML signature
-* XMLTimeStampToken 
+* XMLTimeStampToken
 * RFC 3161 TimeStampToken
 * PKCS#7
 * PKCS#1

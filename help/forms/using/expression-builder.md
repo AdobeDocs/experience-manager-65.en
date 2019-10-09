@@ -5,7 +5,7 @@ description: Expression Builder in Correspondence Management lets you create exp
 seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 uuid: 998f7ec9-2645-431e-b483-c68d24ef49cb
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 ---
@@ -18,7 +18,7 @@ Using the Expression Builder, you can create expressions or conditions that perf
 
 The Expression Builder internally uses JSP EL libraries, so the expression adhere to JSPEL syntax. For more information, see [Example expressions](#exampleexpressions).
 
-![Expression Builder](assets/expressionbuilder.png) 
+![Expression Builder](assets/expressionbuilder.png)
 
 ### Operators {#operators}
 
@@ -37,33 +37,33 @@ You can find more information in the [JSP EL specification](https://download.ora
 * Collection indexes and map keys (using the [] notation) are not supported in variable names for expressions evaluated on the client-side.
 * The following are the parameter types or return types of functions used in expressions:
 
-    * java.lang.String  
-    * java.lang.Character  
-    * Char  
-    * java.lang.Boolean  
-    * Boolean  
-    * java.lang.Integer  
-    * Int  
+    * java.lang.String
+    * java.lang.Character
+    * Char
+    * java.lang.Boolean
+    * Boolean
+    * java.lang.Integer
+    * Int
     * java.util.list
-    * java.lang.Short  
-    * Short  
-    * java.lang.Byte  
-    * byte  
-    * java.lang.Double  
-    * Double  
-    * java.lang.Long  
-    * Long  
-    * java.lang.Float  
-    * Float  
-    * java.util.Calendar  
-    * java.util.Date  
+    * java.lang.Short
+    * Short
+    * java.lang.Byte
+    * byte
+    * java.lang.Double
+    * Double
+    * java.lang.Long
+    * Long
+    * java.lang.Float
+    * Float
+    * java.util.Calendar
+    * java.util.Date
     * java.util.List
 
 ### Remote function {#remote-function}
 
 Remote functions provide the capability to use custom logic in expressions. You can write custom logic to be used in expression as a method in Java and same function can be used inside expressions. Available remote functions are listed under the “Remote Functions” tab on the left side of Expression Editor.
 
-![remotefunction](assets/remotefunction.png) 
+![remotefunction](assets/remotefunction.png)
 
 #### Adding custom remote functions {#adding-custom-remote-functions}
 
@@ -80,13 +80,13 @@ You can create a custom bundle to export your own remote functions for use insid
    ```java
    package mergeandfuse.com;
    import com.adobe.exm.expeval.ServiceMethod;
-   
+
    public interface RemoteFunction {
     @ServiceMethod(enabled=true,displayName="Returns_all_caps",description="Function to convert to all CAPS", familyId="remote")
     public String toAllCaps(String name);
-    
+
    }
-   
+
    ```
 
    The parameters of the methods can also be optionally annotated using the @ServiceMethodParameter annotation (com.adobe.exm.expeval.ServiceMethodParameter). This annotation is only used for specifying human-readable names and descriptions of method parameters for use in the authoring user interface. Ensure that the parameters and return-values of the interface methods belong to one of the following types:
@@ -141,10 +141,10 @@ public class RemoteFuntionImpl implements RemoteFunction {
  @Override
  public String toAllCaps(String name) {
   System.out.println("######Got######"+name);
-  
+
   return name.toUpperCase();
  }
- 
+
 }
 
 ```

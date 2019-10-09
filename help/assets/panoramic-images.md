@@ -6,7 +6,7 @@ seo-description: Learn how to work with panoramic images in Dynamic Media.
 uuid: dfd7a55c-7bcc-4d62-8c3a-a73726881103
 contentOwner: Rick Brough
 topic-tags: dynamic-media
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 ---
@@ -17,7 +17,7 @@ This section describes working with the Panoramic Image viewer to render spheric
 
 See also [Managing Viewer Presets](managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png) 
+![panoramic-image2](assets/panoramic-image2.png)
 
 ## Uploading assets for use with the Panoramic Image viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -25,7 +25,7 @@ For an uploaded asset to qualify as a spherical panorama image that you intend t
 
 * An aspect ratio of 2.
 
-  You can override the default aspect ratio setting of 2 in **[!UICONTROL CRXDE Lite]** at the following:  
+  You can override the default aspect ratio setting of 2 in **[!UICONTROL CRXDE Lite]** at the following:
 
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
@@ -39,10 +39,10 @@ To upload assets for use with the Panoramic Image viewer, see [Uploading Assets]
 
 For the Panoramic Image viewer to work properly within AEM, you must synchronize the Panoramic Image viewer presets with Dynamic Media Classic and Dynamic Media Classic&ndash;specific metadata so the viewer presets get updated in the JCR. To accomplish this, configure Dynamic Media Classic in the following manner:
 
-1. [Log into your instance of Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.  
+1. [Log into your instance of Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
 
 1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
-1. On the **[!UICONTROL Image Server Publish]** page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.  
+1. On the **[!UICONTROL Image Server Publish]** page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
 
 1. On the same **[!UICONTROL Image Server Publish]** page, locate the heading **[!UICONTROL Request Attributes]**.
 1. Under the **[!UICONTROL Request Attributes]** heading, locate **[!UICONTROL Reply Image Size Limit]**. Then, in the associated **[!UICONTROL Width]** and **[!UICONTROL Height]** fields, increase the maximum allowable image size for panoramic images.
@@ -60,7 +60,7 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
    These settings are necessary for using the **[!UICONTROL Panoramic Media]** component in AEM.
 
-1. At the bottom of the **[!UICONTROL Image Server Publish]** page, on the left side, tap **[!UICONTROL Save]**.  
+1. At the bottom of the **[!UICONTROL Image Server Publish]** page, on the left side, tap **[!UICONTROL Save]**.
 
 1. In the lower-right corner, tap **[!UICONTROL Close]**.
 

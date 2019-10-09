@@ -5,7 +5,7 @@ description: How-to customize the images used in route actions in LiveCycle AEM 
 seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 ---
@@ -32,11 +32,11 @@ To customize the images used in route actions, perform the steps described in [G
 
    ```css
    .myStyle1{
-   
+
            background-image: url('../images/myStyleIcon1.png');
-   
+
        }
-   
+
    ```
 
 ## Task List task action popup {#task-list-task-action-popup}
@@ -59,9 +59,9 @@ To customize the images used in route actions, perform the steps described in [G
                 </li>
                 <%}%>
                 <%}%>
-    
+
     To
-    
+
     <%if(routeList == null){%>
                 <li class="<%= availableCommands.directCommands[0]%>" alt="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0]+'.value')%>">
                     <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -89,9 +89,9 @@ To customize the images used in route actions, perform the steps described in [G
             </li>
             <%}%>
             <%}%>
- 
+
 To
- 
+
 <%if(routeList == null){%>
             <li class="<%= availableCommands.directCommands[0]%>" alt="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0]+'.value')%>">
                 <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -124,9 +124,9 @@ To
                                 <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route"><%= availableCommands.directCommands[i]%></a>
                             </li>
                         <%}%>
-    
+
     To
-    
+
     <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                             <li class="routeAction">
                                 <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route">
@@ -145,9 +145,9 @@ To
                                 <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route"><%= availableCommands.directCommands[i]%></a>
                             </li>
                         <%}%>
-    
+
     To
-    
+
     <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                     <%if(availableCommands.directCommands[i].equals("myAction1")){%>
                         <li class="routeAction">
@@ -165,10 +165,10 @@ To
                 <%}%>
     ```
 
-1. Open `/apps/ws/js/registry.js` for editing and look for the following text :  
+1. Open `/apps/ws/js/registry.js` for editing and look for the following text :
 `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
-1. Replace the text with the following:  
+1. Replace the text with the following:
 `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
 
 **[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

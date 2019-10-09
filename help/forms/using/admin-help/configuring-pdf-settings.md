@@ -7,7 +7,7 @@ uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 ---
 
@@ -26,7 +26,7 @@ On the Adobe PDF Settings page, you can do the following tasks:
 
 Adobe PDF settings are applicable only to the PDFMaker based conversions. These include the following conversions:
 
-* Microsoft Word document (DOC, DOCX, RTF, TXT) 
+* Microsoft Word document (DOC, DOCX, RTF, TXT)
 * Microsoft Excel document (XLS, XLSX)
 * Microsoft PowerPoint document (PPT, PPTX)
 * Microsoft Project document (MPP)
@@ -42,7 +42,7 @@ PDF Generator provides several predefined PDF settings for your use. You cannot 
 
 **High Quality Print:** Creates PDF files for high-quality output. This setting:
 
-* downsamples color and grayscale images at 300 dpi 
+* downsamples color and grayscale images at 300 dpi
 * downsamples monochrome images at 1200 dpi
 * prints to a higher image resolution
 * uses other settings to preserve the maximum amount of information about the original document.
@@ -59,7 +59,7 @@ These PDF files can be opened in Adobe Acrobat 5 and Adobe Acrobat Reader® 5 or
 
 **Press Quality:** Creates PDF files for high-quality print production (for example, on an imagesetter or platesetter). In this case, file size is not a consideration. The objective is to maintain all the information in a PDF file that a commercial printer or prepress service provider needs to print the document correctly. This set of options:
 
-* downsamples color and grayscale images at 300 dpi 
+* downsamples color and grayscale images at 300 dpi
 * downsamples monochrome images at 1200 dpi
 * embeds subsets of all fonts used in the document
 * prints to a higher image resolution,
@@ -78,7 +78,7 @@ Print jobs fail if they have fonts that cannot be embedded. These PDF files can 
 
 PDF settings determine precisely how files are converted and their resultant PDF structure and features. Define a new PDF setting or edit one that you created previously. You cannot modify predefined settings, but you can create a setting based on an existing one by editing the setting and saving it under a new name.
 
-1. In administration console, click Services &gt; PDF Generator &gt; Adobe PDF Settings. 
+1. In administration console, click Services &gt; PDF Generator &gt; Adobe PDF Settings.
 1. Either click New or click the name of an existing setting.
 1. On the New/Edit Adobe PDF Setting page, complete the required information in these sections:
 
@@ -96,7 +96,7 @@ PDF settings determine precisely how files are converted and their resultant PDF
 
    [Initial view options](configuring-pdf-settings.md#initial-view-options)
 
-   To go to another section, click its link on the web page or use the Next and Previous buttons. 
+   To go to another section, click its link on the web page or use the Next and Previous buttons.
 
 1. After you complete the information in all sections, click Save or Save As and provide a name for the setting.
 
@@ -124,51 +124,51 @@ Use the general options to specify the version of Acrobat to use for file compat
 
 **Compatibility:** The compatibility level of the PDF file. For documents that will be widely distributed, consider selecting Acrobat 4 (PDF 1.3) or Acrobat 5 (PDF 1.4) to ensure that all users can view and print the document. If you create files by using Acrobat 5 compatibility or later, they may not be compatible with earlier versions of Acrobat. The following subsections show some of the differences between PDF files that are created using different levels of Acrobat compatibility.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p>Acrobat 4 (PDF 1.3)</p> </th> 
-   <th><p>Acrobat 5 (PDF 1.4)</p> </th> 
-   <th><p>Acrobat 6 (PDF 1.5)</p> </th> 
-   <th><p>Acrobat 7 (PDF 1.6) and Acrobat 8 (PDF 1.7)</p> </th> 
-  </tr> 
-  <tr> 
-   <td><p>Can be opened with Acrobat 3.0 and Acrobat Reader 3.0 and later.</p> </td> 
-   <td><p>Can be opened with Acrobat 3.0 and Acrobat Reader 3.0 and later. Features specific to later versions may be lost or not viewable.</p> </td> 
-   <td><p>Most can be opened with Acrobat 4 and Acrobat Reader 4.0 and later. Features specific to later versions may be lost or not viewable.</p> </td> 
-   <td><p>Most can be opened with Acrobat 4 and Acrobat Reader 4.0 and later. Features specific to later versions may be lost or not viewable.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Cannot contain artwork that uses live transparency effects. Any transparency must be flattened before converting to PDF 1.3.</p> </td> 
-   <td><p>Supports the use of live transparency in artwork. (Acrobat Distiller feature flattens transparency.)</p> </td> 
-   <td><p>Supports the use of live transparency in artwork. (Acrobat Distiller feature flattens transparency.)</p> </td> 
-   <td><p>Supports the use of live transparency in artwork. (Acrobat Distiller feature flattens transparency.)</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Layers are not supported.</p> </td> 
-   <td><p>Layers are not supported.</p> </td> 
-   <td><p>Preserves layers when you create PDF files from applications that support the generation of layered PDF documents, such as Adobe Illustrator® CS or Adobe InDesign® CS and later.</p> </td> 
-   <td><p>Preserves layers when you create PDF files from applications that support the generation of layered PDF documents, such as Illustrator CS or InDesign CS and later.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>DeviceN color space with 8 colorants is supported.</p> </td> 
-   <td><p>DeviceN color space with 8 colorants is supported.</p> </td> 
-   <td><p>DeviceN color space with up to 31 colorants is supported.</p> </td> 
-   <td><p>DeviceN color space with up to 31 colorants is supported.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Multibyte fonts can be embedded. (Distiller converts the fonts when embedding.)</p> </td> 
-   <td><p>Multibyte fonts can be embedded.</p> </td> 
-   <td><p>Multibyte fonts can be embedded.</p> </td> 
-   <td><p>Multibyte fonts can be embedded.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>40-bit RC4 security is supported.</p> </td> 
-   <td><p>128-bit RC4 security is supported.</p> </td> 
-   <td><p>128-bit RC4 security is supported.</p> </td> 
-   <td><p>128-bit RC4 and 128-bit AES (Advanced Encryption Standard) security supported.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><p>Acrobat 4 (PDF 1.3)</p> </th>
+   <th><p>Acrobat 5 (PDF 1.4)</p> </th>
+   <th><p>Acrobat 6 (PDF 1.5)</p> </th>
+   <th><p>Acrobat 7 (PDF 1.6) and Acrobat 8 (PDF 1.7)</p> </th>
+  </tr>
+  <tr>
+   <td><p>Can be opened with Acrobat 3.0 and Acrobat Reader 3.0 and later.</p> </td>
+   <td><p>Can be opened with Acrobat 3.0 and Acrobat Reader 3.0 and later. Features specific to later versions may be lost or not viewable.</p> </td>
+   <td><p>Most can be opened with Acrobat 4 and Acrobat Reader 4.0 and later. Features specific to later versions may be lost or not viewable.</p> </td>
+   <td><p>Most can be opened with Acrobat 4 and Acrobat Reader 4.0 and later. Features specific to later versions may be lost or not viewable.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Cannot contain artwork that uses live transparency effects. Any transparency must be flattened before converting to PDF 1.3.</p> </td>
+   <td><p>Supports the use of live transparency in artwork. (Acrobat Distiller feature flattens transparency.)</p> </td>
+   <td><p>Supports the use of live transparency in artwork. (Acrobat Distiller feature flattens transparency.)</p> </td>
+   <td><p>Supports the use of live transparency in artwork. (Acrobat Distiller feature flattens transparency.)</p> </td>
+  </tr>
+  <tr>
+   <td><p>Layers are not supported.</p> </td>
+   <td><p>Layers are not supported.</p> </td>
+   <td><p>Preserves layers when you create PDF files from applications that support the generation of layered PDF documents, such as Adobe Illustrator® CS or Adobe InDesign® CS and later.</p> </td>
+   <td><p>Preserves layers when you create PDF files from applications that support the generation of layered PDF documents, such as Illustrator CS or InDesign CS and later.</p> </td>
+  </tr>
+  <tr>
+   <td><p>DeviceN color space with 8 colorants is supported.</p> </td>
+   <td><p>DeviceN color space with 8 colorants is supported.</p> </td>
+   <td><p>DeviceN color space with up to 31 colorants is supported.</p> </td>
+   <td><p>DeviceN color space with up to 31 colorants is supported.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Multibyte fonts can be embedded. (Distiller converts the fonts when embedding.)</p> </td>
+   <td><p>Multibyte fonts can be embedded.</p> </td>
+   <td><p>Multibyte fonts can be embedded.</p> </td>
+   <td><p>Multibyte fonts can be embedded.</p> </td>
+  </tr>
+  <tr>
+   <td><p>40-bit RC4 security is supported.</p> </td>
+   <td><p>128-bit RC4 security is supported.</p> </td>
+   <td><p>128-bit RC4 security is supported.</p> </td>
+   <td><p>128-bit RC4 and 128-bit AES (Advanced Encryption Standard) security supported.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 **Object Level Compression:** Consolidates small objects (each of which are not compressible itself) into streams that can then be efficiently compressed.
@@ -223,39 +223,39 @@ Also consider whether users need to magnify a page. For example, if you are crea
 
 This table shows contains types of printers and their resolution measured in dpi, their default screen ruling measured in lines per inch (lpi), and a resampling resolution for images that are measured in pixels per inch (ppi). For example, to print to a 600-dpi laser printer, enter 170 for the resolution to resample images at.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p>Printer resolution</p> </th> 
-   <th><p>Default line screen</p> </th> 
-   <th><p>Image resolution</p> </th> 
-  </tr> 
-  <tr> 
-   <td><p>300 dpi (laser printer)</p> </td> 
-   <td><p>60 lpi</p> </td> 
-   <td><p>120 ppi</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>600 dpi (laser printer)</p> </td> 
-   <td><p>85 lpi</p> </td> 
-   <td><p>170 ppi</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>1200 dpi (imagesetter)</p> </td> 
-   <td><p>120 lpi</p> </td> 
-   <td><p>240 ppi</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>2400 dpi (imagesetter)</p> </td> 
-   <td><p>150 lpi</p> </td> 
-   <td><p>300 ppi</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><p>Printer resolution</p> </th>
+   <th><p>Default line screen</p> </th>
+   <th><p>Image resolution</p> </th>
+  </tr>
+  <tr>
+   <td><p>300 dpi (laser printer)</p> </td>
+   <td><p>60 lpi</p> </td>
+   <td><p>120 ppi</p> </td>
+  </tr>
+  <tr>
+   <td><p>600 dpi (laser printer)</p> </td>
+   <td><p>85 lpi</p> </td>
+   <td><p>170 ppi</p> </td>
+  </tr>
+  <tr>
+   <td><p>1200 dpi (imagesetter)</p> </td>
+   <td><p>120 lpi</p> </td>
+   <td><p>240 ppi</p> </td>
+  </tr>
+  <tr>
+   <td><p>2400 dpi (imagesetter)</p> </td>
+   <td><p>150 lpi</p> </td>
+   <td><p>300 ppi</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 **Compression:** Set a value to apply to color, grayscale, and monochrome images. For color and grayscale images, also set the image quality:
 
-* For color or grayscale images, select ZIP to apply compression that works well on images that have large areas of single colors or repeating patterns. Examples are screen shots, simple images created with paint programs, and monochrome images that contain repeating patterns. Select JPEG, quality minimum to maximum, to apply compression that is suitable for grayscale or color images, such as continuous-tone photographs that contain more detail than can be reproduced on the screen or in print. Select Automatic (JPEG) to automatically determine the best quality for color and grayscale images. 
+* For color or grayscale images, select ZIP to apply compression that works well on images that have large areas of single colors or repeating patterns. Examples are screen shots, simple images created with paint programs, and monochrome images that contain repeating patterns. Select JPEG, quality minimum to maximum, to apply compression that is suitable for grayscale or color images, such as continuous-tone photographs that contain more detail than can be reproduced on the screen or in print. Select Automatic (JPEG) to automatically determine the best quality for color and grayscale images.
 * For monochrome images, select CCITT Group 4, CCITT Group 3, ZIP, JPEG200, Automatic (JPEG2000), or Run Length compression.
 
 Make sure that monochrome images are scanned as monochrome and not as grayscale. Scanned text is sometimes saved as grayscale images by default. Grayscale text that is compressed with the JPEG compression method is not clear and may be unreadable.
@@ -288,9 +288,9 @@ The Fonts options specify which fonts to embed in a PDF file and whether to embe
 
 1. In administration console, click Services &gt; PDF Generator &gt; Adobe PDF Settings.
 1. Click New or click the name of a setting.
-1. Click Fonts and deselect Embed all fonts. 
-1. From the Font source list, select a font source and click Go to refresh the list of fonts in the box on the left. 
-1. Click a font in the box on the left. Then click Add beside the appropriate box to move it to the Always Embed list or Never Embed list. Repeat for each font. Use Ctrl-click to select multiple fonts to move. 
+1. Click Fonts and deselect Embed all fonts.
+1. From the Font source list, select a font source and click Go to refresh the list of fonts in the box on the left.
+1. Click a font in the box on the left. Then click Add beside the appropriate box to move it to the Always Embed list or Never Embed list. Repeat for each font. Use Ctrl-click to select multiple fonts to move.
 1. To remove a font from the Always Embed or Never Embed list, select it and click Remove beside the appropriate box. This action does not remove the font from your system; it just removes the reference to it in the list.
 1. If the font you want to specify does not appear, type its name in the Add Font box, and then click Always Embed or Never Embed. Font names cannot contain alphanumeric characters.
 
@@ -538,14 +538,14 @@ These files have many purposes. For example, prologue files can be edited to spe
 
 1. In administration console, click Services &gt; PDF Generator &gt; Adobe PDF Settings.
 1. Click New or click the name of a setting.
-1. Click Advanced and then, beside the Use Prologue.ps and Epilogue.ps option, click Download. 
+1. Click Advanced and then, beside the Use Prologue.ps and Epilogue.ps option, click Download.
 1. On the Download Prologue and Epilogue Files page, click Prologue.ps or Epilogue.ps and click Save.
 
 ### Upload a prologue or epilogue file {#upload-a-prologue-or-epilogue-file}
 
 1. In administration console, click Services &gt; PDF Generator &gt; Adobe PDF Settings.
 1. Click New or click the name of a setting.
-1. Click Advanced and then, beside the Use Prologue.ps And Epilogue.ps option, click Upload. 
+1. Click Advanced and then, beside the Use Prologue.ps And Epilogue.ps option, click Upload.
 1. On the Upload Prologue and Epilogue Files page, click Browse to select a prologue or an epilogue file.
 1. Locate the file and click Open.
 1. To use the file, ensure that Use Prologue.ps And Epilogue.ps is selected in the Advanced area of the New/Edit Adobe PDF Setting page.

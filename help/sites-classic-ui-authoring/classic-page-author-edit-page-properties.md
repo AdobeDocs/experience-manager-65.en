@@ -5,7 +5,7 @@ description: Properties of a page can vary depending on the nature of the page. 
 seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
@@ -35,7 +35,7 @@ The properties are distributed across several tabs:
     * A completely new tag can be entered by typing the name in an empty selection box.
 
       The new tag will actually be created when you hit enter. The new tag will then be shown in a box, with a small star on the right indicating that it is a new tag.
-  
+
     * With the drop-down functionality you can select from existing tags.
     * An x appears when you mouse-over a tag entry in the selection box; this can be used to remove that tag for this page.
 
@@ -134,9 +134,9 @@ The properties are distributed across several tabs:
 
     * **Generate Preview**
 
-      Generate a preview of the page to use as thumbnail. 
-  
-    * **Upload Image** 
+      Generate a preview of the page to use as thumbnail.
+
+    * **Upload Image**
 
       Upload an image to use as thumbnail.
 
@@ -180,7 +180,7 @@ The properties are distributed across several tabs:
 
 Page Properties define the various properties of the page, such as titles, when they appear on the website and others.
 
-1. Open the page you want to edit.  
+1. Open the page you want to edit.
 
 1. In the sidekick open the **Page** tab then select **Page Properties...**
 

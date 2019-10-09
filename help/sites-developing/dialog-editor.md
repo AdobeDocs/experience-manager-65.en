@@ -5,7 +5,7 @@ description: The dialog editor provides a graphical interface for easily creatin
 seo-description: The dialog editor provides a graphical interface for easily creating and editing dialog boxes and scaffolds
 uuid: 64d3fb12-8638-441b-8595-c590d48f3072
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb

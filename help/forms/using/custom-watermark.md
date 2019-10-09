@@ -5,7 +5,7 @@ description: Learn how to create custom watermark in letter PDF preview.
 seo-description: Learn how to create custom watermark in letter PDF preview.
 uuid: f406de81-af94-40dd-97ec-9ca95620f961
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 ---
@@ -32,7 +32,7 @@ You can use the following steps to customize the text and appearance of the wate
     1. Right-click the **previewwatermark **folder at the following path and select **Overlay Node**:
 
        `/libs/fd/cm/configFiles/previewwatermark`
-    
+
     1. Ensure that the Overlay Node dialog has the following values:
 
        **Path:** /libs/fd/cm/configFiles/previewwatermark
@@ -48,7 +48,7 @@ You can use the following steps to customize the text and appearance of the wate
        >* Upgrade on your instance
        >* Apply a hot fix
        >* Install a feature pack
-   
+
     1. Click **OK** and then click **Save All**. The **[!UICONTROL previewwatermark]** folder is created in the specified path.
 
 1. Copy and paste the ddx file from "/libs/fd/cm/configFiles/previewwatermark" folder to "/apps/fd/cm/configFiles/previewwatermark" folder and click **[!UICONTROL Save All]**.

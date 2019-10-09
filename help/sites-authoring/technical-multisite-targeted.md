@@ -5,7 +5,7 @@ description: A diagram shows how multisite support for targeted content is struc
 seo-description: A diagram shows how multisite support for targeted content is structured
 uuid: 2d30cdf0-ab77-490d-aac0-db3a0d417a58
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999

@@ -5,7 +5,7 @@ description: How to setup MSRP for one author instance and one publish instance
 seo-description: How to setup MSRP for one author instance and one publish instance
 uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
@@ -81,7 +81,7 @@ The following commands are an example of setting up a replica set with 3 nodes o
 * bin/mongod --port 27019 --dbpath data2 --replSet rs0&
 * bin/mongo
 
-    * rs.add("127.0.0.1:27018") 
+    * rs.add("127.0.0.1:27018")
     * rs.add("127.0.0.1:27019")
     * rs.status()
 
@@ -91,7 +91,7 @@ The following commands are an example of setting up a replica set with 3 nodes o
 
 * Download Solr from [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
-    * Suitable for any OS 
+    * Suitable for any OS
     * Use version 4.10 or version 5
     * Solr requires Java 1.7 or greater
 

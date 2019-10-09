@@ -5,7 +5,7 @@ description: The Marketing Campaign Manager (MCM) is a console that helps you ma
 seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 uuid: 3df6c0b8-dc0a-4a02-a38c-8250fb829404
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
@@ -27,56 +27,56 @@ For example:
 
 From the MCM you can access:
 
-* **[Dashboard](#dashboard)** 
+* **[Dashboard](#dashboard)**
   This is divided into four panes:
 
-    * [Lists](#lists) 
+    * [Lists](#lists)
 
-      This pane shows the lists you have already created, together with the number of leads in that list. From this pane you can create a new list directly or import leads to create a new list. 
+      This pane shows the lists you have already created, together with the number of leads in that list. From this pane you can create a new list directly or import leads to create a new list.
 
-      Selecting a specific list will take you to the [Lists](#lists) section showing details for your list.  
-    
-    * [Segments](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)  
+      Selecting a specific list will take you to the [Lists](#lists) section showing details for your list.
 
-      This pane show the segments that you have defined. Segments let you characterize a collection of visitors that share certain traits.  
+    * [Segments](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
 
-      Selecting a specific segment will open the segment definition page.  
-    
-    * [Reports](/help/sites-administering/reporting.md)  
-      AEM provides different reports to help you analyze and monitor the state of your instance. This MCM pane lists the reports.  
+      This pane show the segments that you have defined. Segments let you characterize a collection of visitors that share certain traits.
 
-      Selecting a report will open the report page.  
-    
-    * [Campaigns](#campaigns)  
+      Selecting a specific segment will open the segment definition page.
+
+    * [Reports](/help/sites-administering/reporting.md)
+      AEM provides different reports to help you analyze and monitor the state of your instance. This MCM pane lists the reports.
+
+      Selecting a report will open the report page.
+
+    * [Campaigns](#campaigns)
 
       This pane lists your campaign experiences such as [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) and [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
-* **[Leads](#leads)** 
+* **[Leads](#leads)**
 
-  Here you can manage your leads. You can create or import leads, edit specific details for individual leads or delete when no longer needed. You can also put leads in different groups, called Lists. **Note:** Adobe is not planning to further enhance this capability.  
-
-  Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).  
-
-* **[Lists](#lists)** 
-
-  Here you can manage your lists (of leads).**Note:** Adobe is not planning to further enhance this capability.  
+  Here you can manage your leads. You can create or import leads, edit specific details for individual leads or delete when no longer needed. You can also put leads in different groups, called Lists. **Note:** Adobe is not planning to further enhance this capability.
 
   Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
-* **[Campaigns](#campaigns)** 
+* **[Lists](#lists)**
+
+  Here you can manage your lists (of leads).**Note:** Adobe is not planning to further enhance this capability.
+
+  Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+
+* **[Campaigns](#campaigns)**
   Here you can manage your Brands, Campaigns and Experiences.
 
 ## Dashboard {#dashboard}
 
 The dashboard shows four panes that provide you with an overview of your lists (of leads), segments, reports and campaigns. Access to basic functionality for these is also available here.
 
-![mcm_dashboard](assets/mcm_dashboard.png) 
+![mcm_dashboard](assets/mcm_dashboard.png)
 
 ## Leads {#leads}
 
 >[!NOTE]
 >
->Adobe is not planning to further enhance this capability (Managing Leads).  
+>Adobe is not planning to further enhance this capability (Managing Leads).
 >Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM, you can organize and add leads by either entering them manually or importing a comma-separated list; for example, a mailing list. Additional ways to generate leads are from newsletter sign-ups or community sign-ups (if configured, these can trigger a workflow that populates leads). Leads are usually categorized and put into a list so that later you can perform actions on the whole list; for example, sending out a custom email to a certain list.
@@ -87,13 +87,13 @@ Under **Leads** in the left pane you can create, import, edit and delete your le
 >
 >See [Working with Leads](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) for detailed information about specific tasks.
 
-![screen_shot_2012-02-21at114748am-1](assets/screen_shot_2012-02-21at114748am-1.png) 
+![screen_shot_2012-02-21at114748am-1](assets/screen_shot_2012-02-21at114748am-1.png)
 
 ## Lists {#lists}
 
 >[!NOTE]
 >
->Adobe is not planning to further enhance this capability (Managing Lists).  
+>Adobe is not planning to further enhance this capability (Managing Lists).
 >Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 Lists let you organize your leads into groups. With lists, you can target your marketing campaigns to a select group of people; for example, you can send a targeted newsletter to a list.
@@ -104,7 +104,7 @@ Under **Lists**, you can manage your lists by creating, importing, editing, merg
 >
 >See [Working with Lists](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) for detailed information about specific tasks.
 
-![screen_shot_2012-02-21at124828pm-1](assets/screen_shot_2012-02-21at124828pm-1.png) 
+![screen_shot_2012-02-21at124828pm-1](assets/screen_shot_2012-02-21at124828pm-1.png)
 
 ### Campaigns {#campaigns}
 
@@ -116,18 +116,18 @@ To access existing campaigns, in the MCM click **Campaigns**.
 
 ![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
-* **In the left pane**:  
+* **In the left pane**:
 
-  There is a list of all brands and campaigns. 
+  There is a list of all brands and campaigns.
 
   A single click on a brand will both:
 
     * expand the list to show all related campaigns in the left pane; this list also shows the number of experiences that exist for each campaign.
     * open the brand overview in the right pane.
 
-* **In the right pane**:  
+* **In the right pane**:
 
-  Icons are shown for each brand (historical campaigns will not be shown).  
+  Icons are shown for each brand (historical campaigns will not be shown).
 
   You can double-click on these to open the brand overview.
 
@@ -137,8 +137,8 @@ To access existing campaigns, in the MCM click **Campaigns**.
 
 From here you can:
 
-* See the number of campaigns and experiences (number shown in the left pane) that exist for this brand.  
-* Create a **New...** campaign for this brand.  
+* See the number of campaigns and experiences (number shown in the left pane) that exist for this brand.
+* Create a **New...** campaign for this brand.
 
 * Change the timespan being viewed; select **Week**, **Month** or **Quarter**, use the arrows to select specific periods or return to **Today**.
 
@@ -165,8 +165,8 @@ For the individual campaigns there are two views available:
 
    From here you can:
 
-    * Change the timespan you are viewing by using the arrows, or return to **Today**. 
-    * Use **Add Touchpoint...** to add a new touchpoint for an existing experience. 
+    * Change the timespan you are viewing by using the arrows, or return to **Today**.
+    * Use **Add Touchpoint...** to add a new touchpoint for an existing experience.
     * Click on a teaser (in the right pane) to set the **On Time** and **Off Time**.
 
 1. **List View**
@@ -184,11 +184,11 @@ For the individual campaigns there are two views available:
     * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
     * **Edit** the details of a specific teaser page or newsletter (a double-click can also be used).
     * Define the **Properties...** for a specific teaser page or newsletter.
-    * **Simulate** the look and feel of an experience (teaser page or newsletter).  
+    * **Simulate** the look and feel of an experience (teaser page or newsletter).
 
-      When the simulated page is open you can then open the sidekick to switch into edit mode for that page.  
-    
-    * **Analyze...** the impressions generated for a page.  
+      When the simulated page is open you can then open the sidekick to switch into edit mode for that page.
+
+    * **Analyze...** the impressions generated for a page.
     * **Delete** items when they are no longer needed.
     * **Search** for your text (the Title field of the experience will be searched).
     * Use **Advanced** search to apply filters to the search.

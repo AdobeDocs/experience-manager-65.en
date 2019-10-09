@@ -5,7 +5,7 @@ description: This glossary lists (alphabetically) details of all Deliverable doc
 seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
 uuid: 7c9bf673-ed94-47a4-8e02-0c0d4d66000f
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: a063d1ba-712a-49e1-8844-75bfa6e98977
@@ -90,7 +90,7 @@ The [application architecture](/help/managing/best-practices.md#development-prep
 
 It is focused on:
 
-* How they will interact with each other and with users.  
+* How they will interact with each other and with users.
 * The data to be consumed and produced by applications, rather than their internal structure.
 
 ## Application Specific Maintenance Tasks Defined {#application-specific-maintenance-tasks-defined}
@@ -101,8 +101,8 @@ Apart from standard Adobe Experience Manager (AEM) maintenance tasks, you need t
 
 Ensure that your team is made up of staff with the appropriate training. For project teams the recommendation is to have all of the following:
 
-* at least one AEM certified Lead Developer  
-* at least one AEM certified Architect  
+* at least one AEM certified Lead Developer
+* at least one AEM certified Architect
 * at least 75% of your developers AEM certified;
 
   this allows the certified developers to mentor junior developers and ensures knowledge sharing and transparency

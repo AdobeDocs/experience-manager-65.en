@@ -5,7 +5,7 @@ description: A Template is used to create a Page and defines which components ca
 seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
 uuid: 86a8ecf8-e0c5-422e-9227-7a24bb5774e3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
@@ -28,69 +28,69 @@ Each Template will present you with a selection of components available for use.
 
 A template is a node of type cq:Template and has the following properties and child nodes:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Name <br /> </strong></td> 
-   <td><strong>Type <br /> </strong></td> 
-   <td><strong>Description <br /> </strong></td> 
-  </tr> 
-  <tr> 
-   <td>. <br /> </td> 
-   <td> cq:Template</td> 
-   <td>Current template. A template is of node type cq:Template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> allowedChildren </td> 
-   <td> String[]</td> 
-   <td>Path of a template that is allowed to be a child of this template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> allowedParents</td> 
-   <td> String[]</td> 
-   <td>Path of a template that is allowed to be a parent of this template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> allowedPaths</td> 
-   <td> String[]</td> 
-   <td>Path of a page that is allowed to be based on this template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> jcr:created</td> 
-   <td> Date</td> 
-   <td>Date of creation of the template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> jcr:description</td> 
-   <td> String</td> 
-   <td>Description of the template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> jcr:title</td> 
-   <td> String</td> 
-   <td>Title of the template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> ranking</td> 
-   <td> Long</td> 
-   <td>Rank of the template. Used to display the template in the User Interface.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> jcr:content</td> 
-   <td> cq:PageContent</td> 
-   <td>Node containing the content of the template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> thumbnail.png</td> 
-   <td> nt:file</td> 
-   <td>Thumbnail of the template.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> icon.png</td> 
-   <td> nt:file</td> 
-   <td>Icon of the template.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Name <br /> </strong></td>
+   <td><strong>Type <br /> </strong></td>
+   <td><strong>Description <br /> </strong></td>
+  </tr>
+  <tr>
+   <td>. <br /> </td>
+   <td> cq:Template</td>
+   <td>Current template. A template is of node type cq:Template.<br /> </td>
+  </tr>
+  <tr>
+   <td> allowedChildren </td>
+   <td> String[]</td>
+   <td>Path of a template that is allowed to be a child of this template.<br /> </td>
+  </tr>
+  <tr>
+   <td> allowedParents</td>
+   <td> String[]</td>
+   <td>Path of a template that is allowed to be a parent of this template.<br /> </td>
+  </tr>
+  <tr>
+   <td> allowedPaths</td>
+   <td> String[]</td>
+   <td>Path of a page that is allowed to be based on this template.<br /> </td>
+  </tr>
+  <tr>
+   <td> jcr:created</td>
+   <td> Date</td>
+   <td>Date of creation of the template.<br /> </td>
+  </tr>
+  <tr>
+   <td> jcr:description</td>
+   <td> String</td>
+   <td>Description of the template.<br /> </td>
+  </tr>
+  <tr>
+   <td> jcr:title</td>
+   <td> String</td>
+   <td>Title of the template.<br /> </td>
+  </tr>
+  <tr>
+   <td> ranking</td>
+   <td> Long</td>
+   <td>Rank of the template. Used to display the template in the User Interface.<br /> </td>
+  </tr>
+  <tr>
+   <td> jcr:content</td>
+   <td> cq:PageContent</td>
+   <td>Node containing the content of the template.<br /> </td>
+  </tr>
+  <tr>
+   <td> thumbnail.png</td>
+   <td> nt:file</td>
+   <td>Thumbnail of the template.<br /> </td>
+  </tr>
+  <tr>
+   <td> icon.png</td>
+   <td> nt:file</td>
+   <td>Icon of the template.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 A template is the basis of a page.
@@ -123,7 +123,7 @@ This node contains a jcr:content (cq:PageContent) node which be used as the basi
 
 This component is used to define the structure and design of the content when a new page is created.
 
-![screen_shot_2012-02-13at64137pm](assets/screen_shot_2012-02-13at64137pm.png) 
+![screen_shot_2012-02-13at64137pm](assets/screen_shot_2012-02-13at64137pm.png)
 
 ### The content produced by a Template {#the-content-produced-by-a-template}
 
@@ -150,7 +150,7 @@ To see a list of all templates in the repository, proceed as follows:
 
 1. In CRXDE Lite, open the **Tools** menu and click **Query**.
 
-1. In the Query tab  
+1. In the Query tab
 1. As **Type**, select **XPath**.
 1. In the **Query** input field, enter following string:
 
@@ -184,7 +184,7 @@ When rendering content based on a static template, AEM will attempt to apply the
 
 AEM determines the most relevant style for a content node in the following order:
 
-* If there is a design for the full and exact path of the content node (as when the design is defined in Design Mode), then use that design.  
+* If there is a design for the full and exact path of the content node (as when the design is defined in Design Mode), then use that design.
 * If there is a design for the content node of the parent, then use that design.
 * If there is a design for any node on the path of the content node, then use that design.
 
@@ -194,7 +194,7 @@ In the last two cases, if there is more than one applicable design, use the one 
 
 This is a graphical representation of the [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution) logic.
 
-![design_path_resolution](assets/design_path_resolution.png) 
+![design_path_resolution](assets/design_path_resolution.png)
 
 ### Example {#example}
 
@@ -204,61 +204,61 @@ Consider a simple content structure as follows, where a design could apply to an
 
 The following table describes how AEM will choose a design.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Finding Design For<br /> </strong></td> 
-   <td><strong>Designs Exist For<br /> </strong></td> 
-   <td><strong>Design Chosen<br /> </strong></td> 
-   <td><strong>Comment</strong></td> 
-  </tr> 
-  <tr> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Finding Design For<br /> </strong></td>
+   <td><strong>Designs Exist For<br /> </strong></td>
+   <td><strong>Design Chosen<br /> </strong></td>
+   <td><strong>Comment</strong></td>
+  </tr>
+  <tr>
    <td><code class="code">leaf
-      </code></td> 
-   <td><p><code>root</code></p> <p><code>branch</code></p> <p><code>leaf</code></p> </td> 
-   <td><code>leaf</code></td> 
-   <td>The most exact match is always taken.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>leaf</code></td> 
-   <td><p><code>root</code></p> <p><code>branch</code></p> </td> 
-   <td><code>branch</code></td> 
-   <td>Fall back to the closest match lower in the tree.</td> 
-  </tr> 
-  <tr> 
-   <td><code>leaf</code></td> 
-   <td><code>root</code></td> 
-   <td><code>root</code></td> 
-   <td>If all else fails, take what's remaining.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>branch</code></td> 
-   <td><code>branch</code></td> 
-   <td><code>branch</code></td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>branch</code></td> 
+      </code></td>
+   <td><p><code>root</code></p> <p><code>branch</code></p> <p><code>leaf</code></p> </td>
+   <td><code>leaf</code></td>
+   <td>The most exact match is always taken.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>leaf</code></td>
+   <td><p><code>root</code></p> <p><code>branch</code></p> </td>
+   <td><code>branch</code></td>
+   <td>Fall back to the closest match lower in the tree.</td>
+  </tr>
+  <tr>
+   <td><code>leaf</code></td>
+   <td><code>root</code></td>
+   <td><code>root</code></td>
+   <td>If all else fails, take what's remaining.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>branch</code></td>
+   <td><code>branch</code></td>
+   <td><code>branch</code></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>branch</code></td>
    <td><p><code>branch</code></p> <p><code class="code">leaf
-       </code></p> </td> 
-   <td><code>branch</code></td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>branch</code></td> 
+       </code></p> </td>
+   <td><code>branch</code></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>branch</code></td>
    <td><p><code>root</code></p> <p><code class="code">branch
-       </code></p> </td> 
-   <td><code>branch</code></td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><code>branch</code></td> 
+       </code></p> </td>
+   <td><code>branch</code></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>branch</code></td>
    <td><p><code>root</code></p> <p><code class="code">leaf
-       </code></p> </td> 
-   <td><code>root</code></td> 
-   <td><p>If there is not an exact match, take the one lower in the tree.</p> <p>The assumption is that this will always be applicable, but further up the tree can be too specific.<br /> </p> </td> 
-  </tr> 
- </tbody> 
+       </code></p> </td>
+   <td><code>root</code></td>
+   <td><p>If there is not an exact match, take the one lower in the tree.</p> <p>The assumption is that this will always be applicable, but further up the tree can be too specific.<br /> </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Developing Page Templates {#developing-page-templates}

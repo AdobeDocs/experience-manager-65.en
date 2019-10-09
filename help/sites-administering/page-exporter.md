@@ -5,7 +5,7 @@ description: Learn how to use the AEM Page Exporter.
 seo-description: Learn how to use the AEM Page Exporter.
 uuid: 2ca2b8f1-c723-4e6b-8c3d-f5886cd0d3f1
 contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
@@ -23,16 +23,16 @@ The following steps describe how to export a page, and assume that an export con
 
 To export a page:
 
-1. In your browser, open the page. For example:  
+1. In your browser, open the page. For example:
 1. `http://localhost:4502/content/geometrixx/en/products/triangle.html`
 1. Open the page properties dialog, select the **Advanced** tab and expand the **Export** field set.
 
 1. Click the magnifier icon and select a configuration template. Select the **geometrixx** template, as it is the default one for the Geometrixx site. Click **OK**.
 
 1. Click **OK** to close the page properties dialog.
-1. Request the page by replacing `html` with `export.zip` in the URL.  
+1. Request the page by replacing `html` with `export.zip` in the URL.
 
-1. Download the `<page-name>.export.zip` file to your file system.  
+1. Download the `<page-name>.export.zip` file to your file system.
 
 1. In your file system, unzip the file:
 
@@ -73,14 +73,14 @@ The following nodes can be used to build an export configuration template:
 
 * Is a mandatory node.
 * Is located below `/etc/contentsync/templates/<sitename>`.
-* Its name is `page`. 
+* Its name is `page`.
 * Its node type is `nt:unstructured`
 
 The `page` node has the following properties:
 
 * A `type` property set with the value `pages`.
 
-* It does not have a `path` property as the current page path is dynamically copied to the configuration.  
+* It does not have a `path` property as the current page path is dynamically copied to the configuration.
 
 * The other properties are described in the Overview of configuration types section of the Content Sync framework.
 
@@ -90,9 +90,9 @@ Please refer to the Content Sync page for a complete description of the `rewrite
 
 **design node** The design node is used to copy the design used for the exported page. It has the following characteristics:
 
-* Is optional.  
+* Is optional.
 * Is located below `/etc/contentsync/templates/<sitename>`.
-* Its name is `design`. 
+* Its name is `design`.
 * Its node type is `nt:unstructured`.
 
 The `design` node has the following properties:
@@ -103,9 +103,9 @@ The `design` node has the following properties:
 
 **generic node** A generic node is used to copy resources like clientlibs .js or .css files to the zip file. It has the following characteristics:
 
-* Is optional.  
+* Is optional.
 * Is located below `/etc/contentsync/templates/<sitename>`.
-* Does not have a specific name.  
+* Does not have a specific name.
 * Its node type is `nt:unstructured`.
 * Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.
 
@@ -139,5 +139,5 @@ The servlet that is bound to the `export` selector and the `zip` extension uses 
 
 ## Troubleshooting {#troubleshooting}
 
-If you experience a problem with the download of the zip file, you may delete the `/var/contentsync` node in the repository and send the export request again.  
+If you experience a problem with the download of the zip file, you may delete the `/var/contentsync` node in the repository and send the export request again.
 

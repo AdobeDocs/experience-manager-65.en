@@ -5,7 +5,7 @@ description: Learn how to use the Bulk Editor.
 seo-description: Learn how to use the Bulk Editor.
 uuid: 65158ea4-d0fb-4992-99c6-d4b4fa4c87d2
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
@@ -15,9 +15,9 @@ discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
 
 The Bulk Editor allows for very efficient editing when the visual page context is not needed as it lets you:
 
-* search for (and display) content from multiple pages; this is done using GQL (Google Query Language)  
+* search for (and display) content from multiple pages; this is done using GQL (Google Query Language)
 * edit this content directly in the bulk editor
-* save the changes (to the originating pages)  
+* save the changes (to the originating pages)
 * export this content to a tab-separated (.tsv) spreadsheet file
 
 >[!NOTE]
@@ -50,7 +50,7 @@ An example to illustrate such a use case is included in the Geometrixx web site:
 The bulk editor allows you to:
 
 * [search for content based on query parameters, to display specified properties of the results in columns, to edit this content and save the changes](#searching-and-editing-content)
-* [to export this content to a tab-separated spreadsheet](#exporting-content)  
+* [to export this content to a tab-separated spreadsheet](#exporting-content)
 
 * [to import content from a tab-separated spreadsheet](#importing-content)
 
@@ -62,33 +62,33 @@ To use the bulk editor to edit multiple items simultaneously:
 1. Double-click the **Bulk Editor** to open it.
 1. Enter your selection requirements:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Field</td> 
-   <td>Property</td> 
-  </tr> 
-  <tr> 
-   <td>Root Path</td> 
-   <td>Indicates the root path the bulk editor searches.<br /> For example, <code>/content/geometrixx/en</code>. The bulk editor searches over all child nodes.</td> 
-  </tr> 
-  <tr> 
-   <td>Query Parameters</td> 
-   <td>Using GQL parameters, enter the search string you want the bulk editor to look for in the repository; for example, <code>type:Page</code> looks for all pages in the root path, <code>text:professional</code> looks for all pages that have the word "professional" in them, and <code>"jcr:title":English</code> looks for all pages that have "English" as the title. You can only search for strings.</td> 
-  </tr> 
-  <tr> 
-   <td>Content Mode check box</td> 
-   <td>Select this check box to read properties within the <code>jcr:content</code> sub node of the search results if exists. Use for pages only. Property names are prefixed with <code>"jcr:content/"</code></td> 
-  </tr> 
-  <tr> 
-   <td>Properties/Columns</td> 
-   <td>Select the check boxes for the properties that you want the bulk editor to return. The properties you select are the column heads in the results pane. By default, the node path is displayed in the results.</td> 
-  </tr> 
-  <tr> 
-   <td>Custom Properties/Columns</td> 
-   <td>Enter any other properties that are not listed in the <strong>Properties/Columns</strong> field. These custom properties appear in the results pane. You can add multiple properties by using a comma to separate properties. <i>Note:</i> If you add a custom property that does not yet exist, AEM WCM displays an empty cell. When you modify the empty cell and save it, the property is added to the node. The newly created property must respect node type constraints and property namespaces.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Field</td>
+   <td>Property</td>
+  </tr>
+  <tr>
+   <td>Root Path</td>
+   <td>Indicates the root path the bulk editor searches.<br /> For example, <code>/content/geometrixx/en</code>. The bulk editor searches over all child nodes.</td>
+  </tr>
+  <tr>
+   <td>Query Parameters</td>
+   <td>Using GQL parameters, enter the search string you want the bulk editor to look for in the repository; for example, <code>type:Page</code> looks for all pages in the root path, <code>text:professional</code> looks for all pages that have the word "professional" in them, and <code>"jcr:title":English</code> looks for all pages that have "English" as the title. You can only search for strings.</td>
+  </tr>
+  <tr>
+   <td>Content Mode check box</td>
+   <td>Select this check box to read properties within the <code>jcr:content</code> sub node of the search results if exists. Use for pages only. Property names are prefixed with <code>"jcr:content/"</code></td>
+  </tr>
+  <tr>
+   <td>Properties/Columns</td>
+   <td>Select the check boxes for the properties that you want the bulk editor to return. The properties you select are the column heads in the results pane. By default, the node path is displayed in the results.</td>
+  </tr>
+  <tr>
+   <td>Custom Properties/Columns</td>
+   <td>Enter any other properties that are not listed in the <strong>Properties/Columns</strong> field. These custom properties appear in the results pane. You can add multiple properties by using a comma to separate properties. <i>Note:</i> If you add a custom property that does not yet exist, AEM WCM displays an empty cell. When you modify the empty cell and save it, the property is added to the node. The newly created property must respect node type constraints and property namespaces.</td>
+  </tr>
+ </tbody>
 </table>
 
    For example:
@@ -152,7 +152,7 @@ To import content:
 1. Add `?hib=false` to the URL, e.g.:
 
    `http://localhost:4502/etc/importers/bulkeditor.html?hib=false`
-   
+
 1. Click **Import**.
 1. Select the `.tsv` file. The data are imported into the repository.
 

@@ -5,7 +5,7 @@ description: Configure which interface you will use to work in AEM
 seo-description: Configure which interface you will use to work in AEM
 uuid: af956219-178e-477b-a0cd-dd2341ed2ff0
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
@@ -17,7 +17,7 @@ discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 
 The author environment allows for:
 
-* [Authoring](/help/sites-authoring/author.md) (including [page authoring](/help/sites-authoring/author-environment-tools.md), [managing assets](/help/assets/home.md), [communities](/help/communities/author-communities.md))  
+* [Authoring](/help/sites-authoring/author.md) (including [page authoring](/help/sites-authoring/author-environment-tools.md), [managing assets](/help/assets/home.md), [communities](/help/communities/author-communities.md))
 
 * [Administering](/help/sites-administering/home.md) tasks you need when generating and maintaining the content on your website
 
@@ -56,9 +56,9 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 There are various locations where you can define which UI is to be used:
 
-* [Configuring the default UI for your instance](#configuring-the-default-ui-for-your-instance) - This will set the default UI to be shown at user login, although the user may be able to override this and select a different UI for their account or current session.  
+* [Configuring the default UI for your instance](#configuring-the-default-ui-for-your-instance) - This will set the default UI to be shown at user login, although the user may be able to override this and select a different UI for their account or current session.
 
-* [Setting Classic UI Authoring for your account](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) - This will set the UI to be used as default when editing pages, although the user can override this and select a different UI for their account or current session.  
+* [Setting Classic UI Authoring for your account](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) - This will set the UI to be used as default when editing pages, although the user can override this and select a different UI for their account or current session.
 
 * [Switching to classic UI for the current session](#switching-to-classic-ui-for-the-current-session) - This switches to the classic UI for the current session.
 
@@ -138,11 +138,11 @@ The settings defined by a user or system administrator can be overriden by the s
 
 * When authoring pages:
 
-    * Use of the classic editor is forced when accessing the page using `cf#` in the URL. For example: 
+    * Use of the classic editor is forced when accessing the page using `cf#` in the URL. For example:
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-    * Use of the touch-enabled editor is forced when using `/editor.html` in the URL or when using a touch device. For example: 
+    * Use of the touch-enabled editor is forced when using `/editor.html` in the URL or when using a touch device. For example:
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
@@ -153,7 +153,7 @@ The settings defined by a user or system administrator can be overriden by the s
 * When opening pages through `siteadmin`, checks will be made for the existence of:
 
     * The cookie
-    * A user preference 
+    * A user preference
     * If neither exist, it will default to the definitions set in the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service).
 
 >[!NOTE]
@@ -165,6 +165,6 @@ The settings defined by a user or system administrator can be overriden by the s
 >Due to the use of cookies, as already described, it is not recommended to either:
 >
 >* Manually edit the URL - A non-standard URL could result in an unknown situation and lack of functionality.
->* Have both editors open at the same time - For example, in separate windows.  
+>* Have both editors open at the same time - For example, in separate windows.
 >
 

@@ -5,7 +5,7 @@ description: When you create a custom table in Adobe Campaign, you may want to b
 seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
 uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
@@ -79,7 +79,7 @@ In **Administration/Campaign Managemen**t, go to **Target Mappings** and add a n
 >
 >Make sure you use a meaningful name for **Internal name**.
 
-![chlimage_1-195](assets/chlimage_1-195.png) 
+![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### Creating a Custom Delivery Template {#creating-a-custom-delivery-template}
 
@@ -87,7 +87,7 @@ In this step, you are adding a delivery template that uses the created **Target 
 
 In **Resources/Templates**, navigate to the Delivery Template and duplicate the existing AEM delivery. When you click **To**, select the create event **Target mapping**.
 
-![chlimage_1-196](assets/chlimage_1-196.png) 
+![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Building the Form in AEM {#building-the-form-in-aem}
 
@@ -107,13 +107,13 @@ In CRXDE-lite, go the **jcr:content** (of the page) node and change the **acMapp
 
 In the configuration of the form, make sure you check the checkbox to create if non existing
 
-![chlimage_1-199](assets/chlimage_1-199.png) 
+![chlimage_1-199](assets/chlimage_1-199.png)
 
 ### Submitting the Form {#submitting-the-form}
 
 You can now submit the form and validate on the Adobe Campaign side whether the values are saved.
 
-![chlimage_1-200](assets/chlimage_1-200.png) 
+![chlimage_1-200](assets/chlimage_1-200.png)
 
 ## Troubleshooting {#troubleshooting}
 

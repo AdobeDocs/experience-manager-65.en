@@ -6,7 +6,7 @@ seo-description: Follow this page to get information for AEM Screens Feature Pac
 uuid: 48240e27-e4c2-48bc-bcca-2a2ec93edc47
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: release-notes
 discoiquuid: 2a049c2c-26ee-498d-a505-a2967be7cbcd
 ---
@@ -21,14 +21,14 @@ The Release Date for AEM Screens Feature Pack 201809 is October 01, 2018.
 
 ### What's New {#what-s-new}
 
-* **Adobe Analytics Proof of Play Reporting**: Please refer to [Adobe Analytics Integration with AEM Screens](/help/screens/adobe-analytics-integration-aem-screens.md) to learn more.  
+* **Adobe Analytics Proof of Play Reporting**: Please refer to [Adobe Analytics Integration with AEM Screens](/help/screens/adobe-analytics-integration-aem-screens.md) to learn more.
 
-* **Adobe Analytics Enable Players to cache and send playback events to Adobe Analytics**: Please refer to [Configuring Adobe Analytics with AEM Screens](/help/screens/configuring-adobe-analytics-aem-screens.md) to learn more.  
+* **Adobe Analytics Enable Players to cache and send playback events to Adobe Analytics**: Please refer to [Configuring Adobe Analytics with AEM Screens](/help/screens/configuring-adobe-analytics-aem-screens.md) to learn more.
 
-* **Bulk Update Offline Content**: Allows you to update all the channel in bulk and avoids the hassle of navigating to a particular channel and update the content. Please refer to [Bulk Offline Update](/help/screens/bulk-offline-update.md) to learn more.  
+* **Bulk Update Offline Content**: Allows you to update all the channel in bulk and avoids the hassle of navigating to a particular channel and update the content. Please refer to [Bulk Offline Update](/help/screens/bulk-offline-update.md) to learn more.
 
 * **Bulk publish channels to publish instances**
-* **Enhanced Player Logging Mechanism**: You can specify the number of maximum log files for an AEM Screens player. Please refer to [Working with an AEM Screens Player](/help/screens/working-with-screens-player.md) for more details.  
+* **Enhanced Player Logging Mechanism**: You can specify the number of maximum log files for an AEM Screens player. Please refer to [Working with an AEM Screens Player](/help/screens/working-with-screens-player.md) for more details.
 
 * **Author / Publish deployment (Hardening)**
 

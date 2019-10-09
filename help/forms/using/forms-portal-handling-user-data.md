@@ -6,7 +6,7 @@ seo-description: null
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 ---
 
@@ -20,7 +20,7 @@ When a logged-in user saves an adaptive form as draft or submits it, they are di
 
 Forms portal stores data for draft and submitted forms in following scenarios:
 
-* The submit action configured in the adaptive form is **Forms Portal Submit Action**. 
+* The submit action configured in the adaptive form is **Forms Portal Submit Action**.
 * For submit actions other than **Forms Portal Submit Action**, the **[!UICONTROL Store data in forms portal]** option is enabled in the **Submission** properties of the adaptive form container.
 
 For every draft and submitted form for logged-in and anonymous users, forms portal stores the following data:
@@ -31,29 +31,29 @@ For every draft and submitted form for logged-in and anonymous users, forms port
 
 Depending on the configured data store persistence, drafts and submitted forms data is stored at the following locations.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Persistence type</strong></p> </td> 
-   <td><p><strong>Data store</strong></p> </td> 
-   <td><p><strong>Location</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Default</p> </td> 
-   <td><p>AEM repository of author and publish instances</p> </td> 
-   <td><p><code>/content/forms/fp/</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Remote</p> </td> 
-   <td><p>AEM repository of author and remote AEM instances</p> </td> 
-   <td><p><code>/content/forms/fp/</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Database</p> </td> 
-   <td><p>AEM repository of author instance and database tables</p> </td> 
-   <td>Database tables <code>data</code>, <code>metadata</code>, and <code>additionalmetadata</code></td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Persistence type</strong></p> </td>
+   <td><p><strong>Data store</strong></p> </td>
+   <td><p><strong>Location</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Default</p> </td>
+   <td><p>AEM repository of author and publish instances</p> </td>
+   <td><p><code>/content/forms/fp/</code></p> </td>
+  </tr>
+  <tr>
+   <td><p>Remote</p> </td>
+   <td><p>AEM repository of author and remote AEM instances</p> </td>
+   <td><p><code>/content/forms/fp/</code></p> </td>
+  </tr>
+  <tr>
+   <td><p>Database</p> </td>
+   <td><p>AEM repository of author instance and database tables</p> </td>
+   <td>Database tables <code>data</code>, <code>metadata</code>, and <code>additionalmetadata</code></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Access and delete user data {#access-and-delete-user-data}

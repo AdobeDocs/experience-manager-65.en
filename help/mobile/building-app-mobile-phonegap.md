@@ -1,12 +1,12 @@
 ---
 title: Building Mobile Applications
 seo-title: Building Mobile Applications
-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build. 
-seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build. 
+description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
+seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 ---
@@ -25,7 +25,7 @@ A complete step-by-step article on how to build a mobile application using code 
 
 Move application files to the publish instance so that you can provide content updates to the installed instances of the mobile application, and to build the application using the published content. Applications consist of two node branches in the repository:
 
-* `/content/phonegap/apps/<application name>`: The web pages that authors create and activate. 
+* `/content/phonegap/apps/<application name>`: The web pages that authors create and activate.
 * `/content/phonegap/content/<application name>`: Application configuration files and Content Sync configurations.
 
 >[!NOTE]
@@ -43,7 +43,7 @@ For example, a mobile application named phonegapapp is created. The following no
 
 **Tip:** To move a package from the author instance to the publish instance, use the Replicate command on the package.
 
-![chlimage_1-16](assets/chlimage_1-16.png) 
+![chlimage_1-16](assets/chlimage_1-16.png)
 
 ## Building Using the PhoneGap Command Line Interface {#building-using-the-phonegap-command-line-interface}
 
@@ -89,7 +89,7 @@ To build using the PhoneGap CLI, you need to install Node.js and the PhoneGap cl
 Move the content of your mobile application to your file system.
 
 1. On the Mobile Applications page, select your application.
-1. (Optional) To build the application for complete installations, on the toolbar, click or tap the Clear Cache icon. 
+1. (Optional) To build the application for complete installations, on the toolbar, click or tap the Clear Cache icon.
 
    ![](do-not-localize/chlimage_1.png)
 
@@ -128,7 +128,7 @@ Use the PhoneGap cloud service to build your app. To perform this procedure, you
 
 Create a PhoneGap Build configuration so that you can use the PhoneGap Build services from within AEM. Provide the user name and password of the PhoneGap Build account that you will use to build your mobile applications.
 
-1. Open the Tools page. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)). 
+1. Open the Tools page. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
 1. In the CQ Operations area, click Cloud Services.
 1. Click the Configure Now link for PhoneGap Build.
 
@@ -142,7 +142,7 @@ Create a PhoneGap Build configuration so that you can use the PhoneGap Build ser
 Send your application resources to PhoneGap Build for compiling for the various mobile platforms.
 
 1. On the Mobile Applications page, open your mobile application. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
-1. (Optional) To build the application for complete installations, select the application and click the Clear Cache icon. 
+1. (Optional) To build the application for complete installations, select the application and click the Clear Cache icon.
 
    ![](do-not-localize/chlimage_1-2.png)
 

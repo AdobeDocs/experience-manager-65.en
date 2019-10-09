@@ -5,7 +5,7 @@ description: Modify the script
 seo-description: Modify the script
 uuid: 6930381b-74c1-4e63-9621-621dbedbc25e
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
@@ -47,7 +47,7 @@ From the global navigation, select **[!UICONTROL Tools > Deployment > Replicatio
 
 For the Start Path enter `/apps/social/commons` and select **[!UICONTROL Activate]**.
 
-![chlimage_1-42](assets/chlimage_1-42.png) 
+![chlimage_1-42](assets/chlimage_1-42.png)
 
 ## View Results {#view-results}
 
@@ -55,5 +55,5 @@ If you login to the publish instance as an administrator, e.g., http://localhost
 
 If you logout and re-login as `aaron.mcdonald@mailinator.com/password` and refresh the page, you will observe that the posted comment no longer displays with an avatar, instead a simple 'xxx' is displayed.
 
-![chlimage_1-43](assets/chlimage_1-43.png) 
+![chlimage_1-43](assets/chlimage_1-43.png)
 

@@ -5,7 +5,7 @@ description: Learn how to use AEM with SAP Commerce Cloud.
 seo-description: Learn how to use AEM with SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
@@ -35,7 +35,7 @@ After installation you can configure your instance:
    [http://localhost:9001/hmc/hybris](http://localhost:9001/hmc/hybris)
 
 1. From the sidebar, select **System**, then **Facet search**, then **Facet Search Config**.
-1. **Open Editor** for the **Sample Solr Configuration for clothescatalog**.  
+1. **Open Editor** for the **Sample Solr Configuration for clothescatalog**.
 
 1. Under **Catalog versions** use **Add Catalog version** to add `outdoors-Staged` and `outdoors-Online` to the list.
 1. **Save** the configuration.
@@ -102,7 +102,7 @@ After installation you can configure your instance:
 
 The **Catalog version** ( `hybris.catalog.version`) that is imported can be configured for the OSGi service:
 
-**Day CQ Commerce Hybris Configuration** 
+**Day CQ Commerce Hybris Configuration**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
 **Catalog version** is usually set to either `Online` or `Staged` (the default).
@@ -158,7 +158,7 @@ Such a structure is created by the OSGi service `DefaultImportHandler` that impl
 
 The structure to be generated when importing can be configured for:
 
-``**Day CQ Commerce Hybris Default Import Handler** 
+``**Day CQ Commerce Hybris Default Import Handler**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
 When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
@@ -169,7 +169,7 @@ The response parser can be configured to define the properties and attributes to
 
 1. Configure the OSGi bundle:
 
-   **Day CQ Commerce Hybris Default Response Parser** 
+   **Day CQ Commerce Hybris Default Response Parser**
    (`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
 
    Here you can define various options and attributes needed for loading and mapping.
@@ -213,7 +213,7 @@ The following properties indicate the link with hybris:
        For example:
 
        [`http://localhost:4502/crx/de/index.jsp#/etc/commerce/products`](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
-  
+
     1. Delete the node that holds your product data; for example, `outdoors`.
     1. **Save All** to persist the change.
 
@@ -247,11 +247,11 @@ The following properties indicate the link with hybris:
 
    `/etc/commerce/products`
 
-   You can open this in CRXDE Lite; for example: 
+   You can open this in CRXDE Lite; for example:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. In hybris, update the information held on the revelant product(s).  
+1. In hybris, update the information held on the revelant product(s).
 
 1. Open the hybris importer in AEM:
 
@@ -283,7 +283,7 @@ The import process can take a long time, so as an extension to the Product Synch
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. In hybris, update the information held on the revelant product(s).  
+1. In hybris, update the information held on the revelant product(s).
 
 1. In hybris, add the product(s) to the Express Queue; for example:
 
@@ -314,7 +314,7 @@ The hybris catalog can be imported into AEM, using the batch importer for hybris
 
 The parameters used by the importer can be configured for:
 
-**Day CQ Commerce Hybris Catalog Importer** 
+**Day CQ Commerce Hybris Catalog Importer**
 ( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
 When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
@@ -325,19 +325,19 @@ The hybris package comes with a catalog importer for setting up the initial page
 
 This is available from:
 
-`http://localhost:4502/etc/importers/hybris.html` 
+`http://localhost:4502/etc/importers/hybris.html`
 
 ![ecommerceimportconsole](assets/ecommerceimportconsole.png)
 
 The following information has to be provided:
 
-* **Base store** 
+* **Base store**
   The identifier of the base store configured in hybris.
 
-* **Catalog** 
+* **Catalog**
   The identifier of the catalog to import.
 
-* **Root path** 
+* **Root path**
   The path where the catalog should be imported into.
 
 ## Removing a Product from the Catalog {#removing-a-product-from-the-catalog}
@@ -357,7 +357,7 @@ To remove one, or more, products from the catalog:
 
 1. Initialize the importer by performing two incremental updates (see [Catalog Import](#catalog-import)):
 
-    * The first time run result in a set of changed products - indicated in the log list. 
+    * The first time run result in a set of changed products - indicated in the log list.
     * For the second time no products should be updated.
 
    >[!NOTE]
@@ -384,24 +384,24 @@ To remove one, or more, products from the catalog:
 
    For example:
 
-    * Open: 
+    * Open:
 
       [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
-  
+
     * Rollout the `Hybris Base` catalog
-    * Open: 
+    * Open:
 
       [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
-  
+
     * The `Cajamara` product will have been removed from the `Bike` category
 
 1. To re-instate the product:
 
-    1. In hybris, set the approval status back to **approved** 
+    1. In hybris, set the approval status back to **approved**
     1. In AEM:
 
         1. perform an incremental update
-        1. rollout the appropriate catalog again 
+        1. rollout the appropriate catalog again
         1. refresh the appropriate category page
 
 ## Add Order History Trait to the Client Context {#add-order-history-trait-to-the-client-context}
@@ -410,7 +410,7 @@ To add order history to the [client context](/help/sites-developing/client-conte
 
 1. Open the [client context design page](/help/sites-administering/client-context.md), by either:
 
-    * Open a page for editing, then open the client context using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac). Use the pencil icon in the top left corner of the client context to **Open the ClientContext design page**. 
+    * Open a page for editing, then open the client context using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac). Use the pencil icon in the top left corner of the client context to **Open the ClientContext design page**.
     * Navigate directly to [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
 1. [Add the **Order History** component](/help/sites-administering/client-context.md#adding-a-property-component) to the **Shopping Car**t component of the client context.
@@ -423,12 +423,12 @@ To add order history to the [client context](/help/sites-developing/client-conte
     1. Add another item to the cart.
     1. Navigate to the checkout page:
 
-        * The client context shows a summary of the order history. 
+        * The client context shows a summary of the order history.
         * The message "You're a returning customer" is shown.
 
    >[!NOTE]
    >
-   >The message is realized by: 
+   >The message is realized by:
    >
    >* Navigate to [http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html](http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html)
    >

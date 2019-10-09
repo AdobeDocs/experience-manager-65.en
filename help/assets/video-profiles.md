@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media video profiles
 seo-title: Dynamic Media video profiles
-description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. 
-seo-description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. 
+description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible.
+seo-description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible.
 uuid: cfb498f8-44a0-4d94-99b0-fed7c27f575b
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: b893f366-279a-4872-9413-77626d3387ea
@@ -18,18 +18,18 @@ Dynamic Media already comes with a predefined Adaptive Video Encoding profile. T
 The following are other factors that determine the quality of your videos:
 
 * **Resolution of the uploaded master video**
-  
+
   If the MP4 video was recorded at a lower resolution, such as 240p or 360p, it cannot be streamed in high definition.
-  
-* **Video player size**  
-  
+
+* **Video player size**
+
   By default, the **[!UICONTROL Width]** in the Adaptive Video Encoding profile is set to **[!UICONTROL Auto]**. Again, during playback, the best quaility is used based on the size of the player.
 
 See also [Best Practices for Video Encoding](video.md#best-practices-for-encoding-videos).
 
 >[!NOTE]
 >
->To generate a video's metadata and associated video image thumbnails, the video itself needs to go through the encoding process in Dynamic Media. In AEM, the **[!UICONTROL Dynamic Media Encode Video]** workflow encodes video if you have enabled dynamic media and set up video cloud services. This workflow captures workflow process history and failure information. 
+>To generate a video's metadata and associated video image thumbnails, the video itself needs to go through the encoding process in Dynamic Media. In AEM, the **[!UICONTROL Dynamic Media Encode Video]** workflow encodes video if you have enabled dynamic media and set up video cloud services. This workflow captures workflow process history and failure information.
 >
 >See [Monitoring video encoding and YouTube publishing progress](video.md#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using dynamic media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 >
@@ -43,49 +43,49 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 The following table identifies best practice encoding profiles for adaptive video streaming to mobile and tablet devices, and desktop computers. You can use these presets for any aspect ratio video.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Video Format Codec</strong></td> 
-   <td><strong>Video Size- Width (px)</strong></td> 
-   <td><strong>Video Size- Height (px)</strong></td> 
-   <td><strong>Keep Aspect Ratio?</strong></td> 
-   <td><strong>Video Bitrate (Kbps)</strong></td> 
-   <td><strong>Video Frame Rate (Fps)</strong></td> 
-   <td><strong>Audio Codec</strong></td> 
-   <td><strong>Audio Bitrate (Kbps)</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p>MP4 H.264 (mp4)</p> </td> 
-   <td>auto</td> 
-   <td>360</td> 
-   <td>Yes</td> 
-   <td>730</td> 
-   <td>30</td> 
-   <td>Dolby HE-AAC</td> 
-   <td>128</td> 
-  </tr> 
-  <tr> 
-   <td><p>MP4 H.264 (mp4)</p> </td> 
-   <td>auto</td> 
-   <td>540</td> 
-   <td>Yes</td> 
-   <td>2000<br /> </td> 
-   <td>30</td> 
-   <td>Dolby HE-AAC</td> 
-   <td>128</td> 
-  </tr> 
-  <tr> 
-   <td><p>MP4 H.264 (mp4)</p> </td> 
-   <td>auto</td> 
-   <td>720<br /> </td> 
-   <td>Yes</td> 
-   <td>3000<br /> </td> 
-   <td>30</td> 
-   <td>Dolby HE-AAC</td> 
-   <td>128</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Video Format Codec</strong></td>
+   <td><strong>Video Size- Width (px)</strong></td>
+   <td><strong>Video Size- Height (px)</strong></td>
+   <td><strong>Keep Aspect Ratio?</strong></td>
+   <td><strong>Video Bitrate (Kbps)</strong></td>
+   <td><strong>Video Frame Rate (Fps)</strong></td>
+   <td><strong>Audio Codec</strong></td>
+   <td><strong>Audio Bitrate (Kbps)</strong></td>
+  </tr>
+  <tr>
+   <td><p>MP4 H.264 (mp4)</p> </td>
+   <td>auto</td>
+   <td>360</td>
+   <td>Yes</td>
+   <td>730</td>
+   <td>30</td>
+   <td>Dolby HE-AAC</td>
+   <td>128</td>
+  </tr>
+  <tr>
+   <td><p>MP4 H.264 (mp4)</p> </td>
+   <td>auto</td>
+   <td>540</td>
+   <td>Yes</td>
+   <td>2000<br /> </td>
+   <td>30</td>
+   <td>Dolby HE-AAC</td>
+   <td>128</td>
+  </tr>
+  <tr>
+   <td><p>MP4 H.264 (mp4)</p> </td>
+   <td>auto</td>
+   <td>720<br /> </td>
+   <td>Yes</td>
+   <td>3000<br /> </td>
+   <td>30</td>
+   <td>Dolby HE-AAC</td>
+   <td>128</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Creating a Dynamic Media video encoding profile for adaptive streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
@@ -120,12 +120,12 @@ When you are done creating the video profile, you apply it to a folder or multip
 **To create a Dynamic Media video encoding profile for adaptive streaming**:
 
 1. Tap or click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Video Profiles]**.
-1. Tap **[!UICONTROL Create]** to add a new video profile.  
+1. Tap **[!UICONTROL Create]** to add a new video profile.
 
 1. Enter a name and description for the profile.
 1. Ensure that **[!UICONTROL Encode for adaptive streaming]** is checked (default).
 1. Tap **[!UICONTROL Add Video Encoding Preset]**.
-1. On the **[!UICONTROL Basic]** tab, set the video and audio options.  
+1. On the **[!UICONTROL Basic]** tab, set the video and audio options.
 
    Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 
@@ -141,7 +141,7 @@ When you are done creating the video profile, you apply it to a folder or multip
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the preset.
 1. Do one of the following:
 
-    * Repeat steps 5-10 to create additional encoding presets. (Adaptive video streaming requires more than one video preset.) 
+    * Repeat steps 5-10 to create additional encoding presets. (Adaptive video streaming requires more than one video preset.)
     * In the upper-right corner of the page, tap **[!UICONTROL Save]** again to save the profile.
 
 ## Monitoring the Progress of an encoding job {#monitoring-the-progress-of-an-encoding-job}
@@ -174,7 +174,7 @@ When you are done creating the video profile, you apply it to a folder or multip
 1. Enter a name and description for the profile.
 1. Clear the **[!UICONTROL Encode for adaptive streaming]** check box.
 1. Tap **[!UICONTROL Add Video Encoding Preset]**.
-1. On the **[!UICONTROL Basic]** tab, set the video and audio options. 
+1. On the **[!UICONTROL Basic]** tab, set the video and audio options.
 
    Tap the **[!UICONTROL Information]** icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 
@@ -208,45 +208,45 @@ You can edit an existing video encoding profile to take advantage of advanced vi
 
    The following advanced parameters are available to use:
 
-   <table> 
-    <tbody> 
-    <tr> 
-    <td><strong>Name</strong></td> 
-    <td><strong>Description</strong><br /> </td> 
-    <td><strong>Type</strong><br /> </td> 
-    <td><strong>Value</strong></td> 
-    </tr> 
-    <tr> 
-    <td><code>h264Level</code></td> 
-    <td>H.264 level to use for encoding. Normally this is automatically determined based on the encoding settings you are using.</td> 
-    <td><code>String</code></td> 
-    <td><p>10 * h264 level</p> <p>For example, 3.0 = 30, 1.3 = 13)</p> <p>No default value.</p> </td> 
-    </tr> 
-    <tr> 
-    <td><code>keyframe</code></td> 
-    <td>The target number of frames between keyframes. Calculate this value to generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval should be 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and may also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td> 
-    <td><code>String</code></td> 
-    <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS (HTTP Live Streaming) is 60-90.</p> </td> 
-    </tr> 
-    <tr> 
-    <td><code>minBitrate</code></td> 
-    <td><p>Minimum bitrate to allow for variable bitrate encodings, in Kbps (kilobits per second).</p> <p>This parameter only applies when<strong> Use Constant Bitrate</strong> is deselected in the Advanced tab when you create or edit a video encoding profile.</p> <p>See also <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td> 
-    <td><code>String</code></td> 
-    <td><p>Positive number, in Kbps.</p> <p>No default value.</p> </td> 
-    </tr> 
-    <tr> 
-    <td><code>maxBitrate</code></td> 
-    <td><p>Maximum bitrate to allow for variable bitrate encodings, in Kbps.</p> <p>This parameter only applies when<strong> Use Constant Bitrate</strong> is deselected in the Advanced tab when you create or edit a video encoding profile.</p> <p>See also <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td> 
-    <td><code>String</code></td> 
-    <td><p>Positive number, in Kbps.</p> <p>No default value. However, the recommended value is up to two times of the encoding bitrate.</p> </td> 
-    </tr> 
-    <tr> 
-    <td><code>audioBitrateCustom</code></td> 
-    <td>Set value to <code>true</code> to force a constant bitrate for the audio stream, if supported by audio codec.</td> 
-    <td><code>String</code></td> 
-    <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS (HTTP Live Streaming) is <code>false</code>.</p> <p> </p> </td> 
-    </tr> 
-    </tbody> 
+   <table>
+    <tbody>
+    <tr>
+    <td><strong>Name</strong></td>
+    <td><strong>Description</strong><br /> </td>
+    <td><strong>Type</strong><br /> </td>
+    <td><strong>Value</strong></td>
+    </tr>
+    <tr>
+    <td><code>h264Level</code></td>
+    <td>H.264 level to use for encoding. Normally this is automatically determined based on the encoding settings you are using.</td>
+    <td><code>String</code></td>
+    <td><p>10 * h264 level</p> <p>For example, 3.0 = 30, 1.3 = 13)</p> <p>No default value.</p> </td>
+    </tr>
+    <tr>
+    <td><code>keyframe</code></td>
+    <td>The target number of frames between keyframes. Calculate this value to generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval should be 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and may also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td>
+    <td><code>String</code></td>
+    <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS (HTTP Live Streaming) is 60-90.</p> </td>
+    </tr>
+    <tr>
+    <td><code>minBitrate</code></td>
+    <td><p>Minimum bitrate to allow for variable bitrate encodings, in Kbps (kilobits per second).</p> <p>This parameter only applies when<strong> Use Constant Bitrate</strong> is deselected in the Advanced tab when you create or edit a video encoding profile.</p> <p>See also <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+    <td><code>String</code></td>
+    <td><p>Positive number, in Kbps.</p> <p>No default value.</p> </td>
+    </tr>
+    <tr>
+    <td><code>maxBitrate</code></td>
+    <td><p>Maximum bitrate to allow for variable bitrate encodings, in Kbps.</p> <p>This parameter only applies when<strong> Use Constant Bitrate</strong> is deselected in the Advanced tab when you create or edit a video encoding profile.</p> <p>See also <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+    <td><code>String</code></td>
+    <td><p>Positive number, in Kbps.</p> <p>No default value. However, the recommended value is up to two times of the encoding bitrate.</p> </td>
+    </tr>
+    <tr>
+    <td><code>audioBitrateCustom</code></td>
+    <td>Set value to <code>true</code> to force a constant bitrate for the audio stream, if supported by audio codec.</td>
+    <td><code>String</code></td>
+    <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS (HTTP Live Streaming) is <code>false</code>.</p> <p> </p> </td>
+    </tr>
+    </tbody>
    </table>
 
    ![chlimage_1-516](assets/chlimage_1-516.png)
@@ -275,10 +275,10 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. On the **[!UICONTROL Video Profiles]** page, check one video profile name.
 1. On the toolbar, tap **[!UICONTROL Edit]**.
 1. On the **[!UICONTROL Video Encoding Profile]** page, edit the name and description, as desired.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected.  
+1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected.
 
    Tap the information icon for a description of adaptive streaming. (If you are editing a progressive video profile, do not select this check box.)
-   
+
 1. Under the **[!UICONTROL Video Encoding Presets]** heading, add, edit, or delete video encoding presets that make up the profile.
 
    Tap the **[!UICONTROL Information]** icon next to each option on the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs for additional descriptions or recommended settings based on the selected video format codec.
@@ -291,8 +291,8 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. On the **[!UICONTROL Video Profiles]** page, check one video profile name.
 1. On the toolbar, tap **[!UICONTROL Copy]**.
 1. On the **[!UICONTROL Video Encoding Profile]** page, enter a new name for the profile.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. Tap the information icon for a description of adaptive streaming. (If you are copying a progressive video profile, do not select the check box.)  
-  
+1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. Tap the information icon for a description of adaptive streaming. (If you are copying a progressive video profile, do not select the check box.)
+
    In Dynamic Media - Hybrid mode, if a WebM video preset is part of the video profile, then **[!UICONTROL Encode for adaptive streaming]** is not possible because all presets must be MP4.
 1. Under the **[!UICONTROL Video Encoding Presets]** heading, add, edit, or delete video encoding presets that make up the profile.
 
@@ -347,7 +347,7 @@ In addition to applying a profile to a folder, you can also apply one globally s
 
 1. Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`.
 1. Add the property **[!UICONTROL videoProfile]**: `/etc/dam/video/dynamicmedia/<name_of_video_encoding_profile>`
-1. Tap **[!UICONTROL Save All]**. 
+1. Tap **[!UICONTROL Save All]**.
 
   ![chlimage_1-519](assets/chlimage_1-519.png)
 

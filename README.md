@@ -1,6 +1,6 @@
 # AEM 6.4 Documentation
 
-This is the repository for Adobe Experience Manager 6.4 documentation. This documentation covers the installation, administering, authoring use, and how to customize AEM.
+This is the repository for Adobe Experience Manager 6.5 documentation. This documentation covers the installation, administering, authoring use, and how to customize AEM.
 
 Your contributions to the documentation are welcome. Please see the following resources:
 

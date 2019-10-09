@@ -5,7 +5,7 @@ description: Contribution limits feature lets you limit the contributions to pro
 seo-description: Contribution limits feature lets you limit the contributions to protect against spam
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
@@ -44,37 +44,37 @@ To reach this OSGi configuration:
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-* **[!UICONTROL Automatically Apply UGC Contribution Limits]** 
+* **[!UICONTROL Automatically Apply UGC Contribution Limits]**
 
-  If checked, automatically set contribution limits on users when they register as community members. This is reflected in the community member's profile and may be enabled/disabled from the [members console](members.md). New members with an email address from a white listed domain are never constrained. 
+  If checked, automatically set contribution limits on users when they register as community members. This is reflected in the community member's profile and may be enabled/disabled from the [members console](members.md). New members with an email address from a white listed domain are never constrained.
 
   Default is unchecked.
 
-* **[!UICONTROL UGC Limit]** 
+* **[!UICONTROL UGC Limit]**
 
   Maximum number of contributions.
 
   Default is 10 posts.
 
-* **[!UICONTROL UGC Limit Frequency]** 
+* **[!UICONTROL UGC Limit Frequency]**
 
-  The time period constraining the UGC limit.  
+  The time period constraining the UGC limit.
 
   Default is 60 minutes.
 
-* **[!UICONTROL Domains]** 
+* **[!UICONTROL Domains]**
 
-  A white list of one or more email domains. Select the + icon to make addtional entries. 
+  A white list of one or more email domains. Select the + icon to make addtional entries.
 
   Users with email addresses in the white listed domains are not affected when UGC contribution limits are automatically applied. For example, if domain `mycompany.com` is added to the list of domains, then a member with email address `me@mycompany.com` is never restricted from posting.
 
   Default is an empty white list.
 
-* **[!UICONTROL Messaging Recipients]** 
+* **[!UICONTROL Messaging Recipients]**
 
-  List of one or more authorizable IDs of members able to modify the contribution limits for members. Select the + icon to make addtional entries.  
+  List of one or more authorizable IDs of members able to modify the contribution limits for members. Select the + icon to make addtional entries.
 
-  Members may only reach out to specified members when their limit has been reached.  
+  Members may only reach out to specified members when their limit has been reached.
 
   Default is no messaging recipients.
 

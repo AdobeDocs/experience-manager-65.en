@@ -2,10 +2,10 @@
 title: Install workbench
 seo-title: Install workbench
 description: Install workbench.
-uuid: 
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+uuid:
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 
+discoiquuid:
 ---
 
 # Install workbench {#install-workbench}
@@ -14,44 +14,44 @@ This document provides instructions for installing and configuring workbench. Th
 
 ## About {#about}
 
-This document is intended for administrators or developers who are responsible for installing, configuring, administering, or deploying Workbench. 
-Also included is information needed to configure your system to support your upgraded Adobe® AEM forms® Enterprise Suite (ES) Update 1 (8.2.x) and Adobe® AEM forms® Enterprise Suite 2 (ES2) processes. 
+This document is intended for administrators or developers who are responsible for installing, configuring, administering, or deploying Workbench.
+Also included is information needed to configure your system to support your upgraded Adobe® AEM forms® Enterprise Suite (ES) Update 1 (8.2.x) and Adobe® AEM forms® Enterprise Suite 2 (ES2) processes.
 The information provided is based on the assumption that anyone reading this document is familiar with Microsoft® Windows® operating system.
 
 ## Additional information {#additional-information}
 
 The resources in this table can help you learn more about and get started using AEM Forms.
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>For information about</strong></p> </td> 
-   <td><p><strong>See</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Procedural information for Workbench</p> </td> 
-   <td><p><a href="http://www.adobe.com/go/learn_aemforms_workbench_61">Workbench Help</a><br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>General information about AEM Forms and how it integrates with other Adobe products</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms Overview</a><br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>A tutorial for creating a AEM Forms application and testing it in workspace</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">Creating your first AEM Forms Application</a><br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>All the documentation available for AEM Forms</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms documentation</a><br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Other services and products that integrate with AEM Forms</p> </td> 
-   <td><p><a href="http://www.adobe.com/">www.adobe.com</a><br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Patch updates, technical notes, and additional information on this product version</p> </td> 
-   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">Contact Adobe Enterprise Support</a><br /> <br /> </p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>For information about</strong></p> </td>
+   <td><p><strong>See</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Procedural information for Workbench</p> </td>
+   <td><p><a href="http://www.adobe.com/go/learn_aemforms_workbench_61">Workbench Help</a><br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>General information about AEM Forms and how it integrates with other Adobe products</p> </td>
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms Overview</a><br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>A tutorial for creating a AEM Forms application and testing it in workspace</p> </td>
+   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">Creating your first AEM Forms Application</a><br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>All the documentation available for AEM Forms</p> </td>
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms documentation</a><br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Other services and products that integrate with AEM Forms</p> </td>
+   <td><p><a href="http://www.adobe.com/">www.adobe.com</a><br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Patch updates, technical notes, and additional information on this product version</p> </td>
+   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">Contact Adobe Enterprise Support</a><br /> <br /> </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -114,23 +114,23 @@ See the complete list of supported platforms for Workbench at [AEM Forms Support
 By default, the Workbench installation includes a corresponding English-only version of Designer. If the Workbench installation application detects an existing version of Designer on your computer, the installation may terminate, and you will be required to remove the current version of Designer before you can continue.
 The table below has a complete list of possible Designer installation scenarios that you may encounter, as well as any actions you must take, when installing Workbench.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Version of Designer currently installed</strong></p> </td> 
-   <td><p><strong>Required actions</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Acrobat Pro or Acrobat Pro Extended (includes Designer)</p> </td> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Version of Designer currently installed</strong></p> </td>
+   <td><p><strong>Required actions</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Acrobat Pro or Acrobat Pro Extended (includes Designer)</p> </td>
    <td><p>None. The Workbench installation detects an instance of Designer on your computer that was installed with either Acrobat Pro or Acrobat Pro Extended.
 Different versions of Designer can coexist on the same system, for example Designer 8.2.x and 9.0.x. It is not necessary to uninstall the version of Designer installed with Acrobat 10 Pro or Acrobat 10 Pro Extended.
-<br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Designer (stand-alone)</p> </td> 
-   <td><p>None. The version of Designer included with Workbench is English-only. The Workbench installer will not reinstall a new version of Designer. Instead an updated version, bundled with the Workbench installer, will be patched. This also allows you to use your localized version of Designer within Workbench.<br /> <br /> </p> </td> 
-  </tr> 
- </tbody> 
+<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Designer (stand-alone)</p> </td>
+   <td><p>None. The version of Designer included with Workbench is English-only. The Workbench installer will not reinstall a new version of Designer. Instead an updated version, bundled with the Workbench installer, will be patched. This also allows you to use your localized version of Designer within Workbench.<br /> <br /> </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### To uninstall Designer (stand-alone) {#uninstall-designer-standalone}
@@ -180,7 +180,7 @@ Before you install Workbench, you must ensure that your environment includes the
    >[!IMPORTANT]
    >
    >The Workbench installer only runs from a DVD or local drive. It cannot be run from a remote site.
-  
+
    >[!NOTE]
    >
    >If you encounter an error "Could not create the Java Virtual Machine", then create an environment variable named _JAVA_OPTIONS with value -Xmx512M and run the installer.
@@ -193,7 +193,7 @@ Before you install Workbench, you must ensure that your environment includes the
    >
    >You can continue to use Designer installed with Acrobat 10 by leaving this option deselected.
 
-1. Accept the default directory as listed or   click Choose and navigate to the directory where you will install Workbench, and then click Next. 
+1. Accept the default directory as listed or   click Choose and navigate to the directory where you will install Workbench, and then click Next.
 
    >[!NOTE]
    >
@@ -223,22 +223,22 @@ You can optionally add the Workbench feature to Eclipse. You can add Workbench a
 
 Workbench supports the update feature to ensure you are using the most updated Eclipse version. However, you must ensure that certain additional modules are included with each download:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Eclipse Version</strong></p> </td> 
-   <td><p><strong>Workbench required modules</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Eclipse 3.6.x</p> </td> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Eclipse Version</strong></p> </td>
+   <td><p><strong>Workbench required modules</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Eclipse 3.6.x</p> </td>
    <td><p>
-   
+
 * Graphical Editing Framework GEF [org.eclipse.gef.feature.group]: This is contained in the 'Graphical Modeling Framework SDK' [org.eclipse.gmf.sdk.feature.group]
 
 * WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]: This is contained in the 'Eclipse XML Editors and Tools' [org.eclipse.wst.xml_ui.feature.feature.group]
 
 * Plug-in 'org.apache.commons.lang_2.3.0' [n/a]: This is contained in the 'Mylyn Task List (Required)' [org.eclipse.mylyn_feature.feature.group]
-   </p> </td> 
+   </p> </td>
   </tbody>
   </table>
 
@@ -309,7 +309,7 @@ When forms generator or output searches for, or updates, entries in the cache fo
 * **Template UUID**: Designer inserts in each template a unique identifier (UUID) for the form and its version. Each time the form is updated, the embedded UUID is updated. For example, an XDP template might show the following content:
 
   `<?xml version="1.0" encoding="UTF-8"?>`
-  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">` 
+  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Render options**: Within the rendered form cache, the cache contents are stored separately for each set of unique render options.
 

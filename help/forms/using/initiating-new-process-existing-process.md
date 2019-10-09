@@ -5,7 +5,7 @@ description: See how you can initiate a new process with existing process data i
 seo-description: See how you can initiate a new process with existing process data in AEM Forms workspace.
 uuid: 57a7f414-c9f2-4acc-890a-e29e1adff084
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4d55a100-1876-41f0-a06f-7a009c934f3d
 ---
@@ -24,7 +24,7 @@ Following are the steps to initiate a new process from existing process data:-
 
    ![start3](assets/start3.png) ![start1](assets/start1.png)
 
-1. In the Task action toolbar, click **[!UICONTROL Start]**. An Adaptive Form for the new process instance is displayed with prefilled data.  
+1. In the Task action toolbar, click **[!UICONTROL Start]**. An Adaptive Form for the new process instance is displayed with prefilled data.
 
 1. Update the data as necessary, and click either **[!UICONTROL Complete]** or an appropriate button on the form.
 

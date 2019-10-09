@@ -1,19 +1,19 @@
 ---
-title: AEM 6.4 User Guide Hub
-seo-title: AEM 6.4 User Guide Hub
-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.4
-seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.4
+title: AEM 6.5 User Guide Hub
+seo-title: AEM 6.5 User Guide Hub
+description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
+seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
-# AEM 6.4 User Guide Hub {#aem-64-user-guide}
+# AEM 6.5 User Guide Hub {#aem-64-user-guide}
 
 ## Introduction {#introduction}
 
 |[First Steps](https://helpx.adobe.com/experience-manager/get-started.html)|[Feature Videos](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)|[Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)|
 |:-:|:-:|:-:|
-|Discover tutorials and articles for getting started with AEM|A selection of videos highlighting 6.4 new features|Discover what's new in AEM 6.4|
+|Discover tutorials and articles for getting started with AEM|A selection of videos highlighting 6.5 new features|Discover what's new in AEM 6.5|
 
 ## User Guides and Resources {#user-guides-and-resources}
 

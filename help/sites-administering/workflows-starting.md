@@ -5,7 +5,7 @@ description: Learn how to start Workflows in AEM.
 seo-description: Learn how to start Workflows in AEM.
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
@@ -64,7 +64,7 @@ A launcher can be created for any node. However, changes to certain nodes do not
 
 Various definitions are included with the standard installation. These are used for digital asset management and social collaboration tasks:
 
-![wf-100](assets/wf-100.png) 
+![wf-100](assets/wf-100.png)
 
 ## Workflow Packages for Batch Processing {#workflow-packages-for-batch-processing}
 
@@ -74,7 +74,7 @@ A workflow package:
 
 * contains links to a set of resources (such as pages, assets).
 * holds package information such as the creation date, the user that created the package and a short description.
-* is defined using a specialized page template; such pages allow the user to specify the resources in the package.  
+* is defined using a specialized page template; such pages allow the user to specify the resources in the package.
 * can be used multiple times.
 * can be changed by the user (add or remove resources) while the workflow instance is actually running.
 
@@ -89,19 +89,19 @@ A workflow package:
    >
    >The **[Transient](/help/sites-developing/workflows.md#transient-workflows)** indicator shows workflows for which the workflow history will not be persisted.
 
-1. Select **Start Workflow** from the toolbar. 
+1. Select **Start Workflow** from the toolbar.
 1. The Run Workflow dialog will open, allowing you to specify:
 
-    * **Payload** 
+    * **Payload**
 
       This can be a page, node, asset, package, amongst other resources.
-  
-    * **Title** 
+
+    * **Title**
 
       An optional title to help identify this instance.
-  
-    * **Comment** 
-  
+
+    * **Comment**
+
       An optional comment to help indicate details of this instance.
 
    ![wf-104](assets/wf-104.png)
@@ -113,7 +113,7 @@ A workflow package:
 
    ![wf-105](assets/wf-105.png)
 
-    * **Event Type** 
+    * **Event Type**
 
       The event type that will launch the workflow:
 
@@ -121,49 +121,49 @@ A workflow package:
         * Modified
         * Removed
 
-    * **Notetype** 
+    * **Notetype**
 
       The type of node that the workflow launcher applies to.
-    
-    * **Path** 
+
+    * **Path**
 
       The path that the workflow launcher applies to.
-    
-    * **Run Mode(s)** 
+
+    * **Run Mode(s)**
 
       The type of server that the workflow launcher applies to. Select **Author**, **Publish**, or **Author & Publish**.
-    
-    * **Conditions** 
+
+    * **Conditions**
 
       A list of conditions for node values that, when evaluated, determine whether the workflow is launched. For example, the following condition causes the workflow to launch when the node has a property name with the value User:
 
       name==User
-    
-    * **Features** 
+
+    * **Features**
 
       A list of features to be enabled. Select the required feature(s) using the drop down selector.
-    
+
     * **Disabled Features**
 
     A list of features to be disabled. Select the required feature(s) using the drop down selector.
 
-    * **Workflow Model** 
+    * **Workflow Model**
 
       The workflow to launch when the Event Type occurs on the Nodetype and/or Path under the defined Condition.
 
-    * **Description** 
+    * **Description**
 
       Your own text to describe and identify the launcher configuration.
 
-    * **Activate** 
+    * **Activate**
 
       Controls whether the workflow launcher is activated:
 
         * Select **Enable** to launch workflows when the configuration properties are satisfied.
         * Select **Disable** when the workflow should not execute (not even when the configuration properties are satisfied).
 
-    * **Exclude List** 
-    
+    * **Exclude List**
+
       This specifies any JCR events to exclude (i.e. ignore) when determining whether a workflow should be triggered.
 
       This launcher property is a comma separated list of items: ``
@@ -174,7 +174,7 @@ A workflow package:
       For example:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
-      
+
       This feature can be used to ignore any changes triggered by another workflow process by adding the exclude item:
 
       `event-user-data:changedByWorkflowProcess`

@@ -6,7 +6,7 @@ seo-description: null
 uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 ---
@@ -33,8 +33,8 @@ The path to a resource located in the AEM Forms repository is:
 
 The following values show some examples of URI values:
 
-* Applications/AppraisalReport/1.0/Forms/FullForm.xdp 
-* Applications/AnotherApp/1.1/Assets/picture.jpg 
+* Applications/AppraisalReport/1.0/Forms/FullForm.xdp
+* Applications/AnotherApp/1.1/Assets/picture.jpg
 * Applications/SomeApp/2.0/Resources/Data/XSDs/MyData.xsd
 
 >[!NOTE]
@@ -50,13 +50,13 @@ The repository API provides a number of operations that you can use to store and
 Using the Repository service API, you can accomplish the following tasks:
 
 * Create folders. See [Creating Folders](aem-forms-repository.md#creating-folders).
-* Write resources and their properties. See [Writing Resources](aem-forms-repository.md#writing-resources). 
+* Write resources and their properties. See [Writing Resources](aem-forms-repository.md#writing-resources).
 * List resources in a given collection or related to other resources. See [Listing Resources](aem-forms-repository.md#listing-resources).
 * Read resources and their properties. See [Reading Resources](aem-forms-repository.md#reading-resources).
 * Update resources and their properties. See [Updating Resources](aem-forms-repository.md#updating-resources).
 * Search for resources, including their history, related resources, and properties. See [Searching for Resources](aem-forms-repository.md#searching-for-resources).
 * Specify relationships between resources. See [Creating Resource Relationships](aem-forms-repository.md#creating-resource-relationships).
-* Manage resource access control, including locking and unlocking resources, and reading and writing access control lists (ACLs). See [Locking Resources](aem-forms-repository.md#locking-resources). 
+* Manage resource access control, including locking and unlocking resources, and reading and writing access control lists (ACLs). See [Locking Resources](aem-forms-repository.md#locking-resources).
 * Delete resources and their properties. See [Deleting Resources](aem-forms-repository.md#deleting-resources).
 
 >[!NOTE]
@@ -124,11 +124,11 @@ Create a folder by using the Repository service API (Java):
 
 1. Include project files
 
-   Include project files in your Java project’s class path. 
+   Include project files in your Java project’s class path.
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Create the folder
 
@@ -168,7 +168,7 @@ Create a folder by using the Repository service API (web service):
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the Repository WSDL using base64. 
+    * Create a Microsoft .NET client assembly that consumes the Repository WSDL using base64.
     * Reference the Microsoft .NET client assembly.
 
 1. Create the service client
@@ -263,11 +263,11 @@ Write a resource by using the Repository service API (Java):
 
 1. Include project files
 
-   Include client JAR files in your Java project’s class path. 
+   Include client JAR files in your Java project’s class path.
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Specify the URI of the target folder for the resource
 
@@ -408,11 +408,11 @@ List resources by using the Repository service API (Java):
 
 1. Include project files
 
-   Include client JAR files in your Java project’s class path. 
+   Include client JAR files in your Java project’s class path.
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Specify the folder path
 
@@ -440,7 +440,7 @@ List resources by using the Repository service API (web service):
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the Repository WSDL. 
+    * Create a Microsoft .NET client assembly that consumes the Repository WSDL.
     * Reference the Microsoft .NET client assembly.
 
 1. Create the service client
@@ -529,7 +529,7 @@ Read a resource by using the Repository service API (Java):
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Specify the URI of the resource to be read
 
@@ -564,7 +564,7 @@ Read a resource by using the Repository service API (web service):
 
 1. Specify the URI of the resource to be read
 
-   Specify a string containing the URI of the resource to be retrieved. In this case, because the resource named `testResource` is in the folder named `testFolder`, its URI is `"/testFolder/testResource"`. When using a language compliant with the Microsoft .NET Framework (for example, C#), store the URI in a `System.String` object. 
+   Specify a string containing the URI of the resource to be retrieved. In this case, because the resource named `testResource` is in the folder named `testFolder`, its URI is `"/testFolder/testResource"`. When using a language compliant with the Microsoft .NET Framework (for example, C#), store the URI in a `System.String` object.
 
 1. Read the resource
 
@@ -639,7 +639,7 @@ Update a resource by using the Repository service API (Java):
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Retrieve the resource to be updated
 
@@ -671,7 +671,7 @@ Update a resource by using the Repository API (web service):
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the Repository WSDL. 
+    * Create a Microsoft .NET client assembly that consumes the Repository WSDL.
     * Reference the Microsoft .NET client assembly.
 
 1. Create the service client
@@ -684,7 +684,7 @@ Update a resource by using the Repository API (web service):
 
 1. Update the resource
 
-   Update the `Resource` object’s information. In this example, to update the description, assign a new value to the `Resource` object’s `description` field. 
+   Update the `Resource` object’s information. In this example, to update the description, assign a new value to the `Resource` object’s `description` field.
 
 1. Invoke the `RepositoryServiceService` object’s `updateResource` method, and pass in the following parameters:
 
@@ -786,7 +786,7 @@ Search for a resource by using the Repository service API (Java):
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Specify the target folder for the search
 
@@ -908,7 +908,7 @@ Create relationship resources by using the Repository service Java API, perform 
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Specify the URIs of the resources to be related
 
@@ -947,7 +947,7 @@ Create relationship resources by using the Repository API (web service):
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the Repository WSDL. 
+    * Create a Microsoft .NET client assembly that consumes the Repository WSDL.
     * Reference the Microsoft .NET client assembly.
 
 1. Create the service client
@@ -956,14 +956,14 @@ Create relationship resources by using the Repository API (web service):
 
 1. Specify the URIs of the resources to be related
 
-   Specify the URIs of the resources to be related. In this case, because the resources are named `testResource1` and `testResource2` and are located in the folder named `testFolder`, their URIs are `"/testFolder/testResource1"` and `"/testFolder/testResource2"`. When using a language compliant with the Microsoft .NET Framework (for example, C#), the URIs are stored as a `System.String` objects. In this example, the resources are first written to the repository, and their URIs are retrieved. For more information about writing a resource, see [Writing Resources](aem-forms-repository.md#writing-resources). 
+   Specify the URIs of the resources to be related. In this case, because the resources are named `testResource1` and `testResource2` and are located in the folder named `testFolder`, their URIs are `"/testFolder/testResource1"` and `"/testFolder/testResource2"`. When using a language compliant with the Microsoft .NET Framework (for example, C#), the URIs are stored as a `System.String` objects. In this example, the resources are first written to the repository, and their URIs are retrieved. For more information about writing a resource, see [Writing Resources](aem-forms-repository.md#writing-resources).
 
 1. Create the relationship
 
    Invoke the `RepositoryServiceService` object’s `createRelationship` method and pass in the following parameters:
 
-    * The URI of the source resource. 
-    * The URI of the target resource. 
+    * The URI of the source resource.
+    * The URI of the target resource.
     * The type of relationship. In this example, a dependence relationship is established by specifying the value `3`.
     * A `boolean` value indicating whether the relationship type was specified. In this example, the value `true` is specified.
     * A `boolean` value indicating whether the target resource is automatically updated to the `Id`-based identifier of the new head resource. In this example, because of the dependence relationship, the value `true` is specified.
@@ -990,7 +990,7 @@ Create relationship resources by using the Repository API (web service):
 
 You can lock a resource or set of resources for exclusive use by a particular user or shared use among more than one user. A shared lock is an indication that something will happen with the resource, but it does not prevent anyone else from taking actions with that resource. A shared lock should be considered a signaling mechanism. An exclusive lock means that the user who locked the resource is going to change the resource, and the lock ensures that nobody else can do so until the user no longer needs access to the resource and has released the lock. If a repository administrator unlocks a resource, all exclusive and shared locks on that resource will automatically be removed. This type of action is meant for situations in which a user is no longer available and has not unlocked the resource.
 
-When a resource is locked, a lock icon appears when you view the Resources tab located in Workbench, as shown in the following illustration. 
+When a resource is locked, a lock icon appears when you view the Resources tab located in Workbench, as shown in the following illustration.
 
 ![lr_lr_lockrepository](assets/lr_lr_lockrepository.png)
 
@@ -1057,7 +1057,7 @@ Lock resources by using the Repository service API (Java):
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Specify the URI of the resource to be locked
 
@@ -1077,7 +1077,7 @@ Lock resources by using the Repository service API (Java):
 
 1. Retrieve the locks for the resource
 
-   Invoke the `ResourceRepositoryClient` object’s `getLocks` method and pass the URI of the resource as a parameter. The method returns a List of Lock objects through which you can iterate. In this example, the lock owner, depth, and scope are printed for each object by invoking each Lock object’s `getOwnerUserId`, `getDepth`, and `getType` methods, respectively. 
+   Invoke the `ResourceRepositoryClient` object’s `getLocks` method and pass the URI of the resource as a parameter. The method returns a List of Lock objects through which you can iterate. In this example, the lock owner, depth, and scope are printed for each object by invoking each Lock object’s `getOwnerUserId`, `getDepth`, and `getType` methods, respectively.
 
 1. Unlock the resource
 
@@ -1099,7 +1099,7 @@ Lock resources by using the Repository service API (web service):
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the Repository WSDL using Base64. 
+    * Create a Microsoft .NET client assembly that consumes the Repository WSDL using Base64.
     * Reference the Microsoft .NET client assembly.
 
 1. Create the service client
@@ -1114,7 +1114,7 @@ Lock resources by using the Repository service API (web service):
 
    Invoke the `RepositoryServiceService` object’s `lockResource` method and pass in the following parameters:
 
-    * The URI of the resource. 
+    * The URI of the resource.
     * The lock scope. In this example, because the resource will be locked for exclusive use, the lock scope is specified as `11`.
     * The lock depth. In this example, because the locking will apply only to the particular resource and none of its members or children, the lock depth is specified as `2`.
     * An `int` value indicating the number of seconds until the lock expires. In this example, the value of `1000` is used.
@@ -1195,11 +1195,11 @@ Delete a resource by using the Repository API (Java):
 
 1. Include project files
 
-   Include client JAR files in your Java project’s class path. 
+   Include client JAR files in your Java project’s class path.
 
 1. Create the service client
 
-   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `ResourceRepositoryClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Specify the URI of the resource to be deleted
 
@@ -1234,7 +1234,7 @@ Delete a resource by using the Repository API (web service):
 
 1. Specify the URI of the resource to be deleted
 
-   Specify the URI of the resource to be retrieved. In this case, because the resource named `testResourceToBeDeleted` is in the folder named `testFolder`, its URI is `"/testFolder/testResourceToBeDeleted"`. In this example, the resource is first written to the repository, and its URI is retrieved. For more information about writing a resource, see [Writing Resources](aem-forms-repository.md#writing-resources). 
+   Specify the URI of the resource to be retrieved. In this case, because the resource named `testResourceToBeDeleted` is in the folder named `testFolder`, its URI is `"/testFolder/testResourceToBeDeleted"`. In this example, the resource is first written to the repository, and its URI is retrieved. For more information about writing a resource, see [Writing Resources](aem-forms-repository.md#writing-resources).
 
 1. Delete the resource
 

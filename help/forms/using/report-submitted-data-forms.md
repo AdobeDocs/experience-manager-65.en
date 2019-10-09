@@ -1,11 +1,11 @@
 ---
 title: APIs to work with submitted forms on forms portal
 seo-title: APIs to work with submitted forms on forms portal
-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal. 
-seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal. 
+description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
+seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
@@ -33,9 +33,9 @@ The response object contains a JSON array that includes forms names and their re
 
 ```
 [
- {formName: "<form name>", 
- formPath: "<path to the form>" }, 
- {.....}, 
+ {formName: "<form name>",
+ formPath: "<path to the form>" },
+ {.....},
  ......]
 ```
 
@@ -61,41 +61,41 @@ Returns details of all submitted forms. However, you can use URL parameters to l
 
 Specify the following parameters in the request URL:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Parameter</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><code>formPath</code></td> 
-   <td>Specifies the CRX repository path where the form resides. If you do not specify the form path, it returns an empty response.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><code>offset</code><br /> (optional)</td> 
-   <td>Specifies the starting point in the index of the results set. The default value is <strong>0</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td><code>limit</code><br /> (optional)</td> 
-   <td>Limits the number of results. The default value is <strong>30</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td><code>orderby</code> <br /> (optional)</td> 
-   <td>Specifies the property for sorting results. The default value is <strong>jcr:lastModified</strong>, which sorts results based on the last modified time.</td> 
-  </tr> 
-  <tr> 
-   <td><code>sort</code> <br /> (optional)</td> 
-   <td>Specifies the order for sorting results. The default value is <strong>desc</strong>, which sorts results in descending order. You can specify <code>asc</code> to sort results in ascending order.</td> 
-  </tr> 
-  <tr> 
-   <td><code>cutPoints</code> <br /> (optional)</td> 
-   <td>Specifies a comma-separated list of form properties to be included in results. The default properties are:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
-  </tr> 
-  <tr> 
-   <td><code>search</code> <br /> (optional)</td> 
-   <td>Searches the specified value in form properties and returns forms with matching values. The default value is <strong>""</strong>.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Parameter</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><code>formPath</code></td>
+   <td>Specifies the CRX repository path where the form resides. If you do not specify the form path, it returns an empty response.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>offset</code><br /> (optional)</td>
+   <td>Specifies the starting point in the index of the results set. The default value is <strong>0</strong>.</td>
+  </tr>
+  <tr>
+   <td><code>limit</code><br /> (optional)</td>
+   <td>Limits the number of results. The default value is <strong>30</strong>.</td>
+  </tr>
+  <tr>
+   <td><code>orderby</code> <br /> (optional)</td>
+   <td>Specifies the property for sorting results. The default value is <strong>jcr:lastModified</strong>, which sorts results based on the last modified time.</td>
+  </tr>
+  <tr>
+   <td><code>sort</code> <br /> (optional)</td>
+   <td>Specifies the order for sorting results. The default value is <strong>desc</strong>, which sorts results in descending order. You can specify <code>asc</code> to sort results in ascending order.</td>
+  </tr>
+  <tr>
+   <td><code>cutPoints</code> <br /> (optional)</td>
+   <td>Specifies a comma-separated list of form properties to be included in results. The default properties are:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+  </tr>
+  <tr>
+   <td><code>search</code> <br /> (optional)</td>
+   <td>Searches the specified value in form properties and returns forms with matching values. The default value is <strong>""</strong>.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Response {#response-1}
@@ -103,9 +103,9 @@ Specify the following parameters in the request URL:
 The response object contains a JSON array that includes details of the specified forms. The structure of the response is as follows:
 
 ```
-{ 
+{
  total: "<total number of submissions>",
- items: [{ formName: "<name of the form>", formPath: "<path to the form>", owner: "<owner of the form>"}, 
+ items: [{ formName: "<name of the form>", formPath: "<path to the form>", owner: "<owner of the form>"},
  ....]}
 ```
 
@@ -172,8 +172,8 @@ The response object contains a JSON array that includes all comments associated 
 
 ```
 [{
- owner: "<name of the commenter>", 
- comment: "<comment text>", 
+ owner: "<name of the commenter>",
+ comment: "<comment text>",
  time: "<time when the comment was posted>"},
  { }......]
 ```

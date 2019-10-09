@@ -5,7 +5,7 @@ description: This tutorial is primarily for developers, new to AEM, who are inte
 seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
 uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
@@ -81,4 +81,4 @@ If not logged in, you will be unable to navigate the JCR repository or perform a
 
 ***When in doubt, re-login!***
 
-![chlimage_1-352](assets/chlimage_1-352.png) 
+![chlimage_1-352](assets/chlimage_1-352.png)

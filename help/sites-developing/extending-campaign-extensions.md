@@ -5,7 +5,7 @@ description: You can call your custom code in Adobe Campaign from AEM or from AE
 seo-description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign
 uuid: 8392aa0d-06cd-4b37-bb20-f67e6a0550b1
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
@@ -68,7 +68,7 @@ In this example, we create a new custom JSSP file and call that from the AEM sid
    private GenericCampaignConnector campaignConnector;
    ...
    Map<String, String> params = new HashMap<String, String>();
-   params.put("origin", "AEM"); 
+   params.put("origin", "AEM");
    CallResults results = campaignConnector.callGeneric("/jssp/cus/custom.jssp", params, credentials);
    return results.bodyAsString();
    ```
@@ -111,10 +111,10 @@ import com.day.cq.wcm.webservicesupport.Configuration;
 public class CustomServlet extends SlingSafeMethodsServlet {
 
  private final Logger log = LoggerFactory.getLogger(this.getClass());
- 
+
  @Reference
  private GenericCampaignConnector campaignConnector;
- 
+
  @Reference
  private PageManagerFactory pageManagerFactory;
 
@@ -122,11 +122,11 @@ public class CustomServlet extends SlingSafeMethodsServlet {
  protected void doGet(SlingHttpServletRequest request,
    SlingHttpServletResponse response) throws ServletException,
    IOException {
-  
+
   PageManager pm = pageManagerFactory.getPageManager(request.getResourceResolver());
-  
+
   Page page = pm.getPage("/content/geometrixx-outdoors");
-  
+
   String result = null;
   if ( page != null) {
    result = callCustomFunction(page);
@@ -136,12 +136,12 @@ public class CustomServlet extends SlingSafeMethodsServlet {
    pw.print(result);
   }
  }
- 
+
  private String callCustomFunction(Page page ) {
   try {
    Configuration config = campaignConnector.getWebserviceConfig(page.getContentResource().getParent());
    CampaignCredentials credentials = campaignConnector.retrieveCredentials(config);
-   
+
    Map<String, String> params = new HashMap<String, String>();
    params.put("origin", "AEM");
    CallResults results = campaignConnector.callGeneric("/jssp/cus/custom.jssp", params, credentials);
@@ -150,7 +150,7 @@ public class CustomServlet extends SlingSafeMethodsServlet {
    log.error("Something went wrong during the connection", e);
   }
   return null;
-  
+
  }
 
 }
@@ -186,11 +186,11 @@ A JS library that is named **amcIntegration.js** is available in 6.1.1 (build 86
 
 ```java
 loadLibrary("nms:amcIntegration.js");
- 
+
 var cmsAccountId = sqlGetInt("select iExtAccountId from NmsExtAccount where sName=$(sz)","aemInstance")
 var cmsAccount = nms.extAccount.load(String(cmsAccountId));
 var cmsServer = cmsAccount.server;
- 
+
 var request = new HttpClientRequest(cmsServer+"/content/campaigns/geometrixx.infinity.json")
 aemAddBasicAuthentication(cmsAccount, request);
 request.method = "GET"

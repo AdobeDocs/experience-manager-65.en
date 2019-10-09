@@ -5,7 +5,7 @@ description: AEM Forms integrates with Adobe Target and Adobe Analytics solution
 seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
 uuid: 5876f2f3-1c97-4fb9-a032-b869ee3c6a45
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 6b62b280-d101-410a-ba8c-02940f766c32
 ---
@@ -40,12 +40,12 @@ Let's get down to the details of how you can measure the performance and improve
 ### AEM Forms components and features involved {#aem-forms-components-and-features-involved}
 
 * Adaptive forms
-* Integration with Adobe Analytics to collect, organize, and report customer interactions with your adaptive forms  
+* Integration with Adobe Analytics to collect, organize, and report customer interactions with your adaptive forms
 * Integration with Adobe Target to run A/B tests for adaptive forms
 
 ### Assumptions {#assumptions}
 
-* You already have an Adobe Marketing Cloud account and registered for Analytics and Target solutions.  
+* You already have an Adobe Marketing Cloud account and registered for Analytics and Target solutions.
 * You have a published adaptive form that customers can access.
 
 ### Workflow steps {#workflow-steps}
@@ -56,10 +56,10 @@ Let's get down to the details of how you can measure the performance and improve
 
 To gain deep insights into your customer interactions with your forms, you need to first configure Analytics in AEM Forms. Perform the following steps:
 
-1. Create a report suite in Adobe Analytics  
-1. Create cloud service configuration in AEM  
-1. Create cloud service framework in AEM  
-1. Configure AEM Forms Analytics configuration service in AEM  
+1. Create a report suite in Adobe Analytics
+1. Create cloud service configuration in AEM
+1. Create cloud service framework in AEM
+1. Configure AEM Forms Analytics configuration service in AEM
 1. Enable analytics on the form in AEM
 
 For detailed steps, see [Configuring analytics and reports for adaptive forms](/help/forms/using/configure-analytics-forms-documents.md).
@@ -85,10 +85,10 @@ Let's take a look at the data points that Analytics collects and reports for for
 The analytics report for adaptive forms captures the following Key Performance Indicators (KPIs) at a form level:
 
 * **Average fill time**: Average time spent in filling the form
-* **Impressions**: Number of times the form appeared in the search results  
+* **Impressions**: Number of times the form appeared in the search results
 
 * **Renditions**: Number of times the form has been rendered or opened
-* **Drafts**: Number of times the form has been saved as draft  
+* **Drafts**: Number of times the form has been saved as draft
 
 * **Submissions**: Number of times the form has been submitted
 * **Abort**: Number of times users left without completing the form
@@ -96,9 +96,9 @@ The analytics report for adaptive forms captures the following Key Performance I
 
 In addition, you get the following details about each panel in the form:
 
-* **Time**: Average time spent (seconds) on the panel and its fields  
+* **Time**: Average time spent (seconds) on the panel and its fields
 
-* **Error**: Number of errors encountered on the panel and its fields per 1000 form renditions  
+* **Error**: Number of errors encountered on the panel and its fields per 1000 form renditions
 
 * **Help**: Number of times users accessed the in-context help for the panel and its fields per 1000 form renditions
 
@@ -115,7 +115,7 @@ For more details about forms analytics reports, see [Viewing and understanding A
 In this step, you will analyze data points in the analytics report and infer how the form is performing. If it does not meet your success KPIs, you will construct hypotheses, based on data, and find possible solutions to fix the issues. For example:
 
 * If the average fill time for the form is higher than your expectation, it is possible that your form is complex for customers to understand, the form doesn't use standard terminologies, the form is too long, and so on. In this case, you might want to simplify the form structure and fields, rework the form design, shorten the length of the form, or add help descriptions and examples for non-standard form fields.
-* If data indicates that most customers are accessing help for a form panel, it is evident that customers are puzzled about what information to fill in. You might want to use alternate terminology or add some example inputs and help description for that panel. 
+* If data indicates that most customers are accessing help for a form panel, it is evident that customers are puzzled about what information to fill in. You might want to use alternate terminology or add some example inputs and help description for that panel.
 * If the abort or abandonment rate for a form is higher than expected, it might be due to the form taking long time to render, customers are inadvertently landing on the form, or it is too complicated. In this case, you may want to optimize the form description that appears in the search results, simplify the form, optimize the form for faster loading, and so on.
 
 Once you have analyzed these data points and arrived at a hypothesis, make the required changes in the form.
@@ -130,7 +130,7 @@ Integration of AEM Forms with Target allows creating A/B tests for adaptive form
 
 For more information about creating an A/B test for an adaptive form, see [A/B testing of adaptive forms](/help/forms/using/ab-testing-adaptive-forms.md).
 
-![A sample summary report of A/B test for an adaptive form](assets/ab-test-report-2.png) 
+![A sample summary report of A/B test for an adaptive form](assets/ab-test-report-2.png)
 
 ## Best practices {#best-practices}
 
@@ -140,9 +140,9 @@ Some recommendations on designing forms and running A/B tests are as follows:
 
 **Forms design**
 
-* Keep the form simple, short, and easy to navigate. Use directional cues for navigation.  
+* Keep the form simple, short, and easy to navigate. Use directional cues for navigation.
 * Use standard or common terminologies for form fields.
-* Explain the field and required input, with examples or help, where users may get confused.  
+* Explain the field and required input, with examples or help, where users may get confused.
 * Validate user inputs as they type it, wherever possible, to avoid errors on form submission.
 * Optimize layouts for desktop as well as mobile devices.
 * Auto-populate information for known users.

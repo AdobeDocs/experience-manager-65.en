@@ -7,7 +7,7 @@ uuid: 9040c09a-e5d0-432b-b1c5-ad46ab57c4fc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 ---
@@ -27,7 +27,7 @@ When rendering a form, you can set run-time options that will optimize the perfo
 To optimize the performance of the Forms service while rendering a form, perform the following tasks:
 
 1. Include project files.
-1. Create a Forms Client API object. 
+1. Create a Forms Client API object.
 1. Set performance run-time options.
 1. Render the form.
 1. Write the form data stream to the client web browser.
@@ -48,8 +48,8 @@ You can set the following performance run-time options to improve the performanc
 * Form Guides (deprecated) may take longer to render than other transformation types. It is recommended that you cache form Guides (deprecated) in order to improve performance.
 * **Standalone option**: If you do not require the Forms service to perform server-side calculations, you can set the Standalone option to `true`, which results in forms being rendered without state information. State information is necessary if you want to render an interactive form to an end user who then enters information into the form and submits the form back to the Forms service. The Forms service then performs a calculation operation and renders the form back to the user with the results displayed in the form. If a form without state information is submitted back to the Forms service, only the XML data is available and server-side calculations are not performed.
 * **Linearized PDF**: A linearized PDF file is organized to enable efficient incremental access in a network environment. The PDF file is valid PDF in all respects, and is compatible with all existing viewers and other PDF applications. That is, a linearized PDF can be viewed while it is still being downloaded.
-* This option does not improve performance when a PDF form is rendered on the client. 
-* **GuideRSL option**: Enables form Guide (deprecated) generation using run-time shared libraries. This means the first request will download a smaller SWF file, plus larger shared-libraries that are stored in the browser cache. For more information, see RSL in the Flex documentation. 
+* This option does not improve performance when a PDF form is rendered on the client.
+* **GuideRSL option**: Enables form Guide (deprecated) generation using run-time shared libraries. This means the first request will download a smaller SWF file, plus larger shared-libraries that are stored in the browser cache. For more information, see RSL in the Flex documentation.
 * You can also improve the performance of the Forms service by rendering a form on the client. (See [Rendering Forms at the Client](/help/forms/developing/rendering-forms-client.md).)
 
 **Render the form**
@@ -84,13 +84,13 @@ Render a form with optimized performance by using the Forms API (Java):
 
 1. Create a Forms Client API object
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Set performance run-time options
 
-    * Create a `PDFFormRenderSpec` object by using its constructor. 
-    * Set the form cache option by invoking the `PDFFormRenderSpec` object’s `setCacheEnabled` method and passing `true`. 
+    * Create a `PDFFormRenderSpec` object by using its constructor.
+    * Set the form cache option by invoking the `PDFFormRenderSpec` object’s `setCacheEnabled` method and passing `true`.
     * Set the linearized option by invoking the `PDFFormRenderSpec` object’s `setLinearizedPDF` method and passing `true.`
 
 1. Render the form
@@ -98,19 +98,19 @@ Render a form with optimized performance by using the Forms API (Java):
    Invoke the `FormsServiceClient` object’s `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension.
-    * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object. 
-    * A `PDFFormRenderSpec` object that stores run-time options to improve performance. 
-    * A `URLSpec` object that contains URI values that are required by the Forms service. 
+    * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object.
+    * A `PDFFormRenderSpec` object that stores run-time options to improve performance.
+    * A `URLSpec` object that contains URI values that are required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
 
    The `renderPDFForm` method returns a `FormsResult` object that contains a form data stream that must be written to the client web browser.
 
 1. Write the form data stream to the client web browser
 
-    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser. 
-    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method. 
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method. 
-    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read`method and passing the byte array as an argument. 
+    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser.
+    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method.
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
+    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read`method and passing the byte array as an argument.
     * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
@@ -127,17 +127,17 @@ Render a form with optimized performance by using the Forms API (web service):
 
 1. Include project files
 
-    * Create Java proxy classes that consume the Forms service WSDL. 
+    * Create Java proxy classes that consume the Forms service WSDL.
     * Include the Java proxy classes into your class path.
 
 1. Create a Forms Client API object
 
-   Create a `FormsService` object and set authentication values. 
+   Create a `FormsService` object and set authentication values.
 
 1. Set performance run-time options
 
-    * Create a `PDFFormRenderSpec` object by using its constructor. 
-    * Set the form cache option by invoking the `PDFFormRenderSpec` object’s `setCacheEnabled` method and passing true. 
+    * Create a `PDFFormRenderSpec` object by using its constructor.
+    * Set the form cache option by invoking the `PDFFormRenderSpec` object’s `setCacheEnabled` method and passing true.
     * Set the standalone option by invoking the `PDFFormRenderSpec` object’s `setStandAlone` method and passing true.
     * Set the linearized option by invoking the `PDFFormRenderSpec` object’s `setLinearizedPDF` method and passing true.
 
@@ -146,11 +146,11 @@ Render a form with optimized performance by using the Forms API (web service):
    Invoke the `FormsService` object’s `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension.
-    * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`. 
+    * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`.
     * A `PDFFormRenderSpecc` object that stores run-time options.
-    * A `URLSpec` object that contains URI values that are required by the Forms service. 
+    * A `URLSpec` object that contains URI values that are required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
-    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This is used to store the rendered PDF form. 
+    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This is used to store the rendered PDF form.
     * An empty `javax.xml.rpc.holders.LongHolder` object that is populated by the method. (This argument will store the number of pages in the form).
     * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the method. (This argument will store the locale value).
     * An empty `com.adobe.idp.services.holders.FormsResultHolder` object that will contain the results of this operation.
@@ -159,10 +159,10 @@ Render a form with optimized performance by using the Forms API (web service):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member. 
-    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser. 
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method. 
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array. 
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
+    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
+    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
     * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**

@@ -7,7 +7,7 @@ uuid: 2d9f95e9-e4ee-47e2-988e-a191d1d1d264
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 ---
 
@@ -17,14 +17,14 @@ You can control the way in which recipients use your policy-protected documents 
 
 Using the Documents page you can do these tasks:
 
-* Search for and view the details of policy-protected documents. You can see information about the document name, publisher name, policy name, and date the policy was applied. If the policy that protected a document is deleted, you can also see the deleted policy ID under the policy name. Users can view and manage their own policy-protected documents. Administrators can view and manage all policy-protected documents. 
+* Search for and view the details of policy-protected documents. You can see information about the document name, publisher name, policy name, and date the policy was applied. If the policy that protected a document is deleted, you can also see the deleted policy ID under the policy name. Users can view and manage their own policy-protected documents. Administrators can view and manage all policy-protected documents.
 * Change the details of the policy that is applied to a document. Users can edit their own policies, administrators can edit shared and personal policies, and policy set coordinators can edit shared policies in the policy sets they have permissions for. You can access the policy that is associated with a document directly from the Document Detail page.
-* Revoke and reinstate access to a policy-protected document. Administrators can revoke and reinstate access to any document. Policy set coordinators (who have permission to manage documents) can revoke and reinstate access to policy-protected documents that use shared policies from their policy sets. Users can revoke access to their policy-protected documents if they created the policy that is protecting the document or if the policy is a shared one that permits this capability. 
+* Revoke and reinstate access to a policy-protected document. Administrators can revoke and reinstate access to any document. Policy set coordinators (who have permission to manage documents) can revoke and reinstate access to policy-protected documents that use shared policies from their policy sets. Users can revoke access to their policy-protected documents if they created the policy that is protecting the document or if the policy is a shared one that permits this capability.
 * Switch the policy that is applied to a document. Users who apply policies to documents can switch a policy if they created it or if it is a shared policy that enables this capability. Policy set coordinators can switch policies from their policy sets. Administrators can switch policies that are applied to any document.
 
 When a document is protected by a policy and you revoke access privileges or switch the applied policy, the changes take effect as follows:
 
-* If the document is online, changes are applied immediately unless the user has the document open. In this case, the user must close the document for the changes to take effect. 
+* If the document is online, changes are applied immediately unless the user has the document open. In this case, the user must close the document for the changes to take effect.
 * If a recipient is using the document offline (for example, on a laptop), the changes take effect the next time the recipient synchronizes with document security by opening any policy-protected document.
 
 ## View information about a document {#view-information-about-a-document}
@@ -55,7 +55,7 @@ You can also view more details, which are described below, about a particular do
 
 Users can view information about their protected documents. Administrators can view information about documents that any user has protected with a policy. Policy set coordinators can view information about documents that are protected by policies from their policy sets.
 
-1. On the document security page, click Documents. 
+1. On the document security page, click Documents.
 1. In the list of documents, click the appropriate document. The Document Detail page opens, displaying detailed information about the document. This page also provides options for revoking document access, switching the policy, and viewing events that are related to this document.
 
 ## View related iterations for a document {#view-related-iterations-for-a-document}
@@ -95,7 +95,7 @@ When you revoke or reinstate document access privileges, the change takes effect
 
 **Revoke access to a policy-protected document**
 
-1. On the document security page, click Documents. 
+1. On the document security page, click Documents.
 1. Select the check box beside the appropriate document and click Revoke. You can revoke access to multiple documents at a time.
 1. Select a message to display to users who attempt to open the document after it is revoked:
 
@@ -108,7 +108,7 @@ When you revoke or reinstate document access privileges, the change takes effect
 
 **Reinstate document access privileges**
 
-1. On the document security page, click Documents. 
+1. On the document security page, click Documents.
 1. In the list of documents, click the appropriate document.
 1. Click Unrevoke and then click OK.
 
@@ -118,17 +118,17 @@ Users, policy set coordinators, and administrators can switch the policy that is
 
 When you switch a policy, the new policy is enforced as follows:
 
-* If the document is online and closed, the change takes effect the next time the recipient synchronizes with document security by opening any policy-protected document online. 
-* If document is online and open, the change takes effect when the user closes the document. 
+* If the document is online and closed, the change takes effect the next time the recipient synchronizes with document security by opening any policy-protected document online.
+* If document is online and open, the change takes effect when the user closes the document.
 * If the document is offline (in use without an active Internet or network connection, such as on a laptop), the change is applied the next time the user synchronizes with document security by opening a policy-protected document online.
 
 >[!NOTE]
 >
 >To permit anonymous access to a policy-protected document that currently does not have this access, remove the existing policy in the client application and then apply a policy that permits anonymous access. If you switch the policy, users still must log in to access the document.
 
-1. On the document security page, click Documents. 
+1. On the document security page, click Documents.
 1. In the list of documents, click the appropriate document.
-1. Click Switch Policy. A list of up to 100 policies appears. 
+1. Click Switch Policy. A list of up to 100 policies appears.
 1. If the policy you want is not displayed, select Policy Name or Policy ID from the Find list, type the name or ID, and click Find.
 1. Click a new policy in the list.
 1. Click Switch Policy, and then click OK to return to the Documents page.
@@ -151,7 +151,7 @@ Some additional search options are only available to administrators:
 
 **All documents:** All documents protected by administrators and users. Using the All Documents option to search may return a long list of documents.
 
-1. On the document security page, click Documents. 
+1. On the document security page, click Documents.
 1. In the Find list, select the required search criteria.
 
    You can specify the criteria as document ID, document name, publisher name, policy ID, policy name, or all documents.
@@ -162,7 +162,7 @@ Some additional search options are only available to administrators:
 
     * Click the calendar to open the Date Picker.
     * Use the arrows to find a year and month.
-    * Click a day of the month on the calendar. 
+    * Click a day of the month on the calendar.
     * Click OK to close the Date Picker.
 
 1. Click Find.
@@ -171,8 +171,8 @@ Some additional search options are only available to administrators:
 
 You can sort the list of documents by column heading. Triangle icons next to the column heading indicate which column is currently used to sort. An upward-pointing triangle indicates ascending order, while a downward-pointing triangle indicates descending order.
 
-1. On the document security page, click Documents. 
-1. Click the appropriate column heading. 
+1. On the document security page, click Documents.
+1. Click the appropriate column heading.
 1. To change the sort order, click the column again.
 
 ## Add cover page to policy protected documents {#add-cover-page-to-policy-protected-documents}
@@ -197,4 +197,4 @@ Use the following document security APIs:
 
 **protectDocumentWithCoverPage:** Secures a given PDF with the specified policy, and returns a document with a cover page and the protected document as an attachment
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Extracts the protected document which is an attachment in the document with cover page. The document with the cover page can be created using protectDocumentWithCoverPage method
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);` 
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

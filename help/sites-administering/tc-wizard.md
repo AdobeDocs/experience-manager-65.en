@@ -5,7 +5,7 @@ description: Learn about using the Language Copy Wizard in AEM.
 seo-description: Learn about using the Language Copy Wizard in AEM.
 uuid: 4a664568-30cf-42d2-b07e-68d5f451328e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: dc185a75-84a0-4075-ae1e-8bb78d414aa8

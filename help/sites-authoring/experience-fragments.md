@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
@@ -28,7 +28,7 @@ An Experience Fragment:
 
 You can use Experience Fragments:
 
-* If an author wants to re-use parts (a fragment of an experience) of a page, they need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. Experience Fragments eliminate the need for copy/paste.  
+* If an author wants to re-use parts (a fragment of an experience) of a page, they need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. Authors want to use AEM only for authoring but not for delivering to the customer. A third party system/touchpoint would consume that experience and then deliver to the end user.
 
 >[!NOTE]
@@ -93,12 +93,12 @@ To create an Experience Fragment:
    > **Either:**
    >
    > *  **Both:**
-   >  
+   >
    >    The resource type of the template (the initial node) must inherit from: `cq/experience-fragments/components/xfpage`
-   >    
+   >
    >    **And:**
    >
-   >    The name of the template must begin with: 
+   >    The name of the template must begin with:
    >    `experience-fragments`
    >
    >    This allows users to create experience fragments in `/content/experience-fragments` as the `cq:allowedTemplates` property of this folder includes all the templates that have names beginning with `experience-fragment`. Customers can update this property to include their own naming scheme or template locations.
@@ -117,7 +117,7 @@ To create an Experience Fragment:
 
    A message will be displayed. Select:
 
-    * **[!UICONTROL Done]** to return to the console 
+    * **[!UICONTROL Done]** to return to the console
     * **[!UICONTROL Open]** to open the fragment editor
 
 ## Editing your Experience Fragment {#editing-your-experience-fragment}
@@ -177,7 +177,7 @@ You can now use your Experience Fragment when authoring your pages:
 
 1. Add the actual Experience Fragment to the component instance; either:
 
-    * Drag the required fragment from the Assets Browser and drop onto the component 
+    * Drag the required fragment from the Assets Browser and drop onto the component
     * Select **[!UICONTROL Configure]** from the component toolbar and specify the fragment to use, confirm with **Done** (tick)
 
    ![xf-authoring-10](assets/xf-authoring-10.png)
@@ -218,11 +218,11 @@ To create a new Building Block:
 
 Your building block is visible in the **[!UICONTROL Building Blocks]** tab. For each block, the following actions are available:
 
-* Go to master: open the master variation in a new tab  
-* Rename   
+* Go to master: open the master variation in a new tab
+* Rename
 * Delete
 
-![xf-authoring-16](assets/xf-authoring-16.png) 
+![xf-authoring-16](assets/xf-authoring-16.png)
 
 ### Using a Building Block {#using-a-building-block}
 
@@ -248,11 +248,11 @@ For example:
 >
 >Links always reference the publish instance. They are intended to be consumed by third parties, so the link will always be called from the publish instance, not the author.
 
-![xf-authoring-17](assets/xf-authoring-17.png) 
+![xf-authoring-17](assets/xf-authoring-17.png)
 
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
 
-For export to Adobe Target, HTML is used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.  
+For export to Adobe Target, HTML is used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.
 

@@ -7,7 +7,7 @@ uuid: 07ff17b6-bdfc-4617-8b16-42aaf5c73fc7
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 ---
 
@@ -109,9 +109,9 @@ See [Supported Data Import Formats | Maya](https://knowledge.autodesk.com/suppor
 
 1. Using **[!UICONTROL CRXDE Lite]**, navigate to `/libs/settings/dam/v3D/assetTypes`.
 1. Make a copy of the **[!UICONTROL jt]** node. Right-click on the **[!UICONTROL jt]** node and select **[!UICONTROL Copy]**, then right-click the **[!UICONTROL assetTypes]** folder and select **[!UICONTROL Paste]**. This should produce a new node `/apps/cq-scene7-v3D/config/assetTypes/Copy of jt`.
-1. Rename the new node to give it a unique name which represents the file type to be added. The file suffix might be used or any other unique identifier.  
+1. Rename the new node to give it a unique name which represents the file type to be added. The file suffix might be used or any other unique identifier.
 
-1. Set the **[!UICONTROL Enabled]** property of the new node to `true`.  
+1. Set the **[!UICONTROL Enabled]** property of the new node to `true`.
 
 1. Set the **[!UICONTROL Extension]** property of the new note to the file suffix/extension of the format being added.
 1. Set the **[!UICONTROL MimeType]** property to an appropriate value. `application/x-` followed by the value of the **[!UICONTROL Extension]** property should work for most file types.

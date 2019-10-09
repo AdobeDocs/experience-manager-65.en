@@ -5,7 +5,7 @@ description: List of file formats supported by AEM Assets and features supported
 seo-description: List of file formats supported by AEM Assets and features supported for each format.
 uuid: 56debf26-d67f-4bca-933c-5eb4ec9d2865
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 8519f029-3dd1-4325-9758-e6b5b530a0ee
 ---
 
@@ -82,10 +82,10 @@ AEM supports the following functionality for the various document formats.
 
 <!-- TBD: table below with merged cells. pls check -->
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Asset Management Features</th> 
+   <th>Asset Management Features</th>
    <th></th>
    <th></th>
    <th></th>
@@ -93,311 +93,311 @@ AEM supports the following functionality for the various document formats.
    <th></th>
    <th></th>
    <th></th>
-   <th>Dynamic Media Features</th> 
-   <th></th>
-   <th></th>
-   <th></th>
-   <th></th>
-  </tr>
-  <tr>
-   <th> </th> 
-   <th>Storage</th> 
-   <th>Metadata management</th> 
-   <th>Fulltext extraction</th> 
-   <th>Metadata extraction</th> 
-   <th>Thumbnail generation</th> 
-   <th>Sub-asset extraction</th> 
-   <th>Metadata writeback</th> 
-   <th>Upload (Input format)</th> 
-   <th>Create image preset (Output format)</th> 
-   <th>Preview dynamic rendition</th> 
-   <th>Deliver dynamic rendition</th> 
-   <th>Download dynamic rendition</th> 
-  </tr>
-  <tr>
-   <th>Format</th> 
-   <th></th>
-   <th></th>
-   <th></th>
-   <th></th>
-   <th></th>
-   <th></th>
-   <th></th>
-   <th></th>
+   <th>Dynamic Media Features</th>
    <th></th>
    <th></th>
    <th></th>
    <th></th>
   </tr>
   <tr>
-   <td><a href="../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats"><strong>AI</strong></a></td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <th> </th>
+   <th>Storage</th>
+   <th>Metadata management</th>
+   <th>Fulltext extraction</th>
+   <th>Metadata extraction</th>
+   <th>Thumbnail generation</th>
+   <th>Sub-asset extraction</th>
+   <th>Metadata writeback</th>
+   <th>Upload (Input format)</th>
+   <th>Create image preset (Output format)</th>
+   <th>Preview dynamic rendition</th>
+   <th>Deliver dynamic rendition</th>
+   <th>Download dynamic rendition</th>
   </tr>
   <tr>
-   <td>DOC</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <th>Format</th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
   </tr>
   <tr>
-   <td>DOCX</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td><a href="../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats"><strong>AI</strong></a></td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>ODT</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>DOC</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="/help/assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats"><strong>PDF</strong></a></td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
+   <td>DOCX</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>HTML</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>ODT</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>RTF</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td><a href="/help/assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats"><strong>PDF</strong></a></td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>TXT</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>HTML</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>XLS</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>RTF</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>XLSX</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>TXT</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>ODS</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>XLS</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PPT</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x<br /> </td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>XLSX</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PPTX</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>ODS</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>ODP</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>PPT</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x<br /> </td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td ><strong><a href="/help/assets/managing-image-presets.md#indesign-indd-file-format">INDD</a></strong></td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>PPTX</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PS</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>ODP</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>QXP</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td ><strong><a href="/help/assets/managing-image-presets.md#indesign-indd-file-format">INDD</a></strong></td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>EPUB</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>PS</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>QXP</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>EPUB</td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -467,70 +467,70 @@ The supported archive formats and the applicability of the common DAM workflows,
 | ZIP* | x | x | x | x | x | x |
 
 <!--
-<table> 
+<table>
  <tbody>
   <tr>
-   <th> </th> 
-   <th>Storage</th> 
-   <th>Versioning</th> 
-   <th>Workflow</th> 
-   <th>Publishing</th> 
-   <th>Access Control</th> 
-   <th>Dynamic Media Delivery</th> 
+   <th> </th>
+   <th>Storage</th>
+   <th>Versioning</th>
+   <th>Workflow</th>
+   <th>Publishing</th>
+   <th>Access Control</th>
+   <th>Dynamic Media Delivery</th>
   </tr>
   <tr>
-   <td>Formats</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td>Formats</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>TGZ</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x<br /> </td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
+   <td>TGZ</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x<br /> </td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
   </tr>
   <tr>
-   <td>JAR</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x<br /> </td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
+   <td>JAR</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x<br /> </td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
   </tr>
   <tr>
-   <td>RAR</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x<br /> </td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
+   <td>RAR</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x<br /> </td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
   </tr>
   <tr>
-   <td>TAR</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x<br /> </td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td> </td> 
+   <td>TAR</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x<br /> </td>
+   <td>x</td>
+   <td>x</td>
+   <td> </td>
   </tr>
   <tr>
-   <td>ZIP*</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x<br /> </td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
+   <td>ZIP*</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x<br /> </td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
   </tr>
  </tbody>
 </table>
@@ -543,88 +543,88 @@ The supported archive formats and the applicability of the common DAM workflows,
 
 The applicability of common DAM workflows for a few other file formats is described in the table below.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Features</th> 
-   <th> </th> 
-   <th> </th> 
-   <th> </th> 
-   <th> </th> 
-   <th> </th> 
-   <th> </th> 
+   <th>Features</th>
+   <th> </th>
+   <th> </th>
+   <th> </th>
+   <th> </th>
+   <th> </th>
+   <th> </th>
   </tr>
   <tr>
-   <th> </th> 
-   <th>Storage</th> 
-   <th>Versioning</th> 
-   <th>Workflow</th> 
-   <th>Publishing</th> 
-   <th>Access Control</th> 
-   <th>Dynamic Media Delivery</th> 
+   <th> </th>
+   <th>Storage</th>
+   <th>Versioning</th>
+   <th>Workflow</th>
+   <th>Publishing</th>
+   <th>Access Control</th>
+   <th>Dynamic Media Delivery</th>
   </tr>
   <tr>
-   <th>Formats</th> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <th>Formats</th>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>*</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x<br /> </td> 
-   <td>x<br /> </td> 
-   <td>x<br /> </td> 
-   <td> </td> 
+   <td>*</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x<br /> </td>
+   <td>x<br /> </td>
+   <td>x<br /> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>SVG</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x<br /> </td> 
-   <td>x</td> 
+   <td>SVG</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x<br /> </td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>CSS</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
+   <td>CSS</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>VTT</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
+   <td>VTT</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>XML</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
-   <td>x</td> 
+   <td>XML</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
+   <td>x</td>
   </tr>
   <tr>
-   <td>JavaScript (when configured with own delivery domain)</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td>x</td> 
+   <td>JavaScript (when configured with own delivery domain)</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td>x</td>
   </tr>
  </tbody>
 </table>
@@ -640,449 +640,449 @@ A list of supported MIME types is available in CRXDE Lite at `/conf/global/setti
 <!-- TBD: Apply correct formatting for table cells uing backticks after converting the table to MD.
 -->
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td><strong>File extension</strong></td> 
-   <td><strong>MIME type/Internet media type</strong></td> 
-   <td><strong>Default jobParam value</strong></td> 
-   <td><strong>Allowed jobParam value</strong></td> 
+   <td><strong>File extension</strong></td>
+   <td><strong>MIME type/Internet media type</strong></td>
+   <td><strong>Default jobParam value</strong></td>
+   <td><strong>Allowed jobParam value</strong></td>
   </tr>
   <tr>
-   <td>Image</td> 
-   <td>image/s7asset</td> 
-   <td><code>usmAmount=1.75&amp;usmRadius=0.2&amp;usmThreshold=2&amp;usmMonochrome=0&amp;</code></td> 
-   <td><p>The default jobParam applies to all image MIME type assets.</p> 
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html">knockoutBackgroundOptions</a></li> 
-     <li>manualCropOptions</li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_color_crop_options.html">autoColorCropOptions</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_transparent_crop_options.html">autoTransparentCropOptions</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html">colorManagementOptions</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html">autoSetCreationOptions</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/r_email_settings.html">emailSetting</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_xmp_keywords.html">xmpKeywords</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html">unsharpMaskOptions</a></li> 
-    </ul> </td> 
+   <td>Image</td>
+   <td>image/s7asset</td>
+   <td><code>usmAmount=1.75&amp;usmRadius=0.2&amp;usmThreshold=2&amp;usmMonochrome=0&amp;</code></td>
+   <td><p>The default jobParam applies to all image MIME type assets.</p>
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html">knockoutBackgroundOptions</a></li>
+     <li>manualCropOptions</li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_color_crop_options.html">autoColorCropOptions</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_transparent_crop_options.html">autoTransparentCropOptions</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html">colorManagementOptions</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html">autoSetCreationOptions</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/r_email_settings.html">emailSetting</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_xmp_keywords.html">xmpKeywords</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html">unsharpMaskOptions</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>3G2</td> 
-   <td>video/3gpp2</td> 
-   <td> </td> 
+   <td>3G2</td>
+   <td>video/3gpp2</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>3GP</td> 
-   <td>video/3gpp</td> 
-   <td> </td> 
+   <td>3GP</td>
+   <td>video/3gpp</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>AAC</td> 
-   <td>audio/x-aac</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>AAC</td>
+   <td>audio/x-aac</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>AFM</td> 
-   <td>application/x-font-type1</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>AFM</td>
+   <td>application/x-font-type1</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>AI</td> 
-   <td>application/postscript</td> 
-   <td><code>aiprocess=Rasterize&amp;airesolution=150&amp;aicolorspace=Auto&amp;aialpha=false</code></td> 
+   <td>AI</td>
+   <td>application/postscript</td>
+   <td><code>aiprocess=Rasterize&amp;airesolution=150&amp;aicolorspace=Auto&amp;aialpha=false</code></td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_post_script_options.html">postScriptOptions</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_illustrator_options.html">illustratorOptions</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_post_script_options.html">postScriptOptions</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_illustrator_options.html">illustratorOptions</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>AIFF</td> 
-   <td>audio/x-aiff</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>AIFF</td>
+   <td>audio/x-aiff</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>AVI</td> 
-   <td>video/x-msvideo</td> 
-   <td> </td> 
+   <td>AVI</td>
+   <td>video/x-msvideo</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>BMP</td> 
-   <td>image/bmp</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>BMP</td>
+   <td>image/bmp</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>CSS</td> 
-   <td>text/css</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>CSS</td>
+   <td>text/css</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>DOC</td> 
-   <td>application/msword</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>DOC</td>
+   <td>application/msword</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>EPS</td> 
-   <td>application/postscript</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>EPS</td>
+   <td>application/postscript</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>EPS</td> 
-   <td>application/eps</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>EPS</td>
+   <td>application/eps</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>EPS</td> 
-   <td>application/x-eps</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>EPS</td>
+   <td>application/x-eps</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>EPS</td> 
-   <td>image/eps</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>EPS</td>
+   <td>image/eps</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>EPS</td> 
-   <td>image/x-eps</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>EPS</td>
+   <td>image/x-eps</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>F4V</td> 
-   <td>video/x-f4v</td> 
-   <td> </td> 
+   <td>F4V</td>
+   <td>video/x-f4v</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>FLA</td> 
-   <td>application/x-shockwave-flash</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>FLA</td>
+   <td>application/x-shockwave-flash</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>FLV</td> 
-   <td>video/x-flv</td> 
-   <td> </td> 
+   <td>FLV</td>
+   <td>video/x-flv</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>FPX</td> 
-   <td>image/vnd.fpx</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>FPX</td>
+   <td>image/vnd.fpx</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>GIF</td> 
-   <td>image/gif</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>GIF</td>
+   <td>image/gif</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>ICC</td> 
-   <td>application/vnd.iccprofile</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>ICC</td>
+   <td>application/vnd.iccprofile</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>ICM</td> 
-   <td><p>application/vnd.iccprofile</p> </td> 
-   <td><p> </p> </td> 
-   <td> </td> 
+   <td>ICM</td>
+   <td><p>application/vnd.iccprofile</p> </td>
+   <td><p> </p> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>INDD</td> 
-   <td>application/x-indesign</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>INDD</td>
+   <td>application/x-indesign</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>JPEG</td> 
-   <td>image/jpeg</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>JPEG</td>
+   <td>image/jpeg</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>JPG</td> 
-   <td>image/jpeg</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>JPG</td>
+   <td>image/jpeg</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>M2V</td> 
-   <td>video/mpeg</td> 
-   <td> </td> 
+   <td>M2V</td>
+   <td>video/mpeg</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>M4V</td> 
-   <td><br /> video/x-m4v</td> 
-   <td> </td> 
+   <td>M4V</td>
+   <td><br /> video/x-m4v</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>MOV</td> 
-   <td>video/quicktime</td> 
-   <td> </td> 
+   <td>MOV</td>
+   <td>video/quicktime</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>MP3</td> 
-   <td>audio/mpeg</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>MP3</td>
+   <td>audio/mpeg</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>MP4</td> 
-   <td>video/mp4</td> 
-   <td> </td> 
+   <td>MP4</td>
+   <td>video/mp4</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>MPEG</td> 
-   <td>video/mpeg</td> 
-   <td> </td> 
+   <td>MPEG</td>
+   <td>video/mpeg</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>MPG</td> 
-   <td>video/mpeg</td> 
-   <td> </td> 
+   <td>MPG</td>
+   <td>video/mpeg</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>MTS</td> 
-   <td>model/vnd.mts</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>MTS</td>
+   <td>model/vnd.mts</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>OGV</td> 
-   <td>video/ogg</td> 
-   <td> </td> 
+   <td>OGV</td>
+   <td>video/ogg</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>OTF</td> 
-   <td>application/x-font-otf</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>OTF</td>
+   <td>application/x-font-otf</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PDF</td> 
-   <td>application/pdf</td> 
-   <td><code>pdfprocess=Rasterize&amp;resolution=150&amp;colorspace=Auto&amp;pdfbrochure=true&amp;keywords=true&amp;links=true</code></td> 
+   <td>PDF</td>
+   <td>application/pdf</td>
+   <td><code>pdfprocess=Rasterize&amp;resolution=150&amp;colorspace=Auto&amp;pdfbrochure=true&amp;keywords=true&amp;links=true</code></td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_pdf_options.html">pdfOptions</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_pdf_options.html">pdfOptions</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>PFB</td> 
-   <td>application/x-font-type1</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>PFB</td>
+   <td>application/x-font-type1</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PFM</td> 
-   <td>application/x-font-type1</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>PFM</td>
+   <td>application/x-font-type1</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PICT</td> 
-   <td>image/x-pict</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>PICT</td>
+   <td>image/x-pict</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PNG</td> 
-   <td>image/png</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>PNG</td>
+   <td>image/png</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PPT</td> 
-   <td>application/vnd.ms-powerpoint</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>PPT</td>
+   <td>application/vnd.ms-powerpoint</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>PS</td> 
-   <td>application/postscript</td> 
-   <td><code>psprocess=Rasterize&amp;psresolution=150&amp;pscolorspace=Auto&amp;psalpha=false&amp;psextractsearchwords=true</code></td> 
+   <td>PS</td>
+   <td>application/postscript</td>
+   <td><code>psprocess=Rasterize&amp;psresolution=150&amp;pscolorspace=Auto&amp;psalpha=false&amp;psextractsearchwords=true</code></td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_post_script_options.html">postScriptOptions</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_illustrator_options.html">illustratorOptions</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_post_script_options.html">postScriptOptions</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_illustrator_options.html">illustratorOptions</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>PSD</td> 
-   <td>image/vnd.adobe.photoshop</td> 
-   <td><code>process=MaintainLayers&amp;layerNaming=Layername&amp;anchor=Center&amp;createTemplate=true&amp;extractText=true&amp;extendLayers=false</code></td> 
+   <td>PSD</td>
+   <td>image/vnd.adobe.photoshop</td>
+   <td><code>process=MaintainLayers&amp;layerNaming=Layername&amp;anchor=Center&amp;createTemplate=true&amp;extractText=true&amp;extendLayers=false</code></td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_photoshop_options.html">photoshopOptions</a></li> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_photoshop_layer_options.html">photoshopLayerOptions</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_photoshop_options.html">photoshopOptions</a></li>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_photoshop_layer_options.html">photoshopLayerOptions</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>RTF</td> 
-   <td>application/rtf</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>RTF</td>
+   <td>application/rtf</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>SVG</td> 
-   <td>image/svg+xml</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>SVG</td>
+   <td>image/svg+xml</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>SWF</td> 
-   <td>application/x-shockwave-flash</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>SWF</td>
+   <td>application/x-shockwave-flash</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>TAR</td> 
-   <td>application/x-tar</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>TAR</td>
+   <td>application/x-tar</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>TIF</td> 
-   <td>image/tiff</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>TIF</td>
+   <td>image/tiff</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>TIFF</td> 
-   <td>image/tiff</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>TIFF</td>
+   <td>image/tiff</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>TTC</td> 
-   <td>application/x-font-ttf</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>TTC</td>
+   <td>application/x-font-ttf</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>TTF</td> 
-   <td>application/x-font-ttf</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>TTF</td>
+   <td>application/x-font-ttf</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>VOB</td> 
-   <td>video/dvd</td> 
-   <td> </td> 
+   <td>VOB</td>
+   <td>video/dvd</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>VTT</td> 
-   <td>text/vtt</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>VTT</td>
+   <td>text/vtt</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>WAV</td> 
-   <td>audio/x-wav</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>WAV</td>
+   <td>audio/x-wav</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>WEBM</td> 
-   <td>video/webm</td> 
-   <td> </td> 
+   <td>WEBM</td>
+   <td>video/webm</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>WMA</td> 
-   <td>audio/x-ms-wma</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>WMA</td>
+   <td>audio/x-ms-wma</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>WMV</td> 
-   <td>video/x-ms-wmv</td> 
-   <td> </td> 
+   <td>WMV</td>
+   <td>video/x-ms-wmv</td>
+   <td> </td>
    <td>
-    <ul> 
-     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li> 
-    </ul> </td> 
+    <ul>
+     <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html">ExcludeMasterVideoFromAVS</a></li>
+    </ul> </td>
   </tr>
   <tr>
-   <td>XLS</td> 
-   <td>application/vnd.ms-excel</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>XLS</td>
+   <td>application/vnd.ms-excel</td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td>ZIP</td> 
-   <td>application/zip</td> 
-   <td> </td> 
-   <td> </td> 
+   <td>ZIP</td>
+   <td>application/zip</td>
+   <td> </td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
 
- 
+
 >[!MORELIKETHIS]
 >
 >[Enable MIME type-based Assets/Scene7 upload job parameter support](../sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).

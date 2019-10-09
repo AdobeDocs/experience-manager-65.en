@@ -6,7 +6,7 @@ seo-description: null
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 ---
@@ -41,37 +41,37 @@ The following diagram shows the interaction among an end user attempting to log 
 
 ![mu_mu_umauth_process](assets/mu_mu_umauth_process.png)
 
-The following table describes each step of the authentication process. 
+The following table describes each step of the authentication process.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Step</p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Step</p></th>
+   <th><p>Description</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>A user attempts to log into a service that invokes User Management. The user specifies a user name and password. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>User Management sends the user name and password, as well as configuration information, to the authentication provider.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>The authentication provider connects to the user store and authenticates the user.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>4</p></td> 
-   <td><p>The authentication provider returns the results to User Management.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>5</p></td> 
-   <td><p>User Management either lets the user log in or denies access to the product.</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>A user attempts to log into a service that invokes User Management. The user specifies a user name and password. </p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>User Management sends the user name and password, as well as configuration information, to the authentication provider.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>The authentication provider connects to the user store and authenticates the user.</p></td>
+  </tr>
+  <tr>
+   <td><p>4</p></td>
+   <td><p>The authentication provider returns the results to User Management.</p></td>
+  </tr>
+  <tr>
+   <td><p>5</p></td>
+   <td><p>User Management either lets the user log in or denies access to the product.</p></td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -109,7 +109,7 @@ To add a user, perform the following steps:
 1. Include project files.
 1. Create a DirectoryManagerService client.
 1. Define user information.
-1. Add the user to AEM Forms. 
+1. Add the user to AEM Forms.
 1. Verify that the user is added.
 
 **Include project files**
@@ -126,9 +126,9 @@ When you add a new user by using the Directory Manager Service API, define infor
 
 * **Domain name**: The domain to which the user belongs (for example, `DefaultDom`).
 * **User identifier value**: The identifier value of the user (for example, `wblue`).
-* **Principal type**: The type of user (for example, you can specify `USER)`. 
-* **Given name**: A given name for the user (for example, `Wendy`). 
-* **Family name**: The family name for the user (for example, `Blue)`. 
+* **Principal type**: The type of user (for example, you can specify `USER)`.
+* **Given name**: A given name for the user (for example, `Wendy`).
+* **Family name**: The family name for the user (for example, `Blue)`.
 * **Locale**: Locale information for the user.
 
 **Add the user to AEM Forms**
@@ -161,14 +161,14 @@ Add users by using the Directory Manager Service API (Java):
 
 1. Create a DirectoryManagerServices client.
 
-   Create a `DirectoryManagerServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `DirectoryManagerServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Define user information.
 
-    * Create a `UserImpl` object by using its constructor. 
-    * Set the demain name by invoking the `UserImpl` object’s `setDomainName` method. Pass a string value that specifies the domain name. 
-    * Set the principal type by invoking the `UserImpl` object’s `setPrincipalType` method. Pass a string value that specifies the type of user. For example, you can specify `USER`. 
-    * Set the user identifier value by invoking the `UserImpl` object’s `setUserid` method. Pass a string value that specifies the user identifier value. For example, you can specify `wblue`. 
+    * Create a `UserImpl` object by using its constructor.
+    * Set the demain name by invoking the `UserImpl` object’s `setDomainName` method. Pass a string value that specifies the domain name.
+    * Set the principal type by invoking the `UserImpl` object’s `setPrincipalType` method. Pass a string value that specifies the type of user. For example, you can specify `USER`.
+    * Set the user identifier value by invoking the `UserImpl` object’s `setUserid` method. Pass a string value that specifies the user identifier value. For example, you can specify `wblue`.
     * Set the canonical name by invoking the `UserImpl` object’s `setCanonicalName` method. Pass a string value that specifies the user’s canonical name. For example, you can specify `wblue`.
     * Set the given name by invoking the `UserImpl` object’s `setGivenName` method. Pass a string value that specifies the user’s given name. For example, you can specify `Wendy`.
     * Set the family name by invoking the `UserImpl` object’s `setFamilyName` method. Pass a string value that specifies the user’s family name. For example, you can specify `Blue`.
@@ -184,11 +184,11 @@ Add users by using the Directory Manager Service API (Java):
     * The `UserImpl` object that represents the new user
     * A string value that represents the user’s password
 
-   The `createLocalUser` method returns a string value that specifies the local user identifier value. 
+   The `createLocalUser` method returns a string value that specifies the local user identifier value.
 
 1. Verify that the user was added.
 
-    * Create a `PrincipalSearchFilter` object by using its constructor. 
+    * Create a `PrincipalSearchFilter` object by using its constructor.
     * Set the user identifier value by invoking the `PrincipalSearchFilter` object’s `setUserId` method. Pass a string value that represents the user identifier value.
     * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user.
 
@@ -216,10 +216,10 @@ Add users by using the Directory Manager Service API (web service):
 
 1. Create a DirectoryManagerService client.
 
-    * Create a `DirectoryManagerServiceClient` object by using its default constructor. 
+    * Create a `DirectoryManagerServiceClient` object by using its default constructor.
     * Create a `DirectoryManagerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. Ensure that you specify `?blob=mtom`.
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DirectoryManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DirectoryManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
@@ -229,12 +229,12 @@ Add users by using the Directory Manager Service API (web service):
 
 1. Define user information.
 
-    * Create a `UserImpl` object by using its constructor. 
+    * Create a `UserImpl` object by using its constructor.
     * Set the demain name by assigning a string value to the `UserImpl` object’s `domainName` field.
-    * Set the principal type by assigning a string value to the `UserImpl` object’s `principalType` field. For example, you can specify `USER`. 
-    * Set the user identifier value by assigning a string value to the `UserImpl` object’s `userid` field. 
-    * Set the canonical name value by assigning a string value to the `UserImpl` object’s `canonicalName` field. 
-    * Set the given name value by assigning a string value to the `UserImpl` object’s `givenName` field. 
+    * Set the principal type by assigning a string value to the `UserImpl` object’s `principalType` field. For example, you can specify `USER`.
+    * Set the user identifier value by assigning a string value to the `UserImpl` object’s `userid` field.
+    * Set the canonical name value by assigning a string value to the `UserImpl` object’s `canonicalName` field.
+    * Set the given name value by assigning a string value to the `UserImpl` object’s `givenName` field.
     * Set the family name value by assigning a string value to the `UserImpl` object’s `familyName` field.
 
 1. Add the user to AEM Forms.
@@ -244,11 +244,11 @@ Add users by using the Directory Manager Service API (web service):
     * The `UserImpl` object that represents the new user
     * A string value that represents the user’s password
 
-   The `createLocalUser` method returns a string value that specifies the local user identifier value. 
+   The `createLocalUser` method returns a string value that specifies the local user identifier value.
 
 1. Verify that the user was added.
 
-    * Create a `PrincipalSearchFilter` object by using its constructor. 
+    * Create a `PrincipalSearchFilter` object by using its constructor.
     * Set the user identifier value of the user by assigning a string value that represents the user identifier value to the `PrincipalSearchFilter` object’s `userId` field.
     * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `MyArrayOfUser` collection object, where each element is a `User` object. Iterate through the `MyArrayOfUser` collection to locate the user.
 
@@ -311,11 +311,11 @@ Delete users by using the Directory Manager Service API (Java):
 
 1. Create a DirectoryManagerService client.
 
-   Create a `DirectoryManagerServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `DirectoryManagerServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Specify the user to delete.
 
-    * Create a `PrincipalSearchFilter` object by using its constructor. 
+    * Create a `PrincipalSearchFilter` object by using its constructor.
     * Set the user identifier value by invoking the `PrincipalSearchFilter` object’s `setUserId` method. Pass a string value that represents the user identifier value.
     * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user to delete.
 
@@ -345,20 +345,20 @@ Delete users by using the Directory Manager Service API (web service):
 
 1. Create a DirectoryManagerService client.
 
-    * Create a `DirectoryManagerServiceClient` object by using its default constructor. 
+    * Create a `DirectoryManagerServiceClient` object by using its default constructor.
     * Create a `DirectoryManagerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. Ensure that you specify `blob=mtom.`
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DirectoryManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DirectoryManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Specify the user to delete.
 
-    * Create a `PrincipalSearchFilter` object by using its constructor. 
+    * Create a `PrincipalSearchFilter` object by using its constructor.
     * Set the user identifier value by assigning a string value to the `PrincipalSearchFilter` object’s `userId` field.
     * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `MyArrayOfUser` collection object, where each element is a `User` object. Iterate through the `MyArrayOfUser` collection to locate the user. The `User` object retrieved from the `MyArrayOfUser` collection object is used to delete the user.
 
@@ -385,7 +385,7 @@ To create a group, perform the following steps:
 1. Include project files.
 1. Create a DirectoryManagerService client.
 1. Determine that the group does not exist.
-1. Create the group. 
+1. Create the group.
 1. Perform an action with the group.
 
 **Include project files**
@@ -414,7 +414,7 @@ When you create a group, ensure that the group does not exist in the same domain
 After you determine that the group does not exist in the domain, create the group and specify the following attributes:
 
 * **CommonName**: The name of the group.
-* **Domain**: The domain in which the group is added. 
+* **Domain**: The domain in which the group is added.
 * **Description**: A description of the group.
 
 **Perform an action with the group**
@@ -443,11 +443,11 @@ Create a group by using the Directory Manager Service API (Java):
 
 1. Create a DirectoryManagerService client.
 
-   Create a `DirectoryManagerServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `DirectoryManagerServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Determine whether the group exists.
 
-    * Create a `PrincipalSearchFilter` object by using its constructor. 
+    * Create a `PrincipalSearchFilter` object by using its constructor.
     * Set the principal type by invoking the `PrincipalSearchFilter` object’s `setPrincipalType` object. Pass the value `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
     * Set the domain by invoking the `PrincipalSearchFilter` object’s `setSpecificDomainName` object. Pass a string value that specifies the domain name.
     * To find a group, invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method (a principal can be a group). Pass the `PrincipalSearchFilter` object that specifies the principal type and the domain name. This method returns a `java.util.List` instance where each element is a `Group` instance. Each group instance conforms to the filter specified by using the `PrincipalSearchFilter` object.
@@ -455,18 +455,18 @@ Create a group by using the Directory Manager Service API (Java):
 
 1. Create the group.
 
-    * If the group does not exist, invoke the `Group` object’s `setCommonName` method and pass a string value that specifies the group name. 
-    * Invoke the `Group` object’s `setDescription` method and pass a string value that specifies the group description. 
-    * Invoke the `Group` object’s `setDomainName` method and pass a string value that specifies the domain name. 
+    * If the group does not exist, invoke the `Group` object’s `setCommonName` method and pass a string value that specifies the group name.
+    * Invoke the `Group` object’s `setDescription` method and pass a string value that specifies the group description.
+    * Invoke the `Group` object’s `setDomainName` method and pass a string value that specifies the domain name.
     * Invoke the `DirectoryManagerServiceClient` object’s `createLocalGroup` method and pass the `Group` instance.
 
-   The `createLocalUser` method returns a string value that specifies the local user identifier value. 
+   The `createLocalUser` method returns a string value that specifies the local user identifier value.
 
 1. Perform an action with the group.
 
-    * Create a `PrincipalSearchFilter` object by using its constructor. 
+    * Create a `PrincipalSearchFilter` object by using its constructor.
     * Set the user identifier value by invoking the `PrincipalSearchFilter` object’s `setUserId` method. Pass a string value that represents the user identifier value.
-    * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user. 
+    * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user.
     * Add a user to the group by invoking the `DirectoryManagerServiceClient` object’s `addPrincipalToLocalGroup` method. Pass the return value of the `User` object’s `getOid` method. Pass the return value of the `Group` objects’s `getOid` method (use the `Group` instance that represents the new group).
 
 **See also**
@@ -567,7 +567,7 @@ To programmatically manage users, groups, and domains using the Directory Manage
 
 1. Create a DirectoryManagerService client.
 
-   Create a `DirectoryManagerServiceService` object by using your proxy class’ constructor. 
+   Create a `DirectoryManagerServiceService` object by using your proxy class’ constructor.
 
 1. Invoke the appropriate user or group operations.
 
@@ -643,7 +643,7 @@ To manage roles and permissions using the Authorization Manager Service API (Jav
 
 1. Create an AuthorizationManagerService client.
 
-   Create an `AuthorizationManagerServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create an `AuthorizationManagerServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Invoke the appropriate role or permission operations.
 
@@ -681,15 +681,15 @@ Manage roles and permissions by using the Authorization Manager Service API (web
 
 1. Create an AuthorizationManagerService client.
 
-    * Create an `AuthorizationManagerServiceClient` object by using its default constructor. 
-    * Create an `AuthorizationManagerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AuthorizationManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `AuthorizationManagerServiceClient` object by using its default constructor.
+    * Create an `AuthorizationManagerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AuthorizationManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Invoke the appropriate role or permission operations.
@@ -726,31 +726,31 @@ The following diagram shows the application’s logic flow.
 
 The following table describes the steps in this diagram
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Step</p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Step</p></th>
+   <th><p>Description</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>The user accesses a web site and specifies a user name and password. This information is submitted to a J2EE application server hosting AEM Forms.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>The user credentials are authenticated with the Authentication Manager service. If the user credentials are valid, the workflow proceeds to step 3. Otherwise, a message is sent to the user stating that the user is not an authorized user.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>User information and a form design are retrieved from a secured enterprise database. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>4</p></td> 
-   <td><p>User information is merged with a form design and the form is rendered to the user. </p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>The user accesses a web site and specifies a user name and password. This information is submitted to a J2EE application server hosting AEM Forms.</p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>The user credentials are authenticated with the Authentication Manager service. If the user credentials are valid, the workflow proceeds to step 3. Otherwise, a message is sent to the user stating that the user is not an authorized user.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>User information and a form design are retrieved from a secured enterprise database. </p></td>
+  </tr>
+  <tr>
+   <td><p>4</p></td>
+   <td><p>User information is merged with a form design and the form is rendered to the user. </p></td>
+  </tr>
+ </tbody>
 </table>
 
 ### Summary of steps {#summary_of_steps-5}
@@ -826,7 +826,7 @@ Authenticate a user using the Authentication Manager Service API (web service):
 
 1. Create an AuthenticationManagerService client.
 
-   Create a `AuthenticationManagerServiceService` object by using your proxy class’ constructor. 
+   Create a `AuthenticationManagerServiceService` object by using your proxy class’ constructor.
 
 1. Invoke the authentication operation.
 
@@ -852,31 +852,31 @@ The following diagram shows AEM Forms synchronizing with a user respository.
 
 The following table describes the steps in this diagram
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Step</p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Step</p></th>
+   <th><p>Description</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>A client application requests that AEM Forms performs a synchronization operation.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>AEM Forms performs a synchronization operation.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>User information is updated.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>4</p></td> 
-   <td><p>A user is able to view the updated user information. </p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>A client application requests that AEM Forms performs a synchronization operation.</p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>AEM Forms performs a synchronization operation.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>User information is updated.</p></td>
+  </tr>
+  <tr>
+   <td><p>4</p></td>
+   <td><p>A user is able to view the updated user information. </p></td>
+  </tr>
+ </tbody>
 </table>
 
 ### Summary of steps {#summary_of_steps-6}

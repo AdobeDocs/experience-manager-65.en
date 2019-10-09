@@ -1,12 +1,12 @@
 ---
 title: Save forms as templates
 seo-title: Save forms as templates
-description: Learn how to create templates from forms with data required repeatedly. 
-seo-description: Learn how to create templates from forms with data required repeatedly. 
+description: Learn how to create templates from forms with data required repeatedly.
+seo-description: Learn how to create templates from forms with data required repeatedly.
 uuid: 090c6271-4061-4adc-a063-9df4953b47ce
 contentOwner: khsingh
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 ---
@@ -17,7 +17,7 @@ At times, when users fill a form, inputs to a few fields remain the same. For su
 
 Perform the following steps to create a template:
 
-1. Open a form and select or fill the fields that have almost identical values every time you use it. You can include an attachment with the template that you typically add when you fill the form. 
+1. Open a form and select or fill the fields that have almost identical values every time you use it. You can include an attachment with the template that you typically add when you fill the form.
 1. Tap the **Save as Template** ![save_as_template](assets/save_as_template.png)icon. A dialog box to specify the name of the template appears.
 1. Specify the name of the template and tap **Save**. The template appears in the template folder.
 

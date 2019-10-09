@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about building AEM components that ac
 uuid: 1996f017-21d3-4d90-9f55-95c626bc4c60
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 0019e367-8edc-4a23-bfa4-5beda266ace6
 ---

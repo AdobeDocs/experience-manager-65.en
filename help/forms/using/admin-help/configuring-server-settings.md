@@ -7,7 +7,7 @@ uuid: 73b51ac0-56e5-4748-bb33-e3986c69eb2d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 ---
 
@@ -69,7 +69,7 @@ On the Task Notification page, you can configure templates that forms workflow w
 
 You configure the following types of notifications for users and groups:
 
-* reminders 
+* reminders
 * task assignments
 * deadlines
 

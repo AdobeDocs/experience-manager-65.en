@@ -7,7 +7,7 @@ uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 ---
@@ -31,16 +31,16 @@ To render a form as HTML, the form design must be saved as an XDP file. A form d
 When a form design is rendered as an HTML form, each second-level subform is rendered as an HTML page (panel). You can view a subform’s hierarchy in Designer. Child subforms that belong to the root subform (the default name of a root subform is form1) are the panel subforms. The following example shows a form design’s subforms.
 
 ```as3
-     form1 
-         Master Pages 
-         PanelSubform1 
-             NestedDynamicSubform 
-                 TextEdit1 
-         PanelSubform2 
-             TextEdit1 
-         PanelSubform3 
-             TextEdit1 
-         PanelSubform4 
+     form1
+         Master Pages
+         PanelSubform1
+             NestedDynamicSubform
+                 TextEdit1
+         PanelSubform2
+             TextEdit1
+         PanelSubform3
+             TextEdit1
+         PanelSubform4
              TextEdit1
 ```
 
@@ -101,12 +101,12 @@ header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv
 ```
 
 ```as3
-var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature 
-    function _user_onsubmit() { 
-    var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); 
-    elems[0].disabled = true; 
-    elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); 
-    elems[0].disabled = true; 
+var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
+    function _user_onsubmit() {
+    var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]");
+    elems[0].disabled = true;
+    elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]");
+    elems[0].disabled = true;
     }
 ```
 
@@ -152,9 +152,9 @@ As you move between HTML pages (panels), only the state of the data is maintaine
 The following script maintains the `fillColor` of a field based on the value of `hiddenField`. Assume this script is located in a field’s `Calculate` event.
 
 ```as3
-     If (hiddenField.rawValue == 1) 
-         this.fillColor = "255,0,0" 
-     else 
+     If (hiddenField.rawValue == 1)
+         this.fillColor = "255,0,0"
+     else
          this.fillColor = "0,255,0"
 ```
 
@@ -190,7 +190,7 @@ It is recommended that you limit your use of validation rules for form fields wh
 To render an HTML form, perform the following steps:
 
 1. Include project files.
-1. Create a Forms Client API object. 
+1. Create a Forms Client API object.
 1. Set HTML run-time options.
 1. Render an HTML form.
 1. Write the form data stream to the client web browser.
@@ -259,17 +259,17 @@ Render an HTML form by using the Forms API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path.
 
 1. Create a Forms Client API object
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Set HTML run-time options
 
-    * Create an `HTMLRenderSpec` object by using its constructor. 
-    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`. 
+    * Create an `HTMLRenderSpec` object by using its constructor.
+    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`.
     * To set the locale value for the HTML form, invoke the `HTMLRenderSpec` object’s `setLocale` method and pass a string value that specifies the locale value. (This is an optional setting.)
     * To render the HTML form within full HTML tags, invoke the `HTMLRenderSpec` object’s `setOutputType` method and pass `OutputType.FullHTMLTags`. (This is an optional setting.)
 
@@ -282,11 +282,11 @@ Render an HTML form by using the Forms API (Java):
    Invoke the `FormsServiceClient` object’s `(Deprecated) renderHTMLForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-    * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`. 
-    * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object. 
-    * The `HTMLRenderSpec` object that stores HTML run-time options. 
+    * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`.
+    * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object.
+    * The `HTMLRenderSpec` object that stores HTML run-time options.
     * A string value that specifies the `HTTP_USER_AGENT` header value; for example, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-    * A `URLSpec` object that stores URI values required to render an HTML form. 
+    * A `URLSpec` object that stores URI values required to render an HTML form.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
 
    The `(Deprecated) renderHTMLForm` method returns a `FormsResult` object that contains a form data stream that can be written to the client web browser.
@@ -297,8 +297,8 @@ Render an HTML form by using the Forms API (Java):
     * Get the content type of the `com.adobe.idp.Document` object by invoking its `getContentType` method.
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
     * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method. 
-    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument. 
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
+    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument.
     * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
@@ -317,17 +317,17 @@ Render an HTML form by using the Forms API (web service):
 
 1. Include project files
 
-    * Create Java proxy classes that consume the Forms service WSDL. 
+    * Create Java proxy classes that consume the Forms service WSDL.
     * Include the Java proxy classes into your class path.
 
 1. Create a Forms Client API object
 
-   Create a `FormsService` object and set authentication values. 
+   Create a `FormsService` object and set authentication values.
 
 1. Set HTML run-time options
 
-    * Create an `HTMLRenderSpec` object by using its constructor. 
-    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`. 
+    * Create an `HTMLRenderSpec` object by using its constructor.
+    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`.
     * To set the locale value for the HTML form, invoke the `HTMLRenderSpec` object’s `setLocale` method and pass a string value that specifies the locale value. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
     * To render the HTML form within full HTML tags, invoke the `HTMLRenderSpec` object’s `setOutputType` method and pass `OutputType.FullHTMLTags`.
 
@@ -340,14 +340,14 @@ Render an HTML form by using the Forms API (web service):
    Invoke the `FormsService` object’s `(Deprecated) renderHTMLForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-    * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`. 
+    * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`.
     * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating.md#prepopulating-forms-with-flowable-layouts).)
-    * The `HTMLRenderSpec` object that stores HTML run-time options. 
-    * A string value that specifies the `HTTP_USER_AGENT` header value; for example, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. You can pass an empty string if you do not want to set this value. 
+    * The `HTMLRenderSpec` object that stores HTML run-time options.
+    * A string value that specifies the `HTTP_USER_AGENT` header value; for example, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. You can pass an empty string if you do not want to set this value.
     * A `URLSpec` object that stores URI values required to render an HTML form. (See [Specify URI values](/help/forms/developing/rendering-interactive-pdf-forms.md).)
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form. (See [Attach files to the form](/help/forms/developing/rendering-interactive-pdf-forms.md).)
-    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This parameter value stores the rendered form. 
-    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This parameter will store the output XML data. 
+    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This parameter value stores the rendered form.
+    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This parameter will store the output XML data.
     * An empty `javax.xml.rpc.holders.LongHolder` object that is populated by the method. This argument will store the number of pages in the form.
     * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the method. This argument will store the locale value.
     * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the method. This argument will store the HTML rendering value that is used.
@@ -357,12 +357,12 @@ Render an HTML form by using the Forms API (web service):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member. 
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
     * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
     * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array. 
+    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
     * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**

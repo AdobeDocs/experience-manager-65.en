@@ -1,12 +1,12 @@
 ---
 title: Configuring Components in Design Mode
 seo-title: Configuring Components in Design Mode
-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components. 
-seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components. 
+description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 page-status-flag: de-activated
 uuid: 57249965-3a30-49ce-9fb0-864c5daaa262
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 93f98f7b-7ab8-4d9c-b179-dc99b80ffc91
@@ -71,7 +71,7 @@ In Design mode, you can also configure attributes for the individual components.
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. Click **OK** to save your changes.  
+1. Click **OK** to save your changes.
 
 1. The Sidekick minimizes in Design mode. By clicking on the arrow you can maximize the Sidekick and return to Edit Mode:
 

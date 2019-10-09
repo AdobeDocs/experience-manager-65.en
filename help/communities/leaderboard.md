@@ -5,7 +5,7 @@ description: Leaderboard feature overview
 seo-description: Leaderboard feature overview
 uuid: 815a6928-b147-496d-9751-13159ad1304d
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
@@ -19,31 +19,31 @@ Prior to including the leaderboard component on a page, it is necessary to confi
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/gamification/components/hbs/leaderboard</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/gamification/components/hbs/leaderboard</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.gamification.hbs.leaderboard</td> 
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/gamification/components/hbs/leaderboard/leaderboard.hbs<br /> </td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/gamification/components/hbs/leaderboard/leaderboard.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/gamification/components/hbs/leaderboard/clientlibs/leaderboard.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/gamification/components/hbs/leaderboard/clientlibs/leaderboard.css</td>
   </tr>
   <tr>
-   <td><strong> properties</strong></td> 
-   <td>See <a href="enabling-leaderboard.md">Leaderboard Feature</a></td> 
+   <td><strong> properties</strong></td>
+   <td>See <a href="enabling-leaderboard.md">Leaderboard Feature</a></td>
   </tr>
  </tbody>
 </table>

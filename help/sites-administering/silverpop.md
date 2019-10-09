@@ -5,7 +5,7 @@ description: Learn how to integrate AEM with Silverpop Engage
 seo-description: Learn how to integrate AEM with Silverpop Engage
 uuid: dfff7aaf-5264-4763-995f-5647f565c03b
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: dfff6bdc-0d5f-4338-aa8a-7d0eb04bc19a
@@ -43,8 +43,8 @@ To create a Silverpop configuration in Cloud Services:
 
 1. Enter a title and optionally, a name and click **Create**. The** Silverpop Settings** configuration window opens.
 1. Enter the username, password and select an API endpoint from the dropdown list.
-1. Click **Connect to Silverpop.** When you have successfully connected you see a success dialog. Click **OK** to exit the window. You can go to Silverpop by clicking **Go to Silverpop Engage**. 
-1. Silverpop has been configured. You can edit the configuration by clicking **Edit**. 
+1. Click **Connect to Silverpop.** When you have successfully connected you see a success dialog. Click **OK** to exit the window. You can go to Silverpop by clicking **Go to Silverpop Engage**.
+1. Silverpop has been configured. You can edit the configuration by clicking **Edit**.
 1. Additionally, Silverpop Engage framework can be configured for personalized actions by providing title and name (optional). Click Create will successfully create the framework for the already configured Silverpop connection.
 
    Imported data extension columns can later be used through the AEM component - **Text and Personalization**.

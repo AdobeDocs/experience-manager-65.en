@@ -7,7 +7,7 @@ uuid: 46b1dbe5-517c-4294-bb52-cc6700a768e8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 ---
 
@@ -31,9 +31,9 @@ You can also import and delete certificates using the Trust Manager API. For det
 1. In administration console, click **[!UICONTROL Settings > Trust Store Management > Certificates]**.
 1. Click Import and, under Trust Store Type, select one of these options:
 
-    * **Trust for SSL Connections:** Specifies that AEM forms can use certificates to connect to external systems over SSL. 
-    * **Trust for Certify Signature:** Specifies that certificates are trusted in document signing operations for certifying author digital signatures. 
-    * **Trust for Signature:** Specifies that certificates are trusted in document signing operations for non-author digital signatures. 
+    * **Trust for SSL Connections:** Specifies that AEM forms can use certificates to connect to external systems over SSL.
+    * **Trust for Certify Signature:** Specifies that certificates are trusted in document signing operations for certifying author digital signatures.
+    * **Trust for Signature:** Specifies that certificates are trusted in document signing operations for non-author digital signatures.
     * **Trust for Certificate Authentication:** Specifies AEM forms uses certificates for authenticating users using certificate or smart card authentication.
     * **Trust for OCSP Server:** Specifies that AEM forms can use certificates to connect to external OCSP responders
     * **Trust for Identity:** Specifies that certificates can be used to trust information other than types specified above.
@@ -47,7 +47,7 @@ You can also import and delete certificates using the Trust Manager API. For det
 
 ## Export a certificate {#export-a-certificate}
 
-1. In administration console, click **[!UICONTROL Settings > Trust Store Management > Certificates]**. 
+1. In administration console, click **[!UICONTROL Settings > Trust Store Management > Certificates]**.
 1. Click the alias name of the certificate to export. The **[!UICONTROL Certificate Details]** page is displayed.
 1. Click **[!UICONTROL Export]**, follow the directions to export the certificate, and then click **[!UICONTROL OK]**.
 

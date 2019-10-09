@@ -7,7 +7,7 @@ uuid: 016e7745-e3c3-4d77-b95a-c0e671d719e2
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
 ---
 
@@ -43,41 +43,41 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access
 
 In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), access the following configurations:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Path</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>/libs/settings/dam/v3D/settings/addGroundPlaneImageOnIngest</td> 
-   <td>Enables generation of an ambient occlusion drop shadow when viewing or rendering with an IBL stage. Applies to Preview and Rendering with RapidRefine</td> 
-  </tr> 
-  <tr> 
-   <td><p>/libs/settings/dam/v3D/settings/cleanupRenderWorkDir</p> </td> 
-   <td>Set to <strong>false</strong> to keep temporary files in the MayaWork folder after conversion and rendering. May be useful when debugging issues with Maya conversion and rendering.</td> 
-  </tr> 
-  <tr> 
-   <td>/libs/settings/dam/v3D/settings/invokeAnimationOnIngest</td> 
-   <td><p>When enabled, ImageMagick is installed on the server and magickPath is configured. Rapid Refine is used to create a simple animation for 3D objects that are used as a thumbnail in Card View and other views.</p> <p>Creating animations consumes significant CPU resources during the ingestion process.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>/libs/settings/dam/v3D/settings/invokeLightMapsOnIngest</td> 
-   <td>Enables the automatic creation of light maps on ingestion. Set to <strong>false</strong> to disable automatic light map creation; this can significantly reduce CPU consumption at the cost of reduced quality for preview and rendering with Rapid Refine. Does not affect rendering with Maya.</td> 
-  </tr> 
-  <tr> 
-   <td>/libs/settings/dam/v3D/settings/gPlaneZero</td> 
-   <td><p>When set to <strong>true</strong> (default), objects are moved vertically, if necessary, to ensure that all parts of the object are above the ground plane (y=0).</p> <p>When set to <strong>false</strong> (default), objects are not repositioned and may be partially hidden by a stage's ground plane. (Applies only to preview and rendering with Rapid Refine.) However, it does not affect rendering with Maya. When set to <strong>true</strong>, the vertical position of objects in Maya may be different than in preview or when rendering with Rapid Refine.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>/libs/settings/dam/v3D/Paths/magickPath</td> 
-   <td>The path and name to the ImageMagick convert utility. An absolute path is required if animated thumbnails creation is enabled.</td> 
-  </tr> 
-  <tr> 
-   <td>/libs/settings/dam/v3D/settings/MaxCpuPercentage</td> 
-   <td><p>Specifies how many CPUs are used at most for ingestion processing of 3D assets.</p> <p>Higher values speed up ingestions but may cause AEM to become less-responsive overall. This setting is approximate. That is, accuracy increases with the number of available CPU cores.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Path</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>/libs/settings/dam/v3D/settings/addGroundPlaneImageOnIngest</td>
+   <td>Enables generation of an ambient occlusion drop shadow when viewing or rendering with an IBL stage. Applies to Preview and Rendering with RapidRefine</td>
+  </tr>
+  <tr>
+   <td><p>/libs/settings/dam/v3D/settings/cleanupRenderWorkDir</p> </td>
+   <td>Set to <strong>false</strong> to keep temporary files in the MayaWork folder after conversion and rendering. May be useful when debugging issues with Maya conversion and rendering.</td>
+  </tr>
+  <tr>
+   <td>/libs/settings/dam/v3D/settings/invokeAnimationOnIngest</td>
+   <td><p>When enabled, ImageMagick is installed on the server and magickPath is configured. Rapid Refine is used to create a simple animation for 3D objects that are used as a thumbnail in Card View and other views.</p> <p>Creating animations consumes significant CPU resources during the ingestion process.</p> </td>
+  </tr>
+  <tr>
+   <td>/libs/settings/dam/v3D/settings/invokeLightMapsOnIngest</td>
+   <td>Enables the automatic creation of light maps on ingestion. Set to <strong>false</strong> to disable automatic light map creation; this can significantly reduce CPU consumption at the cost of reduced quality for preview and rendering with Rapid Refine. Does not affect rendering with Maya.</td>
+  </tr>
+  <tr>
+   <td>/libs/settings/dam/v3D/settings/gPlaneZero</td>
+   <td><p>When set to <strong>true</strong> (default), objects are moved vertically, if necessary, to ensure that all parts of the object are above the ground plane (y=0).</p> <p>When set to <strong>false</strong> (default), objects are not repositioned and may be partially hidden by a stage's ground plane. (Applies only to preview and rendering with Rapid Refine.) However, it does not affect rendering with Maya. When set to <strong>true</strong>, the vertical position of objects in Maya may be different than in preview or when rendering with Rapid Refine.</p> </td>
+  </tr>
+  <tr>
+   <td>/libs/settings/dam/v3D/Paths/magickPath</td>
+   <td>The path and name to the ImageMagick convert utility. An absolute path is required if animated thumbnails creation is enabled.</td>
+  </tr>
+  <tr>
+   <td>/libs/settings/dam/v3D/settings/MaxCpuPercentage</td>
+   <td><p>Specifies how many CPUs are used at most for ingestion processing of 3D assets.</p> <p>Higher values speed up ingestions but may cause AEM to become less-responsive overall. This setting is approximate. That is, accuracy increases with the number of available CPU cores.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Cloud Services configuration settings {#cloud-services-configuration-settings}

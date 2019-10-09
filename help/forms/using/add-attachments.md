@@ -5,7 +5,7 @@ description: Add photographs and scribble notes as annotations to your task in t
 seo-description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
 uuid: cf8b54a8-e5bc-49df-90f8-c6a37533c347
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 ---
@@ -18,20 +18,20 @@ AEM Forms app lets you attach images, scribbled notes, and text notes to your fo
 
 Your options are:
 
-* **[!UICONTROL Gallery]**: Lets you add a picture from the pictures saved on your device.  
+* **[!UICONTROL Gallery]**: Lets you add a picture from the pictures saved on your device.
 
-* **[!UICONTROL Camera]**: Lets you take a picture and add it to the form.  
+* **[!UICONTROL Camera]**: Lets you take a picture and add it to the form.
 
 * **[!UICONTROL Notes]**: Lets you add a scribble or a text note. Use ![scribble](assets/scribble.png) to add a scribble, and ![keyboard](assets/keyboard.png) to add a text note.
 
 >[!NOTE]
 >
->Attachments added by one user are visible to other AEM Forms app users. Other users cannot delete attachments added by a user. 
+>Attachments added by one user are visible to other AEM Forms app users. Other users cannot delete attachments added by a user.
 >
 
 ### The Attachments screen {#the-attachments-screen}
 
-To see all the attachments in a place, tap ![attachments-app](assets/attachments-app.png). You can add, rename, and delete attachments here. 
+To see all the attachments in a place, tap ![attachments-app](assets/attachments-app.png). You can add, rename, and delete attachments here.
 
 ![All attachments in a place](assets/attachments-screen.png)
 
@@ -42,7 +42,7 @@ You can use the **+** button in the Attachments screen to attach another picture
 You can use the camera of your mobile device or saved pictures in your device to attach a picture in the form.
 
 1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
-1. Tap **[!UICONTROL Gallery]** or **[!UICONTROL Camera]** in the pop-up that appears. 
+1. Tap **[!UICONTROL Gallery]** or **[!UICONTROL Camera]** in the pop-up that appears.
 1. Based on the option you select, perform the following:
 
     1. If you select **[!UICONTROL Camera]**.
@@ -50,7 +50,7 @@ You can use the camera of your mobile device or saved pictures in your device to
        Take a photograph. Then tap the **[!UICONTROL Use]** ![use-pic](assets/use-pic.png) button.
 
        Or tap the **[!UICONTROL Retake]** ![retake](assets/retake.png) button to retake the photograph.
-    
+
     1. If you select **[!UICONTROL Gallery]**.
 
        The image browser of device pops up. In the picture browser of your device, tap the picture you want to attach.

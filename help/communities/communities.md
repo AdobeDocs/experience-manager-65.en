@@ -5,7 +5,7 @@ description: Create and customize community features such as forums, user groups
 seo-description: Create and customize community features such as forums, user groups, and more
 uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
@@ -82,7 +82,7 @@ AEM Communities components, functions and features provide the building blocks f
 
 ## Troubleshooting {#troubleshooting}
 
-* [Troubleshooting](troubleshooting.md) 
+* [Troubleshooting](troubleshooting.md)
 * [Known Issues](/help/release-notes/known-issues.md)
 
 ## Related Communities Documentation {#related-communities-documentation}

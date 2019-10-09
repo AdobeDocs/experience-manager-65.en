@@ -2,10 +2,10 @@
 cloud: experience-cloud
 product: Adobe Experience Manager
 audience: end-user
-user-guide-title: AEM 6.4 Managing User Guide
+user-guide-title: AEM 6.5 Managing User Guide
 ---
 
-# AEM 6.4 Managing User Guide {#managing}
+# AEM 6.5 Managing User Guide {#managing}
 
 + [Managing User Guide](home.md)
 + Managing - Best Practices Checklist {#managing-best-practices-checklist}

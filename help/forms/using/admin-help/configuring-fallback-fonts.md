@@ -7,7 +7,7 @@ uuid: 2745541c-8c6d-4bb4-aa14-ec19afd6bc35
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 ---
 
@@ -34,7 +34,7 @@ You can manually configure the FontManagerResources.properties file to map the d
     * ROOT font if locale not set
     * Generic font, searched by order set in the fallback table
 
-1. Repackage the adobe-fontmanager.jar file. 
+1. Repackage the adobe-fontmanager.jar file.
 1. Repackage the adobe-livecycle-*[appserver]*.ear file and then redeploy it either manually or by running Configuration Manager.
 
 >[!NOTE]

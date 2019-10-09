@@ -5,7 +5,7 @@ description: Describes how to bring assets into AEM, apply metadata, generate re
 seo-description: Describes how to bring assets into AEM, apply metadata, generate renditions, and activate them to publish instances.
 uuid: 27190047-f5b5-4bfb-bf44-4df6e656247c
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: cb6ece20-f015-4e14-bc58-a9d88ab038b1
 ---
 
@@ -40,7 +40,7 @@ Migrating assets to AEM requires several steps and should be viewed as a phased 
 1. Activate assets.
 1. Enable workflows.
 
-![chlimage_1-223](assets/chlimage_1-223.png) 
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 ### Disabling Workflows {#disabling-workflows}
 
@@ -62,7 +62,7 @@ Adobe’s Managed Services team uses a tool called Glutton to load data into cus
 
 There are two main downsides to using the approach of pushing through https:
 
-1. The assets need to be transmitted over HTTP to the server. This requires quite a bit of overhead and is time-consuming, thus lengthening the time that it takes to perform your migration. 
+1. The assets need to be transmitted over HTTP to the server. This requires quite a bit of overhead and is time-consuming, thus lengthening the time that it takes to perform your migration.
 1. If you have tags and custom metadata that must be applied to the assets, this approach requires a second custom process that you need to run to apply this metadata to the assets once they have been imported.
 
 The other approach to ingesting assets is to pull assets from the local file system. However, if you cannot get an external drive or network share mounted to the server to perform a pull-based approach, posting the assets over HTTP is the best option.

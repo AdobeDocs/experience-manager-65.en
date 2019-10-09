@@ -5,7 +5,7 @@ description: How-to customize the display of the To-do list of LiveCycle AEM For
 seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
 uuid: 4c678d9c-7794-4b62-8705-d62c7780c13f
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 ---
@@ -32,7 +32,7 @@ For more information about the JSON Object description, see [this](/help/forms/u
    For example change `/apps/ws/locales/en-US/translation.json` for English:
 
    ```
-   
+
    "task" : {
            "reminder" : {
                "value" : "Reminder",
@@ -109,7 +109,7 @@ For more information about the JSON Object description, see [this](/help/forms/u
 1. For example, add information inside the task block:
 
    ```
-   
+
    "stepname" : {
                "value" : "Step Name",
                "tooltip" : "This task belongs to __stepName__ step"
@@ -123,7 +123,7 @@ For more information about the JSON Object description, see [this](/help/forms/u
    For example add:
 
    ```css
-   
+
    .task .taskProperties .stepname{
        width: 25px;
        background: url(../images/stepname.png) no-repeat; /*-------- Or just reuse background image / image-sprite defined .task .taskProperties span of style.css---------------------*/
@@ -145,9 +145,9 @@ Finally, you need to include an entry in the dev package for each property that 
    For example, add under `div class="taskProperties"`:
 
    ```
-   
+
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
-   
+
    ```
 
 [Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

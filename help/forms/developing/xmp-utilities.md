@@ -6,7 +6,7 @@ seo-description: null
 uuid: 90ce6cef-efe1-456a-8e0c-5ba90249dda0
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 ---
@@ -30,7 +30,7 @@ You can accomplish these tasks using the XMP Utilities service:
 
 ## Importing Metadata into PDF Documents {#importing-metadata-into-pdf-documents}
 
-You can use the XMP Utilities Java and web service APIs to programmatically import XMP metadata into a PDF document. Metadata provides information about a PDF document such as the document’s author and keywords related to the document. Metadata can be located in the document’s Document Properties dialog, as shown in the following illustration. 
+You can use the XMP Utilities Java and web service APIs to programmatically import XMP metadata into a PDF document. Metadata provides information about a PDF document such as the document’s author and keywords related to the document. Metadata can be located in the document’s Document Properties dialog, as shown in the following illustration.
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 
@@ -43,65 +43,65 @@ To programmatically import metadata into a PDF document, you can use an existing
 The following XML code contains metadata values that correspond to the previous illustration. For example, notice the bold items, which specify keywords.
 
 ```as3
- <?xpacket begin="?" id="W5M0MpCehiHzreSzNTczkc9d"?> 
- <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2-jc015 52.349034, 2008 Jun 20 00:30:39-PDT (debug)"> 
-       <rdf:RDF xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#"> 
-          <rdf:Description rdf:about="" 
-                xmlns:xmp="https://ns.adobe.com/xap/1.0/"> 
-             <xmp:MetadataDate>2008-10-22T10:52:21-04:00</xmp:MetadataDate> 
-             <xmp:CreatorTool>AEM Forms</xmp:CreatorTool> 
-             <xmp:ModifyDate>2008-10-22T10:52:21-04:00</xmp:ModifyDate> 
-             <xmp:CreateDate>2008-02-13T11:00:18-05:00</xmp:CreateDate> 
-          </rdf:Description> 
-          <rdf:Description rdf:about="" 
-                xmlns:pdf="https://ns.adobe.com/pdf/1.3/"> 
-             <pdf:Producer>AEM Forms</pdf:Producer> 
-             <pdf:Keywords>keyword1, keyword2, keyword3,keyword4</pdf:Keywords> 
-          </rdf:Description> 
-          <rdf:Description rdf:about="" 
-                xmlns:xmpMM="https://ns.adobe.com/xap/1.0/mm/"> 
-             <xmpMM:DocumentID>uuid:1cce1f84-331e-4d8d-8538-15441c271dd7</xmpMM:DocumentID> 
-             <xmpMM:InstanceID>uuid:cdda0ca6-7c91-4771-9dc9-796c8fe59350</xmpMM:InstanceID> 
-          </rdf:Description> 
-          <rdf:Description rdf:about="" 
-                > 
-             <dc:format>application/pdf</dc:format> 
-             <dc:description> 
-                <rdf:Alt> 
-                   <rdf:li xml:lang="x-default">Adobe Designer Sample</rdf:li> 
-                </rdf:Alt> 
-             </dc:description> 
-             <dc:title> 
-                <rdf:Alt> 
-                   <rdf:li xml:lang="x-default">Grant Application</rdf:li> 
-                </rdf:Alt> 
-             </dc:title> 
-             <dc:creator> 
-                <rdf:Seq> 
-                   <rdf:li>Tony Blue</rdf:li> 
-                </rdf:Seq> 
-             </dc:creator> 
-             <dc:subject> 
-                <rdf:Bag> 
-                   <rdf:li>keyword1</rdf:li> 
-                   <rdf:li>keyword2</rdf:li> 
-                   <rdf:li>keyword3</rdf:li> 
-                   <rdf:li>keyword4</rdf:li> 
-                </rdf:Bag> 
-             </dc:subject> 
-          </rdf:Description> 
-          <rdf:Description rdf:about="" 
-                xmlns:desc="https://ns.adobe.com/xfa/promoted-desc/"> 
-             <desc:version rdf:parseType="Resource"> 
-                <rdf:value>1.0</rdf:value> 
-                <desc:ref>/template/subform[1]</desc:ref> 
-             </desc:version> 
-             <desc:contact rdf:parseType="Resource"> 
-                <rdf:value>Adobe Systems Incorporated</rdf:value> 
-                <desc:ref>/template/subform[1]</desc:ref> 
-             </desc:contact> 
-          </rdf:Description> 
-       </rdf:RDF> 
+ <?xpacket begin="?" id="W5M0MpCehiHzreSzNTczkc9d"?>
+ <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2-jc015 52.349034, 2008 Jun 20 00:30:39-PDT (debug)">
+       <rdf:RDF xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about=""
+                xmlns:xmp="https://ns.adobe.com/xap/1.0/">
+             <xmp:MetadataDate>2008-10-22T10:52:21-04:00</xmp:MetadataDate>
+             <xmp:CreatorTool>AEM Forms</xmp:CreatorTool>
+             <xmp:ModifyDate>2008-10-22T10:52:21-04:00</xmp:ModifyDate>
+             <xmp:CreateDate>2008-02-13T11:00:18-05:00</xmp:CreateDate>
+          </rdf:Description>
+          <rdf:Description rdf:about=""
+                xmlns:pdf="https://ns.adobe.com/pdf/1.3/">
+             <pdf:Producer>AEM Forms</pdf:Producer>
+             <pdf:Keywords>keyword1, keyword2, keyword3,keyword4</pdf:Keywords>
+          </rdf:Description>
+          <rdf:Description rdf:about=""
+                xmlns:xmpMM="https://ns.adobe.com/xap/1.0/mm/">
+             <xmpMM:DocumentID>uuid:1cce1f84-331e-4d8d-8538-15441c271dd7</xmpMM:DocumentID>
+             <xmpMM:InstanceID>uuid:cdda0ca6-7c91-4771-9dc9-796c8fe59350</xmpMM:InstanceID>
+          </rdf:Description>
+          <rdf:Description rdf:about=""
+                >
+             <dc:format>application/pdf</dc:format>
+             <dc:description>
+                <rdf:Alt>
+                   <rdf:li xml:lang="x-default">Adobe Designer Sample</rdf:li>
+                </rdf:Alt>
+             </dc:description>
+             <dc:title>
+                <rdf:Alt>
+                   <rdf:li xml:lang="x-default">Grant Application</rdf:li>
+                </rdf:Alt>
+             </dc:title>
+             <dc:creator>
+                <rdf:Seq>
+                   <rdf:li>Tony Blue</rdf:li>
+                </rdf:Seq>
+             </dc:creator>
+             <dc:subject>
+                <rdf:Bag>
+                   <rdf:li>keyword1</rdf:li>
+                   <rdf:li>keyword2</rdf:li>
+                   <rdf:li>keyword3</rdf:li>
+                   <rdf:li>keyword4</rdf:li>
+                </rdf:Bag>
+             </dc:subject>
+          </rdf:Description>
+          <rdf:Description rdf:about=""
+                xmlns:desc="https://ns.adobe.com/xfa/promoted-desc/">
+             <desc:version rdf:parseType="Resource">
+                <rdf:value>1.0</rdf:value>
+                <desc:ref>/template/subform[1]</desc:ref>
+             </desc:version>
+             <desc:contact rdf:parseType="Resource">
+                <rdf:value>Adobe Systems Incorporated</rdf:value>
+                <desc:ref>/template/subform[1]</desc:ref>
+             </desc:contact>
+          </rdf:Description>
+       </rdf:RDF>
  </x:xmpmeta>
 ```
 
@@ -190,7 +190,7 @@ To programmatically import XMP metadata using the XMP Utilities web service API,
 
 1. Create an XMPUtilityService client
 
-   Create an `XMPUtilityServiceService` object by using your proxy class constructor. 
+   Create an `XMPUtilityServiceService` object by using your proxy class constructor.
 
 1. Invoke the XMP metadata import operation
 
@@ -292,12 +292,12 @@ Export XMP metadata by using the XMP Utilities API (web service):
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the XMP Utilities service WSDL file. 
+    * Create a Microsoft .NET client assembly that consumes the XMP Utilities service WSDL file.
     * Reference the Microsoft .NET client assembly.
 
 1. Create an XMPUtilityService client
 
-   Create an `XMPUtilityServiceService` object by using your proxy class constructor. 
+   Create an `XMPUtilityServiceService` object by using your proxy class constructor.
 
 1. Invoke the XMP metadata import operation
 

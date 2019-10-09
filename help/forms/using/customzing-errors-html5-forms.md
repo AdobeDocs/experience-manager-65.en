@@ -4,7 +4,7 @@ seo-title: Customizing error messages for HTML5 forms
 description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
 seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
 uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 ---
@@ -15,13 +15,13 @@ In HTML5 forms, out of the box, the error messages and warnings have a fixed pos
 
 The article provides the steps to customize HTML5 forms error messages to,
 
-* change the appearance and position of error messages. You can make an error to appear at the top, bottom, and right of any field. 
-* display error messages for multiple fields at any given moment. 
+* change the appearance and position of error messages. You can make an error to appear at the top, bottom, and right of any field.
+* display error messages for multiple fields at any given moment.
 * display the error irrespective of a field is selected or not.
 
 ## Customizing Error Messages&nbsp; {#customizing-error-messages-nbsp}
 
-Before customizing the error messages, download and extract the attached package (CustomErrorManager-1.0-SNAPSHOT.zip). 
+Before customizing the error messages, download and extract the attached package (CustomErrorManager-1.0-SNAPSHOT.zip).
 
 After extracting the package, open the CustomErrorManager-1.0-SNAPSHOT folder. It contains jcr_root and META-INF folders. These folders contains the CSS and .JS files required to customize the error message.
 
@@ -32,7 +32,7 @@ After extracting the package, open the CustomErrorManager-1.0-SNAPSHOT folder. I
 To customize the position of error message, add &lt;div&gt; tag for each error and warning field, postion the &lt;div&gt; tag on the left or right, and apply css styles on the &lt;div&gt; tag. For detailed steps, see the procedure listed below:
 
 1. Navigate to the `CustomErrorManager-1.0-SNAPSHOT`folder and open the `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` folder.
-1. Open the `customErrorManager.js` file for editing. The `markError` function in the file accepts the following parameters: 
+1. Open the `customErrorManager.js` file for editing. The `markError` function in the file accepts the following parameters:
 
    |   |  |
    |---|---|
@@ -48,8 +48,8 @@ To customize the position of error message, add &lt;div&gt; tag for each error a
                    pos = $(element).offset(),                          //Calculates the position of the div in the view port
                                                                    msgHeight = xfalib.view.util.TextMetrics.measureExtent(msg).height + 5;  //Calculating the height of the Error Message
                    styles = {};
-                   styles.left = pos.left + "px";         // Assign the desired left position using pos.left. Here it is calculated for exact left of the field 
-                   styles.top = pos.top - msgHeight + "px";  // Assign the desired top position using pos.top. Here it is calculated for top of the field 
+                   styles.left = pos.left + "px";         // Assign the desired left position using pos.left. Here it is calculated for exact left of the field
+                   styles.top = pos.top - msgHeight + "px";  // Assign the desired top position using pos.top. Here it is calculated for top of the field
                if (type != "warning") {
                    if(!jqWidget.errorDiv){
                                                                                    //Adding the warning div if it is not present already
@@ -65,9 +65,9 @@ To customize the position of error message, add &lt;div&gt; tag for each error a
                    jqWidget.$css(jqWidget.errorDiv.get(0), styles); // Applying the styles to the error div
                    jqWidget.errorDiv.text(msg).show();                     //Showing the warning message
                }
-   
+
            },
-   
+
    ```
 
 1. Save and close the file.
@@ -80,7 +80,7 @@ Ue the attached package to simultaneously display error messages for all the fie
 
 ### Customizing the appearance of error messages.&nbsp; {#customizing-the-appearance-of-error-messages-nbsp}
 
-1. Navigate to the etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css folder.  
+1. Navigate to the etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css folder.
 
 1. Open the file sample.css for editing.The css file contains 2 ids- #customError, #customWarning. You can use these ids to change various properties such as color, font size etc.
 
@@ -95,7 +95,7 @@ Ue the attached package to simultaneously display error messages for all the fie
    font-size: 24px;  // it changes the font size of Error Message
    z-index:5;
    }
-   
+
    #customWarning {
    color: #00FF00;  // it changes the color of Warning Message
    display:none;
@@ -104,7 +104,7 @@ Ue the attached package to simultaneously display error messages for all the fie
    font-size: 18px;   // it changes the font size of Warning Message
    z-index:5;
    }
-   
+
    Save the changes.
    ```
 

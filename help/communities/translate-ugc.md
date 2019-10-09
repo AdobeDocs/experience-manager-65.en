@@ -5,7 +5,7 @@ description: How the translation feature works
 seo-description: How the translation feature works
 uuid: 7ee3242c-2aca-4787-a60d-b807161401ad
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
@@ -108,10 +108,10 @@ For detailed instructions visit [Creating a Translation Integration Configuratio
 * **[!UICONTROL Communities]** tab:
   * **[!UICONTROL Translation Provider]**
     Select the translation provider from the drop down list. Default is `microsoft`, the trial service.
-  
+
   * **[!UICONTROL Content Category]**
     Select a category that describes the content being translated. Default is `General.`
-  
+
   * **[!UICONTROL Choose A Locale...]**
     (Optional) By selecting a locale for storing UGC, posts from all language copies will appear in one global conversation. By convention, choose the locale for the [base language](sites-console.md#translation) for the website. Choosing `No Common Store` will disable global translation. By default, global translation is disabled.
 

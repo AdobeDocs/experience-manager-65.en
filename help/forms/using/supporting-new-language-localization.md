@@ -5,7 +5,7 @@ description: AEM Forms allows you to add new locales for localizing adaptive for
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
 uuid: d4cee51b-c555-4544-9ae9-4aa8d38b2b17
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 ---
@@ -27,10 +27,10 @@ When an adaptive form is rendered, it identifies the requested locale by looking
 * Request parameter `afAcceptLang`
 
   To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL will force to render the form in Japanese locale:
-  
-  `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`  
 
-* The browser locale set for the user, which is specified in the request using the `Accept-Language` header.   
+  `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
+
+* The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
 
 * Language setting of the user specified in AEM.
 
@@ -44,9 +44,9 @@ AEM Forms currently supports localization of adaptive forms content in English (
 
 To add support for a new locale at adaptive forms runtime:
 
-1. [Add a locale to the GuideLocalizationService service](/help/forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)  
+1. [Add a locale to the GuideLocalizationService service](/help/forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
 
-1. [Add XFA client library for a locale](/help/forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)  
+1. [Add XFA client library for a locale](/help/forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
 
 1. [Add adaptive form client library for a locale](/help/forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
 1. [Add locale support for the dictionary](/help/forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
@@ -58,7 +58,7 @@ To add support for a new locale at adaptive forms runtime:
 1. Click to edit the **Guide Localization Service** component.
 1. Add the locale you want to add to the list of supported locales.
 
-![GuideLocalizationSevice](assets/configservice.png) 
+![GuideLocalizationSevice](assets/configservice.png)
 
 ### Add XFA client library for a locale {#add-xfa-client-library-for-a-locale-br}
 

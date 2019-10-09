@@ -5,7 +5,7 @@ description: Some issues that you might encounter when using AEM
 seo-description: Some issues that you might encounter when using AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
@@ -39,10 +39,10 @@ The following section covers some issues that you might encounter when using AEM
     * Confirm that the page has been replicated correctly. Check the page status and if necessary, the state of the replication queue.
     * Clear the cache in your local browser and access your page again.
     * Add `?` to the end of the page URL. For example:
-    
+
         * `http://localhost:4502/sites.html/content?`
         * This will request the page directly from AEM and bypass the Dispatcher. If you receive the updated page, it is an indication that you should clear the Dispatcher cache.
-    
+
     * Contact your system administrator is there are issues with the replication queues.
 
 ## Component Actions not visible on Toolbar {#component-actions-not-visible-on-toolbar}

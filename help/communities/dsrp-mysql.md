@@ -5,7 +5,7 @@ description: How to connect to the MySQL server and establish the UGC database
 seo-description: How to connect to the MySQL server and establish the UGC database
 uuid: c058cc88-7ca2-4aed-9a36-b080e603f886
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
@@ -40,7 +40,7 @@ As SQL is case insensitive, for case sensitive operating systems, it is necessar
 For example, to specify all lower case table names on a Linux OS:
 
 * Edit file `/etc/my.cnf`
-* In the `[mysqld]` section, add the following line: 
+* In the `[mysqld]` section, add the following line:
 
   `lower_case_table_names = 1`
 
@@ -55,11 +55,11 @@ Change MySQL to have UTF8 as its character set:
 Change the MySQL database to default to UTF8:
 
 * Edit file `/etc/my.cnf`
-* In the `[client]` section, add the following line:  
+* In the `[client]` section, add the following line:
 
   `default-character-set=utf8`
 
-* In the `[mysqld]` section, add the following line:  
+* In the `[mysqld]` section, add the following line:
 
   `character-set-server=utf8`
 
@@ -73,12 +73,12 @@ MySQL Workbench should be downloaded and installed following the instructions fo
 
 When the MySQL Workbench is first launched, unless already in use for other purposes, it will not yet show any connections:
 
-![chlimage_1-104](assets/chlimage_1-104.png) 
+![chlimage_1-104](assets/chlimage_1-104.png)
 
 ### New Connection Settings {#new-connection-settings}
 
 1. Select the `+` icon to the right of `MySQL Connections`.
-1. In the dialog `Setup New Connection`, enter values appropriate for your platform  
+1. In the dialog `Setup New Connection`, enter values appropriate for your platform
 
    For demonstration purposes, with the author AEM instance and MySQL on the same server:
 
@@ -98,13 +98,13 @@ When the MySQL Workbench is first launched, unless already in use for other purp
 
 #### New Communities Connection {#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png) 
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ## Database Setup {#database-setup}
 
 Open the Communities connection in order to install the database.
 
-![chlimage_1-106](assets/chlimage_1-106.png) 
+![chlimage_1-106](assets/chlimage_1-106.png)
 
 ### Obtain the SQL Script {#obtain-the-sql-script}
 
@@ -139,7 +139,7 @@ In the MySQL Workbench
 * From the File pulldown menu
 * Select the downloaded `init_schema.sql`
 
-![chlimage_1-108](assets/chlimage_1-108.png) 
+![chlimage_1-108](assets/chlimage_1-108.png)
 
 #### Step 2: execute SQL Script {#step-execute-sql-script}
 
@@ -147,13 +147,13 @@ In the Workbench window for the file opened in Step 1, select the `lightening (f
 
 In the following image, the `init_schema.sql` file is ready to be executed:
 
-![chlimage_1-109](assets/chlimage_1-109.png) 
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 #### Refresh {#refresh}
 
 Once the script is executed, it is necessary to refresh the `SCHEMAS`section of the `Navigator` in order to see the new database. Use the refresh icon to the right of 'SCHEMAS':
 
-![chlimage_1-110](assets/chlimage_1-110.png) 
+![chlimage_1-110](assets/chlimage_1-110.png)
 
 ## Configure JDBC Connection {#configure-jdbc-connection}
 
@@ -177,20 +177,20 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
 * Enter the following values:
 
     * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
-    * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`  
+    * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Specify server in place of localhost if MySQL server is not the same as 'this' AEM server  
+      Specify server in place of localhost if MySQL server is not the same as 'this' AEM server
 
       *communities* is the default database (schema) name
-  
+
     * **[!UICONTROL Username]**: `root`
 
       Or enter the configured Username for the MySQL server, if not 'root'
-    
-    * **[!UICONTROL Password]**:   
 
-      Clear this field if no password set for MySQL, 
-    
+    * **[!UICONTROL Password]**:
+
+      Clear this field if no password set for MySQL,
+
       else enter the configured password for the MySQL Username
     * **[!UICONTROL Datasource name]**: name entered for the [MySQL connection](#new-connection-settings), for example, 'communities'
 

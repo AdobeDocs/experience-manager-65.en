@@ -5,7 +5,7 @@ description: Target Integration with Experience Fragments
 seo-description: Target Integration with Experience Fragments
 uuid: 621f57d4-3b8d-49ea-b193-8530c8fbd74e
 contentOwner: carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 6911c8e3-b12c-466e-8255-5dcd09557d35
@@ -39,10 +39,10 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
    >
    >If you add the cloud configuration to the Experience Fragment itself, the configuration is inherited by all varations.
 
-1. Select the **Cloud Services** tab.  
+1. Select the **Cloud Services** tab.
 
 1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop down list.
-1. Under **Adobe Target**, select the appropriate configuration.  
+1. Under **Adobe Target**, select the appropriate configuration.
 
 1. **Save & Close**.
 

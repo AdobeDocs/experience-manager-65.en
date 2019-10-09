@@ -1,11 +1,11 @@
 ---
 title: DO NOT PUBLISH Layout Fragments
 seo-title: Layout Fragments
-description: One or more layout fragments can form parts of a letter and define the graphical layout of those parts. A layout fragment can contain typical form fields, such as Address and Reference Number, and empty subforms that denote target areas. In addition, layout fragments allow you to create tables and insert them in letters.  
-seo-description: One or more layout fragments can form parts of a letter and define the graphical layout of those parts. A layout fragment can contain typical form fields, such as Address and Reference Number, and empty subforms that denote target areas. In addition, layout fragments allow you to create tables and insert them in letters.  
+description: One or more layout fragments can form parts of a letter and define the graphical layout of those parts. A layout fragment can contain typical form fields, such as Address and Reference Number, and empty subforms that denote target areas. In addition, layout fragments allow you to create tables and insert them in letters.
+seo-description: One or more layout fragments can form parts of a letter and define the graphical layout of those parts. A layout fragment can contain typical form fields, such as Address and Reference Number, and empty subforms that denote target areas. In addition, layout fragments allow you to create tables and insert them in letters.
 page-status-flag: never-activated
 uuid: 430cda80-2fbe-4d6a-a301-1083e75798d3
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ef250bc5-2aac-4ab1-a1d9-71d8d98dcd18
 ---
 
@@ -26,7 +26,7 @@ Using fragments that are bound to target areas allows the letter to be changed a
 1. You can increase the row and column count.
 1. You can specify the header and footer text for more rows and columns.
 1. You can define the ratio of table column width. At runtime table columns are resized according to the defined ratio and available space. Sum of the width ratio must be 100. Otherwise it is not applicable.
-1. If a table is a place holder (contains only single blank cell), you can define the type (target area/field) of new columns. 
+1. If a table is a place holder (contains only single blank cell), you can define the type (target area/field) of new columns.
 1. You can hide header and footer rows.
 
 Before performing this procedure, create an XFA fragment using Designer. The fragment can contain tables for organizing fields and target areas. Designer allows creation of two types of tables: static and dynamic. Static tables contain a fixed number of rows. Static tables can contain target areas and fields. These target area and fields cannot be bound to repeating DDEs. A dynamic table can have a single row also. The data bound to table cells determines the number of rows for dynamic tables. A dynamic table can contain only fields. DDEs can be repeating or non-repeating.
@@ -72,7 +72,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 1. Tap the **Table **tab and specify the following information for the layout:
 
     * **Configuration for**: Select the table being configured. As a suffix to the table name in the dropdown is (Static) if the table is a static one or (Dynamic) if the table is a dynamic table. Static tables contain a fixed number of rows. Static tables can contain target areas and fields. These target area and fields cannot be bound to repeating DDEs. The data bound to table cells determines the number of rows for dynamic tables.
-    
+
     * **Rows**: Select the number of rows for the layout. The configured row count must be greater than or equal to the original row count.
     * **Columns**: select the number of columns for the layout. The configured column count must be greater than or equal to the original column count.
 
@@ -83,7 +83,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
     * **Type**: type of additional column. Field or Target Area. Type is enabled for static place holder tables. Type can be defined at column level and not at cell level. All the cells in an extended column would be of the same type. For a dynamic table, all the columns are of Field type. For non-placeholder tables, you cannot define the type of additional columns. In this case, type of additional cells in extended column is same as the type of last column in that row; and type of cell in additional row is same as type of last cell in that column.
     * **Width ratio:** ratio of the table column widths.
 
-   For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#main-pars-header-28).  
+   For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#main-pars-header-28).
 
 1. Tap **Save**.
 
@@ -154,7 +154,7 @@ Many letter templates contain tables. Tables can be static, such as a table of t
 >
 >Use Text Draw elements for creating table headers/footers in the layout fragment template (XDP). Use Text Fields for creating cells in table body rows in layout fragment template.
 
-The DD has a collection element Nominee_details which has a composite element with three primitive elements: Nominee_name, Nominee_address, and Nominee_gender.  
+The DD has a collection element Nominee_details which has a composite element with three primitive elements: Nominee_name, Nominee_address, and Nominee_gender.
 The dynamic XDP also has the same headers. So you can map the dynamic XDP fields with the above mentioned fields of DD.
 
 ### Example with sample files: Using Static and Dynamic tables in a letter {#examplewithsamplefiles}
@@ -176,19 +176,19 @@ This example shows how you can create a dynamic and a static table, bind the dyn
     * Add subform to the table column. Ensure that you change the layout of table’s parent subform to flowed and remove the bindings of the subform in table.
     * Add a subform to the table cell. Ensure that you change the layout of table’s parent subform to flowed and remove the bindings of the subform in table.
 
-   Or, use the static and dynamic XDPs attached with this step.  
+   Or, use the static and dynamic XDPs attached with this step.
 
-   For more information on working with Layout Fragments, see [Layout Fragments](#layoutfragments).  
+   For more information on working with Layout Fragments, see [Layout Fragments](#layoutfragments).
    For more information on designing layouts, see [Designer Help](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/ ).
 
    [Get File](assets/static.xdp.zip)
 
    [Get File](assets/dynamic.xdp.zip)
 
-1. Upload the XDPs to AEM Forms. 
+1. Upload the XDPs to AEM Forms.
 1. Create a layout fragment based on the dynamic XDP. The Table tab of the properties displays that the table is dynamic (Configuration For field). The number of rows (1) and columns (3) are derived from the XDP/Layout Fragment.
 
-   This layout's fields are later bound to the imported DD and in the letter, the number of rows are dynamically created based on the number of records in the test data file (the XML data file attached with the DD). 
+   This layout's fields are later bound to the imported DD and in the letter, the number of rows are dynamically created based on the number of records in the test data file (the XML data file attached with the DD).
 
    ![Create a layout fragment screen](assets/dynamictableproperties.png)
 

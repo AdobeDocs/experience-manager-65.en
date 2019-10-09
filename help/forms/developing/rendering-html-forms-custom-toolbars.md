@@ -7,7 +7,7 @@ uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 ---
@@ -52,35 +52,35 @@ You can obtain the JS and CSS files by opening the adobe-forms-&lt;appserver&gt;
 The following XML syntax shows an example fscmenu.xml file.
 
 ```as3
- <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css"> 
-         <ul class="fscmenuItem" id="Home"> 
-             <li> 
-                 <a href="#" fscTarget="_top" tabindex="1">Home</a> 
-             </li> 
-         </ul> 
-         <ul class="fscmenuItem" id="Upload" fscJS="FSToolBarURI/scripts/fscattachments.js" fscCSS="FSToolBarURI/fscdialog.css"> 
-             <li> 
-                 <a tabindex="2">Upload Attachments</a> 
-                 <ul class="fscmenuPopup" id="fscUploadAttachments"> 
-                     <li> 
-                         <a href="javascript:doUploadDialog();" tabindex="3">Add ...</a> 
-                     </li> 
-                     <li> 
-                         <a href="javascript:doDeleteDialog();" tabindex="4">Delete ...</a> 
-                     </li> 
-                 </ul> 
-             </li> 
-         </ul> 
-         <ul class="fscmenuItem" id="Download"> 
-             <li> 
-                 <a tabindex="100">Download Attachments</a> 
-                 <ul class="fscmenuPopup"> 
-                     <li> 
-                         <a tabindex="101">None available</a> 
-                     </li> 
-                 </ul> 
-             </li> 
-         </ul> 
+ <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
+         <ul class="fscmenuItem" id="Home">
+             <li>
+                 <a href="#" fscTarget="_top" tabindex="1">Home</a>
+             </li>
+         </ul>
+         <ul class="fscmenuItem" id="Upload" fscJS="FSToolBarURI/scripts/fscattachments.js" fscCSS="FSToolBarURI/fscdialog.css">
+             <li>
+                 <a tabindex="2">Upload Attachments</a>
+                 <ul class="fscmenuPopup" id="fscUploadAttachments">
+                     <li>
+                         <a href="javascript:doUploadDialog();" tabindex="3">Add ...</a>
+                     </li>
+                     <li>
+                         <a href="javascript:doDeleteDialog();" tabindex="4">Delete ...</a>
+                     </li>
+                 </ul>
+             </li>
+         </ul>
+         <ul class="fscmenuItem" id="Download">
+             <li>
+                 <a tabindex="100">Download Attachments</a>
+                 <ul class="fscmenuPopup">
+                     <li>
+                         <a tabindex="101">None available</a>
+                     </li>
+                 </ul>
+             </li>
+         </ul>
      </div>
 ```
 
@@ -106,35 +106,35 @@ As part of customizing a toolbar, you can change the locale value of the toolbar
 To change the locale value of a toolbar, ensure that the fscmenu.xml file contains the language you want to display. The following XML syntax shows the fscmenu.xml file that is used to display a French toolbar.
 
 ```as3
- <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css"> 
-         <ul class="fscmenuItem" id="Home"> 
-             <li> 
-                 <a href="#" fscTarget="_top" tabindex="1">Accueil</a> 
-             </li> 
-         </ul> 
-         <ul class="fscmenuItem" id="Upload" fscJS="FSToolBarURI/scripts/fscattachments.js" fscCSS="FSToolBarURI/fscdialog.css"> 
-             <li> 
-                 <a tabindex="2">Télécharger les pièces jointes</a> 
-                 <ul class="fscmenuPopup" id="fscUploadAttachments"> 
-                     <li> 
-                         <a href="javascript:doUploadDialog();" tabindex="3">Ajouter...</a> 
-                     </li> 
-                     <li> 
-                         <a href="javascript:doDeleteDialog();" tabindex="4">Supprimer...</a> 
-                     </li> 
-                 </ul> 
-             </li> 
-         </ul> 
-         <ul class="fscmenuItem" id="Download"> 
-             <li> 
-                 <a tabindex="100">Télécharger les pièces jointes</a> 
-                 <ul class="fscmenuPopup"> 
-                     <li> 
-                         <a tabindex="101">Aucune disponible</a> 
-                     </li> 
-                 </ul> 
-             </li> 
-         </ul> 
+ <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
+         <ul class="fscmenuItem" id="Home">
+             <li>
+                 <a href="#" fscTarget="_top" tabindex="1">Accueil</a>
+             </li>
+         </ul>
+         <ul class="fscmenuItem" id="Upload" fscJS="FSToolBarURI/scripts/fscattachments.js" fscCSS="FSToolBarURI/fscdialog.css">
+             <li>
+                 <a tabindex="2">Télécharger les pièces jointes</a>
+                 <ul class="fscmenuPopup" id="fscUploadAttachments">
+                     <li>
+                         <a href="javascript:doUploadDialog();" tabindex="3">Ajouter...</a>
+                     </li>
+                     <li>
+                         <a href="javascript:doDeleteDialog();" tabindex="4">Supprimer...</a>
+                     </li>
+                 </ul>
+             </li>
+         </ul>
+         <ul class="fscmenuItem" id="Download">
+             <li>
+                 <a tabindex="100">Télécharger les pièces jointes</a>
+                 <ul class="fscmenuPopup">
+                     <li>
+                         <a tabindex="101">Aucune disponible</a>
+                     </li>
+                 </ul>
+             </li>
+         </ul>
      </div>
 ```
 
@@ -155,7 +155,7 @@ For more information about the Forms service, see [Services Reference for AEM Fo
 To render an HTML form that contains a custom toolbar, perform these tasks:
 
 1. Include project files.
-1. Create a Forms Java API object. 
+1. Create a Forms Java API object.
 1. Reference a custom fscmenu XML file.
 1. Render an HTML form.
 1. Write the form data stream to the client web browser.
@@ -206,16 +206,16 @@ Render an HTML Form that contains a custom toolbar by using the Forms Service AP
 
 1. Include project files
 
-   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path.
 
 1. Create a Forms Java API object
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference a custom fscmenu XML file
 
-    * Create an `HTMLRenderSpec` object by using its constructor. 
+    * Create an `HTMLRenderSpec` object by using its constructor.
     * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`.
     * Specify the location of the fscmenu XML file by invoking the `HTMLRenderSpec` object’s `setToolbarURI` method and passing a string value that specifies the URI location of the XML file.
     * If applicable, set the locale value by invoking the `HTMLRenderSpec` object’s `setLocale` method and passing a string value that specifies the locale value. The default value is English.
@@ -229,11 +229,11 @@ Render an HTML Form that contains a custom toolbar by using the Forms Service AP
    Invoke the `FormsServiceClient` object’s `renderHTMLForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-    * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`. 
-    * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object. 
-    * The `HTMLRenderSpec` object that stores HTML run-time options. 
+    * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`.
+    * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object.
+    * The `HTMLRenderSpec` object that stores HTML run-time options.
     * A string value that specifies the `HTTP_USER_AGENT` header value, such as `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-    * A `URLSpec` object that stores URI values that are required to render an HTML form. 
+    * A `URLSpec` object that stores URI values that are required to render an HTML form.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter, and you can specify `null` if you do not want to attach files to the form.
 
    The `renderHTMLForm` method returns a `FormsResult` object that contains a form data stream that must be written to the client web browser.
@@ -244,8 +244,8 @@ Render an HTML Form that contains a custom toolbar by using the Forms Service AP
     * Get the content type of the `com.adobe.idp.Document` object by invoking its `getContentType` method.
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
     * Create a `javax.servlet.ServletOutputStream` object that is used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method. 
-    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument. 
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
+    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument.
     * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
@@ -267,13 +267,13 @@ Render an HTML form that contains a custom toolbar by using the Forms Service AP
 
 1. Create a Forms Java API object
 
-   Create a `FormsService` object and set authentication values. 
+   Create a `FormsService` object and set authentication values.
 
 1. Reference a custom fscmenu XML file
 
-    * Create an `HTMLRenderSpec` object by using its constructor. 
-    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`. 
-    * Specify the location of the fscmenu XML file by invoking the `HTMLRenderSpec` object’s `setToolbarURI` method and passing a string value that specifies the URI location of the XML file. 
+    * Create an `HTMLRenderSpec` object by using its constructor.
+    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`.
+    * Specify the location of the fscmenu XML file by invoking the `HTMLRenderSpec` object’s `setToolbarURI` method and passing a string value that specifies the URI location of the XML file.
     * If applicable, set the locale value by invoking the `HTMLRenderSpec` object’s `setLocale` method and passing a string value that specifies the locale value. The default value is English.
 
    >[!NOTE]
@@ -285,14 +285,14 @@ Render an HTML form that contains a custom toolbar by using the Forms Service AP
    Invoke the `FormsService` object’s `renderHTMLForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-    * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`. 
-    * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`. 
-    * The `HTMLRenderSpec` object that stores HTML run-time options. 
-    * A string value that specifies the `HTTP_USER_AGENT` header value, such as `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). You can pass an empty string if you do not want to set this value. 
+    * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`.
+    * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`.
+    * The `HTMLRenderSpec` object that stores HTML run-time options.
+    * A string value that specifies the `HTTP_USER_AGENT` header value, such as `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). You can pass an empty string if you do not want to set this value.
     * A `URLSpec` object that stores URI values that are required to render an HTML form.
     * A `java.util.HashMap` object that stores file attachments. This parameter is optional, and you can specify `null` if you do not intend to attach files to the form.
-    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the `renderHTMLForm` method. This parameter value stores the rendered form. 
-    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the `renderHTMLForm` method. This parameter stores the output XML data. 
+    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the `renderHTMLForm` method. This parameter value stores the rendered form.
+    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the `renderHTMLForm` method. This parameter stores the output XML data.
     * An empty `javax.xml.rpc.holders.LongHolder` object that is populated by the `renderHTMLForm` method. This argument stores the number of pages in the form.
     * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the `renderHTMLForm` method. This argument stores the locale value.
     * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the `renderHTMLForm` method. This argument stores the HTML rendering value that is used.
@@ -302,12 +302,12 @@ Render an HTML form that contains a custom toolbar by using the Forms Service AP
 
 1. Write the form data stream to the client web browser
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member. 
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
     * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
     * Create a `javax.servlet.ServletOutputStream` object that is used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array. 
+    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
     * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**

@@ -5,7 +5,7 @@ description: How user synchronization works
 seo-description: How user synchronization works
 uuid: 5b9bb7b6-9238-41f6-81da-84b9a303b9e2
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
@@ -85,7 +85,7 @@ User sync relies on the  author  environment to manage the user data distributio
 
 1. If users and user groups have already been created on one publisher, it is recommended to [manually sync](../../help/sites-administering/sync.md#manually-syncing-users-and-user-groups) the user data to all publishers prior to configuring and enabling user sync.
 
-   Once user sync is enabled, only newly created users and groups are  syncrhonized . 
+   Once user sync is enabled, only newly created users and groups are  syncrhonized .
 
 1. Ensure the latest code has been installed:
 
@@ -141,14 +141,14 @@ Whenever data is to be installed on or fetched from publishers, then the author 
 On AEM author instance:
 
 1.  Sign in with administrator privileges.
-1.  Access the [Web Console](../../help/sites-deploying/configuring-osgi.md).  
+1.  Access the [Web Console](../../help/sites-deploying/configuring-osgi.md).
 
     For example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1.  Locate **[!UICONTROL Adobe Granite Distribution - Encrypted Password Transport Secret Provider]**.
 1.  Select the existing configuration to open for edit (pencil icon).
 
     Verify property `name:` **`socialpubsync` \- `publishUser` .**
-1.  Set the username and password to the [authorized user](../../help/sites-administering/sync.md#createauthorizeduser).  
+1.  Set the username and password to the [authorized user](../../help/sites-administering/sync.md#createauthorizeduser).
 
     For example, **`usersync` \-admin**
 
@@ -165,11 +165,11 @@ This configuration is used to configure the data you want to sync across publish
 On AEM publish instance:
 
 1.  Sign in with administrator privileges.
-1.  Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html).  
+1.  Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html).
 
     For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr).
 1.  Locate **[!UICONTROL Apache Sling Distribution Agent - Queue Agents Factory]**.
-1.  Select the existing configuration to open for edit (pencil icon).  
+1.  Select the existing configuration to open for edit (pencil icon).
 
     Verify Name: `socialpubsync` \-reverse.
 1.  Select the **[!UICONTROL Enabled]** checkbox and save.
@@ -180,7 +180,7 @@ On AEM publish instance:
 
 ### Adobe Granite Distribution - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
-This configuration syncs group membership across publishers.   
+This configuration syncs group membership across publishers.
 If changing the membership of a group in one publisher does not update its membership on other publishers, then ensure that **ref:members** is  added to **looked properties names**.
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
@@ -190,11 +190,11 @@ If changing the membership of a group in one publisher does not update its membe
 On each AEM publish instance:
 
 1.  Sign in with administrator privileges.
-1.  Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html).  
+1.  Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html).
 
     For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr).
 1.  Locate **[!UICONTROL Adobe Granite Distribution - Diff Observer Factory]**.
-1.  Select the existing configuration to open for edit (pencil icon).  
+1.  Select the existing configuration to open for edit (pencil icon).
 
     Verify **[!UICONTROL agent name]**: `socialpubsync` \-reverse**.
 1.  Select the **[!UICONTROL Enabled]** checkbox.
@@ -218,7 +218,7 @@ On AEM author instance:
 1.  Access the [Web Console](../../help/sites-deploying/configuring-osgi.md), for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 1.  Locate **[!UICONTROL Apache Sling Distribution Trigger - Scheduled Triggers Factory]**
 
-    * Select the existing configuration to open for edit (pencil icon) 
+    * Select the existing configuration to open for edit (pencil icon)
     * Verify `Name:` **`socialpubsync` \-scheduled-trigger**
     * Set the Interval in Seconds to the desired interval, and save.
 
@@ -245,34 +245,34 @@ On each AEM publish instance:
 1.  Select the existing configuration to open for edit (pencil icon).
 
     Verify Name: **`socialpubsync` \-scheduled-trigger**
-1.  Set the following **`NodeTypes`** :  
+1.  Set the following **`NodeTypes`** :
 
-    rep:User 
+    rep:User
 
-    `nt` :unstructured 
+    `nt` :unstructured
 
-    `nt` :resource 
+    `nt` :resource
 
-    rep:ACL 
+    rep:ACL
 
-    sling:Folder 
+    sling:Folder
 
-    sling:OrderedFolder 
+    sling:OrderedFolder
 
     The node types specified in this property will synchronize, and the notifications info (blogs and configurations followed) are synced between different publishers.
-1.  Add all the folders to synchronize in **[!UICONTROL DistributedFolders]**. For example,  
+1.  Add all the folders to synchronize in **[!UICONTROL DistributedFolders]**. For example,
 
-    segments/scoring 
+    segments/scoring
 
-    social/relationships 
+    social/relationships
 
     activities
 
-1.  Set the **`ignorablenodes`** to: 
+1.  Set the **`ignorablenodes`** to:
 
-    .tokens 
+    .tokens
 
-    system 
+    system
 
     rep `:cache` (since we use sticky sessions, we need not sync this node to different publishers)
 
@@ -302,7 +302,7 @@ On each publish instance:
 
     *for example, on a Linux system:*
 
-    `rm -i $(find . -type f -name sling.id.file)` 
+    `rm -i $(find . -type f -name sling.id.file)`
 
     *for example, on a Windows system:*
 
@@ -315,7 +315,7 @@ Repeat these steps until all publish instances have an unique Sling ID.
 
 ### Vault Package Builder Factory {#vault-package-builder-factory}
 
-For updates to sync properly, it is necessary to modify the vault package builder for user sync.  
+For updates to sync properly, it is necessary to modify the vault package builder for user sync.
 In `/home/users`, a `/rep:cache` node is created. It is a cache which is used to find that if we query on the principal name of a node then this cache can be used directly.
 
 User synchronization can stop if `rep:cache `nodes are synced across publishers.
@@ -334,10 +334,10 @@ On each AEM publish instance:
     * `/home/users|-.\*/.tokens`
     * `/home/users|**+**.\*/rep:cache`
 1.  Policy handling
-    *  To overwrite existing rep `:policy` nodes with new ones, add a third Package Filter:  
+    *  To overwrite existing rep `:policy` nodes with new ones, add a third Package Filter:
 
        `/home/users|**+**.\*/rep:policy`
-    *  To prevent policies from being distributed, set  
+    *  To prevent policies from being distributed, set
 
        Acl Handling: IGNORE
 
@@ -378,23 +378,23 @@ If Sling distribution fails, try the following debugging steps:
 
    To debug:
 
-    1. Disable the user synchronization: 
-    1. On AEM author instance, sign in with administrator privileges. 
+    1. Disable the user synchronization:
+    1. On AEM author instance, sign in with administrator privileges.
 
-       1. Access the [Web Console](../../help/sites-deploying/configuring-osgi.md). For example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr). 
-       1. Locate the configuration **[!UICONTROL Apache Sling Distribution Agent - Sync Agents Factory]**. 
+       1. Access the [Web Console](../../help/sites-deploying/configuring-osgi.md). For example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+       1. Locate the configuration **[!UICONTROL Apache Sling Distribution Agent - Sync Agents Factory]**.
 
-       1. Deselect the **[!UICONTROL Enabled]** checkbox. 
+       1. Deselect the **[!UICONTROL Enabled]** checkbox.
 
-       On disabling the user synchronization on author instance, (exporter and importer) endpoints are disabled and the author instance is static. The **[!UICONTROL vlt]** packages are not pinged or fetched by the author. 
+       On disabling the user synchronization on author instance, (exporter and importer) endpoints are disabled and the author instance is static. The **[!UICONTROL vlt]** packages are not pinged or fetched by the author.
 
-       Now if a user is created on publish instance, the **[!UICONTROL vlt]** package is created in */var/sling/distribution/packages/  socialpubsync -  vlt /data* node. And if these packages are pushed by the author to another service. You can download and extract this data to check what all properties are pushed to other services. 
+       Now if a user is created on publish instance, the **[!UICONTROL vlt]** package is created in */var/sling/distribution/packages/  socialpubsync -  vlt /data* node. And if these packages are pushed by the author to another service. You can download and extract this data to check what all properties are pushed to other services.
 
     1. Go to a publisher, and create a user on the publisher. As a result, events are created.
-    1. Check the [order of logs](sync.md#troubleshoot-sling-distribution-in-aem-communities), created on user creation. 
+    1. Check the [order of logs](sync.md#troubleshoot-sling-distribution-in-aem-communities), created on user creation.
     1. Check whether a **[!UICONTROL vlt]** package is created on `/var/sling/distribution/packages/socialpubsync-vlt/data`.
-    1. Now, enable the user synchronization on AEM author instance. 
-    1. On publisher, change the exporter or importer endpoints in **[!UICONTROL Apache Sling Distribution Agent - Sync Agents Factory]**.  
+    1. Now, enable the user synchronization on AEM author instance.
+    1. On publisher, change the exporter or importer endpoints in **[!UICONTROL Apache Sling Distribution Agent - Sync Agents Factory]**.
 
        We can download and extract package data to check what all properties are pushed to other publishers, and which data is lost.
 

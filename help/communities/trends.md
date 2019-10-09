@@ -5,7 +5,7 @@ description: Adding a Community Activity List component to a page
 seo-description: Adding a Community Activity List component to a page
 uuid: 6a030340-0e69-432a-98f1-3effb2b97136
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 93a112fc-ef34-4281-89b8-a0f1b3d3aca9
@@ -61,7 +61,7 @@ Under the **[!UICONTROL Comments]** tab, specify if and how comments for uploade
 
 * **[!UICONTROL Display title]**
 
-  A descriptive title to display above the data, such as `Trending Content`.  
+  A descriptive title to display above the data, such as `Trending Content`.
 
   Default is no title.
 

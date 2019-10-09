@@ -7,7 +7,7 @@ uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 ---
@@ -24,27 +24,27 @@ The following diagram shows data being submitted to a Java Servlet named `Handle
 
 The following table explains the steps in the diagram.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Step</p></th> 
-   <th><p>Description</p></th> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Step</p></th>
+   <th><p>Description</p></th>
   </tr>
- </thead> 
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>A user fills in an interactive form and clicks the form’s Submit button.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>Data is submitted to the <code>HandleData</code> Java Servlet as XML data.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>The <code>HandleData</code> Java Servlet contains application logic to retrieve the data.</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>A user fills in an interactive form and clicks the form’s Submit button.</p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>Data is submitted to the <code>HandleData</code> Java Servlet as XML data.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>The <code>HandleData</code> Java Servlet contains application logic to retrieve the data.</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Handling submitted XML data {#handling-submitted-xml-data}
@@ -72,31 +72,31 @@ Consider a web application that invokes the Forms service. After the Forms servi
 
 The following table describes the steps in this diagram.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Step</p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Step</p></th>
+   <th><p>Description</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>A web page contains a link that accesses a Java Servlet that invokes the Forms service.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>The Forms service renders an interactive PDF form to the client web browser.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>The user fills in an interactive form and clicks a submit button. The form is submitted back to the Forms service as PDF data. This option is set in Designer.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>4</p></td> 
-   <td><p>The Forms service saves the PDF data as a PDF file. </p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>A web page contains a link that accesses a Java Servlet that invokes the Forms service.</p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>The Forms service renders an interactive PDF form to the client web browser.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>The user fills in an interactive form and clicks a submit button. The form is submitted back to the Forms service as PDF data. This option is set in Designer.</p></td>
+  </tr>
+  <tr>
+   <td><p>4</p></td>
+   <td><p>The Forms service saves the PDF data as a PDF file. </p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Handling submitted URL UTF-16 data {#handling-submitted-url-utf-16-data}
@@ -112,7 +112,7 @@ If form data is submitted as URL UTF-16 data, the client computer requires Adobe
 To handle submitted forms, perform the following tasks:
 
 1. Include project files.
-1. Create a Forms Client API object. 
+1. Create a Forms Client API object.
 1. Retrieve form data.
 1. Determine if the form submission contains file attachments.
 1. Process the submitted data.
@@ -131,7 +131,7 @@ To retrieve submitted form data, you invoke the `FormsServiceClient` object’s 
 
 You can also retrieve form fields from a form submitted as PDF data by setting the following run-time options:
 
-* Pass the following value to the `processFormSubmission` method as the content type parameter: `CONTENT_TYPE=application/pdf`. 
+* Pass the following value to the `processFormSubmission` method as the content type parameter: `CONTENT_TYPE=application/pdf`.
 * Set the `RenderOptionsSpec` object’s `PDFToXDP` value to `true`
 * Set the `RenderOptionsSpec` object’s `ExportDataFormat` value to `XMLData`
 
@@ -150,9 +150,9 @@ You retrieve form data that was posted to the Forms service and determine its pr
 The Forms service returns the following values to indicate whether it has finished processing the data:
 
 * **0 (Submit):** Submitted data is ready to be processed.
-* **1 (Calculate):** The Forms service performed a calculation operation on the data and the results must be rendered back to the user. 
-* **2 (Validate):** The Forms service validated form data and the results must be rendered back to the user. 
-* **3 (Next):** The current page has changed with results that must be written to the client application. 
+* **1 (Calculate):** The Forms service performed a calculation operation on the data and the results must be rendered back to the user.
+* **2 (Validate):** The Forms service validated form data and the results must be rendered back to the user.
+* **3 (Next):** The current page has changed with results that must be written to the client application.
 * **4 (Previous**): The current page has changed with results that must be written to the client application.
 
 >[!NOTE]
@@ -209,7 +209,7 @@ Handle a submitted form by using the Forms API (Java):
 
     * Invoke the `FormsServiceClient` object’s `processFormSubmission` method and pass the following values:
 
-        * The `com.adobe.idp.Document` object that contains the form data. 
+        * The `com.adobe.idp.Document` object that contains the form data.
         * A string value that specifies environment variables including all relevant HTTP headers. Specify the content type to handle. To handle XML data, specify the following string value for this parameter: `CONTENT_TYPE=text/xml`. To handle PDF data, specify the following string value for this parameter: `CONTENT_TYPE=application/pdf`.
         * A string value that specifies the `HTTP_USER_AGENT` header value, for example, . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. This parameter value is optional.
         * A `RenderOptionsSpec` object that stores run-time options.
@@ -220,7 +220,7 @@ Handle a submitted form by using the Forms API (Java):
 
 1. Determine if the form submission contains file attachments
 
-    * Invoke the `FormsResult` object’s `getAttachments` method. This method returns a `java.util.List` object that contains files that were submitted with the form. 
+    * Invoke the `FormsResult` object’s `getAttachments` method. This method returns a `java.util.List` object that contains files that were submitted with the form.
     * Iterate through the `java.util.List` object to determine if there are file attachments. If there are file attachments, each element is a `com.adobe.idp.Document` instance. You can save the file attachments by invoking the `com.adobe.idp.Document` object’s `copyToFile` method and passing a `java.io.File` object.
 
    >[!NOTE]
@@ -262,34 +262,34 @@ Handle a submitted form by using the Forms API (web service):
 
 1. Include project files
 
-    * Create Java proxy classes that consume the Forms service WSDL. 
+    * Create Java proxy classes that consume the Forms service WSDL.
     * Include the Java proxy classes into your class path.
 
 1. Create a Forms Client API object
 
-   Create a `FormsService` object and set authentication values. 
+   Create a `FormsService` object and set authentication values.
 
 1. Retrieve form data
 
-    * To retrieve form data that was posted to a Java Servlet, create a `BLOB` object by using its constructor. 
+    * To retrieve form data that was posted to a Java Servlet, create a `BLOB` object by using its constructor.
     * Create a `java.io.InputStream` object by invoking the `javax.servlet.http.HttpServletResponse` object’s `getInputStream` method.
     * Create a `java.io.ByteArrayOutputStream` object by using its constructor and passing the length of the `java.io.InputStream` object.
     * Copy the contents of the `java.io.InputStream` object into the `java.io.ByteArrayOutputStream` object.
     * Create a byte array by invoking the `java.io.ByteArrayOutputStream` object’s `toByteArray` method.
-    * Populate the `BLOB` object by invoking its `setBinaryData` method and passing the byte array as an argument. 
+    * Populate the `BLOB` object by invoking its `setBinaryData` method and passing the byte array as an argument.
     * Create a `RenderOptionsSpec` object by using its constructor. Set the locale value by invoking the `RenderOptionsSpec` object’s `setLocale` method and passing a string value that specifies the locale value.
     * Invoke the `FormsService` object’s `processFormSubmission` method and pass the following values:
 
-        * The `BLOB` object that contains the form data. 
+        * The `BLOB` object that contains the form data.
         * A string value that specifies environment variables including all relevant HTTP headers. Specify the content type to handle. To handle XML data, specify the following string value for this parameter: `CONTENT_TYPE=text/xml`. To handle PDF data, specify the following string value for this parameter: `CONTENT_TYPE=application/pdf`.
         * A string value that specifies the `HTTP_USER_AGENT` header value; for example, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-        * A `RenderOptionsSpec` object that stores run-time options. 
+        * A `RenderOptionsSpec` object that stores run-time options.
         * An empty `BLOBHolder` object that is populated by the method.
         * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the method.
         * An empty `BLOBHolder` object that is populated by the method.
         * An empty `BLOBHolder` object that is populated by the method.
         * An empty `javax.xml.rpc.holders.ShortHolder` object that is populated by the method.
-        * An empty `MyArrayOf_xsd_anyTypeHolder` object that is populated by the method. This parameter is used to store file attachments that are submitted along with the form. 
+        * An empty `MyArrayOf_xsd_anyTypeHolder` object that is populated by the method. This parameter is used to store file attachments that are submitted along with the form.
         * An empty `FormsResultHolder` object that is populated by the method with the form that is submitted.
 
       The `processFormSubmission` method populates the `FormsResultHolder` parameter with the results of the form submission.
@@ -298,14 +298,14 @@ Handle a submitted form by using the Forms API (web service):
 
 1. Determine if the form submission contains file attachments
 
-   Get the value of the `MyArrayOf_xsd_anyTypeHolder` object’s `value` data member (the `MyArrayOf_xsd_anyTypeHolder` object was passed to the `processFormSubmission` method). This data member returns an array of `Objects`. Each element within the `Object` array is an `Object`that corresponds to the files that were submitted along with the form. You can get each element within the array and cast it to a `BLOB` object. 
+   Get the value of the `MyArrayOf_xsd_anyTypeHolder` object’s `value` data member (the `MyArrayOf_xsd_anyTypeHolder` object was passed to the `processFormSubmission` method). This data member returns an array of `Objects`. Each element within the `Object` array is an `Object`that corresponds to the files that were submitted along with the form. You can get each element within the array and cast it to a `BLOB` object.
 
 1. Process the submitted data
 
     * If the data content type is `application/vnd.adobe.xdp+xml` or `text/xml`, create application logic to retrieve XML data values.
 
         * Create a `BLOB` object by invoking the `FormsResult` object’s `getOutputContent` method.
-        * Create a byte array by invoking the `BLOB` object’s `getBinaryData` method. 
+        * Create a byte array by invoking the `BLOB` object’s `getBinaryData` method.
         * Create a `java.io.InputStream` object by invoking the `java.io.ByteArrayInputStream` constructor and passing the byte array.
         * Create an `org.w3c.dom.DocumentBuilderFactory` object by calling the static `org.w3c.dom.DocumentBuilderFactory` object’s `newInstance` method.
         * Create an `org.w3c.dom.DocumentBuilder` object by invoking the `org.w3c.dom.DocumentBuilderFactory` object’s `newDocumentBuilder` method.

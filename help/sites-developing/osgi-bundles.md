@@ -5,7 +5,7 @@ description: Tips for managing your OSGi bundles
 seo-description: Tips for managing your OSGi bundles
 uuid: 07af7089-a233-4e5b-928c-76ddc0af8839
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12

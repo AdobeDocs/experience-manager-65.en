@@ -5,7 +5,7 @@ description: Learn how to prepare content for translation.
 seo-description: Learn how to prepare content for translation.
 uuid: 369630a8-2ed7-48db-973e-bd8213231d49
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
@@ -36,10 +36,10 @@ The language copy for which you originally author site content is the language m
 Use the following steps to prepare your site for translation:
 
 1. Create the language root of your language master. For example, the language root of the English Geometrixx demo site is /content/geometrixx/en. Ensure that the language root is correctly configured according to the information in [Creating a Language Root](/help/sites-administering/tc-prep.md#creating-a-language-root).
-1. Author the content of your language master. 
+1. Author the content of your language master.
 1. Create the language root of each language copy for your site. For example, the French language copy of the Geometrixx sample site is /content/geometrixx/fr.
 
-After you prepare your content for translation, you can automatically create missing pages in your language copies and associated translation projects. (See [Creating a Translation Project](/help/sites-administering/tc-manage.md).) For an overview of the content translation process in AEM, see [Translating Content for Multilingual Websites](/help/sites-administering/translation.md).  
+After you prepare your content for translation, you can automatically create missing pages in your language copies and associated translation projects. (See [Creating a Translation Project](/help/sites-administering/tc-manage.md).) For an overview of the content translation process in AEM, see [Translating Content for Multilingual Websites](/help/sites-administering/translation.md).
 
 ## Creating a Language Root {#creating-a-language-root}
 
@@ -58,7 +58,7 @@ The following procedure uses the touch-optimized UI to create a language copy of
 1. Navigate to Sites.
 1. Click or tap the site for which you want to create a language copy.
 
-   For example, to create a language copy of the Geometrixx Outdoors site, you would click or tap Geometrixx Outdoors Site. 
+   For example, to create a language copy of the Geometrixx Outdoors site, you would click or tap Geometrixx Outdoors Site.
 
 1. Click or tap Create, and then click or tap Create Page.
 

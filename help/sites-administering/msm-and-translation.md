@@ -5,7 +5,7 @@ description: Learn how to manage multilingual websites in AEM.
 seo-description: Learn how to manage multilingual websites in AEM.
 uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
@@ -29,12 +29,12 @@ The following administration tools are available for managing websites and pages
 
 You can efficiently create content for multinational and multilingual sites through the combined use of the Multi Site Manager and the translation workflow. Create a master site in one language, for a specific country, then use that content as a basis for the other sites, using translation where required:
 
-* [Translate](/help/sites-administering/translation.md) the master site into different languages.   
+* [Translate](/help/sites-administering/translation.md) the master site into different languages.
 
 * Use [Multi Site Manager](/help/sites-administering/msm.md) to:
 
     * Re-use content from the master site, and the translations, to create sites for other countries and cultures.
-    * Make sure to limit the use of Multi Site Manager to content within one language, e.g. English master -&gt; English language branches in country sites, French master -&gt; French language branches in country sites. 
+    * Make sure to limit the use of Multi Site Manager to content within one language, e.g. English master -&gt; English language branches in country sites, French master -&gt; French language branches in country sites.
     * Where required, detach elements of the live copies to add localization details.
 
 The following diagram illustrates how the main concepts intersect (but does not show all levels/elements involved):
@@ -54,7 +54,7 @@ The following diagram illustrates how the main concepts intersect (but does not 
 >
 >For all use-cases it is recommended to read the following best practices:
 >
->* [Best Practices for MSM](/help/sites-administering/msm-best-practices.md); particularly: 
+>* [Best Practices for MSM](/help/sites-administering/msm-best-practices.md); particularly:
 >
 >  * [Create Site](/help/sites-administering/msm-best-practices.md#create-site)
 >  * [MSM and Multilingual Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)

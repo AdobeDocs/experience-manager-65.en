@@ -5,7 +5,7 @@ description: Learn about the basics of the Live Copy Overview Console.
 seo-description: Learn about the basics of the Live Copy Overview Console.
 uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
@@ -129,7 +129,7 @@ The **Relationship Status** console has two tabs providing a range of functional
 
 This tab provides detailed information about the status of the relationship between the blueprint and live copy:
 
-![chlimage_1-363](assets/chlimage_1-363.png) 
+![chlimage_1-363](assets/chlimage_1-363.png)
 
 ### Live Copy Information {#live-copy-information}
 

@@ -5,7 +5,7 @@ description: Segmentation is a key consideration when creating a campaign. In mo
 seo-description: Segmentation is a key consideration when creating a campaign. In most cases, you will need to have segments already defined before starting your campaign.
 uuid: 609d83b3-df0e-44ad-8e27-90b676d2666b
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
@@ -43,8 +43,8 @@ When discussing segmentation, the following terminology is used:
 
 **Behavioral Traits** Behavioral traits are those that relate to a visitor's behavior on the website. These include:
 
-* Interest within your website; including pages visited and products bought.  
-* Interest on the referring website; including search terms used, or adverts clicked on.  
+* Interest within your website; including pages visited and products bought.
+* Interest on the referring website; including search terms used, or adverts clicked on.
 * Interest on other sites; determined using tools such as Spyjax.
 * Visitor loyality; duration of the visit, frequency of visits.
 

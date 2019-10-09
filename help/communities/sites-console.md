@@ -5,7 +5,7 @@ description: How to access the Communities Sites console
 seo-description: How to access the Communities Sites console
 uuid: 85017055-b8af-4eeb-a8ab-1cbbba0f5a6a
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
@@ -57,7 +57,7 @@ To access an existing community site, for the purpose of authoring, modifying, p
 
 For example, the following image shows the main Communities Sites console displaying the folders for two community sites: [enable](getting-started-enablement.md) and [engage](getting-started.md):
 
-![chlimage_1-448](assets/chlimage_1-448.png) 
+![chlimage_1-448](assets/chlimage_1-448.png)
 
 ## Site Creation {#site-creation}
 
@@ -75,25 +75,25 @@ The creation process is a series of steps presented as panels containing a set o
 
 On the Site Template panel, the Title, Description, Site Root, Base Language, Name and Site Template are specified:
 
-* **[!UICONTROL Community Site Title]**: A display title for the site. 
+* **[!UICONTROL Community Site Title]**: A display title for the site.
 
   The title appears on the published site as well as in the site admin UI.
 
-* **[!UICONTROL Community Site Description]**: A description of the site. 
+* **[!UICONTROL Community Site Description]**: A description of the site.
 
   The description does not appear on the published site.
 
-* **[!UICONTROL Community Site Root]**: The root path to the site.  
+* **[!UICONTROL Community Site Root]**: The root path to the site.
 
   The default root is `/content/sites`, but the root may be moved to any location within the web site.
 
-* **[!UICONTROL Community Site Base Language]**: (leave untouched for single language: English) use the pull down menu to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.  
+* **[!UICONTROL Community Site Base Language]**: (leave untouched for single language: English) use the pull down menu to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
 
 * **[!UICONTROL Community Site Name]**: The name of the site's root page which appears in the URL
 
     * Double-check the name as it is not easily changed after the site is created
     * The base URL ( `https://*server:port/site root/site name*)` will be displayed underneath the `Community Site Name`
-    * For a valid URL, append a base language code + ".html" 
+    * For a valid URL, append a base language code + ".html"
 
       *For example*, `http://localhost:4502/content/sites/mysight/en.html`
 
@@ -168,43 +168,43 @@ The Settings panel contains several sub-panels presenting features to configure 
 >
 >A community site is private when anonymous site visitors are denied access, may not self-register, and may not use social login.
 
-* **[!UICONTROL Allow User Registration]** 
+* **[!UICONTROL Allow User Registration]**
 
-  If checked, site visitors may become community members by self-registration. 
+  If checked, site visitors may become community members by self-registration.
 
-  If unchecked, the community site is *restricted* and site visitors must be assigned to the community site's members group, make a request or be sent an invitation by email. If unchecked, anonymous access should not be allowed. 
-
-  Uncheck for a *private* community site. Default is checked. 
-
-* **[!UICONTROL Allow Anonymous Access]** 
-
-  If checked, the community site is *open* and any site visitor may access the site. 
-
-  If unchecked, only signed-in members may access the site. 
+  If unchecked, the community site is *restricted* and site visitors must be assigned to the community site's members group, make a request or be sent an invitation by email. If unchecked, anonymous access should not be allowed.
 
   Uncheck for a *private* community site. Default is checked.
 
-* **[!UICONTROL Allow Messaging]** 
+* **[!UICONTROL Allow Anonymous Access]**
 
-  If checked, members may send messages to one another and to the group within the community site. 
+  If checked, the community site is *open* and any site visitor may access the site.
 
-  If unchecked, messaging is not setup for the community. 
+  If unchecked, only signed-in members may access the site.
+
+  Uncheck for a *private* community site. Default is checked.
+
+* **[!UICONTROL Allow Messaging]**
+
+  If checked, members may send messages to one another and to the group within the community site.
+
+  If unchecked, messaging is not setup for the community.
 
   Default is unchecked.
 
-* **[!UICONTROL Allow Social Logins: Facebook]** 
+* **[!UICONTROL Allow Social Logins: Facebook]**
 
-  If checked, allow site visitors to sign in with their Facebook account credentials. The selected [Facebook cloud configuration](social-login.md#create-a-facebook-connect-cloud-service) should be configured to add users to the community site's members group once the community site is created. 
+  If checked, allow site visitors to sign in with their Facebook account credentials. The selected [Facebook cloud configuration](social-login.md#create-a-facebook-connect-cloud-service) should be configured to add users to the community site's members group once the community site is created.
 
-  If unchecked, no Facebook login is presented. 
+  If unchecked, no Facebook login is presented.
 
   Leave unchecked for a *private* community site. Default is unchecked.
 
-* **[!UICONTROL Allow Social Logins: Twitter]** 
+* **[!UICONTROL Allow Social Logins: Twitter]**
 
-  If checked, allow site visitors to sign in with their Twitter account credentials. The selected [Twitter cloud configuration](social-login.md#create-a-twitter-connect-cloud-service) should be configured to add users to the community site's members group once the community site is created. 
+  If checked, allow site visitors to sign in with their Twitter account credentials. The selected [Twitter cloud configuration](social-login.md#create-a-twitter-connect-cloud-service) should be configured to add users to the community site's members group once the community site is created.
 
-  If unchecked, no Twitter login is presented. 
+  If unchecked, no Twitter login is presented.
 
   Leave unchecked for a *private* community site. Default is unchecked.
 
@@ -232,15 +232,15 @@ The [roles of community members](users.md) are assigned with these settings.
 
 Finding community members is easy using type-ahead search.
 
-* **[!UICONTROL Community Managers]** 
+* **[!UICONTROL Community Managers]**
 
   Start typing to select one or more community members or member groups who may manager community members and member groups.
 
-* **[!UICONTROL Community Moderators]** 
+* **[!UICONTROL Community Moderators]**
 
   Start typing to select one or more community members or member groups who are to be trusted as moderators of user generated content.
 
-* **[!UICONTROL Community Privileged Members]** 
+* **[!UICONTROL Community Privileged Members]**
 
   Start typing to select one or more community members or member groups to be given the ability to create new content when `Allow Privileged Member` has been selected for a [community function](functions.md).
 
@@ -250,11 +250,11 @@ Finding community members is easy using type-ahead search.
 
 The global setting for moderating user generated content (UGC) is controlled by these settings. Individual components have additional settings to control moderation.
 
-* **[!UICONTROL Content is Premoderated]** 
+* **[!UICONTROL Content is Premoderated]**
 
   If checked, posted community content will not appear until approved by a moderator. Default is unchecked. For more information, see [Moderating Community Content](moderate-ugc.md#premoderation).
 
-* **[!UICONTROL Flagging threshold before content is hidden]** 
+* **[!UICONTROL Flagging threshold before content is hidden]**
 
   If greater than 0, the number of times a topic or post has to be flagged before it is hidden from public view. If set to -1, the flagged topic or post is never hidden from public view. Default is 5.
 
@@ -262,17 +262,17 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 ![chlimage_1-453](assets/chlimage_1-453.png)
 
-* **[!UICONTROL Enable Analytics]** 
+* **[!UICONTROL Enable Analytics]**
 
-  Only available when Adobe Analytics has been [configured](analytics.md) for Communities features. 
+  Only available when Adobe Analytics has been [configured](analytics.md) for Communities features.
 
   Default is unchecked. When checked, an additional selection menu appears:
 
 ![chlimage_1-454](assets/chlimage_1-454.png)
 
-* **[!UICONTROL Cloud Config Framework Reference]** 
+* **[!UICONTROL Cloud Config Framework Reference]**
 
-  From the pull-down menu, select the Analytics cloud service framework configured for this community site. 
+  From the pull-down menu, select the Analytics cloud service framework configured for this community site.
 
   `Communities`is the framework example from [Analytics Configuration for Communities Features](analytics.md#aem-analytics-framework-configuration) documentation.
 
@@ -280,12 +280,12 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 ![chlimage_1-455](assets/chlimage_1-455.png)
 
-* **[!UICONTROL Allow Machine Translation]** 
+* **[!UICONTROL Allow Machine Translation]**
   When checked (default is unchecked), machine translation is enabled for UGC within the site. This does not affect any other content, such as page content, even if the site is setup as a multilingual site. See [Translating User Generated Content](translate-ugc.md) for information on configuring a licensed translation service for AEM Communities. See [Translating Content for Multilingual Sites](../../help/sites-administering/translation.md) for a complete overview.
 
 ![chlimage_1-456](assets/chlimage_1-456.png)
 
-* **[!UICONTROL Enable Machine Translation for selected languages]** 
+* **[!UICONTROL Enable Machine Translation for selected languages]**
 
   The languages enabled for machine translation default to the system setting specified by the [translation integration configuration](translate-ugc.md#translation-integration-configuration). These default settings may be overridden for this site by deleting defaults and/or selecting other languages from the pull-down menu.
 
@@ -293,7 +293,7 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
   By default, the service provider is a trial service using `microsoft`for demonstration only. If no translation service provider is licensed, **Allow Machine Translation** should be unchecked.
 
-* **[!UICONTROL Choose global shared store]** 
+* **[!UICONTROL Choose global shared store]**
 
   For a website with multiple language copies, a global shared store provides a single thread of conversation, visible from each langauge copy. This is achieved by selecting one of the languages included as a language copy. Default is *No Global Shared Store*.
 
@@ -303,13 +303,13 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 * **Select the translation options for your community site**
 
-    * **[!UICONTROL Translate entire page]** 
+    * **[!UICONTROL Translate entire page]**
 
       If selected, all UGC on a page is translated into the base language of the page.
 
       Default is *not selected*.
-  
-    * **[!UICONTROL Translate selection only]** 
+
+    * **[!UICONTROL Translate selection only]**
 
       If selected, a translate option appears next to each post allowing individual posts to be translated into the base language of the page.
 
@@ -317,21 +317,21 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 * **Select Persistence Options**
 
-    * **[!UICONTROL Translate contributions on user request and persist afterwards]** 
+    * **[!UICONTROL Translate contributions on user request and persist afterwards]**
 
-      If selected, content is not translated until a request is made. Once translated, the translation is stored in the repository. 
-
-      Default is *not selected*.
-  
-    * **[!UICONTROL Don't persist translations]** 
-
-      If selected, translations are not stored in the repository. 
-  
-      If not selected, translations are persisted. 
+      If selected, content is not translated until a request is made. Once translated, the translation is stored in the repository.
 
       Default is *not selected*.
 
-* **[!UICONTROL Smart Render]** 
+    * **[!UICONTROL Don't persist translations]**
+
+      If selected, translations are not stored in the repository.
+
+      If not selected, translations are persisted.
+
+      Default is *not selected*.
+
+* **[!UICONTROL Smart Render]**
   Select one of
 
     * `Always show contributions in the original language` (default)
@@ -344,11 +344,11 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 The `ENABLEMENT`settings are applicable when the chosen community site template includes the [assignments function](functions.md#assignments-function), which is available when the enablement features are licensed and [configured](enablement.md). The reference site template that includes the assignments function is `Reference Structured Learning Site Template.`
 
-* **[!UICONTROL Enablement Managers]** 
+* **[!UICONTROL Enablement Managers]**
 
   (required) Only members of the `Community Enablementmanagers` group are available to be selected to manage this enablement community. Enablement managers are responsible for assigning members to resources. See also [Managing Users and User Groups](users.md).
 
-* **[!UICONTROL Marketing Cloud Org Id]** 
+* **[!UICONTROL Marketing Cloud Org Id]**
 
   (optional) The ID for a [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) license.
 
@@ -399,7 +399,7 @@ The properties of an exisitng site, specified during the site creation process, 
 
 `Details of the following properties match the descriptions provided in the` [Site Creation](#site-creation) section.
 
-![chlimage_1-463](assets/chlimage_1-463.png) 
+![chlimage_1-463](assets/chlimage_1-463.png)
 
 ### Modify Basic {#modify-basic}
 
@@ -421,18 +421,18 @@ The STRUCTURE panel allows the modification of the structure initially created f
 * Drag-and-drop additional [community functions](functions.md) into the site structure
 * On an instance of a community function in the site structure:
 
-    * **`gear icon`** 
+    * **`gear icon`**
 
-      edit settings, including the display title and URL name&ast; 
-  
+      edit settings, including the display title and URL name&ast;
+
       as well as [privileged members groups](users.md#privilegedmembersgroups)
-  
-    * **`trashcan icon`** 
+
+    * **`trashcan icon`**
 
       remove (delete) functions from the site structure
-  
-    * **`grid icon`** 
-  
+
+    * **`grid icon`**
+
       modifiy the order of functions as displayed in the site's top level navigation bar
 
 >[!NOTE]
@@ -453,7 +453,7 @@ The STRUCTURE panel allows the modification of the structure initially created f
 
 #### Example: Adding a Catalog Function to a Community Site Structure {#example-adding-a-catalog-function-to-a-community-site-structure}
 
-![chlimage_1-464](assets/chlimage_1-464.png) 
+![chlimage_1-464](assets/chlimage_1-464.png)
 
 ### Modify Design {#modify-design}
 
@@ -492,7 +492,7 @@ After a community site has been newly created or modified, it is possible to pub
 
 There will be an indication after site is successfully published.
 
-![chlimage_1-466](assets/chlimage_1-466.png) 
+![chlimage_1-466](assets/chlimage_1-466.png)
 
 ### Publishing with Nested Groups {#publishing-with-nested-groups}
 
@@ -502,7 +502,7 @@ After publishing a community site, it is necessary to individually publish each 
 
 ![chlimage_1-467](assets/chlimage_1-467.png)
 
-Select the export icon, on mouse hover over the site, to create a package of the community site that is both stored in [package manager](../../help/sites-administering/package-manager.md) and downloaded.  
+Select the export icon, on mouse hover over the site, to create a package of the community site that is both stored in [package manager](../../help/sites-administering/package-manager.md) and downloaded.
 Note that UGC is not included in the site package.
 
 ## Deleting the Site {#deleting-the-site}
@@ -547,17 +547,17 @@ To correctly redirect, once a site has been configured and pushed to publish, co
 
 * Locate `Adobe Granite Login Selector Authentication Handler`
 * Select the `pencil`icon to open the configuration for edit
-* Enter a **[!UICONTROL Login Page Mappings]** as follows: 
+* Enter a **[!UICONTROL Login Page Mappings]** as follows:
 
-  `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>` 
+  `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
-  for example: 
+  for example:
 
   `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 * Select **[!UICONTROL Save]**
 
-![chlimage_1-468](assets/chlimage_1-468.png) 
+![chlimage_1-468](assets/chlimage_1-468.png)
 
 ### Test Authentication Redirection {#test-authentication-redirection}
 
@@ -571,7 +571,7 @@ On the same AEM publish instance configured with a login page mapping for the co
 * Enter obviously incorrect credentials, such as username "x" and password "x"
 * The login page should be displayed with an "invalid login" error
 
-![chlimage_1-469](assets/chlimage_1-469.png) 
+![chlimage_1-469](assets/chlimage_1-469.png)
 
 ## Accessing Community Sites from Main Sites Console {#accessing-community-sites-from-main-sites-console}
 

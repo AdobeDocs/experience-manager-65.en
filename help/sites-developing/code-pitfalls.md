@@ -5,7 +5,7 @@ description: Common coding pitfalls to avoid when developing for AEM
 seo-description: Common coding pitfalls to avoid when developing for AEM
 uuid: e7413bdc-4889-45ff-bdcb-b0893d33a3b7
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 01362026-a696-4a5d-94e9-ea784eaa6e4b
@@ -23,4 +23,4 @@ Sling Bindings are an inappropriate way to get access to a service in 90% of cas
 
 ## Avoid mixing Java synchronization with ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 
-This can lead to a race condition in which the code will eventually deadlock. 
+This can lead to a race condition in which the code will eventually deadlock.

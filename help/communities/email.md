@@ -5,7 +5,7 @@ description: Email configuration for Communities
 seo-description: Email configuration for Communities
 uuid: e8422cc2-1594-43b0-b587-82825636cec1
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
@@ -62,7 +62,7 @@ Once the [default mail service](#default-mail-service-configuration) is configur
 
 Only the instance for subscriptions needs to be further configured when allowing reply by email.
 
-1. ` [email](#configuration-for-notifications)` instance  
+1. ` [email](#configuration-for-notifications)` instance
 
    for notifications, which does not support reply email, and should not be altered
 
@@ -80,7 +80,7 @@ To reach the Communities email configuration instances:
 
 * Locate `AEM Communities Email Reply Configuration`
 
-![chlimage_1-99](assets/chlimage_1-99.png) 
+![chlimage_1-99](assets/chlimage_1-99.png)
 
 ### Configuration for Notifications {#configuration-for-notifications}
 
@@ -94,7 +94,7 @@ This configuration should not be altered.
 
 * Verify **Create post from reply email** is `unchecked`
 
-![chlimage_1-100](assets/chlimage_1-100.png) 
+![chlimage_1-100](assets/chlimage_1-100.png)
 
 ### Configuration for Subscriptions {#configuration-for-subscriptions}
 
@@ -144,12 +144,12 @@ In order for the email to be brought into the repository, it is necessary to con
 
 * **[!UICONTROL URL]**: *(required)* The outbound mail server. For example, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
 
-* **[!UICONTROL Import to Path]**&ast;: *(required)* Set to `/content/usergenerated/mailFolder/postEmails` 
+* **[!UICONTROL Import to Path]**&ast;: *(required)* Set to `/content/usergenerated/mailFolder/postEmails`
   by browsing to the `postEmails`folder and select **OK**
 
 * **[!UICONTROL Update Interval in Seconds]**: *(optional)* The mail server configured for the default mail service may have requirements regarding the update interval value. For example, Gmail may require an interval of `300`.
 
-* **[!UICONTROL Login]**: *(optional)* 
+* **[!UICONTROL Login]**: *(optional)*
 
 * **[!UICONTROL Password]**: *(optional)*
 

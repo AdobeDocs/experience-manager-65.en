@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 ---
 
@@ -21,57 +21,57 @@ Document security stores policies and data related to protected documents includ
 
 The following table maps how document security organizes data in database tables.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Database table</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcPrincipalKeyEntity</code></td> 
-   <td>Stores information about principal keys for the users. The keys are used in offline document security workflows.</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcAuditEntity</code></td> 
-   <td>Stores information about auditing event like user events, document events, and policy events.</td> 
-  </tr> 
-  <tr> 
-   <td><p><code>EdcLicenseEntity</code></p> </td> 
-   <td>Stores record of a protected document. It stores license details for every protected document.</td> 
-  </tr> 
-  <tr> 
-   <td><p><code>EdcDocumentEntity</code></p> </td> 
-   <td>Stores document name for every license created in the system.</td> 
-  </tr> 
-  <tr> 
-   <td><p><code>EdcRevokationEntity</code></p> </td> 
-   <td>Stores information about revocation and reinstatement of protected documents.</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcMyPolicyListEntity</code></td> 
-   <td>Stores information about users who can create personal policies that appear under the My Policies tab on the Policies page. </td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcPolicyEntity</code></td> 
-   <td>Stores information about policies. Each policy corresponds to a row in this table.</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcPolicyXmlEntity</code></td> 
-   <td>Stores XML files for active policies. A policy XML<sup> </sup>contains references to principal IDs of users associated with the policy. Policy XML is stored as a Blob object.</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcPolicyArchiveEntity</code></td> 
-   <td>Stores information about archived policies. An archived policy contains its policy XML stored as a Blob object.</td> 
-  </tr> 
-  <tr> 
-   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Oracle and MS SQL databases)</p> </td> 
-   <td>Stores the mapping between policy set and users.</td> 
-  </tr> 
-  <tr> 
-   <td><code>EdcInvitedUserEntity</code></td> 
-   <td>Stores information about invited User.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Database table</td>
+   <td>Description</td>
+  </tr>
+  <tr>
+   <td><code>EdcPrincipalKeyEntity</code></td>
+   <td>Stores information about principal keys for the users. The keys are used in offline document security workflows.</td>
+  </tr>
+  <tr>
+   <td><code>EdcAuditEntity</code></td>
+   <td>Stores information about auditing event like user events, document events, and policy events.</td>
+  </tr>
+  <tr>
+   <td><p><code>EdcLicenseEntity</code></p> </td>
+   <td>Stores record of a protected document. It stores license details for every protected document.</td>
+  </tr>
+  <tr>
+   <td><p><code>EdcDocumentEntity</code></p> </td>
+   <td>Stores document name for every license created in the system.</td>
+  </tr>
+  <tr>
+   <td><p><code>EdcRevokationEntity</code></p> </td>
+   <td>Stores information about revocation and reinstatement of protected documents.</td>
+  </tr>
+  <tr>
+   <td><code>EdcMyPolicyListEntity</code></td>
+   <td>Stores information about users who can create personal policies that appear under the My Policies tab on the Policies page. </td>
+  </tr>
+  <tr>
+   <td><code>EdcPolicyEntity</code></td>
+   <td>Stores information about policies. Each policy corresponds to a row in this table.</td>
+  </tr>
+  <tr>
+   <td><code>EdcPolicyXmlEntity</code></td>
+   <td>Stores XML files for active policies. A policy XML<sup> </sup>contains references to principal IDs of users associated with the policy. Policy XML is stored as a Blob object.</td>
+  </tr>
+  <tr>
+   <td><code>EdcPolicyArchiveEntity</code></td>
+   <td>Stores information about archived policies. An archived policy contains its policy XML stored as a Blob object.</td>
+  </tr>
+  <tr>
+   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Oracle and MS SQL databases)</p> </td>
+   <td>Stores the mapping between policy set and users.</td>
+  </tr>
+  <tr>
+   <td><code>EdcInvitedUserEntity</code></td>
+   <td>Stores information about invited User.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Access and delete user data {#access-and-delete-user-data}
@@ -133,13 +133,13 @@ Do the following to delete document security data for a principal ID from databa
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
-   
+
    Delete from EdcMyPolicyListEntity where principalId = '<principal_id>';
-   
+
    Delete from edcpolicyarchiveentity where policyownerId = '<principal_id>';
-   
+
    Delete from edcpolicysetprincipalentity where principalId = '<principal_id>';
-   
+
    Delete from edcinviteduserentity where principalId = '<principal_id>';
    ```
 
@@ -149,7 +149,7 @@ Do the following to delete document security data for a principal ID from databa
 
 1. Active and archived policy XML files are stored in the `EdcPolicyXmlEntity` and `EdcPolicyArchiveEntity` database tables, respectively. To delete data for a user from these tables, do the following:
 
-    1. Open the XML blob of each row in the `EdcPolicyXMLEntity` or `EdcPolicyArchiveEntity` table and extract the XML file. The XML file is similar to the one shown below. 
+    1. Open the XML blob of each row in the `EdcPolicyXMLEntity` or `EdcPolicyArchiveEntity` table and extract the XML file. The XML file is similar to the one shown below.
     1. Edit the XML file to remove the blob for the principal ID.
     1. Repeat steps 1 and 2 for the other file.
 
@@ -200,7 +200,7 @@ Do the following to delete document security data for a principal ID from databa
     1. Navigate to **[!UICONTROL Services > Document Security > My Policies]**.
     1. Open a policy and delete the user from the policy.
 
-   **Note**: Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console. 
+   **Note**: Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console.
 
 1. Delete the data for the principal ID from user management database. For detailed steps, see [Forms User Management | Handling user data](/help/forms/using/user-management-handling-user-data.md).
 1. Start the AEM Forms server.

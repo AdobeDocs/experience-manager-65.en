@@ -1,12 +1,12 @@
 ---
 title: Video Playback Configuration and Troubleshooting
 seo-title: Troubleshooting Videos
-description:  
+description:
 seo-description: Follow this page to learn how to troubleshoot videos. When you upload a video to the DAM and add it your channel, you might encounter issues that video might not play in Screens player and this section describes how to debug and troubleshoot video playing in your channel.
 uuid: 825b2440-5626-40d5-8c93-7689c24474d4
 contentOwner: Jyotika Syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: troubleshoot
 discoiquuid: 65ecc6f1-ba0e-443f-85a1-ac19f9a52c2c
 ---
@@ -40,7 +40,7 @@ If there is no rendition, make sure you have ffmpeg installed on the OS where AE
 
 If you do not see a source attribute under video, it could be that the video did not get transcoded. If the video is transcoded properly, it will appear in the dashboard, as shown in the figure below.
 
-Check ffmpeg is installed and the video profiles. 
+Check ffmpeg is installed and the video profiles.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -118,7 +118,7 @@ To play videos synchronously across multiple devices, you should use the absolut
 
 #### Requirements {#requirements}
 
-* identical 2+ players  
+* identical 2+ players
 * ideally similar hardware
 * identical network topology (players are connected to an NTP server that aligns their internal system clocks)
 
@@ -149,5 +149,5 @@ Follow the steps below to set up an absolute strategy:
 1. Paste value 0.pool.ntp.org, 1.pool.ntp.org, 2.pool.ntp.org, 3.pool.ntp.org, time.apple.com in the dropdown or simply run *sudo ntpdate -u -v 0.pool.ntp.org*
 1. Start the 2+ players
 
-It may take some time before the players start a new aligned sequence.  
+It may take some time before the players start a new aligned sequence.
 

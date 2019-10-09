@@ -1,11 +1,11 @@
 ---
-title: Known Issues in AEM 6.4
-seo-title: Known Issues in AEM 6.4
-description: Known Issues in Adobe Experience Manager 6.4
-seo-description: Known Issues in Adobe Experience Manager 6.4.
+title: Known Issues in AEM 6.5
+seo-title: Known Issues in AEM 6.5
+description: Known Issues in Adobe Experience Manager 6.5
+seo-description: Known Issues in Adobe Experience Manager 6.5.
 uuid: 1733f15e-9c4f-4db3-98ee-25c2ea606f0d
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
+products: SG_EXPERIENCEMANAGER/6.5
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
@@ -13,7 +13,7 @@ discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 
 # Known Issues {#known-issues}
 
-This page keeps a list of known issues Adobe Experience Manager 6.4 released on April 2018. For more information about known issues, [contact support](https://helpx.adobe.com/support/experience-manager.html).
+This page keeps a list of known issues Adobe Experience Manager 6.5 released on April 2018. For more information about known issues, [contact support](https://helpx.adobe.com/support/experience-manager.html).
 
 ## Hybrid Devices {#hybrid-devices}
 

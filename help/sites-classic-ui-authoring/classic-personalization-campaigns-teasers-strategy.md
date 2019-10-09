@@ -5,7 +5,7 @@ description: Campaigns often use teasers as a mechanism to entice a specific seg
 seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
 uuid: 496caa14-2e91-4544-b3fc-12e0fe0da88d
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
@@ -19,14 +19,14 @@ Campaigns often use teasers as a mechanism to entice a specific segment of the v
 >
 >The Teaser component has been deprecated in AEM 6.2.
 
-* **Brand pages** are stored within the Campaigns section of the website. A brand contains the individual campaigns.   
+* **Brand pages** are stored within the Campaigns section of the website. A brand contains the individual campaigns.
 
 * **Campaign pages** are stored within the Campaigns section of the website. Each campaign has an individual page, under which the teaser definitions are held. The container, or overview, page also holds certain information and statistics concerning the individual teaser pages.
 
 Teasers within AEM are comprised of several parts:
 
 * **Teaser pages** are stored under the appropriate campaign page and hold the definitions of the teaser paragraphs available for each specific campaign. These definitions are used when displaying the teaser paragraphs; including content variations, the segment to be used for selecting a variation and boost factor.
-* The **Teaser component** is available out of the box and allows you to create an instance of your specific teaser paragraph in a content page. You can drag the teaser component from the sidekick, then specify your teaser definition to create your own teaser paragraph. **Note:** The Teaser component has been deprecated in AEM 6.2. 
+* The **Teaser component** is available out of the box and allows you to create an instance of your specific teaser paragraph in a content page. You can drag the teaser component from the sidekick, then specify your teaser definition to create your own teaser paragraph. **Note:** The Teaser component has been deprecated in AEM 6.2.
 
 * **Teaser paragraphs** are actual instances of your teaser within a content page. These entice a segment of visitors through to content focused on their interests.
 * Pages that hold the campaign content focused on a specific visitor segment. Usually the teaser paragraphs will lead the visitor to such pages.
@@ -59,51 +59,51 @@ If the following segments have already been created and assigned their respectiv
 
 And we use the following teaser definitions:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Campaign</td> 
-   <td>Teaser</td> 
-   <td>Assigned Segment(s)</td> 
-   <td>Assigned Tags </td> 
-  </tr> 
-  <tr> 
-   <td>C1</td> 
-   <td>T1</td> 
-   <td>S1, S2</td> 
-   <td>Business, Marketing</td> 
-  </tr> 
-  <tr> 
-   <td>C1</td> 
-   <td>T2 </td> 
-   <td>S1</td> 
-   <td><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>C1 </td> 
-   <td>T3</td> 
-   <td>S3, S4</td> 
-   <td><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>C1 </td> 
-   <td>T4</td> 
-   <td>S2, S5</td> 
-   <td><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>C1 </td> 
-   <td>T5</td> 
-   <td>S1, S2, S6</td> 
-   <td>Marketing</td> 
-  </tr> 
-  <tr> 
-   <td>C1 </td> 
-   <td>T6</td> 
-   <td>S6</td> 
-   <td>Business<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Campaign</td>
+   <td>Teaser</td>
+   <td>Assigned Segment(s)</td>
+   <td>Assigned Tags </td>
+  </tr>
+  <tr>
+   <td>C1</td>
+   <td>T1</td>
+   <td>S1, S2</td>
+   <td>Business, Marketing</td>
+  </tr>
+  <tr>
+   <td>C1</td>
+   <td>T2 </td>
+   <td>S1</td>
+   <td><br /> </td>
+  </tr>
+  <tr>
+   <td>C1 </td>
+   <td>T3</td>
+   <td>S3, S4</td>
+   <td><br /> </td>
+  </tr>
+  <tr>
+   <td>C1 </td>
+   <td>T4</td>
+   <td>S2, S5</td>
+   <td><br /> </td>
+  </tr>
+  <tr>
+   <td>C1 </td>
+   <td>T5</td>
+   <td>S1, S2, S6</td>
+   <td>Marketing</td>
+  </tr>
+  <tr>
+   <td>C1 </td>
+   <td>T6</td>
+   <td>S6</td>
+   <td>Business<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 Then if we apply this to a visitor where:
@@ -121,99 +121,99 @@ We can see the resulting:
 
 that are calculated before applying the appropriate strategy:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Campaign</td> 
-   <td>Teaser</td> 
-   <td>Assigned Segment(s)</td> 
-   <td>Tags </td> 
-   <td>Successful Match?</td> 
-   <td>Resulting Boost Factor</td> 
-   <td>Resulting Clickstream Score </td> 
-  </tr> 
-  <tr> 
-   <td>C1</td> 
-   <td>T1</td> 
-   <td>S1, S2</td> 
-   <td>Business, Marketing</td> 
-   <td>Yes</td> 
-   <td>0</td> 
-   <td>9</td> 
-  </tr> 
-  <tr> 
-   <td>C1</td> 
-   <td>T2 </td> 
-   <td>S1</td> 
-   <td><br /> </td> 
-   <td>Yes</td> 
-   <td>0</td> 
-   <td><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>C1 </td> 
-   <td>T3</td> 
-   <td>S3, S4</td> 
-   <td><br /> </td> 
-   <td>No</td> 
-   <td><br /> </td> 
-   <td><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>C1 </td> 
-   <td>T4</td> 
-   <td>S2, S5</td> 
-   <td><br /> </td> 
-   <td>Yes<br /> </td> 
-   <td>0<br /> </td> 
-   <td><br /> </td> 
-  </tr> 
-  <tr> 
-   <td>C1 </td> 
-   <td>T5</td> 
-   <td>S1, S2, S6</td> 
-   <td>Marketing</td> 
-   <td>Yes</td> 
-   <td>100</td> 
-   <td>3</td> 
-  </tr> 
-  <tr> 
-   <td>C1 </td> 
-   <td>T6</td> 
-   <td>S6</td> 
-   <td>Business</td> 
-   <td>Yes</td> 
-   <td>100</td> 
-   <td>6 </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Campaign</td>
+   <td>Teaser</td>
+   <td>Assigned Segment(s)</td>
+   <td>Tags </td>
+   <td>Successful Match?</td>
+   <td>Resulting Boost Factor</td>
+   <td>Resulting Clickstream Score </td>
+  </tr>
+  <tr>
+   <td>C1</td>
+   <td>T1</td>
+   <td>S1, S2</td>
+   <td>Business, Marketing</td>
+   <td>Yes</td>
+   <td>0</td>
+   <td>9</td>
+  </tr>
+  <tr>
+   <td>C1</td>
+   <td>T2 </td>
+   <td>S1</td>
+   <td><br /> </td>
+   <td>Yes</td>
+   <td>0</td>
+   <td><br /> </td>
+  </tr>
+  <tr>
+   <td>C1 </td>
+   <td>T3</td>
+   <td>S3, S4</td>
+   <td><br /> </td>
+   <td>No</td>
+   <td><br /> </td>
+   <td><br /> </td>
+  </tr>
+  <tr>
+   <td>C1 </td>
+   <td>T4</td>
+   <td>S2, S5</td>
+   <td><br /> </td>
+   <td>Yes<br /> </td>
+   <td>0<br /> </td>
+   <td><br /> </td>
+  </tr>
+  <tr>
+   <td>C1 </td>
+   <td>T5</td>
+   <td>S1, S2, S6</td>
+   <td>Marketing</td>
+   <td>Yes</td>
+   <td>100</td>
+   <td>3</td>
+  </tr>
+  <tr>
+   <td>C1 </td>
+   <td>T6</td>
+   <td>S6</td>
+   <td>Business</td>
+   <td>Yes</td>
+   <td>100</td>
+   <td>6 </td>
+  </tr>
+ </tbody>
 </table>
 
 These values are used to determined the teaser(s) that the visitor will see, depending on the **Strategy** applied to the teaser paragraph:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Strategy</td> 
-   <td>Resulting Teaser</td> 
-   <td>Comments</td> 
-  </tr> 
-  <tr> 
-   <td>First</td> 
-   <td>T5</td> 
-   <td>Only T5 and T6 are considered as their segments all resolve <i>and</i> they have the highest boost factor. The list returned is in the order T5, T6; so T5 is selected and shown.</td> 
-  </tr> 
-  <tr> 
-   <td>Random</td> 
-   <td>T5 or T6</td> 
-   <td>Both teasers have segments that all resolve and the same boost factor. Therefore, the two teasers are shown in equal proportion.</td> 
-  </tr> 
-  <tr> 
-   <td>Clickstream Score</td> 
-   <td>T6</td> 
-   <td><p>Segments for T1, T4, T5 and T6 all resolve for the visitor. The higher boost factors of T5 and T6 then excludes T1 and T4. Finally the higher Clickstream Score of T6 result in this being selected.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Strategy</td>
+   <td>Resulting Teaser</td>
+   <td>Comments</td>
+  </tr>
+  <tr>
+   <td>First</td>
+   <td>T5</td>
+   <td>Only T5 and T6 are considered as their segments all resolve <i>and</i> they have the highest boost factor. The list returned is in the order T5, T6; so T5 is selected and shown.</td>
+  </tr>
+  <tr>
+   <td>Random</td>
+   <td>T5 or T6</td>
+   <td>Both teasers have segments that all resolve and the same boost factor. Therefore, the two teasers are shown in equal proportion.</td>
+  </tr>
+  <tr>
+   <td>Clickstream Score</td>
+   <td>T6</td>
+   <td><p>Segments for T1, T4, T5 and T6 all resolve for the visitor. The higher boost factors of T5 and T6 then excludes T1 and T4. Finally the higher Clickstream Score of T6 result in this being selected.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -241,9 +241,9 @@ After creating your brand and campaign you can create and set up your teaser exp
 
 1. Edit the teaser component to add the:
 
-    * **Campaign Path** 
+    * **Campaign Path**
       Path to the campaign page that holds the individual teaser page; segments determine exactly which teaser is shown.
-    * **[Strategy](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)** 
+    * **[Strategy](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
       Method used for selection when multiple segments resolve successfully.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)

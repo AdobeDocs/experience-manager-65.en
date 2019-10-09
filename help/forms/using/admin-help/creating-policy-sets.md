@@ -7,7 +7,7 @@ uuid: 11faf67c-b9b7-4394-8672-d43cace131ad
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 ---
 
@@ -97,7 +97,7 @@ You can now add policies to your policy set. (See [Creating and editing policies
 1. To add visible users or groups, a Policy Set Coordinator, or Document Publishers, click the appropriate tab, click Add Users or Groups, search for the user or group to add, select the entry, click Add, and then click OK.
 1. On the Policies tab, search for policies to add to the policy set and create new policies:
 
-    * To search for a policy, select Policy ID or Policy Name, type the corresponding value, select the number of items to display, and click Find. 
+    * To search for a policy, select Policy ID or Policy Name, type the corresponding value, select the number of items to display, and click Find.
     * For details about creating a new policy, see [Creating and editing policies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Delete a policy set {#delete-a-policy-set}

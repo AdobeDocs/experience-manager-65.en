@@ -6,7 +6,7 @@ seo-description: How-to update the destination of Workspace Help link in AEM For
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 ---
@@ -27,7 +27,7 @@ To update the URL of the online documentation, follow the [Generic Steps of cust
 
    ```
    <ul class="helpmenu">
-     <li>            
+     <li>
        <a href="https://www.adobe.com/go/learn_aemforms_documentation_63" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
      </li>
    ```
@@ -36,7 +36,7 @@ To update the URL of the online documentation, follow the [Generic Steps of cust
 
    ```
    <ul class="helpmenu">
-     <li>            
+     <li>
        <a href="<!--place new help url here-->" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
      </li>
    ```

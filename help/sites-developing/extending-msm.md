@@ -5,7 +5,7 @@ description: This page helps you extend the functionalities of the Multi Site Ma
 seo-description: This page helps you extend the functionalities of the Multi Site Manager
 uuid: 9e8155d5-2aaf-4d7c-aeb5-016562838e10
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
@@ -450,12 +450,12 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
      /************* Deprecated *************/
      @Deprecated
      public void execute(ResourceResolver arg0, LiveRelationship arg1,
-       ActionConfig arg2, boolean arg3) throws WCMException {  
+       ActionConfig arg2, boolean arg3) throws WCMException {
      }
      @Deprecated
      public void execute(ResourceResolver arg0, LiveRelationship arg1,
        ActionConfig arg2, boolean arg3, boolean arg4)
-         throws WCMException {  
+         throws WCMException {
      }
      @Deprecated
      public String getParameterName() {

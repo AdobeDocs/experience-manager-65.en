@@ -5,7 +5,7 @@ description: Learn how to configure Single Sign On (SSO) for an AEM instance.
 seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 topic-tags: Security
@@ -40,15 +40,15 @@ To configure SSO for a AEM instance, you need to configure the [SSO Authenticati
    For example, for NTLM set:
 
     * **Path:** as required; for example, `/`
-    * **Header Names**: `LOGON_USER` 
-    * **ID Format**: `^<DOMAIN>\\(.+)$` 
+    * **Header Names**: `LOGON_USER`
+    * **ID Format**: `^<DOMAIN>\\(.+)$`
 
       Where `<*DOMAIN*>` is replaced by your own domain name.
 
    For CoSign:
 
     * **Path:** as required; for example, `/`
-    * **Header Names**: remote_user 
+    * **Header Names**: remote_user
     * **ID Format:** AsIs
 
    For SiteMinder:
@@ -81,15 +81,15 @@ To configure SSO for a AEM instance, you need to configure the [SSO Authenticati
 >* `disp_iis.ini`
 >* IIS
 >
->In `disp_iis.ini` set:  
->(see [installing the Dispatcher with the Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) for full details)  
+>In `disp_iis.ini` set:
+>(see [installing the Dispatcher with the Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) for full details)
 >
 >* `servervariables=1` (forwards IIS server variables as request headers to the remote instance)
 >* `replaceauthorization=1` (replaces any header named "Authorization" other than "Basic" with its "Basic" equivalent)
 >
 >In IIS:
 >
->* disable **Anonymous access** 
+>* disable **Anonymous access**
 >
 >* enable **Integrated Windows authentification**
 >
@@ -100,7 +100,7 @@ You can see which authentication handler is being applied to any section of the 
 
 The handler that best matches the path is queried first. For example, if you configure handler-A for the path `/` and handler-B for the path `/content`, then a request to `/content/mypage.html` will query handler-B first.
 
-![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png) 
+![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Example {#example}
 
@@ -129,7 +129,7 @@ The response would be:
 ```xml
 HTTP/1.1 200 OK
 Connection: Keep-Alive
-Server: Day-Servlet-Engine/4.1.24 
+Server: Day-Servlet-Engine/4.1.24
 Content-Type: text/html;charset=utf-8
 Date: Thu, 23 Aug 2012 09:58:39 GMT
 Transfer-Encoding: chunked
@@ -142,10 +142,10 @@ Transfer-Encoding: chunked
 ....
 ```
 
-This also works if you request:  
+This also works if you request:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Or you can use the following curl command to send the `TestHeader` header to `admin:`  
+Or you can use the following curl command to send the `TestHeader` header to `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]

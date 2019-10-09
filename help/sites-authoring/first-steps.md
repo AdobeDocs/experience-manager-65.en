@@ -5,7 +5,7 @@ description: An overview of the main tasks that you will be using when starting 
 seo-description: An overview of the main tasks that you will be using when starting to author content with AEM
 uuid: 13aec50b-f902-4b5e-9e8b-bc94810d7b88
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
@@ -17,7 +17,7 @@ This section gives you an overview of the main tasks that you will be using when
 
 It covers:
 
-* [Getting Started](#getting-started) - Detailing the basic sequence of events you need for creating and publishing your first page.  
+* [Getting Started](#getting-started) - Detailing the basic sequence of events you need for creating and publishing your first page.
 
 * [Further Actions](#further-actions) - Following on with the many other actions you can use when authoring.
 
@@ -48,7 +48,7 @@ Whether your instance already has existing pages or you have just created a new 
 * [Inserting a Component (Paragraph)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Edit/Configure/Copy/Cut/Delete/Paste](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) a Component
 * [Edit (Content)](/help/sites-authoring/editing-content.md#edit-content)
-* [Edit (Content) - Full Screen Mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)  
+* [Edit (Content) - Full Screen Mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
 * [Undoing and Redoing Page Edits](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Using Preview Mode](/help/sites-authoring/editing-content.md#preview-mode) (to see how it will look when published)

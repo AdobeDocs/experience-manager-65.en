@@ -1,12 +1,12 @@
 ---
 title: Using Scribble Signature in HTML5 forms
 seo-title: Using Scribble Signature in HTML5 forms
-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices. 
-seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices. 
+description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
+seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
 uuid: afac2d37-ef0d-428b-aed7-64a00d62792d
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 ---
@@ -17,7 +17,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 
 ## How to design a form using Scribble Signature field {#how-to-design-a-form-using-scribble-signature-field}
 
-1. Open a form in Forms Designer. 
+1. Open a form in Forms Designer.
 1. Drag and drop the Signature Scribble field on the page.
 
    ![designer_scribble](assets/designer_scribble.png)
@@ -30,7 +30,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 
    The Signature Scribble field, by default, marks geolocation information as mandatory during the signing process on iPad (and is optional for other devices). This default behavior can be overridden by changing the value of the `geoLocMandatoryOnIpad` property. This property is exposed as extras in the Signature Scribble Field. The steps to modify it are:
 
-    1. On the form, select the Signature Scribble field. 
+    1. On the form, select the Signature Scribble field.
     1. Select the **XML Source** tab.
 
        >[!NOTE]
@@ -39,7 +39,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 
     1. Locate the `<ui>` tag in the `<field>` tag and modify the source code to look like the following:
 
-       ```xml    
+       ```xml
        <extras name="x-scribble-add-on">
        <boolean name="geoLocMandatoryOnIpad">0</boolean>
        </extras>
@@ -85,7 +85,7 @@ Clicking the **OK** icon saves the scribble as an image in the field. The image 
 
 Tapping or clicking the Scribble field opens the dialog box in read-only mode.
 
-![3](assets/3.png) 
+![3](assets/3.png)
 
 ### Selecting Pen size {#selecting-pen-size}
 

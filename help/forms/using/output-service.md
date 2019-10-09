@@ -5,7 +5,7 @@ description: Describes Output Service, which is part of AEM Document Services
 seo-description: Describes Output Service, which is part of AEM Document Services
 uuid: acd64bbb-91df-49bc-9216-2e860812bbe9
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b96ba2d-007e-472a-875f-2caedd35ecf4
 ---

@@ -5,7 +5,7 @@ description: Complete predicate reference for the Query Builder API.
 seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
@@ -54,10 +54,10 @@ Supports facet extraction. Will provide buckets for each `true` or `false` value
 
 #### Properties {#properties}
 
-* **boolproperty** 
+* **boolproperty**
   relative path to property, for example `myFeatureEnabled` or `jcr:content/myFeatureEnabled`
 
-* **value** 
+* **value**
   value to check property for, " `true`" or " `false`"
 
 ### contentfragment {#contentfragment}
@@ -70,7 +70,7 @@ Does not support facet extraction.
 
 #### Properties {#properties-1}
 
-* **contentfragment** 
+* **contentfragment**
   It can be used with any value to check for content fragments.
 
 ### dateComparison {#datecomparison}
@@ -81,21 +81,21 @@ This is a filtering-only predicate and cannot leverage a search index.
 
 #### Properties {#properties-2}
 
-* **property1** 
-  
+* **property1**
+
   path to first date property
 
-* **property2** 
-  
+* **property2**
+
   path to second date property
 
-* **operation** 
-  
+* **operation**
+
   " `=`" for exact match, " `!=`" for unequality comparison, " `>`" for property1 greater than property2, " `>=`" for property1 greater than or equal to property2. The default value is " `=`".
 
 ### daterange {#daterange}
 
-Matches JCR DATE properties against a date/time interval. This uses the ISO8601  
+Matches JCR DATE properties against a date/time interval. This uses the ISO8601
 format for dates and times ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) and allows also partial representations, like `YYYY-MM-DD`. Alternatively, the timestamp can be provided as number of milliseconds since 1970 in the UTC timezone, the unix time format.
 
 You can look for anything between two timestamps, anything newer or older than a given date, and also chose between inclusive and open intervals.
@@ -106,28 +106,28 @@ Does not support filtering.
 
 #### Properties {#properties-3}
 
-* **property** 
-  
+* **property**
+
   relative path to a `DATE` property, for example `jcr:lastModified`
 
-* **lowerBound** 
-  
+* **lowerBound**
+
   lower date bound to check property for, for example `2014-10-01`
 
-* **lowerOperation** 
-  
-  " `>`" (newer) or " `>=`" (at or newer), applies to the `lowerBound`. The default is " `>`".  
+* **lowerOperation**
 
-* **upperBound** 
-  
+  " `>`" (newer) or " `>=`" (at or newer), applies to the `lowerBound`. The default is " `>`".
+
+* **upperBound**
+
   upper bound to check property for, for example `2014-10-01T12:15:00`
 
-* **upperOperation** 
-  
-  " `<`" (older) or " `<=`" (at or older), applies to the `upperBound`. The default is " `<`".  
+* **upperOperation**
 
-* **timeZone** 
-  
+  " `<`" (older) or " `<=`" (at or older), applies to the `upperBound`. The default is " `<`".
+
+* **timeZone**
+
   ID of timezone to use when it is not given as an ISO-8601 date string. The default is the default timezone of the system.
 
 ### excludepaths {#excludepaths}
@@ -140,8 +140,8 @@ Does not support facet extraction.
 
 #### Properties {#properties-4}
 
-* **excludepaths** 
-  
+* **excludepaths**
+
   regular expression matched against result paths, excluding matching ones from the result.
 
 ### fulltext {#fulltext}
@@ -154,12 +154,12 @@ Does not support facet extraction.
 
 #### Properties {#properties-5}
 
-* **fulltext** 
-  
+* **fulltext**
+
   the fulltext search term(s)
 
-* **relPath** 
-  
+* **relPath**
+
   the relative path to search in the property or subnode. This property is optional.
 
 ### group {#group}
@@ -195,20 +195,20 @@ This is conceptually `fulltext AND ( (path AND type) OR (path AND type) )`. Be a
 
 #### Properties {#properties-6}
 
-* **p.or** 
-  
+* **p.or**
+
   if set to " `true`", only one predicate in the group must match. This defaults to " `false`", meaning all must match
 
-* **p.not** 
-  
+* **p.not**
+
   if set to " `true`", it negates the group (defaults to " `false`")
 
-* **&lt;predicate&gt;** 
-  
+* **&lt;predicate&gt;**
+
   adds nested predicates
 
-* **N_&lt;predicate&gt;** 
-  
+* **N_&lt;predicate&gt;**
+
   adds multiple nested predicates of the same time, like `1_property, 2_property, ...`
 
 ### hasPermission {#haspermission}
@@ -219,8 +219,8 @@ This is a filtering-only predicate and cannot leverage a search index. It does n
 
 #### Properties {#properties-7}
 
-* **hasPermission** 
-  
+* **hasPermission**
+
   comma-separated JCR privileges that the current user session must ALL have for the node in question; for example `jcr:write`, `jcr:modifyAccessControl`
 
 ### language {#language}
@@ -233,8 +233,8 @@ Supports facet extraction. Will provide buckets for each unique language code.
 
 #### Properties {#properties-8}
 
-* **language** 
-  
+* **language**
+
   ISO language code, for example " `de`"
 
 ### mainasset {#mainasset}
@@ -247,8 +247,8 @@ Supports facet extraction. Will provide 2 buckets for main and subassets.
 
 #### Properties {#properties-9}
 
-* **mainasset** 
-  
+* **mainasset**
+
   boolean, " `true`" for main assets, " `false`" for sub assets
 
 ### memberOf {#memberof}
@@ -259,8 +259,8 @@ This is a filtering-only predicate and cannot leverage a search index. Does not 
 
 #### Properties {#properties-10}
 
-* **memberOf** 
-  
+* **memberOf**
+
   path of Sling resource collection
 
 ### nodename {#nodename}
@@ -271,8 +271,8 @@ Supports facet extraction. Will provide buckets for each unique node name (filen
 
 #### Properties {#properties-11}
 
-* **nodename** 
-  
+* **nodename**
+
   node name pattern that allows wildcards: `*` = any or no char, `?` = any char, `[abc]` = only chars in brackets
 
 ### notexpired {#notexpired}
@@ -285,12 +285,12 @@ Supports facet extraction in the same way as the daterange predicate.
 
 #### Properties {#properties-12}
 
-* **notexpired** 
-  
+* **notexpired**
+
   boolean, " `true`" for not expired yet (date in the future or equal), " `false`" for expired (date in the past) (required)
 
-* **property** 
-  
+* **property**
+
   relative path to the `DATE` property to check (required)
 
 ### orderby {#orderby}
@@ -299,16 +299,16 @@ Allows to sort the result. If ordering by multiple properties is required, this 
 
 #### Properties {#properties-13}
 
-* **orderby** 
-  
+* **orderby**
+
   either JCR property name indicated by a leading @, for example `@jcr:lastModified` or `@jcr:content/jcr:title`, or another predicate in the query, for example `2_property`, on which to sort
 
-* **sort** 
-  
+* **sort**
+
   sort direction, either " `desc`" for descending or " `asc`" for ascending (default)
 
-* **case** 
-  
+* **case**
+
   if set to " `ignore`" will make sorting case insensitive, meaning "a" comes before "B"; if empty or left out, sorting is case sensitive, meaning "B" comes before "a"
 
 ### path {#path}
@@ -319,20 +319,20 @@ Does not support facet extraction.
 
 #### Properties {#properties-14}
 
-* **path** 
-  
+* **path**
+
   path pattern; depending on exact, either the entire subtree will match (like appending `//*` in xpath, but note that this does not include the base path) (exact=false, default) or only an exact path matches, which can include wildcards ( `*`); if self is set, the entire subtree including the base node will be searched
 
-* **exact** 
-  
+* **exact**
+
   if `exact` is true/on, the exact path must match, but it can contain simple wildcards ( `*`), that match names, but not " `/`"; if it is false (default) all descendents are included (optional)
 
-* **flat** 
-  
+* **flat**
+
   searches only the direct children (like appending " `/*`" in xpath) (only used if ' `exact`' is not true, optional)
 
-* **self** 
-  
+* **self**
+
   searches the subtree but includes the base node given as path (no wildcards)
 
 ### property {#property}
@@ -343,28 +343,28 @@ Supports facet extraction. Will provide buckets for each unique property value i
 
 #### Properties {#properties-15}
 
-* **property** 
-  
+* **property**
+
   relative path to property, for example `jcr:title`
 
-* **value** 
-  
+* **value**
+
   value to check property for; follows the JCR property type to string conversions
 
-* **N_value** 
-  
+* **N_value**
+
   use `1_value`, `2_value`, ... to check for multiple values (combined with `OR` by default, with `AND` if and=true) (since 5.3)
 
-* **and** 
-  
-  set to true for combining multiple values ( `N_value`) with AND (since 5.3)  
+* **and**
 
-* **operation** 
-  
+  set to true for combining multiple values ( `N_value`) with AND (since 5.3)
+
+* **operation**
+
   " `equals`" for exact match (default), " `unequals`" for unequality comparison, " `like`" for using the `jcr:like` xpath function (optional), " `not`" for no match (eg. " `not(@prop)`" in xpath, value param will be ignored) or " `exists`" for existence check (value can be true - property must exist, the default - or false - same as " `not`")
 
-* **depth** 
-  
+* **depth**
+
   number of wildcard levels underneath which the property/relative path can exist (for instance, `property=size depth=2` will check node/size, node/&ast;/size and node/&ast;/&ast;/size)
 
 ### rangeproperty {#rangeproperty}
@@ -377,28 +377,28 @@ Does not support facet extraction.
 
 #### Properties {#properties-16}
 
-* **property** 
-  
-  relative path to property  
+* **property**
 
-* **lowerBound** 
-  
-  lower bound to check property for  
+  relative path to property
 
-* **lowerOperation** 
-  
-  " `>`" (default) or " `>=`", applies to the `lowerValue`  
+* **lowerBound**
 
-* **upperBound** 
-  
-  upper bound to check property for  
+  lower bound to check property for
 
-* **upperOperation** 
-  
-  " `<`" (default) or " `<=`", applies to the `lowerValue`  
+* **lowerOperation**
 
-* **decimal** 
-  
+  " `>`" (default) or " `>=`", applies to the `lowerValue`
+
+* **upperBound**
+
+  upper bound to check property for
+
+* **upperOperation**
+
+  " `<`" (default) or " `<=`", applies to the `lowerValue`
+
+* **decimal**
+
   " `true`" if the checked property is of type Decimal
 
 ### relativedaterange {#relativedaterange}
@@ -407,10 +407,10 @@ Matches `JCR DATE` properties against a date/time interval using time offsets re
 
 For example:
 
-* `upperBound=1h` (and no `lowerBound`) would select anything in the next hour  
-* `lowerBound=-1d` (and no `upperBound`) would select anything in the last 24 hours  
-* `lowerBound=-6M` and `upperBound=-3M` would select anything 6 months to 3 months old  
-* `lowerBound=-1500` and `upperBound=5500` would select anything between 1500 milliseconds in the past and 5500 milliseconds in the future  
+* `upperBound=1h` (and no `lowerBound`) would select anything in the next hour
+* `lowerBound=-1d` (and no `upperBound`) would select anything in the last 24 hours
+* `lowerBound=-6M` and `upperBound=-3M` would select anything 6 months to 3 months old
+* `lowerBound=-1500` and `upperBound=5500` would select anything between 1500 milliseconds in the past and 5500 milliseconds in the future
 * `lowerBound=1d` and `upperBound=2d` would select anything in the day after tomorrow
 
 Note that it does not take leap years into consideration and all months are 30 days.
@@ -421,12 +421,12 @@ Supports facet extraction in the same way as the daterange predicate.
 
 #### Properties {#properties-17}
 
-* **upperBound** 
-  
+* **upperBound**
+
   upper date bound in milliseconds or `1s 2m 3h 4d 5w 6M 7y` (one second, two minutes, three hours, four days, five weeks, six months, seven years) relative to current server time, use "-" for negative offset
 
-* **lowerBound** 
-  
+* **lowerBound**
+
   lower date bound in milliseconds or `1s 2m 3h 4d 5w 6M 7y` (one second, two minutes, three hours, four days, five weeks, six months, seven years) relative to current server time, use "-" for negative offset
 
 ### root {#root}
@@ -437,36 +437,36 @@ The name "root" is never used in a query, it's implicit.
 
 #### Properties {#properties-18}
 
-* **p.offset** 
-  
-  number indicating the start of the result page, i.e. how many items to skip  
+* **p.offset**
 
-* **p.limit** 
-  
-  number indicating the page size  
+  number indicating the start of the result page, i.e. how many items to skip
 
-* **p.guessTotal** 
-  
-  recommended: avoid calculating the full result total which can be costly; either a number indicating the maximum total to count up to (for example 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results) or " `true`" to count only up to the minimum necessary `p.offset` + `p.limit`  
+* **p.limit**
 
-* **p.excerpt** 
-  
-  if set to " `true`", include full text excerpt in the result  
+  number indicating the page size
 
-* **p.hits** 
-  
+* **p.guessTotal**
+
+  recommended: avoid calculating the full result total which can be costly; either a number indicating the maximum total to count up to (for example 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results) or " `true`" to count only up to the minimum necessary `p.offset` + `p.limit`
+
+* **p.excerpt**
+
+  if set to " `true`", include full text excerpt in the result
+
+* **p.hits**
+
   (only for the JSON servlet) select the way the hits are written as JSON, with these standard ones (extensible via the ResultHitWriter service):
 
-    * **simple**: 
-    
+    * **simple**:
+
         minimal items like `path`, `title`, `lastmodified`, `excerpt` (if set)
-    
-    * **full**: 
-    
+
+    * **full**:
+
         sling JSON rendering of the node, with `jcr:path` indicating the path of the hit: by default just lists the direct properties of the node, include a deeper tree with `p.nodedepth=N`, with 0 meaning the entire, infinite subtree; add `p.acls=true` to include the JCR permissions of the current session on the given result item (mappings: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-    
-    * **selective**: 
-    
+
+    * **selective**:
+
         only properties specified in `p.properties`, which is a space separated (use "+" in URLs) list of relative paths; if the relative path has a depth &gt; 1 these will be represented as child objects; the special jcr:path property includes the path of the hit
 
 ### savedquery {#savedquery}
@@ -481,8 +481,8 @@ Does not support facet extraction for the predicates of the saved query.
 
 #### Properties {#properties-19}
 
-* **savedquery** 
-  
+* **savedquery**
+
   path to the saved query (String property or `nt:file` node)
 
 ### similar {#similar}
@@ -493,10 +493,10 @@ Does not support filtering. Does not support facet extraction.
 
 #### Properties {#properties-20}
 
-* **similar** 
-  absolute path to the node for which to find similar nodes  
+* **similar**
+  absolute path to the node for which to find similar nodes
 
-* **local** 
+* **local**
   a relative path to a descendant node or `.` for the current node (optional, default is " `.`")
 
 ### tag {#tag}
@@ -507,16 +507,16 @@ Supports facet extraction. Will provide buckets for each unique tag, using their
 
 #### Properties {#properties-21}
 
-* **tag** 
-  
-  tag title path to look for, for example "Asset Properties : Orientation / Landscape"  
+* **tag**
 
-* **N_value** 
-  
-  use `1_value`, `2_value`, ... to check for multiple tags (combined with `OR` by default, with `AND` if and=true) (since 5.6)  
+  tag title path to look for, for example "Asset Properties : Orientation / Landscape"
 
-* **property** 
-  
+* **N_value**
+
+  use `1_value`, `2_value`, ... to check for multiple tags (combined with `OR` by default, with `AND` if and=true) (since 5.6)
+
+* **property**
+
   property (or relative path to property) to look at (default " `cq:tags`")
 
 ### tagid {#tagid}
@@ -527,16 +527,16 @@ Supports facet extraction. Will provide buckets for each unique tag, using their
 
 #### Properties {#properties-22}
 
-* **tagid** 
-  
-  tag id to look for, for example " `properties:orientation/landscape`"  
+* **tagid**
 
-* **N_value** 
-  
-  use `1_value`, `2_value`, ... to check for multiple tagids (combined with `OR` by default, with `AND` if and=true) (since 5.6)  
+  tag id to look for, for example " `properties:orientation/landscape`"
 
-* **property** 
-  
+* **N_value**
+
+  use `1_value`, `2_value`, ... to check for multiple tagids (combined with `OR` by default, with `AND` if and=true) (since 5.6)
+
+* **property**
+
   property (or relative path to property) to look at (default " `cq:tags`")
 
 ### tagsearch {#tagsearch}
@@ -547,20 +547,20 @@ Does not support facet extraction.
 
 #### Properties {#Properties-1}
 
-* **tagsearch** 
-  
-  keyword to search for in tag titles  
+* **tagsearch**
 
-* **property** 
-  
-  property (or relative path to property) to look at (default " `cq:tags`")  
+  keyword to search for in tag titles
 
-* **lang** 
-  
-  to search in a certain localized tag title only (e.g. " `de`")  
+* **property**
 
-* **all** 
-  
+  property (or relative path to property) to look at (default " `cq:tags`")
+
+* **lang**
+
+  to search in a certain localized tag title only (e.g. " `de`")
+
+* **all**
+
   (bool) search entire tag fulltext, i.e. all titles, description etc. (takes precedence over "l `ang`")
 
 ### type {#type}
@@ -571,6 +571,6 @@ Supports facet extraction. Will provide buckets for each unique type in the resu
 
 #### Properties {#Properties-2}
 
-* **type** 
-  
+* **type**
+
   node type or mixin name to search for, for example `cq:Page`

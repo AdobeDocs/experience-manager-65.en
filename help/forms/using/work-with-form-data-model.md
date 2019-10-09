@@ -4,7 +4,7 @@ seo-title: Work with form data model
 description: Data Integration provides form data model editor to configure and work with form data models.
 seo-description: Data Integration provides form data model editor to configure and work with form data models.
 uuid: cd123d42-f7cf-489d-8182-f3a01a2a4799
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 ---
@@ -75,7 +75,7 @@ To create a data model object without data sources:
 
 1. Log into the AEM author instance, navigate to **[!UICONTROL Forms > Data Integrations]**, and open the form data model in which you want to create a data model object or entity.
 1. Tap **[!UICONTROL Create Entity]**.
-1. In the Create data Model dialog, specify a name for the data model object and tap **[!UICONTROL Add]**. A data model object is added to the form data model. Note that the newly added data model object is not bound to a data source and does not have any properties as shown in the following image. 
+1. In the Create data Model dialog, specify a name for the data model object and tap **[!UICONTROL Add]**. A data model object is added to the form data model. Note that the newly added data model object is not bound to a data source and does not have any properties as shown in the following image.
 
    ![new-entity](assets/new-entity.png)
 
@@ -87,7 +87,7 @@ Form data model editor allows you to create child properties in a data model obj
 
 To create a child property:
 
-1. In a form data model, select a data model object and tap **[!UICONTROL Create Child Property]**. 
+1. In a form data model, select a data model object and tap **[!UICONTROL Create Child Property]**.
 1. In the **[!UICONTROL Create Child Property]** dialog, specify a name and data type for the property in the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields, respectively. You can optionally specify a title and description for the property.
 1. Enable Computed if the property is a computed property. The value of a computed property is evaluated based on a rule or an expression. For more information, see [Edit properties](#edit-properties).
 1. If the data model object is bound to a data source, the added child property is automatically bound to the property of the parent data model object with the same name and data type.
@@ -103,13 +103,13 @@ After you have created data model objects and properties, you can continue to cr
 When the data sources you want to integrate with the form data model are available, you can add them to the form data model as described in [Update data sources](/help/forms/using/create-form-data-models.md#update). Then, do the following to bind the unbound data model objects and properties:
 
 1. In the form data model, select the unbound data source that you want to bind with a data source.
-1. Tap **[!UICONTROL Edit Properties]**. 
+1. Tap **[!UICONTROL Edit Properties]**.
 1. In the **[!UICONTROL Edit Properties]** pane, tap the browse icon next to the **[!UICONTROL Binding]** field. It opens the **[!UICONTROL Select Object]** dialog that lists data sources added in the form data model.
 
    ![select-object](assets/select-object.png)
 
 1. Expand the data sources tree and select a data model object to bind with and tap the tick icon.
-1. Tap **[!UICONTROL Done]** to save the properties and then tap **[!UICONTROL Save]** to save the form data model. The data model object is now bound with a data source. Notice the data model object is no longer marked Unbound. 
+1. Tap **[!UICONTROL Done]** to save the properties and then tap **[!UICONTROL Save]** to save the form data model. The data model object is now bound with a data source. Notice the data model object is no longer marked Unbound.
 
    ![bound-model-object](assets/bound-model-object.png)
 
@@ -131,13 +131,13 @@ To read and write data for a data model object, do the following to configure re
 
    >[!NOTE]
    >
-   >In addition to data model objects and services, OData service metadata document includes navigation properties that define association between two data model objects. When you add an OData service datasource to a Form Data Model, there is a service available in Form Data Model for all navigation properties in a data model object. You can use this service to read the navigation properties of the corresponding data model object. 
+   >In addition to data model objects and services, OData service metadata document includes navigation properties that define association between two data model objects. When you add an OData service datasource to a Form Data Model, there is a service available in Form Data Model for all navigation properties in a data model object. You can use this service to read the navigation properties of the corresponding data model object.
    >
    >For more information using the service, see [Working with navigation properties of OData services](#navigation-properties-odata).
 
 1. Toggle **[!UICONTROL Top Level Object]** to specify if the data model object is a top-level model object.
 
-   Data model objects configured in a form data model are available for use in the Data Model Objects tab in the Content browser of an adaptive form based on the form data model. When you add association between two data model objects, the data model object you are associating with is nested under the data model object you are associating from in the Data Model Objects tab. If the nested data model is a top-level object, it will also appear separately in the Data Model Objects tab. Therefore, you will see two entries of it, one inside and another outside the nested hierarchy, which might confuse form authors. To make the associated data model object appear only in the nested hierarchy, disable the Top Level Object property. 
+   Data model objects configured in a form data model are available for use in the Data Model Objects tab in the Content browser of an adaptive form based on the form data model. When you add association between two data model objects, the data model object you are associating with is nested under the data model object you are associating from in the Data Model Objects tab. If the nested data model is a top-level object, it will also appear separately in the Data Model Objects tab. Therefore, you will see two entries of it, one inside and another outside the nested hierarchy, which might confuse form authors. To make the associated data model object appear only in the nested hierarchy, disable the Top Level Object property.
 
 1. Select Read and Write services for the selected data model objects. The arguments for the services appear.
 
@@ -213,7 +213,7 @@ To add an association:
 >
 >You can edit an association by selecting the checkbox against it and tap **[!UICONTROL Edit Association]**.
 
-![added-association](assets/added-association.png) 
+![added-association](assets/added-association.png)
 
 ## Edit properties {#properties}
 
@@ -296,7 +296,7 @@ For more information about navigation properties, see [OData documentation](http
 
 When you configure an OData service in a Form Data Model, all navigation properties in an entity container are made available through a service in the Form Data Model. In this example of TripPin OData service, the three navigation properties in the `Person` entity container can be read using one `GET LINK` service in the Form Data Model.
 
-The following highlights the `GET LINK of Person /People` service in the Form Data Model, which is a combined service for the three navigation properties in the `Person` entity of the TripPin OData service. 
+The following highlights the `GET LINK of Person /People` service in the Form Data Model, which is a combined service for the three navigation properties in the `Person` entity of the TripPin OData service.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
@@ -314,7 +314,7 @@ In this example, you can also choose the output model object as Person and navig
 
 Similarly, you can choose a `GET LINK` service and configure its navigation properties when adding associations in the Form Data Model. However, to be able to select a navigation property, ensure that the **[!UICONTROL Binding To field]** is set to **[!UICONTROL Literal]**.
 
-![add-association-nav-prop](assets/add-association-nav-prop.png) 
+![add-association-nav-prop](assets/add-association-nav-prop.png)
 
 ## Generate and edit sample data {#sample}
 
@@ -340,7 +340,7 @@ Your form data model is configured but before putting it in use, you may want to
 
    ![test-data-model](assets/test-data-model.png)
 
-1. In the Test Form Data Model window, select the data model object or service to test from the Input pane.  
+1. In the Test Form Data Model window, select the data model object or service to test from the Input pane.
 
 1. Specify an argument value in the test code and tap **[!UICONTROL Test]**. A successful test returns the output in the Output pane.
 

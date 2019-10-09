@@ -6,7 +6,7 @@ seo-description: null
 uuid: 07da0391-7180-4197-aaa6-ae753d753b84
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 ---
@@ -19,7 +19,7 @@ The Convert PDF service converts PDF documents to PostScript and to a number of 
 
 You can accomplish these tasks using the Convert PDF service:
 
-* Convert PDF documents to PostScript. 
+* Convert PDF documents to PostScript.
 * Convert PDF documents to image formats.
 
   ***Note**: For more information about the Convert PDF service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).*
@@ -95,11 +95,11 @@ Convert a PDF document to PostScript by using the Convert PDF Service API (Java)
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-convertpdf-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-convertpdf-client.jar, in your Java project’s class path.
 
 1. Create a Convert PDF client.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `ConvertPdfServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference the PDF document to convert to a PostScript file.
@@ -116,10 +116,10 @@ Convert a PDF document to PostScript by using the Convert PDF Service API (Java)
 
    Invoke the `ConvertPdfServiceClient`object’s `toPS2` method and pass the following values:
 
-    * A `com.adobe.idp.Document` object that represents the PDF document to convert to a PostScript file. 
+    * A `com.adobe.idp.Document` object that represents the PDF document to convert to a PostScript file.
     * A `ToPSOptionsSpec` object that specifies PostScript run-time options.
 
-   The `toPS2` method returns a `Document` object that contains the new PostScript document. 
+   The `toPS2` method returns a `Document` object that contains the new PostScript document.
 
 1. Save the PostScript file.
 
@@ -150,22 +150,22 @@ Convert a PDF document to PostScript by using the Convert PDF Service API (web s
 
 1. Create a Convert PDF client.
 
-    * Create a `ConvertPdfServiceClient` object by using its default constructor. 
-    * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) You do not need to use the `lc_version` attribute. However, specify `?blob=mtom`. 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ConvertPdfServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `ConvertPdfServiceClient` object by using its default constructor.
+    * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) You do not need to use the `lc_version` attribute. However, specify `?blob=mtom`.
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ConvertPdfServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference the PDF document to convert to a PostScript file.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that is converted to a PostScript file.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to convert and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, starting position, and stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
@@ -181,7 +181,7 @@ Convert a PDF document to PostScript by using the Convert PDF Service API (web s
     * A `BLOB` object that represents the PDF document to convert to a PostScript file
     * A `ToPSOptionsSpec` object that specifies run-time options
 
-   After the conversion is complete, extract the binary data that represents the PostScript document by accessing its `BLOB` object’s `MTOM` property. This returns a byte array that you can write out to a PostScript file. 
+   After the conversion is complete, extract the binary data that represents the PostScript document by accessing its `BLOB` object’s `MTOM` property. This returns a byte array that you can write out to a PostScript file.
 
 1. Save the PostScript file.
 
@@ -263,7 +263,7 @@ Convert a PDF document to an image format by using the Convert PDF service API (
 
 1. Create a Convert PDF client.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `ConvertPdfServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Retrieve the PDF document to convert.
@@ -311,22 +311,22 @@ Convert a PDF document to an image format by using the Convert PDF Service API (
 
 1. Create a convert PDF client.
 
-    * Create a `ConvertPdfServiceClient` object by using its default constructor. 
-    * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) You do not need to use the `lc_version` attribute. However, specify `?blob=mtom`. 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ConvertPdfServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create a `ConvertPdfServiceClient` object by using its default constructor.
+    * Create a `ConvertPdfServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) You do not need to use the `lc_version` attribute. However, specify `?blob=mtom`.
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `ConvertPdfServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Retrieve the PDF document to convert.
 
     * Create a `BLOB` object by using its constructor. This `BLOB` object is used to store the PDF form.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that specifies the location of the PDF form and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. Determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. Determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
@@ -346,11 +346,11 @@ Convert a PDF document to an image format by using the Convert PDF Service API (
     * A `BLOB` object that represents the file to be converted
     * A `ToImageOptionsSpec` object that contains the various preferences about the target image format
 
-   The `toImage2` method returns a `MyArrayOfBLOB` object that contains the newly created image files. 
+   The `toImage2` method returns a `MyArrayOfBLOB` object that contains the newly created image files.
 
 1. Retrieve the image files from a collection.
 
-    * Determine the number of elements in the `MyArrayOfBLOB` object by getting the value of its `Count` field. Each element is a `BLOB` object that contains the image. 
+    * Determine the number of elements in the `MyArrayOfBLOB` object by getting the value of its `Count` field. Each element is a `BLOB` object that contains the image.
     * Iterate through the `MyArrayOfBLOB` object and save each image file.
 
 **See also**

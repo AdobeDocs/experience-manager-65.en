@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about Channel Assignment and Dayparti
 uuid: 9ff9ca1c-c7d3-454c-9c65-24c0d40a9a36
 contentOwner: Jyotika syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: 6303a1fd-8ee7-4565-a0c7-9295a2cd9306
 ---
@@ -98,7 +98,7 @@ The following examples explain dayparting in channels in three different scenari
 
 This example shows how a Restaurant uses dayparting to showcase its breakfast, lunch and dinner menu.
 
-Here, we will divide each day into three different time slots, so that channel content plays as per the specified time of the day: 
+Here, we will divide each day into three different time slots, so that channel content plays as per the specified time of the day:
 
 | **Channel** |**Role** |**Priority** |**Schedule** |
 |---|---|---|---|
@@ -110,34 +110,34 @@ Here, we will divide each day into three different time slots, so that channel c
 
 This example shows the dayparting achieved in a casino where live event occurs every weekend from 8:00 pm until 10:00 pm and specials are available for dinner menu after 10:00 pm until 1:00 am.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Channel</strong></td> 
-   <td><strong>Role</strong></td> 
-   <td><strong>Priority</strong></td> 
-   <td><strong>Schedule</strong></td> 
-  </tr> 
-  <tr> 
-   <td>LiveConcert</td> 
-   <td>Weekend</td> 
-   <td> </td> 
-   <td>Oct 21, 2017 - Oct 22, 2017 <br /> after 20:00 before 22:00</td> 
-  </tr> 
-  <tr> 
-   <td>SpecialsDinner</td> 
-   <td>Weekend</td> 
-   <td> </td> 
-   <td>Oct 21, 2017 - Oct 22, 2017 <br /> after 22:00 before 1:00</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Channel</strong></td>
+   <td><strong>Role</strong></td>
+   <td><strong>Priority</strong></td>
+   <td><strong>Schedule</strong></td>
+  </tr>
+  <tr>
+   <td>LiveConcert</td>
+   <td>Weekend</td>
+   <td> </td>
+   <td>Oct 21, 2017 - Oct 22, 2017 <br /> after 20:00 before 22:00</td>
+  </tr>
+  <tr>
+   <td>SpecialsDinner</td>
+   <td>Weekend</td>
+   <td> </td>
+   <td>Oct 21, 2017 - Oct 22, 2017 <br /> after 22:00 before 1:00</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Playing content for a particular month/months {#playing-content-for-a-particular-month-months}
 
 This example shows the dayparting for a store that displays their summer collection from the months of June until August and fall collection from September until the end of October.
 
-Here, you will create dayparting as per months, so that channel content plays as per the specified months of the year. 
+Here, you will create dayparting as per months, so that channel content plays as per the specified months of the year.
 
 | **Channel** |**Role** |**Priority** |**Schedule** |
 |---|---|---|---|

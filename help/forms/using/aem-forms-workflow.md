@@ -4,7 +4,7 @@ seo-title: Rapidly build adaptive forms-based processes, automate document servi
 description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
 seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 topic-tags: document_services
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
@@ -31,7 +31,7 @@ Forms-centric workflow on OSGi extends [AEM Inbox](/help/sites-authoring/inbox.m
 
 The following diagram depicts end-to-end procedure to create, run, and monitor a Forms-centric workflow on OSGi.
 
-![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg) 
+![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
 
 ## Before you start {#before-you-start}
 
@@ -139,53 +139,53 @@ The application is the adaptive form associated with the workflow. When an appli
 1. On your AEM author instance, go to ![tools](assets/tools.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
 1. In the Create Workflow Application window, provide inputs for the following fields, and tap **[!UICONTROL Create]**. A new application is created and is listed in the Workflow Applications screen.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Field</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td>Title</td> 
-   <td>The title is visible in AEM Inbox and helps users choose an application. Keep it descriptive. For example, Savings Account Opening Application.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Name </td> 
-   <td>Specify the name of the application. All the characters other than alphabets, numbers, hyphens, and underscores are replaced with hyphens. </td> 
-  </tr> 
-  <tr> 
-   <td>Description</td> 
-   <td>The description is visible in AEM Inbox. Provide detailed information about the application in the description fields. For example, Purpose of the application.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Adaptive Form</td> 
-   <td><p>Specify the path of an adaptive form. When a user starts an application, the specified adaptive form is displayed.</p> <p><strong>Note</strong>: Workflow applications do not support forms and PDF documents which are longer than one page or require scrolling on Apple iPad. When an application is opened on Apple iPad and the adaptive form or the PDF document is longer than a page, the form fields and content from the second page are lost.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Access Group</td> 
-   <td><p>Select a group. The application is visible in AEM Inbox only to the members of the selected group. The access group option makes all the groups of the workflow-users group available for selection. </p> <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Prefill Service</td> 
-   <td>Select a <a href="/help/forms/using/prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">prefill service</a> for the adaptive form.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Workflow Model</td> 
-   <td>Select a <a href="/help/forms/using/aem-forms-workflow.md#create-a-workflow-model">workflow model</a> for the application. A workflow model consists of logic and flow of the business process. </td> 
-  </tr> 
-  <tr> 
-   <td>Data File Path</td> 
-   <td>Specify the path of the data file in crx-repository. The path is relative to adaptive form payload and contains the name of the data file. Always include the complete name of the file including extension, if applicable. For example, [payload]/data.xml. </td> 
-  </tr> 
-  <tr> 
-   <td>Attachment Path</td> 
-   <td>Specify the path of attachments folder in crx-repository. The attachment path is relative to payload location. For example, [payload]/data.xml. </td> 
-  </tr> 
-  <tr> 
-   <td>Document of Record Path</td> 
-   <td>Specify the path of Document of Record file in crx-repository. The path is relative to adaptive form payload location. Always include the complete name of the file including extension, if applicable. For example, [payload]/DOR/creditcard.pdf.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Field</td>
+   <td>Description</td>
+  </tr>
+  <tr>
+   <td>Title</td>
+   <td>The title is visible in AEM Inbox and helps users choose an application. Keep it descriptive. For example, Savings Account Opening Application.<br /> </td>
+  </tr>
+  <tr>
+   <td>Name </td>
+   <td>Specify the name of the application. All the characters other than alphabets, numbers, hyphens, and underscores are replaced with hyphens. </td>
+  </tr>
+  <tr>
+   <td>Description</td>
+   <td>The description is visible in AEM Inbox. Provide detailed information about the application in the description fields. For example, Purpose of the application.<br /> </td>
+  </tr>
+  <tr>
+   <td>Adaptive Form</td>
+   <td><p>Specify the path of an adaptive form. When a user starts an application, the specified adaptive form is displayed.</p> <p><strong>Note</strong>: Workflow applications do not support forms and PDF documents which are longer than one page or require scrolling on Apple iPad. When an application is opened on Apple iPad and the adaptive form or the PDF document is longer than a page, the form fields and content from the second page are lost.</p> </td>
+  </tr>
+  <tr>
+   <td>Access Group</td>
+   <td><p>Select a group. The application is visible in AEM Inbox only to the members of the selected group. The access group option makes all the groups of the workflow-users group available for selection. </p> <br /> </td>
+  </tr>
+  <tr>
+   <td>Prefill Service</td>
+   <td>Select a <a href="/help/forms/using/prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">prefill service</a> for the adaptive form.<br /> </td>
+  </tr>
+  <tr>
+   <td>Workflow Model</td>
+   <td>Select a <a href="/help/forms/using/aem-forms-workflow.md#create-a-workflow-model">workflow model</a> for the application. A workflow model consists of logic and flow of the business process. </td>
+  </tr>
+  <tr>
+   <td>Data File Path</td>
+   <td>Specify the path of the data file in crx-repository. The path is relative to adaptive form payload and contains the name of the data file. Always include the complete name of the file including extension, if applicable. For example, [payload]/data.xml. </td>
+  </tr>
+  <tr>
+   <td>Attachment Path</td>
+   <td>Specify the path of attachments folder in crx-repository. The attachment path is relative to payload location. For example, [payload]/data.xml. </td>
+  </tr>
+  <tr>
+   <td>Document of Record Path</td>
+   <td>Specify the path of Document of Record file in crx-repository. The path is relative to adaptive form payload location. Always include the complete name of the file including extension, if applicable. For example, [payload]/DOR/creditcard.pdf.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Launch a Forms-centric workflow on OSGi {#launch}
@@ -193,10 +193,10 @@ The application is the adaptive form associated with the workflow. When an appli
 You can launch or trigger a Forms-centric workflow by:
 
 * [Submitting an application from AEM Inbox](#inbox)
-* [Submitting an application from AEM Forms App](#afa)  
+* [Submitting an application from AEM Forms App](#afa)
 
 * [Submitting an adaptive form](#af)
-* [Using watched folder](#watched)  
+* [Using watched folder](#watched)
 
 * [Submitting an interactive communication or a letter](#letter)
 
@@ -221,36 +221,36 @@ An administrator (a member of fd-administrators group) can configure a network f
 1. On your AEM author instance, go to ![tools](assets/tools.png) **[!UICONTROL Forms > Configure Watched Folder]**. A list of already configured watched folders is displayed.
 1. Tap **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Field</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol">Name</span></td> 
-   <td>Specify the name of the Watched Folder. This field support only alphanumeric.</td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol">Path</span></td> 
-   <td>Specify the physical location of the Watched Folder. In a clustered environment, use a shared network folder that is accessible from AEM cluster node.</td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol">Process Files Using</span></td> 
-   <td>Select the <span class="uicontrol">Workflow </span>option. </td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol">Workflow Model</span></td> 
-   <td>Select a workflow model.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol">Output File Pattern</span></td> 
-   <td>Specify the directory structure for output files and directories. You can also specify a <a href="/help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Field</td>
+   <td>Description</td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol">Name</span></td>
+   <td>Specify the name of the Watched Folder. This field support only alphanumeric.</td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol">Path</span></td>
+   <td>Specify the physical location of the Watched Folder. In a clustered environment, use a shared network folder that is accessible from AEM cluster node.</td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol">Process Files Using</span></td>
+   <td>Select the <span class="uicontrol">Workflow </span>option. </td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol">Workflow Model</span></td>
+   <td>Select a workflow model.<br /> </td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol">Output File Pattern</span></td>
+   <td>Specify the directory structure for output files and directories. You can also specify a <a href="/help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td>
+  </tr>
+ </tbody>
 </table>
 
-1. Tap **[!UICONTROL Advanced]**. Specify a value for the following field and tap **[!UICONTROL Create]**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered. 
+1. Tap **[!UICONTROL Advanced]**. Specify a value for the following field and tap **[!UICONTROL Create]**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
 
    | Field |Description |
    |---|---|

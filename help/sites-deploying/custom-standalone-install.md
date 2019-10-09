@@ -1,11 +1,11 @@
 ---
 title: Custom Standalone Install
 seo-title: Custom Standalone Install
-description: Learn about the options available when installing a standalone AEM instance. 
-seo-description: Learn about the options available when installing a standalone AEM instance. 
+description: Learn about the options available when installing a standalone AEM instance.
+seo-description: Learn about the options available when installing a standalone AEM instance.
 uuid: e1cb45c4-3b2b-4951-8f67-213072e825b3
 contentOwner: Tyler Rushton
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c9e51008-6009-49a2-9c74-1c610cef2e7f
@@ -23,7 +23,7 @@ You can also set the port number by renaming the quickstart jar file, so that th
 
 There are various rules to be followed when renaming the quickstart jar file:
 
-* When you rename the file, it must start with `cq;` as in `cq5-publish-p4503.jar`.  
+* When you rename the file, it must start with `cq;` as in `cq5-publish-p4503.jar`.
 
 * It is recommended that you *always* prefix the port number with -p; as in cq5-publish-p4503.jar or cq5-author-p6754.jar.
 
@@ -49,10 +49,10 @@ There are various rules to be followed when renaming the quickstart jar file:
 
 ## Adding a File Install Provider {#adding-a-file-install-provider}
 
-By default the folder `crx-quickstart/install` is watched for files.  
+By default the folder `crx-quickstart/install` is watched for files.
 This folder does not exist, but simply can be created at runtime.
 
-If a bundle, configuration or content package is put into this directory, it is automatically picked up and installed. If it's removed, it gets uninstalled.   
+If a bundle, configuration or content package is put into this directory, it is automatically picked up and installed. If it's removed, it gets uninstalled.
 It is another way to put bundles, content packages or configurations to the repository.
 
 This is especially interesting for several use cases:
@@ -127,7 +127,7 @@ If you want to change the location of the temporary folder (for example, if you 
 
 to either:
 
-* the server startup command line  
+* the server startup command line
 * the CQ_JVM_OPTS environment parameter in the serverctl or start script
 
 ## Further options available from the Quickstart file {#further-options-available-from-the-quickstart-file}
@@ -141,83 +141,83 @@ Loading quickstart properties: default
 Loading quickstart properties: instance
 Setting properties from filename '/Users/Desktop/AEM/cq-quickstart-5.6.0.jar'
 --------------------------------------------------------------------------------
-Adobe Experience Manager Quickstart (build 20130129)                            
+Adobe Experience Manager Quickstart (build 20130129)
 --------------------------------------------------------------------------------
-Usage:                                                                          
- Use these options on the Quickstart command line.                              
+Usage:
+ Use these options on the Quickstart command line.
 --------------------------------------------------------------------------------
 
 -help (--help,-h)
-         Show this help message                                                 
+         Show this help message
 -quickstart.server.port (-p,-port) <port>
-         Set server port number                                                 
+         Set server port number
 -contextpath (-c,-org.apache.felix.http.context_path) <contextpath>
-         Set context path                                                       
+         Set context path
 -debug <port>
-         Enable Java Debugging on port number; forces forking                   
--gui 
-         Show GUI if running on a terminal                                      
+         Enable Java Debugging on port number; forces forking
+-gui
+         Show GUI if running on a terminal
 -nobrowser (-quickstart.nobrowser)
-         Do not open browser at startup                                         
+         Do not open browser at startup
 -unpack
-         Unpack installation files only, do not start the server (implies       
-         -verbose)                                                              
+         Unpack installation files only, do not start the server (implies
+         -verbose)
 -v (-verbose)
-         Do not redirect stdout/stderr to files and do not close stdin          
+         Do not redirect stdout/stderr to files and do not close stdin
 -nofork
-         Do not fork the JVM, even if not running on a console                  
+         Do not fork the JVM, even if not running on a console
 -fork
-         Force forking the JVM if running on a console, using recommended       
-         default memory settings for the forked JVM.                            
+         Force forking the JVM if running on a console, using recommended
+         default memory settings for the forked JVM.
 -forkargs <args> [<args> ...]
-         Additional arguments for the forked JVM, defaults to '-Xmx1024m        
-         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,     
-         example: '-forkargs -- -server'                                        
+         Additional arguments for the forked JVM, defaults to '-Xmx1024m
+         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,
+         example: '-forkargs -- -server'
 -a (--interface) <interface>
-         Optional IP address (interface) to bind to                             
+         Optional IP address (interface) to bind to
 -pt <string>
-         Process type (main/fork) - do not use directly, used when forking a    
-         process                                                                
+         Process type (main/fork) - do not use directly, used when forking a
+         process
 -r <string> [<string> [<string> [<string> [<string> [<string> [<string> [<string> [<string> [<string>]]]]]]]]]
-         Runmode(s) - Use this to define the run mode(s)                        
+         Runmode(s) - Use this to define the run mode(s)
 -b <string>
-         Base folder - defines the path under which the quickstart work folder  
-         is created                                                             
+         Base folder - defines the path under which the quickstart work folder
+         is created
 -low-mem-action <string>
-         Low memory action - what to do if memory is insufficient at startup    
+         Low memory action - what to do if memory is insufficient at startup
 -use-control-port
-         Start a control port                                                   
+         Start a control port
 -ll <level>
-         Define launchpad log level (1 = error...4 = debug)                     
+         Define launchpad log level (1 = error...4 = debug)
 --------------------------------------------------------------------------------
-Quickstart filename options                                                     
+Quickstart filename options
 --------------------------------------------------------------------------------
-Usage:                                                                          
- Rename the jar file, including one of the patterns shown below, to set the     
-corresponding option. Command-line options have priority on these filename      
-patterns.                                                                       
+Usage:
+ Rename the jar file, including one of the patterns shown below, to set the
+corresponding option. Command-line options have priority on these filename
+patterns.
 --------------------------------------------------------------------------------
 
 -NNNN
-         Include -NNNN.jar or -pNNNN in the renamed jar filename to run on port 
-         NNNN, for example: quickstart-8085.jar                                 
+         Include -NNNN.jar or -pNNNN in the renamed jar filename to run on port
+         NNNN, for example: quickstart-8085.jar
 -nobrowser
-         Include -nobrowser in the renamed jar filename to avoid opening the    
-         browser at startup, example: quickstart-nobrowser-8085.jar             
+         Include -nobrowser in the renamed jar filename to avoid opening the
+         browser at startup, example: quickstart-nobrowser-8085.jar
 -publish
-         Include -publish in the renamed jar filename to run cq5 in "publish"   
-         mode, example: cq5-publish-7502.jar                                    
+         Include -publish in the renamed jar filename to run cq5 in "publish"
+         mode, example: cq5-publish-7502.jar
 --------------------------------------------------------------------------------
 The license.properties file
 --------------------------------------------------------------------------------
-  The license.properties file stores licensing information, created from the    
-  licensing form displayed on first startup and stored in the folder from where 
-  Quickstart is run.                                                            
+  The license.properties file stores licensing information, created from the
+  licensing form displayed on first startup and stored in the folder from where
+  Quickstart is run.
 --------------------------------------------------------------------------------
 Log files
 --------------------------------------------------------------------------------
-  Once Quickstart has been unpacked and started, log files can be found under   
-  ./crx-quickstart/logs.                                                        
+  Once Quickstart has been unpacked and started, log files can be found under
+  ./crx-quickstart/logs.
 --------------------------------------------------------------------------------
 
 ```
@@ -255,7 +255,7 @@ Before installing the Publish instance on your EC2 environment, do the following
    if [ -z "$CQ_RUNMODE" ]; then
     CQ_RUNMODE='author'
    fi
-   
+
    ```
 
 1. Change the runmode to **publish** and save the file.
@@ -265,7 +265,7 @@ Before installing the Publish instance on your EC2 environment, do the following
    if [ -z "$CQ_RUNMODE" ]; then
     CQ_RUNMODE='publish'
    fi
-   
+
    ```
 
 1. Stop the instance and restart it by running the **start** script.
@@ -304,10 +304,10 @@ To open CRXDE Lite you can select **CRXDE Lite** from the welcome screen or use 
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
 ```
 
-For example:  
+For example:
 `http://localhost:4502/crx/de/index.jsp` ``
 
-![installcq_crxdelite](assets/installcq_crxdelite.png) 
+![installcq_crxdelite](assets/installcq_crxdelite.png)
 
 ### Accessing the Web Console {#accessing-the-web-console}
 
@@ -317,9 +317,9 @@ To access the Adobe CQ Web console you can select **OSGi Console** from the welc
  https://<<i>host</i>>:<<i>port</i>>/system/console
 ```
 
-For example:  
-`http://localhost:4502/system/console`  
-or for the Bundles page  
+For example:
+`http://localhost:4502/system/console`
+or for the Bundles page
 `http://localhost:4502/system/console/bundles`
 
 ![chlimage_1-74](assets/chlimage_1-74.png)

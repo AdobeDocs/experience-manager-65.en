@@ -5,7 +5,7 @@ description: Use the demo package to enable Adobe Asset Insights to capture data
 seo-description: Use the demo package to enable Adobe Asset Insights to capture data from and generate insights for a web page.
 uuid: 7e9752b9-dfd8-47b9-9cb5-f5ffa784c01f
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 9009619a-ca5e-4586-8c67-b7e72f58e2a2

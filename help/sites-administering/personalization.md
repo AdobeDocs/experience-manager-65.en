@@ -5,7 +5,7 @@ description: Learn about personalization in AEM.
 seo-description: Learn about personalization in AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
@@ -29,7 +29,7 @@ There are three main elements involved in personalization:
 **Content**
 
 * is what the user wants to see. Preferably content of interest and use to them for fulfilling their tasks.
-* can be categorized, and therefore made available to users according to predefined rules.must be dynamic; in other words the content 
+* can be categorized, and therefore made available to users according to predefined rules.must be dynamic; in other words the content
 * must, in some way, be dependent upon the user - if every user would see the same content, then personalization would be redundant.
 
 **Rules**

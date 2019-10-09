@@ -5,7 +5,7 @@ description: Catalog overview
 seo-description: Catalog overview
 uuid: 788512bb-fa38-48fb-a769-1eaae6bb95a1
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
@@ -23,33 +23,33 @@ See [Tagging Enablement Resources](tag-resources.md).
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> <strong>resourceType</strong></td> 
-   <td>social/enablement/components/hbs/catalog</td> 
-  </tr> 
-  <tr> 
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
-  </tr> 
-  <tr> 
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.catalog<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td> 
-  </tr> 
-  <tr> 
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/enablement/components/hbs/catalog/catalog.hbs<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/enablement/components/hbs/catalog/clientlibs/catalog.css</td> 
-  </tr> 
-  <tr> 
-   <td><strong> properties</strong></td> 
-   <td>See <a href="catalog.md">Catalog Feature</a></td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> <strong>resourceType</strong></td>
+   <td>social/enablement/components/hbs/catalog</td>
+  </tr>
+  <tr>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
+  </tr>
+  <tr>
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.catalog<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
+  </tr>
+  <tr>
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/enablement/components/hbs/catalog/catalog.hbs<br /> </td>
+  </tr>
+  <tr>
+   <td> <strong>css</strong></td>
+   <td> /libs/social/enablement/components/hbs/catalog/clientlibs/catalog.css</td>
+  </tr>
+  <tr>
+   <td><strong> properties</strong></td>
+   <td>See <a href="catalog.md">Catalog Feature</a></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Essentials for Server-Side {#essentials-for-server-side}
@@ -98,13 +98,13 @@ Using the example of the [Enablement Tutorial](getting-started-enablement.md):
 
 * Re-publish the community site
 
-![chlimage_1-189](assets/chlimage_1-189.png) 
+![chlimage_1-189](assets/chlimage_1-189.png)
 
 #### Pre-filter TagIDs {#pre-filter-tagids}
 
 The pre-filter [TagIDs](../../help/sites-developing/framework.md#tagid) must exactly match the tags applied to the enablement resources. These are visible in the `resources` folder for the site as the values of the property `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png) 
+![chlimage_1-190](assets/chlimage_1-190.png)
 
 ### Reference APIs {#reference-apis}
 

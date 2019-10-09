@@ -7,7 +7,7 @@ uuid: 3367253b-d222-4c5f-9455-a1810d96112e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 ---
 
@@ -24,7 +24,7 @@ The configuration file contains the PDF Generator conversion information, includ
 1. In administration console, click Services &gt; PDF Generator &gt; Configuration Files &gt; Export Configuration.
 1. To export the settings, select the appropriate option:
 
-    * To export all named settings, select Download Entire Configuration. 
+    * To export all named settings, select Download Entire Configuration.
     * To export only one Adobe PDF setting, security setting, or file type setting, select Download Minimal Configuration.
 
       If you are exporting a minimal configuration, select the Adobe PDF, security, and file type settings to export.

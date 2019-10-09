@@ -5,7 +5,7 @@ description: Follow this page to learn about creating a video padding in the wor
 seo-description: Follow this page to learn about creating a video padding in the workflow for your assets.
 uuid: 23f06905-c149-4df1-a8d9-26f38c7c67bb
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 11962188-3767-4d62-b94b-6853ae749836
@@ -16,7 +16,7 @@ discoiquuid: 11962188-3767-4d62-b94b-6853ae749836
 This section covers the following topics:
 
 * **Overview**
-* **Prerequisites** 
+* **Prerequisites**
 * **Creating a Video Padding Workflow**
 * **Using the Workflow in AEM Screens Project**
 * **Validating the Output for the Workflow**
@@ -34,7 +34,7 @@ Before you create a workflow for video, please complete the following prerequisi
 1. Upload a video in **Assets** folder in your AEM instance
 1. Create an AEM Screens project (for example, **TestVideoRendition**) and a channel named (**VideoRendering**), as shown in the figure below:
 
-![screen_shot_2018-10-17at85307pm](assets/screen_shot_2018-10-17at85307pm.png) 
+![screen_shot_2018-10-17at85307pm](assets/screen_shot_2018-10-17at85307pm.png)
 
 ## Creating a Video Padding Workflow {#creating-a-video-padding-workflow2}
 

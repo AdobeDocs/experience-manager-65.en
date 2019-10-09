@@ -1,11 +1,11 @@
 ---
 title: Implementing Windows 10 Player
 seo-title: Implementing Windows 10 Player
-description: Follow this page to learn about configuring AEM Screens Windows 10 player. 
-seo-description: Follow this page to learn about configuring AEM Screens Windows 10 player. 
+description: Follow this page to learn about configuring AEM Screens Windows 10 player.
+seo-description: Follow this page to learn about configuring AEM Screens Windows 10 player.
 uuid: cdd7e9f1-f836-4d52-8026-80537a6623ca
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: administering
 content-type: reference
 discoiquuid: 9b66225a-a893-491b-b47c-ae7b3048ed80

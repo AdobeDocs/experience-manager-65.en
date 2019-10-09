@@ -5,7 +5,7 @@ description: Create, compare, and restore versions of a page
 seo-description: Create, compare, and restore versions of a page
 uuid: b0328431-c2cf-48f4-b358-261238338241
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
@@ -65,10 +65,10 @@ Once a version has been created you can revert to that version if needed.
 >
 >When restoring a page, the version created will be part of a new branch.
 >
->To illustrate:  
+>To illustrate:
 >
 >* Create versions of any page.
->* The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
+>* The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.
 >* Restore the first version; i.e. 1.0.
 >* Create new versions again.
 >* The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.

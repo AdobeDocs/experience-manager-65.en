@@ -6,7 +6,7 @@ seo-description: AEM Mobile apps are based on a blueprint that defines a page st
 uuid: c2bd63a5-3dff-4a72-b1fb-0c776e0afa33
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 ---
@@ -20,7 +20,7 @@ discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 AEM Mobile apps are based on a blueprint that defines a page structure and properties. You can configure the following application properties:
 
 * **Title:** The application title.
-* **Destination Path:** The location in the repository where the application is stored. Leave the default to create a path based on the app name.  
+* **Destination Path:** The location in the repository where the application is stored. Leave the default to create a path based on the app name.
 
 * **Name:** The default value is the value of the Title property with space characters removed. The name is used within AEM to refer to the application, for example for the repository node that represents the application.
 * **Description:** A description of the application.

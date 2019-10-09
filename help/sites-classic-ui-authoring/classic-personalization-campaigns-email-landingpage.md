@@ -5,7 +5,7 @@ description: An effective newsletter landing page helps you get as many people a
 seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 810f3d1c-6648-4342-9fbc-0701765311a1
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
@@ -24,7 +24,7 @@ To create an effective newsletter landing page, you need to do the following:
 
 >[!NOTE]
 >
->Adobe does not plan to further enhance this capability (Managing Leads and Lists).  
+>Adobe does not plan to further enhance this capability (Managing Leads and Lists).
 >The recommendation is to leverage [Adobe Campaign and its AEM integration](/help/sites-administering/campaign.md).
 
 ## Creating a List for the Newsletter {#creating-a-list-for-the-newsletter}
@@ -33,7 +33,7 @@ Create a list, for example, **Geometrixx Newsletter**, in MCM for the newsletter
 
 The following shows an example of a list:
 
-![mcm_listcreate](assets/mcm_listcreate.png) 
+![mcm_listcreate](assets/mcm_listcreate.png)
 
 ## Create a Sign Up Form {#create-a-sign-up-form}
 
@@ -63,7 +63,7 @@ When users click **Subscribe Now**, you want a Thank You page to automatically o
 
 Submitting the request takes the user to a **Thank You** page after which they will receive an email. This Thank You page was created at /content/geometrixx/en/toolbar/newsletter/thank_you.
 
-![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png) 
+![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
 ## Adding Teasers {#adding-teasers}
 

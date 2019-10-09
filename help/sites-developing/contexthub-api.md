@@ -5,7 +5,7 @@ description: The ContextHub Javascript API is available to your scripts when the
 seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
@@ -255,9 +255,9 @@ An object that represents the data tree. The keys are the property names of the 
 
 Initializes the store.
 
-* Sets the store data to an empty object. 
+* Sets the store data to an empty object.
 * Sets the store references to an empty object.
-* The eventChannel is data:*name*, where *name* is the store name. 
+* The eventChannel is data:*name*, where *name* is the store name.
 
 * The storeDataKey is /store/*name*, where *name* is the store name.
 
@@ -402,7 +402,7 @@ Configures the details for connecting to the JSONP service that this object uses
 
     * host: (String) The server name or IP address.
     * jsonp: (Boolean) A value of true indicates that the service is a JSONP service, false otherwise. When true, the {callback: "ContextHub.Callbacks.*Object.name*} object is added to the service.params object.
-    * params: (Object) URL parameters represented as object properties. Parameter names are property names and parameter values are property values. 
+    * params: (Object) URL parameters represented as object properties. Parameter names are property names and parameter values are property values.
     * path: (String) The path to the service.
     * port: (Number) The port number of the service.
     * secure: (String or Boolean) Determines the protocol to use for the service URL:
@@ -432,7 +432,7 @@ An object with the following properties:
 * **host:** (String) The server name or IP address.
 * **jsonp:** (Boolean) A value of true indicates that the service is a JSONP service, false otherwise. When true, the {callback: "ContextHub.Callbacks.*Object.name*} object is added to the service.params object.
 
-* **params:** (Object) URL parameters represented as object properties. Parameter names are property names and parameter values are property values. 
+* **params:** (Object) URL parameters represented as object properties. Parameter names are property names and parameter values are property values.
 * **path:** (String) The path to the service.
 * **port:** (Number) The port number of the service.
 * **secure:** (String or Boolean) Determines the protocol to use for the service URL:
@@ -469,7 +469,7 @@ initializes the ContextHub.Store.JSONPStore object.
 
         * host: (String) The server name or IP address.
         * jsonp: (Boolean) A value of true indicates that the service is a JSONP service, false otherwise. When true, the `{callback: "ContextHub.Callbacks.*Object.name*}`object is added to `service.params`.
-        * params: (Object) URL parameters represented as object properties. Parameter names and values are the object property names and values, respectively. 
+        * params: (Object) URL parameters represented as object properties. Parameter names and values are the object property names and values, respectively.
         * path: (String) The path to the service.
         * port: (Number) The port number of the service.
         * secure: (String or Boolean) Determines the protocol to use for the service URL:
@@ -529,8 +529,8 @@ Registers a UI module renderer with ContextHub. After the renderer is registered
 
 **Parameters**
 
-* **moduleType:** (String) The identifier for the UI module renderer. If a renderer is already registered using the specified value, the existing renderer is unregistered before this renderer is registered. 
-* **renderer:** (String) The name of the class that renders the UI module. 
+* **moduleType:** (String) The identifier for the UI module renderer. If a renderer is already registered using the specified value, the existing renderer is unregistered before this renderer is registered.
+* **renderer:** (String) The name of the class that renders the UI module.
 * **dontRender:** (Boolean) Set to `true` to prevent the ContextHub UI from being rendered after the renderer is registered. The default value is `false`.
 
 **Example**
@@ -577,7 +577,7 @@ Returns all cookies that have keys that match a filter.
 
     * String: The string is compared to the cookie key.
     * Array: Each item in the array is a filter.
-    * A RegExp object: The test function of the object is used to match cookie keys. 
+    * A RegExp object: The test function of the object is used to match cookie keys.
     * A function: A function that tests a cookie key for a match. The function must take the cookie key as a paramter and return true if the test confirms a match.
 
 **Returns**
@@ -618,7 +618,7 @@ Returns an array of the keys of existing cookies that match a filter.
 
     * String: The string is compared to the cookie key.
     * Array: Each item in the array is a filter.
-    * A RegExp object: The test function of the object is used to match cookie keys. 
+    * A RegExp object: The test function of the object is used to match cookie keys.
     * A function: A function that tests a cookie key for a match. The function must take the cookie key as a paramter and return `true` if the test confirms a match.
 
 **Returns**
@@ -743,9 +743,9 @@ The following example binds a function to the data event of the geolocation stor
 ```
 <div class="location">
     <p>latitude: <span id="lat"></span></p>
-</div>    
+</div>
 
-<script> 
+<script>
     var geostore = ContextHub.getStore("geolocation");
     geostore.eventing.on(ContextHub.Constants.EVENT_DATA_UPDATE,getlat,"getlat");
 
@@ -859,7 +859,7 @@ Creates a copy of a data object and adds to it the data tree from a second objec
 
 **Parameters**
 
-* **tree:** The object that is copied. 
+* **tree:** The object that is copied.
 * **secondTree:** The object that is merged with the copy of the `tree` object.
 
 **Returns**
@@ -1029,7 +1029,7 @@ myObject {
 
 Sanitizes string values to make them usable as keys. To sanitize a string, this function performs the following actions:
 
-* Reduces multiple consecutive forward slashes to a single slash. 
+* Reduces multiple consecutive forward slashes to a single slash.
 * Removes whitespace from the beginning and ending of the string.
 * Splits the result into an array of strings that are demarcated by slashes.
 
@@ -1080,9 +1080,9 @@ var myObject = {
 
 var myKey = "/user/location/details";
 
-var myValue = { 
-      population: 173330, 
-      elevation: 260 
+var myValue = {
+      population: 173330,
+      elevation: 260
      };
 
 myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
@@ -1138,13 +1138,13 @@ The priority is a number that indicates the importance of same-named stores. Whe
 
 * **store:** (Object) The store object to register as a store candidate.
 * **storeType:** (String) The name of the store candidate. This value is required when creating an instance of the store candidate.
-* **priority:** (Number) The priority of the store candidate. 
+* **priority:** (Number) The priority of the store candidate.
 * **applies:** (Function) The function to invoke that evaluates the applcability of the store in the current environment. The function must return `true` if the store is applicable, and `false` otherwise. The default value is a function that returns true: `function() {return true;}`
 
 **Example**
 
 ```
-ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate, 
+ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandiate', 0);
 ```
 

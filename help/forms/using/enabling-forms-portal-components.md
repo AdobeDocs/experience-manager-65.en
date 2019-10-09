@@ -5,7 +5,7 @@ description: Out of the box, Forms Portal components are disabled. Enable Docume
 seo-description: Out of the box, Forms Portal components are disabled. Enable Document Services and Document Services Predicates groups to enable Forms Portal components.
 uuid: 92d25da6-f1df-4ac0-bf84-2edf9e2722b3
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 ---
@@ -14,7 +14,7 @@ discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 
 Out of the box, forms portal components are not available for use. To make the components appear in the list of available components in AEM sidekick, perform the following steps:
 
-1. Log in to the author instance of your website and open an AEM Sites page.   
+1. Log in to the author instance of your website and open an AEM Sites page.
 
 1. For the pages using a static template, perform the following steps:
 

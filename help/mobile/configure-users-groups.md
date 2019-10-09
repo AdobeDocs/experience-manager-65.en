@@ -6,7 +6,7 @@ seo-description: Follow this page to understand the user roles and how to config
 uuid: 55cea2b3-d7e6-4174-92b3-ee97e46b59c4
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 ---
@@ -99,7 +99,7 @@ Members of the app-admins group can author application content with the same per
 
    >[!CAUTION]
    >
-   >/var/contentsync access is denied OOTB. 
+   >/var/contentsync access is denied OOTB.
    >
    >Omitting the READ permission can result in empty update packages being built and replicated.
 

@@ -7,7 +7,7 @@ uuid: 7fba6c4e-1a3e-4a4b-9201-acf2ff66a9df
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 ---
 
@@ -34,10 +34,10 @@ Use the Applications tab to import and manage applications that were created in 
 
 1. In administration console, click Services &gt; Applications and Services &gt; Application Management.
 1. Click Import.
-1. Click Browse and select the .lca file to import and click Preview. The Preview Application page displays information about the application. 
+1. Click Browse and select the .lca file to import and click Preview. The Preview Application page displays information about the application.
 1. (Optional) To see a list of the assets contained in the application, click View Assets.
-1. (Optional) To deploy the assets to the runtime, select Deploy Assets To Runtime When Import Is Complete. If you do not select this option, you can deploy the assets later. 
-1. Click Import. The application appears on the Applications tab. 
+1. (Optional) To deploy the assets to the runtime, select Deploy Assets To Runtime When Import Is Complete. If you do not select this option, you can deploy the assets later.
+1. Click Import. The application appears on the Applications tab.
 1. Log into the CRX repository with administrator credentials.
 1. Navigate to content/dam/lcapplications
 
@@ -55,7 +55,7 @@ Use the Applications tab to import and manage applications that were created in 
 
 You can deploy applications that you have imported, or that Workbench users imported from Workbench.
 
-1. In administration console, click Services &gt; Applications and Services &gt; Application Management. 
+1. In administration console, click Services &gt; Applications and Services &gt; Application Management.
 1. Select the checkbox next to the application that you want to deploy and click Deploy.
 1. Click OK in the confirmation dialog box that appears.
 
@@ -63,7 +63,7 @@ You can deploy applications that you have imported, or that Workbench users impo
 
 You can undeploy applications from the runtime.
 
-1. In administration console, click Services &gt; Applications and Services &gt; Application Management. 
+1. In administration console, click Services &gt; Applications and Services &gt; Application Management.
 1. Select the checkbox next to the application that you want to undeploy and click Undeploy.
 1. Click OK in the confirmation dialog box that appears.
 
@@ -71,7 +71,7 @@ You can undeploy applications from the runtime.
 
 Undeploy the application before removing it from the server.
 
-1. In administration console, click Services &gt; Applications and Services &gt; Application Management. 
+1. In administration console, click Services &gt; Applications and Services &gt; Application Management.
 1. Select the checkbox next to the application that you want to remove and click Remove.
 1. Click OK in the confirmation dialog box that appears.
 

@@ -5,7 +5,7 @@ description: Use folders to organize your form templates, PDFs, resources, and a
 seo-description: Use folders to organize your form templates, PDFs, resources, and adaptive forms.
 uuid: 63fcb807-c9cf-49ae-ad69-6b1187543470
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 ---
@@ -20,17 +20,17 @@ AEM Forms lets you change the title of a folder. The title is not the same as th
 
 You can create a folder in AEM Forms in one of the following ways:
 
-* Upload a ZIP file containing assets in the desired folder structure (See, [Getting XDP and PDF documents in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))  
+* Upload a ZIP file containing assets in the desired folder structure (See, [Getting XDP and PDF documents in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
 * Create a new empty folder
 
-1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`. 
-1. Navigate to the location under which you want to create a folder.  
-1. Click the ![aem6forms_add](assets/aem6forms_add.png) icon in the toolbar and then select **[!UICONTROL Create Folder]**.  
+1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`.
+1. Navigate to the location under which you want to create a folder.
+1. Click the ![aem6forms_add](assets/aem6forms_add.png) icon in the toolbar and then select **[!UICONTROL Create Folder]**.
 
 1. Enter the following details:
 
-    * **Title:** Display name for the folder 
+    * **Title:** Display name for the folder
     * **Name:** *(Mandatory)* The node name under which you want to store the folder in the repository
 
    >[!NOTE]
@@ -46,7 +46,7 @@ You can create a folder in AEM Forms in one of the following ways:
 ### Edit the folder title {#edit-the-folder-title-br}
 
 1. Select the folder whose title you want to edit.
-1. Click the edit ![aem6forms_edit](assets/aem6forms_edit.png) icon in the toolbar.  
-1. Enter the new title. The text field is prepopulated with the current value of folder title. You can change it to a new value. 
+1. Click the edit ![aem6forms_edit](assets/aem6forms_edit.png) icon in the toolbar.
+1. Enter the new title. The text field is prepopulated with the current value of folder title. You can change it to a new value.
 1. Click **[!UICONTROL Submit].**
 

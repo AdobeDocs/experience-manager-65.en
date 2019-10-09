@@ -5,7 +5,7 @@ description: ContextHub provides several sample store candidates that you can us
 seo-description: ContextHub provides several sample store candidates that you can use in your solutions
 uuid: feccd813-6077-4e87-a96e-d451114e5527
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
@@ -147,18 +147,18 @@ The contexthub.datetime store candidate extends [ `ContextHub.Store.PersistedJSO
 When you create a store based on this store candidate, you need to provide a service object that contains details about the JSONP service to call. The following JSON code illustrates the required format to use for the service object:
 
 ```xml
-{ 
-   "service": { 
-      "jsonp": false, 
-      "timeout": 1000, 
-      "ttl": 1800000, 
-      "secure": false, 
-      "host": "md5.jsontest.com", 
-      "port": 80, 
-      "params":{ 
-         "text":"text to md5" 
-      } 
-   } 
+{
+   "service": {
+      "jsonp": false,
+      "timeout": 1000,
+      "ttl": 1800000,
+      "secure": false,
+      "host": "md5.jsontest.com",
+      "port": 80,
+      "params":{
+         "text":"text to md5"
+      }
+   }
 }
 ```
 
@@ -365,8 +365,8 @@ The contexthub.geolocation store candidate extends [ `ContextHub.Store.Persisted
 The default configuration includes an array named `defaultEmulators` that contains information about different devices. When you create a store, provide different device profiles in the Detail Configuration property as required, using the format illustrated in the following example:
 
 ```xml
-{ 
-   "defaultEmulators":[ 
+{
+   "defaultEmulators":[
         {
             "id": "iphone-6",
             "title": "iPhone 6",

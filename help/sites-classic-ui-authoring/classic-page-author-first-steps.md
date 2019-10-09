@@ -5,7 +5,7 @@ description: This section gives you an overview of the main tasks that you will 
 seo-description: This section gives you an overview of the main tasks that you will be using when starting to author content with Adobe Experience Manager (AEM).
 uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 topic-tags: page-authoring
@@ -18,7 +18,7 @@ This section gives you an overview of the main tasks that you will be using when
 
 It covers:
 
-* [Getting Started](#getting-started): Detailing the basic sequence of events you need for creating and publishing your first page.  
+* [Getting Started](#getting-started): Detailing the basic sequence of events you need for creating and publishing your first page.
 
 * [Further Actions](#further-actions): Following on with the many other actions you can use when authoring.
 

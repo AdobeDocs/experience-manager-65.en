@@ -7,7 +7,7 @@ uuid: 8532d72b-270a-4fcf-b7a5-56fca979a5fe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 ---
 
@@ -34,16 +34,16 @@ If you are using Content Services (Deprecated), you can select the Select This O
 
 1. To add users and groups to this new group, click Find Users/Groups and do these tasks:
 
-    * In the Find box, type your search criteria. 
-    * In the In list, select Users, Groups, or Users and Groups. 
-    * In the Using list, select Name, Email, or User ID. 
+    * In the Find box, type your search criteria.
+    * In the In list, select Users, Groups, or Users and Groups.
+    * In the Using list, select Name, Email, or User ID.
     * Select the domain, select the number of items to display and click Find.
     * In the search results, select the check boxes for the users and groups to add to this new group and click OK.
 
 1. Click Next.
 1. To add this new group to other existing groups, click Find Groups and do these tasks:
 
-    * In the Find box, type your search criteria. 
+    * In the Find box, type your search criteria.
     * Select the domain, select the number of items to display, and click Find.
     * In the search results, select the check boxes for the groups that the new group belongs to and click OK.
 
@@ -92,13 +92,13 @@ A dynamic group contains only users. It cannot contain other groups. However, a 
 
    **Canonical Name:** User’s canonical name, such as `ou=adobe.com`
 
-   **Domain Name:** The name of the domain to which the user belongs, such as `DefaultDom`. The Domain Name attribute is case-sensitive when using the Contains operator. It is not case-sensitive with the Starts With, Ends With, or Equals operators. 
+   **Domain Name:** The name of the domain to which the user belongs, such as `DefaultDom`. The Domain Name attribute is case-sensitive when using the Contains operator. It is not case-sensitive with the Starts With, Ends With, or Equals operators.
 
 1. Click Test. A Test page displays the first 200 users who meet the defined criteria. Click Close.
 1. If the test returned the expected results, click Next. Otherwise, edit the dynamic group criteria and test again.
 1. To add the dynamic group to a parent group, click Find Groups and do these tasks:
 
-    * In the Find box, type your search criteria. 
+    * In the Find box, type your search criteria.
     * Select the domain, select the number of items to display, and click Find.
     * In the search results, select the check boxes for groups that the dynamic group belongs to and click OK.
 
@@ -109,7 +109,7 @@ A dynamic group contains only users. It cannot contain other groups. However, a 
 ## View details about a group {#view-details-about-a-group}
 
 1. In administration console, click Settings &gt; User Management &gt; Users and Groups.
-1. In the In list, select Group, and then click Find. The results of the search are listed at the bottom of the page. You can sort the list by clicking any of the column headings. 
+1. In the In list, select Group, and then click Find. The results of the search are listed at the bottom of the page. You can sort the list by clicking any of the column headings.
 1. Click the name of the group to display details about. The Group Detail page appears.
 1. To view direct members of the group, click Child Principals.
 
@@ -127,25 +127,25 @@ A dynamic group contains only users. It cannot contain other groups. However, a 
 1. On the Details tab, edit the general settings and click Save.
 1. To edit the associated groups, click the Parent Groups tab and do these tasks:
 
-    * To find groups to add to the association, click Find Groups and complete the search information. 
+    * To find groups to add to the association, click Find Groups and complete the search information.
     * To add groups, select the check box for the groups to add, click OK, and then click Save.
     * To delete an associated group, select the check box for the group to delete, click Delete, click OK, and then click Save.
 
 1. To edit the users and groups in the group, click the Child Principals tab and do these tasks:
 
-    * To find users and groups to add, click Find Users/Groups and complete the search information. 
+    * To find users and groups to add, click Find Users/Groups and complete the search information.
     * To add a user or group, select the check box for the user or group, click OK, and click then Save.
     * To delete a user or group, select the check box for the user or group, click Delete, click OK, and then click Save.
 
 1. To edit role assignments, click the Role Assignments tab and do these tasks:
 
-    * To find roles to assign to the group, click Find Roles. 
+    * To find roles to assign to the group, click Find Roles.
     * To add a role, select the check box for the role, click OK, and then click Save.
     * To unassign a role, select the check box for the role, click Unassign, and then click Save.
 
 ## Delete a group {#delete-a-group}
 
 1. In administration console, click Settings &gt; User Management &gt; Users And Groups.
-1. In the Find list, select Groups, and then click Find. 
+1. In the Find list, select Groups, and then click Find.
 1. Select the check box for the group to delete, click Delete, and then click OK.
 

@@ -6,7 +6,7 @@ seo-description: null
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 ---
@@ -15,7 +15,7 @@ discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 
 Most AEM Forms services in the service container are configured to expose a web service, with full support for web service definition language (WSDL) generation. That is, you can create proxy objects that consume the native SOAP stack of an AEM Forms service. As a result, AEM Forms services can exchange and process the following SOAP messages:
 
-* **SOAP request**: Sent to a Forms service by a client application requesting an action. 
+* **SOAP request**: Sent to a Forms service by a client application requesting an action.
 * **SOAP response**: Sent to a client application by a Forms service after a SOAP request is processed.
 
 Using web services, you can perform the same AEM Forms services operations that you can by using the Java API. A benefit of using web services to invoke AEM Forms services is that you can create a client application in a development environment that supports SOAP. A client application is not bound to a specific development environment or programming language. For example, you can create a client application using Microsoft Visual Studio .NET and C# as the programming language.
@@ -42,98 +42,98 @@ where:
 
 * *your_serverhost* represents the IP address of the J2EE application server hosting AEM Forms.
 * *your_port* represents the HTTP port that the J2EE application server uses.
-* *service_name* represents the service name. 
+* *service_name* represents the service name.
 * *version* represents the target version of a service (the latest service version is used by default).
 * `async` specifies the value `true` to enable additional operations for asynchronous invocation ( `false` by default).
 * *lc_version* represents the version of AEM Forms that you want to invoke.
 
 The following table lists service WSDL definitions (assuming that AEM Forms is deployed on the local host and the post is 8080).
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Service</p></th> 
-   <th><p>WSDL definition</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Service</p></th>
+   <th><p>WSDL definition</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>Assembler</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ AssemblerService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Back and Restore</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/BackupService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>barcoded forms</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ BarcodedFormsService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Convert PDF</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ ConvertPDFService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Distiller</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ DistillerService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>DocConverter </p></td> 
-   <td><p><code>http://localhost:8080/soap/services/DocConverterService?WSDL</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>DocumentManagement</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/DocumentManagementService?WSDL</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Encryption </p></td> 
-   <td><p><code>http://localhost:8080/soap/services/EncryptionService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Forms</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/FormsService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Form Data Integration</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/FormDataIntegration?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Generate PDF</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ GeneratePDFService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Generate 3D PDF</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/Generate3dPDFService?WSDL</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Output</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ OutputService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>PDF Utilities </p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ PDFUtilityService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Acrobat Reader DC extensions</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ ReaderExtensionsService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Repository</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ RepositoryService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Rights Management </p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ RightsManagementService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Signature </p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ SignatureService?wsdl</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p>XMP Utilities</p></td> 
-   <td><p><code>http://localhost:8080/soap/services/ XMPUtilityService?wsdl</code></p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>Assembler</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ AssemblerService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Back and Restore</p></td>
+   <td><p><code>http://localhost:8080/soap/services/BackupService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>barcoded forms</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ BarcodedFormsService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Convert PDF</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ ConvertPDFService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Distiller</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ DistillerService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>DocConverter </p></td>
+   <td><p><code>http://localhost:8080/soap/services/DocConverterService?WSDL</code></p></td>
+  </tr>
+  <tr>
+   <td><p>DocumentManagement</p></td>
+   <td><p><code>http://localhost:8080/soap/services/DocumentManagementService?WSDL</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Encryption </p></td>
+   <td><p><code>http://localhost:8080/soap/services/EncryptionService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Forms</p></td>
+   <td><p><code>http://localhost:8080/soap/services/FormsService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Form Data Integration</p></td>
+   <td><p><code>http://localhost:8080/soap/services/FormDataIntegration?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Generate PDF</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ GeneratePDFService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Generate 3D PDF</p></td>
+   <td><p><code>http://localhost:8080/soap/services/Generate3dPDFService?WSDL</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Output</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ OutputService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>PDF Utilities </p></td>
+   <td><p><code>http://localhost:8080/soap/services/ PDFUtilityService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Acrobat Reader DC extensions</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ ReaderExtensionsService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Repository</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ RepositoryService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Rights Management </p></td>
+   <td><p><code>http://localhost:8080/soap/services/ RightsManagementService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>Signature </p></td>
+   <td><p><code>http://localhost:8080/soap/services/ SignatureService?wsdl</code></p></td>
+  </tr>
+  <tr>
+   <td><p>XMP Utilities</p></td>
+   <td><p><code>http://localhost:8080/soap/services/ XMPUtilityService?wsdl</code></p></td>
+  </tr>
+ </tbody>
 </table>
 
 **AEM Forms Process WSDL definitions**
@@ -177,25 +177,25 @@ AEM Forms service WSDLs define many data types. One of the most important data t
 A `BLOB` object sends and retrieves binary data (for example, PDF files, XML data, and so on) to and from AEM Forms services. The `BLOB` type is defined in a service WSDL as follows:
 
 ```as3
- <complexType name="BLOB"> 
-     <sequence> 
-         <element maxOccurs="1" minOccurs="0" name="contentType" 
-             type="xsd:string"/> 
-         <element maxOccurs="1" minOccurs="0" name="binaryData" 
-             type="xsd:base64Binary"/> 
-         <element maxOccurs="1" minOccurs="0" name="attachmentID" 
-             type="xsd:string"/> 
-         <element maxOccurs="1" minOccurs="0" name="remoteURL" 
-             type="xsd:string"/> 
-         <element maxOccurs="1" minOccurs="0" name="MTOM"  
-             type="xsd:base64Binary" 
-             xmime:expectedContentTypes="*/*" 
-             xmlns:xmime="https://www.w3.org/2005/05/xmlmime"/> 
-         <element maxOccurs="1" minOccurs="0" name="swaRef"  
-             type="tns1:swaRef"/> 
-         <element maxOccurs="1" minOccurs="0" name="attributes" 
-             type="impl:MyMapOf_xsd_string_To_xsd_anyType"/> 
-     </sequence> 
+ <complexType name="BLOB">
+     <sequence>
+         <element maxOccurs="1" minOccurs="0" name="contentType"
+             type="xsd:string"/>
+         <element maxOccurs="1" minOccurs="0" name="binaryData"
+             type="xsd:base64Binary"/>
+         <element maxOccurs="1" minOccurs="0" name="attachmentID"
+             type="xsd:string"/>
+         <element maxOccurs="1" minOccurs="0" name="remoteURL"
+             type="xsd:string"/>
+         <element maxOccurs="1" minOccurs="0" name="MTOM"
+             type="xsd:base64Binary"
+             xmime:expectedContentTypes="*/*"
+             xmlns:xmime="https://www.w3.org/2005/05/xmlmime"/>
+         <element maxOccurs="1" minOccurs="0" name="swaRef"
+             type="tns1:swaRef"/>
+         <element maxOccurs="1" minOccurs="0" name="attributes"
+             type="impl:MyMapOf_xsd_string_To_xsd_anyType"/>
+     </sequence>
  </complexType>
 ```
 
@@ -217,13 +217,13 @@ Assign values to fields that belong to the `BLOB` instance as follows:
 
 The transmission protocol for returned `BLOB` objects depends on several factors, which are considered in the following order, stopping when the main condition is satisfied:
 
-1. **Target URL specifies transmission protocol**. If the target URL specified at the SOAP invocation contains the parameter `blob="`*BLOB_TYPE*", then *BLOB_TYPE* determines the transmission protocol. *BLOB_TYPE* is a placeholder for base64, dime, mime, http, mtom, or swaref. 
+1. **Target URL specifies transmission protocol**. If the target URL specified at the SOAP invocation contains the parameter `blob="`*BLOB_TYPE*", then *BLOB_TYPE* determines the transmission protocol. *BLOB_TYPE* is a placeholder for base64, dime, mime, http, mtom, or swaref.
 1. **Service SOAP endpoint is Smart**. If the following conditions are true, then the output documents are returned using the same transmission protocol as the input documents:
 
     * Service's SOAP endpoint parameter Default Protocol For Output Blob Objects is set to Smart.
 
-      For each service with a SOAP endpoint, the administration console allows you to specify the transmission protocol for any returned blobs. (See [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).) 
-  
+      For each service with a SOAP endpoint, the administration console allows you to specify the transmission protocol for any returned blobs. (See [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
+
     * AEM Forms service takes one or more documents as input.
 
 1. **Service SOAP endpoint is not Smart**. The configured protocol determines the document transmission protocol, and the data is returned in the corresponding `BLOB` field. For example, if the SOAP endpoint is set to DIME, then the returned blob is in the `blob.attachmentID` field regardless of the transmission protocol of any input document.
@@ -232,15 +232,15 @@ The transmission protocol for returned `BLOB` objects depends on several factors
 As described in the first condition, you can ensure the transmission type for any returned documents by extending the SOAP endpoint URL with a suffix as follows:
 
 ```as3
-     https://<your_serverhost>:<your_port>/soap/services/<service 
+     https://<your_serverhost>:<your_port>/soap/services/<service
      name>?blob=base64|dime|mime|http|mtom|swaref
 ```
 
 Here is the correlation between transmission types and the field from which you obtain the data:
 
-* **Base64 format**: Set the `blob` suffix to `base64` to return the data in the `BLOB.binaryData` field. 
-* **MIME or DIME attachment**: Set the `blob` suffix to `DIME` or `MIME` to return the data as a corresponding attachment type with the attachment identifier returned in the `BLOB.attachmentID` field. Use the SOAP framework's proprietary API to read the data from the attachment. 
-* **Remote URL**: Set the `blob` suffix to `http` to keep the data on the application server and return the URL pointing to the data in the `BLOB.remoteURL` field. 
+* **Base64 format**: Set the `blob` suffix to `base64` to return the data in the `BLOB.binaryData` field.
+* **MIME or DIME attachment**: Set the `blob` suffix to `DIME` or `MIME` to return the data as a corresponding attachment type with the attachment identifier returned in the `BLOB.attachmentID` field. Use the SOAP framework's proprietary API to read the data from the attachment.
+* **Remote URL**: Set the `blob` suffix to `http` to keep the data on the application server and return the URL pointing to the data in the `BLOB.remoteURL` field.
 * **MTOM or SwaRef**: Set the `blob` suffix to `mtom` or `swaref` to return the data as a corresponding attachment type with the attachment identifier returned in the `BLOB.MTOM` or `BLOB.swaRef` fields. Use the SOAP framework's native API to read the data from the attachment.
 
 >[!NOTE]
@@ -261,83 +261,83 @@ AEM Forms services that return a large amount of binary data use the Document/BL
 
 The following table lists Java data types and shows the corresponding web service data type.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Java data type</p></th> 
-   <th><p>Web service data type</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Java data type</p></th>
+   <th><p>Web service data type</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p><code>java.lang.byte[]</code></p></td> 
-   <td><p><code>xsd:base64Binary</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.lang.Boolean</code></p></td> 
-   <td><p><code>xsd:boolean</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.util.Date</code></p></td> 
-   <td><p>The <code>DATE</code> type, which is defined in a service WSDL as follows:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>If a AEM Forms service operation takes a <code>java.util.Date</code> value as input, the SOAP client application must pass the date in the <code>DATE.date</code> field. Setting the <code>DATE.calendar</code> field in this case causes a runtime exception. If the service returns a <code>java.util.Date</code>, the date is retuned in the <code>DATE.date</code> field.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.util.Calendar</code></p></td> 
-   <td><p>The <code>DATE</code> type, which is defined in a service WSDL as follows:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>If a AEM Forms service operation takes a <code>java.util.Calendar</code> value as input, the SOAP client application must pass the date in the <code>DATE.caledendar</code> field. Setting the <code>DATE.date</code> field in this case causes a run-time exception. If the service returns a <code>java.util.Calendar</code>, then the date is returned in the <code>DATE.calendar</code> field. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.math.BigDecimal</code></p></td> 
-   <td><p><code>xsd:decimal</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>com.adobe.idp.Document</code></p></td> 
-   <td><p><code>BLOB</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.lang.Double</code></p></td> 
-   <td><p><code>xsd:double</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.lang.Float</code></p></td> 
-   <td><p><code>xsd:float</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.lang.Integer</code></p></td> 
-   <td><p><code>xsd:int</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.util.List</code></p></td> 
-   <td><p><code>MyArrayOf_xsd_anyType</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.lang.Long</code></p></td> 
-   <td><p><code>xsd:long</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.util.Map</code></p></td> 
-   <td><p>The <code>apachesoap:Map</code>, which is defined in a service WSDL as follows:</p><p><code>&lt;schema elementFormDefault="qualified" targetNamespace="https://xml.apache.org/xml-soap" xmlns="https://www.w3.org/2001/XMLSchema"&gt;</code></p><p><code>&lt;complexType name="mapItem"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element name="key" nillable="true" type="xsd:anyType"/&gt;</code></p><p><code>&lt;element name="value" nillable="true" type="xsd:anyType"/&gt;</code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p><code>&lt;complexType name="Map"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="unbounded" minOccurs="0" name="item" </code><code>type="apachesoap:mapItem"/&gt;</code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p><code>&lt;/schema&gt;</code></p><p>The Map is represented as a sequence of key/value pairs.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.lang.Object</code></p></td> 
-   <td><p><code>$1</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.lang.Short</code></p></td> 
-   <td><p><code>xsd:short</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>java.lang.String</code></p></td> 
-   <td><p><code>xsd:string</code></p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>org.w3c.dom.Document</code></p></td> 
-   <td><p>The XML type, which is defined in a service WSDL as follows:</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>If an AEM Forms service operation accepts an <code>org.w3c.dom.Document</code> value, pass the XML data in the <code>XML.document</code> field.</p><p>Setting the <code>XML.element</code> field causes a runtime exception. If the service returns an <code>org.w3c.dom.Document</code>, then the XML data is returned in the <code>XML.document</code> field.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>org.w3c.dom.Element</code></p></td> 
-   <td><p>The XML type, which is defined in a service WSDL as follows:</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>If an AEM Forms service operation takes an <code>org.w3c.dom.Element</code> as input, pass the XML data in the <code>XML.element</code> field.</p><p>Setting the <code>XML.document</code> field causes a runtime exception. If the service returns an <code>org.w3c.dom.Element</code>, then the XML data is retuned in the <code>XML.element</code> field.</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p><code>java.lang.byte[]</code></p></td>
+   <td><p><code>xsd:base64Binary</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.lang.Boolean</code></p></td>
+   <td><p><code>xsd:boolean</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.util.Date</code></p></td>
+   <td><p>The <code>DATE</code> type, which is defined in a service WSDL as follows:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>If a AEM Forms service operation takes a <code>java.util.Date</code> value as input, the SOAP client application must pass the date in the <code>DATE.date</code> field. Setting the <code>DATE.calendar</code> field in this case causes a runtime exception. If the service returns a <code>java.util.Date</code>, the date is retuned in the <code>DATE.date</code> field.</p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.util.Calendar</code></p></td>
+   <td><p>The <code>DATE</code> type, which is defined in a service WSDL as follows:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>If a AEM Forms service operation takes a <code>java.util.Calendar</code> value as input, the SOAP client application must pass the date in the <code>DATE.caledendar</code> field. Setting the <code>DATE.date</code> field in this case causes a run-time exception. If the service returns a <code>java.util.Calendar</code>, then the date is returned in the <code>DATE.calendar</code> field. </p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.math.BigDecimal</code></p></td>
+   <td><p><code>xsd:decimal</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>com.adobe.idp.Document</code></p></td>
+   <td><p><code>BLOB</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.lang.Double</code></p></td>
+   <td><p><code>xsd:double</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.lang.Float</code></p></td>
+   <td><p><code>xsd:float</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.lang.Integer</code></p></td>
+   <td><p><code>xsd:int</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.util.List</code></p></td>
+   <td><p><code>MyArrayOf_xsd_anyType</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.lang.Long</code></p></td>
+   <td><p><code>xsd:long</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.util.Map</code></p></td>
+   <td><p>The <code>apachesoap:Map</code>, which is defined in a service WSDL as follows:</p><p><code>&lt;schema elementFormDefault="qualified" targetNamespace="https://xml.apache.org/xml-soap" xmlns="https://www.w3.org/2001/XMLSchema"&gt;</code></p><p><code>&lt;complexType name="mapItem"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element name="key" nillable="true" type="xsd:anyType"/&gt;</code></p><p><code>&lt;element name="value" nillable="true" type="xsd:anyType"/&gt;</code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p><code>&lt;complexType name="Map"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="unbounded" minOccurs="0" name="item" </code><code>type="apachesoap:mapItem"/&gt;</code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p><code>&lt;/schema&gt;</code></p><p>The Map is represented as a sequence of key/value pairs.</p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.lang.Object</code></p></td>
+   <td><p><code>$1</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.lang.Short</code></p></td>
+   <td><p><code>xsd:short</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>java.lang.String</code></p></td>
+   <td><p><code>xsd:string</code></p></td>
+  </tr>
+  <tr>
+   <td><p><code>org.w3c.dom.Document</code></p></td>
+   <td><p>The XML type, which is defined in a service WSDL as follows:</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>If an AEM Forms service operation accepts an <code>org.w3c.dom.Document</code> value, pass the XML data in the <code>XML.document</code> field.</p><p>Setting the <code>XML.element</code> field causes a runtime exception. If the service returns an <code>org.w3c.dom.Document</code>, then the XML data is returned in the <code>XML.document</code> field.</p></td>
+  </tr>
+  <tr>
+   <td><p><code>org.w3c.dom.Element</code></p></td>
+   <td><p>The XML type, which is defined in a service WSDL as follows:</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>If an AEM Forms service operation takes an <code>org.w3c.dom.Element</code> as input, pass the XML data in the <code>XML.element</code> field.</p><p>Setting the <code>XML.document</code> field causes a runtime exception. If the service returns an <code>org.w3c.dom.Element</code>, then the XML data is retuned in the <code>XML.element</code> field.</p></td>
+  </tr>
+ </tbody>
 </table>
 
 **Adobe Developer website**
@@ -369,52 +369,52 @@ You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These 
 
    JDK 1.6 includes the wsimport program used in the build.xml file. JDK 1.5 does not include that program.
 
-1. Install JAX-WS on the client computer. (See [Java API for XML Web Services](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).) 
+1. Install JAX-WS on the client computer. (See [Java API for XML Web Services](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
 1. Use JAX-WS and Apache Ant to generate Java proxy classes. Create an Ant build script to accomplish this task. The following script is a sample Ant build script named build.xml:
 
    ```as3
-    <?xml version="1.0" encoding="UTF-8"?> 
-     
-    <project basedir="." default="compile"> 
-     
-    <property name="port" value="8080" /> 
-    <property name="host" value="localhost" /> 
-    <property name="username" value="administrator" /> 
-    <property name="password" value="password" /> 
-    <property name="tests" value="all" /> 
-     
-    <target name="clean" > 
-           <delete dir="classes" /> 
-    </target> 
-     
-    <target name="wsdl" depends="clean"> 
-           <mkdir dir="classes"/> 
-           <exec executable="wsimport" failifexecutionfails="false" failonerror="true" resultproperty="foundWSIMPORT"> 
-               <arg line="-keep -d classes https://${host}:${port}/soap/services/EncryptionService?wsdl&lc_version=9.0.1"/> 
-           </exec> 
-           <fail unless="foundWSIMPORT"> 
-              !!! Failed to execute JDK's wsimport tool. Make sure that JDK 1.6 (or later) is on your PATH !!! 
-           </fail> 
-    </target> 
-     
-    <target name="compile" depends="clean, wsdl" > 
-         <javac destdir="./classes" fork="true" debug="true"> 
-            <src path="./src"/> 
-         </javac> 
-    </target> 
-     
-    <target name="run"> 
-         <java classname="Client" fork="yes" failonerror="true" maxmemory="200M"> 
-            <classpath> 
-              <pathelement location="./classes"/> 
-            </classpath> 
-            <arg value="${port}"/> 
-            <arg value="${host}"/> 
-            <arg value="${username}"/> 
-            <arg value="${password}"/> 
-            <arg value="${tests}"/> 
-         </java> 
-    </target> 
+    <?xml version="1.0" encoding="UTF-8"?>
+    
+    <project basedir="." default="compile">
+    
+    <property name="port" value="8080" />
+    <property name="host" value="localhost" />
+    <property name="username" value="administrator" />
+    <property name="password" value="password" />
+    <property name="tests" value="all" />
+    
+    <target name="clean" >
+           <delete dir="classes" />
+    </target>
+    
+    <target name="wsdl" depends="clean">
+           <mkdir dir="classes"/>
+           <exec executable="wsimport" failifexecutionfails="false" failonerror="true" resultproperty="foundWSIMPORT">
+               <arg line="-keep -d classes https://${host}:${port}/soap/services/EncryptionService?wsdl&lc_version=9.0.1"/>
+           </exec>
+           <fail unless="foundWSIMPORT">
+              !!! Failed to execute JDK's wsimport tool. Make sure that JDK 1.6 (or later) is on your PATH !!!
+           </fail>
+    </target>
+    
+    <target name="compile" depends="clean, wsdl" >
+         <javac destdir="./classes" fork="true" debug="true">
+            <src path="./src"/>
+         </javac>
+    </target>
+    
+    <target name="run">
+         <java classname="Client" fork="yes" failonerror="true" maxmemory="200M">
+            <classpath>
+              <pathelement location="./classes"/>
+            </classpath>
+            <arg value="${port}"/>
+            <arg value="${host}"/>
+            <arg value="${username}"/>
+            <arg value="${password}"/>
+            <arg value="${tests}"/>
+         </java>
+    </target>
     </project>
    ```
 
@@ -440,8 +440,8 @@ You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These 
 
     * Create a new Java project that is used to package the proxy JAVA files into a JAR file.
     * Create a source folder in the project.
-    * Create a `com.adobe.idp.services` package in the Source folder. 
-    * Select the `com.adobe.idp.services` package and then import the JAVA files from the adobe/idp/services folder into the package. 
+    * Create a `com.adobe.idp.services` package in the Source folder.
+    * Select the `com.adobe.idp.services` package and then import the JAVA files from the adobe/idp/services folder into the package.
     * If necessary, create an `org/apache/xml/xmlsoap` package in the Source folder.
     * Select the source folder and then import the JAVA files from the org/apache/xml/xmlsoap folder.
     * Set the Java compiler’s compliance level to 5.0 or greater.
@@ -478,34 +478,34 @@ You can generate Axis Java library files by performing the following steps:
     * Add the bin directory to your class path.
     * Set the `ANT_HOME` environment variable to the directory where you installed Ant.
 
-1. Install Apache Axis 1.4 on the client computer. It is available at [https://ws.apache.org/axis/]( https://ws.apache.org/axis/.md). 
+1. Install Apache Axis 1.4 on the client computer. It is available at [https://ws.apache.org/axis/]( https://ws.apache.org/axis/.md).
 1. Set up the class path to use the Axis JAR files in your web service client, as described in the Axis installation instructions at [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Use the Apache WSDL2Java tool in Axis to generate Java proxy classes. Create an Ant build script to accomplish this task. The following script is a sample Ant build script named build.xml:
 
    ```as3
-    <?xml version="1.0"?> 
-    <project name="axis-wsdl2java"> 
-     
-    <path id="axis.classpath"> 
-    <fileset dir="C:\axis-1_4\lib" > 
-        <include name="**/*.jar" /> 
-    </fileset> 
-    </path> 
-     
-    <taskdef resource="axis-tasks.properties" classpathref="axis.classpath" /> 
-     
-    <target name="encryption-wsdl2java-client" description="task"> 
-    <axis-wsdl2java 
-        output="C:\JavaFiles" 
-        testcase="false" 
-        serverside="false" 
-        verbose="true" 
-        username="administrator" 
-        password="password" 
-        url="http://localhost:8080/soap/services/EncryptionService?wsdl&lc_version=9.0.1" > 
-    </axis-wsdl2java> 
-    </target> 
-     
+    <?xml version="1.0"?>
+    <project name="axis-wsdl2java">
+    
+    <path id="axis.classpath">
+    <fileset dir="C:\axis-1_4\lib" >
+        <include name="**/*.jar" />
+    </fileset>
+    </path>
+    
+    <taskdef resource="axis-tasks.properties" classpathref="axis.classpath" />
+    
+    <target name="encryption-wsdl2java-client" description="task">
+    <axis-wsdl2java
+        output="C:\JavaFiles"
+        testcase="false"
+        serverside="false"
+        verbose="true"
+        username="administrator"
+        password="password"
+        url="http://localhost:8080/soap/services/EncryptionService?wsdl&lc_version=9.0.1" >
+    </axis-wsdl2java>
+    </target>
+    
     </project>
    ```
 
@@ -579,7 +579,7 @@ You can invoke a AEM Forms service using Base64 encoding. Base64 encoding encode
 
 When this process is invoked, it performs the following actions:
 
-1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`. 
+1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`.
 1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The password encrypted PDF document is returned in a process variable named `outDoc`.
 
 ### Creating a .NET client assembly that uses Base64 encoding {#creating-a-net-client-assembly-that-uses-base64-encoding}
@@ -648,16 +648,16 @@ Place your newly created .NET client assembly on the computer where you are deve
 
 You can invoke the `MyApplication/EncryptDocument` service (which was built in Workbench) using a .NET client assembly that uses Base64 encoding. To invoke the `MyApplication/EncryptDocument` service, perform the following steps:
 
-1. Create a Microsoft .NET client assembly that consumes the `MyApplication/EncryptDocument` service WSDL. 
+1. Create a Microsoft .NET client assembly that consumes the `MyApplication/EncryptDocument` service WSDL.
 1. Create a client Microsoft .NET project. Reference the Microsoft .NET client assembly in the client project. Also reference `System.Web.Services`.
-1. Using the Microsoft .NET client assembly, create a `MyApplication_EncryptDocumentService` object by invoking its default constructor. 
+1. Using the Microsoft .NET client assembly, create a `MyApplication_EncryptDocumentService` object by invoking its default constructor.
 1. Set the `MyApplication_EncryptDocumentService` object’s `Credentials` property with a `System.Net.NetworkCredential` object. Within the `System.Net.NetworkCredential` constructor, specify a AEM forms user name and the corresponding password. Set authentication values to enable your .NET client application to successfully exchange SOAP messages with AEM Forms.
 1. Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document pass to the `MyApplication/EncryptDocument` process.
 1. Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the PDF document and the mode in which to open the file.
 1. Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
 1. Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
 1. Populate the `BLOB` object by assigning its `binaryData` property with the contents of the byte array.
-1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplication_EncryptDocumentService` object’s `invoke` method and passing the `BLOB` object that contains the PDF document. This process returns an encrypted PDF document within a `BLOB` object. 
+1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplication_EncryptDocumentService` object’s `invoke` method and passing the `BLOB` object that contains the PDF document. This process returns an encrypted PDF document within a `BLOB` object.
 1. Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the password-encrypted document.
 1. Create a byte array that stores the data content of the `BLOB` object returned by the `MyApplicationEncryptDocumentService` object’s `invoke` method. Populate the byte array by getting the value of the `BLOB` object’s `binaryData` data member.
 1. Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
@@ -675,42 +675,42 @@ You can invoke an AEM Forms service using Java proxy classes and Base64. To invo
    >
    >Replace `hiro-xp`* with the IP address of the J2EE application servier hosting AEM Forms. *
 
-1. Package the Java proxy classes created using using JAX-WS into a JAR file. 
+1. Package the Java proxy classes created using using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
 
    &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    into your Java client project’s class path.
 
-1. Create a `MyApplicationEncryptDocumentService` object by using its constructor. 
+1. Create a `MyApplicationEncryptDocumentService` object by using its constructor.
 1. Create a `MyApplicationEncryptDocument` object by invoking the `MyApplicationEncryptDocumentService` object’s `getEncryptDocument` method.
 1. Set the connection values required to invoke AEM Forms by assigning values to the following data members:
 
     * Assign the WSDL endpoint and the encoding type to the `javax.xml.ws.BindingProvider` object’s `ENDPOINT_ADDRESS_PROPERTY` field. To invoke the `MyApplication/EncryptDocument` service using Base64 encoding, specify the following URL value:
 
       `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
-  
+
     * Assign the AEM forms user to the `javax.xml.ws.BindingProvider` object’s `USERNAME_PROPERTY` field.
     * Assign the corresponding password value to the `javax.xml.ws.BindingProvider` object’s `PASSWORD_PROPERTY` field.
 
    The following code example shows this application logic:
 
    ```as3
-    //Set connection values required to invoke AEM Forms 
-    String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64"; 
-    String username = "administrator"; 
-    String password = "password"; 
-    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url); 
-    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.USERNAME_PROPERTY, username); 
+    //Set connection values required to invoke AEM Forms
+    String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64";
+    String username = "administrator";
+    String password = "password";
+    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url);
+    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.USERNAME_PROPERTY, username);
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. Retrieve the PDF document to send to the `MyApplication/EncryptDocument` process by creating a `java.io.FileInputStream` object by using its constructor. Pass a string value that specifies the location of the PDF document. 
+1. Retrieve the PDF document to send to the `MyApplication/EncryptDocument` process by creating a `java.io.FileInputStream` object by using its constructor. Pass a string value that specifies the location of the PDF document.
 1. Create a byte array and populate it with the contents of the `java.io.FileInputStream` object.
-1. Create a `BLOB` object by using its constructor. 
+1. Create a `BLOB` object by using its constructor.
 1. Populate the `BLOB` object by invoking its `setBinaryData` method and passing the byte array. The `BLOB` object’s `setBinaryData` is the method to call when using Base64 encoding. See Supplying BLOB objects in service requests.
-1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplicationEncryptDocument` object’s `invoke` method. Pass the `BLOB` object that contains the PDF document. The invoke method returns a `BLOB` object that contains the encrypted PDF document. 
-1. Create a byte array that contains the encrypted PDF document by invoking the `BLOB` object’s `getBinaryData` method. 
+1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplicationEncryptDocument` object’s `invoke` method. Pass the `BLOB` object that contains the PDF document. The invoke method returns a `BLOB` object that contains the encrypted PDF document.
+1. Create a byte array that contains the encrypted PDF document by invoking the `BLOB` object’s `getBinaryData` method.
 1. Save the encrypted PDF document as a PDF file. Write the byte array to a file.
 
 **See also**
@@ -731,7 +731,7 @@ The discussion here is about using MTOM to invoke the following AEM Forms short-
 
 When this process is invoked, it performs the following actions:
 
-1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`. 
+1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`.
 1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The password encrypted PDF document is returned in a process variable named `outDoc`.
 
 >[!NOTE]
@@ -760,7 +760,7 @@ The `lc_version` option ensures that AEM Forms functionality, such as MTOM, is a
 
 After you create a Service Reference, data types associated with the AEM Forms service are available for use within your .NET project. To create a .NET project that invokes an AEM Forms service, perform the following steps:
 
-1. Create a .NET project using Microsoft Visual Studio 2008. 
+1. Create a .NET project using Microsoft Visual Studio 2008.
 1. In the **Project** menu, select **Add Service Reference**.
 1. In the **Address** dialog box, specify the WSDL to the AEM Forms service. For example,
 
@@ -775,7 +775,7 @@ After you create a Service Reference, data types associated with the AEM Forms s
 Consider the `MyApplication/EncryptDocument` process that accepts an unsecured PDF document and returns a password-encrypted PDF document. To invoke the `MyApplication/EncryptDocument` process (which was built in Workbench) by using MTOM, perform the following steps:
 
 1. Create a Microsoft .NET project.
-1. Create a `MyApplication_EncryptDocumentClient` object by using its default constructor. 
+1. Create a `MyApplication_EncryptDocumentClient` object by using its default constructor.
 1. Create a `MyApplication_EncryptDocumentClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service and the encoding type:
 
    ```as3
@@ -788,25 +788,25 @@ Consider the `MyApplication/EncryptDocument` process that accepts an unsecured P
    >
    >Replace `hiro-xp`* with the IP address of the J2EE application servier hosting AEM Forms. *
 
-1. Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptDocumentClient.Endpoint.Binding` data member. Cast the return value to `BasicHttpBinding`. 
-1. Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` data member to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+1. Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptDocumentClient.Endpoint.Binding` data member. Cast the return value to `BasicHttpBinding`.
+1. Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` data member to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
 1. Enable basic HTTP authentication by performing the following tasks:
 
-    * Assign the AEM forms user name to the data member `MyApplication_EncryptDocumentClient.ClientCredentials.UserName.UserName`. 
+    * Assign the AEM forms user name to the data member `MyApplication_EncryptDocumentClient.ClientCredentials.UserName.UserName`.
     * Assign the corresponding password value to the data member `MyApplication_EncryptDocumentClient.ClientCredentials.UserName.Password`.
-    * Assign the constant value `HttpClientCredentialType.Basic` to the data member `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+    * Assign the constant value `HttpClientCredentialType.Basic` to the data member `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
     * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the data member `BasicHttpBindingSecurity.Security.Mode`.
 
    The following code example shows these tasks.
 
    ```as3
-    //Enable BASIC HTTP authentication 
-    encryptProcess.ClientCredentials.UserName.UserName = "administrator"; 
-    encryptProcess.ClientCredentials.UserName.Password = "password"; 
-    b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic; 
-    b.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly; 
-    b.MaxReceivedMessageSize = 4000000; 
-    b.MaxBufferSize = 4000000; 
+    //Enable BASIC HTTP authentication
+    encryptProcess.ClientCredentials.UserName.UserName = "administrator";
+    encryptProcess.ClientCredentials.UserName.Password = "password";
+    b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic;
+    b.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
+    b.MaxReceivedMessageSize = 4000000;
+    b.MaxBufferSize = 4000000;
     b.ReaderQuotas.MaxArrayLength = 4000000;
    ```
 
@@ -845,7 +845,7 @@ The discussion here is about invoking the following Forms short-lived process na
 
 When this process is invoked, it performs the following actions:
 
-1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`. 
+1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`.
 1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The password encrypted PDF document is returned in a process variable named `outDoc`.
 
 >[!NOTE]
@@ -870,44 +870,44 @@ To invoke the `MyApplication/EncryptDocument` process by using Java proxy files 
    >
    >Replace `hiro-xp`* with the IP address of the J2EE application server hosting AEM Forms. *
 
-1. Package the Java proxy classes created using using JAX-WS into a JAR file. 
+1. Package the Java proxy classes created using using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
 
    &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    into your Java client project’s class path.
 
-1. Create a `MyApplicationEncryptDocumentService` object by using its constructor. 
+1. Create a `MyApplicationEncryptDocumentService` object by using its constructor.
 1. Create a `MyApplicationEncryptDocument` object by invoking the `MyApplicationEncryptDocumentService` object’s `getEncryptDocument` method.
 1. Set the connection values required to invoke AEM Forms by assigning values to the following data members:
 
     * Assign the WSDL endpoint and the encoding type to the `javax.xml.ws.BindingProvider` object’s `ENDPOINT_ADDRESS_PROPERTY` field. To invoke the `MyApplication/EncryptDocument` service using SwaRef encoding, specify the following URL value:
-  
+
       ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
-  
+
     * Assign the AEM forms user to the `javax.xml.ws.BindingProvider` object’s `USERNAME_PROPERTY` field.
     * Assign the corresponding password value to the `javax.xml.ws.BindingProvider` object’s `PASSWORD_PROPERTY` field.
 
    The following code example shows this application logic:
 
    ```as3
-    //Set connection values required to invoke AEM Forms 
-    String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref"; 
-    String username = "administrator"; 
-    String password = "password"; 
-    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url); 
-    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.USERNAME_PROPERTY, username); 
+    //Set connection values required to invoke AEM Forms
+    String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref";
+    String username = "administrator";
+    String password = "password";
+    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url);
+    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.USERNAME_PROPERTY, username);
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. Retrieve the PDF document to send to the `MyApplication/EncryptDocument` process by creating a `java.io.File` object by using its constructor. Pass a string value that specifies the location of the PDF document. 
+1. Retrieve the PDF document to send to the `MyApplication/EncryptDocument` process by creating a `java.io.File` object by using its constructor. Pass a string value that specifies the location of the PDF document.
 1. Create a `javax.activation.DataSource` object by using the `FileDataSource` constructor. Pass the `java.io.File` object.
 1. Create a `javax.activation.DataHandler` object by using its constructor and passing the `javax.activation.DataSource` object.
-1. Create a `BLOB` object by using its constructor. 
-1. Populate the `BLOB` object by invoking its `setSwaRef` method and passing the `javax.activation.DataHandler` object. 
+1. Create a `BLOB` object by using its constructor.
+1. Populate the `BLOB` object by invoking its `setSwaRef` method and passing the `javax.activation.DataHandler` object.
 1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplicationEncryptDocument` object’s `invoke` method and passing the `BLOB` object that contains the PDF document. The invoke method returns a `BLOB` object that contains an encrypted PDF document.
 1. Populate a `javax.activation.DataHandler` object by invoking the `BLOB` object’s `getSwaRef` method.
-1. Convert the `javax.activation.DataHandler` object to a `java.io.InputSteam` instance by invoking the `javax.activation.DataHandler` object’s `getInputStream` method. 
+1. Convert the `javax.activation.DataHandler` object to a `java.io.InputSteam` instance by invoking the `javax.activation.DataHandler` object’s `getInputStream` method.
 1. Write the `java.io.InputSteam` instance to a PDF file that represents the encrypted PDF document.
 
 >[!NOTE]
@@ -930,7 +930,7 @@ You can invoke AEM Forms services using web services and passing BLOB data over 
 
 When this process is invoked, it performs the following actions:
 
-1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`. 
+1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`.
 1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The password encrypted PDF document is returned in a process variable named `outDoc`.
 
 >[!NOTE]
@@ -964,16 +964,16 @@ Place your new .NET client assembly on the computer where you are developing you
 
 You can invoke the `MyApplication/EncryptDocument` service (which was built in Workbench) using a .NET client assembly that uses data over HTTP. To invoke the `MyApplication/EncryptDocument` service, perform the following steps:
 
-1. Create the .NET client assembly. 
+1. Create the .NET client assembly.
 1. Reference the Microsoft .NET client assembly. Create a client Microsoft .NET project. Reference the Microsoft .NET client assembly in the client project. Also reference `System.Web.Services`.
-1. Using the Microsoft .NET client assembly, create a `MyApplication_EncryptDocumentService` object by invoking its default constructor. 
+1. Using the Microsoft .NET client assembly, create a `MyApplication_EncryptDocumentService` object by invoking its default constructor.
 1. Set the `MyApplication_EncryptDocumentService` object’s `Credentials` property with a `System.Net.NetworkCredential` object. Within the `System.Net.NetworkCredential` constructor, specify a AEM forms user name and the corresponding password. Set authentication values to enable your .NET client application to successfully exchange SOAP messages with AEM Forms.
 1. Create a `BLOB` object by using its constructor. The `BLOB` object is used to pass data to the `MyApplication/EncryptDocument` process.
 1. Assign a string value to the `BLOB` object’s `remoteURL` data member that specifies the URI location of a PDF document to pass to the `MyApplication/EncryptDocument`service.
-1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplication_EncryptDocumentService` object’s `invoke` method and passing the `BLOB` object. This process returns an encrypted PDF document within a `BLOB` object. 
-1. Create a `System.UriBuilder` object by using its constructor and passing the value of the returned `BLOB` object’s `remoteURL` data member. 
+1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplication_EncryptDocumentService` object’s `invoke` method and passing the `BLOB` object. This process returns an encrypted PDF document within a `BLOB` object.
+1. Create a `System.UriBuilder` object by using its constructor and passing the value of the returned `BLOB` object’s `remoteURL` data member.
 1. Convert the `System.UriBuilder` object to a `System.IO.Stream` object. (The C# Quick Start that follows this list illustrates how to perform this task.)
-1. Create a byte array and populate it with the data located in the `System.IO.Stream` object. 
+1. Create a byte array and populate it with the data located in the `System.IO.Stream` object.
 1. Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
 1. Write the byte array contents to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
 
@@ -993,41 +993,41 @@ You can invoke an AEM Forms service using Java proxy classes and BLOB data over 
    >
    >Replace `hiro-xp`* with the IP address of the J2EE application server hosting AEM Forms. *
 
-1. Package the Java proxy classes created using using JAX-WS into a JAR file. 
+1. Package the Java proxy classes created using using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
 
    &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    into your Java client project’s class path.
 
-1. Create a `MyApplicationEncryptDocumentService` object by using its constructor. 
+1. Create a `MyApplicationEncryptDocumentService` object by using its constructor.
 1. Create a `MyApplicationEncryptDocument` object by invoking the `MyApplicationEncryptDocumentService` object’s `getEncryptDocument` method.
 1. Set the connection values required to invoke AEM Forms by assigning values to the following data members:
 
     * Assign the WSDL endpoint and the encoding type to the `javax.xml.ws.BindingProvider` object’s `ENDPOINT_ADDRESS_PROPERTY` field. To invoke the `MyApplication/EncryptDocument` service using BLOB over HTTP encoding, specify the following URL value:
 
       `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
-  
+
     * Assign the AEM forms user to the `javax.xml.ws.BindingProvider` object’s `USERNAME_PROPERTY` field.
     * Assign the corresponding password value to the `javax.xml.ws.BindingProvider` object’s `PASSWORD_PROPERTY` field.
 
    The following code example shows this application logic:
 
    ```as3
-    //Set connection values required to invoke AEM Forms 
-    String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http"; 
-    String username = "administrator"; 
-    String password = "password"; 
-    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url); 
-    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.USERNAME_PROPERTY, username); 
+    //Set connection values required to invoke AEM Forms
+    String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http";
+    String username = "administrator";
+    String password = "password";
+    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url);
+    ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.USERNAME_PROPERTY, username);
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. Create a `BLOB` object by using its constructor. 
-1. Populate the `BLOB` object by invoking its `setRemoteURL` method. Pass a string value that specifies the URI location of a PDF document to pass to the `MyApplication/EncryptDocument` service. 
-1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplicationEncryptDocument` object’s `invoke` method and passing the `BLOB` object that contains the PDF document. This process returns an encrypted PDF document within a `BLOB` object. 
+1. Create a `BLOB` object by using its constructor.
+1. Populate the `BLOB` object by invoking its `setRemoteURL` method. Pass a string value that specifies the URI location of a PDF document to pass to the `MyApplication/EncryptDocument` service.
+1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplicationEncryptDocument` object’s `invoke` method and passing the `BLOB` object that contains the PDF document. This process returns an encrypted PDF document within a `BLOB` object.
 1. Create a byte array to store the data stream that represents the encrypted PDF document. Invoke the `BLOB` object’s `getRemoteURL` method (use the `BLOB` object returned by the `invoke` method).
-1. Create a `java.io.File` object by using its constructor. This object represents the encrypted PDF document. 
+1. Create a `java.io.File` object by using its constructor. This object represents the encrypted PDF document.
 1. Create a `java.io.FileOutputStream` object by using its constructor and passing the `java.io.File` object.
 1. Invoke the `java.io.FileOutputStream` object’s `write` method. Pass the byte array that contains the data stream that represents the encrypted PDF document.
 
@@ -1037,7 +1037,7 @@ You can invoke AEM Forms services using SOAP with attachments. AEM Forms support
 
 When this process is invoked, it performs the following actions:
 
-1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`. 
+1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`.
 1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The password encrypted PDF document is returned in a process variable named `outDoc`.
 
 This process is not based on an existing AEM Forms process. To follow along with the code examples, create a process named `MyApplication/EncryptDocument`**using Workbench. (See [Using Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
@@ -1098,24 +1098,24 @@ After you create a web reference, the following two proxy data types are availab
 
 You can invoke a Forms service using DIME. Consider the `MyApplication/EncryptDocument` process that accepts an unsecured PDF document and returns a password-encrypted PDF document. To invoke the `MyApplication/EncryptDocument` process using DIME, perform the following steps:
 
-1. Create a Microsoft .NET project that enables you to invoke a Forms service using DIME. Ensure that you include Web Services Enhancements 2.0 and create a web reference to the AEM Forms service. 
-1. After setting a web reference to the `MyApplication/EncryptDocument` process, create an `EncryptDocumentServiceWse` object by using its default constructor. 
+1. Create a Microsoft .NET project that enables you to invoke a Forms service using DIME. Ensure that you include Web Services Enhancements 2.0 and create a web reference to the AEM Forms service.
+1. After setting a web reference to the `MyApplication/EncryptDocument` process, create an `EncryptDocumentServiceWse` object by using its default constructor.
 1. Set the `EncryptDocumentServiceWse` object’s `Credentials` data member with a `System.Net.NetworkCredential` value that specifies the AEM forms user name and password value.
 1. Create a `Microsoft.Web.Services2.Dime.DimeAttachment` object by using its constructor and passing the following values:
 
     * A string value that specifies a GUID value. You can obtain a GUID value by invoking the `System.Guid.NewGuid.ToString` method.
     * A string value that specifies the content type. Because this process requires a PDF document, specify `application/pdf`.
-    * A `TypeFormat` enumeration value. Specify `TypeFormat.MediaType`. 
+    * A `TypeFormat` enumeration value. Specify `TypeFormat.MediaType`.
     * A string value that specifies the location of the PDF document to pass to the AEM Forms process.
 
-1. Create a `BLOB` object by using its constructor. 
-1. Add the DIME attachment to the `BLOB` object by assigning the `Microsoft.Web.Services2.Dime.DimeAttachment` object’s `Id` data member value to the `BLOB` object’s `attachmentID` data member. 
+1. Create a `BLOB` object by using its constructor.
+1. Add the DIME attachment to the `BLOB` object by assigning the `Microsoft.Web.Services2.Dime.DimeAttachment` object’s `Id` data member value to the `BLOB` object’s `attachmentID` data member.
 1. Invoke the `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` method and pass the `Microsoft.Web.Services2.Dime.DimeAttachment` object.
-1. Invoke the `MyApplication/EncryptDocument` process by invoking the `EncryptDocumentServiceWse` object’s `invoke` method and passing the `BLOB` object that contains the DIME attachment. This process returns an encrypted PDF document within a `BLOB` object. 
-1. Obtain the attachment identifier value by getting the value of the returned `BLOB` object’s `attachmentID` data member. 
-1. Iterate through the attachments located in `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` and use the attachment identifier value to obtain the encrypted PDF document. 
+1. Invoke the `MyApplication/EncryptDocument` process by invoking the `EncryptDocumentServiceWse` object’s `invoke` method and passing the `BLOB` object that contains the DIME attachment. This process returns an encrypted PDF document within a `BLOB` object.
+1. Obtain the attachment identifier value by getting the value of the returned `BLOB` object’s `attachmentID` data member.
+1. Iterate through the attachments located in `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` and use the attachment identifier value to obtain the encrypted PDF document.
 1. Obtain a `System.IO.Stream` object by getting the value of the `Attachment` object’s `Stream` data member.
-1. Create a byte array and pass that byte array to the `System.IO.Stream` object’s `Read` method. This method populates the byte array with a data stream that represents the encrypted PDF document. 
+1. Create a byte array and pass that byte array to the `System.IO.Stream` object’s `Read` method. This method populates the byte array with a data stream that represents the encrypted PDF document.
 1. Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents a PDF file location. This object represents the encrypted PDF document.
 1. Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
 1. Write the contents of the byte array to the PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
@@ -1129,8 +1129,8 @@ The Apache Axis WSDL2Java tool generates JAVA files that contain methods that ar
 To invoke the `MyApplication/EncryptDocument` service (which was built in Workbench) using Axis-generated library files and DIME, perform the following steps:
 
 1. Create Java proxy classes that consume the `MyApplication/EncryptDocument` service WSDL using Apache Axis. (See [Creating Java proxy classes using Apache Axis](#creating-java-proxy-classes-using-apache-axis).)
-1. Include the Java proxy classes into your class path. 
-1. Create a `MyApplicationEncryptDocumentServiceLocator` object by using its constructor. 
+1. Include the Java proxy classes into your class path.
+1. Create a `MyApplicationEncryptDocumentServiceLocator` object by using its constructor.
 1. Create a `URL` object by using its constructor and passing a string value that specifies the AEM Forms service WSDL definition. Ensure that you specify `?blob=dime` at the end of the SOAP endpoint URL. For example, use
 
    ```as3
@@ -1141,23 +1141,23 @@ To invoke the `MyApplication/EncryptDocument` service (which was built in Workbe
 1. Set the AEM forms user name and password value by invoking the `EncryptDocumentSoapBindingStub` object’s `setUsername` and `setPassword` methods.
 
    ```as3
-    encryptionClientStub.setUsername("administrator"); 
+    encryptionClientStub.setUsername("administrator");
     encryptionClientStub.setPassword("password");
    ```
 
 1. Retrieve the PDF document to send to the `MyApplication/EncryptDocument` service by creating a `java.io.File` object. Pass a string value that specifies the PDF document location.
-1. Create a `javax.activation.DataHandler` object by using its constructor and passing a `javax.activation.FileDataSource` object. The `javax.activation.FileDataSource` object can be created by using its constructor and passing the `java.io.File` object that represents the PDF document. 
+1. Create a `javax.activation.DataHandler` object by using its constructor and passing a `javax.activation.FileDataSource` object. The `javax.activation.FileDataSource` object can be created by using its constructor and passing the `java.io.File` object that represents the PDF document.
 1. Create an `org.apache.axis.attachments.AttachmentPart` object by using its constructor and passing the `javax.activation.DataHandler` object.
 1. Attach the attachment by invoking the `EncryptDocumentSoapBindingStub` object’s `addAttachment` method and passing the `org.apache.axis.attachments.AttachmentPart` object.
-1. Create a `BLOB` object by using its constructor. Populate the `BLOB` object with the attachment identifier value by invoking the `BLOB` object’s `setAttachmentID` method and passing the attachment identifier value. This value can be obtained by invoking the `org.apache.axis.attachments.AttachmentPart` object’s `getContentId` method. 
-1. Invoke the `MyApplication/EncryptDocument` process by invoking the `EncryptDocumentSoapBindingStub` object’s `invoke` method. Pass the `BLOB` object that contains the DIME attachment. This process returns an encrypted PDF document within a `BLOB` object. 
-1. Obtain the attachment identifier value by invoking the returned `BLOB` object’s `getAttachmentID` method. This method returns a string value that represents the identifier value of the returned attachment. 
-1. Retrieve the attachments by invoking the `EncryptDocumentSoapBindingStub` object’s `getAttachments` method. This method returns an array of `Objects` that represent the attachments. 
-1. Iterate through the attachments (the `Object` array) and use the attachment identifier value to obtain the encrypted PDF document. Each element is an `org.apache.axis.attachments.AttachmentPart` object. 
-1. Obtain the `javax.activation.DataHandler` object associated with the attachment by invoking the `org.apache.axis.attachments.AttachmentPart` object’s `getDataHandler` method. 
-1. Obtain a `java.io.FileStream` object by invoking the `javax.activation.DataHandler` object’s `getInputStream` method. 
-1. Create a byte array and pass that byte array to the `java.io.FileStream` object’s `read` method. This method populates the byte array with a data stream that represents the encrypted PDF document. 
-1. Create a `java.io.File` object by using its constructor. This object represents the encrypted PDF document. 
+1. Create a `BLOB` object by using its constructor. Populate the `BLOB` object with the attachment identifier value by invoking the `BLOB` object’s `setAttachmentID` method and passing the attachment identifier value. This value can be obtained by invoking the `org.apache.axis.attachments.AttachmentPart` object’s `getContentId` method.
+1. Invoke the `MyApplication/EncryptDocument` process by invoking the `EncryptDocumentSoapBindingStub` object’s `invoke` method. Pass the `BLOB` object that contains the DIME attachment. This process returns an encrypted PDF document within a `BLOB` object.
+1. Obtain the attachment identifier value by invoking the returned `BLOB` object’s `getAttachmentID` method. This method returns a string value that represents the identifier value of the returned attachment.
+1. Retrieve the attachments by invoking the `EncryptDocumentSoapBindingStub` object’s `getAttachments` method. This method returns an array of `Objects` that represent the attachments.
+1. Iterate through the attachments (the `Object` array) and use the attachment identifier value to obtain the encrypted PDF document. Each element is an `org.apache.axis.attachments.AttachmentPart` object.
+1. Obtain the `javax.activation.DataHandler` object associated with the attachment by invoking the `org.apache.axis.attachments.AttachmentPart` object’s `getDataHandler` method.
+1. Obtain a `java.io.FileStream` object by invoking the `javax.activation.DataHandler` object’s `getInputStream` method.
+1. Create a byte array and pass that byte array to the `java.io.FileStream` object’s `read` method. This method populates the byte array with a data stream that represents the encrypted PDF document.
+1. Create a `java.io.File` object by using its constructor. This object represents the encrypted PDF document.
 1. Create a `java.io.FileOutputStream` object by using its constructor and passing the `java.io.File` object.
 1. Invoke the `java.io.FileOutputStream` object’s `write` method and pass the byte array that contains the data stream that represents the encrypted PDF document.
 
@@ -1183,42 +1183,42 @@ AEM Forms does not support standard certificate-based authentication but it does
 The identity of AEM forms users can be represented through a SAML assertion signed using a secret key. The following XML code shows an example of a SAML assertion.
 
 ```as3
- <Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion" 
-     xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" 
-     xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" 
-     AssertionID="fd4bd0c87302780e0d9bbfa8726d5bc0" IssueInstant="2008-04-17T13:47:00.720Z" Issuer="LiveCycle" 
-     MajorVersion="1" MinorVersion="1"> 
-     <Conditions NotBefore="2008-04-17T13:47:00.720Z" NotOnOrAfter="2008-04-17T15:47:00.720Z"> 
-     </Conditions> 
-     <AuthenticationStatement 
-         AuthenticationInstant="2008-04-17T13:47:00.720Z" 
-         AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified"> 
-         <Subject> 
-             <NameIdentifier NameQualifier="DefaultDom">administrator</NameIdentifier> 
-             <SubjectConfirmation> 
-                 <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod> 
-             </SubjectConfirmation> 
-         </Subject> 
-     </AuthenticationStatement> 
-     <ds:Signature > 
-         <ds:SignedInfo> 
-             <ds:CanonicalizationMethod Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"></ds:CanonicalizationMethod> 
-             <ds:SignatureMethod    Algorithm="https://www.w3.org/2000/09/xmldsig#hmac-sha1"></ds:SignatureMethod> 
-             <ds:Reference URI="#fd4bd0c87302780e0d9bbfa8726d5bc0"> 
-                 <ds:Transforms> 
-                     <ds:Transform Algorithm="https://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform> 
-                     <ds:Transform Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"> 
-                         <ec:InclusiveNamespaces     
-                             PrefixList="code ds kind rw saml samlp typens #default"> 
-                         </ec:InclusiveNamespaces> 
-                     </ds:Transform> 
-                 </ds:Transforms> 
-                 <ds:DigestMethod Algorithm="https://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod> 
-                 <ds:DigestValue>hVrtqjWr+VzaVUIpQx0YI9lIjaY=</ds:DigestValue> 
-             </ds:Reference> 
-         </ds:SignedInfo> 
-         <ds:SignatureValue>UMbBb+cUcPtcWDCIhXes4n4FxfU=</ds:SignatureValue> 
-     </ds:Signature> 
+ <Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion"
+     xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion"
+     xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol"
+     AssertionID="fd4bd0c87302780e0d9bbfa8726d5bc0" IssueInstant="2008-04-17T13:47:00.720Z" Issuer="LiveCycle"
+     MajorVersion="1" MinorVersion="1">
+     <Conditions NotBefore="2008-04-17T13:47:00.720Z" NotOnOrAfter="2008-04-17T15:47:00.720Z">
+     </Conditions>
+     <AuthenticationStatement
+         AuthenticationInstant="2008-04-17T13:47:00.720Z"
+         AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:unspecified">
+         <Subject>
+             <NameIdentifier NameQualifier="DefaultDom">administrator</NameIdentifier>
+             <SubjectConfirmation>
+                 <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:sender-vouches</ConfirmationMethod>
+             </SubjectConfirmation>
+         </Subject>
+     </AuthenticationStatement>
+     <ds:Signature >
+         <ds:SignedInfo>
+             <ds:CanonicalizationMethod Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#"></ds:CanonicalizationMethod>
+             <ds:SignatureMethod    Algorithm="https://www.w3.org/2000/09/xmldsig#hmac-sha1"></ds:SignatureMethod>
+             <ds:Reference URI="#fd4bd0c87302780e0d9bbfa8726d5bc0">
+                 <ds:Transforms>
+                     <ds:Transform Algorithm="https://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+                     <ds:Transform Algorithm="https://www.w3.org/2001/10/xml-exc-c14n#">
+                         <ec:InclusiveNamespaces
+                             PrefixList="code ds kind rw saml samlp typens #default">
+                         </ec:InclusiveNamespaces>
+                     </ds:Transform>
+                 </ds:Transforms>
+                 <ds:DigestMethod Algorithm="https://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+                 <ds:DigestValue>hVrtqjWr+VzaVUIpQx0YI9lIjaY=</ds:DigestValue>
+             </ds:Reference>
+         </ds:SignedInfo>
+         <ds:SignatureValue>UMbBb+cUcPtcWDCIhXes4n4FxfU=</ds:SignatureValue>
+     </ds:Signature>
  </Assertion>
 ```
 
@@ -1251,26 +1251,26 @@ When using AXIS that uses SAML-based authentication, register the request and re
 The following Java class, named `AssertionHandler.java`, shows an example of a Java class that extends `org.apache.axis.handlers.BasicHandler`.
 
 ```as3
- public class AssertionHandler extends BasicHandler { 
-        public void invoke(MessageContext ctx) throws AxisFault { 
-            String assertion = (String) ctx.getProperty(LC_ASSERTION); 
-  
-            //no assertion hence nothing to insert 
-            if(assertion == null) return;  
-      
-            try { 
-                MessageElement samlElement = new MessageElement(convertToXML(assertion)); 
-                SOAPHeader header = (SOAPHeader) ctx.getRequestMessage().getSOAPHeader(); 
-                //Create the wsse:Security element which would contain the SAML element 
-                SOAPElement wsseHeader = header.addChildElement("Security", "wsse", WSSE_NS); 
-                wsseHeader.appendChild(samlElement); 
-                //remove the actor attribute as in LC we do not specify any actor. This would not remove the actor attribute though 
-                //it would only remove it from the soapenv namespace 
-                wsseHeader.getAttributes().removeNamedItem("actor"); 
-            } catch (SOAPException e) { 
-                throw new AxisFault("Error occured while adding the assertion to the SOAP Header",e); 
-            } 
-        } 
+ public class AssertionHandler extends BasicHandler {
+        public void invoke(MessageContext ctx) throws AxisFault {
+            String assertion = (String) ctx.getProperty(LC_ASSERTION);
+ 
+            //no assertion hence nothing to insert
+            if(assertion == null) return;
+ 
+            try {
+                MessageElement samlElement = new MessageElement(convertToXML(assertion));
+                SOAPHeader header = (SOAPHeader) ctx.getRequestMessage().getSOAPHeader();
+                //Create the wsse:Security element which would contain the SAML element
+                SOAPElement wsseHeader = header.addChildElement("Security", "wsse", WSSE_NS);
+                wsseHeader.appendChild(samlElement);
+                //remove the actor attribute as in LC we do not specify any actor. This would not remove the actor attribute though
+                //it would only remove it from the soapenv namespace
+                wsseHeader.getAttributes().removeNamedItem("actor");
+            } catch (SOAPException e) {
+                throw new AxisFault("Error occured while adding the assertion to the SOAP Header",e);
+            }
+        }
  }
 ```
 
@@ -1279,14 +1279,14 @@ The following Java class, named `AssertionHandler.java`, shows an example of a J
 To register a handler with Axis, create a client-config.wsdd file. By default, Axis looks for a file with this name. The following XML code is an example of a client-config.wsdd file. See Axis documentation for more information.
 
 ```as3
- <deployment xmlns="https://xml.apache.org/axis/wsdd/" xmlns:java="https://xml.apache.org/axis/wsdd/providers/java"> 
-     <transport name="http" pivot="java:org.apache.axis.transport.http.HTTPSender"/> 
-      <globalConfiguration > 
-       <requestFlow > 
-        <handler type="java:com.adobe.idp.um.example.AssertionHandler" /> 
-       </requestFlow > 
-      </globalConfiguration > 
- </deployment> 
+ <deployment xmlns="https://xml.apache.org/axis/wsdd/" xmlns:java="https://xml.apache.org/axis/wsdd/providers/java">
+     <transport name="http" pivot="java:org.apache.axis.transport.http.HTTPSender"/>
+      <globalConfiguration >
+       <requestFlow >
+        <handler type="java:com.adobe.idp.um.example.AssertionHandler" />
+       </requestFlow >
+      </globalConfiguration >
+ </deployment>
  
 ```
 
@@ -1295,40 +1295,40 @@ To register a handler with Axis, create a client-config.wsdd file. By default, A
 The following code example invokes an AEM Forms service using SAML-based authentication.
 
 ```as3
- public class ImpersonationExample { 
-        . . . 
-        public void  authenticateOnBehalf(String superUsername,String password,  
-                String canonicalName,String domainName) throws UMException, RemoteException{ 
-            ((org.apache.axis.client.Stub) authenticationManager).setUsername(superUsername); 
-            ((org.apache.axis.client.Stub) authenticationManager).setPassword(password); 
-      
-            //Step 1 - Invoke the Auth manager api to get an assertion for the user to be impersonated 
-            AuthResult ar = authenticationManager.getAuthResultOnBehalfOfUser(canonicalName, domainName, null); 
-            String assertion = ar.getAssertion(); 
-            //Step 2 - Setting the assertion here to be picked later by the AssertionHandler. Note that stubs are not threadSafe 
-            //hence should not be reused. For this simple example we have made them instance variable but care should be taken 
-            //regarding the thread safety 
-            ((javax.xml.rpc.Stub) authorizationManager)._setProperty(AssertionHandler.LC_ASSERTION, assertion); 
-        } 
-      
-        public Role findRole(String roleId) throws UMException, RemoteException{ 
-            //This api would be invoked under bob's user rights 
-            return authorizationManager.findRole(roleId); 
-        } 
-      
-        public static void main(String[] args) throws Exception { 
-            ImpersonationExample ie = new ImpersonationExample("http://localhost:5555"); 
-            //Get the SAML assertion for the user to impersonate and store it in stub 
-            ie.authenticateOnBehalf( 
-                    "administrator", //The Super user which has the required impersonation permission 
-                    "password", // Password of the super user as referred above 
-                    "bob", //Cannonical name of the user to impersonate 
-                    "testdomain" //Domain of the user to impersonate 
-                    ); 
-      
-            Role r = ie.findRole("BASIC_ROLE_ADMINISTRATOR"); 
-            System.out.println("Role "+r.getName()); 
-        } 
+ public class ImpersonationExample {
+        . . .
+        public void  authenticateOnBehalf(String superUsername,String password,
+                String canonicalName,String domainName) throws UMException, RemoteException{
+            ((org.apache.axis.client.Stub) authenticationManager).setUsername(superUsername);
+            ((org.apache.axis.client.Stub) authenticationManager).setPassword(password);
+ 
+            //Step 1 - Invoke the Auth manager api to get an assertion for the user to be impersonated
+            AuthResult ar = authenticationManager.getAuthResultOnBehalfOfUser(canonicalName, domainName, null);
+            String assertion = ar.getAssertion();
+            //Step 2 - Setting the assertion here to be picked later by the AssertionHandler. Note that stubs are not threadSafe
+            //hence should not be reused. For this simple example we have made them instance variable but care should be taken
+            //regarding the thread safety
+            ((javax.xml.rpc.Stub) authorizationManager)._setProperty(AssertionHandler.LC_ASSERTION, assertion);
+        }
+ 
+        public Role findRole(String roleId) throws UMException, RemoteException{
+            //This api would be invoked under bob's user rights
+            return authorizationManager.findRole(roleId);
+        }
+ 
+        public static void main(String[] args) throws Exception {
+            ImpersonationExample ie = new ImpersonationExample("http://localhost:5555");
+            //Get the SAML assertion for the user to impersonate and store it in stub
+            ie.authenticateOnBehalf(
+                    "administrator", //The Super user which has the required impersonation permission
+                    "password", // Password of the super user as referred above
+                    "bob", //Cannonical name of the user to impersonate
+                    "testdomain" //Domain of the user to impersonate
+                    );
+ 
+            Role r = ie.findRole("BASIC_ROLE_ADMINISTRATOR");
+            System.out.println("Role "+r.getName());
+        }
  }
 ```
 
@@ -1347,24 +1347,24 @@ The WSE architecture uses Policies, Assertions, and SecurityToken data types. Br
 The following C# code example creates filter and assertion classes. This code example creates a SamlAssertionOutputFilter. This filter is invoked by the WSE framework before the SOAP request is sent to AEM Forms.
 
 ```as3
- class LCSamlPolicyAssertion : Microsoft.Web.ServicES4.Design.PolicyAssertion 
- { 
-        public override Microsoft.Web.ServicES4.SoapFilter CreateClientOutputFilter(FilterCreationContext context) 
-        { 
-           return new SamlAssertionOutputFilter(); 
-        } 
-        . . . 
- } 
-  
-      
- class SamlAssertionOutputFilter : SendSecurityFilter 
- { 
-        public override void SecureMessage(SoapEnvelope envelope, Security security) 
-        { 
-           // Get the SamlToken from the SessionState 
-           SamlToken samlToken = envelope.Context.Credentials.UltimateReceiver.GetClientToken<SamlToken>(); 
-           security.Tokens.Add(samlToken); 
-        } 
+ class LCSamlPolicyAssertion : Microsoft.Web.ServicES4.Design.PolicyAssertion
+ {
+        public override Microsoft.Web.ServicES4.SoapFilter CreateClientOutputFilter(FilterCreationContext context)
+        {
+           return new SamlAssertionOutputFilter();
+        }
+        . . .
+ }
+ 
+ 
+ class SamlAssertionOutputFilter : SendSecurityFilter
+ {
+        public override void SecureMessage(SoapEnvelope envelope, Security security)
+        {
+           // Get the SamlToken from the SessionState
+           SamlToken samlToken = envelope.Context.Credentials.UltimateReceiver.GetClientToken<SamlToken>();
+           security.Tokens.Add(samlToken);
+        }
  }
 ```
 
@@ -1373,26 +1373,26 @@ The following C# code example creates filter and assertion classes. This code ex
 Create a class to represent the SAML assertion. The main task that this class performs is convert data values from string to xml and preserve white space. This assertion xml is later imported into the SOAP request.
 
 ```as3
- class SamlToken : SecurityToken 
- { 
-        public const string SAMLAssertion = "https://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1"; 
-        private XmlElement _assertionElement; 
-  
-        public SamlToken(string assertion) 
-             : base(SAMLAssertion) 
-        { 
-           XmlDocument xmlDoc = new XmlDocument(); 
-           //The white space has to be preserved else the digital signature would get broken 
-           xmlDoc.PreserveWhitespace = true; 
-           xmlDoc.LoadXml(assertion); 
-           _assertionElement = xmlDoc.DocumentElement; 
-         } 
-      
-         public override XmlElement GetXml(XmlDocument document) 
-         { 
-            return (XmlElement)document.ImportNode(_assertionElement, true); 
-         } 
-        . . .  
+ class SamlToken : SecurityToken
+ {
+        public const string SAMLAssertion = "https://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1";
+        private XmlElement _assertionElement;
+ 
+        public SamlToken(string assertion)
+             : base(SAMLAssertion)
+        {
+           XmlDocument xmlDoc = new XmlDocument();
+           //The white space has to be preserved else the digital signature would get broken
+           xmlDoc.PreserveWhitespace = true;
+           xmlDoc.LoadXml(assertion);
+           _assertionElement = xmlDoc.DocumentElement;
+         }
+ 
+         public override XmlElement GetXml(XmlDocument document)
+         {
+            return (XmlElement)document.ImportNode(_assertionElement, true);
+         }
+        . . .
  }
 ```
 
@@ -1401,50 +1401,50 @@ Create a class to represent the SAML assertion. The main task that this class pe
 The following C# code example invokes a Forms service by using SAML-based authentication.
 
 ```as3
- public class ImpersonationExample 
- { 
-        . . . 
-        public void AuthenticateOnBehalf(string superUsername, string password, string canonicalName, string domainName) 
-        { 
-            //Create a policy for UsernamePassword Token 
-            Policy usernamePasswordPolicy = new Policy(); 
-            usernamePasswordPolicy.Assertions.Add(new UsernameOverTransportAssertion()); 
-      
-            UsernameToken token = new UsernameToken(superUsername, password, PasswordOption.SendPlainText); 
-            authenticationManager.SetClientCredential(token); 
-            authenticationManager.SetPolicy(usernamePasswordPolicy); 
-  
-            //Get the SAML assertion for impersonated user 
-            AuthClient.AuthenticationManagerService.AuthResult ar  
-                = authenticationManager.getAuthResultOnBehalfOfUser(canonicalName, domainName, null); 
-            System.Console.WriteLine("Received assertion " + ar.assertion); 
-  
-            //Create a policy for inserting SAML assertion 
-            Policy samlPolicy = new Policy(); 
-            samlPolicy.Assertions.Add(new LCSamlPolicyAssertion()); 
-            authorizationManager.SetPolicy(samlPolicy); 
-            //Set the SAML assertion obtained previously as the token 
-            authorizationManager.SetClientCredential(new SamlToken(ar.assertion)); 
-        } 
-  
-        public Role findRole(string roleId) 
-        { 
-            return authorizationManager.findRole(roleId); 
-        } 
-  
-        static void Main(string[] args) 
-        { 
-            ImpersonationExample ie = new ImpersonationExample("http://localhost:5555"); 
-            ie.AuthenticateOnBehalf( 
-                 "administrator", //The Super user which has the required impersonation permission 
-                 "password", // Password of the super user as referred above 
-                 "bob", //Cannonical name of the user to impersonate 
-                 "testdomain" //Domain of the user to impersonate 
-                 ); 
-          
-         Role r = ie.findRole("BASIC_ROLE_ADMINISTRATOR"); 
-            System.Console.WriteLine("Role "+r.name); 
-     } 
+ public class ImpersonationExample
+ {
+        . . .
+        public void AuthenticateOnBehalf(string superUsername, string password, string canonicalName, string domainName)
+        {
+            //Create a policy for UsernamePassword Token
+            Policy usernamePasswordPolicy = new Policy();
+            usernamePasswordPolicy.Assertions.Add(new UsernameOverTransportAssertion());
+ 
+            UsernameToken token = new UsernameToken(superUsername, password, PasswordOption.SendPlainText);
+            authenticationManager.SetClientCredential(token);
+            authenticationManager.SetPolicy(usernamePasswordPolicy);
+ 
+            //Get the SAML assertion for impersonated user
+            AuthClient.AuthenticationManagerService.AuthResult ar
+                = authenticationManager.getAuthResultOnBehalfOfUser(canonicalName, domainName, null);
+            System.Console.WriteLine("Received assertion " + ar.assertion);
+ 
+            //Create a policy for inserting SAML assertion
+            Policy samlPolicy = new Policy();
+            samlPolicy.Assertions.Add(new LCSamlPolicyAssertion());
+            authorizationManager.SetPolicy(samlPolicy);
+            //Set the SAML assertion obtained previously as the token
+            authorizationManager.SetClientCredential(new SamlToken(ar.assertion));
+        }
+ 
+        public Role findRole(string roleId)
+        {
+            return authorizationManager.findRole(roleId);
+        }
+ 
+        static void Main(string[] args)
+        {
+            ImpersonationExample ie = new ImpersonationExample("http://localhost:5555");
+            ie.AuthenticateOnBehalf(
+                 "administrator", //The Super user which has the required impersonation permission
+                 "password", // Password of the super user as referred above
+                 "bob", //Cannonical name of the user to impersonate
+                 "testdomain" //Domain of the user to impersonate
+                 );
+ 
+         Role r = ie.findRole("BASIC_ROLE_ADMINISTRATOR");
+            System.Console.WriteLine("Role "+r.name);
+     }
  }
 ```
 
@@ -1457,34 +1457,34 @@ Sometimes issues occur when invoking certain AEM Forms services operations by us
 If you attempt to asynchronously invoke an AEM Forms service operation, such as the Generate PDF’s `htmlToPDF` operation, a `SoapFaultException` occurs. To resolve this issue, create a custom-binding XML file that maps the `ExportPDF_Result` element and other elements into different classes. The following XML represents a custom binding file.
 
 ```as3
- <bindings     
-        xmlns:xsd="https://www.w3.org/2001/XMLSchema" 
-        xmlns:jxb="https://java.sun.com/xml/ns/jaxb" jxb:version="1.0" 
-        xmlns:wsdl="https://schemas.xmlsoap.org/wsdl/" 
-      wsdlLocation="http://localhost:8080/soap/services/GeneratePDFService?wsdl&async=true&lc_version=9.0.0" 
-        xmlns="https://java.sun.com/xml/ns/jaxws"> 
-        <enableAsyncMapping>false</enableAsyncMapping> 
-        <package name="external_customize.client"/> 
-        <enableWrapperStyle>true</enableWrapperStyle> 
-        <bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='https://adobe.com/idp/services']/xsd:element[@name='ExportPDF_Result']">            
-            <jxb:class name="ExportPDFAsyncResult">             
-            </jxb:class> 
-        </bindings> 
-        <bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='https://adobe.com/idp/services']/xsd:element[@name='CreatePDF_Result']">            
-            <jxb:class name="CreatePDFAsyncResult">             
-            </jxb:class> 
-        </bindings> 
-        <bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='https://adobe.com/idp/services']/xsd:element[@name='HtmlToPDF_Result']">            
-            <jxb:class name="HtmlToPDFAsyncResult">             
-            </jxb:class> 
-        </bindings> 
-        <bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='https://adobe.com/idp/services']/xsd:element[@name='OptimizePDF_Result']">            
-            <jxb:class name="OptimizePDFAsyncResult">             
-            </jxb:class> 
-        </bindings> 
-        <!--bindings node="//wsdl:portType[@name='GeneratePDFService']/wsdl:operation[@name='HtmlToPDF_Result']">               
-            <jxb:class name="HtmlToPDFAsyncResult"/>             
-        </bindings--> 
+ <bindings
+        xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+        xmlns:jxb="https://java.sun.com/xml/ns/jaxb" jxb:version="1.0"
+        xmlns:wsdl="https://schemas.xmlsoap.org/wsdl/"
+      wsdlLocation="http://localhost:8080/soap/services/GeneratePDFService?wsdl&async=true&lc_version=9.0.0"
+        xmlns="https://java.sun.com/xml/ns/jaxws">
+        <enableAsyncMapping>false</enableAsyncMapping>
+        <package name="external_customize.client"/>
+        <enableWrapperStyle>true</enableWrapperStyle>
+        <bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='https://adobe.com/idp/services']/xsd:element[@name='ExportPDF_Result']">
+            <jxb:class name="ExportPDFAsyncResult">
+            </jxb:class>
+        </bindings>
+        <bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='https://adobe.com/idp/services']/xsd:element[@name='CreatePDF_Result']">
+            <jxb:class name="CreatePDFAsyncResult">
+            </jxb:class>
+        </bindings>
+        <bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='https://adobe.com/idp/services']/xsd:element[@name='HtmlToPDF_Result']">
+            <jxb:class name="HtmlToPDFAsyncResult">
+            </jxb:class>
+        </bindings>
+        <bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='https://adobe.com/idp/services']/xsd:element[@name='OptimizePDF_Result']">
+            <jxb:class name="OptimizePDFAsyncResult">
+            </jxb:class>
+        </bindings>
+        <!--bindings node="//wsdl:portType[@name='GeneratePDFService']/wsdl:operation[@name='HtmlToPDF_Result']">
+            <jxb:class name="HtmlToPDFAsyncResult"/>
+        </bindings-->
  </bindings>
 ```
 
@@ -1530,213 +1530,213 @@ To avoid this problem, it is recommended that you fully-qualify the data types. 
 The following C# code example signs an interactive form that is rendered by the Forms service. The client application has two service references. The `BLOB` instance that is associated with the Forms service belongs to the `SignInteractiveForm.ServiceReference2` namespace. Likewise, the `BLOB` instance that is associated with the Signature service belongs to the `SignInteractiveForm.ServiceReference1` namespace. The signed interactive form is saved as a PDF file named *LoanXFASigned.pdf*.
 
 ```as3
- ???/** 
-     * Ensure that you create a .NET project that uses  
-     * MS Visual Studio 2008 and version 3.5 of the .NET 
-     * framework. This is required to invoke a  
-     * AEM Forms service using MTOM. 
-     * 
-     * For information, see "Invoking AEM Forms using MTOM" in Programming with AEM forms   
-     */ 
- using System; 
- using System.Collections.Generic; 
- using System.Linq; 
- using System.Text; 
- using System.ServiceModel; 
- using System.IO; 
-  
- //A reference to the Signature service  
- using SignInteractiveForm.ServiceReference1; 
-  
- //A reference to the Forms service  
- using SignInteractiveForm.ServiceReference2; 
-  
- namespace SignInteractiveForm 
- { 
-        class Program 
-        { 
-            static void Main(string[] args) 
-            { 
-                try 
-                { 
-                    //Because BLOB objects are used in both service references 
-                    //it is necessary to fully-qualify the BLOB objects 
-  
-                    //Retrieve the form -- invoke the Forms service 
-                    SignInteractiveForm.ServiceReference2.BLOB formData = GetForm(); 
-  
-                    //Create a BLOB object associated with the Signature service 
-                    SignInteractiveForm.ServiceReference1.BLOB sigData = new SignInteractiveForm.ServiceReference1.BLOB(); 
-  
-                    //Transfer the byte stream from one Forms BLOB object to the  
-                    //Signature BLOB object 
-                    sigData.MTOM = formData.MTOM; 
-  
-                    //Sign the Form -- invoke the Signature service 
-                    SignForm(sigData); 
-                } 
-                catch (Exception ee) 
-                { 
-                    Console.WriteLine(ee.Message); 
-                } 
-            } 
-  
-            //Creates an interactive PDF form based on a XFA form - invoke the Forms service 
-            private static SignInteractiveForm.ServiceReference2.BLOB GetForm() 
-            { 
-  
-                try 
-                { 
-                    //Create a FormsServiceClient object 
-                    FormsServiceClient formsClient = new FormsServiceClient(); 
-                    formsClient.Endpoint.Address = new System.ServiceModel.EndpointAddress("https://hiro-xp:8080/soap/services/FormsService?blob=mtom"); 
-  
-                    //Enable BASIC HTTP authentication 
-                    BasicHttpBinding b = (BasicHttpBinding)formsClient.Endpoint.Binding; 
-                    b.MessageEncoding = WSMessageEncoding.Mtom; 
-                    formsClient.ClientCredentials.UserName.UserName = "administrator"; 
-                    formsClient.ClientCredentials.UserName.Password = "password"; 
-                    b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic; 
-                    b.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly; 
-                    b.MaxReceivedMessageSize = 2000000; 
-                    b.MaxBufferSize = 2000000; 
-                    b.ReaderQuotas.MaxArrayLength = 2000000; 
-  
-                    //Create a BLOB to store form data 
-                    SignInteractiveForm.ServiceReference2.BLOB formData = new SignInteractiveForm.ServiceReference2.BLOB(); 
-                    SignInteractiveForm.ServiceReference2.BLOB pdfForm = new SignInteractiveForm.ServiceReference2.BLOB(); 
-  
-                    //Specify a XML form data 
-                    string path = "C:\\Adobe\Loan.xml"; 
-                    FileStream fs = new FileStream(path, FileMode.Open); 
-  
-                    //Get the length of the file stream  
-                    int len = (int)fs.Length; 
-                    byte[] ByteArray = new byte[len]; 
-  
-                    fs.Read(ByteArray, 0, len); 
-                    formData.MTOM = ByteArray; 
-  
-                    //Specify a XML form data 
-                    string path2 = "C:\\Adobe\LoanSigXFA.pdf"; 
-                    FileStream fs2 = new FileStream(path2, FileMode.Open); 
-  
-                    //Get the length of the file stream  
-                    int len2 = (int)fs2.Length; 
-                    byte[] ByteArray2 = new byte[len2]; 
-  
-                    fs2.Read(ByteArray2, 0, len2); 
-                    pdfForm.MTOM = ByteArray2; 
-  
-                    PDFFormRenderSpec renderSpec = new PDFFormRenderSpec(); 
-                    renderSpec.generateServerAppearance = true; 
-  
-                    //Set out parameter values 
-                    long pageCount = 1; 
-                    String localValue = "en_US"; 
-                    FormsResult result = new FormsResult(); 
-  
-                    //Render an interactive PDF form 
-                    formsClient.renderPDFForm2( 
-                        pdfForm, 
-                        formData, 
-                        renderSpec, 
-                        null, 
-                        null, 
-                        out pageCount, 
-                        out localValue, 
-                        out result); 
-  
-                    //Write the data stream to the BLOB object 
-                    SignInteractiveForm.ServiceReference2.BLOB outForm = result.outputContent; 
-                    return outForm; 
-                } 
-                catch (Exception ee) 
-                { 
-                    Console.WriteLine(ee.Message); 
-                } 
-                return null; 
-            } 
-  
-            //Sign the form -- invoke the Signature service 
-            private static void SignForm(SignInteractiveForm.ServiceReference1.BLOB inDoc) 
-            { 
-  
-                try 
-                { 
-                    //Create a SignatureServiceClient object 
-                    SignatureServiceClient signatureClient = new SignatureServiceClient(); 
-                    signatureClient.Endpoint.Address = new System.ServiceModel.EndpointAddress("https://hiro-xp:8080/soap/services/SignatureService?blob=mtom"); 
-  
-                    //Enable BASIC HTTP authentication 
-                    BasicHttpBinding b = (BasicHttpBinding)signatureClient.Endpoint.Binding; 
-                    b.MessageEncoding = WSMessageEncoding.Mtom; 
-                    signatureClient.ClientCredentials.UserName.UserName = "administrator"; 
-                    signatureClient.ClientCredentials.UserName.Password = "password"; 
-                    b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic; 
-                    b.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly; 
-                    b.MaxReceivedMessageSize = 2000000; 
-                    b.MaxBufferSize = 2000000; 
-                    b.ReaderQuotas.MaxArrayLength = 2000000; 
-  
-                    //Specify the name of the signature field 
-                    string fieldName = "form1[0].grantApplication[0].page1[0].SignatureField1[0]"; 
-  
-                    //Create a Credential object 
-                    Credential myCred = new Credential(); 
-                    myCred.alias = "secure"; 
-  
-                    //Specify the reason to sign the document 
-                    string reason = "The document was reviewed"; 
-  
-                    //Specify the location of the signer 
-                    string location = "New York HQ"; 
-  
-                    //Specify contact information 
-                    string contactInfo = "Tony Blue"; 
-  
-                    //Create a PDFSignatureAppearanceOptions object  
-                    //and show date information 
-                    PDFSignatureAppearanceOptionSpec appear = new PDFSignatureAppearanceOptionSpec(); 
-                    appear.showDate = true; 
-  
-                    //Sign the PDF document 
-                    SignInteractiveForm.ServiceReference1.BLOB signedDoc = signatureClient.sign( 
-                        inDoc, 
-                        fieldName, 
-                        myCred, 
-                        HashAlgorithm.SHA1, 
-                        reason, 
-                        location, 
-                        contactInfo, 
-                        appear, 
-                        true, 
-                        null, 
-                        null, 
-                        null); 
-  
-                    //Populate a byte array with BLOB data that represents the signed form 
-                    byte[] outByteArray = signedDoc.MTOM; 
-  
-                    //Save the signed PDF document 
-                    string fileName = "C:\\Adobe\LoanXFASigned.pdf"; 
-                    FileStream fs2 = new FileStream(fileName, FileMode.OpenOrCreate); 
-  
-                    //Create a BinaryWriter object 
-                    BinaryWriter w = new BinaryWriter(fs2); 
-                    w.Write(outByteArray); 
-                    w.Close(); 
-                    fs2.Close(); 
-                } 
-  
-                catch (Exception ee) 
-                { 
-                    Console.WriteLine(ee.Message); 
-                } 
-            } 
-        } 
- } 
-  
+ ???/**
+     * Ensure that you create a .NET project that uses
+     * MS Visual Studio 2008 and version 3.5 of the .NET
+     * framework. This is required to invoke a
+     * AEM Forms service using MTOM.
+     *
+     * For information, see "Invoking AEM Forms using MTOM" in Programming with AEM forms
+     */
+ using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.ServiceModel;
+ using System.IO;
+ 
+ //A reference to the Signature service
+ using SignInteractiveForm.ServiceReference1;
+ 
+ //A reference to the Forms service
+ using SignInteractiveForm.ServiceReference2;
+ 
+ namespace SignInteractiveForm
+ {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                try
+                {
+                    //Because BLOB objects are used in both service references
+                    //it is necessary to fully-qualify the BLOB objects
+ 
+                    //Retrieve the form -- invoke the Forms service
+                    SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();
+ 
+                    //Create a BLOB object associated with the Signature service
+                    SignInteractiveForm.ServiceReference1.BLOB sigData = new SignInteractiveForm.ServiceReference1.BLOB();
+ 
+                    //Transfer the byte stream from one Forms BLOB object to the
+                    //Signature BLOB object
+                    sigData.MTOM = formData.MTOM;
+ 
+                    //Sign the Form -- invoke the Signature service
+                    SignForm(sigData);
+                }
+                catch (Exception ee)
+                {
+                    Console.WriteLine(ee.Message);
+                }
+            }
+ 
+            //Creates an interactive PDF form based on a XFA form - invoke the Forms service
+            private static SignInteractiveForm.ServiceReference2.BLOB GetForm()
+            {
+ 
+                try
+                {
+                    //Create a FormsServiceClient object
+                    FormsServiceClient formsClient = new FormsServiceClient();
+                    formsClient.Endpoint.Address = new System.ServiceModel.EndpointAddress("https://hiro-xp:8080/soap/services/FormsService?blob=mtom");
+ 
+                    //Enable BASIC HTTP authentication
+                    BasicHttpBinding b = (BasicHttpBinding)formsClient.Endpoint.Binding;
+                    b.MessageEncoding = WSMessageEncoding.Mtom;
+                    formsClient.ClientCredentials.UserName.UserName = "administrator";
+                    formsClient.ClientCredentials.UserName.Password = "password";
+                    b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic;
+                    b.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
+                    b.MaxReceivedMessageSize = 2000000;
+                    b.MaxBufferSize = 2000000;
+                    b.ReaderQuotas.MaxArrayLength = 2000000;
+ 
+                    //Create a BLOB to store form data
+                    SignInteractiveForm.ServiceReference2.BLOB formData = new SignInteractiveForm.ServiceReference2.BLOB();
+                    SignInteractiveForm.ServiceReference2.BLOB pdfForm = new SignInteractiveForm.ServiceReference2.BLOB();
+ 
+                    //Specify a XML form data
+                    string path = "C:\\Adobe\Loan.xml";
+                    FileStream fs = new FileStream(path, FileMode.Open);
+ 
+                    //Get the length of the file stream
+                    int len = (int)fs.Length;
+                    byte[] ByteArray = new byte[len];
+ 
+                    fs.Read(ByteArray, 0, len);
+                    formData.MTOM = ByteArray;
+ 
+                    //Specify a XML form data
+                    string path2 = "C:\\Adobe\LoanSigXFA.pdf";
+                    FileStream fs2 = new FileStream(path2, FileMode.Open);
+ 
+                    //Get the length of the file stream
+                    int len2 = (int)fs2.Length;
+                    byte[] ByteArray2 = new byte[len2];
+ 
+                    fs2.Read(ByteArray2, 0, len2);
+                    pdfForm.MTOM = ByteArray2;
+ 
+                    PDFFormRenderSpec renderSpec = new PDFFormRenderSpec();
+                    renderSpec.generateServerAppearance = true;
+ 
+                    //Set out parameter values
+                    long pageCount = 1;
+                    String localValue = "en_US";
+                    FormsResult result = new FormsResult();
+ 
+                    //Render an interactive PDF form
+                    formsClient.renderPDFForm2(
+                        pdfForm,
+                        formData,
+                        renderSpec,
+                        null,
+                        null,
+                        out pageCount,
+                        out localValue,
+                        out result);
+ 
+                    //Write the data stream to the BLOB object
+                    SignInteractiveForm.ServiceReference2.BLOB outForm = result.outputContent;
+                    return outForm;
+                }
+                catch (Exception ee)
+                {
+                    Console.WriteLine(ee.Message);
+                }
+                return null;
+            }
+ 
+            //Sign the form -- invoke the Signature service
+            private static void SignForm(SignInteractiveForm.ServiceReference1.BLOB inDoc)
+            {
+ 
+                try
+                {
+                    //Create a SignatureServiceClient object
+                    SignatureServiceClient signatureClient = new SignatureServiceClient();
+                    signatureClient.Endpoint.Address = new System.ServiceModel.EndpointAddress("https://hiro-xp:8080/soap/services/SignatureService?blob=mtom");
+ 
+                    //Enable BASIC HTTP authentication
+                    BasicHttpBinding b = (BasicHttpBinding)signatureClient.Endpoint.Binding;
+                    b.MessageEncoding = WSMessageEncoding.Mtom;
+                    signatureClient.ClientCredentials.UserName.UserName = "administrator";
+                    signatureClient.ClientCredentials.UserName.Password = "password";
+                    b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic;
+                    b.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
+                    b.MaxReceivedMessageSize = 2000000;
+                    b.MaxBufferSize = 2000000;
+                    b.ReaderQuotas.MaxArrayLength = 2000000;
+ 
+                    //Specify the name of the signature field
+                    string fieldName = "form1[0].grantApplication[0].page1[0].SignatureField1[0]";
+ 
+                    //Create a Credential object
+                    Credential myCred = new Credential();
+                    myCred.alias = "secure";
+ 
+                    //Specify the reason to sign the document
+                    string reason = "The document was reviewed";
+ 
+                    //Specify the location of the signer
+                    string location = "New York HQ";
+ 
+                    //Specify contact information
+                    string contactInfo = "Tony Blue";
+ 
+                    //Create a PDFSignatureAppearanceOptions object
+                    //and show date information
+                    PDFSignatureAppearanceOptionSpec appear = new PDFSignatureAppearanceOptionSpec();
+                    appear.showDate = true;
+ 
+                    //Sign the PDF document
+                    SignInteractiveForm.ServiceReference1.BLOB signedDoc = signatureClient.sign(
+                        inDoc,
+                        fieldName,
+                        myCred,
+                        HashAlgorithm.SHA1,
+                        reason,
+                        location,
+                        contactInfo,
+                        appear,
+                        true,
+                        null,
+                        null,
+                        null);
+ 
+                    //Populate a byte array with BLOB data that represents the signed form
+                    byte[] outByteArray = signedDoc.MTOM;
+ 
+                    //Save the signed PDF document
+                    string fileName = "C:\\Adobe\LoanXFASigned.pdf";
+                    FileStream fs2 = new FileStream(fileName, FileMode.OpenOrCreate);
+ 
+                    //Create a BinaryWriter object
+                    BinaryWriter w = new BinaryWriter(fs2);
+                    w.Write(outByteArray);
+                    w.Close();
+                    fs2.Close();
+                }
+ 
+                catch (Exception ee)
+                {
+                    Console.WriteLine(ee.Message);
+                }
+            }
+        }
+ }
+ 
  
 ```
 

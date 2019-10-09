@@ -5,7 +5,7 @@ description: Learn about SEO best practices and recommendations for achieving th
 seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
@@ -196,11 +196,11 @@ The challenge with localizing the name of the page is that many of the localizat
 The `sling:alias` property allows you to have our cake and eat it too. `sling:alias` can be added as a property to any resource to allow for an alias name for the resource. In the previous example, you would have:
 
 * A page in the JCR at:
-  
+
   `…/es/home`
 
 * Then add a property to it:
-  
+
   `sling:alias` = `casa`
 
 This would allow the AEM translation tools such as the multi-site manager to continue to maintain a relationship between:
@@ -220,19 +220,19 @@ While also allowing end users to interact with the page name in their native lan
 In a standard AEM installation:
 
 * for the OSGi configuration:
-  
+
   **Apache Sling Resource Resolver Factory**
 
   (`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * the property:
-  
+
   **Mapping Location**
-  
+
   (`resource.resolver.map.location`)
 
 * defaults to:
-  
+
   `/etc/map`
 
 Mapping definitions can be added in this location to map inbound requests, rewrite URLs on pages in AEM, or both.
@@ -260,7 +260,7 @@ However, there is also a simpler way to manage this:
    Using the web console (for example, localhost:4502/system/console/configMgr) you can configure the Sling Resource Resolver:
 
     * **Apache Sling Resource Resolver Factory**
-  
+
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    It is recommended that you build out the mappings required to shorten URLs as regular expressions, then define these configurations under an OsgiConfignode, `config.publish`, that is included in your build.
@@ -374,7 +374,7 @@ To programmatically generate a sitemap, register a Sling Servlet listening for a
 
 >[!NOTE]
 >
->You can register a Sling Servlet to listen for the selector `sitemap` with the extension `xml`. This will cause the servlet to process the request any time a URL is requested that ends in:  
+>You can register a Sling Servlet to listen for the selector `sitemap` with the extension `xml`. This will cause the servlet to process the request any time a URL is requested that ends in:
 >
 >`/<*path-to*>/page.sitemap.xml`
 >

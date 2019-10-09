@@ -5,7 +5,7 @@ description: To obtain the page information, send a request to the PageInfo serv
 seo-description: To obtain the page information, send a request to the PageInfo servlet to obtain the page metadata in JSON format
 uuid: fb4f56b9-55e2-4622-a0d1-a86d6f2cce86
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
@@ -26,7 +26,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >If you need page information in JSON format to provide the delivery of content to channels that are not traditional AEM web pages such as:
 >
 >* Single Page Applications
->* Native Mobile Applications 
+>* Native Mobile Applications
 >* Other channels and touch-points external to AEM
 >
 >See the document [JSON Exporter for Content Services](/help/sites-developing/json-exporter.md).
@@ -516,10 +516,10 @@ To configure the service in your project source:
 1. Copy the following text to the file:
 
    ```
-   <?xml version="1.0" encoding="UTF-8"?> 
-    <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" 
-    xmlns:jcr="https://www.jcp.org/jcr/1.0" 
-    jcr:primaryType="sling:OsgiConfig" 
+   <?xml version="1.0" encoding="UTF-8"?>
+    <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="https://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
     workflowpackageinfoprovider.filter="[]"/>
    ```
 

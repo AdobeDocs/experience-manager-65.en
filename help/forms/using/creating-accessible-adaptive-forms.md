@@ -4,7 +4,7 @@ seo-title: Creating accessible adaptive forms
 description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: eceb3282-0b90-4e0a-8b89-137d27029747
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
 ---
@@ -63,9 +63,9 @@ Images can help improve comprehension for some users. However, for users using s
 
 Ensure that the text describes the object and its purpose in the form. A screen reader reads this alternative text when it encounters an image. An image must always have an alternative text specified.
 
-Select an image component and tap ![cmppr](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image. 
+Select an image component and tap ![cmppr](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image.
 
-![Alternate text for an image](assets/image-properties.png) 
+![Alternate text for an image](assets/image-properties.png)
 
 ## Provide sufficient color contrast {#provide-sufficient-color-contrast}
 

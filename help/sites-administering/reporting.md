@@ -5,7 +5,7 @@ description: Learn how to work with Reporting in AEM.
 seo-description: Learn how to work with Reporting in AEM.
 uuid: d6105d54-4d38-40a4-bd60-00057b84f7b8
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
@@ -44,10 +44,10 @@ There are various formats of reports available. The following reports all use co
 
 >[!NOTE]
 >
->The following reports each have their own format and customization:  
+>The following reports each have their own format and customization:
 >
 >
->* [Health Check](#health-check) uses selection fields to specify the data you want to report on.  
+>* [Health Check](#health-check) uses selection fields to specify the data you want to report on.
 >* [Disk Usage](#disk-usage) uses links to drill down through the repository structure.
 >* [Workflow report](/help/sites-administering/reporting.md#workflow-report) gives an overview of the workflows running on your instance.
 >
@@ -83,7 +83,7 @@ The options available on the menu will depend on the configuration of the column
 
 The data can be sorted according to a specific column by either:
 
-* clicking on the appropriate column header; the sort will toggle between ascending and descending, indicated by an arrow head immediately next to the title text  
+* clicking on the appropriate column header; the sort will toggle between ascending and descending, indicated by an arrow head immediately next to the title text
 * use the [column's drop-down menu](#column-drop-down-menu) to specifically select either **Sort Ascending** or **Sort Descending**; again this will be indicated by an arrow head immediately next to the title text
 
 ### Groups and the Current data Chart {#groups-and-the-current-data-chart}
@@ -104,14 +104,14 @@ On appropriate columns you can also configure **Filter Settings** and/or **Aggre
 
 Filter Settings allow you to specify the criteria for entries to be displayed. The operators available are:
 
-* `contains`  
+* `contains`
 * `equals`
 
 ![reportfilter](assets/reportfilter.png)
 
 To set a filter:
 
-1. Select the operator that you want from the drop-down list.  
+1. Select the operator that you want from the drop-down list.
 1. Enter the text to be filtered on.
 1. Click **Apply**.
 
@@ -124,7 +124,7 @@ To deactivate the filter:
 
 You can also select an aggregation method (these may vary depending on the column selected):
 
-![reportaggregate](assets/reportaggregate.png) 
+![reportaggregate](assets/reportaggregate.png)
 
 ### Column Properties {#column-properties}
 
@@ -159,7 +159,7 @@ Once data collection has started you can select:
 
 * **Interval**
 
-  Month, Week, Day, Hour can be selected for the scale and aggregation of the report. 
+  Month, Week, Day, Hour can be selected for the scale and aggregation of the report.
 
   For example, if daily snapshots are available for February 2011:
 
@@ -172,17 +172,17 @@ Select your requirements, then click **Go** to apply them to the report. To upda
 
 When snapshots are being collected you can:
 
-* Use **Finish...** again to reinitialize the collection. 
+* Use **Finish...** again to reinitialize the collection.
 
-  **Finish** "freezes" the report's structure (i.e. the columns assigned to the report and which are grouped, sorted, filtered, etc.) and starts taking snapshots. 
+  **Finish** "freezes" the report's structure (i.e. the columns assigned to the report and which are grouped, sorted, filtered, etc.) and starts taking snapshots.
 
-* Open the **Edit** dialog to select **No data snapshots** to terminate collection until required. 
+* Open the **Edit** dialog to select **No data snapshots** to terminate collection until required.
 
   **Edit** only switches the taking of snapshots on or off. If taking snapshots is switched on again, it uses the state of the report when it was last finished for taking further snapshots.
 
 >[!NOTE]
 >
->Snapshots are stored under `/var/reports/...` where the remainder of the path mirrors the path of the respective report and ID created when the report was finished.  
+>Snapshots are stored under `/var/reports/...` where the remainder of the path mirrors the path of the respective report and ID created when the report was finished.
 >
 >
 >Old snapshots can be manually purged, if you are completely sure that you no longer require those instances.
@@ -201,7 +201,7 @@ Each horizontal line is known as a series (and corresponds to an entry in the ch
 
 To keep the chart clean over longer periods of time there are limits which can be set. For the standard reports these are:
 
-* horizontal series - both default and system maximum is `9`  
+* horizontal series - both default and system maximum is `9`
 
 * vertical aggregated snapshots - default is `35` (per horizontal series)
 
@@ -226,33 +226,33 @@ This is one location where the period for collecting snapshots for [Historic dat
 
 ![reportedit](assets/reportedit.png)
 
-* **Title** 
+* **Title**
 
   You can define your own title.
 
-* **Description** 
+* **Description**
 
   You can define your own description.
 
-* **Root path** (*only active for certain reports*) 
+* **Root path** (*only active for certain reports*)
 
-  Use this to limit the report to a (sub-) section of the repository. 
+  Use this to limit the report to a (sub-) section of the repository.
 
 * **Report Processing**
 
-    * **automatically refresh data** 
+    * **automatically refresh data**
 
       The report data will be refreshed every time you update the report definition.
-  
+
     * **manually refresh data**
 
-      This option can be used to prevent delays caused by automatic refresh operations when there is a large volume of data. 
+      This option can be used to prevent delays caused by automatic refresh operations when there is a large volume of data.
 
       Selecting this indicates that the report data must be manually refreshed when any aspect of the report configuration has changed. It also means that as soon as you change any aspect of the configuration the report table will be blanked out.
 
       When this is selected the **[Load data](#load-data)** button will be displayed (next to **Edit** on the report). **Load data** will load the data and refresh the report data shown.
 
-* **Snapshots** 
+* **Snapshots**
   You can define how often snapshots are to be made; daily, hourly or not at all.
 
 ### Load data {#load-data}
@@ -275,13 +275,13 @@ Selecting to manually refresh data means that:
 
 When you **Finish** the report:
 
-* The report definition *as of that point in time* will be used for taking the snapshots (afterwards you can continue working on a report definition as it is then separate from the snaphots). 
+* The report definition *as of that point in time* will be used for taking the snapshots (afterwards you can continue working on a report definition as it is then separate from the snaphots).
 * Any existing snapshots will be removed.
 * New snapshots are collected for the [Historic data](#historic-data).
 
 With this dialog you can define, or update, your own title and description for the resulting report.
 
-![reportfinish](assets/reportfinish.png) 
+![reportfinish](assets/reportfinish.png)
 
 ## Report Types {#report-types}
 
@@ -312,7 +312,7 @@ Mean that you can see, for example:
 
 All components are included, product-standard and project-specific. Using the **Edit** dialog the user can also set a **Root path** that defines the startpoint of the report - all components under that root are considered for the report.
 
-![reportcomponent](assets/reportcomponent.png) ![reportcompentall](assets/reportcompentall.png) 
+![reportcomponent](assets/reportcomponent.png) ![reportcompentall](assets/reportcompentall.png)
 
 ### Disk Usage {#disk-usage}
 
@@ -320,13 +320,13 @@ The disk usage report shows information about the data stored within your reposi
 
 The report starts in the root ( / ) of the repository; by clicking on a particular branch you can drill down inside the repository (the current path will be reflected in the report title).
 
-![reportdiskusage](assets/reportdiskusage.png) 
+![reportdiskusage](assets/reportdiskusage.png)
 
 ### Health Check {#health-check}
 
 This report analyzes the current request log:
 
-`<cq-installation-dir>/crx-quickstart/logs/request.log`  
+`<cq-installation-dir>/crx-quickstart/logs/request.log`
 to help you identify the most expensive request(s) within a given period.
 
 To generate the report you can specify:
@@ -335,33 +335,33 @@ To generate the report you can specify:
 
   The number of hours (past) to be analysed.
 
-  Default: `24`  
+  Default: `24`
 
 * **max. Results**
 
   Maximum number of output lines.
 
-  Default: `50`  
+  Default: `50`
 
-* **max. Requests** 
+* **max. Requests**
 
   Maximum number of requests to be analysed.
 
-  Default: `-1` (all)  
+  Default: `-1` (all)
 
-* **Email address** 
+* **Email address**
 
   Send results to an email address.
 
-  Optional; Default: blank  
+  Optional; Default: blank
 
 * **Run daily at (hh:mm)**
 
-  Specify a time for the report to be automatically run on a daily basis. 
+  Specify a time for the report to be automatically run on a daily basis.
 
   Optional; Default: blank
 
-![reporthealth](assets/reporthealth.png) 
+![reporthealth](assets/reporthealth.png)
 
 ### Page Activity Report {#page-activity-report}
 
@@ -402,10 +402,10 @@ This report provides information about user generated content; be that comments,
 Allow you to:
 
 * See which pages are receiving the most comments.
-* Get an overview of all comments that specific site visitors are leaving, maybe the issues are related.  
+* Get an overview of all comments that specific site visitors are leaving, maybe the issues are related.
 * Judge whether new content is provoking comments by monitoring when comments are being made on a page.
 
-![reportusercontent](assets/reportusercontent.png) 
+![reportusercontent](assets/reportusercontent.png)
 
 ### User Report {#user-report}
 
@@ -432,7 +432,7 @@ Allow you to:
 * See the demographic spread of your users.
 * Report on customized fields you have added to the profiles.
 
-![reportusercanned](assets/reportusercanned.png) 
+![reportusercanned](assets/reportusercanned.png)
 
 #### Generic Column {#generic-column}
 
@@ -465,13 +465,13 @@ From the **Definitions** tab you can define:
 
 * **Default Aggregate**
 
-  This defines the aggregate used by default if the column is ungrouped in a report with at least one grouped column. Select the required aggregate from `Count`, `Minimum`, `Average`, `Maximum`, `Sum`. 
+  This defines the aggregate used by default if the column is ungrouped in a report with at least one grouped column. Select the required aggregate from `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
   For example, *Count* for a `String` field means that the number of distinct `String` values is displayed for the column in the aggregated state.
 
 In the **Extended** tab you can also define the aggregates and filters available:
 
-![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png) 
+![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
 
 ### Workflow Instance Report {#workflow-instance-report}
 
@@ -491,13 +491,13 @@ Mean you can:
 
 * Monitor the mean duration of workflows; if this happens regularly it can highlight issues with the workflow.
 
-![reportworkflowintance](assets/reportworkflowintance.png) 
+![reportworkflowintance](assets/reportworkflowintance.png)
 
 ### Workflow Report {#workflow-report}
 
 This provides key statistics about the workflows running on your instance.
 
-![reportworkflow](assets/reportworkflow.png) 
+![reportworkflow](assets/reportworkflow.png)
 
 ## Using Reports in a Publish Environment {#using-reports-in-a-publish-environment}
 
@@ -534,23 +534,23 @@ The permissions needed depend on the action:
 
 In a standard AEM installation the following permissions are preset for the reports:
 
-* **User Report** 
+* **User Report**
 
-  `user administrators` - read and write  
+  `user administrators` - read and write
 
 * **Page Activity Report**
 
-  `contributors` - read and write  
+  `contributors` - read and write
 
-* **Component Report** 
+* **Component Report**
 
-  `contributors` - read and write  
+  `contributors` - read and write
 
-* **User Generated Content Report** 
+* **User Generated Content Report**
 
-  `contributors` - read and write  
+  `contributors` - read and write
 
-* **Workflow Instance Report** 
+* **Workflow Instance Report**
 
   `workflow-users` - read and write
 

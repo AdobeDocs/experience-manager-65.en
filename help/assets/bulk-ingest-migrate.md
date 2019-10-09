@@ -5,7 +5,7 @@ description: Feature pack 18912 lets you either bulk ingest assets by way of FTP
 seo-description: Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from Dynamic Media Classic to Dynamic Media in AEM. This optional feature pack is available from Adobe support.
 uuid: 316d77e3-3d61-4cf0-8955-726ee54e268c
 contentOwner: rbrough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 6198e613-a867-49a8-b9a5-a05e7889821c
@@ -33,7 +33,7 @@ See also [Configuring Dynamic Media - Scene7 mode](https://helpx.adobe.com/exper
 1. In the **[!UICONTROL ID]** and **[!UICONTROL Password]** fields, enter a user name and password; for example, `FTP User`. This name appears in the timeline as the user who created the asset. When an asset is uploaded from FTP, an asset is considered created when it is uploaded to the FTP server and is pushed to AEM.
 1. Contact [Adobe Enterprise Support for Experience Manager](https://helpx.adobe.com/contact/enterprise-support.ec.html) to request access to feature pack 18912 for downloading. You may need the following information when you contact support:
 
-    * Server IP address for your Author instance, including the port number (by default, the port number is 4502). 
+    * Server IP address for your Author instance, including the port number (by default, the port number is 4502).
     * AEM service user username and password from the previous step.
 
 1. Adobe Enterprise Support for AEM provides you the FTP credentials and access to feature pack 18912.

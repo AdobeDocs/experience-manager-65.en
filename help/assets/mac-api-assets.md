@@ -5,7 +5,7 @@ description: Learn about the implementation, data model, and features of Assets 
 seo-description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
 uuid: ab709c58-c9a6-48da-84da-866655c84658
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 68d49096-959b-4751-abf1-23bedbaed9a0
 ---
 

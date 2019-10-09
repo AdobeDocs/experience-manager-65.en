@@ -5,7 +5,7 @@ description: ContextHub provides several sample UI modules that you can use in y
 seo-description: ContextHub provides several sample UI modules that you can use in your solutions
 uuid: af1a8fa1-8f8b-49c8-b2ca-ba92c955871e
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
@@ -45,9 +45,9 @@ Configure the contexthub.base UI module using a Javascript object in JSON format
 * **title:** A title for the UI module. The title appears when the pointer is paused over the UI module icon.
 * **fullscreen:** A boolean value that indicates whether the UI module supports fullscreen mode. Use `true` to support fullscreen and `false` to prevent fullscreen mode.
 
-* **template:** A [Handlebars](https://handlebarsjs.com/) template that specifies the content to render in the ContextHub toolbar. Use at most two `<p>` tags. 
+* **template:** A [Handlebars](https://handlebarsjs.com/) template that specifies the content to render in the ContextHub toolbar. Use at most two `<p>` tags.
 
-* **storeMapping:** A key/store mapping. Use the key in Handlebar templates to access the associated ContextHub store data. 
+* **storeMapping:** A key/store mapping. Use the key in Handlebar templates to access the associated ContextHub store data.
 * **list:** An array of items to display as a list in a popover when the UI module is clicked. If you include this item, do not include popoverTemplate. The value is an array of objects with the following keys:
 
     * title: The text to display for this item
@@ -78,7 +78,7 @@ The following example configures a contexthub.base UI module to display informat
 }
 ```
 
-![chlimage_1-76](assets/chlimage_1-76.png) 
+![chlimage_1-76](assets/chlimage_1-76.png)
 
 ## contexthub.browserinfo UI Module Type {#contexthub-browserinfo-ui-module-type}
 

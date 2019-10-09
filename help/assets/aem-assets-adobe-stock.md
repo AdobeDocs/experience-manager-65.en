@@ -5,7 +5,7 @@ description: Search, fetch, license, and manage Adobe Stock assets in AEM. Treat
 seo-description: Search, fetch, license, and manage Adobe Stock assets in AEM. Treat the licensed assets as any other AEM asset.
 uuid: 9a7de638-4655-4509-81f2-1103e6c93338
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 discoiquuid: 66495776-5faa-4e5b-a6b6-abb59f7951c0
 ---
@@ -18,7 +18,7 @@ Adobe Stock service provides designers and businesses with access to millions of
 
 ## Prerequisites {#prerequisites}
 
-The integration requires an [enterprise Adobe Stock plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) and AEM 6.4 with at least Service Pack 2 deployed. For AEM 6.4 service pack details, see these [release notes](/help/release-notes/sp-release-notes.md).
+The integration requires an [enterprise Adobe Stock plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) and AEM 6.5 with at least Service Pack 2 deployed. For AEM 6.5 service pack details, see these [release notes](/help/release-notes/sp-release-notes.md).
 
 ## Integrate AEM and Adobe Stock {#integrate-aem-and-adobe-stock}
 
@@ -64,7 +64,7 @@ Once an Adobe Stock asset is licensed in AEM, it can be used and managed like a 
 
 Your AEM users, can search for assets in both, AEM and Adobe Stock. When the search location is not limited to Adobe Stock, the search results from AEM and Adobe Stock are displayed.
 
-* To search for Adobe Stock assets, click **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Search Adobe Stock]**.  
+* To search for Adobe Stock assets, click **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Search Adobe Stock]**.
 
 * To search for assets across Adobe Stock and AEM Assets, click the search icon ![search_icon](assets/search_icon.png).
 

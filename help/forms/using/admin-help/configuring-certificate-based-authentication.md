@@ -7,7 +7,7 @@ uuid: 9802a969-6d29-4b80-a4ed-06eb6e66e046
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 ---
 
@@ -27,9 +27,9 @@ To enable certificate-based authentication for users, create a certificate mappi
 
 When you test a certificate, User Management uploads the certificate checks to ensure that it meets the following requirements:
 
-* The certificate is valid. 
-* The Issuer you specified can verify the certificate. 
-* The certificate contains the attribute required for mapping. 
+* The certificate is valid.
+* The Issuer you specified can verify the certificate.
+* The certificate contains the attribute required for mapping.
 * The mapping you specified maps the certificate to only one user in the AEM forms database. Both current and obsolete (deleted) users are checked to determine whether they match the mapping criteria. Therefore, the certificate test fails if more than one user, including obsolete users, has the attribute value being considered.
 
 >[!NOTE]
@@ -50,7 +50,7 @@ When you test a certificate, User Management uploads the certificate checks to e
 
    You can use the following characters in the regex:
 
-    * . (any character) 
+    * . (any character)
     * &ast; (0 or more occurrences)
     * () (specify the group in brackets)
     * \ (used to escape a regex character to a regular character)
@@ -60,23 +60,23 @@ When you test a certificate, User Management uploads the certificate checks to e
 
     * To extract "Alex Pink" from "Alex Pink (Authentication)"
 
-      **Regex:** (.&ast;) \(Authentication\) 
-    
+      **Regex:** (.&ast;) \(Authentication\)
+
     * To extract "Alex Pink" from "Alex (Authentication) Pink"
 
       **Regex:** (.&ast;)\(Authentication\) (.&ast;)
-    
+
     * To extract "Pink Alex" from "Alex (Authentication) Pink"
 
       **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
       Custom Order: $2 $1 (return second group, concatenated to first group, captured by whitespace character)
-    
+
     * To extract "apink@sampleorg.com" from "smtp:apink@sampleorg.com"
 
       **Regex:** smtp:(.&ast;)
 
-   For details on using regular expressions, see [Java tutorial about regular expressions](https://java.sun.com/docs/books/tutorial/essential/regex/). 
+   For details on using regular expressions, see [Java tutorial about regular expressions](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
 1. In the For Domain list, select the user’s domain.
 1. To test this configuration, click Browse to upload a sample user certificate, click Test Certificate and, if the configuration is correct, click OK.
@@ -84,7 +84,7 @@ When you test a certificate, User Management uploads the certificate checks to e
 **Edit an existing certificate mapping**
 
 1. In Administration Console, click Settings &gt; User Management &gt; Configuration.
-1. Click Certificate Mapping. 
+1. Click Certificate Mapping.
 1. Select the certificate mapping to edit and edit its configuration. You can update the regular expression and custom order.
 1. To test your changes, click Browse to upload a sample certificate, click Test Certificate, and then click OK.
 

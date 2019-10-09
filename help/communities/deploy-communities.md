@@ -5,7 +5,7 @@ description: How to deploy AEM Communities
 seo-description: How to deploy AEM Communities
 uuid: 1f7faf1a-a339-4eaa-b728-b9110cb350a8
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
@@ -15,7 +15,7 @@ discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 
 ## Prerequisites {#prerequisites}
 
-* [AEM 6.4 Platform](../../help/sites-deploying/deploy.md)
+* [AEM 6.5 Platform](../../help/sites-deploying/deploy.md)
 
 * AEM Communities license
 
@@ -29,12 +29,12 @@ discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 
 **For the [AEM platform](../../help/sites-deploying/deploy.md#what-is-aem)**
 
-* Install latest [AEM 6.4 Updates](#aem-updates)
+* Install latest [AEM 6.5 Updates](#aem-updates)
 
 * If not using the default ports (4502, 4503), then [configure replication agents](#replication-agents-on-author)
 * [replicate the crypto key](#replicate-the-crypto-key)
-* If supporting globalization, [setup automated translation](../../help/sites-administering/translation.md)  
-  
+* If supporting globalization, [setup automated translation](../../help/sites-administering/translation.md)
+
   (sample setup is provided for development)
 
 **For the [Communities capability](overview.md)**
@@ -83,17 +83,17 @@ discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA ships with Communities package. To know about updates to AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), refer [AEM 6.4 Release Notes](/help/release-notes/release-notes.md#release-information).
+AEM 6.5 Communities GA ships with Communities package. To know about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), refer [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#release-information).
 
-### AEM 6.4 Updates {#aem-updates}
+### AEM 6.5 Updates {#aem-updates}
 
 Starting in AEM 6.3, updates to Communities are delivered as part of AEM Cumulative Fix Packs and Service Packs.
 
-For the latest updates to AEM 6.4, be sure to check [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+For the latest updates to AEM 6.5, be sure to check [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
 ### Version History {#version-history}
 
-As on AEM 6.4 and beyond, AEM Communities features and hotfixes are part of AEM Communities cumulative fix packs and service packs. There are, therefore, no separate feature packs.
+As on AEM 6.5 and beyond, AEM Communities features and hotfixes are part of AEM Communities cumulative fix packs and service packs. There are, therefore, no separate feature packs.
 
 ### JDBC driver for MySQL {#jdbc-driver-for-mysql}
 
@@ -132,7 +132,7 @@ Further information on installing bundles is found on the [Web Console](../../he
 
 #### Example: Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
-![chlimage_1-410](assets/chlimage_1-410.png) 
+![chlimage_1-410](assets/chlimage_1-410.png)
 
 ### SCORM Package {#scorm-package}
 
@@ -140,7 +140,7 @@ Shareable Content Object Reference Model (SCORM) is a collection of standards an
 
 The AEM Communities SCORM engine is required for the [enablement](overview.md#enablement-community) feature. Scorm packages supported on AEM Communities 6.4 version are:
 
-* **[ cq -social-  scorm -package, version 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. This SCORM package is supported by all AEM 6.4 Communities versions.
+* **[ cq -social-  scorm -package, version 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. This SCORM package is supported by all AEM 6.5 Communities versions.
 
 * **[ cq -social-  scorm -package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** includes [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine. This SCORM package is supported AEM 6.4.2.x Communities onwards.
 
@@ -168,7 +168,7 @@ Existing SCORM installations can be upgraded to [**cq-social-scorm-package, vers
 1. Install the **[cq-social-scorm-package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
 1. Download the package from `/libs/social/config/scorm/ScormEngine.zip` and extract the same.
 1. Go to **Installer** folder of the extracted directory.
-1. Update `SystemDatabaseConnectionString` with your `scorm db connection url` in file **[!UICONTROL EngineInstall.xml]**.  
+1. Update `SystemDatabaseConnectionString` with your `scorm db connection url` in file **[!UICONTROL EngineInstall.xml]**.
 1. Run mysql schema upgrade tool in Installer folder with the command:
 
     `java -Dlogback.configurationFile=logback.xml -cp "lib/*" RusticiSoftware.ScormContentPlayer.Logic.Upgrade.ConsoleApp EngineInstall.xml`
@@ -229,7 +229,7 @@ The common store supports moderation of, and analytics on, UGC in the publish en
 
 ## Upgrading {#upgrading}
 
-When upgrading to the AEM 6.4 platform from previous versions of AEM, it is important to read Upgrading to AEM 6.4.
+When upgrading to the AEM 6.5 platform from previous versions of AEM, it is important to read Upgrading to AEM 6.5.
 
 In addition to upgrading the platform, read [Upgrading to AEM Communities 6.4](upgrade.md) to learn about Communities changes.
 
@@ -286,11 +286,11 @@ The following images show the results of changing the port from 4503 to 6103 by:
 
 #### Default Agent (publish) {#default-agent-publish}
 
-![chlimage_1-412](assets/chlimage_1-412.png) 
+![chlimage_1-412](assets/chlimage_1-412.png)
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
-![chlimage_1-413](assets/chlimage_1-413.png) 
+![chlimage_1-413](assets/chlimage_1-413.png)
 
 ### Tunnel Service on Author {#tunnel-service-on-author}
 
@@ -302,7 +302,7 @@ To enable the tunnel service:
 
 * On **author**
 * Sign in with administrative privileges
-* If publisher is not localhost:4503 or transport user is not `admin`,  
+* If publisher is not localhost:4503 or transport user is not `admin`,
 
   Then [configure the replication agent](#replication-agents-on-author)
 
@@ -315,7 +315,7 @@ To enable the tunnel service:
 * Check the **[!UICONTROL enable]** box
 * Select **[!UICONTROL Save]**
 
-![chlimage_1-414](assets/chlimage_1-414.png) 
+![chlimage_1-414](assets/chlimage_1-414.png)
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
@@ -327,14 +327,14 @@ In order to copy the key material from author to all other instances, it is nece
 
 * Access the AEM instance, typically an author instance, that contains the key material to copy
 
-    * Locate the `com.adobe.granite.crypto.file` bundle in the local file system  
+    * Locate the `com.adobe.granite.crypto.file` bundle in the local file system
 
       For example,
 
         * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
         * The `bundle.info` file will identify the bundle
 
-    * Navigate into the data folder 
+    * Navigate into the data folder
 
       For example,
 
@@ -344,7 +344,7 @@ In order to copy the key material from author to all other instances, it is nece
 
 * For each target AEM instance
 
-    * Navigate into the data folder  
+    * Navigate into the data folder
 
       For example,
 
@@ -378,7 +378,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle)
 
-![chlimage_1-415](assets/chlimage_1-415.png) 
+![chlimage_1-415](assets/chlimage_1-415.png)
 
 #### Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
@@ -391,7 +391,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ![chlimage_1-416](assets/chlimage_1-416.png)
 
-* After a moment, a **Success** dialog should appear:  
+* After a moment, a **Success** dialog should appear:
 
   `Operation completed successfully.`
 

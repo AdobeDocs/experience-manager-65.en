@@ -6,7 +6,7 @@ seo-description: null
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 ---
@@ -37,16 +37,16 @@ For example, you can prepopulate a form such as the sample confirmation form. (S
 To prepopulate the sample confirmation form, you have to create an XML data source that contains three XML elements that match the three fields in the form. This form contains the following three fields: `FirstName`, `LastName`, and `Amount`. The first step is to create an XML data source that contains XML elements that match the fields located in the form design. The next step is to assign data values to the XML elements, as shown in the following XML code.
 
 ```as3
-     <Untitled> 
-         <FirstName>Jerry</FirstName> 
-         <LastName>Johnson</LastName> 
-         <Amount>250000</Amount> 
+     <Untitled>
+         <FirstName>Jerry</FirstName>
+         <LastName>Johnson</LastName>
+         <Amount>250000</Amount>
      </Untitled>
 ```
 
 After you prepopulate the confirmation form with this XML data source and then render the form, the data values that you assigned to the XML elements are displayed, as shown in the following diagram.
 
-![pf_pf_confirmxml3](assets/pf_pf_confirmxml3.png) 
+![pf_pf_confirmxml3](assets/pf_pf_confirmxml3.png)
 
 ### Prepopulating forms with flowable layouts {#prepopulating_forms_with_flowable_layouts-1}
 
@@ -60,34 +60,34 @@ Consider a web-based application, such as an online store. After an online shopp
 
 The following table describes the steps in this diagram.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Step</p></th> 
-   <th><p>Description</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Step</p></th>
+   <th><p>Description</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>A user purchases items from a web-based online store. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>After the user finishes purchasing items and clicks the Submit button, an in-memory XML data source is created. Purchased items and user information are placed into the in-memory XML data source. </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>The XML data source is used to prepopulate a purchase order form (an example of this form is shown following this table). </p></td> 
-  </tr> 
-  <tr> 
-   <td><p>4</p></td> 
-   <td><p>The purchase order form is rendered to the client web browser. </p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>A user purchases items from a web-based online store. </p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>After the user finishes purchasing items and clicks the Submit button, an in-memory XML data source is created. Purchased items and user information are placed into the in-memory XML data source. </p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>The XML data source is used to prepopulate a purchase order form (an example of this form is shown following this table). </p></td>
+  </tr>
+  <tr>
+   <td><p>4</p></td>
+   <td><p>The purchase order form is rendered to the client web browser. </p></td>
+  </tr>
+ </tbody>
 </table>
 
-The following diagram shows an example of a purchase order form. The information in the table can adjust to the number of records in the XML data. 
+The following diagram shows an example of a purchase order form. The information in the table can adjust to the number of records in the XML data.
 
 ![pf_pf_poform](assets/pf_pf_poform.png)
 
@@ -108,57 +108,57 @@ An XML data source that is used to prepopulate the purchase order form shown in 
 The following XML data source is used to prepopulate the purchase order form.
 
 ```as3
-     <header>  
-         <!-- XML elements used to prepopulate non-repeating fields such as address 
-         <!and city  
-         <txtPONum>8745236985</txtPONum>  
-         <dtmDate>2004-02-08</dtmDate>  
-         <txtOrderedByCompanyName>Any Company Name</txtOrderedByCompanyName>  
-         <txtOrderedByAddress>555, Any Blvd.</txtOrderedByAddress>  
-         <txtOrderedByCity>Any City</txtOrderedByCity>  
-         <txtOrderedByStateProv>ST</txtOrderedByStateProv>  
-         <txtOrderedByZipCode>12345</txtOrderedByZipCode>  
-         <txtOrderedByCountry>Any Country</txtOrderedByCountry>  
-         <txtOrderedByPhone>(123) 456-7890</txtOrderedByPhone>  
-         <txtOrderedByFax>(123) 456-7899</txtOrderedByFax>  
-         <txtOrderedByContactName>Contact Name</txtOrderedByContactName>  
-         <txtDeliverToCompanyName>Any Company Name</txtDeliverToCompanyName>  
-         <txtDeliverToAddress>7895, Any Street</txtDeliverToAddress>  
-         <txtDeliverToCity>Any City</txtDeliverToCity>  
-         <txtDeliverToStateProv>ST</txtDeliverToStateProv>  
-         <txtDeliverToZipCode>12346</txtDeliverToZipCode>  
-         <txtDeliverToCountry>Any Country</txtDeliverToCountry>  
-         <txtDeliverToPhone>(123) 456-7891</txtDeliverToPhone>  
-         <txtDeliverToFax>(123) 456-7899</txtDeliverToFax>  
-         <txtDeliverToContactName>Contact Name</txtDeliverToContactName>  
-     </header>  
-     <detail>  
-         <!-- A data subgroup that contains information about the monitor> 
-         <txtPartNum>00010-100</txtPartNum>  
-         <txtDescription>Monitor</txtDescription>  
-         <numQty>1</numQty>  
-         <numUnitPrice>350.00</numUnitPrice>  
-     </detail>  
-     <detail>  
-         <!-- A data subgroup that contains information about the desk lamp> 
-         <txtPartNum>00010-200</txtPartNum>  
-         <txtDescription>Desk lamps</txtDescription>  
-         <numQty>3</numQty>  
-         <numUnitPrice>55.00</numUnitPrice>  
-     </detail>  
-     <detail> 
-         <!-- A data subgroup that contains information about the Phone> 
-             <txtPartNum>00025-275</txtPartNum>  
-             <txtDescription>Phone</txtDescription>  
-             <numQty>5</numQty>  
-             <numUnitPrice>85.00</numUnitPrice>  
-     </detail>  
-     <detail> 
-         <!-- A data subgroup that contains information about the address book> 
-         <txtPartNum>00300-896</txtPartNum>  
-         <txtDescription>Address book</txtDescription>  
-         <numQty>2</numQty>  
-         <numUnitPrice>15.00</numUnitPrice>  
+     <header>
+         <!-- XML elements used to prepopulate non-repeating fields such as address
+         <!and city
+         <txtPONum>8745236985</txtPONum>
+         <dtmDate>2004-02-08</dtmDate>
+         <txtOrderedByCompanyName>Any Company Name</txtOrderedByCompanyName>
+         <txtOrderedByAddress>555, Any Blvd.</txtOrderedByAddress>
+         <txtOrderedByCity>Any City</txtOrderedByCity>
+         <txtOrderedByStateProv>ST</txtOrderedByStateProv>
+         <txtOrderedByZipCode>12345</txtOrderedByZipCode>
+         <txtOrderedByCountry>Any Country</txtOrderedByCountry>
+         <txtOrderedByPhone>(123) 456-7890</txtOrderedByPhone>
+         <txtOrderedByFax>(123) 456-7899</txtOrderedByFax>
+         <txtOrderedByContactName>Contact Name</txtOrderedByContactName>
+         <txtDeliverToCompanyName>Any Company Name</txtDeliverToCompanyName>
+         <txtDeliverToAddress>7895, Any Street</txtDeliverToAddress>
+         <txtDeliverToCity>Any City</txtDeliverToCity>
+         <txtDeliverToStateProv>ST</txtDeliverToStateProv>
+         <txtDeliverToZipCode>12346</txtDeliverToZipCode>
+         <txtDeliverToCountry>Any Country</txtDeliverToCountry>
+         <txtDeliverToPhone>(123) 456-7891</txtDeliverToPhone>
+         <txtDeliverToFax>(123) 456-7899</txtDeliverToFax>
+         <txtDeliverToContactName>Contact Name</txtDeliverToContactName>
+     </header>
+     <detail>
+         <!-- A data subgroup that contains information about the monitor>
+         <txtPartNum>00010-100</txtPartNum>
+         <txtDescription>Monitor</txtDescription>
+         <numQty>1</numQty>
+         <numUnitPrice>350.00</numUnitPrice>
+     </detail>
+     <detail>
+         <!-- A data subgroup that contains information about the desk lamp>
+         <txtPartNum>00010-200</txtPartNum>
+         <txtDescription>Desk lamps</txtDescription>
+         <numQty>3</numQty>
+         <numUnitPrice>55.00</numUnitPrice>
+     </detail>
+     <detail>
+         <!-- A data subgroup that contains information about the Phone>
+             <txtPartNum>00025-275</txtPartNum>
+             <txtDescription>Phone</txtDescription>
+             <numQty>5</numQty>
+             <numUnitPrice>85.00</numUnitPrice>
+     </detail>
+     <detail>
+         <!-- A data subgroup that contains information about the address book>
+         <txtPartNum>00300-896</txtPartNum>
+         <txtDescription>Address book</txtDescription>
+         <numQty>2</numQty>
+         <numUnitPrice>15.00</numUnitPrice>
      </detail>
 ```
 
@@ -245,40 +245,40 @@ To prepopulate a form with a flowable layout by using the Forms API (Java), perf
     * Create a Java `DocumentBuilder` object by calling the `DocumentBuilderFactory` object’s `newDocumentBuilder` method.
     * Call the `DocumentBuilder` object’s `newDocument` method to instantiate a `org.w3c.dom.Document` object.
     * Create the XML data source’s root element by invoking the `org.w3c.dom.Document` object’s `createElement` method. This creates an `Element` object that represents the root element. Pass a string value representing the name of the element to the `createElement` method. Cast the return value to `Element`. Next, append the root element to the document by calling the `Document` object’s `appendChild` method, and pass the root element object as an argument. The following lines of code shows this application logic:
-  
+
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
-  
+
     * Create the XML data source’s header element by calling the `Document` object’s `createElement` method. Pass a string value representing the name of the element to the `createElement` method. Cast the return value to `Element`. Next, append the header element to the root element by calling the `root` object’s `appendChild` method, and pass the header element object as an argument. The XML elements that are appended to the header element correspond to the static portion of the form. The following lines of code show this application logic:
-  
+
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
-  
+
     * Create a child element that belongs to the header element by calling the `Document` object’s `createElement` method, and pass a string value that represents the element’s name. Cast the return value to `Element`. Next, set a value for the child element by calling its `appendChild` method, and pass the `Document` object’s `createTextNode` method as an argument. Specify a string value that appears as the child element’s value. Finally, append the child element to the header element by calling the header element’s `appendChild` method, and pass the child element object as an argument. The following lines of code show this application logic:
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-    
+
     * Add all remaining elements to the header element by repeating the last sub-step for each field appearing in the static portion of the form (in the XML data source diagram, these fields are shown in section A. (See [Understanding data subgroups](#understanding-data-subgroups).)
     * Create the XML data source’s detail element by calling the `Document` object’s `createElement` method. Pass a string value representing the name of the element to the `createElement` method. Cast the return value to `Element`. Next, append the detail element to the root element by calling the `root` object’s `appendChild` method, and pass the detail element object as an argument. The XML elements that are appended to the detail element correspond to the dynamic portion of the form. The following lines of code show this application logic:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
-    
+
     * Create a child element that belongs to the detail element by calling the `Document` object’s `createElement` method, and pass a string value that represents the element’s name. Cast the return value to `Element`. Next, set a value for the child element by calling its `appendChild` method, and pass the `Document` object’s `createTextNode` method as an argument. Specify a string value that appears as the child element’s value. Finally, append the child element to the detail element by calling the detail element’s `appendChild` method, and pass the child element object as an argument. The following lines of code show this application logic:
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
-    
+
     * Repeat the last sub-step for all XML elements to append to the detail element. To properly create the XML data source used to populate the purchase order form, you must append the following XML elements to the detail element: `txtDescription`, `numQty`, and `numUnitPrice`.
     * Repeat the last two sub-steps for all data items used to prepopulate the form.
 
 1. Convert the XML data source
 
-    * Create a `javax.xml.transform.Transformer` object by invoking the `javax.xml.transform.Transformer` object’s static `newInstance` method. 
-    * Create a `Transformer` object by invoking the `TransformerFactory` object’s `newTransformer` method. 
-    * Create a `ByteArrayOutputStream` object by using its constructor. 
-    * Create a `javax.xml.transform.dom.DOMSource` object by using its constructor and passing the `org.w3c.dom.Document` object that was created in step 1. 
+    * Create a `javax.xml.transform.Transformer` object by invoking the `javax.xml.transform.Transformer` object’s static `newInstance` method.
+    * Create a `Transformer` object by invoking the `TransformerFactory` object’s `newTransformer` method.
+    * Create a `ByteArrayOutputStream` object by using its constructor.
+    * Create a `javax.xml.transform.dom.DOMSource` object by using its constructor and passing the `org.w3c.dom.Document` object that was created in step 1.
     * Create a `javax.xml.transform.dom.DOMSource` object by using its constructor and passing the `ByteArrayOutputStream` object.
-    * Populate the Java `ByteArrayOutputStream` object by invoking the `javax.xml.transform.Transformer` object’s `transform` method and passing the `javax.xml.transform.dom.DOMSource` and the `javax.xml.transform.stream.StreamResult` objects. 
-    * Create a byte array and allocate the size of the `ByteArrayOutputStream` object to the byte array. 
-    * Populate the byte array by invoking the `ByteArrayOutputStream` object’s `toByteArray` method. 
+    * Populate the Java `ByteArrayOutputStream` object by invoking the `javax.xml.transform.Transformer` object’s `transform` method and passing the `javax.xml.transform.dom.DOMSource` and the `javax.xml.transform.stream.StreamResult` objects.
+    * Create a byte array and allocate the size of the `ByteArrayOutputStream` object to the byte array.
+    * Populate the byte array by invoking the `ByteArrayOutputStream` object’s `toByteArray` method.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the byte array.
 
 1. Render a prepopulated form
@@ -287,16 +287,16 @@ To prepopulate a form with a flowable layout by using the Forms API (Java), perf
 
     * A string value that specifies the form design name, including the file name extension.
     * A `com.adobe.idp.Document` object that contains data to merge with the form. Ensure that you use the `com.adobe.idp.Document` object created in steps one and two.
-    * A `PDFFormRenderSpec` object that stores run-time options. 
-    * A `URLSpec` object that contains URI values that are required by the Forms service. 
+    * A `PDFFormRenderSpec` object that stores run-time options.
+    * A `URLSpec` object that contains URI values that are required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
 
    The `renderPDFForm` method returns a `FormsResult` object that contains a form data stream that must be written to the client web browser.
 
-    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser. 
-    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method. 
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method. 
-    * Create a byte array populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument. 
+    * Create a `javax.servlet.ServletOutputStream` object used to send a form data stream to the client web browser.
+    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method.
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
+    * Create a byte array populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument.
     * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
@@ -324,37 +324,37 @@ To prepopulate a form with a flowable layout by using the Forms API (web service
     * Create the XML data source’s root element by invoking the `org.w3c.dom.Document` object’s `createElement` method. This creates an `Element` object that represents the root element. Pass a string value representing the name of the element to the `createElement` method. Cast the return value to `Element`. Next, append the root element to the document by calling the `Document` object’s `appendChild` method, and pass the root element object as an argument. The following lines of code show this application logic:
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
-    
+
     * Create the XML data source’s header element by calling the `Document` object’s `createElement` method. Pass a string value representing the name of the element to the `createElement` method. Cast the return value to `Element`. Next, append the header element to the root element by calling the `root` object’s `appendChild` method, and pass the header element object as an argument. The XML elements that are appended to the header element correspond to the static portion of the form. The following lines of code show this application logic:
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
-    
+
     * Create a child element that belongs to the header element by calling the `Document` object’s `createElement` method, and pass a string value that represents the element’s name. Cast the return value to `Element`. Next, set a value for the child element by calling its `appendChild` method, and pass the `Document` object’s `createTextNode` method as an argument. Specify a string value that appears as the child element’s value. Finally, append the child element to the header element by calling the header element’s `appendChild` method, and pass the child element object as an argument. The following lines of code shows this application logic:
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
-    
+
     * Add all remaining elements to the header element by repeating the last sub-step for each field appearing in the static portion of the form (in the XML data source diagram, these fields are shown in section A. (See [Understanding data subgroups](#understanding-data-subgroups).)
     * Create the XML data source’s detail element by calling the `Document` object’s `createElement` method. Pass a string value representing the name of the element to the `createElement` method. Cast the return value to `Element`. Next, append the detail element to the root element by calling the `root` object’s `appendChild` method, and pass the detail element object as an argument. The XML elements that are appended to the detail element correspond to the dynamic portion of the form. The following lines of code shows this application logic:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
-    
+
     * Create a child element that belongs to the detail element by calling the `Document` object’s `createElement` method, and pass a string value that represents the element’s name. Cast the return value to `Element`. Next, set a value for the child element by calling its `appendChild` method, and pass the `Document` object’s `createTextNode` method as an argument. Specify a string value that appears as the child element’s value. Finally, append the child element to the detail element by calling the detail element’s `appendChild` method, and pass the child element object as an argument. The following lines of code shows this application logic:
-    
+
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
-    
+
     * Repeat the last sub-step for all XML elements to append to the detail element. To properly create the XML data source used to populate the purchase order form, you must append the following XML elements to the detail element: `txtDescription`, `numQty`, and `numUnitPrice`.
     * Repeat the last two sub-steps for all data items used to prepopulate the form.
 
 1. Convert the XML data source
 
-    * Create a `javax.xml.transform.Transformer` object by invoking the `javax.xml.transform.Transformer` object’s static `newInstance` method. 
-    * Create a `Transformer` object by invoking the `TransformerFactory` object’s `newTransformer` method. 
-    * Create a `ByteArrayOutputStream` object by using its constructor. 
-    * Create a `javax.xml.transform.dom.DOMSource` object by using its constructor and passing the `org.w3c.dom.Document` object that was created in step 1. 
+    * Create a `javax.xml.transform.Transformer` object by invoking the `javax.xml.transform.Transformer` object’s static `newInstance` method.
+    * Create a `Transformer` object by invoking the `TransformerFactory` object’s `newTransformer` method.
+    * Create a `ByteArrayOutputStream` object by using its constructor.
+    * Create a `javax.xml.transform.dom.DOMSource` object by using its constructor and passing the `org.w3c.dom.Document` object that was created in step 1.
     * Create a `javax.xml.transform.dom.DOMSource` object by using its constructor and passing the `ByteArrayOutputStream` object.
-    * Populate the Java `ByteArrayOutputStream` object by invoking the `javax.xml.transform.Transformer` object’s `transform` method and passing the `javax.xml.transform.dom.DOMSource` and the `javax.xml.transform.stream.StreamResult` objects. 
-    * Create a byte array and allocate the size of the `ByteArrayOutputStream` object to the byte array. 
-    * Populate the byte array by invoking the `ByteArrayOutputStream` object’s `toByteArray` method. 
+    * Populate the Java `ByteArrayOutputStream` object by invoking the `javax.xml.transform.Transformer` object’s `transform` method and passing the `javax.xml.transform.dom.DOMSource` and the `javax.xml.transform.stream.StreamResult` objects.
+    * Create a byte array and allocate the size of the `ByteArrayOutputStream` object to the byte array.
+    * Populate the byte array by invoking the `ByteArrayOutputStream` object’s `toByteArray` method.
     * Create a `BLOB` object by using its constructor and invoke its `setBinaryData` method and pass the byte array.
 
 1. Render a prepopulated form
@@ -362,23 +362,23 @@ To prepopulate a form with a flowable layout by using the Forms API (web service
    Invoke the `FormsService` object’s `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension.
-    * A `BLOB` object that contains data to merge with the form. Ensure that you use the `BLOB` object that was created in steps one and two. 
+    * A `BLOB` object that contains data to merge with the form. Ensure that you use the `BLOB` object that was created in steps one and two.
     * A `PDFFormRenderSpecc` object that stores run-time options. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
     * A `URLSpec` object that contains URI values that are required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
-    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This is used to store the rendered PDF form. 
+    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This is used to store the rendered PDF form.
     * An empty `javax.xml.rpc.holders.LongHolder` object that is populated by the method. (This argument will store the number of pages in the form).
     * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the method. (This argument will store the locale value).
     * An empty `com.adobe.idp.services.holders.FormsResultHolder` object that will contain the results of this operation.
 
    The `renderPDFForm` method populates the `com.adobe.idp.services.holders.FormsResultHolder` object that is passed as the last argument value with a form data stream that must be written to the client web browser.
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member. 
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method. 
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
     * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array. 
+    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
     * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
    >[!NOTE]

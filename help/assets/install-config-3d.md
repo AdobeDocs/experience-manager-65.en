@@ -7,7 +7,7 @@ uuid: a60732ff-fd66-4f29-b901-42a3cfd58b65
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 ---
 
@@ -47,11 +47,11 @@ See also [Advanced configuration settings](advanced-config-3d.md).
 
       [https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_vs2010_win.exe](https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_vs2010_win.exe)
 
-    * **OS X** 
+    * **OS X**
 
       [https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_clang_mac.pkg.tgz](https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_clang_mac.pkg.tgz)
 
-    * **Linux** 
+    * **Linux**
 
       [https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_linux.tar.gz](https://download.autodesk.com/us/fbx_release_older/2016.1.2/fbx20161_2_fbxsdk_linux.tar.gz)
 
@@ -83,10 +83,10 @@ See also [Advanced Configuration Settings](advanced-config-3d.md).
 1. Using a supported browser, log on to AEM with Administrator privileges.
 1. In AEM, click the AEM logo to access the global navigation console, then click the **[!UICONTROL Tools]** icon and navigate to **[!UICONTROL Administration > Deployment > Package Share]**.
 1. On the Adobe page, use your Adobe ID credentials to log on to your Adobe Creative Cloud account.
-1. On the Adobe packages page, locate version 3.0.1 of `AEM-6.4-DynamicMedia-3D` feature pack, then download it.  
+1. On the Adobe packages page, locate version 3.0.1 of `AEM-6.4-DynamicMedia-3D` feature pack, then download it.
 
 1. In AEM, click **[!UICONTROL Tools > Administration > Deployment > Package Manager]**.
-1. Locate the downloaded feature pack, then click **[!UICONTROL Install]**.  
+1. Locate the downloaded feature pack, then click **[!UICONTROL Install]**.
 
 1. In the **[!UICONTROL Install Package]** dialog box, expand **Advanced Settings**, then set **[!UICONTROL Access Control Handling]** to **Merge**.
 1. Click **[!UICONTROL Install]** to begin installation of the package.
@@ -98,7 +98,7 @@ See also [Advanced Configuration Settings](advanced-config-3d.md).
 **To configure the 3D asset ingestion workflow**:
 
 1. In AEM, click the AEM logo to access the global navigation console, then click the **[!UICONTROL Tools]** icon and navigate to **[!UICONTROL Workflow > Models]**.
-1. On the **[!UICONTROL Workflow Models]** page, hover over the **[!UICONTROL DAM Update Asset]** workflow, and when the check mark appears, select it.  
+1. On the **[!UICONTROL Workflow Models]** page, hover over the **[!UICONTROL DAM Update Asset]** workflow, and when the check mark appears, select it.
 
 1. On the toolbar, click **[!UICONTROL Edit]**.
 1. On the **[!UICONTROL DAM Update Asset]** screen, in the AEM floating panel, click the **[!UICONTROL Plus]** icon to the right of Workflow to expand the list. Select **[!UICONTROL Process Step]** in the list.
@@ -108,7 +108,7 @@ See also [Advanced Configuration Settings](advanced-config-3d.md).
 
 1. Double-click the newly added process step.
 1. In the **[!UICONTROL Step Properties]** dialog box, under the **[!UICONTROL Common]** tab, in the **[!UICONTROL Title]** field, enter a suitable description for the process such as `Process 3D content`.
-1. Click the **[!UICONTROL Process]** tab.  
+1. Click the **[!UICONTROL Process]** tab.
 
 1. From the **[!UICONTROL Process]** drop-down menu, select **[!UICONTROL Geometric 3D Object Service]**, then select the **[!UICONTROL Handler Advance]** check box.
 
@@ -217,7 +217,7 @@ You must configure an external conversion service to allow ingestion, preview, a
     1. Navigate to `/libs/settings/dam/v3D/services/dncr` in **[!UICONTROL CRXDE Lite]**.
     1. Set the `outputFormat` property to either `Dn` or `generic`.
 
-       When set to `Dn`, the `.glb` conversion includes Adobe-specific extensions, such as IBL lighting, for best quality when viewing Dn assets in AEM. However, the converted .glb rendition may not render well in third-party applications.  
+       When set to `Dn`, the `.glb` conversion includes Adobe-specific extensions, such as IBL lighting, for best quality when viewing Dn assets in AEM. However, the converted .glb rendition may not render well in third-party applications.
 
        When set to `generic`, the `.glb` rendition is generic without Adobe-specific extensions. This setting allows it to be used in third-party applications, while viewing with the AEM 3D viewer will be visually sub-optimal.
 
@@ -231,7 +231,7 @@ You must configure an external conversion service to allow ingestion, preview, a
     1. Open AEM Assets.
     1. Upload `logo_sphere.dn` to the `test3d` folder. The file is located in `sample-3D-content/models`.
 
-       Note that `sample-3D-content.zip` was previously downloaded for validating the basic 3D functionality. 
+       Note that `sample-3D-content.zip` was previously downloaded for validating the basic 3D functionality.
     1. Return to the **[!UICONTROL Card View]** and observe the message banner shown on the uploaded asset. The **[!UICONTROL Converting Format...]** banner is displayed while the conversion process is in progress.
     1. After all processing is complete, open the asset in **[!UICONTROL Detail View]** to verify that the converted asset is displayed correctly and that the viewer's navigation controls are usable.
 

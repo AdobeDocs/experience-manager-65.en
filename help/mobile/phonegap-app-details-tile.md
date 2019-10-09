@@ -1,12 +1,12 @@
 ---
 title: Manage App Tile
 seo-title: Manage App Tile
-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application. 
-seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application. 
+description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
+seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
 uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 ---
@@ -19,7 +19,7 @@ discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 
 The **Manage App** Tile on the App Dashboard provides the ability to modify details about the Application. To open the Details page click on the Manage App tile's details link. From within the Manage App page you can edit the PhoneGap Application Configuration (config.xml) settings and prepare your application for submission to the various application stores.
 
-![chlimage_1-116](assets/chlimage_1-116.png) 
+![chlimage_1-116](assets/chlimage_1-116.png)
 
 ## Understanding the Manage App Tile {#understanding-the-manage-app-tile}
 
@@ -29,7 +29,7 @@ You can drill into each tile in the **Manage App** tile to view or edit details 
 
 You can edit the **Name**, **Author**, **Short Description**, and the **Description** for your app from this tab.
 
-![chlimage_1-117](assets/chlimage_1-117.png) 
+![chlimage_1-117](assets/chlimage_1-117.png)
 
 ### The Advanced tab {#the-advanced-tab}
 
@@ -38,9 +38,9 @@ Each mobile application platform describes what data is collected, targeting eac
 Platforms displayed is driven by the PhoneGap config.xml content:
 
 ```xml
-<widget>  
-<gap:platform name="ios"/>  
-<gap:platform name="android"/>  
+<widget>
+<gap:platform name="ios"/>
+<gap:platform name="android"/>
 </widget>
 ```
 
@@ -52,7 +52,7 @@ Each vendor application store, such as Apple App Store or Google Play Store, for
 >
 >See [Mobile Quickstart for AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) for more details.
 
-![chlimage_1-118](assets/chlimage_1-118.png) 
+![chlimage_1-118](assets/chlimage_1-118.png)
 
 ### Metadata {#metadata}
 
@@ -104,7 +104,7 @@ The downloaded zip file contains an itmsp file which can be inspected for the me
 
 The export functionality is used to provide a convenient way of collecting the screenshots and metadata that can be passed along to the application publisher for input into the vendor specific application store.
 
-![chlimage_1-120](assets/chlimage_1-120.png) 
+![chlimage_1-120](assets/chlimage_1-120.png)
 
 #### Android Metadata {#android-metadata}
 
@@ -112,7 +112,7 @@ When selecting the Android platform, there is no custom metadata at this point t
 
 The export functionality is used to provide a convenient way of collecting the screenshots and metadata that can be passed along to the application publisher for input into the vendor specific application store.
 
-![chlimage_1-121](assets/chlimage_1-121.png) 
+![chlimage_1-121](assets/chlimage_1-121.png)
 
 ### Content Update Server URL {#content-update-server-url}
 
@@ -130,7 +130,7 @@ The Content Update Server URL property is the URL that must point to a publish i
 
 The **Plugins** tab describes the plugins associated with your app. This information will be used to retrieve the appropriate plugin during a build.
 
-![chlimage_1-122](assets/chlimage_1-122.png) 
+![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### The Screenshots tab {#the-screenshots-tab}
 
@@ -144,9 +144,9 @@ The **Screenshots** tab displays the supported screenshot resolutions on differe
 
 ### The Authentication tab {#the-authentication-tab}
 
-The **Authentication** tab allows you to select an OAuth client to be assoicated with your application and enables a developer to utilize Adobe Experience Manager's OAuth authentication. 
+The **Authentication** tab allows you to select an OAuth client to be assoicated with your application and enables a developer to utilize Adobe Experience Manager's OAuth authentication.
 
-![chlimage_1-124](assets/chlimage_1-124.png) 
+![chlimage_1-124](assets/chlimage_1-124.png)
 
 ### The Next Steps {#the-next-steps}
 

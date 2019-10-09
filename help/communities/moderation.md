@@ -5,7 +5,7 @@ description: How to access the Moderation console
 seo-description: How to access the Moderation console
 uuid: 920124b9-af6f-4622-adb6-b8e294c5607d
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
@@ -60,7 +60,7 @@ Only when signed in as an administrator, or as a member with ` [moderator permis
 Setting aside the left navigation rail (which appears on author, but not on publish), the moderation UI has following main areas:
 
 * **[Top navigation bar](#top-navigation-bar)**
-* **[Toolbar](#toolbar)** 
+* **[Toolbar](#toolbar)**
 * **[Content area](#content-area)**
 
 ### Top Navigation Bar {#top-navigation-bar}
@@ -77,7 +77,7 @@ The toolbar, located beneath the top navigation bar, provides the following togg
 
 ![toggleswitch](assets/toggleswitch.png)
 
-[Filter rail](moderation.md#filter-rail)  
+[Filter rail](moderation.md#filter-rail)
 Opens a rail, on selecting Search, which allows a choice of properties on which to filter the content.
 
 ![filterrail](assets/filterrail.png)
@@ -174,7 +174,7 @@ To add additional resources on which to filter:
 * Locate `AEM Communities Moderation Dashboard Filters`
 * Select the configuration to open in edit mode
 * Enter the ResourceType of a component on which to filter
-    * For example, to filter on included Voting components, enter:    
+    * For example, to filter on included Voting components, enter:
       `Voting=social/tally/components/hbs/voting`
 
 ![chlimage_1-475](assets/chlimage_1-475.png)

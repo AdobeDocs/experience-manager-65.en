@@ -5,7 +5,7 @@ description: Understand Dynamic Media image presets and learn how to create, mod
 seo-description: Understand Dynamic Media image presets and learn how to create, modify, and manage image presets
 uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
@@ -67,10 +67,10 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 
 The sub-assets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]**.
 
-See also [Viewing pages of a multi-page file](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).  
-  
-You can view the sub-assets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The sub-assets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on below the main asset. After they are stored, the **[!UICONTROL DAM Update Asset]** workflow processes them.  
-  
+See also [Viewing pages of a multi-page file](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
+
+You can view the sub-assets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The sub-assets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on below the main asset. After they are stored, the **[!UICONTROL DAM Update Asset]** workflow processes them.
+
 To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
 
 1. In the **[!UICONTROL DAM Update Asset]** workflow, the **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** process component rasterizes the first page of the original asset&ndash;using the configured resolution&ndash;into a `cqdam.preview.png` rendition.
@@ -98,40 +98,40 @@ Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Too
 
 **Arguments to rasterize PDF or AI workflow**
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Process Argument</strong></td> 
-   <td><strong>Default setting</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Mime Types</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td> 
-   <td>List of document mime-types that are considered to be PDF or Illustrator documents.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Max Width</td> 
-   <td>2048</td> 
-   <td>Maximum width of the generated preview rendition, in pixels.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Max Height</td> 
-   <td>2048</td> 
-   <td>Maximum height of the generated preview rendition, in pixels.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Resolution</td> 
-   <td>72</td> 
-   <td>Resolution to rasterize the first page, in ppi (pixels per inch).</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Process Argument</strong></td>
+   <td><strong>Default setting</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Mime Types</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
+   <td>List of document mime-types that are considered to be PDF or Illustrator documents.<br /> </td>
+  </tr>
+  <tr>
+   <td>Max Width</td>
+   <td>2048</td>
+   <td>Maximum width of the generated preview rendition, in pixels.<br /> </td>
+  </tr>
+  <tr>
+   <td>Max Height</td>
+   <td>2048</td>
+   <td>Maximum height of the generated preview rendition, in pixels.<br /> </td>
+  </tr>
+  <tr>
+   <td>Resolution</td>
+   <td>72</td>
+   <td>Resolution to rasterize the first page, in ppi (pixels per inch).</td>
+  </tr>
+ </tbody>
 </table>
 
-Using the default process arguments, the first page of a PDF/AI document is rasterized at 72 ppi and the generated preview image is sized at 2048 x 2048 pixels. For a typical deployment, you may want to increase the resolution to a minimum of 150 ppi or more. For example, a US letter size document at 300 ppi requires a maximum width and height of 2550 x 3300 pixels, respectively.  
-  
-**[!UICONTROL Max Width]** and **[!UICONTROL Max Height]** limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.  
-  
+Using the default process arguments, the first page of a PDF/AI document is rasterized at 72 ppi and the generated preview image is sized at 2048 x 2048 pixels. For a typical deployment, you may want to increase the resolution to a minimum of 150 ppi or more. For example, a US letter size document at 300 ppi requires a maximum width and height of 2550 x 3300 pixels, respectively.
+
+**[!UICONTROL Max Width]** and **[!UICONTROL Max Height]** limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
+
 The **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
 
 ### InDesign (INDD) file format {#indesign-indd-file-format}
@@ -140,8 +140,8 @@ If you intend to support the ingestion of INDD files so that you can generate dy
 
 For InDesign files, sub assets are extracted only if the Adobe InDesign server is integrated with AEM. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within AEM before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-See [Integrating AEM Assets with InDesign Server](indesign.md).  
-  
+See [Integrating AEM Assets with InDesign Server](indesign.md).
+
 The Media Extraction process component in the **[!UICONTROL DAM Update Asset]** workflow runs several preconfigured **[!UICONTROL Extend Scripts]** to process InDesign files.
 
 ![The Extend Script paths in the arguments of Media Extraction process](assets/media_extraction_arguments.png)
@@ -150,29 +150,29 @@ The **[!UICONTROL Extend Script]** paths in the arguments of **[!UICONTROL Media
 
 The following scripts, are used by Dynamic Media integration:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Extend Script name</strong></td> 
-   <td><strong>Default</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>Yes</td> 
-   <td>Generates a 300 ppi <code>thumbnail.jpg</code> rendition that is optimized and turned into a PTIFF rendition by <code>Dynamic Media Process Image Assets</code> process component.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>JPEGPagesExport.jsx</td> 
-   <td>Yes</td> 
-   <td>Generates a 300 ppi JPEG sub-asset for each page. The JPEG sub-asset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the <code>DAM Update Asset</code> workflow.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>No</td> 
-   <td>Generates a PDF sub-asset for each page. The PDF sub-asset gets processed as described earlier. Because the PDF contains a single page only, no sub-assets are generated.<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Extend Script name</strong></td>
+   <td><strong>Default</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>ThumbnailExport.jsx</td>
+   <td>Yes</td>
+   <td>Generates a 300 ppi <code>thumbnail.jpg</code> rendition that is optimized and turned into a PTIFF rendition by <code>Dynamic Media Process Image Assets</code> process component.<br /> </td>
+  </tr>
+  <tr>
+   <td>JPEGPagesExport.jsx</td>
+   <td>Yes</td>
+   <td>Generates a 300 ppi JPEG sub-asset for each page. The JPEG sub-asset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the <code>DAM Update Asset</code> workflow.<br /> </td>
+  </tr>
+  <tr>
+   <td>PDFPagesExport.jsx</td>
+   <td>No</td>
+   <td>Generates a PDF sub-asset for each page. The PDF sub-asset gets processed as described earlier. Because the PDF contains a single page only, no sub-assets are generated.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Configuring Image Thumbnail Size {#configuring-image-thumbnail-size}
@@ -232,7 +232,7 @@ Creating a Dynamic Media image preset lets you apply those settings to any image
 >
 >If using Internet Explorer 9, creating a preset does not appear in the preset list immediately after saving. To work around this issue, disable the cache for IE9.
 
-If you intend to support the ingestion of AI, PDF, and EPS files so that you can generate dynamic rendition of these file formats, you may want to review the following information before you create image presets.  
+If you intend to support the ingestion of AI, PDF, and EPS files so that you can generate dynamic rendition of these file formats, you may want to review the following information before you create image presets.
 See [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, you may want to review the following information before you create image presets.  See [InDesign (INDD) file format](#indesign-indd-file-format).
@@ -259,7 +259,7 @@ If you intend to support the ingestion of INDD files so that you can generate dy
 
 To create a responsive image preset, perform the steps in [Creating Image Presets](#creating-image-presets). When entering the height and width in the **[!UICONTROL Edit Image Preset]** window, erase the values and leave them blank.
 
-Leaving them blank tells AEM that this image preset is responsive. You can adjust the other values as appropriate. 
+Leaving them blank tells AEM that this image preset is responsive. You can adjust the other values as appropriate.
 
 ![chlimage_1-498](assets/chlimage_1-498.png)
 
@@ -281,139 +281,139 @@ When you create or edit image presets, you have the options described in this se
 
 #### Basic tab options {#basic-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Field</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Name</strong></td> 
-   <td>Enter a descriptive name without any blank spaces. Include the image-size specification in the name to help users identify this Image Preset.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Width and Height</strong></td> 
-   <td>Enter in pixels the size at which the image is delivered. Width and height must be larger than 0 pixels. If either value is 0, then no preset is created. If both values are blank, a responsive image preset is created.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Format</strong></td> 
-   <td><p>Choose a format from the menu.</p> <p>Choosing <strong>JPEG</strong> offers the following additional options:</p> 
-    <ul> 
-     <li><strong>Quality</strong> - Controls the JPEG compression level. This setting affects both file size and image quality. The JPEG quality scale is 1-100. Scale is visible when you drag the slider.</li> 
-     <li><strong>Enable JPG Chrominance Downsampling</strong> - Because the eye is less sensitive to high-frequency color information than high-frequency luminance, JPEG images divide image information into luminance and color components. When a JPEG image is compressed, the luminance component is left at full resolution, while the color components are downsampled by averaging together groups of pixels. Downsampling reduces the data volume by one half or one third with almost no impact on perceived quality. Downsampling is not applicable to grayscale images. This technique reduces the amount of compression useful for images with high contrast (for example, images with overlaid text).</li> 
-    </ul> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Field</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Name</strong></td>
+   <td>Enter a descriptive name without any blank spaces. Include the image-size specification in the name to help users identify this Image Preset.</td>
+  </tr>
+  <tr>
+   <td><strong>Width and Height</strong></td>
+   <td>Enter in pixels the size at which the image is delivered. Width and height must be larger than 0 pixels. If either value is 0, then no preset is created. If both values are blank, a responsive image preset is created.</td>
+  </tr>
+  <tr>
+   <td><strong>Format</strong></td>
+   <td><p>Choose a format from the menu.</p> <p>Choosing <strong>JPEG</strong> offers the following additional options:</p>
+    <ul>
+     <li><strong>Quality</strong> - Controls the JPEG compression level. This setting affects both file size and image quality. The JPEG quality scale is 1-100. Scale is visible when you drag the slider.</li>
+     <li><strong>Enable JPG Chrominance Downsampling</strong> - Because the eye is less sensitive to high-frequency color information than high-frequency luminance, JPEG images divide image information into luminance and color components. When a JPEG image is compressed, the luminance component is left at full resolution, while the color components are downsampled by averaging together groups of pixels. Downsampling reduces the data volume by one half or one third with almost no impact on perceived quality. Downsampling is not applicable to grayscale images. This technique reduces the amount of compression useful for images with high contrast (for example, images with overlaid text).</li>
+    </ul>
     <div>
-      Choosing 
-     <strong>GIF</strong> or 
-     <strong>GIF with alpha</strong> provides these additional 
-     <strong>GIF Color Quantization</strong> options: 
-    </div> 
-    <ul> 
-     <li><strong>Type </strong>- Select <strong>Adaptive</strong> (the default), <strong>Web</strong>, or <strong>Macintosh</strong>. If you select <strong>GIF with Alpha</strong>, the Macintosh option is not available.</li> 
-     <li><strong>Dither</strong> - Select <strong>Diffuse</strong> or <strong>Off</strong>.</li> 
-     <li><strong>Number of Colors </strong>- Enter a number between 2 and 256.</li> 
-     <li><strong>Color List</strong> - Enter a comma-separated list. For example, for white, gray, and black, enter 000000,888888,ffffff.</li> 
-    </ul> 
+      Choosing
+     <strong>GIF</strong> or
+     <strong>GIF with alpha</strong> provides these additional
+     <strong>GIF Color Quantization</strong> options:
+    </div>
+    <ul>
+     <li><strong>Type </strong>- Select <strong>Adaptive</strong> (the default), <strong>Web</strong>, or <strong>Macintosh</strong>. If you select <strong>GIF with Alpha</strong>, the Macintosh option is not available.</li>
+     <li><strong>Dither</strong> - Select <strong>Diffuse</strong> or <strong>Off</strong>.</li>
+     <li><strong>Number of Colors </strong>- Enter a number between 2 and 256.</li>
+     <li><strong>Color List</strong> - Enter a comma-separated list. For example, for white, gray, and black, enter 000000,888888,ffffff.</li>
+    </ul>
     <div>
-      Choosing 
-     <strong>PDF</strong>, 
-     <strong>TIFF</strong>, or 
-     <strong>TIFF with alpha</strong> provides this additional option: 
-    </div> 
-    <ul> 
-     <li><strong>Compression</strong> - Select a compression algorithm. Algorithm options for PDF are <strong>None</strong>, <strong>Zip</strong>, and <strong>Jpeg</strong>; for TIFF are <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, and <strong>Zip</strong>; and for TIFF with Alpha are <strong>None</strong>, <strong>LZW</strong>, and <strong>Zip</strong>.</li> 
-    </ul> <p>Choosing <strong>PNG</strong>, <strong>PNG with Alpha,</strong> or <strong>EPS</strong> provides no additional options.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Sharpening</strong></td> 
-   <td>Select the <strong>Enable Simple Sharpening</strong> option to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </td> 
-  </tr> 
- </tbody> 
+      Choosing
+     <strong>PDF</strong>,
+     <strong>TIFF</strong>, or
+     <strong>TIFF with alpha</strong> provides this additional option:
+    </div>
+    <ul>
+     <li><strong>Compression</strong> - Select a compression algorithm. Algorithm options for PDF are <strong>None</strong>, <strong>Zip</strong>, and <strong>Jpeg</strong>; for TIFF are <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, and <strong>Zip</strong>; and for TIFF with Alpha are <strong>None</strong>, <strong>LZW</strong>, and <strong>Zip</strong>.</li>
+    </ul> <p>Choosing <strong>PNG</strong>, <strong>PNG with Alpha,</strong> or <strong>EPS</strong> provides no additional options.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Sharpening</strong></td>
+   <td>Select the <strong>Enable Simple Sharpening</strong> option to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Advanced tab options {#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Field</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Color Space</strong></td> 
-   <td>Select <strong>RGB, CMYK,</strong> or <strong>Grayscale</strong> for the color space.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Color Profile</strong></td> 
-   <td>Select the output color space profile that the asset should be converted to if it is different than the working profile.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Render Intent</strong></td> 
-   <td>You can override the default rendering intent. Rendering intents determine what happens to colors that cannot be reproduced in the target color profile (out of gamut). The Render Intent is ignored if it is not compatible with the ICC profile. 
-    <ul> 
-     <li>Select <strong>Perceptual</strong> to compress the total gamut from one color space into another color space when one or more colors in the original image is out of the gamut of the destination color space.</li> 
-     <li>Select <strong>Relative Colorimetric</strong> when a color in the current color space is out of gamut in the target color space and you want to map it to the closest possible color within the gamut of the target color space without affecting any other colors. </li> 
-     <li>Select <strong>Saturation</strong> to reproduce the original image color saturation when converting into the target color space. </li> 
-     <li>Select <strong>Absolute Colorimetric</strong> to match colors exactly with no adjustment for white point or black point that would alter the image's brightness.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Blackpoint Compensation</strong></td> 
-   <td>Select this option if the output profile supports this feature. Blackpoint compensation is ignored if it is not compatible with the specified ICC profile.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Dithering</strong></td> 
-   <td>Select this option to possibly avoid or reduce color banding artifacts. </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Sharpening Type</strong></td> 
-   <td><p>Select <strong>None</strong>, <strong>Sharpen</strong>, or <strong>Unsharp Mask</strong>. </p> 
-    <ul> 
-     <li>Select <strong>None</strong> to disable sharpening.</li> 
-     <li>Select <strong>Sharpen </strong>to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </li> 
-     <li>Select<strong> Unsharp mask</strong> to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels) and a threshold of contrast that will be ignored. This effect uses the same options as Photoshop’s “Unsharp Mask” filter.</li> 
-    </ul> <p>In <strong>Unsharp Mask</strong>, you have the following options:</p> 
-    <ul> 
-     <li><strong>Amount</strong> - Controls the amount of contrast applied to edge pixels. The default real number value is 1.0. For high-resolution images, you can increase it to as high as 5.0. Think of Amount as a measure of filter intensity.</li> 
-     <li><strong>Radius</strong> - Determines the number of pixels surrounding the edge pixels that affect the sharpening. For high-resolution images, enter a real number from 1 through 2. A low value sharpens only the edge pixels; a high value sharpens a wider band of pixels. The correct value depends on the size of the image.</li> 
-     <li><strong>Threshold</strong> - Determines the range of contrast to ignore when the unsharp mask filter is applied. In other words, this option determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and are sharpened. To avoid introducing noise, experiment with integer values between 2 and 20. </li> 
-     <li><strong>Apply to</strong> - Determines whether the unsharpening applies to each color or brightness.</li> 
-    </ul> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Field</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Color Space</strong></td>
+   <td>Select <strong>RGB, CMYK,</strong> or <strong>Grayscale</strong> for the color space.</td>
+  </tr>
+  <tr>
+   <td><strong>Color Profile</strong></td>
+   <td>Select the output color space profile that the asset should be converted to if it is different than the working profile.</td>
+  </tr>
+  <tr>
+   <td><strong>Render Intent</strong></td>
+   <td>You can override the default rendering intent. Rendering intents determine what happens to colors that cannot be reproduced in the target color profile (out of gamut). The Render Intent is ignored if it is not compatible with the ICC profile.
+    <ul>
+     <li>Select <strong>Perceptual</strong> to compress the total gamut from one color space into another color space when one or more colors in the original image is out of the gamut of the destination color space.</li>
+     <li>Select <strong>Relative Colorimetric</strong> when a color in the current color space is out of gamut in the target color space and you want to map it to the closest possible color within the gamut of the target color space without affecting any other colors. </li>
+     <li>Select <strong>Saturation</strong> to reproduce the original image color saturation when converting into the target color space. </li>
+     <li>Select <strong>Absolute Colorimetric</strong> to match colors exactly with no adjustment for white point or black point that would alter the image's brightness.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Blackpoint Compensation</strong></td>
+   <td>Select this option if the output profile supports this feature. Blackpoint compensation is ignored if it is not compatible with the specified ICC profile.</td>
+  </tr>
+  <tr>
+   <td><strong>Dithering</strong></td>
+   <td>Select this option to possibly avoid or reduce color banding artifacts. </td>
+  </tr>
+  <tr>
+   <td><strong>Sharpening Type</strong></td>
+   <td><p>Select <strong>None</strong>, <strong>Sharpen</strong>, or <strong>Unsharp Mask</strong>. </p>
+    <ul>
+     <li>Select <strong>None</strong> to disable sharpening.</li>
+     <li>Select <strong>Sharpen </strong>to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </li>
+     <li>Select<strong> Unsharp mask</strong> to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels) and a threshold of contrast that will be ignored. This effect uses the same options as Photoshop’s “Unsharp Mask” filter.</li>
+    </ul> <p>In <strong>Unsharp Mask</strong>, you have the following options:</p>
+    <ul>
+     <li><strong>Amount</strong> - Controls the amount of contrast applied to edge pixels. The default real number value is 1.0. For high-resolution images, you can increase it to as high as 5.0. Think of Amount as a measure of filter intensity.</li>
+     <li><strong>Radius</strong> - Determines the number of pixels surrounding the edge pixels that affect the sharpening. For high-resolution images, enter a real number from 1 through 2. A low value sharpens only the edge pixels; a high value sharpens a wider band of pixels. The correct value depends on the size of the image.</li>
+     <li><strong>Threshold</strong> - Determines the range of contrast to ignore when the unsharp mask filter is applied. In other words, this option determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and are sharpened. To avoid introducing noise, experiment with integer values between 2 and 20. </li>
+     <li><strong>Apply to</strong> - Determines whether the unsharpening applies to each color or brightness.</li>
+    </ul>
     <div>
-      Sharpening is described in 
-     <a href="https://marketing.adobe.com/resources/help/en_US/s7/sharpening/s7_sharpening_images.pdf">Sharpening Images</a>. 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Resampling Mode</strong></td> 
-   <td>Select a <strong>Resampling mode</strong> option. These options sharpen the image when it is downsampled: 
-    <ul> 
-     <li><strong>Bi-Linear</strong> - The fastest resampling method. Some aliasing artifacts are noticeable.</li> 
-     <li><strong>Bi-Cubic</strong> - Increases CPU usage but yields sharper images with less noticeable aliasing artifacts.</li> 
-     <li><strong>Sharp2</strong> - Can produce slightly sharper results than Bi-Cubic, but at an even higher CPU cost.</li> 
-     <li><strong>Bi-Sharp</strong> - Selects Photoshop default resampler for reducing image size, which is called <strong>bicubic sharper</strong> in Adobe Photoshop.</li> 
-     <li><strong>Each Color</strong> and <strong>Brightness</strong> - each method can be based on color or brightness. By default <strong>Each Color</strong> is selected.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Print resolution</strong></td> 
-   <td>Select a resolution for printing this image; 72 pixels is the default.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Image Modifier</strong></td> 
-   <td><p>Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the <strong>Image Modifiers</strong> field. These parameters are defined in the <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">Image Server Protocol command reference</a>.</p> <p>Important: The following functionality listed in the API is not supported:</p> 
-    <ul> 
-     <li>Basic templating and text rendering commands: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li> 
-     <li>Localization commands: <code>locale=</code> and <code>req=xlate</code></li> 
-     <li><code>req=set</code> is not available for general usage.</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>Non-core Dynamic Media services: SVG, Image Rendering, and Web-to-Print</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      Sharpening is described in
+     <a href="https://marketing.adobe.com/resources/help/en_US/s7/sharpening/s7_sharpening_images.pdf">Sharpening Images</a>.
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>Resampling Mode</strong></td>
+   <td>Select a <strong>Resampling mode</strong> option. These options sharpen the image when it is downsampled:
+    <ul>
+     <li><strong>Bi-Linear</strong> - The fastest resampling method. Some aliasing artifacts are noticeable.</li>
+     <li><strong>Bi-Cubic</strong> - Increases CPU usage but yields sharper images with less noticeable aliasing artifacts.</li>
+     <li><strong>Sharp2</strong> - Can produce slightly sharper results than Bi-Cubic, but at an even higher CPU cost.</li>
+     <li><strong>Bi-Sharp</strong> - Selects Photoshop default resampler for reducing image size, which is called <strong>bicubic sharper</strong> in Adobe Photoshop.</li>
+     <li><strong>Each Color</strong> and <strong>Brightness</strong> - each method can be based on color or brightness. By default <strong>Each Color</strong> is selected.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Print resolution</strong></td>
+   <td>Select a resolution for printing this image; 72 pixels is the default.</td>
+  </tr>
+  <tr>
+   <td><strong>Image Modifier</strong></td>
+   <td><p>Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the <strong>Image Modifiers</strong> field. These parameters are defined in the <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">Image Server Protocol command reference</a>.</p> <p>Important: The following functionality listed in the API is not supported:</p>
+    <ul>
+     <li>Basic templating and text rendering commands: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li>
+     <li>Localization commands: <code>locale=</code> and <code>req=xlate</code></li>
+     <li><code>req=set</code> is not available for general usage.</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>Non-core Dynamic Media services: SVG, Image Rendering, and Web-to-Print</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Defining Image Preset options with image modifiers {#defining-image-preset-options-with-image-modifiers}

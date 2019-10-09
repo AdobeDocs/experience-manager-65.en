@@ -5,7 +5,7 @@ description: Creating a mobile site is similar to creating a standard site as it
 seo-description: Creating a mobile site is similar to creating a standard site as it also involves creating templates and components
 uuid: 28160758-ea2f-46a9-8f52-d1661a467f06
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
 discoiquuid: e6b2de9e-dddc-4987-af2f-cf3477634ea9
@@ -29,20 +29,20 @@ To create a mobile site, proceed as follows:
 1. Create the page component:
 
     * Set the `sling:resourceSuperType` property to `wcm/mobile/components/page`
- 
+
       This way the component relies on the mobile page component.
 
     * Create the `body.jsp` with the project specific logic.
 
 1. Create the page template:
 
-    * Set the `sling:resourceType` property to the newly created page component. 
+    * Set the `sling:resourceType` property to the newly created page component.
     * Set the `allowedPaths` property.
 
 1. Create the design page for the site.
 1. Create the site root page below the `/content` node:
 
-    * Set the `cq:allowedTemplates` property. 
+    * Set the `cq:allowedTemplates` property.
     * Set the `cq:designPath` property.
 
 1. In the page properties of the site root page, set the device groups in the **Mobile** tab.
@@ -65,13 +65,13 @@ Use Multi Site Manager (MSM) to create a mobile live copy from a standard site. 
 
 The Java packages containing the mobile classes are:
 
-* [com.day.cq.wcm.mobile.api](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines MobileConstants.  
+* [com.day.cq.wcm.mobile.api](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines MobileConstants.
 
-* [com.day.cq.wcm.mobile.api.device](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - defines Device, DeviceGroup and DeviceGroupList.  
+* [com.day.cq.wcm.mobile.api.device](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - defines Device, DeviceGroup and DeviceGroupList.
 
-* [com.day.cq.wcm.mobile.api.device.capability](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines DeviceCapability.  
+* [com.day.cq.wcm.mobile.api.device.capability](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines DeviceCapability.
 
-* [com.day.cq.wcm.mobile.api.wurfl](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - defines WurflQueryEngine.  
+* [com.day.cq.wcm.mobile.api.wurfl](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - defines WurflQueryEngine.
 
 * [com.day.cq.wcm.mobile.core](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - defines MobileUtil, which provides various utility methods revolving around WCM Mobile.
 
@@ -79,49 +79,49 @@ The Java packages containing the mobile classes are:
 
 The **We.Retail Mobile Demo Site** uses the following mobile components which are located below `/libs/foundation/components`:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Name</td> 
-   <td>Group</td> 
-   <td>Characteristics</td> 
-  </tr> 
-  <tr> 
-   <td>mobilefooter</td> 
-   <td>hidden</td> 
-   <td>- footer</td> 
-  </tr> 
-  <tr> 
-   <td>mobileimage</td> 
-   <td>Mobile</td> 
-   <td>- based on the image foundation component<br /> - renders an image if the device is capable<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>mobilelist</td> 
-   <td>Mobile</td> 
-   <td>- based on the list foundation component<br /> - listitem_teaser.jsp renders an image if the device is capable<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>mobilelogo</td> 
-   <td>hidden</td> 
-   <td>- based on the logo foundation component<br /> - renders an image if the device is capable<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>mobilereference</td> 
-   <td>Mobile</td> 
-   <td><p>- similar to the reference foundation component</p> <p>- maps a textimage component to a mobiletextimage one and an image component to a mobileimage one</p> </td> 
-  </tr> 
-  <tr> 
-   <td>mobiletextimage</td> 
-   <td>Mobile</td> 
-   <td>- based on the textimage foundation component<br /> - renders an image if the device is capable</td> 
-  </tr> 
-  <tr> 
-   <td>mobiletopnav</td> 
-   <td>hidden</td> 
-   <td><p>- based on the topnav foundation component</p> <p>- only renders text</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Name</td>
+   <td>Group</td>
+   <td>Characteristics</td>
+  </tr>
+  <tr>
+   <td>mobilefooter</td>
+   <td>hidden</td>
+   <td>- footer</td>
+  </tr>
+  <tr>
+   <td>mobileimage</td>
+   <td>Mobile</td>
+   <td>- based on the image foundation component<br /> - renders an image if the device is capable<br /> </td>
+  </tr>
+  <tr>
+   <td>mobilelist</td>
+   <td>Mobile</td>
+   <td>- based on the list foundation component<br /> - listitem_teaser.jsp renders an image if the device is capable<br /> </td>
+  </tr>
+  <tr>
+   <td>mobilelogo</td>
+   <td>hidden</td>
+   <td>- based on the logo foundation component<br /> - renders an image if the device is capable<br /> </td>
+  </tr>
+  <tr>
+   <td>mobilereference</td>
+   <td>Mobile</td>
+   <td><p>- similar to the reference foundation component</p> <p>- maps a textimage component to a mobiletextimage one and an image component to a mobileimage one</p> </td>
+  </tr>
+  <tr>
+   <td>mobiletextimage</td>
+   <td>Mobile</td>
+   <td>- based on the textimage foundation component<br /> - renders an image if the device is capable</td>
+  </tr>
+  <tr>
+   <td>mobiletopnav</td>
+   <td>hidden</td>
+   <td><p>- based on the topnav foundation component</p> <p>- only renders text</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Creating a Mobile Component {#creating-a-mobile-component}
@@ -144,20 +144,20 @@ The AEM mobile framework allows to develop components that are sensitive to the 
 
   `Map<String,String> deviceAttributes = device.getAttributes();`
 
-* Get the device user-agent: 
+* Get the device user-agent:
 
   `String userAgent = device.getUserAgent();`
 
-* Get the device group list (device groups assigned to the site by the author) from the current page: 
+* Get the device group list (device groups assigned to the site by the author) from the current page:
 
   `DeviceGroupList deviceGroupList = currentPage.adaptTo(DeviceGroupList.class);`
 
-* Check if the device group supports images 
+* Check if the device group supports images
 
-  `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {` 
-  ... 
-  OR 
-  `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {` 
+  `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
+  ...
+  OR
+  `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
   ...
 
 >[!NOTE]
@@ -178,7 +178,7 @@ To create an emulator, please refer to the [Creating a Custom Mobile Emulator](/
 
 **Main characteristics of mobile emulators**
 
-* A device group is composed of one of more emulators: the device group configuration page, e.g. /etc/mobile/groups/touch, contains the `emulators` property below the `jcr:content` node. 
+* A device group is composed of one of more emulators: the device group configuration page, e.g. /etc/mobile/groups/touch, contains the `emulators` property below the `jcr:content` node.
 
   Note: although it's possible that the same emulator belongs to several device groups, it does not make much sense.
 
@@ -205,7 +205,7 @@ Device groups are defined as content pages below `/etc/mobile/devices` and use t
 When you create a mobile site, you need to assign device groups to your site. AEM provides three device groups depending on the device's HTML and JavaScript rendering abilities:
 
 * **Feature** phones, for feature devices like the Sony Ericsson W800 with support for basic HTML but no support for images and JavaScript.
-* **Smart** phones, for devices like the Blackberry with support for basic HTML and images, but no support for JavaScript.  
+* **Smart** phones, for devices like the Blackberry with support for basic HTML and images, but no support for JavaScript.
 
 * **Touch** phones, for devices like the iPad with full support for HTML, images, JavaScript and device rotation.
 
@@ -233,8 +233,8 @@ At run time when AEM receives an HTTP request from a device, each filter that is
 
 Device groups can use zero or more filters for capability detection. Also, a filter can be used with multiple device groups. AEM provides a default filter that determines whether the device has the capabilities that are selected for a group:
 
-* CSS  
-* JPG and PNG images  
+* CSS
+* JPG and PNG images
 * JavaScript
 * Device rotation
 
@@ -257,11 +257,11 @@ Create a device group when the groups that AEM installs do not meet your require
 1. In CRXDE, add a **static.css** file containing the styles for the device group below the `/etc/mobile/groups/special` node.
 
 1. Open the **Special Phones** page.
-1. To configure the device group, click the **Edit** button beside **Settings**. 
+1. To configure the device group, click the **Edit** button beside **Settings**.
 
    On the **General** tab:
 
-    * **Title**: the name of the mobile device group. 
+    * **Title**: the name of the mobile device group.
     * **Description**: description of the group.
     * **User-Agent**: user-agent string which the devices are matched against. It is optional and can be a regex. Example: `BlackBerryZ10`
     * **Capabilities**: defines if the group can handle images, CSS, JavaScript or device rotation.
@@ -281,7 +281,7 @@ Create a device group when the groups that AEM installs do not meet your require
 
 The mobile device group configuration dialog looks as follows:
 
-![screen_shot_2012-02-01at22043pm](assets/screen_shot_2012-02-01at22043pm.png) 
+![screen_shot_2012-02-01at22043pm](assets/screen_shot_2012-02-01at22043pm.png)
 
 #### Custom CSS per Device Group {#custom-css-per-device-group}
 
@@ -325,7 +325,7 @@ When a device accesses your mobile site, AEM detects the device, maps it to a de
 
 #### Installing a Different WURFL™ Database {#installing-a-different-wurfl-database}
 
-The truncated WURFL™ database that is installed with AEM is a release that pre-dates  
+The truncated WURFL™ database that is installed with AEM is a release that pre-dates
 August 30th 2011. If your version of the WURFL was released after August 30, 2011, make sure your usage complies with your license.
 
 To install a WURFL™ database:
@@ -354,13 +354,13 @@ The above configuration causes devices for which the User-Agent matches the supp
 
 ## Client-Side Device Detection {#client-side-device-detection}
 
-This section describes how to use the device client-side detection of AEM in order to optimize page rendering or to provide the client with alternate website versions.  
-  
-AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` is shipped in AEM as a client library under `/etc/clientlibs/browsermap`.  
-  
+This section describes how to use the device client-side detection of AEM in order to optimize page rendering or to provide the client with alternate website versions.
+
+AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` is shipped in AEM as a client library under `/etc/clientlibs/browsermap`.
+
 `BrowserMap` provides you with three strategies you can use to provide an alternate website to a client, which are employed in the following order:
 
-1. [Alternate links](#providing-alternate-links)  
+1. [Alternate links](#providing-alternate-links)
 
 1. [Device Group Specific URL](#defining-a-device-group-specific-url)
 1. [Selector-based URL](#defining-selector-based-urls)
@@ -392,8 +392,8 @@ When the value of the `cq:variantDomain` property of a `cq:siteVariant` node is 
 
 ### Defining a Device Group Specific URL {#defining-a-device-group-specific-url}
 
-If you don't want to use alternate links, you can configure a global URL for each `DeviceGroup`. We recommend creating your own client library that embeds the `browsermap.standard` client library but redefines the device groups.  
-  
+If you don't want to use alternate links, you can configure a global URL for each `DeviceGroup`. We recommend creating your own client library that embeds the `browsermap.standard` client library but redefines the device groups.
+
 BrowserMap is designed in such a way that Device Groups definitions can be overriden by creating and adding a new Device Group with the same name to the `BrowserMap` object from your customised client library.
 
 >[!NOTE]
@@ -500,7 +500,7 @@ Once you've created your customised `BrowserMap` client library, we suggest the 
    <%
        }
    %>
-   
+
    ```
 
 1. Include the `broswermap.jsp` file in your head section.
@@ -552,7 +552,7 @@ AEM processes a request issued by a mobile device that belongs to the touch devi
 1. An iPad sends a request to the AEM publish instance, e.g. `http://localhost:4503/content/geometrixx_mobile/en/products.html`
 1. AEM determines whether the site of the requested page is a mobile site (by checking whether the first level page `/content/geometrixx_mobile` extends the mobile page component). If yes:
 1. AEM looks up the device capabilities based on the User-Agent in the request header.
-1. AEM maps the device capabilities to the device group and sets `touch` as the device group selector.  
+1. AEM maps the device capabilities to the device group and sets `touch` as the device group selector.
 
 1. AEM redirects the request to `http://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
 1. AEM sends the response to the iPad:
@@ -585,8 +585,8 @@ The **Statistics** page looks as follows:
 
 If you need to generate an entry in the statistics, you can proceed as follows:
 
-1. Use a mobile device or an emulator (as for example https://chrispederick.com/work/user-agent-switcher/ on Firefox).  
-1. Request a mobile page on the author instance by disabling the authoring mode, e.g.: 
+1. Use a mobile device or an emulator (as for example https://chrispederick.com/work/user-agent-switcher/ on Firefox).
+1. Request a mobile page on the author instance by disabling the authoring mode, e.g.:
 
    `http://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
 
@@ -602,5 +602,5 @@ User Alice gets redirected to `coolpage.feature.html`, and sends that URL to a f
 
 If `coolpage.feature.html` is served from a front-end cache, AEM does not get a chance to analyze the request to find out that the mobile selector does not match the new User-Agent, and Bob gets the wrong representation.
 
-To solve it, you can include a simple selection UI on the pages, where end users can override the device group that was selected by AEM. In the above example, a link (or an icon) on the page allows the end user to switch to `coolpage.touch.html` if he thinks that his device is good enough for that.  
+To solve it, you can include a simple selection UI on the pages, where end users can override the device group that was selected by AEM. In the above example, a link (or an icon) on the page allows the end user to switch to `coolpage.touch.html` if he thinks that his device is good enough for that.
 

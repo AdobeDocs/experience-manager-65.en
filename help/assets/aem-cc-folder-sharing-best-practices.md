@@ -5,7 +5,7 @@ description: Configure Adobe Experience Manager (AEM) to allow users in AEM Asse
 seo-description: Configure Adobe Experience Manager (AEM) to allow users in AEM Assets to exchange folders with Adobe Creative Cloud (CC) users.
 uuid: e4c1ab24-9100-4f24-a4fe-bba9001e130c
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 679b173b-0b80-4070-895f-b2cbc3c39183

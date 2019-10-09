@@ -1,11 +1,11 @@
 ---
 title: Promoting Launches
 seo-title: Promoting Launches
-description: You need to promote launch pages to move the content back into the source (production) before publishing. 
-seo-description: You need to promote launch pages to move the content back into the source (production) before publishing. 
+description: You need to promote launch pages to move the content back into the source (production) before publishing.
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 56483f8f-d66e-4677-a7bd-3b1425625b2b
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
@@ -98,15 +98,15 @@ After creating a nested launch you can promote it back to any of the sources, in
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
 1. As with [Creating a Nested Launch](/help/sites-authoring/launches-creating.md#creating-a-nested-launch), navigate to and select the required launch in either the **Launches** console or the **References** rail.
-1. Select **Promote launch** to open the wizard.  
+1. Select **Promote launch** to open the wizard.
 
 1. Enter the required details:
 
-    * **Promotion target** 
+    * **Promotion target**
 
       You can promote to any of the sources.
 
-    * **Scope** 
+    * **Scope**
       Here you can select whether to promote the entire launch, or only pages that have actually been edited. If the latter, you can then select to include/exclude sub-pages. The default configuration is to only promote page changes for the current page:
 
         * **Promote full launch**
@@ -133,13 +133,13 @@ After creating a nested launch you can promote it back to any of the sources, in
 
 Use workflow models to perform bulk processing of promoted Launches pages:
 
-1. Create a workflow package. 
+1. Create a workflow package.
 1. When authors promote Launch pages, they store them in the workflow package.
 1. Start a workflow model using the package as the payload.
 
 To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.
 
-For example, you can automatically generate page activation requests when authors promote Launches pages. Configure a workflow launcher to start the Request Activation workflow when the package node is modified. 
+For example, you can automatically generate page activation requests when authors promote Launches pages. Configure a workflow launcher to start the Request Activation workflow when the package node is modified.
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 

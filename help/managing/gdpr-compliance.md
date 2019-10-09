@@ -1,13 +1,13 @@
 ---
 title: GDPR Readiness
-seo-title: AEM and General Data Protection Regulation (GDPR) 
+seo-title: AEM and General Data Protection Regulation (GDPR)
 description: Learn about AEM support for the EU General Data Protection Regulation (GDPR) and how to comply when implementing a new AEM project.
 seo-description: Learn about AEM support for the EU General Data Protection Regulation (GDPR) and how to comply when implementing a new AEM project.
 uuid: c443aa47-0766-4280-b0f2-b5b06534ffba
 contentOwner: aheimoz
 topic-tags: introduction
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: grdp
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 ---
@@ -28,7 +28,7 @@ Adobe Experience Manager (AEM) must be considered as part of a company's GDPR co
 
 ## AEM and GDPR - Brief Introduction {#aem-and-gdpr-brief-introduction}
 
-AEM instances, and the custom applications that might process Personal Data, are owned and operated by AEM customers. This means that the Data Subject requests for access and erasure (deletion) as defined in GDPR are both owned and managed by the AEM customer, so AEM 6.4 does not include any out-of-the-box service to handle GDPR requests.
+AEM instances, and the custom applications that might process Personal Data, are owned and operated by AEM customers. This means that the Data Subject requests for access and erasure (deletion) as defined in GDPR are both owned and managed by the AEM customer, so AEM 6.5 does not include any out-of-the-box service to handle GDPR requests.
 
 ![gdpr-01](assets/gdpr-01.png)
 
@@ -62,7 +62,7 @@ These AEM integrations are with GDPR ready services. No personal data from Adobe
 
 For further information see:
 
-* [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)  
+* [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)
 
 * [Adobe Analytics and GDPR](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/)
 

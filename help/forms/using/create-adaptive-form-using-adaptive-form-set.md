@@ -1,10 +1,10 @@
 ---
 title: Create an adaptive form using a set of adaptive forms
 seo-title: Create an adaptive form using a set of adaptive forms
-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features. 
-seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features. 
+description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
+seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
 uuid: 1423038b-8261-455b-b4ff-7be7222448c9
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 ---
@@ -17,7 +17,7 @@ In a workflow, such as an application for opening a bank account, your users fil
 
 Features available are:
 
-* Independent authoring  
+* Independent authoring
 * Showing/hiding appropriate forms
 * Lazy loading
 
@@ -139,6 +139,6 @@ Perform the following steps to add an adaptive form as a child form using asset 
 1. In the sidebar, click **Assets** ![assets-browser](assets/assets-browser.png). Under Assets, select **Adaptive Form** from the drop-down.
     [ ![Selecting adaptive form under Assets](assets/asset.png)](assets/asset-1.png)
 
-1. Drag-drop the adaptive form you want to add as a child form. 
+1. Drag-drop the adaptive form you want to add as a child form.
     [ ![Drag-drop the adaptive form in your site](assets/drag-drop.png)](assets/drag-drop-1.png)The adaptive form you drop is added as a child form.
 

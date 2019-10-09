@@ -5,7 +5,7 @@ description: Browse to a published site for enablement
 seo-description: Browse to a published site for enablement
 uuid: 1bfefa8a-fd9c-4ca8-b2ff-add79776c8ae
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
@@ -30,9 +30,9 @@ If the [default home page was set](enablement-create-site.md#changethedefaulthom
 
 When first arriving at the published site, the site visitor would typically not already be signed in and would be anonymous.
 
-**http://localhost:4503/content/sites/enable/en.html** 
+**http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-433](assets/chlimage_1-433.png) 
+![chlimage_1-433](assets/chlimage_1-433.png)
 
 ## Anonymous Site Visitor {#anonymous-site-visitor}
 
@@ -42,7 +42,7 @@ Notice this  home page  shows four menu items: `Assignments, Ski Catalog, What's
 
 >[!NOTE]
 >
->It is possible to grant anonymous access to an enablement site without allowing site visitors to self-register.  
+>It is possible to grant anonymous access to an enablement site without allowing site visitors to self-register.
 >If an enablement resource is set to `show in catalog` and `allow anonymous access`, it will be possible for anonymous site visitors to view resources in the catalog.
 
 ### Prevent anonymous access on JCR {#prevent-anonymous-access-on-jcr}
@@ -82,7 +82,7 @@ If the user profile was not created through self-registration, the very first ti
 
 The next time the member signs in, the home page, identified by the first menu item, is displayed.
 
-![chlimage_1-434](assets/chlimage_1-434.png) 
+![chlimage_1-434](assets/chlimage_1-434.png)
 
 ### Assignments {#assignments}
 
@@ -110,7 +110,7 @@ From the details page, the member is able to learn, [rate](rating.md) the lesson
 
 Interactions with the enablement resource will be noted in the Report section accessible in the author environment.
 
-![chlimage_1-437](assets/chlimage_1-437.png) 
+![chlimage_1-437](assets/chlimage_1-437.png)
 
 ### Ski Catalog {#ski-catalog}
 
@@ -118,7 +118,7 @@ The Ski Catalog page is the catalog of enablement resources tagged with tags fro
 
 When a member has not been assigned enablement resources, either directly or through a learning path, it is possible to interact with enablement resources located within a catalog and provide feedback through comments and ratings.
 
-![chlimage_1-438](assets/chlimage_1-438.png) 
+![chlimage_1-438](assets/chlimage_1-438.png)
 
 ### Discussions {#discussions}
 
@@ -130,7 +130,7 @@ Log out and Log in as Sidney Croft (sidney / password) and reply to the question
 
 Notice, in addition to inline moderation, there are options to share the topic on social media or to email the topic.
 
-![chlimage_1-439](assets/chlimage_1-439.png) 
+![chlimage_1-439](assets/chlimage_1-439.png)
 
 ### What's New {#what-s-new}
 
@@ -138,7 +138,7 @@ The `What's New` menu item is the title given the [activity stream function](fun
 
 Still signed in as Sidney, select the `What's New` link to show the activity.
 
-![chlimage_1-440](assets/chlimage_1-440.png) 
+![chlimage_1-440](assets/chlimage_1-440.png)
 
 ## Trusted Community Member {#trusted-community-member}
 
@@ -149,7 +149,7 @@ Login with
 * `Username: quinn`
 * `Password: password`
 
-Once signed in, notice there is a new menu item, `Administration`, which appears because the member was given the role of moderator. 
+Once signed in, notice there is a new menu item, `Administration`, which appears because the member was given the role of moderator.
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
@@ -163,7 +163,7 @@ Selecting the side-panel icon toggles open the filters used to search community 
 
 Hovering over a comment card displays moderation actions.
 
-![chlimage_1-442](assets/chlimage_1-442.png) 
+![chlimage_1-442](assets/chlimage_1-442.png)
 
 ## Reports on Author {#reports-on-author}
 
@@ -206,7 +206,7 @@ Notice that it is likely too soon to show data from Adobe Analytics, which can t
 
 #### Ski Lessons Resource Report {#ski-lessons-resource-report}
 
-![chlimage_1-443](assets/chlimage_1-443.png) 
+![chlimage_1-443](assets/chlimage_1-443.png)
 
 #### Ski Lessons User Report {#ski-lessons-user-report}
 
@@ -216,7 +216,7 @@ Notice that it is likely too soon to show data from Adobe Analytics, which can t
 * Open card `Ski Lessons`
 * `select Report, User Report`
 
-![chlimage_1-444](assets/chlimage_1-444.png) 
+![chlimage_1-444](assets/chlimage_1-444.png)
 
 ### Reports Console {#reports-console}
 

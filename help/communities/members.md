@@ -5,7 +5,7 @@ description: How to access Members and Groups Management consoles
 seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
@@ -79,21 +79,21 @@ Most fields are optional fields the member can later fill-in on their profile.
 By default, the ID is set to the value of the required email address.
 *Once created, the ID may not be modified.*
 
-* **[!UICONTROL Email Address]** 
+* **[!UICONTROL Email Address]**
 (*required*) The member's email address.
 The member may change their email address when updating their profile.I
 If the ID defaulted to the email address, the ID will *not* change when the email address is changed.
 
-* **[!UICONTROL Password]** 
+* **[!UICONTROL Password]**
 (*required*) The sign-in password.
 
-* **[!UICONTROL Retype Password]** 
+* **[!UICONTROL Retype Password]**
 (*required*) Re-enter the password for verification.
 
-* **[!UICONTROL Add Member to Sites]** 
+* **[!UICONTROL Add Member to Sites]**
 (*optional*) Select from existing community sites in order to add the member to the community site's members group.
 
-* **[!UICONTROL Add Member to Groups]** 
+* **[!UICONTROL Add Member to Groups]**
  (*optional*) Select from existing member groups in order to add the member to that group.
 
 * Select **[!UICONTROL Save]**
@@ -103,7 +103,7 @@ If the ID defaulted to the email address, the ID will *not* change when the emai
 Under Account settings it is possible for a community administrator to
 
 * **[!UICONTROL Status]**
-  * Banned  
+  * Banned
     A member is unable to sign in, preventing them from viewing pages or participating in activities which require sign in. They may still anonymously visit an open community site.
 
   * Not Banned
@@ -116,7 +116,7 @@ Under Account settings it is possible for a community administrator to
   Default depends on the configuration of contribution limits.
   See [Member Contribution Limits](limits.md).
 
-* **[!UICONTROL Change Password]** 
+* **[!UICONTROL Change Password]**
 A link that is present when modifying an existing member. Provides the ability for a community administrator to reset a password for a member.
 
 ### GENERAL - Photo {#general-photo}
@@ -166,19 +166,19 @@ Select `Add Group` in order to create a group in the publish environment.
 
 The required fields for creating a new publish-side member group are:
 
-* **[!UICONTROL ID]** 
+* **[!UICONTROL ID]**
 (*required*) The group unique ID.
 *Once created, the ID may not be modified.*
 
-* **[!UICONTROL Name]** 
-  (*optional*) The display name for the group. 
-   
+* **[!UICONTROL Name]**
+  (*optional*) The display name for the group.
+
   The default value is the ID.
 
-* **[!UICONTROL Description]** 
+* **[!UICONTROL Description]**
   (*optional*) A description of the group's purpose and permissions.
 
-* **[!UICONTROL Add Members To Group]** 
+* **[!UICONTROL Add Members To Group]**
   (*optional*) Select publish-side members to be included as initial members of the group.
 
 * Select **[!UICONTROL Save]**

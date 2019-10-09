@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
@@ -17,7 +17,7 @@ Workflow models consist of a series of steps of various types. According to the 
 
 >[!NOTE]
 >
->This section covers the standard Workflow steps. 
+>This section covers the standard Workflow steps.
 >
 >For module specific steps see also:
 >
@@ -33,31 +33,31 @@ Each step component has a **[!UICONTROL Step Properties]** dialog that lets you 
 
 A combination of the following properties are available for most workflow step components, on the **[!UICONTROL Common]** tab of the properties dialog:
 
-* **[!UICONTROL Title]** 
+* **[!UICONTROL Title]**
 
   The title for the step.
 
-* **[!UICONTROL Description]** 
+* **[!UICONTROL Description]**
 
   A description of the step.
 
-* **[!UICONTROL Workflow Stage]** 
+* **[!UICONTROL Workflow Stage]**
 
-  A drop-down selector to apply a [Stage](/help/sites-developing/workflows.md#workflow-stages) to the step.  
+  A drop-down selector to apply a [Stage](/help/sites-developing/workflows.md#workflow-stages) to the step.
 
-* **[!UICONTROL Timeout]** 
+* **[!UICONTROL Timeout]**
 
-  The period after which the step will be "timed out".  
-  
+  The period after which the step will be "timed out".
+
   You can select between: **[!UICONTROL Off]**, **[!UICONTROL Immediate]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **[!UICONTROL 24h]**.
 
-* **[!UICONTROL Timeout Handler]** 
+* **[!UICONTROL Timeout Handler]**
 
-  The handler which will control the workflow when the step times out; for example:  
+  The handler which will control the workflow when the step times out; for example:
 
   `Auto Advancer`
 
-* **[!UICONTROL Handler Advance]** 
+* **[!UICONTROL Handler Advance]**
 
   Select this option to automatically advance the workflow to the next step after execution. If not selected, the implementation script must handle workflow advancement.
 
@@ -72,16 +72,16 @@ The following properties are available for many workflow step components, on the
 
 * **[!UICONTROL User/Group]**
 
-    * A drop down selection box will allow you to navigate and select a user or group. 
-    * If you assign the step to a specific user, then only this user can take action on the step. 
-    * If you assign the step to an entire group, then when the workflow reaches this step all users in this group will have the action in their **[!UICONTROL Workflow Inbox]**. 
+    * A drop down selection box will allow you to navigate and select a user or group.
+    * If you assign the step to a specific user, then only this user can take action on the step.
+    * If you assign the step to an entire group, then when the workflow reaches this step all users in this group will have the action in their **[!UICONTROL Workflow Inbox]**.
     * See [Participating in Workflows](/help/sites-authoring/workflows-participating.md) for more information.
 
 ## AND Split {#and-split}
 
 The **[!UICONTROL AND Split]** creates a split in the workflow, after which both branches will be active. You add workflow steps to each branch as required. This step enables you to introduce multiple processing paths into the workflow. For example, you can allow certain review steps to occur in parallel, so saving time.
 
-![wf-26](assets/wf-26.png) 
+![wf-26](assets/wf-26.png)
 
 ### AND Split - Configuration {#and-split-configuration}
 
@@ -100,7 +100,7 @@ A **[!UICONTROL Container]** step starts another workflow model that runs as a c
 
 This **[!UICONTROL Container]]** lets you reuse workflow models to implement common sequences of steps. For example a translation workflow model could be used in multiple editing workflows.
 
-![wf-28](assets/wf-28.png) 
+![wf-28](assets/wf-28.png)
 
 ### Container Step - Configuration {#container-step-configuration}
 
@@ -150,13 +150,13 @@ function check(){
    var count=0;
    var keyname="loopcount"
    try{
-      if (workflowData.getMetaDataMap().containsKey(keyname)){ 
+      if (workflowData.getMetaDataMap().containsKey(keyname)){
         log.info("goto script: found loopcount key");
         count= parseInt(workflowData.getMetaDataMap().get(keyname))+1;
-      } 
- 
+      }
+
      workflowData.getMetaDataMap().put(keyname,count);
- 
+
      }catch(err) {
          log.info(err.message);
          return false;
@@ -177,7 +177,7 @@ The **[!UICONTROL OR Split]** creates a split in the workflow, after which only 
 >
 >For additional information on creating an OR Split see: [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
 
-![wf-29](assets/wf-29.png) 
+![wf-29](assets/wf-29.png)
 
 ### OR Split - Configuration {#or-split-configuration}
 
@@ -270,7 +270,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
 * **[!UICONTROL Store Data with the Payload]**
 
-    * To store widget data as a property of the workflow payload, use the following format for the value of the name property of the widget node:  
+    * To store widget data as a property of the workflow payload, use the following format for the value of the name property of the widget node:
 
       `./jcr:content/nodename`
 
@@ -279,7 +279,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
 * **[!UICONTROL Store Data with the Work Item]**
 
-    * To store widget data as a property of the work item metadata, use the following format for the value of the name property:  
+    * To store widget data as a property of the work item metadata, use the following format for the value of the name property:
 
       `nodename`
 
@@ -298,11 +298,11 @@ You can store widget data in the workflow payload or in the work item metadata. 
    ```xml
    newComponent (cq:Component)
      |- cq:dialog (nt:unstructured)
-       |- content 
-         |- layout 
-           |- items 
-             |- column 
-               |- items 
+       |- content
+         |- layout
+           |- items
+             |- column
+               |- items
                  |- component0
                  |- component1
                  |- ...
@@ -331,21 +331,21 @@ You can store widget data in the workflow payload or in the work item metadata. 
    The following XML code snippet represents a dialog that stores a `String` value in the `watchEmail` node of the payload content. The title node represents the [TextField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component:
 
    ```xml
-   jcr:primaryType="nt:unstructured" 
-       jcr:title="Watcher Email Address Dialog" 
+   jcr:primaryType="nt:unstructured"
+       jcr:title="Watcher Email Address Dialog"
        sling:resourceType="cq/gui/components/authoring/dialog">
        <content jcr:primaryType="nt:unstructured"
            sling:resourceType="granite/ui/components/foundation/container">
-           <layout jcr:primaryType="nt:unstructured" 
-               margin="false" 
+           <layout jcr:primaryType="nt:unstructured"
+               margin="false"
                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
            />
            <items jcr:primaryType="nt:unstructured">
                <column jcr:primaryType="nt:unstructured"
                    sling:resourceType="granite/ui/components/foundation/container">
                    <items jcr:primaryType="nt:unstructured">
-                       <title jcr:primaryType="nt:unstructured" 
-                           fieldLabel="Notification Email Address" 
+                       <title jcr:primaryType="nt:unstructured"
+                           fieldLabel="Notification Email Address"
                            name="./jcr:content/watchEmails"
                            sling:resourceType="granite/ui/components/foundation/form/textfield"
                        />
@@ -531,9 +531,9 @@ The form can be located anywhere in the repository, however workflow users must 
 
 ### Random Participant Chooser {#random-participant-chooser}
 
-The **[!UICONTROL Random Participant Chooser]** step is a participant chooser that assigns the generated work item to a user that is randomly selected from a list. 
+The **[!UICONTROL Random Participant Chooser]** step is a participant chooser that assigns the generated work item to a user that is randomly selected from a list.
 
-![wf-31](assets/wf-31.png) 
+![wf-31](assets/wf-31.png)
 
 #### Random Participant Chooser - Configuration {#random-participant-chooser-configuration}
 
@@ -558,7 +558,7 @@ To configure the step, edit using the following tabs:
 
 A **[!UICONTROL Process Step]** runs an ECMAScript or calls an OSGi service to perform automatic processing.
 
-![wf-32](assets/wf-32.png) 
+![wf-32](assets/wf-32.png)
 
 ### Process Step - Configuration {#process-step-configuration}
 

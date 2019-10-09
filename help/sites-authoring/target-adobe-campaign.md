@@ -5,7 +5,7 @@ description: You can create targeted experiences for Adobe Campaign after settin
 seo-description: You can create targeted experiences for Adobe Campaign after setting up segmentation
 uuid: 8fcc9210-d8c5-44e3-8aa8-6c6db810c98e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
@@ -41,7 +41,7 @@ To create segments:
 
 To create a brand:
 
-1. In **Sites**, navigate to the **Campaigns** folder (for example in We.Retail). 
+1. In **Sites**, navigate to the **Campaigns** folder (for example in We.Retail).
 1. Click **Create Page** and enter a title for the page, for example We.Retail Brand and select the **Brand** template.
 
 ### Creating a Campaign {#creating-a-campaign}
@@ -55,7 +55,7 @@ To create a campaign:
 
 To create experiences for segments:
 
-1. Open the **Campaign** page you just created. 
+1. Open the **Campaign** page you just created.
 1. Create experiences for your segments by clicking **Create Page** and entering a title for your page, for example, Male as you are creating an experience for the Male segment, and select the **Experience** template.
 1. Open the created Experience page.
 1. Click **Edit**, then below Segments click **Add Item**.
@@ -76,7 +76,7 @@ To create a newsletter with targeted content:
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. In the newsletter, add a Text and Personalization component. 
+1. In the newsletter, add a Text and Personalization component.
 1. Add text into the Text and Personalization component, such as "This is the default."
 1. Click the arrow next to **Edit** and select **Targeting**.
 1. Select your brand from the Brand drop-down menu and select your Campaign. (This is the brand and campaign you created earlier).
@@ -90,7 +90,7 @@ To create a newsletter with targeted content:
 
    ![chlimage_1-189](assets/chlimage_1-189.png)
 
-1. Navigate to another segment (Male), and click **Add offer** and click the plus icon +. Then edit the offer. 
+1. Navigate to another segment (Male), and click **Add offer** and click the plus icon +. Then edit the offer.
 1. Navigate to another segment (Female) and click **Add offer** and the plus icon +. Then edit this offer.
 1. Click **Next** to see Mapping, then click **Next** to see Settings, which does not apply to Adobe Campaign, and click **Save**.
 

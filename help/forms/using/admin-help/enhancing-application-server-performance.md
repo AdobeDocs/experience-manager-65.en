@@ -7,7 +7,7 @@ uuid: 88d2f96a-3b59-410d-8160-20581d27acad
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 ---
 
@@ -67,14 +67,14 @@ When the application server administrator determines the correct connection pool
 
 1. In the navigation tree, click Resources &gt; JDBC &gt; JDBC Providers. In the right pane, click the Oracle JDBC Driver data source you created.
 1. Under Additional Properties, click Data Sources and then select IDP_DS.
-1. On the next screen, under Additional Properties, click Connection Pool Properties and enter a value in the Maximum Connections box and the Minimum Connections box. 
+1. On the next screen, under Additional Properties, click Connection Pool Properties and enter a value in the Maximum Connections box and the Minimum Connections box.
 1. Click OK or Apply, and then click Save Directly To Master Configuration.
 
 ### Configure connection pool settings for WebSphere for SqlServer {#configure-connection-pool-settings-for-websphere-for-sqlserver}
 
 1. In the navigation tree, click Resources &gt; JDBC &gt; JDBC Providers and, in the right pane, click the User-Defined JDBC Driver data source you created.
 1. Under Additional Properties, click Data Sources and then select IDP_DS.
-1. On the next screen, under Additional Properties, click Connection Pool Properties and enter a value in the Maximum Connections box and the Minimum Connections box: 
+1. On the next screen, under Additional Properties, click Connection Pool Properties and enter a value in the Maximum Connections box and the Minimum Connections box:
 1. Click OK or Apply, and then click Save Directly To Master Configuration.
 
 ## Optimizing inline documents and impact on JVM memory {#optimizing-inline-documents-and-impact-on-jvm-memory}
@@ -170,7 +170,7 @@ Using connection pooling on the search connection can decrease the number of por
 
 1. Click Start > Run to start the registry editor and, in the Open box, type `regedit` and click OK.
 1. Go to the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
-1. In the right pane of the registry editor, find the TcpTimedWaitDelay value name. If the name does not appear, select Edit &gt; New &gt; DWORD Value from the menu bar to add the name. 
+1. In the right pane of the registry editor, find the TcpTimedWaitDelay value name. If the name does not appear, select Edit &gt; New &gt; DWORD Value from the menu bar to add the name.
 1. In the Name box, type `TcpTimedWaitDelay`
 
    >[!NOTE]

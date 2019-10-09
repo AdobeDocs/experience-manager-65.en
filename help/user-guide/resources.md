@@ -1,21 +1,21 @@
 ---
-title: AEM 6.4 Additional Resources
-seo-title: AEM 6.4 Additional Resources
-description: AEM 6.4 release notes, certifications, and additional resources
-seo-description: AEM 6.4 release notes, certifications, and additional resources
+title: AEM 6.5 Additional Resources
+seo-title: AEM 6.5 Additional Resources
+description: AEM 6.5 release notes, certifications, and additional resources
+seo-description: AEM 6.5 release notes, certifications, and additional resources
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
-# AEM 6.4 Additional Resources {#aem-64-additional-resources}
+# AEM 6.5 Additional Resources {#aem-64-additional-resources}
 
-## AEM 6.4 Release Notes {#aem-64-release-notes}
+## AEM 6.5 Release Notes {#aem-64-release-notes}
 
-[Learn about the latest new features in AEM 6.4 in the release notes.](/help/release-notes/home.md)
+[Learn about the latest new features in AEM 6.5 in the release notes.](/help/release-notes/home.md)
 
-## AEM 6.4 Tutorial Videos {#aem-64-tutorial-videos}
+## AEM 6.5 Tutorial Videos {#aem-64-tutorial-videos}
 
-* [AEM 6.4 Training Videos](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM 6.5 Training Videos](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [AEM Tutorials](https://helpx.adobe.com/experience-manager/tutorials.html)
 
 ## Classes and Certification {#classes-and-certification}

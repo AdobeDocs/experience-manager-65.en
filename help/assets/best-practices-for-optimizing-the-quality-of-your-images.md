@@ -5,7 +5,7 @@ description: Learn best practices for optimizing image quality in dynamic media
 seo-description: Learn best practices for optimizing image quality in dynamic media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
@@ -58,7 +58,7 @@ There are two image sharpening methods that you can use:
         * **[!UICONTROL radius]** (0-250, width of the "sharpening lines" drawn around the sharpened object, as measured in pixels.)
 
           Keep in mind that the parameters radius and amount work against each other. Reducing radius can be compensated by increasing amount. Radius allows finer control as a lower value sharpens only the edge pixels, whereas a higher value sharpens a wider band of pixels.
-          
+
         * **[!UICONTROL threshold]** (0-255, sensitivity of effect.)
 
           This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding "noise", while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.

@@ -1,11 +1,11 @@
 ---
 title: Featured Content Feature
 seo-title: Featured Content Feature
-description: The Featured Content feature lets signed-in site visitors highlight content 
-seo-description: The Featured Content feature lets signed-in site visitors highlight content 
+description: The Featured Content feature lets signed-in site visitors highlight content
+seo-description: The Featured Content feature lets signed-in site visitors highlight content
 uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
@@ -56,13 +56,13 @@ Select the placed `Featured Content` component to access and select the `Configu
 
 Under the **[!UICONTROL Settings]** tab, identify the content to feature:
 
-* **[!UICONTROL Display Name]** 
+* **[!UICONTROL Display Name]**
   The title for the list of featured content. For example `Featured Questions` or `Featured Ideas`. Default is `Featured Content` if left empty.
 
-* **[!UICONTROL Location of the Featured Content]** 
+* **[!UICONTROL Location of the Featured Content]**
   *(Required)* Browse to the page containing the content that may be feature (components of that page must be configured to Allow Featured Content). For example, `/content/sites/engage/en/forum`
 
-* **[!UICONTROL Display Limit]** 
+* **[!UICONTROL Display Limit]**
   The maximum number of featured content to display. Default is 5.
 
 ## Site Visitor Experience {#site-visitor-experience}

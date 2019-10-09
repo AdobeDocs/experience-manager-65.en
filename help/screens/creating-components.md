@@ -6,7 +6,7 @@ seo-description: AEM components are used to hold, format, and render the content
 uuid: 66c76dd5-495a-4dcb-ad18-7f8a92669752
 contentOwner: Jyotika Syal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: developing
 discoiquuid: cdc530d8-ef0e-4b61-b1f0-5f4d831f1392
 ---

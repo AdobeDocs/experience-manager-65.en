@@ -7,7 +7,7 @@ uuid: b5735196-5a8d-4358-884f-e9b8d8f4f682
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 ---
 
@@ -45,7 +45,7 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
 
 ## Recover the AEM forms data {#recover-the-aem-forms-data}
 
-1. Stop the AEM forms services and application server if running. 
+1. Stop the AEM forms services and application server if running.
 1. If necessary, re-create the physical system from a system image. For example, this step may not be necessary if the reason for recovery is a faulty database server.
 1. Apply patches or updates to AEM forms that were applied since the image was made. This information was recorded in the backup procedure. AEM forms must be patched to the same patch level as it was when the system was backed up.
 1. (WebSphere Application Server) If you are recovering to a new instance of WebSphere Application Server, run the restoreConfig.bat/sh command.
@@ -66,11 +66,11 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
     * (JBoss) Rename `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` to:
 
       `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
-    
+
     * (WebLogic) Rename `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` to:
 
       `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
-    
+
     * (WebSphere) Rename `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` to:
 
       `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
@@ -96,7 +96,7 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
       *Restore author and publish instances*: If a disaster occurs, you can restore the repository to the last backed up state by performing the steps described in [Backup and Restore.](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)
 
       The complete restoration of Author node ascertains the restoration of Forms Manager and AEM Forms Workspace data as well.
-    
+
     * **Clustered**
 
       For restoration in a clustered environment, see [Strategy for backup and restore in a clustered environment](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).

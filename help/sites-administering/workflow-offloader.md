@@ -5,7 +5,7 @@ description: Learn about the Assets Workflow Offloader.
 seo-description: Learn about the Assets Workflow Offloader.
 uuid: d1c93ef9-a0e1-43c7-b591-f59d1ee4f88b
 contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba

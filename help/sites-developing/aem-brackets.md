@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
@@ -17,7 +17,7 @@ discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 
 The AEM Brackets Extension provides a smooth workflow to edit AEM components and client libraries, and leverages the power of the [Brackets](https://brackets.io/) code editor, which gives access from within the code editor to Photoshop files and layers. The easy synchronization provided by the extension (no Maven or File Vault required) increases developer efficiency and also helps front-end developers with limited AEM knowledge to participate on projects. This extension also provides some support for the [HTML Template Language (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html), which takes away the complexity of JSP to make component development easier and more secure.
 
-![chlimage_1-53](assets/chlimage_1-53.png) 
+![chlimage_1-53](assets/chlimage_1-53.png)
 
 ### Features {#features}
 
@@ -110,7 +110,7 @@ In the Project Explorer, open the contextual menu by right-clicking on any file 
 
 In the **AEM** menu, the **Export Content Package** or **Import Content Package** options allow to synchronize the whole project with the server.
 
-![chlimage_1-57](assets/chlimage_1-57.png) 
+![chlimage_1-57](assets/chlimage_1-57.png)
 
 ### Synchronization Status {#synchronization-status}
 

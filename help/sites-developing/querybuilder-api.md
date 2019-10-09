@@ -5,7 +5,7 @@ description: The functionality of the Asset Share Query Builder is exposed throu
 seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
 uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
@@ -132,7 +132,7 @@ By default the Query Builder would also provide the number of hits. Depending on
 For example, the UI can adapt following approach:
 
 * Get and display the accurate count of the number of total hits ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) or total in the querybuilder.json response) are less than or equal to 100;
-* Set `guessTotal` to 100 while making the call to the Query Builder.  
+* Set `guessTotal` to 100 while making the call to the Query Builder.
 
 * The response can have the following outcome:
 
@@ -287,7 +287,7 @@ property.3_value=bar
 
 By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (e.g. path, name, title, etc.). In order to gain control over which properties are returned, you can do one of the following:
 
-Specify 
+Specify
 
 ```
 p.hits=full
@@ -303,13 +303,13 @@ property.value=Triangle
 p.hits=full
 ```
 
-Use 
+Use
 
 ```
 p.hits=selective
 ```
 
-and specify the properties you want to get in 
+and specify the properties you want to get in
 
 ```
 p.properties
@@ -328,13 +328,13 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Another thing you can do is include child nodes in the QueryBuilder response. In order to do this you need to specify 
+Another thing you can do is include child nodes in the QueryBuilder response. In order to do this you need to specify
 
 ```
 p.nodedepth=n
 ```
 
-where `n` is the number of levels you want the query to return. Note that, in order for a child node to be returned, it must be specified by the properties selector 
+where `n` is the number of levels you want the query to return. Note that, in order for a child node to be returned, it must be specified by the properties selector
 
 ```
 p.hits=full
@@ -368,7 +368,7 @@ For such principal properties, you can shorten the query and use " `similar=/con
 
     // create query description as hash map (simplest way, same as form post)
     Map<String, String> map = new HashMap<String, String>();
-  
+
 // create query description as hash map (simplest way, same as form post)
     map.put("path", "/content");
     map.put("type", "cq:Page");
@@ -377,7 +377,7 @@ For such principal properties, you can shorten the query and use " `similar=/con
     map.put("group.1_fulltext.relPath", "jcr:content");
     map.put("group.2_fulltext", fulltextSearchTerm);
     map.put("group.2_fulltext.relPath", "jcr:content/@cq:tags");
- 
+
     // can be done in map or with Query methods
     map.put("p.offset", "0"); // same as query.setStart(0) below
     map.put("p.limit", "20"); // same as query.setHitsPerPage(20) below
@@ -387,7 +387,7 @@ For such principal properties, you can shorten the query and use " `similar=/con
     query.setHitsPerPage(20);
 
     SearchResult result = query.getResult();
- 
+
     // paging metadata
     int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
     long totalMatches = result.getTotalMatches();
@@ -406,7 +406,7 @@ For such principal properties, you can shorten the query and use " `similar=/con
     // iterating over the results
     for (Hit hit : result.getHits()) {
        String path = hit.getPath();
- 
+
       //Create a result element
       Element resultel = doc.createElement( "result" );
       root.appendChild( resultel );

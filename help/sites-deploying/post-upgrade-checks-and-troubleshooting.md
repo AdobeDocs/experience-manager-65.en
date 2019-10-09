@@ -5,7 +5,7 @@ description: Learn how to troubleshoot issues that might appear after an upgrade
 seo-description: Learn how to troubleshoot issues that might appear after an upgrade.
 uuid: 3f83e8fc-1c45-4ef0-b8da-d29ff483d3d5
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
@@ -17,24 +17,24 @@ discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 
 Following the [In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md) the following activities should be executed to finalize the upgrade. It is assumed AEM has been started with the 6.4 jar and that the upgraded code base has been deployed.
 
-* [Verify logs for upgrade success](#verify-logs-for-upgrade-success)  
+* [Verify logs for upgrade success](#verify-logs-for-upgrade-success)
 
-* [Verify OSGi Bundles](#verify-osgi-bundles)  
+* [Verify OSGi Bundles](#verify-osgi-bundles)
 
-* [Verify Oak Version](#verify-oak-version)  
+* [Verify Oak Version](#verify-oak-version)
 
-* [Inspect the PreUpgradeBackup folder](#inspect-preupgradebackup-folder)  
+* [Inspect the PreUpgradeBackup folder](#inspect-preupgradebackup-folder)
 
 * [Initial Validation of Pages](#initial-validation-of-pages)
-* [Apply AEM Service Packs](#apply-aem-service-packs)  
+* [Apply AEM Service Packs](#apply-aem-service-packs)
 
-* [Migrate AEM features](#migrate-aem-features)  
+* [Migrate AEM features](#migrate-aem-features)
 
-* [Verify Scheduled Maintenance Configurations](#verify-scheduled-maintenance-configurations)  
+* [Verify Scheduled Maintenance Configurations](#verify-scheduled-maintenance-configurations)
 
-* [Enable Replication Agents](#enable-replication-agents)  
+* [Enable Replication Agents](#enable-replication-agents)
 
-* [Enable Custom Scheduled Jobs](#enable-custom-scheduled-jobs)  
+* [Enable Custom Scheduled Jobs](#enable-custom-scheduled-jobs)
 
 * [Execute Test Plan](#execute-test-plan)
 
@@ -48,7 +48,7 @@ The main purpose of this feature is to reduce the need for manual interpretation
 
 More specifically, it ensures that:
 
-* Upgrade failures detected by the upgrade framework can are centralized in a single upgrade report;  
+* Upgrade failures detected by the upgrade framework can are centralized in a single upgrade report;
 * The upgrade report includes indicators about necessary manual intervention.
 
 To accomodate this, changes have been made in the way logs are generated in the `upgrade.log` file.
@@ -57,7 +57,7 @@ Here is a sample report that show no errors during upgrade:
 
 ![1487887443006](assets/1487887443006.png)
 
-Here is a sample report that shows a bundle that was not installed during the upgrade process: 
+Here is a sample report that shows a bundle that was not installed during the upgrade process:
 
 ![1487887532730](assets/1487887532730.png)
 

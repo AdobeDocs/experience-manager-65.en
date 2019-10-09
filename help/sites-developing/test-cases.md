@@ -5,7 +5,7 @@ description: Your test cases should be based upon the use cases and the detailed
 seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
 uuid: 82dff825-da58-49a2-bf35-f5bb905e523d
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d

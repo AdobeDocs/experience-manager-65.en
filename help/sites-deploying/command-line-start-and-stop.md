@@ -5,7 +5,7 @@ description: Learn how to start and stop AEM from the command line.
 seo-description: Learn how to start and stop AEM from the command line.
 uuid: 585f071c-2286-4a2c-af07-404bf298cba8
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
@@ -19,45 +19,45 @@ The `start` script is available under *the &lt;cq-installation&gt;/bin* director
 
 Those two versions support a list of environement variables that could be used to start and tune the AEM instance.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Environment variable </strong></td> 
-   <td><strong>Description </strong></td> 
-  </tr> 
-  <tr> 
-   <td>CQ_PORT</td> 
-   <td>TCP port used for stop and status scripts<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>CQ_HOST</td> 
-   <td>Host name<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>CQ_INTERFACE</td> 
-   <td>Interface that this server should listen to<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>CQ_RUNMODE</td> 
-   <td>Runmode(s) separated by comma<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>CQ_JARFILE</td> 
-   <td>Name of the jarfile<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>CQ_USE_JAAS</td> 
-   <td>Use of JAAS (if true)<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>CQ_JAAS_CONFIG</td> 
-   <td>Path of the JAAS configuration<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>CQ_JVM_OPTS</td> 
-   <td>Default JVM options<br /> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Environment variable </strong></td>
+   <td><strong>Description </strong></td>
+  </tr>
+  <tr>
+   <td>CQ_PORT</td>
+   <td>TCP port used for stop and status scripts<br /> </td>
+  </tr>
+  <tr>
+   <td>CQ_HOST</td>
+   <td>Host name<br /> </td>
+  </tr>
+  <tr>
+   <td>CQ_INTERFACE</td>
+   <td>Interface that this server should listen to<br /> </td>
+  </tr>
+  <tr>
+   <td>CQ_RUNMODE</td>
+   <td>Runmode(s) separated by comma<br /> </td>
+  </tr>
+  <tr>
+   <td>CQ_JARFILE</td>
+   <td>Name of the jarfile<br /> </td>
+  </tr>
+  <tr>
+   <td>CQ_USE_JAAS</td>
+   <td>Use of JAAS (if true)<br /> </td>
+  </tr>
+  <tr>
+   <td>CQ_JAAS_CONFIG</td>
+   <td>Path of the JAAS configuration<br /> </td>
+  </tr>
+  <tr>
+   <td>CQ_JVM_OPTS</td>
+   <td>Default JVM options<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!CAUTION]
@@ -111,11 +111,11 @@ The `stop` script is available under *the &lt;cq-installation&gt;/bin* directory
 
 If you just want to preconfigure the repository (without relocating it) you only have to:
 
-* extract `repository.xml` to the required location   
+* extract `repository.xml` to the required location
 
-* update `repository.xml` as required  
+* update `repository.xml` as required
 
 * create `bootstrap.properties` and define `repository.config`
 
-Again, before starting the actual installation.  
+Again, before starting the actual installation.
 

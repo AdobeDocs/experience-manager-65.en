@@ -5,7 +5,7 @@ description: Setting up advanced scoring
 seo-description: Setting up advanced scoring
 uuid: 3854b668-729a-42b8-b7cd-5d5ec1ca8380
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
@@ -47,37 +47,37 @@ The differences in setting up the scoring and badging rules are:
 
 ## Configurable Scoring Engine {#configurable-scoring-engine}
 
-The advanced scoring engine provides an OSGi configuration with parameters that affect the advanced scoring algorithm. 
+The advanced scoring engine provides an OSGi configuration with parameters that affect the advanced scoring algorithm.
 
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
-* **[!UICONTROL Scoring weights]** 
-  For a topic, specify the verb that should be given the highest priority when calculating the score. One or more topics may be entered, but limited to **one verb per topic**. See [Topics and Verbs](implementing-scoring.md#topics-and-verbs).  
+* **[!UICONTROL Scoring weights]**
+  For a topic, specify the verb that should be given the highest priority when calculating the score. One or more topics may be entered, but limited to **one verb per topic**. See [Topics and Verbs](implementing-scoring.md#topics-and-verbs).
 
-  Entered as `topic,verb` with the comma escaped. For example:  
+  Entered as `topic,verb` with the comma escaped. For example:
 
-  `/social/forum/hbs/social/forum\,ADD`  
+  `/social/forum/hbs/social/forum\,ADD`
 
   Default is set to the ADD verb for QnA and forum components.
 
 
-* **[!UICONTROL Scoring range]** 
+* **[!UICONTROL Scoring range]**
 
-  The range for advanced scores is defined by this value (maximum possible score) and 0 (lowest possible score.  
+  The range for advanced scores is defined by this value (maximum possible score) and 0 (lowest possible score.
 
   Default value is 100 so that scoring range is 0-100.
 
 
-* **[!UICONTROL Entity decay time interval]** 
+* **[!UICONTROL Entity decay time interval]**
 
-  This parameter represents the number of hours after which all entity scores are decayed. This is required to no longer include old content in scores for a community site.  
+  This parameter represents the number of hours after which all entity scores are decayed. This is required to no longer include old content in scores for a community site.
 
   Default value is 216000 hours (~24 years).
 
 
-* **[!UICONTROL Scoring growth rate]** 
+* **[!UICONTROL Scoring growth rate]**
 
-  This specifies the score. between 0 and scoring range, beyond which growth slows to limit the number of experts.  
+  This specifies the score. between 0 and scoring range, beyond which growth slows to limit the number of experts.
 
   Default value is 50.
 
@@ -133,7 +133,7 @@ You can now import Markdown table code directly using File/Paste table data... d
 
 Included in this beta release is one reward-based expert badge:
 
-* expert  
+* expert
 
   `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
 
@@ -155,21 +155,21 @@ Included in the beta release are two advanced scoring rules for the [forum funct
 
 1. /etc/community/scoring/rules/adv-comments-scoring
 
-    * `subRules[]` =  
+    * `subRules[]` =
 
-      /etc/community/scoring/rules/sub-rules/adv-comments-rule  
+      /etc/community/scoring/rules/sub-rules/adv-comments-rule
 
-      /etc/community/scoring/rules/sub-rules/adv-voting-rule-owner  
+      /etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
 
       /etc/community/scoring/rules/sub-rules/adv-voting-rule
 
 2. /etc/community/scoring/rules/adv-forums-scoring
 
-    * `subRules[]` =  
+    * `subRules[]` =
 
-      /etc/community/scoring/rules/sub-rules/adv-forums-rule  
+      /etc/community/scoring/rules/sub-rules/adv-forums-rule
 
-      /etc/community/scoring/rules/sub-rules/adv-comments-rule  
+      /etc/community/scoring/rules/sub-rules/adv-comments-rule
 
       /etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
 

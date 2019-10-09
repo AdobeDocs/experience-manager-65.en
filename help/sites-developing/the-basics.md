@@ -5,7 +5,7 @@ description: An overview of the core concepts of how AEM is structured and how t
 seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
@@ -65,7 +65,7 @@ The following diagram explains Sling script resolution: it shows how to get from
 
 The following diagram explains all the hidden, but powerful, request parameters you can use when dealing with the SlingPostServlet, the default handler for all POST requests that gives you endless options for creating, modifying, deleting, copying and moving nodes in the repository.
 
-![chlimage_1-85](assets/chlimage_1-85.png) 
+![chlimage_1-85](assets/chlimage_1-85.png)
 
 ### Sling is Content Centric {#sling-is-content-centric}
 
@@ -170,23 +170,23 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
   The script will be /apps/hr/jobs/jobs.esp; the last section of the sling:resourceType forms the file name.
 
-* POST requests (all request types excluding GET/HEAD, the method name must be uppercase) 
+* POST requests (all request types excluding GET/HEAD, the method name must be uppercase)
 
-  POST will be used in the script name. 
+  POST will be used in the script name.
 
   The script will be `/apps/hr/jobs/jobs.POST.esp`.
 
-* URLs in other formats, not ending with .html 
+* URLs in other formats, not ending with .html
 
-  For example `../content/corporate/jobs/developer.pdf` 
+  For example `../content/corporate/jobs/developer.pdf`
 
   The script will be `/apps/hr/jobs/jobs.pdf.esp`; the suffix is added to the script name.
 
-* URLs with selectors 
+* URLs with selectors
 
-  Selectors can be used to display the same content in an alternative format. For example a printer friendly version, an rss feed or a summary. 
+  Selectors can be used to display the same content in an alternative format. For example a printer friendly version, an rss feed or a summary.
 
-  If we look at a printer friendly version where the selector could be *print*; as in `../content/corporate/jobs/developer.print.html` 
+  If we look at a printer friendly version where the selector could be *print*; as in `../content/corporate/jobs/developer.print.html`
 
   The script will be `/apps/hr/jobs/jobs.print.esp`; the selector is added to the script name.
 
@@ -198,7 +198,7 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
     * the primary node type will be used.
 
-* If no script is found at all then the default script will be used. 
+* If no script is found at all then the default script will be used.
 
   The default rendition is currently supported as plain text (.txt), HTML (.html) and JSON (.json), all of which will list the node's properties (suitably formatted). The default rendition for the extension .res, or requests without a request extension, is to spool the resource (where possible).
 * For http error handling (codes 403 or 404) Sling will look for a script at either:
@@ -208,9 +208,9 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
 If multiple scripts apply for a given request, the script with the best match is selected. The more specific a match is, the better it is; in other words, the more selector matches the better, regardless of any request extension or method name match.
 
-For example, consider a request to access the resource  
-`/content/corporate/jobs/developer.print.a4.html`   
-of type   
+For example, consider a request to access the resource
+`/content/corporate/jobs/developer.print.a4.html`
+of type
 `sling:resourceType="hr/jobs"`
 
 Assuming we have the following list of scripts in the correct location:
@@ -283,7 +283,7 @@ More complex scripts (aggregating scripts) might need to access multiple resourc
 To do this you can use the sling:include("/&lt;path&gt;/&lt;resource&gt;") command. This will effectively include the definition of the referenced resource, as in the following statement which references an existing definition for rendering images:
 
 ```xml
-%><sling:include resourceType="geometrixx/components/image/img"/><% 
+%><sling:include resourceType="geometrixx/components/image/img"/><%
 ```
 
 ## OSGI {#osgi}
@@ -402,17 +402,17 @@ The following list gives an overview of the structure you will see within the re
 >
 >You must not change anything in the `/libs` path. For configuration and other changes copy the item from `/libs` to `/apps` and make any changes within `/apps`.
 
-* `/apps` 
+* `/apps`
 
   Application related; includes component definitions specific to your website. The components that you develop can be based on the out of the box components available at `/libs/foundation/components`.
 
-* `/content` 
+* `/content`
 
   Content created for your website.
 
-* `/etc`  
+* `/etc`
 
-* `/home` 
+* `/home`
 
   User and Group information.
 
@@ -420,11 +420,11 @@ The following list gives an overview of the structure you will see within the re
 
   Libraries and definitions that belong to the core of AEM. The sub-folders in `/libs` represent the out of the box AEM features as for example search or replication. The content in `/libs` should not be modified as it affects the way AEM works. Features specific to your website should be developed under `/apps` (see [Customizing Components and Other Elements](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
-* `/tmp` 
+* `/tmp`
 
   Temporary working area.
 
-* `/var` 
+* `/var`
 
   Files that change and are updated by the system; such as audit logs, statistics, event-handling. The sub-folder `/var/classes` contains the java servlets in source and compiled forms that have been generated from the components scripts.
 
@@ -462,4 +462,4 @@ For example, web sites are often provided in multiple languages for internationa
     * Maintain a common look and feel.
     * Focus efforts on managing the content that differs between the sites.
 
-For more information, see [Multi Site Manager](/help/sites-administering/msm.md).  
+For more information, see [Multi Site Manager](/help/sites-administering/msm.md).

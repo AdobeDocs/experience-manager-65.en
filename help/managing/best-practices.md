@@ -1,11 +1,11 @@
 ---
 title: Managing Projects - Best Practices Checklist
 seo-title: Managing Projects - Best Practices Checklist
-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status. 
-seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status. 
+description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
+seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 topic-tags: introduction
@@ -367,7 +367,7 @@ Once the new application is available it will need to undergo stringent testing,
   For more information about performance testing, see:
 
     * [Performance Testing](/help/sites-deploying/configuring-performance.md)
-    * [How to plan and run testing](/help/sites-developing/planning.md) 
+    * [How to plan and run testing](/help/sites-developing/planning.md)
     * [Basic Performance Guidelines](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
 
   >[!NOTE]
@@ -592,7 +592,7 @@ For best practices on deploying, administering, developing, or authoring, see th
 
 ## Key Documentation Areas {#key-documentation-areas}
 
-* AEM Documentation  
+* AEM Documentation
 
   In addition, the following sections of AEM documentation are of particular interest (however, this list is not exhaustive):
 

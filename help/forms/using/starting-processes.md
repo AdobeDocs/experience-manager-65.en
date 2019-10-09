@@ -6,7 +6,7 @@ seo-description: How to use LiveCycle AEM Forms workspace--select processes, add
 uuid: a61da785-25b4-4482-bd72-02e250d35dc7
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 ---
@@ -45,7 +45,7 @@ When you select a process, the Form tab and Details tab appear. If the process p
 
 1. Fill the form according to the instructions provided with it. If necessary, click **Maximize** to increase the visible area of the form.
 1. If the Attachments tab is available, add attachments as required.
-1. If the Notes tab is available, provide any notes as required. 
+1. If the Notes tab is available, provide any notes as required.
 1. Perform one of these steps:
 
     * Click the Submit button on the form, if the form has a Submit button.

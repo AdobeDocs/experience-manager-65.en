@@ -6,7 +6,7 @@ seo-description: Content Fragments - Delete Considerations
 uuid: b4161a0e-7e17-4547-9bdd-cf3b1d0d7d63
 contentOwner: aheimoz
 topic-tags: content-fragments
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 ---
@@ -25,7 +25,7 @@ With regards to delete permissions, Content Fragments must be considered at two 
 
 1. **The Content Fragment as a single entity.**
 
-    * **Use case**: A user who needs to edit/update a content fragment - **and delete an entire fragment**. 
+    * **Use case**: A user who needs to edit/update a content fragment - **and delete an entire fragment**.
     * **Permissions**: The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions).
 
 1. **The multiple sub-entities that make up a content fragment; for example, variations, sub-nodes.**
@@ -75,7 +75,7 @@ The permissions prerequisite to allowing a specific user and/or group to edit/up
 
     * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* For the `jcr:content` node of all Content Fragments: 
+* For the `jcr:content` node of all Content Fragments:
 
     * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
 

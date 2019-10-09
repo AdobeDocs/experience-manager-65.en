@@ -5,7 +5,7 @@ description: Content Fragments are stored as Assets, so are primarily managed fr
 seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
@@ -58,9 +58,9 @@ The method of creating a content fragment is (basically) the same for both simpl
 
         * **[!UICONTROL Title]**
 
-          The fragment title. 
+          The fragment title.
 
-          Mandatory.  
+          Mandatory.
 
         * **[!UICONTROL Description]**
         * **[!UICONTROL Tags]**
@@ -69,7 +69,7 @@ The method of creating a content fragment is (basically) the same for both simpl
 
         * **[!UICONTROL Name]**
 
-          The name; will be used to form the URL. 
+          The name; will be used to form the URL.
 
           Mandatory; will be automatically derived from the title, but can be updated.
 
@@ -246,14 +246,14 @@ In addition to the standard options, [Timeline](managing-assets-touch-ui.md#time
 >* Made in Timeline
 >* Related to the fragment asset
 >
->Annotations (for Content Fragments) are: 
+>Annotations (for Content Fragments) are:
 >
 >* Entered in the fragment editor
 >* Specific to a selected segment of text within the fragment
 
 For example:
 
-![cfm-6420-19](assets/cfm-6420-19.png) 
+![cfm-6420-19](assets/cfm-6420-19.png)
 
 ## Comparing Fragment Versions {#comparing-fragment-versions}
 
@@ -261,7 +261,7 @@ The **[!UICONTROL Compare to Current]** action is available from the [!UICONTROL
 
 This will open:
 
-* the **[!UICONTROL Current]** (latest) version (left)  
+* the **[!UICONTROL Current]** (latest) version (left)
 
 * the selected version **v&lt;*x.y*&gt;** (right)
 
@@ -281,7 +281,7 @@ They will be shown side-by-side, where:
 >
 >You cannot edit the fragment content when comparing fragments.
 
-![cfm-6420-20](assets/cfm-6420-20.png) 
+![cfm-6420-20](assets/cfm-6420-20.png)
 
 ## Reverting to a Version  {#reverting-to-a-version}
 

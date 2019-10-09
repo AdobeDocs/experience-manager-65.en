@@ -5,7 +5,7 @@ description: An Apache Solr installation may be shared between the node store (O
 seo-description: An Apache Solr installation may be shared between the node store (Oak) and common store (SRP) by using different collections
 uuid: 7356343d-073c-4266-bdcb-c7e999281476
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
@@ -53,7 +53,7 @@ It is also recommended to configure JVM to tune memory usage and garbage collect
 ### JVM Configuration Example {#jvm-configuration-example}
 
 ```shell
-JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"  
+JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
 ### SolrCloud Setup Commands {#solrcloud-setup-commands}
@@ -62,44 +62,44 @@ When running in SolrCloud mode, prior to MLS installation, use and knowledge of 
 
 #### 1. Upload a configuration to ZooKeeper {#upload-a-configuration-to-zookeeper}
 
-Reference:  
+Reference:
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
-Usage:  
-sh ./scripts/cloud-scripts/zkcli.sh \  
--cmd upconfig \  
--zkhost *server:port* \  
--confname *myconfig-name *\  
--solrhome *solr-home-path* \  
+Usage:
+sh ./scripts/cloud-scripts/zkcli.sh \
+-cmd upconfig \
+-zkhost *server:port* \
+-confname *myconfig-name *\
+-solrhome *solr-home-path* \
 -confdir *config-dir*
 
 #### 2. Create a collection {#create-a-collection}
 
-Reference:  
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create  
+Reference:
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create
 ](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
-Usage:  
-./bin/solr create \  
--c *mycollection-name*\  
--d *config-dir* \  
--n *myconfig-name* \  
--p *port*\  
--s *number-of-shards* \  
+Usage:
+./bin/solr create \
+-c *mycollection-name*\
+-d *config-dir* \
+-n *myconfig-name* \
+-p *port*\
+-s *number-of-shards* \
 -rf *number-of-replicas*
 
 #### 3. Link a collection to a configuration set {#link-a-collection-to-a-configuration-set}
 
 Link a collection to a configuration already uploaded to ZooKeeper.
 
-Reference:  
+Reference:
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
-Usage:  
-sh ./scripts/cloud-scripts/zkcli.sh \  
--cmd linkconfig \  
--zkhost *server:port* \  
--collection *mycollection-name* \  
+Usage:
+sh ./scripts/cloud-scripts/zkcli.sh \
+-cmd linkconfig \
+-zkhost *server:port* \
+-collection *mycollection-name* \
 -confname *myconfig-name*
 
 ### Comparison of Standard and Advanced MLS {#comparison-of-standard-and-advanced-mls}
@@ -140,7 +140,7 @@ In all, the following 33 languages are supported in Advanced MLS.
 
 **Note**: AEM 6.1 refers to AEM 6.1 Communities FP3 and earlier.
 
-![chlimage_1-283](assets/chlimage_1-283.png) 
+![chlimage_1-283](assets/chlimage_1-283.png)
 
 ### Installing Standard MLS {#installing-standard-mls}
 
@@ -163,7 +163,7 @@ The Standard MLS files are stored in the AEM repository.
 
     * /libs/social/config/datastore/msrp/*solrX*/**schema.xml**
     * /libs/social/config/datastore/msrp/*solrX*/**solrconfig.xml**
- 
+
 1. Download to local server on which Solr is deployed
 
     * Locate the `jcr:content` node's `jcr:data` property
@@ -287,22 +287,22 @@ After the contents of the package have been extracted to the server hosting the 
     * ./bin/solr start
     * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
 
-* Run the install script: Install [-v 4|5] [-d solrhome] [-c collectionpath] 
+* Run the install script: Install [-v 4|5] [-d solrhome] [-c collectionpath]
   where:
 
-    * -d solrhome 
+    * -d solrhome
 
       Solr installation directory
 
-    * -c collectionpath 
+    * -c collectionpath
 
       Collection path in solr
 
-    * --help 
+    * --help
 
       Print command line options
 
-    * -v [4|5] 
+    * -v [4|5]
 
       Set version for solr
 

@@ -5,7 +5,7 @@ description: Set up AEM Communities to use a relational database as its common s
 seo-description: Set up AEM Communities to use a relational database as its common store
 uuid: 29826b44-633d-4586-8553-cd87ebe269a2
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
@@ -47,20 +47,20 @@ The [Storage Configuration console](srp-config.md) allows for the selection of t
 * Select **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**
 * The following information comes from the provisioning process
 
-    * **[!UICONTROL Data Center URL]** 
+    * **[!UICONTROL Data Center URL]**
 
       Pull-down to select the production data center identified by your account representative
 
-    * **[!UICONTROL Default Report Suite]** 
+    * **[!UICONTROL Default Report Suite]**
 
       Enter the name of the default report suite
 
-    * **[!UICONTROL Consumer Key]** 
+    * **[!UICONTROL Consumer Key]**
 
       Enter the consumer key
 
-    * **[!UICONTROL Secret]** 
-    
+    * **[!UICONTROL Secret]**
+
       Enter the secret key
 
 * Select **[!UICONTROL Submit]**
@@ -72,7 +72,7 @@ Prepare the publish instances:
 
 After submitting the configuration, test the connection:
 
-* Select **[!UICONTROL Test Config]** 
+* Select **[!UICONTROL Test Config]**
   for each author and publish instance, test the connection to the data center from the Storage Configuration console
 
 * Finally, ensure that the site URLs for profile data are routable from the Data Center by [externalizing links](#externalize-links).

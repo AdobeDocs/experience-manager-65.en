@@ -5,7 +5,7 @@ description: As of AEM Communities 6.1, user generated content (UGC) is stored i
 seo-description: As of AEM Communities 6.1, user generated content (UGC) is stored in a single, common store provided by a storage resource provider (SRP)
 uuid: 651af1d7-70e8-4b56-8c01-871cb397678e
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
@@ -35,7 +35,7 @@ For details regarding the use of SRP for UGC, see [Storage Resource Provider Ove
 
 ## Characteristics of SRP Options {#characteristics-of-srp-options}
 
-[ASRP - Adobe Storage Resource Provider](asrp.md)  
+[ASRP - Adobe Storage Resource Provider](asrp.md)
 With this option, the UGC is persisted remotely in a cloud service hosted and managed by Adobe. It requires an additional license and working with an account representative to provision the account for that specific license.
 
 * Requires an associated cloud service provided and supported by Adobe to store community content
@@ -48,7 +48,7 @@ With this option, the UGC is persisted remotely in a cloud service hosted and ma
 >
 >There is a limit to uploading attachments to posts (or comments) in ASRP, which is 50 MB.
 
-[MSRP - MongoDB Storage Resource Provider](msrp.md)  
+[MSRP - MongoDB Storage Resource Provider](msrp.md)
 With this option, the UGC is persisted directly in a local MongoDB instance.
 
 * Requires a local, licensed install of MongoDB to store community content
@@ -58,7 +58,7 @@ With this option, the UGC is persisted directly in a local MongoDB instance.
 * Suitable for a MongoMK or RdbMK cluster
 * Suitable when expecting large volumes of community content
 
-[DSRP - Relational Database Storage Resource Provider](dsrp.md)  
+[DSRP - Relational Database Storage Resource Provider](dsrp.md)
 With this option, the UGC is persisted directly in a local MySQL database instance.
 
 * Requires a local install of MySQL to store community content
@@ -68,13 +68,13 @@ With this option, the UGC is persisted directly in a local MySQL database instan
 * Suitable for a MongoMK or RdbMK cluster
 * Suitable when expecting large volumes of community content
 
-[JSRP - JCR Storage Resource Provider](jsrp.md)  
+[JSRP - JCR Storage Resource Provider](jsrp.md)
 With the default option, there is no common store. The UGC is persisted only in the same JCR repository as the AEM instance in which it was entered.
 
 * Stores community content in the JCR repository of the AEM author or publish instance to which it was posted
 * Requires all programmatic access to UGC be through the SRP API
 * Requires a publish cluster if more than one publish instance is deployed (there is no replication mechanism among publish instances in a TarMK farm)
-* Moderation is performed only in the publish environment  (there is no reverse/forward replication mechanism between author and publish)  
+* Moderation is performed only in the publish environment  (there is no reverse/forward replication mechanism between author and publish)
 * Generally best for development, demonstrations, and training
 
 ## Configuring SRP {#configuring-srp}

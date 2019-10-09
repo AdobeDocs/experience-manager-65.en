@@ -5,7 +5,7 @@ description: Adobe Engineering and Consulting teams have developed a comprehensi
 seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
@@ -47,27 +47,27 @@ For best practices on administering, deploying and maintaining, or authoring, se
 
 Managing and authoring your website content has some best practices outlined as follows:
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>Some of the theory behind the standard, touch-enabled UI.</td> 
-   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Touch-Enabled UI: Concepts</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Touch-Enabled UI: Structure</a></p> </td> 
-   <td>These documents provide an overview of the concepts, and structure, of the touch-enabled UI.</td> 
+   <td>Some of the theory behind the standard, touch-enabled UI.</td>
+   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Touch-Enabled UI: Concepts</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Touch-Enabled UI: Structure</a></p> </td>
+   <td>These documents provide an overview of the concepts, and structure, of the touch-enabled UI.</td>
   </tr>
   <tr>
-   <td>Touch-Enabled UI: Customizing consoles </td> 
-   <td><a href="/help/sites-developing/customizing-consoles-touch.md">Customizing touch-enabled UI consoles</a></td> 
-   <td>This document describes the best way to extend the consoles for the touch-enabled UI.</td> 
+   <td>Touch-Enabled UI: Customizing consoles </td>
+   <td><a href="/help/sites-developing/customizing-consoles-touch.md">Customizing touch-enabled UI consoles</a></td>
+   <td>This document describes the best way to extend the consoles for the touch-enabled UI.</td>
   </tr>
   <tr>
-   <td>Touch-enabled UI: Customizing page authoring</td> 
-   <td><a href="/help/sites-developing/customizing-page-authoring-touch.md">Customizing touch-enabled UI page authoring</a></td> 
-   <td>Describes how to extend page authoring for the touch-enabled UI.</td> 
+   <td>Touch-enabled UI: Customizing page authoring</td>
+   <td><a href="/help/sites-developing/customizing-page-authoring-touch.md">Customizing touch-enabled UI page authoring</a></td>
+   <td>Describes how to extend page authoring for the touch-enabled UI.</td>
   </tr>
   <tr>
-   <td>Workflows</td> 
-   <td><a href="/help/sites-developing/workflows-best-practices.md">Developing and Extending Workflows</a></td> 
-   <td><p>Workflows enable you to automate Adobe Experience Manager (AEM) activities and can represent a large amount of the processing that occurs in an AEM environment, so it is highly recommended to plan your workflows implementations carefully.</p> </td> 
+   <td>Workflows</td>
+   <td><a href="/help/sites-developing/workflows-best-practices.md">Developing and Extending Workflows</a></td>
+   <td><p>Workflows enable you to automate Adobe Experience Manager (AEM) activities and can represent a large amount of the processing that occurs in an AEM environment, so it is highly recommended to plan your workflows implementations carefully.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -94,6 +94,6 @@ HTML Template Language (HTL) is a new HTML templating system, introduced with AE
 
 >[!NOTE]
 >
->Following multi-part tutorial might be of interest for the best practice to setup a new AEM project, detailing the Core Components, Editable Templates, Client Libraries and component development:  
+>Following multi-part tutorial might be of interest for the best practice to setup a new AEM project, detailing the Core Components, Editable Templates, Client Libraries and component development:
 >[Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 

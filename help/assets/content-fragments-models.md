@@ -6,7 +6,7 @@ seo-description: Content Fragment Models are used to create content fragments wi
 uuid: 59176a32-1255-4a46-ad00-344bde843ea6
 content-type: reference
 topic-tags: content-fragments
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 ---
 
@@ -37,7 +37,7 @@ To [create a new Content Fragment Model](#creating-a-content-fragment-model) you
 1. Select the location appropriate to your website.
 1. Use **[!UICONTROL Create]** to open the dialog, where you:
 
-    1. Specify a **[!UICONTROL Title]**. 
+    1. Specify a **[!UICONTROL Title]**.
     1. Select **[!UICONTROL Content Fragment Models]** to enable their use.
 
    ![cfm-6420-09](assets/cfm-6420-09.png)
@@ -74,7 +74,7 @@ The content fragment model effectively defines the structure of the resulting co
 >
 >Editing an existing content fragment model can impact dependent fragments.
 
-1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL Assets]**, then open **[!UICONTROL Content Fragment Models]**.  
+1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL Assets]**, then open **[!UICONTROL Content Fragment Models]**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Open the required model for **[!UICONTROL Edit]**; use either the quick action, or select the model and then the action from the toolbar.
@@ -118,7 +118,7 @@ The content fragment model effectively defines the structure of the resulting co
 
 To delete a content fragment model:
 
-1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL Assets]**, then open **[!UICONTROL Content Fragment Models]**.  
+1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL Assets]**, then open **[!UICONTROL Content Fragment Models]**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **[!UICONTROL Delete]** from the toolbar.
@@ -133,7 +133,7 @@ Content fragment models need to be published when/before any dependent content f
 
 To publish a content fragment model:
 
-1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL Assets]**, then open **[!UICONTROL Content Fragment Models]**.  
+1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL Assets]**, then open **[!UICONTROL Content Fragment Models]**.
 
 1. Navigate to the folder holding your content fragment model.
 1. Select your model, followed by **[!UICONTROL Publish]** from the toolbar.

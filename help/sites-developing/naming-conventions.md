@@ -5,7 +5,7 @@ description: Nodes in the repository are subject to naming conventions of the Ja
 seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
@@ -23,7 +23,7 @@ These naming conventions are implemented at various levels:
 * PageManager: the [Page Manager](#page-manager) provides methods for page level operations.
 * According to the UI being used:
 
-    * [Standard, touch-enabled UI](#standard-ui) 
+    * [Standard, touch-enabled UI](#standard-ui)
     * [Classic UI](#classic-ui)
 
 ### JCR Utilities {#jcr-utilities}

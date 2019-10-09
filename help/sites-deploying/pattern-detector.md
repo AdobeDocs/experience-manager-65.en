@@ -5,7 +5,7 @@ description: Learn how to use the Pattern Detector to assess the complexity of y
 seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
@@ -33,7 +33,7 @@ The Pattern Detector is released separately as a [one package](https://www.adobe
 >Pattern Detector can run on any environment, including local development instances. However, in order to:
 >
 >* increase the detection rate
->* avoid any slowdowns on business critical instances  
+>* avoid any slowdowns on business critical instances
 >both at the same time it is recommended to run it **on staging environments** that are as close as possible to production ones in the areas of user applications, content and configurations.
 
 You can use several methods to check the Pattern Detector output:
@@ -45,7 +45,7 @@ You can use several methods to check the Pattern Detector output:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Via a reactive text based or regular JSON interface** 
+* **Via a reactive text based or regular JSON interface**
 
 * **Via a reactive JSON lines interface**, that generates a separate JSON document in each line.
 
@@ -57,7 +57,7 @@ The reactive interface allows for the processing of the violation report as soon
 
 The output is currently available under 2 URLs:
 
-1. Plain text interface  
+1. Plain text interface
 1. JSON interface
 
 ## Handling the Plain Text Interface {#handling-the-plain-text-interface}

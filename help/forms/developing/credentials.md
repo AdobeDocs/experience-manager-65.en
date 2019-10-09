@@ -6,7 +6,7 @@ seo-description: null
 uuid: b794428f-49bf-4a91-bc5f-d855881f4f38
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 ---
@@ -33,7 +33,7 @@ You can programmatically interact with the Credential service using the Trust Ma
 
 You can programmatically import a credential into AEM Forms by using the Trust Manager API. For example, you can import a credential used to sign a PDF document. (See [Digitally Signing PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
-When importing a credential, you specify an alias for the credential. The alias is used to perform a Forms operation that requires a credential. Once imported, a credential can be viewed in administration console, as shown in the following illustration. Notice that the alias for the credential is *Secure*. 
+When importing a credential, you specify an alias for the credential. The alias is used to perform a Forms operation that requires a credential. Once imported, a credential can be viewed in administration console, as shown in the following illustration. Notice that the alias for the credential is *Secure*.
 
 ![ww_ww_truststore](assets/ww_ww_truststore.png)
 
@@ -46,7 +46,7 @@ When importing a credential, you specify an alias for the credential. The alias 
 To import a credential into AEM Forms, perform the following steps:
 
 1. Include project files.
-1. Create a credential service client. 
+1. Create a credential service client.
 1. Reference the credential.
 1. Perform the import operation.
 
@@ -94,25 +94,25 @@ Import a credential into AEM Forms by using the Trust Manager API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-truststore-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-truststore-client.jar, in your Java project’s class path.
 
 1. Create a credential service client
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `CredentialServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference the credential
 
-    * Create a `java.io.FileInputStream` object by using its constructor. Pass a string value that specifies the location of the credential. 
+    * Create a `java.io.FileInputStream` object by using its constructor. Pass a string value that specifies the location of the credential.
     * Create a `com.adobe.idp.Document` object that stores the credential by using the `com.adobe.idp.Document` constructor. Pass the `java.io.FileInputStream` object that contains the credential to the constructor.
 
 1. Perform the import operation
 
-    * Create a string array that holds one element. Assign the value `truststore.usage.type.sign` to the element. 
+    * Create a string array that holds one element. Assign the value `truststore.usage.type.sign` to the element.
     * Invoke the `CredentialServiceClient` object’s `importCredential` method and pass the following values:
 
-        * A string value that specifies the alias value for the credential. 
-        * The `com.adobe.idp.Document` instance that stores the credential. 
+        * A string value that specifies the alias value for the credential.
+        * The `com.adobe.idp.Document` instance that stores the credential.
         * A string value that specifies the password that is associated with the credential.
         * The string array that contains the usage value. For example, you can specify this value `truststore.usage.type.sign`. To import a Reader Extension credential, specify `truststore.usage.type.lcre`.
 
@@ -139,7 +139,7 @@ You can programmatically delete a credential by using the Trust Manager API. Whe
 To delete a credential, perform the following steps:
 
 1. Include project files.
-1. Create a credential service client. 
+1. Create a credential service client.
 1. Perform the delete operation.
 
 **Include project files**
@@ -178,11 +178,11 @@ Delete a credential from AEM Forms by using the Trust Manager API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-truststore-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-truststore-client.jar, in your Java project’s class path.
 
 1. Create a credential service client
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `CredentialServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Perform the delete operation

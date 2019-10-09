@@ -4,7 +4,7 @@ seo-title: Previewing a form
 description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
 seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
 uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 ---
@@ -19,27 +19,27 @@ When previewing forms, they are rendered in interactive interface and the user c
 
 The following table lists the preview options available for different types of supported forms:
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td><strong>Asset type</strong><br /> </td> 
-   <td><strong>Available preview options</strong><br /> </td> 
+   <td><strong>Asset type</strong><br /> </td>
+   <td><strong>Available preview options</strong><br /> </td>
   </tr>
   <tr>
-   <td>Document</td> 
-   <td>PDF preview</td> 
+   <td>Document</td>
+   <td>PDF preview</td>
   </tr>
   <tr>
-   <td>PDF Form</td> 
-   <td>PDF preview and Preview with Data<br /> </td> 
+   <td>PDF Form</td>
+   <td>PDF preview and Preview with Data<br /> </td>
   </tr>
   <tr>
-   <td>adaptive form</td> 
-   <td>HTML preview and HTML preview with Data</td> 
+   <td>adaptive form</td>
+   <td>HTML preview and HTML preview with Data</td>
   </tr>
   <tr>
-   <td>Form Template</td> 
-   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td> 
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
   </tr>
  </tbody>
 </table>

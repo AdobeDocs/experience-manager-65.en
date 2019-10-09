@@ -7,7 +7,7 @@ uuid: d0948ec9-ab67-4fe4-9062-1c4938460b43
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 ---
@@ -19,14 +19,14 @@ You can encrypt a PDF document with a password by using the Assembler service. A
 For the purpose of this discussion, assume that the following DDX document is used.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8"?> 
- <DDX xmlns="https://ns.adobe.com/DDX/1.0/"> 
-        <PDF result="EncryptLoan.pdf" encryption="userProtect"> 
-         <PDF source="inDoc" /> 
-     </PDF> 
-     <PasswordEncryptionProfile name="userProtect" compatibilityLevel="Acrobat7"> 
-         <OpenPassword>AdobeOpen</OpenPassword> 
-        </PasswordEncryptionProfile> 
+ <?xml version="1.0" encoding="UTF-8"?>
+ <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
+        <PDF result="EncryptLoan.pdf" encryption="userProtect">
+         <PDF source="inDoc" />
+     </PDF>
+     <PasswordEncryptionProfile name="userProtect" compatibilityLevel="Acrobat7">
+         <OpenPassword>AdobeOpen</OpenPassword>
+        </PasswordEncryptionProfile>
  </DDX>
 ```
 
@@ -53,7 +53,7 @@ To assemble an encrypted PDF document, perform the following steps:
 1. Reference an existing DDX document.
 1. Reference an unsecured PDF document.
 1. Set run-time options.
-1. Encrypt the document. 
+1. Encrypt the document.
 1. Save the encrypted PDF document.
 
 **Include project files**
@@ -106,11 +106,11 @@ If only a single PDF document is being passed to the Assembler service, the Asse
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-assembler-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-assembler-client.jar, in your Java project’s class path.
 
 1. Create an Assembler client.
 
-    * Create a `ServiceClientFactory` object that contains connection properties. 
+    * Create a `ServiceClientFactory` object that contains connection properties.
     * Create an `AssemblerServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
 1. Reference an existing DDX document.
@@ -159,30 +159,30 @@ If only a single PDF document is being passed to the Assembler service, the Asse
 
 1. Create an Assembler client.
 
-    * Create an `AssemblerServiceClient` object by using its default constructor. 
-    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `AssemblerServiceClient` object by using its default constructor.
+    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
         * Assign the corresponding password value to the field `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`. 
+        * Assign the constant value `HttpClientCredentialType.Basic` to the field `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
         * Assign the constant value `BasicHttpSecurityMode.TransportCredentialOnly` to the field `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Reference an existing DDX document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the DDX document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the DDX document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Reference an unsecured PDF document.
 
-    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF document. This `BLOB` object is passed to the `invokeOneDocument` as an argument. 
+    * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF document. This `BLOB` object is passed to the `invokeOneDocument` as an argument.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the input PDF document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 

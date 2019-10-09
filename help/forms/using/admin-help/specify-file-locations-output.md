@@ -1,13 +1,13 @@
 ---
-title: Specify file locations for Output 
-seo-title: Specify file locations for Output 
+title: Specify file locations for Output
+seo-title: Specify file locations for Output
 description: Learn how to specify file locations for Output.
 seo-description: Learn how to specify file locations for Output.
 uuid: 3287274f-85b5-4811-8abb-d347a9b80947
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 ---
 
@@ -16,7 +16,7 @@ discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 You can specify the locations where Output looks for certain types of files that it requires.
 
 1. In administration console, click Services &gt; output.
-1. Under Locations, specify the appropriate options. 
+1. Under Locations, specify the appropriate options.
 1. Click Save.
 
 ## Locations settings {#locations-settings}

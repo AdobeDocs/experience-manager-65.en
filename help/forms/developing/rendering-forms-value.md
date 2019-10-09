@@ -7,7 +7,7 @@ uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 ---
@@ -43,7 +43,7 @@ The following limitations apply when a form design is passed by value:
 To render a form by value, perform the following steps:
 
 1. Include project files.
-1. Create a Forms Client API object. 
+1. Create a Forms Client API object.
 1. Reference the form design.
 1. Render a form by value.
 1. Write the form data stream to the client web browser.
@@ -98,7 +98,7 @@ Render a form by value using the Forms API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path.
 
 1. Create a Forms Client API object
 
@@ -116,8 +116,8 @@ Render a form by value using the Forms API (Java):
 
     * An empty string value. (Normally this parameter requires a string value that specifies the name of the form design.)
     * A `com.adobe.idp.Document` object that contains the form design. Normally this parameter value is reserved for data that is merged with the form.
-    * A `PDFFormRenderSpec` object that stores run-time options. This is an optional parameter and you can specify `null` if you do not want to specify run-time options. 
-    * A `URLSpec` object that contains URI values that are required by the Forms service. 
+    * A `PDFFormRenderSpec` object that stores run-time options. This is an optional parameter and you can specify `null` if you do not want to specify run-time options.
+    * A `URLSpec` object that contains URI values that are required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
 
    The `renderPDFForm` method returns a `FormsResult` object that contains a form data stream that can be written to the client web browser.
@@ -128,9 +128,9 @@ Render a form by value using the Forms API (Java):
     * Get the content type of the `com.adobe.idp.Document` object by invoking its `getContentType` method.
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
     * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method. 
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
     * Create a byte array and allocate the size of the `InputStream` object. Invoke the `InputStream` object’s `available` method to obtain the size of the `InputStream` object.
-    * Populate the byte array with the form data stream by invoking the `InputStream` object’s `read`method and passing the byte array as an argument. 
+    * Populate the byte array with the form data stream by invoking the `InputStream` object’s `read`method and passing the byte array as an argument.
     * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
@@ -158,9 +158,9 @@ Render a form by value by using the Forms API (web service):
 
 1. Reference the form design
 
-    * Create a `java.io.FileInputStream` object by using its constructor. Pass a string value that specifies the location of the XDP file. 
+    * Create a `java.io.FileInputStream` object by using its constructor. Pass a string value that specifies the location of the XDP file.
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that is encrypted with a password.
-    * Create a byte array that stores the content of the `java.io.FileInputStream` object. You can determine the size of the byte array by getting the `java.io.FileInputStream` object’s size using its `available` method. 
+    * Create a byte array that stores the content of the `java.io.FileInputStream` object. You can determine the size of the byte array by getting the `java.io.FileInputStream` object’s size using its `available` method.
     * Populate the byte array with stream data by invoking the `java.io.FileInputStream` object’s `read` method and passing the byte array.
     * Populate the `BLOB` object by invoking its `setBinaryData` method and passing the byte array.
 
@@ -170,10 +170,10 @@ Render a form by value by using the Forms API (web service):
 
     * An empty string value. (Normally this parameter requires a string value that specifies the name of the form design.)
     * A `BLOB` object that contains the form design. Normally this parameter value is reserved for data that is merged with the form.
-    * A `PDFFormRenderSpec` object that stores run-time options. This is an optional parameter and you can specify `null` if you do not want to specify run-time options. 
-    * A `URLSpec` object that contains URI values that are required by the Forms service. 
+    * A `PDFFormRenderSpec` object that stores run-time options. This is an optional parameter and you can specify `null` if you do not want to specify run-time options.
+    * A `URLSpec` object that contains URI values that are required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
-    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This is used to store the rendered PDF form. 
+    * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This is used to store the rendered PDF form.
     * An empty `javax.xml.rpc.holders.LongHolder` object that is populated by the method. (This argument stores the number of pages in the form.)
     * An empty `javax.xml.rpc.holders.StringHolder` object that is populated by the method. (This argument stores the locale value.)
     * An empty `com.adobe.idp.services.holders.FormsResultHolder` object that will contain the results of this operation.
@@ -182,12 +182,12 @@ Render a form by value by using the Forms API (web service):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member. 
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method. 
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
     * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
     * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array. 
+    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
     * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**

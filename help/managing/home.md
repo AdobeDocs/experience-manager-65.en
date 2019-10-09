@@ -1,22 +1,22 @@
 ---
-title: AEM 6.4 Managing User Guide
-seo-title: AEM 6.4 Managing User Guide
+title: AEM 6.5 Managing User Guide
+seo-title: AEM 6.5 Managing User Guide
 description: This guide covers how to manage an AEM project successfully 
 seo-description: Covers how to manage an AEM project successfully 
 ---
 
-# AEM 6.4 Managing User Guide
+# AEM 6.5 Managing User Guide
 
 This guide covers how to manage an AEM project successfully 
 
 ## Key AEM articles
 
 * [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [AEM 6.4 Release Notes](/help/release-notes/home.md)
+* [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 user guides
+## AEM 6.5 user guides
 
 | User Guide | Description |
 |--- |---|

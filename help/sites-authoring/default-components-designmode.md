@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
@@ -46,7 +46,7 @@ For example, the content of a product page may contain a paragraph system holdin
 
 >[!CAUTION]
 >
->Editing the design using Design Mode as described in this article is the recommended way to define designs of static templates  
+>Editing the design using Design Mode as described in this article is the recommended way to define designs of static templates
 >
 >Modifying designs in CRX DE for example is not best practice and the application of such designs can vary from expected behavior. See the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) for more information.
 

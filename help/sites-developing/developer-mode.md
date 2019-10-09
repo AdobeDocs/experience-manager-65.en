@@ -5,7 +5,7 @@ description: Developer mode opens a side panel with several tabs that provide a 
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
 uuid: 2ff0d85e-fe49-4506-b6d6-74cc060d7ea1
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
@@ -30,11 +30,11 @@ These help a developer to:
 >Developer mode:
 >
 >* Is only available in the touch-enabled UI (when editing pages).
->* Is not available on mobile devices or small windows on desktop (due to space restrictions).  
+>* Is not available on mobile devices or small windows on desktop (due to space restrictions).
 >
->  * This occurs when the width is less than 1024px.  
+>  * This occurs when the width is less than 1024px.
 >
->* Requires the appropriate permissions/privileges:  
+>* Requires the appropriate permissions/privileges:
 >
 >  * Access to Developer Mode is given to users who have write access on `/apps`.
 
@@ -44,7 +44,7 @@ These help a developer to:
 >
 >If required it can be configured for use:
 >
->* on an author instance using nosamplecontent run-mode   
+>* on an author instance using nosamplecontent run-mode
 >* a publish instance
 >
 >It should be disabled again after use.
@@ -74,7 +74,7 @@ The panel is divided into two tabs:
 
 This shows a component tree that:
 
-* Outlines the chain of components and templates rendered on the page (SLY, JSP, etc.). The tree can be expanded to show context within the hierarchy.  
+* Outlines the chain of components and templates rendered on the page (SLY, JSP, etc.). The tree can be expanded to show context within the hierarchy.
 * Shows the server-side computational time needed to render the component.
 * Allows you to expand the tree and select specific components within the tree. Selection provides access to component details; such as:
 
@@ -86,7 +86,7 @@ This shows a component tree that:
 This can help to:
 
 * Determine and compare the rendering time per component.
-* See and understand the hierarchy.  
+* See and understand the hierarchy.
 * Understand, and then improve, the page loading time by finding slow components.
 
 Each component entry can show (for example):
@@ -121,7 +121,7 @@ Each component entry can show (for example):
 
 Hopefully the **Errors** tab will always be empty (as above), but when problems occur the following details are shown for each component:
 
-* A warning if the component writes an entry to the error log, together with details of the error and direct links to the appropriate code within CRXDE Lite.  
+* A warning if the component writes an entry to the error log, together with details of the error and direct links to the appropriate code within CRXDE Lite.
 * A warning if the component opens an admin session.
 
 For example, in a situation where a undefined method is called, the resulting error will be shown in the **Errors** tab:

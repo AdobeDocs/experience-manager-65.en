@@ -5,7 +5,7 @@ description: A list of the supported client and server platforms for AEM.
 seo-description: A list of the supported client and server platforms for AEM.
 uuid: d5bdcd41-3585-41f7-860d-8068a2931a72
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
@@ -38,7 +38,7 @@ Minimum requirements for running Adobe Experience Manager:
 >[!NOTE]
 >
 >* Digital asset use cases need more base memory. See [Deploying and Maintaining](/help/sites-deploying/deploy.md#default-local-install) for details.
->* [AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md) requires 15 GB of temporary space.  
+>* [AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md) requires 15 GB of temporary space.
 >
 
 Please see the [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md) for further information.
@@ -51,21 +51,21 @@ This document lists the supported client and server platforms for Adobe Experien
 
 Adobe recommends these configurations and provides full support as part of the standard software maintenance agreement.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Support Level</td> 
-   <td>Description<br /> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>A: Supported</strong></td> 
-   <td>Adobe provides full support and maintenance for this configuration. This configuration is covered by Adobe's quality assurance process.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>R: Restricted Support</strong></td> 
-   <td>To ensure our customers project success, Adobe provides full support within a restricted support program, which requires that specific conditions are met. R-level support requires a formal customer request and confirmation by Adobe. For more informations, please contact Adobe Customer Care.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Support Level</td>
+   <td>Description<br /> </td>
+  </tr>
+  <tr>
+   <td><strong>A: Supported</strong></td>
+   <td>Adobe provides full support and maintenance for this configuration. This configuration is covered by Adobe's quality assurance process.</td>
+  </tr>
+  <tr>
+   <td><strong>R: Restricted Support</strong></td>
+   <td>To ensure our customers project success, Adobe provides full support within a restricted support program, which requires that specific conditions are met. R-level support requires a formal customer request and confirmation by Adobe. For more informations, please contact Adobe Customer Care.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Unsupported Configurations {#unsupported-configurations}
@@ -86,40 +86,40 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 >
 >It is recommended to track the Security Bulletins from the Java vendor to ensure the safety and security of production environments and install the latest Java Updates.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Platform</td> 
-   <td>Support Level<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Oracle Java SE 11 JDK [1]</td> 
-   <td>Z: Not supported </td> 
-  </tr> 
-  <tr> 
-   <td>Oracle Java SE 10 JDK [1]</td> 
-   <td>Z: Not supported </td> 
-  </tr> 
-  <tr> 
-   <td>Oracle Java SE 9 JDK [1]</td> 
-   <td>Z: Not supported</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Oracle Java SE 8 JDK - 64bit</strong></td> 
-   <td>A: Supported [3]<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>IBM J9 VM - build 2.9, JRE 1.8.0 [2]</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>IBM J9 VM - build 2.8, JRE 1.8.0 [2]</td> 
-   <td>A: Supported</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Platform</td>
+   <td>Support Level<br /> </td>
+  </tr>
+  <tr>
+   <td>Oracle Java SE 11 JDK [1]</td>
+   <td>Z: Not supported </td>
+  </tr>
+  <tr>
+   <td>Oracle Java SE 10 JDK [1]</td>
+   <td>Z: Not supported </td>
+  </tr>
+  <tr>
+   <td>Oracle Java SE 9 JDK [1]</td>
+   <td>Z: Not supported</td>
+  </tr>
+  <tr>
+   <td><strong>Oracle Java SE 8 JDK - 64bit</strong></td>
+   <td>A: Supported [3]<br /> </td>
+  </tr>
+  <tr>
+   <td>IBM J9 VM - build 2.9, JRE 1.8.0 [2]</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>IBM J9 VM - build 2.8, JRE 1.8.0 [2]</td>
+   <td>A: Supported</td>
+  </tr>
+ </tbody>
 </table>
 
-1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9 and 10 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe will only provide support for LTS releases of Java to run AEM in production.   
+1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9 and 10 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe will only provide support for LTS releases of Java to run AEM in production.
 
 1. The IBM JRE is only supported in conjunction with WebSphere Application Server.
 1. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology. See the [Oracle Java support for Adobe Experience Manager Q&A](assets/adobe-oracle-java-license-agreement.pdf) for more information.
@@ -128,94 +128,94 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 
 Various options exist to deploy the repository of Adobe Experience Manager. See the following list for supported technologies and storage options.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Platform</strong></td> 
-   <td><strong>Description</strong></td> 
-   <td><strong>Support Level</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>File system with TAR files [1]</strong></td> 
-   <td>Repository</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td><strong>File system with Datastore [1]</strong></td> 
-   <td>Binaries</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Store binaries in TAR files on file system [1]</td> 
-   <td>Binaries</td> 
-   <td>Z: Not supported for production</td> 
-  </tr> 
-  <tr> 
-   <td>Amazon S3</td> 
-   <td>Binaries</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft Azure Blob Storage</td> 
-   <td>Binaries</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>MongoDB Enterprise 3.6 [5]</td> 
-   <td>Repository</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>MongoDB Enterprise 3.4 [2, 3]</td> 
-   <td>Repository</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>MySQL 5.7</td> 
-   <td>Forms Database</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>IBM DB2 11.1<br /> </td> 
-   <td>Forms Database</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>IBM DB2 10.5</td> 
-   <td>Repository &amp; Forms Database</td> 
-   <td>R: Restricted Support (4)</td> 
-  </tr> 
-  <tr> 
-   <td>Oracle Database 12c (12.1.x)</td> 
-   <td>Repository &amp; Forms Database</td> 
-   <td>R: Restricted Support</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft SQL Server 2017</td> 
-   <td>Forms Database</td> 
-   <td>Z: Not supported (4)</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft SQL Server 2016</td> 
-   <td>Forms Database</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft SQL Server 2014</td> 
-   <td>Forms Database</td> 
-   <td>R: Restricted Support (4)</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Apache Lucene (Quickstart built-in)</strong></td> 
-   <td>Search Service</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Apache Solr</td> 
-   <td>Search Service</td> 
-   <td>A: Supported</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Platform</strong></td>
+   <td><strong>Description</strong></td>
+   <td><strong>Support Level</strong></td>
+  </tr>
+  <tr>
+   <td><strong>File system with TAR files [1]</strong></td>
+   <td>Repository</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td><strong>File system with Datastore [1]</strong></td>
+   <td>Binaries</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Store binaries in TAR files on file system [1]</td>
+   <td>Binaries</td>
+   <td>Z: Not supported for production</td>
+  </tr>
+  <tr>
+   <td>Amazon S3</td>
+   <td>Binaries</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Microsoft Azure Blob Storage</td>
+   <td>Binaries</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>MongoDB Enterprise 3.6 [5]</td>
+   <td>Repository</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>MongoDB Enterprise 3.4 [2, 3]</td>
+   <td>Repository</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>MySQL 5.7</td>
+   <td>Forms Database</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>IBM DB2 11.1<br /> </td>
+   <td>Forms Database</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>IBM DB2 10.5</td>
+   <td>Repository &amp; Forms Database</td>
+   <td>R: Restricted Support (4)</td>
+  </tr>
+  <tr>
+   <td>Oracle Database 12c (12.1.x)</td>
+   <td>Repository &amp; Forms Database</td>
+   <td>R: Restricted Support</td>
+  </tr>
+  <tr>
+   <td>Microsoft SQL Server 2017</td>
+   <td>Forms Database</td>
+   <td>Z: Not supported (4)</td>
+  </tr>
+  <tr>
+   <td>Microsoft SQL Server 2016</td>
+   <td>Forms Database</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Microsoft SQL Server 2014</td>
+   <td>Forms Database</td>
+   <td>R: Restricted Support (4)</td>
+  </tr>
+  <tr>
+   <td><strong>Apache Lucene (Quickstart built-in)</strong></td>
+   <td>Search Service</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Apache Solr</td>
+   <td>Search Service</td>
+   <td>A: Supported</td>
+  </tr>
+ </tbody>
 </table>
 
 1. 'File System' includes block storage that is POSIX compliant. This includes network storage technology. Mind that file system performance might vary and influences the overall performance. It is recommended to load test AEM in combination with the network/remote file system.
@@ -244,7 +244,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 
 >[!NOTE]
 >
->Supported relational databases as listed above are third-party software and are not included in the AEM licensing package. 
+>Supported relational databases as listed above are third-party software and are not included in the AEM licensing package.
 >
 >In order to run AEM 6.4 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care will assist qualifying issues related to the usage of relational databases with AEM 6.4.
 >
@@ -272,46 +272,46 @@ Minimum Servlet API Version required is Servlet 3.1, but below Servlet 4.0.
 
 Adobe Experience Manager works with the following server platforms:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Platform</strong></td> 
-   <td><strong>Support Level</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Linux, based on Red Hat distribution</strong></td> 
-   <td>A: Supported (1)</td> 
-  </tr> 
-  <tr> 
-   <td>Linux, based on Debian distribution incl. Ubuntu</td> 
-   <td>A: Supported (4)</td> 
-  </tr> 
-  <tr> 
-   <td>Linux, based on SUSE distribution</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft Windows Server 2016</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft Windows Server 2012 R2</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Oracle Solaris 11</td> 
-   <td>A: Supported with limitations (3,5,7)<br /> R: Restricted Support for new contracts</td> 
-  </tr> 
-  <tr> 
-   <td>IBM AIX 7.2</td> 
-   <td>A: Supported with limitations (2,5,7)<br /> R: Restricted Support for new contracts</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Platform</strong></td>
+   <td><strong>Support Level</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Linux, based on Red Hat distribution</strong></td>
+   <td>A: Supported (1)</td>
+  </tr>
+  <tr>
+   <td>Linux, based on Debian distribution incl. Ubuntu</td>
+   <td>A: Supported (4)</td>
+  </tr>
+  <tr>
+   <td>Linux, based on SUSE distribution</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Microsoft Windows Server 2016</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Microsoft Windows Server 2012 R2</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Oracle Solaris 11</td>
+   <td>A: Supported with limitations (3,5,7)<br /> R: Restricted Support for new contracts</td>
+  </tr>
+  <tr>
+   <td>IBM AIX 7.2</td>
+   <td>A: Supported with limitations (2,5,7)<br /> R: Restricted Support for new contracts</td>
+  </tr>
+ </tbody>
 </table>
 
 1. Linux Kernel 2.6, 3.x and 4.x includes derivatives from Red Hat distribution, including Red Hat Enterprise Linux, CentOS, Oracle Linux and Amazon Linux. AEM form add-on features are only supported on CentOS 7 and Red Hat Enterprise Linux 6.5 and 7.
 1. AEM Assets: Please see the section [Support for XMP metadata write-back](#requirements-for-aem-assets-xmp-metadata-write-back)
-1. AEM Assets: No support for Dynamic Media Imaging. Dynamic Media Video is supported.  
+1. AEM Assets: No support for Dynamic Media Imaging. Dynamic Media Video is supported.
 1. AEM Forms is supported only on Ubuntu 16.04 LTS.
 1. AEM Assets: No support for [Raw file transformation](/help/assets/camera-raw.md)
 1. AEM Forms: No support for production environment
@@ -361,69 +361,69 @@ The AEM user interface is optimized for larger screens (typically notebooks and 
 >
 >Mozilla Firefox, Google Chrome and Microsoft Edge release updates every few months. Adobe is committed to provide updates for Adobe Experience Manager to maintain the support level as stated below with upcoming versions of these browsers.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Browser</strong></td> 
-   <td><strong>Support for UI<br /> </strong></td> 
-   <td><strong>Support for Classic UI</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Google Chrome (Evergreen)</strong></td> 
-   <td>A: Supported</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft Edge (Evergreen)</td> 
-   <td>A: Supported</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft Internet Explorer 11</td> 
-   <td>A: Supported</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Mozilla Firefox (Evergreen)</td> 
-   <td>A: Supported</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Mozilla Firefox last ESR [1]</td> 
-   <td>A: Supported</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Apple Safari 12.x on macOS</td> 
-   <td>A: Supported</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Apple Safari 11.x on macOS</td> 
-   <td>A: Supported</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Apple Safari 10.x on macOS</td> 
-   <td>A: Supported</td> 
-   <td>A: Supported</td> 
-  </tr> 
-  <tr> 
-   <td>Apple Safari on iOS 12.x</td> 
-   <td>A: Supported [2]</td> 
-   <td>Z: Not supported</td> 
-  </tr> 
-  <tr> 
-   <td>Apple Safari on iOS 11.x</td> 
-   <td>A: Supported [2]</td> 
-   <td>Z: Not supported</td> 
-  </tr> 
-  <tr> 
-   <td>Apple Safari on iOS 10.3</td> 
-   <td>A: Supported [2]</td> 
-   <td>Z: Not supported</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Browser</strong></td>
+   <td><strong>Support for UI<br /> </strong></td>
+   <td><strong>Support for Classic UI</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Google Chrome (Evergreen)</strong></td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Microsoft Edge (Evergreen)</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Microsoft Internet Explorer 11</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Mozilla Firefox (Evergreen)</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Mozilla Firefox last ESR [1]</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Apple Safari 12.x on macOS</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Apple Safari 11.x on macOS</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Apple Safari 10.x on macOS</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Apple Safari on iOS 12.x</td>
+   <td>A: Supported [2]</td>
+   <td>Z: Not supported</td>
+  </tr>
+  <tr>
+   <td>Apple Safari on iOS 11.x</td>
+   <td>A: Supported [2]</td>
+   <td>Z: Not supported</td>
+  </tr>
+  <tr>
+   <td>Apple Safari on iOS 10.3</td>
+   <td>A: Supported [2]</td>
+   <td>Z: Not supported</td>
+  </tr>
+ </tbody>
 </table>
 
 1. Extended Support Release of Firefox [Learn more about this on mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
@@ -463,11 +463,11 @@ This means that when an IP address needs to be specified you can select (as requ
 
 * an IPv6 address
 
-  for example `https://[ab12::34c5:6d7:8e90:1234]:4502`  
+  for example `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * an IPv4 address
 
-  for example `https://123.1.1.4:4502`  
+  for example `https://123.1.1.4:4502`
 
 * a server name
 
@@ -484,7 +484,7 @@ AEM Dynamic Media is disabled by default. See [Enabling Dynamic Media](/help/ass
 With Dynamic Media enabled, the following additional system requirements apply:
 >[!NOTE]
 >
->The following system requirements apply **_only_** if you use Dynamic Media - Hybrid mode; Dynamic Media - Hybrid mode has an embedded image server, which is only certified on certain operating systems. 
+>The following system requirements apply **_only_** if you use Dynamic Media - Hybrid mode; Dynamic Media - Hybrid mode has an embedded image server, which is only certified on certain operating systems.
 >
 >For Dynamic Media customers who run Dynamic Media - Scene7 mode (that is, **dynamicmedia_scene7** runmode), there are no additional system requirements; only the same system requirements as AEM. Dynamic Media - Scene7 mode architecture uses the cloud-based image service, not the service embedded in AEM.
 
@@ -492,7 +492,7 @@ With Dynamic Media enabled, the following additional system requirements apply:
 
 The following hardware requirements apply to both Linux and Windows operating systems:
 
-* Intel Xeon or AMD Opteron CPU with at least 4 cores  
+* Intel Xeon or AMD Opteron CPU with at least 4 cores
 * 16GB of RAM minimum
 
 #### Linux {#linux}
@@ -554,49 +554,49 @@ x86
 
 ### Requirements for AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><p><strong>Product</strong></p> </th> 
-   <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a></p> </td> 
-   <td><p>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft® Project 2016</td> 
-   <td>MPP</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft® Publisher 2016</td> 
-   <td>PUB</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft® Office Visio 2016</td> 
-   <td>VSD</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft® Office 2016</td> 
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td> 
-  </tr> 
-  <tr> 
-   <td>Microsoft® Office 2013</td> 
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td> 
-  </tr> 
-  <tr> 
-   <td>Corel WordPerfect X7</td> 
-   <td>WP, WPD<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>OpenOffice 4.1.2</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td> 
-  </tr> 
-  <tr> 
-   <td><p>OpenOffice 3.4</p> </td> 
-   <td><p>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Product</strong></p> </th>
+   <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
+  </tr>
+  <tr>
+   <td><p><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a></p> </td>
+   <td><p>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</p> </td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2016</td>
+   <td>MPP</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Publisher 2016</td>
+   <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office Visio 2016</td>
+   <td>VSD</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2016</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2013</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
+  </tr>
+  <tr>
+   <td>Corel WordPerfect X7</td>
+   <td>WP, WPD<br /> </td>
+  </tr>
+  <tr>
+   <td>OpenOffice 4.1.2</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
+  </tr>
+  <tr>
+   <td><p>OpenOffice 3.4</p> </td>
+   <td><p>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -620,10 +620,10 @@ XMP write-back is supported and enabled for the following platforms and file for
 
 **Operating Systems**
 
-* Linux (32-bit, needs 32-bit application support on 64-bit systems). For steps to install 32-bit client libraries, see [How to enable XMP extraction and write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).  
+* Linux (32-bit, needs 32-bit application support on 64-bit systems). For steps to install 32-bit client libraries, see [How to enable XMP extraction and write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
 * Windows Server
-* Oracle Solaris  
+* Oracle Solaris
 * Mac OS X (64-bit)
 
 **File Formats**
@@ -640,8 +640,8 @@ XMP write-back is supported and enabled for the following platforms and file for
 
 The AEM Screens Player Version 3.3.x supports following operating systems:
 
-* Microsoft Windows 10 Enterprise LTSB  
+* Microsoft Windows 10 Enterprise LTSB
 * Google Chome OS 62+
-* Google Android 5.1.1 with updated Android System WebView Version 52+  
+* Google Android 5.1.1 with updated Android System WebView Version 52+
 * Apple iOS 10.3+
 * Apple macOS 10.12+

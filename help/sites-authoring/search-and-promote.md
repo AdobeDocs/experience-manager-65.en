@@ -5,7 +5,7 @@ description: To integrate Search&Promote capabilities in your web site, use the 
 seo-description: To integrate Search&Promote capabilities in your web site, use the Search&Promote components to add keyword search, search results page, search refinement, and banners features to your page
 uuid: 382cf784-4214-4bf3-ace6-6f66451195e2
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
@@ -15,7 +15,7 @@ discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
 
 To integrate Search&Promote capabilities in your web site, use the Search&Promote components to add the following features to your pages:
 
-* Keyword search  
+* Keyword search
 * Search results page
 * Search refinement
 * Banners

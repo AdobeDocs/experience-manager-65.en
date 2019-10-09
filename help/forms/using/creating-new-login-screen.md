@@ -5,7 +5,7 @@ description: How-to modify the login page of LiveCycle modules, for example of A
 seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
 uuid: c7643f87-4a08-4c63-b87c-f987dbe18ece
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 ---
@@ -20,7 +20,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 1. Perform the following actions:
 
     1. Replicate the hierarchical structure: of `/libs/livecycle/core/content` at `/apps/livecycle/core/content`. Maintain the same (node/folder) properties and access control.
-    1. Copy the content folder: from `/libs/livecycle/core` to `/apps/livecycle/core`. 
+    1. Copy the content folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.
     1. Delete the contents of `/apps/livecycle/core` folder.
 
 1. Perform these actions:
@@ -48,7 +48,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
 1. Copy `login.jsp`:
 
-    * from `/libs/livecycle/core/components/login` 
+    * from `/libs/livecycle/core/components/login`
     * to `/apps/livecycle/core/components/login`
 
 1. Modify the following snippet of code for `/apps/livecycle/core/components/login/login.jsp`:
@@ -77,9 +77,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -131,9 +131,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -166,9 +166,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
    ```
    String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
-   
+
    To
-   
+
    String browserLocale = "ar";
    for(int i=0; i<locales.length; i++)
    ```
@@ -186,12 +186,12 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
     1. Create a node of type `sling:MessageEntry`, or copy an existing node and rename it, under all the locale folders.
     1. Copy `login.jsp` :
 
-        * from `/libs/livecycle/core/components/login` 
+        * from `/libs/livecycle/core/components/login`
         * to `/apps/livecycle/core/components/login`
 
     1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added text.
 
-   ![capture](assets/capture.png) 
+   ![capture](assets/capture.png)
 
    ```
    div class="loginContent">
@@ -199,9 +199,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></span>
                        <span class="loginTitle"><%= i18n.get("Login") %></span>
                        <% if (loginFailed) {%>
-   
+
    To
-   
+
    div class="loginContent">
                        <span class="loginFlow"></span>
                        <span class="loginVersion"><%= i18n.get("My Welcome Message") %></span>
@@ -214,7 +214,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
 1. Copy `login` node:
 
-    * from `/libs/livecycle/core/content` 
+    * from `/libs/livecycle/core/content`
     * to `/apps/livecycle/core/content`
 
 1. Delete files `login.js` and `jquery-1.8.0.min.js`, from the node `/apps/livecycle/core/content/login.`
@@ -234,7 +234,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
     * Add the following to `/apps/livecycle/core/content/login/login.css`.
 
    ```css
-   
+
    .newLoginContentArea {
     width: 700px;
     padding: 100px 0px 0px 100px;
@@ -246,9 +246,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ```
    <div class="loginContentArea">
-   
+
    To
-   
+
    <div class="newLoginContentArea">
    ```
 
@@ -284,9 +284,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ```
    <div class="loginContainerBkg">
-   
+
    To
-   
+
    <div class="newLginContainerBkg">
    ```
 

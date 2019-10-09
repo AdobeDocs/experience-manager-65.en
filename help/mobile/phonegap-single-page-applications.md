@@ -6,7 +6,7 @@ seo-description: Follow this page to learn about single page applications, that 
 uuid: d1865e79-6e7c-4149-95c0-556e61478b01
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: a5b5e40e-2457-45fe-9632-baf5008fe8bf
 ---

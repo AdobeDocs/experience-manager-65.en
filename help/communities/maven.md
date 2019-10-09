@@ -5,7 +5,7 @@ description: AEM Communities API jar and AEM Uber API jar
 seo-description: AEM Communities API jar and AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
@@ -47,7 +47,7 @@ Ensure thet the version specified corresponds with the Communities package versi
 4. extract the version from the package name
     * first version for AEM 6.3 is version 1.11.170
     * feature packs will be versions 1.12.xxx
-    
+
 >[!NOTE]
 >
 >It is recommended to keep up-to-date with the most recent Communities release.

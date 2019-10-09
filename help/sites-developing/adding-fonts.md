@@ -5,7 +5,7 @@ description: AEM allows you to generate graphics incorporating text dynamically 
 seo-description: AEM allows you to generate graphics incorporating text dynamically taken from your content
 uuid: 67d9b10f-e986-4d29-bde2-10e08075fe17
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
@@ -21,7 +21,7 @@ Currently all implementations of the Java Platform support [TrueType](https://en
 
 1. Open CRXDE Lite and navigate to your project application folder:
 
-   `/apps/<your-project>/`  
+   `/apps/<your-project>/`
 
 1. Under `/apps/<your-project>/` create a new node:
 
@@ -36,11 +36,11 @@ Currently all implementations of the Java Platform support [TrueType](https://en
    >
    >Font files in the repository must have the suffix `*.ttf` or `*.TTF`.
 
-1. Update the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Add the path to your fonts folder; i.e. `/apps/<your-project>/fonts`.  
+1. Update the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Add the path to your fonts folder; i.e. `/apps/<your-project>/fonts`.
 
 1. Return to CRXDE Lite. You should now see a `.fontlist` node in your folder containing the name of the imported fonts.
 
    These fonts are now ready to be used in the Java API.
 
-For full details of how to use the fonts with the Java API, see the [documentation for the Font class of the Java API](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).  
+For full details of how to use the fonts with the Java API, see the [documentation for the Font class of the Java API](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
 

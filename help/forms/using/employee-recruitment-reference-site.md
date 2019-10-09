@@ -5,7 +5,7 @@ description: AEM Forms reference site showcases how organizations can use AEM Fo
 seo-description: AEM Forms reference site showcases how organizations can use AEM Forms features to implement employee recruitment workflow.
 uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 ---
 
@@ -21,7 +21,7 @@ We.Finance is an organization that allows candidates to apply for employment thr
 
 * Candidates searching and applying for jobs
 * Screening and shortlisting of candidates
-* Interviewing process  
+* Interviewing process
 * Collection of candidate details
 * Candidate background checking
 * Rolling out offers to selected candidates
@@ -90,7 +90,7 @@ Ensure that you specify a valid email ID in the application as any communication
 
 ## John Jacobs shortlists Sarah Rose's profile for the hiring manager's screening {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-The organization receives the job application submitted by Sarah. John Jacobs, a recruiter, is assigned the task to review Sarah's profile. He reviews the task in his AEM Inbox, finds the profile matching the job requirement, and clicks Shortlist. Sarah's profile is forwarded to Gloria Rios, the hiring manager, for her approval. 
+The organization receives the job application submitted by Sarah. John Jacobs, a recruiter, is assigned the task to review Sarah's profile. He reviews the task in his AEM Inbox, finds the profile matching the job requirement, and clicks Shortlist. Sarah's profile is forwarded to Gloria Rios, the hiring manager, for her approval.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -110,7 +110,7 @@ Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.ht
 
 ## Gloria reviews the application and approves the applicant for an interview {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
-Gloria, the hiring manager, receives the shortlisted profile as a task in her AEM Inbox. She reviews it and approves the candidate, Sarah Rose, for the interview. 
+Gloria, the hiring manager, receives the shortlisted profile as a task in her AEM Inbox. She reviews it and approves the candidate, Sarah Rose, for the interview.
 
 ![gloriainbox](assets/gloriainbox.png)
 
@@ -132,7 +132,7 @@ Go to `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.ht
 
 ## John Doe schedules an interview {#john-doe-schedules-an-interview}
 
-John Doe receives the task of scheduling an interview in his inbox. John Doe selects and opens the task and fixes the interview date and time, location, and the HR person responsible for the interview as John Jacob. John Doe clicks Send Invitation Email. An email is sent to Sarah and a task is assigned to Gloria, the hiring manager, for interviewing Sarah. 
+John Doe receives the task of scheduling an interview in his inbox. John Doe selects and opens the task and fixes the interview date and time, location, and the HR person responsible for the interview as John Jacob. John Doe clicks Send Invitation Email. An email is sent to Sarah and a task is assigned to Gloria, the hiring manager, for interviewing Sarah.
 
 ![johnjacobsaeminbox](assets/johnjacobsaeminbox.png)
 
@@ -164,7 +164,7 @@ Gloria Rios selects Sarah Rose after the interviews
 
 ## John Doe requests more information {#john-doe-requests-more-information}
 
-Before asking a candidate to join the organization, her background needs to be checked. John Doe opens and reviews the selected applicant's details and finds that some of her employment and education details are not filled in as yet. John Doe clicks Need More Information. 
+Before asking a candidate to join the organization, her background needs to be checked. John Doe opens and reviews the selected applicant's details and finds that some of her employment and education details are not filled in as yet. John Doe clicks Need More Information.
 
 ![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 
@@ -172,7 +172,7 @@ John Doe requests more information from Sarah Rose about her education and work 
 
 ## Sarah Rose receives an email requesting further information {#sarah-rose-receives-an-email-requesting-further-information}
 
-Sarah Rose receives an email notifying her that further information is required for processing her employment application. The email includes a link to the form for filling up the required information. 
+Sarah Rose receives an email notifying her that further information is required for processing her employment application. The email includes a link to the form for filling up the required information.
 
 ![sarahroseemailmoredetails](assets/sarahroseemailmoredetails.png)
 
@@ -232,7 +232,7 @@ Sarah Rose receives the joining letter for signing. Sarah clicks Click Here To R
 
 Sarah Rose receives the joining letter for signing
 
-Sarah can choose either to type in, use draw to handwrite, insert an image of signature, or use her mobile's touchscreen to draw her signature. Sarah types in her name, clicks Click To Sign, and dwonloads the signed copy of the joining letter. 
+Sarah can choose either to type in, use draw to handwrite, insert an image of signature, or use her mobile's touchscreen to draw her signature. Sarah types in her name, clicks Click To Sign, and dwonloads the signed copy of the joining letter.
 
 ![sarahrosejoininglettersign](assets/sarahrosejoininglettersign.png)
 

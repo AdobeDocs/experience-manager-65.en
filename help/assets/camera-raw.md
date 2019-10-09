@@ -5,7 +5,7 @@ description: Learn how to enable Camera Raw support in Adobe Experience Manager 
 seo-description: Learn how to enable Camera Raw support in Adobe Experience Manager (AEM) Assets.
 uuid: 9b2db870-0f58-4340-b1f6-e0a2d8983e55
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: fb4a0018-2572-439e-b066-4a631eac55eb
@@ -23,34 +23,34 @@ To enable Camera Raw support in Adobe Experience Manager (AEM) Assets:
 
 1. Based on the AEM version and the operating system, download the appropriate Camera Raw package and install it:
 
-   <table> 
+   <table>
     <tbody>
     <tr>
-    <td><p><strong>Supported Platforms</strong></p> </td> 
-    <td><p><strong>Package Share Link</strong></p> </td> 
-    <td><p><strong>Supported AEM Versions</strong></p> </td> 
+    <td><p><strong>Supported Platforms</strong></p> </td>
+    <td><p><strong>Package Share Link</strong></p> </td>
+    <td><p><strong>Supported AEM Versions</strong></p> </td>
     </tr>
     <tr>
-    <td><p>Windows 64 Bit, Mac OS, RHEL 7.x</p> </td> 
-    <td><p><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg">1.3.16</a></p> </td> 
-    <td><p>6.3, 6.4</p> </td> 
+    <td><p>Windows 64 Bit, Mac OS, RHEL 7.x</p> </td>
+    <td><p><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg">1.3.16</a></p> </td>
+    <td><p>6.3, 6.4</p> </td>
     </tr>
     <tr>
-    <td><p>Windows 64 Bit, Mac OS, RHEL 7.x</p> </td> 
-    <td><p><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg">1.2.8</a></p> </td> 
-    <td><p>6.2 </p> </td> 
+    <td><p>Windows 64 Bit, Mac OS, RHEL 7.x</p> </td>
+    <td><p><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg">1.2.8</a></p> </td>
+    <td><p>6.2 </p> </td>
     </tr>
     <tr>
-    <td><p>Windows 64 Bit, Mac OS, RHEL 7.x</p> </td> 
-    <td><p><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem610/product/assets/aem-assets-cameraraw-pkg">1.1.22</a></p> </td> 
-    <td><p>6.1</p> </td> 
+    <td><p>Windows 64 Bit, Mac OS, RHEL 7.x</p> </td>
+    <td><p><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem610/product/assets/aem-assets-cameraraw-pkg">1.1.22</a></p> </td>
+    <td><p>6.1</p> </td>
     </tr>
     </tbody>
    </table>
 
 1. Access `https://[AEM server]:[Port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
 
-1. Open the **[!UICONTROL Process Thumbnails]** step.  
+1. Open the **[!UICONTROL Process Thumbnails]** step.
 
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
 

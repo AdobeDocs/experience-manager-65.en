@@ -7,7 +7,7 @@ uuid: f3553826-f5eb-40ea-aeb7-90e4ad30598c
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a3cbffb7-c1d1-47c2-bcfd-70f1e2d81ac9
 ---
 
@@ -66,7 +66,7 @@ When you run Configuration Manager, the default host and IP address or the forms
 1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; Configure Allowed Referer URL’s. The Allowed Referer list appears at the bottom of the page.
 1. To add an allowed referer:
 
-    * Type a host name or IP address in the Allowed Referers box. To add more than one allowed referer at a time, type each host name or IP address on a new line. 
+    * Type a host name or IP address in the Allowed Referers box. To add more than one allowed referer at a time, type each host name or IP address on a new line.
     * In the HTTP Port and HTTPS Ports boxes, specify which ports to allow for HTTP, HTTPS, or both. If you leave those boxes empty, the default ports (port 80 for HTTP and port 443 for HTTPS) are used. If you enter `0` (zero) in the boxes, all ports on that server are enabled. You can also enter a specific port number to enable only that port.
     * Click Add.
 

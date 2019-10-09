@@ -5,7 +5,7 @@ description: Steps to set up the Android Studio project and build the .apk file 
 seo-description: Steps to set up the Android Studio project and build the .apk file for the AEM Forms app for Android
 uuid: 2e140aaf-5be5-4d5d-9941-9d1f4bf2debd
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 ---
@@ -32,7 +32,7 @@ Perform the following steps to download the `adobe-aemfd-forms-app-src-pkg-<vers
 
 The following image displays the structure of the `adobe-lc-mobileworkspace-src-<version>.zip\android`folder.
 
-![zip_android_folder_structure](assets/zip_android_folder_structure.png) 
+![zip_android_folder_structure](assets/zip_android_folder_structure.png)
 
 ## Set the environment variables {#set-environment-variable-android}
 
@@ -55,14 +55,14 @@ Perform the following steps to build AEM Forms app using Android Studio:
 
 1. Launch the Android Studio application on your machine.
 1. Click **Open an existing Android Studio project**. If the dialog box to open an existing project does not appear automatically, select **File** &gt; **Open**.
-1. Navigate to *adobe-lc-mobileworkspace-src-&lt;version&gt;.zip/android* on the local file system and click **OK**. 
+1. Navigate to *adobe-lc-mobileworkspace-src-&lt;version&gt;.zip/android* on the local file system and click **OK**.
 
    The **android** option is displayed in the left pane.
 
    ![android_folder_studio](assets/android_folder_studio.png)
 
 1. Select **android** from the left pane and click **Run** &gt; **Run 'android'**.
-1. Select the Android device from the Connected Devices section on the Select Deployment Target dialog box and click OK. 
+1. Select the Android device from the Connected Devices section on the Select Deployment Target dialog box and click OK.
 
    Once you have built the development environment successfully, you can now apply customizations on the app. Use the following articles to customize the app:
 
@@ -78,10 +78,10 @@ Execute the following steps to generate the .apk file using Android Studio:
 
 1. Launch the Android Studio application on your machine.
 1. Select **Open an existing Android Studio project**. If the dialog box to open an existing project does not appear automatically, select **File** &gt; **Open**.
-1. Navigate to *adobe-lc-mobileworkspace-src-&lt;version&gt;.zip/android* on the local file system and click **OK**. 
+1. Navigate to *adobe-lc-mobileworkspace-src-&lt;version&gt;.zip/android* on the local file system and click **OK**.
 
    The android option is displayed in the left pane.
-   
+
 1. Select **Build** &gt; **Build APK** to generate the .apk file.
 
    Optionally, Select **Build** &gt; **Generate Signed APK** to generate a [signed version](https://developer.android.com/studio/publish/app-signing) of the .apk file.

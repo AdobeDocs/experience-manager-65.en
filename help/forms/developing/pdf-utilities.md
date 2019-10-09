@@ -6,7 +6,7 @@ seo-description: null
 uuid: a2ea2359-c547-4f1b-b6ca-f276f816e36a
 contentOwner: admin
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 ---
@@ -76,7 +76,7 @@ Convert PDF documents into XDP documents by using the PDF Utilities API(Java):
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Invoke the PDF to XDP conversion operation
 
@@ -96,12 +96,12 @@ Convert PDF documents into XDP documents by using the PDF Utilities API (web ser
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the PDF Utilities service WSDL file. 
+    * Create a Microsoft .NET client assembly that consumes the PDF Utilities service WSDL file.
     * Reference the Microsoft .NET client assembly.
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceService` object by using your proxy class constructor. 
+   Create a `PDFUtilityServiceService` object by using your proxy class constructor.
 
 1. Invoke the PDF to XDP conversion operation
 
@@ -159,11 +159,11 @@ Convert XDP documents into PDF documents by using the PDF Utilities API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-pdfutility-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-pdfutility-client.jar, in your Java project’s class path.
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Invoke the XDP to PDF conversion operation
 
@@ -183,12 +183,12 @@ Convert XDP documents into PDF documents by using the PDF Utilities API (web ser
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the PDF Utilities service WSDL file. 
+    * Create a Microsoft .NET client assembly that consumes the PDF Utilities service WSDL file.
     * Reference the Microsoft .NET client assembly.
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceService` object by using your proxy class constructor. 
+   Create a `PDFUtilityServiceService` object by using your proxy class constructor.
 
 1. Invoke the XDP to PDF conversion operation
 
@@ -246,17 +246,17 @@ Retrieve PDF document properties by using the PDF Utilities API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-pdfutility-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-pdfutility-client.jar, in your Java project’s class path.
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Invoke the properties retrieval operation
 
    To perform the conversion, invoke the `PDFUtilityServiceClient` object’s `getPDFProperties` method and pass in the following:
 
-    * A `com.adobe.idp.Document` object that represents the PDF document. 
+    * A `com.adobe.idp.Document` object that represents the PDF document.
     * A `PDFPropertiesOptionSpec` object that contains the properties to be evaluated.
 
    The method returns a `PDFPropertiesResult` object that contains the results of the query.
@@ -275,18 +275,18 @@ Retrieve PDF document properties by using the PDF Utilities web service API:
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the PDF Utilities service WSDL file. 
+    * Create a Microsoft .NET client assembly that consumes the PDF Utilities service WSDL file.
     * Reference the Microsoft .NET client assembly.
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceService` object by using your proxy class constructor. 
+   Create a `PDFUtilityServiceService` object by using your proxy class constructor.
 
 1. Invoke the properties retrieval operation
 
    To perform the conversion, invoke the `PDFUtilityServiceService` object’s `getPDFProperties` method and pass in the following:
 
-    * A `BLOB` object that represents the PDF document. 
+    * A `BLOB` object that represents the PDF document.
     * A `PDFPropertiesOptionSpec` object that contains the properties to be evaluated.
 
    The method returns a `PDFPropertiesResult` object that contains the results of the query.
@@ -330,7 +330,7 @@ Before you can programmatically perform a PDF Utilities operation, you must crea
 You can choose one of the following save options:
 
 * `INCREMENTAL`: To save incrementally to reduce the time required to save
-* `FAST_WEB_VIEW`: save for fast web viewing 
+* `FAST_WEB_VIEW`: save for fast web viewing
 * `FULL`: To save using a full save (without optimizations)
 
 **Invoke the save style operation**
@@ -363,26 +363,26 @@ Set the PDF document save options by using the PDF Utilities API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-pdfutility-client.jar, in your Java project’s class path. 
+   Include client JAR files, such as adobe-pdfutility-client.jar, in your Java project’s class path.
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Set the Save mode
 
-    * Create a `PDFUtilitySaveMode` object by using its constructor. 
+    * Create a `PDFUtilitySaveMode` object by using its constructor.
     * Set the save mode by invoking the `PDFUtilitySaveMode` object’s `setSaveStyle` method and passing a string value that specifies the save mode. For example, to save for fast web viewing, pass `FAST_WEB_VIEW`.
 
 1. Invoke the save style operation
 
    Invoke the `PDFUtilityServiceClient` object’s `setSaveMode` method and pass the following values:
 
-    * A `com.adobe.idp.Document` object that represents the PDF document. 
+    * A `com.adobe.idp.Document` object that represents the PDF document.
     * A `PDFUtilitySaveMode` object that contains the save style to be used.
     * A Boolean value used to determine whether to override any previous settings.
 
-   The method returns a `com.adobe.idp.Document` object formatted using the specified save style. 
+   The method returns a `com.adobe.idp.Document` object formatted using the specified save style.
 
 1. Pass the PDF document to another AEM Forms operation
 
@@ -402,23 +402,23 @@ Set the PDF document save options by using the PDF Utilities AP (web service):
 
 1. Include project files
 
-    * Create a Microsoft .NET client assembly that consumes the PDF Utilities service WSDL file. 
+    * Create a Microsoft .NET client assembly that consumes the PDF Utilities service WSDL file.
     * Reference the Microsoft .NET client assembly.
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceService` object by using your proxy class constructor. 
+   Create a `PDFUtilityServiceService` object by using your proxy class constructor.
 
 1. Set the Save mode
 
-    * Create a `PDFUtilitySaveMode` object by using its constructor. 
+    * Create a `PDFUtilitySaveMode` object by using its constructor.
     * Set the save mode by assigning a string value to the `PDFUtilitySaveMode` object’s `saveStyle` method that specifies the save mode. For example, to save for fast web viewing, specify `FAST_WEB_VIEW`.
 
 1. Invoke the save style operation
 
    Invoke the `PDFUtilityServiceService` object’s `setSaveMode` method and pass the following values:
 
-    * A `BLOB` object that represents the PDF document. 
+    * A `BLOB` object that represents the PDF document.
     * A `PDFUtilitySaveMode` object that contains the save style to be used.
     * A Boolean value used to determine whether to override any previous settings.
 
@@ -484,7 +484,7 @@ Sanitize documents by using the PDF Utilities API (Java):
 
 1. Create a PDFUtilityService client
 
-   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties. 
+   Create a `PDFUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Invoke the PDF to XDP conversion operation
 

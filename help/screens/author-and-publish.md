@@ -6,7 +6,7 @@ seo-description: AEM Screens architecture resembles a traditional AEM Sites arch
 uuid: 2bea5594-8a89-4aa2-8f3c-35ce84c84cc6
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/SCREENS
+products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
 discoiquuid: a6886b33-3bf1-4a81-8b9b-b6c154ca06d7
 ---
@@ -41,8 +41,8 @@ The following section explains how to setup replication agents on author and pub
 
 You can set up a simple example, where you host an author and two publish instances:
 
-* Author --&gt; localhost:4502 
-* Publish 1 (pub1) --&gt; localhost:4503   
+* Author --&gt; localhost:4502
+* Publish 1 (pub1) --&gt; localhost:4503
 * Publish (pub2) --&gt; localhost:4504
 
 ### Setting up Replication Agents on Author {#setting-up-replication-agents-on-author}
@@ -92,7 +92,7 @@ Follow the same steps to create a reverse replication agent.
 
 #### Creating Standard Replication Agents  {#creating-standard-replication-agents}
 
-1. Create standard replication agent for pub1 (out-of-the-box default agent should already be configured) (for example, *https://&lt;hostname&gt;:4503/bin/receive?sling:authRequestLogin=1*)  
+1. Create standard replication agent for pub1 (out-of-the-box default agent should already be configured) (for example, *https://&lt;hostname&gt;:4503/bin/receive?sling:authRequestLogin=1*)
 
 1. Create standard replication agent for pub2. You can copy rep agent for pub1 and update the transport to be used for pub2 by changing the port in the transport configuration. (for example, *https://&lt;hostname&gt;:4504/bin/receive?sling:authRequestLogin=1*)
 
@@ -110,8 +110,8 @@ Follow the same steps to create a reverse replication agent.
 
 ### Step 1: Configure Apache Sling Oak-Based Discovery {#step-configure-apache-sling-oak-based-discovery}
 
-Set up Apache Sling Oak-Based Discovery for all Publish instances in the topology   
-  
+Set up Apache Sling Oak-Based Discovery for all Publish instances in the topology
+
 For each publish instance:
 
 1. Navigate to https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr
@@ -128,7 +128,7 @@ For any of the Publish instances navigate to https://&lt;host&gt;:&lt;port&gt;/s
 
 ### Step 3: Setup ActiveMQ Artemis Cluster {#step-setup-activemq-artemis-cluster}
 
-This step allows you to create encrypted password for ActiveMQ Artemis cluster.  
+This step allows you to create encrypted password for ActiveMQ Artemis cluster.
 The cluster user and password of all publish instances in the topology needs to be identical. The password of the ActiveMQ Artemis configuration needs to be encrypted. Since each instance has its own encryption key it is necessary to use Crypto Support to create an encrypted password string. Then encrypted password will be used in the OSGi config for ActiveMQ.
 
 On each Publish Instance:
@@ -143,7 +143,7 @@ Since each publish instance by default has unique crypto keys you need to perfor
 
 *For example*,
 
-Pub1 - {1ec346330f1c26b5c48255084c3b7272a5e85260322edd59119828d1fa0a610e}   
+Pub1 - {1ec346330f1c26b5c48255084c3b7272a5e85260322edd59119828d1fa0a610e}
 Pub2 - {8d3d113c834cc4f52c2daee0da3cb0a21122a31f0138bfe4b70c9ead79415f41}
 
 ### Step 4: Activate ActiveMQ Artemis Cluster {#step-activate-activemq-artemis-cluster}
@@ -162,7 +162,7 @@ On each publish instance:
 Follow the steps below on each Publish instance:
 
 1. Navigate to the OSGi Console -&gt; Main &gt; ActiveMQ Artemis ([http://localhost:4505/system/console/mq](http://localhost:4505/system/console/mq)).
-1. Verify and check to view the ports of other instances under Cluster Information &gt; Topology &gt; nodes=2, members=2. 
+1. Verify and check to view the ports of other instances under Cluster Information &gt; Topology &gt; nodes=2, members=2.
 1. Send a Test Message (top of the screen under Broker Information)
 1. Enter the following changes in fields:
 
@@ -178,13 +178,13 @@ As an example, the following image displays on successful configuration of Activ
 
 If you do not see the following configuration from */system/console/mq*, then navigate to */system/console/mq* and click **Restart** to restart the broker.
 
-![image-2018-06-18-18-14-55-449](assets/image-2018-06-18-18-14-55-449.png) 
+![image-2018-06-18-18-14-55-449](assets/image-2018-06-18-18-14-55-449.png)
 
 ### Remove referrer header requirement {#remove-referrer-header-requirement}
 
 Follow the steps on each Publish instance:
 
-1. Navigate to **Configuration Manager** from **OSGi Console**. 
+1. Navigate to **Configuration Manager** from **OSGi Console**.
 1. Select **Apache Sling Referrer Filter**.
 1. Update config and **check Allow Empty**.
 
@@ -209,7 +209,7 @@ Once you have set up the publish toplogy, you need to configure the author and p
 
 ### Step 2: Registering a Device on Author {#step-registering-a-device-on-author}
 
-1. Go to [http://localhost:4502/screens.html/content/screens/we-retail](http://localhost:4502/screens.html/content/screens/we-retail) or select your project and navigate to Devices &gt; Device Manager. 
+1. Go to [http://localhost:4502/screens.html/content/screens/we-retail](http://localhost:4502/screens.html/content/screens/we-retail) or select your project and navigate to Devices &gt; Device Manager.
 1. Select **Register Device**.
 1. Click **Device Registration** to view the device.
 1. Select the device you want to register and click **Register Device**.
@@ -253,7 +253,7 @@ You can also activate the device from the Device Management Console. Follow the 
 >
 >Alternatively, once you have activated the device you also can edit or update the server URL by clicking **Edit server URL** from the action bar, as shown in the figure below and your changes will be propagated to the AEM Screens player.
 
-![screen_shot_2019-02-21at105527am](assets/screen_shot_2019-02-21at105527am.png) 
+![screen_shot_2019-02-21at105527am](assets/screen_shot_2019-02-21at105527am.png)
 
 ## Publishing Check list {#publishing-check-list}
 
@@ -261,7 +261,7 @@ The following points summarizes the Publishing Check list:
 
 * *Screens Device User* - This is stored as an AEM user and be activated from **Tools** &gt; **Security** &gt; **Users**. The user will be prefixed with "screens" with a long serialized string.
 
-* *Project* - The AEM Screens project.  
+* *Project* - The AEM Screens project.
 
 * *Location* - Location that device is connected to.
 * *Channel(s)* - one or more channels that are being displayed at the location
@@ -270,13 +270,13 @@ The following points summarizes the Publishing Check list:
 
 Once you verify the checklist, you need to verify the following changes/behavior in your channel:
 
-* After publishing the device config open the Screens player config and point it to the Publish instance. Also, you can also activate the device from the device management console.  
+* After publishing the device config open the Screens player config and point it to the Publish instance. Also, you can also activate the device from the device management console.
 * Update some channel content on Author and publish it and verify that the updated channel now displays on the AEM Screens player.
 * Connect the Screens player to a different publish instance and verify behavior above.
 
 ### Step 5: Pointing the Device to Publish Instance in the Admin Panel {#step-pointing-the-device-to-publish-instance-in-the-admin-panel}
 
-1. View the admin UI from the Screens player, long press on the top left corner to open the Admin menu, on your touch enabled AEM Screens player, or by using a mouse. 
+1. View the admin UI from the Screens player, long press on the top left corner to open the Admin menu, on your touch enabled AEM Screens player, or by using a mouse.
 1. Click the **Configuration **option from the side panel.
 1. Change author instance to publish instance in **Server**.
 
@@ -288,7 +288,7 @@ Alternatively, you can also update/edit the server URL from the device managemen
 1. Click **Device Manager** from the action bar.
 1. Select the device and click **Edit server URL** from the action bar, as shown in the figure below and your changes will be propagated to the AEM Screens player.
 
-![screen_shot_2019-02-07at31028pm](assets/screen_shot_2019-02-07at31028pm.png) 
+![screen_shot_2019-02-07at31028pm](assets/screen_shot_2019-02-07at31028pm.png)
 
 ## Managing Publication: Delivering Content Updates from Author to Publish to Device {#managing-publication-delivering-content-updates-from-author-to-publish-to-device}
 
@@ -332,7 +332,7 @@ Follow the steps below to deliver content updates from author to publish to devi
    > 1. The workflow will not work if **Update Offline Content** is triggered before publish using **Manage Publication**.
    > 1. The workflow will not work if there are no changes in the project and nothing for **Update Offline Content**.
    > 1. The workflow will not work if author does not completes the replication process (contents are still uploading to publish instance) after clicking the **Publish** button in the managing publication workflow.
-   
+
 1. Once you have completed the manage publication workflow, you must trigger the update offline content in author, that will create the update offline on the author instance.
 
    Navigate to the project and click **Update Offline Content** from the action bar. This action forwards the same command to publish instance, so that the offline zips are created on the publish instance as well.
@@ -360,7 +360,7 @@ Follow the steps below to deliver content updates from author to publish to devi
 
    ![screen_shot_2019-02-07at120304pm](assets/screen_shot_2019-02-07at120304pm.png)
 
-1. Click **Publish **from the** Manage **Publication wizard.** 
+1. Click **Publish **from the** Manage **Publication wizard.**
    **
 
    ![screen_shot_2019-02-07at120507pm](assets/screen_shot_2019-02-07at120507pm.png)

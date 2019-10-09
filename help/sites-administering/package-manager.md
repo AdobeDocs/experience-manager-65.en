@@ -5,7 +5,7 @@ description: Learn the basics of working with packages in AEM.
 seo-description: Learn the basics of working with packages in AEM.
 uuid: e9eb4f88-9df6-4019-92e0-2aafcffe1aab
 contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
@@ -17,7 +17,7 @@ Packages enable the importing and exporting of repository content. For example, 
 
 Packages can be accessed and/or maintained from the following pages:
 
-* [Package Manager](#package-manager), which you use to manage the packages in your local AEM instance.  
+* [Package Manager](#package-manager), which you use to manage the packages in your local AEM instance.
 
 * [Package Share](#package-share), a centralized server holding both publicly available packages and those private to your company. The public packages can contain hotfixes, new functionality, documentation, etc.
 
@@ -37,19 +37,19 @@ A package also contains vault meta information, including the filter definitions
 
 You can perform the following actions on or with packages:
 
-* Create new packages; defining package settings and filters as required  
-* Preview package contents (before build)  
-* Build packages  
-* View package information  
-* View package contents (after build)  
+* Create new packages; defining package settings and filters as required
+* Preview package contents (before build)
+* Build packages
+* View package information
+* View package contents (after build)
 * Modify the definition for existing packages
 * Rebuild existing packages
 * Rewrap packages
-* Download packages from AEM to your file system  
-* Upload packages from your file system into your local AEM instance  
+* Download packages from AEM to your file system
+* Upload packages from your file system into your local AEM instance
 * Validate package content before installation
-* Perform a dry run installation   
-* Install packages (AEM does not automatically install packages after uploading)  
+* Perform a dry run installation
+* Install packages (AEM does not automatically install packages after uploading)
 * Delete packages
 * Download packages, such as hotfixes, from the Package Share library
 * Upload packages to the company-internal section of the Package Share library
@@ -69,7 +69,7 @@ You can edit a variety of Package Settings to define aspects such as the package
 
 The **Package Settings** dialog is available via the **Edit** button when [creating](#creating-a-new-package) or [editing](#viewing-and-editing-package-information) a package and provides three tabs for configuration. After any changes are made click **OK** to save these.
 
-![packagesedit](assets/packagesedit.png) 
+![packagesedit](assets/packagesedit.png)
 
 | **Field** |**Description** |
 |---|---|
@@ -79,62 +79,62 @@ The **Package Settings** dialog is available via the **Edit** button when [creat
 | Description |A brief description of the package. HTML markup can be used for formatting. |
 | Thumbnail |The icon that appears with the package listing. Click Browse to select a local file. |
 
-![chlimage_1-344](assets/chlimage_1-344.png)  
+![chlimage_1-344](assets/chlimage_1-344.png)
 
-<table> 
- <tbody> 
-  <tr> 
-   <th><strong>Field</strong></th> 
-   <th><strong>Description</strong></th> 
-   <th><strong>Format/Example</strong></th> 
-  </tr> 
-  <tr> 
-   <td>Name</td> 
-   <td>The name of the provider.</td> 
-   <td><em>AEM Geometrixx<br /> </em></td> 
-  </tr> 
-  <tr> 
-   <td>URL</td> 
-   <td>URL of the provider.</td> 
-   <td><em>https://www.aem-geometrixx.com</em></td> 
-  </tr> 
-  <tr> 
-   <td>Link</td> 
-   <td>Package-specific link to a provider page.</td> 
-   <td><em>https://www.aem-geometrixx.com/mypackage.html</em></td> 
-  </tr> 
-  <tr> 
-   <td>Requires<br /> </td> 
-   <td> 
-    <ul> 
-     <li>Admin: Select when the package can only be installed by an account with admin privileges.</li> 
-     <li>Restart: Select when the server needs to be restarted after the package is installed.</li> 
-    </ul> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>AC Handling</td> 
-   <td><p>Specify how the access control information defined in the package is handled when the package is imported:</p> 
-    <ul> 
-     <li><strong>Ignore</strong></li> 
-     <li><strong>Overwrite</strong></li> 
-     <li><strong>Merge</strong></li> 
-     <li><strong>Clear</strong></li> 
-     <li><strong>MergePreserve</strong></li> 
-    </ul> <p>The default value is <strong>Ignore</strong>.</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>Ignore</strong> - preserve ACLs in the repository</li> 
-     <li><strong>Overwrite</strong> - overwrite ACLs in the repository</li> 
-     <li><strong>Merge</strong> - merge both sets of ACLs</li> 
-     <li><strong>Clear</strong> - clear ACLs</li> 
-     <li><strong>MergePreserve</strong> - merge access control in the content with the one provided with the package by adding the access control entries of principals not present in the content</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th><strong>Field</strong></th>
+   <th><strong>Description</strong></th>
+   <th><strong>Format/Example</strong></th>
+  </tr>
+  <tr>
+   <td>Name</td>
+   <td>The name of the provider.</td>
+   <td><em>AEM Geometrixx<br /> </em></td>
+  </tr>
+  <tr>
+   <td>URL</td>
+   <td>URL of the provider.</td>
+   <td><em>https://www.aem-geometrixx.com</em></td>
+  </tr>
+  <tr>
+   <td>Link</td>
+   <td>Package-specific link to a provider page.</td>
+   <td><em>https://www.aem-geometrixx.com/mypackage.html</em></td>
+  </tr>
+  <tr>
+   <td>Requires<br /> </td>
+   <td>
+    <ul>
+     <li>Admin: Select when the package can only be installed by an account with admin privileges.</li>
+     <li>Restart: Select when the server needs to be restarted after the package is installed.</li>
+    </ul> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>AC Handling</td>
+   <td><p>Specify how the access control information defined in the package is handled when the package is imported:</p>
+    <ul>
+     <li><strong>Ignore</strong></li>
+     <li><strong>Overwrite</strong></li>
+     <li><strong>Merge</strong></li>
+     <li><strong>Clear</strong></li>
+     <li><strong>MergePreserve</strong></li>
+    </ul> <p>The default value is <strong>Ignore</strong>.</p> </td>
+   <td>
+    <ul>
+     <li><strong>Ignore</strong> - preserve ACLs in the repository</li>
+     <li><strong>Overwrite</strong> - overwrite ACLs in the repository</li>
+     <li><strong>Merge</strong> - merge both sets of ACLs</li>
+     <li><strong>Clear</strong> - clear ACLs</li>
+     <li><strong>MergePreserve</strong> - merge access control in the content with the one provided with the package by adding the access control entries of principals not present in the content</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
-![packagesdependencies](assets/packagesdependencies.png) 
+![packagesdependencies](assets/packagesdependencies.png)
 
 | **Field** |**Description** |**Format/Example** |
 |---|---|---|
@@ -158,28 +158,28 @@ You can define one or more filter definitions for a package. Use more than one f
 
 The following table describes these rules and provides examples:
 
-<table> 
- <tbody> 
-  <tr> 
-   <th> Rule type</th> 
-   <th>Description </th> 
-   <th>Example </th> 
-  </tr> 
-  <tr> 
-   <td> include</td> 
-   <td>You can define a path, or use a regular expression to specify all the nodes that you want to include.<br /> <br /> Including a directory will: 
-    <ul> 
-     <li>include that directory <i>and</i> all the files and folders in that directory (i.e. the entire subtree)</li> 
-     <li><strong>not</strong> include other files or folders from under the specified root path</li> 
-    </ul> </td> 
-   <td>/libs/sling/install(/.*)? </td> 
-  </tr> 
-  <tr> 
-   <td> exclude</td> 
-   <td>You can specify a path or use a regular expression to specify all the nodes that you want to exclude.<br /> <br /> Excluding a directory will exclude that directory <i>and</i> all files and folders in that directory (i.e. the entire subtree).<br /> </td> 
-   <td>/libs/wcm/foundation/components(/.*)?</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th> Rule type</th>
+   <th>Description </th>
+   <th>Example </th>
+  </tr>
+  <tr>
+   <td> include</td>
+   <td>You can define a path, or use a regular expression to specify all the nodes that you want to include.<br /> <br /> Including a directory will:
+    <ul>
+     <li>include that directory <i>and</i> all the files and folders in that directory (i.e. the entire subtree)</li>
+     <li><strong>not</strong> include other files or folders from under the specified root path</li>
+    </ul> </td>
+   <td>/libs/sling/install(/.*)? </td>
+  </tr>
+  <tr>
+   <td> exclude</td>
+   <td>You can specify a path or use a regular expression to specify all the nodes that you want to exclude.<br /> <br /> Excluding a directory will exclude that directory <i>and</i> all files and folders in that directory (i.e. the entire subtree).<br /> </td>
+   <td>/libs/wcm/foundation/components(/.*)?</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -210,7 +210,7 @@ Official AEM Installation or Extension package:
 
 Official Feature packs:
 
-![](do-not-localize/chlimage_1-29.png) 
+![](do-not-localize/chlimage_1-29.png)
 
 ## Package Manager {#package-manager}
 
@@ -232,7 +232,7 @@ See [Setting permissions](/help/sites-administering/security.md) for instruction
 
 To create a new package definition:
 
-1. On the AEM Welcome screen, click **Packages** (or from the **Tools** console double-click on **Packages**).  
+1. On the AEM Welcome screen, click **Packages** (or from the **Tools** console double-click on **Packages**).
 
 1. Then select **Package Manager**.
 1. Click **Create Package**.
@@ -247,17 +247,17 @@ To create a new package definition:
 
    Enter the:
 
-    * **Group Name** 
+    * **Group Name**
 
       The target group (or folder) name. Groups are intended to be used to help you organize your packages.
 
       A folder will be created for the group if it does not already exist. If you leave the group name blank, it will create the package in the main package list (Home &gt; Packages).
 
-    * **Package Name** 
+    * **Package Name**
 
       The name of your new package. Select a descriptive name to help you (and others) easily identify the contents of the package.
-  
-    * **Version** 
+
+    * **Version**
 
       A textual field for you to indicate a version. This will be appended to the package name to form the name of the zip file.
 
@@ -291,12 +291,12 @@ To create a new package definition:
 
    Specify:
 
-    * **Root Path** 
-      The content to be packaged; this can be the root of a subtree. 
-    * **Rules** 
-      Rules are optional; for simple package definitions, it is not necessary to specify include or exclude rules. 
+    * **Root Path**
+      The content to be packaged; this can be the root of a subtree.
+    * **Rules**
+      Rules are optional; for simple package definitions, it is not necessary to specify include or exclude rules.
 
-      If needed, you can define either [**Include** or **Exclude** rules](#package-filters) to exactly define the package contents.  
+      If needed, you can define either [**Include** or **Exclude** rules](#package-filters) to exactly define the package contents.
 
       Add rules using the **+** symbol, alternatively remove rules using the **-** symbol. Rules are applied according to their order so position them as required using the **Up** and **Down** buttons.
 
@@ -321,7 +321,7 @@ A package is often built at the same time as you [create the package definition]
 >
 >Before building the package it can be useful to preview the contents of the package. To do this click **Preview**.
 
-1. Open the package definition from **Package Manager** (click on the package icon or name).  
+1. Open the package definition from **Package Manager** (click on the package icon or name).
 
 1. Click **Build**. A dialog asks for confirmation that you do want to build the package.
 
@@ -335,13 +335,13 @@ A package is often built at the same time as you [create the package definition]
 
 Once a package has been built it can be rewrapped, if required.
 
-Rewrapping changes the package information - *without* changing the package content. Package information is the thumbnail, description, etc., in other words everything you can edit with the **Package Settings** dialog (to open this click **Edit**).  
-  
+Rewrapping changes the package information - *without* changing the package content. Package information is the thumbnail, description, etc., in other words everything you can edit with the **Package Settings** dialog (to open this click **Edit**).
+
 A major use case for rewrap is when preparing a package for the package share. For example, you might have an existing package and decide to share it with others. For that you want to add a thumbnail and add a description. Instead of recreating the entire package with all its functionality (which might take some time and bears the risk that the package is no longer identical to the original) you can rewrap it and just add the thumbnail and description.
 
-1. Open the package definition from **Package Manager** (click on the package icon or name).  
+1. Open the package definition from **Package Manager** (click on the package icon or name).
 
-1. Click **Edit** and update the **[Package Settings](#package-settings)** as required. Click **OK** to save.  
+1. Click **Edit** and update the **[Package Settings](#package-settings)** as required. Click **OK** to save.
 
 1. Click **Rewrap**, a dialog will ask for confirmation.
 
@@ -367,7 +367,7 @@ To view, or edit, information about a package definition:
 After a package has been built you can view the contents:
 
 1. In the Package Manager navigate to the package you want to view.
-1. Click the package icon of the package you want to view. This will open the package page listing information about the package definition.  
+1. Click the package icon of the package you want to view. This will open the package page listing information about the package definition.
 
 1. To view the contents click **Contents**, a window will open and list the entire contents of the package:
 
@@ -387,7 +387,7 @@ This section describes how to download a package from AEM to your file system by
 >
 >From Package Share you can:
 >
->* download packages from [Package Share directly into your local AEM instance](#downloading-and-installing-packages-from-package-share).  
+>* download packages from [Package Share directly into your local AEM instance](#downloading-and-installing-packages-from-package-share).
 >  Upon download the package is imported into your repository, after which you can immediately install it on your local instance using the **Package Manager**. These packages include hotfixes and other shared packages.
 >
 >* download packages from [Package Share to your file system](#downloading-packages-to-your-file-system-from-package-share).
@@ -416,15 +416,15 @@ To upload a package:
 
    ![packagesuploadbutton](assets/packagesuploadbutton.png)
 
-1. Click **Upload Package**. 
+1. Click **Upload Package**.
 
    ![packagesuploaddialog](assets/packagesuploaddialog.png)
 
-    * **File** 
+    * **File**
 
-      You can either type the file name directly, or use the **Browse...** dialog to select the required package from your local file system (after selection click **OK**). 
-  
-    * **Force Upload** 
+      You can either type the file name directly, or use the **Browse...** dialog to select the required package from your local file system (after selection click **OK**).
+
+    * **Force Upload**
 
       If a package with this name already exists you can click this to force upload (and overwrite the existing package).
 
@@ -532,7 +532,7 @@ Validation of packages can be done in two different ways:
    >
    >This should be done after uploading the content package, but before installing the package.
 
-1. In the modal dialog box that then appears, use the checkboxes to select the type(s) of validation and begin the validation by clicking **Validate**. Alternatively click **Cancel**.  
+1. In the modal dialog box that then appears, use the checkboxes to select the type(s) of validation and begin the validation by clicking **Validate**. Alternatively click **Cancel**.
 
 1. The chosen validation(s) is/are then run. Results are displayed in the activity log of the Package Manager.
 
@@ -572,7 +572,7 @@ The following is an example of using cURL to execute a package validation.
 
 After you upload a package, you need to install the content. To have the package content installed and functional, it needs to be both:
 
-* loaded into AEM (either [uploaded from your filesystem](#uploading-packages-from-your-file-system) or [downloaded from package share](#downloading-and-installing-packages-from-package-share))  
+* loaded into AEM (either [uploaded from your filesystem](#uploading-packages-from-your-file-system) or [downloaded from package share](#downloading-and-installing-packages-from-package-share))
 
 * installed
 
@@ -582,10 +582,10 @@ After you upload a package, you need to install the content. To have the package
 >
 >To see the contents, or impact, of a package you can:
 >
->* Perform a test installation of the package without modifying any of the contents:  
->  Open the package (click on the package icon or name) and click **Test Install**.  
+>* Perform a test installation of the package without modifying any of the contents:
+>  Open the package (click on the package icon or name) and click **Test Install**.
 >
->* See a list of package contents:  
+>* See a list of package contents:
 >  Open the package and click **Contents**.
 >
 
@@ -599,7 +599,7 @@ After you upload a package, you need to install the content. To have the package
 >
 >If you are installing digital assets, you must:
 >
->* First, deactivate the WorkflowLauncher.  
+>* First, deactivate the WorkflowLauncher.
 >  Use the Components menu option of the OSGi console to deactivate `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl`.
 >
 >* Next, when installation is complete, reactivate the WorkflowLauncher.
@@ -652,7 +652,7 @@ To delete a package from the Package Manager list(s):
 >
 >The installed files/nodes from the package are **not** deleted.
 
-1. In the **Tools** console, expand the **Packages** folder to show your package in the right-hand pane.  
+1. In the **Tools** console, expand the **Packages** folder to show your package in the right-hand pane.
 
 1. Click the package you want to delete so that it is highlighted and then either:
 
@@ -671,7 +671,7 @@ To delete a package from the Package Manager list(s):
 
 Replicate the contents of a package to install it to the publish instance:
 
-1. In the **Package Manager**, navigate to the package that you want to replicate.  
+1. In the **Package Manager**, navigate to the package that you want to replicate.
 
 1. Click the icon or the name of the package you want to replicate to expand it.
 1. In the **More** drop-down menu on the toolbar, select **Replicate**.
@@ -722,7 +722,7 @@ To gain access to Package Share:
 
 The first time you sign into Package Share with your Adobe ID your email address will be validated.
 
-1. You will receive an email containing a link.  
+1. You will receive an email containing a link.
 1. You need to click on this link.
 1. A webpage will be opened.
 
@@ -753,7 +753,7 @@ An Adobe ID can be created by providing:
 
 The validity of your application will be checked before:
 
-* Your user account is created with the required/allowed permissions.  
+* Your user account is created with the required/allowed permissions.
 * Your account is added to your company's group.
 
 >[!NOTE]
@@ -780,11 +780,11 @@ Package Share is only available when your AEM server has access to the Internet 
 
 In Package Share packages are arranged in tree subtrees:
 
-* Adobe packages provided by Adobe.  
-* Shared packages that have been provided by others companies and have been made public by Adobe.  
+* Adobe packages provided by Adobe.
+* Shared packages that have been provided by others companies and have been made public by Adobe.
 * Your company packages that are private.
 
-![chlimage_1-346](assets/chlimage_1-346.png) 
+![chlimage_1-346](assets/chlimage_1-346.png)
 
 ### Searching and Filtering Packages {#searching-and-filtering-packages}
 
@@ -806,7 +806,7 @@ To download packages from Package Share and install them on your local instance,
    >
    >Before starting to download packages from Package Share, make sure you have the [required access](#access-to-package-share).
 
-1. Navigate to the package you want to download and click **Download**.  
+1. Navigate to the package you want to download and click **Download**.
 
 1. Go back or navigate to the **Package Manager** on your AEM instance. Then navigate to the package you just downloaded.
 
@@ -848,12 +848,12 @@ To upload packages your the company-internal Package Share:
 
 >[!CAUTION]
 >
->To upload a package to Package Share, you first have to create a group folder named after your company on your local Package Manager. For example, geometrixx. All packages to be uploaded for sharing must be placed in this group folder.  
+>To upload a package to Package Share, you first have to create a group folder named after your company on your local Package Manager. For example, geometrixx. All packages to be uploaded for sharing must be placed in this group folder.
 >
 >
 >Packages in the Package Manager home list or in other folders cannot be shared.
 
-1. Open the **Package Manager** and navigate to the package you want to upload.  
+1. Open the **Package Manager** and navigate to the package you want to upload.
 
 1. Click the package icon to open it.
 1. Click **Share** to open the dialog for uploading the package to Package Share.
@@ -877,8 +877,8 @@ To upload packages your the company-internal Package Share:
 
 You can only delete packages that you have uploaded by proceed as follows:
 
-1. In your company tree, check the package group containing the package. 
-1. Click on the package. 
+1. In your company tree, check the package group containing the package.
+1. Click on the package.
 1. Click the delete button.
 
    ![](do-not-localize/chlimage_1-30.png)
@@ -887,5 +887,5 @@ You can only delete packages that you have uploaded by proceed as follows:
 
 ### Making Packages Semi-Private {#making-packages-semi-private}
 
-You can share packages outside your organization, but not publicly. These packages would be considered as semi-private. To share these semi-private packages you will need some help from Adobe Support. To do this, open a ticket with Adobe Support requesting a package be made available outside your organization. They will ask you for a list of Adobe ID's you want to grant access to your packages.   
+You can share packages outside your organization, but not publicly. These packages would be considered as semi-private. To share these semi-private packages you will need some help from Adobe Support. To do this, open a ticket with Adobe Support requesting a package be made available outside your organization. They will ask you for a list of Adobe ID's you want to grant access to your packages.
 

@@ -5,7 +5,7 @@ description: Learn about the various security considerations when configuring an
 seo-description: Learn about the various security considerations when configuring and deploying AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
@@ -80,7 +80,7 @@ For more information on changing the web console password, see [Changing the OSG
 
 You must also change the password used for accessing the Web console. This is done by configuring the following properties of the [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md):
 
-**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.  
+**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.
 The password must be changed after the initial installation to ensure the security of your instance.
 
 To do this:
@@ -116,8 +116,8 @@ A standard installation of AEM specifies `admin` as the user for transport crede
 
 For security considerations, both should be changed to reflect the particular use case at hand, with the following two aspects in mind:
 
-* The **transport user** should not be the admin user. Rather, set up a user on the publish system that has only access rights to the relevant portions of the publish system and use that user's credentials for the transport.  
-  
+* The **transport user** should not be the admin user. Rather, set up a user on the publish system that has only access rights to the relevant portions of the publish system and use that user's credentials for the transport.
+
   You can start from the bundled replication-receiver user and configure this user's access rights to match your situation
 
 * The **replication user** or **Agent User Id** should also not be the admin user, but a user who can only see content that is supposed to be replicated. The replication user is used to collect the content to be replicated on the author system before it is sent to the publisher.
@@ -163,7 +163,7 @@ To address known security issues with Cross-Site Request Forgery (CSRF) in CRX W
 The referrer filter service is an OSGi service that allows you to configure:
 
 * which http methods should be filtered
-* whether an empty referrer header is allowed  
+* whether an empty referrer header is allowed
 * and a white list of servers to be allowed in addition to the server host.
 
 By default, all variations of localhost and the current host names the server is bound to are in the white list.
@@ -172,7 +172,7 @@ To configure the referrer filter service:
 
 1. Open the Apache Felix console (**Configurations**) at:
 
-   `https://<server>:<port_number>/system/console/configMgr`  
+   `https://<server>:<port_number>/system/console/configMgr`
 
 1. Login as `admin`.
 1. In the **Configurations** menu, select:
@@ -181,7 +181,7 @@ To configure the referrer filter service:
 
 1. In the `Allow Hosts` field, enter all hosts that are allowed as a referrer. Each entry needs to be of the form
 
-   &lt;protocol&gt;://&lt;server&gt;:&lt;port&gt; 
+   &lt;protocol&gt;://&lt;server&gt;:&lt;port&gt;
 
    For example:
 
@@ -246,7 +246,7 @@ A denial of service (DoS) attack is an attempt to make a computer resource unava
 * With a flood of requests from an external source.
 * With a request for more information than the system can successfully deliver.
 
-  For example, a JSON representation of the entire repository.  
+  For example, a JSON representation of the entire repository.
 
 * By requesting a content page with an unlimited number of URLs, The URL can include a handle, some selectors, an extension, and a suffix - any of which can be modified.
 
@@ -290,7 +290,7 @@ To help prevent DoS misuse you can:
 
       `http://localhost:4502/.json`
 
-      could dump the whole repository in a JSON representation. This would cause significant server problems. For this reason Sling sets a limit on the number of maximum results. To limit the depth of the JSON rendering you can set the value for: 
+      could dump the whole repository in a JSON representation. This would cause significant server problems. For this reason Sling sets a limit on the number of maximum results. To limit the depth of the JSON rendering you can set the value for:
 
       **JSON Max results** ( `json.maximumresults`)
 
@@ -316,10 +316,10 @@ Since AEM does not provide out of the box indexes for the `FormChooserServlet`, 
 
 In order to mitigate this, please follow the below steps:
 
-1. Go to the Web Console by pointing your browser to *https://&lt;serveraddress&gt;:&lt;serverport&gt;/system/console/configMgr* 
+1. Go to the Web Console by pointing your browser to *https://&lt;serveraddress&gt;:&lt;serverport&gt;/system/console/configMgr*
 
 1. Search for **Day CQ WCM Form Chooser Servlet**
-1. After you click on the entry, disable the **Advanced Search Require** in the following window.  
+1. After you click on the entry, disable the **Advanced Search Require** in the following window.
 
 1. Click **Save**.
 
@@ -337,7 +337,7 @@ WebDAV should be disabled on both the author and publish environments. This can 
 
    `Apache Sling Simple WebDAV Access to repositories (org.apache.sling.jcr.webdav)`
 
-1. Click the stop button (in the Actions column) to stop this bundle.  
+1. Click the stop button (in the Actions column) to stop this bundle.
 
 1. Again in the list of bundles, find the bundle named:
 
@@ -373,8 +373,8 @@ Although not recommended, you can disable it in case you need the old implementa
 
 ### Prevent Clickjacking {#prevent-clickjacking}
 
-To prevent clickjacking we recommend that you configure your webserver to provide the `X-FRAME-OPTIONS` HTTP header set to `SAMEORIGIN`.  
-  
+To prevent clickjacking we recommend that you configure your webserver to provide the `X-FRAME-OPTIONS` HTTP header set to `SAMEORIGIN`.
+
 For more [information on clickjacking please see the OWASP site](https://www.owasp.org/index.php/Clickjacking).
 
 ### Make Sure You Properly Replicate Encryption Keys When Needed {#make-sure-you-properly-replicate-encryption-keys-when-needed}

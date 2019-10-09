@@ -5,7 +5,7 @@ description: Create the Comments component
 seo-description: Create the Comments component
 uuid: ea6e00d4-1db7-40ef-ae49-9ec55df58adf
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
@@ -18,7 +18,7 @@ The example of extending components uses the comment system, which is actually c
 * Comments - The encompassing comment system which is the component placed on a page
 * Comment - The component which captures an instance of a posted comment
 
-Both components needs to be put in place, especially if customizing the appearance of a posted comment.  
+Both components needs to be put in place, especially if customizing the appearance of a posted comment.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ The deletion of the auto-created JSP file is because the default HBS file will b
 1. Select **[!UICONTROL Delete]**
 1. Select **[!UICONTROL Save All]**
 
-![chlimage_1-70](assets/chlimage_1-70.png) 
+![chlimage_1-70](assets/chlimage_1-70.png)
 
 ### Create the Child Comment Component {#create-the-child-comment-component}
 
@@ -95,7 +95,7 @@ The deletion of the auto-created JSP file is because the default HBS file will b
 1. Select **[!UICONTROL Delete]**
 1. Select **[!UICONTROL Save All]**
 
-![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png) 
+![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png)
 
 ### Copy and Modify the Default HBS Scripts {#copy-and-modify-the-default-hbs-scripts}
 
@@ -159,7 +159,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 * Enter 'customcommentsystem.js' as the content of `js.txt`
 * Select **[!UICONTROL Save All]**
 
-![chlimage_1-73](assets/chlimage_1-73.png) 
+![chlimage_1-73](assets/chlimage_1-73.png)
 
 ## Register the SCF Model & View {#register-the-scf-model-view}
 
@@ -172,13 +172,13 @@ Enter the following text as the content of `customcommentsystem.js`:
 ```xml
 (function($CQ, _, Backbone, SCF) {
     "use strict";
- 
+
     var CustomComment = SCF.Components["social/commons/components/hbs/comments/comment"].Model;
     var CustomCommentView = SCF.Components["social/commons/components/hbs/comments/comment"].View;
 
     var CustomCommentSystem = SCF.Components["social/commons/components/hbs/comments"].Model;
     var CustomCommentSystemView = SCF.Components["social/commons/components/hbs/comments"].View;
- 
+
     SCF.registerComponent('/apps/custom/components/comments/comment', CustomComment, CustomCommentView);
     SCF.registerComponent('/apps/custom/components/comments', CustomCommentSystem, CustomCommentSystemView);
 

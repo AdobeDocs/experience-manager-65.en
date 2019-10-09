@@ -6,7 +6,7 @@ seo-description: Information on how to activate hotlink protection in Dynamic Me
 uuid: 5f93bc27-5edd-4143-8701-87896c52f0af
 contentOwner: Rick Brough
 topic-tags: dynamic-media
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 ---

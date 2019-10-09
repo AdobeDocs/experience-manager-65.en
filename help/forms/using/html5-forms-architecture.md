@@ -6,7 +6,7 @@ seo-description: HTML5 forms is deployed as a package within the embedded AEM in
 uuid: f32f9946-20f6-4c64-b1bd-03882517e11a
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 ---
@@ -17,7 +17,7 @@ discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 
 HTML5 forms functionality is deployed as a package within the embedded AEM instance and is exposesd as a REST end point over HTTP/S using RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-    [ ![01-aem-forms-architecture](assets/01-aem-forms-architecture.jpg)  
+    [ ![01-aem-forms-architecture](assets/01-aem-forms-architecture.jpg)
 *View Full Size*](javascript:void(0).md)
 
     [ ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
@@ -36,7 +36,7 @@ For more details on sling script resolution, see [AEM Sling Cheat Sheet](https:/
 
 HTML5 forms cache all the intermediate objects required to process (rendition or submission) a form on the first request. It does not cache the objects dependent on the data as such objects are likely to change.
 
-Mobile Form maintains two different levels of cache, PreRender cache and Render Cache. The preRender cache contains all the fragments and images of a resolved template and Render cache contains rendered content such as HTML. 
+Mobile Form maintains two different levels of cache, PreRender cache and Render Cache. The preRender cache contains all the fragments and images of a resolved template and Render cache contains rendered content such as HTML.
 
 ![HTML5 forms workflow](assets/cacheworkflow.png)
 **Figure:** *HTML5 forms workflow*
@@ -74,25 +74,25 @@ This component is also responsible for generating data XML from submitted form s
 
 HTML5 forms uses caching to optimize throughput and response time. You can configure the level of the cache service to fine-tune the trade-off between performance and space utilization.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Cache Strategy</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>None</td> 
-   <td>Do not cache artifacts<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Conservative</td> 
-   <td>Cache only intermediate artifacts that are generated before the render of the form like template containing inline fragments and images</td> 
-  </tr> 
-  <tr> 
-   <td>Aggressive</td> 
-   <td>Cache Rendered HTML content<br /> Cache all the artifacts cached in the Conservative level.<br /> <strong>Note</strong>: This strategy results in best performance but consumes more memory for storing the cached artifacts.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Cache Strategy</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>None</td>
+   <td>Do not cache artifacts<br /> </td>
+  </tr>
+  <tr>
+   <td>Conservative</td>
+   <td>Cache only intermediate artifacts that are generated before the render of the form like template containing inline fragments and images</td>
+  </tr>
+  <tr>
+   <td>Aggressive</td>
+   <td>Cache Rendered HTML content<br /> Cache all the artifacts cached in the Conservative level.<br /> <strong>Note</strong>: This strategy results in best performance but consumes more memory for storing the cached artifacts.</td>
+  </tr>
+ </tbody>
 </table>
 
 HTML5 forms perform in-memory caching using LRU strategy. If cache strategy is set to None cache will not be created and existing cache data, if any, would be cleared. Besides the caching strategy, you can also configure the total in-memory cache size which can help in having the maximum bound on cache size and if it goes beyond that it will use LRU mode to free up cache resources.
@@ -173,11 +173,11 @@ The Profile node has a property **sling:resourceSuperType** with value **xfaform
 * **xfaforms.I18N.&lt;locale&gt;**: This library contains localized data.
 * **xfaforms.profile**: This library contains implementation for XFA Scripting and Layout engine.
 
-These libraries are modeled as CQ Client Libraries which takes advantages of automatic concatenation, minification, and compression capabilities of the CQ framework JavaScript libraries.  
-For more information on CQ Client Libs, see [CQ Clientlib Documentation](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).  
+These libraries are modeled as CQ Client Libraries which takes advantages of automatic concatenation, minification, and compression capabilities of the CQ framework JavaScript libraries.
+For more information on CQ Client Libs, see [CQ Clientlib Documentation](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
 
-As described above, the profile renderer JSP calls Forms Service via a sling include. This JSP also sets various debug options based on admin configuration or request parameters.  
+As described above, the profile renderer JSP calls Forms Service via a sling include. This JSP also sets various debug options based on admin configuration or request parameters.
 
-HTML5 forms allow developers to create Profile and Profile Renderer to customize the appearance of the forms. For example, HTML forms allow developers to integrate forms in a panel or &lt;div&gt; section of an existing HTML portal.  
-For more details on creating custom profiles, see [Creating a Custom Profile](/help/forms/using/custom-profile.md).   
+HTML5 forms allow developers to create Profile and Profile Renderer to customize the appearance of the forms. For example, HTML forms allow developers to integrate forms in a panel or &lt;div&gt; section of an existing HTML portal.
+For more details on creating custom profiles, see [Creating a Custom Profile](/help/forms/using/custom-profile.md).
 **[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

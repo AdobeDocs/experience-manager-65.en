@@ -5,7 +5,7 @@ description: An overview of AEM Communities features and setup
 seo-description: An overview of AEM Communities features and setup
 uuid: 6e3ac9d2-ca31-40ea-8cab-b8451074c498
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8

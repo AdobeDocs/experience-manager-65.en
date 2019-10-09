@@ -6,7 +6,7 @@ seo-description: Follow this page as a starting point for developing On-Demand S
 uuid: 35b64823-9451-44bf-b254-3b6767f0d109
 contentOwner: JYOTIKA SYAL
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
 ---
 
@@ -22,7 +22,7 @@ discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
 
 >[!NOTE]
 >
->Before working with AEM Mobile and following the steps within this getting started guide, users should be familiar with [AEM](/help/sites-deploying/deploy.md). 
+>Before working with AEM Mobile and following the steps within this getting started guide, users should be familiar with [AEM](/help/sites-deploying/deploy.md).
 >
 >To Set up your environment for AEM Mobile On-Demand Services, see [AEM Mobile Application Dashboard or the Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 

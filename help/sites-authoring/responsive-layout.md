@@ -5,7 +5,7 @@ description: AEM allows you to realize a responsive layout for your pages
 seo-description: AEM allows you to realize a responsive layout for your pages
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
@@ -36,21 +36,21 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
 
 * [**Layout Container**](#adding-a-layout-container-and-its-content-edit-mode) component
 
-  This component is available in the [component browser](/help/sites-authoring/author-environment-tools.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. It can also be set as the default paragraph system on your page.  
+  This component is available in the [component browser](/help/sites-authoring/author-environment-tools.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. It can also be set as the default paragraph system on your page.
 
-* [**Layout Mode**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) 
+* [**Layout Mode**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
 
-* [**Emulator**](#selecting-a-device-to-emulate) 
+* [**Emulator**](#selecting-a-device-to-emulate)
   This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content will be rendered using the emulator.
 
 With these responsive grid mechanisms you can:
 
 * Use breakpoints to define differing content layouts based on device width (related to device type and orientation).
-* Use these same breakpoints and content layouts to ensure that your content is responsive to the size of the browser window on the desktop.  
+* Use these same breakpoints and content layouts to ensure that your content is responsive to the size of the browser window on the desktop.
 * Use horizontal snap to grid allowing you to place components in the grid, resize as required, and define when they should collapse/reflow to be side-by-side or above/below.
-* Hide components for specific device layouts.  
+* Hide components for specific device layouts.
 * Realize column control.
 
 Depending on your project, the Layout Container might be used as the default paragraph system for your pages or as a component available to be added to your page via the component browser (or both).
@@ -72,8 +72,8 @@ AEM allows you to define layouts dependent on the width of the device:
 * The emulator enables you to emulate these layouts on a range of devices. In addition to the device type, the orientation, selected by the **Rotate device** option, can impact the breakpoint selected as the width changes.
 * Breakpoints are the points which separate the layout definitions.
 
-    * They effectively define the maximum width (in pixels) of any device using a specific layout. 
-    * The breakpoints are usually valid for a selection of devices, dependent on the width of their displays. 
+    * They effectively define the maximum width (in pixels) of any device using a specific layout.
+    * The breakpoints are usually valid for a selection of devices, dependent on the width of their displays.
     * The range of a breakpoint extends left until the next breakpoint.
     * You cannot select the breakpoint specifically, selecting a device and orientation will automatically select the appropriate breakpoint.
 
@@ -122,7 +122,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
 1. Once a specific device has been selected you can:
 
-    * See the active marker for the selected device, such as **iPad.** 
+    * See the active marker for the selected device, such as **iPad.**
     * See the active marker for the appropriate [breakpoint](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) such as **Tablet.**
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
@@ -139,7 +139,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
 A **Layout Container** is a paragraph system that:
 
-* Contains other components.  
+* Contains other components.
 * Defines the layout.
 * Responds to changes.
 
@@ -216,13 +216,13 @@ When in layout mode you can perform various actions on a grid:
 
     * **Parent**
 
-      Allows you to select the entire layout container component for taking action on the whole. 
-    
-    * **Float to new line** 
+      Allows you to select the entire layout container component for taking action on the whole.
 
-      The component will be moved to a new line, dependent on the space available within the grid. 
-    
-    * **Hide component** 
+    * **Float to new line**
+
+      The component will be moved to a new line, dependent on the space available within the grid.
+
+    * **Hide component**
 
       The component will be made invisible (it can be restored from the toolbar of the layout container).
 
@@ -256,7 +256,7 @@ When in layout mode you can perform various actions on a grid:
   >
   >In the above example the float and hide actions are available because this Layout Container is nested within a parent Layout Container.
 
-    * **Unhide components** 
+    * **Unhide components**
       Select the parent components to show the action toolbar with the **Show hidden components** option. In this example, two components are hidden.
 
   ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)

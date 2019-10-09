@@ -5,7 +5,7 @@ description: Correspondence Management Troubleshooting
 seo-description: Correspondence Management Troubleshooting
 uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 ---
@@ -25,7 +25,7 @@ One of the following errors displayed when saving a letter:
 
 These errors could occur due to one of the following:
 
-* A data dictionary is bound to the letter but is not present on the server. 
+* A data dictionary is bound to the letter but is not present on the server.
 * A data dictionary is bound to the letter but has an underscore (_) in its name.
 
 ### Workaround {#workaround}

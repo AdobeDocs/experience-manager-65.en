@@ -5,7 +5,7 @@ description: Social login lets site visitors to sign in with their Facebook or T
 seo-description: Social login lets site visitors to sign in with their Facebook or Twitter account.
 uuid: f70e346e-0d8c-41a0-a100-206a420088dc
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
@@ -15,7 +15,7 @@ discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 
 Social login is the capability to present a site visitor the option to sign in with their Facebook or Twitter account. Therefore, including permitted Facebook or Twitter data in their AEM member profile.
 
-![socialloginweretail](assets/socialloginweretail.png) 
+![socialloginweretail](assets/socialloginweretail.png)
 
 ## Social Login Overview {#social-login-overview}
 
@@ -25,7 +25,7 @@ While the we-retail sample provides sample Facebook and Twitter apps and cloud s
 
 The required steps are:
 
-1. [Enable OAuth authentication](#adobe-granite-oauth-authentication-handler) on all AEM publish instances. 
+1. [Enable OAuth authentication](#adobe-granite-oauth-authentication-handler) on all AEM publish instances.
 
    Without OAuth enabled, attempts to log in fail.
 
@@ -58,7 +58,7 @@ There are two basic concepts:
 
 ### Facebook API Version {#facebook-api-version}
 
-Social login and the we-retail Facebook sample were developed when the Facebook Graph API was version 1.0.   
+Social login and the we-retail Facebook sample were developed when the Facebook Graph API was version 1.0.
 As of AEM  6.4  GA and AEM 6.3 SP1 social login  was  updated to work with the newer Facebook Graph API 2.5 version.
 
 >[!NOTE]
@@ -95,7 +95,7 @@ The [Adobe Granite OAuth Application and Provider](https://chl-author.corp.adobe
 
 1. On the AEM author instance, sign in with administrator privileges.
 1. From global navigation, select **[!UICONTROL Tools > Cloud Services > Facebook Social login configuration]**.
-1. Select the configuration **[!UICONTROL context path]**. 
+1. Select the configuration **[!UICONTROL context path]**.
 
    **[!UICONTROL Context path]** should be the same as the cloud configuration path that you have selected while creating/editing a community site.
 
@@ -131,7 +131,7 @@ The AEM Communities provider extends the [Adobe Granite OAuth Application and Pr
 
 This provider will require editing to:
 
-* Allow user updates 
+* Allow user updates
 * Add additional fields [within scope](#adobe-granite-oauth-application-and-provider)
 
     * Not all fields permitted by default are included by default.
@@ -145,31 +145,31 @@ If editing is necessary, on each AEM publish instance:
 
    ![fboauthprov_png](assets/fboauthprov_png.png)
 
-    * **[!UICONTROL OAuth Provider ID]** 
-  
-      (*Required*)  Default  value is *soco -facebook*. Do not edit.
-  
-    * **[!UICONTROL Cloud Service Config]** 
-  
-      Default value is */etc/  cloudservices /  facebookconnect*. Do not edit.
-  
-    * **[!UICONTROL OAuth Provider Service Config]** 
-  
-      Default value is */apps/social/facebookprovider/config/*. Do not edit.
-  
-    * **[!UICONTROL Enable Tags]** 
-  
-      Do not Edit. 
+    * **[!UICONTROL OAuth Provider ID]**
 
-    * **[!UICONTROL User Path]** 
-  
+      (*Required*)  Default  value is *soco -facebook*. Do not edit.
+
+    * **[!UICONTROL Cloud Service Config]**
+
+      Default value is */etc/  cloudservices /  facebookconnect*. Do not edit.
+
+    * **[!UICONTROL OAuth Provider Service Config]**
+
+      Default value is */apps/social/facebookprovider/config/*. Do not edit.
+
+    * **[!UICONTROL Enable Tags]**
+
+      Do not Edit.
+
+    * **[!UICONTROL User Path]**
+
       Location in the repository where user data is stored. For a community site, to ensure permissions for members to view one another's profile, the path should be the default */home/users/community*.
-  
-    * **[!UICONTROL Enable fields]** 
+
+    * **[!UICONTROL Enable fields]**
 
       If checked, the Fields listed are specified on the request to Facebook for user authentication and information. The default is deselected.
-  
-    * **[!UICONTROL Fields]** 
+
+    * **[!UICONTROL Fields]**
 
       When Fields are enabled, the following fields are included when calling the Facebook Graph API. The fields must be allowed within the scope defined in the cloud service configuration. Additional fields may require approval by Facebook. Reference the Facebook Login Permissions section of the Facebook documentation. The default fields added as parameters are:
 
@@ -187,7 +187,7 @@ If editing is necessary, on each AEM publish instance:
 
    If any field is added or changed, update the corresponding Default Sync handler configuration to correct the mapping.
 
-    * **[!UICONTROL Update User]** 
+    * **[!UICONTROL Update User]**
       If checked, refreshes user data in the repository on each login to reflect profile changes or additional data requested. Default is deselected.
 
 #### Next Steps {#next-steps}
@@ -281,7 +281,7 @@ The AEM Communities configuration extends the [Adobe Granite OAuth Application a
 If editing is necessary, on each AEM publish instance:
 
 1. Sign in with administrator privileges.
-1. Navigate to the [Web Console](../../help/sites-deploying/configuring-osgi.md). 
+1. Navigate to the [Web Console](../../help/sites-deploying/configuring-osgi.md).
 
    For example, http://localhost:4503/system/console/configMgr.
 
@@ -290,26 +290,26 @@ If editing is necessary, on each AEM publish instance:
 
    ![twitteroauth_png](assets/twitteroauth_png.png)
 
-    * **[!UICONTROL OAuth Provider ID]** (*Required*) 
+    * **[!UICONTROL OAuth Provider ID]** (*Required*)
 
       The default value is *soco -twitter*. Do not edit.
-  
-    * **[!UICONTROL Cloud Service Config]** 
+
+    * **[!UICONTROL Cloud Service Config]**
 
       The default value is *conf.* Do not edit.
-  
-    * **[!UICONTROL OAuth Provider Service Config]** 
+
+    * **[!UICONTROL OAuth Provider Service Config]**
 
       The default value is */apps/social/twitterprovider/config/*. Do not edit.
 
-    * **[!UICONTROL User Path]** 
+    * **[!UICONTROL User Path]**
 
       Location in the repository where user data is stored. For a community site, to ensure permissions for members to view one another's profile, the path should be the default */home/users/community*.
-  
+
     * **[!UICONTROL Enable Params]** do not edit
     * **[!UICONTROL URL Parameters]** do not edit
-    * **[!UICONTROL Update User]** 
-  
+    * **[!UICONTROL Update User]**
+
       If checked, refreshes user data in the repository on each login to reflect profile changes or additional data requested. The default is deselected.
 
 #### Next Steps {#next-steps-1}
@@ -325,7 +325,7 @@ The next steps are the same for both Facebook and Twitter:
 
 Once a cloud service is configured, it may be enabled for the relevant Social Login setting for a community site using the [User Management](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Settings sub-panel during community site [creation](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) or [management](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
-1. Choose your site configuration context where you saved your social login configurations.  
+1. Choose your site configuration context where you saved your social login configurations.
 
 1. On General tab, set cloud configurations.
 
@@ -340,7 +340,7 @@ Once a cloud service is configured, it may be enabled for the relevant Social Lo
 * Ensure [Adobe Granite OAuth Authentication Handler](#adobe-granite-oauth-authentication-handler) has been enabled on all publish instances
 * Ensure the cloud services have been published
 * Ensure the community site has been published
-* Launch the published site in a browser 
+* Launch the published site in a browser
   For example, http://localhost:4503/content/sites/engage/en.html
 * Select **[!UICONTROL Login In]**
 * Select either **[!UICONTROL Sign in with Facebook]** or **[!UICONTROL Sign in with Twitter]**
@@ -358,7 +358,7 @@ The `Adobe Granite OAuth Authentication Handler` is not enabled by default and *
 To enable the authentication handler on publish, simply open the OSGi config and save it:
 
 * Sign in with administrator privileges
-* Navigate to the [Web Console](../../help/sites-deploying/configuring-osgi.md) 
+* Navigate to the [Web Console](../../help/sites-deploying/configuring-osgi.md)
   For example, http://localhost:4503/system/console/configMgr
 * Locate `Adobe Granite OAuth Authentication Handler`
 * Select to open the configuration for edit
@@ -370,7 +370,7 @@ To enable the authentication handler on publish, simply open the OSGi config and
 >
 >Be careful to not confuse the authentication handler with a Facebook or Twitter instance of *Adobe Granite OAuth Application and Provider*.
 
-![chlimage_1-490](assets/chlimage_1-490.png) 
+![chlimage_1-490](assets/chlimage_1-490.png)
 
 ### Adobe Granite OAuth Application and Provider {#adobe-granite-oauth-application-and-provider}
 
@@ -391,32 +391,32 @@ To locate the created instance for a Facebook or Twitter app:
 
    Except the following properties, leave the other properties of the config  unaltered:
 
-    * **[!UICONTROL Config ID]** 
-  
+    * **[!UICONTROL Config ID]**
+
       (*Required*) OAuth configuration IDs must be unique. Auto-generated when cloud service is created.
-  
-    * **[!UICONTROL Client ID]** 
-  
+
+    * **[!UICONTROL Client ID]**
+
       (*Required*) The application ID provided when the cloud service was created.
-  
-    * **[!UICONTROL Client Secret]** 
-  
+
+    * **[!UICONTROL Client Secret]**
+
       (*Required*) The application secret provided when the cloud service was created.
-  
-    * **[!UICONTROL Scope]** 
-  
+
+    * **[!UICONTROL Scope]**
+
       (*Optional*) Additional scope for what is permitted can be asked  from  the provider. The default scope covers the permissions necessary for providing social authentication and profile data.
-  
-    * **[!UICONTROL Provider ID]** 
-  
+
+    * **[!UICONTROL Provider ID]**
+
       (*Required*) The provider ID for AEM Communities is set when the cloud service was created. Do not edit. For Facebook Connect, the value is *soco -facebook*. For Twitter Connect, the value is *soco -twitter*.
-  
-    * **[!UICONTROL Groups]** 
-  
+
+    * **[!UICONTROL Groups]**
+
       (*Recommended*) One or more member groups to which created users are added. For AEM Communities, it is recommended to list the member group for the community site.
-  
-    * **[!UICONTROL Callback URL]** 
-  
+
+    * **[!UICONTROL Callback URL]**
+
       (*Optional*) URL configured with the OAuth providers to redirect the client back. Use a relative  url  to use the host of the original request. Leave empty to use the originally requested URL instead. Suffix "/callback/j_security_check" is automatically appended to this  url .
 
    >[!NOTE]

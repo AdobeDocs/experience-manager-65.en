@@ -5,7 +5,7 @@ description: For AEM Forms to perform optimally, you can fine-tune the cache set
 seo-description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
 uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 ---
@@ -82,7 +82,7 @@ Apache can communicate to CRX using the HTTP protocol. The configurations are fo
    >
    >For Linux, the default `APACHE_HOME` is `/etc/httpd/`.
 
-1. Configure the proxy on port 4502 of crx. 
+1. Configure the proxy on port 4502 of crx.
 
    Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
 
@@ -137,7 +137,7 @@ To improve the performance, you can direct the antivirus software to exclude the
 
 * AEM Installation directory. If it is not possible to exclude complete directory, exclude the following:
 
-    * [AEM installation directory]\crx-repository\temp 
+    * [AEM installation directory]\crx-repository\temp
     * [AEM installation directory]\crx-repository\repository
     * [AEM installation directory]\crx-repository\launchpad
 
@@ -162,6 +162,6 @@ To improve the performance, you can direct the antivirus software to exclude the
 >
 >* If you are using a different location for GDS and temporary directory, open the AdminUI at `https://[server]:[port]/adminui)`, navigate to **Home &gt; Settings &gt; Core System Settings &gt; Core Configurations** to confirm the location in use.
 >
->* If the AEM Forms server performs slow even after excluding the suggested directories, then exclude the Java executable file (java.exe) also.   
+>* If the AEM Forms server performs slow even after excluding the suggested directories, then exclude the Java executable file (java.exe) also.
 >
 

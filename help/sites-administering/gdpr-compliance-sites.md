@@ -5,7 +5,7 @@ description: Learn about the details of GDPR Readiness for AEM Sites.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: aheimoz
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
@@ -188,13 +188,13 @@ To clear the ContextHub persistence:
   ```
   // in order to be able to fully access persistence layer, Opt-Out must be turned off
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
+
   // following call asks all currently loaded stores to clear their data
   ContextHub.cleanAllStores();
-   
+
   // following call asks all currently loaded stores to set back default values (provided in their configs)
   ContextHub.resetAllStores();
-  
+
   ```
 
 * To clear a specific persistence layer; for example, sessionStorage:
@@ -203,7 +203,7 @@ To clear the ContextHub persistence:
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
   storage.setItem('/store', null);
   storage.setItem('/_', null);
-   
+
   // to confirm that nothing is stored:
   console.log(storage.getTree());
   ```

@@ -46,7 +46,7 @@ Before you start,
 
 ### Configure application server {#configure-application-server}
 
-Each application server has a separate set of instructions to enable mutual authentication. See application server documentation to enable **2-way Mutual Authentication.** For AEM 6.4 Forms running on JBoss 7.0.6 application server perform the following steps:
+Each application server has a separate set of instructions to enable mutual authentication. See application server documentation to enable **2-way Mutual Authentication.** For AEM 6.5 Forms running on JBoss 7.0.6 application server perform the following steps:
 
 1. Create the server.truststore file:
 

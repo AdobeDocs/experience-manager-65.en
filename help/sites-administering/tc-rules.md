@@ -5,7 +5,7 @@ description: Learn how to identify content that needs translating.
 seo-description: Learn how to identify content that needs translating.
 uuid: 81b9575c-1c7a-4955-b03f-3f26cbd4f956
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
@@ -59,7 +59,7 @@ A rule is a `node` element with one or more child `property` elements and zero o
 
 Each of these `node` elements has the following characteristics:
 
-* The `path` attribute contains the path to the root node of the branch to which the rules apply. 
+* The `path` attribute contains the path to the root node of the branch to which the rules apply.
 * Child `property` elements identify the node properties to translate for all resource types:
 
     * The `name` attribute contains the property name.
@@ -101,7 +101,7 @@ Use the following rule syntax to include assets that are embedded in or referenc
 
 Each `assetNode` element has the following characteristics:
 
-* One `resourceType` attribute that equals the path that resolves to the component. 
+* One `resourceType` attribute that equals the path that resolves to the component.
 * One `assetReferenceAttribute` attribute that equals the name of the property that stores the asset binary (for embedded assets) or the path to the referenced asset.
 
 The following example extracts images from the foundation Image component:
@@ -121,7 +121,7 @@ The translation_rules.xml file consists of a `nodelist` element with several chi
      </node>
      <node path=“/content/mysite/en”>
           <property name=“text” translate=“false" />
-     </node> 
+     </node>
 <nodelist>
 ```
 

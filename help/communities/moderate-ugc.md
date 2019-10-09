@@ -5,7 +5,7 @@ description: Moderation concepts and actions
 seo-description: Moderation concepts and actions
 uuid: a24d09e7-3260-4eec-844e-97e6849c94d8
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
@@ -19,7 +19,7 @@ Community content, also known as user generated content (UGC), is created when a
 
 * [Blog](blog-feature.md): members post a blog article or comment
 * [Calendar](calendar.md): members post a calendar event or comment
-* [Comments](comments.md): members post a comment or reply to a comment  
+* [Comments](comments.md): members post a comment or reply to a comment
 * [Forum](forum.md): members post a new topic or reply to a topic
 * [Ideation](ideation-feature.md): members post an idea or comment
 * [QnA](working-with-qna.md): members create a question or answer a question
@@ -27,7 +27,7 @@ Community content, also known as user generated content (UGC), is created when a
 
 Moderation of UGC is useful for recognizing positive contributions as well as limiting negative ones (such as spam and abusive language). UGC can be moderated from several environments:
 
-* [Bulk moderation console](moderation.md) 
+* [Bulk moderation console](moderation.md)
 
   The Moderation console is accessible by administrators and [community moderators](users.md) in the public environment as well as by administrators in the author environment. This is possible when community content is stored in a [common store](working-with-srp.md).
 
@@ -39,88 +39,88 @@ Moderation of UGC is useful for recognizing positive contributions as well as li
 
 The actions which can be performed on posted content (UGC) varies depending on the user identity and the environment. The table below uses the following terminology to describe the various roles according to user identity:
 
-* `Admin`  
+* `Admin`
   A user who is a member of [community-administrators](users.md) group
-* `Moderator` 
+* `Moderator`
   A member of a [community moderators](users.md#publishenvironmentusersandgroups) group (has [moderator permissions](in-context.md#moderatorpermissions))
-* `Creator`  
+* `Creator`
   The user who posted the content
-* `Member`  
+* `Member`
   A signed-in user without special permissions
-* `Visitor` 
+* `Visitor`
   An anonymous user
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> </td> 
-   <td><strong>Admin</strong></td> 
-   <td><strong>Moderator</strong></td> 
-   <td><strong>Creator</strong></td> 
-   <td><strong>Member</strong></td> 
-   <td><strong>Visitor</strong></td> 
-   <td><strong>Event<br /> Triggered</strong></td> 
-   <td><strong>Premoderated</strong></td> 
+   <td> </td>
+   <td><strong>Admin</strong></td>
+   <td><strong>Moderator</strong></td>
+   <td><strong>Creator</strong></td>
+   <td><strong>Member</strong></td>
+   <td><strong>Visitor</strong></td>
+   <td><strong>Event<br /> Triggered</strong></td>
+   <td><strong>Premoderated</strong></td>
   </tr>
   <tr>
-   <td><strong>Edit/<br /> Delete</strong></td> 
-   <td>X</td> 
-   <td>X</td> 
-   <td>X</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td><strong>Edit/<br /> Delete</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><strong>Cut</strong></td> 
-   <td>X</td> 
-   <td>X</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
+   <td><strong>Cut</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><strong>Deny</strong></td> 
-   <td>X</td> 
-   <td>X</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td>X</td> 
-   <td> </td> 
+   <td><strong>Deny</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td>X</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><strong>Close/<br /> Reopen</strong></td> 
-   <td>X</td> 
-   <td>X</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td>X</td> 
-   <td>X<br /> </td> 
+   <td><strong>Close/<br /> Reopen</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td>X</td>
+   <td>X<br /> </td>
   </tr>
   <tr>
-   <td><strong>Flag/<br /> Unflag</strong></td> 
-   <td>X</td> 
-   <td>X</td> 
-   <td> </td> 
-   <td>X</td> 
-   <td> </td> 
-   <td>X</td> 
-   <td> </td> 
+   <td><strong>Flag/<br /> Unflag</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td>X</td>
+   <td> </td>
+   <td>X</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><strong>Allow</strong></td> 
-   <td>X</td> 
-   <td>X</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td>X</td> 
-   <td>X</td> 
+   <td><strong>Allow</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td>X</td>
+   <td>X</td>
   </tr>
  </tbody>
 </table>
@@ -251,16 +251,16 @@ To configure sentiment and watchwords:
 
 ![sentimentprocess](assets/sentimentprocess.png)
 
-* **Positive Watchwords** 
+* **Positive Watchwords**
   A comma separated list of words contributing to a positive sentiment that override the defaults. Default is an empty list.
 
-* **Negative Watchwords** 
+* **Negative Watchwords**
   A comma separated list of words contributing to a negative sentiment that override the defaults. Default is an empty list.
 
-* **Explicit Path to Watchwords Node** 
+* **Explicit Path to Watchwords Node**
   The repository location of a node containing default `positive` and `negative` properties specifying default watchwords. Default is `/libs/settings/community/watchwords/default`.
 
-* **Sentiment Rules** 
+* **Sentiment Rules**
   The repository location of the rules for calculating sentiment based on positive and negative watchwords. Default is `/libs/cq/workflow/components/workflow/social/sentiments/rules` (however, there is no longer any workflow involved).
 
 Following is an example of a custom entry for the default watchwords, when `Explicit Path to Watchwords Node` is set to `/libs/settings/community/watchwords/default`.

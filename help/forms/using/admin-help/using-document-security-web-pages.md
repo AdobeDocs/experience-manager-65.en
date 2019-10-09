@@ -7,7 +7,7 @@ uuid: b4863343-cda5-474a-a101-a20e39b1f8c7
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 ---
 
@@ -45,7 +45,7 @@ For administrators, a default super administrator account is created during inst
 
    or Administration Console URL: `https://`*[host]* `:`*[port]* `/adminui`
 
-1. In the login window, type your user name and password, and click OK. 
+1. In the login window, type your user name and password, and click OK.
 1. In Administration Console, click Services &gt; document security.
 
 >[!NOTE]
@@ -88,7 +88,7 @@ These instructions are specific to Internet Explorer, but you can install the ce
 
 **Install the server certificate using Internet Explorer**
 
-1. Open your web browser and type the base URL for document security in the Address box. For example, type `https://[host]:[port]`. A Security Alert dialog box appears. 
+1. Open your web browser and type the base URL for document security in the Address box. For example, type `https://[host]:[port]`. A Security Alert dialog box appears.
 1. Click View Certificate, and then click Install Certificate and select the defaults for installation. The certificate needs to be installed in the Trusted Root Certification Authorities.
 1. Close your browser session.
 1. Open another browser window and type the same URL in the Address box. A Security Alert dialog should not appear. This test confirms that the certificate is properly installed.
@@ -97,6 +97,6 @@ These instructions are specific to Internet Explorer, but you can install the ce
 
 Log out when you finish using the web pages so that you can safely use your web browser for other purposes. Depending on how document security is configured, you may need to close your browser to completely log out.
 
-1. In the upper-right corner of the page, click Logout. 
+1. In the upper-right corner of the page, click Logout.
 1. If a message appears on the Logout page, close your browser window to completely log out. Otherwise, you can proceed to use the browser for other purposes.
 

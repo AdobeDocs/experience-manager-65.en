@@ -5,7 +5,7 @@ description: The steps you need to follow to get started with AEM Forms on JEE P
 seo-description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
 uuid: 86ba17da-57e5-4e7a-a864-583d8c0f830e
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 ---
@@ -56,14 +56,14 @@ Perform the following steps to change the publishing schedule:
 
     * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Save and close the `run.conf.bat` file.  
+1. Save and close the `run.conf.bat` file.
 
 1. Restart the AEM Forms server instance.
 
 1. Stop the AEM Forms server instance.
-1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers** &gt;  **Application servers** and then, in the right pane, click the server name.  
+1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers** &gt;  **Application servers** and then, in the right pane, click the server name.
 
-1. Under Server Infrastructure, click **Java and Process Management** &gt; **Process Definition**.  
+1. Under Server Infrastructure, click **Java and Process Management** &gt; **Process Definition**.
 
 1. Under Additional Properties, click **Java Virtual Machine**.
 
@@ -73,18 +73,18 @@ Perform the following steps to change the publishing schedule:
 
     * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Click **Apply**, click OK, and then click **Save directly to the master configuration**.  
+1. Click **Apply**, click OK, and then click **Save directly to the master configuration**.
 
 1. Restart the AEM Forms server instance.
 
 1. Stop the AEM Forms server instance.
-1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `https://[hostname]:[port]/console`.  
+1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `https://[hostname]:[port]/console`.
 
-1. Under Change Center, click **Lock & Edit**.  
+1. Under Change Center, click **Lock & Edit**.
 
-1. Under Domain Structure, click **Environment** &gt;  **Servers **and, in the right pane, click the managed server name.  
+1. Under Domain Structure, click **Environment** &gt;  **Servers **and, in the right pane, click the managed server name.
 
-1. On the next screen, click the **Configuration **tab &gt; **Server Start** tab.  
+1. On the next screen, click the **Configuration **tab &gt; **Server Start** tab.
 
 1. In the Arguments box, add the JVM argument `-Dreporting.publisher.cron = <expression>`.
 
@@ -92,7 +92,7 @@ Perform the following steps to change the publishing schedule:
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Click **Save** and then click **Activate Changes**.  
+1. Click **Save** and then click **Activate Changes**.
 
 1. Restart the AEM Forms server instance.
 

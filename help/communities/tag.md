@@ -5,7 +5,7 @@ description: Tag overview
 seo-description: Tag overview
 uuid: a5d52319-f821-4608-b0ab-abc8a1374343
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
@@ -37,31 +37,31 @@ Tagging of UGC may be enabled when configuring a [community site](sites-console.
 
 ### Social Tag Cloud {#social-tag-cloud}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td> 
-   <td>social/commons/components/hbs/tagcloud</td> 
+   <td> <strong>resourceType</strong></td>
+   <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
-   <td>No</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.tagcloud</td> 
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
-   <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td> 
+   <td> <strong>templates</strong></td>
+   <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td> 
-   <td> /libs/social/commons/components/hbs/tagcloud/clientlibs/tagcloud.css</td> 
+   <td> <strong>css</strong></td>
+   <td> /libs/social/commons/components/hbs/tagcloud/clientlibs/tagcloud.css</td>
   </tr>
   <tr>
-   <td><strong>properties</strong></td> 
-   <td>See <a href="tagcloud.md">Using Social Tag Cloud</a></td> 
+   <td><strong>properties</strong></td>
+   <td>See <a href="tagcloud.md">Using Social Tag Cloud</a></td>
   </tr>
  </tbody>
 </table>

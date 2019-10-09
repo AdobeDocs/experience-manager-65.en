@@ -6,7 +6,7 @@ seo-description: Troubleshoot issues in AEM Forms on JEE Process Reporting
 page-status-flag: de-activated
 uuid: 1c1cc27c-fbed-4366-bffe-e1581d269a93
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0a818d19-8804-4c69-b721-31c347c593c0
 ---
 
@@ -16,7 +16,7 @@ discoiquuid: 0a818d19-8804-4c69-b721-31c347c593c0
 
 If you create filters for pre-defined reports, the following issues intermittently occur on the **Internet Explorer 9** for **Microsoft Windows 7** environment:
 
-* The drop-down list in the Value field displays unique identifiers instead of the values.  
+* The drop-down list in the Value field displays unique identifiers instead of the values.
 * The Calendar control in the Value field displays Japanese characters.
 * The Condition field does not display.
 * The Calendar control in the Value field does not display.

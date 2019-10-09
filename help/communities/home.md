@@ -1,22 +1,22 @@
 ---
-title: AEM 6.4 Communities User Guide
-seo-title: AEM 6.4 Communities User Guide
+title: AEM 6.5 Communities User Guide
+seo-title: AEM 6.5 Communities User Guide
 description: This guide covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 ---
 
-# AEM 6.4 Communities User Guide
+# AEM 6.5 Communities User Guide
 
 This guide covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 
 ## Key AEM articles
 
 * [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [AEM 6.4 Release Notes](/help/release-notes/home.md)
+* [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 user guides
+## AEM 6.5 user guides
 
 | User Guide | Description |
 |--- |---|

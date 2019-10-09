@@ -5,7 +5,7 @@ description: Learn how to add custom special characters in Correspondence Manage
 seo-description: Learn how to add custom special characters in Correspondence Management.
 uuid: ac4f1353-f1ef-43b7-8e80-aba56a155e3f
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
 ---
@@ -41,7 +41,7 @@ Use the following steps to add support for custom special characters:
     1. Right-click the **specialcharacters **folder at the following path and select **Overlay Node**:
 
        `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
-    
+
     1. Ensure that the Overlay Node dialog has the following values:
 
        **Path:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
@@ -77,62 +77,62 @@ Use the following steps to add support for custom special characters:
 1. Click **Save All**.
 1. Make the changes in the special characters as required:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>To...</strong></td> 
-   <td><strong>Complete the following steps</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Add a custom special character</td> 
-   <td> 
-    <ol> 
-     <li>Add a child node under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” with mandatory properties.</li> 
-     <li>Click Save All</li> 
-     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.</li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Update an existing special character's properties</td> 
-   <td> 
-    <ol> 
-     <li>Overlay the node to be updated as explained above and verify tags and classes.</li> 
-     <li>Change any values, such as caption, value, endValue, and multipleCaption. </li> 
-     <li>Click Save All. </li> 
-     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.</li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Hide a special charcter</td> 
-   <td> 
-    <ol> 
-     <li>Overlay the node to be hidden under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li> 
-     <li>Add sling:hideResource (Boolean) property to the node (under apps) to be hidden. </li> 
-     <li>Click Save All. </li> 
-     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.<br /> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Hide multiple special charcters</td> 
-   <td> 
-    <ol> 
-     <li>Add the property "sling:hideChildren (String or String[])" to “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”. </li> 
-     <li>Add node names (special characters to be hidden) as values for "sling:hideChildren" property. </li> 
-     <li>Click Save All. </li> 
-     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.<br /> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Order special characters</td> 
-   <td> 
-    <ol> 
-     <li>Add a child node under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” with mandatory properties. </li> 
-     <li>Add "sling:orderBefore (String)" property to the newly-created child node. </li> 
-     <li>Add node name as value before which newly added special charcter is to be shown. </li> 
-     <li>Click Save All. </li> 
-     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.<br /> </li> 
-    </ol> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>To...</strong></td>
+   <td><strong>Complete the following steps</strong></td>
+  </tr>
+  <tr>
+   <td>Add a custom special character</td>
+   <td>
+    <ol>
+     <li>Add a child node under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” with mandatory properties.</li>
+     <li>Click Save All</li>
+     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.</li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td>Update an existing special character's properties</td>
+   <td>
+    <ol>
+     <li>Overlay the node to be updated as explained above and verify tags and classes.</li>
+     <li>Change any values, such as caption, value, endValue, and multipleCaption. </li>
+     <li>Click Save All. </li>
+     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.</li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td>Hide a special charcter</td>
+   <td>
+    <ol>
+     <li>Overlay the node to be hidden under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
+     <li>Add sling:hideResource (Boolean) property to the node (under apps) to be hidden. </li>
+     <li>Click Save All. </li>
+     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.<br /> </li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td>Hide multiple special charcters</td>
+   <td>
+    <ol>
+     <li>Add the property "sling:hideChildren (String or String[])" to “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”. </li>
+     <li>Add node names (special characters to be hidden) as values for "sling:hideChildren" property. </li>
+     <li>Click Save All. </li>
+     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.<br /> </li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td>Order special characters</td>
+   <td>
+    <ol>
+     <li>Add a child node under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” with mandatory properties. </li>
+     <li>Add "sling:orderBefore (String)" property to the newly-created child node. </li>
+     <li>Add node name as value before which newly added special charcter is to be shown. </li>
+     <li>Click Save All. </li>
+     <li>Refresh the Text Editor\Create Correspondence UI to see the changes.<br /> </li>
+    </ol> </td>
+  </tr>
+ </tbody>
 </table>
 

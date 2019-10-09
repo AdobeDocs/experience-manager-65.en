@@ -5,7 +5,7 @@ description: Configure the dispatcher for AEM Communities
 seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
@@ -56,10 +56,10 @@ The OSGi configuration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 ![chlimage_1-339](assets/chlimage_1-339.png)
 
-* **Filter Patterns** 
+* **Filter Patterns**
   *(required)* One or more paths to community pages. For example, `/content/sites/engage/(.*)`.
 
-* **Cache-Control Max Age** 
+* **Cache-Control Max Age**
   *(required)* The max age (in seconds) to add to the Cache Controll header. The value must be greater than zero (0).
 
 ## Dispatcher Client Headers {#dispatcher-client-headers}
@@ -82,7 +82,7 @@ See also
 
 >[!NOTE]
 >
->**Property Name Examples** 
+>**Property Name Examples**
 >All property names shown, such as **/0050** and **/0170**, should be adjusted to fit within an existing dispatcher.any configuration file.
 
 The following entries should be added to the end of the /filter section, especially after all deny entries.
@@ -126,29 +126,29 @@ The following entries should be added to the end of the /filter section, especia
 /0177 { /type "allow" /url "GET /libs/granite/security/currentuser.json" }
 
 # Enable CSRF token otherwise nothings works.
-/5001 { /type "allow" /glob "GET /libs/granite/csrf/token.json *"}        
+/5001 { /type "allow" /glob "GET /libs/granite/csrf/token.json *"}
 # Allow SCF User Model to bootstrap as it depends on the granite user
 /5002 { /type "allow" /glob "GET /libs/granite/security/currentuser.json*" }
-   
+
 # Allow Communities Site Logout button work
 /5003 { /type "allow" /glob "GET /system/sling/logout.html*" }
-   
+
 # Allow i18n to load correctly
 /5004 { /type "allow" /glob "GET /libs/cq/i18n/dict.en.json *" }
 
 # Allow social json get pattern.
 /6002 { /type "allow" /glob "GET *.social.*.json*" }
-   
+
 # Allow loading of templates
 /6003 { /type "allow" /glob "GET /services/social/templates*" }
-   
+
 # Allow SCF User model to check moderator rules
 /6005 { /type "allow" /glob "GET /services/social/getLoggedInUser?moderatorCheck=*" }
-   
+
 # Allow CKEditor to load which uses a query pattern not sufficed by regular glob above.
 /6006 { /type "allow" /glob "GET /etc/clientlibs/social/thirdparty/ckeditor/*.js?t=*" }
 /6007 { /type "allow" /glob "GET /etc/clientlibs/social/thirdparty/ckeditor/*.css?t=*" }
-   
+
 # Allow Fonts from Communities to load
 /6050 { /type "allow" /glob "GET *.woff *" }
 /6051 { /type "allow" /glob "GET *.ttf *" }
@@ -196,8 +196,8 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
 /farms
   {
   # First farm entry
-  /website 
-    {  
+  /website
+    {
     # Request headers that should be forwarded to the remote server.
     /clientheaders
       {
@@ -206,7 +206,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
       # them here.
       "*"
       }
-      
+
     # Hostname globbing for farm selection (virtual domain addressing)
     /virtualhosts
       {
@@ -220,7 +220,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
       #   myhost:8888/mysite
       "*"
       }
-      
+
     # The load will be balanced among these render instances
     /renders
       {
@@ -234,7 +234,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
         # /timeout "0"
         }
       }
-      
+
     # The filter section defines the requests that should be handled by the dispatcher.
     #
     # Entries can be either specified using globs, or elements of the request line:
@@ -257,17 +257,17 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
       {
       # Deny everything first and then allow specific entries
       /0001 { /type "deny" /glob "*" }
-      
+
       # Open consoles
 #     /0011 { /type "allow" /url "/admin/*"  }  # allow servlet engine admin
 #     /0012 { /type "allow" /url "/crx/*"    }  # allow content repository
 #     /0013 { /type "allow" /url "/system/*" }  # allow OSGi console
-        
+
       # Allow non-public content directories
 #     /0021 { /type "allow" /url "/apps/*"   }  # allow apps access
 #     /0022 { /type "allow" /url "/bin/*"    }
       /0023 { /type "allow" /url "/content*" }  # disable this rule to allow mapped content only
-      
+
 #     /0024 { /type "allow" /url "/libs/*"   }
 #     /0025 { /type "deny"  /url "/libs/shindig/proxy*" } # if you enable /libs close access to proxy
 
@@ -275,7 +275,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
 #     /0027 { /type "allow" /url "/tmp/*"    }
 #     /0028 { /type "allow" /url "/var/*"    }
 
-      # Enable specific mime types in non-public content directories 
+      # Enable specific mime types in non-public content directories
       /0041 { /type "allow" /url "*.css"   }  # enable css
       /0042 { /type "allow" /url "*.gif"   }  # enable gifs
       /0043 { /type "allow" /url "*.ico"   }  # enable icos
@@ -291,24 +291,24 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
       /0083 { /type "deny"  /url "*.sysview.xml"   }
       /0084 { /type "deny"  /url "*.docview.json"  }
       /0085 { /type "deny"  /url "*.docview.xml"  }
-      
+
       /0086 { /type "deny"  /url "*.*[0-9].json" }
 #     /0087 { /type "allow" /method "GET" /url "*.1.json" }  # allow one-level json requests
 
       # Deny query
    /0090 { /type "deny"  /url "*.query.json" }
-   
+
       #######################################
       ## BEGIN: AEM COMMUNITITES ADDITIONS
    #######################################
-   /0050 { /type "allow" /glob "GET /etc/designs/*" }  
-   /0051 { /type "allow" /glob "GET /etc/clientlibs/*" }  
-   /0052 { /type "allow" /glob "GET /bin/statistics/tracker/*" } 
-   /0054 { /type "allow" /glob "* /home/users/*/*/profile.form.html*" } 
-   /0057 { /type "allow" /glob "GET /home/users/*/profile/*" } 
+   /0050 { /type "allow" /glob "GET /etc/designs/*" }
+   /0051 { /type "allow" /glob "GET /etc/clientlibs/*" }
+   /0052 { /type "allow" /glob "GET /bin/statistics/tracker/*" }
+   /0054 { /type "allow" /glob "* /home/users/*/*/profile.form.html*" }
+   /0057 { /type "allow" /glob "GET /home/users/*/profile/*" }
    /0059 { /type "allow" /glob "GET /etc/clientcontext/*" }
-   /0063 { /type "allow" /glob "* /system/sling/logout*" } 
-   /0064 { /type "allow" /glob "GET /etc/cloudservices/*" } 
+   /0063 { /type "allow" /glob "* /system/sling/logout*" }
+   /0064 { /type "allow" /glob "GET /etc/cloudservices/*" }
    /0062 { /type "allow" /url "/libs/cq/personalization/*"  }  # enable personalization
 
    # For Enablement features
@@ -320,32 +320,32 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
    /0175 { /type "allow" /url "GET /content/sites/*" }
    /0176 { /type "allow" /url "GET /libs/granite/security/userinfo.json"}
    /0177 { /type "allow" /url "GET /libs/granite/security/currentuser.json" }
- 
+
       # Enable CSRF token otherwise nothings works.
-   /5001 { /type "allow" /glob "GET /libs/granite/csrf/token.json *"}        
-    
+   /5001 { /type "allow" /glob "GET /libs/granite/csrf/token.json *"}
+
    # Allow SCF User Model to bootstrap as it depends on the granite user
    /5002 { /type "allow" /glob "GET /libs/granite/security/currentuser.json*" }
-   
+
       # Allow Communities Site Logout button work
       /5003 { /type "allow" /glob "GET /system/sling/logout.html*" }
-   
+
    # Allow i18n to load correctly
    /5004 { /type "allow" /glob "GET /libs/cq/i18n/dict.en.json *" }
 
    # Allow social json get pattern.
    /6002 { /type "allow" /glob "GET *.social.*.json*" }
-   
+
    # Allow loading of templates
    /6003 { /type "allow" /glob "GET /services/social/templates*" }
-   
+
    # Allow SCF User model to check moderator rules
    /6005 { /type "allow" /glob "GET /services/social/getLoggedInUser?moderatorCheck=*" }
-   
+
    # Allow CKEditor to load which uses a query pattern not sufficed by regular glob above.
    /6006 { /type "allow" /glob "GET /etc/clientlibs/social/thirdparty/ckeditor/*.js?t=*" }
    /6007 { /type "allow" /glob "GET /etc/clientlibs/social/thirdparty/ckeditor/*.css?t=*" }
-   
+
    # Allow Fonts from Communities to load
    /6050 { /type "allow" /glob "GET *.woff *" }
    /6051 { /type "allow" /glob "GET *.ttf *" }
@@ -356,7 +356,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
       #######################################
       ## END: AEM COMMUNITITES ADDITIONS
    #######################################
-      
+
       }
 
     # The cache section regulates what responses will be cached and where.
@@ -368,20 +368,20 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
       # to deliver them just like static files.
       /docroot "/opt/dispatcher"
 
-      # Sets the level upto which files named ".stat" will be created in the 
-      # document root of the webserver. When an activation request for some 
-      # page is received, only files within the same subtree are affected 
+      # Sets the level upto which files named ".stat" will be created in the
+      # document root of the webserver. When an activation request for some
+      # page is received, only files within the same subtree are affected
       # by the invalidation.
       #/statfileslevel "0"
-      
+
       # Flag indicating whether to cache responses to requests that contain
       # authorization information.
       /allowAuthorized "1"
-      
+
       # Flag indicating whether the dispatcher should serve stale content if
       # no remote server is available.
       #/serveStaleOnError "0"
-      
+
       # The rules section defines what responses should be cached based on
       # the requested URL. Please note that only the following requests can
       # lead to cacheable responses:
@@ -406,8 +406,8 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
 
       #######################################
       ## BEGIN: AEM COMMUNITITES ADDITIONS
-     #######################################   
-    
+     #######################################
+
    # Never cache the client-side .social.json calls
    /0001 { /type "deny" /glob "*.social.json*" }
 
@@ -421,16 +421,16 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
 
    # Never cache the assignments page in case the enablement feature is in use - add your own deny rules in there
    /0006 { /type "deny" /glob "/content/*/assignments/*" }
-     
+
       #######################################
       ## END: AEM COMMUNITITES ADDITIONS
-      #######################################   
-    
+      #######################################
+
         }
-        
+
       # The invalidate section defines the pages that are "invalidated" after
-      # any activation. Please note that the activated page itself and all 
-      # related documents are flushed on an modification. For example: if the 
+      # any activation. Please note that the activated page itself and all
+      # related documents are flushed on an modification. For example: if the
       # page /foo/bar is activated, all /foo/bar.* files are removed from the
       # cache.
       /invalidate
@@ -476,24 +476,24 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
         #  /type "allow"
         #  }
         }
-        
+
       # The ignoreUrlParams section contains query string parameter names that
       # should be ignored when determining whether some request's output can be
       # cached or delivered from cache.
       #
-      # In this example configuration, the "q" parameter will be ignored. 
+      # In this example configuration, the "q" parameter will be ignored.
       #/ignoreUrlParams
       #  {
       #  /0001 { /glob "*" /type "deny" }
       #  /0002 { /glob "q" /type "allow" }
       #  }
-      
+
     /enableTTL "1"
 
       }
-      
+
     # The statistics sections dictates how the load should be balanced among the
-    # renders according to the media-type. 
+    # renders according to the media-type.
     /statistics
       {
       /categories

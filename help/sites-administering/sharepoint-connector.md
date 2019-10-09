@@ -5,7 +5,7 @@ description:  Day JCR Connector for Microsoft SharePoint 2010 and Microsoft Shar
 seo-description: Learn about the Sharepoint Connector in AEM.
 uuid: 2f3b90f9-ec6b-4808-bbd4-20e67b6a7573
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e3f2dc5a-ef5e-432c-be07-b3dedbd6549b
@@ -38,8 +38,8 @@ All functionalities are implemented using the native SharePoint web services as 
 
 To get started with the connector, do the following:
 
-* Ensure that you have at least Java 7 installed.  
-* Download the connector package distribution file from Package Share.  
+* Ensure that you have at least Java 7 installed.
+* Download the connector package distribution file from Package Share.
 * Copy a valid *license.properties* file to the directory that contains the *cq-quickstart-6.4.0.jar* file.
 
 * Double-click/tap the .jar file to start AEM, or start it from the command line.
@@ -48,7 +48,7 @@ To get started with the connector, do the following:
 
 ## Installing SharePoint connector {#installing-sharepoint-connector}
 
-The connector is a content package that facilitates easy installation. Install the package using Package Manager, and then set the SharePoint server URL  
+The connector is a content package that facilitates easy installation. Install the package using Package Manager, and then set the SharePoint server URL
 and other configuration options. The SharePoint content is available in the AEM repository.
 
 ### Installation requirements {#installation-requirements}
@@ -57,7 +57,7 @@ The connector requires the following:
 
 * Java Runtime Environment 1.7 or later
 * SharePoint Web Services available through the network
-* SharePoint server URL  
+* SharePoint server URL
 * User credentials and permissions for CRX and SharePoint repositories
 * [Supported platforms](#supported-platforms)
 
@@ -95,8 +95,8 @@ To install the connector content package.
 1. Open an Adobe Support ticket to request for the connector featurepack.
 1. Download the package when it is available and then open Package Manager for your AEM instance.
 1. Tap/click **Install** from the package description page.
-1. From the **Install Package** dialog, tap/click **Install**. 
- 
+1. From the **Install Package** dialog, tap/click **Install**.
+
    **Note**: Make sure that you are logged-in as administrator.
 
 1. When the package is installed, tap/click **Close**.
@@ -121,11 +121,11 @@ To set the URL of the SharePoint server and advanced options, perform these step
 
 'Workspaces' and 'Default Workspace Name' parameters:
 
-By default the connector exposes a single JCR workspace. The SharePoint server which is exposed by this workspace is set through the 'Sharepoint Server URL' configuration parameter.  
-  
-The connector can also be configured for multiple workspaces. In this case, each workspace is associated with the URL of the respective SharePoint server that is exposed through the workspace. To add a workspace, add a workspace definition to the Workspaces parameter. A workspace definition has the following format:  
-`<name>`= `<url>` where   
-`<name>` is the name of the JCR workspace and   
+By default the connector exposes a single JCR workspace. The SharePoint server which is exposed by this workspace is set through the 'Sharepoint Server URL' configuration parameter.
+
+The connector can also be configured for multiple workspaces. In this case, each workspace is associated with the URL of the respective SharePoint server that is exposed through the workspace. To add a workspace, add a workspace definition to the Workspaces parameter. A workspace definition has the following format:
+`<name>`= `<url>` where
+`<name>` is the name of the JCR workspace and
 `<url>` is the URL of the SharePoint server for that workspace.
 
 In AEM, perform one more step apart from above configuration steps. Whitelist the '**com.day.cq.dam.cq-dam-jcr-connectors**' bundle.
@@ -186,7 +186,7 @@ Optionally, you can configure the Synchronization delay between different synchr
 
 Sharepoint includes the Classic and Claims Based authentication methods, both of which support the following authentication types:
 
-* Basic 
+* Basic
 * Forms-Based
 
 In particular, the following types of authentication are available:
@@ -227,7 +227,7 @@ You can also use the connector extension for authentication to create a custom a
 
 To create a user in AEM:
 
-1. Login to http://localhost:9502/with the admin user.  
+1. Login to http://localhost:9502/with the admin user.
 1. Click Tools.
 1. Click Security.
 1. Click Users.
@@ -246,7 +246,7 @@ To add the user in the admin group:
 
 ### Disable Token Authentication {#disable-token-authentication}
 
-1. Download and install the package `basic auth`. `zip` from Package Share. 
+1. Download and install the package `basic auth`. `zip` from Package Share.
 
 1. Close Quickstart.
 1. Open the file *\crx-quickstart\repository\repository.xml*.
@@ -285,7 +285,7 @@ The following steps provide guidelines around extending the standard authenticat
               </plugin>
    ```
 
-1. Register the `SharepointConnectionFactory` implementation in the connector configuration. In the configuration window of the connector, click **Advanced options**. In the for **Sharepoint Connection Factory** field, specify the name of the implementation `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.  
+1. Register the `SharepointConnectionFactory` implementation in the connector configuration. In the configuration window of the connector, click **Advanced options**. In the for **Sharepoint Connection Factory** field, specify the name of the implementation `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
 
 1. Restart the connector.
 

@@ -6,7 +6,7 @@ seo-description: Learn more about upgrading custom code in AEM.
 uuid: d4b6717c-41da-4dcc-b85c-51842192ca8d
 contentOwner: sarchiz
 topic-tags: upgrading
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: ba8efc24-a34c-477b-8c6d-6e8f893eb999
 targetaudience: target-audience upgrader
@@ -37,7 +37,7 @@ Before proceeding with an upgrade you should have a stable application code base
 In addition to the option of upgrading your code base and customizations to work with the new AEM version, 6.4 also helps manage your customizations more efficiently with the Backward Compatibility feature as described on [this page](/help/sites-deploying/backward-compatibility.md).
 
 As mentioned above and shown in the diagram below,running the [Pattern Detector](/help/sites-deploying/pattern-detector.md) in the first step will help you assess the overall complexity of the upgrade and whether you want to run in compatibility mode or update your customizations to use all the new AEM 6.4 features. Please see the [Backward Compatibility in AEM 6.4](/help/sites-deploying/backward-compatibility.md) page for more details.
-[ ![screen_shot_2018-03-30at175257](assets/screen_shot_2018-03-30at175257.png)](assets/upgrade-code-base-highlevel.png) 
+[ ![screen_shot_2018-03-30at175257](assets/screen_shot_2018-03-30at175257.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Upgrade the Code Base {#upgrade-code-base}
 
@@ -69,9 +69,9 @@ Any use of queries in the code base needs to be thoroughly tested as part of upg
 
 Several tools for tools for analyzing and inspecting query performance are available:
 
-* [AEM Index Tools](/help/sites-deploying/queries-and-indexing.md)  
+* [AEM Index Tools](/help/sites-deploying/queries-and-indexing.md)
 
-* [Operations Diagnosis Tools - Query Performance](/help/sites-administering/operations-dashboard.md#diagnosis-tools)  
+* [Operations Diagnosis Tools - Query Performance](/help/sites-administering/operations-dashboard.md#diagnosis-tools)
 
 * [Oak Utils](https://oakutils.appspot.com/). This is an open source tool that is not maintained by Adobe.
 
@@ -111,19 +111,19 @@ Instances that have customized Assets deployments need to be prepared for the up
 
 You can prepare customizations to the Assets UI by doing the following:
 
-1. On the instance that needs to be upgraded, open CRXDE Lite by going to `https://server:port/crx/de/index.jsp` 
+1. On the instance that needs to be upgraded, open CRXDE Lite by going to `https://server:port/crx/de/index.jsp`
 
 1. Go to the following node:
 
     * `/apps/dam/content`
 
-1. Rename the content node to **content_backup**. You can do this by right clicking the explorer pane in the left hand side of the window and choosing **Rename**.  
+1. Rename the content node to **content_backup**. You can do this by right clicking the explorer pane in the left hand side of the window and choosing **Rename**.
 
-1. Once the node has been renamed, create a new node named content under `/apps/dam` named **content** and set its node type to **sling:Folder**.  
+1. Once the node has been renamed, create a new node named content under `/apps/dam` named **content** and set its node type to **sling:Folder**.
 
-1. Move all the children nodes of **content_backup** to the newly created content node. You can do this by right clicking each children node in the explorer pane and selecting **Move**.  
+1. Move all the children nodes of **content_backup** to the newly created content node. You can do this by right clicking each children node in the explorer pane and selecting **Move**.
 
-1. Delete the **content_backup** node.  
+1. Delete the **content_backup** node.
 
 1. The updated nodes beneath `/apps/dam` with the correct node type of `sling:Folder` should ideally be saved into version control and deployed with the code base or at a minimum backed up as content package.
 
@@ -175,49 +175,49 @@ The upgrade procedure as outlined here should be tested on Dev and QA environmen
 
 Below are critical areas of any AEM implementation that should be covered by your test plan once the environment has been upgraded and the upgraded code base has been deployed.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Functional Test Area</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Published Sites</td> 
-   <td>Testing the AEM implementation and associated code on the publish tier<br /> through the dispatcher. Should include criteria for page updates and<br /> cache invalidation.</td> 
-  </tr> 
-  <tr> 
-   <td>Authoring</td> 
-   <td>Testing the AEM implementation and associated code on the Author tier. Should include page, component authoring and dialogs.</td> 
-  </tr> 
-  <tr> 
-   <td>Integrations with Marketing Cloud Solutions</td> 
-   <td>Validating integrations with products like Analytics, DTM, and Target.</td> 
-  </tr> 
-  <tr> 
-   <td>Integrations with 3rd Party Systems</td> 
-   <td>Any 3rd party integrations should be validated on both Author and Publish tiers.</td> 
-  </tr> 
-  <tr> 
-   <td>Authentication, Security and Permissions</td> 
-   <td>Any authentication mechanisms like LDAP/SAML should be validated.<br /> Permissions and groups should be tested on both Author and Publish<br /> tiers.</td> 
-  </tr> 
-  <tr> 
-   <td>Queries</td> 
-   <td>Custom indexes and queries should be tested along with query performance.</td> 
-  </tr> 
-  <tr> 
-   <td>UI Customizations</td> 
-   <td>Any extensions or customizations to the AEM UI in the author environment.</td> 
-  </tr> 
-  <tr> 
-   <td>Workflows</td> 
-   <td>Custom and/or out of the box workflows and functionality.</td> 
-  </tr> 
-  <tr> 
-   <td>Performance Testing</td> 
-   <td>Load testing should be performed on both Author and Publish tiers that simulate real-world scenarios.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Functional Test Area</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>Published Sites</td>
+   <td>Testing the AEM implementation and associated code on the publish tier<br /> through the dispatcher. Should include criteria for page updates and<br /> cache invalidation.</td>
+  </tr>
+  <tr>
+   <td>Authoring</td>
+   <td>Testing the AEM implementation and associated code on the Author tier. Should include page, component authoring and dialogs.</td>
+  </tr>
+  <tr>
+   <td>Integrations with Marketing Cloud Solutions</td>
+   <td>Validating integrations with products like Analytics, DTM, and Target.</td>
+  </tr>
+  <tr>
+   <td>Integrations with 3rd Party Systems</td>
+   <td>Any 3rd party integrations should be validated on both Author and Publish tiers.</td>
+  </tr>
+  <tr>
+   <td>Authentication, Security and Permissions</td>
+   <td>Any authentication mechanisms like LDAP/SAML should be validated.<br /> Permissions and groups should be tested on both Author and Publish<br /> tiers.</td>
+  </tr>
+  <tr>
+   <td>Queries</td>
+   <td>Custom indexes and queries should be tested along with query performance.</td>
+  </tr>
+  <tr>
+   <td>UI Customizations</td>
+   <td>Any extensions or customizations to the AEM UI in the author environment.</td>
+  </tr>
+  <tr>
+   <td>Workflows</td>
+   <td>Custom and/or out of the box workflows and functionality.</td>
+  </tr>
+  <tr>
+   <td>Performance Testing</td>
+   <td>Load testing should be performed on both Author and Publish tiers that simulate real-world scenarios.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Document Test Plan and Results {#document-test-plan-and-results}

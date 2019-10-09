@@ -7,7 +7,7 @@ uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 ---
@@ -24,15 +24,15 @@ You can create a web-based application that uses Java servlets to invoke the For
 
 Using a Java servlet, you can write a form to a client web browser so that a customer can view and enter data into the form. After populating the form with data, the web user clicks a submit button located on the form to send information back to the Java servlet, where the data can be retrieved and processed. For example, the data can be sent to another process.
 
-This section discusses how to create a web-based application that enables the user to select either American-based form data or Canadian-based form data, as shown in the following illustration. 
+This section discusses how to create a web-based application that enables the user to select either American-based form data or Canadian-based form data, as shown in the following illustration.
 
 ![cw_cw_fragmentwebclient](assets/cw_cw_fragmentwebclient.png)
 
-The form that is rendered is a form that is based on fragments. That is, if the user selects American data, then the returned form uses fragments based on American data. For example, the footer of the form contains an American address, as shown in the following illustration. 
+The form that is rendered is a form that is based on fragments. That is, if the user selects American data, then the returned form uses fragments based on American data. For example, the footer of the form contains an American address, as shown in the following illustration.
 
 ![cw_cw_fragementformfooter](assets/cw_cw_fragementformfooter.png)
 
-Likewise, if the user selects Canadian data, then the returned form contains a Canadian address, as shown in the following illustration. 
+Likewise, if the user selects Canadian data, then the returned form contains a Canadian address, as shown in the following illustration.
 
 ![cw_cw_fragementformfootercnd](assets/cw_cw_fragementformfootercnd.png)
 
@@ -94,25 +94,25 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 **To add required JAR files to your project:**
 
-1. From the Project Explorer window, right-click the `FragmentsWebApplication` project and select **Properties**. 
+1. From the Project Explorer window, right-click the `FragmentsWebApplication` project and select **Properties**.
 1. Click **Java build path** and then click the **Libraries** tab.
 1. Click the **Add External JARs** button and browse to the JAR files to include.
 
 **To add a Java servlet to your project:**
 
-1. From the Project Explorer window, right-click the `FragmentsWebApplication` project and select **New** &gt;  **Other**. 
-1. Expand the **Web** folder, select **Servlet**, and then click **Next**. 
+1. From the Project Explorer window, right-click the `FragmentsWebApplication` project and select **New** &gt;  **Other**.
+1. Expand the **Web** folder, select **Servlet**, and then click **Next**.
 1. In the Create Servlet dialog box, type `RenderFormFragment` for the name of the servlet and then click **Finish**.
 
 **To add an HTML page to your project:**
 
-1. From the Project Explorer window, right-click the `FragmentsWebApplication` project and select **New** &gt; **Other**. 
-1. Expand the **Web** folder, select **HTML**, and click **Next**. 
+1. From the Project Explorer window, right-click the `FragmentsWebApplication` project and select **New** &gt; **Other**.
+1. Expand the **Web** folder, select **HTML**, and click **Next**.
 1. In the New HTML dialog box, type `index.html` for the file name and then click **Finish**.
 
 >[!NOTE]
 >
->For information about creating the HTML page that invokes the `RenderFormFragment` Java servlet, see 
+>For information about creating the HTML page that invokes the `RenderFormFragment` Java servlet, see
 [Creating the web page](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
 ### Creating Java application logic for the servlet {#creating-java-application-logic-for-the-servlet}
@@ -120,15 +120,15 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 You create Java application logic that invokes the Forms service from within the Java servlet. The following code shows the syntax of the `RenderFormFragment` Java Servlet:
 
 ```as3
-     public class RenderFormFragment extends HttpServlet implements Servlet { 
-         public void doGet(HttpServletRequest req, HttpServletResponse resp 
-         throws ServletException, IOException { 
-         doPost(req,resp); 
-          
-         } 
-         public void doPost(HttpServletRequest req, HttpServletResponse resp 
-         throws ServletException, IOException { 
-             //Add code here to invoke the Forms service 
+     public class RenderFormFragment extends HttpServlet implements Servlet {
+         public void doGet(HttpServletRequest req, HttpServletResponse resp
+         throws ServletException, IOException {
+         doPost(req,resp);
+ 
+         }
+         public void doPost(HttpServletRequest req, HttpServletResponse resp
+         throws ServletException, IOException {
+             //Add code here to invoke the Forms service
              }
 ```
 
@@ -139,17 +139,17 @@ To render a form based on fragments using the Forms service API, perform the fol
 1. Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path. For information about the location of these files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Retrieve the value of the radio button that is submitted from the HTML form and specifies whether to use American or Canadian data. If American is submitted, create a `com.adobe.idp.Document` that stores data located in the *Purchase Order US.xml*. Likewise, if Canadian, then create a `com.adobe.idp.Document` that stores data located in the *Purchase Order Canada.xml* file.
 1. Create a `ServiceClientFactory` object that contains connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-1. Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object. 
-1. Create a `URLSpec` object that stores URI values by using its constructor. 
+1. Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
+1. Create a `URLSpec` object that stores URI values by using its constructor.
 1. Invoke the `URLSpec` object’s `setApplicationWebRoot` method and pass a string value that represents the application’s web root.
 1. Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design and the fragments are located in the content root URI. If not, the Forms service throws an exception. To reference the AEM Forms repository, specify `repository://`.
 1. Invoke the `URLSpec` object’s `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
 1. Invoke the `FormsServiceClient` object’s `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension.
-    * A `com.adobe.idp.Document` object that contains data to merge with the form (created in step 2). 
-    * A `PDFFormRenderSpec` object that stores run-time options. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en). 
-    * A `URLSpec` object that contains URI values that are required by the Forms service to render a form based on fragments. 
+    * A `com.adobe.idp.Document` object that contains data to merge with the form (created in step 2).
+    * A `PDFFormRenderSpec` object that stores run-time options. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+    * A `URLSpec` object that contains URI values that are required by the Forms service to render a form based on fragments.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
 
    The `renderPDFForm` method returns a `FormsResult` object that contains a form data stream that must be written to the client web browser.
@@ -159,143 +159,143 @@ To render a form based on fragments using the Forms service API, perform the fol
 1. Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
 1. Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
 1. Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
-1. Create a byte array populate it with the form data stream by invoking the `InputStream` object’s `read`method and passing the byte array as an argument. 
+1. Create a byte array populate it with the form data stream by invoking the `InputStream` object’s `read`method and passing the byte array as an argument.
 1. Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 The following code example represents the Java servlet that invokes the Forms service and renders a form based on fragments.
 
 ```as3
- /* 
-     * This Java Quick Start uses the following JAR files 
-     * 1. adobe-forms-client.jar 
-     * 2. adobe-livecycle-client.jar 
-     * 3. adobe-usermanager-client.jar 
-     * 
-     * (Because Forms quick starts are implemented as Java servlets, it is  
-     * not necessary to include J2EE specific JAR files - the Java project 
-     * that contains this quick start is exported as a WAR file which 
-     * is deployed to the J2EE application server) 
-     * 
-     * These JAR files are located in the following path: 
-     * <install directory>/sdk/client-libs 
-     * 
-     * For complete details about the location of these JAR files,  
-     * see "Including AEM Forms library files" in Programming with AEM forms 
-     */ 
- import java.io.File; 
- import java.io.FileInputStream; 
- import java.io.IOException; 
- import java.io.PrintWriter; 
-  
- import javax.servlet.Servlet; 
- import javax.servlet.ServletException; 
- import javax.servlet.ServletOutputStream; 
- import javax.servlet.http.HttpServlet; 
- import javax.servlet.http.HttpServletRequest; 
- import javax.servlet.http.HttpServletResponse; 
- import com.adobe.livecycle.formsservice.client.*; 
- import java.util.*; 
- import java.io.InputStream; 
- import java.net.URL; 
-  
- import com.adobe.idp.Document; 
- import com.adobe.idp.dsc.clientsdk.ServiceClientFactory; 
- import com.adobe.idp.dsc.clientsdk.ServiceClientFactoryProperties; 
-  
- public class RenderFormFragment extends HttpServlet implements Servlet { 
-      
-     public void doGet(HttpServletRequest req, HttpServletResponse resp) 
-         throws ServletException, IOException { 
-             doPost(req,resp);  
-  
-     } 
-     public void doPost(HttpServletRequest req, HttpServletResponse resp) 
-     throws ServletException, IOException { 
-          
-          
-              
-         try{ 
-             //Set connection properties required to invoke AEM Forms                                 
-             Properties connectionProps = new Properties(); 
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password"); 
-              
-             //Get the value of selected radio button 
-             String radioValue = req.getParameter("radio"); 
-              
-             //Create an Document object to store form data 
-             Document oInputData = null;  
-              
-             //The value of the radio button determines the form data to use 
-             //which determines which fragments used in the form 
-             if (radioValue.compareTo("AMERICAN") == 0)            { 
-                 FileInputStream myData = new FileInputStream("C:\\Adobe\Purchase Order US.xml"); 
-                 oInputData = new Document(myData);  
-             } 
-             else if (radioValue.compareTo("CANADIAN") == 0)            { 
-                 FileInputStream myData = new FileInputStream("C:\\Adobe\Purchase Order Canada.xml"); 
-                 oInputData = new Document(myData);  
-             } 
-                      
-             //Create a ServiceClientFactory object 
-             ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps); 
-                  
-             //Create a FormsServiceClient object 
-             FormsServiceClient formsClient = new FormsServiceClient(myFactory);  
-          
-             //Set the parameter values for the renderPDFForm method 
-             String formName = "Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp";   
-                                      
-             //Cache the PDF form 
-             PDFFormRenderSpec pdfFormRenderSpec = new PDFFormRenderSpec(); 
-             pdfFormRenderSpec.setCacheEnabled(new Boolean(true)); 
-          
-             //Specify URI values that are required to render a form 
-             //design based on fragments 
-             URLSpec uriValues = new URLSpec();  
-             uriValues.setApplicationWebRoot("https://[server]:[port]/RenderFormFragment"); 
-             uriValues.setContentRootURI("repository:///"); 
-             uriValues.setTargetURL("https://[server]:[port]/FormsServiceClientApp/HandleData"); 
-                      
-             //Invoke the renderPDFForm method and write the  
-             //results to a client web browser 
-             FormsResult formOut = formsClient.renderPDFForm( 
-                         formName,               //formQuery 
-                         oInputData,             //inDataDoc 
-                         pdfFormRenderSpec,      //PDFFormRenderSpec 
-                         uriValues,                //urlSpec 
-                         null                    //attachments 
-                         ); 
-          
-             //Create a Document object that stores form data 
-             Document myData = formOut.getOutputContent(); 
-          
-             //Get the content type of the response and 
-             //set the HttpServletResponse object’s content type 
-             String contentType = myData.getContentType();  
-             resp.setContentType(contentType); 
-          
-             //Create a ServletOutputStream object 
-             ServletOutputStream oOutput = resp.getOutputStream(); 
-          
-             //Create an InputStream object 
-             InputStream inputStream = myData.getInputStream(); 
-          
-             //Write the data stream to the web browser 
-             byte[] data = new byte[4096]; 
-             int bytesRead = 0; 
-             while ((bytesRead = inputStream.read(data)) > 0) 
-             { 
-                 oOutput.write(data, 0, bytesRead); 
-             } 
-      
-         }catch (Exception e) { 
-              System.out.println("The following exception occurred: "+e.getMessage()); 
-       } 
-     } 
+ /*
+     * This Java Quick Start uses the following JAR files
+     * 1. adobe-forms-client.jar
+     * 2. adobe-livecycle-client.jar
+     * 3. adobe-usermanager-client.jar
+     *
+     * (Because Forms quick starts are implemented as Java servlets, it is
+     * not necessary to include J2EE specific JAR files - the Java project
+     * that contains this quick start is exported as a WAR file which
+     * is deployed to the J2EE application server)
+     *
+     * These JAR files are located in the following path:
+     * <install directory>/sdk/client-libs
+     *
+     * For complete details about the location of these JAR files,
+     * see "Including AEM Forms library files" in Programming with AEM forms
+     */
+ import java.io.File;
+ import java.io.FileInputStream;
+ import java.io.IOException;
+ import java.io.PrintWriter;
+ 
+ import javax.servlet.Servlet;
+ import javax.servlet.ServletException;
+ import javax.servlet.ServletOutputStream;
+ import javax.servlet.http.HttpServlet;
+ import javax.servlet.http.HttpServletRequest;
+ import javax.servlet.http.HttpServletResponse;
+ import com.adobe.livecycle.formsservice.client.*;
+ import java.util.*;
+ import java.io.InputStream;
+ import java.net.URL;
+ 
+ import com.adobe.idp.Document;
+ import com.adobe.idp.dsc.clientsdk.ServiceClientFactory;
+ import com.adobe.idp.dsc.clientsdk.ServiceClientFactoryProperties;
+ 
+ public class RenderFormFragment extends HttpServlet implements Servlet {
+ 
+     public void doGet(HttpServletRequest req, HttpServletResponse resp)
+         throws ServletException, IOException {
+             doPost(req,resp);
+ 
+     }
+     public void doPost(HttpServletRequest req, HttpServletResponse resp)
+     throws ServletException, IOException {
+ 
+ 
+ 
+         try{
+             //Set connection properties required to invoke AEM Forms
+             Properties connectionProps = new Properties();
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
+ 
+             //Get the value of selected radio button
+             String radioValue = req.getParameter("radio");
+ 
+             //Create an Document object to store form data
+             Document oInputData = null;
+ 
+             //The value of the radio button determines the form data to use
+             //which determines which fragments used in the form
+             if (radioValue.compareTo("AMERICAN") == 0)            {
+                 FileInputStream myData = new FileInputStream("C:\\Adobe\Purchase Order US.xml");
+                 oInputData = new Document(myData);
+             }
+             else if (radioValue.compareTo("CANADIAN") == 0)            {
+                 FileInputStream myData = new FileInputStream("C:\\Adobe\Purchase Order Canada.xml");
+                 oInputData = new Document(myData);
+             }
+ 
+             //Create a ServiceClientFactory object
+             ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps);
+ 
+             //Create a FormsServiceClient object
+             FormsServiceClient formsClient = new FormsServiceClient(myFactory);
+ 
+             //Set the parameter values for the renderPDFForm method
+             String formName = "Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp";
+ 
+             //Cache the PDF form
+             PDFFormRenderSpec pdfFormRenderSpec = new PDFFormRenderSpec();
+             pdfFormRenderSpec.setCacheEnabled(new Boolean(true));
+ 
+             //Specify URI values that are required to render a form
+             //design based on fragments
+             URLSpec uriValues = new URLSpec();
+             uriValues.setApplicationWebRoot("https://[server]:[port]/RenderFormFragment");
+             uriValues.setContentRootURI("repository:///");
+             uriValues.setTargetURL("https://[server]:[port]/FormsServiceClientApp/HandleData");
+ 
+             //Invoke the renderPDFForm method and write the
+             //results to a client web browser
+             FormsResult formOut = formsClient.renderPDFForm(
+                         formName,               //formQuery
+                         oInputData,             //inDataDoc
+                         pdfFormRenderSpec,      //PDFFormRenderSpec
+                         uriValues,                //urlSpec
+                         null                    //attachments
+                         );
+ 
+             //Create a Document object that stores form data
+             Document myData = formOut.getOutputContent();
+ 
+             //Get the content type of the response and
+             //set the HttpServletResponse object’s content type
+             String contentType = myData.getContentType();
+             resp.setContentType(contentType);
+ 
+             //Create a ServletOutputStream object
+             ServletOutputStream oOutput = resp.getOutputStream();
+ 
+             //Create an InputStream object
+             InputStream inputStream = myData.getInputStream();
+ 
+             //Write the data stream to the web browser
+             byte[] data = new byte[4096];
+             int bytesRead = 0;
+             while ((bytesRead = inputStream.read(data)) > 0)
+             {
+                 oOutput.write(data, 0, bytesRead);
+             }
+ 
+         }catch (Exception e) {
+              System.out.println("The following exception occurred: "+e.getMessage());
+       }
+     }
  }
 ```
 
@@ -306,62 +306,62 @@ The index.html web page provides an entry point to the Java servlet and invokes 
 The Java servlet captures the data that is posted from the HTML page by using the following Java code:
 
 ```as3
-             Document oInputData = null;  
-              
-             //Get the value of selected radio button 
-             String radioValue = req.getParameter("radio"); 
-                          
-             //The value of the radio button determines the form data to use 
-             //which determines which fragments used in the form 
-             if (radioValue.compareTo("AMERICAN") == 0)            { 
-                 FileInputStream myData = new FileInputStream("C:\\Adobe\Purchase Order US.xml"); 
-                 oInputData = new Document(myData);  
-             } 
-             else if (radioValue.compareTo("CANADIAN") == 0)            { 
-                 FileInputStream myData = new FileInputStream("C:\\Adobe\Purchase Order Canada.xml"); 
-                 oInputData = new Document(myData);  
+             Document oInputData = null;
+ 
+             //Get the value of selected radio button
+             String radioValue = req.getParameter("radio");
+ 
+             //The value of the radio button determines the form data to use
+             //which determines which fragments used in the form
+             if (radioValue.compareTo("AMERICAN") == 0)            {
+                 FileInputStream myData = new FileInputStream("C:\\Adobe\Purchase Order US.xml");
+                 oInputData = new Document(myData);
+             }
+             else if (radioValue.compareTo("CANADIAN") == 0)            {
+                 FileInputStream myData = new FileInputStream("C:\\Adobe\Purchase Order Canada.xml");
+                 oInputData = new Document(myData);
              }
 ```
 
-The following HTML code is located in the index.html file that was created during setup of the development environment. (See [Creating a web project](/help/forms/developing/rendering-forms.md#creating-a-web-project).) 
+The following HTML code is located in the index.html file that was created during setup of the development environment. (See [Creating a web project](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
 ```as3
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
- <html xmlns="https://www.w3.org/1999/xhtml"> 
- <head> 
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
- <title>Untitled Document</title> 
- </head> 
-  
- <body> 
- <form name="myform" action="https://[server]:[port]/FragmentsWebApplication/RenderFormFragment" method="post"> 
-      <table> 
-      <tr> 
-        <th>Forms Fragment Web Client</th> 
-      </tr> 
-      <tr> 
-        <td> 
-          <label> 
-          <input type="radio" name="radio" id="radio_Data" value="CANADIAN" /> 
-          Canadian data<br /> 
-          </label> 
-          <p> 
-            <label> 
-            <input type="radio" name="radio" id="radio_Data" value="AMERICAN" checked/> 
-            American data</label> 
-          </p> 
-        </td> 
-      </tr> 
-      <tr> 
-      <td> 
-        <label> 
-          <input type="submit" name="button_Submit" id="button_Submit" value="Submit" /> 
-            </label> 
-            </td> 
-         </tr> 
-        </table> 
-      </form>     
- </body> 
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="https://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>Untitled Document</title>
+ </head>
+ 
+ <body>
+ <form name="myform" action="https://[server]:[port]/FragmentsWebApplication/RenderFormFragment" method="post">
+      <table>
+      <tr>
+        <th>Forms Fragment Web Client</th>
+      </tr>
+      <tr>
+        <td>
+          <label>
+          <input type="radio" name="radio" id="radio_Data" value="CANADIAN" />
+          Canadian data<br />
+          </label>
+          <p>
+            <label>
+            <input type="radio" name="radio" id="radio_Data" value="AMERICAN" checked/>
+            American data</label>
+          </p>
+        </td>
+      </tr>
+      <tr>
+      <td>
+        <label>
+          <input type="submit" name="button_Submit" id="button_Submit" value="Submit" />
+            </label>
+            </td>
+         </tr>
+        </table>
+      </form>
+ </body>
  </html>
 ```
 
@@ -372,7 +372,7 @@ To deploy the Java servlet that invokes the Forms service, package your web appl
 **To package a web application to a WAR file:**
 
 1. From the **Project Explorer** window, right-click the `FragmentsWebApplication` project and select **Export** &gt; **WAR file**.
-1. In the **Web module** text box, type `FragmentsWebApplication` for the name of the Java project. 
+1. In the **Web module** text box, type `FragmentsWebApplication` for the name of the Java project.
 1. In the **Destination** text box, type `FragmentsWebApplication.war`**for the**file name, specify the location for your WAR file, and then click Finish.
 
 ### Deploying the WAR file to the J2EE application server {#deploying-the-war-file-to-the-j2ee-application-server}

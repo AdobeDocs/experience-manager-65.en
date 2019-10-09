@@ -7,7 +7,7 @@ uuid: 8f1f210d-e850-4b2c-bb5a-942fa8299791
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 ---
 
@@ -35,7 +35,7 @@ After you export the global settings file, you can modify the settings in an XML
 
 ## Export a search template definition {#export-a-search-template-definition}
 
-1. On the Global Administration page, under Export search template definition, click List All. 
+1. On the Global Administration page, under Export search template definition, click List All.
 1. In the list of search templates, select the template to export.
 
    >[!NOTE]
@@ -46,12 +46,12 @@ After you export the global settings file, you can modify the settings in an XML
 
 ## Import global settings {#import-global-settings}
 
-1. On the Global Administration page, under Import Global Settings, click Choose File and select the global settings file. The global settings file must be in XML format. 
+1. On the Global Administration page, under Import Global Settings, click Choose File and select the global settings file. The global settings file must be in XML format.
 1. Click Import.
 
 ## Export global settings {#export-global-settings}
 
-1. On the Global Administration page, under Export Global Settings, click Export. 
+1. On the Global Administration page, under Export Global Settings, click Export.
 1. Save the file on your computer.
 
 ## Workspace global settings {#workspace-global-settings}

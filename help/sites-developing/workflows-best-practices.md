@@ -5,7 +5,7 @@ description: null
 seo-description: null
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
@@ -86,7 +86,7 @@ Definitions of workflow models, launchers, scripts and notifications are held in
 
 >[!NOTE]
 >
->See also [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>See also [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 #### Locations - Workflow Models {#locations-workflow-models}
 
@@ -144,8 +144,8 @@ Workflow launcher definitions are also stored in the repository according to typ
 * Custom workflow launchers are held under:
 
   ```
-  /conf/global/settings/workflow/launcher/... 
-  
+  /conf/global/settings/workflow/launcher/...
+
   ```
 
 * Legacy workflow launchers are held under the following path:
@@ -176,8 +176,8 @@ Workflow scripts are also stored in the repository according to type:
 * Custom workflow scripts are held under:
 
   ```
-  /apps/workflow/scripts/... 
-  
+  /apps/workflow/scripts/...
+
   ```
 
 * Legacy workflow scripts are held under the following path:
@@ -204,8 +204,8 @@ Workflow notifications are also stored in the repository according to type:
 * Custom workflow notification definitions are held under:
 
   ```
-  /conf/global/settings/workflow/notification/... 
-  
+  /conf/global/settings/workflow/notification/...
+
   ```
 
   >[!NOTE]
@@ -228,7 +228,7 @@ As in any custom development, it is always recommended to use a user’s session
 
 When implementing a workflow process:
 
-* A workflow session will be provided and should be used unless there is a compelling reason not to.   
+* A workflow session will be provided and should be used unless there is a compelling reason not to.
 * New sessions should not be created from workflow steps as this causes inconsistencies in the state(s) together with possible concurrency issues in the workflow engine.
 * You should not acquire a new JCR session from within a process step in a workflow; you should adapt the workflow session provided by the Process Step API to a jcr session. For example:
 
@@ -243,10 +243,10 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Saving a session:
 
-* Inside a workflow process, if the `WorkflowSession` is being used to modify the repository then do not explicitly save the session - the workflow will save the session when it completes. 
+* Inside a workflow process, if the `WorkflowSession` is being used to modify the repository then do not explicitly save the session - the workflow will save the session when it completes.
 * `Session.Save` should not be called from within a workflow step:
 
-    * it is recommended to adapt the workflow jcr session; then `save` is not necessary as the workflow engine saves the session automatically once the workflow has finished executing. 
+    * it is recommended to adapt the workflow jcr session; then `save` is not necessary as the workflow engine saves the session automatically once the workflow has finished executing.
     * it is not recommended for a process step to create its own jcr session.
 
 * By eliminating unnecessary saves, you can reduce overhead and thus make the workflows more efficient.
@@ -259,7 +259,7 @@ Saving a session:
 
 There is one listener that is responsible for all of the [workflow launchers](/help/sites-administering/workflows-starting.md#workflows-launchers) that are registered:
 
-* It will listen for changes at all of the paths specified in the globbing properties of the other launchers. 
+* It will listen for changes at all of the paths specified in the globbing properties of the other launchers.
 * When an event is dispatched, the workflow engine will then evaluate each launcher to determine if it should run.
 
 Creating too many launchers will cause the evaluation process to run more slowly.
@@ -274,7 +274,7 @@ The custom [launcher configuration](/help/sites-administering/workflows-starting
 
 * Have multiple conditions "AND"ed together.
 * Have OR conditions within a single condition.
-* Disable/enable launchers based on whether a feature flag is enabled or disabled. 
+* Disable/enable launchers based on whether a feature flag is enabled or disabled.
 * Support regex in launcher conditions.
 
 ### Do Not Start Workflows from other Workflows {#do-not-start-workflows-from-other-workflows}
@@ -314,7 +314,7 @@ When upgrading your instance:
 
 >[!NOTE]
 >
->See also [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>See also [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 ## System Tools {#system-tools}
 
@@ -326,7 +326,7 @@ There are many system tools available to help with monitoring, maintaining, and 
 
 The Sling Job Handling console will show:
 
-* Statistics on the state of jobs in the system since the last restart. 
+* Statistics on the state of jobs in the system since the last restart.
 * It will also show the configurations for all job queues and provide a shortcut to editing them in the configuration manager.
 
 ### Workflow Report Tool {#workflow-report-tool}

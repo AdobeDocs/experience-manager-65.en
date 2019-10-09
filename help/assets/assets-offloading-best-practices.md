@@ -5,7 +5,7 @@ description: Recommended use cases and best practices for offloading asset inges
 seo-description: Recommended use cases and best practices for offloading asset ingestion and replication workflows in AEM Assets.
 uuid: 7d08fda2-1c59-44ad-bd35-83d199642e01
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: cdb175f4-a7c6-4d9f-994a-5fc8eca51f03
@@ -141,7 +141,7 @@ To disable the transport of the workflow model, modify the DAM Update Asset Offl
 
 Workflow offloading is implemented using an external workflow on the master, that polls for the completion of the offloaded workflow on the worker. The default polling interval for the external workflow processes is five seconds. Adobe recommends that you increase the polling interval of the Assets offloading step to at least 15 seconds to reduce the offloading overhead on the master.
 
-1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).  
+1. Open the workflow console from [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
 1. Open the Models tab.
 1. Open the DAM Update Asset Offloading workflow model.
@@ -153,6 +153,6 @@ Workflow offloading is implemented using an external workflow on the master, tha
 
 This document focuses on Asset Offloading. Here is some additional documentation on offloading:
 
-* [Offloading Jobs](/help/sites-deploying/offloading.md) 
+* [Offloading Jobs](/help/sites-deploying/offloading.md)
 * [Assets workflow offloader](/help/sites-administering/workflow-offloader.md)
 

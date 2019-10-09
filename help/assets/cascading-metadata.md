@@ -5,7 +5,7 @@ description: This article describes how to define cascading metadata for assets.
 seo-description: How to define cascading metadata for assets.
 uuid: 97a9e1da-41de-4405-a725-f264ee71637c
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 discoiquuid: f14881fd-ffff-4652-a798-0c68dd424119
 ---
@@ -87,7 +87,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
    >
    >Dropdown with manually predefined values can be used with rules. Dropdown menus with configured JSON path can't be used with rules that use predefined values to apply conditions. If the values are loaded from JSON at runtime, it is not possible to apply a predefined rule.
 
-1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.  
+1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
 1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
 
@@ -103,7 +103,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 1. Similary, create a dependency between the value Video in the Asset Type field and other fields, such as Codec and Duration.
 1. Repeat the steps to create dependency between document assets (PDF and Word) in the **[!UICONTROL Asset Type]** field and fields such as Page Count and Author.
-1. Click **[!UICONTROL Save]**. Apply the Metadata Schema to a folder.   
+1. Click **[!UICONTROL Save]**. Apply the Metadata Schema to a folder.
 
 1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
 

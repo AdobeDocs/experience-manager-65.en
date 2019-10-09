@@ -7,7 +7,7 @@ uuid: cf3f5bfc-4650-4f3d-81e1-9c814cfd497c
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f9b40e1f-956d-498b-92e4-4fe21e23fc4a
 ---
 
@@ -16,8 +16,8 @@ discoiquuid: f9b40e1f-956d-498b-92e4-4fe21e23fc4a
 To administer forms workflow effectively, you should understand the following terms and the hierarchy of the elements:
 
 * *Process categories* organize processes into logical groups.
-* *Processes* represent the business processes that are automated. At least one process should exist for each business process implemented. 
-* A *process diagram* is the visual representation of the business process that is being automated. 
+* *Processes* represent the business processes that are automated. At least one process should exist for each business process implemented.
+* A *process diagram* is the visual representation of the business process that is being automated.
 * A *process instance* is a process that has been initiated by a user (such as completing and submitting a form) or an automated step. There may be multiple instances of a process.
 * An *operation *is one step of a process diagram, which is represented in Workbench by an icon in the process diagram.
 * A *task* is an action that has been assigned to a user. When the task is run and the operation is executed, the User service assigns a task to a user.

@@ -5,7 +5,7 @@ description: AEM provides a framework for testing component UI and a mechanism f
 seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 29c43202-0a4e-41ba-9176-92fa77c627d5
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
@@ -17,7 +17,7 @@ discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 
 AEM provides:
 
-* [a framework for testing component UI](/help/sites-developing/hobbes.md). 
+* [a framework for testing component UI](/help/sites-developing/hobbes.md).
 * [a mechanism for testing and debugging components](/help/sites-developing/developer-mode.md).
 
 The following are two Open Source Testing tools:

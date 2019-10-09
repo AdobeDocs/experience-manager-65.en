@@ -5,7 +5,7 @@ description: AEM Communities scoring and badges lets you identify and reward com
 seo-description: AEM Communities scoring and badges lets you identify and reward community members
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
@@ -55,19 +55,19 @@ Assigned (and awared) badges are stored in the selected [SRP](srp.md) and are no
 
 Included in the release are three role-based badges:
 
-* Moderator  
+* Moderator
 
   `/etc/community/badging/images/moderator/jcr:content/moderator.png`
 
-* Group manager 
+* Group manager
 
   `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
 
-* Privileged member 
+* Privileged member
 
   `/etc/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-![chlimage_1-366](assets/chlimage_1-366.png) 
+![chlimage_1-366](assets/chlimage_1-366.png)
 
 ### Awarded Badges {#awarded-badges}
 
@@ -80,15 +80,15 @@ In order for badges to appear as a reward for activity, there are two things tha
 
 Included in the release are three reward-based badges:
 
-* Gold  
+* Gold
 
   `/etc/community/badging/images/gold-badge/jcr:content/gold.png`
 
-* Silver  
+* Silver
 
   `/etc/community/badging/images/silver-badge/jcr:content/silver.png`
 
-* Bronze 
+* Bronze
 
   `/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -178,8 +178,8 @@ Scores are stored in SRP.
 >
 >Scoring rule names should be globally unique; they should not end with the same name.
 >
->An example of what *not* to do:  
->/etc/community/scoring/rules/site1/forums-scoring  
+>An example of what *not* to do:
+>/etc/community/scoring/rules/site1/forums-scoring
 >/etc/community/scoring/rules/site2/forums-scoring
 
 ### Scoring Sub-Rules {#scoring-sub-rules}
@@ -203,67 +203,67 @@ The name of the sub-rule typically follows the pattern of using a *subject, obje
 
 Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node that specify the [verbs and topics](#topics-and-verbs) .
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property</th> 
-   <th>Type</th> 
-   <th> Value Description</th> 
-  </tr> 
-  <tr> 
-   <td><i><code>VERB</code></i></td> 
-   <td>Long</td> 
-   <td> 
-    <ul> 
-     <li>required; the verb corresponds to an event action</li> 
-     <li>there must be at least one verb property</li> 
-     <li>the verb must be entered all UPPERCASE</li> 
-     <li>there can be multiple verb properties, but no duplicates</li> 
-     <li>the value is the score to apply for this event</li> 
-     <li>the value can be positive or negative</li> 
-     <li>a list of verbs supported in the release is in the <a href="#topics-and-verbs">Topics and Verbs</a> section</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><code>topics</code></td> 
-   <td>String[]</td> 
-   <td> 
-    <ul> 
-     <li>optional; restricts sub-rule to community components identified by event topics</li> 
-     <li>if specified: value is multi-value string of event topics</li> 
-     <li>a list of topics in the release is in the <a href="#topics-and-verbs">Topics and Verbs</a> section</li> 
-     <li>default is to apply to all topics associated with the verb(s)</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><code>forOwner</code></td> 
-   <td>Boolean</td> 
-   <td> 
-    <ul> 
-     <li>optional; not relevant when member is acting on content they own</li> 
-     <li>if true, apply score to owner of content being acted upon</li> 
-     <li>if false, apply score to member taking action</li> 
-     <li>default is false</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><code>scoringType</code></td> 
-   <td>String</td> 
-   <td> 
-    <ul> 
-     <li>optional; identifies the scoring engine</li> 
-     <li>if "basic", specifies the scoring engine based on quantity 
-      <ul> 
-       <li>included in the release</li> 
-      </ul> </li> 
-     <li>if "advanced", specifies the scoring engine based on quality and quantity 
-      <ul> 
-       <li>requires an <a href="advanced.md">additional package</a></li> 
-      </ul> </li> 
-     <li>default is "basic"</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property</th>
+   <th>Type</th>
+   <th> Value Description</th>
+  </tr>
+  <tr>
+   <td><i><code>VERB</code></i></td>
+   <td>Long</td>
+   <td>
+    <ul>
+     <li>required; the verb corresponds to an event action</li>
+     <li>there must be at least one verb property</li>
+     <li>the verb must be entered all UPPERCASE</li>
+     <li>there can be multiple verb properties, but no duplicates</li>
+     <li>the value is the score to apply for this event</li>
+     <li>the value can be positive or negative</li>
+     <li>a list of verbs supported in the release is in the <a href="#topics-and-verbs">Topics and Verbs</a> section</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><code>topics</code></td>
+   <td>String[]</td>
+   <td>
+    <ul>
+     <li>optional; restricts sub-rule to community components identified by event topics</li>
+     <li>if specified: value is multi-value string of event topics</li>
+     <li>a list of topics in the release is in the <a href="#topics-and-verbs">Topics and Verbs</a> section</li>
+     <li>default is to apply to all topics associated with the verb(s)</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><code>forOwner</code></td>
+   <td>Boolean</td>
+   <td>
+    <ul>
+     <li>optional; not relevant when member is acting on content they own</li>
+     <li>if true, apply score to owner of content being acted upon</li>
+     <li>if false, apply score to member taking action</li>
+     <li>default is false</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><code>scoringType</code></td>
+   <td>String</td>
+   <td>
+    <ul>
+     <li>optional; identifies the scoring engine</li>
+     <li>if "basic", specifies the scoring engine based on quantity
+      <ul>
+       <li>included in the release</li>
+      </ul> </li>
+     <li>if "advanced", specifies the scoring engine based on quality and quantity
+      <ul>
+       <li>requires an <a href="advanced.md">additional package</a></li>
+      </ul> </li>
+     <li>default is "basic"</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Included Scoring Rules and Sub-Rules {#included-scoring-rules-and-sub-rules}
@@ -272,25 +272,25 @@ Included in the release are two scoring rules for the [Forum Function](functions
 
 1. /etc/community/scoring/rules/comments-scoring
 
-    * subRules[] =  
+    * subRules[] =
 
-      /etc/community/scoring/rules/sub-rules/member-comment-create  
+      /etc/community/scoring/rules/sub-rules/member-comment-create
 
-      /etc/community/scoring/rules/sub-rules/member-receive-vote  
+      /etc/community/scoring/rules/sub-rules/member-receive-vote
 
-      /etc/community/scoring/rules/sub-rules/member-give-vote  
+      /etc/community/scoring/rules/sub-rules/member-give-vote
 
       /etc/community/scoring/rules/sub-rules/member-is-moderated
 
 1. /etc/community/scoring/rules/forums-scoring
 
-    * subRules[] =  
+    * subRules[] =
 
-      /etc/community/scoring/rules/sub-rules/member-forum-create  
+      /etc/community/scoring/rules/sub-rules/member-forum-create
 
-      /etc/community/scoring/rules/sub-rules/member-receive-vote 
+      /etc/community/scoring/rules/sub-rules/member-receive-vote
 
-      /etc/community/scoring/rules/sub-rules/member-give-vote 
+      /etc/community/scoring/rules/sub-rules/member-give-vote
 
       /etc/community/scoring/rules/sub-rules/member-is-moderated
 
@@ -340,37 +340,37 @@ The `scoringRules`property on a badging rule simply restricts which scoring rule
 >
 >Best practice: create badge images unique to each AEM site.
 
-![chlimage_1-369](assets/chlimage_1-369.png) 
+![chlimage_1-369](assets/chlimage_1-369.png)
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Property</th> 
-   <th>Type</th> 
-   <th>Value Description</th> 
-  </tr> 
-  <tr> 
-   <td>thresholds</td> 
-   <td>String[]</td> 
-   <td><em>(required)</em> A multi-value string of the form 'number|path' 
-    <ul> 
-     <li>number = score</li> 
-     <li>| = the vertical line char (U+007C)</li> 
-     <li>path = full path to badge image resource</li> 
-    </ul> The strings must be ordered so that the numbers are increasing in value and no whitespace should appear between the number and path.<br /> Example entry:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
-  </tr> 
-  <tr> 
-   <td>badgingType</td> 
-   <td>String</td> 
-   <td><em>(optional)</em> Identifies the scoring engine as either "basic" or "advanced". If the advanced scoring engine is desired, see <a href="advanced.md">Advanced Scoring and Badges</a>. The default is "basic".</td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <code>scoringRules </code></td> 
-   <td>String[]</td> 
-   <td>(<em>optional</em>) A multi-value string to restrict the badging rule to scoring events identified by the scoring rules</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Property</th>
+   <th>Type</th>
+   <th>Value Description</th>
+  </tr>
+  <tr>
+   <td>thresholds</td>
+   <td>String[]</td>
+   <td><em>(required)</em> A multi-value string of the form 'number|path'
+    <ul>
+     <li>number = score</li>
+     <li>| = the vertical line char (U+007C)</li>
+     <li>path = full path to badge image resource</li>
+    </ul> The strings must be ordered so that the numbers are increasing in value and no whitespace should appear between the number and path.<br /> Example entry:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+  </tr>
+  <tr>
+   <td>badgingType</td>
+   <td>String</td>
+   <td><em>(optional)</em> Identifies the scoring engine as either "basic" or "advanced". If the advanced scoring engine is desired, see <a href="advanced.md">Advanced Scoring and Badges</a>. The default is "basic".</td>
+  </tr>
+  <tr>
+   <td>
+    <code>scoringRules </code></td>
+   <td>String[]</td>
+   <td>(<em>optional</em>) A multi-value string to restrict the badging rule to scoring events identified by the scoring rules</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Included Badging Rules {#included-badging-rules}
@@ -399,20 +399,20 @@ The following cURL commands show what is necessary for an HTTP request for assig
 
 cURL -i -X POST -H *header* -u *signin * -F *operation * -F *badge * *member-profile-url*
 
-*header* = "Accept:application/json"  
+*header* = "Accept:application/json"
 custom header to pass to server (required)
 
-*signin* = administrator-id:password  
+*signin* = administrator-id:password
 for example: admin:admin
 
 *operation* = ":operation=social:assignBadge" OR ":operation=social:deleteBadge"
 
 *badge* = "badgeContentPath=*badge-image-file*"
 
-*badge-image-file* = the location of the badge image file in the repository  
+*badge-image-file* = the location of the badge image file in the repository
 for example: /etc/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = the endpoint for the member's profile on publish  
+*member-profile-url* = the endpoint for the member's profile on publish
 for example: https://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/profile.social.json
 
 >[!NOTE]
@@ -457,7 +457,7 @@ For the communities components delivered, the following tables describe the `ver
 >
 >A new boolean property, `allowBadges`, enables/disables the display of badges for a component instance. It will be configurable in updated [component edit dialogs](author-communities.md) through a checkbox labeled **Display Badges**.
 
-**[Calendar Component](calendar.md)** 
+**[Calendar Component](calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verb** |**Description** |
@@ -467,7 +467,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 | UPDATE |member's calendar event or comment is edited |
 | DELETE |member's calendar event or comment is deleted |
 
-**[Comments Component](comments.md)** 
+**[Comments Component](comments.md)**
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** |**Description** |
@@ -477,7 +477,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | UPDATE |member's comment is edited |
 | DELETE |member's comment is deleted |
 
-**[File Library Component](file-library.md)** 
+**[File Library Component](file-library.md)**
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** |**Description** |
@@ -487,7 +487,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 | UPDATE |member updates a folder or file |
 | DELETE |member deletes a folder or file |
 
-**[Forum Component](forum.md)** 
+**[Forum Component](forum.md)**
 SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verb** |**Description** |
@@ -497,7 +497,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | UPDATE |member's forum topic or reply is edited |
 | DELETE |member's forum topic or reply is deleted |
 
-**[Journal Component](blog-feature.md)** 
+**[Journal Component](blog-feature.md)**
 SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verb** |**Description** |
@@ -507,7 +507,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | UPDATE |member's blog article or comment is edited |
 | DELETE |member's blog article or comment is deleted |
 
-**[QnA Component](working-with-qna.md)** 
+**[QnA Component](working-with-qna.md)**
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verb** |**Description** |
@@ -519,7 +519,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | UNSELECT |member's answer is de-selected |
 | DELETE |member's QnA question or answer is deleted |
 
-**[Reviews Component](reviews.md)** 
+**[Reviews Component](reviews.md)**
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** |**Description** |
@@ -528,7 +528,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 | UPDATE |member's review is edited |
 | DELETE |member's review is deleted |
 
-**[Rating Component](rating.md)** 
+**[Rating Component](rating.md)**
 SocialEvent `topic`= com/adobe/cq/social/tally/rating
 
 | **Verb** |**Description** |
@@ -536,7 +536,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally/rating
 | ADD RATING |member's content has been up rated |
 | REMOVE RATING |member's content has been down rated |
 
-**[Voting Component](voting.md)** 
+**[Voting Component](voting.md)**
 SocialEvent `topic`= com/adobe/cq/social/tally/voting
 
 | **Verb** |**Description** |
@@ -544,7 +544,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally/voting
 | ADD VOTING |member's content has been up voted |
 | REMOVE VOTING |member's content has been down voted |
 
-**Moderation-enabled Components** 
+**Moderation-enabled Components**
 SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verb** |**Description** |
@@ -647,7 +647,7 @@ Finally,
 
 This should earn the community member a bronze badge visible with their forum post due to the first forums-badging rule's first threshold being a score of 1.
 
-![bronzebadge](assets/bronzebadge.png) 
+![bronzebadge](assets/bronzebadge.png)
 
 ## Additional Information {#additional-information}
 

@@ -1,13 +1,13 @@
 ---
-title: Configuring caching for Output 
-seo-title: Configuring caching for Output 
+title: Configuring caching for Output
+seo-title: Configuring caching for Output
 description: The Output service caches the form designs, fragments and images. Learn how to configure the caching for output.
 seo-description: The Output service caches the form designs, fragments and images. Learn how to configure the caching for output.
 uuid: 00bffeb5-c9c4-4a46-98b5-e14ec9f4514e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 ---
 
@@ -19,7 +19,7 @@ The Output page in administration console contains settings that control the way
 
 The Output service caches the following items:
 
-* **form designs:** The Output service caches form designs that it retrieves from the repository or from HTTP sources. This caching improves performance because for subsequent render requests, the Output service retrieves the form design from the cache instead of from the repository. 
+* **form designs:** The Output service caches form designs that it retrieves from the repository or from HTTP sources. This caching improves performance because for subsequent render requests, the Output service retrieves the form design from the cache instead of from the repository.
 * **fragments and images:** The Output service can cache fragments and images used in form designs. When the Output service caches these objects, it improves performance because the fragments and images are only read from the repository on the first request.
 
 Output stores the cache in two locations:

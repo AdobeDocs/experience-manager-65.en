@@ -7,7 +7,7 @@ uuid: 14c706ad-8b1c-4c03-9cd4-97424f2162bc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 ---
 
@@ -40,19 +40,19 @@ For an explanation of SAML, see [Security Assertion Markup Language (SAML) V2.0 
    When this option is not selected, users will be taken directly to the login page of the third-party SAML identity provider, where users who belong to an Enterprise domain can authenticate.
 
 1. (Optional) Select Enable Artifact Binding to enable artifact binding support. By default, POST binding is used with SAML. But if you have configured Artifact Binding, select this option. When this option is selected, the actual user assertion is not passed through the Browser request. Instead, a pointer to the assertion is passed and the assertion is retrieved using a backend web service call.
-1. (Optional) Select Enable Re-Direct Binding to support SAML bindings that use redirects. 
+1. (Optional) Select Enable Re-Direct Binding to support SAML bindings that use redirects.
 1. (Optional) In Custom Properties, specify additional properties. The additional properties are name=value pairs separated by new lines.
 
     * You can configure AEM forms to issue a SAML assertion for a validity period that matches the validity period of a third-party assertion. To honor the third-party SAML assertion timeout, add the following line in Custom Properties:
 
       `saml.sp.honour.idp.assertion.expiry=true`
-    
+
     * Add the following custom property for using RelayState to determine the URL where the user will be redirected after successful authentication.
 
       `saml.sp.use.relaystate=true`
-    
-    * Add the following custom property to configure the URL for the custom Java Server Pages (JSP), which will be used to render the registered list of identity providers. If you have not deployed a custom web application, it will use the default User Management page to render the list. 
-    
+
+    * Add the following custom property to configure the URL for the custom Java Server Pages (JSP), which will be used to render the registered list of identity providers. If you have not deployed a custom web application, it will use the default User Management page to render the list.
+
     `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. Click Save.

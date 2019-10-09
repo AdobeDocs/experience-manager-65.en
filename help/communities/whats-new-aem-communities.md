@@ -1,6 +1,6 @@
 ---
-title: What's New in AEM 6.4 Communities
-seo-title: What's New in AEM 6.4 Communities
+title: What's New in AEM 6.5 Communities
+seo-title: What's New in AEM 6.5 Communities
 description: null
 seo-description: null
 uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
@@ -8,13 +8,13 @@ contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 ---
 
-# What's New in AEM 6.4 Communities {#what-s-new-in-aem-communities}
+# What's New in AEM 6.5 Communities {#what-s-new-in-aem-communities}
 
 AEM Communities offers a framework to businesses to collaborate among their partners, customers and employees. It imparts social capabilities to website structure, and helps businesses to engage and impart knowledge to their stakeholders, to enhance their brand value their way.
 
-AEM 6.4 Communities brings in functionalities to enhance the experiences of community users, and ease the day-today tasks of community administrators, moderators, and managers.
+AEM 6.5 Communities brings in functionalities to enhance the experiences of community users, and ease the day-today tasks of community administrators, moderators, and managers.
 
-Read further for quick introduction to new features and enhancements. Also, see AEM 6.4 Communities [release notes](../release-notes/communities-release-notes.md). For AEM 6.4 Communities documentation, visit [AEM 6.4 Communities User Guide](home.md).
+Read further for quick introduction to new features and enhancements. Also, see AEM 6.5 Communities [release notes](../release-notes/communities-release-notes.md). For AEM 6.5 Communities documentation, visit [AEM 6.5 Communities User Guide](home.md).
 
 ## Managing Sub-Communities or Community Groups {#managing-sub-communities-or-community-groups}
 
@@ -30,7 +30,7 @@ To create such groups, users can simply navigate to Group Collection of the desi
 
 ### Delete community groups from groups console {#delete-community-groups-from-groups-console}
 
-AEM 6.4 Communities provides Delete Group icon on the existing community groups, in community Groups collection within community Sites console. This enables [group deletion](groups.md#deleting-the-group) in one click, along with the deletion of all the items associated (such as content and user memberships) with the group.
+AEM 6.5 Communities provides Delete Group icon on the existing community groups, in community Groups collection within community Sites console. This enables [group deletion](groups.md#deleting-the-group) in one click, along with the deletion of all the items associated (such as content and user memberships) with the group.
 
 ![deletegrp](assets/deletegrp.png)
 
@@ -42,7 +42,7 @@ Learning content can now be created, managed and published for a specific set of
 
 ## Moderating user generated content {#moderating-user-generated-content}
 
-AEM 6.4 Communities offers few improvements to moderation, which are instrumental in easing the day-to-day lives of community moderators.
+AEM 6.5 Communities offers few improvements to moderation, which are instrumental in easing the day-to-day lives of community moderators.
 
 ### Automatic spam detection  {#automatic-spam-detection}
 
@@ -56,7 +56,7 @@ New spam detection engine helps in filtering out the unwanted and unsolicited us
 
 ### New (Answered/Unanswered) filters for QnA {#new-answered-unanswered-filters-for-qna}
 
-AEM 6.4 adds two [new filters](moderation.md#filter-rail), named Answered and Not Answered for QnA questions, to bulk moderation console. These filters are available under Status in Filter Rail.
+AEM 6.5 adds two [new filters](moderation.md#filter-rail), named Answered and Not Answered for QnA questions, to bulk moderation console. These filters are available under Status in Filter Rail.
 
 ![statuses](assets/statuses.png)
 
@@ -70,7 +70,7 @@ Users simply need to select the desired filters from the Filter Rail in moderati
 
 ## Managing Community Sites {#managing-community-sites}
 
-AEM 6.4 Communities provides site management enhancements, which ensure that numerous community sites in different language are easily created, managed, and deleted by site administrators.
+AEM 6.5 Communities provides site management enhancements, which ensure that numerous community sites in different language are easily created, managed, and deleted by site administrators.
 
 ### Create multi locale community sites in one step {#create-multi-locale-community-sites-in-one-step}
 
@@ -82,7 +82,7 @@ Users can select configuration folders, branding and many other configurations a
 
 ### Delete community sites from sites console {#delete-community-sites-from-sites-console}
 
-AEM 6.4 Communities provides Delete Site icon on the existing community sites, in community Sites console. This enables the [deletion of the site](create-site.md) and the associated items in one click.
+AEM 6.5 Communities provides Delete Site icon on the existing community sites, in community Sites console. This enables the [deletion of the site](create-site.md) and the associated items in one click.
 
 ![siteactions](assets/siteactions.png)
 
@@ -92,7 +92,7 @@ Keeping user data protection at the heart of communities experience, AEM Communi
 
 ## What's Changed {#what-s-changed}
 
-* Captcha verification, while creating a new community site, is no longer available out-of-the-box in AEM 6.4 Communities. However, Communities site can be customized to include [Google component reCAPTCHA](https://helpx.adobe.com/experience-manager/using/aem_recaptcha.html) for better security.
+* Captcha verification, while creating a new community site, is no longer available out-of-the-box in AEM 6.5 Communities. However, Communities site can be customized to include [Google component reCAPTCHA](https://helpx.adobe.com/experience-manager/using/aem_recaptcha.html) for better security.
 * Option to upload a custom CSS has been removed from the community sites and groups theme.
 * Content Only and Search icons have been added in the Filter Rail in Bulk Moderation UI.
 * Content Path filter has been added in Filter Rail in Bulk Moderation UI.  

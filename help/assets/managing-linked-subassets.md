@@ -5,7 +5,7 @@ description: Learn how to create references to AEM assets from within Indesign, 
 seo-description: Learn how to create references to AEM assets from within Indesign, Adobe Illustrator, and Photoshop files. Also learn how to use the Page Viewer feature to view individual pages of multi-page files, including PDF, INDD, PPT, PPTX, and Ai files.
 uuid: 5e0a6b4f-71f3-4f91-85cd-2b2e785e3328
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 91ee7ad8-e6d8-4a61-91bc-41fcaf374035

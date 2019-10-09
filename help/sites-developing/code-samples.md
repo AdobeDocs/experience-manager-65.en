@@ -5,7 +5,7 @@ description: The Adobe Consulting Services Team has generated a series of AEM co
 seo-description: The Adobe Consulting Services Team has generated a series of AEM code samples
 uuid: 16f23fa6-5a3c-4697-87de-86db37b3ec1b
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171

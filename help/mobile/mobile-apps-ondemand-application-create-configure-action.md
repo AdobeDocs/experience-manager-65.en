@@ -6,7 +6,7 @@ seo-description: Creating an app is often the first step towards creating and ma
 uuid: f6b41d9a-d896-479e-9f6c-e91a88f3e74d
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 ---

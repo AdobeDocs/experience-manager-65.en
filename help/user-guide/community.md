@@ -4,7 +4,7 @@ seo-title: The AEM Community
 description: The AEM Community
 seo-description: The AEM Community
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
 # The AEM Community {#the-aem-community}

@@ -5,7 +5,7 @@ description: You can extend the existing instances to create your own configurat
 seo-description: You can extend the existing instances to create your own configurations
 uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
@@ -141,7 +141,7 @@ Available services are listed in the **Cloud Services** tab of the **Page Proper
 
 The tab also provides:
 
-* a link to the location where you can enable the service 
+* a link to the location where you can enable the service
 * choose a configuration (subnode of the service) from a path field
 
 #### Password Encryption {#password-encryption}
@@ -164,49 +164,49 @@ The property will then be automatically encrypted (using the `CryptoSupport` ser
 
 #### Additional Properties for Service Page jcr:content Nodes {#additional-properties-for-service-page-jcr-content-nodes}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Property</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td>componentReference</td> 
-   <td>Reference path to a component to be automatically included in the page.<br /> This is used for additional functionality and JS inclusions.<br /> This includes the component on the page where<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> is included (normally before the <code>body</code> tag).<br /> In case the of Analytics and Target we use this to include additional functionality, such as JavaScript calls to track visitor behavior.</td> 
-  </tr> 
-  <tr> 
-   <td>description</td> 
-   <td>Short description of the service.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>descriptionExtended</td> 
-   <td>Extended description of the service.</td> 
-  </tr> 
-  <tr> 
-   <td>ranking</td> 
-   <td>Service ranking for use in listings.</td> 
-  </tr> 
-  <tr> 
-   <td>selectableChildren</td> 
-   <td>Filter for displaying configurations in page properties dialog.</td> 
-  </tr> 
-  <tr> 
-   <td>serviceUrl</td> 
-   <td>URL to service website.</td> 
-  </tr> 
-  <tr> 
-   <td>serviceUrlLabel</td> 
-   <td>Label for service URL.</td> 
-  </tr> 
-  <tr> 
-   <td>thumbnailPath</td> 
-   <td>Path to thumbnail for service.</td> 
-  </tr> 
-  <tr> 
-   <td>visible</td> 
-   <td>Visibility in page properties dialog; visible by default (optional)</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td>componentReference</td>
+   <td>Reference path to a component to be automatically included in the page.<br /> This is used for additional functionality and JS inclusions.<br /> This includes the component on the page where<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> is included (normally before the <code>body</code> tag).<br /> In case the of Analytics and Target we use this to include additional functionality, such as JavaScript calls to track visitor behavior.</td>
+  </tr>
+  <tr>
+   <td>description</td>
+   <td>Short description of the service.<br /> </td>
+  </tr>
+  <tr>
+   <td>descriptionExtended</td>
+   <td>Extended description of the service.</td>
+  </tr>
+  <tr>
+   <td>ranking</td>
+   <td>Service ranking for use in listings.</td>
+  </tr>
+  <tr>
+   <td>selectableChildren</td>
+   <td>Filter for displaying configurations in page properties dialog.</td>
+  </tr>
+  <tr>
+   <td>serviceUrl</td>
+   <td>URL to service website.</td>
+  </tr>
+  <tr>
+   <td>serviceUrlLabel</td>
+   <td>Label for service URL.</td>
+  </tr>
+  <tr>
+   <td>thumbnailPath</td>
+   <td>Path to thumbnail for service.</td>
+  </tr>
+  <tr>
+   <td>visible</td>
+   <td>Visibility in page properties dialog; visible by default (optional)</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Use Cases {#use-cases}

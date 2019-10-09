@@ -5,7 +5,7 @@ description: Learn about various media handlers and how to use them in workflows
 seo-description: Learn about various media handlers and how to use them in workflows to perform tasks on assets.
 uuid: 4ef96bfc-d194-4aea-8d6c-ae91d04456aa
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 8cd78c84-71ba-4095-b882-90d0dc00289d
 ---
 
@@ -28,74 +28,74 @@ The following media handlers are available within AEM Assets and handle the most
 <!-- TBD: Apply correct formatting once table is moved to MD.
 -->
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Handler name</td> 
-   <td>Service Name (in the System Console)</td> 
-   <td>Supported MIME types</td> 
-  </tr> 
-  <tr> 
-   <td>TextHandler</td> 
-   <td><p>com.day.cq.dam.core.impl.handler.TextHandler</p> </td> 
-   <td>text/plain</td> 
-  </tr> 
-  <tr> 
-   <td>PdfHandler</td> 
-   <td><p>com.day.cq.dam.handler.standard.pdf.PdfHandler</p> </td> 
-   <td><p>application/pdf<br /> application/illustrator</p> </td> 
-  </tr> 
-  <tr> 
-   <td>JpegHandler</td> 
-   <td><p>com.day.cq.dam.core.impl.handler.JpegHandler</p> </td> 
-   <td>image/jpeg</td> 
-  </tr> 
-  <tr> 
-   <td>Mp3Handler</td> 
-   <td><p>com.day.cq.dam.handler.standard.mp3.Mp3Handler</p> </td> 
-   <td><p>audio/mpeg</p> </td> 
-  </tr> 
-  <tr> 
-   <td>ZipHandler</td> 
-   <td><p>com.day.cq.dam.handler.standard.zip.ZipHandler</p> </td> 
-   <td><p>application/java-archive</p> <p>application/zip</p> </td> 
-  </tr> 
-  <tr> 
-   <td>PictHandler</td> 
-   <td><p>com.day.cq.dam.handler.standard.pict.PictHandler</p> </td> 
-   <td><p>image/pict</p> </td> 
-  </tr> 
-  <tr> 
-   <td>StandardImageHandler</td> 
-   <td><p>com.day.cq.dam.core.impl.handler.StandardImageHandler</p> </td> 
-   <td><p>image/gif</p> <p>image/png</p> <p>application/photoshop</p> <p>image/jpeg</p> <p>image/tiff</p> <p>image/x-ms-bmp</p> <p>image/bmp</p> </td> 
-  </tr> 
-  <tr> 
-   <td>MSOfficeHandler</td> 
-   <td>com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler</td> 
-   <td>application/msword<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>MSPowerPointHandler</td> 
-   <td>com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler</td> 
-   <td>application/vnd.ms-powerpoint<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>OpenOfficeHandler</td> 
-   <td>com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler</td> 
-   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.presentation<br /> <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>EPubHandler</td> 
-   <td>com.day.cq.dam.handler.standard.epub.EPubHandler</td> 
-   <td>application/epub+zip</td> 
-  </tr> 
-  <tr> 
-   <td>GenericAssetHandler</td> 
-   <td><p>com.day.cq.dam.core.impl.handler.GenericAssetHandler</p> </td> 
-   <td>fallback in case no other handler was found to extract data from an asset</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Handler name</td>
+   <td>Service Name (in the System Console)</td>
+   <td>Supported MIME types</td>
+  </tr>
+  <tr>
+   <td>TextHandler</td>
+   <td><p>com.day.cq.dam.core.impl.handler.TextHandler</p> </td>
+   <td>text/plain</td>
+  </tr>
+  <tr>
+   <td>PdfHandler</td>
+   <td><p>com.day.cq.dam.handler.standard.pdf.PdfHandler</p> </td>
+   <td><p>application/pdf<br /> application/illustrator</p> </td>
+  </tr>
+  <tr>
+   <td>JpegHandler</td>
+   <td><p>com.day.cq.dam.core.impl.handler.JpegHandler</p> </td>
+   <td>image/jpeg</td>
+  </tr>
+  <tr>
+   <td>Mp3Handler</td>
+   <td><p>com.day.cq.dam.handler.standard.mp3.Mp3Handler</p> </td>
+   <td><p>audio/mpeg</p> </td>
+  </tr>
+  <tr>
+   <td>ZipHandler</td>
+   <td><p>com.day.cq.dam.handler.standard.zip.ZipHandler</p> </td>
+   <td><p>application/java-archive</p> <p>application/zip</p> </td>
+  </tr>
+  <tr>
+   <td>PictHandler</td>
+   <td><p>com.day.cq.dam.handler.standard.pict.PictHandler</p> </td>
+   <td><p>image/pict</p> </td>
+  </tr>
+  <tr>
+   <td>StandardImageHandler</td>
+   <td><p>com.day.cq.dam.core.impl.handler.StandardImageHandler</p> </td>
+   <td><p>image/gif</p> <p>image/png</p> <p>application/photoshop</p> <p>image/jpeg</p> <p>image/tiff</p> <p>image/x-ms-bmp</p> <p>image/bmp</p> </td>
+  </tr>
+  <tr>
+   <td>MSOfficeHandler</td>
+   <td>com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler</td>
+   <td>application/msword<br /> </td>
+  </tr>
+  <tr>
+   <td>MSPowerPointHandler</td>
+   <td>com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler</td>
+   <td>application/vnd.ms-powerpoint<br /> </td>
+  </tr>
+  <tr>
+   <td>OpenOfficeHandler</td>
+   <td>com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler</td>
+   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.presentation<br /> <br /> </td>
+  </tr>
+  <tr>
+   <td>EPubHandler</td>
+   <td>com.day.cq.dam.handler.standard.epub.EPubHandler</td>
+   <td>application/epub+zip</td>
+  </tr>
+  <tr>
+   <td>GenericAssetHandler</td>
+   <td><p>com.day.cq.dam.core.impl.handler.GenericAssetHandler</p> </td>
+   <td>fallback in case no other handler was found to extract data from an asset</td>
+  </tr>
+ </tbody>
 </table>
 
 All the handlers perform the following tasks:
@@ -156,7 +156,7 @@ The interface and classes include:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific mime types. Adding a new mime type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class: 
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class:
   * This class serves as basis for all other asset handler implementations and provides common used functionality plus common used functionality for subasset extraction.
   * The best way to start an implementation is to inherit from a provided abstract implementation that takes care of most things and provides reasonable default behaviour: the com.day.cq.dam.core.AbstractAssetHandler Class.
   * This class already provides an abstract service descriptor. So if you inherit from this class and use the maven-sling-plugin, make sure that you set the inherit flag to true.
@@ -217,27 +217,27 @@ After you perform the following procedure, when you upload a txt file into AEM, 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion> 
-    <!-- ====================================================================== --> 
-    <!-- P A R E N T P R O J E C T D E S C R I P T I O N --> 
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ====================================================================== -->
+    <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <parent>
      <groupId>com.day.cq.dam</groupId>
      <artifactId>dam</artifactId>
      <version>5.2.14</version>
      <relativePath>../parent</relativePath>
-    </parent> 
-    <!-- ====================================================================== --> 
-    <!-- P R O J E C T D E S C R I P T I O N --> 
+    </parent>
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <groupId>com.day.cq5.myhandler</groupId>
     <artifactId>myBundle</artifactId>
     <name>My CQ5 bundle</name>
     <version>0.0.1-SNAPSHOT</version>
     <description>This is my CQ5 bundle</description>
-    <packaging>bundle</packaging> 
-    <!-- ====================================================================== --> 
-    <!-- B U I L D D E F I N I T I O N --> 
+    <packaging>bundle</packaging>
+    <!-- ====================================================================== -->
+    <!-- B U I L D D E F I N I T I O N -->
     <!-- ====================================================================== -->
     <build>
      <plugins>
@@ -264,9 +264,9 @@ After you perform the following procedure, when you upload a txt file into AEM, 
        </configuration>
       </plugin>
      </plugins>
-    </build> 
-    <!-- ====================================================================== --> 
-    <!-- D E P E N D E N C I E S --> 
+    </build>
+    <!-- ====================================================================== -->
+    <!-- D E P E N D E N C I E S -->
     <!-- ====================================================================== -->
     <dependencies>
      <dependency>
@@ -341,142 +341,142 @@ After you perform the following procedure, when you upload a txt file into AEM, 
     1. In `MyHandler.java` replace the existing code with the following and then save the changes:
 
    ```java
-   package com.day.cq5.myhandler; 
-   import java.awt.Color; 
-   import java.awt.Rectangle; 
-   import java.awt.image.BufferedImage; 
-   import java.io.IOException; 
-   import java.io.InputStream; 
-   import java.io.InputStreamReader; 
-   import javax.jcr.Node; 
-   import javax.jcr.RepositoryException; 
-   import javax.jcr.Session; 
-   import org.apache.commons.io.IOUtils; 
-   import org.slf4j.Logger; 
-   import org.slf4j.LoggerFactory; 
-   import com.day.cq.dam.api.metadata.ExtractedMetadata; 
-   import com.day.cq.dam.core.AbstractAssetHandler; 
-   import com.day.image.Font; 
-   import com.day.image.Layer; 
-   import com.day.cq.wcm.foundation.ImageHelper; 
-   
-   /** 
-    * The <code>MyHandler</code> can extract text files 
-    * @scr.component inherit="true" immediate="true" metatype="false" 
-    * @scr.service 
-    * 
-    **/ 
-   
-   public class MyHandler extends AbstractAssetHandler { 
-    /** * Logger instance for this class. */ 
-    private static final Logger log = LoggerFactory.getLogger(MyHandler.class); 
-    /** * Music icon margin */ 
-    private static final int MARGIN = 10; 
-    /** * @see com.day.cq.dam.api.handler.AssetHandler#getMimeTypes() */ 
+   package com.day.cq5.myhandler;
+   import java.awt.Color;
+   import java.awt.Rectangle;
+   import java.awt.image.BufferedImage;
+   import java.io.IOException;
+   import java.io.InputStream;
+   import java.io.InputStreamReader;
+   import javax.jcr.Node;
+   import javax.jcr.RepositoryException;
+   import javax.jcr.Session;
+   import org.apache.commons.io.IOUtils;
+   import org.slf4j.Logger;
+   import org.slf4j.LoggerFactory;
+   import com.day.cq.dam.api.metadata.ExtractedMetadata;
+   import com.day.cq.dam.core.AbstractAssetHandler;
+   import com.day.image.Font;
+   import com.day.image.Layer;
+   import com.day.cq.wcm.foundation.ImageHelper;
+
+   /**
+    * The <code>MyHandler</code> can extract text files
+    * @scr.component inherit="true" immediate="true" metatype="false"
+    * @scr.service
+    *
+    **/
+
+   public class MyHandler extends AbstractAssetHandler {
+    /** * Logger instance for this class. */
+    private static final Logger log = LoggerFactory.getLogger(MyHandler.class);
+    /** * Music icon margin */
+    private static final int MARGIN = 10;
+    /** * @see com.day.cq.dam.api.handler.AssetHandler#getMimeTypes() */
     public String[] getMimeTypes() {
-     return new String[] {"text/plain"}; 
+     return new String[] {"text/plain"};
     }
-   
-    public ExtractedMetadata extractMetadata(Node asset) { 
-     ExtractedMetadata extractedMetadata = new ExtractedMetadata(); 
-     InputStream data = getInputStream(asset); 
-     try { 
-      // read text data 
-      InputStreamReader reader = new InputStreamReader(data); 
-      char[] buffer = new char[4096]; 
-      String text = ""; 
-      while (reader.read(buffer) != -1) { 
-       text += new String(buffer); 
-      } 
-      reader.close(); 
-      long wordCount = this.wordCount(text); 
-      extractedMetadata.setProperty("text", text); 
-      extractedMetadata.setMetaDataProperty("Word Count",wordCount); 
-      setMimetype(extractedMetadata, asset); 
-     } catch (Throwable t) { 
-      log.error("handling error: " + t.toString(), t); 
-     } finally { 
-      IOUtils.closeQuietly(data); 
-     } 
-     return extractedMetadata; } 
-    // ----------------------< helpers >---------------------------------------- 
-    protected BufferedImage getThumbnailImage(Node node) { 
-     ExtractedMetadata metadata = extractMetadata(node); 
-     final String text = (String) metadata.getProperty("text"); 
-     // create text layer 
-     final Layer layer = new Layer(500, 600, Color.WHITE); 
-     layer.setPaint(Color.black); 
-     Font font = new Font("Arial", 12); 
-     String displayText = this.getDisplayText(text, 600, 12); 
+
+    public ExtractedMetadata extractMetadata(Node asset) {
+     ExtractedMetadata extractedMetadata = new ExtractedMetadata();
+     InputStream data = getInputStream(asset);
+     try {
+      // read text data
+      InputStreamReader reader = new InputStreamReader(data);
+      char[] buffer = new char[4096];
+      String text = "";
+      while (reader.read(buffer) != -1) {
+       text += new String(buffer);
+      }
+      reader.close();
+      long wordCount = this.wordCount(text);
+      extractedMetadata.setProperty("text", text);
+      extractedMetadata.setMetaDataProperty("Word Count",wordCount);
+      setMimetype(extractedMetadata, asset);
+     } catch (Throwable t) {
+      log.error("handling error: " + t.toString(), t);
+     } finally {
+      IOUtils.closeQuietly(data);
+     }
+     return extractedMetadata; }
+    // ----------------------< helpers >----------------------------------------
+    protected BufferedImage getThumbnailImage(Node node) {
+     ExtractedMetadata metadata = extractMetadata(node);
+     final String text = (String) metadata.getProperty("text");
+     // create text layer
+     final Layer layer = new Layer(500, 600, Color.WHITE);
+     layer.setPaint(Color.black);
+     Font font = new Font("Arial", 12);
+     String displayText = this.getDisplayText(text, 600, 12);
      if(displayText!=null && displayText.length() > 0) {
-      // commons-gfx Font class would throw IllegalArgumentException on empty or null text 
-      layer.drawText(10, 10, 500, 600, displayText, font, Font.ALIGN_LEFT, 0, 0); 
-     } 
-     // create watermark and merge with text layer 
-     Layer watermarkLayer; 
-     try { 
-      final Session session = node.getSession(); 
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png"); 
-      watermarkLayer.setX(MARGIN); 
-      watermarkLayer.setY(MARGIN); 
-      layer.merge(watermarkLayer); 
-     } catch (RepositoryException e) { 
-      // TODO Auto-generated catch block 
-      e.printStackTrace(); 
-     } catch (IOException e) { 
-      // TODO Auto-generated catch block 
-      e.printStackTrace(); } 
-     layer.crop(new Rectangle(510, 600)); 
-     return layer.getImage(); } 
-    // ---------------< private >----------------------------------------------- 
-    /** 
+      // commons-gfx Font class would throw IllegalArgumentException on empty or null text
+      layer.drawText(10, 10, 500, 600, displayText, font, Font.ALIGN_LEFT, 0, 0);
+     }
+     // create watermark and merge with text layer
+     Layer watermarkLayer;
+     try {
+      final Session session = node.getSession();
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer.setX(MARGIN);
+      watermarkLayer.setY(MARGIN);
+      layer.merge(watermarkLayer);
+     } catch (RepositoryException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+     } catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace(); }
+     layer.crop(new Rectangle(510, 600));
+     return layer.getImage(); }
+    // ---------------< private >-----------------------------------------------
+    /**
      * This method cuts lines if the text file is too long..
      * * @param text
      * * text to check
      * * @param height
      * * text box height (px)
      * * @param fontheight
-     * * font height (px) 
-     * * @return the text which will fit into the box 
-     */ 
-    private String getDisplayText(String text, int height, int fontheight) { 
-     String trimmedText = text.trim(); 
-     int numOfLines = height / fontheight; 
-     String lines[] = trimmedText.split("\n"); 
-     if (lines.length <= numOfLines) { 
-      return trimmedText; 
-     } else { 
-      String cuttetText = ""; 
-      for (int i = 0; i < numOfLines; i++) { 
-       cuttetText += lines[i] + "\n"; 
-      } 
-      return cuttetText; 
-     } 
-    } 
+     * * font height (px)
+     * * @return the text which will fit into the box
+     */
+    private String getDisplayText(String text, int height, int fontheight) {
+     String trimmedText = text.trim();
+     int numOfLines = height / fontheight;
+     String lines[] = trimmedText.split("\n");
+     if (lines.length <= numOfLines) {
+      return trimmedText;
+     } else {
+      String cuttetText = "";
+      for (int i = 0; i < numOfLines; i++) {
+       cuttetText += lines[i] + "\n";
+      }
+      return cuttetText;
+     }
+    }
     /**
-     * * This method counts the number of words in a string 
+     * * This method counts the number of words in a string
      * * @param text the String whose words would like to be counted
      * * @return the number of words in the string
-     * */ 
-    private long wordCount(String text) { 
-     // We need to keep track of the last character, if we have two white spaces in a row we dont want to double count 
-     // The starting of the document is always a whitespace 
-     boolean prevWhiteSpace = true; 
-     boolean currentWhiteSpace = true; 
-     char c; long numwords = 0; 
-     int j = text.length(); 
-     int i = 0; 
-     while (i < j) { 
-      c = text.charAt(i++); 
-      if (c == 0) { break; } 
-      currentWhiteSpace = Character.isWhitespace(c); 
-      if (currentWhiteSpace && !prevWhiteSpace) { numwords++; } 
-      prevWhiteSpace = currentWhiteSpace; 
-     } 
-     // If we do not end with a white space then we need to add one extra word 
-     if (!currentWhiteSpace) { numwords++; } 
-     return numwords; 
-    } 
+     * */
+    private long wordCount(String text) {
+     // We need to keep track of the last character, if we have two white spaces in a row we dont want to double count
+     // The starting of the document is always a whitespace
+     boolean prevWhiteSpace = true;
+     boolean currentWhiteSpace = true;
+     char c; long numwords = 0;
+     int j = text.length();
+     int i = 0;
+     while (i < j) {
+      c = text.charAt(i++);
+      if (c == 0) { break; }
+      currentWhiteSpace = Character.isWhitespace(c);
+      if (currentWhiteSpace && !prevWhiteSpace) { numwords++; }
+      prevWhiteSpace = currentWhiteSpace;
+     }
+     // If we do not end with a white space then we need to add one extra word
+     if (!currentWhiteSpace) { numwords++; }
+     return numwords;
+    }
    }
    ```
 
@@ -507,11 +507,11 @@ The following conversions can be automatically run and stored within AEM Assets:
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
 * Filters the file according to specific mime-types, if specified.
-* Creates a temporary directory on the disk hosting the AEM server.  
-* Streams the original file to the temporary directory.  
-* Executes the command defined by the arguments of the step. The command is being executed within the temporary directory with the permissions of the user running AEM.  
+* Creates a temporary directory on the disk hosting the AEM server.
+* Streams the original file to the temporary directory.
+* Executes the command defined by the arguments of the step. The command is being executed within the temporary directory with the permissions of the user running AEM.
 * Streams the result back into the rendition folder of the AEM server.
-* Deletes the temporary directory.  
+* Deletes the temporary directory.
 * Creates thumbnails based on those renditions, if specified. The number and the dimensions of the thumbnails are defined by the arguments of the step.
 
 ### An Example Using ImageMagick {#an-example-using-imagemagick}
@@ -540,7 +540,7 @@ Then, add the command line process step to the **[!UICONTROL DAM Update Asset]**
 
 1. Go to the **[!UICONTROL Workflow]** console.
 1. In the **[!UICONTROL Models]** tab, edit the **[!UICONTROL DAM Update Asset]** model.
-1. Change the settings of the **[!UICONTROL Web enabled rendition]** step as follows:  
+1. Change the settings of the **[!UICONTROL Web enabled rendition]** step as follows:
 
    **Arguments**:
 
@@ -560,25 +560,25 @@ This section describes how to set the **Process Arguments** of the **CommandLine
 
 The values of the **Process Arguments** must be separated by a comma and must not start with a whitespace.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td> Argument-Format</td> 
-   <td>Description</td> 
-  </tr> 
-  <tr> 
-   <td> mime:&lt;mime-type&gt;</td> 
-   <td><p>Optional argument. The process is applied if the asset has the same mime-type as the one of the argument.</p> <p>Several mime-types can be defined.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> tn:&lt;width&gt;:&lt;height&gt;</td> 
-   <td><p>Optional argument. The process creates a thumbnail with the dimensions defined in the argument.</p> <p>Several thumbnails can be defined.<br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td> cmd: &lt;command&gt;</td> 
-   <td><p>Defines the command that will be executed. The syntax depends on the command line tool.</p> <p>Only one command can be defined.</p> <p>The following variables can be used to create the command:<br/></p> <p><code>${filename}</code>: name of the input file, e.g. original.jpg<br/><code>${file}</code>: full path name of the input file, e.g. /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: directory of the input file, e.g. /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: name of the input file without its extension, e.g. original<br/> <code>${extension}</code>: extension of the input file, e.g. jpg<br/></p></td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td> Argument-Format</td>
+   <td>Description</td>
+  </tr>
+  <tr>
+   <td> mime:&lt;mime-type&gt;</td>
+   <td><p>Optional argument. The process is applied if the asset has the same mime-type as the one of the argument.</p> <p>Several mime-types can be defined.</p> </td>
+  </tr>
+  <tr>
+   <td> tn:&lt;width&gt;:&lt;height&gt;</td>
+   <td><p>Optional argument. The process creates a thumbnail with the dimensions defined in the argument.</p> <p>Several thumbnails can be defined.<br /> </p> </td>
+  </tr>
+  <tr>
+   <td> cmd: &lt;command&gt;</td>
+   <td><p>Defines the command that will be executed. The syntax depends on the command line tool.</p> <p>Only one command can be defined.</p> <p>The following variables can be used to create the command:<br/></p> <p><code>${filename}</code>: name of the input file, e.g. original.jpg<br/><code>${file}</code>: full path name of the input file, e.g. /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: directory of the input file, e.g. /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: name of the input file without its extension, e.g. original<br/> <code>${extension}</code>: extension of the input file, e.g. jpg<br/></p></td>
+  </tr>
+ </tbody>
 </table>
 
 For example, if ImageMagick is installed on the disk hosting the AEM server and if you create a process step using **CommandLineProcess** as Implementation and the following values as **Process Arguments**:

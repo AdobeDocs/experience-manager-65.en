@@ -5,7 +5,7 @@ description: The integration framework includes an integration layer with an API
 seo-description: The integration framework includes an integration layer with an API
 uuid: 39a13c2f-4478-4030-8fe4-03f5b271d04f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016

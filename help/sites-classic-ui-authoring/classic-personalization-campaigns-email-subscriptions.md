@@ -5,7 +5,7 @@ description: Users can be asked to subscribe to Email Service Provider's mailing
 seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
 uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
@@ -15,7 +15,7 @@ discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 
 >[!NOTE]
 >
->Adobe does not plan to further enhance this capability (Managing Leads and Lists).  
+>Adobe does not plan to further enhance this capability (Managing Leads and Lists).
 >The recommendation is to leverage [Adobe Campaign and its AEM integration](/help/sites-administering/campaign.md).
 
 Users can be asked to subscribe to **Email Service Provider's** mailing lists with the help of the **Form** component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
@@ -25,9 +25,9 @@ Users can be asked to subscribe to **Email Service Provider's** mailing lists wi
 To configure an AEM page:
 
 1. Navigate to the **Websites** tab.
-1. Select the page that needs to be configured for the service. Right-click the page and select **Properties**.  
+1. Select the page that needs to be configured for the service. Right-click the page and select **Properties**.
 
-1. Select **Cloud Services** then **Add Service**. Select a configuration from the list of available configurations. 
+1. Select **Cloud Services** then **Add Service**. Select a configuration from the list of available configurations.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -38,7 +38,7 @@ To configure an AEM page:
 To create a sign-up form and configure it for subscriptions to Email Service Provider's mailing lists:
 
 1. Open the AEM page that the user will visit.
-1. Apply the Email Service Provider's configuration to the page.  
+1. Apply the Email Service Provider's configuration to the page.
 
 1. Add a **Form** component to the page by dragging the component from the sidekick. If the component is not available, switch to design mode and enable **Form** group.
 1. Click **Edit** in the **Start of Form** bar and navigate to the **Advanced** tab.
@@ -90,12 +90,12 @@ To unsubscribe users from lists:
 To configure an auto-responder email for a subscriber:
 
 1. Open the page properties of the AEM page that have the sign-up form to configure auto responder for a lead.
-1. Apply the ExactTarget configuration to the page.  
+1. Apply the ExactTarget configuration to the page.
 
 1. Add a **Form** component to the page by dragging the component from the sidekick. If the component is not available, switch to design mode and enable the **Form** group.
 1. Click **Edit** in the **Start of Form** bar and navigate to the **Advanced** tab.
 1. In the **Form** drop-down menu, select **E-mail Service: Send auto responder email.**
-1. **Select an email** (this is the mail that is sent as an auto-responder email).  
+1. **Select an email** (this is the mail that is sent as an auto-responder email).
 
 1. **Select Classification** (this classification is used to send the email).
 1. Select the **Thank you** page (the page where users are directed to once they submit the form).

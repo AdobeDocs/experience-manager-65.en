@@ -5,7 +5,7 @@ description: Lear about Audit Log Maintenance in AEM.
 seo-description: Lear about Audit Log Maintenance in AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
@@ -33,7 +33,7 @@ Each can be configured by creating rules in the AEM Web Console. After they have
 
 Follow these steps in order to configure Audit Log Purging:
 
-1. Go to the Web Console Admin by pointing your browser to `http://localhost:4502/system/console/configMgr/`  
+1. Go to the Web Console Admin by pointing your browser to `http://localhost:4502/system/console/configMgr/`
 
 1. Search for an item called **Pages audit Log Purge rule** and click it.
 
@@ -42,7 +42,7 @@ Follow these steps in order to configure Audit Log Purging:
 1. Next, configure the purge scheduler according to your requirements. The available options are:
 
     * **Rule name:** the name of the audit policy rule;
-    * **Content path:** the path of the content the rule will apply to; 
+    * **Content path:** the path of the content the rule will apply to;
     * **Minimum age:** the time in days the audit logs need to be kept;
     * **Audit log type:** the type of audit log that should be purged.
 
@@ -51,9 +51,9 @@ Follow these steps in order to configure Audit Log Purging:
    >The content path only applies to children of the `/var/audit/com.day.cq.wcm.core.page` node in the repository.
 
 1. Save the rule.
-1. The rule you just created needs to be exposed in the Operations Dashboard in order for it to be executed. In order to do this, go **Tools - Operations - Maintenance** from the AEM Welcome screen.  
+1. The rule you just created needs to be exposed in the Operations Dashboard in order for it to be executed. In order to do this, go **Tools - Operations - Maintenance** from the AEM Welcome screen.
 
-1. Press the **Weekly Maintenance Window** card.  
+1. Press the **Weekly Maintenance Window** card.
 
 1. You will find the maintenance task already present under the **AuditLog Maintenance Task** card.
 
@@ -89,7 +89,7 @@ In AEM 6.3, if the scheduled maintenance window closes before the Audit Log Purg
 1. In the next window, configure your rule accordingly. The options are:
 
     * **Rule name:** the name of the audit policy rule
-    * **Content path:** the path of the content the rule will apply to 
+    * **Content path:** the path of the content the rule will apply to
     * **Minimum age:** the time in days the audit logs need to be kept
     * **Audit log Replication event types:** the types of Replication audit events that should be purged
 

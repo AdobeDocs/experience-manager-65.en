@@ -5,7 +5,7 @@ description: Explore the GQL full-text search feature in AEM Assets. Use it to s
 seo-description: Use the GQL full-text search feature to search for assets based on specific metadata, such as title, description, and author name.
 uuid: 05ed9ca9-f1a4-4f3c-807f-c7062c349026
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: authoring
 discoiquuid: d3b7133c-4a58-4c9f-a5fe-162ce4ff016b
@@ -51,99 +51,99 @@ The GQL full-text search feature lets you search for assets based on the followi
 >
 >GQL full-text search works for full-text predicates only.
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <td>PROPERTY </td> 
-   <td>SEARCH FORMAT (FACET VALUE)</td> 
+   <td>PROPERTY </td>
+   <td>SEARCH FORMAT (FACET VALUE)</td>
   </tr>
   <tr>
-   <td>Title </td> 
-   <td>title:John</td> 
+   <td>Title </td>
+   <td>title:John</td>
   </tr>
   <tr>
-   <td>Creator </td> 
-   <td>creator:John</td> 
+   <td>Creator </td>
+   <td>creator:John</td>
   </tr>
   <tr>
-   <td>Contributor </td> 
-   <td>contributor:John</td> 
+   <td>Contributor </td>
+   <td>contributor:John</td>
   </tr>
   <tr>
-   <td>Location </td> 
-   <td>location:India</td> 
+   <td>Location </td>
+   <td>location:India</td>
   </tr>
   <tr>
-   <td>Description </td> 
-   <td>description:"Sample Image"</td> 
+   <td>Description </td>
+   <td>description:"Sample Image"</td>
   </tr>
   <tr>
-   <td>Creator tool </td> 
-   <td>creatortool:"Adobe Photoshop 7.0"</td> 
+   <td>Creator tool </td>
+   <td>creatortool:"Adobe Photoshop 7.0"</td>
   </tr>
   <tr>
-   <td>Copyright Owner </td> 
-   <td>copyrightowner:"Adobe Systems"</td> 
+   <td>Copyright Owner </td>
+   <td>copyrightowner:"Adobe Systems"</td>
   </tr>
   <tr>
-   <td>Contributor </td> 
-   <td>contributor:John</td> 
+   <td>Contributor </td>
+   <td>contributor:John</td>
   </tr>
   <tr>
-   <td>Usage Terms </td> 
-   <td>usageterms:"CopyRights Reserved"</td> 
+   <td>Usage Terms </td>
+   <td>usageterms:"CopyRights Reserved"</td>
   </tr>
   <tr>
-   <td>Created</td> 
-   <td><p>created:YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30..YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30</p> </td> 
+   <td>Created</td>
+   <td><p>created:YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30..YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30</p> </td>
   </tr>
   <tr>
-   <td>Expires Date</td> 
-   <td><p>expires:YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30..YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30</p> </td> 
+   <td>Expires Date</td>
+   <td><p>expires:YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30..YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30</p> </td>
   </tr>
   <tr>
-   <td>On time</td> 
-   <td><p>ontime:YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30..YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30</p> </td> 
+   <td>On time</td>
+   <td><p>ontime:YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30..YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30</p> </td>
   </tr>
   <tr>
-   <td>Off time</td> 
-   <td><p>offtime:YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30..YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30</p> </td> 
+   <td>Off time</td>
+   <td><p>offtime:YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30..YYYY-MM-DDTHH:</p> <p>MM:SS.000+05:30</p> </td>
   </tr>
   <tr>
-   <td>Range of time(expires dateontime,offtime)</td> 
-   <td>facet field : lowerbound..upperbound</td> 
+   <td>Range of time(expires dateontime,offtime)</td>
+   <td>facet field : lowerbound..upperbound</td>
   </tr>
   <tr>
-   <td>Path</td> 
-   <td>/content/dam/&lt;folder name&gt;</td> 
+   <td>Path</td>
+   <td>/content/dam/&lt;folder name&gt;</td>
   </tr>
   <tr>
-   <td>PDF Title</td> 
-   <td>pdftitle:"Adobe Document"</td> 
+   <td>PDF Title</td>
+   <td>pdftitle:"Adobe Document"</td>
   </tr>
   <tr>
-   <td>Subject </td> 
-   <td>subject:"Training"</td> 
+   <td>Subject </td>
+   <td>subject:"Training"</td>
   </tr>
   <tr>
-   <td>Tags</td> 
-   <td>tags:"Location And Travel"</td> 
+   <td>Tags</td>
+   <td>tags:"Location And Travel"</td>
   </tr>
   <tr>
-   <td>Type</td> 
-   <td>type:"image\png"</td> 
+   <td>Type</td>
+   <td>type:"image\png"</td>
   </tr>
   <tr>
-   <td>Width of image</td> 
-   <td>width:lowerbound..upperbound</td> 
+   <td>Width of image</td>
+   <td>width:lowerbound..upperbound</td>
   </tr>
   <tr>
-   <td>Height of image</td> 
-   <td>height:lowerbound..upperbound</td> 
+   <td>Height of image</td>
+   <td>height:lowerbound..upperbound</td>
   </tr>
   <tr>
-   <td>Person</td> 
-   <td>person:John</td> 
+   <td>Person</td>
+   <td>person:John</td>
   </tr>
  </tbody>
 </table>
@@ -200,7 +200,7 @@ You can improve the relevance of keywords for particular assets to help boost se
 
    ![elevate_for_search](assets/elevate_for_search.png)
 
-1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click/tap **[!UICONTROL Add]**. In necessary, specify multiple keywords in the same way. 
+1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click/tap **[!UICONTROL Add]**. In necessary, specify multiple keywords in the same way.
 
    ![add_search_word](assets/add_search_word.png)
 

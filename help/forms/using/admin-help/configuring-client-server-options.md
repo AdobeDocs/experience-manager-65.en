@@ -7,7 +7,7 @@ uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 ---
 
@@ -82,7 +82,7 @@ The visible user and group list is visible to the policy set coordinator and is 
 1. In administration console, click Services &gt; Document Management &gt; Policies and then click the Policy Sets tab.
 1. Select Global Policy Set and then click the Visible Users And Groups tab.
 1. Click Add Domain(s) and add existing domains as required.
-1. Navigate to Services &gt; document security &gt; Configuration &gt; My Policies and click the Visible Users And Groups tab. 
+1. Navigate to Services &gt; document security &gt; Configuration &gt; My Policies and click the Visible Users And Groups tab.
 1. Click Add Domain(s) and add existing domains as required.
 
 ## Add the extended authentication provider {#add-the-extended-authentication-provider}
@@ -93,7 +93,7 @@ AEM forms provides a sample configuration that you can customize for your enviro
 >
 >Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.
 
-1. Obtain the sample WAR file deploy it. See the installation guide appropriate for your application server. 
+1. Obtain the sample WAR file deploy it. See the installation guide appropriate for your application server.
 1. Ensure that the forms server has a fully qualified name instead of IP addresses as the base URL and that it is a HTTPS URL. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
 1. Enable Extended Authentication from the Server Configuration page. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
 1. Add the required SSO redirect URLs in the User Management configuration file. See [Add SSO redirect URLs for extended authentication](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
@@ -107,13 +107,13 @@ With extended authentication enabled, users opening a policy protected document 
 >Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.
 
 1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; Import And Export Configuration Files.
-1. Click Export and save the configuration file to your disk. 
+1. Click Export and save the configuration file to your disk.
 1. Open the file in an editor, and locate the AllowedUrls node.
 1. In the `AllowedUrls` node, add the following lines: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
    ```as3
-   <entry key="sso-l" value="/ssoexample/login.jsp"/> 
-   <entry key="sso-s" value="/ssoexample"/> 
+   <entry key="sso-l" value="/ssoexample/login.jsp"/>
+   <entry key="sso-s" value="/ssoexample"/>
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
    ```
 
@@ -134,7 +134,7 @@ Recipients of policy-protected documents can take the documents offline for the 
 You can configure a default offline lease period. The lease period can be changed from the default when anyone creates or edits a policy.
 
 1. On the document security page, click Configuration &gt; Server Configuration.
-1. In the Default Offline Lease Period box, type the number of days for the offline lease period. 
+1. In the Default Offline Lease Period box, type the number of days for the offline lease period.
 1. Click OK.
 
 ### Manage key rollovers {#manage-key-rollovers}
@@ -173,7 +173,7 @@ The principal keys must be rolled over twice before previously existing keys on 
 
 1. On the document security page, click Configuration &gt; Key Management.
 1. Click Rollover Keys Now and then click OK.
-1. Wait approximately 10 minutes. The following log message appears in the server log: `Done RightsManagement key rollover for`*N* `principals`. Where *N* is the number of users in the document security system. 
+1. Wait approximately 10 minutes. The following log message appears in the server log: `Done RightsManagement key rollover for`*N* `principals`. Where *N* is the number of users in the document security system.
 1. Click Rollover Keys Now and then click OK.
 1. Wait approximately 10 minutes.
 
@@ -233,9 +233,9 @@ You can enable and disable a privacy notification message. When you enable priva
 
 If you are using a document security-enabled application that supports auditing of additional events, such as events specific to a certain file type, an Adobe partner can provide you with custom audit events that you can import into document security. Use this feature only if you have been provided with custom event types by an Adobe partner.
 
-1. In administration console, click Services &gt; Document Security &gt; Configuration &gt; Event Management. 
+1. In administration console, click Services &gt; Document Security &gt; Configuration &gt; Event Management.
 1. Click Browse to go to the XML file to import and click Import.
-1. Importing overwrites existing custom audit event types on the server if identical event code and namespace combinations are found. 
+1. Importing overwrites existing custom audit event types on the server if identical event code and namespace combinations are found.
 1. Click OK.
 
 ### Delete a custom audit event type {#delete-a-custom-audit-event-type}
@@ -443,17 +443,17 @@ Keep in mind the following when you configure watermarks:
 * You cannot use a password-protected PDF document as the watermark element. However, if the watermark that you create contains other elements that are not password-protected, they will be applied as part of the watermark.
 * You can change the maximum PDF file size that you want to use as watermark element. However, large PDF documents used as watermarks degrade performance during offline synchronization of documents applied with such watermarks. See [Change the watermark configuration parameters](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
 * Only the first page of the selected PDF is used as the watermark. Ensure that the information that you want to appear as watermark is available on the first page itself.
-* Even though you can specify the scaling of the PDF document, consider the page size and layout of the PDF if you plan to use it as a watermark in the header, footer, or margins. 
+* Even though you can specify the scaling of the PDF document, consider the page size and layout of the PDF if you plan to use it as a watermark in the header, footer, or margins.
 * When specifying the font name, enter the name correctly. AEM forms substitutes the font that you specified if it is not present in the client machine where the document is opened.
 * If you selected text as the watermark content, specifying the scaling option as Fit To Page does not work for pages that have dissimilar width.
-* When you specify the positioning of the watermark elements, ensure that no more than one element has the same positioning. If two watermark elements have the same positioning such as center, they appear overlapped on the document, and in the order they were added to the watermark. 
+* When you specify the positioning of the watermark elements, ensure that no more than one element has the same positioning. If two watermark elements have the same positioning such as center, they appear overlapped on the document, and in the order they were added to the watermark.
 * When specifying the font size and type, ensure that the length of text is completely visible within the page. Text contents roll over into new lines, so the watermark content that you intended to be present in the margins might overlap into the content areas on pages. However, if the document is opened in Acrobat 9, text beyond the single line is truncated.
 
 ### Limitations of dynamic watermarks {#limitations-of-dynamic-watermarks}
 
 Some client applications may not support Dynamic watermarks. See the appropriate Acrobat Reader DC extensions Help. In addition, keep in mind the following about the versions of Acrobat that supports dynamic watermarks:
 
-* You cannot use a password-protected PDF document as the watermark element. 
+* You cannot use a password-protected PDF document as the watermark element.
 * Acrobat and Adobe Reader versions earlier than 10 do not support the following watermark features:
 
     * PDF watermarks
@@ -495,7 +495,7 @@ You can create dynamic watermark templates. These templates remain available as 
    ***note**: Currently, the watermark appears in the foreground irrespective of this setting. *
 
 1. To control where the watermark is displayed on the document, configure the Vertical Alignment and Horizontal Alignment options.
-1. Either select Fit to Page or select % and type a percentage in the box. The value must be a whole number, not a fraction. To configure the watermark size, you can use a value that is the percentage of the page or set the watermark to fit the size of the page. 
+1. Either select Fit to Page or select % and type a percentage in the box. The value must be a whole number, not a fraction. To configure the watermark size, you can use a value that is the percentage of the page or set the watermark to fit the size of the page.
 1. In the Rotation box, type the degrees by which to rotate the watermark. The range is from -180 to 180. Use a negative value to rotate the watermark counterclockwise. The value must be a whole number, not a fraction.
 1. In the Opacity box, type a percentage. Use a whole number, not a fraction.
 1. Under Advanced Options, set the following:
@@ -522,8 +522,8 @@ You can create dynamic watermark templates. These templates remain available as 
 
 When you delete a dynamic watermark, it is no longer available to add to a new policy. However, the watermark remains on existing policies that currently use it, and documents that the policy currently protects continue to show the dynamic watermark until you or a user edits the policy that contains the deleted watermark. After the policy is edited, the watermark is no longer applied. A message appears, indicating that the existing watermark is deleted on the policy and the user can select another one to replace it.
 
-1. In administration console, click Services &gt; Document Security &gt; Configuration &gt; Watermarks. 
-1. Select the check box beside the appropriate watermark and click Delete. 
+1. In administration console, click Services &gt; Document Security &gt; Configuration &gt; Watermarks.
+1. Select the check box beside the appropriate watermark and click Delete.
 1. Click OK.
 
 ## Configuring invited user registration {#configuring-invited-user-registration}
@@ -551,8 +551,8 @@ If you enable built-in registration, you specify your SMTP server, registration 
 
 By default, the invited user registration process is disabled. You can enable and disable invited user registration for document security, as required.
 
-1. In administration console, click Services &gt; document security &gt; Configuration &gt; Invited User Registration. 
-1. Select Enable Invited User Registration. 
+1. In administration console, click Services &gt; document security &gt; Configuration &gt; Invited User Registration.
+1. Select Enable Invited User Registration.
 1. (Optional) Update the invited user registration settings as required:
 
     * [Exclude or include an external user or group](configuring-client-server-options.md#exclude-or-include-an-external-user-or-group)
@@ -607,9 +607,9 @@ If required by your SMTP host, type the required information in the SMTP Server 
 
    >[!NOTE]
    >
-   >If you are using Microsoft Office 365 as the SMTP server for sending the invitations for user registration, the use the following settings: 
+   >If you are using Microsoft Office 365 as the SMTP server for sending the invitations for user registration, the use the following settings:
    >
-   >**SMTP Host:** smtp.office365.com 
+   >**SMTP Host:** smtp.office365.com
    >**Port:** 587
 
 1. Next, you need to update the config.xml. See [Configuration to enable SMTP for Transport Layer Security (TLS)](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls)
@@ -687,7 +687,7 @@ As an administrator, specify which users and groups can create custom policies. 
 1. In the Type list, select Group or User to narrow your search.
 1. In the In list, select the domain to search. If you do not know the user or group’s domain, select All Domains.
 1. In the Display list, specify the number of search results to display per page and then click Find.
-1. To add My Policies users and groups, select the check box for each user and group to add. 
+1. To add My Policies users and groups, select the check box for each user and group to add.
 1. Click Add, and then click OK.
 
 Your selected users and groups now have permission to create custom policies.
@@ -740,9 +740,9 @@ You can make the following changes using the configuration file:
 1. Click Browse to go to the configuration file and then click Import. You cannot type the path directly in the File Name box.
 1. Click OK.
 
-1. 
-1. 
-1. 
+1.
+1.
+1.
 1.
 
 ### Specify a timeout period for offline synchronization {#specify-a-timeout-period-for-offline-synchronization}
@@ -754,7 +754,7 @@ By default, the synchronization occurs automatically every four hours and as-nee
 In the document security configuration file, you can specify the default frequency of the automatic background synchronization. This setting acts as the default timeout period client applications, unless the client explicitly sets its own timeout value.
 
 1. Export the document security configuration file. (See [Manually editing the document security configuration file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open the configuration file in an editor and locate the `PolicyServer` node. Under that node, locate the `ServerSettings` node. 
+1. Open the configuration file in an editor and locate the `PolicyServer` node. Under that node, locate the `ServerSettings` node.
 1. In the `ServerSettings` node, add this following entry and then save the file:
 
    `<entry key="BackgroundSyncFrequency" value="`*time* `"/>`
@@ -784,9 +784,9 @@ Client applications use the Client API from the document security C++ Client SDK
 
 Client applications or plug-ins supply product information in their implementation of a callback function. The application provides the following information:
 
-* Integrator name 
-* Integrator version 
-* Application family 
+* Integrator name
+* Integrator version
+* Application family
 * Application name
 * Application version
 
@@ -820,30 +820,30 @@ Acrobat Reader DC extensions for Microsoft Office is a plug-in used with the Mic
 1. Open the configuration file in an editor and locate the `PolicyServer` node. Add a `ClientVersionRules` node as an immediate child of the `PolicyServer` node, if one does not exist:
 
    ```as3
-    <node name="ClientVersionRules"> 
-        <map> 
-            <entry key="infoURL" value="URL"/> 
-        </map> 
-        <node name="Denials"> 
-            <map/> 
-            <node name="MyEntryName"> 
-                <map> 
-                    <entry key="SDKPlatforms" value="platforms"/> 
-                    <entry key="SDKVersions" value="versions"/> 
-                    <entry key="AppFamilies" value="families"/> 
-                    <entry key="AppNames" value="names"/> 
-                    <entry key="AppVersions" value="versions"/> 
-                    <entry key="Integrators" value="integrators"/> 
-                    <entry key="IntegratorVersions" value="versions"/> 
-                </map> 
-            </node> 
-            <node name="MyOtherEntryName" 
-                <map> 
-                    [...] 
-                </map> 
-            </node> 
-            [...] 
-        </node> 
+    <node name="ClientVersionRules">
+        <map>
+            <entry key="infoURL" value="URL"/>
+        </map>
+        <node name="Denials">
+            <map/>
+            <node name="MyEntryName">
+                <map>
+                    <entry key="SDKPlatforms" value="platforms"/>
+                    <entry key="SDKVersions" value="versions"/>
+                    <entry key="AppFamilies" value="families"/>
+                    <entry key="AppNames" value="names"/>
+                    <entry key="AppVersions" value="versions"/>
+                    <entry key="Integrators" value="integrators"/>
+                    <entry key="IntegratorVersions" value="versions"/>
+                </map>
+            </node>
+            <node name="MyOtherEntryName"
+                <map>
+                    [...]
+                </map>
+            </node>
+            [...]
+        </node>
     </node>
    ```
 
@@ -851,9 +851,9 @@ Acrobat Reader DC extensions for Microsoft Office is a plug-in used with the Mic
 
    `SDKPlatforms` specifies the platform hosting the client application. Possible values are:
 
-    * Microsoft Windows 
-    * Apple OS X 
-    * Sun Solaris 
+    * Microsoft Windows
+    * Apple OS X
+    * Sun Solaris
     * HP-UX
 
    `SDKVersions` specifies the version of the document security C++ Client API used by the client application. For example, `"8.2"`.
@@ -877,64 +877,64 @@ Acrobat Reader DC extensions for Microsoft Office is a plug-in used with the Mic
 In this example, all Windows clients are denied access.
 
 ```as3
- <node name="ClientVersionRules"> 
-     <map> 
-         <entry key="infoURL" value="https://www.dont.use/windows.html"/> 
-     </map> 
-     <node name="Denials"> 
-         <map/> 
-         <node name="Entry_1"> 
-             <map> 
-                 <entry key="SDKPlatforms" value="Microsoft Windows"/>  
-             </map> 
-         </node> 
-     </node> 
+ <node name="ClientVersionRules">
+     <map>
+         <entry key="infoURL" value="https://www.dont.use/windows.html"/>
+     </map>
+     <node name="Denials">
+         <map/>
+         <node name="Entry_1">
+             <map>
+                 <entry key="SDKPlatforms" value="Microsoft Windows"/>
+             </map>
+         </node>
+     </node>
  </node>
 ```
 
 In this example, My Application version 3.0 and My Other Application version 2.0 are denied access. The same denials information URL is used regardless of the reason for denial.
 
 ```as3
- <node name="ClientVersionRules"> 
-     <map> 
-         <entry key="infoURL" value=”https://get.a.new/version.html”/> 
-     </map> 
-     <node name="Denials"> 
-         <map/> 
-         <node name="FirstDenialSettings"> 
-             <map> 
-                 <entry key="AppNames" value="My Application"/>  
-                 <entry key="AppVersions" value="3.0"/> 
-             </map> 
-         </node> 
-         <node name="SecondDenialSettings"> 
-             <map> 
-                 <entry key="AppNames" value="My Other Application"/>  
-                 <entry key="AppVersions" value="2.0"/> 
-             </map> 
-         </node> 
-     </node> 
+ <node name="ClientVersionRules">
+     <map>
+         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+     </map>
+     <node name="Denials">
+         <map/>
+         <node name="FirstDenialSettings">
+             <map>
+                 <entry key="AppNames" value="My Application"/>
+                 <entry key="AppVersions" value="3.0"/>
+             </map>
+         </node>
+         <node name="SecondDenialSettings">
+             <map>
+                 <entry key="AppNames" value="My Other Application"/>
+                 <entry key="AppVersions" value="2.0"/>
+             </map>
+         </node>
+     </node>
  </node>
 ```
 
 In this example, all requests from a Microsoft PowerPoint 2007 or Microsoft PowerPoint 2010 installation of Acrobat Reader DC extensions for Microsoft Office are denied.
 
 ```as3
- <node name="ClientVersionRules"> 
-     <map> 
-         <entry key="infoURL" value=”https://get.a.new/version.html”/> 
-     </map> 
-     <node name="Denials"> 
-         <map/> 
-         <node name="Entry_1"> 
-             <map> 
-                 <entry key="AppFamilies" value= 
-     "document security Extension for Microsoft Office"/> 
-                 <entry key="AppNames" value= "Microsoft PowerPoint"/>  
-                 <entry key="AppVersions" value="2007,2010"/> 
-             </map> 
-         </node> 
-     </node> 
+ <node name="ClientVersionRules">
+     <map>
+         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+     </map>
+     <node name="Denials">
+         <map/>
+         <node name="Entry_1">
+             <map>
+                 <entry key="AppFamilies" value=
+     "document security Extension for Microsoft Office"/>
+                 <entry key="AppNames" value= "Microsoft PowerPoint"/>
+                 <entry key="AppVersions" value="2007,2010"/>
+             </map>
+         </node>
+     </node>
  </node
 ```
 
@@ -945,7 +945,7 @@ By default, you can specify a maximum of five elements in a watermark. Also, the
 ***note**: You should change these parameters with caution.*
 
 1. Export the document security configuration file. (See [Manually editing the document security configuration file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open the configuration file in an editor and locate the `ServerSettings` node. 
+1. Open the configuration file in an editor and locate the `ServerSettings` node.
 1. In the `ServerSettings` node, add the following entries and then save the file: `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
 
    The first entry, *max file size *is the maximum file size (in KB) that is allowed for a PDF watermark element. Default is 100KB.
@@ -953,7 +953,7 @@ By default, you can specify a maximum of five elements in a watermark. Also, the
    The second entry, *max elements* is the maximum number of elements that is allowed in a watermark. Default is 5.
 
    ```as3
-   <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> 
+   <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
 
@@ -969,7 +969,7 @@ Many document security users do not have access to external links such as **www.
 The following changes to the config.xml disables all external links from the Right Management user interfaces.
 
 1. Export the document security configuration file. (See [Manually editing the document security configuration file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open the configuration file in an editor and locate the `DisplaySettings` node. 
+1. Open the configuration file in an editor and locate the `DisplaySettings` node.
 1. To disable all external links, in the `DisplaySettings` node, add the following entry and then save the file: `<entry key="ExternalLinksAllowed" value="false"/>`
 
    ```as3
@@ -983,7 +983,7 @@ The following changes to the config.xml disables all external links from the Rig
 The following changes to the config.xml enable TLS support for the Invited User Registration feature.
 
 1. Export the document security configuration file. (See [Manually editing the document security configuration file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open the configuration file in an editor and locate the `DisplaySettings` node. 
+1. Open the configuration file in an editor and locate the `DisplaySettings` node.
 1. Locate the following node: `<node name="ExternalUser">`
 
    ```as3
@@ -1013,10 +1013,10 @@ The following changes to the config.xml todisable SOAP endpoints for document se
 1. To disable SOAP endpoints for document security documents, set the value attribute to **false**.
 
    ```as3
-   <node name="DRM"> 
-       <map> 
-           <entry key="AllowUnencryptedVoucher" value="false"/> 
-       </map> 
+   <node name="DRM">
+       <map>
+           <entry key="AllowUnencryptedVoucher" value="false"/>
+       </map>
    </node>
    ```
 
@@ -1030,7 +1030,7 @@ By default, while synchronizing a document for offline use, along with the infor
 You can increase the scalability of the document security server by limiting the information being sent to the client. The reduction in amount of information sent to client results in improved scalability, reduced response time, and better performance of the server. Perform the following steps to increase the scalability:
 
 1. Export the document security configuration file. (See [Manually editing the document security configuration file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open the configuration file in an editor and locate the ServerSettings node. 
+1. Open the configuration file in an editor and locate the ServerSettings node.
 1. In the ServerSettings node, set the value of the `DisableGlobalOfflineSynchronizationData`property to `true`.
 
    `<entry key="DisableGlobalOfflineSynchronizationData" value="true"/>`

@@ -5,7 +5,7 @@ description: This article covers some of the installation issues you might encou
 seo-description: This article covers some of the installation issues you might encounter with AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
@@ -19,13 +19,13 @@ This section includes detailed information on logs available to help you trouble
 
 Analyzing slow performance on Authoring instance can become quite complex. As first step it is required to figure out on which level of the technology stack the performance is decreasing.
 
-The following decision tree provides guidenance to narrow down the bottleneck. 
+The following decision tree provides guidenance to narrow down the bottleneck.
 
-![chlimage_1-75](assets/chlimage_1-75.png) 
+![chlimage_1-75](assets/chlimage_1-75.png)
 
 ## Basic Optimization {#basic-optimization}
 
-![chlimage_1-76](assets/chlimage_1-76.png) 
+![chlimage_1-76](assets/chlimage_1-76.png)
 
 ## Configuring log files and audit logs {#configuring-log-files-and-audit-logs}
 
@@ -121,5 +121,5 @@ If your installation of AEM uses external storage, for example, a database serve
 
 ### **JSP files are not compiled on JBoss {#jsp-files-are-not-compiled-on-jboss}**
 
-If you install or update JSP files to Experience Manager on JBoss and the corresponding servlets are not compiled, ensure the JBoss JSP compiler is correclty configured. For information, see the   
+If you install or update JSP files to Experience Manager on JBoss and the corresponding servlets are not compiled, ensure the JBoss JSP compiler is correclty configured. For information, see the
 [JSP Compilation Issues in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) article.

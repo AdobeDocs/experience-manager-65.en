@@ -6,7 +6,7 @@ seo-description: To brand AEM Forms workspace provide the logo of your organizat
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 ---
@@ -29,9 +29,9 @@ The organization logo is displayed at the upper-left corner of AEM Forms workspa
 
    ```css
    #logo {
-   
+
           background: url(../images/NewWorkspace.png) no-repeat 14px 11px;
-   
+
    }
    ```
 

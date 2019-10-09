@@ -5,7 +5,7 @@ description: Adding a Leaderboard component to a page
 seo-description: Adding a Leaderboard component to a page
 uuid: 2a766b63-3ab4-44cd-8a26-629a71b837ea
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
@@ -49,23 +49,23 @@ Select the placed `Leaderboard` component to access and select the `Configure` i
 
 Under the **[!UICONTROL Settings]** tab, specify what information related to the member is displayed:
 
-* **[!UICONTROL Display Name]** 
+* **[!UICONTROL Display Name]**
   A descriptive name to display for the board, reflecting the rules selected for displaying badges and scores.
 
   Default is `Leaderboard`, if nothing entered.
 
-* **[!UICONTROL Badge]** 
-  If checked, a column for badge icons is included in the leaderboard.  
+* **[!UICONTROL Badge]**
+  If checked, a column for badge icons is included in the leaderboard.
 
   Default is unchecked.
 
-* **[!UICONTROL Badge Name]** 
-  If checked, a column for the badge name is included in the leaderboard.  
+* **[!UICONTROL Badge Name]**
+  If checked, a column for the badge name is included in the leaderboard.
 
   Default is unchecked.
 
-* **[!UICONTROL Use Avatar]** 
-  If checked, the member's avatar image is included in the leaderboard, next to their name link to their member profile.  
+* **[!UICONTROL Use Avatar]**
+  If checked, the member's avatar image is included in the leaderboard, next to their name link to their member profile.
 
   Default is unchecked.
 
@@ -73,17 +73,17 @@ Under the **[!UICONTROL Settings]** tab, specify what information related to the
 
 Under the **[!UICONTROL Rules]** tab, the community site, and its scoring and badging rules
 
-* **[!UICONTROL Rule Location]** 
+* **[!UICONTROL Rule Location]**
   (required) Location where the Scoring/Badging rule is configured.
 
-* **[!UICONTROL Scoring Rule]** 
+* **[!UICONTROL Scoring Rule]**
   (required) Specific rule generating the scores to display.
 
-* **[!UICONTROL Badging Rule]** 
+* **[!UICONTROL Badging Rule]**
   (required) Specific rule generating the badge to display.
 
 * **[!UICONTROL Display Limit]**
-Number of members to display per page.  
+Number of members to display per page.
 
   Default is 10.
 

@@ -5,7 +5,7 @@ description: Use the TransactionRecorder API to record actions which are not acc
 seo-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
 ---
@@ -30,7 +30,7 @@ import com.adobe.aem.transaction.core.FormsTransactionConstants;
 
 @Reference
 private ITransactionRecorder transactionRecorder;
- 
+
 doPost (SlingHttpServletRequest request, SlingHttpServletResponse response) {
     transactionRecorder.startContext();
     TransactionRecord txRecord = extractTxRecordFromRequest(request); //extract transaction relevant data from request
@@ -76,7 +76,7 @@ $.ajax({
    type: 'POST',
    url: url, //servlet url
    contentType: 'application/json; UTF-8',
-   data: JSON.stringify({transactionCount : 1, 
+   data: JSON.stringify({transactionCount : 1,
                         transactionType: "SUBMIT",
                         resourceType: "FORM",
                         resourceSubType: "ADAPTIVE-FORM"}),

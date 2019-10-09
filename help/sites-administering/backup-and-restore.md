@@ -5,7 +5,7 @@ description: Learn how to backup and restore your AEM content.
 seo-description: Learn how to backup and restore your AEM content.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
@@ -39,7 +39,7 @@ You can always do an offline backup. This requires a downtime of AEM, but can be
 
 In most cases you will use a filesystem snapshot to create a read-only copy of the storage at that time. To create a offline backup perform these steps:
 
-* stop the application  
+* stop the application
 * make a snapshot backup
 * start the application
 
@@ -55,7 +55,7 @@ This method operates as a "hot" or "online" backup so it can be performed while 
 
 When creating a backup, you have the following options:
 
-* Backing up to a directory using AEM's integrated backup tool.  
+* Backing up to a directory using AEM's integrated backup tool.
 * Backing up to a directory using a filesystem snapshot
 
 In any case, the backup creates an image (or snapshot) of the repository. Then the systems backup agent should take care to actually transfer this image to a dedicated backup system (tape drive).
@@ -101,7 +101,7 @@ If the **TargetPath** is a directory, the image of the repository is created in 
 
 **Delay** Indicates a time delay (in milliseconds), so that repository performance is not affected. By default, the repository backup runs at full speed. You can slow down creating an online backup, so that it does not slow down other tasks.
 
-When using a very large delay, ensure that online backup does not take more than 24 hours. If it did, discard this backup, as it may not contain all binaries.  
+When using a very large delay, ensure that online backup does not take more than 24 hours. If it did, discard this backup, as it may not contain all binaries.
 A delay of 1 millisecond typically results in 10% CPU usage, and a delay of 10 milliseconds usually results in less than 3% CPU usage. The total delay in seconds can be estimated as follows: Repository size in MB, multiplied by delay in milliseconds, divided by 2 (if the zip option is used), or divided by 4 (when backing up to a directory). That means a backup to a directory of a 200 MB repository with 1 ms delay increases the backup time by about 50 seconds.
 
 >[!NOTE]
@@ -110,7 +110,7 @@ A delay of 1 millisecond typically results in 10% CPU usage, and a delay of 10 m
 
 To create a backup:
 
-1. Log in to AEM as the administrator.  
+1. Log in to AEM as the administrator.
 
 1. Go to **Tools - Operations - Backup.**
 1. Click **Create**. The backup console will open.
@@ -123,7 +123,7 @@ To create a backup:
 
    >[!NOTE]
    >
-   >The backup console is also available using:  
+   >The backup console is also available using:
    >
    >
    >` https://<*hostname*>:<*port-number*>/libs/granite/backup/content/admin.html`
@@ -198,7 +198,7 @@ The process described here is specially suited for large repositories.
 >
 >If you want to use this backup approach, your system must support filesystem snapshots. For example, for Linux this means your filesystems should be placed on a logical volume.
 
-1. Do a snapshot of the filesystem AEM is deployed on.  
+1. Do a snapshot of the filesystem AEM is deployed on.
 
 1. Mount the filesystem snapshot.
 1. Perform a backup and unmount the snapshot.
@@ -212,11 +212,11 @@ The online backup uses the following algorithm:
 1. When creating a zip file, the first step is to create or locate the target directory.
 
     * If backing up to a zip file, a temporary directory is created. The directory name starts with `backup.` and ends with `.temp`; for example `backup.f4d3.temp`.
-    * If backing up to a directory, the name specified in the target path is used. An existing directory can be used, otherwise a new directory will be created. 
+    * If backing up to a directory, the name specified in the target path is used. An existing directory can be used, otherwise a new directory will be created.
 
       An empty file named `backupInProgress.txt` is created in the target directory when the backup starts. This file is deleted when the backup is finished.
 
-1. The files are copied from the source directory to the target directory (or temporary directory when creating a zip file). The segmentstore is copied before the datastore to avoid repository corruption. The index and cache data are omitted when creating the backup. As a result, data from `crx-quickstart/repository/cache` and `crx-quickstart/repository/index` is not included in the backup. The progress bar indicator of the process is between 0% - 70% when creating a zip file, or 0% - 100% if no zip file is created. 
+1. The files are copied from the source directory to the target directory (or temporary directory when creating a zip file). The segmentstore is copied before the datastore to avoid repository corruption. The index and cache data are omitted when creating the backup. As a result, data from `crx-quickstart/repository/cache` and `crx-quickstart/repository/index` is not included in the backup. The progress bar indicator of the process is between 0% - 70% when creating a zip file, or 0% - 100% if no zip file is created.
 
 1. If the backup is being made to a pre-existing directory, then "old" files in the target directory are deleted. Old files are files that do not exist in the source directory.
 

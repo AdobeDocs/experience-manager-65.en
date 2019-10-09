@@ -7,7 +7,7 @@ uuid: 7c13cf00-ea89-4894-a4fc-aaeec7ae9f66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 ---
 
@@ -44,10 +44,10 @@ In this procedure:
     * (Windows Server Cluster) copy *keystorename*.keystore *[appserver root]*\domain\configuration
     * (Linux Single Server) `cp`*keystorename* `.keystore`*[appserver root]* `/standalone/configuration`
     * (Linux Server Cluster)
-    
-      ``` 
+
+      ```
       cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration
-      
+
       ```
 
 1. Export the certificate file by typing the following command:
@@ -66,11 +66,11 @@ In this procedure:
 1. View the contents of the certificate by typing the following command:
 
     * `keytool -printcert -v -file [appserver root]\standalone\configuration\LC_cert.cer`
-    * 
-    
-      ``` 
+    *
+
+      ```
       keytool -printcert -v -file [appserver root]\domain\configuration\LC_cert.cer
-      
+
       ```
 
    ``
@@ -144,10 +144,10 @@ In this procedure:
 
     * For turnkey installations:
 
-        * From the Windows Control Panel, click Administrative Tools, and then click Services. 
-        * Select JBoss for Adobe Experience Manager forms. 
-        * Select Action &gt; Stop. 
-        * Wait for the status of the service to appear as stopped. 
+        * From the Windows Control Panel, click Administrative Tools, and then click Services.
+        * Select JBoss for Adobe Experience Manager forms.
+        * Select Action &gt; Stop.
+        * Wait for the status of the service to appear as stopped.
         * Select Action &gt; Start.
 
     * For Adobe preconfigured or manually configured JBoss installations:

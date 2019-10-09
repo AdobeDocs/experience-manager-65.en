@@ -1,12 +1,12 @@
 ---
 title: The Anatomy of an App
 seo-title: The Anatomy of an App
-description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server). 
-seo-description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server). 
+description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server).
+seo-description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server).
 uuid: 4c1a74c1-85af-4a79-b723-e9fbfc661d35
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/MOBILE
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 ---
 
@@ -135,7 +135,7 @@ The controller.js.jsp script generates the controller fragment for each page. Th
 .controller('<c:out value="${controllerNameStripped}"/>', ['$scope', '$http',
     function($scope, $http) {
         var data = $http.get('<c:out value="${relativeResourcePath}"/>.angular.json' + cacheKiller);
- 
+
         // component fragments which consume the contents of `data` go here
     }
 ])
@@ -218,7 +218,7 @@ Alternatively, if `$scope.wcmMode == false`, each navigation event results in a 
 
 ### Component Script Details {#component-script-details}
 
-![chlimage_1-144](assets/chlimage_1-144.png) 
+![chlimage_1-144](assets/chlimage_1-144.png)
 
 #### ng-component.jsp {#ng-component-jsp}
 
@@ -323,29 +323,29 @@ This strategy does not require that you bundle and install the plugins to AEM ea
 
 Include other hooks as required. The following hooks are available (as provided by the Phonegap sample hello world app):
 
-* after_build 
+* after_build
 * before_build
-* after_compile 
+* after_compile
 * before_compile
-* after_docs 
+* after_docs
 * before_docs
-* after_emulate 
+* after_emulate
 * before_emulate
-* after_platform_add 
+* after_platform_add
 * before_platform_add
-* after_platform_ls 
+* after_platform_ls
 * before_platform_ls
-* after_platform_rm 
+* after_platform_rm
 * before_platform_rm
-* after_plugin_add 
+* after_plugin_add
 * before_plugin_add
-* after_plugin_ls 
+* after_plugin_ls
 * before_plugin_ls
-* after_plugin_rm 
+* after_plugin_rm
 * before_plugin_rm
-* after_prepare 
+* after_prepare
 * before_prepare
-* after_run 
+* after_run
 * before_run
 
 #### platforms/ {#platforms}

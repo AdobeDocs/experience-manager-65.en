@@ -5,7 +5,7 @@ description: Use page analytics data to gauge the effectiveness of their page co
 seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
@@ -32,7 +32,7 @@ Each column shows a value for the current reporting period, and also indicates w
 >To change the update period, [configure the import interval](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Open the **Sites** console; for example [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. In the far right of the toolbar, (upper right corner), click or tap the icon to select **List View** (the icon shown will depend on the [current view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).  
+1. In the far right of the toolbar, (upper right corner), click or tap the icon to select **List View** (the icon shown will depend on the [current view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
 1. Again, in the far right of the toolbar, (upper right corner), click or tap the icon then select **View Settings**. The **Configure Columns** dialog will open. Make any changes required and confirm with **Update**.
 
@@ -42,12 +42,12 @@ Each column shows a value for the current reporting period, and also indicates w
 
 Select the reporting period for which Analytics data appears on the Sites console:
 
-* Last 30 Days Data  
-* Last 90 Days Data  
+* Last 30 Days Data
+* Last 90 Days Data
 * This Year's Data
 
-The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop down to select the required reporting period.   
-![aa-05](assets/aa-05.png) 
+The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop down to select the required reporting period.
+![aa-05](assets/aa-05.png)
 
 ### Configuring Available Data Columns {#configuring-available-data-columns}
 
@@ -88,7 +88,7 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 
 When your website has been [configured for Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), you can use the [mode Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) to view relevant data. For example:
 
-![aa-07](assets/aa-07.png) 
+![aa-07](assets/aa-07.png)
 
 ### Accessing the Activity Map {#accessing-the-activity-map}
 
@@ -99,12 +99,12 @@ After selecting the [Activity Map](/help/sites-authoring/author-environment-tool
 The **Analytics** floating toolbar is shown; here you can:
 
 * change the toolbar format using the double arrows (**&gt;&gt;**)
-* Toggle Page Details (eye icon)  
-* Configure the Activity Map Settings ( cog icon)  
-* Select the analytics to show (various drop-down selectors)  
+* Toggle Page Details (eye icon)
+* Configure the Activity Map Settings ( cog icon)
+* Select the analytics to show (various drop-down selectors)
 * Quit the Activity Map, and close the toolbar (x)
 
-![aa-09](assets/aa-09.png) 
+![aa-09](assets/aa-09.png)
 
 ### Selecting the Analytics to Show {#selecting-the-analytics-to-show}
 
@@ -112,13 +112,13 @@ You can select the analytical data to be shown, and how it should be displayed, 
 
 * **Standard**/**Live**
 
-* event type  
+* event type
 * user group
 * **Bubbles**/**Gradient**/**Gainers & Losers**/**Off**
 
 * period to be shown
 
-![aa-13](assets/aa-13.png) 
+![aa-13](assets/aa-13.png)
 
 ### Configuring the Activity Map {#configuring-the-activity-map}
 

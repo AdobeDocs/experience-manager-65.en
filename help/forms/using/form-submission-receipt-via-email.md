@@ -5,7 +5,7 @@ description: AEM Forms allows you to configure the email submit action that send
 seo-description: AEM Forms allows you to configure the email submit action that sends an acknowledgement to a user on submitting the form.
 uuid: 77b3c836-6011-48bd-831c-ebc214218efb
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
 ---
@@ -34,7 +34,7 @@ The Email action enables an author to send email automatically to one or more re
 
 ### Enabling Email action on an adaptive form {#enabling-email-action-on-an-adaptive-form}
 
-1. Open an adaptive form in edit mode.  
+1. Open an adaptive form in edit mode.
 
 1. Click **Edit** next to the **Start of an Adaptive Form** toolbar.
 

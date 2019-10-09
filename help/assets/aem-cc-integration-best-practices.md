@@ -5,7 +5,7 @@ description: Best practices for integrating an AEM instance with Adobe Creative 
 seo-description: Best practices for integrating an AEM instance with Adobe Creative Cloud.
 uuid: cc012414-83aa-4d9a-b49e-acd10cea0aad
 contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: cec0308a-3e48-41a6-998f-6591f402e755
@@ -64,7 +64,7 @@ The following types of integration are described in this guide:
 
 The follow diagram depicts both types of integration and describes how they connect work and assets in DAM with user's work on desktop:
 
-![chlimage_1-300](assets/chlimage_1-300.png) 
+![chlimage_1-300](assets/chlimage_1-300.png)
 
 ### Determining which integration to use {#determining-which-integration-to-use}
 
@@ -74,69 +74,69 @@ The following table provides a concise summary of when to use which solution or 
 * **AEM / Creative Cloud folder sharing:** When users don't have direct access to AEM or only require access to a smaller number of files.
 * Alternative solutions (for example, [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share](assets-finder-editor.md) components, [Link Share](link-sharing.md), using [AEM Assets web UI](managing-assets-touch-ui.md)): Support similar use cases and should be reviewed based on specific requirement.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Use case </th> 
-   <th>Desktop app</th> 
-   <th>Folder sharing</th> 
-   <th>Other solutions</th> 
-  </tr> 
-  <tr> 
-   <td>Share smaller number [1] of DAM assets with Creative user</td> 
-   <td>✔✔</td> 
-   <td>✔</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Share larger number [2] of DAM assets with Creative user</td> 
-   <td>✔✔</td> 
-   <td>✘</td> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html">Brand Portal</a></p> <p><a href="/help/assets/assets-finder-editor.md">Asset Share</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>Share DAM assets with users who have access to DAM</td> 
-   <td>✔✔</td> 
-   <td>✔</td> 
-   <td><a href="/help/assets/link-sharing.md">Link Share</a></td> 
-  </tr> 
-  <tr> 
-   <td>Share DAM assets with users who don't have access to DAM</td> 
-   <td>✘</td> 
-   <td>✔✔</td> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html">Brand Portal</a></p> <p><a href="/help/assets/assets-finder-editor.md">Asset Share</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>Save smaller number/volume of assets to DAM</td> 
-   <td>✔✔</td> 
-   <td>✔</td> 
-   <td><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></td> 
-  </tr> 
-  <tr> 
-   <td>Save larger number of assets to DAM [3]</td> 
-   <td>✔✔</td> 
-   <td>✘</td> 
-   <td><p><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></p> <p>Custom script / tool </p> </td> 
-  </tr> 
-  <tr> 
-   <td>Migrate huge number of assets to DAM<br /> <br /> </td> 
-   <td>✘<br /> <br /> </td> 
-   <td>✘<br /> <br /> </td> 
-   <td><a href="/help/assets/assets-migration-guide.md">Migration Guide</a></td> 
-  </tr> 
-  <tr> 
-   <td>Quickly open an asset on desktop</td> 
-   <td>✔✔</td> 
-   <td>✘</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Quickly open and change asset on desktop</td> 
-   <td>✔✔</td> 
-   <td>✘</td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Use case </th>
+   <th>Desktop app</th>
+   <th>Folder sharing</th>
+   <th>Other solutions</th>
+  </tr>
+  <tr>
+   <td>Share smaller number [1] of DAM assets with Creative user</td>
+   <td>✔✔</td>
+   <td>✔</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Share larger number [2] of DAM assets with Creative user</td>
+   <td>✔✔</td>
+   <td>✘</td>
+   <td><p><a href="https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html">Brand Portal</a></p> <p><a href="/help/assets/assets-finder-editor.md">Asset Share</a></p> </td>
+  </tr>
+  <tr>
+   <td>Share DAM assets with users who have access to DAM</td>
+   <td>✔✔</td>
+   <td>✔</td>
+   <td><a href="/help/assets/link-sharing.md">Link Share</a></td>
+  </tr>
+  <tr>
+   <td>Share DAM assets with users who don't have access to DAM</td>
+   <td>✘</td>
+   <td>✔✔</td>
+   <td><p><a href="https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html">Brand Portal</a></p> <p><a href="/help/assets/assets-finder-editor.md">Asset Share</a></p> </td>
+  </tr>
+  <tr>
+   <td>Save smaller number/volume of assets to DAM</td>
+   <td>✔✔</td>
+   <td>✔</td>
+   <td><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></td>
+  </tr>
+  <tr>
+   <td>Save larger number of assets to DAM [3]</td>
+   <td>✔✔</td>
+   <td>✘</td>
+   <td><p><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></p> <p>Custom script / tool </p> </td>
+  </tr>
+  <tr>
+   <td>Migrate huge number of assets to DAM<br /> <br /> </td>
+   <td>✘<br /> <br /> </td>
+   <td>✘<br /> <br /> </td>
+   <td><a href="/help/assets/assets-migration-guide.md">Migration Guide</a></td>
+  </tr>
+  <tr>
+   <td>Quickly open an asset on desktop</td>
+   <td>✔✔</td>
+   <td>✘</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Quickly open and change asset on desktop</td>
+   <td>✔✔</td>
+   <td>✘</td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 The meaning of the symbols:
@@ -166,12 +166,12 @@ This is a brief summary of best practices for AEM and Creative Cloud integration
 
 This is a brief summary of best practices for AEM desktop app. Refer to [AEM desktop app best practices](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app-best-practices.html) document for more information.
 
-* **Understand how desktop app works:** Linking between Web UI and desktop, repository mapping, asset caching, saving locally and uploading in background  
+* **Understand how desktop app works:** Linking between Web UI and desktop, repository mapping, asset caching, saving locally and uploading in background
 * **Quick access to assets on desktop:** Find your asset in Web UI and open or reveal on desktop
 * **Minor updates - save directly to DAM:** Save to the file mapped by AEM desktop app for minor asset updates
 * **Major updates - use a separate WIP folder:** copy asset to a separate WIP folder outside of the mapped areas, work there, save back to the mapped location when ready
 * **Use Folder Upload for large/hierarchical folders:** AEM desktop app helps with uploading large/hierarchical folders in background with monitoring
-* **Use the latest version**: Always use the latest AEM desktop app Version, it's compatible with the latest and two previous major releases of AEM  
+* **Use the latest version**: Always use the latest AEM desktop app Version, it's compatible with the latest and two previous major releases of AEM
 * **Mind the network:** network performance is key to AEM desktop app performance, turn off features that might cause lots of network traffic (like thumbnails in Finder for the mapped network share).
 * **Mind the server performance:** AEM desktop app works better for the users if your AEM server is optimized for uploads.
 * **How not to use AEM desktop app:** examples include
@@ -271,7 +271,7 @@ The asset lifecycle includes the following stages:
 
 1. Share approved assets to creative desktop: Final assets from DAM are made available to the creative user (on desktop)
 1. Create a new design (creative digital asset): A new file is stored in the work-in-progress (WIP) area.
-1. Use (place) approved assets in a new design: The creative user produces a new asset using existing approved assets in Creative Cloud apps  
+1. Use (place) approved assets in a new design: The creative user produces a new asset using existing approved assets in Creative Cloud apps
 1. Frequently saving WIP updates: The creative user iterates quickly and saves the file frequently. At this stage, the creative user may collaborate with others, but the frequently-saved updates are  typically  of no interest to DAM users.
 1. Asset reaches the creative ready status and is saved to the Creative Ready folder
 1. Asset  update : An asset update or a new file is available to the users in DAM

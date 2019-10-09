@@ -1,11 +1,11 @@
 ---
 title: Creating and managing reviews for assets in forms
 seo-title: Creating and managing reviews for assets in forms
-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form. 
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form. 
+description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 6b1aa54f-d03c-483a-a398-6522b285194c
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 ---
@@ -33,7 +33,7 @@ A Review is a mechanism that allows one or more reviewers to comment on an asset
 
 This section describes what happens when a review is created or set up.
 
-1. A new review task is created and assigned to the initiator of the review. 
+1. A new review task is created and assigned to the initiator of the review.
 1. All reviewers are assigned a review task. The task appears in their Notifications section. A reviewer can click a notification, or go to the Inbox to view the task. A reviewer can click to open the review task, to view the form, and start adding comments.
 
    ![Reviewer Notification Alert](assets/noti.png)
@@ -47,18 +47,18 @@ This section describes what happens when a review is created or set up.
 >
 >Only reviews that are in progress can be modified. Reviews that are complete cannot be modified.
 
-1. Navigate to the Forms tab and select a form.  
+1. Navigate to the Forms tab and select a form.
 
 1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Only review initiator can manage (update/end) the review.
 
    Click the Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icon.
 
-   For user other than initiator the Manage Review icon is disabled. 
+   For user other than initiator the Manage Review icon is disabled.
 
 1. You get a screen that displays information:
 
-    * **Review name**: Cannot be edited. 
-    * **Review description**: Available for editing. 
+    * **Review name**: Cannot be edited.
+    * **Review description**: Available for editing.
     * **Review deadline**: Available for editing. One can modify the deadline to any date and time beyond the current date and time.
     * **Reviewers**: Available for editing. You can add or remove reviewers. If a task is overdue, you can add reviewers only after extending the deadline beyond the current date.
 
@@ -74,7 +74,7 @@ This section describes what happens when a review is created or set up.
 This section describes, what happens on Review end / modification:
 
 1. If the Review description is modified, the corresponding task of reviewers and the initiator is updated.
-1. If the Review deadline is modified, the corresponding task for the reviewers is updated with the new date.   
+1. If the Review deadline is modified, the corresponding task for the reviewers is updated with the new date.
 
 1. If a reviewer is removed:
 

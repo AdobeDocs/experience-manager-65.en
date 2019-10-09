@@ -7,7 +7,7 @@ uuid: 7681672c-a0dc-4445-8004-1b1e2ed3d301
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 ---
 
@@ -21,46 +21,46 @@ In addition to selecting a secure, highly available directory for GDS, you can a
 
 AEM forms application data resides in the GDS directory and the AEM forms database. The following table describes the data and its locations.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>AEM forms Data</p></th> 
-   <th><p>Database</p></th> 
-   <th><p>GDS</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>AEM forms Data</p></th>
+   <th><p>Database</p></th>
+   <th><p>GDS</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>Application data (users, roles, processes, policies, endpoints, events, and so on.)</p></td> 
-   <td><p>Yes</p></td> 
-   <td><p>No</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Deployed service containers</p></td> 
-   <td><p>Yes</p></td> 
-   <td><p>No</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Document Manager </p></td> 
-   <td><p>No</p></td> 
-   <td><p>Yes</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Forms Repository</p></td> 
-   <td><p>Yes</p></td> 
-   <td><p>No</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>System configuration</p></td> 
-   <td><p>Yes</p></td> 
-   <td><p>No</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Watched folders</p></td> 
-   <td><p>No</p></td> 
-   <td><p>Yes</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>Application data (users, roles, processes, policies, endpoints, events, and so on.)</p></td>
+   <td><p>Yes</p></td>
+   <td><p>No</p></td>
+  </tr>
+  <tr>
+   <td><p>Deployed service containers</p></td>
+   <td><p>Yes</p></td>
+   <td><p>No</p></td>
+  </tr>
+  <tr>
+   <td><p>Document Manager </p></td>
+   <td><p>No</p></td>
+   <td><p>Yes</p></td>
+  </tr>
+  <tr>
+   <td><p>Forms Repository</p></td>
+   <td><p>Yes</p></td>
+   <td><p>No</p></td>
+  </tr>
+  <tr>
+   <td><p>System configuration</p></td>
+   <td><p>Yes</p></td>
+   <td><p>No</p></td>
+  </tr>
+  <tr>
+   <td><p>Watched folders</p></td>
+   <td><p>No</p></td>
+   <td><p>Yes</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Configuring the GDS directory {#configuring-the-gds-directory}
@@ -82,14 +82,14 @@ You can change the GDS location in administration console after the AEM forms in
 1. Log in to administration console and click Settings &gt; Core System Settings &gt; Configurations.
 1. In the Global Document Storage Directory box, enter the full path to the new GDS directory and then click OK.
 1. Immediately shut down the application server.
-1. Move all the files from the old GDS directory to the new location, keeping the internal directory structure. 
+1. Move all the files from the old GDS directory to the new location, keeping the internal directory structure.
 1. Restart the application server.
 
 ## About Deployment Files {#about-deployment-files}
 
 AEM forms consists of two types of deployment files, the service containers and the Java 2 Platform, Enterprise Edition (J2EE) EAR files. The EAR files consist of standard J2EE application bundles that contain the core functionality of AEM forms. The application server-specific EAR files are as follows:
 
-* adobe-core-*[appserver]*.ear 
+* adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear
 
 Implementing AEM forms involves deploying the assembled EAR files and supporting files to the application server where you plan to run your AEM forms solution. If you configured and assembled multiple modules, the deployable modules are packaged within the deployable EAR files. To deploy these files, copy them to the *[appserver home]*\server\all\deploy directory.
