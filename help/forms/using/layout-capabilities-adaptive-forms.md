@@ -3,15 +3,13 @@ title: Layout capabilities of adaptive forms
 seo-title: Layout capabilities of adaptive forms
 description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
-uuid: 79022ac2-1aa3-47c5-b094-cbe83334ea62
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+uuid: 7df2d234-e2e3-432a-9720-e73296424302
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
-discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
-docset: aem65
-
+discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 ---
 
-# Layout capabilities of adaptive forms{#layout-capabilities-of-adaptive-forms}
+# Layout capabilities of adaptive forms {#layout-capabilities-of-adaptive-forms}
 
 Adobe Experience Manager (AEM) lets you create easy-to-use adaptive forms that offer dynamic experiences to end users. The form layout controls how items or components are displayed in an adaptive form.
 
@@ -19,9 +17,9 @@ Adobe Experience Manager (AEM) lets you create easy-to-use adaptive forms that o
 
 Before learning about the different layout capabilities of adaptive forms, read the following articles to know more about adaptive forms.
 
-[Introduction to AEM Forms](../../forms/using/introduction-aem-forms.md)
+[Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md)
 
-[Introduction to authoring forms](../../forms/using/introduction-forms-authoring.md)
+[Introduction to authoring forms](/help/forms/using/introduction-forms-authoring.md)
 
 ## Types of layouts {#types-of-layouts}
 
@@ -50,22 +48,21 @@ A form author can associate a layout with each panel of an adaptive form, includ
 The Panel layouts are available at `/libs/fd/af/layouts/panel` location.
 
 ![List of panel layouts for root panel of an adaptive form](assets/layouts.png)
+**Figure:** *List of panel layouts in adaptive forms*
 
-List of panel layouts in adaptive forms
-
-### Responsive - everything on one page without navigation <br> {#responsive-everything-on-one-page-without-navigation-br}
+### Responsive - everything on one page without navigation {#responsive-everything-on-one-page-without-navigation-br}
 
 Use this panel layout to create a responsive layout that adjusts to the screen size of your device without any need for specialized navigation.
 
-Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]**components one after another inside the panel. 
+Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]** components one after another inside the panel. 
 
 ![A form using responsive layout as seen on a small screen](assets/responsive_layout_seen_on_small_screen.png)
 
-A form using responsive layout as seen on a small screen
+**Figure:** *A form using responsive layout as seen on a small screen*
 
 ![A form using responsive layout as seen on a large screen](assets/responsive_layout_seen_on_large_screen.png)
 
-A form using responsive layout as seen on a large screen
+**Figure:** *A form using responsive layout as seen on a large screen*
 
 ### Wizard - a multi-step form showing one step at a time {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
@@ -79,11 +76,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![Step completion expression in Wizard layout for a multi-step form](assets/layout-sidebar.png)
 
-Step completion expression in Wizard layout for a multi-step form
+**Figure:** *Step completion expression in Wizard layout for a multi-step form*
 
 ![A form using wizard layout](assets/wizard-layout.png)
 
-A form using Wizard
+**Figure:** *A form using Wizard*
 
 ### Layout for accordion design {#layout-for-accordion-design}
 
@@ -93,7 +90,7 @@ Summary expression can be used to show the values provided by the end user in th
 
 ![Repeatable panels using Accordion layout in adaptive forms](assets/repeatable_panels_using_accordion_layout.png)
 
-Repeatable panels created using Accordion layout
+**Figure:** *Repeatable panels created using Accordion layout*
 
 ### Tabbed layout - tabs appear on the left {#tabbed-layout-tabs-appear-on-the-left}
 
@@ -101,7 +98,7 @@ Using this layout, you can place the `Panel adaptive form` component in a panel 
 
 ![In the Tabbed layout, the tabs appear on the left](assets/tabbed_layout_left.png)
 
-Tabs appearing on the left of a panel
+**Figure:** *Tabs appearing on the left of a panel*
 
 ### Tabbed layout - tabs appear on the top {#tabbed-layout-tabs-appear-on-the-top}
 
@@ -109,7 +106,7 @@ Using this layout, you can place the `Panel adaptive form` Component in a panel 
 
 ![Tabbed layout in adaptive forms with tabs on the top](assets/tabbed_layout_top.png)
 
-Tabs appearing on the top of a panel
+**Figure:** *Tabs appearing on the top of a panel*
 
 ## Mobile layouts {#mobile-layouts}
 
@@ -121,9 +118,9 @@ The Mobile Layouts are available at `/libs/fd/af/layouts/mobile/` location. The 
 
 ![List of Mobile Layouts in adaptive forms](assets/mobile-navigation.png)
 
-List of Mobile Layouts in adaptive forms
+**Figure:** *List of Mobile Layouts in adaptive forms*
 
-When using a mobile layout, the form menu, to access various form panels, is available by tapping ![](assets/aem6forms_form_menu.png) icon.
+When using a mobile layout, the form menu, to access various form panels, is available by tapping ![aem6forms_form_menu](assets/aem6forms_form_menu.png) icon.
 
 ### Layout with panel titles in the form header {#layout-with-panel-titles-in-the-form-header}
 
@@ -131,7 +128,7 @@ This layout, as the name suggests, shows panel titles along with the navigation 
 
 ![Mobile layouts with panel titles in the form headers](assets/mobile_layout_with.png)
 
-Mobile layouts with panel titles in the form headers
+**Figure:** *Mobile layouts with panel titles in the form headers*
 
 ### Layout without panel titles in the form header {#layout-without-panel-titles-in-the-form-header}
 
@@ -139,7 +136,7 @@ This layout, as the name suggests, shows only the navigation menu and navigation
 
 ![Mobile layouts without panel titles in the form headers](assets/mobile_layout_without.png)
 
-Mobile layouts without panel titles in the form headers
+**Figure:** *Mobile layouts without panel titles in the form headers*
 
 ## Toolbar layouts {#toolbar-layouts}
 
@@ -147,7 +144,7 @@ A Toolbar Layout controls positioning and display of any action buttons that you
 
 ![A list of Toolbar Layouts in adaptive forms to control layout of buttons](assets/toolbar-layouts.png)
 
-A list of Toolbar Layouts in adaptive forms 
+**Figure:** *A list of Toolbar Layouts in adaptive forms* 
 
 Toolbar layouts are available at `/libs/fd/af/layouts/toolbar` location. adaptive forms provide the following Toolbar Layouts, by default.
 
@@ -159,7 +156,7 @@ Also, you can add multiple toolbars containing action buttons configured with th
 
 ![Default view for toolbar](assets/toolbar_layout_default.png)
 
-Default view for toolbar
+**Figure:** *Default view for toolbar*
 
 ### Mobile fixed layout for toolbar {#mobile-fixed-layout-for-toolbar}
 
@@ -171,5 +168,5 @@ For the mobile layout, you can add action buttons using icons.
 
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
-Mobile fixed layout for toolbar
+**Figure:** *Mobile fixed layout for toolbar*
 

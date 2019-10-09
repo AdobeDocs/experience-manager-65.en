@@ -3,19 +3,17 @@ title: Create a Fully-Featured Website (JSP)
 seo-title: Create a Fully-Featured Website (JSP)
 description: This tutorial enables you to create a fully featured website with AEM
 seo-description: This tutorial enables you to create a fully featured website with AEM
-uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
+uuid: bb8d4efd-7631-4cc5-8084-b03c6aabdef3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
-docset: aem65
-
+discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 ---
 
 # Create a Fully-Featured Website (JSP){#create-a-fully-featured-website-jsp}
 
->[!NOTE]
+>[!CAUTION]
 >
 >This article describes how to create a website using JSP and based on the classic UI. Adobe recommends leveraging the latest AEM technologies for your websites as described in detail in the article [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
@@ -24,30 +22,31 @@ This tutorial enables you to create a fully featured website with Adobe Experien
 This tutorial describes how to:
 
 1. Install AEM.
-1. Access CRXDE Lite (the development environment).
-1. Set up the project structure in CRXDE Lite.
+1. Access CRXDE Lite (the development environment).  
+1. Set up the project structure in CRXDE Lite.  
 1. Create the template, component, and scripts used as the basis for creating content pages.
 1. Create the root page for your website and then content pages.
 1. Create the following components for use on your pages:
 
-    * Top Navigation
-    * List Children
-    * Logo
-    * Image
-    * Text-Image
-    * Search
+    * **[!UICONTROL Top Navigation]** 
+    * **[!UICONTROL List Children]** 
+    * **[!UICONTROL Logo]** 
+    * **[!UICONTROL Image]** 
+    * **[!UICONTROL Text-Image]** 
+    * **[!UICONTROL Search]**
 
 1. Include various foundation components.
 
 After performing all the steps, your pages will look as follows:
 
-![](assets/chlimage_1-24.png)
+![chlimage_1-99](assets/chlimage_1-99.png)
 
 **Download the final result**
 
-To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](/help/sites-administering//package-manager.md) to install the package to your author instance.
+To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](/help/sites-administering/package-manager.md) to install the package to your author instance.
 
-**NOTE: **Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
+>[!NOTE]
+>Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
 
 Website content package
 
@@ -57,53 +56,53 @@ Website content package
 
 To install an AEM instance for developing your website, follow the instructions for setting up a [deployment environment with author and publish instances](/help/sites-deploying/deploy.md#author-and-publish-installs), or perform a [generic installation](/help/sites-deploying/deploy.md#default-local-install). The generic installation involves downloading the AEM Quickstart JAR file, placing the license.properties file in the same directory as the JAR file, and double-clicking the JAR file.
 
-After you have installed AEM, access the CRXDE Lite development environment by clicking the CRXDE Lite link on the Welcome page:
+After you have installed AEM, access the CRXDE Lite development environment by clicking the CRXDE Lite link on the Welcome page: 
 
-![](assets/chlimage_1-25.png)
+![chlimage_1-100](assets/chlimage_1-100.png)
 
 >[!NOTE]
 >
->The URL of CRXDE Lite for an AEM authoring instance that is installed locally using the default port is [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
+>The URL of CRXDE Lite for an AEM authoring instance that is installed locally using the default port is [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/).
 
-### Setting up the project structure in CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
+## Setting up the project structure in CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
 
 Use CRXDE Lite to create the mywebsite application structure in the repository:
 
-1. In the tree on the left side of CRXDE Lite, right-click the **`/apps`** folder and click **Create** > **Create** **Folder**. In the **Create Folder **dialog, type `mywebsite` as the folder name and click **OK**.
-1. Right-click the **`/apps/mywebsite`** folder and click **Create** > **Create Folder**. In the **Create Folder** dialog, type `components` as the folder name and click **OK**.
-1. Right-click the **`/apps/mywebsite`** folder and click **Create** > **Create Folder**. In the** Create Folder **dialog, type `templates` as the folder name and click **OK**.
+1. In the tree on the left side of CRXDE Lite, right-click the **`/apps`** folder and click **[!UICONTROL Create > Create Folder]**. In the **Create Folder** dialog, type `mywebsite` as the folder name and click **[!UICONTROL OK**.
+1. Right-click the `/apps/mywebsite` folder and click **[!UICONTROL Create > Create Folder]**. In the **[!UICONTROL Create Folder]** dialog, type `components` as the folder name and click **[!UICONTROL OK]**.
+1. Right-click the `/apps/mywebsite` folder and click **[!UICONTROL Create > Create Folder]**. In the **[!UICONTROL Create Folder]** dialog, type `templates` as the folder name and click **[!UICONTROL OK]**.
 
    The structure in the tree should now look something like this:
 
-   ![](assets/chlimage_1-26.png)
+   ![chlimage_1-101](assets/chlimage_1-101.png)
 
-1. Click **Save All**.
+1. Click **[!UICONTROL Save All]**.
 
-### Setting up the Design {#setting-up-the-design}
+## Setting up the Design {#setting-up-the-design}
 
 In this section, you create the design for your application using the Designer tool. The design provides CSS and image resources for your web site.
 
 >[!NOTE]
 >
->Click the following link to download mywebsite.zip. The archive contains the static.css and image files for your design.
+>Click the following link to download ``mywebsite.zip``. The archive contains the static.css and image files for your design.
 
 Sample static.css file and images
 
 [Get File](assets/mywebsite.zip)
 
-1. On the AEM Welcome page, click **Tools**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
+1. On the AEM Welcome page, click **[!UICONTROL Tools]**. ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
 
-   ![](assets/chlimage_1-27.png)
+   ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. In the folder tree, select the **Designs** folder and then click **New** > **New Page**. Type `mywebsite` as the title and click **Create**.
+1. In the folder tree, select the **[!UICONTROL Designs]** folder and then click **[!UICONTROL New > New Page]**. Type `mywebsite` as the title and click **[!UICONTROL Create]**.  
 
-1. If the mywebsite item does not appear in the table, refresh the tree or the table.
+1. If the mywebsite item does not appear in the table, refresh the tree or the table.  
 
-1. [Using WebDAV](/help/sites-administering/webdav-access.md) access to the URL at https://localhost:4502, copy the sample `static.css` file and `images` folder from the downloaded mywebsite.zip file into the `/etc/designs/mywebsite` folder.
+1. [Using WebDAV](/help/sites-administering/webdav-access.md) access to the URL at http://localhost:4502, copy the sample `static.css` file and `images` folder from the downloaded mywebsite.zip file into the `/etc/designs/mywebsite` folder. 
 
-   ![](assets/chlimage_1-28.png)
+   ![chlimage_1-103](assets/chlimage_1-103.png)
 
-### Creating the Contentpage Template, Component and Script {#creating-the-contentpage-template-component-and-script}
+## Creating the Contentpage Template, Component, and Script {#creating-the-contentpage-template-component-and-script}
 
 In this section, you create the following:
 
@@ -111,61 +110,61 @@ In this section, you create the following:
 * The contentpage component that will be used to render pages of content
 * The contentpage script
 
-#### Creating the Contentpage Template {#creating-the-contentpage-template}
+### Creating the Contentpage Template {#creating-the-contentpage-template}
 
 Create a template to use as the basis of the web pages of your site.
 
 A template defines the default content of a new page. Complex websites may use several templates for creating the different types of pages in the site. In this exercise, all pages are based on one simple template.
 
-1. In the folder tree of CRXDE Lite, right-click `/apps/mywebsite/templates` and click **Create** &gt; **Create Template**.
+1. In the folder tree of CRXDE Lite, right-click `/apps/mywebsite/templates` and click **[!UICONTROL Create > Create Template]**.  
 
-1. In the Create Template dialog, type the following values and then click **Next**:
+1. In the Create Template dialog, type the following values and then click **[!UICONTROL Next]**:
 
-    * **Label**: contentpage
-    * **Title**: My Website Content Page Template
-    * **Description**: This is my Website Content Page Template
-    * **Resource Type: **mywebsite/components/contentpage
+    * **[!UICONTROL Label]**: contentpage
+    * **[!UICONTROL Title]**: My Website Content Page Template
+    * **[!UICONTROL Description]**: This is my Website Content Page Template
+    * **[!UICONTROL Resource Type]**: mywebsite/components/contentpage
 
    Use the default value for the Ranking property.
 
-   ![](assets/chlimage_1-29.png)
+   ![chlimage_1-104](assets/chlimage_1-104.png)
 
    The resource type identifies the component that renders the page. In this case, all pages created using the contentpage template are rendered by the `mywebsite/components/contentpage` component.
 
-1. To specify the paths of the pages that can use this template, click the plus button and type `/content(/.*)?` in the text box that appears. Then, click **Next**.
+1. To specify the paths of the pages that can use this template, click the plus button and type `/content(/.*)?` in the text box that appears. Then, click **[!UICONTROL Next]**.
 
-   ![](assets/chlimage_1-30.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
-   The value of the allowed path property is a *regular expression.* Pages that have a path that matches the expression can use the template. In this is case the regular expression matches the path of the **/content** folder and all subpages.
+   The value of the allowed path property is a *regular expression.* Pages that have a path that matches the expression can use the template. In this is case the regular expression matches the path of the `/content` folder and all subpages.
 
-   When an author creates a page below /content, the **contentpage** template appears in a list of available templates to use.
+   When an author creates a page below `/content`, the **[!UICONTROL contentpage]** template appears in a list of available templates to use.
 
-1. Click **Next** in the **Allowed Parents** and **Allowed Children** panels and click **OK**. In CRXDE Lite, click **Save All**.
+1. Click **[!UICONTROL Next** in the **[!UICONTROL Allowed Parents]** and **[!UICONTROL Allowed Children]** panels and click **[!UICONTROL OK]**. In CRXDE Lite, click **[!UICONTROL Save All]**.
 
-   ![](assets/chlimage_1-31.png)
+   ![chlimage_1-106](assets/chlimage_1-106.png)
 
 #### Creating the Contentpage Component {#creating-the-contentpage-component}
 
 Create the *component* that defines the content and renders the pages that use the contentpage template. The location of the component must correspond with the value of the Resource Type property of the contentpage template.
 
-1. In CRXDE Lite, right-click `/apps/mywebsite/components` and click **Create** &gt; **Component**.
-1. In the **Create Component** dialog, type the following property values:
+1. In CRXDE Lite, right-click `/apps/mywebsite/components` and click **[!UICONTROL Create > Component]**.
+1. In the **[!UICONTROL Create Component]** dialog, type the following property values:
 
-    * **Label**: contentpage
-    * **Title**: My Website Content Page Component
-    * **Description**: This is My Website Content Page Component
+    * **[!UICONTROL Label]**: contentpage
+    * **[!UICONTROL Title]**: My Website Content Page Component
+    * **[!UICONTROL Description]**: This is My Website Content Page Component
 
-   ![](assets/chlimage_1-32.png)
+   ![chlimage_1-107](assets/chlimage_1-107.png)
 
-   The location of the new component is `/apps/mywebsite/components/contentpage`. This path corresponds with the resource type of the contentpage template (minus the initial **`/apps/`** part of the path).
+   The location of the new component is `/apps/mywebsite/components/contentpage`. This path corresponds with the resource type of the contentpage template (minus the initial `/apps/` part of the path).
 
    This correspondence connects the template to the component and is critical to the correct functioning of the website.
 
-1. Click **Next** until the Allowed Children panel of the dialog appears, and then click **OK**. In CRXDE Lite, click **Save All**.
+1. Click **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel of the dialog appears, and then click **[!UICONTROL OK]**. In CRXDE Lite, click **[!UICONTROL Save All]**.
 
    The structure now looks as follows:
 
-   ![](assets/chlimage_1-33.png)
+   ![chlimage_1-108](assets/chlimage_1-108.png)
 
 #### Developing the Contentpage Component Script {#developing-the-contentpage-component-script}
 
@@ -175,11 +174,11 @@ Add code to the contentpage.jsp script to define the page content.
 
    ```java
    <%--
-
+   
      My Website Content Page Component component.
-
+   
      This is My Website Content Page Component.
-
+   
    --%><%
    %><%@include file="/libs/foundation/global.jsp"%><%
    %><%@page session="false" %><%
@@ -193,7 +192,7 @@ Add code to the contentpage.jsp script to define the page content.
    ```java
    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
        pageEncoding="ISO-8859-1"%>
-   <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
    "https://www.w3.org/TR/html4/loose.dtd">
    <html>
    <head>
@@ -206,73 +205,73 @@ Add code to the contentpage.jsp script to define the page content.
    </html>
    ```
 
-1. Click** Save All** to save your changes.
+1. Click **[!UICONTROL Save All]** to save your changes.
 
 ### Creating your Website Page and Content Pages {#creating-your-website-page-and-content-pages}
 
 In this section, you create the following pages which all use the contentpage template: My Website, English, Products, Services, and Customers.
 
-1. On the AEM Welcome page ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)), click Websites.
+1. On the AEM Welcome page ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), click Websites.
 
-   ![](assets/chlimage_1-34.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
-1. In the folder tree, select the **Websites** folder and then click **New **&gt; **New Page**.
-1. In the** Create Page** window, enter the following:
+1. In the folder tree, select the **[!UICONTROL Websites]** folder and then click **[!UICONTROL New > New Page]**.
+1. In the **[!UICONTROL Create Page]** window, enter the following:
 
-    * Title: `My Website`
-    * Name: `mywebsite`
-    * Select the `My Website Content Page Template`
+    * **[!UICONTROL Title]**: `My Website`
+    * **[!UICONTROL Name]**: `mywebsite`
+    * Select the **[!UICONTROL My Website Content Page Template]**
 
-   ![](assets/chlimage_1-35.png)
+   ![chlimage_1-110](assets/chlimage_1-110.png)
 
-1. Click **Create**. In the folder tree, select the **/Websites/My Website** page and click **New** &gt;** New Page**.
-1. In the Create Page dialog, enter the following property values and then click Create:
+1. Click **[!UICONTROL Create]**. In the folder tree, select the `/Websites/My Website` page and click **[!UICONTROL New > New Page]**.
+1. In the **[!UICONTROL Create Page]** dialog, enter the following property values and then click Create:
 
-    * Title: English
-    * Name: en
-    * Select the My Website Content Page Template
+    * **[!UICONTROL Title]**: English
+    * **[!UICONTROL Name]**: en
+    * Select the **[!UICONTROL My Website Content Page Template]**
 
-1. In the folder tree, select the **/Websites/My Website/English** page and click **New**&gt;** New Page**.
-1. In the** Create Page** dialog, enter the following property values and then click **Create**:
+1. In the folder tree, select the `/Websites/My Website/English` page and click **[!UICONTROL New > New Page]**.
+1. In the **[!UICONTROL Create Page]** dialog, enter the following property values and then click **[!UICONTROL Create]**:
 
-    * Title: Products
-    * Select the My Website Content Page Template
+    * **[!UICONTROL Title]**: Products
+    * Select the **[!UICONTROL My Website Content Page Template]**
 
-1. In the folder tree, select the **/Websites/My Website/English** page and click **New** &gt;** New Page**.
-1. In the **Create Page** dialog, enter the following property values and then click **Create**:
+1. In the folder tree, select the `/Websites/My Website/English` page and click **[!UICONTROL New > New Page]**.
+1. In the **[!UICONTROL Create Page]** dialog, enter the following property values and then click **[!UICONTROL Create]**:
 
-    * Title: Services
-    * Select the My Website Content Page Template
+    * **Title**: Services
+    * Select the **[!UICONTROL My Website Content Page Template]**
 
-1. In the folder tree, select the **/Websites/My Website/English** page and click **New** &gt;** New Page**.
-1. In the** Create Page** dialog, enter the following property values and then click **Create**:
+1. In the folder tree, select the `/Websites/My Website/English` page and click **[!UICONTROL New > New Page]**. 
+1. In the **[!UICONTROL Create Page]** dialog, enter the following property values and then click **[!UICONTROL Create]**:
 
-    * Title: Customers
-    * Select the My Website Content Page Template
+    * **Title**: Customers
+    * Select the **[!UICONTROL My Website Content Page Template]**
 
    Your structure looks as follows:
 
-   ![](assets/chlimage_1-36.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. To link your pages to the mywebsite design, in CRXDE Lite, select the `/content/mywebsite/en/jcr:content` node. On the Properties tab, type the following values for a new property and then click Add:
+1. To link your pages to the mywebsite design, in CRXDE Lite, select the `/content/mywebsite/en/jcr:content` node. On the **[!UICONTROL Properties]** tab, type the following values for a new property and then click Add:
 
-    * Name: cq:designPath
-    * Type: String
-    * Value: /etc/designs/mywebsite
+    * **[!UICONTROL Name]**: cq:designPath
+    * **[!UICONTROL Type]**: String
+    * **[!UICONTROL Value]**: /etc/designs/mywebsite
 
-   ![](assets/chlimage_1-37.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
-1. In a new wb browser tab or window, open [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) to see the Products page:
+1. In a new web browser tab or window, open [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) to see the Products page:
 
-   ![](assets/chlimage_1-38.png)
+   ![chlimage_1-113](assets/chlimage_1-113.png)
 
 ### Enhancing the Contentpage Script {#enhancing-the-contentpage-script}
 
 This section describes how to enhance the contentpage script using the AEM foundation component scripts and by writing your own scripts.
 
-The **Products** page will look as follows:
+The **[!UICONTROL Products]** page will look as follows:
 
-![](assets/chlimage_1.jpeg)
+![chlimage_1-4](assets/chlimage_1-4.jpeg) 
 
 #### Using the Foundation Page Scripts {#using-the-foundation-page-scripts}
 
@@ -285,11 +284,11 @@ For example, in your component JSP code, you can reference the scripts that the 
     1. Select the `/apps/mywebsite/components/contentpage` node.
     1. At the bottom of the Properties tab, type the following property values and then click Add:
 
-        * **Name: **sling:resourceSuperType
-        * **Type: **String
-        * **Value:** foundation/components/page
+        * **[!UICONTROL Name]**: sling:resourceSuperType
+        * **[!UICONTROL Type]**: String
+        * **[!UICONTROL Value]**: foundation/components/page
 
-    1. Click Save All.
+    1. Click **[!UICONTROL Save All]**.
 
 1. Open the `contentpage.jsp` file under `/apps/mywebsite/components/contentpage` and replace the existing code with the following code:
 
@@ -304,9 +303,9 @@ For example, in your component JSP code, you can reference the scripts that the 
    ```
 
 1. Save your changes.
-1. In your browser, reload the Products page. It looks as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page. It looks as follows:
 
-   ![](assets/chlimage_1-1.jpeg)
+   ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
    Open the page source to see the javascript and HTML elements that the head.jsp and body.jsp scripts generated. The following script snippet opens Sidekick when you open the page:
 
@@ -314,7 +313,7 @@ For example, in your component JSP code, you can reference the scripts that the 
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
                {propsDialog: "/libs/foundation/components/page/dialog",
                   locked: false locked: false
-                });
+                }); 
    ```
 
 #### Using your own scripts {#using-your-own-scripts}
@@ -325,9 +324,8 @@ In this section you create several scripts that each generate a part of the page
 
 1. In CRXDE Lite, create the file `left.jsp` under `/apps/mywebsite/components/contentpage`:
 
-    1. Right-click the node `/apps/mywebsite/components/contentpage`, then select **Create **then **Create File**.
-
-    1. In the window, type `left.jsp` as the** Name** and click **OK**.
+    1. Right-click the node `/apps/mywebsite/components/contentpage`, then select **[!UICONTROL Create]** then **[!UICONTROL Create File]**.
+    1. In the window, type `left.jsp` as the** Name** and click **[!UICONTROL OK]**.
 
 1. Edit the file `left.jsp` to remove the existing content and replace with the following code:
 
@@ -343,9 +341,8 @@ In this section you create several scripts that each generate a part of the page
 1. Save the changes.
 1. In CRXDE Lite, create the file `center.jsp` under `/apps/mywebsite/components/contentpage`:
 
-    1. Right-click the node `/apps/mywebsite/components/contentpage`, select **Create**, then **Create File**.
-
-    1. In the dialog box, type `center.jsp` as **Name** and click **OK**.
+    1. Right-click the node `/apps/mywebsite/components/contentpage`, select **[!UICONTROL Create]**, then **[!UICONTROL Create File]**.
+    1. In the dialog, type `center.jsp` as **[!UICONTROL Name]** and click **[!UICONTROL OK]**.
 
 1. Edit the file `center.jsp` to remove the existing content and replace it with the following code:
 
@@ -361,9 +358,8 @@ In this section you create several scripts that each generate a part of the page
 1. Save the changes.
 1. In CRXDE Lite, create the file `right.jsp` under `/apps/mywebsite/components/contentpage`:
 
-    1. Right-click the node `/apps/mywebsite/components/contentpage`, select **Create**, then **Create File**.
-
-    1. In the dialog box, type `right.jsp` as **Name** and click **OK**.
+    1. Right-click the node `/apps/mywebsite/components/contentpage`, select **[!UICONTROL Create]**, then **[!UICONTROL Create File]**.
+    1. In the dialog box, type `right.jsp` as **[!UICONTROL Name]** and click **[!UICONTROL OK]**.
 
 1. Edit the file `right.jsp` to remove the existing content and replace with the following code:
 
@@ -396,9 +392,9 @@ In this section you create several scripts that each generate a part of the page
    ```
 
 1. Save the changes.
-1. In your browser, reload the Products page. It looks as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page. It looks as follows:
 
-   ![](assets/chlimage_1-2.jpeg)
+   ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
 ### Creating the Top Navigation Component {#creating-the-top-navigation-component}
 
@@ -408,20 +404,18 @@ In the first version of the top navigation component (topnav) the navigation ite
 
 Your top navigation will look as follows:
 
-![](assets/chlimage_1-39.png)
+![chlimage_1-114](assets/chlimage_1-114.png) 
 
 #### Creating the Top Navigation Component {#creating-the-top-navigation-component-1}
 
-1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **Create**, then **Create Component**.
-1. In the **Create Component** window, enter the following:
+1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **[!UICONTROL Create]**, then **[!UICONTROL Create Component]**.
+1. In the **[!UICONTROL Create Component]** window, enter the following:
 
-    * **Label**: `topnav`
+    * **[!UICONTROL Label]**: `topnav`
+    * **[!UICONTROL Title]**: `My Top Navigation Component`
+    * **[!UICONTROL Description]**: `This is My Top Navigation Component`
 
-    * **Title**: `My Top Navigation Component`
-
-    * **Description**: `This is My Top Navigation Component`
-
-1. Click **Next** until you come to the last window where you click **OK**. Save your changes.
+1. Click **[!UICONTROL Next]** until you come to the last window where you click **[!UICONTROL OK]**. Save your changes.
 
 #### Creating the Top Navigation Script with Textual Links {#creating-the-top-navigation-script-with-textual-links}
 
@@ -431,23 +425,23 @@ Add the rendering script to topnav to generate text links to child pages:
 1. Replace the code that is there by copying and pasting the following code:
 
    ```xml
-   <%@include file="/libs/foundation/global.jsp"%><%
+   <%@include file="/libs/foundation/global.jsp"%><% 
    %><%@ page import="java.util.Iterator,
-           com.day.text.Text,
-           com.day.cq.wcm.api.PageFilter, com.day.cq.wcm.api.Page" %><%
+           com.day.text.Text, 
+           com.day.cq.wcm.api.PageFilter, com.day.cq.wcm.api.Page" %><% 
        /* get starting point of navigation */
-       Page navRootPage = currentPage.getAbsoluteParent(2);
-       if (navRootPage == null && currentPage != null) {
-       navRootPage = currentPage;
+       Page navRootPage = currentPage.getAbsoluteParent(2); 
+       if (navRootPage == null && currentPage != null) { 
+       navRootPage = currentPage; 
        }
-       if (navRootPage != null) {
+       if (navRootPage != null) { 
            Iterator<Page> children = navRootPage.listChildren(new PageFilter(request));
-           while (children.hasNext()) {
-               Page child = children.next();
-               %><a href="<%= child.getPath() %>.html"><%=child.getTitle() %></a><%
-           }
-       }
-   %>
+           while (children.hasNext()) { 
+               Page child = children.next(); 
+               %><a href="<%= child.getPath() %>.html"><%=child.getTitle() %></a><% 
+           } 
+       } 
+   %> 
    ```
 
 #### Including Top Navigation in the Contentpage Component {#including-top-navigation-in-the-contentpage-component}
@@ -467,19 +461,19 @@ To include topnav in your contentpage component:
    ```
 
 1. Save the changes.
-1. In your browser, reload the Products Page. The top navigation appears as follows:
+1. In your browser, reload the **[!UICONTROL Products]** Page. The top navigation appears as follows:
 
-   ![](assets/chlimage_1-40.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 #### Enhancing Pages with Subtitles {#enhancing-pages-with-subtitles}
 
-The Page component defines properties that enable you to provide subtitles for pages. Add subtitles that provide information about the page content.
+The **[!UICONTROL Page]** component defines properties that enable you to provide subtitles for pages. Add subtitles that provide information about the page content.
 
-1. In your browser, open the **Products** page.
-1. On the Sidekick **Page** tab, click **Page Properties**.
-1. On the Basic tab of the dialog, expand **More Titles and Description,** and for the **Subtitle **property, type **what we do**. Click **OK**.
-1. Repeat the previous steps to add the subtitle **about our services** to the **Services** page.
-1. Repeat the previous steps to add the subtitle **the trust we earn** to the **Customers** page.
+1. In your browser, open the **[!UICONTROL Products]** page.
+1. On the Sidekick **[!UICONTROL Page]** tab, click **[!UICONTROL Page Properties]**.
+1. On the **[!UICONTROL Basic]** tab of the dialog, expand **[!UICONTROL More Titles and Description]** and for the **[!UICONTROL Subtitle]** property, type `what we do`. Click **[!UICONTROL OK]**.
+1. Repeat the previous steps to add the subtitle **about our services** to the **[!UICONTROL Services]** page.
+1. Repeat the previous steps to add the subtitle **the trust we earn** to the **[!UICONTROL Customers]** page.
 
    **Tip:** In CRXDE Lite, select the /content/mywebsite/en/products/jcr:content node to see that the subtitle property is added.
 
@@ -489,7 +483,7 @@ Enhance the rendering script of the topnav component to use image links instead 
 
 This exercise demonstrates [Sling request processing](/help/sites-developing/the-basics.md#sling-request-processing). The topnav.jsp script is modified to call a script that dynamically generates images to use for the page navigation links. In this exercise, Sling parses the URL of image source files to determine the script to use to render the images.
 
-For example, the source for the image link to the Products page could be https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling parses this URL to determine the resource type and the script to use to render the resource:
+For example, the source for the image link to the Products page could be http://localhost:4502/content/mywebsite/en/products.navimage.png. Sling parses this URL to determine the resource type and the script to use to render the resource:
 
 1. Sling determines the path of the resource to be `/content/mwebysite/en/products.png.`
 1. Sling matches this path with the `/content/mywebsite/en/products` node.
@@ -512,55 +506,55 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
    ```
 
 1. Save the changes.
-1. Right-click the `/apps/mywebsite/components/contentpage` node and click **Create **&gt; **Create File**.
-1. In the **Create File** window, as **Name**, type `navimage.png.java`.
+1. Right-click the `/apps/mywebsite/components/contentpage` node and click **[!UICONTROL Create > Create File]**.
+1. In the **[!UICONTROL Create File]** window, as **[!UICONTROL Name]**, type `navimage.png.java`.
 
    The .java file name extension indicates to Sling that the Apache Sling Scripting Java Support should be used to compile the script and create a servlet.
 
 1. Copy the following code into `navimage.png.java.`The code extends the AbstractImageServlet class:
 
-    * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
-    * The parent page of the resource is extracted from the ImageContext object. The page title and subtitle are then obtained.
-    * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
+    * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
+    * The parent page of the resource is extracted from the ImageContext object. The page title and subtitle are then obtained. 
+    * [ImageHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
 
    ```java
    package apps.mywebsite.components.contentpage;
-
-   import java.awt.Color;
-   import java.awt.Paint;
-   import java.awt.geom.Rectangle2D;
-
+   
+   import java.awt.Color; 
+   import java.awt.Paint; 
+   import java.awt.geom.Rectangle2D; 
+   
    import java.io.IOException;
-   import javax.jcr.RepositoryException;
+   import javax.jcr.RepositoryException; 
 
-   import com.day.cq.wcm.api.Page;
-   import com.day.cq.wcm.api.PageManager;
-   import com.day.cq.wcm.api.components.Component;
+   import com.day.cq.wcm.api.Page; 
+   import com.day.cq.wcm.api.PageManager; 
+   import com.day.cq.wcm.api.components.Component; 
    import com.day.cq.wcm.api.designer.Designer;
-
-   import com.day.cq.commons.SlingRepositoryException;
-   import com.day.cq.wcm.commons.WCMUtils;
-   import com.day.cq.wcm.commons.AbstractImageServlet;
-   import com.day.cq.commons.ImageHelper;
-
-   import com.day.image.Font;
-   import com.day.image.Layer;
-
-   import org.apache.sling.api.SlingHttpServletRequest;
-   import org.apache.sling.api.SlingHttpServletResponse;
-   import org.apache.sling.api.resource.Resource;
-   import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
-
+   
+   import com.day.cq.commons.SlingRepositoryException; 
+   import com.day.cq.wcm.commons.WCMUtils; 
+   import com.day.cq.wcm.commons.AbstractImageServlet; 
+   import com.day.cq.commons.ImageHelper; 
+   
+   import com.day.image.Font; 
+   import com.day.image.Layer; 
+   
+   import org.apache.sling.api.SlingHttpServletRequest; 
+   import org.apache.sling.api.SlingHttpServletResponse; 
+   import org.apache.sling.api.resource.Resource; 
+   import org.apache.sling.api.servlets.SlingSafeMethodsServlet; 
+   
    /**
      * Renders the navigation image
-     */
+     */ 
    public class navimage_png extends AbstractImageServlet {
-
+   
          protected Layer createLayer(ImageContext ctx)
                 throws RepositoryException, IOException {
             PageManager pageManager = ctx.resolver.adaptTo(PageManager.class);
             Page currentPage = pageManager.getContainingPage(ctx.resource);
-
+   
             /* constants for image appearance */
             int scale = 6;
             int paddingX = 24;
@@ -578,22 +572,22 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
             Paint titleColor = Color.WHITE;
             Font titleFont = new Font("Myriad Pro", 10 * scale, Font.BOLD);
             int titleBase = 10 * scale;
-
+   
             /* obtain and format the page subtitle */
             String subtitle = currentPage.getProperties().get("subtitle", "");
             Paint subtitleColor = new Color(0xffa9afb1, true);
             Font subTitleFont = new Font("Tahoma", 7);
             int subTitleBase = 20;
-
+   
             /* create a layer that contains the background image from the mywebsite design */
             Designer dg = ctx.resolver.adaptTo(Designer.class);
             String imgPath = new String(dg.getDesignPath(currentPage)+"/images/navimage_bg.jpg");
             Layer bg = ImageHelper.createLayer(ctx.resolver.resolve(imgPath));
-
+   
             /* draw the title text (4 times bigger) */
             Rectangle2D titleExtent = titleFont.getTextExtent(0, 0, 0, 0, title, Font.ALIGN_LEFT, 0, 0);
             Rectangle2D subtitleExtent = subTitleFont.getTextExtent(0, 0, 0, 0, subtitle, Font.ALIGN_LEFT, 0, 0);
-
+   
             /* ensure subtitleExtent is wide enough */
             if ( subtitle.length() > 0 ) {
                 int titleWidth = (int)titleExtent.getWidth() / scale;
@@ -614,108 +608,108 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
             text.resize(text.getWidth() / scale, text.getHeight() / scale);
             text.setX(0);
             text.setY(0);
-
+   
             if (subtitle.length() > 0) {
                 /* draw the subtitle normal sized */
                 text.setPaint(subtitleColor);
-                text.drawText(0, subTitleBase, 0, 0, subtitle, subTitleFont, Font.ALIGN_LEFT | Font.ALIGN_BASE, 0, 0);
+                text.drawText(0, subTitleBase, 0, 0, subtitle, subTitleFont, Font.ALIGN_LEFT | Font.ALIGN_BASE, 0, 0); 
             }
-
+   
             /* merge the image and text layers */
             text.setY(paddingY);
             text.setX(paddingX);
             text.setBackgroundColor(bgColor);
-
+   
             int bgWidth = bg.getWidth();
             if ( text.getWidth() + 2 * paddingX > bgWidth ) {
                 bgWidth = text.getWidth() + 2 * paddingX;
                 bg.resize(bgWidth, bg.getHeight());
             }
             bg.merge(text);
-
+   
             return bg;
         }
     }
    ```
 
 1. Save the changes.
-1. In your browser, reload the Products page. The top navigation now appears as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page. The top navigation now appears as follows:
 
-   ![](assets/screen_shot_2012-03-07at10047pm.png)
+   ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
 ### Creating the List Children Component {#creating-the-list-children-component}
 
 Create the listchildren component that generates a list of page links that include the title, description, and date of pages (for example, product pages). The links target the child pages of the current page, or of a root page that is specified in the component dialog.
 
-![](assets/chlimage_1-41.png)
+![chlimage_1-116](assets/chlimage_1-116.png) 
 
 #### Creating Product Pages {#creating-product-pages}
 
-Create two pages located below the Products page. For each page, which describe two specific products, you set a title, a description, and a date.
+Create two pages located below the **[!UICONTROL Products]** page. For each page, which describe two specific products, you set a title, a description, and a date.
 
-1. In the folder tree of the Websites page, select the Websites/My Website/English/Products item and click New &gt; New Page.
-1. In the dialog enter the following property values and then click Create:
+1. In the folder tree of the **[!UICONTROL Websites]** page, select the **[!UICONTROL Websites/My Website/English/Products]** item and click **[!UICONTROL New > New Page]**.
+1. In the dialog enter the following property values and then click **[!UICONTROL Create]**:
 
-    * Title: Product 1.
-    * Name: product1.
-    * Select My Website Content Page Template
+    * **[!UICONTROL Title]**: Product 1.
+    * **[!UICONTROL Name]**: product1.
+    * Select **[!UICONTROL My Website Content Page Template]**
 
 1. Create another page below Products using the following property values:
 
-    * Title: Product 2
-    * Name: product2
-    * Select My Website Content Page Template
+    * **[!UICONTROL Title]**: Product 2
+    * **[!UICONTROL Name]**: product2
+    * Select **[!UICONTROL My Website Content Page Template]**
 
 1. In CRXDE Lite, set a description and a date for the Product 1 page:
 
-    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node.
-    1. In the **Properties** tab, enter the following values:
+    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node. 
+    1. In the **[!UICONTROL Properties]** tab, enter the following values:
 
-        * Name: `jcr:description`
-        * Type: `String`
-        * Value: `This is a description of the Product 1!.`
+        * **[!UICONTROL Name]**: `jcr:description`
+        * **[!UICONTROL Type]**: `String`
+        * **[!UICONTROL Value]**: `This is a description of the Product 1!.`
 
-    1. Click **Add**.
-    1. In the **Properties** tab, create another property using the following values:
+    1. Click **[!UICONTROL Add]**.
+    1. In the **[!UICONTROL Properties]** tab, create another property using the following values:
 
-        * Name: date
-        * Type: String
-        * Value: 02/14/2008
-        * Click Add.
+        * **[!UICONTROL Name]**: date
+        * **[!UICONTROL Type]**: String
+        * **[!UICONTROL Value]**: 02/14/2008
+        * Click **[!UICONTROL Add]**.
 
-    1. Click Save All.
+    1. Click **[!UICONTROL Save All]**.
 
 1. In CRXDE Lite, set a description and a date for the Product 2 page:
 
-    1. Select the /content/mywebsite/en/products/product2/jcr:content node.
-    1. In the **Properties** tab, enter the following values:
+    1. Select the `/content/mywebsite/en/products/product2/jcr:content` node. 
+    1. In the **[!UICONTROL Properties]** tab, enter the following values:
 
-        * Name: jcr:description
-        * Type: String
-        * Value: This is a description of the Product 2!.
+        * **[!UICONTROL Name]**: jcr:description
+        * **[!UICONTROL Type]**: String
+        * **[!UICONTROL Value]**: This is a description of the Product 2!.
 
-    1. Click **Add**.
+    1. Click **[!UICONTROL Add]**.
     1. In the same text boxes, replace the previous values with the following values:
 
-        * Name: date
-        * Type: String
-        * Value: 05/11/2012
-        * Click Add.
+        * **[!UICONTROL Name]**: date
+        * **[!UICONTROL Type]**: String
+        * **[!UICONTROL Value]**: 05/11/2012
+        * Click **[!UICONTROL Add]**.
 
-    1. Click Save All.
+    1. Click **[!UICONTROL Save All]**.
 
 #### Creating the List Children Component {#creating-the-list-children-component-1}
 
 To create the listchildren component:
 
-1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **Create**, then **Create Component**.
-1. In the dialog enter the following property values and then click Next:
+1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **[!UICONTROL Create]**, then **[!UICONTROL Create Component]**.
+1. In the dialog enter the following property values and then click **[!UICONTROL Next]**:
 
-    * Label: listchildren.
-    * Title: My Listchildren Component.
-    * Description: This is My Listchildren Component.
+    * **[!UICONTROL Label]**: listchildren.
+    * **[!UICONTROL Title]**: My Listchildren Component.
+    * **[!UICONTROL Description]**: This is My Listchildren Component.
 
-1. Continue clicking Next until the Allowed Children panel appears, and then click OK.
+1. Continue clicking **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel appears, and then click **[!UICONTROL OK]**.
 
 #### Creating the List Children Script {#creating-the-list-children-script}
 
@@ -728,7 +722,7 @@ Develop the script for the listchildren component.
    <%@include file="/libs/foundation/global.jsp"%><%
    %><%@ page import="java.util.Iterator,
             com.day.cq.wcm.api.PageFilter"%><%
-        /* Create a new Page object using the path of the current page */
+        /* Create a new Page object using the path of the current page */ 
          String listroot = properties.get("listroot", currentPage.getPath());
         Page rootPage = pageManager.getPage(listroot);
         /* iterate through the child pages and gather properties */
@@ -740,7 +734,7 @@ Develop the script for the listchildren component.
                 String date = child.getProperties().get("date","");
                 %><div class="item">
                 <a href="<%= child.getPath() %>.html"><b><%= title %></b></a>
-                <span><%= date %></code><br>
+                <span><%= date %></span><br>
                 <%= child.getProperties().get("jcr:description","") %><br>
                 </div><%
             }
@@ -756,40 +750,38 @@ Create the dialog that is used to configure the listchildren component propertie
 
 1. Create the dialog node under the listchildren component:
 
-    1. In CRXDE Lite, right-click the `/apps/mywebsite/components/listchildren`node and click **Create** &gt; **Create Dialog**.
-
+    1. In CRXDE Lite, right-click the `/apps/mywebsite/components/listchildren`node and click **[!UICONTROL Create > Create Dialog]**.
     1. In the dialog, enter the following property values and click OK
 
-        * **Label**: `dialog`
+        * **[!UICONTROL Label]**: `dialog`
+        * **[!UICONTROL Title]**: `Edit Component` and click **[!UICONTROL OK]**.
 
-        * **Title**: `Edit Component` and click **OK**.
-
-   ![](assets/screen_shot_2012-03-07at45818pm.png)
+   ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
    With the following properties:
 
-   ![](assets/screen_shot_2012-03-07at50415pm.png)
+   ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
 1. Select the `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` node.
-1. In the Properties tab, change the value of the **title** property to `List Children`
+1. In the **[!UICONTROL Properties]** tab, change the value of the **[!UICONTROL title]** property to `List Children`
 
-   ![](assets/chlimage_1-42.png)
+   ![chlimage_1-117](assets/chlimage_1-117.png)
 
-1. Select the tab1 node and click Create &gt; Create Node, enter the following property values, and click OK:
+1. Select the **tab1** node and click **[!UICONTROL Create > Create Node]**, enter the following property values, and click **[!UICONTROL OK]**:
 
-    * Name: items
-    * Type: cq:WidgetCollection
+    * **[!UICONTROL Name]**: items
+    * **[!UICONTROL Type]**: cq:WidgetCollection
 
-   ![](assets/screen_shot_2012-03-07at51018pm.png)
+   ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. Create a node below the items node using the following property values:
 
-    * Name: listroot
-    * Type: cq:Widget
+    * **[!UICONTROL Name]**: listroot
+    * **[!UICONTROL Type]**: cq:Widget
 
-   ![](assets/screen_shot_2012-03-07at51031pm.png)
+   ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Add properties for the listroot node to configure it as a text field. Each row in the following table represents a property. When finished, click Save All.
+1. Add properties for the listroot node to configure it as a text field. Each row in the following table represents a property. When finished, click **[!UICONTROL Save All]**.
 
    | Name |Type |Value |
    |---|---|---|
@@ -797,7 +789,7 @@ Create the dialog that is used to configure the listchildren component propertie
    | name |String |./listroot |
    | xtype |String |textfield |
 
-   ![](assets/screen_shot_2012-03-07at51433pm.png)
+   ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
 
 #### Including List Children in the Contentpage Component {#including-list-children-in-the-contentpage-component}
 
@@ -824,15 +816,15 @@ To see the full operation of this component you can view the Products page:
 * when the parent page ("Path of list root") is not defined.
 * when the parent page ("Path of list root") is defined.
 
-1. In your browser, reload the Products Page. The listchildren component appears as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page. The listchildren component appears as follows:
 
-   ![](assets/chlimage_1-43.png)
+   ![chlimage_1-118](assets/chlimage_1-118.png)
 
-1. ![](assets/chlimage_1-44.png)
+1. ![chlimage_1-119](assets/chlimage_1-119.png)
 
-1. As Path of list root, enter: `/content/mywebsite/en`. Click OK. The listchildren component on your page now looks as follows:
+1. As Path of list root, enter: `/content/mywebsite/en`. Click **[!UICONTROL OK]**. The listchildren component on your page now looks as follows:
 
-   ![](assets/chlimage_1-45.png)
+   ![chlimage_1-120](assets/chlimage_1-120.png)
 
 ### Creating the Logo Component {#creating-the-logo-component}
 
@@ -845,7 +837,7 @@ Your design-mode dialog contains properties for setting the image and the link p
 
 It will look as follows:
 
-![](assets/chlimage_1-46.png)
+![chlimage_1-121](assets/chlimage_1-121.png)
 
 >[!NOTE]
 >
@@ -855,14 +847,14 @@ It will look as follows:
 
 To create the logo component, follow the steps:
 
-1. In CRXDE Lite, right-click /apps/mywebsite/components, select **Create**, then **Create Component**.
+1. In CRXDE Lite, right-click /apps/mywebsite/components, select **[!UICONTROL Create]**, then **[!UICONTROL Create Component]**.
 1. In the Create Component dialog enter the following property values and then click Next:
 
-    * Label: `logo`.
-    * Title: `My Logo Component`.
-    * Description: `This is My Logo Component`.
+    * **[!UICONTROL Label]**: `logo`.
+    * **[!UICONTROL Title]**: `My Logo Component`.
+    * **[!UICONTROL Description]**: `This is My Logo Component`.
 
-1. Click Next until you reach the final panel of the dialog and then click **OK**.
+1. Click Next until you reach the final panel of the dialog and then click **[!UICONTROL OK]**.
 
 #### Creating the Logo Script {#creating-the-logo-script}
 
@@ -909,16 +901,14 @@ Create the dialog for configuring your logo component in Design mode. Design-mod
 
 1. Create the dialog node under the logo component:
 
-    1. Right-click the `/apps/mywebsite/components/logo` node and click **Create** &gt; **Create Dialog**.
+    1. Right-click the `/apps/mywebsite/components/logo` node and click **[!UICONTROL Create > Create Dialog]**.
+    1. Type the following property values and then click **[!UICONTROL OK]**:
 
-    1. Type the following property values and then click OK:
+        * **[!UICONTROL Label]** `design_dialog` 
+        * **[!UICONTROL Title]** `Logo (Design)`
 
-        * **Label:** `design_dialog`
-
-        * **Title:** `Logo (Design)`
-
-1. Right-click the tab1 node in the design_dialog branch and click Delete. Click Save All.
-1. Under the `design_dialog/items/items`node, create a new node named `img` of type `cq:Widget`. Add the following properties and then click Save All:
+1. Right-click the tab1 node in the design_dialog branch and click Delete. Click **[!UICONTROL Save All]**.
+1. Under the `design_dialog/items/items`node, create a new node named `img` of type `cq:Widget`. Add the following properties and then click **[!UICONTROL Save All]**:
 
    | Name |Type |Value |
    |---|---|---|
@@ -928,14 +918,14 @@ Create the dialog for configuring your logo component in Design mode. Design-mod
    | title |String |Image |
    | xtype |String |html5smartimage |
 
-   ![](assets/chlimage_1-47.png)
+   ![chlimage_1-122](assets/chlimage_1-122.png)
 
 #### Creating the logo render script {#creating-the-logo-render-script}
 
 Create the script that retrieves the logo image and writes it to the page.
 
-1. Right-clck the logo component node and click Create &gt; Create File to create the script file named img.GET.java.
-1. Open the file, copy the following code into the file, and then click Save All:
+1. Right-click the logo component node and click **[!UICONTROL Create > Create File]** to create the script file named img.GET.java.
+1. Open the file, copy the following code into the file, and then click **[!UICONTROL Save All]**:
 
 ```java
 package apps.mywebsite.components.logo;
@@ -1018,26 +1008,26 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. Save the changes.
-1. In your browser, reload the Products page. The logo looks as follows, though currently it only shows the underlying link:
+1. In your browser, reload the **[!UICONTROL Products]** page. The logo looks as follows, though currently it only shows the underlying link:
 
-   ![](assets/chlimage_1-48.png)
+   ![chlimage_1-123](assets/chlimage_1-123.png)
 
 #### Setting the Logo Image in a Page {#setting-the-logo-image-in-a-page}
 
 This section describes how to set an image as your logo using the design mode dialog.
 
-1. With the Products page open in your browser, click the Design button at the bottom of Sidekick to enter design mode.
+1. With the **[!UICONTROL Products]** page open in your browser, click the **[!UICONTROL Design]** button at the bottom of Sidekick to enter **[!UICONTROL Design]** mode.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![](do-not-localize/chlimage_1-10.png)
 
-1. In the Design of logo bar, click Edit to use the dialog to edit the settings for the logo component.
-1. In the dialog, click in the panel of the Image tab, browse for the logo.png image that you extracted from the mywebsite.zip file, and click OK.
+1. In the Design of logo bar, click **[!UICONTROL Edit]** to use the dialog to edit the settings for the logo component.
+1. In the dialog, click in the panel of the **[!UICONTROL Image]** tab, browse for the `logo.png` image that you extracted from the `mywebsite.zip` file, and click **[!UICONTROL OK]**.
 
-   ![](assets/chlimage_1-49.png)
+   ![chlimage_1-124](assets/chlimage_1-124.png)
 
-1. Click the triangle on the Sidekick title bar to return to Edit mode.
+1. Click the triangle on the Sidekick title bar to return to **[!UICONTROL Edit]** mode.
 
-   ![](assets/chlimage_1-3.jpeg)
+   ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
 1. In CRXDE Lite, go to the following node to see the stored property values:
 
@@ -1060,9 +1050,9 @@ In this section, you include the breadcrumb (trail) component, which is one of t
    ```
 
 1. Save the changes.
-1. In your browser, reload the **Products 1** page. The trail component looks as follows:
+1. In your browser, reload the **[!UICONTROL Products 1]** page. The trail component looks as follows:
 
-   ![](assets/chlimage_1-50.png)
+   ![chlimage_1-125](assets/chlimage_1-125.png)
 
 ### Including the Title Component {#including-the-title-component}
 
@@ -1081,11 +1071,12 @@ In this section, you include the title component, which is one of the foundation
    ```
 
 1. Save the changes.
-1. In your browser, reload the Products page. The title component looks as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page. The title component looks as follows:
 
-   ![](assets/chlimage_1-51.png)
+   ![chlimage_1-126](assets/chlimage_1-126.png)
 
-   **Note**: You can set a different Title and the Type/Size in edit mode.
+>[!Note]
+>You can set a different Title and the Type/Size in **[!UICONTROL Edit]** mode.
 
 ### Including the Paragraph System Component {#including-the-paragraph-system-component}
 
@@ -1105,9 +1096,9 @@ Add the parsys component (one of the foundation components) to your contentpage 
    <cq:include path="par" resourceType="foundation/components/parsys" />
    ```
 
-1. In your browser, refresh the Products page. It now has the parsys component, which is seen as follows:
+1. In your browser, refresh the **[!UICONTROL Products]** page. It now has the parsys component, which is seen as follows:
 
-   ![](assets/chlimage_1-52.png)
+   ![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### Creating the Image Component {#creating-the-image-component}
 
@@ -1119,9 +1110,9 @@ Create a component that displays an image in the paragraph system. To save time,
 
 #### Creating the Image Component {#creating-the-image-component-1}
 
-1. Right click the `/apps/mywebsite/components/logo` node and click Copy.
-1. Right-click the `/apps/mywebsite/components` node and click Paste.
-1. Right-click the `Copy of logo` node, click Rename, delete the existing text and type `image`.
+1. Right click the `/apps/mywebsite/components/logo` node and click **[!UICONTROL Copy]**.
+1. Right-click the `/apps/mywebsite/components` node and click **[!UICONTROL Paste]**.
+1. Right-click the `Copy of logo` node, click **[!UICONTROL Rename]**, delete the existing text and type `image`.
 
 1. Select the `image` component node, and change the following property values:
 
@@ -1130,9 +1121,9 @@ Create a component that displays an image in the paragraph system. To save time,
 
 1. Add a property to the `image` node with the following property values:
 
-    * Name: componentGroup
-    * Type: String
-    * Value: MyWebsite
+    * **[!UICONTROL Name]**: componentGroup
+    * **[!UICONTROL Type]**: String
+    * **[!UICONTROL Value]**: MyWebsite
 
 1. Below the `image` node, rename the `design_dialog` node to `dialog`.
 
@@ -1140,7 +1131,7 @@ Create a component that displays an image in the paragraph system. To save time,
 
 1. Open img.GET.java and change the package to `apps.mywebsite.components.image`.
 
-![](assets/chlimage_1-53.png)
+![chlimage_1-128](assets/chlimage_1-128.png) 
 
 #### Creating the Image Script {#creating-the-image-script}
 
@@ -1176,18 +1167,18 @@ In this section, you use a cq:editConfig node to enable you to drag assets from 
 
 1. In CRXDE Lite, under the node /apps/mywebsite/components/image, create a new node as follows:
 
-    * Name: cq:editConfig.
-    * Type: cq:EditConfig.
+    * **[!UICONTROL Name]**: cq:editConfig.
+    * **[!UICONTROL Type]**: cq:EditConfig.
 
 1. Under the node cq:editConfig, create a new node as follows:
 
-    * Name: cq:dropTargets.
-    * Type: cq:DropTargetConfig.
+    * **[!UICONTROL Name]**: cq:dropTargets.
+    * **[!UICONTROL Type]**: cq:DropTargetConfig.
 
 1. Under the node cq:dropTargets, create a new node as follows:
 
-    * Name: image.
-    * Type: nt:unstructured.
+    * **[!UICONTROL Name]**: image.
+    * **[!UICONTROL Type]**: nt:unstructured.
 
 1. In CRXDE set the properties as follows:
 
@@ -1197,27 +1188,27 @@ In this section, you use a cq:editConfig node to enable you to drag assets from 
 | groups |String |media |
 | propertyName |String |./imageReference |
 
-![](assets/chlimage_1-54.png)
+![chlimage_1-129](assets/chlimage_1-129.png) 
 
 #### Adding the icon {#adding-the-icon}
 
 In this section, you add the icon to appear beside the image component when it is listed in Sidekick:
 
-1. In CRXDE Lite, right-click the file `/libs/foundation/components/image/icon.png` and select **Copy.**
-1. Right-click the node `/apps/mywebsite/components/image` and click** Paste**, then click **Save All**.
+1. In CRXDE Lite, right-click the file `/libs/foundation/components/image/icon.png` and select **[!UICONTROL Copy]**.
+1. Right-click the node `/apps/mywebsite/components/image` and click **[!UICONTROL Paste]**, then click **[!UICONTROL Save All]**.
 
 #### Using the Image Component {#using-the-image-component}
 
-In this section, you will view the** Products **page and add your image component to the paragraph system.
+In this section, you will view the **[!UICONTROL Products]** page and add your image component to the paragraph system.
 
-1. In your browser, reload the **Products **page.
-1. In the Sidekick, click the **design mode** icon.
-1. Click the Edit button to edit the design dialog of par.
-1. In the dialog, a list of **Allowed Components** is shown; navigate to **MyWebsite**, select the **My Image Component** and click **OK.**
-1. Return to **edit mode.**
-1. Double-click the parsys frame (on **Drag components or assets here**). The **Insert New Component** and **Sidekick** selectors look as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page.
+1. In the Sidekick, click the **[!UICONTROL Design mode]** icon.
+1. Click the **[!UICONTROL Edit]** button to edit the design dialog of par.
+1. In the dialog, a list of **[!UICONTROL Allowed Components]** is shown; navigate to **[!UICONTROL MyWebsite]**, select the **[!UICONTROL My Image Component]** and click **[!UICONTROL OK]**.
+1. Return to **[!UICONTROL Edit mode]**.
+1. Double-click the parsys frame (on **[!UICONTROL Drag components or assets here**). The **[!UICONTROL Insert New Component]** and **[!UICONTROL Sidekick]** selectors look as follows:
 
-   ![](assets/chlimage_1-4.jpeg)
+   ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ### Including the Toolbar Component {#including-the-toolbar-component}
 
@@ -1237,59 +1228,58 @@ You have several options, in edit mode as well as design mode.
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. In the folder tree of the AEM Websites page, select Websites/My Website/English, then click New &gt; New Page. Specify the following property values and click Create:
+1. In the folder tree of the AEM Websites page, select `Websites/My Website/English`, then click **[!UICONTROL New > New Page]**. Specify the following property values and click Create:
 
-    * Title: Toolbar
-    * Select My Website Content Page Template
+    * **[!UICONTROL Title]**: Toolbar
+    * Select **[!UICONTROL My Website Content Page Template]**
 
-1. In the list of pages, right-click the Toolbar page and click Properties. Select Hide In Navigation, and click OK.
+1. In the list of pages, right-click the **[!UICONTROL Toolbar]** page and click **[!UICONTROL Properties]**. Select **[!UICONTROL Hide In Navigation]**, and click **[!UICONTROL OK]**.
 
-   The Hide in Navigation option prevents the page from appearing in navigation components, such as topnav and listchildren.
+   The **[!UICONTROL Hide in Navigation]** option prevents the page from appearing in navigation components, such as topnav and listchildren.
 
-1. Under Toolbar, create following pages:
+1. Under **[!UICONTROL Toolbar]**, create following pages:
 
     * Contacts
     * Feedback
     * Login
     * Search
 
-1. In your browser, reload the Products page. It looks as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page. It looks as follows:
 
-   ![](assets/chlimage_1-55.png)
+   ![chlimage_1-130](assets/chlimage_1-130.png)
 
 ### Creating the Search Component {#creating-the-search-component}
 
 In this section, you create the component to search for content on the website. This search component can be placed in the paragraph system of any page (for example, on a specialized search result page).
 
-Your search input box will look as follows on the **English **page:
+Your search input box will look as follows on the **[!UICONTROL English]** page:
 
-![](assets/chlimage_1-56.png)
+![chlimage_1-131](assets/chlimage_1-131.png) 
 
 #### Creating the Search Component {#creating-the-search-component-1}
 
-1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **Create**, then **Create Component**.
+1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **[!UICONTROL Create]**, then **[!UICONTROL Create Component]**.
 1. Use the dialog to configure the component:
 
     1. One first panel, specify the following property values:
 
-        * Label: search
-        * Title: My Search Component
-        * Description: This is My Search Component
-        * Group: MyWebsite
+        * **[!UICONTROL Label]**: search
+        * **[!UICONTROL Title]**: My Search Component
+        * **[!UICONTROL Description]**: This is My Search Component
+        * **[!UICONTROL Group]**: MyWebsite
 
-    1. Click Next., then click Next again.
-    1. On the Allowed Parents panel, click the + button and type `*/parsys`.
-    1. Click Next and then click OK.
+    1. Click **[!UICONTROL Next]**, then click **[!UICONTROL Next]** again.
+    1. On the **[!UICONTROL Allowed Parents** panel, click the **[!UICONTROL +]** button and type `*/parsys`.
+    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
 
-1. Click Save All.
-1. Copy the following nodes and paste them to the apps/mywebsite/components/search node:
+1. Click **[!UICONTROL Save All]**.
+1. Copy the following nodes and paste them to the `apps/mywebsite/components/search` node:
 
     * `/libs/foundation/components/search/dialog`
-    * `` `/libs/foundation/components/search/i18n`
-
+    * `` `/libs/foundation/components/search/i18n` 
     * `/libs/foundation/components/search/icon.png`
 
-1. Click Save All.
+1. Click **[!UICONTROL Save All]**.
 
 #### Creating the Search Script {#creating-the-search-script}
 
@@ -1344,7 +1334,7 @@ This section describes how to create the search script:
        <p class="searchmeta">Results ${result.startIndex + 1} - ${result.startIndex + fn:length(result.hits)} of ${result.totalMatches} for <b>${fn:escapeXml(search.query)}</b>. (${result.executionTime} seconds)</p>
       <br/>
 
-     <div class="searchresults">
+     <div class="searchresults"> 
        <div class="results">
          <c:forEach var="hit" items="${result.hits}" varStatus="status">
            <div class="hit">
@@ -1361,10 +1351,10 @@ This section describes how to create the search script:
                  <p><fmt:message key="searchTrendsText"/></p>
                  <div class="searchTrends">
                      <c:forEach var="query" items="${trends.queries}">
-                         <a href="<c:url value="${currentPage.path}.html"><c:param name="q" value="${query.query}"/></c:url>"><span style="font-size:${query.size}px"><c:out value="${query.query}"/></code></a>
+                         <a href="<c:url value="${currentPage.path}.html"><c:param name="q" value="${query.query}"/></c:url>"><span style="font-size:${query.size}px"><c:out value="${query.query}"/></span></a>
                      </c:forEach>
                  </div>
-             </c:if>
+             </c:if> 
              <c:if test="${result.facets.languages.containsHit}">
                  <p>Languages</p>
                  <c:forEach var="bucket" items="${result.facets.languages.buckets}">
@@ -1375,7 +1365,7 @@ This section describes how to create the search script:
                          <c:otherwise><a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a></c:otherwise>
                      </c:choose><br/>
                  </c:forEach>
-             </c:if>
+             </c:if> 
              <c:if test="${result.facets.tags.containsHit}">
                  <p>Tags</p>
                  <c:forEach var="bucket" items="${result.facets.tags.buckets}">
@@ -1389,7 +1379,7 @@ This section describes how to create the search script:
                          </c:choose><br/>
                      </c:if>
                  </c:forEach>
-             </c:if>
+             </c:if> 
              <c:if test="${result.facets.mimeTypes.containsHit}">
                  <jsp:useBean id="fileTypes" class="com.day.cq.wcm.foundation.FileTypes"/>
                  <p>File types</p>
@@ -1411,7 +1401,7 @@ This section describes how to create the search script:
                      </c:choose><br/>
                  </c:forEach>
              </c:if>
-
+   
          <c:if test="${fn:length(search.relatedQueries) > 0}">
 
           <br/><br/><div class="related">
@@ -1420,10 +1410,10 @@ This section describes how to create the search script:
                <a href="${currentPage.path}.html?q=${rq}"><c:out value="${rq}"/></a>
            </c:forEach></div>
          </c:if>
-         </div>
+         </div> 
 
          <c:if test="${fn:length(result.resultPages) > 1}">
-           <div class="pagination">
+           <div class="pagination"> 
                <fmt:message key="resultPagesText"/>
            <c:if test="${result.previousPage != null}">
              <a href="${result.previousPage.URL}"><fmt:message key="previousText"/></a>
@@ -1459,11 +1449,11 @@ To include a search input box in the left section of your contentpage, proceed a
    %><div class="left">
    ```
 
-1. Insert the following code **before** that line:
+1. Insert the following code *before* that line:
 
    ```java
    %><%@ page import="com.day.text.Text"%><%
-   %><% String docroot = currentDesign.getPath();
+   %><% String docroot = currentDesign.getPath(); 
    String home = Text.getAbsoluteParent(currentPage.getPath(), 2);%><%
    ```
 
@@ -1479,33 +1469,33 @@ To include a search input box in the left section of your contentpage, proceed a
    <div class="form_1">
         <form class="geo" action="<%= home %>/toolbar/search.html" id="form" >
              <p>
-                  <input class="geo" type="text" name="q"><br>
-                  <a href="<%= home %>/toolbar/search.html" class="link_1">advanced search</a>
+                  <input class="geo" type="text" name="q"><br> 
+                  <a href="<%= home %>/toolbar/search.html" class="link_1">advanced search</a> 
              </p>
         </form>
    </div>
    ```
 
-1. In your browser, reload the Products page. The search component looks as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page. The search component looks as follows:
 
-   ![](assets/chlimage_1-57.png)
+   ![chlimage_1-132](assets/chlimage_1-132.png)
 
 #### Including the Search Component in the Search Page {#including-the-search-component-in-the-search-page}
 
 In this section, you add your search component to the paragraph system.
 
-1. In your browser, open the Search page.
-1. In the Sidekick, click the design mode icon.
-1. In the Design of par block (below the Search title), click Edit.
-1. In the dialog, scroll down to the** My Websites** group, select **My Search Component** and click **OK**.
-1. On Sidekick, click the triangle to return to edit mode.
-1. Drag the My Search Component from the Sidekick into the parsys frame. It looks as follows:
+1. In your browser, open the **Search** page.
+1. In the Sidekick, click the **[!UICONTROL Design]** mode icon.
+1. In the Design of par block (below the Search title), click **[!UICONTROL Edit]**.
+1. In the dialog, scroll down to the **[!UICONTROL My Websites]** group, select **[!UICONTROL My Search Component]** and click **[!UICONTROL OK]**.
+1. On Sidekick, click the triangle to return to **[!UICONTROL Edit]** mode.
+1. Drag the **[!UICONTROL My Search]** component from the Sidekick into the parsys frame. It looks as follows:
 
-   ![](assets/chlimage_1-58.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. Navigate to your Products page. Search for customers in the input box and press Enter. You are redirected to the Search page. Switch to preview mode: the output is in a similar format as the following:
+1. Navigate to your **[!UICONTROL Products]** page. Search for customers in the input box and press **[!UICONTROL Enter]**. You are redirected to the **[!UICONTROL Search]** page. Switch to **[!UICONTROL Preview]** mode: the output is in a similar format as the following:
 
-   ![](assets/chlimage_1-59.png)
+   ![chlimage_1-134](assets/chlimage_1-134.png)
 
 ### Including the Iparsys Component {#including-the-iparsys-component}
 
@@ -1526,7 +1516,7 @@ For this component you can set several parameters in both edit mode and design m
    ```
 
 1. Save the changes.
-1. In your browser, reload the** Products** page. The whole page looks as follows:
+1. In your browser, reload the **[!UICONTROL Products]** page. The whole page looks as follows:
 
-   ![](assets/chlimage_1-5.jpeg)
+   ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 

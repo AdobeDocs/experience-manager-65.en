@@ -3,28 +3,26 @@ title: General AEM Forms settings
 seo-title: General AEM Forms settings
 description: Learn to configure the Core Configurations page settings in administration console that can help improve system performance.
 seo-description: Learn to configure the Core Configurations page settings in administration console that can help improve system performance.
-uuid: 52e5611c-80e6-4193-898a-7348396200bd
+uuid: 940680fd-b7ab-4376-aa5b-e139223522ea
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 3657e719-a1e8-44c8-a894-145d5e28ead9
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 ---
 
-# General AEM Forms settings{#general-aem-forms-settings}
+# General AEM Forms settings {#general-aem-forms-settings}
 
 The Core Configurations page in administration console provides settings that can help improve system performance. After configuring or updating these settings, restart your application server.
 
-For information about enabling safe backup mode, see [Enabling and disabling safe backup mode](/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling_and_disabling_safe_backup_mode).
+For information about enabling safe backup mode, see [Enabling and disabling safe backup mode](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
 >[!NOTE]
 >
 >The files in the temp directory and the long-lived documents in the global document storage (GDS) root directory may contain sensitive user information, such as information that requires special credentials when accessed by using the APIs or user interfaces. Therefore, it is important that this directory is properly secured by using whatever methods are available to the operating system. It is recommended that only the operating system account that is used to run the application server has read and write access to this directory.
 
-1. In administration console, click Settings &gt; Core System Settings &gt; Configurations.
-1. On the Core Configurations page, change the options as required and click OK. For details about the options, see [Core Configurations options](configure-general-aem-forms-settings.md#core_configurations_options).
+1. In administration console, click **[!UICONTROL Settings > Core System Settings > Configurations]**.
+1. On the Core Configurations page, change the options as required and click **[!UICONTROL OK]**. For details about the options, see [Core Configurations options](configure-general-aem-forms-settings.md#core-configurations-options).
 
 ## Core Configurations options {#core-configurations-options}
 
@@ -44,9 +42,9 @@ For information about enabling safe backup mode, see [Enabling and disabling saf
 
 If you do not specify a GDS root directory, the directory defaults to an application server directory:
 
-* *[JBOSS_HOME]*/server/<server>/svcnative/DocumentStorage
-* *[WEBSPHERE_HOME]*/installedApps/adobe/*[server]*/DocumentStorage
-* *[WEBLOGIC_HOME]*/user_projects/<domain>/*[server]*/adobe/AEMformsserver/DocumentStorage
+* `*[JBOSS_HOME]*/server/<server>/svcnative/DocumentStorage`
+* `*[WEBSPHERE_HOME]*/installedApps/adobe/*[server]*/DocumentStorage`
+* `*[WEBLOGIC_HOME]*/user_projects/<domain>/*[server]*/adobe/AEMformsserver/DocumentStorage`
 
 ***Note**: Changing the value of the GDS root directory setting should be done with special care. The GDS directory is used to store both long-lived files used within a process as well as critical AEM forms product components. Changing the location of the GDS directory is a major system change. Incorrectly configuring the location of the GDS directory will render AEM forms inoperative and may require a complete reinstallation of AEM forms. If you specify a new location for the GDS directory, the application server needs to be shut down and the data migrated before the server can be restarted. The system administrator must move all files from the old location to the new location but keep the internal directory structure.*
 
@@ -60,7 +58,7 @@ For additional information about the GDS directory, see [Preparing to Install AE
 
 ***note**: Fonts are picked from the Windows system font cache and a system restart is required to update the cache. After specifying the Customer font directory, ensure that you restart the system on which AEM forms is installed.*
 
-**Location of the System Fonts directory** Type the path to the fonts directory that your operating system provided. Multiple directories can be added, separated by a semicolon (;).
+**Location of the System Fonts directory** Type the path to the fonts directory that your operating system provided. Multiple directories can be added, separated by a semicolon **;**.
 
 **Location of Data Services Configuration file** Specifies the location of the services-config.xml file. By default, this file is embedded in the adobe-core-appserver.ear file and is not user-accessible. A copy of the default services-config.xml file is located in [aem-forms root]\sdk\misc\DataServices\Server-Configuration. If you changed this file and moved it, type the new location in this field.
 
@@ -86,11 +84,7 @@ FIPS mode does not support encryption algorithms that are used in Adobe AcrobatÂ
 
 In general, when FIPS is enabled, the Assembler service will not apply password encryption to any document. If this is attempted, a FIPSModeException is thrown indicating that "Password encryption is not permitted in FIPS mode." Additionally, the Document Description XML (DDX) PDFsFromBookmarks element is not supported in FIPS mode when the base document is password-encrypted.
 
->[!NOTE]
->
->***Note**: AEM forms software does not validate code to ensure FIPS compatibility. It provides a FIPS operation mode so that FIPS-approved algorithms are used for cryptographic services from the FIPS-approved libraries (RSA).*
->
->When reader extensions are applied with FIPS option enabled, where SHA256withRSA is used as encryption algorithm and SHA256 is used as digest algorithm, the resultant PDF is compliant with PDF version 1.7. When FIPS option is disabled, the resultant PDF is compliant with PDF version 1.6.
+***Note**: AEM forms software does not validate code to ensure FIPS compatibility. It provides a FIPS operation mode so that FIPS-approved algorithms are used for cryptographic services from the FIPS-approved libraries (RSA).*
 
 **Enable WSDL** Select this option to enable Web Service Definition Language (WSDL) generation for all services that are part of AEM forms.
 

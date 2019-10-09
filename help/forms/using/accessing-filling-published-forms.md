@@ -3,16 +3,14 @@ title: Accessing and filling published forms
 seo-title: Accessing and filling published forms
 description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-uuid: 44731604-5d97-46fa-baa9-0c020c634fa7
+uuid: dd03a9de-b412-4d7b-befe-981cb3aa8d0a
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
-discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
-docset: aem65
-
+discoiquuid: 0452062d-cf85-4009-a0a5-a1e891192ea8
 ---
 
-# Accessing and filling published forms{#accessing-and-filling-published-forms}
+# Accessing and filling published forms {#accessing-and-filling-published-forms}
 
 In a forms-centric portal deployment setup, forms development and portal development are two distinct activities. While form designers design and store forms in a repository, Web Developers create a web application to that list forms and handle submissions. Forms are then copied over to the web tier as there is no communication between the forms repository and the web application.
 
@@ -20,17 +18,16 @@ This often results in issues with managing the setup and production delays. For 
 
 Forms Portal reduces management overheads and production delays. It equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 
-For more information about forms portal and its features, see [Introduction to publishing forms on a portal](../../forms/using/introduction-publishing-forms.md).
+For more information about forms portal and its features, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
 
 ## Getting started with forms portal {#getting-started-with-forms-portal}
 
-Navigate to the published forms portal page. For more information about creating a forms portal page, see [Creating a forms portal page](../../forms/using/creating-form-portal-page.md).
+Navigate to the published forms portal page. For more information about creating a forms portal page, see [Creating a forms portal page](/help/forms/using/creating-form-portal-page.md).
 
 The Search and Lister component of roms portal displays the forms available on the Publish instance of the AEM server. This list includes all forms or the forms defined in the filter at the time of authoring the forms portal page. A forms portal page looks similar to as shown in the following image:
 
 ![A sample forms portal page ](assets/forms-portal-page.png)
-
-A sample forms portal page
+**Figure:** *A sample forms portal page*
 
 ### Search and Lister {#search-and-lister}
 
@@ -52,8 +49,7 @@ You can search for forms in the Forms Portal page by using the following options
 Full text search allows you to find and list forms based on the specified keywords.
 
 ![An advanced search dialog](assets/search-panel.png)
-
-An advanced search dialog
+**Figure:** *An advanced search dialog*
 
 Advance Search allows you to search forms based on specified form properties. This provides a more specific results than full-text search. Advance search includes search based on tags, properties (such as Author, Description, and Title), modification date, and full text.
 
@@ -62,8 +58,7 @@ Lister displays forms based on the search parameters. Each form in the search re
 ### Filling a form {#filling-a-form}
 
 ![A sample adaptive form](assets/filling_a_form.png)
-
-A sample adaptive form
+**Figure:** *A sample adaptive form*
 
 The forms can be accessed from the link provided along with the form in the Search and Lister component of the page.
 
@@ -79,18 +74,17 @@ On completion of form filling, the user submits the forms by clicking the Submit
 
 >[!NOTE]
 >
->Submitted forms appear in the Submitted Forms tab only if the submit action for the adaptive form is configured as Forms Portal Submit Action. For more information about submit actions, see [Configuring the Submit action](../../forms/using/configuring-submit-actions.md).
+>Submitted forms appear in the Submitted Forms tab only if the submit action for the adaptive form is configured as Forms Portal Submit Action. For more information about submit actions, see [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md).
 
 ![Drafts & submissions component](assets/draft-submission.png)
-
-Drafts & submissions component
+**Figure:** *Drafts & submissions component*
 
 ## Start a new form using submitted form data {#start-a-new-form-using-submitted-form-data}
 
 There are certain forms that you need to fill and submit quite often. For example, the form for filing individual tax return is submitted every year. In such cases, while some bit of the information changes every time you fill the form, most of it like the personal and family details do not change. However, you are still required to fill the entire form again, from scratch.
 
-AEM Forms can help optimize the form filling experience and significantly reduce the time to fill and submit a form again. End-users can start a new form using data from a submitted form. This functionality is built-in in the [Drafts and Submissions component](../../forms/using/draft-submission-component.md). When you add Drafts and Submission component to your forms portal page and publish it, end-users will find an option in Submitted Forms and Draft Forms tabs to start a new form using data from a submitted form. The following image highlights that option.
+AEM Forms can help optimize the form filling experience and significantly reduce the time to fill and submit a form again. End-users can start a new form using data from a submitted form. This functionality is built-in in the [Drafts and Submissions component](/help/forms/using/draft-submission-component.md). When you add Drafts and Submission component to your forms portal page and publish it, end-users will find an option in Submitted Forms and Draft Forms tabs to start a new form using data from a submitted form. The following image highlights that option.
 
-![](assets/start-a-new-form.png)
+![start-a-new-form](assets/start-a-new-form.png)
 
 When you click the button to initiate a new form, it opens a new form with data from the corresponding submitted form. You can now review and update the information, as required, and submit the form.

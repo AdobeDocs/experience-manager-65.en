@@ -3,19 +3,18 @@ title: Metadata Schemata Reference
 seo-title: Metadata Schemata Reference
 description: Learn about standard conventions for describing asset metadata, including Dublin Core, IPTC, and other metadata schema. 
 seo-description: Learn about standard conventions for describing asset metadata, including Dublin Core, IPTC, and other metadata schema. 
-uuid: f37126b9-0f78-4621-b442-1ff5b2573275
-contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+uuid: 842cce16-af42-470f-ae6b-976c41d6a25e
+contentOwner: asgupta
+products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 9a294f60-9004-40dd-a3f9-9dd151b6b1f2
-docset: aem65
-
+discoiquuid: 8a7dd9b0-7d41-491f-afc9-d9c59ffcb8ac
 ---
 
 # Metadata Schemata Reference {#metadata-schemata-reference}
 
 The following reference includes information about a particular metadata schemata (in alphabetical order) as well as a list of properties and their definitions.
+
 
 ## Dublin Core {#dublin-core}
 
@@ -23,9 +22,9 @@ Dublin Core metadata provides a standardized set of conventions for describing a
 
 The simple Dublin Core Metadata Element Set (DCMES) contains 15 metadata elements as listed in the following table. Each Dublin Core element is optional and can be repeated. You can add or delete Dublin Core metadata information as you would for media type-specific metadata.
 
-In addition to the DCMES, there are other metadata elements created by the Dublin Core Initiative. See the [Dublin Core Initiative](https://dublincore.org/) for more information.
+In addition to the DCMES, there are other metadata elements created by the Dublin Core Initiative. See the [Dublin Core Initiative](http://dublincore.org/) for more information.
 
-<table>
+<table> 
  <tbody>
   <tr>
    <td><strong>Property</strong></td> 

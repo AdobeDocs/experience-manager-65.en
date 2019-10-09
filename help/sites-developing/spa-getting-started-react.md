@@ -3,17 +3,15 @@ title: Getting Started with SPAs in AEM - React
 seo-title: Getting Started with SPAs in AEM - React
 description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
 seo-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
-uuid: 2beca277-a381-4482-99f6-85005d826d06
+uuid: e863fdc7-6c8e-49c5-9513-d3ed88196f07
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
-docset: aem65
-
+discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 ---
 
-# Getting Started with SPAs in AEM - React{#getting-started-with-spas-in-aem-react}
+# Getting Started with SPAs in AEM - React {#getting-started-with-spas-in-aem-react}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.
 
@@ -23,15 +21,20 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 >
 >This article is based on the React framework. For the corresponding document for the Angular framework see [Getting Started with SPAs in AEM - Angular](/help/sites-developing/spa-getting-started-angular.md).
 
+>[!NOTE]
+>The Single-Page Application (SPA) Editor feature requires AEM 6.4 service pack 2 or newer.
+>
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+
 ## Introduction {#introduction}
 
 This article summarizes the basic functioning of a simple SPA and the minimum that you need to know to get yours running.
 
 For more detail on how SPAs work in AEM, see the following documents:
 
-* [SPA Introduction and Walkthrough](/help/sites-developing/spa-walkthrough.md)
+* [SPA Introduction and Walkthrough](/help/sites-developing/spa-walkthrough.md)  
 
-* [SPA Authoring Introduction](/help/sites-developing/spa-overview.md)
+* [SPA Authoring Introduction](/help/sites-developing/spa-overview.md)  
 
 * [SPA Blueprint](/help/sites-developing/spa-blueprint.md)
 
@@ -189,7 +192,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 In this example the `AppPage` class extends `Page`, which contains the inner-content methods that can then be used.
 
-The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501).
+The `Page` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint](/help/sites-developing/spa-blueprint.md).
 
 ### Image.js {#image-js}
 
@@ -257,7 +260,7 @@ The `MapTo` function returns a `Component` which is the result of a composition 
 
 When exported using the `MapTo` or `withModel` functions, the `Page` component, is wrapped with a `ModelProvider` component which provides standard components access to the latest version of the page model or a precise location in that page model.
 
-For more information see the [SPA Blueprint document](/help/sites-developing/spa-blueprint.md#main-pars-header-329251743).
+For more information see the [SPA Blueprint document](/help/sites-developing/spa-blueprint.md).
 
 >[!NOTE]
 >
@@ -271,6 +274,7 @@ It is regularly necessary for components within a single-page application to sha
 * **Option 2:** Share component states by using a state library such as Redux.
 * **Option 3:** Leverage the object hierarchy by customizing and extending the container component.
 
+
 ## Next Steps {#next-steps}
 
 For a step-by-step guide to creating your own SPA, see the [Getting Started with the AEM SPA Editor - WKND Events Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
@@ -280,4 +284,3 @@ For further information about how to oraganize yourself to develop SPAs for AEM 
 For further details about the dynamic model to component mapping and how it works within SPAs in AEM, see the article [Dynamic Model to Component Mapping for SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 If you wish to implement SPAs in AEM for a framework other than React or Angular or simply wish to take a deep dive into how the SPA SDK for AEM works, refer to the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) article.
-

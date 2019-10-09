@@ -3,16 +3,14 @@ title: New render and submit service
 seo-title: New render and submit service
 description: Define render and submit services in Workbench to render XDP form as HTML or PDF depending on the device it is accessed from.
 seo-description: Define render and submit services in Workbench to render XDP form as HTML or PDF depending on the device it is accessed from.
-uuid: 7f8348a1-753c-4dab-87d5-4a4a301198dd
+uuid: 7756fe9c-02d9-421f-b873-40d38a0656f3
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
-docset: aem65
-
+discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 ---
 
-# New render and submit service{#new-render-and-submit-service}
+# New render and submit service {#new-render-and-submit-service}
 
 ## Introduction {#introduction}
 
@@ -50,7 +48,7 @@ public String generateFormURL(TaskContext taskContext, String profileName);
 public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profileName, Map<String,Object> runtimeMap);
 ```
 
-More information on Mobile Form profiles can be found at [Creating a custom profile](/forms/using/custom-profile.md).
+More information on Mobile Form profiles can be found at [Creating a custom profile](/help/forms/using/custom-profile.md).
 
 ## New HTML Form Render &amp; Submit Processes {#new-html-form-render-amp-submit-processes}
 
@@ -92,13 +90,13 @@ The default Render and Submit services enable support to render PDFs on a deskto
 
 This process renders an XDP Form on multiple platforms, seamlessly. The process retrieves the user agent from `taskContext`, and uses the data to call the process to render either HTML or PDF.
 
-![](assets/default-render-form.png) 
+![default-render-form](assets/default-render-form.png) 
 
 ### Default Submit Form {#default-submit-form}
 
 This process submits an XDP form on multiple platforms seamlessly. It retrieves the user agent from `taskContext`and uses the data to call the process to submit either HTML or PDF.
 
-![](assets/default-submit-form.png) 
+![default-submit-form](assets/default-submit-form.png) 
 
 ## Switch the rendering of mobile forms from PDF to HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
@@ -125,7 +123,7 @@ The default Action Profile rendered the XDP Form as PDF. This behavior has now b
 
 Some frequently asked questions about action profiles are as follows:
 
-![](assets/gen_question_b_20.png) **What Render / Submit processes will be available out of the box?**
+![gen_question_b_20](assets/gen_question_b_20.png) **What Render / Submit processes will be available out of the box?**
 
 * Render Guide (Guides is deprecated)  
 * Render Form Guide
@@ -136,25 +134,27 @@ Some frequently asked questions about action profiles are as follows:
 
 And, equivalent Submit processes.
 
-![](assets/gen_question_b_20.png) **What Action Profiles will be available out of the box?**
+![gen_question_b_20](assets/gen_question_b_20.png) **What Action Profiles will be available out of the box?**
 
 For XDP Forms:
 
 * Default (render/submit using the new 'Default Render/Submit' processes)
 
-![](assets/gen_question_b_20.png) **What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?**
+![gen_question_b_20](assets/gen_question_b_20.png) **What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?**
 
 Nothing. The default Action Profile is chosen automatically, and the mode of rendering is taken care of too, automatically.
 
-![](assets/gen_question_b_20.png) **What needs to be done to enable the form to be rendered in HTML on a desktop?**
+![gen_question_b_20](assets/gen_question_b_20.png) **What needs to be done to enable the form to be rendered in HTML on a desktop?**
 
 The user must select the HTML radio button for the default profile.
 
-![](assets/gen_question_b_20.png) **Will there be any upgrade impact on changing the default action profile behavior?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Will there be any upgrade impact on changing the default action profile behavior?**
 
-Yes, since the previous render and submit services associated with the default action profile were different, these are treated as a customization of the existing forms. On clicking **Restore Defaults**, the default render and submit services are set instead.
+Yes, since the previous render and submit services associated with the default action profile were different, these are treated as a customization of the existing forms. On clicking **[!UICONTROL Restore Defaults]**, the default render and submit services are set instead.
 
 If you had modified the existing Render or Submit PDF Form services or created custom services (say custom1), and now want to use the same functionality for HTML rendition. You need to replicate the new render or submit service (as say custom2) and apply similar customizations to those. Now, modify the action profile for your XDP to start using custom2 services, instead of the custom1 for render or submit.
 
 What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?  
-What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?  [**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?  
+
+**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

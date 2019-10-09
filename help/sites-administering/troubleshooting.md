@@ -3,14 +3,12 @@ title: Working with Logs
 seo-title: Working with Logs
 description: Learn how to troubleshoot AEM by working with logs.
 seo-description: Learn how to troubleshoot AEM by working with logs.
-uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
+uuid: b64e0b25-5228-4c2f-9cc1-dde524134026
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
-docset: aem65
-
+discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
 ---
 
 # Working with Logs{#working-with-logs}

@@ -3,17 +3,15 @@ title: Managing tasks in an organizational hierarchy using Manager View
 seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
 seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
-uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
+uuid: a44d5a64-c03a-4337-8577-b121e6202449
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
-docset: aem65
-
+discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 ---
 
-# Managing tasks in an organizational hierarchy using Manager View{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+# Managing tasks in an organizational hierarchy using Manager View {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
 In AEM Forms workspace, managers can now access the tasks assigned to anyone in their hierarchy—direct or indirect reports—and perform various actions on them. The tasks are available in the To-do tab in the AEM Forms workspace. The actions supported on the tasks of direct reports are:
 
@@ -112,8 +110,8 @@ AEM Forms restricts a users' access to only those tasks for which the user has a
 
 The following screen illustrates accessing the tasks of direct reports and the available actions. 
 
-![](assets/cu_manager_view.png)
+![cu_manager_view](assets/cu_manager_view.png)
 
 Access tasks of direct reports and act on the tasks
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

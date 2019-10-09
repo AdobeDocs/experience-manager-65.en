@@ -3,20 +3,19 @@ title: "Tutorial: Create templates"
 seo-title: Create Print and Web templates for Interactive Communication
 description: Create Print and Web templates for Interactive Communication
 seo-description: Create Print and Web templates for Interactive Communication
-uuid: 22256a61-bcf6-4b02-9ee6-0ffb1cc20a6e
+uuid: d7b0d9a5-f5f0-4c21-a6f8-622bf94f4491
 contentOwner: anujkapo
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 ---
 
-# Tutorial: Create templates{#tutorial-create-templates}
+# Tutorial: Create templates {#tutorial-create-templates}
 
- ![](assets/07-apply-rules-to-adaptive-form_small.png)
+Create Print and Web templates for Interactive Communication
 
-| This tutorial is a step in the [Create your first Interactive Communication](/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
-|---|
+ ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
+
+This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 To create an Interactive Communication, you must have templates available on the AEM server for Print and Web Channels.
 
@@ -34,13 +33,13 @@ This tutorial walks you through the steps to create templates for Print and Web 
 
 Create and manage template for the Print channel of Interactive Communication using the following tasks:
 
-* [Create XDP template using Forms Designer](../../forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
-* [Upload XDP template to the AEM Forms server](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
-* [Create XDP template for layout fragments](../../forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
+* [Create XDP template using Forms Designer](/help/forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
+* [Upload XDP template to the AEM Forms server](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
+* [Create XDP template for layout fragments](/help/forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
 
 ### Create XDP template using Forms Designer {#create-xdp-template-using-forms-designer}
 
-Based on the [use case](/forms/using/create-your-first-interactive-communication.md) and [anatomy](/forms/using/planning-interactive-communications.md), create the following subforms in the XDP template:
+Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following subforms in the XDP template:
 
 * Bill Details: Includes a document fragment
 * Customer Details: Includes a document fragment
@@ -50,7 +49,7 @@ Based on the [use case](/forms/using/create-your-first-interactive-communication
 * Pay Now: Includes an image
 * Value Added Services: Includes an image
 
-![](assets/create_print_template.gif)
+![create_print_template](assets/create_print_template.gif)
 
 These subforms are displayed as target areas in the Print template after uploading the XDP file to the Forms server. All entities such as document fragments, charts, layout fragments, and images are added to target areas while creating the Interactive Communication.
 
@@ -60,24 +59,22 @@ Execute the following steps to create an XDP template for the Print channel:
 
    Ensure that the **Object Library** and **Object** options are selected from the **Window** menu.
 
-1. Drag-and-drop the **Subform **component from the **Object Library** to the form.
+1. Drag-and-drop the **Subform** component from the **Object Library** to the form.
 1. Select the subform to display the options for the subform in the **Object** window in the right pane.
 1. Select the **Subform** tab and select **Flowed** from the **Content** drop-down list. Drag the left endpoint of the subform to adjust the length.
 1. In the **Bindings** tab:
 
     1. Specify **BillDetails** in the **Name** field.
-    
     1. Select **No data binding** from the **Data Binding** drop-down list.
 
-   ![Designer subform](assets/forms_designer_subform_new.png)
+   ![forms_designer_subform](assets/forms_designer_subform.png)
 
 1. Similarly, select the root subform, select the **Subform** tab, and select **Flowed** from the **Content** drop-down list. In the **Bindings** tab:
 
     1. Specify **TelecaBill** in the **Name** field.
-    
     1. Select **No data binding** from the **Data Binding** drop-down list.
 
-   ![Subform for Print template](assets/root_subform_print_template_new.png)
+   ![root_subform_print_template](assets/root_subform_print_template.png)
 
 1. Repeat steps 2 - 5 to create the following subforms:
 
@@ -100,13 +97,12 @@ Execute the following steps to create an XDP template for the Print channel:
 1. Drag-and-drop the **Text** object from the **Object Library** to the form and enter the **Dial XXXX to subscribe** text in the box.
 1. Right-click the text object in the left pane, select **Rename Object**, and enter the name of the text object as **Subscribe**. 
 
-   ![XDP template](assets/print_xdp_template_subform_new.png)
+   ![print_xdp_template_subform](assets/print_xdp_template_subform.png)
 
 1. Select **File** &gt; **Save As** to save the file on the local file system:
 
     1. Navigate to the location to save the file and specify the name as **create_first_ic_print_template**.
     1. Select **.xdp** from the **Save as type** drop-down list.
-    
     1. Tap **Save**.
 
 ### Upload XDP template to the AEM Forms server {#upload-xdp-template-to-the-aem-forms-server}
@@ -140,15 +136,15 @@ To create a layout fragment for the Print channel of the Interactive Communicati
 
 1. Click the Header text fields in the **Designer View** and rename them to **Time**, **Number**, **Duration**, and **Charges**.
 
-   ![Layout fragment](assets/layout_fragment_print_new.png)
+   ![layout_fragment_print](assets/layout_fragment_print.png)
 
 1. Select **Row 1** from the left pane and select **Object** &gt; **Binding** &gt; **Repeat Row for Each Data Item**.
 
-   ![Repeat properties for layout fragment](assets/layout_fragment_print_repeat_new.png)
+   ![layout_fragment_print_repeat](assets/layout_fragment_print_repeat.png)
 
 1. Drag-and-drop the **Text Field** component from the **Object Library** to the **Designer View**.
 
-   ![Text field for layout fragment](assets/layout_fragment_print_text_field_new.png)
+   ![layout_fragment_print_text_field](assets/layout_fragment_print_text_field.png)
 
    Similarly, drag-and drop **Text Field** component to the **Time**, **Number**, **Duration**, and **Charges** rows.
 
@@ -156,19 +152,18 @@ To create a layout fragment for the Print channel of the Interactive Communicati
 
     1. Navigate to the location to save the file and specify the name as **table_lf**.
     1. Select **.xdp** from the **Save as type** drop-down list.
-    
     1. Tap **Save**.
 
-   Once you have created an XDP template for layout fragment using the Forms Designer, you must [upload](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) it to AEM Forms server so that the template is available for use while creating layout fragments.
+   Once you have created an XDP template for layout fragment using the Forms Designer, you must [upload](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) it to AEM Forms server so that the template is available for use while creating layout fragments.
 
 ## Create template for Web channel {#create-template-for-web-channel}
 
 Create and manage template for the Web channel of Interactive Communication using the following tasks:
 
-* [Create folder for templates](../../forms/using/create-templates-print-web.md#create-folder-for-templates)
-* [Create the template](../../forms/using/create-templates-print-web.md#create-the-template)
-* [Enable the template](../../forms/using/create-templates-print-web.md#enable-the-template)
-* [Enabling buttons in Interactive Communications](../../forms/using/create-templates-print-web.md#enabling-buttons-in-interactive-communications)
+* [Create folder for templates](/help/forms/using/create-templates-print-web.md#create-folder-for-templates)
+* [Create the template](/help/forms/using/create-templates-print-web.md#create-the-template)
+* [Enable the template](/help/forms/using/create-templates-print-web.md#enable-the-template)
+* [Enabling buttons in Interactive Communications](/help/forms/using/create-templates-print-web.md#enabling-buttons-in-interactive-communications)
 
 ### Create folder for templates {#create-folder-for-templates}
 
@@ -180,13 +175,13 @@ Execute the following steps to create a folder for the editable templates:
 1. In the Configuration Browser page, tap **Create**. 
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
-   ![Configure web templates](assets/create_first_ic_web_template_new.png)
+   ![create_first_ic_web_template](assets/create_first_ic_web_template.png)
 
    The **Create_First_IC_templates** folder is created and listed on the **Configuration Browser** page.
 
 ### Create the template {#create-the-template}
 
-Based on the [use case](/forms/using/create-your-first-interactive-communication.md) and [anatomy](/forms/using/planning-interactive-communications.md), create the following panels in the Web template:
+Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following panels in the Web template:
 
 * Bill Details: Includes a document fragment
 * Customer Details: Includes a document fragment
@@ -196,7 +191,7 @@ Based on the [use case](/forms/using/create-your-first-interactive-communication
 * Pay Now: Includes a **Pay Now** button and an image
 * Value Added Services: Includes an image and a **Subscribe** button.
 
-![](assets/create_web_template.gif)
+![create_web_template](assets/create_web_template.gif)
 
 All the entities such as document fragments, charts, tables, images, and buttons are added while creating the Interactive Communication.
 
@@ -212,22 +207,21 @@ Execute the following steps to create a template for the Web channel in the **Cr
 1. Tap **Open** to open the template in the template editor.
 1. Select **Initial Content** from the drop-down list next to the **Preview** option.
 
-   ![Template editor](assets/template_editor_initial_content_new.png)
+   ![template_editor_initial_content](assets/template_editor_initial_content.png)
 
 1. Tap **Root Panel **and then tap **+** to view the list of components that you can add to the template.
 1. Select **Panel** from the list to add a panel above the **Root Panel**.
 1. Select the **Content** tab in the left pane. The new panel added in step 8 is displayed under the **Root Panel** in the content tree.
 
-   ![Content tree](assets/content_tree_root_panel_new.png)
+   ![content_tree_root_panel](assets/content_tree_root_panel.png)
 
-1. Select the panel and tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Select the panel and tap ![configure_icon](assets/configure_icon.png) (Configure).
 1. In the Properties pane:
 
     1. Specify **billdetails** in the Name field.
     1. Specify **Bill Details** in the Title field.
     1. Select **1** from the **Number of Columns** drop-down list.
-    
-    1. Tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties.
+    1. Tap ![done_icon](assets/done_icon.png) to save the properties.
 
    The name of the panel is updated to **Bill Details** in the content tree.
 
@@ -244,7 +238,7 @@ Execute the following steps to create a template for the Web channel in the **Cr
 
    The following image depicts the content tree after adding all panels to the template:
 
-   ![Content tree for all panels](assets/content_tree_all_panels_new.png)
+   ![content_tee_all_panels](assets/content_tee_all_panels.png)
 
 ### Enable the template {#enable-the-template}
 
@@ -265,11 +259,11 @@ Based on the use case, you must include the **Pay Now** and **Subscribe** button
 1. Select **Structure** from the drop-down list next to the **Preview** option.
 1. Select the **Document Container** root panel using the content tree and tap **Policy** to select the components that are allowed for use in the Interactive Communication.
 
-   ![Configure policy](assets/structure_configure_policy_new.png)
+   ![structure_configure_policy](assets/structure_configure_policy.png)
 
 1. In the **Allowed Components** tab of **Properties** section, select **Button** from the **Adaptive Form** components.
 
-   ![Allowed components](assets/allowed_components_af_new.png)
+   ![allowed_components_af](assets/allowed_components_af.png)
 
-1. Tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties.
+1. Tap ![done_icon](assets/done_icon.png) to save the properties.
 

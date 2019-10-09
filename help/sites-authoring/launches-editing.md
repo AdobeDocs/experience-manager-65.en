@@ -3,15 +3,13 @@ title: Editing Launches
 seo-title: Editing Launches
 description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s). 
 seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s). 
-uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
+uuid: 851bcbbe-1dff-457f-a3bc-468ace9b4ac4
 contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
-docset: aem65
+discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-
 ---
 
 # Editing Launches{#editing-launches}
@@ -43,11 +41,11 @@ See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#chang
 
 To track the changes you have made, you can view the launch in **References** and compare the launch page with its source page:
 
-1. In the **Sites** console, [navigate to the source page of your launch and select it](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Open the ** [References](/help/sites-authoring/basic-handling.md#references)** panel and select **Launches**.
+1. In the **Sites** console, [navigate to the source page of your launch and select it](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open the **[References](/help/sites-authoring/basic-handling.md#references)** panel and select **Launches**.
 1. Select your specific launch then **Compare to Source**:
 
-   ![](assets/screen-shot_2019-03-05at121952.png)
+   ![chlimage_1-96](assets/chlimage_1-96.png)
 
 1. The two pages (launch and source) will be opened side-by-side.
 
@@ -99,5 +97,5 @@ At any time you can edit the properties for a launch:
 
 The status is shown when you select a specific launch from the references tab (see [Launches in References (Sites Console)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
-![](assets/screen-shot_2019-03-05at121901.png)
+![chlimage_1-97](assets/chlimage_1-97.png)
 

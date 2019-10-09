@@ -3,56 +3,54 @@ title: Assignments Essentials
 seo-title: Assignments Essentials
 description: Assignments feature overview for enablement communities
 seo-description: Assignments feature overview for enablement communities
-uuid: e49fce26-1091-4f37-93e8-c4ec85371811
+uuid: 8310decf-174d-4e93-8c92-4a9583077b7a
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
-docset: aem65
-
+discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
 ---
 
-# Assignments Essentials{#assignments-essentials}
+# Assignments Essentials {#assignments-essentials}
 
-Read on to know about the essential information for working with the assignments feature of [enablement community](/help/communities/overview.md#enablement-community) sites.
+This page provides the essential information for working with the assignments feature of [enablement community](overview.md#enablement-community) sites.
 
 The assignments feature is the ability to assign enablement resources and learning paths to members of enablement communities.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
-   <td>social/enablement/components/hbs/myassigned</td>
+   <td> <strong>resourceType</strong></td> 
+   <td>social/enablement/components/hbs/myassigned</td> 
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
-   <td>No</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td> 
+   <td>No</td> 
   </tr>
   <tr>
-   <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
-   <td> /libs/social/enablement/components/hbs/myassigned/myassigned.hbs</td>
+   <td> <strong>templates</strong></td> 
+   <td> /libs/social/enablement/components/hbs/myassigned/myassigned.hbs</td> 
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
-   <td> /libs/social/enablement/components/hbs/myassigned/clientlibs/myassigned.css</td>
+   <td> <strong>css</strong></td> 
+   <td> /libs/social/enablement/components/hbs/myassigned/clientlibs/myassigned.css</td> 
   </tr>
   <tr>
-   <td><strong> properties</strong></td>
-   <td>see <a href="/help/communities/assignments.md">Assignments Feature</a></td>
+   <td><strong> properties</strong></td> 
+   <td>See <a href="assignments.md">Assignments Feature</a></td> 
   </tr>
  </tbody>
 </table>
 
 ### Completion and Success Status {#completion-and-success-status}
 
-Completion and Success status are used in reports and status banners on Assignments.
+Completion and Success status are used in reports as well as status banners on Assignments.
 
 Completion Status:
 
@@ -80,13 +78,12 @@ The only possible Combinations of Completion and Success Status are:
 
 ### Assignments Function {#assignments-function}
 
-A community site structure that includes the [Assignments function](/help/communities/functions.md#assignments-function), includes a configured ` [assignments](/help/communities/assignments.md)` component.
+A community site structure that includes the [Assignments function](functions.md#assignments-function), includes a configured ` [assignments](assignments.md)` component.
 
 ### Reference APIs {#reference-apis}
 
-* [Enablement API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
+* [Enablement API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [Reporting API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [Reporting API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
-
+* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)

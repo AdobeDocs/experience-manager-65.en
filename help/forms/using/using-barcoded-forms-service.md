@@ -3,16 +3,14 @@ title: Barcoded Forms Service
 seo-title: Using AEM Forms Barcoded Forms Service
 description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes. 
 seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes. 
-uuid: b044a788-0e4a-4718-b71a-bd846933d51b
+uuid: 96e0a1e6-3f53-4fea-85c2-4de3cff52d73
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
-discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
-docset: aem65
-
+discoiquuid: dcf60604-c401-4c74-95c7-e7d4457fdfe5
 ---
 
-# Barcoded Forms Service{#barcoded-forms-service}
+# Barcoded Forms Service {#barcoded-forms-service}
 
 ## Overview {#overview}
 
@@ -39,7 +37,7 @@ You can use the Barcoded Forms service to accomplish the following tasks:
 
 For each barcode in an image, the Barcoded Forms service locates the barcode, decodes it, and extracts the data. The service returns the barcode data (using entity encoding where required) in a content element of an XML document. For example, the following scanned TIFF image of a form contains two barcodes:
 
-![](assets/example.png)
+![example](assets/example.png)
 
 The Barcoded Forms service returns the following XML document after decoding the barcodes:
 
@@ -134,9 +132,9 @@ You can use the **AEMFD Barcoded Forms Service** in AEM Console to configure pro
 
 Barcoded Forms Service provides the following two APIs:
 
-* ** [decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodes all the barcodes available in an input PDF document or tiff image. It returns another XML document that contains data that was retrieved from all the barcodes available in the input document or image.  
+* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodes all the barcodes available in an input PDF document or tiff image. It returns another XML document that contains data that was retrieved from all the barcodes available in the input document or image.  
 
-* ** [extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convert data decoded using decode API to XML data. This XML data can be merged with an XFA Form. It returns a list of XML documents, one for each barcode.
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convert data decoded using decode API to XML data. This XML data can be merged with an XFA Form. It returns a list of XML documents, one for each barcode.
 
 ### Using BCF Service with a JSP or Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 

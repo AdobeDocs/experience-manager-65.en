@@ -3,14 +3,12 @@ title: Proxy Server Tool (proxy.jar)
 seo-title: Proxy Server Tool (proxy.jar)
 description: Learn about the Proxy Server Tool in AEM.
 seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
+uuid: 9a095b12-1d54-4b79-b0c5-d973f16479d3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
-docset: aem65
-
+discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 ---
 
 # Proxy Server Tool (proxy.jar){#proxy-server-tool-proxy-jar}
@@ -49,7 +47,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ## Uses of the Proxy Server Tool {#uses-of-the-proxy-server-tool}
 
-The following scenarios illustrate a few of the purposes for which the Proxy Server Tool can be used:
+The following scenarios illustrate a few of the purposes for which the Proxy Server Tool can be used: 
 
 **Check for Cookies and their Values**
 
@@ -79,7 +77,7 @@ To check if keep-alive works:
 * If keep-alive is working, the connection counter should never go above 5 to 10 connections. 
 * If keep-alive is not working, the connection counter increases rapidly.
 
-**Finding Lost Requests **
+**Finding Lost Requests**
 
 If you lose requests in a complex server setting, for example with a firewall and a dispatcher, you can use the proxy server to find out where the request was lost. In case of a firewall:
 
@@ -145,7 +143,7 @@ If AEM is running on localhost:4303, start the proxy server as following:
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-You can access the server ( `<font face="Courier New">localhost:4303</font>`) without the proxy server, but if you access it via `<font face="Courier New">localhost:4444</font>`, the proxy server will log the communication. Open a browser and access a page created with the above template. After that, look at the log file. 
+You can access the server ( ) without the proxy server, but if you access it via , the proxy server will log the communication. Open a browser and access a page created with the above template. After that, look at the log file. 
 
 >[!NOTE]
 >
@@ -225,7 +223,7 @@ Now, the output starts for connection 1, which downloads the image contained in 
 ```xml
 C-1-#000000 -> [GET /author/logo.gif HTTP/1.1 ]
 C-1-#000031 -> [Accept: */* ]
-C-1-#000044 -> [Referer: https://localhost:4444/author/prox.html?CFC_cK=1102936796533 ]
+C-1-#000044 -> [Referer: http://localhost:4444/author/prox.html?CFC_cK=1102936796533 ]
 C-1-#000114 -> [Accept-Language: de-ch ]
 C-1-#000138 -> [Accept-Encoding: gzip, deflate ]
 C-1-#000170 -> [User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) ]

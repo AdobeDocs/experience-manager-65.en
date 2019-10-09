@@ -3,18 +3,18 @@ title: Use custom email templates in an Assign Task step
 seo-title: Use custom email templates in an Assign Task step
 description: Custom email templates for forms workflow email notifications 
 seo-description: Custom email templates for forms workflow email notifications 
-uuid: ba453d54-813f-4a4f-a82e-1a6a28b6939c
+uuid: bc2af94d-d4ad-417e-b3d2-bcfffc1b306d
 topic-tags: publish
-discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
-docset: aem65
-
+discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 ---
 
-# Use custom email templates in an Assign Task step{#use-custom-email-templates-in-an-assign-task-step}
+# Use custom email templates in an Assign Task step {#use-custom-email-templates-in-an-assign-task-step}
+
+Custom email templates for forms workflow email notifications 
 
 You can use the Assign Task step to create and assign tasks to a user or group. When a task is assigned to a user or group, an email notification is sent to the defined user or to each member of the defined group. A typical email notification contains link of the assigned task and information related to the task. The following image displays a sample email notification:
 
-![Email notification with out of the box template](do-not-localize/default_email_template_new.png)
+![Email notification with out of the box template](do-not-localize/default-email-template.png)
 
 You can customize the appearance and use custom metadata in an email notification. AEM Forms provide an out of the box template for email notifications. You can customize the out of the box template or create a new template from scratch.
 
@@ -60,12 +60,12 @@ Out of the box, AEM Forms provides a template for email notifications. The templ
 
 Out of the box, Assign task step is configured to use the default template, htmlEmailTemplate.txt. You can choose to use a custom template. To change the template:
 
-1. Open the Assign Task step.  
+1. Open the **[!UICONTROL Assign Task]** step.  
 
-1. Navigate to Assignee &gt; HTML Email Template.  
+1. Navigate to **[!UICONTROL Assignee &gt; HTML Email Template]**.  
 
 1. Select the newly created HTML Email Template.  
 
-1. Click OK. The template is changed.
+1. Click **[!UICONTROL OK]**. The template is changed.
 
-An email notification also uses [metadata](../../forms/using/use-metadata-in-email-notifications.md). For example, due date, priority, workflow name, and more. You can also configure the template to use [custom metadata](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification). 
+An email notification also uses [metadata](/help/forms/using/use-metadata-in-email-notifications.md). For example, due date, priority, workflow name, and more. You can also configure the template to use [custom metadata](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification). 

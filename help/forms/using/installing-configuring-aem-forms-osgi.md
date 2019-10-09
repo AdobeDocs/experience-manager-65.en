@@ -3,15 +3,15 @@ title: Install and configure data capture capabilities
 seo-title: Install and configure data capture capabilities
 description: Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
 seo-description: Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
-uuid: 5d49032a-4dea-4f21-9dad-a7a30c5872ea
+uuid: ce253b5a-eeb2-47d2-a6c9-e6f59384159a
+contentOwner: khsingh
 topic-tags: installing
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
-docset: aem65
-
+discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 ---
 
-# Install and configure data capture capabilities{#install-and-configure-data-capture-capabilities}
+# Install and configure data capture capabilities {#install-and-configure-data-capture-capabilities}
+
+Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
 
 ## Introduction {#introduction}
 
@@ -29,13 +29,13 @@ AEM Forms is a powerful enterprise-class platform and the data capture (adaptive
 
 AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author and AEM Publish instance to run AEM Forms data capture capabilities. The following topology is suggested to run AEM Forms AEM Forms data capture capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png) 
 
 ## System Requirements {#system-requirements}
 
-Before you begin to install and configure data capture capability of AEM Forms, ensure that:
+Before you begin to install and configure data capture capability AEM Forms, ensure that:
 
-* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/help/sites-deploying/technical-requirements.md).
+* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).  
 
 * Installation path of the AEM instance does not contain white-spaces.
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:
@@ -49,67 +49,49 @@ Before you begin to install and configure data capture capability of AEM Forms, 
     * 6 GB of temporary space for UNIX-based installations.
 
 * Replication and reverse replication for the author and publish instances is set. For details, see [Replication](/help/sites-deploying/replication.md).
-* For UNIX-based systems:
+* Extra requirements for UNIX-based systems: If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system.
 
-    * Install the following 32-bit packages from the installation media:
-
-<table>
- <tbody>
-  <tr>
-   <td>expat</td>
-   <td>fontconfig</td>
-   <td>freetype</td>
-   <td>glibc</td>
-  </tr>
-  <tr>
-   <td>libcurl</td>
-   <td>libICE</td>
-   <td>libicu</td>
-   <td>libSM</td>
-  </tr>
-  <tr>
-   <td>libuuid</td>
-   <td>libX11</td>
-   <td><p>libXau</p> </td>
-   <td>libxcb</td>
-  </tr>
-  <tr>
-   <td>libXext</td>
-   <td>libXinerama</td>
-   <td>libXrandr</td>
-   <td>libXrender</td>
-  </tr>
-  <tr>
-   <td>nss-softokn-freebl</td>
-   <td>OpenSSL</td>
-   <td>zlib</td>
-   <td> </td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td>expat</td> 
+   <td>libxcb</td> 
+   <td>freetype</td> 
+   <td>libXau</td> 
+  </tr> 
+  <tr> 
+   <td>libSM</td> 
+   <td>zlib</td> 
+   <td>libICE</td> 
+   <td>libuuid</td> 
+  </tr> 
+  <tr> 
+   <td>glibc</td> 
+   <td>libXext</td> 
+   <td><p>nss-softokn-freebl</p> </td> 
+   <td>fontconfig</td> 
+  </tr> 
+  <tr> 
+   <td>libX11</td> 
+   <td>libXrender</td> 
+   <td>libXrandr</td> 
+   <td>libXinerama</td> 
+  </tr> 
+ </tbody> 
 </table>
-
->[!NOTE]
->
->* If OpenSSL is already installed on the server, upgrade it to the latest version.
->* Create libcurl.so, libcrypto.so, and libssl.so symlinks pointing to the latest version of the libcurl, libcrypto, and libssl libraries respectively.
->
-
-* Install the following 64-bit package from the installation media:
-
-    * libicu
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms data capture and other capabilities. Perform the following steps to install the add-on package:
 
-1. Log in to the [AEM server](https://localhost:4502) as an administrator and open [package share](https://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
-1. In [AEM package share](https://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
+1. Log in to the [AEM server](http://localhost:4502) as an administrator and open [package share](http://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
+1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **[!UICONTROL AEM 6.4 Forms add-on packages]**, click the package applicable to your operating system, and click **[!UICONTROL Download]**. Read and accept the license agreement and click **[!UICONTROL OK]**. The download starts. Once downloaded, the word **[!UICONTROL Downloaded]** appears next to the package.
 
    You can also use the version number to search an add-on package. For version number of the latest package, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
 
-1. After the download completes, click **Downloaded**. You are redirected to package manager. In the package manager, search the downloaded package, and click **Install**.
+1. After the download completes, click **[!UICONTROL Downloaded]**. You are redirected to package manager. In the package manager, search the downloaded package, and click **[!UICONTROL Install]**.
 
-   If you manually download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article, log in to the package manager, click **Upload Package**, select the downloaded package, and click upload. After the package is uploaded, click package name, and click **Install.**
+   If you manually download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article, log in to the package manager, click **[!UICONTROL Upload Package]**, select the downloaded package, and click upload. After the package is uploaded, click package name, and click **[!UICONTROL Install]**.
 
 1. After the package is installed, you are prompted to restart the AEM instance. **Do not immediately restart the server.** Before stopping the AEM Forms server, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the [AEM-Installation-Directory]/crx-quickstart/logs/error.log file and the log is stable.
 1. Repeat steps 1-4 on all the Author and Publish instances.
@@ -143,9 +125,9 @@ Perform the following steps on all the Author and Publish instances to boot dele
 
 Perform the following steps on all the Author and Publish instances to whitelist the package:
 
-1. Open AEM Configuration Manager in a browser window. The default URL is https://[server]:[port]/system/console/configMgr.
-1. Search for **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** and open the configuration.
-1. Add the **sun.util.calendar **package to the **whitelist **field. Click Save.
+1. Open AEM Configuration Manager in a browser window. The default URL is `https://[server]:[port]/system/console/configMgr`.
+1. Search and open **[!UICONTROL Deserialization Firewall Configuration]**.
+1. Add the **[!UICONTROL sun.util.calendar]** package to the **[!UICONTROL whitelist]** field. Click **[!UICONTROL Save]**.
 1. Repeat step 1-3 on all the Author and Publish instances.
 
 ### Optional post-installation configurations {#optional-post-installation-configurations}
@@ -164,7 +146,7 @@ Dispatcher is caching and load balancing tool for AEM. AEM Dispatcher also helps
 
 1. Configure the referrer filter service:
 
-   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. In the **Configurations **menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is https://[server]:[port].
+   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is `https://[server]:[port_number]/system/console/configMgr`. In the **[!UICONTROL Configurations]** menu, select the **[!UICONTROL Apache Sling Referrer Filter]** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **[!UICONTROL Save]**. The format of the entry is `https://[server]:[port]`.
 
 #### Configure Cache {#configure-cache}
 
@@ -175,8 +157,8 @@ Caching is a mechanism to shorten data access times, reduce latency, and improve
 
 Perform the following steps to configure the adaptive forms cache:
 
-1. Go to AEM web console configuration manager at https://[server]:[port]/system/console/configMgr.
-1. Click **Adaptive Form and Interactive Communication Web Channel Configuration** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. The default value is 100. Click **Save**.
+1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
+1. Click **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. The default value is 100. Click **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -192,7 +174,7 @@ You can enable SSL communication for Form Data Model. To enable SSL communicatio
 
 Adobe Sign enables e-signature workflows for adaptive forms. E-signatures improve workflows to process documents for legal, sales, payroll, human resource management, and many more areas.
 
-In a typical Adobe Sign and adaptive forms scenario, a user fills an adaptive form to** **apply for a service**. **For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, the form is sent to the service provider for further action. Service provider reviews the application and uses Adobe Sign to mark the application approved. To enable similar electronic-signature workflows, you can integrate Adobe Sign with AEM Forms.
+In a typical Adobe Sign and adaptive forms scenario, a user fills an adaptive form to apply for a service. For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, the form is sent to the service provider for further action. Service provider reviews the application and uses Adobe Sign to mark the application approved. To enable similar electronic-signature workflows, you can integrate Adobe Sign with AEM Forms.
 
 To use Adobe Sign with AEM Forms, [Integrate Adobe Sign with AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 

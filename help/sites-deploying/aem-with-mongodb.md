@@ -1,16 +1,14 @@
 ---
 title: AEM with MongoDB
 seo-title: AEM with MongoDB
-description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment.
-seo-description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment.
-uuid: 8028832d-10de-4811-a769-fab699c162ec
+description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment. 
+seo-description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment. 
+uuid: 51c463aa-d467-4857-8fff-e5f81d694145
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
-docset: aem65
-
+discoiquuid: 3c59ec8f-b72f-48dd-bac8-9817005ae210
 ---
 
 # AEM with MongoDB{#aem-with-mongodb}
@@ -40,7 +38,7 @@ If the criteria are not met, then a TarMK active/standby deployment is recommend
 
 Below is a minimal deployment for AEM on MongoDB. For simplicity, SSL termination and HTTP Proxy components have been generalised. It consists of a single MongoBD replica set, with one primary and two secondaries.
 
-![](assets/chlimage_1-4.png)
+![chlimage_1-94](assets/chlimage_1-94.png)
 
 A minimal deployment requires 3 `mongod` instances configured as a replica set. One instance will be elected primary with the other instances being secondaries, with the election managed by `mongod`. Attached to each instance is a local disk. In order for the cluster to support the load, a minimum throughoput of 12MB/s with more than 3000 I/O Operations per Second (IOPS) is recommended.
 
@@ -111,7 +109,7 @@ It requires an agent installed on the MongoDB instance that connects to the moni
 
 Although using Cloud Manager for maintenance automation of a MongoDB cluster makes many of the routine tasks easier, it is not required, and neither is using it for backup. When choosing Cloud Manager to monitor, monitoring is however required.
 
-For more information regarding MongoDB Cloud Manager, consult the [MongoDB documentation](https://docs.cloud.mongodb.com/).
+For more information regarding MongoDB Cloud Manager, consult the [MongoDB documentation](https://docs.mongodb.com/).
 
 ### MongoDB Ops Manager {#mongodb-ops-manager}
 
@@ -158,13 +156,13 @@ Below is an example of Document Node Store configuration for a minimal MongoDB d
 # org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config
 #MongoDB server details
 mongodburi=mongodb://aem:aempassword@mongodbserver1.customer.com:27000,mongodbserver2.customer.com:27000
-
+  
 #Name of MongoDB database to use
 db=aem
-
+  
 #Store binaries in custom BlobStore e.g. FileDataStore
 customBlobStore=true
-
+  
 cache=2048
 blobCacheSize=1024
 ```
@@ -172,18 +170,23 @@ blobCacheSize=1024
 Where:
 
 * `mongodburi`
+
   This is the MongoDB server AEM needs to connect to. Connections are made to all known members of the default replica set. If MongoDB Cloud Manager is used, server security is enabled. Consequently, the connection string must contain a suitable username and password. Non-enterprise versions of MongoDB only support username and password authentication. For more information on the connection string syntax, consult the [documentation](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
+
   The name of the database. The default for AEM is `aem-author`.
 
 * `customBlobStore`
+
   If the deployment stores binaries in the database, they will form part of the working set. For that reason it is advised not to store binaries within MongoDB, perfering an alternative datastore like a `FileSystem` datastore on a NAS.
 
 * `cache`
+
   The cache size in Megabytes. This is distributed among various caches used in the `DocumentNodeStore`. The default is 256MB. However, Oak read performance will benefit from a bigger cache.
 
 * `blobCacheSize`
+
   Frequently used blobs may be cached by AEM to avoid refetching them from the data store. This will have more impact on performance especially when storing blobs in the MongoDB database. All the file system based Data Stores will benefit from the operating system level disk cache.
 
 #### Data Store Configuration {#data-store-configuration}
@@ -204,15 +207,19 @@ cacheSizeInMB=128
 Where:
 
 * `minRecordLength`
+
   Size in bytes. Binaries less than or equal to this size are stored with the Document Node Store. Rather than storing the ID of the blob, the content of the binary is stored. For binaries greater than this size the ID of the binary is stored as a property of the Document in the nodes collection, and the body of the binary is stored in the `FileDataStore` on disk. 4096 bytes is a typical file system block size.
 
 * `path`
+
   The path to the root of the data store. For a MongoMK deployment, this must be a shared file system avaiable to all AEM instances. Typically a Network Attached Storage (NAS) server is used. For cloud deployments like Amazon Web Services, the `S3DataFileStore` is also available.
 
 * `cacheSizeInMB`
+
   The total size of the binary cache in Megabytes. It is used to cache binaries less than the `maxCacheBinarySize` setting.
 
 * `maxCachedBinarySize`
+
   The maximum size in bytes of a binary cached in the binary cache. If a file system based Data Store is used, it is not recommended to use high values for the Data Store cache since the binaries are already cached by the operating system.
 
 #### Disabling the Query Hint {#disabling-the-query-hint}
@@ -244,8 +251,8 @@ MongoDB runs on a number of operating systems including a wide variety of Linux 
 * Turn off transparent hugepages and defrag. See [Transparent Huge Pages Settings](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) for more information.
 * [Adjust the readahead settings](https://docs.mongodb.com/manual/administration/production-notes/#readahead) on the devices storing your database files to suit your use case.
 
-    * For the MMAPv1 storage engine, if your working set is bigger that the available RAM, and the document access pattern is random, consider lowering the readahead to 32 or 16. Evaluate different settings to find an optimal value that maximizes the resident memory and lowers the number of page faults.
-    * For the WiredTiger storage engine, set readahead to 0 regardless of storage media type (spinning, SSD, etc.). In general, use the recommended readahead setting unless testing shows a measurable, repeatable, and reliable benefit in a higher readahead value. [MongoDB Professional Support](https://docs.mongodb.com/manual/administration/production-notes/#readahead) can provide advice and guidance on non-zero readahead configurations.
+  * For the MMAPv1 storage engine, if your working set is bigger that the available RAM, and the document access pattern is random, consider lowering the readahead to 32 or 16. Evaluate different settings to find an optimal value that maximizes the resident memory and lowers the number of page faults.
+  * For the WiredTiger storage engine, set readahead to 0 regardless of storage media type (spinning, SSD, etc.). In general, use the recommended readahead setting unless testing shows a measurable, repeatable, and reliable benefit in a higher readahead value. [MongoDB Professional Support](https://docs.mongodb.com/manual/administration/production-notes/#readahead) can provide advice and guidance on non-zero readahead configurations.
 
 * Disable the tuned tool if you are running RHEL 7 / CentOS 7 in a virtual environment.
 * When RHEL 7 / CentOS 7 run in a virtual environment, the tuned tool automatically invokes a performance profile derived from performance throughput, which automatically sets the readahead settings to 4MB. This can negatively impact performance.
@@ -258,9 +265,9 @@ MongoDB runs on a number of operating systems including a wide variety of Linux 
 * Use noatime for the [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath) mount point.
 * Configure sufficient file handles (fs.file-max), kernel pid limit (kernel.pid_max), and maximum threads per process (kernel.threads-max) for your deployment. For large systems, the following values provide a good starting point:
 
-    * fs.file-max value of 98000,
-    * kernel.pid_max value of 64000,
-    * andkernel.threads-max value of 64000
+  * fs.file-max value of 98000,
+  * kernel.pid_max value of 64000,
+  * andkernel.threads-max value of 64000
 
 * Ensure that your system has swap space configured. Refer to your operating system’s documentation for details on appropriate sizing.
 * Ensure that the system default TCP keepalive is set correctly. A value of 300 often provides better performance for replica sets and sharded clusters. See: [Does TCP keepalive time affect MongoDB Deployments?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) in the Frequently Asked Questions for more information.
@@ -380,23 +387,24 @@ If the `mongod` process is started from a location other than the `/etc/init.d` 
 
 The MongoDB process will behave differently under different allocation policies:
 
-```
-
-```
-
 * `-membind=<nodes>`
+
   Allocate only on the nodes listed. Mongod will not allocate memory on nodes listed and may not use all the available memory.
 
 * `-cpunodebind=<nodes>`
+
   Only execute on the nodes. Mongod will only run on the nodes specified and only use memory available on those nodes.
 
 * `-physcpubind=<nodes>`
+
   Only execute on CPUs (cores) listed. Mongod will only run on the CPUs listed and only use memory available on those CPUs.
 
 * `--localalloc`
+
   Always allocate memory on the current node, but use all nodes the thread runs on. If one thread performs allocation, then only the memory available to that CPU will be used.
 
 * `--preferred=<node>`
+
   Prefers allocation to a node, but falls back to others if the preferred node is full. Relative notation for defining a node may be used. Also, the threads run on all nodes.
 
 Some of the policies may result in less than all the available RAM being given to the `mongod` process. Unlike MySQL, MongoDB actively avoids operating system level paging, and consequently the `mongod` process may get less memory that appears available.
@@ -567,15 +575,15 @@ The desired output should be 12 megabytes per second and reaching around 3000 IO
 If you are using WMWare ESX to manage and deploy your virtualized environments, make sure you perform the following settings from the ESX console in order to accommodate MongoDB operation:
 
 1. Turn off memory ballooning
-1. Pre-allocate and reserve memory for the virtual machines that will host the MongoDB databases
+1. Pre-allocate and reserve memory for the virtual machines that will host the MongoDB databases  
 1. Use Storage I/O Control to allocate sufficient I/O to the `mongod` process.
-1. Guarantee CPU resources of the machines hosting MongoDB by setting [CPU Reservation](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html)
+1. Guarantee CPU resources of the machines hosting MongoDB by setting [CPU Reservation](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html)  
 
 1. Consider using ParaVirtual I/O drivers. For more information on how to do this, check this [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).
 
 ### Amazon Web Services {#amazon-web-services}
 
-For documentation on how to set up MongoDB with Amazon Web Services, check the [Configure AWS Integration](https://docs.cloud.mongodb.com/tutorial/configure-aws-settings/) article on the MongoDB website.
+For documentation on how to set up MongoDB with Amazon Web Services, check the following guide [MongoDB on AWS](https://docs.aws.amazon.com/quickstart/latest/mongodb/welcome.html).
 
 ## Securing MongoDB Before Deployment {#securing-mongodb-before-deployment}
 
@@ -585,7 +593,7 @@ See this post on [securely deploying MongoDB](https://blogs.adobe.com/security/2
 
 ### Choosing the Operating System for the Dispatcher {#choosing-the-operating-system-for-the-dispatcher}
 
-In order to properly serve your MongoDB deployment, the operating system that will host the dispatcher must be running **Apache httpd** **version 2.4 or higher.**
+In order to properly serve your MongoDB deployment, the operating system that will host the dispatcher must be running **Apache httpd version 2.4 or higher.**
 
 Also, make sure that the all libraries used in your build are up to date in order to minimize security implications.
 
@@ -679,9 +687,8 @@ In order work around this, make sure you run the installation with a single memb
 
 ### Page Name Length {#page-name-length}
 
-If AEM is running on a MongoMK persistence manager deployment, [page names are limited to 150 characters.](/help/sites-authoring/managing-pages.md)
+If AEM is running on a MongoMK persistence manager deployment, [page names are limited to 150 characters](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
 
 >[!NOTE]
 >
 >[Please refer to the MongoDB documentation](https://docs.mongodb.com/manual/reference/limits/) to make yourself familiar with the known limitations and thresholds of MongoDB itself as well.
-

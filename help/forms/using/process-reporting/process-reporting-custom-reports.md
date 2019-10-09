@@ -3,16 +3,14 @@ title: Custom Reports in Process Reporting
 seo-title: Custom Reports in Process Reporting
 description: You can create custom reports and add these reports to the AEM Forms on JEE Process Reporting UI.
 seo-description: You can create custom reports and add these reports to the AEM Forms on JEE Process Reporting UI.
-uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
+uuid: 8974ec2d-ac54-4b44-9758-b1cf44b732fa
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
-discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
-docset: aem65
-
+discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 ---
 
-# Custom Reports in Process Reporting{#custom-reports-in-process-reporting}
+# Custom Reports in Process Reporting {#custom-reports-in-process-reporting}
 
 You can use REST interface of QueryBuilder or create an OSGi service using QueryBuilder API to create a custom report.
 
@@ -20,7 +18,7 @@ You can use REST interface of QueryBuilder or create an OSGi service using Query
 
 Before adding any custom report, perform the following template procedure:
 
-1. Data used in custom reports must be available in Process Reporting. To ensure the availability of data, schedule a cron job or use ** [Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** option on the Process Reporting UI.
+1. Data used in custom reports must be available in Process Reporting. To ensure the availability of data, schedule a cron job or use **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** option on the Process Reporting UI.
 1. The URL request (encapsulating the desired query) must return an appropriate query result object. To create a query, you can use REST interface of [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) to create an OSGi service using QueryBuilder API. You can create dynamic or static queries.  
 
 1. Create a custom user interface to display the results. You can create a stand-alone user interface or integrate result with existing Process Reporting UI.
@@ -29,7 +27,7 @@ Before adding any custom report, perform the following template procedure:
 
 CRX QueryBuilder REST interface exposes the functionality of the Asset Share Query Builder through a Java API and a REST API. Learn how to use [CRX QueryBuilder REST interface](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html), before performing the following steps:
 
-1. Browse to the URL https://[server]:[port]/lc/bin/querybuilder.json  
+1. Browse to the URL `https://[server]:[port]/lc/bin/querybuilder.json`
 
 1. Create a query based on the Process Reporting storage node structure and node properties.
 
@@ -427,7 +425,7 @@ The prerequisites to creating a separate UI for displaying results are [Sling Ba
 1. Define the renderer at the `/content` node.
 1. Add JSP or HTML files to the node created in Step 1. You can also add CSS files. 
 
-   ![A sample node with JSP and CSS files](assets/nodewith_jsp_css_new.png)
+   ![A sample node with JSP and CSS files](assets/nodewithjspandcss.png)
 
    A sample node with JSP and CSS files
 
@@ -472,14 +470,14 @@ response.setCharacterEncoding("utf-8");
                     processName = "All";
                 }
             %>
-            var lineSeprator = "<td class='seprator'>----------------</td>";
+            var lineSeprator = "<td>----------------</td>";
             var tableEnder = "<tr>" + lineSeprator + lineSeprator + lineSeprator + "</tr>";
  
-            var tableColHeader = "<td class='colHead colNum'>Running</td>";
-            tableColHeader += "<td class='colHead  colNum'>Complete</td></tr>";
+            var tableColHeader = "<td>Running</td>";
+            tableColHeader += "<td>Complete</td></tr>";
             tableColHeader += tableEnder;
  
-            var monthly = "<table><tr><td class='colHead colStr'>Month</td>";
+            var monthly = "<table><tr><td>Month</td>";
             monthly += tableColHeader;
  
             <%
@@ -489,16 +487,16 @@ response.setCharacterEncoding("utf-8");
                     Long[] frequencies = monthlyMap.get(key);
             %>
  
-            monthly += "<tr><td class='colStr'> <%= key %> </td>";
-            monthly += "<td class='colNum'> <%= frequencies[0] %> </td>";
-            monthly += "<td class='colNum'> <%= frequencies[1] %> </td></tr>";
+            monthly += "<tr><td> <%= key %> </td>";
+            monthly += "<td> <%= frequencies[0] %> </td>";
+            monthly += "<td> <%= frequencies[1] %> </td></tr>";
             <%
                 }
             %>
  
             monthly += tableEnder;
  
-            var quaterly = "<table><tr><td class='colHead colStr'>Quater</td>";
+            var quaterly = "<table><tr><td>Quater</td>";
             quaterly += tableColHeader;
  
             <%
@@ -508,16 +506,16 @@ response.setCharacterEncoding("utf-8");
                     Long[] frequencies = quaterMap.get(key);
             %>
  
-            quaterly += "<tr><td class='colStr'> <%= key %> </td>";
-            quaterly += "<td class='colNum'> <%= frequencies[0] %> </td>";
-            quaterly += "<td class='colNum'> <%= frequencies[1] %> </td></tr>";
+            quaterly += "<tr><td> <%= key %> </td>";
+            quaterly += "<td> <%= frequencies[0] %> </td>";
+            quaterly += "<td> <%= frequencies[1] %> </td></tr>";
             <%
                 }
             %>
  
             quaterly += tableEnder;
  
-            var yearly = "<table><tr><td class='colHead colStr'>Year</td>";
+            var yearly = "<table><tr><td>Year</td>";
             yearly += tableColHeader;
  
             <%
@@ -527,9 +525,9 @@ response.setCharacterEncoding("utf-8");
                     Long[] frequencies = yearMap.get(key);
             %>
  
-            yearly += "<tr><td class='colStr'> <%= key %> </td>";
-            yearly += "<td class='colNum'> <%= frequencies[0] %> </td>";
-            yearly += "<td class='colNum'> <%= frequencies[1] %> </td></tr>";
+            yearly += "<tr><td> <%= key %> </td>";
+            yearly += "<td> <%= frequencies[0] %> </td>";
+            yearly += "<td> <%= frequencies[1] %> </td></tr>";
             <%
                 }
             %>
@@ -631,27 +629,26 @@ response.setCharacterEncoding("utf-8");
 
 The prerequisites to creating a separate UI for displaying results are [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) and providing appropriate [access privileges](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
-1. Create a separate UI as described in [Creating a separate UI](/forms/using/process-reporting/process-reporting-custom-reports.html?cq_ck=1416827713473) section.
+1. Create a separate UI as described in [Creating a separate UI](#creating-a-separate-ui-nbsp) section.
 1. Create a child `nt:unstructured` node at the `/content/process-reporting-runtime/custom-reports` node for every pluggable report.
 
-    * **id **- Specifies unique identification number of the report.
-    * **name **- Specifies the name of the report. The name is displayed in the UI.
-    * **link **- Specifies relative link to the renderer of the separate UI. The link is created Step 1.
-    * **description **- Specifies the one line description the report. You can leave the description field empty.  
-    
-    * **icon **- Specifies the image to pictorially represent the report. You can leave the icon field empty.
+    * **id**- Specifies unique identification number of the report.
+    * **name**- Specifies the name of the report. The name is displayed in the UI.
+    * **link**- Specifies relative link to the renderer of the separate UI. The link is created Step 1.
+    * **description**- Specifies the one line description the report. You can leave the description field empty. 
+    * **icon**- Specifies the image to pictorially represent the report. You can leave the icon field empty.
 
-   ![Properties of node ](assets/node_properties_new.png)
+   ![Properties of node ](assets/nodeproperties.png)
 
    Properties of node
 
 1. The report UI is integrated to the Process Reporting UI. After you integrate the UI, the updated UI looks similar to the following images:
 
-   ![User Interface of newly added custom reports](assets/sampleui_screenshot_new.png)
+   ![User Interface of newly added custom reports](assets/sample-ui-screen-shot-1.png)
 
    User Interface of newly added custom reports 
 
-   ![Results screen of the custom reports](assets/jsp_display_new.png)
+   ![Results screen of the custom reports](assets/jsp-display.png)
 
    Results screen of the custom reports
 
@@ -660,4 +657,5 @@ The prerequisites to creating a separate UI for displaying results are [Sling Ba
 Import the `sample-report-pkg-1.zip` package to integrate custom reports and UI discussed in the article to the Process management UI.
 
 [Get File](assets/sample-report-pkg-1.zip)
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

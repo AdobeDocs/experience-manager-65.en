@@ -3,20 +3,18 @@ title: User, Group and Access Rights Administration
 seo-title: User, Group and Access Rights Administration
 description: Learn about user, group and access rights administration in AEM.
 seo-description: Learn about user, group and access rights administration in AEM.
-uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
-docset: aem65
-
+discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 ---
 
 # User, Group and Access Rights Administration{#user-group-and-access-rights-administration}
 
 Enabling access to a CRX repository involves several topics:
 
-* [Access Rights](#evaluatingaccessrightsforusersandgroups) - the concepts of how they are defined and evaluated
+* [Access Rights](#how-access-rights-are-evaluated) - the concepts of how they are defined and evaluated
 * [User Administration](#user-administration) - managing the individual accounts used for access
 * [Group Administration](#group-administration) - simplify user management by forming groups  
 
@@ -33,7 +31,8 @@ In CRX every user account is a node in the workspace. A CRX user account has the
 * Is applicable for that workspace.
 * It cannot have sub-users. For hierarchical access rights you should use groups.
 
-* You can specify access rights for the user account.  
+* You can specify access rights for the user account.
+
   However, to simplify management we recommend that (in the majority of cases) you assign access rights to group accounts. Assigning access rights for each individual user quickly becomes very difficult to manage (the exceptions are certain system users when only one or two instances exist).
 
 **Group Accounts** Group accounts are collections of users and/or other groups. These are used to simplify management as a change in the access rights assigned to a group is automatically applied to all users in that group. A user does not have to belong to any group, but often belongs to several.
@@ -57,7 +56,7 @@ CRX allows you to configure the access rights for both user and groups accounts.
 
 >[!NOTE]
 >
->CRX implements [access control as defined by JSR-283](https://www.day.com/specs/jcr/2.0/16_Access_Control_Management.html). 
+>CRX implements [access control as defined by JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html). 
 >
 >A standard installation of a CRX repository is configured to use resource-based access control lists. This is one possible implementation of JSR-283 access control and one of the implementations present with Jackrabbit.
 
@@ -68,16 +67,20 @@ CRX uses two key concepts when evaluating access rights:
 * A **principal** is an entity that carries access rights. Principals include:
 
     * A user account.
-    * A group account.  
+    * A group account
+
       If a user account belongs to one, or more, groups it is also associated with each of those group principals.
 
-* A **subject** is used to represent the source of a request.  
+* A **subject** is used to represent the source of a request.
+
   It is used to consolidate the access rights applicable for that request. These are taken from:
 
-    * The user principal  
+    * The user principal 
+
       The rights that you assign directly to the user account.  
-    
-    * All groups principals associated with that user  
+
+    * All groups principals associated with that user 
+
       All rights assigned to any of the groups that the user belongs to.
 
   The result is then used to allow or deny access to the resource requested.
@@ -94,7 +97,7 @@ The list of access rights applicable for the subject is constructed from:
 * the rights that you assign directly to the user account  
 * plus all rights assigned to any of the groups that the user belongs to
 
-![](assets/chlimage_1-56.png)
+![chlimage_1-307](assets/chlimage_1-307.png)
 
 >[!NOTE]
 >
@@ -109,7 +112,7 @@ When CRX handles the request it compares the access request from the subject wit
 
 So if Linda requests to update the `/features` node in the following repository structure:
 
-![](assets/chlimage_1-57.png) 
+![chlimage_1-308](assets/chlimage_1-308.png) 
 
 ### Order of Precedence {#order-of-precedence}
 
@@ -117,7 +120,7 @@ Access rights in CRX are evaluated as follows:
 
 * User principals always take precedence over group principals irrespective of:
 
-    * their order in the access control list   
+    * their order in the access control list 
     * their position in the node hierarchy
 
 * For a given principal there exists (at most) 1 deny and 1 allow entry on a given node. The implementation always clears redundant entries and makes sure that the same privilege is not listed in both the allow and deny entries.
@@ -166,7 +169,7 @@ Access rights from multiple group principals are evaluated based on their order,
 
 The following table list some recommendations and best practices:
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td>Recommendation...</td> 
@@ -210,7 +213,7 @@ You must be logged into the appropriate workspace, then you can access the dialo
 * the **User Administration** link on the Main Console of CRX
 * the **Security** menu of the CRX Explorer
 
-![](assets/chlimage_1-58.png)
+![chlimage_1-309](assets/chlimage_1-309.png)
 
 **Properties**
 
@@ -246,19 +249,16 @@ If an account impersonates another it is very difficult to see. The log files ho
 1. Click **Create User**.
 1. You can then enter the Properties:
 
-    * **UserID** used as the account name.  
-    
+    * **UserID** used as the account name.
     * **Password** needed when logging in.
-    * **Principal Name** to provide a full textual name.  
-    
+    * **Principal Name** to provide a full textual name. 
     * **Intermediate Path** which can be used to form a tree structure.
 
 1. Click on the Save (green tick symbol).
 1. The dialog will be expanded so that you can:
 
     1. Configure **Properties**.
-    1. See **Group Membership**.  
-    
+    1. See **Group Membership**.
     1. Define **Impersonators**.
 
 >[!NOTE]
@@ -316,7 +316,8 @@ You can also change the password to your own user account from the **Security** 
 You can define Impersonators for either new or existing accounts:
 
 1. Open the **User Administration** dialog for the appropriate account.
-1. Specify the account to be allowed to impersonate that account.  
+1. Specify the account to be allowed to impersonate that account.
+
    You can use Browse... to select an existing account.   
 
 1. Click Save (green tick symbol) for the new property.
@@ -330,7 +331,7 @@ You must be logged into the appropriate workspace, then you can access the dialo
 * the **Group Administration** link on the Main Console of CRX
 * the **Security** menu of the CRX Explorer
 
-![](assets/chlimage_1-8.jpeg)
+![chlimage_1-47](assets/chlimage_1-47.jpeg)
 
 **Properties**
 
@@ -362,16 +363,14 @@ The **Inherited** column indicates membership that has been inherited as a resul
 1. Click **Create Group**.
 1. You can then enter the Properties:
 
-    * **Principal Name** to provide a full textual name.  
-    
+    * **Principal Name** to provide a full textual name. 
     * **Intermediate Path** which can be used to form a tree structure.
 
 1. Click on the Save (green tick symbol).
 1. The dialog will be expanded so that you can:
 
     1. Configure **Properties**.
-    1. See **Group Membership**.  
-    
+    1. See **Group Membership**.
     1. Manage **Members**.
 
 ### Updating a Group Account {#updating-a-group-account}
@@ -428,16 +427,18 @@ With the **Access Control** tab of CRXDE Lite you can define the access control 
 
 For example, for **Current Path** select the required resource in the left pane, the Access Control tab in the bottom right pane:
 
-![](assets/crx_accesscontrol_tab.png)
+![crx_accesscontrol_tab](assets/crx_accesscontrol_tab.png)
 
 The policies are categorized according to:
 
 * **Applicable Access Control Policies** 
-  These policies can be applied.   
+  These policies can be applied.
+
   These are policies that are available for creating a local policy. Once you select and add an applicable policy it becomes a local policy.  
 
 * **Local Access Control Policies** 
-  These are access control policies that you have applied. You can then update, order, or remove them.  
+  These are access control policies that you have applied. You can then update, order, or remove them.
+
   A local policy will override any policies inherited from the parent. 
 
 * **Effective Access Control Policies** 
@@ -454,11 +455,13 @@ The policies can be selected for:
   Selects repository level access control. For example, when setting the `jcr:namespaceManagement` privilege, which is only relevant for the repository, not a node. 
 
 * **Principal** 
-  A principal that is registered in the repository.  
-  You can either type in the **Principal** name or click the icon to the right of the field to open the **Select Principal** dialog.  
+  A principal that is registered in the repository.
+
+  You can either type in the **Principal** name or click the icon to the right of the field to open the **Select Principal** dialog.
+
   This allows you to **Search** for a **User** or **Group**. Select the required principal from the resulting list, then click **OK** to carry the value back to the previous dialog.
 
-![](assets/crx_accesscontrol_selectprincipal.png)
+![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
 >[!NOTE]
 >
@@ -468,9 +471,9 @@ The policies can be selected for:
 
 ### Privileges {#privileges}
 
-The following privileges are available for selection when adding an access control entry (see the [Security API](https://www.day.com/maven/jsr170/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) for full details):
+The following privileges are available for selection when adding an access control entry (see the [Security API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) for full details):
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <th><strong>Privilege Name</strong></th> 
@@ -569,26 +572,13 @@ You can also register new privileges:
 
 1. From the toolbar select **Tools**, then **Privileges** to display the privileges currently registered.
 
-   ![](assets/ac_privileges.png)
+   ![ac_privileges](assets/ac_privileges.png)
 
 1. Use the **Register Privilege** icon (**+**) to open the dialog and define a new privilege:
 
-   ![](assets/ac_privilegeregister.png)
+   ![ac_privilegeregister](assets/ac_privilegeregister.png)
 
 1. Click **OK** to save. The privilege will now be available for selection.
-
-### Restrictions {#restrictions}
-
-In addition to privileges described above, restrictions help refine the effect of individual access control entries.
-
-Here is a brief description of what each restriction means:
-
-* rep:ntNames** - **multivalued restriction to limit the affected ACE to nodes of the specified primary node type(s)
-* rep:glob - single name, path or path pattern with ‘&#42;’ wildcard(s)
-* rep:prefixes - multivalued restriction to limit the effect to item names that match the specified namespace prefixes 
-* rep:itemNames - multivalued restriction for property or node names.
-
-For more details see [https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)
 
 ### Adding an Access Control Entry {#adding-an-access-control-entry}
 
@@ -596,27 +586,25 @@ For more details see [https://jackrabbit.apache.org/oak/docs/security/authorizat
 
 1. To add a new **Local Access Control Policies**, click the **+** icon at the right of the **Applicable Access Control Policy** list:
 
-   ![](assets/crx_accesscontrol_applicable.png)
+   ![crx_accesscontrol_applicable](assets/crx_accesscontrol_applicable.png)
 
 1. A new entry appears under **Local Access Control Policies:**
 
-   ![](assets/crx_accesscontrol_newlocal.png)
+   ![crx_accesscontrol_newlocal](assets/crx_accesscontrol_newlocal.png)
 
 1. Click the **+** icon to add a new entry:
 
-   ![](assets/crx_accesscontrol_addentry.png)
+   ![crx_accesscontrol_addentry](assets/crx_accesscontrol_addentry.png)
 
    >[!NOTE]
    >
    >Currently a workaround is needed to specify an empty string.
-   >
    >
    >For this you need to use "".
 
 1. Define your access control policy and click **OK** to save. Your new policy will:
 
     * be listed under **Local Access Control Policy** 
-    
     * the changes will be reflected in the **Effective Access Control Policies**.
 
 CRX will validate your selection; for a given principal there exists (at most) 1 deny and 1 allow entry on a given node. The implementation always clears redundant entries and makes sure that the same privilege is not listed in both the allow and deny entries.
@@ -627,7 +615,7 @@ The order in the list indicates the order in which the policies are applied.
 
 1. In the table of **Local Access Control Policies** select the required entry and drag it to the new position in the table.
 
-   ![](assets/crx_accesscontrol_reorder.png)
+   ![crx_accesscontrol_reorder](assets/crx_accesscontrol_reorder.png)
 
 1. The changes will be shown in both the tables for the **Local** and the **Effective Access Control Policies**.
 
@@ -645,5 +633,5 @@ The order in the list indicates the order in which the policies are applied.
 
 1. Click **Test** to see the results for your selection:
 
-   ![](assets/crx_accesscontrol_test.png)
+   ![crx_accesscontrol_test](assets/crx_accesscontrol_test.png)
 

@@ -1,25 +1,23 @@
 ---
-title: Dynamically populating drop-down lists
-seo-title: Dynamically populating drop-down lists
+title: Dynamically populating drop-down lists 
+seo-title: Dynamically populating drop-down lists 
 description: Procedure to dynamically populate drop-down lists based on some logic
 seo-description: Procedure to dynamically populate drop-down lists based on some logic
-uuid: b3408aee-ac24-43af-a380-a5892abf0248
+uuid: b58a184f-6c96-47ff-8a2e-829c93b63324
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
-discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-docset: aem65
-
+discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 ---
 
-# Dynamically populating drop-down lists {#dynamically-populating-drop-down-lists}
+# Dynamically populating drop-down lists  {#dynamically-populating-drop-down-lists}
 
 ## Prerequisites {#prerequisites}
 
 * [Creating OSGI bundles](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [Developing AEM components](/help/sites-developing/components.md)
-* [Creating adaptive form](../../forms/using/creating-adaptive-form.md)
-* [Authoring adaptive form](../../forms/using/introduction-forms-authoring.md)
+* [Creating adaptive form](/help/forms/using/creating-adaptive-form.md)
+* [Authoring adaptive form](/help/forms/using/introduction-forms-authoring.md)
 
 ## Procedure to dynamically populate drop-down lists {#procedure-to-dynamically-populate-drop-down-lists}
 
@@ -42,7 +40,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
    })
    public class DropDownPopulator extends SlingAllMethodsServlet {
        private Logger logger = LoggerFactory.getLogger(DropDownPopulator.class);
-
+   
        protected void doPost(SlingHttpServletRequest request,
                              final SlingHttpServletResponse response)
                throws ServletException, IOException {
@@ -133,7 +131,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
                    response.setContentType("application/json");
                    response.getWriter().write(stateJsonArray.toString());
                }
-
+   
            } catch ( Exception e) {
                logger.error(e.getMessage(), e);
            }
@@ -145,12 +143,12 @@ Consider a scenario where you want to populate the **State** drop-down list base
 
    ![Create a drop-down node](assets/dropdown-node.png)
 
-1. Package the content node and embed the .jar file at a particular location (for example /apps/myfolder/demo/install/). Deploy the same file on the server.
+1. Package the content node and embed the .jar file at a particular location (for example /apps/myfolder/demo/install/). Deploy the same file on the server. 
 1. Create an adaptive form and add two drop-down lists, Country and State to it. The Country list can include the names of countries. The State list can dynamically populate the names of states for the country you select in the first list.
 
-   Add the names of countries to display in Country list. In the State list, add a script to populate it based on the name of the country in the Country list.
+   Add the names of countries to display in Country list. In the State list, add a script to populate it based on the name of the country in the Country list. 
 
-   ![Adding country names](assets/country-dropdown.png) ![Adding script to populate state names](assets/state-dropdown.png) ![Country and State drop-down lists togather](assets/2dropdowns.png)
+   ![Adding country names](assets/country-dropdown.png) ![Adding script to populate state names](assets/state-dropdown.png) ![Country and State drop-down lists togather](assets/2dropdowns.png) 
 
    ```
    JSON.parse(
@@ -160,7 +158,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
            async: false,
            data: {"country": country.value},
             success: function(res){},
-            error : function (message) {
+            error : function (message) {  
                  guideBridge._guide.logger().log(message);
                  successFlag = false;
                  }

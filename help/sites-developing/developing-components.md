@@ -3,15 +3,13 @@ title: Developing AEM Components
 seo-title: Developing AEM Components
 description: AEM components are used to hold, format, and render the content made available on your webpages.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
-uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
+uuid: bf789fb8-0bb8-406c-b4d6-c360b02a46d8
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
-docset: aem65
+discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
-
 ---
 
 # Developing AEM Components{#developing-aem-components}
@@ -20,10 +18,12 @@ AEM components are used to hold, format, and render the content made available o
 
 * When [authoring pages](/help/sites-authoring/default-components.md), the components allow the authors to edit and configure the content.
 
-    * When constructing a [Commerce](/help/sites-administering//ecommerce.md) site the components can, for example, collect and render information from the catalog.
+    * When constructing a [Commerce](/help/sites-administering/ecommerce.md) site the components can, for example, collect and render information from the catalog.
+
       See [Developing eCommerce](/help/sites-developing/ecommerce.md) for more information.
 
-    * When constructing a [Communities](/help/communities/author-communities.md) site the components can provide information to and collect information from your visitors.
+    * When constructing a [Communities](/help/communities/author-communities.md) site the components can provide information to and collect information from your visitors. 
+
       See [Developing Communities](/help/communities/communities.md) for more information.
 
 * On the publish instance the components render your content, presenting it as you require to your website visitors.
@@ -112,13 +112,13 @@ The [edit behavior of a component is configured](/help/sites-developing/componen
 
 ## Configuring the Preview Behavior {#configuring-the-preview-behavior}
 
-The [WCM Mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie is set when switching to **Preview** mode even when the page is not refreshed.
+The [WCM Mode](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie is set when switching to **Preview** mode even when the page is not refreshed.
 
 For components with a rendering that are sensitive to the WCM Mode, they need to be defined to refresh themselves specifically, then rely on the value of the cookie.
 
 >[!NOTE]
 >
->In the touch-enabeld UI only the values `EDIT` and `PREVIEW` are used for the [WCM Mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie.
+>In the touch-enabeld UI only the values `EDIT` and `PREVIEW` are used for the [WCM Mode](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie.
 
 ## Creating and Configuring a Dialog {#creating-and-configuring-a-dialog}
 
@@ -126,9 +126,9 @@ Dialogs are used to allow author to interact with the component. Using a dialog 
 
 ### Coral UI and Granite UI {#coral-ui-and-granite-ui}
 
-[Coral UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) and [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) define the modern look and feel of AEM.
+[Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) and [Granite UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) define the modern look and feel of AEM.
 
-[Granite UI provides a large range of the basic components (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) needed to create your dialog on the authoring environment. When necessary you can extend this selection and [create your own widget](#creatinganewwidget).
+[Granite UI provides a large range of the basic components (widgets)](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) needed to create your dialog on the authoring environment. When necessary you can extend this selection and create your own widget.
 
 For more information on developing components using Coral and Granite resource types see: [Building Experience Manager components using Coral/Granite resource types](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
@@ -138,13 +138,13 @@ For full details see:
 
     * Provides a consistent UI across all cloud solutions
     * [Concepts of the AEM Touch-Enabled UI - Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-    * [Coral UI Guide](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+    * [Coral UI Guide](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite UI
 
     * Provides Coral UI markup wrapped into Sling components for building UI consoles and dialogs
-    * [Concepts of the AEM Touch-Enabled UI - Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-    * [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+    * [Concepts of the AEM Touch-Enabled UI - Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 
+    * [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
 >
@@ -169,13 +169,13 @@ An example node structure might be:
 ```xml
 newComponent (cq:Component)
   cq:dialog (nt:unstructured)
-    content
-      layout
-      items
-        column
-          items
-            file
-            description
+    content 
+      layout 
+      items 
+        column 
+          items 
+            file 
+            description  
 ```
 
 Customizing a dialog is similar to developing a component as the dialog is itself a component (i.e. markup rendered by a component script together with behavior/style provided by a client library).
@@ -196,7 +196,7 @@ For examples, see:
 >See:
 >
 >* the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
->* the related sample code covered under [Code Sample - How to Customize Dialog Fields](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
+>* the related sample code covered under [Code Sample - How to Customize Dialog Fields](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).  
 >
 
 #### Creating a New Field {#creating-a-new-field}
@@ -207,13 +207,13 @@ To create a new widget for use in a component dialog for the touch-enabled UI re
 
 >[!NOTE]
 >
->For full details about the Granite UI, please see the [Granite UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>For full details about the Granite UI, please see the [Granite UI documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a new form field requires you to create a resource type; this is equivalent to creating a new component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-More specifically Granite UI provides a range of field components that are suitable for use in dialogs (or, more generally speaking, in [forms](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
+More specifically Granite UI provides a range of field components that are suitable for use in dialogs (or, more generally speaking, in [forms](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ Once you have created your resource type, you can instantiate your field by addi
 
 If you want to define styling and behavior for your component, you can create a dedicated [client library](/help/sites-developing/clientlibs.md) that defines your custom CSS/LESS and JS.
 
-To have your client library loaded solely for your component dialog (i.e. it will not be loaded for another component) you need to set the property `extraClientlibs`** **of your dialog to the category name of the client library you have just created. This is advisable if your client library is quite big and/or your field is specific to that dialog and will not be needed in other dialogs.
+To have your client library loaded solely for your component dialog (i.e. it will not be loaded for another component) you need to set the property `extraClientlibs` of your dialog to the category name of the client library you have just created. This is advisable if your client library is quite big and/or your field is specific to that dialog and will not be needed in other dialogs.
 
 To have your client library loaded for all dialogs, set the category property of your client library to `cq.authoring.dialog`. This is the category name of the client library that is included by default when rendering all dialogs. You want to do that if you client library is small and/or your field is generic and could be reused in other dialogs.
 
@@ -256,7 +256,7 @@ You can also use render conditions ( `rendercondition`) to control who has acces
 
 ### Handling Field Events {#handling-field-events}
 
-The method of handling events on dialog fields is now done with [listeners in a custom client library](#listeners-in-a-custom-client-library). This is a change from the older method of having [listeners in the content structure](#listenersinthecontentstructureclassicui).
+The method of handling events on dialog fields is now done with [listeners in a custom client library](#listeners-in-a-custom-client-library). This is a change from the older method of having [listeners in the content structure](#listeners-in-the-content-structure).
 
 #### Listeners in a Custom Client Library {#listeners-in-a-custom-client-library}
 
@@ -265,7 +265,7 @@ To inject logic into your field, you should:
 1. Have your field marked with a given CSS class (the *hook*).
 1. Define, in your client library a JS listener hooked on that CSS class name (this ensures that your custom logic is scoped to your field only, and does not affect other fields of the same type).
 
-To achieve this you need to know about the underlying widget library with which you want to interact. See the [Coral UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) to identify to which event you want to react. This is very similar to the process that you had to perform with ExtJS in the past: find the documentation page of a given widget, then check the details of its event API.
+To achieve this you need to know about the underlying widget library with which you want to interact. See the [Coral UI documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) to identify to which event you want to react. This is very similar to the process that you had to perform with ExtJS in the past: find the documentation page of a given widget, then check the details of its event API.
 
 For an example, see:
 
@@ -296,7 +296,7 @@ For an example, see:
 
 #### Field Validation (Granite UI) {#field-validation-granite-ui}
 
-Field validation in Granite UI and the Granite UI Components (equivalent to widgets), is done by using the `foundation-validation` API. [See the `foundation-valdiation` Granite documentation for details.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+Field validation in Granite UI and the Granite UI Components (equivalent to widgets), is done by using the `foundation-validation` API. [See the `foundation-valdiation` Granite documentation for details.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 For examples, see:
 
@@ -337,7 +337,7 @@ Out-of-the-box AEM only checks the Reference component. To add your component yo
 
 Create a new entry in the definition, specifying your component, together with the property to be checked. For example:
 
-`/apps/<*your-Project*>/components/reference@parentPath`
+`/apps/<your-Project>/components/reference@parentPath`
 
 >[!NOTE]
 >
@@ -350,11 +350,11 @@ After the component has been developed it needs to be enabled for use in an appr
 This can be done by either:
 
 * using [Design mode](/help/sites-authoring/default-components-designmode.md) when editing a specific page.
-* [defining the `components` property on the paragraph system of a template](/help/sites-developing/components-basics.md#adding-your-component-to-the-paragraph-system).
+* defining the components [property on the paragraph system of a template](/help/sites-developing/components-basics.md#adding-your-component-to-the-paragraph-system).
 
 ## Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM offers the possibility to configure a paragraph system on your page so that [an instance of your new component is automatically created when a user drags an (appropriate) asset onto an instance of that page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (instead of always having to drag an empty component to the page).
+AEM offers the possibility to configure a paragraph system on your page so that [an instance of your new component is automatically created when a user drags an (appropriate) asset onto an instance of that page](/help/sites-authoring/editing-content.md) (instead of always having to drag an empty component to the page).
 
 This behavior, and the required asset-to-component relationship can be configured:
 
@@ -374,7 +374,7 @@ This behavior, and the required asset-to-component relationship can be configure
 
 1. For each asset-to-component mapping create a node:
 
-    * Name: text; it is recommended that the name indicate the asset and related component type; for example, image
+    * Name: text; it is recommended that the name indicate the asset and related component type; for example, image 
     * Type: `nt:unstructured`
 
    Each with the following properties:
@@ -419,7 +419,7 @@ You can find the code of this page on GitHub
 
 >[!NOTE]
 >
->The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
+>The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
 
 ## Using the AEM Brackets Extension {#using-the-aem-brackets-extension}
 
@@ -427,7 +427,7 @@ The [AEM Brackets Extension](/help/sites-developing/aem-brackets.md) provides a 
 
 The extension:
 
-* Eases synchronization (no Maven or File Vault required) to help increase developer efficiency and also helps front-end developers with limited AEM knowledge to participate on projects.
+* Eases synchronization (no Maven or File Vault required) to help increase developer efficiency and also helps front-end developers with limited AEM knowledge to participate on projects.  
 * Provides some [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) support, the template language designed to simplify component development and increase security.
 
 >[!NOTE]
@@ -445,16 +445,16 @@ When migrating a component that was designed for use with the classic UI to a co
 * Components
 
     * Migrate [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) code that use classic UI specific functions
-    * RTE plugin, for further information see [Configuring the Rich Text Editor](/help/sites-administering//rich-text-editor.md).
+    * RTE plugin, for further information see [Configuring the Rich Text Editor](/help/sites-administering/rich-text-editor.md).
     * [Migrate `cq:listener` code](#migrating-cq-listener-code) that uses functions specific to the classic UI
 
 * Dialogs
 
-    * You will need to create a new dialog for use in the touch-enabled UI. However, for compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI.
+    * You will need to create a new dialog for use in the touch-enabled UI. However, for compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI. 
     * The [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) is provided to help you extend existing components.
     * [Mapping ExtJS to Granite UI Components](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) provides a convenient overview of ExtJS xtypes and node types with their equivalent Granite UI resource types.
     * Customizing fields, for more information see the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
-    * Migrate from vtypes to [Granite UI validation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+    * Migrate from vtypes to [Granite UI validation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
     * Using JS listeners, for more information see [Handling Field Events](#handling-field-events) and the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrating cq:listener Code {#migrating-cq-listener-code}
@@ -489,6 +489,6 @@ For this reason, it is quite easy to make any existing documentation markdown yo
 
 All you need to do is place a `README.md` file in the component structure. This markdown will then be displayed in the [component console](/help/sites-authoring/default-components-console.md).
 
-![](assets/chlimage_1-7.png)
+![chlimage_1-225](assets/chlimage_1-225.png)
 
 The supported markdown is the same as that for [content fragments](/help/assets/content-fragments-markdown.md).

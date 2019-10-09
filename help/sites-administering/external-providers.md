@@ -3,14 +3,12 @@ title: Analytics with External Providers
 seo-title: Analytics with External Providers
 description: Learn about Analytics with External Providers.
 seo-description: Learn about Analytics with External Providers.
-uuid: 31a773ca-901e-45f2-be8f-951c26f9dbc5
+uuid: bea8ec38-a190-46f9-a5fa-8d65321fdf20
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
-docset: aem65
-
+discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
 ---
 
 # Analytics with External Providers{#analytics-with-external-providers}
@@ -51,11 +49,11 @@ Such snippets enable data to be collected and reports generated. The actual data
 
 >[!CAUTION]
 >
->The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.
-
+>The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.  
 >
->If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.
-
+>
+>If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.  
+>
 >
 >Without this, none of the services (Generic, Analytics, Target, etc) will work.
 
@@ -63,21 +61,21 @@ Such snippets enable data to be collected and reports generated. The actual data
 
 For the basic configuration:
 
-1. Open the **Tools** console.
+1. Open the **Tools** console.  
 
-1. From the left pane expand **Cloud Services Configurations**.
+1. From the left pane expand **Cloud Services Configurations**.  
 
 1. Double-click on **Generic Analytics Snippet** to open the page:
 
-   ![](assets/analytics_genericoverview.png)
+   ![analytics_genericoverview](assets/analytics_genericoverview.png)
 
 1. Click on the + to add a new configuration using the dialog; at a minimum assign a name, for example google analytics:
 
-   ![](assets/analytics_addconfig.png)
+   ![analytics_addconfig](assets/analytics_addconfig.png)
 
 1. Click **Create**, the snippet dialog will open immediately - paste the appropriate javascript snippet into the field:
 
-   ![](assets/analytics_snippet.png)
+   ![analytics_snippet](assets/analytics_snippet.png)
 
 1. Click **OK** to save.
 
@@ -85,19 +83,19 @@ For the basic configuration:
 
 Having created the service configuration you now need configure the required pages to use it:
 
-1. Navigate to the page.
+1. Navigate to the page.  
 
-1. Open the **Page Properties** from sidekick, then the **Cloud Services** tab.
+1. Open the **Page Properties** from sidekick, then the **Cloud Services** tab.  
 
 1. Click **Add Service**, then select the required service; for example the **Generic Analytics Snippet**:
 
-   ![](assets/analytics_selectservice.png)
+   ![analytics_selectservice](assets/analytics_selectservice.png)
 
-1. Click **OK** to save.
+1. Click **OK** to save.  
 
 1. You will be returned to the **Cloud Services** tab. The **Generic Analytics Snippet** is now listed with the message `Configuration reference missing`. Use the drop down list to select your specific service instance; for example google-analytics:
 
-   ![](assets/analytics_selectspecificservice.png)
+   ![analytics_selectspecificservice](assets/analytics_selectspecificservice.png)
 
 1. Click **OK** to save.
 

@@ -1,0 +1,62 @@
+---
+title: Website Administration
+seo-title: Website Administration
+description: Learn how to manage multilingual websites in AEM.
+seo-description: Learn how to manage multilingual websites in AEM.
+uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
+contentOwner: Guillaume Carlino
+products: SG_EXPERIENCEMANAGER/6.4/SITES
+topic-tags: site-features
+content-type: reference
+discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
+---
+
+# Website Administration{#website-administration}
+
+The following administration tools are available for managing websites and pages:
+
+* Multi Site Manager (MSM) enables you to use the same site content in multiple locations, while allowing for variations:
+
+    * [Reusing Content: Multi Site Manager and Live Copy](/help/sites-administering/msm.md)
+
+* Translation allows you to automate the translation of page content, assets, and user-generated content to create and maintain multilingual websites:
+
+    * [Translating Content for Multilingual Sites](/help/sites-administering/translation.md)
+
+* These two features can be combined to cater for websites that are both [Multinational and Multilingual](#multinational-and-multilingual-sites).
+
+## Multinational and Multilingual Sites {#multinational-and-multilingual-sites}
+
+You can efficiently create content for multinational and multilingual sites through the combined use of the Multi Site Manager and the translation workflow. Create a master site in one language, for a specific country, then use that content as a basis for the other sites, using translation where required:
+
+* [Translate](/help/sites-administering/translation.md) the master site into different languages.   
+
+* Use [Multi Site Manager](/help/sites-administering/msm.md) to:
+
+    * Re-use content from the master site, and the translations, to create sites for other countries and cultures.
+    * Make sure to limit the use of Multi Site Manager to content within one language, e.g. English master -&gt; English language branches in country sites, French master -&gt; French language branches in country sites. 
+    * Where required, detach elements of the live copies to add localization details.
+
+The following diagram illustrates how the main concepts intersect (but does not show all levels/elements involved):
+
+![chlimage_1-71](assets/chlimage_1-71.png)
+
+>[!NOTE]
+>
+>In this, and comparable, scenarios MSM does not manage the different language versions as such.
+>
+>* [MSM](/help/sites-administering/msm.md) manages the deployment of translated content from a blueprint (e.g. a global master) to the live copies (e.g. the local sites), within the boundaries of a language.
+>* The [translation](/help/sites-administering/translation.md) integration capabilities of AEM, in conjunction with third-party translation management services, manages the languages and translating content into these different languages.
+>
+>For more advanced use-cases, MSM may be used across language masters as well.
+
+>[!NOTE]
+>
+>For all use-cases it is recommended to read the following best practices:
+>
+>* [Best Practices for MSM](/help/sites-administering/msm-best-practices.md); particularly: 
+>
+>  * [Create Site](/help/sites-administering/msm-best-practices.md#create-site)
+>  * [MSM and Multilingual Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>* [Best Practices for Translation](/help/sites-administering/tc-bp.md)

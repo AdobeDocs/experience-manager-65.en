@@ -3,14 +3,12 @@ title: Editing Page Properties
 seo-title: Editing Page Properties
 description: Define the required properties for a page
 seo-description: Define the required properties for a page
-uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
+uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
 contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
-docset: aem65
-
+discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 ---
 
 # Editing Page Properties{#editing-page-properties}
@@ -36,7 +34,7 @@ The properties are distributed across several tabs.
     * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
     * A completely new tag can be entered by typing the name in an empty selection box.
 
-        * The new tag will be created when you hit enter.
+        * The new tag will be created when you hit enter. 
         * The new tag will then be shown with a small star on the right indicating that it is a new tag.
 
     * With the drop-down functionality you can select from existing tags.
@@ -86,15 +84,8 @@ The properties are distributed across several tabs.
   >
   >Vanity URLs:
   >
-  >
-  >
-  >    * Must be unique so you should take care that the value is not already used by another page.
-  >    * Do not support regex patterns.
-  >    * Should not be set to an existing page.
-  >
-  >
-
-  You also need to configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
+  >* Must be unique so you should take care that the value is not already used by another page.
+  >* Do not support regex patterns.
 
 * **Redirect Vanity URL**
 
@@ -105,10 +96,6 @@ The properties are distributed across several tabs.
 * **Language**
 
   The page language.
-
-* **Language Root**
-
-  Must be checked if the page is the root of a language copy.
 
 * **Redirect**
 
@@ -124,37 +111,25 @@ The properties are distributed across several tabs.
 
   >[!NOTE]
   >
-  >Alias sets the `sling:alias` property to define an alias name for the resource (this only impacts the resource, not the path).
-  >
+  > Alias sets the `sling:alias` property to define an alias name for the resource (this only impacts the resource, not the path).
   >
   >For example: if you define an alias of `latin-lang` for the node `/content/we-retail/spanish` node, then this page can be accessed via `/content/we-retail/latin-language`
   >
-  >
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-
-* **Inherited from &lt;*path*&gt;**
-
-  Indicates whether the page is inherited. and where from.
-
-* **Cloud Configuration**
-
-  The path to the configuration.
+  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Allowed Templates**
 
-  [Define the list of templates that will be available](/help/sites-authoring/templates.md#allowingatemplate) within this sub-branch.
+  [Define the list of templates that will be available](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch.
 
-* **Enable** (Authentication Requirement)
+* **Authentication Requirement**
 
-  Enable (or disable) use of authentication to access the page.
+  Enables (or disables) use of authentication to access the page.
 
-  >[!NOTE]
-  >
-  >Closed user groups for the page are defined on the ** [Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** tab.
+  The requirement to have authentication can be set here along with a designated logon page. Closed user groups for the page are defined on the **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** tab.
 
   >[!CAUTION]
   >
-  >The ** [Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
+  >The **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of cq:cugEnabled property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
   >
   >
   >In such a case the CUG permissions must be edited in the [classic UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -169,23 +144,17 @@ The properties are distributed across several tabs.
 
 ### Thumbnail {#thumbnail}
 
-Shows the page thumbnail image. You can:
+1. **Page Thumbnail**
 
-* **Generate Preview**
+   Shows the page thumbnail image. You can:
 
-  Generate a preview of the page to use as thumbnail.
+    * **Generate Preview** 
 
-* **Upload Image**
+      Generate a preview of the page to use as thumbnail. 
 
-  Upload an image to use as thumbnail.
+    * **Upload Image** 
 
-* **Select Image**
-
-  Select an existing Asset to use as the thumbnail.
-
-* **Revert**
-
-  This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
+      Upload an image to use as thumbnail.
 
 ### Social Media {#social-media}
 
@@ -195,7 +164,7 @@ Shows the page thumbnail image. You can:
 
     * **Enable user sharing for Facebook**
     * **Enable user sharing for Pinterest**
-    * **Preferred XF variation**
+    * **Preferred XF variation** 
       Define experience fragment variation used for generating metadata for page
 
 ### Cloud Services {#cloud-services}
@@ -206,13 +175,9 @@ Shows the page thumbnail image. You can:
 
 ### Personalization {#personalization}
 
-* **ContextHub Configurations**
+* **Personalization**
 
-  Select the [ContextHub Configuration](/help/help/sites-administering/contexthub-config.md) and [Segments Path](/help/help/sites-administering/segmentation.md).
-
-* **Targeting Configuration**
-
-  Select a [Brand to specify a scope for Targeting](/help/sites-authoring/target-adobe-campaign.md).
+  Select a [Brand to specify a scope for Targeting](/help/sites-authoring/personalization.md).
 
 ### Permissions {#permissions}
 
@@ -220,10 +185,9 @@ Shows the page thumbnail image. You can:
 
   In this tab you can:
 
-    * [Add Permissions](/help/sites-administering//user-group-ac-admin.md)
-    * [Edit Closed User Group](/help/sites-administering//cug.md#applying-your-closed-user-group-to-content-pages)
-
-    * View the [Effective Permissions](/help/sites-administering//user-group-ac-admin.md)
+    * [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
+    * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages) 
+    * View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
 
   >[!CAUTION]
   >
@@ -234,7 +198,7 @@ Shows the page thumbnail image. You can:
 
   >[!NOTE]
   >
-  >The Permissions tab does not allow the creation of empty CUG groups, which can be useful as a simple way to deny access to every user. To do this CRX Explorer must be used. See the document [User, Group and Access Rights Administration](/help/sites-administering//user-group-ac-admin.md) for more information.
+  >The Permissions tab does not allow the creation of empty CUG groups, which can be useful as a simple way to deny access to every user. To do this CRX Explorer must be used. See the document [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
 
 ### Blueprint {#blueprint}
 
@@ -252,14 +216,13 @@ Shows the page thumbnail image. You can:
 
 * Provide links to pages that provide site-wide functionality, such as **Signup Page**, **Offline Page**, amongst others.
 
-## Editing Page Properties {#editing-page-properties}
+## Editing Page Properties {#editing-page-properties-2}
 
 You can define page properties:
 
 * From the **Sites** console:
 
     * [Creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (a subset of the properties)
-
     * Clicking or tapping **Properties**
 
         * For a single page
@@ -271,18 +234,18 @@ You can define page properties:
 
 ### From the Sites Console - Single Page {#from-the-sites-console-single-page}
 
-Clicking or tapping** Properties** to define the page properties:
+Clicking or tapping **Properties** to define the page properties:
 
-1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.
+1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.  
 
 1. Select the **Properties** option for the required page using either:
 
     * [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-authoring/basic-handling.md#selectionmode)
+    * [Selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    The page properties will be shown using the appropriate tabs.
 
-1. Either view or edit the properties as required.
+1. Either view or edit the properties as required.  
 
 1. Then use **Save** to save your updates followed by **Close** to return to the console.
 
@@ -290,13 +253,13 @@ Clicking or tapping** Properties** to define the page properties:
 
 When editing a page you can use **Page Information** to define the page properties:
 
-1. Open the page for which you want to edit properties.
+1. Open the page for which you want to edit properties.  
 
 1. Select the **Page Information** icon to open the selection menu:
 
-   ![](assets/screen_shot_2018-03-22at095740.png)
+   ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select** Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. The following buttons are also available at the right of the toolbar:
+1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. The following buttons are also available at the right of the toolbar:
 
     * **Cancel**
     * **Save & Close**
@@ -311,18 +274,18 @@ From the **Sites** console you can select several pages then use **View Properti
 >
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
->There is also the [Bulk Editor](/help/sites-administering//bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
+>There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
 
 You can select multiple pages for bulk editing by various methods, including:
 
 * When browsing the **Sites** console
 * After using **Search** to locate a set of pages
 
-![](assets/epp-01.png)
+![screen_shot_2018-03-22at100039](assets/screen_shot_2018-03-22at100039.png)
 
-After selecting the pages and then clicking or tapping the **Properties **option,** **the bulk properties will be shown:
+After selecting the pages and then clicking or tapping the **Properties** option, the bulk properties will be shown:
 
-![](assets/epp-02.png)
+![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 
 You can only bulk edit pages that:
 

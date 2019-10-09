@@ -3,40 +3,29 @@ title: Assets HTTP API
 seo-title: Assets HTTP API
 description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
 seo-description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
-uuid: 24bd2b1e-8f4c-4177-8715-b53a51f02d6e
+uuid: ab709c58-c9a6-48da-84da-866655c84658
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: extending-assets
-content-type: reference
-discoiquuid: 2bb815f0-c1da-491e-81e5-286e596c5197
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+discoiquuid: 68d49096-959b-4751-abf1-23bedbaed9a0
 ---
 
-# Assets HTTP API{#assets-http-api}
+# Assets HTTP API {#assets-http-api}
 
 ## Overview {#overview}
 
-The Assets HTTP API is exposed at */api/assets*, and allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. The current implementation of AEM Assets HTTP API is REST. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
+The Assets HTTP API is a specific part of the general Marketing Cloud API. For general documentation, see Marketing Cloud API user documentation. The Assets HTTP API is available at `/api/assets`, and allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments.
 
 To access the API:
 
-1. Open the API service document at `https://[hostname]:[port]/api.json`. ``
-1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
+1. Open the API service document at `http://[hostname]:[port]/api.json`.
+
+1. Follow the Assets service link  leading to `http://[hostname]:[server]/api/assets.json`.
 
 The API's response is a JSON for some mime types and a response code for all mime types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
-## Content Fragments {#content-fragments}
-
-A [content fragment](/help/assets/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to *standard* assets (such as images or documents), some additional rules apply to handling content fragments.
-
-For further information see [Content Fragments Support in the AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md).
-
 ## Data model {#data-model}
 
-The Assets HTTP API exposes two major elements, folders and assets (for standard assets).
-
-Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment Data Models](/help/assets/assets-api-content-fragments.md#content-fragments) for further information.
+The Assets HTTP API exposes two major elements, folders and assets.
 
 ### Folders {#folders}
 
@@ -53,7 +42,7 @@ title -- Optional title of the folder which can be displayed instead of its name
 
 >[!NOTE]
 >
->Some properties of folder or asset are mapped to a different prefix. The `jcr` prefix of `jcr:title`, `jcr:description`, and `jcr:language` are replaced with `dc` prefix. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
+>Some properties of folder or asset are mapped to a different prefix. The JCR prefix of `jcr:title`, `jcr:description`, and `jcr:language` are replaced with `dc` prefix. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
 
 **Links**
 
@@ -67,23 +56,17 @@ thumbnail -- (Optional) link to a folder thumbnail image
 
 ### Assets {#assets}
 
->[!NOTE]
->
->Standard assets (such as images and documents) consist of the following elements.
->
->For information about elements in Content Fragments see [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
+Assets are multi-part elements, that include:
 
-Assets are actually multi-part elements:
-
-* The properties and metadata of the asset
-* Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or InDesign.
-* Optional comments
+* The properties and metadata of the asset.
+* Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or Adobe InDesign.
+* Optional comments.
 
 Folders have the following components:
 
 **Entities**
 
-The children of Assets are its renditions.
+The children of assets are its renditions.
 
 **Properties**
 
@@ -111,9 +94,9 @@ The Assets HTTP API includes the following features:
 
 **Prerequisites**
 
-* Go to `https://<Server>:<Port>/system/console/configMgr`.
-* Navigate to **Adobe Granite CSRF Filter**.
-* Make sure the property **Filter Methods** incudes: POST, PUT, DELETE.
+* Go to *https://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr*.
+* Navigate to **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Make sure the property **[!UICONTROL Filter Methods]** incudes: POST, PUT, DELETE.
 
 ### Retrieve a Folder Listing {#retrieve-a-folder-listing}
 
@@ -141,7 +124,7 @@ Properties of contained entities are a subset of the full set of properties of e
 
 ### Create a Folder {#create-a-folder}
 
-Creates a new `sling`: `OrderedFolder` at the given path. If a &#42; is given instead of a node name the servlet will use the parameter name as node name. Accepted as request data is either a Siren representation of the new folder or a set of name-value pairs, encoded as `application/www-form-urlencoded` or `multipart`/ `form`- `data`, useful for creating a folder directly from an HTML form. Additionally, properties of the folder can be specified as URL query parameters.
+Creates a new `sling`: `OrderedFolder` at the given path. If a &ast; is given instead of a node name the servlet will use the parameter name as node name. Accepted as request data is either a Siren representation of the new folder or a set of name-value pairs, encoded as `application/www-form-urlencoded` or `multipart`/ `form`- `data`, useful for creating a folder directly from an HTML form. Additionally, properties of the folder can be specified as URL query parameters.
 
 The operation will fail with a `500` response code if the parent node of the given path does not exist. If the folder already exists a `409` response code is returned.
 
@@ -174,7 +157,7 @@ POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
 
 ### Create an Asset {#create-an-asset}
 
-Creates a DAM asset at the given path with the given file. If a &#42; is given instead of a node name the servlet will use the parameter name or the file name as node name.
+Creates a DAM asset at the given path with the given file. If a &ast; is given instead of a node name the servlet will use the parameter name or the file name as node name.
 
 **Parameters**
 
@@ -225,7 +208,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @
 
 ### Update Asset metadata {#update-asset-metadata}
 
-Updates the Asset metadata properties.
+Updates the asset metadata properties.
 
 **Request**
 

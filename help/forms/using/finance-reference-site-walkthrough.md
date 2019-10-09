@@ -3,20 +3,18 @@ title: We.Finance reference site walkthrough
 seo-title: We.Finance reference site walkthrough
 description: Explore the We.Finance reference site and understand how it has been implemented. We.Finance is a sample implementation to showcase key features and functionalities of AEM Forms. 
 seo-description: Explore the We.Finance reference site and understand how it has been implemented. We.Finance is a sample implementation to showcase key features and functionalities of AEM Forms. 
-uuid: 3cc0dd85-63f6-4772-8c00-373bb85b1713
+uuid: cbcedba4-6151-475d-b6c2-9859e0382768
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
-discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
-docset: aem65
-
+discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 ---
 
-# We.Finance reference site walkthrough{#we-finance-reference-site-walkthrough}
+# We.Finance reference site walkthrough {#we-finance-reference-site-walkthrough}
 
 ## Pre-requisites {#pre-requisites}
 
-Set up the reference sites as described in [Set up and configure AEM Forms reference sites](../../forms/using/setup-reference-sites.md).
+Set up the reference sites as described in [Set up and configure AEM Forms reference sites](/help/forms/using/setup-reference-sites.md).
 
 ## We.Finance Reference site scenarios {#we-finance-reference-site-scenarios}
 
@@ -42,7 +40,7 @@ The We.Finance credit card application scenario involves the following personas:
 
 The following infographic depicts step-by-step workflow of the credit card application.
 
-![](assets/workflow_aem.png)
+![workflow_aem](assets/workflow_aem.png)
 
 Let’s look at the reference site scenario in detail to understand how the AEM Forms helps We.Finance achieve their objectives.
 
@@ -50,7 +48,7 @@ Let’s look at the reference site scenario in detail to understand how the AEM 
 
 Sarah Rose is an existing We.Finance customer. She receives a newsletter from We.Finance about new credit cards on offer. She finds the offers exciting and decides to apply for a credit card. She clicks the Apply Now button in the newsletter, which takes her to the credit card application on We.Finance portal. 
 
-![](assets/marketing-email.png) 
+![marketing-email](assets/marketing-email.png) 
 
 #### How it works {#how-it-works}
 
@@ -64,79 +62,78 @@ Open the following URL on the publish instance to trigger a newsletter email. En
 
 ### Sarah finds the offer interesting and chooses to apply {#sarah-finds-the-offer-interesting-and-chooses-to-apply}
 
-Sarah decides to apply for the credit card and taps **Apply Now **button on the email. It takes Sarah to the credit card application on We.Finance portal. The application form is organized in sections using a card layout.
+Sarah decides to apply for the credit card and taps **[!UICONTROL Apply Now]** button on the email. It takes Sarah to the credit card application on We.Finance portal. The application form is organized in sections using a card layout.
 
 Sarah selects a credit card from the available options and clicks **[!UICONTROL Continue]**.
 
-![](assets/cc-application-form-desktop.png)
+![cc-application-form-desktop](assets/cc-application-form-desktop.png)
 
 On the Personal Information page, as Sarah provides her Social Security Number, she gets a prompt to log in with her credentials.
 
-![](assets/login-ssn.png)
+![login-ssn](assets/login-ssn.png)
 
 Sarah is an existing We.Finance customer. She logs in with her We.Finance account credentials and her personal details are auto-populated in the form. Sarah continues to fill the application form and that’s when a reminder pops up for a meeting she must attend. She clicks **[!UICONTROL Save my progress]** on the application form. It saves all the information Sarah has filled in so far and a dialog pops up to confirm if she would like to receive an email with a link to her draft application to complete later.
 
 Sarah clicks **[!UICONTROL Send mail]**. She receives an email with a link to resume her credit card application.
 
-![](assets/resume.png) 
-<details> 
- <summary>Sarah accesses the credit card application from her mobile device</summary> 
- <p>If Sarah is accessing the credit card application from her mobile device, the responsive application opens in a view optimized for mobile devices. In this view, the application form is renders as one section at a time. It allows Sarah to view and provide information progressively as she navigates the application.</p> 
- <img alt="Filling the credit card application on mobile device" imagerotate="0" src="assets/form-on-mobile.png" title="Filling the credit card application on mobile device" /> 
-</details>
+![resume](assets/resume.png) 
 
-<details> 
- <summary>How it works</summary> 
- <p>The <strong>Apply Now</strong> button directs Sarah to the credit card application. The application is an adaptive form, which you can review in the authoring instances at <code>https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html</code>.</p> 
- <p>Some of the key features you can review in the adaptive form are:</p> 
- <ul> 
-  <li>It is based on an XSD schema.</li> 
-  <li>It is built using We Finance Theme A for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at <code>https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance</code> and the theme at <code>https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content</code>.</li> 
-  <li>It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at <code>https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm</code>.</li> 
-  <li>It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.</li> 
-  <li>It uses the Signature Step component to display the completed form and allows electronic signature on the form.</li> 
-  <li>The Save my progress button generates a unique ID for the user and saves the partially-filled application as a draft in a node in AEM repository. Also, it displays a dialog seeking permission to send an email with a link to the node containing the draft application. The Send mail button on the confirmation dialog triggers an email with a link to the node containing the draft.</li> 
-  <li>It uses the Invoke AEM Workflow submit action to trigger the credit card approval workflow. You can review the workflow used in this form at <code>https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html</code></li> 
- </ul> 
- <p>It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.</p> 
- <p>Also, see the following documentation for more information about features used in the credit card application adaptive form:</p> 
- <ul> 
-  <li><a href="../../forms/using/introduction-forms-authoring.md" target="_blank">Introduction to authoring adaptive forms</a></li> 
-  <li><a href="../../forms/using/adaptive-form-xml-schema-form-model.md" target="_blank">Creating adaptive forms using XML Schema</a></li> 
-  <li><a href="../../forms/using/rule-editor.md" target="_blank">Rule Editor</a></li> 
-  <li><a href="../../forms/using/themes.md" target="_blank">Themes</a></li> 
-  <li><a href="../../forms/using/data-integration.md" target="_blank">Data Integration</a></li> 
-  <li><a href="../../forms/using/working-with-adobe-sign.md" target="_blank">Using Adobe Sign in adaptive forms</a></li> 
-  <li><a href="../../forms/using/aem-forms-workflow.md" target="_blank">Forms-centric workflow on OSGi</a></li> 
- </ul> 
-</details>
 
-<details> 
- <summary>See it yourself</summary> 
- <p>When logged in as Sarah Rose, click the <strong>Apply now</strong> button on the credit card application. Fill in some details, explore various adaptive form components, and click <strong>Save my progress</strong> to receive an email with a <strong>Resume</strong> button that links to the draft application. Ensure that you specify your email ID in the application form to receive the email.</p> 
- <p>Review the We.Finance Theme available at:</p> 
- <p><code>https://&amp;lt;host&amp;gt;:&amp;lt;AuthorPort&amp;gt;/editor.html/content/dam/formsanddocuments-themes/we-Finance/we-Finance-Theme-A/jcr:content</code></p> 
- <p>You can review the We.Finance Template at:</p> 
- <p><code>https://&amp;lt;host&amp;gt;:&amp;lt;AuthorPort&amp;gt;/editor.html/conf/we-finance/settings/wcm/templates/we-finance-template/structure.html</code></p> 
-</details>
+<!--Theses sections used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
-<details> 
- <summary>Item Title</summary> 
-</details>
+### Sarah accesses the credit card application from her mobile device {#a-sarah-access}
 
-<details> 
- <summary>Item Title</summary> 
-</details>
+If Sarah is accessing the credit card application from her mobile device, the responsive application opens in a view optimized for mobile devices. In this view, the application form is renders as one section at a time. It allows Sarah to view and provide information progressively as she navigates the application.
+
+![form-on-mobile](assets/form-on-mobile.png)
+
+### How it works {#a-how-it-works}
+
+The **[!UICONTROL Apply Now]** button directs Sarah to the credit card application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`.
+
+Some of the key features you can review in the adaptive form are:
+
+* It is based on an XSD schema.
+* It is built using We Finance Theme A for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
+* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
+* It uses the Signature Step component to display the completed form and allows electronic signature on the form.
+* The Save my progress button generates a unique ID for the user and saves the partially-filled application as a draft in a node in AEM repository. Also, it displays a dialog seeking permission to send an email with a link to the node containing the draft application. The Send mail button on the confirmation dialog triggers an email with a link to the node containing the draft.
+* It uses the Invoke AEM Workflow submit action to trigger the credit card approval workflow. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+
+It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.
+
+Also, see the following documentation for more information about features used in the credit card application adaptive form:
+
+* [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md)
+* [Creating adaptive forms using XML Schema](/help/forms/using/adaptive-form-xml-schema-form-model.md)
+* [Rule Editor](/help/forms/using/rule-editor.md)
+* [Themes](/help/forms/using/themes.md)
+* [Data Integration](/help/forms/using/data-integration.md)
+* [Using Adobe Sign in adaptive forms](/help/forms/using/working-with-adobe-sign.md)
+* [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md)
+
+### See it yourself {#a-see-it-yourself}
+
+When logged in as Sarah Rose, click the **[!UICONTROL Apply now]** button on the credit card application. Fill in some details, explore various adaptive form components, and click **[!UICONTROL Save my progress]** to receive an email with a **[!UICONTROL Resume]** button that links to the draft application. Ensure that you specify your email ID in the application form to receive the email.
+
+Review the We.Finance Theme available at:
+
+`https://<host>:<AuthorPort>/editor.html/content/dam/formsanddocuments-themes/we-Finance/we-Finance-Theme-A/jcr:content`
+
+You can review the We.Finance Template at:
+
+`https://<host>:<AuthorPort>/editor.html/conf/we-finance/settings/wcm/templates/we-finance-template/structure.html`
 
 ### Sarah resumes and submits the application {#sarah-resumes-and-submits-the-application}
 
-Sarah comes back later and finds an email from We.Finance. She clicks the **Resume** button in the email that takes her to her draft credit card application. The information that she filled earlier comes prepopulated. She fills the remaining application form, signs the application, and submits it.
+Sarah comes back later and finds an email from We.Finance. She clicks the **[!UICONTROL Resume]** button in the email that takes her to her draft credit card application. The information that she filled earlier comes prepopulated. She fills the remaining application form, signs the application, and submits it.
 
-![](assets/resume-1.png)
+![resume-1](assets/resume-1.png)
 
-Alternatively, she can access her draft application under **My Forms** on We.Finance home page.
+Alternatively, she can access her draft application under **[!UICONTROL My Forms]** on We.Finance home page.
 
-![](assets/portal-drafts.png) 
+![portal-drafts](assets/portal-drafts.png) 
 
 #### How it works {#how-it-works-1}
 
@@ -150,23 +147,23 @@ You must have received an email with a link to the draft application on your ema
 
 We.Finance receives the credit card application submitted by Sarah. A task is assigned to Gloria Rios. She reviews the task in her AEM Inbox and approves it.
 
-![](assets/inbox.png) 
+![inbox](assets/inbox.png) 
 
 #### How it works {#how-it-works-2}
 
 When Sarah fills and submits the credit card application, a Forms Workflow triggers and a task is created in Gloria's AEM inbox.
 
-AEM Forms on OSGi provides forms-centric workflows that allow you to build adaptive forms-based workflows. These workflows can be used for review and approvals, business process flows, to start document services, integrate with Adobe Sign signature workflow, and so on. For more information, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md).
+AEM Forms on OSGi provides forms-centric workflows that allow you to build adaptive forms-based workflows. These workflows can be used for review and approvals, business process flows, to start document services, integrate with Adobe Sign signature workflow, and so on. For more information, see [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md).
 
 The following image depicts the AEM workflow that processes the credit card application and generates a PDF output of the application.
 
-![](assets/workflow.png) 
+![workflow](assets/workflow.png) 
 
 #### See it yourself {#see-it-yourself-2}
 
-You can access AEM inbox for the we.finance site at https://<*hostname*>:<*PublishPort*>/content/we-finance/global/en.html. On the page, tap **Sign In**, select the** Login as representative** checkbox, log in to the AEM inbox using `grios/password` as the username/password for Gloria Rios, and approve the credit card application. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](../../forms/using/manage-applications-inbox.md).
+You can access AEM inbox for the we.finance site at https://<*hostname*>:<*PublishPort*>/content/we-finance/global/en.html. On the page, tap **[!UICONTROL Sign In]**, select the **[!UICONTROL Login as representative]** checkbox, log in to the AEM inbox using `grios/password` as the username/password for Gloria Rios, and approve the credit card application. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
-![](assets/inbox-1.png)
+![inbox-1](assets/inbox-1.png)
 
 When you approve the application, Sarah receives an email with the welcome kit.
 
@@ -174,15 +171,15 @@ When you approve the application, Sarah receives an email with the welcome kit.
 
 As Sarah's credit card application gets approved, she receives an email with a link to the Welcome kit. She opens the Welcome kit, which includes her credit card account details. The Welcome kit also displays promotional offers personalized for Sarah. As she scrolls down, the Welcome kit contains an embedded form to apply for an add-on card. Sarah quickly filled in the required details from within the Welcome kit and applies for the add-on card. A confirmation dialog for the add-on card application appears.
 
-![](assets/welcome-kit-for-sara.png)
+![welcome-kit-for-sara](assets/welcome-kit-for-sara.png)
 
 The welcome kit is personalized for Sarah and shows information relevant to her. It provides her an option to download a PDF version of the welcome kit. 
 
-![](assets/benefits-of-platinum-card.png)
+![benefits-of-platinum-card](assets/benefits-of-platinum-card.png)
 
 The welcome kit includes another application form that Sarah can fill and submit to apply for an add-on card from within the welcome kit without visiting the We.Finance portal.
 
-![](assets/apply-addon-card.png) 
+![apply-addon-card](assets/apply-addon-card.png) 
 
 #### How it works {#how-it-works-3}
 
@@ -192,11 +189,11 @@ The add-on card application is an embedded adaptive form in the welcome kit inte
 
 #### See it yourself {#see-it-yourself-3}
 
-Click the Resume button in the email that you received in the previous step. It opens the draft application. Fill in all the details and submit the application. You will then receive a welcome kit. Review the welcome kit.
+Click the **[!UICONTROL Resume]** button in the email that you received in the previous step. It opens the draft application. Fill in all the details and submit the application. You will then receive a welcome kit. Review the welcome kit.
 
 You can also view the welcome kit at the following URL:
 
-https://** &lt;*host*&gt;**:**&lt;*port*&gt;/**content/aemforms-refsite/doclink.html?document=/content/forms/af/we-finance/credit-card/creditcardwelcomekit&customerId=197&channel=web
+https://&lt;*host*&gt;:&lt;*port*&gt;/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-finance/credit-card/creditcardwelcomekit&customerId=197&channel=web
 
 You can access it on author and publish instances.
 
@@ -204,7 +201,7 @@ You can access it on author and publish instances.
 
 As Sarah begins to use the credit card, she receives another email from We.Finance that includes her credit card statement. The following images show the email with a link to the credit card statement on mobile.
 
-![](assets/statement-email.png)
+![statement-email](assets/statement-email.png)
 
 Sarah clicks View Statement in the email to view the credit card statement. The statement is an interactive communication. It has both Web and Print (PDF) versions. The statement integrates with Forms Data Model to retrieve data, specific to the customer, from the database. The interactive statement constitutes various elements:
 
@@ -236,7 +233,7 @@ https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/aemforms-refsite/doclink.html?
 
 You can access it on author and publish instances.
 
-The credit card statement displays promotional offers towards the end of statement. You can integrate Adobe Target with AEM Forms Interactive Communication to deliver promotional targeted offers based on specific customer segments. To configure your interactive communication to use Adobe Target for customized and targeted offers, see [create targeted experiences](/forms/using/experience-targeting-forms.md).
+The credit card statement displays promotional offers towards the end of statement. You can integrate Adobe Target with AEM Forms Interactive Communication to deliver promotional targeted offers based on specific customer segments. To configure your interactive communication to use Adobe Target for customized and targeted offers, see [create targeted experiences](/help/forms/using/experience-targeting-forms.md).
 
 ![](do-not-localize/offers.png) 
 
@@ -244,22 +241,22 @@ The credit card statement displays promotional offers towards the end of stateme
 
 We.Finance, from time to time, reviews the performance of their credit card application to check for any issues that customers might be facing. They use this analysis to take informed decisions about the changes required in the credit card application to enhance the user experience, reduce abandonment rate of forms, and thereby improve conversion. They leverage the integration of AEM Forms with Adobe Analytics for their analysis. The following image depicts their analytics dashboard.
 
-For more information about how to interpret the analytics dashboard, see [Viewing and understanding AEM Forms analytics reports](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+For more information about how to interpret the analytics dashboard, see [Viewing and understanding AEM Forms analytics reports](/help/forms/using/view-understand-aem-forms-analytics-reports.md).
 
-![](assets/cc-analytics.png) 
+![cc-analytics](assets/cc-analytics.png) 
 
 #### How it works {#how-it-works-5}
 
-The performance metrics for the credit card application form are tracked using Adobe Analytics. For more information about configuring Adobe Analytics and viewing reports, see [Configuring analytics for forms and documents](../../forms/using/configure-analytics-forms-documents.md).
+The performance metrics for the credit card application form are tracked using Adobe Analytics. For more information about configuring Adobe Analytics and viewing reports, see [Configuring analytics for forms and documents](/help/forms/using/configure-analytics-forms-documents.md).
 
-#### See it yourself <br> {#see-it-yourself-br}
+#### See it yourself {#see-it-yourself-br}
 
-For you to view and explore the analytics report, we are providing seed data for the credit card application in the reference site. Before you use seed data, see [Configure Analytics](../../forms/using/setup-reference-sites.md#configureanalytics). Perform the following steps in author instance to view the report with the seed data:
+For you to view and explore the analytics report, we are providing seed data for the credit card application in the reference site. Before you use seed data, see [Configure Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Perform the following steps in author instance to view the report with the seed data:
 
-1. Go to **Forms & Documents** UI at https://&lt;*hostname*&gt;:&lt;*AuthorPort*&gt;/aem/forms.html/content/dam/formsanddocuments.
+1. Go to **[!UICONTROL Forms & Documents]** UI at https://&lt;*hostname*&gt;:&lt;*AuthorPort*&gt;/aem/forms.html/content/dam/formsanddocuments.
 
-1. Click to open the **We.Finance** Folder.
-1. Select **Application for Credit Card **adaptive form, and then in the toolbar, click **[!UICONTROL Enable Analytics]**.
+1. Click to open the **[!UICONTROL We.Finance]** Folder.
+1. Select **[!UICONTROL Application for Credit Card]** adaptive form, and then in the toolbar, click **[!UICONTROL Enable Analytics]**.
 
 1. Select the adaptive form again and click **[!UICONTROL Analytics Report]** in the toolbar to generate the report. You will see a a blank report initially.
 
@@ -272,48 +269,48 @@ To generate analytics report with seed data:
 1. In CRXDE, navigate to: `/content/dam/formsanddocuments/we-finance/cc-app/jcr:content/analyticsdatanode/lastsevendays`
 1. In the **[!UICONTROL analyticsdata]** field under **[!UICONTROL Properties]**, paste the copied content of the seed data file. 
 
-1. Select **Application for Credit Card **adaptive form and click **[!UICONTROL Analytics Report]** in the toolbar to generate the report with seed data.
+1. Select **Application for Credit Card** adaptive form and click **[!UICONTROL Analytics Report]** in the toolbar to generate the report with seed data.
 
 **A/B testing of the credit card application**
 
 In addition to analyzing performance of the credit card application and constantly improving it, We.Finance leverages integration of AEM Forms with Target to create A/B tests. It allows them to serve different experiences of the credit card application form and identify the experience that causes better conversion rate in terms of form completion and submission.
 
-To configure Target in AEM Forms server, see [Set up and integrate Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+To configure Target in AEM Forms server, see [Set up and integrate Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 Perform the following steps to experience the creation of A/B test for We.Finance credit card application form:
 
-1. Go to **Forms & Documents** at https://&lt;*hostname*&gt;:&lt;*AuthorPort*&gt;/aem/forms.html/content/dam/formsanddocuments.
+1. Go to **[!UICONTROL Forms & Documents]** at https://&lt;*hostname*&gt;:&lt;*AuthorPort*&gt;/aem/forms.html/content/dam/formsanddocuments.
 
-1. Click to open the **We.Finance** folder.
-1. Select **Application for Credit Card **adaptive form.
-1. Click **More** in toolbar and select **Configure A/B Testing**. The Configure A/B testing page opens.  
+1. Click to open the **[!UICONTROL We.Finance]** folder.
+1. Select **[!UICONTROL Application for Credit Card]** adaptive form.
+1. Click **[!UICONTROL More]** in toolbar and select **[!UICONTROL Configure A/B Testing]**. The Configure A/B testing page opens.  
 
-1. Specify an **Activity Name**.
+1. Specify an **[!UICONTROL Activity Name]**.
 1. From the Audience drop-down list, select an audience to whom you want to serve different experiences of the form. For example, **Visitors Using Chrome**.
-1. In the **Experience Distribution** fields for experiences A and B, specify the distribution, in terms of percentage, to determine the distribution of experiences among the total audience. For example, if you specify 40, 60 for experiences A and B, respectively, the experience A will be served to the 40% of the audience and the remaining 60% will see the experience B.
+1. In the **[!UICONTROL Experience Distribution]** fields for experiences A and B, specify the distribution, in terms of percentage, to determine the distribution of experiences among the total audience. For example, if you specify 40, 60 for experiences A and B, respectively, the experience A will be served to the 40% of the audience and the remaining 60% will see the experience B.
 1. Click **Configure**. A dialog appears to confirm the creation of the A/B test.
 1. Click **Done**.
 1. Select the **Application for Credit Card** form and click **Edit**. It gives the option to open one of the experiences. Click **Experience B**. The form opens in the edit mode.
 
 1. Modify the form as desired to create a different experience than the default experience A.
 1. Go to the Forms and Documents UI, select the form, click **More**, and select **Start A/B Testing**.
-1. Now open the form in chrome browser several times using the following url:  
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled` 
+1. Now open the form in chrome browser several times using the following url:
 
-   Note: Remove the cookie with the name **mbox **from browser’s cookie persistence before opening the form next time.
-
+   https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled 
+   Note: Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time.* 
    You will see experience A and B of the form at random.
 
 1. Select the form, click **More**, and click **A/B Testing Report**. You won’t find much data in the report as you have just started the testing. Let’s now provide some seed data to see how A/B Testing report looks like.
+
 1. Open CRXDE Lite and take a back-up of the following file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Replace the definition of function `onReportLoadSuccess` in the above mentioned file with the function definition in the following file: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Note: These changes are only for the demo purpose. Ensure that you restore the file contents after completing this procedure.
+   **Note:** These changes are only for the demo purpose. Ensure that you restore the file contents after completing this procedure.
 
 1. Refresh the report that you generated, and you will see something like the following. Review the reporting dashboard.
 
-![](assets/ab-test-report.png)
+![ab-test-report-3](assets/ab-test-report-3.png)
 
 To end the A/B test, click **End A/B test** button on the reporting dashboard. At this time, a dialog prompts you to declare an experience. Choose a winner and confirm to end the A/B test.
 
@@ -329,7 +326,7 @@ The We.Finance home mortgage scenario involves the following personas:
 
 The following infographic depicts step-by-step workflow of a home mortgage application.
 
-![](assets/home_mortgage_application_walkthrough.png)
+![home_mortgage_application_walkthrough](assets/home_mortgage_application_walkthrough.png)
 
 Let’s now look in detail the steps in the reference site scenario to see how the AEM Forms helps We.Finance achieve their objectives.
 
@@ -337,13 +334,11 @@ Let’s now look in detail the steps in the reference site scenario to see how t
 
 Sarah Rose is planning to buy a home and looking for a home mortgage plans. She is a We.Finance customer and therefore visits the We.Finance portal to explore home mortgage offers. She goes to the Loans section and finds a mortgage calculator on the portal. She fills in the details and clicks Calculate my mortgage, which returns a mortgage plan.
 
-![](assets/loans1.png) ![](assets/loans2.png)
+![loans1](assets/loans1.png) ![loans2](assets/loans2.png)
+**Figure:** *Mortgage calculator*
 
-Mortgage calculator
-
-![](assets/loans3.png)
-
-Mortgage calculator result
+![loans3](assets/loans3.png)
+**Figure:** *Mortgage calculator result*
 
 #### How it works {#how-it-works-6}
 
@@ -367,7 +362,7 @@ The following images show the workflow as Sarah navigates through the home mortg
 
 If Sarah clicks **Apply now** from her desktop, the mortgage application form opens as follows. The information Sarah provided in the mortgage calculator is prefilled in the application form. Sarah fills in the remaining details and clicks **Continue**.
 
-![](assets/mortgage-application.png)
+![mortgage-application](assets/mortgage-application.png)
 
 Based on the information Sarah filled in the mortgage calculator, she is presented with a few mortgage plans. She chooses the plan that suits her requirements and continues to fill the application. She finally signs and submits the application.
 
@@ -396,13 +391,13 @@ It is recommended to review the form to understand the schema, components, rules
 
 Also, see the following documentation for more information about features used in the home mortgage application adaptive form:
 
-* [Introduction to authoring adaptive forms](../../forms/using/introduction-forms-authoring.md)
-* [Creating adaptive forms using XML Schema](../../forms/using/adaptive-form-xml-schema-form-model.md)
-* [Rule Editor](../../forms/using/rule-editor.md)
-* [Themes](../../forms/using/themes.md)
-* [Data Integration](../../forms/using/data-integration.md)
-* [Using Adobe Sign in adaptive forms](../../forms/using/working-with-adobe-sign.md)
-* [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md)
+* [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md)
+* [Creating adaptive forms using XML Schema](/help/forms/using/adaptive-form-xml-schema-form-model.md)
+* [Rule Editor](/help/forms/using/rule-editor.md)
+* [Themes](/help/forms/using/themes.md)
+* [Data Integration](/help/forms/using/data-integration.md)
+* [Using Adobe Sign in adaptive forms](/help/forms/using/working-with-adobe-sign.md)
+* [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md)
 
 #### See it yourself {#see-it-yourself-6}
 
@@ -414,15 +409,15 @@ Ensure that you specify a valid email ID in the application to receive an acknow
 
 We.Finance receives the mortgage application submitted by Sarah. The task to approve or reject the application is assigned to Gloria Rios. She reviews the application and finds that Sarah's government ID is missing.
 
-![](assets/grios-inbox.png)
+![grios-inbox](assets/grios-inbox.png)
 
 Gloria opens the task and clicks Need More Info and puts a comment about missing government ID.
 
-![](assets/need-more-info.png)
+![need-more-info](assets/need-more-info.png)
 
 The task is now assigned to John Doe, a customer care representative with We.Finance. He opens the task and reviews Gloria's comment. He contacts Sarah and asks her to send a copy of her ID. After he received a copy of Sarah's ID, he attaches it to the task and submits the application for re-evaluation.
 
-![](assets/reevaluation.png)
+![reevaluation](assets/reevaluation.png)
 
 The task is reassigned to Gloria. She reviews the attached ID and approves the application.
 
@@ -430,23 +425,23 @@ The task is reassigned to Gloria. She reviews the attached ID and approves the a
 
 When Sarah fills and submits the home mortgage application, a Forms Workflow triggers and a task is created in Gloria's AEM inbox. As Gloria reviews the application and requests for more information, the task is assigned to John Doe. When John Doe attaches the ID and resubmits the application, it is assigned to Gloria. This is defined in the AEM Workflow associated with the mortgage application.
 
-AEM Forms on OSGi provides forms-centric workflows that allow you to build adaptive forms-based workflows. These workflows can be used for review and approvals, business process flows, to start document services, integrate with Adobe Sign signature workflow, and so on. For more information, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md).
+AEM Forms on OSGi provides forms-centric workflows that allow you to build adaptive forms-based workflows. These workflows can be used for review and approvals, business process flows, to start document services, integrate with Adobe Sign signature workflow, and so on. For more information, see [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md).
 
 The following image depicts the AEM workflow associated with the mortgage application.
 
-![](assets/mortgage-workflow-model.png) 
+![mortgage-workflow-model](assets/mortgage-workflow-model.png) 
 
 #### See it yourself {#see-it-yourself-7}
 
-You can access the AEM inbox at `https://<hostname>:<AuthorPort>/content/we-finance/global/en/login.html?resource=/aem/inbox.html`. Log in to the AEM inbox using `grios/password` as the username/password for Gloria Rios and `jdoe/jdoe` for John Doe, and explore the home mortgage application workflow.
+You can access the AEM inbox at https://<***hostname***>:<***AuthorPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Log in to the AEM inbox using `grios/password` as the username/password for Gloria Rios and `jdoe/jdoe` for John Doe, and explore the home mortgage application workflow.
 
-For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](../../forms/using/manage-applications-inbox.md).
+For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ### Sarah receives the welcome kit {#sarah-receives-the-welcome-kit}
 
 As Sarah's mortgage application gets approved, she receives an email with a link to the Welcome kit. She opens the Welcome kit, which includes a carousel displaying promotional offers personalized for Sarah. 
 
-![](assets/mortgage-welcome-kit.png)
+![mortgage-welcome-kit](assets/mortgage-welcome-kit.png)
 
 The welcome kit is personalized for Sarah and shows information relevant to her. It provides her an option to download a PDF version of the welcome kit. The arrow button at the bottom allows Sarah to scroll down and navigate through other sections in the welcome kit.
 
@@ -468,7 +463,7 @@ You can view it in AEM publish instance at the following URL:
 
 As Sarah avails the loan and starts paying the installments, she receives another email from We.Finance that includes her monthly account statement. 
 
-![](assets/mortgage-statement-email.png)
+![mortgage-statement-email](assets/mortgage-statement-email.png)
 
 Sarah clicks View Statement in the email to view the mortgage account statement. The interactive statement constitutes various elements:
 
@@ -497,17 +492,17 @@ You can access it on author and publish instances.
 
 We.Finance, from time to time, reviews the performance of their mortgage application to check for any issues that customers might be facing. They use this analysis to take informed decisions about the changes required in the mortgage application to enhance the user experience, reduce abandonment rate of forms, and thereby improve conversion. They leverage the integration of AEM Forms with Adobe Analytics for their analysis. The following image depicts their analytics dashboard.
 
-For more information about how to interpret the analytics dashboard, see [Viewing and understanding AEM Forms analytics reports](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+For more information about how to interpret the analytics dashboard, see [Viewing and understanding AEM Forms analytics reports](/help/forms/using/view-understand-aem-forms-analytics-reports.md).
 
-![](assets/mortgage-analytics.png) 
+![mortgage-analytics](assets/mortgage-analytics.png) 
 
 #### How it works {#how-it-works-11}
 
-The performance metrics for the mortgage application form are tracked using Adobe Analytics. For more information about configuring Adobe Analytics and viewing reports, see [Configuring analytics for forms and documents](../../forms/using/configure-analytics-forms-documents.md).
+The performance metrics for the mortgage application form are tracked using Adobe Analytics. For more information about configuring Adobe Analytics and viewing reports, see [Configuring analytics for forms and documents](/help/forms/using/configure-analytics-forms-documents.md).
 
-#### See it yourself <br> {#see-it-yourself-br-1}
+#### See it yourself {#see-it-yourself-br-1}
 
-For you to view and explore the analytics report, we are providing seed data for the mortgage application in the reference site. Before you use seed data, see [Configure Analytics](../../forms/using/setup-reference-sites.md#configureanalytics). Perform the following steps in author instance to view the report with the seed data:
+For you to view and explore the analytics report, we are providing seed data for the mortgage application in the reference site. Before you use seed data, see [Configure Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Perform the following steps in author instance to view the report with the seed data:
 
 1. Go to **Forms & Documents** UI at https://&lt;*hostname*&gt;:&lt;*AuthorPort*&gt;/aem/forms.html/content/dam/formsanddocuments.
 
@@ -530,7 +525,7 @@ To generate analytics report with seed data:
 
 In addition to analyzing performance of the mortgage application and constantly improving it, We.Finance leverages integration of AEM Forms with Target to create A/B tests. It allows them to serve different experiences of the application form and identify the experience that causes better conversion rate in terms of form completion and submission.
 
-To configure Target in AEM Forms server, see [Set up and integrate Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+To configure Target in AEM Forms server, see [Set up and integrate Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 Perform the following steps in the author instance to experience the creation of A/B test for We.Finance mortgage application form:
 
@@ -546,23 +541,25 @@ Perform the following steps in the author instance to experience the creation of
 1. Click **Configure**. A dialog appears to confirm the creation of the A/B test.
 1. Click **Done**.
 1. Select the **Application for Home Mortgage** adaptive form and click **Edit**. It gives the option to open one of the experiences. Click **Experience B**. The form opens in the edit mode.
+
 1. Modify the form as desired to create a different experience than the default experience A.
 1. Go to the Forms and Documents UI, select the form, click **More**, and select **Start A/B Testing**.
-1. Now open the form in chrome browser several times using the following url:  
+
+1. Now open the form in chrome browser several times using the following url:
+
    https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled** 
-   
-   Note: Remove the cookie with the name **mbox **from browser’s cookie persistence before opening the form next time.* 
+   **Note:** Remove the cookie with the name **mbox **from browser’s cookie persistence before opening the form next time.* 
    You will see experience A and B of the form at random.
 
 1. Select the form, click **More**, and click **A/B Testing Report**. You won’t find much data in the report as you have just started the testing. Let’s now provide some seed data to see how A/B Testing report looks like.
+
 1. Open CRXDE Lite and take a back-up of the following file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Replace the definition of the `onReportLoadSuccess` function in the above mentioned file with the function definition in the following file: /apps/we-finance/demo-artifacts/targetreport.js
-
-   Note: These changes are only for the demo purpose. Ensure that you restore the file contents after completing this procedure.
+   **Note:** These changes are only for the demo purpose. Ensure that you restore the file contents after completing this procedure.
 
 1. Refresh the report that you generated, and you will see something like the following. Review the reporting dashboard.
 
-![](assets/ab-test-report-1.png)
+![ab-test-report-4](assets/ab-test-report-4.png)
 
 To end the A/B test, click **End A/B test** button on the reporting dashboard. At this time, a dialog prompts you to declare an experience. Choose a winner and confirm to end the A/B test.
 
@@ -575,19 +572,17 @@ The We.Finance home mortgage with Microsoft Dynamics scenario involves the follo
 * Sarah Rose, a We.Finance customer
 * The Administrator of the We.Finance Microsoft Dynamics instance
 
-The Home Mortgage application walkthrough with Microsoft Dynamics demonstrates how a We.Finance customer can use the site to apply for a home mortgage when the reference site uses the Microsoft Dynamics for data integration. The walkthrough ends with the data filled in by the user being received by Microsoft Dynamics. Before you proceed with this scenario, you need to complete the [Microsoft Dynamics 365 configuration for the home mortgage workflow of the We.Finance reference site](/forms/using/ms-dynamics-configuration-home-mortgage.md).
+The Home Mortgage application walkthrough with Microsoft Dynamics demonstrates how a We.Finance customer can use the site to apply for a home mortgage when the reference site uses the Microsoft Dynamics for data integration. The walkthrough ends with the data filled in by the user being received by Microsoft Dynamics. Before you proceed with this scenario, you need to complete the [Microsoft Dynamics 365 configuration for the home mortgage workflow of the We.Finance reference site](/help/forms/using/ms-dynamics-configuration-home-mortgage.md).
 
 ### Sarah visits We.Finance website and applies for home mortgage {#sarah-visits-we-finance-website-and-applies-for-home-mortgage-1}
 
 Sarah Rose is planning to buy a home and looking for a home mortgage plans. She is a We.Finance customer and therefore visits the We.Finance portal to explore home mortgage offers. She goes to the Loans section and finds a mortgage calculator on the portal. She fills in the details and clicks Calculate my mortgage, which returns a mortgage plan.
 
-![](assets/loans1.png) ![](assets/loans2.png)
+![loans1](assets/loans1.png) ![loans2](assets/loans2.png)
+**Figure:** *Mortgage calculator*
 
-Mortgage calculator
-
-![](assets/loans3.png)
-
-Mortgage calculator result
+![loans3](assets/loans3.png)
+**Figure:** *Mortgage calculator result*
 
 #### How it works {#how-it-works-12}
 
@@ -611,7 +606,7 @@ The following images show the workflow as Sarah navigates through the home mortg
 
 If Sarah clicks **Apply now** from her desktop, the mortgage application form opens as follows. The information Sarah provided in the mortgage calculator is prefilled in the application form. Sarah fills in the remaining details and clicks **Continue**.
 
-![](assets/mortgage-application.png)
+![mortgage-application](assets/mortgage-application.png)
 
 Based on the information Sarah filled in the mortgage calculator, she is presented with a few mortgage plans. She chooses the plan that suits her requirements and continues to fill the application. She finally signs and submits the application.
 
@@ -641,7 +636,7 @@ It is recommended to review the form to understand the schema, components, rules
 
 We.Finance receives the mortgage application submitted by Sarah on the Microsoft Dynamics instance. The administrator taps entry in the lead column to go to the lead record created for Sarah Rose.
 
-![](assets/msdynamicsrecord.png) 
+![msdynamicsrecord](assets/msdynamicsrecord.png) 
 
 ## Home insurance application walkthrough {#home-insurance-application-walkthrough}
 
@@ -653,7 +648,7 @@ The We.Finance home insurance scenario involves the following personas:
 
 The following infographic depicts step-by-step workflow of a home insurance application scenario.
 
-![](assets/workflow_insurance.png)
+![workflow_insurance](assets/workflow_insurance.png)
 
 Let’s now look in detail the steps in the reference site scenario to see how the AEM Forms helps We.Finance achieve their objectives.
 
@@ -661,7 +656,7 @@ Let’s now look in detail the steps in the reference site scenario to see how t
 
 Sarah Rose is a home mortgage customer of We.Finance and looking for a good deal on home insurance. She visits the We.Finance portal and explores home insurance plans. We.Finance identified her as an existing customer and sends her a targeted newsletter on her email. The newsletter contains home insurance offers.
 
-![](assets/insurance-newsletter.png) 
+![insurance-newsletter](assets/insurance-newsletter.png) 
 
 #### How it works {#how-it-works-14}
 
@@ -679,13 +674,13 @@ Sarah likes the home insurance plan in the newsletter and decides to apply for i
 
 On the Personal Information page, as Sarah provides her Social Security Number, she gets a prompt to log in with her credentials.
 
-![](assets/insurance-ssn.png)
+![insurance-ssn](assets/insurance-ssn.png)
 
 Sarah is an existing We.Finance customer. She logs in with her We.Finance account credentials and her personal details are auto-populated in the form. She continues to fill and submit the application.
 
 If Sarah submitted the application on a mobile device, she would go through the following screens.
 
-![](assets/insurance-form-on-mobile.png) 
+![insurance-form-on-mobile](assets/insurance-form-on-mobile.png) 
 
 #### How it works {#how-it-works-15}
 
@@ -705,13 +700,13 @@ It is recommended to review the form to understand the schema, components, rules
 
 Also, see the following documentation for more information about features used in the home insurance application adaptive form:
 
-* [Introduction to authoring adaptive forms](../../forms/using/introduction-forms-authoring.md)
-* [Creating adaptive forms using XML Schema](../../forms/using/adaptive-form-xml-schema-form-model.md)
-* [Rule Editor](../../forms/using/rule-editor.md)
-* [Themes](../../forms/using/themes.md)
-* [Data Integration](../../forms/using/data-integration.md)
-* [Using Adobe Sign in adaptive forms](../../forms/using/working-with-adobe-sign.md)
-* [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md)
+* [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md)
+* [Creating adaptive forms using XML Schema](/help/forms/using/adaptive-form-xml-schema-form-model.md)
+* [Rule Editor](/help/forms/using/rule-editor.md)
+* [Themes](/help/forms/using/themes.md)
+* [Data Integration](/help/forms/using/data-integration.md)
+* [Using Adobe Sign in adaptive forms](/help/forms/using/working-with-adobe-sign.md)
+* [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md)
 
 #### See it yourself {#see-it-yourself-12}
 
@@ -723,23 +718,23 @@ Fill in details, explore various adaptive form components, and submit the applic
 
 We.Finance receives the home insurance application submitted by Sarah. A task is assigned to Gloria Rios. She reviews the application in her AEM Inbox and approves it.
 
-![](assets/insurance-inbox-grios.png)
+![insurance-inbox-grios](assets/insurance-inbox-grios.png)
 
 As Gloria approves Sarah's home insurance application, a task gets created in Frank De Costa's AEM Inbox. Frank reviews the task. He prepares a home insurance policy contract for Sarah, attaches the contract to her application, and sends it to Sarah for signing the contract. The contract, displayed below in the Agent UI, is Print version of the interactive communication. 
 
-![](assets/insurance-contact-letter.png)
+![insurance-contact-letter](assets/insurance-contact-letter.png)
 
 Sarah receives an email with a link to the home insurance policy contract for signing. Sarah reviews and signs the contract.
 
-![](assets/insurance-contract-email.png) 
+![insurance-contract-email](assets/insurance-contract-email.png) 
 
 #### How it works {#how-it-works-16}
 
-When Sarah submits the home insurance application, a Forms Workflow triggers and a task is created in Gloria's AEM inbox. As Gloria reviews the application and approves it, the task is assigned to Frank De Costa. The flow of tasks from one persona to another is defined in the AEM Workflow associated with the insurance application. For more information about workflows, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md).
+When Sarah submits the home insurance application, a Forms Workflow triggers and a task is created in Gloria's AEM inbox. As Gloria reviews the application and approves it, the task is assigned to Frank De Costa. The flow of tasks from one persona to another is defined in the AEM Workflow associated with the insurance application. For more information about workflows, see [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md).
 
 The following image depicts the AEM workflow associated with the insurance application.
 
-![](assets/we-finance-insurance-workflow-model.png)
+![we-finance-insurance-workflow-model](assets/we-finance-insurance-workflow-model.png)
 
 Frank uses correspondence management to prepare a home insurance policy contract. He downloads the contract PDF and attaches it to the Sarah's application and clicks Send Contract. The workflow triggers a mail to Sarah with home insurance policy contract for signing.
 
@@ -759,17 +754,17 @@ Do the following:
 
 As Sarah's signs the home insurance contract, she receives an email with policy details. 
 
-![](assets/insurance-policy-details.png)
+![insurance-policy-details](assets/insurance-policy-details.png)
 
 Shortly, she receives another email from We.Finance with a welcome kit for her insurance policy. From the welcome kit, Sarah can access her policy documents and view statements.
 
-![](assets/insurance-welcome-kit.png) 
+![insurance-welcome-kit](assets/insurance-welcome-kit.png) 
 
 #### See it yourself {#see-it-yourself-14}
 
 If you specified you email ID in the application, you would have received an email with a link to the welcome kit. Click **[!UICONTROL My Welcome Kit]** to open the welcome kit.
 
-![](assets/insurance-welcome-kit-email.png) 
+![insurance-welcome-kit-email](assets/insurance-welcome-kit-email.png) 
 
 ## Wealth management prospectus walkthrough {#wealth-management-prospectus-walkthrough}
 
@@ -781,13 +776,13 @@ The Wealth Management walkthrough demonstrates how a We.Finance customer can use
 
 The following image displays workflow of the wealth management walkthrough:
 
-![](assets/wealth-management-prospectus-walkthrough.png) 
+![wealth-management-prospectus-walkthrough](assets/wealth-management-prospectus-walkthrough.png) 
 
 ### Sarah visits We.Finance website and opens the Blue Chip Growth Fund prospectus {#sarah-visits-we-finance-website-and-opens-the-blue-chip-growth-fund-prospectus}
 
 Sarah Rose is planning to invest in a mutual fund. She is an existing We.Finance customer and therefore visits the We.Finance portal to explore available mutual funds. She goes to the Wealth Management section and opens the We.Finance Blue Chip Growth Fund page. The page contains links to prospectus which contain details about the current and historical prices, monthly performance, sector-wise diversification, expenses, fees, tax, and more information about the funds.
 
-![](assets/slide1.png) 
+![slide1](assets/slide1.png) 
 
 #### How it works {#how-it-works-17}
 
@@ -803,7 +798,7 @@ Go to We.Finance portal at https://[publishHost]:[publishPort]/wefinance, tap We
 
 Sarah explores the Overview, Price & Performance, Portfolio Management, Fees & Minimum, and Taxes and Payment tabs of the prospectus to learn current and historical prices, historical growth, comparison with S&P 500 index, sector-wise diversification, persons managing the fund, and expenses related to the fund. The related information is segregated into different tabs. The prospectus is an interactive communication. The interactive communications have a responsive design. She can open the interactive communication on a device of any screen size and the interactive communication reflows the design to suit the underlying device.
 
-![](assets/slide1-1.png) 
+![slide1-1](assets/slide1-1.png) 
 
 #### How it works {#how-it-works-18}
 
@@ -819,13 +814,13 @@ Go to the Blue Chip Growth Fund interactive communication at https://[publishHos
 
 Sarah is traveling to the countryside on the weekend. She plans to discuss the Blue Chip Growth Fund with her elder brother. Her elder brother works with a bank and helps her in decisions related to finance. Sarah downloads a copy of PDF version of the Blue Chip Growth Fund page on her laptop for offline reading. She also emails a copy of PDF version to her brother. 
 
-![](assets/blue-chip-pdf.gif) 
+![blue-chip-pdf](assets/blue-chip-pdf.gif) 
 
 #### How it works {#how-it-works-19}
 
 The Blue Chip Growth Fund prospectus is an interactive communication. It has a web and PDF channel. The interactive communication integrates with AEM Workflows to send the PDF version over an email. You can review the workflow model at https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
 
-![](assets/wealth-management.png) 
+![wealth-management](assets/wealth-management.png) 
 
 #### See it yourself  {#see-it-yourself-17}
 
@@ -842,19 +837,19 @@ The We.Finance auto insurance application scenario involves the following person
 
 Sarah Rose is an existing We.Finance customer and has purchased an auto insurance policy. Now it’s the time of the year for renewal of her insurance policy. Conrad Simms, Insurance Agent, We.Finance sends a reminder to Sarah about her policy renewal. The reminder email contains a PDF containing policy renewal details and a link to the web version of the interactive communication. The interactive communications has a mobile friendly and responsive design. She can open the interactive communication on any device and the interactive communication reflows to suit the screen-size of the underlying device. The PDF version of the interactive communication, attached to email, is helpful for offline reading.  
 
-Sarah follows the instructions provided in the email and successfully renews the process. The following image displays workflow of the auto insurance application walkthrough:  ![](assets/auto-insurance-application-walkthrough.png) 
+Sarah follows the instructions provided in the email and successfully renews the process. The following image displays workflow of the auto insurance application walkthrough:  ![auto-insurance-application-walkthrough](assets/auto-insurance-application-walkthrough.png) 
 
 ### Conrad sends an insurance policy renewal communication from We.Finance {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
 Conrad logs into AEM instance, opens the Auto Insurance dashboard specifies Sarah's **Customer ID**, and clicks **Renew Policy**. The **Agent UI** opens with policy details of Sarah Rose already filled-in. Conrad specified email address of Sarah and clicks** Submit**. Sarah receives an email with the subject **Your Auto Insurance Renewal**.
 
-![](assets/cc-dashboard.png) 
+![cc-dashboard](assets/cc-dashboard.png) 
 
 #### How it works {#how-it-works-20}
 
 Insurance policy renewal communication is an interactive communication. Conrad Simms uses Agent UI to send the insurance policy renewal communication to Sarah. The communication includes Print (PDF) and link to the Web channel of the interactive communication. The interactive communication uses AEM Workflow to send the email. You can see the workflow at https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
 
-![](assets/auto-insurance-workflow.png) 
+![auto-insurance-workflow](assets/auto-insurance-workflow.png) 
 
 #### See it yourself  {#see-it-yourself-18}
 
@@ -883,7 +878,7 @@ Now, Log in to** We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/p
 >
 >When you use the interactive communication which uses Microsoft Dynamics as a data source, the links in the emails sent to Sarah point to interactive communication that does not use Microsoft Dynamics. To fix the issue, manually change the links in email templates.
 
-![](assets/agent_ui_email.png) 
+![agent_ui_email-1](assets/agent_ui_email-1.png) 
 
 ### Sarah receives an insurance policy renewal communication from We.Finance and decides to renew {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
@@ -891,13 +886,13 @@ Sarah receives an email with an attachment from We.Finance which reminds her tha
 
 Sarah clicks **Renew Now** and is directed to the web version of her auto insurance letter. On top of this letter, Sarah finds a number of days left for her policy to expire. The page provides Sarah an overview of her insurance policy details such as Policy Number, Amount Due, and other information such as discount offers and loyalty rewards. Sarah again clicks **Renew Now** at the bottom of the policy.
 
-![](assets/auto-insurance-renewal-email.png) 
+![auto-insurance-renewal-email](assets/auto-insurance-renewal-email.png) 
 
 #### How it works  {#how-it-works-21}
 
 The web and print outputs of your auto insurance letter are created using the multi-channel capabilities of Interactive Communications. The** Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
 
-![](assets/ic-web-version.png) 
+![ic-web-version](assets/ic-web-version.png) 
 
 #### See it yourself  {#see-it-yourself-19}
 
@@ -913,7 +908,7 @@ You can check the detailed summary of your auto insurance renewal and click **Re
 
 When Sarah clicks** Renew Now** on the web version of the interactive communication, the payments page opens. Sarah rechecks her Policy Number and Date of Expiration with her records. On the right side of the page, she checks the Payment Summary of her renewal with 10% premium discount on the total amount. Sarah fills her Credit Card details and clicks **Make Payment**.
 
-![](assets/payment-adaptive-form.png) 
+![payment-adaptive-form](assets/payment-adaptive-form.png) 
 
 #### How it works  {#how-it-works-22}
 

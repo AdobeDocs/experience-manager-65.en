@@ -3,14 +3,12 @@ title: Mobile with Content Sync
 seo-title: Mobile with Content Sync
 description: Follow this page to learn about Content Sync for Adobe PhoneGap Enterprise with AEM.
 seo-description: Follow this page to learn about Content Sync for Adobe PhoneGap Enterprise with AEM.
-uuid: c3a82171-e070-4e32-b1ef-26e65ae23d99
+uuid: 65ee4138-b79a-44a7-83da-3e933ccae854
 contentOwner: User
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/MOBILE
+products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 923fc031-1a06-4a9d-94da-a2a4e82c54ee
-docset: aem65
-
+discoiquuid: 7941987a-2f4c-4c62-8ab2-0f6f30ceb064
 ---
 
 # Mobile with Content Sync{#mobile-with-content-sync}
@@ -55,9 +53,9 @@ To specify the content of the Content Sync ZIP file, add child nodes to the cq:C
 * `path`: The location of the content.
 * `type`: The name of the configuration type to use for processing the content. Several types are available and are described in Configuration Types.
 
-See Example Content Sync Configuration.
+See Example Content Sync Configuration.  
 
-After you create the Content Sync configuration, it appears in the Content Sync console.
+After you create the Content Sync configuration, it appears in the Content Sync console.  
 
 >[!NOTE]
 >
@@ -126,20 +124,11 @@ Processing can range from rendering simple JSON to fully fledged rendering of pa
 * **path** - Path to the client library's root.
 * **extension** - Type of client library. This should be set to either *js* or *css* at the moment.
 
-* **includeFolders** - Type is an array of strings, and it lets the user specify additional folders to scan in the client library to fetch files (such as custom fonts).
-
 **assets**
 
 Collect original renditions of assets.
 
 * **path** - Path to an asset folder below /content/dam.
-* **renditions** - Type is an array of strings, that lets the user specify which renditions to use instead of the default image. The following list summarizes some out-of-the-box renditions but you can also use any rendition created by the workflow:
-
-    * *original*
-    * *cq5dam.thumbnail.48.48.png*
-    * *cq5dam.thumbnail.319.319.png*
-    * *cq5dam.thumbnail.140.100.png*
-    * *cq5dam.web.1280.1280.png*
 
 **image** Collect an image.
 
@@ -156,7 +145,8 @@ The image type is used to include the We.Retail logo in the zip file.
 
 * **deep** - Optional boolean property determining if child pages should be included, as well. The default value is *true.*
 
-* **includeImages** - Optional boolean property determining if images should be included. The default value is *true*.
+* **includeImages** - Optional boolean property determining if images should be included. The default value is *true*.  
+
   By default, only image components with a resource type of foundation/components/image are considered for inclusion. You can add more resource types by configuring the **Day CQ WCM Pages Update Handler** in the Web console.
 
 **rewrite** The rewrite node defines how the links are rewritten in the exported page. The rewritten links can either point to the files included in the zip file or to the resources on the server.
@@ -165,14 +155,14 @@ The `rewrite` node needs to be located below the `page` node.
 
 The `rewrite` node can have one or more of the following properties:
 
-* `clientlibs`: rewrites clientlibs paths.
+* `clientlibs`: rewrites clientlibs paths.  
 
 * `images`: rewrites images paths.
 * `links`: rewrites links paths.
 
 Each property can have one of the following values:
 
-* `REWRITE_RELATIVE`: rewrites the path with a relative position to the page .html file on the file system.
+* `REWRITE_RELATIVE`: rewrites the path with a relative position to the page .html file on the file system.  
 
 * `REWRITE_EXTERNAL`: rewrites the path by pointing to the resource on the server, using the AEM [Externalizer service](/help/sites-developing/externalizer.md).
 
@@ -230,7 +220,7 @@ The listing below shows an example configuration for Content Sync.
 
 In the example, the event listing page is supposed to be the inital page. This information is provided in the **indexPage** property and can thus be easily changed at any time. A second property defines the path of the *events.plist* file. As we will see later, the client application can now read the manifest and act according to it.
 
-As soon as the configuration is setup, the content can be downloaded with a browser or any other HTTP client, or if you are developing for iOS, you can use the dedicated WAppKitSync client library. The download location is made up of the configuration's path and the *.zip* extension, e.g. when working with a local AEM instance: *https://localhost:4502/content/weretail_go.zip*
+As soon as the configuration is setup, the content can be downloaded with a browser or any other HTTP client, or if you are developing for iOS, you can use the dedicated WAppKitSync client library. The download location is made up of the configuration's path and the *.zip* extension, e.g. when working with a local AEM instance: *http://localhost:4502/content/weretail_go.zip*
 
 ### The Content Sync Console {#the-content-sync-console}
 
@@ -245,11 +235,11 @@ It can be usefull for development and troubleshooting.
 
 The console can be accessed at:
 
-`https://localhost:4502/libs/cq/contentsync/content/console.html`
+`http://localhost:4502/libs/cq/contentsync/content/console.html`
 
 It looks as follows:
 
-![](assets/chlimage_1.png)
+![chlimage_1-132](assets/chlimage_1-132.png)
 
 ### Extending the Content Sync framework {#extending-the-content-sync-framework}
 
@@ -340,7 +330,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
                 Node parent = JcrUtil.createPath(parentPath, "sling:Folder", admin);
                 Node image = resolver.getResource(resource.getPath() + "/image").adaptTo(Node.class);
                 JcrUtil.copy(image, parent, Text.getName(src));
-
+  
                 admin.save();
 
                 return true;
@@ -348,7 +338,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
         } catch (RepositoryException e) {
             log.error("Unexpected error while updating logo: ", e);
         }
-
+  
         return false;
     }
 }
@@ -390,4 +380,3 @@ To learn about the roles and responsibilities of an Administrator and Developer,
 
 * [Authoring for Adobe PhoneGap Enterprise with AEM](/help/mobile/phonegap.md)
 * [Administering Content for Adobe PhoneGap Enterprise with AEM](/help/mobile/administer-phonegap.md)
-

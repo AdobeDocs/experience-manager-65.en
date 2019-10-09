@@ -3,15 +3,13 @@ title: Translating Content for Multilingual Sites
 seo-title: Translating Content for Multilingual Sites
 description: Learn how to translate content for multilingual sites.
 seo-description: Learn how to translate content for multilingual sites.
-uuid: 69b3e3a9-6773-4759-8178-aaa612e4c170
+uuid: b8047f6f-e86a-495d-9b80-731ac7d83c66
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: 1e0a68c5-1583-4103-9dbb-7a53faa03c06
-docset: aem65
+discoiquuid: 67faa2ee-cb12-44b0-8bfb-534d1d6c360a
 legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
-
 ---
 
 # Translating Content for Multilingual Sites{#translating-content-for-multilingual-sites}
@@ -28,7 +26,7 @@ Translating content involves the following steps:
 1. [Associate the pages of your language master](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) with the translation service and framework configurations.
 1. [Identify the type of content](/help/sites-administering/tc-rules.md) to translate.
 1. [Prepare the content for translation](/help/sites-administering/tc-prep.md) by authoring the language master and creating the root pages of language copies.
-1. [Create translation projects](/help/sites-administering/tc-manage.md#main-pars_title_4) to gather the content to translate and to prepare the translation process.
+1. [Create translation projects](/help/sites-administering/tc-manage.md) to gather the content to translate and to prepare the translation process.
 1. Use the translation projects to [manage the content translation process](/help/sites-administering/tc-manage.md).
 
 If your translation service provider does not provide a connector to integration with AEM, AEM supports the manual extraction and re-insertion of translation content in XML format.

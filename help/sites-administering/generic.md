@@ -1,24 +1,22 @@
 ---
-title: Administering generic eCommerce
-seo-title: Administering generic eCommerce
+title: Administering Generic eCommerce
+seo-title: Administering Generic eCommerce
 description: The AEM generic solution provides methods of managing the commerce information held within the repository.
 seo-description: The AEM generic solution provides methods of managing the commerce information held within the repository.
-uuid: 8d2b02a6-0658-4957-a366-29a59350f3e8
+uuid: 8af6933a-2dee-4b73-bc15-71b8394d082f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
-discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
-docset: aem65
-
+discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 ---
 
-# Administering generic eCommerce{#administering-generic-ecommerce}
+# Administering Generic eCommerce{#administering-generic-ecommerce}
 
 The AEM generic solution provides methods of managing the commerce information held within the repository (as opposed to using an external ecommerce engine). This includes:
 
 * [Products](/help/sites-administering/concepts.md#products)
-* [Product Variants](/help/sites-administering/concepts.md#product-variants)
+* [Product Variants](/help/sites-administering/concepts.md#product-variants)  
 
 * [Catalog(s)](/help/sites-administering/concepts.md#catalogs)
 * [Promotions](/help/sites-administering/concepts.md#promotions)
@@ -65,23 +63,25 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Products** console navigate to the required location.
 1. Use the **Import Products** icon to open the wizard.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![](do-not-localize/chlimage_1-13.png)
 
 1. Specify:
 
     * **Importer**
-      The importer for the specific [commerce provider](/help/sites-administering/concepts.md#commerce-providers), by default `Geometrixx`.
-
-    * **Source **
-      The file you want imported; you can use the browser to select a file.
-
-    * **Incremental Import**
+  
+      The importer for the specific [commerce provider](/help/sites-administering/concepts.md#commerce-providers), by default `Geometrixx`. 
+  
+    * **Source** 
+  
+      The file you want imported; you can use the browser to select a file. 
+  
+    * **Incremental Import** 
+  
       Indicate whether this is an incremental import (as opposed to full).
 
    >[!NOTE]
    >
-   >The incremental import (of the sample geometrixx-outdoor importer) operates at the product level.
-   >
+   >The incremental import (of the sample geometrixx-outdoor importer) operates at the product level. 
    >
    >A customized importer can be defined to operate as required.
 
@@ -102,21 +102,26 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Tools** console open the **Commerce** folder.
 1. Double-click to open the **Product Importer**:
 
-   ![](assets/chlimage_1-22.jpeg)
+   ![chlimage_1-54](assets/chlimage_1-54.jpeg)
 
 1. Specify:
 
-    * **Store Name**
+    * **Store Name** 
+  
       Products will be imported to:
+
       `/etc/commerce/products/<*store name*>/`
-
-    * **Commerce Provider**
-      The importer for your [commerce provider](/help/sites-administering/concepts.md#commerce-providers); by default Geometrixx.
-
+  
+    * **Commerce Provider** 
+  
+      The importer for your [commerce provider](/help/sites-administering/concepts.md#commerce-providers); by default Geometrixx. 
+  
     * **Source File**
-      The location in the repository of the file you want imported.
-
-    * **Incremental Import**
+  
+      The location in the repository of the file you want imported. 
+  
+    * **Incremental Import** 
+  
       Indicate whether this is an incremental import (as opposed to full).
 
 1. Click **Import Products**.
@@ -133,10 +138,9 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Use the **Create** icon to select either (depending on the structure and location):
 
     * **Create Product**
-    * **Create Product Variation
-      **
+    * **Create Product Variation**
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![](do-not-localize/chlimage_1-14.png)
 
 1. The wizard will open. Use the **Basic** and **Product Tabs** to enter the [product attributes](/help/sites-administering/concepts.md#product-attributes) for the new product or product variant.
 
@@ -168,11 +172,11 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using either:
 
     * [quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [selection mode](/help/sites-authoring/basic-handling.md#navigatingandselectionmode)
+    * [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Select the **View Product Data** icon:
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![](do-not-localize/chlimage_1-15.png)
 
 1. The [product attributes](/help/sites-administering/concepts.md#product-attributes) will be shown. Use **Edit** and **Done** to make any changes.
 
@@ -183,11 +187,11 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Products** console (via **Commerce**) navigate to your product information.
 1. Open the secondary rail for References with the icon:
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![](do-not-localize/chlimage_1-16.png)
 
 1. Select your required product - the secondary rail will update to show the reference types available:
 
-   ![](assets/chlimage_1-88.png)
+   ![chlimage_1-326](assets/chlimage_1-326.png)
 
 1. Click/tap on the reference type (e.g. Product Pages) to expand the list.
 1. Select a specific reference to show the options:
@@ -195,18 +199,18 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
     * Navigate to Product Page
     * Edit Product Page
 
-   ![](assets/chlimage_1-89.png)
+   ![chlimage_1-327](assets/chlimage_1-327.png)
 
 ### Search for Products {#search-for-products}
 
 1. Navigate to the **Products** console, via **Commerce**.
 1. Open the secondary rail for Search with the icon:
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![](do-not-localize/chlimage_1-17.png)
 
 1. Several facets are available for you to search for products. You can use only one or several facets for a search. The products found will appear:
 
-   ![](assets/chlimage_1-90.png)
+   ![chlimage_1-328](assets/chlimage_1-328.png)
 
 1. Clicking/tapping a product opens it. You can also publish it or view the product data.
 
@@ -216,7 +220,7 @@ You can modify an existing facet or add new ones, using CRXDE Lite:
 
 1. Navigate to:
 
-   `https://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
+   `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
 1. You can modify for example the sizes that will appear on the product search page. Click the `sizegroup` node.
 1. Click `items` node, then click `propertypredicate` node.
@@ -240,11 +244,11 @@ You can add multiple assets in the product component, then specify the asset tha
    >
    >You have to be at the product level, not at the variant level.
 
-1. Tap/click **View Product Data **icon with selection mode or quick actions.
+1. Tap/click **View Product Data** icon with selection mode or quick actions.
 1. Tap/click Edit icon.
 1. Scroll to **Add**.
 
-   ![](assets/chlimage_1-91.png)
+   ![chlimage_1-329](assets/chlimage_1-329.png)
 
 1. Tap/click **Add**. A new asset placeholder appears.
 1. Tapping/clicking **Change **opens a dialog which allows you to choose an asset.
@@ -299,7 +303,7 @@ The mechanism to select the image to be displayed is as follows:
 1. Navigate to your catalog.
 1. Tap/click **View Properties**.
 1. Tap/click **Edit**.
-1. Tap/click the **Assets **tab.
+1. Tap/click the **Assets** tab.
 1. Type the required **Product Asset Category**.
 1. Tap/click **Done**.
 1. [Rollout](#rolling-out-a-catalog) your changes.
@@ -319,19 +323,19 @@ The mechanism to select the image to be displayed is as follows:
 
 >[!NOTE]
 >
->Often the product information is published through the pages that reference it. For instance, when publishing page X which references product Y, AEM will ask if you also want to publish product Y.
-
+>Often the product information is published through the pages that reference it. For instance, when publishing page X which references product Y, AEM will ask if you also want to publish product Y.  
+>  
 >For special cases, AEM also supports publishing direct from the product data.
 
 1. Using the **Products** console (via **Commerce**) navigate to your product information.
 1. Using either:
 
     * [quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [selection mode](/help/sites-authoring/basic-handling.md#navigatingandselectionmode)
+    * [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Select the **Publish** or **Unpublish** icon as required:
 
-   ![](do-not-localize/chlimage_1-6.png) ![](do-not-localize/chlimage_1-7.png)
+   ![](do-not-localize/chlimage_1-18.png) ![](do-not-localize/chlimage_1-19.png)
 
    The product information will be published or unpublished as appropriate.
 
@@ -361,7 +365,7 @@ For the `PRODUCT_*` events, the path points to the base product in `/etc/commerc
 
 You can look at them in the Web Console in OSGI events ( `/system/console/events`), for example:
 
-![](do-not-localize/chlimage_1-8.png)
+![](do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
@@ -375,43 +379,43 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 
 1. Navigate to the page where you want to add the component.
 1. Drag and drop the component in the page.
-1. Drag and drop an image in the component from the [assets browser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui).
+1. Drag and drop an image in the component from the [assets browser](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. You can either:
 
-    * click the component and then click Edit icon
+    * click the component and then click Edit icon 
     * make a slow double click
 
 1. Click the fullscreen icon.
 
-   ![](assets/chlimage_1-92.png)
+   ![chlimage_1-330](assets/chlimage_1-330.png)
 
 1. Click the Launch Map icon.
 
-   ![](assets/chlimage_1-93.png)
+   ![chlimage_1-331](assets/chlimage_1-331.png)
 
 1. Click one of the shape icons.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![](do-not-localize/chlimage_1-21.png)
 
 1. Modify and move the shape as required.
 1. Click the shape.
-1. Clicking the browse icon opens the [Asset Picker](/help/assets/asset-selector.md#usingassetpicker).
+1. Clicking the browse icon opens the [Asset selector](/help/assets/asset-selector.md#using-the-asset-selector).
 
    >[!NOTE]
    >
    >Alternatively, you can type directly the product path which has to be at the product level, not the variant level.
 
-   ![](assets/chlimage_1-94.png)
+   ![chlimage_1-332](assets/chlimage_1-332.png)
 
 1. Click the confirm icon twice then click exit fullscreen.
 1. Click somewhere on the page next to the component. The page should refresh and you should see the following symbol on your image:
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![](do-not-localize/chlimage_1-22.png)
 
-1. Switch to [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) mode.
-1. Click the + hotspot. A dialog opens where you can choose the size and quantity of the product you entered in **Path**.
+1. Switch to [preview](/help/sites-authoring/editing-content.md#previewing-pages) mode.
+1. Click the + hotspot. A dialog opens where you can choose the size and quantity of the product you entered in **Path**. 
 
-   ![](assets/chlimage_1-95.png)
+   ![chlimage_1-333](assets/chlimage_1-333.png)
 
 1. Enter a size and a quantity.
 1. Click the Add to cart button. The dialog closes.
@@ -423,15 +427,15 @@ You can configure how the dialog looks like when you click the hotspot:
 
 1. Click the component and click the configure icon.
 
-   ![](assets/chlimage_1-96.png)
+   ![chlimage_1-334](assets/chlimage_1-334.png)
 
 1. Scroll down. There is a **ADD TO CART** tab.
 
-   ![](assets/chlimage_1-97.png)
+   ![chlimage_1-335](assets/chlimage_1-335.png)
 
 1. Click **ADD TO CART**. There are 3 configuration options that you can use.
 
-   ![](assets/chlimage_1-98.png)
+   ![chlimage_1-336](assets/chlimage_1-336.png)
 
 1. Click the Done icon.
 
@@ -443,46 +447,46 @@ You can configure how the dialog looks like when you click the hotspot:
 
 >[!NOTE]
 >
->The catalog will reference your [Product Data](#productsandproductvariants).
+>The catalog will reference your Product Data.
 
 To generate a Catalog:
 
-1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. Open the Sites console (for example, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. Navigate to the location where you want to create the new page.
 1. To open the option list, use the **Create** icon:
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![](do-not-localize/chlimage_1-23.png)
 
 1. From the list select **Create Catalog**, the Create Catalog wizard will open.
 
-   ![](assets/chlimage_1-99.png)
+   ![chlimage_1-337](assets/chlimage_1-337.png)
 
 1. Navigate to the required Catalog Blueprint.
 1. Tap/click **Select** button and tap/click the required Catalog Blueprint.
 1. Tap/click **Next**.
 
-   ![](assets/chlimage_1-100.png)
+   ![chlimage_1-338](assets/chlimage_1-338.png)
 
 1. Type a **Title** and a **Name**.
 1. Tap/click the **Create** button. The catalog is created and a dialog opens.
 
-   ![](assets/chlimage_1-101.png)
+   ![chlimage_1-339](assets/chlimage_1-339.png)
 
 1. Tapping/clicking **Done** button brings you back to the Sites console where you'll be able to see you catalog.
 
-   Tapping/clicking **Open Catalog** button opens your catalog (for example `https://localhost:4502/editor.html/content/test-catalog.html`).
+   Tapping/clicking **Open Catalog** button opens your catalog (for example `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Generating a Catalog - Classic UI {#generating-a-catalog-classic-ui}
 
 >[!NOTE]
 >
->The catalog will reference your [Product Data](#productsandproductvariants).
+>The catalog will reference your [Product Data](#editing-product-information).
 
 1. Using the **Websites** console, navigate to your **Catalog Blueprint**, then the Base Catalog.
 
    For example:
 
-   `https://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
+   `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
 1. Create a new page using the **Section Blueprint** template.
 
@@ -493,10 +497,10 @@ To generate a Catalog:
    For example, open the **Tags/Keywords** field to select Activity, then Swimming from the Geometrixx-Outdoors section.
 
 1. Click **OK** to save your properties; example products will be shown under the **Product Selection Criteria** on the blueprint page.
-1. Click on **Rollout Changes...**, select **Rollout page and all sub pages**, then click **Next** then **Rollout**. Once the rollout is completed successfully the **Status** indicator will be shown as green.
+1. Click on **Rollout Changes...**, select **Rollout page and all sub pages**, then click **Next** then **Rollout**. Once the rollout is completed successfully the **Status** indicator will be shown as green. 
 1. You can now click **Close** and check the new catalog section; for example, on and under:
 
-   `https://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
+   `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
 1. Again from the blueprints page click **Edit Blueprint** and in the **Properties** dialog open the **Generated Page** tab. In the Banner list field select the image you want to show; for example, `summer.jpg`
 1. Click **OK** to save your properties; banner information will be shown under the **Product Selection Criteria** on the blueprint page.
@@ -513,11 +517,11 @@ To rollout a catalog:
 1. Using either:
 
     * [quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [selection mode](/help/sites-authoring/basic-handling.md#navigatingandselectionmode)
+    * [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Select the **Rollout Changes** icon:
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![](do-not-localize/chlimage_1-24.png)
 
 1. In the wizard, set the rollout as needed and then tap/click **Rollout Changes**.
 1. A dialog opens. Tap/click **Done **when the process is finished.
@@ -528,7 +532,7 @@ To rollout a catalog:
 
 1. Navigate to the Catalog you want to rollout. For example:
 
-   `https://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
+   `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
 1. Click **Rollout Changes...**
 1. Set the rollout as needed.
@@ -542,21 +546,21 @@ To rollout a catalog:
 1. Navigate to the location where you want to import the catalog blueprint.
 1. Tap/click the **Import Blueprints** icon.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![](do-not-localize/chlimage_1-25.png)
 
 1. In the wizard, select the Source as required and tap/click **Next**.
 
-   ![](assets/chlimage_1-102.png)
+   ![chlimage_1-340](assets/chlimage_1-340.png)
 
 1. Tap/click **Done** once the import is finished.
 
 #### Blueprint Importer - Classic UI {#blueprint-importer-classic-ui}
 
-1. Using the **Tools** console, navigate to **Commerce**.
-
+1. Using the **Tools** console, navigate to **Commerce**.  
+  
    For example:
 
-   `https://localhost:4502/miscadmin#/etc/commerce`
+   `http://localhost:4502/miscadmin#/etc/commerce`
 
 1. Open the **Catalog Bluprint Importer**.
 1. Set the import as needed.
@@ -570,16 +574,16 @@ To rollout a catalog:
 
 >[!NOTE]
 >
->The following example deals with a promotion held directly in a [campaign](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md), this is used for vouchers.
+>The following example deals with a promotion held directly in a [campaign](/help/sites-authoring/personalization.md), this is used for vouchers.
 >
->A promotion can also be in an experience within a campaign.
+>A promotion can also be in an [experience](/help/sites-authoring/personalization.md) within a campaign.
 >
->For more information see [Promotions and Vouchers](#promotionsandvouchers).
+>For more information see [Promotions and Vouchers](#promotions).
 
 1. Open the **Websites** console of your author instance.
 1. In the left-hand pane select your required **Campaign**.
 1. Click on **New**, select the **Promotion** template, then specify a **Title** (and **Name** if required) for your new voucher.
-1. Click **Create**. The new promotion page will be shown in the right-hand pane.
+1. Click **Create**. The new promotion page will be shown in the right-hand pane.  
 
 1. Edit the **Properties** by either:
 
@@ -588,7 +592,7 @@ To rollout a catalog:
 
    Specify the **Promotion Type**, **Discount Type**, **Discount Value** and any other fields as required.
 
-1. Click **OK** to save.
+1. Click **OK** to save.  
 
 1. You can now activate your promotion, so that shoppers will see it on the publish instance.
 
@@ -601,10 +605,10 @@ To rollout a catalog:
 1. Open the **Websites** console of your author instance.
 1. In the left-hand pane select your required **Campaign**.
 1. Click on **New**, select the **Voucher** template, then specify a **Title** (and **Name** if required) for your new voucher.
-1. Click **Create**. The new voucher page will be shown in the right-hand pane.
+1. Click **Create**. The new voucher page will be shown in the right-hand pane.  
 
 1. Open your new voucher page with a double-click, then click on **Edit** to configure the information as required.
-1. Click **OK** to save.
+1. Click **OK** to save.  
 
 1. You can now activate your voucher, so that shoppers can use it in their carts on the publish instance.
 
@@ -635,17 +639,17 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
 >[!NOTE]
 >
->It should be remembered that out-of-the-box AEM does not have actions required for standard functionality related to orders, such as returning merchandise, updating order status, doing fulfilment, generating packing slips. It is primarily intended as a technology preview.
+>It should be remembered that out-of-the-box AEM does not have actions required for standard functionality related to orders, such as returning merchandise, updating order status, doing fulfilment, generating packing slips. It is primarily intended as a technology preview. 
 >
->The generic order management in AEM has been kept basic; the fields available in the wizard are dependent on the scaffold:
+>The generic order management in AEM has been kept basic; the fields available in the wizard are dependent on the scaffold:  
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >If you create a customized scaffold you can store more order information.
 
 >[!NOTE]
 >
->The orders console exposes the vendor order information, which is never published.
-
+>The orders console exposes the vendor order information, which is never published.  
+>  
 >The customer order information is held in their home directories and is exposed by the Order History for their Account. This information is published along with the rest of their home directory.
 
 ### Creating Order Information {#creating-order-information}
@@ -655,9 +659,9 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 1. Using the **Orders** console navigate to the required location.
 1. Use the **Create** icon to select **Create Order**.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![](do-not-localize/chlimage_1-26.png)
 
-1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](/help/sites-administering/concepts.md#order-information).
+1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](/help/sites-administering/concepts.md#order-information).  
 
 1. Select **Create** to save the information.
 
@@ -669,11 +673,11 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 1. Using either:
 
     * [quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [selection mode](/help/sites-authoring/basic-handling.md#navigatingandselectionmode)
+    * [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Select the **View Order Data** icon:
 
-   ![](do-not-localize/chlimage_1-15.png)
+   ![](do-not-localize/chlimage_1-27.png)
 
 1. The [order information](/help/sites-administering/concepts.md#order-information) will be shown. Use **Edit** and **Done** to make any changes.
 

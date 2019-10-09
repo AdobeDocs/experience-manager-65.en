@@ -3,14 +3,12 @@ title: Managing Activities
 seo-title: Managing Activities
 description: The Activities console enables you to create, organize, and manage the marketing activities of your brands
 seo-description: The Activities console enables you to create, organize, and manage the marketing activities of your brands
-uuid: 0aebf88e-f298-410a-8c82-4076b671624f
+uuid: 544be007-3d4b-4f55-a7f8-34a3dfcaf503
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
-docset: aem65
-
+discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 ---
 
 # Managing Activities{#managing-activities}
@@ -35,12 +33,11 @@ Activities are displayed with a label describing what kind of activity is define
 * A/B - Adobe Target A/B testing
 * AEM - Adobe Experience Manager targeting (contexthub or clientcontext driven)
 
-![](assets/chlimage_1-114.png)
+![chlimage_1-238](assets/chlimage_1-238.png)
 
 >[!NOTE]
 >
 >What types of activities are available is determined by the following:  
-
 >
 >* If the **xt_only** option is enabled on the Adobe Target tenant (clientcode) used on the AEM side to connect to Adobe Target, then you can create **only** XT activities in AEM.
 >
@@ -52,7 +49,7 @@ Activities are displayed with a label describing what kind of activity is define
 >
 >You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
 >
->See [Prerequisites for Integrating with Adobe Target](/help/sites-administering//target-requirements.md#securingtheactivitysettings) for detailed information.
+>See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md) for detailed information.
 
 ## Creating a Brand Using the Activities Console {#creating-a-brand-using-the-activities-console}
 
@@ -62,7 +59,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 
 1. In the Navigation console, click or tap **Personalization**. Click or tap **Activities**.
 
-   ![](assets/screen_shot_2018-03-21at151821.png)
+   ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
 
 1. In the Activities console, click or tap **Create **then** Create Brand**.
 1. Select the brand template and click or tap **Next**.
@@ -77,7 +74,7 @@ Add an activity or edit an existing activity to focus your marketing efforts on 
 * **Targeting Engine:** Either [AEM](/help/sites-authoring/personalization.md#aem) or [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) as the engine for targeted content.
 
 * **Select a Target Configuration:** (Adobe Target only) The cloud configuration that this activity should use to connect to Adobe Target. This option appears only when Adobe Target is selected for Targeting Engine.
-* **Activity Type: **The activity type - A/B Test or Experience targeting
+* **Activity Type:** The activity type - A/B Test or Experience targeting
 * **Objective:** (Optional) A description of the activity.
 * **Experiences:** Mappings between audience names and the marketing segments that you are targeting.
 * **Traffic Percentages:** If A/B test is selected, you can change how much traffic (in percent) goes to each experience.
@@ -93,7 +90,7 @@ Add an activity or edit an existing activity to focus your marketing efforts on 
 
 To add an activity:
 
-1. Click or tap the brand for which you are creating the activity, and then click or tap **Create **then** Create Activity. **If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
+1. Click or tap the brand for which you are creating the activity, and then click or tap **Create** then **Create Activity**. If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
 1. Provide the following information and then click or tap **Next**:
 
     * A name for the activity.
@@ -107,14 +104,12 @@ To add an activity:
 
     1. Click or tap **Select Audience **and select the segment that your experience targets.
     1. Click or tap **Add Experience**, type a name, and click or tap **OK**. 
-    
     1. Click or tap **Next**.
 
    If you are using Adobe Target A/B Testing:
 
     1. Click or tap the pencil in the audiences box to select an audience.
     1. Click or tap **Add Experience**, type a name, and click or tap **OK**.
-    
     1. Enter the percentage of traffic that displays each experience.
     1. Click or tap **Next**.
 
@@ -149,7 +144,7 @@ To publish or unpublish activities:
 1. Click or tap the brand and then the area that contains the activity you want to publish or unpublish.
 1. Tap or click the icon next to the activity or activities you want to publish or unpublish.
 
-   ![](assets/screen-shot_2019-03-05at123846.png)
+   ![screen_shot_2018-03-21at151925](assets/screen_shot_2018-03-21at151925.png)
 
 1. To publish, tap or click **Publish**. To unpublish, tap or click **Unpublish**. Your activity or activities are published or unpublished and their status changes in the Activities console (may require a refresh).
 
@@ -170,16 +165,16 @@ To view activity performance and convert winning experiences:
 1. Click or tap the brand for which you want to see activities. 
 1. Select the activity and click or tap **View Properties **and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Performance data is displayed.
 
-   ![](assets/chlimage_1-115.png)
+   ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. Click or tap the **Push winner **link** **to push that experience as the default experience.
+1. Click or tap the **Push winner link** to push that experience as the default experience.
 
    Converting the winner does the following:
 
     * It disables the current activity 
     * Modifies all pages and replaces the targeted content with the actual content of the winning experience. The content of the winning experience becomes part of the normal page **without** targeting.
 
-   ![](assets/chlimage_1-116.png)
+   ![chlimage_1-240](assets/chlimage_1-240.png)
 
    A winning experience is the experience that generates more Lift in the reports, which is based on the conversion rate.
 
@@ -200,7 +195,7 @@ When an activity is synchronized, a corresponding campaign is created in Adobe T
 * Activities on the publish instance have the same name as the corresponding Adobe Target campaign.
 * Activities on the author instance correspond with Target campaigns of the same name with the `_author` suffix.
 
-![](assets/chlimage_1-117.png)
+![chlimage_1-241](assets/chlimage_1-241.png)
 
 The _author activities are synchronized immediately when the activity is modified. Immediate synchronization enables the simulation of activities with Client Context or ContextHub.
 

@@ -3,14 +3,12 @@ title: Configuring Adobe Analytics with AEM Screens
 seo-title: Configuring Adobe Analytics with AEM Screens
 description: Follow this section to learn more about sequencing and sending custom events using Offline Adobe Analytics 
 seo-description: Follow this section to learn more about sequencing and sending custom events using Offline Adobe Analytics 
-uuid: e685e553-c05b-4db4-8fa5-9ef45268b094
+uuid: 5c34a68d-6ac6-4713-bcb2-a0ba00977734
 contentOwner: jsyal
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/SCREENS
+products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 topic-tags: developing
-discoiquuid: 3cec9266-4032-46b9-9c75-16da64bfea7d
-docset: aem65
-
+discoiquuid: 05c5da91-d782-4623-8007-2a217fdf93dd
 ---
 
 # Configuring Adobe Analytics with AEM Screens{#configuring-adobe-analytics-with-aem-screens}
@@ -26,6 +24,8 @@ This section covers the following topics:
 
 * **Sequencing in Adobe Analytics with AEM Screens**
 * **Sending Custom Events Using Offline Adobe Analytics**
+* **Request Mapping** 
+  
 
 ## Sequencing in Adobe Analytics with AEM Screens {#sequencing-in-adobe-analytics-with-aem-screens}
 
@@ -35,13 +35,13 @@ The ***sequencing process*** starts with data storage service that activates Ado
 
 The following sequencing diagram explains the Adobe Analytics Integration with AEM Screens:
 
-![](assets/analytics_chunking.png)
+![analytics_chunking](assets/analytics_chunking.png)
 
 ## Sending Custom Events Using Offline Adobe Analytics {#sending-custom-events-using-offline-adobe-analytics}
 
 The following table summarizes the standard data model for events. It lists all the fields sent to Adobe Analytics:
 
-<table>
+<table> 
  <tbody>
   <tr>
    <td><strong>Section</strong></td> 
@@ -324,4 +324,137 @@ The following table summarizes the standard data model for events. It lists all 
   </tr>
  </tbody>
 </table>
+
+## Request Mapping {#request-mapping}
+
+The following table maps analytics standard data model fields to AEM Screens data:
+
+<table> 
+ <tbody>
+  <tr>
+   <td><strong>Analytics Standard Data model attribute</strong></td> 
+   <td><strong>Screens Data mapped to standard data model</strong></td> 
+   <td><strong>Populated by</strong></td> 
+  </tr>
+  <tr>
+   <td>content.action</td> 
+   <td><p>URL of the actual rendition of the asset being played.</p> <p>For example, a video could have many renditions. This points to the actually played rendition.</p> </td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>content.category</td> 
+   <td>Display associated with the player</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>content.type</td> 
+   <td>Type of asset being played (Image/Video)</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>event.category</td> 
+   <td>Player</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>event.colldts</td> 
+   <td>Timestamp of collection of this event</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>event.count</td> 
+   <td>Duration of play</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>event.device_gui</td> 
+   <td>The player's user ID in AEM</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>event.dts_end</td> 
+   <td>The timestamp of end of this event</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>event.dts_start</td> 
+   <td>The timestamp of start of this event</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>event.language</td> 
+   <td>The language setting as reported by the player</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>event.subtype</td> 
+   <td>end (Denoting the end of playback of an asset)</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>event.type</td> 
+   <td>play (Denoting proof of play)</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>event.user_agent</td> 
+   <td>user agent of the player</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>event.value</td> 
+   <td>A string describing the proof of play duration</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>event.workflow</td> 
+   <td>Screens</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>source.device</td> 
+   <td>The player's friendly name provided when registering the player</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>source.name</td> 
+   <td>AEM Screens</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>source.platform</td> 
+   <td>Operating System of the player</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>source.version</td> 
+   <td>Firmware version</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>trn.amount</td> 
+   <td>0 (for proof of play)</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>trn.number</td> 
+   <td>Unique ID of this event</td> 
+   <td>Firmware</td> 
+  </tr>
+  <tr>
+   <td>trn.product</td> 
+   <td>The URL of the original asset (not a rendition)</td> 
+   <td>Channel</td> 
+  </tr>
+  <tr>
+   <td>trn.quantity</td> 
+   <td>Duration of playback</td> 
+   <td>Channel</td> 
+  </tr>
+ </tbody>
+</table>
+
+>[!NOTE]
+>
+>The fields that are marked as** Populated by** "Channel" may need to be populated if you are sending a custom event instead of proof of play. The player will automatically add all the fields set by the firmware.
 

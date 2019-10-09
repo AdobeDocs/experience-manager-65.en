@@ -3,23 +3,16 @@ title: Installing and configuring Designer
 seo-title: Installing and configuring Designer
 description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.  
 seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.  
-uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
+uuid: 46f4a640-092c-46db-a0b2-8e25501a00b9
 contentOwner: gtalwar
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
-docset: aem65
-
+discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
+noindex: true
 ---
 
-# Installing and configuring Designer{#installing-and-configuring-designer}
-
-## Pre-requisites {#pre-requisites}
-
-AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Ensure that the aforementioned redistributable runtime packages are installed before starting the installation.
-
-## Install Designer {#install-designer}
+# Installing and configuring Designer {#installing-and-configuring-designer}
 
 Designer is available as a stand-alone installer and is also bundled with WorkBench. If you are using a stand-alone installer for Designer, follow these steps:
 

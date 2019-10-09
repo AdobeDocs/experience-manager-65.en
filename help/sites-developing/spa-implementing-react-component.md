@@ -3,14 +3,12 @@ title: Implementing a React Component for SPA
 seo-title: Implementing a React Component for SPA
 description: This article presents an example of how to adapt a simple, existing React component to work with the AEM SPA Editor.
 seo-description: This article presents an example of how to adapt a simple, existing React component to work with the AEM SPA Editor.
-uuid: ae6a0a6f-0c3c-4820-9b58-c2a85a9f5291
+uuid: aebca2ea-a020-45e1-8043-f8c21154c660
 contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
-docset: aem65
-
+discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 ---
 
 # Implementing a React Component for SPA{#implementing-a-react-component-for-spa}
@@ -18,6 +16,11 @@ docset: aem65
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.
 
 The SPA authoring feature offers a comprehensive solution for supporting SPAs within AEM. This article presents an example of how to adapt a simple, existing React component to work with the AEM SPA Editor.
+
+>[!NOTE]
+>The Single-Page Application (SPA) Editor feature requires AEM 6.4 service pack 2 or newer.
+>
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
 
 ## Introduction {#introduction}
 
@@ -27,25 +30,30 @@ This article illustrates the example of the weather component on the We.Retail J
 
 You should be familiar with the [structure of an SPA application for AEM](/help/sites-developing/spa-getting-started-react.md) before reading this article.
 
+>[!CAUTION]
+>This document uses the [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) for demonstration purposes only. It should not be used for any project work.
+>
+>All SPA projects on AEM should be based on the [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
+
 ## The Weather Component {#the-weather-component}
 
 The weather component is found in the top-left of the We.Retail Journal app. It displays the current weather of a defined location, pulling weather data dynamically.
 
 ### Using the Weather Widget {#using-the-weather-widget}
 
-![](assets/screen_shot_2018-06-08at143224.png)
+![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
 When authoring content of the SPA in the SPA Editor, the weather component appears as any other AEM component, complete with a toolbar, and is editable.
 
-![](assets/screen_shot_2018-06-08at143304.png)
+![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
 The city can be updated in a dialog just like any other AEM component.
 
-![](assets/screen_shot_2018-06-08at143446.png)
+![screen_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
 
 The change is persisted and the component updates itself automatically with new weather data.
 
-![](assets/screen_shot_2018-06-08at143524.png)
+![screen_shot_2018-06-08at143524](assets/screen_shot_2018-06-08at143524.png) 
 
 ### Weather Component Implementation {#weather-component-implementation}
 
@@ -53,7 +61,7 @@ The weather component is actually based on a publicly-available React component,
 
 The following are snippets of the NPM documentation of the usage of the React Open Weather component.
 
-![](assets/screen_shot_2018-06-08at144723.png) ![](assets/screen_shot_2018-06-08at144215.png)
+![screen_shot_2018-06-08at144723](assets/screen_shot_2018-06-08at144723.png) ![screen_shot_2018-06-08at144215](assets/screen_shot_2018-06-08at144215.png)
 
 Reviewing the code of the customized weather component ( `Weather.js`) in the We.Retail Journal application:
 

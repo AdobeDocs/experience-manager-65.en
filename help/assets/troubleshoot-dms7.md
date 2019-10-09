@@ -3,17 +3,15 @@ title: Troubleshooting Dynamic Media - Scene7 mode
 seo-title: Troubleshooting Dynamic Media - Scene7 mode
 description: Troubleshooting Dynamic Media in Scene7 runmode.
 seo-description: Troubleshooting Dynamic Media in Scene7 runmode.
-uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
+uuid: bd9653f7-e4c7-464f-84a8-dc1e8dc37ba2
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
-docset: aem65
-
+discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 ---
 
-# Troubleshooting Dynamic Media - Scene7 mode{#troubleshooting-dynamic-media-scene-mode}
+# Troubleshooting Dynamic Media - Scene7 mode {#troubleshooting-dynamic-media-scene-mode}
 
 The following document describes troubleshooting for Dynamic Media running **dynamicmedia_scene7** run mode.
 
@@ -21,57 +19,57 @@ The following document describes troubleshooting for Dynamic Media running **dyn
 
 Ensure that Dynamic Media has been set up properly by doing the following:
 
-* Start up command contains the **-r dynamicmedia_scene7** runmode argument.
+* Start up command contains the `-r dynamicmedia_scene7` runmode argument.
 * Any AEM 6.4 cumulative fix packs (CFPs) have been installed first *before* any available Dynamic Media Feature Packs.
 * Optional Feature Pack 18912 is installed.
 
   This optional feature pack is for FTP support or if you are migrating assets to Dynamic Media from Dynamic Media Classic (Scene7).
 
-* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **Available Configurations**.
-* Ensure that the** Dynamic Media Asset Activation (scene7)** replication agent is enabled.
+* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **[!UICONTROL Available Configurations]**.
+* Ensure that the **[!UICONTROL Dynamic Media Asset Activation (scene7)]** replication agent is enabled.
 
-  This replication agent is found under Agents on Author.
+  This replication agent is found under **[!UICONTROL Agents]** on Author.
 
-## General (All Assets) {#general-all-assets}
+## General (all assets) {#general-all-assets}
 
 The following are some general tips and tricks for all assets.
 
-### Asset Synchronization Status Properties {#asset-synchronization-status-properties}
+### Asset synchronization status properties {#asset-synchronization-status-properties}
 
 The following asset properties can be reviewed in CRXDE Lite to confirm the successful synchronization of the asset from AEM to Dynamic Media:
 
 | **Property** |**Example** |**Description** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` |**`a|364266`** |General indicator that node is linked to Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` |**PublishComplete** or error text |Status of upload of asset to Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File`  |**myCompany/myAssetID** |Must be populated in order to generate URLs to remote asset of Dynamic Media. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` |**success** or **failed: `<error text>`** |Synchronization status of sets (spin sets, image sets, and so on), image presets, viewer presets, image map updates for an asset, or images that were edited. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` |`a|364266` |General indicator that node is linked to Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` |**[!UICONTROL PublishComplete]** or error text | Status of upload of asset to Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File`  |`myCompany/myAssetID` |Must be populated in order to generate URLs to remote asset of Dynamic Media. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` |`success` or `failed:<error text>` |Synchronization status of sets (spin sets, image sets, and so on), image presets, viewer presets, image map updates for an asset, or images that were edited. |
 
 ### Synchronization Logging {#synchronization-logging}
 
-Synchronization errors and issues are logged in **error.log** (AEM server directory** /crx-quickstart/logs/**). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the ***com.adobe.cq.dam.ips ***package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
+Synchronization errors and issues are logged in `error.log` (AEM server directory `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) to gather more information.
 
-### Move, Copy, Delete {#move-copy-delete}
+### Move, Copy, or Delete {#move-copy-delete}
 
 Before performing a Move, Copy, or Delete operation, do the following:
 
-* For images and videos, confirm that a **&lt;object_node&gt;/jcr:content/metadata/dam:scene7ID** value exists before performing move, copy, or delete operations. 
+* For images and videos, confirm that a `<object_node>/jcr:content/metadata/dam:scene7ID` value exists before performing move, copy, or delete operations. 
 * For image and viewer presets, confirm that an `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` value exists before performing move, copy, or delete operations.
 * If above metadata value is missing, you need to re-upload assets before move, copy, or delete operations.
 
-### Version Control {#version-control}
+### Version control {#version-control}
 
-When replacing an existing Dynamic Media asset (same name and location), you have the option to keep both assets or replace/create a version:
+When replacing an existing Dynamic Media asset (same name and location), you have the option to keep both assets or replace or create a version:
 
-* Keeping both will create a new asset with a unique name for the published asset URL; for example,** image.jpg** is the original asset and **image1.jpg** is the newly uploaded asset.
+* Keeping both will create a new asset with a unique name for the published asset URL. For example, **[!UICONTROL image.jpg]** is the original asset and **[!UICONTROL image1.jpg]** is the newly uploaded asset.
 
-* Creating a version is not supported in Dynamic Media - Scene7 mode delivery. The new version will replace the existing asset in delivery.
+* Creating a version is not supported in Dynamic Media - Scene7 mode delivery. The new version replaces the existing asset in delivery.
 
 ## Images and Sets {#images-and-sets}
 
 If you are having issues with images and sets, see the following troubleshooting guidance.
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Issue</strong></td> 
@@ -136,7 +134,7 @@ If you are having issues with images and sets, see the following troubleshooting
 
 If you are having issues with video, see the following troubleshooting guidance.
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Issue</strong></td> 
@@ -164,13 +162,13 @@ If you are having issues with video, see the following troubleshooting guidance.
    <td>Video is not encoded</td> 
    <td> 
     <ul> 
-     <li>Check that the runmode is <span class="kbd">dynamicmedia_scene7</code>.</li> 
+     <li>Check that the runmode is <span class="kbd">dynamicmedia_scene7</span>.</li> 
      <li>Check whether Dynamic Media cloud service is configured.</li> 
      <li>Check whether a video profile is associated with the upload folder.</li> 
     </ul> </td> 
    <td> 
     <ol> 
-     <li>Check your AEM instance with <span class="kbd">-r dynamicmedia_scene7</code></li> 
+     <li>Check your AEM instance with <span class="kbd">-r dynamicmedia_scene7</span></li> 
      <li>Check that the Dynamic Media Configuration under Cloud Services is properly setup.</li> 
      <li>Check that the folder has a video profile. Also, check the video profile.</li> 
     </ol> </td> 
@@ -179,8 +177,8 @@ If you are having issues with video, see the following troubleshooting guidance.
    <td>Video processing takes too long</td> 
    <td><p>To determine if video encoding is still in progress or if it has entered a failure state:</p> 
     <ul> 
-     <li>Check the video status <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</code></li> 
-     <li>Monitor the video from the workflow console <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instances, Archive, Failures tabs.</li> 
+     <li>Check the video status <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</span></li> 
+     <li>Monitor the video from the workflow console <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instances, Archive, Failures tabs.</li> 
     </ul> </td> 
    <td> </td> 
   </tr> 
@@ -204,7 +202,7 @@ If you are having issues with video, see the following troubleshooting guidance.
 
 If you are having issues with viewers, see the following troubleshooting guidance.
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Issue</strong></td> 
@@ -213,11 +211,11 @@ If you are having issues with viewers, see the following troubleshooting guidanc
   </tr> 
   <tr> 
    <td>Viewer Presets are not published</td> 
-   <td><p>Proceed to sample manager diagnostic page: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Proceed to sample manager diagnostic page: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly you should see:</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Note</strong>: It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.</p> <p>If unactivated assets remain, click either of the <strong>List all Unactivated Assets</strong> buttons to see details.</p> </td> 
    <td> 
     <ol> 
-     <li>Navigate to viewer preset list in admin tools: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
+     <li>Navigate to viewer preset list in admin tools: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
      <li>Select all viewer presets, then click <strong>Publish</strong>.</li> 
      <li>Navigate back to sample manager and observe that unactivated asset count is now zero.</li> 
     </ol> </td> 
@@ -244,9 +242,9 @@ If you are having issues with viewers, see the following troubleshooting guidanc
       <ul> 
        <li>Delete <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li> 
       </ul> </li> 
-     <li>Navigate to the CRX package manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a> 
+     <li>Navigate to the CRX package manager: <code>http://localhost:4502/crx/packmgr/</code><a href="http://localhost:4502/crx/packmgr/"></a> 
       <ol> 
-       <li>Search for viewer package in list (it starts with <span class="kbd">cq-dam-scene7-viewers-content</code>)</li> 
+       <li>Search for viewer package in list (it starts with <span class="kbd">cq-dam-scene7-viewers-content</span>)</li> 
        <li>Click <strong>Reinstall</strong>.</li> 
       </ol> </li> 
      <li>Under Cloud Services, navigate to the Dynamic Media Configuration page, then open the configuration dialog box for your Dynamic Media - S7 configuration. 

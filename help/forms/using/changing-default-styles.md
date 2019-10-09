@@ -3,42 +3,36 @@ title: Changing default styles of HTML5 forms
 seo-title: Changing default styles of HTML5 forms
 description: HTML5 forms styling is based on CSS. You can change the default styles of the form.
 seo-description: HTML5 forms styling is based on CSS. You can change the default styles of the form.
-uuid: 5e23237d-42d8-4d29-b79e-4dc276ef65ff
+uuid: dab888b1-d1a9-4990-ab21-96570beafd26
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
-docset: aem65
-
+discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
 ---
 
-# Changing default styles of HTML5 forms{#changing-default-styles-of-html-forms}
+# Changing default styles of HTML5 forms {#changing-default-styles-of-html-forms}
 
 HTML5 forms are rendered using HTML5 capabilities and the styling of the rendered form is done using CSS. Default appearance of a HTML5 forms is similar to its PDF rendition. Developers can use custom CSS to change default appearance of HTML5 forms.
 
-This article provides step-by-step information to change style of an HTML5 form and [Introduction to Styles](/forms/using/css-styles.md) article contains detailed information about various styling aspects of HTML5 forms. Ensure that you read Introduction to styles article before performing steps mentioned in this article.
+This article provides step-by-step information to change style of an HTML5 form and [Introduction to Styles](/help/forms/using/css-styles.md) article contains detailed information about various styling aspects of HTML5 forms. Ensure that you read Introduction to styles article before performing steps mentioned in this article.
 
 The following two images show the difference between the default and customized styles.
 
-![](assets/pictures-002-small.png) 
+![pictures-002-small](assets/pictures-002-small.png) 
 
 ## Style your forms {#style-your-forms}
 
 1. **Choose a profile to add custom styles**
 
-   Access the CRX DE interface at the URL: **https://&lt;server&gt;:&lt;port&gt;/crx/de** and create a profile or choose an existing profile. To know how to create a profile, see [Creating a new Profile](/forms/using/custom-profile.md)
+   Access the CRX DE interface at the URL: **https://&lt;server&gt;:&lt;port&gt;/crx/de** and create a profile or choose an existing profile. To know how to create a profile, see [Creating a new Profile](/help/forms/using/custom-profile.md)
 
 1. **Create a CSS style sheet for styling the HTML5 forms**
 
    Navigate to the folder in which you have created the profile renderer and create a CSS style sheet file. The steps to follow are
 
-    1. Right click the folder and select **create **-&gt; **create File** from the menu
-    
-    1. In the create file dialog, enter the name of the style sheet. Make sure that you use the extension .css (for example stylesheet.css)
-    1. From the navigation pane, open the CSS file that you have created.
-    1. Define the CSS classes of the components that you want to style and add styles in those classes.
+    1. Right click the folder and select **create** -&gt; **create File** from the menu
 
-   To know which CSS classes to create for a particular component in your HTML5 forms, see [Introduction to Styles](/forms/using/css-styles.md).  
+   To know which CSS classes to create for a particular component in your HTML5 forms, see [Introduction to Styles](/help/forms/using/css-styles.md).  
 
 1. **Include the style sheet in Profile Renderer**
 
@@ -54,4 +48,4 @@ The following two images show the difference between the default and customized 
     
     1. Save the file.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

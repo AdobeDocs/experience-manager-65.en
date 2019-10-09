@@ -3,16 +3,14 @@ title: Remote functions in Expression Builder
 seo-title: Expression Builder
 description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
+uuid: 998f7ec9-2645-431e-b483-c68d24ef49cb
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
-discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
-docset: aem65
-
+discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 ---
 
-# Remote functions in Expression Builder{#remote-functions-in-expression-builder}
+# Remote functions in Expression Builder {#remote-functions-in-expression-builder}
 
 Using the Expression Builder, you can create expressions or conditions that perform computations on data values provided by the Data Dictionary or by end users. Correspondence Management uses the result of the expression evaluation to select assets such as text, images, lists, and conditions and insert them in the correspondence as required.
 
@@ -65,7 +63,7 @@ You can find more information in the [JSP EL specification](https://download.ora
 
 Remote functions provide the capability to use custom logic in expressions. You can write custom logic to be used in expression as a method in Java and same function can be used inside expressions. Available remote functions are listed under the “Remote Functions” tab on the left side of Expression Editor.
 
-![](assets/remotefunction.png) 
+![remotefunction](assets/remotefunction.png) 
 
 #### Adding custom remote functions {#adding-custom-remote-functions}
 
@@ -154,12 +152,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 Below are sample archives to use:
 
 * **GoodFunctions.jar.zip** is the jar file with bundle containing a sample remote function definition. Download the GoodFunctions.jar.zip file and unzip it to get the jar file.
-* **GoodFunctions.zip **is the package of source code for defining a custom remote function and creating a bundle for it.
+* **GoodFunctions.zip** is the package of source code for defining a custom remote function and creating a bundle for it.
 
 GoodFunctions.jar.zip
 
 [Get File](assets/goodfunctions.jar.zip)
-
-GoodFunctions.zip
-
-[Get File](assets/goodfunctions.zip)

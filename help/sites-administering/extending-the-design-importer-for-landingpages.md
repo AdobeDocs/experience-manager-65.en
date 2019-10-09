@@ -3,14 +3,12 @@ title: Extending and Configuring the Design Importer for Landing Pages
 seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Learn how to configure the Design Importer for landing pages.
 seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
+uuid: b2bfe831-bfaf-43f3-babc-687bf229dd44
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
-docset: aem65
-
+discoiquuid: f8991416-995b-4160-a705-d131e78089ee
 ---
 
 # Extending and Configuring the Design Importer for Landing Pages{#extending-and-configuring-the-design-importer-for-landing-pages}
@@ -23,21 +21,17 @@ Here are the logical steps to make design importer recognize your custom compone
 
 1. Create a TagHandler
 
-* A tag handler is a POJO that handles HTML tags of a specific kind. The “kind” of HTML tags your TagHandler can handle is defined via the TagHandlerFactory’s OSGi property “tagpattern.name”. This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it’s up to you how you wish to take care of it.
-* The tag handler interface is similar to a SAX content handler interface. It receives SAX events for each html tag. As a tag handler provider, you need to implement certain lifecycle methods which are automatically called by the design importer framework.
+    * A tag handler is a POJO that handles HTML tags of a specific kind. The “kind” of HTML tags your TagHandler can handle is defined via the TagHandlerFactory’s OSGi property “tagpattern.name”. This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it’s up to you how you wish to take care of it.
+    * The tag handler interface is similar to a SAX content handler interface. It receives SAX events for each html tag. As a tag handler provider, you need to implement certain lifecycle methods which are automatically called by the design importer framework.
 
 1. Create its corresponding TagHandlerFactory.
 
-* The tag handler factory is an OSGi component(singleton) that’s responsible for spawning instances of your tag handler.
-* your tag handler factory must expose an OSGi property called “tagpattern.name” the value of which is matched against the input html tag.
-* If there are multiple tag handlers matching the input html tag, the one with a higher ranking is picked. The ranking itself is exposed as an OSGi property **service.ranking**.
-* The TagHandlerFactory is an OSGi component. Any references that you wish to provide to your TagHandler must be via this factory.
+    * The tag handler factory is an OSGi component(singleton) that’s responsible for spawning instances of your tag handler.
+    * your tag handler factory must expose an OSGi property called “tagpattern.name” the value of which is matched against the input html tag.
+    * If there are multiple tag handlers matching the input html tag, the one with a higher ranking is picked. The ranking itself is exposed as an OSGi property **service.ranking**.
+    * The TagHandlerFactory is an OSGi component. Any references that you wish to provide to your TagHandler must be via this factory.
 
 1. Make sure that your TagHandlerFactory has a better ranking if you wish to override the default.
-
->[!CAUTION]
->
->The Design Importer, used to import landing pages, [has been deprecated with AEM 6.5](../../../release-notes/deprecated-removed-features.md#deprecated-features).
 
 ## Preparing the HTML for Import {#preparing-the-html-for-import}
 
@@ -100,7 +94,7 @@ Before you import the landing page, you may want to convert some of the parts of
 
 You do this by adding the `data-cq-component` to the appropriate component in the HTML file that you import.
 
-The following section describes how to edit your HTML file so that you convert certain parts of your landing pages into different editable AEM components. Components are described in detail at [Landing Pages Components](/help/sites-authoring/landingpages.md).
+The following section describes how to edit your HTML file so that you convert certain parts of your landing pages into different editable AEM components. Components are described in detail at [Landing Pages Components](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
 >[!NOTE]
 >
@@ -110,25 +104,25 @@ The following section describes how to edit your HTML file so that you convert c
 
 Before importing, please note the following limitations:
 
-#### Any attribute like class or id applied on the &amp;lt;body> tag is not preserved {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Any attribute like class or id applied on the &amp;lt;body> tag is not preserved {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 If any attribute like id or class is applied on the body tag for example `<body id="container">` then it is not preserved after the import. So the design being imported should not have any dependencies on the attributes applied on the `<body>` tag.
 
-#### Drag and Drop zip {#drag-and-drop-zip}
+### Drag and Drop zip {#drag-and-drop-zip}
 
 Drag/Drop zip upload is not supported for Internet Explorer and Firefox versions 3.6 and earlier. To upload a design when using these browsers, click the drop file zone to open up a file upload dialog box and upload your design using that dialog.
 
 The browsers that support "drag and drop" of the design zip are Chrome, Safari5.x, Firefox 4 and above.
 
-#### Modernizr is not supported {#modernizr-is-not-supported}
+### Modernizr is not supported {#modernizr-is-not-supported}
 
 `Modernizr.js` is a javascript based tool that detects native capabilities of browsers and detects if they are suited for html5 elements or not. Designs that use Modernizr for enhancing support in older versions of different browsers can cause import issues in the landing page solution. `Modernizr.js` scripts are not supported with the Design importer.
 
-#### Page properties are not preserved at the time of importing design package {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
+### Page properties are not preserved at the time of importing design package {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
 Any page property (e.g. Custom Domain, Enforcing HTTPS, etc.) set for a page (that uses Blank Landing Page template) prior to importing the design package are lost after the design has been imported. Therefore, the recommended practice is to set the page properties after importing the design package.
 
-#### HTML only markup assumed {#html-only-markup-assumed}
+### HTML only markup assumed {#html-only-markup-assumed}
 
 Upon import the markup is sanitized for security reasons and in order to avoid importing and publishing invalid markup. This assumes HTML-only markup and all other form of elements such as inline SVG or Web Components will be filtered out.
 
@@ -323,8 +317,10 @@ A lead form is a form that is used to collect a visitor/lead's profile informati
 * Map lead form fields using specific pre-defined names of CTA lead form, for example - firstName for first-name in lead form, and so on.
 * Fields that are not mapped to lead form will map to cq:form components - text, radio, checkbox, dropdown, hidden, password.
 * User can provide the title using “label” tag and can provide styling by using style attribute “class” (only available for CTA lead form components).
-* Thank You page and subscription list can be provided as a hidden parameter of the form (present in the index.htm) or can be added/edited from edit bar of “Start of lead form”
-  &lt;input type="hidden" name="redirectUrl" value="/content/we-retail/en/user/register/thank_you"/&gt;
+* Thank You page and subscription list can be provided as a hidden parameter of the form (present in the index.htm) or can be added/edited from edit bar of “Start of lead form” 
+
+  &lt;input type="hidden" name="redirectUrl" value="/content/we-retail/en/user/register/thank_you"/&gt; 
+  
   &lt;input type="hidden" name="groupName" value="leadForm"/&gt;
 
 * Constraints like - required can be provided from edit configuration of each of the component.
@@ -465,7 +461,7 @@ Use of CSS selectors similar to following ones is not recommended for use with e
 This is due to the fact that additional html elements like &lt;div&gt; tag are added to the generated Html after the import.
 
 * Scripts relying on the structure similar to above also are not recommended for use with elements marked for conversion to AEM components.
-* Use of styles on the markup tags for component conversion like &lt;div data-cq-component=”&#42;”&gt; is not recommended.
+* Use of styles on the markup tags for component conversion like &lt;div data-cq-component=”&ast;”&gt; is not recommended.
 * The design layout should follow best practices from HTML5 Boilerplate. Read more on: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuring OSGI modules {#configuring-osgi-modules}
@@ -479,56 +475,56 @@ The components that expose properties configurable via OSGI console are as follo
 
 The below table briefly describes the properties:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Component</strong></td>
-   <td><strong>Property Name</strong></td>
-   <td><strong>Property Description </strong></td>
-  </tr>
-  <tr>
-   <td>Landing Page Design Importer</td>
-   <td>Extract Filter</td>
-   <td>The list of regular expressions to be used for filtering files from extraction. <br /> Zip entries matching any of the specified patterns are excluded from extraction</td>
-  </tr>
-  <tr>
-   <td>Landing Page Builder</td>
-   <td>File Pattern</td>
-   <td>The Landing Page Builder can be configured to handle HTML files matching a regular expression as defined by file pattern.</td>
-  </tr>
-  <tr>
-   <td>Mobile Landing Page Builder</td>
-   <td>File Pattern</td>
-   <td>The Landing Page Builder can be configured to handle HTML files matching a regular expression as defined by file pattern.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Device Groups</td>
-   <td>The list of device groups to be supported.</td>
-  </tr>
-  <tr>
-   <td>Landing Page Entry Preprocessor</td>
-   <td>Search Pattern </td>
-   <td>The pattern to search for, in the archive entry contents. This regular expression is matched with the entry content line by line. Upon match, the matching text is replaced with the replacement pattern specified.<br /> <br /> See note below regarding current limitations of landing page entry preprocessor.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Replace Pattern</td>
-   <td>The pattern that replaces the matches found. You may use regex group references like $1, $2. Additionally, this pattern supports keywords like {designPath} that get resolved with the actual value during import.</td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td><strong>Component</strong></td> 
+   <td><strong>Property Name</strong></td> 
+   <td><strong>Property Description </strong></td> 
+  </tr> 
+  <tr> 
+   <td>Landing Page Design Importer</td> 
+   <td>Extract Filter</td> 
+   <td>The list of regular expressions to be used for filtering files from extraction. <br /> Zip entries matching any of the specified patterns are excluded from extraction</td> 
+  </tr> 
+  <tr> 
+   <td>Landing Page Builder</td> 
+   <td>File Pattern</td> 
+   <td>The Landing Page Builder can be configured to handle HTML files matching a regular expression as defined by file pattern.</td> 
+  </tr> 
+  <tr> 
+   <td>Mobile Landing Page Builder</td> 
+   <td>File Pattern</td> 
+   <td>The Landing Page Builder can be configured to handle HTML files matching a regular expression as defined by file pattern.</td> 
+  </tr> 
+  <tr> 
+   <td> </td> 
+   <td>Device Groups</td> 
+   <td>The list of device groups to be supported.</td> 
+  </tr> 
+  <tr> 
+   <td>Landing Page Entry Preprocessor</td> 
+   <td>Search Pattern </td> 
+   <td>The pattern to search for, in the archive entry contents. This regular expression is matched with the entry content line by line. Upon match, the matching text is replaced with the replacement pattern specified.<br /> <br /> See note below regarding current limitations of landing page entry preprocessor.</td> 
+  </tr> 
+  <tr> 
+   <td> </td> 
+   <td>Replace Pattern</td> 
+   <td>The pattern that replaces the matches found. You may use regex group references like $1, $2. Additionally, this pattern supports keywords like {designPath} that get resolved with the actual value during import.</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 >[!NOTE]
 >
->**Current limitation of Landing Page Entry Preprocessor:**
+>**Current limitation of Landing Page Entry Preprocessor:** 
 >If you need to make any changes to the search pattern, when you open the felix property editor, you need to manually add backslash characters to escape the regex metacharacters. If you do not manually add backslash characters, the regex is considered invalid and will not replace the older one.
 >
 >For example, if the default configuration is
 >
->`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>`/\&ast *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->And you need to replace `CQ_DESIGN_PATH` with `VIPURL` in the search pattern, then your search pattern should look like this:
+>And you need to replace `CQ_DESIGN_PATH` with `VIPURL` in the search pattern, then your search pattern should look like this: 
 >
 >`/\* *VIPURL *\*/ *(['"])`
 

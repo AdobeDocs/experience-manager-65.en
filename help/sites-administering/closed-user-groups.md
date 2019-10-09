@@ -3,14 +3,12 @@ title: Closed User Groups in AEM
 seo-title: Closed User Groups in AEM
 description: Learn about Closed User Groups in AEM.
 seo-description: Learn about Closed User Groups in AEM.
-uuid: 83396163-86ce-406b-b797-2457ed975ccd
+uuid: a65ed163-fdec-45f3-adf9-984d36f4eb73
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 04a72c84-c6b6-4dce-91e2-00dad062df4a
-docset: aem65
-
+discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 ---
 
 # Closed User Groups in AEM{#closed-user-groups-in-aem}
@@ -129,7 +127,7 @@ The default AEM setup now makes use of this confguration by allowing to set the 
 
 Adding the `granite:AuthenticationRequired` mixin type within the configured supported paths will cause the OSGi registration of the responsible handler to be updated containing an new, additional entry with the `sling.auth.requirements` property. If a given authentication requirement specifes the optional `granite:loginPath` property, the value is additionally registered with the Authenticator with a '-' prefix in order to be excluded from authentication requirement.
 
-#### Evaluation and Inheritence of the Authentication Requirement {#evaluation-and-inheritence-of-the-authentication-requirement}
+#### Evaluation and Inheritance of the Authentication Requirement {#evaluation-and-inheritance-of-the-authentication-requirement}
 
 Apache Sling authentication requirements are expected to be inherited through the page or node hierarchy. The very details of the inheritance and the evaluation of the authentication requirements such as order and precedence are considered an implementation detail and will not be documented in this article.
 
@@ -155,7 +153,6 @@ The target of this documentation is the evaluation of the login path as exposed 
 * In case of regular login, tests if a login path can be obtained in the following order:
 
     * from the `LoginPathProvider` as implemented by the new `com.adobe.granite.auth.requirement.impl.RequirementService`,
-
     * from the old, deprecated CUG implementation,
     * from the Login Page Mappings as defined with the `LoginSelectorHandler`,
     * and finally fallback to the Default Login Page as defined with the `LoginSelectorHandler`.
@@ -419,7 +416,7 @@ session.save();
 
 #### Retrieve Effective Auth Requirements {#retrieve-effective-auth-requirements}
 
-There is no dedicated public API to read all efective authentication requirements as registered with the Apache Sling Authenticator. However, the list is exposed in the system console at *https://serveraddress:serverport/system/console/slingauth* under the "**Authentication Requirement Confguration**" section.
+There is no dedicated public API to read all efective authentication requirements as registered with the Apache Sling Authenticator. However, the list is exposed in the system console at `https://<serveraddress>:<serverport>/system/console/slingauth` under the "**Authentication Requirement Confguration**" section.
 
 The following image shows the authentication requirements of an AEM publish instance with demo content. The highlighted path of the community page illustrates how a requirement added by the implementation described in this document is reflected in the Apache Sling Authenticator.
 
@@ -427,7 +424,7 @@ The following image shows the authentication requirements of an AEM publish inst
 >
 >In this example the optional login path property was not set. Consequently, no second entry has been registered with the authenticator.
 
-![](assets/chlimage_1-24.jpeg)
+![chlimage_1-62](assets/chlimage_1-62.jpeg) 
 
 #### Retrieve the Effective Login Path {#retrieve-the-effective-login-path}
 
@@ -443,7 +440,7 @@ Like with the login path, there is no public API to retrieve the inherited authe
 >
 >It is recommended to rely on the inheritance mechanism both for authentication requirements and login path and avoid creation of nested auth requirements.
 >
->For more information see [Evaluation and Inheritance of Authentication Requirement](/content.md#contentbody_title_1715134837), [Evaluation of Login Path](/content.md#contentbody_title_914954954) and [Best Practices](/content.md#contentbody_title_1658415695).
+>For more information see [Evaluation and Inheritance of Authentication Requirement](#evaluation-and-inheritance-of-the-authentication-requirement), [Evaluation of Login Path](#evaluation-of-login-path) and [Best Practices](#best-practices).
 
 ```java
 String path = [...]
@@ -510,64 +507,64 @@ The following two OSGi components have been introduced to define authentication 
 
 **org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration**
 
-<table>
- <tbody>
-  <tr>
-   <td>Label</td>
-   <td>Apache Jackrabbit Oak CUG Configuration</td>
-  </tr>
-  <tr>
-   <td>Description</td>
-   <td>Authorization configuration dedicated to setup and evaluate CUG permissions.</td>
-  </tr>
-  <tr>
-   <td>Confguration Properties</td>
-   <td>
-    <ul>
-     <li><code>cugSupportedPaths</code></li>
-     <li><code>cugEnabled</code></li>
-     <li><code>confgurationRanking</code></li>
-    </ul> <p>Also, see <a href="/help/sites-administering/closed-user-groups.md#configuration-options" target="_blank">Configuration Options</a> below.</p> </td>
-  </tr>
-  <tr>
-   <td>Confguration Policy</td>
-   <td><code>ConfgurationPolicy.REQUIRE</code></td>
-  </tr>
-  <tr>
-   <td>References</td>
-   <td><code>CugExclude (ReferenceCardinality.OPTIONAL_UNARY)</code></td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td>Label</td> 
+   <td>Apache Jackrabbit Oak CUG Configuration</td> 
+  </tr> 
+  <tr> 
+   <td>Description</td> 
+   <td>Authorization configuration dedicated to setup and evaluate CUG permissions.</td> 
+  </tr> 
+  <tr> 
+   <td>Confguration Properties</td> 
+   <td> 
+    <ul> 
+     <li><code>cugSupportedPaths</code></li> 
+     <li><code>cugEnabled</code></li> 
+     <li><code>confgurationRanking</code></li> 
+    </ul> <p>Also, see <a href="/help/sites-administering/closed-user-groups.md#configuration-options" target="_blank">Configuration Options</a> below.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Confguration Policy</td> 
+   <td><code>ConfgurationPolicy.REQUIRE</code></td> 
+  </tr> 
+  <tr> 
+   <td>References</td> 
+   <td><code>CugExclude (ReferenceCardinality.OPTIONAL_UNARY)</code></td> 
+  </tr> 
+ </tbody> 
 </table>
 
 **org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl**
 
-<table>
- <tbody>
-  <tr>
-   <td>Label</td>
-   <td>Apache Jackrabbit Oak CUG Exclude List</td>
-  </tr>
-  <tr>
-   <td>Description</td>
-   <td>Allows to exclude principal(s) with the confgured name(s) from CUG evaluation.</td>
-  </tr>
-  <tr>
-   <td>Confguration Properties</td>
-   <td>
-    <ul>
-     <li><code>principalNames</code></li>
-    </ul> <p>Also see section Confguration Options below.</p> </td>
-  </tr>
-  <tr>
-   <td>Confguration Policy</td>
-   <td><code>ConfgurationPolicy.REQUIRE</code></td>
-  </tr>
-  <tr>
-   <td>References</td>
-   <td>NA</td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td>Label</td> 
+   <td>Apache Jackrabbit Oak CUG Exclude List</td> 
+  </tr> 
+  <tr> 
+   <td>Description</td> 
+   <td>Allows to exclude principal(s) with the confgured name(s) from CUG evaluation.</td> 
+  </tr> 
+  <tr> 
+   <td>Confguration Properties</td> 
+   <td> 
+    <ul> 
+     <li><code>principalNames</code></li> 
+    </ul> <p>Also see section Confguration Options below.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Confguration Policy</td> 
+   <td><code>ConfgurationPolicy.REQUIRE</code></td> 
+  </tr> 
+  <tr> 
+   <td>References</td> 
+   <td>NA</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 #### Configuration Options {#configuration-options}
@@ -614,33 +611,33 @@ The following 2 OSGi components have been introduced to defne authentication req
 
 **com.adobe.granite.auth.requirement.impl.RequirementService**
 
-<table>
- <tbody>
-  <tr>
-   <td>Label</td>
-   <td>-</td>
-  </tr>
-  <tr>
-   <td>Description</td>
-   <td>Dedicated OSGi service for authentication requirements that registers an observer for content changes afecting auth-requirement (through the <code>granite:AuthenticationRequirement</code> mixin type) and login paths with are exposed to the <code>LoginSelectorHandler</code>. </td>
-  </tr>
-  <tr>
-   <td>Confguration Properties</td>
-   <td>-</td>
-  </tr>
-  <tr>
-   <td>Confguration Policy</td>
-   <td><code>ConfgurationPolicy.OPTIONAL</code></td>
-  </tr>
-  <tr>
-   <td>References</td>
-   <td>
-    <ul>
-     <li><code>RequirementHandler (ReferenceCardinality.MANDATORY_UNARY)</code></li>
-     <li><code>Executor (ReferenceCardinality.MANDATORY_UNARY)</code></li>
-    </ul> </td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td>Label</td> 
+   <td>-</td> 
+  </tr> 
+  <tr> 
+   <td>Description</td> 
+   <td>Dedicated OSGi service for authentication requirements that registers an observer for content changes afecting auth-requirement (through the <code>granite:AuthenticationRequirement</code> mixin type) and login paths with are exposed to the <code>LoginSelectorHandler</code>. </td> 
+  </tr> 
+  <tr> 
+   <td>Confguration Properties</td> 
+   <td>-</td> 
+  </tr> 
+  <tr> 
+   <td>Confguration Policy</td> 
+   <td><code>ConfgurationPolicy.OPTIONAL</code></td> 
+  </tr> 
+  <tr> 
+   <td>References</td> 
+   <td> 
+    <ul> 
+     <li><code>RequirementHandler (ReferenceCardinality.MANDATORY_UNARY)</code></li> 
+     <li><code>Executor (ReferenceCardinality.MANDATORY_UNARY)</code></li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 **com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler**
@@ -658,21 +655,21 @@ The authentication related parts of the CUG rewrite only come with a single conf
 
 **“Authentication Requirement and Login Path Handler”**
 
-<table>
- <tbody>
-  <tr>
-   <td>Property</td>
-   <td>Type</td>
-   <td>Default Value</td>
-   <td>Description</td>
-  </tr>
-  <tr>
-   <td><p>Label = Supported Paths</p> <p>Name = 'supportedPaths'</p> </td>
-   <td>Set&lt;String&gt;</td>
-   <td>-</td>
-   <td>Paths under which authentication requirements will be respected by this handler. Leave this confguration unset if you want to add the <code>granite:AuthenticationRequirement</code> mixin type to nodes without having them enforced (for example, on author instances). If missing, the feature is disabled. </td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td>Property</td> 
+   <td>Type</td> 
+   <td>Default Value</td> 
+   <td>Description</td> 
+  </tr> 
+  <tr> 
+   <td><p>Label = Supported Paths</p> <p>Name = 'supportedPaths'</p> </td> 
+   <td>Set&lt;String&gt;</td> 
+   <td>-</td> 
+   <td>Paths under which authentication requirements will be respected by this handler. Leave this confguration unset if you want to add the <code>granite:AuthenticationRequirement</code> mixin type to nodes without having them enforced (for example, on author instances). If missing, the feature is disabled. </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ## Default Configuration since AEM 6.3 {#default-configuration-since-aem}
@@ -765,7 +762,7 @@ Configuring CUGs in conjuction with LiveCopy is represented in the repository by
 * `/content/we-retail/us/en/blueprint/rep:cugPolicy`
 * `/content/we-retail/us/en/LiveCopy@granite:loginPath`
 
-Both of these elements are created under the `cq:Page`. With the current design, MSM only handles nodes and properties that are under the `cq:PageContent` ( `jcr:content`) node.
+Both of these elements are created under the `cq:Page`. With the current design, MSM only handles nodes and properties that are under the `cq:PageContent` (`jcr:content`) node.
 
 Therefore, CUG groups cannot be rolled back from a blueprint to a Live Copy. Please plan accordingly around this when setting up a Live Copy.
 
@@ -871,7 +868,7 @@ For upgraded AEM installation, it is important to ensure that only one CUG imple
 
 Adobe provides a tool for migrating to the new CUG implementation. In order to use it, perform the following steps:
 
-1. Go to *https://serveraddress:serverport/system/console/cug-migration* to access the tool.
+1. Go to `https://<serveraddress>:<serverport>/system/console/cug-migration` to access the tool.
 1. Enter the root path you want to check CUGs for, and press the **Perform dry run** button. This will scan for CUGs elligible for conversion in the selected location.
 1. After you have reviewed the results, press the **Perform migration** button to migrate to the new implementation.
 

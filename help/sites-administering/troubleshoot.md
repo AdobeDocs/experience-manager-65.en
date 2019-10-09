@@ -3,14 +3,12 @@ title: Troubleshooting AEM
 seo-title: Troubleshooting AEM
 description: Learn about troubleshooting issues with AEM.
 seo-description: Learn about troubleshooting issues with AEM.
-uuid: 72379531-915c-45d0-ba70-42b212665272
+uuid: d68e9ead-8aa6-4108-9f1e-85d7cd7a370f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
-docset: aem65
-
+discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
 ---
 
 # Troubleshooting AEM{#troubleshooting-aem}
@@ -23,13 +21,13 @@ The following section covers some issues that you may encounter when using AEM, 
 
 >[!NOTE]
 >
->When experiencing problems it is also worthwhile checking the list of [Known Issues](../../../release-notes/known-issues.md) for your instance (release and service packs).
+>When experiencing problems it is also worthwhile checking the list of [Known Issues](/help/release-notes/known-issues.md) for your instance (release and service packs).
 
 ## Troubleshooting scenarios for Administrators {#troubleshooting-scenarios-for-administrators}
 
 The following table provides an overview of problems administrators may need to troubleshoot:
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Role(s)</strong></td> 
@@ -60,7 +58,7 @@ The following table provides an overview of problems administrators may need to 
 
 ## Installation Issues {#installation-issues}
 
-See [Common Installation Issues](/content/docs/en/aem/6-3/deploy/installing.md#par_title_18) for information about the following troubleshooting scenarios:
+See [Common Installation Issues](/help/sites-deploying/troubleshooting.md#common-installation-issues) for information about the following troubleshooting scenarios:
 
 * Double-clicking the Quickstart jar has no effect or the JAR file with another program (such as archive manager).
 * Applications running on CRX throw out-of-memory errors.
@@ -74,18 +72,20 @@ The thread dump is a list of all the Java threads that are currently active. If 
 
 ### Using Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Open the **AEM Web Console**; for example at `https://localhost:4502/system/console/`.
+1. Open the **AEM Web Console**; for example at `http://localhost:4502/system/console/`.
 
 1. Select the **Threads **under** Status** tab.
 
-![](assets/screen_shot_2012-02-13at43925pm.png) 
+![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png) 
 
 ### Using jstack (command line) {#using-jstack-command-line}
 
-1. Find the PID (process id) of the AEM Java instance.  
+1. Find the PID (process id) of the AEM Java instance. 
+
    For example, you can use `ps -ef` or `jps`.
 
-1. Run:  
+1. Run: 
+
    `jstack <pid>`
 
 1. This will show the thread dump.
@@ -112,7 +112,7 @@ To analyze unclosed sessions and find out which code is not closing a session, r
 
 The status of the OSGi bundles can also give an early indication of possible issues.
 
-1. Open the **AEM Web Console**; for example at `https://localhost:4502/system/console/`.
+1. Open the **AEM Web Console**; for example at `http://localhost:4502/system/console/`.
 
 1. Select **Bundles** under **OSGI** tab.
 
@@ -121,5 +121,5 @@ The status of the OSGi bundles can also give an early indication of possible iss
     * the Status of the bundles. If any are Inactive or Unsatisfied, then try to stop and restart the bundle. If the issue persists then you may need to investigate further using other methods.
     * whether any of the bundles have missing dependencies. Such details can be seen by clicking on the individual bundle Name, which is a link (the following example does not have any issues):
 
-![](assets/screen_shot_2012-02-13at44706pm.png)
+![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
 

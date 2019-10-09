@@ -3,42 +3,40 @@ title: Post Upgrade Checks and Troubleshooting
 seo-title: Post Upgrade Checks and Troubleshooting
 description: Learn how to troubleshoot issues that might appear after an upgrade.
 seo-description: Learn how to troubleshoot issues that might appear after an upgrade.
-uuid: 3f525f2c-8d25-4bb8-a57e-3adf667edde8
+uuid: 3f83e8fc-1c45-4ef0-b8da-d29ff483d3d5
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
-docset: aem65
-
+discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 ---
 
 # Post Upgrade Checks and Troubleshooting{#post-upgrade-checks-and-troubleshooting}
 
 ## Post Upgrade Checks {#post-upgrade-checks}
 
-Following the [In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md) the following activities should be executed to finalize the upgrade. It is assumed AEM has been started with the 6.5 jar and that the upgraded code base has been deployed.
+Following the [In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md) the following activities should be executed to finalize the upgrade. It is assumed AEM has been started with the 6.4 jar and that the upgraded code base has been deployed.
 
-* [Verify logs for upgrade success](#main-pars-header-290365562)
+* [Verify logs for upgrade success](#verify-logs-for-upgrade-success)  
 
-* [Verify OSGi Bundles](#main-pars-header-1637350649)
+* [Verify OSGi Bundles](#verify-osgi-bundles)  
 
-* [Verify Oak Version](#main-pars-header-1293049773)
+* [Verify Oak Version](#verify-oak-version)  
 
-* [Inspect the PreUpgradeBackup folder](#main-pars-header-988995987)
+* [Inspect the PreUpgradeBackup folder](#inspect-preupgradebackup-folder)  
 
-* [Initial Validation of Pages](#main-pars-header-20827371)
-* [Apply AEM Service Packs](#main-pars-header-215142387)
+* [Initial Validation of Pages](#initial-validation-of-pages)
+* [Apply AEM Service Packs](#apply-aem-service-packs)  
 
-* [Migrate AEM features](#main-pars-header-1434457709)
+* [Migrate AEM features](#migrate-aem-features)  
 
-* [Verify Scheduled Maintenance Configurations](#main-pars-header-1552730183)
+* [Verify Scheduled Maintenance Configurations](#verify-scheduled-maintenance-configurations)  
 
-* [Enable Replication Agents](#main-pars-header-823243751)
+* [Enable Replication Agents](#enable-replication-agents)  
 
-* [Enable Custom Scheduled Jobs](#main-pars-header-244535083)
+* [Enable Custom Scheduled Jobs](#enable-custom-scheduled-jobs)  
 
-* [Execute Test Plan](#main-pars-header-1167972233)
+* [Execute Test Plan](#execute-test-plan)
 
 ### Verify logs for Upgrade Success {#verify-logs-for-upgrade-success}
 
@@ -50,22 +48,22 @@ The main purpose of this feature is to reduce the need for manual interpretation
 
 More specifically, it ensures that:
 
-* Upgrade failures detected by the upgrade framework can are centralized in a single upgrade report;
+* Upgrade failures detected by the upgrade framework can are centralized in a single upgrade report;  
 * The upgrade report includes indicators about necessary manual intervention.
 
 To accomodate this, changes have been made in the way logs are generated in the `upgrade.log` file.
 
 Here is a sample report that show no errors during upgrade:
 
-![](assets/1487887443006.png)
+![1487887443006](assets/1487887443006.png)
 
-Here is a sample report that shows a bundle that was not installed during the upgrade process:
+Here is a sample report that shows a bundle that was not installed during the upgrade process: 
 
-![](assets/1487887532730.png)
+![1487887532730](assets/1487887532730.png)
 
 **error.log**
 
-The error.log should be carefully reviewed during and following the start up of AEM using the target version jar. Any warnings or errors should be reviewed. In general it is best to look for issues at the beginning of the log. Errors that occur later in the log may actually be side-effects of a root cause that is called out early in the file. If repeated errors and warnings occur see below for [Analyzing Issues with the Upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
+The error.log should be carefully reviewed during and following the start up of AEM using the target version jar. Any warnings or errors should be reviewed. In general it is best to look for issues at the beginning of the log. Errors that occur later in the log may actually be side-effects of a root cause that is called out early in the file. If repeated errors and warnings occur see below for [Analyzing Issues with the Upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-upgrade).
 
 ### Verify OSGi Bundles {#verify-osgi-bundles}
 
@@ -73,7 +71,7 @@ Navigate to the OSGi console `/system/console/bundles` and look to see if any bu
 
 ### Verify Oak Version {#verify-oak-version}
 
-Following the upgrade you should see that Oak version has been updated to **1.10.2**. To verify the Oak version navigate to the OSGi console and look at the version associated with Oak bundles: Oak Core, Oak Commons, Oak Segment Tar.
+Following the upgrade you should see that Oak version has been updated to **1.8.2**. To verify the Oak version navigate to the OSGi console and look at the version associated with Oak bundles: Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Inspect PreUpgradeBackup folder {#inspect-preupgradebackup-folder}
 
@@ -89,17 +87,17 @@ Perform an initial validation against several pages in AEM. If upgrading an Auth
 
 ### Apply AEM Service Packs {#apply-aem-service-packs}
 
-Apply any relevant AEM 6.5 Service Packs if they have been released.
+Apply any relevant AEM 6.4 Service Packs if they have been released.
 
 ### Migrate AEM Features {#migrate-aem-features}
 
-Several features in AEM require additional steps following the upgrade. A full list of these features and steps to migrate them in AEM 6.5 can be found on the [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md) page.
+Several features in AEM require additional steps following the upgrade. A full list of these features and steps to migrate them in AEM 6.4 can be found on the [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md) page.
 
 ### Verify Scheduled Maintenance Configurations {#verify-scheduled-maintenance-configurations}
 
 #### Enable Data Store Garbage Collection {#enable-data-store-garbage-collection}
 
-If using a File Data Store ensure that the Data Store Garbage Collection task is enabled and added to the Weekly Maintenance list. Instructions are outlined [here](/help/sites-administering//data-store-garbage-collection.md).
+If using a File Data Store ensure that the Data Store Garbage Collection task is enabled and added to the Weekly Maintenance list. Instructions are outlined [here](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -115,7 +113,7 @@ Execute detailed test plan against as defined [Upgrading Code and Customizations
 
 ### Enable Replication Agents {#enable-replication-agents}
 
-Once publish environment has been fully upgraded and validated, enable replication agents on the Author Environment. Verify that agents are able to connect to respective Publish instances. See U [pgrade Procedure](/help/sites-deploying/upgrade-procedure.md) for more details on order of events.
+Once publish environment has been fully upgraded and validated, enable replication agents on the Author Environment. Verify that agents are able to connect to respective Publish instances. See [Upgrade Procedure](/help/sites-deploying/upgrade-procedure.md) for more details on order of events.
 
 ### Enable Custom Scheduled Jobs {#enable-custom-scheduled-jobs}
 
@@ -123,9 +121,13 @@ Any scheduled jobs as part of the code base can be enabled at this point.
 
 ## Analyzing Issues With The Upgrade {#analyzing-issues-with-upgrade}
 
-This section contains some issue scenarios one might face along the upgrade procedure to AEM 6.3.
+This section contains some issue scenarios one might face along the upgrade procedure to AEM 6.4.
 
 These scenarios should help to track down the root cause of issues related to upgrade and should help to identify project or product specific issues.
+
+### Recreating the Dynamic Media Cloud Configuration after upgrading {#dynamic-media-cloud-configuration}
+
+After upgrading to AEM 6.4 from an earlier version, the Dynamic Media Cloud Configuration from earlier settings may become inaccessible from the AEM 6.4 TouchUI. To resolve this issue, use CRXDE Lite to remove the earlier settings, then create a new Dynamic Media Cloud Configuration. See also [Dynamic Media repository restructuring in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
 
 ### Repository Migration Failing  {#repository-migration-failing-}
 
@@ -147,7 +149,7 @@ In case of bundles not starting up you should check for any unsatisfied dependen
 
 In case this problem is present but it is based on a failed package installation which led to bundles not being upgrade they will be deemed incompatible for the new version. For more info on how to troubleshoot this, see **Packages and Bundles Fail to Update** above.
 
-It is also recommended to compare the bundle list of a fresh AEM 6.5 instance with the upgraded one to detect the bundles that where not upgraded. This will provide a closer scope of what to search for in the `error.log`.
+It is also recommended to compare the bundle list of a fresh AEM 6.4 instance with the upgraded one to detect the bundles that where not upgraded. This will provide a closer scope of what to search for in the `error.log`.
 
 ### Custom Bundles not Switching to the Active State {#custom-bundles-not-switching-to-the-active-state}
 
@@ -165,17 +167,17 @@ Next, check for any Javascript errors that can be tracked down to custom added e
 
 Finally, check for misconfiguration that Javascript might not be able to deal with. This is usually the case with improperly deactivated extensions.
 
-### Malfunctioning Custom Components, Templates or UI Extensions {#malfunctioning-custom-components,-templates-or-ui-extensions}
+### Malfunctioning Custom Components, Templates or UI Extensions {#malfunctioning-custom-components-templates-or-ui-extensions}
 
 In most cases, the root causes for these issues are the same as for bundles that are not started or packages not being installed with the only difference that the issues start occurng when first using the components.
 
 The way to deal with erroneous custom code is to first perfom smoke tests in order to identify the cause. Once you find it, look at the recommendations in this [link] section of the article for ways of fixing them.
 
-### Missing Customizations Under /etc {#missing-customizations-under-/etc}
+### Missing Customizations Under etc {#missing-customizations-under-etc}
 
 `/apps` and `/libs` are handled well by the upgrade, but changes under `/etc` may be need to be manually restored from `/var/upgrade/PreUpgradeBackup` after upgrading. Make sure to check this location for any content that needs to be manually merged.
 
-### Analyzing the error.log and upgrade.log {#analyzing-the-error.log-and-upgrade.log}
+### Analyzing the error.log and upgrade.log {#analyzing-the-error-log-and-upgrade-log}
 
 In most situations the logs need to be consulted for errors in order to find the cause of a problem. However, in case of upgrades it is also necessary to monitor dependency issues as old bundles might not be upgraded properly.
 

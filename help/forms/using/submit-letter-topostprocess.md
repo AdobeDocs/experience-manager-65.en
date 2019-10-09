@@ -3,16 +3,14 @@ title: Post processing of letters and interactive communications
 seo-title: Post Processing of Letters
 description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
 seo-description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
-uuid: 40cb349d-6ba2-4794-9ec6-dcab15c35b8d
+uuid: 4163bba9-e82b-4d3e-b1df-909855413a9e
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
-docset: aem65
-
+discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
 ---
 
-# Post processing of letters and interactive communications{#post-processing-of-letters-and-interactive-communications}
+# Post processing of letters and interactive communications {#post-processing-of-letters-and-interactive-communications}
 
 ## Post Processing {#post-processing}
 
@@ -22,11 +20,11 @@ Agents can associate and execute post processing workflows on letters and intrea
 
 To associate post processes with letters or interactive communications, you first need to set up the post processes. Two types of workflows can be executed on submitted letters:
 
-1. **Forms Workflow:** These are the AEM Forms on JEE process management workflows. Instructions for setting up [Forms Workflow](../../forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+1. **Forms Workflow:** These are the AEM Forms on JEE process management workflows. Instructions for setting up [Forms Workflow](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3).
 
-1. **AEM Workflow: **AEM workflows can also be used as post processes for submitted letters. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
+1. **AEM Workflow:** AEM workflows can also be used as post processes for submitted letters. Instructions for setting up [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
-## Forms Workflow {##formsworkflow}
+## Forms Workflow {#formsworkflow}
 
 1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
@@ -54,19 +52,19 @@ To associate post processes with letters or interactive communications, you firs
 
    Go to the Adobe Experience Manager Web Console Configurations page > **[!UICONTROL Correspondence Management Configurations]** and set up the following parameters:
 
-    1. **inPDFDoc (PDF document parameter): **A PDF document as input. This input contains the rendered letter as input. The parameter names indicated are configurable. They can be configured from Correspondence Management configurations from configuration. 
-    1. **inXMLDoc (XML data parameter): **An XML document as input. This input contains data entered by user in the form of XML. 
-    1. **inXDPDoc (XDP document parameter): **An XML document as input. This input contains underlying layout (XDP). 
-    1. **inAttachmentDocs (Attachment Documents parameter): **A list input parameter. This input contains all the attachments as input. 
-    1. **redirectURL (Redirect URL Output): **An output type indicating the url to redirect to.
+    1. **inPDFDoc (PDF document parameter):** A PDF document as input. This input contains the rendered letter as input. The parameter names indicated are configurable. They can be configured from Correspondence Management configurations from configuration. 
+    1. **inXMLDoc (XML data parameter):** An XML document as input. This input contains data entered by user in the form of XML. 
+    1. **inXDPDoc (XDP document parameter):** An XML document as input. This input contains underlying layout (XDP). 
+    1. **inAttachmentDocs (Attachment Documents parameter):** A list input parameter. This input contains all the attachments as input. 
+    1. **redirectURL (Redirect URL Output):** An output type indicating the url to redirect to.
 
    Your forms workflow must have either PDF document parameter or XML data parameter as input with the same name as specified in **[!UICONTROL Correspondence Management Configurations]**. This is required for the process to be listed in the Post Process dropdown.
 
 ## Settings on the Publish instance {#settings-on-the-publish-instance}
 
-1. login to `https://localhost:publishport/aem/forms`.
+1. login to `http://localhost:publishport/aem/forms`.
 1. Navigate to **[!UICONTROL Letters]** to view the published letter that is available on the publish instance.
-1. Configure the AEM DS Settings. See [Configuring AEM DS settings](../../forms/using/configuring-the-processing-server-url-.md).
+1. Configure the AEM DS Settings. See [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ To associate post processes with letters or interactive communications, you firs
 
 Saved letter instances can be manipulated further, such as retrieval of letter instances and deletion of letter instances, by using the following APIs defined in LetterInstanceService. 
 
-<table>
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Server-side API</strong></td> 
@@ -116,7 +114,7 @@ In the CCR user interface, complete the following steps to associate a post proc
 1. Tap **Save**.
 1. After configuring the letter with the Post Process, publish the letter and optionally on the publish instance, specify the processing URL in AEM DS Settings service. This ensures that the post process is run on the processing instance.
 
-## Reload a draft letter instance&nbsp; {##reloaddraft}
+## Reload a draft letter instance&nbsp; {#reloaddraft}
 
 A draft letter instance can be reloaded in user interface by using the following url:
 
@@ -126,4 +124,4 @@ A draft letter instance can be reloaded in user interface by using the following
 
 LetterInstaceID: The unique ID of the submitted letter instance.
 
-For more information on saving a draft letter, see [Saving drafts and submitting letter instances](../../forms/using/create-correspondence.md#savingdrafts).
+For more information on saving a draft letter, see [Saving drafts and submitting letter instances](/help/forms/using/create-correspondence.md#savingdrafts).

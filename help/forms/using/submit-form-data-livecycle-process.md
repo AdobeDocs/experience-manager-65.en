@@ -3,16 +3,14 @@ title: Configuring AEM Forms to submit form data to an AEM Forms on JEE process
 seo-title: Configuring AEM Forms to submit form data to an AEM Forms on JEE process
 description: AEM Forms allows you to integrate adaptive forms with AEM Forms on JEE processes for processing form data.
 seo-description: AEM Forms allows you to integrate adaptive forms with AEM Forms on JEE processes for processing form data.
-uuid: 71a894d7-7c0a-43a6-afe5-40c4a15c66d6
+uuid: ee7ea442-d604-4520-9af5-ad40ec4927a1
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
-discoiquuid: ff97424d-b384-4149-9a3c-b4f00aaa1def
-docset: aem65
-
+discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
 ---
 
-# Configuring AEM Forms to submit form data to an AEM Forms on JEE process{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
+# Configuring AEM Forms to submit form data to an AEM Forms on JEE process {#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
 Adaptive forms supports submitting data to an AEM Forms on JEE process for further processing. It allows you to trigger an AEM Forms on JEE process with the data available from the submitted form. Perform the following steps to enable your AEM Forms instance to submit an adaptive form to AEM Forms on JEE process:
 
@@ -36,8 +34,7 @@ Once your AEM Forms is configured, map the data XML and attachments from the sub
 1. Specify the following parameters:
 
     * **Name of the data xml parameter** (mandatory): Specify the XML property file of the AEM Forms on JEE process that needs to process the submitted data. The default value is **dataxml**.
-    
-    * **Name of the file attachments parameter **(optional):** **Specify the list of document objects that the AEM Forms on JEE process needs to process. The default value is **fileAttachmentsList**.
+    * **Name of the file attachments parameter** (optional): Specify the list of document objects that the AEM Forms on JEE process needs to process. The default value is **fileAttachmentsList**.
 
 1. Review the settings and click **Save**.
 

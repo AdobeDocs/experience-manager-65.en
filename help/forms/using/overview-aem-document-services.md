@@ -3,16 +3,14 @@ title: Overview of AEM Document Services
 seo-title: Overview of AEM Document Services
 description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
 seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
-uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
+uuid: 17fd42ef-9950-4b51-9ae7-82e8b4759fe8
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
-discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
-docset: aem65
-
+discoiquuid: 0685478b-d08e-4d69-8dd3-f75270772167
 ---
 
-# Overview of AEM Document Services{#overview-of-aem-document-services}
+# Overview of AEM Document Services {#overview-of-aem-document-services}
 
 AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents. Document Services contain following services:
 
@@ -123,7 +121,7 @@ When PDF documents have the appropriate usage rights added, recipients can do th
 
 These special user capabilities are automatically activated when a rights-enabled PDF document is opened within Adobe Reader. When the user has finished working with a rights-enabled document, those functions are again disabled in Adobe Reader. They remain disabled until the user receives another rights-enabled PDF document.
 
-Out of the box, the DocAssurance service is not available for use. To configure the DocAssurance service, see [Installing and Configuring Configuring Document Services](../../forms/using/install-configure-document-services.md).
+Out of the box, the DocAssurance service is not available for use. To configure the DocAssurance service, see [Configuring Document Services](/help/forms/using/install-configure-document-services.md).
 
 ## Send To Printer Service {#send-to-printer-service}
 

@@ -3,16 +3,14 @@ title: Logging in to AEM Forms app
 seo-title: Logging in to AEM Forms app
 description: Steps to log into the AEM Forms app.
 seo-description: Steps to log into the AEM Forms app.
-uuid: da8cb0b2-6333-4ead-95f2-fb753149dc5e
+uuid: 041372b0-adf1-40b1-8e23-b9b1535f86b4
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
-discoiquuid: fb2b7ff6-6b29-425b-a86e-d1f80faab9e0
-docset: aem65
-
+discoiquuid: e5aa84a5-9b47-4cc8-8622-510a0a2950bf
 ---
 
-# Logging in to AEM Forms app{#logging-in-to-aem-forms-app}
+# Logging in to AEM Forms app {#logging-in-to-aem-forms-app}
 
 When you start your AEM Forms app, you first need to provide your login credentials and a AEM Forms server URL.
 
@@ -25,13 +23,13 @@ When you start your AEM Forms app, you first need to provide your login credenti
    >
    >The Mobile app, caches all AEM Forms server URLs that you enter.
    >
-   >    * To display the list of server URLs, click the list arrow at the right corner of the Server URL text box.
-   >    * You can the select a AEM Forms server URL to log in to via the app.
+   >* To display the list of server URLs, click the list arrow at the right corner of the Server URL text box.
+   >* You can the select a AEM Forms server URL to log in to via the app.
 
-When you log in to the app, you are directed to the [**Home** screen](../../forms/using/home-screen.md).
+When you log in to the app, you are directed to the [**Home** screen](/help/forms/using/home-screen.md).
 
 >[!NOTE]
 >
 >In the offline mode, only the last logged in user can log in to the app.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

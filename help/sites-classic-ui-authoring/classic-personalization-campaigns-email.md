@@ -3,22 +3,20 @@ title: E-mail Marketing
 seo-title: E-mail Marketing
 description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
+uuid: 798e06cd-64dd-4a8d-8a7a-9a7ba80045f6
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
-docset: aem65
-
+discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 ---
 
 # E-mail Marketing{#e-mail-marketing}
 
 >[!NOTE]
 >
->Adobe is not planning to further enhance E-mail tracking of open/bounces (not deliverable) send by AEM SMTP service.
->Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Adobe does not plan to further enhance of open/bounced emails sent by the AEM SMTP service.  
+>The recommendation is to [leverage Adobe Campaign and its AEM integration](/help/sites-administering/campaign.md).
 
 E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 
@@ -47,7 +45,7 @@ This document describes the basics of creating newsletters in AEM. For more deta
 >
 >Email notifications need to be configured via the osgi configuration. See [Configuring Email Notification.](/help/sites-administering/notification.md)
 
-1. Select your new campaign in the left pane, or double-click it in the right pane.
+1. Select your new campaign in the left pane, or double-click it in the right pane.  
 
 1. Select the list view, using the icon:
 
@@ -57,35 +55,42 @@ This document describes the basics of creating newsletters in AEM. For more deta
 
    You can specify the **Title**, **Name** and type of experience to be created; in this case, Newsletter.
 
-   ![](assets/mcm_createnewsletter.png)
+   ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
 
-1. Click **Create**.
+1. Click **Create**.  
 
 1. A new dialog will open immediately. Here you can enter properties for the newsletter.
 
    The **Default Recipients List** is a mandatory field as this forms the touchpoint for the newsletter (see [Working with Lists](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) for more information about lists).
 
-   ![](assets/mcm_newnewsletterdialog.png)
+   ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
 
-    * **From Name**
+    * **From Name** 
+
       Name that should appear as the sender of the newsletter.
+    
+    * **From Address** 
 
-    * **From Address**
       Mail address that should appear as the sender of the newsletter.
+    
+    * **Subject** 
 
-    * **Subject**
       Subject of the newsletter.
+    
+    * **Reply To** 
 
-    * **Reply To**
       Mail address that should address replies for sent newsletter.
+    
+    * **Description** 
 
-    * **Description**
       Description of the newsletter.
+    
+    * **On Time** 
 
-    * **On Time**
       The on time for sending the newsletter.
+    
+    * **Default Recipients List** 
 
-    * **Default Recipients List**
       Default list that should receive the newsletter.
 
    These can be updated at a later stage from the **Properties...** dialog.
@@ -96,7 +101,7 @@ This document describes the basics of creating newsletters in AEM. For more deta
 
 You can add content, including dynamic content, into your newsletter as you would in any AEM component. In Geometrixx, the Newsletter template has certain components available for adding and modifying content in newsletters.
 
-1. In the MCM, click the **Campaigns** tab and double-click the newsletter you want to add content to or edit. The newsletter opens.
+1. In the MCM, click the **Campaigns** tab and double-click the newsletter you want to add content to or edit. The newsletter opens.  
 
 1. If components are not visible, go to Design view and enable the necessary components (for example, the Newsletter components) before you start editing.
 1. Enter any new text, images, or other components as appropriate. In the Geometrixx example, 4 components are available: Text, Image, Heading, and 2 Columns. Your newsletter may have more or less components depending on how you set it up.
@@ -105,7 +110,7 @@ You can add content, including dynamic content, into your newsletter as you woul
    >
    >You personalize newsletters by using variables. In the Geometrixx newsletter, variables are available in the Text component. Values for the variables are inherited from the information in the user profile.
 
-   ![](assets/mcm_newsletter_content.png)
+   ![mcm_newsletter_content](assets/mcm_newsletter_content.png)
 
 1. To insert variables, select the variable from the list and click **Insert**. Variables are populated from the Profile.
 
@@ -117,25 +122,25 @@ You can also simulate how a newsletter is personalized by using the cliient cont
 
 To personalize a newsletter and simulate how it will look:
 
-1. From the MCM, open the newsletter you want to customize settings for.
+1. From the MCM, open the newsletter you want to customize settings for.  
 
-1. Open the Text component you want to personalize.
+1. Open the Text component you want to personalize.  
 
 1. Place the cursor where you want the variable to appear and select a variable from the drop-down list and click **Insert**. Do this for as many variables as required and click **OK**.
 
-   ![](assets/mcm_newsletter_variables.png)
+   ![mcm_newsletter_variables](assets/mcm_newsletter_variables.png)
 
 1. To simulate how the variable will look when sent, press CTRL+ALT+c to open the client context and select **Load**. Select the user from the list whose profile you would like to load and click **OK**.
 
    The information from the profile you loaded has populated the variables.
 
-   ![](assets/mc_newsletter_testvariables.png)
+   ![mc_newsletter_testvariables](assets/mc_newsletter_testvariables.png)
 
 ## Testing Newsletters in Different E-mail Clients {#testing-newsletters-in-different-e-mail-clients}
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
 >
 >By default, the value of the parameter is `localhost:4502` and operation cannot be complete if port for running instance is changed.
 
@@ -147,20 +152,20 @@ Currently, you can view newsletters in the following e-mail clients:
 * Gmail
 * Hotmail
 * Thunderbird
-* Microsoft Outlook 2007
+* Microsoft Outlook 2007  
 * Apple Mail
 
 To switch between clients, click the corresponding icon to view the newsletter in that e-mail client:
 
-1. From the MCM, open the newsletter you want to customize settings for.
+1. From the MCM, open the newsletter you want to customize settings for.  
 
 1. Click an e-mail client in the top bar to see what the newsletter would look like in that client.
 
-   ![](assets/chlimage_1-119.png)
+   ![chlimage_1-167](assets/chlimage_1-167.png)
 
 1. Repeat this step for any additional e-mail clients you want to see.
 
-   ![](assets/chlimage_1-120.png)
+   ![chlimage_1-168](assets/chlimage_1-168.png)
 
 ## Customizing Newsletter Settings {#customizing-newsletter-settings}
 
@@ -173,18 +178,17 @@ To customize newsletter settings:
 
 1. From the MCM, open the newsletter you want to customize settings for.
 
-   ![](assets/mcm_newsletter_open.png)
+   ![mcm_newsletter_open](assets/mcm_newsletter_open.png)
 
 1. At the top of the newsletter, click **Settings**.
 
-   ![](assets/mcm_newsletter_settings.png)
+   ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
 
 1.
 
-    1. Enter the **From** e-mail address
-
-    1. Modify the **Subject** of the e-mail, if necessary.
-    1. Select a **Default Recipients List** from the drop down list.
+    1. Enter the **From** e-mail address 
+    1. Modify the **Subject** of the e-mail, if necessary. 
+    1. Select a **Default Recipients List** from the drop down list. 
     1. Click **OK**.
 
    When you test or send the newsletter, recipients will receive e-mails with the specified e-mail address and subject.
@@ -205,26 +209,21 @@ Flight testing lets you do the following:
 
 To flight test newsletters:
 
-1. From the MCM, open the newsletter you want to test and send.
+1. From the MCM, open the newsletter you want to test and send.  
 
 1. At the top of the newsletter, click **Test** to test before sending.
 
-   ![](assets/mcm_newsletter_testsettings.png)
+   ![mcm_newsletter_testsettings](assets/mcm_newsletter_testsettings.png)
 
 1. Enter the test mail address where you want the newsletter sent and click **Send**. If you want to change the profile, you load another profile in the client context. You do this by pressing CTRL+ALT+c and selecting Load and loading a profile.
 
 ## Sending Newsletters {#sending-newsletters}
 
->[!NOTE]
->
->Adobe is not planning to further enhance E-mail tracking of open/bounces (not deliverable) send by AEM SMTP service.
->Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
-
 You can send out a newsletter from either the newsletter or from the list. Both procedures are described.
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
 >
 >By default, the value of the parameter is `localhost:4502` and operation cannot be complete if port for running instance is changed.
 
@@ -242,18 +241,17 @@ To send out a newsletter from within the campaign:
    >
    >Before sending out, make sure you have customized your newsletter's subject and originating e-mail address by [customizing its settings](#customizing-newsletter-settings).
    >
-   >
    >[Flight testing](#flight-testing-newsletters) the newsletter before sending is recommended.
 
-1. At the top of the newsletter, click **Send**. The Newsletter wizard opens.
+1. At the top of the newsletter, click **Send**. The Newsletter wizard opens.  
 
 1. In the recipient's list, select the list you want to receive the newsletter and click **Next**.
 
-   ![](assets/mcm_newslettersend.png)
+   ![mcm_newslettersend](assets/mcm_newslettersend.png)
 
 1. Setup completion is confirmed. Click **Send** to actually send the newsletter.
 
-   ![](assets/mcm_newslettersendconfirm.png)
+   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -269,19 +267,19 @@ To send out a newsletter from a list:
    >
    >Before sending out, make sure you have customized your newsletter's subject and originating e-mail address by [customizing its settings](#customizing-newsletter-settings). You cannot test a newsletter if you send it from the list; you can [flight test](#flight-testing-newsletters) it if you send it from the newsletter.
 
-1. Select the check box next to the list of leads you want to send a newsletter to.
+1. Select the check box next to the list of leads you want to send a newsletter to.  
 
-1. In the **Tools **menu, select **Send Newsletter**. The **Send Newsletter** window opens.
+1. In the **Tools** menu, select **Send Newsletter**. The **Send Newsletter** window opens.
 
-   ![](assets/mcm_newslettersendfromlist.png)
+   ![mcm_newslettersendfromlist](assets/mcm_newslettersendfromlist.png)
 
 1. In the **Newsletter** field, select the newsletter you want to send and click **Next**.
 
-   ![](assets/mcm_newslettersenddialog.png)
+   ![mcm_newslettersenddialog](assets/mcm_newslettersenddialog.png)
 
 1. Setup completion is confirmed. Click **Send** to send the selected newsletter to the specified list of leads.
 
-   ![](assets/mcm_newslettersenddialog_confirmation.png)
+   ![mcm_newslettersenddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
 
    Your newsletter is sent to the selected recipients.
 
@@ -295,7 +293,7 @@ To subscribe to a newsletter (using the Geometrixx web site as an example):
 
 1. Click **Websites** and navigate to the Geometrixx **Toolbar** and open it.
 
-   ![](assets/chlimage_1-121.png)
+   ![chlimage_1-169](assets/chlimage_1-169.png)
 
 1. In the Geometrixx Newsletter **Sign Up** field, enter your e-mail address and click **Sign Up**. You are now subscribed to the newsletter.
 

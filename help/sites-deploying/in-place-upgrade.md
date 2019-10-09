@@ -3,21 +3,19 @@ title: Performing an In-Place Upgrade
 seo-title: Performing an In-Place Upgrade
 description: Learn how to perform an in-place upgrade.
 seo-description: Learn how to perform an in-place upgrade.
-uuid: 478cb9db-1ea8-4bdb-b333-411dcbf2d927
+uuid: c7428dc0-2b9e-401d-8f80-19e936f6d739
 contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
-discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
-docset: aem65
-
+discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
 ---
 
 # Performing an In-Place Upgrade{#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
->This page outlines the upgrade procedure for AEM 6.5. If you have an installation that is deployed to an application server, see [Upgrade Steps for Application Server Installations](/help/sites-deploying/app-server-upgrade.md).
+>This page outlines the upgrade procedure for AEM 6.4. If you have an installation that is deployed to an application server, see [Upgrade Steps for Application Server Installations](/help/sites-deploying/app-server-upgrade.md).
 
 ## Pre-Upgrade Steps {#pre-upgrade-steps}
 
@@ -31,9 +29,9 @@ Before executing your upgrade, there are several steps that must be completed. S
 
 ## Preparation of the AEM Quickstart jar file {#prep-quickstart-file}
 
-1. Stop the instance if it is running.
+1. Stop the instance if it is running.  
 
-1. Download the new AEM jar file and use it to replace the old one outside the `crx-quickstart` folder.
+1. Download the new AEM jar file and use it to replace the old one outside the `crx-quickstart` folder.  
 
 1. Unpack the new quickstart jar by running:
 
@@ -62,58 +60,60 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profile and flags listed in the following table:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Source Repository</strong></td>
-   <td><strong>Target Repository</strong></td>
-   <td><strong>Profile</strong></td>
-   <td><strong>Additional Flags</strong><br /> </td>
-  </tr>
-  <tr>
-   <td>crx2 or TarMK with <code>FileDataStore</code></td>
-   <td>TarMK</td>
-   <td>segment-fds</td>
-   <td>See Troubleshooting section below</td>
-  </tr>
-  <tr>
-   <td>crx2</td>
-   <td>MongoMK</td>
-   <td>mongo-from-crx2 </td>
-   <td><code>-T mongo-uri=mongo://mongo-host:mongo-port -T mongo-db=mongo-database-name</code></td>
-  </tr>
-  <tr>
-   <td><span class="inline-comment-marker" data-ref="f44022c9-bcfa-4d04-86a1-7dffe87d094d">TarMK or crx2 with <code>S3DataStore</code></code></td>
-   <td>TarMK</td>
-   <td>segment-custom-ds</td>
-   <td>See Troubleshooting section below</td>
-  </tr>
-  <tr>
-   <td>TarMK with no datastore</td>
-   <td>TarMK</td>
-   <td>segment-no-ds</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>MongoMK</td>
-   <td>MongoMK</td>
-   <td>No migration is needed</td>
-   <td> </td>
-  </tr>
- </tbody>
+<table> 
+ <tbody> 
+  <tr> 
+   <td><strong>Source Repository</strong></td> 
+   <td><strong>Target Repository</strong></td> 
+   <td><strong>Profile</strong></td> 
+   <td><strong>Additional Flags</strong><br /> </td> 
+  </tr> 
+  <tr> 
+   <td>crx2 or TarMK with <code>FileDataStore</code></td> 
+   <td>TarMK</td> 
+   <td>segment-fds</td> 
+   <td>See Troubleshooting section below</td> 
+  </tr> 
+  <tr> 
+   <td>crx2</td> 
+   <td>MongoMK</td> 
+   <td>mongo-from-crx2 </td> 
+   <td><code>-T mongo-uri=mongo://mongo-host:mongo-port -T mongo-db=mongo-database-name</code></td> 
+  </tr> 
+  <tr> 
+   <td>TarMK or crx2 with <code>S3DataStore</code></td> 
+   <td>TarMK</td> 
+   <td>segment-custom-ds</td> 
+   <td>See Troubleshooting section below</td> 
+  </tr> 
+  <tr> 
+   <td>TarMK with no datastore</td> 
+   <td>TarMK</td> 
+   <td>segment-no-ds</td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td>MongoMK</td> 
+   <td>MongoMK</td> 
+   <td>No migration is needed</td> 
+   <td> </td> 
+  </tr> 
+ </tbody> 
 </table>
+
+<!--please check above table-->
 
 **Where:**
 
-* `mongo-host` is the MongoDB server IP (for example, 127.0.0.1)
+* `mongo-host` is the MongoDB server IP (for example, 127.0.0.1)  
 
-* `mongo-port` is the MongoDB server port (for example: 27017)
+* `mongo-port` is the MongoDB server port (for example: 27017)  
 
 * `mongo-database-name` represents the name of the database (for example: aem-author)
 
 **You may also require additional switches for the following scenarios:**
 
-* If you are performing the upgrade on a Windows system where Java memory mapping is not handled correctly, please add the `--disable-mmap` parameter to the command.
+* If you are performing the upgrade on a Windows system where Java memory mapping is not handled correctly, please add the `--disable-mmap` parameter to the command.  
 
 * If you are using Java 7, add the `-XX:MaxPermSize=2048m` parameter just after the `-Xmx` parameter.
 
@@ -123,9 +123,9 @@ If the migration has completed successfully, the tool will exit with an exit cod
 
 Check the configuration files beneath `crx-quickstart/install` folder. If a migration was necessary these will be updated to reflect the target repository.
 
-**A note on datastores:**
-
-While `FileDataStore` is the new default for AEM 6.3 installations, using an external datastore is not required. While using an external datastore is recommended as a best practice for production deployments, it is not a prerequisite to upgrade. Due to the complexity already present in upgrading AEM, we recommend performing the upgrade without doing a datastore migration. If desired, a datastore migration can be executed afterwards as a separate effort.
+>[!NOTE]
+>
+>While `FileDataStore` is the new default for AEM 6.3 installations, using an external datastore is not required. While using an external datastore is recommended as a best practice for production deployments, it is not a prerequisite to upgrade. Due to the complexity already present in upgrading AEM, we recommend performing the upgrade without doing a datastore migration. If desired, a datastore migration can be executed afterwards as a separate effort.
 
 ## Troubleshooting Migration Issues {#troubleshooting-migration-issues}
 
@@ -155,15 +155,15 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 **If using S3:**
 
-1. Remove any jars beneath `crx-quickstart/install` associated with an earlier version of the S3 connector.
+1. Remove any jars beneath `crx-quickstart/install` associated with an earlier version of the S3 connector.  
 
-1. Download the latest release of the 1.8.x S3 connector from [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Download the latest release of the 1.8.x S3 connector from [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)  
 
 1. Extract the package to a temporary folder and copy the contents of `jcr_root/libs/system/install` to the `crx-quickstart/install` folder.
 
 ### Determining the correct upgrade start command {#determining-the-correct-upgrade-start-command}
 
-To execute the upgrade, it is important to start AEM using the jar file to bring up the instance. For upgrading to 6.5, please also see other content restructuring and migration options in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) that you can choose with the upgrade command.
+To execute the upgrade, it is important to start AEM using the jar file to bring up the instance. For upgrading to 6.4, please also see other content restructuring and migration options in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) that you can choose with the upgrade command.
 
 Note that starting AEM from the start script will not start the upgrade. Most customers start AEM using the start script and have customized this start script to include switches for environment configurations such as memory settings, security certificates, etc. For this reason, we recommend following this procedure to determine the proper upgrade command:
 
@@ -182,7 +182,7 @@ Note that starting AEM from the start script will not start the upgrade. Most cu
 1. Modify the command by replacing the path to the existing jar ( `crx-quickstart/app/aem-quickstart*.jar` in this case) with the new jar that is a sibling of the `crx-quickstart` folder. Using our previous command as an example, our command would be:
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.4.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    This will ensure that all proper memory settings, custom runmodes, and other environmental parameters are applied for the upgrade. After the upgrade has completed, the instance may be started from the start script on future startups.

@@ -1,19 +1,19 @@
 ---
 title: Best practices for HTML5 forms
 seo-title: Best practices for HTML5 forms
-description: Tune your XFA-based HTML5 Forms for best performance.
-seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
-uuid: 3804effd-f1f2-4d7a-8e52-717b5c1c62cf
+description: Tune your XFA-based HTML5 Forms for best performance. 
+seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance. 
+uuid: 739700c7-4f88-4b53-9453-1be6d5bc8432
 contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 content-type: reference
-discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
-docset: aem65
-
+discoiquuid: a5eba237-3aad-497a-8f77-061d5d3df371
 ---
 
-# Best practices for HTML5 forms{#best-practices-for-html-forms}
+# Best practices for HTML5 forms  {#best-practices-for-html-forms}
+
+Tune your XFA-based HTML5 Forms for best performance.
 
 ## Overview {#overview}
 
@@ -29,7 +29,7 @@ Generally, an XFA form has multiple elements. For example, table, text field, an
 
 It is easier for the browsers to render a leaner DOM. So, you can perform the following optimizations on an XFA form to reduce the number of nodes. Therefore, generate a lean DOM structure:
 
-* Use the caption property to add a label to a field. Do not use a separate Text element to add a label. It helps in shedding extra weight, leading to performance gains. It also helps in avoiding layout issues.
+* Use the caption property to add a label to a field. Do not use a separate Text element to add a label. It helps in shedding extra weight, leading to performance gains. It also helps in avoiding layout issues.  
 * Keep the number of Draw text elements on a form to a bare minimum. Draw elements are helpful in improving readability and appearance but do not have any information storing capabilities. It is advised to merge multiple Draw text elements into a single Draw text element. Leave no stone unturned to make a form leaner.
 
 ## Lite forms perform better, keep the resources compressed {#lite-forms-perform-better-keep-the-resources-compressed}
@@ -71,9 +71,9 @@ Adobe Experience Manager (AEM) forms can help you transform complex transactions
 * [Best practices for Authoring content](/help/sites-authoring/best-practices.md)
 * [Best practices for Administering AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practices for Developing solutions](/help/sites-developing/best-practices.md)
-* [Best practices for working with adaptive forms](/forms/using/adaptive-forms-best-practices.md)
+* [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
 
 ## Quick reference card {#quick-reference-card}
 
 You can print following card (Click card to download a high-resolution version) and keep it on your desk for a quick reference:
-[ ![HTML5 Forms best practices quick reference card](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+    [ ![HTML5 Forms best practices quick reference card](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)  

@@ -3,17 +3,15 @@ title: Reference adaptive form fragments
 seo-title: Reference adaptive form fragments
 description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly. 
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly. 
-uuid: 85401274-6691-4726-8b70-b93fd46de053
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
-discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-docset: aem65
-
+discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 ---
 
-# Reference adaptive form fragments{#reference-adaptive-form-fragments}
+# Reference adaptive form fragments {#reference-adaptive-form-fragments}
 
-[Adaptive form fragment](../../forms/using/adaptive-form-fragments.md) is a group of fields, or a panel containing a group of fields that you can use when you create a form. It lets you create a form easily and quickly. You can drag-drop an adaptive form fragment into a form using the assets browser in sidebar, and you can edit it in the form editor.
+[Adaptive form fragment](/help/forms/using/adaptive-form-fragments.md) is a group of fields, or a panel containing a group of fields that you can use when you create a form. It lets you create a form easily and quickly. You can drag-drop an adaptive form fragment into a form using the assets browser in sidebar, and you can edit it in the form editor.
 
 For adaptive forms authors, reference fragments are provided in the AEM Forms package [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). It includes the following fragments:
 
@@ -35,85 +33,67 @@ When you install the package, a Reference Fragments folder containing reference 
 ## Address {#address}
 
 Includes fields to specify mailing address. The available fields are street address, ZIP code, city, state, and country. It also includes a preconfigured web service that populates the city and state for a specified US zip code.
-[ ![Address fragment](assets/address.png)
+    ![Address fragment](assets/address.png)
 
-Click to enlarge
-
-](assets/address-1.png)
+[Click to enlarge](assets/address.png)
 
 ## Contact Information {#contact-information}
 
 Includes fields to capture phone number and email address. 
-[ ![Contact information fragment](assets/contact-info.png)
+    ![Contact information fragment](assets/contact-info.png)
 
-Click to enlarge
-
-](assets/contact-info-1.png)
+[Click to enlarge](assets/contact-info-1.png)
 
 ## Credit Card Information {#credit-card-information}
 
 Includes fields to capture credit card information that can be used to process payments.
-[ ![Credit Card Information Fragment](assets/cc-info.png)](assets/cc-info-1.png)
+    [ ![Credit Card Information Fragment](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Current Employment {#current-employment}
 
 Includes fields to capture current employment details like employment status, field of employment, designation, organization, and date of joining. 
-[ ![Current Employment fragment](assets/current-emp.png)
+    ![Current Employment fragment](assets/current-emp.png)
 
-Click to enlarge
-
-](assets/current-emp-1.png)
+[Click to enlarge](assets/current-emp-1.png)
 
 ## Dependents Information {#dependents-information}
 
 Includes fields to specify information about one or more dependents, such as their name, relationship, and age in a tabular format.
-[ ![Dependents information fragment](assets/dependents-info.png)
+    ![Dependents information fragment](assets/dependents-info.png)
 
-Click to enlarge
-
-](assets/dependents-info-1.png)
+[Click to enlarge](assets/dependents-info-1.png)
 
 ## Employment History {#employment-history}
 
 Includes fields to capture employment history. It allows adding multiple organizations.
-[ ![Employment History fragment](assets/emp-history.png)
+    ![Employment History fragment](assets/emp-history.png)
 
-Click to enlarge
-
-](assets/emp-history-1.png)
+[Click to enlarge](assets/emp-history-1.png)
 
 ## Income & Expenditure {#income-expenditure}
 
 Includes fields to capture monthly cash flow and expenses. Forms that require users to provide financial details can use this fragment to capture income and expenditure.
-[ ![Income & Expenditure fragment](assets/income.png)
+    ![Income & Expenditure fragment](assets/income.png)
 
-Click to enlarge
-
-](assets/income-1.png)
+[Click to enlarge](assets/income-1.png)
 
 ## Name {#name}
 
 Includes fields to specify title, first name, middle name, and last name.
-[ ![Name fragment](assets/name.png)
+    ![Name fragment](assets/name.png)
 
-Click to enlarge
-
-](assets/name-1.png)
+[Click to enlarge](assets/name-1.png)
 
 ## Terms & Conditions {#terms-conditions}
 
 Specifies terms and conditions for users to accept before submitting a form.
-[ ![Terms & Conditions fragment](assets/tnc.png)
+    ![Terms & Conditions fragment](assets/tnc.png)
 
-Click to enlarge
-
-](assets/tnc-1.png)
+[Click to enlarge](assets/tnc-1.png)
 
 ## Terms & Conditions with Scribble {#terms-conditions-with-scribble}
 
 Specifies terms and conditions for users to accept and sign before submitting a form.
-[ ![Terms & Conditions with Scribble](assets/tnc-scribble.png)
+    ![Terms & Conditions with Scribble](assets/tnc-scribble.png)
 
-Click to enlarge
-
-](assets/tnc-scribble-1.png)
+[Click to enlarge](assets/tnc-scribble-1.png)

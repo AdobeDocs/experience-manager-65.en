@@ -3,14 +3,12 @@ title: Troubleshooting Replication
 seo-title: Troubleshooting Replication
 description: This article provides information on how to troubleshoot replication issues.
 seo-description: This article provides information on how to troubleshoot replication issues.
-uuid: 1662bf60-b000-4eb2-8834-c6da607128fe
+uuid: 7c3fdaad-0916-4159-a26c-17ff8c6617fe
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 0d055be7-7189-4587-8c7c-2ce34e22a6ad
-docset: aem65
-
+discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
 ---
 
 # Troubleshooting Replication{#troubleshooting-replication}
@@ -27,7 +25,7 @@ There are various reasons for replication to fail. This article explains the app
 
 **Are replications getting triggered at all when clicking the Activate button? If NOT then do the following:**
 
-1. Go to /crx/explorer and login as admin.
+1. Go to /crx/explorer (CQ5.5) and login as admin.
 1. Open "Content Explorer"
 1. See if a node /bin/replicate or /bin/replicate.json exists. If the node exists then delete it and save.
 
@@ -47,11 +45,11 @@ Check this by going to /etc/replication/agents.author.html then click on the rep
 
 1. It is possible that a certain piece of content cannot be serialized under /var/replication/data due to repository corruption or some other issue. Check the logs/error.log for a related error. To clear out the bad replication item, do the following:
 
-    1. Go to https://&lt;host&gt;:&lt;port&gt;/crx/de and login as admin user.
-    1. Click on "Tools" from the top menu.
-    1. Click on the magnifying glass button.
-    1. Select the "XPath" as Type.
-    1. In the "Query" box enter this query /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) order by @slingevent:created
+    1. Go to https://&lt;host&gt;:&lt;port&gt;/crx and login as admin user. In CQ5.5 go to https://&lt;host&gt;:&lt;port&gt;/crx/explorer instead.
+    1. Click on "Content Explorer".
+    1. In the "Content Explorer" window click on the magnifying glass button on the top right of the window and a search dialog will pop up.
+    1. Select the "XPath" radio button.
+    1. In the "Query" box enter this query /jcr:root/var/eventing/jobs//element(&ast;,slingevent:Job) order by @slingevent:created
     1. Click "Search"
     1. In the results the top items are the latest sling eventing jobs. Click on each one and find the stuck replications that match what shows up in the top of the queue.
 
@@ -69,30 +67,30 @@ Check this by going to /etc/replication/agents.author.html then click on the rep
 
 Sometimes it can be very helpful to set all replication logging to be added in a separate log file at DEBUG level. To do this:
 
-1. Go to https://host:port/system/console/configMgr and login as admin.
+1. Go to `https://host:port/system/console/configMgr` and login as admin.
 1. Find the Apache Sling Logging Logger factory and create an instance by clicking the **+** button on the right of the factory configuration. This will create a new logging logger.
 1. Set the configuration like this:
 
     * Log Level: DEBUG
-    * Log File Path: logs/replication.log
+    * Log File Path: *(CQ5.4 and 5.3)* ../logs/replication.log *(CQ5.5)* logs/replication.log
     * Categories: com.day.cq.replication
 
 1. If you suspect the problem to be related to sling eventing/jobs in any way then you can also add this java package under categories:org.apache.sling.event
 
-## Pausing Replication Agent Queue  {#pausing-replication-agent-queue}
+### Pausing Replication Agent Queue  {#pausing-replication-agent-queue}
 
 Sometime it might be suitable to pause the replication queue to reduce load on the author system, without disabling it. Currently this is only possible by a hack of temporarily configuring an invalid port. From 5.4 onwards you could see pause button in replication agent queue it has some limitation
 
 1. The state is not persisted that means if you restart a server or replication bundle is recycled it gets back to running state.
 1. The pause is idle for a shorter period (OOB 1 hour after no activities with replication by other threads) and not for a longer time. Because There is feature in sling which avoid idle threads. Basically check if a job queue thread has been unused for a longer time, if so it kicks up clean up cycles. Due to cleanup cycle it stops the thread and hence the paused setting is lost. Since jobs are persisted it initiates a new thread to process the queue which does not have details of the paused configuration. Due to this queue turns into running state.
 
-## Page Permissions are not Replicated on User Activation {#page-permissions-are-not-replicated-on-user-activation}
+### Page Permissions are not Replicated on User Activation {#page-permissions-are-not-replicated-on-user-activation}
 
 Page permissions are not replicated because they are stored under the nodes to which access is granted, not with the user.
 
 In general page permissions should not be replicated from the author to publish and are not by default. This is because access rights should be different in those two environments. Therefore it is recommended to configure ACLs on publish separately from author.
 
-## Replication queue blocked when replicating namespace information from Author to Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+### Replication queue blocked when replicating namespace information from Author to Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
 In some cases the replication queue is blocked when trying to replicate namespace information from the author instance to the publish instance. This happens because the replication user does not have `jcr:namespaceManagement` privilege. To avoid this issue, make sure that:
 
@@ -100,7 +98,7 @@ In some cases the replication queue is blocked when trying to replicate namespac
 * The user has read and write privileges at the path where the content is installed.
 * The user has `jcr:namespaceManagement` privilege at the repository level. You can grant the privilege as follows:
 
-1. Login to CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) as administrator.
+1. Login to CRX/DE ( `http://localhost:4502/crx/de/index.jsp`) as administrator.
 1. Click on the **Access Control** tab.
 1. Select **Repository**.
 1. Click **Add Entry** (the plus icon).

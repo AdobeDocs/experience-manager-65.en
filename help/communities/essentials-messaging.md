@@ -3,98 +3,95 @@ title: Messaging Essentials
 seo-title: Messaging Essentials
 description: Messaging component overview
 seo-description: Messaging component overview
-uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
+uuid: 53711f4d-6bbc-4be9-aefe-4e75a81cd67f
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
-docset: aem65
-
+discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 ---
 
-# Messaging Essentials{#messaging-essentials}
+# Messaging Essentials {#messaging-essentials}
 
 This page documents the details of working with using the Messaging component to include a messaging feature on a website.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-<table>
- <tbody>
-  <tr>
-   <th colspan="2" style="text-align: center;">Compose Message</th>
-  </tr>
-  <tr>
-   <td style="text-align: center;"> <strong>resourceType</strong></td>
-   <td><p>social/messaging/components/hbs/composemessage</p> </td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
-   <td><p>cq.social.hbs.messaging</p> </td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"> <strong>templates</strong></td>
-   <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"><strong>css</strong></td>
-   <td>/libs/social/messaging/components/hbs/composemessage/clientlibs/composemessage.css</td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"><strong>properties</strong></td>
-   <td>see <a href="/help/communities/configure-messaging.md" target="_blank">Configure Messaging</a></td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"><strong>admin configuration</strong></td>
-   <td><a href="/help/communities/messaging.md">Configure Messaging</a></td>
-  </tr>
- </tbody>
+**Compose Message**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td> <strong>resourceType</strong></td> 
+   <td><p>social/messaging/components/hbs/composemessage</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
+   <td><p>cq.social.hbs.messaging</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <strong>templates</strong></td> 
+   <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td> 
+  </tr> 
+  <tr> 
+   <td><strong>css</strong></td> 
+   <td>/libs/social/messaging/components/hbs/composemessage/clientlibs/composemessage.css</td> 
+  </tr> 
+  <tr> 
+   <td><strong>properties</strong></td> 
+   <td>see <a href="configure-messaging.md">Confiiguring Messaging</a></td> 
+  </tr> 
+  <tr> 
+   <td><strong>admin configuration</strong></td> 
+   <td><a href="messaging.md">Configuring Messaging</a></td> 
+  </tr> 
+ </tbody> 
 </table>
 
-<table>
- <tbody>
-  <tr>
-   <th colspan="2" style="text-align: center;">Message List</th>
-  </tr>
-  <tr>
-   <td colspan="2" style="text-align: center;">(for Inbox, Sent, and Trash)</td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"> <strong>resourceType</strong></td>
-   <td><p>social/messaging/components/hbs/messagebox</p> </td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
-   <td><p>cq.social.hbs.messaging</p> </td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"> <strong>templates</strong></td>
-   <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"><strong>css</strong></td>
-   <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"><strong>properties</strong></td>
-   <td>see <a href="/help/communities/configure-messaging.md" target="_blank">Configure Messaging</a></td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"><strong>admin configuration</strong></td>
-   <td><a href="/help/communities/messaging.md" target="_blank">Configure Messaging</a></td>
-  </tr>
- </tbody>
+**Message List** (for Inbox, Sent, and Trash)
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td> <strong>resourceType</strong></td> 
+   <td><p>social/messaging/components/hbs/messagebox</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
+   <td><p>cq.social.hbs.messaging</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <strong>templates</strong></td> 
+   <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td> 
+  </tr> 
+  <tr> 
+   <td><strong>css</strong></td> 
+   <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td> 
+  </tr> 
+  <tr> 
+   <td><strong>properties</strong></td> 
+   <td>See <a href="configure-messaging.md">Confiiguring Messaging</a></td> 
+  </tr> 
+  <tr> 
+   <td><strong>admin configuration</strong></td> 
+   <td><a href="messaging.md">Configuring Messaging</a></td> 
+  </tr> 
+ </tbody> 
 </table>
 
-See also [Client-side Customizations](/help/communities/client-customize.md)
+See also [Client-side Customizations](client-customize.md)
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Configuring Messaging](/help/communities/configure-messaging.md)
-* [Messaging client APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
-* [Messaging APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
-* [Messaging Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
-* [Server-side Customizations](/help/communities/server-customize.md)
+* [Configuring Messaging](configure-messaging.md)
+
+* [Messaging client APIs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
+
+* [Messaging APIs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
+
+* [Messaging Endpoints](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+
+* [Server-side Customizations](server-customize.md)
 
 >[!CAUTION]
 >
@@ -112,36 +109,36 @@ See also [Client-side Customizations](/help/communities/client-customize.md)
 
 ### Community Site {#community-site}
 
-A community site structure, created using the wizard, includes the messaging feature when selected. See `User Management` settings of [Community Sites Console](/help/communities/sites-console.md#user-management).
+A community site structure, created using the wizard, will include the messaging feature when selected. See `User Management` settings of [Community Sites Console](sites-console.md#user-management).
 
 ### Sample Code: Message Received Notification {#sample-code-message-received-notification}
 
-The Social Messaging feature throws events for operations, for example `send`, `marking read`, `marking delete`. These events can be caught and actions taken on the data contained in the event.
+The Social Messaging feature throw events for operations, for example `send`, `marking read`, `marking delete`. These events can be caught and actions taken on the data contained in the event.
 
 The following example is of an event handler which listens for the `message sent` event and sends an email to all message recipients using the `Day CQ Mail Service`.
 
-To try the server-side sample script, you need a development environment and the ability to build an OSGi bundle:
+To try the server-side sample script, you will need a development environment and the ability to build an OSGi bundle.
 
-1. Log in as an administrator to ` [CRXDE|Lite](https://localhost:4502/crx/de).`
-1. Create a `bundle node`in `/apps/engage/install` with arbitrary names, such as:
+1. Login as an administrator to ` [CRXDE|Lite](http://localhost:4502/crx/de)`
+1. Create a `bundle node`in `/apps/engage/install` with arbitrary names, such as
 
-    * Symbolic Name: com.engage.media.social.messaging.MessagingNotification
-    * Name: Getting Started Tutorial Message Notification
-    * Description: a sample service for sending an email notification to users when they receive a message
-    * Package: com.engage.media.social.messaging.notification
+    * **[!UICONTROL Symbolic Name]**: com.engage.media.social.messaging.MessagingNotification
+    * **[!UICONTROL Name]**: Getting Started Tutorial Message Notificaton 
+    * **[!UICONTROL Description]**: a sample service for sending an email notification to users when they receive a message
+    * **[!UICONTROL Package]**: `com.engage.media.social.messaging.notification`
 
-1. Navigate to /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification, and then:
+1. Navigate to `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
 
-    1. Delete the Activator.java class automatically created.
-    1. Create class MessageEventHandler.java.
-    1. Copy and paste the code below into MessageEventHandler.java.
+    1. Delete the `Activator.java` class automatically created
+    1. Create class `MessageEventHandler.java`
+    1. Copy/paste the code below into `MessageEventHandler.java`
 
-1. Click **Save All.**
-1. Navigate to /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd, and add all the import statements as written in the MessageEventHandler.java code.
-1. Build the bundle.
-1. Ensure `Day CQ Mail Service`OSGi service is configured.
-1. Log in as a demo user, and send email to another user.
-1. The recipient receives an email regarding a new message.
+1. Click **[!UICONTROL Save All]**
+1. Navigate to `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` and add all the import statements as written in the `MessageEventHandler.java` code.
+1. Build the bundle
+1. Ensure `Day CQ Mail Service`OSGi service is configured
+1. Login as one demo user and send email to another
+1. The recipient should receive an email regarding a new message
 
 #### MessageEventHandler.java {#messageeventhandler-java}
 
@@ -217,7 +214,7 @@ public class MessagingEventHandler implements EventHandler {
                 Message msg = resource.adaptTo(Message.class);
 
                 //Get list of recipient Ids from message
-                //For Getting Started Tutorial, Id is same as email. If that is not the case in your site,
+                //For Getting Started Tutorial, Id is same as email. If that is not the case in your site, 
                 //an additional step is needed to retrieve the email for the Id
                 List<String> reclist = msg.getRecipientIdList();
                 for(int i=0;i<reclist.size();i++){

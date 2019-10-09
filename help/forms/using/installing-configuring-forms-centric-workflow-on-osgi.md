@@ -1,40 +1,38 @@
 ---
 title: Installing and Configuring Forms-centric workflow on OSGi
 seo-title: Installing and Configuring Forms-centric workflow on OSGi
-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
-seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
-uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
+description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits. 
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits. 
+uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
-discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
-docset: aem65
-
+discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 ---
 
-# Installing and Configuring Forms-centric workflow on OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
+# Installing and Configuring Forms-centric workflow on OSGi {#installing-and-configuring-forms-centric-workflow-on-osgi}
 
 ## Introduction {#introduction}
 
 Enterprises collect and process data from multiple forms, back-end systems, and other data sources. The processing of data involves review and approval procedures, repetitive tasks, and data archiving. For example, reviewing a form and converting it to PDF document. When done manually, the repetitive tasks can take a lot of time and resources.
 
-You can use [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md) to rapidly build adaptive forms-based workflows. These workflows can help you automate review and approval workflows, business process workflows, and other repetitive tasks. These workflows also help process documents (create, assemble, distribute, and archive PDF documents, add digital signatures to limit access to documents, decode barcoded forms, and more) and use Adobe Sign signature workflow with forms and documents.
+You can use [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md) to rapidly build adaptive forms-based workflows. These workflows can help you automate review and approval workflows, business process workflows, and other repetitive tasks. These workflows also help process documents (create, assemble, distribute, and archive PDF documents, add digital signatures to limit access to documents, decode barcoded forms, and more) and use Adobe Sign signature workflow with forms and documents.
 
 Once set up, these workflows can be triggered manually to complete a defined process or run programmatically when users submit a form or interactive communication. The capability is included in AEM Forms add-on package.
 
-AEM Forms is a powerful enterprise-class platform. Forms-centric workflow on OSGi is only one of the capability of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms is a powerful enterprise-class platform. Forms-centric workflow on OSGi is only one of the capability of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 >[!NOTE]
 >
->With Forms-centric workflow on OSGi, you can rapidly build and deploy workflows for various tasks on the OSGi stack, without having to install the full-fledged Process Management capability on JEE stack. See a [comparison](../../forms/using/capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.
+>With Forms-centric workflow on OSGi, you can rapidly build and deploy workflows for various tasks on the OSGi stack, without having to install the full-fledged Process Management capability on JEE stack. See a [comparison](/help/forms/using/capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities. 
 >
->After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/forms/user-guide.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.
+>After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/home.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.
 
 ## Deployment Topology {#deployment-topology}
 
-AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author or Processing instance (production author) to run the Forms-centric workflow on OSGi capability. A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. Do not perform any actual authoring, like creating workflows or adaptive forms, on the production author.
+AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author or Processing instance (production author) to run the Forms-centric workflow on OSGi capability. A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. Do not perform any actual authoring, like creating workflows or adaptive forms, on the production author.
 
-The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/forms/using/aem-forms-architecture-deployment.md).
+The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png)
 
 AEM Forms Forms-centric workflow on OSGi runs AEM Inbox and AEM Workflow Model creation UI on the Author instances of AEM Forms.
 
@@ -42,18 +40,17 @@ AEM Forms Forms-centric workflow on OSGi runs AEM Inbox and AEM Workflow Model c
 
 >[!NOTE]
 >
->Skip to the [Next steps](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) section of the document, if you have already installed AEM Forms on OSGi as explained in the [install and configure data capture capabilities](../../forms/using/installing-configuring-aem-forms-osgi.md) article.
+>Skip to the [Next steps](#next-steps) section of the document, if you have already installed AEM Forms on OSGi as explained in the [install and configure data capture capabilities](/help/forms/using/installing-configuring-aem-forms-osgi.md) article.
 
 Before you begin to install and configure Forms-centric workflow on OSGi, ensure that:
 
-* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
+* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).  
 
 * Installation path of the AEM instance does not contain white-spaces.
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least one AEM instance (Author or Processing) to run Forms-centric workflow on OSGi:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
-    * **Processing:** A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.
-
+    * **Processing:** A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation. 
     * **Publish**: An AEM instance that serves the published content to the public over the Internet or an internal network.
 
 * Memory requirements are met. AEM Forms add-on package requires:
@@ -63,31 +60,31 @@ Before you begin to install and configure Forms-centric workflow on OSGi, ensure
 
 * Extra requirements for UNIX-based systems: If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system.
 
-<table>
+<table> 
  <tbody>
   <tr>
-   <td>expat</td>
-   <td>libxcb</td>
-   <td>freetype</td>
-   <td>libXau</td>
+   <td>expat</td> 
+   <td>libxcb</td> 
+   <td>freetype</td> 
+   <td>libXau</td> 
   </tr>
   <tr>
-   <td>libSM</td>
-   <td>zlib</td>
-   <td>libICE</td>
-   <td>libuuid</td>
+   <td>libSM</td> 
+   <td>zlib</td> 
+   <td>libICE</td> 
+   <td>libuuid</td> 
   </tr>
   <tr>
-   <td>glibc</td>
-   <td>libXext</td>
-   <td><p>nss-softokn-freebl</p> </td>
-   <td>fontconfig</td>
+   <td>glibc</td> 
+   <td>libXext</td> 
+   <td><p>nss-softokn-freebl</p> </td> 
+   <td>fontconfig</td> 
   </tr>
   <tr>
-   <td>libX11</td>
-   <td>libXrender</td>
-   <td>libXrandr</td>
-   <td>libXinerama</td>
+   <td>libX11</td> 
+   <td>libXrender</td> 
+   <td>libXrandr</td> 
+   <td>libXinerama</td> 
   </tr>
  </tbody>
 </table>
@@ -96,8 +93,8 @@ Before you begin to install and configure Forms-centric workflow on OSGi, ensure
 
 AEM Forms add-on package is an application deployed onto AEM. The package contains Forms-centric workflow on OSGi and other capabilities. Perform the following steps to install the add-on package:
 
-1. Log in to the [AEM server](https://localhost:4502) as an administrator and open [package share](https://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
-1. In [AEM package share](https://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
+1. Log in to the [AEM server](http://localhost:4502) as an administrator and open [package share](http://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
+1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **AEM 6.4 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
 
    You can also use the version number to search an add-on package. For version number of the latest package, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
 
@@ -137,9 +134,9 @@ Perform the following steps on all the Author and Publish instances to boot dele
 
 Perform the following steps on all the Author and Publish instances to whitelist the package:
 
-1. Open AEM Configuration Manager in a browser window. The default URL is https://[server]:[port]/system/console/configMgr.
+1. Open AEM Configuration Manager in a browser window. The default URL is `https://[server]:[port]/system/console/configMgr`.
 1. Search and open **Deserialization Firewall Configuration**.
-1. Add the **sun.util.calendar **package to the **whitelist **field. Click Save.
+1. Add the **sun.util.calendar** package to the **whitelist** field. Click Save.
 1. Repeat steps 1-3 on all the Author and Publish instances.
 
 ### Optional post-installation configurations {#optional-post-installation-configurations}
@@ -158,7 +155,7 @@ Dispatcher is caching and load balancing tool for AEM. AEM Dispatcher also helps
 
 1. Configure the referrer filter service:
 
-   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. In the **Configurations **menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is https://[server]:[port].
+   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is `https://[server]:[port_number]/system/console/configMgr`. In the **Configurations** menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is `https://[server]:[port]`.
 
 #### Configure Cache {#configure-cache}
 
@@ -169,7 +166,7 @@ Caching is a mechanism to shorten data access times, reduce latency, and improve
 
 Perform the following steps to configure the adaptive forms cache:
 
-1. Go to AEM web console configuration manager at https://[server]:[port]/system/console/configMgr.
+1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
 1. Click **Adaptive Form Configuration Service** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. The default value is 100. Click **Save**.
 
    >[!NOTE]
@@ -180,15 +177,15 @@ Perform the following steps to configure the adaptive forms cache:
 
 Adobe Sign enables e-signature workflows for adaptive forms. E-signatures improve workflows to process documents for legal, sales, payroll, human resource management, and many more areas.
 
-In a typical Adobe Sign and Forms-centric workflow on OSGi scenario, a user fills an adaptive form to** **apply for a service**. **For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, an approval/rejection workflow is started. The service provider reviews the application in AEM Inbox and uses Adobe Sign to electronically sign the application. To enable similar electronic-signature workflows, you can integrate Adobe Sign with AEM Forms.
+In a typical Adobe Sign and Forms-centric workflow on OSGi scenario, a user fills an adaptive form to apply for a service. For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, an approval/rejection workflow is started. The service provider reviews the application in AEM Inbox and uses Adobe Sign to electronically sign the application. To enable similar electronic-signature workflows, you can integrate Adobe Sign with AEM Forms.
 
-To use Adobe Sign with AEM Forms, [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+To use Adobe Sign with AEM Forms, [Integrate Adobe Sign with AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 ## Next steps {#next-steps}
 
 You have configured an environment to use Forms-centric workflow on OSGi capabilities. Now, the steps toward using the capability are:
 
-* [Using Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md)
+* [Using Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow.md)
 * [Workflow Step Reference](/help/sites-developing/workflows-step-ref.md)
-* [Post processing of letters and interactive communications](../../forms/using/submit-letter-topostprocess.md)
+* [Post processing of letters and interactive communications](/help/forms/using/submit-letter-topostprocess.md)
 

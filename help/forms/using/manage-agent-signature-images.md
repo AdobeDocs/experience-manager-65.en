@@ -3,16 +3,14 @@ title: Manage agent signature images
 seo-title: Manage agent signature images
 description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
 seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48b2697e-6065-4e23-9aa8-333e7b11ede1
+uuid: 720dd075-9059-4311-ad52-70e2f7c76c58
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
-discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
-docset: aem65
-
+discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
 ---
 
-# Manage agent signature images{#manage-agent-signature-images}
+# Manage agent signature images {#manage-agent-signature-images}
 
 ## Overview {#overview}
 
@@ -20,7 +18,7 @@ In Correspondence Management, you can use an image to render agent signature in 
 
 The agentSignatureImage DDE is a computed DDE representing the agent’s signature image. The expression for this computed DDE uses a new custom function exposed by the Expression Manager building block. This custom function takes agentID and agentFolder as input parameters and fetches the image content based on these parameters. The SystemContext system data dictionary gives letters in Correspondence Management access to information in the current system context. The system context includes information about the currently logged in user and active configuration parameters.
 
-You can add images under the cmuserroot folder. In [Correspondence Management Configuration Properties](/forms/using/cm-configuration-properties.md), using the CM User Root property you can change the folder from where agent signature image is picked up.
+You can add images under the cmuserroot folder. In [Correspondence Management Configuration Properties](/help/forms/using/cm-configuration-properties.md), using the CM User Root property you can change the folder from where agent signature image is picked up.
 
 The value of agentFolder DDE is taken from the CMUserRoot configuration parameter for the Correspondence Management configuration properties. By default, this configuration parameter points to/content/cmUserRoot in the CRX repository. You can change the value of the CMUserRoot configuration in the Configuration Properties.   
 You can also override the default custom function to define your own logic for fetching the user signature image.
@@ -40,7 +38,7 @@ You can also override the default custom function to define your own logic for f
 
        >[!NOTE]
        >
-       >cmUserRoot is the default location where AEM looks for the agent signature image. You can, however, change it by editing the CM User Root property in the [Correspondence Management configuration properties](/forms/using/cm-configuration-properties.md).
+       >cmUserRoot is the default location where AEM looks for the agent signature image. You can, however, change it by editing the CM User Root property in the [Correspondence Management configuration properties](/help/forms/using/cm-configuration-properties.md).
 
 1. In Content Explorer, navigate to the cmUserRoot folder and add the agent signature image in it.
 
