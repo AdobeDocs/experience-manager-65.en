@@ -31,7 +31,7 @@ It can be accessed by going to **Tools **- **Operations ** from the AEM Welcome 
 
 >[!NOTE]
 >
->In order to be able to access the Operations Dashboard, the logged in user must be part of the "Operators" user group. For more info, see documentation on [User, Group and Access Right Administration](..//help/sites-administering/user-group-ac-admin.md).
+>In order to be able to access the Operations Dashboard, the logged in user must be part of the "Operators" user group. For more info, see documentation on [User, Group and Access Right Administration](/help/sites-administering/user-group-ac-admin.md).
 
 ## Health Reports {#health-reports}
 
@@ -41,7 +41,7 @@ It has several features, described below.
 
 ## Health Checks {#health-checks}
 
-The **Health Reports** are a system of cards indicating good or bad health with regard to a specific product area. These cards are visualizations of the Sling Health Checks, which aggregate data from JMX and other sources and expose processed information again as MBeans. These MBeans can also be inspected in the [JMX web console](..//help/sites-administering/jmx-console.md), under the **org.apache.sling.healthcheck** domain.
+The **Health Reports** are a system of cards indicating good or bad health with regard to a specific product area. These cards are visualizations of the Sling Health Checks, which aggregate data from JMX and other sources and expose processed information again as MBeans. These MBeans can also be inspected in the [JMX web console](/help/sites-administering/jmx-console.md), under the **org.apache.sling.healthcheck** domain.
 
 The Health Reports interface can be accessed through the **Tools** - **Operations** - **Health Reports** menu on the AEM Welcome screen, or directly through the following URL:
 
@@ -263,7 +263,7 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
      <li>each maintenance task is accompanied by an associated health check</li>
      <li>if a task is not added to a maintenance window, its health check will return Critical</li>
      <li>you need to configure the Audit Log and Workflow Purge maintenance tasks or otherwise remove them from the maintenance windows. If left unconfigured, these tasks will fail on the first attempted run, so the System Maintenance check will return the Critical status.</li>
-     <li><strong>With AEM 6.4</strong>, there is also a check for the <a href="..//help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene Binaries Maintenance</a> task</li>
+     <li><strong>With AEM 6.4</strong>, there is also a check for the <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene Binaries Maintenance</a> task</li>
      <li>on AEM 6.2 and lower, the system maintenance check returns a Warning status right after startup because the tasks never run. Starting with 6.3, they will return OK if the first maintenance window wasn't reached yet.</li>
     </ul> <p>The MBean for this health check is <a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -310,7 +310,7 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
   </tr>
   <tr>
    <td>Security Checks</td>
-   <td><p>The Security check is a composite which aggregates the results of multiple security-related checks. These individual health checks address different concerns from the security checklist available at the <a href="..//help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> The check is useful as a security smoke test when the instance is started. </p> <p>The MBean for this health check is <a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitych</a><a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">ecks,type=HealthCheck</a></p> </td>
+   <td><p>The Security check is a composite which aggregates the results of multiple security-related checks. These individual health checks address different concerns from the security checklist available at the <a href="/help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> The check is useful as a security smoke test when the instance is started. </p> <p>The MBean for this health check is <a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitych</a><a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="https://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">ecks,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Active Bundles</td>
@@ -590,7 +590,7 @@ For more information on performing Revision Clean Up, [see this dedicated articl
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
-By using the Lucene Binaries Cleanup task, you can purge lucene binaries and reduce the running data store size requirement. This is because the lucene's binary churn will be re-claimed daily instead of the earlier dependency on a successful [data store garbage collection](..//help/sites-administering/data-store-garbage-collection.md) run.
+By using the Lucene Binaries Cleanup task, you can purge lucene binaries and reduce the running data store size requirement. This is because the lucene's binary churn will be re-claimed daily instead of the earlier dependency on a successful [data store garbage collection](/help/sites-administering/data-store-garbage-collection.md) run.
 
 Though the maintenance task was developed to reduce Lucene related revision garbage, there are general efficiency gains when running the task:
 
@@ -601,7 +601,7 @@ You can access the Lucene Binaries Cleanup task from: **AEM &gt; Tools &gt; Oper
 
 ### Data Store Garbage Collection {#data-store-garbage-collection}
 
-For details on Data Store Garbage Collection, see the dedicated [documentation page](..//help/sites-administering/data-store-garbage-collection.md).
+For details on Data Store Garbage Collection, see the dedicated [documentation page](/help/sites-administering/data-store-garbage-collection.md).
 
 ### Workflow purge {#workflow-purge}
 

@@ -228,7 +228,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/assets-api-content-fragments/index.html).
+>For further details, see the [API Reference](/help/assets/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](help/sites-developing/reference-materials/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -362,7 +362,7 @@ The following status codes can be seen in the relevant circumstances:
 
 See here for detailed API references:
 
-* [Adobe Experience Manager Assets API - Content Fragments](/https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Content Fragments](/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
     * [Available Features](/help/assets/mac-api-assets.md#available-features)

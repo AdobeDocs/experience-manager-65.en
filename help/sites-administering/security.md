@@ -292,7 +292,7 @@ This will simplify the maintenance, as the number of groups is much smaller than
 
   Adobe recommends that you work with Allow rather than Deny see [Best Practices](#best-practices).
 
-Before modifying either permission, be sure you understand how they work and inter-relate. See the CRX documentation to illustrate how AEM WCM [evaluates access rights](..//help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) and examples on setting up access control lists.
+Before modifying either permission, be sure you understand how they work and inter-relate. See the CRX documentation to illustrate how AEM WCM [evaluates access rights](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) and examples on setting up access control lists.
 
 ### Permissions {#permissions}
 
@@ -350,7 +350,7 @@ This allows the impersonator accounts to complete tasks as if they were using th
 >
 >In order for impersonating to work for non-admin users, the impersonator (in the above case user-B) is required to have READ permissions in the `/home/users` path.
 >
->For more information on how to achieve this, see [Permissions in AEM](..//help/sites-administering/security.md#permissions-in-aem).
+>For more information on how to achieve this, see [Permissions in AEM](/help/sites-administering/security.md#permissions-in-aem).
 
 >[!CAUTION]
 >
@@ -663,13 +663,13 @@ To remove members from a group at a certain path:
 
 When the deployment is a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), users and groups need to be synchronized among all publish nodes.
 
-To learn about user sync and how to enable it, see [User Sychronization](..//help/sites-administering/sync.md).
+To learn about user sync and how to enable it, see [User Sychronization](/help/sites-administering/sync.md).
 
 ## Managing Permissions {#managing-permissions}
 
 >[!NOTE]
 >
->Adobe has introduced a new Touch UI based principal view for permissions management. For more details on how to use it, see [this page](..//help/sites-administering/touch-ui-principal-view.md).
+>Adobe has introduced a new Touch UI based principal view for permissions management. For more details on how to use it, see [this page](/help/sites-administering/touch-ui-principal-view.md).
 
 This section describes how to set permissions, including replication privileges.
 

@@ -127,7 +127,7 @@ AEM eCommerce is implemented with an eCommerce engine:
 >AEM eCommerce implemented within AEM using generic development based on JCR is:
 >
 >* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout in conjunction with the existing data display and marketing campaigns. In this case the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](https://www.day.com/day/en/products/jcr.html)).
->  The standard AEM installation contains the basics of the [generic eCommerce implemention](..//help/sites-administering/generic.md).
+>  The standard AEM installation contains the basics of the [generic eCommerce implemention](/help/sites-administering/generic.md).
 >
 
 ### Commerce Providers {#commerce-providers}
@@ -150,7 +150,7 @@ Though usually a project will need to develop their own, customized, commerce pr
 >
 >The geometrixx importers use CSV files; there is a description of the schema accepted (with custom properties allowed) in the comments above their implementation.
 
-The ` [ProductServicesManager](/help/sites-developing/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.md)` maintains (through [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) a list of implementations of the ` [ProductImporter](/help/sites-developing/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.md)` and ` [CatalogBlueprintImporter](/help/sites-developing/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.md)` interfaces. These are listed in the **Importer/Commerce Provider** dropdown field of the importer wizard (using the `commerceProvider` property as a name).
+The ` [ProductServicesManager](/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)` maintains (through [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) a list of implementations of the ` [ProductImporter](/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)` and ` [CatalogBlueprintImporter](/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)` interfaces. These are listed in the **Importer/Commerce Provider** dropdown field of the importer wizard (using the `commerceProvider` property as a name).
 
 When a specific importer/commerce provider is available from the dropdown, any supplemental data it needs must be defined (depending on the importer type) in either:
 
@@ -304,7 +304,7 @@ Depending on your implementation, you can import the product data required for y
 
 Further changes to the product data will be inevitable:
 
-* for the generic implementation these can be managed with the [product editor](..//help/sites-administering/generic.md#editing-product-information)
+* for the generic implementation these can be managed with the [product editor](/help/sites-administering/generic.md#editing-product-information)
 * when using an [eCommerce engine the changes must be synchronized](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
 #### Data Synchronization with an eCommerce Engine (Ongoing) {#data-synchronization-with-an-ecommerce-engine-ongoing}
@@ -413,7 +413,7 @@ For all implementations the following points can be kept in mind:
 
 * In your technical stack, plan very factorized content access model and services. This is a general best practice, but is even more crucial her, as you can, in optimization phases, add application caches for data that is read very often (and that you do not want to fill the bundle cache with).
   For example, attributes management is very frequently a good candidate for caching as it concerns data that is updated through products import.
-* Consider use of [proxy pages](..//help/sites-administering/concepts.md#proxy-pages).
+* Consider use of [proxy pages](/help/sites-administering/concepts.md#proxy-pages).
 
 ### Catalog Section Pages {#catalog-section-pages}
 

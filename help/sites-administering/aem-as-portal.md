@@ -653,7 +653,7 @@ The AEM Quickstart JAR file contains the portlet component files. To obtain the 
 
 1. Open Package Manager of the CQ5 author instance that is deployed to the application server. (https://*appserverhost*:*port*/cq5author/crx/packmgr)
 
-1. Use Package Manager to [Upload and install](..//help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) the cq-portlets-components.zip package.
+1. Use Package Manager to [Upload and install](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) the cq-portlets-components.zip package.
 
    The package installs the cq-portlet-director-sharedlibs-x.x.x.jar in the /libs/portal/director folder in the repository.
 
@@ -758,7 +758,7 @@ After you install the portlet, you need to configure it so that it knows the URL
 To configure the portlet:
 
 1. In the Portal administration window of the app server, navigate to portlet management, where all portlets are listed and select the AEM Portal Director portlet.
-1. Configure the portlet, as necessary. For example, you may need to change the URL for the author and publish instances and the URL for the start path. Default configurations are described in [Portlet Preferences](..//help/sites-administering/aem-as-portal.md#portlet-preferences).
+1. Configure the portlet, as necessary. For example, you may need to change the URL for the author and publish instances and the URL for the start path. Default configurations are described in [Portlet Preferences](/help/sites-administering/aem-as-portal.md#portlet-preferences).
 
    >[!NOTE]
    >

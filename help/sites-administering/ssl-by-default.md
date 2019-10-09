@@ -41,7 +41,7 @@ A service user called **ssl-service **has been created for this feature. Once yo
 
    >[!NOTE]
    >
-   >For info on how to generate a private key and a certificate to use with the wizard, see [this procedure](..//help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) below.
+   >For info on how to generate a private key and a certificate to use with the wizard, see [this procedure](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) below.
 
 1. Lastly, specify the HTTPS hostname and the TCP port for the HTTPS listener.
 
@@ -64,7 +64,7 @@ You can use the following payload in your POST to automate configuration:
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="keystorePassword"
- 
+
 test
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="keystorePasswordConfirm"
@@ -78,11 +78,11 @@ test
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="privatekeyFile"; filename="server.der"
 Content-Type: application/x-x509-ca-cert
- 
+
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="certificateFile"; filename="server.crt"
 Content-Type: application/x-x509-ca-cert
- 
+
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
 Content-Disposition: form-data; name="httpsPort"
 8443
@@ -200,17 +200,17 @@ You can also automate the SSL configuration by using the cURL tool. You can do t
 
 Below are the parameters you can use in order to change the various settings in the configuration wizard:
 
-* `-F "keystorePassword=password"` - the keystore password;  
+* `-F "keystorePassword=password"` - the keystore password;
 
-* `-F "keystorePasswordConfirm=password"` - confirm the keystore password;  
+* `-F "keystorePasswordConfirm=password"` - confirm the keystore password;
 
-* `-F "truststorePassword=password"` - the truststore password;  
+* `-F "truststorePassword=password"` - the truststore password;
 
-* `-F "truststorePasswordConfirm=password"` - confirm the truststore password;  
+* `-F "truststorePasswordConfirm=password"` - confirm the truststore password;
 
-* `-F "privatekeyFile=@localhostprivate.der"` - specify the private key;  
+* `-F "privatekeyFile=@localhostprivate.der"` - specify the private key;
 
-* `-F "certificateFile=@localhost.crt"` - specify the certificate;  
+* `-F "certificateFile=@localhost.crt"` - specify the certificate;
 
 * `-F "httpsHostname=host.example.com"`- specify the hostname;
 * `-F "httpsPort=8443"` - the port the HTTPS listener will work on.
@@ -233,5 +233,5 @@ You can send the servlet a chain of certificates by repeating the certificateFil
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:  
+Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:
 [https://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](https://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)

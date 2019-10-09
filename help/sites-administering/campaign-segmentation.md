@@ -104,7 +104,7 @@ The following segment traits are available out-of-the-box; they can be dragged f
 
 You can combine these traits using the boolean operators OR and AND (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting this segment.
 
-When the entire statement evaluates to true then this segment has resolved. In the event of multiple segments being applicable, then the ** [Boost](..//help/sites-administering/campaign-segmentation.md#boost-factor)** factor is also used.
+When the entire statement evaluates to true then this segment has resolved. In the event of multiple segments being applicable, then the ** [Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor is also used.
 
 >[!CAUTION]
 >
@@ -133,7 +133,7 @@ To define your new segment:
    ![](assets/screen_shot_2012-02-02at103135am.png)
 
 1. Click **OK** to save your definition:
-1. You can **Edit** the segment definition to give it a **Title**, **Description** and ** [Boost](..//help/sites-administering/campaign-segmentation.md#boost-factor)** factor:
+1. You can **Edit** the segment definition to give it a **Title**, **Description** and ** [Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor:
 
    ![](assets/screen_shot_2012-02-02at103547am.png)
 
@@ -160,10 +160,10 @@ As the main operator is OR you need to start with an **OR Container**. Within th
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 
-Once the segment has been defined, potential results can be tested with the help of the ** [Client Context](..//help/sites-administering/client-context.md)**:
+Once the segment has been defined, potential results can be tested with the help of the ** [Client Context](/help/sites-administering/client-context.md)**:
 
 1. Select the segment to be tested.
-1. Press ** [Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** to open the ** [Client Context](..//help/sites-administering/client-context.md)**, which shows the data that has been collected. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
+1. Press ** [Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** to open the ** [Client Context](/help/sites-administering/client-context.md)**, which shows the data that has been collected. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
 
 1. Depending on the traits defined, the data available for the current page may or may not match the segment definition. The status of the match is shown underneath the definition.
 

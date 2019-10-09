@@ -34,14 +34,15 @@ This page helps you extend the functionalities of the Multi Site Manager:
 
 Multi Site Management consists of the following packages:
 
-* [com.day.cq.wcm.msm.api](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.md)
-* [com.day.cq.wcm.msm.commons](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.md)
+* [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 The main MSM API objects interact as follows (see also [Terms Used](/help/sites-administering/msm.md#terms-used)):
 
 ![](assets/chlimage_1-73.png)
 
 * **`Blueprint`**
+
   A `Blueprint` (as in [blueprint configuration](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) specifies the pages from which a live copy can inherit content.
 
   ![](assets/chlimage_1-74.png)
@@ -90,8 +91,8 @@ The main MSM API objects interact as follows (see also [Terms Used](/help/sites-
 
 Create custom synchronization actions to use with your rollout configurations. Create a synchronization action when the [installed actions](/help/sites-administering//msm-sync.md#installed-synchronization-actions) do not meet your specific application requirements. To do so, create two classes:
 
-* An implementation of the [ `com.day.cq.wcm.msm.api.LiveAction`](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.md) interface that performs the action.
-* An OSGI component that implements the [ `com.day.cq.wcm.msm.api.LiveActionFactory`](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.md) interface and creates instances of your `LiveAction` class.
+* An implementation of the [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface that performs the action.
+* An OSGI component that implements the [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface and creates instances of your `LiveAction` class.
 
 The `LiveActionFactory` creates instances of the `LiveAction` class for a given configuration:
 
@@ -114,7 +115,7 @@ Use the `LiveAction` configuration node in the repository to store information t
 
 For example, a `LiveAction` needs to store the name of the blueprint author. A property of the configuration node includes the property name of the blueprint page that stores the information. At runtime, the `LiveAction` retrieves the property name from the configuration, then obtains the property value.
 
-The parameter of the ` [LiveActionFactory](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.md).createAction` method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration; see [Creating a Rollout Configuration](/help/sites-administering//msm-sync.md#creating-a-rollout-configuration). As usual when using a configuration node, you should adapt it to a `ValueMap` object:
+The parameter of the ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration; see [Creating a Rollout Configuration](/help/sites-administering//msm-sync.md#creating-a-rollout-configuration). As usual when using a configuration node, you should adapt it to a `ValueMap` object:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -132,9 +133,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 The following objects are provided as parameters of the `execute` method of the `LiveAction` object:
 
-* A [ `Resource`](/help/sites-developing/reference-materials/javadoc/org/apache/sling/api/resource/Resource.md) object that represents the source of the Live Copy.
+* A [ `Resource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) object that represents the source of the Live Copy.
 * A `Resource` object that represents the target of the Live Copy.
-* The [ `LiveRelationship`](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.md) object for the live copy.
+* The [ `LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) object for the live copy.
 * The `autoSave` value indicates whether your `LiveAction` should save changes that are made to the repository.
 
 * The reset value indicates the rollout reset mode.
@@ -151,7 +152,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->The `Resource` arguments may be `null` or `Resources` objects that do not adapt to `Node` objects, such as [ `NonExistingResource`](/help/sites-developing/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.md) objects.
+>The `Resource` arguments may be `null` or `Resources` objects that do not adapt to `Node` objects, such as [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objects.
 
 ### Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
 
@@ -251,17 +252,11 @@ The following procedure requires that you have added the adobe-public profile to
 1. Specify the following values at interactive prompt:
 
     * `groupId`: `com.adobe.example.msm`
-
     * `artifactId`: `MyLiveActionFactory`
-
     * `version`: `1.0-SNAPSHOT`
-
     * `package`: `MyPackage`
-
     * `appsFolderName`: `myapp`
-
     * `artifactName`: `MyLiveActionFactory package`
-
     * `packageGroup`: `myPackages`
 
 1. Start Eclipse and [import the Maven project](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
@@ -548,7 +543,6 @@ Configure the rollout configuration that you created in the previous procedure s
 1. Create the following node under `/etc/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
     * **Name**: `exampleLiveAction`
-
     * **Type**: `cq:LiveSyncAction`
 
    ![](assets/chlimage_1-75.png)
@@ -557,9 +551,7 @@ Configure the rollout configuration that you created in the previous procedure s
 1. Select the `exampleLiveAction` node and add the following property:
 
     * **Name**: `repLastModBy`
-
     * **Type**: `Boolean`
-
     * **Value**: `true`
 
    This property indicates to the `ExampleLiveAction` class that the `cq:LastModifiedBy` property should be replicated from the source to the target node.
@@ -577,8 +569,8 @@ Configure the rollout configuration that you created in the previous procedure s
 Activate the **Products** (english) page of the source branch and observe the log messages that the `LiveAction` class generates:
 
 ```xml
-16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  *** ExampleLiveAction has been executed.***
-16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  *** Target node lastModifiedBy property updated: admin ***
+16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  ***ExampleLiveAction has been executed.***
+16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  ***Target node lastModifiedBy property updated: admin ***
 ```
 
 ### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}

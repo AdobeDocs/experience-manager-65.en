@@ -19,7 +19,7 @@ Analytics can provide you with important and interesting information about how y
 
 Various out-of-the box configurations are available for integrating with the appropriate service, for example:
 
-* [Adobe Analytics](..//help/sites-administering/adobeanalytics.md)
+* [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
 You can also configure your own instance of the **Generic Analytics Snippets** to define a new service configurations.
@@ -51,10 +51,10 @@ Such snippets enable data to be collected and reports generated. The actual data
 
 >[!CAUTION]
 >
->The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.  
+>The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.
 
 >
->If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.  
+>If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.
 
 >
 >Without this, none of the services (Generic, Analytics, Target, etc) will work.
@@ -63,9 +63,9 @@ Such snippets enable data to be collected and reports generated. The actual data
 
 For the basic configuration:
 
-1. Open the **Tools** console.  
+1. Open the **Tools** console.
 
-1. From the left pane expand **Cloud Services Configurations**.  
+1. From the left pane expand **Cloud Services Configurations**.
 
 1. Double-click on **Generic Analytics Snippet** to open the page:
 
@@ -85,15 +85,15 @@ For the basic configuration:
 
 Having created the service configuration you now need configure the required pages to use it:
 
-1. Navigate to the page.  
+1. Navigate to the page.
 
-1. Open the **Page Properties** from sidekick, then the **Cloud Services** tab.  
+1. Open the **Page Properties** from sidekick, then the **Cloud Services** tab.
 
 1. Click **Add Service**, then select the required service; for example the **Generic Analytics Snippet**:
 
    ![](assets/analytics_selectservice.png)
 
-1. Click **OK** to save.  
+1. Click **OK** to save.
 
 1. You will be returned to the **Cloud Services** tab. The **Generic Analytics Snippet** is now listed with the message `Configuration reference missing`. Use the drop down list to select your specific service instance; for example google-analytics:
 

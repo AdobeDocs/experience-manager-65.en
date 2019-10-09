@@ -32,7 +32,7 @@ The Client Code identifies the Adobe Target customer account when calling the Ad
 
 ## Enabling the Target Replication Agent {#enabling-the-target-replication-agent}
 
-The Test and Target [replication agent](/help/sites-deploying/replication.md) must be enabled on the author instance. Note that this replication agent is not enabled by default if you used the [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) run mode for installing AEM. For more information about securing your production environment, see the [Security Checklist](..//help/sites-administering/security-checklist.md).
+The Test and Target [replication agent](/help/sites-deploying/replication.md) must be enabled on the author instance. Note that this replication agent is not enabled by default if you used the [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) run mode for installing AEM. For more information about securing your production environment, see the [Security Checklist](/help/sites-administering/security-checklist.md).
 
 1. On the AEM home page, click or tap **Tools** &gt; **Deployment** &gt; **Replication**.
 1. Click or tap **Agents On Author**.
@@ -58,7 +58,7 @@ The **cq:ActivitySettings** node under the activity's jcr:content is protected b
 * Allow jcr:read,rep:write for "target-activity-authors" (author is a member of this group out of the box)
 * Allow jcr:read,rep:write for "targetservice"
 
-These settings ensure that normal users do not have access to the node properties. Use the same ACLs on author and on publish. See [User Administration and Security](..//help/sites-administering/security.md) for more information.
+These settings ensure that normal users do not have access to the node properties. Use the same ACLs on author and on publish. See [User Administration and Security](/help/sites-administering/security.md) for more information.
 
 ## Configuring the AEM Link Externalizer {#configuring-the-aem-link-externalizer}
 
@@ -66,7 +66,7 @@ When editing an activity in Adobe Target, the URL points to **localhost** unless
 
 >[!NOTE]
 >
->See also [Add the Cloud Configuration](..//help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
+>See also [Add the Cloud Configuration](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
 To configure the AEM externalizer:
 

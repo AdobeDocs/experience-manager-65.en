@@ -98,7 +98,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
    >5. Save the configuration.
    >6. Test the mac-sync replication agents.
 
-1. In the **[!UICONTROL Client ID]** field, paste the application ID you copied at the end of the procedure [Create an application](..//help/sites-administering/configure-assets-cc-integration.md#create-an-application).
+1. In the **[!UICONTROL Client ID]** field, paste the application ID you copied at the end of the procedure [Create an application](/help/sites-administering/configure-assets-cc-integration.md#create-an-application).
 
    ![Provide the application ID values required to integrate AEM Assets and Creative Cloud](assets/cloudservices_tenant_info.png)
 
@@ -112,11 +112,11 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 
 ## Enable synchronization {#enable-synchronization}
 
-1. Display the public key using one of the following methods mentioned in the last step of the procedure [Add a new configuration to Marketing Cloud](..//help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud). Click **[!UICONTROL Display Public Key]**.
+1. Display the public key using one of the following methods mentioned in the last step of the procedure [Add a new configuration to Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud). Click **[!UICONTROL Display Public Key]**.
 
    ![](assets/chlimage_1-52.png)
 
-1. Copy the public key and paste it into the **[!UICONTROL Public Key]** field of configuration interface of the application you created in [Create an application](..//help/sites-administering/configure-assets-cc-integration.md#create-an-application).
+1. Copy the public key and paste it into the **[!UICONTROL Public Key]** field of configuration interface of the application you created in [Create an application](/help/sites-administering/configure-assets-cc-integration.md#create-an-application).
 
    ![](assets/chlimage_1-53.png)
 

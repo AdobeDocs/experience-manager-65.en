@@ -19,9 +19,9 @@ Closed User Groups (CUGs) are used to limit access to specific pages that reside
 
 To configure such a area within your website you:
 
-* [create the actual closed user group and assign members](#creating-the-user-group-to-be-used).  
+* [create the actual closed user group and assign members](#creating-the-user-group-to-be-used).
 
-* [apply this group to the required pages](#applying-your-closed-user-group-to-content-pages) and select (or create) the login page for use by the members of the CUG; also specified when applying a CUG to a content page.  
+* [apply this group to the required pages](#applying-your-closed-user-group-to-content-pages) and select (or create) the login page for use by the members of the CUG; also specified when applying a CUG to a content page.
 
 * [create a link, of some form, to at least one page within the protected area](#linking-to-the-realm), otherwise it will not be visible.
 * [configure the Dispatcher](#configurethedispatcher) if in use.
@@ -42,7 +42,7 @@ To create a closed user group:
 
    >[!NOTE]
    >
-   >See [Managing Users and Groups](..//help/sites-administering/security.md#managing-users-and-groups) for full information on creating and configuring users and groups.
+   >See [Managing Users and Groups](/help/sites-administering/security.md#managing-users-and-groups) for full information on creating and configuring users and groups.
 
 1. Select the **Groups** card from the next screen.
 
@@ -70,7 +70,7 @@ To apply the CUG to a page:
    ![](assets/screenshot_2018-10-30at162632.png)
 
 1. In the following window, go to the **Advanced** tab.
-1. Scroll down and enable the tickbox in the **Authentication Requirement** section.  
+1. Scroll down and enable the tickbox in the **Authentication Requirement** section.
 
 1. Add your comnfiguration path below, then press Save.
 1. Next, go to the **Permissions** tab and press the **Edit Closed User Group** button.
@@ -80,20 +80,20 @@ To apply the CUG to a page:
    >Note that CUGs in the Permissions tab cannot be rolled back from Blueprints to Live Copies. Please plan around this when configuring Live Copy.
    >
    >
-   >For more information, see [this page](..//help/sites-administering/closed-user-groups.md#aem-livecopy).
+   >For more information, see [this page](/help/sites-administering/closed-user-groups.md#aem-livecopy).
 
    ![](assets/screenshot_2018-10-30at163003.png)
 
 1. Look for and add your CUG in the following window - in this case add the group named **cug_access**. Finally, press **Save**.
 1. Click **Enabled** to define that this page (and any child pages) belong to a CUG.
-1. Specify the **Login Page** that members of the group will use; for example:  
-   `/content/geometrixx/en/toolbar/login.html`   
+1. Specify the **Login Page** that members of the group will use; for example:
+   `/content/geometrixx/en/toolbar/login.html`
    This is optional, if left blank the standard login page will be used.
 1. Add the **Admitted Groups**. Use + to add groups or - to remove. Only members of these groups will be allowed to log in and access the pages.
 1. Assign a **Realm** (a name for the groups of pages) if required. Leave empty to use the page title.
 1. Click **OK** to save the specification.
 
-See [Identity Management](..//help/sites-administering/identity-management.md) for information about profiles in the publish environment and providing forms for logging in and out.
+See [Identity Management](/help/sites-administering/identity-management.md) for information about profiles in the publish environment and providing forms for logging in and out.
 
 ## Linking To The Realm {#linking-to-the-realm}
 
@@ -116,13 +116,13 @@ Configure [session management in the dispatcher.any file](https://helpx.adobe.co
 ```xml
 /sessionmanagement
     ...
-    /header "Cookie:login-token" 
+    /header "Cookie:login-token"
     ...
 ```
 
 >[!NOTE]
 >
->When a Dispatcher farm has session-management enabled, all pages that the farm handles are not cached. To cache pages that are outside of CUG, create a second farm in dispatcher.any  
+>When a Dispatcher farm has session-management enabled, all pages that the farm handles are not cached. To cache pages that are outside of CUG, create a second farm in dispatcher.any
 >that handles the non-CUG pages.
 
 1. Configure [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) by defining `/directory`; for example:

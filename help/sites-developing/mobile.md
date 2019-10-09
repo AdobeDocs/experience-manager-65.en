@@ -68,15 +68,11 @@ Use Multi Site Manager (MSM) to create a mobile live copy from a standard site. 
 
 The Java packages containing the mobile classes are:
 
-* [com.day.cq.wcm.mobile.api](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.md) - defines MobileConstants.
-
-* [com.day.cq.wcm.mobile.api.device](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.md) - defines Device, DeviceGroup and DeviceGroupList.
-
-* [com.day.cq.wcm.mobile.api.device.capability](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.md) - defines DeviceCapability.
-
-* [com.day.cq.wcm.mobile.api.wurfl](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/workflow/api/package-summary.md) - defines WurflQueryEngine.
-
-* [com.day.cq.wcm.mobile.core](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/mobile/core/package-summary.md) - defines MobileUtil, which provides various utility methods revolving around WCM Mobile.
+* [com.day.cq.wcm.mobile.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines MobileConstants.
+* [com.day.cq.wcm.mobile.api.device](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - defines Device, DeviceGroup and DeviceGroupList.
+* [com.day.cq.wcm.mobile.api.device.capability](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines DeviceCapability.
+* [com.day.cq.wcm.mobile.api.wurfl](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - defines WurflQueryEngine.
+* [com.day.cq.wcm.mobile.core](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - defines MobileUtil, which provides various utility methods revolving around WCM Mobile.
 
 ### Mobile Components {#mobile-components}
 

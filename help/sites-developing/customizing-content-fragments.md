@@ -232,7 +232,7 @@ Content fragments can be integrated with:
 
 You can use the server-side API to access your content fragments; see:
 
-` [com.adobe.cq.dam.cfm](/help/sites-developing/reference-materials/javadoc/com/adobe/cq/dam/cfm/package-summary.md)`
+` [com.adobe.cq.dam.cfm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/package-summary.html)`
 
 >[!CAUTION]
 >
@@ -242,7 +242,7 @@ You can use the server-side API to access your content fragments; see:
 
 The following three interfaces can serve as entry points:
 
-* **Fragment Template** ( ` [FragmentTemplate](/help/sites-developing/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.md)`)
+* **Fragment Template** ( ` [FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)`)
 
   Use `FragmentTemplate.createFragment()` for creating a new fragment.
 
@@ -286,7 +286,7 @@ The following three interfaces can serve as entry points:
 
         * Get basic data (name, title, description)
 
-* **Content Fragment** ( ` [ContentFragment](/help/sites-developing/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.md)`)
+* **Content Fragment** ( ` [ContentFragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)`)
 
   This interface allows you to work with a content fragment in an abstract way.
 
@@ -318,7 +318,7 @@ The following three interfaces can serve as entry points:
 
   Interfaces that represent the prime elements of a fragment are:
 
-    * **Content Element** ( ` [ContentElement](/help/sites-developing/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.md)`)
+    * **Content Element** ( ` [ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html)`)
 
         * Get basic data (name, title, description)
         * Get/Set content
@@ -332,7 +332,7 @@ The following three interfaces can serve as entry points:
 
         * Shortcut for resolving variations (applying some additional, implementation-specific fallback logic if the specified variation is not available for an element)
 
-    * **Content Variation** ( ` [ContentVariation](/help/sites-developing/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.md)`)
+    * **Content Variation** ( ` [ContentVariation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)`)
 
         * Get basic data (name, title, description)
         * Get/Set content

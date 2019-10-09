@@ -84,9 +84,9 @@ A community site structure that includes the [Assignments function](/help/commun
 
 ### Reference APIs {#reference-apis}
 
-* [Enablement API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
+* [Enablement API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [Reporting API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [Reporting API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 

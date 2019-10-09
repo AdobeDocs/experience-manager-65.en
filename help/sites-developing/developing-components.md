@@ -112,13 +112,13 @@ The [edit behavior of a component is configured](/help/sites-developing/componen
 
 ## Configuring the Preview Behavior {#configuring-the-preview-behavior}
 
-The [WCM Mode](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.md) cookie is set when switching to **Preview** mode even when the page is not refreshed.
+The [WCM Mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie is set when switching to **Preview** mode even when the page is not refreshed.
 
 For components with a rendering that are sensitive to the WCM Mode, they need to be defined to refresh themselves specifically, then rely on the value of the cookie.
 
 >[!NOTE]
 >
->In the touch-enabeld UI only the values `EDIT` and `PREVIEW` are used for the [WCM Mode](/help/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.md) cookie.
+>In the touch-enabeld UI only the values `EDIT` and `PREVIEW` are used for the [WCM Mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie.
 
 ## Creating and Configuring a Dialog {#creating-and-configuring-a-dialog}
 
@@ -126,9 +126,9 @@ Dialogs are used to allow author to interact with the component. Using a dialog 
 
 ### Coral UI and Granite UI {#coral-ui-and-granite-ui}
 
-[Coral UI](/help/sites-developing/reference-materials/coral-ui/coralui3/index.md) and [Granite UI](/help/sites-developing/reference-materials/granite-ui/api/index.md) define the modern look and feel of AEM.
+[Coral UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) and [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) define the modern look and feel of AEM.
 
-[Granite UI provides a large range of the basic components (widgets)](/help/sites-developing/reference-materials/granite-ui/api/index.md) needed to create your dialog on the authoring environment. When necessary you can extend this selection and [create your own widget](#creatinganewwidget).
+[Granite UI provides a large range of the basic components (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) needed to create your dialog on the authoring environment. When necessary you can extend this selection and [create your own widget](#creatinganewwidget).
 
 For more information on developing components using Coral and Granite resource types see: [Building Experience Manager components using Coral/Granite resource types](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
@@ -138,13 +138,13 @@ For full details see:
 
     * Provides a consistent UI across all cloud solutions
     * [Concepts of the AEM Touch-Enabled UI - Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-    * [Coral UI Guide](/help/sites-developing/reference-materials/coral-ui/coralui3/index.md)
+    * [Coral UI Guide](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite UI
 
     * Provides Coral UI markup wrapped into Sling components for building UI consoles and dialogs
     * [Concepts of the AEM Touch-Enabled UI - Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-    * [Granite UI Documentation](/help/sites-developing/reference-materials/granite-ui/api/index.md)
+    * [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
 >
@@ -207,13 +207,13 @@ To create a new widget for use in a component dialog for the touch-enabled UI re
 
 >[!NOTE]
 >
->For full details about the Granite UI, please see the [Granite UI documentation](/help/sites-developing/reference-materials/granite-ui/api/index.md).
+>For full details about the Granite UI, please see the [Granite UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a new form field requires you to create a resource type; this is equivalent to creating a new component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-More specifically Granite UI provides a range of field components that are suitable for use in dialogs (or, more generally speaking, in [forms](/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.md)).
+More specifically Granite UI provides a range of field components that are suitable for use in dialogs (or, more generally speaking, in [forms](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
 
 >[!NOTE]
 >
@@ -265,7 +265,7 @@ To inject logic into your field, you should:
 1. Have your field marked with a given CSS class (the *hook*).
 1. Define, in your client library a JS listener hooked on that CSS class name (this ensures that your custom logic is scoped to your field only, and does not affect other fields of the same type).
 
-To achieve this you need to know about the underlying widget library with which you want to interact. See the [Coral UI documentation](/help/sites-developing/reference-materials/coral-ui/coralui3/index.md) to identify to which event you want to react. This is very similar to the process that you had to perform with ExtJS in the past: find the documentation page of a given widget, then check the details of its event API.
+To achieve this you need to know about the underlying widget library with which you want to interact. See the [Coral UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) to identify to which event you want to react. This is very similar to the process that you had to perform with ExtJS in the past: find the documentation page of a given widget, then check the details of its event API.
 
 For an example, see:
 
@@ -296,7 +296,7 @@ For an example, see:
 
 #### Field Validation (Granite UI) {#field-validation-granite-ui}
 
-Field validation in Granite UI and the Granite UI Components (equivalent to widgets), is done by using the `foundation-validation` API. [See the `foundation-valdiation` Granite documentation for details.](/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.md)
+Field validation in Granite UI and the Granite UI Components (equivalent to widgets), is done by using the `foundation-validation` API. [See the `foundation-valdiation` Granite documentation for details.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 For examples, see:
 
@@ -454,7 +454,7 @@ When migrating a component that was designed for use with the classic UI to a co
     * The [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) is provided to help you extend existing components.
     * [Mapping ExtJS to Granite UI Components](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) provides a convenient overview of ExtJS xtypes and node types with their equivalent Granite UI resource types.
     * Customizing fields, for more information see the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
-    * Migrate from vtypes to [Granite UI validation](/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.md)
+    * Migrate from vtypes to [Granite UI validation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
     * Using JS listeners, for more information see [Handling Field Events](#handling-field-events) and the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrating cq:listener Code {#migrating-cq-listener-code}

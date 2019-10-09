@@ -145,7 +145,7 @@ Although not directly related to a migration to the touch UI, there are related 
 For full information on developing AEM see the collection of resources under:
 
 * [Developing User Guide](/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/introduction.ug.js)
-* [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites Tutorials and Videos](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 * [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
