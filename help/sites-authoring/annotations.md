@@ -108,6 +108,10 @@ The Annotate mode allows you to create, edit, move or delete annotations on your
 
 1. To exit Annotation mode, and return to the mode previously used, tap/click the Annotate icon (x symbol) at the right of the top toolbar.
 
+>[!NOTE]
+>
+>Annotations can not be added to a page that has been locked by another user.
+
 ### Annotation Indicator {#annotation-indicator}
 
 Annotations do not appear in Edit mode, but the badge at the top right of the toolbar shows how many annotations exist for the current page. The badge replaces the default Annotations icon, but still functions as a quick link that toggles to/from the Annotate mode:

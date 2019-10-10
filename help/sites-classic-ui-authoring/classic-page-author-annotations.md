@@ -60,6 +60,10 @@ The three icons at top left allow you to minimize the annotation (together with 
 >
 >They are not visible on a publish environment, nor in the Preview or Design modes available on an author environment.
 
+>[!NOTE]
+>
+>Annotations can not be added to a page that has been locked by another user.
+
 ## Annotation Sketches {#annotation-sketches}
 
 >[!NOTE]
