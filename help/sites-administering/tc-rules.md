@@ -27,7 +27,7 @@ The file applies to all translation projects.
 
 >[!NOTE]
 >
->After an upgrade to 6.4, it is recommended to move the file from /etc. See [Common Repository Restructuring in AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules) for more details.
+>After an upgrade to 6.4, it is recommended to move the file from /etc. See [Common Repository Restructuring in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules) for more details.
 
 Rules include the following information:
 

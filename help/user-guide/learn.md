@@ -46,4 +46,4 @@ AEM Livefyre is an all-new Adobe Experience Manager capability that lets you tap
 
 ## AEM Foundation {#aem-foundation}
 
-Learn more about the [Adobe Experience Manager 6.4 foundation](/help/sites-deploying/home.md) and our managed services deployment model or dive into some of our [new video introductions to the features in this release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)
+Learn more about the [Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) and our managed services deployment model or dive into some of our [new video introductions to the features in this release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)

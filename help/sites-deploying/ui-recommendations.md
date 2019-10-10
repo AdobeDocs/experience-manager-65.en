@@ -13,7 +13,7 @@ discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
 
 # User Interface Recommendations for Customers{#user-interface-recommendations-for-customers}
 
-Adobe Experience Manager 6.4 comes with two UIs - the unified Experience Cloud UI and the Classic UI.
+Adobe Experience Manager 6.5 comes with two UIs - the unified Experience Cloud UI and the Classic UI.
 
 This document is intended to guide customers to make a choice on what UI to use depending their situation.
 
@@ -41,15 +41,15 @@ Terms of interest:
 
 Over the last few years Adobe has updated all the Adobe Experience Cloud solutions with an unified user interface. Users across the Experience Cloud solutions enjoy a consistant experience with common patterns on how to use and operate the applications. With every release, Adobe has refined it's user interface based on feedback from customers working across the various solutions.
 
-The original user interface for Adobe Experience Manager (previously known as CQ5), introduced in 2008 and used by customers running versions 5.0-5.6.1, is present in AEM 6.4. This guarantees that customers can update to 6.4, and benefit from an updated platform with new capabilities while keep using the same user interface.
+The original user interface for Adobe Experience Manager (previously known as CQ5), introduced in 2008 and used by customers running versions 5.0-5.6.1, is present in AEM 6.5. This guarantees that customers can update to 6.5, and benefit from an updated platform with new capabilities while keep using the same user interface.
 
-Adobe recommends customers to plan to switch to the new UI in 2018/19. This can either be done during the update to 6.4 - or in a separate projects after the update, that would include the necessary adjustments to the customizations and component dialogs.
+Adobe recommends customers to plan to switch to the new UI in 2018/19. This can either be done during the update to 6.5 - or in a separate projects after the update, that would include the necessary adjustments to the customizations and component dialogs.
 
-Adobe does not plan to make further enhancements to the Classic UI starting AEM 6.4. Note that Classic UI remains fully supported while being deprecated.
+Adobe does not plan to make further enhancements to the Classic UI starting AEM 6.5. Note that Classic UI remains fully supported while being deprecated.
 
 ## Rules and Recommendations {#rules-and-recommendations}
 
-The following is a list of recommendations from Product Management for Adobe Experience Manager 6.4:
+The following is a list of recommendations from Product Management for Adobe Experience Manager 6.5:
 
 <table>
  <tbody>
@@ -65,7 +65,7 @@ The following is a list of recommendations from Product Management for Adobe Exp
    <td><p>Has used AEM for a while.</p> <p>Has used the product UI out-of-the-box and developed custom components for the sites.<br /> </p> </td>
    <td>
     <ol>
-     <li>Update to 6.4</li>
+     <li>Update to 6.5</li>
      <li>Use the default UI for site administration, assets, .. etc.<br /> </li>
      <li>Configure the "Edit Page" action to open the classic UI Page Editor. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li>
     </ol> <p>Then, in a second phase:</p>
@@ -77,7 +77,7 @@ The following is a list of recommendations from Product Management for Adobe Exp
    <td>Has built a site that uses the ClientContext with integrations.<br /> </td>
    <td>
     <ol>
-     <li>Update to 6.4</li>
+     <li>Update to 6.5</li>
      <li>Use the default UI for site administration, assets, .. etc.</li>
      <li>Configure the "Edit Page" action to open the classic UI Page Editor. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li>
     </ol> <p>Then, in a second phase:</p>
@@ -88,7 +88,7 @@ The following is a list of recommendations from Product Management for Adobe Exp
   </tr>
   <tr>
    <td><p>Has used CQ/AEM for many years.</p> <p>Has extended the product UI (e.g Site Admin) and built components with extensive edit dialogs.</p> </td>
-   <td><p>Update to 6.4 and configure the classic UI as the default for page authoring for all users. See <a href="#selecting-your-ui">Selecting Your UI</a>.</p> <p>Then start a project to apply customization and optimize component dialogs in Coral 3 format. See <a href="#resources-to-help">Resources to Help</a>.<br /> </p> </td>
+   <td><p>Update to 6.5 and configure the classic UI as the default for page authoring for all users. See <a href="#selecting-your-ui">Selecting Your UI</a>.</p> <p>Then start a project to apply customization and optimize component dialogs in Coral 3 format. See <a href="#resources-to-help">Resources to Help</a>.<br /> </p> </td>
   </tr>
  </tbody>
 </table>

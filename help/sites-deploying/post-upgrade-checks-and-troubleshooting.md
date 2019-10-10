@@ -15,7 +15,7 @@ discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 
 ## Post Upgrade Checks {#post-upgrade-checks}
 
-Following the [In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md) the following activities should be executed to finalize the upgrade. It is assumed AEM has been started with the 6.4 jar and that the upgraded code base has been deployed.
+Following the [In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md) the following activities should be executed to finalize the upgrade. It is assumed AEM has been started with the 6.5 jar and that the upgraded code base has been deployed.
 
 * [Verify logs for upgrade success](#verify-logs-for-upgrade-success)
 
@@ -87,11 +87,11 @@ Perform an initial validation against several pages in AEM. If upgrading an Auth
 
 ### Apply AEM Service Packs {#apply-aem-service-packs}
 
-Apply any relevant AEM 6.4 Service Packs if they have been released.
+Apply any relevant AEM 6.5 Service Packs if they have been released.
 
 ### Migrate AEM Features {#migrate-aem-features}
 
-Several features in AEM require additional steps following the upgrade. A full list of these features and steps to migrate them in AEM 6.4 can be found on the [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md) page.
+Several features in AEM require additional steps following the upgrade. A full list of these features and steps to migrate them in AEM 6.5 can be found on the [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md) page.
 
 ### Verify Scheduled Maintenance Configurations {#verify-scheduled-maintenance-configurations}
 
@@ -121,13 +121,13 @@ Any scheduled jobs as part of the code base can be enabled at this point.
 
 ## Analyzing Issues With The Upgrade {#analyzing-issues-with-upgrade}
 
-This section contains some issue scenarios one might face along the upgrade procedure to AEM 6.4.
+This section contains some issue scenarios one might face along the upgrade procedure to AEM 6.5.
 
 These scenarios should help to track down the root cause of issues related to upgrade and should help to identify project or product specific issues.
 
 ### Recreating the Dynamic Media Cloud Configuration after upgrading {#dynamic-media-cloud-configuration}
 
-After upgrading to AEM 6.4 from an earlier version, the Dynamic Media Cloud Configuration from earlier settings may become inaccessible from the AEM 6.4 TouchUI. To resolve this issue, use CRXDE Lite to remove the earlier settings, then create a new Dynamic Media Cloud Configuration. See also [Dynamic Media repository restructuring in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
+After upgrading to AEM 6.5 from an earlier version, the Dynamic Media Cloud Configuration from earlier settings may become inaccessible from the AEM 6.5 TouchUI. To resolve this issue, use CRXDE Lite to remove the earlier settings, then create a new Dynamic Media Cloud Configuration. See also [Dynamic Media repository restructuring in AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
 
 ### Repository Migration Failing  {#repository-migration-failing-}
 
@@ -149,7 +149,7 @@ In case of bundles not starting up you should check for any unsatisfied dependen
 
 In case this problem is present but it is based on a failed package installation which led to bundles not being upgrade they will be deemed incompatible for the new version. For more info on how to troubleshoot this, see **Packages and Bundles Fail to Update** above.
 
-It is also recommended to compare the bundle list of a fresh AEM 6.4 instance with the upgraded one to detect the bundles that where not upgraded. This will provide a closer scope of what to search for in the `error.log`.
+It is also recommended to compare the bundle list of a fresh AEM 6.5 instance with the upgraded one to detect the bundles that where not upgraded. This will provide a closer scope of what to search for in the `error.log`.
 
 ### Custom Bundles not Switching to the Active State {#custom-bundles-not-switching-to-the-active-state}
 

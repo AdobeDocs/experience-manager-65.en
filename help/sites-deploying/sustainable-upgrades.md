@@ -1,8 +1,8 @@
 ---
 title: Sustainable Upgrades
 seo-title: Sustainable Upgrades
-description: Learn about sustainable upgrades in AEM 6.4.
-seo-description: Learn about sustainable upgrades in AEM 6.4.
+description: Learn about sustainable upgrades in AEM 6.5.
+seo-description: Learn about sustainable upgrades in AEM 6.5.
 uuid: 59d64af5-6ee0-40c8-b24a-c06848f70daa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -75,7 +75,7 @@ Mixins applied in CRXDE Lite will show content nodes and trees that are marked a
 
 **Content Health Check**
 
-AEM 6.4 will ship with a health check to alert customers if overlaid or referenced content is used in a way inconsistent with the content classification.
+AEM 6.5 will ship with a health check to alert customers if overlaid or referenced content is used in a way inconsistent with the content classification.
 
 The **Sling/Granite Content Access Check** is a new health check that monitors the repository to see if customer code is improperly accessing protected nodes in AEM.
 

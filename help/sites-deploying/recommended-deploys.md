@@ -17,7 +17,7 @@ discoiquuid: 5e903df9-6591-46e8-9251-45170c78aa21
 >
 >This page refers to recommended topologies for AEM. For more information on clustering capabilities and how to configure them, see the [Apache Sling Discovery API documentation](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
 
-MicroKernels act as persistence managers in AEM 6.4. Choosing one to fit your needs depends on the purpose of your instance and the deployment type you are considering.
+MicroKernels act as persistence managers in AEM 6.5. Choosing one to fit your needs depends on the purpose of your instance and the deployment type you are considering.
 
 The below examples are meant to be an indication of what are their recommended uses in the most common AEM setups.
 

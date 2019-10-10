@@ -369,7 +369,7 @@ The following detail possible issues together with resolutions:
 
 >[!NOTE]
 >
->In AEM 6.4, [oak-run.jar is the ONLY supported method](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) for re-indexing on MongoMK or RDBMK repositories.
+>In AEM 6.5, [oak-run.jar is the ONLY supported method](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) for re-indexing on MongoMK or RDBMK repositories.
 
 #### Re-indexing Property indexes {#re-indexing-property-indexes}
 

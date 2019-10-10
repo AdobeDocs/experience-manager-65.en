@@ -1,8 +1,8 @@
 ---
-title: Assets Repository Restructuring in AEM 6.4
-seo-title: Assets Repository Restructuring in AEM 6.4
-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Assets.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Assets.
+title: Assets Repository Restructuring in AEM 6.5
+seo-title: Assets Repository Restructuring in AEM 6.5
+description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Assets.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Assets.
 uuid: 0e3d8163-6274-4d1b-91c7-32ca927fb83c
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,13 +10,13 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 ---
 
-# Assets Repository Restructuring in AEM 6.4{#assets-repository-restructuring-in-aem}
+# Assets Repository Restructuring in AEM 6.5{#assets-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.4 should use this page to assess the work effort associated with repository changes impacting the AEM Assets Solution. Some changes require work effort during the AEM 6.4 upgrade process, while others can be deferred until a 6.5 upgrade.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Assets Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a 6.5 upgrade.
 
-**With 6.4 Upgrade**
+**With 6.5 Upgrade**
 
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc)
 
 **Prior to 6.5 Upgrade**
 
@@ -79,7 +79,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
       </ol> </li>
      <li>Remove the folder: <strong><code>/etc/dam/notification/email/default</code></strong> after the e-mail templates within it have been moved.<br />
       <ol>
-       <li>If no updates were made to the e-mail template under<strong> <code>/etc/notification/email/default</code></strong>, the folder can be removed as the orginal e-mail template exists under <strong><code>/libs/settings/notification/email/default</code></strong> as part of AEM 6.4 install.</li>
+       <li>If no updates were made to the e-mail template under<strong> <code>/etc/notification/email/default</code></strong>, the folder can be removed as the orginal e-mail template exists under <strong><code>/libs/settings/notification/email/default</code></strong> as part of AEM 6.5 install.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -142,7 +142,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
       </ol> </li>
      <li>Remove the folder: <code>/etc/dam/workflow/notification/email/downloadasset </code>after the e-mail templates within it have been moved.<br />
       <ol>
-       <li>If no updates were made to the e-mail template under<strong> <code>/etc</code></strong>, the folder can be removed as the orginal e-mail template exists under <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> as part of AEM 6.4 install.</li>
+       <li>If no updates were made to the e-mail template under<strong> <code>/etc</code></strong>, the folder can be removed as the orginal e-mail template exists under <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> as part of AEM 6.5 install.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -183,7 +183,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
       </ol> </li>
      <li>Remove the folder: <strong><code>/etc/dam/adhocassetshare</code></strong> after the e-mail templates within it have been moved.<br />
       <ol>
-       <li>If no updates were made to the e-mail template under<strong> <code>/etc</code></strong>, the folder can be removed as the orginal e-mail template exists under <strong><code>/libs/settings/dam/adhocassetshare</code></strong> as part of AEM 6.4 install.</li>
+       <li>If no updates were made to the e-mail template under<strong> <code>/etc</code></strong>, the folder can be removed as the orginal e-mail template exists under <strong><code>/libs/settings/dam/adhocassetshare</code></strong> as part of AEM 6.5 install.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -212,7 +212,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
     <ol>
      <li>Copy all custom or modified scripts from <strong><code>/etc/dam/indesign/scripts</code></strong> to <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
-       <li>Only copy new or modified scripts as unmodified scripts provided by AEM will be available via <strong><code>/libs/settings</code></strong> in AEM 6.4</li>
+       <li>Only copy new or modified scripts as unmodified scripts provided by AEM will be available via <strong><code>/libs/settings</code></strong> in AEM 6.5</li>
       </ol> </li>
      <li>Locate all Workflow Models that use the Media Extraction Process WF Step and
       <ol>
@@ -242,7 +242,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Restructuring guidance</strong></td>
-   <td><p>Project level customizations need to be cut and pasted under equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</p> <p>To align with the AEM 6.4 repository structure:</p>
+   <td><p>Project level customizations need to be cut and pasted under equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</p> <p>To align with the AEM 6.5 repository structure:</p>
     <ol>
      <li>Copy any modified video configurations from <code>/etc/dam/video</code> to <code>/apps/settings/dam/video</code></li>
      <li>Remove <code>/etc/dam/video</code></li>

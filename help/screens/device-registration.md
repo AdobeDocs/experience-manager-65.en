@@ -24,7 +24,7 @@ The device registration process is done on 2 separate machines:
 
 >[!NOTE]
 >
->Once you download the latest Windows Player (*.exe*), from [**AEM 6.4 Player Downloads**](https://download.macromedia.com/screens/) page, follow the steps on the player to complete the ad-hoc installation:
+>Once you download the latest Windows Player (*.exe*), from [**AEM 6.5 Player Downloads**](https://download.macromedia.com/screens/) page, follow the steps on the player to complete the ad-hoc installation:
 >
 >1. Long-press on the top left corner to open the admin panel.
 >1. Navigate to **Configuration** from the left action menu and enter the location address of the AEM instance in **Server** and click **Save**.

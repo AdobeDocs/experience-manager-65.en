@@ -1,13 +1,13 @@
 ---
-title: AEM 6.4 Best Practices
-seo-title: AEM 6.4 Best Practices
-description: Resources for best practices, troubleshooting and training for AEM 6.4
-seo-description: Resources for best practices, troubleshooting and training for AEM 6.4
+title: AEM 6.5 Best Practices
+seo-title: AEM 6.5 Best Practices
+description: Resources for best practices, troubleshooting and training for AEM 6.5
+seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
-# AEM 6.4 Best Practices {#aem-64-best-practices}
+# AEM 6.5 Best Practices {#aem-64-best-practices}
 
 ## Where can I learn more about training or education for AEM? {#training}
 
@@ -18,7 +18,7 @@ Adobe has a number of key resources to help you get the best from AEM.
 
 The AEM Community is constantly producing example workflows, tutorials and content code samples from suggestions and collaborative work.
 
-* [A full list of AEM 6.4 tutorials and videos is here.](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [A full list of AEM 6.5 tutorials and videos is here.](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [A full list of AEM Community how-ro articles is here.](https://helpx.adobe.com/experience-manager/topics/how-to.html)
 * [A full list of AEM knowledge base articles is here.](https://helpx.adobe.com/experience-manager/kb/index/full_kb_list.html)
 

@@ -21,9 +21,9 @@ Starting with version 6.0, AEM introduced a new user interface referred to as th
 
 While most capabilities are present in the touch-enabled UI, there are features that are not yet complete and will be added in future releases.
 
-The following list shows the current status of the capabilities as implemented in AEM 6.4.
+The following list shows the current status of the capabilities as implemented in AEM 6.5.
 
-For recommendations for customers that upgrade to AEM 6.4, please see [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) for details.
+For recommendations for customers that upgrade to AEM 6.5, please see [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) for details.
 
 >[!NOTE]
 >

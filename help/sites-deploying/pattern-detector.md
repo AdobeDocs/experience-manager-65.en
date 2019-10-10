@@ -18,9 +18,9 @@ discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 This feature allows you to check existing AEM instances for their upgradability by detecting patterns in use that:
 
 1. Violate certain rules and are done in areas that will be affected or overwritten by the upgrade
-1. Use an AEM 6.x feature or an API that is not backwards compatible on AEM 6.4 and can potentially break after upgrade.
+1. Use an AEM 6.x feature or an API that is not backwards compatible on AEM 6.5 and can potentially break after upgrade.
 
-This could serve as an assessment of the development effort that is involved in upgrading to AEM 6.4.
+This could serve as an assessment of the development effort that is involved in upgrading to AEM 6.5.
 
 ## How to Set Up {#how-to-set-up}
 

@@ -56,7 +56,7 @@ For additional details about creating custom data importer services in AEM, read
 
 ### Shutdown takes a long time due to the PollingImporter {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics has been designed with an inheritance mechanism in mind. Usually, you enable Analytics for a site by adding a reference to an Analytics configuration within the page properties [Cloud Services](/help/sites-developing/extending-cloud-config.md) tab. The configuration is then inherited to all sub-pages automatically without the need to reference it again unless a page requires a different configuration. Adding a reference to a site also automatically creates several nodes (12 for AEM 6.3 and earlier or 6 for AEM 6.4) of the type `cq;PollConfig` which instantiates PollingImporters used to import Analytics data into AEM. As a result:
+Analytics has been designed with an inheritance mechanism in mind. Usually, you enable Analytics for a site by adding a reference to an Analytics configuration within the page properties [Cloud Services](/help/sites-developing/extending-cloud-config.md) tab. The configuration is then inherited to all sub-pages automatically without the need to reference it again unless a page requires a different configuration. Adding a reference to a site also automatically creates several nodes (12 for AEM 6.3 and earlier or 6 for AEM 6.4   and later) of the type `cq;PollConfig` which instantiates PollingImporters used to import Analytics data into AEM. As a result:
 
 * Having lots of pages referencing Analytics leads to a high amount of PollingImporters.
 * Additionally, copying and pasting pages with a reference to an Analytics configuration leads to a duplication of its PollingImporters.

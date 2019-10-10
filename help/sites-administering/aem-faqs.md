@@ -1,6 +1,6 @@
 ---
 title: AEM FAQs
-seo-title: AEM 6.4 frequently asked questions
+seo-title: AEM 6.5 frequently asked questions
 description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
 seo-description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
 uuid: af197bcc-2c61-4c64-b781-f24d83c27c82
@@ -72,11 +72,11 @@ Also, if the developers want to export a tree of components they can also implem
 
 [2] [Apache Sling :: Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 
-### How to disable AEM 6.4 survey pop-up? {#how-to-disable-aem-survey-pop-up}
+### How to disable AEM 6.5 survey pop-up? {#how-to-disable-aem-survey-pop-up}
 
 You can opt into usage statistics collection by using either the Touch UI or the Web Console. For detailed instructions, see [Opting into aggregated usage statistics collection](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
-### Is there a good resource that highlights the key features for upgrading to AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
+### Is there a good resource that highlights the key features for upgrading to AEM 6.5? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
 Please refer to [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) that describes high-level breakdown of key features for customers considering upgrading to the latest version of Adobe Experience Manager.
 
@@ -102,11 +102,11 @@ You need to change the JS processor default configs property of the Adobe Granit
 
 If the user, uploading the movie files does not have delete permissions under asset node, the delete chunk nodes fail and the upload restarts.
 
-### What is the maximum number of digital assets that can be operated with AEM 6.4 at a time? {#what-is-the-maximum-number-of-digital-assets-that-can-be-operated-with-aem-at-a-time}
+### What is the maximum number of digital assets that can be operated with AEM 6.5 at a time? {#what-is-the-maximum-number-of-digital-assets-that-can-be-operated-with-aem-at-a-time}
 
 Adobe Experience Manager (AEM) 6.4 currently lets you upload up to 2 GB of assets at a time.
 
-For additional information on maximum number of assets that can be operated with AEM 6.4, see [Assets sizing guide](/help/assets/assets-sizing-guide.md).
+For additional information on maximum number of assets that can be operated with AEM 6.5, see [Assets sizing guide](/help/assets/assets-sizing-guide.md).
 
 ### What are the default settings for OOTB configurations while creating Language Copy? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
@@ -115,7 +115,7 @@ When creating language copies through classic UI, Assets are not moved under the
 Whereas, when you create a language copy through Touch UI (**References** -&gt; **Update Language Copy**), a new DAM folder is created under the new language and assets are referenced from there.
 
 This is default setting for OOTB configurations. You can set **Translate Page Assets** = **Do not translate** in Translation configurations.  
-For AEM 6.4, **Tools** &gt; **Cloud Services** &gt; **Translation Cloud services**.
+For AEM 6.5, **Tools** &gt; **Cloud Services** &gt; **Translation Cloud services**.
 
 ### How to disable an AEM component causing exponential growth for the AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
@@ -125,7 +125,7 @@ As a workaround, you can also manually disable the component either via the UI o
 
 `curl -u admin:$(pass CQ_Admin) 'http://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
 
-### How to configure Asset Insights with AEM 6.4 instance? {#how-to-configure-asset-insights-with-aem-instance}
+### How to configure Asset Insights with AEM 6.5 instance? {#how-to-configure-asset-insights-with-aem-instance}
 
 To setup and configure Asset Insights for Experience Manager deployed via Adobe Activation (DTM), please refer to [Set up Asset Insights with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
 

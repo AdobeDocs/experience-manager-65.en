@@ -246,9 +246,9 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 >
 >Supported relational databases as listed above are third-party software and are not included in the AEM licensing package.
 >
->In order to run AEM 6.4 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care will assist qualifying issues related to the usage of relational databases with AEM 6.4.
+>In order to run AEM 6.5 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care will assist qualifying issues related to the usage of relational databases with AEM 6.5.
 >
->**Please note, that most relational databases are currently supported within Level-R on AEM 6.4, which comes with support criteria and a support program as stated in the Level-R description above.**
+>**Please note, that most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**
 
 ### Servlet Engines / Application Servers {#servlet-engines-application-servers}
 
@@ -330,7 +330,7 @@ For recommendations on how to deploy AEM on Azure or AWS, outside of Adobe Manag
 
 ### Dispatcher Platforms (Web Servers) {#dispatcher-platforms-web-servers}
 
-The Dispatcher is the caching and load balancing component. [Download the latest Dispatcher version](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Experience Manager 6.4 requires Dispatcher version 4.3.1 or higher.
+The Dispatcher is the caching and load balancing component. [Download the latest Dispatcher version](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Experience Manager 6.5 requires Dispatcher version 4.3.1 or higher.
 
 The following web servers are supported for use with Dispatcher version 4.3.1:
 

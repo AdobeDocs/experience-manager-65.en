@@ -56,7 +56,7 @@ The advantages of Editable Templates:
 
 >[!NOTE]
 >
->An AEM Community Article is available explaining how to develop an Experience Manager site with Editable Templates, see [Creating an Adobe Experience Manager 6.4 website using Editable Templates](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
+>An AEM Community Article is available explaining how to develop an Experience Manager site with Editable Templates, see [Creating an Adobe Experience Manager 6.5 website using Editable Templates](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
 
 ### Static Templates {#static-templates}
 
@@ -72,7 +72,7 @@ Static Templates:
 
 >[!NOTE]
 >
->As of AEM 6.4 the use of Static Templates is not considered a best practice. Use Editable Templates instead.
+>As of AEM 6.5 the use of Static Templates is not considered a best practice. Use Editable Templates instead.
 >
 >[AEM Modernization](modernization-tools.md) tools can help you migrate from static to editable templates.
 

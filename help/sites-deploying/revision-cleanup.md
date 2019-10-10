@@ -73,16 +73,16 @@ Due to this fact, it is recommended to size the disk at least two or three times
 
 ## Full And Tail Compaction Modes  {#full-and-tail-compaction-modes}
 
-**AEM 6.4** introduces **two new modes** for the **compaction** phase of the Online Revision Cleanup process:
+**AEM 6.5** introduces **two new modes** for the **compaction** phase of the Online Revision Cleanup process:
 
 * The **full compaction** mode rewrites all the segments and tar files in the whole repository. The subsequent cleanup phase can thus remove the maximum amount of garbage across the repository. Since full compaction affects the whole repository it requires a considerable amount of system resources and time to complete. Full compaction corresponds to the compaction phase in AEM 6.3.
 * The **tail compaction** mode rewrites only the most recent segments and tar files in the repository. The most recent segments and tar files are those that have been added since the last time either full or tail compaction ran. The subsequent cleanup phase can thus only remove the garbage contained in the recent part of the repository. Since tail compaction only affects a part of the repository it requires considerably less system resources and time to complete than full compaction.
 
 These compaction modes constitute a trade-off between efficiency and resource consumption: while tail compaction is less effective it also has less impact on normal system operation. In contrast, full compaction is more effective but has a bigger impact on normal system operation.
 
-AEM 6.4 also introduces a more efficient content deduplication mechanism during compaction, which further reduces the on-disk footprint of the repository.
+AEM 6.5 also introduces a more efficient content deduplication mechanism during compaction, which further reduces the on-disk footprint of the repository.
 
-The two charts below, present results from internal laboratory testing that illustrate the reduction of average execution times and the average footprint on disk in AEM 6.4 compared to AEM 6.3:
+The two charts below, present results from internal laboratory testing that illustrate the reduction of average execution times and the average footprint on disk in AEM 6.5 compared to AEM 6.3:
 
 ![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
@@ -119,7 +119,7 @@ In some cases, alternating between the tail and full compaction modes delays the
 
 ## Online Revision Cleanup Frequently Asked Questions {#online-revision-cleanup-frequently-asked-questions}
 
-### AEM 6.4 Upgrade Considerations {#aem-upgrade-considerations}
+### AEM 6.5 Upgrade Considerations {#aem-upgrade-considerations}
 
 <table>
  <tbody>
@@ -128,8 +128,8 @@ In some cases, alternating between the tail and full compaction modes delays the
    <td>Answers</td>
   </tr>
   <tr>
-   <td>What should I be aware of when I upgrade to AEM 6.4?</td>
-   <td><p>The persistence format of TarMK will change with AEM 6.4. These changes do not require a proactive migration step. Existing repositories will go through a rolling migration, which is transparent to the user. The migration process is initiated the first time AEM 6.4 (or related tools) access the repository.</p> <p><strong>Once the migration to the AEM 6.4 persistence format has been initiated the repository can not be reverted back to the previous AEM 6.3 persistence format.</strong></p> </td>
+   <td>What should I be aware of when I upgrade to AEM 6.5?</td>
+   <td><p>The persistence format of TarMK will change with AEM 6.5. These changes do not require a proactive migration step. Existing repositories will go through a rolling migration, which is transparent to the user. The migration process is initiated the first time AEM 6.5 (or related tools) access the repository.</p> <p><strong>Once the migration to the AEM 6.5 persistence format has been initiated the repository can not be reverted back to the previous AEM 6.3 persistence format.</strong></p> </td>
   </tr>
  </tbody>
 </table>

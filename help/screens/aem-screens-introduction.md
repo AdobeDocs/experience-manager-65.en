@@ -57,7 +57,7 @@ The following figure defines the personas and their roles for AEM Screens.
 
 Before you start working on a Digital Signage project using AEM Screens, Adobe Experience Manager (AEM) knowledge is required and should be completed prior to working on an AEM Screens Project.
 
-Refer to the following tutorials and resources to learn Adobe Experience Manager 6.4 and 6.5:
+Refer to the following tutorials and resources to learn Adobe Experience Manager 6.5 and 6.5:
 
 * **[Adobe Experience Manager Getting Started](https://helpx.adobe.com/experience-manager/get-started.html)**: Discover getting started articles and video tutorials for Adobe Experience Manager.
 * **[AEM 6.5 Tutorials and Videos](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)**: A collection of tutorials and videos highlighting both new and updated capabilities for AEM Sites, Assets, Forms, Screens, and Foundation with the release of AEM 6.5.

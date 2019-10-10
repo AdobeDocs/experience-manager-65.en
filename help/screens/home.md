@@ -1,22 +1,22 @@
 ---
-title: AEM 6.4 Screens User Guide
-seo-title: AEM 6.4 Screens User Guide
+title: AEM 6.5 Screens User Guide
+seo-title: AEM 6.5 Screens User Guide
 description: This guide covers all AEM Screens tasks, such as how to publish dynamic and interactive digital experiences.
 seo-description: This guide covers all AEM Screens tasks, such as how to publish dynamic and interactive digital experiences.
 ---
 
-# AEM 6.4 Screens User Guide
+# AEM 6.5 Screens User Guide
 
 This guide covers all AEM Screens tasks, such as how to publish dynamic and interactive digital experiences.
 
 ## Key AEM articles
 
 * [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [AEM 6.4 Release Notes](/help/release-notes/home.md)
+* [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 user guides
+## AEM 6.5 user guides
 
 | User Guide | Description |
 |--- |---|

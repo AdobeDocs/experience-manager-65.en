@@ -69,7 +69,7 @@ The connector supports the following:
 
 * AEM versions:
 
-    * AEM 6.4, 6.3
+    * AEM 6.5, 6.4, 6.3
 
 * Microsoft SharePoint versions:
 

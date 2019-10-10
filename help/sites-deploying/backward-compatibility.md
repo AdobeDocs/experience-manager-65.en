@@ -1,8 +1,8 @@
 ---
-title: Backward Compatibility in AEM 6.4
-seo-title: Backward Compatibility in AEM 6.4
-description: Learn how to keep your apps and configurations compatible with AEM 6.4
-seo-description: Learn how to keep your apps and configurations compatible with AEM 6.4
+title: Backward Compatibility in AEM 6.5
+seo-title: Backward Compatibility in AEM 6.5
+description: Learn how to keep your apps and configurations compatible with AEM 6.5
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
 uuid: 2fa8525e-7f3b-4096-ac85-01c2c76bc9ac
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
 ---
 
-# Backward Compatibility in AEM 6.4{#backward-compatibility-in-aem}
+# Backward Compatibility in AEM 6.5{#backward-compatibility-in-aem}
 
 ## Overview {#overview}
 
 >[!NOTE]
 >
->For a list of content and configuration changes that are not under the scope the Compatibility Package, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>For a list of content and configuration changes that are not under the scope the Compatibility Package, see [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
-In AEM 6.4, all features have been developed with backwards compatibility in mind.
+In AEM 6.5, all features have been developed with backwards compatibility in mind.
 
 In most cases, customers running AEM 6.3 should not have to change the code or customizations when doing the upgrade. For AEM 6.1 and 6.2 customers there is no additional breaking changes than would be faced during an upgrade to 6.3.
 
@@ -29,17 +29,17 @@ The Compatibility Package allows you to run AEM in compatibility mode and defer 
 
 >[!NOTE]
 >
->Please note that the compatibility package is only a temporary solution to defer development required for being AEM 6.4 compatible, its recommended only as a last option if you are not able to address compatibility issues through development immediately after the upgrade. It is strongly recommended to switch to native mode and uninstall the compatibility package once you decide to proceed with 6.4 based custom development and avail of full 6.4 functionality.
+>Please note that the compatibility package is only a temporary solution to defer development required for being AEM 6.5 compatible, its recommended only as a last option if you are not able to address compatibility issues through development immediately after the upgrade. It is strongly recommended to switch to native mode and uninstall the compatibility package once you decide to proceed with 6.4 based custom development and avail of full 6.4 functionality.
 
 ![screen_shot_2018-04-05at43339pm](assets/screen_shot_2018-04-05at43339pm.png)
 
 The Compatibility Package has two modes: **Routing Enabled** and **Routing Disabled**.
 
-This allows AEM 6.4 to be run in three modes:
+This allows AEM 6.5 to be run in three modes:
 
 **Native Mode:**
 
-Native mode is for customers who want to use all the new features of AEM 6.4 and are ready to do some development to make their customizations work with all new features.
+Native mode is for customers who want to use all the new features of AEM 6.5 and are ready to do some development to make their customizations work with all new features.
 
 This means that you may need to make adjustments in your application immediately after upgrade.
 

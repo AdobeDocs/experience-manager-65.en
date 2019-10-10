@@ -2,16 +2,16 @@
 cloud: experience-cloud
 product: Adobe Experience Manager
 audience: end-user
-user-guide-title: AEM 6.4 Deploying Guide
+user-guide-title: AEM 6.5 Deploying Guide
 ---
 
-# AEM 6.4 Deploying User Guide {#deploying}
+# AEM 6.5 Deploying User Guide {#deploying}
 
 + [Deploying User Guide](home.md)
 + Introduction to the AEM Platform {#introduction}
     + [Introduction to the AEM Platform](platform.md)
     + [Technical Requirements](technical-requirements.md)
-    + [Storage Elements in AEM 6.4](storage-elements-in-aem-6.md)
+    + [Storage Elements in AEM 6.5](storage-elements-in-aem-6.md)
     + [AEM with MongoDB](aem-with-mongodb.md)
 + Deploying AEM {#deploying}
     + [Deploying and Maintaining](deploy.md)
@@ -22,7 +22,7 @@ user-guide-title: AEM 6.4 Deploying Guide
     + [Configuring node stores and data stores in AEM 6](data-store-config.md)
     + [Revision Cleanup](revision-cleanup.md)
     + [How to Run AEM with TarMK Cold Standby](tarmk-cold-standby.md)
-    + [RDBMS Support in AEM 6.4](rdbms-support-in-aem.md)
+    + [RDBMS Support in AEM 6.5](rdbms-support-in-aem.md)
     + [Oak Queries and Indexing](queries-and-indexing.md)
     + [Indexing via the Oak-run Jar](indexing-via-the-oak-run-jar.md)
     + [Oak-run.jar Indexing Use Cases](oak-run-indexing-usecases.md)
@@ -53,11 +53,11 @@ user-guide-title: AEM 6.4 Deploying Guide
     + [Assets Performance Guide](assets-performance-sizing.md)
     + [Configuration How-To Articles](ht-deploy.md)
     + [Removing the Geometrixx Sites](removing-the-geometrixx-sites.md)
-+ Upgrading to AEM 6.4 {#upgrading}
-    + [Upgrading to AEM 6.4](upgrade.md)
++ Upgrading to AEM 6.5 {#upgrading}
+    + [Upgrading to AEM 6.5](upgrade.md)
     + [Planning Your Upgrade](upgrade-planning.md)
     + [Assessing the Upgrade Complexity with the Pattern Detector](pattern-detector.md)
-    + [Backward Compatibility in AEM 6.4](backward-compatibility.md)
+    + [Backward Compatibility in AEM 6.5](backward-compatibility.md)
     + [Upgrade Procedure](upgrade-procedure.md)
     + [Performing an In-Place Upgrade](in-place-upgrade.md)
     + [Lazy Content Migration](lazy-content-migration.md)
@@ -70,14 +70,14 @@ user-guide-title: AEM 6.4 Deploying Guide
     + [Upgrade Steps for Application Server Installations](app-server-upgrade.md)
     + [List of Obsolete Bundles Uninstalled After the Upgrade](obsolete-bundles.md)
 + Repository Restructuring {#restructuring}
-    + [Repository Restructuring in AEM 6.4](repository-restructuring.md)
-    + [Common Repository Restructuring in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
-    + [Sites Repository Restructuring in AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-    + [Assets Repository Restructuring in AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
-    + [Dynamic Media Repository Restructuring in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
-    + [Forms Repository Restructuring in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
-    + [E-Commerce Repository Restructuring in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
-    + [Repository Restructuring for AEM Communities in 6.4](communities-repository-restructuring-in-aem-6-4.md)
+    + [Repository Restructuring in AEM 6.5](repository-restructuring.md)
+    + [Common Repository Restructuring in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
+    + [Sites Repository Restructuring in AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
+    + [Assets Repository Restructuring in AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
+    + [Dynamic Media Repository Restructuring in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+    + [Forms Repository Restructuring in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
+    + [E-Commerce Repository Restructuring in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
+    + [Repository Restructuring for AEM Communities in 6.5](communities-repository-restructuring-in-aem-6-5.md)
 + eCommerce {#ecommerce}
     + [eCommerce Overview](ecommerce.md)
     + [SAP Commerce Cloud](sap-commerce-cloud.md)
