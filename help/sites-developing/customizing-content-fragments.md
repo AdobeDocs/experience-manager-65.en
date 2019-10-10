@@ -398,7 +398,7 @@ It should be noted that:
 
 >[!CAUTION]
 >
->For AEM 6.4 the client-side API is internal.
+>For AEM 6.5 the client-side API is internal.
 
 ### Additional Information {#additional-information}
 

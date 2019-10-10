@@ -1,11 +1,11 @@
 ---
 cloud: experience-cloud
-product: adobe experience manager screens 6.4
-archtype: end-user
-user-guide-title: Adobe Experience Manager Screens 6.4 Help
+product: experience manager
+audience: end-user
+user-guide-title: Adobe Experience Manager Screens 6.5 Help
 ---
 
-# AEM 6.4 Screens User Guide {#screens}
+# AEM 6.5 Screens User Guide {#screens}
 
 + [Screens Overview](home.md)
 + Getting Started {#getting-started}

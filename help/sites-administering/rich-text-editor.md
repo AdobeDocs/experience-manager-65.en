@@ -38,7 +38,7 @@ The Touch-enabled UI is the standard UI for AEM. Adobe introduced Touch UI with 
 **See also**:
 
 * [UI recommendations](/help/sites-deploying/ui-recommendations.md)
-* About deprecating the Classic UI, see [AEM 6.4 Release Notes](/help/release-notes/deprecated-removed-features.md)
+* About deprecating the Classic UI, see [AEM 6.5 Release Notes](/help/release-notes/deprecated-removed-features.md)
 * For difference between the UIs, see [Touch UI and Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
 * To understand the Touch-enabled UI in detail, see [Concepts of AEM Touch UI](/help/sites-developing/touch-ui-concepts.md)
 

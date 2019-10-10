@@ -26,7 +26,7 @@ Additional reference material for [What is AEM Screens?](aem-screens-introductio
 
 To follow along with the videos you will need:
 
-1. **AEM 6.4 GA** or **AEM 6.3** + **Screens Feature Pack1**
+1. **AEM 6.5 GA** or **AEM 6.3** + **Screens Feature Pack1**
 
 1. A Screens Player
 

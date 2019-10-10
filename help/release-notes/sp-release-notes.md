@@ -1,8 +1,8 @@
 ---
 title: AEM 6.5 Service Pack Release Notes
 seo-title: AEM 6.5 Service Pack Release Notes
-description: Release notes specific to Adobe Experience Manager 6.4 Service Packs.
-seo-description: Release notes specific to Adobe Experience Manager 6.4 Service Packs.
+description: Release notes specific to Adobe Experience Manager 6.5 Service Packs.
+seo-description: Release notes specific to Adobe Experience Manager 6.5 Service Packs.
 uuid: 49a710a8-7cd5-47de-9a96-7af7f3c00dfc
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.4

@@ -89,7 +89,7 @@ AEM 6.5 Communities GA ships with Communities package. To know about updates to 
 
 Starting in AEM 6.3, updates to Communities are delivered as part of AEM Cumulative Fix Packs and Service Packs.
 
-For the latest updates to AEM 6.5, be sure to check [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+For the latest updates to AEM 6.5, be sure to check [Adobe Experience Manager 6.5 Cumulative Fix Packs and Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
 ### Version History {#version-history}
 

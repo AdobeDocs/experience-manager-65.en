@@ -30,7 +30,7 @@ As a licensed customer, you can get support for AEM from our [Customer Care team
 
 ## Where is documentation for other versions of AEM? {#versions}
 
-You're in the right place for the latest documentation for AEM 6.4.
+You're in the right place for the latest documentation for AEM 6.5.
 
 We also have documentation for older versions of Adobe Experience Manager. You can use the version component on any page to move between versions, or pick from this list.
 
@@ -48,11 +48,11 @@ We also have documentation for older versions of Adobe Experience Manager. You c
 
 ** Indicates versions no longer officially supported by Adobe.
 
-## Where are AEM 6.4 release notes? {#release-notes}
+## Where are AEM 6.5 release notes? {#release-notes}
 
 You can find all the release notes for AEM here:
 
-* [AEM 6.4 Release Notes](/help/release-notes/home.md)
-* [List of Removed and Deprecated Features in AEM 6.4](/help/release-notes/deprecated-removed-features.md)
+* [AEM 6.5 Release Notes](/help/release-notes/home.md)
+* [List of Removed and Deprecated Features in AEM 6.5](/help/release-notes/deprecated-removed-features.md)
 
 If you have questions you can reach out to our [AEM Community team](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) or ask us on Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).

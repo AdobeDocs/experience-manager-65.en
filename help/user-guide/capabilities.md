@@ -1,17 +1,17 @@
 ---
-title: AEM 6.4 Capabilities User Guide
-seo-title: AEM 6.4 Capabilities User Guide
-description: An overview of the essential capabilities of AEM 6.4
-seo-description: An overview of the essential capabilities of AEM 6.4
+title: AEM 6.5 Capabilities User Guide
+seo-title: AEM 6.5 Capabilities User Guide
+description: An overview of the essential capabilities of AEM 6.5
+seo-description: An overview of the essential capabilities of AEM 6.5
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
-# AEM 6.4 Capabilities User Guides {#aem-64-capabilities-user-guides}
+# AEM 6.5 Capabilities User Guides {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4](/help/sites-deploying/home.md), including our Adobe Managed Services cloud deployment.
+[Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5](/help/sites-deploying/home.md), including our Adobe Managed Services cloud deployment.
 
 [Learn how to manage an AEM project](/help/managing/home.md).
 

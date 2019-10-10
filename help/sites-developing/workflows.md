@@ -37,7 +37,7 @@ Key aspects are covered below, while the following pages cover further details:
 >* For an end-to-end Community Article see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 >* See the [Ask the AEM Experts Webinar on Workflows](https://bit.ly/ATACE218).
 >* For an end-to-end Community Article see [Creating a custom Adobe Experience Manager 6.3 Dynamic Participant step](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html).
->* Changes to the locations of information see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) and [Workflow Best Practices - Locations](/help/sites-developing/workflows-best-practices.md#locations).
+>* Changes to the locations of information see [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) and [Workflow Best Practices - Locations](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
 ## Model {#model}

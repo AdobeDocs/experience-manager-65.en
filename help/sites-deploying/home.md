@@ -1,22 +1,22 @@
 ---
-title: AEM 6.4 Deploying User Guide
-seo-title: AEM 6.4 Deploying User Guide
+title: AEM 6.5 Deploying User Guide
+seo-title: AEM 6.5 Deploying User Guide
 description: This guide covers all AEM Deploying tasks, such as installing and deploying AEM. 
 seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM. 
 ---
 
-# AEM 6.4 Deploying User Guide
+# AEM 6.5 Deploying User Guide
 
 This guide covers all AEM Deploying tasks, such as installing and deploying AEM. 
 
 ## Key AEM articles
 
 * [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [AEM 6.4 Release Notes](/help/release-notes/home.md)
+* [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 user guides
+## AEM 6.5 user guides
 
 | User Guide | Description |
 |--- |---|

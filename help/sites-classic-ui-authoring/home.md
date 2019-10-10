@@ -1,22 +1,22 @@
 ---
-title: AEM 6.4 Classic UI Authoring User Guide
-seo-title: AEM 6.4 Classic UI Authoring User Guide
+title: AEM 6.5 Classic UI Authoring User Guide
+seo-title: AEM 6.5 Classic UI Authoring User Guide
 description: This guide covers the concepts of authoring in AEM in the classic user interface. 
 seo-description: Covers the concepts of authoring in AEM in the classic UI. 
 ---
 
-# AEM 6.4 Classic UI Authoring User Guide
+# AEM 6.5 Classic UI Authoring User Guide
 
 This guide covers the concepts of authoring in AEM in the classic user interface. 
 
 ## Key AEM articles
 
 * [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [AEM 6.4 Release Notes](/help/release-notes/home.md)
+* [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
-## AEM 6.4 user guides
+## AEM 6.5 user guides
 
 | User Guide | Description |
 |--- |---|

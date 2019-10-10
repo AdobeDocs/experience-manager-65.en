@@ -23,20 +23,20 @@ When planning an upgrade the following areas of an implementation need to be inv
 
 ## Overview {#overview}
 
-1. **Pattern Detector** - Run the Pattern Detector as described in upgrade planning and described in detail in [this page](/help/sites-deploying/pattern-detector.md) to get a pattern detector report that contains more details on areas that need to be addressed in addition to the unvailable APIs/bundles in the Target version of AEM. The Pattern Detection report should give you an indication of any incompatibilities in your code, if there are none then your deployment is already 6.4 compatible, you can still choose to do new development for utilizing 6.4 functionality, but you do't need it just for maintaining compatibility. If there are incompatibilities reported then you can choose to either a) Run in compatibility mode and defer your development for new 6.4 features or compatibility, b) Decide to do development after upgrade, and move to step 2. Please see please see [Backward Compatibility in AEM 6.4](/help/sites-deploying/backward-compatibility.md) for more details.
+1. **Pattern Detector** - Run the Pattern Detector as described in upgrade planning and described in detail in [this page](/help/sites-deploying/pattern-detector.md) to get a pattern detector report that contains more details on areas that need to be addressed in addition to the unvailable APIs/bundles in the Target version of AEM. The Pattern Detection report should give you an indication of any incompatibilities in your code, if there are none then your deployment is already 6.4 compatible, you can still choose to do new development for utilizing 6.4 functionality, but you do't need it just for maintaining compatibility. If there are incompatibilities reported then you can choose to either a) Run in compatibility mode and defer your development for new 6.4 features or compatibility, b) Decide to do development after upgrade, and move to step 2. Please see please see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) for more details.
 
 1. **Develop Code Base for 6.4** - Create a dedicated branch or repository for the code base for the Target version. Use info from Pre-Upgrade Compatibility to plan areas of code to update.
 1. **Compile with 6.4 Uber jar** - Update code base POMs to point to 6.4 uber jar and compile code against this.
 1. **Update AEM Customizations** - Any customizations or extensions to AEM should be updated/validated to work in 6.4 and added to the 6.4 code base. Includes UI Search Forms, Assets Customizations, anything using /mnt/overlay
 
-1. **Deploy to 6.4 Environment** - A clean instance of AEM 6.4 (Author + Publish) should be stood up in a Dev/QA environment. Updated code base and a representative sample of content (from current production) should be deployed.
+1. **Deploy to 6.4 Environment** - A clean instance of AEM 6.5 (Author + Publish) should be stood up in a Dev/QA environment. Updated code base and a representative sample of content (from current production) should be deployed.
 1. **QA Validation and Bug fix** - QA should validate the application on both Author and Publish instances of 6.4. Any bugs found should be fixed and committed to the 6.4 code base. Repeat Dev-Cycle as necessary until all bugs are fixed.
 
 Before proceeding with an upgrade you should have a stable application code base that has been thoroughly tested against the target version of AEM. Based on observations made in testing there could be ways to optimize the custom code. This might include refactoring the code to avoid traversing the repository, custom indexing to optimize search, or use of unordered nodes in JCR, amongst others.
 
 In addition to the option of upgrading your code base and customizations to work with the new AEM version, 6.4 also helps manage your customizations more efficiently with the Backward Compatibility feature as described on [this page](/help/sites-deploying/backward-compatibility.md).
 
-As mentioned above and shown in the diagram below,running the [Pattern Detector](/help/sites-deploying/pattern-detector.md) in the first step will help you assess the overall complexity of the upgrade and whether you want to run in compatibility mode or update your customizations to use all the new AEM 6.4 features. Please see the [Backward Compatibility in AEM 6.4](/help/sites-deploying/backward-compatibility.md) page for more details.
+As mentioned above and shown in the diagram below,running the [Pattern Detector](/help/sites-deploying/pattern-detector.md) in the first step will help you assess the overall complexity of the upgrade and whether you want to run in compatibility mode or update your customizations to use all the new AEM 6.5 features. Please see the [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) page for more details.
 [ ![screen_shot_2018-03-30at175257](assets/screen_shot_2018-03-30at175257.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Upgrade the Code Base {#upgrade-code-base}
@@ -77,7 +77,7 @@ Several tools for tools for analyzing and inspecting query performance are avail
 
 ### Classic UI Authoring {#classic-ui-authoring}
 
-Classic UI authoring is still available in AEM 6.4 but is being deprecated. More information can be found [here](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). If your application is currently running on the Classic UI author environment it is recommended to upgrade to AEM 6.4 and continue using the Classic UI. Migration to the Touch UI can then be planned as separate project to be completed over several development cycles. In order to use the Classic UI in AEM 6.4 several OSGi configurations are needed to be committed to the code base. More details on how to configure this can be found [here](/help/sites-administering/enable-classic-ui.md).
+Classic UI authoring is still available in AEM 6.5 but is being deprecated. More information can be found [here](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). If your application is currently running on the Classic UI author environment it is recommended to upgrade to AEM 6.5 and continue using the Classic UI. Migration to the Touch UI can then be planned as separate project to be completed over several development cycles. In order to use the Classic UI in AEM 6.5 several OSGi configurations are needed to be committed to the code base. More details on how to configure this can be found [here](/help/sites-administering/enable-classic-ui.md).
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Classic UI authoring is still available in AEM 6.4 but is being deprecated. More
 
 To make upgrades easier and ensure that configurations are not overwritten during an upgrade, the repository is restructured in 6.4 to separate content from configuration.
 
-Therefore, a number of settings must be moved to no longer reside under `/etc` as had been the case in the past. To review the full set of repository restructuring concerns that must be reviewed and accomodated in the updated to AEM 6.4, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+Therefore, a number of settings must be moved to no longer reside under `/etc` as had been the case in the past. To review the full set of repository restructuring concerns that must be reviewed and accomodated in the updated to AEM 6.5, see [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 ## AEM Customizations  {#aem-customizations}
 
@@ -129,7 +129,7 @@ You can prepare customizations to the Assets UI by doing the following:
 
 ### Generating Asset IDs for Existing Assets {#generating-asset-ids-for-existing-assets}
 
-To generate asset IDs for existing assets, upgrade the assets when you upgrade your AEM instance to run AEM 6.4. This is required to enable the [Assets Insights feature](/help/assets/touch-ui-asset-insights.md). For more details, see [Adding Embed code](/help/assets/touch-ui-using-page-tracker.md#adding-embed-code).
+To generate asset IDs for existing assets, upgrade the assets when you upgrade your AEM instance to run AEM 6.5. This is required to enable the [Assets Insights feature](/help/assets/touch-ui-asset-insights.md). For more details, see [Adding Embed code](/help/assets/touch-ui-using-page-tracker.md#adding-embed-code).
 
 To upgrade assets, configure the Associate Asset IDs package in the JMX console. Depending on the number of assets in the repository, `migrateAllAssets` may take a long time. Our internal tests estimate roughly one hour for 125 thousand assets on TarMK.
 

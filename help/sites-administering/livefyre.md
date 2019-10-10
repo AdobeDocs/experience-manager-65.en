@@ -1,8 +1,8 @@
 ---
 title: Integrating with Livefyre
 seo-title: Integrating with Livefyre
-description: Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.4 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
-seo-description: Learn how to integrate and use Livefyre with AEM 6.4.
+description: Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
+seo-description: Learn how to integrate and use Livefyre with AEM 6.5.
 uuid: c355705d-6e0f-4a33-aa1f-d2d1c818aac0
 contentOwner: ind14750
 content-type: reference
@@ -13,13 +13,13 @@ discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 
 # Integrating with Livefyre{#integrating-with-livefyre}
 
-Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.4 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
+Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 
 ## Getting Started {#getting-started}
 
 ### Install Livefyre Package for AEM {#install-livefyre-package-for-aem}
 
-AEM 6.4 comes with Livefyre feature package 1.2.6 pre-installed. This package only includes limited Livefyre integration with AEM Sites and must be uninstalled before installing an updated package. With the latest package, you can experience the full integration of Livefyre with AEM, including Sites, Assets, and Commerce.
+AEM 6.5 comes with Livefyre feature package 1.2.6 pre-installed. This package only includes limited Livefyre integration with AEM Sites and must be uninstalled before installing an updated package. With the latest package, you can experience the full integration of Livefyre with AEM, including Sites, Assets, and Commerce.
 
 >[!NOTE]
 >

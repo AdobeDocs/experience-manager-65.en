@@ -15,7 +15,7 @@ discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
 
 >[!NOTE]
 >
->This page outlines the upgrade procedure for AEM 6.4. If you have an installation that is deployed to an application server, see [Upgrade Steps for Application Server Installations](/help/sites-deploying/app-server-upgrade.md).
+>This page outlines the upgrade procedure for AEM 6.5. If you have an installation that is deployed to an application server, see [Upgrade Steps for Application Server Installations](/help/sites-deploying/app-server-upgrade.md).
 
 ## Pre-Upgrade Steps {#pre-upgrade-steps}
 

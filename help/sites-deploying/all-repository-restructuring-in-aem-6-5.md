@@ -1,8 +1,8 @@
 ---
-title: Common Repository Restructuring in AEM 6.4
-seo-title: Common Repository Restructuring in AEM 6.4
-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 that are common for all areas of AEM.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 that are common for all areas of AEM.
+title: Common Repository Restructuring in AEM 6.5
+seo-title: Common Repository Restructuring in AEM 6.5
+description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
 uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 ---
 
-# Common Repository Restructuring in AEM 6.4{#common-repository-restructuring-in-aem}
+# Common Repository Restructuring in AEM 6.5{#common-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.4 should use this page to assess the work effort associated with repository changes potentially impacting all solutions. Some changes require work effort during the AEM 6.4 upgrade process, while others can be deferred until a 6.5 upgrade.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes potentially impacting all solutions. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a 6.5 upgrade.
 
 **With 6.4 Upgrade**
 
@@ -62,7 +62,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
    <td><strong>Restructuring guidance</strong></td>
    <td><p>Any new or modified Workflow Models must be migrated to /conf/global/workflow/models.</p>
     <ol>
-     <li>Deploy the modified Workflow Models into a local AEM 6.4 development instance, such that they exist in the Previous location.</li>
+     <li>Deploy the modified Workflow Models into a local AEM 6.5 development instance, such that they exist in the Previous location.</li>
      <li>Edit the Workflow Model using AEM's Workflow Model Editor at AEM &gt; Tools &gt; Workflow &gt; Models.</li>
      <li>When migrating modified AEM-provided Workflow Models
       <ol>

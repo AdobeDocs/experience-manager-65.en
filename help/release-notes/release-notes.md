@@ -1,8 +1,8 @@
 ---
-title: General Release Notes for Adobe Experience Manager 6.4
+title: General Release Notes for Adobe Experience Manager 6.5
 seo-title: Release Notes
-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists. 
-seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists. 
+description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install and detailed change lists. 
+seo-description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install and detailed change lists. 
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 ---
 
-# General Release Notes for Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
+# General Release Notes for Adobe Experience Manager 6.5 {#general-release-notes-for-adobe-experience-manager}
 
 ## Release Information {#release-information}
 
@@ -44,7 +44,7 @@ discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 
 The release cycle for this version of Adobe Experience Manager started April 27, 2017, went through 22 iterations of quality assurance and bug fixing, and ended on March 22nd, 2018. The total number of customer related issues including enhancements and new features fixed in this release is 704.
 
-Adobe Experience Manager 6.4 is generally available since April 4, 2018.
+Adobe Experience Manager 6.5 is generally available since April 4, 2018.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Adobe Experience Manager 6.4 is generally available since April 4, 2018.
 
 ## What's new {#what-s-new}
 
-Adobe Experience Manager 6.4 is an upgrade release to the Adobe Experience Manager 6.3 code base. It provides new and enhanced functionality, key customer fixes, high priority customer enhancements and general bug fixes oriented toward product stabilization. It also includes the majority of all Adobe Experience Manager 6.3 feature packs, hot fix, and service pack releases.
+Adobe Experience Manager 6.5 is an upgrade release to the Adobe Experience Manager 6.3 code base. It provides new and enhanced functionality, key customer fixes, high priority customer enhancements and general bug fixes oriented toward product stabilization. It also includes the majority of all Adobe Experience Manager 6.3 feature packs, hot fix, and service pack releases.
 
 The list below provides an overview - while the subsequent pages list the full details.
 
@@ -60,7 +60,7 @@ The list below provides an overview - while the subsequent pages list the full d
 
 Full list of changes in [AEM Foundation](wcm-platform.md).
 
-The platform of Adobe Experience Manager 6.4 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java Content Repository: Apache Jackrabbit Oak 1.8.2.
+The platform of Adobe Experience Manager 6.5 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java Content Repository: Apache Jackrabbit Oak 1.8.2.
 
 The Quickstart uses Eclipse Jetty 9.3.22 as servlet engine.
 
@@ -353,7 +353,7 @@ The user interface is available in following languages:
 * Traditional Chinese (limited support)
 * Korean
 
-Experience Manager 6.4 has been certified for GB18030-2005 CITS to use the Chinese Encoding Standard.
+Experience Manager 6.5 has been certified for GB18030-2005 CITS to use the Chinese Encoding Standard.
 
 ## Install & Update {#install-update}
 
@@ -373,7 +373,7 @@ Please find the complete matrix of supported platforms incl. Support-Level on [A
 
 Adobe constantly evaluates capabilities in the product and over time plans to replace capabilities with more powerful versions, or decides to re-implemented selected parts to be better prepared for future expectations or extensions.
 
-For Adobe Experience Manager 6.4, [read the list of deprecated and removed capabilities](deprecated-removed-features.md). The page also contains pre-announcement of changes in 2019 and important notice for customers that update from prior releases.
+For Adobe Experience Manager 6.5, [read the list of deprecated and removed capabilities](deprecated-removed-features.md). The page also contains pre-announcement of changes in 2019 and important notice for customers that update from prior releases.
 
 ## Detailed Changes Lists {#detailed-changes-lists}
 

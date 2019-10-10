@@ -63,7 +63,7 @@ Follow these steps in order to configure Audit Log Purging:
 
 In AEM 6.3, if the scheduled maintenance window closes before the Audit Log Purge task can complete, the task stops automatically. It will resume when the next maintenance window opens.
 
-**With AEM 6.4**, you can manually stop a running Audit Log Purge Task by clicking the **Stop** icon. On the next execution the task will safely resume.
+**With AEM 6.5**, you can manually stop a running Audit Log Purge Task by clicking the **Stop** icon. On the next execution the task will safely resume.
 
 >[!NOTE]
 >

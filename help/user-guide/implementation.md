@@ -1,13 +1,13 @@
 ---
-title: AEM 6.4 Implementation User Guide
-seo-title: AEM 6.4 Implementation User Guide
-description: An overview of how to implement AEM 6.4
-seo-description: An overview of how to implement AEM 6.4
+title: AEM 6.5 Implementation User Guide
+seo-title: AEM 6.5 Implementation User Guide
+description: An overview of how to implement AEM 6.5
+seo-description: An overview of how to implement AEM 6.5
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 ---
 
-# AEM 6.4 Implementation User Guides {#aem-64-implementation-user-guides}
+# AEM 6.5 Implementation User Guides {#aem-64-implementation-user-guides}
 
 ## Developing on AEM {#developing-on-aem}
 

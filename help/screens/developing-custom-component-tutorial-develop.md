@@ -25,7 +25,7 @@ This tutorial is intended for developers who are new to AEM Screens. In this tut
 
 To complete this tutorial the following is needed:
 
-1. [AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/release-notes.html) or [AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html) + Latest Screens Feature Pack
+1. [AEM 6.5](https://helpx.adobe.com/experience-manager/6-4/release-notes.html) or [AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html) + Latest Screens Feature Pack
 
 1. [AEM Screens Player](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-screens-introduction.html)
 1. Local Development Environment

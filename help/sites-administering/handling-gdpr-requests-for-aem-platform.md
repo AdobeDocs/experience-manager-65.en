@@ -93,7 +93,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Delete profile nodes and all their children. There are two formats to the profile nodes, depeding on the AEM version:
 
     1. The default private profile under `[!UICONTROL /profile]` 
-    1. `[!UICONTROL /profiles]`, for new profiles created using AEM 6.4.
+    1. `[!UICONTROL /profiles]`, for new profiles created using AEM 6.5.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
