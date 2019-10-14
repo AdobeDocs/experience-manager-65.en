@@ -3,17 +3,17 @@ title: Best practices for HTML5 forms
 seo-title: Best practices for HTML5 forms
 description: Tune your XFA-based HTML5 Forms for best performance.
 seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
-uuid: 739700c7-4f88-4b53-9453-1be6d5bc8432
+uuid: 3804effd-f1f2-4d7a-8e52-717b5c1c62cf
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 content-type: reference
-discoiquuid: a5eba237-3aad-497a-8f77-061d5d3df371
+discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
+docset: aem65
+
 ---
 
-# Best practices for HTML5 forms  {#best-practices-for-html-forms}
-
-Tune your XFA-based HTML5 Forms for best performance.
+# Best practices for HTML5 forms{#best-practices-for-html-forms}
 
 ## Overview {#overview}
 
@@ -71,9 +71,9 @@ Adobe Experience Manager (AEM) forms can help you transform complex transactions
 * [Best practices for Authoring content](/help/sites-authoring/best-practices.md)
 * [Best practices for Administering AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practices for Developing solutions](/help/sites-developing/best-practices.md)
-* [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
+* [Best practices for working with adaptive forms](/forms/using/adaptive-forms-best-practices.md)
 
 ## Quick reference card {#quick-reference-card}
 
 You can print following card (Click card to download a high-resolution version) and keep it on your desk for a quick reference:
-    [ ![HTML5 Forms best practices quick reference card](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[ ![HTML5 Forms best practices quick reference card](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

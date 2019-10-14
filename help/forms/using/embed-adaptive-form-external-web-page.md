@@ -3,111 +3,111 @@ title: Embed adaptive form in external web page
 seo-title: Embed adaptive form in external web page
 description: Learn how to embed an adaptive form in an external web page
 seo-description: Learn how to embed an adaptive form in an external HTML web page
-uuid: c612ca3b-62f7-4021-939b-e0c05dbbf0d7
+uuid: d81032dd-af80-4f4b-a717-ee1b89fd3d3d
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
-discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
+discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
+docset: aem65
+
 ---
 
 # Embed adaptive form in external web page{#embed-adaptive-form-in-external-web-page}
 
-Learn how to embed an adaptive form in an external web page
-
-You can [Embed adaptive form in AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) page or a web page hosted outside AEM. The embedded adaptive form is fully functional and users can fill and submit the form without leaving the page. It helps the user remain in the context of other elements on the web page and simultaneously interact with the form.
+You can [embed adaptive forms in an AEM Sites page](https://chl-author-preview.corp.adobe.com/content/help/en/experience-manager/6-4/forms/using/embed-adaptive-form-aem-sites.html) or a web page hosted outside AEM. The embedded adaptive form is fully functional and users can fill and submit the form without leaving the page. It helps the user remain in the context of other elements on the web page and simultaneously interact with the form..
 
 ## Prerequisites {#prerequisites}
 
-Perform the following steps before embedding an adaptive form to an external website:
+Perform the following steps before embedding an adaptive form to an external website
 
-* Publish the adaptive form on AEM Publish instance.
-* Create or identify a webpage on your website to host the adaptive form. Ensure that the webpage can [read jQuery files from a CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) or has a local copy of the jQuery embeded. jQuery is required to render an adaptive form.
-* When AEM server and the web page are on different domains, perform the steps listed in sectiion, [enable AEM Forms to serve adaptive forms to a cross domain site](#cross-domain-sites).
-* [Setup reverse proxy](#reveseproxy) to enable communication between external page and AEM Forms server.
+* Publish the adaptive form to be embeded to the publish instance of AEM Forms server.  
+* Create or identify a webpage on your website to host the adaptive form. Ensure that the webpage can [read jQuery files from a CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) or has a local copy of the jQuery embeded. jQuery is required to render an adaptive form. 
+* When AEM server and the web page are on different domains, perform the steps listed in sectiion, [enable AEM Forms to serve adaptive forms to a cross domain site](#cross-domain).
 
 ## Embed adaptive form {#embed-adaptive-form}
 
-You can embed an adaptive form by inserting a few lines of JavaScript in the web page. The API in the code sends an HTTP request to the AEM server for adaptive form resources and injects the adaptive form in the specified form container. Here is a sample code to embed an adaptive form to an external page. Don't use the code as it is in a production environment. Customize the code to suit your website like using an iFrame for websites which use their own version of jQuery. Using iFrame helps avoid conflicts within jQuery versions:
+You can embed an adaptive form by inserting a few lines of JavaScript in the web page. The API in the code sends an HTTP request to the AEM server for adaptive form resources and injects the adaptive form in the specified form container.
 
+To embed the adaptive form:
 
-1. Embed the following code to a webpage on your website: 
+1. Create a webpage on your website with the following code:
 
    ```
-  <!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-  <div class="customafsection"/>
-    <p>This section is replaced with the adaptive form.</p>
- 
-     
+   <!doctype html>
+   <html>
+     <head>
+       <title>This is the title of the webpage!</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     </head>
+     <body>
+     <div class="customafsection"/>
+       <p>This section is replaced with the adaptive form.</p>
+
     <script>
     var options = {path:"/content/forms/af/locbasic.html", dataRef:"", themepath:"", CSS_Selector:".customafsection"};
     alert(options.path);
     var loadAdaptiveForm = function(options){
     //alert(options.path);
-    if(options.path) {
-        // options.path refers to the publish URL of the adaptive form
-        // For Example: http:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
-        // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path 
-        var path = options.path;
-        path += "/jcr:content/guideContainer.html";
-        $.ajax({
-            url  : path ,
-            type : "GET",
-            data : {
-                // Set the wcmmode to be disabled
-                wcmmode : "disabled"
-                // Set the data reference, if any
-               // "dataRef": options.dataRef
-                // Specify a different theme for the form object
-              //  "themeOverride" : options.themepath
-            },
-            async: false,
-            success: function (data) {
-                // If jquery is loaded, set the inner html of the container
-                // If jquery is not loaded, use APIs provided by document to set the inner HTML but these APIs would not evaluate the script tag in HTML as per the HTML5 spec
-                // For example: document.getElementById().innerHTML
-                if(window.$ && options.CSS_Selector){
-                    // HTML API of jquery extracts the tags, updates the DOM, and evaluates the code embedded in the script tag.
-                    $(options.CSS_Selector).html(data);
-                }
-            },
-            error: function (data) {
-                // any error handler
-            }
-        });
-    } else {
-        if (typeof(console) !== "undefined") {
-            console.log("Path of Adaptive Form not specified to loadAdaptiveForm");
-        }
-    }
+       if(options.path) {
+           // options.path refers to the publish URL of the adaptive form
+           // For Example: https:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+           // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path 
+           var path = options.path;
+           path += "/jcr:content/guideContainer.html";
+           $.ajax({
+               url  : path ,
+               type : "GET",
+               data : {
+                   // Set the wcmmode to be disabled
+                   wcmmode : "disabled"
+                   // Set the data reference, if any
+                  // "dataRef": options.dataRef
+                   // Specify a different theme for the form object
+                 //  "themeOverride" : options.themepath
+               },
+               async: false,
+               success: function (data) {
+                   // If jquery is loaded, set the inner html of the container
+                   // If jquery is not loaded, use APIs provided by document to set the inner HTML but these APIs would not evaluate the script tag in HTML as per the HTML5 spec
+                   // For example: document.getElementById().innerHTML
+                   if(window.$ && options.CSS_Selector){
+                       // HTML API of jquery extracts the tags, updates the DOM, and evaluates the code embedded in the script tag.
+                       $(options.CSS_Selector).html(data);
+                   }
+               },
+               error: function (data) {
+                   // any error handler
+               }
+           });
+       } else {
+           if (typeof(console) !== "undefined") {
+               console.log("Path of Adaptive Form not specified to loadAdaptiveForm");
+           }
+       }
     }(options);
-     
+    
     </script>
-  </body>
-</html>
+     </body>
+   </html>
    ```
 
 1. In the embedded code:
 
-    * Change value of the `options.path` variable with the path of the publish URL of the adaptive form. If the AEM server is running on a context path, ensure that the URL includes the context path. For example, the above code and adaptive from reside on same aem forms server so the example uses context path of adaptive form /content/forms/af/locbasic.html. 
-    * Replace `options.dataRef` with attributes to pass with the URL. You can use the dataref variable to [prefill an adaptive form](/help/forms/using/prepopulate-adaptive-form-fields.md).
-    * Replace `options.themePath` with the path to a theme other than the theme configured in the adaptive form. Alternatively, you can specify the theme path using the request attribute.
-    * `CSS_Selector` is the CSS selector of the form container in which the adaptive form is embedded. For example, .customafsection css class is the CSS selector in the above example.
+    * Change value of the* options.path* variable with the path of the publish URL of the adaptive form. If the AEM server is running on a context path, ensure that the URL includes the context path. For example, the above code and adaptive from reside on same aem forms server so the example uses context path of adaptive form /content/forms/af/locbasic.html. 
+    * Replace *options.dataRef* with attributes to pass with the URL. You can use the dataref variable to [prefill an adaptive form](/help/forms/using/prepopulate-adaptive-form-fields.md). 
+    
+    * Replace *options.themePath* with the path to a theme other than the theme configured in the adaptive form. Alternatively, you can specify the theme path using the request attribute.
+    * CSS_Selector is the CSS selector of the form container in which the adaptive form is embedded. For example, .customafsection css class is the CSS selector in the above example.
 
 The adaptive form is embedded in the web page. Observe the following in the embedded adaptive form:
 
 * Header and footer in the original adaptive form are not included in the embedded form.
-* Drafts and submitted forms are available in the Drafts and Submissions tab in the Forms Portal.
+* Drafts and submitted forms are available in the Drafts and Submissions tab in the Forms Portal. 
 * Submit action configured on the original adaptive form is retained in the embedded form.
 * Adaptive form rules are retained and fully functional in the embedded form.
-* Experience targeting and A/B tests configured in the original adaptive form do not work in the embedded form.
+* Experience targeting and A/B tests configured in the original adaptive form do not work in the embedded form. 
 * If Adobe Analytics is configured on the original form, the analytics data is captured in Adobe Analytics server. However, it is not available in the Forms analytics report.
 
-## Seup Reverse Proxy  {#reveseproxy}
+## Sample topology {#sample-topology}
 
 The external web page that embeds the adaptive form sends requests to the AEM server, which typically sits behind the firewall in a private network. To ensure that the requests are securely directed to the AEM server, it is recommended to set up a reverse proxy server.
 
@@ -152,14 +152,15 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 When embedding an adaptive form in a web page, consider the following best practices:
 
-* Ensure that the styling rules defined in the web page CSS do not conflict with the form object CSS. To avoid the conflicts, you can reuse the web page CSS in the adaptive form theme using AEM client library. For information about using client library in adaptive form themes, see [Themes in AEM Forms](/help/forms/using/themes.md).
+* Ensure that the styling rules defined in the web page CSS do not conflict with the form object CSS. To avoid the conflicts, you can reuse the web page CSS in the adaptive form theme using AEM client library. For information about using client library in adaptive form themes, see [Themes in AEM Forms](../../forms/using/themes.md).
 * Make the form container in the web page use the entire window width. It ensures that the CSS rules configured for mobile devices work without any changes. If the form container does not take the entire window width, you need to write custom CSS to make the form adapt to different mobile devices. 
 * Use ` [getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client. 
 * Use ` [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
 * Set up the access-control-origin header when sending response from AEM server.
 
-## Enable AEM Forms to serve adaptive forms to a cross domain site  {#cross-domain-sites}
+## Enable AEM Forms to serve adaptive forms to a cross domain site {#cross-site}
 
-1. On AEM author instance, go to AEM Web Console Configuration Manager at `http://[server]:[port]/system/console/configMgr`.
-1. Locate and open the **Apache Sling Referrer** Filter configuration.
-1. In the **Allowed Hosts** field, specify the domain where the web page resides. It enables the host to make POST requests to the AEM server. You can also use regular expression to specify a series of external application domains. 
+1. On AEM author instance, go to AEM Web Console Configuration Manager at https://[server]:[port]/system/console/configMgr.
+1. Locate and open the** Apache Sling Referrer Filter** configuration.
+1. In the Allowed Hosts field, specify the domain where the web page resides. It enables the host to make POST requests to the AEM server. You can also use regular expression to specify a series of external application domains.
+

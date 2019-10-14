@@ -3,14 +3,16 @@ title: Output Service
 seo-title: Output Service
 description: Describes Output Service, which is part of AEM Document Services
 seo-description: Describes Output Service, which is part of AEM Document Services
-uuid: acd64bbb-91df-49bc-9216-2e860812bbe9
+uuid: edddef59-b43c-486f-8734-3f97961ecf4d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 8b96ba2d-007e-472a-875f-2caedd35ecf4
+discoiquuid: 51ab91ff-c0c0-4165-ae02-f306e45eea03
+docset: aem65
+
 ---
 
-# Output Service {#output-service}
+# Output Service{#output-service}
 
 ## Overview {#overview}
 
@@ -29,7 +31,7 @@ Output service enables you to create applications that let you:
 
 ## Creating non-interactive form documents {#creating-non-interactive-form-documents}
 
-![usingoutput_modified](assets/usingoutput_modified.png)
+![](assets/usingoutput_modified.png)
 
 Typically, you create templates using AEM Forms Designer. The `generatePDFOutput` and `generatePrintedOutput` APIs of the Output service let you directly convert these templates to various formats, including PDF, PostScript, ZPL, and PCL.
 

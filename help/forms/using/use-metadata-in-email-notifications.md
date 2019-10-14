@@ -3,20 +3,20 @@ title: Use metadata in an email notification
 seo-title: Use metadata in an email notification 
 description: Use metadata to populate information in a forms workflow email notification
 seo-description: Use metadata to populate information in a forms workflow email notification
-uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
+uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
-discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
+discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
+docset: aem65
+
 ---
 
-# Use metadata in an email notification  {#use-metadata-in-an-email-notification}
+# Use metadata in an email notification {#use-metadata-in-an-email-notification}
 
-Use metadata to populate information in a forms workflow email notification
-
-You can use the Assign Task step to create and assign tasks to a user or group. When a task is assigned to a user or group, an email notification is sent to the defined user or to each member of the defined group. A typical [email notification](/help/forms/using/use-custom-email-template-assign-task-step.md) contains link of the assigned task and information related to the task.
+You can use the Assign Task step to create and assign tasks to a user or group. When a task is assigned to a user or group, an email notification is sent to the defined user or to each member of the defined group. A typical [email notification](../../forms/using/use-custom-email-template-assign-task-step.md) contains link of the assigned task and information related to the task.
 
 You can use metadata in an email template to dynamically populate information in an email notification. For example, the value of the title, description, due date, priority, workflow, and last date in the following email notification is selected dynamically at the runtime (when an email notification is generated). 
 
-![default-email-template](assets/default-email-template.png)
+![Default email template](assets/default_email_template_metadata_new.png)
 
 Metadata is stored in key-value pairs. You can specify the key in the email template and the key is replaced with a value at the runtime (when an email notification is generated). For example, in the below code sample, "$ {workitem_title} " is a key. It is replaced with value “Loan-Request” at the runtime.
 
@@ -24,50 +24,50 @@ Metadata is stored in key-value pairs. You can specify the key in the email temp
 subject=Task Assigned - ${workitem_title}
 
 message=<html><body>\n\
- <table>\n\
+ <table style="width: 480px; font-family: Helvetica, Arial, sans-serif; border: 0; padding: 0; vertical-align: top; text-align: left; word-wrap: break-word; margin: 16px auto; color:#323232; background-color:#FFFCF9; border-collapse: collapse;">\n\
   <tbody>\n\
    <tr>\n\
-    <td>\n\
+    <td style="height: 100px; width: 480px; background-color: #FFE0CB; border-top: 5pt solid black; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 15px; line-height: 20px; padding: 12px; color: #707070;">\n\
       Sample Company\n\
     </td>\n\
    </tr>\n\
    <tr>\n\
-    <td>\n\
+    <td style="font-family: Helvetica, Arial, sans-serif; height: auto; background-color: #FFFCF9; padding: 32px 16px 20px 16px; ">\n\
      <pre style="font-size: 13px; font-family: Helvetica, Arial, sans-serif;  font-weight: normal; color: #323232;"> Hello ${workitem_assignee},\n\
  The following task has been assigned to you:</pre>\n\
     </td>\n\
    </tr>\n\
    <tr>\n\
-    <td>\n\
-     <table>\n\
+    <td style="width: 480px;">\n\
+     <table style="height: auto; width: 480px; background-color:#FFFBF9; font-family: Helvetica, Arial, sans-serif; border-collapse: collapse;">\n\
       <tbody>\n\
        <tr style="border-bottom: solid 2px #FFFCF9;">\n\
-        <td> TITLE</td>\n\
-        <td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; width: auto; height: auto; background-color:#FFF5EF; font-weight: bold; font-size: 11px; line-height: 20px; padding: 12px; color: #707070;"> TITLE</td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; background-color:#FFF5EF; text-align: left; vertical-align: middle; height: auto; font-weight: normal; font-size: 13px; line-height: 20px; padding: 10px 16px 10px 32px; color: #323232;">\n\
          <p>${workitem_title}</p>\n\
         </td>\n\
        </tr>\n\
                             <tr style="border-bottom: solid 2px #FFFCF9;">\n\
-        <td> DESCRIPTION</td>\n\
-        <td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; width: auto; height: auto; background-color:#FFF5EF; font-weight: bold; font-size: 11px; line-height: 20px; padding: 12px; color: #707070;"> DESCRIPTION</td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; background-color:#FFF5EF; text-align: left; vertical-align: middle; height: auto; font-weight: normal; font-size: 13px; line-height: 20px; padding: 10px 16px 10px 32px; color: #323232;">\n\
          <p>${workitem_description}</p>\n\
         </td>\n\
        </tr>\n\
        <tr style="border-bottom: solid 2px #FFFCF9;">\n\
-        <td> DUE DATE</td>\n\
-        <td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; width: auto; height: auto; background-color:#FFF5EF; font-weight: bold; font-size: 11px; line-height: 20px; padding: 12px; color: #707070;"> DUE DATE</td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; background-color:#FFF5EF; text-align: left; vertical-align: middle; height: auto; font-weight: normal; font-size: 13px; line-height: 20px; padding: 10px 16px 10px 32px; color: #323232;">\n\
          <p>${workitem_due_date}</p>\n\
         </td>\n\
        </tr>\n\
        <tr style="border-bottom: solid 2px #FFFCF9;">\n\
-        <td> PRIORITY</td>\n\
-        <td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; width: auto; height: auto; background-color:#FFF5EF; font-weight: bold; font-size: 11px; line-height: 20px; padding: 12px; color: #707070;"> PRIORITY</td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; background-color:#FFF5EF; text-align: left; vertical-align: middle; height: auto; font-weight: normal; font-size: 13px; line-height: 20px; padding: 10px 16px 10px 32px; color: #323232;">\n\
          <p>${workitem_priority}</p>\n\
         </td>\n\
        </tr>\n\
        <tr>\n\
-        <td> WORKFLOW</td>\n\
-        <td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; width: auto; height: auto; background-color:#FFF5EF; font-weight: bold; font-size: 11px; line-height: 20px; padding: 12px; color: #707070;"> WORKFLOW</td>\n\
+        <td style="font-family: Helvetica, Arial, sans-serif; background-color:#FFF5EF; text-align: left; vertical-align: middle; height: auto; font-weight: normal; font-size: 13px; line-height: 20px; padding: 10px 16px 10px 32px; color: #323232;">\n\
          <p>${workitem_workflow}</p>\n\
         </td>\n\
        </tr>\n\
@@ -76,13 +76,13 @@ message=<html><body>\n\
     </td>\n\
    </tr>\n\
    <tr style = "text-align: center; vertical-align: middle;">\n\
-    <td> \n\
+    <td style="padding:48px 0 72px 0;"> \n\
      <a href="${workitem_url}" target="_blank" style="background-color: #1EBBBB; font-size: 18px; line-height: 25px; font-weight: bold; color: #FFFFFF; text-decoration: none; padding: 15px 15px 15px 15px;">Open Task</a>\n\
     </td>\n\
    </tr>\n\
    <tr>\n\
-    <td>\n\
-     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Please do not reply to this email.</span></p>\n\
+    <td style="border-top: solid 1px #EDEAE7; padding: 16px;">\n\
+     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Please do not reply to this email.</code></p>\n\
     </td>\n\
    </tr>\n\
   </tbody>\n\
@@ -95,7 +95,7 @@ message=<html><body>\n\
 
 An AEM Forms application provides several metadata variables (key-value pairs) out of the box. You can use these variables in an email template. The value of the variable is based on the associated forms application. The following table lists all the metadata variables available out of the box:
 
-<table> 
+<table>
  <tbody> 
   <tr> 
    <td>Key</td> 
@@ -152,7 +152,7 @@ You can also use custom metadata in an email notification. Custom metadata conta
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is a scripting language. It is used for client-side scripting and server applications. Perform the following steps to use ECMAScript to add custom metadata for an email template:
 
-1. Log in to CRX DE with an administrative account. The URL is `https://[server]:[port]/crx/de/index.jsp`
+1. Log in to CRX DE with an administrative account. The URL is https://[server]:[port]/crx/de/index.jsp  
 
 1. Navigate to /apps/fd/dashboard/scripts/metadataScripts. Create a file with extension .ecma. For example, usermetadata.ecma
 
@@ -175,7 +175,7 @@ You can also use custom metadata in an email notification. Custom metadata conta
 
 1. Click Save All. Now, the script is available for selection in AEM workflow model.
 
-   ![assigntask-metadata](assets/assigntask-metadata.png)
+   ![](assets/assigntask-metadata.png)
 
 1. (Optional) Specify the title of the script:
 

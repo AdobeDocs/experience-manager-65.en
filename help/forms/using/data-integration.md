@@ -3,16 +3,16 @@ title: AEM Forms Data Integration
 seo-title: AEM Forms Data Integration
 description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
-uuid: 58f65ae0-cf54-4249-92c7-64b557e30491
+uuid: 01df045e-1b26-437c-9674-fd223ecd5097
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
-discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
+discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
+docset: aem65
+
 ---
 
-# Introduction to AEM Forms Data Integration {#aem-forms-data-integration}
-
-Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
+# AEM Forms Data Integration{#aem-forms-data-integration}
 
  ![](do-not-localize/data-integeration.png)
 
@@ -24,7 +24,7 @@ While a distributed, modular system has its own benefits, the challenge lies in 
 
 ## Data Integration overview {#data-integration-overview}
 
-![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
+![](assets/aem-forms-data-integeration.png)
 
 AEM Forms Data Integration allows configuring and connecting disparate data sources with AEM Forms. It provides an intuitive user interface to create a unified data representation schema of business entities and services across connected data sources. The unified representation is known as a form data model, an extension of JSON schema. The entities in a form data model are referred to as data model objects. A form data model allows you to:
 
@@ -48,8 +48,8 @@ AEM Forms also allows you to create a form data model independent of data source
 
 Review the following to get started, understand, and implement data integration.
 
-* [Configure data sources](/help/forms/using/configure-data-sources.md)
-* [Create form data model](/help/forms/using/create-form-data-models.md)
-* [Work with form data model](/help/forms/using/work-with-form-data-model.md)
-* [Use form data model](/help/forms/using/using-form-data-model.md)
+* [Configure data sources](../../forms/using/configure-data-sources.md)
+* [Create form data model](../../forms/using/create-form-data-models.md)
+* [Work with form data model](../../forms/using/work-with-form-data-model.md)
+* [Use form data model](../../forms/using/using-form-data-model.md)
 

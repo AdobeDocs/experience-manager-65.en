@@ -1,15 +1,17 @@
 ---
 title: Create an adaptive form using a set of adaptive forms
 seo-title: Create an adaptive form using a set of adaptive forms
-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
-seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
-uuid: 1423038b-8261-455b-b4ff-7be7222448c9
+description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features. 
+seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features. 
+uuid: e52e4f90-8821-49ec-89ff-fbf07db69bd2
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
+discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
+docset: aem65
+
 ---
 
-# Create an adaptive form using a set of adaptive forms {#create-an-adaptive-form-using-a-set-of-adaptive-forms}
+# Create an adaptive form using a set of adaptive forms{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
 ## Overview {#overview}
 
@@ -17,7 +19,7 @@ In a workflow, such as an application for opening a bank account, your users fil
 
 Features available are:
 
-* Independent authoring
+* Independent authoring  
 * Showing/hiding appropriate forms
 * Lazy loading
 
@@ -29,7 +31,7 @@ Features like independent authoring and lazy loading provide performance improve
 
 ## Behind the scenes {#behind-the-scenes}
 
-You can add XSD-based adaptive forms and fragments in the parent form. The structure of the parent form is same as [any adaptive form](/help/forms/using/prepopulate-adaptive-form-fields.md). When you add an adaptive form as a child form, it is added as a panel in the parent form. Data of a bound child form is stored under the `data`root of the `afBoundData` section of the parent form's XML schema.
+You can add XSD-based adaptive forms and fragments in the parent form. The structure of the parent form is same as [any adaptive form](../../forms/using/prepopulate-adaptive-form-fields.md). When you add an adaptive form as a child form, it is added as a panel in the parent form. Data of a bound child form is stored under the `data`root of the `afBoundData` section of the parent form's XML schema.
 
 For example, your customers fill an application form. First two fields of the form are name and identity. Its XML is:
 
@@ -136,9 +138,9 @@ You can add an adaptive form as a child form multiple times. Ensure that the `bi
 Perform the following steps to add an adaptive form as a child form using asset browser.
 
 1. Open the parent form in edit mode.
-1. In the sidebar, click **Assets** ![assets-browser](assets/assets-browser.png). Under Assets, select **Adaptive Form** from the drop-down.
-    [ ![Selecting adaptive form under Assets](assets/asset.png)](assets/asset-1.png)
+1. In the sidebar, click **Assets** ![](assets/assets-browser.png). Under Assets, select **Adaptive Form** from the drop-down.
+   [ ![Selecting adaptive form under Assets](assets/asset.png)](assets/asset-1.png)
 
-1. Drag-drop the adaptive form you want to add as a child form.
-    [ ![Drag-drop the adaptive form in your site](assets/drag-drop.png)](assets/drag-drop-1.png)The adaptive form you drop is added as a child form.
+1. Drag-drop the adaptive form you want to add as a child form. 
+   [ ![Drag-drop the adaptive form in your site](assets/drag-drop.png)](assets/drag-drop-1.png)The adaptive form you drop is added as a child form.
 

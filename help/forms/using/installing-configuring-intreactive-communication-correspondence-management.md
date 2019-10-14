@@ -1,14 +1,16 @@
 ---
 title: Install and configure Interactive Communications
 seo-title: Install and configure Interactive Communications
-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits. 
-seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits. 
-uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
+description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
+uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
-discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
+discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
+docset: aem65
+
 ---
 
-# Install and configure Interactive Communications {#install-and-configure-interactive-communications}
+# Install and configure Interactive Communications{#install-and-configure-interactive-communications}
 
 ## Introduction {#introduction}
 
@@ -16,15 +18,15 @@ AEM Form has a capability to centralize creation, assembly, management and deliv
 
 You can use the interactive communication capability to produce communication in multiple formats. For example, web and PDF. You can integrate interactive communication with AEM Workflow to process and deliver the assembled communication to customers on the channel of their choice. For example, sending a communication to end user through email.
 
-If you are upgrading from a previous version and have already invested in correspondence management, you can install the [compatibility package](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) to continue using correspondence management. For information about the differences between interactive communication and correspondence management, see [Interactive Communication Overview](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
+If you are upgrading from a previous version and have already invested in correspondence management, you can install the [compatibility package](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) to continue using correspondence management. For information about the differences between interactive communication and correspondence management, see [Interactive Communication Overview](/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
-AEM Forms is a powerful enterprise-class platform. Interactive communication is only one of the capability of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms is a powerful enterprise-class platform. Interactive communication is only one of the capability of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 ## Deployment Topology {#deployment-topology}
 
-AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author and Processing instance to run the Interactive Communications capability. The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author and Processing instance to run the Interactive Communications capability. The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/forms/using/aem-forms-architecture-deployment.md).
 
-![recommended-topology](assets/recommended-topology.png)
+![](assets/recommended-topology.png)
 
 AEM Forms Interactive Communications run admin, authoring, and agent user interfaces on the Author instances of AEM Forms. The Publish instances host final version of interactive communications which are ready for consumption by end-users.
 
@@ -32,13 +34,14 @@ AEM Forms Interactive Communications run admin, authoring, and agent user interf
 
 Before you begin to install and configure interactive communication and correspondence management capabilities of AEM Forms, ensure that:
 
-* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).  
+* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least one AEM instances (Author or Processing) to run AEM Forms interactive communication and correspondence management capabilities:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
-    * **Processing:** A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation. 
+    * **Processing:** A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.
+
     * **Publish**: An AEM instance that serves the published content to the public over the Internet or an internal network.
 
 * Memory requirements are met. AEM Forms add-on package requires:
@@ -48,41 +51,41 @@ Before you begin to install and configure interactive communication and correspo
 
 * Extra requirements for UNIX-based systems: If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>expat</td> 
-   <td>libxcb</td> 
-   <td>freetype</td> 
-   <td>libXau</td> 
-  </tr> 
-  <tr> 
-   <td>libSM</td> 
-   <td>zlib</td> 
-   <td>libICE</td> 
-   <td>libuuid</td> 
-  </tr> 
-  <tr> 
-   <td>glibc</td> 
-   <td>libXext</td> 
-   <td><p>nss-softokn-freebl</p> </td> 
-   <td>fontconfig</td> 
-  </tr> 
-  <tr> 
-   <td>libX11</td> 
-   <td>libXrender</td> 
-   <td>libXrandr</td> 
-   <td>libXinerama</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>expat</td>
+   <td>libxcb</td>
+   <td>freetype</td>
+   <td>libXau</td>
+  </tr>
+  <tr>
+   <td>libSM</td>
+   <td>zlib</td>
+   <td>libICE</td>
+   <td>libuuid</td>
+  </tr>
+  <tr>
+   <td>glibc</td>
+   <td>libXext</td>
+   <td><p>nss-softokn-freebl</p> </td>
+   <td>fontconfig</td>
+  </tr>
+  <tr>
+   <td>libX11</td>
+   <td>libXrender</td>
+   <td>libXrandr</td>
+   <td>libXinerama</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms interactive communication, correspondence management, and other capabilities. Perform the following steps to install the add-on package:
 
-1. Log in to the [AEM server](http://localhost:4502) as an administrator and open [package share](http://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
-1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
+1. Log in to the [AEM server](https://localhost:4502) as an administrator and open [package share](https://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
+1. In [AEM package share](https://localhost:4502/crx/packageshare/login.html), search **AEM 6.5 Forms add-on packages **or** latest service packs**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded **appears next to the package.
 
    You can also use the version number to search an add-on package. For version number of the latest package, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
 
@@ -122,7 +125,7 @@ Perform the following steps on all the Author and Publish instances to boot dele
 
 Perform the following steps on all the Author and Publish instances to whitelist the package:
 
-1. Open AEM Configuration Manager in a browser window. The default URL is `https://[server]:[port]/system/console/configMgr`.
+1. Open AEM Configuration Manager in a browser window. The default URL is https://[server]:[port]/system/console/configMgr.
 1. Search and open **Deserialization Firewall Configuration**.
 1. Add the **sun.util.calendar **package to the **whitelist **field. Click Save.
 1. Repeat steps 1-3 on all the Author and Publish instances.
@@ -133,9 +136,9 @@ Perform the following steps on all the Author and Publish instances to whitelist
 
 Interactive communication is the default and recommended approach to create customer communications in AEM 6.5 Forms. If you have upgraded or migrated from a previous version, and plan to continue using letters (Correspondence Management), install the [AEMFD Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
-The AEMFD Compatibility package allows you to use the following assets from AEM 6.3 Forms and AEM 6.2 Forms on AEM 6.5 Forms:
+The AEMFD Compatibility package allows you to use the following assets from AEM 6.4 Forms, AEM 6.3 Forms, and AEM 6.2 Forms on AEM 6.5 Forms:
 
-* Document fragments  
+* Document fragments
 * Letters
 * Data dictionaries
 * Adaptive forms deprecated templates and pages
@@ -154,13 +157,13 @@ Dispatcher is caching and load balancing tool for AEM. AEM Dispatcher also helps
 
 1. Configure the referrer filter service:
 
-   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is `https://[server]:[port_number]/system/console/configMgr`. In the **Configurations** menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is `https://[server]:[port]`.
+   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. In the **Configurations **menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is https://[server]:[port].
 
 #### Integrate Adobe Target {#integrate-adobe-target}
 
 Your customers are likely to abandon an interactive communication if the experience it delivers is not engaging. While it is frustrating for the customers, it can also upturn the support volume and cost for your organization. It is critical and challenging to identify and provide the right customer experience that increases the conversion rate. AEM forms holds the key to this problem.
 
-AEM forms integrates with Adobe Target, an Adobe Marketing Cloud solution, to deliver personalized and engaging customer experiences across multiple digital channels. To use Adobe Target to personalize an interactive communication, [Integrate Adobe Target with AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM forms integrates with Adobe Target, an Adobe Marketing Cloud solution, to deliver personalized and engaging customer experiences across multiple digital channels. To use Adobe Target to personalize an interactive communication, [Integrate Adobe Target with AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 #### Configure SSL communcation for Form Data Model  {#configure-ssl-communcation-for-form-data-model}
 
@@ -172,9 +175,9 @@ You can enable SSL communication for Form Data Model. To enable SSL communicatio
 
 You have configured an environment to use interactive communication and correspondence management capabilities. Now, the steps towards using the capability are:
 
-* [Correspondence management overview](/help/forms/using/interactive-communications-overview.md)  
+* [Correspondence management overview](/forms/using/interactive-communications-overview.md)
 
-* [Create an interactive communication](/help/forms/using/create-interactive-communication.md)  
+* [Create an interactive communication](../../forms/using/create-interactive-communication.md)
 
-* [Create a correspondence management letter](/help/forms/using/create-letter.md)
+* [Create a correspondence management letter](../../forms/using/create-letter.md)
 

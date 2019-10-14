@@ -3,18 +3,20 @@ title: Sending a form submission acknowledgement via email
 seo-title: Sending a form submission acknowledgement via email
 description: AEM Forms allows you to configure the email submit action that sends an acknowledgement to a user on submitting the form.
 seo-description: AEM Forms allows you to configure the email submit action that sends an acknowledgement to a user on submitting the form.
-uuid: 77b3c836-6011-48bd-831c-ebc214218efb
+uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
+discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
+docset: aem65
+
 ---
 
-# Sending a form submission acknowledgement via email {#sending-a-form-submission-acknowledgement-via-email}
+# Sending a form submission acknowledgement via email{#sending-a-form-submission-acknowledgement-via-email}
 
 ## Adaptive form data submission {#adaptive-form-data-submission}
 
-Adaptive forms provides several out-of-the-box [submit actions](/help/forms/using/configuring-submit-actions.md) workflows for submitting the form data to different endpoints.
+Adaptive forms provides several out-of-the-box [submit actions](../../forms/using/configuring-submit-actions.md) workflows for submitting the form data to different endpoints.
 
 For example, the **Email action **submit action sends an email on successful submission of an adaptive form. It can also be configured to send the form data and the PDF in the email.
 
@@ -30,13 +32,13 @@ The Email action enables an author to send email automatically to one or more re
 
 >[!NOTE]
 >
->To use the Email action, you need to configure the AEM mail service as described in [Configuring the mail service](/help/sites-administering/notification.md#configuring-the-mail-service).
+>To use the Email action, you need to configure the AEM mail service as described in [Configuring the mail service](/help/sites-administering/notification.md#configuring the mail service).
 
 ### Enabling Email action on an adaptive form {#enabling-email-action-on-an-adaptive-form}
 
-1. Open an adaptive form in edit mode.
+1. Open an adaptive form in edit mode.  
 
-1. Click **Edit** next to the **Start of an Adaptive Form** toolbar.
+1. Click **Edit** next to the **Start of an Adaptive Form **toolbar.
 
    The Edit Component dialog opens.
 
@@ -52,7 +54,7 @@ The Email action enables an author to send email automatically to one or more re
 
    Specify the subject and the body of the email in the Subject and Email template fields, respectively.
 
-   You can also specify variable placeholders in the fields, in which case, the values of the fields are processed when the form is successfully submitted by an end user. For more information, see [Using adaptive form field names to dynamically create email content](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   You can also specify variable placeholders in the fields, in which case, the values of the fields are processed when the form is successfully submitted by an end user. For more information, see [Using adaptive form field names to dynamically create email content](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
    Select Include attachments if the form includes file attachments and you want to attach these files in the email.
 
@@ -60,7 +62,7 @@ The Email action enables an author to send email automatically to one or more re
    >
    >If you choose the **Email PDF action**, you must select the Include attachments option.
 
-1. Click **OK** to save the changes.
+1. Click **OK **to save the changes.
 
 ### Using adaptive form field names to dynamically create email content {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 

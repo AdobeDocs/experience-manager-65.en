@@ -3,14 +3,20 @@ title: Creating a custom adaptive form template
 seo-title: Creating a custom adaptive form template
 description: This article describes how to create custom adaptive form templates.
 seo-description: This article describes how to create custom adaptive form templates.
-uuid: 8f8c770f-984c-48e8-978c-7cdfcd1af95b
+uuid: 11b5f8cd-c56a-4525-97d5-1938ef5f183d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
+discoiquuid: affba49e-9712-4d29-858b-2f8ec4f2b1f1
+docset: aem65
+
 ---
 
-# Creating a custom adaptive form template {#creating-a-custom-adaptive-form-template}
+# Creating a custom adaptive form template{#creating-a-custom-adaptive-form-template}
+
+>[!NOTE]
+>
+>AEM Forms has introduced dynamic templates. You can use AEM Sites template editor to [create or edit dynamic templates](../../forms/using/template-editor.md). The templates mentioned in the below article are static templates. These are not available on a default installation. [Install Compatibility package](../../forms/using/compatibility-package.md) to get these templates on your evironment.
 
 ## Prerequisites {#prerequisites}
 
@@ -28,9 +34,11 @@ Once you create a form, any changes to the original template content structure a
 
 AEM QuickStart provides the following adaptive form templates:
 
-* Basic: Lets you create a multi-tab adaptive form using a tabs-on-left layout, where you can visit tabs in any random order.
-* Basic wiith Adobe Sign: Lets you create a form with mulitple tabs and wizard. It uses a tabs-on-left layout that lets you visit tabs in any order. It uses Adobe Document Cloud esign services for signing and verification.
-* Blank Template: Lets you create a form without any header, footer, and initial content. You can add components such as text boxes, buttons, and images. The blank template lets you create a form that you can [embed in AEM Site pages](/help/forms/using/embed-adaptive-form-aem-sites.md).
+* Survey template: Lets you create a single page adaptive form using the Responsive layout that has multiple columns configured. The layout automatically adjusts based on the dimensions of the various screens on which you want to display the form.
+* Simple Enrollment template: Lets you create a multi-step adaptive form using a wizard layout. In this layout, you can specify a step completion expression for each step, which is validated before the wizard proceeds to the next step.
+* Tabbed Enrollment template: Lets you create a multi-tab adaptive form using a tabs-on-left layout, where you can visit tabs in any random order.
+* Advanced Enrollment template: Lets you create a form with mulitple tabs and wizard. It uses a tabs-on-left layout that lets you visit tabs in any order. It uses Adobe Document Cloud esign services for signing and verification.
+* Blank Template: Lets you create a form without any header, footer, and initial content. You can add components such as text boxes, buttons, and images. The blank template lets you create a form that you can [embed in AEM Site pages](/forms/using/embed-adaptive-form-aem-sites.md).
 
 These templates have the `sling:resourceType` property set to the corresponding page component. The page component renders the CQ page, containing adaptive form container, which in turn renders adaptive form.
 
@@ -39,24 +47,24 @@ The following table enumerates the association between templates and page compon
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Template</strong></p> </td>
-   <td><p><strong>Page Component</strong></p> </td>
+   <td valign="top" width="75"><p><strong>Template</strong></p> </td>
+   <td valign="top" width="150"><p><strong>Page Component</strong></p> </td>
   </tr>
   <tr>
-   <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>
-   <td><p>/libs/fd/af/components/page/survey</p> </td>
+   <td valign="top" width="75"><p>/libs/fd/af/templates/surveyTemplate</p> </td>
+   <td valign="top" width="150"><p>/libs/fd/af/components/page/survey</p> </td>
   </tr>
   <tr>
-   <td><p>/libs/fd/af/templates/simpleEnrollmentTemplate</p> </td>
-   <td><p>/libs/fd/af/components/page/base</p> </td>
+   <td valign="top" width="75"><p>/libs/fd/af/templates/simpleEnrollmentTemplate</p> </td>
+   <td valign="top" width="150"><p>/libs/fd/af/components/page/base</p> </td>
   </tr>
   <tr>
-   <td><p>/libs/fd/af/templates/tabbedEnrollmentTemplate</p> </td>
-   <td><p>/libs/fd/af/components/page/tabbedenrollment</p> </td>
+   <td valign="top" width="75"><p>/libs/fd/af/templates/tabbedEnrollmentTemplate</p> </td>
+   <td valign="top" width="100"><p>/libs/fd/af/components/page/tabbedenrollment</p> </td>
   </tr>
   <tr>
-   <td><p>/libs/fd/afaddon/templates/advancedEnrollmentTemplate</p> </td>
-   <td><p>/libs/fd/afaddon/components/page/advancedenrollment</p> </td>
+   <td valign="top" width="75"><p>/libs/fd/afaddon/templates/advancedEnrollmentTemplate</p> </td>
+   <td valign="top" width="100"><p>/libs/fd/afaddon/components/page/advancedenrollment</p> </td>
   </tr>
  </tbody>
 </table>
@@ -70,7 +78,7 @@ You can specify the structure and initial content of an adaptive form using Temp
 * Specify a theme.
 * Specify actions such as submit, reset, and navigate.
 
-For more informtion, see [Template Editor](/help/forms/using/template-editor.md).
+For more informtion, see [Template Editor](../../forms/using/template-editor.md).
 
 ## Creating an adaptive form template from CRXDE {#creating-an-adaptive-form-template-from-crxde}
 

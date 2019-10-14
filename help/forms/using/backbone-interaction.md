@@ -3,14 +3,16 @@ title: Backbone interaction
 seo-title: Backbone interaction
 description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
-uuid: c70da848-e514-42bc-a59b-44a7c00aa529
+uuid: 040f42cb-3b76-4657-ba05-9e52647efb12
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
+discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
+docset: aem65
+
 ---
 
-# Backbone interaction {#backbone-interaction}
+# Backbone interaction{#backbone-interaction}
 
 Backbone is a library that helps in creating and following MVC architecture in web applications. The basic idea of Backbone is to organize your interface into logical views, backed by models, each of which can be updated independently when the model changes, without having to redraw the page. For more information about Backbone, see [https://backbonejs.org](https://backbonejs.org/).
 
@@ -53,4 +55,4 @@ An example:
 1. Another view, task details view listens to this event from task model.
 1. Task details view then changes the task details template to display the rendered task (form, details, attachments, notes, and so on) to the user.
 
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

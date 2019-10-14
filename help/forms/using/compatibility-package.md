@@ -1,60 +1,60 @@
 ---
 title: Compatibility Package
 seo-title: Compatibility Package
-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.3 and deprecated adaptive forms templates and pages
-seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.3 and deprecated adaptive forms templates and pages
-uuid: e50b1ff9-c357-422a-8da8-a791ff805317
+description: Installing the Compatibility package on AEM Forms 6.5 allows you to use the Correspondence Management assets from AEM Forms 6.4 and earlier versions and deprecated adaptive forms templates and pages 
+seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
+uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 topic-tags: correspondence-management
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
+discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
+docset: aem65
+
 ---
 
-# Install compatibility Package {#compatibility-package}
-
-Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.3 and deprecated adaptive forms templates and pages
+# Compatibility Package{#compatibility-package}
 
 ## Overview {#overview}
 
-Interactive communication is the default and recommended approach to create customer communications in AEM Forms 6.4. To continue using the letters from AEM 6.3 Forms and AEM 6.2 Forms, you need to install the [AEMFD Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+Interactive communication is the default and recommended approach to create customer communications in AEM Forms 6.5. To continue using letters in AEM Forms 6.5, you need to install the latest [AEMFD Compatibility package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-The AEMFD Compatibility package allows you to use the following assets from AEM Forms 6.3 and 6.2 on AEM Forms 6.4:
+The AEMFD Compatibility package also allows you to [use the following assets from AEM Forms 6.4, 6.3 and 6.2 on AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
-* Document fragments created in AEM Forms 6.3 and 6.2
+* Document fragments
 * Letters
 * Data dictionaries
 * Adaptive forms deprecated templates and pages
 
-For more information, see [Assets made compatible with AEM Forms 6.4 by installing the Compatibility package](/help/forms/using/compatibility-package.md#assetsmadecompatible).
+For more information, see [Assets made compatible with AEM Forms 6.5 by installing the Compatibility package](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
-## Add support for AEM Forms 6.3 and 6.2 assets in AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Add support for AEM Forms 6.4, 6.3 and 6.2 assets in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
-After performing an upgrade, do the following to install the AEMFD compatibility package and make your assets compatible with 6.4:
+After performing an upgrade, do the following to install the AEMFD compatibility package and make your assets compatible with 6.5:
 
-Ensure that you have [AEM Compatibility package](/help/sites-deploying/backward-compatibility.md) pre-installed.
+Ensure that you have [AEM Compatibility package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pre-installed.
 
-1. Install the [Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+1. Install the latest 6.5 [Compatibility package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
    For more information on uploading and installing the package, see [How to work with packages](/help/sites-administering/package-manager.md).
 
-1. After the logs are stabilized, restart the server.
-1. Use the migration utility for making your assets compatible with 6.4.
+1. After the logs are stabilized, restart the server. 
+1. Use the migration utility for making your assets compatible with 6.5.
 
-   For more information, see [migration utility](/help/forms/using/migration-utility.md).
+   For more information, see [migration utility](../../forms/using/migration-utility.md).
 
-## Assets made compatible with AEM Forms 6.4 by installing the Compatibility package {#assetsmadecompatible}
+## Assets made compatible with AEM Forms 6.5 by installing the Compatibility package {#assetsmadecompatible}
 
-By installing the Compatibility package, you can make the following assets and templates compatible with AEM Forms 6.4:
+By installing the Compatibility package, you can make the following assets and templates compatible with AEM Forms 6.5:
 
-* Correspondence Management Assets from AEM 6.3 and earlier
+* Correspondence Management Assets from AEM 6.4 and earlier:
 
-    * [Letters](/help/forms/using/create-letter.md)
-    * [Data Dictionaries](/help/forms/using/data-dictionary.md)
+    * [Letters](../../forms/using/create-letter.md)
+    * [Data Dictionaries](/forms/using/data-dictionary.html?cq_ck=1519292756160)
     * Document Fragments
 
-* Adaptive form deprecated templates
+* Adaptive form deprecated templates:
 
     * /libs/fd/af/templates/blankTemplate2
     * /libs/fd/af/templates/simpleEnrollmentTemplate

@@ -3,16 +3,20 @@ title: Forms-centric workflow on OSGi - Step Reference
 seo-title: Forms-centric workflow on OSGi - Step Reference
 description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
 seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
+uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 contentOwner: aheimoz
-discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: publish
+discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
+docset: aem65
+
 ---
 
-# Forms-centric workflow on OSGi - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
+# Forms-centric workflow on OSGi - Step Reference{#forms-centric-workflow-on-osgi-step-reference}
 
 ## Forms Workflow Steps {#forms-workflow-steps}
 
-Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps allow you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and acros- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
+Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps allow you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
 
 ## Assign task step {#assign-task-step}
 
@@ -33,47 +37,72 @@ You can also use the component to control the behavior of the task. For example,
 * **Time-out after Due Date: **Select this option to enable the Timeout Handler selection field.
 * **Timeout Handler: **Select the script to be executed when the assign task step crosses the due date. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. The specified path does not exist in crx-repository. An administrator creates the path before using it.
 * **Highlight the action and comment from the last task in Task Details: **Select this option to display the last action that was taken and comment received on the task details section of a task.
-* **Type: **Choose the type of document to be filled when the workflow is started. You can choose an adaptive form, read-only adaptive form, or a non-interactive PDF document.
-* **Use Adaptive Form:** Specify the method to locate the input adaptive form. You can use the adaptive form available at an absolute path, submitted as payload to the workflow, or available at a path calculated using a variable. You can use a variable of type String to specify the path.
-* **Adaptive Form Path**: Specify the path of the adaptive form. The field is available when you use the an adaptive form or read-only adaptive form option in the Type field in conjunction with absolute path option the Use Adaptive Form field.
-* **PDF Path: **Specify the path of a non-interactive PDF document. The field is available when you choose a non-interactive PDF document in the Type field. The path is always relative to the payload. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. The path does not exist in crx-repository. An administrator creates the path before using it. You require a Document of Record option enabled or form template based adaptive forms for using the PDF Path option.
+* **Type: **Choose the type of document to be filled when the workflow is started. You can choose an adaptive form, read-only adaptive form, a non-interactive PDF document, Interactive Communication Agent UI, or Interactive Communication Web Channel Document.
+* **Use Adaptive Form:** Specify the method to locate the input adaptive form. This option is available if you select Adaptive form or Read-only adaptive form from the Type drop-down list. You can use the adaptive form submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path.  
+  You can associate multiple adaptive forms with a workflow. As a result, you can specify an adaptive form on the runtime using the available input methods.
+
+* **Use Interactive Communication: **Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.  
+  **Note:** You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.
+
+* **Adaptive Form or Interactive Communication Path**: Specify the path of the adaptive form or Interactive Communication. You can use the adaptive form or interactive communication that is submitted to the workflow, available at an absolute path, or retrieve the adaptive form from a path stored in a variable of string data type.
+* **Select input PDF using: **Specify the path of a non-interactive PDF document. The field is available when you choose a non-interactive PDF document in the Type field. You can select the input PDF using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. The path does not exist in crx-repository. An administrator creates the path before using it. You require a Document of Record option enabled or form template based adaptive forms for using the PDF Path option.
 * **For completed task, render the adaptive form as**: When a task is marked complete, you can render the adaptive form as a read-only adaptive form or a PDF document. You require a Document of Record option enabled or form template based adaptive forms for rendering the adaptive form as Document of Record.
-* **Information to be pre-populated:** The following fields listed below serve as inputs to the task: 
+* **Pre-populated: **The following fields listed below serve as inputs to the task:** **
 
-    * **Data File Path:** Path of input data file (.json or .xml). The path is always relative to the payload. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
-    * **Attachment Path: **Attachments available at the location are attached to the form associated with the task. The path is always relative to the payload. An example path is [Payload_Directory]/attachments/
+    * **Select input data file using:** Path of input data file (.json,. xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
+    * **Select input attachments using: **Attachments available at the location are attached to the form associated with the task. The path is always relative to the payload. An example path is [Payload_Directory]/attachments/
+    * **Choose input JSON: **Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **Choose a custom prefill service: **Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.   
+    
+    * **Use the prefill service of the interactive communication selected above: **Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list.
+    * **Request Attribute Mapping: **Use the Request Attribute Mapping section to define the [name and value of the request attribute](../../forms/using/work-with-form-data-model.md#bindargument). Retrieve the details from the data source based on the attribute name and value specified in the request. You can define a request attribute value using a literal value or a variable of String data type.  
+      The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
-* **Submitted information:** The following fields listed below serve as output locations to the task: 
+* **Submitted information: **The following fields listed below serve as output locations to the task:** **
 
-    * **Data File Path:** Path of data file (.json or .xml). The data file contains information submitted through the associated form. The path is always relative to the payload. For example, [Payload_Directory]/Workflow/data, where data is a file.
-    * **Attachment Path: **Path to save the form attachments provide in a task.
-    * **Document of Record Path: **Path to save a Document of Record file. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. The Document of Record is not generated if the path field is left empty. The path is always relative to the payload.
+    * **Save output data file using:** Save the data file (.json,. xml, .doc, or form data model). The data file contains information submitted through the associated form. You can save the output data file using a path that is relative to the payload or store it in a variable of Document, XML, or JSON data type. For example, [Payload_Directory]/Workflow/data, where data is a file.
+    * **Save attachments using: **Save the form attachments provide in a task. You can save the attachments using a path that is relative to the payload or store it in a variable of array of Document data type.
+    * **Save Document of Record using: **Path to save a Document of Record file. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. You can save the Document of Record using a path that is relative to the payload or store it in a variable of Document data type. If you select **Relative to Payload** option, The Document of Record is not generated if the path field is left empty. This option is available only if you select Adaptive form from the Type drop-down list.
+    
+    * **Save Web Channel data using: **Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
+    * **Save PDF document using: **Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
+    * **Save layout template using: **Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](../../forms/using/layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
 
-* **Assign options:** Specify the method to assign the task to a user. You can dynamically assign the task to a user or a group using the Participant Chooser script or assign the task to a specific AEM user or group.
+* **Assignee &gt; Assign options:** Specify the method to assign the task to a user. You can dynamically assign the task to a user or a group using the Participant Chooser script or assign the task to a specific AEM user or group.
 * **Participant Chooser:** The option is available when the **Dynamically to a user or group** option is selected in the Assign options field. You can use an ECMAScript or a service to dynamically select a user or a group. For more information, see [Dynamically assign a workflow to the users](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) and [Creating a custom Adobe Experience Manager Dynamic Participant step.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
-* **Participants:** The field is available when the **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** option is selected in the Participant Chooser field. The field allows you to select users or groups for the RandomParticipantChooser option.
+* **Participants:** The field is available when the **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** option is selected in the **Participant Chooser** field. The field allows you to select users or groups for the RandomParticipantChooser option.
+
+* **Assignee:** The field is available when the **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** is selected in the **Participant Chooser** field. The field allows you to select a variable of String data type to define the assignee.
 
 * **Arguments: **The field is available when a script other than the RandomParticipantChoose script is selected in the Participant Chooser field. The field allows you to provide a list of a comma separated arguments for the script selected in the Participant Chooser field.  
 
-* **User or Group:** The task is assigned to selected user or group. The option is available when the **To a specific user or group option** is selected in the Assign options field. The field lists all the users and groups of the workflow-users group.
+* **User or Group:** The task is assigned to selected user or group. The option is available when the **To a specific user or group option** is selected in the **Assign options** field. The field lists all the users and groups of the workflow-users group.  
+  The **User or Group** drop-down menu lists the users and groups that the logged-in user has access to. The username display depends on if you have access permissions on the **users** node in crx-repository for that particular user. 
 
-* **Notify Assignee by Email:** Select this option to send email notifications to the assignee. These notifications are sent when a task is assigned to a user. Before using the option, enable the notifications from AEM Web Console. For step-by-step instructions, see [configure email notifications for the assign task step](/help/forms/using/aem-forms-workflow.md)
+* **Notify Assignee by Email:** Select this option to send email notifications to the assignee. These notifications are sent when a task is assigned to a user. Before using the option, enable the notifications from AEM Web Console. For step-by-step instructions, see [configure email notifications for the assign task step](../../forms/using/aem-forms-workflow.md)
 
 * **HTML Email Template**: Select email template for the notification email. To edit a template, modify the file located at /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
 * **Allow Delegation To:** AEM Inbox provides an option to the logged in user to delegate the assigned workflow to another user. You are allowed to delegate within the same group or to the workflow user of another group. If the task is assigned to a single user and the **allow delegation to members of the assignee group** option is selected, then it is not possible to delegate the task to another user or group.
 
-* **Default Actions:** Out of the box, Submit, Save, and Reset actions are available. All the default actions are enabled, by default. 
+* **Actions &gt; Default Actions:** Out of the box, Submit, Save, and Reset actions are available. All the default actions are enabled, by default. 
 * **Route Variable:** Name of the route variable. The route variable captures custom actions that a user selects in AEM Inbox.
-* **Routes:** A task can branch to different routes. When selected in AEM Inbox, the route returns a value and the workflow branches based on the selected route.
-* **Title**: Specify the title for the route. It is displayed in AEM Inbox.
-* **Coral Icon**: Specify HTML attribute of a coral icon. Adobe CorelUI library provides a vast set of touch-first icons. You can choose and use an icon for the route. It is displayed along with the title in AEM Inbox.
-* **Allow assignee to add comment**: Select this option to enable comments for the task. An assignee can add the comments from within AEM Inbox at the time of task submission.
-* **Allow assignee to add attachment(s) to the task**: Select this option to enable attachments for the task. An assignee can add the attachments from within AEM Inbox at the time of task submission.
-* **Output path of task attachments**: Specify the location of attachment folder. The location is relative to the payload.
-* **Use custom metadata:** Select this option to enable the custom metadata field. Custom metadata is used in email templates.
-* **Custom Metadata: **Select a custom metadata for the email templates. The custom metadata is available in crx-repository at apps/fd/dashboard/scripts/metadataScripts. The specified path does not exist in crx-repository. An administrator creates the path before using it. You can also use a service for the custom metadata. You can also extend the `WorkitemUserMetadataService` interface to provide custom metadata.
+* **Routes:** A task can branch to different routes. When selected in AEM Inbox, the route returns a value and the workflow branches based on the selected route. You can either store routes in a variable of array of String data type or select **Literal** to add routes manually.
 
+* **Title**: Specify the title for the route. It is displayed in AEM Inbox.
+* **Coral Icon**: Specify HTML attribute of a coral icon. Adobe CorelUI library provides a vast set of touch-first icons. You can choose and use an icon for the route. It is displayed along with the title in AEM Inbox. If you store the routes in a variable, the routes use a default 'Tags' coral icon.
+* **Allow assignee to add comment**: Select this option to enable comments for the task. An assignee can add the comments from within AEM Inbox at the time of task submission.
+* **Save comment in variable:** Save the comment in a variable of String data type. This option displays only if you select the **Allow assignee to add comment **checkbox.
+
+* **Allow assignee to add attachment(s) to the task**: Select this option to enable attachments for the task. An assignee can add the attachments from within AEM Inbox at the time of task submission.
+* **Save output task attachments using**: Specify the location of attachment folder. You can save output task attachments using a path relative to payload or in a variable of array of document data type. This option displays only if you select the **Allow assignee to add attachment(s) to the task **checkbox and select **Adaptive form**, **Read-only adaptive form**, or **Non-interactive PDF document** from the **Type** drop-down list in the **Form/Document** tab.
+
+>[!NOTE]
+>
+>Use the Attachments tab in Agent UI during runtime to associate the attachments to an Interactive Communication. The associated attachments display as task attachments in the sidekick after opening the work item in a Complete state.
+
+* **Use custom metadata:** Select this option to enable the custom metadata field. Custom metadata is used in email templates.
+* **Custom Metadata: **Select a custom metadata for the email templates. The custom metadata is available in crx-repository at apps/fd/dashboard/scripts/metadataScripts. The specified path does not exist in crx-repository. An administrator creates the path before using it. You can also use a service for the custom metadata. You can also extend the WorkitemUserMetadataService interface to provide custom metadata.
 * **Show Data from Previous Steps**: Select this option to enable assignees to view previous assignees, action already taken on the task, comments added to the task, and document of record of the completed task, if available. 
 * **Show Data from Subsequent Steps: **Select this option to enable the current assignee to view the action taken and comments added to task by subsequent assignees. It also allows the current assignee to view a document of record of the completed task, if available.
 * **Visibility of data type:** By default, an assignee can view a Document of Record, assignees, action taken, and comments that previous and subsequent assignees have added. Use the visibility of data type option to limit the type of data visible to the assignees.
@@ -82,13 +111,17 @@ You can also use the component to control the behavior of the task. For example,
 
 Use the email step to send an email, for example an email with a document of record, link of an adaptive form, link of an interactive communication, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define appearance, color-scheme, and behavior of the of the email.
 
-The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the [email service](/help/forms/using/aem-forms-workflow.md) is configured. The email step has the following properties:
+The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the [email service](../../forms/using/aem-forms-workflow.md) is configured. The email step has the following properties:
 
 **Title:** Title of the step helps identify the step in the workflow editor.
 
 **Description: **Explanation is useful for other process developers when you are working in a shared development environment.
 
-**Email Subject:** Subject can be retrieved from a workflow metadata or specified manually. Select the **Literal** option to manually specify a subject or select the **Retrieve from Workflow metadata** option to retrieve the subject from a metadata property.
+**Email Subject:** Subject can be retrieved from a workflow metadata, specified manually, or retrieved from the value stored in a variable. Select from the following options:
+
+* **Literal -** Manually specify a subject.
+* **Retrieve from Workflow metadata** - Retrieve the subject from a metadata property.
+* **Variable** - Retrieve the subject from the value stored in a variable of string data type.
 
 **HTML Email Template**: HTML template for the email. You can specify variables in an email template. The Email Step extracts and displays all the variables included in a template for inputs.
 
@@ -98,13 +131,15 @@ The email step uses Day CQ Mail Service to send emails. Before using the email s
 
 * **Workflow Metadata:** Use the option when the value to use is saved in a workflow metadata property. After selecting the option, enter the metadata property name in the empty text box below the Workflow Metadata option. For example, emailAddress.
 * **Asset URL:** Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server.
-* **Image:** Use the option to embed an image to the email. After selecting the option, browse and choose the image. The image option is available only for the image tags (&lt;img src="&ast;"/&gt;) available in the email template.
+* **Image:** Use the option to embed an image to the email. After selecting the option, browse and choose the image. The image option is available only for the image tags (&lt;img src="&#42;"/&gt;) available in the email template.
 
-**Sender’s / Recipient's Email Address:** Select the **Literal** option to manually specify an email address or select the **Retrieve from Workflow metadata** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the **Retrieve from Workflow metadata** option.
+**Sender’s / Recipient's Email Address:** Select the **Literal **option to manually specify an email address or select the ** Retrieve from Workflow metadata** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the** Retrieve from Workflow metadata** option. Select the **Variable** option to retrieve the e-mail address from the value stored in a variable of string data type.
 
-**File Attachment Path:** The asset available at the specified location is attached to the email. The path of the asset can be relative to the payload or absolute path. An example path is [Payload_Directory]/attachments/
+**File Attachment:** The asset available at the specified location is attached to the email. The path of the asset can be relative to the payload or absolute path. An example path is [Payload_Directory]/attachments/.
 
-**File Name:** Name of the email attachment file. The Email Step changes the original file name of the attachment to the specified file name. The name can be specified manually or retrieved from a workflow metadata property. Use the **Literal** option when you know the exact value to specify. Use the **Retrieve from a Workflow Metadata** option when the value to use is saved in a workflow metadata property.
+Select the **Variable **option to retrieve the file attachment stored in a variable of Document, XML, or JSON data type.
+
+**File Name: **Name of the email attachment file. The Email Step changes the original file name of the attachment to the specified file name. The name can be specified manually or retrieved from a workflow metadata property or a variable. Use the **Literal** option when you know the exact value to specify. Use the **Variable** option to retrieve the file name from the value stored in a variable of string data type. Use the **Retrieve from a Workflow Metadata** option when the value to use is saved in a workflow metadata property.
 
 ## Generate Document of Record step {#generate-document-of-record-step}
 
@@ -112,29 +147,30 @@ When a form is filled or submitted, you can keep a record of the form, in print 
 
 The Document of Record step has the following properties:
 
-**Use Adaptive Form**: Specify the method to locate the input adaptive form. You can use the adaptive form available at an absolute path, submitted as payload to the workflow, or available at a path calculated using a variable. You can use a variable of type String to specify the path.
+**Use Adaptive Form**: Specify the method to locate the input adaptive form. You can use the adaptive form submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of String data type to specify the path in the **Select variable to resolve** field.  
+You can associate multiple adaptive forms with a workflow. As a result, you can specify an adaptive form on the runtime using the available input methods.
 
-**Adaptive Form Path**: Specify the path of the adaptive form. The field is available when you use the an adaptive form or read-only adaptive form option in the Type field in conjunction with absolute path option the Use Adaptive Form field.
+**Adaptive Form Path**: Specify the path of the adaptive form. The field is available when you select the **Available at an absolute path** option from the **Use Adaptive Form** field.
 
-**Input Data Path:** Path of the input data for the adaptive form. You can keep the data at a location relative to the payload or specify an absolute path of the data. The input data is merged with the adaptive form to create a document of record.
+**Select Input data using:** Path of the input data for the adaptive form. You can keep the data at a location relative to the payload, specify an absolute path of the data, or retrieve data stored in a variable of Document, JSON, or XML data type. The input data is merged with the adaptive form to create a document of record.
 
-**Input Attachement Path:** Input Attachment Path: Path of the attachments. These attachments are included in the Document of Record. You can keep the attachments at a location relative to the payload or specify an absolute path of the attachments.
+**Select Input attachment path using: **Path of the attachments. These attachments are included in the Document of Record. You can keep the attachments at a location relative to the payload, specify an absolute path of the attachments, or retrieve attachments stored in a variable of array of Document data type.
 
 If you specify the path of a folder, for example, attachments, all the files directly available in the folder are attached to Document of Record. If any files are available in the folders directly available in the specified attachment path, the files are included in Document of Record as attachments. If there are any folders in directly available folders, those are skipped.
 
-**Generated Document of Record Path: **Specify the location to keep a document of record file. You can choose to overwrite the payload folder or place document of record at a location within the payload directory.
+**Save Generated Document of Record using below options: **Specify the location to keep a document of record file. You can choose to overwrite the payload folder, place document of record at a location within the payload directory, or store the document of record in a variable of Document data type.
 
-**Locale**: Specify the language of the document of record.
+**Locale**: Specify the language of the document of record. Select **Literal** to select the locale from a drop-down list or select **Variable** to retrieve the locale from the value stored in a variable of string data type. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
-You can use [AEM Forms Data Integration](/help/forms/using/data-integration.md) to configure and connect to disparate data sources. These data sources can be a database, web service, REST service, OData service, and CRM solution. AEM Forms Data Integration allows you to create a form data model encompassing various services to perform data retrieval, addition, updating operations on the configured database. You can use the **Invoke Data Model Service step** to select a form data model (FDM) and use the services of the FDM to retrieve, update, or add data to disparate data sources.
+You can use [AEM Forms Data Integration](../../forms/using/data-integration.md) to configure and connect to disparate data sources. These data sources can be a database, web service, REST service, OData service, and CRM solution. AEM Forms Data Integration allows you to create a form data model encompassing various services to perform data retrieval, addition, updating operations on the configured database. You can use the **Invoke Data Model Service step** to select a form data model (FDM) and use the services of the FDM to retrieve, update, or add data to disparate data sources.
 
 To explain inputs for fields of the step, the following database table and JSON file are used as an example :
 
 **Sample CustomerDetails table**
 
-<table> 
+<table>
  <tbody> 
   <tr> 
    <td>Property</td> 
@@ -192,55 +228,57 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
 * **Form Data Model Path**: Browse and select a form data model present on the server.  
 
 * **Service**: List of the services that the selected form data model provides.
-* **Input for services &gt; Provide input data using literal, workflow metadata, and a JSON file**: A service can have multiple arguments. Select the option to obtain the value of the service arguments from a workflow metadata property, a JSON object, or directly enter the value in the provided text box:
+* **Input for services &gt; Provide input data using literal, variable, or workflow metadata, and a JSON file**: A service can have multiple arguments. Select the option to obtain the value of the service arguments from a workflow metadata property, a JSON object, a variable, or directly enter the value in the provided text box:
 
     * **Literal:** Use the option when you know the exact value to specify. For example, srose@we.info.
+    * **Variable: **Use the option to retrieve the value stored in a variable.
     * **Retrieve from Workflow Metadata:** Use the option when the value to use is saved in a workflow metadata property. For example, emailAddress.
-    * **JSON Dot Notation:** Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress.The JSON Dot Notation option is available only if Map input fields from input JSON option is selected.
-    * **Map input fields from input JSON:** Specify path of a JSON file to obtain input value of some service arguments from the JSON file. Path of the JSON file can be relative to the payload or an absolute path.
+    * **JSON Dot Notation:** Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress. The JSON Dot Notation option is available only if Map input fields from input JSON option is selected.
+    * **Map input fields from input JSON:** Specify path of a JSON file to obtain input value of some service arguments from the JSON file. Path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model type.
 
-* **Input for services &gt; Provide input data using a JSON file:** Select the option to obtain values for all the arguments from a JSON file.
-* **Input JSON File Path**: Path of the JSON file containing values for all the service arguments. Path of the JSON file can be** relative to the payload** or an** absolute path**.
+* **Input for services &gt; Provide input data using variable or a JSON file:** Select the option to obtain values for all the arguments from a JSON file saved at an absolute path, at a path relative to payload, or in a variable.
+* **Select Input JSON document using**: The JSON file containing values for all the service arguments. Path of the JSON file can be **relative to the payload** or an **absolute path.** You can also retrieve the input JSON document using a variable of JSON or Form Data Model data type.
 
 * **JSON Dot Notation:** Leave the field blank to use all the objects of the specified JSON file as input for service arguments. To read a specific JSON object from the specified JSON file as input for service arguments, specify dot notation for the JSON object, for example, If you have a JSON similar to the one listed at the start of the section, specify insurance.customerDetails to provide all the details of a customer as input to the service.
-* **Output of service &gt; Map and write output values to metadata: **Select the option to save the output values as properties of the workflow instance metadata node in crx-repository. Specify the name of the metadata property and select the corresponding service output attribute to be mapped with metadata property, for example, map the phone_number returned by output service with the phone_number property of workflow metadata.
-* **Output of service &gt; Save output as JSON: **Select the option to save the output values in a JSON file.
-* **Output JSON File Path: **Path to save the save the output JSON file. The path of the output JSON file can be relative to the payload or an absolute path.
+* **Output of service &gt; Map and write output values to variable or metadata:** Select the option to save the output values as properties of the workflow instance metadata node in crx-repository. Specify the name of the metadata property and select the corresponding service output attribute to be mapped with metadata property, for example, map the phone_number returned by output service with the phone_number property of workflow metadata. Similarly, you can store the output in a variable of Long data type.
+* **Output of service &gt; Save output to variable or a JSON file:** Select the option to save the output values in a JSON file at an absolute path, at a path relative to payload, or in a variable . 
+* **Save Output JSON document using below options:** Save the output JSON file. The path of the output JSON file can be relative to the payload or an absolute path. You can also save the output JSON file using a variable of JSON or Form Data Model data type.
 
 ## Sign Document step {#sign-document-step}
 
 The Sign Document step enables you to use Adobe Sign to sign documents. The Sign Document step has the following properties:
 
-* **Agreement Name:** Specify the title of the agreement. The agreement name becomes part of the subject and body text of the email sent to the signers.
-* **Locale:** Specify the language for the email and verification options.
-* **Adobe Sign Cloud Configuration**: Choose an Adobe Sign Cloud Configuration. If you have not configured Adobe Sign for AEM Forms, see [Integrate Adobe Sign with AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md). 
+* **Agreement Name:** Specify the title of the agreement. The agreement name becomes part of the subject and body text of the email sent to the signers. You can either store the name in a variable of String data type or select **Literal** to add the name manually.
 
-* **Document to be Signed:** You can choose a document from a location relative to the payload, use payload as the document, or specify an absolute path of the document.
+* **Locale:** Specify the language for the email and verification options. You can either store the locale in a variable of String data type or select **Literal** to choose the locale from the list of available options. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
+
+* **Adobe Sign Cloud Configuration**: Choose an Adobe Sign Cloud Configuration. If you have not configured Adobe Sign for AEM Forms, see [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md). 
+
+* **Select Document to be signed using:** You can choose a document from a location relative to the payload, use payload as the document, specify an absolute path of the document, or retrieve the document stored in a variable of Document data type.
 * **Days Until Deadline:** A document is marked due (passed deadline) after there is no activity on the task for the number of days specifies in the **Days Until Deadline** field. The number of days are counted after the documented is assigned to a user for signing.
-
 * **Reminder Email Frequency:** You can send a reminder email at daily or weekly interval. The week is counted from the day the documented is assigned to a user for signing.
 * **Signature Process:** You can choose to sign a document in a sequential or a parallel order. In sequential order, one signer receives the document at a time for signing. After the first signer completes signing the document, then the document is sent to the second signer, and so on. In parallel order, multiple signers can sign a document at a time.  
-
 * **Redirection URL:** Specify a redirection URL. After the document is signed, you can redirect the assignee to a URL. Usually, this URL contains a thank you message or further instructions.
 * **Workflow Stage:** A workflow can have multiple stages. These stages are displayed in the AEM Inbox. You can define these stages in the properties of the model (Sidekick &gt; Page &gt; Page Properties &gt; Stages).
 * **Select Signers:** Specify the method to choose signers for the document. You can dynamically assign the workflow to a user or a group or manually add details of a signer.
 * **Script or service to select signers:** The option is available only if the Dynamically option is selected in the Select Signers field. You can specify an ECMAScript or a service to choose signers and verification options for a document.  
-
-* **Signer Details:** The option is available only if the Manually option is selected in the Select Signers field. Specify email address and choose an optional verification mechanism. Before selecting a 2-step verification mechanism, ensure that the corresponding verification option is enabled for the configured Adobe Sign account.
-* **Status Variable:** An Adobe Sign enabled document stores signing status of the document in a variable. Specify the name of the status variable (adobeSignStatus). A status variable of an instance is available in CRXDE at /etc/workflow/instances/&lt;server&gt;/&lt;date-time&gt;/&lt;instance of workflow model&gt;/workItems/&lt;node&gt;/metaData contains status of a variable.
-* **Signed Document Path:** Specify the location to keep signed documents. You can choose to overwrite the payload file or place the signed document at a location within the payload directory.
+* **Signer Details:** The option is available only if the Manually option is selected in the Select Signers field. Specify email address and choose an optional verification mechanism. Before selecting a 2-step verification mechanism, ensure that the corresponding verification option is enabled for the configured Adobe Sign account. You can use a variable of String data type to define values for **[!UICONTROL Email]**, **[!UICONTROL Country Code]**, and **[!UICONTROL Phone Number]** fields. The **[!UICONTROL Country Code]** and **[!UICONTROL Phone Number]** fields display only if you select **[!UICONTROL Phone Verification]** from the **[!UICONTROL 2-step verification]** drop-down list. 
+* **Status Variable:** An Adobe Sign enabled document stores signing status of the document in a variable of String data type. Specify the name of the status variable (adobeSignStatus). A status variable of an instance is available in CRXDE at /etc/workflow/instances/&lt;server&gt;/&lt;date-time&gt;/&lt;instance of workflow model&gt;/workItems/&lt;node&gt;/metaData contains status of a variable.
+* **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
 
 ## Document Services steps {#document-services-steps}
 
-AEM Document services are a set of services for creating, assembling, and securing PDF Documents. AEM Forms provides a seperate AEM Workflow step for each document service:
+AEM Document services are a set of services for creating, assembling, and securing PDF Documents. AEM Forms provides a separate AEM Workflow step for each document service.
+
+Similar to other AEM Forms workflow steps, such as Assign Task, Send Email, and Sign Document, you can use variables in all AEM Document services steps. For more information on creating and managing variables, see [Variables in AEM workflows](../../forms/using/variable-in-aem-workflows.md).
 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
-Add time stamp to a document. You provide document details such as input document path, input document name, location to store exported data. You may choose to overwrite existing payload file or choose a different file name to store data in a different file under payload folder.
+Add time stamp to a document. You provide document details such as input document path, input document name, location to store exported data. You may choose to overwrite existing payload file, choose a different file name to store data in a different file under payload folder, provide an absolute path to the data, or store data in a variable of Document data type.
 
 ### Convert to image step {#convert-to-image-step}
 
-Converts a PDF document to an image file. Supported image formats are JPEG, JPEG2000, PNG, and TIFF. The following information applies to conversions to TIFF images:
+Converts a PDF document to list of images. Supported image formats are JPEG, JPEG2000, PNG, and TIFF. The following information applies to conversions to TIFF images:
 
 * A multi-page TIFF file is generated.
 * Some annotations are not included in TIFF images. Annotations that require Acrobat to generate their appearance are not included.
@@ -255,7 +293,7 @@ Convert PDF documents to PostScript. When converting to PostScript, you can use 
 
 ### Create PDF from specified type step {#create-pdf-from-specified-type-step}
 
-Generate a PDF document from an input file. The input document can be relative to the payload, have an absolute path, or can be payload itself.
+Generate a PDF document from an input file. The input document can be relative to the payload, have an absolute path, can be payload itself, or stored in a variable of Document data type.
 
 ### Create PDF from URL/HTML/ZIP step {#create-pdf-from-url-html-zip-step}
 
@@ -269,17 +307,25 @@ Exports data from a PDF forms or XDP file. It requires you to enter the file pat
 
 Converts a PDF document to a selected format.
 
-### Generate Non-Interactive PDF step {#generate-non-interactive-pdf-step}
+### Generate Non-Interactive PDF step {#generatenoninteractive}
 
 Generate a Non-Interactive PDF. It provides various customization options.
+
+>[!NOTE]
+>
+>You can use variables to specify the template file for input documents. Store the path of the template file in a variable of String data type.
 
 ### Import Data step {#import-data-step}
 
 Merges form data into a PDF form. You can import form data into a PDF form.
 
-### Invoke DDX step {#invoke-ddx-step}
+### Invoke DDX step {#invokeddx}
 
 Executes the DDX file on the specified map of input documents and returns the manipulated PDF documents.
+
+>[!NOTE]
+>
+>You can use variables to specify the DDX file for input documents. Store the DDX file in a variable of Document or XML data type.
 
 ### Optimize PDF step {#optimize-pdf-step}
 
@@ -295,9 +341,13 @@ Optimization settings specify how files are optimized. Here are example settings
 * Removing embedded fonts
 * Setting transparency values
 
-### Render PDF Form step {#render-pdf-form-step}
+### Render PDF Form step {#renderpdf}
 
 Renders a form created in Form Designer (XDP) to a PDF form.
+
+>[!NOTE]
+>
+>You can use variables to specify the template file for input documents. Store the path of the template file in a variable of String data type.
 
 ### Secure Document step {#secure-document-step}
 

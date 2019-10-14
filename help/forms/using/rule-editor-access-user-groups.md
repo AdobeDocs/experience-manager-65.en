@@ -3,15 +3,17 @@ title: Grant rule editor access to select user groups
 seo-title: Grant rule editor access to select user groups
 description: Grant restricted access to rule editor to select user groups.
 seo-description: Grant restricted access to rule editor to select user groups.
-uuid: 3d982858-b2b5-4370-a9d7-5a95842a7897
+uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
 topic-tags: adaptive_forms
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
+discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
+docset: aem65
+
 ---
 
-# Grant rule editor access to select user groups {#grant-rule-editor-access-to-select-user-groups}
+# Grant rule editor access to select user groups{#grant-rule-editor-access-to-select-user-groups}
 
 ## Overview {#overview}
 
@@ -22,11 +24,11 @@ AEM Forms allows you to limit rule editor access to users based on their role or
 ## Specify user groups that can access rule editor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Log in to AEM Forms as an administrator.
-1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![hammer](assets/hammer.png) &gt; Operations &gt; Web Console. The Web Console opens in a new window.
+1. In the author instance, click ** ![](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![](assets/hammer.png) &gt; Operations &gt; Web Console. **The Web Console opens in a new window.
 
-   ![1](assets/1.png)
+   ![](assets/1-2.png)
 
-1. In Web Console Window, locate and click **Adaptive Form Configuration Service**. **Adaptive Form Configuration Service** dialog appears. Do not change any value and click **Save**.
+1. In Web Console Window, locate and click **Adaptive Form Configuration** **Service**. **Adaptive Form Configuration Service **dialog appears. Do not change any value and click **Save**.
 
    It creates a file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config in CRX-repository.
 
@@ -39,15 +41,15 @@ AEM Forms allows you to limit rule editor access to users based on their role or
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
-   ![create-user](assets/create-user.png)
+   ![Create User](assets/create_user_new.png)
 
-   Now, when a user that is not a part of the a specified user group (here RuleEditorsUserGroup) taps a field, the Edit Rule icon ( ![edit-rules1](assets/edit-rules1.png)) is not available for her in the components toolbar:
+   Now, when a user that is not a part of the a specified user group (here RuleEditorsUserGroup) taps a field, the Edit Rule icon ( ![](assets/edit-rules1.png)) is not available for her in the components toolbar:
 
-   ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
+   ![](assets/componentstoolbarwithre.png)
 
    Components toolbar as visible to a user with rule editor access
 
-   ![componentstoolbarwithoutre](assets/componentstoolbarwithoutre.png)
+   ![](assets/componentstoolbarwithoutre.png)
 
    Components toolbar as visible to a user without rule editor access
 

@@ -1,15 +1,17 @@
 ---
 title: Tables in adaptive forms
 seo-title: Tables in adaptive forms
-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 604cd51f-2a47-4410-b414-9cb13fe63713
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components. 
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components. 
+uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
-discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
+docset: aem65
+
 ---
 
-# Tables in adaptive forms {#tables-in-adaptive-forms}
+# Tables in adaptive forms{#tables-in-adaptive-forms}
 
 Using tables is an effective, simplified, and organized way of presenting complex data. It helps users in identifying information easily and providing inputs in an ordered arrangement of rows and columns. Most forms from financial services and government organizations require large data tables to put numbers and perform calculations.
 
@@ -17,19 +19,19 @@ AEM Forms provides a Table component in the components browser in sidebar that l
 
 * Responsive layout on mobile devices
 * Configurable rows and columns
-* Dynamic addition and deletion of rows at runtime
+* Dynamic addition and deletion of rows at runtime  
 * Combine or merge and split cells
 * Accessible by screen readers
 * Custom layout using CSS
 * Compatible and mapped with XDP table component
-* Support for adding rows or cells using XSD complex type elements
+* Support for adding rows or cells using XSD complex type elements  
 * Merge data from an XML file
 
 ## Create a table {#create-a-table}
 
 To create a table, drag-and-drop the Table component from the components browser in the sidekick on the adaptive form. By default, the table contains two columns and three rows, including the header row.
 
-![Table component in AEM sidebar](assets/sidebar-tables.png)
+![Table component in AEM sidebar](assets/sidebar-tables.png) 
 
 ### About header and body cells {#about-header-and-body-cells}
 
@@ -39,7 +41,7 @@ The body cells are text boxes, by default. You can replace a body cell with any 
 
 For example, the first body row in the following table includes text box, date picker, and drop-down list components as cells.
 
-![row-cell-types](assets/row-cell-types.png)
+![](assets/row-cell-types.png)
 
 You can merge two or more body cells by selecting the cells you want to merge, right-click, and select **Merge**. Also, you can split a merged cell by right-clicking it and selecting **Split Cells**.
 
@@ -55,7 +57,7 @@ To add or delete a row or column or move a row, click any cell in the row or col
 
 The drop-down menu for the row also provides the Edit operation to edit row properties, settings, and styling options.
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+![](assets/add-delete-move-row-column.png)
 
 >[!NOTE]
 >
@@ -65,37 +67,67 @@ The drop-down menu for the row also provides the Edit operation to edit row prop
 
 You can add a description of the table to explain how the information is organized that screen readers can interpret and read out. To add the description:
 
-1. Select the table and tap ![cmppr](assets/cmppr.png) to see its properties in the sidebar.
+1. Select the table and tap ![](assets/cmppr.png) to see its properties in the sidebar.
 1. Specify summary in the Accessibility tab.
 1. Click **Done**.
+
+### Sort columns in a table {#sortcolumnstable}
+
+You can sort data based on any column in a table in the adaptive form. The values in the column can be sorted in an ascending or descending order.
+
+Sorting can be applied to table columns containing:
+
+* Static text
+* Data model object properties
+* Combination of static text and data model object properties
+
+To apply sorting on table columns, the table column cells must contain any of the following components: Numeric Box, Numeric Stepper, Date Input Field, Date Picker, Text, or Text Box.
+
+To enable sorting:
+
+1. Select the table and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
+1. Select **Enable Sorting**.
+1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
+
+   ![Enable sorting](assets/enable_sorting_new.png)
+
+1. Switch to the **Preview** mode to view the output. The table is automatically sorted based on the first column of the table.
+1. Click the column header to sort the values based on the column.
+
+   A column header with an up arrow represents that the table is sorted based on that column. In addition, the values in the column are displayed in the ascending order.
+
+   ![Sorting in ascending order](assets/sorting_ascending_new.png)
+
+   Similarly, a column header with a down arrow represents that the values in the column are displayed in the descending order.
+
+   You can also make changes in the table in the **Preview** mode and click the column header again to sort the column values.
 
 ## Configure table style {#configure}
 
 You can define the style for a table by using the Style mode in the page toolbar. Perform the following steps to switch to style mode and edit the table styling
 
-1. In the page toolbar, before Preview, tap ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
+1. In the page toolbar, before Preview, tap ![](assets/canvas-drop-down.png) &gt; **Style**.
 
-1. In the sidebar select table and tap the edit button ![edit-button](assets/edit-button.png).
-
+1. In the sidebar select table and tap the edit button ![](assets/edit-button.png).   
    You can see the styling properties in the sidebar.
 
 ![Styling properties of a table](assets/style-table.png)
 
 >[!NOTE]
 >
->You can change the color theme for header and body rows by changing the values of LESS variables. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md).
+>You can change the color theme for header and body rows by changing the values of LESS variables. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
 ## Add or delete a row dynamically {#add-or-delete-a-row-dynamically}
 
 Tables provide out-of-the box support for dynamically adding or deleting rows at runtime.
 
-1. Select a table row and tap ![cmppr](assets/cmppr.png).
+1. Select a table row and tap ![](assets/cmppr.png).
 1. In the Repeat settings tab, specify the minimum and maximum counts to limit the number of rows in the table.
 1. Click **Done**.
 
-At runtime, you will see **`+`** and *`-`* buttons to add or delete a row.
+At runtime, you will see **+** and *-* buttons to add or delete a row.
 
-![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
+![](assets/add-delete-rows-dynamically.png)
 
 >[!NOTE]
 >
@@ -133,11 +165,13 @@ You can configure a mobile layout for a table from the Styling tab of the Edit c
 
 In the Headers on left layout, the header in the table are transposed on the left with only one cell appearing against a header. Each row in this layout appears as a distinct section. The following images compare a table on a desktop with that on a mobile device.
 
-![desktopview](assets/desktopview.png)
-**Figure:** *Desktop view of a table with Header on left layout*
+![desktop view](assets/desktopview_new.png)
 
-![headersontheleft](assets/headersontheleft.png)
-**Figure:** *Mobile view of a table with Header on left layout*
+Desktop view of a table with Header on left layout
+
+![Headers on the left](assets/headersontheleft_new.png)
+
+Mobile view of a table with Header on left layout
 
 ### Collapsible columns layout {#collapsible-columns-layout}
 
@@ -147,11 +181,13 @@ In the Collapsible column layout, the columns in the table collapse to show one 
 
 The following images compare how a table looks on a device with collapsed and expanded columns.
 
-![collapsed-column](assets/collapsed-column.png)
-**Figure:** *Collapsed columns of a table with only two columns showing up on a mobile device*
+![](assets/collapsed-column.png)
 
-![collapsible_column](assets/collapsible_column.png)
-**Figure:** *Expanded column of a table on a mobile device*
+Collapsed columns of a table with only two columns showing up on a mobile device
+
+![](assets/collapsible_column.png)
+
+Expanded column of a table on a mobile device
 
 ## Merge data in a table {#merge-data-in-a-table}
 
@@ -159,7 +195,7 @@ Tables in adaptive forms allow you to populate the table at runtime using data f
 
 Let’s take example of the following bank transaction summary table that we want to populate with data from an XML file.
 
-![data-merge-table](assets/data-merge-table.png)
+![](assets/data-merge-table.png)
 
 In this example, the Element name property for:
 
@@ -228,13 +264,13 @@ The XML file that contains data in the following format:
 
 ```
 
-In the sample XML, the data for a row is defined by the `<Row1>` tags, which is the element name for the row in the table. Within the `<Row1>` tag, the data for each cell is defined within the tag for its element name, such as `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, and `<type>`.
+In the sample XML, the data for a row is defined by the <Row1> tags, which is the element name for the row in the table. Within the `<Row1>` tag, the data for each cell is defined within the tag for its element name, such as `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, and `<type>`.
 
-To merge this data with the table at runtime, we need to point the adaptive form containing the table to the absolute XML location with wcmmode disabled. For example, if the adaptive form is at *http://localhost:4502/myForms/bankTransaction.html* and the data XML file is saved at *C:/myTransactions/bankSummary.xml*, you can view the table with data at the following URL:
+To merge this data with the table at runtime, we need to point the adaptive form containing the table to the absolute XML location with wcmmode disabled. For example, if the adaptive form is at *https://localhost:4502/myForms/bankTransaction.html* and the data XML file is saved at *C:/myTransactions/bankSummary.xml*, you can view the table with data at the following URL:
 
-*http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&wcmmode=disabled* 
 
-![data-merged-table](assets/data-merged-table.png)
+![](assets/data-merged-table.png) 
 
 ## Use XDP components and XSD complex types {#use-xdp-components-and-xsd-complex-types}
 
@@ -259,7 +295,7 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 ## Key considerations {#key-considerations}
 
 * If you move rows up and down while authoring an XSD-based table, some data loss from table rows is seen in the data XML generated on submitting the form.
-* Each body cell in a default table has a predefined element name associated with it. If you add another table in the adaptive form, the default body cells in the new table will have the same element name as in the first table. In such scenario, the data generated on submitting the form will include data in the default body cells of only one of the tables. Therefore, ensure that you rename the element names for default body cells to keep them unique across tables and avoid data loss.
-
+* Each body cell in a default table has a predefined element name associated with it. If you add another table in the adaptive form, the default body cells in the new table will have the same element name as in the first table. In such scenario, the data generated on submitting the form will include data in the default body cells of only one of the tables. Therefore, ensure that you rename the element names for default body cells to keep them unique across tables and avoid data loss.  
+  
   Note that this is applicable only to the default body cells. If you add more rows or columns to a table will autogenerate unique element names for non-default body cells.
 

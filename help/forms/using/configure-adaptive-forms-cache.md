@@ -1,16 +1,18 @@
 ---
 title: Configure adaptive forms cache
 seo-title: Configure adaptive forms cache
-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client.
-seo-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client.
-uuid: 3bd4e405-1eab-4e02-95cd-eb6ac25d18e3
+description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client. 
+seo-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client. 
+uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
+discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
+docset: aem65
+
 ---
 
-# Configure adaptive forms cache {#configure-adaptive-forms-cache}
+# Configure adaptive forms cache{#configure-adaptive-forms-cache}
 
 A cache is a mechanism to shorten data access times, reduce latency, and improve input/output (I/O) speeds. Adaptive forms cache stores only HTML content and JSON structure of an adaptive form without saving any pre-filled data. It helps in reducing the time required to render an adaptive form or document on the client. It is designed specifically for adaptive forms and also supports adaptive documents.
 
@@ -26,7 +28,7 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
 
 Perform the following steps to configure the adaptive forms cache:
 
-1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
+1. Go to AEM web console configuration manager at https://[server]:[port]/system/console/configMgr.
 1. Click **Adaptive Form and Interactive Communication Web Channel Configuration** to edit its configuration values.
 1. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. The default value is 100.
 

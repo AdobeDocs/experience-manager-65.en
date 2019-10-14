@@ -3,20 +3,22 @@ title: Creating a custom toolbar action
 seo-title: Creating a custom toolbar action
 description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
 seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
-uuid: 6761f389-1baa-4a59-a6e0-0f86f70fc692
+uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: b80a2bfe-6f57-4229-a9ee-1ec87f3c3306
+discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
+docset: aem65
+
 ---
 
-# Creating a custom toolbar action {#creating-a-custom-toolbar-action}
+# Creating a custom toolbar action{#creating-a-custom-toolbar-action}
 
 ## Prerequisites {#prerequisite}
 
 Before you create a custom toolbar action, make yourself familiar with [Using Client Side Libraries](/help/sites-developing/clientlibs.md) and [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## What is an action {#what-is-an-action-br}
+## What is an action <br> {#what-is-an-action-br}
 
 An adaptive form provides a toolbar that lets a form author configure a set of options. These options are defined as actions for the adaptive form. Click the Edit button in the Toolbar for Panel to set the actions supported by adaptive forms.
 
@@ -24,7 +26,7 @@ An adaptive form provides a toolbar that lets a form author configure a set of o
 
 Besides the set of actions provided by default, you can create custom actions in the toolbar. For example, you can add an action to enable the user to review all the adaptive form fields before a form is submitted.
 
-## Steps to create a custom action in an adaptive form {#steps}
+## Steps to create a custom action in an adaptive form <br> {#steps}
 
 To illustrate the creation of a custom toolbar action, the following steps guide you to create a button for end users to review all the adaptive form fields before submitting a filled form.
 
@@ -66,29 +68,29 @@ To illustrate the creation of a custom toolbar action, the following steps guide
                </div>
                <div class="modal-body">
                    <div class="modal-list">
-                       <table>
-                           <tr>
-                               <td>
+                       <table class="table table-bordered">
+                           <tr class="name">
+                               <td class="reviewlabel col-md-3 active">
                                    <label>Your Name is: </label>
                                </td>
                            </tr>
-                           <tr>
-                               <td>
+                           <tr class="pan">
+                               <td class="reviewlabel col-md-3 active">
                                    <label>Your Pan Number is: </label>
                                </td>
                            </tr>
-                           <tr>
-                               <td>
+                           <tr class="dob">
+                               <td class="reviewlabel col-md-3 active">
                                    <label>Your Date Of Birth is: </label>
                                </td>
                            </tr>
-                           <tr>
-                               <td>
+                           <tr class="80cdeclaration">
+                               <td class="reviewlabel col-md-3 active">
                                    <label>Your Total 80C Declaration Amount is: </label>
                                </td>
                            </tr>
-                           <tr>
-                               <td>
+                           <tr class="rentpaid">
+                               <td class="reviewlabel col-md-3 active">
                                    <label>Your Total HRA Amount is: </label>
                                </td>
                            </tr>

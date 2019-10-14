@@ -3,14 +3,16 @@ title: Custom watermark in letter PDF preview
 seo-title: Custom watermark in letter PDF preview
 description: Learn how to create custom watermark in letter PDF preview.
 seo-description: Learn how to create custom watermark in letter PDF preview.
-uuid: f406de81-af94-40dd-97ec-9ca95620f961
+uuid: 5adfede3-9b38-4a12-bf14-6d80cfb0a05a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
+discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
+docset: aem65
+
 ---
 
-# Custom watermark in letter PDF preview {#custom-watermark-in-letter-pdf-preview}
+# Custom watermark in letter PDF preview{#custom-watermark-in-letter-pdf-preview}
 
 ## Overview {#overview}
 
@@ -18,9 +20,9 @@ In the Create Correspondence UI, agent users preview the correspondence in final
 
 To prevent unauthorized use of this data, organizations can impose a watermark on the preview PDF. The default watermark is "PREVIEW", which appears across the PDF.
 
-To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at `https://[server]:[port]/system/console/configMgr`.
+To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://[server]:[port]/system/console/configMgr.
 
-![default-watermark](assets/default-watermark.png)
+![](assets/default-watermark.png)
 
 You can use the following steps to customize the text and appearance of the watermark:
 
@@ -32,7 +34,7 @@ You can use the following steps to customize the text and appearance of the wate
     1. Right-click the **previewwatermark **folder at the following path and select **Overlay Node**:
 
        `/libs/fd/cm/configFiles/previewwatermark`
-
+    
     1. Ensure that the Overlay Node dialog has the following values:
 
        **Path:** /libs/fd/cm/configFiles/previewwatermark
@@ -45,9 +47,13 @@ You can use the following steps to customize the text and appearance of the wate
        >
        >Do not make changes in the /libs branch. Any changes you do make may be lost, because this branch is liable to changes whenever you:
        >
-       >* Upgrade on your instance
-       >* Apply a hot fix
-       >* Install a feature pack
+       >    
+       >    
+       >    * Upgrade on your instance
+       >    * Apply a hot fix
+       >    * Install a feature pack
+       >    
+       >
 
     1. Click **OK** and then click **Save All**. The **[!UICONTROL previewwatermark]** folder is created in the specified path.
 

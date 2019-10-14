@@ -3,37 +3,35 @@ title: Set up the Visual Studio project and build the Windows app
 seo-title: Set up the Visual Studio project and build the Windows app
 description: Learn how to set up a Visual Studio project to build the AEM Forms Windows mobile device app.
 seo-description: Learn how to set up a Visual Studio project to build the AEM Forms Windows mobile device app.
-uuid: 0a72387a-d920-4f66-8983-d500ef0ecd90
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+uuid: 9559e584-2a40-4740-a29a-d7ad66220224
 topic-tags: forms-app
-discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
+discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
+docset: aem65
+
 ---
 
-# Set up the Visual Studio project and build the Windows app {#set-up-the-visual-studio-project-and-build-the-windows-app}
+# Set up the Visual Studio project and build the Windows app{#set-up-the-visual-studio-project-and-build-the-windows-app}
 
 AEM Forms provides the complete source code of the AEM Forms app. The source contains all components to build a custom workspace application. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip`is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on package share.
 
 To get the AEM Forms app source, perform the following steps:
 
-1. Navigate to package share
-
+1. Navigate to package share  
    URL: `https://<server>:<port>/crx/packageshare`.
 
 1. Download the source package. When you download the package, it is added in your AEM Forms package manager.
 1. After it is downloaded, navigate to: `https://<server>:<port>/crx/packmgr/index.jsp`, and install `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-1. To download the source code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.
-
+1. To download the source code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.   
    The source package is downloaded on your device.
 
 The following image displays the extracted contents of the `adobe-lc-mobileworkspace-src-<version>.zip`.
 
-![mws-content-2](assets/mws-content-2.png)
+![](assets/mws-content-1.png)
 
 The following image displays the directory structure of the `windows` folder in the `src` folder.
 
-![win-dir](assets/win-dir.png)
+![](assets/win-dir.png) 
 
 ## Setting up the environment {#setting-up-the-environment}
 
@@ -60,28 +58,28 @@ Perform the following steps to build and deploy AEM Forms app.
 >
 >Data stored on Windows file system for AEM Forms app is not encrypted. It is recommended that you use a third-party tool like Windows BitLocker Drive Encryption to encrypt disk data.
 
-1. In the Visual Studio Standard Toolbar, select **Release** from the drop-down for build mode.
+1. In the Visual Studio Standard Toolbar, select **Release** from the drop-down for build mode.  
 
 1. Select Windows-AnyCPU, Windows-x64, or Windows-x86 based on your platform. Windows-AnyCPU is recommended.
 1. In the Visual Studio Solution Explorer, right-click the project **CordovaApp.Windows** and select **Store &gt; Create AppPackages**.
 
-   ![createapppackages](assets/createapppackages.png)
+   ![](assets/createapppackages.png)
 
    The Create App Packages wizard appears.
 
    The CordovaApp.Windows_3.0.2.0_anycpu.appx installer file is created in the platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test directory.
 
-   If you encounter the error `Retarget to windows 8.1 required`, right-click the error and in the pop-up menu, select **Retarget To Windows 8.1**.
+   If you encounter the error `Retarget to windows 8.1 required`, right-click the error and in the pop-up menu, select **Retarget To Windows 8.1**. 
 
-   ![retarget-solution](assets/retarget-solution.png)
+   ![](assets/retarget-solution.png)
 
 1. In the Create App Packages wizard, select weather or not you want to upload your app to the windows store and then click **Next**.
 
-   ![createapppackageswizard1](assets/createapppackageswizard1.png)
+   ![](assets/createapppackageswizard1.png)
 
 1. Make the changes in the parameters, such as the version and output location of the app build, as required.
 
-   ![createapppackageswizard2](assets/createapppackageswizard2.png)
+   ![](assets/createapppackageswizard2.png)
 
 1. After the project is built, you can install the app using:
 
@@ -96,8 +94,8 @@ Perform the following steps to build and deploy AEM Forms app.
 
    The directory Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contains the four main components in it:
 
-    1. `.appx` file
-    1. Certificate (Currently it is a self-signed certificate by Apache Cordova)
+    1. `.appx` file 
+    1. Certificate (Currently it is a self-signed certificate by Apache Cordova) 
     1. Dependency folder
     1. PowerShell file (.ps1 extension)
 
@@ -109,10 +107,8 @@ There are two ways to install the application on a Windows device.
 
 1. Right-click on the PowerShell file ( `Add-AppDevPackage.ps1)`, and choose **Run with PowerShell**.
 
-1. The setup prompts you to get a developer license. Use Microsoft account credentials to acquire developer license.
-
+1. The setup prompts you to get a developer license. Use Microsoft account credentials to acquire developer license.  
    This license is valid for 30 days, and you can renew it for free.
-
 1. When you acquire the developer license, the setup installs the self-signed certificate on the system and application installs successfully.
 
 ### By using enterprise owned devices {#by-using-enterprise-owned-devices}
@@ -125,7 +121,7 @@ Microsoft recommends that you install a trusted authority issued public certific
 
 To deploy the app:
 
-* Ensure that the device is joined to the domain of the enterprise.
+* Ensure that the device is joined to the domain of the enterprise.   
 * Enable group policy setting.
 
 **To enable group policy setting:**
@@ -151,8 +147,7 @@ For more information, click [here](https://blogs.msdn.com/b/mvpawardprogram/arch
 
 To install the app on Windows using Visual Studio:
 
-1. Connect the device using remote debugger.
-
+1. Connect the device using remote debugger.  
    For more information, see [Run Windows Store apps on a remote machine](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
 1. With your app open in Visual Studio, choose Windows-x64, Windows-x86, or Windows-AnyCPU from the Solution Platforms list, and select **Remote Machine**.
