@@ -22,7 +22,7 @@ Interactive Communications centralize and manages the creation, assembly, and de
 The following are the prerequisites for creating an Interactive Communication:
 
 * Set up a [Form Data Model](/help/forms/using/data-integration.md) containing test data or with an actual data source, such as an instance of Microsoft® Dynamics.
-* Ensure that you have the [Document fragments](/help/forms/using/document-fragments.md).
+* Ensure that you have the [Document fragments](/help/forms/using/create-document-fragments.md).
 * Ensure that you have [Templates for print and web channel](/help/forms/using/web-channel-print-channel.md).
 * Ensure that you have the required [theme](/help/forms/using/themes.md) for the web channel.
 
@@ -110,7 +110,7 @@ For more information on the Interactive Communication authoring interface, see [
  </tbody>
 </table>
 
-   For more information on document fragments, see [Document Fragments](/help/forms/using/document-fragments.md).
+   For more information on document fragments, see [Document Fragments](/help/forms/using/create-document-fragments.md).
 
 1. To set up binding of variables, tap a variable and select ![configure_icon](assets/configure_icon.png) (Configure) and then set up the binding properties in the Properties panel in the sidebar.
 
@@ -124,7 +124,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    Example: A layout table to display gross premium, loyalty discount %, and emergency roadside assistance availability for old and the new policies.
 
-   For more information on layout fragments, see [Document Fragments](/help/forms/using/document-fragments.md).
+   For more information on layout fragments, see [Document Fragments](/help/forms/using/create-document-fragments.md).
 
 1. With the print channel selected, in the **[!UICONTROL Assets]** tab apply the filter to display images. Drag-and-drop the required images to the Interactive Communication, such as for company logo.
 

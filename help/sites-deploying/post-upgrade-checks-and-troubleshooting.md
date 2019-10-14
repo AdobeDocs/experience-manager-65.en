@@ -127,7 +127,7 @@ These scenarios should help to track down the root cause of issues related to up
 
 ### Recreating the Dynamic Media Cloud Configuration after upgrading {#dynamic-media-cloud-configuration}
 
-After upgrading to AEM 6.5 from an earlier version, the Dynamic Media Cloud Configuration from earlier settings may become inaccessible from the AEM 6.5 TouchUI. To resolve this issue, use CRXDE Lite to remove the earlier settings, then create a new Dynamic Media Cloud Configuration. See also [Dynamic Media repository restructuring in AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
+After upgrading to AEM 6.5 from an earlier version, the Dynamic Media Cloud Configuration from earlier settings may become inaccessible from the AEM 6.5 TouchUI. To resolve this issue, use CRXDE Lite to remove the earlier settings, then create a new Dynamic Media Cloud Configuration. See also [Dynamic Media repository restructuring in AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md).
 
 ### Repository Migration Failing  {#repository-migration-failing-}
 
