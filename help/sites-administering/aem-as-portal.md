@@ -3,12 +3,14 @@ title: AEM Portals and Portlets
 seo-title: AEM Portals and Portlets
 description: Learn about Portals and Portles in AEM.
 seo-description: Learn about Portals and Portles in AEM.
-uuid: 50d3f49e-abf3-4544-94ce-078245c685dd
+uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f25d901a-c62c-46b4-aab7-3ca3da1cea5b
+discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
+docset: aem65
+
 ---
 
 # AEM Portals and Portlets{#aem-portals-and-portlets}
@@ -28,13 +30,13 @@ AEM portal architecture includes definitions of portals and portlets.
 
 A portal is a web application that provides personalization, single sign on, content integration from different sources, and hosts the presentation layer of information systems.
 
-You can run JSR 286-compliant portlets in AEM. The portlet component lets you embed a portlet on the page. See [Administering the AEM Content Portlet](#administering-the-aem-content-portlet).
+You can run JSR 286-compliant portlets in AEM. The portlet component lets you embed a portlet on the page. See [Administering the AEM Content Portlet](#administeringthecqcontentportlet).
 
 ### What is a portlet? {#what-is-a-portlet}
 
 Portlets are web components deployed inside of a container that generate dynamic content. The portlet interface is packaged and deployed as a .war file inside of a portlet container. If you are running AEM as a portal, you need the portlet's .war file to run the portlet.
 
-To configure AEM content to appear in a portal, see [Installing, Configuring, and Using AEM in a portlet](#installing-configuring-and-using-aem-in-a-portlet).
+To configure AEM content to appear in a portal, see [Installing, Configuring, and Using AEM in a portlet](#installingconfiguringandusingcqinaportlet).
 
 ### AEM Portal Director {#aem-portal-director}
 
@@ -133,9 +135,9 @@ The portlet can be configured with the following preferences:
  </tbody>
 </table>
 
-### OSGi Web Console {#osgi-web-console}
+#### OSGi Web Console {#osgi-web-console}
 
-Assuming the portal server runs on host localhost, port 8080 and the AEM portlet web application is mounted in the web application context *cqportlet*, the url to for the web console is `http://localhost:8080/cqportlet/cqbridge/system/console`. The default user and password is **admin**.
+Assuming the portal server runs on host localhost, port 8080 and the AEM portlet web application is mounted in the web application context *cqportlet*, the url to for the web console is `https://localhost:8080/cqportlet/cqbridge/system/console`. The default user and password is **admin**.
 
 Open the **Configurations** tab and select **Portal Directory CQ Server Configuration**. Here you specify the base URL to the author and the publish instance. This procedure is described in [Configuring the Portlet](#configuring-the-portlet).
 
@@ -166,8 +168,7 @@ You can either deploy this bundle at runtime or add it to the portlet web applic
 After the cache is deployed, the portlet caches contents from the publish instance. The portlet cache can be invalidated with a dispatcher flush from AEM. To configure the portlet to use its own cache:
 
 1. Configure a replication agent in author that targets the portal server.
-1. Assuming that the portal server runs on host **localhost**, **port 8080 **and the AEM portlet web application is mounted in the context **cqportlet**, the url to flush the cache is `http://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET as the method.
-
+1. Assuming that the portal server runs on host **localhost**, **port 8080 **and the AEM portlet web application is mounted in the context **cqportlet**, the url to flush the cache is `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET as the method.
    **Note:** Instead of using a request parameter, you can send an http header named **Path**.
 
 #### Flushing the Cache via Replication Agent {#flushing-the-cache-via-replication-agent}
@@ -182,20 +183,20 @@ To configure a replication agent for the portal:
 1. In the Websites tab, click the *Tools* tab.
 1. Click **New Page...** in the replication agents **New...** menu.
 
-   ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
+   ![](assets/screen_shot_2012-02-15at40647pm.png)
 
 1. In *Template*, select *Replication Agent*, and enter a name for the agent. Click *Create*.
 
-   ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
+   ![](assets/screen_shot_2012-02-15at40817pm.png)
 
 1. Double-click the replication agent you just created. It displays as invalid as it has not yet been configured.
 
-   ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
+   ![](assets/screen_shot_2012-02-15at41001pm.png)
 
 1. Click **Edit.**
 1. In the **Settings** tab, select the **Enabled** check box, select **Dispatcher Flush **as the serialization type, and enter a retry timeout (for example, 60000).
 
-   ![screen_shot_2012-02-15at42101pm](assets/screen_shot_2012-02-15at42101pm.png)
+   ![](assets/screen_shot_2012-02-15at42101pm.png)
 
 1. Click the **Transport** tab.
 1. In the **URI **field, enter the flush URI (URL) of the portlet. The URI is in the following form:
@@ -204,11 +205,11 @@ To configure a replication agent for the portal:
    https://<wps-host>:<port>/<wps-context>/<cq5-portlet-context>/cqbridge/cqpcache
    ```
 
-   ![screen_shot_2012-02-15at42322pm](assets/screen_shot_2012-02-15at42322pm.png)
+   ![](assets/screen_shot_2012-02-15at42322pm.png)
 
 1. Click the **Extended** tab.
 
-   ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
+   ![](assets/screen_shot_2012-02-15at42515pm.png)
 
 1. In the **HTTP Method** field, type **GET**.
 1. In the **HTTP Headers** field, click **+** to add a new entry and type **Path: {path}**.
@@ -216,7 +217,7 @@ To configure a replication agent for the portal:
 1. Click **OK** to save changes.
 1. To test the connection, click the **Test Connection** link. A log message appears that indicates whether the replication test succeeded. For example:
 
-   ![screen_shot_2012-02-15at42639pm](assets/screen_shot_2012-02-15at42639pm.png)
+   ![](assets/screen_shot_2012-02-15at42639pm.png)
 
 #### Manually Flushing the Portlet Cache {#manually-flushing-the-portlet-cache}
 
@@ -250,7 +251,7 @@ To access the portlet's authentication configuration:
 
 1. Access the Web console at the following URL:
 
-   `http://localhost:8080/cqportlet/cqbridge/system/console`
+   `https://localhost:8080/cqportlet/cqbridge/system/console`
 
    For example, in its default configuration:
 
@@ -275,7 +276,7 @@ To access the portlet's authentication configuration:
 
 In default mode, all requests issued by the portlet for the AEM WCM author instance are authenticated using the same technical user, regardless of the current portal user. Technical User mode is enabled by default. You enable/disable this mode in the respective configuration screen in the OSGi management console:
 
-The technical user specified must exist on the AEM WCM author instance and on the publish instance if **Authenticate on Publish** is enabled. Be sure to give the user access privileges sufficient for authoring work.
+The technical user specified must exist on the AEM WCM author instance and on the publish instance if **Authenticate on Publish **is enabled. Be sure to give the user access privileges sufficient for authoring work.
 
 #### SSO {#sso}
 
@@ -346,7 +347,7 @@ To enable SSO authentication in a AEM portlet:
 1. In the Configuration menu, select Day Portal Director Authenticator from the list of available configurations.
 1. In Mode, select SSO. Leave the other parameters with their default values.
 
-   ![chlimage_1-11](assets/chlimage_1-11.png)
+   ![](assets/chlimage_1-135.png)
 
 1. Click Save to enable SSO for the portlet.
 
@@ -385,7 +386,7 @@ To open the website administration page or to edit a page from the portlet, the 
    </LoginModule>
    ```
 
-1. In the OSGi configuration console, by default located at http://localhost:4502/system/console/configMgr, select **CQ PIN Authentication Handler** from the drop-down menu.
+1. In the OSGi configuration console, by default located at https://localhost:4502/system/console/configMgr, select **CQ PIN Authentication Handler** from the drop-down menu.
 1. Edit the **URL Root Path** parameter to just contain the single value **/**.
 
 ### Privileges {#privileges}
@@ -469,7 +470,7 @@ The portlet's toolbar basically has two view states. Each view and associated bu
 
 #### Publish View {#publish-view}
 
-The publish view only has one button that switches the toolbar to the Manage view. The publish view is represented by the publish.html file in [previous bundle](/help/sites-deploying/configuring-osgi.md). In the HTML, you can use the following placeholders, which are replaced by the portlet with the respective contents when rendered:
+The publish view only has one button that switches the toolbar to the Manage view. The publish view is represented by the publish.html file in [previous bundle](/help/sites-deploying/configuring-osgi.md#bundles). In the HTML, you can use the following placeholders, which are replaced by the portlet with the respective contents when rendered:
 
 #### Publish View Placeholders {#publish-view-placeholders}
 
@@ -479,7 +480,7 @@ The publish view only has one button that switches the toolbar to the Manage vie
 
 #### Manage View {#manage-view}
 
-The manage view has four buttons: Edit, Websites tab, Refresh and Back. The manage view is represented by the manage.html file in the [previous bundle](/help/sites-deploying/configuring-osgi.md). In the HTML, you can use the following placeholders, which are replaced by the portlet with the respective contents when rendered:
+The manage view has four buttons: Edit, Websites tab, Refresh and Back. The manage view is represented by the manage.html file in the [previous bundle](/help/sites-deploying/configuring-osgi.md#bundles). In the HTML, you can use the following placeholders, which are replaced by the portlet with the respective contents when rendered:
 
 #### Manage View Placeholders {#manage-view-placeholders}
 
@@ -522,7 +523,7 @@ title="{text}"/>
 
 #### Installing a Custom Layout {#installing-a-custom-layout}
 
-To install a custom layout, access the portlet’s OSGI Web console **Bundles** section and upload the bundle.
+To install a custom layout, access the portlet’s OSGI Web console **Bundles **section and upload the bundle.
 
 #### Packages {#packages}
 
@@ -668,7 +669,7 @@ Add the portlet component to the paragraph system so that it is available to aut
 
 1. In the **General** component category, select the check box next to the Portlet component and click OK.
 
-![chlimage_1-20](assets/chlimage_1-20.jpeg)
+![](assets/chlimage_1-25.jpeg)
 
 ### Configuring and deploying your portlet applications {#configuring-and-deploying-your-portlet-applications}
 
@@ -711,7 +712,7 @@ Use the Portal component to add a portlet window to your web page. Use the compo
 
 1. Double-click the component to open the Portlet properties.
 1. In the **Portlet Entity** drop-down menu, select the portlet from the list.
-1. Select or clear the **Hide Title Bar** check box depending on whether you want to see the portlet's title bar.
+1. Select or clear the **Hide Title Bar **check box depending on whether you want to see the portlet's title bar.
 1. In the **Portlet Window** field, enter a unique Portlet Window ID, if desired.
 
    >[!NOTE]
@@ -720,7 +721,7 @@ Use the Portal component to add a portlet window to your web page. Use the compo
 
 1. Click **OK**. The portlet displays on your AEM page.
 
-   ![chlimage_1-12](assets/chlimage_1-12.png)
+   ![](assets/chlimage_1-136.png)
 
 ## Installing, Configuring, and Using AEM in a Portlet {#installing-configuring-and-using-aem-in-a-portlet}
 
@@ -738,7 +739,7 @@ By default, the portlet connects to the publish instance at localhost:4503 and t
 >
 >These procedures use the Websphere portal as an example although they are as generic as possible; please be aware that procedures vary for other web portals. Although the steps are essentially identical for all web portals, you need to repurpose the steps for your particular web portal.
 
-### Installing the portlet {#installing-the-portlet}
+#### Installing the portlet {#installing-the-portlet}
 
 To install the portlet:
 
@@ -750,7 +751,7 @@ To install the portlet:
 
 1. Ensure that the portlet application automatically starts by selecting that option or check box and save your changes. You see a message that your installation was successful.
 
-### Configuring the Portlet {#configuring-the-portlet}
+#### Configuring the Portlet {#configuring-the-portlet}
 
 After you install the portlet, you need to configure it so that it knows the URLs of the underlying AEM instances (author and publish). You also can configure other options.
 
@@ -771,17 +772,18 @@ To configure the portlet:
 
     * **Author Base URL**: The base URL for the AEM author instance.
     * **Publish Base URL**: The base URL for the AEM publish instance.
-    * **Author Is Used As Publish**: Is the author instance used as a publish instance (for development)?
+    * **Author Is Used As Publish**: Is the author instance used as a publish
+      instance (for development)?
 
-   ![chlimage_1-13](assets/chlimage_1-13.png)
+   ![](assets/chlimage_1-137.png)
 
 1. Click **Save**. You can now add the portlet to portal pages and use the portal.
 
 ### Content URLs {#content-urls}
 
-When content is requested from AEM, the portlet uses the current display mode (publish or author) and the current path to assemble a complete URL. With the default values, the first url is `http://localhost:4503/content/geometrixx/en.portlet.html`. The value of the `htmlSelector` is automatically added to the URL before the extension.
+When content is requested from AEM, the portlet uses the current display mode (publish or author) and the current path to assemble a complete URL. With the default values, the first url is `https://localhost:4503/content/geometrixx/en.portlet.html`. The value of the `htmlSelector` is automatically added to the URL before the extension.
 
-If the portlet switches to the help mode and the `appendHelpViewModeAsSelector` is selected, then the `help` selector is appended as well, for example, `http://localhost:4503/content/geometrixx/en.portlet.html.help`. If the portlet window is maximized and the `appendMaxWindowStateAsSelector` is selected, then the selector is appended as well, for example, `http://localhost:4503/content/geometrixx/en.portlet.max.help`.
+If the portlet switches to the help mode and the `appendHelpViewModeAsSelector` is selected, then the `help` selector is appended as well, for example, `https://localhost:4503/content/geometrixx/en.portlet.html.help`. If the portlet window is maximized and the `appendMaxWindowStateAsSelector` is selected, then the selector is appended as well, for example, `https://localhost:4503/content/geometrixx/en.portlet.max.help`.
 
 The selectors can be evaluated in AEM and a different template can be used for different selectors.
 
@@ -795,7 +797,6 @@ To add the portlet to the portal page:
 
 1. Be sure you are in the administration window of your app server and navigate to the location where you manage pages. (for example, in WebSphere 6.1, click **Manage Pages**).
 1. Select the name of the portlet and then select an existing page or create a new page.
-
 1. Edit the page layout.
 1. Select the portlet and add it to a container.
 1. Save your changes.

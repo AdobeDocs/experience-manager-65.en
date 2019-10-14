@@ -1,164 +1,114 @@
 ---
 title: AEM Assets Release Notes
 seo-title: AEM Assets
-description: Release notes specific to Adobe Experience Manager 6.5 Assets.
-seo-description: Release notes specific to Adobe Experience Manager 6.5 Assets.
-uuid: f5e7608d-f906-4a35-b442-899703de3587
+description: The new capabilities and enhancements to Adobe Experience Manager 6.5 Assets.
+seo-description: The new capabilities and enhancements to Adobe Experience Manager 6.5 Assets.
+uuid: f785029d-e0fd-494f-b215-7b4caca4e806
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
-discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
+products: SG_EXPERIENCEMANAGER/6.5
+discoiquuid: 1ab34a42-2f0e-4b05-a7b6-2fc8dca07ef5
+docset: aem65
+
 ---
 
-# AEM Assets Release Notes {#aem-assets-release-notes}
+# AEM Assets Release Notes{#aem-assets-release-notes}
 
-The key features, highlights, and enhancements done in AEM 6.5 Assets are covered in these release notes. For detailed information, follow the provided links.
+Here are the key features and highlights of the AEM 6.5 Assets release.
 
-## Adobe Asset Link {#adobe-asset-link}
+## Integration with Adobe Creative Cloud and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
-Adobe Asset Link in Creative Cloud for enterprise streamlines collaboration between creatives and marketers in the content creation process. It is a new native capability in Creative Cloud for enterprise, providing a connection to AEM Assets directly from Adobe Photoshop, Adobe Illustrator, or Adobe InDesign — without leaving these tools.
+AEM offers various ways to integrate with Adobe Creative Cloud and share assets for use in workflows where the creative and marketing or business teams collaborate closely. AEM 6.5 continues to improve on the integration and streamlines it further to expose more opportunities and streamline the existing methods.
 
-To learn more about the capability, prerequisites, and how to access it, see the [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) page.
+Read on to know the specific capabilities and integrations of AEM 6.5 that you can leverage to best support your content velocity use cases.
 
-## Enhanced Smart Tags (powered by Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
+### Adobe Asset Link {#aal}
 
-AEM 6.5 introduces artificial intelligence based Enhanced Smart Tags capability in addition to Smart Tags that was launched in AEM 6.3.
+Adobe Asset Link strengthens collaboration between creatives and marketers in the content creation process. Creatives can access content stored in Adobe Experience Manager Assets (AEM Assets), without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in Photoshop, Illustrator, and InDesign apps.
 
-* Smart Content Service learns customer's business taxonomy and uses it to automatically tag digital assets with customer relevant tags in addition to generic tags. It improves asset discoverability significantly and reduces time to market.
-* Adobe Sensei powers the Smart Content Service, which enables you to train the image recognition algorithm on your business taxonomy. This content intelligence is then used to apply relevant tags on similar assets.
+Adobe Asset Link is a part of [Creative Cloud for enterprise](https://www.adobe.com/creativecloud/business/enterprise.html) offering. For more information about it, including necessary configuration of your AEM deployment, see [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
-To use AEM Assets Enhanced Smart Tags, install the [latest service pack of AEM 6.5](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+![Asset search Photoshop](assets/asset_search_photoshop.png)
 
-## Smart Translation Search (powered by Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
+### Adobe Stock integration {#stock}
 
-AEM 6.5 introduces Smart Translation Search capability to support multilingual search scenarios. Customers with globally distributed teams across multiple locales now have access to search in different languages without having to go through costly and time-consuming translation workflows.
+Your organization can use its Adobe Stock enterprise plan within AEM Assets to ensure that licensed assets are broadly available for your creative and marketing projects. You can quickly find, preview, and license Adobe Stock assets that are saved in AEM, using the powerful DAM capabilities of AEM.
 
-* Search query is translated without manual intervention.
-* Smart Tags are generated in English and are machine-translated to others languages.
-* Multilingual search is built using open source library Apache Joshua that supports more than 50 languages.
+Adobe Stock service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects.
 
-## User Experience {#user-experience}
+For more info, see [Use Adobe Stock assets in AEM Assets](/help/assets/aem-assets-adobe-stock.md).
 
-AEM 6.5 delivers significant user experience improvements in areas of browse, search, multi-page assets and administration tools. Details below:
+![Preview Adobe Stock image and license from within AEM Assets](assets/stock_image_preview_license_options.png)
 
-Browse improvements
+Preview Adobe Stock image and license from within AEM Assets
 
-* New Content Tree rail to quickly navigate an asset hierarchy. In combination with the list view, this restores the Classic UI interaction model to browse asset hierarchies.
-* New Keyboard Shortcuts such as m to move assets, p to open the properties page, Ctrl + C to copy operation and many more.
-* Improved scrolling, lazy loading experience in card and list view for browsing large number of assets.
-* Improved Card View with support for different sized cards based on view setting.
-* Improved asset detail experience with ability to view, navigate to “previous” or "next" asset along with number of assets, current asset.
+![Search and filter the licensed Adobe Stock images in AEM](assets/aem-search-filters2.jpg)
 
-Search improvements
+Search and filter the licensed Adobe Stock images in AEM
 
-* New Search back button with ability to navigate to a search item and come back to same position in search results without running the search query again.
-* New Search results count to display number of search results.
-* Improved File Type Search Filter with ability to filter search results based on fine-grained mime types such as JPG, PNG, and PSD, as compared to previous image, document, multimedia options.
-* Improved search filters with accurate time stamps instead of previous time slider functionality.
+### Dynamic references in InDesign {#dynamic-references-in-indesign}
 
-Multi-page assets improvements
+The AEM Assets used in Adobe InDesign files are dynamic. The references update automatically if the referenced assets moves in the JCR hierarchy. For more information see, [Managing compound assets](/help/help/assets/managing-linked-subassets.md).
 
-* Improved multi page assets browsing experience with reduced number of clicks.
-* Improved comments and annotations support with all of them collated at asset level rather than page level.
+## Brand Portal capabilities {#brand-portal-capabilities}
 
-Admin tools improvements
+AEM Assets Brand Portal helps you easily acquire, effectively control, and securely distribute the approved assets to external vendors/agencies and internal business users across devices. It helps improve the efficiency of asset sharing, accelerates the time-to-market for assets, and eliminates the risk of non-compliant usage and unauthorized access.
 
-* Improved Property picker in Admin tools for Metadata, Search and Reports with Type ahead and browsing capability to simplify admin experience.
+For more info, see [What's new in Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html).
 
-Catalogs
+## Connected Assets {#connectedassets}
 
-* Improved user experience, alignment with Templates user interface. For more information, see [Catalog Producer](../sites-administering/catalog-producer.md).
+In large enterprises the infrastructure required to create websites can be distributed. At times, the website creation capabilities and the required digital assets reside in different silos.
 
-## Metadata {#metadata}
+AEM Sites offers capabilities to create web pages and AEM Assets is the Digital Asset Management (DAM) system that supplies the required assets for websites. AEM now supports the above use case by integrating AEM Sites and AEM Assets.
 
-AEM 6.5 includes multiple advanced metadata management capabilities to manage metadata at scale and enforce metadata integrity through rules and validations. Here are the key capabilities:
+For more info, see [Use assets from a Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* New Bulk Metadata Export capability to export (all, selective) metadata for large number of assets in CSV format for editing, sharing, and third-party integration.
-* New Bulk Metadata Import capability to import CSV file for adding new metadata, updating existing metadata for multiple assets in one go. This operation is asynchronous and does not hinder system performance. Once complete, user is notified via AEM's Notification system.
-* New Cascading and Contextual Metadata using Metadata Schema Tool. It’s now possible to define chains of dependencies, and value mappings between fields. You can also define the context in which metadata form fields are displayed/hidden. This way, you can display only relevant fields at any moment depending on values in other fields.
+![Drag and drop DAM assets from an AEM instance in Sites page on a different AEM instance](assets/connected-assets-drag-and-drop-only.gif)
 
-## Reports {#reports}
+Drag and drop DAM assets from an AEM instance in Sites page on a different AEM instance
 
-AEM 6.5 delivers significant Asset reporting enhancements:
+## Dynamic Media {#dynamic-media}
 
-* New enterprise-level, scalable (for large repositories) reports framework applying Sling jobs for asynchronously processing report requests. You can schedule report at a specific date and time. You can also add custom columns to a report.
-* New OOTB reports most commonly asked by customers such as Disk Usage, Files, Link Shares, Publish to Brand Portal, and Smart Tags Training.
-* New Reports creation and management UI with fine grained options, ability to access archived reports, see report run status (success, failed, queued, and so on).
+Dynamic Media provides enhanced rich-media authoring and delivery in AEM Assets to drive cutting-edge experiences that are immersive and personalized. By uploading a single high-quality master asset and using our advanced cloud rendering & viewers, you can deliver any combination of renditions on-the-fly to support your organization’s media strategy.
 
-## Brand Portal {#brand-portal}
+For more details on new Dynamic Media features see [Dynamic Media Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
 
-* **6.3 Platform Upgrade**: Brand Portal upgraded from AEM 6.0 to AEM 6.3, with new features and performance improvements.
-* **Parallel Publish**: Up to replications can occur between AEM Assets and Brand Portal (previously 1), which significantly improves publishing performance
-* **Schema & Search Facet Publish**: Ability to publish metadata schemas and custom search facets to Brand Portal, which eliminates effort duplication.
-* **Bulk Tags Publish**: Ability to publish taxonomy (along with hierarchy) to Brand Portal, which eliminates effort duplication.
-* **Self-sign up or Request access**: Workflow for non-registered users to Brand Portal.
-* **In-app (on screen) Maintenance Notification**: Notifications are displayed well in advance to avoid disruption in business.
-* **Reporting improvements**: Three OOTB reports are available: downloads, publish and link-shares.
-* **DRM-based restrictions**: After a licensed asset expires, it is no longer available for download from Brand Portal.
+### 360 Video Support {#video-support}
 
-## AEM desktop app {#aem-desktop-app}
+Manage your 360-video files directly in AEM using Dynamic Media’s cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. For more information see [Using 360 Video](/help/assets/360-video.md).
 
-AEM desktop app is updated to version 1.8, which is compatible with AEM 6.5. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.
-Here is a list of AEM desktop app highlights since AEM 6.3 was released:
+### Custom Video Thumbnails {#custom-video-thumbnails}
 
-* Ability to upload hierarchical folders in the background.
-* UI to monitor asset uploads in the background.
-* Caching improvements, including a UI to manage caching parameters.
-* Broader support for AEM authentication configurations (SAML/SSO) and network proxy.
-* Supportability: easy access to logs from user interface.
-* Improved stability and fixes for customer issues.
+You can now customize the thumbnails for your video assets using frames from the video itself or other content stored in the DAM. For additional instructions see [About Video Thumbnails](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-For easier access to the documentation and best practices, the following documentation is available:
+### Accessibility Enhancements {#accessibility-enhancements}
 
-* [User guide](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html), aimed at end users working with the application
-* [Best practices guide](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app-best-practices.html), aimed at end users and administrators
-* [Installation guide](https://helpx.adobe.com/experience-manager/desktop-app/install-configure-aem-desktop-app.html), aimed at administrators setting up AEM and AEM desktop app to work together
+Dynamic Media viewers now include support for enhanced accessibility features like Aria-support, screen-readers, and Alt-text. For additional details see [Dynamic Media viewers Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
 
-## Tiered Storage {#tiered-storage}
+## Search experience enhancement {#search-experience-enhancement}
 
-AEM 6.5 includes a set of features that support various tiered storage preferences and implement lifecycle rules. The storage options also support (but are not limited) public clouds - AWS or Azure.
+AEM 6.5 onwards, marketers can discover the desired assets faster from the search results page. The search facets are updated with the number of assets even before applying the search filter. Seeing the expected count against the filter helps users navigate through the search results efficiently. For more information, see [Search assets in AEM](/help/assets/search-assets.md).
 
-* The ability for users to select and later change storage class at will and define rules for storage of assets from one class to another or manage the lifecycle of their assets.
-* The ability for users to lower their storage cost by selecting a different AWS or Azure.
+![See the number of assets without filtering search results in search facets](assets/asset_search_results_in_facets_filters.png)
 
-For an overview of supported platforms, please refer to the [Technical Requirements Documentation](../sites-deploying/technical-requirements.md).
+See the number of assets without filtering search results in search facets.
 
-## Closed User Group {#closed-user-group}
+## Usability enhancement {#usability-enhancement}
 
-* In AEM 6.5, Closed User Group or CUG provides a way to restrict folder access on publish instance, it’s a touch UI option to add principals through folder properties page at the folder level and are applied to all folder and subfolders/assets inside.
-* In publish mode, if a CUG is configured and authorization enabled on a folder, users are redirected to a login page when they try to access the folder. Therefore, authorized users can access the folder and its assets only after successful login. Hence, CUG restricts read access to a given tree in the content repository for everyone except selected principals.
+You can now select all the assets within a folder or from a search result in one go. It helps you to manage multiple assets quickly. The check box selects all the assets that fits the scenario, say a search result and not just the assets that are visible in the AEM interface.
 
-## Dynamic Media add-on {#dynamic-media-add-on}
+![Use Select All option to select all the assets in one click.](assets/select-all-in-aem-assets.gif)
 
-Dynamic Media in 6.4 supports a new mode - where master asset is uploaded and managed with AEM Assets web UI, and dynamic renditions and other dynamic media features are handled in the background by the Dynamic Media cloud delivery service.
+Use Select All option to select all the assets in one click.
 
-In this mode (introduced first with the release of [AEM 6.3 Feature Packs 14410 and 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), users benefit from end-to-end asset management and dynamic media features using the modern AEM Assets web UI, and still leverage the delivery services that are backwards compatible with Dynamic Media Classic (Scene7)—including delivery URLs, which are unchanged.
+## Metadata enhancements {#metadata-enhancements}
 
-In addition, AEM 6.5 introduces new features powered by Adobe Sensei, enhancements for emerging media like VR and 3D, Dynamic Media viewers, and support for Experience Fragments in Interactive Images and Carousel Banners.
+Assets lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages. You can now assign a folder metadata schema to an existing folder or when creating a new folder. For more information, see [Folder metadata schema](/help/assets/folder-metadata-schema.md).
 
-### Smart Crop (powered by Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
+When specifying cascading metadata, the choices can be loaded from a JSON file at the run-time, say instead of typing manually in the form. For more information, see [Cascading metadata](/help/help/assets/cascading-metadata.md).
 
-* Smart Crop automatically provides non-destructive cropping of images to preserve the point of interest for responsive design. You can preview cropped suggestions and manually adjust them, if necessary.
-* This feature also enables automated swatch generation for product imagery. Automated swatch generation helps to add color swatches, pattern swatches, or both to product images automatically.
+## Reporting enhancements {#reporting-enhancements}
 
-See [Image Profiles](../assets/image-profiles.md) documentation to learn more.
-
-See also [Adding Dynamic Media Assets to Pages](../assets/adding-dynamic-media-assets-to-pages.md) documentation to learn more about using Smart Crop with the Dynamic Media component.
-
-### Smart Imaging {#smart-imaging}
-
-* Smart imaging leverages each user's unique viewing characteristics to automatically serve images optimized for their experience, resulting in better performance and engagement.
-* Images are automatically converted to different formats based on browser capabilities.
-* Image quality settings are determined in the browser and applied respectively. This intelligence keeps image loading performance acceptable for limited bandwidth and slow connection speeds.
-
-See [Smart Imaging](../assets/imaging-faq.md) documentation to learn more.
-
-### Emerging Media and Viewer Enhancements {#emerging-media-amp-viewer-enhancements}
-
-* New viewers are supported, providing better, immersive experiences for the user.
-* Panoramic Viewer helps engage the user and provide ability to better experience room scenes, properties, locations, and landscapes. See [Panoramic Images](../assets/panoramic-images.md) documentation to learn.
-
-* VR Viewer provides immersive experience for properties, locations, and landscapes.
-* Vertical Image Viewer optimized for product imagery.
-* Keyboard accessibility improvements.
+The Content Fragments and link shares are included in the Asset Downloaded report now. For more information, see [Assets reports](/help/help/assets/asset-reports.md).

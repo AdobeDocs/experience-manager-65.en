@@ -3,12 +3,14 @@ title: Configuring Video Tracking for Adobe Analytics
 seo-title: Configuring Video Tracking for Adobe Analytics
 description: Learn about configuring video tracking for SiteCatalyst.
 seo-description: Learn about configuring video tracking for SiteCatalyst.
-uuid: c72d2d59-915d-4af1-aeb9-821915979571
+uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
+discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
+docset: aem65
+
 ---
 
 # Configuring Video Tracking for Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
@@ -17,25 +19,25 @@ There are several methods available for tracking video events, 2 of which are le
 
 >[!NOTE]
 >
->Before you continue, make sure that you have a **playable video** uploaded within AEM.
->
->To ensure that your videos play on the page, consult **[this tutorial](/help/sites-authoring/default-components-foundation.md#video)** for information about how to transcode video files in AEM.
+>Before you continue, make sure** **that you have a** playable video** uploaded within AEM.
+
+>To ensure that your videos play on the page, consult ** [this tutorial](/help/sites-authoring/default-components-foundation.md#video)** for information about how to transcode video files in AEM.
 
 Use the following procedure to set up a framework for video tracking using each method.
 
 >[!NOTE]
 >
->For new implementations, it is recommended that you **do not use** the legacy options for video tracking. Please use the **Milestones** method instead.
+>For new implementations, it is recommended that you **do not use** the legacy options for video tracking. Please use the **Milestones **method instead.
 
 ## Common steps {#common-steps}
 
-1. Set up a web page by dragging a **video component** from the sidekick and adding a playable **video as an asset** for the component
+1. Set up a web page by dragging a** video component** from the sidekick and adding a playable **video as an asset** for the component
 
 1. [Create an Adobe Analytics configuration and framework](/help/sites-administering/adobeanalytics.md).
 
-    * The examples in the sections that follow use the name **my-sc-configuration** for the configuration and **videofw** for the framework.
+    * The examples in the sections that follow use the name **my-sc-configuration** for the configuration and** videofw** for the framework**.**
 
-1. On the framework page, select an RSID and set the usage to all. ([http://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](http://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
+1. On the framework page, select an RSID and set the usage to all. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. From the General component category in Sidekick, drag the Video component onto the framework.
 1. Select a tracking method:
 
@@ -133,7 +135,7 @@ The following table describes the default CQ variables that are provided for the
 
 1. To map the CQ variables to Adobe Analytics properties, drag the Adobe Analytics properties from ContentFinder beside the CQ variable on the component.
 
-   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html) guide.
+   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html) guide.
 
 1. [Add the framework](/help/sites-administering/adobeanalytics.md) to the page.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
@@ -211,7 +213,7 @@ The Adobe Analytics tracking data examples that follow apply to Milestone tracki
 
 For this example, the Video component appears as follows on the framework page:
 
-![video1](assets/video1.png)
+![](assets/video1.png)
 
 >[!NOTE]
 >
@@ -219,30 +221,33 @@ For this example, the Video component appears as follows on the framework page:
 
 Calls to Adobe Analytics using the example provided should look like this when viewed with DigitalPulse Debugger:
 
-![chlimage_1-156](assets/chlimage_1-156.png)
+![](assets/chlimage_1-128.png)
 
 *This is the **first call** made to Adobe Analytics containing the following values:*
 
-* *prop1 and eVar1 for eventdata.a.media.name,*
-* *props2-4, along with eVar2 and eVar3 containing contentType (video) and segment (1:O:1-4)*
+* *prop1 and eVar1 for eventdata.a.media.name, *
+* *props2-4, along with eVar2 and eVar3 containing contentType (video) and segment (1:O:1-4) *
 * *event3 which was mapped to eventdata.events.a.media.view.*
 
-![chlimage_1-157](assets/chlimage_1-157.png)
+![](assets/chlimage_1-129.png)
 
 *This is the **third call** made to Adobe Analytics:*
 
-* *prop1 and eVar1 contain `a.media.name;`*
-* *event1 because a segment has been viewed*
+* *prop1 and eVar1 contain a.media.name; *
+* *event1 because a segment has been viewed
+  *
 * *event2 sent with time played = 4*
-* *event11 sent because eventdata.events.milestone8 has been reached*
-* *prop2 to 4 are not sent (since eventdata.events.a.media.view was not triggered)*
+* *event11 sent because eventdata.events.milestone8 has been reached
+  *
+* *prop2 to 4 are not sent (since eventdata.events.a.media.view was not triggered)
+  *
 
 ## Non-Legacy Milestones {#non-legacy-milestones}
 
 The Non-Legacy Milestones method is similar to the Milestones method except milestones are defined using percentages of the track length. The commonalities are as follows:
 
 * When a video playback passes a milestone, the page calls Adobe Analytics to track the event.
-* The [static set of CQ variables](#milestones) that are defined for mapping with Adobe Analytics properties.
+* The [static set of CQ variables](#cqvars) that are defined for mapping with Adobe Analytics properties.
 * For each milestone that you define, the component creates a CQ variable that you can map to a Adobe Analytics property.
 
 The name of these CQ variables use the following format:
@@ -268,7 +273,7 @@ eventdata.events.milestoneXX
 
 1. To map the CQ variables to Adobe Analytics properties, drag the Adobe Analytics properties from ContentFinder beside the CQ variable on the component.
 
-   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html) guide.
+   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html) guide.
 
 1. [Add the framework](/help/sites-administering/adobeanalytics.md) to the page.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
@@ -314,15 +319,20 @@ This method is similar to the Milestones method with the difference that the mil
 
    **Sample calls** to Adobe Analytics using the example provided should look like this when viewed with DigitalPulse Debugger:
 
-   ![lmilestones1](assets/lmilestones1.png)
+   ![](assets/lmilestones1.png)
 
    *The **pev3** variable sent in the call contains the following information:*
 
     * *Name* - The name of the video file (*film.avi*)
+
     * *Length* - The length of the video file, in seconds (*100*)
+
     * *Player Name* - The video player used to play the video file (*HTML5 video*)
+
     * *Total Seconds Played* - The total number of seconds the video was played (*25*)
+
     * *Start Timestamp* - Timestamp that identifies when the video play started (*1331035567*)
+
     * *Play Session* - The details of the play session. This field indicates how the user interacted with the video. This might include data such as where they started playing the video, whether they used the video slider to advance the video, and where they stopped playing the video (*L10E24S58L58 - video was stopped at sec. 25 of section L10, then skipped to sec. 48*)
 
 ## Legacy seconds {#legacy-seconds}
@@ -366,10 +376,10 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
    Calls to Adobe Analytics using the example provided should look like this when viewed with DigitalPulse Debugger:
 
-   ![lseconds](assets/lseconds.png)
+   ![](assets/lseconds.png)
 
-   *The call is similar to the Legacy Milestones call above. Please see the information on pev3 **[provided there](/help/sites-administering/adobeanalytics.md)**.*
+   *The call is similar to the Legacy Milestones call above. Please see the information on pev3 ** [provided there](/help/sites-administering/adobeanalytics.md)**.*
 
 **References used in this tutorial:**
 
-[0] [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html)
+[0] [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html)

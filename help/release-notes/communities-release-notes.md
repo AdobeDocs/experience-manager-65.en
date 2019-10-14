@@ -3,68 +3,77 @@ title: AEM Communities Release Notes
 seo-title: AEM Communities
 description: Release notes specific to Adobe Experience Manager 6.5 Communities.
 seo-description: Release notes specific to Adobe Experience Manager 6.5 Communities.
-uuid: 2de9f511-2a61-4003-9b2c-d6728bc9d57a
+uuid: 1b436959-581c-4b34-b2df-cccc5727da59
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
 topic-tags: release-notes
 content-type: reference
-discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
+products: SG_EXPERIENCEMANAGER/6.5
+discoiquuid: c3505807-1550-491a-8619-e87839afca4f
+docset: aem65
+
 ---
 
-# AEM Communities Release Notes {#aem-communities-release-notes}
+# AEM Communities Release Notes{#aem-communities-release-notes}
 
-This section provides information on the improvements to AEM Communities since the 6.3 release. To learn about the new features in greater detail, see [What's New in AEM 6.5 Communities](/help/communities/whats-new-aem-communities.md).
+Read on for the improvements to AEM Communities since the 6.4 release. To learn about the new features in greater detail, see [AEM 6.5 Communities User Guide](https://helpx.adobe.com/experience-manager/6-4/communities/user-guide.html).
 
-To obtain the latest release, see the [Deploying Communities](/help/communities/deploy-communities.md#latest-releases) section of the documentation.
+To obtain the latest release, see the [Deploying Communities](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) section of the documentation.
 
-## Main improvements {#main-improvements}
+## Major enhancements {#major-enhancements}
 
-Community Sites:
+### Enhancements to community engagement {#enhancements-to-community-engagement}
 
-* Community Administrators can now:
+**@Mentions support**
+AEM Communities now allows registered users to tag (mention) other registered members to elicit their attention, in User Generated Content. The tagged (mentioned) members are then notified, with deep link to the corresponding User Generated Content. Users can, however, opt to disable/enable the web and email notifications.
 
-    * Delete permanently Community Sites
-    * Select a context-aware configuration folder for Community Sites
+![At mentions support](assets/at-mentions.png)
 
-Community Groups:
+Community users need not search for their first name, last name, or user name to see if anyone has reached out to them or needs their attention. Moreover, it allows the UGC authors to seek response from specific registered users who can best address the issue and add inputs.
 
-* Community Administrators can now:
+The community administrators need to **Enable Mention **on community components to allow registered users use the functionality on those components.
 
-    * Delete permanently Community Groups
-    * Create Community Groups in multiple languages
-    * Add enablement catalog & assignments within Community Groups
+**Group messaging**
 
-* Enablement Managers can now
+Registered community members can now send direct messages in bulk to groups through a single email composition, instead of sending the same message individually to group members. To allow [group messaging](/help/communities/configure-messaging.md), enable both the instances of [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
 
-    * Create and assign resources and learning paths within Community Groups
+![Group message](assets/group-messaging.png)
 
-File Library:
+### Enhancements to Bulk Moderation {#enhancements-to-bulk-moderation}
 
-* Community Members now have multiple enhancements to the File Library e.g. sort orders, tagging...
+**Custom filters in Bulk Moderation
+** [Custom filters](/help/communities/moderation.md#custom-filters) can now be developed and added to Bulk Moderation UI.
 
-Notifications:
+A [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) demonstrating filtering through tags is available in [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). This project can be used as a base to develop analogous custom filters.
 
-* Community Members now receive notifications upon approval of contributions that went through a moderation process
+![Custom filters](assets/custom-tag-filter.png)
 
-Moderation:
+**List View in Bulk Moderation**
 
-* Automated Spam Detection Filter
-* Community Moderators have additional Moderation filters (e.g. answered/unanswered questions)
-* Community Moderators can bookmark and link moderation to predefined filters (e.g. all posts pending approval)
+New List View with improved UI has been provided in bulk moderation to display User Generated Content entries.
 
-Overall compatibility with foundational changes in AEM 6.5.
+![Bulk moderation in list view](assets/list-view-moderation.png)
 
-Note: all these features are also available for AEM 6.3. Please check the AEM Communities release notes for [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
+### Enhancements to Site and Group Management {#enhancements-to-site-and-group-management}
 
-## Known Issues {#known-issues}
+**Author side site and group administrators**
 
-* **Moderation** - Not able to delete parent post as a single delete operation from the bulk moderation UI (CQ-4236797)
-* **Console** - Forgot Username or Password link is redirecting to the Login Page instead of the corresponding password retrieval form (CQ-4237682)
+Communities, AEM 6.5 onwards, allows decentralized administration (and management) of different community sites and groups/ nested groups. Organizations hosting multiple community sites and nested groups can now select members for administrator roles on Author side at the time of site (and group) creation.
 
-## Select Features {#select-features}
+![Site administrator](assets/site-admin.png)
 
-Expert Scoring (*Powered by Sensei*) - is used to enable gamification, which is an effective way of encouraging and rewarding valuable community behavior. It can also be used to identify experts for recommendation or marketing purposes.  
+Site Administrators can create a group at any level of hierarchy and become the default administrators. These administrators can later be removed by other group administrators. Group administrators can manage their group G1 and create a subgroup nested under G1.
 
-## Demonstrations {#demonstrations}
+### Enhancements to enablement {#enhancements-to-enablement}
 
-All these features can be demonstrated using the [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) available publicly on GitHub.com when using the AEM Communities demo scenario and also within the new We.Retail reference implementation.
+**SCORM 2017.1 support**
+
+The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
+
+**Keyboard navigation support on enablement components
+**Enablement components (for example Catalog and Course Playing, Assignments, File Library) in AEM Communities support keyboard navigation for improved accessibility.
+
+### Other enhancements {#other-enhancements}
+
+* **Solr 7 support
+  **AEM 6.5 Communities supports Apache Solr 7.0 version of the search platform while setting up MSRP and DSRP.
+

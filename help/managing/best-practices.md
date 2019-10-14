@@ -3,13 +3,15 @@ title: Managing Projects - Best Practices Checklist
 seo-title: Managing Projects - Best Practices Checklist
 description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
 seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
-uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
+uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 topic-tags: introduction
-discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
+discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
+docset: aem65
+
 ---
 
 # Managing Projects - Best Practices Checklist{#managing-projects-best-practices-checklist}
@@ -25,7 +27,7 @@ To help you, the best practices consist of:
 
 * Documentation, based directly on the [checklist](/help/managing/best-practices-checklist.md), that details the:
 
-    * [Project Heartbeat](#project-heartbeat-dashboard) analysis.
+    * [Project Heartbeat](#projectheartbeat) analysis.
     * [Status by Role](#status-by-role) overview.
     * [Phases and Milestones](#phases-and-milestones).
     * [Key Persona](#persona) and their involvement at every (relevant) stage.
@@ -51,7 +53,7 @@ The **Project Heartbeat** worksheet provides a graphical overview of critical me
 
 ## Status by Role {#status-by-role}
 
-The **Status by Role** worksheet shows detailed breakdown of **[Health, Quality and Completeness](#project-heartbeat-dashboard)** by **[Phase](#phases-and-milestones)** and **[Persona](#persona)**.
+The **Status by Role** worksheet shows detailed breakdown of [**Health**, **Quality** and **Completeness**](#projectheartbeat) by ** [Phase](#phases-and-milestones)** and ** [Persona](#persona)**.
 
 ## Phases and Milestones {#phases-and-milestones}
 
@@ -69,11 +71,11 @@ Preparation of your project forms the basis of the entire project. You need to d
 
 * **Business Rationale**
 
-  * The fundamental reasons and justification for undertaking the project.
+    * The fundamental reasons and justification for undertaking the project.
 
 * **Scope and Schedule**
 
-  * A basic scope, and rough schedule should be made available to define what is required, and within which time frame; if it helps clarify the situation, you can also define what lies outside the scope.
+    * A basic scope, and rough schedule should be made available to define what is required, and within which time frame; if it helps clarify the situation, you can also define what lies outside the scope.
 
 How you prepare, plan and run your project and implement your solution will be affected by the restrictions you are operating under e.g. fixed budget, fixed timeline, quantity of content, quality required.
 
@@ -81,7 +83,7 @@ As always, adjusting any of the factors will impact the others. For example redu
 
 The Four Factors:
 
-![projectphases_fourphases](assets/projectphases_fourphases.png)
+![](assets/projectphases_fourphases.png)
 
 #### Milestones {#milestones}
 
@@ -92,14 +94,16 @@ The Four Factors:
     * What do you want to achieve/provide?
     * Who will benefit?
     * What is the scope?
+
         * If it helps clarify the situation, you can also define what lies outside the scope.
+
     * How will you define success?
     * How will you measure success?
-        * What are the requirements, business and technical?
-        * Are there legacy systems to be replaced and if so, is there data to be migrated?
-        * Who will be involved?
-        * How will you measure progress?
-        * How often will you review progress during the life of the project?
+    * What are the requirements, business and technical?
+    * Are there legacy systems to be replaced and if so, is there data to be migrated?
+    * Who will be involved?
+    * How will you measure progress?
+    * How often will you review progress during the life of the project?
 
 * **Budget**
 
@@ -146,6 +150,7 @@ Planning your project consolidates the preparation. Here you need to start conve
     * Answer questions.
     * Ensure that everyone has the same knowledge base.
     * Get commitment from everyone who will be involved - this will have to be earned.
+
         * By involving prime players (including prospective authors) at the very start of the project, you increase your chances of getting their commitment to the project.
 
 ### Development Preparation {#development-preparation}
@@ -177,6 +182,7 @@ Planning the development is key to ensure that your project is built on a solid 
     * Third party systems
     * Interfaces; hardware, software and human interaction
     * Servers for each environment; see the [Technical Requirements](/help/sites-deploying/technical-requirements.md) and [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md)
+
     * Processes for each environment; for example, deployment and maintenance requirements
     * Maintenance activities (Datastore GC, TarPM optimization, etc.)
     * [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) caching
@@ -245,6 +251,7 @@ On a similar basis the operations must be properly planned to ensure you have th
   For example:
 
     * A list of roles (i.e. groups) with `read`/ `write` access definitions for each
+
     * Definition of the use of privileges that impact the publish environment; for example, `replicate`
     * For users with minimal privileges, workflows should be defined
     * Users in the `editor` group should not have `admin` rights nor be part of the `administrators` group
@@ -280,13 +287,16 @@ Development is a crucial phase that requires more than just coding.
 
     * Architecture
     * [Development tools](/help/sites-developing/dev-tools.md)
+
         * A typical environment consists of:
+
             * an issue tracking system; such as Jira
             * an IDE; such as Eclipse
             * a build management tool; such as Maven
             * a tool for continuous integration; such as Jenkins
             * a tool for version control; such as GIT/SVN
             * a build artifact repository manager; such as Archiva/Nexus
+
     * Third party software integration/dependencies
     * [Solution integration/dependencies](/help/sites-administering/integration.md)
     * Deployment cadence
@@ -368,6 +378,7 @@ Once the new application is available it will need to undergo stringent testing,
 
     * [Performance Testing](/help/sites-deploying/configuring-performance.md)
     * [How to plan and run testing](/help/sites-developing/planning.md)
+
     * [Basic Performance Guidelines](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
 
   >[!NOTE]
@@ -458,6 +469,7 @@ The project sponsor is:
 
 * Responsible for providing/presenting the business case for the project.
 * Key to shaping and defining the scope of the project; including:
+
     * the definition of, and criteria for, success
     * the main KPIs
 
@@ -484,10 +496,12 @@ The solution architect:
 The business analyst:
 
 * Is primarily responsible for gathering and analyzing the high-level requirements, then transforming these into specifications:
+
     * for the project manager to use when planning the development
     * for the development team to work from during design and development.
 
 * Works closely with the client to analyse the requirements. They match these against:
+
     * The definition of success.
     * The criteria for success.
     * KPIs (both business and performance based).
@@ -499,6 +513,7 @@ The development lead:
 * Is responsible for the technical delivery of the project.
 * Is responsible for selecting a development methodology that is compliant with client requirements.
 * Draws up the development strategy:
+
     * ensuring that it is aligned with the business and performance KPIs
     * taking into account the success criteria and definition
 
@@ -518,6 +533,7 @@ The system engineer:
 
 * Is responsible for overseeing the project infrastructure.
 * Is responsible for:
+
     * the setup of internal development and test environments
     * for matching those systems to the client systems
 
@@ -533,20 +549,27 @@ The security lead:
 ### Other Persona {#other-persona}
 
 * Stakeholders
+
     * People (often from the business) who have an interest (stake) in the success of the project. They often contribute to the budget.
 
 * Legal
+
     * Legal advice is required when negotiating contracts.
 
 * Trainers
+
     * Depending on the scale and nature of the project, specialized trainers can be used to develop and present training sessions for the relevant groups.
 
 * Technical Writers
+
     * Depending on the scale and nature of the project, specialized technical writers can be used to write guidelines and manuals for specific groups; e.g. a Maintenance manual for system administrators or a User Guide for the authors.
 
 * System Administrators
+
     * Responsible for the ongoing operation of the system.
+
 * Authors and End Users
+
     * The people who will use the system to create and maintain your website content.
 
 ## Required Documents and Deliverables {#required-documents-and-deliverables}
@@ -579,12 +602,7 @@ Deliverables are often used as **Required Documents** for either the current or 
 
 For best practices on deploying, administering, developing, or authoring, see the following:
 
-* Other Best Practices and Guidelines related to Managing an AEM project:
-    * [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md)
-    * [Enterprise DevOps](/help/managing/enterprise-devops.md)
-    * [SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md)
-    * [AEM and the Web Accessibility Guidelines](/help/managing/web-accessibility.md)
-    * [General Data Protection Regulation](/help/managing/gdpr-compliance.md)
+* [Other Best Practices and Guidelines related to Managing an AEM project](/help/managing/manage-reference.md)
 * [Deploying and Maintaining best practices](/help/sites-deploying/best-practices.md)
 * [Administering best practices](/help/sites-administering/administer-best-practices.md)
 * [Developing best practices](/help/sites-developing/best-practices.md)
@@ -593,7 +611,6 @@ For best practices on deploying, administering, developing, or authoring, see th
 ## Key Documentation Areas {#key-documentation-areas}
 
 * AEM Documentation
-
   In addition, the following sections of AEM documentation are of particular interest (however, this list is not exhaustive):
 
     * [Security](/help/sites-developing/security.md)
@@ -601,9 +618,12 @@ For best practices on deploying, administering, developing, or authoring, see th
     * [Enterprise DevOps](/help/managing/enterprise-devops.md)
     * [Hardware sizing](/help/managing/hardware-sizing-guidelines.md)
     * Concepts of AEM:
+
         * [Developing - the basics](/help/sites-developing/the-basics.md)
         * [MSM concepts](/help/sites-administering/msm.md)
         * [HTML Template Language (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
 
 * Related Documentation
+
     * Adobe Experience Cloud - [Planning for the Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+

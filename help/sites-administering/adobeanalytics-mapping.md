@@ -3,27 +3,29 @@ title: Mapping Component Data with Adobe Analytics Properties
 seo-title: Mapping Component Data with Adobe Analytics Properties
 description: Learn how to map component data with SiteCatalyst properties.
 seo-description: Learn how to map component data with SiteCatalyst properties.
-uuid: accdb0e8-957c-4617-9a8d-eccc24ac436e
+uuid: b08ab37f-ad58-4c04-978f-8e21a3823ae8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 2a9be3b7-b325-4d74-a5bc-8d24db491920
+discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
+docset: aem65
+
 ---
 
 # Mapping Component Data with Adobe Analytics Properties{#mapping-component-data-with-adobe-analytics-properties}
 
 Add components to the framework that gather the data to send to Adobe Analytics. Components that are designed to gather analytics data store the data in the appropriate **CQ variable**. When you add such a component to a framework, the framework displays the list of CQ variables so that you can each to the appropriate **Analytics variable**.
 
-![aa-11](assets/aa-11.png)
+![](assets/aa-11.png)
 
-When the **AEM view** is open the Analytics variables appear in the content finder.
+When the **AEM view** is open the Analytics variables appear in the content finder. 
 
-![aa-12](assets/aa-12.png)
+![](assets/aa-12.png)
 
 You can map multiple Analytics variables with the same **CQ variable**.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![](assets/chlimage_1-68.png)
 
 The mapped data is sent to Adobe Analytics when the page loads and the following conditions are met:
 
@@ -32,15 +34,15 @@ The mapped data is sent to Adobe Analytics when the page loads and the following
 
 Use the following procedure to map CQ component variables with Adobe Analytics report properties.
 
-1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component component from the **General** category.
+1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component component from the **General** category. 
 
-   ![aa-13](assets/aa-13.png)
+   ![](assets/aa-13.png)
 
    There are several default component groups: **General**, **Commerce**, **Communities**, **Search&Promote**, and **Other**. Your AEM instance may be configured to display different groups and components.
 
 1. To map Adobe Analytics variables with variables that are defined in the component, drag an **Analytics variable** from the content finder onto a field on the tracking component. For example, drag `Page Name (pageName)` to `pagedata.title`.
 
-   ![aa-14](assets/aa-14.png)
+   ![](assets/aa-14.png)
 
    >[!NOTE]
    >
@@ -55,9 +57,10 @@ Use the following procedure to map CQ component variables with Adobe Analytics r
    >[!CAUTION]
    >
    >It is highly recommended that:
-   >
-   >* `eVars` and `props` are mapped to CQ variables beginning with either  `pagedata.X` or `eventdata.X`
-   >* whereas events should be mapped to variables starting with `eventdata.events.X`
+   >    
+   >    * `eVars` and `props` are mapped to CQ variables beginning with either** ** `pagedata.X`** **or `eventdata.X`   
+   >    
+   >    * whereas events should be mapped to variables starting with `eventdata.events.X`
 
 1. To make the framework available on the publish instance of your site, open the **Page **tab of sidekick, and click **Activate Framework.**
 
@@ -80,7 +83,7 @@ Several AEM Commerce components use these variable names.
 >
 >Do not map the Adobe Analytics Products property to a CQ variable. Configuring product-related mappings as described in the table is effectively equivalent to mapping the Products variable.
 
-## Checking reports on Adobe Analytics {#checking-reports-on-adobe-analytics}
+### Checking reports on Adobe Analytics {#checking-reports-on-adobe-analytics}
 
 1. Login to the Adobe Analytics website using the same credentials provided to AEM.
 1. Make sure the RSID selected is the one used in the previous steps.
@@ -93,12 +96,10 @@ Several AEM Commerce components use these variable names.
 Initially, when you open an Adobe Analytics framework the content finder contains predefined Analytics variables under:
 
 * Traffic
-
 * Conversion
-
 * Events
 
-When an RSID is selected all the variables belonging to that RSID get added to the list.
+When an RSID is selected all the variables belonging to that RSID get added to the list.  
 The `cf#` is needed in order to map Analytics variables to the CQ variables present on the different tracking components. See Setting Up a Framework for Basic Tracking.
 
 Depending on the view selected for the framework, the content finder will be populated by either Analytics variables (in AEM view) or CQ variables (in Analytics view).
@@ -108,8 +109,8 @@ The list can be manipulated in the following ways:
 1. When in **AEM view**, the list can be filtered depending on what variable type is selected using the 3 filter buttons:
 
     * If *no button* is selected, the list shows the full list.
-    * If the **Traffic** button is selected, the list will only show the variables belonging to the Traffic section
-    * If the **Conversion** button is selected, the list will only show the variables belonging to the Conversion section.
+    * If the **Traffic*** **button*** is selected, the list will only show the variables belonging to the Traffic section.
+    * If the **Conversion*** **button*** is selected, the list will only show the variables belonging to the Conversion section.
     * If the **Events** button is selected, the list will only show the variables belonging to the Events section.
 
    >[!NOTE]
@@ -129,9 +130,10 @@ The list can be manipulated in the following ways:
 
     * e.g. in case the **Download component **is the *only one dragged* in CQ view (which has two mappable variables *eventdata.downloadLink* and *eventdata.events.startDownload*), the Content Finder wil look like this when switching to Adobe Analytics view:
 
-   ![aa-22](assets/aa-22.png)
+   ![](assets/aa-22.png)
 
-    * The variables can be dragged&dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion** and **Events**).
+    * The variables can be dragged&dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion **and **Events**).
+    
     * When dragging a new tracking component onto the framework in CQ view, the CQ variables belonging to the component get automatically added to the Content Finder(cf#) in Adobe Analytics view.
 
    >[!NOTE]
@@ -144,7 +146,7 @@ At any given time, users have the option to switch between 2 ways of viewing the
 
 ### AEM View {#aem-view}
 
-![aa-23](assets/aa-23.png)
+![](assets/aa-23.png)
 
 Taking the above image as an example, the **AEM view** has the following properties:
 
@@ -169,9 +171,9 @@ Taking the above image as an example, the **AEM view** has the following propert
 
 ### Analytics View {#analytics-view}
 
-![aa-24](assets/aa-24.png)
+![](assets/aa-24.png)
 
-1. This view can be accessed by switching to the **Analytics view** tab on the framework.
+1. This view can be accessed by switching to the **Analytics view** tab on the framework. 
 1. Left side: Content Finder (cf#) populated by CQ variables based on the components dragged onto the framework in CQ view.
 1. Tab headers (**AEM view** and **Analytics view**): use these to switch between the two views.
 
@@ -180,11 +182,13 @@ Taking the above image as an example, the **AEM view** has the following propert
     * **Traffic**:
 
         * Traffic variable ( `prop1`) mapped to a CQ variable ( `eventdata.downloadLink`)
+        
         * When the component has a Padlock next to it, this means it is inherited from a parent framework and thus cannot be edited
 
     * **Conversion**:
 
         * Conversion variable ( `eVar1`) mapped to a CQ variable ( `pagedata.title`)
+        
         * Conversion variable ( `eVar3`) mapped to a javascript expression added inline by double-clicking on the CQ variable field and entering the code manually
 
     * **Event**:
@@ -195,8 +199,8 @@ Taking the above image as an example, the **AEM view** has the following propert
 >
 >The CQ variable column of any table can be filled inline as well, by double-clicking on the field and adding text to it. These fields accept javascript as an input.
 >
->* e.g. next to `prop3` you can add
->* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`
+>* e.g. next to `prop3` you can add  
+>* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`  
 >  to send the *title* of a page concatenated with its *sitesection* using *:* (colon) and prefixed with *Adobe* as `prop3`
 >
 
