@@ -3,19 +3,17 @@ title: Content Fragment Templates
 seo-title: Content Fragment Templates
 description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
-uuid: 74675e82-26b4-4105-8031-21de51131236
+uuid: d147bac8-b710-40ed-9664-decb5ffcf8e7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
+discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
+docset: aem65
+
 ---
 
 # Content Fragment Templates{#content-fragment-templates}
-
->[!CAUTION]
->
->Some Content Fragment functionality requires the application of [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
 
 >[!CAUTION]
 >
@@ -32,11 +30,9 @@ The out-of-the-box templates are held under:
 You can create your site-specific templates for content fragments under:
 
 * `/apps/settings/dam/cfm/templates`
-
   The location for overlaying out-of-the-box templates or providing customer-specific, application-wide templates that are not intended to be extended/changed at runtime.
 
 * `/conf/global/settings/dam/cfm/templates`
-
   The location for instance-wide customer-specific templates that need to be changed at runtime.
 
 The order of precedence is (in descending order) `/conf`, `/apps`, `/libs`.
@@ -103,7 +99,7 @@ More details about the nodes and their properties are:
 <table>
  <tbody>
   <tr>
-   <th>Name</th>
+   <th scope="row">Name</th>
    <th>Type</th>
    <th>Value</th>
   </tr>
@@ -145,7 +141,7 @@ More details about the nodes and their properties are:
 <table>
  <tbody>
   <tr>
-   <th>Name</th>
+   <th scope="row">Name</th>
    <th>Type</th>
    <th>Value</th>
   </tr>
@@ -162,7 +158,7 @@ More details about the nodes and their properties are:
 <table>
  <tbody>
   <tr>
-   <th>Name</th>
+   <th scope="row">Name</th>
    <th>Type</th>
    <th>Value</th>
   </tr>
@@ -183,7 +179,7 @@ More details about the nodes and their properties are:
   </tr>
   <tr>
    <td><code>initialContentType</code></td>
-   <td><p><code>String</code></p> <p>optional</p> <p>default: <code>text/html</code></p> </td>
+   <td width="150"><p><code>String</code></p> <p>optional</p> <p>default: <code>text/html</code></p> </td>
    <td><p>Initial content type of the element; only used if <code>precreateElements</code><i> = </i><code>true</code>; currently supported:</p>
     <ul>
      <li><code>text/html</code></li>
@@ -204,7 +200,7 @@ More details about the nodes and their properties are:
 <table>
  <tbody>
   <tr>
-   <th>Name</th>
+   <th scope="row">Name</th>
    <th>Type</th>
    <th>Value</th>
   </tr>
@@ -221,7 +217,7 @@ More details about the nodes and their properties are:
 <table>
  <tbody>
   <tr>
-   <th>Name</th>
+   <th scope="row">Name</th>
    <th>Type</th>
    <th>Value</th>
   </tr>
@@ -239,7 +235,7 @@ More details about the nodes and their properties are:
   <tr>
    <td><code>jcr:desciption</code></td>
    <td><p><code>String</code></p> <p>optional</p> <p>default: ""</p> </td>
-   <td>A text that provides a description of the variation <span>(displayed in the fragment editor's <strong>Variation</strong> tab (left rail)).</span></td>
+   <td>A text that provides a description of the variation <span>(displayed in the fragment editor's <strong>Variation</strong> tab (left rail)).</code></td>
   </tr>
  </tbody>
 </table>

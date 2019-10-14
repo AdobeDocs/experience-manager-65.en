@@ -3,25 +3,27 @@ title: Integrating Services with the JMX Console
 seo-title: Integrating Services with the JMX Console
 description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
-uuid: 730a09b6-a110-4203-8de2-d4c46edc59f6
+uuid: 4a489a24-af10-4505-8333-aafc0c81dd3e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: df8cfde3-543d-4150-9822-9be763908bd7
+discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
+docset: aem65
+
 ---
 
 # Integrating Services with the JMX Console{#integrating-services-with-the-jmx-console}
 
 Create and deploy MBeans to manage services using the JMX Console. Expose service attributes and operations to enable administration tasks to be performed.
 
-For information about using the JMX Console, see [Monitoring Server Resources Using the JMX Console](/help/sites-administering/jmx-console.md).
+For information about using the JMX Console, see [Monitoring Server Resources Using the JMX Console](/help/sites-administering//jmx-console.md).
 
 ## The JMX Framework in Felix and CQ5 {#the-jmx-framework-in-felix-and-cq}
 
 On the Apache Felix platform, you deploy MBeans as OSGi services. When an MBean service is registered in the OSGi Service Registry, the Aries JMX Whiteboard module automatically registers the MBean with the MBean Server. The MBean is then available to the JMX Console which exposes the public attributes and operations.
 
-![jmxwhiteboard](assets/jmxwhiteboard.png)
+![](assets/jmxwhiteboard.png)
 
 ## Creating MBeans for CQ5 and CRX {#creating-mbeans-for-cq-and-crx}
 
@@ -35,11 +37,11 @@ In addition to defining the management interface, the interface also defines the
 
 ### Using Annotations to Provide MBean Information {#using-annotations-to-provide-mbean-information}
 
-The [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) package provides several annotations and classes for easily providing MBean metadata to the JMX console. Use these annotations and classes instead of adding information to the MBean's MBeanInfo object directly.
+The [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) package provides several annotations and classes for easily providing MBean metadata to the JMX console. Use these annotations and classes instead of adding information to the MBean's MBeanInfo object directly.
 
 **Annotations**
 
-Add annotations to the management interface to specify MBean metadata. The information appears in the JMX console for each implementation class that is deployed. The following annotations are available (for complete information, see the [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
+Add annotations to the management interface to specify MBean metadata. The information appears in the JMX console for each implementation class that is deployed. The following annotations are available (for complete information, see the [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Description:** Provides a description of the MBean class or method. When used on the class declaration, the desctiption appears on the JMX Console page for the MBean. When used on a method, the desctiption appears as hover text for the corresponding attribute or operation.
 * **Impact:** The impact of a method. Valid parameter values are the fields defined by [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
@@ -124,7 +126,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 The following graphic shows the page for this MBean in the JMX Console.
 
-![jmxdescription](assets/jmxdescription.png)
+![](assets/jmxdescription.png)
 
 ### Registering MBeans {#registering-mbeans}
 
@@ -132,7 +134,7 @@ When you register MBeans as an OSGi service, they are automatically registered w
 
 In addition to the OSGi-related metadata, you must also provide metadata that the Aries JMX Whiteboard module requires for registering the MBean with the MBean Server:
 
-* **The name of the DynamicMBean interface:** Declare that the MBean service implements the `javax.management.DynamicMBea`n interface. This declaration notifies the Aries JMX Whiteboard module that the service is an MBean service.
+* **The name of the DynamicMBean interface: **Declare that the MBean service implements the `javax.management.DynamicMBea`n interface. This declaration notifies the Aries JMX Whiteboard module that the service is an MBean service.
 
 * **The MBean domain and key properties:** On Felix, you provide this information as a property of the MBean's OSGi service. This is the same information that you ordinarily provide to the MBean Server in a `javax.management.ObjectName` object.
 
@@ -184,7 +186,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 To manage multiple instances of a managed service, you create multiple instances of the corresponding MBean service. Furthermore, MBean service instances should be created or removed when managed instances are started or stopped. You can create an MBean manager class to instantiate MBean services at runtime, and manage the service lifecycle.
 
-Use the BundleContext to register the MBean as an OSGi service. Include the JMX-related information in the Dictionary object that you use as an argument of the `BundleContext.registerService` method.
+Use the BundleContext to register the MBean as an OSGi service. Include the JMX-related information in the Dictionary object that you use as an argument of the BundleContext.registerService method.
 
 In the following code example, the ExampleMBean service is registered programmatically. The componentContext object is the ComponentContext, which provides access to BundleContext.
 
@@ -211,9 +213,7 @@ The MBean in this example provides information about the CQ5 Workflow models tha
 * WorkflowMBeanManager: The interface of the MBean manager class.
 * WorkflowMBeanManagerImpl: The implementation class of the MBean manager.
 
->[!NOTE]
->
->For simplicity, the code in this example does not perform logging or react to thrown exceptions.
+**Note:** For simplicity, the code in this example does not perform logging or react to thrown exceptions.
 
 WorkflowMBeanManagerImpl includes a component activation method. When the component is activated, the method performs the following tasks:
 
@@ -224,7 +224,7 @@ WorkflowMBeanManagerImpl includes a component activation method. When the compon
 
 The MBean metadata appears in the JMX Console with the com.adobe.example domain, the workflow_model type, and Properties is the path of the workflow model condfiguration node.
 
-![jmxworkflowmbean](assets/jmxworkflowmbean.png)
+![](assets/jmxworkflowmbean.png)
 
 ### The Example MBean {#the-example-mbean}
 

@@ -3,19 +3,21 @@ title: Tough Day
 seo-title: Tough Day
 description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
-uuid: 7a13efe0-c455-4af0-ad7b-c39cb2479d74
+uuid: 1b672182-40f5-4580-b038-2e3c8fbfb8b7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
+discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
+docset: aem65
+
 ---
 
 # Tough Day{#tough-day}
 
 ## What is Tough Day 2 {#what-is-tough-day}
 
-Tough Day 2 is a an application that allows you to stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) for a presentation of the application.
+"Tough Day 2" is a an application that allows you to stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) for a presentation of the application.
 
 ## How to run Tough Day 2 {#how-to-run-tough-day}
 
@@ -35,7 +37,7 @@ The default suite that runs after adding the parameters is named `toughday`. It 
 
 The suite contains 15% write actions and 85% read actions.
 
-To run the suite tests, Tough Day 2 will install its default content package. This can be avoided by setting the `installsamplecontent` parameter to `false`, but remember that you should also change the default paths for the tests that you intend to run. If the jar is run without parameters, Tough Day 2 displays the [help information](/help/sites-developing/tough-day.md#getting-help).
+To run the suite tests, Tough Day 2 will install its default content package. This can be avoided by setting the `installsamplecontent`parameter to `false`, but remember that you should also change the default paths for the tests that you intend to run. If the jar is run without parameters, Tough Day 2 displays the [help information](/help/sites-developing/tough-day.md#getting-help).
 
 As a general rule, you can use the application by following this pattern:
 
@@ -120,19 +122,19 @@ You can find the relevant parameters in the list bellow:
 
 | **Parameter** |**Description** |**Default Value** |**Possible Values** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` |Either installs or skips the default Tough Day 2 content package. |true |true or false |
-| `--protocol=<Val>` |The protocol used for the host. |http |http or https |
-| `--host=<Val>` |The host name or IP that will be targeted. |  |  |
-| `--port=<Val>` |The port of the host. |4502 |  |
-| `--user=<Val>` |The user name for the instance. |admin |  |
-| `--password=<Val>` |Password for the given user. |admin |  |
-| `--duration=<Val>` |The duration of the tests. Can be expressed in (**s**)econds, (**m**)inutes, (**h**)ours and (**d**)ays. |1d |  |
-| `--timeout=<Val>` |How long a test will run before it will be interrupted and marked as failed. Expressed in seconds. |180 |  |
-| `--suite=<Val>` |The value can be one or a list (separated by commas) of predefined test suites. |toughday |  |
-| `--configfile=<Val>` |The targeted yaml configuration file. |  |  |
-| `--contextpath=<Val>` |Instance's context path. |  |  |
-| `--loglevel=<Val>` |The log level for the Tough Day 2 engine. |INFO |ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF |
-| `--dryrun=<Val>` |If true, prints the resulting configuration and does not run any tests. |false |true or false |
+| --installsamplecontent=<Val> |Either installs or skips the default Tough Day 2 content package. |true |true or false |
+| --protocol=<Val> |The protocol used for the host. |http |http or https |
+| --host=<Val> |The host name or IP that will be targeted. |  |  |
+| --port=<Val> |The port of the host. |4502 |  |
+| --user=<Val> |The user name for the instance. |admin |  |
+| --password=<Val> |Password for the given user. |admin |  |
+| --duration=<Val> |The duration of the tests. Can be expressed in (**s**)econds, (**m**)inutes, (**h**)ours and (**d**)ays. |1d |  |
+| --timeout=<Val> |How long a test will run before it will be interrupted and marked as failed. Expressed in seconds. |180 |  |
+| --suite=<Val> |The value can be one or a list (separated by commas) of predefined test suites. |toughday |  |
+| --configfile=<Val> |The targeted yaml configuration file. |  |  |
+| --contextpath=<Val> |Instance's context path. |  |  |
+| --loglevel=<Val> |The log level for the Tough Day 2 engine. |INFO |ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF |
+| --dryrun=<Val> |If true, prints the resulting configuration and does not run any tests. |false |true or false |
 
 ## Customizing {#customizing}
 
@@ -280,7 +282,7 @@ Tough Day 2 can run in one of the following modes: **normal** and **constant loa
 
 The **normal** run mode has two parameters:
 
-* `concurrency` - concurrency represents the number of threads that Tough Day 2 will create for test execution. On these threads, tests will be executed until either the duration has run out or there are no more tests to execute.
+* `concurrency`** **- concurrency represents the number of threads that Tough Day 2 will create for test execution. On these threads, tests will be executed until either the duration has run out or there are no more tests to execute.
 
 * `waittime` - the wait time between two consecutive test executions on the same thread. The value must be expressed in milliseconds.
 
@@ -343,24 +345,24 @@ Tough Day 2 outputs both test metrics and logs. For further details, read the fo
 
 ### Test Metrics {#test-metrics}
 
-Tough Day 2 currently reports 9 test metrics that you can evaluate. Metrics with the **&ast;** symbol are reported only after successful runs:
+Tough Day 2 currently reports 9 test metrics that you can evaluate. Metrics with the **&#42;** symbol are reported only after successful runs:
 
 | **Name** |**Description** |
 |---|---|
 | Timestamp |Timestamp of the last finished test run. |
 | Passed |Number of successful runs. |
 | Failed |Number of failed runs. |
-| Min&ast; |Lowest duration of test execution. |
-| Max&ast; |Highest duration of test execution. |
-| Median&ast; |Computed median duration of all test executions. |
-| Average&ast; |Computed average duration of all test executions. |
-| StdDev&ast; |The standard deviation. |
-| 90p&ast; |90 percentile. |
-| 99p&ast; |99 percentile. |
-| 99.9p&ast; |99.9 percentile. |
-| Real Throughput &ast; |Number of runs divided by the elapsed execution time. |
+| Min&#42; |Lowest duration of test execution. |
+| Max&#42; |Highest duration of test execution. |
+| Median&#42; |Computed median duration of all test executions. |
+| Average&#42; |Computed average duration of all test executions. |
+| StdDev&#42; |The standard deviation. |
+| 90p&#42; |90 percentile. |
+| 99p&#42; |99 percentile. |
+| 99.9p&#42; |99.9 percentile. |
+| Real Throughput &#42; |Number of runs divided by the elapsed execution time. |
 
-These metrics are written with the help of publishers that can be added with the `add` parameter (similarly to adding tests). Currently, there are two options:
+These metrics are written with the help of publishers** **that can be added with the `add` parameter (similarly to adding tests). Currently, there are two options:
 
 * **CSVPublisher** - the output is a CSV file.
 * **ConsolePublisher** - the output is displayed in the console.
@@ -399,3 +401,30 @@ Tough Day 2 creates a logs folder in the same directory where you ran Tough Day 
 * **toughday_&lt;testname&gt;.log**: messages related to the specified test.
 
 The logs are not overwritten, subsequent runs will append messages to the existing logs. The logs have several levels, for more information see the ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+
+#### Example Usage {#example-usage}
+
+#### Known Issues {#known-issues}
+
+[Get File](assets/toughday-6_1.jar)
+
+#### Example Usage {#example-usage-1}
+
+#### Example Usage {#example-usage-2}
+
+#### Example Usage {#example-usage-3}
+
+#### Example Usage {#example-usage-4}
+
+#### Example Usage {#example-usage-5}
+
+#### Example Usage {#example-usage-6}
+
+#### Example Usage {#example-usage-7}
+
+#### Example Usage {#example-usage-8}
+
+#### Example Usage {#example-usage-9}
+
+#### Example Usage {#example-usage-10}
+

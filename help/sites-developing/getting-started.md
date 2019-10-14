@@ -3,12 +3,14 @@ title: Getting Started Developing AEM Sites - WKND Tutorial
 seo-title: Getting Started Developing AEM Sites - WKND Tutorial
 description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
 seo-description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
-uuid: 42db7bc5-5818-40e4-83b4-0cafc1acac42
+uuid: 12861ca8-b5b9-404e-9788-9d13aa7c5a68
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: 54e48abc-be75-4477-83fa-bd74d5b995af
+discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
+docset: aem65
+
 ---
 
 # Getting Started Developing AEM Sites - WKND Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
@@ -22,8 +24,11 @@ The goal for this multi-part tutorial is to teach a developer who is new to AEM 
 ## WKND Developer Tutorial {#wknd-developer-tutorial}
 
 The tutorial is available [here](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) or click the image below.
+[ ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[![click image](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+The WKND Developer Tutorial guides you through creating an AEM project using the latest technologies and best practices.
+
+](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ## Core Concepts {#core-concepts}
 
@@ -32,7 +37,7 @@ The tutorial implementation leverages many powerful features of AEM. The site wi
 * [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
 * [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 * [Touch UI](/help/sites-developing/touch-ui-concepts.md)
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Core Components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html)
 * [Editable Templates](/help/sites-developing/page-templates-editable.md)
 
 Please progress through the tutorial before diving into the above concepts in detail.

@@ -3,23 +3,19 @@ title: SPA Page Component
 seo-title: SPA Page Component
 description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-uuid: 12f1f9b4-0d3c-40db-8465-dee0bd178d40
+uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
+discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
+docset: aem65
+
 ---
 
 # SPA Page Component{#spa-page-component}
 
 In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-
->[!NOTE]
->
->The Single-Page Application (SPA) Editor feature requires AEM 6.4 service pack 2 or newer.
->
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
 
 ## Introduction {#introduction}
 
@@ -78,17 +74,11 @@ The meta resource properties that describe the SPA content:
 ## Meta Properties {#meta-properties}
 
 * `cq:wcmmode`: WCM mode of the editors (e.g. page, template)
-* `cq:pagemodel_root_url`: URL of the root model of the App. Crucial when directly accessing a child page since the child page model is a fragment of the app root model. The [`PageModelManager`](/help/sites-developing/spa-page-component.md) then systematically recomposes the application initial model as entering the application from its root entry point.
+* `cq:pagemodel_root_url`: URL of the root model of the App. Crucial when directly accessing a child page since the child page model is a fragment of the app root model. The ` [PageModelManager](/help/sites-developing/spa-page-component.md)` then systematically recomposes the application initial model as entering the application from its root entry point.
 
-* `cq:pagemodel_router`: Enable or disable the [`ModelRouter`](/help/sites-developing/spa-routing.md) of the `PageModelManager` library
+* `cq:pagemodel_router`: Enable or disable the ` [ModelRouter](/help/sites-developing/spa-routing.md)` of the `PageModelManager` library
 
-* `cq:pagemodel_route_filters`: Comma separated list or regular expressions to provide routes the [`ModelRouter`](/help/sites-developing/spa-routing.md) must ignore.
-
->[!CAUTION]
->
->This document uses the We.Retail Journal app for demonstration purposes only. It should not be used for any project work.
->
->All SPA projects on AEM should be based on the Maven Archetype for SPA Starter Kit.
+* `cq:pagemodel_route_filters`: Comma separated list or regular expressions to provide routes the ` [ModelRouter](/help/sites-developing/spa-routing.md)` must ignore.
 
 ## Page Editor Overlay Synchronization {#page-editor-overlay-synchronization}
 

@@ -3,14 +3,16 @@ title: Getting Started with SPAs in AEM - Angular
 seo-title: Getting Started with SPAs in AEM - Angular
 description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
 seo-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
-uuid: 29748b0d-c269-4d42-8f89-bd7477d997ad
+uuid: d3d2fa63-68c8-4a48-8c8d-045f4f8db937
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
+discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
+docset: aem65
+
 ---
 
-# Getting Started with SPAs in AEM - Angular {#getting-started-with-spas-in-aem-angular}
+# Getting Started with SPAs in AEM - Angular{#getting-started-with-spas-in-aem-angular}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.
 
@@ -19,11 +21,6 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 >[!NOTE]
 >
 >This article is based on the Angular framework. For the corresponding document for the React framework see [Getting Started with SPAs in AEM - React](/help/sites-developing/spa-getting-started-react.md).
-
->[!NOTE]
->The Single-Page Application (SPA) Editor feature requires AEM 6.4 service pack 2 or newer.
->
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
 
 ## Introduction {#introduction}
 
@@ -219,7 +216,7 @@ export class MainContentComponent {
 }
 ```
 
-The `MainComponent` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint](/help/sites-developing/spa-blueprint.md).
+The `MainComponent` ingests the JSON representation of the page model and processes the content to wrap/decorate each element of the page. Further details on the `Page` can be found in the document [SPA Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501).
 
 ### image.component.ts {#image-component-ts}
 
@@ -279,7 +276,7 @@ Finally the image can be rendered in `image.component.html`.
 
 It is regularly necessary for components within a single-page application to share information. There are several recommended ways of doing this, listed as follows in increasing order of complexity.
 
-* **Option 1:** Centralize the logic and broadcast to the necessary components for example by using a util class as a pure  object-oriented solution.
+* **Option 1:** Centralize the logic and broadcast to the necessary components for example by using a util class as a pure object-oriented solution.
 * **Option 2:** Share component states by using a state library such as NgRx.
 * **Option 3:** Leverage the object hierarchy by customizing and extending the container component.
 
@@ -292,3 +289,4 @@ For further information about how to oraganize yourself to develop SPAs for AEM 
 For further details about the dynamic model to component mapping and how it works within SPAs in AEM, see the article [Dynamic Model to Component Mapping for SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 If you wish to implement SPAs in AEM for a framework other than React or Angular or simply wish to take a deep dive into how the SPA SDK for AEM works, refer to the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) article.
+

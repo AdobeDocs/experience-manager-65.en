@@ -3,12 +3,14 @@ title: Adding Components to a Channel
 seo-title: Adding Components to a Channel
 description: Follow this page to learn more about adding components to channels in an AEM Screens project.
 seo-description: Follow this page to learn more about adding components to channels in an AEM Screens project.
-uuid: dd35e7ad-b6df-4542-a91f-97db7baa4f6f
+uuid: 205d0edd-a696-47d0-a859-5f44d48c5e4a
 contentOwner: jsyal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: authoring
-discoiquuid: 8f28c02c-e7ce-47e5-91b2-862e03c18bd8
+discoiquuid: bfbdd6eb-4921-4c2d-a179-1cac4583d568
+docset: aem65
+
 ---
 
 # Adding Components to a Channel{#adding-components-to-a-channel}
@@ -31,7 +33,7 @@ To view the default components to your Screens project, follow the steps below:
 1. Click the **+** icon from the side bar to open the components.
 1. All the components that are included by default in an AEM Screens project displays, as shown in the figure below.
 
-![screen_shot_2017-12-18at21350pm](assets/screen_shot_2017-12-18at21350pm.png)
+![](assets/screen_shot_2017-12-18at21350pm.png)
 
 ### Adding a New Component {#adding-a-new-component}
 
@@ -46,7 +48,7 @@ The following example shows the addition of a Livefyre component to a an AEM Scr
 1. Select the entire design editor on the right and click on the settings symbol to open the **ParSys Design** dialog box.
 1. You can select the components that you want to import to your AEM Screens project. The following example shows the the addition of **Livefyre** component to an AEM Screens project.
 
-![adding_components](assets/adding_components.gif)
+![](assets/adding_components.gif)
 
 >[!NOTE]
 >
@@ -73,7 +75,7 @@ Application component has the following properties:
 
 The following example shows how to embedd an application component along with the preview of its properties:
 
-![adding_componentsapplication](assets/adding_componentsapplication.gif)
+![](assets/adding_componentsapplication.gif)
 
 >[!NOTE]
 >
@@ -129,7 +131,7 @@ The Embedded page has the following properties:
 
 >[!NOTE]
 >
->Refer to [Embedded Sequences](embedded-sequences.md) under Authoring Screens section, to learn in detail about embedded sequences.
+>Refer to [**Embedded Sequences**](/help/screens/embedded-sequences.md) under Authoring Screens section, to learn in detail about embedded sequences.
 
 An Embedded Sequence allows you to add an embedded sequence channel inside your existing channel (with other assets).
 
@@ -160,7 +162,7 @@ The Embedded Sequence has the following page properties:
 
 A dynamic embedded sequence allows to add a sequence similar to the above mentioned except by channel role.
 
-Refer to [Embedded Sequences](embedded-sequences.md) under Authoring Screens section, to learn in detail about embedded sequences.
+Refer to [**Embedded Sequences**](/help/screens/embedded-sequences.md) under Authoring Screens section, to learn in detail about embedded sequences.
 
 The dynamic embedded sequence has the following properties:
 
@@ -185,6 +187,27 @@ The dynamic embedded sequence has the following properties:
  </tbody>
 </table>
 
+### Experience Fragment {#experience-fragment}
+
+An Experience Fragment allows you to add an experience fragment (group of one or more components including content and layout that can be referenced within pages) to your AEM Screens channel. Drag and drop the component to AEM editor and select the experience fragment.
+
+To learn more about how to create an experience fragment and leverage it into an AEM Screens project, refer to ** [Using Experience Fragments](/help/screens/experience-fragments-in-screens.md)**.
+
+![](assets/exp.gif)
+
+| **Property** |**Description** |
+|---|---|
+| **Experience Fragment** |
+| ***Experience Fragment*** |Select the experience fragment. |
+| ***Duration*** |Select the entire duration of the experience fragment that plays in the channel. |
+| **Offline Config** |
+| ***Client-side Libraries*** |Javascript and CSS files. |
+| ***Static Files*** |Static files that you can add as offline configs to your experience fragment. |
+
+>[!NOTE]
+>
+>The **Client-side Libaries** and the **Static Files** that you add from this component will be in addition to already configured** **Client-side Libaries** **and the Static Files that are added from the experience fragment's **Properties**.
+
 ### Image {#image}
 
 An Image allows you to add an image to your channel.
@@ -208,12 +231,69 @@ The image asset has three tabs namely **Image**, **Accessibility**, and **Sequen
 
 The Transition component allows you to add a transition to your Screens project.
 
+The following image shows the transition component (added via drag and drop) to the editor.
+
+![](assets/screen_shot_2019-07-25at104237am.png)
+
+Select the transition icon and click the **Configure** (wrench icon) to open the **Transition** dialog box. This dialog box includes three tabs:
+
+* **Transition**
+* **Sequence**
+* **Activation**
+
+>[!NOTE]
+>
+>By default, the sequence is set to 600 ms. You can update the transition sequence to other value using the **Sequence** tab.
+
+![](assets/transition.gif)
+
 The transition component has the following properties:
 
-| **Property** |**Description** |
-|---|---|
-| ***Type*** |The type of the transition between the element before and the one after. It can be a fade effect, or a slide effect from the four slides of the screen. |
-| ***Duration (ms)*** |Select the entire duration of the transition. Setting the duration as -1 indicates that the embedded transition will run its full length in a particular channel. |
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Property</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td colspan="2" valign="bottom"><strong>Transition</strong></td>
+  </tr>
+  <tr>
+   <td><strong><em>Type</em></strong></td>
+   <td><p>The type of the transition between the element before and the one after. The transition <strong>Type</strong> includes the following options:</p>
+    <ul>
+     <li><strong>Normal</strong></li>
+     <li><strong>Fade</strong></li>
+     <li><strong>Slide in from Right</strong></li>
+     <li><strong>Slide in from Left</strong></li>
+     <li><strong>Slide in from Top</strong></li>
+     <li><strong>Slide in from Bottom</strong></li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colspan="2"><strong>Sequence</strong></td>
+  </tr>
+  <tr>
+   <td><strong><em>Duration</em></strong></td>
+   <td>Select the entire duration of the transition. By default, it is set to 600 ms.</td>
+  </tr>
+  <tr>
+   <td colspan="2"><strong>Activation</strong></td>
+  </tr>
+  <tr>
+   <td><strong><em>Active From</em></strong></td>
+   <td>Timestamp that describes from when the transition can be active.<br /> </td>
+  </tr>
+  <tr>
+   <td><strong><em>Active Until</em></strong></td>
+   <td>Timestamp that describes until when the transition can be active.</td>
+  </tr>
+  <tr>
+   <td><strong><em>Schedule</em></strong></td>
+   <td>Add a pre-defined schedule.</td>
+  </tr>
+ </tbody>
+</table>
 
 ### Video {#video}
 

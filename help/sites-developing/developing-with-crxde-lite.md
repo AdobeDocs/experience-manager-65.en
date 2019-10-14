@@ -3,27 +3,28 @@ title: Developing with CRXDE Lite
 seo-title: Developing with CRXDE Lite
 description: CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser
 seo-description: CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser
-uuid: a5eafc8c-f9fa-49ba-ad2f-0cccc427ca49
+uuid: f4890354-d8b8-4fb9-af2f-3359f931f883
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 19cb3946-32ba-4f0b-89f0-f9272f2373d2
+discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
+docset: aem65
+
 ---
 
-# Developing with CRXDE Lite {#developing-with-crxde-lite}
+# Developing with CRXDE Lite{#developing-with-crxde-lite}
 
 This section describes how to develop your AEM application using CRXDE Lite.
 
 Please refer to the overview documentation for more information on the different development environments that are available.
 
 CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser. With CRXDE Lite, you can create a project, create and edit files (like .jsp and .java), folders, templates, components, dialogs, nodes, properties and bundles while logging and integrating with SVN.
-
 CRXDE Lite is recommended when you do not have direct access to the AEM server, when you develop an application by extending or modifying the out-of-the-box components and Java bundles or when you do not need a dedicated debugger, code completion and syntax highlighting.
 
 >[!NOTE]
 >
->By default, all AEM users can access CRXDE Lite. If desired, [configure ACLs](/help/sites-administering/security.md#permissions-and-acls) for the following node so that only developers can access CRX DE Lite:
+>By default, all AEM users can access CRXDE Lite. If desired, [configure ACLs](/help/sites-administering//security.md#permissions-and-acls) for the following node so that only developers can access CRX DE Lite:
 >
 >`/libs/granite/crxde`
 
@@ -36,18 +37,18 @@ CRXDE Lite is recommended when you do not have direct access to the AEM server, 
 To get started with CRXDE Lite, proceed as follows:
 
 1. Install AEM.
-1. In your browser, enter https://`<host>`:`<port>`/crx/de. By default it is `http://localhost:4502/crx/de`.
+1. In your browser, enter https://<host>:<port>/crx/de. By default it is `https://localhost:4502/crx/de`.
 1. Enter your **username** and **password**. By default it is `admin` and `admin`.
 
 1. Click **OK**.
 
 The CRXDE Lite User Interface looks as follows in your browser:
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![](assets/chlimage_1-18.png)
 
 You can now use CRXDE Lite to develop your application.
 
-### Overview of the User Interface {#overview-of-the-user-interface}
+## Overview of the User Interface {#overview-of-the-user-interface}
 
 CRXDE Lite offers the following functionality:
 
@@ -131,7 +132,7 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Tools<br /> </td>
-   <td><p>Drop-down menu with the following tools:</p> <p>- <strong>Server Config ...</strong>: to access the Felix Console.</p> <p>- <strong>Query ...</strong>: to query the repository.</p> <p>- <strong>Privileges ...</strong>: to open privilege management, where you can view and add privileges.</p> <p>- <strong>Test Access Control ...</strong>: a place where you can test the permission for certain path and/or principal.</p> <p>- <strong>Export Node Type</strong>: to export node types in the system as cnd notation.</p> <p>- <strong>Import Node Type ...</strong>: to import node types using cnd notation.</p>  <p>- <strong>Install SiteCatalyst Debugger ...</strong>: instructions on how to install Analytics Debugger.</p> </td>
+   <td><p>Drop-down menu with the following tools:</p> <p>- <strong>Server Config ...</strong>: to access the Felix Console.</p> <p>- <strong>Query ...</strong>: to query the repository.</p> <p>- <strong>Privileges ...</strong>: to open privilege management, where you can view and add privileges.</p> <p>- <strong>Test Access Control ...</strong>: a place where you can test the permission for certain path and/or principal.</p> <p>- <strong>Export Node Type</strong>: to export node types in the system as cnd notation.</p> <p>- <strong>Import Node Type ...</strong>: to import node types using cnd notation.</p> <p>- <strong>Import Site ...</strong>: opens the <a href="/help/sites-developing/site-importer.md">Site Importer</a> tool to import an existing site into AEM</p> <p>- <strong>Install SiteCatalyst Debugger ...</strong>: instructions on how to install Analytics Debugger.</p> </td>
   </tr>
   <tr>
    <td>Login widget<br /> </td>
@@ -140,7 +141,7 @@ CRXDE Lite offers the following functionality:
  </tbody>
 </table>
 
-### Creating a Project {#creating-a-project}
+## Creating a Project {#creating-a-project}
 
 With CRXDE Lite you can create a working project in three clicks. The project wizard creates a new project under `/apps`, some content under `/conten`t and a package wrapping all the project the content under `/etc/packages`. The project can be used right away to render a sample page displaying **Hello World**, based on a jsp script that renders a property from the repository and calls a Java class to render some text.
 
@@ -148,12 +149,12 @@ To create a project with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click a node, select **Create ...**, then **Create Project ...**.
-
    Note: you can right-click any node in the tree navigation, as the new project nodes are, by design, created below `/apps,` `/content` and `/etc/packages`.
 
-1. Define:
+1. Define**:**
 
     * **Project Name** - the project name is used to create the new nodes and the bundle, e.g. `myproject`.
+
     * **Java Package** - the Java package name prefix, e.g. `com.mycompany`.
 
 1. Click **Create**.
@@ -161,7 +162,7 @@ To create a project with CRXDE Lite:
 
 To access the sample page displaying **Hello World**, point your browser to:
 
-`http://localhost:4502/content/<project-name>.html`
+`https://localhost:4502/content/<project-name>.html`
 
 The **Hello World** page is based on a content node, that calls a jsp script through the `sling:resourceType` property. The script reads the `jcr:title` property from the repository and gets the body content by calling a method of the SampleUtil class, that is available in the project bundle.
 
@@ -174,26 +175,24 @@ The following nodes are created:
 
 * `/apps/<project-name>/install`: the compiled bundles container, containing the compiled sample project bundle.
 * `/content/<project-name>`: the content container.
-* `/etc/packages/<java-suffix>/<project-name>.zip`, a package wrapping all the project app and content. You can use it to rebuild the project for further deployment (e.g. to other environments) or for sharing through Package Share.
+* /etc/packages/&lt;java-suffix&gt;/&lt;project-name&gt;.zip, a package wrapping all the project app and content. You can use it to rebuild the project for further deployment (e.g. to other environments) or for sharing through Package Share.
 
 The structure looks as follows in CRXDE Lite with a project called **myproject** and a java package suffix called **mycompany**:
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![](assets/chlimage_1-19.png) ![](assets/chlimage_1-20.png)
 
-![chlimage_1-240](assets/chlimage_1-240.png)
-
-### Creating a Folder {#creating-a-folder}
+## Creating a Folder {#creating-a-folder}
 
 To create a folder with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click the folder under which you want to create the new folder, select **Create ...**, then **Create Folder ...**.
 
-1. Enter the folder **Name** and click **OK**.
+1. Enter the folder** Name** and click **OK**.
 
 1. Click **Save All** to save the changes on the server.
 
-### Creating a Template {#creating-a-template}
+## Creating a Template {#creating-a-template}
 
 To create a template with CRXDE Lite:
 
@@ -218,9 +217,9 @@ It creates:
 
 You can add properties to your template: refer to the [Creating a Property](#creating-a-property) section.
 
-### Creating a Component {#creating-a-component}
+## Creating a Component {#creating-a-component}
 
-The feature described here is only available if the node type `cq:Component` is available in the repository.
+The feature described here is only available if CQ5 is installed, that is if the node type `cq:Component` is available in the repository.
 
 To create a component with CRXDE Lite:
 
@@ -229,7 +228,7 @@ To create a component with CRXDE Lite:
 
 1. Enter the **Label**, **Title**, **Description**, **Super Resource Type** and **Group** of the component. Click **Next**.
 
-1. This step is optional: set the component properties **Is Container, No Decoration**, **Cell Name** and **Dialog Path**. Click **Next**.
+1. This step is optional: set the component properties **Is Container,** **No Decoration**, **Cell Name** and **Dialog Path**. Click **Next**.
 
 1. This step is optional: set the component property **Allowed Parents**. Click **Next**.
 
@@ -243,7 +242,7 @@ It creates:
 * Component properties
 * A component .jsp script
 
-### Creating a Dialog {#creating-a-dialog}
+## Creating a Dialog {#creating-a-dialog}
 
 To create a dialog with CRXDE Lite:
 
@@ -262,7 +261,7 @@ You can now adapt the dialog to your needs by modifying properties or creating n
 
 You can also use the Dialog Editor to edit a dialog. Double clicking the dialog node in CRXDE Lite will bring up the editor. More information about the Dialog Editor can be found [here](/help/sites-developing/dialog-editor.md).
 
-### Creating a Node {#creating-a-node}
+## Creating a Node {#creating-a-node}
 
 To create a node with CRXDE Lite:
 
@@ -281,7 +280,7 @@ You can now adapt the node to your needs by modifying properties or creating new
 >
 >The validation with regard to whether the newly created node is allowed by the node type of the parent node is also carried out by the JCR repository first when saving changes. If you receive an error message while saving a node, please check, whether the content structure is valid (e.g., you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
 
-### Creating a Property {#creating-a-property}
+## Creating a Property {#creating-a-property}
 
 To create a property with CRXDE Lite:
 
@@ -291,44 +290,61 @@ To create a property with CRXDE Lite:
 
 1. Click **Save All** to save the changes on the server.
 
-### Creating a Script {#creating-a-script}
+## Creating a Script {#creating-a-script}
 
 To create a new script:
 
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click the component where you want to create the script, select **Create ...**, then **Create File ...**.
 
-1. Enter the File **Name** including its extension. Click **OK**.
+1. Enter the File** Name** including its extension. Click **OK**.
 
 1. The new file opens as a tab in the Edit pane.
 1. Edit the file.
 1. Click **Save All** to save the changes.
 
-### Managing a Bundle {#managing-a-bundle}
+## Managing a Bundle {#managing-a-bundle}
 
 With CRXDE Lite, it is straightforward to create an OSGI bundle, add Java classes to it, and build it. The bundle is then automatically installed and started in the OSGI container.
 
-This section describes how to create a `Test` bundle with a `HelloWorld` Java class that displays **Hello World!** in your browser when the resource is requested.
+This section describes how to create a `Test` bundle with a `HelloWorld` Java class that displays** Hello World! **in your browser when the resource is requested.
 
-#### Creating a Bundle {#creating-a-bundle}
+### Creating a Bundle {#creating-a-bundle}
 
 To create the Test bundle with CRXDE Lite:
 
 1. In CRXDE Lite create `myapp` project with the [project wizard](#creating-a-project). Among others the following nodes are created:
 
     * `/apps/myapp/src`
-    * `/apps/myapp/install`
+    *
+
+      ```
+      /apps/myapp/install
+
+      ```
 
 1. Right-click the folder `/apps/myapp/src` that will contain the `Test` bundle, select **Create ...**, then **Create Bundle ...**.
 
 1. Set the bundle properties as follows:
 
     * Symbolic Bundle Name: `com.mycompany.test.TestBundle`
-    * Bundle Name: `Test Bundle`
-    * Bundle Description: `This is my Test Bundle`
-    * Package:`com.mycompany.test`
 
-      Click **OK**.
+    * Bundle Name: `Test Bundle`
+    * Bundle Description:
+
+      ```
+      This is my Test Bundle
+
+      ```
+
+    * Package:
+
+      ```
+      com.mycompany.test
+
+      ```
+
+   Click **OK**.
 
 1. Click **Save All** to save the changes on the server.
 
@@ -341,6 +357,7 @@ The wizard creates the following elements:
 * The folder structures:
 
     * `src/main/java/com/mycompany/test`. It will contain the packages and the Java classes.
+
     * `src/main/resources`. It will contain the resources used within the bundle.
 
 * The `Activator.java` file. It is the optional listener class to be notified of bundle start and stop events.
@@ -399,7 +416,7 @@ The following table lists all the properties of the .bnd file, their values and 
 
 For more information on the bnd format, refer to the [bnd utility](https://bndtools.org/) used by CRXDE to create OSGI bundles.
 
-#### Creating a Java Class {#creating-a-java-class}
+### Creating a Java Class {#creating-a-java-class}
 
 To create the `HelloWorld` Java class within the Test Bundle:
 
@@ -410,20 +427,17 @@ To create the `HelloWorld` Java class within the Test Bundle:
 
 1. The `HelloWorld.java` file opens in the Edit pane.
 1. Add the following lines into `HelloWorld.java`:
-
-   ```
    package com.mycompany.test;
 
    public class HelloWorld {
-     public String getString(){
-     return "Hello World!";
-     }
+   public String getString(){
+   return "Hello World!";
    }
-   ```
+   }
 
 1. Click **Save All** to save the changes on the server.
 
-#### Building a Bundle {#building-a-bundle}
+### Building a Bundle {#building-a-bundle}
 
 To build the Test Bundle:
 
@@ -441,18 +455,15 @@ To see the effect of the Test Bundle, create a component that uses the Java meth
 1. Create the component `mycomp` under `myapp/components`.
 
 1. Edit `mycomp.jsp` and replace the code with the following lines:
-
-   ```
-   <%@ page import="com.mycompany.test.HelloWorld"%><%
-   %><%@ include file="/libs/foundation/global.jsp"%><%
-   %><% HelloWorld hello = new HelloWorld();%><%
-   %>
-   <html>
-   <body>
-   <b><%= hello.getString() %></b><br>
-   </body>
-   </html>
-   ```
+   &lt;%@ page import="com.mycompany.test.HelloWorld"%&gt;&lt;%
+   %&gt;&lt;%@ include file="/libs/foundation/global.jsp"%&gt;&lt;%
+   %&gt;&lt;% HelloWorld hello = new HelloWorld();%&gt;&lt;%
+   %&gt;
+   &lt;html&gt;
+   &lt;body&gt;
+   &lt;b&gt;&lt;%= hello.getString() %&gt;&lt;/b&gt;&lt;br&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;
 
 1. Create the resource `test_node` of type `nt:unstructured` under `/content`.
 
@@ -464,28 +475,28 @@ To see the effect of the Test Bundle, create a component that uses the Java meth
 
 1. A page is displayed with the **Hello World!** message.
 
-### Exporting and Importing Node Types {#exporting-and-importing-node-types}
+## Exporting and Importing Node Types {#exporting-and-importing-node-types}
 
-With CRXDE Lite you can import and/or export node type definitions in [CND (Compact Namespace and Node Type Definition) notation](http://jackrabbit.apache.org/jcr/node-type-notation.html).
+With CRXDE Lite you can import and/or export node type definitions in [CND (Compact Namespace and Node Type Definition) notation](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 To export a node type definition:
 
 1. Open CRXDE Lite in your browser.
 1. Select your required node.
-1. Select **Tools** then **Export Node Type**.
+1. Select **Tools **then **Export Node Type**.
 
 1. The definition, in cnd notation will be displayed in your browser. Save the information if required.
 
 To import a node type definition:
 
 1. Open CRXDE Lite in your browser.
-1. Select **Tools** then **Import Node Type...**.
+1. Select **Tools **then **Import Node Type...**.
 
 1. Enter the CND notation for the definition n the text box.
 1. Check **Allow Update** if you are updating an existing definition.
 1. Click **Import**.
 
-### Logging {#logging}
+## Logging {#logging}
 
 With CRXDE Lite you can display the file `error.log` that is located on the file system at `<crx-install-dir>/crx-quickstart/server/logs` and filter it with the appropriate log level. Proceed as follows:
 
@@ -505,5 +516,5 @@ You can:
 
 >[!NOTE]
 >
->See [Users, Groups and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
+>See [Users, Groups and Access Rights Administration](/help/sites-administering//user-group-ac-admin.md) for more information.
 
