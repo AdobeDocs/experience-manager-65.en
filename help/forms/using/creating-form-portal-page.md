@@ -217,7 +217,7 @@ To list forms on a page, add the **[!UICONTROL Search & Lister]** Component to t
 
 To link a form from anywhere on the page, use the Link component. For more information about link component, see [Embedding link component in a page](/help/forms/using/embedding-link-component-page.md).
 
-To list the forms that are in a draft state and the forms which are already submitted, use the **[!UICONTROL **Drafts and Submissions**]** component. For more information, see [Customizing Drafts and Submissions component](/help/forms/using/draft-submission-component.md).
+To list the forms that are in a draft state and the forms which are already submitted, use the **[!UICONTROL Drafts and Submissions]** component. For more information, see [Customizing Drafts and Submissions component](/help/forms/using/draft-submission-component.md).
 
 ## Mobile device friendliness {#mobile-device-friendliness}
 

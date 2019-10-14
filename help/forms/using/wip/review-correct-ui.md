@@ -43,16 +43,16 @@ Once the adaptive form is generated, you can review the conversion quality and m
 Automated Forms Conversion service supports the following components and field types:
 
 * **Text** - It refers to plain text in the PDF.
-* **Field** - It refers to a combination of text associated with a value depending upon the field type. For example, **first name** is a field of **text** field type.  
-  The following predefined data types (regex) are supported for a field:  
-  * Text  
-  * Numeric  
-  * Date  
-  * Email  
-  * Telephone Number  
-  * Signature  
-  * Currency  
-  * Password  
+* **Field** - It refers to a combination of text associated with a value depending upon the field type. For example, **first name** is a field of **text** field type.
+  The following predefined data types (regex) are supported for a field:
+  * Text
+  * Numeric
+  * Date
+  * Email
+  * Telephone Number
+  * Signature
+  * Currency
+  * Password
 
 * **Panel** - It refers to an aggregation of related content and components.
 * **Choice Group** - It refers to a combination of text associated with multiple choice options (check box, dropdown, and radio button). For example, gender or marital status.
@@ -107,7 +107,7 @@ You can see from the illustration that the section **Date of birth** is a **date
 
    **To modify the properties:**
 
-   In **[!UICONTROL **Properties**]** view, select **[!UICONTROL Type]** as **[!UICONTROL Date]** from the dropdown. The change of field type is reflected on the print form.
+   In **[!UICONTROL Properties]** view, select **[!UICONTROL Type]** as **[!UICONTROL Date]** from the dropdown. The change of field type is reflected on the print form.
 
    ![img5](assets/img5.png)
 
@@ -171,7 +171,7 @@ The Automated Forms Conversion service identifies the related components and con
 
 During conversion, multiple panels are created and there is a possibility that a panel may contain an unwanted component that has no relationship with other components of the panel, or a relative component is not grouped in the panel. The Automated Forms Conversion service provides an option on the Review and Correct UI to ungroup the panel, which results in unbinding the child components of the panel. You can then manually select the related components and group them back into the correct panel definition.
 
-In the following illustration, the highlighted panel **Current_Residential_Address** does not contain **Date_Moved** which is a relative component of the address. 
+In the following illustration, the highlighted panel **Current_Residential_Address** does not contain **Date_Moved** which is a relative component of the address.
 
 ![img12](assets/img12.png)
 
@@ -193,7 +193,7 @@ To merge the relative component within the panel, you must ungroup the panel and
 
    ![img17](assets/img17.png)
 
-1. Tap **[!UICONTROL **Save**]**button to save the modifications in your AEM instance. You can call the Automated Forms Conversion service to begin reconversion once all the modifications are applied. See [Call Automated Forms Conversion service for reconversion](/help/forms/using/wip/review-correct-ui.md#call-automated-forms-conversion-service-for-reconversion) for details.
+1. Tap **[!UICONTROL Save]** button to save the modifications in your AEM instance. You can call the Automated Forms Conversion service to begin reconversion once all the modifications are applied. See [Call Automated Forms Conversion service for reconversion](/help/forms/using/wip/review-correct-ui.md#call-automated-forms-conversion-service-for-reconversion) for details.
 
 ## Call Automated Forms Conversion service for reconversion {#call-automated-forms-conversion-service-for-reconversion}
 

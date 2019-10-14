@@ -1,17 +1,49 @@
 ---
-title: About AEM Assets
-seo-title: About AEM Assets
-description: Learn what is digital asset management, its use cases, and Adobe's AEM Asset offering.
-seo-description: Learn what is digital asset management, its use cases, and Adobe's AEM Asset offering.
-uuid: f9c9e14c-65d1-45e5-9572-d3f908c84ea1
-contentOwner: asgupta
+title: Administering Assets
+seo-title: Administering Assets
+description: Learn about the activities typically performed by an AEM Assets administrator.
+seo-description: Learn about the activities typically performed by an AEM Assets administrator.
+uuid: f0f21a32-0b05-47b6-b160-a2e2f4889019
+contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 7c851395-5f10-4311-899a-e73328f57e85
+topic-tags: administering
+content-type: reference
+discoiquuid: ce2cbff1-0b04-47a3-9241-8dad77794701
+docset: aem65
+
 ---
 
-# About Assets {#about-assets}
+# Administering Assets{#administering-assets}
 
-Assets is a Digital Asset Management (DAM) tool that is fully integrated with the AEM platform and enables your enterprise to share and distribute digital assets. Users across an organization can manage, store, and access images, videos, documents, audio clips, and rich media such as Flash files for use on the web, in print, and for digital distribution.
+Assets is a digital asset management tool that is fully integrated with the AEM platform and enables your enterprise to share and distribute digital assets. Users across an organization can manage, store, and access images, videos, documents, audio clips, and rich media such as Flash files for use on the web, in print, and for digital distribution.
+
+The following activities are those that you typically perform as a digital asset administrator:
+
+* [AEM Assets vs. AEM MediaLibrary](/help/assets/medialibrary.md)
+* [Assets Supported Formats](/help/assets/assets-formats.md)
+* [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md)
+* [Managing Metadata for Digital Assets](/help/assets/metadata.md)
+* [Search Facets](/help/assets/custom-search-facets.md)
+* [Camera Raw Support](/help/assets/camera-raw.md)
+* [Metadata Schemas](/help/assets/metadata-schemas.md)
+* [Profiles for Processing Metadata, Images, and Videos](/help/assets/processing-profiles.md)
+* [XMP writeback to renditions](/help/assets/xmp-writeback.md)
+* [Installing and Configuring Video Transcoder with FFmpeg](/help/assets/video-transcoder.md)
+* [Watermarking](/help/assets/watermarking.md)
+* [Asset link sharing](/help/assets/link-sharing.md)
+* [Best Practices for Assets](/help/assets/best-practices-for-assets.md)
+* [Detecting MIME Type of Assets Using Apache Tika](/help/assets/detect-asset-mime-type-with-tika.md)
+* [Configuring Asset Upload Restrictions](/help/assets/configuring-asset-upload-restrictions.md)
+* [Using PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
+* [Multi-tenancy for Collections, Snippets, and Snippet TemplatesAsset Templates](/help/assets/multi-tenancy.md)
+* [Support for IPTC Metadata](/help/assets/iptc-support.md)
+* [Imaging Transcoding Library](/help/assets/imaging-transcoding-library.md)
+* [Serial Uploads](/help/assets/serial-uploads.md)
+* [Digital Rights Management in Assets](/help/assets/drm.md)
+
+For supported file formats, see [Assets Supported Formats](/help/assets/assets-formats.md).
+
+For information about extending CQ DAM, see [Customizing and Extending CQ DAM](/help/assets/extending-assets.md). To learn how authors add assets to web pages, see [Working with Assets](/help/assets/author-assets.md).
 
 ## What is Digital Asset Management? {#what-is-digital-asset-management}
 
@@ -30,19 +62,15 @@ Completely integrated into AEM, AEM Assets lets you do the following:
 
 AEM Assets is fully integrated with CQ WCM and functionality is available using the DAM icon:
 
-<!-- TBD: Update image for branding -->
-
-![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
+![](assets/screen_shot_2012-04-17at15946pm.png) ![](assets/screen_shot_2012-04-17at20100pm.png)
 
 Assets managed within CQ DAM can then be accessed via the content finder of WCM:
 
-<!-- TBD: Update image for branding -->
-
-![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png)
+![](assets/screen_shot_2012-04-17at20214pm.png)
 
 >[!NOTE]
 >
->The basic navigation of user interface is the same as the rest of AEM - see [Overview of the GUI Console](/help/sites-authoring/qg-page-authoring.md) for full details.
+>The basic GUI handling is the same as the rest of WCM - see [Overview of the GUI Console](/help/sites-authoring/page-authoring.md) for full details.
 
 ### Digital Asset Management versus Image Component {#digital-asset-management-versus-image-component}
 
@@ -65,21 +93,23 @@ An asset is essentially a binary plus metadata plus renditions plus sub-assets. 
 
 When working with digital assets in AEM, you need to understand the following terminology:
 
-* **Collection:** A collection of assets, either based on physical location (folder), common properties (saved search folder), or user selection (lightbox folders).
+**Collection** A collection of assets, either based on physical location (folder), common properties (saved search folder), or user selection (lightbox folders).
 
-* **Metadata:** Assets have metadata; for example, author, expiry date, DRM Information (Digital Rights Management), and so on. Metadata is under access control. AEM Assets supports the following various common metadata schemata out of the box:
+**Metadata**
 
-  * **Dublin Core**: including author, description, date, subject, and so on.
-  * **IPTC**: including event, model, location, and so on.
-  * **WCM**: including page properties, on- and offtimes, and so on.
+Assets have metadata; for example, author, expiry date, DRM Information (Digital Rights Management), and so on. Metadata is under access control. AEM Assets supports the following various common metadata schemata out of the box:
 
-* **Tagging:** Assets can be tagged and classified. See Using Tags and Administering Tags.
+* Dublin Core: including author, description, date, subject, and so on.
+* IPTC: including event, model, location, and so on.
+* WCM: including page properties, on- and offtimes, and so on.
 
-* **Renditions:** A rendition is the binary representation of an asset. Assets always have a primary representation - that of the uploaded file. They can have any number of additional representations that are created, for example by customized workflow steps or when an asset is uploaded. Renditions may be of a different size, with a different resolution, with an added watermark, or some other changed characteristic.
+**Tagging** Assets can be tagged and classified. See Using Tags and Administering Tags.
 
-* **Versions:** Versioning creates a snapshot of digital assets at a specific point in time. You can restore assets to previous versions. See Versioning in AEM Assets.
+**Renditions** A rendition is the binary representation of an asset. Assets always have a primary representation - that of the uploaded file. They can have any number of additional representations that are created, for example by customized workflow steps or when an asset is uploaded. Renditions may be of a different size, with a different resolution, with an added watermark, or some other changed characteristic.
 
-* **Sub-assets:** Sub-assets are assets that make up an asset, for example, layers in an Adobe Photoshop file or pages in a PDF file. In AEM Assets, you can manage sub-assets as you would assets.
+**Versions** Versioning creates a snapshot of digital assets at a specific point in time. You can restore assets to previous versions. See Versioning in AEM Assets.
+
+**Sub-assets** Sub-assets are assets that make up an asset, for example, layers in an Adobe Photoshop file or pages in a PDF file. In AEM Assets, you can manage sub-assets as you would assets.
 
 ### How to Work With Assets {#how-to-work-with-assets}
 
@@ -87,13 +117,13 @@ You perform an action on an asset or collection. Actions can create or modify as
 
 The tasks you can perform with these preconfigured workflows:
 
-* Save the asset in, or delete the asset from, the repository.
-* Extract, and save, metadata for the asset; the individual metadata items are saved as XMP.
-* Generate renditions and thumbnails for the asset; including automatic resizing and cropping where necessary.
-* Transcode the asset where necessary. For example, video for mobile and web usage is transcoded with 24 frames per second, download video with 30 frames per second. Audio for mobile and web usage is transcoded with 128 kbps, audio for download with 192 kbps.
+* save the asset in, or delete the asset from, the repository.
+* extract, and save, metadata for the asset; the individual metadata items are saved as XMP.
+* generate renditions and thumbnails for the asset; including automatic resizing and cropping where necessary.
+* transcode the asset where necessary. For example, video for mobile and web usage is transcoded with 24 frames per second, download video with 30 frames per second. Audio for mobile and web usage is transcoded with 128 kbps, audio for download with 192 kbps.
 
-Of course, you can apply workflows manually as well. See [AEM Assets Media Handlers](media-handlers.md)for a list of default workflows.
+Of course, you can apply workflows manually as well. See [AEM Assets Media Handlers](/help/assets/media-handlers.md)for a list of default workflows.
 
-## AEM DAM and AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## CQ DAM vs. CQ MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
-See [AEM DAM and AEM MediaLibrary](medialibrary.md) for information on the differences.
+See [CQ DAM and the CQ MediaLibrary](/help/assets/medialibrary.md) for information on the differences.
