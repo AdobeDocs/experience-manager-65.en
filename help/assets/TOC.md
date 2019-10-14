@@ -10,7 +10,6 @@ user-guide-title: AEM 6.5 Assets User Guide
 + [Assets user guide](home.md)
 + [AEM 6.5 Assets release notes](../release-notes/assets.md)
 + [About DAM](assets.md)
-+ [User experience improvements](ux-improvements.md)
 + [Best practices for assets](best-practices-for-assets.md)
 + Use AEM Assets {#using}
     + [AEM Assets home page experience](assets-home-page.md)
