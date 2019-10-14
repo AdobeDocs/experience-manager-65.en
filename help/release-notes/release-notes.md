@@ -1,8 +1,8 @@
 ---
 title: General Release Notes for Adobe Experience Manager 6.5
 seo-title: Release Notes
-description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install and detailed change lists. 
-seo-description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install and detailed change lists. 
+description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install and detailed change lists.
+seo-description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -15,27 +15,27 @@ discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 
 ## Release Information {#release-information}
 
-<table> 
+<table>
  <tbody>
   <tr>
-   <th>Product</th> 
-   <td>Adobe Experience Manager<br /> </td> 
+   <th>Product</th>
+   <td>Adobe Experience Manager<br /> </td>
   </tr>
   <tr>
-   <th>Version</th> 
-   <td>6.4</td> 
+   <th>Version</th>
+   <td>6.4</td>
   </tr>
   <tr>
-   <th>Type</th> 
-   <td>Major release</td> 
+   <th>Type</th>
+   <td>Major release</td>
   </tr>
   <tr>
-   <th>General availability date</th> 
-   <td>April 4, 2018<br /> </td> 
+   <th>General availability date</th>
+   <td>April 4, 2018<br /> </td>
   </tr>
   <tr>
-   <th>Recommended updates</th> 
-   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM releases and updates</a></td> 
+   <th>Recommended updates</th>
+   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM releases and updates</a></td>
   </tr>
  </tbody>
 </table>
@@ -69,10 +69,10 @@ The Quickstart uses Eclipse Jetty 9.3.22 as servlet engine.
 Various enhancements have been made to the UI to make it more productive and easier to use.
 
 * [New Content Tree rail](/help/sites-authoring/basic-handling.md#content-tree) to quickly navigate a hierarchy. In combination with the list view, this restores the Classic UI interaction model.
-* Improved scrolling experience in card and list view of large folders. 
+* Improved scrolling experience in card and list view of large folders.
 * [Improved interaction with the search results](/help/sites-authoring/search.md) - the back button restores the prior search result.
 * [Additional keyboard shortcuts](/help/sites-authoring/keyboard-shortcuts.md), for most common actions, such as to open a particular rail, to edit, move and delete item, or to open properties.
-* [Ability to disable keyboard shortcuts](/help/sites-authoring/user-properties.md) (enable/disable in Preferences). 
+* [Ability to disable keyboard shortcuts](/help/sites-authoring/user-properties.md) (enable/disable in Preferences).
 * [Stop showing time stamps across all UI](/help/sites-authoring/user-properties.md) relative after 7 days (set default in Preferences).
 
 See the [Authoring documentation](/help/sites-authoring/home.md) for more information on these features.
@@ -83,7 +83,7 @@ See the [Authoring documentation](/help/sites-authoring/home.md) for more inform
 
 #### Content Repository {#content-repository}
 
-* Faster and more efficient compaction by Online Revision Cleanup. Internal tests show that the new tail compaction is up to 10 times faster and can reclaim more disk space with less IOPS compared to AEM 6.3. This results in less performance impact while the Online Revision Cleanup is running. For more information, please see [the documentation page](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes).  
+* Faster and more efficient compaction by Online Revision Cleanup. Internal tests show that the new tail compaction is up to 10 times faster and can reclaim more disk space with less IOPS compared to AEM 6.3. This results in less performance impact while the Online Revision Cleanup is running. For more information, please see [the documentation page](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes).
 
 * Continuous Revision Cleanup for MongoMK replaces scheduled cleanup maintenance
 * Improved efficiency for Revision Cleanup on Document Nodestores
@@ -103,7 +103,7 @@ For more information, please visit [this documentation page](/help/sites-deployi
 
 #### Monitoring {#monitoring}
 
-* A new [System Overview](/help/sites-administering/operations-dashboard.md#system-overview) provides a snapshot view on all performance-related system status & activities 
+* A new [System Overview](/help/sites-administering/operations-dashboard.md#system-overview) provides a snapshot view on all performance-related system status & activities
 * A new set of [Health Checks](/help/sites-administering/operations-dashboard.md#health-checks) around Indexing, Queries and Maintenance
 
 #### Projects and Workflows {#projects-and-workflows}
@@ -259,14 +259,6 @@ New viewers, including Panoramic and VR, let you provide more immersive experien
 
 See [Panoramic Images](/help/assets/panoramic-images.md) documentation to learn more.
 
-**3D Assets**
-
-New integration with [Adobe Dimension CC](https://www.adobe.com/products/dimension.html), a Creative Cloud application for authoring 3D experiences.
-
-See [Working with 3D assets](/help/assets/assets-3d.md) documentation to learn more.
-
-![do-not-localize/3d](assets/do-not-localize/3d.png)
-
 ### Experience Manager Forms {#experience-manager-forms}
 
 AEM 6.5 Forms brings in several new features and enhancements. The highlights include:
@@ -300,7 +292,7 @@ This process of prioritization has yielded more than 500 customer focused change
 * Standalone Quickstart: cq-quickstart-6.4.0.jar
 * Application Server Quickstart: cq-quickstart-6.4.0.war
 * Dispatcher 4.3.1 or newer for various web servers and platforms ([download link](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
-* Plug-in for Eclipse IDE ([read more and download](/help/sites-developing/aem-eclipse.md))  
+* Plug-in for Eclipse IDE ([read more and download](/help/sites-developing/aem-eclipse.md))
 
 * Extension for Brackets Code Editor ([read more and download](/help/sites-developing/aem-brackets.md))
 * Maven/Gradle dependencies ([download link](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/))
@@ -363,7 +355,7 @@ Please see [upgrade documentation](/help/sites-deploying/upgrade.md) for detaile
 
 ## Supported Platforms {#supported-platforms}
 
-Please find the complete matrix of supported platforms incl. Support-Level on [AEM 6.5 Technical Requirements](/help/sites-deploying/technical-requirements.md) 
+Please find the complete matrix of supported platforms incl. Support-Level on [AEM 6.5 Technical Requirements](/help/sites-deploying/technical-requirements.md)
 
 >[!NOTE]
 >
