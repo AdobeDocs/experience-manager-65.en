@@ -3,12 +3,14 @@ title: Page Diff
 seo-title: Page Diff
 description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
-uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
+uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
+discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
+docset: aem65
+
 ---
 
 # Page Diff{#page-diff}
@@ -21,7 +23,7 @@ The page diff feature allows for the convenient side-by-side comparison of two p
 
 >[!CAUTION]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>The user must have the** Modify/Create/Delete** permission on the node `/content/versionhistor`y in order to use the feature.
 >
 >See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.
 
@@ -47,7 +49,7 @@ For example if comparing versions, the current version is displayed on the left 
 
 The source of both pages is clearly displayed in the header bar at the top of the browser window.
 
-![chlimage_1-355](assets/chlimage_1-355.png)
+![](assets/chlimage_1-109.png)
 
 The diff detects changes at the component and HTML level. Items that have been changed are highlighted with different colors.
 
@@ -73,15 +75,15 @@ Note the Changed and Moved colors are the same.
 
 In order to focus on particular content, you can click on the full screen icon for either "side" of the side-by-side diff to enlarge it to the full browser window.
 
-![](do-not-localize/chlimage_1-24.png)
+![](do-not-localize/chlimage_1-18.png)
 
 The selected side will fill the entire window, but the bar will remain at the top allowing you to switch between the two pages.
 
-![chlimage_1-356](assets/chlimage_1-356.png)
+![](assets/chlimage_1-110.png)
 
 You can also choose to close the full screen view by clicking the exit full screen icon.
 
-![](do-not-localize/chlimage_1-25.png)
+![](do-not-localize/chlimage_1-19.png)
 
 You can exit the side-by-side diff at any time by clicking the Close button in the header.
 

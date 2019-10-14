@@ -3,12 +3,14 @@ title: Creating and Organizing Pages
 seo-title: Creating and Organizing Pages
 description: How to create and manage pages with AEM
 seo-description: How to create and manage pages with AEM
-uuid: 9bdc3222-6a0c-48a2-be1d-79ceb3bbc828
+uuid: d2989c42-b500-4256-b779-9667a380b885
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
+discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
+docset: aem65
+
 ---
 
 # Creating and Organizing Pages{#creating-and-organizing-pages}
@@ -17,7 +19,7 @@ This section describes how to create and manage pages with Adobe Experience Mana
 
 >[!NOTE]
 >
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering//security.md) and [permissions](/help/sites-administering//security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
 >
 >If you encounter any problems we suggest you contact your system administrator.
 
@@ -38,9 +40,11 @@ The structure of a website can be thought of as a tree structure that holds your
 
 The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
 
-* Author environment: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* Author environment
+  `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Publish environment: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* Publish environment
+  `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
 
@@ -70,22 +74,22 @@ Depending on the configuration of your instance, use of `/content` might be opti
  /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-authoring/basic-handling.md#product-navigation) and perform actions on the pages. You can also create new sites and [new pages](#creating-a-new-page).
+This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-authoring/basic-handling.md#navigating) and perform actions on the pages. You can also create new sites and [new pages](#creating-a-new-page).
 
 From any point, you can see the upward branch from breadcrumbs in the header bar:
 
-![screen_shot_2018-03-22at104706](assets/screen_shot_2018-03-22at104706.png)
+![](assets/caop-01.png)
 
 ### Page Naming Conventions {#page-naming-conventions}
 
 When creating a new page there are two keys fields:
 
-* **[Title](#title)**:
+* ** [Title](#title)**:
 
     * This is displayed to the user in the console and shown at the top of the page content when editing.
     * This field is mandatory.
 
-* **[Name](#name)**:
+* ** [Name](#name)**:
 
     * This is used to generate the URI.
     * User input for this field is optional. If not specified, the name is derived from the title. See the following section [Page Name Restrictions and Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) for details.
@@ -101,17 +105,18 @@ The page **Title** and **Name** can be created separately but are related:
 >[!NOTE]
 >
 >When defining a page name, a good rule-of-thumb is to keep the page name as brief but as expressive and memorable as possible to make it easy to understand for the reader. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
+
 >
 >Also keep in mind that some browsers (e.g. older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and the JCR.
 
 The minimum allowed characters are:
 
 * 'a' through to 'z'
 * 'A' through to 'Z'
 * '0' through to '9'
-* _ (underscore)
+* `_` (underscore)
 * `-` (hyphen/minus)
 
 Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).
@@ -122,18 +127,18 @@ Full details of all characters allowed can be found in [the naming conventions](
 
 #### Title {#title}
 
-If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. For example:
+If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. For example:
 
 | Title |Derived Name |
 |---|---|
 | Schön |schoen.html |
-| SC%&&ast;ç+ |sc---c-.html |
+| SC%&&#42;ç+ |sc---c-.html |
 
 #### Name {#name}
 
 When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.
 
-![screen_shot_2018-03-22at104817](assets/screen_shot_2018-03-22at104817.png)
+![](assets/caop-02.png)
 
 >[!NOTE]
 >
@@ -172,7 +177,7 @@ Components are the elements provided by AEM so that you can add specific types o
 * Video
 * And many more
 
-Once you have created and opened a page you can [add content using the components](/help/sites-authoring/editing-content.md#inserting-a-component), which are available from the [component browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+Once you have created and opened a page you can [add content using the components](/help/sites-authoring/editing-content.md#insertinganewparagraph), which are available from the [component browser](/help/sites-authoring/author-environment-tools.md#componentbrowser).
 
 >[!NOTE]
 >
@@ -184,22 +189,24 @@ Once you have created and opened a page you can [add content using the component
 
 Unless all pages have been created for you in advance, before you can start creating content, you must create a page:
 
-1. Open the Sites console (for example, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigate to the location where you want to create the new page.
 1. Open the drop down selector using **Create** in the toolbar, then select **Page** from the list:
 
-   ![screen_shot_2018-03-22at104944](assets/screen_shot_2018-03-22at104944.png)
+   ![](assets/caop-03.png)
 
 1. From the first stage of the wizard you can either:
 
     * Select the template you want used to create the new page, then click/tap **Next** to proceed.
+
     * **Cancel** to abort the process.
 
-   ![chlimage_1-8](assets/chlimage_1-8.png)
+   ![](assets/caop-04.png)
 
 1. From the final stage of the wizard you can either:
 
     * Use the three tabs to enter the [page properties](/help/sites-authoring/editing-page-properties.md) you want assigned to the new page, then click/tap **Create** to actually create the page.
+
     * Use **Back** to return to template selection.
 
    Key fields are:
@@ -212,6 +219,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
         * This is used to generate the URI. If not specified, the name is derived from the title.
         * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and JCR.
+
         * You **cannot submit invalid characters** in the **Name** field. When AEM detects invalid characters the field will be highlighted and an explanatory message shown to indicate the characters that need removing/replacing.
 
    >[!NOTE]
@@ -220,11 +228,11 @@ Unless all pages have been created for you in advance, before you can start crea
 
    The minimum information required to create a new page is the **Title**.
 
-   ![chlimage_1-9](assets/chlimage_1-9.png)
+   ![](assets/caop-05.png)
 
 1. Use **Create** to complete the process and create your new page. The confirmation dialog will ask whether you want to **Open** the page immediately or return to the console (**Done**):
 
-   ![chlimage_1-10](assets/chlimage_1-10.png)
+   ![](assets/chlimage_1-118.png)
 
    >[!NOTE]
    >
@@ -232,7 +240,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
 1. If you return to the console you will see your new page:
 
-   ![screen_shot_2018-03-22at105321](assets/screen_shot_2018-03-22at105321.png)
+   ![](assets/caop-06.png)
 
 >[!CAUTION]
 >
@@ -247,13 +255,13 @@ After creating a page, or navigating to an existing page (in the console), you c
 1. Select your page by using either:
 
     * [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-authoring/basic-handling.md#product-navigation) and the toolbar
+    * [Selection mode](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) and the toolbar
 
    And then select the **Edit** icon:
 
-   ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
+   ![](assets/screen_shot_2018-03-22at105355.png)
 
-1. The page will be opened and you can [edit the page](/help/sites-authoring/editing-content.md) as required.
+1. The page will be opened and you can [edit the page](/help/sites-authoring/editing-content.md#touchoptimizedui) as required.
 
 >[!NOTE]
 >
@@ -267,11 +275,11 @@ You can copy a page and all of its subpages to a new location:
 1. Select your page using either:
 
     * [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-authoring/basic-handling.md#product-navigation) and the toolbar
+    * [Selection mode](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) and the toolbar
 
    And then the **Copy** page icon:
 
-   ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
+   ![](assets/screen_shot_2018-03-22at105425.png)
 
    >[!NOTE]
    >
@@ -280,7 +288,7 @@ You can copy a page and all of its subpages to a new location:
 1. Navigate to the location for the new copy of the page.
 1. Use the **Paste** page icon:
 
-   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
+   ![](assets/screen_shot_2018-03-22at105510.png)
 
    A copy of the original page and any subpages will be created at this location.
 
@@ -310,20 +318,21 @@ AEM offers you the functionality to update any internal links that refer to the 
 1. Select your page using either:
 
     * [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-authoring/basic-handling.md#product-navigation) and the toolbar
+    * [Selection mode](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) and the toolbar
 
    And then select the **Move** page icon:
 
-   ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
+   ![](assets/screen_shot_2018-03-22at105534.png)
 
    This will open the move page wizard.
 
 1. From the **Rename** stage of the wizard you can either:
 
     * Specify the name you want the page to have after it is moved, then click/tap **Next** to proceed.
+
     * **Cancel** to abort the process.
 
-   ![chlimage_1-11](assets/chlimage_1-11.png)
+   ![](assets/caop-07.png)
 
    The page name can remain the same if you are only moving the page.
 
@@ -340,15 +349,25 @@ AEM offers you the functionality to update any internal links that refer to the 
 
     * Use **Back** to return to page name specification.
 
-   ![chlimage_1-12](assets/chlimage_1-12.png)
+   >[!NOTE]
+   >
+   >By default the parent of the page you are moving/renaming will be selected as the destination.
+
+   ![](assets/caop-08.png)
 
    >[!NOTE]
    >
    >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
 
-1. If the page is linked to or referenced, then these references will be listed in the **Adjust/Republish** step. You can indicate which should be adjusted and republished as appropriate.
+1. If the page is linked to or referenced, or has been published, then the details will be listed in the **Adjust/Republish** step.
 
-   ![chlimage_1-13](assets/chlimage_1-13.png)
+   You can indicate which should be adjusted and/or republished as appropriate.
+
+   >[!NOTE]
+   >
+   >If the page is neither linked to nor referenced, then this step will not be available.
+
+   ![](assets/caop-09.png)
 
 1. Selecting **Move** will complete the process and move/rename your page as appropriate.
 
@@ -365,7 +384,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 1. Navigate until you can see the page you want to delete.
 1. Use [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) to select the required page, then use **Delete** from the toolbar:
 
-   ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
+   ![](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
    >
@@ -387,7 +406,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 You can [lock/unlock a page](/help/sites-authoring/editing-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
 
-![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
+![](assets/screen_shot_2018-03-22at105713.png) ![](assets/screen_shot_2018-03-22at105720.png)
 
 ### Creating a New Folder {#creating-a-new-folder}
 
@@ -408,7 +427,7 @@ You can create folders to help organize your files and pages.
 1. To open the option list, select **Create** from the toolbar
 1. Select **Folder** to open the dialog. Here you can enter the **Name** and **Title**:
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+   ![](assets/chlimage_1-119.png)
 
 1. Select **Create** to create the folder.
 

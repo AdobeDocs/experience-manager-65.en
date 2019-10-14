@@ -3,23 +3,25 @@ title: Editing Page Content
 seo-title: Editing Page Content
 description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
-uuid: 0b34fb45-286a-4acb-b5d1-efc3d0e4ab70
+uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
+discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
+docset: aem65
+
 ---
 
 # Editing Page Content{#editing-page-content}
 
 Once your page is created (either new or as part of a launch or live copy) you can edit the content to make the updates you require.
 
-Content is added using components(appropriate to the content type) that can be dragged onto the page. These can then be edited in place, moved, or deleted.
+Content is added using [components](/help/sites-classic-ui-authoring/classic-page-author-conponent-console.md) (appropriate to the content type) that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 
 >[!NOTE]
 >
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to edit pages; for example, adding, editing or deleting components, annotating, unlocking.
+>Your account needs the [appropriate access rights](/help/sites-administering//security.md) and [permissions](/help/sites-administering//security.md#permissions) to edit pages; for example, adding, editing or deleting components, annotating, unlocking.
 >
 >If you encounter any problems we suggest you contact your system administrator.
 
@@ -39,7 +41,7 @@ Several tabs and icons are available, including:
 * Client Context
 * Websites
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+![](assets/chlimage_1-71.png)
 
 These provide access to a wide selection of functionality; including:
 
@@ -55,7 +57,7 @@ These provide access to a wide selection of functionality; including:
 
 * [scaffolding](/help/sites-authoring/scaffolding.md)
 
-* [client context](/help/sites-administering/client-context.md)
+* [client context](/help/sites-administering//client-context.md)
 
 ## Inserting a Component {#inserting-a-component}
 
@@ -68,10 +70,11 @@ To insert a new component:
 1. There are several methods of selecting the type of paragraph you want to insert:
 
     * Double-click the area labeled **Drag components or assets here...** - the **Insert New Component** toolbar opens. Select a component and click **OK**.
+
     * Drag a component from the floating toolbar (called sidekick) to insert a new paragraph.
     * Right-click an existing paragraph and select **New...** - the Insert New Component toolbar opens. Select a component and click **OK**.
 
-   ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
+   ![](assets/screen_shot_2012-02-15at115605am.png)
 
 1. In both the sidekick and the **Insert New Component** toolbar you see a list of the available components (paragraph types). These may be split into various sections (for example, General, Columns, etc.), which can be expanded as required.
 
@@ -126,12 +129,12 @@ To move a paragraph:
 
 1. Select the paragraph to be moved:
 
-   ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
+   ![](assets/screen_shot_2012-02-15at115855am.png)
 
 1. Drag the paragraph to the new location - AEM indicates where the paragraph can be moved to with a green checkmark. Drop it in your desired location.
 1. Your paragraph is moved:
 
-   ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
+   ![](assets/screen_shot_2012-02-15at120030pm.png)
 
 ## Deleting a Component {#deleting-a-component}
 
@@ -139,7 +142,7 @@ To delete a paragraph:
 
 1. Select the paragraph and **right-click**:
 
-   ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
+   ![](assets/screen_shot_2012-02-15at120220pm.png)
 
 1. Select **Delete** from the menu. AEM WCM requests confirmation that you want to delete the paragraph as this action cannot be undone.
 1. Click **OK**.
@@ -147,6 +150,8 @@ To delete a paragraph:
 >[!NOTE]
 >
 >If you have set your [User Properties to show the Global Editing Toolbar](/help/sites-classic-ui-authoring/author-env-user-props.md) you can also perform certain actions on the paragraphs by using the **Copy**, **Cut**, **Paste**, **Delete** buttons available.
+
+>
 >Various [keyboard shortcuts](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) are also available.
 
 ## Cut/Copy/Paste a Component {#cut-copy-paste-a-component}
@@ -156,6 +161,7 @@ As when [Deleting a Component](#deleting-a-component) you can use the context me
 >[!NOTE]
 >
 >If you have set your [User Properties to show the Global Editing Toolbar](/help/sites-classic-ui-authoring/author-env-user-props.md) you can also perform certain actions on the paragraphs by using the **Copy**, **Cut**, **Paste**, **Delete** buttons available.
+
 >
 >Various [keyboard shortcuts](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) are also available.
 
@@ -180,17 +186,17 @@ You can cancel (then re-enable) the inheritance. Depending on the component, thi
 
     * The padlock icon is shown when the component is selected; for example:
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![](assets/chlimage_1-72.png)
 
     * The padlock is also shown in the dialog of components; for example:
 
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   ![](assets/chlimage_1-73.png)
 
 1. **An Inherited Paragraph System**
 
    The configuration dialog. For example, as with the Inherited Paragraph System within Geometrixx:
 
-   ![chlimage_1-104](assets/chlimage_1-104.png)
+   ![](assets/chlimage_1-74.png)
 
 ## Adding Annotations {#adding-annotations}
 
@@ -200,23 +206,23 @@ You can cancel (then re-enable) the inheritance. Depending on the component, thi
 
 There are two icons in the bottom border of the sidekick that are important to previewing pages:
 
-![](do-not-localize/chlimage_1-7.png)
+![](do-not-localize/chlimage_1-5.png)
 
 * The pencil icon shows you that you are currently in edit mode where you can add, modify, move or delete content.
 
-  ![](do-not-localize/chlimage_1-8.png)
+  ![](do-not-localize/chlimage_1-6.png)
 
 * The magnifying glass icon allows you to select preview mode where the page is displayed as it will be seen in the publish environment (a page refresh is sometimes also needed):
 
-  ![](do-not-localize/chlimage_1-9.png)
+  ![](do-not-localize/chlimage_1-7.png)
 
   In preview mode the sidekick will be reduced, click the down arrow icon to return to edit mode:
 
-  ![](do-not-localize/chlimage_1-10.png)
+  ![](do-not-localize/chlimage_1-8.png)
 
 ## Find & Replace {#find-replace}
 
-For larger scale edits of the same phrase a **[Find & Replace](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** menu option allows you to search for, and replace multiple instances of a string, within a section of the website.
+For larger scale edits of the same phrase a ** [Find & Replace](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** menu option allows you to search for, and replace multiple instances of a string, within a section of the website.
 
 ## Locking a Page {#locking-a-page}
 
@@ -232,11 +238,11 @@ To lock a page:
 1. Double-click the page to open it for edit.
 1. In the **Page** tab of sidekick, select **Lock Page**:
 
-   ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
+   ![](assets/screen_shot_2012-02-08at15750pm.png)
 
    A message shows that your page is locked to other users. In addition, in the right pane of the **Websites** console, AEM WCM displays the page as locked and indicates which user has locked the page.
 
-   ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
+   ![](assets/screen_shot_2012-02-08at20657pm.png)
 
 ## Unlocking a Page {#unlocking-a-page}
 

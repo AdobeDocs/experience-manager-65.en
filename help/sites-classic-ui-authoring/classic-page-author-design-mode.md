@@ -3,13 +3,14 @@ title: Configuring Components in Design Mode
 seo-title: Configuring Components in Design Mode
 description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
-page-status-flag: de-activated
-uuid: 57249965-3a30-49ce-9fb0-864c5daaa262
+uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 93f98f7b-7ab8-4d9c-b179-dc99b80ffc91
+discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
+docset: aem65
+
 ---
 
 # Configuring Components in Design Mode{#configuring-components-in-design-mode}
@@ -45,13 +46,13 @@ In Design mode, the sidekick is minimized and you have the possibility to config
 
 1. Click **Edit** on the Paragraph system (**Design of par**).
 
-   ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
+   ![](assets/screen_shot_2012-02-08at102726am.png)
 
 1. A dialog will be opened, listing the component groups that are shown in the Sidekick together with the individual components that they contain.
 
    Select as required to add, or remove, the components to be available in the sidekick.
 
-   ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
+   ![](assets/screen_shot_2012-02-08at103407am.png)
 
 1. The Sidekick minimizes in Design mode. By clicking on the arrow you can maximize the Sidekick and return to Edit Mode:
 
@@ -69,7 +70,7 @@ In Design mode, you can also configure attributes for the individual components.
 
    For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
 
-   ![chlimage_1-12](assets/chlimage_1-12.png)
+   ![](assets/chlimage_1-5.png)
 
 1. Click **OK** to save your changes.
 

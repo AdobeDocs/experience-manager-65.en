@@ -1,14 +1,16 @@
 ---
 title: Sustainable Upgrades
 seo-title: Sustainable Upgrades
-description: Learn about sustainable upgrades in AEM 6.5.
-seo-description: Learn about sustainable upgrades in AEM 6.5.
-uuid: 59d64af5-6ee0-40c8-b24a-c06848f70daa
+description: Learn about sustainable upgrades in AEM 6.4.
+seo-description: Learn about sustainable upgrades in AEM 6.4.
+uuid: 80673076-624b-4308-8233-129cb4422bd5
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
-discoiquuid: 5ca8dd7a-4efd-493e-8022-d2f10903b0a2
+discoiquuid: e35c9352-f0d5-4db5-b88f-0720af8f6883
+docset: aem65
+
 ---
 
 # Sustainable Upgrades{#sustainable-upgrades}
@@ -35,7 +37,7 @@ In previous releases of AEM many APIs were exposed via the Uber Jar. Some of the
 >
 >The concept of `Private` and `Public` in this context should not be confused with Java notions of public and private classes.
 
-![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
+![](assets/image2018-2-12_23-52-48.png)
 
 #### Content Classifications {#content-classifications}
 
@@ -47,9 +49,9 @@ In order to make it safer and easier for customers to understand what areas of *
 
 * **Abstract (granite:AbstractArea)** - Defines a node as abstract. Nodes can be overlaid or inherited ( `sling:resourceSupertype`) but must not be used directly ( `sling:resourceType`).
 
-* **Final (granite:FinalArea)** - Defines a node as final. Nodes classified as final cannot be overlaid or inherited. Final nodes can be used directly via `sling:resourceType`. Subnodes under final node are considered internal by default
+* **Final (granite:FinalArea)** - Defines a node as final. Nodes classified as final ideally should not be overlaid or inherited. Final nodes can be used directly via `sling:resourceType`. Subnodes under final node are considered internal by default.
 
-* **Internal (granite:InternalArea)** - Defines a node as internal. Nodes classified as internal cannot be overlaid, inherited, or used directly. These nodes are meant only for internal functionality of AEM
+* ***Internal (granite:InternalArea)*** *- *Defines a node as internal. Nodes classified as internal ideally should not be overlaid, inherited, or used directly. These nodes are meant only for internal functionality of AEM
 
 * **No Annotation** - Nodes inherit classification based on the tree hierachy. The / root is by default Public. **Nodes with a parent classified as Internal or Final are also to be treated as Internal.**
 
@@ -63,21 +65,27 @@ Mixins applied in CRXDE Lite will show content nodes and trees that are marked a
 
 **Public**
 
-![image2018-2-8_23-34-5](assets/image2018-2-8_23-34-5.png)
+![](assets/image2018-2-8_23-34-5.png)
 
 **Final**
 
-![image2018-2-8_23-34-56](assets/image2018-2-8_23-34-56.png)
+![](assets/image2018-2-8_23-34-56.png)
 
 **Internal**
 
-![image2018-2-8_23-38-23](assets/image2018-2-8_23-38-23.png)
+![](assets/image2018-2-8_23-38-23.png)
 
 **Content Health Check**
 
+>[!NOTE]
+>
+>As of AEM 6.5, Adobe recommends using the Pattern Detector to detect content access violations. Pattern detector reports are more detailed, detect more issues and reduce the probability of false positives.
+>
+>For more information, see [Assessing the Upgrade Complexity with the Pattern Detector](/help/sites-deploying/pattern-detector.md).
+
 AEM 6.5 will ship with a health check to alert customers if overlaid or referenced content is used in a way inconsistent with the content classification.
 
-The **Sling/Granite Content Access Check** is a new health check that monitors the repository to see if customer code is improperly accessing protected nodes in AEM.
+The** Sling/Granite Content Access Check** is a new health check that monitors the repository to see if customer code is improperly accessing protected nodes in AEM.
 
 This will scan **/apps** and typically takes several seconds to complete.
 
@@ -86,14 +94,14 @@ In order to access this new health check, you need to do the following:
 1. From the AEM Home Screen, navigate to **Tools &gt; Operations &gt; Health Reports**
 1. Click on the **Sling/Granite Content Access Check** as shown below:
 
-   ![screen_shot_2017-12-14at55648pm](assets/screen_shot_2017-12-14at55648pm.png)
+   ![](assets/screen_shot_2017-12-14at55648pm.png)
 
 After the scan is complete, a list of warnings will appear notifiying an end user of the protected node that is being improperly referenced:
 
-![screenshot-2018-2-5healthreports](assets/screenshot-2018-2-5healthreports.png)
+![](assets/screenshot-2018-2-5healthreports.png)
 
 After fixing the violations it will return to green state:
 
-![screenshot-2018-2-5healthreports-violations](assets/screenshot-2018-2-5healthreports-violations.png)
+![](assets/screenshot-2018-2-5healthreports-violations.png)
 
 The health check displays information collected by a background service that asynchronously checks whenever an overlay or resource type is used across all Sling search paths. If content mixins are used incorrectly it reports a violation.

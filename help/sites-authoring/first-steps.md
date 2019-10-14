@@ -3,12 +3,14 @@ title: First Steps for Authors
 seo-title: First Steps for Authors
 description: An overview of the main tasks that you will be using when starting to author content with AEM
 seo-description: An overview of the main tasks that you will be using when starting to author content with AEM
-uuid: 13aec50b-f902-4b5e-9e8b-bc94810d7b88
+uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
+discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
+docset: aem65
+
 ---
 
 # First Steps for Authors{#first-steps-for-authors}
@@ -17,13 +19,11 @@ This section gives you an overview of the main tasks that you will be using when
 
 It covers:
 
-* [Getting Started](#getting-started) - Detailing the basic sequence of events you need for creating and publishing your first page.
+* [Getting Started](#getting-started)  
+  Detailing the basic sequence of events you need for creating and publishing your first page.  
 
-* [Further Actions](#further-actions) - Following on with the many other actions you can use when authoring.
-
-## Overview {#overview}
-
-This slideshow (click-through) gives a quick visual overview of using AEM to author your first page. Links to details about the individual steps involved are then provided under [Getting Started](#getting-started).
+* [Further Actions](#further-actions)  
+  Following on with the many other actions you can use when authoring.
 
 ## Getting Started {#getting-started}
 
@@ -48,7 +48,7 @@ Whether your instance already has existing pages or you have just created a new 
 * [Inserting a Component (Paragraph)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Edit/Configure/Copy/Cut/Delete/Paste](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) a Component
 * [Edit (Content)](/help/sites-authoring/editing-content.md#edit-content)
-* [Edit (Content) - Full Screen Mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
+* [Edit (Content) - Full Screen Mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)  
 
 * [Undoing and Redoing Page Edits](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Using Preview Mode](/help/sites-authoring/editing-content.md#preview-mode) (to see how it will look when published)
@@ -56,7 +56,7 @@ Whether your instance already has existing pages or you have just created a new 
 
 ### Publishing a Page {#publishing-a-page}
 
-Once you have finished editing your page you will want to [publish (or activate) your page](/help/sites-authoring/publishing-pages.md) so that it is available to visitors to your website.
+Once you have finished editing your page you will want to [publish (or activate) your page](/help/sites-authoring/publishing-pages.md#main-pars-title-10) so that it is available to visitors to your website.
 
 ## Further Actions {#further-actions}
 
@@ -72,7 +72,7 @@ It is sometimes easier to [copy a page](/help/sites-authoring/managing-pages.md#
 
 ### Unpublishing a Page {#unpublishing-a-page}
 
-To make previously published (or activated) content unavailable on your public website, you [unpublish (or deactivate) the page](/help/sites-authoring/publishing-pages.md).
+To make previously published (or activated) content unavailable on your public website, you [unpublish (or deactivate) the page](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
 
 ### Deleting a Page {#deleting-a-page}
 
@@ -88,4 +88,4 @@ You can [create a version](/help/sites-authoring/working-with-page-versions.md#c
 
 ## More Information {#more-information}
 
-Access to more information about authoring can be found under [Page Authoring](/help/sites-authoring/author-environment-tools.md) and [Working with the Author Environment](/help/sites-authoring/home.md).
+Access to more information about authoring can be found under [Page Authoring](/help/sites-authoring/page-authoring.md).

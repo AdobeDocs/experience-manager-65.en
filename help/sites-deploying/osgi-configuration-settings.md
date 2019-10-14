@@ -3,12 +3,14 @@ title: OSGi Configuration Settings
 seo-title: OSGi Configuration Settings
 description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
 seo-description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
-uuid: 817de76e-7ba6-4502-94f5-09046b878cfb
+uuid: 192d3287-ec99-403b-bab0-45721e4e3abd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
+discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
+docset: aem65
+
 ---
 
 # OSGi Configuration Settings{#osgi-configuration-settings}
@@ -49,7 +51,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 
 **CRX Sling Client Repository** Configure access to the underlying content repository.
 
-* The **Admin Password** should be changed after installation to ensure the [security](/help/sites-administering/security-checklist.md) of your instance.
+* The **Admin Password** should be changed after installation to ensure the [security](/content/docs/en/aem/6-3/deploy/security_checklist.md) of your instance.
 
 * Other changes should not be necessary and care must be taken as they can affect access to the repository.
 
@@ -64,7 +66,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 >Be sure to configure the following:
 >
 >**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.
->The password must be changed after the initial installation to ensure the [security](/help/sites-administering/security-checklist.md) of your instance.
+>The password must be changed after the initial installation to ensure the [security](/content/docs/en/aem/6-3/deploy/security_checklist.md) of your instance.
 
 >[!NOTE]
 >
@@ -73,8 +75,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 **Apache Sling Customizable Request Data Logger** Configure:
 
 * **Logger Name** and **Log Format** to configure the location and format of request and access logging (default: `request.log`). This log file is essential when analyzing performance or debugging functionality related to the web chain.
-
-  This is paired with the Apache Sling Request Logger.
+  This is paired with the [Apache Sling Request Logger](#apacheslingrequestlogger).
 
 For further information see [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
 
@@ -83,7 +84,6 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 * **Min Pool Size** and **Max Pool Size**, the size of the pool used to hold event threads.
 
 * **Queue Size**, the maximum size of the thread queue if the pool is exhausted.
-
   The recommended value is `-1` as this sets the queue to unlimited; if a limit is set then losses might occur when it is exceeded.
 
 * Changing these settings can help performance in scenarios with a high number of events; for example, heavy AEM DAM or Workflow usage.
@@ -94,7 +94,6 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 
 * **Auto Index** to enable/disable directory rendering for browsing.
 * **Enable** (or disable) default renditions, such as **HMTL**, **Plain Text**, **JSON** or **XML**.
-
   You should not disable JSON.
 
 >[!NOTE]
@@ -113,7 +112,7 @@ Certain settings can affect performance, these should be disabled where possible
 
 **Apache Sling JCR Installer** These parameters probably do not need configuration, but can be useful to know when developing or debugging. For example the installation folder(s) can be useful for checking in/out or creating a package.
 
-* **Installation folders name regexp** and **Max hierarchy depth of install folders** - specify where, and to which depth, repository folders are searched for resources to be installed. When a wildcard is used (as in .&ast;/install) all appropriate matches will be searched, for example, `/libs/sling/install` and `/libs/cq/core/install`.
+* **Installation folders name regexp** and **Max hierarchy depth of install folders** - specify where, and to which depth, repository folders are searched for resources to be installed. When a wildcard is used (as in .&#42;/install) all appropriate matches will be searched, for example, `/libs/sling/install` and `/libs/cq/core/install`.
 
 * **Search Path**, list of paths that jcrinstall searches for resources to be installed, together with a number indicating the weighting factor for that path.
 
@@ -188,7 +187,7 @@ The referrer filter service is an OSGi service that allows you to configure:
 * whether an empty referrer header is allowed
 * and a white list of servers to be allowed in addition to the server host.
 
-See the [Security Checklist - Issues with Cross-Site Request Forgery](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) for further details.
+See the [Security Checklist - Issues with Cross-Site Request Forgery](/help/sites-administering//security-checklist.md#protect-against-cross-site-request-forgery) for further details.
 
 >[!NOTE]
 >
@@ -201,7 +200,7 @@ See the [Security Checklist - Issues with Cross-Site Request Forgery](/help/site
 
 * **Enable Access Log**, to enable or disable.
 
-This is paired with the Apache Sling Customizable Request Data Logger.
+This is paired with the [Apache Sling Customizable Request Data Logger](#apacheslingcustomizablerequestdatalogger).
 
 For further information see [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
 
@@ -215,7 +214,7 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 
 * **Mapping Location**, the mapper configuration externalized in `/etc/map`.
 
-* Use your local installation (for example, use `http://localhost:4502/system/console/jcrresolver`) to determine which Resource Resolver is active.
+* Use your local installation (for example, use `https://localhost:4502/system/console/jcrresolver`) to determine which Resource Resolver is active.
 
 For further information see: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
 
@@ -236,7 +235,6 @@ For further information see: [https://cwiki.apache.org/confluence/display/SLING/
 Various parameters can be set, including:
 
 * **Execution Paths** lists the paths to search for executable scripts; by configuring specific paths you can limit which scripts can be executed. If no path is configured then the default is used ( `/` = root), this allows the execution of all scripts.
-
   If a configured path value ends with a slash, the whole sub tree is searched. Without such a trailing slash the script will only be executed if it is an exact match.
 
 * **Script User** - this optional property can specify the repository user account used for reading the scripts. If no account is specified the `admin` user is used by default.
@@ -246,12 +244,11 @@ Various parameters can be set, including:
 **Day Commons GFX Font Helper** When rendering graphics you can use DrawText to embed text. For this you can also install your own fonts:
 
 * Define the **Font Path** to be searched for project specific fonts.
-
   For example, `/apps/myapp/fonts`.
 
 **Apache HTTP Components Proxy Configuration** Proxy configuration for all code using the Apache HTTP client, used when a HTTP is made; for example upon replication.
 
-When creating a new configuration, do not make changes to the factory configuration but instead create a new factory configuration for this component using the configuration manager available here: **http://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
+When creating a new configuration, do not make changes to the factory configuration but instead create a new factory configuration for this component using the configuration manager available here: **https://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >
@@ -289,7 +286,7 @@ When creating a new configuration, do not make changes to the factory configurat
 
 **Day CQ HTTP Header Authentication Handler** System wide settings for the basic authentication method of the HTTP request.
 
-When using [closed user groups](/help/sites-administering/cug.md) you can configure (amongst others):
+When using [closed user groups](/help/sites-administering//cug.md) you can configure (amongst others):
 
 * **HTTP Realm**
 * The **Default Login Page**
@@ -303,7 +300,8 @@ When using [closed user groups](/help/sites-administering/cug.md) you can config
 
 **Day CQ Link Checker Task** Configure settings for a single link checker task (a task which checks an external link):
 
-* Check the intervals defined in **Good Link Test Interval** and **Bad Link Test Interval**
+* Check the intervals defined in **Good Link Test Interval** and **Bad Link Test Interval
+  **
 
 * The various parameters related to proxies for internet access and NTLM that are needed for external access when checking a link.
 
@@ -315,14 +313,14 @@ When using [closed user groups](/help/sites-administering/cug.md) you can config
 
 * **Target Path** to define where a request to " `/`" will be redirected to.
 
-There are [two UIs](/help/sites-authoring/select-ui.md) available in AEM:
+There are two UIs available in AEM:
 
-* the touch-optimized UI has been introduced
-* and the classic UI is still fully operational
+* the touch-enabled UI is the standard UI
+* and the deprecatd classic UI is still fully operational
 
 Using AEM Root Mapping you can configure the UI that you want to have as the default for your instance:
 
-* To have the touch-optimized UI as the default UI the **Target Path** should point to:
+* To have the touch-enabled UI as the default UI the **Target Path** should point to:
 
   ```
      /projects.html
@@ -347,7 +345,6 @@ Various configuration properties are available:
 
 * **Service Ranking**
   OSGi Framework Service Ranking value is used to indicate the order used for calling this service. This is an `int` value where higher values designate higher precedence.
-
   Default value is `0`.
 
 * **Header Names**
@@ -368,15 +365,14 @@ Various configuration properties are available:
     * `Basic` if the user ID is encoded in the HTTP Basic Authentication format
     * `AsIs` if the user ID is provided in plain text or any regular expression applied value should be used as is or any regular expression
 
-**Day CQ WCM Debug Filter** This is useful when developing as it allows the use of suffixes such as ?debug=layout when accessing a page. For example, http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout will provide layout information that may be of interest to the developer.
+**Day CQ WCM Debug Filter** This is useful when developing as it allows the use of suffixes such as ?debug=layout when accessing a page. For example, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout will provide layout information that may be of interest to the developer.
 
 * Disable this on production instances to ensure performance and security.
 
 **Day CQ WCM Filter** Configure:
 
-* **WCM Mode** to define the default mode.
+* **WCM Mode **to define the default mode.
 * On an author instance this might be `edit`, `disable,preview` or `analytics`.
-
   The other modes can be accessed from the sidekick, or the suffix `?wcmmode=disabled` can be used to emulate a production environment.
 
 * On a publish instance this must be set to `disabled` to ensure that no other mode is accessible.
@@ -407,7 +403,7 @@ Various configuration properties are available:
 
 **Day CQ WCM Page Statistics** For a publish instance configure:
 
-* **URL to send data** to configure the URL used to track page statistics (is vital if a tracker request goes through the dispatcher); for example, the default is `http://localhost:4502/libs/wcm/stats/tracker`.
+* **URL to send data** to configure the URL used to track page statistics (is vital if a tracker request goes through the dispatcher); for example, the default is `https://localhost:4502/libs/wcm/stats/tracker`.
 
 * **Tracking script enabled** to enable ( `true`) or disable ( `false`) the inclusion of the tracking script on the pages. The default value is `false`.
 
@@ -433,8 +429,8 @@ See [Version Purging](/help/sites-deploying/version-purging.md) for more informa
 
 **Day CQSE HTTP Service** Control the CQ Servlet Engine:
 
-* **NIO for HTTP**, Whether or not to use NIO for HTTP. Defaults to true. Only used if HTTP is enabled.
-* **Connection Timeout**, Connection timeout in milliseconds. This property applies to both HTTP and HTTPS connections. Defaults to 60 seconds.
+* **NIO for HTTP, **Whether or not to use NIO for HTTP. Defaults to true. Only used if HTTP is enabled.
+* **Connection Timeout, **Connection timeout in milliseconds. This property applies to both HTTP and HTTPS connections. Defaults to 60 seconds.
 
 * **Enable HTTPS,** Whether or not HTTPS is enabled. Defaults to false.
 * **Session Timeout**, Default lifetime of an HTTP session specified in minutes. If the timeout is 0 or less, sessions will never timeout. Defaults to 10 minutes.
@@ -452,7 +448,7 @@ The following properties only apply if HTTPS is enabled.
 * **Key Password**, Password to unlock the secret key in the Keystore.
 * **Client Certificate**, Requirement for the Client to provide a valid certifcate. Defaults to none.
 
-See also [Enabling HTTP Over SSL](/help/sites-administering/ssl-by-default.md) for details on the SSL-related options and a complete description on how to enable HTTPS for CQSE.
+See also [Enabling HTTP Over SSL](/help/sites-deploying/config-ssl.md) for details on the SSL-related options and a complete description on how to enable HTTPS for CQSE.
 
 **CQ Rewriter HTML Parser Factory**
 
@@ -481,7 +477,6 @@ The overall flow is as follows:
 1. User authenticates with AEM and requests a page with assets.
 1. Requested page contains an asset similar to `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
 1. Rewriter transforms the link to a CDN URL containing a JWS Signature:
-
    `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
 1. User's browser then forwards the asset request to CDN server
@@ -490,7 +485,7 @@ The overall flow is as follows:
 
 The flow between the user's browser, the CDN, and AEM can be visualized as follows.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![](assets/chlimage_1-8.png)
 
 >[!NOTE]
 >

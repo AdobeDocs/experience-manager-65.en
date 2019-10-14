@@ -3,12 +3,14 @@ title: Scaffolding
 seo-title: Scaffolding
 description: Sometimes you may need to create a large set of pages that share the same structure but have differing content. With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
 seo-description: Sometimes you may need to create a large set of pages that share the same structure but have differing content. With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
-uuid: b1fdf2c0-e6d0-488a-96e5-dfbd6beb7610
+uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
+discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
+docset: aem65
+
 ---
 
 # Scaffolding{#scaffolding}
@@ -26,50 +28,44 @@ With scaffolding you can create a form (a scaffold) with fields that reflect the
 Scaffolds are stored in the **Tools** console of the site admin.
 
 * Open the **Tools** console and click on **Default Page Scaffolding**.
-
 * Under this click on **geometrixx**.
 * Under **geometrixx** you will find a *scaffold page* called **News**. Double click to open this page.
 
-![howscaffolds_work](assets/howscaffolds_work.png)
+![](assets/howscaffolds_work.png)
 
 The scaffold consists of a form with a field for each piece of content that will make up the page to be created and four important parameters which are accessed through the **Page Properties** of the scaffold page.
 
-![pageprops](assets/pageprops.png)
+![](assets/pageprops.png)
 
 The scaffolding page properties are:
 
 * **Title Text**: This is the name of this scaffolding page itself. In this example it is called "News".
 * **Description**: This appears below the title on the scaffolding page.
 * **Target Template**: This is the template that this scaffold will use when it creates a new page. In this example it is a *Geometrrixx Content Page* template.
-
 * **Target Path**: This is the path of the parent page below which this scaffold will create new pages. In this example the path is */content/geometrixx/en/news*.
 
 The body of the scaffold is the form. When a user wishes to create a page using the scaffold he fills out the form and clicks *Create*, at the bottom. In the **News** example above the form has the following fields:
 
 * **Title**: This is the name of the page to be created. This field is always present on every scaffold.
 * **Text**: This field corresponds to a Text Component on the resulting page.
-* **Image**: This field corresponds to an Image Component on the resulting page.
+* Image: This field corresponds to an Image Component on the resulting page.
 * **Image/Advanced**: **Title**: The title of the image.
-
 * **Image/Advanced**: **Alt Text**: The alt text for the image.
-
 * **Image/Advanced**: **Description**: The description of the image.
-
 * **Image/Advanced**: **Size**: The size of the image.
-
 * **Tags/Keywords**: Metadata to be assigned to this page. This field is always present on every scaffold.
 
-## Creating a Scaffold {#creating-a-scaffold}
+### Creating a Scaffold {#creating-a-scaffold}
 
 To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
 
 *Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template* and *Target Path*, as described above.*
 
-*Next, you have to define the structure of the page that this scaffold will create. To do this go into design mode on the scaffold page. A link will appear allowing you to edit the scaffold in the **dialog editor**.
+*Next, you have to define the structure of the page that this scaffold will create. To do this go into * [design mode](/help/sites-authoring/page-authoring.md#sidekick)* on the scaffold page. A link will appear allowing you to edit the scaffold in the** dialog editor**.*
 
-![cq5_dialog_editor](assets/cq5_dialog_editor.png)
+![](assets/cq5_dialog_editor.png)
 
-Using the dialog editor you specify the properties that will be created each time a new page is created using this scaffold.
+Using the dialog editor you specifiy the properties that will be created each time a new page is created using this scaffold.
 
 The dialog definition for a scaffold works similarly to that of a component (see [Components](/help/sites-developing/components.md)). However a few important differences apply:
 
@@ -81,11 +77,11 @@ A look at the example **News** scaffold dialog in the dialog editor helps to exp
 
 Now, click on the dialog field **Dialog &gt; Tab Panel &gt; Text &gt; Text**, like this:
 
-![textedit](assets/textedit.png)
+![](assets/textedit.png)
 
 The property list for this field will appear on the right side of the dialog editor, like this:
 
-![list_of_properties](assets/list_of_properties.png)
+![](assets/list_of_properties.png)
 
 Notice the name property for this field. It has the value
 
@@ -102,11 +98,11 @@ Note that in a normal component dialog you would not have to specify this inform
 
 To specify these two pieces of information you use hidden fields. Click on the first hidden field **Dialog &gt; Tab Panel &gt; Text &gt; Hidden**, like this:
 
-![hidden](assets/hidden.png)
+![](assets/hidden.png)
 
 The properties of this hidden field are as follows:
 
-![hidden_list_props](assets/hidden_list_props.png)
+![](assets/hidden_list_props.png)
 
 The name property of this hidden field is
 
@@ -122,11 +118,11 @@ Because we know that the text should be interpreted as a rich text we specify th
 
 The second hidden field can be seen by clicking on it like this:
 
-![hidden2](assets/hidden2.png)
+![](assets/hidden2.png)
 
 The properties of this hidden field are as follows:
 
-![hidden_list_props2](assets/hidden_list_props2.png)
+![](assets/hidden_list_props2.png)
 
 The name property of this hidden field is
 
@@ -138,7 +134,7 @@ and the fixed value specified for this property is
 
 ``This specifies that component to be used to render the text content of this paragraph is the *Text Image* component. Using with the `isRichText` boolean specified in the other hidden field, the component can render the actual text string stored at `./jcr:content/par/text/text` in the desired way.
 
-## Scaffolding with MSM Inheritance {#scaffolding-with-msm-inheritance}
+### Scaffolding with MSM Inheritance {#scaffolding-with-msm-inheritance}
 
 In the classic UI, scaffolding is fully integrated with MSM inheritance (when applicable).
 
@@ -147,9 +143,9 @@ When you open a page in **Scaffolding** mode (using the icon at the bottom of si
 * a lock symbol (for most components; e.g. Text and Title)
 * a mask with the text **Click to cancel inheritance** (for Image components)
 
-These show that the component cannot be edited - until inheritance is canceled.
+These show that the component cannot be edited - until inheritance is cancelled.
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![](assets/chlimage_1.jpeg)
 
 >[!NOTE]
 >
@@ -160,11 +156,10 @@ Clicking on either the lock symbol or the image icon allows you to break inherit
 * the symbol will change to an open padlock.
 * once unlocked, you can edit the content.
 
-![chlimage_1-1](assets/chlimage_1-1.jpeg)
+![](assets/chlimage_1-1.jpeg)
 
 After unlocking you can restore inheritance by clicking on the unlocked padlock symbol - this will lose any edits you have made.
 
 >[!NOTE]
 >
->If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
-
+>If the inheritance is cancelled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).

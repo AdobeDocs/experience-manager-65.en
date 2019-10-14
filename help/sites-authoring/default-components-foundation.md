@@ -3,29 +3,33 @@ title: Foundation Components
 seo-title: Foundation Components
 description: null
 seo-description: null
-uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
+uuid: 3caf9123-ae58-4590-af2f-57ef076daf7f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
+discoiquuid: ea2a523e-8d26-4be4-822f-35f153e40308
+docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
+
 ---
 
 # Foundation Components{#foundation-components}
 
->[!NOTE]
+>[!CAUTION]
 >
->This section covers foundation components, which have been available with AEM for many versions and are available out-of-the-box in a standard AEM installation. However a number of the foundation components have been deprecated with AEM 6.4.
+>Most Foundation Components are now deprecated wtih AEM 6.5. See the [release notes](../../../release-notes/deprecated-removed-features.md) for further informtaion.
 >
->Adobe recommends leveraging the more modern and extensible [core components](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://helpx.adobe.com/experience-manager/core-components/using/using.html) by your administrator.
+>Adobe recommends leveraging the more modern and extensible [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in AEM projects. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
+>
+>You can use the [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) to refactor your Foundation Components-based site to use Core Components.
 
 The foundation components were designed for use when authoring content for a standard web page. They form a subset of the components available out-of-the-box for a standard installation of AEM.
 
 Some are immediately available through component browser, various others are also available by using [design mode](/help/sites-authoring/default-components-designmode.md) (if the page is based on a static template) or by [editing the template](/help/sites-authoring/templates.md) (if the page is based on an editable template).
 
-The use of foundation components is supported, but they have been superseded by core components which offer more extensibility and flexibility.
+The use of foundation components is supported, but they have been mostly deprecated and superseded by Core Components which offer more extensibility and flexibility.
 
 >[!NOTE]
 >
@@ -39,13 +43,14 @@ You can select a component and drag it to the required location on your page. Yo
 
 * [Configure Properties](/help/sites-authoring/editing-page-properties.md)
 * [Edit Content](/help/sites-authoring/editing-content.md)
+
 * [Edit Content - Full Screen Mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
 Components are sorted according to various categories called component groups including:
 
 * [General](#general): Includes basic components, including text, images, tables, and charts.
 * [Columns](#columns): Includes components necessary for organizing the layout of the content.
-* [Form](#form): Includes all the components needed to create a form.
+* [Form](#formgroup): Includes all the components needed to create a form.
 
 ## General {#general}
 
@@ -54,16 +59,18 @@ The General components are the basic components that you use to create content.
 ### Account Item {#account-item}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
 You can define a link with title and description.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![](assets/chlimage_1-88.png)
 
 ### Adaptive Image {#adaptive-image}
 
 >[!CAUTION]
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) instead.
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Image Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) instead.
 
 The Adaptive Image foundation component generates images that are sized to fit the window in which the web page is opened. To use the component, you provide an image resource either from the file system or DAM. When the web page is opened, the web browser downloads a copy of the image that has been resized so that it is suitable for the current window.
 
@@ -81,11 +88,11 @@ You can use image files of the following file name extensions with the Adaptive 
 * .jpg
 * .jpeg
 * .png
-* .gif &ast;&ast;
+* .gif &#42;&#42;
 
 >[!CAUTION]
 >
->&ast;&ast; Animated .gif files are not supported in AEM for adaptive renditions.
+>Animated GIF files are not supported in AEM for adaptive renditions.
 
 #### Images Sizes and Quality {#images-sizes-and-quality}
 
@@ -97,7 +104,7 @@ When the image is a JPEG image, the viewport size can also influence the JPEG qu
 * Medium (0.82)
 * High (1.00)
 
-| Viewport Width Range (pixels) |Image Width (pixels) |JPEG Quality |Targeted Device Type |
+| **Viewport Width Range (pixels)** |**Image Width (pixels)** |**JPEG Quality** |**Targeted Device Type** |
 |---|---|---|---|
 | width <= 319 |320 |low |  |
 | width = 320 |320 |medium |Mobile phone (portrait) |
@@ -113,15 +120,12 @@ The dialog allows you to edit properties for your instance of the Adaptive Image
 * **Image**
 
     * **Image**
-
       Drag an image from the content finder or click to open a browse window where you can load an image. After the image is loaded, you can crop the image, rotate it, or delete it. To zoom in and out of the image, use the slide bar beneath the image (above the OK and Cancel buttons)
 
     * **Crop**
-
       Crop an image. Drag the border to crop the image.
 
     * **Rotate**
-
       Click Rotate repeatedly until the image is rotated as desired.
 
     * **Clear**
@@ -130,19 +134,15 @@ The dialog allows you to edit properties for your instance of the Adaptive Image
 * **Advanced**
 
     * **Title**
-
       The Adaptive Image component does not use this property.
 
     * **Alt Text**
-
       The alternate text to use for the image.
 
     * **Link To**
-
       The Adaptive Image component does not use this property.
 
     * **Description**
-
       The Adaptive Image component does not use this property.
 
 #### Extending the Adaptive Image Component {#extending-the-adaptive-image-component}
@@ -150,6 +150,10 @@ The dialog allows you to edit properties for your instance of the Adaptive Image
 For information about customizing the Adaptive Image component, see [Understanding the Adaptive Image Component](/help/sites-developing/responsive.md#using-adaptive-images).
 
 ### Carousel {#carousel}
+
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Carousel Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) instead.
 
 The Carousel Component allows you to display images associated with individual pages:
 
@@ -165,31 +169,21 @@ Clickable controls also let the user cycle through the displayed pages in real t
 These are available in two tabs:
 
 * **Carousel**
-
   Here you specify how the carousel operates:
 
     * Play Speed
-
       The time in milliseconds before the next slide is shown.
-
     * Transition Time
-
       Time in milliseconds for the transition between two slides.
-
     * Controls Style
-
       Various options are available from a pulldown menu; for example, Prev / Next Buttons, Top-Right Switches.
 
-* **List**
-
+* **List **
   Here you specify how pages are included in your Carousel:
 
     * **Build list using**
-
       There are several ways to build a page list - Child Pages, Fixed List, Search, or Advanced Search (all described below).
-
       Note that no matter which method you choose, the pages you include in your list should each already have an image associated with the page, it is this image that will be displayed in the Carousel. If there is no image for a given page under that page's Page Properties, you should associate an image with the page before beginning, as otherwise the Carousel will display a blank (or mostly blank) page. See [Editing Page Properties](/help/sites-authoring/editing-page-properties.md).
-
       Depending on the item you choose a new panel will appear:
 
         * **Options for Child Pages**
@@ -205,27 +199,21 @@ These are available in two tabs:
         * **Options for Search**
 
             * **Start in**
-
               Enter a starting path, either manually or using the selector.
 
             * **Search query**
-
               You can enter a plain text search query.
 
         * **Options for Advanced Search**
 
             * **Querybuilder predicate notation**
-
               You can enter a search query using Querybuilder predicate notation. For example, you can enter "fulltext=Marketing" to have all pages with "Marketing" in their content show up in the Carousel.
-
               See [QueryBuilder API](/help/sites-developing/querybuilder-api.md) for full discussion of query expressions and further examples.
 
     * **Order by**
-
       Select `jcr:title`, `jcr:created`, `cq:lastModified`, or `cq:template` from the dropdown menu.
 
     * **Limit**
-
       The maximum number of items you would like to use in the Carousel; this is optional.
 
 >[!NOTE]
@@ -234,35 +222,34 @@ These are available in two tabs:
 
 ### Chart {#chart}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 The Chart component lets you add a bar, line, or pie chart. AEM creates a chart from the data you provide. You provide data by typing directly into the Data tab or by copying and pasting a spreadsheet.
 
 * **Data**
 
     * **Chart Data**
-
       Enter your chart data using the CSV format; the Comma Separated Values format uses commas (“,”) as the field separator.
 
 * **Advanced**
 
     * **Chart Type**
-
       Select from Pie Chart, Line Chart, and Bar Chart.
 
     * **Alternative text**
-
       Alternative text that displays instead of the chart.
 
     * **Width**
-
       Width of the chart in pixels.
 
     * **Height**
-
       Height of the chart in pixels.
 
 The following show an example of chart data followed by the resulting Bar chart:
 
-![chlimage_1-192](assets/chlimage_1-192.png) ![dc_chart_use](assets/dc_chart_use.png)
+![](assets/chlimage_1-89.png) ![](assets/dc_chart_use.png)
 
 >[!NOTE]
 >
@@ -270,38 +257,51 @@ The following show an example of chart data followed by the resulting Bar chart:
 
 ### Content Fragment {#content-fragment}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Content Fragment Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) instead.
+
 [Content fragments](/help/sites-authoring/content-fragments.md) are created and managed as page-independent assets. You can then use these fragments, and their variations, when authoring your content pages.
 
 ### Design Importer {#design-importer}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 This allows you to upload a zip file holding a design package.
 
 ### Download {#download}
+
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
 The Download component creates a link on the selected web-page to download a specific file. You can either drag an asset from the Content Finder or upload a file.
 
 * **Download**
 
     * **Description**
-
       A short description displayed with the download link.
 
     * **File**
-
       File available for download on the resulting web-page. Drag an asset from the content finder or click the area to upload the file to be available for download.
 
 The following example shows the Download component in Geometrixx:
 
-![dc_download_use](assets/dc_download_use.png)
+![](assets/dc_download_use.png)
 
 ### External {#external}
+
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
 The external application integration component (**External**) enables you to embed external applications into your AEM page using an iframe.
 
 * **External**
 
     * **Target application**
-
       Specify the URL of the web application to be integrated; for example:
 
       ```
@@ -310,24 +310,23 @@ The external application integration component (**External**) enables you to emb
       ```
 
     * **Pass parameters**
-
       Check the box for parameters to be passed to the application when required.
 
-    * **Width and Height**
-
-      Define the size of the iframe
+    * **Width and Height
+      **Define the size of the iframe
 
 The external application is integrated into the paragraph system of the AEM page; for example, when using a Target application of `https://en.wikipedia.org/wiki/Main_Page`:
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![](assets/chlimage_1-90.png)
 
 >[!NOTE]
 >
->Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](/help/sites-administering/aem-as-portal.md).
+>Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](/help/sites-administering//aem-as-portal.md).
 
 ### Flash {#flash}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
 The Flash component lets you load a Flash movie. You can drag a flash asset from the content finder onto the component, or you can use the dialog:
@@ -370,35 +369,41 @@ The Flash component lets you load a Flash movie. You can drag a flash asset from
 
 ### Image {#image}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Image Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) instead.
+
 The image component displays an image and accompanying text according to the specified parameters.
 
 You can upload an image, then edit and manipulate it (e.g. crop, rotate, add link/title/text).
 
 You can either drag and drop an image from the [Assets Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) directly onto the component or its [Configure dialog](/help/sites-authoring/editing-content.md#component-edit-dialog). You can also upload an image from the Configure dialog; this dialog also controls all definitions and manipulation of the image:
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![](assets/chlimage_1-91.png)
 
 Once the image is uploaded (and not before) you can use [inplace editing](/help/sites-authoring/editing-content.md#edit-content) to crop/rotate the image as required:
 
-![](do-not-localize/chlimage_1-14.png)
+![](do-not-localize/chlimage_1-15.png)
 
 >[!NOTE]
 >
 >The in-place editor uses the original size and aspect ratio of the image when editing. You can also specify height and width properties. Any size and aspect ratio restrictions defined in the properties are applied when you save your edit changes.
+
 >
 >Depending on your instance, minimum and maximum restrictions may also be imposed by the [design of the page](/help/sites-developing/designer.md); these are developed during project implementation.
 
 Several additional options are available in the full-screen editing mode; for example, map and zoom:
 
-![](do-not-localize/chlimage_1-15.png)
+![](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
 >
 >The progress of the upload cannot be monitored with Internet Explorer.
 >
 >Internet Explorer users need to upload the image and click **Ok** then re-open the image to see the uploaded file in the preview and to be able to perform modifications (i.e. crop).
+
 >
->See the [Supported Platforms](/help/release-notes/release-notes.md#supported-platforms) section for more information about HTML5 features used by AEM.
+>See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
 When an image is loaded, you can configure the following:
 
@@ -444,19 +449,23 @@ When an image is loaded, you can configure the following:
 
 The final image (with **Title** and **Description**) may be shown as:
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![](assets/chlimage_1-92.png)
 
 ### Layout Container {#layout-container}
 
 This component provides a grid-paragraph system to allow you to add and position components within a [responsive grid](/help/sites-authoring/responsive-layout.md). This allows you to define differing content layouts based on the width of target devices, including a range of phones, tablets and the desktop.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![](assets/chlimage_1-93.png)
 
 >[!NOTE]
 >
 >This component has been implemented with [HTML Template Language (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html).
 
 ### List {#list}
+
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [List Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) instead.
 
 The List component allows you to configure search criteria for displaying a list:
 
@@ -482,11 +491,11 @@ The List component allows you to configure search criteria for displaying a list
 
         * **Options for Search**
 
-            * **Start in**
+            * Start in
 
               Enter a starting path, either manually or using the selector.
 
-            * **Search query**
+            * Search query
 
               You can enter a plain text search query.
 
@@ -524,16 +533,17 @@ The List component allows you to configure search criteria for displaying a list
 
 The following example shows a **List** component the way it may display a list of child pages (the design is controlled by a site design's custom CSS definitions).
 
-![dc_list_use](assets/dc_list_use.png)
+![](assets/dc_list_use.png)
 
 ### Login {#login}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
 These provides the Username and Password fields.
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![](assets/chlimage_1-94.png)
 
 You can configure:
 
@@ -581,9 +591,13 @@ You can configure:
 
       Select from the selection provided.
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![](assets/chlimage_1-95.png)
 
 ### Reference {#reference}
+
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Content Fragment Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) instead.
 
 The **Reference** component lets you reference text from another page of your AEM website (within the current instance). The content of the referenced paragraph then appears as if it was on the current page. The content will be updated when the source paragraph changes (might need a page refresh).
 
@@ -611,11 +625,12 @@ For example:
 
 Once configured the content will appear exactly as on the source page. The fact that it is a reference is only seen when you open the component for editing:
 
-![chlimage_1-199](assets/chlimage_1-199.png)
+![](assets/chlimage_1-96.png)
 
-### Search {#search-features}
+### Search {#search}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Quick Search Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/quick-search.html) instead.
 
 The Search component adds search capability to your page.
@@ -647,7 +662,6 @@ You can configure:
     * **Spellcheck Text**
 
       If someone enters a similar term, this text is displayed before the term.
-
       For example, if you type geometrixxe, the system displays "Did you mean? geometrixx".
 
     * **Similar Pages Text**
@@ -676,20 +690,21 @@ You can configure:
 
 The following example shows the Search component after a search for the word *geometrixx* from the root directory of a standard installation. This also illustrates the pagination of results:
 
-![dc_search_use](assets/dc_search_use.png)
+![](assets/dc_search_use.png)
 
 The following example shows a search term that is misspelled and not available:
 
-![dc_search_usenotfound](assets/dc_search_usenotfound.png)
+![](assets/dc_search_usenotfound.png)
 
 ### Sitemap {#sitemap}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) instead.
 
 An automatic sitemap listing, which (with the default settings) lists all pages (as active links) in the current website. For example, an extract shows:
 
-![dc_sitemap_use](assets/dc_sitemap_use.png)
+![](assets/dc_sitemap_use.png)
 
 If required you can configure:
 
@@ -702,6 +717,7 @@ If required you can configure:
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Carousel Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) instead.
 
 This component allows you to load a series of images to be displayed as a slideshow on your page.You can add or remove images and assign each a title. Under Advanced you can also specify the size of the display area.
@@ -726,18 +742,17 @@ You can configure:
 
 The slideshow component then repeatedly displays each in sequence, for a short period of time, before fading through to the next slide:
 
-![dc_slideshow_use](assets/dc_slideshow_use.png)
+![](assets/dc_slideshow_use.png)
 
 ### Table {#table}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) instead.
 
 >[!NOTE]
 >
->The **Table** component is based on the [Rich Text editor](/help/sites-authoring/rich-text-editor.md), as is the **[Text](#text)** component.
->
->It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
+>The **Table** Fourndation Component is based on the [Rich Text editor](/help/sites-authoring/rich-text-editor.md), as is the ** [Text](#text)** Foundation Component.
 
 The **Table** component is preconfigured to let you construct, fill and format a table. Using the dialog you can configure your table and create the contents by either:
 
@@ -746,21 +761,21 @@ The **Table** component is preconfigured to let you construct, fill and format a
 
 You can make basic changes to the content using the in-line editor:
 
-![dc_table](assets/dc_table.png)
+![](assets/dc_table.png)
 
 In full screen mode you can configure the table layout:
 
-![chlimage_1-200](assets/chlimage_1-200.png)
+![](assets/chlimage_1-97.png)
 
 The following screenshot shows an example of the table component; the design is determined by the site-specific CSS:
 
-![dc_table_use](assets/dc_table_use.png)
+![](assets/dc_table_use.png)
 
 ### Tag Cloud {#tag-cloud}
 
 A tag cloud shows a graphically presented selection of the tags applied to content within your website:
 
-![dc_tagclouduse](assets/dc_tagclouduse.png)
+![](assets/dc_tagclouduse.png)
 
 When configuring the Tag Cloud component, you can specify:
 
@@ -780,15 +795,17 @@ For more information about applying tags, visit [Using Tags](/help/sites-authori
 
 ### Text {#text}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) instead.
+
 >[!NOTE]
 >
->The **Text** component is based on the [Rich Text editor](/help/sites-authoring/rich-text-editor.md), as is the **[Table](#table)** component.
->
->It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
+>The **Text** Fourndation Component is based on the [Rich Text editor](/help/sites-authoring/rich-text-editor.md), as is the **Table** Foundation Component.
 
 The Text component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). A selection of icons allow you to format your text, including font characteristics, alignment, links, lists and indentation.
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![](assets/chlimage_1-98.png)
 
 When you open the **Configure** dialog, you can also set:
 
@@ -797,7 +814,7 @@ When you open the **Configure** dialog, you can also set:
 
 The formatted text will then be shown on the page; the actual design will depend on the site CSS:
 
-![dc_text_use](assets/dc_text_use.png)
+![](assets/dc_text_use.png)
 
 For more detailed information about the Text component and the functionality provided by the Rich Text editor, see the [Rich Text Editor](/help/sites-authoring/rich-text-editor.md) page.
 
@@ -807,9 +824,13 @@ In addition to the dialog based Rich Text editing mode, AEM also provides [Inpla
 
 ### Text & Image {#text-image}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) and [Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) instead.
+
 The Text & Image component adds a text block and an image. You can also add and edit text and images separately. See the [Text](#text) and [Image](#image) components for details.
 
-![chlimage_1-202](assets/chlimage_1-202.png)
+![](assets/chlimage_1-99.png)
 
 You can configure:
 
@@ -847,9 +868,13 @@ You can configure:
 
 The following example shows a Text Image Component displaying the image left-aligned:
 
-![dc_textimage_use](assets/dc_textimage_use.png)
+![](assets/dc_textimage_use.png)
 
 ### Title {#title}
+
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Title Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) instead.
 
 The title component can either:
 
@@ -859,23 +884,30 @@ The title component can either:
 You can configure:
 
 * **Title**
+
   If you want to use a name other than the page title, enter it here.
 
 * **Link**
+
   The URI if the title is to operate as a link.
 
 * **Type/Size**
+
   Select Small or Large from the dropdown list. Small is generated as an image. Large is generated as text.
 
 The following example shows a **Title** component being displayed; the design is determined by the site-specific CSS.
 
-![dc_title_use](assets/dc_title_use.png)
+![](assets/dc_title_use.png)
 
 ### Video {#video}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 The **Video** component allows you to place a predefined, out-of-the-box video element on a page.
 
-See also [Configure the Video component](/help/sites-administering/config-video.md) for use with HTML5 elements.
+See also [Configure your Video Profiles](/help/sites-administering/config-video.md#configuringvideoprofiles) for use with HTML5 elements.
 
 After placing an instance of the component on your page you can configure:
 
@@ -883,7 +915,7 @@ After placing an instance of the component on your page you can configure:
 
     * **Video asset**
 
-    Upload or drop your video asset.
+      Upload or drop your video asset.
 
     * **Size**
 
@@ -896,7 +928,6 @@ After placing an instance of the component on your page you can configure:
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (Flash video)
->
 
 ## Columns {#columns}
 
@@ -904,7 +935,7 @@ Columns are a mechanism to control the layout of content in AEM. In a standard i
 
 The following example shows the 2 Columns component in use. You can use the placeholders for new components:
 
-![dc_columncontroluse](assets/dc_columncontroluse.png)
+![](assets/dc_columncontroluse.png)
 
 ### 2 Columns {#columns-1}
 
@@ -926,11 +957,15 @@ The Column Control component lets users select how they want to split the conten
 
 ## Form {#form}
 
+>[!CAUTION]
+>
+>The Foundation Component from components have been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 Form components are used to create forms for visitors to submit input. Forms and form components can be used to collect information including user feedback (for example, a customer satisfaction questionnaire) and user information (for example, user registration).
 
 >[!NOTE]
 >
->See [AEM Forms Help](/help/forms/home.md) for information about AEM Forms.
+>See [AEM Forms Help](/forms/user-guide.md) for information about AEM Forms.
 
 Forms are built up from several different components:
 
@@ -946,9 +981,9 @@ Forms are built up from several different components:
 
   Profile components relate to visitor profiles used for social collaboration and other areas where visitor personalization is required.
 
-The following shows an example form. It is comprised of the **Form** component (start and end), with two **Form Text** fields used for input, a **General Text** field used for the lead-in text and a **Submit** button.
+The following shows an example form. It is comprised of the **Form** component (start and end), with two **Form** **Text** fields used for input, a **General** **Text** field used for the lead-in text and a **Submit** button.
 
-![dc_form](assets/dc_form.png)
+![](assets/dc_form.png)
 
 >[!NOTE]
 >
@@ -987,7 +1022,6 @@ These tabs provide you with the necessary parameters; these can depend on the in
     * **Element Name**
 
       Name of the form element. This indicates where in the repository the data is stored.
-
       This is a required field and should only contain the following characters:
 
         * alphanumeric characters
@@ -1043,15 +1077,19 @@ These tabs provide you with the necessary parameters; these can depend on the in
 
 ### Form (component) {#form-component}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Container Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-container.html) instead.
+
 The Form component defines both the start and end of a form using the **Form Start** and **Form End** elements. These are always paired to ensure that the form is correctly defined.
 
-![dc_form-1](assets/dc_form-1.png)
+![](assets/dc_form-1.png)
 
 In between the start and end of a form, you can add form components that define the actual input fields for users.
 
 >[!NOTE]
 >
->The foundation components form component only supports the use of other foundation components form components (button, text, hidden, etc.). Using [core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) form components within a foundation component form (and vice versa) is not supported.
+>The foundation components form component only supports the use of other foundation components form components (button, text, hidden, etc.). Using [core components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html) form components within a foundation component form (and vice versa) is not supported.
 
 #### Start of Form {#start-of-form}
 
@@ -1064,13 +1102,14 @@ This component is needed to define the start of a new form on a page. You can co
       The page to be referenced to thank visitors for providing their input. If left blank, the form re-displays after submission.
 
     * **Start Workflow**
+
       Determines which workflow is triggered once a form is submitted.
 
 * **Advanced**
 
     * **Action Type**
-      A form needs an action. The action defines the operation that is triggered for execution with the data submitted by the user (similar to action= in HTML). Some need a corresponding **Action Configuration**.
 
+      A form needs an action. The action defines the operation that is triggered for execution with the data submitted by the user (similar to action= in HTML). Some need a corresponding **Action Configuration**.
       A selection of action types are included in a standard AEM installation:
 
         * **Account Request**
@@ -1119,11 +1158,11 @@ This component is needed to define the start of a new form on a page. You can co
 
         * A script for client validation:
 
-          `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+          `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
 
         * A script for validation on the server side:
 
-          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+          `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
 
     * **Action Configuration**
 
@@ -1218,7 +1257,6 @@ This component is needed to define the start of a new form on a page. You can co
             * **Content Path**
 
               The content path for any content that the form dumps. Enter a path that ends with a slash `/`. The slash means that for each form port, a new node is created at the given location; for example:
-
               `/forms/feedback/`
 
             * **View Data...**
@@ -1267,34 +1305,47 @@ This marks the end of the form. You can configure:
 
 ### Account Name {#account-name}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) instead.
+
 This allows the user to input an account name:
 
-![dc_form_accountname](assets/dc_form_accountname.png)
+![](assets/dc_form_accountname.png)
 
 ### Address {#address}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) instead.
+
 This allows you to add an international address field with the following format:
 
-![dc_form_addressfield](assets/dc_form_addressfield.png)
+![](assets/dc_form_addressfield.png)
 
 The component is configured for immediate use, but you can change the configuration if required. For example, constraints can be added for the individual elements of the address. Leaving fields empty will use default settings.
 
 ### Captcha {#captcha}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
 The Captcha component requires the user to type in an alphanumeric string as displayed on screen. The string changes with each refresh.
 
-![dc_form_captcha](assets/dc_form_captcha.png)
+![](assets/dc_form_captcha.png)
 
 You can configure various parameters for this component, including a message to be shown when the captcha string is invalid.
 
 ### Checkbox Group {#checkbox-group}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Options Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html) instead.
+
 A checkbox allows you to build a list of one of more checkboxes, several of which may be selected at the same time.
 
-![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
+![](assets/dc_form_checkboxgroupuse.png)
 
 You can specify various parameters including a title, description and element name. Using the + and - buttons you can add or remove items, then position them with the up and down arrows.
 
@@ -1307,17 +1358,22 @@ You can specify various parameters including a title, description and element na
 ### Credit Card Details {#credit-card-details}
 
 >[!CAUTION]
+>
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
 This allows you to provide the fields needed for entering credit card details. You can configure it to specify the types of card accepted and the information required (for example, security code).
 
-![chlimage_1-203](assets/chlimage_1-203.png)
+![](assets/chlimage_1-100.png)
 
 ### Dropdown List {#dropdown-list}
 
-A drop down list can be configured to provide your use with a range of values for selection:
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Options Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html) instead.
 
-![dc_form_dropdownlistuse](assets/dc_form_dropdownlistuse.png)
+A drop-down list can be configured to provide your use with a range of values for selection:
+
+![](assets/dc_form_dropdownlistuse.png)
 
 You can specify a title and items to appear in the list. Using the + and - buttons you can add or remove the list items, then position them with the Up and Down buttons. You can specify whether the users are allowed to select several items from the list and any items that should be automatically selected the first time they open the list (initial values).
 
@@ -1329,9 +1385,13 @@ You can specify a title and items to appear in the list. Using the + and - butto
 
 ### File Upload {#file-upload}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 The file upload component provides the user with a mechanism for selecting and uploading a file.
 
-![dc_form_fileupload](assets/dc_form_fileupload.png)
+![](assets/dc_form_fileupload.png)
 
 >[!NOTE]
 >
@@ -1339,9 +1399,13 @@ The file upload component provides the user with a mechanism for selecting and u
 
 ### Hidden Field {#hidden-field}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Hidden Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-hidden.html) instead.
+
 This component allows you to create a hidden field. These can be used for various purposes; for example, when you need to perform an action after submitting the form, or when hidden data is required in post processing.
 
-![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
+![](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
 >
@@ -1351,31 +1415,51 @@ This component allows you to create a hidden field. These can be used for variou
 
 ### Image Button {#image-button}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) instead.
+
 An image button allows you to create a button with your own image and text:
 
-![dc_form_imagebutton](assets/dc_form_imagebutton.png)
+![](assets/dc_form_imagebutton.png)
 
 ### Image Upload {#image-upload}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 The image upload component provides the user with a mechanism for selecting and uploading an image file.
 
-![dc_form_imageupload](assets/dc_form_imageupload.png)
+![](assets/dc_form_imageupload.png)
 
 ### Link Field {#link-field}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 The link field allows the user to specify a URL:
 
-![dc_form_link](assets/dc_form_link.png)
+![](assets/dc_form_link.png)
 
 Most commonly used for the calendar event form, where it is used for the URL/link field of an event.
 
 ### Password Field {#password-field}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 This is used to allow the user to input their password:
 
-![dc_form_password](assets/dc_form_password.png)
+![](assets/dc_form_password.png)
 
 ### Password Reset {#password-reset}
+
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
 This component provides your user with two fields for:
 
@@ -1384,15 +1468,19 @@ This component provides your user with two fields for:
 
 With default settings the component will appear as:
 
-![dc_password_reset](assets/dc_password_reset.png)
+![](assets/dc_password_reset.png)
 
 ### Radio Group {#radio-group}
+
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Options Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html) instead.
 
 A radio group provides you with a list of one of more radio checkboxes, only one of which may be selected at any particular time.
 
 You can specify the element name together with a title and description Using the + and - buttons you can add or remove items, position them with the up and down arrows and specify a default value if required:
 
-![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
+![](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
 >
@@ -1402,47 +1490,62 @@ You can specify the element name together with a title and description Using the
 
 ### Submit Button {#submit-button}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) instead.
+
 This component allows you to create a submit button, with either the default text:
 
-![dc_form_submitbutton](assets/dc_form_submitbutton.png)
+![](assets/dc_form_submitbutton.png)
 
 Or with your own text:
 
-![dc_form_submitbuttonuse](assets/dc_form_submitbuttonuse.png)
+![](assets/dc_form_submitbuttonuse.png)
 
 ### Tags Field {#tags-field}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
 This field allows you to select tags:
 
-![dc_form_tags_use](assets/dc_form_tags_use.png)
+![](assets/dc_form_tags_use.png)
 
 You can specify various parameters, including the namespaces can be used using the specialized tab:
 
 * **Tag Field**
 
-    * **Allowed Namespaces**
+  * **Allowed Namespaces**
 
-        * **Geometrixx Outdoors**
-        * **Workflow**
-        * **Forum**
-        * **Stock Photography**
-        * **Geometrixx Media**
-        * **Standard Tags**
-        * **Marketing**
-        * **Asset Properties**
-
+    * **Geometrixx Outdoors**
+    * **Workflow**
+    * **Forum**
+    * **Stock Photography**
+    * **Geometrixx Media**
+    * **Standard Tags**
+    * **Marketing**
+    * **Asset Properties**
     * **Width in pixels**
     * **Popup Size**
 
 ### Text Field {#text-field}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) instead.
+
 The standard text field can be configured to your required size and with with your own lead in message:
 
-![dc_form_text](assets/dc_form_text.png)
+![](assets/dc_form_text.png)
 
 ### Workflow Submit Button(s) {#workflow-submit-button-s}
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) instead.
+
 This allows you to create a Submit button for use in a workflow.
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![](assets/chlimage_1-101.png)
 

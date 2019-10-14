@@ -1,14 +1,16 @@
 ---
 title: Lazy Content Migration
 seo-title: Lazy Content Migration
-description: Learn about Lazy Content Migration in AEM 6.5.
-seo-description: Learn about Lazy Content Migration in AEM 6.5.
-uuid: 9c84f7fe-31d3-4b63-8975-9e75a6c44b7d
+description: Learn about Lazy Content Migration in AEM 6.4.
+seo-description: Learn about Lazy Content Migration in AEM 6.4.
+uuid: f5b0aa84-5638-4708-9da2-89964d394632
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
-discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
+discoiquuid: d72b8844-d782-4b5b-8999-338217dbefb9
+docset: aem65
+
 ---
 
 # Lazy Content Migration{#lazy-content-migration}
@@ -27,9 +29,9 @@ While the aim is an efficient execution, this upgrade process is synchronous and
 
 As this typically also requires adjusting application this activity should be performed along with the corresponding application deployment.
 
-Below is the full list of `CodeUpgradeTasks` introduced in 6.4:
+Below is the full list of `CodeUpgradeTasks` introduced in 6.5:
 
-| **Name** |**Relevant for AEM versions prior to** |**Migration Type** |**Details** |
+| **Name** |**Relevant** **for AEM versions prior to** |**Migration** **Type** |**Details** |
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` |< 5.6.1 |Immediate |  |
 | `Cq60MSMContentUpgrade` |< 6.0 |Immediate |Detects all `LiveRelationShips` from `VersionStorage` that have been deleted and add exclusion property to parent |

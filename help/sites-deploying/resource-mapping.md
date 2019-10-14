@@ -3,12 +3,14 @@ title: Resource Mapping
 seo-title: Resource Mapping
 description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
 seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
-uuid: 33de7e92-8144-431b-badd-e6a667cd78e1
+uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
+discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
+docset: aem65
+
 ---
 
 # Resource Mapping{#resource-mapping}
@@ -20,15 +22,15 @@ For example, you can use these mappings to:
 * Prefix all requests with `/content` so that the internal structure is hidden from the visitors to your website.
 * Define a redirect so that all requests to the `/content/en/gateway` page of your website are redirected to `https://gbiv.com/`.
 
-One possible HTTP mapping [prefixes all requests to localhost:4503 with /content](#configuring-an-internal-redirect-to-content). A mapping like this could be used to hide the internal structure from the visitors to the website as it allows:
+One possible HTTP mapping prefixes all requests to `localhost:4503` with `/content`. A mapping like this could be used to hide the internal structure from the visitors to the website as it allows:
 
-`localhost:4503/content/geometrixx/en/products.html`
+`localhost:4503/content/we-retail/en/products.html`
 
 to be accessed using:
 
-`localhost:4503/geometrixx/en/products.html`
+`localhost:4503/we-retail/en/products.html`
 
-as the mapping will automatically add the prefix `/content` to `/geometrixx/en/products.html`.
+as the mapping will automatically add the prefix `/content` to `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -42,14 +44,12 @@ as the mapping will automatically add the prefix `/content` to `/geometrixx/en/p
 
 The mappings form two lists that the JCR Resource Resolver evaluates (top-down) to find a match.
 
-These lists can be viewed (together with configuration information) under the **JCR ResourceResolver** option of the Felix console; for example, `https://<host>:<port>/system/console/jcrresolver`:
+These lists can be viewed (together with configuration information) under the **JCR ResourceResolver** option of the Felix console; for example, `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
 * Configuration
-
-  Shows the current configuration (as defined for the [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md).
+  Shows the current configuration (as defined for the [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)).
 
 * Configuration Test
-
   This allows you to enter a URL or resource path. Click **Resolve** or **Map** to confirm how the system will transform the entry.
 
 * **Resolver Map Entries**
@@ -64,7 +64,7 @@ The lists pair a **Pattern**, a regular expression matched to the request, with 
 
 For example, the:
 
-**Pattern** `^[^/]+/[^/]+/welcome$`
+**Pattern ** `^[^/]+/[^/]+/welcome$`
 
 will trigger the:
 
@@ -72,11 +72,11 @@ will trigger the:
 
 to redirect a request:
 
-`http://localhost:4503/welcome`
+`https://localhost:4503/welcome` ``
 
 to:
 
-`http://localhost:4503/libs/cq/core/content/welcome.html`
+`https://localhost:4503/libs/cq/core/content/welcome.html`
 
 New mapping definitions are created within the repository.
 
@@ -84,7 +84,7 @@ New mapping definitions are created within the repository.
 >
 >There are many resources available that help explain how to define regular expressions; for example [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-## Creating Mapping Definitions in AEM {#creating-mapping-definitions-in-aem}
+### Creating Mapping Definitions in AEM {#creating-mapping-definitions-in-aem}
 
 In a standard installation of AEM you can find the folder:
 
@@ -92,16 +92,15 @@ In a standard installation of AEM you can find the folder:
 
 This is the structure used when defining mappings for the HTTP protocol. Other folders ( `sling:Folder`) can be created under `/etc/map` for any other protocols that you want to map.
 
-### Configuring an Internal Redirect to /content {#configuring-an-internal-redirect-to-content}
+#### Configuring an Internal Redirect to /content {#configuring-an-internal-redirect-to-content}
 
-To create the mapping that prefixes any request to http://localhost:4503/ with `/content`:
+To create the mapping that prefixes any request to https://localhost:4503/ with `/content`:
 
 1. Using CRXDE navigate to `/etc/map/http`.
 
 1. Create a new node:
 
     * **Type** `sling:Mapping`
-
       This node type is intended for such mappings, though its use is not mandatory.
 
     * **Name** `localhost_any`
@@ -112,11 +111,13 @@ To create the mapping that prefixes any request to http://localhost:4503/ with `
     * **Name** `sling:match`
 
         * **Type** `String`
+
         * **Value** `localhost.4503/`
 
     * **Name** `sling:internalRedirect`
 
         * **Type** `String`
+
         * **Value** `/content/`
 
 1. Click **Save All**.

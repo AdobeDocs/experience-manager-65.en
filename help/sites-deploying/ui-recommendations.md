@@ -3,17 +3,19 @@ title: User Interface Recommendations for Customers
 seo-title: User Interface Recommendations for Customers
 description: A list of recommendations related to the classic and touch-optimized user interfaces.
 seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
-uuid: c661fb10-4dbc-4f8b-93be-3e77af1ad095
+uuid: 9ec2c9de-a79e-4f2c-a90f-b38ba9553e07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
+discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
+docset: aem65
+
 ---
 
 # User Interface Recommendations for Customers{#user-interface-recommendations-for-customers}
 
-Adobe Experience Manager 6.5 comes with two UIs - the unified Experience Cloud UI and the Classic UI.
+Adobe Experience Manager comes with two UIs - the unified Experience Cloud UI (also known as the touch-enabled UI) and the Classic UI.
 
 This document is intended to guide customers to make a choice on what UI to use depending their situation.
 
@@ -45,9 +47,9 @@ The original user interface for Adobe Experience Manager (previously known as CQ
 
 Adobe recommends customers to plan to switch to the new UI in 2018/19. This can either be done during the update to 6.5 - or in a separate projects after the update, that would include the necessary adjustments to the customizations and component dialogs.
 
-Adobe does not plan to make further enhancements to the Classic UI starting AEM 6.5. Note that Classic UI remains fully supported while being deprecated.
+The Classic UI was deprecated with AEM 6.4 and Adobe does not plan to make further enhancements to the Classic UI. Note that Classic UI remains fully supported while being deprecated.
 
-## Rules and Recommendations {#rules-and-recommendations}
+### Rules and Recommendations {#rules-and-recommendations}
 
 The following is a list of recommendations from Product Management for Adobe Experience Manager 6.5:
 
@@ -93,38 +95,37 @@ The following is a list of recommendations from Product Management for Adobe Exp
  </tbody>
 </table>
 
-## FAQ {#faq}
+### FAQ {#faq}
 
 See the Knowledge Base article, [Touch UI Authoring FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), for details; including any information about the deprecation schedule for the classic UI.
 
-## Selecting Your UI {#selecting-your-ui}
+### Selecting Your UI {#selecting-your-ui}
 
 See [Selecting Your UI](/help/sites-authoring/select-ui.md) for information about configuring your system as required.
 
-## Touch-Optimized UI Status {#touch-optimized-ui-status}
+### Touch-Enabled UI Status {#touch-enabled-ui-status}
 
-For details of the enhancements made to the touch-optimized UI in the AEM 6.3 see [What's New](/help/release-notes/release-notes.md#what-s-new) in the Release Notes.
+For details of the enhancements made to the touch-enabled UI in the AEM 6.5 see [What's New](/help/release-notes/release-notes.md#what-s-new) in the Release Notes.
 
-A complete overview see the [Touch UI Feature Status](/help/release-notes/touch-ui-features-status.md) page
+A complete overview see the [Touch UI Feature Status](../../../release-notes/touch-ui-features-status.md) page
 
-## Resources to Help {#resources-to-help}
+### Resources to Help {#resources-to-help}
 
 For background information on basic handling:
 
-* [Working with the Author environment](/help/sites-authoring/home.md).
-* [Authoring Pages](/help/sites-authoring/author-environment-tools.md).
+* [Authoring Pages](/help/sites-authoring/page-authoring.md).
 
 For detailed development information:
 
-* [Touch-optimized UI architecture](/help/sites-developing/touch-ui-concepts.md).
-* Use the [Dialog Conversion tool](/help/sites-developing/dialog-conversion.md) to convert component Edit dialogs from the classic UI to the touch-optimized UI.
+* [Touch-enabled UI architecture](/help/sites-developing/touch-ui-concepts.md).
+* Use the [Dialog Conversion tool](/help/sites-developing/dialog-conversion.md) to convert component Edit dialogs from the classic UI to the touch-enabled UI.
 
-* [Structure of the touch-optimized UI](/help/sites-developing/touch-ui-structure.md).
+* [Structure of the touch-enabled UI](/help/sites-developing/touch-ui-structure.md).
 
-* [Customizing the consoles in the touch-optimized UI](/help/sites-developing/customizing-consoles-touch.md) (includes sample code).
+* [Customizing the consoles in the touch-enabled UI](/help/sites-developing/customizing-consoles-touch.md) (includes sample code).
 
-* [Customizing page authoring in the touch-optimized UI](/help/sites-developing/customizing-page-authoring-touch.md) (includes sample code).
+* [Customizing page authoring in the touch-enabled UI](/help/sites-developing/customizing-page-authoring-touch.md) (includes sample code).
 
-* [AEM Gem Session on touch-optimized customization](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
-* [Granite UI documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
+* [AEM Gem Session on touch-enabled customization](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+* [Granite UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 

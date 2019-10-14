@@ -3,12 +3,14 @@ title: Monitoring and Maintaining Your AEM instance
 seo-title: Monitoring and Maintaining Your AEM instance
 description: Learn how to monitor AEM.
 seo-description: Learn how to monitor AEM.
-uuid: 371791ab-2ea3-4d77-9db5-e1672c6b0831
+uuid: 14466552-5c92-4730-a427-85675a2b121c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
+discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
+docset: aem65
+
 ---
 
 # Monitoring and Maintaining Your AEM instance{#monitoring-and-maintaining-your-aem-instance}
@@ -50,6 +52,7 @@ Often a full backup is taken at regular intervals (e.g. daily, weekly or monthly
 >[!CAUTION]
 >
 >When implementing backups of your production instances, tests *must* be made to ensure that the backup can be successfully restored.
+
 >
 >Without this, the backup is potentially useless (worst case scenario).
 
@@ -68,7 +71,7 @@ To do this, you need to [back up your entire repository](#backing-up-your-reposi
 
 >[!CAUTION]
 >
->If you are operating a third-party application server, then additional folders may be in a different location and may also need to be backed up. See [How to install AEM with an Application Server](/help/sites-deploying/application-server-install.md) for information about installing application servers.
+>If you are operating a third-party application server, then additional folders may be in a different location and may also need to be backed up. See [How to install AEM with an Application Server](/help/sites-deploying/application-server-install.md) for information about installing application servers. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
 
 >[!CAUTION]
 >
@@ -92,11 +95,11 @@ This section deals with maintenance operations related to the versioning feature
 
 ### Overview {#overview}
 
-The **Purge Versions** tool is available in the **[Tools](/help/sites-administering/tools-consoles.md) console** under **Versioning** or directly at: ``
+The **Purge Versions **tool is available in the ** [Tools](/help/sites-administering//tools-consoles.md) console** under **Versioning** or directly at: ``
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
+![](assets/screen_shot_2012-03-15at14418pm.png)
 
 **Start Path** An absolute path on which the purge must be done. You can select the Start Path by clicking the repository tree navigator.
 
@@ -114,7 +117,7 @@ The **Purge Versions** tool is available in the **[Tools](/help/sites-administer
 
 To purge versions of a web site, proceed as follows:
 
-1. Navigate to the **[Tools](/help/sites-administering/tools-consoles.md) console**, select **Versioning** and double-click **Purge Versions**.
+1. Navigate to the ** [Tools](/help/sites-administering//tools-consoles.md)** **console**, select **Versioning** and double-click **Purge Versions.**
 1. Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
 
     * If you want to only purge the node defined by your path, unselect **Recursive**.
@@ -125,7 +128,7 @@ To purge versions of a web site, proceed as follows:
 1. Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.
 
 1. Click **Dry Run** to preview what the purge process would do.
-1. Click **Purge** to launch the process.
+1. Click **Purge **to launch the process.
 
 >[!CAUTION]
 >
@@ -136,22 +139,25 @@ To purge versions of a web site, proceed as follows:
 The **Dry Run** and **Purge** processes list all the nodes that have been processed. During the process, a node can have one of the following status:
 
 * `ignore (not versionnable)`: the node does not support versioning and is ignored during the process.
+
 * `ignore (no version)`: the node does not have any version and is ignored during the process. ``
+
 * `retained`: the node is not purged.
 * `purged`: the node is purged.
 
 Moreover the console provides useful information about the versions:
 
 * `V 1.0`: the version number.
-* `V 1.0.1`&ast;: the star indicates that the version is the current one.
+* `V 1.0.1`&#42;: the star indicates that the version is the current one.
+
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: the date of the version.
 
 In the next example:
 
-* The **Shirts** versions are purged because their version age is greater than 2 days.
+* The **Shirts **versions are purged because their version age is greater than 2 days.
 * The **Tonga Fashions!** versions are purged because their number of versions is greater than 5.
 
-![global_version_screenshot](assets/global_version_screenshot.png)
+![](assets/global_version_screenshot.png)
 
 ## Working with Audit Records and Log Files {#working-with-audit-records-and-log-files}
 
@@ -161,14 +167,16 @@ Auditing records and log files relating to Adobe Experience Manager (AEM) can be
 
 AEM WCM records detailed logs. After you unpack and start Quickstart, you can find logs in:
 
-* `<cq-installation-dir>/crx-quickstart/logs/`
-* `<cq-installation-dir>/crx-quickstart/repository/`
+* `<*cq-installation-dir*>/crx-quickstart/logs/` ``
+
+* `<*cq-installation-dir*>/crx-quickstart/repository/`
 
 #### Log file rotation {#log-file-rotation}
 
 Log file rotation refers to the process that limits the growth of file by creating new file periodically. In AEM, a log file called `error.log` will be rotated once a day according to the given rules:
 
 * The `error.log` file is renamed according to the pattern {original_filename} `.yyyy-MM-dd`. For example on July 2010 11th, the current log file is renamed `error.log-2010-07-10`, then a new `error.og` is created.
+
 * Previous log files are not deleted, so it is your responsibility to clean old log files periodically to limit the disk usage.
 
 >[!NOTE]
@@ -179,59 +187,49 @@ Log file rotation refers to the process that limits the growth of file by creati
 
 Various log files are held on the file server where you installed AEM:
 
-* `<cq-installation-dir>/crx-quickstart/logs`
+* `<*cq-installation-dir*>/crx-quickstart/logs`
 
     * `access.log`
-
       All access requests to AEM WCM and the repository are registered here.
 
     * `audit.log`
-
       Moderation actions are registered here.
 
     * `error.log`
-
       Error messages (of varying levels of severity) are registered here.
 
     * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)
-
       This log is only used if dynamic media is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process.
 
     * `request.log`
-
       Each access request is registered here together with the response.
 
     * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)
-
       This log is only used if dynamic media is enabled. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
 
     * `stderr.log`
-
       Holds error messages, again of varying levels of severity, generated during startup. By default the log level is set to `Warning` ( `WARN`)
 
     * `stdout.log`
-
       Holds logging messages indicating events during startup.
 
     * `upgrade.log`
-
       Provides a log of all upgrade operations that runs from the `com.day.compat.codeupgrade` and `com.adobe.cq.upgradesexecutor` packages.
 
-* `<cq-installation-dir>/crx-quickstart/repository`
+* `<*cq-installation-dir*>/crx-quickstart/repository`
 
     * `revision.log`
-
       Revision journaling information.
 
 >[!NOTE]
 >
->The ImageServer and s7access logs are not included in the **Download Full** package that is generated from the **system/console/status-Bundlelist** page. For support purposes, if you have Dynamic Media issues, please also append the ImageServer and s7access logs when you contact Customer Support.
+>The ImageServer and s7access logs are not included in the **Download Full **package that is generated from the **system/console/status-Bundlelist **page. For support purposes, if you have Dynamic Media issues, please also append the ImageServer and s7access logs when you contact Customer Support.
 
 ### Activating the DEBUG Log Level {#activating-the-debug-log-level}
 
-The default log level [Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings) is Information, so debug messages are not logged.
+The default log level ([Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) is Information, so debug messages are not logged.
 
-To activate the debug log level for a Logger, set the property `org.apache.sling.commons.log.level` to debug in the repository. For example, on `/libs/sling/config/org.apache.sling.commons.log.LogManager` to configure the [global Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings).
+To activate the debug log level for a Logger, set the property `org.apache.sling.commons.log.level` to debug in the repository. For example, on `/libs/sling/config/org.apache.sling.commons.log.LogManager` to configure the [global Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
 >
@@ -259,20 +257,20 @@ The log levels are as follows:
 
 In certain circumstances you may want to create a custom log file with a different log level. You can do this in the repository by:
 
-1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<project-name>/config`.
-1. Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
+1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<*project-name*>/config`.
+1. Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
-    * Name:
+    * Name: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (as this is a Logger)
 
-    `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (as this is a Logger)
+      Where `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information).
 
-      Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+      For example, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
     * Type: `sling:OsgiConfig`
 
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<identifier>` unique.
+   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
 
 1. Set the following properties on this node:
 
@@ -284,13 +282,13 @@ In certain circumstances you may want to create a custom log file with a differe
 
     * Name: `org.apache.sling.commons.log.names`
 
-      Type: `String[] (String + Multi)`
+      Type: String[] (String + Multi)
 
       Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
 
         * `org.apache.sling`
         * `org.apache.felix`
-        *  `com.day`
+        * `com.day`
 
     * Name: `org.apache.sling.commons.log.level`
 
@@ -311,6 +309,8 @@ In certain circumstances you may want to create a custom log file with a differe
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.pattern` supports up to six arguments.
+
+   >
    >
    >{0} The timestamp of type `java.util.Date`
    >{1} the log marker
@@ -318,6 +318,8 @@ In certain circumstances you may want to create a custom log file with a differe
    >{3} the name of the logger
    >{4} the log level
    >{5} the log message
+
+   >
    >
    >If the log call includes a `Throwable` the stacktrace is appended to the message.
 
@@ -329,41 +331,54 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >Log writer paths are relative to the `crx-quickstart` location.
    >
+   >
    >Therefore, a log file specified as:
    >
+   >
    >`logs/thelog.log`
+
+   >
    >
    >writes to:
    >
-   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`.
+   >
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
+   >
    >
    >And a log file specified as:
    >
+   >
    >`../logs/thelog.log`
+
+   >
    >
    >writes to a directory:
    >
-   >`<cq-installation-dir>/logs/`
-   >(i.e. next to `<cq-installation-dir>/crx-quickstart/`)
+   >
+   >` <*cq-installation-dir*>/logs/`
+   >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
 
 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
 
    >[!CAUTION]
    >
    >A new Logging Writer Configuration is only required when the existing default is not suitable.
+
+   >
+   >
    >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
 
-   Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
+   Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
 
-    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer)
+    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
 
-      As with the Logger, `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
     * Type: `sling:OsgiConfig`
 
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<identifier>` unique.
+   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
 
    Set the following properties on this node:
 
@@ -401,31 +416,28 @@ In certain circumstances you may want to create a custom log file with a differe
    >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
    >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
    >
-   >  The default is '.'yyyy-MM-dd (for daily log rotation).
+   >The default is '.'yyyy-MM-dd (for daily log rotation).
    >
-   >  So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
+   >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
    >
-   >  | `'.'yyyy-MM` |Rotation at the beginning of each month |
-   >  |---|---|
-   >  | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
-   >  | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
-   >  | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
-   >  | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
-   >  | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
+   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
+   >      |---|---|
+   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
+   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
+   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
+   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
+   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
    >
-   >  Note: When specifying a time/date:
-   >
-   >  1. You should "escape" literal text within a pair of single quotes (' ');
-   >
-   >     this is to avoid certain characters being interpreted as pattern letters.
-   >
-   >  1. Only use characters allowed for a valid file name anywhere in the option.
+   >      Note: When specifying a time/date:
+   >      1. You should "escape" literal text within a pair of single quotes (' ');
+   >      this is to avoid certain characters being interpreted as pattern letters.
+   >      1. Only use characters allowed for a valid file name anywhere in the option.
 
 1. Read your new log file with your chosen tool.
 
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`.
 
-The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `http://localhost:4502/system/console/slinglog`.
+The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.
 
 ### Finding the Audit Records {#finding-the-audit-records}
 
@@ -437,7 +449,7 @@ Audit records are held to provide a record of who did what and when. Different a
 1. From the sidekick you can select the tab with the lock icon, then double-click on **Audit Log...**
 1. A new window will open showing the list of audit records for the current page.
 
-   ![screen_shot_2012-02-02at43601pm](assets/screen_shot_2012-02-02at43601pm.png)
+   ![](assets/screen_shot_2012-02-02at43601pm.png)
 
 1. Click **OK** when you want to close the window.
 
@@ -451,7 +463,7 @@ These entries hold the same information as shown when editing a page.
 
 OSGi events also generate audit records which can be seen from the **Configuration Status** tab -&gt; **Log Files **tab in the AEM Web Console:
 
-![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
+![](assets/screen_shot_2012-02-13at50346pm.png)
 
 ## Monitoring Your Replication Agents {#monitoring-your-replication-agents}
 
@@ -473,7 +485,7 @@ To monitor a replication agent:
 
 1. Click the appropriate agent name (which is a link) to show detailed information on that agent:
 
-   ![chlimage_1-8](assets/chlimage_1-8.jpeg)
+   ![](assets/chlimage_1.jpeg)
 
    Here you can:
 
@@ -482,6 +494,7 @@ To monitor a replication agent:
     * See whether the replication queue is currently active (enabled).
     * See whether there are any items in the queue.
     * **Refresh** or **Clear** to update the display of queue entries; this helps you see items enter and leave the queue.
+
     * **View Log** to access the log of any actions by the replication agent.
     * **Test Connection** to the target instance.
     * **Force Retry** on any queue items if required.
@@ -614,7 +627,7 @@ Some of these will be dependent on your operating system.
   <tr>
    <td>Java VisualVM</td>
    <td>Observe JVM metrics, threads, memory and profiling.</td>
-   <td><p>Usage: jvisualvm or visualvm<br /> </p> <p>See <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> and <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance using (J)VisualVM</a>.</p> <p><strong>Note:</strong> With JDK 1.6, VisualVM is extensible with plug-ins.</p> </td>
+   <td><p>Usage: jvisualvm or visualvm<br /> </p> <p>See <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> and <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance using (J)VisualVM</a>.</p> <p><strong>Note:</strong> With JDK 1.6, VisualVM is extensible with plug-ins.</p> </td>
   </tr>
   <tr>
    <td>truss/strace, lsof</td>
@@ -662,7 +675,7 @@ By totaling all the GET entries within a specific periods (e.g. over various 24 
 
 A good starting point for performance analysis is the request log:
 
-`<cq-installation-dir>/crx-quickstart/logs/request.log`
+`<*cq-installation-dir*>/crx-quickstart/logs/request.log`
 
 The log looks as follows (the lines are shortened for simplicity):
 
@@ -730,7 +743,7 @@ Tests must be made to determine how many concurrent users the system can handle 
 ### Using rlog.jar to find requests with long duration times {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 AEM includes various helper tools located in:
-`<cq-installation-dir>/crx-quickstart/opt/helpers`
+`<*cq-installation-dir*>/crx-quickstart/opt/helpers`
 
 One of these, `rlog.jar`, can be used to quickly sort `request.log` so that requests are displayed by duration, from longest to shortest time.
 
@@ -780,7 +793,7 @@ To minimize the impact of special cases (such as garbage collection, etc), it is
 Apache Bench can be used in the following way:
 
 ```shell
-$ ab -c 5 -k -n 1000 "http://localhost:4503/content/geometrixx/en/company.html"
+$ ab -c 5 -k -n 1000 "https://localhost:4503/content/geometrixx/en/company.html"
 This is ApacheBench, Version 2.3 <$Revision: 655654 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, https://www.zeustech.net/
 Licensed to The Apache Software Foundation, https://www.apache.org/
@@ -881,7 +894,7 @@ The tool command `jconsole` is available with the JDK.
 
 1. From within the `Local` application, double-click `com.day.crx.quickstart.Main`; the Overview will be shown as default:
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
+   ![](assets/chlimage_1-1.png)
 
    After this you can select other options.
 
@@ -898,15 +911,15 @@ Since JDK 1.6, the tool command `jvisualvm` is available. After you have install
 1. Run either:
 
     * `jvisualvm`: in the JDK 1.6 bin folder (tested version)
-    * `visualvm`: can be downloaded from [VisualVM](https://visualvm.github.io/releases.html) (bleeding edge version)
+    * `visualvm`: can be downloaded from [VisualVM](https://visualvm.dev.java.net/) (bleeding edge version)
 
 1. From within the `Local` application, double-click `com.day.crx.quickstart.Main`; the Overview will be shown as default:
 
-   ![chlimage_1-88](assets/chlimage_1-88.png)
+   ![](assets/chlimage_1-2.png)
 
    After this you can select other options, including Monitor:
 
-   ![chlimage_1-89](assets/chlimage_1-89.png)
+   ![](assets/chlimage_1-3.png)
 
 You can use this tool to generate thread dumps and memory head dumps. This information is often requested by the technical support team.
 
@@ -921,7 +934,7 @@ The following information can be useful:
 * [How many pages do you currently maintain on this system?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [If you use MSM, what is the average number of rollouts per month?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [What is the average number of Live Copies per month?](#what-is-the-average-number-of-live-copies-per-month)
-* [If you use AEM Assets, how many assets do you currently maintain in Assets?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
+* [If you use AEM Assets, how many assets do you currently maintain in Assets?](#ifyouusecqdamhowmanyassetsdoyoucurrentlymaintainincqdam)
 * [What is the average size of the assets?](#what-is-the-average-size-of-the-assets)
 * [How many templates are currently used?](#how-many-templates-are-currently-used)
 * [How many components are currently used?](#how-many-components-are-currently-used)
@@ -994,9 +1007,7 @@ Again use the number of months that have elapsed since installation to calculate
 To see how many DAM assets you currently maintain, use a repository query; via CRXDE - Tools - Query:
 
 * **Type** `XPath`
-
 * **Path** `/`
-
 * **Query** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### What is the average size of the assets? {#what-is-the-average-size-of-the-assets}
@@ -1019,9 +1030,7 @@ To determine the total size of the `/var/dam` folder:
 To see the number of templates currently on the server use a repository query; via CRXDE - Tools - Query:
 
 * **Type** `XPath`
-
 * **Path** `/`
-
 * **Query** `//element(*, cq:Template)`
 
 #### How many components are currently used? {#how-many-components-are-currently-used}
@@ -1029,9 +1038,7 @@ To see the number of templates currently on the server use a repository query; v
 To see the number of components currently on the server use a repository query; via CRXDE - Tools - Query:
 
 * **Type** `XPath`
-
 * **Path** `/`
-
 * **Query** `//element(*, cq:Component)`
 
 #### How many requests per hour do you have on the author system at peak time? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
@@ -1101,12 +1108,12 @@ If your system is either running out of diskspace, or you notice disk thrashing 
 
 * Whether you have disabled collection of debug information; this can be configured in various locations, including:
 
-    * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)
-    * [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)
-    * [Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)
-    * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)
-    * [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)
-    * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+    * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
+    * [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+    * [Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+    * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+    * [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+    * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
 
 * Whether and how you have configured [Version Purging](/help/sites-deploying/version-purging.md)
 * The Knowledge Base:
@@ -1118,7 +1125,7 @@ If your system is either running out of diskspace, or you notice disk thrashing 
 
 If you see the performance of your instance deteriorating after each reboot (sometimes a week or more later), then the following can be checked:
 
-* [Out of Memory](#out-of-memory)
+* [Out of Memory](#outofmemory)
 * The Knowledge Base:
 
     * [Unclosed Sessions](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
@@ -1165,4 +1172,3 @@ This will help you see how much memory is being used, what GC algorithms are bei
 >For Oracle's VM there is also information at:
 >
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
-

@@ -1,19 +1,21 @@
 ---
 title: Search
 seo-title: Search
-description: The author environment of AEM provides various mechanisms for searching for content, dependent ontheresource type.
-seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent ontheresource type.
-uuid: b50c8144-1993-441d-8303-fcb6b0f24376
+description: The author environment of AEM provides various mechanisms for searching for content, dependent on the the resource type.
+seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the the resource type.
+uuid: 6dd3df4d-6040-4230-8373-fc028687b675
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
+discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
+docset: aem65
+
 ---
 
-# Search{#search-features}
+# Search{#search}
 
-The author environment of AEM provides various mechanisms for searching for content, dependent ontheresource type.
+The author environment of AEM provides various mechanisms for searching for content, dependent on the the resource type.
 
 >[!NOTE]
 >
@@ -23,7 +25,7 @@ The author environment of AEM provides various mechanisms for searching for cont
 
 To access the search panel, click on the **Search** tab at the top of the left-hand pane of the appropriate console.
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![](assets/chlimage_1-101.png)
 
 The search panel lets you search across all your website pages. It contains fields and widgets for the following:
 
@@ -50,7 +52,7 @@ Execute the search by clicking **Search** at the bottom of the pane. Click **Res
 
 At various locations a filter can be set (and cleared) to drill down and refine your view:
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![](assets/chlimage_1-102.png)
 
 ## Find and Replace {#find-and-replace}
 
@@ -59,7 +61,7 @@ In the **Websites** console a **Find & Replace** menu option allows you to searc
 1. Select the root page, or folder, where you want the find and replace action to take place.
 1. Select **Tools** then **Find & Replace**:
 
-   ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
+   ![](assets/screen_shot_2012-02-15at120346pm.png)
 
 1. The **Find & Replace** dialog does the following:
 
@@ -71,7 +73,7 @@ In the **Websites** console a **Find & Replace** menu option allows you to searc
 
    Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
 
-   ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
+   ![](assets/screen_shot_2012-02-15at120719pm.png)
 
 1. Click **Replace** to actually replace all instances. You will be asked to confirm the action.
 
@@ -82,7 +84,7 @@ The default scope for the find and replace servlet covers the following properti
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `http://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
+The scope can be changed using the Apache Felix Web Management Console (for example, at `https://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
 
 >[!NOTE]
 >

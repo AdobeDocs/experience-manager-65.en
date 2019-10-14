@@ -3,12 +3,14 @@ title: Recommended Deployments
 seo-title: Recommended Deployments
 description: This article describes the recommended topologies for AEM.
 seo-description: This article describes the recommended topologies for AEM.
-uuid: 565117b1-4659-41e1-9f57-97dd048e306f
+uuid: bc638121-c531-43eb-9ec6-3283a33519f8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 5e903df9-6591-46e8-9251-45170c78aa21
+discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
+docset: aem65
+
 ---
 
 # Recommended Deployments{#recommended-deployments}
@@ -17,7 +19,7 @@ discoiquuid: 5e903df9-6591-46e8-9251-45170c78aa21
 >
 >This page refers to recommended topologies for AEM. For more information on clustering capabilities and how to configure them, see the [Apache Sling Discovery API documentation](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
 
-MicroKernels act as persistence managers in AEM 6.5. Choosing one to fit your needs depends on the purpose of your instance and the deployment type you are considering.
+MicroKernels act as persistence managers starting from AEM 6.2. Choosing one to fit your needs depends on the purpose of your instance and the deployment type you are considering.
 
 The below examples are meant to be an indication of what are their recommended uses in the most common AEM setups.
 
@@ -29,7 +31,7 @@ In this scenario, a single TarMK instance runs on a single server.
 
 **This is the default deployment for author instances.**
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![](assets/chlimage_1-15.png)
 
 The advantages:
 
@@ -48,7 +50,7 @@ One TarMK instance acts as the primary instance. The repository from the primary
 
 The cold standby mechanism can also be used as a backup because the complete repository is constantly replicated to the failover server. The failover server is running in cold standby mode, which means that only the HttpReceiver of the instance is running.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![](assets/chlimage_1-16.png)
 
 The advantages:
 
@@ -81,7 +83,7 @@ For AEM Communities, user generated content (UGC) is never replicated. For suppo
 
 **This is the default deployment for publish environments.**
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![](assets/chlimage_1-17.png)
 
 The advantages:
 
@@ -93,7 +95,7 @@ The advantages:
 
 This approach implies multiple Oak instances accessing a MongoDB replica set within a single data center, in effect creating an active-active cluster for the AEM author environment. Replica sets in MongoDB are used to provide high availability and redundancy in the event of a hardware or network failure.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![](assets/chlimage_1-18.png)
 
 The advantages:
 
@@ -108,7 +110,7 @@ The disadvantages:
 
 This approach implies multiple Oak instances accessing a MongoDB replica set across multiple data centers, in effect creating an active-active cluster for the AEM author environment. With multiple data centers, MongoDB replication provides the same high availability and redundancy but now includes the ability to handle a data center outage.
 
-![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
+![](assets/oakclustermongofailover2datacenters.png)
 
 The advantages:
 
@@ -188,7 +190,7 @@ A set of prerequisites and recommendations is available if you are considering a
 
 ### Considerations for AEM Communities {#considerations-for-aem-communities}
 
-For sites which plan to deploy [AEM Communities](/help/communities/overview.md), it is recommended to [choose a deployment](/help/communities/working-with-srp.md) optimized for handling UGC posted by community members from the publish environment.
+For sites which plan to deploy [AEM Communities](/help/communities/overview.md), it is recommended to [choose a deployment](/help/communities/working-with-srp.md#characteristicsofstorageoptions) optimized for handling UGC posted by community members from the publish environment.
 
 By using a [common store](/help/communities/working-with-srp.md), UGC does not need to be replicated between author and other publish instances in order to obtain a consistent view of the UGC.
 
@@ -196,11 +198,11 @@ Below are a set of decisional matrices that can assist you in choosing the best 
 
 #### Choosing the deployment type for author instances {#choosing-the-deployment-type-for-author-instances}
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![](assets/chlimage_1-19.png)
 
 #### Choosing the deployment type for publish instances {#choosing-the-deployment-type-for-publish-instances}
 
-![chlimage_1-20](assets/chlimage_1-20.png)
+![](assets/chlimage_1-20.png)
 
 >[!NOTE]
 >

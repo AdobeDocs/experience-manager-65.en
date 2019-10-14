@@ -3,12 +3,14 @@ title: Assessing the Upgrade Complexity with the Pattern Detector
 seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
-uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
+uuid: 84d0add9-3123-4188-9877-758911b1899f
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
+discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
+docset: aem65
+
 ---
 
 # Assessing the Upgrade Complexity with the Pattern Detector{#assessing-the-upgrade-complexity-with-the-pattern-detector}
@@ -24,7 +26,7 @@ This could serve as an assessment of the development effort that is involved in 
 
 ## How to Set Up {#how-to-set-up}
 
-The Pattern Detector is released separately as a [one package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)  working on any source AEM versions from 6.1 to 6.5 targeting AEM 6.5 upgrade. It can be installed using the [Package Manager](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+The Pattern Detector is released separately as a [one package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) working on any source AEM versions from 6.1 to 6.5 targeting AEM 6.5 upgrade. It can be installed using the [Package Manager](/help/sites-administering//package-manager.md).
 
 ## How to Use {#how-to-use}
 
@@ -33,21 +35,23 @@ The Pattern Detector is released separately as a [one package](https://www.adobe
 >Pattern Detector can run on any environment, including local development instances. However, in order to:
 >
 >* increase the detection rate
->* avoid any slowdowns on business critical instances
+>* avoid any slowdowns on business critical instances  
+  
+>
 >both at the same time it is recommended to run it **on staging environments** that are as close as possible to production ones in the areas of user applications, content and configurations.
 
 You can use several methods to check the Pattern Detector output:
 
 * **Via the Felix Inventory console:**
 
-1. Go to the AEM Web Console by browsing to: https://<i></i>serveraddress:serverport/system/console/configMgr
+1. Go to the AEM Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
 1. Select **Status - Pattern Detector** as shown in the image below:
 
-   ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
+   ![](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Via a reactive text based or regular JSON interface**
+* **Via a reactive text based or regular JSON interface** 
 
-* **Via a reactive JSON lines interface**, that generates a separate JSON document in each line.
+* **Via a reactive JSON lines interface, **that generates a separate JSON document in each line.
 
 Both of these methods are detailed below:
 
@@ -57,7 +61,7 @@ The reactive interface allows for the processing of the violation report as soon
 
 The output is currently available under 2 URLs:
 
-1. Plain text interface
+1. Plain text interface  
 1. JSON interface
 
 ## Handling the Plain Text Interface {#handling-the-plain-text-interface}
@@ -67,7 +71,7 @@ The information in the output is formatted as a series of event entries. There a
 They can be obtained by using the following commands:
 
 ```shell
-curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
+curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
 ```
 
 The output will look like this:
@@ -79,14 +83,14 @@ The output will look like this:
 The progress can be filtered using the `grep` command:
 
 ```shell
-curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
+curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
 ```
 
 Which results in the following output:
 
 ```
-2018-02-13T14:19:26.909+01:00 [PROGRESS] emitted=127731/52 MB patterns (from=6.4), analysed=45780/16 MB items, found=0 suspicions so far in period=PT5.005S (throughput=34667 items/sec)
-2018-02-13T14:19:31.904+01:00 [PROGRESS] emitted=127731/52 MB patterns (from=6.4), analysed=106050/39 MB items, found=0 suspicions so far in period=PT10S (throughput=23378 items/sec)
+2018-02-13T14:19:26.909+01:00 [PROGRESS] emitted=127731/52 MB patterns (from=6.5), analysed=45780/16 MB items, found=0 suspicions so far in period=PT5.005S (throughput=34667 items/sec)
+2018-02-13T14:19:31.904+01:00 [PROGRESS] emitted=127731/52 MB patterns (from=6.5), analysed=106050/39 MB items, found=0 suspicions so far in period=PT10S (throughput=23378 items/sec)
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
@@ -95,7 +99,7 @@ Which results in the following output:
 Similarly, JSON can be processed using the [jq tool](https://stedolan.github.io/jq/) as soon as it is published.
 
 ```shell
-curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
+curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
 ```
 
 With the output:
@@ -120,7 +124,7 @@ With the output:
 The progress is reported every 5 seconds and can fetched by excluding other messages than those marked as suspicions:
 
 ```shell
-curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
+curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
 ```
 
 With the output:
@@ -134,7 +138,7 @@ With the output:
     "patternsEmitted": 127731,
     "patternsEmittedSize": "52 MB",
     "databasesEmitted": [
-      "6.4"
+      "6.5"
     ]
   },
   "state": {
@@ -156,7 +160,7 @@ With the output:
     "patternsEmitted": 127731,
     "patternsEmittedSize": "52 MB",
     "databasesEmitted": [
-      "6.4"
+      "6.5"
     ]
   },
   "state": {
@@ -178,7 +182,7 @@ With the output:
     "patternsEmitted": 127731,
     "patternsEmittedSize": "52 MB",
     "databasesEmitted": [
-      "6.4"
+      "6.5"
     ]
   },
   "state": {
@@ -213,4 +217,8 @@ Currently Pattern Detector allows to check:
 * definitions of Oak indices (compatibility)
 * VLT packages (overuse)
 * rep:User nodes compatibility (in context of OAuth configuration)
+
+>[!NOTE]
+>
+>Please note that Pattern Detector tries to accurately predict the warnings for upgrade. However, it might generate false positives in some scenarios.
 
