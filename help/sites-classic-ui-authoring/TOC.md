@@ -78,4 +78,3 @@ user-guide-title: AEM 6.5 Classic UI Authoring User Guide
     + [Working with Dynamic Media](dynamic-media-assets.md)
     + [Naming conventions for assets testing](asset-naming-conventions.md)
     + [Using Asset Share Pages](manage-assets-classic-using-share-page.md)
-    + [Resolving file dependencies](classicui-upload-proc-3d-resolve-dependencies.md)
