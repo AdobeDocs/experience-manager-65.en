@@ -3,12 +3,14 @@ title: Publishing Pages
 seo-title: Publishing Pages
 description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
 seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
-uuid: 2b1cb08b-dbe9-4032-8527-15a11aa59d51
+uuid: ab5ffc59-1c41-46fe-904e-9fc67d7ead04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
+discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
+docset: aem65
+
 ---
 
 # Publishing Pages{#publishing-pages}
@@ -61,20 +63,21 @@ You can activate pages in the Websites console. After you have opened a page and
 
    To activate the content of the page and all its sub-pages use the [**Tools** console](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
-   ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
+   ![](assets/screen_shot_2012-02-08at13817pm.png)
 
    >[!NOTE]
    >
    >If necessary, AEM requests that you activate or reactivate any assets that are linked to the page. You can select or clear the check boxes to activate those assets.
    >
+   >
 
 1. If necessary, AEM requests that you activate or reactivate any assets that are linked to the page. You can select or clear the check boxes to activate those assets.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![](assets/chlimage_1-100.png)
 
 1. AEM WCM activates the selected content. The published page or pages appears in the [Websites console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marked green) with information about who activated the content as well as date and time of activation.
 
-   ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
+   ![](assets/screen_shot_2012-02-08at14335pm.png)
 
 ### Activating a Page from Sidekick {#activating-a-page-from-sidekick}
 
@@ -84,7 +87,6 @@ After you have opened the page and modified its contents, you:
 
 1. Select the **Page** tab in the Sidekick.
 1. Click **Activate Page**.
-
    A message displays at the top right of the window confirming that the page has been activated.
 
 ## Unpublishing a Page {#unpublishing-a-page}
@@ -96,11 +98,11 @@ To deactivate a page:
 1. In the Websites console, select the page that you want to deactivate.
 1. Select **Deactivate**, either from the top menu, or the drop-down menu on the selected page item. You are asked to confirm the deletion.
 
-   ![screen_shot_2012-02-08at14859pm](assets/screen_shot_2012-02-08at14859pm.png)
+   ![](assets/screen_shot_2012-02-08at14859pm.png)
 
 1. Refresh the [Websites console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) and the content is marked in red, indicating that it is no longer published.
 
-   ![screen_shot_2012-02-08at15018pm](assets/screen_shot_2012-02-08at15018pm.png)
+   ![](assets/screen_shot_2012-02-08at15018pm.png)
 
 ## Activate/Deactivate Later {#activate-deactivate-later}
 
@@ -111,11 +113,11 @@ To schedule your activation for a later time:
 1. In the Websites console, go to the **Activate** menu, and select **Activate later**.
 1. In the dialog that opens you provide the date and time for activation and click **OK**. This creates a version of the page that is activated at the specified time.
 
-   ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
+   ![](assets/screen_shot_2012-02-08at14751pm.png)
 
 Activating later starts a workflow to activate this version of the page at the specified time. Conversely, deactivating later starts a workflow to deactivate this version of the page at a specific time.
 
-If you want to cancel this activation/deactivation, go to the [Workflow Console](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) to terminate the corresponding workflow.
+If you want to cancel this activation/deactivation, go to the [Workflow Console](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) to terminate the corresponding workflow.
 
 ### Deactivate Later {#deactivate-later}
 
@@ -125,11 +127,11 @@ To schedule your deactivation for a later time:
 
 1. In the dialog that opens you provide the date and time for deactivation and click **OK**.
 
-   ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
+   ![](assets/screen_shot_2012-02-08at15129pm.png)
 
 **Deactivating late**r starts a workflow to deactivate this version of the page at a specific time.
 
-If you want to cancel this deactivation, go to the [Workflow Console](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) to terminate the corresponding workflow.
+If you want to cancel this deactivation, go to the [Workflow Console](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) to terminate the corresponding workflow.
 
 ## Scheduled Activation/Deactivation (On/Off Time) {#scheduled-activation-deactivation-on-off-time}
 
@@ -143,15 +145,15 @@ The status can be seen from the [Websites console](/help/sites-classic-ui-author
 
 From the **Websites** tab you can activate the individual pages. When you have entered or updated a considerable number of content pages - all of which are resident under the same root page - it can be easier to activate the entire tree in one action. You can also perform a Dry Run to emulate an activation and highlight which pages would be activated.
 
-1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `http://localhost:4502/etc/replication.html`).
+1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `https://localhost:4502/etc/replication.html`).
 
-   ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
+   ![](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. On the **Replication** console, click on **Activate Tree**.
 
-   The following window ( `http://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
+   The following window ( `https://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
 
-   ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
+   ![](assets/screen_shot_2012-02-08at125033pm-1.png)
 
 1. Enter the **Start Path**. This specifies the path to the root of the section you want to activate (publish). This page and all pages underneath are considered for activation (or used in the emulation if a Dry Run is selected).
 1. Activate the selection criteria as required:
@@ -163,5 +165,6 @@ From the **Websites** tab you can activate the individual pages. When you have e
 1. Select the action you want to perform:
 
     1. Select **Dry Run** if you want to check which pages *would* be activated. This is only an emulation, no pages will be activated.
+
     1. Select **Activate** if you want to activate the pages.
 

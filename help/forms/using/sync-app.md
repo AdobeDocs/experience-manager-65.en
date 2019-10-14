@@ -3,17 +3,19 @@ title: Synchronizing the app
 seo-title: Synchronizing the app
 description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
-uuid: 7e1526e1-13bd-498a-a265-cd4f2d05ccdd
+uuid: 3a6fb2d5-2ec4-4f78-a42a-fc921b66238e
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
+discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
+docset: aem65
+
 ---
 
-# Synchronizing the app {#synchronizing-the-app}
+# Synchronizing the app{#synchronizing-the-app}
 
-## Synchronizing the app {#synchronizing-the-app-1}
+## Synchronizing the app {#synchronizing-the-app}
 
 The forms in your app are downloaded from the AEM Forms server. The forms are downloaded under Tasks and Forms tabs. Drafts created from forms are downloaded in the drafts tab, and drafts created from tasks are downloaded in the tasks tab. For a standalone form on OSGi server, forms and drafts are downloaded in Forms and Draft tabs respectively.
 
@@ -23,16 +25,16 @@ When you are online with the AEM Forms server, by default, your app is synchroni
 
 **To synchronize the app manually**
 
-Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right corner of the home screen.
+Tap the Synchronize button ![](assets/sync-app.png) at the lower-right corner of the home screen.
 
 **To alter the synchronization frequency**
 
 1. To go to the Setting screen, tap the menu button at the upper-left corner of the Home screen, and then tap **Settings**.
 1. In the Settings screen, tap the General tab.
 
-   ![Sync frequency setting in General Settings window](assets/gen-settings-1.png)
+   ![Sync frequency setting in General Settings window](assets/gen-settings-2.png)
 
-1. On the Sync frequency option, tap the value to the right of Sync frequency.
+1. On the Sync frequency option, tap the value to the right of Sync frequency. 
 1. In the drop-down list, select the new synchronization frequency.
 
 ### Technical specifications {#technical-specifications}
@@ -42,4 +44,4 @@ Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right c
 * The syncSubmittedTask() and syncSavedTask() function perform operations on individual tasks.
 * The call to the processOfflineSubmittedSavedTasks() function is initiated by the task list component after a user selects to synchronize offline state to the server or an automatic sync by the background thread.
 
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -1,14 +1,16 @@
 ---
-title: About document security
-seo-title: About document security
+title: About document security 
+seo-title: About document security 
 description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
 seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
-uuid: 31b0c24f-a588-44f7-a9ba-e9780e82c066
+uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
+discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
+docset: aem65
+
 ---
 
 # About document security {#about-document-security}
@@ -44,12 +46,12 @@ Document security consists of a server and user interface:
 
 **Web pages:** The interface where you create policies, manage your policy-protected documents, and monitor events that are associated with policy-protected documents. Administrators can also configure global options such as user authentication, auditing, and messaging for invited users, and manage invited user accounts.
 
-![rm_psworkflow](assets/rm_psworkflow.png)
+![](assets/rm_psworkflow.png)
 
 The steps in the illustration are as follows:
 
-1. The document owner creates policies using the web pages. Document owners can create personal policies that are accessible only to them. Administrators and policy set coordinators can create shared policies within policy sets that are accessible to authorized users.
-1. The document owner applies the policy, and then saves and distributes the document. The document can be distributed by email, through a network folder, or on a website.
+1. The document owner creates policies using the web pages. Document owners can create personal policies that are accessible only to them. Administrators and policy set coordinators can create shared policies within policy sets that are accessible to authorized users. 
+1. The document owner applies the policy, and then saves and distributes the document. The document can be distributed by email, through a network folder, or on a website. 
 1. The recipient opens the document in the appropriate client application. The recipient can use the document according to its policy.
 1. The document owner, policy set coordinator, or administrator can track documents and modify access to them using the web pages.
 
@@ -59,7 +61,7 @@ Various types of users work with document security to accomplish different tasks
 
 * The system administrator or other information systems (IS) person installs and configures document security. This person may also be responsible for configuring global settings for the server, web pages, and policies and documents.
 
-  These settings may include, for example, a base document security URL, auditing and privacy notifications, invited user registration notices, and default offline lease periods.
+  These settings may include, for example, a base document security URL, auditing and privacy notifications, invited user registration notices, and default offline lease periods. 
 
 * Document security administrators create policies and policy sets, and manage policy-protected documents for users as required. They also create invited user accounts, and monitor system, document, user, policy, policy set, and custom events. They may also be responsible for configuring the global server, and web page and policy settings in conjunction with a system administrator.
 
@@ -83,7 +85,7 @@ Various types of users work with document security to accomplish different tasks
 
   Users with this role can configure the document security server, using the Configuration page in document security section of administration console. This permission is associated with the role, Manage Configuration.
 
-  **Note**: *Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
 
   **Document security policy set administrator**
 
@@ -96,7 +98,7 @@ Various types of users work with document security to accomplish different tasks
     * View events
     * Delegate
 
-  **Note**: *Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
 
   **Document security manage invited and local users**
 
@@ -106,7 +108,7 @@ Various types of users work with document security to accomplish different tasks
     * Invite external users
     * Access end-user web pages
 
-  **Note**: *Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
 
   **Document security invite user**
 
@@ -119,18 +121,18 @@ Various types of users work with document security to accomplish different tasks
 
   Users with this role can access document security end-user web pages. This role can also be assigned to administrators to allow administrators to create policies using the end-user pages. This permission is associated with the role Access end-user web pages.
 
-* Users within the organization who have valid document security accounts create their own policies, use policies to protect documents, track and manage their policy-protected documents, and monitor events that are related to their documents.
+* Users within the organization who have valid document security accounts create their own policies, use policies to protect documents, track and manage their policy-protected documents, and monitor events that are related to their documents. 
 * Policy set coordinators manage documents, view events, and manage other policy set coordinators (based on their permissions). Administrators designate users as policy set coordinators for particular policy sets.
-* Users who are external to your organization (for example, a business partner) can use policy-protected documents if they are in the document security document security directory, if the administrator creates an account for them, or if they register with document security through an automated email invitation process. Depending on how the administrator enables the access settings, the invited users may also have permission to apply policies to documents, to create, modify and delete their policies, and to invite other external users to use their policy-protected documents.
+* Users who are external to your organization (for example, a business partner) can use policy-protected documents if they are in the document security document security directory, if the administrator creates an account for them, or if they register with document security through an automated email invitation process. Depending on how the administrator enables the access settings, the invited users may also have permission to apply policies to documents, to create, modify and delete their policies, and to invite other external users to use their policy-protected documents. 
 * Developers use the AEM forms SDK to integrate custom applications with document security.
 
 Document security administrators can create custom roles by using the following permissions in User Management:
 
-* Document security Manage Configuration
-* Document security Manage Invited and Local Users
-* Document security Manage Policy Sets
-* Document security Manage Policy Sets
-* Document security View Server Events
+* Document security Manage Configuration 
+* Document security Manage Invited and Local Users 
+* Document security Manage Policy Sets 
+* Document security Manage Policy Sets 
+* Document security View Server Events 
 * Document security Change Policy Owner
 
 ## Policies and policy-protected documents {#policies-and-policy-protected-documents}
@@ -156,11 +158,11 @@ Users and administrators create policies through the document security web pages
 
 A policy can be removed from a document by using the client application.
 
-![rm_psonline_policy](assets/rm_psonline_policy.png)
+![](assets/rm_psonline_policy.png)
 
 The steps in the diagram are as follows:
 
-1. The document owner secures the document from a supported client application with a policy that allows online use.
+1. The document owner secures the document from a supported client application with a policy that allows online use. 
 1. Document security creates a document license and document keys, and encrypts the policy. The document license, encrypted policy, and document key are returned to the client application.
 1. The document is encrypted with the document key, and the document key is discarded. The document now embeds the license and policy. These tasks are performed in the supported client application.
 
@@ -172,9 +174,9 @@ If offline usage is enabled, recipients can also use policy-protected documents 
 
 To open and use policy-protected documents, the policy must include your name as a recipient, and you must have a valid document security account. For PDF documents, you need Acrobat or Adobe Reader®. For other file types, you need the appropriate application for the file with the Acrobat Reader DC extensions installed.
 
-When you attempt to open a policy-protected document, Acrobat, Adobe Reader, or the Acrobat Reader DC extensions connects to document security to authenticate you. Then, you can proceed to log on. If the document usage is being audited, a notification message appears. After document security determines which document permissions to grant, it manages the decryption of the document. You can then use the document according to the policy confidentiality settings.
+When you attempt to open a policy-protected document, Acrobat, Adobe Reader, or the Acrobat Reader DC extensions connects to document security to authenticate you. Then, you can proceed to log on. If the document usage is being audited, a notification message appears. After document security determines which document permissions to grant, it manages the decryption of the document. You can then use the document according to the policy confidentiality settings. 
 
-![rm_psopen_online](assets/rm_psopen_online.png)
+![](assets/rm_psopen_online.png)
 
 The steps in the diagram are as follows:
 

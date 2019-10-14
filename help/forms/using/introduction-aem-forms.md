@@ -3,16 +3,18 @@ title: Introduction to AEM Forms
 seo-title: Introduction to AEM Forms
 description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
-uuid: 9e9a164a-4a74-4096-98b8-800ea610edd8
+uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
-discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
+discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
+docset: aem65
+
 ---
 
-# Introduction to AEM Forms {#introduction-to-aem-forms}
+# Introduction to AEM Forms{#introduction-to-aem-forms}
 
-For information about latest features and enhancements in AEM Forms, see [What's new in AEM Forms](/help/forms/using/whats-new.md).
+For information about latest features and enhancements in AEM Forms, see [What's new in AEM Forms](../../forms/using/whats-new.md).
 
 ## About AEM Forms {#about-aem-forms}
 
@@ -20,11 +22,9 @@ Adobe Experience Manager (AEM) provides an easy-to-use solution to create, manag
 
 AEM Forms combine form authoring, management, and publishing along with correspondence management capabilities, document security, and integrated analytics to create engaging end-to-end experiences. Designed to work across web and mobile channels, AEM Forms can be efficiently integrated into your business processes, reducing paper processes and errors while improving efficiency.
 
-AEM Forms leverages and extends the capabilities of your existing investments in XFA forms and Adobe LiveCycle solution.
-
 In large enterprises, forms are often created once and reused by copying to a content management system. Keeping a large database of forms up-to-date and making them discoverable can be a considerable challenge. AEM provides a customizable Forms Portal that ensures that customers find and access forms they need across both web and mobile channels.
 
-AEM Forms provides forms management tools that not only lets you manage adaptive form, but XFA forms, PDF forms, and related assets as well. For more information, see [Introduction to managing forms](/help/forms/using/introduction-managing-forms.md).
+AEM Forms provides forms management tools that not only lets you manage adaptive form, but XFA forms, PDF forms, and related assets as well. For more information, see [Introduction to managing forms](../../forms/using/introduction-managing-forms.md).
 
 ![](do-not-localize/4th-draft.gif)
 
@@ -72,7 +72,7 @@ All form types support the following features:
 * Support for file attachments
 * Integration with HTML Workspace for Data Capture
 
-## Offline data collection {#offline-data-collection-br}
+## Offline data collection <br> {#offline-data-collection-br}
 
 Once form data is submitted, Adobe Experience Manager connects the form data with existing systems, business rules, and the required people.
 
@@ -110,5 +110,6 @@ Personalized documents, like, receipts, welcome kits, and statements can easily 
 * Document security add-on for AEM Forms including encryption, usage policies, tracking, and auditing
 
 ![](do-not-localize/layout-02.png)
-**Figure:** *Streamlined personalized communication workflow*
+
+Streamlined personalized communication workflow
 

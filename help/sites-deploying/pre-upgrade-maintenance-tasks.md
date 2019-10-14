@@ -3,12 +3,14 @@ title: Pre-Upgrade Maintenance Tasks
 seo-title: Pre-Upgrade Maintenance Tasks
 description: Learn about the pre-upgrade tasks in AEM.
 seo-description: Learn about the pre-upgrade tasks in AEM.
-uuid: 6c0d4b31-6464-470b-9e40-1fc2abb9b2a6
+uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
-discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
+discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
+docset: aem65
+
 ---
 
 # Pre-Upgrade Maintenance Tasks{#pre-upgrade-maintenance-tasks}
@@ -27,8 +29,9 @@ Before beginning your upgrade, it is important to follow these maintenance tasks
 * [Disable Custom Scheduled Jobs](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
 * [Execute Offline Revision Cleanup](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Execute Datastore Garbage Collection](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
-* [Upgrade the Database Schema If Needed](pre-upgrade-maintenance-tasks.md#upgrade-the-database-schema-if-needed)
-* [Delete Users that Might Hinder the Upgrade](pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
+* [Upgrade the Database Schema If Needed](/help/sites-deploying/pre-upgrade-maintenance-tasks.htm#upgradethedatabaseschemaifneeded)
+* [Delete Users that Might Hinder the Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
+
 * [Rotate Log Files](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## Ensure Sufficient Disk Space {#ensure-sufficient-disk-space}
@@ -49,7 +52,7 @@ When starting AEM from the jar file, a `quickstart.properties` file will be gene
 
 ## Configure Workflow and Audit Log Purging {#configure-wf-audit-purging}
 
-The `WorkflowPurgeTask` and `com.day.cq.audit.impl.AuditLogMaintenanceTask` tasks require separate OSGi configurations and will not work without them. If they fail during pre-upgrade task execution, missing configurations is the most likely reason. Therefore, make sure to add OSGi configurations for these tasks or remove them altogether from the pre-upgrade optimization tasks list if you do not wish to run them. Documentation for configuring workflow purging tasks can be found at [Administering Workflow Instances](/help/sites-administering/workflows-administering.md) and audit log maintenance task configuration can be found at [Audit Log Maintenance in AEM 6](/help/sites-administering/operations-audit-log.md).
+The `WorkflowPurgeTask` and `com.day.cq.audit.impl.AuditLogMaintenanceTask` tasks require separate OSGi configurations and will not work without them. If they fail during pre-upgrade task execution, missing configurations is the most likely reason. Therefore, make sure to add OSGi configurations for these tasks or remove them altogether from the pre-upgrade optimization tasks list if you do not wish to run them. Documentation for configuring workflow purging tasks can be found at [Administering Workflow Instances](https://helpx.adobe.com/experience-manager/6-2/help/sites-administering/wf-administering.html#regular purging of workflow instances) and audit log maintenance task configuration can be found at [Audit Log Maintenance in AEM 6](/help/sites-administering/operations-audit-log.md).
 
 For workflow and audit log purging on CQ 5.6 as well as audit log purging on AEM 6.0, see [Purge workflow and audit nodes](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
@@ -81,13 +84,13 @@ You can find the packages at these locations:
 
 The `PreUpgradeTasksMBean` OSGI component comes preconfigured with a list of pre-upgrade maintenance tasks that can be run all at once. You can configure the tasks by following the below procedure:
 
-1. Go to the Web Console by browsing to `https://serveraddress:serverport/system/console/configMgr`
+1. Go to the Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
 
 1. Search for "**preupgradetasks**", then click on the first matching component. The full name of the component is `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
 1. Modify the list of maintenance tasks that need to run as shown below:
 
-   ![1487758925984](assets/1487758925984.png)
+   ![](assets/1487758925984.png)
 
 The task list differs depending on the run mode that is being used to start the instance. Below is a description of the run mode each maintenance task is designed for.
 
@@ -152,7 +155,7 @@ The list is editable. You can use the plus **(+)** and minus **(-)** buttons bes
 
 **MBean Methods**
 
-The managed bean functionality can be accessed using the [JMX Console](/help/sites-administering/jmx-console.md).
+The managed bean functionality can be accessed using the [JMX Console](/help/sites-administering//jmx-console.md).
 
 You can access the MBeans by:
 
@@ -291,7 +294,7 @@ Disable any OSGi scheduled jobs that are included in your application code.
 >
 >This step is only necessary for TarMK installations
 
-If using TarMK, you should execute Offline Revision Cleanup before upgrading. This will make the repository migration step and subsequent upgrade tasks execute much faster and will help to ensure that Online Revision Cleanup can execute successfully after the upgrade has completed. For information on running Offline Revision Cleanup, see [Performing Offline Revision Cleanup](https://helpx.adobe.com/experience-manager/6-2/sites-deploying/storage-elements-in-aem-6.html#performing-offline-revision-cleanup).
+If using TarMK, you should execute Offline Revision Cleanup before upgrading. This will make the repository migration step and subsequent upgrade tasks execute much faster and will help to ensure that Online Revision Cleanup can execute successfully after the upgrade has completed. For information on running Offline Revision Cleanup, see [Performing Offline Revision Cleanup](https://helpx.adobe.com/experience-manager/6-2/help/sites-deploying/storage-elements-in-aem-6.html#performing-offline-revision-cleanup).
 
 ## Execute Datastore Garbage Collection {#execute-datastore-garbage-collection}
 
@@ -299,37 +302,7 @@ If using TarMK, you should execute Offline Revision Cleanup before upgrading. Th
 >
 >This step is only necessary for instances running crx3
 
-After running revision cleanup on CRX3 instances, you should run Datastore Garbage Collection to remove any unreferenced blobs in the data store. For instructions, see the documentation on [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md).
-
-## Delete Users that Might Hinder the Upgrade {#delete-users-that-might-hinder-the-upgrade}
-
->[!NOTE]
->
->This pre-upgrade maintenance task is only necessary if:
->
-> * You are upgrading from AEM versions older than AEM 6.3
-> * You encounter any of the errors mentioned below during the upgrade.
-
-There are exceptional cases when service users might end up in an older AEM versions being improperly tagged as regular users.
-
-If this happens, the upgrade will fail with a message like this one:
-
-`ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
-java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.`
-
-In order to work around this issue, make sure you do the following:
-
-In order to work around this issue, make sure you do the following:
-
-* Detach the instance from production traffic
-* Create a backup of the user(s) causing the problem. You can do this via Package Manager. For more information, see [How to Work with Packages](/help/sites-administering/package-manager.md).
-* Delete the user(s) causing the problem. Below is a list of users that might fall  under this category:
-  * dynamic-media-replication
-  * communities-ugc-writer
-  * communities-utility-reader
-  * communities-user-admin
-  * oauthservice
-  * sling-scripting
+After running revision cleanup on CRX3 instances, you should run Datastore Garbage Collection to remove any unreferenced blobs in the data store. For instructions, see the documentation on [Data Store Garbage Collection](/help/sites-administering//data-store-garbage-collection.md).
 
 ## Upgrade the Database Schema If Needed {#upgrade-the-database-schema-if-needed}
 
@@ -342,9 +315,41 @@ In order to prevent this from happening, you need to upgrade the schema by follo
 1. Shut down the AEM instance that needs to be upgraded.
 1. Upgrade the database schema. Please consult the documentation for your database type in order to see what is the tooling you need to use in order to achieve this.
 
-    For more information on how Oak handles schema upgrades, see [this page on the Apache website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
+   For more information on how Oak handles schema upgrades, see [this page on the Apache website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
 1. Proceed with upgrading AEM.
+
+## Delete Users that Might Hinder the Upgrade {#delete-users-that-might-hinder-the-upgrade}
+
+>[!NOTE]
+>
+>This pre-upgrade maintenance task is only necessary if:
+>
+>* You are upgrading from AEM versions older than AEM 6.3
+>* You encounter any of the errors mentioned below during the upgrade.
+>
+
+There are exceptional cases when service users might end up in an older AEM versions being improperly tagged as regular users.
+
+If this happens, the upgrade will fail with a message like this one:
+
+```
+ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
+java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.
+```
+
+In order to work around this issue, make sure you do the following:
+
+1. Detach the instance from production traffic
+1. Create a backup of the user(s) causing the problem. You can do this via Package Manager. For more information, see [How to Work with Packages.](/help/sites-administering//package-manager.md)
+1. Delete the user(s) causing the problem. Below is a list of users that might fall under this category:
+
+    1. `dynamic-media-replication`
+    1. `communities-ugc-writer`
+    1. `communities-utility-reader`
+    1. `communities-user-admin`
+    1. `oauthservice`
+    1. `sling-scripting`
 
 ## Rotate Log Files {#rotate-log-files}
 

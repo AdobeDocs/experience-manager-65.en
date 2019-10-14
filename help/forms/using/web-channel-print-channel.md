@@ -3,25 +3,25 @@ title: Print channel and web channel
 seo-title: Print channel and web channel
 description: Importing print channel templates and creating and enabling web channel templates
 seo-description: Importing print channel templates and creating and enabling web channel templates
-uuid: 19e6ffab-00d2-4084-9ee7-9643b11eb6c6
+uuid: 2361b1ee-c789-4a5a-9575-8b62b603da1e
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
+discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
+docset: aem65
+
 ---
 
-# Print channel and web channel {#print-channel-and-web-channel}
-
-Importing print channel templates and creating and enabling web channel templates
+# Print channel and web channel{#print-channel-and-web-channel}
 
 Interactive Communications can be delivered through two channels: print and web. The print channel is used to create PDFs and paper communications, such as a printed letter as a reminder for insurance premium payment, while the web channel is used to deliver online experiences, such as a credit card statement on a website.
 
 Interactive Communication authors can reuse assets such as document fragments and images to create both print and web versions of Interactive Communication.
 
-One of the prerequisites for [Creating an Interactive Communication](/help/forms/using/create-interactive-communication.md) is to have the templates for print and/or web channel available on the server. While template authors create the web channel template in AEM itself, the print channel template XDP is created in Adobe Forms Designer and uploaded to the server.
+One of the prerequisites for [Creating an Interactive Communication](../../forms/using/create-interactive-communication.md) is to have the templates for print and/or web channel available on the server. While template authors create the web channel template in AEM itself, the print channel template XDP is created in Adobe Forms Designer and uploaded to the server.
 
-## Print channel {#printchannel}
+## Print channel {##printchannel}
 
-Print channel of an Interactive Communication uses XFA form template, XDP. An XDP is designed in Adobe Forms Designer. For more information on creating print channel templates, see [Layout Design](/help/forms/using/layout-design-details.md). To use a print channel template in your Interactive Communication, you need to upload the template to the AEM Forms server.
+Print channel of an Interactive Communication uses XFA form template, XDP. An XDP is designed in Adobe Forms Designer. For more information on creating print channel templates, see [Layout Design](../../forms/using/layout-design-details.md). To use a print channel template in your Interactive Communication, you need to upload the template to the AEM Forms server.
 
 ### Upload Interactive Communication print channel template {#upload-interactive-communication-print-channel-template}
 
@@ -45,7 +45,7 @@ To author a web channel template Complete the following steps:
 
 1. Create a Template folder to keep your Interactive Communication web templates, if you do not already have one. For more information, see Template Folders in [Page Templates - Editable](/help/sites-developing/page-templates-editable.md).
 
-    1. Tap **[!UICONTROL Tools]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Configuration Browser]**. **[!UICONTROL]**
+    1. Tap **[!UICONTROL Tools]** ![](assets/tools.png) > **[!UICONTROL Configuration Browser]**. **[!UICONTROL]**
     1. In the Configuration Browser page, tap **[!UICONTROL Create]**.
     1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and tap **[!UICONTROL Create]**.
 
@@ -53,9 +53,9 @@ To author a web channel template Complete the following steps:
 
 1. Navigate to the appropriate template folder and create a web template.
 
-    1. Navigate to the appropriate template folder by selecting **[!UICONTROL Tools]** > **[!UICONTROL Templates > Folder]**.
+    1. Navigate to the appropriate template folder by selecting **[!UICONTROL Tools]** > **[!UICONTROL Templates]** &gt; [Folder].
     1. Tap **[!UICONTROL Create]**.
-    1. Select **[!UICONTROL Interactive Communication - Web Channel]** and tap **[!UICONTROL Next]**.
+    1. Select **[!UICONTROL Interactive Communication - Web Channel]**and tap **[!UICONTROL Next]**.
     1. Enter a Template title and description and then tap **[!UICONTROL Create]**.
 
        The template is created and a dialog appears.
@@ -64,13 +64,13 @@ To author a web channel template Complete the following steps:
 
        The Template Editor appears.
 
-       ![webchanneltemplate](assets/webchanneltemplate.png)
+       ![](assets/webchanneltemplate.png)
 
        When creating or editing a template, there are various aspects that a Template Author can define. Creating or editing a template is similar to page authoring. For more information, see Editing Templates - Template Authors in [Creating Page Templates](/help/sites-authoring/templates.md).
 
 1. To allow usage of this template for Interactive Communication creation, enable the template.
 
-    1. Tap **[!UICONTROL Tools]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Templates]**.
+    1. Tap **[!UICONTROL Tools]** ![](assets/tools.png) > **[!UICONTROL Templates]**.
     1. Navigate to the appropriate template, select it, and tap **[!UICONTROL Enable]** and in the alert message, tap **[!UICONTROL Enable]**.
 
        The template is enabled and its status is displayed as Enabled. Now you can proceed to creating an Interactive Communication where you can use the newly created web channel template.
@@ -79,5 +79,5 @@ To author a web channel template Complete the following steps:
 
 While authoring an Interactive Communication, authors can select this option to create the web channel in sync with the print channel. Using print channel as master for web channel ensures the content, inheritance, and data binding of the web channel is derived from the print channel and the changes made in the print channel could be reflected in the web channel. The Interactive Communication authors are, however, allowed to break the inheritance for specific components in the web channel, as required.
 
-![printweb_2-2](assets/printweb_2-2.png)
+![Print channel as master](assets/create_ic_print_master_new.png) ![Web channel with print channel as master](assets/create_ic_print_master_web_new.png)
 

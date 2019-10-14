@@ -3,12 +3,14 @@ title: Custom Standalone Install
 seo-title: Custom Standalone Install
 description: Learn about the options available when installing a standalone AEM instance.
 seo-description: Learn about the options available when installing a standalone AEM instance.
-uuid: e1cb45c4-3b2b-4951-8f67-213072e825b3
+uuid: 83fc49d8-2c44-4bb2-988a-f29475066efc
 contentOwner: Tyler Rushton
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: c9e51008-6009-49a2-9c74-1c610cef2e7f
+discoiquuid: deae8ecb-a2ee-4442-97ca-98bfd1b85738
+docset: aem65
+
 ---
 
 # Custom Standalone Install{#custom-standalone-install}
@@ -17,7 +19,7 @@ This section describes the options available when installing a standalone AEM in
 
 ## Changing the Port Number by Renaming the File {#changing-the-port-number-by-renaming-the-file}
 
-The default port for AEM is 4502. If that port is not available or already in use, Quickstart automatically configures itself to use the first available port number as follows: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<random>`.
+The default port for AEM is 4502. If that port is not available or already in use, Quickstart automatically configures itself to use the first available port number as follows: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<*random*>`.
 
 You can also set the port number by renaming the quickstart jar file, so that the file name includes the port number; for example, `cq5-publish-p4503.jar` or `cq5-author-p6754.jar`.
 
@@ -40,6 +42,28 @@ There are various rules to be followed when renaming the quickstart jar file:
 >[!NOTE]
 >
 >You can also change the port number by using the `-port` option in the start command.
+
+### Java 11 Considerations {#java-considerations}
+
+If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches will need to be added to your command line when starting AEM.
+
+* The following - `-add-opens` switches need to be added in order to prevent related reflection access WARNING messages in the `stdout.log`
+
+```shell
+--add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
+```
+
+* Additionally, you need to make use of the `-XX:+UseParallelGC` switch in order to mitigate any potential performance issues.
+
+Below is a sample of how the additional JVM parameters should look like when starting AEM on Java 11:
+
+```shell
+-XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
+```
+
+Finally, if you are running an instance upgraded from AEM 6.3, make sure the following property is set to **true** under `sling.properties`:
+
+* `felix.bootdelegation.implicit`
 
 ## Run Modes {#run-modes}
 
@@ -97,15 +121,15 @@ To install and start AEM as a Windows service:
 
     * In the Services control panel, click cq5 and click Start.
 
-   ![chlimage_1-71](assets/chlimage_1-71.png)
+   ![](assets/chlimage_1-11.png)
 
     * In the command line, type net start cq5.
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![](assets/chlimage_1-12.png)
 
-1. Windows indicates that the service is running. AEM starts and the prunsrv executable appears in Task Manager. In your web browser, navigate to AEM, for example, `http://localhost:4502` to start using AEM.
+1. Windows indicates that the service is running. AEM starts and the prunsrv executable appears in Task Manager. In your web browser, navigate to AEM, for example, `https://localhost:4502` to start using AEM.
 
-   ![chlimage_1-73](assets/chlimage_1-73.png)
+   ![](assets/chlimage_1-13.png)
 
 >[!NOTE]
 >
@@ -121,9 +145,9 @@ To uninstall the service, either click **Stop** in the **Services** control pane
 
 The default location of the temporary folder of the java machine is `/tmp`. AEM uses this folder too, for example when building packages.
 
-If you want to change the location of the temporary folder (for example, if you need a directory with more free space) then define a `<new-tmp-path>` by adding the JVM parameter:
+If you want to change the location of the temporary folder (for example, if you need a directory with more free space) then define a * `<new-tmp-path>`* by adding the JVM parameter:
 
-`-Djava.io.tmpdir="/<new-tmp-path>"`
+`-Djava.io.tmpdir="/<*new-tmp-path*>"`
 
 to either:
 
@@ -134,7 +158,7 @@ to either:
 
 Further options and renaming conventions are described in the Quickstart help file, which is available through the -help option. To access the help, type:
 
-* `java -jar cq5-<version>.jar -help`
+* `java -jar cq5-<*version*>.jar -help`
 
 ```shell
 Loading quickstart properties: default
@@ -224,7 +248,7 @@ Log files
 
 ## Installing AEM in the Amazon EC2 environment {#installing-aem-in-the-amazon-ec-environment}
 
-When installing AEM on an Amazon Elastic Compute Cloud (EC2) instance, if you install both author and publish on the EC2 instance, the Author instance is installed correctly by following the procedure on how to [install an instance of AEM](/help/sites-deploying/custom-standalone-install.md); however, the Publish instance becomes Author.
+When installing AEM on an Amazon Elastic Compute Cloud (EC2) instance, if you install both author and publish on the EC2 instance, the Author instance is installed correctly by following the procedure on [Installing Instances of AEM Manager](#installinginstancesofaemmanager); however, the Publish instance becomes Author.
 
 Before installing the Publish instance on your EC2 environment, do the following:
 
@@ -274,20 +298,18 @@ Before installing the Publish instance on your EC2 environment, do the following
 
 The following links can be used to verify that your installation is operational (all examples are on the basis that the instance is running on port 8080 of the localhost, that CRX is installed under /crx and Launchpad under /):
 
-* `http://localhost:8080/crx/de`
-
+* `https://localhost:8080/crx/de`
   The CRXDE Lite console.
 
-* `http://localhost:8080/system/console`
-
+* `https://localhost:8080/system/console`
   The Web Console.
 
 ## Actions after Installation {#actions-after-installation}
 
 Although there are many possibilities to configure AEM WCM, certain actions should be taken, or at least reviewed immediately after installation:
 
-* Consult the [Security Checklist](/help/sites-administering/security-checklist.md) for tasks required to ensure that your system remains secure.
-* Review the list of default users and groups which are installed with AEM WCM. Check whether you want to take action on any other accounts - see [Security and User Administration](/help/sites-administering/security.md) for further details.
+* Consult the [Security Checklist](/help/sites-administering//security-checklist.md) for tasks required to ensure that your system remains secure.
+* Review the list of default users and groups which are installed with AEM WCM. Check whether you want to take action on any other accounts - see [Security and User Administration](/help/sites-administering//security.md) for further details.
 
 ## Accessing CRXDE Lite and the Web Console {#accessing-crxde-lite-and-the-web-console}
 
@@ -305,11 +327,11 @@ To open CRXDE Lite you can select **CRXDE Lite** from the welcome screen or use 
 ```
 
 For example:
-`http://localhost:4502/crx/de/index.jsp` ``
+`https://localhost:4502/crx/de/index.jsp` ``
 
-![installcq_crxdelite](assets/installcq_crxdelite.png)
+![](assets/installcq_crxdelite.png)
 
-### Accessing the Web Console {#accessing-the-web-console}
+#### Accessing the Web Console {#accessing-the-web-console}
 
 To access the Adobe CQ Web console you can select **OSGi Console** from the welcome screen or use your browser to navigate to
 
@@ -318,11 +340,11 @@ To access the Adobe CQ Web console you can select **OSGi Console** from the welc
 ```
 
 For example:
-`http://localhost:4502/system/console`
+`https://localhost:4502/system/console`
 or for the Bundles page
-`http://localhost:4502/system/console/bundles`
+`https://localhost:4502/system/console/bundles`
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![](assets/chlimage_1-14.png)
 
 See [OSGi Configuration with the Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) for further details.
 

@@ -1,23 +1,25 @@
 ---
 title: Integrating AEM forms workspace with Microsoft Office SharePoint Server
 seo-title: Integrating AEM forms workspace with Microsoft Office SharePoint Server
-description: You can integrate AEM forms workspace with Microsoft Office SharePoint Server.
-seo-description: You can integrate AEM forms workspace with Microsoft Office SharePoint Server.
-uuid: d43396d4-117f-47ea-91e4-10ee96107bc8
+description: You can integrate AEM forms workspace with Microsoft Office SharePoint Server. 
+seo-description: You can integrate AEM forms workspace with Microsoft Office SharePoint Server. 
+uuid: 69d51bdf-729f-4eea-8fae-1e2b8aacaae6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 1bada670-3e0e-40f4-b9be-8b090df910be
+discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
+docset: aem65
+
 ---
 
-# Integrating AEM forms workspace with Microsoft Office SharePoint Server {#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
+# Integrating AEM forms workspace with Microsoft Office SharePoint Server{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
-**- Requirements**
-
-**Prerequisite knowledge**
+**- Requirements** 
+  
+**Prerequisite knowledge** 
 Before you can add AEM Forms Workspace to SharePoint Server, you must have access to SharePoint Server with the appropriate privileges, and you must know the URL to access Workspace. The steps below assume that you are knowledgeable with SharePoint Server. For more information about Web Parts in SharePoint Server, see Web Parts in Windows SharePoint Services.
 
-**User level**
+**User level** 
 Beginning
 
 You can use AEM Forms Workspace as a Web Part in Microsoft Office SharePoint Server( For example, Microsoft Office SharePoint Server 2007). Users can access AEM Forms Workspace by connecting to your SharePoint Server using a web browser to provide a unified experience. In this article, you learn the basic steps to display AEM Forms Workspace as a Web Part in Microsoft Office SharePoint Server. You can perform the steps described in this article to provide a unified experience so that users connecting to your SharePoint server can access AEM Forms Workspace from the same port.
@@ -37,7 +39,7 @@ Perform the following steps to integrate AEM Forms Workspace into a Web Part:
    >44299 is the default port number for the SharePoint server. The port number depends on your installation of SharePoint Server.
 
 1. On the upper-right side of the web page, click **Site Actions** and select **Edit Page**.
-1. Click the **Add a Web Part** button.
+1. Click the **Add a Web Part** button. 
 1. In the Add Web Parts - web page Dialog dialog box, under Miscellaneous, select **Page Viewer Web Part** and then click **Add**.
 1. In the Page Viewer Web Part box, click **edit** and select **Modify Shared Web Part**.
 
@@ -47,7 +49,7 @@ Perform the following steps to integrate AEM Forms Workspace into a Web Part:
 
    ![Page Viewer Web Part box in Microsoft Office SharePoint server.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
 
-   **Figure:** *The Page Viewer Web Part box in Microsoft Office SharePoint server.*
+   Figure 1. – The Page Viewer Web Part box in Microsoft Office SharePoint server.
 
 1. On the Page Viewer page, perform the following tasks:
 
@@ -65,5 +67,5 @@ After you complete the above steps, your SharePoint site looks similar to the fo
 
 ![AEM Forms Workspace integrated with Microsoft Office SharePoint Server](assets/aem-forms-workspace.jpg)
 
-**Figure:** *AEM Forms Workspace integrated with Microsoft Office SharePoint Server*
+Figure 2 - AEM Forms Workspace integrated with Microsoft Office SharePoint Server
 

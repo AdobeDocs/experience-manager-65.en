@@ -3,12 +3,14 @@ title: Components for Page Authoring
 seo-title: Components for Page Authoring
 description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
 seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
-uuid: 6e4db6b1-af52-4b54-88a5-b82634f264fa
+uuid: c353073d-d4d1-4529-b8bd-d0ca302cc9a0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
+discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
+docset: aem65
+
 ---
 
 # Components for Page Authoring{#components-for-page-authoring}
@@ -41,7 +43,7 @@ The General components are the basic components that you use to create content.
 
 You can define a link with title and description.
 
-![](do-not-localize/chlimage_1-4.png)
+![](do-not-localize/chlimage_1-2.png)
 
 ### Adaptive Image {#adaptive-image}
 
@@ -61,11 +63,11 @@ You can use image files of the following file name extensions with the Adaptive 
 * .jpg
 * .jpeg
 * .png
-* .gif &ast;&ast;
+* .gif &#42;&#42;
 
 >[!CAUTION]
 >
->&ast;&ast; Animated .gif files are not supported in AEM for adaptive renditions.
+>&#42;&#42; Animated .gif files are not supported in AEM for adaptive renditions.
 
 #### Images Sizes and Quality {#images-sizes-and-quality}
 
@@ -93,37 +95,29 @@ The dialog allows you to edit properties for your instance of the Adaptive Image
 * **Image**
 
     * **Image**
-
       Drag an image from the content finder or click to open a browse window where you can load an image. After the image is loaded, you can crop the image, rotate it, or delete it. To zoom in and out of the image, use the slide bar beneath the image (above the OK and Cancel buttons)
 
     * **Crop**
-
       Crop an image. Drag the border to crop the image.
 
     * **Rotate**
-
       Click Rotate repeatedly until the image is rotated as desired.
 
     * **Clear**
-
       Remove the current image.
 
 * **Advanced**
 
     * **Title**
-
       The Adaptive Image component does not use this property.
 
     * **Alt Text**
-
       The alternate text to use for the image.
 
     * **Link To**
-
       The Adaptive Image component does not use this property.
 
     * **Description**
-
       The Adaptive Image component does not use this property.
 
 #### Extending the Adaptive Image Component {#extending-the-adaptive-image-component}
@@ -149,42 +143,33 @@ These are available in two tabs:
   Here you specify how the carousel operates:
 
     * Play Speed
-
       The time in milliseconds before the next slide is shown.
     * Transition Time
-
       Time in milliseconds for the transition between two slides.
     * Controls Style
-
       Various options are available from a pulldown menu; for example, Prev / Next Buttons, Top-Right Switches.
 
-* **List**
+* **List **
   Here you specify how pages are included in your Carousel:
 
     * **Build list using**
-
       There are several ways to build a page list - Child Pages, Fixed List, Search, or Advanced Search (all described below).
-
       Note that no matter which method you choose, the pages you include in your list should each already have an image associated with the page, it is this image that will be displayed in the Carousel. If there is no image for a given page under that page's Page Properties, you should associate an image with the page before beginning, as otherwise the Carousel will display a blank (or mostly blank) page. See [Editing Page Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
-
       Depending on the item you choose a new panel will appear:
 
         * **Options for Child Pages**
 
             * **Parent Page**
-
               Specify a path either manually or using the selector. Leave empty to use the current page as parent.
 
         * **Options for Fixed List**
 
             * **Pages**
-
               Select a list of pages. Use `+` to add more entries and the up/down buttons to adjust the order.
 
         * **Options for Search**
 
             * **Start in**
-
               Enter a starting path, either manually or using the selector.
 
             * **Search query**
@@ -193,17 +178,13 @@ These are available in two tabs:
         * **Options for Advanced Search**
 
             * **Querybuilder predicate notation**
-
               You can enter a search query using Querybuilder predicate notation. For example, you can enter "fulltext=Marketing" to have all pages with "Marketing" in their content show up in the Carousel.
-
               See [QueryBuilder API](/help/sites-developing/querybuilder-api.md) for full discussion of query expressions and further examples.
 
     * **Order by**
-
       Select `jcr:title`, `jcr:created`, `cq:lastModified`, or `cq:template` from the dropdown menu.
 
     * **Limit**
-
       The maximum number of items you would like to use in the Carousel; this is optional.
 
 >[!NOTE]
@@ -217,30 +198,25 @@ The Chart component lets you add a bar, line, or pie chart. AEM creates a chart 
 * **Data**
 
     * **Chart Data**
-
       Enter your chart data using the CSV format; the Comma Separated Values format uses commas (“,”) as the field separator.
 
 * **Advanced**
 
     * **Chart Type**
-
       Select from Pie Chart, Line Chart, and Bar Chart.
 
     * **Alternative text**
-
       Alternative text that displays instead of the chart.
 
     * **Width**
-
       Width of the chart in pixels.
 
     * **Height**
-
       Height of the chart in pixels.
 
 The following show an example of chart data followed by the resulting Bar chart:
 
-![chlimage_1-26](assets/chlimage_1-26.png) ![dc_chart_use](assets/dc_chart_use.png)
+![](assets/chlimage_1-6.png) ![](assets/dc_chart_use.png)
 
 >[!NOTE]
 >
@@ -250,7 +226,7 @@ The following show an example of chart data followed by the resulting Bar chart:
 
 >[!CAUTION]
 >
->The full functionality of Content Fragment Management is only available with the touch-enabled UI.
+>The full functionality of Content Fragment Management is only available with the touch-optimized UI.
 >
 >The Content Fragment component can be seen in the classic UI sidekick, but further functions are not available.
 
@@ -267,16 +243,14 @@ The Download component creates a link on the selected web-page to download a spe
 * **Download**
 
     * **Description**
-
       A short description displayed with the download link.
 
     * **File**
-
       File available for download on the resulting web-page. Drag an asset from the content finder or click the area to upload the file to be available for download.
 
 The following example shows the Download component in Geometrixx:
 
-![dc_download_use](assets/dc_download_use.png)
+![](assets/dc_download_use.png)
 
 ### External {#external}
 
@@ -285,7 +259,6 @@ The external application integration component (**External**) enables you to emb
 * **External**
 
     * **Target application**
-
       Specify the URL of the web application to be integrated; for example:
 
       ```
@@ -294,20 +267,18 @@ The external application integration component (**External**) enables you to emb
       ```
 
     * **Pass parameters**
-
       Check the box for parameters to be passed to the application when required.
 
-    * **Width and Height**
-
-      Define the size of the iframe
+    * **Width and Height
+      **Define the size of the iframe
 
 The external application is integrated into the paragraph system of the AEM page; for example, when using a Target application of `https://en.wikipedia.org/wiki/Main_Page`:
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![](assets/chlimage_1-7.png)
 
 >[!NOTE]
 >
->Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](/help/sites-administering/aem-as-portal.md).
+>Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](/help/sites-administering//aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -357,13 +328,14 @@ You can upload an image, then edit and manipulate it (e.g. crop, rotate, add lin
 
 You can either drag and drop an image from the [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) directly onto the component or its Edit dialog. You can also double-click in the central area of the Edit dialog to browse your local file system and upload an image. The two tabs of the Edit dialog also control all definitions and manipulation of the image:
 
-![dc_image](assets/dc_image.png)
+![](assets/dc_image.png)
 
 >[!NOTE]
 >
 >The progress of the upload cannot be monitored with Internet Explorer.
 >
 >Internet Explorer users need to upload the image and click **Ok** then re-open the image to see the uploaded file in the preview and to be able to perform modifications (i.e. crop).
+
 >
 >See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
@@ -411,7 +383,7 @@ When an image is loaded, you can configure the following:
 
 The final image (with **Title** and **Description**) may be shown as:
 
-![chlimage_1-28](assets/chlimage_1-28.png)
+![](assets/chlimage_1-8.png)
 
 ### Layout Container {#layout-container}
 
@@ -434,22 +406,35 @@ The List component allows you to configure search criteria for displaying a list
         * **Options for Child Pages**
 
             * **Children of** (Parent Page)
-
               Specify a path either manually or using the selector. Leave empty to use the current page as parent.
 
         * **Options for Fixed List**
 
-            * **Pages** - Select a list of pages. Use + to add more entries and the up/down buttons to adjust the order.
+            * **Pages**
+
+              Select a list of pages. Use + to add more entries and the up/down buttons to adjust the order.
 
         * **Options for Search**
 
-            * **Start in** - Enter a starting path, either manually or using the selector. Search query You can enter a plain text search query.
+            * **Start in**
+
+              Enter a starting path, either manually or using the selector.
+
+            * **Search query**
+
+              You can enter a plain text search query.
 
         * **Options for Advanced Search**
 
-            * **Querybuilder predicate notation** - You can enter a search query using Querybuilder predicate notation. For example, you can enter "fulltext=Marketing" to have all pages with "Marketing" in their content show up in the Carousel. See [QueryBuilder API](/help/sites-developing/querybuilder-api.md) for full discussion of query expressions and further examples.
+            * **Querybuilder predicate notation**
 
-        * **Tags** - Specify the **Parent page**, **Tags/Keywords** and your required match criteria.
+              You can enter a search query using Querybuilder predicate notation. For example, you can enter "fulltext=Marketing" to have all pages with "Marketing" in their content show up in the Carousel.
+
+              See [QueryBuilder API](/help/sites-developing/querybuilder-api.md) for full discussion of query expressions and further examples.
+
+        * **Tags**
+
+          Specify the **Parent page**, **Tags/Keywords** and your required match criteria.
 
     * **Display as**
 
@@ -473,13 +458,13 @@ The List component allows you to configure search criteria for displaying a list
 
 The following example shows a **List** component the way it may display a list of child pages (the design is controlled by a site design's custom CSS definitions).
 
-![dc_list_use](assets/dc_list_use.png)
+![](assets/dc_list_use.png)
 
 ### Login {#login}
 
 These provides the Username and Password fields.
 
-![chlimage_1-29](assets/chlimage_1-29.png)
+![](assets/chlimage_1-9.png)
 
 You can configure:
 
@@ -527,7 +512,7 @@ You can configure:
 
       Select from the selection provided.
 
-![chlimage_1-30](assets/chlimage_1-30.png)
+![](assets/chlimage_1-10.png)
 
 ### Reference {#reference}
 
@@ -557,9 +542,9 @@ For example:
 
 Once configured the content will appear exactly as on the source page. The fact that it is a reference is only seen when you open the component for editing:
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![](assets/chlimage_1-11.png)
 
-### Search {#search-features}
+### Search {#search}
 
 The Search component adds search capability to your page.
 
@@ -590,7 +575,6 @@ You can configure:
     * **Spellcheck Text**
 
       If someone enters a similar term, this text is displayed before the term.
-
       For example, if you type geometrixxe, the system displays "Did you mean? geometrixx".
 
     * **Similar Pages Text**
@@ -619,23 +603,24 @@ You can configure:
 
 The following example shows the Search component after a search for the word *geometrixx* from the root directory of a standard installation. This also illustrates the pagination of results:
 
-![dc_search_use](assets/dc_search_use.png)
+![](assets/dc_search_use.png)
 
 The following example shows a search term that is misspelled and not available:
 
-![dc_search_usenotfound](assets/dc_search_usenotfound.png)
+![](assets/dc_search_usenotfound.png)
 
 ### Sitemap {#sitemap}
 
 An automatic sitemap listing, which (with the default settings) lists all pages (as active links) in the current website. For example, an extract shows:
 
-![dc_sitemap_use](assets/dc_sitemap_use.png)
+![](assets/dc_sitemap_use.png)
 
 If required you can configure:
 
 * **Sitemap**
 
     * **Root Path**
+
       Path from where the listing is to start.
 
 ### Slideshow {#slideshow}
@@ -662,13 +647,13 @@ You can configure:
 
 The slideshow component then repeatedly displays each in sequence, for a short period of time, before fading through to the next slide:
 
-![dc_slideshow_use](assets/dc_slideshow_use.png)
+![](assets/dc_slideshow_use.png)
 
 ### Table {#table}
 
 >[!NOTE]
 >
->The **Table** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the **[Text](#text)** component.
+>The **Table** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the ** [Text](#text)** component.
 >
 >It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
 
@@ -677,30 +662,27 @@ The **Table** component is preconfigured to let you construct, fill and format a
 * from scratch
 * copying and pasting a spreadsheet or a table from an external editor (such as Excel, OpenOffice, Notepad, etc).
 
-![dc_table](assets/dc_table.png)
+![](assets/dc_table.png)
 
 The following screenshot shows an example of the table component; the design is determined by the site-specific CSS:
 
-![dc_table_use](assets/dc_table_use.png)
+![](assets/dc_table_use.png)
 
 ### Tag Cloud {#tag-cloud}
 
 A tag cloud shows a graphically presented selection of the tags applied to content within your website:
 
-![dc_tagclouduse](assets/dc_tagclouduse.png)
+![](assets/dc_tagclouduse.png)
 
 When configuring the Tag Cloud component, you can specify:
 
 * **Tags to Display**
-
   Where the tags to be displayed are collected from. Select from a page, a page with all children or all tags.
 
 * **Page**
-
   Select the page to be referenced.
 
 * **No links on tags**
-
   Whether the tags displayed should act as links.
 
 For more information about applying tags, visit [Using Tags](/help/sites-classic-ui-authoring/classic-feature-tags.md).
@@ -709,13 +691,13 @@ For more information about applying tags, visit [Using Tags](/help/sites-classic
 
 >[!NOTE]
 >
->The **Text** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the **[Table](#table)** component.
+>The **Text** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the ** [Table](#table)** component.
 >
 >It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
 
 The Text component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). A selection of icons allow you to format your text, including font characteristics, alignment, links, lists and indentation.
 
-![dc_text](assets/dc_text.png)
+![](assets/dc_text.png)
 
 When you open the **Styles** tab of the **Edit** dialog you can also set:
 
@@ -724,7 +706,7 @@ When you open the **Styles** tab of the **Edit** dialog you can also set:
 
 The formatted text will then be shown on the page; the actual design will depend on the site CSS:
 
-![dc_text_use](assets/dc_text_use.png)
+![](assets/dc_text_use.png)
 
 For more detailed information about the Text component and the functionality provided by the Rich Text editor, see the [Rich Text Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) page.
 
@@ -736,7 +718,7 @@ In addition to the dialog based Rich Text editing mode, AEM also provides [Inpla
 
 The Text & Image component adds a text block and an image. You can also add and edit text and images separately. See the [Text](#text) and [Image](#image) components for details.
 
-![chlimage_1-32](assets/chlimage_1-32.png) ![chlimage_1-33](assets/chlimage_1-33.png)
+![](assets/chlimage_1-12.png) ![](assets/chlimage_1-13.png)
 
 You can configure:
 
@@ -774,7 +756,7 @@ You can configure:
 
 The following example shows a Text Image Component displaying the image left-aligned:
 
-![dc_textimage_use](assets/dc_textimage_use.png)
+![](assets/dc_textimage_use.png)
 
 ### Title {#title}
 
@@ -799,7 +781,7 @@ You can configure:
 
 The following example shows a **Title** component being displayed; the design is determined by the site-specific CSS.
 
-![dc_title_use](assets/dc_title_use.png)
+![](assets/dc_title_use.png)
 
 ### Video {#video}
 
@@ -811,8 +793,13 @@ After placing an instance of the component on your page you can configure:
 
 * Video
 
-    * **Video asset** - Upload or drop your video asset.
-    * **Size** - The video's native size (width x height in pixels) will appear in the boxes next to Size (see above). Manually enter width and height dimensions here if you wish to override the video's native dimensions. Click **OK** to dismiss the dialog.
+    * **Video asset**
+
+      Upload or drop your video asset.
+
+    * **Size**
+
+      The video's native size (width x height in pixels) will appear in the boxes next to Size (see above). Manually enter width and height dimensions here if you wish to override the video's native dimensions. Click **OK** to dismiss the dialog.
 
 >[!NOTE]
 >
@@ -829,7 +816,7 @@ Columns are a mechanism to control the layout of content in AEM. In a standard i
 
 The following example shows the 2 Columns and 3 Columns components in use. You can use the placeholders for new components:
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![](assets/chlimage_1-14.png)
 
 ### 2 Columns {#columns-1}
 
@@ -855,7 +842,7 @@ Form components are used to create forms for visitors to submit input. Forms and
 
 >[!NOTE]
 >
->See [AEM Forms Help](/help/forms/home.md) for information about AEM Forms.
+>See [AEM Forms Help](/forms/user-guide.md) for information about AEM Forms.
 
 Forms are built up from several different components:
 
@@ -871,9 +858,9 @@ Forms are built up from several different components:
 
   Profile components relate to visitor profiles used for social collaboration and other areas where visitor personalization is required.
 
-The following shows an example form; it is comprised of the **Form** component (start and end), with two **Form Text** fields used for input, a **General Text** field used for the lead-in text and a **Submit** button.
+The following shows an example form; it is comprised of the **Form** component (start and end), with two **Form** **Text** fields used for input, a **General** **Text** field used for the lead-in text and a **Submit** button.
 
-![dc_form](assets/dc_form.png)
+![](assets/dc_form.png)
 
 >[!NOTE]
 >
@@ -912,7 +899,6 @@ These tabs provide you with the necessary parameters; these can depend on the in
     * **Element Name**
 
       Name of the form element. This indicates where in the repository the data is stored.
-
       This is a required field and should only contain the following characters:
 
         * alphanumeric characters
@@ -942,9 +928,16 @@ These tabs provide you with the necessary parameters; these can depend on the in
 
       This is dependent on the form component type, but provides one or more click boxes to indicate that this field, or certain parts of this field, is/are required.
 
-    * **Required Message** - A message to inform users that this field is required; a required field will also be flagged with and asterisk.
-    * **Constraint** - The constraints available for selection are dependent on the form component type.
+    * **Required Message**
+
+      A message to inform users that this field is required; a required field will also be flagged with and asterisk.
+
+    * **Constraint**
+
+      The constraints available for selection are dependent on the form component type.
+
     * **Constraint Message**
+
       A message to inform users what is required.
 
 * **Styling**
@@ -963,7 +956,7 @@ These tabs provide you with the necessary parameters; these can depend on the in
 
 The Form component defines both the start and end of a form using the **Form Start** and **Form End** elements. These are always paired to ensure that the form is correctly defined.
 
-![dc_form-1](assets/dc_form-1.png)
+![](assets/dc_form-1.png)
 
 In between the start and end of a form, you can add form components that define the actual input fields for users.
 
@@ -974,8 +967,11 @@ This component is needed to define the start of a new form on a page. You can co
 * **Form**
 
     * **Thank You Page**
+
       The page to be referenced to thank visitors for providing their input. If left blank, the form re-displays after submission.
+
     * **Start Workflow**
+
       Determines which workflow is triggered once a form is submitted.
 
 * **Advanced**
@@ -1017,9 +1013,7 @@ This component is needed to define the start of a new form on a page. You can co
     * **Load Path**
 
       The path to node properties used to load predefined values into the form fields.
-
       This is an optional field that specifies the path to a node in the repository. When this node has properties that match the field names, then the appropriate fields on the form are preloaded with the value of those properties. If no match exists, then the field contains the default value.
-
       Using **Load Path** you can preload the form with values in the required fields. See [Preloading Form Values](/help/sites-developing/developing-forms.md#preloading-form-values).
 
     * **Client Validation**
@@ -1032,11 +1026,11 @@ This component is needed to define the start of a new form on a page. You can co
 
         * A script for client validation:
 
-          `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+          `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
 
         * A script for validation on the server side:
 
-          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+          `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
 
     * **Action Configuration**
 
@@ -1044,15 +1038,13 @@ This component is needed to define the start of a new form on a page. You can co
 
         * **Account Request**
 
-            * **Create Account Page**
+          * **Create Account Page**
               The page used when creating a new account.
 
         * **Create Content**
 
             * Content Path
-
               The content path for any content that the form dumps. Enter a path that ends with a slash `/`. The slash means that for each form port, a new node is created at the given location; for example:
-
               `/forms/feedback/`
 
             * **Type**
@@ -1076,7 +1068,6 @@ This component is needed to define the start of a new form on a page. You can co
         * **Create Lead**
 
             * **Lead will be added to this list**
-
               Specify the required lead list.
 
         * **Create and Update Account**
@@ -1130,7 +1121,6 @@ This component is needed to define the start of a new form on a page. You can co
             * **Content Path**
 
               The content path for any content that the form dumps. Enter a path that ends with a slash `/`. The slash means that for each form port, a new node is created at the given location; for example:
-
               `/forms/feedback/`
 
             * **View Data...**
@@ -1181,13 +1171,13 @@ This marks the end of the form. You can configure:
 
 This allows the user to input an account name:
 
-![dc_form_accountname](assets/dc_form_accountname.png)
+![](assets/dc_form_accountname.png)
 
 ### Address {#address}
 
 This allows you to add an international address field with the following format:
 
-![dc_form_addressfield](assets/dc_form_addressfield.png)
+![](assets/dc_form_addressfield.png)
 
 The component is configured for immediate use, but you can change the configuration if required. For example, constraints can be added for the individual elements of the address. Leaving fields empty will use default settings.
 
@@ -1195,7 +1185,7 @@ The component is configured for immediate use, but you can change the configurat
 
 The Captcha component requires the user to type in an alphanumeric string as displayed on screen. The string changes with each refresh.
 
-![dc_form_captcha](assets/dc_form_captcha.png)
+![](assets/dc_form_captcha.png)
 
 You can configure various parameters for this component, including a message to be shown when the captcha string is invalid.
 
@@ -1203,7 +1193,7 @@ You can configure various parameters for this component, including a message to 
 
 A checkbox allows you to build a list of one of more checkboxes, several of which may be selected at the same time.
 
-![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
+![](assets/dc_form_checkboxgroupuse.png)
 
 You can specify various parameters including a title, description and element name. Using the + and - buttons you can add or remove items, then position them with the up and down arrows.
 
@@ -1217,13 +1207,13 @@ You can specify various parameters including a title, description and element na
 
 This allows you to provide the fields needed for entering credit card details. You can configure it to specify the types of card accepted and the information required (for example, security code).
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![](assets/chlimage_1-15.png)
 
 ### Dropdown List {#dropdown-list}
 
 A drop down list can be configured to provide your use with a range of values for selection:
 
-![dc_form_dropdownlistuse](assets/dc_form_dropdownlistuse.png)
+![](assets/dc_form_dropdownlistuse.png)
 
 You can specify a title and items to appear in the list. Using the + and - buttons you can add or remove the list items, then position them with the Up and Down buttons. You can specify whether the users are allowed to select several items from the list and any items that should be automatically selected the first time they open the list (initial values).
 
@@ -1237,7 +1227,7 @@ You can specify a title and items to appear in the list. Using the + and - butto
 
 The file upload component provides the user with a mechanism for selecting and uploading a file.
 
-![dc_form_fileupload](assets/dc_form_fileupload.png)
+![](assets/dc_form_fileupload.png)
 
 >[!NOTE]
 >
@@ -1247,7 +1237,7 @@ The file upload component provides the user with a mechanism for selecting and u
 
 This component allows you to create a hidden field. These can be used for various purposes; for example, when you need to perform an action after submitting the form, or when hidden data is required in post processing.
 
-![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
+![](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
 >
@@ -1259,19 +1249,19 @@ This component allows you to create a hidden field. These can be used for variou
 
 An image button allows you to create a button with your own image and text:
 
-![dc_form_imagebutton](assets/dc_form_imagebutton.png)
+![](assets/dc_form_imagebutton.png)
 
 ### Image Upload {#image-upload}
 
 The image upload component provides the user with a mechanism for selecting and uploading an image file.
 
-![dc_form_imageupload](assets/dc_form_imageupload.png)
+![](assets/dc_form_imageupload.png)
 
 ### Link Field {#link-field}
 
 The link field allows the user to specify a URL:
 
-![dc_form_link](assets/dc_form_link.png)
+![](assets/dc_form_link.png)
 
 Most commonly used for the calendar event form, where it is used for the URL/link field of an event.
 
@@ -1279,7 +1269,7 @@ Most commonly used for the calendar event form, where it is used for the URL/lin
 
 This is used to allow the user to input their password:
 
-![dc_form_password](assets/dc_form_password.png)
+![](assets/dc_form_password.png)
 
 ### Password Reset {#password-reset}
 
@@ -1290,7 +1280,7 @@ This component provides your user with two fields for:
 
 With default settings the component will appear as:
 
-![dc_password_reset](assets/dc_password_reset.png)
+![](assets/dc_password_reset.png)
 
 ### Radio Group {#radio-group}
 
@@ -1298,7 +1288,7 @@ A radio group provides you with a list of one of more radio checkboxes, only one
 
 You can specify the element name together with a title and description Using the + and - buttons you can add or remove items, position them with the up and down arrows and specify a default value if required:
 
-![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
+![](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
 >
@@ -1310,17 +1300,17 @@ You can specify the element name together with a title and description Using the
 
 This component allows you to create a submit button, with either the default text:
 
-![dc_form_submitbutton](assets/dc_form_submitbutton.png)
+![](assets/dc_form_submitbutton.png)
 
 Or with your own text:
 
-![dc_form_submitbuttonuse](assets/dc_form_submitbuttonuse.png)
+![](assets/dc_form_submitbuttonuse.png)
 
 ### Tags Field {#tags-field}
 
 This field allows you to select tags:
 
-![dc_form_tags_use](assets/dc_form_tags_use.png)
+![](assets/dc_form_tags_use.png)
 
 You can specify various parameters, including the namespaces can be used using the specialized tab:
 
@@ -1344,11 +1334,11 @@ You can specify various parameters, including the namespaces can be used using t
 
 The standard text field can be configured to your required size and with with your own lead in message:
 
-![dc_form_text](assets/dc_form_text.png)
+![](assets/dc_form_text.png)
 
 ### Workflow Submit Button(s) {#workflow-submit-button-s}
 
 This allows you to create a Submit button for use in a workflow.
 
-![chlimage_1-36](assets/chlimage_1-36.png)
+![](assets/chlimage_1-16.png)
 

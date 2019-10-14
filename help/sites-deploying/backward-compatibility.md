@@ -3,12 +3,14 @@ title: Backward Compatibility in AEM 6.5
 seo-title: Backward Compatibility in AEM 6.5
 description: Learn how to keep your apps and configurations compatible with AEM 6.5
 seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
-uuid: 2fa8525e-7f3b-4096-ac85-01c2c76bc9ac
+uuid: 81dc2771-f59b-4b24-8932-9e938cba05e0
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
+discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
+docset: aem65
+
 ---
 
 # Backward Compatibility in AEM 6.5{#backward-compatibility-in-aem}
@@ -17,21 +19,21 @@ discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
 
 >[!NOTE]
 >
->For a list of content and configuration changes that are not under the scope the Compatibility Package, see [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>For a list of content and configuration changes that are not under the scope the Compatibility Package, see [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring-in-aem64.md).
 
 In AEM 6.5, all features have been developed with backwards compatibility in mind.
 
 In most cases, customers running AEM 6.3 should not have to change the code or customizations when doing the upgrade. For AEM 6.1 and 6.2 customers there is no additional breaking changes than would be faced during an upgrade to 6.3.
 
-For exceptions where features could not be kept backward compatible, backward compatibility for bundles and content can be achieved by installing a Compatibility Package for 6.3( please see how to setup below for details on where to download). This compat package will restore compatiblity for applications compliant with AEM 6.3.
+For exceptions where features could not be kept backward compatible, backward incompatibility issues for bundles and content can be mitigated by installing a Compatibility Package for 6.4 (please see how to setup below for details on where to download). This compat package will help restore compatibility in most cases for applications compliant with AEM 6.4.
 
 The Compatibility Package allows you to run AEM in compatibility mode and defer custom development against new AEM features:
 
 >[!NOTE]
 >
->Please note that the compatibility package is only a temporary solution to defer development required for being AEM 6.5 compatible, its recommended only as a last option if you are not able to address compatibility issues through development immediately after the upgrade. It is strongly recommended to switch to native mode and uninstall the compatibility package once you decide to proceed with 6.4 based custom development and avail of full 6.4 functionality.
+>Please note that the compatibility package is only a temporary solution to defer development required for being AEM 6.5 compatible, its recommended only as a last option if you are not able to address compatibility issues through development immediately after the upgrade. It is strongly recommended to switch to native mode and uninstall the compatibility package once you decide to proceed with 6.5 based custom development and avail of full 6.5 functionality.
 
-![screen_shot_2018-04-05at43339pm](assets/screen_shot_2018-04-05at43339pm.png)
+![](assets/sase.png)
 
 The Compatibility Package has two modes: **Routing Enabled** and **Routing Disabled**.
 
@@ -51,7 +53,7 @@ Compatibility Mode is for customers who have customizations of interfaces that a
 
 Legacy mode is for customers having custom interfaces based on legacy or deprecated code from AEM that has been moved out in the compatibility package.
 
-![image2018-2-12_23-58-37](assets/image2018-2-12_23-58-37.png)
+![](assets/sapte.png)
 
 ## How to Set Up {#how-to-set-up}
 
@@ -59,6 +61,6 @@ The AEM 6.3 Compatibility Package will be installable as a package using the Pac
 
 Once the Compatibility Package is installed, the routing can be enabled or disabled using a switch in the OSGI configuration as shown below:
 
-![screen_shot_2017-11-27at122421pm](assets/screen_shot_2017-11-27at122421pm.png)
+![](assets/screen_shot_2017-11-27at122421pm.png)
 
 Once the Compatibility Package is installed and set up, the features will be used based on the compatibility mode that has been chosen.

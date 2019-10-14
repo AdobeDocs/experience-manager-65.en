@@ -3,16 +3,20 @@ title: Asynchronous submission of adaptive forms
 seo-title: Asynchronous submission of adaptive forms
 description: Learn to configure asynchronous submission for adaptive forms.
 seo-description: Learn to configure asynchronous submission for adaptive forms.
-uuid: 3b8aeac8-cb38-4a2b-8375-556b2736d58b
+uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
+discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
+docset: aem65
+
 ---
 
-# Asynchronous submission of adaptive forms {#asynchronous-submission-of-adaptive-forms}
+# Asynchronous submission of adaptive forms{#asynchronous-submission-of-adaptive-forms}
 
-Traditionally, web forms are configured to submit synchronously. When users submit a form, they are redirected to an acknowledgement page, or in case of submission failure, an error page. However, modern web experiences like single page applications are gaining popularity where the web page remains static while client-server interaction happens in the background. You can now provide this experience with adaptive forms by configuring asynchronous submission. In this case, an adaptive form behaves like a single page application as the form does not reload or its URL does not change when the submitted form data is validated on the server.
+Traditionally, web forms are configured to submit synchronously. In synchronous submission, when users submit a form, they are redirected to an acknowledgement page, a thank you page, or in case of submission failure, an error page. However, modern web experiences like single page applications are gaining popularity where the web page remains static while client-server interaction happens in the background. You can now provide this experience with adaptive forms by configuring asynchronous submission.
+
+In asynchronous submission, when a user submits a form the form developer plugs-in a separate experience like redirecting to other form or a separate section of the website. The author can also plug-in separate services like sending data to a different data store or adds a custom analytics engine.In case of asynchronous submission, an adaptive form behaves like a single page application as the form does not reload or its URL does not change when the submitted form data is validated on the server.
 
 Read on for details about asynchronous submission in adaptive forms.
 
@@ -20,14 +24,15 @@ Read on for details about asynchronous submission in adaptive forms.
 
 To configure asynchronous submission for an adaptive form:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![cmppr1](assets/cmppr1.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and tap ![](assets/cmppr1.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. In the **[!UICONTROL On Submit]** section, select one of the following options to perform on successful form submission.
 
-    * **[!UICONTROL Redirect to URL]**: Redirects to the specified URL or page on form submission. You can specify a URL or browse to choose the path to a page in the **[!UICONTROL Redirect URL/Path]** field.
+    * **[!UICONTROL Redirect to URL]**: Redirects to the specified URL or page on form submission. You can specify a URL or browse to choose the path to a page in the **[!UICONTROL Redirect URL/Path]** field. 
+    
     * **[!UICONTROL Show Message]**: Displays a message on form submission. You can write a message in the text field below the Show Message option. The text field support rich text formatting.
 
-1. Tap ![check-button1](assets/check-button1.png) to save the properties.
+1. Tap ![](assets/check-button1.png) to save the properties.
 
 ## How asynchronous submission works {#how-asynchronous-submission-works}
 
@@ -43,9 +48,9 @@ The structure for the server response for submission success event is as follows
 
 ```
 {
-  contentType : "<xmlschema or jsonschema>",
-  data : "<dataXML or dataJson>" ,
-  thankYouOption : <page/message>,
+  contentType : "<xmlschema or jsonschema>", 
+  data : "<dataXML or dataJson>" , 
+  thankYouOption : <page/message>, 
   thankYouContent : "<thank you page url/thank you message>"
 }
 ```
@@ -89,7 +94,7 @@ Form developers and authors can write rules, at form level, in code editor to ov
 
 Perform the following steps to write rules in code editor to handle success and error events.
 
-1. Open the adaptive form in authoring mode, select any form object, and tap ![edit-rules1](assets/edit-rules1.png) to open the rule editor.
+1. Open the adaptive form in authoring mode, select any form object, and tap ![](assets/edit-rules1.png) to open the rule editor.
 1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Code Editor]** from the mode selection drop-down.
 1. In the code editor, tap **[!UICONTROL Edit Code]**. Tap **[!UICONTROL Edit]** on the confirmation dialog.

@@ -3,16 +3,18 @@ title: Using Assembler Service
 seo-title: Using Assembler Service
 description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
 seo-description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
-uuid: e9c4c153-951e-469f-8d4b-981bf582f9a2
+uuid: 1efce50b-2d98-408e-aa43-ac4999de41a8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: d34f1598-38bc-46c3-b6cd-954a3880994a
+discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
+docset: aem65
+
 ---
 
-# Using Assembler Service {#using-assembler-service}
+# Using Assembler Service{#using-assembler-service}
 
-The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents. Each job submitted to the Assembler service includes a Document Description XML (DDX) document, source documents, and external resources (strings and graphics). For more information about assembler service, see [Overview of Assembler Service](/help/forms/using/overview-aem-document-services.md#p-assembler-service-p).
+The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents. Each job submitted to the Assembler service includes a Document Description XML (DDX) document, source documents, and external resources (strings and graphics). For more information about assembler service, see [Overview of Assembler Service](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 You can use the assemble service for the following operations:
 
@@ -25,7 +27,8 @@ You can use the Assembler service to assemble two or more PDF documents into a s
 The following illustration shows three source documents being merged into a single resultant document.
 
 ![Assembling a simple PDF document from multiple PDF documents](assets/as_document_assembly.png)
-**Figure:** *Assembling a simple PDF document from multiple PDF documents*
+
+Assembling a simple PDF document from multiple PDF documents
 
 The following example is a simple DDX document used to assemble the document. It specifies the names of the source documents used to produce the resultant document, as well as the name of the resultant document:
 
@@ -37,7 +40,7 @@ The following example is a simple DDX document used to assemble the document. It
 </PDF>
 ```
 
-Document assembly produces a resultant document that contains the following content and
+Document assembly produces a resultant document that contains the following content and  
 characteristics:
 
 * All or part of each source document
@@ -81,7 +84,8 @@ When you assemble a document, you can use Bates numbering to apply a unique page
 The following illustration shows a PDF document that contains a unique identifier located in the document’s header.
 
 ![A PDF document that contains a unique identifier located in the document’s header](do-not-localize/as_batesnumber.png)
-**Figure:** *A PDF document that contains a unique identifier located in the document’s header*
+
+A PDF document that contains a unique identifier located in the document’s header
 
 ### Flatten and assemble documents {#flatten-and-assemble-documents}
 
@@ -101,10 +105,11 @@ Here are some of the ways you can assemble XDP documents:
 
 ### Assemble a simple XDP document {#assemble-a-simple-xdp-document}
 
-The following illustration shows three source XDP documents being assembled into a single resultant XDP document. The resultant XDP document contains the three source XDP documents including their associated data. The resultant document obtains basic attributes from the base document, which is the first source XDP document.
+The following illustration shows three source XDP documents being assembled into a single resultant XDP document. The resultant XDP document contains the three source XDP documents including their associated data. The resultant document obtains basic attributes from the base document, which is the first source XDP document. 
 
 ![Assembling a simple XDP document from multiple XDP documents](assets/as_assembler_xdpassembly.png)
-**Figure:** *Assembling a simple XDP document from multiple XDP documents*
+
+Assembling a simple XDP document from multiple XDP documents
 
 Here is a DDX document that produces the result illustrated above.
 
@@ -125,35 +130,35 @@ Typically, XDP documents can contain images referenced either through absolute o
 You can specify how the Assembler service handles the images referenced in the source XDP documents either through absolute or relative references in the XDP files when assembling. You can choose to have all the images embedded in the resultant so that it contains no relative or absolute references. You define this by setting the value of the resolveAssets tag, which can take any of the following options. By default, no references are resolved in the result document.
 
 <table>
- <tbody>
-  <tr>
-   <th>Value</th>
-   <th>Description</th>
-  </tr>
-  <tr>
-   <td>none</td>
-   <td>Does not resolve any references.</td>
-  </tr>
-  <tr>
-   <td>all</td>
-   <td>Embeds all referenced images in the source XDP document.</td>
-  </tr>
-  <tr>
-   <td>relative</td>
-   <td>Embeds all the images referenced through relative references in the source XDP<br /> document.</td>
-  </tr>
-  <tr>
-   <td>absolute</td>
-   <td>Embeds all the images referenced through absolute references in the source XDP<br /> document.</td>
-  </tr>
- </tbody>
+ <tbody> 
+  <tr> 
+   <th>Value</th> 
+   <th>Description</th> 
+  </tr> 
+  <tr> 
+   <td>none</td> 
+   <td>Does not resolve any references.</td> 
+  </tr> 
+  <tr> 
+   <td>all</td> 
+   <td>Embeds all referenced images in the source XDP document.</td> 
+  </tr> 
+  <tr> 
+   <td>relative</td> 
+   <td>Embeds all the images referenced through relative references in the source XDP<br /> document.</td> 
+  </tr> 
+  <tr> 
+   <td>absolute</td> 
+   <td>Embeds all the images referenced through absolute references in the source XDP<br /> document.</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 You can specify the value of the resolveAssets attribute either in the XDP source tag or in the parent XDP result tag. If the attribute is specified to the XDP result tag, it will be inherited by all the XDP source elements which are children of XDP result. However, explicitly specifying the attribute for a source element overrides the setting of the result element for that source document alone.
 
 #### Resolve all source references in an XDP document {#resolve-all-source-references-in-an-xdp-document}
 
-To resolve all references in the source XDP documents, specify the resolveAssets attribute for the
+To resolve all references in the source XDP documents, specify the resolveAssets attribute for the  
 resultant document to all, as in the example below:
 
 ```xml
@@ -166,7 +171,7 @@ resultant document to all, as in the example below:
 </DDX
 ```
 
-You can also specify the attribute for all the source XDP documents independently to get the same
+You can also specify the attribute for all the source XDP documents independently to get the same  
 result.
 
 ```xml
@@ -219,7 +224,8 @@ Form designers use LiveC ycle Designer to create form fragments. These fragments
 The following illustration shows two XML forms (XFA templates). The form on the left contains an insertion point named myInsertionPoint. The form on the right contains a fragment named myFragment.
 
 ![Inserting form fragments into an XFA form](assets/as_assembler_fragment_assy_assembled.png)
-**Figure:** *Inserting form fragments into an XFA form*
+
+Inserting form fragments into an XFA form
 
 When the Assembler service interprets the following DDX document, it creates an XML form that contains another XML form. The myFragment subform from the myFragmentSource document is inserted at the myInsertionPoint in the myFormSource document.
 
@@ -258,7 +264,8 @@ You can use the Assembler service to disassemble a PDF document. The service can
 In the following illustration, pages 1-3 are extracted from the source document and placed in a new resultant document.
 
 ![Extracting specific pages from a source document](assets/as_intro_page_extraction.png)
-**Figure:** *Extracting specific pages from a source document*
+
+Extracting specific pages from a source document
 
 The following example is a DDX document used to disassemble the document.
 
@@ -273,7 +280,8 @@ The following example is a DDX document used to disassemble the document.
 In the following illustration, DocA is divided into multiple resultant documents. The first level 1 bookmark on a page identifies the start of a new resultant document.
 
 ![Dividing a source document based on bookmarks into multiple documents](assets/as_intro_pdfsfrombookmarks.png)
-**Figure:** *Dividing a source document based on bookmarks into multiple documents*
+
+Dividing a source document based on bookmarks into multiple documents
 
 The following example is a DDX document that uses bookmarks to disassemble a source document.
 
@@ -297,9 +305,12 @@ You can use the Assembler service to obtain the following information about a PD
     * Position of each word on each page of the document
     * Sentences in each paragraph of each page of the document
 
-* Bookmarks, including the page number, title, destination, and appearance. You can export this data from a PDF document and import it into a PDF document.
+* Bookmarks, including the page number, title, destination, and appearance. You can export this  
+  data from a PDF document and import it into a PDF document.  
 
-* File attachments, including file information. For page-level attachments, it also includes the location of the file attachment annotation. You can export this data from a PDF document and import it into a PDF document.
+* File attachments, including file information. For page-level attachments, it also includes the  
+  location of the file attachment annotation. You can export this data from a PDF document and  
+  import it into a PDF document.
 
 * Package files, including file information, folders, package, schema, and field data. You can export this data from a PDF document and import it into a PDF document.
 
@@ -330,4 +341,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-Using DDX and the Assembler service to call other LiveC ycle services can simplify your process diagram. It can even reduce the effort you spend customizing your workflows. (See also, [Using AEM Document Services Programmatically](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html))
+Using DDX and the Assembler service to call other LiveC ycle services can simplify your process diagram. It can even reduce the effort you spend customizing your workflows. (See also

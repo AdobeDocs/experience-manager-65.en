@@ -3,30 +3,34 @@ title: Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)
 seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)
 description: null
 seo-description: null
-uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
+uuid: 77601924-6e96-4757-9b22-8dc8ff08631c
 contentOwner: admin
 content-type: reference
 topic-tags: develop
-discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
+discoiquuid: 977204cd-2cab-453c-805c-d637c7004cf8
+docset: aem65
+
 ---
 
-# Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP){#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
 The following Quick Starts are available for the Acrobat Reader DC Extensions service.
 
-[Quick Start (SOAP mode):Applying usage rights using the Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+<!-- unresolved
+[Quick Start (SOAP mode):Applying usage rights using the Java API](#unresolvedlink-lc-qs-reader-extensions-re.xml#ws624e3cba99b79e12e69a9941333732bac8-7d11.2)
+-->
 
-[Removing Usage Rights from PDF Documents](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
+[Removing Usage Rights from PDF Documents](/programming-with-aem-forms/assigning-usage-rights.md#removing_usage_rights_from_pdf_documents)
 
-[Quick Start (SOAP mode): Retrieving credential information using the Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[Quick Start (SOAP mode): Retrieving credential information using the Java API](acrobat-reader-dc-extensions-service.md#quick_start_soap_mode_retrieving_credential_information_using_the_java_api)
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
-***Note**: Quick Starts located in Programming with AEM Forms are based on the Forms server operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Note**: Quick Starts located in Programming with AEM Forms are based on the Forms server operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. (See [Setting connection properties](/programming-with-aem-forms/invoking-aem-forms-using-java.md#setting_connection_properties).)*
 
 ## Quick Start (SOAP mode):Applying usage rights using the Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-The following Java code example applies usage rights to a PDF document named *Loan.pdf*. The rights-enabled PDF document is saved as a PDF file named *LoanUsageRights.pdf*. The following usage rights are applied to this PDF document: `enabledComments`, `enabledFormFillIn`, and `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
+The following Java code example applies usage rights to a PDF document named *Loan.pdf*. The rights-enabled PDF document is saved as a PDF file named *LoanUsageRights.pdf*. The following usage rights are applied to this PDF document: `enabledComments`, `enabledFormFillIn`, and `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/programming-with-aem-forms/assigning-usage-rights.md#applying_usage_rights_to_pdf_documents).)
 
 ```as3
  /* 
@@ -35,23 +39,23 @@ The following Java code example applies usage rights to a PDF document named *Lo
      * 1. adobe-reader-extensions-client.jar 
      * 2. adobe-livecycle-client.jar 
      * 3. adobe-usermanager-client.jar 
-     * 4. activation.jar (required for SOAP mode) 
-     * 5. axis.jar (required for SOAP mode) 
-     * 6. commons-codec-1.3.jar (required for SOAP mode) 
-     * 7. commons-collections-3.2.jar  (required for SOAP mode) 
-     * 8. commons-discovery.jar (required for SOAP mode) 
-     * 9. commons-logging.jar (required for SOAP mode) 
-     * 10. dom3-xml-apis-2.5.0.jar (required for SOAP mode) 
-     * 11. jaxen-1.1-beta-9.jar (required for SOAP mode) 
-     * 12. jaxrpc.jar (required for SOAP mode) 
-     * 13. log4j.jar (required for SOAP mode) 
-     * 14. mail.jar (required for SOAP mode) 
-     * 15. saaj.jar (required for SOAP mode) 
-     * 16. wsdl4j.jar (required for SOAP mode) 
-     * 17. xalan.jar (required for SOAP mode) 
-     * 18. xbean.jar (required for SOAP mode) 
-     * 19. xercesImpl.jar (required for SOAP mode) 
-     * 
+    * 4. activation.jar (required for SOAP mode) 
+    * 5. axis.jar (required for SOAP mode) 
+    * 6. commons-codec-1.3.jar (required for SOAP mode) 
+    * 7. commons-collections-3.2.jar  (required for SOAP mode) 
+    * 8. commons-discovery.jar (required for SOAP mode) 
+    * 9. commons-logging.jar (required for SOAP mode) 
+    * 10. dom3-xml-apis-2.5.0.jar (required for SOAP mode) 
+    * 11. jaxen-1.1-beta-9.jar (required for SOAP mode) 
+    * 12. jaxrpc.jar (required for SOAP mode) 
+    * 13. log4j.jar (required for SOAP mode) 
+    * 14. mail.jar (required for SOAP mode) 
+    * 15. saaj.jar (required for SOAP mode) 
+    * 16. wsdl4j.jar (required for SOAP mode) 
+    * 17. xalan.jar (required for SOAP mode) 
+    * 18. xbean.jar (required for SOAP mode) 
+    * 19. xercesImpl.jar (required for SOAP mode) 
+    * 
      * These JAR files are located in the following path: 
      * <install directory>/sdk/client-libs/common 
      * 
@@ -138,7 +142,7 @@ The following Java code example applies usage rights to a PDF document named *Lo
 
 ## Quick Start (SOAP mode): Removing usage rights from a PDF document using the Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-The following Java code example removes usage rights from a rights-enabled PDF document named *LoanUsageRights.pdf*. (See [Removing Usage Rights from PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
+The following Java code example removes usage rights from a rights-enabled PDF document named *LoanUsageRights.pdf*. (See [Removing Usage Rights from PDF Documents](/programming-with-aem-forms/assigning-usage-rights.md#removing_usage_rights_from_pdf_documents).)
 
 ```as3
  /* 
@@ -147,23 +151,23 @@ The following Java code example removes usage rights from a rights-enabled PDF d
      * 1. adobe-reader-extensions-client.jar 
      * 2. adobe-livecycle-client.jar 
      * 3. adobe-usermanager-client.jar 
-     * 4. activation.jar (required for SOAP mode) 
-     * 5. axis.jar (required for SOAP mode) 
-     * 6. commons-codec-1.3.jar (required for SOAP mode) 
-     * 7. commons-collections-3.2.jar  (required for SOAP mode) 
-     * 8. commons-discovery.jar (required for SOAP mode) 
-     * 9. commons-logging.jar (required for SOAP mode) 
-     * 10. dom3-xml-apis-2.5.0.jar (required for SOAP mode) 
-     * 11. jaxen-1.1-beta-9.jar (required for SOAP mode) 
-     * 12. jaxrpc.jar (required for SOAP mode) 
-     * 13. log4j.jar (required for SOAP mode) 
-     * 14. mail.jar (required for SOAP mode) 
-     * 15. saaj.jar (required for SOAP mode) 
-     * 16. wsdl4j.jar (required for SOAP mode) 
-     * 17. xalan.jar (required for SOAP mode) 
-     * 18. xbean.jar (required for SOAP mode) 
-     * 19. xercesImpl.jar (required for SOAP mode) 
-     * 
+    * 4. activation.jar (required for SOAP mode) 
+    * 5. axis.jar (required for SOAP mode) 
+    * 6. commons-codec-1.3.jar (required for SOAP mode) 
+    * 7. commons-collections-3.2.jar  (required for SOAP mode) 
+    * 8. commons-discovery.jar (required for SOAP mode) 
+    * 9. commons-logging.jar (required for SOAP mode) 
+    * 10. dom3-xml-apis-2.5.0.jar (required for SOAP mode) 
+    * 11. jaxen-1.1-beta-9.jar (required for SOAP mode) 
+    * 12. jaxrpc.jar (required for SOAP mode) 
+    * 13. log4j.jar (required for SOAP mode) 
+    * 14. mail.jar (required for SOAP mode) 
+    * 15. saaj.jar (required for SOAP mode) 
+    * 16. wsdl4j.jar (required for SOAP mode) 
+    * 17. xalan.jar (required for SOAP mode) 
+    * 18. xbean.jar (required for SOAP mode) 
+    * 19. xercesImpl.jar (required for SOAP mode) 
+    * 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to  
      * your local development environment and then include the 3 JBoss JAR files in your class path 
      * 
@@ -238,7 +242,7 @@ The following Java code example removes usage rights from a rights-enabled PDF d
 
 ## Quick Start (SOAP mode): Retrieving credential information using the Java API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-The following Java code example retrieves information about the credential that is used to apply usage-rights to a rights-enabled PDF document named *LoanUsageRights.pdf*. (See [Retrieving Credential Information](/help/forms/developing/assigning-usage-rights.md).)
+The following Java code example retrieves information about the credential that is used to apply usage-rights to a rights-enabled PDF document named *LoanUsageRights.pdf*. (See [Retrieving Credential Information](/programming-with-aem-forms/assigning-usage-rights.md#retrieving_credential_information).)
 
 ```as3
  /* 
@@ -247,23 +251,23 @@ The following Java code example retrieves information about the credential that 
      * 1. adobe-reader-extensions-client.jar 
      * 2. adobe-livecycle-client.jar 
      * 3. adobe-usermanager-client.jar 
-     * 4. activation.jar (required for SOAP mode) 
-     * 5. axis.jar (required for SOAP mode) 
-     * 6. commons-codec-1.3.jar (required for SOAP mode) 
-     * 7. commons-collections-3.2.jar  (required for SOAP mode) 
-     * 8. commons-discovery.jar (required for SOAP mode) 
-     * 9. commons-logging.jar (required for SOAP mode) 
-     * 10. dom3-xml-apis-2.5.0.jar (required for SOAP mode) 
-     * 11. jaxen-1.1-beta-9.jar (required for SOAP mode) 
-     * 12. jaxrpc.jar (required for SOAP mode) 
-     * 13. log4j.jar (required for SOAP mode) 
-     * 14. mail.jar (required for SOAP mode) 
-     * 15. saaj.jar (required for SOAP mode) 
-     * 16. wsdl4j.jar (required for SOAP mode) 
-     * 17. xalan.jar (required for SOAP mode) 
-     * 18. xbean.jar (required for SOAP mode) 
-     * 19. xercesImpl.jar (required for SOAP mode) 
-     * 
+    * 4. activation.jar (required for SOAP mode) 
+    * 5. axis.jar (required for SOAP mode) 
+    * 6. commons-codec-1.3.jar (required for SOAP mode) 
+    * 7. commons-collections-3.2.jar  (required for SOAP mode) 
+    * 8. commons-discovery.jar (required for SOAP mode) 
+    * 9. commons-logging.jar (required for SOAP mode) 
+    * 10. dom3-xml-apis-2.5.0.jar (required for SOAP mode) 
+    * 11. jaxen-1.1-beta-9.jar (required for SOAP mode) 
+    * 12. jaxrpc.jar (required for SOAP mode) 
+    * 13. log4j.jar (required for SOAP mode) 
+    * 14. mail.jar (required for SOAP mode) 
+    * 15. saaj.jar (required for SOAP mode) 
+    * 16. wsdl4j.jar (required for SOAP mode) 
+    * 17. xalan.jar (required for SOAP mode) 
+    * 18. xbean.jar (required for SOAP mode) 
+    * 19. xercesImpl.jar (required for SOAP mode) 
+    * 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to  
      * your local development environment and then include the 3 JBoss JAR files in your class path 
      * 

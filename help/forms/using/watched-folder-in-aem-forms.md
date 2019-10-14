@@ -3,26 +3,27 @@ title: Watched folder in AEM Forms
 seo-title: Watched folder in AEM Forms
 description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
 seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
-uuid: a525fb20-7b36-48b8-8663-afd640f75017
+uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
+discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
+docset: aem65
+
 ---
 
-# Watched folder in AEM Forms {#watched-folder-in-aem-forms}
+# Watched folder in AEM Forms{#watched-folder-in-aem-forms}
 
-An administrator can configure a network folder, known as a Watched Folder, so that when a user places a file (such as a PDF file) in the Watched Folder a pre-configured workflow, service, or script operation is started to process the added file. After the service performs the specified operation, it saves the result file in a specified output folder. For more information about workflow, service, and script, see [Various methods for processing files](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4).
+An administrator can configure a network folder, known as a Watched Folder, so that when a user places a file (such as a PDF file) in the Watched Folder a pre-configured workflow, service, or script operation is started to process the added file. After the service performs the specified operation, it saves the result file in a specified output folder. For more information about workflow, service, and script, see [Various methods for processing files](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-4).
 
 ## Create a Watched Folder {#create-a-watched-folder}
 
 You can use one of the following methods to create a Watched Folder on the file system:
 
-* While configuring the properties of a Watched Folder configuration node, type the full path of the parent directory in the folderPath property and append the name of the Watched Folder to be created, as shown in the following example: `C:/MyPDFs/MyWatchedFolder`
-
+* While configuring the properties of a Watched Folder configuration node, type the full path of the parent directory in the folderPath property and append the name of the Watched Folder to be created, as shown in the following example: `C:/MyPDFs/MyWatchedFolder`  
   The `MyWatchedFolder`folder does not exist, AEM Forms attempts to create the folder at the specified path.
 
-* Create a folder on the file system prior to configuring a Watched Folder endpoint, and then provide the full path in the folderPath property. For detailed information about the folderPath property, see [Watched Folder properties](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+* Create a folder on the file system prior to configuring a Watched Folder endpoint, and then provide the full path in the folderPath property. For detailed information about the folderPath property, see [Watched Folder properties](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
 
 >[!NOTE]
 >
@@ -32,7 +33,7 @@ You can use one of the following methods to create a Watched Folder on the file 
 
 To configure a Watched Folder, create a Watched Folder configuration node. Perform the following steps to create the configuration node:
 
-1. Login to CRX-DE lite as an administrator and navigate to the /etc/fd/watchfolder/config folder.
+1. Login to CRX-DE lite as an administrator and navigate to the /etc/fd/watchfolder/config folder.  
 
 1. Create a node of type `nt:unstructured`. For example, watchedfolder
 
@@ -47,7 +48,7 @@ To configure a Watched Folder, create a Watched Folder configuration node. Perfo
     * `inputProcessorId`
     * `outputFilePattern`
 
-   For complete list of supported properties, see [Watched Folder properties](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   For complete list of supported properties, see [Watched Folder properties](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
 
 1. Click** Save All**. After the node is created and the properties are saved. The `input`, `result`, `failure`, `preserve`, and `stage`folders are created at the path specified in the `folderPath` property.
 
@@ -77,45 +78,44 @@ You can configure the following properties for a Watched Folder.
 
 **Note**: *If the server hosting the Watched Folder does not have any of the specified run-mode, then, the Watched Folder always activates regardless of the run-modes on the server.*
 
-* **outputFilePattern (String)**: Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern. [File and folder pattern](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) can also specify a directory structure for the output files. It is a mandatory property.
+* **outputFilePattern (String)**: Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern. [File and folder pattern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) can also specify a directory structure for the output files. It is a mandatory property.
 
-* **stageFileExpirationDuration (Long, default -1)**: The number of seconds to wait before an input file/folder which has already been picked up for processing should be treated as having timed out and marked as a failure. This expiration mechanism only activates when the value for this property is a positive number.
-
+* **stageFileExpirationDuration (Long, default -1)**: The number of seconds to wait before an input file/folder which has already been picked up for processing should be treated as having timed out and marked as a failure. This expiration mechanism only activates when the value for this property is a positive number.  
+  
   **Note:** *Even when an input is marked as having timed out using this mechanism, it may still be processing in the background but just taking more time than expected. If the input contents were consumed before the timeout mechanism kicked in, the processing may even proceed to completion later and the output be dumped into the results folder. If the contents were not consumed before the timeout, it is very likely that the processing will error out later on trying to consume the contents, and this error will also be logged in the failure folder for the same input. On the other hand, if the processing for the input never activated due to an intermittent job/workflow misfire (which is the scenario the expiration mechanism aims to address), then of course neither of these two eventualities will occur. Hence, for any entries in the failure folder which were marked as failures due to a timeout (look for messages of the form "File not processed after a significant amount of time, marking as failure!" in the failure log), it is advisable to scan the result folder (and also the failure folder itself for another entry for the same input) to check whether any of the eventualities described previously actually occurred.*
 
-*
-* **deleteExpiredStageFileOnlyWhenThrottled (Boolean, default true):** Whether the expiration mechanism should activate only when the watch-folder is throttled. The mechanism is more relevant for throttled watch-folders since a small number of files which are lingering around in an unprocessed state (owing to intermittent job/workflow misfires) have the potential to choke processing for the entire batch when throttling is enabled. If this property is kept as true (the default), the expiration mechanism will not activate for watch-folders which are not throttled. If the property is kept as false, the mechanism will always activate as long as the stageFileExpirationDuration property is a positive number.
+* 
+* **deleteExpiredStageFileOnlyWhenThrottled (Boolean, default true): **Whether the expiration mechanism should activate only when the watch-folder is throttled. The mechanism is more relevant for throttled watch-folders since a small number of files which are lingering around in an unprocessed state (owing to intermittent job/workflow misfires) have the potential to choke processing for the entire batch when throttling is enabled. If this property is kept as true (the default), the expiration mechanism will not activate for watch-folders which are not throttled. If the property is kept as false, the mechanism will always activate as long as the stageFileExpirationDuration property is a positive number.  
 
 * **pollInterval (Long)**: The interval in seconds for scanning the Watched Folder for input. Unless the Throttle setting is enabled, poll Interval should be longer than the time to process an average job; otherwise, the system may become overloaded. The default value is 5. See the description for Batch Size for additional information. The value of the pollinterval must be greater than or equal to one.
-* **excludeFilePattern (String)**: A semi-colon **;** delimited list of patterns that a Watched Folder uses to determine which files and folders to scan and pick up. Any file or folder with this pattern is not scanned for processing. This setting is useful when the input is a folder with multiple files. The contents of the folder can be copied into a folder with a name that are picked up by the Watched Folder. This prevents the Watched Folder from picking up a folder for processing before the folder is completely copied into the input folder. The default value is null.
+* **excludeFilePattern (String)**: A semi-colon (;) delimited list of patterns that a Watched Folder uses to determine which files and folders to scan and pick up. Any file or folder with this pattern is not scanned for processing. This setting is useful when the input is a folder with multiple files. The contents of the folder can be copied into a folder with a name that are picked up by the Watched Folder. This prevents the Watched Folder from picking up a folder for processing before the folder is completely copied into the input folder. The default value is null.   
+  You can use [file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) to exclude:
 
-  You can use [file patterns](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) to exclude:
-
-    * Files with specific filename extensions; for example, &ast;.dat, &ast;.xml, .pdf, &ast;.&ast;
-    * Files with specific names; for example, data&ast; would exclude files and folders named data1, data2, and so on.
+    * Files with specific filename extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42; 
+    * Files with specific names; for example, data&#42; would exclude files and folders named data1, data2, and so on.
     * Files with composite expressions in the name and extension, as in these examples:
 
         * Data[0-9][0-9][0-9].[dD][aA][tT]
-        * &ast;.[dD][Aa][Tt]
-        * &ast;.[Xx][Mm][Ll]
+        * &#42;.[dD][Aa][Tt]
+        * &#42;.[Xx][Mm][Ll]
 
-For more information about file patterns, see [About file patterns](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern (String)**: A semi-colon **;** delimited list of patterns that the Watched Folder uses to determine which folders and files to scan and pick up. For example, if the IncludeFilePattern is input&ast;, all files and folders that match input&ast; are picked up. This includes files and folders named input1, input2, and so on. The default value is &ast; and indicates all files and folders. You can use file patterns to include:
+* **includeFilePattern (String)**: A semi-colon (;) delimited list of patterns that the Watched Folder uses to determine which folders and files to scan and pick up. For example, if the IncludeFilePattern is input&#42;, all files and folders that match input&#42; are picked up. This includes files and folders named input1, input2, and so on. The default value is &#42; and indicates all files and folders. You can use file patterns to include:
 
-    * Files with specific filename extensions; for example, &ast;.dat, &ast;.xml, .pdf, &ast;.&ast;
-    * Files with specific names; for example, data.&ast; would include files and folders named data1, data2, and so on.
+    * Files with specific filename extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+    * Files with specific names; for example, data.&#42; would include files and folders named data1, data2, and so on.
 
 * Files with composite expressions in the name and extension, as in these examples:
 
     * Data[0-9][0-9][0-9].[dD][aA][tT]
 
-        * &ast;.[dD][Aa][Tt]
-        * &ast;.[Xx][Mm][Ll]
+        * &#42;.[dD][Aa][Tt]
+        * &#42;.[Xx][Mm][Ll]
 
-For more information about file patterns, see [About file patterns](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
+For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-* **waitTime (Long)**: The time, in milliseconds, to wait before you scan a folder or file after it is created. For example, if the wait time is 3,600,000 milliseconds (one hour) and the file was created one minute ago, this file will be picked up after 59 or more minutes have passed. The default value is 0. This setting is useful to ensure that a file or folder is completely copied to the input folder. For example, if you have a large file to process and the file takes ten minutes to download, set the wait time to 10&ast;60 &ast;1000 milliseconds. This prevents the Watched Folder from scanning the file if it is not ten minutes old.
+* **waitTime (Long)**: The time, in milliseconds, to wait before you scan a folder or file after it is created. For example, if the wait time is 3,600,000 milliseconds (one hour) and the file was created one minute ago, this file will be picked up after 59 or more minutes have passed. The default value is 0. This setting is useful to ensure that a file or folder is completely copied to the input folder. For example, if you have a large file to process and the file takes ten minutes to download, set the wait time to 10&#42;60 &#42;1000 milliseconds. This prevents the Watched Folder from scanning the file if it is not ten minutes old.
 * **purgeDuration (Long)**: Files and folders in the result folder are purged when they are older than this value. This value is measured in days. This setting is useful in ensuring that the result folder does not become full. A value of -1 days indicates to never delete the results folder. The default value is -1.
 * **resultFolderName (String)**: The folder where the saved results are stored. If the results do not appear in this folder, check the failure folder. Read-only files are not processed and are saved in the failure folder. This value can be an absolute or relative path with the following file patterns:
 
@@ -136,7 +136,7 @@ For more information about file patterns, see [About file patterns](/help/forms/
 
   For example, if it is 8 PM on July 17, 2009 and you specify C:/Test/WF0/failure/%Y/%M/%D/%H/, the result folder is C:/Test/WF0/failure/2009/07/17/20
 
-  If the path is not absolute but relative, the folder is created inside the Watched Folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the Watched Folder. For more information about file patterns, see [About file patterns](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  If the path is not absolute but relative, the folder is created inside the Watched Folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the Watched Folder. For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 >[!NOTE]
 >
@@ -144,15 +144,15 @@ For more information about file patterns, see [About file patterns](/help/forms/
 
 * **failureFolderName (String)**: The folder where failure files are saved. This location is always relative to the Watched Folder. You can use file patterns, as described for Result Folder. Read-only files are not processed and are saved in the failure folder. The default value is failure/%Y/%M/%D/.
 * **preserveFolderName (String):** The location where files are stored after successful processing. The path can be an absolute, a relative, or a null directory path. You can use file patterns, as described for Result Folder. The default value is preserve/%Y/%M/%D/.
-* **batchSize (Long)**: The number of files or folders to be picked up per scan. Use to prevent an overload on the system; scanning too many files at one time can cause a crash. The default value is 2.
-
-  The Poll Interval and Batch Size settings determine how many files Watched Folder picks up in every scan. Watched Folder uses a Quartz thread pool to scan the input folder. The thread pool is shared with other services. If the scan interval is small, the threads scan the input folder often. If files are dropped frequently into the Watched Folder, then you should keep the scan interval small. If files are dropped infrequently, use a larger scan interval so that the other services can use the threads.
-
-  If there is a large volume of files being dropped, make the batch size large. For example, if the service started by the Watched Folder endpoint can process 700 files per minute, and users drop files into the input folder at the same rate, then setting the Batch Size to 350 and the Poll Interval to 30 seconds help Watched Folder performance without incurring the cost of scanning the Watched Folder too often.
-
+* **batchSize (Long)**: The number of files or folders to be picked up per scan. Use to prevent an overload on the system; scanning too many files at one time can cause a crash. The default value is 2.  
+  
+  The Poll Interval and Batch Size settings determine how many files Watched Folder picks up in every scan. Watched Folder uses a Quartz thread pool to scan the input folder. The thread pool is shared with other services. If the scan interval is small, the threads scan the input folder often. If files are dropped frequently into the Watched Folder, then you should keep the scan interval small. If files are dropped infrequently, use a larger scan interval so that the other services can use the threads.  
+  
+  If there is a large volume of files being dropped, make the batch size large. For example, if the service started by the Watched Folder endpoint can process 700 files per minute, and users drop files into the input folder at the same rate, then setting the Batch Size to 350 and the Poll Interval to 30 seconds help Watched Folder performance without incurring the cost of scanning the Watched Folder too often.  
+  
   When files are dropped into the Watched Folder, it lists the files in the input, which can reduce performance if scanning is happening every second. Increasing the scan interval can improve performance. If the volume of files being dropped is small, adjust the Batch Size and Poll Interval accordingly. For example, if 10 files are dropped every second, try setting the pollInterval to 1 second and the Batch Size to 10
 
-* **throttleOn (Boolean)**: When this option is selected, it limits the number of Watched Folder jobs that AEM Forms processes at any given time. The maximum number of jobs is determined by the Batch Size value. The defaut value is true. (See [About throttling](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Boolean)**: When this option is selected, it limits the number of Watched Folder jobs that AEM Forms processes at any given time. The maximum number of jobs is determined by the Batch Size value. The defaut value is true. (See [About throttling](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Boolean)**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
 * **preserveOnFailure (Boolean)**: Preserve input files in case of failure to execute the operation on a service. The default value is true.
@@ -164,10 +164,11 @@ For more information about file patterns, see [About file patterns](/help/forms/
 >By design, the workflows are asynchronous. Even If you set the value to false, the workflows are launched in the asynchronous mode.
 
 * **enabled (Boolean)**: Deactivates and activates scanning for a Watched Folder. Set enabled to true, to start scanning the Watched Folder. The default value is true.
-* **payloadMapperFilter**: When a folder is configured as watched folder, a folder structure is created within the watched folder. The structure has folders to provide inputs, receive outputs (results), save data for failures, preserve data for long-lived processes, and save data for various stages. The folder structure of a Watched Folder can serve as a payload of Forms-centric workflows. A payload mapper allows you to define structure of a payload which uses a Watched Folder for input, output, and processing. For example, if you use the default mapper, it maps content of Watched Folder with [payload]\input and [payload]\output folder. Two out-of-the-box payload mapper implementations are available. If you do not have [a custom implementation](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use one of out-of-the-box implementation:
+* **payloadMapperFilter:**When a folder is configured as watched folder, a folder structure is created within the watched folder. The structure has folders to provide inputs, receive outputs (results), save data for failures, preserve data for long-lived processes, and save data for various stages. The folder structure of a Watched Folder can serve as a payload of Forms-centric workflows. A payload mapper allows you to define structure of a payload which uses a Watched Folder for input, output, and processing. For example, if you use the default mapper, it maps content of Watched Folder with [payload]\input and [payload]\output folder. Two out-of-the-box payload mapper implementations are available. If you do not have [a custom implementation](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use one of out-of-the-box implementation:
 
-    * **Default mapper:** Use the default payload mapper to keep input and output contents of the watched folders in separate input and output folders in the payload. Also, in payload path of a workflow, use [payload]/input/ and [payload]/output paths to retrive and save content.
-    * **Simple File-based payload mapper:** Use the Simple File-based payload mapper to keep input and output contents directly in the payload folder. It does not create any extra hierarchy, like default mapper.
+    * **Default mapper:** Use the default payload mapper to keep input and output contents of the watched folders in separate input and output folders in the payload. Also, in payload path of a workflow, use [payload]/input/ and [payload]/output paths to retrive and save content.  
+    
+    * **Simple File-based payload mapper: **Use the Simple File-based payload mapper to keep input and output contents directly in the payload folder. It does not create any extra hierarchy, like default mapper.
 
 ### Custom configuration parameters {#custom-configuration-parameters}
 
@@ -188,7 +189,7 @@ A sample watch-folder configuration node with mandatory properties, a few option
 
 You can create mutable variables for workflow-based file processing methods. These variables serve as containers for the data flowing between the steps of a workflow. To create such variables:
 
-1. Log in to CRXDE-Lite and navigate to the Watched Folder configuration node.
+1. Log in to CRXDE-Lite and navigate to the Watched Folder configuration node.  
 
 1. Add a property workflow.var.&lt;variable_name&gt; to the Watched Folder configuration node.
 
@@ -202,7 +203,7 @@ You can create mutable variables for workflow-based file processing methods. The
 >
 >JCR specification mandates a default value for the properties. The default values are available to the steps of a workflow for processing. So, specify proper default values.
 
-![custom-configuration-parameters2](assets/custom-configuration-parameters2.png)
+![](assets/custom-configuration-parameters2.png) 
 
 ## Various methods for processing files {#variousmethodsforprocessingfiles}
 
@@ -214,13 +215,16 @@ A Service is a custom implementation of the `com.adobe.aemfd.watchfolder.service
 
 #### Custom implementation of the ContentProcessor interface {#custom-implementation-of-the-contentprocessor-interface}
 
-The custom implementation accepts a processing context (an object of type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), reads input documents and configuration parameters from the context, processes the inputs, and adds the output back to the
+The custom implementation accepts a processing context (an object of type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), reads input documents and configuration parameters from the context, processes the inputs, and adds the output back to the  
 context. The ProcessorContext has the following APIs:
 
 * **getWatchFolderId**: Returns the ID of the Watched Folder.
 * **getInputMap**: Returns a map of type Map. The keys of the map are the filename of input file and a document object containing the contents of the file. Use the getinputMap API to read the input files.
-* **getConfigParameters**: Returns an immutable map of type Map. The map contains the configuration parameters of a Watched Folder.
-* **setResult**: The ContentProcessor implementation uses the API to write the output document to the result folder. You can provide a name for the output file to the setResult API. The API might chooses to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
+* **getConfigParameters**: Returns an immutable map of type Map. The map contains  
+  the configuration parameters of a Watched Folder.
+
+* **setResult**: The ContentProcessor implementation  
+  uses the API to write the output document to the result folder. You can provide a name for the output file to the setResult API. The API might chooses to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
 
 For example, the following code is a custom implementation of the ContentProcessor interface with a custom foo=bar property.
 
@@ -232,9 +236,9 @@ public class OutputWriter implements ContentProcessor {
 
 ```
 
-While [configuring a Watched Folder](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), if you specify the inputProcessorId property as (foo=bar) and the inputProcessorType property as Service, then the above mentioned Service (custom implementation) is used to process the input files of the Watched Folder.
+While [configuring a Watched Folder](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), if you specify the inputProcessorId property as (foo=bar) and the inputProcessorType property as Service, then the above mentioned Service (custom implementation) is used to process the input files of the Watched Folder.
 
-The following example is also a custom implementation of the ContentProcessor interface. In the example, the Service accepts input files, copies the files to a temporary location, and returns a document object with the content of the file. The contents of the document object are saved to the result folder. The physical path of the result folder is configured in the [Watched Folder configuration node](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+The following example is also a custom implementation of the ContentProcessor interface. In the example, the Service accepts input files, copies the files to a temporary location, and returns a document object with the content of the file. The contents of the document object are saved to the result folder. The physical path of the result folder is configured in the [Watched Folder configuration node](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 ```java
 @Component(immediate = true)
@@ -262,7 +266,7 @@ Scripts are the ECMAScript complaint custom code written to processes documents 
 * **getConfigParameters**: Returns an immutable map of type Map. The map contains the configuration parameters of a Watched Folder.
 * **setResult**: The ContentProcessor implementation uses the API to write the output document to the result folder. You can provide a name for the output file to the setResult API. The API might chooses to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
 
-The following code is an example ECMAScript. It accepts input files, copies the files to a temporary location, and returns a document object with the content of the file. The contents of the document object are saved to the result folder. The physical path of the result folder is configured in the [Watched Folder configuration node](/help/forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+The following code is an example ECMAScript. It accepts input files, copies the files to a temporary location, and returns a document object with the content of the file. The contents of the document object are saved to the result folder. The physical path of the result folder is configured in the [Watched Folder configuration node](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 >[!NOTE]
 >
@@ -273,7 +277,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);
+entry.getValue().copyToFile(tempFile);    
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 
 ```
@@ -284,9 +288,9 @@ By default, a container folder (/etc/fd/watchfolder/scripts) is provided where c
 
 If you plan to place your scripts at a custom location, it is likely that the default service-user might not have read permissions over the custom location. For such scenario, perform the following steps to provide necessary permissions to the custom location:
 
-1. Create a system user programmatically or via the console `https://[server]:[port]/crx/explorer`. You can also use an existing system user. It is important to work with system users here instead of normal users.
-1. Provide read permissions to the newly created or existing system user on the custom location where the scripts are stored. You can have multiple custom locations. Provide atleast read permissions to all the custom locations.
-1. In the Felix configuration console (/system/console/configMgr), locate the service user mapping for the watch-folders. This mapping looks like 'Mapping: adobe-aemds-core-watch-folder=...'.
+1. Create a system user programmatically or via the console https://[server]:[port]/crx/explorer. You can also use an existing system user. It is important to work with system users here instead of normal users. 
+1. Provide read permissions to the newly created or existing system user on the custom location where the scripts are stored. You can have multiple custom locations. Provide atleast read permissions to all the custom locations.  
+1. In the Felix configuration console (/system/console/configMgr), locate the service user mapping for the watch-folders. This mapping looks like 'Mapping: adobe-aemds-core-watch-folder=...'. 
 1. Click the mapping. For the entry 'adobe-aemds-core-watch-folder:scripts=fd-service', change fd-service to the ID of the custom system user. Click Save.
 
 Now, you can use configured custom location to save the scripts.
@@ -296,10 +300,8 @@ Now, you can use configured custom location to save the scripts.
 Workflows enable you to automate Experience Manager activities. Workflows consist of a series of steps that are executed in a specific order. Each step performs a distinct activity such as activating a page or sending an email message. Workflows can interact with assets in the repository, user accounts, and Experience Manager services. Therefore, workflows can coordinate complicated.
 
 * Before creating a Workflow, consider the following points:
-* The output of a step must be available to all the subsequent steps.
-
+* The output of a step must be available to all the subsequent steps.   
   The steps must be able to update (or even delete) existing outputs generated by the previous steps.
-
 * The mutable variables are used to flow the custom dynamic data between the steps.
 
 Perform the following steps to process files using workflows:
@@ -323,31 +325,31 @@ If you use ECMAScript to implement the workflow, the AEM workflow engine provide
 
 The argument to processWorkflowContext() is an object of type com.adobe.aemfd.watchfolder.workflow.api.WorkflowContext. The WorkflowContext interface has following APIs to facilitate the workflow-specific considerations mentioned above:
 
-* getWorkItem: Returns the value of the WorkItem variable. The variables is passed to the WorkflowContextService.execute() method.
-* getWorkflowSession: Returns the value of the WorkflowSession variable. The variables is passed to the WorkflowContextService.execute() method.
-* getMetadata: Returns the value of the Metadata variable.. The variables is passed to the WorkflowContextService.execute() method.
-* getCommittedVariables: Returns a read-only object map representing variables set by previous steps. If a variable is not modified in any of previous steps, the default value specified during configuring the Watched Folder is returned.
-* getCommittedResults: Returns a read-only Document map. The map represents the output files that are generated by the previous steps.
-* setVariable: The WorkflowContextProcessor implementation uses the variable to manipulate the variables which represent the custom dynamic data which flows between the steps. The name and type of the variables is identical to the name of the variables specified during [configuring the Watched Folder](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). To change value of a variable, call the setVariable API with a non-null value. To remove a variable, call setVariable() with a null value.
+* getWorkItem: Returns the value of the WorkItem variable. The variables is passed to the WorkflowContextService.execute() method.  
+* getWorkflowSession: Returns the value of the WorkflowSession variable. The variables is passed to the WorkflowContextService.execute() method.  
+* getMetadata: Returns the value of the Metadata variable.. The variables is passed to the WorkflowContextService.execute() method.  
+* getCommittedVariables: Returns a read-only object map representing variables set by previous steps. If a variable is not modified in any of previous steps, the default value specified during configuring the Watched Folder is returned.  
+* getCommittedResults: Returns a read-only Document map. The map represents the output files that are generated by the previous steps.  
+* setVariable: The WorkflowContextProcessor implementation uses the variable to manipulate the variables which represent the custom dynamic data which flows between the steps. The name and type of the variables is identical to the name of the variables specified during [configuring the Watched Folder](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). To change value of a variable, call the setVariable API with a non-null value. To remove a variable, call setVariable() with a null value.
 
 The following ProcessorContext APIs are also available:
 
-* getWatchFolderId: Returns the ID of the Watched Folder.
+* getWatchFolderId: Returns the ID of the Watched Folder.  
 * getInputMap: Returns a map of type Map&lt;String, Document&gt;. The keys of the map are the filename of input file and a document object containing the contents of the file. Use the getinputMap API to read the input files.
-* getConfigParameters: Returns an immutable map of type Map&lt;String, Object&gt;. The map contains the configuration parameters of a Watched Folder.
+* getConfigParameters: Returns an immutable map of type Map&lt;String, Object&gt;. The map contains the configuration parameters of a Watched Folder.  
 * setResult: The ContentProcessor implementation uses the API to write the output document the result folder. You can provide a name for the output file to the setResult API. The API might chooses to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern
 
 Consideration for the setResult API, when used in workflows:
 
-* To add a new output document which contributes to the overall workflow output, call the setResult API with a filename which has not been used as the output filename by any previous step.
-* To update an output generated by a previous step, call the setResult API with a filename already used by a previous step.
+* To add a new output document which contributes to the overall workflow output, call the setResult API with a filename which has not been used as the output filename by any previous step.  
+* To update an output generated by a previous step, call the setResult API with a filename already used by a previous step.  
 * To delete an output generated by a previous step, call setResult with a file-name already used by a previous step and null as the contents.
 
 >[!NOTE]
 >
 >Calling setResult API with null contents in any other scenario would result in an error.
 
-The following example is implemented as a workflow step. In the example, the ECMAscript uses a variable stepCount to track the number of times a step is called in the current workflow instance.
+The following example is implemented as a workflow step. In the example, the ECMAscript uses a variable stepCount to track the number of times a step is called in the current workflow instance.  
 The name of the output folder is a combination of current step number, original file name, and the prefix specified in the outPrefix parameter.
 
 The ECMAScript gets a reference of the workflow context service and creates an implementation of the WorkflowContextProcessor interface. The WorkflowContextProcessor implementation accepts input files, copies the file to a temporary location, and returns a document representing the copied file. Based on the value of the Boolean variable purgePrevious, the current step deletes the output generated last time by the same step when the step was started in the current workflow instance. In the end, the wfSvc.execute method is invoked to execute the WorkflowContextProcessor implementation. The contents of the output document are saved to the result folder at the physical path mentioned in the Watched Folder configuration node.
@@ -366,8 +368,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
+    log.info("Old variables: " + preVars);            
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -378,7 +380,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);
+        log.info("Purging previous step output " + prevStepOutName);        
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -399,7 +401,7 @@ If structure of a payload is different from the structure of the watched folder,
 1. Setup the client SDK in the build path of the maven-based project. To get started, you can download and open the following maven-based project in the IDE of your choice.
 1. Edit the payload mapper filter code available in sample bundle to suit your requirement.
 1. Use maven to create a bundle of the custom Payload Mapper Filter.
-1. Use [AEM bundles console](http://localhost:4502/system/console/bundles) to install the bundle.
+1. Use [AEM bundles console](https://localhost:4502/system/console/bundles) to install the bundle.
 
    Now, custom Payload Mapper Filter is listed in AEM Watched Folder UI. You can use it with your workflow.
 
@@ -508,8 +510,8 @@ Watched Folder scans the input folder at each pollInterval, picks up the number 
 Throttling prevents Watched Folder from invoking new jobs when the previous jobs are not completed. Watched Folder detect jobs in progress and process new jobs based on the batch size minus jobs in progress. For example, in the second invocation, if the number of jobs completed is only three and one job is still in progress, Watched Folder invokes only three more jobs.
 
 * Watched Folder relies on the number of files present in the stage folder to find out how many jobs are in progress. If files remain unprocessed in the stage folder, Watched Folder does not invoke any more jobs. For example, if the batch size is four and three jobs are stalled, Watched Folder invokes only one job in subsequent invocations. There are multiple scenarios that can cause files to remain unprocessed in the stage folder. When jobs are stalled, the administrator can terminate the process on the Process Management administration page so that Watched Folder moves the files out of the stage folder.
-* If the AEM Forms server goes down before Watched Folder invokes the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* If the AEM Forms server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* If the AEM Forms server goes down before Watched Folder invokes the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* If the AEM Forms server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
 ### Failure points and recoveryFailure points and recovery {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -528,7 +530,7 @@ After files are moved to the stage folder, invocation requests are created for e
 
 When Watched Folder cannot process the source files in the stage folder, you can recover the unprocessed files.
 
-1. Restart the application server or node.
+1. Restart the application server or node.  
 
 1. Stop Watched Folder from processing new input files. If you skip this step, it will be much harder to determine which files are unprocessed in the stage folder. To prevent Watched Folder from processing new input files, do one of the following tasks:
 
@@ -543,7 +545,7 @@ When Watched Folder cannot process the source files in the stage folder, you can
    >
    >You can look at the date and time stamp of the files in the stage directory. Depending on the number of files and normal processing time, you can determine which files are old enough to be considered stuck.
 
-1. Copy the unprocessed files from the stage directory to the input directory.
+1. Copy the unprocessed files from the stage directory to the input directory.  
 
 1. If you prevented Watched Folder from processing new input files in step 2, change the Include File Pattern to its previous value or re-enable the process that you disabled.
 
@@ -557,24 +559,24 @@ Output from the first conversion would go to \path\result. Input for the second 
 
 Administrators can specify the type of file that can invoke a service. Multiple file patterns can be established for each Watched Folder. A file pattern can be one of the following file properties:
 
-* Files with specific file name extensions; for example, &ast;.dat, &ast;.xml, .pdf, &ast;.&ast;
-* Files with specific names; for example, data.&ast;
+* Files with specific file name extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+* Files with specific names; for example, data.&#42;
 * Files with composite expressions in the name and extension, as in these examples:
 
     * Data[0-9][0-9][0-9].[dD][aA][tT]
-    * &ast;.[dD][Aa][Tt]
-    * &ast;.[Xx][Mm][Ll]
+    * &#42;.[dD][Aa][Tt]
+    * &#42;.[Xx][Mm][Ll]
 
 * The administrator can define the file pattern of the output folder in which to store the results. For the output folders (result, preserve, and failure), the administrator can specify any of these file patterns:
-* %Y = year (full)
-* %y = year (last two digits)
-* %M = month,
-* %D = day of month,
-* %d = day of year,
-* %h = hour,
-* %m = minute,
-* %s = second,
-* %R = random number between 0-9
+* %Y = year (full)  
+* %y = year (last two digits)  
+* %M = month,  
+* %D = day of month,  
+* %d = day of year,  
+* %h = hour,  
+* %m = minute,  
+* %s = second,  
+* %R = random number between 0-9  
 * %J = Job name
 
 For example, the path to the result folder may be C:\Adobe\Adobe LiveCycle ES4\BarcodedForms\%y\%m\%d.
@@ -592,17 +594,17 @@ You can configure a Watched Folder to initiate a workflow, service, or a script 
 
 Perform the following steps to configure a Watched Folder with PDF Generator:
 
-1. [Create an ECMAScript](/help/forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
-1. [Create a Workflow](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
-1. [Configure the Watched Folder](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
+1. [Create an ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
+1. [Create a Workflow](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
+1. [Configure the Watched Folder](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
 ### Create an ECMAScript {#create-an-ecmascript}
 
 The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Word (.docx) documents to PDF documents. Perform the following steps to create the script:
 
-1. Open CRXDE lite in a browser window. The URL is `https://[server]:[port]/crx/de`.
+1. Open CRXDE lite in a browser window. The URL is https://[server]:[port]/crx/de.  
 
-1. Navigate to /etc/workflow/scripts and create a folder named PDFG.
+1. Navigate to /etc/workflow/scripts and create a folder named PDFG.  
 
 1. In the PDFG folder, create a file named pdfg-openOffice-sample.ecma, and add the following code to the file:
 
@@ -610,7 +612,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
    // Custom ContentProcessor implementation which defines the processInputs() method purely in JS
    var impl = { processWorkflowContext: function (wrkfContext) {
-
+   
      //  var logger = Packages.org.slf4j.LoggerFactory.getLogger("cmb-mergeandprint-sample.ecma");
                    var inputMap=wrkfContext.getInputMap();
 
@@ -623,135 +625,52 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
                    var convertedDoc = pdfgOut.get("ConvertedDoc");
    //   logger.info("SuccessFully saved the document to Ouput Node");
        wrkfContext.setResult(entry.getKey().substring(0, entry.getKey().lastIndexOf('.'))+".pdf",convertedDoc); // Ownership flag set to true for auto temp-file deletion.
-
+   
    } }
-
+   
    wfSvc.execute(impl, graniteWorkItem, graniteWorkflowSession, metaData);
-
+   
    ```
 
 1. Save and close the file.
 
 ### Create a Workflow {#create-a-workflow}
 
-1. Open AEM Workflow UI in a browser window.
-
-   https://[servername]:[port]/worklow
+1. Open AEM Workflow UI in a browser window.   
+   https://[servername]:[port]/worklow  
 
 1. In the Models view, click **New**. In the New Workflow dialog, specify **Title**, and click **OK**.
 
-   ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
+   ![](assets/create-a-workflow-pdf.png)
 
-1. Select the newly created workflow and click **Edit**. The workflow opens in a new window.
+1. Select the newly created workflow and click **Edit**. The workflow opens in a new window.  
 
 1. Delete the default workflow step. Drag-and-drop the Process Step from the Sidekick to the Workflow.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![](assets/create-a-workflow-pdf-(2).png)
 
-1. Right-click the Process Step and select **Edit**. The Step Properties window appears.
+1. Right-click the Process Step and select **Edit**. The Step Properties window appears.  
 
 1. In the Process tab, select the ECMAScript. For example, the pdfg-openOffice-sample.ecma script created in [Create an ECMAScript](#p-create-an-ecmascript-p). Enable the **Handler Advance **option and click **OK**.
 
-   ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
+   ![](assets/create-a-workflow3-pdf.png)
 
 ### Configure the Watched Folder {#configure-the-watched-folder}
 
-1. Open CRXDE lite in a browser window. `https://[server]:[port]/crx/de/`
+1. Open CRXDE lite in a browser window. https://[server]:[port]/crx/de/
 
 1. Navigate to the /etc/fd/watchfolder/config/ folder and create a node of type nt:unstructured.
 
-   ![configure-the-watched-folder-pdf](assets/configure-the-watched-folder-pdf.png)
+   ![](assets/configure-the-watched-folder-pdf.png)
 
 1. Add the following properties to the node:
 
-    * folderPath (String): The path of the folder to be scanned at a defined time-intervals. The folder must be at a shared location with all servers having full access to the server.
-
-    * inputProcessorType (String): The type of the process to start. In this tutorial, specify workflow.
-
+    * folderPath (String): The path of the folder to be scanned at a defined time-intervals. The folder must be at a shared location with all servers having full access to the server.  
+      inputProcessorType (String): The type of the process to start. In this tutorial, specify workflow.  
+    
     * inputProcessorId (String): The behavior of the inputProcessorId property is based on the value specified for the inputProcessorType property. In this example, the value of the inputProcessorType property is workflow. So, for the inputProcessorId property specify the following path of the PDFG workflow: /etc/workflow/models/pdfg/jcr:content/model
 
     * outputFilePattern (String): Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
 
-   Apart from the mandatory properties mentioned above, Watched Folders also support a few optional properties. For complete list and description of optional properties, see [Watched Folder properties](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   Apart from the mandatory properties mentioned above, Watched Folders also support a few optional properties. For complete list and description of optional properties, see [Watched Folder properties](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
 
-## Using Central Migration Bridge (Deprecated) with a Watched Folder {#using-central-migration-bridge-deprecated-with-a-watched-folder}
-
-You can configure a Watched Folder to initiate a workflow, service, or a script to process the input files. In the following section, we will configure a Watched Folder to initiate an ECMAScript. The ECMAScript would use OutputCentralService and sendToPrinter functionality of the SendToPrinterService.
-
-Perform the following steps to configure a Watched Folder with PDF Generator:
-
-1. [Create an ECMAScript](/help/forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
-1. [Create a Workflow](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
-1. [Configure the Watched Folder](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
-
-### Create an ECMAScript {#create-an-ecmascript-1}
-
-The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Word (.docx) documents to PDF documents. Perform the following steps to create the script:
-
-1. Open CRXDE lite in a browser window. The URL is `https://[server]:[port]/crx/de`.
-
-1. Navigate to /etc/workflow/scripts and create a folder named **CMB**.
-
-1. In the CMB folder, create a file named cmb-mergeandprint-sample.ecma, and add the following code to the file:
-
-   ```java
-   var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
-   // Custom ContentProcessor implementation which defines the processInputs() method purely in JS
-   var impl = { processWorkflowContext: function (wrkfContext) {
-
-     //  var logger = Packages.org.slf4j.LoggerFactory.getLogger("cmb-mergeandprint-sample.ecma");
-                   var inputMap=wrkfContext.getInputMap();
-
-                   var centralMigrationBridgeService = sling.getService(Packages.com.adobe.fd.cmb.api.OutputCentralService);
-       var result = new Packages.java.util.HashMap();
-       var entry = inputMap.entrySet().iterator().next();
-                   var centralResult = centralMigrationBridgeService.centralMerge(entry.getValue(),inDataDocument,null, null, null, null);
-      var pdfDocument = centralResult.getResultDoc();
-
-   //   logger.info("SuccessFully saved the document to Ouput Node");
-       wrkfContext.setResult(entry.getKey().substring(0, entry.getKey().lastIndexOf('.'))+".pdf",pdfDocument); // Ownership flag set to true for auto temp-file deletion.
-
-   } }
-
-   wfSvc.execute(impl, graniteWorkItem, graniteWorkflowSession, metaData);
-
-   ```
-
-1. Save and close the file.
-
-1. Navigate to the jcr:content node of the cmb-mergeandprint-sample.ecma file and add a jcr:title property to the node.
-
-   >[!NOTE]
-   >
-   >While creating the workflow, the title property is used to locate the ECMAScript.
-
-### Create a Workflow {#create-a-workflow-1}
-
-1. Open AEM Workflow UI in a browser window. `https://[server]:[port]/worklow`
-
-1. In the Models view, click **New**. In the New Workflow dialog, specify **Title**, and click **OK**.
-1. Select the newly created workflow and click **Edit**. The workflow opens in a new window.
-1. Delete the default workflow step. Drag-and-drop the Process Step from the Sidekick to the Workflow.
-
-   ![create-a-workflow-cmb](assets/create-a-workflow-cmb.png)
-
-1. Right-click the Process Step and select **Edit**. The Step Properties window appears.
-1. In the Process tab select the ECMAScript. For example, the cmb-mergeandprint-sample.ecma ECMAScript created in [Create a Workflow](/help/forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p) section. Enable the **Handler Advance** option, and click **OK**.
-
-### Configure the Watched Folder {#configure-the-watched-folder-1}
-
-1. Open CRXDE lite in a browser window. `https://[server]:[port]/crx/de/`
-
-1. Navigate to the /etc/fd/watchfolder/config/ folder and create a node named CMBWatchedFolder of type `nt:unstructured`.
-
-1. Add the following properties to the node:
-
-    * **folderPath (String)**: The path of the folder to be scanned at a defined time-intervals. The folder must be at a shared location with all servers having full access to the server.
-    * **inputProcessorType (String)**: The type of the process to start. In this tutorial, specify workflow.
-    * **inputProcessorId (String)**: The behavior of the inputProcessorId property is based on the value specified for the inputProcessorType property. In this example, the value of the inputProcessorType property is workflow. So, for the inputProcessorId property specify the following path of the PDFG workflow:
-
-      `/etc/workflow/models/cmb/jcr:content/model`
-
-    * **outputFilePattern (String)**: Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
-
-Apart from the mandatory properties mentioned above, Watched Folders also support a few optional properties. For the complete list and description of optional properties, see [Watched Folder properties](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).

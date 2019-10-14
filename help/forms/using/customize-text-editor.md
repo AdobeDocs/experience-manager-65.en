@@ -3,14 +3,16 @@ title: Customize text editor
 seo-title: Customize text editor
 description: Learn how to customize text editor.
 seo-description: Learn how to customize text editor.
-uuid: 28963da7-607f-41ed-8f72-8b19779f41d0
+uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
+discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
+docset: aem65
+
 ---
 
-# Customize text editor {#customize-text-editor}
+# Customize text editor{#customize-text-editor}
 
 ## Overview {#overview}
 
@@ -38,8 +40,8 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
     1. Right-click the items folder at the following path and select **Overlay Node**:
 
        `/libs/fd/cm/config`
-
-       ![Overlay node](assets/1-4.png)
+    
+       ![Overlay node](assets/1-1.png)
 
     1. Ensure that the Overlay Node dialog has the following values:
 
@@ -47,11 +49,11 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
 
        **Location:** /apps/
 
-       **Match Node Types:** Selected
+       **Match** **Node Types:** Selected
+    
+       ![Overlay node](assets/2.png)
 
-       ![Overlay node](assets/2-2.png)
-
-    1. Click **OK**. The folder structure is created in the apps folder.
+    1. Click **OK**. The folder structure is created in the apps folder.  
 
     1. Click **Save All**.
 
@@ -61,19 +63,19 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
     1. Right-click the following folder and select **Paste:**
 
        `apps/fd/cm/config`
-
+    
     1. The name of pasted file, by default, is `copy of tbxeditor-config.xml.` Rename the file to `tbxeditor-config.xml` and click **Save All**.
 
 1. Open the tbxeditor-config.xml file at apps/fd/cm/config and then make the required changes.
 
     1. Double-click the tbxeditor-config.xml file at apps/fd/cm/config. The file opens.
 
-       ```xml
+       ```xml    
        <editorConfig>
           <bulletIndent>0.25in</bulletIndent>
-
+           
           <defaultDateFormat>DD-MM-YYYY</defaultDateFormat>
-
+           
           <fonts>
              <default>Times New Roman</default>
              <font>_sans</font>
@@ -90,7 +92,7 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
              <font>Times</font>
              <font>Verdana</font>
           </fonts>
-
+           
           <fontSizes>
              <default>12</default>
              <fontSize>8</fontSize>
@@ -110,9 +112,9 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
              <fontSize>48</fontSize>
              <fontSize>72</fontSize>
           </fontSizes>
-
+           
           <lineHeights>
-             <default>2</default>
+             <default>2</default>     
              <lineHeight>2</lineHeight>
              <lineHeight>3</lineHeight>
              <lineHeight>4</lineHeight>
@@ -129,7 +131,7 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
              <lineHeight>15</lineHeight>
              <lineHeight>16</lineHeight>
           </lineHeights>
-
+           
           <letterSpacings>
              <default>0</default>
              <letterSpacing>0</letterSpacing>
@@ -160,10 +162,10 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
         * Default values of font family and size, height, letter spacing, and date format
         * Bullet indents
 
-       For example, to add a Japanese font called Sazanami Mincho Medium, you need to make the following entry in the XML file: `<font>Sazanami Mincho Medium</font>`. You also need to have this font installed on the client machine used to access and work with the font customization. For more information, see [Add custom fonts to the client computer](#addcustomfonts).
-
-       You can also change the defaults for various aspects of text and, by removing the entries, remove the fonts from the text editor.
-
+       For example, to add a Japanese font called Sazanami Mincho Medium, you need to make the following entry in the XML file: `<font>Sazanami Mincho Medium</font>`. You also need to have this font installed on the client machine used to access and work with the font customization. For more information, see [Add custom fonts to the client computer](#addcustomfonts).   
+  
+       You can also change the defaults for various aspects of text and, by removing the entries, remove the fonts from the text editor. 
+    
     1. Click **Save All**.
 
 ## Add custom fonts to the client computer {#addcustomfonts}
@@ -181,7 +183,7 @@ After you have made changes to fonts in the tbxeditor-config.xml file in CRX and
 
 For example, the Sazanami Mincho Medium font added in the [Customize fonts by editing the tbxeditor-config.xml file in CRX](#customizefonts) procedure appears in the text editor UI as following:
 
-![sazanamiminchointext](assets/sazanamiminchointext.png)
+![](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >

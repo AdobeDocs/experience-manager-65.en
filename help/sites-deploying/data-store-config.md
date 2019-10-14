@@ -3,13 +3,15 @@ title: Configuring node stores and data stores in AEM 6
 seo-title: Configuring node stores and data stores in AEM 6
 description: Learn how to configure node stores and data stores and how to perform data store garbage collection.
 seo-description: Learn how to configure node stores and data stores and how to perform data store garbage collection.
-uuid: b6bb43c7-23e9-428a-b977-6d4e246e714e
+uuid: 1a58c0ba-1c32-4539-ad0d-0a27c8c4ff5e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
+discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
+docset: aem65
 legacypath: /deploy/platform/data-store-config
+
 ---
 
 # Configuring node stores and data stores in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
@@ -45,7 +47,7 @@ To configure both the node store and the data store, perform these steps:
 >
 >Newer versions of Oak employ a new naming scheme and format for OSGi configuration files. The new naming scheme requires that the configuration file be named **.config** and the new format requires values to be typed and is [documented here](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
->If you upgrade from an older version of Oak, ensure that you make a backup of the `crx-quickstart/install` folder first. After the upgrade, restore the contents of the folder to the upgraded installation and modify the extension of the configuration files from **.cfg** to **.config**.
+>If you upgrade from an older version of Oak, ensure that you make a backup of the `crx-quickstart/install`folder first. After the upgrade, restore the contents of the folder to the upgraded installation and modify the extension of the configuration files from **.cfg** to **.config**.
 >
 >In case you are reading this article in preparation for an upgrade from an **AEM 5.x** installation, ensure that you consult the [upgrade](https://docs.adobe.com/content/docs/en/aem/6-0/deploy/upgrade.html) documentation first.
 
@@ -77,17 +79,17 @@ tarmk.size=I"256"
 customBlobStore=B"true"
 ```
 
-### Document Node Store {#document-node-store}
+#### Document Node Store {#document-node-store}
 
-The document node store is the basis of AEM's MongoMK implementation. It uses the `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService` **PID**. The following configuration options are available:
+The document node store is the basis of AEM's MongoMK implementation. It uses the `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. The following configuration options are available:
 
 * `mongouri`: The [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) required to connect to Mongo Database. The default is `mongodb://localhost:27017`
 
-* `db`: Name of the Mongo database. The default is **Oak** . However, new AEM 6 installations use **aem-author** as the default database name.
+* `db`: Name of the Mongo database. The default is **Oak** ``. However, new AEM 6 installations use **aem-author** ``as the default database name.
 
-* `cache`: The cache size in MB. This is distributed among various caches used in DocumentNodeStore. The default is `256`.
+* `cache`: The cache size in MB. This is distributed among various caches used in DocumentNodeStore. The default is `256`
 
-* `changesSize`: Size in MB of capped collection used in Mongo for caching the diff output. The default is `256`.
+* `changesSize`: Size in MB of capped collection used in Mongo for caching the diff output. The default is `256`
 
 * `customBlobStore`: Boolean value indicating that a custom data store will be used. The default is `false`.
 
@@ -124,9 +126,9 @@ This is the implementation of [FileDataStore](https://jackrabbit.apache.org/api/
 
 These configuration options are available:
 
-* `repository.home`: Path to repository home under which various repository related data is stored. By default, binary files would be stored under `crx-quickstart/repository/datastore` directory.
+* `repository.home`: Path to repository home under which various repository related data is stored. By default, binary files would be stored under `crx-quickstart/repository/datastore` directory
 
-* `path`: Path to the directory under which the files would be stored. If specified then it takes precedence over `repository.home` value.
+* `path`: Path to the directory under which the files would be stored. If specified then it takes precedence over `repository.home` value
 
 * `minRecordLength`: The minimum size in bytes of a file stored in the data store. Binary content less than this value would be inlined.
 
@@ -138,11 +140,11 @@ These configuration options are available:
 
 AEM can be configured to store data in Amazon's Simple Storage Service (S3). It uses the `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID for configuration.
 
-In order to enable the S3 data store functionality, a feature pack containing the S3 Datastore Connector needs to be downloaded and installed. Go to the [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/ ) and download the latest version from the 1.8.x versions of the feature pack (for example, com.adobe.granite.oak.s3connector-1.8.0.zip). Additionally, you also need to download and install the latest AEM service pack as listed on the [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-4/release-notes/feature-packs-release-notes.html) page.
+In order to enable the S3 data store functionality, a feature pack containing the S3 Datastore Connector needs to be downloaded and installed. Go to the [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) and download the latest version from the 1.10.x versions of the feature pack (for example, com.adobe.granite.oak.s3connector-1.10.0.zip). Additionally, you also need to download and install the latest AEM service pack as listed on the [AEM 6.5 Release Notes](../../../release-notes/sp-release-notes.md) page.
 
 >[!NOTE]
 >
->When using AEM 6.5 with TarMK, binaries will be stored by default in the `FileDataStore`. To use TarMK with the S3 Datastore, you need to start AEM using the `crx3tar-nofds` runmode, for example:
+>When using AEM 6.4 with TarMK, binaries will be stored by default in the `FileDataStore`. To use TarMK with the S3 Datastore, you need to start AEM using the `crx3tar-nofds` runmode, for example:
 
 ```shell
 java -jar aem6.4.jar -r crx3tar-nofds
@@ -160,7 +162,7 @@ Once downloaded, you can install and configure the S3 Connector as follows:
 
    Copy all the contents from the above location to `<aem-install>/crx-quickstart/install.`
 
-1. If AEM is already configured to work with the Tar or MongoDB storage, remove any existing configuration files from the `aem-install/crx-quickstart/install` folder before proceeding. The files that need to be removed are:
+1. If AEM is already configured to work with the Tar or MongoDB storage, remove any existing configuration files from the ***&lt;aem-install&gt;***/*crx-quickstart*/*install* folder before proceeding. The files that need to be removed are:
 
     * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
     * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -206,7 +208,8 @@ If you need to upgrade to a new version of the 1.8.x S3 connector (for example, 
 You can use the configuration file with the following options:
 
 * accessKey: The AWS access key.
-* secretKey: The AWS secret access key. **Note:** Alternatively, [IAM roles](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) can be used for authentication. If you are using IAM roles you no longer need to specify the `accessKey` and `secretKey`.
+* secretKey: The AWS secret access key. **Note: **Alternatively, [IAM roles](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) can be used for authentication. If you are using IAM roles you no longer need to specify the `accessKey` and `secretKey`.
+
 * s3Bucket: The bucket name.
 * s3Region: The bucket region.
 * path: The path of the data store. The default is **&lt;AEM install folder&gt;/repository/datastore**
@@ -278,7 +281,7 @@ The local cache will be checked for the record of the requested file/blob before
 
 **Asynchronous Upload**
 
-The cache supports asynchronous uploads to the DataStore. The files are staged locally, in the cache (on the file system), and an asynchronous job starts to upload the file. The number of asynchronous uploads is limited by the size of the staging cache. The size of the staging cache is configured by using the `stagingSplitPercentage` parameter. This parameter defines the percentage of cache size to be used for the staging cache. Also, the percentage of cache available for downloads is calculated as **(100 - `stagingSplitPercentage`) &ast; `cacheSize`**.
+The cache supports asynchronous uploads to the DataStore. The files are staged locally, in the cache (on the file system), and an asynchronous job starts to upload the file. The number of asynchronous uploads is limited by the size of the staging cache. The size of the staging cache is configured by using the `stagingSplitPercentage` parameter. This parameter defines the percentage of cache size to be used for the staging cache. Also, the percentage of cache available for downloads is calculated as **(100 - `stagingSplitPercentage`) &#42; `cacheSize`**.
 
 The asynchronous uploads are multi-threaded and the number of threads is configured by using the `uploadThreads` parameter.
 
@@ -286,22 +289,22 @@ The files are moved to the main download cache after the uploads are complete. W
 
 Failed uploads (for example, because of a network disruption) are put on a retry queue and retried periodically. The retry interval is configured by using the `stagingRetryInterval parameter`.
 
-### Configuring binaryless replication with Amazon S3 {#configuring-binaryless-replication-with-amazon-s}
+#### Configuring binaryless replication with Amazon S3 {#configuring-binaryless-replication-with-amazon-s}
 
 In order to configure binaryless replication with S3, the following steps are required:
 
 1. Install the author and publish instances and make sure they are started properly.
-1. Go to the replication agent settings, by opening a page to *http://localhost:4502/etc/replication/agents.author/publish.html*.
+1. Go to the replication agent settings, by opening a page to *https://localhost:4502/etc/replication/agents.author/publish.html*.
 1. Press the **Edit** button in the **Settings** section.
 1. Change the **Serialization** type option to **Binary less**.
 
 1. Add the parameter " `binaryless`= `true`" in the transport uri. After the change, the uri should look similar to the following:
 
-   *http://localhost:4503/bin/receive?sling:authRequestLogin=1&binaryless=true*
+   *https://localhost:4503/bin/receive?sling:authRequestLogin=1&binaryless=true*
 
 1. Restart all author and publish instances to let the changes take effect.
 
-### Creating a cluster using S3 and MongoDB {#creating-a-cluster-using-s-and-mongodb}
+#### Creating a cluster using S3 and MongoDB {#creating-a-cluster-using-s-and-mongodb}
 
 1. Unpack CQ quickstart using the following command:
 
@@ -312,6 +315,7 @@ In order to configure binaryless replication with S3, the following steps are re
 1. Create these two files inside the `crx-quickstart` folder:
 
     * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*config*
+
     * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*config*
 
    After the files have been created, add the configuration options as needed.
@@ -330,6 +334,7 @@ In order to configure binaryless replication with S3, the following steps are re
 1. First, create the data store configuration file on each instances that is required to share the data store:
 
     * If you are using a `FileDataStore`, create a file named `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` and place it in the `<aem-install>/crx-quickstart/install` folder.
+
     * If using S3 as the data store, create a file named o `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` in the `<aem-install>/crx-quickstart/install` folder as above.
 
 1. Modify the data store configuration files on each instance to point to the same data store. For more information, see [this article](/help/sites-deploying/data-store-config.md#data-store-configurations).
@@ -347,12 +352,19 @@ In order to configure binaryless replication with S3, the following steps are re
    >
    >The Oak-run tool can be downloaded from this location:
    >
+   >
    >[https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
+   >
    >
    >Be aware that different versions of the tool need to be used depending on the Oak version you use with your AEM installation. Please check the version requirements list below before using the tool:
    >
-   >* For Oak versions **1.2.x** use the Oak-run **1.2.12 or newer**
-   >* For Oak versions **newer than the above**, use the version of Oak-run that matches the Oak core of your AEM installation.
+   >
+   >
+   >    * For Oak versions **1.2.x** use the Oak-run **1.2.12 or newer**
+   >
+   >    * For Oak versions **newer than the above**, use the version of Oak-run that matches the Oak core of your AEM installation.
+   >
+   >
 
 1. Lastly, validate the configuration. In order to do this, you need to look for a unique file added to the data store by each repository that is sharing it. The format of the files is `repository-[UUID]`, where the UUID is a unique identifier of each individual repository.
 
@@ -371,7 +383,7 @@ In order to enable the Azure data store functionality, a feature pack containing
 
 >[!NOTE]
 >
->When using AEM 6.5 with TarMK, binaries will be stored by default in the FileDataStore. To use TarMK with the Azure DataStore, you need to start AEM using the `crx3tar-nofds` runmode, for example:
+>When using AEM 6.4 with TarMK, binaries will be stored by default in the FileDataStore. To use TarMK with the Azure DataStore, you need to start AEM using the `crx3tar-nofds` runmode, for example:
 
 ```shell
 java -jar aem6.4.jar -r crx3tar-nofds
@@ -441,7 +453,7 @@ You can run data store garbage collection by:
 1. Scroll to the end of the page, and click the **startDataStoreGC(boolean markOnly)** link.
 1. In the following dialogue, enter `false` for the `markOnly` parameter, then click **Invoke**:
 
-   ![chlimage_1-122](assets/chlimage_1-122.png)
+   ![](assets/chlimage_1-9.png)
 
    >[!NOTE]
    >
@@ -458,7 +470,7 @@ With newer versions of AEM, data store garbage collection can also be run on dat
 1. Make sure that any maintenance tasks configured for the data store garbage collection are disabled on all repository instances sharing the data store.
 1. Run the steps mentioned in [Binary Garbage Collection](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) individually on **all** repository instances sharing the data store. However, make sure to enter `true` for the `markOnly` parameter before clicking the Invoke button:
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![](assets/chlimage_1-10.png)
 
 1. After completing the above procedure on all instances, run the data store garbage collect again from **any** of the instances:
 

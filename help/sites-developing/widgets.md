@@ -579,7 +579,7 @@ To use the **Rich Text Editor (RTE) Plug-in** based dialog:
    follow the steps described for the [Example 2: Single Panel Dialog](#example-single-panel-dialog)
 
 1. Edit the component.
-1. Clickthelast icon on the right (the one with four arrows). Enter a path and click **OK**:
+1. Click the the last icon on the right (the one with four arrows). Enter a path and click **OK**:
    The path is displayed within brackets ([ ]).
 
 1. Click **OK** to close the Rich Text Editor.

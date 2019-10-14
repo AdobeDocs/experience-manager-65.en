@@ -1,15 +1,17 @@
 ---
 title: Authoring in-context help for form fields
 seo-title: Authoring in-context help for form fields
-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
-seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
-uuid: 07427ddd-9d35-41f6-a807-0e418aade199
+description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos. 
+seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos. 
+uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
+discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
+docset: aem65
+
 ---
 
-# Authoring in-context help for form fields {#authoring-in-context-help-for-form-fields}
+# Authoring in-context help for form fields{#authoring-in-context-help-for-form-fields}
 
 ## Introduction {#introduction}
 
@@ -21,8 +23,8 @@ This article discusses how form authors can add in-context help while authoring 
 
 You can specify in-context help using the following options in the Help Content section of the properties tab in the sidebar.
 
-* [Short description](/help/forms/using/authoring-in-field-help.md#p-short-description-p)
-* [Long description](/help/forms/using/authoring-in-field-help.md#p-long-description-p)
+* [Short description](../../forms/using/authoring-in-field-help.md#p-short-description-p)
+* [Long description](../../forms/using/authoring-in-field-help.md#p-long-description-p)
 
 ![In-context help for form fields](assets/descriptions.png)
 

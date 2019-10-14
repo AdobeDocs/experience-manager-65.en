@@ -3,19 +3,17 @@ title: Page Authoring with Content Fragments
 seo-title: Page Authoring with Content Fragments
 description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
-uuid: 66ccdff8-1658-4374-8562-97f81f434488
+uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
+discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
+docset: aem65
+
 ---
 
 # Page Authoring with Content Fragments{#page-authoring-with-content-fragments}
-
->[!CAUTION]
->
->Some Content Fragment functionality requires the application of [AEM 6.4 Service Pack 2 (6.4.2.0) or later](/help/release-notes/sp-release-notes.md).
 
 Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments.md).
 
@@ -25,7 +23,7 @@ Together with the updated JSON exporter, structured content fragments can also b
 
 >[!NOTE]
 >
->**Content Fragments** and **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
+>**Content Fragments** and ** [Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
 >
 >* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
@@ -66,79 +64,86 @@ The content fragments enable:
 
 1. Open your page for editing.
 
-1. Add the **[!UICONTROL Content Fragment]** component; from either the **[!UICONTROL Components]** browser or **[!UICONTROL Insert New Component]**.
+1. Add the **Content Fragment** component; from either the **Components** browser or **Insert New Component**.
 
 1. You can either:
 
-    * Open the **[!UICONTROL Assets]** browser and filter for **[!UICONTROL Content Fragments]** (the default is Images). Then drag the required fragment onto the component instance.
-    * Select the content fragment component, then **[!UICONTROL Configure]** from the toolbar. In the dialog you can open the selection dialog to browse and select the required **[!UICONTROL Content Fragment]**.
+    * Open the **Assets** browser and filter for **Content Fragments** (the default is Images). Then drag the required fragment onto the component instance.
+
+    * Select the content fragment component, then **Configure** from the toolbar. In the dialog you can open the selection dialog to browse and select the required **Content Fragment**.
 
    >[!NOTE]
    >
    >An alternative method is to drag a specific content fragment directly onto the page. This will automatically create the associated component (Content Fragment).
 
-1. Initially the content from the **[!UICONTROL Main]** Element and **[!UICONTROL Master]** (variation) will be shown. You can [select other elements and/or variations](#selecting-the-element-or-variation) as required.
+1. Initially the content from the **Main** Element and **Master** (variation) will be shown. You can [select other elements and/or variations](#selecting-the-element-or-variation) as required.
 
-   ![cfm-6420-01](assets/cfm-6420-01.png)
+   ![](assets/cfm-6420-01.png)
 
    >[!NOTE]
    >
    >For more information about further editing functionality see also:
    >
-   >* [Responsive Layout](/help/sites-authoring/responsive-layout.md)
-   >* [Editing Page Content](/help/sites-authoring/editing-content.md)
+   >
+   >
+   >    * [Responsive Layout](/help/sites-authoring/responsive-layout.md)
+   >    * [Editing Page Content](/help/sites-authoring/editing-content.md)
+   >
+   >
 
-## Selecting the Element or Variation {#selecting-the-element-or-variation}
+### Selecting the Element or Variation {#selecting-the-element-or-variation}
 
-Open the fragment's **[!UICONTROL Configuration]** dialog to configure the fragment for use on the current page. The dialog can depend on the component used.
+Open the fragment's **Configuration** dialog to configure the fragment for use on the current page. The dialog can depend on the component used.
 
 In the appropriate configuration dialog you can select the available parameters, including:
 
-* **[!UICONTROL Content Fragment]**
+* **Content Fragment**
 
   Specify the fragment to be used.
 
-* **[!UICONTROL Display Mode]**:
+* **Display Mode**:
 
-    * **[!UICONTROL Single Text Element]**
-    * **[!UICONTROL Multiple Element]**
+    * **Single Text Element**
 
-* **[!UICONTROL Element]**
+    * **Multiple Element**
 
-    * The default **[!UICONTROL Main]** will always be available.
+* **Element**
+
+    * The default **Main** will always be available.
     * A selection will be available if the fragment was created with an appropriate template.
 
   >[!NOTE]
   >
   >The elements available depend on the template used.
 
-* **[!UICONTROL Variation]**
+*
+  **Variation**
 
-    * The default **[!UICONTROL Master]** will always be available.
+    * The default **Master** will always be available.
     * A selection will be available if variations were created for the fragment.
 
-* **[!UICONTROL Paragraphs]**: specify the range of paragraph(s) to include:
+* **Paragraphs**: specify the range of paragraph(s) to include:
 
-    * **[!UICONTROL All]**
-    * **[!UICONTROL Range]**: for example, `1`, `3-5`, `9-*`
+    * **All**
+    * **Range**: for example, `1`, `3-5`, `9-*`
 
-        * **[!UICONTROL Handle headings as their own paragraphs]**
+        * **Handle headings as their own paragraphs**
 
-* **[!UICONTROL Handle headings as their own paragraphs]**
+* **Handle headings as their own paragraphs**
 
-## Quick Connection to Fragment Editor {#quick-connection-to-fragment-editor}
+### Quick Connection to Fragment Editor {#quick-connection-to-fragment-editor}
 
-You can open the fragment source for editing (the asset) using the **[!UICONTROL Edit]** icon on the component toolbar. This will allow you to [edit and manage the content fragment](/help/assets/content-fragments.md).
+You can open the fragment source for editing (the asset) using the **Edit** icon on the component toolbar. This will allow you to [edit and manage the content fragment](/help/assets/content-fragments.md).
 
 >[!CAUTION]
 >
 >As always, editing the fragment source will impact all pages that reference that content fragment.
 
-## Adding In-Between Content {#adding-in-between-content}
+### Adding In-Between Content {#adding-in-between-content}
 
-When a specific content fragment is added to the page, there is a **[!UICONTROL Drag components here]** placeholder between each HTML paragraph (and at the top/bottom) of the fragment.
+When a specific content fragment is added to the page, there is a **Drag components here** placeholder between each HTML paragraph (and at the top/bottom) of the fragment.
 
-This allows you to add extra content [in-between (i.e. in-between content)](/help/assets/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) the fragment content (at any of the available points), without having to change the root fragment.
+This allows you to add extra content [in-between (i.e. in-between content)](/help/assets/content-fragments.md#inbetweencontent) the fragment content (at any of the available points), without having to change the root fragment.
 
 For in-between content you can:
 
@@ -150,7 +155,7 @@ For in-between content you can:
 >
 >The in-between content is page content. It is not stored in the content fragment.
 
-![cfm-6420-02](assets/cfm-6420-02.png)
+![](assets/cfm-6420-02.png)
 
 >[!NOTE]
 >
@@ -169,7 +174,7 @@ For in-between content you can:
 >* Unless the two paragraph structures conflict; in such a case, the in-between content is not displayed (although it is still present internally).
 >
 
-## Using Associated Content {#using-associated-content}
+### Using Associated Content {#using-associated-content}
 
 If you have [associated content](/help/assets/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
 
@@ -179,17 +184,17 @@ If you have [associated content](/help/assets/content-fragments-assoc-content.md
 
 >[!NOTE]
 >
->If you have multiple content fragments on the one page, the **[!UICONTROL Associated Content]** tab will show assets appropriate to all fragments.
+>If you have multiple content fragments on the one page, the **Associated Content** tab will show assets appropriate to all fragments.
 
-Once you have added a fragment with associated content to your page a new tab (**[!UICONTROL Associated Content]**) is opened in the side panel.
+Once you have added a fragment with associated content to your page a new tab (**Associated Content**) is opened in the side panel.
 
 From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component will be created):
 
-![cfm-6420-03](assets/cfm-6420-03.png)
+![](assets/cfm-6420-03.png)
 
-## Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
+### Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 
-If [assets (e.g. images) have been inserted into the fragment itself](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment), then the options for editing these assets in the page editor is limited.
+If [assets (e.g. images) have been inserted into the fragment itself](/help/assets/content-fragments-authoring.md#insertingassetsintoyourfragment), then the options for editing these assets in the page editor is limited.
 
 For example, for an image you can
 
@@ -200,10 +205,10 @@ For example, for an image you can
 
 Other changes, such as move, copy, delete must be made in the fragment editor.
 
-## Publishing {#publishing}
+### Publishing {#publishing}
 
 Fragments need to be published so they can used used on your published web pages:
 
-* A fragment can be published after [creating the fragment in the Assets console](/help/assets/content-fragments-managing.md#publishing-and-referencing-a-fragment).
+* A fragment can be published after [creating the fragment in the Assets console](/help/assets/content-fragments.md#publishingandreferencingafragment).
 * If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
 

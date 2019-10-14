@@ -3,13 +3,15 @@ title: Creating accessible adaptive forms
 seo-title: Creating accessible adaptive forms
 description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
-uuid: eceb3282-0b90-4e0a-8b89-137d27029747
+uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
+discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
+docset: aem65
+
 ---
 
-# Creating accessible adaptive forms {#creating-accessible-adaptive-forms}
+# Creating accessible adaptive forms{#creating-accessible-adaptive-forms}
 
 ## Introduction {#introduction}
 
@@ -32,7 +34,7 @@ The label that is perceived by screen readers need not necessarily be the same a
 
 To use the Accessibility option, follow these steps:
 
-1. Select a component and tap ![cmppr](assets/cmppr.png).
+1. Select a component and tap ![](assets/cmppr.png).
 1. Click **Accessibility **in the sidebar to choose the desired accessibility option.
 
 ### Accessibility options in form components {#accessibility-options-in-form-components}
@@ -63,9 +65,9 @@ Images can help improve comprehension for some users. However, for users using s
 
 Ensure that the text describes the object and its purpose in the form. A screen reader reads this alternative text when it encounters an image. An image must always have an alternative text specified.
 
-Select an image component and tap ![cmppr](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image.
+Select an image component and tap ![](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image. 
 
-![Alternate text for an image](assets/image-properties.png)
+![Alternate text for an image](assets/image-properties.png) 
 
 ## Provide sufficient color contrast {#provide-sufficient-color-contrast}
 
@@ -75,7 +77,7 @@ Users with vision impairment rely on a high contrast between text and the backgr
 
 It is recommended that you use the default font and background colors--content in black color on a white background. If you change the default colors, choose either a dark foreground color on a light background color, or vice versa.
 
-See [Creating custom themes for adaptive forms](/help/forms/using/creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the adaptive forms.
+See [Creating custom themes for adaptive forms](/forms/using/creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the adaptive forms.
 
 ## Ensure that form controls are keyboard accessible {#ensure-that-form-controls-are-keyboard-accessible}
 
@@ -90,4 +92,4 @@ The following keyboard shortcuts are available in AEM Forms.
 | Move to the next panel |Alt+Right Arrow |
 | Move to the previous panel |Alt+Left Arrow |
 | Reset the filled data in a form |Alt+R |
-| Submit a form |Alt+S |configuring-watched-folder-endpoints.md |
+| Submit a form |Alt+S |

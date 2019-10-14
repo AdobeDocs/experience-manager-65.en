@@ -3,13 +3,15 @@ title: Data Dictionary
 seo-title: Data Dictionary
 description: Data dictionary in Correspondence Management lets you integrate back-end data to letters as inputs for use in customer correspondence.
 seo-description: Data dictionary in Correspondence Management lets you integrate back-end data to letters as inputs for use in customer correspondence.
-uuid: cc976dff-f243-4807-a92c-81b78476a744
+uuid: 178a285e-b4a4-4a36-a2aa-b43ecb0871ed
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
+discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
+docset: aem65
+
 ---
 
-# Data Dictionary {#data-dictionary}
+# Data Dictionary{#data-dictionary}
 
 ## Introduction {#introduction}
 
@@ -26,9 +28,9 @@ Typically, business users do not require knowledge of metadata representations s
 ### Data Dictionary workflow {#data-dictionary-workflow}
 
 1. An Author [creates the Data Dictionary](#createdatadictionary) by either uploading a schema or from scratch.
-1. The Author creates letter and Interactive Communications based on the data dictionary and associates data dictionary elements in letter and Interactive Communications wherever required.
-1. An author can download sample data XML file, which is based on a data dictionary's schema. The author can modify the sample data XML file, which can be associated as test data with the data dictionary. The same gets used during the letter preview.
-1. While [previewing a letter](/help/forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), an Author chooses to preview the letter with data (Custom Preview). The letter opens prepopulated with the data that Author provided. This opens in the create correspondence interface. The Agent who is previewing this letter can modify the content, data, and attachments in this letter and can submit the final letter. For more information on creating letters, see [Create correspondence](/help/forms/using/create-letter.md).
+1. The Author creates letter and Interactive Communications based on the data dictionary and associates data dictionary elements in letter and Interactive Communications wherever required.   
+1. An author can download sample data XML file, which is based on a data dictionary's schema. The author can modify the sample data XML file, which can be associated as test data with the data dictionary. The same gets used during the letter preview. 
+1. While [previewing a letter](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), an Author chooses to preview the letter with data (Custom Preview). The letter opens prepopulated with the data that Author provided. This opens in the create correspondence interface. The Agent who is previewing this letter can modify the content, data, and attachments in this letter and can submit the final letter. For more information on creating letters, see [Create correspondence](../../forms/using/create-letter.md).
 
 ## Prerequisite {#prerequisite}
 
@@ -50,13 +52,13 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
     * **Name:** The unique name for the data dictionary. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field and the special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens. Although the value in the Title field is automatically copied to the Name, you can edit the value.
 
     * **Description**: (Optional) Description of the data dictionary.
-    * **Tags:** (Optional) To create custom tag, enter value in text field and press Enter. You can see your tag below text field of tags. When you save this text, the newly added tags also get created.
+    * **Tags: **(Optional) To create custom tag, enter value in text field and press Enter. You can see your tag below text field of tags. When you save this text, the newly added tags also get created.
     * **Extended Properties**: (Optional) Tap **Add Field **to specify metadata attributes for your data dictionary. In the Property Name column, enter a unique property name. In the Value column, enter a value to associate with the property.
 
    ![Data dictionary properties specified in German](do-not-localize/1_ddproperties.png)
 
-1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, tap **Upload XML Schema**. Browse to XSD file, select it, and tap **Open**. A Data Dictionary gets created based on the uploaded XML schema. You need to tweak display names and descriptions of the elements in the data dictionary. To do this, select the names of the elements by tapping them and edit their descriptions, display names, and other details in the fields in the right pane.
-
+1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, tap **Upload XML Schema**. Browse to XSD file, select it, and tap **Open**. A Data Dictionary gets created based on the uploaded XML schema. You need to tweak display names and descriptions of the elements in the data dictionary. To do this, select the names of the elements by tapping them and edit their descriptions, display names, and other details in the fields in the right pane.   
+  
    For more information on Computed DD Elements, see [Computed Data Dictionary Elements](#computedddelements).
 
    >[!NOTE]
@@ -68,17 +70,17 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
    You can tap the three dots on the right side of an element and add an element to the data dictionary structure.
 
-   ![1_2_createanelement](assets/1_2_createanelement.png)
+   ![](assets/1_2_createanelement.png)
 
    Select either Composite Element, Collection Element, or Primitive Element.
 
-    * A Composite DDE contains other DDEs, which can be of type primitive, composite, or collection. For example, an address, which consists of a street address, city, province, country, and postal code.
-    * Primitive DDEs are elements such as strings, numbers, dates, and Boolean values that hold information such as a city name.
+    * A Composite DDE contains other DDEs, which can be of type primitive, composite, or collection. For example, an address, which consists of a street address, city, province, country, and postal code.   
+    * Primitive DDEs are elements such as strings, numbers, dates, and Boolean values that hold information such as a city name.  
     * A Collection is a list of similar Simple or Composite DDEs. For example, a customer with multiple locations, or different billing and shipping addresses.
 
    Following are some rules for creating a data dictionary:
 
-    * Only composite type is allowed as top-level DDE in a data dictionary.
+    * Only composite type is allowed as top-level DDE in a data dictionary. 
     * Name, reference name, and element type are mandatory fields for a data dictionary and DDEs.
     * The reference name must be unique.
     * A parent DDE (composite) can't have two children with the same name.
@@ -88,15 +90,15 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
    For information on validations in Data Dictionary, see [Data Dictionary Editor validations](#ddvalidations).
 
-   ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
+   ![](assets/2_addddpropertiesbasic.png)
 
 1. (Optional) After selecting an element, in the Advanced tab you can add properties (attributes). You can also tap **Add Field **and extend the properties of a DD element.
 
-   ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
+   ![](assets/3_addddpropertiesadvanced.png)
 
 1. (Optional) You can remove any element by tapping the three dots on the right side of an element and selecting **Delete**.
 
-   ![4_deleteelement](assets/4_deleteelement.png)
+   ![](assets/4_deleteelement.png)
 
    >[!NOTE]
    >
@@ -109,9 +111,9 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
 To quickly create one or more data dictionaries with properties and elements similar to existing data dictionaries, you can copy and paste them.
 
-1. From the list of data dictionaries, select the appropriate data dictionaries. The UI displays the Copy icon.
+1. From the list of data dictionaries, select the appropriate data dictionaries. The UI displays the Copy icon. 
 1. Tap Copy. The UI displays the Paste icon.
-1. Tap Paste. The Paste dialog appears. The system automatically assigns a names and titles to the new data dictionaries.
+1. Tap Paste. The Paste dialog appears. The system automatically assigns a names and titles to the new data dictionaries. 
 1. If required, edit the Title and Name with which you want to save the copy of the data dictionary.
 1. Tap Paste. The copy of the data dictionary is created. Now you can make the required changes in your newly created data dictionary.
 
@@ -122,31 +124,31 @@ While editing or viewing a data dictionary, you can see which elements in the da
 1. Do one of the following to edit the data dictionary:
 
     * Hover over a data dictionary and tap Edit.
-    * Select a data dictionary and then tap Edit in the header.
+    * Select a data dictionary and then tap Edit in the header. 
     * Hover over a data dictionary and tap Select. Then tap Edit in the header.
 
    Or tap on a data dictionary to view it.
 
 1. In the data dictionary, tap a simple element to select it. Composite and collection elements do not have references.
 
-   Along with Basic and Advanced properties of the element, Lent Content also appears.
+   Along with Basic and Advanced properties of the element, Lent Content also appears. 
 
 1. Tap Lent Content.
 
    The Lent Content tab appears with the following: Texts, Conditions, Letters, and Interactive Communications. Each of these headings also displays the number of references to the selected element.
 
-1. Tap on a heading to see the name of the assets that refer to the element.
+1. Tap on a heading to see the name of the assets that refer to the element. 
 
-   ![lentcontent](assets/lentcontent.png)
+   ![](assets/lentcontent.png)
 
-1. To view lent content for another element, tap the element.
+1. To view lent content for another element, tap the element. 
 1. To display an asset that refers to the element, tap on its name. The browser displays the asset, letter, or Interactive Communication.
 
 ## Working with test data {#working-with-test-data}
 
 1. On the Data Dictionaries page, tap **Select**.
 1. Tap a data dictionary for which you want to download test data and then tap **Download Sample XML Data**.
-1. Tap **OK** in the alert message. An XML file gets downloaded.
+1. Tap **OK** in the alert message. An XML file gets downloaded. 
 1. Open the XML file with Notepad or another XML editor. The XML file has the same structure as the data dictionary and placeholder strings in the elements. Replace the placeholder strings with the data you want to test a letter with.
 
    ```xml
@@ -192,8 +194,7 @@ While editing or viewing a data dictionary, you can see which elements in the da
 
 1. After making the data entries, you can use this XML file when you are previewing a letter with test data.
 
-   You can add this test data with DD (Select DD and tap Upload Test Data and upload this xml file)
-
+   You can add this test data with DD (Select DD and tap Upload Test Data and upload this xml file)  
    So after this when you preview letter normally (not custom), then this XML data is used in letter. You can also tap Custom and then upload this XML.
 
 ## Samples {#samples}
@@ -203,54 +204,54 @@ The following code samples show implementation details for the Data Dictionary.
 ### Sample Schema that can be uploaded to the Data Dictionary {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns="DCT" targetNamespace="DCT" xmlns:xs="https://www.w3.org/2001/XMLSchema"
-  elementFormDefault="qualified" attributeFormDefault="unqualified">
-  <xs:element name="Company">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="Name" type="xs:string"/>
-        <xs:element name="Type" type="xs:anySimpleType"/>
-        <xs:element name="HeadOfficeAddress" type="Address"/>
-        <xs:element name="SalesOfficeAddress" type="Address" minOccurs="0"/>
-        <xs:element name="HeadCount" type="xs:integer"/>
-        <xs:element name="CEO" type="Employee"/>
-        <xs:element name="Workers" type="Employee" maxOccurs="unbounded"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:complexType name="Employee">
-    <xs:complexContent>
-      <xs:extension  base="Person">
-        <xs:sequence>
-          <xs:element name="CurrAddress" type="Address"/>
-          <xs:element name="DOJ" type="xs:date"/>
-          <xs:element name="Phone" type="xs:integer"/>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="Person">
-    <xs:sequence>
-      <xs:element name="PersonName" type="Name"/>
-      <xs:element name="DOB" type="xs:dateTime"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="Name">
-    <xs:sequence>
-      <xs:element name="FirstName" type="xs:string"/>
-      <xs:element name="MiddleName" type="xs:string"/>
-      <xs:element name="LastName" type="xs:string"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="Address">
-    <xs:sequence>
-      <xs:element name="Street" type="xs:string"/>
-      <xs:element name="City" type="xs:string"/>
-      <xs:element name="State" type="xs:string"/>
-      <xs:element name="Zip" type="xs:string"/>
-    </xs:sequence>
-  </xs:complexType>
+<?xml version="1.0" encoding="utf-8"?> 
+<xs:schema xmlns="DCT" targetNamespace="DCT" xmlns:xs="https://www.w3.org/2001/XMLSchema" 
+  elementFormDefault="qualified" attributeFormDefault="unqualified"> 
+  <xs:element name="Company"> 
+    <xs:complexType> 
+      <xs:sequence> 
+        <xs:element name="Name" type="xs:string"/> 
+        <xs:element name="Type" type="xs:anySimpleType"/> 
+        <xs:element name="HeadOfficeAddress" type="Address"/> 
+        <xs:element name="SalesOfficeAddress" type="Address" minOccurs="0"/> 
+        <xs:element name="HeadCount" type="xs:integer"/> 
+        <xs:element name="CEO" type="Employee"/> 
+        <xs:element name="Workers" type="Employee" maxOccurs="unbounded"/> 
+      </xs:sequence> 
+    </xs:complexType> 
+  </xs:element> 
+  <xs:complexType name="Employee"> 
+    <xs:complexContent> 
+      <xs:extension  base="Person"> 
+        <xs:sequence> 
+          <xs:element name="CurrAddress" type="Address"/> 
+          <xs:element name="DOJ" type="xs:date"/> 
+          <xs:element name="Phone" type="xs:integer"/> 
+        </xs:sequence> 
+      </xs:extension> 
+    </xs:complexContent> 
+  </xs:complexType> 
+  <xs:complexType name="Person"> 
+    <xs:sequence> 
+      <xs:element name="PersonName" type="Name"/> 
+      <xs:element name="DOB" type="xs:dateTime"/> 
+    </xs:sequence> 
+  </xs:complexType> 
+  <xs:complexType name="Name"> 
+    <xs:sequence> 
+      <xs:element name="FirstName" type="xs:string"/> 
+      <xs:element name="MiddleName" type="xs:string"/> 
+      <xs:element name="LastName" type="xs:string"/> 
+    </xs:sequence> 
+  </xs:complexType> 
+  <xs:complexType name="Address"> 
+    <xs:sequence> 
+      <xs:element name="Street" type="xs:string"/> 
+      <xs:element name="City" type="xs:string"/> 
+      <xs:element name="State" type="xs:string"/> 
+      <xs:element name="Zip" type="xs:string"/> 
+    </xs:sequence> 
+  </xs:complexType> 
 </xs:schema>
 
 ```
@@ -260,78 +261,78 @@ The following code samples show implementation details for the Data Dictionary.
 The following table details the common attributes associated with a DDE:
 
 <table>
- <tbody>
-  <tr>
-   <td><strong>Attribute</strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Name</td>
-   <td>String</td>
-   <td>Required.<br /> Name of the DDE. It must be unique.</td>
-  </tr>
-  <tr>
-   <td>Reference<br /> Name</td>
-   <td>String</td>
-   <td>Required. Unique Reference name for the DDE allowing for references to the DDE that are independent of changes to the hierarchy or structure of the data dictionary. Text modules are mapped using this name</td>
-  </tr>
-  <tr>
-   <td>displayname</td>
-   <td>String</td>
-   <td>An optional user-friendly name of the DDE.</td>
-  </tr>
-  <tr>
-   <td>description</td>
-   <td>String</td>
-   <td>Description of the DDE.</td>
-  </tr>
-  <tr>
-   <td>elementType</td>
-   <td>String</td>
-   <td>Required. The type of DDE: STRING, NUMBER, DATE, Boolean, COMPOSITE, COLLECTION.</td>
-  </tr>
-  <tr>
-   <td>elementSubType</td>
-   <td>String</td>
-   <td>The subtype for DDE: ENUM. Only allowed for STRING and NUMBER elementType.</td>
-  </tr>
-  <tr>
-   <td>Key</td>
-   <td>Boolean</td>
-   <td>A Boolean field to indicate if a DDE is key element.</td>
-  </tr>
-  <tr>
-   <td>Computed</td>
-   <td>Boolean</td>
-   <td>A Boolean field to indicate if a DDE is computed. A computed DDE value is a function of other DDE values. By default, jsp expressions are supported.</td>
-  </tr>
-  <tr>
-   <td>expression</td>
-   <td>String</td>
-   <td>The expression for the "computed" DDE. The expression evaluation service shipped by default supports JSP EL expressions. You can replace the expression service with a custom implementation.</td>
-  </tr>
-  <tr>
-   <td>valueSet</td>
-   <td>List</td>
-   <td>A set of allowed values for an Enum type DDE. For example, Account type can have (Saving, Current) values only.</td>
-  </tr>
-  <tr>
-   <td>extendedProperties</td>
-   <td>Object</td>
-   <td>A Map of custom properties added to the DDE (user interface specific or any other information).</td>
-  </tr>
-  <tr>
-   <td>Required</td>
-   <td>Boolean</td>
-   <td>The flag indicates that the source of instance data corresponding to the data dictionary must contain the value of this particular DDE.</td>
-  </tr>
-  <tr>
-   <td>Binding</td>
-   <td>BindingElement</td>
-   <td>The XML or Java binding of the element.</td>
-  </tr>
- </tbody>
+ <tbody> 
+  <tr> 
+   <td><strong>Attribute</strong></td> 
+   <td><strong>Type</strong></td> 
+   <td><strong>Description</strong></td> 
+  </tr> 
+  <tr> 
+   <td>Name</td> 
+   <td>String</td> 
+   <td>Required.<br /> Name of the DDE. It must be unique.</td> 
+  </tr> 
+  <tr> 
+   <td>Reference<br /> Name</td> 
+   <td>String</td> 
+   <td>Required. Unique Reference name for the DDE allowing for references to the DDE that are independent of changes to the hierarchy or structure of the data dictionary. Text modules are mapped using this name</td> 
+  </tr> 
+  <tr> 
+   <td>displayname</td> 
+   <td>String</td> 
+   <td>An optional user-friendly name of the DDE.</td> 
+  </tr> 
+  <tr> 
+   <td>description</td> 
+   <td>String</td> 
+   <td>Description of the DDE.</td> 
+  </tr> 
+  <tr> 
+   <td>elementType</td> 
+   <td>String</td> 
+   <td>Required. The type of DDE: STRING, NUMBER, DATE, Boolean, COMPOSITE, COLLECTION.</td> 
+  </tr> 
+  <tr> 
+   <td>elementSubType</td> 
+   <td>String</td> 
+   <td>The subtype for DDE: ENUM. Only allowed for STRING and NUMBER elementType.</td> 
+  </tr> 
+  <tr> 
+   <td>Key</td> 
+   <td>Boolean</td> 
+   <td>A Boolean field to indicate if a DDE is key element.</td> 
+  </tr> 
+  <tr> 
+   <td>Computed</td> 
+   <td>Boolean</td> 
+   <td>A Boolean field to indicate if a DDE is computed. A computed DDE value is a function of other DDE values. By default, jsp expressions are supported.</td> 
+  </tr> 
+  <tr> 
+   <td>expression</td> 
+   <td>String</td> 
+   <td>The expression for the "computed" DDE. The expression evaluation service shipped by default supports JSP EL expressions. You can replace the expression service with a custom implementation.</td> 
+  </tr> 
+  <tr> 
+   <td>valueSet</td> 
+   <td>List</td> 
+   <td>A set of allowed values for an Enum type DDE. For example, Account type can have (Saving, Current) values only.</td> 
+  </tr> 
+  <tr> 
+   <td>extendedProperties</td> 
+   <td>Object</td> 
+   <td>A Map of custom properties added to the DDE (user interface specific or any other information).</td> 
+  </tr> 
+  <tr> 
+   <td>Required</td> 
+   <td>Boolean</td> 
+   <td>The flag indicates that the source of instance data corresponding to the data dictionary must contain the value of this particular DDE.</td> 
+  </tr> 
+  <tr> 
+   <td>Binding</td> 
+   <td>BindingElement</td> 
+   <td>The XML or Java binding of the element.</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ### Computed Data Dictionary Elements {#computedddelements}
@@ -340,79 +341,79 @@ A data dictionary can also include computed elements. A computed data dictionary
 
 A computed DDE PersonFullName can be associated with an EL concatenation expression such as ${PersonFirstName} ${PersonLastName}.
 
-## Data type mapping between XSD and data dictionary {#data-type-mapping-between-xsd-and-data-dictionary-br}
+## Data type mapping between XSD and data dictionary <br> {#data-type-mapping-between-xsd-and-data-dictionary-br}
 
 Exporting an XSD requires specific data mapping, which is detailed in the following table. The DDI column indicates the type of the DDE value as available in the DDI.
 
 <table>
- <tbody>
-  <tr>
-   <td>XSD <br /> </td>
-   <td><p>Data Dictionary <br /> </p> </td>
-   <td><p>DDI (Instance Value Data Type)<br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>xs:element of type - Composite Type<br /> </p> </td>
-   <td><p>DDE of type - COMPOSITE<br /> </p> </td>
-   <td>java.util.Map<br /> </td>
-  </tr>
-  <tr>
-   <td><p>xs:element where maxOccurs &gt; 1<br /> </p> </td>
-   <td><p>DDE of type - COLLECTION-<br /> A DDE node is created next to the COLLECTION DDE which captures information from the parent COLLECTION node. The same gets created for both collection of simple/composite data types. Whenever you have a COLLECTION of the type composite, the Data Dictionary tree captures the constituent fields in the children of the DDE created for capturing type information.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE for type info)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td>
-   <td>java.util.List<br /> </td>
-  </tr>
-  <tr>
-   <td><p>Attribute of type - xs:id <br /> </p> </td>
-   <td>DDE of type - STRING <br /> </td>
-   <td>java.lang.String<br /> </td>
-  </tr>
-  <tr>
-   <td><p>xs:attribute /xs:element of type - xs:string</p> </td>
-   <td>DDE of type - STRING<br /> </td>
-   <td>java.lang.String<br /> </td>
-  </tr>
-  <tr>
-   <td>xs:attribute /xs:element of type - xs: boolean <br /> </td>
-   <td>DDE of type - Boolean <br /> </td>
-   <td>java.lang.Boolean<br /> </td>
-  </tr>
-  <tr>
-   <td>xs:attribute /xs:element of type - xs:date </td>
-   <td>DDE of type - DATE </td>
-   <td>java.lang.String</td>
-  </tr>
-  <tr>
-   <td>xs:attribute /xs:element of type - xs:integer </td>
-   <td>DDE of type - NUMBER </td>
-   <td>java.lang.Double</td>
-  </tr>
-  <tr>
-   <td>xs:attribute /xs:element of type - xs:long</td>
-   <td>DDE of type - NUMBER </td>
-   <td>java.lang.Double</td>
-  </tr>
-  <tr>
-   <td>xs:attribute /xs:element of type - xs:double</td>
-   <td>DDE of type - NUMBER </td>
-   <td>java.lang.Double</td>
-  </tr>
-  <tr>
-   <td>Element of enum type and baseType - xs:string</td>
-   <td>DDE of<br /> type - STRING<br /> subtype - ENUM<br /> valueSet - the allowed values for ENUM<br /> </td>
-   <td>java.lang.String</td>
-  </tr>
- </tbody>
+ <tbody> 
+  <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+   <td style="background: #EEEEEE; padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">XSD <br /> </td> 
+   <td style="background: #EEEEEE; padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">Data Dictionary <br /> </p> </td> 
+   <td style="background: #EEEEEE; padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">DDI (Instance Value Data Type)<br /> </p> </td> 
+  </tr> 
+  <tr style="mso-yfti-irow: 1;"> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">xs:element of type - Composite Type<br /> </p> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">DDE of type - COMPOSITE<br /> </p> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.util.Map<br /> </td> 
+  </tr> 
+  <tr style="mso-yfti-irow: 2;"> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">xs:element where maxOccurs &gt; 1<br /> </p> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">DDE of type - COLLECTION-<br /> A DDE node is created next to the COLLECTION DDE which captures information from the parent COLLECTION node. The same gets created for both collection of simple/composite data types. Whenever you have a COLLECTION of the type composite, the Data Dictionary tree captures the constituent fields in the children of the DDE created for capturing type information.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE for type info)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.util.List<br /> </td> 
+  </tr> 
+  <tr style="mso-yfti-irow: 3;"> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">Attribute of type - xs:id <br /> </p> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">DDE of type - STRING <br /> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.lang.String<br /> </td> 
+  </tr> 
+  <tr style="mso-yfti-irow: 4;"> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">xs:attribute /xs:element of type - xs:string</p> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">DDE of type - STRING<br /> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.lang.String<br /> </td> 
+  </tr> 
+  <tr style="mso-yfti-irow: 10; mso-yfti-lastrow: yes;"> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">xs:attribute /xs:element of type - xs: boolean <br /> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">DDE of type - Boolean <br /> </td> 
+   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.lang.Boolean<br /> </td> 
+  </tr> 
+  <tr> 
+   <td>xs:attribute /xs:element of type - xs:date </td> 
+   <td>DDE of type - DATE </td> 
+   <td>java.lang.String</td> 
+  </tr> 
+  <tr> 
+   <td>xs:attribute /xs:element of type - xs:integer </td> 
+   <td>DDE of type - NUMBER </td> 
+   <td>java.lang.Double</td> 
+  </tr> 
+  <tr> 
+   <td>xs:attribute /xs:element of type - xs:long</td> 
+   <td>DDE of type - NUMBER </td> 
+   <td>java.lang.Double</td> 
+  </tr> 
+  <tr> 
+   <td>xs:attribute /xs:element of type - xs:double</td> 
+   <td>DDE of type - NUMBER </td> 
+   <td>java.lang.Double</td> 
+  </tr> 
+  <tr> 
+   <td>Element of enum type and baseType - xs:string</td> 
+   <td>DDE of<br /> type - STRING<br /> subtype - ENUM<br /> valueSet - the allowed values for ENUM<br /> </td> 
+   <td>java.lang.String</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ## Download a sample data file from a data dictionary {#download-a-sample-data-file-from-a-data-dictionary}
 
 Once you have created a data dictionary, you can download it as an XML sample data file to make text entries in it.
 
-1. In the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it.
-1. Select **Download Sample XML Data**.
+1. In the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it. 
+1. Select **Download Sample XML Data**. 
 1. Tap **OK** in the alert message.
 
-   Correspondence Management creates an XML file based on the selected data dictionary’s structure and downloads it to your computer with the name &lt;data-dictionary-name&gt;-SampleData. Now you can edit this file in an XML or text editor to make data entries while [creating a letter](/help/forms/using/create-letter.md).
+   Correspondence Management creates an XML file based on the selected data dictionary’s structure and downloads it to your computer with the name &lt;data-dictionary-name&gt;-SampleData. Now you can edit this file in an XML or text editor to make data entries while [creating a letter](../../forms/using/create-letter.md).
 
 ## Internationalization of meta data {#internationalization-of-meta-data}
 
@@ -420,28 +421,22 @@ When you want to send the same letter in different languages to your customers, 
 
 ### Localize data dictionary {#localize-data-dictionary}
 
-1. On the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it.
+1. On the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it. 
 1. Tap **Download Localization Data**.
-1. Tap **OK** in the alert. Correspondence Management downloads a zip file to your computer with the name DataDictionary-&lt;DDname&gt;.zip.
+1. Tap **OK** in the alert. Correspondence Management downloads a zip file to your computer with the name DataDictionary-&lt;DDname&gt;.zip. 
 1. The Zip file contains a .properties file. This file defines the downloaded data dictionary. The contents of the property file are similar to the following:
 
-   #Wed May 20 16:06:23 BST 2015
-
-   DataDictionary.EmployeeDD.description=
-
-   DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
-
-   DataDictionaryElement.name.description=
-
-   DataDictionaryElement.name.displayName=name
-
-   DataDictionaryElement.person.description=
-
+   #Wed May 20 16:06:23 BST 2015  
+   DataDictionary.EmployeeDD.description=  
+   DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary  
+   DataDictionaryElement.name.description=  
+   DataDictionaryElement.name.displayName=name  
+   DataDictionaryElement.person.description=  
    DataDictionaryElement.person.displayName=person
 
    The structure of the properties file defines one line each for the description and the display name for the data dictionary and each data dictionary element in the data dictionary. In addition, the properties file defines one line for an enum value set for each data dictionary element. As with a data dictionary, the corresponding properties file can have multiple data dictionary elements definitions. In addition, the file can contain the definitions for one or more enum value sets.
 
-1. To update the .properties file in a different locale, update the display name and description values in the file. Create more instances of the file for each language you want to localize in. Only French, German, Japanese, and English languages are supported.
+1. To update the .properties file in a different locale, update the display name and description values in the file. Create more instances of the file for each language you want to localize in. Only French, German, Japanese, and English languages are supported.  
 
 1. Save the different updated properties files with the following names:
 
@@ -453,9 +448,9 @@ When you want to send the same letter in different languages to your customers, 
 
    _en_EN.properties English
 
-1. Archive the .properties file (or files for multiple locales) into a single .zip file.
+1. Archive the .properties file (or files for multiple locales) into a single .zip file.  
 
-1. In the Data Dictionaries page, select **More** &gt; **Upload Localization Data **and select the zip file with localized properties files.
+1. In the Data Dictionaries page, select **More** &gt; **Upload Localization Data **and select the zip file with localized properties files. 
 1. To view the localization changes, change your browser locale.
 
 ## Data Dictionary validations {#ddvalidations}
@@ -510,18 +505,18 @@ The following details sample models and code samples which show implementation d
 
 A primitive DDE represents a field or attribute which is atomic in nature. Primitive DDEs defined outside the scope of a complex type (composite DDE) or a repeating element (collection DDE) can be stored in any location within the XML Schema. The location of the data corresponding to a primitive DDE is not dependent on the mapping of its parent DDE. Primitive DDE uses the mapping information from the XML Binding field to determine its value and the mappings translate into one of the following:
 
-* an attribute
-* an element
-* a text context
+* an attribute  
+* an element  
+* a text context  
 * nothing (an ignored DDE)
 
 The following example shows a simple schema.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">
-  <xs:element name='age' type='integer'/>
-  <xs:element name='price' type='decimal'/>
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema"> 
+  <xs:element name='age' type='integer'/> 
+  <xs:element name='price' type='decimal'/> 
 </xs:schema>
 ```
 
@@ -537,45 +532,45 @@ Binding is not supported for Composite elements, if binding is provided, it is i
 The following example shows the schema for a note.
 
 ```xml
-<xs:element name="note">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="to" type="xs:string"/>
-            <xs:element name="from" type="xs:string"/>
-            <xs:element name="heading" type="xs:string"/>
-            <xs:element name="body" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
+<xs:element name="note"> 
+    <xs:complexType> 
+        <xs:sequence> 
+            <xs:element name="to" type="xs:string"/> 
+            <xs:element name="from" type="xs:string"/> 
+            <xs:element name="heading" type="xs:string"/> 
+            <xs:element name="body" type="xs:string"/> 
+        </xs:sequence> 
+    </xs:complexType> 
+</xs:element> 
 ```
 
 <table>
- <tbody>
-  <tr>
-   <td><strong>Data Dictionary Element</strong></td>
-   <td><strong>Default XML Binding</strong></td>
-  </tr>
-  <tr>
-   <td>note</td>
-   <td>empty(null)<br /> </td>
-  </tr>
-  <tr>
-   <td>to</td>
-   <td>/note/to</td>
-  </tr>
-  <tr>
-   <td>from</td>
-   <td>/note/from</td>
-  </tr>
-  <tr>
-   <td>heading</td>
-   <td>/note/heading</td>
-  </tr>
-  <tr>
-   <td>body</td>
-   <td>/note/body</td>
-  </tr>
- </tbody>
+ <tbody> 
+  <tr> 
+   <td><strong>Data Dictionary Element</strong></td> 
+   <td><strong>Default XML Binding</strong></td> 
+  </tr> 
+  <tr> 
+   <td>note</td> 
+   <td>empty(null)<br /> </td> 
+  </tr> 
+  <tr> 
+   <td>to</td> 
+   <td>/note/to</td> 
+  </tr> 
+  <tr> 
+   <td>from</td> 
+   <td>/note/from</td> 
+  </tr> 
+  <tr> 
+   <td>heading</td> 
+   <td>/note/heading</td> 
+  </tr> 
+  <tr> 
+   <td>body</td> 
+   <td>/note/body</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ### Mapping Collection Elements {#mapping-collection-elements}
@@ -593,55 +588,55 @@ When mapping a collection DDE to an XML Schema element:
 The XML Schema below declares an element with the name Tokens and a maxOccurs attribute of “unbounded”. Thus, Tokens is a collection element.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
-<Root>
-  <Tokens>
-    <TokenID>string</TokenID>
-    <TokenText>
-      <TextHeading>string</TextHeading>
-      <TextBody>string</TextBody>
-    </TokenText>
-  </Tokens>
-  <Tokens>
-    <TokenID>string</TokenID>
-    <TokenText>
-      <TextHeading>string</TextHeading>
-      <TextBody>string</TextBody>
-    </TokenText>
-  </Tokens>
-  <Tokens>
-    <TokenID>string</TokenID>
-    <TokenText>
-      <TextHeading>string</TextHeading>
-      <TextBody>string</TextBody>
-    </TokenText>
-  </Tokens>
-</Root>
+<?xml version="1.0" encoding="utf-8"?> 
+<Root> 
+  <Tokens> 
+    <TokenID>string</TokenID> 
+    <TokenText> 
+      <TextHeading>string</TextHeading> 
+      <TextBody>string</TextBody> 
+    </TokenText> 
+  </Tokens> 
+  <Tokens> 
+    <TokenID>string</TokenID> 
+    <TokenText> 
+      <TextHeading>string</TextHeading> 
+      <TextBody>string</TextBody> 
+    </TokenText> 
+  </Tokens> 
+  <Tokens> 
+    <TokenID>string</TokenID> 
+    <TokenText> 
+      <TextHeading>string</TextHeading> 
+      <TextBody>string</TextBody> 
+    </TokenText> 
+  </Tokens> 
+</Root> 
 ```
 
 The Token.xsd associated to this sample would be:
 
 ```xml
-<xs:element name="Root">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element name="Tokens" type="TokenType" maxOccurs="unbounded"/>
-    </xs:sequence>
-  </xs:complexType>
-</xs:element>
-
-<xs:complexType name="TokenType">
-  <xs:sequence>
-    <xs:element name="TokenID" type="xs:string"/>
-    <xs:element name="TokenText">
-      <xs:complexType>
-        <xs:sequence>
-          <xs:element name="TextHeading" type="xs:string"/>
-          <xs:element name="TextBody" type="xs:string"/>
-        </xs:sequence>
-      </xs:complexType>
-    </xs:element>
-  </xs:sequence>
+<xs:element name="Root"> 
+  <xs:complexType> 
+    <xs:sequence> 
+      <xs:element name="Tokens" type="TokenType" maxOccurs="unbounded"/> 
+    </xs:sequence> 
+  </xs:complexType> 
+</xs:element> 
+  
+<xs:complexType name="TokenType"> 
+  <xs:sequence> 
+    <xs:element name="TokenID" type="xs:string"/> 
+    <xs:element name="TokenText"> 
+      <xs:complexType> 
+        <xs:sequence> 
+          <xs:element name="TextHeading" type="xs:string"/> 
+          <xs:element name="TextBody" type="xs:string"/> 
+        </xs:sequence> 
+      </xs:complexType> 
+    </xs:element> 
+  </xs:sequence> 
 </xs:complexType>
 ```
 

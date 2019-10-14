@@ -3,21 +3,23 @@ title: Set up environment for AEM Forms app
 seo-title: Set up environment for AEM Forms app
 description: Hardware, software, and licenses to build and deploy the AEM Forms app.
 seo-description: Hardware, software, and licenses to build and deploy the AEM Forms app.
-uuid: 0c8f5259-8e9f-45ce-ade4-e14f1a41c0de
+uuid: 4123a6b7-5766-476c-9afb-f57029b148ad
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
+discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
+docset: aem65
+
 ---
 
-# Set up environment for AEM Forms app {#set-up-environment-for-aem-forms-app}
+# Set up environment for AEM Forms app{#set-up-environment-for-aem-forms-app}
 
 You need the following hardware, software, and licenses to build and deploy the AEM Forms app:
 
 ## For Windows devices {#for-windows-devices}
 
-* Microsoft Windows 8.1 or Windows 10
+* Microsoft Windows 10
 * Microsoft Visual Studio 2015
 * Microsoft Visual Studio Tools for Apache Cordova
 
@@ -40,4 +42,4 @@ You need the following hardware, software, and licenses to build and deploy the 
 >
 >The adobe-lc-mobileworkspace-src.zip contains PhoneGap SDK 5.0. Ensure that PhoneGap SDK is not pre-installed.
 
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**
+[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

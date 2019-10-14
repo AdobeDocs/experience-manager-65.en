@@ -3,20 +3,22 @@ title: Configure service settings
 seo-title: Configure service settings
 description: Learn how to configure service settings.
 seo-description: Learn how to configure service settings.
-uuid: e95425a4-62f6-473e-b21b-d081c432e02d
+uuid: f50a72f2-9015-4ae2-a738-f8ad9fa53251
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
+discoiquuid: 1c558816-e8d3-4080-84c8-4e3991649487
+docset: aem65
+
 ---
 
-# Configure service settings {#configure-service-settings}
+# Configure service settings{#configure-service-settings}
 
 You can use the Service Management page to configure settings for each of the services that are part of AEM forms. The available settings vary depending on the service being configured.
 
 1. In administration console, click Services &gt; Applications and Services &gt; Service Management.
-1. Stop the service before changing it. (See [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+1. Stop the service before changing it. (See [Starting and stopping services](/forms/using/admin-help/starting-stopping-services.md#starting_and_stopping_services).)
 1. Click the name of the service that you want to configure.
 1. If the service has a Configuration tab, use it to change the settings for the service. See the list of links below for details.
 
@@ -24,9 +26,9 @@ You can use the Service Management page to configure settings for each of the se
    >
    >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the * [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) *
 
-1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying-security-settings-for-a-service).
-1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
-1. Click the Pooling tab and set the pooling settings. See [Configuring pooling for a service](configure-service-settings.md#configuring-pooling-for-a-service).
+1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying_security_settings_for_a_service).
+1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/forms/using/admin-help/topics/managing-endpoints.md).
+1. Click the Pooling tab and set the pooling settings. See [Configuring pooling for a service](configure-service-settings.md#configuring_pooling_for_a_service).
 1. Click Save to save your changes or click Cancel to discard them.
 1. Select the checkbox next to the service name and click Start to restart the service.
 
@@ -57,20 +59,6 @@ The following settings are available for the barcoded forms service.
 **Base File Path:** The file path relative to which the batch input and output file parameters for the Run XML File Job and Run Flat File Job operations are resolved. In clustered configurations, the base file path must be a shared file system location to which all cluster nodes have read/write access.
 
 **Data Source Name:** The name of data source used to maintain state and history information about batch processing jobs. The specified data source must support global (XA) transactions.
-
-## Central Migration Bridge service (Deprecated) settings {#central-migration-bridge-service-settings}
-
-The Central Migration Bridge service ( `CentralMigrationBridge`) invokes a subset of Adobe Central Pro Output Server (Central) functionality, which includes the JFMERGE, JFTRANS, and XMLIMPORT commands. Central Migration Bridge service operations allow you to reuse the following Central assets in AEM forms:
-
-* template design (&ast;.ifd)
-* output templates (&ast;.mdf)
-* data files (&ast;.dat files)
-* preamble files (&ast;.pre files)
-* data definition files (&ast;.tdf)
-
-The following setting is available for the Central Migration Bridge service.
-
-**Central Install Directory:** The directory where Adobe Central 5.7 is installed.
 
 ## Content Repository Connector for EMC Documentum service settings {#content-repository-connector-for-emc-documentum-service-settings}
 
@@ -282,13 +270,13 @@ In most cases, the default Guides render services is sufficient to prepare a Gui
 
 The Guide Utilities operations allow you to add the following Guide rendering tasks to a process:
 
-* Determine whether data is available to populate the Guide with
-* Embed the Guide data or convert it to a link
-* Convert referenced content to URLs that are externally accessible
-* Substitute values in an HTML document or other wrapper, or convert them to URLs that are externally accessible
-* Set the submit location
-* Specify input values
-* Create a parameter to represent referenced content
+* Determine whether data is available to populate the Guide with 
+* Embed the Guide data or convert it to a link 
+* Convert referenced content to URLs that are externally accessible 
+* Substitute values in an HTML document or other wrapper, or convert them to URLs that are externally accessible 
+* Set the submit location 
+* Specify input values 
+* Create a parameter to represent referenced content 
 * If variations are available, set a variation
 
 The default values for the Guide Utilities service support most use cases. However, if necessary, you can change the following values.
@@ -345,11 +333,11 @@ The following settings are available for the JMS service.
 
 **Provider URL:** The URL of the JNDI service provider. The default value is based on the JBoss Application Server. The following URL are default values for the application servers that AEM forms supports:
 
-**JBoss:** `<server name>:1099`
+**JBoss:** <server name>:1099
 
-**WebLogic:** `<server name>:7001`
+**WebLogic:** <server name>:7001
 
-**WebSphere:** `<server name>:2809`
+**WebSphere:** <server name>:2809
 
 **JNDI Username:** The user name of the account to use for authenticating with the JNDI service provider that is used for looking up queue and topic names. The default value is guest.
 
@@ -369,7 +357,7 @@ The following settings are available for the JMS service.
 
 **Other Properties:** Property name and value pairs that you can pass to the JNDI service provider. These properties depend on the implementation and configuration of the provider that you are using.
 
-The property name and value pairs are separated by semi-colons **;**. For example, the following text shows the value that would be specified for two properties named name1 and name2, with values value1 and value2, respectively:
+The property name and value pairs are separated by semi-colons (;). For example, the following text shows the value that would be specified for two properties named name1 and name2, with values value1 and value2, respectively:
 
 `name1=value1;name2=value2`
 
@@ -381,7 +369,7 @@ The following settings are available for the LDAP service.
 
 **Initial Context Factory:** The Java class to use as the context factory. This class is used to create a connection to the LDAP server. The default value is com.sun.jndi.ldap.LdapCtxFactory, which is appropriate for most LDAP servers.
 
-**Provider URL:** The URL to use to connect to the LDAP service. The format of the value is `ldap://server name:port`
+**Provider URL:** The URL to use to connect to the LDAP service. The format of the value is ldap://server name:port
 
 *server name* is the name of the computer that hosts the LDAP server
 
@@ -420,7 +408,7 @@ The following settings are available for the Microsoft SharePoint configuration 
 
 **Offline Support:** Enables users to continue using the mobile client applications even when they do not have a connection to the server (for example, when they are out of cell range or in airplane mode). Users must also enable the Offline Support setting on their mobile devices. This feature is available for Android and iOS devices. By default, this feature is off.
 
-**Note**: *If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.*
+***note**: If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.*
 
 **Android:** Allows Android devices to connect to the server.
 
@@ -442,9 +430,9 @@ The following settings are available for the Microsoft SharePoint configuration 
 
 The Output service `(OutputService)`enables you to merge XML form data with a form design created in AEM forms Designer to create a document output stream in one of the following formats:
 
-* A PDF or PDF/A document output stream.
-* An Adobe PostScript output stream.
-* A Printer Control Language (PCL) output stream.
+* A PDF or PDF/A document output stream. 
+* An Adobe PostScript output stream. 
+* A Printer Control Language (PCL) output stream. 
 * A Zebra Programming Language (ZPL) output stream.
 
 The output stream can be sent to a network printer, a local printer, or a disk file. When you use the Output service as part of a process, you can also send the output stream to an email recipient as a file attachment.
@@ -669,7 +657,7 @@ The following settings are available for the Signature service.
 
 ## Watched Folder service settings {#watched-folder-service-settings}
 
-The Watched Folder service ( `WatchedFolder`) configures attributes that are common for all watched folder endpoints. It also provides default values for watched folder endpoints. (See [Configuring watched folder endpoints](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) It is not invoked by external client applications or used in processes created in Workbench.
+The Watched Folder service ( `WatchedFolder`) configures attributes that are common for all watched folder endpoints. It also provides default values for watched folder endpoints. (See [Configuring watched folder endpoints](../../../forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) It is not invoked by external client applications or used in processes created in Workbench.
 
 The following settings are available for the Watched Folder service.
 
@@ -701,24 +689,24 @@ In a cluster configuration, the batch size for a watched folder endpoint does no
 
 **Result Folder:** The default name for the result folder. This folder is used to copy the results files into. This value can be an empty, relative, or absolute path with the following file pattern.
 
-* %F = filename prefix
+* %F = filename prefix 
 * %E = filename extension
-* %Y = year (full)
-* %y = year (last two digits)
+* %Y = year (full) 
+* %y = year (last two digits) 
 * %M = month
-* %D = day of month
-* %d = day of year
-* %H = hour (24-hour clock)
-* %h = hour (12-hour clock)
-* %m = minute
-* %s = second
-* %l = millisecond
-* %R = random number (from 0 through 9)
+* %D = day of month 
+* %d = day of year 
+* %H = hour (24-hour clock) 
+* %h = hour (12-hour clock) 
+* %m = minute 
+* %s = second 
+* %l = millisecond 
+* %R = random number (from 0 through 9) 
 * %P = process or job id
 
 For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure/%Y/%M/%D/%H/`, the result folder is `C:/Test/WF0/failure/2009/07/17/20`.
 
-If the path is not absolute but relative, the folder is created inside the watched folder. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+If the path is not absolute but relative, the folder is created inside the watched folder. For more information about file patterns, see [About file patterns](../../../forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
 ***Note**: The smaller the size of the result folders, the better Watched Folder performance will be. For example, if the estimated load for the watched folder is 1000 files every hour, try a pattern like `result/%Y%M%D%H` so that a new subfolder is created every hour. If the load is smaller (for example, 1000 files per day), you could use a pattern like `result/%Y%M%D`.*
 
@@ -785,9 +773,9 @@ Default security profiles are installed, which can then be configured to meet yo
 
    If you select Yes, the caller of the service must be authenticated and the user principal for that caller must be authorized to invoke the service; otherwise, the invocation attempt will be refused.
 
-   If you select No, the caller of the service may or may not be authenticated. The invocation of the service will always succeed because there is no authorization check.
+   If you select No, the caller of the service may or may not be authenticated. The invocation of the service will always succeed because there is no authorization check. 
 
-1. For services that contain one or more operations flagged for anonymous access, select or deselect Anonymous Access Allowed. When anonymous access is enabled, any user within the system can invoke operations on the service. If anonymous access is disabled, users must be granted permission to call the service and invoke operations. Users are granted these permissions either directly or as being part of a group that has such permissions.
+1. For services that contain one or more operations flagged for anonymous access, select or deselect Anonymous Access Allowed. When anonymous access is enabled, any user within the system can invoke operations on the service. If anonymous access is disabled, users must be granted permission to call the service and invoke operations. Users are granted these permissions either directly or as being part of a group that has such permissions. 
 1. For some services, the user account that executes the operation affects the results. For example, in Content Services (Deprecated), the user that stores content is made the owner of the content, which affects who can later access the content. If you are using a process to store content, think about what user is used to execute the Document Management service, because that user will own the stored content.
 
    To specify the run-time identity used by a service to execute operations, select Specify Run As, select an option from the associated list, and then click Save. Choose from the following options:
@@ -804,22 +792,22 @@ Default security profiles are installed, which can then be configured to meet yo
    >
    >Render and submit services that are used with xfaForm, Document Form, and Form variables are always executed using the System user account.
 
-1. Click Add Principal to specify the permissions that users and groups have for this service.
+1. Click Add Principal to specify the permissions that users and groups have for this service. 
 1. The Select Principal screen displays the users and groups that are configured in User Management. If the user or group you want is not displayed, use the search function to find it. Click a user or group name.
 1. On the Add Permissions screen, select the permissions to assign to the user or group for this service:
 
-    * **INVOKE_PERM:** To invoke all operations on the service
-    * **MODIFY_CONFIG_PERM:** To modify the configuration of a service
-    * **SUPERVISOR_PERM:** To view process instance data for a service that is created from a process
-    * **START_STOP_PERM:** To start and stop a service
-    * **ADD_REMOVE_ENDPOINTS_PERM:** To add, remove, and modify endpoints for a service
-    * **CREATE_VERSION_PERM:** To create a new version of the service
-    * **DELETE_VERSION_PERM:** To delete a version of the service
-    * **MODIFY_VERSION_PERM:** To modify a version of the service
-    * **READ_PERM:** To view the service
-    * **PROCESS_OWNER_PERM:** For use in a future version of AEM forms. Do not use this permission.
-    * **SERVICE_MANAGER_PERM:** For use in a future version of AEM forms. Do not use this permission.
-    * **SERVICE_AGENT_PERM:** For use in a future version of AEM forms. Do not use this permission.
+    * **INVOKE_PERM: **To invoke all operations on the service
+    * **MODIFY_CONFIG_PERM: **To modify the configuration of a service
+    * **SUPERVISOR_PERM: **To view process instance data for a service that is created from a process
+    * **START_STOP_PERM: **To start and stop a service
+    * **ADD_REMOVE_ENDPOINTS_PERM: **To add, remove, and modify endpoints for a service
+    * **CREATE_VERSION_PERM: **To create a new version of the service
+    * **DELETE_VERSION_PERM: **To delete a version of the service
+    * **MODIFY_VERSION_PERM: **To modify a version of the service
+    * **READ_PERM: **To view the service
+    * **PROCESS_OWNER_PERM: **For use in a future version of AEM forms. Do not use this permission.
+    * **SERVICE_MANAGER_PERM: **For use in a future version of AEM forms. Do not use this permission.
+    * **SERVICE_AGENT_PERM: **For use in a future version of AEM forms. Do not use this permission.
 
 1. Click Add.
 
@@ -838,9 +826,9 @@ Each service can take advantage of the pooling capabilities to handle incoming i
 1. On the Service Management page, click the service to configure.
 1. Click the Pooling tab.
 1. In the Request Processing Strategy list, select Pooled Instances for All Requests.
-1. In the Initial Service Instance Pool Size box, enter the initial size of the pool. When the service is deployed, this number is used to determine the number of service implementation instances that are created and allocated to the free pool, awaiting invocation requests. This enables the service container to respond immediately to invocation requests without having to first initialize a service instance.
-1. In the Maximum Service Instance Pool Size box, enter the maximum number of instances in the pool for a given service. This setting controls the number of threads that can execute a given service at a given time. The default value is 0, which results in unlimited pool size.
-1. In the Maximum Asynchronous Service Instances box, enter the maximum number of instances from the pool that can be used to service asynchronous requests at any given time. This setting allows the service to limit the number of requests that it can handle in parallel.
+1. In the Initial Service Instance Pool Size box, enter the initial size of the pool. When the service is deployed, this number is used to determine the number of service implementation instances that are created and allocated to the free pool, awaiting invocation requests. This enables the service container to respond immediately to invocation requests without having to first initialize a service instance. 
+1. In the Maximum Service Instance Pool Size box, enter the maximum number of instances in the pool for a given service. This setting controls the number of threads that can execute a given service at a given time. The default value is 0, which results in unlimited pool size. 
+1. In the Maximum Asynchronous Service Instances box, enter the maximum number of instances from the pool that can be used to service asynchronous requests at any given time. This setting allows the service to limit the number of requests that it can handle in parallel. 
 1. In the Invocation Wait Timeout box, enter the number of milliseconds to wait for a service to become available for an invocation request. If you do not specify a value for this setting, the default is 0, which results in no wait time.
 1. Click Save.
 

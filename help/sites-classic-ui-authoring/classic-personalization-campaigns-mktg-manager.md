@@ -3,12 +3,14 @@ title: Working with the Marketing Campaign Manager
 seo-title: Working with the Marketing Campaign Manager
 description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
-uuid: 3df6c0b8-dc0a-4a02-a38c-8250fb829404
+uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
+discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
+docset: aem65
+
 ---
 
 # Working with the Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
@@ -17,62 +19,52 @@ In AEM, the Marketing Campaign Manager (MCM) is a console that helps you manage 
 
 MCM can be accessed from various locations in AEM; for example, the Welcome screen, using the Campaigns icon or with the URL:
 
-`https://<hostname>:<port>/libs/mcm/content/admin.html`
+`https://<*hostname*>:<*port-nr*>/libs/mcm/content/admin.html`
 
 For example:
 
-`http://localhost:4502/libs/mcm/content/admin.html`
+`https://localhost:4502/libs/mcm/content/admin.html`
 
-![screen_shot_2012-02-21at114636am](assets/screen_shot_2012-02-21at114636am.png)
+![](assets/screen_shot_2012-02-21at114636am.png)
 
 From the MCM you can access:
 
-* **[Dashboard](#dashboard)**
+* ** [Dashboard](#dashboard)**
   This is divided into four panes:
 
     * [Lists](#lists)
-
       This pane shows the lists you have already created, together with the number of leads in that list. From this pane you can create a new list directly or import leads to create a new list.
-
       Selecting a specific list will take you to the [Lists](#lists) section showing details for your list.
 
     * [Segments](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
-
       This pane show the segments that you have defined. Segments let you characterize a collection of visitors that share certain traits.
-
       Selecting a specific segment will open the segment definition page.
 
-    * [Reports](/help/sites-administering/reporting.md)
+    * [Reports](/help/sites-administering//reporting.md)
       AEM provides different reports to help you analyze and monitor the state of your instance. This MCM pane lists the reports.
-
       Selecting a report will open the report page.
 
     * [Campaigns](#campaigns)
-
       This pane lists your campaign experiences such as [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) and [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
-* **[Leads](#leads)**
-
+* ** [Leads](#leads)**
   Here you can manage your leads. You can create or import leads, edit specific details for individual leads or delete when no longer needed. You can also put leads in different groups, called Lists. **Note:** Adobe is not planning to further enhance this capability.
-
   Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
-* **[Lists](#lists)**
-
+* ** [Lists](#lists)**
   Here you can manage your lists (of leads).**Note:** Adobe is not planning to further enhance this capability.
-
   Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
-* **[Campaigns](#campaigns)**
+* ** [Campaigns](#campaigns)**
   Here you can manage your Brands, Campaigns and Experiences.
 
 ## Dashboard {#dashboard}
 
 The dashboard shows four panes that provide you with an overview of your lists (of leads), segments, reports and campaigns. Access to basic functionality for these is also available here.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![](assets/mcm_dashboard.png)
 
-## Leads {#leads}
+### Leads {#leads}
 
 >[!NOTE]
 >
@@ -87,9 +79,9 @@ Under **Leads** in the left pane you can create, import, edit and delete your le
 >
 >See [Working with Leads](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) for detailed information about specific tasks.
 
-![screen_shot_2012-02-21at114748am-1](assets/screen_shot_2012-02-21at114748am-1.png)
+![](assets/screen_shot_2012-02-21at114748am-1.png)
 
-## Lists {#lists}
+### Lists {#lists}
 
 >[!NOTE]
 >
@@ -104,7 +96,7 @@ Under **Lists**, you can manage your lists by creating, importing, editing, merg
 >
 >See [Working with Lists](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) for detailed information about specific tasks.
 
-![screen_shot_2012-02-21at124828pm-1](assets/screen_shot_2012-02-21at124828pm-1.png)
+![](assets/screen_shot_2012-02-21at124828pm-1.png)
 
 ### Campaigns {#campaigns}
 
@@ -114,26 +106,22 @@ Under **Lists**, you can manage your lists by creating, importing, editing, merg
 
 To access existing campaigns, in the MCM click **Campaigns**.
 
-![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
+![](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **In the left pane**:
-
   There is a list of all brands and campaigns.
-
   A single click on a brand will both:
 
     * expand the list to show all related campaigns in the left pane; this list also shows the number of experiences that exist for each campaign.
     * open the brand overview in the right pane.
 
 * **In the right pane**:
-
   Icons are shown for each brand (historical campaigns will not be shown).
-
   You can double-click on these to open the brand overview.
 
 #### Brand Overview {#brand-overview}
 
-![mcm_brandoverview](assets/mcm_brandoverview.png)
+![](assets/mcm_brandoverview.png)
 
 From here you can:
 
@@ -161,12 +149,14 @@ For the individual campaigns there are two views available:
 
    This presents a list of all touchpoints (grey) with a horizontal timeframe of the experiences (green) connected to that touchpoint:
 
-   ![mcm_banner_calendarview](assets/mcm_banner_calendarview.png)
+   ![](assets/mcm_banner_calendarview.png)
 
    From here you can:
 
     * Change the timespan you are viewing by using the arrows, or return to **Today**.
+
     * Use **Add Touchpoint...** to add a new touchpoint for an existing experience.
+
     * Click on a teaser (in the right pane) to set the **On Time** and **Off Time**.
 
 1. **List View**
@@ -177,7 +167,7 @@ For the individual campaigns there are two views available:
 
    This lists all experiences (e.g. teasers and newsletters) for the selected campaign:
 
-   ![mcm_banner_listview](assets/mcm_banner_listview.png)
+   ![](assets/mcm_banner_listview.png)
 
    From here you can:
 
@@ -185,19 +175,19 @@ For the individual campaigns there are two views available:
     * **Edit** the details of a specific teaser page or newsletter (a double-click can also be used).
     * Define the **Properties...** for a specific teaser page or newsletter.
     * **Simulate** the look and feel of an experience (teaser page or newsletter).
-
       When the simulated page is open you can then open the sidekick to switch into edit mode for that page.
 
     * **Analyze...** the impressions generated for a page.
+
     * **Delete** items when they are no longer needed.
-    * **Search** for your text (the Title field of the experience will be searched).
+    * **Search **for your text (the Title field of the experience will be searched).
     * Use **Advanced** search to apply filters to the search.
 
 ### Simulating your Campaign Experiences {#simulating-your-campaign-experiences}
 
 In the MCM, click **Campaigns**. Ensure that the list view is active, then select the required campaign experience and click **Simulate**. The touchpoint (teaser or newsletter page) will be opened to show the experience that you have selected - as the visitor will see it.
 
-![mcm_simulateexperience](assets/mcm_simulateexperience.png)
+![](assets/mcm_simulateexperience.png)
 
 From here you can also open the sidekick (click the small down arrow) to change to edit mode for updating the page.
 
@@ -205,5 +195,5 @@ From here you can also open the sidekick (click the small down arrow) to change 
 
 In the MCM, click **Campaigns**. Ensure that the list view is active, then select the required campaign experience and select **Analyze...**. A chart of the page impressions over time will be shown.
 
-![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)
+![](assets/mcm_campaignanalyze.png)
 

@@ -3,21 +3,23 @@ title: Dynamically populating drop-down lists
 seo-title: Dynamically populating drop-down lists
 description: Procedure to dynamically populate drop-down lists based on some logic
 seo-description: Procedure to dynamically populate drop-down lists based on some logic
-uuid: b58a184f-6c96-47ff-8a2e-829c93b63324
+uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
+discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
+docset: aem65
+
 ---
 
-# Dynamically populating drop-down lists  {#dynamically-populating-drop-down-lists}
+# Dynamically populating drop-down lists {#dynamically-populating-drop-down-lists}
 
 ## Prerequisites {#prerequisites}
 
 * [Creating OSGI bundles](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [Developing AEM components](/help/sites-developing/components.md)
-* [Creating adaptive form](/help/forms/using/creating-adaptive-form.md)
-* [Authoring adaptive form](/help/forms/using/introduction-forms-authoring.md)
+* [Creating adaptive form](../../forms/using/creating-adaptive-form.md)
+* [Authoring adaptive form](../../forms/using/introduction-forms-authoring.md)
 
 ## Procedure to dynamically populate drop-down lists {#procedure-to-dynamically-populate-drop-down-lists}
 

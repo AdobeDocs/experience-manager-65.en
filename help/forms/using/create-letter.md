@@ -3,13 +3,15 @@ title: Create Letter
 seo-title: Create Letter
 description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
-uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
+uuid: 59d0e567-e50b-4507-b33a-5104676c3f0e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
+discoiquuid: 2a5c9450-f438-4e3f-8d1d-1b63f256a6b1
+docset: aem65
+
 ---
 
-# Create Letter {#create-letter}
+# Create Letter{#create-letter}
 
 ## Correspondence Management workflow {#correspondence-management-workflow}
 
@@ -28,7 +30,7 @@ The following graphic shows a typical workflow for creating a correspondence tem
 
 In this workflow:
 
-1. Form Designers create layouts and fragment layouts using Adobe Forms Designer and upload them to a CRX repository. The layouts contain typical form fields, layout features such as a header and footer, and empty "target areas" for the placement of content. Later, Application Specialists map the content that is required for these target areas. More information on [designing layout](/help/forms/using/layout-design-details.md).
+1. Form Designers create layouts and fragment layouts using Adobe Forms Designer and upload them to a CRX repository. The layouts contain typical form fields, layout features such as a header and footer, and empty "target areas" for the placement of content. Later, Application Specialists map the content that is required for these target areas. More information on [designing layout](../../forms/using/layout-design-details.md).
 1. Subject Matter Experts from Legal, Finance, or Marketing departments, create, and upload content such as text clauses disclaimers, terms and conditions, and images such as logos, that are reused in various correspondence templates.
 1. Application Specialists create correspondence templates. The Application Specialist
 
@@ -36,11 +38,11 @@ In this workflow:
     * Defines conditions/rules for the inclusion of content
     * Binds layout fields and variables to underlying data models
 
-1. Author previews the letter and submits it for post processing. More information about [post processing](/help/forms/using/submit-letter-topostprocess.md).
+1. Author previews the letter and submits it for post processing. More information about [post processing](../../forms/using/submit-letter-topostprocess.md).
 
 #### Using letter templates provided with Correspondence Management {#using-letter-templates-provided-with-correspondence-management}
 
-Instead of creating a layout template from scratch, you can choose to modify and reuse the templates that Correspondence Management provides. You can use designer to quickly modify the branding and the data and content fields of the templates to suit your organization's needs. For more information on Correspondence Management templates, see [Reference letter templates](/help/forms/using/reference-cm-layout-templates.md).
+Instead of creating a layout template from scratch, you can choose to modify and reuse the templates that Correspondence Management provides. You can use designer to quickly modify the branding and the data and content fields of the templates to suit your organization's needs. For more information on Correspondence Management templates, see [Reference letter templates](/forms/using/reference-cm-layout-templates.md).
 
 ### Document fragment creation {#document-fragment-creation}
 
@@ -62,7 +64,7 @@ Conditions enable you to define what content gets included at correspondence cre
 
 #### Layout fragment {#layout-fragment}
 
-A layout fragment is a layout that can be used within one or more letters. A layout fragment is used to create repeatable patterns, especially dynamic tables. The layout can contain typical form fields such as “Address” and "Reference Number." It also contains empty sub forms that denote target areas. The layouts (XDPs) are created in Designer and then are [uploaded to Forms and Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+A layout fragment is a layout that can be used within one or more letters. A layout fragment is used to create repeatable patterns, especially dynamic tables. The layout can contain typical form fields such as “Address” and "Reference Number." It also contains empty sub forms that denote target areas. The layouts (XDPs) are created in Designer and then are [uploaded to Forms and Documents](../../forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Letter creation {#letter-creation}
 
@@ -180,32 +182,32 @@ This table provides some guidelines that you can use to classify your letters:
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Complexity level</strong></p> </td>
-   <td><p><strong>Layout complexity (subjective)</strong></p> </td>
-   <td><p><strong>Number of text paragraphs</strong></p> </td>
-   <td><p><strong>Number of conditional texts or images</strong></p> </td>
-   <td><p><strong>Required skill set</strong></p> </td>
+   <td valign="top" width="75"><p><strong>Complexity level</strong></p> </td>
+   <td valign="top" width="125"><p><strong>Layout complexity (subjective)</strong></p> </td>
+   <td valign="top" width="67"><p><strong>Number of text paragraphs</strong></p> </td>
+   <td valign="top" width="90"><p><strong>Number of conditional texts or images</strong></p> </td>
+   <td valign="top" width="161"><p><strong>Required skill set</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Low complexity</p> </td>
-   <td><p>Low. Layout has few form fields (&lt;15).</p> <p>Typically one page<span class="acrolinxCursorMarker"></span>.</p> </td>
-   <td><p>8</p> </td>
-   <td><p>1</p> </td>
-   <td><p>Medium Designer skills.</p> </td>
+   <td valign="top" width="75"><p>Low complexity</p> </td>
+   <td valign="top" width="125"><p>Low. Layout has few form fields (&lt;15).</p> <p>Typically one page<span class="acrolinxCursorMarker"></code>.</p> </td>
+   <td valign="top" width="67"><p>8</p> </td>
+   <td valign="top" width="90"><p>1</p> </td>
+   <td valign="top" width="161"><p>Medium Designer skills.</p> </td>
   </tr>
   <tr>
-   <td><p>Medium complexity</p> </td>
-   <td><p>Medium complexity layout. Includes structures such as tables. Typically more than one page long.</p> </td>
-   <td><p>16</p> </td>
-   <td><p>2</p> </td>
-   <td><p>Medium Designer skills.</p> <p> </p> <p>Capability to create complex expressions using user interfaces.</p> </td>
+   <td valign="top" width="75"><p>Medium complexity</p> </td>
+   <td valign="top" width="125"><p>Medium complexity layout. Includes structures such as tables. Typically more than one page long.</p> </td>
+   <td valign="top" width="67"><p>16</p> </td>
+   <td valign="top" width="90"><p>2</p> </td>
+   <td valign="top" width="161"><p>Medium Designer skills.</p> <p> </p> <p>Capability to create complex expressions using user interfaces.</p> </td>
   </tr>
   <tr>
-   <td><p>High complexity</p> </td>
-   <td><p>Complex layout. Can be greater than three pages. Contains tables and more than 60 form fields.</p> </td>
-   <td><p>40</p> </td>
-   <td><p>8</p> </td>
-   <td><p>Expert Designer skills.</p> <p> </p> <p>Capability to create complex expressions using user interfaces.</p> </td>
+   <td valign="top" width="75"><p>High complexity</p> </td>
+   <td valign="top" width="125"><p>Complex layout. Can be greater than three pages. Contains tables and more than 60 form fields.</p> </td>
+   <td valign="top" width="67"><p>40</p> </td>
+   <td valign="top" width="90"><p>8</p> </td>
+   <td valign="top" width="161"><p>Expert Designer skills.</p> <p> </p> <p>Capability to create complex expressions using user interfaces.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -223,12 +225,12 @@ You need the following in place first to create a correspondence:
 
 * [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
 
-* The letter XDP ([layout](/help/forms/using/document-fragments.md)).
-* Other XDPs ([layout fragments](/help/forms/using/document-fragments.md#main-pars-header-13)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* The letter XDP ([layout](/forms/using/document-fragments.md)).
+* Other XDPs ([layout fragments](/forms/using/document-fragments.md#main-pars_header_13)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
-* The relevant [data dictionary](/help/forms/using/data-dictionary.md) (Optional).
-* The [data modules](/help/forms/using/document-fragments.md) you want to use in the correspondence.
-* [Test Data](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) is the XML file with the test data ported in it. Test data is required if you are using a data dictionary.
+* The relevant [data dictionary](../../forms/using/data-dictionary.md) (Optional).
+* The [data modules](/forms/using/document-fragments.md) you want to use in the correspondence.
+* [Test Data](../../forms/using/data-dictionary.md#p-working-with-test-data-p) is the XML file with the test data ported in it. Test data is required if you are using a data dictionary.
 
 ## Create a letter template {#create-a-letter-template}
 
@@ -236,9 +238,9 @@ You need the following in place first to create a correspondence:
 
 1. Select **Forms** &gt; **Letters**.
 
-1. Select **Create &gt; Letter**. Correspondence Management displays the available layouts (XDPs). These layouts come from Designer. The layouts also include the letter templates that Correspondence Management provides out of the box. For more information on Correspondence Management templates, see [Reference letter templates](/help/forms/using/reference-cm-layout-templates.md). To add your own layouts, create XDP (layout) files in Designer and then [upload them to AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Select **Create &gt; Letter**. Correspondence Management displays the available layouts (XDPs). These layouts come from Designer. The layouts also include the letter templates that Correspondence Management provides out of the box. For more information on Correspondence Management templates, see [Reference letter templates](/forms/using/reference-cm-layout-templates.md). To add your own layouts, create XDP (layout) files in Designer and then [upload them to AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
-   ![create-letter](assets/create-letter.png)
+   ![](assets/create-letter.png)
 
 1. Select a layout by tapping it and tap **Next**.
 
@@ -246,11 +248,11 @@ You need the following in place first to create a correspondence:
 
 1. Enter the properties for the Correspondence and tap **Save:**
 
-    * **Title (Optional):** Enter the title for the letter. Title need not be unique and can have special characters and non-english characters.
-    * **Name:** The unique name for the letter. No two letters in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
-    * **Description (Optional):** Describe the letter for your reference.
+    * **Title (Optional): **Enter the title for the letter. Title need not be unique and can have special characters and non-english characters.
+    * **Name: **The unique name for the letter. No two letters in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
+    * **Description (Optional): **Describe the letter for your reference.
     * **Data Dictionary (Optional)**: The Data Dictionary can be associated to the correspondence. The assets that you later insert in this correspondence should either have the same data dictionary as the one you choose for the correspondence here or no data dictionary.
-    * **Tags (Optional):** Select the tags to apply to the correspondence. You can also type in a new/custom tag name and press Enter to create it.
+    * **Tags (Optional): **Select the tags to apply to the correspondence. You can also type in a new/custom tag name and press Enter to create it.
     * **Post Process (Optional):** Select the post process to be applied to the letter template. There are out of the box post processes and the ones you have created using AEM, such as e-mail and print.
 
    ![Correspondence properties](assets/createcorrespondenceproperties.png)
@@ -259,7 +261,7 @@ You need the following in place first to create a correspondence:
 
    ![Alert message: letter created successfully](assets/createcorrespondencecreated.png)
 
-   **Next**: When you tap **Open**, Correspondence Management displays a representation of the layout with all the components in the layout (XDP) listed. Go ahead with inserting the [Data Modules and Layout Fragments and Configuring them](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Next**: When you tap **Open**, Correspondence Management displays a representation of the layout with all the components in the layout (XDP) listed. Go ahead with inserting the [Data Modules and Layout Fragments and Configuring them](../../forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Insert data modules and layout fragments in a letter and configure them {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
@@ -275,7 +277,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 
 1. Select Data Module or Layout Fragment for these options for each of the subforms and then choose the Data Modules or the Layout Fragments to insert. A layout fragment allows you to further insert data modules or layout fragments in it according to its design (up to four levels).
 
-   ![nestedlf](assets/nestedlf.png)
+   ![](assets/nestedlf.png)
 
 1. If you insert a layout fragment, the name of the layout fragment appears in the subform. And according to the selected fragment, nested subforms appear in the subform.
 1. After the chosen Data Modules are inserted in the layout, you can tap configure mode and set the following after tapping the Edit icon for each of the modules:
@@ -283,7 +285,8 @@ When after creating a correspondence, you tap Open, Correspondence Management di
     1. **Editable**: When this option is selected, the content can be edited in Create Correspondence user interface. Mark content as editable only if it requires the business user (such as a Claims Adjustor) to modify it.
     1. **Mandatory**: When this option is selected, the content is required in Create Correspondence user interface.
     1. **Selected**: When this option is selected, the content is selected by defaults in the Create Correspondence user interface.
-    1. **Indentation**: Increase or decrease the indentation of the module/content in the letter. Indentation is specified in terms of levels, starting 0. Each level indents 36pts. For more information on customizing forms, see **[!UICONTROL Correspondence Management Configurations]** in [Forms workflow](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+    1. **Indentation**: Increase or decrease the indentation of the module/content in the letter. Indentation is specified in terms of levels, starting 0. Each level indents 36pts. For more information on customizing forms, see **[!UICONTROL Correspondence Management Configurations]** in [Forms workflow](../../forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+
     1. **Page break before**: If you set the Page Break Before to on, the contents of THIS module always display on a new page.
     1. **Page break after**: If you set the Page Break After to on for a specific module, the contents of the NEXT module always display on a new page.
 
@@ -298,9 +301,10 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 
    In this page, you can also do the following for each of the assets in the subforms:
 
-    1. **Change the order of the assets**: drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
+    1. **Change the order of the assets**: drag-and-drop an asset holding the reorder icon for an asset ( ![](assets/dragndrop.png)).
+
     1. **Delete assets**: Tap the Delete icon next to an asset to delete it.
-    1. **Preview assets**: Tap the show preview icon ( ![showpreview](assets/showpreview.png)) next to an asset.
+    1. **Preview assets**: Tap the show preview icon ( ![](assets/showpreview.png)) next to an asset.
 
 1. Tap **Next**.
 1. The Data page details how data fields and variables are used in the template. Data can be linked to data sources such as a data dictionary or user input. Each field defines properties from which data dictionary maps data or what caption is displayed for user input fields.
@@ -330,23 +334,23 @@ When after creating a correspondence, you tap Open, Correspondence Management di
    >
    >The field and variable validators are only available on fields or variables with linkage type User or unprotected Data Dictionary Elements.
 
-   ![linkages](assets/linkages.png)
+   ![](assets/linkages.png)
 
 1. After specifying linkage, tap **Next**. Correspondence Management displays the Attachments screen.
 
 ### Set up the attachments {#set-up-the-attachments}
 
 1. Select **Add Asset**.
-1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. You need to have the assets first uploaded to Assets. It is recommended that you attach only PDF and Microsoft Office documents, but you can also attach images. For more information on uploading assets in DAM, see [Uploading Assets](/help/assets/managing-assets-touch-ui.md).
+1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. You need to have the assets first uploaded to Assets. It is recommended that you attach only PDF and Microsoft Office documents, but you can also attach images. For more information on uploading assets in DAM, see [Uploading Assets.](/help/assets/managing-assets-touch-ui.md)
 1. To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap **Lock Order**. If you do not select this option, the Claims Adjustor can change the order of the list items.
-1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
+1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![](assets/dragndrop.png)).
 1. Tap **Edit** in front of an attachment and specify an attachment as Mandatory if you do not want the author to be able to delete it. Specify an attachment as Selected if you want it to be preselected in the CCR interface.
 1. Select **Library Access** to give the access to the library. If Library Access is enabled, the Claims Adjustor can access content library while creating a letter and insert attachments.
 1. Select **Attachments Configuration** and specify the maximum number of attachments.
 
 1. Tap **Save**. Your correspondence is created and listed on the Letters page.
 
-After a letter template is created in Correspondence Management, the end user/agent/claim adjustor can open the letter in the CCR user interface and create a correspondence by entering data, setting up content, and managing attachments. For more information, see [Create Correspondence](/help/forms/using/create-correspondence.md).
+After a letter template is created in Correspondence Management, the end user/agent/claim adjustor can open the letter in the CCR user interface and create a correspondence by entering data, setting up content, and managing attachments. For more information, see [Create Correspondence](../../forms/using/create-correspondence.md).
 
 ## Types of linkage available for each of the fields {#types-of-linkage-available-for-each-of-the-fields}
 
@@ -468,7 +472,7 @@ The following values in the table
 You can use an existing letter template to quickly create a letter template with similar properties, content, and inherited assets, such as document fragments and data dictionary. To do this, copy and paste a letter.
 
 1. In the Letters page, select one or more letters. The UI displays the Copy icon.
-1. Tap Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Tap Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](../../forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Tap Paste. The Paste dialog appears. If you are copying and pasting the letters at the same place, the system automatically assigns names and titles to the new copies of letters but you can edit the titles and names of the letters.
 1. If required, edit the Title and Name with which you want to save the copy of the letter.
 1. Tap Paste. The copy of the letter is created. Now you can make the required changes in your newly created letter.

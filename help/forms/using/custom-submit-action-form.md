@@ -3,26 +3,28 @@ title: Writing custom Submit action for adaptive forms
 seo-title: Writing custom Submit action for adaptive forms
 description: AEM Forms lets you create custom Submit action for Adaptive forms. This article describes the procedure to add custom Submit action for Adaptive forms.
 seo-description: AEM Forms lets you create custom Submit action for Adaptive forms. This article describes the procedure to add custom Submit action for Adaptive forms.
-uuid: c98947b1-21db-47d0-8f94-2ab668a477fc
+uuid: fd8e1dac-b997-4e86-aaf6-3507edcb3070
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 607b2242-d81c-4e7a-9e56-e6dabffccbb6
+discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
+docset: aem65
+
 ---
 
-# Writing custom Submit action for adaptive forms {#writing-custom-submit-action-for-adaptive-forms}
+# Writing custom Submit action for adaptive forms{#writing-custom-submit-action-for-adaptive-forms}
 
-Adaptive forms require Submit actions to process user-specified data. A Submit action determines the task performed on the data that you submit using an adaptive form. Adobe Experience Manager (AEM) includes [OOTB Submit actions](/help/forms/using/configuring-submit-actions.md) that demonstrate custom tasks you can perform using the user-submitted data. For example, you can perform tasks, such as sending email or storing the data.
+Adaptive forms require Submit actions to process user-specified data. A Submit action determines the task performed on the data that you submit using an adaptive form. Adobe Experience Manager (AEM) includes [OOTB Submit actions](../../forms/using/configuring-submit-actions.md) that demonstrate custom tasks you can perform using the user-submitted data. For example, you can perform tasks, such as sending email or storing the data.
 
 ## Workflow for a Submit action {#workflow-for-a-submit-action}
 
-The flowchart depicts the workflow for a Submit action that is triggered when you click the **[!UICONTROL Submit]** button in an adaptive form. The files in the File Attachment component are uploaded to the server, and the form data is updated with the URLs of the uploaded files. Within the client, the data is stored in the JSON format. The client sends an Ajax request to an internal servlet that massages the data you specified and returns it in the XML format. The client collates this data with action fields. It submits the data to the final servlet (Guide Submit servlet) through a Form Submit action. Then, the servlet forwards the control to the Submit action. The Submit action can forward the request to a different sling resource or redirect the browser to another URL.
+The flowchart depicts the workflow for a Submit action that is triggered when you click the **[!UICONTROL Submit]** button in an adaptive form. The files in the File Attachment component are uploaded to the server, and the form data is updated with the URLs of the uploaded files. Within the client, the data is stored in the JSON format. The client sends an Ajax request to an internal servlet that massages the data you specified and returns it in the XML format. The client collates this data with action fields. It submits the data to the final servlet (Guide Submit servlet) through a Form Submit action. Then, the servlet forwards the control to the Submit action. The Submit action can forward the request to a different sling resource or redirect the browser to another URL. 
 
-![Flowchart depicting the workflow for Submit action](assets/diagram1.png)
+![Flowchart depicting the workflow for Submit action](assets/diagram1.png) 
 
 ### XML data format {#xml-data-format}
 
-The XML data is sent to the servlet using the **`jcr:data`** request parameter. Submit actions can access the parameter to process the data. The following code describes the format of the XML data. The fields that are bound to the Form model appear in the **`afBoundData`** section. Unbound fields appear in the `afUnoundData` section. For more information about the format of the `data.xml` file, see [Introduction to prepopulating adaptive form fields](/help/forms/using/prepopulate-adaptive-form-fields.md).
+The XML data is sent to the servlet using the **`jcr:data`** request parameter. Submit actions can access the parameter to process the data. The following code describes the format of the XML data. The fields that are bound to the Form model appear in the **`afBoundData`** section. Unbound fields appear in the `afUnoundData`** **section. For more information about the format of the `data.xml` file, see [Introduction to prepopulating adaptive form fields](../../forms/using/prepopulate-adaptive-form-fields.md).
 
 ```xml
 <?xml ?>
@@ -76,7 +78,7 @@ If the action doesn't provide a forward path, the Submit servlet redirects the b
 
 >[!NOTE]
 >
->An author provides the Redirect URL (using the Thank You Page Configuration). [OOTB Submit Actions](/help/forms/using/configuring-submit-actions.md) use the Redirect URL to redirect the browser from the resource that the forward path references.
+>An author provides the Redirect URL (using the Thank You Page Configuration). [OOTB Submit Actions](../../forms/using/configuring-submit-actions.md) use the Redirect URL to redirect the browser from the resource that the forward path references. 
 >
 >You can write a custom Submit action that forwards a request to a resource or servlet. Adobe recommends that the script that performs resource handling for the forward path redirect the request to the Redirect URL when the processing completes.
 
@@ -89,12 +91,14 @@ A Submit action is a sling:Folder that includes the following:
 * **post.POST.jsp**: The Submit servlet calls this script with the data that you submit and the additional data in the previous sections. Any mention of running an action in this page implies running the post.POST.jsp script. To register the Submit action with the adaptive forms to display in the Adaptive Form Edit dialog, add these properties to the sling:Folder:
 
     * **guideComponentType** of type String and value **fd/af/components/guidesubmittype**
-    * **guideDataModel** of type String that specifies the type of adaptive form for which the Submit action is applicable. **xfa** is supported for XFA-based adaptive forms while **xsd** is supported for XSD-based adaptive forms. **basic** is supported for adaptive forms that do not use XDP or XSD. To display the action on multiple types of adaptive forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based adaptive forms, specify the values **xfa** and **xsd** respectively.
-    * **jcr:description** of type String. The value of this property is displayed in the Submit action list in the Submit Actions Tab of the Adaptive Form Edit dialog. The OOTB actions are present in the CRX repository at the location **/libs/fd/af/components/guidesubmittype**.
+    
+    * **guideDataModel **of type String that specifies the type of adaptive form for which the Submit action is applicable. **xfa** is supported for XFA-based adaptive forms while **xsd **is supported** **for XSD-based adaptive forms. **basic** is supported for adaptive forms that do not use XDP or XSD. To display the action on multiple types of adaptive forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based adaptive forms, specify the values **xfa** and **xsd** respectively.  
+    
+    * **jcr:description **of type String. The value of this property is displayed in the Submit action list in the Submit Actions Tab of the Adaptive Form Edit dialog. The OOTB actions are present in the CRX repository at the location **/libs/fd/af/components/guidesubmittype**.
 
 ## Creating a custom Submit action {#creating-a-custom-submit-action}
 
-Perform the following steps to create a custom Submit action that saves the data in the CRX repository and then sends you an email. The adaptive form contains the OOTB Submit action Store Content (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, [configure](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?#Configuring the Mail Service) the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
+Perform the following steps to create a custom Submit action that saves the data in the CRX repository and then sends you an email. The adaptive form contains the OOTB Submit action [Store Content](/forms/using/submit-store-data-crx-repository.md) (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, [configure](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring the Mail Service) the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
 
 1. Log in to CRXDE Lite at the URL https://&lt;server&gt;:&lt;port&gt;/crx/de/index.jsp. Create a node with the property sling:Folder and name store_and_mail in the /apps/custom_submit_action folder. Create the custom_submit_action folder if it doesn't exist already.
 
@@ -116,11 +120,13 @@ Perform the following steps to create a custom Submit action that saves the data
 
    Add the following properties in the store_and_email node:
 
-    * **guideComponentType** of type **String** and value **fd/af/components/guidesubmittype**
-    * **guideDataModel** of type **String** and value **xfa, xsd, basic**
-    * **jcr:description** of type **String** and value **Store and Email Action**
+    * **guideComponentType **of type **String** and value **fd/af/components/guidesubmittype**
+    
+    * **guideDataModel** of type **String **and value **xfa, xsd, basic**
+    
+    * **jcr:description **of type **String **and value **Store and Email Action**
 
-1. Open any adaptive form. Click the **Edit** button next to **Start** to open the **Edit** dialog of the adaptive form container. The new action is displayed in the **Submit Actions** Tab. Selecting the **Store and Email Action** displays the configuration added in the dialog node.
+1. Open any adaptive form. Click the **Edit** button next to **Start** to open the **Edit** dialog of the adaptive form container. The new action is displayed in the **Submit Actions** Tab. Selecting the **Store and Email Action **displays the configuration added in the dialog node.
 
    ![Submit action configuration dialog](assets/store_and_email_submit_action_dialog.jpg)
 
@@ -153,17 +159,17 @@ Perform the following steps to create a custom Submit action that saves the data
      com.day.cq.mailer.MessageGateway,
      org.apache.commons.mail.Email,
                    org.apache.commons.mail.SimpleEmail" %>
-   <%@taglib prefix="sling"
+   <%@taglib prefix="sling" 
                    uri="https://sling.apache.org/taglibs/sling/1.0" %>
-   <%@taglib prefix="cq"
-                   uri="https://www.day.com/taglibs/cq/1.0"
+   <%@taglib prefix="cq" 
+                   uri="https://www.day.com/taglibs/cq/1.0" 
    %>
    <cq:defineObjects/>
    <sling:defineObjects/>
    <%
-           String storeContent =
+           String storeContent = 
                        "/libs/fd/af/components/guidesubmittype/store";
-           FormsHelper.runAction(storeContent, "post", resource,
+           FormsHelper.runAction(storeContent, "post", resource, 
                                    slingRequest, slingResponse);
     ValueMap props = ResourceUtil.getValueMap(resource);
     Email email = new SimpleEmail();
@@ -174,9 +180,9 @@ Perform the following steps to create a custom Submit action that saves the data
       }
     email.setMsg((String)props.get("template"));
     email.setSubject((String)props.get("subject"));
-    MessageGatewayService messageGatewayService =
+    MessageGatewayService messageGatewayService = 
                        sling.getService(MessageGatewayService.class);
-    MessageGateway messageGateway =
+    MessageGateway messageGateway = 
                    messageGatewayService.getGateway(SimpleEmail.class);
     messageGateway.send(email);
    %>

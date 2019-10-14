@@ -3,14 +3,16 @@ title: Overview of AEM Document Services
 seo-title: Overview of AEM Document Services
 description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
 seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
-uuid: 17fd42ef-9950-4b51-9ae7-82e8b4759fe8
+uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 0685478b-d08e-4d69-8dd3-f75270772167
+discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
+docset: aem65
+
 ---
 
-# Overview of AEM Document Services {#overview-of-aem-document-services}
+# Overview of AEM Document Services{#overview-of-aem-document-services}
 
 AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents. Document Services contain following services:
 
@@ -45,9 +47,9 @@ The Assembler service lets you combine, rearrange, and augment PDF and XDP docum
 
 Apart from above mentioned capabilities, the Assembler service:
 
-* Converts PDF documents to PDF/A standard.
-* Transforms PDF forms, XML forms (created in Designer), and PDF forms (created in Acrobat) to PDF/A-1b, PDF/A-2b, and PDFA/A-3b.
-* Converts signed or unsigned PDF documents (Digital Signatures required).
+* Converts PDF documents to PDF/A standard. 
+* Transforms PDF forms, XML forms (created in Designer), and PDF forms (created in Acrobat) to PDF/A-1b, PDF/A-2b, and PDFA/A-3b. 
+* Converts signed or unsigned PDF documents (Digital Signatures required). 
 * Validates the compliance of a PDF/A file and converts it if necessary.
 
 ### About DDX {#about-ddx}
@@ -56,31 +58,31 @@ When using the Assembler service, use an XML-based language called Document Desc
 
 DDX document can specify resultant documents with these characteristics:
 
-* PDF document that is assembled from multiple PDF documents
-* Multiple PDF documents that are broken apart from a single PDF document
-* PDF Portfolio that includes a self-contained user interface and multiple PDF and non-PDF documents
-* XDP document that is assembled from multiple XDP documents
-* XDP document that contains XML fragments that are dynamically inserted into an XDP document
-* PDF document that packages an XDP document
+* PDF document that is assembled from multiple PDF documents  
+* Multiple PDF documents that are broken apart from a single PDF document  
+* PDF Portfolio that includes a self-contained user interface and multiple PDF and non-PDF documents  
+* XDP document that is assembled from multiple XDP documents  
+* XDP document that contains XML fragments that are dynamically inserted into an XDP document  
+* PDF document that packages an XDP document  
 * XML files that report on the characteristics of a PDF document. The reported characteristics include text, comments, form data, file attachments, files used in PDF Portfolios, bookmarks, and PDF properties. PDF properties include form properties, page rotation, and document author.
 
 You can use DDX to augment PDF documents as part of document assembly or disassembly. You can specify any combination of the following effects:
 
-* Add or remove watermarks or backgrounds on selected pages.
-* Add or remove headers and footers on selected pages.
-* Removes the structure and navigational capabilities of a PDF Package or PDF Portfolio. The result is a single PDF file.
-* Renumber page labels. Page labels are typically used for page numbering.
-* Import metadata from another source document.
-* Add or remove file attachments, bookmarks, links, comments, and JavaScript.
-* Set initial view characteristics and optimize for viewing on the web.
-* Set permissions for encrypted PDF.
-* Rotate pages or rotate and shift content on pages.
-* Change the size of selected pages.
+* Add or remove watermarks or backgrounds on selected pages.  
+* Add or remove headers and footers on selected pages.  
+* Removes the structure and navigational capabilities of a PDF Package or PDF Portfolio. The result is a single PDF file.  
+* Renumber page labels. Page labels are typically used for page numbering.  
+* Import metadata from another source document.  
+* Add or remove file attachments, bookmarks, links, comments, and JavaScript.  
+* Set initial view characteristics and optimize for viewing on the web.  
+* Set permissions for encrypted PDF.  
+* Rotate pages or rotate and shift content on pages.  
+* Change the size of selected pages.  
 * Merge data with a PDF that is XFA-based.
 
 You can use a simple input map to specify the locations of source and resultant documents. You can also use the following external data URL types:
 
-* File
+* File  
 * FTP
 * HTTP/HTTPS
 
@@ -121,7 +123,7 @@ When PDF documents have the appropriate usage rights added, recipients can do th
 
 These special user capabilities are automatically activated when a rights-enabled PDF document is opened within Adobe Reader. When the user has finished working with a rights-enabled document, those functions are again disabled in Adobe Reader. They remain disabled until the user receives another rights-enabled PDF document.
 
-Out of the box, the DocAssurance service is not available for use. To configure the DocAssurance service, see [Configuring Document Services](/help/forms/using/install-configure-document-services.md).
+Out of the box, the DocAssurance service is not available for use. To configure the DocAssurance service, see [Installing and Configuring Configuring Document Services](../../forms/using/install-configure-document-services.md).
 
 ## Send To Printer Service {#send-to-printer-service}
 

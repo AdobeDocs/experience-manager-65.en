@@ -1,17 +1,19 @@
 ---
-title: Launches Overview
-seo-title: Launches Overview
+title: Launches
+seo-title: Launches
 description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
-uuid: ff6a2898-7a77-4315-bb1f-efa9caa5f3b2
+uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
+discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
+docset: aem65
+
 ---
 
-# Launches Overview{#launches}
+# Launches{#launches}
 
 Launches enable you to efficiently develop content for a future release.
 
@@ -48,11 +50,7 @@ Launches allow you to:
 
         * The source pages can be taken from multiple (separate) branches.
 
-  >[!CAUTION]
-  >
-  >Multiple source branches for a launch is not possible in classic UI.
-
-  ![chlimage_1-233](assets/chlimage_1-233.png)
+  ![](assets/chlimage_1-111.png)
 
 * Edit the launch configuration:
 
@@ -69,25 +67,25 @@ Launches allow you to:
 
     * Automatically - this involves the following:
 
-        * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.
+        * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.  
+        
         * The **Production Ready** flag: this can only be set when editing a launch.
-        * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.
-
+        * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.  
           If no date has been set, the flag will have no effect.
 
 * Update your source and launch pages in parallel:
 
-    * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; i.e. as a live copy).
+    * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; i.e. as a live copy).  
     * Changes to your launch copy can be made without disrupting these automatic updates or the source pages.
 
-  ![chlimage_1-234](assets/chlimage_1-234.png)
+  ![](assets/chlimage_1-112.png)
 
 * [Create a nested launch](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - a launch within a launch:
 
     * The source is an existing launch.
     * You can [promote a nested launch](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) to any target; this can be a parent launch or the top-level source pages (Production).
 
-  ![chlimage_1-235](assets/chlimage_1-235.png)
+  ![](assets/chlimage_1-113.png)
 
   >[!CAUTION]
   >
@@ -95,7 +93,7 @@ Launches allow you to:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`. 
 >
 >Please contact your system administrator if you experience any problems.
 
@@ -105,7 +103,7 @@ The Launches console provides an overview of your launches and allows you to tak
 
 * The **Tools** Console: **Tools**, **Sites**, **Launches**.
 
-* Or directly with [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
+* Or directly with [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Launches in References (Sites Console) {#launches-in-references-sites-console}
 
@@ -113,9 +111,9 @@ The Launches console provides an overview of your launches and allows you to tak
 1. Open the **References** rail and select the source page.
 1. Select **Launches**, the existing launch(es) will be listed:
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   ![](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Tap/click on the appropriate launch, the list of possible actions will be displayed:
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   ![](assets/screen-shot_2019-03-05at121952-1.png)
 

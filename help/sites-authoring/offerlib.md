@@ -3,19 +3,21 @@ title: Creating and Managing Offers
 seo-title: Creating and Managing Offers
 description: Use the Offers console to create offers that you can use in activity experiences
 seo-description: Use the Offers console to create offers that you can use in activity experiences
-uuid: 0b7c64e2-1451-4947-aa59-1d8255806910
+uuid: be0a53da-a979-4a30-a4bb-7c9ce26ae1a1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
+discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
+docset: aem65
+
 ---
 
 # Creating and Managing Offers{#creating-and-managing-offers}
 
 Use the Offers console to create offers that you can [use in activity experiences](/help/sites-authoring/content-targeting-touch.md). Creating offers in the Offers console saves time when several experiences require the same offer:
 
-* Create the offer once in the library and use it in multiple experieces of your brand activities.
+* Create the offer once in the library and use it in multiple experieces of your brand activities. 
 * Change the offer in the library and the change affects all of the experiences that use it.
 
 The Offers console organizes offers by brand. Each brand contains a library of offers that can be used in a brand's experiences. Use folders to define a heirarchical structure for organizing offers in each library. A logical folder structure enables authors to easily find offers by browsing. Tagging and search tools also enable authors to find offers.
@@ -28,9 +30,9 @@ When you create a brand using the Offers console, it also appears in the [Activi
 
 1. In the Navigation console, click or tap **Personalization** &gt; **Offers**.
 
-   ![chlimage_1-306](assets/chlimage_1-306.png)
+   ![](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Click or tap **Create** and then **Create Brand**.
+1. Click or tap **Create** and then **Create** **Brand**.
 1. Select the brand template and click or tap **Next**.
 1. Type a title for the brand as you want it to appear in the Offers and Activities consoles. Optionally, type or select one or more tags to associate with the brand.
 1. Click or tap **Create**.
@@ -42,12 +44,12 @@ Add a folder to the offer library of a brand to organize and store offers. You c
 1. In the Offers console, open the location where you want to create the folder. For example, open the brand to create a top-level folder, or open another folder in the library.
 1. Click or tap **Create** &gt; **Create Folder or Offer**.
 
-   ![chlimage_1-307](assets/chlimage_1-307.png)
+   ![](assets/screen-shot_2019-03-05at124557.png)
 
-1. Select **Folder** and click **Next**.
+1. Select **Folder** and click **Next**. 
 1. Type a title for the folder as you want it to appear in the offer library and type or select tags.
 
-   ![chlimage_1-308](assets/chlimage_1-308.png)
+   ![](assets/chlimage_1-172.png)
 
 1. Click or tap **Create**.
 
@@ -60,7 +62,7 @@ After you create the offer you can open it to author the content.
 1. In the Offers console, open the location where you want to create the offer. For example, open the brand to create a top-level offer, or open a folder in the library.
 1. Click or tap **Create** &gt; **Create Folder or Offer**.
 
-   ![chlimage_1-309](assets/chlimage_1-309.png)
+   ![](assets/screen-shot_2019-03-05at124557-1.png)
 
 1. Select the **Offer Page** template and then click or tap **Next**.
 1. Type a title for the offer and optionally select or type one or more tags to associate with the offer, then click or tap **Create**.
@@ -95,12 +97,12 @@ You can delete an offer while viewing either folder contents in an offer library
 
 Search for offers of any brand using keywords for matching the title.
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![](assets/screen-shot_2019-03-05at124731.png)
 
 The current search criteria appear next to the search results. You can also sort the results by column in ascending or descending order. You can perform a search from any folder of any offer library. The search results are the same regardless of the current folder.
 
 To search offers:
 
-1. At the top of the Offers console, click or tap the magnifying glass icon. By default the search is limited to offers.
+1. At the top of the Offers console, click or tap the magnifying glass icon. By default the search is limited to offers. 
 1. Enter your keyword to search for offers. Select from the results.
 
