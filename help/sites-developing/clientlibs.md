@@ -3,12 +3,14 @@ title: Using Client-Side Libraries
 seo-title: Using Client-Side Libraries
 description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
-uuid: c022992d-a6db-4abb-8c53-4c91d6eed225
+uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
+discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
+docset: aem65
+
 ---
 
 # Using Client-Side Libraries{#using-client-side-libraries}
@@ -43,7 +45,7 @@ A client-side library folder is a repository node of type `cq:ClientLibraryFolde
   - channels (string) multiple
 ```
 
-By default, `cq:ClientLibraryFolder` nodes can be placed anywhere within the `/apps`, `/libs` and `/etc` subtrees of the repository (these defaults, and other settings can be controlled through the **Adobe Granite HTML Library Manager** panel of the [System Console](http://localhost:4502/system/console/configMgr)).
+By default, `cq:ClientLibraryFolder` nodes can be placed anywhere within the `/apps`, `/libs` and `/etc` subtrees of the repository (these defaults, and other settings can be controlled through the **Adobe Granite HTML Library Manager** panel of the [System Console](https://localhost:4502/system/console/configMgr)).
 
 Each `cq:ClientLibraryFolder` is populated with a set of JS and/or CSS files, along with a few supporting files (see below). The properties of the `cq:ClientLibraryFolder` are configured as follows:
 
@@ -63,7 +65,7 @@ Because HTL is the preferred technology for developing AEM sites, HTL should be 
 In HTL, client libraries are loaded through a helper template provided by AEM, which can be accessed through [ `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Three templates are available in this file, which can be called through [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Loads only the CSS files of the referenced client libraries.
-* **js** - Loads only the JavaScript files of the referenced client libraries.
+* **js ** - Loads only the JavaScript files of the referenced client libraries.
 * **all** - Loads all the files of the referenced client libraries (both CSS and JavaScript).
 
 Each helper template expects a `categories` option for referencing the desired client libraries. That option can be either an array of string values, or a string containing a comma separated values list.
@@ -91,11 +93,11 @@ The generated HTML page contains the following code:
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-For complete information, including attributes for filtering JS, CSS, or theme libraries, see [ui:includeClientLib](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib).
+For complete information, including attributes for filtering JS, CSS, or theme libraries, see [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, which in the past was commonly used to include client libraries, has been deprecated since AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) should be used instead as detailed above.
+>`<cq:includeClientLib>`, which in the past was commonly used to include client libraries, has been deprecated since AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) should be used instead as detailed above.
 
 ## Creating Client Library Folders {#creating-client-library-folders}
 
@@ -108,10 +110,10 @@ Client library folders contain the following items:
 * The JS and/or CSS source files to merge.
 * Resources that support CSS styles, such as image files.
 
-  **Note:** You can use subfolders to organize source files.
+  **Note: **You can use subfolders to organize source files.
 * One `js.txt` file and/or one `css.txt` file that identifies the source files to merge in the generated JS and/or CSS files.
 
-![clientlibarch](assets/clientlibarch.png)
+![](assets/clientlibarch.png)
 
 For information about requirements that are specific to client libraries for widgets, see [Using and Extending Widgets](/help/sites-developing/widgets.md).
 
@@ -127,7 +129,7 @@ In previous versions, client library folders were located below `/etc/clientlibs
 
 >[!NOTE]
 >
->Static resources below the client library folder must be in a folder called *resources*. If you do not have the static resources, such as images, under the folder *resources*, it cannot be referenced on a publish instance. Here is an example: http://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>Static resources below the client library folder must be in a folder called *resources*. If you do not have the static resources, such as images, under the folder *resources*, it cannot be referenced on a publish instance. Here is an example: https://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
 
 >[!NOTE]
 >
@@ -157,7 +159,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 ### Create a Client Library Folder {#create-a-client-library-folder}
 
-1. Open CRXDE Lite in a web browser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite in a web browser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Select the folder where you want to locate the client library folder and click **Create &gt; Create Node**.
 1. Enter a name for the library file, and in the Type list select `cq:ClientLibraryFolder`. Click **OK** and then click **Save All**.
 1. To specify the category or categories that the library belongs to, select the `cq:ClientLibraryFolder` node, add the following property, and then click **Save All**:
@@ -169,7 +171,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 1. Add source files to the library folder by any means. For example, use a WebDav client to copy files, or create a file and author the content manually.
 
-   **Note:** You can organize source files in subfolders if desired.
+   **Note: **You can organize source files in subfolders if desired.
 
 1. Select the client library folder and click **Create &gt; Create file**.
 1. In the file name box, type one of the following file names and click OK:
@@ -179,9 +181,9 @@ Then you set the `allowProxy` property on `foo` to true.
 
 1. Open the file and type the following text to identify the root of the path of the source files:
 
-   `#base=[root]`
+   `#base=*[root]*`
 
-   Replace `[root]` with the path to the folder that contains the source files, relative to the TXT file. For example, use the following text when the source files are in the same folder as the TXT file:
+   Replace * `[root]`* with the path to the folder that contains the source files, relative to the TXT file. For example, use the following text when the source files are in the same folder as the TXT file:
 
    `#base=.`
 
@@ -199,7 +201,7 @@ When the code in your client library folder references other libraries, identify
 The dependencies must be another `cq:ClientLibraryFolder`. To identify dependencies, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 
 * **Name:** dependencies
-* **Type:** String`[]`
+* **Type: **String[]
 * **Values:** The value of the categories property of the cq:ClientLibraryFolder node that the current library folder depends on.
 
 For example, the / `etc/clientlibs/myclientlibs/publicmain` has a dependency on the `cq.jquery` library. The JSP that references the main client library generates HTML that includes the following code:
@@ -222,7 +224,7 @@ It is a best practice to keep all application-related files in their application
 Use the categories property to identify the client library folder to embed. To embed the library, add a property to the embedding `cq:ClientLibraryFolder` node, using the following property attributes:
 
 * **Name:** embed
-* **Type:** String`[]`
+* **Type:** String[]
 * **Value:** The value of the categories property of the `cq:ClientLibraryFolder` node to embed.
 
 #### Using Embedding to Minimize Requests {#using-embedding-to-minimize-requests}
@@ -266,7 +268,7 @@ The following client library categories are incuded with AEM. You should embed o
 
 When you embed CSS files, the generated CSS code uses paths to resources that are relative to the embedding library. For example, the publicly-accessible library `/etc/client/libraries/myclientlibs/publicmain` embeds the `/apps/myapp/clientlib` client library:
 
-![screen_shot_2012-05-29at20122pm](assets/screen_shot_2012-05-29at20122pm.png)
+![](assets/screen_shot_2012-05-29at20122pm.png)
 
 The `main.css` file contains the following style:
 
@@ -297,7 +299,7 @@ Use the `channels` property of a client library folder to identify the mobile gr
 To associate a client library folder with a device group, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 
 * **Name:** channels
-* **Type:** String`[]`
+* **Type: **String[]
 * **Values:** The name of the mobile group. To exclude the library folder from a group, prefix the name with an exclamation mark ("!").
 
 For example, the following table lists the value of the `channels` property for each client library folder of the `cq.widgets` category:
@@ -308,7 +310,7 @@ For example, the following table lists the value of the `channels` property for 
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
 | `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` |`[`*no value*`]`|
+| `/libs/cq/searchpromote/widgets/themes/default` |*[no value]* |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |
@@ -388,7 +390,7 @@ For further details on GCC options, see the [GCC documentation](https://develope
 
 YUI is set as the default minifier in AEM. To change this to GCC, follow these steps.
 
-1. Go to Apache Felix Config Manager at [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+1. Go to Apache Felix Config Manager at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. Find and edit the **Adobe Granite HTML Library Manager**.
 1. Enable the **Minify** option (if not already enabled).
 1. Set the value **JS Processor Default Configs** to `min:gcc`.
@@ -427,7 +429,7 @@ Opening the `publicmain.css` file reveals the following code:
 
 The `/libs/cq/ui/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/cq/ui/content/dumplibs` node has the component as a resource type. To open the page, use the following URL (use a different host and port as required):
 
-[http://localhost:4502/libs/cq/ui/content/dumplibs.test.html](http://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
+[https://localhost:4502/libs/cq/ui/content/dumplibs.test.html](https://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
 
 The information includes the library path and type (CSS or JS), and the values of the library attributes, such as categories and dependencies. Subsequent tables on the page show the libraries in each category and channel.
 
@@ -438,9 +440,10 @@ The `dumplibs` component includes a test selector that displays the source code 
 1. Use one of the following methods to open the Test Output page:
 
     * From the `dumplibs.html` page, click the link in the **Click here for output testing** text.
+
     * Open the following URL in your web browser (use a different host and port as required):
 
-      [http://localhost:4502/libs/cq/ui/content/dumplibs.html](http://localhost:4502/libs/cq/ui/content/dumplibs.html)
+      [https://localhost:4502/libs/cq/ui/content/dumplibs.html](https://localhost:4502/libs/cq/ui/content/dumplibs.html)
 
    The default page shows output for tags with no value for the categories attribute.
 
@@ -454,4 +457,4 @@ The HTML Library Manager service processes `cq:ClientLibraryFolder` tags and gen
 * Improve performance: Remove whitespace and compress libraries.
 * Improve readability: Include whitespace and do not compress.
 
-For information about configuring the service, see [AEM HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md).
+For information about configuring the service, see [AEM HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).

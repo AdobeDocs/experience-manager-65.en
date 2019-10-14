@@ -3,12 +3,14 @@ title: Concepts of the AEM Touch-Enabled UI
 seo-title: Concepts of the AEM Touch-Enabled UI
 description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
 seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
-uuid: 8ec6514e-f623-40be-a7bf-2e85bf4385ca
+uuid: 401c5a65-6ddc-4942-ab8e-395016f9c629
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
+discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
+docset: aem65
+
 ---
 
 # Concepts of the AEM Touch-Enabled UI{#concepts-of-the-aem-touch-enabled-ui}
@@ -41,6 +43,7 @@ The touch-enabled UI includes:
     * Selection for the left-hand rail
     * Breadcrumbs
     * Access to appropriate **Create** actions
+
     * View selections
 
 * The content area that:
@@ -50,11 +53,11 @@ The touch-enabled UI includes:
     * Uses a responsive design (the display resizes automatically according to your device and/or window size)
     * Uses infinite scrolling (no more pagination, all items are listed ine one window)
 
-![chlimage_1-183](assets/chlimage_1-183.png)
+![](assets/chlimage_1-79.png)
 
 >[!NOTE]
 >
->Nearly all AEM functionality has been ported to the touch-enabled UI. However in some limited cases, functionality will revert to the classic UI. See [Touch UI Feature Status](/help/release-notes/touch-ui-features-status.md) for more information.
+>Nearly all AEM functionality has been ported to the touch-enabled UI. However in some limited cases, functionality will revert to the classic UI. See [Touch UI Feature Status](../../../release-notes/touch-ui-features-status.md) for more information.
 
 The touch-enabled UI has been designed by Adobe to provide consistency in the user experience across multiple products. It is based on:
 
@@ -77,7 +80,7 @@ For a further overview of the touch-enabled UI structure, see the article [Struc
 
 AEM uses the Granite platform as a base and the Granite platform includes, amongst other things, the Java Content Repository.
 
-![chlimage_1-184](assets/chlimage_1-184.png)
+![](assets/chlimage_1-80.png)
 
 ## Granite {#granite}
 
@@ -111,8 +114,10 @@ These adhere to the requirements:
 * Be extensible
 * Be easy to override
 
-![](assets/chlimage_1-185.png)
+![](assets/chlimage_1-81.png)
+GraniteUI.pdf
 
+[Get File](assets/graniteui.pdf)
 The Granite UI:
 
 * Uses the RESTful architecture of Sling
@@ -123,10 +128,9 @@ The Granite UI:
 * Is designed for both mobile and desktop devices (respects mobile first)
 * Can be used in any Granite-based platform/product/project; eg AEM
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![](assets/chlimage_1-82.png)
 
 * [Granite UI Foundation Components](#granite-ui-foundation-components)
-
   This library of foundation components can be used or extended by other libraries.
 
 * [Granite UI Administration Components](#granite-ui-administration-components)
@@ -138,11 +142,11 @@ The client-server communication in the Granite UI consists of hypertext, not obj
 * The server enriches the HTML with semantic data
 * The client enriches the hypertext with hypermedia (interaction)
 
-![chlimage_1-187](assets/chlimage_1-187.png)
+![](assets/chlimage_1-83.png)
 
 #### Client-Side {#client-side}
 
-This uses an extension of HTML vocabulary, provided so that the author can express their intention to build an interactive webapp. This is a similar approach to [WAI-ARIA](https://www.w3.org/TR/wai-aria/) and [microformats](http://microformats.org/).
+This uses an extension of HTML vocabulary, provided so that the author can express their intention to build an interactive webapp. This is a similar approach to [WAI-ARIA](https://www.w3.org/TR/wai-aria/) and [microformats](https://microformats.org/).
 
 It primarily consists of a collection of interaction patterns (for example, asyncronously submitting a form) that are interpreted by JS and CSS codes, run on the client-side. The role of the client-side is to enhance the markup (given as the hypermedia affordance by the server) for interactivity.
 
@@ -203,7 +207,7 @@ The differences between Granite UI and ExtJS (used for the classic UI) are also 
 
 ### Granite UI Foundation Components {#granite-ui-foundation-components}
 
-The [Granite UI foundation components](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) provide the basic building blocks needed for building any UI. They include, amongst others:
+The [Granite UI foundation components](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) provide the basic building blocks needed for building any UI. They include, amongst others:
 
 * Button
 * Hyperlink
@@ -248,19 +252,19 @@ When upgrading ExtJS code to use the Granite UI, the following list provides a c
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` |`granite/ui/components/foundation/form/autocomplete` `cq/gui/components/common/datasources/tags`|
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags`|
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Node type** |**Granite UI resource type** |
 |---|---|
-| `cq:WidgetCollection` | `granite/ui/components/foundation/container`|
-| `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs`|
+| `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs`|
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Granite UI Administration Components {#granite-ui-administration-components}
 
-The [Granite UI administration components](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) build on the foundation components to provide generic building blocks that any administration application can implement. These include, amongst others:
+The [Granite UI administration components](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) build on the foundation components to provide generic building blocks that any administration application can implement. These include, amongst others:
 
 * Global Navigation Bar
 * Rail (skeleton)
@@ -278,6 +282,9 @@ Implementation:
 
 ## Coral UI {#coral-ui}
 
+CoralUI.pdf
+
+[Get File](assets/coralui.pdf)
 Coral UI (CUI) is an implementation of Adobe's visual style for the touch-enabled UI, that has been designed to provide consistency in the user experience across multiple products. Coral UI provides everything you need to adopt the visual style used on the authoring environment.
 
 >[!CAUTION]
@@ -285,6 +292,7 @@ Coral UI (CUI) is an implementation of Adobe's visual style for the touch-enable
 >Coral UI is a UI library made available to AEM customers for building applications and web interfaces within the boundaries of their licensed use of the product.
 >
 >Use of Coral UI is only permitted:
+
 >
 >* When it has been shipped and bundled with AEM.
 >* For use when extending the existing UI of the authoring environment.
@@ -301,7 +309,7 @@ Coral UI (CUI) is an implementation of Adobe's visual style for the touch-enable
 
 The Coral UI is a collection of building blocks for developing web applications.
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![](assets/chlimage_1-84.png)
 
 Designed to be modular from the start, each module forms a distinct layer based on its primary role. Although the layers have been designed to support each other, they can also be used independently if needed. This makes it possible to implement Coral’s user experience in any HTML-capable environment.
 
@@ -335,7 +343,7 @@ For example, the markup:
 
 Is displayed as:
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![](assets/chlimage_1-85.png)
 
 The look-and-feel is defined in LESS, tied to an element by dedicated class name (the following extract has been shortened for the sake of brevity):
 
@@ -394,7 +402,7 @@ Implementation:
 * jQuery plugin, tied to specific DOM element(s)
 * Using `data-*` attributes to customize behavior
 
-An extract of example markup (note the options specified as data-&ast; attributes):
+An extract of example markup (note the options specified as data-&#42; attributes):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -426,7 +434,7 @@ $(‘.cards’).cardlayout ();
 
 This will show as:
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![](assets/chlimage_1-86.png)
 
 The `cardLayout` plugin lays out the enclosed `UL` elements based on their respective heights and also taking the parent’s width into consideration.
 
@@ -462,13 +470,13 @@ $(".tagManager").tagsManager({
 The plugin emits HTML markup (this markup uses basic elements, which may use other plugins internally):
 
 ```
-<span>Pisa</span>
+<span>Pisa</code>
 <a title="Removing tag" tagidtoremove="0"
-   id="myRemover_0" class="myTagRemover" href="#">x</a></span>
+   id="myRemover_0" class="myTagRemover" href="#">x</a></code>
 
-<span id="myTag_1" class="myTag"><span>Rome</span>
+<span id="myTag_1" class="myTag"><span>Rome</code>
 <a title="Removing tag" tagidtoremove="1"
-   id="myRemover_1" class="myTagRemover" href="#">x</a></span>
+   id="myRemover_1" class="myTagRemover" href="#">x</a></code>
 
 <input type="text" data-original-title="" class="input-medium tagManager"
        placeholder="Tags" name="tags" data-provide="typeahead" data-items="6"
@@ -477,7 +485,7 @@ The plugin emits HTML markup (this markup uses basic elements, which may use oth
 
 This will show as:
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![](assets/chlimage_1-87.png)
 
 ### Utility Library {#utility-library}
 

@@ -3,12 +3,14 @@ title: Page Templates - Static
 seo-title: Page Templates - Static
 description: A Template is used to create a Page and defines which components can be used within the selected scope
 seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
-uuid: 86a8ecf8-e0c5-422e-9227-7a24bb5774e3
+uuid: 7a473c19-9565-476e-9e54-ab179da04d71
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
+discoiquuid: cfd90e8f-9b9b-4d0b-be31-828469b961de
+docset: aem65
+
 ---
 
 # Page Templates - Static{#page-templates-static}
@@ -110,7 +112,7 @@ There are two aspects to be considered:
 
 A Template is created under a node of type **cq:Template**.
 
-![screen_shot_2012-02-13at63646pm](assets/screen_shot_2012-02-13at63646pm.png)
+![](assets/screen_shot_2012-02-13at63646pm.png)
 
 Various properties can be set, in particular:
 
@@ -119,11 +121,11 @@ Various properties can be set, in particular:
 
 This node contains a jcr:content (cq:PageContent) node which be used as the basis for the content node of resulting pages; this references, using sling:resourceType, the component to be used for rendering the actual content of a new page.
 
-![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
+![](assets/screen_shot_2012-02-13at64010pm.png)
 
 This component is used to define the structure and design of the content when a new page is created.
 
-![screen_shot_2012-02-13at64137pm](assets/screen_shot_2012-02-13at64137pm.png)
+![](assets/screen_shot_2012-02-13at64137pm.png)
 
 ### The content produced by a Template {#the-content-produced-by-a-template}
 
@@ -152,15 +154,15 @@ To see a list of all templates in the repository, proceed as follows:
 
 1. In the Query tab
 1. As **Type**, select **XPath**.
-1. In the **Query** input field, enter following string:
 
-   //element(&ast;, cq:Template)
+1. In the **Query** input field, enter following string:
+   //element(&#42;, cq:Template)
 
 1. Click **Execute**. The list is displayed in the result box.
 
 In most cases, you will take an existing template and develop a new one for your own use. See [Developing Page Templates](#developing-page-templates) for more information.
 
-To enable an existing template for your website and you want it to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the allowedPaths property of the template node to: **/content(/.&ast;)?**
+To enable an existing template for your website and you want it to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the allowedPaths property of the template node to: **/content(/.&#42;)?**
 
 ## How Template Designs are Applied {#how-template-designs-are-applied}
 
@@ -173,10 +175,6 @@ When styles are defined in the UI using [Design Mode](/help/sites-authoring/defa
 >Modifying designs in CRX DE for example is not best practice and the application of such designs can vary from expected behavior.
 
 If designs are only applied using Design Mode, then the following sections, [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution), [Decision Tree](/help/sites-developing/page-templates-static.md#decision-tree), and the [Example](/help/sites-developing/page-templates-static.md#example) are not applicable.
-
->[!NOTE]
->
->This section describes design path resolution behavior as of AEM 6.4.2.0.
 
 ### Design Path Resolution {#design-path-resolution}
 
@@ -194,7 +192,7 @@ In the last two cases, if there is more than one applicable design, use the one 
 
 This is a graphical representation of the [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution) logic.
 
-![design_path_resolution](assets/design_path_resolution.png)
+![](assets/design_path_resolution.png)
 
 ### Example {#example}
 
@@ -277,7 +275,7 @@ To create a new template based on an existing template:
 
    >[!NOTE]
    >
-   >The list of available templates depends on the location of the new page and the restrictions on placement specified in each template. See [Template Availability](/help/sites-developing/templates.md#template-availability).
+   >The list of available templates depends on the location of the new page and the restrictions on placement specified in each template. See [Template Availability](#templateavailibility).
 
 1. Change the **jcr:title** of the new template node to reflect its new role. You can also update the **jcr:description** if appropriate. Be sure to change the template availability of the page as appropriate.
 
@@ -285,7 +283,7 @@ To create a new template based on an existing template:
    >
    >If you want your template to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the `allowedPaths` property of the template node to: `/content(/.*)?`
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   ![](assets/chlimage_1-88.png)
 
 1. Copy the component on which the template is based (this is indicated by the **sling:resourceType** property of the **jcr:content** node within the template) to create a new instance.
 
@@ -299,6 +297,7 @@ To create a new template based on an existing template:
    >[!NOTE]
    >
    >Changes made to the **/apps/&lt;website&gt;/templates/&lt;template-name&gt;** node will affect the template instance (as in the selection list).
+   >
    >
    >Changes made to the **/apps/&lt;website&gt;/components/&lt;component-name&gt;** node will affect the content page created when the template is used.
 
@@ -319,5 +318,5 @@ This example illustrates how to allow a template to be used for certain content 
 1. In CRXDE Lite, navigate to the template you want to use for your page, for example, the Newsletter template.
 1. Change the `allowedPaths` property and other properties used for [template availabillity](/help/sites-developing/templates.md#template-availability). For example, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` means that this template is allowed in any path under `/content/geometrixx-outdoors`.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   ![](assets/chlimage_1-89.png)
 

@@ -3,13 +3,15 @@ title: Creating Device Group Filters
 seo-title: Creating Device Group Filters
 description: Create a device group filter to define a set of device capability requirements
 seo-description: Create a device group filter to define a set of device capability requirements
-uuid: 8db98b98-f26d-4924-930a-a682cd7df866
+uuid: 30c0699d-2388-41b5-a062-f5ea9d6f08bc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
-discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
+discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
+docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
+
 ---
 
 # Creating Device Group Filters{#creating-device-group-filters}
@@ -26,7 +28,7 @@ After you create a filter, you can use it in the [group configuration.](/help/si
 
 ## The Filter Java Class {#the-filter-java-class}
 
-A device group filter is an OSGi component that implements the [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. When deployed, the implementation class provides a filter service that is available to device group configurations.
+A device group filter is an OSGi component that implements the [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. When deployed, the implementation class provides a filter service that is available to device group configurations.
 
 The solution described in this article uses the Apache Felix Maven SCR Plugin to facilitate the development of the component and service. Therefore, the example Java class uses the `@Component`and `@Service` annotations. The class has the following structure:
 
@@ -90,7 +92,7 @@ The `matches` function returns `true` if the device capabilities satisfy all of 
 * The name of the user agent
 * A Map object that contains the device capabilities. The Map keys are the WURFL™ capability names and the values are are the corresponding values from the WURFL™ database.
 
-The [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface contains a subset of the WURFL™ capability names in static fields. Use these field constants as keys when retrieving values from the Map of device capabilities.
+The [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface contains a subset of the WURFL™ capability names in static fields. Use these field constants as keys when retrieving values from the Map of device capabilities.
 
 For example, the following code example determines whether the device supports CSS:
 
@@ -160,11 +162,11 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 
 The String value that the getTitle method returns appars in the drop down list of the device group properties.
 
-![filteraddtogroup](assets/filteraddtogroup.png)
+![](assets/filteraddtogroup.png)
 
 The String values that the getTitle and getDescription methods return are included at the bottom of the device group summary page.
 
-![filterdescription](assets/filterdescription.png)
+![](assets/filterdescription.png)
 
 ### The Maven POM File {#the-maven-pom-file}
 
@@ -184,9 +186,9 @@ The followng POM code is useful if you use Maven to build your applications. The
 
 The DeviceGroup and DeviceGroupFilter interfaces are included in the Day Communique 5 WCM Mobile API bundle. The Felix annotations are included in the Apache Felix Declarative Services bundle. You can obtain this JAR file from the public Adobe repository.
 
-At the time of authoring, 5.5.2 is the version of the WCM Mobile API bundle that is in the latest release of AEM. Use Adobe Web Console ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) to ensure this is the bundle version that is deployed in your environment.
+At the time of authoring, 5.5.2 is the version of the WCM Mobile API bundle that is in the latest release of AEM. Use Adobe Web Console ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) to ensure this is the bundle version that is deployed in your environment.
 
-**POM:** (Your POM will use a different groupId and version.)
+**POM: **(Your POM will use a different groupId and version.)
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"

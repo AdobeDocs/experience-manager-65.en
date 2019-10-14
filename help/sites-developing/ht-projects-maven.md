@@ -3,12 +3,14 @@ title: How to Build AEM Projects using Apache Maven
 seo-title: How to Build AEM Projects using Apache Maven
 description: This document describes how to set up an AEM project based on Apache Maven
 seo-description: This document describes how to set up an AEM project based on Apache Maven
-uuid: 675932d3-dabb-4066-a743-75bdf4f049d7
+uuid: 5db68639-7393-48b7-9d81-5b19b596ff21
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
+discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
+docset: aem65
+
 ---
 
 # How to Build AEM Projects using Apache Maven{#how-to-build-aem-projects-using-apache-maven}
@@ -27,26 +29,64 @@ Building your AEM Project based on Maven offers you several benefits:
 * Ease of import into an IDE; for example, Eclipse and/or IntelliJ
 * Easy integration with Continuous Integration Systems
 
+### Maven Project Archetypes {#maven-project-archetypes}
+
+Adobe provides two Maven archetypes that can serve as the baseline for your AEM projects. See more details at the links below:
+
+* [AEM project archetype](https://github.com/adobe/aem-project-archetype)
+* [Maven archetype for Single Page Applications Starter Kit](https://github.com/adobe/aem-spa-project-archetype)
+
 ## Experience Manager API Dependencies {#experience-manager-api-dependencies}
 
 ### What is the UberJar? {#what-is-the-uberjar}
 
-The "UberJar" is the informal name given to a special Java Archive (JAR) file provided by Adobe. This JAR file contains all of the public Java APIs exposed by Adobe Experience Manager. It includes limited external libraries as well, specifically all public APIs available in AEM which come from the Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, and two libraries used for image processing (Werner Randelshofer's CYMK JPEG ImageIO library and the TwelveMonkeys image library). The UberJar only contains API interfaces and classes, meaning that it only contains interfaces and classes which are exported by an OSGi bundle in AEM. It also contained a *MANIFEST.MF* file containing the correct package export versions for all of these exported packages, thus ensuring that projects built against the UberJar have the correct package import ranges.
+The "UberJar" is the informal name given to special Java Archives (JAR) file provided by Adobe. These JAR files contain all of the public Java APIs exposed by Adobe Experience Manager. They include limited external libraries as well, specifically all public APIs available in AEM which come from the Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, and two libraries used for image processing (Werner Randelshofer's CYMK JPEG ImageIO library and the TwelveMonkeys image library). The UberJars only contain API interfaces and classes, meaning that they only contain interfaces and classes which are exported by an OSGi bundle in AEM. They also contain a *MANIFEST.MF* file containing the correct package export versions for all of these exported packages, thus ensuring that projects built against the UberJar have the correct package import ranges.
 
-### Why did Adobe create the UberJar? {#why-did-adobe-create-the-uberjar}
+### Why did Adobe create the UberJars? {#why-did-adobe-create-the-uberjars}
 
 In the past, developers had to manage a relatively large number of individual dependencies to different AEM libraries and when each new API was used, one or more individual dependencies had to be added to the project. On one project, the introduction of the UberJar resulted in 30 separate dependencies being removed from the project.
 
-### How to I use the UberJar? {#how-to-i-use-the-uberjar}
+Starting with AEM 6.5, Adobe provides two UberJars: one that includes deprecated interfaces and one that removes those deprecated interfaces. By referencing one explicitly at build time, customers are sure to understand if they have a dependency on deprecated code.
+
+The second Uber Jar strips away any deprecated classes, methods, and properties so customers can compile against them and understand if the custom code is future proof.
+
+### Which UberJar to Use? {#which-uberjar-to-use}
+
+AEM 6.5 comes in two flavors of Uber Jar:
+
+1. Uber Jar - Includes only the public interfaces that are not marked for deprecation. This is the **recommended** UberJar to use as it helps future-proof the codebase from relying on Deprecated APIs.
+1. Uber Jar with Deprecated APIs - Includes all public interfaces, including those marked for deprecation in a future version of AEM.
+
+### How to I use the UberJars? {#how-to-i-use-the-uberjars}
 
 If you are using Apache Maven as a build system (which is the case for most AEM Java projects), you will need to add one or two elements to your *pom.xml* file. The first is a *dependency* element adding the actual dependency to your project:
+
+**Uber Jar dependency *(without Deprecated APIs)***
 
 ```xml
 <dependency>
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
-    <version>6.4.0</version>
+    <version>6.5.0</version>
     <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
+
+**Uber Jar dependency with Deprecated APIs**
+
+>[!CAUTION]
+>
+>Adobe recommends deploying against the Uber Jar that ***does not* **contain the deprecated APIs to make sure that your applications will run properly on future versions of AEM.
+>
+>Use the Uber Jar with deprecated API support only in case the code that relies on the deprecated APIs cannot be modified to accomodate for the changes.
+
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.5.0</version>
+    <classifier>apis-with-deprecations</classifier>
     <scope>provided</scope>
 </dependency>
 ```
@@ -73,19 +113,6 @@ If you are not using a repository manager, then you will need to add a *reposito
     </pluginRepository>
 </pluginRepositories>
 ```
-
-CODE ON GITHUB
-
-You can find the code of this page on GitHub
-
-* [Open aem-uberjar-demo project on GitHub](https://github.com/justinedelson/aem-uberjar-demo)
-* Download the project as [a ZIP file](https://github.com/justinedelson/aem-uberjar-demo/archive/6.2-unobfuscated.zip)
-
->[!NOTE]
->
->It is also possible to configure these repositories in your Maven *settings.xml* file.
-
-Users of other build systems (for example, Apache Ant, Gradle) should follow similar steps, adapted to the specific syntax of their chosen tool.
 
 ### What can I do with the UberJar? {#what-can-i-do-with-the-uberjar}
 
@@ -425,7 +452,7 @@ Change the `<resources>` section in the content pom accoringly:
 <!-- ... -->
 ```
 
-### How-To Work with JSPs {#how-to-work-with-jsps}
+### How to Work with JSPs {#how-to-work-with-jsps}
 
 The Maven setup described so far creates a content package that can also include components and their corresponding JSPs. However, Maven treats them as any other file that is part of the content package and does not even recognize them as JSPs.
 
@@ -445,7 +472,7 @@ Below dependencies need to be added to the `content` modules's POM.
 
 >[!NOTE]
 >
->Unless you are importing the product dependencies as described above, they also need to be added to the parent POM along with the version matching your AEM setup as described above. The comments in each entry below show the package to search for in the Dependency Finder.
+>Unless you are importing the product dependencies as described in [Importing AEM Product Dependencies](#importingaemproductdependencies) above, they also need to be added to the parent POM along with the version matching your AEM setup as described in [Adding Dependencies](#addingdependencies) above. The comments in each entry below show the package to search for in the Dependency Finder.
 
 >[!NOTE]
 >
@@ -468,7 +495,7 @@ The result of the Maven JspC Plugin can also be bundled and deployed as part of 
 
 To achieve deletion of the classes compiled from the JSPs, we set up the Maven Clean Plugin as shown below. If you want to inspect the result of the Maven JspC Plugin, run `mvn compile` in `myproject/content` -- after that, you will find the result in `myproject/content/target/ignoredjspc`).
 
-#### myproject/content/pom.xml {#myproject-content-pom-xml-1}
+#### myproject/content/pom.xml {#myproject-content-pom-xml}
 
 ```xml
 <build>
@@ -546,15 +573,7 @@ To achieve deletion of the classes compiled from the JSPs, we set up the Maven C
 >Depending on whether you actually make use of JSP code in `/libs` (i.e. include JSPs from there), you will need to refine which JSPs are copied for compilation.
 >
 >E.g. if you include `/libs/foundation/global.jsp`, you can use the following configuration for the `maven-resources-plugin` instead of the configuration above which completely skips over `/libs`.
->```
-> <resource>
->      <directory>src/main/content/jcr_root</directory>
->      <includes>
->          <include>apps/**</include>
->          <include>libs/foundation/global.jsp</include>
->    </includes>
->  </resource>
->  ```
+>`<pre> &lt;resource&gt; &lt;directory&gt;src/main/content/jcr_root&lt;/directory&gt; &lt;includes&gt; &lt;include&gt;apps/**&lt;/include&gt; &lt;include&gt;libs/foundation/global.jsp&lt;/include&gt; &lt;/includes&gt; &lt;/resource&gt; </pre>`
 
 ### How-To Work with SCM Systems {#how-to-work-with-scm-systems}
 

@@ -3,12 +3,14 @@ title: Developing SPAs for AEM
 seo-title: Developing SPAs for AEM
 description: This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM as well as gives an overview of the architecture of AEM with respect to SPAs to keep in mind when deploying a developed SPA on AEM.
 seo-description: This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM as well as gives an overview of the architecture of AEM with respect to SPAs to keep in mind when deploying a developed SPA on AEM.
-uuid: c77b37be-6acc-4cb4-9ae3-ba09583e6fff
+uuid: 6673a041-c557-4968-ae54-4cd5b9f56251
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
+discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
+docset: aem65
+
 ---
 
 # Developing SPAs for AEM{#developing-spas-for-aem}
@@ -17,24 +19,15 @@ Single page applications (SPAs) can offer compelling experiences for website use
 
 This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM and gives an overview of the architecture of AEM with respect to deploying SPAs on AEM.
 
->[!NOTE]
->
->The Single-Page Application (SPA) Editor feature requires AEM 6.4 service pack 2 or newer.
->
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
-
-## Maven Archetype for SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
-
-Any SPA project on AEM should leverage the [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
-
 ## SPA Development Principles for AEM {#spa-development-principles-for-aem}
 
 Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If as a front end developer you follow these general best practices as well as few AEM-specific principles, your SPA will be functional with [AEM and its content-authoring capabilities](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
-* **[Portability](/help/sites-developing/spa-architecture.md#portability) -** As with any components, the components should be built to be as portable as possible. The SPA should be built with portably and reusable components, avoiding static paths that refer to the content structure.
-* **[AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - The front-end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
-* **[Dynamic Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering) -** All rendering should be dynamic.
-* **[Dynamic Routing](#dynamic-routing) -** The SPA is responsible for the routing and AEM listens to it and fetches the component data based on it. Any routing should be dynamic as well.
+* ** [Portability](/help/sites-developing/spa-architecture.md#portability) -** As with any components, the components should be built to be as portable as possible. The SPA should be built with portably and reusable components.
+
+* ** [AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure) - **The front end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
+* ** [Dynamic Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering) -** All rendering should be dynamic.
+* ** [Dynamic Routing](/content.md#main-pars_header_1105486143) -** The SPA is responsible for the routing and AEM listens to it and fetches based on it. Any routing should be dynamic as well.
 
 If you keep these principles in mind as you develop your SPA, it will be as flexible and as future proof as possible while enabling all supported AEM authoring functionality.
 
@@ -43,8 +36,6 @@ If you do not need to support AEM authoring features, you may need to consider a
 ### Portability {#portability}
 
 As when developing any component, your components should be designed in such a way that maximizes their portability. Any patterns that work against the portability or reusability of the components should be avoided to ensure compatibility, flexibility, and maintainability going forward.
-
-The developer should avoid using static paths that refer to the content structure as paths can be modified at any time by the content authors. This also restricts the reusability of the library and it prevents the AEM Template Editor from being used since its structure is located in another location than the content.
 
 The resulting SPA should be built with highly portable and reusable components.
 
@@ -56,7 +47,7 @@ This means that the front end developer can add customer content before or after
 
 ### Dynamic Rendering {#dynamic-rendering}
 
-The SPA should only rely on dynamic rendering of content. This is the default expectation where AEM fetches and renders all children of the content structure.
+The SPA should only rely on dynamic rendering of content. This is the default expectation where AEM fetches and renders all children of the content structure. [](/help/sites-developing/spa-architecture.md#portability)
 
 Any explicit rendering that points to specific content is considered static rendering and though supported will not be compatible with AEM's content authoring features. This also goes against the principle of [portability](/help/sites-developing/spa-architecture.md#portability).
 
@@ -66,9 +57,13 @@ As with rendering, all routing should also be dynamic. In AEM, [the SPA should a
 
 Any static routing works against the [principle of portability](/help/sites-developing/spa-architecture.md#portability) and limits the author by not being compatible with content authoring features of AEM. For example, with static routing, if the content author would want to change a route or change a page, he or she would have to ask the front end developer to do it.
 
+## Maven Archetype for SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+
+Adobe recommends leveraging the [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) to help you start your own SPA project for AEM.
+
 ## SPA Design Models {#spa-design-models}
 
-If the [principles of developing SPAs in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem) are followed, then your SPA will be functional with all supported AEM content authoring features.
+If the [principles of developing SPAs in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem) are followed, then your SPA will be functional with all supported AEM content authoring features. [](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
 
 There may be cases however when this is not entirely necessary. The following table gives an overview of the various design models, their advantages, and their disadvantages.
 
@@ -100,6 +95,7 @@ There may be cases however when this is not entirely necessary. The following ta
 >[!NOTE]
 >
 >Although all models are supported in AEM, only by implementing the third (and thereby following the recommended [SPA development principles in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) will the content authors be able to interact with and edit the content of the SPA in AEM as they are accustomed.
+>[](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
 
 ## Migrating Existing SPAs to AEM {#migrating-existing-spas-to-aem}
 
@@ -155,7 +151,8 @@ The following is an outline of the steps a front-end developer needs to follow w
 
    Pages and paragraph systems should extend this class so that delegation to inner components works as expected.
 
-1. **Implement a routing solution that using the HTML5 `History` API.**
+1. **Implement a routing solution that using the HTML5 `History` API.
+   **
 
    When the `ModelRouter` is enabled, calling the `pushState` and `replaceState` functions will trigger a request to the `PageModelManager` to fetch a missing fragment of the model.
 
@@ -170,7 +167,7 @@ These code blocks illustrate how your React and Angular components need nothing 
 * Everything that is inside the JavaScript component is AEM-agnostic.
 * What is however specific to AEM is that the JS component must be mapped to an AEM component with the MapTo helper.
 
-![screen_shot_2018-12-11at144019](assets/screen_shot_2018-12-11at144019.png)
+![](assets/screen_shot_2018-12-11at144019.png)
 
 The `MapTo` helper is the “glue” that allows the back-end and the front-end components to be matched together:
 
@@ -186,7 +183,7 @@ For more information about using `MapTo` and building SPAs for AEM in general, s
 
 The general architecture of AEM including development, authoring, and publishing environments does not change when using SPAs. However it is helpful to understand how SPA development fits into this architecture.
 
-![screen_shot_2018-12-11at145348](assets/screen_shot_2018-12-11at145348.png)
+![](assets/screen_shot_2018-12-11at145348.png)
 
 * **Build Environment**
 

@@ -3,16 +3,24 @@ title: Testing Your UI
 seo-title: Testing Your UI
 description: AEM provides a framework for automating tests for your AEM UI
 seo-description: AEM provides a framework for automating tests for your AEM UI
-uuid: b0280a70-643e-4455-82ea-fa7a90823b53
+uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 topic-tags: testing
-discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
+discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
+docset: aem65
+
 ---
 
 # Testing Your UI{#testing-your-ui}
+
+>[!NOTE]
+>
+>From AEM 6.5 onwards, the hobbes.js UI testing framework is deprecated. Adobe does not plan to make further enhancements to it and recommends customers to use Selenium automation.
+>
+>See [Deprecated and Removed Features](../../../release-notes/deprecated-removed-features.md).
 
 AEM provides a framework for automating tests for your AEM UI. Using the framework, you write and run UI tests directly in a web browser. The framework provides ajavascript API for creating tests.
 
@@ -20,15 +28,14 @@ The AEM test framework uses Hobbes.js, a testing library written in Javascript. 
 
 >[!NOTE]
 >
->Refer to the Hobbes.js [documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) for full details of the API.
+>Refer to the Hobbes.js [documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) for full details of the API.
 
 ## Structure of Tests {#structure-of-tests}
 
 When using automated tests within AEM, the following terms are important to understand:
 
-|||
-|---|---|
 | Action |An **Action** is a specific activity on a web page such as clicking a link or a button. |
+|---|---|
 | Test Case |A **Test Case** is a specific situation that can be made up of one or more **Actions**. |
 | Test Suite |A **Test Suite** is a group of related **Test Cases** that together test a specific use case. |
 
@@ -40,11 +47,11 @@ Open the Testing Console to see the registered Test Suites. The Tests panel cont
 
 Navigate to the Tools console via **Global Navigation -&gt; Tools &gt; Operations -&gt; Testing**.
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![](assets/chlimage_1-63.png)
 
 When opening the console, the Test Suites are listed to the left along with an option to run all of them sequentially. The space to the right shown with a checkered background, is a placeholder for showing page content as the tests run.
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![](assets/chlimage_1-64.png)
 
 ### Running a Single Test Suite {#running-a-single-test-suite}
 
@@ -52,51 +59,51 @@ Tests Suites can be run individually. When you run a Test Suite, the page change
 
 A checkmark icon indicates a passed test:
 
-![](do-not-localize/chlimage_1-5.png)
+![](do-not-localize/chlimage_1-2.png)
 
 An "X" icon indicates a failed test:
 
-![](do-not-localize/chlimage_1-6.png)
+![](do-not-localize/chlimage_1-3.png)
 
 To run a Test Suite:
 
 1. In the Tests panel, click or tap the name of the Test Case that you want to run to expand the deatils of the Actions.
 
-   ![chlimage_1-28](assets/chlimage_1-28.png)
+   ![](assets/chlimage_1-65.png)
 
 1. Click or tap the **Run test** button.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![](do-not-localize/chlimage_1-4.png)
 
 1. The placeholder is replaced with page content as the test executes.
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![](assets/chlimage_1-66.png)
 
 1. Review the results of the Test Case by tapping or clicking the description to open the **Result** panel. Tapping or clicking the name of your Test Case in the **Result** panel shows all details.
 
-   ![chlimage_1-30](assets/chlimage_1-30.png)
+   ![](assets/chlimage_1-67.png)
 
 ### Running Multiple Tests {#running-multiple-tests}
 
 Test Suites execute sequentially in the order that they appear in the console. You can drill down into a test to see the detailed results.
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![](assets/chlimage_1-68.png)
 
 1. On the Tests panel, tap or click either the **Run all tests** button or the **Run tests** button below the title of the Test Suite that you want to run.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![](do-not-localize/chlimage_1-5.png)
 
 1. To view the results of each Test Case, tap or click the title of the Test Case. Tapping or clicking the name of your test in the **Result** panel shows all details.
 
-   ![chlimage_1-32](assets/chlimage_1-32.png)
+   ![](assets/chlimage_1-69.png)
 
 ## Creating and Using a Simple Test Suite {#creating-and-using-a-simple-test-suite}
 
 The following procedure steps you through the creation and execution of a Test Suite using [We.Retail content](/help/sites-developing/we-retail.md), but you can easily modify the test to use a different web page.
 
-For full details about creating your own Test Suites, see the [Hobbes.js API documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html).
+For full details about creating your own Test Suites, see the [Hobbes.js API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
-1. Open CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Right-click the `/etc/clientlibs` folder and click **Create > Create Folder**. Type `myTests` for the name and click **OK**.
 1. Right-click the `/etc/clientlibs/myTests` folder and click **Create &gt; Create Node**. Use the following property values and then click **OK**:
 
@@ -107,16 +114,19 @@ For full details about creating your own Test Suites, see the [Hobbes.js API doc
 
    | Name |Type |Value |
    |---|---|---|
-   | `categories` |`String[]` | `granite.testing.hobbes.tests` |
-   | `dependencies` |`String[]` | `granite.testing.hobbes.testrunner` |
+   | `categories` |String[] | `granite.testing.hobbes.tests` |
+   | `dependencies` |String[] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >
    >**AEM Forms only**
    >
+   >
    >To test adaptive forms, add the following values to the categories and dependencies. For example:
    >
+   >
    >**categories**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >
    >
    >**dependencies**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
