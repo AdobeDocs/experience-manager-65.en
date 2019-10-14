@@ -236,7 +236,7 @@ When in layout mode you can perform various actions on a grid:
 
   ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-    * **Show hidden components** - Reveal all or individual components. The number indicates how many hidden components there currently are. The the counter shows how many components are hidden.
+    * **Show hidden components** - Reveal all or individual components. The number indicates how many hidden components there currently are.thecounter shows how many components are hidden.
 
   ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 

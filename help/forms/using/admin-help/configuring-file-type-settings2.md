@@ -462,7 +462,7 @@ These options determine how Microsoft PowerPoint files are converted. For instru
 
 These options determine how Microsoft Project files are converted. For instructions about accessing these options, see [Create or edit file type settings](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-0).
 
-1. **[!UICONTROL **Filename Extensions**:]** Specifies the filename extensions for file types, separated by commas, that are accepted for this application. The default is `mpp`. Do not include a period before or a space between the extensions.
+1. **[!UICONTROL Filename Extensions:]** Specifies the filename extensions for file types, separated by commas, that are accepted for this application. The default is `mpp`. Do not include a period before or a space between the extensions.
 
 1. **[!UICONTROL Convert Document Information]**: Adds document information from the Properties dialog box of the source file, including title, subject, author, keywords, manager, company, category, and comments. This option is selected by default.
 1. **[!UICONTROL Attach Source File To Adobe PDF]**: Adds the source file to the PDF file as an attachment.

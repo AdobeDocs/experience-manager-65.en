@@ -1,8 +1,8 @@
 ---
 title: Implementing Windows 10 Player
 seo-title: Implementing Windows 10 Player
-description: Follow this page to learn about configuring AEM Screens Windows 10 player. 
-seo-description: Follow this page to learn about configuring AEM Screens Windows 10 player. 
+description: Follow this page to learn about configuring AEM Screens Windows 10 player.
+seo-description: Follow this page to learn about configuring AEM Screens Windows 10 player.
 uuid: da7e88bf-c251-481e-9029-f8fc4768b309
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
@@ -31,7 +31,7 @@ Once you download the application, follow the steps on the player to complete th
 
 1. Long-press on the top left corner to open the admin panel.
 1. Navigate to **Configuration** from the left action menu and enter the location (address) of the AEM instance you wish to connect to and click **Save**.
-1. Navigate to the **Device** **Registration** link from the left action menu to check the status of the the device registration process.
+1. Navigate to the **Device** **Registration** link from the left action menu to check the status ofthedevice registration process.
 
 >[!NOTE]
 >

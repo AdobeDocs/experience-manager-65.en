@@ -58,7 +58,7 @@ In some circumstances AEM can be unreachable, such as when AEM lies behind a fir
 
 ## Enabling Access for the Deployment Hook Service {#enabling-access-for-the-deployment-hook-service}
 
-Enable the Dynamic Tag Management deployment hook service to access AEM so that the service can update the AEM-hosted libraries. Specify the the IP address of Dynamic Tag Management servers that update the staging and production libraries as required:
+Enable the Dynamic Tag Management deployment hook service to access AEM so that the service can update the AEM-hosted libraries. SpecifytheIP address of Dynamic Tag Management servers that update the staging and production libraries as required:
 
 * Staging: `107.21.99.31`
 * Production: `23.23.225.112` and `204.236.240.48`

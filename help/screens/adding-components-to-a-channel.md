@@ -46,7 +46,7 @@ The following example shows the addition of a Livefyre component to a an AEM Scr
 1. Click** Edit f**rom the action bar to open the editor.
 1. Select **Design** mode.
 1. Select the entire design editor on the right and click on the settings symbol to open the **ParSys Design** dialog box.
-1. You can select the components that you want to import to your AEM Screens project. The following example shows the the addition of **Livefyre** component to an AEM Screens project.
+1. You can select the components that you want to import to your AEM Screens project. The following example showstheaddition of **Livefyre** component to an AEM Screens project.
 
 ![](assets/adding_components.gif)
 

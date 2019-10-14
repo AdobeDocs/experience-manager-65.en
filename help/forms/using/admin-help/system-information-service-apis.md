@@ -1,8 +1,8 @@
 ---
 title: System information Service APIs
 seo-title: System information Service APIs
-description: This document provides detailed information about the APIs provided by the the system information service.
-seo-description: This document provides detailed information about the APIs provided by the the system information service.
+description: This document provides detailed information about the APIs provided bythesystem information service.
+seo-description: This document provides detailed information about the APIs provided bythesystem information service.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference

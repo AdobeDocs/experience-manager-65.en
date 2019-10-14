@@ -308,7 +308,7 @@ An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the 
 ```as3
  /**
      * Ensure that you create Java proxy files that consume
-     * the the AEM Forms service WSDL. You can use JAX-WS to create
+     *theAEM Forms service WSDL. You can use JAX-WS to create
      * the Java proxy files.
      *
      * This Java quick start uses Base64 to invoke a short-lived process named
@@ -757,7 +757,7 @@ An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the 
 ```as3
  /**
      * Ensure that you create Java proxy files that consume
-     * the the AEM Forms service WSDL. You can use JAX-WS to create
+     *theAEM Forms service WSDL. You can use JAX-WS to create
      * the Java proxy files.
      *
      * This Java quick start uses BLOB over HTTP to invoke a short-lived process named
@@ -1022,7 +1022,7 @@ An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the 
 ```as3
  /**
      * Ensure that you create Java proxy files that consume
-     * the the AEM Forms service WSDL. You can use JAX-WS to create
+     *theAEM Forms service WSDL. You can use JAX-WS to create
      * the Java proxy files.
      *
      * This Java quick start uses SwaRef to invoke a short-lived process named

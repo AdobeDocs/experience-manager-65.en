@@ -82,7 +82,7 @@ Perform the following steps to create an adaptive form for Adobe Sign:
 
 Perform the following steps to use Adobe Sign in an existing adaptive form:
 
-1. Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL **Forms**]**> **[!UICONTROL Forms & Documents]**.
+1. Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]**> **[!UICONTROL Forms & Documents]**.
 1. Select the adaptive form and tap **[!UICONTROL Properties]**.
 1. In the **[!UICONTROL Basic]** tab, select the [configuration container](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while configuring Adobe Sign with AEM Forms.
 1. In the **[!UICONTROL Form Mode]**l tab, select one of the following options:

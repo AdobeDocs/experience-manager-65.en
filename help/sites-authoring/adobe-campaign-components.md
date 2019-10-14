@@ -458,7 +458,7 @@ The following example shows an Error Display (Campaign) component being displaye
 
 ### Hidden Reconciliation Key (Campaign) {#hidden-reconciliation-key-campaign}
 
-The Hidden Reconciliation Key (Campaign) component allows you to add hidden fields as part of the the reconciliation key to a form.
+The Hidden Reconciliation Key (Campaign) component allows you to add hidden fields as part ofthereconciliation key to a form.
 
 You can configure the following in the Hidden Reconciliation Key (Campaign) component:
 

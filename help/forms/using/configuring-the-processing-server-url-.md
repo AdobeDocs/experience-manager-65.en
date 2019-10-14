@@ -39,7 +39,7 @@ Following are the steps to configure the **[!UICONTROL AEM DS Settings]**:
 
 1. Add the following information in the respective fields:
 
-   **[!UICONTROL **Processing Server URL**]**: The Processing Server is the server where the Forms or AEM workflow needs to be triggered. This can be same as the URL of the AEM author instance or the other Server URL (that is, http:// localhost:port/).
+   **[!UICONTROL Processing Server URL]**: The Processing Server is the server where the Forms or AEM workflow needs to be triggered. This can be same as the URL of the AEM author instance or the other Server URL (that is, http:// localhost:port/).
 
    **[!UICONTROL Processing Server User Name]**: Workflow user's User Name [based on the server URL being used]
 

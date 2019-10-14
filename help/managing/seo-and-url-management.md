@@ -3,12 +3,14 @@ title: SEO and URL Management Best Practices
 seo-title: SEO and URL Management Best Practices
 description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
-uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
+uuid: 943e76c4-bd88-4b52-bb43-db375eb89d23
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
-discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
+discoiquuid: 7c8f2cec-870b-41a8-8d98-70e29b495587
+docset: aem65
+
 ---
 
 # SEO and URL Management Best Practices{#seo-and-url-management-best-practices}
@@ -27,7 +29,7 @@ There are some generally accepted best practices when it comes to URLs.
 
 In your AEM project, when evaluating your URLs, ask yourself the following:
 
-* “If a user were to see this URL and none of the content on the page, could they describe what this page was?”
+“If a user were to see this URL and none of the content on the page, could they describe what this page was?”
 
 If the answer is yes, then it is likely that the URL will work well for a search engine.
 
@@ -47,11 +49,14 @@ Here are some general tips on how to construct your URLs for SEO:
 
     * When using selectors on a page, selectors that provide semantic value are preferred.
     * If a human cannot read your URL, a search engine cannot either.
-    * For example: `mybrand.com/products/product-detail.product-category.product-name.html` is preferred to `mybrand.com/products/product-detail.1234.html`
+    * For example:
+      `mybrand.com/products/product-detail.product-category.product-name.html`
+      is preferred to `mybrand.com/products/product-detail.1234.html`
 
 * Avoid subdomains whenever possible, as search engines will treat them as different entities, fragmenting the SEO value of the site.
 
     * Instead use first-level sub paths. For example, instead of `es.mybrand.com/home.html`, use `www.mybrand.com/es/home.html`.
+
     * Plan your content hierarchy to match the way that the content will be presented, according to this guideline.
 
 * Keyword effectiveness in URLs decreases as the length of the URL and the position of the keyword increases. In other words, shorter is better.
@@ -61,7 +66,8 @@ Here are some general tips on how to construct your URLs for SEO:
 
 * Use canonical URLs.
 
-    * When a URL can be served from different paths or with different parameters or selectors, make sure to use a `rel=canonical` tag on the page.
+    * When a URL can be served from different paths or with different parameters or selectors, make sure to use a** ** `rel=canonical` tag on the page.
+
     * This can be included in the code for the AEM template.
 
 * Match URLs to page titles whenever possible.
@@ -76,6 +82,7 @@ Here are some general tips on how to construct your URLs for SEO:
 * Make sure that each page is only served from one protocol.
 
     * Sometimes sites will be served over `http` until a user reaches a page with, for example, a checkout or login form, at which point it switches to `https`. When linking from this page, if the user can return to `http` pages and access them through `https`, the search engine will track these as two separate pages.
+
     * Google currently prefers `https` pages to `http` ones. For this reason it often makes everyone’s life easier to serve the whole site over `https`.
 
 ### Server configuration {#server-configuration}
@@ -108,14 +115,14 @@ The trend in recent years has been to remove these in an effort to make URLs mor
 
 AEM provides us with two options when writing servlets:
 
-* bin servlets
-* Sling servlets
+* **bin** servlets
+* **Sling** servlets
 
 The following examples illustrate how to register servlets that follow both of these patterns as well as the benefit gained by using Sling servlets.
 
 #### Bin servlets (one level down) {#bin-servlets-one-level-down}
 
-Bin servlets follow the pattern that many developers are used to from J2EE programming. The servlet is registered at a specific path, which in the case of AEM is usually under `/bin`, and you extract the needed request parameters from the query string.
+**Bin** servlets follow the pattern that many developers are used to from J2EE programming. The servlet is registered at a specific path, which in the case of AEM is usually under `/bin`, and you extract the needed request parameters from the query string.
 
 The SCR annotation for this type of servlet would look something like this:
 
@@ -143,7 +150,7 @@ There are a few points to be considered with this approach:
 
 #### Sling servlets (one level down) {#sling-servlets-one-level-down}
 
-Sling servlets let you register your servlet in the opposite manner. Rather than addressing a servlet and specifying the content you would like the servlet to render based on the query parameters, you address the content that you want and specify the servlet that should render the content based on Sling selectors.
+**Sling** servlets let you register your servlet in the opposite manner. Rather than addressing a servlet and specifying the content you would like the servlet to render based on the query parameters, you address the content that you want and specify the servlet that should render the content based on Sling selectors.
 
 The SCR annotation for this type of servlet would look something like this:
 
@@ -177,18 +184,16 @@ This section reviews the options available in AEM for managing these URLs and pr
 
 #### Vanity URLs {#vanity-urls}
 
-If an author wants a page to be accessible from a second location for promotional purposes, AEM's vanity URLs, defined on a page-by-page basis, might be useful. To add a vanity URL for a page, navigate to it in the **[!UICONTROL Sites]** console and edit the page properties. At the bottom of the **[!UICONTROL Basic]** tab, you see a section where vanity URLs can be added. Keep in mind that having the page accessible via more than one URL will fragment the SEO value of the page, so a canonical URL tag should be added to the page to avoid this issue.
+If an author wants a page to be accessible from a second location for promotional purposes, AEM's vanity URLs, defined on a page-by-page basis, might be useful. To add a vanity URL for a page, navigate to it in the **Sites** console and edit the page properties. At the bottom of the **Basic** tab, you see a section where vanity URLs can be added. Keep in mind that having the page accessible via more than one URL will fragment the SEO value of the page, so a canonical URL tag should be added to the page to avoid this issue.
 
 #### Localized page names {#localized-page-names}
 
 You may want to to display localized page names to users of translated content. For example:
 
 * Rather than having a Spanish-speaking user navigate to:
-
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * It would be better for the URL to be:
-
   `www.mydomain.com/es/casa.html`.
 
 The challenge with localizing the name of the page is that many of the localization tools available on the AEM platform rely on having the page names match across locales in order to keep the content synchronized.
@@ -196,48 +201,39 @@ The challenge with localizing the name of the page is that many of the localizat
 The `sling:alias` property allows you to have our cake and eat it too. `sling:alias` can be added as a property to any resource to allow for an alias name for the resource. In the previous example, you would have:
 
 * A page in the JCR at:
-
   `…/es/home`
 
 * Then add a property to it:
-
   `sling:alias` = `casa`
 
 This would allow the AEM translation tools such as the multi-site manager to continue to maintain a relationship between:
 
-* `/en/home`
+* `/en/home`** **
 
 * `/es/home`
 
 While also allowing end users to interact with the page name in their native languages.
 
- >[!NOTE]
-  >
-  > The `sling:alias` property can be set using the [Alias property when editing Page Properties](/help/sites-authoring/editing-page-properties.md#advanced)
+>[!NOTE]
+>
+>The `sling:alias` property can be set using the [Alias property when editing Page Properties](/help/sites-authoring/editing-page-properties.md#advanced).
 
 #### /etc/map {#etc-map}
 
 In a standard AEM installation:
 
-* for the OSGi configuration:
-
+* for the OSGi configuration
   **Apache Sling Resource Resolver Factory**
+  ( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
-  (`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+* the property
+  **Mapping Location** ( `resource.resolver.map.location`)
 
-* the property:
-
-  **Mapping Location**
-
-  (`resource.resolver.map.location`)
-
-* defaults to:
-
-  `/etc/map`
+* defaults to `/etc/map`.
 
 Mapping definitions can be added in this location to map inbound requests, rewrite URLs on pages in AEM, or both.
 
-To create a new mapping, create a new `sling:Mapping` node in this location under `/http` or `/https`. Based on the `sling:match` and `sling:internalRedirect` properties that are set on this node, AEM will redirect all traffic for the matched URL to the value specified in the `internalRedirect` property.
+To create a new mapping, create a new `sling:Mapping`** **node in this location under `/http` or `/https`. Based on the `sling:match` and `sling:internalRedirect` properties that are set on this node, AEM will redirect all traffic for the matched URL to the value specified in the `internalRedirect` property.
 
 While this is the approach that is documented in the official AEM and Sling documentation, the regular expression support provided by this implementation is limited in scope when compared to the options that are available to us by using the `SlingResourceResolver` directly. Additionally, implementing mappings in this way can lead to issues with dispatcher cache invalidation.
 
@@ -260,7 +256,6 @@ However, there is also a simpler way to manage this:
    Using the web console (for example, localhost:4502/system/console/configMgr) you can configure the Sling Resource Resolver:
 
     * **Apache Sling Resource Resolver Factory**
-
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    It is recommended that you build out the mappings required to shorten URLs as regular expressions, then define these configurations under an OsgiConfignode, `config.publish`, that is included in your build.
@@ -291,6 +286,7 @@ However, there is also a simpler way to manage this:
      String childUrl = resourceResolver.map(request, child.getPath());
      //Output the childUrl on the page here
    }
+
    ```
 
 #### Apache HTTP Server mod_rewrite {#apache-http-server-mod-rewrite}
@@ -319,8 +315,8 @@ For example, if a site were to offer a printer-friendly version of a page, a sea
 
 Examples:
 
-* `https://www.mydomain.com/my-brand/my-page.html`
-* `https://www.mydomain.com/my-brand/my-page.print.html`
+* https://www.mydomain.com/my-brand/my-page.html
+* https://www.mydomain.com/my-brand/my-page.print.html
 
 Both would apply the following tag to the head of the page:
 
@@ -364,18 +360,17 @@ Disallow: /
 
 Alternately, on a live environment, you could choose to disallow certain paths that you do not want indexed.
 
-The caveat with placing the `robots.txt` file at the site root is that dispatcher flush requests may clear this file out and URL mappings will likely place the site root somewhere different than the `DOCROOT` as defined in the Apache HTTP Server configuration. For this reason, it is common to place this file on the author instance at the site root and replicate it to the publish instance.
+The caveat with placing the `robots.txt`** **file at the site root is that dispatcher flush requests may clear this file out and URL mappings will likely place the site root somewhere different than the `DOCROOT` as defined in the Apache HTTP Server configuration. For this reason, it is common to place this file on the author instance at the site root and replicate it to the publish instance.
 
 ### Building an XML sitemap on AEM {#building-an-xml-sitemap-on-aem}
 
 Crawlers use XML sitemaps to better understand the structure of websites. While there is no guarantee that providing a sitemap will lead to improved SEO rankings, it is an agreed-upon best practice. You can manually maintain an XML file on the web server to use as the sitemap, but it is recommended to generate the sitemap programmatically, which ensures that as authors create new content, the sitemap will automatically reflect their changes.
 
-To programmatically generate a sitemap, register a Sling Servlet listening for a `sitemap.xml` call. The servlet can then use the resource provided via the servlet API to look at the current page and its children, outputting XML. The XML will then be cached at the dispatcher. This location should be referenced in the sitemap property of the `robots.txt` file. Additionally, a custom flush rule will need to be implemented to make sure to flush this file whenever a new page is activated.
+To programmatically generate a sitemap, register a Sling Servlet listening for a `sitemap.xml` call. The servlet can then use the resource provided via the servlet API to look at the current page and its children, outputting XML. The XML will then be cached at the dispatcher. This location should be referenced in the sitemap property of the** ** `robots.txt` file. Additionally, a custom flush rule will need to be implemented to make sure to flush this file whenever a new page is activated.
 
 >[!NOTE]
 >
 >You can register a Sling Servlet to listen for the selector `sitemap` with the extension `xml`. This will cause the servlet to process the request any time a URL is requested that ends in:
->
 >`/<*path-to*>/page.sitemap.xml`
 >
 >You can then get the requested resource from the request and generate a sitemap from that point in the content tree by using the JCR APIs.
@@ -403,7 +398,8 @@ For more information, please see the following additional resources:
 * [https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 * [https://httpd.apache.org/docs/current/mod/mod_rewrite.html](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
 * [https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps](https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps)
-* [https://en.wikipedia.org/wiki/Robots_exclusion_standard](https://en.wikipedia.org/wiki/Robots_exclusion_standard)
+* [https://www.robotstxt.org/robotstxt.html](https://www.robotstxt.org/robotstxt.html)
 * [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
+

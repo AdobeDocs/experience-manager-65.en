@@ -84,7 +84,7 @@ To reach the Communities email configuration instances:
 
 ### Configuration for Notifications {#configuration-for-notifications}
 
-The instance of `AEM Communities Email Reply Configuration` OSGi config with the Name email is for the the notifications feature. This feature does not include email reply.
+The instance of `AEM Communities Email Reply Configuration` OSGi config with the Name email is forthenotifications feature. This feature does not include email reply.
 
 This configuration should not be altered.
 

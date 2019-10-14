@@ -1,17 +1,19 @@
 ---
 title: General Release Notes for Adobe Experience Manager 6.5
 seo-title: Release Notes
-description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install and detailed change lists.
-seo-description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install and detailed change lists.
-uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
+description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install, and detailed change lists.
+seo-description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install, and detailed change lists.
+uuid: b916624e-9486-4391-8c6f-cb4045e78490
+contentOwner: chuesler
 topic-tags: release-notes
 content-type: reference
-discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
+products: SG_EXPERIENCEMANAGER/6.5
+discoiquuid: 7d3ceccb-4f00-4e11-9c9f-6de46a455e02
+docset: aem65
+
 ---
 
-# General Release Notes for Adobe Experience Manager 6.5 {#general-release-notes-for-adobe-experience-manager}
+# General Release Notes for Adobe Experience Manager 6.5{#general-release-notes-for-adobe-experience-manager}
 
 ## Release Information {#release-information}
 
@@ -23,259 +25,201 @@ discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
   </tr>
   <tr>
    <th>Version</th>
-   <td>6.4</td>
+   <td>6.5</td>
   </tr>
   <tr>
    <th>Type</th>
-   <td>Major release</td>
+   <td>Major Release</td>
   </tr>
   <tr>
    <th>General availability date</th>
-   <td>April 4, 2018<br /> </td>
+   <td>April 8, 2019<br /> </td>
   </tr>
   <tr>
-   <th>Recommended updates</th>
-   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM releases and updates</a></td>
+   <th>Recommended Updates</th>
+   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM Releases and Updates</a></td>
   </tr>
  </tbody>
 </table>
 
 ### Trivia {#trivia}
 
-The release cycle for this version of Adobe Experience Manager started April 27, 2017, went through 22 iterations of quality assurance and bug fixing, and ended on March 22nd, 2018. The total number of customer related issues including enhancements and new features fixed in this release is 704.
+The release cycle for this version of Adobe Experience Manager started April 4, 2018, went through 23 iterations of quality assurance and bug fixing, and ended on March 28th, 2019. The total number of customer related issues including enhancements and new features fixed in this release is 1345.
 
-Adobe Experience Manager 6.5 is generally available since April 4, 2018.
+Adobe Experience Manager 6.5 is generally available since April 8, 2019.
 
->[!NOTE]
->
->Adobe recommends to install the latest service pack as all the new feature packs are only delivered via [Service Packs](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html).
+![AEM 6.5 Login Screen](/help/assets/assets/aem65-login-v4.png)
 
-## What's new {#what-s-new}
+## What's New {#what-s-new}
 
-Adobe Experience Manager 6.5 is an upgrade release to the Adobe Experience Manager 6.3 code base. It provides new and enhanced functionality, key customer fixes, high priority customer enhancements and general bug fixes oriented toward product stabilization. It also includes the majority of all Adobe Experience Manager 6.3 feature packs, hot fix, and service pack releases.
+Adobe Experience Manager 6.5 is an upgrade release to the Adobe Experience Manager 6.4 code base. It provides new and enhanced functionality, key customer fixes, high priority customer enhancements and general bug fixes oriented toward product stabilization. It also includes Adobe Experience Manager 6.4 Service Pack releases up to SP4.
 
 The list below provides an overview - while the subsequent pages list the full details.
 
 ### Experience Manager Foundation {#experience-manager-foundation}
 
-Full list of changes in [AEM Foundation](wcm-platform.md).
+Full list of changes in [AEM Foundation](release-notes/wcm-platform.md).
 
-The platform of Adobe Experience Manager 6.5 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java Content Repository: Apache Jackrabbit Oak 1.8.2.
+The platform of Adobe Experience Manager 6.5 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java Content Repository: Apache Jackrabbit Oak 1.10.2.
 
-The Quickstart uses Eclipse Jetty 9.3.22 as servlet engine.
+The Quickstart uses Eclipse Jetty 9.4.15 as servlet engine.
+
+#### Java Support  {#java-support}
+
+* New support for Java 11, as well as the already supported Java 8
+* For optimal performance, override default GC values with other values. For more information, please see the [Install & Update](/help/sites-deploying/custom-standalone-install.md) section.
+* Java 11 and Java 8 maintenance updates will be distributed by Adobe for customer usage in AEM-related projects, when not publicly available from Oracle
+
+#### Java Development {#java-development}
+
+* There are now [two versions of the Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), a recommended version with public interfaces that are not marked for deprecation, as well as a version that includes interfaces marked for deprecation.
 
 #### User Interface {#user-interface}
 
 Various enhancements have been made to the UI to make it more productive and easier to use.
 
-* [New Content Tree rail](/help/sites-authoring/basic-handling.md#content-tree) to quickly navigate a hierarchy. In combination with the list view, this restores the Classic UI interaction model.
-* Improved scrolling experience in card and list view of large folders.
-* [Improved interaction with the search results](/help/sites-authoring/search.md) - the back button restores the prior search result.
-* [Additional keyboard shortcuts](/help/sites-authoring/keyboard-shortcuts.md), for most common actions, such as to open a particular rail, to edit, move and delete item, or to open properties.
-* [Ability to disable keyboard shortcuts](/help/sites-authoring/user-properties.md) (enable/disable in Preferences).
-* [Stop showing time stamps across all UI](/help/sites-authoring/user-properties.md) relative after 7 days (set default in Preferences).
-
-See the [Authoring documentation](/help/sites-authoring/home.md) for more information on these features.
+* New Permissions Management UI for Users and Groups
+* Column Views now also only loads entries that are visible on the screen and only loads more when the user is starting to scroll. List and Card view already did that since 6.0 (improved in 6.4)
+* Column Views now include the workflow status for pages/assets when applicable
+* The [Select All](/help/sites-authoring/basic-handling.md#select-all) action is a quick way to execute an action with all pages/assets in the same folder
+* The [Select All](/help/sites-authoring/basic-handling.md#select-all) action attempts to perform the action to all pages/assets, not just what has been loaded. A warning dialog will be shown if the action has not been upgraded to handle Bulk Actions
 
 >[!CAUTION]
 >
 >Adobe does not plan to make further enhancements to the Classic UI. AEM 6.5 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated. [Read more](/help/sites-deploying/ui-recommendations.md).
 
-#### Content Repository {#content-repository}
-
-* Faster and more efficient compaction by Online Revision Cleanup. Internal tests show that the new tail compaction is up to 10 times faster and can reclaim more disk space with less IOPS compared to AEM 6.3. This results in less performance impact while the Online Revision Cleanup is running. For more information, please see [the documentation page](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes).
-
-* Continuous Revision Cleanup for MongoMK replaces scheduled cleanup maintenance
-* Improved efficiency for Revision Cleanup on Document Nodestores
-
 #### Search & Indexing {#search-indexing}
 
-* Enhanced support for Indexing Operations via oak-run (CLI):
+* Search in Oak now supports dynamic facets. For exampe the filter rail in assets search show the estimated amount of results.
+* QueryBuilder was extended to provide results with dynamic facets
 
-    * Index consistency check
-    * Indexing statistics
-    * Index configuration Im/Export
-    * Reindexing
+#### Upgrade {#upgrade}
 
-* Reduced Lucene related repository growth for an overall improved system performance
-
-For more information, please visit [this documentation page](/help/sites-deploying/indexing-via-the-oak-run-jar.md).
-
-#### Monitoring {#monitoring}
-
-* A new [System Overview](/help/sites-administering/operations-dashboard.md#system-overview) provides a snapshot view on all performance-related system status & activities
-* A new set of [Health Checks](/help/sites-administering/operations-dashboard.md#health-checks) around Indexing, Queries and Maintenance
+* Direct in-place upgrade to AEM 6.5 is supported for customers running AEM 6.2, 6.3 and 6.4. Customers using 5.x or 6.0/6.1 that want to use in-place upgrade need to upgrade to 6.4 first - and then upgrade to 6.5, or upgrade via transfer of the content between the instances directly to AEM 6.5.
 
 #### Projects and Workflows {#projects-and-workflows}
 
-* All-new [Workflow Editor to create and edit workflow models](/help/sites-developing/workflows-models.md).
-
-![screen_shot_2018-04-04at71143am](assets/screen_shot_2018-04-04at71143am.png)
-
-#### Upgrade from earlier version {#upgrade-from-earlier-version}
-
-* [Backward Compatibility](/help/sites-deploying/backward-compatibility.md): Backward compatible features in 6.4, helps your custom code remain compatible in most cases and reduces upgrade effort.
-* [Upgrade Complexity Assessment](/help/sites-deploying/pattern-detector.md): New Pattern Detector tool to assess the complexity of your upgrades, before you upgrade.
-* [Repository Restructuring](/help/sites-deploying/repository-restructuring.md): significant restructuring (primarily /etc) to facilitate easier upgrades and promote implementation best practices
-* For more general information regarding Upgrades, please see the [this page](/help/sites-deploying/upgrade.md) for more details.
+* New Workflow Model editor introduced in 6.4 has been improved to include more operations like Copy and Publish, Variable support in Workflow steps and enhanced OR and AND splits.
 
 ### Experience Manager Sites {#experience-manager-sites}
 
-Full list of changes in [AEM Sites and Add-ons](sites.md).
+Full list of changes in [AEM Sites and Add-ons](release-notes/sites.md).
 
-#### Fluid Experiences {#fluid-experiences}
+#### Managed Single-page Apps {#managed-single-page-apps}
 
-The introduction of Fluid Experiences at the start of 2017, backed by Content Fragments, Experience Fragments and Content Services were the start to evolve to a multi-channel-first content management. AEM 6.5 extends each of the areas significantly:
+The Page Editor adds the ability to in-context edit content and compose/layout within client-side rendered experiences (also known [as SPA Editor](/help/sites-developing/spa-architecture.md)). Existing single-page apps build with JavaScript framework React or Angular can be extended with the AEM SJ SDK to be made editable for practitioners.
 
-**[Content Fragments](/help/assets/content-fragments.md)**
+First shipped as part of AEM 6.4 SP2, with AEM 6.5 the SPA support gains following capabilities:
 
-New in 6.4 are a visual [content model](/help/assets/content-fragments-models.md) editor and a new [configurable component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) to provide flexible HTML output and JSON to include in Content Services.
+* Use Template Editor to edit and configure the AEM editable parts of the SPA
+* Use Multi-site Management to create country, franchise or white-labeled SPA experiences
 
-**Experience Fragments**
+#### Headless Content Management {#headless-content-management}
 
-Creating variations in a fragment with the same content but different layout is now more efficient, thanks to the Building Blocks capability. On top of sending Experience Fragments to Facebook and Pinterest, now it's possible to send them to Adobe Target as offer.
+AEM has the ability to serve the content in various formats and from various levels of the stack. Some have been around since 2008 with the [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) and [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Sling Model Exporter](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html)) was introduced in AEM 6.3 and is the method used by the AEM SJ SDK to hydrate single-page apps. The [HTTP API for Assets](/help/assets/mac-api-assets.md) is a CRUD API, that was extended for AEM 6.5.
 
-**Content Services**
+New HTTP API capabilites:
 
-Various enhancements to Sling Model Exporter and the Core Components are included to provide a robust JSON output to embed content in mobile apps and experiences build with single-page apps.
-
-#### Getting Sites Built Quicker {#gettings-sites-built-quicker}
-
-AEM 6.5 completes the transformation to the next generation component model. The Core Components concept introduced in AEM 6.3, and now joined by the Style System, provides an efficient way to build new and extend existing sites.
-
-Recommended tutorial to learn on how to best leverage the new component model: [Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+* Added [Content Fragment support to HTTP API for Assets](/help/assets/assets-api-content-fragments.md) to create, update, read and delete fragments.
+* Expose lists of Content Fragments via Content Services with the [Content Fragment List Core Component](https://opensource.adobe.com/aem-core-wcm-components/library/content-fragment-list.html).
+* [Core Component Library](https://opensource.adobe.com/aem-core-wcm-components/library.html) that shows the default Content Services JSON output for each component
 
 #### Screens Add-on {#screens-add-on}
 
-Delivering a consistent message across all marketing channels including Digital Signage and kiosk networks is what AEM Screens stands for. AEM 6.5 adds support to run the Signage Player on Microsoft Windows and Google Chrome OS hardware. Further, enhancements to remote device management and schedules (groups of channels) are available.
+Efficiently design, deliver and optimize experiences on all digital displays from interactive kiosks to digital signage.
 
-For more information on the Screens updates, see [AEM Screens User Guide](/help/screens/home.md).
+**Design**
 
-### Experience Manager Communities {#experience-manager-communities}
+* Unify experiences and content across digital and in-store with improved content reuse
+* Streamlined authoring and approval/publishing workflows with support for Launches
+* Edit and deliver rich interactive experiences using SPA Editor
 
-AEM 6.5 adds many new features and enhancements to Communities. Full list of changes is available in [AEM Communities](communities-release-notes.md). Highlights for this release are:
+**Deliver**
 
-#### Enhancements to Moderation {#enhancements-to-moderation}
+* Expanded media player support with robust on-line and offline operation (Smart Sync) able to scale to even the largest signage networks.
 
-**Automatic spam detection**
+**Optimize**
 
-New spam detection engine has been provided to filter out unwanted user generated content on community sites and groups. Once enabled from system/console/configMgr, it marks a piece of user generated content as spam based on a pre-defined set of spam words. To know more about spam detection engine, refer [automoderating community user generating content](/help/communities/moderate-ugc.md#spam-detection).
+* Personalize by location or configuration of data triggered content by using dynamic placeholders.
+* Unified insights driven by Adobe Analytics integration into the AEM Screens Player
 
-![spamdetection](assets/spamdetection.png)
-
-**New filters for QnA**
-
-New filters, named Answered and Not Answered, have been added to bulk moderation console to filter QnA questions. To know how the Answered and Unanswered status filters work, refer [bulk moderating user generated content](/help/communities/moderation.md#main-pars-note-521961797).
-
-**Bookmark moderation filters**
-
-Ability to bookmark the pre-defined moderation filters on moderation console has been provided. These filters are appended toward the end of the URL string, therefore can be shared, reused and revisited later. Know how to bookmark filters in [bulk moderation console](/help/communities/moderation.md#main-pars-note-429176623).
-
-#### Delete UGC and user profiles {#delete-ugc-and-user-profiles}
-
-AEM 6.5 Communities exposes [out-of-the-box APIs](/help/communities/user-ugc-management-service.md) and sample [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) to enable end users have control over their data. These APIs also enable data processing and data controlling organizations to serve EU GDPR compliance requests.
-
-#### Enhancements to Site and Group Management {#enhancements-to-site-and-group-management}
-
-**Create multi-locale groups in a single step**
-
-Capability to create multi-lingual groups in single operation has been provided. To create such groups, users can navigate to Group Collection of the desired communities site from the Sites console. Create a group, and specify the desired languages in Community Group Template page. To know more about this functionality, refer [community groups console](/help/communities/groups.md).
-
-![multilingualgroup](assets/multilingualgroup.png)
-
-**[Delete community sites and groups in a click](/help/communities/groups.md)**
-
-Delete icon is now available on respective sites and groups, while navigating from global navigation. Using this icon deletes all the items and content associated with the site or group, and removes all the user associations. To know more about this functionality, refer [managing community sites](/help/communities/create-site.md#main-pars-text-fe17) and [managing community groups](/help/communities/groups.md#main-pars-text-5e8c).
-
-#### Enhancements to Enablement {#enhancements-to-enablement}
-
-Assignment and Catalog functions are now available within groups. This enables learning content to be created, managed and published for a specific set of targeted community members. To know more about enabling community groups, refer [managing enablement resources](/help/communities/resource.md).
-
-![assignmentcatalog](assets/assignmentcatalog.png)
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](/screens/user-guide.md).
 
 ### Experience Manager Assets {#experience-manager-assets}
 
-AEM 6.5 brings in several new features and enhancements to Assets including new, improved CreativeCloud integration, key Artificial Intelligence innovations, improved metadata management, reporting enhancements, and overall user experience improvements. The full list of changes available in [AEM Assets](assets.md). The highlights of the release are:
+Full list of changes in [AEM 6.5 Assets release notes](release-notes/assets.md).
 
-**Adobe Asset Link**
+AEM 6.5 introduces the following capabilities and enhancements to boost productivity of AEM users, DAM roles, and associated creative and marketing roles.
 
-Adobe Asset Link in Creative Cloud for enterprise streamlines collaboration between creatives and marketers in the content creation process. It is a new native capability in Creative Cloud for enterprise that connects Photoshop CC, Illustrator CC, and InDesign CC to AEM — without creatives having to leave their tools of choice.
+#### Integration with Adobe Creative Cloud {#integration-with-adobe-creative-cloud}
 
-To learn more about this capability, prerequisites, and how to access it, see [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+Introduction of [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html), an in-app experience for creative users working in Adobe Creative Cloud applications, including Photoshop, Illustrator, and InDesign, streamlines collaboration between creatives and marketers in the content creation process. AEM Desktop App continues to support the needs of users working with assets from AEM on desktop, using any file type and any destkop application.
 
-![adobe_asset_link](assets/adobe_asset_link.png)
+Additionally, AEM integrates with Adobe Stock to help find, preview, license and save Adobe Stock assets directly from the AEM Web UI.
 
-**AEM desktop app**
+![Asset Link panel in Photoshop](/help/assets/assets/aem65-assetlink-photoshop.png)
 
-AEM desktop app has been updated to Version 1.8, which is compatible with AEM 6.5. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.
+#### Connected Assets {#connected-assets}
 
-Improvements introduced since the AEM 6.3 release include the ability to upload hierarchical folders in the background, a new UI to monitor asset background operations, enhanced caching, networking and login, as well as overall stability improvements. The documentation also includes a [best practices guide](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+Connected Assets capability is targeted at larger deployments with a number of AEM Sites deploymetns that need to leverage assets from a central AEM Assets DAM deployment. It allows for improving governance around assets managed centrally while allowing for high efficiency of supplying assets to the various Sites deployments.
 
-**Adobe Sensei Services**
+### Dynamic Media {#dynamic-media}
 
-New capabilities include Enhanced Smart Tags, with the ability to learn customer business taxonomy, automatically tag digital assets with customer-specific tags and Smart Translation Search, which improves discoverability in multiple languages by translating search terms on the fly. To learn more about this feature, see [Enhanced Smart Tags](/help/assets/enhanced-smart-tags.md).
+Dynamic Media provides enhanced rich-media authoring and delivery in AEM Assets to drive cutting-edge experiences that are both immersive and personalized. With a single high-quality master asset, you can leverage our advanced cloud rendering, Smart Crop, and best-in-class viewers to deliver the most engaging experiences with industry-leading performance.
 
-![enhanced_smart_tags2](assets/enhanced_smart_tags2.png)
+New features include:
 
-**Metadata**
+* Support for 360-video & VR headsets
+* Custom Video Thumbnails
+* Enhanced accessibility support
+* Hotlinking protection
 
-Various enhancements include the ability to import and export metadata simultaneously for large numbers of assets and advanced metadata constructs, such as [Cascading Metadata](/help/assets/cascading-metadata.md).
+#### User Experience and Search {#user-experience-and-search}
 
-**Reports**
-
-Asset reporting underwent a big overhaul in AEM 6.5 with new reporting framework, user experience, and more OOTB reports for customer usecases. To learn how to generate various reports, see [Asset Reports](/help/assets/asset-reports.md).
-
-**User Experience**
-
-Multiple enhancements to improve browsing, searching and admin experience for Assets users such as scrolling experience, search back button, improved search filters and many more. The full list available in [AEM Assets](assets.md).
-
-**Brand Portal**
-
-Various enhancements in areas of metadata, reporting, digital rights, login experience, and publish performance for asset distribution. To know about the new enhancements and features, see [What's new in AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html).
-
-#### Dynamic Media Add-on {#dynamic-media-add-on}
-
-AEM 6.5 includes many new features and enhancements to Dynamic Media. The full list is available in [AEM Assets](assets.md). Key highlights include the following:
-
-**Smart Crop**
-
-Smart Crop, powered by Adobe Sensei, automatically provides non-destructive cropping of images, preserving the point of interest for responsive design. You can preview cropped image suggestions and manually adjust them, if necessary. This feature also enables automated swatch generation for product imagery.
-
-See [Image Profiles](/help/assets/image-profiles.md) documentation to learn more about using Smart Crop.
-
-See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md) to learn more about working with Smart Crop in the Dynamic Media component.
-
-**Smart Imaging**
-
-Smart imaging leverages each user's unique viewing characteristics to automatically serve images optimized for their experience, resulting in better pefromance and engagement.
-
-See [Smart Imaging](/help/assets/imaging-faq.md) documentation to learn more.
-
-![smart_crop](assets/smart_crop.png)
-
-**Emerging Media & Viewer Enhancements**
-
-New viewers, including Panoramic and VR, let you provide more immersive experiences.
-
-See [Panoramic Images](/help/assets/panoramic-images.md) documentation to learn more.
+Key enhancements help to find the right assets faster by providing dynamic search facets, and to manage multiple assets more efficiently by providing ability to select all assets from any folder or search result.
 
 ### Experience Manager Forms {#experience-manager-forms}
 
 AEM 6.5 Forms brings in several new features and enhancements. The highlights include:
 
-* Multi-channel Interactive Communications
-* Prefill Interactive Communications from business applications
-* Workflow modernization and mobile worker support
-* Lazy loading fragments
-* Single-hop upgrade from LiveCycle to Experience Manager Forms 6.4
+*
+*
+*
+*
+*
+* Transaction reports to track the number of submitted forms, processed documents, and rendered documents
+* Usability improvements to interactive communications
+* Cloud-based digital signatures in adaptive forms
+* Embed adaptive forms and interactive communications in a AEM Sites single page applications (SPA).
+* Support for variables in AEM Workflows
+* Data display pattern support in interactive communications
+* Sorting adaptive forms and interactive communication tables
+* Automated validation of input data in form data models
 
-More details on [AEM Forms](forms.md) release notes page. Also, see the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources.
+See the [Summary of new features and enhancements in AEM 6.5 Forms](forms/using/whats-new.md) for information about new and improved features and documentation resources. `<sub>``<sup>``<strike>`
+
+* `<sub>``<sup>``<strike>``<sub>``<sup>``<strike>`
+
+### Experience Manager Communities {#communitiesreleasenotes}
+
+AEM 6.5 adds new features and enhancements to Communities. The highlights for this release are:
+
+* Registered member tagging (@mention) supported while authoring User Generated Content.
+* Direct bulk messaging to group of members, is now supported.
+* Custom filters developed and added in bulk moderation UI. A [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) demonstrating filtering by tags can be used as a base to develop analogous custom filters.
+* New List View provided with improved UI in Bulk Moderation.
+* Separate administrators for different community sites and nested groups can be assigned, instead of a single community administrator.
+* Enablement functionality of AEM 6.5 Communities supports [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
+* Keyboard navigation support on enablement components for improved accessibility.
+* Apache Solr 7.0 supported while setting up MSRP and DSRP.
+
+For detailed list of changes, see [AEM 6.5 Communities release notes](release-notes/communities-release-notes.md).
 
 ### Experience Manager Livefyre {#experience-manager-livefyre}
 
 You can integrate Livefyre with your AEM 6.5 instance. Information on how to integrate Livefyre with AEM is located here:
 
-* [Integrating Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [Integrating Livefyre](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/livefyre.html)
 
 ### Leverage Customer Focused Development {#leverage-customer-focused-development}
 
@@ -283,26 +227,31 @@ Adobe is using a customer focused development model that allows customers to con
 
 Adobe has the procedures and processes in place to enable collection, prioritization, and tracking of customer focused bug resolution and enhancement request development. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement & Defect Tracking System. Customer questions are identified and resolved with Customer Care where possible. When escalated to R&D, all customer information is captured, and used for prioritization and reporting purposes. Priority is given in development to paid support and warrantee issues and paid customer enhancements.
 
-This process of prioritization has yielded more than 500 customer focused changes fixed in AEM 6.5.
+This process of prioritization has yielded more than 750 customer focused changes fixed in AEM 6.5.
 
 ## List of files that are part of the Release {#list-of-files-that-are-part-of-the-release}
 
 **Foundation**
 
-* Standalone Quickstart: cq-quickstart-6.4.0.jar
-* Application Server Quickstart: cq-quickstart-6.4.0.war
-* Dispatcher 4.3.1 or newer for various web servers and platforms ([download link](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
+* Standalone Quickstart: cq-quickstart-6.5.0.jar
+* Application Server Quickstart: cq-quickstart-6.5.0.war
+* Dispatcher 4.3.2 or later for the various web servers and platforms ([download link](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
 * Plug-in for Eclipse IDE ([read more and download](/help/sites-developing/aem-eclipse.md))
 
 * Extension for Brackets Code Editor ([read more and download](/help/sites-developing/aem-brackets.md))
-* Maven/Gradle dependencies ([download link](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/))
+* Maven/Gradle dependencies ([download link](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.5.0/))
 
 **Sites**
 
-* Core Components ([GitHub project](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
+* Core Components ([GitHub project](https://github.com/adobe/aem-core-wcm-components))
 * We.Retail Reference implementation ([read more](/help/sites-developing/we-retail.md))
-* Project Blueprint Archetype ([GitHub project](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype))
+* Maven Project Archetypes:
+
+    * for full-stack sites: [GitHub project](https://github.com/adobe/aem-project-archetype)
+    * for single-page apps with React/Angular: [GitHub project](https://github.com/adobe/aem-spa-project-archetype)
+
 * AEM Screens Players for various target platforms ([download](https://download.macromedia.com/screens/))
+
 * Smart Content Language Models. English is pre-installed - more languages can be downloaded
 
     * [German](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
@@ -310,25 +259,17 @@ This process of prioritization has yielded more than 500 customer focused change
     * [Italian](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
     * [French](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) to migrate Classic UI components to Coral 3
+* AEM Modernize Tools Suite e.g. Dialog Conversion Tool. ([GitHub project](https://github.com/adobe/aem-modernize-tools))
 
 **Assets**
 
-* Adobe Experience Manager desktop app ([read more](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) and [download](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
-
-* Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md) and [download](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/assets/aem-assets-pdf-rasterizer-pkg))
-
+* Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md))
 * Package to add extended RAW image support ([read more](/help/assets/camera-raw.md))
 
 **Forms**
 
-* Packages for AEM Forms capabilities:
-
-    * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
-    * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
-    * [adobe-aemfd-solaris-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-SOL)
-    * [adobe-aemfd-win-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-WIN)
-    * [adobe-aemfd-osx-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-OSX)
+* [Packages for AEM Forms capabilities](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
 
 ## Languages {#languages}
 
@@ -357,31 +298,22 @@ Please see [upgrade documentation](/help/sites-deploying/upgrade.md) for detaile
 
 Please find the complete matrix of supported platforms incl. Support-Level on [AEM 6.5 Technical Requirements](/help/sites-deploying/technical-requirements.md)
 
+Oak MicroKernel for
+Oak MicroKernel for
+
 >[!NOTE]
 >
->Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9 and 10 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe will only provide support for LTS releases of Java to run AEM in production. Therefore Java 8 is the recommended version to use with AEM 6.5.
+>Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9 and 10 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe will only provide support for LTS releases of Java to run AEM in production. Therefore Java 11 is the recommended version to use with AEM 6.5.
 
 ## Deprecated and Removed Features {#deprecated-and-removed-features}
 
 Adobe constantly evaluates capabilities in the product and over time plans to replace capabilities with more powerful versions, or decides to re-implemented selected parts to be better prepared for future expectations or extensions.
 
-For Adobe Experience Manager 6.5, [read the list of deprecated and removed capabilities](deprecated-removed-features.md). The page also contains pre-announcement of changes in 2019 and important notice for customers that update from prior releases.
-
-## Detailed Changes Lists {#detailed-changes-lists}
-
-[AEM Sites](sites.md)
-
-[AEM Assets](assets.md)
-
-[AEM Communities](communities-release-notes.md)
-
-[AEM Forms](forms.md)
-
-[AEM Foundation](wcm-platform.md)
+For Adobe Experience Manager 6.5, [read the list of deprecated and removed capabilities](release-notes/deprecated-removed-features.md). The page also contains pre-announcement of changes in the near future and important notice for customers that update from prior releases.
 
 ## Known Issues {#known-issues}
 
-[List of known issues](known-issues.md)
+[List of known issues](release-notes/known-issues.md)
 
 ### Product Download and Support (Restricted Sites) {#product-download-and-support-restricted-sites}
 

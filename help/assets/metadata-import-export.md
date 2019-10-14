@@ -1,16 +1,18 @@
 ---
-title: Bulk Metadata Import and Export
-seo-title: Bulk Metadata Import and Export
+title: Import and export asset metadata in bulk
+seo-title: Import and export asset metadata in bulk
 description: This article describes how to import and export metadata in bulk.
 seo-description: This article describes how to import and export metadata in bulk.
-uuid: 176b7b5e-a1d5-40fe-a651-bfa36c4b409a
+uuid: b0fa3e59-e8f0-43dc-af89-e91f8a5546f5
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
-discoiquuid: f7e30ec4-62fd-43b7-a650-f61034f7a2db
+discoiquuid: f14f5487-bac1-4192-84cb-970636d57200
+docset: aem65
+
 ---
 
-# Bulk Metadata Import and Export {#bulk-metadata-import-and-export}
+# Import and export asset metadata in bulk{#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.
 
@@ -22,40 +24,19 @@ The metadata import is asynchronous and does not impede the system performance. 
 >
 >To import metadata on custom namespaces, first register the namespaces.
 
-1. Navigate to the Assets user interface, and tap/click Create **[!UICONTROL Create]** from the toolbar.
-1. From the menu, select **[!UICONTROL Metadata]**.
-1. On the **[!UICONTROL Metadata Import]** page, tap/click the **[!UICONTROL Select File]**.  Select the CSV file with the metadata.
+1. Navigate to the Assets user interface, and tap/click **Create** from the toolbar.
+1. From the menu, select **Metadata**.
+1. In the **Metadata Import** page, tap/click **Select File**. Select the CSV file with the metadata.
 1. Specify the following parameters:
 
-   <table>
-    <tbody>
-    <tr>
-    <td><p>Batch Size</p> </td>
-    <td><p>Number of assets in a batch for which metadata is to be imported. Default value is 50. Maximum value is 100.</p> </td>
-    </tr>
-    <tr>
-    <td><p>Field Separator</p> </td>
-    <td><p>Default value is comma. You can specify any other character.</p> </td>
-    </tr>
-    <tr>
-    <td><p>Multi value Delimiter</p> </td>
-    <td><p>Separator for metadata values. Default value is |.</p> </td>
-    </tr>
-    <tr>
-    <td><p>Launch Workflows</p> </td>
-    <td><p>False by default. When set to <em>true</em> and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. </p> </td>
-    </tr>
-    <tr>
-    <td><p>Asset Path Column Name</p> </td>
-    <td><p>Defines the column name for the CSV file with assets.</p> </td>
-    </tr>
-    </tbody>
-   </table>
+   | Batch Size |Number of assets in a batch for which metadata is to be imported. Default value is 50. Maximum value is 100. |
+   |---|---|
+   | Field Separator |Default value is Comma. You can specify any other character. |
+   | Multi value Delimiter |Separator for metadata values. Default value is |. |
+   | Launch Workflows |False by default. When set to *true* and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
+   | Asset Path Column Name |Defines the column name for the CSV file with assets. |
 
-1. Tap/click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
-
-<!-- TBD: Format characters in the table using backticks and add UICONTROL after table is converted to MD
--->
+1. Tap/click **Import** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
 
 ## Export Metadata {#export-metadata}
 
@@ -68,17 +49,21 @@ A few use cases for exporting metadata in bulk are:
 * Test or audit the metadata for compliance.
 * Externalize the metadata for separate localization.
 
-1. Select the asset folder that contains assets for which you want to export metadata. From the toolbar, select **[!UICONTROL Export metadata]**.
+1. Select the asset folder that contains assets for which you want to export metadata. From the toolbar, select** Export metadata**.
+1. In the Metadata Export dialog, specify a name for the CSV file. To export metadata for assets in subfolders, select **Include assets in subfolders**.
 
-1. In the Metadata Export dialog, specify a name for the CSV file. To export metadata for assets in subfolders, select **[!UICONTROL Include assets in sub-folders]**.
+   ![Interface and options to export metadata of all assets in a folder](assets/export_metadata_page.png)
 
-   ![export_metadata_page](assets/export_metadata_page.png)
+   Interface and options to export metadata of all assets in a folder
 
-1. Select the desired options. Provide a filename and if necessary a date.
-1. In the **[!UICONTROL Properties to be exported]** specify whether you want to export all or specific properties. If you choose **[!UICONTROL Selective]** properties to be exported, add the desired properties.
+1. Select the desired options. Provide a filename and if necessary a date.  
 
-1. From the toolbar, tap/click **[!UICONTROL Export]**. A message confirms that the metadata is exported. Close the message.
+1. In the **Properties to be exported** field, specify whether you want to export all or specific properties. If you choose Selective properties to be exported, add the desired properties.  
 
-1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
+1. From the toolbar, tap/click **Export**. A message confirms that the metadata is exported. Close the message.
+1. Open the inbox notification for the export job. Select the job and click **Open** from the toolbar. To download the CSV file with the metadata, tap/click **CSV Download** from the toolbar. Click **Close**.
 
-   ![csv_download](assets/csv_download.png)
+   ![Dialog  to download the CSV file containing metadata exported in bulk](assets/csv_download.png)
+
+   Dialog  to download the CSV file containing metadata exported in bulk
+

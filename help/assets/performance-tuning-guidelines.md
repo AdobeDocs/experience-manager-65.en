@@ -3,16 +3,18 @@ title: Assets Performance Tuning Guide
 seo-title: Assets Performance Tuning Guide
 description: Key focus areas around AEM configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of AEM Assets.
 seo-description: Key focus areas around AEM configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of AEM Assets.
-uuid: b5746549-34bf-4fb3-bb67-05c0380d4a07
-contentOwner: asgupta
+uuid: 5e590b0c-7f89-4ba4-8263-43fdb3e920ea
+contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 6e454056-96cf-4269-9bed-e6b96c480388
+discoiquuid: 30f241ef-2dfb-471e-98fd-d21b9e752c4c
+docset: aem65
 tagskeywords: performance tuning, AEM Assets, software optimization, hardware optimization
+
 ---
 
-# Assets Performance Tuning Guide {#assets-performance-tuning-guide}
+# Assets Performance Tuning Guide{#assets-performance-tuning-guide}
 
 An Adobe Experience Manager (AEM) Assets setup contains a number of hardware, software, and network components. Depending upon your deployment scenario, you may require specific configuration changes to hardware, software, and network components to remove performance bottlenecks.
 
@@ -32,7 +34,7 @@ While AEM is supported on a number of platforms, Adobe has found the greatest su
 
 To improve asset upload times, use high performance storage for the Java temp directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example in Amazon EC2, an ["ephemeral drive"](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temp folder.
 
-Assuming the server has ample memory, configure a RAM drive. On Linux, run these commands to create an 8 GB RAM drive:
+Assuming the server has ample memory, configure a RAM drive. On Linux, run these commands to create an 8GB RAM drive:
 
 ```
 mkfs -q /dev/ram1 800000
@@ -79,7 +81,7 @@ From AEM 6.1 SP1, if you're using a `sling:osgiConfig` node for configuring this
 
 ### Shared data stores {#shared-data-stores}
 
-Implementing an S3 or Shared File Datastore can help to save disk space and increase network throughput in large-scale implementations. For more information on the pros and cons of using a shared datastore, see [Assets Sizing Guide](assets-sizing-guide.md).
+Implementing an S3 or Shared File Datastore can help to save disk space and increase network throughput in large-scale implementations. For more information on the pros and cons of using a shared datastore, see [Assets Sizing Guide](/help/assets/assets-sizing-guide.md).
 
 ### S3 data store {#s-data-store}
 
@@ -108,7 +110,7 @@ accessKey=<snip>
 
 ## Network optimization {#network-optimization}
 
-Adobe recommends enabling HTTPS because many companies have firewalls that sniff HTTP traffic, which adversely impacts uploads and corrupts files. For large file uploads, ensure that users have wired connections to the network because a WiFi network becomes quickly saturated. For guidelines on identifying network bottlenecks, see [Assets Sizing Guide](assets-sizing-guide.md ). To assess network performance by analyzing network topology, see [Assets Network Considerations](assets-network-considerations.md).
+Adobe recommends enabling HTTPS because many companies have firewalls that sniff HTTP traffic, which adversely impacts uploads and corrupts files. For large file uploads, ensure that users have wired connections to the network because a WiFi network becomes quickly saturated. For guidelines on identifying network bottlenecks, see [Assets Sizing Guide](/help/assets/assets-sizing-guide.html ). To assess network performance by analyzing network topology, see [Assets Network Considerations](/help/assets/assets-network-considerations.md).
 
 Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your AEM instance. Common configuration options, including firewalls or proxies can help improve network performance. Here are some key points to bear in mind:
 
@@ -127,12 +129,11 @@ Wherever possible, set the DAM Update Asset workflow to Transient. The setting s
 >
 >By default, the DAM Update Asset workflow is set to Transient in AEM 6.3. In this case, you can skip the following procedure.
 
-1. Open `http://localhost:4502/miscadmin` on the AEM instance you want to configure.
-
-1. From the navigation tree, expand **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
-1. Double-click **[!UICONTROL DAM Update Asset]**.
-1. From the floating tool panel, switch to the **[!UICONTROL Page]** tab, and then click **[!UICONTROL Page Properties]**.
-1. Select **[!UICONTROL Transient Workflow]** Click **[!UICONTROL OK]**.
+1. Navigate to */miscadmin* in the AEM instance to be configured (i.e. [https://localhost:4502/miscadmin)](https://localhost:4502/miscadmin)).
+1. From the navigation tree, expand **Tools** &gt; **Workflow** &gt; **Models** &gt; **dam**.
+1. Double-click **DAM Update Asset**.
+1. From the floating tool panel, switch to the **Page** tab, and then click **Page Properties...**
+1. Select **Transient Workflow**, and then click **OK**.
 
    >[!NOTE]
    >
@@ -152,7 +153,7 @@ Wherever possible, set the DAM Update Asset workflow to Transient. The setting s
 
 By default, AEM runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by DAM Update Asset workflows, slowing down UI responsiveness and preventing AEM from running other processes that safeguard server performance and stability. As a good practice, set this value to half the processors that are available on the server by performing the following steps:
 
-1. On AEM Author, go to [http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent).
+1. On AEM Author, go to [https://localhost:4502/system/console/slingevent](https://localhost:4702/system/console/slingevent).
 1. Click Edit on each workflow queue that is relevant to your implementation, for example Granite Transient Workflow Queue.
 1. Change the value of Maximum Parallel Jobs, and click Save.
 
@@ -184,7 +185,7 @@ Customers use images of various sizes and formats across their website or for di
 
 Many Sites customers implement an image servlet that resizes and crops images at the time they are requested, which imposes additional load on the publish instance. However, as long as these images can be cached, the challenge can be mitigated.
 
-An alternative approach is to use Scene7 technology to hand off image manipulation entirely. Additionally, you can deploy Brand Portal (a replacement for Asset Share with Scene7 capabilities) which not only takes over rendition generation responsibilities from the AEM infrastructure, but also the entire publish tier.
+An alternative approach is to use Scene7 technology to hand off image manipulation entirely. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the AEM infrastructure, but also the entire publish tier.
 
 #### ImageMagick {#imagemagick}
 
@@ -209,44 +210,17 @@ In addition, set the path of ImageMagick's temporary folder in the *configure.xm
 
 >[!CAUTION]
 >
->A mis-configuration can make your server unstable if ImageMagick uses all the available disk space. The policy changes required to process large files using ImageMagick may impact the AEM performance. For more information, see [install and configure ImageMagick](best-practices-for-imagemagick.md).
+>A mis-configuration can make your server unstable if ImageMagick uses all the available disk space.
+>
+>The policy changes required to process large files using ImageMagick may impact the AEM performance. For more information, see [install and configure ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
->The ImageMagick policy.xml and configure.xml files may be found under /usr/lib64/ImageMagick-&ast;/config/ instead of /etc/ImageMagick/. Refer to the [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
+>The ImageMagick policy.xml and configure.xml files may be found under /usr/lib64/ImageMagick-&#42;/config/ instead of /etc/ImageMagick/. Refer to the [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
 
 >[!NOTE]
 >
 >If you are using AEM on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files.
-
-<!--
-
-#### Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
-
-During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
-
-To disable Sub Asset generation, do the following:
-
-1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
-
-1. Select the **[!UICONTROL Models]** tab
-1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
-1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
-
-1. Click on **[!UICONTROL Save]**
-
-To disable Page Extraction:
-
-1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
-
-1. Select the **[!UICONTROL Launchers]** tab
-1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model
-1. Click **[!UICONTROL Edit]**
-1. Select **[!UICONTROL Disable]**
-1. Click **[!UICONTROL OK]**
-1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model
-
--->
 
 ### XMP writeback {#xmp-writeback}
 
@@ -268,7 +242,7 @@ When replicating assets to a large number of publish instances, for example in a
 
 1. Choose which publish instance you want to use for chaining the replications to
 1. On that publish instance add replication agents that point to the other publish instances
-1. On each of those replication agents, enable **[!UICONTROL On Receive]** on the **[!UICONTROL Triggers]** tab
+1. On each of those replication agents, enable "On Receive" on the "Triggers" tab
 
 >[!NOTE]
 >
@@ -287,56 +261,44 @@ Some optimizations can be done on the Oak index configurations that can help imp
 Update the LuceneIndexProvider configuration:
 
 1. Navigate to /system/console/configMgrorg.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-1. Enable **[!UICONTROL CopyOnRead , CopyOnWrite , and Prefetch Index Files]** in versions prior to AEM 6.2. These values are enabled by default in AEM 6.2 and later versions.
+1. Enable "CopyOnRead", "CopyOnWrite", and "Prefetch Index Files" in versions prior to AEM 6.2. These values are enabled by default in AEM 6.2 and later versions.
 
 Update index configurations to improve reindexing time:
 
 1. Open CRXDe /crx/de/index.jsp and log in as an administrative user
 1. Browse to /oak:index/lucene
-1. Add a String[] property named **[!UICONTROL excludedPaths]** with values "/var", "/etc/workflow/instances", and "/etc/replication"
+1. Add a String[] property named "excludedPaths" with values "/var", "/etc/workflow/instances", and "/etc/replication"
 1. Browse to /oak:index/damAssetLucene
-1. Add a String[] property named **[!UICONTROL includedPaths]** with one value "/content/dam"
+1. Add a String[] property named "includedPaths" with one value "/content/dam"
 1. Save
 
 (AEM6.1 and 6.2 only) Update the ntBaseLucene index to improve asset delete and move performance:
 
 1. Browse to */oak:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Add two nt:unstructured nodes **[!UICONTROL slingResource]** and **[!UICONTROL damResolvedPath]** under */oak:index/ntBaseLucene/indexRules/nt:base/properties*
+1. Add two nt:unstructured nodes "slingResource" and "damResolvedPath" under */oak:index/ntBaseLucene/indexRules/nt:base/properties*
 1. Set the properties below on the nodes (where ordered and propertyIndex properties are of type *Boolean*:
-
    slingResource
-
    name="sling:resource"
-
    ordered=false
-
    propertyIndex= true
-
    type="String"
-
    damResolvedPath
-
    name="dam:resolvedPath"
-
    ordered=false
-
    propertyIndex=true
-
    type="String"
 
 1. On the /oak:index/ntBaseLucene node, set the property *reindex=true*
-1. Click **[!UICONTROL Save All]**
+1. Click "Save All"
 1. Monitor the error.log to see when indexing is completed:
-
    Reindexing completed for indexes: [/oak:index/ntBaseLucene]
-
 1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
-1. Once indexing is completed then go back to CRXDe and set the **[!UICONTROL type]** property to disabled on these two indexes
+1. Once indexing is completed then go back to CRXDe and set the "type" property to disabled on these two indexes
 
     * */oak:index/slingResource*
     * */oak:index/damResolvedPath*
 
-1. Click **[!UICONTROL Save All]**
+1. Click "Save All"
 
 Disable Lucene Text Extraction:
 
@@ -349,7 +311,7 @@ If your users don't need to be able to search the contents of assets, for exampl
 
 ### Guess Total {#guess-total}
 
-When creating queries, especially for an Asset Share implementation, that generate large result sets, use the `guessTotal` parameter to avoid heavy memory utilization when you run them.
+When creating queries that generate large result sets, use the `guessTotal` parameter to avoid heavy memory utilization when you run them.
 
 ## Known issues {#known-issues}
 
@@ -357,7 +319,7 @@ When creating queries, especially for an Asset Share implementation, that genera
 
 There are two major known issues related to large files in AEM. When files reach sizes greater than 2 GB, cold standby synchronization can run into an out-of-memory situation. In some cases, it prevents standby sync from running. In other cases, it causes the primary instance to crash. This scenario applies to any file in AEM that is larger than 2GB, including content packages.
 
-Likewise, when files reach 2GB in size while using a shared S3 datastore, it may take some time for the file to be fully persisted from the cache to the filesystem. As a result, when using binary-less replication, it is possible that the binary data may not have been persisted before replication completes. This situation can lead to issues, especially if the availability of data is important, for example in offloading scenarios.
+Likewise, when files reach 2 GB in size while using a shared S3 datastore, it may take some time for the file to be fully persisted from the cache to the filesystem. As a result, when using binary-less replication, it is possible that the binary data may not have been persisted before replication completes. This situation can lead to issues, especially if the availability of data is important, for example in offloading scenarios.
 
 ## Performance testing {#performance-testing}
 
@@ -380,7 +342,7 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Run load tests against the AEM instance
 * Monitor upload performance and UI responsiveness
 
-## AEM Assets performance checklist {#aem-assets-performance-checklist}
+## AEM Assets performance checklist and impact of asset management tasks {#checklist}
 
 * Enable HTTPS to get around any corporate HTTP traffic sniffers
 * Use a wired connection for heavy asset uploading
@@ -392,7 +354,7 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Configure ImageMagick to limit resource consumption
 * Remove unnecessary steps from the DAM Update Asset workflow
 * Configure workflow and version purging
-* Optimize Lucene index configuration in versions prior to 6.2
 * Optimize indexes with the latest service packs and hotfixes. Check with Adobe Support for any additional index optimizations that may be available.
-* Use `guessTotal` to optimize query performance.
-* If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
+* Use guessTotal to optimize query performance.
+* If you configure AEM to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.
+

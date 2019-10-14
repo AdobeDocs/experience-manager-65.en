@@ -275,8 +275,8 @@ For details on the data publishing service and how to schedule this service, see
 
 **Procces Reporting title bar drop-down list:** The drop-down list at the right corner of the Process Reporting title bar contains the following options:
 
-* **[!UICONTROL **Sync**]**: Synchronize the embedded Process Reporting repository with the AEM Forms database.
-* **[!UICONTROL **Help**]**: View the Help documentation on Process Reporting.
-* **[!UICONTROL **Logout**]**: Log out of Process Reporting
+* **[!UICONTROL Sync]**: Synchronize the embedded Process Reporting repository with the AEM Forms database.
+* **[!UICONTROL Help]**: View the Help documentation on Process Reporting.
+* **[!UICONTROL Logout]**: Log out of Process Reporting
 
 [Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

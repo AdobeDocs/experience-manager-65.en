@@ -3,12 +3,14 @@ title: Connecting to Adobe Analytics and Creating Frameworks
 seo-title: Connecting to Adobe Analytics and Creating Frameworks
 description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
 seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-uuid: 04325409-435c-4394-9ab7-c9022e19e085
+uuid: 3820dd24-4193-42ea-aef2-4669ebfeaa9d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
+discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
+docset: aem65
+
 ---
 
 # Connecting to Adobe Analytics and Creating Frameworks{#connecting-to-adobe-analytics-and-creating-frameworks}
@@ -35,7 +37,7 @@ The Adobe Analytics account needs to:
 >
 >Providing **Administrator** privileges (within Adobe Analytics) is not enough to allow a user to connect from AEM to Adobe Analytics. The account must also have **Web Service Access** privileges.
 
-![chlimage_1-316](assets/chlimage_1-316.png)
+![](assets/chlimage_1-67.png)
 
 Before proceeding, ensure your credentials allow you to log in to Adobe Analytics. Via either:
 
@@ -59,9 +61,9 @@ AEM uses the San Jose (https://api.omniture.com/admin/1.4/rest/) data center by 
 
 Use the [Web Console to configure the OSGi bundle](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Adobe AEM Analytics HTTP Client**. Add the **Data Center URL** for the data center that hosts a report suite for which your AEM pages collect data.
 
-![aa-07](assets/aa-07.png)
+![](assets/aa-07.png)
 
-1. Open the Web console in your web browser. ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
+1. Open the Web console in your web browser. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Enter your credentials to access the console.
 
    >[!NOTE]
@@ -91,6 +93,7 @@ Create a Adobe Analytics configuration so that AEM can authenticate with the Ado
     * Do not change the Parent Configuration property; for example, **Adobe Analytics Configuration**.
 
 1. Select **Create**.
+1.
 
    >[!NOTE]
    >
@@ -102,11 +105,17 @@ Create a Adobe Analytics configuration so that AEM can authenticate with the Ado
     * **Username**: the name used to log in to Adobe Analytics
     * **Shared Secret**: the Adobe Analytics shared secret for the above account
     * **Data Center**: The location of the Adobe Analytics data center that your account is associated with.
+
     * **Do not add tracking tag to page**: Select this option when you are using Adobe Analytics reports in the [Content Insights](/help/sites-authoring/content-insights.md) feature, and you are also using [Dynamic Tag Management](/help/sites-administering/dtm.md) (DTM) with AEM, and the DTM web property has the Adobe Analytics tool installed. In this case, selecting this option prevents two instances of the tracking code being added to pages.
+
     * **Do not track the page load event**: as appropriate
+
     * **Use App Measurement**: as appropriate
+
     * **Use ClientContext**: as appropriate
+
     * **Additional context data**: as appropriate
+
     * **Segment**: as appropriate
 
    Please contact your Adobe Analytics representative to confirm any details and make sure you fill in these credentials correctly.
@@ -116,12 +125,10 @@ Create a Adobe Analytics configuration so that AEM can authenticate with the Ado
 
 ## Configuring for the Activity Map {#configuring-for-the-activity-map}
 
-To be able to see and use the [Activity Map in the page editor](/help/sites-authoring/pa-using.md#analytics-visible-from-the-page-editor-activity-map), you need to configure:
+To be able to see and use the [Activity Map in the page editor](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor), you need to configure:
 
 * Users (for both editing and/or configuring) need to be in the group:
-
   `analytics-administrators`
-
   as there is a restriction on node `/libs/cq/activitymap/content/settings`
 
     * The settings are loaded via `/mnt/override/libs/cq/activitymap/content/settings` so you can override this group restriction.
@@ -130,17 +137,19 @@ To be able to see and use the [Activity Map in the page editor](/help/sites-auth
 * Analytics Integration
 
     * Use AppMeasurement set to `true`
+
     * Report Suite configured to use the `all` run mode
 
 * DTM Integration
 
     * Use `AppMeasurement.js`
+
     * `Include Production code on Author` set to true
 
 >[!NOTE]
 >
 >Since `ActivityMap` inspects the tag (report suite) on the page to fetch report data (and publishing data is a key aim) `ActivityMap` is only supported if the report suite on author and publish is the same.
->
+
 >`ActivityMap` cannot show data from report suites other than the ones used for tracking on the page.
 
 >[!NOTE]
@@ -188,7 +197,7 @@ For the Report Suite ID (RSID) that you are using, you can control which server 
 
 1. Then use the **Run Mode** drop down (next to the Report Suite ID) to select the server instances that you want to send information to the Report Suite.
 
-   ![aa-framework-01](assets/aa-framework-01.png)
+   ![](assets/aa-framework-01.png)
 
 1. To make the framework available on the publish instance of your site, on the **Page** tab of sidekick, click **Activate Framework.**
 
@@ -202,7 +211,7 @@ The framework system lets you change the server settings within each Adobe Analy
 
 Start by opening the panel. Press the downward arrow next to **Servers**:
 
-![server_001](assets/server_001.png)
+![](assets/server_001.png)
 
 * **Tracking Server**
 
@@ -229,15 +238,15 @@ When a page is associated with an Adobe Analytics framework, the page sends data
 Descendents of the page inherit the association with the framework. For example, when you associate the root page of your site with a framework, all pages of the site are associated with the framework.
 
 1. From the **Sites** console, select the page you wish to set up with tracking.
-1. Open the **[Page Properties](/help/sites-authoring/editing-page-properties.md)**, either directly from the console, or the page editor.
-1. Open the **Cloud Services** tab.
+1. Open the ** [Page Properties](/help/sites-authoring/editing-page-properties.md)**, either directly from the console, or the page editor.
+1. Open the** Cloud Services** tab.
 
 1. Use the **Add Configuration** drop down to select **Adobe Analytics** from the available options. If inheritance is place you need to disable that before the selector becomes available.
 
 1. The drop down selector for **Adobe Analytics** will be appended to the options available. Use this to select the required framework configuration.
 
 1. Select **Save & Close**.
-1. **[Publish](/help/sites-authoring/publishing-pages.md)** the page to activate the page and any connected configurations/files.
+1. ** [Publish](/help/sites-authoring/publishing-pages.md)** the page to activate the page and any connected configurations/files.
 1. The final step is to visit the page on the publish instance and search for a keyword (e.g. aubergine) using the **Search** component.
 1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
 1. Using the example provided, the call should contain the value entered (i.e. aubergine) in eVar7 and the events list should contain event3.
@@ -246,20 +255,17 @@ Descendents of the page inherit the association with the framework. For example,
 
 When a page is associated with a Adobe Analytics framework, the number of page views can be shown in the List view of the Sites console.
 
-See [Seeing Page Analytics Data](/help/sites-authoring/pa-using.md) for further details.
+See [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md) for further details.
 
 ### Configuring the Import Interval {#configuring-the-import-interval}
 
 Configure the appropriate instance of the **Adobe AEM Managed Polling Configuration** service:
 
 * **Poll Interval**:
-
   The interval, in seconds, at which the service retrieves page view data from Adobe Analytics.
-
   The default interval is 43200000 ms (12 hours).
 
 * **Enable**:
-
   Enable or disable the service. By default, the service is enabled.
 
 To configure this OSGi service, you can either use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or an [osgiConfig node in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (the service PID is `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).

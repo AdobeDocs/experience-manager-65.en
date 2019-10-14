@@ -912,7 +912,7 @@ The Maven archetype plugin uses interactive mode in the shell or command prompt 
 
 The generated POM files include commands for compiling code, creating bundles, and deploying them to AEM in packages. The `groupID`, `artifactId`, `version`, and `name` properties of the Maven project are automatically populated using the values that you provide to the Maven `archetype:generate` interactive prompt.
 
-You may want to change the the following default values in the generated pom.xml file:
+You may want to changethefollowing default values in the generated pom.xml file:
 
 * The CQ server name or IP address: The default value is `localhost`. The `crx.host` element below `project/properties` contains this value.
 

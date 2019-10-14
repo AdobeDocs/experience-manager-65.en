@@ -21,7 +21,7 @@ For convenience to authoring users, the touch-enabled UI does allow for switchin
 >
 >Instances upgraded from a previous version will retain the classic UI for page authoring.
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). See [UI Overrides for the Editor](#uioverridesfortheeditor).
+>After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this usingthe[OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). See [UI Overrides for the Editor](#uioverridesfortheeditor).
 
 ## Configuring the Default UI for Your Instance {#configuring-the-default-ui-for-your-instance}
 

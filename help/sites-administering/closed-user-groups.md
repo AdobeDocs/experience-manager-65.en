@@ -749,7 +749,7 @@ There is one limitation of replicating CUG policies. If a given CUG policy gets 
 
 The authentication handler **Adobe Granite HTTP Header Authentication Handler** shipped with the `com.adobe.granite.auth.authhandler` bundle holds a reference to the `CugSupport` interface defined by the same module. It is used to calculate the 'realm' in certain circumstances, falling back to the realm configured with the handler.
 
-This has been adjusted to make the reference to `CugSupport` optional in order to ensure maximal backwards compatibility if a given setup decides to re-enable the deprecated implementation. Installations using the the implementation will no longer get the realm extracted from the CUG implementation but will always display the realm as defined with **Adobe Granite HTTP Header Authentication Handler**.
+This has been adjusted to make the reference to `CugSupport` optional in order to ensure maximal backwards compatibility if a given setup decides to re-enable the deprecated implementation. Installations usingtheimplementation will no longer get the realm extracted from the CUG implementation but will always display the realm as defined with **Adobe Granite HTTP Header Authentication Handler**.
 
 >[!NOTE]
 >

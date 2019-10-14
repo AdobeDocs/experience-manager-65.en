@@ -45,7 +45,7 @@ Upon running the instance from the command line, you will be presented with the 
 
 ## Using the -nointeractive Flag {#using-the-nointeractive-flag}
 
-You can also choose to specify the password from a properties file. This is done by using the `-nointeractive` flag combined with the the `-Dadmin.password.file` system property.
+You can also choose to specify the password from a properties file. This is done by using the `-nointeractive` flag combined withthe`-Dadmin.password.file` system property.
 
 Below is an example:
 

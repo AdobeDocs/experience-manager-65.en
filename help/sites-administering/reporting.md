@@ -265,7 +265,7 @@ Clicking on **Load data** will reload the data and update the report being shown
 
 Selecting to manually refresh data means that:
 
-1. As soon as you change the the report configuration, the table of report data will be blanked out.
+1. As soon as you changethereport configuration, the table of report data will be blanked out.
 
    For example, if you change the sort mechanism for a column, the data will not be shown.
 

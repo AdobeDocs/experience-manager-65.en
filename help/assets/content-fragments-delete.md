@@ -3,19 +3,17 @@ title: Content Fragments - Delete Considerations
 seo-title: Content Fragments - Delete Considerations
 description: Content Fragments - Delete Considerations
 seo-description: Content Fragments - Delete Considerations
-uuid: b4161a0e-7e17-4547-9bdd-cf3b1d0d7d63
+uuid: e7ac1809-159f-4d02-ad30-dc6c246e8a04
 contentOwner: aheimoz
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
+discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
+docset: aem65
+
 ---
 
-# Content Fragments - Delete Considerations {#content-fragments-delete-considerations}
-
->[!CAUTION]
->
->Some Content Fragment functionality requires the application of [AEM 6.4 Service Pack 2 (6.4.2.0) or later](/help/release-notes/sp-release-notes.md).
+# Content Fragments - Delete Considerations{#content-fragments-delete-considerations}
 
 ## Permissions - Delete or Not Delete {#permissions-delete-or-not-delete}
 
@@ -33,7 +31,7 @@ With regards to delete permissions, Content Fragments must be considered at two 
    Basic operation of the content fragment editor requires that such transient sub-elements can be deleted. For example, when manipulating variations; also when editing metadata or managing associated content.
 
     * **Use case**: A user who needs to edit/update a content fragment - **without being allowed to delete an entire fragment**.
-    * **Permissions**: See [Permissions Required for Editor Functionality Only](content-fragments-delete.md#permissions-required-for-editor-functionality-only).
+    * **Permissions**: See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
@@ -57,7 +55,7 @@ The permissions needed to edit/update a fragment need to be applied to either th
 
 For example, a folder that will hold all content fragments, such as:
 
-* `/content/dam/contentfragments`
+`/content/dam/contentfragments`
 
 >[!CAUTION]
 >
@@ -73,15 +71,15 @@ The permissions prerequisite to allowing a specific user and/or group to edit/up
 
 * For the Content Fragment nodes or folders:
 
-    * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* For the `jcr:content` node of all Content Fragments:
+* For the `jcr:content`node of all Content Fragments:
 
-    * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
 
 * For all nodes below `jcr:content` of all Content Fragments:
 
-    * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`, `jcr:removeNode`
 
 These `remove` privileges must be [administered using Access Control Lists, within CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
@@ -89,5 +87,5 @@ The `add` and `modify` privileges can also be administered in CRXDE Lite, or usi
 
 For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
 
-![cf-delete-03](assets/cf-delete-03.png)
+![](assets/cf-delete-03.png)
 

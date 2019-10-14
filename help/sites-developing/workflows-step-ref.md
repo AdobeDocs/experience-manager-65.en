@@ -434,11 +434,11 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
     * `SERVICE_PROPERTY_LABEL` field: Use this field to specify the name of the participant chooser. The name appears in a list of available participant choosers in the **Dynamic Participant Step** properties.
 
-    * `getParticipant` method: Returns the the dynamically resolved Principal id as a `String` value.
+    * `getParticipant` method: Returnsthedynamically resolved Principal id as a `String` value.
 
   >[!CAUTION]
   >
-  >The `getParticipant` method returns the the dynamically resolved Principal id. This can be either a group id or user id.
+  >The `getParticipant` method returnsthedynamically resolved Principal id. This can be either a group id or user id.
   >
   >
   >However, a group id can only be used for a **Participant Step**, when a list of participants is returned. For a **Dynamic Participant Step** an empty list is returned and this cannot be used for delegation.
@@ -523,7 +523,7 @@ To configure the step, edit and use the following tabs:
 Create a form for use with a **Form Participant Step** as normal. However, forms for a Form Participant Step must have the following configurations:
 
 * The **Start of Form** component must have the **Action Type** property set to `Edit Workflow Controlled Resource(s)`.
-* The **Start of Form** component must have a value for the the `Form Identifier` property.
+* The **Start of Form** component must have a value forthe`Form Identifier` property.
 * The form components must have the **Element Name** property set to the path of the node where the field data is stored. The path must locate a node in the workflow payload content. The value uses the following format:
 
   `./jcr:content/path_to_node`

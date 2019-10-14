@@ -3,13 +3,17 @@ title: Imaging Transcoding Library
 seo-title: Imaging Transcoding Library
 description: Learn how to configure and use Adobe's Imaging Transcoding Library, an image processing solution that can perform core image-handling functions, including encoding, transcoding, image resampling, and image resizing.
 seo-description: Learn how to configure and use Adobe's Imaging Transcoding Library, an image processing solution that can perform core image-handling functions, including encoding, transcoding, image resampling, and image resizing.
-uuid: 5a458026-1151-424f-8900-563fb86f7b0e
-contentOwner: AG
+uuid: fb0e67a4-ef88-4c08-b1d9-248bb6990ade
+contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 674af52d-60de-4112-913e-6cfd2bfeceb9
+topic-tags: administering
+content-type: reference
+discoiquuid: beecbadd-d31f-4bc6-a99a-491ca579c8d8
+docset: aem65
+
 ---
 
-# Imaging Transcoding Library {#imaging-transcoding-library}
+# Imaging Transcoding Library{#imaging-transcoding-library}
 
 Adobe's Imaging Transcoding Library is a proprietary image processing solution that can perform core image-handling functions, including:
 
@@ -34,7 +38,15 @@ In addition to supporting a wide range of file formats and profiles, Imaging Tra
 
 ## Supported MIME types {#supported-mime-types}
 
-See [supported MIME types article](assets-formats.md#supported-image-transcoding-library), for a list of formats that ITL supports.
+Imaging Transcoding Library supports the following MIME types:
+
+* JPG/JPEG
+* PNG (8 and 16 Bit)
+* GIF
+* BMP
+* TIFF/Compressed TIFF (apart from 32 Bit Tiffs and PTiffs)
+* ICO
+* ICN
 
 ## Supported Platforms {#supported-platforms}
 
@@ -45,7 +57,7 @@ Imaging Transcoding Library is currently available for the following operating s
 
 >[!NOTE]
 >
->Currently, only RHEL 7 and CentOS 7 are supported for Linux distros. Mac OS and other &ast;nix distributions (for example, Debian and Ubuntu) are not supported.
+>Currently, only RHEL 7 and CentOS 7 are supported for Linux distros. Mac OS and other &#42;nix distributions (for example, Debian and Ubuntu) are not supported.
 
 ## Usage {#usage}
 
@@ -61,14 +73,11 @@ The command line arguments for Imaging Transcoding Library can include the follo
  -resize
 ```
 
-You can configure the following options for the` `-resize` `parameter:`
+: `You can configure the following options for the` `-resize` `parameter:`
 
 * `X`: `Works similar to AEM. For example -resize 319.`
-
 * `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
-
 * `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
-
 * `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
 
 ```
@@ -79,18 +88,20 @@ You can configure the following options for the` `-resize` `parameter:`
 
 ## Configuring Imaging Transcoding Library {#configuring-imaging-transcoding-library}
 
-1. When executing the SWitchEngine command, create a conf file to point to the libraries using the following commands:
-    * cd /etc/ld.so.conf.d
-    * touch SWitchEngineLibs.conf
-    * vi SWitchEngineLibs.conf
-    * cat SWitchEngineLibs.conf
-       /opt/aem/author/crx-quickstart/launchpad/felix/bundle545/data/binaries
-    * ldconfig
+1. When executing the `SWitchEngine` command, create a conf file to point to the libraries using the following commands:
 
-    Only for the bash file, configure `LD_LIBRARY_PATH` using the following steps:
+    1. cd /etc/ld.so.conf.d
+    1. touch SWitchEngineLibs.conf
+    1. vi SWitchEngineLibs.conf
+    1. cat SWitchEngineLibs.conf  
+       /opt/aem/author/crx-quickstart/launchpad/felix/bundle545/data/binaries
+    1. ldconfig
+
+   Only for the bash file, configure `LD_LIBRARY_PATH` using the following steps.
 
     * `vi ~/.bash_profile`
     * Add " `export LD_LIBRARY_PATH`=**.**"
+    
     * Save and exit.
 
 1. Fetch the value of `LD_LIBRARY_PATH` using the following command:
@@ -101,39 +112,63 @@ You can configure the following options for the` `-resize` `parameter:`
 
    If the value is not set to "." restart the session.
 
-1. Download the <a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg">Imaging transcoding library package</a> (version 1.4) and install it using Crx Package Manager. Supported Platforms are RHEL7 and CentOS7.
+1. Download the Imaging Transcoding Library package and install it using the Package Manager.
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
-1. Open the **[!UICONTROL Process Thumbnails]** workflow process step. In the **[!UICONTROL Thumbnails]** tab, add the MIME types for which you want to skip the default thumbnail generation process in the **[!UICONTROL Skip Mime Types]** list. For example, if you want to create thumbnails for a JPEG image using Imaging Transcoding Library, specify `image/jpeg` in the [!UICONTROL Skip Mime Types] field.
+<table>
+ <tbody> 
+  <tr> 
+   <td><p><strong>Package Version</strong></p> </td> 
+   <td><p><strong>Package Share Link</strong></p> </td> 
+   <td><p><strong>Supported Platforms</strong></p> </td> 
+  </tr> 
+  <tr> 
+   <td><p>1.4<br /> </p> </td> 
+   <td><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg">Imaging transcoding library package</a></td> 
+   <td><p>RHEL 7, CentOS7</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
-   ![skip_mime_types-1](assets/skip_mime_types-1.png)
+<table>
+ <tbody> 
+  <tr> 
+   <td><p>TBD</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
-1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME types for which you want to skip the default web rendition generation process in **[!UICONTROL Skip List]**. For example, if you skipped MIME type `image/jpeg` in step 6, add `image/jpeg` to the skip list.
+1. Tap/click the AEM logo, and go to **Tools** &gt; **Workflow** &gt; **Models**.
+1. From the **Workflow Models** page, open the **DAM Update Asset** workflow model in edit mode.
+1. Open the **Process Thumbnails** workflow process step. In the **Thumbnails** tab, add the MIME types for which you want to skip the default thumbnail generation process in the **Skip Mime Types** list. For example, if you want to create thumbnails for a JPEG image using Imaging Transcoding Library, specify `skip:image/jpeg` in the **Skip Mime Types** field.
 
-   ![skip_web_renditions](assets/skip_web_renditions.png)
+   ![](assets/skip_mime_types-1.png)
 
-1. Open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step navigate to the **[!UICONTROL Arguments]** tab. In the **[!UICONTROL Mime Types]** list, add the MIME types you want Imaging Transcoding Library to process. For example, if you skipped the MIME type `image/jpeg` in step 6, add image/jpeg to the **[!UICONTROL Mime Types]** list.
+1. In the **Web Enabled Image** tab, add the MIME types for which you want to skip the default web rendition generation process in **Skip List**. For example, if you skipped MIME type `image/jpeg` in step 6, add `image/jpeg` to the skip list.
 
-   ![process_arguments](assets/process_arguments.jpg)
+   ![](assets/skip_web_renditions.png)
 
-1. [!UICONTROL Toggle side panel] and from the list of steps add **[!UICONTROL SWitchEngine Handler]**. Add commands to [!UICONTROL SWitchEngine Handler] using one of the following ways:
+1. Open the **EPS thumbnails (powered by ImageMagick)** step navigate to the **Arguments** tab. In the **Mime Types** list, add the MIME types you want Imaging Transcoding Library to process. For example, if you skipped the MIME type `image/jpeg` in step 6, add image/jpeg to the **Mime Types** list.
 
-    * Based on custom requirements, tune the parameters of commands that you specify. For example, if you want to preserve the color profile of your JPEG image, add the following commands to the **[!UICONTROL Commands]** list:
+   ![](assets/process_arguments.jpg)
+
+1. Add commands to SwitchEngine Handler using one of the following ways:
+
+    * Based on custom requirements, tune the parameters of commands that you specify. For example, if you want to preserve the color profile of your JPEG image, add the following commands to the **Commands** list:
 
     1. `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
     1. `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
     1. `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
     1. `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
 
-   ![chlimage_1-199](assets/chlimage_1-199.png)
+   ![](assets/chlimage_1-63.png)
 
     * Generate thumbnails from an intermediate rendition using a single command. The intermediate rendition acts as source to generate static and web renditions. This method is faster than the earlier method. However, you cannot apply custom parameters to thumbnails using this method.
 
-   ![chlimage_1-200](assets/chlimage_1-200.png)
+   ![](assets/chlimage_1-64.png)
 
-   To generate web renditions, configure parameters in the **[!UICONTROL Web-Enabled Image]** tab as depicted in the following image.
+   To generate web renditions, configure parameters in the** Web-Enabled Image** tab as depicted in the following image.
 
-   ![web_enabled_imagetab](assets/web_enabled_imagetab.png)
+   ![](assets/web_enabled_imagetab.png)
 
 1. Save the workflow.
+

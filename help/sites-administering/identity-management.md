@@ -182,7 +182,7 @@ A workflow is needed to implement the actions related to the states. For example
 
 ## Profiles and User Accounts {#profiles-and-user-accounts}
 
-Profiles are stored in the Content Repository as part of the the [user account](/help/sites-administering/user-group-ac-admin.md).
+Profiles are stored in the Content Repository as part ofthe[user account](/help/sites-administering/user-group-ac-admin.md).
 
 The profile can be found under `/home/users/geometrixx`:
 

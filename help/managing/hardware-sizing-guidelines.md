@@ -3,15 +3,17 @@ title: Hardware Sizing Guidelines
 seo-title: Hardware Sizing Guidelines
 description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
 seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
-uuid: 83f928e3-986b-461b-8b3e-8faacd11172e
+uuid: 395f9869-17c4-4b9b-99f8-d35a44dd6256
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
-discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
+discoiquuid: 8893306f-4bc0-48eb-8448-36d0214caddf
+docset: aem65
+
 ---
 
-# Hardware Sizing Guidelines {#hardware-sizing-guidelines}
+# Hardware Sizing Guidelines{#hardware-sizing-guidelines}
 
 These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project. Sizing estimates depend on the architecture of the project, the complexity of the solution, expected traffic and the project requirements. This guide helps you to determine the hardware needs for a specific solution, or to find an upper and lower estimate for the hardware requirements.
 
@@ -36,7 +38,8 @@ Basic factors to consider are (in this order):
 
 * **Hard Drive**
 
-    * at least two or three times larger than the repository size
+    * at least two or three times larger than the repository size**
+      **
 
 * **Memory**
 
@@ -95,43 +98,39 @@ Consider a setup of redundant arrays of independent disks (RAID, e.g. RAID10) fo
 >
 >The temporary directory of a production instance should have at least 6 GB of available space.
 
-### Virtualization {#virtualization}
+#### Virtualization {#virtualization}
 
 AEM runs well in virtualized environments, but there can be factors such as CPU or I/O that cannot be directly equated to physical hardware. A recommendation is to choose a higher I/O speed (in general) as this is a critical factor in most cases. Benchmarking your environment is necessary to get a precise understanding of what resources will be required.
 
-### Parallelization of AEM Instances {#parallelization-of-aem-instances}
+#### Parallelization of AEM Instances {#parallelization-of-aem-instances}
 
-#### Fail Safeness {#fail-safeness}
+**Fail Safeness **
 
 A fail-safe website is deployed on at least two separate systems. If one system breaks down, an other system can take over and thus compensate the system failure.
 
-#### System resources scalability {#system-resources-scalability}
+**System resources scalability**
 
 While all systems are running, an increased computational performance is available. That additional performance is not necessarily linear with the number of cluster nodes as the relationship is highly dependent on the technical environment; please see the [Cluster documentation](/help/sites-deploying/recommended-deploys.md) for more information.
 
 The estimation of how many cluster nodes are necessary is based on the basic requirements and specific use-cases of the particular web project:
 
 * From the perspective of fail-safeness it is necessary to determine, for all environments, how critical failure is and the failure compensation time based on how long it takes for a cluster node to recover.
-* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) for details.
+* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) for details.
 
 ## Author environment specific calculations {#author-environment-specific-calculations}
 
 For benchmarking purposes, Adobe has developed some benchmark tests for standalone author instances.
 
 * **Benchmark test 1**
-
   Calculate maximum throughput of a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages all of a similar nature. The steps involved were logging in to the site, creating a page with a SWF and Image/Text, adding a tag cloud, then activating the page.
 
     * **Result**
-
       Maximum throughput for a simple page creation exercise such as above (considered as one transaction) was found to be 1730 transactions/hour.
 
 * **Benchmark test 2**
-
   Calculate maximum throughput when load profile has a mix of fresh page creation (10%), modification of an existing page (80%) and creation then modification of a page in succession (10%). The complexity of the pages remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of the same complexity as defined in benchmark test 1.
 
     * **Result**
-
       Maximum throughput for such a mix operation scenario was found to be 3252 transactions per hour.
 
 >[!NOTE]
@@ -151,19 +150,15 @@ In the author environment the number of authors that work in parallel and the lo
 For such scenarios Adobe executed benchmark tests on a two node shared-nothing cluster of author instances.
 
 * **Benchmark test 1a**
-
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput with a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages, all of a similar nature.
 
     * **Result**
-
       Maximum throughput for a simple page creation exercise, such as above, (considered as one transaction) is found to be 2016 transactions/hour. This is an increase of approximately 16% when compared to a standalone author instance for the same benchmark test.
 
 * **Benchmark test 2b**
-
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput when the load profile has a mix of fresh page creation (10%), modification of an existing pages (80%) and creation and modification a page in succession (10%). The complexity of the page remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of complexity the same as defined in benchmark test 1.
 
     * **Result**
-
       Maximum throughput for such a mixed operation scenario was found to be 6288 transactions/hour. This is an increase of approximately 93% when compared to a standalone author instance for the same benchmark test.
 
 >[!NOTE]
@@ -269,20 +264,20 @@ The variables in the equation are as follows:
 If you have a more complex website, you also need more powerful web servers so that AEM can answer a request in an acceptable time.
 
 * Complexity below 4:
-    * 1024 MB JVM RAM&ast;
-    * Low to mid-performance CPU
+  • 1024 MB JVM RAM&#42;
+  • Low to mid-performance CPU
 
 * Complexity between 4 and 8:
-    * 2048 MB JVM RAM&ast;
-    * Mid to high-performance CPU
+  • 2048 MB JVM RAM&#42;
+  • Mid to high-performance CPU
 
 * Complexity above 8:
-    * 4096 MB JVM RAM&ast;
-    * High to high-end-performance CPU
+  • 4096 MB JVM RAM&#42;
+  • High to high-end-performance CPU
 
 >[!NOTE]
 >
->&ast; Reserve enough RAM for your operating system in addition to the memory required for your JVM.
+>&#42; Reserve enough RAM for your operating system in addition to the memory required for your JVM.
 
 ## Additional use-case specific calculations {#additional-use-case-specific-calculations}
 
@@ -330,3 +325,4 @@ See
 
 * [Community Content Storage](/help/communities/working-with-srp.md)
 * [Recommended Topologies for Communities](/help/communities/topologies.md)
+

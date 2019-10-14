@@ -575,7 +575,7 @@ If you are having trouble integrating AEM with Dynamic Media Classic, see the fo
 
 **If your digital asset publishing to Dynamic Media Classic fails:**
 
-* Check that the the asset you are trying to upload is in the **[!UICONTROL CQ target]** folder (you specify this folder in the Dynamic Media Classic cloud configuration).
+* Check thattheasset you are trying to upload is in the **[!UICONTROL CQ target]** folder (you specify this folder in the Dynamic Media Classic cloud configuration).
 * If it is not, you need to configure the cloud configuration in **[!UICONTROL Page Properties]** for that page to allow uploading to the **[!UICONTROL CQ adhoc]** folder.
 
 * Check the logs for any information.

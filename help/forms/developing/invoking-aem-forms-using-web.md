@@ -249,7 +249,7 @@ Here is the correlation between transmission types and the field from which you 
 
 >[!NOTE]
 >
->JAX WS-based applications that use the MTOM transmission protocol are limited to 25MB of sent and received data. This limitation is due to a bug in JAX-WS. If the combined size of your sent and received files exceeds 25MB, use the the SwaRef transmission protocol instead of the MTOM one. Otherwise, there is a possibility of an `OutOfMemory`* exception.*
+>JAX WS-based applications that use the MTOM transmission protocol are limited to 25MB of sent and received data. This limitation is due to a bug in JAX-WS. If the combined size of your sent and received files exceeds 25MB, usetheSwaRef transmission protocol instead of the MTOM one. Otherwise, there is a possibility of an `OutOfMemory`* exception.*
 
 **MTOM transmission of base64-encoded byte arrays**
 
@@ -740,7 +740,7 @@ When this process is invoked, it performs the following actions:
 
 >[!NOTE]
 >
->JAX WS-based applications that use the MTOM transmission protocol are limited to 25MB of sent and received data. This limitation is due to a bug in JAX-WS. If the combined size of your sent and received files exceeds 25MB, use the the SwaRef transmission protocol instead of the MTOM one. Otherwise, there is a possibility of an `OutOfMemory`* exception.*
+>JAX WS-based applications that use the MTOM transmission protocol are limited to 25MB of sent and received data. This limitation is due to a bug in JAX-WS. If the combined size of your sent and received files exceeds 25MB, usetheSwaRef transmission protocol instead of the MTOM one. Otherwise, there is a possibility of an `OutOfMemory`* exception.*
 
 The discussion here is about using MTOM withthin a Microsoft .NET project to invoke AEM Forms services. The .NET framework used is 3.5, and the development environment is Visual Studio 2008. If you have Web Service Enhancements (WSE) installed on your development computer, remove it. The .NET 3.5 framework supports a SOAP framework named Windows Communication Foundation (WCF). When invoking AEM Forms by using MTOM, only WCF (not WSE) is supported.
 
