@@ -17,9 +17,9 @@ The key features, highlights, and enhancements done in AEM 6.5 Assets are covere
 
 ## Adobe Asset Link {#adobe-asset-link}
 
-Adobe Asset Link in Creative Cloud for enterprise streamlines collaboration between creatives and marketers in the content creation process. It is a new native capability in Creative Cloud for enterprise, providing a connection to AEM Assets directly from Adobe Photoshop, Adobe Illustrator, or Adobe InDesign — without leaving these tools.  
+Adobe Asset Link in Creative Cloud for enterprise streamlines collaboration between creatives and marketers in the content creation process. It is a new native capability in Creative Cloud for enterprise, providing a connection to AEM Assets directly from Adobe Photoshop, Adobe Illustrator, or Adobe InDesign — without leaving these tools.
 
-To learn more about the capability, prerequisites, and how to access it, see the [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) page.  
+To learn more about the capability, prerequisites, and how to access it, see the [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) page.
 
 ## Enhanced Smart Tags (powered by Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
@@ -99,7 +99,7 @@ AEM 6.5 delivers significant Asset reporting enhancements:
 
 ## AEM desktop app {#aem-desktop-app}
 
-AEM desktop app is updated to version 1.8, which is compatible with AEM 6.5. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.  
+AEM desktop app is updated to version 1.8, which is compatible with AEM 6.5. The full list of changes for AEM desktop app is provided in a dedicated [AEM desktop app release notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) document.
 Here is a list of AEM desktop app highlights since AEM 6.3 was released:
 
 * Ability to upload hierarchical folders in the background.
@@ -157,12 +157,8 @@ See [Smart Imaging](../assets/imaging-faq.md) documentation to learn more.
 ### Emerging Media and Viewer Enhancements {#emerging-media-amp-viewer-enhancements}
 
 * New viewers are supported, providing better, immersive experiences for the user.
-* Panoramic Viewer helps engage the user and provide ability to better experience room scenes, properties, locations, and landscapes. See [Panoramic Images](../assets/panoramic-images.md) documentation to learn.  
+* Panoramic Viewer helps engage the user and provide ability to better experience room scenes, properties, locations, and landscapes. See [Panoramic Images](../assets/panoramic-images.md) documentation to learn.
 
 * VR Viewer provides immersive experience for properties, locations, and landscapes.
 * Vertical Image Viewer optimized for product imagery.
 * Keyboard accessibility improvements.
-
-### 3D and integration with Dimension CC {#d-and-integration-with-dimension-cc}
-
-Integration with [Adobe Dimension CC](https://www.adobe.com/products/dimension.html) for more seamless 3D workflow has been introduced. To learn more, see [Working with 3D assets](../assets/assets-3d.md) documentation.

@@ -21,10 +21,10 @@ This section describes a use case example that emphasizes on creating and managi
 
 Before you start this use case, make sure you understand how to:
 
-* ** [Create and Manage Channels](/help/help/screens/managing-channels.md)**
-* ** [Create and Manage Locations](/help/help/screens/managing-locations.md)**
-* ** [Create and Manage Schedules](/help/help/screens/managing-schedules.md)**
-* ** [Device Registration](/help/help/screens/device-registration.md)**
+* ** [Create and Manage Channels](/help/screens/managing-channels.md)**
+* ** [Create and Manage Locations](/help/screens/managing-locations.md)**
+* ** [Create and Manage Schedules](/help/screens/managing-schedules.md)**
+* ** [Device Registration](/help/screens/device-registration.md)**
 
 ### Primary Actors {#primary-actors}
 
