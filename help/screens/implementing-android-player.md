@@ -1,19 +1,46 @@
 ---
 title: Implementing Android Player
 seo-title: Implementation of Android Player
-description: Follow this page to learn implementation of Android Watchdog, a solution to recover the player from crashes.
-seo-description: Follow this page to learn implementation of Android Watchdog, a solution to recover the player from crashes.
-uuid: 37527a6a-dcc5-4256-abeb-e1f95ff80be4
+description: Follow this page to learn implementation of Android Watchdog, a solution to recover the player from crashes. 
+seo-description: Follow this page to learn implementation of Android Watchdog, a solution to recover the player from crashes. 
+uuid: 17edd093-f1b1-479e-9f25-28c64f1a7223
 contentOwner: Jyotika syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 topic-tags: administering
-discoiquuid: e6ec1641-4323-4c79-b932-b857feb1df21
+discoiquuid: 77fe9d4e-e1bb-42f7-b563-dc03e3af8a60
+docset: aem65
+
 ---
 
-# Implementing Android Player {#implementing-android-player}
+# Implementing Android Player{#implementing-android-player}
 
-A ***Watchdog*** is a solution to recover the player from crashes. An application needs to register itself with the watchdog service and then periodically send messages to the service that it is alive. In case the watchdog service does not receive a keep-alive message within a stipulated time, the service attempts to reboot the device for a clean recovery (if it has the sufficient privileges) or restart the application.
+This section describes configuring Android player. It provides information of the configuration file and the options available and recommendations as to which settings to use for development and testing.
+
+Additionally,**Watchdog** is a solution to recover the player from crashes. An application needs to register itself with the watchdog service and then periodically send messages to the service that it is alive. In case the watchdog service does not receive a keep-alive message within a stipulated time, the service attempts to reboot the device for a clean recovery (if it has the sufficient privileges) or restart the application.
+
+## Installing Android Player {#installing-android-player}
+
+To implement Android Player for AEM Screens, please install Android Player for AEM Screens.
+
+Visit the [**AEM 6.4 Player Downloads**](https://download.macromedia.com/screens/) page.
+
+### Ad-Hoc Method {#ad-hoc-method}
+
+The Ad-Hoc method allows you to install the latest Android Player (*.exe*). Visit [**AEM 6.4 Player Downloads**](https://download.macromedia.com/screens/) page.
+
+Once you download the application, follow the steps on the player to complete the ad-hoc installation:
+
+1. Long-press on the top left corner to open the admin panel.
+1. Navigate to **Configuration** from the left action menu and enter the location (address) of the AEM instance you wish to connect to and click **Save**.
+
+1. Navigate to the **Device** **Registration** link from the left action menu to check the status of the the device registration process.
+
+>[!NOTE]
+>
+>If the **State** is **REGISTERED**, you will notice the **Device id** field will be populated.
+>
+>If the **State** is **UNREGISTERED**, you can use the **Token** to register the device.
 
 ## Implementing Android Watchdog {#implementing-android-watchdog}
 
@@ -46,7 +73,7 @@ The cross-Android watchdog service is implemented as a cordova plugin using *Ala
 
 The following diagram shows the implementation of watchdog service:
 
-![chlimage_1-43](assets/chlimage_1-43.png)
+![](assets/chlimage_1-31.png)
 
 **1. Initialization** At the time of initialization of the cordova plugin, permissions are checked to see if we have system privileges and thus the Reboot permission. If these two criteria are met, a pending Intent for Reboot is created, otherwise a pending Intent to restart the application (based on its Launch Activity) is created.
 

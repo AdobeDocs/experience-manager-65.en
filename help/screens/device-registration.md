@@ -3,12 +3,14 @@ title: Device Registration
 seo-title: Device Registration
 description: This page describes the device registration process in an AEM Screens project.
 seo-description: This page describes the device registration process in an AEM Screens project.
-uuid: babf0de1-1f39-4e22-82aa-ce7fa7052659
+uuid: 5365e506-1641-4a0c-b34d-c39da02f700b
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/6.5/SCREENS
 content-type: reference
 topic-tags: administering
-discoiquuid: a1534cfd-66a1-4e28-8938-e09a24dec8ee
+discoiquuid: 523084f6-bd71-4daf-95b7-fc4c481f76dc
+docset: aem65
+
 ---
 
 # Device Registration{#device-registration}
@@ -24,19 +26,18 @@ The device registration process is done on 2 separate machines:
 
 >[!NOTE]
 >
->Once you download the latest Windows Player (*.exe*), from [**AEM 6.5 Player Downloads**](https://download.macromedia.com/screens/) page, follow the steps on the player to complete the ad-hoc installation:
+>Once you download the latest Windows Player (*.exe*), from [**AEM 6.4 Player Downloads**](https://download.macromedia.com/screens/) page, follow the steps on the player to complete the ad-hoc installation:
 >
 >1. Long-press on the top left corner to open the admin panel.
 >1. Navigate to **Configuration** from the left action menu and enter the location address of the AEM instance in **Server** and click **Save**.
->
 >1. Click on the **Registration** link from the left action menu and the steps below to complete the device registation process.
 >
 
-![screen_shot_2018-11-26at12118pm](assets/screen_shot_2018-11-26at12118pm.png)
+![](assets/screen_shot_2018-11-26at12118pm.png)
 
 1. On your device, start the AEM Screens Player. The registration UI is shown.
 
-   ![screen_shot_2018-11-26at104230am](assets/screen_shot_2018-11-26at104230am.png)
+   ![](assets/screen_shot_2018-11-26at104230am.png)
 
 1. In AEM, navigate to the **Devices** folder of your project.
 
@@ -46,32 +47,32 @@ The device registration process is done on 2 separate machines:
 
 1. Tap/click the **Device Manager** button in the action bar.
 
-   ![screen_shot_2018-11-26at104702am](assets/screen_shot_2018-11-26at104702am.png)
+   ![](assets/screen_shot_2018-11-26at104702am.png)
 
 1. Tap/click the **Device Registration** button on the top right.
 
-   ![screen_shot_2018-11-26at104815am](assets/screen_shot_2018-11-26at104815am.png)
+   ![](assets/screen_shot_2018-11-26at104815am.png)
 
 1. Select the required device (same as step 1) and tap/click **Register Device**.
 
-   ![screen_shot_2018-11-26at105112am](assets/screen_shot_2018-11-26at105112am.png)
+   ![](assets/screen_shot_2018-11-26at105112am.png)
 
 1. In AEM, wait for the device to send its registration code.
 
-   ![screen_shot_2018-11-26at105150am](assets/screen_shot_2018-11-26at105150am.png)
+   ![](assets/screen_shot_2018-11-26at105150am.png)
 
 1. In your device, check the **Registration Code**.
 
-   ![screen_shot_2018-11-26at105227am](assets/screen_shot_2018-11-26at105227am.png)
+   ![](assets/screen_shot_2018-11-26at105227am.png)
 
 1. If the **Registration Code** is the same on both machines, tap/click **Validate** button in AEM, as shown in the step (6).
 1. Set the desired name for the device, and click** Register**.
 
-   ![screen_shot_2018-11-26at105357am](assets/screen_shot_2018-11-26at105357am.png)
+   ![](assets/screen_shot_2018-11-26at105357am.png)
 
 1. Tap/click** Finish** to complete the registration process.
 
-   ![screen_shot_2018-11-26at105456am](assets/screen_shot_2018-11-26at105456am.png)
+   ![](assets/screen_shot_2018-11-26at105456am.png)
 
    >[!NOTE]
    >
@@ -81,7 +82,7 @@ The device registration process is done on 2 separate machines:
 
    If you click **Finish**, you will need to assign the device to a display.
 
-   ![screen_shot_2018-11-26at105740am](assets/screen_shot_2018-11-26at105740am.png)
+   ![](assets/screen_shot_2018-11-26at105740am.png)
 
    >[!NOTE]
    >
@@ -93,23 +94,23 @@ If you have not assigned the device to a display, follow the steps below to assi
 
 1. Select the device and click **Assign Device** from the action bar.
 
-   ![screen_shot_2018-11-26at111026am](assets/screen_shot_2018-11-26at111026am.png)
+   ![](assets/screen_shot_2018-11-26at111026am.png)
 
 1. Select the path of the display in **Display/Device Config Path**.
 
-   ![screen_shot_2018-11-26at111252am](assets/screen_shot_2018-11-26at111252am.png)
+   ![](assets/screen_shot_2018-11-26at111252am.png)
 
 1. Click **Assign** when you select the path.
 
-   ![screen_shot_2018-11-26at111722am](assets/screen_shot_2018-11-26at111722am.png)
+   ![](assets/screen_shot_2018-11-26at111722am.png)
 
 1. Click **Finish** once the device is assigned successfully, as shown in the figure below.
 
-   ![screen_shot_2018-11-26at112041am](assets/screen_shot_2018-11-26at112041am.png)
+   ![](assets/screen_shot_2018-11-26at112041am.png)
 
    Additionally, you can view the display dashboard on clicking **Finish**.
 
-   ![screen_shot_2018-11-26at112154am](assets/screen_shot_2018-11-26at112154am.png)
+   ![](assets/screen_shot_2018-11-26at112154am.png)
 
 ## Limitations on Device Registration  {#limitations-on-device-registration}
 
