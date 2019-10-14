@@ -3,17 +3,19 @@ title: Assignments Essentials
 seo-title: Assignments Essentials
 description: Assignments feature overview for enablement communities
 seo-description: Assignments feature overview for enablement communities
-uuid: 8310decf-174d-4e93-8c92-4a9583077b7a
+uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
+discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
+docset: aem65
+
 ---
 
-# Assignments Essentials {#assignments-essentials}
+# Assignments Essentials{#assignments-essentials}
 
-This page provides the essential information for working with the assignments feature of [enablement community](overview.md#enablement-community) sites.
+Read on to know about the essential information for working with the assignments feature of [enablement community](/help/communities/overview.md#enablement-community) sites.
 
 The assignments feature is the ability to assign enablement resources and learning paths to members of enablement communities.
 
@@ -26,11 +28,11 @@ The assignments feature is the ability to assign enablement resources and learni
    <td>social/enablement/components/hbs/myassigned</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
    <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
@@ -43,14 +45,14 @@ The assignments feature is the ability to assign enablement resources and learni
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>See <a href="assignments.md">Assignments Feature</a></td>
+   <td>see <a href="/help/communities/assignments.md">Assignments Feature</a></td>
   </tr>
  </tbody>
 </table>
 
 ### Completion and Success Status {#completion-and-success-status}
 
-Completion and Success status are used in reports as well as status banners on Assignments.
+Completion and Success status are used in reports and status banners on Assignments.
 
 Completion Status:
 
@@ -78,12 +80,13 @@ The only possible Combinations of Completion and Success Status are:
 
 ### Assignments Function {#assignments-function}
 
-A community site structure that includes the [Assignments function](functions.md#assignments-function), includes a configured ` [assignments](assignments.md)` component.
+A community site structure that includes the [Assignments function](/help/communities/functions.md#assignments-function), includes a configured ` [assignments](/help/communities/assignments.md)` component.
 
 ### Reference APIs {#reference-apis}
 
-* [Enablement API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
+* [Enablement API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [Reporting API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [Reporting API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+

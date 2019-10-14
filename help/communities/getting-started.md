@@ -3,27 +3,29 @@ title: Getting Started with AEM Communities
 seo-title: Getting Started with AEM Communities
 description: A tutorial on getting started with AEM Communities
 seo-description: A tutorial on getting started with AEM Communities
-uuid: 6aeb8253-f85f-4812-9985-8fbc83006078
+uuid: b7adf7c0-5563-4e44-bb53-04a566f271d5
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4f4c73eb-281e-4dfb-9cb0-2341d5ee94ae
+discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
+docset: aem65
+
 ---
 
-# Getting Started with AEM Communities {#getting-started-with-aem-communities}
+# Getting Started with AEM Communities{#getting-started-with-aem-communities}
 
 AEM Communities allows companies to create dedicated branded community experiences from a library of site templates. Forums, groups, blogs, file sharing, calendars, activity feeds, and extended user profiles can be integrated into your website to foster interactions between propsects, customers, and companies.
 
-Following is a tutorial on quickly setting up an [engagement community](overview.md#engagement-community) for demonstration or development purposes.
+Following is a tutorial on quickly setting up an [engagement community](/help/communities/overview.md#engagement-community) for demonstration or development purposes.
 
-For a tutorial on quickly setting up an [enablement community](overview.md#enablement-community), visit [Getting Started with AEM Communities for Enablement](getting-started-enablement.md).
+For a tutorial on quickly setting up an [enablement community](/help/communities/overview.md#enablement-community), visit [Getting Started with AEM Communities for Enablement](/help/communities/getting-started-enablement.md).
 
-* [Initial Setup](setup.md)
+* [Initial Setup](/help/communities/setup.md)
 
-* [Author a New Community Site](create-site.md)
+* [Author a New Community Site](/help/communities/create-site.md)
 
-* [Experience the Published Site](published-site.md)
+* [Experience the Published Site](/help/communities/published-site.md)
 
-* [Authoring Nested Groups](nested-groups.md)
+* [Authoring Nested Groups](/help/communities/nested-groups.md)
 
