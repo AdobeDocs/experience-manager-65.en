@@ -21,7 +21,7 @@ Out of the box, forms portal components are not available for use. To make the c
     1. In the page header, tap ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Design** to open the page in Design mode.
     1. Tap any component (with a blue border) and then tap ![field-level](assets/field-level.png) to select the paragraph system containing the current component.
     1. In the paragraph system, tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the paragraph system.
-    1. From the list of **[!UICONTROL **Allowed Components**]**, enable checkboxes for **[!UICONTROL **Document Services**]** and **[!UICONTROL **Document Services Predicates**]** components. Tap **[!UICONTROL **OK**]**.
+    1. From the list of **[!UICONTROL Allowed Components]**, enable checkboxes for **[!UICONTROL Document Services]** and **[!UICONTROL Document Services Predicates]** components. Tap **[!UICONTROL OK]**.
 
 1. For the pages using a dynamic template, perform the following steps:
 
