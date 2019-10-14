@@ -49,7 +49,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Install and configure document services](using/install-configure-document-services.md)
     + [Install and configure data capture capabilities](using/installing-configuring-aem-forms-osgi.md)
     + [Install and Configure Forms-centric workflow on OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
-    + [Install and configure Interactive Communications](using/installing-configuring-intreactive-communication-correspondence-management.md)  
+    + [Install and configure Interactive Communications](using/installing-configuring-intreactive-communication-correspondence-management.md)
   + Install AEM Forms on JEE {#jee-installation}
     + [Supported platforms for AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
     + [Install and deploy AEM Forms on JEE using JBoss turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
@@ -63,7 +63,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Prepare to install AEM Forms server cluster](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
     + [Configure AEM Forms on JEE on JBoss cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
     + [Configure AEM Forms on JEE on WebLogic cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
-    + [Configure AEM Forms on JEE on WebSphere cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)  
+    + [Configure AEM Forms on JEE on WebSphere cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
   + Configure AEM Forms {#configure-aem-forms}
     + [Performance tuning of AEM Forms server](using/performance-tuning-aem-forms.md)
     + [Configure adaptive forms cache](using/configure-adaptive-forms-cache.md)
@@ -73,17 +73,17 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Connecting AEM Forms with Adobe LiveCycle](using/aem-livecycle-connector.md)
     + [Configuring AEM Forms to submit form data to an AEM Forms on JEE process](using/submit-form-data-livecycle-process.md)
     + [AEM Desktop App for AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ Upgrade AEM Forms {#upgrade-aem-forms}  
-  + [Available upgrade paths](using/upgrade.md)  
++ Upgrade AEM Forms {#upgrade-aem-forms}
+  + [Available upgrade paths](using/upgrade.md)
   + Upgrade AEM Forms on OSGi {#aem-forms-osgi-upgrade}
     + [Upgrade to AEM 6.5 forms on OSGi](using/upgrade-forms-osgi.md)
     + [Install Compatibility Package](using/compatibility-package.md)
-    + [Migrate AEM Forms assets and documents](using/migration-utility.md)  
-  + Upgrade AEM Forms on JEE {#aem-forms-jee-upgrade}  
+    + [Migrate AEM Forms assets and documents](using/migration-utility.md)
+  + Upgrade AEM Forms on JEE {#aem-forms-jee-upgrade}
     + [Prepare to upgrade AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
     + [Upgrade checklist and planning](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
     + [Upgrade to AEM 6.5 forms on JEE](using/upgrade-forms-jee.md)
-    + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)  
+    + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
     + [Upgrading from LiveCycle ES4 SP1 to Adobe Experience Manager Forms on JEE for JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
     + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for JBoss turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
     + [Upgrading from LiveCycle ES4 SP1 to AEM Forms on JEE for JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
@@ -91,11 +91,11 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Upgrading from LiveCycle ES4 SP1 to AEM Forms on JEE for WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
     + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
     + [Upgrading from LiveCycle ES4 SP1 to AEM Forms on JEE for WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
-+ Manage AEM Forms {#manage-administer-aem-forms}  
++ Manage AEM Forms {#manage-administer-aem-forms}
   + [AEM Forms on OSGi Groups and Privileges](using/forms-groups-privileges-tasks.md)
   + [Create new folders to categorize forms](using/creating-new-folders-categorize-forms.md)
-  + [Searching for forms and assets](using/searching-forms-or-assets.md)  
-  + [Manage form metadata](using/manage-form-metadata.md)  
+  + [Searching for forms and assets](using/searching-forms-or-assets.md)
+  + [Manage form metadata](using/manage-form-metadata.md)
   + [Download an XFA or a PDF form template](using/download-xfa-or-pdf-form.md)
   + [Deleting forms and related resources](using/deleting-forms-related-resources.md)
   + [Getting XDP and PDF documents in AEM Forms](using/get-xdp-pdf-documents-aem.md)
@@ -110,7 +110,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Integration with Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
     + [Document Security](/help/forms/using/document-security-handling-user-data.md)
   + Hardening AEM Forms Environment {#hardening-aem-forms-environment}
-    + [Hardening and Securing AEM forms on OSGi environment](using/hardening-securing-aem-forms-environment.md)  
+    + [Hardening and Securing AEM forms on OSGi environment](using/hardening-securing-aem-forms-environment.md)
     + [General Security Considerations for AEM Forms on JEE](using/general-security-considerations.md)
     + [Hardening Your AEM Forms on JEE Environment](using/hardening-aem-forms-jee-environment.md)
     + [Configuring Secure Administration Settings for AEM Forms on JEE](using/configuring-secure-administration-settings-aem.md)
@@ -139,7 +139,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Introduction to multi-step form sequence](using/introduction-form-sequence.md)
   + [Layout capabilities of adaptive forms](using/layout-capabilities-adaptive-forms.md)
   + [Placeholder text in AEM Forms](using/placeholder-text-in-aem-forms-.md)
-  + [Previewing a form](using/previewing-forms.md)  
+  + [Previewing a form](using/previewing-forms.md)
   + [Reusing adaptive forms](using/reusing-adaptive-forms.md)
   + [Separator component in adaptive forms](using/separator-component-in-adaptive-forms.md)
   + [Apply electronic signatures to a form using scribble signatures](using/signing-forms-using-scribble.md)
@@ -154,7 +154,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Adaptive forms rule editor](using/rule-editor.md)
   + [API to invoke form data model service from adaptive forms](using/invoke-form-data-model-services.md)
   + [Asynchronous submission of adaptive forms](using/asynchronous-submissions-adaptive-forms.md)
-  + [Create an adaptive form using a set of adaptive forms](using/create-adaptive-form-using-adaptive-form-set.md)  
+  + [Create an adaptive form using a set of adaptive forms](using/create-adaptive-form-using-adaptive-form-set.md)
   + [Adaptive Form Templates](using/template-editor.md)
   + [Adaptive Form Expressions](using/adaptive-form-expressions.md)
   + [Generate Document of Record for adaptive forms](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
@@ -257,7 +257,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Adding attachments](using/add-attachments.md)
   + [Working in the offline mode](using/work-offline-mode.md)
   + [Updating general settings](using/update-general-settings.md)
-  + [Troubleshoot AEM Forms app](using/issues-aem-forms-app.md)  
+  + [Troubleshoot AEM Forms app](using/issues-aem-forms-app.md)
 + HTML5 Forms {#html5-forms}
   + [Introduction to HTML5 forms](using/introduction.md)
   + [Getting started with HTML5 forms](using/get-started.md)
@@ -286,12 +286,11 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Enable logging for HTML5 forms](using/enable-logs.md)
   + [Debugging HTML5 forms](using/debug.md)
   + [Scripting support for HTML5 forms](using/scripting-support.md)
-  + [Form set in AEM Forms](using/formset-in-aem-forms.md)  
+  + [Form set in AEM Forms](using/formset-in-aem-forms.md)
 + Letters and Correspondences {#letters-correspondences}
   + [Correspondence Management Overview](using/cm-overview.md)
   + [Layout Design](using/layout-design-details.md)
   + [Data Dictionary](using/data-dictionary.md)
-  + [Document Fragments](using/document-fragments.md)
   + [Create Letter](using/create-letter.md)
   + [Create Correspondence](using/create-correspondence.md)
   + [Remote functions in Expression Builder](using/expression-builder.md)
@@ -308,7 +307,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Custom special characters in Correspondence Management](using/custom-special-characters.md)
   + [Custom watermark in letter PDF preview](using/custom-watermark.md)
   + [Configuring a Correspondence Management solution](using/configuring-a-cm-solution.md)
-  + [Inline condition and repeat in Interactive Communications and letters](using/cm-inline-condition.md)  
+  + [Inline condition and repeat in Interactive Communications and letters](using/cm-inline-condition.md)
   + [Document Fragments](using/lists.md)
   + [Correspondence Management Configuration Properties](using/cm-configuration-properties.md)
 + Integrate AEM Forms with Experience Cloud solutions {#integrate-aem-forms-with-experience-cloud-solutions}
