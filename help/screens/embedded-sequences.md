@@ -43,7 +43,7 @@ Follow the steps below to add an embedded sequence to your channel:
 1. Select the channel where you want to embed a page. For example, **We.Retail In-Store** --&gt; **Channels** --&gt;** Idle Channel**.
 
 1. Click **Edit** from the action bar to open the channel in the editor mode.
-1. Click components icon from the left side bar to add the embedded page. Drag and drop the the **Embedded Sequence** to the editor.
+1. Click components icon from the left side bar to add the embedded page. Drag and dropthe**Embedded Sequence** to the editor.
 1. Double-click the **Embedded Sequence** component to add the channel to your original sequence channel.
 1. Select the **Channel Path** of the channel.
 1. Select the **Duration (ms)** for your embedded channel in the **Sequence** tab. By default, the duration is set to **-1**, that means embedded channel is fully run. If the user specifies a duration, then the subsequence will be interrupted (that is, cut-off) at the specified time.
@@ -90,7 +90,7 @@ Follow the steps below to add an embedded sequence to your channel:
 1. Select the channel where you want to embed a dynamic sequence. For example, **We.Retail In-Store** --&gt; **Channels** --&gt; **Idle Channel**.
 
 1. Click **Edit** from the action bar to open the channel in the editor mode.
-1. Click components icon from the left side bar to add the dynamic embedded sequence. Drag and drop the the **Dynamic** **Embedded Sequence **to the editor.
+1. Click components icon from the left side bar to add the dynamic embedded sequence. Drag and dropthe**Dynamic** **Embedded Sequence **to the editor.
 
 1. Double-click the **Dynamic** **Embedded Sequence **component to add the page to your sequence channel.
 

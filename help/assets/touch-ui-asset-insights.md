@@ -50,7 +50,7 @@ You can view the Asset Insights scores from the metadata page.
 
    >[!NOTE]
    >
-   >Because the Asset Insights feature typically fetches the Solutions data from Adobe Analytics in a periodic manner, the Solutions section may not display the the most recent data. The time period for which the data is displayed depends the schedule of the fetch operation that Asset Insights runs to retrieve Analytics data.
+   >Because the Asset Insights feature typically fetches the Solutions data from Adobe Analytics in a periodic manner, the Solutions section may not displaythemost recent data. The time period for which the data is displayed depends the schedule of the fetch operation that Asset Insights runs to retrieve Analytics data.
 
 1. To view performance statistics for the asset graphically over a period of time, select period in the **Performance Statistics** section. Details, including clicks and impressions are displayed as trend lines of a graph.
 

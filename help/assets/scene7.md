@@ -41,7 +41,7 @@ You can publish digital assets to Dynamic Media Classic as follows:
 
 * [In the classic user interface from the Assets console](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-the-assets-console)
 * [In the classic user interface from an asset](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-an-asset)
-* [In the classic user interface from outside the the CQ Target folder](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-assets-from-outside-the-cq-target-folder)
+* [In the classic user interface from outsidetheCQ Target folder](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-assets-from-outside-the-cq-target-folder)
 
 >[!NOTE]
 >
@@ -328,7 +328,7 @@ By default, AEM searches the folder selected and all sub-folders.
 >* In the classic UI, you can also search for **Flash** and **FXG**. Filtering for these in the touch-optimized UI is currently not supported.
 >
 >* When searching video, you are searching a single rendition. Results return the original rendition (only &ast;.mp4) and the encoded rendition.
->* When searching an adaptive video set, you are searching the the folder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, AEM does not search the sub-folders.
+>* When searching an adaptive video set, you are searchingthefolder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, AEM does not search the sub-folders.
 >
 
 **[!UICONTROL Publish Status]** &ndash; You can filter for assets based on publication status: **[!UICONTROL Unpublished]** or **[!UICONTROL Published]**. If you do not select any **[!UICONTROL Publish Status]**, AEM by default searches all publish statuses.

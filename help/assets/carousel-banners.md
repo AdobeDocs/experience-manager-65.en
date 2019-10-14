@@ -206,7 +206,7 @@ To upload image banners, see [Uploading assets](/help/assets/managing-assets-tou
 1. Continue to add slides until you have added all the images that you want to rotate through in the Carousel Set.
 1. (Optional) Do any of the following:
 
-    * If necessary, drag slide's to re-order images in the the set list.
+    * If necessary, drag slide's to re-order images intheset list.
     * To delete an image, select the image, then tap **Delete Slide **on the toolbar.
 
     * To apply a preset, near the upper-right corner of the page, tap the preset drop-down list, then select a preset to apply to the set at once.

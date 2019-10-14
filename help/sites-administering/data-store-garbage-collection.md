@@ -192,6 +192,6 @@ Below you will find an example of how the missing binaries are reported in the l
 ```
 
 ```xml
-11:32:39.673 WARN [main] MarkSweepGarbageCollector.java:602 Consistency check failure in the the blob store : DataStore backed BlobStore [org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore], check missing candidates in file /tmp/gcworkdir-1467352959243/gccand-1467352959243
+11:32:39.673 WARN [main] MarkSweepGarbageCollector.java:602 Consistency check failure intheblob store : DataStore backed BlobStore [org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore], check missing candidates in file /tmp/gcworkdir-1467352959243/gccand-1467352959243
 ```
 

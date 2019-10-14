@@ -322,7 +322,7 @@ The following example HTML selects from 2 DAM renditions of the same image.
 
 ### Understanding image rendering in AEM {#understanding-image-rendering-in-aem}
 
-To customize image rendering, you should understand the default AEM static image rendering implementation. AEM provides the Image component and an image-rendering servlet that work together to render images for web page. The following sequence of events occur when the Image component is included in the the page's paragraph system:
+To customize image rendering, you should understand the default AEM static image rendering implementation. AEM provides the Image component and an image-rendering servlet that work together to render images for web page. The following sequence of events occur when the Image component is included inthepage's paragraph system:
 
 1. Authoring: Authors edit the Image component to specify the image file to include in an HTML page. The file path is stored as a property value of the Image component node.
 1. Page request: The JSP of the page component generates the HTML code. The JSP of the Image component generates and adds an img element to the page.

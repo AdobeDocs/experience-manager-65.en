@@ -169,7 +169,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![](assets/chlimage_1-118.png)
 
-1. Click/tap the PDF rendition from the list of renditions to download the the PDF file. Open the PDF file to review the collateral.
+1. Click/tap the PDF rendition from the list of renditions to downloadthePDF file. Open the PDF file to review the collateral.
 
    ![](assets/chlimage_1-119.png)
 

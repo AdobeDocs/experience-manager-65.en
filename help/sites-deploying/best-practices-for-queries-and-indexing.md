@@ -408,7 +408,7 @@ Text pre-extraction is the process of extracting and processing text from binari
 
 Re-indexing an **existing** lucene index with binary extraction enabled
 
-* Re-indexing processing **all** candidate content in the repository; when the binaries to extract full-text from are numerous or complex, an increased computational burden to perform the the full-text extraction is placed on AEM. Text pre-extraction moves the "computationally costly work" of text-extraction into an isolated process that directly accesses AEM's Data Store, avoiding overhead and resource contention in AEM.
+* Re-indexing processing **all** candidate content in the repository; when the binaries to extract full-text from are numerous or complex, an increased computational burden to performthefull-text extraction is placed on AEM. Text pre-extraction moves the "computationally costly work" of text-extraction into an isolated process that directly accesses AEM's Data Store, avoiding overhead and resource contention in AEM.
 
 Supporting the deployment of a **new** lucene index to AEM with binary extraction enabled
 

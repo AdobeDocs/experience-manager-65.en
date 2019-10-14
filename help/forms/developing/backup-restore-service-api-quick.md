@@ -113,7 +113,7 @@ The following Java code example enters into backup mode with a unique label for 
              // Enter backup mode on the forms server server
              BackupModeEntryResult backupResult = backup.enterBackupMode(backUpLabel,minsInBackupMode, continousCoverage);
  
-             // Get information from entering backup mode on the the forms server server.
+             // Get information from entering backup mode ontheforms server server.
              if (backupResult != null)
              {
                  System.out.println("Start time is: " + backupResult.getStartTime());

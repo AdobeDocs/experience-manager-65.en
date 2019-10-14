@@ -519,7 +519,7 @@ To generate analytics report with seed data:
 1. Copy all the content in the seed data file.
 1. In CRXDE, navigate to: `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`
 1. In the analyticsdata field under Properties, paste the copied content of the seed data file.
-1. Now generate the analytics report again for Home Mortgage Application Form. You will see the the report with seed data.
+1. Now generate the analytics report again for Home Mortgage Application Form. You will seethereport with seed data.
 
 **A/B testing of the mortgage application**
 

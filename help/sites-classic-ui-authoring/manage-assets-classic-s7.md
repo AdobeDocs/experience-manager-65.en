@@ -387,7 +387,7 @@ By default, AEM searches the folder selected and all sub-folders.
 >[!NOTE]
 >
 >* When searching video, you are searching a single rendition. Results return the original rendition (only &ast;.mp4) and the encoded rendition.
->* When searching an adaptive video set, you are searching the the folder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, AEM does not search the sub-folders.
+>* When searching an adaptive video set, you are searchingthefolder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, AEM does not search the sub-folders.
 >
 
 **[!UICONTROL Publish Status]** You can filter for assets based on publication status: [!UICONTROL Published] or [!UICONTROL Unpublished]. If you do not select any [!UICONTROL Publish status], AEM by default searches all publish statuses.

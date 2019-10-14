@@ -67,7 +67,7 @@ Follow the steps below to perform asset level scheduling:
 
    ![screen_shot_2018-04-23at112348am](assets/screen_shot_2018-04-23at112348am.png)
 
-1. You can specify the the date from the date picker from the **Active from** and **Active until** fields.
+1. You can specifythedate from the date picker from the **Active from** and **Active until** fields.
 
    If you select the** Active from** and **Active until** date and time, the asset will display and loop only between that start date/time and end date/time respectively.
 

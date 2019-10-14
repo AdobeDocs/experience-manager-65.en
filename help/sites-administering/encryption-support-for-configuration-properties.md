@@ -15,7 +15,7 @@ discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 
 ## Overview {#overview}
 
-This feature allows all OSGi configuration properties to be stored in a protected encrypted form instead of clear text. The form in the the Web Console UI is used to create encrypted text from clear text using the system wide encryption master key.
+This feature allows all OSGi configuration properties to be stored in a protected encrypted form instead of clear text. The form intheWeb Console UI is used to create encrypted text from clear text using the system wide encryption master key.
 
 OSGi Configuration Plugin support was added in order to decrypt the property before it is used by a service.
 

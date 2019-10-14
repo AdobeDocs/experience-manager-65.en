@@ -21,7 +21,7 @@ Every console that has a Classic UI version in `/libs/cq/core/content/nav` can b
 
 In this example, we are re-enabling the Classic UI for the Sites console.
 
-1. Using CRXDE Lite, find the node corresponding the the admin console for which you want to re-enable Classic UI. They are found under:
+1. Using CRXDE Lite, find the node correspondingtheadmin console for which you want to re-enable Classic UI. They are found under:
 
    `/libs/cq/core/content/nav`
 

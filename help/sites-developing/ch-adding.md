@@ -161,7 +161,7 @@ The rules that are used to resolve these segments are summarized as follows:
 * Female or male is determined from the `gender` data item of the [profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) store.
 
 * Age is determined from the age data item of the profile store.
-* Season is determined from the the latitude data item of the [geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) store, and the month data item of the surferinfo store.
+* Season is determined fromthelatitude data item of the [geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) store, and the month data item of the surferinfo store.
 
 ## Logging Debug Messages for ContextHub {#logging-debug-messages-for-contexthub}
 

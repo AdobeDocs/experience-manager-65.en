@@ -95,7 +95,7 @@ To create a Mixed Media Set:
    >
    >When creating the mixed media set, you can change the mixed media set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the mixed media set. To select a thumbnail, click **Change thumbnail **and select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **Switch to Automatic thumbnail**.
 
-1. Tap or click the the Asset Selector to select assets that you want to include in your Mixed Media Set. Select them and click **Select**.
+1. Tap or clicktheAsset Selector to select assets that you want to include in your Mixed Media Set. Select them and click **Select**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking Return. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then click/tap the **Filter** icon from the toolbar. Change the view by selecting the View icon and selecting list, column or card view.
 

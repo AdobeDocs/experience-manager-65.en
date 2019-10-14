@@ -137,7 +137,7 @@ You can run the tagging workflow periodically or whenever required.
 
 You can enable the Smart Content Service to periodically tag assets within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
 
-Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default, the the tagging workflow runs every day at 12:00 AM.
+Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default,thetagging workflow runs every day at 12:00 AM.
 
 ### On-demand tagging {#on-demand-tagging}
 

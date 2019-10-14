@@ -32,7 +32,7 @@ This section describes how AEM *Developers* can:
 
 ## Prerequisties {#prerequisties}
 
-AEM Mobile requires an Adobe Analytics account to collect and report tracking data in your app. As part of the the configuration the AEM *Administrator* will first need to :
+AEM Mobile requires an Adobe Analytics account to collect and report tracking data in your app. As part oftheconfiguration the AEM *Administrator* will first need to :
 
 * Setup an Adobe Analytics account and create a report suite for your application in Mobile Services.
 * Configure an AMS Cloud Service in Adobe Experience Manager (AEM).
@@ -59,7 +59,7 @@ For further details on how to download the ADBMobileConfig from your Mobile Appl
 
 Each platform requires the ADBMobileConfig to be copied to a specific location.
 
-If building with the PhoneGap CLI this can be done with an cordova build hook scripts. This can be seen in the the Geometrixx Outdoors App at:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
+If building with the PhoneGap CLI this can be done with an cordova build hook scripts. This can be seen intheGeometrixx Outdoors App at:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
 For iOS the file will need to be copied to the XCode project's **Resources** directory (eg. "platforms/ios/Geometrixx/Resources/ADBMobileConfig.json"). If the App is targeted for Android then the path to copy to is "platforms/android/assets/ADBMobileConfig.json". For further details on using hooks during the PhoneGap CLI build refer to [Three hooks your Cordova/PhoneGap project needs](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
 

@@ -178,7 +178,7 @@ However, sets created using batch set presets, do **not** appear in the user int
 
 * From search, you can select **Filter,** then expand **Dynamic Media** and select **Sets**.
 
-  The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **Sets** is the the only way to search automated sets.
+  The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **Sets** istheonly way to search automated sets.
 
   ![](assets/chlimage_1-134.png)
 

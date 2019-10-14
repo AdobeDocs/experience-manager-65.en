@@ -61,9 +61,9 @@ If you want to change the above configuration, follow the below instructions bel
 
 * create the ***sling:OsgiConfig/ nt:file in /apps/system/config*** with name **com.adobe.cq.wcm.launches.impl.LaunchesEventHandler.config** and content
 
-  *launches.eventhandler.updatelastmodification=B"false"  
-  launches.eventhandler.launch.promotion.graceperiod=["/content/screens(/.&#42;):600"]  
-  launches.eventhandler.threadpool.maxsize=I"5"  
+  *launches.eventhandler.updatelastmodification=B"false"
+  launches.eventhandler.launch.promotion.graceperiod=["/content/screens(/.&#42;):600"]
+  launches.eventhandler.threadpool.maxsize=I"5"
   launches.eventhandler.threadpool.priority="MIN"*
 
 * ***launches.eventhandler.launch.promotion.graceperiod=["/content/screens(/.&#42;):600"]***, allows you to set a grace period of 600 seconds in the path */content/screens*.
@@ -134,7 +134,7 @@ Once you have created the launch, you need to edit the launch properties to set 
 
 Follow the steps below to edit the launch properties:
 
-1. Navigate to the channel (**FutureLaunch**) and select the channel, as shown in the figure below. Open the **References** rail from the the left side-rail.
+1. Navigate to the channel (**FutureLaunch**) and select the channel, as shown in the figure below. Open the **References** rail fromtheleft side-rail.
 
    >[!NOTE]
    >
@@ -154,24 +154,24 @@ Follow the steps below to edit the launch properties:
 
    >[!NOTE]
    >
-   >Understanding the Launches entries under **Auto-Promotion**:  
+   >Understanding the Launches entries under **Auto-Promotion**:
 
    >
-   >    
-   >    
+   >
+   >
    >    * **Launch Date**, refers to the live date, that is, the date/time the content will play in the Screens player as per the player's timezone.
-   >    * **Production Ready**, allows the channels to be promoted and means that the launch is ready to be used.  
-   >    
-   >    * **Scope**, refers to the channels that can be promoted during a launch. The following three options are available to setup the scope:    >    
-   >        
-   >        
+   >    * **Production Ready**, allows the channels to be promoted and means that the launch is ready to be used.
+   >
+   >    * **Scope**, refers to the channels that can be promoted during a launch. The following three options are available to setup the scope:    >
+   >
+   >
    >        1. **Promote full launch**: All the channels of the launch are promoted at the set live date.
    >        1. **Promote modified pages**: Only edited launch resources will be promoted. It is recommended to use this option when the launch review is not required. It allows the modifications in the launch channels to be promoted.
    >        1. **Promote approved pages**: Only approved pages are promoted at the set live date.
-   >        
-   >        
-   >    
-   >    
+   >
+   >
+   >
+   >
    >
 
    ![](assets/screen_shot_2019-06-26at113805am.png)

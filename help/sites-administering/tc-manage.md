@@ -241,7 +241,7 @@ The following table describes each status that a job or an item in the job can h
 | Status |Description |
 |---|---|
 | Draft |The translation job has not been started. Translation jobs are in DRAFT status when they are created. |
-| Submitted |Files in the translation job have this status when they have been successfully sent to the translation service. This status can occur after the the Request Scope command or the Start command is issued. |
+| Submitted |Files in the translation job have this status when they have been successfully sent to the translation service. This status can occur aftertheRequest Scope command or the Start command is issued. |
 | Scope Requested |For the Human Translation workflow, the files in the job have been submitted to the translation vendor for scoping. This status appears after the Request Scope command is issued. |
 | Scope Completed |The vendor has scoped the translation job. |
 | Committed for Translation |The project owner has accepted the scope. This status indicates that the translation vendor should begin translating the files in the job.  |

@@ -282,7 +282,7 @@ If editing targeted content, you must click or tap **Start Targeting **before yo
 
    >[!NOTE]
    >
-   >If set by your administrator, you may need to set the the location explicitly.
+   >If set by your administrator, you may need to setthelocation explicitly.
    >
    >Administrators can decide whether setting this configuration is required at **https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >

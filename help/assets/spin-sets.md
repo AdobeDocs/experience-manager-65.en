@@ -170,7 +170,7 @@ You can create spin sets either in the user interface or automatically using [ba
 
 1. From search, you can Select **Filters**, then expand **Dynamic Media** and select **Sets**.
 
-   The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **Sets** is the the only way to search automated sets.
+   The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **Sets** istheonly way to search automated sets.
 
    ![](assets/chlimage_1-158.png)
 

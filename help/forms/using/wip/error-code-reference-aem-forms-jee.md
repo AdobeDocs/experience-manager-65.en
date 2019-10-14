@@ -689,7 +689,7 @@ discoiquuid: b775f65a-be1d-40e8-aa98-c2a4922f9cb2
 |---|---|
 |  Type  |Error |
 |  Cause  |Could not convert bytes to {0}. |
-|  Action  |Generated because the the currently used certificate or crl's byte[] is malformed and thus cannot be used in the application. To verify please check the certificate or crl again using other available debug tools and use correct certificate or crl. |
+|  Action  |Generated becausethecurrently used certificate or crl's byte[] is malformed and thus cannot be used in the application. To verify please check the certificate or crl again using other available debug tools and use correct certificate or crl. |
 
 |  Code  | ALC-DSS-310-006 () |
 |---|---|

@@ -274,7 +274,7 @@ The name of the filters, charFilters and tokenizers are formed by removing the f
 
 * `org.apache.lucene.analysis.core.StopFilterFactory` becomes `Stop`
 
-Any configuration parameter required for the factory is specified as property of the the node in question.
+Any configuration parameter required for the factory is specified as property ofthenode in question.
 
 For cases such as loading stop words where content from external files needs to be loaded, the content can be provided by creating a child node of `nt:file` type for the file in question.
 

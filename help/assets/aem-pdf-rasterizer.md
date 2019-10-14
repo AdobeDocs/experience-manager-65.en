@@ -53,7 +53,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 1. Configure the following arguments for the **PDF Rasterizer Handler** step:
 
     * Mime Types: *application/pdf *or *application/postscript*
-    
+
     * Commands: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
     * Add Thumbnail sizes: 319:319, 140:100, 48:48. Add custom thumbnail configuration, if necessary.
 
@@ -82,11 +82,11 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
 1. Save the workflow.
 1. To enable PDF Rasterizer to process PDF pages with PDF libraries, open the **DAM Process Subasset** model from the Workflow console.
-1. From the side panel, drag the the PDF Rasterizer Handler step under the **Create Web-Enabled Image Rendition** step.
+1. From the side panel, dragthePDF Rasterizer Handler step under the **Create Web-Enabled Image Rendition** step.
 1. Configure the following arguments for the **PDF Rasterizer Handler** step:
 
     * Mime Types: *application/pdf *or *application/postscript*
-    
+
     * Commands: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
     * Add Thumbnail sizes: 319:319, 140:100, 48:48. Add custom thumbnail configuration, if necessary.
 
