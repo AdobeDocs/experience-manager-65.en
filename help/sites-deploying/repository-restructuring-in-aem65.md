@@ -14,7 +14,7 @@ redirecttarget: /content/help/en/experience-manager/6-5/help/sites-deploying/rep
 
 ---
 
-# Repository Restructuring in AEM 6.5{#repository-restructuring-in-aem}
+# Repository Restructuring in AEM 6.5 {#repository-restructuring-in-aem}
 
 ## Introduction {#introduction}
 

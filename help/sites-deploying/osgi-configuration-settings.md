@@ -65,7 +65,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 >Be sure to configure the following:
 >
 >**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.
->The password must be changed after the initial installation to ensure the [security](/content/docs/en/aem/6-3/deploy/security_checklist.md) of your instance.
+>The password must be changed after the initial installation to ensure the [security](/help/sites-administering/security-checklist.md) of your instance.
 
 >[!NOTE]
 >
