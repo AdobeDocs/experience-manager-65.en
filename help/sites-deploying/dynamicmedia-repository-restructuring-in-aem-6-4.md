@@ -18,11 +18,11 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 
 **Prior to 6.5 Upgrade**
 
-* [Custom Adaptive Video Encoding Configurations](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
-* [Dynamic Media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
-* [Dynamic Media (DM Hybrid) Cloud Service Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#main-pars-header-501711721)
-* [Dynamic Media - YouTube Cloud Service Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#main-pars-header-1269596831)
-* [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
+* [Custom Adaptive Video Encoding Configurations](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
+* [Dynamic Media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
+* [Dynamic Media (DM Hybrid) Cloud Service Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#main-pars-header-501711721)
+* [Dynamic Media - YouTube Cloud Service Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#main-pars-header-1269596831)
+* [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Prior to 6.5 Upgrade {#prior-to-upgrade}
 

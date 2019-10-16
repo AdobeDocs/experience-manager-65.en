@@ -51,10 +51,10 @@ Once you have familiarized yourself with these basics, you will find in more adv
 * [Best Practices](/help/sites-deploying/best-practices.md)
 * [Deploying Communities](/help/communities/deploy-communities.md)
 * [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
-* [Performance Guidelines](/help/sites-deploying/DO-NOT-DELETE-performance-guidelines-pdf.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md)
 * [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Maintenance Release Vehicle Definitions](/help/sites-deploying/maintenance-release-vehicle-definitions.md)
-* [What is AEM Screens?](/help/sites-deploying/aem-screens-introduction.md)
+* [What is AEM Screens?](/help/screens/aem-screens-introduction.md)
 
 ## Basic Concepts {#basic-concepts}
 
@@ -123,7 +123,7 @@ With AEM Managed Services customers can realize the following benefits:
 
 **Cloud Manager**: Cloud Manager, part of the Adobe Experience Manager Managed Services offering is a self-service portal that further enables organizations to self-manage Adobe Experience Manager in the cloud. It includes a state-of-the-art continuous integration and continuous delivery (CI/CD) pipeline that lets IT teams and implementation partners speed the delivery of customizations or updates without compromising performance or security. Cloud Manager is only available for Adobe Managed Service customers.
 
-To learn more about Cloud Manger and its resources, please refer to [**Cloud Manager User Guide**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
+To learn more about Cloud Manger and its resources, please refer to [**Cloud Manager User Guide**](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
 ## Getting Started {#getting-started}
 
@@ -289,10 +289,10 @@ AEM starts and automatically redirects your web browser to the appropriate page,
 
 Once logged in, you have access to AEM. For further information, depending on the your role, see the following:
 
-* [Authoring](/sites/authoring/user-guide.md)
-* [Administering](/sites/administering/user-guide.md)
-* [Developing](/sites/developing/user-guide.md)
-* [Managing](/help/managing/manage-reference.md)
+* [Authoring](/help/sites-authoring/home.md)
+* [Administering](/help/sites-administering/home.md)
+* [Developing](/help/sites-developing/home.md)
+* [Managing](/help/managing/best-practices.md)
 
 ## Advanced Deployment {#advanced-deployment}
 

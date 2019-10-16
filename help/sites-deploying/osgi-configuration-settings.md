@@ -51,8 +51,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 
 **CRX Sling Client Repository** Configure access to the underlying content repository.
 
-* The **Admin Password** should be changed after installation to ensure the [security](/content/docs/en/aem/6-3/deploy/security_checklist.md) of your instance.
-
+* The **Admin Password** should be changed after installation to ensure the [security](/help/sites-administering/security-checklist.md) of your instance.
 * Other changes should not be necessary and care must be taken as they can affect access to the repository.
 
 **Wiki Mail Service** Configure the email settings for emails sent by a wiki.
@@ -448,7 +447,7 @@ The following properties only apply if HTTPS is enabled.
 * **Key Password**, Password to unlock the secret key in the Keystore.
 * **Client Certificate**, Requirement for the Client to provide a valid certifcate. Defaults to none.
 
-See also [Enabling HTTP Over SSL](/help/sites-deploying/config-ssl.md) for details on the SSL-related options and a complete description on how to enable HTTPS for CQSE.
+See also [Enabling HTTP Over SSL](/help/sites-administering/ssl-by-default.md) for details on the SSL-related options and a complete description on how to enable HTTPS for CQSE.
 
 **CQ Rewriter HTML Parser Factory**
 

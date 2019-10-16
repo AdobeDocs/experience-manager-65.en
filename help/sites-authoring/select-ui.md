@@ -19,7 +19,7 @@ Although the touch-enabled UI is now the standard UI and feature parity has been
 
 >[!NOTE]
 >
->For details on the status of feature parity with the classic UI, see the [Touch UI Feature Parity](../../../release-notes/touch-ui-features-status.md) document.
+>For details on the status of feature parity with the classic UI, see the [Touch UI Feature Parity](/help/release-notes/touch-ui-features-status.md) document.
 
 There are various locations where you can define which UI is to be used:
 

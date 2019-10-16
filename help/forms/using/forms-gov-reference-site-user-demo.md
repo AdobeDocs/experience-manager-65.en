@@ -69,23 +69,19 @@ The following groups are also included:
 1. **Links**: Located at the top of the main menu in We.Gov site.
 1. **User Instructions**: A set of numerical steps to follow when navigating through the user's story.
 1. **Forms Portal**: *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/formsportal.html*
-
-1. **Mobile View**:* *We.Gov user to replicate a mobile view with a re-sized browser*.*
-
-1. **Desktop View**: W*e.gov user to view demo on a laptop or desktop.*
-
+1. **Mobile View**:* *We.Gov user to replicate a mobile view with a re-sized browser.*
+1. **Desktop View**: *We.gov user to view demo on a laptop or desktop.*
 1. **Pre-screener Form**:* Form on the Home page of the We.Gov site.*
-
 1. **Adaptive Form**: Enrollment application form for We.gov demo.  
+
    *https://&lt;aemserver&gt;:&lt;port&gt;/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **Adobe We.Gov Site**:* https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
+1. **Adobe We.Gov Site**: *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
+1. **Adobe Inbox**: Located top menu bar [Bell icon] in AEM backend.
 
-1. **Adobe Inbox**: Located top menu bar [Bell icon] in AEM backend.* 
-   https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
+   *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
 
 1. **Email Client**: Preferred way to view your emails (Gmail, Outlook)
-
 1. **CTA**: Call to action
 1. **Navigate**: To locate a specific reference point on the browser page.
 

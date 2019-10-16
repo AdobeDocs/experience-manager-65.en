@@ -1,8 +1,8 @@
 ---
 title: Upgrade to AEM 6.5 Forms
 seo-title: Upgrade to AEM 6.5 Forms
-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms. 
-seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms. 
+description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -32,7 +32,7 @@ You can perform a direct upgrade from AEM 6.2 Forms or AEM 6.3 Forms to AEM 6.5 
     1. **(Unix/Linux-based installations only)** If you are using UNIX or Linux as the underlying operating system, open the terminal window, navigate to the folder containing crx-quickstart, and run the following command:
 
        `chmod -R 755 ../crx-quickstart`
-    
+
     1. Upgrade your AEM instance to AEM 6.3. For step by step instructions, see [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md).
 
        Before continuing with the next steps, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the &lt;crx-repository&gt;/error.log file.
@@ -47,7 +47,7 @@ You can perform a direct upgrade from AEM 6.2 Forms or AEM 6.3 Forms to AEM 6.5 
     1. In package share, search **[!UICONTROL AEM 6.5 Forms add-on packages]**, click the package applicable to your operating system, and click **[!UICONTROL Download]**. Read and accept the license agreement and click **[!UICONTROL OK]**. The download starts. Once downloaded, the word **[!UICONTROL Downloaded]** appears next to the package.
 
        Alternately, you can also use the hyperlinks listed in [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) to manually download a package.
-    
+
     1. After the download is complete, click **[!UICONTROL Downloaded]**. You are redirected to package manager. In the package manager, search the downloaded package, and click **[!UICONTROL Install]**.
 
        If you manually download the package using the direct link listed in [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html), then open AEM Package Manager, click **[!UICONTROL Upload Package]**, select the downloaded package, and click upload. After the package is uploaded, click package name, and click **[!UICONTROL Install]**.
@@ -71,24 +71,24 @@ You can perform a direct upgrade from AEM 6.2 Forms or AEM 6.3 Forms to AEM 6.5 
 
       If you are using [Sample for integrating drafts & submissions component](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) with the database and upgrading from a previous version, then run the following SQL queries after performing the upgrade:
 
-      ```    
+      ```
       UPDATE metadata m, additionalmetadatatable am
       SET m.dataType = am.value
       WHERE m.id = am.id
       AND am.key = 'dataType'
-      
+
       ```
 
-      ```    
+      ```
       DELETE from additionalmetadatatable
       WHERE `key` = 'dataType'
-      
+
       ```
 
     * **(If upgrading from AEM 6.2 Forms or previous versions only) Reconfigure Adobe Sign**
 
       If you had Adobe Sign configured in the previous version of AEM Forms, then reconfigure Adobe Sign from AEM Cloud services. For more details, see [Integrate Adobe Sign with AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
-    
+
     * **(If upgrading from AEM 6.2 Forms or previous versions only) Reconfigure analytics and reports**
 
       In AEM 6.5 Forms, traffic variable for source and success event for impression are not available. So, when you upgrade from AEM 6.2 Forms or previous versions, AEM Forms stops sending data to Adobe Analytics server and analytics reports for adaptive forms are not available. Moreover, AEM 6.5 Forms introduces traffic variable for the version of form analytics and success event for the amount of time spent on a field. So, reconfigure analytics and reports for your AEM Forms environment. For detailed steps, see [Configuring analytics and reports](/help/forms/using/configure-analytics-forms-documents.md).
@@ -105,7 +105,7 @@ You can perform a direct upgrade from AEM 6.2 Forms or AEM 6.3 Forms to AEM 6.5 
 
    >[!NOTE]
    >
-   >In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
+   >In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
 
 ## AEM 6.0 Forms and AEM 6.1 Forms > AEM 6.5 Forms {#upgrade-aem-forms-60-61-to-64}
 
