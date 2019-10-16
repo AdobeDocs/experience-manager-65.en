@@ -59,15 +59,15 @@ All of the following properties must be present for the data type to be present 
 
 * `fieldIcon`
 
-  [CoralUI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableicons) to represent the data type in the model editor UI. 
+  [CoralUI icon](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableicons) to represent the data type in the model editor UI.
 
 * ` [fieldProperties](#fieldproperties)`
 
-  An array that represents the configuration properties for each data type.  
+  An array that represents the configuration properties for each data type.
 
 * `fieldResourceType`
 
-  The Sling resource type used to render the data type in a content fragment. For data types that can be rendered in different ways (for example, as simple text input and/or multiline text input), this property must be created as an array, containing all resource types. The `renderasfield` property will be added automatically to `fieldProperties` to let the user choose the resource type they need to add to the model,  
+  The Sling resource type used to render the data type in a content fragment. For data types that can be rendered in different ways (for example, as simple text input and/or multiline text input), this property must be created as an array, containing all resource types. The `renderasfield` property will be added automatically to `fieldProperties` to let the user choose the resource type they need to add to the model,
 
 * `fieldPropResourceType`
 
@@ -82,72 +82,72 @@ All of the following properties must be present for the data type to be present 
 
   The Sling resource type used to render the data type in the preview, when constructing the model. When the user drags the data type to the left side of the model editor, the `fieldViewResourceType` property represents the component that is rendered there. This is used for cases where you do not want to render the full component, but only want to render a substitute that minimizes the overhead to the model editor.
 
-* `fieldTitle` 
+* `fieldTitle`
 
   Property that defines the title of this data type. For example, **Single line text** for a `textfield` component, **Multi line text** for a multifield component.
 
-* `valueType` 
+* `valueType`
 
-  This is the type of value that the data type returns when it is stored internally. See [Mappings](#mappings).  
+  This is the type of value that the data type returns when it is stored internally. See [Mappings](#mappings).
 
-* `renderType` 
+* `renderType`
 
-  This is an internal representation of the data type. It connects the `valueType` to a UI component. See [Mappings](#mappings).  
+  This is an internal representation of the data type. It connects the `valueType` to a UI component. See [Mappings](#mappings).
 
-* `listOrder` 
+* `listOrder`
 
   Each data type needs a value that represents its order in the list. This is used to assure the correct ordering of the various fields (added/moved by drag and drop) when saving the model editor. This value must be an integer and it is recommended to assign the number in an ascending, ordered manner. When creating a new data type it is best to assign the value based on the last data type in the list (the highest value of `listOrder` value present in the data types).
 
 #### Mappings {#mappings}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Data Type<br /> </td> 
-   <td>Value Type<br /> </td> 
-   <td>Render Type</td> 
-  </tr> 
-  <tr> 
-   <td>Single line text</td> 
-   <td>string</td> 
-   <td>text-single</td> 
-  </tr> 
-  <tr> 
-   <td>Multi line text</td> 
-   <td>string, with content type<br /> </td> 
-   <td>text-multi</td> 
-  </tr> 
-  <tr> 
-   <td>Number (integer/long)<br /> </td> 
-   <td>long</td> 
-   <td>number</td> 
-  </tr> 
-  <tr> 
-   <td>Number (double/float)</td> 
-   <td>double</td> 
-   <td>number</td> 
-  </tr> 
-  <tr> 
-   <td>Boolean</td> 
-   <td>boolean</td> 
-   <td>boolean</td> 
-  </tr> 
-  <tr> 
-   <td>Date and time</td> 
-   <td>calendar</td> 
-   <td>time</td> 
-  </tr> 
-  <tr> 
-   <td>Enumeration</td> 
-   <td>string/long</td> 
-   <td>enumeration</td> 
-  </tr> 
-  <tr> 
-   <td>Tags</td> 
-   <td>string</td> 
-   <td>tags</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>Data Type<br /> </td>
+   <td>Value Type<br /> </td>
+   <td>Render Type</td>
+  </tr>
+  <tr>
+   <td>Single line text</td>
+   <td>string</td>
+   <td>text-single</td>
+  </tr>
+  <tr>
+   <td>Multi line text</td>
+   <td>string, with content type<br /> </td>
+   <td>text-multi</td>
+  </tr>
+  <tr>
+   <td>Number (integer/long)<br /> </td>
+   <td>long</td>
+   <td>number</td>
+  </tr>
+  <tr>
+   <td>Number (double/float)</td>
+   <td>double</td>
+   <td>number</td>
+  </tr>
+  <tr>
+   <td>Boolean</td>
+   <td>boolean</td>
+   <td>boolean</td>
+  </tr>
+  <tr>
+   <td>Date and time</td>
+   <td>calendar</td>
+   <td>time</td>
+  </tr>
+  <tr>
+   <td>Enumeration</td>
+   <td>string/long</td>
+   <td>enumeration</td>
+  </tr>
+  <tr>
+   <td>Tags</td>
+   <td>string</td>
+   <td>tags</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -158,87 +158,87 @@ All of the following properties must be present for the data type to be present 
 
 The configuration properties for each data type. Values for `fieldProperties`:
 
-* `base` 
+* `base`
 
-  This is the basis for all `fieldProperties` components. The definition is situated under `/libs/dam/cfm/models/editor/components/datatypeproperties/base`. 
+  This is the basis for all `fieldProperties` components. The definition is situated under `/libs/dam/cfm/models/editor/components/datatypeproperties/base`.
 
-  It contains the variable `fieldRoot`, which subsequent `fieldProperties` can use when creating inputs to retrieve the correct path. 
+  It contains the variable `fieldRoot`, which subsequent `fieldProperties` can use when creating inputs to retrieve the correct path.
 
   Example: to get the correct path for a **Field Label** you will the need the key to identify the component this belongs to, the input for this field should be `fieldRoot` + `<*fieldLabel*>`
 
-* `checkboxfields` 
+* `checkboxfields`
 
   This component adds the default checkbox for the `Boolean` data type, as well as the Sling parameters `checked@Delete` and `checked@TypeHint`.
 
-* `datepickerfields` 
+* `datepickerfields`
 
   Component that adds the hidden inputs needed for the date picker component to function. Includes creating the properties `defaultDateField`, `displayedFormat`, `emptyText`, `valueFormat`, `minDate` and `maxDate`.
 
-* `datetimepickerfields` 
+* `datetimepickerfields`
 
   This adds a select field for `Date&Time` data type to distinguish between `Date` and `Date&Time` options.
 
-* `datevaluefield` 
+* `datevaluefield`
 
   This adds a datepicker to the properties, so that a user can select a default for the `Date&Time` data type.
 
-* `descriptionfield` 
+* `descriptionfield`
 
   This component adds a multline text field that represents the description of the currently selected component in the multi-line editor. It is automatically added by the Model Editor renderer at the end of each data type properties.
 
-* `labelfield` 
+* `labelfield`
 
   Component that adds a `textfield` input that adds the field label for a data type that can have field labels.
 
-* `maptopropertyfield` 
+* `maptopropertyfield`
 
   This component adds the `Name` field in the properties, giving an identifier to the selected component of a data type. It should be present in all data types.
 
-* `maxlengthfield` 
+* `maxlengthfield`
 
   It is used to add the `maxLength` property for use with data types that accept this property. For example, with **Single Line Text**, **Number**, etc.
 
-* `multieditorfield` 
+* `multieditorfield`
 
   This adds all the hidden field necesarry for the multi-line editor to work, which is represented by the **Multi Line Text** data type.
 
-* `mvfields` 
+* `mvfields`
 
   Component that adds all the hidden fields needed for a multifield component to work. For example, for the second option of a **Single Line Text** data type. This should be added for any component that is rendered as a multifield.
 
-* `numbertypefield` 
+* `numbertypefield`
 
   Select option for the **Number** data type that selects between **Integer** or **Fraction** for the **Number** data type.
 
-* `numbervaluefield` 
+* `numbervaluefield`
 
   A `numberfield` default value selector for the **Number** `type.options` This adds the options input for the **Enumeration** data type, which is used to determine the values for the select box component.
 
-* `placeholderfield` 
+* `placeholderfield`
 
   This is a textfield that acts as the input for the `emptyText` property of a component. This should be used by all data types that accept a placeholder (that is not very complicated; e.g. **Single Line Text**, **Number**, etc).
 
-* `renderasfield` 
+* `renderasfield`
 
   This is the component that is rendered automatically when several `fieldResourceTypes` are present in the property of the data type node.
 
-* `requiredfield` 
+* `requiredfield`
 
   This is a checkbox that represents the `required` property for a component. Because most components accept the `required` field, this field can be used for most data types.
 
-* `tagsfields` 
+* `tagsfields`
 
   Components that adds the inputs necessary for a `tagfield` component to be rendered, used by the **Tags** data type.
 
-* `tagsroot` 
+* `tagsroot`
 
   A path picker used by the **Tags** data type to set the root path for `tagsfield` component.
 
-* `textfield` 
+* `textfield`
 
   Used by the `Boolean` data type to set the field label of the checkbox defined by this data type.
 
-* `textvaluefield` 
+* `textvaluefield`
 
   The default value property for **Single Line Text** data type.
 
@@ -260,15 +260,15 @@ The node structure must be created under `/apps` in order to overlay the data ty
 1. If it does not exist already you must create:
 
    ```
-   + apps 
+   + apps
      + settings
-       + dam 
-         + cfm (cq:Page) 
+       + dam
+         + cfm (cq:Page)
            + models (nt:folder)
              + formbuilderconfig (sling:folder)
                + datatypes (nt:unstructured)
                  + items (nt:unstructured)
-   
+
    ```
 
    >[!NOTE]
@@ -328,12 +328,12 @@ You can choose from the out-of-the-box [fieldProperties](#fieldproperties), or c
 
     1. To have access to the variables, this component should extend:
 
-       `/libs/dam/cfm/models/editor/components/datatypeproperties/base`* * 
-  
+       `/libs/dam/cfm/models/editor/components/datatypeproperties/base`* *
+
     1. The component should be able to be included through:
 
        `sling:include`
-  
+
     1. This component should either render a field (if a user needs to introduce data) or a hidden input with the properties needed by your data type. For example, a multifield component requires a child node with the type of field it should duplicate, therefore there should be an input that can create (through sling POST mechanics) a child node of a specific type.
 
 1. The base name of this component should be added to `fieldProperties`.

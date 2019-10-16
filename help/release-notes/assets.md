@@ -49,7 +49,7 @@ Search and filter the licensed Adobe Stock images in AEM
 
 ### Dynamic references in InDesign {#dynamic-references-in-indesign}
 
-The AEM Assets used in Adobe InDesign files are dynamic. The references update automatically if the referenced assets moves in the JCR hierarchy. For more information see, [Managing compound assets](/help/help/assets/managing-linked-subassets.md).
+The AEM Assets used in Adobe InDesign files are dynamic. The references update automatically if the referenced assets moves in the JCR hierarchy. For more information see, [Managing compound assets](/help/assets/managing-linked-subassets.md).
 
 ## Brand Portal capabilities {#brand-portal-capabilities}
 
@@ -107,8 +107,8 @@ Use Select All option to select all the assets in one click.
 
 Assets lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages. You can now assign a folder metadata schema to an existing folder or when creating a new folder. For more information, see [Folder metadata schema](/help/assets/folder-metadata-schema.md).
 
-When specifying cascading metadata, the choices can be loaded from a JSON file at the run-time, say instead of typing manually in the form. For more information, see [Cascading metadata](/help/help/assets/cascading-metadata.md).
+When specifying cascading metadata, the choices can be loaded from a JSON file at the run-time, say instead of typing manually in the form. For more information, see [Cascading metadata](/help/assets/cascading-metadata.md).
 
 ## Reporting enhancements {#reporting-enhancements}
 
-The Content Fragments and link shares are included in the Asset Downloaded report now. For more information, see [Assets reports](/help/help/assets/asset-reports.md).
+The Content Fragments and link shares are included in the Asset Downloaded report now. For more information, see [Assets reports](/help/assets/asset-reports.md).

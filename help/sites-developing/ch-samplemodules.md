@@ -40,7 +40,7 @@ The source code is located at /libs/granite/contexthub/code/ui/container/js/Cont
 Configure the contexthub.base UI module using a Javascript object in JSON format. Include any of the following properties to configure the UI module features:
 
 * **image:** A URL to an image to display as the icon.
-* **icon:** The name of a [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) class. If you specify a value for both the icon and image properties, the image is used.
+* **icon:** The name of a [Coral UI icon](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) class. If you specify a value for both the icon and image properties, the image is used.
 
 * **title:** A title for the UI module. The title appears when the pointer is paused over the UI module icon.
 * **fullscreen:** A boolean value that indicates whether the UI module supports fullscreen mode. Use `true` to support fullscreen and `false` to prevent fullscreen mode.

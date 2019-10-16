@@ -54,7 +54,7 @@ UI modes appear as a series of icons on the left side of the toolbar. When selec
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
-Icons are references from the [Coral UI icon library](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
+Icons are references from the [Coral UI icon library](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
 
 ### Adding a UI Mode {#adding-a-ui-mode}
 
@@ -70,7 +70,7 @@ Add a UI mode to group related ContextHub modules. When you create the UI mode, 
 1. Provide values for the following properties:
 
     * UI Mode Title: The title that identifies the UI mode
-    * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example `coral-Icon--user`
+    * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example `coral-Icon--user`
     * Enabled: Select to show the UI mode in the ContextHub toolbar
 
 1. Click or tap Save.

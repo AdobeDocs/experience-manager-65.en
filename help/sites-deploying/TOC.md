@@ -92,12 +92,12 @@ user-guide-title: AEM 6.5 Deploying Guide
    + [Performance & Scalability](performance.md)
 
 
-<!-- 
+<!--
 
 To be removed:
 [Quickstart for AEM Screens](setting-up-a-basic-project-screens.md)
 [Device Control Center](device-control-center.md)
-[repository-restructuring-in-aem64](repository-restructuring-in-aem64.md)
+[repository-restructuring-in-aem64](repository-restructuring-in-aem65.md)
 [Web Console] (configuring-web-console.md)
 [Configuring and Deploying AEM Screens](configuring-screens-introduction.md)
 [Kickstart Guide](kickstart-for-aem-screens.md)

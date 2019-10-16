@@ -40,7 +40,7 @@ Minimum requirements for running Adobe Experience Manager:
 >[!NOTE]
 >
 >* Digital asset use cases need more base memory. See [Deploying and Maintaining](/help/sites-deploying/deploy.md#default-local-install) for details.
->* [AEM Forms add-on package](../../../forms/using/installing-configuring-aem-forms-osgi.md) requires 15 GB of temporary space.
+>* [AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md) requires 15 GB of temporary space.
 >
 
 For further information, see the [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md).
@@ -511,5 +511,5 @@ XMP write-back is supported and enabled for the following platforms and file for
 
 ## Copyright, Licenses, and Disclaimers {#copyright-licenses-and-disclaimers}
 
-See detailed information at [Copyright, Licenses, and Disclaimers](/release-notes/licenses.md).
+See detailed information at [Copyright, Licenses, and Disclaimers](/help/release-notes/licenses.md).
 

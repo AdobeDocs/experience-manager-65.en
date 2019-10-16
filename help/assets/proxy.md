@@ -79,7 +79,7 @@ A proxy worker is a processor responsible for handling a job and creating a resu
 
 ### Client API {#client-api}
 
-[`JobService`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) is available as an OSGi service that provides methods to create jobs, remove jobs and to get results from those jobs. The default implementation of this service (`JobServiceImpl`) uses the HTTP client to communicate with the remote proxy servlet.
+[`JobService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) is available as an OSGi service that provides methods to create jobs, remove jobs and to get results from those jobs. The default implementation of this service (`JobServiceImpl`) uses the HTTP client to communicate with the remote proxy servlet.
 
 The following is an example of API usage:
 
@@ -108,7 +108,7 @@ The following is an example of API usage:
 
 >[!NOTE]
 >
->Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+>Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
 Both proxy and proxy worker configurations are available via cloud services configurations as accessible from the AEM Assets **Tools** console or under `/etc/cloudservices/proxy`. Each proxy worker is expected to add a node under `/etc/cloudservices/proxy` for worker specific configuration details (for example, `/etc/cloudservices/proxy/workername`).
 

@@ -598,7 +598,7 @@ For example, you want to add a custom function which calculates area of a square
 
 Perform the following steps to create a client library and add it in the CRX repository.
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](/help/help/sites-developing/clientlibs.md).
+1. Create a client library. For more information, see [Using Client-Side Libraries](/help/sites-developing/clientlibs.md).
 1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]

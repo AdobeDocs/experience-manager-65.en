@@ -37,7 +37,7 @@ Before getting started with author and publish servers, you should have prior kn
 
 >[!NOTE]
 >
->To learn more about the author and publish architectural overview and how the content is authored on an AEM author instance and then forward-replicated to multiple publish instances, refer to [Author and Publish Architectural Overview](/help/screens/author-publish-architecture-overview.html?).
+>To learn more about the author and publish architectural overview and how the content is authored on an AEM author instance and then forward-replicated to multiple publish instances, refer to [Author and Publish Architectural Overview](/help/screens/author-publish-architecture-overview.md).
 
 The following section explains how to setup replication agents on author and publish topology.
 
@@ -201,7 +201,7 @@ If you do not see the following configuration from */system/console/mq*, then na
 
 Follow the steps on each Publish instance:
 
-1. Navigate to the **OSGi Console **&gt; **Configuration Manager**
+1. Navigate to the **OSGi Console** &gt; **Configuration Manager**
 1. Select **Apache Sling Referrer Filter**
 1. Update config and **check Allow Empty**
 

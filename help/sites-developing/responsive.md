@@ -500,7 +500,7 @@ For information about how to configure AEM services, see [Configuring OSGi](/hel
 
 #### Implementation details {#implementation-details}
 
-The `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` class extends the [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) class. The AdaptiveImageComponentServlet source code is located in the `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` folder.
+The `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` class extends the [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) class. The AdaptiveImageComponentServlet source code is located in the `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` folder.
 
 The class uses Felix SCR annotations to configure the resource type and file extension that the servlet is associated with, and the name of the first selector.
 
@@ -533,11 +533,11 @@ The servlet uses the Property SCR annotation to set the default supported image 
             description = "List of widths this component is permitted to generate.")
 ```
 
-The `AbstractImageServlet` class provides the `doGet` method that processes the HTTP request. This method determines the resource that is associated with the request, retrieves resource properties from the repository, and returns them in an [ImageContext](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) object.
+The `AbstractImageServlet` class provides the `doGet` method that processes the HTTP request. This method determines the resource that is associated with the request, retrieves resource properties from the repository, and returns them in an [ImageContext](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) object.
 
 >[!NOTE]
 >
->The [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) class provides the `getFileReference method`, which retrieves the value of the resource's `fileReference` property.
+>The [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) class provides the `getFileReference method`, which retrieves the value of the resource's `fileReference` property.
 
 The `AdaptiveImageComponentServlet` class overrides the `createLayer` method. The method obtains the path of the image resource and the requested image width from the `ImageContext` object. It then calls the methods of the `info.geometrixx.commons.impl.AdaptiveImageHelper` class, which performs the actual image scaling.
 
@@ -605,7 +605,7 @@ When authoring a page, use **Sidekick** to specify the image and add the `image`
 
 #### Implementation details {#implementation-details-1}
 
-The info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet class extends the [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) class. If you have the cq-geometrixx-commons-pkg package installed, the ImageReferenceModificationServlet source code is located in the `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` folder.
+The info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet class extends the [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) class. If you have the cq-geometrixx-commons-pkg package installed, the ImageReferenceModificationServlet source code is located in the `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` folder.
 
 The class uses Felix SCR annotations to configure the resource type and file extension that the servlet is associated with, and the name of the first selector.
 
@@ -645,12 +645,12 @@ The servlet uses the Property SCR annotation to set the default supported image 
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-The `AbstractImageServlet` class provides the `doGet` method that processes the HTTP request. This method determines the resource that is associated with the call, retrieves resource properties from the repository, and saves them in an [ImageContext](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) object.
+The `AbstractImageServlet` class provides the `doGet` method that processes the HTTP request. This method determines the resource that is associated with the call, retrieves resource properties from the repository, and saves them in an [ImageContext](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) object.
 
-The `ImageReferenceModificationServlet` class overrides the `createLayer` method and implements the logic that determines the image resource to render. The method retrieves a child node of the page's `jcr:content` node named `image`. An [Image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/Image.html) object is created from this `image` node, and the `getFileReference` method returns the path to the image file from the `fileReference` property of the image node.
+The `ImageReferenceModificationServlet` class overrides the `createLayer` method and implements the logic that determines the image resource to render. The method retrieves a child node of the page's `jcr:content` node named `image`. An [Image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/Image.html) object is created from this `image` node, and the `getFileReference` method returns the path to the image file from the `fileReference` property of the image node.
 
 >[!NOTE]
->The [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) class provides the getFileReferencemethod.
+>The [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) class provides the getFileReferencemethod.
 >
 
 ## Developing a fluid grid {#developing-a-fluid-grid}

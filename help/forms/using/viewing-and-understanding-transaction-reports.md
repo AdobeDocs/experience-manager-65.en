@@ -33,7 +33,7 @@ Transaction reports feature is available as part of the AEM forms add-on package
 
 ### Enable reverse replication on all the publish instances {#enable-reverse-replication-on-all-the-publish-instances}
 
-Transaction reports use reverse replication to consolidate count of transactions from publish instances to author instances. Set up the reverse replication on all the publish instances. For detailed instructions to setup reverse replication, see [replication](/help/help/sites-deploying/replication.md).
+Transaction reports use reverse replication to consolidate count of transactions from publish instances to author instances. Set up the reverse replication on all the publish instances. For detailed instructions to setup reverse replication, see [replication](/help/sites-deploying/replication.md).
 
 ### Enable transaction reports {#enable-transaction-reports}
 
@@ -47,7 +47,7 @@ Transaction reports are disabled by default. You can enable the reports from AEM
 
 ### Provide rights to view a transaction report {#provide-rights-to-view-a-transaction-report}
 
-Only members of the fd-administrator group can view transaction reports. To allow a user to view transaction reports, make users member of the fd-administrator group. For instructions about making a user a member of an AEM group, see [User, Group and Access Rights Administration](/help/help/sites-administering/user-group-ac-admin.md).
+Only members of the fd-administrator group can view transaction reports. To allow a user to view transaction reports, make users member of the fd-administrator group. For instructions about making a user a member of an AEM group, see [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md).
 
 ### (Optional) Configure Transaction Flush Period and Outboxes {#optional-configure-transaction-flush-period-and-outboxes}
 

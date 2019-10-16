@@ -30,7 +30,7 @@ To complete this tutorial the following is needed:
 1. [AEM Screens Player](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-screens-introduction.html)
 1. Local Development Environment
 
-The tutorial steps and screen shots are performed using [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp). [Eclipse](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/aem-eclipse.html) or [IntelliJ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-intellij.html) IDEs can also be used to complete the tutorial. More information on using an IDE to develop [with AEM can be found here.](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html#eclipse-ide)
+The tutorial steps and screen shots are performed using [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp). [Eclipse](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/aem-eclipse.html) or [IntelliJ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-intellij.html) IDEs can also be used to complete the tutorial. More information on using an IDE to develop [with AEM can be found here.](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html#eclipse-ide)
 
 >[!NOTE]
 >
@@ -274,7 +274,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
 
 ## Create Client-Side Libraries {#clientlibs}
 
-Client-Side Libraries provide a mechanism to organize and manage CSS and JavaScript files necessary for an AEM implementation. More information about using [Client-Side Libraries can be found here.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/clientlibs.html)
+Client-Side Libraries provide a mechanism to organize and manage CSS and JavaScript files necessary for an AEM implementation. More information about using [Client-Side Libraries can be found here.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 
 AEM Screens components are rendered differently in Edit mode vs. Preview/Production mode. Two client libraries will be created, one for Edit mode and a second for Preview/Production.
 
@@ -300,7 +300,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    The categories property is a string that identifies the client library. The cq.screens.componentscategory is used in both Edit and Preview/Production mode. Therefore any CSS/JS defined in the sharedclientlib is loaded in all modes.
 
-   It is a best practice to never expose any paths directly to /apps in a production environment. The allowProxy property ensures the client library CSS and JS is referenced via a prefix of/etc.clientlibs. More information about the [allowProxy property can be found here.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/clientlibs.html#main-pars_title_8ced)
+   It is a best practice to never expose any paths directly to /apps in a production environment. The allowProxy property ensures the client library CSS and JS is referenced via a prefix of/etc.clientlibs. More information about the [allowProxy property can be found here.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html#main-pars_title_8ced)
 
 1. Create file named `css.txt` beneath the shared folder.
 
@@ -388,7 +388,7 @@ A third clientlibrary category: `cq.screens.components.edit` could be used to ad
 
 ## Create a Design Page {#design-page}
 
-AEM Screens uses [static Page Templates](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/page-templates-static.html) and [Design configurations](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/default-components-designmode.html) for global changes. Design configurations are frequently used to configure allowed components for the Parsys on a channel. A best practice is to store these configurations in an app-specific way.
+AEM Screens uses [static Page Templates](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-static.html) and [Design configurations](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/default-components-designmode.html) for global changes. Design configurations are frequently used to configure allowed components for the Parsys on a channel. A best practice is to store these configurations in an app-specific way.
 
 Below a We.Retail Run Design page is created that will store all configurations specific to the We.Retail Run project.
 

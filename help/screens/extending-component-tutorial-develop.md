@@ -55,7 +55,7 @@ Custom Poster component is created by extending the Image component.
 
 ## Create the Poster Component {#poster-cmp}
 
-The Poster component extends the out of the box screens Image component. A mechanism of Sling, `sling:resourceSuperType`, is used to inherit the core functionality of the Image component without having to copy and paste. More information about the basics of [Sling Request Processing can be found here.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/the-basics.html#SlingRequestProcessing)
+The Poster component extends the out of the box screens Image component. A mechanism of Sling, `sling:resourceSuperType`, is used to inherit the core functionality of the Image component without having to copy and paste. More information about the basics of [Sling Request Processing can be found here.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/the-basics.html#SlingRequestProcessing)
 
 The Poster component is rendered in full screen in preview/production mode. In edit mode, it is important to render the component differently in order to facilitate authoring the sequence channel.
 
@@ -119,7 +119,7 @@ The Poster component is rendered in full screen in preview/production mode. In e
 
    Copied dialog from /libs/wcm/foundation/components/image/cq:dialog to /apps/weretail-run/components/content/poster
 
-   The Screens `image` component is supertyped to the WCM Foundation `image` component. Therefore the `poster` component inherits functionality from both. The dialog for the poster component is made up of a combination of the Screens and Foundation dialogs. Features of the [Sling Resource Merger](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/sling-resource-merger.html) are used to hide irrelevant dialog fields and tabs that are inherited from the supertyped components.
+   The Screens `image` component is supertyped to the WCM Foundation `image` component. Therefore the `poster` component inherits functionality from both. The dialog for the poster component is made up of a combination of the Screens and Foundation dialogs. Features of the [Sling Resource Merger](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/sling-resource-merger.html) are used to hide irrelevant dialog fields and tabs that are inherited from the supertyped components.
 
 1. Update the cq:dialog beneath `/apps/weretail-run/components/content/poster` with the following changes represented in XML:
 
@@ -301,7 +301,7 @@ The Poster component is rendered in full screen in preview/production mode. In e
 
 ## Create Client-Side Libraries {#clientlibs}
 
-Client-Side Libraries provide a mechanism to organize and manage CSS and JavaScript files necessary for an AEM implementation. More information about using [Client-Side Libraries can be found here.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/clientlibs.html)
+Client-Side Libraries provide a mechanism to organize and manage CSS and JavaScript files necessary for an AEM implementation. More information about using [Client-Side Libraries can be found here.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 
 AEM Screens components are rendered differently in Edit mode vs. Preview/Production mode. Two sets of client libraries are created, one for Edit mode and a second for Preview/Production.
 
@@ -326,7 +326,7 @@ AEM Screens components are rendered differently in Edit mode vs. Preview/Product
 
    The `categories` property is a string that identifies the client library. The `cq.screens.components` category is used in both Edit and Preview/Production mode. Therefore any CSS/JS defined in the `shared` clientlib is loaded in all modes.
 
-   It is a best practice to never expose any paths directly to /apps in a production environment. The `allowProxy` property ensures the client library CSS and JS is referenced via a prefix of `/etc.clientlibs`. More information about the [allowProxy property can be found here.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/clientlibs.html#main-pars_title_8ced)
+   It is a best practice to never expose any paths directly to /apps in a production environment. The `allowProxy` property ensures the client library CSS and JS is referenced via a prefix of `/etc.clientlibs`. More information about the [allowProxy property can be found here.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html#main-pars_title_8ced)
 
 1. Create file named `css.txt` beneath the shared folder.
 

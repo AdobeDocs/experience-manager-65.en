@@ -77,9 +77,9 @@ The `following`component lists the members that are either following the current
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Social Graph API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [Social Graph API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Social Graph Endpoints](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Social Graph Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Server-side Customizations](server-customize.md)
 

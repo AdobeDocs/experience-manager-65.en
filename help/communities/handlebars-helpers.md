@@ -178,7 +178,7 @@ A helper to return content depending on an equality conditional.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-A block helper that tests the current value of [WCM mode](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) against a string separated list of modes.
+A block helper that tests the current value of [WCM mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) against a string separated list of modes.
 
 ### Parameters {#parameters-4}
 
@@ -188,7 +188,7 @@ A block helper that tests the current value of [WCM mode](https://helpx.adobe.co
 
 * **mode**: String
 
-  (optional) A comma separated list of [WCM modes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
+  (optional) A comma separated list of [WCM modes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
 
 ### Example {#example-2}
 
@@ -524,7 +524,7 @@ Custom helpers must be implemented on the server-side as well as the client-side
 
 ### Server-side Custom Helpers {#server-side-custom-helpers}
 
-To implement and register a custom SCF helper on the server-side, simply implement the Java interface [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it an [OSGi Service](../../help/sites-developing/the-basics.md#osgi) and install it as part of an OSGi bundle.
+To implement and register a custom SCF helper on the server-side, simply implement the Java interface [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it an [OSGi Service](../../help/sites-developing/the-basics.md#osgi) and install it as part of an OSGi bundle.
 
 For example:
 

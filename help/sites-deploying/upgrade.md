@@ -14,7 +14,7 @@ targetaudience: target-audience upgrader
 
 ---
 
-# Upgrading to AEM 6.5{#upgrading-to-aem}
+# Upgrading to AEM 6.5 {#upgrading-to-aem}
 
 In this section, we cover upgrading an AEM installation to AEM 6.5:
 
@@ -28,7 +28,7 @@ In this section, we cover upgrading an AEM installation to AEM 6.5:
 * [Post Upgrade Checks and Troubleshooting](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)
 * [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
-* [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring-in-aem64.md)
+* [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring-in-aem65.md)
 
 For easier reference to the AEM instances involved in these procedures, the following terms are used throughout these articles:
 
@@ -68,7 +68,7 @@ For more details about what else has changed in recent AEM versions, see the com
 * [https://helpx.adobe.com/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
 * [https://helpx.adobe.com/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
 * [https://helpx.adobe.com/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/experience-manager/6-4/release-notes.html)
-* [https://helpx.adobe.com/experience-manager/6-5/release-notes.html](https://helpx.adobe.com/experience-manager/6-4/release-notes.html)
+* [https://helpx.adobe.com/experience-manager/6-5/release-notes.html](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
 
 ## Upgrade Overview {#upgrade-overview}
 

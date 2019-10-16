@@ -20,7 +20,7 @@ targetaudience: target-audience new
 
 >[!VIDEO](https://video.tv.adobe.com/v/21353?quality=9)
 
-Additional reference material for [What is AEM Screens?](/help/sites-deploying/aem-screens-introduction.md) and a [Glossary](/help/screens/screens-glossary.md) of terms. [](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/aem-screens-introduction.html)
+Additional reference material for [What is AEM Screens?](/help/screens/aem-screens-introduction.md) and a [Glossary](/help/screens/screens-glossary.md) of terms. [](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/aem-screens-introduction.html)
 
 ## Authoring Channels and Schedules - Part 1 {#channels-and-schedules-part-2}
 

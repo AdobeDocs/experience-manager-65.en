@@ -39,7 +39,7 @@ See [SRP and UGC Essentials](srp-and-ugc.md) for information regarding utility m
 
 ## UGC Search API {#ugc-search-api}
 
-The [UGC common store](working-with-srp.md) is provided by one of a variety of storage resource providers (SRPs), each possibly having a different native query language. Therefore, regardless of the SRP chosen, custom code should use methods from the [UGC API package](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) which will invoke the query language appropriate for the chosen SRP.
+The [UGC common store](working-with-srp.md) is provided by one of a variety of storage resource providers (SRPs), each possibly having a different native query language. Therefore, regardless of the SRP chosen, custom code should use methods from the [UGC API package](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) which will invoke the query language appropriate for the chosen SRP.
 
 ### ASRP Searches {#asrp-searches}
 

@@ -50,7 +50,7 @@ AEM is shipped with various mechanisms to help you manage your repository:
 
 In addition to explicit purging by using the purge tool, the Version Manager can be configured to purge old versions when new versions are created.
 
-To configure the Version Manager, [create a configuration](/help/help/sites-deploying/configuring-osgi.md) for:
+To configure the Version Manager, [create a configuration](/help/sites-deploying/configuring-osgi.md) for:
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
