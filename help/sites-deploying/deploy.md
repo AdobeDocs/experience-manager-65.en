@@ -313,8 +313,8 @@ The above section should give you a good understanding of the basics of AEM inst
 * [Best Practices](/help/sites-deploying/best-practices.md)
 * [Deploying Communities](/help/communities/deploy-communities.md)
 * [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
-* [Performance Guidelines](/help/sites-deploying/DO-NOT-DELETE-performance-guidelines-pdf.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md)
 * [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Maintenance Release Vehicle Definitions](/help/sites-deploying/maintenance-release-vehicle-definitions.md)
-* [What is AEM Screens?](/help/sites-deploying/aem-screens-introduction.md)
+* [What is AEM Screens?](/help/screens/aem-screens-introduction.md)
 

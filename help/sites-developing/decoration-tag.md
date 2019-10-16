@@ -70,7 +70,7 @@ The behavior of the wrapper can also be fully controlled.
 
 It is possible to fully control the behavior of the wrapper tags from HTL scripts and their associated logic.
 
-For further information about developing in HTL see the [HTL documentation](https://helpx.adobe.com/experience-manager/htl/user-guide.html).
+For further information about developing in HTL see the [HTL documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
 
 #### Decision Tree {#decision-tree}
 

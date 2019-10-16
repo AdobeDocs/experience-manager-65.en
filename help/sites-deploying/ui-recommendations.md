@@ -107,7 +107,7 @@ See [Selecting Your UI](/help/sites-authoring/select-ui.md) for information abou
 
 For details of the enhancements made to the touch-enabled UI in the AEM 6.5 see [What's New](/help/release-notes/release-notes.md#what-s-new) in the Release Notes.
 
-A complete overview see the [Touch UI Feature Status](/help/touch-ui-features-status.md) page
+A complete overview see the [Touch UI Feature Status](/help/release-notes/touch-ui-features-status.md) page
 
 ### Resources to Help {#resources-to-help}
 

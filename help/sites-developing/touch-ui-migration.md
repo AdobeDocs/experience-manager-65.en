@@ -132,9 +132,8 @@ You can also costomize the consoles:
 Although not directly related to a migration to the touch UI, there are related issues that are worth considering at the same time, as they are also recommended practice:
 
 * [Templates](/help/sites-developing/templates.md) - [Editable templates](/help/sites-developing/page-templates-editable.md)
-
-* [Core Components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html)
-* [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
+* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 
 >[!NOTE]
 >
@@ -144,9 +143,9 @@ Although not directly related to a migration to the touch UI, there are related 
 
 For full information on developing AEM see the collection of resources under:
 
-* [Developing User Guide](/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/introduction.ug.js)
+* [Developing User Guide](/help/sites-developing/home.md)
 * [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Sites Tutorials and Videos](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+* [AEM 6.5 Sites Tutorials and Videos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
 * [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)

@@ -29,7 +29,7 @@ Before beginning your upgrade, it is important to follow these maintenance tasks
 * [Disable Custom Scheduled Jobs](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
 * [Execute Offline Revision Cleanup](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Execute Datastore Garbage Collection](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
-* [Upgrade the Database Schema If Needed](/help/sites-deploying/pre-upgrade-maintenance-tasks.htm#upgradethedatabaseschemaifneeded)
+* [Upgrade the Database Schema If Needed](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
 * [Delete Users that Might Hinder the Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
 
 * [Rotate Log Files](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)

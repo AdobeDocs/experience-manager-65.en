@@ -15,11 +15,11 @@ pagetitle: Foundation Components
 
 ---
 
-# Foundation Components{#foundation-components}
+# Foundation Components {#foundation-components}
 
 >[!CAUTION]
 >
->Most Foundation Components are now deprecated wtih AEM 6.5. See the [release notes](/help/release-notes/deprecated-removed-features.md) for further informtaion.
+>Most Foundation Components are now deprecated with AEM 6.5. See the [release notes](/help/release-notes/deprecated-removed-features.md) for further informtaion.
 >
 >Adobe recommends leveraging the more modern and extensible [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in AEM projects. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
@@ -459,7 +459,7 @@ This component provides a grid-paragraph system to allow you to add and position
 
 >[!NOTE]
 >
->This component has been implemented with [HTML Template Language (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html).
+>This component has been implemented with [HTML Template Language (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
 
 ### List {#list}
 
@@ -965,7 +965,7 @@ Form components are used to create forms for visitors to submit input. Forms and
 
 >[!NOTE]
 >
->See [AEM Forms Help](/forms/user-guide.md) for information about AEM Forms.
+>See [AEM Forms Help](/help/forms/home.md) for information about AEM Forms.
 
 Forms are built up from several different components:
 
@@ -1089,7 +1089,7 @@ In between the start and end of a form, you can add form components that define 
 
 >[!NOTE]
 >
->The foundation components form component only supports the use of other foundation components form components (button, text, hidden, etc.). Using [core components](https://helpx.adobe.com/experience-manager/core-components/user-guide.html) form components within a foundation component form (and vice versa) is not supported.
+>The foundation components form component only supports the use of other foundation components form components (button, text, hidden, etc.). Using [core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) form components within a foundation component form (and vice versa) is not supported.
 
 #### Start of Form {#start-of-form}
 
