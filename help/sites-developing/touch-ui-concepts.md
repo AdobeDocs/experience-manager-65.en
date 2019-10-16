@@ -57,7 +57,7 @@ The touch-enabled UI includes:
 
 >[!NOTE]
 >
->Nearly all AEM functionality has been ported to the touch-enabled UI. However in some limited cases, functionality will revert to the classic UI. See [Touch UI Feature Status](../../../release-notes/touch-ui-features-status.md) for more information.
+>Nearly all AEM functionality has been ported to the touch-enabled UI. However in some limited cases, functionality will revert to the classic UI. See [Touch UI Feature Status](/help/release-notes/touch-ui-features-status.md) for more information.
 
 The touch-enabled UI has been designed by Adobe to provide consistency in the user experience across multiple products. It is based on:
 

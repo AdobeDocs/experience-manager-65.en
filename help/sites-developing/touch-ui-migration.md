@@ -99,7 +99,7 @@ In other words, migrating a section of your UI from the classic UI to the touch 
 
 Before you start, check the status and related recommendations:
 
-* [Touch UI Features Status](../../../release-notes/touch-ui-features-status.md)
+* [Touch UI Features Status](/help/release-notes/touch-ui-features-status.md)
 * [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md)
 
 The basics of developing the touch UI will provide a solid basis:

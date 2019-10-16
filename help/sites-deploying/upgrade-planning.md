@@ -133,7 +133,7 @@ Review the Technical Requirements for AEM 6.5 and ensure that your current hardw
 
 #### Content Restructuring Considerations {#content-restructuring-considerations}
 
-AEM has introduced changes to the repository structure that will help in making upgrades more seamless. The changes involve moving content out of the /etc folder to folders including /libs, /apps, and /content, based on whether Adobe or a customer owns the content, thus limiting the chances of overwriting content during releases. The repository restructuring has been done in such a way that it should not require code changes at the time of 6.5 upgrade, although it’s recommended to review the details at [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring-in-aem64.md) while planning an upgrade.
+AEM has introduced changes to the repository structure that will help in making upgrades more seamless. The changes involve moving content out of the /etc folder to folders including /libs, /apps, and /content, based on whether Adobe or a customer owns the content, thus limiting the chances of overwriting content during releases. The repository restructuring has been done in such a way that it should not require code changes at the time of 6.5 upgrade, although it’s recommended to review the details at [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring-in-aem65.md) while planning an upgrade.
 
 ### Assessing Upgrade Complexity {#assessing-upgrade-complexity}
 
@@ -141,7 +141,7 @@ Due to the wide variety in the amount and nature of customizations that our cust
 
 There are two approaches you can take to assessing the complexity of the upgrade, a preliminary phase can just use the newly introduced Pattern Detector which is available to be run on your AEM 6.1, 6.2 and 6.3 instances. The pattern detector is the easiest way to assess the overall complexity of the upgrade to be expected using reported patterns. The pattern detector report includes patterns for identifying unavailable APIs that are in use by the custom codebase(this was done using pre-upgrade compatiblity checks in 6.3).
 
-After the initial assessment, a more comprehensive next step could be to perform an upgrade on a test instance and perform some basic smoke testing. Adobe also provides some . Additionally, the list of [Deprecated and Removed Features](../../../release-notes/deprecated-removed-features.md) should be reviewed not only for the version that you are upgrading to, but also for any versions between your source and target versions. For example, if upgrading from AEM 6.2 to 6.5, it is important to review the AEM 6.3 deprecated and removed features in addition to those for AEM 6.5.
+After the initial assessment, a more comprehensive next step could be to perform an upgrade on a test instance and perform some basic smoke testing. Adobe also provides some . Additionally, the list of [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md) should be reviewed not only for the version that you are upgrading to, but also for any versions between your source and target versions. For example, if upgrading from AEM 6.2 to 6.5, it is important to review the AEM 6.3 deprecated and removed features in addition to those for AEM 6.5.
 
 ![](assets/trei_cropped.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Upgrade to AEM 6.5 Forms
 seo-title: Upgrade to AEM 6.5 Forms
-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms. 
-seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms. 
+description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -48,12 +48,12 @@ Following is an overview of the procedure to upgrade an existing LiveCycle ES4 S
         * In AEM Forms, Adaptive Forms, Correspondence Management, HTML5 Forms (Known as Mobile Forms in LiveCycle ES4 SP1), Forms Portal, HTML Workspace, Process Reporting, Forms centric workflows on OSGi, capabilities use Content Repository. If you plan to use AEM Forms for these capabilities, then Content Repository is required.
         * You do not require Content Repository for AEM Forms Document Security.
 
-       Moreover, repository type of LiveCycle and AEM Forms are different. For available repository types and related information, see [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md). 
-    
+       Moreover, repository type of LiveCycle and AEM Forms are different. For available repository types and related information, see [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+
     1. Create a backup of LiveCycle ES4 SP1 content and data:
 
        Create a backup of LiveCycle ES4 SP1 database, Global Data Storage (GDS), and crx-repository (not required for document security). If you're upgrading to MongoMK or RDBMK persistence, export LiveCycle ES4 SP1 correspondence management assets in a .cmp file and forms assets as an AEM package.
-    
+
     1. Ensure your existing platform (that is, application server, database, operating system, Adobe Acrobat, third-party applications, and hardware) is supported for AEM 6.5 Forms on JEE. For information about supported hardware and software, refer to the [Supported Platform Combinations](/help/forms/using/aem-forms-jee-supported-platforms.md) document.
 
        If you create a fresh instance of the database, import the data backed up in step 3 to the database. For information about how to import data to a database, see documentation of corresponding database vendor.
@@ -64,7 +64,7 @@ Following is an overview of the procedure to upgrade an existing LiveCycle ES4 S
 
 1. Perform the upgrade:
 
-    1. Install AEM 6.5 Forms on JEE on a new server by running the installation program. The installer places all of the required files onto your computer, within one installation directory structure.  
+    1. Install AEM 6.5 Forms on JEE on a new server by running the installation program. The installer places all of the required files onto your computer, within one installation directory structure.
     1. After installation is complete, run the **Configuration Manager** to configure various AEM Forms modules and set appropriate configurations. Along with configuring settings, it allows to specify the path of Global Data Storage (GDS) and crx-repository.
 
        >[!NOTE]
@@ -84,7 +84,7 @@ Following is an overview of the procedure to upgrade an existing LiveCycle ES4 S
 
    >[!NOTE]
    >
-   >In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
+   >In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
 
 **Depending on your existing environment and application server, choose one of the following documents and follow the detailed instructions:**
 
@@ -101,39 +101,39 @@ Upgrading LiveCycle ES3 to AEM 6.5 Forms on JEE is an out-of-place upgrade, as i
 
 Following is an overview of the procedure to upgrade an existing LiveCycle ES3 server to AEM 6.5 Forms. For detailed instructions, see the documents listed at the end of the procedure.
 
-1.  Before you upgrade:  
-    
+1.  Before you upgrade:
+
     1.  Download the AEM 6.5 Forms on JEE installer from the [Adobe Licensing Website (LWS)](https://licensing.adobe.com/). You require a valid Maintenance & Support contract to download the installer.
     1.  Decide the Content Repository (CRX Repository) type to use. Only a few AEM Forms on JEE capabilities use Content Repository persistence to store content and assets. Install and configure Content Repository only if you plan to use such AEM Forms on JEE capabilities:
-        
+
         *   In AEM Forms, Adaptive Forms, Correspondence Management, HTML5 Forms, Forms Portal, HTML Workspace, Process Reporting, and Forms centric workflows on OSGi capabilities use Content Repository. If you plan to use AEM Forms for these capabilities, then Content Repository is required.
         *   You do not require Content Repository for AEM Forms Document Security.
-        
+
         Moreover, repository type of LiveCycle and AEM Forms are different. For available repository types and related information, see [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 
     1.  Create a backup of LiveCycle ES3 database, Global Data Storage (GDS), and Content Repository (not required for document security). If you're upgrading to MongoMK or RDBMK persistence, export LiveCycle ES3 correspondence management assets as an archive.
     1.  Ensure your existing platform (that is, application server, database, operating system, Adobe Acrobat, third-party applications, and hardware) is supported for AEM 6.5 Forms on JEE. For information about supported hardware and software, refer to the [Supported Platform Combinations](/help/forms/using/aem-forms-jee-supported-platforms.md) document.
-        
-        If you create a fresh instance of the database, import the data backed up in step 3 to the database. For information about how to import data to a database, see documentation of corresponding database vendor.  
-        
+
+        If you create a fresh instance of the database, import the data backed up in step 3 to the database. For information about how to import data to a database, see documentation of corresponding database vendor.
+
         >[!NOTE] If you are using RDBMK persistence format, use single database for both repository persistence and document services running on AEM Forms on JEE.
-        
+
 1.  Perform the upgrade:
-    
+
     1.  Install AEM 6.5 Forms on JEE on a new server by running the installation program. The installer places all of the required files onto your computer, within one installation directory structure.
     1.  After installation is complete, run the **Configuration Manager** to configure various AEM Forms modules and set appropriate configurations. Along with configuring settings, it allows to specify the path of Global Data Storage (GDS) and crx-repository.
-        
-        >[!NOTE] On the Upgrade Task Selection screen, select the **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option. The **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option allows the configuration manager to upgrade from LiveCycle ES3 to AEM 6.5 Forms.  
-        
+
+        >[!NOTE] On the Upgrade Task Selection screen, select the **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option. The **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** option allows the configuration manager to upgrade from LiveCycle ES3 to AEM 6.5 Forms.
+
     1.  (Not required for AEM Forms document security module) Upgrade and import the CRX repository to AEM 6.5 Forms server.
-        
+
         >[!NOTE] After the crx-repository is upgraded and the content is migrated, change the password of the admin account. For detailed instructions, see [Changing the Password for an Existing User](/help/sites-administering/granite-user-group-admin.md).
 1.  Perform the post-deployment tasks to verify login credentials, configure document services, correspondence management, document security, and more depending on your use case.
-1.  Verify that the server is upgraded successfully:  
-    
-    Perform a few routine operations on upgraded AEM Forms server to ensure that the server is upgraded successfully. You can fill and submit a few migrated forms or protect documents to ensure a successful upgrade.  
-    
-    >[!NOTE] In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
+1.  Verify that the server is upgraded successfully:
+
+    Perform a few routine operations on upgraded AEM Forms server to ensure that the server is upgraded successfully. You can fill and submit a few migrated forms or protect documents to ensure a successful upgrade.
+
+    >[!NOTE] In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
 
 **Depending on your existing environment and application server, choose one of the following documents and follow the detailed instructions:**
 

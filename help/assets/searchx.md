@@ -23,7 +23,7 @@ You can also add additional tabs to the AEM Assets admin panel.
 
 >[!CAUTION]
 >
->As of AEM 6.4, Classic UI is deprecated. For announcement, see [Deprecated and Removed Features](../../release-notes/deprecated-removed-features.md). You are encouraged to use Touch-enabled UI. For customizations, see [Search Facets](/help/assets/search-facets.md).
+>As of AEM 6.4, Classic UI is deprecated. For announcement, see [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md). You are encouraged to use Touch-enabled UI. For customizations, see [Search Facets](/help/assets/search-facets.md).
 
 ## Overlaying {#overlaying}
 

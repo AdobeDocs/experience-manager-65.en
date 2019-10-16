@@ -1,8 +1,8 @@
 ---
 title: Landing Pages
 seo-title: Landing Pages
-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page. 
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page. 
+description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
+seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
 uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -28,7 +28,7 @@ Preparing the design package for importing is covered in [Extending and Configur
 
 >[!CAUTION]
 >
->The Design Importer, used to import landing pages, [has been deprecated with AEM 6.5](../../../release-notes/deprecated-removed-features.md#deprecated-features).
+>The Design Importer, used to import landing pages, [has been deprecated with AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
@@ -42,18 +42,18 @@ The Landing Pages feature in AEM allows marketers to work with web designers at 
 
 In AEM, you create landing pages by performing the following steps:
 
-1. Create a page in AEM that contains the landing pages canvas. AEM ships with a sample called **Importer Page**.  
+1. Create a page in AEM that contains the landing pages canvas. AEM ships with a sample called **Importer Page**.
 
 1. [Prepare the HTML and assets.](/help/sites-administering//extending-the-design-importer-for-landingpages.md)
-1. Package the resources into a ZIP file referred to here as the Design Package.  
-1. Import the design package on the importer page.  
+1. Package the resources into a ZIP file referred to here as the Design Package.
+1. Import the design package on the importer page.
 1. Modify and publish the page.
 
 ### Desktop Landing Pages {#desktop-landing-pages}
 
 A sample landing page in AEM looks as follows:
 
-![](assets/chlimage_1-2.jpeg) 
+![](assets/chlimage_1-2.jpeg)
 
 ### Mobile Landing Pages {#mobile-landing-pages}
 
@@ -73,8 +73,8 @@ Mobile landing page is created as a child page of the desktop landing page. To o
 
 To make parts of the HTML that gets imported editable within AEM, you can map content within the Landing pages HTML to AEM components directly. The design importer understands the following components per default:
 
-* Text, for any text  
-* Title, for content in H1-6 tags  
+* Text, for any text
+* Title, for content in H1-6 tags
 * Image, for images that should be made exchangeable
 * Call To Actions:
 
@@ -94,7 +94,7 @@ The Text component lets you enter a text block using a WYSIWYG editor. See [Text
 
 The following is an example of a text component on a landing page:
 
-![](assets/chlimage_1-24.png) 
+![](assets/chlimage_1-24.png)
 
 #### Title {#title}
 
@@ -104,7 +104,7 @@ The title component lets you display a title and configure the size (h1-6). See 
 
 The following is an example of a title component on a landing page:
 
-![](assets/chlimage_1-26.png) 
+![](assets/chlimage_1-26.png)
 
 #### Image {#image}
 
@@ -114,7 +114,7 @@ The image component displays an image that you can either drag and drop from the
 
 The following is an example of an image component on a landing page:
 
-![](assets/chlimage_1-28.png) 
+![](assets/chlimage_1-28.png)
 
 #### Call to Action (CTA) {#call-to-action-cta}
 
@@ -150,7 +150,7 @@ This CTA component can be used to add a text link on the landing page. That link
 
 The following is an example of a click through link:
 
-![](assets/chlimage_1-30.png) 
+![](assets/chlimage_1-30.png)
 
 #### Graphical Link {#graphical-link}
 
@@ -175,7 +175,7 @@ This CTA component can be used to add any graphical image with link on the landi
 
 The following is an example graphical link:
 
-![](assets/chlimage_1-32.png) 
+![](assets/chlimage_1-32.png)
 
 ### Call to Action (CTA) Lead Form {#call-to-action-cta-lead-form}
 
@@ -187,20 +187,20 @@ An example CTA lead form looks like this:
 
 CTA lead forms are built up from several different components:
 
-* **Lead Form** 
-  The lead form component defines the beginning and end of a new lead form on a page. Other components can then be placed in between these elements, such as Email Id, First Name, and so on. 
+* **Lead Form**
+  The lead form component defines the beginning and end of a new lead form on a page. Other components can then be placed in between these elements, such as Email Id, First Name, and so on.
 
-* **Form fields and elements** 
+* **Form fields and elements**
   Form fields and elements can include text boxes, radio buttons, images, and so on. The user often completes an action in a form field, such as typing text. See individual form elements for more information.
 
-* **Profile Components** 
+* **Profile Components**
   Profile components relate to visitor profiles used for social collaboration and other areas where visitor personalization is required.
 
 The preceding shows an example form; it is comprised of the **Lead Form** component (start and end), with **First Name** and **Email Id** fields used for input and a **Submit** field
 
 From the sidekick, the following components are avaiable for the CTA Lead Form:
 
-![](assets/chlimage_1-34.png) 
+![](assets/chlimage_1-34.png)
 
 #### Settings common to many lead form components {#settings-common-to-many-lead-form-components}
 
@@ -208,16 +208,16 @@ Although each of the lead form components has a different purpose, many are comp
 
 When configuring any of the form components the following tabs are available in the dialog:
 
-* **Title and Text** 
+* **Title and Text**
   Here you need to specify the basic information, such as the title of the component and any accompanying text. Where appropriate, it also allows you to define other key information such as whether the field is multi-selectable and items available for selection.
 
-* **Initial Values** 
+* **Initial Values**
   Allows you to specify a default value.
 
-* **Constraints** 
+* **Constraints**
   Here you can specify whether a field is required and place constraints are on that field (for example, must be numeric, and so on).
 
-* **Styling** 
+* **Styling**
   Indicates the size and styling of the fields.
 
 >[!NOTE]
@@ -298,32 +298,32 @@ This is an optional field that specifies the path to a node in the repository. W
 
 If you are validating the complete form, also include one of the following:
 
-* A script for client validation:  
+* A script for client validation:
   ` /apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
 
-* A script for validation on the server side:  
+* A script for validation on the server side:
   ` /apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
 
 **Action Configuration** Depending on the selection in Post Options, the Action Configuration changes. For example, when you select Create Lead, you can configure what list the lead is added to.
 
 ![](assets/chlimage_1-45.png)
 
-* **Show Submit Button** 
+* **Show Submit Button**
   Indicates whether a Submit button should be shown or not.
 
-* **Submit Name** 
+* **Submit Name**
   An identifier if you are using multiple submit buttons in a form.
 
-* **Submit Title** 
+* **Submit Title**
   The name that appears on the button, such as Submit or Send.
 
-* **Show Reset Button** 
+* **Show Reset Button**
   Select check box to make the Reset button visible.
 
-* **Reset Title** 
+* **Reset Title**
   The name that appears on the Reset button.
 
-* **Description** 
+* **Description**
   Information that appears below the button.
 
 ## Creating a Landing Page {#creating-a-landing-page}
@@ -355,7 +355,7 @@ Before you can import your Landing Page design, you need to create an importer p
 To create a new landing page:
 
 1. Go to the **Websites** console.
-1. Select your campaign in the left pane. 
+1. Select your campaign in the left pane.
 1. Click **New** to open the** Create Page **window.
 1. Select the **Importer Page** template and add a title and optionally, a name, and click **Create**.
 
@@ -408,7 +408,7 @@ This section describes how to do the following:
 
 When you import the design package, **Clear Design** and **Download Imported Zip** are available in the settings menu of the page:
 
-![](assets/chlimage_1-3-1.png) 
+![](assets/chlimage_1-3-1.png)
 
 ### Downloading the imported design package {#downloading-the-imported-design-package}
 
@@ -424,7 +424,7 @@ At any time, you can view information about the last import by clicking the blue
 
 In case the imported design package has some issues, for example, if it refers to images/scripts that do not exist within the package, and so on, then the design importer displays such issues in the form of a list. To view the list of issues, in the classic user interface, click the issues link in the Landing Page toolbar. In the following image, clicking on **Issues** link opens the Import Issues window.
 
-![](assets/chlimage_1-3.jpeg) 
+![](assets/chlimage_1-3.jpeg)
 
 ### Resetting a landing page {#resetting-a-landing-page}
 

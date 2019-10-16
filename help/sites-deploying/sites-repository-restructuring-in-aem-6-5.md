@@ -16,22 +16,22 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 
 **With 6.5 Upgrade**
 
-* [ContextHub Segments](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#contexthub-segments)
+* [ContextHub Segments](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#contexthub-segments)
 
 **Prior to 6.5 Upgrade**
 
-* [Adobe Analytics Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#adobe-analytics-client-libraries)
-* [Classic Microsoft Word to Web Page Designs](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#classic-microsoft-word-to-web-page-designs)
-* [Mobile Device Emulator Configurations](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#mobile-device-emulator-configurations)
-* [Multi-site Manager Blueprint Configurations](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
-* [Multi-site Manager Rollout Configurations](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
-* [Page Event Notification E-mail Template](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#page-event-notification-e-mail-template)
-* [Page Scaffolding](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#page-scaffolding)
-* [Responsive Grid LESS](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#responsive-grid-less)
-* [Static Template Designs](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#static-template-designs)
-* [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#adobe-search-and-promote-integration-client-libraries)
-* [Adobe Target Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#adobe-target-integration-client-libraries)
-* [WCM Foundation Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#wcm-foundation-client-libraries)
+* [Adobe Analytics Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-analytics-client-libraries)
+* [Classic Microsoft Word to Web Page Designs](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
+* [Mobile Device Emulator Configurations](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#mobile-device-emulator-configurations)
+* [Multi-site Manager Blueprint Configurations](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
+* [Multi-site Manager Rollout Configurations](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-rollout-configurations)
+* [Page Event Notification E-mail Template](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+* [Page Scaffolding](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
+* [Responsive Grid LESS](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
+* [Static Template Designs](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#static-template-designs)
+* [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries)
+* [Adobe Target Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-target-integration-client-libraries)
+* [WCM Foundation Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#wcm-foundation-client-libraries)
 
 ## With 6.5 Upgrade {#with-upgrade}
 

@@ -20,7 +20,7 @@ docset: aem65
 >
 >From AEM 6.5 onwards, the hobbes.js UI testing framework is deprecated. Adobe does not plan to make further enhancements to it and recommends customers to use Selenium automation.
 >
->See [Deprecated and Removed Features](../../../release-notes/deprecated-removed-features.md).
+>See [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md).
 
 AEM provides a framework for automating tests for your AEM UI. Using the framework, you write and run UI tests directly in a web browser. The framework provides ajavascript API for creating tests.
 

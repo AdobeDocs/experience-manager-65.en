@@ -20,15 +20,15 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 
 **Prior to 6.5 Upgrade**
 
-* [Asset/Collection Event E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [Classic Asset Share Designs](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [Download Asset E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [Example DRM Licenses](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [Asset/Collection Event E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#asset-collection-event-e-mail-notification-template)
+* [Classic Asset Share Designs](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#classic-asset-share-designs)
+* [Download Asset E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#download-asset-e-mail-notification-template)
+* [Example DRM Licenses](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#example-drm-licenses)
 
-* [Link Share E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [InDesign Workflow Scripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [Video Transcoding Configurations](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [Link Share E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#link-share-e-mail-notification-template)
+* [InDesign Workflow Scripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
+* [Video Transcoding Configurations](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#video-transcoding-configurations)
+* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc2)
 
 ## With 6.4 Upgrade {#with-upgrade}
 
