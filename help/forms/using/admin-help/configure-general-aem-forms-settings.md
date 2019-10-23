@@ -17,7 +17,7 @@ docset: aem65
 
 The Core Configurations page in administration console provides settings that can help improve system performance. After configuring or updating these settings, restart your application server.
 
-For information about enabling safe backup mode, see [Enabling and disabling safe backup mode](/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling_and_disabling_safe_backup_mode).
+For information about enabling safe backup mode, see [Enabling and disabling safe backup mode](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling_and_disabling_safe_backup_mode).
 
 >[!NOTE]
 >

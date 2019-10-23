@@ -30,9 +30,9 @@ AEM Forms is a powerful enterprise-class platform. Forms-centric workflow on OSG
 
 ## Deployment Topology {#deployment-topology}
 
-AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author or Processing instance (production author) to run the Forms-centric workflow on OSGi capability. A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. Do not perform any actual authoring, like creating workflows or adaptive forms, on the production author.
+AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author or Processing instance (production author) to run the Forms-centric workflow on OSGi capability. A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. Do not perform any actual authoring, like creating workflows or adaptive forms, on the production author.
 
-The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/forms/using/aem-forms-architecture-deployment.md).
+The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![](assets/recommended-topology.png)
 
@@ -52,7 +52,7 @@ Before you begin to install and configure Forms-centric workflow on OSGi, ensure
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least one AEM instance (Author or Processing) to run Forms-centric workflow on OSGi:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
-    * **Processing:** A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.
+    * **Processing:** A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.
 
     * **Publish**: An AEM instance that serves the published content to the public over the Internet or an internal network.
 

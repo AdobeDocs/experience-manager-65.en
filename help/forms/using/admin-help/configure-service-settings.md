@@ -18,7 +18,7 @@ docset: aem65
 You can use the Service Management page to configure settings for each of the services that are part of AEM forms. The available settings vary depending on the service being configured.
 
 1. In administration console, click Services &gt; Applications and Services &gt; Service Management.
-1. Stop the service before changing it. (See [Starting and stopping services](/forms/using/admin-help/starting-stopping-services.md#starting_and_stopping_services).)
+1. Stop the service before changing it. (See [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting_and_stopping_services).)
 1. Click the name of the service that you want to configure.
 1. If the service has a Configuration tab, use it to change the settings for the service. See the list of links below for details.
 
@@ -27,7 +27,7 @@ You can use the Service Management page to configure settings for each of the se
    >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the * [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) *
 
 1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying_security_settings_for_a_service).
-1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/forms/using/admin-help/topics/managing-endpoints.md).
+1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/help/forms/using/admin-help/topics/managing-endpoints.md).
 1. Click the Pooling tab and set the pooling settings. See [Configuring pooling for a service](configure-service-settings.md#configuring_pooling_for_a_service).
 1. Click Save to save your changes or click Cancel to discard them.
 1. Select the checkbox next to the service name and click Start to restart the service.

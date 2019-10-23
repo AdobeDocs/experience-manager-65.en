@@ -88,5 +88,5 @@ Transaction reporting places all the information displayed in the report and som
 
 * [Transaction Reports Overview](../../forms/using/transaction-reports-overview.md)
 * [Transaction Reports Billable APIs](../../forms/using/transaction-reports-billable-apis.md)
-* [Record a transaction for custom implementations](/forms/using/record-transaction-custom-implementation.md)
+* [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
 

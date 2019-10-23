@@ -14,7 +14,7 @@ docset: aem65
 
 # Integrating Form Bridge with custom portal for HTML5 forms{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge is a HTML5 forms bridge API that allows you to interact with a form. For the FormBridge API reference, see [FormBridge API reference](/forms/using/form-bridge-apis.md).
+FormBridge is a HTML5 forms bridge API that allows you to interact with a form. For the FormBridge API reference, see [FormBridge API reference](/help/forms/using/form-bridge-apis.md).
 
 You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form. For example, you can use API to build a wizard-like experience.
 
@@ -22,14 +22,14 @@ An existing HTML application can leverage the FormBridge API to interact with a 
 
 ## Integrating HTML5 forms to a web page {#integrating-html-forms-to-a-web-page}
 
-1. **Choose a Profile or create a Profile  
+1. **Choose a Profile or create a Profile
    **
 
     1. In the CRX DE interface, navigate to: `https://[server]:[port]/crx/de`.
     1. Log in with administrator credentials.
     1. Create a profile or choose an existing profile.
 
-       For details on how to create a profile, see [Creating a new Profile](/forms/using/custom-profile.md).
+       For details on how to create a profile, see [Creating a new Profile](/help/forms/using/custom-profile.md).
 
 1. **Modify the HTML Profile**
 
@@ -46,13 +46,13 @@ An existing HTML application can leverage the FormBridge API to interact with a 
        <head>
           <cq:include script="formRuntime.jsp"/>
            <!-- Portal Scripts and Styles -->
-          <cq:include script="portalheader.jsp"/> 
+          <cq:include script="portalheader.jsp"/>
        </head>
        <body>
            <div id="leftdiv" >
-               <div id="leftdivcontentarea">   
+               <div id="leftdivcontentarea">
                    <!-- Portal Body -->
-                 <cq:include script="portalbody.jsp"/>  
+                 <cq:include script="portalbody.jsp"/>
                </div>
            </div>
            <div id="rightdiv">
@@ -63,11 +63,11 @@ An existing HTML application can leverage the FormBridge API to interact with a 
                <!  --To assist in page transitions -- add navigation, based on scrolling -->
                <cq:include  script="../nav/scroll/nav_footer.jsp"/>
                <cq:include script="footer.jsp"/>
-               </div>    
+               </div>
            </div>
        </body>
    </html>
-   
+
    ```
 
    >[!NOTE]

@@ -15,7 +15,7 @@ docset: aem65
 
  ![](assets/09-style-your-adaptive-form_small.png)
 
-| This tutorial is a step in the [Create your first Interactive Communication](/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
+| This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
 |---|
 
 Once you have created all the building blocks such as form data model, document fragments, templates, and themes for the web version, you can start creating an Interactive Communication.
@@ -74,14 +74,10 @@ The following is the list of resources that have already been created in this tu
 1. Tap the Chart component and select ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure). The chart properties display in the left pane:
 
     1. Specify a name for the chart.
-    1. Select **Pie** from the **Chart Type **drop-down list.
-
+    1. Select **Pie** from the **Chart Type** drop-down list.
     1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png).
-
     1. Select **Frequency** from the **Function** drop-down list.
-
     1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png).
-
     1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the chart properties.
 
 1. Go to the **Assets** tab and apply the filter to display only the layout fragments in the left pane. Drag-and-drop the **table_lf** layout fragment to the **Itemised Calls** target area.
@@ -94,9 +90,7 @@ The following is the list of resources that have already been created in this tu
 1. Tap the Image component and select ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure). The image properties display in the left pane:
 
     1. Specify **PayNow** as the name of the image in the **Name** field.
-
     1. Tap **Upload**, select the image saved on the local file system, and tap **Open**.
-
     1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the image properties.
 
 1. Repeat steps 13 and 14 to add **ValueAddedServices** image to the **ValueAddedServices** target area.

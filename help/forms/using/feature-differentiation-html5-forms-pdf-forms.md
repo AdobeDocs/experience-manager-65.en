@@ -61,7 +61,7 @@ The following table specifies the feature support provided for HTML5 forms and P
   </tr>
   <tr>
    <td>XFA Script API</td>
-   <td>Supports the most commonly used XFA script constructs. For details list of supported constructs, see <a href="/forms/using/scripting-support.md">scripting support</a>.</td>
+   <td>Supports the most commonly used XFA script constructs. For details list of supported constructs, see <a href="/help/forms/using/scripting-support.md">scripting support</a>.</td>
    <td>Supports all XFA script constructs.</td>
   </tr>
   <tr>

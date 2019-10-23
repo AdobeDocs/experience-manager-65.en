@@ -14,7 +14,7 @@ docset: aem65
 
 # Introduction to Interactive Communication authoring UI{#introduction-to-interactive-communication-authoring-ui}
 
-The user interface for authoring [Interactive Communication](/forms/using/interactive-communications-overview.md) is intuitive and provides the following for authoring print and web channel of the Interactive Communication:
+The user interface for authoring [Interactive Communication](/help/forms/using/interactive-communications-overview.md) is intuitive and provides the following for authoring print and web channel of the Interactive Communication:
 
 * WYSIWYG drag-and-drop document editor
 * Integrated repository for assets - the assets uploaded to and created on the server are available in the Asset browser of Interactive Communication authoring interface
@@ -22,7 +22,7 @@ The user interface for authoring [Interactive Communication](/forms/using/intera
 When you [create a new or edit an existing Interactive Communication](../../forms/using/create-interactive-communication.md), you use the following user interface elements:
 
 * [Sidebar](#sidebar)
-* [Page toolbar](#page-toolbar)  
+* [Page toolbar](#page-toolbar)
 * [Component toolbar](#component-toolbar)
 * Content Area
 
@@ -44,18 +44,18 @@ The sidebar includes the following:
 
 The Channel browser helps you switch between the print and web channels of the Interactive Communication. Based on the channel you have selected in the channel browser, the browsers, such as Content and Components display the options.
 
-* **Content browser** 
+* **Content browser**
   In the content browser, you can see object hierarchy of the document for the selected channel. Author can navigate to specific component by tapping that element in Document Object Tree. Author can search objects in the web channel and rearrange them from this tree.
 
 * **Properties browser**
 
-  Lets you edit the properties of a component. Properties change according to the component. For example, to see properties of the document container:  
+  Lets you edit the properties of a component. Properties change according to the component. For example, to see properties of the document container:
   Select a component, then tap ![](assets/field-level.png) &gt; **Document Container**, and then tap ![](assets/cmppr.png).
 
-* **Assets** **browser** 
-  Segregates different types of content such as layout fragments, images, documents, pages, videos. Author can drag-and-drop assets into the Interactive Communication. 
+* **Assets** **browser**
+  Segregates different types of content such as layout fragments, images, documents, pages, videos. Author can drag-and-drop assets into the Interactive Communication.
 
-* **Components browser** 
+* **Components browser**
   Includes components that you can use to build the print and web channels of a document. You can drag components to the Interactive Communication to add elements, and configure added element as per the requirements. The following table describes the components listed in Components browser for print and web channels**:**
 
 | **Component** |**Print Channel** |**Web Channel** |**Functionality** |
@@ -72,7 +72,7 @@ The Channel browser helps you switch between the print and web channels of the I
 
 &#42;&#42; In the Print channel, target areas are predefined in the XDP/print template. You cannot add new target areas using the Interactive Communication authoring UI.
 
-* **Data Sources Browser** 
+* **Data Sources Browser**
   Data Sources Browser displays the available data sources in the form data model you selected while creating the Interactive Communication.
 
 ### Key points for working with components {#key-points-for-working-with-components}
@@ -80,12 +80,12 @@ The Channel browser helps you switch between the print and web channels of the I
 Key points when working with interactive communication components are as follows:
 
 * Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![](assets/cmppr.png) to open the component properties in the Properties browser.
-* A component is identified with its element name. When you tap ![](assets/cmppr.png), you can change the name of the component by changing the Element Name field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter. 
+* A component is identified with its element name. When you tap ![](assets/cmppr.png), you can change the name of the component by changing the Element Name field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
 * You can modify the Title property of an Interactive Communication component inline in the editor without opening the Properties browser as long as the title is visible on the Interactive Communication. To do so:
 
-    1. Tap to select a component that has a Title property and whose Hide title property is disabled.  
-    1. Tap ![](assets/aem_6_3_edit.png) to make the title editable.  
-    
+    1. Tap to select a component that has a Title property and whose Hide title property is disabled.
+    1. Tap ![](assets/aem_6_3_edit.png) to make the title editable.
+
     1. Modify the title and tap the Return key or tap anywhere outside the component to save the changes. Tap the Esc key to discard the changes.
 
 ## Component toolbar {#component-toolbar}
@@ -131,7 +131,7 @@ The Page toolbar on the top provides options that let you preview the Interactiv
 * Emulator ![](assets/ruler.png): Lets you emulate the look of your Interactive Communication for different display sizes such as tablets and phones.
 * Edit: Lets you select other modes such as: Edit, Style, Developer, and Design.
 
-    * Edit: Lets you edit the properties of the Interactive Communication and its components. For example, adding a component, dropping an image, and specifying mandatory fields. 
+    * Edit: Lets you edit the properties of the Interactive Communication and its components. For example, adding a component, dropping an image, and specifying mandatory fields.
     * Style: Lets you style the appearance of components of your Interactive Communication. For example, in style mode, you can select a panel and specify its background color.
     * Developer: Lets a developer to:
 

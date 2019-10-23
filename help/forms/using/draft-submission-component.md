@@ -27,7 +27,7 @@ The drafts functionality is enabled out of the box. When a user clicks **Save** 
 Perform the following steps to add and configure a Drafts & Submissions component:
 
 1. Drag-and-drop the **Drafts & Submissions** component under Document Services category in the components browser on to your page.
-1. Tap the component and then tap ![](assets/settings_icon.png) to open the Edit dialog for the component. 
+1. Tap the component and then tap ![](assets/settings_icon.png) to open the Edit dialog for the component.
 
    ![Drafts & Submission component](assets/drafts-submissions-edit.png)
 
@@ -36,54 +36,54 @@ Perform the following steps to add and configure a Drafts & Submissions componen
 <table>
  <tbody>
   <tr>
-   <th>Tab</th> 
-   <th>Configuration</th> 
-   <th>Description</th> 
+   <th>Tab</th>
+   <th>Configuration</th>
+   <th>Description</th>
   </tr>
   <tr>
-   <td>General</td> 
-   <td>Total Result</td> 
-   <td>Specifies the maximum number of results to display. If the count of results increases the Total Result limit, a <strong>More </strong>link appears at the bottom of the component. Clicking <strong>More </strong>shows all the forms. </td> 
+   <td>General</td>
+   <td>Total Result</td>
+   <td>Specifies the maximum number of results to display. If the count of results increases the Total Result limit, a <strong>More </strong>link appears at the bottom of the component. Clicking <strong>More </strong>shows all the forms. </td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Style Type</td> 
-   <td>Specifies the style of the component. You can specify <strong>No Style</strong>, <strong>Default Style</strong>, or <strong>Custom Style</strong> for listing the forms. For Custom Style Option, you can specify the path of custom CSS file in the <strong>Custom Style Path </strong>field<strong>.</strong></td> 
+   <td> </td>
+   <td>Style Type</td>
+   <td>Specifies the style of the component. You can specify <strong>No Style</strong>, <strong>Default Style</strong>, or <strong>Custom Style</strong> for listing the forms. For Custom Style Option, you can specify the path of custom CSS file in the <strong>Custom Style Path </strong>field<strong>.</strong></td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Custom Style Path</td> 
-   <td>If you choose <strong>Custom Style</strong> option in the <strong>Style Type</strong> field, use the <strong>Custom Style Path</strong> field to specify the path of custom CSS file. </td> 
+   <td> </td>
+   <td>Custom Style Path</td>
+   <td>If you choose <strong>Custom Style</strong> option in the <strong>Style Type</strong> field, use the <strong>Custom Style Path</strong> field to specify the path of custom CSS file. </td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Display Options</td> 
-   <td><p>Specifies the tabs to display. You can choose to display draft forms, submitted forms, or both. </p> <p><strong>Note</strong>:<em> For <strong>Display options</strong>, if you select an option other than <strong>Both</strong>, the <strong>Default Tab</strong> field option is not used.</em></p> </td> 
+   <td> </td>
+   <td>Display Options</td>
+   <td><p>Specifies the tabs to display. You can choose to display draft forms, submitted forms, or both. </p> <p><strong>Note</strong>:<em> For <strong>Display options</strong>, if you select an option other than <strong>Both</strong>, the <strong>Default Tab</strong> field option is not used.</em></p> </td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Default Tab</td> 
-   <td>Specifies the tab to display when the forms portal page loads. You can choose between <strong>Draft Forms Tab</strong> and <strong>Submitted Forms Tab</strong>.</td> 
+   <td> </td>
+   <td>Default Tab</td>
+   <td>Specifies the tab to display when the forms portal page loads. You can choose between <strong>Draft Forms Tab</strong> and <strong>Submitted Forms Tab</strong>.</td>
   </tr>
   <tr>
-   <td>Draft Forms Tab Configuration</td> 
-   <td>Custom Title</td> 
-   <td>Specifies title of the <strong>Draft Forms</strong> tab. The default value is <strong>Draft Forms.</strong></td> 
+   <td>Draft Forms Tab Configuration</td>
+   <td>Custom Title</td>
+   <td>Specifies title of the <strong>Draft Forms</strong> tab. The default value is <strong>Draft Forms.</strong></td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Layout Template</td> 
-   <td><p>Specifies the layout to use for Draft Forms list.</p> <p><strong>Note:</strong> Do not use the Default (Deprecated) option.<br /> </p> </td> 
+   <td> </td>
+   <td>Layout Template</td>
+   <td><p>Specifies the layout to use for Draft Forms list.</p> <p><strong>Note:</strong> Do not use the Default (Deprecated) option.<br /> </p> </td>
   </tr>
   <tr>
-   <td>Submitted Forms Tab Configuration</td> 
-   <td>Custom Title </td> 
-   <td>Specifies title of the <strong>Submitted Forms </strong>tab. The default value is <strong>Submitted Forms.</strong></td> 
+   <td>Submitted Forms Tab Configuration</td>
+   <td>Custom Title </td>
+   <td>Specifies title of the <strong>Submitted Forms </strong>tab. The default value is <strong>Submitted Forms.</strong></td>
   </tr>
   <tr>
-   <td> </td> 
-   <td>Layout Template</td> 
-   <td>Specifies the layout to use for Submitted Forms<strong> </strong>list. </td> 
+   <td> </td>
+   <td>Layout Template</td>
+   <td>Specifies the layout to use for Submitted Forms<strong> </strong>list. </td>
   </tr>
  </tbody>
 </table>
@@ -94,6 +94,6 @@ When you use the Forms Portal submit action or enable the Store data in forms po
 
 Forms portal allows you to store data at local AEM repository, remote AEM repository, or to a database. AEM Forms allows you to customize the implementation of storing user data for drafts and submissions. You can override default methods to specify how draft and submissions data is stored at a storage of your choice. For example, you can store the data in a data store currently implemented in your organization.
 
-Forms portal provides out of the box services (APIs) to store data on crx-repository of local and remote AEM Forms publish instances. You can replace the default implementations, described in [Configuring storage services for drafts and submissions](/forms/using/configuring-draft-submission-storage.md) article, with custom implementations to replace default functionality. For detailed information about the methods required in a custom implementation to store content at a secured location, see [Customizing Draft and Submission data services](/forms/using/custom-draft-submission-data-services.md) and [Custom storage for drafts and submissions component.](/forms/using/adding-custom-storage-provider-forms.md)
+Forms portal provides out of the box services (APIs) to store data on crx-repository of local and remote AEM Forms publish instances. You can replace the default implementations, described in [Configuring storage services for drafts and submissions](/help/forms/using/configuring-draft-submission-storage.md) article, with custom implementations to replace default functionality. For detailed information about the methods required in a custom implementation to store content at a secured location, see [Customizing Draft and Submission data services](/help/forms/using/custom-draft-submission-data-services.md) and [Custom storage for drafts and submissions component.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
 AEM Forms documentation provides a [Sample for integrating drafts & submissions component with database](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). You can use the sample implementation to develop your own custom implementation.

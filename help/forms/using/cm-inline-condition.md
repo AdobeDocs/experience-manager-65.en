@@ -1,8 +1,8 @@
 ---
 title: Inline condition and repeat in Interactive Communications and letters
 seo-title: Inline condition and repeat in Interactive Communications and letters
-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured. 
-seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured. 
+description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
+seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 topic-tags: correspondence-management
 content-type: reference
@@ -24,7 +24,7 @@ Conditions perform computations on data values provided by the form data model/D
 For more information, see:
 
 * [Create an Interactive Communication](../../forms/using/create-interactive-communication.md)
-* [Correspondence Management Overview](/forms/using/cm-overview.md)
+* [Correspondence Management Overview](/help/forms/using/cm-overview.md)
 * [Text in Interactive Communications](../../forms/using/texts-interactive-communications.md)
 
 ### Example: Using rules to conditionalize inline text in Interactive Communication {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
@@ -43,7 +43,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 >
 >If your existing assets include old condition/repeat expressions (pre 6.2 SP1 CFP 4), the assets display old syntax of condition and repeat. However, the old condition/repeat works. The new and old condition/repeat expressions are compatible with each other to create a nested mix of old and new condition/repeat expressions.
 
-1. In the relevant text module, select the part of text that you want to conditionalize and tap **Condition**. 
+1. In the relevant text module, select the part of text that you want to conditionalize and tap **Condition**.
 
    ![](assets/1_selecttext.png)
 
@@ -61,7 +61,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 
    ```java
    ${DD_creditcard_Gender=="Male"}
-   
+
    ```
 
    For more information on creating the expression, see **Creating expressions and remote functions with expression builder** in [Expression Builder](../../forms/using/expression-builder.md). The value specified in the expression must be supported for the element in the data dictionary. For more information, see [Data Dictionary](../../forms/using/data-dictionary.md).
@@ -109,13 +109,13 @@ The following example gives you the steps for using repeat to structure and rend
 
 1. Tap Repeat.
 
-   The Repeat dialog appears. 
+   The Repeat dialog appears.
 
    ![](assets/3_repeatdialog.png)
 
 1. Select Line Break as separator and, if required, tap Add Condition to create a rule. You can also use text as separator and specify the text charaters to be used as separator.
 
-   The Create Rule dialog appears. 
+   The Create Rule dialog appears.
 
 1. Create a rule to display transactions dated after Feb 28, 2018 to include the transactions only for the month of March in the Interactive Communication.
 
@@ -125,13 +125,13 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![](assets/4_createrule.png)
 
-1. Save the condition/rule and then save the repeat. Conditional repeat gets applied to the selected content. 
+1. Save the condition/rule and then save the repeat. Conditional repeat gets applied to the selected content.
 
    ![](assets/5_onmouseoverconditionrule.png)
 
    On mouse over, the text document fragment displays the Condition and the separator used in the repeat applied to the content.
 
-1. Save the text document fragment and preview the relevant Interactive Communication. Depending on the data in the form data model, the repeat applied on the elements renders the transaction details similar to the following in the preview: 
+1. Save the text document fragment and preview the relevant Interactive Communication. Depending on the data in the form data model, the repeat applied on the elements renders the transaction details similar to the following in the preview:
 
    ![](assets/screen_shot_2018-03-09at155516copy.png)
 
@@ -143,7 +143,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    ```
    {^DD_creditcard_TransactionDate^} {^DD_creditcard_TransactionAmount^}
-   {^DD_creditcard_TransactionType^} 
+   {^DD_creditcard_TransactionType^}
    ```
 
    These DD elements render a list of the transactions made on the credit card with the following information:
@@ -152,12 +152,12 @@ The following example gives you the steps for using repeat to structure and rend
 
 1. Embed the text within the DD elements to make the statement more readable, such as following:
 
-   ![](assets/1_repeat.png) 
+   ![](assets/1_repeat.png)
 
    ```
 
-   Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^} 
-   
+   Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^}
+
    ```
 
    The job of rendering a well formatted statement, however, is not done yet. If you render a letter based on the work done so far, it appears as the following:
@@ -170,7 +170,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![](assets/2_repeat_selecttext.png)
 
-1. Tap **Repeat**. The Repeat dialog appears with an empty inline condition. 
+1. Tap **Repeat**. The Repeat dialog appears with an empty inline condition.
 
    ![](assets/3_repeat_dialog.png)
 
@@ -187,7 +187,7 @@ The following example gives you the steps for using repeat to structure and rend
     * **Line Break**: Inserts line break after each transaction entry in the output letter.
     * **Text**: Inserts the specified text character after each transaction entry in the output letter.
 
-   Once the condition is inserted, the text with repeat is highlighted in red and a handle appears on its left. You can hover over the handle on the left of the repeat to view the repeat construct. 
+   Once the condition is inserted, the text with repeat is highlighted in red and a handle appears on its left. You can hover over the handle on the left of the repeat to view the repeat construct.
 
    ![](assets/4_repeat_hoverdetail.png)
 
@@ -218,7 +218,7 @@ You may require to use repeat within a condition. Correspondence Management allo
 
 For example, following is repeat (formatted in red) within a condition (formatted in green).
 
-While the repeat renders the credit card transactions, the condition ${DD_creditcard_nooftransactions &gt; 0} ensures that the repeat construct is rendered only if there's at least one transaction. 
+While the repeat renders the credit card transactions, the condition ${DD_creditcard_nooftransactions &gt; 0} ensures that the repeat construct is rendered only if there's at least one transaction.
 
 ![](assets/repeatwitincondition.png)
 
@@ -234,4 +234,4 @@ You may need to insert empty inline conditions and embed text and DD elements la
 
 ![](assets/emptycondition.png)
 
-It is, however, recommended that if possible, you insert the text and DD elements first in the text module with the intended formatting, such as bullets, and apply an inline condition afterwards. 
+It is, however, recommended that if possible, you insert the text and DD elements first in the text module with the intended formatting, such as bullets, and apply an inline condition afterwards.

@@ -1,8 +1,8 @@
 ---
 title: Create custom appearances for adaptive form fields
 seo-title: Create custom appearances for adaptive form fields
-description: Customize appearance of out-of-the-box components in Adaptive Forms. 
-seo-description: Customize appearance of out-of-the-box components in Adaptive Forms. 
+description: Customize appearance of out-of-the-box components in Adaptive Forms.
+seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
 uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -16,7 +16,7 @@ docset: aem65
 
 ## Introduction {#introduction}
 
-Adaptive forms leverages the [appearance framework](/forms/using/introduction-widgets.md) to help you create custom appearances for adaptive form fields and provide a different user experience. For example, replace radio buttons and check boxes with toggle buttons or use custom jQuery plugins to restrict users inputs in fields like phone numbers or email ID.
+Adaptive forms leverages the [appearance framework](/help/forms/using/introduction-widgets.md) to help you create custom appearances for adaptive form fields and provide a different user experience. For example, replace radio buttons and check boxes with toggle buttons or use custom jQuery plugins to restrict users inputs in fields like phone numbers or email ID.
 
 This document explains how to use a jQuery plugin to create these alternate experiences for adaptive form fields. In addition, it showcases an example to create a custom appearance for numeric field component to appear as a numeric stepper or slider.
 
@@ -109,44 +109,44 @@ Once the project template is created, do the following changes, as required:
 1. Include the third-party plugin dependency to the project.
 
     1. Place the third-party or custom jQuery plugins in the `jqueryplugin/javascript` folder and related CSS files in the `jqueryplugin/css` folder. For more details, see the JS and CSS files under the `jqueryplugin/javascript and jqueryplugin/css` folder.
-    
+
     1. Modify the `js.txt` and `css.txt` files to include any additional JavaScript and CSS file of the jQuery plugin.
 
 1. Integrate the third-party plugin with the framework to enable interaction between the custom appearance framework and the jQuery plugin. The new widget will be functional only after you extend or override the following functions.
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Function</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr> 
-  <tr> 
-   <td><code>render</code></td> 
-   <td>The render function returns the jQuery object for the default HTML element of the widget. The default HTML element should be of focusable type. For example, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;li&gt;</code>. The returned element is used as <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td> 
-  </tr> 
-  <tr> 
-   <td><code>getEventMap</code></td> 
+ <tbody>
+  <tr>
+   <td><strong>Function</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><code>render</code></td>
+   <td>The render function returns the jQuery object for the default HTML element of the widget. The default HTML element should be of focusable type. For example, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;li&gt;</code>. The returned element is used as <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td>
+  </tr>
+  <tr>
+   <td><code>getEventMap</code></td>
    <td>Returns a map to convert HTML events to XFA events. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> This example shows that <code>blur</code> is an HTML event and <code>XFA_EXIT_EVENT</code> is the corresponding XFA event. </td> 
-  </tr> 
-  <tr> 
-   <td><code>getOptionsMap</code></td> 
-   <td>Returns a map that provides detail about the action to perform on the change of an option. The keys are the options that are provided to the widget and the values are functions that are called whenever a change in the option is detected. The widget provides handlers for all the common options (except <code>value</code> and <code>displayValue</code>).</td> 
-  </tr> 
-  <tr> 
-   <td><code>getCommitValue</code></td> 
-   <td>The jQuery widget framework loads the function whenever the value of the jQuery widget is saved in the XFA model (for example on exit event of a text field). The implementation should return the value saved in the widget. The handler is provided with the new value for the option.</td> 
-  </tr> 
-  <tr> 
-   <td><code>showValue</code></td> 
-   <td>By default, in XFA on enter event, the <code>rawValue</code> of the field is displayed. This function is called to show the <code>rawValue</code> to the user. </td> 
-  </tr> 
-  <tr> 
-   <td><code>showDisplayValue</code></td> 
-   <td>By default, in XFA on exit event, the <code>formattedValue</code> of the field is displayed. This function is called to show the <code>formattedValue</code> to the user. </td> 
-  </tr> 
- </tbody> 
+      }</code><br /> This example shows that <code>blur</code> is an HTML event and <code>XFA_EXIT_EVENT</code> is the corresponding XFA event. </td>
+  </tr>
+  <tr>
+   <td><code>getOptionsMap</code></td>
+   <td>Returns a map that provides detail about the action to perform on the change of an option. The keys are the options that are provided to the widget and the values are functions that are called whenever a change in the option is detected. The widget provides handlers for all the common options (except <code>value</code> and <code>displayValue</code>).</td>
+  </tr>
+  <tr>
+   <td><code>getCommitValue</code></td>
+   <td>The jQuery widget framework loads the function whenever the value of the jQuery widget is saved in the XFA model (for example on exit event of a text field). The implementation should return the value saved in the widget. The handler is provided with the new value for the option.</td>
+  </tr>
+  <tr>
+   <td><code>showValue</code></td>
+   <td>By default, in XFA on enter event, the <code>rawValue</code> of the field is displayed. This function is called to show the <code>rawValue</code> to the user. </td>
+  </tr>
+  <tr>
+   <td><code>showDisplayValue</code></td>
+   <td>By default, in XFA on exit event, the <code>formattedValue</code> of the field is displayed. This function is called to show the <code>formattedValue</code> to the user. </td>
+  </tr>
+ </tbody>
 </table>
 
 1. Update the JavaScript file in the `integration/javascript` folder, as required.
@@ -154,13 +154,13 @@ Once the project template is created, do the following changes, as required:
     * Replace the text `__widgetName__` with the actual widget name.
     * Extend the widget from a suitable out-of-the-box widget class. In most cases, It is the widget class corresponding to the existing widget being replaced. The parent class name is used at multiple locations, so it is recommended to search for all instances of the string `xfaWidget.textField` in the file, and replace them with the actual parent class used.
     * Extend the `render` method to provide an alternate UI. It is the location from where the jQuery plugin will be invoked to update the UI or the interaction behavior. The `render` method should return a user-control element.
-    
+
     * Extend the `getOptionsMap` method to override any option setting impacted due to a change in the widget. The function returns a mapping that provides details for the action to perform on change of an option. The keys are the options provided to the widget and the values are the functions called whenever a change in the option is detected.
     * The `getEventMap` method maps events triggered by the widget, with the events required by the adaptive form model. The default value maps standard HTML events for the default widget, and needs to be updated if an alternate event is triggered.
     * The `showDisplayValue` and `showValue` apply the display and edit picture clause and can be overridden to have an alternate behavior.
-    
+
     * The `getCommitValue` method is called by the adaptive forms framework when the `commit`event occurs. Generally, it is the exit event, except for the dropdown, radio button, and check box elements where it occurs on change). For more information, see [Adaptive Forms Expressions](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
-    
+
     * The template file provides sample implementation for various methods. Remove methods that are not to be extended.
 
 ### Create a client library {#create-a-client-library}
@@ -193,7 +193,7 @@ Let's now look at an example to create a custom appearance for a numeric field t
 
    `mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
-   It prompts you to specify values for the following parameters.   
+   It prompts you to specify values for the following parameters.
    *The values used in this sample are highlighted in bold*.
 
    `Define value for property 'groupId': com.adobe.afwidgets`
@@ -216,9 +216,9 @@ Let's now look at an example to create a custom appearance for a numeric field t
 
 1. Open the Eclipse tool and do the following to import the Eclipse project:
 
-    1. Select **[!UICONTROL File > Import > Existing Projects into Workspace]**.  
+    1. Select **[!UICONTROL File > Import > Existing Projects into Workspace]**.
 
-    1. Browse and select the folder where you executed the `archetype:generate` command.  
+    1. Browse and select the folder where you executed the `archetype:generate` command.
 
     1. Click **[!UICONTROL Finish]**.
 
@@ -233,11 +233,11 @@ Let's now look at an example to create a custom appearance for a numeric field t
     * The numeric stepper should extend from `- $.xfaWidget.numericInput`.
     * The `set value` method of the widget sets the value after the focus is on the field. It is a mandatory requirement for an adaptive form widget.
     * The `render` method needs to be overridden to invoke the `bootstrapNumber` method.
-    
+
     * There is no additional dependency for the plugin other than the main source code of the plugin.
     * The sample does not perform any styling on the stepper, so no additional CSS is required.
     * The `$userControl` object should be available to the `render` method. It is a field of the `text` type which is cloned with the plugin code.
-    
+
     * The **+** and **-** buttons should be disabled when the field is disabled.
 
 1. Replace the contents of the `bootstrap-number-input.js` (jQuery plugin) with the content of the `numericStepper-plugin.js` file.
@@ -266,11 +266,11 @@ Let's now look at an example to create a custom appearance for a numeric field t
    ```java
    getOptionsMap: function(){
        var parentOptionsMap = $.xfaWidget.numericInput.prototype.getOptionsMap.apply(this,arguments),
-   
+
        newMap = $.extend({},parentOptionsMap,
-   
+
         {
-   
+
               "access": function(val) {
               switch(val) {
                  case "open" :
@@ -307,11 +307,11 @@ Let's now look at an example to create a custom appearance for a numeric field t
 
    `mvn clean install`
 
-1. Install the package using AEM Package Manager.  
+1. Install the package using AEM Package Manager.
 
 1. Open the adaptive form in edit mode on which you want to apply the custom appearance and do the following:
 
-    1. Right-click the field on which you want to apply the appearance and click **[!UICONTROL Edit]** to open the Edit Component dialog.  
+    1. Right-click the field on which you want to apply the appearance and click **[!UICONTROL Edit]** to open the Edit Component dialog.
 
     1. In the Styling tab, update the **[!UICONTROL CSS class]** property to add `widget_numericStepper`.
 

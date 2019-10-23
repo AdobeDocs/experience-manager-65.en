@@ -119,7 +119,7 @@ Goals:
 
 ![](assets/12-publish-your-adaptive-form-_small.png)
 
-You can publish adaptive forms as a stand-alone form (single page application), include in AEM [sites page](/forms/using/embed-adaptive-form-aem-sites.md), or list on an AEM site using [Forms Portal](../../forms/using/introduction-publishing-forms.md).
+You can publish adaptive forms as a stand-alone form (single page application), include in AEM [sites page](/help/forms/using/embed-adaptive-form-aem-sites.md), or list on an AEM site using [Forms Portal](../../forms/using/introduction-publishing-forms.md).
 
 Goals:
 

@@ -1,8 +1,8 @@
 ---
 title: Embedding link component in a page
 seo-title: Embedding link component in a page
-description: You can use the link component to link an adaptive document or an adaptive form from any page.  
-seo-description: You can use the link component to link an adaptive document or an adaptive form from any page.  
+description: You can use the link component to link an adaptive document or an adaptive form from any page.
+seo-description: You can use the link component to link an adaptive document or an adaptive form from any page.
 uuid: 22f488fc-bb1a-40aa-a5f4-6d04d7250f29
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -16,7 +16,7 @@ docset: aem65
 
 ## Prerequisites {#prerequisites}
 
-The link component is a member of the Document Services category. Ensure that the Document Services category is visible in the AEM components browser. If the category is not listed, follow the steps listed at [Enabling forms portal components](/forms/using/enabling-forms-portal-components.md).
+The link component is a member of the Document Services category. Ensure that the Document Services category is visible in the AEM components browser. If the category is not listed, follow the steps listed at [Enabling forms portal components](/help/forms/using/enabling-forms-portal-components.md).
 
 ## Link Component {#link-component}
 
@@ -36,8 +36,8 @@ Perform the following steps to add a Link component to the page:
 
 1. Open the **Asset Info** tab and specify the type of the asset. An asset can be a **form**. Depending upon the type of asset selected, the options listed below are displayed:
 
-    * **Asset Path**: Repository path where the asset is stored.  
-    
+    * **Asset Path**: Repository path where the asset is stored.
+
     * **Render Type**: The render format--PDF, HTML, or Auto. The Auto render type detects the user environment and accordingly renders the form as HTML or as PDF. For example, if the form is accessed from a mobile device, the Auto render type render the form in HTML.
     * **Submit URL: ** URL to the servlet where the form data is submitted.
     * **HTML Profile**: Profile for rendering the form as HTML.

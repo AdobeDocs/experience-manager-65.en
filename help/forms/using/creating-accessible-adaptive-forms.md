@@ -65,9 +65,9 @@ Images can help improve comprehension for some users. However, for users using s
 
 Ensure that the text describes the object and its purpose in the form. A screen reader reads this alternative text when it encounters an image. An image must always have an alternative text specified.
 
-Select an image component and tap ![](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image. 
+Select an image component and tap ![](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image.
 
-![Alternate text for an image](assets/image-properties.png) 
+![Alternate text for an image](assets/image-properties.png)
 
 ## Provide sufficient color contrast {#provide-sufficient-color-contrast}
 
@@ -77,7 +77,7 @@ Users with vision impairment rely on a high contrast between text and the backgr
 
 It is recommended that you use the default font and background colors--content in black color on a white background. If you change the default colors, choose either a dark foreground color on a light background color, or vice versa.
 
-See [Creating custom themes for adaptive forms](/forms/using/creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the adaptive forms.
+See [Creating custom themes for adaptive forms](/help/forms/using/creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the adaptive forms.
 
 ## Ensure that form controls are keyboard accessible {#ensure-that-form-controls-are-keyboard-accessible}
 

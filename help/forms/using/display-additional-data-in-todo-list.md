@@ -24,7 +24,7 @@ This article details the steps to add information to display for each task in th
 
 You can add the information available in `task.json` sent by the server. The information can be added as plain text or you can use styles to format the information.
 
-For more information about the JSON Object description, see [this](/forms/using/html-workspace-json-object-description.md) article.
+For more information about the JSON Object description, see [this](/help/forms/using/html-workspace-json-object-description.md) article.
 
 ## Displaying information on a task {#displaying-information-on-a-task}
 
@@ -34,7 +34,7 @@ For more information about the JSON Object description, see [this](/forms/using/
    For example change `/apps/ws/locales/en-US/translation.json` for English:
 
    ```
-   
+
    "task" : {
            "reminder" : {
                "value" : "Reminder",
@@ -111,7 +111,7 @@ For more information about the JSON Object description, see [this](/forms/using/
 1. For example, add information inside the task block:
 
    ```
-   
+
    "stepname" : {
                "value" : "Step Name",
                "tooltip" : "This task belongs to __stepName__ step"
@@ -125,7 +125,7 @@ For more information about the JSON Object description, see [this](/forms/using/
    For example add:
 
    ```css
-   
+
    .task .taskProperties .stepname{
        width: 25px;
        background: url(../images/stepname.png) no-repeat; /*-------- Or just reuse background image / image-sprite defined .task .taskProperties span of style.css---------------------*/
@@ -147,9 +147,9 @@ Finally, you need to include an entry in the dev package for each property that 
    For example, add under `div class="taskProperties"`:
 
    ```
-   
+
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
-   
+
    ```
 
 [**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

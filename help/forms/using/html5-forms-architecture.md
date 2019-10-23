@@ -19,7 +19,7 @@ docset: aem65
 
 HTML5 forms functionality is deployed as a package within the embedded AEM instance and is exposesd as a REST end point over HTTP/S using RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-`<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` [ ![](assets/01-aem-forms-architecture.jpg)  
+`<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` [ ![](assets/01-aem-forms-architecture.jpg)
 *View Full Size*](javascript:void(0).md)
 
 [ ![](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
@@ -28,7 +28,7 @@ HTML5 forms functionality is deployed as a package within the embedded AEM insta
 
 [Apache Sling](https://sling.apache.org/) is resource-centric. It uses a request URL to first resolve the resource. Each resource has a **sling:resourceType** (or **sling:resourceSuperType**) property. Based on this property, the request method, and properties of the request URL, a sling script is then selected to handle the request. This sling script can be a JSP or a servlet. For HTML5 forms, **Profile **nodes act as sling resources and **Profile Renderer** acts as the sling script that handles the request to render the mobile form with a particular profile. A **Profile Renderer** is a JSP that reads parameters from a request and calls the Forms OSGi Service.
 
-For details on REST endpoint and supported request parameters, see [Rendering Form Template](/forms/using/rendering-form-template.md).
+For details on REST endpoint and supported request parameters, see [Rendering Form Template](/help/forms/using/rendering-form-template.md).
 
 When a user makes a request from a client device such as an iOS or Android browser, Sling first resolves the Profile Node based on the request URL. From this Profile Node, it reads **sling:resourceSuperType** and **sling:resourceType** to determine all available scripts that can handle this Form Render request. It then uses Sling request selectors along with request method to identify the script best suited for handling this request. Once the request reaches a Profile Renderer JSP, the JSP calls the Forms OSGi service.
 
@@ -38,7 +38,7 @@ For more details on sling script resolution, see [AEM Sling Cheat Sheet](https:/
 
 HTML5 forms cache all the intermediate objects required to process (rendition or submission) a form on the first request. It does not cache the objects dependent on the data as such objects are likely to change.
 
-Mobile Form maintains two different levels of cache, PreRender cache and Render Cache. The preRender cache contains all the fragments and images of a resolved template and Render cache contains rendered content such as HTML. 
+Mobile Form maintains two different levels of cache, PreRender cache and Render Cache. The preRender cache contains all the fragments and images of a resolved template and Render cache contains rendered content such as HTML.
 
 ![HTML5 forms workflow](assets/cacheworkflow.png)
 
@@ -78,24 +78,24 @@ This component is also responsible for generating data XML from submitted form s
 HTML5 forms uses caching to optimize throughput and response time. You can configure the level of the cache service to fine-tune the trade-off between performance and space utilization.
 
 <table>
- <tbody> 
-  <tr> 
-   <th>Cache Strategy</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>None</td> 
-   <td>Do not cache artifacts<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Conservative</td> 
-   <td>Cache only intermediate artifacts that are generated before the render of the form like template containing inline fragments and images</td> 
-  </tr> 
-  <tr> 
-   <td>Aggressive</td> 
-   <td>Cache Rendered HTML content<br /> Cache all the artifacts cached in the Conservative level.<br /> <strong>Note</strong>: This strategy results in best performance but consumes more memory for storing the cached artifacts.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>Cache Strategy</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>None</td>
+   <td>Do not cache artifacts<br /> </td>
+  </tr>
+  <tr>
+   <td>Conservative</td>
+   <td>Cache only intermediate artifacts that are generated before the render of the form like template containing inline fragments and images</td>
+  </tr>
+  <tr>
+   <td>Aggressive</td>
+   <td>Cache Rendered HTML content<br /> Cache all the artifacts cached in the Conservative level.<br /> <strong>Note</strong>: This strategy results in best performance but consumes more memory for storing the cached artifacts.</td>
+  </tr>
+ </tbody>
 </table>
 
 HTML5 forms perform in-memory caching using LRU strategy. If cache strategy is set to None cache will not be created and existing cache data, if any, would be cleared. Besides the caching strategy, you can also configure the total in-memory cache size which can help in having the maximum bound on cache size and if it goes beyond that it will use LRU mode to free up cache resources.
@@ -110,7 +110,7 @@ Configuration Service enables tuning the configuration parameters and cache sett
 
 To update these settings, go to the CQ Felix Admin Console (available at https://&lt;[server]:[port]/system/console/configMgr), search for and select Mobile Forms Configuration.
 
-You can configure the cache size or disable the cache using configuration service. You can also enable debugging using Debug Options parameter. More information about debugging forms can be found at [Debugging HTML5 forms](/forms/using/debug.md).
+You can configure the cache size or disable the cache using configuration service. You can also enable debugging using Debug Options parameter. More information about debugging forms can be found at [Debugging HTML5 forms](/help/forms/using/debug.md).
 
 ### Runtime Components (adobe-lc-forms-runtime-pkg.zip) {#runtime-components-adobe-lc-forms-runtime-pkg-zip}
 
@@ -128,7 +128,7 @@ At render time, the FormCalc script is translated (and cached) into JavaScript o
 
 This scripting engine uses some of the feature of ECMAScript5 like Object.defineProperty. The engine / library is delivered as CQ Client Lib with the category name **xfaforms.profile**. It also provides **FormBridge API **to enable external portals or apps to interact with form. Using FormBridge, an external app can programmatically hide certain elements, get or set their values, or change their attributes.
 
-For more details, see the [Form Bridge](/forms/using/form-bridge-apis.md) article.
+For more details, see the [Form Bridge](/help/forms/using/form-bridge-apis.md) article.
 
 #### Layout Engine {#layout-engine}
 
@@ -136,7 +136,7 @@ The layout and visual aspect of the HTML5 forms is based on SVG 1.1, jQuery, Bac
 
 Layout Engine also contains a set of widgets used to capture the value of form fields from a user. These widgets are modeled as [jQuery UI Widgets](https://api.jqueryui.com/jQuery.widget/) that implement certain additional contract to work seamlessly with Layout engine.
 
-For more details on widgets and the corresponding contracts, see [Custom Widgets for HTML5 forms](/forms/using/introduction-widgets.md).
+For more details on widgets and the corresponding contracts, see [Custom Widgets for HTML5 forms](/help/forms/using/introduction-widgets.md).
 
 #### Styling {#styling}
 
@@ -144,7 +144,7 @@ The style associated with the HTML elements is added either inline or based on e
 
 In addition to default styling properties, each form element also contains certain CSS classes based on element type, name, and other properties. Using these classes, one can restyle elements by specifying their own CSS.
 
-For more details on default styling and classes, see [Introduction to styles](/forms/using/css-styles.md).
+For more details on default styling and classes, see [Introduction to styles](/help/forms/using/css-styles.md).
 
 #### Server-Side script and Web Services {#server-side-script-and-web-services}
 
@@ -176,11 +176,11 @@ The Profile node has a property **sling:resourceSuperType** with value **xfaform
 * **xfaforms.I18N.&lt;locale&gt;**: This library contains localized data.
 * **xfaforms.profile**: This library contains implementation for XFA Scripting and Layout engine.
 
-These libraries are modeled as CQ Client Libraries which takes advantages of automatic concatenation, minification, and compression capabilities of the CQ framework JavaScript libraries.  
-For more information on CQ Client Libs, see [CQ Clientlib Documentation](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).  
+These libraries are modeled as CQ Client Libraries which takes advantages of automatic concatenation, minification, and compression capabilities of the CQ framework JavaScript libraries.
+For more information on CQ Client Libs, see [CQ Clientlib Documentation](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
 
-As described above, the profile renderer JSP calls Forms Service via a sling include. This JSP also sets various debug options based on admin configuration or request parameters.  
+As described above, the profile renderer JSP calls Forms Service via a sling include. This JSP also sets various debug options based on admin configuration or request parameters.
 
-HTML5 forms allow developers to create Profile and Profile Renderer to customize the appearance of the forms. For example, HTML forms allow developers to integrate forms in a panel or &lt;div&gt; section of an existing HTML portal.  
-For more details on creating custom profiles, see [Creating a Custom Profile](/forms/using/custom-profile.md).   
+HTML5 forms allow developers to create Profile and Profile Renderer to customize the appearance of the forms. For example, HTML forms allow developers to integrate forms in a panel or &lt;div&gt; section of an existing HTML portal.
+For more details on creating custom profiles, see [Creating a Custom Profile](/help/forms/using/custom-profile.md).
 [**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

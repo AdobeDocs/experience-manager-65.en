@@ -1,7 +1,7 @@
 ---
 title: Compatibility Package
 seo-title: Compatibility Package
-description: Installing the Compatibility package on AEM Forms 6.5 allows you to use the Correspondence Management assets from AEM Forms 6.4 and earlier versions and deprecated adaptive forms templates and pages 
+description: Installing the Compatibility package on AEM Forms 6.5 allows you to use the Correspondence Management assets from AEM Forms 6.4 and earlier versions and deprecated adaptive forms templates and pages
 seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
@@ -39,7 +39,7 @@ Ensure that you have [AEM Compatibility package](https://helpx.adobe.com/aem-for
 
    For more information on uploading and installing the package, see [How to work with packages](/help/sites-administering/package-manager.md).
 
-1. After the logs are stabilized, restart the server. 
+1. After the logs are stabilized, restart the server.
 1. Use the migration utility for making your assets compatible with 6.5.
 
    For more information, see [migration utility](../../forms/using/migration-utility.md).
@@ -51,7 +51,7 @@ By installing the Compatibility package, you can make the following assets and t
 * Correspondence Management Assets from AEM 6.4 and earlier:
 
     * [Letters](../../forms/using/create-letter.md)
-    * [Data Dictionaries](/forms/using/data-dictionary.html?cq_ck=1519292756160)
+    * [Data Dictionaries](/help/forms/using/data-dictionary.html?cq_ck=1519292756160)
     * Document Fragments
 
 * Adaptive form deprecated templates:

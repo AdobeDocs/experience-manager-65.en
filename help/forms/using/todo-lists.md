@@ -48,10 +48,10 @@ When opening and working on a task, the tools that are available to you depend o
 
 Additional tools that may be available with any of the above tasks include the following:
 
-* Forward 
-* Share 
+* Forward
+* Share
 * Consult
-* Return 
+* Return
 * Notes
 * Attachments
 
@@ -189,10 +189,10 @@ You may be allowed to add, update, delete, or save any attachments locally.
 
    >[!NOTE]
    >
-   >You can configure workspace to periodically auto-save the information entered by a user as a draft. If auto-save is enabled and a user is working on a draft, the draft is saved periodically. In case of auto-save, the default name of the task is automatically taken. 
+   >You can configure workspace to periodically auto-save the information entered by a user as a draft. If auto-save is enabled and a user is working on a draft, the draft is saved periodically. In case of auto-save, the default name of the task is automatically taken.
    >
    >
-   >For more information, see Save Draft Periodically in [Managing Preferences](/forms/using/getting-started-livecycle-html-workspace.md).
+   >For more information, see Save Draft Periodically in [Managing Preferences](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 1. In the Save As Draft dialog, specify a unique name for the task and tap **OK**.
 
@@ -210,7 +210,7 @@ You can complete a task in various ways:
 
 * Using the actions available in any of the tabs
 * Using the actions built in the form itself
-* From your To-do list, without opening the task  
+* From your To-do list, without opening the task
   Note: This option is available if `isMustOpenToComplete` field is not selected in the `Assign Task` step in Workbench, while designing a process.
 * By email, if you receive email notifications
 
@@ -254,11 +254,11 @@ You can submit multiple tasks from your To Do list. Only tasks of the same proce
    >
    >This option is not available for tasks for which isMustOpenToComplete field is selected in the Assign Task step in Workbench, while designing a process. Checkboxes of such tasks in the TO- ``DO list remain disabled always.
 
-1. Select tasks for bulk approval. Multiple tasks of the same process, with the same task names, and the same route options can be selected. Once you select one task for approval, only the tasks with the same process, with the same task names, and the same route options remain enabled. The rest are disabled. 
+1. Select tasks for bulk approval. Multiple tasks of the same process, with the same task names, and the same route options can be selected. Once you select one task for approval, only the tasks with the same process, with the same task names, and the same route options remain enabled. The rest are disabled.
 
    ![](assets/1_bulkapproval.png)
 
-1. Click the available Submit option. The selected tasks get submitted. 
+1. Click the available Submit option. The selected tasks get submitted.
 
    ![](assets/bulkapproval.png)
 

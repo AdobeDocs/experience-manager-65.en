@@ -29,7 +29,7 @@ The new HTML Forms service leverages the new feature in Forms to support renderi
 
 ```java
 /*
- * Generates a URL (for the HTML Form) to be passed to client, given a TaskContext. 
+ * Generates a URL (for the HTML Form) to be passed to client, given a TaskContext.
  * The output of this API is something like this - /lc/content/xfaforms/profiles/default.ws.html?ContentRoot=repository://Applications/MyApplication/MyFolder&template=MyForm.xdp
  * @param taskContext task context
  * @param profileName Forms servlet URL.
@@ -39,7 +39,7 @@ public String generateFormURL(TaskContext taskContext, String profileName);
 
 /*
  * Render the XDP Form as HTML. Can be used directly for updating the runtimeMap in render.
- * It adds the following keys to the map - 
+ * It adds the following keys to the map -
  * hint:new html form = true
  * newHTMLFormURL = the URL returned after calling 'generateFormURL' API.
  * @param TaskContext taskContext
@@ -50,7 +50,7 @@ public String generateFormURL(TaskContext taskContext, String profileName);
 public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profileName, Map<String,Object> runtimeMap);
 ```
 
-More information on Mobile Form profiles can be found at [Creating a custom profile](/forms/using/custom-profile.md).
+More information on Mobile Form profiles can be found at [Creating a custom profile](/help/forms/using/custom-profile.md).
 
 ## New HTML Form Render &amp; Submit Processes {#new-html-form-render-amp-submit-processes}
 
@@ -92,13 +92,13 @@ The default Render and Submit services enable support to render PDFs on a deskto
 
 This process renders an XDP Form on multiple platforms, seamlessly. The process retrieves the user agent from `taskContext`, and uses the data to call the process to render either HTML or PDF.
 
-![](assets/default-render-form.png) 
+![](assets/default-render-form.png)
 
 ### Default Submit Form {#default-submit-form}
 
 This process submits an XDP form on multiple platforms seamlessly. It retrieves the user agent from `taskContext`and uses the data to call the process to submit either HTML or PDF.
 
-![](assets/default-submit-form.png) 
+![](assets/default-submit-form.png)
 
 ## Switch the rendering of mobile forms from PDF to HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
@@ -107,16 +107,16 @@ Browsers are gradually withdrawing support for NPAPI-based plug-ins, including p
 1. Log in to Workbench as a valid user.
 1. Select **File** &gt; **Get Applications**.
 
-   Get Applications dialog appears. 
+   Get Applications dialog appears.
 
 1. Select the applications for which you want to change the mobile form rendering and click **OK**.
-1. Open the process for which you want to change the rendering. 
-1. Open the targeted startpoint/task, navigate to the Presentation & Data section, and click **Manage Action Profiles**.  
-  
-   Manage Action Profiles dialog appears. 
-1. Change Default render profile configurations from PDF to HTML and click **OK**. 
-1. Check in the process. 
-1. Repeat the steps to change the rendering for other processes. 
+1. Open the process for which you want to change the rendering.
+1. Open the targeted startpoint/task, navigate to the Presentation & Data section, and click **Manage Action Profiles**.
+
+   Manage Action Profiles dialog appears.
+1. Change Default render profile configurations from PDF to HTML and click **OK**.
+1. Check in the process.
+1. Repeat the steps to change the rendering for other processes.
 1. Deploy the application relevant to the processes you have changed.
 
 ### Default Action Profile {#default-action-profile}
@@ -127,7 +127,7 @@ Some frequently asked questions about action profiles are as follows:
 
 ![](assets/gen_question_b_20.png) **What Render / Submit processes will be available out of the box?**
 
-* Render Guide (Guides is deprecated)  
+* Render Guide (Guides is deprecated)
 * Render Form Guide
 * Render PDF form
 * Render HTML form
@@ -156,5 +156,5 @@ Yes, since the previous render and submit services associated with the default a
 
 If you had modified the existing Render or Submit PDF Form services or created custom services (say custom1), and now want to use the same functionality for HTML rendition. You need to replicate the new render or submit service (as say custom2) and apply similar customizations to those. Now, modify the action profile for your XDP to start using custom2 services, instead of the custom1 for render or submit.
 
-What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?  
+What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?
 What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?  [**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

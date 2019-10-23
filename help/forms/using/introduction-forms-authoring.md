@@ -1,6 +1,6 @@
 ---
-title: Introduction to authoring adaptive forms 
-seo-title: Introduction to authoring adaptive forms 
+title: Introduction to authoring adaptive forms
+seo-title: Introduction to authoring adaptive forms
 description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
@@ -19,16 +19,16 @@ docset: aem65
 
 Adaptive forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides an intuitive user interface and out-of-the-box components for creating and working with adaptive forms. You can choose to create an adaptive form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an adaptive form:
 
-* **Using a form data model** 
-  [Data integration](../../forms/using/data-integration.md) lets you integrate entities and services from disparate data sources in to a form data model that you can use to create adaptive forms. Choose form data model if the adaptive form you are creating involves fetching and write data from and to multiple data source. 
+* **Using a form data model**
+  [Data integration](../../forms/using/data-integration.md) lets you integrate entities and services from disparate data sources in to a form data model that you can use to create adaptive forms. Choose form data model if the adaptive form you are creating involves fetching and write data from and to multiple data source.
 
-* **Using an XDP Form Template** 
+* **Using an XDP Form Template**
   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into adaptive forms. Any existing XFA rules are retained in the associated adaptive forms. The resulting adaptive forms support XFA constructs, such as validations, events, properties, and patterns.
 
-* **Using an XML Schema Definition (XSD) or a JSON Schema** 
-  XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an adaptive form and use its elements to add dynamic content to the adaptive form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring adaptive forms. 
+* **Using an XML Schema Definition (XSD) or a JSON Schema**
+  XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an adaptive form and use its elements to add dynamic content to the adaptive form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring adaptive forms.
 
-* **Using none or without a form model  
+* **Using none or without a form model
   **Adaptive forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
 
 For more information about creating an adaptive form, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
@@ -37,14 +37,14 @@ For more information about creating an adaptive form, see [Creating an adaptive 
 
 The touch-optimized UI for authoring adaptive forms is intuitive, and provides:
 
-* Drag-and-drop functionality  
-* Standard form components  
+* Drag-and-drop functionality
+* Standard form components
 * Integrated repository for assets
 
 When you create a new or edit an existing adaptive form, you use the following UI elements:
 
 * [Sidebar](#sidebar)
-* [Page toolbar](#page-toolbar)  
+* [Page toolbar](#page-toolbar)
 
 * [Component toolbar](#component-toolbar)
 * [Adaptive form page](#af-page)
@@ -57,8 +57,8 @@ When you create a new or edit an existing adaptive form, you use the following U
 
 The Sidebar allows you to
 
-* See form content such as panels, components, fields, and layout.   
-* Edit component properties.   
+* See form content such as panels, components, fields, and layout.
+* Edit component properties.
 * Search, view, and use assets in your AEM Digital Asset Management (DAM) repository.
 * Add components on your form.
 
@@ -70,196 +70,196 @@ Click to enlarge
 
 The sidebar comprises the following browsers:
 
-* **Content** **browser** 
+* **Content** **browser**
   In the content browser, you can see
 
-    * **Form Objects  
-      **Shows object hierarchy of the Form. Author can navigate to specific form component by tapping that element in Form Object Tree. Author can search objects and rearrange them from this tree.** 
+    * **Form Objects
+      **Shows object hierarchy of the Form. Author can navigate to specific form component by tapping that element in Form Object Tree. Author can search objects and rearrange them from this tree.**
       **
-    
-    * **Data Model Objects  
-      **Lets you see the form model hierarchy.  
+
+    * **Data Model Objects
+      **Lets you see the form model hierarchy.
       It allows you to drag and drop form-model elements on the adaptive form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
 
-* **Properties browser  
-  **Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:  
+* **Properties browser
+  **Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:
   Select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
 
-* **Assets** **browser** 
+* **Assets** **browser**
   Segregates different types content such as images, documents, pages, movies, and so on.
 
-* **Components browser** 
+* **Components browser**
   Includes components that you can use to build an adaptive form. You can drag components from onto the adaptive form to add form elements, and configure added element as per the requirements. The following table describes the components listed in components browser**.**
 
 <table>
- <tbody> 
-  <tr> 
-   <th width="150"><strong>Component</strong></th> 
-   <th style="text-align: left;" valign="middle"><strong>Functionality</strong></th> 
-  </tr> 
-  <tr> 
-   <td>Adobe Sign Block</td> 
-   <td>Adds a block of text with placeholders for fields to be filled while signing using Adobe Sign.</td> 
-  </tr> 
-  <tr> 
-   <td>Button</td> 
-   <td>Adds a button, which you can configure to perform actions, such as save, reset, go next, go previous, and so on.</td> 
-  </tr> 
-  <tr> 
-   <td>Captcha</td> 
-   <td>Adds CAPTCHA validation using Google reCAPTCHA service. For details, see <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Using CAPTCHA in adaptive forms</a>.</td> 
-  </tr> 
-  <tr> 
-   <td>Chart</td> 
-   <td>Adds a chart that you can use in adaptive forms and documents for visual representation of two-dimensional data in repeatable panels and table rows.</td> 
-  </tr> 
-  <tr> 
-   <td>Check box</td> 
-   <td>Adds a check box.</td> 
-  </tr> 
-  <tr> 
-   <td>Date Input Field</td> 
-   <td>Use Date Input Field component in your form, to let customers fill day, month, and year separately in three boxes. You can customize the look and feel of the component, and change the date format. For example, you can let your customers input dates in MM/DD/YYYY or DD/MM/YYYY format.</td> 
-  </tr> 
-  <tr> 
-   <td>Date picker</td> 
-   <td>Adds a calender field to pick a date.</td> 
-  </tr> 
-  <tr> 
-   <td>Document Fragment</td> 
-   <td>Lets you add reusable components of a correspondence.</td> 
-  </tr> 
-  <tr> 
-   <td>Document Fragment Group</td> 
-   <td>Lets you add group of related document fragments that you can use in a letter template as a single unit.</td> 
-  </tr> 
-  <tr> 
-   <td>Drop-down list</td> 
-   <td>Adds a drop-down list - single or multi-select</td> 
-  </tr> 
-  <tr> 
-   <td>Email</td> 
-   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td>File attachment</td> 
-   <td><p>Adds a button that allows users to browse and attach supporting documents to a form.</p> <p><strong>Note: </strong>The File Attachment component supports a pre-defined set of file formats in adaptive forms enabled for Adobe Sign. For more information, see <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Supported file formats</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>File attachment listing</td> 
-   <td>Adds a field that lists all the attachments uploaded using the File Attachment component.</td> 
-  </tr> 
-  <tr> 
-   <td>Footer<br /> </td> 
-   <td>Adds the page header that typically includes logo of a corporation, title of the form, and summary.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Header</td> 
-   <td>Adds the page footer that typically includes copyright information, and links to other pages. </td> 
-  </tr> 
-  <tr> 
-   <td width="150">Image</td> 
-   <td>Allows you to insert an image.</td> 
-  </tr> 
-  <tr> 
-   <td>Image Choice</td> 
-   <td>Lets your customers select an image to provide information. You can use the information to provide personalized services to your customers.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Next Button</td> 
-   <td>Adds a button to navigate to the next panel in a form.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Numeric box</td> 
-   <td>Adds a field for capturing numeric values</td> 
-  </tr> 
-  <tr> 
-   <td>Numeric Stepper</td> 
-   <td>Use Numeric Stepper in your form to let your customers input a numeric value, which they can increase or decrease based on a predefined step.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Panel</td> 
-   <td><p>Adds a panel or subpanel.</p> <p>You can also add a panel component from the parent panel toolbar using the <span class="uicontrol">Add Child Panel</code> button. Similarly, you can add a panel-specific toolbar using the <span class="uicontrol">Add Panel Toolbar</code> button. You can configure the position of the panel toolbar using the Edit Panel dialog.</p> </td> 
-  </tr> 
-  <tr> 
-   <td width="150">Password box</td> 
-   <td>Adds a field for capturing a password.</td> 
-  </tr> 
-  <tr> 
-   <td>Previous button</td> 
-   <td>Adds a button that users require to go back to the previous page or panel.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Radio button</td> 
-   <td>Adds radio buttons.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Reset button</td> 
-   <td>Adds a button to reset form fields.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Save Button</td> 
-   <td>Adds a button to save form data.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">(Deprecated) Scribble signature</td> 
-   <td>Adds a field for capturing scribble signatures.</td> 
-  </tr> 
-  <tr> 
-   <td>Separator</td> 
-   <td>Enables visual segregation of panels in your form.</td> 
-  </tr> 
-  <tr> 
-   <td>Signature Step</td> 
-   <td>Displays the information provided in the form and the signature fields for the user to verify and sign the form.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Text</td> 
-   <td>Allows you to specify static text.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Submit Button</td> 
-   <td>Adds a submit button to submit the form to the configured submit action.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Summary Step</td> 
-   <td>Submits the form and displays summary text that authors specifies after the form is submitted. </td> 
-  </tr> 
-  <tr> 
-   <td width="150">Switch</td> 
-   <td>Adds a switch that performs a toggle or enable/disable action. You cannot add more than two options in the Switch component. Since a switch can have only two values: On or Off, mandatory is not applicable. At-least one value is saved irrespective of the user input. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Table</td> 
-   <td>Adds a table that lets you organize data in rows and columns. </td> 
-  </tr> 
-  <tr> 
-   <td>Telephone</td> 
-   <td><p>Adds a field to capture telephone number. The Telephone component allows authors to configure one of following phone number types. Each type is associated with a default regular expression for validation.</p> 
-    <ul> 
-     <li>Type International is validated by <code>^[+][0-9]{0,14}$</code>.</li> 
-     <li>Type USPhoneNumber is validated by <code>{'+1 ('999') '999-9999}</code>.</li> 
-     <li>Type UKPhoneNumber is validated by <code>text{'+'99 999 999 9999}</code>.</li> 
-     <li>Type Custom does not provide a default validation pattern. It takes the value of the last selected phone number type. You can also specify your own custom validation pattern.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="150">Terms and Conditions<br /> </td> 
-   <td>Adds a field that authors can use to specify the terms and conditions for users to review before filling the form.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Text box </td> 
-   <td><p>Adds a text box in which a user can specify the required information. </p> <p>By default, the Text Box component accepts only plain text. You can enable a Text Box component to accept Rich Text. A Rich Text enabled text component provide options to add headers, change character styles (bold, italicize, underline the characters), create ordered and unordered lists, change text background and text color, and add hyperlinks. To enable rich text for a text box, enable the<strong> Allow Rich Text</strong> option in the component properties.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Title</td> 
-   <td>Specifies a title for the adaptive form.</td> 
-  </tr> 
-  <tr> 
-   <td width="150">Verify Step</td> 
-   <td><p>Adds a placeholder to display the filled form for verification by user.</p> <p><strong>Note</strong>: Adaptive form containing the Verify component does not support anonymous users. Also, it is not recommended to use the Verify component in an adaptive form fragment.</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th width="150"><strong>Component</strong></th>
+   <th style="text-align: left;" valign="middle"><strong>Functionality</strong></th>
+  </tr>
+  <tr>
+   <td>Adobe Sign Block</td>
+   <td>Adds a block of text with placeholders for fields to be filled while signing using Adobe Sign.</td>
+  </tr>
+  <tr>
+   <td>Button</td>
+   <td>Adds a button, which you can configure to perform actions, such as save, reset, go next, go previous, and so on.</td>
+  </tr>
+  <tr>
+   <td>Captcha</td>
+   <td>Adds CAPTCHA validation using Google reCAPTCHA service. For details, see <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Using CAPTCHA in adaptive forms</a>.</td>
+  </tr>
+  <tr>
+   <td>Chart</td>
+   <td>Adds a chart that you can use in adaptive forms and documents for visual representation of two-dimensional data in repeatable panels and table rows.</td>
+  </tr>
+  <tr>
+   <td>Check box</td>
+   <td>Adds a check box.</td>
+  </tr>
+  <tr>
+   <td>Date Input Field</td>
+   <td>Use Date Input Field component in your form, to let customers fill day, month, and year separately in three boxes. You can customize the look and feel of the component, and change the date format. For example, you can let your customers input dates in MM/DD/YYYY or DD/MM/YYYY format.</td>
+  </tr>
+  <tr>
+   <td>Date picker</td>
+   <td>Adds a calender field to pick a date.</td>
+  </tr>
+  <tr>
+   <td>Document Fragment</td>
+   <td>Lets you add reusable components of a correspondence.</td>
+  </tr>
+  <tr>
+   <td>Document Fragment Group</td>
+   <td>Lets you add group of related document fragments that you can use in a letter template as a single unit.</td>
+  </tr>
+  <tr>
+   <td>Drop-down list</td>
+   <td>Adds a drop-down list - single or multi-select</td>
+  </tr>
+  <tr>
+   <td>Email</td>
+   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+  </tr>
+  <tr>
+   <td>File attachment</td>
+   <td><p>Adds a button that allows users to browse and attach supporting documents to a form.</p> <p><strong>Note: </strong>The File Attachment component supports a pre-defined set of file formats in adaptive forms enabled for Adobe Sign. For more information, see <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Supported file formats</a>.</p> </td>
+  </tr>
+  <tr>
+   <td>File attachment listing</td>
+   <td>Adds a field that lists all the attachments uploaded using the File Attachment component.</td>
+  </tr>
+  <tr>
+   <td>Footer<br /> </td>
+   <td>Adds the page header that typically includes logo of a corporation, title of the form, and summary.<br /> </td>
+  </tr>
+  <tr>
+   <td>Header</td>
+   <td>Adds the page footer that typically includes copyright information, and links to other pages. </td>
+  </tr>
+  <tr>
+   <td width="150">Image</td>
+   <td>Allows you to insert an image.</td>
+  </tr>
+  <tr>
+   <td>Image Choice</td>
+   <td>Lets your customers select an image to provide information. You can use the information to provide personalized services to your customers.</td>
+  </tr>
+  <tr>
+   <td width="150">Next Button</td>
+   <td>Adds a button to navigate to the next panel in a form.</td>
+  </tr>
+  <tr>
+   <td width="150">Numeric box</td>
+   <td>Adds a field for capturing numeric values</td>
+  </tr>
+  <tr>
+   <td>Numeric Stepper</td>
+   <td>Use Numeric Stepper in your form to let your customers input a numeric value, which they can increase or decrease based on a predefined step.</td>
+  </tr>
+  <tr>
+   <td width="150">Panel</td>
+   <td><p>Adds a panel or subpanel.</p> <p>You can also add a panel component from the parent panel toolbar using the <span class="uicontrol">Add Child Panel</code> button. Similarly, you can add a panel-specific toolbar using the <span class="uicontrol">Add Panel Toolbar</code> button. You can configure the position of the panel toolbar using the Edit Panel dialog.</p> </td>
+  </tr>
+  <tr>
+   <td width="150">Password box</td>
+   <td>Adds a field for capturing a password.</td>
+  </tr>
+  <tr>
+   <td>Previous button</td>
+   <td>Adds a button that users require to go back to the previous page or panel.</td>
+  </tr>
+  <tr>
+   <td width="150">Radio button</td>
+   <td>Adds radio buttons.</td>
+  </tr>
+  <tr>
+   <td width="150">Reset button</td>
+   <td>Adds a button to reset form fields.</td>
+  </tr>
+  <tr>
+   <td width="150">Save Button</td>
+   <td>Adds a button to save form data.</td>
+  </tr>
+  <tr>
+   <td width="150">(Deprecated) Scribble signature</td>
+   <td>Adds a field for capturing scribble signatures.</td>
+  </tr>
+  <tr>
+   <td>Separator</td>
+   <td>Enables visual segregation of panels in your form.</td>
+  </tr>
+  <tr>
+   <td>Signature Step</td>
+   <td>Displays the information provided in the form and the signature fields for the user to verify and sign the form.</td>
+  </tr>
+  <tr>
+   <td width="150">Text</td>
+   <td>Allows you to specify static text.</td>
+  </tr>
+  <tr>
+   <td width="150">Submit Button</td>
+   <td>Adds a submit button to submit the form to the configured submit action.</td>
+  </tr>
+  <tr>
+   <td width="150">Summary Step</td>
+   <td>Submits the form and displays summary text that authors specifies after the form is submitted. </td>
+  </tr>
+  <tr>
+   <td width="150">Switch</td>
+   <td>Adds a switch that performs a toggle or enable/disable action. You cannot add more than two options in the Switch component. Since a switch can have only two values: On or Off, mandatory is not applicable. At-least one value is saved irrespective of the user input. <br /> </td>
+  </tr>
+  <tr>
+   <td>Table</td>
+   <td>Adds a table that lets you organize data in rows and columns. </td>
+  </tr>
+  <tr>
+   <td>Telephone</td>
+   <td><p>Adds a field to capture telephone number. The Telephone component allows authors to configure one of following phone number types. Each type is associated with a default regular expression for validation.</p>
+    <ul>
+     <li>Type International is validated by <code>^[+][0-9]{0,14}$</code>.</li>
+     <li>Type USPhoneNumber is validated by <code>{'+1 ('999') '999-9999}</code>.</li>
+     <li>Type UKPhoneNumber is validated by <code>text{'+'99 999 999 9999}</code>.</li>
+     <li>Type Custom does not provide a default validation pattern. It takes the value of the last selected phone number type. You can also specify your own custom validation pattern.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td width="150">Terms and Conditions<br /> </td>
+   <td>Adds a field that authors can use to specify the terms and conditions for users to review before filling the form.</td>
+  </tr>
+  <tr>
+   <td width="150">Text box </td>
+   <td><p>Adds a text box in which a user can specify the required information. </p> <p>By default, the Text Box component accepts only plain text. You can enable a Text Box component to accept Rich Text. A Rich Text enabled text component provide options to add headers, change character styles (bold, italicize, underline the characters), create ordered and unordered lists, change text background and text color, and add hyperlinks. To enable rich text for a text box, enable the<strong> Allow Rich Text</strong> option in the component properties.</p> </td>
+  </tr>
+  <tr>
+   <td>Title</td>
+   <td>Specifies a title for the adaptive form.</td>
+  </tr>
+  <tr>
+   <td width="150">Verify Step</td>
+   <td><p>Adds a placeholder to display the filled form for verification by user.</p> <p><strong>Note</strong>: Adaptive form containing the Verify component does not support anonymous users. Also, it is not recommended to use the Verify component in an adaptive form fragment.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Best practices for working with components {#best-practices}
@@ -267,21 +267,21 @@ The sidebar comprises the following browsers:
 Some best practices and key points to remember when working with adaptive form components are as follows:
 
 * Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![](assets/cmppr.png) to open the component properties in the Properties browser.
-* A component is identified with its element name. When you tap ![](assets/cmppr.png), you can change the name of the component by changing the **[!UICONTROL Element Name]** field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter. 
+* A component is identified with its element name. When you tap ![](assets/cmppr.png), you can change the name of the component by changing the **[!UICONTROL Element Name]** field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
 
 * You can modify the Title property of an adaptive form component inline in the form editor without opening the Properties browser as long as the title is visible on the form. To do so:
 
-    1. Tap to select a component that has a **[!UICONTROL Title]** property and whose **[!UICONTROL Hide title]** property is disabled.  
-    
-    1. Tap ![](assets/aem_6_3_edit.png) to make the title editable.  
-    
+    1. Tap to select a component that has a **[!UICONTROL Title]** property and whose **[!UICONTROL Hide title]** property is disabled.
+
+    1. Tap ![](assets/aem_6_3_edit.png) to make the title editable.
+
     1. Modify the title and tap the Return key or tap anywhere outside the component to save the changes. Tap the Esc key to discard the changes.
 
-* Some adaptive form components like Email and Telephone include out-of-the-box validation patterns. However, you can specify custom validation by updating the **[!UICONTROL Validation Pattern]** field under the Patterns accordion in the component properties. See component descriptions in the table above for more information about default validations.  
+* Some adaptive form components like Email and Telephone include out-of-the-box validation patterns. However, you can specify custom validation by updating the **[!UICONTROL Validation Pattern]** field under the Patterns accordion in the component properties. See component descriptions in the table above for more information about default validations.
 
-* Adaptive forms fields, such as Numeric Box and Email can be configured to include specialized HTML5 input types. When these fields are in focus on mobile devices and tablets, the keypad displays specific alphabet, numbers, and characters upfront that are commonly used to input information in the fields. It helps users enter information quickly without having to toggle between characters sets on the keypad. To allow specialized input for a component, enable the **[!UICONTROL Use HTML Type Number]** check box in its component properties.  
+* Adaptive forms fields, such as Numeric Box and Email can be configured to include specialized HTML5 input types. When these fields are in focus on mobile devices and tablets, the keypad displays specific alphabet, numbers, and characters upfront that are commonly used to input information in the fields. It helps users enter information quickly without having to toggle between characters sets on the keypad. To allow specialized input for a component, enable the **[!UICONTROL Use HTML Type Number]** check box in its component properties.
 
-* You can enable a Text Box component to accept Rich Text. To enable rich text for a text box, enable the **[!UICONTROL Allow Rich Text]** check box in the component properties.  
+* You can enable a Text Box component to accept Rich Text. To enable rich text for a text box, enable the **[!UICONTROL Allow Rich Text]** check box in the component properties.
 
 * You can enable Text Box, Email, and Telephone components to autofill values for fields like name, address, credit card, telephone, and email from the information stored in browser's autofill settings. To enable this feature, select **[!UICONTROL Enable Autofill]** in the component properties and select an **[!UICONTROL Autofill Attribute]**. When a user fills an adaptive form, the values are suggested from the autofill profile in the browser or based on the values earlier filled by the user. Note that autofill works if autofill settings in user's browser are turned on.
 
@@ -294,7 +294,7 @@ Some best practices and key points to remember when working with adaptive form c
 
 * To enable users to attach a PDF using Safari browser, ensure that **application/pdf** is added to the Supported File Types property of the File attachment component. Adaptive forms created with previous AEM Forms version may contain **.pdf** instead of **application/pdf** in the Supported File Types property.
 
-For more best practices around adaptive forms, see [Best practices for working with adaptive forms](/forms/using/adaptive-forms-best-practices.md).
+For more best practices around adaptive forms, see [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md).
 
 >[!NOTE]
 >
@@ -306,15 +306,15 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 * **Toggle Side Panel ** ![](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
 
-* **Page information** ![](assets/theme-options.png): Lets you view page properties, publish/unpublish a form, start a form workflow, and open the form in classic UI.  
+* **Page information** ![](assets/theme-options.png): Lets you view page properties, publish/unpublish a form, start a form workflow, and open the form in classic UI.
 
 * **Emulator ** ![](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
 
 * **Edit**: Lets you select other modes such as: **Edit, Style, Developer, **and** Design**.
 
-    * **Edit**: Lets you edit the properties of the form and its components. For example, adding a component, dropping an image, and specifying mandatory fields. 
-    * **Style**: Lets you style the appearance of components of your form. For example, in style mode, you can select a panel and specify its background color.  
-    
+    * **Edit**: Lets you edit the properties of the form and its components. For example, adding a component, dropping an image, and specifying mandatory fields.
+    * **Style**: Lets you style the appearance of components of your form. For example, in style mode, you can select a panel and specify its background color.
+
     * **Developer**: Lets a developer to:
 
         * Discover what forms are composed of.
@@ -357,7 +357,7 @@ For example, if you tap **Parent** for a text box, you can see:
 
 J. **Others**: Provides more options to work with the selected component.
 
-* View SOM expression  
+* View SOM expression
 * Save a panel as fragment (for panels only)
 * Add child panel (for panels only)
 * Add panel toolbar (for panels only)
@@ -380,7 +380,7 @@ The content structure typically contains the following primary components:
 
 * **rootPanel: **The root panel of an adaptive form. It can contain subpanels under the items node. Each panel including the root panel can have a layout associated with it. The layout of the panel dictates how the form is laid out. For example, in the Accordion layout*, *its items are laid out as Accordion steps.
 
-* **toolbar: **An adaptive form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **Add Toolbar **action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on. 
+* **toolbar: **An adaptive form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **Add Toolbar **action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **assets: **This node contains additional information used for form authoring. For example, form model details, localization details, and so on).
 

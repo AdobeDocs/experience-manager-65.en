@@ -53,7 +53,7 @@ Adding a button with an action (here send letter for review) to the Create Corre
        **Overlay Location:** /apps/
 
        **Match Node Types:** Checked
-    
+
        ![Overlay node](assets/2_defaultappoverlaynode.png)
 
     1. Click **OK**.
@@ -61,16 +61,16 @@ Adding a button with an action (here send letter for review) to the Create Corre
 
 1. Make a copy of the acmExtensionsConfig.xml file (exists under the /libs branch) under the /apps branch.
 
-    1. Go to "/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml"  
+    1. Go to "/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml"
 
     1. Right click the acmExtensionsConfig.xml file and select **Copy**.
-    
+
        ![Copy acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
     1. Right-click the **defaultApp** folder at "/apps/fd/cm/config/defaultApp/," and select **Paste**.
     1. Click **Save All**.
 
-1. Double-click the copy of acmExtentionsConfig.xml you have newly created in the apps folder. The file opens for editing. 
+1. Double-click the copy of acmExtentionsConfig.xml you have newly created in the apps folder. The file opens for editing.
 1. Locate the following code:
 
    ```xml
@@ -84,7 +84,7 @@ Adding a button with an action (here send letter for review) to the Create Corre
                <customAction name="Close" label="loc.letterInstance.close.label" tooltip="loc.letterInstance.close.tooltip" styleName="closeButton"/>
            </modelExtension>
        </modelExtensions>
-   </extensionsConfig> 
+   </extensionsConfig>
    ```
 
 1. To email letter, you can use LiveCycle Forms Workflow. Add a customAction tag under the modelExtension tag in acmExtensionsConfig.xml as following:
@@ -164,7 +164,7 @@ After making every server-side change, restart the Adobe Asset Composer Building
 >
 >You may need to clear the browser cache.
 
-1. Go to `https://[host]:[port]/system/console/bundles`. If necessary, log in as Administrator.  
+1. Go to `https://[host]:[port]/system/console/bundles`. If necessary, log in as Administrator.
 
 1. Locate the Adobe Asset Composer Building Block bundle. Restart the bundle: click Stop and then click Start.
 
@@ -186,7 +186,7 @@ Handling the action/button on clicking action/button includes logic for:
 * Enabling/disabling newly added action: done by overriding the actionEnabled() function.
 * Actual handling of action when user clicks the button: done by overriding the implementation of the handleAction() function.
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de`. If necessary, log in as Administrator.  
+1. Go to `https://[server]:[port]/[ContextPath]/crx/de`. If necessary, log in as Administrator.
 
 1. In the apps folder, create a folder named `js` in the /apps branch of CRX with structure similar to the following folder:
 
@@ -205,7 +205,7 @@ Handling the action/button on clicking action/button includes logic for:
        **Overlay Location:** /apps/
 
        **Match Node Types:** Checked
-    
+
     1. Click **OK**.
     1. Click **Save All**.
 
@@ -216,11 +216,11 @@ Handling the action/button on clicking action/button includes logic for:
        `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
        Name the file as ccrcustomization.js.
-    
+
     1. Double-click the ccrcustomization.js file to open it in CRX.
     1. In the file, paste the following code and click **Save All**:
 
-       ```    
+       ```
        /* for adding and handling custom actions in Extensible Toolbar.
          * One instance of handler will be created for each action.
          * CM.domain.CCRCustomActionHandler is actionHandler class.
@@ -252,7 +252,7 @@ Handling the action/button on clicking action/button includes logic for:
                    if($('#ccraction').length == 0){
                        /*For first click adding popup & setting letterName.*/
                        $("body").append(popUp);
-                       $("input[id*='letterName']").val(this.letterVO.name);   
+                       $("input[id*='letterName']").val(this.letterVO.name);
                        $(document).on('click',"#submitLetter",$.proxy( sendForReview, this ));
                    }
                    $('#ccraction').modal("show");
@@ -324,7 +324,7 @@ In this scenario, enable the following components, which are a part of the attac
 * DSC component jar (DSCSample.jar)
 * Send letter for review process LCA (SendLetterForReview.lca)
 
-Download and unzip the components.zip file to get DSCSample.jar and SendLetterForReview.lca files. Use these files as specified in the following procedures.  
+Download and unzip the components.zip file to get DSCSample.jar and SendLetterForReview.lca files. Use these files as specified in the following procedures.
 components.zip
 
 #### Configure the LiveCycle Server to run the LCA process {#configure-the-livecycle-server-to-run-the-lca-process}
@@ -336,12 +336,12 @@ components.zip
 The LCA process runs on the LiveCycle server and requires the server address and the login credentials.
 
 1. Go to `https://[server]:[port]/system/console/configMgr` and login as Administrator.
-1. Locate Adobe LiveCycle Client SDK Configuration and click **Edit** (edit icon). The Configurations panel opens.  
+1. Locate Adobe LiveCycle Client SDK Configuration and click **Edit** (edit icon). The Configurations panel opens.
 
 1. Enter the following details and click **Save**:
 
     * **Server Url**: URL of the LC server whose Send For Review service the action handler code uses.
-    * **Username**: Admin user name of the LC server 
+    * **Username**: Admin user name of the LC server
     * **Password**: Password of the Admin user name
 
    ![Adobe LiveCycle Client SDK Configuration](assets/3_clientsdkconfiguration.png)
@@ -354,23 +354,23 @@ The required LiveCycle process that enables email service process.
 >
 >To view what this process does or to create a similar process of your own, you need Workbench.
 
-1. Log in as Administrator to Livecycle Server adminui at `https:/[lc server]/:[lc port]/adminui`.  
+1. Log in as Administrator to Livecycle Server adminui at `https:/[lc server]/:[lc port]/adminui`.
 
-1. Navigate to **Home &gt; Services &gt; Applications and Services &gt; Application Management**.  
+1. Navigate to **Home &gt; Services &gt; Applications and Services &gt; Application Management**.
 
 1. If SendLetterForReview application is already present, skip the remaining steps in this procedure, otherwise continue to the next steps.
 
    ![SendLetterForReview application in the UI](assets/12_applicationmanagementlc.png)
 
-1. Click **Import**.   
+1. Click **Import**.
 
 1. Click **Choose File** and select SendLetterForReview.lca.
 
    ![Select SendLetterForReview.lca file](assets/14_sendletterforreview_lca.png)
 
-1. Click **Preview**.   
+1. Click **Preview**.
 
-1. Select **Deploy assets to runtime when import is complete**.  
+1. Select **Deploy assets to runtime when import is complete**.
 
 1. Click **Import**.
 
@@ -378,10 +378,10 @@ The required LiveCycle process that enables email service process.
 
 Mention in the AEM server the LiveCycle services you want to access the AEM server.
 
-1. Log in as Administrator to `https:/[host]/:[port]/system/console/configMgr`.  
+1. Log in as Administrator to `https:/[host]/:[port]/system/console/configMgr`.
 
-1. Locate and click **Adobe LiveCycle Client SDK Configuration**. The Adobe LiveCycle Client SDK Configuration panel appears. 
-1. In the Service Name list, click + icon and add a serviceName **SendLetterForReview/SendLetterForReviewProcess**.  
+1. Locate and click **Adobe LiveCycle Client SDK Configuration**. The Adobe LiveCycle Client SDK Configuration panel appears.
+1. In the Service Name list, click + icon and add a serviceName **SendLetterForReview/SendLetterForReviewProcess**.
 
 1. Click **Save**.
 
@@ -389,21 +389,21 @@ Mention in the AEM server the LiveCycle services you want to access the AEM serv
 
 In this scenario, for Correspondence Management to be able to send an email, configure the email service in the LiveCycle server.
 
-1. Log in with Admin credentials to Livecycle Server adminui at `https:/[lc server]:[lc port]/adminui`.  
+1. Log in with Admin credentials to Livecycle Server adminui at `https:/[lc server]:[lc port]/adminui`.
 
-1. Navigate to **Home &gt; Services &gt; Applications and Services &gt; Service Management**.  
+1. Navigate to **Home &gt; Services &gt; Applications and Services &gt; Service Management**.
 
-1. Locate and click **EmailService**.  
+1. Locate and click **EmailService**.
 
-1. In **SMTP Host**, configure the email service.   
+1. In **SMTP Host**, configure the email service.
 
 1. Click **Save**.
 
 #### Configure the DSC service {#configure-the-dsc-service}
 
-To use the Correspondence Management API, download the DSCSample.jar (attached in this document as part of components.zip) and upload it to the LiveCycle server. After the DSCSample.jar file is uploaded to the LiveCycle server, the AEM server uses the DSCSample.jar file to access the renderLetter API.   
-  
-For more information, see [Connecting AEM Forms with Adobe LiveCycle](/forms/using/aem-livecycle-connector.md).
+To use the Correspondence Management API, download the DSCSample.jar (attached in this document as part of components.zip) and upload it to the LiveCycle server. After the DSCSample.jar file is uploaded to the LiveCycle server, the AEM server uses the DSCSample.jar file to access the renderLetter API.
+
+For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Update the AEM server URL in cmsa.properties in DSCSample.jar, which is at the following location:
 
@@ -427,9 +427,9 @@ For more information, see [Connecting AEM Forms with Adobe LiveCycle](/forms/usi
 DSCSample.jar file uses the renderLetter API to render letter as PDF bytes from XML data that C give as input. For more Information about the renderLetter and other APIs, see [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Start Workbench and log in.
-1. Select **Window &gt; Show Views &gt; Components**. The Components view gets added to Workbench ES2.  
+1. Select **Window &gt; Show Views &gt; Components**. The Components view gets added to Workbench ES2.
 
-1. Right-click **Components** and select **Install Component**.  
+1. Right-click **Components** and select **Install Component**.
 
 1. Select the **DSCSample.jar** file through the file browser and click **Open**.
 1. Right-click **RenderWrapper** and select **Start Component**. If the component starts, a green arrow appears next to the component name.
@@ -442,8 +442,8 @@ After you have configured the action and button for sending the letter for revie
 
 2. In the Create Correspondence UI, click **Letter Review** and specify the reviewer's email ID.
 
-3. Click **Submit**. 
+3. Click **Submit**.
 
 ![](assets/sendreview.png)
 
-The reviewer receives an email from the system with the letter as a PDF attachment. 
+The reviewer receives an email from the system with the letter as a PDF attachment.
