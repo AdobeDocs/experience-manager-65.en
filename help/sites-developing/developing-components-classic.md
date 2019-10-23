@@ -87,7 +87,7 @@ There are three methods to access content in AEM WCM:
 
 * Via the `currentPage` object introduced in `global.jsp`:
 
-  The `currentPage` object is an instance of a page (see [AEM API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). The page class provides some methods to access content.
+  The `currentPage` object is an instance of a page (see [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). The page class provides some methods to access content.
 
   Example: `String pageTitle = currentPage.getTitle();`
 
@@ -171,8 +171,8 @@ To develop new components for AEM based on existing component you can copy the c
    >
    >A component for the:
    >
-   >* Touch-enabled UI uses [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) components
-   >* Classic UI uses [ExtJS widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
+   >* Touch-enabled UI uses [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) components
+   >* Classic UI uses [ExtJS widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 
    >[!NOTE]
    >

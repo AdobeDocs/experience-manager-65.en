@@ -65,7 +65,7 @@ Additionally, there are administrative tasks that help you manage your content:
 
 >[!NOTE]
 >
->AEM is also [administered](/sites/administering/user-guide.md) (for a majority of tasks) from the author environment.
+>AEM is also [administered](/help/sites-administering/home.md) (for a majority of tasks) from the author environment.
 
 #### Publish Environment {#publish-environment}
 

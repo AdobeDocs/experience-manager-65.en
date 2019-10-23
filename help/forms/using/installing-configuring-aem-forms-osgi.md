@@ -35,7 +35,7 @@ AEM Forms add-on package is an application deployed onto AEM. You require only a
 
 Before you begin to install and configure data capture capability of AEM Forms, ensure that:
 
-* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/help/sites-deploying/technical-requirements.md).
+* Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:

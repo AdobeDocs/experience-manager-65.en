@@ -32,9 +32,9 @@ AEM Delivery and Content Management APIs:
 
 * Core Components (JSON)
 
-    * [JSON Exporter](/help/help/sites-developing/json-exporter.md)
-    * [Enabling JSON Export for a Component](/help/help/sites-developing/json-exporter-components.md)
-    * See the [Components section in the Developing User Guide](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) for more information
+    * [JSON Exporter](/help/sites-developing/json-exporter.md)
+    * [Enabling JSON Export for a Component](/help/sites-developing/json-exporter-components.md)
+    * See the [Components section in the Developing User Guide](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) for more information
 
 * **Assets**: The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments. See [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 

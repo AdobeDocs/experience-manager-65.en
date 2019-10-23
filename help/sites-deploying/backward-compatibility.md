@@ -19,7 +19,7 @@ docset: aem65
 
 >[!NOTE]
 >
->For a list of content and configuration changes that are not under the scope the Compatibility Package, see [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring-in-aem64.md).
+>For a list of content and configuration changes that are not under the scope the Compatibility Package, see [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring-in-aem65.md).
 
 In AEM 6.5, all features have been developed with backwards compatibility in mind.
 

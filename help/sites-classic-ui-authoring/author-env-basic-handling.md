@@ -136,7 +136,7 @@ The **Websites** console lists your pages of content in a tree structure (left h
 >in:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->See [SiteAdmin in the CQ Widget API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) for more details.
+>See [SiteAdmin in the CQ Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) for more details.
 
 ## Page Information on the Websites Console {#page-information-on-the-websites-console}
 

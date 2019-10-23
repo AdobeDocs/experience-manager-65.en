@@ -19,7 +19,7 @@ Campaigns often use teasers as a mechanism to entice a specific segment of the v
 
 >[!NOTE]
 >
->The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-classic-ui-authoring/classic-personalization-content-targeting-touch.md#creatinganofferbyaddingatargetcomponent) instead.
+>The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-authoring/content-targeting-touch.md) instead.
 
 * **Brand pages** are stored within the Campaigns section of the website. A brand contains the individual campaigns.
 * **Campaign pages** are stored within the Campaigns section of the website. Each campaign has an individual page, under which the teaser definitions are held. The container, or overview, page also holds certain information and statistics concerning the individual teaser pages.
@@ -27,7 +27,7 @@ Campaigns often use teasers as a mechanism to entice a specific segment of the v
 Teasers within AEM are comprised of several parts:
 
 * **Teaser pages** are stored under the appropriate campaign page and hold the definitions of the teaser paragraphs available for each specific campaign. These definitions are used when displaying the teaser paragraphs; including content variations, the segment to be used for selecting a variation and boost factor.
-* The **Teaser component** is available out of the box and allows you to create an instance of your specific teaser paragraph in a content page. You can drag the teaser component from the sidekick, then specify your teaser definition to create your own teaser paragraph. **Note: **The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-classic-ui-authoring/classic-personalization-content-targeting-touch.md#creatinganofferbyaddingatargetcomponent) instead.
+* The **Teaser component** is available out of the box and allows you to create an instance of your specific teaser paragraph in a content page. You can drag the teaser component from the sidekick, then specify your teaser definition to create your own teaser paragraph. **Note:** The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-authoring/content-targeting-touch.md) instead.
 * **Teaser paragraphs** are actual instances of your teaser within a content page. These entice a segment of visitors through to content focused on their interests.
 * Pages that hold the campaign content focused on a specific visitor segment. Usually the teaser paragraphs will lead the visitor to such pages.
 

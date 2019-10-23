@@ -43,7 +43,7 @@ Refer to the following topics for an in-depth information:
 
 * To download Android Player, visit **Google Play**. To learn about implementing Android Watchdog, refer to ** [Implementing Android player](/help/screens/implementing-android-player.md)**.
 
-* To implement Chrome OS Player, refer to [**Chrome Management Console**](/help/screens/implementing-chrome-os-player.html?cq_ck=1513900475345) for more information.
+* To implement Chrome OS Player, refer to [**Chrome Management Console**](/help/screens/implementing-chrome-os-player.md?cq_ck=1513900475345) for more information.
 * To configure AEM Screens Windows player, refer to [**Implementing Windows Player**](/help/screens/implementing-windows-player.md).
 
 ## Server Configuration {#server-configuration}

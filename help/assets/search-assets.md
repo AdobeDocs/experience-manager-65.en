@@ -103,7 +103,7 @@ Understanding parts of Assets search results interface
 
 ### Dynamic search facets {#dynamicfacets}
 
-You can discover the desired assets faster from the search results page using the dynamically updated number of expected search results in the search facets. The expected number of assets are updated even before applying the search filter. Seeing the expected count against the filter helps you navigate through the search results quickly and efficiently. For more info, see [Search assets in AEM](/help/help/assets/search-assets.md).
+You can discover the desired assets faster from the search results page using the dynamically updated number of expected search results in the search facets. The expected number of assets are updated even before applying the search filter. Seeing the expected count against the filter helps you navigate through the search results quickly and efficiently. For more info, see [Search assets in AEM](/help/assets/search-assets.md).
 
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
 
@@ -190,7 +190,7 @@ Find similar images using the option in the card view
 
 ### Adobe Stock images {#adobestock}
 
-From within the AEM user interface, users can search [Adobe Stock assets](/help/help/assets/aem-assets-adobe-stock.md) and license the required assets. Add `Location: Adobe Stock` in the Omnisearch bar. You can also use Filters panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number.
+From within the AEM user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Add `Location: Adobe Stock` in the Omnisearch bar. You can also use Filters panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number.
 
 ### Dynamic Media assets {#dmassets}
 
@@ -325,7 +325,7 @@ Line-of-business users and marketers use Brand Portal to efficiently and securel
 
 ### Search Adobe Stock images {#adobestock-1}
 
-From within the AEM user interface, users can search Adobe Stock assets and license the required assets. Add `Location: Adobe Stock` in the Omnisearch field. You can also use **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage Adobe Stock images in AEM](/help/help/assets/aem-assets-adobe-stock.md#usemanage).
+From within the AEM user interface, users can search Adobe Stock assets and license the required assets. Add `Location: Adobe Stock` in the Omnisearch field. You can also use **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage Adobe Stock images in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Search Dynamic Media assets {#dynamicmedia}
 
@@ -518,7 +518,7 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 
 ### Extract text when uploading assets {#extracttextupload}
 
-You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/help/assets/managing-assets-touch-ui.md#uploading-assets).
+You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
 ### Custom predicates to filter search results {#custompredicates}
 

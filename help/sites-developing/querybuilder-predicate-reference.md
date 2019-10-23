@@ -253,7 +253,7 @@ Supports facet extraction. Will provide 2 buckets for main and subassets.
 
 ### memberOf {#memberof}
 
-Finds items that are member of a specific [sling resource collection](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+Finds items that are member of a specific [sling resource collection](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 This is a filtering-only predicate and cannot leverage a search index. Does not support facet extraction.
 

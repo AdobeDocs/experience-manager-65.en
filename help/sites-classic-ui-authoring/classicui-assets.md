@@ -19,5 +19,4 @@ The [Author Environment and Tools](/help/sites-authoring/author-environment-tool
 * [Adding Dynamic Media Classic features to your page](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [Naming conventions for assets](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
-* [Working with 3D assets](/help/sites-classic-ui-authoring/classicui-3dassets.md)
 

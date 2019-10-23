@@ -78,11 +78,11 @@ Additionally, AEM Communities offers privacy by design owing to its Bulk Moderat
 
 AEM Forms includes components and workflows that capture, process, and store data to orchestrate business processes and complete digital transactions. Different components use different data stores and allow integration with custom data stores as well. The following documentation explains procedures and guidelines for accessing and handling user data to support GDPR workflows for a component.
 
-* [Forms Portal](/forms/using/forms-portal-handling-user-data.md)
-* [Correspondence Management](/forms/using/correspondence-management-handling-user-data.md)
-* [Integration with Adobe Sign](/forms/using/integration-adobe-sign-handling-user-data.md)
-* [Forms-centric workflows on OSGi](/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Forms JEE workflows](/forms/using/forms-workflow-jee-handling-user-data.md) (AEM Forms JEE only)
-* [Document Security](/forms/using/document-security-handling-user-data.md) (AEM Forms JEE only)
-* [User Management](/forms/using/user-management-handling-user-data.md) (AEM Forms JEE only)
+* [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
+* [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)
+* [Integration with Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+* [Forms-centric workflows on OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
+* [Forms JEE workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md) (AEM Forms JEE only)
+* [Document Security](/help/forms/using/document-security-handling-user-data.md) (AEM Forms JEE only)
+* [User Management](/help/forms/using/user-management-handling-user-data.md) (AEM Forms JEE only)
 

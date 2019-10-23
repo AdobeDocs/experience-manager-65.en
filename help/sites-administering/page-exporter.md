@@ -130,7 +130,7 @@ As you may have noticed in the node structure, the **Geometrixx** page export co
 
 ## Programmatically Exporting a Page {#programmatically-exporting-a-page}
 
-To programmatically export a page, you can use the [PageExporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI service. This service allows you to:
+To programmatically export a page, you can use the [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI service. This service allows you to:
 
 * Export a page and write to the HTTP servlet response.
 * Export a page and save the zip file at a specific location.

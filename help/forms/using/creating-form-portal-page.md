@@ -18,7 +18,7 @@ Forms portal components equips Web Developers with components to create and cust
 
 ## Prerequisites {#prerequisites}
 
-Forms portal components are not available for use by default. Ensure that the following forms portal component categories are enabled as described in [Enabling forms portal components](/forms/using/enabling-forms-portal-components.md).
+Forms portal components are not available for use by default. Ensure that the following forms portal component categories are enabled as described in [Enabling forms portal components](/help/forms/using/enabling-forms-portal-components.md).
 
 **Document Services** Includes Search & Lister, Link, and Drafts and Submissions components.
 
@@ -47,7 +47,7 @@ Search & Lister Component in a page with Grid layout
 
 The List pane is an area where your forms are listed. The Search & Lister component provides various configuration options that you can use to control the display of forms in the List pane.
 
-To configure the List pane, tap the Search and Lister component and then tap ![](assets/settings_icon.png). The **[!UICONTROL ** Edit Component**]** dialog opens. 
+To configure the List pane, tap the Search and Lister component and then tap ![](assets/settings_icon.png). The **[!UICONTROL ** Edit Component**]** dialog opens.
 
 ![List pane in edit mode](assets/edit-list.png)
 
@@ -56,98 +56,98 @@ List pane in edit mode
 The **Edit **dialog includes several tabs that provide configuration options described in the table below. Tap **OK **to save the configuration, when done.
 
 <table>
- <tbody> 
-  <tr> 
-   <th>Tab</th> 
-   <th>Configuration</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol"><strong>Asset Folders</strong></code></td> 
-   <td>Add Item</td> 
-   <td>Configures the folders where assets are uploaded using AEM Forms UI. By default, it lists all uploaded assets. For more information about AEM Forms UI, see <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introduction to managing forms</a>.</td> 
-  </tr> 
-  <tr> 
-   <td style="text-align: center;"><p style="text-align: left;"><span class="uicontrol"><strong>Display</strong></code></p> </td> 
-   <td>Title Text</td> 
-   <td>Title for the Search &amp; Lister component. The default title is <strong>Forms Portal.</strong></td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Layout Template</td> 
-   <td>Layout of the assets. </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Disable Advanced Search</td> 
-   <td>When enabled, hides the advanced search icon.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Disable Text Search</td> 
-   <td>When enabled, hides the full-text search bar.</td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol"><strong>Result</strong></code></td> 
-   <td>Number Of Results Per Page</td> 
-   <td>Configures the maximum number of forms you want to display on a page.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Results Text</td> 
-   <td><p>Configures the results text (for example, 1-12 of 601 <strong>Results</strong>). The default value is <strong>Results</strong>.</p> <p>For example, if you specify <strong>Forms </strong>in this field and there are a total of 601 forms, the result text changes to 1-12 of 601 <strong>Forms.</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Page Text</td> 
-   <td><p>Configures the page text (for example, <strong>Page </strong>1 of 51). The default value is <strong>Page</strong>.</p> <p>For example, if you specify <strong>Application Form </strong>in this field and there are 51 pages, the page text changes to <strong>Application Form </strong>1 of 51.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Of Text</td> 
-   <td><p>Replaces the word <strong>of</strong> with the specified text (Page 1 <strong>of </strong>51). The default value is <strong>of</strong>.</p> <p>For example, if you specify <strong>out of </strong>in this field, the text changes to Page 1 <strong>out of </strong>51.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol"><strong>Form Link</strong></code></td> 
-   <td>Render Type</td> 
-   <td>Controls the listing of forms based on the specified render type. The available options are PDF and HTML. For example, if you select only HTML as the render type, the PDF forms are filtered out.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>HTML Profile</td> 
-   <td>Configures the HTML profile to use for rendering. All of the available profiles are listed in the drop-down list.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Submit URL</td> 
-   <td><p>Configures a servlet where the form data is submitted.</p> <p><strong>Note:</strong> <em>Submit URL for a form can be specified at several places and its order of precedence is as follows:</em></p> 
-    <ol> 
-     <li><em>Submit URL embedded in the form (in Submit button) has the highest priority.</em></li> 
-     <li><em>Submit URL mentioned in AEM Forms UI has the second highest priority.</em></li> 
-     <li><em>Submit URL mentioned in forms portal has the lowest priority.</em></li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>HTML Render Action tool tip</td> 
-   <td>Configures the text for the tool tip, which is displayed on hovering the pointer over <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (the HTML5 icon).</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>PDF Render Action tool tip</td> 
-   <td>Configures the text for the tool tip, which is displayed on hovering the pointer over <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (the PDF icon).</td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol"><strong>Style</strong></code></td> 
-   <td>Style Type</td> 
-   <td>Allows you to specify <strong>No Style, Default Style</strong>, or <strong>Custom Style </strong>for listing the forms.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Custom Style Path</td> 
-   <td>If you selected Custom as the Style Type, browse to specify the path to the custom CSS, else select Default.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>Tab</th>
+   <th>Configuration</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><span class="uicontrol"><strong>Asset Folders</strong></code></td>
+   <td>Add Item</td>
+   <td>Configures the folders where assets are uploaded using AEM Forms UI. By default, it lists all uploaded assets. For more information about AEM Forms UI, see <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introduction to managing forms</a>.</td>
+  </tr>
+  <tr>
+   <td style="text-align: center;"><p style="text-align: left;"><span class="uicontrol"><strong>Display</strong></code></p> </td>
+   <td>Title Text</td>
+   <td>Title for the Search &amp; Lister component. The default title is <strong>Forms Portal.</strong></td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Layout Template</td>
+   <td>Layout of the assets. </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Disable Advanced Search</td>
+   <td>When enabled, hides the advanced search icon.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Disable Text Search</td>
+   <td>When enabled, hides the full-text search bar.</td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol"><strong>Result</strong></code></td>
+   <td>Number Of Results Per Page</td>
+   <td>Configures the maximum number of forms you want to display on a page.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Results Text</td>
+   <td><p>Configures the results text (for example, 1-12 of 601 <strong>Results</strong>). The default value is <strong>Results</strong>.</p> <p>For example, if you specify <strong>Forms </strong>in this field and there are a total of 601 forms, the result text changes to 1-12 of 601 <strong>Forms.</strong></p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Page Text</td>
+   <td><p>Configures the page text (for example, <strong>Page </strong>1 of 51). The default value is <strong>Page</strong>.</p> <p>For example, if you specify <strong>Application Form </strong>in this field and there are 51 pages, the page text changes to <strong>Application Form </strong>1 of 51.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Of Text</td>
+   <td><p>Replaces the word <strong>of</strong> with the specified text (Page 1 <strong>of </strong>51). The default value is <strong>of</strong>.</p> <p>For example, if you specify <strong>out of </strong>in this field, the text changes to Page 1 <strong>out of </strong>51.</p> </td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol"><strong>Form Link</strong></code></td>
+   <td>Render Type</td>
+   <td>Controls the listing of forms based on the specified render type. The available options are PDF and HTML. For example, if you select only HTML as the render type, the PDF forms are filtered out.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>HTML Profile</td>
+   <td>Configures the HTML profile to use for rendering. All of the available profiles are listed in the drop-down list.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Submit URL</td>
+   <td><p>Configures a servlet where the form data is submitted.</p> <p><strong>Note:</strong> <em>Submit URL for a form can be specified at several places and its order of precedence is as follows:</em></p>
+    <ol>
+     <li><em>Submit URL embedded in the form (in Submit button) has the highest priority.</em></li>
+     <li><em>Submit URL mentioned in AEM Forms UI has the second highest priority.</em></li>
+     <li><em>Submit URL mentioned in forms portal has the lowest priority.</em></li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>HTML Render Action tool tip</td>
+   <td>Configures the text for the tool tip, which is displayed on hovering the pointer over <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (the HTML5 icon).</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>PDF Render Action tool tip</td>
+   <td>Configures the text for the tool tip, which is displayed on hovering the pointer over <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (the PDF icon).</td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol"><strong>Style</strong></code></td>
+   <td>Style Type</td>
+   <td>Allows you to specify <strong>No Style, Default Style</strong>, or <strong>Custom Style </strong>for listing the forms.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Custom Style Path</td>
+   <td>If you selected Custom as the Style Type, browse to specify the path to the custom CSS, else select Default.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Search Pane {#search-pane}
@@ -170,9 +170,9 @@ To configure the Date Predicate component:
 1. Specify the following:
 
     * **Type: **The only option available is **Last Modified Date**
-    
+
     * **Text: **Label or caption for the Date Predicate Component. The default value is **Last Modified Date.**
-    
+
     * **Start Date Label: **Label or caption of start date field
     * **End Date Label: **Label or caption for end date field
     * **Hide: **To enforce default date filter to list forms
@@ -196,12 +196,12 @@ The Properties Predicate component implements searching of forms based on form p
 To configure the Properties Predicate component:
 
 1. Tap the component and then tap ![](assets/settings_icon.png). The Edit dialog opens.
-1. In the General tab, specify the search label. The default value is **Properties** 
+1. In the General tab, specify the search label. The default value is **Properties**
 
 1. In the Options tab, tap **Add Item.**
-1. Select a property from the drop-down list and specify a search label for it in the field below the drop-down list.  
-1. Repeat step 4 to add more properties. You can also specify a default filter value to list forms based on the specified criteria and hide the property for search by end users. Select the Hide checkbox for a property and specify the default filter value.  
-   For example, if you want to display forms that contain "Travel" in their titles, select Hide next to the Title property. In addition, specify Travel in default filter value text box.  
+1. Select a property from the drop-down list and specify a search label for it in the field below the drop-down list.
+1. Repeat step 4 to add more properties. You can also specify a default filter value to list forms based on the specified criteria and hide the property for search by end users. Select the Hide checkbox for a property and specify the default filter value.
+   For example, if you want to display forms that contain "Travel" in their titles, select Hide next to the Title property. In addition, specify Travel in default filter value text box.
 
 1. Tap **OK**
 
@@ -212,7 +212,7 @@ The Tags Predicate component implements searching of forms based on tags defined
 To configure the Tags Predicate component:
 
 1. Tap the component and then tap ![](assets/settings_icon.png). The Edit dialog opens.
-1. Tap the down-arrow button next to the Tags field.  
+1. Tap the down-arrow button next to the Tags field.
 1. Select appropriate tags
 1. Tap **OK**
 

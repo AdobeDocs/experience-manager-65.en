@@ -549,7 +549,7 @@ For resources that use your application page component as the `sling:resourceTyp
 
 ### Example PageInfoProvider implementation {#example-pageinfoprovider-implementation}
 
-The following Java class implements [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) and returns the published URL of the current page resource.
+The following Java class implements [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) and returns the published URL of the current page resource.
 
 ```java
 package com.adobe.example;

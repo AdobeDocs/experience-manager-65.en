@@ -15,7 +15,7 @@ discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 
 For the purpose of programmatically working with tags or extending tags within a custom AEM application, this page describes use of the
 
-* [Tagging API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
+* [Tagging API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
 
 that interacts with the
 
@@ -28,7 +28,7 @@ For related information regarding tagging, see :
 
 ## Overview of the Tagging API {#overview-of-the-tagging-api}
 
-The implementation of the [tagging framework](/help/sites-developing/framework.md) in AEM allows management of tags and tag content using the JCR API . The TagManager ensures that tags entered as values on the `cq:tags` string array property are not duplicated, it removes TagIDs pointing to non-existing tags and updates TagIDs for moved or merged tags. TagManager uses a JCR observation listener that reverts any incorrect changes. The main classes are in the [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) package:
+The implementation of the [tagging framework](/help/sites-developing/framework.md) in AEM allows management of tags and tag content using the JCR API . The TagManager ensures that tags entered as values on the `cq:tags` string array property are not duplicated, it removes TagIDs pointing to non-existing tags and updates TagIDs for moved or merged tags. TagManager uses a JCR observation listener that reverts any incorrect changes. The main classes are in the [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) package:
 
 * JcrTagManagerFactory - returns a JCR-based implementation of a `TagManager`. It is the reference implementation of the Tagging API.
 * `TagManager` - allows for resolving and creating tags by paths and names.
@@ -151,7 +151,7 @@ When the **Animals** tag is added to the **Products** page, the value `stockphot
 
 The server-side API has localized `title`-related methods:
 
-* [com.day.cq.tagging.Tag](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
     * getLocalizedTitle(Locale locale)
     * getLocalizedTitlePaths()
@@ -159,7 +159,7 @@ The server-side API has localized `title`-related methods:
     * getTitle(Locale locale)
     * getTitlePath(Locale locale)
 
-* [com.day.cq.tagging.TagManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
     * canCreateTagByTitle(String tagTitlePath, Locale locale)
     * createTagByTitle(String tagTitlePath, Locale locale)

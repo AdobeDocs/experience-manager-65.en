@@ -138,7 +138,7 @@ Further information on installing bundles is found on the [Web Console](/help/si
 
 Shareable Content Object Reference Model (SCORM) is a collection of standards and specifications for e-learning. SCORM also defines how content may be packaged into a transferable ZIP file.
 
-The AEM Communities SCORM engine is required for the [enablement](/help/help/communities/overview.md#enablement-community) feature. Scorm packages supported on AEM 6.5 Communities:
+The AEM Communities SCORM engine is required for the [enablement](/help/communities/overview.md#enablement-community) feature. Scorm packages supported on AEM 6.5 Communities:
 
 * [cq-social-scorm-package, version 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) which includes the [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 

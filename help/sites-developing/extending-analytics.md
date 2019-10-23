@@ -100,7 +100,7 @@ Store specific:
 
 >[!NOTE]
 >
->Also see the complete [ContextHub API Reference](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Also see the complete [ContextHub API Reference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
 ## Adding Record Callbacks {#adding-record-callbacks}
 
