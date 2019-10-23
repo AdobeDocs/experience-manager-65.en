@@ -55,11 +55,11 @@ The following JAR files must be added to your project’s classpath:
 
 If AEM Forms is deployed on a supported J2EE application server that is not JBOSS, then you will need to replace adobe-utilities.jar and jbossall-client.jar with JAR files that are specific to the J2EE application server on which AEM Forms is deployed. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create a barcoded forms Client API object **
+**Create a barcoded forms Client API object**
 
 Before you can programmatically perform a barcoded forms service operation, you must create a Barcoded Forms service client. If you are using the Java API, create a `BarcodedFormsServiceClient` object. If you are using the barcoded forms web service API, create a `BarcodedFormsServiceService` object.
 
-**Get a PDF form that contains barcoded data **
+**Get a PDF form that contains barcoded data**
 
 You must obtain a PDF form that contains a barcode that has been populated with user data.
 

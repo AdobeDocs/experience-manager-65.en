@@ -73,19 +73,18 @@ The sidebar comprises the following browsers:
 * **Content** **browser**
   In the content browser, you can see
 
-    * **Form Objects
-      **Shows object hierarchy of the Form. Author can navigate to specific form component by tapping that element in Form Object Tree. Author can search objects and rearrange them from this tree.**
-      **
+    * **Form Objects**
+      Shows object hierarchy of the Form. Author can navigate to specific form component by tapping that element in Form Object Tree. Author can search objects and rearrange them from this tree.
 
-    * **Data Model Objects
-      **Lets you see the form model hierarchy.
+    * **Data Model Objects**
+      Lets you see the form model hierarchy.
       It allows you to drag and drop form-model elements on the adaptive form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
 
-* **Properties browser
-  **Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:
+* **Properties browser**
+  Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:
   Select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
 
-* **Assets** **browser**
+* **Assets browser**
   Segregates different types content such as images, documents, pages, movies, and so on.
 
 * **Components browser**

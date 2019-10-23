@@ -260,8 +260,7 @@ To create the new component, we use the standard textimage component as a basis 
 
     * dialog definition: `textimage/dialog`
     * component script: `textimage/textimage.jsp`
-    * edit configuration node (allowing drag-and-drop of assets): `textimage/cq:editConfig`**
-      **
+    * edit configuration node (allowing drag-and-drop of assets): `textimage/cq:editConfig`
 
    >[!NOTE]
    >

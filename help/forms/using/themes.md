@@ -449,10 +449,8 @@ Perform the following steps to customize styling for a particular component (a n
 1. In the Theme Editor, select the numeric box in the Canvas.
 1. When you select the numeric box, you can see the component toolbar with three options:
 
-    * **Numeric Box Widget
-      **
-    * **Field Widget
-      **
+    * **Numeric Box Widget**
+    * **Field Widget**
     * ![](assets/field-level.png)
 
 1. Select **Numeric Box Widget**.
@@ -634,7 +632,7 @@ You can see the generated CSS using the following options:
   **When you edit a theme, you can browse and add assets (such as images) from other themes. For example, you are editing the background of a page. For example, when you select **Page ![](assets/edit-button.png)&gt; Background &gt; Add &gt; Image**, you see a dialog that lets you browse and add images in other theme.
 
 * You can face issues with your current theme if an asset is added from another theme, and the other theme is moved or deleted. It is recommended that you avoid browsing and adding assets from other themes.
-* **Using base clientlib, theme editor, and inline styling **
+* **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
       Base client library contains styling information. To use styling information in client-side libraries in themes.

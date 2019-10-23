@@ -145,17 +145,17 @@ Support for localization, sorting, and using configuration properties on the use
 
 ![Drafts and Submission node](assets/raw-image-with-index.png)
 
-***A**. *Container element
+***A**. Container element
 
-***B.*** "path"** **metadata with a fixed hierarchy to obtain the thumbnail stored for each form.
+**B.** "path" metadata with a fixed hierarchy to obtain the thumbnail stored for each form.
 
-**C. **Data-repeatable attribute used for the template section for each form
+**C.** Data-repeatable attribute used for the template section for each form
 
-***D.** *To localize "Apply" string
+**D.** To localize "Apply" string
 
-***E.** *Using the configuration property pdfLinkText** **
+**E.** Using the configuration property pdfLinkText
 
-***F.*** Using the "pdfUrl" metadata
+**F.** Using the "pdfUrl" metadata
 
 ## Tips, tricks, and known issues {#tips-tricks-and-known-issues}
 

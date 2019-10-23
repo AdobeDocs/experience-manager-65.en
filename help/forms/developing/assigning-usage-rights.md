@@ -74,7 +74,7 @@ The usage rights that you can set are determined by a credential that you purcha
 
 To apply usage rights to a PDF document, you reference the alias of the credential that you are using to apply usage rights (a credential is typically installed during the installation of AEM Forms). Also you must specify the PDF document to which usage rights is applied. For information abut configuring a credential, see the installing and deploying guide for your application server.
 
-**Save the rights-enabled PDF document **
+**Save the rights-enabled PDF document**
 
 After the Acrobat Reader DC extensions service applies usage rights to a PDF document, you can save the rights-enabled PDF document as a PDF file.
 

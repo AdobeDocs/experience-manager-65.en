@@ -75,19 +75,18 @@ Under the **Settings** tab, specify the basic features of the blog :
 * **Allow Attachment Thumbnail**
   If checked, a thumbnail of the attached image is created.
 
-* **Max Attach Thumbnail Size
-  **Maximum size (in pixels) of the attachment thumbnail image. The default value is 800 x 800.
-* **Min Image Size for Thumbnail
-  **Minimum size (in bytes) of image for generating thumbnail for inline images. The default value is 100000bytes (100kb).
-* **Max Thumbnail Size
-  **Maximum size (in pixels) of the thumbnail image for inline image. The default value is 800 x 800.
-* **Allow Privileged Members
-  **If checked, only Privileged members are allowed to create content.
-* **Allowed Privileged Members
-  **Add the privileged members allowed to create content.
-* **Block User Generated Content in Author Edit Mode
-  **If enabled, blocks User Generated Content while editing in Author Mode.**
-  **
+* **Max Attach Thumbnail Size**
+  Maximum size (in pixels) of the attachment thumbnail image. The default value is 800 x 800.
+* **Min Image Size for Thumbnail**
+  Minimum size (in bytes) of image for generating thumbnail for inline images. The default value is 100000bytes (100kb).
+* **Max Thumbnail Size**
+  Maximum size (in pixels) of the thumbnail image for inline image. The default value is 800 x 800.
+* **Allow Privileged Members**
+  If checked, only Privileged members are allowed to create content.
+* **Allowed Privileged Members**
+  Add the privileged members allowed to create content.
+* **Block User Generated Content in Author Edit Mode**
+  If enabled, blocks User Generated Content while editing in Author Mode.
 
 * **Journal Title**
   The blog title to display on the page.

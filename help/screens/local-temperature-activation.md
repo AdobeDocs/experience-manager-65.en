@@ -80,11 +80,8 @@ Follow the steps below to implement the Travel Center Local Temperature Activati
 
 1. **Checking the Preview**
 
-    1. Click **Preview. **Also, open your Google Sheet and update its value.**
-       **
+    1. Click **Preview.** Also, open your Google Sheet and update its value.
+    1. Change the value to less than 50, you should be able to view the an image of summer drinks. If the value in the Google Sheet is 50 or greater than should be able to view the an image of hot drink.
 
-    1. Change the value to less than 50, you should be able to view the an image of summer drinks. If the value in the Google Sheet is 50 or greater than should be able to view the an image of hot drink.**
-       **
-
-   ![](assets/result3.gif)
+    ![](assets/result3.gif)
 

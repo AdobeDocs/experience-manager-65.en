@@ -425,7 +425,7 @@ The Hello World component is intended to be used on a Sequence Channel. To test 
    1. Properties Step
 
     * Basic Tab &gt; Title = **Idle Channel**
-    * Channel Tab &gt; check** Make channel online **
+    * Channel Tab &gt; check **Make channel online**
 
    ![idle-channel](assets/idle-channel.gif)
 

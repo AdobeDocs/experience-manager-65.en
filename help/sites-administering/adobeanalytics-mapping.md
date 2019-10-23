@@ -58,7 +58,7 @@ Use the following procedure to map CQ component variables with Adobe Analytics r
    >
    >It is highly recommended that:
    >    
-   >    * `eVars` and `props` are mapped to CQ variables beginning with either** ** `pagedata.X`** **or `eventdata.X`   
+   >    * `eVars` and `props` are mapped to CQ variables beginning with either `pagedata.X`** **or `eventdata.X`   
    >    
    >    * whereas events should be mapped to variables starting with `eventdata.events.X`
 

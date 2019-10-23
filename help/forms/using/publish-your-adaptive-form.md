@@ -28,8 +28,8 @@ You have the following methods to publish an adaptive form:
 
 ## Before you start {#before-you-start}
 
-* ** [Set up an AEM Forms publish instance](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: The publish instance is a public facing instance of AEM Forms running in publish mode. In a production environment, the publish instance is outside of the organization's firewall.
-* ** [Set up replication and reverse replication](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**: Replication copies content from the author instance to a publish instance and returns user input (for example, form input) from the publish instance to the author instance.
+* **[Set up an AEM Forms publish instance](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: The publish instance is a public facing instance of AEM Forms running in publish mode. In a production environment, the publish instance is outside of the organization's firewall.
+* **[Set up replication and reverse replication](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**: Replication copies content from the author instance to a publish instance and returns user input (for example, form input) from the publish instance to the author instance.
 
 ## Publish the adaptive form as an AEM Page {#publish-the-adaptive-form-as-an-aem-page}
 

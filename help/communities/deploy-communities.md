@@ -249,7 +249,7 @@ There are two replication agents in the author environment that need the transpo
 
 * follow the same procecure for both agents :
 
-    * **Default Agent (publish) **
+    * **Default Agent (publish)**
     * **Reverse Replication Agent (publish reverse)**
 
         1. select the agent

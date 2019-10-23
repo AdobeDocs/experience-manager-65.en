@@ -54,7 +54,7 @@ To publish to Scene7 from the Assets console if the assets are in a Scene7 targe
 
 1. In the AEM classic UI, click** Digital Assets** to access the digital asset manager.
 
-1. Select the asset (or assets) or folder from within the target folder you want to publish to Scene7 and right-click and select **Publish to Scene7**. Alternatively, you can select** Publish to Scene7 **from the **Tools **menu**. **
+1. Select the asset (or assets) or folder from within the target folder you want to publish to Scene7 and right-click and select **Publish to Scene7**. Alternatively, you can select **Publish to Scene7** from the **Tools menu**.
 
    ![](assets/chlimage_1-48.png)
 
@@ -160,7 +160,7 @@ To add a Scene7 component/viewer to a page in the classic UI:
 
 1. If no Scene7 components are available, click the ruler in the sidekick to enter **Design** mode, click **Edit** parsys, and select all the **Scene7** components to make them available.
 
-1. Return to **Edit** mode by clicking the the pencil in the sidekick.
+1. Return to **Edit** mode by clicking the pencil in the sidekick.
 
 1. Drag a component from the **Scene7** group in the sidekick onto the page in the desired location.
 
@@ -395,7 +395,7 @@ By default, AEM searches the folder selected and all sub-folders.
 >* In the classic UI, you can also search for **Flash** and **FXG**. Filtering for these in the touch-optimized UI is currently not supported.
 >
 >* When searching video, you are searching a single rendition. Results return the original rendition (only &#42;.mp4) and the encoded rendition.
->* When searching an adaptive video set, you are searching the the folder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, AEM does not search the sub-folders.
+>* When searching an adaptive video set, you are searching the folder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, AEM does not search the sub-folders.
 >
 
 **Publish Status** You can filter for assets based on publication status: Unpublished or Published. If you do not select any Publish Status, AEM by default searches all publish statuses.

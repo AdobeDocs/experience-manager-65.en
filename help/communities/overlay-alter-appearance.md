@@ -24,16 +24,16 @@ The comment.hbs script is responsible for creating the overall HTML for each com
 
 To not display the avatar next to each posted comment:
 
-1. copy** ** `comment.hbs`from `libs`to `apps`
+1. copy `comment.hbs`from `libs`to `apps`
 
-    1. select** ** `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+    1. select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
     1. select **Copy**
     1. select `/apps/social/commons/components/hbs/comments/comment`
     1. select **Paste**
 
 1. open the overlaid `comment.hbs`
 
-    * double-click on node** ** `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
+    * double-click on node `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. find the following lines and either delete or comment them out:
 

@@ -53,7 +53,7 @@ You can set up the command line process step for your particular use case. Perfo
 
    ![](assets/select_flags.png)
 
-1. In the **[!UICONTROL Web Enabled Image]** tab, specify the details for the rendition with dimensions 1280x1280 pixels. In addition, specify i*mage/jpeg* in the **[!UICONTROL **Mimetype**]**box.
+1. In the **[!UICONTROL Web Enabled Image]** tab, specify the details for the rendition with dimensions 1280x1280 pixels. In addition, specify i*mage/jpeg* in the **[!UICONTROL Mimetype]** box.
 
    ![](assets/web_enabled_image.png)
 

@@ -759,8 +759,8 @@ Starting with AEM 6.4, a new touch user interface method was introducted to set 
 
    To delete a tag you have added, select the tag, and tap **X**.
 
-1. When you are finished adding the tags you want, tap **Save.
-   **
+1. When you are finished adding the tags you want, tap **Save**.
+
    Now you publish videos to your YouTube channel.
 
 #### Setting up YouTube in AEM before 6.4 {#setting-up-youtube-in-aem-before}
@@ -805,8 +805,8 @@ Starting with AEM 6.4, a new touch user interface method was introducted to set 
 
    To delete a tag you have added, select the tag, and tap **X**.
 
-1. When you are finished adding the tags you want, tap **OK.
-   **
+1. When you are finished adding the tags you want, tap **OK**.
+
    Now you publish videos to your YouTube channel.
 
 ### (Optional) Automating the setting of default YouTube properties for your uploaded videos {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}

@@ -43,12 +43,11 @@ To learn more about how you can enable targeting for assets in AEM Screens proje
 
 After you have configured ContextHub for your AEM Screens project, follow different use cases to understand how data triggered assets plays a vital role in different industries:
 
-** [Retail Inventory Targeted Activation](/help/screens/retail-inventory-activation.md)**
+**[Retail Inventory Targeted Activation](/help/screens/retail-inventory-activation.md)**
 
-** [Travel Center Temperature Activation](/help/screens/local-temperature-activation.md)
-**
+**[Travel Center Temperature Activation](/help/screens/local-temperature-activation.md)**
 
-[**Hospitality Reservation Activation**](/help/screens/hospitality-reservation-activation.md)
+**[Hospitality Reservation Activation](/help/screens/hospitality-reservation-activation.md)**
 
 * **Improvements in Update Handlers**
 

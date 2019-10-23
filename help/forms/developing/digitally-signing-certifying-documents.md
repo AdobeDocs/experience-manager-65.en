@@ -74,7 +74,7 @@ The following JAR files must be added to your project’s classpath:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
-**Create a Signature client **
+**Create a Signature client**
 
 Before you can programmatically perform a Signature service operation, you must create a Signature service client.
 
@@ -668,7 +668,7 @@ To successfully sign a PDF document, you can specify the fully qualified name of
 
 You must also reference a security credential to digitally sign a PDF document. To reference a security credential, you specify an alias. The alias is a reference to an actual credential that may be in a PKCS#12 file (with a .pfx extension), or a hardware security module (HSM). For information about the security credential, see the* Installing and Deploying AEM Forms* guide for your application server.
 
-**Save the signed PDF document **
+**Save the signed PDF document**
 
 After the Signature service digitally signs the PDF document, you can save it as a PDF file so that users can open it in Acrobat or Adobe Reader.
 
@@ -873,7 +873,7 @@ When signing a PDF document, you can set run-time options that the Signature ser
 
 You set appearance options by using a `PDFSignatureAppearanceOptionSpec` object. For example, you can display the date within a signature by invoking the `PDFSignatureAppearanceOptionSpec` object’s `setShowDate` method and passing `true`.
 
-**Save the signed PDF document **
+**Save the signed PDF document**
 
 After the Signature service digitally signs the PDF document, you can save it as a PDF file. The PDF file can be opened in Acrobat or Adobe Reader.
 
@@ -1104,7 +1104,7 @@ The following JAR files must be added to your project’s classpath:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create a Signature client **
+**Create a Signature client**
 
 Before you can programmatically perform a Signature operation, you must create a Signature client.
 
@@ -1314,7 +1314,7 @@ The following JAR files must be added to your project’s classpath:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create a Signature client **
+**Create a Signature client**
 
 Before you programmatically perform a Signature service operation, create a Signature service client.
 
@@ -1362,7 +1362,7 @@ By default, the Signature service limits the amount of time that a document can 
 >
 >For other values that you require when verifying a signature, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**Determine the status of the signature **
+**Determine the status of the signature**
 
 As part of verifying a digital signature, you can check the status of the signature.
 
@@ -1538,7 +1538,7 @@ The following JAR files must be added to your project’s classpath:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create a Signature client **
+**Create a Signature client**
 
 Before you programmatically perform a Signature service operation, create a Signature service client.
 
@@ -1747,7 +1747,7 @@ The following JAR files must be added to your project’s classpath:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create a Signature client **
+**Create a Signature client**
 
 Before you can programmatically perform a Signature service operation, you must create a Signature service client.
 

@@ -61,13 +61,11 @@ Follow the steps below to set up a data store that allows you to use ContextHub 
 
     1. Click** Create &gt; Configuration Container **and enter the title as** ContextHubDemo**.
 
-    1. **Navigate **to** ContextHubDemo **&gt;** ContentHub Store Configuration... **to open the** Configure **wizard**
-       **
+    1. **Navigate** to **ContextHubDemo** &gt; **ContentHub Store Configuration...** to open the **Configure wizard**.
 
-    1. Enter the **Title **as** Google Sheets**, **Store Name **as **googlesheets**, and **Store Type **as** contexthub.generic-jsonp
-       **
+    1. Enter the **Title** as **Google Sheets**, **Store Name** as **googlesheets**, and **Store Type** as **contexthub.generic-jsonp**
 
-    1. Click** Next**
+    1. Click **Next**
     1. Enter your specific json configuration**.** For example, you can use the following json for demo purposes.
     1. Click **Save**.
 
@@ -139,11 +137,9 @@ Once you have set up a data store and defined your brand, follow the steps below
 
 1. **Creating Segments in Audiences**
 
-    1. Navigate from your AEM instance to **Personalization** &gt; **Audiences **&gt;** We.Retail**.**
-       **
+    1. Navigate from your AEM instance to **Personalization** &gt; **Audiences** &gt; **We.Retail**.
 
-    1. Click** Create** &gt; **Create Context Hub Segment. New ContextHub Segment **dialog box opens.**
-       **
+    1. Click **Create** &gt; **Create Context Hub Segment.** The **New ContextHub Segment** dialog box opens.**
 
     1. Enter the **Title** as **SheetA1 1** and click **Create**. Similarly, create another segment titled as **SheetA2 2**.
 
@@ -219,8 +215,6 @@ Follow the steps below to enable targeting in your channels.
 
 After you have configured ContextHub for your AEM Screens project, you can follow the different Use Cases to understand how data triggered assets plays a vital role in different industries:
 
-1. ** [Retail Inventory Targeted Activation](/help/screens/retail-inventory-activation.md)**
-1. ** [Travel Center Temperature Activation](/help/screens/local-temperature-activation.md)
-   **
-1. [**Hospitality Reservation Activation**](/help/screens/hospitality-reservation-activation.md)
-
+1. **[Retail Inventory Targeted Activation](/help/screens/retail-inventory-activation.md)**
+1. **[Travel Center Temperature Activation](/help/screens/local-temperature-activation.md)**
+1. **[Hospitality Reservation Activation](/help/screens/hospitality-reservation-activation.md)**

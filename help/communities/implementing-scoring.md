@@ -477,7 +477,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 | UPDATE |member updates a folder or file |
 | DELETE |member deletes a folder or file |
 
-** [Forum Component](/help/communities/forum.md)**
+**[Forum Component](/help/communities/forum.md)**
 SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verb** |**Description** |

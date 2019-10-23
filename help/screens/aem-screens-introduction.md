@@ -45,9 +45,9 @@ To create a demo Screens project and publish your content in Screens player, see
 
 Starting a new digital signage experience requires a cohesion of roles before it is ready for consumption. The following roles provide a starting point for creating a new Screens project:
 
-* ** [Author](/help/screens/authoring-screens.md)**
-* ** [Developer](/help/screens/developing-screens.md)**
-* ** [System Administrator/Technician](/help/screens/administering-screens.md)**
+* **[Author](/help/screens/authoring-screens.md)**
+* **[Developer](/help/screens/developing-screens.md)**
+* **[System Administrator/Technician](/help/screens/administering-screens.md)**
 
 The following figure defines the personas and their roles for AEM Screens.
 
@@ -63,9 +63,9 @@ Before you start working on a Digital Signage project using AEM Screens, Adobe E
 
 Refer to the following tutorials and resources to learn Adobe Experience Manager 6.5:
 
-* ** [Adobe Experience Manager Getting Started](https://helpx.adobe.com/experience-manager/get-started.html): **Discover getting started articles and video tutorials for Adobe Experience Manager.
-* ** [AEM 6.5 Tutorials and Videos](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)**: A collection of tutorials and videos highlighting both new and updated capabilities for AEM Sites, Assets, Forms, Screens, and Foundation with the release of AEM 6.5.
-* [**AEM Core Concepts**](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/the-basics.html): An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM.
+* **[Adobe Experience Manager Getting Started](https://helpx.adobe.com/experience-manager/get-started.html):** Discover getting started articles and video tutorials for Adobe Experience Manager.
+* **[AEM 6.5 Tutorials and Videos](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)**: A collection of tutorials and videos highlighting both new and updated capabilities for AEM Sites, Assets, Forms, Screens, and Foundation with the release of AEM 6.5.
+* **[AEM Core Concepts](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/the-basics.html)**: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM.
 
 ### Guided Implementation Essentials {#guided-implementation-essentials}
 

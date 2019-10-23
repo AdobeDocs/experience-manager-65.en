@@ -149,7 +149,7 @@ These are available in two tabs:
     * Controls Style
       Various options are available from a pulldown menu; for example, Prev / Next Buttons, Top-Right Switches.
 
-* **List **
+* **List**
   Here you specify how pages are included in your Carousel:
 
     * **Build list using**

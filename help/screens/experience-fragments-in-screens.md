@@ -19,8 +19,7 @@ This page covers the following topics:
 
 * **Overview**
 * **Using Experience Fragments in AEM Screens**
-* **Propagating Changes from the Master Page  
-  **
+* **Propagating Changes from the Master Page**
 
 ## Overview {#overview}
 

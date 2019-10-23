@@ -49,7 +49,7 @@ This will bring up the Site Editor panel which contains 3 sub-panels:
 
 On the Basic Info panel, a name, description and whether the template is enabled or disabled are configured:
 
-* **New Group Template Name **
+* **New Group Template Name**
   the template name id
 
 * **Description**

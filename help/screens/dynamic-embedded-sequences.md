@@ -81,8 +81,7 @@ You can download the following resources (images and add these to assets) and fu
 >
 >For additional information on how to create a project and how to create a sequence channel, please refer to resources below:
 >
->* **[Creating and Managing Projects](/help/screens/creating-a-screens-project.md)
->  **
+>* **[Creating and Managing Projects](/help/screens/creating-a-screens-project.md)**
 >* **[Managing a Channel](/help/screens/managing-channels.md)**
 >
 

@@ -23,11 +23,11 @@ This article presents important questions to consider when engaging a front-end 
 
 Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If as a front end developer you follow these general best practices as well as few AEM-specific principles, your SPA will be functional with [AEM and its content-authoring capabilities](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
-* ** [Portability](/help/sites-developing/spa-architecture.md#portability) -** As with any components, the components should be built to be as portable as possible. The SPA should be built with portably and reusable components.
+* **[Portability](/help/sites-developing/spa-architecture.md#portability) -** As with any components, the components should be built to be as portable as possible. The SPA should be built with portably and reusable components.
 
-* ** [AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure) - **The front end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
-* ** [Dynamic Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering) -** All rendering should be dynamic.
-* ** [Dynamic Routing](/content.md#main-pars_header_1105486143) -** The SPA is responsible for the routing and AEM listens to it and fetches based on it. Any routing should be dynamic as well.
+* **[AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - The front end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
+* **[Dynamic Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering)** - All rendering should be dynamic.
+* **[Dynamic Routing](/content.md#main-pars_header_1105486143) -** The SPA is responsible for the routing and AEM listens to it and fetches based on it. Any routing should be dynamic as well.
 
 If you keep these principles in mind as you develop your SPA, it will be as flexible and as future proof as possible while enabling all supported AEM authoring functionality.
 
@@ -151,8 +151,7 @@ The following is an outline of the steps a front-end developer needs to follow w
 
    Pages and paragraph systems should extend this class so that delegation to inner components works as expected.
 
-1. **Implement a routing solution that using the HTML5 `History` API.
-   **
+1. **Implement a routing solution that using the HTML5 `History` API.**
 
    When the `ModelRouter` is enabled, calling the `pushState` and `replaceState` functions will trigger a request to the `PageModelManager` to fetch a missing fragment of the model.
 

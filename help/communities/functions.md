@@ -311,13 +311,13 @@ The ability to create a community function is reached by selecting the `Create C
 
 On the Community Function Name panel, a name, description and whether the function is enabled or disabled are configured:
 
-* **Community Function Name **
+* **Community Function Name**
   the function name used for display and storage
 
-* **Community Function Description **
+* **Community Function Description**
   the function description for display
 
-* **Disabled/Enabled **
+* **Disabled/Enabled**
   a toggle switch controlling whether the function is referenceable
 
 ### AEM Blueprint {#aem-blueprint}

@@ -120,8 +120,7 @@ You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 
         * Ensure that your custom components, if any, are compatible with supported jQuery versions.
         * Remove unsupported APIs from the custom components. See [upgrade guide](https://jquery.com/upgrade-guide/3.0/) for the list of removed APIs. For example, support for the load(), .unload(), and .error() APIs is removed. Use the .on() method in place of aforementioned APIs. For example, change $("img").load(fn) to $("img").on("load", fn).
 
-    * **(If upgrading from AEM 6.2 Forms or previous versions only) Reconfigure analytics and reports
-      **
+    * **(If upgrading from AEM 6.2 Forms or previous versions only) Reconfigure analytics and reports**
 
       In AEM 6.4 Forms, traffic variable for source and success event for impression are not available. So, when you upgrade from AEM 6.2 Forms or previous versions, AEM Forms stops sending data to Adobe Analytics server and analytics reports for adaptive forms are not available. Moreover, AEM 6.4 Forms introduces traffic variable for the version of form analytics and success event for the amount of time spent on a field. So, reconfigure analytics and reports for your AEM Forms environment. For detailed steps, see [Configuring analytics and reports](../../forms/using/configure-analytics-forms-documents.md).
 
@@ -186,8 +185,7 @@ Migration involves moving only assets (PDF, XDP, images, adaptive forms, corresp
 
       Moreover, AEM 6.3 Forms release has introduced many new Adobe Sign features. For step-by-step information to use Adobe Sign, see [Using Adobe Sign in an adaptive form](../../forms/using/working-with-adobe-sign.md).
 
-    * **Reconfigure analytics and reports
-      **
+    * **Reconfigure analytics and reports**
 
       In AEM 6.3 Forms, traffic variable for source and success event for impression are not available. So, when you upgrade to AEM 6.3 Forms, AEM Forms stops sending data to Adobe Analytics server and analytics reports for adaptive forms are not available. Moreover, AEM 6.3 Forms introduces traffic variable for the version of form analytics and success event for the amount of time spent on a field. So, reconfigure analytics and reports for your AEM Forms environment. For detailed steps, see [Configuring analytics and reports](../../forms/using/configure-analytics-forms-documents.md).
 

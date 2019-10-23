@@ -235,7 +235,7 @@ You must retrieve the PDF document to convert to an image. You cannot convert an
 
 You must set run-time options such as the image format and the resolution values. For information about the run-time values, see the `ToImageOptionsSpec` class reference in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**Convert the PDF to an image **
+**Convert the PDF to an image**
 
 After you create the service client and set run-time options, you can convert the PDF document to an image. A collection object that contains the images is returned.
 

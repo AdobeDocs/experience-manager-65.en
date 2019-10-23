@@ -583,8 +583,6 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
       To validate the preset on Publish servers, you can make a similar direct request to the Publish server. The responses are the same on Author and Publish nodes. The response looks similar to the following:**
 
-      **
-
       ```
       marketingCloudOrgId=0FC4E86B573F99CC7F000101
        reportSuite=aemaem6397618-2018-05-23

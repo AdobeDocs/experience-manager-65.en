@@ -38,16 +38,16 @@ To aid you when authoring pages the author environment provides features such as
 * **In-place Editing**
   Text and Image components can be edited directly on the webpage without opening a dialog box or an explicit save action.
 
-* ** [Component Browser](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
+* **[Component Browser](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
   On the left side of an editable page a sliding browser can be opened; from here components can be dragged onto the page and then edited.
 
-* ** [Asset Browser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
+* **[Asset Browser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
   On the left side of an editable page a sliding browser can be opened; from here assets can be dragged onto the page; for example to position assets or create links to other pages.
 
 * **Component Toolbar**
   Both a single or a slow double click/tap will reveal the appropriate toolbar (single for the inplace editing toolbar, then slow double for full toolbar).
 
-* ** [Responsive Layout](/help/sites-authoring/responsive-layout.md)**
+* **[Responsive Layout](/help/sites-authoring/responsive-layout.md)**
   This provides a paragraph system that allows you to position components within a responsive grid.
 
 * **Search as you type**

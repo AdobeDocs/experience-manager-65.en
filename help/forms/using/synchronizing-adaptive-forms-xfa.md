@@ -82,7 +82,7 @@ If an XDP file gets updated, you see an icon in the editor, when you edit the ad
 
 ## Synchronizing adaptive forms with the latest XDP file {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-When an adaptive form that is out of sync with the XDP file is opened for authoring the next time, the following message is displayed:** Schema/Form Template for the Adaptive Form has been updated. `Click Here` to rebase it with the new version. **
+When an adaptive form that is out of sync with the XDP file is opened for authoring the next time, the following message is displayed: **Schema/Form Template for the Adaptive Form has been updated. `Click Here` to rebase it with the new version.**
 
 Clicking on the message synchronizes the fields in the adaptive form with the corresponding fields in the XDP file.
 

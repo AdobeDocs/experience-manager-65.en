@@ -94,7 +94,7 @@ You can disable the Layout mode for forms with old responsive layout by editing 
 
 Perform the following steps to disable the Layout mode:
 
-1. Select **[!UICONTROL Tools]** > **[!UICONTROL General]**> **[!UICONTROL Templates]**and open the template used in the form in **[!UICONTROL **Edit**]**mode.
+1. Select **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** and open the template used in the form in **[!UICONTROL Edit]**mode.
 1. Select the Document Container in the left pane and tap **[!UICONTROL Policy.]**
 
    ![Disable Layout mode](assets/policy_disable_layout_mode.png)

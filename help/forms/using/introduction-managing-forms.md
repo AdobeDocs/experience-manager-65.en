@@ -99,8 +99,7 @@ AEM tools panel contains tools for various components. To navigate to AEM Forms-
 
 ![AEM Forms tools](assets/aem_forms_tools_new.png)
 
-* **Configure PDF Generator:** An administrator can configure AEM Forms PDF Generator settings, add user accounts, and import or export configuration to the PDF Generator**.
-  **
+* **Configure PDF Generator:** An administrator can configure AEM Forms PDF Generator settings, add user accounts, and import or export configuration to the PDF Generator.
 
 * **Publish Correspondence Management Assets:** AEM Forms lets you publish all the Letters, Document Fragments, and Data Dictionaries and related dependencies from an author instance at once. The published assets include all the Correspondence Management assets and related dependencies. For detailed information, see [Publishing and unpublishing forms & documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 

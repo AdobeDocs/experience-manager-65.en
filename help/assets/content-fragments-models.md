@@ -102,18 +102,13 @@ The content fragment model effectively defines the structure of the resulting co
    >
    >For the data type **Multi line text** it is possible to define the **Default Type** as either:
    >
+   >    * **Rich Text**
    >
-   >
-   >    * **Rich Text
-   >      **
-   >    * **Markdown **
+   >    * **Markdown**
    >
    >    * **Plain Text**
    >
-   >
-   >
    >If not specified, the default value **Rich Text** is used for this field.
-   >
    >
    >Changing the **Default Type** in a content fragment model will only take effect on an existing, related, content fragment after that fragment is opened in the editor and saved.
 

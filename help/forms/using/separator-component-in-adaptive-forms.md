@@ -16,7 +16,7 @@ docset: aem65
 You can use the separator component to visually segregate panels of a form. You can define the overall appearance and style of a separator component by specifying the following properties of separator component:
 
 * **Element Name:** Specifies the name of the component. The SOM expressions addresses the component with value specified in the Element Name field.
-* **Thickness:** ** **Specifies the thickness of the separator component in pixels.
+* **Thickness:** Specifies the thickness of the separator component in pixels.
 
 * **CSS Class:** Specifies the custom CSS class for the separator component  
 

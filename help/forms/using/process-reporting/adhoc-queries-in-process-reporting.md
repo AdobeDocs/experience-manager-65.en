@@ -173,8 +173,7 @@ Similarly, you use the **Task Details** panel to view the details of a specific 
 
 You can view the details of a specific AEM Forms process/task:
 
-* **From a Process/Task Search result
-  **
+* **From a Process/Task Search result**
 * **By entering the Process/Task ID in the Process/Task Details panel**
 
 #### From a Process/Task Search result {#from-a-process-task-search-result}

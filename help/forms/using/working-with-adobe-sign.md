@@ -83,10 +83,10 @@ Perform the following steps to create a sign-enabled adaptive form:
 
 Perform the following steps to use Adobe Sign in an existing adaptive form:
 
-1. Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL **Forms**]**> **[!UICONTROL Forms & Documents]**.
+1. Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Select the adaptive form and tap **[!UICONTROL Properties]**.
 1. In the **[!UICONTROL Basic]** tab, select the [configuration container](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while configuring Adobe Sign with AEM Forms.
-1. In the **[!UICONTROL Form Mode]**l tab, select one of the following options:
+1. In the **[!UICONTROL Form Mode]** tab, select one of the following options:
 
     * Select the **[!UICONTROL Associate form template as the Document of Record template]** option and select a Document of Record template. If you use a form template based adaptive form, then the documents sent for signing display only those fields which are based on the associated form template. It does not display all the fields of the adaptive form.
 
@@ -321,7 +321,7 @@ Now, the in form signing experience is ready. You can preview the form to verify
 **Issue**
 When Adobe Sign service is configured for an adaptive form, the service fails to create an Adobe Sign agreement for the underlying adaptive form.
 
-**Resolution **
+**Resolution**
 
 * Check the [configuration of Adobe Sign cloud service](../../forms/using/adobe-sign-integration-adaptive-forms.md) used in the adaptive form.
 * Ensure that the API application on Adobe Sign server used to configure Adobe Sign Cloud service has required permissions.

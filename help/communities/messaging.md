@@ -78,7 +78,7 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
   If checked, users are able to add attachments to their messages. Default is *checked*.
 
 * **Enable group messaging**
-  If selected, registered users can send bulk message to a group of members. Default is *deselected*. ** **
+  If selected, registered users can send bulk message to a group of members. Default is *deselected*.
 
 * **Maximum no. of total recipients**
   If group messaging is enabled, specify the maximum number of recipients to which group message can be sent at a time. Default is *100*.
