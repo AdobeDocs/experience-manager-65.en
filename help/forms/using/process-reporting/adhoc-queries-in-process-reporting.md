@@ -20,9 +20,9 @@ Ad-hoc queries in Process Reporting allow you to create custom queries that you 
 
 Also, ad hoc queries can be defined using process and task property filters. These filters can then be saved and used to run the reports later.
 
-[**Process Search**](/help/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): Search for process instances with a user-defined search filter based on process attributes.
+[**Process Search**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): Search for process instances with a user-defined search filter based on process attributes.
 
-[**Process Details**](/help/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): View details of a process instance by specifying the process ID.
+[**Process Details**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): View details of a process instance by specifying the process ID.
 
 **Task Search**: Search for task instances with a user-defined search filter based on task attributes.
 
@@ -179,7 +179,7 @@ You can view the details of a specific AEM Forms process/task:
 
 #### From a Process/Task Search result {#from-a-process-task-search-result}
 
-1. Execute a process/task search. For details, see [To execute a Process Search query](/help/using/process-reporting/adhoc-queries-in-process-reporting.md#p-to-execute-a-search-query-p).
+1. Execute a process/task search. For details, see [To execute a Process Search query](/help/using/forms/process-reportingadhoc-queries-in-process-reporting.md#p-to-execute-a-search-query-p).
 
    Notice that the process IDs displayed returned in the result, are hyperlinked.
 

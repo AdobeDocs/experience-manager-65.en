@@ -22,11 +22,11 @@ Process Reporting uses the embedded Process Reporting repository to publish Form
 
 Process Reporting consists of the following modules:
 
-* [ProcessDataPublisher service](/help/using/process-reporting/process-reporting-architecture.md#p-processdatapublisher-service-br-p)
-* [ProcessDataStorage service](/help/using/process-reporting/process-reporting-architecture.md#p-processdatastorageprovider-service-br-p)
-* [OSGi service](/help/using/process-reporting/process-reporting-architecture.md#p-osgi-service-br-p)
-* [Query Data servlet](/help/using/process-reporting/process-reporting-architecture.md#p-querydataservlet-service-br-p)
-* [Process Reporting user interface](/help/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
+* [ProcessDataPublisher service](/help/using/forms/process-reportingprocess-reporting-architecture.md#p-processdatapublisher-service-br-p)
+* [ProcessDataStorage service](/help/using/forms/process-reportingprocess-reporting-architecture.md#p-processdatastorageprovider-service-br-p)
+* [OSGi service](/help/using/forms/process-reportingprocess-reporting-architecture.md#p-osgi-service-br-p)
+* [Query Data servlet](/help/using/forms/process-reportingprocess-reporting-architecture.md#p-querydataservlet-service-br-p)
+* [Process Reporting user interface](/help/using/forms/process-reportingprocess-reporting-architecture.md#p-process-reporting-user-interface-br-p)
 
 ## Process Reporting architecture <br> {#process-reporting-architecture-br}
 
@@ -38,13 +38,13 @@ Process Reporting consists of the following modules:
 
 The ProcessDataPublisher server runs periodically on the AEM Forms database and extracts the data that has changed since the last run of the service. It then publishes the data to the Process Data Storage service.
 
-For details on configuring the service, see [Configure ProcessDataPublisher service](/help/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
+For details on configuring the service, see [Configure ProcessDataPublisher service](/help/using/forms/process-reportinginstall-start-process-reporting.md#p-reportconfiguration-service-p).
 
 ### ProcessDataStorageProvider service <br> {#processdatastorageprovider-service-br}
 
 The ProcessDataStorageProvider service receives process data from the ProcessDataPublisher service and saves the data to the Process Reporting repository.
 
-For details on configuring the service, see [Configure ProcessDataStorageProvider service](/help/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
+For details on configuring the service, see [Configure ProcessDataStorageProvider service](/help/using/forms/process-reportinginstall-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
 ### OSGi service <br> {#osgi-service-br}
 
@@ -72,6 +72,6 @@ The service then uses OSGi services to obtain the relevant reporting data, proce
 
 You can create your own custom reports and display these reports in the Custom Reports tab of the Process Reporting user interface.
 
-For the steps to create a custom report, see To create a custom report in the article [Custom Reports in Process Reporting](/help/using/process-reporting/process-reporting-custom-reports.md).
+For the steps to create a custom report, see To create a custom report in the article [Custom Reports in Process Reporting](/help/using/forms/process-reportingprocess-reporting-custom-reports.md).
 
 [**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

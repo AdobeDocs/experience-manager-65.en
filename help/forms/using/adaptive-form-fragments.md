@@ -194,12 +194,12 @@ You can perform several operations on adaptive form fragments using the AEM Form
    <td valign="top" width="406"><p>Provides options to preview the fragment as an HTML or a custom preview by merging data from an XML file with the fragment. For more information, see <a href="/help/forms/using/previewing-forms.md" target="_blank">Previewing a form</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Start Review / Manage Review</p> </td>
+   <td valign="top" width="132"><p>Start Review/Manage Review</p> </td>
    <td valign="top" width="406"><p>Allows initiating and managing a review of the selected fragment. For more information, see <a href="../../forms/using/create-reviews-forms.md" target="_blank">Creating and managing reviews</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td valign="top" width="132"><p>Create Dictionary</p> </td>
-   <td valign="top" width="406"><p>Generates a dictionary for localizing the selected fragment. For more information, see <a href="/help/forms/using/localizing-adaptive-forms.md" target="_blank">Localizing adaptive forms</a>.<br /> <br /> </p> </td>
+   <td valign="top" width="406"><p>Generates a dictionary for localizing the selected fragment. For more information, see <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Localizing adaptive forms</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td valign="top" width="132"><p>Publish / Unpublish</p> </td>
