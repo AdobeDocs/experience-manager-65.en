@@ -26,7 +26,7 @@ Use the following procedure to see the Analytics and Recommendations for a page:
 
    >[!NOTE]
    >
-   >Analytics and Recommendations for a page only appear if you have configured AEM to [integrate with Adobe Analytics](/help/sites-administering//adobeanalytics-connect.md).
+   >Analytics and Recommendations for a page only appear if you have configured AEM to [integrate with Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
 
    ![](assets/screen-shot_2019-03-05at115319.png)
 
@@ -73,7 +73,7 @@ The granularity affects the reports that plot data against time, such as the Vie
 
 ### Assigning Tasks for SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
-Use the SEO Recommendations report to create tasks for improving page visibility to search engines. For each recommendation in the report that does not have a checkmark, you can create a task that you assign to a user to perform the required work. 
+Use the SEO Recommendations report to create tasks for improving page visibility to search engines. For each recommendation in the report that does not have a checkmark, you can create a task that you assign to a user to perform the required work.
 
 ![](assets/chlimage_1-129.png)
 
@@ -102,7 +102,7 @@ Use the following procedure to create a task for an SEO recommendation.
     * Task Priority: The priority of the task.
     * Due Date: The date by which the task should be completed.
 
-   **Note: **The task that is created also includes the path to the page to which the SEO recommendation applies. 
+   **Note: **The task that is created also includes the path to the page to which the SEO recommendation applies.
 
 1. Click or tap Done to close the Task Created message.
 

@@ -99,7 +99,7 @@ Several features in AEM require additional steps following the upgrade. A full l
 
 #### Enable Data Store Garbage Collection {#enable-data-store-garbage-collection}
 
-If using a File Data Store ensure that the Data Store Garbage Collection task is enabled and added to the Weekly Maintenance list. Instructions are outlined [here](/help/sites-administering//data-store-garbage-collection.md).
+If using a File Data Store ensure that the Data Store Garbage Collection task is enabled and added to the Weekly Maintenance list. Instructions are outlined [here](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >

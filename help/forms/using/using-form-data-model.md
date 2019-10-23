@@ -73,11 +73,11 @@ For more information, see:
 
 [Create an interactive communication](../../forms/using/create-interactive-communication.md)
 
-[Text in Interactive Communications](/forms/using/text-interactive-communications.md)
+[Text in Interactive Communications](/help/forms/using/text-interactive-communications.md)
 
-[Conditions in Interactive Communications](/forms/using/condition-interactive-communications.md)
+[Conditions in Interactive Communications](/help/forms/using/condition-interactive-communications.md)
 
-[List fragments](/forms/using/list.md)
+[List fragments](/help/forms/using/list.md)
 
 ## Preview with sample data {#preview-ic}
 
@@ -85,7 +85,7 @@ Form data model editor allows you to generate and edit sample data for data mode
 
 To preview an interactive communication with sample form data model data:
 
-1. On AEM author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**. 
+1. On AEM author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and tap **[!UICONTROL Preview]**in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
 1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
 
@@ -115,7 +115,7 @@ When a user submits a form based on a form data model, you can configure the for
 
 To configure the Form Data Model submit action, open Adaptive Form Container properties and select **[!UICONTROL Submit using Form Data Model]** from the Submit Action drop-down under the Submission accordion. Then, browse and select a data model object from the **[!UICONTROL Name of the data model object to submit]** drop-down. Save the properties.
 
-On form submission, data for the configured data model object is written to the respective data source. 
+On form submission, data for the configured data model object is written to the respective data source.
 
 ![](assets/data-submission.png)
 
@@ -138,4 +138,4 @@ For example, the following rule invokes a get service that takes Employee Id as 
 
 ![](assets/invoke-service.png)
 
-In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` API to write a JavaScript in the code editor for the rule editor. For API details, see [API to invoke form data model service](/forms/using/invoke-form-data-model-services.md).
+In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` API to write a JavaScript in the code editor for the rule editor. For API details, see [API to invoke form data model service](/help/forms/using/invoke-form-data-model-services.md).

@@ -18,13 +18,13 @@ AEM Form has a capability to centralize creation, assembly, management and deliv
 
 You can use the interactive communication capability to produce communication in multiple formats. For example, web and PDF. You can integrate interactive communication with AEM Workflow to process and deliver the assembled communication to customers on the channel of their choice. For example, sending a communication to end user through email.
 
-If you are upgrading from a previous version and have already invested in correspondence management, you can install the [compatibility package](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) to continue using correspondence management. For information about the differences between interactive communication and correspondence management, see [Interactive Communication Overview](/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
+If you are upgrading from a previous version and have already invested in correspondence management, you can install the [compatibility package](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) to continue using correspondence management. For information about the differences between interactive communication and correspondence management, see [Interactive Communication Overview](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
 AEM Forms is a powerful enterprise-class platform. Interactive communication is only one of the capability of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 ## Deployment Topology {#deployment-topology}
 
-AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author and Processing instance to run the Interactive Communications capability. The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author and Processing instance to run the Interactive Communications capability. The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![](assets/recommended-topology.png)
 
@@ -40,7 +40,7 @@ Before you begin to install and configure interactive communication and correspo
 * An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least one AEM instances (Author or Processing) to run AEM Forms interactive communication and correspondence management capabilities:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
-    * **Processing:** A processing instance is a [hardened AEM Author](/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.
+    * **Processing:** A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. You can set up an Author instance and harden it after performing the installation.
 
     * **Publish**: An AEM instance that serves the published content to the public over the Internet or an internal network.
 
@@ -175,7 +175,7 @@ You can enable SSL communication for Form Data Model. To enable SSL communicatio
 
 You have configured an environment to use interactive communication and correspondence management capabilities. Now, the steps towards using the capability are:
 
-* [Correspondence management overview](/forms/using/interactive-communications-overview.md)
+* [Correspondence management overview](/help/forms/using/interactive-communications-overview.md)
 
 * [Create an interactive communication](../../forms/using/create-interactive-communication.md)
 

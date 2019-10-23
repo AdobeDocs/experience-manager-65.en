@@ -17,7 +17,7 @@ docset: aem65
 
 # Migrate AEM Forms assets and documents{#migrate-aem-forms-assets-and-documents}
 
-The Migration utility converts the [Adaptive Forms assets](../../forms/using/introduction-forms-authoring.md), [cloud configrurations](/help/sites-developing/extending-cloud-config.md), and [Correspondence Management assets](/forms/using/cm-overview.md) from the format used in the earlier versions to the format used in AEM 6.5 Forms. When you run migration utility, the following are migrated:
+The Migration utility converts the [Adaptive Forms assets](../../forms/using/introduction-forms-authoring.md), [cloud configrurations](/help/sites-developing/extending-cloud-config.md), and [Correspondence Management assets](/help/forms/using/cm-overview.md) from the format used in the earlier versions to the format used in AEM 6.5 Forms. When you run migration utility, the following are migrated:
 
 * Custom components for adaptive forms
 * Adaptive forms and correspondence management Templates

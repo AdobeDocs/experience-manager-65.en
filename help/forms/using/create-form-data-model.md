@@ -43,7 +43,7 @@ Before you begin, ensure that you have the following:
 
 * MySQL database with sample data as stated in the Prerequisites section of [Create your first adaptive form](../../forms/using/create-your-first-adaptive-form.md)
 * OSGi bundle for MySQL JDBC driver as explained in [Bundling the JDBC Database Driver](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
-* Adaptive form as explained in the first tutorial [Create an adaptive form](/forms/using/create-adaptive-form.md)
+* Adaptive form as explained in the first tutorial [Create an adaptive form](/help/forms/using/create-adaptive-form.md)
 
 ## Step 1: Configure MySQL database as data source {#config-database}
 

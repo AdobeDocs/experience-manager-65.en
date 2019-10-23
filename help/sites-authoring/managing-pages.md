@@ -19,7 +19,7 @@ This section describes how to create and manage pages with Adobe Experience Mana
 
 >[!NOTE]
 >
->Your account needs the [appropriate access rights](/help/sites-administering//security.md) and [permissions](/help/sites-administering//security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
 >
 >If you encounter any problems we suggest you contact your system administrator.
 

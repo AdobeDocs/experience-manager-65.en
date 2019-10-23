@@ -27,11 +27,11 @@ The **User** settings dialog gives you access to:
 
 * Impersonate as
 
-    * With the [Impersonate as](/help/sites-administering//security.md#impersonating-another-user) functionality a user can work on behalf of another user.
+    * With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality a user can work on behalf of another user.
 
 * Profile
 
-    * Offers a convenient link to your [user settings](/help/sites-administering//security.md))
+    * Offers a convenient link to your [user settings](/help/sites-administering/security.md))
 
 * [My Preferences](/help/sites-authoring/user-properties.md#my-preferences)
 

@@ -42,7 +42,7 @@ In this workflow:
 
 #### Using letter templates provided with Correspondence Management {#using-letter-templates-provided-with-correspondence-management}
 
-Instead of creating a layout template from scratch, you can choose to modify and reuse the templates that Correspondence Management provides. You can use designer to quickly modify the branding and the data and content fields of the templates to suit your organization's needs. For more information on Correspondence Management templates, see [Reference letter templates](/forms/using/reference-cm-layout-templates.md).
+Instead of creating a layout template from scratch, you can choose to modify and reuse the templates that Correspondence Management provides. You can use designer to quickly modify the branding and the data and content fields of the templates to suit your organization's needs. For more information on Correspondence Management templates, see [Reference letter templates](/help/forms/using/reference-cm-layout-templates.md).
 
 ### Document fragment creation {#document-fragment-creation}
 
@@ -225,11 +225,11 @@ You need the following in place first to create a correspondence:
 
 * [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
 
-* The letter XDP ([layout](/forms/using/document-fragments.md)).
-* Other XDPs ([layout fragments](/forms/using/document-fragments.md#main-pars_header_13)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+* The letter XDP ([layout](/help/forms/using/document-fragments.md)).
+* Other XDPs ([layout fragments](/help/forms/using/document-fragments.md#main-pars_header_13)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
 * The relevant [data dictionary](../../forms/using/data-dictionary.md) (Optional).
-* The [data modules](/forms/using/document-fragments.md) you want to use in the correspondence.
+* The [data modules](/help/forms/using/document-fragments.md) you want to use in the correspondence.
 * [Test Data](../../forms/using/data-dictionary.md#p-working-with-test-data-p) is the XML file with the test data ported in it. Test data is required if you are using a data dictionary.
 
 ## Create a letter template {#create-a-letter-template}
@@ -238,7 +238,7 @@ You need the following in place first to create a correspondence:
 
 1. Select **Forms** &gt; **Letters**.
 
-1. Select **Create &gt; Letter**. Correspondence Management displays the available layouts (XDPs). These layouts come from Designer. The layouts also include the letter templates that Correspondence Management provides out of the box. For more information on Correspondence Management templates, see [Reference letter templates](/forms/using/reference-cm-layout-templates.md). To add your own layouts, create XDP (layout) files in Designer and then [upload them to AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
+1. Select **Create &gt; Letter**. Correspondence Management displays the available layouts (XDPs). These layouts come from Designer. The layouts also include the letter templates that Correspondence Management provides out of the box. For more information on Correspondence Management templates, see [Reference letter templates](/help/forms/using/reference-cm-layout-templates.md). To add your own layouts, create XDP (layout) files in Designer and then [upload them to AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
    ![](assets/create-letter.png)
 
@@ -248,16 +248,16 @@ You need the following in place first to create a correspondence:
 
 1. Enter the properties for the Correspondence and tap **Save:**
 
-    * **Title (Optional): **Enter the title for the letter. Title need not be unique and can have special characters and non-english characters.
-    * **Name: **The unique name for the letter. No two letters in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
-    * **Description (Optional): **Describe the letter for your reference.
+    * **Title (Optional):** Enter the title for the letter. Title need not be unique and can have special characters and non-English characters.
+    * **Name:** The unique name for the letter. No two letters in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
+    * **Description (Optional):** Describe the letter for your reference.
     * **Data Dictionary (Optional)**: The Data Dictionary can be associated to the correspondence. The assets that you later insert in this correspondence should either have the same data dictionary as the one you choose for the correspondence here or no data dictionary.
-    * **Tags (Optional): **Select the tags to apply to the correspondence. You can also type in a new/custom tag name and press Enter to create it.
+    * **Tags (Optional):** Select the tags to apply to the correspondence. You can also type in a new/custom tag name and press Enter to create it.
     * **Post Process (Optional):** Select the post process to be applied to the letter template. There are out of the box post processes and the ones you have created using AEM, such as e-mail and print.
 
    ![Correspondence properties](assets/createcorrespondenceproperties.png)
 
-1. The system displays a message: "Letter created successfully." (in the alert message) Tap **Open** to configure the data modules and layout fragments in it. Or tap **Done **to go back to the previous page.
+1. The system displays a message: "Letter created successfully." (in the alert message) Tap **Open** to configure the data modules and layout fragments in it. Or tap **Done** to go back to the previous page.
 
    ![Alert message: letter created successfully](assets/createcorrespondencecreated.png)
 

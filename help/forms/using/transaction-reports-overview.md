@@ -25,7 +25,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 Transaction recording is disabled by default. You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. You can view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
 
-Do not author content (Create adaptive forms, interactive communication, themes, and other authoring activities) and process documents (Use workflows, document services, and other processing activities) on the same AEM instance. Keep the transaction recording disabled for AEM Forms servers used to author content. Keep the transaction recording enabled for AEM Forms servers used to process documents. 
+Do not author content (Create adaptive forms, interactive communication, themes, and other authoring activities) and process documents (Use workflows, document services, and other processing activities) on the same AEM instance. Keep the transaction recording disabled for AEM Forms servers used to author content. Keep the transaction recording enabled for AEM Forms servers used to process documents.
 
 ![](assets/sample-transaction-report-author-1.png)
 
@@ -49,7 +49,7 @@ The transaction count is reverse replicated from publish instances to author or 
 
 * Disable transaction reports on all author instances as reports on author instances includes transactions registered during authoring activities.
 * Enable the **Show transactions from publish only **option on the author instance to view cumulative transactions from all publish instances. You can also view transaction reports on each publish instance for actual transactions on that particular publish instance only.
-* Do not use author instances to run workflows and process documents.  
+* Do not use author instances to run workflows and process documents.
 * Before using transaction reporting, if you are have a toplogy with publish servers, ensure that the reverse replication is enabled for all the publish instances.
 * Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.
 
@@ -57,5 +57,5 @@ The transaction count is reverse replicated from publish instances to author or 
 
 * [Viewing and Understanding a Transaction Reports](../../forms/using/viewing-and-understanding-transaction-reports.md)
 * [Transaction Reports Billable APIs](../../forms/using/transaction-reports-billable-apis.md)
-* [Record a transaction for custom implementations](/forms/using/record-transaction-custom-implementation.md)
+* [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
 

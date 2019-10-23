@@ -40,7 +40,7 @@ From the MCM you can access:
       This pane show the segments that you have defined. Segments let you characterize a collection of visitors that share certain traits.
       Selecting a specific segment will open the segment definition page.
 
-    * [Reports](/help/sites-administering//reporting.md)
+    * [Reports](/help/sites-administering/reporting.md)
       AEM provides different reports to help you analyze and monitor the state of your instance. This MCM pane lists the reports.
       Selecting a report will open the report page.
 

@@ -263,7 +263,7 @@ To define **Stages** for your workflow:
 
 To export a workflow model in a package:
 
-1. Create a new package using the [Package Manager](/help/sites-administering//package-manager.md#package-manager):
+1. Create a new package using the [Package Manager](/help/sites-administering/package-manager.md#package-manager):
 
     1. Navigate to the Package Manager via **Tools**, **Deployment**, **Packages**.
 

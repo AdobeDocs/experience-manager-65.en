@@ -17,54 +17,54 @@ docset: aem65
 
 To integrate Search&Promote capabilities in your web site, use the Search&Promote components to add the following features to your pages:
 
-* Keyword search  
+* Keyword search
 * Search results page
 * Search refinement
 * Banners
 
-Note that you can use Search&Promote capabilities only if your AEM administrator has enabled them. See [Integrating with Adobe Search&Promote](/help/sites-administering//search-and-promote.md).
+Note that you can use Search&Promote capabilities only if your AEM administrator has enabled them. See [Integrating with Adobe Search&Promote](/help/sites-administering/search-and-promote.md).
 
 Facets are configured on the Search&Promote server, as is the information that each component provides. The following table provides a brief description of each component. Subsequent sections provide detailed information about their use.
 
 <table>
- <tbody> 
-  <tr> 
-   <th>Search&amp;Promote component</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>Banners</td> 
-   <td>Displays banner advertisements. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Breadcrumbs</td> 
-   <td>Displays the search keyword and the sequence of filters that the user has applied to search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Checkbox List-Facet</td> 
-   <td>A list of checkboxes for selecting facets for filtering search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Dropdown Facet</td> 
-   <td>A drop-downl list of facets for filtering search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Link List Facet</td> 
-   <td>A list of facet links for filtering search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Pagination</td> 
-   <td>Controls for navigating through pages of search results.</td> 
-  </tr> 
-  <tr> 
-   <td>Results</td> 
-   <td>Displays the results of a keyword search.</td> 
-  </tr> 
-  <tr> 
-   <td>Search</td> 
-   <td>Adds a search field to the page.</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>Search&amp;Promote component</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>Banners</td>
+   <td>Displays banner advertisements. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td>
+  </tr>
+  <tr>
+   <td>Breadcrumbs</td>
+   <td>Displays the search keyword and the sequence of filters that the user has applied to search results.</td>
+  </tr>
+  <tr>
+   <td>Checkbox List-Facet</td>
+   <td>A list of checkboxes for selecting facets for filtering search results.</td>
+  </tr>
+  <tr>
+   <td>Dropdown Facet</td>
+   <td>A drop-downl list of facets for filtering search results.</td>
+  </tr>
+  <tr>
+   <td>Link List Facet</td>
+   <td>A list of facet links for filtering search results.</td>
+  </tr>
+  <tr>
+   <td>Pagination</td>
+   <td>Controls for navigating through pages of search results.</td>
+  </tr>
+  <tr>
+   <td>Results</td>
+   <td>Displays the results of a keyword search.</td>
+  </tr>
+  <tr>
+   <td>Search</td>
+   <td>Adds a search field to the page.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Creating the search results page {#creating-the-search-results-page}
@@ -81,9 +81,9 @@ The **Pagination** component enables users to navigate multiple pages of search 
 
 You can configure the following component properties in Edit mode to control runtime behavior:
 
-* Hide single result page: Select this option to hide the page navigation controls when the search returns a single page of results.  
-* Hide First/Last: Select this option to prevent users from jumping to the first or last page of results.  
-* Hide Previous/Next: Determines whether users can navigate results pages relative to the current page.  
+* Hide single result page: Select this option to hide the page navigation controls when the search returns a single page of results.
+* Hide First/Last: Select this option to prevent users from jumping to the first or last page of results.
+* Hide Previous/Next: Determines whether users can navigate results pages relative to the current page.
 * Hide view all: Determines whether the user can consolidate all search results on a single page. Typically, providing paged data makes more efficient use of server resources. Select this option to prevent the transfer of large data sets in one response message.
 
 ### Enabling the filtering of results by facets {#enabling-the-filtering-of-results-by-facets}
@@ -108,13 +108,13 @@ The drop-down list is populated with the facets that are associated with all sea
 
 The **Link List Facet** component enables customers to progressively narrow their focus on items that are categorized under multiple facet members or facets.
 
-Facet members appear as a list of links. The text of each link is the name of a facet member that is associated with the current search results. When a customer clicks a facet link, the page reloads and a subset of the search results appears. The list of links is updated accordingly enabling an even narrower focus. 
+Facet members appear as a list of links. The text of each link is the name of a facet member that is associated with the current search results. When a customer clicks a facet link, the page reloads and a subset of the search results appears. The list of links is updated accordingly enabling an even narrower focus.
 
 ![](assets/sandplinklistcomp.png)
 
 The links in the list also changes when a filter is applied from a different type of Search&Promote component. The use of multiple types filter components can provide effective filter combinations.
 
-The **Breadcrumbs** component enables customers to see the filters that are currently applied to search results, in the order in which they were applied. Customers can click the items in the breadcrumb to revert to that filter combination. 
+The **Breadcrumbs** component enables customers to see the filters that are currently applied to search results, in the order in which they were applied. Customers can click the items in the breadcrumb to revert to that filter combination.
 
 ![](assets/sandpbreadcrumbcomp.png)
 
@@ -129,10 +129,10 @@ The Search component enables customers to perform keyword searches. Add Search c
 
 Configure the following properties in Edit mode to control runtime behavior:
 
-* Result Page Path: The path to the page that displays search results.  
+* Result Page Path: The path to the page that displays search results.
 * Enable Auto-Complete: Select to cause suggested search keywords to appear when the customer begins typing in the search box.
 
-![](assets/sandpsearchcomp.png) 
+![](assets/sandpsearchcomp.png)
 
 ### Adding banners {#adding-banners}
 

@@ -482,7 +482,7 @@ In **Structure** mode of the template editor:
 
   >[!NOTE]
   >
-  >[Content policies for components implementing the rich text editor](/help/sites-administering//rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Policy & Properties (Layout Container)**
 

@@ -53,8 +53,8 @@ Select the letter to preview using the following steps:
 
    >[!NOTE]
    >
-  
-   >For more information on switching between HTML or PDF rendition mode of letter preview, see [Change rendition mode of letter](#changerenditionmode). For more information on PDF support in Correspondence Management and AEM, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). 
+
+   >For more information on switching between HTML or PDF rendition mode of letter preview, see [Change rendition mode of letter](#changerenditionmode). For more information on PDF support in Correspondence Management and AEM, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
    >
    >
 
@@ -78,7 +78,7 @@ In the content tab, manage the content such as document fragments and content va
 
 1. Edit the content modules, as required, in the Content tab. To bring focus to the relevant content module in the content hierarchy, you can either tap the relevant line or paragraph in the letter preview or tap the content module directly in the Content hierarchy.
 
-   For example, the line "We have reviewed... " is selected in the below graphic and the relevant content module is selected in the Content tab. 
+   For example, the line "We have reviewed... " is selected in the below graphic and the relevant content module is selected in the Content tab.
 
    ![](assets/4_highlightmoduleincontent.png)
 
@@ -86,15 +86,15 @@ In the content tab, manage the content such as document fragments and content va
 
    For more information on the actions available for various modules in the Create Correspondence user interface, see [Actions and info available in the Create Correspondence user interface](../../forms/using/create-letter.md#main-pars-header-9).
 
-1. To locate content modules, use the Find field. Enter full or partial name or title of the content module to search for it in the correspondence. 
-1. Tap the Display icon ( ![](assets/display.png)) in front of a list, text, condition, or target area to show or hide it in the letter. 
+1. To locate content modules, use the Find field. Enter full or partial name or title of the content module to search for it in the correspondence.
+1. Tap the Display icon ( ![](assets/display.png)) in front of a list, text, condition, or target area to show or hide it in the letter.
 1. To edit an inline or editable text module, tap the relevant **Edit** icon ( ![](assets/edittextmodule.png)) or double-click the relevant text module in the letter preview.
 
    The system displays a text editor to edit and format the text.
 
    The default spellchecker in your browser checks spelling in the Text editor. To manage the spelling and grammar checking, you can edit your browser's spellchecker settings or install browser plugins/addons to check spelling and grammar.
 
-   You can also use the various keyboard shortcuts in the text editor to manage, edit, and format text. For more information on [Text Editor](/forms/using/keyboard-shortcuts.md#correspondence-management) keyboard shortcuts in Correspondence Management Keyboard Shortcuts. 
+   You can also use the various keyboard shortcuts in the text editor to manage, edit, and format text. For more information on [Text Editor](/help/forms/using/keyboard-shortcuts.md#correspondence-management) keyboard shortcuts in Correspondence Management Keyboard Shortcuts.
 
    ![](assets/5_edittextmodule.png)
 
@@ -112,7 +112,7 @@ In the content tab, manage the content such as document fragments and content va
    >
    >The formatting of pasted text, however, has some [limitations](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
-   You can indent the text and numbers in your letter using the Tab key. For example, you can use the Tab key to align multiple columns of text in a list into a tabular format. 
+   You can indent the text and numbers in your letter using the Tab key. For example, you can use the Tab key to align multiple columns of text in a list into a tabular format.
 
    ![](assets/tabspaces.png)
 
@@ -130,7 +130,7 @@ In the content tab, manage the content such as document fragments and content va
 
    ![](assets/specialcharacters.png)
 
-   Correspondence Management has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](../../forms/using/custom-special-characters.md). 
+   Correspondence Management has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](../../forms/using/custom-special-characters.md).
 
 1. To highlight\emphasize parts of text in an editable inline module, select the text and tap Highlight Color.
 
@@ -138,11 +138,11 @@ In the content tab, manage the content such as document fragments and content va
 
    You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
 
-   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text. 
+   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
 
    ![](assets/textbackgroundcolor.png)
 
-1. Make the appropriate content and format changes and tap **Save**. Tap ( ![](assets/editnextmoduleccr.png)) to move between editable text modules, or tap **Save and Next** to save the changes and move to the next editable text module. 
+1. Make the appropriate content and format changes and tap **Save**. Tap ( ![](assets/editnextmoduleccr.png)) to move between editable text modules, or tap **Save and Next** to save the changes and move to the next editable text module.
 1. The system also displays the unfilled variables for each of the branches. When there are no unfilled variables, unfilled variables are shown as 0. If there is unfilled variable, you can tap a branch to expand it and locate the unfilled variable. Use the content toolbar to Delete content, increase/decrease indent of the content, and insert page breaks before/after the content.
 
    You can insert page breaks above and below data modules even when they are part of lists and conditions.
@@ -156,7 +156,7 @@ In the content tab, manage the content such as document fragments and content va
 
     * Only unprotected data dictionary and placeholder variables. The variable count does not include layout or protected data dictionary variables.
     * Mandatory fields.
-    * Layout fields if they are mandatory and bound to the user.  
+    * Layout fields if they are mandatory and bound to the user.
     * Only unique variables instances. If a module, target area, or letter template contains two or more instances of the same variable, the count is displayed as 1 (one). However, for each of the instances, the count is displayed as 1.
 
    The unfilled variable count does not include deselected modules. If a module is included in a letter template but is not in the letter, the count for unfilled variables in this module are not displayed.
@@ -173,7 +173,7 @@ In the content tab, manage the content such as document fragments and content va
    Note the following regarding variables with default values:
 
     * A Boolean variable field defaults to *false*. However, the variable is considered to be unfilled. This implies that the variable count includes all Boolean variable fields with value *false*.
-    
+
     * A numeric variable field defaults to *0 (zero)*. However, the variable is considered to be unfilled. This implies that the variable count includes all numeric variable fields with value *0 (zero)*.
 
 #### Actions and Info available in the Create Correspondence Content tab {#actions-and-info-available-in-the-create-correspondence-content-tab}
@@ -182,7 +182,7 @@ In the content tab, manage the content such as document fragments and content va
 
 * Insert Blank Line: Inserts new blank line.
 * Insert Inline Text: Inserts new text module.
-* Order Lock (info): Indicates that the order of the contents cannot be changed. 
+* Order Lock (info): Indicates that the order of the contents cannot be changed.
 * Unfilled Values (info): Indicates the number of unfilled variables in the target area.
 
 **Module**
@@ -191,7 +191,7 @@ In the content tab, manage the content such as document fragments and content va
 * Skip Bullets (applicable for list modules and their child modules): Skips bullets in a particular module.
 * Page Break Before (applicable for child modules of target area): Inserts page break before the module.
 * Page Break After (applicable for child modules of target area): Inserts page break before the module.
-* Unfilled Values (info): Indicates the number of unfilled variables in the target area. 
+* Unfilled Values (info): Indicates the number of unfilled variables in the target area.
 * Edit (text modules only): Open rich text editor for editing the text module.
 * Data Panel (text and condition modules): Open all variables of the module.
 
@@ -199,13 +199,13 @@ In the content tab, manage the content such as document fragments and content va
 
 * Insert Blank Line: Inserts new blank line.
 * Content Library: Opens content library to add modules to the list.
-* List Setting (nested list only): 
+* List Setting (nested list only):
 * Order Lock (info): Indicates that the order of the list items cannot be changed.
 
 ### Manage attachments {#manage-attachments}
 
-1. Select **Attachments**. Correspondence Management displays the available attachments, as set up while creating the letter template. 
-1. You can choose not to submit an attachment along with the letter by tapping the view icon and you can tap the cross in the attachment to delete it from the letter. For the attachments specified, while creating a letter template, as Mandatory, the View and Delete icons are disabled. 
+1. Select **Attachments**. Correspondence Management displays the available attachments, as set up while creating the letter template.
+1. You can choose not to submit an attachment along with the letter by tapping the view icon and you can tap the cross in the attachment to delete it from the letter. For the attachments specified, while creating a letter template, as Mandatory, the View and Delete icons are disabled.
 1. Tap the Library Access ( ![](assets/libraryaccess.png)) icon to access Content Library to insert DAM assets as attachments.
 
    >[!NOTE]
@@ -270,8 +270,8 @@ You can make layout and content related changes to ensure the letter looks the w
 
 ## Saving drafts and submitting letter instances {#savingdrafts}
 
-When a letter is rendered in the Create Correspondence user interface, you can save the letter as being viewed.  
-  
+When a letter is rendered in the Create Correspondence user interface, you can save the letter as being viewed.
+
 There are two types of letter instances that can be saved: Draft instance and Submit instance.
 
 * **Draft Instance**: Draft instance captures the current state of the letter you are previewing. To save a draft instance, first ensure that the letter and all the assets the letter references are in Published state. For information on publishing a letter, see [Publish an asset](../../forms/using/publishing-unpublishing-forms.md#publishanasset). You need to Publish a letter before you could save it as a draft, because when you publish a letter, you create a version of the letter, its dependent assets, and data at that point. The published version of a letter cannot be edited by you or another user and can be restored later without any unexpected discrepancies from the published version. You can return to this instance later and continue from where you left.
@@ -297,7 +297,7 @@ This option exists for people who have concerns over saving user data on publish
 #### Enable remote save {#enable-remote-save}
 
 1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
-1. Search for **[!UICONTROL Correspondence Management Configurations]** and click it. 
+1. Search for **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Locate the **[!UICONTROL Remote Save]** configuration, check it, and the click **[!UICONTROL Save]**.
 
 #### Specify processing author settings {#specify-processing-author-settings}
@@ -306,9 +306,9 @@ This option exists for people who have concerns over saving user data on publish
 
    ![Adobe Experience Manager Web Console Configuration](assets/2configmanager.png)
 
-1. On this page, locate Adobe LiveCycle Client SDK Configuration and expand it by clicking it.  
+1. On this page, locate Adobe LiveCycle Client SDK Configuration and expand it by clicking it.
 
-1. In the Processing Server URL, enter the name of your LiveCycle server, provide the login information, and then click **Save**. 
+1. In the Processing Server URL, enter the name of your LiveCycle server, provide the login information, and then click **Save**.
 
    ![Enter the name and login information of your LiveCycle server](assets/3configmanager.png)
 
@@ -316,16 +316,16 @@ This option exists for people who have concerns over saving user data on publish
 
 #### Attachment delivery {#attachmentdelivery}
 
-* The letter attachments are available post process in the PDF, which is created after letter submission. 
+* The letter attachments are available post process in the PDF, which is created after letter submission.
 * When the Letter is rendered using Server-side APIs as an interactive or non-interactive PDF, the rendered PDF contains attachments as PDF attachments.
 * When a post process associated with a letter template is loaded as part of the Submit or Complete Correspondence operations using the Create Correspondence user interface, attachments are passed as the List&lt;com.adobe.idp.Document&gt; in AttachmentDocs parameter.
 * Out-of-the-box delivery mechanisms, such as email and Print, also deliver attachments along with the PDF of the generated correspondence.
 
 ## Rendition modes of letter preview: Mobile forms preview and PDF preview {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms Correspondence Management displays a letter as HTML in the Create Correspondence UI. However, Correspondence Management still supports reverting to the PDF preview instead of HTML preview. For more information on switching between HTML and PDF mode of preview, see [Change rendition mode of letter](#changerenditionmode).  
+AEM Forms Correspondence Management displays a letter as HTML in the Create Correspondence UI. However, Correspondence Management still supports reverting to the PDF preview instead of HTML preview. For more information on switching between HTML and PDF mode of preview, see [Change rendition mode of letter](#changerenditionmode).
 
-Following are the benefits and functionality available in HTML and PDF preview.  
+Following are the benefits and functionality available in HTML and PDF preview.
 
 **Benefits of mobile forms/HTML preview**
 
@@ -334,15 +334,15 @@ Following are the benefits and functionality available in HTML and PDF preview.
 * **Browser support**: Browsers a withdrawing support for NPAPI gradually, which affects PDF preview of letter. HTML/mobile forms preview of letter is unaffected by this.
 * **Highlight editable content in a letter**: In the Create Correspondence user interface, you can tap Highlight Editable Content to highlight all the editable content in the letter in gray. For more information, see [Manage content](#managecontent).
 
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Benefits of PDF preview**
 
-* **Page break**: In the PDF preview, you can view exactly how the page breaks in the letter affect its output. 
+* **Page break**: In the PDF preview, you can view exactly how the page breaks in the letter affect its output.
 * **Final preview**: In the PDF preview, you can view the exact formatting and appearance of the letter as the letter will appear in its output.
 
 For information on scripting support in PDF forms, see [Scripting Support](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
 
-For more information on scripting support in HTML5 forms, see [Scripting support for HTML5 forms](/forms/using/scripting-support.md).
+For more information on scripting support in HTML5 forms, see [Scripting support for HTML5 forms](/help/forms/using/scripting-support.md).
 
 ### Change rendition mode of letter {#changerenditionmode}
 
@@ -353,6 +353,6 @@ For more information on browser compatibility with letter preview, see [Disconti
 To change the preview mode of the letter, complete the following steps:
 
 1. Go to `https://[system]:[port]/system/console/configMgr` and, if necessary, log in as Admin.
-1. Go to **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** and select **HTML Rendition** (Default) or **PDF Rendition**. 
+1. Go to **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** and select **HTML Rendition** (Default) or **PDF Rendition**.
 1. Click **[!UICONTROL Save]**.
 

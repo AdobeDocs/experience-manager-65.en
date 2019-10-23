@@ -26,7 +26,7 @@ AEM Forms provides several APIs to submit forms, process documents, and render d
 
 Billing APIs does not account for the number of pages, the length of a document or form, or final format of the rendered document. A transaction report divides the transactions into two categories: Documents Rendered and Forms Submitted.
 
-* **Forms Submitted: **When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an adaptive form, HTML5 Form, PDF Forms, and form set are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.  
+* **Forms Submitted: **When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an adaptive form, HTML5 Form, PDF Forms, and form set are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
 
 * **Documents Rendered:** Generating a document by combining a template and data, digitally signing or certifying a document, using a billable document services APIs for document services, or converting a document from one format to another are accounted as documents rendered.
 
@@ -41,64 +41,64 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td> 
-   <td>Creates Adobe PDF from supported file types.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td>
+   <td>Creates Adobe PDF from supported file types.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td> 
-   <td>Creates Adobe PDF from supported file types.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
+   <td>Creates Adobe PDF from supported file types.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td> 
-   <td>Converts Adobe PDF to supported file types. </td> 
-   <td>Documents Processed<br /> </td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
+   <td>Converts Adobe PDF to supported file types. </td>
+   <td>Documents Processed<br /> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td> 
-   <td>Converts Adobe PDF to supported file types. </td> 
-   <td>Documents Processed<br /> </td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
+   <td>Converts Adobe PDF to supported file types. </td>
+   <td>Documents Processed<br /> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td> 
-   <td>Converts Adobe PDF to supported file types. </td> 
-   <td>Documents Processed<br /> </td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
+   <td>Converts Adobe PDF to supported file types. </td>
+   <td>Documents Processed<br /> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td> 
-   <td><p>Creates PDF from HTML pages.</p> </td> 
-   <td>Documents Processed<br /> </td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td>
+   <td><p>Creates PDF from HTML pages.</p> </td>
+   <td>Documents Processed<br /> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td> 
-   <td>Creates PDF from URLs pointing to an HTML page.</td> 
-   <td>Documents Processed<br /> </td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td>
+   <td>Creates PDF from URLs pointing to an HTML page.</td>
+   <td>Documents Processed<br /> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td> 
-   <td>Creates PDF from URLs pointing to an HTML page.</td> 
-   <td>Documents Processed<br /> </td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
+   <td>Creates PDF from URLs pointing to an HTML page.</td>
+   <td>Documents Processed<br /> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td> 
-   <td>Optimizes PDF to reduce file size by stripping unnecessary metadata without affecting the quality.</td> 
-   <td>Documents Processed<br /> </td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
+   <td>Optimizes PDF to reduce file size by stripping unnecessary metadata without affecting the quality.</td>
+   <td>Documents Processed<br /> </td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -108,22 +108,22 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a><br /> </td> 
-   <td>Creates Adobe PDF from supported file types.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a><br /> </td>
+   <td>Creates Adobe PDF from supported file types.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td> 
-   <td>Creates Adobe PDF from supported file types.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
+   <td>Creates Adobe PDF from supported file types.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -133,16 +133,16 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td> 
-   <td>Invokes the specified render method to generate a document of record using provided parameters.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -152,40 +152,40 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td> 
-   <td>Merges data and templates to create a PDF document.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
+   <td>Merges data and templates to create a PDF document.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td> 
-   <td>Merges data and templates to create a set of PDF documents.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
+   <td>Merges data and templates to create a set of PDF documents.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td> 
-   <td>Converts XDP and PDF documents to PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
+   <td>Converts XDP and PDF documents to PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td> 
-   <td>Converts XDP and PDF documents to PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
+   <td>Converts XDP and PDF documents to PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td> 
-   <td>Converts a set of XDP and PDF documents to a set of PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
+   <td>Converts a set of XDP and PDF documents to a set of PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -195,22 +195,22 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td> 
-   <td>Renders PDF Form from XDP templates. The XP templates are created in Forms Designer.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td>Renders PDF Form from XDP templates. The XP templates are created in Forms Designer.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td> 
-   <td>Extracts data from a PDF Form or XDP templates</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td>Extracts data from a PDF Form or XDP templates</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -220,22 +220,22 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td> 
-   <td>Converts a PDF document to a list of image documents. Supported image formats are JPEG, JPEG2K, PNG, and TIFF.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
+   <td>Converts a PDF document to a list of image documents. Supported image formats are JPEG, JPEG2K, PNG, and TIFF.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td> 
-   <td>Converts a Flat PDF file to PostScript format using the options specified in the option spec.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
+   <td>Converts a Flat PDF file to PostScript format using the options specified in the option spec.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -245,16 +245,16 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td> 
-   <td>Decodes all the barcodes in a Document object and returns an org.w3c.dom.Document object that contains data that was retrieved from the barcode.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td>
+   <td>Decodes all the barcodes in a Document object and returns an org.w3c.dom.Document object that contains data that was retrieved from the barcode.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -264,40 +264,40 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td> 
-   <td>Executes the specified DDX document and returns an <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html" title="class in com.adobe.fd.assembler.client">AssemblerResult</a> object containing the resultant documents. </td> 
-   <td>Documents Processed</td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td>
+   <td>Executes the specified DDX document and returns an <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html" title="class in com.adobe.fd.assembler.client">AssemblerResult</a> object containing the resultant documents. </td>
+   <td>Documents Processed</td>
    <td>The following operations are not accounted as transactions:
-    <ul> 
-     <li>Creating packages or portfolio</li> 
-     <li>Stitching multiple XDPs </li> 
-    </ul> </td> 
+    <ul>
+     <li>Creating packages or portfolio</li>
+     <li>Stitching multiple XDPs </li>
+    </ul> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
-   <td>Executes the specified DDX document and returns an <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html" title="class in com.adobe.fd.assembler.client">AssemblerResult</a> object containing the resultant documents. </td> 
-   <td>Documents Processed</td> 
-   <td>All the input file formats that PDF Generator, Forms, and Output services support, Assembler service supports all those formats as output file formats. </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
+   <td>Executes the specified DDX document and returns an <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html" title="class in com.adobe.fd.assembler.client">AssemblerResult</a> object containing the resultant documents. </td>
+   <td>Documents Processed</td>
+   <td>All the input file formats that PDF Generator, Forms, and Output services support, Assembler service supports all those formats as output file formats. </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-" target="_blank">toPDFA</a></td> 
-   <td>Convert a specified document to PDF/A using the options specified.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-" target="_blank">toPDFA</a></td>
+   <td>Convert a specified document to PDF/A using the options specified.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked. 
->* A single PDF document produced using assembler service can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied DDX code. 
+>* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked.
+>* A single PDF document produced using assembler service can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied DDX code.
 >
 
 ### PDF Utility Service  {#pdf-utility-service}
@@ -305,16 +305,16 @@ Billing APIs does not account for the number of pages, the length of a document 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td> 
-   <td>Converts a PDF document into an XDP file. In order for a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the AcroForm dictionary.</td> 
-   <td>Documents Processed</td> 
-   <td> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
+   <td>Converts a PDF document into an XDP file. In order for a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the AcroForm dictionary.</td>
+   <td>Documents Processed</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -328,20 +328,20 @@ All the submission events of adaptive forms, HTML5 Forms, and form set are accou
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="15%"><p>Use Case</p> </td> 
-   <td width="15%">Description</td> 
-   <td width="15%">Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="15%"><p>Use Case</p> </td>
+   <td width="15%">Description</td>
+   <td width="15%">Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td>Submitting an adaptive form</td> 
-   <td>Submits an adaptive form to configured submit action. </td> 
-   <td width="20%">Forms Submitted</td> 
+   <td>Submitting an adaptive form</td>
+   <td>Submits an adaptive form to configured submit action. </td>
+   <td width="20%">Forms Submitted</td>
    <td>
-    <ul> 
-     <li>Successful submissions account for single or two transactions. The number of transactions counted depends upon the type of submit action used for submission. For example, sending PDF through email submit action accounts for two counts of transactions. One transaction for form submission and another for PDF generated using the Document of Record (DOR) service. </li> 
-     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li> 
-    </ul> </td> 
+    <ul>
+     <li>Successful submissions account for single or two transactions. The number of transactions counted depends upon the type of submit action used for submission. For example, sending PDF through email submit action accounts for two counts of transactions. One transaction for form submission and another for PDF generated using the Document of Record (DOR) service. </li>
+     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li>
+    </ul> </td>
   </tr>
  </tbody>
 </table>
@@ -351,16 +351,16 @@ All the submission events of adaptive forms, HTML5 Forms, and form set are accou
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="15%"><p>Use Case</p> </td> 
-   <td width="15%">Description </td> 
-   <td width="15%">Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="15%"><p>Use Case</p> </td>
+   <td width="15%">Description </td>
+   <td width="15%">Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td width="30%">Submitting an HTML5 Form</td> 
-   <td>Submits an HTML5 Form to submit URL configured in the form.</td> 
-   <td>Forms Submitted</td> 
-   <td> </td> 
+   <td width="30%">Submitting an HTML5 Form</td>
+   <td>Submits an HTML5 Form to submit URL configured in the form.</td>
+   <td>Forms Submitted</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -370,20 +370,20 @@ All the submission events of adaptive forms, HTML5 Forms, and form set are accou
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td width="15%">Description</td> 
-   <td width="15%">Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td width="15%">Description</td>
+   <td width="15%">Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td width="30%">Submitting a form set</td> 
-   <td>Submits form set to the submit URL configured in the form set.</td> 
-   <td>Forms Submitted</td> 
+   <td width="30%">Submitting a form set</td>
+   <td>Submits form set to the submit URL configured in the form set.</td>
+   <td>Forms Submitted</td>
    <td>
-    <ul> 
-     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li> 
-     <li>Every form in an HTML5 Forms form set accounts as a separate transaction. </li> 
-    </ul> </td> 
+    <ul>
+     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li>
+     <li>Every form in an HTML5 Forms form set accounts as a separate transaction. </li>
+    </ul> </td>
   </tr>
  </tbody>
 </table>
@@ -397,18 +397,18 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td width="30%">Rendering a web channel</td> 
-   <td>Opens the web version of an interactive communication.</td> 
-   <td>Documents Rendered</td> 
+   <td width="30%">Rendering a web channel</td>
+   <td>Opens the web version of an interactive communication.</td>
+   <td>Documents Rendered</td>
    <td>
-    <div> 
-    </div> </td> 
+    <div>
+    </div> </td>
   </tr>
  </tbody>
 </table>
@@ -418,18 +418,18 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>API</p> </td> 
-   <td>Description</td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td width="30%"><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td> 
-   <td>Generates the PDF version of an interactive communication.</td> 
-   <td>Documents Rendered</td> 
+   <td width="30%"><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td>Generates the PDF version of an interactive communication.</td>
+   <td>Documents Rendered</td>
    <td>
-    <div> 
-    </div> </td> 
+    <div>
+    </div> </td>
   </tr>
  </tbody>
 </table>
@@ -439,37 +439,37 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="121"><p>Use case</p> </td> 
-   <td>Transaction report category</td> 
-   <td>Additional Information</td> 
+   <td valign="top" width="121"><p>Use case</p> </td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
   </tr>
   <tr>
-   <td width="30%">Submitting an Assign Task step</td> 
-   <td>Forms Submitted</td> 
+   <td width="30%">Submitting an Assign Task step</td>
+   <td>Forms Submitted</td>
    <td>
-    <div> 
-    </div> </td> 
+    <div>
+    </div> </td>
   </tr>
   <tr>
-   <td>Submitting a workflow application startpoint </td> 
-   <td>Forms Submitted</td> 
-   <td> </td> 
+   <td>Submitting a workflow application startpoint </td>
+   <td>Forms Submitted</td>
+   <td> </td>
   </tr>
   <tr>
-   <td>Submitting an interactive communication (Print Channel) from the Agent UI to a workflow</td> 
-   <td>Documents Rendered</td> 
-   <td> </td> 
+   <td>Submitting an interactive communication (Print Channel) from the Agent UI to a workflow</td>
+   <td>Documents Rendered</td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
 
 ## Recording billable APIs as transactions for custom code {#recording-billable-apis-as-transactions-for-custom-code}
 
-Actions like submitting a PDF Form, using Agent UI to preview an interactive communication, using non-standard form submission, and custom implementations are not accounted as transactions. AEM Forms provides an API to record such actions as transactions. You can call the API from your custom implementations to [record a transaction](/forms/using/record-transaction-custom-implementation.md).
+Actions like submitting a PDF Form, using Agent UI to preview an interactive communication, using non-standard form submission, and custom implementations are not accounted as transactions. AEM Forms provides an API to record such actions as transactions. You can call the API from your custom implementations to [record a transaction](/help/forms/using/record-transaction-custom-implementation.md).
 
 ## Related Articles {#related-articles}
 
 * [Transaction Reports Overview](../../forms/using/transaction-reports-overview.md)
 * [Viewing and Understanding a Transaction Reports](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Record a transaction for custom implementations](/forms/using/record-transaction-custom-implementation.md)
+* [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
 

@@ -27,7 +27,7 @@ Requests are [queued](/help/sites-deploying/osgi-configuration-settings.md#apach
 >
 >User data (users, user groups, and user profiles) are not replicated between author and publish instances.
 >
->For multiple publish instances, user data is Sling distributed when [User Synchronization](/help/sites-administering//sync.md) is enabled.
+>For multiple publish instances, user data is Sling distributed when [User Synchronization](/help/sites-administering/sync.md) is enabled.
 
 ## Replicating from Author to Publish {#replicating-from-author-to-publish}
 
@@ -404,7 +404,7 @@ If you want to use reverse replication then ensure that this agent is activated.
 >
 >Only content is replicated - user data is not (users, user groups, and user profiles).
 >
->To synchronize user data across multiple publish instances, enable [User Synchronization](/help/sites-administering//sync.md).
+>To synchronize user data across multiple publish instances, enable [User Synchronization](/help/sites-administering/sync.md).
 
 Upon installation a default agent is already configured for replication of content to a publish instance running on port 4503 of the localhost.
 

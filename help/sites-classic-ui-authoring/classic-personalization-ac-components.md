@@ -25,7 +25,7 @@ When you integrate with Adobe Campaign, you have components available for when w
 
 ## Adobe Campaign Newsletter Components {#adobe-campaign-newsletter-components}
 
-All the Campaign components follow the best practices outlined in [Best Practices for Email Templates](/help/sites-administering//best-practices-for-email-templates.md) and are based on the Adobe markup language [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
+All the Campaign components follow the best practices outlined in [Best Practices for Email Templates](/help/sites-administering/best-practices-for-email-templates.md) and are based on the Adobe markup language [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
 
 When you open a newsletter/email that is configured to integrate with Adobe Campaign, you should see the following components in the **Adobe Campaign Newsletter **section:
 

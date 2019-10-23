@@ -32,10 +32,10 @@ Each column shows a value for the current reporting period, and also indicates w
 
 >[!NOTE]
 >
->To change the update period, [configure the import interval](/help/sites-administering//adobeanalytics-connect.md#configuring-the-import-interval).
+>To change the update period, [configure the import interval](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Open the **Sites** console; for example [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. In the far right of the toolbar, (upper right corner), click or tap the icon to select **List View** (the icon shown will depend on the [current view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).  
+1. In the far right of the toolbar, (upper right corner), click or tap the icon to select **List View** (the icon shown will depend on the [current view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
 1. Again, in the far right of the toolbar, (upper right corner), click or tap the icon then select **View Settings**. The **Configure Columns** dialog will open. Make any changes required and confirm with **Update**.
 
@@ -45,12 +45,12 @@ Each column shows a value for the current reporting period, and also indicates w
 
 Select the reporting period for which Analytics data appears on the Sites console:
 
-* Last 30 Days Data  
-* Last 90 Days Data  
+* Last 30 Days Data
+* Last 90 Days Data
 * This Year's Data
 
-The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop down to select the required reporting period.   
-![](assets/aa-05.png) 
+The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop down to select the required reporting period.
+![](assets/aa-05.png)
 
 ### Configuring Available Data Columns {#configuring-available-data-columns}
 
@@ -83,15 +83,15 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 
 >[!NOTE]
 >
->This will be shown if the [Activity Map has been configured](/help/sites-administering//adobeanalytics-connect.md#configuring-for-the-activity-map) for your website.
+>This will be shown if the [Activity Map has been configured](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) for your website.
 
 >[!NOTE]
 >
 >Data for the Activity Map is taken from Adobe Analytics.
 
-When your website has been [configured for Adobe Analytics](/help/sites-administering//adobeanalytics-connect.md), you can use the [mode Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) to view relevant data. For example:
+When your website has been [configured for Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), you can use the [mode Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) to view relevant data. For example:
 
-![](assets/aa-07.png) 
+![](assets/aa-07.png)
 
 ### Accessing the Activity Map {#accessing-the-activity-map}
 
@@ -102,12 +102,12 @@ After selecting the [Activity Map](/help/sites-authoring/author-environment-tool
 The **Analytics** floating toolbar is shown; here you can:
 
 * change the toolbar format using the double arrows (**&gt;&gt;**)
-* Toggle Page Details (eye icon)  
-* Configure the Activity Map Settings ( cog icon)  
-* Select the analytics to show (various drop-down selectors)  
+* Toggle Page Details (eye icon)
+* Configure the Activity Map Settings ( cog icon)
+* Select the analytics to show (various drop-down selectors)
 * Quit the Activity Map, and close the toolbar (x)
 
-![](assets/aa-09.png) 
+![](assets/aa-09.png)
 
 ### Selecting the Analytics to Show {#selecting-the-analytics-to-show}
 
@@ -115,13 +115,13 @@ You can select the analytical data to be shown, and how it should be displayed, 
 
 * **Standard**/**Live**
 
-* event type  
+* event type
 * user group
 * **Bubbles**/**Gradient**/**Gainers & Losers**/**Off**
 
 * period to be shown
 
-![](assets/aa-13.png) 
+![](assets/aa-13.png)
 
 ### Configuring the Activity Map {#configuring-the-activity-map}
 

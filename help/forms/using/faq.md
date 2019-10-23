@@ -32,24 +32,24 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
    Answer: Repeatable Subforms should have an initial count of 1 or more. Repeatable Subforms with an initial count of zero are not supported. You can also choose to use a repeatable Subform and not display it when the form is loaded. To achieve the use case:
 
     1. Set initial count of the repeatable Subform to 1.
-    
+
        ![](assets/intial-count.png)
 
     1. Use initialize event of the form to hide primary instance of the Subform. For example, the code below hides the primary instance of the Subform on form initialization. It also verifies the app type to ensure that the script is executed only on the client side:
 
-       ```    
+       ```
        if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
        RepeatSubform.presence = "hidden";
-       }  
+       }
        ```
 
     1. Open the script for adding an instance of the Subform for editing. Add the code like the below to add an instance of the Subform script.
 
        The code below checks the hidden instance of the Subform. If the hidden instance of the Subform is found, delete the hidden instance of the subform and insert a fresh instance of the Subform. If the hidden instance of the Subform is not found, then simply insert a fresh instance of the Subform.
 
-       ```    
+       ```
        if (RepeatSubform.presence == "hidden")
-       { 
+       {
        RepeatSubform.instanceManager.insertInstance(0);
        RepeatSubform.instanceManager.removeInstance(1);
        }
@@ -63,7 +63,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
        The code checks count of the Subforms. If the count of the Subform reached 1, the code hides the subform instead of deleting the Subform.
 
-       ```    
+       ```
        if (RepeatSubform.instanceManager.count == 1) {
        RepeatSubform.presence = "hidden";
        } else {
@@ -73,7 +73,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
     1. Open the presubmit event of form for editing. Add the following script to the event to remove the hidden instance of the script before editing. It prevents sending data of the hidden Subform on submission.
 
-       ```    
+       ```
        if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
        RepeatSubform.instanceManager.removeInstance(0);
        }
@@ -89,7 +89,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. I am observing layout issues related to missing content or overlapping content. What is the reason?
 
-   Answer: If there is a Draw Text or a Draw Image element along with another overlapping element at the same position (say a Rectangle), the Draw Text content are not visible if it comes later in the document order (in AEM Forms Designer Hierarchy view). PDF supports transparent layering but HTML/browsers do not support transparent layering. 
+   Answer: If there is a Draw Text or a Draw Image element along with another overlapping element at the same position (say a Rectangle), the Draw Text content are not visible if it comes later in the document order (in AEM Forms Designer Hierarchy view). PDF supports transparent layering but HTML/browsers do not support transparent layering.
 
 1. Why are some fonts displayed in the HTML form different from the ones used while designing the form?
 
@@ -97,7 +97,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Are vAlign and hAlign attributes supported in HTML forms?
 
-   Yes, the vAlign and hAlign attributes are supported. The vAlign attribute is not supported in Internet Explorer and in multiline field. 
+   Yes, the vAlign and hAlign attributes are supported. The vAlign attribute is not supported in Internet Explorer and in multiline field.
 
 1. Do HTML5 forms support Hebrew characters?
 
@@ -105,7 +105,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Do HTML5 forms have any limitations on numeric field?
 
-   Answer: Yes, HTML5 forms has a few limitations. If the number of digits are more than the count specified in the picture clause, then the numbers are not localized and are displayed in English locale. 
+   Answer: Yes, HTML5 forms has a few limitations. If the number of digits are more than the count specified in the picture clause, then the numbers are not localized and are displayed in English locale.
 
 1. Why HTML forms are larger in size than PDF forms?
 
@@ -129,9 +129,9 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
    Answer: Yes, accessible tables have the following limitations:
 
     * Nested tables and subform inside a table are not supported.
-    * Headers are only supported for the top row or left columns of the table. Headers are not supported for mid-table elements. You can apply headers to multiple row and column headers are supported provided all such rows and columns are along with the topmost row or leftmost column of the table.  
-    * `Rowspan`and `colspan`from a random location inside the table is not supported.  
-    
+    * Headers are only supported for the top row or left columns of the table. Headers are not supported for mid-table elements. You can apply headers to multiple row and column headers are supported provided all such rows and columns are along with the topmost row or leftmost column of the table.
+    * `Rowspan`and `colspan`from a random location inside the table is not supported.
+
     * You cannot dynamically add or remove instance of rows which contain elements with rowspan value greater than 1.
 
 1. What is the reading order of tool tip and caption for screen readers?
@@ -168,18 +168,18 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
    Answer:
 
-    * There is limited support for xfa.connectionSet script. For connectionSet, only server-side invocation of web service is supported. For detailed information, see [Scripting Support](/forms/using/scripting-support.md).
+    * There is limited support for xfa.connectionSet script. For connectionSet, only server-side invocation of web service is supported. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
     * There is no support for $record and $data in client side scripts. However, if the scripts are written in a formReady, layoutReady block, the scripts still work because these events run on the server side.
     * XFA Draw element-specific scripts such as changing the Draw text (or Caption text in case of fields) are not supported.
 
 1. Are there any limitations in using formCalc?
 
-   Answer: Only a subset of the formCalc scripts is currently implemented. For detailed information, see [Scripting Support](/forms/using/scripting-support.md).
+   Answer: Only a subset of the formCalc scripts is currently implemented. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
 
 1. Is there any recommended naming convention and are there any reserved keywords to avoid?
 
     * In AEM Forms Designer, it is recommended not to begin the name of an object (such as a subform or a text field) with an underscore (_). To use underscore at the beginning of the name, add a prefix after the underscore, *_&lt;prefix&gt;&lt;objectname&gt;. *
-    * All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/forms/using/scripting-support.md).
+    * All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/help/forms/using/scripting-support.md).
 
 1. Do HTML5 forms support floating fields?
 
@@ -205,6 +205,6 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Are there any reserved keywords in HTML5 forms?
 
-   Answer: All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/forms/using/scripting-support.md). Apart from reserved keywords, if you use object names that begin with an underscore (_), it is recommended to add a unique prefix after the underscore. Adding a prefix helps avoid any possible conflict with HTML5 forms internal APIs. For example, `_fpField1`
+   Answer: All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/help/forms/using/scripting-support.md). Apart from reserved keywords, if you use object names that begin with an underscore (_), it is recommended to add a unique prefix after the underscore. Adding a prefix helps avoid any possible conflict with HTML5 forms internal APIs. For example, `_fpField1`
 
 [**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

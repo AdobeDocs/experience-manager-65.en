@@ -40,7 +40,7 @@ AEM is shipped with various mechanisms to help you manage your repository:
     * The maximum age of any version kept in the repository.
       When the age of a version exceeds this value, it is purged from the repository.
 
-* the [Version Purge maintenance task](/help/sites-administering//operations-dashboard.md#automated-maintenance-tasks). You can schedule the Version Purge maintenance task to delete old versions automatically. As a result, this minimizes the need to manually use the Version Purge tools.
+* the [Version Purge maintenance task](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). You can schedule the Version Purge maintenance task to delete old versions automatically. As a result, this minimizes the need to manually use the Version Purge tools.
 
 >[!CAUTION]
 >

@@ -37,15 +37,15 @@ Use [AEM Forms user interface](../../forms/using/introduction-managing-forms.md)
 To create a form set, do the following:
 
 1. Select Forms &gt; Forms and Documents.
-1. Select Create &gt; Form Set.  
+1. Select Create &gt; Form Set.
 
 1. In the Add Properties page, add the following details and click Next.
 
     * Title: Specifies the title of the document. The title helps you identify the form set in the AEM Forms user interface.
-    * Description: Specifies the detailed information about the document. 
+    * Description: Specifies the detailed information about the document.
     * Tags: Specifies tags to uniquely identify the form set. Tags help in searching the form set. To create tags, type new tag names in the Tags box.
     * Submit URL: Specifies the URL where submitted data is posted for the case of stand-alone rendition of form set (Non-AEM Forms app use case). Data is submitted to this endpoint as multipart/formdata with following request parameter:
-    * dataXML: This parameter contains an XML representation of submitted form set data. If all forms in the form set use a common schema, the XML is generated as per that schema. Otherwise, XML root tag contains a child tag for each filled form in the form set that contains data for the form attachments. 
+    * dataXML: This parameter contains an XML representation of submitted form set data. If all forms in the form set use a common schema, the XML is generated as per that schema. Otherwise, XML root tag contains a child tag for each filled form in the form set that contains data for the form attachments.
     * formsetPath: The path of the formset in CRXDE, which has been submitted.
     * HTML Render Profile: You can configure certain options such as floating fields, attachments, and draft support (For stand-alone form set rendition) to customize appearance, behavior, and interactions of the form set. You can customize or extend the existing profile to change any HTML Form profile settings.
 
@@ -59,7 +59,7 @@ To create a form set, do the following:
 
 1. In the Configure Form(s) page, you can do the following:
 
-    * Form Order: Drag-and-drop the forms to reorder them.** **The form order defines the order in which forms are shown to end user in AEM Forms app and stand-alone rendition. 
+    * Form Order: Drag-and-drop the forms to reorder them.** **The form order defines the order in which forms are shown to end user in AEM Forms app and stand-alone rendition.
     * Form Identifier: Specifies a unique identity for the forms to be used in eligibility expressions.
     * Data root: For each form in form set, Author can configure the XPATH where the data of that particular form is positioned in submitted XML. By default, the value is /. If all the forms in form set are schema bound and share the same XML schema, you can change this value. It is recommended that every field in form has proper data binding specified in the XDP. If two fields in two different forms share the common data binding, then the field in the second form shows prefilled values from the first form. Do not bind two subforms with the same internal contents to the same XML node. For more information the XML structure of form set, see [Prefill XML for Form set](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
     * Eligibility expression: Specifies a JavaScript expression that evaluates a Boolean value and indicates whether a form in form set is eligible for filling. If false, user is not asked or even shown the form to fill. Typically, the expression is based on the values of the fields that are captured before this form. Expressions also contain calls to the form set API fs.valueOf to extract the values filled in by the user in a field of a form of the form set:
@@ -81,8 +81,8 @@ To create a form set, do the following:
 Once a form set is created, you can perform following actions on that form set:
 
 * Single-click: When form set is created and listed on main asset page, you can single-click the form set to view it. A form set opens and displays all form templates (XDPs) in that form set.
-* Edit: On clicking Edit after selecting a form set, the Configure Form (s) screen that is shown above in Steps to create a Form set opens. You can carry out all the functionalities that are described in point there. 
-* Copy + Paste: This allows you to copy the entire form set from one location and paste it at same or any other location or folder. 
+* Edit: On clicking Edit after selecting a form set, the Configure Form (s) screen that is shown above in Steps to create a Form set opens. You can carry out all the functionalities that are described in point there.
+* Copy + Paste: This allows you to copy the entire form set from one location and paste it at same or any other location or folder.
 * Download: You can download the form set with all its dependencies.
 * Start/Manage Review: Once form set is created, you can set up its review by clicking Start Review. Once review has been started for a form set, Manage Review option is displayed to user. On Manage review screen, you can update/end the review. For the reviews you added, you can check the review and add comments, if necessary.
 * Delete: Deletes the complete form set. The forms in the deleted form set remain in the repository.
@@ -90,7 +90,7 @@ Once a form set is created, you can perform following actions on that form set:
 * Preview: Preview provides two options: Preview as HTML (without data) and custom preview with sample data.
 * View/Edit Properties: You can view/edit the metadata properties of a selected form set.
 
-![](assets/createformset3.png) 
+![](assets/createformset3.png)
 
 ### Edit a form set {#edit-a-form-set}
 
@@ -100,7 +100,7 @@ To edit a form set, do the following:
 1. Locate the form set you want to edit. Hover over it and select Edit ( ![](assets/editicon.png)).
 1. In the Configure Form(s) page, you can edit the following:
 
-    * Form Order 
+    * Form Order
     * Form Identifier
     * Data root
     * Eligibility expression
@@ -165,17 +165,17 @@ For example, you have three forms (form1, form2, and form3), in the form set wit
 
 form1
 
-field  
+field
 form1field
 
 form2
 
-field  
+field
 form2field
 
 form3
 
-field  
+field
 form3field
 
 Each form has a common named field, named "field" and a uniquely named field called "form&lt;i&gt;field".
@@ -345,36 +345,36 @@ In case there is a root element in the prefill XML, the name of that element is 
 
 ## Form set in&nbsp;AEM Forms app {#formset-in-workspace-app}
 
-AEM Forms app allows field workers to synchronize their mobile devices with an AEM Forms server and work on their tasks. The application works even when the device is offline by saving data locally on the device. Using annotation features, such as photographs, field workers can provide accurate information to integrate into the business processes.  
-  
-For more information on AEM Forms app, see [AEM Forms app overview](/forms/using/mobile-workspace-overview.md).
+AEM Forms app allows field workers to synchronize their mobile devices with an AEM Forms server and work on their tasks. The application works even when the device is offline by saving data locally on the device. Using annotation features, such as photographs, field workers can provide accurate information to integrate into the business processes.
+
+For more information on AEM Forms app, see [AEM Forms app overview](/help/forms/using/mobile-workspace-overview.md).
 
 ## Known limitations - patterns not fully supported in Form set {#known-limitations-patterns-not-fully-supported-in-form-set}
 
 The following data patterns are not fully supported in Form set:
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Pattern not fully supported in Form set</strong></td> 
-   <td><strong>Example</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Input size and pattern size mismatch</td> 
-   <td><p>When pattern= num{z,zzz}</p> <p>And input=</p> <p>12,345 or</p> <p>1,23</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Picture Clause Patterns with brackets "(" ")"</td> 
-   <td>num{(zz,zzz)}</td> 
-  </tr> 
-  <tr> 
-   <td>Multiple data patterns</td> 
-   <td>num{zz,zzz} | num{z,zzz,zzz}</td> 
-  </tr> 
-  <tr> 
-   <td>Shorthand patterns </td> 
-   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{}, or</p> <p>num.currency{}</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Pattern not fully supported in Form set</strong></td>
+   <td><strong>Example</strong></td>
+  </tr>
+  <tr>
+   <td>Input size and pattern size mismatch</td>
+   <td><p>When pattern= num{z,zzz}</p> <p>And input=</p> <p>12,345 or</p> <p>1,23</p> </td>
+  </tr>
+  <tr>
+   <td>Picture Clause Patterns with brackets "(" ")"</td>
+   <td>num{(zz,zzz)}</td>
+  </tr>
+  <tr>
+   <td>Multiple data patterns</td>
+   <td>num{zz,zzz} | num{z,zzz,zzz}</td>
+  </tr>
+  <tr>
+   <td>Shorthand patterns </td>
+   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{}, or</p> <p>num.currency{}</p> </td>
+  </tr>
+ </tbody>
 </table>
 

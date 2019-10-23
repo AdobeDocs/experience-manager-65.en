@@ -20,7 +20,7 @@ AEM components are used to hold, format, and render the content made available o
 
 * When [authoring pages](/help/sites-authoring/default-components.md), the components allow the authors to edit and configure the content.
 
-    * When constructing a [Commerce](/help/sites-administering//ecommerce.md) site the components can, for example, collect and render information from the catalog.
+    * When constructing a [Commerce](/help/sites-administering/ecommerce.md) site the components can, for example, collect and render information from the catalog.
       See [Developing eCommerce](/help/sites-developing/ecommerce.md) for more information.
 
     * When constructing a [Communities](/help/communities/author-communities.md) site the components can provide information to and collect information from your visitors.
@@ -445,7 +445,7 @@ When migrating a component that was designed for use with the classic UI to a co
 * Components
 
     * Migrate [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) code that use classic UI specific functions
-    * RTE plugin, for further information see [Configuring the Rich Text Editor](/help/sites-administering//rich-text-editor.md).
+    * RTE plugin, for further information see [Configuring the Rich Text Editor](/help/sites-administering/rich-text-editor.md).
     * [Migrate `cq:listener` code](#migrating-cq-listener-code) that uses functions specific to the classic UI
 
 * Dialogs

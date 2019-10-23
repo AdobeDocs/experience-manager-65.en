@@ -347,8 +347,7 @@ The theme is either created using the out-of-the-box form, or using a form or in
 
 In the Canvas toolbar, you see:
 
-* **Toggle Side Panel ** ![](assets/toggle-side-panel.png): Lets you show or hide sidebar.
-
+* **Toggle Side Panel** ![](assets/toggle-side-panel.png): Lets you show or hide sidebar.
 * **Theme Options** ![](assets/theme-options.png): Provides three options
 
     * Configure: Provides options to select the preview form or interactive communication, base clientlib, and typekit configuration.
@@ -356,7 +355,7 @@ In the Canvas toolbar, you see:
     * Manage Styles: Provides options to manage text and image styles
     * Help: Runs an image guided tour of the Theme Editor.
 
-* **Emulator ** ![](assets/ruler.png): Emulates the look of your theme for different display sizes. A display size is treated as a breakpoint in the emulator. You can select a breakpoint and specify a style for it. For example, Desktop and Tablet are two breakpoints. You can specify different styles for each breakpoint.
+* **Emulator** ![](assets/ruler.png): Emulates the look of your theme for different display sizes. A display size is treated as a breakpoint in the emulator. You can select a breakpoint and specify a style for it. For example, Desktop and Tablet are two breakpoints. You can specify different styles for each breakpoint.
 
 When you select a component in the Canvas, you see the component toolbar on top of it. The component toolbar lets you select components, or switch to generic components. For example, you select a numeric text box in a panel. You see the following options in the component toolbar:
 
@@ -454,7 +453,7 @@ Perform the following steps to customize styling for a particular component (a n
       **
     * **Field Widget
       **
-    * ![](assets/field-level.png-)
+    * ![](assets/field-level.png)
 
 1. Select **Numeric Box Widget**.
 1. Sidebar title changes to Numeric Box Widget, and shows options to customize its look.
@@ -561,7 +560,7 @@ To apply a theme to an adaptive form:
    You can edit properties of your form in the sidebar.
 
 1. In the sidebar, click **Styling**.
-1. Select your theme from the **Adaptive Form Theme** drop-down and click **Done** ![](assets/check-button.png-).
+1. Select your theme from the **Adaptive Form Theme** drop-down and click **Done** ![](assets/check-button.png).
 
 To apply a theme to an interactive communication:
 

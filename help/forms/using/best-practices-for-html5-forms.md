@@ -71,7 +71,7 @@ Adobe Experience Manager (AEM) forms can help you transform complex transactions
 * [Best practices for Authoring content](/help/sites-authoring/best-practices.md)
 * [Best practices for Administering AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practices for Developing solutions](/help/sites-developing/best-practices.md)
-* [Best practices for working with adaptive forms](/forms/using/adaptive-forms-best-practices.md)
+* [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
 
 ## Quick reference card {#quick-reference-card}
 

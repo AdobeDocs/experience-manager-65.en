@@ -73,7 +73,7 @@ Several tools for tools for analyzing and inspecting query performance are avail
 
 * [AEM Index Tools](/help/sites-deploying/queries-and-indexing.md)
 
-* [Operations Diagnosis Tools - Query Performance](/help/sites-administering//operations-dashboard.md#diagnosis-tools)
+* [Operations Diagnosis Tools - Query Performance](/help/sites-administering/operations-dashboard.md#diagnosis-tools)
 
 * [Oak Utils](https://oakutils.appspot.com/). This is an open source tool that is not maintained by Adobe.
 
@@ -159,7 +159,7 @@ The structure for Editable templates changed between AEM 6.2 and 6.3. If you are
 
 ### CUG Implementation Changes {#cug-implementation-changes}
 
-The implementation of Closed User Groups has changed significantly to address performance and scalability limitations in previous versions of AEM. The previous version of CUG was deprecated in 6.3 and the new implementation is only supported in the Touch UI. If you are upgrading from 6.2 or ealier then Instructions to migrate to the new CUG implementation can be found [here](/help/sites-administering//closed-user-groups.md#upgradetoaem63).
+The implementation of Closed User Groups has changed significantly to address performance and scalability limitations in previous versions of AEM. The previous version of CUG was deprecated in 6.3 and the new implementation is only supported in the Touch UI. If you are upgrading from 6.2 or ealier then Instructions to migrate to the new CUG implementation can be found [here](/help/sites-administering/closed-user-groups.md#upgradetoaem63).
 
 ## Testing Procedure {#testing-procedure}
 

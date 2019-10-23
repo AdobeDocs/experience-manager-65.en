@@ -18,7 +18,7 @@ AEM Forms provides a set of OSGi services to accomplish different document level
 
 Enables you to combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents. It also helps convert and validate PDF documents to PDF/A standard, transforms PDF forms, XML forms, and PDF forms to PDF/A-1b, PDF/A-2b, and PDFA/A-3b. For more information, see [Assembler Service](../../forms/using/assembler-service.md).
 
-Enables you to convert PDF documents to PostScript or image files (JPEG, JPEG 2000, PNG, and TIFF). For more information, see [ConvertPDF Service](/forms/using/using-convertpdf-service.md).
+Enables you to convert PDF documents to PostScript or image files (JPEG, JPEG 2000, PNG, and TIFF). For more information, see [ConvertPDF Service](/help/forms/using/using-convertpdf-service.md).
 
 Enables you to extract data from electronic images of barcodes. The service accepts TIFF and PDF files that include one or more barcodes as input and extracts the barcode data. For more information, see [Barcoded Forms Service](../../forms/using/using-barcoded-forms-service.md).
 
@@ -26,11 +26,11 @@ Enables you to encrypt and decrypt documents, extend the functionality of Adobe 
 
 Enables you to encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to its contents. For more information, see [Encryption Service](../../forms/using/overview-aem-document-services.md#p-encryption-service-p).
 
-Lets you create interactive data capture client applications that validate, process, transform, and deliver forms that are typically created in Forms Designer. The Forms service renders any form design that you develop to PDF documents. For more information, see [Forms Service](/forms/using/forms-service.md).
+Lets you create interactive data capture client applications that validate, process, transform, and deliver forms that are typically created in Forms Designer. The Forms service renders any form design that you develop to PDF documents. For more information, see [Forms Service](/help/forms/using/forms-service.md).
 
 Enables you to create documents in different formats, including PDF, laser printer formats, and label printer formats. Laser printer formats are PostScript and Printer Control Language (PCL). For more information, see [Output Service](../../forms/using/output-service.md).
 
-The PDF Generator service provides APIs to converts native file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents. For more information, see [PDF Generator Service](/forms/using/aem-document-services-programmatically.md#main-pars_header_27).
+The PDF Generator service provides APIs to converts native file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents. For more information, see [PDF Generator Service](/help/forms/using/aem-document-services-programmatically.md#main-pars_header_27).
 
 Enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The service activates features that are not available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document. For more information, see [Reader Extension Service](../../forms/using/overview-aem-document-services.md#p-reader-extension-service-p).
 
@@ -40,13 +40,13 @@ Lets you work with digital signatures and documents on the AEM server. For examp
 * The AEM server validates a signature that was added to a form by using Acrobat or Adobe Reader.
 * The AEM server signs a form on behalf of a public notary.
 
-The signature service accesses certificates and credentials that are stored in the trust store. For more information, see [Signature Service](/forms/using/aem-document-services-programmatically.md).
+The signature service accesses certificates and credentials that are stored in the trust store. For more information, see [Signature Service](/help/forms/using/aem-document-services-programmatically.md).
 
 AEM Forms is a powerful enterprise-class platform and the document services is only one of the capability of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 ## Deployment Topology {#deployment-topology}
 
-AEM Forms add-on package is an application deployed onto AEM. Generally, you require only one AEM instance (author or publish) to run AEM Forms document services. The following topology is recommended to run AEM Forms document services. For detailed information about topologies, see [Architecture and deployment topologies for AEM Forms](/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms add-on package is an application deployed onto AEM. Generally, you require only one AEM instance (author or publish) to run AEM Forms document services. The following topology is recommended to run AEM Forms document services. For detailed information about topologies, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![](do-not-localize/document-services.png)
 
@@ -570,5 +570,5 @@ You have a working AEM Forms document services environment. You can use document
 
 * [Form centric workflows on OSGi](../../forms/using/aem-forms-workflow.md)
 * [Watched Folders](../../forms/using/watched-folder-in-aem-forms.md)
-* [Document services APIs](/forms/using/aem-document-services-programmatically.md)
+* [Document services APIs](/help/forms/using/aem-document-services-programmatically.md)
 

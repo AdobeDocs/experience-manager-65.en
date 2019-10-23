@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Create your first adaptive form"
 seo-title: "Tutorial: Create your first adaptive form"
-description: Learn to create business class, interactive, and responsive forms. 
-seo-description: Learn to create business class, interactive, and responsive forms. 
+description: Learn to create business class, interactive, and responsive forms.
+seo-description: Learn to create business class, interactive, and responsive forms.
 uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
 topic-tags: introduction
 discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
@@ -35,9 +35,9 @@ The website runs on Adobe Experience Manager (AEM) and uses AEM Forms for data c
 
 ### Prerequisite {#prerequisite}
 
-* Setup an AEM author instance.  
+* Setup an AEM author instance.
 * Install [AEM Forms add-on](../../forms/using/installing-configuring-aem-forms-osgi.md) on author instance.
-* Obtain JDBC database driver (JAR file) from database provider. Examples in the tutorial are based on MySQL database and use Oracle's [MySQL JDBC database driver](https://dev.mysql.com/downloads/connector/j/5.1.html).   
+* Obtain JDBC database driver (JAR file) from database provider. Examples in the tutorial are based on MySQL database and use Oracle's [MySQL JDBC database driver](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Setup a database containing customer data with the fields displayed below. A database is not essential to create an adaptive form. This tutorial uses a database to display form data model and persistence capabilities of AEM Forms.
 
@@ -45,7 +45,7 @@ The website runs on Adobe Experience Manager (AEM) and uses AEM Forms for data c
 
 ## Step 1: Create an adaptive form {#step-create-an-adaptive-form}
 
-![](assets/03-create-adaptive-form-%20main-image_small.png)
+![](assets/03-create-adaptive-form-main-image_small.png)
 
 Adaptive forms are new generation, engaging, responsive, dynamic, and adaptive in nature. Using adaptive forms, you can deliver personalized and targeted experiences. AEM Forms provide a drag-and-drop WYSIWYG editor to create adaptive forms. For more information about adaptive forms, see [Introduction to authoring adaptive forms](../../forms/using/introduction-forms-authoring.md).
 
@@ -66,10 +66,10 @@ A form data model allows to connect an adaptive form to disparate data sources. 
 
 Goals:
 
-* Configure the website's database instance (MySQL database) as a data sources  
+* Configure the website's database instance (MySQL database) as a data sources
 * Create the form data model using MySQL database as a data source
 * Add data model objects to form data model
-* Configure read and write services for the form data model  
+* Configure read and write services for the form data model
 * Test form data model and configured services with test data
 
 [ ![](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
@@ -89,7 +89,7 @@ Goals:
 
 ## Step 4: Style your adaptive form {#step-style-your-adaptive-form}
 
-![](assets/09-style%20your%20adaptive%20form_small.png)
+![](assets/09-style-your-adaptive-form_small.png)
 
 Adaptive forms provide themes and an [editor](../../forms/using/themes.md) to create themes for the adaptive forms. A theme contains styling details for components and panels, and you can reuse a theme in different forms. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply the theme to your form, the specified style reflects on corresponding components of your form. Adaptive forms also support in-line styling for styles specific to a form.
 
@@ -119,7 +119,7 @@ Goals:
 
 ![](assets/12-publish-your-adaptive-form-_small.png)
 
-You can publish adaptive forms as a stand-alone form (single page application), include in AEM [sites page](/forms/using/embed-adaptive-form-aem-sites.md), or list on an AEM site using [Forms Portal](../../forms/using/introduction-publishing-forms.md).
+You can publish adaptive forms as a stand-alone form (single page application), include in AEM [sites page](/help/forms/using/embed-adaptive-form-aem-sites.md), or list on an AEM site using [Forms Portal](../../forms/using/introduction-publishing-forms.md).
 
 Goals:
 

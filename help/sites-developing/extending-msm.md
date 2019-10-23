@@ -89,7 +89,7 @@ The main MSM API objects interact as follows (see also [Terms Used](/help/sites-
 
 ### Creating a New Synchronization Action {#creating-a-new-synchronization-action}
 
-Create custom synchronization actions to use with your rollout configurations. Create a synchronization action when the [installed actions](/help/sites-administering//msm-sync.md#installed-synchronization-actions) do not meet your specific application requirements. To do so, create two classes:
+Create custom synchronization actions to use with your rollout configurations. Create a synchronization action when the [installed actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions) do not meet your specific application requirements. To do so, create two classes:
 
 * An implementation of the [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface that performs the action.
 * An OSGI component that implements the [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface and creates instances of your `LiveAction` class.
@@ -115,7 +115,7 @@ Use the `LiveAction` configuration node in the repository to store information t
 
 For example, a `LiveAction` needs to store the name of the blueprint author. A property of the configuration node includes the property name of the blueprint page that stores the information. At runtime, the `LiveAction` retrieves the property name from the configuration, then obtains the property value.
 
-The parameter of the ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration; see [Creating a Rollout Configuration](/help/sites-administering//msm-sync.md#creating-a-rollout-configuration). As usual when using a configuration node, you should adapt it to a `ValueMap` object:
+The parameter of the ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration; see [Creating a Rollout Configuration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). As usual when using a configuration node, you should adapt it to a `ValueMap` object:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -185,7 +185,7 @@ The new rollout configuration is then available to you when setting rollout conf
 1. Click **Create**.
 1. Double-click on the rollout configuration that you created to open it for further configuration.
 1. Click **Edit**.
-1. In the **Rollout Config** dialog, select the ** [Sync Trigger](/help/sites-administering//msm-sync.md#rollout-triggers)** to define the action that causes the rollout to occur.
+1. In the **Rollout Config** dialog, select the ** [Sync Trigger](/help/sites-administering/msm-sync.md#rollout-triggers)** to define the action that causes the rollout to occur.
 1. Click **OK** to save the changes.
 
 #### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
@@ -201,17 +201,17 @@ Rollout configurations are stored below the `/etc/msm/rolloutconfigs` node. Add 
 
 1. Click **Create** then **Create Node**. Then configure the following node properties and click **OK**:
 
-    * **Name**: The node name of the synchronization action. The name must be the same as the **Action Name** in the table under [Synchronization Actions](/help/sites-administering//msm-sync.md#installed-synchronization-actions), for example `contentCopy` or `workflow`.
+    * **Name**: The node name of the synchronization action. The name must be the same as the **Action Name** in the table under [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `contentCopy` or `workflow`.
 
     * **Type**: `cq:LiveSyncAction`
 
 1. Select the action node just created and add the following property to the node:
 
-    * **Name**: The property name of the action. The name must be the same as the **Property Name** in the table under [Synchronization Actions](/help/sites-administering//msm-sync.md#installed-synchronization-actions), for example `enabled`.
+    * **Name**: The property name of the action. The name must be the same as the **Property Name** in the table under [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `enabled`.
 
     * **Type**: String
 
-    * **Value**: the property value of the action. For valid values, see the **Properties** column in [Synchronization Actions](/help/sites-administering//msm-sync.md#installed-synchronization-actions), for example `true`.
+    * **Value**: the property value of the action. For valid values, see the **Properties** column in [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `true`.
 
 1. Add and configure as many synchronization action nodes as you require. Rearrange the action nodes so that their order matches the order in which you want them to occur. The topmost action node occurs first.
 1. Click **Save All**.
@@ -523,7 +523,7 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
 
 Create the MSM rollout configuration that uses the `LiveActionFactory` that you created:
 
-1. Create and configuration a [Rollout Configuration with the standard procedure](/help/sites-administering//msm-sync.md#creating-a-rollout-configuration) - and using the properties:
+1. Create and configuration a [Rollout Configuration with the standard procedure](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) - and using the properties:
 
     1. Create:
 
@@ -652,7 +652,7 @@ Then you need to ensure that:
 
 * Contact Email:
 
-    * Is excluded from the rolled out properties; see [Excluding Properties and Node Types from Synchronization](/help/sites-administering//msm-sync.md#excluding-properties-and-node-types-from-synchronization).
+    * Is excluded from the rolled out properties; see [Excluding Properties and Node Types from Synchronization](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
 
 * Key Visual Style:
 

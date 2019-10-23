@@ -15,16 +15,16 @@ docset: aem65
 
  ![](assets/05-create-form-data-model-main_small.png)
 
-| This tutorial is a step in the [Create your first Interactive Communication](/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
+| This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
 |---|
 
 Document fragments are reusable components of a correspondence that are used to compose an Interactive Communication. The document fragments are of the following types:
 
 * Text - A text asset is a piece of content that consists of one or more paragraphs of text. A paragraph can be static or dynamic.
-* List - List is a group of document fragments, including text, lists, conditions, and images. 
+* List - List is a group of document fragments, including text, lists, conditions, and images.
 * Condition - Conditions enable you to define what content gets included in the Interactive Communication based on the data received from the Form Data Model.
 
-This tutorial walks you through the steps to create multiple text document fragments based on the anatomy provided in [Plan the Interactive Communication](/forms/using/planning-interactive-communications.md) section. At the end of this tutorial, you will be able to:
+This tutorial walks you through the steps to create multiple text document fragments based on the anatomy provided in [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section. At the end of this tutorial, you will be able to:
 
 * Create document fragments
 * Create variables
@@ -39,7 +39,7 @@ The following is the list of document fragments that are created in this tutoria
 * [Bill summary](../../forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Summary of charges](../../forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Each document fragment includes fields with static text, data received from form data model, and data entered using the Agent UI. All these fields have been depicted in the [Plan the Interactive Communication](/forms/using/planning-interactive-communications.md) section.
+Each document fragment includes fields with static text, data received from form data model, and data entered using the Agent UI. All these fields have been depicted in the [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section.
 
 While creating document fragments in this tutorial, variables are created for fields that receive data using the Agent UI.
 
@@ -58,17 +58,17 @@ The Bill Details document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**.   
+1. Select **Forms** &gt; **Document Fragments**.
 
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 
     1. Enter **bill_details_first_ic** as the name in the **Title** field. The title gets auto-populated in the **Name** field.
-    
+
     1. Select **Form Data Model** from the **Data Model** section.
-    
+
     1. Select **FDM_Create_First_IC** as the form data model and tap **Select**.
-    
+
     1. Tap **Next**.
 
 1. Select the **Variables** tab in the left pane and tap **Create**.
@@ -123,16 +123,16 @@ The Customer Details document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**. 
+1. Select **Forms** &gt; **Document Fragments**.
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 
     1. Enter **customer_details_first_ic** as the name in the **Title** field. The title gets auto-populated in the **Name** field.
-    
+
     1. Select **Form Data Model** from the **Data Model** section.
-    
+
     1. Select **FDM_Create_First_IC** as the form data model and tap **Select**.
-    
+
     1. Tap **Next**.
 
 1. Select the **Variables** tab in the left pane and tap **Create**.
@@ -186,16 +186,16 @@ The Bill Summary document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**. 
+1. Select **Forms** &gt; **Document Fragments**.
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 
     1. Enter **bill_summary_first_ic** as the name in the **Title** field. The title gets auto-populated in the **Name** field.
-    
+
     1. Select **Form Data Model** from the **Data Model** section.
-    
+
     1. Select **FDM_Create_First_IC** as the form data model and tap **Select**.
-    
+
     1. Tap **Next**.
 
 1. Select the **Variables** tab in the left pane and tap **Create**.
@@ -253,16 +253,16 @@ The Summary of charges document fragment includes the following fields:
 
 Execute the following steps to create static text and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**. 
+1. Select **Forms** &gt; **Document Fragments**.
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 
     1. Enter **summary_charges_first_ic **as the name in the **Title** field. The title gets auto-populated in the Name field.
-    
+
     1. Select **Form Data Model** from the **Data Model** section.
-    
+
     1. Select **FDM_Create_First_IC** as the form data model and tap **Select**.
-    
+
     1. Tap **Next**.
 
 1. Create static text for the following fields using the right pane:
@@ -296,7 +296,7 @@ Execute the following steps to create static text and use form data model elemen
 1. On the **Create Rule** pop-up window:
 
     1. Select **Data Models and Variables** and then **bills** &gt; **callcharges**.
-    
+
     1. Select **is less than** as the operator.
     1. Select **Number** and enter the value as **60**.
 

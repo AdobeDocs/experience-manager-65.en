@@ -37,15 +37,15 @@ Tapping/clicking agin or initially selecting the component with a slow double-ta
 
 This toolbar provides the following options:
 
-* **Format** 
+* **Format**
   This allows you to set Bold, Italic and Underline.
 
-* **Lists** 
+* **Lists**
   With this you can create bulleted or numbered lists, or set the indentation.
 
 * **Hyperlink**
 * **Unlink**
-* **Fullscreen** 
+* **Fullscreen**
 
 * **Close**
 * **Save**
@@ -56,13 +56,13 @@ For text-based components, selecting the full screen mode from the [toolbar](#co
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-Fullscreen mode will show all options of your rich text editor, which can vary [depending on the configuration](/help/sites-administering//rich-text-editor.md).
+Fullscreen mode will show all options of your rich text editor, which can vary [depending on the configuration](/help/sites-administering/rich-text-editor.md).
 
 ![](assets/screen_shot_2018-03-21at163248.png)
 
 Additional rich text editor options include:
 
-* **Anchor** 
+* **Anchor**
   Create an anchor in the text that you can later link to/reference.
 
 * **Align Text Left**

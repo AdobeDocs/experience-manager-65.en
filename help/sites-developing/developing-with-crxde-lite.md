@@ -24,7 +24,7 @@ CRXDE Lite is recommended when you do not have direct access to the AEM server, 
 
 >[!NOTE]
 >
->By default, all AEM users can access CRXDE Lite. If desired, [configure ACLs](/help/sites-administering//security.md#permissions-and-acls) for the following node so that only developers can access CRX DE Lite:
+>By default, all AEM users can access CRXDE Lite. If desired, [configure ACLs](/help/sites-administering/security.md#permissions-and-acls) for the following node so that only developers can access CRX DE Lite:
 >
 >`/libs/granite/crxde`
 
@@ -516,5 +516,5 @@ You can:
 
 >[!NOTE]
 >
->See [Users, Groups and Access Rights Administration](/help/sites-administering//user-group-ac-admin.md) for more information.
+>See [Users, Groups and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
 

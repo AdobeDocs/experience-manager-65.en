@@ -15,7 +15,7 @@ docset: aem65
 
  ![](assets/04-create-form-data-model-main.png)
 
-| This tutorial is a step in the [Create your first Interactive Communication](/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
+| This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
 |---|
 
 ## About the tutorial {#about-the-tutorial}
@@ -117,11 +117,11 @@ Do the following to create form data model:
 
 Configuring form data model includes:
 
-* [adding data model objects and services](../../forms/using/create-form-data-model0.md#add-data-model-objects-and-services)
-* [creating computed child properties for data model object](/content.md#main-pars_header_72155927)
-* [adding associations between data model objects](/content.md#main-pars_header_1093081045)
-* [editing data model object properties](/content.md#main-pars_header_1673827991)
-* [configuring services for data model objects](/content.md#main-pars_header_599411965)
+* [adding data model objects and services](#add-data-model-objects-and-services)
+* [creating computed child properties for data model object](#create-computed-child-properties-for-data-model-object)
+* [adding associations between data model objects](#add-associations-between-data-model-objects)
+* [editing data model object properties](#edit-data-model-object-properties)
+* [configuring services for data model objects](#configure-services)
 
 ### Add data model objects and services {#add-data-model-objects-and-services}
 
@@ -160,7 +160,7 @@ A computed property is the one whose value is computed based on a rule or an exp
 Based on the use case, create the **usagecharges** child computed property in the **bills** data model object using the following mathematical expression:
 
 * usage charges = call charges + conference call charges + SMS charges + mobile internet charges + roaming national + roaming international + VAS (all these properties exist in the bills data model object)
-  For more information on the **usagecharges** child computed property, see [Plan the Interactive Communication](/forms/using/planning-interactive-communications.md).
+  For more information on the **usagecharges** child computed property, see [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md).
 
 Execute the following steps to create computed child properties for bills data model object:
 

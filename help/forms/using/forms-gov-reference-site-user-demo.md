@@ -38,15 +38,15 @@ The We.Gov demo package comes with the following built-in fictitious users:
 
 * **Aya Tan**: Citizen eligible for a Service from a Government agency
 
-![Fictitious user](/help/forms/assets/aya_tan_new.png)
+![Fictitious user](/help/forms/using/assets/aya_tan_new.png)
 
 * **George Lang**: We.Gov agency Business Analyst
 
-![Fictitious user](/help/forms/assets/george_lang.png)
+![Fictitious user](/help/forms/using/assets/george_lang.png)
 
 * **Camila Santos**: We.Gov Agency CX Lead
 
-![Fictitious user](/help/forms/assets/camila_santos.png)
+![Fictitious user](/help/forms/using/assets/camila_santos.png)
 
 The following groups are also included:
 
@@ -101,7 +101,7 @@ The following groups are also included:
 
 ### Aya User Story (We.Gov website)  {#aya-user-story-we-gov-website}
 
-![Fictitious user](/help/forms/assets/aya_tan_new-1.png)
+![Fictitious user](/help/forms/using/assets/aya_tan_new-1.png)
 
 **This section**: Aya is a citizen. She hears from a friend that she may be eligible to receive a Service from a government agency. Aya navigates to the We.Gov website from her mobile phone to learn more about services she is eligible for.
 
@@ -118,7 +118,7 @@ Aya answers a few questions to confirm her eligibility by filling out a short ad
 1. Click the “**Am I Eligible?**” button.
 1. Click the “**Apply Now**” button to proceed.
 
-   ![Apply Now link](/help/forms/assets/apply_now_link.png)
+   ![Apply Now link](/help/forms/using/assets/apply_now_link.png)
 
 ### Aya User Story (We.Gov adaptive form) {#aya-user-story-we-gov-adaptive-form}
 
@@ -165,7 +165,7 @@ Aya needs to review some documents at home before she can complete the service r
 1. Click the right arrow in the gray menu bar.
 1. Click the Save button at the bottom.
 
-   ![Adaptive Form details](/help/forms/assets/adaptive_form.png)
+   ![Adaptive Form details](/help/forms/using/assets/adaptive_form.png)
 
 ## Desktop demo {#desktop-demo}
 
@@ -179,7 +179,7 @@ Aya needs to review some documents at home before she can complete the service r
 1. From the navigation bar, select click on “**Online Services**”.
 1. From the “Draft Forms” panel, select the existing “Enrollment Application For Health Benefits".
 
-   ![Enrollment Application for Health Benefits](/help/forms/assets/enrollment_application.png)
+   ![Enrollment Application for Health Benefits](/help/forms/using/assets/enrollment_application.png)
 
    The look and feel are the same, and she does not need to re-enter any data.
 
@@ -187,11 +187,11 @@ Aya needs to review some documents at home before she can complete the service r
 
 1. Click right Circle CTA to move to the next section.
 
-   ![RIght circle CTA](/help/forms/assets/right_circle_cta_new.png)
+   ![RIght circle CTA](/help/forms/using/assets/right_circle_cta_new.png)
 
    The form is populated up to the point of Aya’s last entry. Aya has entered all her information and is ready to submit.
 
-   ![Submit the adaptive form](/help/forms/assets/submit_adaptive_form.png)
+   ![Submit the adaptive form](/help/forms/using/assets/submit_adaptive_form.png)
 
    After submitting Aya receives an email that she opens and is ready to sign electronically with Adobe Sign.
 
@@ -201,7 +201,7 @@ Aya needs to review some documents at home before she can complete the service r
 1. Navigate to your Email Client and find the Adobe Sign email.
 1. Click on the link to Adobe Sign.
 
-   ![Adobe sign link](/help/forms/assets/adobe_sign_link.png)
+   ![Adobe sign link](/help/forms/using/assets/adobe_sign_link.png)
 
 **User Instructions:**
 
@@ -210,11 +210,11 @@ Aya needs to review some documents at home before she can complete the service r
 1. Scroll to the bottom of the reviewed document.
 1. Click on the highlighted yellow tab to sign the document.
 
-   ![Sign the document](/help/forms/assets/sign_document_new.png) ![Sign the test document](/help/forms/assets/sign_test_document.png)
+   ![Sign the document](/help/forms/using/assets/sign_document_new.png) ![Sign the test document](/help/forms/using/assets/sign_test_document.png)
 
 ## Government agent (George) {#government-agent-george}
 
-![Government Agent George](/help/forms/assets/george_lang-1.png)
+![Government Agent George](/help/forms/using/assets/george_lang-1.png)
 
 **This section:** George is a business analyst at the government agency Aya is a requesting a service from. George has a single dashboard where he can see all service request applications that have been assigned to him for review.
 
@@ -240,7 +240,7 @@ Aya needs to review some documents at home before she can complete the service r
 1. Click “**View All**” to navigate to the Inbox.
 1. From the Inbox, open the latest “**Health Benefits Application Review**” task.
 
-   ![Health Benefits Application Review](/help/forms/assets/health_benefits.png)
+   ![Health Benefits Application Review](/help/forms/using/assets/health_benefits.png)
 
 ### George User Story (AEM inbox and MS Dynamics) {#george-user-story-aem-inbox-and-ms-dynamics}
 
@@ -256,7 +256,7 @@ Thanks to data integrations and automated workflows, Aya’s application appears
 
 1. Close and return to AEM Inbox.
 
-   ![MS Dynamics record](/help/forms/assets/ms_dynamics.png)
+   ![MS Dynamics record](/help/forms/using/assets/ms_dynamics.png)
 
 ### George User Story (back to AEM inbox) {#george-user-story-back-to-aem-inbox}
 
@@ -269,11 +269,11 @@ George approves Aya’s application, and thanks to an existing automated workflo
 1. Click Done.
 1. (Citizen role) Open up your email client to view the email sent to Aya.
 
-   ![View the email sent to Aya](/help/forms/assets/email_client.png)
+   ![View the email sent to Aya](/help/forms/using/assets/email_client.png)
 
 ## CX Lead (Camila) {#cx-lead-camila}
 
-![Camila (CX lead)](/help/forms/assets/camila_santos-1.png)
+![Camila (CX lead)](/help/forms/using/assets/camila_santos-1.png)
 
 **This section:** Camila the CX Lead sets up a welcome phone call with Aya to explain how to make use of the government services she has been approved for.
 
@@ -299,7 +299,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 1. Click “**View All**” to navigate to the Inbox.
 1. From the Inbox, open the latest “**New Contact Approval**” task.
 
-   ![New Contact Approval](/help/forms/assets/new_contact_approval.png)
+   ![New Contact Approval](/help/forms/using/assets/new_contact_approval.png)
 
    **User Instructions:**
 
@@ -317,7 +317,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 1. In the modal, you can leave a message.
 1. Click Done.
 
-   ![Activities tab](/help/forms/assets/activities_tab.png) ![Confirm New Contact](/help/forms/assets/confirm_new_contact.png)
+   ![Activities tab](/help/forms/using/assets/activities_tab.png) ![Confirm New Contact](/help/forms/using/assets/confirm_new_contact.png)
 
 ## Welcome Kit citizen (Aya) {#welcome-kit-citizen-aya}
 
@@ -342,7 +342,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&mode=preview&wcmmode=disabled*
 
-   ![Welcome Benefits Handbook](/help/forms/assets/welcome_benefits_handbook.png) ![Interactive Communication Link](/help/forms/assets/interactive_communication.png)
+   ![Welcome Benefits Handbook](/help/forms/using/assets/welcome_benefits_handbook.png) ![Interactive Communication Link](/help/forms/using/assets/interactive_communication.png)
 
 ## Renewal Reminder citizen (Aya) {#renewal-reminder-citizen-aya}
 
@@ -358,7 +358,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
     1. This section is intentionally left empty to support data pre-fill in phase 2.
 
-   ![Renewal Reminder Email](/help/forms/assets/renewal_reminder_email.png)
+   ![Renewal Reminder Email](/help/forms/using/assets/renewal_reminder_email.png)
 
 ## Analytics CX Lead (Camila) {#analytics-cx-lead-camila}
 
@@ -370,24 +370,24 @@ George approves Aya’s application, and thanks to an existing automated workflo
 1. Select the “**AEM Forms We.Gov Site**” to view the site pages.
 1. Select one of the site page (e.g. Home), and choose “**Analytics & Recommendations**”.
 
-   ![Analytics and Recommendation](/help/forms/assets/analytics_recommendation.jpg)
+   ![Analytics and Recommendation](/help/forms/using/assets/analytics_recommendation.jpg)
 
 1. On this page, you will see fetched information from Adobe Analytics which pertains to the AEM Sites page (NOTE: by design this information is periodically refreshed from Adobe Analytics and is not displayed in real-time).
 
-   ![Adobe Analytics key metrics](/help/forms/assets/analytics_key_metrics.jpg)
+   ![Adobe Analytics key metrics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
 1. Back on the page view page (accessed in step 3.), you can also view the page view information by changing the display setting to view items in the “**List View**”.
 1. Locate the “**View**” dropdown menu and select “**List View**”.
 
-   ![List view in View drop-down menu](/help/forms/assets/list_view_view_dropdown.jpg)
+   ![List view in View drop-down menu](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
 1. From the same menu, select “**View Setting**” and select the columns you wish to display from the “**Analytics**” section.
 
-   ![Configure the display of columns](/help/forms/assets/view_setting_analytics.jpg)
+   ![Configure the display of columns](/help/forms/using/assets/view_setting_analytics.jpg)
 
 1. Click “**Update**” to make the new columns available.
 
-   ![Make new columns available](/help/forms/assets/new_columns_available.jpg)
+   ![Make new columns available](/help/forms/using/assets/new_columns_available.jpg)
 
 ### Camila reviews Forms reporting (We.Gov Adobe Analytics) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
@@ -397,9 +397,9 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 1. Select the “**Enrollment Application For Health Benefits**” adaptive form and select the “**Analytics Report**” option.
 
-   ![Enrollment Application for Health Benefits](/help/forms/assets/analytics_report_benefits.jpg)
+   ![Enrollment Application for Health Benefits](/help/forms/using/assets/analytics_report_benefits.jpg)
 
 1. Wait for the page to load, and view the Analytics report data.
 
-   ![Analytics Report Data](/help/forms/assets/analytics_report_data_updated.jpg)
+   ![Analytics Report Data](/help/forms/using/assets/analytics_report_data_updated.jpg)
 

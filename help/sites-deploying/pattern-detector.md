@@ -26,7 +26,7 @@ This could serve as an assessment of the development effort that is involved in 
 
 ## How to Set Up {#how-to-set-up}
 
-The Pattern Detector is released separately as a [one package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) working on any source AEM versions from 6.1 to 6.5 targeting AEM 6.5 upgrade. It can be installed using the [Package Manager](/help/sites-administering//package-manager.md).
+The Pattern Detector is released separately as a [one package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) working on any source AEM versions from 6.1 to 6.5 targeting AEM 6.5 upgrade. It can be installed using the [Package Manager](/help/sites-administering/package-manager.md).
 
 ## How to Use {#how-to-use}
 
@@ -35,8 +35,8 @@ The Pattern Detector is released separately as a [one package](https://www.adobe
 >Pattern Detector can run on any environment, including local development instances. However, in order to:
 >
 >* increase the detection rate
->* avoid any slowdowns on business critical instances  
-  
+>* avoid any slowdowns on business critical instances
+
 >
 >both at the same time it is recommended to run it **on staging environments** that are as close as possible to production ones in the areas of user applications, content and configurations.
 
@@ -49,7 +49,7 @@ You can use several methods to check the Pattern Detector output:
 
    ![](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Via a reactive text based or regular JSON interface** 
+* **Via a reactive text based or regular JSON interface**
 
 * **Via a reactive JSON lines interface, **that generates a separate JSON document in each line.
 
@@ -61,7 +61,7 @@ The reactive interface allows for the processing of the violation report as soon
 
 The output is currently available under 2 URLs:
 
-1. Plain text interface  
+1. Plain text interface
 1. JSON interface
 
 ## Handling the Plain Text Interface {#handling-the-plain-text-interface}

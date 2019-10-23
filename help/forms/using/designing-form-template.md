@@ -1,8 +1,8 @@
 ---
 title: Designing form templates for HTML5 forms
 seo-title: Designing form templates for HTML5 forms
-description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability. 
-seo-description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability. 
+description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability.
+seo-description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability.
 uuid: 4f6b7231-4479-400a-adcd-c68064f06b4e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -22,7 +22,7 @@ For common XFA features, see the following best practices and guidelines to desi
 
 ## Best practices {#best-practices}
 
-Most steps around designing a form template, such as schema bindings or writing form logic are same. However, due to inherent differences between rendering and scripting engine of a thick client like Adobe Reader and browser-based forms, there are some recommendations described in the [best practices](/forms/using/best-practices-design-html5-forms.md) article. These best practices help you design form templates to work as expected in both formats.
+Most steps around designing a form template, such as schema bindings or writing form logic are same. However, due to inherent differences between rendering and scripting engine of a thick client like Adobe Reader and browser-based forms, there are some recommendations described in the [best practices](/help/forms/using/best-practices-design-html5-forms.md) article. These best practices help you design form templates to work as expected in both formats.
 
 ### Capabilities in AEM Forms Designer for HTML5 Forms {#capabilities-in-aem-forms-designer-for-html-forms}
 

@@ -26,7 +26,7 @@ An example of a customized workspace
 AEM Forms workspace supports a wide variety of customizations to update the layout of the user interface, its appearance, functionality, and much more. The customizations involve updating one or more of the following:
 
 * Appearances of the user interface
-* Functionality using semantic customizations  
+* Functionality using semantic customizations
 * Reusing HTML components in other applications
 
 ### User interface changes {#user-interface-changes}
@@ -41,77 +41,77 @@ Before customizing workspace, make yourself familiar with the default style shee
 
 To customize the workspace, it is recommended that you make yourself familiar with the existing style sheet, style.css, located in /libs/ws/css folder. A few prominent components are described below.
 
-<table cellpadding="4" cellspacing="0"> 
- <tbody> 
-  <tr> 
-   <th class="cellrowborder" valign="top" width="NaN%"><p>CSS element</p> </th> 
-   <th class="cellrowborder" valign="top" width="NaN%"><p>User interface component modified</p> </th> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#header</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Header of the AEM Forms workspace</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categoryList</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Category list</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categoryList .header</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Header of category list</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categories, .filters</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Space below category list</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.category, .filter</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Category</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Selected category and mouse over style of category</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>categoryListBar .tool, categoryListBar .content</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Start process page (closed Category list)</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>filterListBar .tool, filterListBar .content</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>To Do page (closed Filter list)</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>processNameListBar .tool, processNameListBar .content</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Tracking page (closed Process name list)</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startPointList, .tasklist</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The startpoint list or the task list</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startPointList .header, .tasklist .header</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The header of a startpoint list or a task list</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startpoint.selected, .task.selected</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The selected startpoint or task</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startpoint.selected .description, .task.selected .description</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Description of the selected startpoint or task</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#taskarea</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The Task area</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#header .dropdown</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>User dropdown in header</p> </td> 
-  </tr> 
-  <tr> 
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.sortDrop dd ul</p> </td> 
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Sort task dropdown</p> </td> 
-  </tr> 
- </tbody> 
+<table cellpadding="4" cellspacing="0">
+ <tbody>
+  <tr>
+   <th class="cellrowborder" valign="top" width="NaN%"><p>CSS element</p> </th>
+   <th class="cellrowborder" valign="top" width="NaN%"><p>User interface component modified</p> </th>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#header</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Header of the AEM Forms workspace</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categoryList</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Category list</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categoryList .header</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Header of category list</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categories, .filters</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Space below category list</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.category, .filter</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Category</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Selected category and mouse over style of category</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>categoryListBar .tool, categoryListBar .content</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Start process page (closed Category list)</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>filterListBar .tool, filterListBar .content</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>To Do page (closed Filter list)</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>processNameListBar .tool, processNameListBar .content</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Tracking page (closed Process name list)</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startPointList, .tasklist</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The startpoint list or the task list</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startPointList .header, .tasklist .header</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The header of a startpoint list or a task list</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startpoint.selected, .task.selected</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The selected startpoint or task</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startpoint.selected .description, .task.selected .description</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Description of the selected startpoint or task</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#taskarea</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The Task area</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#header .dropdown</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>User dropdown in header</p> </td>
+  </tr>
+  <tr>
+   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.sortDrop dd ul</p> </td>
+   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Sort task dropdown</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### CSS {#css}
@@ -120,7 +120,7 @@ The appearance of AEM Forms workspace borrows its appearance from a CSS. By cust
 
 The top-level steps for CSS customization are:
 
-* Create a CSS file.  
+* Create a CSS file.
 * Add style items to this CSS. See Understanding CSS Styles for more information.
 * Update its references in `html.jsp`.
 
@@ -162,13 +162,13 @@ The top-level steps to do semantic changes to modify the functionality of AEM Fo
 * Make relevant updates like updating paths of newly added models and views in the default JavaScript files.
 * Minify the package to optimize the performance.
 
-For more conceptual information about the components that are part of the source code, see the [Description of reusable components](/forms/using/description-reusable-components.md). For these customizations, use the Dev Package.
+For more conceptual information about the components that are part of the source code, see the [Description of reusable components](/help/forms/using/description-reusable-components.md). For these customizations, use the Dev Package.
 
 ### Reusable components {#reusable-components}
 
 As AEM Forms workspace is a component-based software, it can be easily customized and reused. You can easily integrate the workspace components with your web applications.
 
-For more conceptual information, see the [Description of reusable components](/forms/using/description-reusable-components.md) and for instruction about using the components, see [Integrating AEM Forms workspace components in web applications](/forms/using/description-reusable-components.md).
+For more conceptual information, see the [Description of reusable components](/help/forms/using/description-reusable-components.md) and for instruction about using the components, see [Integrating AEM Forms workspace components in web applications](/help/forms/using/description-reusable-components.md).
 
 ## Building AEM Forms workspace&nbsp;code {#building-html-workspace-code}
 
@@ -372,7 +372,7 @@ mvn clean -P Dev install on client-pkg
     * html.jsp - Contains code to find out current browser locale.
 
 * Index - Contains .content.xml
-* profile - Contains offline.jsp.  
+* profile - Contains offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml

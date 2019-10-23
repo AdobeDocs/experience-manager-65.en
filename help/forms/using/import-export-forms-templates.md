@@ -154,7 +154,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 >[!NOTE]
 >
->While importing old Correspondence Management assets for migration, log in using an Admin account. For more information on Migrating old Correspondence Management assets, see [Migrate Correspondence Management assets to AEM 6.1 forms](/forms/using/cm-migration-utility.md).
+>While importing old Correspondence Management assets for migration, log in using an Admin account. For more information on Migrating old Correspondence Management assets, see [Migrate Correspondence Management assets to AEM 6.1 forms](/help/forms/using/cm-migration-utility.md).
 
 1. On the data dictionary, letters, or document fragments page, tap **Create &gt; File Upload** and select the .cmp file.
 1. Correspondence Management displays the Import Assets dialog with the list of assets that are imported. Tap **Import**.

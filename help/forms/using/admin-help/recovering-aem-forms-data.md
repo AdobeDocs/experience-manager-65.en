@@ -102,7 +102,7 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
       For restoration in a clustered environment, see [Strategy for backup and restore in a clustered environment](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Delete any AEM forms temporary files that were created in the java.io.temp directory or in the Adobe temp directory.
-1. Start AEM forms (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Start AEM forms (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Changing the GDS location during recovery {#changing-the-gds-location-during-recovery}
 
