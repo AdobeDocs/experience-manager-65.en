@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Workflow Step Reference{#workflow-step-reference}
+# Workflow Step Reference {#workflow-step-reference}
 
 Workflow models consist of a series of steps of various types. According to the type, these steps can be configured and extended with parameters and scripts to provide the functionality and control you require.
 
@@ -23,7 +23,7 @@ Workflow models consist of a series of steps of various types. According to the 
 >
 >For module specific steps see also:
 >
->* [AEM Forms Workflow Step Reference](../../../forms/using/aem-forms-workflow-step-reference.md)
+>* [AEM Forms Workflow Step Reference](/help/forms/using/aem-forms-workflow-step-reference.md)
 >* [Processing Assets Using Media Handlers and Workflows](/help/assets/media-handlers.md)
 >
 
@@ -74,7 +74,7 @@ The following properties are available for many workflow step components, on the
 
 ## AND Split {#and-split}
 
-The **AND Split **creates a split in the workflow, after which both branches will be active. You add workflow steps to each branch as required. This step enables you to introduce multiple processing paths into the workflow. For example, you can allow certain review steps to occur in parallel, so saving time.
+The **AND Split** creates a split in the workflow, after which both branches will be active. You add workflow steps to each branch as required. This step enables you to introduce multiple processing paths into the workflow. For example, you can allow certain review steps to occur in parallel, so saving time.
 
 ![](assets/wf-26.png)
 
@@ -128,7 +128,7 @@ To configure the step, edit and use the following tabs:
     * **Target step**: Select the step to execute after evaluating the condition for the routing expression.
     * **Routing Expression**: Select Rule Definition, External Script, or an ECMA script that determines whether to execute the **Target Step**.
 
-        * **Rule Definition: **Use the [expression editor](../../../forms/using/variable-in-aem-workflows.md#use-expression-editor) to define the rule**.**
+        * **Rule Definition: **Use the [expression editor](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) to define the rule**.**
 
         * **External Script: **The path of the external script.
         * **ECMA Script**: The script that determines whether to execute the **Goto Step**.
@@ -168,7 +168,7 @@ function check(){
 
 ### Simulating a for loop using Rule Definition {#simulateforloop}
 
-You can also simulate a for loop using Rule Definition as the routing expression. [Create a **count** variable](../../../forms/using/variable-in-aem-workflows.md#create-a-variable) of Long data type. Use **Expression** as the mapping mode in the ** [Set Variable](../../../forms/using/variable-in-aem-workflows.md#set-a-variable)** step to set the value of the **count** variable to **count + 1** on each execution of the **Set Variable** step.
+You can also simulate a for loop using Rule Definition as the routing expression. [Create a **count** variable](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) of Long data type. Use **Expression** as the mapping mode in the ** [Set Variable](/help/using/variable-in-aem-workflows.md#set-a-variable)** step to set the value of the **count** variable to **count + 1** on each execution of the **Set Variable** step.
 
 ![Simulating a for loop](assets/variable_use_case_count_new.png)
 
@@ -200,20 +200,14 @@ To configure the split:
 
     * **Branches (*x)***
 
-        * **Add Branch: **Add more branches to the step.
+        * **Add Branch:** Add more branches to the step.
         * **Select Routing Expression**: Select the routing expression to evaluate the active branch. Possible values include: Rule Definition, External Script, and ECMA script.
         * **Click to Add Expression**: Add expression to evaluate the active branch if you select **Rule Definition** as the routing expression.** **
-
         * **Script Path**: The path to a file that contains the script to evaluate the active branch if you select **External Script** as the routing expression.** **
-
         * **Script**: Add the script in the box to evaluate the active branch if you select **ECMA Script** as the routing expression.
-
         * **Default Route**: The default branch is followed in case of multiple branches. You can specify only one branch as the default.
 
   >[!NOTE]
-  >
-  >
-  >
   >
   >    * One branch is evaluated at a time based on the routing expression.
   >    * The branches are evaluated top to bottom.
@@ -602,8 +596,8 @@ To configure the step, edit and use the following tabs:
 * [Common](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
 * **Mapping**
 
-    * **Select Variable: **Use this option to select a variable to set its value.
-    * **Select Mapping Mode: **Select a mapping mode to set the value for the variable.** **Depending on the data type of the variable, you can use the following options to set value of a variable:
+    * **Select Variable:** Use this option to select a variable to set its value.
+    * **Select Mapping Mode:** Select a mapping mode to set the value for the variable. Depending on the data type of the variable, you can use the following options to set value of a variable:
 
         * **Literal:** Use the option when you know the exact value to specify.
         * **Expression:** Use the option when the value to use is calculated based on an expression. The expression is created in provided expression editor.
@@ -612,6 +606,6 @@ To configure the step, edit and use the following tabs:
         * **Relative to payload:** Use the option when the value to be saved to variable is available at a path relative to payload.
         * **Absolute path:** Use the option when the value to be saved to variable is available at an absolute path.
 
-    * **Specify Value: **Specify a value to map to the variable. The value that you specify in this field depends on the mapping mode.
+    * **Specify Value:** Specify a value to map to the variable. The value that you specify in this field depends on the mapping mode.
     * **Add Mapping:** Use this option to add more mappings to set a value for the variable.
 

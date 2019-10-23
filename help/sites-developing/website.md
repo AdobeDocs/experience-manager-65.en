@@ -45,7 +45,7 @@ After performing all the steps, your pages will look as follows:
 
 **Download the final result**
 
-To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](/help/sites-administering//package-manager.md) to install the package to your author instance.
+To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](/help/sites-administering/package-manager.md) to install the package to your author instance.
 
 **NOTE: **Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
 

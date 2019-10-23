@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Administering Assets{#administering-assets}
+# Administering Assets {#administering-assets}
 
 Assets is a digital asset management tool that is fully integrated with the AEM platform and enables your enterprise to share and distribute digital assets. Users across an organization can manage, store, and access images, videos, documents, audio clips, and rich media such as Flash files for use on the web, in print, and for digital distribution.
 
@@ -23,12 +23,10 @@ The following activities are those that you typically perform as a digital asset
 * [Assets Supported Formats](/help/assets/assets-formats.md)
 * [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md)
 * [Managing Metadata for Digital Assets](/help/assets/metadata.md)
-* [Search Facets](/help/assets/custom-search-facets.md)
 * [Camera Raw Support](/help/assets/camera-raw.md)
 * [Metadata Schemas](/help/assets/metadata-schemas.md)
 * [Profiles for Processing Metadata, Images, and Videos](/help/assets/processing-profiles.md)
 * [XMP writeback to renditions](/help/assets/xmp-writeback.md)
-* [Installing and Configuring Video Transcoder with FFmpeg](/help/assets/video-transcoder.md)
 * [Watermarking](/help/assets/watermarking.md)
 * [Asset link sharing](/help/assets/link-sharing.md)
 * [Best Practices for Assets](/help/assets/best-practices-for-assets.md)
@@ -38,12 +36,11 @@ The following activities are those that you typically perform as a digital asset
 * [Multi-tenancy for Collections, Snippets, and Snippet TemplatesAsset Templates](/help/assets/multi-tenancy.md)
 * [Support for IPTC Metadata](/help/assets/iptc-support.md)
 * [Imaging Transcoding Library](/help/assets/imaging-transcoding-library.md)
-* [Serial Uploads](/help/assets/serial-uploads.md)
 * [Digital Rights Management in Assets](/help/assets/drm.md)
 
 For supported file formats, see [Assets Supported Formats](/help/assets/assets-formats.md).
 
-For information about extending CQ DAM, see [Customizing and Extending CQ DAM](/help/assets/extending-assets.md). To learn how authors add assets to web pages, see [Working with Assets](/help/assets/author-assets.md).
+For information about extending CQ DAM, see [Customizing and Extending CQ DAM](/help/assets/extending-assets.md).
 
 ## What is Digital Asset Management? {#what-is-digital-asset-management}
 
@@ -81,7 +78,7 @@ When determining whether to put an image into AEM Assets or use CQ's image compo
 
 ## What are Digital Assets? {#what-are-digital-assets}
 
-An asset is a digital document, image, video, or audio (or part thereof) that can have multiple renditions and can have sub-assets (for example, layers in a photoshop file, slides in a powerpoint file, pages in a pdf, files in a ZIP).
+An asset is a digital document, image, video, or audio (or part thereof) that can have multiple renditions and can have sub-assets (for example, layers in a photoshop file, slides in a Powerpoint file, pages in a pdf, files in a ZIP).
 
 An asset is essentially a binary plus metadata plus renditions plus sub-assets. See the [DAM Performance Guide](/help/sites-deploying/assets-performance-sizing.md) for detailed information.
 

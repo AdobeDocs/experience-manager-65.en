@@ -18,11 +18,11 @@ docset: aem65
 
 AEM Forms Process Reporting ships with the following *out-of-the-box* reports:
 
-* ** [Long Running Processes](../../../forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: A report of all AEM Forms processes that took more than a specified time to complete  
+* ** [Long Running Processes](/help/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: A report of all AEM Forms processes that took more than a specified time to complete
 
-* ** [Process Duration Chart](../../../forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: A report of a specified AEM Forms process by duration  
+* ** [Process Duration Chart](/help/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: A report of a specified AEM Forms process by duration
 
-* ** [Workflow Volume](../../../forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: A report of the running and completed instances of specified process by date
+* ** [Workflow Volume](/help/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: A report of the running and completed instances of specified process by date
 
 ## Long Running Processes {#long-running-processes}
 
@@ -42,9 +42,9 @@ The Long Running Processes report displays the AEM Forms processes that have tak
    Parameters:
 
     * **Duration **(*mandatory*): Specify a duration and unit of time. Display all AEM Forms processes that have run for more than the specified duration.
-    
+
     * **Started After** (*optional*): Select a date. Filter the report to display process instances that started after the specified date.
-    
+
     * **Started Before** (*optional*): Select a date. Filter the report to display process instances that started before the specified date.
 
 1. Click **Go **to execute the report.
@@ -108,9 +108,9 @@ The Workflow Volume report displays the number of currently running and complete
    Parameters:
 
     * **Select Process **(*mandatory*): Select an AEM Forms process.
-    
+
     * **Started After** (*optional*): Select a date. Filters the report to display process instances that started after the specified date.
-    
+
     * **Started Before** (*optional*): Select a date. Filters the report to display process instances that started before the specified date.
 
 1. Click **Go **to execute the report.

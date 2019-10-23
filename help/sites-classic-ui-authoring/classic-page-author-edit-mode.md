@@ -278,7 +278,7 @@ The external application is integrated into the paragraph system of the AEM page
 
 >[!NOTE]
 >
->Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](/help/sites-administering//aem-as-portal.md).
+>Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 

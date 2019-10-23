@@ -422,11 +422,11 @@ public class AxisFilter implements VariantFilter {
 * Storage
 
     * In the hybris case, the hybris server owns the cart.
-    * In the AEM-generic case carts of are stored in the [ClientContext](/help/sites-administering//client-context.md).
+    * In the AEM-generic case carts of are stored in the [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalization**
 
-* Personalization should always be driven through the [ClientContext](/help/sites-administering//client-context.md).
+* Personalization should always be driven through the [ClientContext](/help/sites-administering/client-context.md).
 * A ClientContext `/version/` of the cart is created in all cases:
 
     * Products should be added by using the `CommerceSession.addCartEntry()` method.

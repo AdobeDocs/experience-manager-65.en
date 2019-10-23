@@ -21,7 +21,7 @@ Content is added using [components](/help/sites-authoring/default-components-con
 
 >[!NOTE]
 >
->Your account needs the [appropriate access rights](/help/sites-administering//security.md) and [permissions](/help/sites-administering//security.md#permissions) to edit pages.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to edit pages.
 >
 >If you encounter any problems we suggest you contact your system administrator.
 
@@ -527,7 +527,7 @@ Once locked the console view information is updated and when editing a lock symb
 
 >[!CAUTION]
 >
->Locking a page can be performed when [impersonating a user](/help/sites-administering//security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
+>Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 >
 >Pages can not be unlocked by impersonating the user who locked the page.
 
@@ -541,7 +541,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 
 >[!CAUTION]
 >
->Locking a page can be performed when [impersonating a user](/help/sites-administering//security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
+>Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 >
 >Pages can not be unlocked by impersonating the user who locked the page.
 

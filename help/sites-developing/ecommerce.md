@@ -33,7 +33,7 @@ For more information, see:
 >
 >To use the integration framework with external eCommerce providers, you first need to install the required packages. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
 >
->For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering//ecommerce.md).
+>For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering/ecommerce.md).
 
 ## API Documentation {#api-documentation}
 

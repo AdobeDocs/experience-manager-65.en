@@ -96,7 +96,7 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/sites-administering//ecommerce.md">Commerce</a> sites.</td>
+   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/sites-administering/ecommerce.md">Commerce</a> sites.</td>
   </tr>
   <tr>
    <td>Experience Fragments</td>
@@ -127,7 +127,7 @@ From Navigation the consoles available are:
 
 ### Tools Panel {#tools-panel}
 
-In the Tools panel, each option in the side panel contains a range of sub-menus. The [Tools consoles](/help/sites-administering//tools-consoles.md) available here provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.
+In the Tools panel, each option in the side panel contains a range of sub-menus. The [Tools consoles](/help/sites-administering/tools-consoles.md) available here provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.
 
 ![](assets/bh-04.png)
 

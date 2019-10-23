@@ -17,8 +17,8 @@ docset: aem65
 
 The Activities console enables you to create, organize, and manage the marketing [activities](/help/sites-authoring/personalization.md#activities) of your brands:
 
-* Add brands. 
-* For each brand, add and configure activities. 
+* Add brands.
+* For each brand, add and configure activities.
 * Administer activities.
 
 >[!NOTE]
@@ -39,7 +39,7 @@ Activities are displayed with a label describing what kind of activity is define
 
 >[!NOTE]
 >
->What types of activities are available is determined by the following:  
+>What types of activities are available is determined by the following:
 
 >
 >* If the **xt_only** option is enabled on the Adobe Target tenant (clientcode) used on the AEM side to connect to Adobe Target, then you can create **only** XT activities in AEM.
@@ -52,7 +52,7 @@ Activities are displayed with a label describing what kind of activity is define
 >
 >You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
 >
->See [Prerequisites for Integrating with Adobe Target](/help/sites-administering//target-requirements.md#securingtheactivitysettings) for detailed information.
+>See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
 
 ## Creating a Brand Using the Activities Console {#creating-a-brand-using-the-activities-console}
 
@@ -106,15 +106,15 @@ To add an activity:
 1. If you are using AEM targeting or Adobe Target experience targeting:
 
     1. Click or tap **Select Audience **and select the segment that your experience targets.
-    1. Click or tap **Add Experience**, type a name, and click or tap **OK**. 
-    
+    1. Click or tap **Add Experience**, type a name, and click or tap **OK**.
+
     1. Click or tap **Next**.
 
    If you are using Adobe Target A/B Testing:
 
     1. Click or tap the pencil in the audiences box to select an audience.
     1. Click or tap **Add Experience**, type a name, and click or tap **OK**.
-    
+
     1. Enter the percentage of traffic that displays each experience.
     1. Click or tap **Next**.
 
@@ -167,7 +167,7 @@ You can see the performance of any Adobe Target activity (XT or A/B). If you are
 To view activity performance and convert winning experiences:
 
 1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
-1. Click or tap the brand for which you want to see activities. 
+1. Click or tap the brand for which you want to see activities.
 1. Select the activity and click or tap **View Properties **and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Performance data is displayed.
 
    ![](assets/chlimage_1-115.png)
@@ -176,7 +176,7 @@ To view activity performance and convert winning experiences:
 
    Converting the winner does the following:
 
-    * It disables the current activity 
+    * It disables the current activity
     * Modifies all pages and replaces the targeted content with the actual content of the winning experience. The content of the winning experience becomes part of the normal page **without** targeting.
 
    ![](assets/chlimage_1-116.png)
@@ -226,7 +226,7 @@ To avoid synchonization problems, always use unique names for activities. If an 
 >
 >When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. When you delete the campaign in Adobe Target, `thirdPartyId` is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names can therefore not be re-used in different campaign types.
 >
->If you use the same name in the same campaign type, you will overwrite the existing campaign. 
+>If you use the same name in the same campaign type, you will overwrite the existing campaign.
 >
 >If while synchronizing, you encounter the error "Request Failed. `thirdPartyId` already exists," change the name of the campaign and synchronize again.
 

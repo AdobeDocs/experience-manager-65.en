@@ -204,7 +204,7 @@ To create a new folder, you can either do this:
 
    The `template-authors` group is the default group that needs to be assigned. See the following section [ACLs and Groups](/help/sites-developing/page-templates-editable.md#acls-and-groups) for details.
 
-   See [Access Right Management](/help/sites-administering//user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.
+   See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.
 
 ### Using the Configuration Browser {#using-the-configuration-browser}
 

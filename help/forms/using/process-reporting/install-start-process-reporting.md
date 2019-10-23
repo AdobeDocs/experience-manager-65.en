@@ -60,14 +60,14 @@ Perform the following steps to change the publishing schedule:
 
     * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Save and close the `run.conf.bat` file.  
+1. Save and close the `run.conf.bat` file.
 
 1. Restart the AEM Forms server instance.
 
 1. Stop the AEM Forms server instance.
-1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers **&gt; **Application servers** and then, in the right pane, click the server name.  
+1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers **&gt; **Application servers** and then, in the right pane, click the server name.
 
-1. Under Server Infrastructure, click **Java and Process Management** &gt; **Process Definition**.  
+1. Under Server Infrastructure, click **Java and Process Management** &gt; **Process Definition**.
 
 1. Under Additional Properties, click **Java Virtual Machine**.
 
@@ -77,23 +77,23 @@ Perform the following steps to change the publishing schedule:
 
     * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Click **Apply**, click OK, and then click **Save directly to the master configuration**.  
+1. Click **Apply**, click OK, and then click **Save directly to the master configuration**.
 1. Restart the AEM Forms server instance.
 1. Stop the AEM Forms server instance.
-1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `https://[hostname]:[port]/console`.  
-1. Under Change Center, click **Lock & Edit**.  
-1. Under Domain Structure, click **Environment **&gt; **Servers **and, in the right pane, click the managed server name.  
-1. On the next screen, click the **Configuration **tab &gt; **Server Start** tab.  
+1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `https://[hostname]:[port]/console`.
+1. Under Change Center, click **Lock & Edit**.
+1. Under Domain Structure, click **Environment **&gt; **Servers **and, in the right pane, click the managed server name.
+1. On the next screen, click the **Configuration **tab &gt; **Server Start** tab.
 1. In the Arguments box, add the JVM argument `-Dreporting.publisher.cron = <expression>`.
 
    **Example**: The following cron expression causes Process Reporting to publish AEM Forms data to the Process Reporting repository every 5 hours:
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Click **Save **and then click **Activate Changes**.  
+1. Click **Save **and then click **Activate Changes**.
 1. Restart the AEM Forms server instance.
 
-![](assets/processdatapublisherservice.png) 
+![](assets/processdatapublisherservice.png)
 
 ### ProcessDataStorage service {#processdatastorage-service}
 
@@ -131,7 +131,7 @@ The ReportConfiguration service is used by Process Reporting for configuring the
 #### To configure the ReportingConfiguration service {#to-configure-the-reportingconfiguration-service}
 
 1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `https://[*server*]:[*port*]/lc/system/console/configMgr`
-1. Open the **ReportingConfiguration **service. 
+1. Open the **ReportingConfiguration **service.
 1. **Number of Records**
 
    When running a query on the repository, a result can potentially contain a large number of records. If the resultset is large, the query execution can consume server resources.
@@ -247,15 +247,15 @@ The tree view consists of the following top-level items:
 
 **Reports:** This item contains the out-of-the-box reports that ship with Process Reporting.
 
-For details on the pre-defined reports, see [Pre-defined Reports in Process Reporting](../../../forms/using/process-reporting/pre-defined-reports-in-process-reporting.md).
+For details on the pre-defined reports, see [Pre-defined Reports in Process Reporting](/help/using/process-reporting/pre-defined-reports-in-process-reporting.md).
 
 **Adhoc Queries:** This item contains options to perform filter-based search for processes and tasks.
 
-For details on ad-hoc queries, see [Ad-hoc Queries in Process Reporting](../../../forms/using/process-reporting/adhoc-queries-in-process-reporting.md).
+For details on ad-hoc queries, see [Ad-hoc Queries in Process Reporting](/help/using/process-reporting/adhoc-queries-in-process-reporting.md).
 
 **Custom:** The Custom node displays custom reports that you create.
 
-For the procedure to create and display custom reports, see [Custom Reports in Process Reporting](../../../forms/using/process-reporting/process-reporting-custom-reports.md).
+For the procedure to create and display custom reports, see [Custom Reports in Process Reporting](/help/using/process-reporting/process-reporting-custom-reports.md).
 
 **Process Reporting title bar:** The Process Reporting title bar contains some generic options that you can use when working in the user interface.
 
@@ -267,7 +267,7 @@ Click the title at any time to go back to the Home screen.
 
 The Last Update Time displays the last date and time up to which the data updates were pushed to the Process Reporting repository.
 
-For details on the data publishing service and how to schedule this service, see [Schedule process data publishing](../../../forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in the article Getting Started with Process Reporting.
+For details on the data publishing service and how to schedule this service, see [Schedule process data publishing](/help/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in the article Getting Started with Process Reporting.
 
 **Process Reporting user:** The logged in user name displays to the right of the Last Update time.
 

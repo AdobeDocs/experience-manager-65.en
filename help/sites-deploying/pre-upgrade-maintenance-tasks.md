@@ -155,7 +155,7 @@ The list is editable. You can use the plus **(+)** and minus **(-)** buttons bes
 
 **MBean Methods**
 
-The managed bean functionality can be accessed using the [JMX Console](/help/sites-administering//jmx-console.md).
+The managed bean functionality can be accessed using the [JMX Console](/help/sites-administering/jmx-console.md).
 
 You can access the MBeans by:
 
@@ -302,7 +302,7 @@ If using TarMK, you should execute Offline Revision Cleanup before upgrading. Th
 >
 >This step is only necessary for instances running crx3
 
-After running revision cleanup on CRX3 instances, you should run Datastore Garbage Collection to remove any unreferenced blobs in the data store. For instructions, see the documentation on [Data Store Garbage Collection](/help/sites-administering//data-store-garbage-collection.md).
+After running revision cleanup on CRX3 instances, you should run Datastore Garbage Collection to remove any unreferenced blobs in the data store. For instructions, see the documentation on [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Upgrade the Database Schema If Needed {#upgrade-the-database-schema-if-needed}
 
@@ -341,7 +341,7 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 In order to work around this issue, make sure you do the following:
 
 1. Detach the instance from production traffic
-1. Create a backup of the user(s) causing the problem. You can do this via Package Manager. For more information, see [How to Work with Packages.](/help/sites-administering//package-manager.md)
+1. Create a backup of the user(s) causing the problem. You can do this via Package Manager. For more information, see [How to Work with Packages.](/help/sites-administering/package-manager.md)
 1. Delete the user(s) causing the problem. Below is a list of users that might fall under this category:
 
     1. `dynamic-media-replication`

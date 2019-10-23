@@ -22,7 +22,7 @@ Process Reporting provides a set of out-of-the-box reports that allow you to fil
 
 Additionaly Process Reporting provides an interface to run adhoc queries and to integrate custom report views into the Process Reporting user interface.
 
-For the list of supported browsers, see [AEM Forms Supported Platforms](../../../forms/using/aem-forms-jee-supported-platforms.md).
+For the list of supported browsers, see [AEM Forms Supported Platforms](/help/using/aem-forms-jee-supported-platforms.md).
 
 Process Reporting is built on modules that:
 

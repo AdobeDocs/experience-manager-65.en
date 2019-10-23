@@ -320,7 +320,7 @@ You can do this by following the steps outlined below:
 
 1. Stop the synchronization process on the cold standby instance by going to the JMX Console and using the **org.apache.jackrabbit.oak: Status ("Standby")**bean. For more information on how to do this, see the section on [Monitoring](#monitoring).
 1. Stop the cold standby instance.
-1. Install the hotfix on the primary instance. For more details on how to install a hotfix, see [How to Work With Packages](/help/sites-administering//package-manager.md).
+1. Install the hotfix on the primary instance. For more details on how to install a hotfix, see [How to Work With Packages](/help/sites-administering/package-manager.md).
 1. Test the instance for issues after the installation.
 1. Remove the cold standby instance by deleting its installation folder.
 1. Stop the primary instance and clone it by performing a file system copy of its entire installation folder to the location of the cold standby.
@@ -329,7 +329,7 @@ You can do this by following the steps outlined below:
 
 ## Monitoring {#monitoring}
 
-The feature exposes information using JMX or MBeans. Doing so you can inspect the current state of the standby and the master using the [JMX console](/help/sites-administering//jmx-console.md). The information can be found in an MBean of `type org.apache.jackrabbit.oak:type="Standby"`named `Status`.
+The feature exposes information using JMX or MBeans. Doing so you can inspect the current state of the standby and the master using the [JMX console](/help/sites-administering/jmx-console.md). The information can be found in an MBean of `type org.apache.jackrabbit.oak:type="Standby"`named `Status`.
 
 **Standby**
 
@@ -400,7 +400,7 @@ It is important to run garbage collection on file datastore instances from time 
 1. Run cold standby repository maintenance as described in the section [above](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
 1. After the maintenance process has completed and the instances have been restarted:
 
-    * On the primary, run the data store garbage collection via the relevant JMX bean as described in [this article](/help/sites-administering//data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
+    * On the primary, run the data store garbage collection via the relevant JMX bean as described in [this article](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
     * On the standby, the data store garbage collection is available only via the **BlobGarbageCollection** MBean - `startBlobGC()`. The **RepositoryManagement **MBean is not available on the standby.
 
    >[!NOTE]

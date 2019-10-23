@@ -220,10 +220,10 @@ Shows the page thumbnail image. You can:
 
   In this tab you can:
 
-    * [Add Permissions](/help/sites-administering//user-group-ac-admin.md)
-    * [Edit Closed User Group](/help/sites-administering//cug.md#applying-your-closed-user-group-to-content-pages)
+    * [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
+    * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
 
-    * View the [Effective Permissions](/help/sites-administering//user-group-ac-admin.md)
+    * View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
 
   >[!CAUTION]
   >
@@ -234,7 +234,7 @@ Shows the page thumbnail image. You can:
 
   >[!NOTE]
   >
-  >The Permissions tab does not allow the creation of empty CUG groups, which can be useful as a simple way to deny access to every user. To do this CRX Explorer must be used. See the document [User, Group and Access Rights Administration](/help/sites-administering//user-group-ac-admin.md) for more information.
+  >The Permissions tab does not allow the creation of empty CUG groups, which can be useful as a simple way to deny access to every user. To do this CRX Explorer must be used. See the document [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
 
 ### Blueprint {#blueprint}
 
@@ -311,7 +311,7 @@ From the **Sites** console you can select several pages then use **View Properti
 >
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
->There is also the [Bulk Editor](/help/sites-administering//bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
+>There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
 
 You can select multiple pages for bulk editing by various methods, including:
 

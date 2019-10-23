@@ -214,7 +214,7 @@ You can drag your building block to the paragraph system of any fragment, as wit
 
 Details of your fragment can be seen:
 
-1. Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering//experience-fragments-target.md):
+1. Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):
 
    ![](assets/ef-03.png)
 
@@ -273,7 +273,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
 
-For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering//experience-fragments-target.md) for full information.
+For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.
 
 ## Configuring Allowed Templates {#configuring-allowed-templates}
 

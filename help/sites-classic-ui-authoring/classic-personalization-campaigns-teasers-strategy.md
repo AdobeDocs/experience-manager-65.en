@@ -38,10 +38,10 @@ When adding a teaser paragraph to a page you need to define the **Strategy**.
 This is for the case that several teasers are available for selection as their assigned segments all resolve successfully. The **Strategy** then specifies an extra criteria used to select the teaser shown:
 
 * **Clickstream Score**, is based on the tags and related tag hits held within the visitor's client context (show how often a visitor has clicked on pages containing the respective tag). The hit rates for tags defined on the teaser page are compared.
-* **Random**, for "random" selection; uses the random factor generated for a page, this can be seen with the [client context](/help/sites-administering//client-context.md).
+* **Random**, for "random" selection; uses the random factor generated for a page, this can be seen with the [client context](/help/sites-administering/client-context.md).
 * **First** in the list of resolved segments. The order is that of the teasers within the campaign container page.
 
-The [Boost Factor](/help/sites-administering//campaign-segmentation.md#boost-factor) of the segment also has an impact on the selection. This is a weighting factor added to a segment definition to increase/decrease the relative likelihood of it being selected.
+The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-factor) of the segment also has an impact on the selection. This is a weighting factor added to a segment definition to increase/decrease the relative likelihood of it being selected.
 
 The process and interrelationships of the various selection criteria are best illustrated with an example (a method that can also be used to ensure that your teasers will reach the required audience).
 
@@ -231,7 +231,7 @@ After creating your brand and campaign you can create and set up your teaser exp
 
 >[!NOTE]
 >
->The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-classic-ui-authoring/classic-personalization-content-targeting-touch.md#creatinganofferbyaddingatargetcomponent) instead.
+>The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-authoring/content-targeting-touch.md) instead.
 
 1. Navigate to the content page where you want to place the teaser paragraph that will lead to your campaign page.
 1. Add a **Teaser** component (available in the **Personalization** section of sidekick) in the required position. When first created it will show that the campaign path is not yet configured:
@@ -243,7 +243,7 @@ After creating your brand and campaign you can create and set up your teaser exp
     * **Campaign Path**
       Path to the campaign page that holds the individual teaser page; segments determine exactly which teaser is shown.
 
-    * ** [Strategy](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
+    * **[Strategy](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
       Method used for selection when multiple segments resolve successfully.
 
    ![](assets/chlimage_1-1.png)

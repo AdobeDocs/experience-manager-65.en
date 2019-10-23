@@ -17,7 +17,7 @@ docset: aem65
 
 Create and deploy MBeans to manage services using the JMX Console. Expose service attributes and operations to enable administration tasks to be performed.
 
-For information about using the JMX Console, see [Monitoring Server Resources Using the JMX Console](/help/sites-administering//jmx-console.md).
+For information about using the JMX Console, see [Monitoring Server Resources Using the JMX Console](/help/sites-administering/jmx-console.md).
 
 ## The JMX Framework in Felix and CQ5 {#the-jmx-framework-in-felix-and-cq}
 

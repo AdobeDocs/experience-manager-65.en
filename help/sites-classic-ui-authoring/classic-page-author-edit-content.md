@@ -17,11 +17,11 @@ docset: aem65
 
 Once your page is created (either new or as part of a launch or live copy) you can edit the content to make the updates you require.
 
-Content is added using [components](/help/sites-classic-ui-authoring/classic-page-author-conponent-console.md) (appropriate to the content type) that can be dragged onto the page. These can then be edited in place, moved, or deleted.
+Content is added using [components](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (appropriate to the content type) that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 
 >[!NOTE]
 >
->Your account needs the [appropriate access rights](/help/sites-administering//security.md) and [permissions](/help/sites-administering//security.md#permissions) to edit pages; for example, adding, editing or deleting components, annotating, unlocking.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to edit pages; for example, adding, editing or deleting components, annotating, unlocking.
 >
 >If you encounter any problems we suggest you contact your system administrator.
 
@@ -57,7 +57,7 @@ These provide access to a wide selection of functionality; including:
 
 * [scaffolding](/help/sites-authoring/scaffolding.md)
 
-* [client context](/help/sites-administering//client-context.md)
+* [client context](/help/sites-administering/client-context.md)
 
 ## Inserting a Component {#inserting-a-component}
 

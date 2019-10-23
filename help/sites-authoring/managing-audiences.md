@@ -104,5 +104,5 @@ You can edit any ContextHub or Client Context audience from the Audiences consol
 
 1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
 1. Tap or click the icon next to the ContextHub or Client Context segment you want to edit, and tap or click **Edit**.
-1. Make any edits in the segment editor. See [Client Context](/help/sites-administering//campaign-segmentation.md) or [ContextHub](/help/sites-administering/contexthub-config.md) documentation.
+1. Make any edits in the segment editor. See [Client Context](/help/sites-administering/campaign-segmentation.md) or [ContextHub](/help/sites-administering/contexthub-config.md) documentation.
 

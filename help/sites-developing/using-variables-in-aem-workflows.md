@@ -39,7 +39,7 @@ You create variables using the Variables section available in the sidekick of th
 >
 >Workflows support only ISO8601 format for Date type variables.
 
-For additional complex data types available in AEM Forms workflows, see [Variables in AEM Forms workflows](../../../forms/using/variable-in-aem-workflows.md).  Use ArrayList data type to create variable collections. You can create ArrayList variable for all primitive and complex data types. For example, create an ArrayList variable and select String as sub-type to store multiple string values using the variable.
+For additional complex data types available in AEM Forms workflows, see [Variables in AEM Forms workflows](/help/using/variable-in-aem-workflows.md).  Use ArrayList data type to create variable collections. You can create ArrayList variable for all primitive and complex data types. For example, create an ArrayList variable and select String as sub-type to store multiple string values using the variable.
 
 Execute the following steps to create a variable:
 
@@ -74,14 +74,10 @@ Changes to variable values affect only the instance of the process in which the 
 Depending on the data type of the variable, you can use the following options to set value of a variable:
 
 * **Literal:** Use the option when you know the exact value to specify.
-
 * **Expression:** Use the option when the value to use is calculated based on an expression. The expression is created in provided expression editor.
-
 * **JSON Dot Notation:** Use the option to retrieve a value from a JSON or FDM type variable.
 * **XPATH:** Use the option to retrieve a value from an XML type variable.
-
 * **Relative to payload:** Use the option when the value to be saved to variable is available at a path relative to payload.
-
 * **Absolute path:** Use the option when the value to be saved to variable is available at an absolute path.
 
 You can also update specific elements of a JSON or XML type variable using JSON DOT Notation or XPATH notation.
@@ -134,7 +130,7 @@ It is based on adaptive forms rule editor with following changes. Rule editor in
 * Does not support setting property of an object.
 * Does not support calling a web service.
 
-For more information, see [adaptive forms rule editor](../../../forms/using/rule-editor.md).
+For more information, see [adaptive forms rule editor](/help/using/rule-editor.md).
 
 ## Use a variable {#use-a-variable}
 
@@ -161,7 +157,7 @@ In this example, before defining the routing expression, use [example 2](/help/s
 
 Similarly, select an external script path or specify the ECMA script for routing expressions to evaluate the active branch. Tap **[!UICONTROL Rename Branch]** to specify an alternate name for the branch.
 
-For more examples, see [Create a workflow model](../../../forms/using/aem-forms-workflow.md#create-a-workflow-model).
+For more examples, see [Create a workflow model](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
 #### Go To step {#go-to-step}
 
@@ -179,7 +175,7 @@ For more examples on using rule definition in the Goto step, see [Simulating a F
 
 #### Forms-workflow centric workflow steps {#forms-workflow-centric-workflow-steps}
 
-All AEM Forms workflow steps support variables. For more information, see [Forms-centric workflow on OSGi](../../../forms/using/aem-forms-workflow-step-reference.md).
+All AEM Forms workflow steps support variables. For more information, see [Forms-centric workflow on OSGi](/help/forms/using/aem-forms-workflow-step-reference.md).
 
 ### Workflow steps without support for variables {#workflow-steps-without-support-for-variables}
 
@@ -195,7 +191,7 @@ Use the following APIs in the ECMA Script to retrieve values for existing variab
 | XML |Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
 | JSON |Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-For information on APIs for additional complex variable data types available in AEM Forms workflows, see [Variables in AEM Forms workflows](../../../forms/using/variable-in-aem-workflows.md).
+For information on APIs for additional complex variable data types available in AEM Forms workflows, see [Variables in AEM Forms workflows](/help/forms/using/variable-in-aem-workflows.md).
 
 **Example**
 

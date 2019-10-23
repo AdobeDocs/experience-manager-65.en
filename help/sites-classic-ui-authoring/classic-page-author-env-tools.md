@@ -210,7 +210,7 @@ The row of icons at the bottom of the Sidekick are used to switch modes for work
 
 >
 >* [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [Client Context](/help/sites-administering//client-context.md)
+>* [Client Context](/help/sites-administering/client-context.md)
 >* Websites - will open the Websites console.
 >* Reload - will refresh the page.
 >

@@ -58,7 +58,7 @@ The list below provides an overview - while the subsequent pages list the full d
 
 ### Experience Manager Foundation {#experience-manager-foundation}
 
-Full list of changes in [AEM Foundation](release-notes/wcm-platform.md).
+Full list of changes in [AEM Foundation](/help/release-notes/wcm-platform.md).
 
 The platform of Adobe Experience Manager 6.5 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java Content Repository: Apache Jackrabbit Oak 1.10.2.
 
@@ -90,7 +90,7 @@ Various enhancements have been made to the UI to make it more productive and eas
 
 #### Search & Indexing {#search-indexing}
 
-* Search in Oak now supports dynamic facets. For exampe the filter rail in assets search show the estimated amount of results.
+* Search in Oak now supports dynamic facets. For example, the filter rail in assets search show the estimated amount of results.
 * QueryBuilder was extended to provide results with dynamic facets
 
 #### Upgrade {#upgrade}
@@ -103,7 +103,7 @@ Various enhancements have been made to the UI to make it more productive and eas
 
 ### Experience Manager Sites {#experience-manager-sites}
 
-Full list of changes in [AEM Sites and Add-ons](release-notes/sites.md).
+Full list of changes in [AEM Sites and Add-ons](/help/release-notes/sites.md).
 
 #### Managed Single-page Apps {#managed-single-page-apps}
 
@@ -147,7 +147,7 @@ For more details on changes to AEM Screens - see the Release Notes in the [AEM S
 
 ### Experience Manager Assets {#experience-manager-assets}
 
-Full list of changes in [AEM 6.5 Assets release notes](release-notes/assets.md).
+Full list of changes in [AEM 6.5 Assets release notes](/help/release-notes/assets.md).
 
 AEM 6.5 introduces the following capabilities and enhancements to boost productivity of AEM users, DAM roles, and associated creative and marketing roles.
 
@@ -213,7 +213,7 @@ AEM 6.5 adds new features and enhancements to Communities. The highlights for th
 * Keyboard navigation support on enablement components for improved accessibility.
 * Apache Solr 7.0 supported while setting up MSRP and DSRP.
 
-For detailed list of changes, see [AEM 6.5 Communities release notes](release-notes/communities-release-notes.md).
+For detailed list of changes, see [AEM 6.5 Communities release notes](/help/release-notes/communities-release-notes.md).
 
 ### Experience Manager Livefyre {#experience-manager-livefyre}
 
@@ -309,11 +309,11 @@ Oak MicroKernel for
 
 Adobe constantly evaluates capabilities in the product and over time plans to replace capabilities with more powerful versions, or decides to re-implemented selected parts to be better prepared for future expectations or extensions.
 
-For Adobe Experience Manager 6.5, [read the list of deprecated and removed capabilities](release-notes/deprecated-removed-features.md). The page also contains pre-announcement of changes in the near future and important notice for customers that update from prior releases.
+For Adobe Experience Manager 6.5, [read the list of deprecated and removed capabilities](/help/release-notes/deprecated-removed-features.md). The page also contains pre-announcement of changes in the near future and important notice for customers that update from prior releases.
 
 ## Known Issues {#known-issues}
 
-[List of known issues](release-notes/known-issues.md)
+[List of known issues](/help/release-notes/known-issues.md)
 
 ### Product Download and Support (Restricted Sites) {#product-download-and-support-restricted-sites}
 
