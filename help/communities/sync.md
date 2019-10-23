@@ -350,7 +350,7 @@ If Sling distribution fails, try the following debugging steps:
 
     * Node types- set to **rep:User,  nt :unstructured**, ** nt :resource**, **rep:ACL**, **sling:Folder**, and **sling:OrderedFolder**
 
-    * Ignorable nodes- set to **.tokens**, **system**, and **rep  :cache **
+    * Ignorable nodes- set to **.tokens**, **system**, and **rep  :cache**
 
     * Distributed Folders- set to the folders which you want to be distributed
 

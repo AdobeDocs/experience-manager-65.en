@@ -18,11 +18,11 @@ docset: aem65
 
 AEM Forms Process Reporting ships with the following *out-of-the-box* reports:
 
-* ** [Long Running Processes](/help/using/forms/process-reportingpre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: A report of all AEM Forms processes that took more than a specified time to complete
+* **[Long Running Processes](/help/using/forms/process-reportingpre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: A report of all AEM Forms processes that took more than a specified time to complete
 
-* ** [Process Duration Chart](/help/using/forms/process-reportingpre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: A report of a specified AEM Forms process by duration
+* **[Process Duration Chart](/help/using/forms/process-reportingpre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: A report of a specified AEM Forms process by duration
 
-* ** [Workflow Volume](/help/using/forms/process-reportingpre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: A report of the running and completed instances of specified process by date
+* **[Workflow Volume](/help/using/forms/process-reportingpre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: A report of the running and completed instances of specified process by date
 
 ## Long Running Processes {#long-running-processes}
 

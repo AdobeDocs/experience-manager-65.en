@@ -202,8 +202,8 @@ To configure the split:
 
         * **Add Branch:** Add more branches to the step.
         * **Select Routing Expression**: Select the routing expression to evaluate the active branch. Possible values include: Rule Definition, External Script, and ECMA script.
-        * **Click to Add Expression**: Add expression to evaluate the active branch if you select **Rule Definition** as the routing expression.** **
-        * **Script Path**: The path to a file that contains the script to evaluate the active branch if you select **External Script** as the routing expression.** **
+        * **Click to Add Expression**: Add expression to evaluate the active branch if you select **Rule Definition** as the routing expression.
+        * **Script Path**: The path to a file that contains the script to evaluate the active branch if you select **External Script** as the routing expression.
         * **Script**: Add the script in the box to evaluate the active branch if you select **ECMA Script** as the routing expression.
         * **Default Route**: The default branch is followed in case of multiple branches. You can specify only one branch as the default.
 
@@ -428,11 +428,11 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
     * `SERVICE_PROPERTY_LABEL` field: Use this field to specify the name of the participant chooser. The name appears in a list of available participant choosers in the **Dynamic Participant Step** properties.
 
-    * `getParticipant` method: Returns the the dynamically resolved Principal id as a `String` value.
+    * `getParticipant` method: Returns the dynamically resolved Principal id as a `String` value.
 
   >[!CAUTION]
   >
-  >The `getParticipant` method returns the the dynamically resolved Principal id. This can be either a group id or user id.
+  >The `getParticipant` method returns the dynamically resolved Principal id. This can be either a group id or user id.
   >
   >
   >However, a group id can only be used for a **Participant Step**, when a list of participants is returned. For a **Dynamic Participant Step** an empty list is returned and this cannot be used for delegation.
@@ -517,7 +517,7 @@ To configure the step, edit and use the following tabs:
 Create a form for use with a **Form Participant Step** as normal. However, forms for a Form Participant Step must have the following configurations:
 
 * The **Start of Form** component must have the **Action Type** property set to `Edit Workflow Controlled Resource(s)`.
-* The **Start of Form** component must have a value for the the `Form Identifier` property.
+* The **Start of Form** component must have a value for the `Form Identifier` property.
 * The form components must have the **Element Name** property set to the path of the node where the field data is stored. The path must locate a node in the workflow payload content. The value uses the following format:
 
   `./jcr:content/path_to_node`

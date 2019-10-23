@@ -335,7 +335,7 @@ Follow the steps below to deliver content updates from author to publish to devi
 
    ![](assets/screen_shot_2019-02-25at23116pm.png)
 
-1. Click **Publish **from the** Manage **Publication wizard.** **
+1. Click **Publish** from the **Manage Publication wizard.**
 
    ![](assets/screen_shot_2019-02-25at23341pm.png)
 
@@ -383,8 +383,7 @@ Follow the steps below to deliver content updates from author to publish to devi
 
    ![](assets/screen_shot_2019-02-07at120304pm.png)
 
-1. Click **Publish **from the** Manage **Publication wizard.**
-   **
+1. Click **Publish** from the **Manage Publication wizard.**
 
    ![](assets/screen_shot_2019-02-07at120507pm.png)
 

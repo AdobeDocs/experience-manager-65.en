@@ -21,7 +21,7 @@ To help deal with this issue, AEM provides **Client-side Library Folders**, whic
 
 ## How Client-Side Libraries Work in AEM {#how-client-side-libraries-work-in-aem}
 
-The standard way to include a client-side library (that is, a JS or CSS file) in the HTML of a page is simply to include a `<script>` or `<link>` tag in the JSP for that page, containig the path to the file in question. For example,
+The standard way to include a client-side library (that is, a JS or CSS file) in the HTML of a page is simply to include a `<script>` or `<link>` tag in the JSP for that page, containing the path to the file in question. For example,
 
 ```xml
 ...

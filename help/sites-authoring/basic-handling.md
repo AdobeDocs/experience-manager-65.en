@@ -67,8 +67,8 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 Global navigation has two panels, represented by icons at the left-margin of the screen:
 
-* ** [Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** - Represented by a compass
-* ** [Tools](/help/sites-authoring/basic-handling.md#tools-panel)** - Represented by a hammer
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** - Represented by a compass
+* **[Tools](/help/sites-authoring/basic-handling.md#tools-panel)** - Represented by a hammer
 
 The options available on these panels are described below.
 

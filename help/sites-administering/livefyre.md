@@ -55,7 +55,7 @@ AEM 6.5 comes with Livefyre feature package 1.2.6 pre-installed. This package on
 
 1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General &gt; Configuration Browser**.
 1. Click **Create** to open the Create Configuration dialog.
-1. Name your confguration and check the **Cloud Configurations** checkbox.
+1. Name your configuration and check the **Cloud Configurations** checkbox.
 
    This will create a folder under **Tools &gt; Deployment &gt; Livefyre Configuration** with the name provided.
 

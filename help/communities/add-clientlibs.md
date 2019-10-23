@@ -46,12 +46,10 @@ In the **Properties** tab for the new `clientlibs` node, enter the **`categories
 Note : prefacing the categories value with 'apps.' is a convention to identify the 'owning application' as being in the /apps folder, not /libs.  IMPORTANT : Add placeholder `js.tx`t and**`css.tx`**t files. (It's not officially a cq:ClientLibraryFolder without them.)
 
 1. right click **`/etc/designs/an-scf-sandbox/clientlibs`**
-1. select** Create File...**
-1. enter** Name:** `css.txt`
-
-1. select** Create File... **
+1. select **Create File...**
+1. enter **Name:** `css.txt`
+1. select **Create File...**
 1. enter **Name:** `js.txt`
-
 1. click **Save All**
 
 ![](assets/chlimage_1-48.png)

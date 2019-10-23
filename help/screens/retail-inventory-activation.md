@@ -115,9 +115,7 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
 1. **Checking the Preview**
 
-    1. Click **Preview. **Also, open your Google Sheet and update its value.**
-       **
-
+    1. Click **Preview.** Also, open your Google Sheet and update its value.
     1. Change the value for all three different columns and you will notice the display image updates as per the highest value in inventory.
 
    ![](assets/retail_result.gif)

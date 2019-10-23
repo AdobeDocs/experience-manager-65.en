@@ -134,9 +134,9 @@ You can use the **AEMFD Barcoded Forms Service** in AEM Console to configure pro
 
 Barcoded Forms Service provides the following two APIs:
 
-* ** [decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodes all the barcodes available in an input PDF document or tiff image. It returns another XML document that contains data that was retrieved from all the barcodes available in the input document or image.  
+* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodes all the barcodes available in an input PDF document or tiff image. It returns another XML document that contains data that was retrieved from all the barcodes available in the input document or image.  
 
-* ** [extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convert data decoded using decode API to XML data. This XML data can be merged with an XFA Form. It returns a list of XML documents, one for each barcode.
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convert data decoded using decode API to XML data. This XML data can be merged with an XFA Form. It returns a list of XML documents, one for each barcode.
 
 ### Using BCF Service with a JSP or Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 

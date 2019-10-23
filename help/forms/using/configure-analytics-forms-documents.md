@@ -75,7 +75,7 @@ Perform the following steps to create a report suite.
 
    General Account Settings
 
-1. In General Account Settings screen, enable **Geography Reporting**, and click **Save. **
+1. In General Account Settings screen, enable **Geography Reporting**, and click **Save.**
 1. Navigate to **Edit Settings** &gt; **Traffic** &gt; **Traffic Variables**.  
 
 1. In the report suite, configure and enable following traffic variables.

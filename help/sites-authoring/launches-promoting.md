@@ -117,8 +117,7 @@ After creating a nested launch you can promote it back to any of the sources, in
           You can promote to any of the sources.
         
         * **Delete launch after promotion** 
-          After promotion the selected launch, and any launches nested within it, will be deleted.** 
-          **
+          After promotion the selected launch, and any launches nested within it, will be deleted.
 
     * **Scope** 
       Here you can select whether to promote the entire launch, or only pages that have actually been edited. If the latter, you can then select to include/exclude sub-pages. The default configuration is to only promote page changes for the current page:

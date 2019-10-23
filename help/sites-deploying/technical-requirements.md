@@ -401,7 +401,7 @@ If you are using Dynamic Media on Linux, the following prerequisites need to be 
 >
 >**Disabling SELinux:** Image Serving does not work with SELinux turned on. This option is enabled by default. To remedy this issue, edit the **/etc/selinux/config** file and change the SELinux value from:
 >
->`SELINUX=enforcing`** **to** ** `SELINUX=disabled`
+>`SELINUX=enforcing` **to** `SELINUX=disabled`
 
 >[!NOTE]
 >

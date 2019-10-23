@@ -138,7 +138,7 @@ If you configure a metadata schema for a folder, the path to the schema form is 
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Folder Metadata Schemas]**.
 1. From the Folder Metadata Schema Forms page, select the schema form you want to apply to a folder.
-1. From the toolbar, tap/click** ** **[!UICONTROL Apply to Folder(s)]**.  
+1. From the toolbar, tap/click **[!UICONTROL Apply to Folder(s)]**.
 
 1. Select the folder on which to apply the schema and then click/tap **[!UICONTROL Apply]**. If a metadata schema is already applied on the folder, a warning message informs that you are about to overwrite the existing metadata schema. Tap/click **[!UICONTROL Overwrite]**.
 1. Open the metadata properties for the folder to which you applied the metadata schema.

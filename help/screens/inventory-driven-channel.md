@@ -21,10 +21,10 @@ This section describes a use case example that emphasizes on creating and managi
 
 Before you start this use case, make sure you understand how to:
 
-* ** [Create and Manage Channels](/help/screens/managing-channels.md)**
-* ** [Create and Manage Locations](/help/screens/managing-locations.md)**
-* ** [Create and Manage Schedules](/help/screens/managing-schedules.md)**
-* ** [Device Registration](/help/screens/device-registration.md)**
+* **[Create and Manage Channels](/help/screens/managing-channels.md)**
+* **[Create and Manage Locations](/help/screens/managing-locations.md)**
+* **[Create and Manage Schedules](/help/screens/managing-schedules.md)**
+* **[Device Registration](/help/screens/device-registration.md)**
 
 ### Primary Actors {#primary-actors}
 
@@ -142,14 +142,10 @@ The following section describes how to configure Adobe Experience Manager (AEM) 
 
     1. Click** Create &gt; Configuration Cotainer **and enter the title as** ContextHubDemo**.
 
-    1. **Navigate **to** ContextHubDemo **&gt;** ContentHub Store Configuration... **to open the** Configure **wizard**
-       **
-
-    1. Enter the **Title **as** Google Sheets**, **Store Name **as **googlesheets**, and **Store Type **as** contexthub.generic-jsonp
-       **
-
-    1. Click** Next**
-    1. Enter your specific json configuration**.** For example, you can use the following json for demo purposes.
+    1. **Navigate** to **ContextHubDemo** &gt; **ContentHub Store Configuration...** to open the **Configure wizard**
+    1. Enter the **Title** as **Google Sheets**, **Store Name** as **googlesheets**, and **Store Type** as **contexthub.generic-jsonp**
+    1. Click **Next**
+    1. Enter your specific json configuration. For example, you can use the following json for demo purposes.
     1. Click **Save**.
 
    ```
@@ -216,12 +212,8 @@ The following section describes how to configure Adobe Experience Manager (AEM) 
 
 1. **Creating Segments in Audiences**
 
-    1. Navigate from your AEM instance to **Personalization** &gt; **Audiences **&gt;** We.Retail**.**
-       **
-
-    1. Click** Create** &gt; **Create Context Hub Segment. New ContextHub Segment **dialog box opens.**
-       **
-
+    1. Navigate from your AEM instance to **Personalization** &gt; **Audiences** &gt; **We.Retail**.
+    1. Click **Create** &gt; **Create Context Hub Segment**. New ContextHub Segment dialog box opens.
     1. Enter the **Title** as **SheetA1 1** and click **Create**. Similarly, create another segment titled as **SheetA2 2**.
 
 1. **Editing the Segments**
@@ -390,9 +382,7 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
 1. **Checking the Preview**
 
-    1. Click **Preview. **Also, open your Google Sheet and update its value.**
-       **
-
+    1. Click **Preview.** Also, open your Google Sheet and update its value.
     1. Change the value for all three different columns and you will notice the display image updates as per the highest value in inventory.
 
    ![](assets/retail_result.gif)
@@ -465,11 +455,8 @@ Follow the steps below to implement the travel center weather activation use cas
 
 1. Checking the Preview
 
-    1. Click **Preview. **Also, open your Google Sheet and update its value.**
-       **
-
-    1. Change the value to less than 50, you should be able to view the an image of summer drinks. If the value in the Google Sheet is 50 or greater than should be able to view the an image of hot drink.**
-       **
+    1. Click **Preview.** Also, open your Google Sheet and update its value.
+    1. Change the value to less than 50, you should be able to view the an image of summer drinks. If the value in the Google Sheet is 50 or greater than should be able to view the an image of hot drink.
 
    ![](assets/result3.gif)
 
@@ -533,11 +520,8 @@ Follow the steps below to implement the hospitality reservation activation use c
 1. Select **Targeting** from the editor and select **Brand** and the **Activity** from the drop-down menu and click **Start Targeting**.
 1. Checking the Preview
 
-    1. Click **Preview. **Also, open your Google Sheet and update its value.**
-       **
-
-    1. Change the value in Restaurant1 &gt; Restaurant2, you should be able to view the an image of steak picture and Restaurant1 &lt; Restaurant12, you should be able to view thai food picture on your display screen.**
-       **
+    1. Click **Preview.** Also, open your Google Sheet and update its value.
+    1. Change the value in Restaurant1 &gt; Restaurant2, you should be able to view the an image of steak picture and Restaurant1 &lt; Restaurant12, you should be able to view thai food picture on your display screen.
 
    ![](assets/result5.gif)
 
@@ -580,11 +564,9 @@ Follow the steps below to implement the digital menu board with text overlay use
 
 1. **Checking the Preview**
 
-    1. Click **Preview. **Also, open your Google Sheet and update its value.**
-       **
+    <!-- Edit text in steps below. wonky-->
 
-    1. Change the under** Price **and you will notice the value as used in the text overlay updates accordingly**, **as shown in the figure below.**
-       **
-
-   ![](assets/textoverlay_result-1.gif)
-
+    1. Click **Preview**. Also, open your Google Sheet and update its value.
+    1. Change the under **Price** and you will notice the value as used in the text overlay updates accordingly, as shown in the figure below.
+    
+    ![](assets/textoverlay_result-1.gif)

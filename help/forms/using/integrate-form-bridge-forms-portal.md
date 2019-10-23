@@ -22,8 +22,7 @@ An existing HTML application can leverage the FormBridge API to interact with a 
 
 ## Integrating HTML5 forms to a web page {#integrating-html-forms-to-a-web-page}
 
-1. **Choose a Profile or create a Profile
-   **
+1. **Choose a Profile or create a Profile**
 
     1. In the CRX DE interface, navigate to: `https://[server]:[port]/crx/de`.
     1. Log in with administrator credentials.

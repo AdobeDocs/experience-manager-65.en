@@ -293,8 +293,7 @@ The actual actions available to the user will be shown as appropriate and not al
 
   ![](do-not-localize/screen_shot_2018-03-22at113044.png)
 
-* **Convert to an experience fragment variation
-  **
+* **Convert to an experience fragment variation**
 
   This allows you to create a new [experience fragment](/help/sites-authoring/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
@@ -407,7 +406,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-authoring
 
 >[!NOTE]
 >
->The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the reszing handles as well as the the emulator toolbar disappear.
+>The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the reszing handles as well as the emulator toolbar disappear.
 >
 >If you need to edit the overall layout of the page, affecting multiple components, switch to the [layout mode](/help/sites-authoring/responsive-layout.md).
 

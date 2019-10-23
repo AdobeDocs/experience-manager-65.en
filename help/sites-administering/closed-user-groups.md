@@ -21,7 +21,7 @@ Since AEM 6.3, there is a new Closed User Group implementation intended to addre
 >
 >For the sake of simplicity, the CUG abbreviation will be used throughout this documentation.
 
-The goal of the new implementation is to cover existing functionality where needed while at the same time addressing problems and design limitations from tolder versions. The result is a new CUG design with the following characteristics:
+The goal of the new implementation is to cover existing functionality where needed while at the same time addressing problems and design limitations from older versions. The result is a new CUG design with the following characteristics:
 
 * Clear separation of authentication and authorization elements, which can be used individually or in combination;
 * Dedicated authorization model to reflect the restricted read access at the configured CUG trees without interfering with other access control setup and permission requirements;
@@ -39,7 +39,7 @@ A CUG as it is known in the context of AEM consists of the following steps:
 
 The new implementation has been designed to draw a line between the authentication and the authorization elements. As of AEM 6.3, it is possible to restrict read access without explicitly adding an authentication requirement. For example, if a given instance requires authentication altogether or a given tree already resides in a subtree that requires authentication already.
 
-Equally, a given tree can be marked with an authentication requirement without changing the efective permission setup. The combinations and results are listed in the [Combining CUG Policies and the Authentication Requirement](/help/sites-administering/closed-user-groups.md#combining-cug-policies-and-the-authentication-requirement) section.
+Equally, a given tree can be marked with an authentication requirement without changing the effective permission setup. The combinations and results are listed in the [Combining CUG Policies and the Authentication Requirement](/help/sites-administering/closed-user-groups.md#combining-cug-policies-and-the-authentication-requirement) section.
 
 ## Overview {#overview}
 
@@ -64,7 +64,7 @@ The implementation of PrincipalSetPolicy used to represent CUGs in addition defi
 
 These CUG policies are deployed to an AEM instance through a separate authorization module called oak-authorization-cug. This module comes with its own access control management and permission evaluation. In other words, the default AEM setup ships an Oak content repository configuration that combines multiple authorization mechanisms. For more info, see [this page on the Apache Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
-In this composite setup a new CUG does not replace the existing access control content attached to the target node, but is designed to be a supplement which can also be removed later on without afecting the original access control, that by default in AEM would be an access control list.
+In this composite setup a new CUG does not replace the existing access control content attached to the target node, but is designed to be a supplement which can also be removed later on without affecting the original access control, that by default in AEM would be an access control list.
 
 In contrast to the former implementation the new CUG policies are always recognized and treated as access control content. This implies that they are created and edited using the JCR access control management API. For more info, see the [Managing CUG Policies](#managing-cug-policies) section.
 
@@ -77,7 +77,7 @@ Permission evaluation for CUG policies and the interaction with the default or a
 The following characteristics apply for the permission evaluation associated with the authorization model designed to handle and evaluate CUG policies:
 
 * It only handles read permissions for regular nodes and properties, but not reading access control content
-* It doesn not handle write permissions nor any kind of permissions required for modifcation of protected JCR content (access control, node type information, versioning, locking or user management amongst others); These permissions are not afected by a CUG policy and will not be evaluated by the associated authorization model. Whether or not these permissions are granted depends on the other models configured in the security setup.
+* It does not handle write permissions nor any kind of permissions required for modification of protected JCR content (access control, node type information, versioning, locking or user management amongst others); These permissions are not afected by a CUG policy and will not be evaluated by the associated authorization model. Whether or not these permissions are granted depends on the other models configured in the security setup.
 
 The efect of a single CUG policy upon permission evaluation can be summarized as follows:
 
@@ -111,7 +111,7 @@ These requirements are registered with the Authenticator by means of an OSGi ser
 
 #### Defining the Authentication Requirement with A Dedicated Mixin Type {#defining-the-authentication-requirement-with-a-dedicated-mixin-type}
 
-For security reasons the new implementation replaces the usage of a residual JCR property by a dedicated mixin type called `granite:AuthenticationRequired`, which defines a single optional property of type STRING for the login path `granite:loginPath`. Only content changes related to this mixin type will lead to update of the requirements registered with Apache Sling Authenticator. The modifications are tracked upon persisting any transient modifcations and thus require a `javax.jcr.Session.save()` call to become efective.
+For security reasons the new implementation replaces the usage of a residual JCR property by a dedicated mixin type called `granite:AuthenticationRequired`, which defines a single optional property of type STRING for the login path `granite:loginPath`. Only content changes related to this mixin type will lead to update of the requirements registered with Apache Sling Authenticator. The modifications are tracked upon persisting any transient modifications and thus require a `javax.jcr.Session.save()` call to become effective.
 
 The same applies for the `granite:loginPath` property. It will only be respected if it is defned by the auth-requirement related mixin type. Adding a residual property with this very name at an unstructured JCR node will not show the desired efect and the property will be ignored by the handler responsible for updating the OSGi registration.
 
@@ -121,9 +121,9 @@ The same applies for the `granite:loginPath` property. It will only be respected
 
 #### Registering the Authentication Requirement and Login Path With the Sling Authenticator {#registering-the-authentication-requirement-and-login-path-with-the-sling-authenticator}
 
-Since this type of authentication requirement is expected to be limited to certain run modes and to a small subset of trees within the content repository, tracking of the requirement mixin type and the login path properties is conditional and bound to a corresponding confguration that defines the supported paths (see Confguration Options below). Consequently, only changes within the scope of these supported paths will trigger an update of the OSGi registration, elsewhere both the mixin type and the property will be ignored.
+Since this type of authentication requirement is expected to be limited to certain run modes and to a small subset of trees within the content repository, tracking of the requirement mixin type and the login path properties is conditional and bound to a corresponding configuration that defines the supported paths (see Configuration Options below). Consequently, only changes within the scope of these supported paths will trigger an update of the OSGi registration, elsewhere both the mixin type and the property will be ignored.
 
-The default AEM setup now makes use of this confguration by allowing to set the mixin in the author run mode but only have it take efect upon replication to the publish instance. See [this page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) for details how Sling enforces the authentication requirement.
+The default AEM setup now makes use of this configuration by allowing to set the mixin in the author run mode but only have it take effect upon replication to the publish instance. See [this page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) for details how Sling enforces the authentication requirement.
 
 Adding the `granite:AuthenticationRequired` mixin type within the configured supported paths will cause the OSGi registration of the responsible handler to be updated containing an new, additional entry with the `sling.auth.requirements` property. If a given authentication requirement specifes the optional `granite:loginPath` property, the value is additionally registered with the Authenticator with a '-' prefix in order to be excluded from authentication requirement.
 
@@ -181,11 +181,11 @@ The following best practices should be taken into account when defining authenti
 
 ### CUG Policy Representation in the Repository {#cug-policy-representation-in-the-repository}
 
-The Oak documentation covers the how the new CUG policies are refected in the repository content. For more information consult [this page](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
+The Oak documentation covers the how the new CUG policies are reflected in the repository content. For more information consult [this page](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
 
 ### Authentication Requirement in the Repository {#authentication-requirement-in-the-repository}
 
-The need for a separate authentication requirement is refected in the repository content with a dedicated mixin node type placed at the target node. The mixin type defines an optional property to specify a dedicated login page for the tree defined by the target node.
+The need for a separate authentication requirement is reflected in the repository content with a dedicated mixin node type placed at the target node. The mixin type defines an optional property to specify a dedicated login page for the tree defined by the target node.
 
 The page associated with the login path may be located inside or outside that tree. It will be excluded from the authentication requirement.
 
@@ -324,11 +324,11 @@ The corresponding methods always return an empty policy array but will not throw
 
 ### Managing the Authentication Requirement {#managing-the-authentication-requirement}
 
-The creation, modification or removal of a new authentication requirements is achieved by changing the efective node type of the target node. The optional login path property can then be written using regular JCR API.
+The creation, modification or removal of a new authentication requirements is achieved by changing the effective node type of the target node. The optional login path property can then be written using regular JCR API.
 
 >[!NOTE]
 >
->The modifications to a given target node mentioned above will only be reflected on the Apache Sling Authenticator if the `RequirementHandler` has been confgured and the target is contained in the trees defined by the supported paths (see section Confguration Options).
+>The modifications to a given target node mentioned above will only be reflected on the Apache Sling Authenticator if the `RequirementHandler` has been confgured and the target is contained in the trees defined by the supported paths (see section Configuration Options).
 >
 >For more info, see [Assigning Mixin Node Types](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Assigning Mixin Node Types) and [Adding Nodes and Setting Properties](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 Adding Nodes and Setting Properties)
 
@@ -360,7 +360,7 @@ session.save();
 
 #### Modify an Existing Login Path {#modify-an-existing-login-path}
 
-Steps to change an existing login path are detailed below. The modifcation will only be registered with the Apache Sling Authenticator if the `RequirementHandler` has been configured for the tree containing the target node. The previous login path value will be removed from the registration. The auth requirement associated with the target node is not affected by this modification.
+Steps to change an existing login path are detailed below. The modification will only be registered with the Apache Sling Authenticator if the `RequirementHandler` has been configured for the tree containing the target node. The previous login path value will be removed from the registration. The auth requirement associated with the target node is not affected by this modification.
 
 ```java
 Node targetNode = [...]
@@ -416,7 +416,7 @@ session.save();
 
 #### Retrieve Effective Auth Requirements {#retrieve-effective-auth-requirements}
 
-There is no dedicated public API to read all efective authentication requirements as registered with the Apache Sling Authenticator. However, the list is exposed in the system console at `https://<serveraddress>:<serverport>/system/console/slingauth` under the "**Authentication Requirement Confguration**" section.
+There is no dedicated public API to read all effective authentication requirements as registered with the Apache Sling Authenticator. However, the list is exposed in the system console at `https://<serveraddress>:<serverport>/system/console/slingauth` under the "**Authentication Requirement Configuration**" section.
 
 The following image shows the authentication requirements of an AEM publish instance with demo content. The highlighted path of the community page illustrates how a requirement added by the implementation described in this document is reflected in the Apache Sling Authenticator.
 
@@ -428,13 +428,13 @@ The following image shows the authentication requirements of an AEM publish inst
 
 #### Retrieve the Effective Login Path {#retrieve-the-effective-login-path}
 
-There currently is no public API to retrieve the login path that will take efect upon anonymously accessing a resource that requires authentication. See section Evaluation of Login Path for implementation details on how the login path is retrieved.
+There currently is no public API to retrieve the login path that will take effect upon anonymously accessing a resource that requires authentication. See section Evaluation of Login Path for implementation details on how the login path is retrieved.
 
 Note however, that apart from the login paths defined with this feature there are alternative ways to specify the redirect to the login, which should be taken into consideration when designing the content model and the authentication requirements of a given AEM installation.
 
 #### Retrieve the Inherited Auth Requirement {#retrieve-the-inherited-auth-requirement}
 
-Like with the login path, there is no public API to retrieve the inherited authentication requirements defined in the content. The following sample illustrates how to list all authentication requirements that have been defined with a given hierarchy irrespective on whether they take efect or not. For more info, see [Configuration Options](/help/sites-administering/closed-user-groups.md#configuration-options).
+Like with the login path, there is no public API to retrieve the inherited authentication requirements defined in the content. The following sample illustrates how to list all authentication requirements that have been defined with a given hierarchy irrespective on whether they take effect or not. For more info, see [Configuration Options](/help/sites-administering/closed-user-groups.md#configuration-options).
 
 >[!NOTE]
 >
@@ -478,11 +478,11 @@ The following table lists the valid combinations of CUG policies and the authent
 
 This sections provides an overview to the OSGi components and the individual configuration options introduced with the new CUG implementation.
 
-See also the CUG mapping documentation for a comprehensive mapping of the confguration options between the old and the new implementation.
+See also the CUG mapping documentation for a comprehensive mapping of the configuration options between the old and the new implementation.
 
 ### Authorization: Setup and Configuration {#authorization-setup-and-configuration}
 
-The new, authorization related parts are contained in the **Oak CUG Authorization** bundle ( `org.apache.jackrabbit.oak-authorizationcug`), which is part of the AEM default installation. The bundle defines a separated authorization model aimed to be deployed as an additional way to manage read access.
+The new, authorization related parts are contained in the **Oak CUG Authorization** bundle ( `org.apache.jackrabbit.oak-authorization-cug`), which is part of the AEM default installation. The bundle defines a separated authorization model aimed to be deployed as an additional way to manage read access.
 
 #### Setting Up CUG Authorization {#setting-up-cug-authorization}
 
@@ -518,17 +518,17 @@ The following two OSGi components have been introduced to define authentication 
    <td>Authorization configuration dedicated to setup and evaluate CUG permissions.</td>
   </tr>
   <tr>
-   <td>Confguration Properties</td>
+   <td>Configuration Properties</td>
    <td>
     <ul>
      <li><code>cugSupportedPaths</code></li>
      <li><code>cugEnabled</code></li>
-     <li><code>confgurationRanking</code></li>
+     <li><code>configurationRanking</code></li>
     </ul> <p>Also, see <a href="/help/sites-administering/closed-user-groups.md#configuration-options" target="_blank">Configuration Options</a> below.</p> </td>
   </tr>
   <tr>
-   <td>Confguration Policy</td>
-   <td><code>ConfgurationPolicy.REQUIRE</code></td>
+   <td>Configuration Policy</td>
+   <td><code>ConfigurationPolicy.REQUIRE</code></td>
   </tr>
   <tr>
    <td>References</td>
@@ -550,15 +550,15 @@ The following two OSGi components have been introduced to define authentication 
    <td>Allows to exclude principal(s) with the confgured name(s) from CUG evaluation.</td>
   </tr>
   <tr>
-   <td>Confguration Properties</td>
+   <td>Configuration Properties</td>
    <td>
     <ul>
      <li><code>principalNames</code></li>
-    </ul> <p>Also see section Confguration Options below.</p> </td>
+    </ul> <p>Also see section Configuration Options below.</p> </td>
   </tr>
   <tr>
-   <td>Confguration Policy</td>
-   <td><code>ConfgurationPolicy.REQUIRE</code></td>
+   <td>Configuration Policy</td>
+   <td><code>ConfigurationPolicy.REQUIRE</code></td>
   </tr>
   <tr>
    <td>References</td>
@@ -569,7 +569,7 @@ The following two OSGi components have been introduced to define authentication 
 
 #### Configuration Options {#configuration-options}
 
-The key confguration options are:
+The key configuration options are:
 
 * `cugSupportedPaths`: specify the subtrees that may contain CUGs. No default value is set
 * `cugEnabled`: configuration option to enable permission evaluation for the present CUG policies.
@@ -588,7 +588,7 @@ The default since AEM 6.3 prevents the following principals from being afected b
 
 For more info, see the table in the [Default Configuration since AEM 6.3](#default-configuration-since-aem) section below.
 
-The exclusion of the 'administrators' group can be altered or expanded in the system console in the confguration section of **Apache Jackrabbit Oak CUG Exclude List**.
+The exclusion of the 'administrators' group can be altered or expanded in the system console in the configuration section of **Apache Jackrabbit Oak CUG Exclude List**.
 
 Alternatively, it is possible to provide and deploy a custom implementation of the CugExclude interface to adjust the set of excluded principals in case of special needs. See the documentation on [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) for details and an example implementation.
 
@@ -619,15 +619,15 @@ The following 2 OSGi components have been introduced to defne authentication req
   </tr>
   <tr>
    <td>Description</td>
-   <td>Dedicated OSGi service for authentication requirements that registers an observer for content changes afecting auth-requirement (through the <code>granite:AuthenticationRequirement</code> mixin type) and login paths with are exposed to the <code>LoginSelectorHandler</code>. </td>
+   <td>Dedicated OSGi service for authentication requirements that registers an observer for content changes affecting auth-requirement (through the <code>granite:AuthenticationRequirement</code> mixin type) and login paths with are exposed to the <code>LoginSelectorHandler</code>. </td>
   </tr>
   <tr>
-   <td>Confguration Properties</td>
+   <td>Configuration Properties</td>
    <td>-</td>
   </tr>
   <tr>
-   <td>Confguration Policy</td>
-   <td><code>ConfgurationPolicy.OPTIONAL</code></td>
+   <td>Configuration Policy</td>
+   <td><code>ConfigurationPolicy.OPTIONAL</code></td>
   </tr>
   <tr>
    <td>References</td>
@@ -645,8 +645,8 @@ The following 2 OSGi components have been introduced to defne authentication req
 | Label |Adobe Granite Authentication Requirement and Login Path Handler |
 |---|---|
 | Description | `RequirementHandler` implementation that updates the Apache Sling authentication requirements and the corresponding exclusion for the associated login paths.  |
-| Confguration Properties | `supportedPaths` |
-| Confguration Policy | `ConfgurationPolicy.REQUIRE` |
+| Configuration Properties | `supportedPaths` |
+| Configuration Policy | `ConfigurationPolicy.REQUIRE` |
 | References |NA |
 
 #### Configuration Options {#configuration-options-1}
@@ -667,7 +667,7 @@ The authentication related parts of the CUG rewrite only come with a single conf
    <td><p>Label = Supported Paths</p> <p>Name = 'supportedPaths'</p> </td>
    <td>Set&lt;String&gt;</td>
    <td>-</td>
-   <td>Paths under which authentication requirements will be respected by this handler. Leave this confguration unset if you want to add the <code>granite:AuthenticationRequirement</code> mixin type to nodes without having them enforced (for example, on author instances). If missing, the feature is disabled. </td>
+   <td>Paths under which authentication requirements will be respected by this handler. Leave this configuration unset if you want to add the <code>granite:AuthenticationRequirement</code> mixin type to nodes without having them enforced (for example, on author instances). If missing, the feature is disabled. </td>
   </tr>
  </tbody>
 </table>
@@ -690,10 +690,10 @@ New installations of AEM will by default use the new implementations both for th
 
 ### Publish Instances {#publish-instances}
 
-| **“Apache Jackrabbit Oak CUG Confguration”** |**Explanation** |
+| **“Apache Jackrabbit Oak CUG Configuration”** |**Explanation** |
 |---|---|
 | Supported Paths `/content` | Access control management for CUG policies is enabled below the configured paths.  |
-| CUG Evaluation Enabled TRUE | Permission evaluation is enabled below the configured paths. CUG policies take efectupon `Session.save()`. |
+| CUG Evaluation Enabled TRUE | Permission evaluation is enabled below the configured paths. CUG policies take effect upon `Session.save()`. |
 | Ranking |200 | See Oak documentation. |
 
 | **“Apache Jackrabbit Oak CUG Exclude List”** |**Explanation** |
@@ -702,7 +702,7 @@ New installations of AEM will by default use the new implementations both for th
 
 | **“Adobe Granite Authentication Requirement and Login Path Handler”** |**Explanation** |
 |---|---|
-| Supported Paths  `/content` | Authentication requirements as defined in the repository by means of the `granite:AuthenticationRequired` mixin type take efect below `/content` upon `Session.save()`. Sling Authenticator gets updated. Adding the mixin type outside of the supported paths is ignored. |
+| Supported Paths  `/content` | Authentication requirements as defined in the repository by means of the `granite:AuthenticationRequired` mixin type take effect below `/content` upon `Session.save()`. Sling Authenticator gets updated. Adding the mixin type outside of the supported paths is ignored. |
 
 ## Disabling CUG Authorization and Authentication Requirement {#disabling-cug-authorization-and-authentication-requirement}
 
@@ -740,7 +740,7 @@ The replication module has been slightly adjusted in order to be able to replica
 
 * `DurboImportConfiguration.isImportAcl()` is interpreted literally and will only affect access control policies implementing `javax.jcr.security.AccessControlList`
 
-* `DurboImportTransformer` will only respect this confguration for true ACLs
+* `DurboImportTransformer` will only respect this configuration for true ACLs
 * Other policies such as `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy` instances created by the CUG authorization model will always get replicated and the configuration option `DurboImportConfiguration.isImportAcl`() will be ignored.
 
 There is one limitation of replicating CUG policies. If a given CUG policy gets removed without removing the corresponding mixin node type `rep:CugMixin,` the removal will not be reflected upon replication. This has been addressed by always removing the mixin upon policy removal. The limitation may nevertheless show up if the mixin type is manually added.
@@ -774,7 +774,7 @@ The aim of this section is to provide an overview of the changes made to the CUG
 
 The deprecated OSGi component **Adobe Granite Closed User Group (CUG) Support** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) has been replaced by new components in order to be able to separately handle authorization and authentication related parts of the former CUG functionality.
 
-## Diferrences in Managing CUGs in the Repository Content {#diferrences-in-managing-cugs-in-the-repository-content}
+## Differences in Managing CUGs in the Repository Content {#differences-in-managing-cugs-in-the-repository-content}
 
 The following sections describe the differences between the old and the new implementations from the implementation and security perspectives. While the new implementation aims to provide the same functionality, there are subtle changes that are important to know when using the new CUG.
 
@@ -790,13 +790,13 @@ With the new implementation the access control setup of the default authorizatio
 
 **Editing CUG Policies In Access Control Management**
 
-This move from residual JCR properties to a dedicated access control policy has an impact on the permission needed to create or modify the authorization part of the CUG feature. Since this is considered a modifcation to access control content, it requires `jcr:readAccessControl` and `jcr:modifyAccessControl` privileges in order to be written to the repository. Therefore, only content authors entitled to modify the access control content of a page can setup or modify this content. This contrasts to the old implementation where the ability to write regular JCR properties was sufficient, resulting in a privilege escalation.
+This move from residual JCR properties to a dedicated access control policy has an impact on the permission needed to create or modify the authorization part of the CUG feature. Since this is considered a modification to access control content, it requires `jcr:readAccessControl` and `jcr:modifyAccessControl` privileges in order to be written to the repository. Therefore, only content authors entitled to modify the access control content of a page can setup or modify this content. This contrasts to the old implementation where the ability to write regular JCR properties was sufficient, resulting in a privilege escalation.
 
 **Target Node Defined By Policy**
 
 CUG policies are expected to be created at the JCR node defining the subtree to be subject to restricted read access. This is likely to be a AEM page in case the CUG is expected afect the whole tree.
 
-Note that placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the content s.str. of a given page but will not take effect on any siblings or child pages. This may be a valid use case and it is possible to achieve with a repository editor that allows to apply fine grained access content content. However, it contrasts the former implementation where placing a cq:cugEnabled property on the jcr:content node was internally re-mapped to the page node. This mapping is no longer performed.
+Note that placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the contents of a given page but will not take effect on any siblings or child pages. This may be a valid use case and it is possible to achieve with a repository editor that allows to apply fine grained access content content. However, it contrasts the former implementation where placing a cq:cugEnabled property on the jcr:content node was internally re-mapped to the page node. This mapping is no longer performed.
 
 **Permission Evaluation With CUG Policies**
 
@@ -813,7 +813,7 @@ The CUG authorization model allows to individually turn on access control manage
 
 In the new AEM default setup evaluation of CUG policies it is only enabled with the 'publish' run mode. See the details on the [default configuration since AEM 6.3](#default-configuration-since-aem) for more details. This can be verifed by comparing the effective policies for a given path to the policies stored in the content. Effective policies will only be shown in case permission evaluation for CUGs is enabled.
 
-As explained above the CUG access control policies are now always stored in the content but evaluation of the effective permissions that result from those policies will only be enforced if **CUG Evaluation Enabled** is turned on in the system console at Apache Jackrabbit Oak **CUG Confguration.** By default, it is enabled with the 'publish' run mode only.
+As explained above the CUG access control policies are now always stored in the content but evaluation of the effective permissions that result from those policies will only be enforced if **CUG Evaluation Enabled** is turned on in the system console at Apache Jackrabbit Oak **CUG Configuration.** By default, it is enabled with the 'publish' run mode only.
 
 ### Differences With Regards To Authentication {#differences-with-regards-to-authentication}
 
@@ -825,7 +825,7 @@ In the former implementation both the authorization and authentication aspects o
 
 #### Property For Excluding Login Path {#property-for-excluding-login-path}
 
-The mixing type defines a single, optional property called `granite:loginPath`, which basically corresponds to the `cq:cugLoginPage` property. In contrast to the previous implementation the login path property will only be respected if its declaring node type is the mentioned mixin. Adding a property with that name without setting the mixin type will have no effect and neither a new requirement nor an exclusion for the login path will be reported to the authenticator.
+The mixin type defines a single, optional property called `granite:loginPath`, which basically corresponds to the `cq:cugLoginPage` property. In contrast to the previous implementation the login path property will only be respected if its declaring node type is the mentioned mixin. Adding a property with that name without setting the mixin type will have no effect and neither a new requirement nor an exclusion for the login path will be reported to the authenticator.
 
 #### Privilege For Authentication Requirement {#privilege-for-authentication-requirement}
 
@@ -837,17 +837,17 @@ As far as the `granite:loginPath` is concerned the same privilege is required to
 
 Authentication requirements are expected to be created at the JCR node defining the subtree to be subject to enforced login. This is likely to be an AEM Page in case the CUG is expected to affect the whole tree and the UI for the new implementation will consequently add the auth-requirement mixin type on the page node.
 
-Placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the content s.str, but will not take afect on the page node itself nor on any child pages.
+Placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the contents, but will not take afect on the page node itself nor on any child pages.
 
 This may be a valid scenario and is possible with a repository editor that allows to place the mixin at any node. However, the behavior contrasts the former implementation, where placing a cq:cugEnabled or cq:cugLoginPage property on the jcr:content node was internally remapped ultimately to the page node. This mapping is no longer performed.
 
 #### Configured Supported Paths {#configured-supported-paths}
 
-Both the `granite:AuthenticationRequired` mixin type and the granite:loginPath property will only be respected within the scoped defined by the set of **Supported Paths** configuration option present with the **Adobe Granite Authentication Requirement and Login Path Handler**. If no paths are specifed, the authentication requirement feature is disabled altogether. In this case mixin type nor property take efect when being added or set to a given JCR node. ``
+Both the `granite:AuthenticationRequired` mixin type and the granite:loginPath property will only be respected within the scope defined by the set of **Supported Paths** configuration option present with the **Adobe Granite Authentication Requirement and Login Path Handler**. If no paths are specifed, the authentication requirement feature is disabled altogether. In this case mixin type nor property take effect when being added or set to a given JCR node.
 
 ### Mapping of JCR Content, OSGi Services and Configurations {#mapping-of-jcr-content-osgi-services-and-configurations}
 
-The document below provides a comprehensive mapping of OSGi services, confgurations and repository content between the old and the new implementation.
+The document below provides a comprehensive mapping of OSGi services, configurations and repository content between the old and the new implementation.
 
 CUG Mapping since AEM 6.3
 

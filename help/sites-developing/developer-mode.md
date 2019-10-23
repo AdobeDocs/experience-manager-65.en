@@ -68,9 +68,9 @@ Developer mode is implemented as a side panel to the page editor. To open the pa
 
 The panel is divided into two tabs:
 
-* ** [Components](/help/sites-developing/developer-mode.md#components)** - This shows a component tree, similar to the [content tree](/help/sites-authoring/author-environment-tools.md#content-tree) for authors
+* **[Components](/help/sites-developing/developer-mode.md#components)** - This shows a component tree, similar to the [content tree](/help/sites-authoring/author-environment-tools.md#content-tree) for authors
 
-* ** [Errors](/help/sites-developing/developer-mode.md#errors)** - When problems occur, details are shown for each component.
+* **[Errors](/help/sites-developing/developer-mode.md#errors)** - When problems occur, details are shown for each component.
 
 ### Components {#components}
 

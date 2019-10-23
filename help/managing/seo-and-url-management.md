@@ -66,7 +66,7 @@ Here are some general tips on how to construct your URLs for SEO:
 
 * Use canonical URLs.
 
-    * When a URL can be served from different paths or with different parameters or selectors, make sure to use a** ** `rel=canonical` tag on the page.
+    * When a URL can be served from different paths or with different parameters or selectors, make sure to use a `rel=canonical` tag on the page.
 
     * This can be included in the code for the AEM template.
 
@@ -208,7 +208,7 @@ The `sling:alias` property allows you to have our cake and eat it too. `sling:al
 
 This would allow the AEM translation tools such as the multi-site manager to continue to maintain a relationship between:
 
-* `/en/home`** **
+* `/en/home`
 
 * `/es/home`
 
@@ -366,7 +366,7 @@ The caveat with placing the `robots.txt`** **file at the site root is that dispa
 
 Crawlers use XML sitemaps to better understand the structure of websites. While there is no guarantee that providing a sitemap will lead to improved SEO rankings, it is an agreed-upon best practice. You can manually maintain an XML file on the web server to use as the sitemap, but it is recommended to generate the sitemap programmatically, which ensures that as authors create new content, the sitemap will automatically reflect their changes.
 
-To programmatically generate a sitemap, register a Sling Servlet listening for a `sitemap.xml` call. The servlet can then use the resource provided via the servlet API to look at the current page and its children, outputting XML. The XML will then be cached at the dispatcher. This location should be referenced in the sitemap property of the** ** `robots.txt` file. Additionally, a custom flush rule will need to be implemented to make sure to flush this file whenever a new page is activated.
+To programmatically generate a sitemap, register a Sling Servlet listening for a `sitemap.xml` call. The servlet can then use the resource provided via the servlet API to look at the current page and its children, outputting XML. The XML will then be cached at the dispatcher. This location should be referenced in the sitemap property of the `robots.txt` file. Additionally, a custom flush rule will need to be implemented to make sure to flush this file whenever a new page is activated.
 
 >[!NOTE]
 >

@@ -41,7 +41,7 @@ Before you start implementing this functionality, please make sure you have a pr
 
 Create a channel titled as **MultiZone** in **Zones** project. Follow the steps below:
 
-**Creating the Channel **
+**Creating the Channel**
 
 1. Select the Adobe Experience Manager link (top left) and then **Screens**. Alternatively, you can ﻿go directly to: http://localhost:4502/screens.html/content/screens.
 1. Navigate to **Channels** folder and click **Create** from the action bar.

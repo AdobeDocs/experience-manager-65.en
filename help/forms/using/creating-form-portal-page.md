@@ -47,7 +47,7 @@ Search & Lister Component in a page with Grid layout
 
 The List pane is an area where your forms are listed. The Search & Lister component provides various configuration options that you can use to control the display of forms in the List pane.
 
-To configure the List pane, tap the Search and Lister component and then tap ![](assets/settings_icon.png). The **[!UICONTROL ** Edit Component**]** dialog opens.
+To configure the List pane, tap the Search and Lister component and then tap ![](assets/settings_icon.png). The **[!UICONTROL  Edit Component]** dialog opens.
 
 ![List pane in edit mode](assets/edit-list.png)
 
@@ -224,7 +224,7 @@ To list forms on a page, add the **[!UICONTROL Search & Lister]** Component to t
 
 To link a form from anywhere on the page, use the Link component. For more information about link component, see [Embedding link component in a page](../../forms/using/embedding-link-component-page.md).
 
-To list the forms that are in a draft state and the forms which are already submitted, use the **[!UICONTROL **Drafts and Submissions**]** component. For more information, see [Customizing Drafts and Submissions component](../../forms/using/draft-submission-component.md).
+To list the forms that are in a draft state and the forms which are already submitted, use the **[!UICONTROL Drafts and Submissions]** component. For more information, see [Customizing Drafts and Submissions component](../../forms/using/draft-submission-component.md).
 
 ## Mobile device friendliness {#mobile-device-friendliness}
 

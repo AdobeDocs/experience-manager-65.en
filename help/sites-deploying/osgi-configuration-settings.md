@@ -299,8 +299,7 @@ When using [closed user groups](/help/sites-administering/cug.md) you can config
 
 **Day CQ Link Checker Task** Configure settings for a single link checker task (a task which checks an external link):
 
-* Check the intervals defined in **Good Link Test Interval** and **Bad Link Test Interval
-  **
+* Check the intervals defined in **Good Link Test Interval** and **Bad Link Test Interval**
 
 * The various parameters related to proxies for internet access and NTLM that are needed for external access when checking a link.
 

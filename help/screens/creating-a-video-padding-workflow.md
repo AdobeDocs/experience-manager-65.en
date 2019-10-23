@@ -18,12 +18,10 @@ docset: aem65
 This section covers the following topics:
 
 * **Overview**
-* **Prerequisites  
-  **
+* **Prerequisites**
 * **Creating a Video Padding Workflow**
 
-    * **Creating a Workflow  
-      **
+    * **Creating a Workflow**
     * **Using the Workflow in AEM Screens Project**
 
 * **Validating the Output for the Workflow**

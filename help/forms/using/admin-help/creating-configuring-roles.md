@@ -333,7 +333,7 @@ You can change the permissions for any of the roles that you created. You cannot
 
 **Write:** Write repository metadata and content
 
-**Opening files in Workbench **
+**Opening files in Workbench**
 
 To view the contents of the Resources view in Workbench and open files for viewing, a user requires the following permissions:
 

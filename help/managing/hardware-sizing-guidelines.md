@@ -38,8 +38,7 @@ Basic factors to consider are (in this order):
 
 * **Hard Drive**
 
-    * at least two or three times larger than the repository size**
-      **
+    * at least two or three times larger than the repository size
 
 * **Memory**
 
@@ -104,7 +103,7 @@ AEM runs well in virtualized environments, but there can be factors such as CPU 
 
 #### Parallelization of AEM Instances {#parallelization-of-aem-instances}
 
-**Fail Safeness **
+**Fail Safeness**
 
 A fail-safe website is deployed on at least two separate systems. If one system breaks down, an other system can take over and thus compensate the system failure.
 

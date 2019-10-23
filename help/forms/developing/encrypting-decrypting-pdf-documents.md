@@ -63,7 +63,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
-**Create an Encryption Client API object **
+**Create an Encryption Client API object**
 
 To programmatically perform an Encryption service operation, you must create an Encryption service client.
 
@@ -272,7 +272,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss Application Server)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss Application Server)
 
-**Create an Encryption Client API object **
+**Create an Encryption Client API object**
 
 To programmatically perform an Encryption service operation, you must create an Encryption service client. If you are using the Java Encryption Service API, create an `EncrytionServiceClient` object. If you are using the web service Encryption Service API, create an `EncryptionServiceService` object.
 
@@ -482,7 +482,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss Application Server)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss Application Server)
 
-**Create an encryption service client **
+**Create an encryption service client**
 
 To programmatically perform an Encryption service operation, you must create an Encryption service client. If you are using the Java Encryption Service API, create an `EncrytionServiceClient` object. If you are using the web service Encryption Service API, create an `EncryptionServiceService` object.
 
@@ -498,7 +498,7 @@ To remove certificate-based encryption from an encrypted PDF document, you requi
 >
 >A private key is stored in the AEM Forms Trust Store. When a certificate is placed there, an alias value is specified.
 
-**Save the PDF document **
+**Save the PDF document**
 
 After certificate-based encryption is removed from an encrypted PDF document, you can save the PDF document as a PDF file. Users can open the PDF document in Adobe Reader or Acrobat.
 
@@ -643,7 +643,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
-**Create an encryption service client **
+**Create an encryption service client**
 
 To programmatically perform an Encryption service operation, you must create an Encryption service client. If you are using the Java Encryption Service API, create an `EncrytionServiceClient` object. If you are using the web service Encryption Service API, create an `EncryptionServiceService` object.
 
@@ -655,7 +655,7 @@ You must obtain an encrypted PDF document to remove password-based encryption. I
 
 To remove password-based encryption from an encrypted PDF document, you require both an encrypted PDF document and a master password value that is used to remove encryption from the PDF document. The password that is used to open a password-encrypted PDF document cannot be used to remove encryption. A master password is specified when the PDF document is encrypted with a password. (See [Encrypting PDF Documents with a Password](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
-**Save the PDF document **
+**Save the PDF document**
 
 After the Encryption service removes password-based encryption from a PDF document, you can save the PDF document as a PDF file. Users can open the PDF document in Adobe Reader or Acrobat without specifying a password.
 
@@ -790,7 +790,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss Application Server)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss Application Server)
 
-**Create an encryption service client **
+**Create an encryption service client**
 
 To programmatically perform an Encryption service operation, you must create an Encryption service client. If you are using the Java Encryption Service API, create an `EncrytionServiceClient` object. If you are using the web service Encryption Service API, create an `EncryptionServiceService` object.
 
@@ -967,7 +967,7 @@ The following JAR files must be added to your project’s class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss Application Server)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss Application Server)
 
-**Create a service client **
+**Create a service client**
 
 To programmatically perform an Encryption service operation, you must create an Encryption service client. If you are using the Java Encryption Service API, create an `EncrytionServiceClient` object. If you are using the web service Encryption Service API, create an `EncryptionServiceService` object.
 

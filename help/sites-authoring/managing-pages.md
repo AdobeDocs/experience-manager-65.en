@@ -84,12 +84,12 @@ From any point, you can see the upward branch from breadcrumbs in the header bar
 
 When creating a new page there are two keys fields:
 
-* ** [Title](#title)**:
+* **[Title](#title)**:
 
     * This is displayed to the user in the console and shown at the top of the page content when editing.
     * This field is mandatory.
 
-* ** [Name](#name)**:
+* **[Name](#name)**:
 
     * This is used to generate the URI.
     * User input for this field is optional. If not specified, the name is derived from the title. See the following section [Page Name Restrictions and Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) for details.

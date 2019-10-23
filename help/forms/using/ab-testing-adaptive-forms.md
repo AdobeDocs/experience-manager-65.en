@@ -39,7 +39,7 @@ Perform the following steps to integrate a running Target server with AEM Forms:
 1. On AEM server, go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html.
 
 1. In the **Adobe Target **section, click **Show Configurations** and then the **+** icon to add a new configuration.
-   If you are configuring target for the first time, click **Configure Now. **
+   If you are configuring target for the first time, click **Configure Now.**
 
 1. In the Create configuration dialog, specify a **Title** and optionally a **Name** for the configuration.
 
@@ -87,7 +87,7 @@ AEM lets you create an audience, and use it for an A/B test. The audience you cr
 1. In the Adobe Target Configuration dialog, select a Target configuration and click **Ok**.
 1. In the Create New Audience page, create rules. Rules let you categorize the audience. For example, you want to categorize audiences based on operating system. Your audience A comes from Windows, and audience B comes from Linux.
 
-    1. To categorize audience based on Windows, in Rule #1, select **OS **attribute type. From the When drop-down, select **Windows. **
+    1. To categorize audience based on Windows, in Rule #1, select **OS** attribute type. From the When drop-down, select **Windows.**
 
     1. To categorize audience based on Linux, in Rule #2, select **OS** attribute type. From the When drop-down, select **Linux, **and click **Next**.
 

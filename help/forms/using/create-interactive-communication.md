@@ -264,7 +264,7 @@ In the Print channel, you can configure the attachments and library access to al
         * Data model object: Select a form data model property whose value is populated in the field. Alternatively, select the **Data Sources** tab and drag-and-drop the property to the field.
 
     * **[!UICONTROL Default Values]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object or text fragment. If the data binding type is none, the default value is prepopulated in the field. 
-    * **[!UICONTROL **Display Pattern**]**: You can also define a display format for a field. Select any of the pre-defined options from the **Type** drop-down list to apply a display format to a field. Select **Custom** to define a display pattern that is not available in the list. For more information, see [Data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146).
+    * **[!UICONTROL Display Pattern]**: You can also define a display format for a field. Select any of the pre-defined options from the **Type** drop-down list to apply a display format to a field. Select **Custom** to define a display pattern that is not available in the list. For more information, see [Data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146).
     
     * **[!UICONTROL Editable By Agent]**: Select to allow the agent to edit the value in the field in the Agent UI. This setting is not applicable if Binding Type is Text Fragment. 
     * **[!UICONTROL Label]**: Specify a text string displayed with the field to the Agent in Agent UI. This setting is not applicable if Binding Type is Text Fragment. 

@@ -37,7 +37,7 @@ The following Quick Starts are available for the AEM Forms Repository service.
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP
 
-**Applications/FormsApplication **
+**Applications/FormsApplication**
 
 Most AEM Forms repository service quick starts interact with an application named `Applications/FormsApplication,` as shown in the following illustration.
 

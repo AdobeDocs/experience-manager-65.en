@@ -76,11 +76,8 @@ Follow the steps below to implement the hospitality reservation activation use c
 1. Select **Targeting** from the editor and select **Brand** and the **Activity** from the drop-down menu and click **Start Targeting**.
 1. **Checking the Preview**
 
-    1. Click **Preview. **Also, open your Google Sheets and update its value.**
-       **
-
-    1. Update the value in **Restaurant1** and **Restaurant2** columns. If **Restaurant1** &gt; **Restaurant2, **you should be able to view an image of *Steak* food otherwise, *Thai* food image displays on your screen.**
-       **
+    1. Click **Preview.** Also, open your Google Sheets and update its value.
+    1. Update the value in **Restaurant1** and **Restaurant2** columns. If **Restaurant1** &gt; **Restaurant2,** you should be able to view an image of *Steak* food otherwise, *Thai* food image displays on your screen.
 
    ![](assets/result5.gif)
 

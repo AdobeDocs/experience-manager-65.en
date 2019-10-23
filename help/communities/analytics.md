@@ -173,7 +173,7 @@ On the Create Configuration dialog, the values to be entered identify the config
 * *Template*
   Select `Adobe Analytics Configuration`
 
-* Select **Create **
+* Select **Create**
 
     * launches configuration page and opens `Analytics Settings` dialog
 

@@ -60,7 +60,7 @@ To render a form based on fragments, perform the following tasks:
 
 Include necessary files into your development project. If you are creating a client application using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-**Create a Forms Client API object **
+**Create a Forms Client API object**
 
 Before you can programmatically perform a Forms service Client API operation, you must create a Forms service client.
 

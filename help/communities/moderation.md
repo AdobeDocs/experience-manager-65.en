@@ -62,9 +62,9 @@ Only when signed in as an administrator, or as a member with ` [moderator permis
 
 Setting aside the left navigation rail (which appears on author, but not on publish), the moderation UI has following main areas:
 
-* ** [top navigation bar](#top-navigation-bar)**
-* ** [toolbar](#toolbar)**
-* ** [content area](#content-area)**
+* **[top navigation bar](#top-navigation-bar)**
+* **[toolbar](#toolbar)**
+* **[content area](#content-area)**
 
 ### Top Navigation Bar {#top-navigation-bar}
 
@@ -248,9 +248,9 @@ To expose the custom filters on existing Community sites:
 
 1. Edit `Clientlibs` of existing moderation page `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
 
-    * Add new category** ** `cq.social.hbs.moderation.v2.`
+    * Add new category `cq.social.hbs.moderation.v2.`
 
-1. Go to `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`** **
+1. Go to `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
     * Set to new component `sling:resourceType = social/moderation/v2/filters.`
 

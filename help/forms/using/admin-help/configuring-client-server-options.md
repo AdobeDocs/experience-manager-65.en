@@ -734,7 +734,7 @@ You can make the following changes using the configuration file:
 1. Click OK.
 1. Before changing the configuration file, make a backup copy in case you need to revert.
 
-**Import a configuration file **
+**Import a configuration file**
 
 1. In administration console, click Services &gt; document security 11 &gt; Configuration &gt; Manual Configuration.
 1. Click Browse to go to the configuration file and then click Import. You cannot type the path directly in the File Name box.

@@ -40,8 +40,9 @@ Registered community members can now send direct messages in bulk to groups thro
 
 ### Enhancements to Bulk Moderation {#enhancements-to-bulk-moderation}
 
-**Custom filters in Bulk Moderation
-** [Custom filters](/help/communities/moderation.md#custom-filters) can now be developed and added to Bulk Moderation UI.
+Custom filters in Bulk Moderation
+
+[Custom filters](/help/communities/moderation.md#custom-filters) can now be developed and added to Bulk Moderation UI.
 
 A [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) demonstrating filtering through tags is available in [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). This project can be used as a base to develop analogous custom filters.
 

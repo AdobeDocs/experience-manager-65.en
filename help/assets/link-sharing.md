@@ -57,7 +57,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >If a shared asset is moved to a different location, its link stops working. Re-create the link and reshare with the users.
 
-1. From the web console, open the** ** **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
+1. From the web console, open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
 
     * local
     * author

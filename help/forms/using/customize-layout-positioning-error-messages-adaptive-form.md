@@ -29,7 +29,7 @@ You can customize the layout of a single field or of all the fields to change th
 
 Perform the following steps to apply a custom layout to a single field:
 
-1. Open the form in **Style** mode. To open the form in style mode, in the page toolbar tap ![](assets/canvas-drop-down.png) &gt; **Style**.** **
+1. Open the form in **Style** mode. To open the form in style mode, in the page toolbar tap ![](assets/canvas-drop-down.png) &gt; **Style**.
 1. In the sidebar, under Form Objects**,** select the field and tap the edit button ![](assets/edit-button.png).
 1. Select the state of the field you want to customize, and specify the styling for that state. 
 

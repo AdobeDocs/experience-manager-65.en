@@ -65,8 +65,7 @@ Each user can set certain properties for himself or herself.
 
         * Pages will be opened in the current window.
 
-* **Show desktop actions for Assets
-  **
+* **Show desktop actions for Assets**
 
   This option requires AEM desktop app to use.
 
@@ -77,8 +76,7 @@ Each user can set certain properties for himself or herself.
     * Click the color block to open the swatch selector to select a color.
     * Alternatively, enter the hex code for the desire color in the field.
 
-* **Relative Date Presentation
-  **
+* **Relative Date Presentation**
 
   To improve readability, AEM will render dates within the last seven days as relative dates (e.g. Three days ago) and older dates as exact dates (e.g. 20 March 2017).
 
@@ -104,13 +102,11 @@ Each user can set certain properties for himself or herself.
 
   This option enables keyboard shortcuts. By default they are enabled, but can be disabled for example if a user has certain accessibility requirements.
 
-* **Use Classic Authoring Experience
-  **
+* **Use Classic Authoring Experience**
 
   This option enables [classic UI](/help/sites-classic-ui-authoring/home.md)-based page authoring. By default the standard UI is used.
 
-* **Enable Assets Home Page
-  **
+* **Enable Assets Home Page**
 
   This option will only be available if your system administrator has enabled Assets Home Page experience for the entire organization.
 

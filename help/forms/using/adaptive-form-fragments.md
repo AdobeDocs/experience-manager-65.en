@@ -119,7 +119,7 @@ Perform the following steps to show complete fragments in forms:
 The adaptive form fragments you create appear in the Adaptive Form Fragments tab of the AEM content finder. To insert an adaptive form fragment in an adaptive form:
 
 1. Open the adaptive form, in edit mode, in which you want to insert an adaptive form fragment.
-1. Click **Assets ** ![](assets/assets-browser.png) in the sidebar. In the assets browser, select **Adaptive Form Fragments **from the drop-down**. **
+1. Click **Assets** ![](assets/assets-browser.png) in the sidebar. In the assets browser, select **Adaptive Form Fragments** from the drop-down.
 
    You can also choose to display all adaptive form fragments or filter based on their form model - Form Template, XML Schema, or Basic.
 

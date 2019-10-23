@@ -83,7 +83,7 @@ To configure AEM to integrate with Salesforce:
 
    In AEM, a confirmation dialog opens telling you that you connected successfully.
 
-1. Navigate to the root page of your website and click **Page Properties**. Then select **Cloud Services** and add **Salesforce** and select the correct confguration (for example, **developer**).
+1. Navigate to the root page of your website and click **Page Properties**. Then select **Cloud Services** and add **Salesforce** and select the correct configuration (for example, **developer**).
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 

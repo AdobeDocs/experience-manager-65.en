@@ -13,7 +13,7 @@ discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 
 # Programmatically Managing Endpoints {#programmatically-managing-endpoints}
 
-**About Endpoint Registry Service **
+**About Endpoint Registry Service**
 
 The Endpoint Registry service provides the ability to programmatically manage endpoints. You can, for example, add the following types of endpoints to a service:
 
@@ -77,7 +77,7 @@ Include necessary files in your development project. The following JAR files mus
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an EndpointRegistry Client object **
+**Create an EndpointRegistry Client object**
 
 Before you can programmatically add an EJB endpoint, you must create an `EndpointRegistryClient` object.
 
@@ -182,7 +182,7 @@ The following JAR files must be added to your project’s class path:
 
 These JAR files are required to create a SOAP endpoint. However, you require addition JAR files if you use the SOAP endpoint to invoke the service. For information about AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an EndpointRegistry Client object **
+**Create an EndpointRegistry Client object**
 
 To programmatically add a SOAP endpoint to a service, you must create an `EndpointRegistryClient` object.
 
@@ -292,7 +292,7 @@ The following JAR files must be added to your project’s class path:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an EndpointRegistry Client object **
+**Create an EndpointRegistry Client object**
 
 To programmatically add a Watched Folder endpoint, you must create an `EndpointRegistryClient` object.
 
@@ -525,7 +525,7 @@ The following JAR files must be added to your project’s class path:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an EndpointRegistry Client object **
+**Create an EndpointRegistry Client object**
 
 Before you can programmatically add an Email endpoint, you must create an `EndpointRegistryClient` object.
 
@@ -780,7 +780,7 @@ The following JAR files must be added to your project’s class path:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an EndpointRegistry Client object **
+**Create an EndpointRegistry Client object**
 
 To programmatically add a Remoting endpoint, you must create an `EndpointRegistryClient` object.
 
@@ -882,7 +882,7 @@ The following JAR files must be added to your project’s class path:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an EndpointRegistry Client object **
+**Create an EndpointRegistry Client object**
 
 Before you can programmatically add a TaskManager endpoint, you must create an `EndpointRegistryClient` object.
 
@@ -1003,7 +1003,7 @@ The following JAR files must be added to your project’s class path:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an EndpointRegistry Client object **
+**Create an EndpointRegistry Client object**
 
 To programmatically modify an endpoint, you must create an `EndpointRegistryClient` object.
 
@@ -1105,7 +1105,7 @@ The following JAR files must be added to your project’s class path:
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an EndpointRegistry Client object **
+**Create an EndpointRegistry Client object**
 
 To programmatically remove an endpoint, you must create an `EndpointRegistryClient` object.
 
@@ -1197,7 +1197,7 @@ The following JAR files must be added to your project’s class path:
 
 If AEM Forms is deployed on a supported J2EE application server that is not JBoss, then replace adobe-utilities.jar and jbossall-client.jar with JAR files that are specific to the J2EE application server on which AEM Forms is deployed. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Create an ConnectorRegistry Client object **
+**Create an ConnectorRegistry Client object**
 
 To programmatically retrieve endpoint connector information, create a `ConnectorRegistryClient` object.
 

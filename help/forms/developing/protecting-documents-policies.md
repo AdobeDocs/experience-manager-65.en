@@ -1978,7 +1978,7 @@ You must retrieve a Word document in order to apply a policy. After you apply a 
 
 To apply a policy to a Word document, you must reference an existing policy and specify which policy set the policy belongs to. The user who is setting the connection properties must have access to the specified policy. If not, an exception occurs.
 
-**Save the Word document **
+**Save the Word document**
 
 After the Document Security service applies a policy to a Word document, you can save the policy-protected Word document as a DOC file.
 
