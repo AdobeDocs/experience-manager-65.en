@@ -45,7 +45,7 @@ The following diagram depicts end-to-end procedure to create, run, and monitor a
 
 ## Create a workflow model {#create-a-workflow-model}
 
-A workflow model consists of logic and flow of a business process. It is made up of a series of the steps. These steps are AEM components. You can extend workflow steps with parameters and scripts to provide more functionality and control, as required. AEM Forms provides a few steps in addition to AEM steps available out of the box. For a detailed list of AEM and AEM Forms steps, see [AEM Workflow Step Reference](/experience-manager/6-3/help/sites-developing/workflows-step-ref.md) and [Forms-centric workflow on OSGi - Step Reference](../../forms/using/aem-forms-workflow.md).
+A workflow model consists of logic and flow of a business process. It is made up of a series of the steps. These steps are AEM components. You can extend workflow steps with parameters and scripts to provide more functionality and control, as required. AEM Forms provides a few steps in addition to AEM steps available out of the box. For a detailed list of AEM and AEM Forms steps, see [AEM Workflow Step Reference](/help/sites-developing/workflows-step-ref.md) and [Forms-centric workflow on OSGi - Step Reference](../../forms/using/aem-forms-workflow.md).
 
 AEM provides an intuitive user interface to create a workflow model using the provided workflow steps. For step-by-step instructions to create a workflow model, see [Creating Workflow Models](/help/sites-developing/workflows-models.md). The following example provides step-by-step instructions to create a workflow model for an approval and review workflow:
 
@@ -74,7 +74,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 1. Enable email notifications. You can configure Forms-centric workflow on OSGi to send email notifications to the users or assignees. Perform the following configurations to enable email notifications:
 
     1. Go to AEM configuration manager at https://[server]:[port]/system/console/configMgr.
-    1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** **fields. Click **[!UICONTROL Save]**.
+    1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
     1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
 1. Create workflow stages. A workflow can have multiple stages. These stages are displayed in the AEM Inbox and report progress of the workflow.
@@ -240,7 +240,7 @@ An administrator (a member of fd-administrators group) can configure a network f
   </tr>
   <tr>
    <td><span class="uicontrol">Output File Pattern</code></td>
-   <td>Specify the directory structure for output files and directories. You can also specify a <a href="/help/forms/using/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td>
+   <td>Specify the directory structure for output files and directories. You can also specify a <a href="help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td>
   </tr>
  </tbody>
 </table>
@@ -251,7 +251,7 @@ An administrator (a member of fd-administrators group) can configure a network f
    |---|---|
    | Payload Mapper Filter |When you create a watched folder, it creates a folder structure in the crx-repository. The folder structure can serve as a payload to the workflow. You can write a script to map an AEM Workflow to accept inputs from the watched folder structure. An out of the box implementation is available and listed in the Payload Mapper Filter. If you do not have a custom implementation, select the default implementation. |
 
-   The Advanced tab contains more fields. Most of these fields contain a default value. To learn about all the fields, see the [Create or Configure a watched folder](/help/forms/using/Creating-Configure-watched-folder.md) article.
+   The Advanced tab contains more fields. Most of these fields contain a default value. To learn about all the fields, see the [Create or Configure a watched folder](/help/forms/using/creating-configure-watched-folder.md) article.
 
 ### Submitting an interactive communication or a letter {#letter}
 

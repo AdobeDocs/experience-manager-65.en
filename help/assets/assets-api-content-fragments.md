@@ -216,7 +216,6 @@ Associated content is currently not exposed.
 Usage can differ depending on whether you are using an AEM author or publish environment, together with your specific use case.
 
 * Creation is strictly bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
-
 * Delivery is possible from both, as AEM serves requested content in JSON format only.
 
     * Storage and delivery from an AEM author instance should suffice for behind-the-firewall, media library applications.
@@ -238,7 +237,7 @@ Usage is via:
 
 For example:
 
-[https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json](https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json)
+`https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json`
 
 The response is serialized JSON with the content structured as in the content fragment. References are delivered as reference URLs.
 
