@@ -13,9 +13,11 @@ docset: aem65
 
 # Conditions in Interactive Communications{#conditions-in-interactive-communications}
 
+Creating and editing condition fragments to be used in Interactive Communications - condition is one of the four types of document fragments used to build Interactive Communications. The other three are texts, lists, and layout fragments.
+
 ## Overview {#overview}
 
-Condition is a document fragment that you can include in an Interactive Communication. The other document fragments are [text](../../forms/using/texts-interactive-communications.md), [list](/help/forms/using/cm-lists.md), and [layout fragment](/help/forms/using/cm-layout-fragments.md). Conditions enable you to define one or more contextual assets that get included in an Interactive Communication based on the supplied data and rules.
+Condition is a document fragment that you can include in an Interactive Communication. The other document fragments are [text](../../forms/using/texts-interactive-communications.md), list, and layout fragment. Conditions enable you to define one or more contextual assets that get included in an Interactive Communication based on the supplied data and rules.
 
 Examples:
 
@@ -70,13 +72,9 @@ The assets in the conditions that are rendered based on the applied rules and th
    ![](assets/createconditionscreenassetsaddedannotated.png)
 
    **[A] Reject Change.** Tap this icon to reject the changes you may have made to the asset and the rule in the condition.
-
    **[B] Accept Change.** Tap this icon to accept the changes you have made in the asset and rule in the condition.
-
    **[C] Duplicate Asset.** Tap this icon to create a copy of the asset along with the applied rule, if any, in the condition. Then you can proceed to editing the rule and asset for duplicated asset. Duplicating an asset is useful for creating similar rules to display alternate assets based on a particular context.
-
    **[D] Show Preview.** Tap this icon to display a preview of the asset within the Create\Edit Condition page.
-
    **[E] Reorder.** Tap and hold this icon to drag-and-drop assets to reorder them within a condition.
 
    You can select the following options to specify how the condition behaves at runtime:
