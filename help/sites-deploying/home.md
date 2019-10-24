@@ -1,13 +1,13 @@
 ---
 title: AEM 6.5 Deploying User Guide
 seo-title: AEM 6.5 Deploying User Guide
-description: This guide covers all AEM Deploying tasks, such as installing and deploying AEM. 
-seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM. 
+description: This guide covers all AEM Deploying tasks, such as installing and deploying AEM.
+seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
 ---
 
 # AEM 6.5 Deploying User Guide
 
-This guide covers all AEM Deploying tasks, such as installing and deploying AEM. 
+This guide covers all AEM Deploying tasks, such as installing and deploying AEM.
 
 ## Key AEM articles
 
@@ -44,3 +44,9 @@ This guide covers all AEM Deploying tasks, such as installing and deploying AEM.
 * [GDPR Readiness](/help/managing/gdpr-compliance.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+
+## Copyright, licenses, and disclaimers {#copyright-licenses-and-disclaimers}
+
+For further information see [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+
+Notice of third-party licenses: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

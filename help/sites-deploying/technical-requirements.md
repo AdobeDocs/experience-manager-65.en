@@ -507,9 +507,12 @@ XMP write-back is supported and enabled for the following platforms and file for
     * Windows Server
     * Mac OS X (64-bit)
 
-* **File Formats: **JPEG, PNG, TIFF, PDF, INDD, AI, and EPS.
+**File Formats**
 
-## Copyright, Licenses, and Disclaimers {#copyright-licenses-and-disclaimers}
-
-See detailed information at [Copyright, Licenses, and Disclaimers](/help/release-notes/licenses.md).
-
+* JPEG
+* PNG
+* TIFF
+* PDF
+* INDD
+* AI
+* EPS
