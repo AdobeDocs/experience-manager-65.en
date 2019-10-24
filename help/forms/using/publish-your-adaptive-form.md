@@ -47,9 +47,9 @@ AEM Forms allows form developers to seamlessly embed adaptive forms in an AEM Si
 
 AEM Forms provide a component, AEM Forms Container, to embed an adaptive form to an AEM Sites page. By default, the component is not visible in AEM Sites container. Perform the following steps to enable the AEM Forms Container component and to embed the adaptive form in an AEM Sites Page:
 
-1. Create and open a page in the We.Retail site for editing. For example, `https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html`. The adaptive form is embedded to the sites page.
+1. Create and open a page in the We.Retail site for editing. For example, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). The adaptive form is embedded to the sites page.
 
-   You can also embed the adaptive form in an existing We.Retail site's page. For example, the ABOUT US page `https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html`. It saves you the time to create a page. The steps below use the newly created page.
+   You can also embed the adaptive form in an existing We.Retail site's page. For example, the ABOUT US page [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). It saves you the time to create a page. The steps below use the newly created page.
 
    The We.Retail site is shipped with AEM. If you do not have the We.Retail site installed, see to [We.Retail Reference Implementation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) install the site.
 
