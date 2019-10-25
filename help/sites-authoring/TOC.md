@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-product: Adobe Experience Manager       
+product: Adobe Experience Manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 ---
@@ -85,3 +85,42 @@ user-guide-title: AEM 6.5 Authoring User Guide
     + [Targeting your Adobe Campaign](target-adobe-campaign.md)
     + [Creating Adobe Campaign Forms in AEM](adobe-campaign-forms.md)
     + [Adobe Campaign Components](adobe-campaign-components.md)
++ From AEM 65 {#from65}
+    + [Participating in Workflows](/help/sites-authoring/workflows-participating.md)
+    + [Publishing Pages](/help/sites-authoring/publishing-pages.md)
+    + [Export to CSV](/help/sites-authoring/csv-export.md)
+    + [Authoring Targeted Content Using Targeting Mode](/help/sites-authoring/content-targeting-touch.md)
+    + [Using Tags](/help/sites-authoring/tags.md)
+    + [Working with Page Versions](/help/sites-authoring/working-with-page-versions.md)
+    + [Quick Guide to Authoring Pages](/help/sites-authoring/qg-page-authoring.md)
+    + [Use Rich Text Editor to author content](/help/sites-authoring/rich-text-editor.md)
+    + [Authoring Pages](/help/sites-authoring/page-authoring.md)
+    + [Editing Launches](/help/sites-authoring/launches-editing.md)
+    + [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)
+    + [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.md)
+    + [Projects](/help/sites-authoring/projects.md)
+    + [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md)
+    + [Foundation Components](/help/sites-authoring/default-components-foundation.md)
+    + [Creating Accessible Content (WCAG 2.0 Conformance)](/help/sites-authoring/creating-accessible-content.md)
+    + [Configuring Your Account Environment](/help/sites-authoring/user-properties.md)
+    + [Search](/help/sites-authoring/search.md)
+    + [Promoting Launches](/help/sites-authoring/launches-promoting.md)
+    + [DO NOT PUBLISH Smart Layout](/help/sites-authoring/smart-layout.md)
+    + [Editing Page Properties](/help/sites-authoring/editing-page-properties.md)
+    + [Page Diff](/help/sites-authoring/page-diff.md)
+    + [Experience Fragments](/help/sites-authoring/experience-fragments.md)
+    + [Launches](/help/sites-authoring/launches.md)
+    + [Managing Activities](/help/sites-authoring/activitylib.md)
+    + [Creating and Organizing Pages](/help/sites-authoring/managing-pages.md)
+    + [Basic Handling](/help/sites-authoring/basic-handling.md)
+    + [Editing Page Content](/help/sites-authoring/editing-content.md)
+    + [Analyzing Page Performance](/help/sites-authoring/ci-analyze.md)
+    + [Authoring](/help/sites-authoring/author.md)
+    + [Creating Page Templates](/help/sites-authoring/templates.md)
+    + [Authoring - the Environment and Tools](/help/sites-authoring/author-environment-tools.md)
+    + [Managing Audiences](/help/sites-authoring/managing-audiences.md)
+    + [Selecting your UI](/help/sites-authoring/select-ui.md)
+    + [First Steps for Authors](/help/sites-authoring/first-steps.md)
+    + [Components Console](/help/sites-authoring/default-components-console.md)
+    + [Creating and Managing Offers](/help/sites-authoring/offerlib.md)
+    + [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md)
