@@ -62,7 +62,7 @@ docset: aem65
 
 ## Installation Instructions {#installation-instructions}
 
-See I [nstalling feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
+See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
 
 ## Helpful resources {#helpful-resources}
 
