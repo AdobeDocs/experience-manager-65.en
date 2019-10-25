@@ -90,43 +90,7 @@ user-guide-title: AEM 6.5 Deploying Guide
    + [Best Practices for Queries and Indexing](best-practices-for-queries-and-indexing.md)
    + [User Interface Recommendations for Customers](ui-recommendations.md)
    + [Performance & Scalability](performance.md)
-
-
 + From AEM 6.5 migration {#fromaem65}
     + [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
     + [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
     + [Magento](/help/sites-deploying/magento.md)
-
-    + [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-    + [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-    + [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md)
-    + [Assessing the Upgrade Complexity with the Pattern Detector](/help/sites-deploying/pattern-detector.md)
-    + [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-    + [Resource Mapping](/help/sites-deploying/resource-mapping.md)
-    + [eCommerce Overview](/help/sites-deploying/ecommerce.md)
-    + [Replication](/help/sites-deploying/replication.md)
-    + [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-    + [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
-    + [Opting Into Aggregated Usage Statistics Collection](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
-    + [Version Purging](/help/sites-deploying/version-purging.md)
-
-
-<!--
-
-To be removed:
-[Quickstart for AEM Screens](setting-up-a-basic-project-screens.md)
-[Device Control Center](device-control-center.md)
-[repository-restructuring-in-aem64](repository-restructuring-in-aem65.md)
-[Web Console] (configuring-web-console.md)
-[Configuring and Deploying AEM Screens](configuring-screens-introduction.md)
-[Kickstart Guide](kickstart-for-aem-screens.md)
-/help/sites/deploying/using/performance-lp.md
-/help/sites-deploying/do-not-delete-performance-guidelines-pdf.md
-/help/sites-deploying/removing-the-geometrixx-sites.md
-/help/sites-deploying/consistency-check.md
-
-Redirects:
-[(Redirect)Glossary](screens-glossary.md) to /help/screens/aem-screens-introduction.md
-[(Redirect)What is AEM Screens?](aem-screens-introduction.md) redirect to /help/screens/aem-screens-introduction.md
-[(Enabling HTTP Over SSL)](config-ssl.md) redirect to /content/help/en/experience-manager/6-4/sites-administering/ssl-by-default
--->

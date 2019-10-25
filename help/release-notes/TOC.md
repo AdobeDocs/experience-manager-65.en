@@ -20,5 +20,3 @@ user-guide-title: AEM 6.5 Release Notes
 + [CRX2OAK Migration Tool](crx2oak.md)
 + [Smart Content Service Release Notes](smart-content-service-release-notes.md)
 + [Livefyre Feature Pack 2.0.6 Release Notes](livefyre-feature-pack-206.md)
-+ From AEM 6.5 migration {#from65}
-  + [Dynamic Media feature pack 18912 release notes](release-notes/dynamic-media-featurepack-14410.md)
