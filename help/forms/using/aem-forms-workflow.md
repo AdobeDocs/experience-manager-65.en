@@ -240,7 +240,7 @@ An administrator (a member of fd-administrators group) can configure a network f
   </tr>
   <tr>
    <td><span class="uicontrol">Output File Pattern</code></td>
-   <td>Specify the directory structure for output files and directories. You can also specify a <a href="help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td>
+   <td>Specify the directory structure for output files and directories. You can also specify a <a href="/help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td>
   </tr>
  </tbody>
 </table>

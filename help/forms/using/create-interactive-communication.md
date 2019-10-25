@@ -163,7 +163,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    Further, manage the following in the Interactive Communication:
 
-    * [Adding and configuring charts](/help/forms/using/chart-component.md)
+    * [Adding and configuring charts](/help/forms/using/chart-component-interactive-communications.md)
     * [Sychronizing web channel with the print channel](../../forms/using/create-interactive-communication.md#synchronize)
 
         * Auto sync

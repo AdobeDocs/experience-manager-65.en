@@ -29,7 +29,7 @@ AEM Forms provide a testing framework, Calvin, to automate testing of your adapt
 
 Test suites have a collection of test cases. You can have multiple test suites. It is recommended to have a separate test suite for each form. To create a test suite:
 
-1. Log to AEM Forms author instance in as an administrator. Open CRXDE Lite. You can tap AEM Logo &gt; **Tools **&gt; **General **&gt; **CRXDE Lite** or open the [https://localhost:4502/crx/de/index.jsp](/crx/de/index.jsp) URL in a browser to open CRXDE Lite.
+1. Log to AEM Forms author instance in as an administrator. Open CRXDE Lite. You can tap AEM Logo &gt; **Tools** &gt; **General** &gt; **CRXDE Lite** or open the [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) URL in a browser to open CRXDE Lite.
 
 1. Navigate to /etc/clientlibs in CRXDE Lite. Right-click the /etc/clientlibs subfolder and click **Create** &gt; **Create Node.** In the Name field type **WeRetailFormTestCases**. Select the type as **cq:ClientLibraryFolder** and click **OK**. It creates a node. You can use any name in place of WeRetailFormTestCases.
 1. Add the following properties to the WeRetailFormTestCases node and tap **Save ALL**.

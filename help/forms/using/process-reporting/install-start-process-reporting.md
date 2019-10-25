@@ -267,7 +267,7 @@ Click the title at any time to go back to the Home screen.
 
 The Last Update Time displays the last date and time up to which the data updates were pushed to the Process Reporting repository.
 
-For details on the data publishing service and how to schedule this service, see [Schedule process data publishing](/help/using/forms/process-reportinginstall-start-process-reporting.md#p-schedule-process-data-publishing-p) in the article Getting Started with Process Reporting.
+For details on the data publishing service and how to schedule this service, see [Schedule process data publishing](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in the article Getting Started with Process Reporting.
 
 **Process Reporting user:** The logged in user name displays to the right of the Last Update time.
 
