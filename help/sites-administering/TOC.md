@@ -7,7 +7,7 @@ user-guide-title: AEM 6.5 Administering User Guide
 
 # AEM 6.5 Administering User Guide {#administering}
 
-+ [Administering User Guide overview](home.md) 
++ [Administering User Guide overview](home.md)
 + Sites Features {#introduction}
     + [Website Administration](msm-and-translation.md)
     + [Reusing Content: Multi Site Manager and Live Copy](msm.md)
@@ -104,7 +104,6 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Integrating with Third-Party Services](third-party-services.md)
     + [Integrating with Salesforce](salesforce.md)
     + [Integrating with Adobe Target](target.md)
-    + [Integrating with Livefyre](livefyre.md)
     + [Integrating with Adobe Analytics](adobeanalytics.md)
     + [Connecting to Adobe Analytics and Creating Frameworks](adobeanalytics-connect.md)
     + [Configuring Link Tracking for Adobe Analytics](adobeanalytics-link.md)

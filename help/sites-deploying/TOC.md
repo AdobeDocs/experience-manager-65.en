@@ -92,6 +92,25 @@ user-guide-title: AEM 6.5 Deploying Guide
    + [Performance & Scalability](performance.md)
 
 
++ From AEM 6.5 migration {#fromaem65}
+    + [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
+    + [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
+    + [Magento](/help/sites-deploying/magento.md)
+
+    + [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+    + [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
+    + [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md)
+    + [Assessing the Upgrade Complexity with the Pattern Detector](/help/sites-deploying/pattern-detector.md)
+    + [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+    + [Resource Mapping](/help/sites-deploying/resource-mapping.md)
+    + [eCommerce Overview](/help/sites-deploying/ecommerce.md)
+    + [Replication](/help/sites-deploying/replication.md)
+    + [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+    + [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
+    + [Opting Into Aggregated Usage Statistics Collection](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
+    + [Version Purging](/help/sites-deploying/version-purging.md)
+
+
 <!--
 
 To be removed:

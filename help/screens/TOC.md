@@ -66,7 +66,7 @@ user-guide-title: Adobe Experience Manager Screens 6.5 Help
 + Release Notes {#release-notes}
     + [Release Notes for Feature Pack 201809](screens-release-notes.md)
     + [Release Notes for Feature Pack 201812](release-notes-fp-201812.md)
-+ From AEM 64 documentation {#from64}
++ From AEM 65 migration {#from65}
     + [Enabling Targeting in a Channel](/help/screens/enabling-targeting.md)
     + [Part 4: Project Management and Deployment](/help/screens/project-management-and-deployment.md)
     + [Embedded Sequences](/help/screens/embedded-sequences.md)
