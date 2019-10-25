@@ -578,7 +578,7 @@ List of OSGi bundles included in AEM 6.5.2.0
 
 List of Content Packages included in AEM 6.5.2.0
 
-[Get File](assets/osgi_package_65.md)
+[Get File](assets/osgi_package_65.txt)
 
 ## Helpful resources {#helpful-resources}
 
