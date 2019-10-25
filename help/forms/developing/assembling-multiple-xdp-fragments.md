@@ -20,53 +20,53 @@ You can assemble multiple XDP fragments into a single XDP document. For example,
 
 ![](assets/am_am_forma.png)
 
-The following illustration shows the patient section (represents the tuc018_contact.xdp file used in the *Assembling multiple XDP fragments* quick start): 
+The following illustration shows the patient section (represents the tuc018_contact.xdp file used in the *Assembling multiple XDP fragments* quick start):
 
 ![](assets/am_am_formb.png)
 
-The following illustration shows the patient health section (represents the tuc018_patient.xdp file used in the *Assembling multiple XDP fragments* quick start): 
+The following illustration shows the patient health section (represents the tuc018_patient.xdp file used in the *Assembling multiple XDP fragments* quick start):
 
 ![](assets/am_am_formc.png)
 
-This fragment contains two subforms named *subPatientPhysical* and *subPatientHealth*. Both of these sub forms are referenced in the DDX document that is passed to the Assembler service. Using the Assembler service, you can combine all of these XDP fragments into a single XDP document, as shown in the following illustration. 
+This fragment contains two subforms named *subPatientPhysical* and *subPatientHealth*. Both of these sub forms are referenced in the DDX document that is passed to the Assembler service. Using the Assembler service, you can combine all of these XDP fragments into a single XDP document, as shown in the following illustration.
 
 ![](assets/am_am_formd.png)
 
 The following DDX document assembles multiple XDP fragments into an XDP document.
 
 ```as3
- <?xml version="1.0" encoding="UTF-8"?> 
- <DDX xmlns="https://ns.adobe.com/DDX/1.0/"> 
-         <XDP result="tuc018result.xdp"> 
-            <XDP source="tuc018_template_flowed.xdp"> 
-             <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/> 
-               <XDPContent insertionPoint="ddx_fragment" source="tuc018_patient.xdp" fragment="subPatientPhysical" required="false"/> 
-               <XDPContent insertionPoint="ddx_fragment" source="tuc018_patient.xdp" fragment="subPatientHealth" required="false"/> 
-            </XDP> 
-         </XDP>         
+ <?xml version="1.0" encoding="UTF-8"?>
+ <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
+         <XDP result="tuc018result.xdp">
+            <XDP source="tuc018_template_flowed.xdp">
+             <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
+               <XDPContent insertionPoint="ddx_fragment" source="tuc018_patient.xdp" fragment="subPatientPhysical" required="false"/>
+               <XDPContent insertionPoint="ddx_fragment" source="tuc018_patient.xdp" fragment="subPatientHealth" required="false"/>
+            </XDP>
+         </XDP>
  </DDX>
 ```
 
 The DDX document contains an XDP `result` tag that specifies the name of the result. In this situation, the value is `tuc018result.xdp`. This value is referenced in the application logic that is used to retrieve the XDP document after the Assembler service returns the result. For example, consider the following Java application logic that is used to retrieve the assembled XDP document (notice the value is bolded):
 
 ```as3
- //Iterate through the map object to retrieve the result XDP document 
- for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) { 
-     // Retrieve the Map object’s value 
-     Map.Entry e = (Map.Entry)i.next(); 
-                  
-     //Get the key name as specified in the  
-     //DDX document  
-     String keyName = (String)e.getKey(); 
-     if (keyName.equalsIgnoreCase("tuc018result.xdp")) 
-                 {  
-         Object o = e.getValue(); 
-         outDoc = (Document)o; 
-  
-         //Save the result PDF file 
-         File myOutFile = new File("C:\\AssemblerResultXDP.xdp");  
-         outDoc.copyToFile(myOutFile); 
-     } 
+ //Iterate through the map object to retrieve the result XDP document
+ for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
+     // Retrieve the Map object’s value
+     Map.Entry e = (Map.Entry)i.next();
+ 
+     //Get the key name as specified in the
+     //DDX document
+     String keyName = (String)e.getKey();
+     if (keyName.equalsIgnoreCase("tuc018result.xdp"))
+                 {
+         Object o = e.getValue();
+         outDoc = (Document)o;
+ 
+         //Save the result PDF file
+         File myOutFile = new File("C:\\AssemblerResultXDP.xdp");
+         outDoc.copyToFile(myOutFile);
+     }
  }
 ```
 
@@ -91,7 +91,7 @@ To assemble multiple XDP fragments, perform the following tasks:
 1. Reference an existing DDX document.
 1. Reference the XDP documents.
 1. Set run-time options.
-1. Assemble the multiple XDP documents. 
+1. Assemble the multiple XDP documents.
 1. Retrieve the assembled XDP document.
 
 **Include project files**
@@ -142,15 +142,15 @@ An assembled XDP document is returned within a collection object. Iterate throug
 
 [Assemble multiple XDP fragments using the web service API](assembling-multiple-xdp-fragments.md#assemble_multiple_xdp_fragments_using_the_web_service_api)
 
-<!-- Unresolved links and the next 2 are bad links 
+<!-- Unresolved links and the next 2 are bad links
 [Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
 
 [Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
 -->
 
-[Programmatically Assembling PDF Documents](/programming-with-aem-forms/programmatically-assembling-pdf-documents-programmatically-assembling-pdf-documents-programmatically.md#programmatically_assembling_pdf_documents)
+[Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically_assembling_pdf_documents)
 
-[Creating PDF Documents Using Fragments](/programming-with-aem-forms/creating-document-output-streams-creating-document-output-streams-creating.md#creating_pdf_documents_using_fragments)
+[Creating PDF Documents Using Fragments](/help/forms/developing/creating-document-output-streams.md#creating_pdf_documents_using_fragments)
 
 ## Assemble multiple XDP fragments using the Java API {#assemble-multiple-xdp-fragments-using-the-java-api}
 
@@ -233,34 +233,34 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
 
 1. Create a PDF Assembler client.
 
-    * Create an `AssemblerServiceClient` object by using its default constructor. 
-    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service, such as `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. 
-    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`. 
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used. 
+    * Create an `AssemblerServiceClient` object by using its default constructor.
+    * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service, such as `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
+    * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
+    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the `AssemblerServiceClient.ClientCredentials.UserName.UserName` field.
         * Assign the corresponding password value to the `AssemblerServiceClient.ClientCredentials.UserName.Password`field.
-        * Assign the `HttpClientCredentialType.Basic` constant value to the `BasicHttpBindingSecurity.Transport.ClientCredentialType`field. 
+        * Assign the `HttpClientCredentialType.Basic` constant value to the `BasicHttpBindingSecurity.Transport.ClientCredentialType`field.
         * Assign the `BasicHttpSecurityMode.TransportCredentialOnly` constant value to the `BasicHttpBindingSecurity.Security.Mode`field.
 
 1. Reference an existing DDX document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the DDX document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the DDX document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, starting position, and stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
 
 1. Reference the XDP documents.
 
-    * For each input XDP file, create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input file. 
+    * For each input XDP file, create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input file.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the input file and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property. 
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
     * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, starting position, and stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
     * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. This collection object is used to store input files required to create an assembled XDP document.
-    * For each input file, create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object. 
+    * For each input file, create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
     * Assign a string value that represents the key name to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `key` field. This value must match the value of the element specified in the DDX document. (Perform this task for each input XDP file.)
     * Assign the `BLOB` object that stores the input file to the `MyMapOf_xsd_string_To_xsd_anyType_Item` object's `value` field. (Perform this task for each input XDP file.)
     * Add the `MyMapOf_xsd_string_To_xsd_anyType_Item` object to the `MyMapOf_xsd_string_To_xsd_anyType` object. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object's `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Perform this task for each input XDP document.)
@@ -278,7 +278,7 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
     * The `MyMapOf_xsd_string_To_xsd_anyType` object that contains the required files
     * An `AssemblerOptionSpec` object that specifies run-time options
 
-   The `invokeDDX` method returns an `AssemblerResult` object that contains the results of the job and any exceptions that occurred. 
+   The `invokeDDX` method returns an `AssemblerResult` object that contains the results of the job and any exceptions that occurred.
 
 1. Retrieve the assembled XDP document.
 

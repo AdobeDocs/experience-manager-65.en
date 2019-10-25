@@ -1,8 +1,8 @@
 ---
 title: Create an Interactive Communication
 seo-title: Create an Interactive Communication
-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types. 
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types. 
+description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
+seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
 uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -21,7 +21,7 @@ Interactive Communications centralize and manages the creation, assembly, and de
 
 The following are the prerequisites for creating an Interactive Communication:
 
-* Set up a [Form Data Model](/help/forms/using/data-integration.md) containing test data or with an actual data source, such as an instance of Microsoft® Dynamics. 
+* Set up a [Form Data Model](/help/forms/using/data-integration.md) containing test data or with an actual data source, such as an instance of Microsoft® Dynamics.
 * Ensure that you have the [Document fragments](/help/forms/using/document-fragments.md).
 * Ensure that you have [Templates for print and web channel](/help/forms/using/web-channel-print-channel.md).
 * Ensure that you have the required [theme](/help/forms/using/themes.md) for the web channel.
@@ -29,36 +29,36 @@ The following are the prerequisites for creating an Interactive Communication:
 ## Create Interactive Communication {#createic}
 
 1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tap **[!UICONTROL Create]** **and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears. 
+1. Tap **[!UICONTROL Create]** **and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
 
    ![](assets/create-interactive-communication.png)
 
 1. Enter the following information. :
 
     * **[!UICONTROL Title]**: Enter the title of the Interactive Communication.
-    * **[!UICONTROL Name*]**: The name of the Interactive Communication is derived from the title you enter. Edit it, if necessary. 
-    * **[!UICONTROL Description]**: Enter a description about the Interactive Communication. 
+    * **[!UICONTROL Name*]**: The name of the Interactive Communication is derived from the title you enter. Edit it, if necessary.
+    * **[!UICONTROL Description]**: Enter a description about the Interactive Communication.
     * **[!UICONTROL Form Data Model*]**: Browse and select the form data model. For more information on Form Data Model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
-    
-    * **[!UICONTROL Prefill Service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication. 
-    * **[!UICONTROL Post Process Type]**: You can select AEM or Forms workflow to be triggered when the Interactive Communication is submitted. Select the type of the workflow to be triggered.  
-    
+
+    * **[!UICONTROL Prefill Service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication.
+    * **[!UICONTROL Post Process Type]**: You can select AEM or Forms workflow to be triggered when the Interactive Communication is submitted. Select the type of the workflow to be triggered.
+
     * **[!UICONTROL Post Process]**: Select the name of the workflow to be triggered. When you select AEM workflow, provide Attachment Path, Layout Path, PDF Path, Print Data Path, and Web Data Path.
-    * **[!UICONTROL Tags]**: Select the tags to apply to the Interactive Communication. You can also type in a new/custom tag name and press Enter to create it. 
-    * **[!UICONTROL Author]**:The author name is automatically taken from the logged in user's username. 
-    * **[!UICONTROL Publish Date:]** Enter the date to publish the Interactive Communication. 
+    * **[!UICONTROL Tags]**: Select the tags to apply to the Interactive Communication. You can also type in a new/custom tag name and press Enter to create it.
+    * **[!UICONTROL Author]**:The author name is automatically taken from the logged in user's username.
+    * **[!UICONTROL Publish Date:]** Enter the date to publish the Interactive Communication.
     * **[!UICONTROL Unpublish Date]**: Enter the date to unpublish the Interactive Communication.
 
-1. Tap **[!UICONTROL Next]**. The screen to specify print and web channel details appears. 
+1. Tap **[!UICONTROL Next]**. The screen to specify print and web channel details appears.
 1. Enter the following:
 
-    * **[!UICONTROL Print]**: Select this option to generate the print channel of the Interactive Communication. 
-    * **[!UICONTROL Print Template*:]** Browse and select an XDP as the print template. 
-    * **[!UICONTROL Web:]** Select this option to generate the web channel or the responsive output of Interactive Communication. 
-    * **[!UICONTROL Interactive Communication Web Template*:]** Browse and select the web template. 
+    * **[!UICONTROL Print]**: Select this option to generate the print channel of the Interactive Communication.
+    * **[!UICONTROL Print Template*:]** Browse and select an XDP as the print template.
+    * **[!UICONTROL Web:]** Select this option to generate the web channel or the responsive output of Interactive Communication.
+    * **[!UICONTROL Interactive Communication Web Template*:]** Browse and select the web template.
     * **[!UICONTROL Theme]** and **[!UICONTROL Select Theme*]**: Browse and select the theme to style the web channel of the Interactive Communication. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md).
-    
-    * **[!UICONTROL Use Print As Master for Web Channel]**: Select this option to create the web channel in sync with the print channel. Using print channel as master for web channel ensures the content and data binding of the web channel is derived from the print channel and the changes made in the print channel are reflected in the web channel when you tap Synchronize. The authors are, however, allowed to break the inheritance for specific components in the web channel, as required. For more information, see [Synchronize Web channel with Print channel](../../forms/using/create-interactive-communication.md#synchronize).  
+
+    * **[!UICONTROL Use Print As Master for Web Channel]**: Select this option to create the web channel in sync with the print channel. Using print channel as master for web channel ensures the content and data binding of the web channel is derived from the print channel and the changes made in the print channel are reflected in the web channel when you tap Synchronize. The authors are, however, allowed to break the inheritance for specific components in the web channel, as required. For more information, see [Synchronize Web channel with Print channel](../../forms/using/create-interactive-communication.md#synchronize).
       If you select the **[!UICONTROL Use Print As Master for Web Channel]**option, you can select any of the following modes to generate Web channel:
 
         * **[!UICONTROL Auto layout]**: Select this mode to automatically generate placeholders, content, and data binding for Web channel from Print channel.
@@ -76,13 +76,13 @@ For more information on the Interactive Communication authoring interface, see [
 
 1. The Interactive Communication authoring interface is launched when you Tap Edit as mentioned in [Create Interactive Communication](#createic). Alternatively, you can navigate to an existing Interactive Communication asset on AEM, select it, and tap **[!UICONTROL Edit]** to launch the Interactive Communication authoring interface. [](../../forms/using/create-interactive-communication.md#main-pars-header-1736797097)
 
-   By default, the print channel of the Interactive Communication appears, unless the Interactive Communication is web-channel-only. The Print channel of the Interactive Communication displays target areas, as available in the selected XDP/print channel template. In these target areas and fields, you can add components or assets. 
+   By default, the print channel of the Interactive Communication appears, unless the Interactive Communication is web-channel-only. The Print channel of the Interactive Communication displays target areas, as available in the selected XDP/print channel template. In these target areas and fields, you can add components or assets.
 
 1. With the Print channel selected, select the **[!UICONTROL Components]** tab. The following components are available in the print channel:
 
    | **Component** |**Functionality** |
    |---|---|
-   | Chart |Adds a chart that you can use in Interactive Communication for visual representation of two-dimensional data retrieved from an form data model collection. For more information, see [Using charts in Interactive Communications](/help/forms/using/chart-component.md). |
+   | Chart |Adds a chart that you can use in Interactive Communication for visual representation of two-dimensional data retrieved from an form data model collection. For more information, see [Using charts in Interactive Communications](/help/forms/using/chart-component-interactive-communications.md). |
    | Document Fragment |Allows you to add a reusable component, such as text, list, or condition, to an Interactive Communication. The added component could be either form data model-based or without a form data model. |
    | Image |Allows you to insert an image. |
 
@@ -98,31 +98,31 @@ For more information on the Interactive Communication authoring interface, see [
 
 1. With the print channel selected, go to the **[!UICONTROL Assets]** tab and apply the filter to display only the assets you want to see.
 
-   Using the Assets browser, you can also directly drag and drop assets into Interactive Communication target areas. 
+   Using the Assets browser, you can also directly drag and drop assets into Interactive Communication target areas.
 
    ![](assets/assets-docfragments.png)
 
-1. Drag-and-drop the document fragments into the Interactive Communication. Following are the types of document fragments that you can use in the print channel of the Interactive Communication. 
+1. Drag-and-drop the document fragments into the Interactive Communication. Following are the types of document fragments that you can use in the print channel of the Interactive Communication.
 
 <table>
- <tbody> 
-  <tr> 
-   <td><strong>Document Fragment Type</strong></td> 
-   <td><strong>Example purpose</strong></td> 
-  </tr> 
-  <tr> 
-   <td><a href="/help/forms/using/texts-interactive-communications.md" target="_blank">Text</a></td> 
-   <td>Text for adding address, recipient's email, and body text of the letter </td> 
-  </tr> 
-  <tr> 
-   <td><a href="/help/forms/using/conditions-interactive-communications.md" target="_blank">Condition</a></td> 
-   <td>Condition to add the appropriate header image to the communication based on the type of the policy: Standard or Premium. <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>List</td> 
-   <td>Group of document fragments, including text, conditions, other lists, and images. <br /> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><strong>Document Fragment Type</strong></td>
+   <td><strong>Example purpose</strong></td>
+  </tr>
+  <tr>
+   <td><a href="/help/forms/using/texts-interactive-communications.md" target="_blank">Text</a></td>
+   <td>Text for adding address, recipient's email, and body text of the letter </td>
+  </tr>
+  <tr>
+   <td><a href="/help/forms/using/conditions-interactive-communications.md" target="_blank">Condition</a></td>
+   <td>Condition to add the appropriate header image to the communication based on the type of the policy: Standard or Premium. <br /> </td>
+  </tr>
+  <tr>
+   <td>List</td>
+   <td>Group of document fragments, including text, conditions, other lists, and images. <br /> </td>
+  </tr>
+ </tbody>
 </table>
 
    You can also replace the binding between a target area and a document fragment by dropping the new fragment on the target area using the** Assets** tab. The blue color shading of the target area while dragging the fragment indicates that the document fragment can be dropped to the target area.
@@ -144,7 +144,7 @@ For more information on the Interactive Communication authoring interface, see [
 1. To set up binding of variables, tap a variable and select ![](assets/configure_icon.png) (Configure) and then set up the binding properties in the Properties panel in the sidebar.
 
     * **None**: Agent will fill in the value for the variable.
-    * **Text Fragment**: If selected, you can browse and select a text document fragment whose content is rendered in the field. Only those text document fragments can be bound to variables that have no variables within. 
+    * **Text Fragment**: If selected, you can browse and select a text document fragment whose content is rendered in the field. Only those text document fragments can be bound to variables that have no variables within.
     * **Data Model Object**: Select a form data model property whose value is populated in the field.
     * **Default Value:** You can define a default value for the variable using this field. The value is displayed when you preview the Interactive Communication or in the Agent UI.
     * **Display Pattern: **You can also define a display format for a variable. Select any of the pre-defined options from the **Type** drop-down list to apply a display format to a variable. Select **Custom** to define a display pattern that is not available in the list. For more information, see [Data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146).
@@ -157,7 +157,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    Example: A layout table to display gross premium, loyalty discount %, and emergency roadside assistance availability for old and the new policies.
 
-   For more information on layout fragments, see [Document Fragments](/help/forms/using/document-fragments.md). 
+   For more information on layout fragments, see [Document Fragments](/help/forms/using/document-fragments.md).
 
 1. With the print channel selected, in the **[!UICONTROL Assets]** tab apply the filter to display images. Drag-and-drop the required images to the Interactive Communication, such as for company logo.
 
@@ -177,11 +177,11 @@ For more information on the Interactive Communication authoring interface, see [
 
 1. Switch to **[!UICONTROL Web Channel]**. The web channel appears in the Interactive Communication editor. When you switch from the Print channel to the Web channel for the first time, the automatic synchornization takes place. For more information, see [Synchronizing web channel from the print channel](../../forms/using/create-interactive-communication.md#synchronize).
 
-   Since we are using Print as master for the web in this example, the Print channel placeholders, content, and data binding get synced to the web channel. However, you can change and customize the specific content in the web channel. [Cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) for the target areas and variables that have been generated using the print channel to be able to customize content. 
+   Since we are using Print as master for the web in this example, the Print channel placeholders, content, and data binding get synced to the web channel. However, you can change and customize the specific content in the web channel. [Cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) for the target areas and variables that have been generated using the print channel to be able to customize content.
 
    ![](assets/webchannelassets.png)
 
-   Tap the document fragment, tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/create-ad/CancelInheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them. 
+   Tap the document fragment, tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/create-ad/CancelInheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them.
 
 1. To add additional components in the Web channel, with the Web channel selected, tap **[!UICONTROL Components]**. Drag-and-drop components in the web channel of your Interactive Communication as required and proceed to configure them.
 
@@ -227,7 +227,7 @@ In the Print channel, you can configure the attachments and library access to al
 
    ![](assets/documentcontainerproperties.png)
 
-   The Properties panel appears in the Sidebar. 
+   The Properties panel appears in the Sidebar.
 
    ![](assets/propertiesattachments.png)
 
@@ -249,13 +249,13 @@ In the Print channel, you can configure the attachments and library access to al
 
 1. While editing the Print channel of an Interactive Communication, hover over a field, which is built in the Print channel template, and select ![](assets/configure_icon.png) (Configure).
 
-   The Properties dialog appears in the sidebar. 
+   The Properties dialog appears in the sidebar.
 
    ![](assets/data_display_patterns_fields.jpg)
 
 1. Specify the following:
 
-    * **[!UICONTROL Name]**: JCR node name. 
+    * **[!UICONTROL Name]**: JCR node name.
     * **[!UICONTROL Title]**: Enter a title that will be visible to the Agent in the Agent UI and in the Document Container tree.
     * **[!UICONTROL Binding Type]**: Select one of the following binding types for the field.
 
@@ -263,13 +263,13 @@ In the Print channel, you can configure the attachments and library access to al
         * Text Fragment: If selected, you can browse and select a text document fragment whose content is rendered in the field. Alternatively, drag-and-drop the text document fragment to field name to set up the binding between them. The text document fragment must not contain any variables.
         * Data model object: Select a form data model property whose value is populated in the field. Alternatively, select the **Data Sources** tab and drag-and-drop the property to the field.
 
-    * **[!UICONTROL Default Values]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object or text fragment. If the data binding type is none, the default value is prepopulated in the field. 
+    * **[!UICONTROL Default Values]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object or text fragment. If the data binding type is none, the default value is prepopulated in the field.
     * **[!UICONTROL Display Pattern]**: You can also define a display format for a field. Select any of the pre-defined options from the **Type** drop-down list to apply a display format to a field. Select **Custom** to define a display pattern that is not available in the list. For more information, see [Data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146).
-    
-    * **[!UICONTROL Editable By Agent]**: Select to allow the agent to edit the value in the field in the Agent UI. This setting is not applicable if Binding Type is Text Fragment. 
-    * **[!UICONTROL Label]**: Specify a text string displayed with the field to the Agent in Agent UI. This setting is not applicable if Binding Type is Text Fragment. 
-    * **[!UICONTROL Tooltip]**: Enter a text string that will be visible on mouse over to the Agent in Agent UI. This setting is not applicable if Binding Type is Text Fragment. 
-    * **[!UICONTROL Required]**: Select to make the field mandatory for the Agent. This setting is not applicable if Binding Type is Text Fragment. 
+
+    * **[!UICONTROL Editable By Agent]**: Select to allow the agent to edit the value in the field in the Agent UI. This setting is not applicable if Binding Type is Text Fragment.
+    * **[!UICONTROL Label]**: Specify a text string displayed with the field to the Agent in Agent UI. This setting is not applicable if Binding Type is Text Fragment.
+    * **[!UICONTROL Tooltip]**: Enter a text string that will be visible on mouse over to the Agent in Agent UI. This setting is not applicable if Binding Type is Text Fragment.
+    * **[!UICONTROL Required]**: Select to make the field mandatory for the Agent. This setting is not applicable if Binding Type is Text Fragment.
     * **[!UICONTROL Allow multiple lines]**: Select this field to allow multiple lines of text as entry in the field. This setting is not applicable if Binding Type is Text Fragment.
 
 1. Tap ![](assets/done_icon.png).
@@ -320,7 +320,7 @@ For more information, see:
 You can add dynamic tables in Interactive Communication using layout fragments. The following steps use an example of a credit card statement to illustrate the use of a layout fragment for creating a dynamic table in an Interactive Communication.
 
 1. Ensure that the required layout fragment for creating the table is available in AEM.
-1. In the print channel of your Interactive Communication, drag and drop a layout fragment (with a multi-column table) in a Target Area from the Asset browser. 
+1. In the print channel of your Interactive Communication, drag and drop a layout fragment (with a multi-column table) in a Target Area from the Asset browser.
 
    ![](assets/lf_dragdrop.png)
 
@@ -332,22 +332,22 @@ You can add dynamic tables in Interactive Communication using layout fragments. 
 
     1. Tap a cell in the table and select ![](assets/configure_icon.png) (Configure).
 
-       The Properties dialog appears in the sidebar. 
-    
+       The Properties dialog appears in the sidebar.
+
        ![](assets/lf_cell_properties.png)
 
     1. Configure the properties:
 
         * **[!UICONTROL Name]**: JCR node name.
-        * **[!UICONTROL Title]**: Enter a title that will be visible in the Interactive Communication editor. 
+        * **[!UICONTROL Title]**: Enter a title that will be visible in the Interactive Communication editor.
         * **[!UICONTROL Binding Type]**&#42;: Select one of the following binding types for the field.
 
             * **[!UICONTROL None]**
             * **[!UICONTROL Data model object]**: A form data model property's value is populated in the field. Alternatively, select the **Data Sources** tab and drag-and-drop the property to the field.
 
-        * **[!UICONTROL Data Model Object]**: The form data model property whose value is populated in the field. 
+        * **[!UICONTROL Data Model Object]**: The form data model property whose value is populated in the field.
         * **[!UICONTROL Default Value]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object. The default value is prepopulated in the field. **[!UICONTROL]**
-        
+
         * **[!UICONTROL Editable By Agent]**: Select to allow the agent to edit the value in the field in the Agent UI.
 
     1. Tap ![](assets/done_icon.png).
@@ -389,7 +389,7 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 1. Tap the Data Model objects drop-down list and select the property.
 1. Tap to save and create a binding between the table cell and the data model object property.
 
-![Create data binding](assets/create_data_binding_table_new.png) 
+![Create data binding](assets/create_data_binding_table_new.png)
 
 #### Create a hyperlink for text in the table cell {#createhyperlinktable}
 
@@ -398,7 +398,7 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 1. Specify the URL in the **Path** field.
 1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the hyperlink properties.
 
-![Create hyperlink](assets/create_hyperlink_table_new.png) 
+![Create hyperlink](assets/create_hyperlink_table_new.png)
 
 #### Create dynamic tables {#createdynamictables}
 
@@ -431,7 +431,7 @@ To enable sorting:
 
    A column header with an up arrow represents that the:
 
-    * table is sorted based on that column. 
+    * table is sorted based on that column.
     * values in the column are displayed in the ascending order.
 
    ![Sorting ascending](assets/sorting_ascending_new-1.png)
@@ -478,7 +478,7 @@ To add button and define rules on it:
 1. In the **Then** section:
 
     1. Select an action from the drop-down list. For example, select **Navigate** **to** as the action type.
-    
+
     1. Specify the URL of the Interactive Communication, adaptive form, an asset, or a web page. For example, specify the URL in the following format to navigate to another Interactive Communication: https://&lt;server-name&gt;:&lt;port&gt;/editor.html/content/forms/af/&lt;Interactive Communication name&gt;/channels/&lt;channel name - print or web&gt;.html
     1. Specify the option to open the asset in same tab, new tab, or new window.
     1. Tap **Done** and then tap **Close** to save the rule.
@@ -496,9 +496,9 @@ Perform the following steps to add a Panel component to the web channel:
 1. Insert the **Panel** component in the web channel using any of the following options:
 
     * Tap a component, tap **+** and select the **Panel** component.
-    
+
     * From the **Component** browser panel, drag-drop the **Panel** component on the Interactive Communication.
-    
+
     * Tap the **Panel **in the **Content** browser panel and tap **Add Child Panel**. Selecting the **Add Child Panel **option displays the **Add Child Panel** dialog box. Enter the title and an optional description and name for the Panel component.
 
 1. Tap the panel from the **Content** browser to perform additional actions on the Panel such as configure, edit rules, copy, delete, and insert component.
@@ -509,9 +509,9 @@ Perform the following steps to add a Panel component to the web channel:
 
 When you select Print as Master for Web Channel while creating an Interactive Communication, the Web channel is created in sync with the Print channel and the content and data binding of the Web channel is derived from the print channel and the changes made in the print channel could be reflected in the web channel when you tap Synchronize.
 
-The authors are, however, allowed to break the inheritance for components in the web channel, as required. 
+The authors are, however, allowed to break the inheritance for components in the web channel, as required.
 
-![Create Print Master](assets/create_ic_print_master_new-1.png) ![Print Master Web](assets/create_ic_print_master_web_new-1.png) 
+![Create Print Master](assets/create_ic_print_master_new-1.png) ![Print Master Web](assets/create_ic_print_master_web_new-1.png)
 
 ### Auto sync {#autosync}
 
@@ -532,7 +532,7 @@ If you select Print as master while creating the Interactive Communication and d
 
 Navigate to **Data Sources** &gt; **Master Content** to view the Print channel elements. Drag-and-drop the target areas, fields, or tables to the Web channel authoring interface. A blue circle icon next to the element name indicates that the Print channel element has already been included in the Web channel.
 
-![Master content](assets/master_content.png) 
+![Master content](assets/master_content.png)
 
 ### Cancel inheritance {#cancelinheritance}
 
@@ -579,7 +579,7 @@ Tap the component to view the following options:
 * **Cut: **Move a component from one place to another in the Interactive Communication.
 * **Insert Component: **Insert a component above the selected component.
 * **Paste: **Paste the component you cut or copied using the options described above.
-* **Group: **Select multiple components if you want to cut, copy, or paste more than one component together. 
+* **Group: **Select multiple components if you want to cut, copy, or paste more than one component together.
 * **Parent: **Select the parent of a component.
 * **View SOM Expression: **View the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
 

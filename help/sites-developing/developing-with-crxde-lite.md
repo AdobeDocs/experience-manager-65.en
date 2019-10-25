@@ -132,7 +132,7 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Tools<br /> </td>
-   <td><p>Drop-down menu with the following tools:</p> <p>- <strong>Server Config ...</strong>: to access the Felix Console.</p> <p>- <strong>Query ...</strong>: to query the repository.</p> <p>- <strong>Privileges ...</strong>: to open privilege management, where you can view and add privileges.</p> <p>- <strong>Test Access Control ...</strong>: a place where you can test the permission for certain path and/or principal.</p> <p>- <strong>Export Node Type</strong>: to export node types in the system as cnd notation.</p> <p>- <strong>Import Node Type ...</strong>: to import node types using cnd notation.</p> <p>- <strong>Import Site ...</strong>: opens the <a href="/help/sites-developing/site-importer.md">Site Importer</a> tool to import an existing site into AEM</p> <p>- <strong>Install SiteCatalyst Debugger ...</strong>: instructions on how to install Analytics Debugger.</p> </td>
+   <td><p>Drop-down menu with the following tools:</p> <p>- <strong>Server Config ...</strong>: to access the Felix Console.</p> <p>- <strong>Query ...</strong>: to query the repository.</p> <p>- <strong>Privileges ...</strong>: to open privilege management, where you can view and add privileges.</p> <p>- <strong>Test Access Control ...</strong>: a place where you can test the permission for certain path and/or principal.</p> <p>- <strong>Export Node Type</strong>: to export node types in the system as cnd notation.</p> <p>- <strong>Import Node Type ...</strong>: to import node types using cnd notation.</p> <p>- <strong>Install SiteCatalyst Debugger ...</strong>: instructions on how to install Analytics Debugger.</p> </td>
   </tr>
   <tr>
    <td>Login widget<br /> </td>

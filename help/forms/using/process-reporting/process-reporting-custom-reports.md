@@ -20,7 +20,7 @@ You can use REST interface of QueryBuilder or create an OSGi service using Query
 
 Before adding any custom report, perform the following template procedure:
 
-1. Data used in custom reports must be available in Process Reporting. To ensure the availability of data, schedule a cron job or use ** [Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** option on the Process Reporting UI.
+1. Data used in custom reports must be available in Process Reporting. To ensure the availability of data, schedule a cron job or use **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** option on the Process Reporting UI.
 1. The URL request (encapsulating the desired query) must return an appropriate query result object. To create a query, you can use REST interface of [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) to create an OSGi service using QueryBuilder API. You can create dynamic or static queries.
 
 1. Create a custom user interface to display the results. You can create a stand-alone user interface or integrate result with existing Process Reporting UI.
@@ -30,7 +30,6 @@ Before adding any custom report, perform the following template procedure:
 CRX QueryBuilder REST interface exposes the functionality of the Asset Share Query Builder through a Java API and a REST API. Learn how to use [CRX QueryBuilder REST interface](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html), before performing the following steps:
 
 1. Browse to the URL https://[server]:[port]/lc/bin/querybuilder.json
-
 1. Create a query based on the Process Reporting storage node structure and node properties.
 
    You can specify optional parameters to specify offset, limit, hits, and properties. You can hardcode the arguments for static reports and fetch the parameters from UI for dynamic reports.
@@ -631,15 +630,14 @@ response.setCharacterEncoding("utf-8");
 
 The prerequisites to creating a separate UI for displaying results are [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) and providing appropriate [access privileges](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
-1. Create a separate UI as described in [Creating a separate UI](/help/forms/using/process-reporting/process-reporting-custom-reports.html?cq_ck=1416827713473) section.
+1. Create a separate UI.
 1. Create a child `nt:unstructured` node at the `/content/process-reporting-runtime/custom-reports` node for every pluggable report.
 
-    * **id **- Specifies unique identification number of the report.
-    * **name **- Specifies the name of the report. The name is displayed in the UI.
-    * **link **- Specifies relative link to the renderer of the separate UI. The link is created Step 1.
-    * **description **- Specifies the one line description the report. You can leave the description field empty.
-
-    * **icon **- Specifies the image to pictorially represent the report. You can leave the icon field empty.
+    * **id**- Specifies unique identification number of the report.
+    * **name**- Specifies the name of the report. The name is displayed in the UI.
+    * **link**- Specifies relative link to the renderer of the separate UI. The link is created Step 1.
+    * **description**- Specifies the one line description the report. You can leave the description field empty.
+    * **icon**- Specifies the image to pictorially represent the report. You can leave the icon field empty.
 
    ![Properties of node ](assets/node_properties_new.png)
 

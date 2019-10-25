@@ -51,7 +51,7 @@ By installing the Compatibility package, you can make the following assets and t
 * Correspondence Management Assets from AEM 6.4 and earlier:
 
     * [Letters](../../forms/using/create-letter.md)
-    * [Data Dictionaries](/help/forms/using/data-dictionary.html?cq_ck=1519292756160)
+    * [Data Dictionaries](/help/forms/using/data-dictionary.md)
     * Document Fragments
 
 * Adaptive form deprecated templates:

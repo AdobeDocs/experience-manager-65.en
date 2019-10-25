@@ -54,10 +54,9 @@ You can select and edit the **Arctic Surfing in Lofoten** fragment:
 
 Here you can [edit and manage](/help/assets/content-fragments.md) your fragment using the tabs (left side panel):
 
-![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png)
+<!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
 * **[Variations](/help/assets/content-fragments-variations.md)** including [Markdown](/help/assets/content-fragments-markdown.md)
-
 * **[Associated Content](/help/assets/content-fragments-assoc-content.md)**
 * **[Metadata](/help/assets/content-fragments-metadata.md)**
 

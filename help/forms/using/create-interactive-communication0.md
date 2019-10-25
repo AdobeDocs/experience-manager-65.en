@@ -13,7 +13,7 @@ docset: aem65
 
 # Tutorial: Create Interactive Communication {#tutorial-create-interactive-communication}
 
- ![](assets/09-style-your-adaptive-form_small.png)
+ ![](assets/09-style-your-adaptive-form-small.png)
 
 | This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
 |---|

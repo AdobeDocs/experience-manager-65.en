@@ -81,7 +81,7 @@ The status of the SEO recommendation indicates when the task is created but not 
 
 ![](assets/chlimage_1-130.png)
 
-When created, the task appears in the user's Tasks list. For information about tasks, see [Track Content Changes Using Task Management](/help/sites-administering/task-manager.md) and [Working with Tasks](/help/sites-authoring/task-content.md).
+When created, the task appears in the user's Tasks list. For information about tasks, see [Working with Tasks](/help/sites-authoring/task-content.md).
 
 Use the following procedure to create a task for an SEO recommendation.
 

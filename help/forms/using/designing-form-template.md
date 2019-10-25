@@ -22,7 +22,7 @@ For common XFA features, see the following best practices and guidelines to desi
 
 ## Best practices {#best-practices}
 
-Most steps around designing a form template, such as schema bindings or writing form logic are same. However, due to inherent differences between rendering and scripting engine of a thick client like Adobe Reader and browser-based forms, there are some recommendations described in the [best practices](/help/forms/using/best-practices-design-html5-forms.md) article. These best practices help you design form templates to work as expected in both formats.
+Most steps around designing a form template, such as schema bindings or writing form logic are same. However, due to inherent differences between rendering and scripting engine of a thick client like Adobe Reader and browser-based forms, there are some recommendations described in the [best practices](/help/forms/using/design-accessible-html5-forms.md) article. These best practices help you design form templates to work as expected in both formats.
 
 ### Capabilities in AEM Forms Designer for HTML5 Forms {#capabilities-in-aem-forms-designer-for-html-forms}
 

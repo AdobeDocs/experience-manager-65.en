@@ -133,7 +133,7 @@ The following APIs are available for use :
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-The latest Javadocs for the installed [feature pack](/help/communities/version-history.md) are available to developers from the Adobe repository. See [Using Maven for Communities : Javadocs](/help/communities/maven.md#javadocs).
+The latest Javadocs for the installed feature pack are available to developers from the Adobe repository. See [Using Maven for Communities : Javadocs](/help/communities/maven.md#javadocs).
 
 **The location and format of the UGC in the repository is subject to change without warning**.
 
