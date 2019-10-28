@@ -92,14 +92,12 @@ You use Process/Task Search to define filters for querying process/task instance
 After you create a query, use the options in the upper right corner of the **Create Filter** panel to:
 
 * **Cancel**: Cancel the changes and go back to the **My Filters** panel.
-
 * **Run**: Execute the current query to see and / or verify the results. In this case, you do not need to save the query before executing the query. You can verify the results, make changes if required, and then save the query when you are satisfied with the output.
-
 * **Save**: Save the filter. The filter can then be viewed and executed from the **My Filters **panel.
 
 ### Options in My Filters panel {#options-in-my-filters-panel}
 
-Use the options in the **My Filters** panel to **Add ** ![](assets/lc_pr_add_filter.png), **Edit ** ![](assets/lc_pr_delete_filter.png), or **Delete ** ![](assets/lc_pr_edit_filter.png)an ad-hoc query.
+Use the options in the **My Filters** panel to **Add** ![](assets/lc_pr_add_filter.png), **Edit** ![](assets/lc_pr_delete_filter.png), or **Delete** ![](assets/lc_pr_edit_filter.png)an ad-hoc query.
 
 ![](assets/my_filters_options.png)
 
@@ -121,11 +119,8 @@ Use the options in the **My Filters** panel to **Add ** ![](assets/lc_pr_add_fil
 1. The following fields are displayed in a Process Search result:
 
     * **Process ID**: The ID of the process. The field is hyperlinked. If you click a process ID in this field, you are redirected to the **[!UICONTROL Process Details]** panel for the process.
-
     * **Initiator**: The AEM Forms user who started the process instance
-
     * **Created Time**: The date and time when the process instance started
-
     * **Completed Time**: The date and time when the process instance completed
     * **Duration**: The duration from start to completion of the process instance
     * **Status**: The current status of the process instance.
@@ -137,11 +132,8 @@ Use the options in the **My Filters** panel to **Add ** ![](assets/lc_pr_add_fil
    Similarly, the following fields are displayed in a Task Search result:
 
     * **Task ID**: The ID of the task. The field is hyperlinked. If you click a task ID in this field, you are redirected to the **[!UICONTROL Task Details]** panel for the task.
-
     * **Initiator**: The AEM Forms user who started the process instance
-
     * **Created Time**: The date and time when the process instance started
-
     * **Completed Time**: The date and time when the process instance completed
     * **Duration**: The duration from start to completion of the process instance
     * **Status**: The current status of the process instance.
@@ -178,7 +170,7 @@ You can view the details of a specific AEM Forms process/task:
 
 #### From a Process/Task Search result {#from-a-process-task-search-result}
 
-1. Execute a process/task search. For details, see [To execute a Process Search query](/help/using/forms/process-reportingadhoc-queries-in-process-reporting.md#p-to-execute-a-search-query-p).
+1. Execute a process/task search. For details, see [To execute a Process Search query](#to-execute-a-search-query).
 
    Notice that the process IDs displayed returned in the result, are hyperlinked.
 

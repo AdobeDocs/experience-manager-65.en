@@ -13,7 +13,7 @@ discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
- ![](do-not-localize/chlimage_1-9.png)
+ ![](/help/sites-developing/assets/chlimage_1-9.png)
 
 ## Overview {#overview}
 

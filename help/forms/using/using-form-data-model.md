@@ -73,11 +73,11 @@ For more information, see:
 
 [Create an interactive communication](../../forms/using/create-interactive-communication.md)
 
-[Text in Interactive Communications](/help/forms/using/text-interactive-communications.md)
+[Text in Interactive Communications](/help/forms/using/texts-interactive-communications.md)
 
-[Conditions in Interactive Communications](/help/forms/using/condition-interactive-communications.md)
+[Conditions in Interactive Communications](/help/forms/using/conditions-interactive-communications.md)
 
-[List fragments](/help/forms/using/list.md)
+[List fragments](/help/forms/using/lists.md)
 
 ## Preview with sample data {#preview-ic}
 

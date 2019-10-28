@@ -39,7 +39,7 @@ You create variables using the Variables section available in the sidekick of th
 >
 >Workflows support only ISO8601 format for Date type variables.
 
-For additional complex data types available in AEM Forms workflows, see [Variables in AEM Forms workflows](/help/using/variable-in-aem-workflows.md).  Use ArrayList data type to create variable collections. You can create ArrayList variable for all primitive and complex data types. For example, create an ArrayList variable and select String as sub-type to store multiple string values using the variable.
+For additional complex data types available in AEM Forms workflows, see [Variables in AEM Forms workflows](/help/forms/using/variable-in-aem-workflows.md).  Use ArrayList data type to create variable collections. You can create ArrayList variable for all primitive and complex data types. For example, create an ArrayList variable and select String as sub-type to store multiple string values using the variable.
 
 Execute the following steps to create a variable:
 
@@ -130,7 +130,7 @@ It is based on adaptive forms rule editor with following changes. Rule editor in
 * Does not support setting property of an object.
 * Does not support calling a web service.
 
-For more information, see [adaptive forms rule editor](/help/using/rule-editor.md).
+For more information, see [adaptive forms rule editor](/help/forms/using/rule-editor.md).
 
 ## Use a variable {#use-a-variable}
 

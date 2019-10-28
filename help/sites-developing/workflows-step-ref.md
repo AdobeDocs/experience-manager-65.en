@@ -41,18 +41,22 @@ A combination of the following properties are available for most workflow step c
 * **Description**
   A description of the step.
 
-* **Workflow Stage
-  **A drop down selector to apply a [Stage](/help/sites-developing/workflows.md#workflow-stages) to the step.
+* **Workflow Stage**
+
+  A drop down selector to apply a [Stage](/help/sites-developing/workflows.md#workflow-stages) to the step.
 
 * **Timeout**
+
   The period after which the step will be "timed out".
   You can select between: **Off**, **Immediate**, **1h**, **6h**, **12h**, **24h**.
 
 * **Timeout Handler**
+
   The handler which will control the workflow when the step times out; for example:
   `Auto Advancer`
 
 * **Handler Advance**
+
   Select this option to automatically advance the workflow to the next step after execution. If not selected, the implementation script must handle workflow advancement.
 
 ### Step Properties - User/Group tab {#step-properties-user-group-tab}
@@ -69,7 +73,6 @@ The following properties are available for many workflow step components, on the
     * A drop down selection box will allow you to navigate and select a user or group.
     * If you assign the step to a specific user, then only this user can take action on the step.
     * If you assign the step to an entire group, then when the workflow reaches this step all users in this group will have the action in their **Workflow Inbox**.
-
     * See [Participating in Workflows](/help/sites-authoring/workflows-participating.md) for more information.
 
 ## AND Split {#and-split}
@@ -85,7 +88,6 @@ To configure the split:
 * Edit the **AND Split Properties**:
 
     * **Split Name**: assign a name for explanatory purposes
-
     * Select the number of branches required; 2, 3, 4 or 5.
 
 * Add workflow steps to the branches as required.
@@ -129,8 +131,7 @@ To configure the step, edit and use the following tabs:
     * **Routing Expression**: Select Rule Definition, External Script, or an ECMA script that determines whether to execute the **Target Step**.
 
         * **Rule Definition: **Use the [expression editor](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) to define the rule**.**
-
-        * **External Script: **The path of the external script.
+        * **External Script:** The path of the external script.
         * **ECMA Script**: The script that determines whether to execute the **Goto Step**.
 
 #### Simulating a for Loop {#simulating-a-for-loop}
@@ -168,7 +169,7 @@ function check(){
 
 ### Simulating a for loop using Rule Definition {#simulateforloop}
 
-You can also simulate a for loop using Rule Definition as the routing expression. [Create a **count** variable](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) of Long data type. Use **Expression** as the mapping mode in the ** [Set Variable](/help/using/variable-in-aem-workflows.md#set-a-variable)** step to set the value of the **count** variable to **count + 1** on each execution of the **Set Variable** step.
+You can also simulate a for loop using Rule Definition as the routing expression. [Create a **count** variable](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) of Long data type. Use **Expression** as the mapping mode in the **[Set Variable](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** step to set the value of the **count** variable to **count + 1** on each execution of the **Set Variable** step.
 
 ![Simulating a for loop](assets/variable_use_case_count_new.png)
 

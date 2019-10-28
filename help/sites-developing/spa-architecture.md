@@ -27,7 +27,7 @@ Developing single page applications on AEM assumes that the front-end developer 
 
 * **[AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - The front end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
 * **[Dynamic Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering)** - All rendering should be dynamic.
-* **[Dynamic Routing](/content.md#main-pars_header_1105486143) -** The SPA is responsible for the routing and AEM listens to it and fetches based on it. Any routing should be dynamic as well.
+* **[Dynamic Routing](#dynamic-routing) -** The SPA is responsible for the routing and AEM listens to it and fetches based on it. Any routing should be dynamic as well.
 
 If you keep these principles in mind as you develop your SPA, it will be as flexible and as future proof as possible while enabling all supported AEM authoring functionality.
 

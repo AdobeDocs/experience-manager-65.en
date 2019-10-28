@@ -240,7 +240,7 @@ An administrator (a member of fd-administrators group) can configure a network f
   </tr>
   <tr>
    <td><span class="uicontrol">Output File Pattern</code></td>
-   <td>Specify the directory structure for output files and directories. You can also specify a <a href="help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td>
+   <td>Specify the directory structure for output files and directories. You can also specify a <a href="/help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">pattern for output files and directories</a>.</td>
   </tr>
  </tbody>
 </table>
@@ -251,7 +251,7 @@ An administrator (a member of fd-administrators group) can configure a network f
    |---|---|
    | Payload Mapper Filter |When you create a watched folder, it creates a folder structure in the crx-repository. The folder structure can serve as a payload to the workflow. You can write a script to map an AEM Workflow to accept inputs from the watched folder structure. An out of the box implementation is available and listed in the Payload Mapper Filter. If you do not have a custom implementation, select the default implementation. |
 
-   The Advanced tab contains more fields. Most of these fields contain a default value. To learn about all the fields, see the [Create or Configure a watched folder](/help/forms/using/creating-configure-watched-folder.md) article.
+   The Advanced tab contains more fields. Most of these fields contain a default value. To learn about all the fields, see the [Create or Configure a watched folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) article.
 
 ### Submitting an interactive communication or a letter {#letter}
 

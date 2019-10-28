@@ -18,11 +18,11 @@ docset: aem65
 
 Process Reporting is a browser-based tool that you use to create and view reports on AEM Forms processes and tasks.
 
-Process Reporting provides a set of out-of-the-box reports that allow you to filter, view infromation on long running processes, process duration, and workflow volume.
+Process Reporting provides a set of out-of-the-box reports that allow you to filter, view information on long running processes, process duration, and workflow volume.
 
-Additionaly Process Reporting provides an interface to run adhoc queries and to integrate custom report views into the Process Reporting user interface.
+Additionally Process Reporting provides an interface to run adhoc queries and to integrate custom report views into the Process Reporting user interface.
 
-For the list of supported browsers, see [AEM Forms Supported Platforms](/help/using/aem-forms-jee-supported-platforms.md).
+For the list of supported browsers, see [AEM Forms Supported Platforms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Process Reporting is built on modules that:
 
@@ -46,7 +46,7 @@ Process Reporting also provides the option to export the report and query data i
 
 Use filters to get a specific view of your data.
 
-You can search processes or tasks by ID, duration, start and end dates, process initiator etc..
+You can search processes or tasks by ID, duration, start and end dates, process initiator etc.
 
 You can combine multiple filters to create specific reports.
 
