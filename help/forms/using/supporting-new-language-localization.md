@@ -26,11 +26,11 @@ The localization of adaptive forms relies on two types of locale dictionaries:
 
 When an adaptive form is rendered, it identifies the requested locale by looking at the following parameters in the specified order:
 
-* Request parameter `afAcceptLang`  
-  To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL will force to render the form in Japanese locale:  
-  `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`  
+* Request parameter `afAcceptLang`
+  To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL will force to render the form in Japanese locale:
+  `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* The browser locale set for the user, which is specified in the request using the `Accept-Language` header.   
+* The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
 
 * Language setting of the user specified in AEM.
 
@@ -44,9 +44,9 @@ AEM Forms currently supports localization of adaptive forms content in English (
 
 To add support for a new locale at adaptive forms runtime:
 
-1. [Add a locale to the GuideLocalizationService service](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)  
+1. [Add a locale to the GuideLocalizationService service](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
 
-1. [Add XFA client library for a locale](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)  
+1. [Add XFA client library for a locale](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
 
 1. [Add adaptive form client library for a locale](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
 1. [Add locale support for the dictionary](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
@@ -58,7 +58,7 @@ To add support for a new locale at adaptive forms runtime:
 1. Click to edit the **Guide Localization Service** component.
 1. Add the locale you want to add to the list of supported locales.
 
-![GuideLocalizationSevice](assets/configservice.png) 
+![GuideLocalizationSevice](assets/configservice.png)
 
 ### Add XFA client library for a locale <br> {#add-xfa-client-library-for-a-locale-br}
 
@@ -80,10 +80,8 @@ Create a node of type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, wi
 
 Add the following files to the client library:
 
-* **i18n.js** defining `guidelib.i18n`, having patterns of "calendarSymbols", `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` for the `<locale>` as per the XFA specifications described in [Locale Set Specification](/content/dam/Adobe/specs/xfa_spec_3_3.pdf). You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
-
+* **i18n.js** defining `guidelib.i18n`, having patterns of "calendarSymbols", `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` for the `<locale>` as per the XFA specifications described in [Locale Set Specification](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
 * **LogMessages.js** defining `guidelib.i18n.strings` and `guidelib.i18n.LogMessages` for the `<locale>` as defined in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
-
 * **js.txt** containing the following:
 
 ```

@@ -194,7 +194,7 @@ From here you can drag the assets to the required location (either to an existin
 
 ### Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 
-If [assets (e.g. images) have been inserted into the fragment itself](/help/assets/content-fragments-authoring.md#insertingassetsintoyourfragment), then the options for editing these assets in the page editor is limited.
+If assets (e.g. images) have been inserted into the fragment itself, then the options for editing these assets in the page editor is limited. <!-- Removed link as it was a 404 on helpx -->
 
 For example, for an image you can
 
