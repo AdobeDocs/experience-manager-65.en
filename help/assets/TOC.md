@@ -159,5 +159,4 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md)
     + [Getting Started with AEM Assets](/help/assets/getting-started-with-aem-assets.md)
     + [temp article for acrolinx checks](/help/assets/temp-article-for-acrolinx-checks.md)
-
-    <!-- Missing https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html and https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-5/assets/using/launch.html-->
+    + [Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch](/help/assets/launch.md)
