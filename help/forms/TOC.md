@@ -666,5 +666,5 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Logging in AEM Forms workflows](/help/forms/using/forms-workflow-logs.md)
   + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
   + [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md)
-  + [Tutorial: Testing your adaptive form](forms/using/testing-your-adaptive-form.md)
+  + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
