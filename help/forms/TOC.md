@@ -659,4 +659,12 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using theweb service API](developing/validate-ddx-document-using-web.md)
-+ From the migration {#migration}
++ From AEM65 {#aem65}
+  + [Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+  + [We.Gov reference site walkthrough](/help/forms/using/forms-gov-reference-site-user-demo.md)
+  + [Set up and configure We.Gov reference site](/help/forms/using/forms-install-configure-gov-reference-site.md)
+  + [Logging in AEM Forms workflows](/help/forms/using/forms-workflow-logs.md)
+  + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
+  + [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md)
+  + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
+  + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
