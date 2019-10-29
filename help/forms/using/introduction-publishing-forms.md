@@ -60,16 +60,16 @@ Forms portal enables you to list forms from the forms repository onto your porta
 1. **Enable Forms Portal components**: Out of the box, forms portal components are not available for use. [Enable the components from AEM sidekick](/help/forms/using/enabling-forms-portal-components.md) for an AEM Sites page.
 1. **List forms on a page (create forms portal page): **You can list forms on both AEM Sites and non-AEM Site pages. The list contains forms available on the publish instance. A user can open forms and start filling those. Whenever a user opens a form, a new instance of the form is created:
 
-    1. **List forms on an AEM Sites page**: Add the ** [Search & Lister](../../forms/using/creating-form-portal-page.md) **component to the page and configure the ** [List Pane](../../forms/using/creating-form-portal-page.md#p-list-pane-p) **in it**, **to list forms on a page. Add and configure the [**Search Pane** ](/content.md#main-pars_header_2)component to the **Search & Lister **component also to add search functionality to the page. The page with forms portal component is known as [forms portal page](../../forms/using/creating-form-portal-page.md).
+    1. **List forms on an AEM Sites page**: Add the **[Search & Lister](../../forms/using/creating-form-portal-page.md)** component to the page and configure the **[List Pane](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** in it, to list forms on a page. Add and configure the **Search Pane** component to the **Search & Lister** component also to add search functionality to the page. The page with forms portal component is known as [forms portal page](../../forms/using/creating-form-portal-page.md).
 
     1. **List forms on a non-AEM Sites page: **Use the [forms portal search APIs](/help/forms/using/listing-forms-webpage-using-apis.md) to query, retrieve, and list forms on non-AEM Sites pages.
 
 1. **List draft and submitted forms on a forms portal page**: Add and configure the Drafts & Submissions component to the forms portal page. The component lists all the forms that are in the draft state and the forms that are already submitted.
 
-   To enable a submitted adaptive form to appear in the submissions tab, set the **Submit action** to ** [Forms Portal Submit Action](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/configuring-submit-actions.html). Alternatively,** enable the Forms Portal Submit option. Whenever a user submits the form, the form is added to the submissions tab.
+   To enable a submitted adaptive form to appear in the submissions tab, set the **Submit action** to **[Forms Portal Submit Action](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/configuring-submit-actions.html).** Alternatively,enable the Forms Portal Submit option. Whenever a user submits the form, the form is added to the submissions tab.
 
-1. **Configure storage for the draft and submitted forms data: **By default, draft and submissions data is stored in the AEM repository. In a production environment, it is recommended not to store draft or submitted form data in AEM repository. [Configure forms portal component to save data to a secure location](../../forms/using/draft-submission-component.md#customizing-the-storage).
-1. **(Optional) Customizing the forms portal components: ** [Customize your forms portal page templates](../../forms/using/customizing-templates-forms-portal-components.md) to provide a distinctive appearance to the components.
+1. **Configure storage for the draft and submitted forms data:** By default, draft and submissions data is stored in the AEM repository. In a production environment, it is recommended not to store draft or submitted form data in AEM repository. [Configure forms portal component to save data to a secure location](../../forms/using/draft-submission-component.md#customizing-the-storage).
+1. **(Optional) Customizing the forms portal components:** [Customize your forms portal page templates](../../forms/using/customizing-templates-forms-portal-components.md) to provide a distinctive appearance to the components.
 1. **(Optional) Add custom metadata to forms:** [Add custom metadata to forms](../../forms/using/customizing-templates-forms-portal-components.md) to improve listing and search experience.
 1. **Publish the forms portal page:** Your forms portal page is now ready. Publish the page.
 
@@ -81,7 +81,6 @@ Forms portal enables you to list forms from the forms repository onto your porta
 * [Use Drafts and submissions component](../../forms/using/draft-submission-component.md)
 * [Customize storage of drafts and submitted forms](../../forms/using/draft-submission-component.md#customizing-the-storage)
 * [Sample for integrating drafts & submissions component with database](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)
-
 * [Customizing templates for forms portal components](../../forms/using/customizing-templates-forms-portal-components.md)
 * [Introduction to publishing forms on a portal](../../forms/using/introduction-publishing-forms.md)
 
