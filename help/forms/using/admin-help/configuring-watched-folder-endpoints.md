@@ -64,7 +64,7 @@ If the job contains more than one input file, the user must create a folder outs
 
 When the input is a folder and the output consists of multiple files, AEM forms creates an output folder with the same name as the input folder and copies the output files into that folder. When the output consists of a document map containing a key-value pair, such as the output from an Output process, the key will be used as the output file name.
 
-The output file names that result from an endpoint process cannot contain characters other than letters, numbers, and a period (.) before the file extension. AEM forms converts other characters to their hexadecimal values.
+The output file names that result from an endpoint process cannot contain characters other than letters, numbers, and a period `(.)` before the file extension. AEM forms converts other characters to their hexadecimal values.
 
 Client applications pick up the result documents from the watched folder result folder. Process errors are logged in the watched folder failure folder.
 
