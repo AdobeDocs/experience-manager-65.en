@@ -23,7 +23,7 @@ Process Reporting uses the embedded Process Reporting repository to publish Form
 Process Reporting consists of the following modules:
 
 * [ProcessDataPublisher service](#processdatapublisher-service-br-p)
-* [ProcessDataStorage service](/#processdatastorageprovider-service-br-p)
+* [ProcessDataStorage service](#processdatastorageprovider-service-br-p)
 * [OSGi service](#osgi-service-br-p)
 * [Query Data servlet](#querydataservlet-service-br-p)
 * [Process Reporting user interface](#process-reporting-user-interface-br-p)
