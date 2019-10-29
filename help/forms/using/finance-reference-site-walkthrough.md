@@ -79,54 +79,50 @@ Sarah is an existing We.Finance customer. She logs in with her We.Finance accoun
 Sarah clicks **[!UICONTROL Send mail]**. She receives an email with a link to resume her credit card application.
 
 ![](assets/resume.png)
-<details>
- <summary>Sarah accesses the credit card application from her mobile device</summary>
- <p>If Sarah is accessing the credit card application from her mobile device, the responsive application opens in a view optimized for mobile devices. In this view, the application form is renders as one section at a time. It allows Sarah to view and provide information progressively as she navigates the application.</p>
- <img alt="Filling the credit card application on mobile device" imagerotate="0" src="assets/form-on-mobile.png" title="Filling the credit card application on mobile device" />
-</details>
 
-<details>
- <summary>How it works</summary>
- <p>The <strong>Apply Now</strong> button directs Sarah to the credit card application. The application is an adaptive form, which you can review in the authoring instances at <code>https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html</code>.</p>
- <p>Some of the key features you can review in the adaptive form are:</p>
- <ul>
-  <li>It is based on an XSD schema.</li>
-  <li>It is built using We Finance Theme A for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at <code>https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance</code> and the theme at <code>https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content</code>.</li>
-  <li>It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at <code>https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm</code>.</li>
-  <li>It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.</li>
-  <li>It uses the Signature Step component to display the completed form and allows electronic signature on the form.</li>
-  <li>The Save my progress button generates a unique ID for the user and saves the partially-filled application as a draft in a node in AEM repository. Also, it displays a dialog seeking permission to send an email with a link to the node containing the draft application. The Send mail button on the confirmation dialog triggers an email with a link to the node containing the draft.</li>
-  <li>It uses the Invoke AEM Workflow submit action to trigger the credit card approval workflow. You can review the workflow used in this form at <code>https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html</code></li>
- </ul>
- <p>It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.</p>
- <p>Also, see the following documentation for more information about features used in the credit card application adaptive form:</p>
- <ul>
-  <li><a href="../../forms/using/introduction-forms-authoring.md" target="_blank">Introduction to authoring adaptive forms</a></li>
-  <li><a href="../../forms/using/adaptive-form-xml-schema-form-model.md" target="_blank">Creating adaptive forms using XML Schema</a></li>
-  <li><a href="../../forms/using/rule-editor.md" target="_blank">Rule Editor</a></li>
-  <li><a href="../../forms/using/themes.md" target="_blank">Themes</a></li>
-  <li><a href="../../forms/using/data-integration.md" target="_blank">Data Integration</a></li>
-  <li><a href="../../forms/using/working-with-adobe-sign.md" target="_blank">Using Adobe Sign in adaptive forms</a></li>
-  <li><a href="../../forms/using/aem-forms-workflow.md" target="_blank">Forms-centric workflow on OSGi</a></li>
- </ul>
-</details>
+**Sarah accesses the credit card application from her mobile device**
 
-<details>
- <summary>See it yourself</summary>
- <p>When logged in as Sarah Rose, click the <strong>Apply now</strong> button on the credit card application. Fill in some details, explore various adaptive form components, and click <strong>Save my progress</strong> to receive an email with a <strong>Resume</strong> button that links to the draft application. Ensure that you specify your email ID in the application form to receive the email.</p>
- <p>Review the We.Finance Theme available at:</p>
- <p><code>https://&amp;lt;host&amp;gt;:&amp;lt;AuthorPort&amp;gt;/editor.html/content/dam/formsanddocuments-themes/we-Finance/we-Finance-Theme-A/jcr:content</code></p>
- <p>You can review the We.Finance Template at:</p>
- <p><code>https://&amp;lt;host&amp;gt;:&amp;lt;AuthorPort&amp;gt;/editor.html/conf/we-finance/settings/wcm/templates/we-finance-template/structure.html</code></p>
-</details>
+If Sarah is accessing the credit card application from her mobile device, the responsive application opens in a view optimized for mobile devices. In this view, the application form is renders as one section at a time. It allows Sarah to view and provide information progressively as she navigates the application.
 
-<details>
- <summary>Item Title</summary>
-</details>
+![Filling the credit card application on mobile device](assets/form-on-mobile.png)
 
-<details>
- <summary>Item Title</summary>
-</details>
+**How it works**
+
+The **Apply Now** button directs Sarah to the credit card application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`.
+
+Some of the key features you can review in the adaptive form are:
+
+* It is based on an XSD schema.
+* It is built using We Finance Theme A for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
+* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
+* It uses the Signature Step component to display the completed form and allows electronic signature on the form.
+* The Save my progress button generates a unique ID for the user and saves the partially-filled application as a draft in a node in AEM repository. Also, it displays a dialog seeking permission to send an email with a link to the node containing the draft application. The Send mail button on the confirmation dialog triggers an email with a link to the node containing the draft.
+* It uses the Invoke AEM Workflow submit action to trigger the credit card approval workflow. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+
+It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.
+
+Also, see the following documentation for more information about features used in the credit card application adaptive form:
+
+* [Introduction to authoring adaptive forms](../../forms/using/introduction-forms-authoring.md)
+* [Creating adaptive forms using XML Schema](../../forms/using/adaptive-form-xml-schema-form-model.md)
+* [Rule Editor](../../forms/using/rule-editor.md)
+* [Themes](../../forms/using/themes.md)
+* [Data Integration](../../forms/using/data-integration.md)
+* [Using Adobe Sign in adaptive forms](../../forms/using/working-with-adobe-sign.md)
+* [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md)
+
+**See it yourself**
+
+When logged in as Sarah Rose, click the **Apply now** button on the credit card application. Fill in some details, explore various adaptive form components, and click **Save my progress** to receive an email with a **Resume** button that links to the draft application. Ensure that you specify your email ID in the application form to receive the email.
+
+Review the We.Finance Theme available at:
+
+`https://<host>:<AuthorPort>/editor.html/content/dam/formsanddocuments-themes/we-Finance/we-Finance-Theme-A/jcr:content`
+
+You can review the We.Finance Template at:
+
+`https://<host>:<AuthorPort>/editor.html/conf/we-finance/settings/wcm/templates/we-finance-template/structure.html`
 
 ### Sarah resumes and submits the application {#sarah-resumes-and-submits-the-application}
 
