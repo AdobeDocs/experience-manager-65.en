@@ -236,7 +236,7 @@ Some key highlights of this service pack release are:
 
 * Enabled the inclusion of dynamic-UI-state in tracking events as custom attributes.
 * Included support for the delivery of 360-degree video assets in Dynamic Media Scene 7.
-* Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap")
+* Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
 ### Assets
 
