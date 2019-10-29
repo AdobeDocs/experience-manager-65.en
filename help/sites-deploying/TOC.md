@@ -91,6 +91,6 @@ user-guide-title: AEM 6.5 Deploying Guide
    + [User Interface Recommendations for Customers](ui-recommendations.md)
    + [Performance & Scalability](performance.md)
 + From AEM 6.5 migration {#fromaem65}
-    + [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
-    + [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
-    + [Magento](/help/sites-deploying/magento.md)
+   + [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
+   + [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
+   + [Magento](/help/sites-deploying/magento.md)

@@ -61,7 +61,7 @@ The following options are available:
   A version is created unless the replication agent is configured to suppress the creation of versions, which is honoured by the Version Manager.
   A version is created only if the activation happens on a path that is contained in `versionmanager.ivPaths` (see below).
 
-* `versionmanager.ivPaths`(String[], default: {"/"})
+* `versionmanager.ivPaths`(String[], default: `{"/"}`)
   Specifies the paths on which versions are implicitly created on activation if `versionmanager.createVersionOnActivation` is set to true.
 
 * `versionmanager.purgingEnabled` (Boolean, default: false)

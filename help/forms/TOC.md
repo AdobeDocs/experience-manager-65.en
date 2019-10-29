@@ -574,7 +574,7 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Invoking AEM Forms using APIs](developing/invoking-aem-forms-using-apis.md)
       + [Understanding AEM Forms Processes](developing/aem-forms-processes.md)
       + [Service container](developing/service-container.md)
-    + Java API Quick Start – Code Examples {#java-api-quick-start-code-examples}
+    + Java API Quick Start - Code Examples {#java-api-quick-start-code-examples}
       + [Application Manager Client JavaAPI Quick Start(SOAP)](developing/application-manager-client-java-api.md)
       + [Application Manager Service JavaAPI Quick Start(SOAP)](developing/application-manager-service-java-api.md)
       + [Assembler Service Java API QuickStart(SOAP)](developing/assembler-service-java-api-quick.md)
@@ -668,3 +668,4 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md)
   + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
+  
