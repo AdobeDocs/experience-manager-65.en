@@ -668,3 +668,4 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md)
   + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
+  

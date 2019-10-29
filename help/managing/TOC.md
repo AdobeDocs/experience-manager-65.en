@@ -23,4 +23,4 @@ user-guide-title: AEM 6.5 Managing User Guide
 + Data Protection {#data-protection}
   + [GDPR Readiness](gdpr-compliance.md)
 + From AEM 65 {#aem-65}
-    + [Managing AEM Projects - Further Reference](/help/managing/manage-reference.md)
+  + [Managing AEM Projects - Further Reference](/help/managing/manage-reference.md)

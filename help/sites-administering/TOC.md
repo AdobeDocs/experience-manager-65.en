@@ -164,5 +164,4 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Integration with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md)
     + [Principal View for Permissions Management](/help/sites-administering/touch-ui-principal-view.md)
     + [Bulk Processing Operations](/help/sites-administering/bulk-processing-operations.md)
-
 -->

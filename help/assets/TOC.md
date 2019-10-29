@@ -155,7 +155,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Smart Content Service Training Guidelines](smart-tags-training-guidelines.md)
     + [Video renditions](video-renditions.md)
 + From AEM 65 {#from65}
-    + [360/VR Video](/help/assets/360-video.md)
+    + [360 VR Video](/help/assets/360-video.md)
     + [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md)
     + [Getting Started with AEM Assets](/help/assets/getting-started-with-aem-assets.md)
     + [temp article for acrolinx checks](/help/assets/temp-article-for-acrolinx-checks.md)
