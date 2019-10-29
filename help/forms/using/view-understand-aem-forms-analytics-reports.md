@@ -46,9 +46,8 @@ When a user interacts with the form, the interactions are recorded and sent to A
 
 Perform the following steps to view analytics reports:
 
-1. Log in to the AEM portal at https://[hostname]:[port]
-1. Click **Forms &gt; Forms & Documents**.  
-
+1. Log in to the AEM portal at `https://[hostname]:[port]`
+1. Click **Forms &gt; Forms & Documents**.
 1. Select the form for which you want to view the analytics reports.
 1. Select **More &gt; Analytics Reports**.
 
@@ -68,7 +67,7 @@ By default, the analytics report for the last seven days is displayed. You can v
 >
 >The options such as Last 7 days and Last 15 days do not include data for the day you are generating the analytics report. To include the present day's data, you need to specify the date range including the present day and then run the report.
 
-![](assets/date-range.png) 
+![](assets/date-range.png)
 
 ### Conversions graph for adaptive and HTML5 forms {#conversions-graph-for-adaptive-and-html-forms}
 
@@ -78,27 +77,27 @@ The form-level conversions graph gives you an insight into how the form is perfo
 * **Visitors**: The number of visitors to the form
 * **Submissions**: Number of times the form is submitted
 
-![](assets/conversion-graph.png) 
+![](assets/conversion-graph.png)
 
 ### Analytics report for adaptive and HTML5 forms {#analytics-report-for-adaptive-and-html-forms}
 
 The form-level summary section gives you an insight into how the form is performing on the following key performance indicators (KPIs):
 
-* **Average fill time**: Average time spent in filling the form. When users spend time on the form but do not submit, that time is not included in this calculation. 
-* **Renditions**: Number of times the form has been rendered or opened  
+* **Average fill time**: Average time spent in filling the form. When users spend time on the form but do not submit, that time is not included in this calculation.
+* **Renditions**: Number of times the form has been rendered or opened
 * **Drafts**: Number of times the form has been saved as draft
 * **Submissions**: Number of times the form has been submitted
 * **Abort**: Number of times users started filling the form and then left without completing the form
 * **Unique Visitors**: Number of times the form i ``s rendered by unique visitors. For more information on unique visitors, see [Unique Visitors, Visits, and customer behavior](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
-![Expanded form-level summary analytics report](assets/analytics-report.png) 
+![Expanded form-level summary analytics report](assets/analytics-report.png)
 
 ### Panel report {#bottom-summary-report}
 
 The panel-level summary section provides the following information about each panel in the form:
 
-* **Average Fill Time**: Average time spent on the panel, whether the form is submitted or not  
-* **Errors Encountered**: Average number of errors encountered by the users on the fields in a panel. Errors Encountered is arrived at by dividing total errors in a field by number of renditions of the form.   
+* **Average Fill Time**: Average time spent on the panel, whether the form is submitted or not
+* **Errors Encountered**: Average number of errors encountered by the users on the fields in a panel. Errors Encountered is arrived at by dividing total errors in a field by number of renditions of the form.
 * **Help Accessed**: Average number of times users accessed the in-context help for the fields in the panel. Help Accessed is arrived at by dividing total number of times Help is accessed for a field by number of renditions of form.
 
 #### Detailed panel report {#detailed-panel-report}
@@ -112,7 +111,7 @@ The detailed report shows values for all fields in the panel.
 Panel Report has three tabs:
 
 * **Time Report**(Default): Displays the time, in number of seconds, spent on filling up each of the fields in the panel
-* **Error Report**: Displays the number of errors encountered by users while filling up the fields 
+* **Error Report**: Displays the number of errors encountered by users while filling up the fields
 * **Help Report**: Number of times help for a particular field was accessed
 
 You can navigate between the panels, if multiple panels are available.
@@ -125,18 +124,18 @@ To filter the analytics data further, you can click an entry in any of the table
 
 ![Filter applied to Analytics report - Google Chrome ](assets/filter-1.png)
 
-If you view the panel report after applying a filter, the panel report data is also displayed according to the applied filter.  
-  
+If you view the panel report after applying a filter, the panel report data is also displayed according to the applied filter.
+
 Once a filter is applied:
 
 * The distribution tables become read-only, as only one filter can be applied at a time.
 * The applied filter's table disappears.
 * You can click the Close button (highlighted below) to remove the applied filter.
 
-![Close button to remove the applied filter](assets/close-filter.png) 
+![Close button to remove the applied filter](assets/close-filter.png)
 
 ### A/B Testing {#a-b-testing}
 
 If you have A/B testing enabled and set up for the form, the report page has a drop-down you can use to display the A/B testing report. A/B testing report displays the comparative performance of two versions of the form as you have set up.
 
-For more information on A/B testing, see [Create and manage A/B test for adaptive forms](../../forms/using/ab-testing-adaptive-forms.md). 
+For more information on A/B testing, see [Create and manage A/B test for adaptive forms](../../forms/using/ab-testing-adaptive-forms.md).
