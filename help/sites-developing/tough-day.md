@@ -122,19 +122,19 @@ You can find the relevant parameters in the list bellow:
 
 | **Parameter** |**Description** |**Default Value** |**Possible Values** |
 |---|---|---|---|
-| --installsamplecontent=<Val> |Either installs or skips the default Tough Day 2 content package. |true |true or false |
-| --protocol=<Val> |The protocol used for the host. |http |http or https |
-| --host=<Val> |The host name or IP that will be targeted. |  |  |
-| --port=<Val> |The port of the host. |4502 |  |
-| --user=<Val> |The user name for the instance. |admin |  |
-| --password=<Val> |Password for the given user. |admin |  |
-| --duration=<Val> |The duration of the tests. Can be expressed in (**s**)econds, (**m**)inutes, (**h**)ours and (**d**)ays. |1d |  |
-| --timeout=<Val> |How long a test will run before it will be interrupted and marked as failed. Expressed in seconds. |180 |  |
-| --suite=<Val> |The value can be one or a list (separated by commas) of predefined test suites. |toughday |  |
-| --configfile=<Val> |The targeted yaml configuration file. |  |  |
-| --contextpath=<Val> |Instance's context path. |  |  |
-| --loglevel=<Val> |The log level for the Tough Day 2 engine. |INFO |ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF |
-| --dryrun=<Val> |If true, prints the resulting configuration and does not run any tests. |false |true or false |
+| `--installsamplecontent=<Val>` |Either installs or skips the default Tough Day 2 content package. |true |true or false |
+| `--protocol=<Val>` |The protocol used for the host. |http |http or https |
+| `--host=<Val>` |The host name or IP that will be targeted. |  |  |
+| `--port=<Val>` |The port of the host. |4502 |  |
+| `--user=<Val>` |The user name for the instance. |admin |  |
+| `--password=<Val>` |Password for the given user. |admin |  |
+| `--duration=<Val>` |The duration of the tests. Can be expressed in (**s**)econds, (**m**)inutes, (**h**)ours and (**d**)ays. |1d |  |
+| `--timeout=<Val>` |How long a test will run before it will be interrupted and marked as failed. Expressed in seconds. |180 |  |
+| `--suite=<Val>` |The value can be one or a list (separated by commas) of predefined test suites. |toughday |  |
+| `--configfile=<Val>` |The targeted yaml configuration file. |  |  |
+| `--contextpath=<Val>` |Instance's context path. |  |  |
+| `--loglevel=<Val>` |The log level for the Tough Day 2 engine. |INFO |ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF |
+| `--dryrun=<Val>` |If true, prints the resulting configuration and does not run any tests. |false |true or false |
 
 ## Customizing {#customizing}
 

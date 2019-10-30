@@ -15,7 +15,7 @@ docset: aem65
 
 # Synchronizing the app{#synchronizing-the-app}
 
-## Synchronizing the app {#synchronizing-the-app}
+## Synchronizing the app {#synchronizing-the-app-1}
 
 The forms in your app are downloaded from the AEM Forms server. The forms are downloaded under Tasks and Forms tabs. Drafts created from forms are downloaded in the drafts tab, and drafts created from tasks are downloaded in the tasks tab. For a standalone form on OSGi server, forms and drafts are downloaded in Forms and Draft tabs respectively.
 
@@ -34,7 +34,7 @@ Tap the Synchronize button ![](assets/sync-app.png) at the lower-right corner of
 
    ![Sync frequency setting in General Settings window](assets/gen-settings-2.png)
 
-1. On the Sync frequency option, tap the value to the right of Sync frequency. 
+1. On the Sync frequency option, tap the value to the right of Sync frequency.
 1. In the drop-down list, select the new synchronization frequency.
 
 ### Technical specifications {#technical-specifications}
