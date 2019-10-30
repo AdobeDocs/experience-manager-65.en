@@ -27,7 +27,7 @@ The asset selector uses the HTML5 **Window.postMessage** message to send data fo
 
 The asset selector is based on Granite's foundation picker vocabulary. By default, the asset selector operates in Browse mode. However, you can apply filters using the Omni search experience to refine your search for particular assets.
 
-You can integrate any web page (irrespective of whether it is part of the CQ container) with the asset selector (`https://<host>:<port>/aem/assetpicker.html').
+You can integrate any web page (irrespective of whether it is part of the CQ container) with the asset selector (`https://<host>:<port>/aem/assetpicker.html`).
 
 ## Contextual Parameters {#contextual-parameters}
 
