@@ -446,8 +446,8 @@ For Windows x86:
 <table>
  <tbody>
   <tr>
-   <th valign="middle" width="35%"><p><strong>Product</strong></p> </th>
-   <th valign="middle" width="64%"><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
+   <th><p><strong>Product</strong></p> </th>
+   <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version</td>

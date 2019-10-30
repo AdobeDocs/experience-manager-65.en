@@ -58,7 +58,7 @@ Perform the following steps in the recommended sequence to set up and configure 
  <tbody>
   <tr>
    <th><strong>Step</strong></th>
-   <th width="20%"><strong>Configure</strong></th>
+   <th><strong>Configure</strong></th>
    <th><strong>Notes</strong></th>
   </tr>
   <tr>

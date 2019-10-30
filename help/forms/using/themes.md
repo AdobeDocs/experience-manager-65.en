@@ -82,9 +82,9 @@ List of meta-properties of a theme (found in properties page of a theme).
 <table>
  <tbody>
   <tr>
-   <th width="10%"><p><strong>ID</strong></p> <p> </p> </th>
-   <th width="20%"><strong>Name</strong></th>
-   <th width="10%"><strong>Can be edited</strong></th>
+   <th><p><strong>ID</strong></p> <p> </p> </th>
+   <th><strong>Name</strong></th>
+   <th><strong>Can be edited</strong></th>
    <th><strong>Property Description</strong></th>
   </tr>
   <tr>

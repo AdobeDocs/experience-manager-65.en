@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
-
 ---
 
 # Introduction to AEM Forms{#introduction-to-aem-forms}
@@ -72,7 +71,7 @@ All form types support the following features:
 * Support for file attachments
 * Integration with HTML Workspace for Data Capture
 
-## Offline data collection <br> {#offline-data-collection-br}
+## Offline data collection {#offline-data-collection}
 
 Once form data is submitted, Adobe Experience Manager connects the form data with existing systems, business rules, and the required people.
 
@@ -112,4 +111,3 @@ Personalized documents, like, receipts, welcome kits, and statements can easily 
 ![](do-not-localize/layout-02.png)
 
 Streamlined personalized communication workflow
-
