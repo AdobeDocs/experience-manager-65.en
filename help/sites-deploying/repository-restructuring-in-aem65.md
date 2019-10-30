@@ -357,7 +357,7 @@ The table below includes an additional column named "Configuration Type" to expl
     <ul>
      <li>Create configurations using the new Touch UI<br /> or<br /> </li>
      <li>Copy the configurations from <code>/etc/cloudservices/translation</code> to their respective new location(s)</li>
-    </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites → Properties</strong> in the user interface.</p> <p><em>Note: Translation connectors must be compatible with AEM 6.5 for this to work.</em></p> </td>
+    </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites > Properties</strong> in the user interface.</p> <p><em>Note: Translation connectors must be compatible with AEM 6.5 for this to work.</em></p> </td>
   </tr>
   <tr>
    <td>All</td>
@@ -369,7 +369,7 @@ The table below includes an additional column named "Configuration Type" to expl
     <ul>
      <li>Create configurations using the new Touch UI or<br /> </li>
      <li>Copy older configurations from <code>/etc/cloudservices/translation</code> to their respective new location(s)</li>
-    </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites → Properties</strong> in the user interface.</p> </td>
+    </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites > Properties</strong> in the user interface.</p> </td>
   </tr>
   <tr>
    <td>All</td>

@@ -21,7 +21,7 @@ As an AEM administrator, you want ensure that team members of a project do not i
 
 The following steps summarize the procedure for setting up ACLs for a project:
 
-1. Login to AEM and navigate to **Tools** → **Security**.
+1. Login to AEM and navigate to **Tools** > **Security**.
 
    ![screen_shot_2018-02-16at10156pm](assets/screen_shot_2018-02-16at10156pm.png)
 

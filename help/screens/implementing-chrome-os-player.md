@@ -35,7 +35,7 @@ Follow the steps below to enable the Kiosk mode:
 
    ![screen_shot_2017-12-08at20303pm](assets/screen_shot_2017-12-08at20303pm.png)
 
-1. Browse to **Device management** → **Chrome Management** → **Device Settings**.
+1. Browse to **Device management** > **Chrome Management** > **Device Settings**.
 1. Scroll down to **Kiosk Settings** and click **Manage Kiosk Applications**.
 
    ![kiosk](assets/kiosk.png)
@@ -68,7 +68,7 @@ The AEM Screens Player is a Kiosk enabled application that also enables Remote P
 Follow the steps below to configure various options of the player:
 
 1. Login to Chrome Management Console.
-1. Click **Device management** → **Chrome Management** → **App Management**. The AEM Screens Player displays in the list.
+1. Click **Device management** > **Chrome Management** > **App Management**. The AEM Screens Player displays in the list.
 1. Click the application **AEM Screens Player**.
 1. Click **Kiosk settings** and select select your org (*if using a test environment*).
 1. Click on **upload configuration file** and upload the configuration policy (*Json file*).
